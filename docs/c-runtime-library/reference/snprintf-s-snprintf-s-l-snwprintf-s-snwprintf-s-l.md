@@ -1,10 +1,6 @@
 ---
-title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l | Microsoft Docs
-ms.custom: ''
+title: _snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _snprintf_s
 - _snprintf_s_l
@@ -35,8 +31,6 @@ f1_keywords:
 - snwprintf_s
 - sntprintf_s
 - sntprintf_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _snprintf_s_l function
 - _snwprintf_s_l function
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - _snwprintf_s function
 - formatted text [C++]
 ms.assetid: 9336ab86-13e5-4a29-a3cd-074adfee6891
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f3744fc543cd5c478ffba01e3abca9b152145be6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5918ab1dd9b7108248e638f267ceb8757802231a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32416441"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50560032"
 ---
 # <a name="snprintfs-snprintfsl-snwprintfs-snwprintfsl"></a>_snprintf_s, _snprintf_s_l, _snwprintf_s, _snwprintf_s_l
 
@@ -122,7 +112,7 @@ int _snwprintf_s(
 출력을 위한 저장소 위치입니다.
 
 *sizeOfBuffer*<br/>
-출력을 위한 저장소 위치의 크기입니다. 크기를 **바이트** 에 대 한 **_snprintf_s** 크기 또는 **단어** 에 대 한 **_snwprintf_s**합니다.
+출력을 위한 저장소 위치의 크기입니다. 크기 **바이트** 에 대 한 **_snprintf_s** 크기 **단어** 에 대 한 **_snwprintf_s**합니다.
 
 *count*<br/>
 저장할 최대 문자 수 또는 [_TRUNCATE](../../c-runtime-library/truncate.md)입니다.
@@ -140,28 +130,28 @@ int _snwprintf_s(
 
 **_snprintf_s** 에 저장 된 문자 수를 반환 *버퍼*, 종결 null 문자를 제외 합니다. **_snwprintf_s** 에 저장 된 와이드 문자 수를 반환 *버퍼*, 종료 null 와이드 문자를 제외 합니다.
 
-종료 null와 데이터를 저장 하는 데 필요한 저장소 초과 하는 경우 *sizeOfBuffer*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이러한 함수를 잘못 된 매개 변수 처리기 후 실행 계속 하는 경우 설정 *버퍼* 빈 문자열로 설정 **errno** 를 **ERANGE**,-1을 반환 하 고 있습니다.
+초과 하면 데이터와 종결 null을 저장 하는 데 필요한 저장소가 *sizeOfBuffer*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 잘못 된 매개 변수 처리기를 후 실행 계속 되 면 이러한 함수 설정 *버퍼* 빈 문자열로 설정 **errno** 에 **ERANGE**,-1을 반환 합니다.
 
-경우 *버퍼* 또는 *형식* 은 **NULL** 포인터 또는 *count* 보다 작거나를 0으로 잘못 된 매개 변수 처리기가 호출 됩니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 고-1을 반환 합니다.
+경우 *버퍼* 또는 *형식* 은 **NULL** 포인터 이거나 *개수* 보다 작거나를 0으로 잘못 된 매개 변수 처리기가 호출 됩니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_snprintf_s** 함수 형식 및 저장소 *count* 자 미만의 문자 *버퍼* 종료 null을 추가 합니다. 각 인수 (있는 경우) 변환 되어 해당 형식 사양에 따라 출력 *형식*합니다. 형식은와 일치는 **printf** 함수 패밀리는; 참조 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+합니다 **_snprintf_s** 함수 형식 및 저장소 *개수* 자 미만의 *버퍼* 종결 null을 추가 하 고 있습니다. 각 인수 (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 와 일치 합니다 **printf** 함수 패밀리를 참조 하십시오 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-경우 *개수* 은 [_TRUNCATE](../../c-runtime-library/truncate.md), 다음 **_snprintf_s** 에 맞는 만큼 만큼 문자열의 쓰기 *버퍼* 를 위한 공간을 그대로 유지 하면서 한 null 종료합니다. 종결 null) (포함 된 전체 문자열에 포함 되 면 *버퍼*, 다음 **_snprintf_s** 작성 (종료 null을 포함 하지 않음); 문자 수를 반환 합니다. 그렇지 않으면 **_snprintf_s**  잘림이 나타낼 때-1을 반환 합니다.
+경우 *개수* 는 [_TRUNCATE](../../c-runtime-library/truncate.md), 한 다음 **_snprintf_s** 쓰기 만큼 문자열의 최대 크기에 맞게 *버퍼* 에 대 한 공간을 남겨 두고를 null 종료합니다. (사용 하 여 종결 null) 전체 문자열에 포함할 *버퍼*, 한 다음 **_snprintf_s** (종결 null 제외)에 기록 된; 문자 수를 반환이 고, 그렇지 **_snprintf_s**  잘림이 나타낼 때-1을 반환 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-**_snwprintf_s** 의 와이드 문자 버전이 **_snprintf_s**;에 대 한 포인터 인수 **_snwprintf_s** 는 와이드 문자 문자열입니다. 인코딩 오류를 탐지 **_snwprintf_s** 에 다를 수 있습니다 **_snprintf_s**합니다. **_snwprintf_s**처럼 **swprintf_s**, 유형의 대상 대신 문자열에 출력을 기록 **파일**합니다.
+**_snwprintf_s** 의 와이드 문자 버전이 **_snprintf_s**;에 대 한 포인터 인수 **_snwprintf_s** 는 와이드 문자 문자열입니다. 인코딩 오류의 탐지 **_snwprintf_s** 에 다를 수 있습니다 **_snprintf_s**합니다. **_snwprintf_s**과 같이 **swprintf_s**, 형식의 대상이 아니라 문자열에 출력을 기록 **파일**합니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -170,7 +160,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_snprintf_s**, **_snprintf_s_l**|\<stdio.h>|
 |**_snwprintf_s**, **_snwprintf_s_l**|\<stdio.h> 또는 \<wchar.h>|

@@ -1,23 +1,13 @@
 ---
-title: A.11 고정된 된 수의 스레드를 지정 합니다. | Microsoft Docs
-ms.custom: ''
+title: A.11   고정된 수의 스레드 지정
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 1d06b142-4c35-44b8-994b-20f2aed5462b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 892140425dc9f7083c606fce3ffe671a107a65ca
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 832afac9abc7edd03d3af6f567657aefd596aae0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422989"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50492045"
 ---
 # <a name="a11---specifying-a-fixed-number-of-threads"></a>A.11   고정된 수의 스레드 지정
 

@@ -1,10 +1,6 @@
 ---
-title: OLE 컨트롤에 대 한 대화 상자 데이터 교환 함수 | Microsoft Docs
-ms.custom: ''
+title: OLE 컨트롤에 대한 대화 상자 데이터 교환 함수
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - AFXDISP/DDX_OCBool
 - AFXDISP/DDX_OCBoolRO
@@ -18,22 +14,16 @@ f1_keywords:
 - AFXDISP/DDX_OCShortRO
 - AFXDISP/DDX_OCText
 - AFXDISP/DDX_OCTextRO
-dev_langs:
-- C++
 helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a24bac5e27b0a3e0b1c011b1bb6019be2160d281
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5d330d8dd423927a3f4abbe6475a8d6219fa9af2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531250"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE 컨트롤에 대한 대화 상자 데이터 교환 함수
 
@@ -84,7 +74,7 @@ void AFXAPI DDX_OCBool(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -118,7 +108,7 @@ void AFXAPI DDX_OCBoolRO(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -152,7 +142,7 @@ void AFXAPI DDX_OCColor(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -186,7 +176,7 @@ void AFXAPI DDX_OCColorRO(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -226,7 +216,7 @@ void AFXAPI DDX_OCFloat(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -266,7 +256,7 @@ void AFXAPI DDX_OCFloatRO(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -306,7 +296,7 @@ void AFXAPI DDX_OCInt(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -346,7 +336,7 @@ void AFXAPI DDX_OCIntRO(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -380,7 +370,7 @@ void AFXAPI DDX_OCShort(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -414,7 +404,7 @@ void AFXAPI DDX_OCShortRO(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -448,7 +438,7 @@ void AFXAPI DDX_OCText(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -482,7 +472,7 @@ void AFXAPI DDX_OCTextRO(
 
 ### <a name="remarks"></a>설명
 
-DDX에 대 한 자세한 내용은 참조 하세요. [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)합니다.
+DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md)를 참조하세요.
 
 ### <a name="requirements"></a>요구 사항
 

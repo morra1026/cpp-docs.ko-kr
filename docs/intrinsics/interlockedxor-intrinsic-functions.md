@@ -1,10 +1,6 @@
 ---
-title: _InterlockedXor 내장 함수 | Microsoft Docs
-ms.custom: ''
+title: _InterlockedXor Intrinsic Functions
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedXor_nf
 - _InterlockedXor_np
@@ -32,24 +28,18 @@ f1_keywords:
 - _InterlockedXor64_cpp
 - _InterlockedXor_rel
 - _InterlockedXor
-dev_langs:
-- C++
 helpviewer_keywords:
 - InterlockedXor intrinsic
 - _InterlockedXor64 intrinsic
 - InterlockedXor64 intrinsic
 - _InterlockedXor intrinsic
 ms.assetid: faef1796-cb5a-4430-b1e2-9d5eaf9b4a91
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8aa28b46aa7796a6055788c53accb389cb66ed70
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ec3397bc19f2a5bb00c05f734de9ee53bdb60f88
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46389501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50526518"
 ---
 # <a name="interlockedxor-intrinsic-functions"></a>_InterlockedXor Intrinsic Functions
 
@@ -160,7 +150,7 @@ __int64 _InterlockedXor64_rel(
 
 #### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 [out에서] 결과 교체 첫 번째 피연산자에 대 한 포인터입니다.
 
 *마스크*<br/>

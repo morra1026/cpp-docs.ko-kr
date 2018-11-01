@@ -1,10 +1,6 @@
 ---
-title: _CrtIsMemoryBlock | Microsoft 문서
-ms.custom: ''
+title: _CrtIsMemoryBlock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtIsMemoryBlock
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - CrtlsMemoryBlock
 - _CrtIsMemoryBlock
-dev_langs:
-- C++
 helpviewer_keywords:
 - _CrtIsMemoryBlock function
 - CrtIsMemoryBlock function
 ms.assetid: f7cbbc60-3690-4da0-a07b-68fd7f250273
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 45331186cca5aab3c7971ba404d7b6da98139130
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: c4a85ebeb45552c6f5355853de2a45766d6bc984
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450734"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555747"
 ---
 # <a name="crtismemoryblock"></a>_CrtIsMemoryBlock
 
@@ -74,13 +64,13 @@ int _CrtIsMemoryBlock(
 
 ## <a name="return-value"></a>반환 값
 
-**_CrtIsMemoryBlock** 반환 **TRUE** 지정 된 메모리 블록은 로컬 힙 내에 있고 유효한 디버그 힙의 블록 형식 식별자가 같지 않으면, 함수 반환 **FALSE**합니다.
+**_CrtIsMemoryBlock** 반환 **TRUE** 지정된 된 메모리 블록이 로컬 힙 내에 있고 유효한 디버그 힙 블록 형식 식별자입니다; 그렇지 않은 경우 함수 반환 **FALSE**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_CrtIsMemoryBlock** 함수 확인 하는 지정 된 메모리 블록은 응용 프로그램의 로컬 힙 내에 올바른 블록 형식 식별자가 있습니다. 또한 이 함수는 메모리 블록 할당이 원래 요청된 경우 개체 할당 순서 번호 및 소스 파일 이름/줄 번호를 가져오는 데도 사용할 수 있습니다. 전달 비-**NULL** 에 대 한 값은 *requestNumber*, *filename*, 또는 *linenumber* 매개 변수 원인을 **_ CrtIsMemoryBlock** 로컬 힙에 블록을 찾으면 메모리 블록의 디버그 헤더의 값에 이러한 매개 변수를 설정 합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 정의 되지 않은에 대 한 호출이 **_CrtIsMemoryBlock** 전처리 중 제거 됩니다.
+합니다 **_CrtIsMemoryBlock** 함수 지정된 된 메모리 블록이 응용 프로그램의 로컬 힙 내에 이며 유효한 블록 형식 식별자를 있는지 확인 합니다. 또한 이 함수는 메모리 블록 할당이 원래 요청된 경우 개체 할당 순서 번호 및 소스 파일 이름/줄 번호를 가져오는 데도 사용할 수 있습니다. 전달 이외**NULL** 에 대 한 값을 *requestNumber*를 *filename*, 또는 *linenumber* 매개 변수 원인 **_ CrtIsMemoryBlock** 로컬 힙에서 블록을 찾은 경우 메모리 블록의 디버그 헤더의 값에 이러한 매개 변수를 설정 합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtIsMemoryBlock** 전처리 중 제거 됩니다.
 
-경우 **_CrtIsMemoryBlock** 실패 하면 반환 **FALSE** 출력 매개 변수를 기본값으로 초기화 됩니다: *requestNumber* 및 **lineNumber**  0으로 설정 하 고 *filename* 로 설정 되어 **NULL**합니다.
+하는 경우 **_CrtIsMemoryBlock** 실패 하면 반환 **FALSE** 하 고 출력 매개 변수를 기본값으로 초기화 됩니다. *requestNumber* 및 **lineNumber**  0으로 설정 됩니다 및 *filename* 로 설정 되어 **NULL**합니다.
 
 이 함수는 **TRUE** 또는 **FALSE**를 반환하므로 이를 [_ASSERT](assert-asserte-assert-expr-macros.md) 매크로 중 하나로 전달하여 간단한 디버깅 오류 처리 메커니즘을 만들 수 있습니다. 다음 예제에서는 지정된 주소가 로컬 힙 내에 없을 경우 어설션 오류가 발생하는 경우를 보여 줍니다.
 
@@ -89,11 +79,11 @@ _ASSERTE( _CrtIsMemoryBlock( userData, size, &requestNumber,
           &filename, &linenumber ) );
 ```
 
-방법에 대 한 자세한 내용은 **_CrtIsMemoryBlock** 다른 디버그 함수 및 매크로 함께 사용할 수 있습니다, 참조 [보고에 대 한 매크로](/visualstudio/debugger/macros-for-reporting)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
+방법에 대 한 자세한 내용은 **_CrtIsMemoryBlock** 내용은 다른 디버그 함수 및 매크로 함께 사용할 수 있습니다 [보고서 매크로](/visualstudio/debugger/macros-for-reporting)합니다. 기본 힙의 디버그 버전에서 메모리 블록을 할당, 초기화 및 관리하는 방법에 대한 자세한 내용은 [CRT Debug Heap Details](/visualstudio/debugger/crt-debug-heap-details)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_CrtIsMemoryBlock**|\<crtdbg.h>|
 
