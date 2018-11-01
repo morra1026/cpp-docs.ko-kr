@@ -1,10 +1,6 @@
 ---
-title: time, _time32, _time64 | Microsoft Docs
-ms.custom: ''
+title: time, _time32, _time64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - time
 - _time64
@@ -29,8 +25,6 @@ f1_keywords:
 - time/_time32
 - time/_time64
 - _time32
-dev_langs:
-- C++
 helpviewer_keywords:
 - time32 function
 - _time32 function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - system time
 - time64 function
 ms.assetid: 280e00f2-2b93-4ece-94cd-e048484c6cc7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3f627f0b9cbcfea1d048122d63c56d03aa61062d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0749ecbf0f88620e7293a043130b49dbe45aaf31
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546580"
 ---
 # <a name="time-time32-time64"></a>time, _time32, _time64
 
@@ -69,19 +59,19 @@ __time64_t _time64( __time64_t *destTime );
 
 ## <a name="return-value"></a>반환 값
 
-오류가 발생 하는 경우-1 또는 1970 년 1 월 1 일 자정 이후 경과 된 초 시간을 반환 합니다.
+오류 발생 시-1 또는 1970 년 1 월 1 일 자정 이후 경과 된 시간 (초)로 시간을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**시간** 함수 자정 이후 경과 된 시간 (초)을 반환 합니다 (00: 00:00), 1970 년 1 월 1 일 Utc (협정 세계시), 시스템 클록에 따라 합니다. 반환 값으로 지정 된 위치에 저장 *destTime*합니다. 이 매개 변수 수 **NULL**,이 경우 반환 값은 저장 되지 않습니다.
+합니다 **시간** 함수 자정 이후 경과 된 시간 (초)을 반환 합니다 (00: 00:00) 1970 년 1 월 1, Utc (협정 세계시), 시스템 클록에 따라 합니다. 반환 값으로 지정 된 위치에 저장 됩니다 *destTime*합니다. 이 매개 변수가 **NULL**,이 경우 반환 값은 저장 되지 않습니다.
 
-**시간** 래퍼 **_time64** 및 **time_t** 기본적으로 해당 하는 **__time64_t**합니다. 컴파일러가 해석 하도록 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 2038년 1월 18일 후 응용 프로그램이 실행되지 않을 수 있으므로 이 방법은 권장되지 않습니다. 이 매크로의 사용은 64비트 플랫폼에서 허용되지 않습니다.
+**시간** 래퍼인 **_time64** 하 고 **time_t** 기본적으로 해당 하는 **__time64_t**합니다. 해석 하도록 컴파일러에 게 해야 하는 경우 **time_t** 이전 32 비트로 **time_t**를 정의할 수 있습니다 **_USE_32BIT_TIME_T**합니다. 2038년 1월 18일 후 응용 프로그램이 실행되지 않을 수 있으므로 이 방법은 권장되지 않습니다. 이 매크로의 사용은 64비트 플랫폼에서 허용되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 C 헤더|필수 C++ 헤더|
+|루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|---------------------|
-|**시간**, **_time32**, **_time64**|\<time.h>|\<ctime > 또는 \<. h >|
+|**시간**하십시오 **_time32**, **_time64**|\<time.h>|\<ctime > 또는 \<time.h >|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

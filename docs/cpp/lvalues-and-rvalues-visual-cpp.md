@@ -1,26 +1,16 @@
 ---
-title: '값 종류: Lvalue 및 Rvalue (Visual c + +) | Microsoft Docs'
-ms.custom: ''
+title: '값 종류: Lvalue 및 Rvalue (Visual c + +)'
 ms.date: 04/06/2018
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - R-values [C++]
 - L-values [C++]
 ms.assetid: a8843344-cccc-40be-b701-b71f7b5cdcaf
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f19a06ac0583dd4cb911818787408aeca30b2ec
-ms.sourcegitcommit: 2f84d56b6ab19ba745b32ecd96b193c73cd62adf
+ms.openlocfilehash: 261453d5640c122f23491304b71e53e27c06eb7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866217"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546356"
 ---
 # <a name="lvalues-and-rvalues-visual-c"></a>Lvalue 및 Rvalue (Visual c + +)
 
@@ -30,7 +20,7 @@ ms.locfileid: "48866217"
 
 - A *glvalue* 계산 함수, 개체 또는 비트 필드의 id를 결정 하는 식입니다.
 - A *prvalue* 식 계산 개체 또는 비트 필드를 초기화 하거나 표시 되는 컨텍스트에서 지정 된 연산자의 피연산자의 값을 계산 합니다.
-- *xvalue* 개체 또는 비트 필드 (일반적으로 이므로 해당 수명 끝)에 해당 리소스를 다시 사용할 수를 나타내는 glvalue 됩니다. [예: 특정 종류의 식 rvalue 참조 (8.3.2)와 관련 된 반환 형식이 rvalue 참조를 함수에 대 한 호출 또는 rvalue 참조 형식으로 캐스트와 같은 xvalues를 생성 합니다. ]
+- *xvalue* 개체 또는 비트 필드 (일반적으로 이므로 해당 수명 끝)에 해당 리소스를 다시 사용할 수를 나타내는 glvalue 됩니다. [예: 특정 종류의 식 rvalue 참조 (8.3.2)와 관련 된 반환 형식이 rvalue 참조를 함수에 대 한 호출 또는 rvalue 참조 형식으로 캐스트와 같은 xvalues를 생성 합니다. ]
 - *lvalue* 는 xvalue 없는 glvalue 됩니다.
 - *rvalue* 는 prvalue 인지는 xvalue 합니다.
 

@@ -1,31 +1,21 @@
 ---
-title: 이진 출력 파일 | Microsoft 문서
-ms.custom: ''
+title: 이진 출력 파일
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - I/O [C++], binary output files
 - files [C++], binary output files
 - binary data, binary output files
 ms.assetid: 180954af-8cd6-444b-9a76-2f630a3389d8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdb101620b1a61f3a29057ee408cf9e89d38f9e8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 99445275a8f92622f451e8a88082dc2b28fb60b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842354"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615646"
 ---
 # <a name="binary-output-files"></a>이진 출력 파일
 
-스트림은 원래 텍스트용으로 설계되었으므로 기본 출력 모드는 텍스트입니다. 텍스트 모드에서 줄 바꿈 문자 (16 진수 10)는 캐리지 리턴-줄 바꿈 (16 비트에만 해당)를 확장합니다. 확장에는 다음과 같은 문제가 수반될 수 있습니다.
+스트림은 원래 텍스트용으로 설계되었으므로 기본 출력 모드는 텍스트입니다. 텍스트 모드에서 줄 바꿈 문자 (16 진수 10)는 캐리지 리턴-줄 바꿈 (16 비트에만 해당)으로 확장합니다. 확장에는 다음과 같은 문제가 수반될 수 있습니다.
 
 ```cpp
 // binary_output_files.cpp

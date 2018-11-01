@@ -1,11 +1,6 @@
 ---
-title: cproj, cprojf, cprojl | Microsoft 문서
-ms.custom: ''
+title: cproj, cprojf, cprojl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cproj
 - cprojf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/cproj
 - complex/cprojf
 - complex/cprojl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cproj function
 - cprojf function
 - cprojl function
 ms.assetid: 32b49623-13bf-4cae-802e-7912d75030fe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e47536df4efa083d3d07827bb7fbf66a8669793
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f1054172a7b5afde134ce9fa735a7eeda3bddafb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394943"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445671"
 ---
 # <a name="cproj-cprojf-cprojl"></a>cproj, cprojf, cprojl
 
@@ -79,17 +68,17 @@ _Lcomplex cprojl(
 
 ## <a name="return-value"></a>반환 값
 
-프로젝션을 *z* Reimann 구의 합니다.
+프로젝션을 *z* 리만 합니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **cproj** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **cproj** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cproj** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cproj** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cproj**, **cprojf**, **cprojl**|\<complex.h>|\<ccomplex>|
+|**cproj**하십시오 **cprojf**, **cprojl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,25 +1,15 @@
 ---
-title: ()는 없는 코드를 생성 하지 않고 함수 이름을 사용 하 여 | Microsoft Docs
-ms.custom: ''
+title: 함수 이름을 () 없이 사용하면 코드가 생성되지 않음
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - functions [C++], without parentheses
 ms.assetid: edf4a177-a160-44aa-8436-e077b5b27809
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 13ca43386c9ef46f526538781a91fd1a81ade537
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 3f68d2ab39ceacce5a74b033c061203b2b014284
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710582"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534812"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>함수 이름을 () 없이 사용하면 코드가 생성되지 않음
 

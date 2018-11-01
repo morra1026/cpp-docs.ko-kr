@@ -1,10 +1,6 @@
 ---
-title: Scheduler 클래스 | Microsoft Docs
-ms.custom: ''
+title: Scheduler 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - Scheduler
 - CONCRT/concurrency::Scheduler
@@ -22,21 +18,15 @@ f1_keywords:
 - CONCRT/concurrency::Scheduler::ResetDefaultSchedulerPolicy
 - CONCRT/concurrency::Scheduler::ScheduleTask
 - CONCRT/concurrency::Scheduler::SetDefaultSchedulerPolicy
-dev_langs:
-- C++
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 745ab1f4f992591927be101521e0f2902af0ccd7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1b2b4de2a0aa844f9450af9d853b11ea6f485274
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50638271"
 ---
 # <a name="scheduler-class"></a>Scheduler 클래스
 
@@ -66,7 +56,7 @@ class Scheduler;
 |[CreateScheduleGroup](#createschedulegroup)|오버로드됨. 스케줄러 내의 새 일정 그룹을 만듭니다. 매개 변수를 사용 하는 버전 `_Placement` 되도록 해당 매개 변수에 의해 지정 된 위치의 실행 새로 만든된 일정 그룹 내에서 작업을 발생 합니다.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|스케줄러에 대 한 가상 프로세서의 현재 수를 반환합니다.|
 |[GetPolicy](#getpolicy)|스케줄러를 사용 하 여 생성 된 정책의 복사본을 반환 합니다.|
-|[Id](#id)|스케줄러에 대 한 고유 식별자를 반환합니다.|
+|[ID](#id)|스케줄러에 대 한 고유 식별자를 반환합니다.|
 |[IsAvailableLocation](#isavailablelocation)|지정된 된 위치를 스케줄러에서 사용할 수 있는지 확인 합니다.|
 |[참조](#reference)|스케줄러 참조 횟수를 증가 시킵니다.|
 |[RegisterShutdownEvent](#registershutdownevent)|Windows 이벤트 핸들을 전달 하면은 `_Event` 매개 변수를 스케줄러를 종료 하 고 자체를 제거 하는 경우 신호를 보낼 수 있습니다. 이벤트 신호를 받는 경우 스케줄러에 예약한는 모든 작업이 완료 됩니다. 이 메서드를 통해 여러 종료 이벤트를 등록할 수 있습니다.|

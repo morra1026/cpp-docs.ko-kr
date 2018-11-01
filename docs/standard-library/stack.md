@@ -1,28 +1,18 @@
 ---
-title: '&lt;스택&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;stack&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <stack>
-dev_langs:
-- C++
 helpviewer_keywords:
 - stack, stack header
 - stack header
 ms.assetid: 89d8999e-c773-46f2-86c1-4b3b5aedb1c1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68f16523b1fda7b8b3d6b8dca5b4d1960c5c815f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 51e350169babc3d5247fbdabab2f3b9bda717d47
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33861755"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617055"
 ---
 # <a name="ltstackgt"></a>&lt;stack&gt;
 
@@ -42,7 +32,7 @@ ms.locfileid: "33861755"
 |[operator!=](../standard-library/stack-operators.md#op_neq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/stack-operators.md#op_lt)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 작은지 테스트합니다.|
 |[operator\<=](../standard-library/stack-operators.md#op_lt_eq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 작거나 같은지 테스트합니다.|
-|[operator==](../standard-library/stack-operators.md#op_eq_eq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/stack-operators.md#op_eq_eq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체와 같은지 테스트합니다.|
 |[operator>](../standard-library/stack-operators.md#op_gt)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/stack-operators.md#op_gt_eq)|연산자의 좌변에 있는 스택 개체가 우변에 있는 스택 개체보다 크거나 같은지 테스트합니다.|
 

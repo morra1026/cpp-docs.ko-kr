@@ -1,28 +1,18 @@
 ---
-title: '&lt;string&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;string&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - string/std::<string>
 - <string>
-dev_langs:
-- C++
 helpviewer_keywords:
 - string header
 ms.assetid: a2fb9d00-d7ae-4170-bfea-2dc337aa37cf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e341b15baa54b57148582c92beb9d231da8c96bb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3d84f4707af33f44a930f7f67b7f751e2ead627c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954573"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517912"
 ---
 # <a name="ltstringgt"></a>&lt;string&gt;
 
@@ -59,7 +49,7 @@ C++ 언어와 C++ 표준 라이브러리는 두 가지 문자열 형식을 지�
 |-|-|
 |[operator+](../standard-library/string-operators.md#op_add)|두 문자열 개체를 연결합니다.|
 |[operator!=](../standard-library/string-operators.md#op_neq)|연산자의 좌변에 있는 문자열 개체가 우변에 있는 문자열 개체와 같지 않은지 테스트합니다.|
-|[operator==](../standard-library/string-operators.md#op_eq_eq)|연산자의 좌변에 있는 문자열 개체가 우변에 있는 문자열 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/string-operators.md#op_eq_eq)|연산자의 좌변에 있는 문자열 개체가 우변에 있는 문자열 개체와 같은지 테스트합니다.|
 |[operator<](../standard-library/string-operators.md#op_lt)|연산자의 좌변에 있는 문자열 개체가 우변에 있는 문자열 개체보다 작은지 테스트합니다.|
 |[operator<=](../standard-library/string-operators.md#op_lt_eq)|연산자의 좌변에 있는 문자열 개체가 우변에 있는 문자열 개체보다 작거나 같은지 테스트합니다.|
 |[operator<\<](../standard-library/string-operators.md#op_lt_lt)|문자열을 출력 스트림에 삽입하는 템플릿 함수입니다.|

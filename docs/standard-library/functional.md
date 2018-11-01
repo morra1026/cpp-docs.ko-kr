@@ -1,30 +1,20 @@
 ---
-title: '&lt;functional&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;functional&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <functional>
 - functional/std::<functional>
 - std::<functional>
-dev_langs:
-- C++
 helpviewer_keywords:
 - functors
 - functional header
 ms.assetid: 7dd463e8-a29f-49bc-aedd-8fa53b54bfbc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6528cb1f3aa4da429cd27d1123536ab694f60ac6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3e838bf10b710caf12b5dcd51cad4cf625d887e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961238"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50457319"
 ---
 # <a name="ltfunctionalgt"></a>&lt;functional&gt;
 
@@ -162,7 +152,7 @@ C++11/C++14의 Visual C++ 구현에서 다음 기능이 추가되었습니다.
 
 |연산자|설명|
 |-|-|
-|[operator==](../standard-library/functional-operators.md#op_eq_eq)|호출 가능 개체의 같음 비교를 허용하지 않습니다.|
+|[연산자==](../standard-library/functional-operators.md#op_eq_eq)|호출 가능 개체의 같음 비교를 허용하지 않습니다.|
 |[operator!=](../standard-library/functional-operators.md#op_neq)|호출 가능 개체의 같지 않음 비교를 허용하지 않습니다.|
 
 ## <a name="see-also"></a>참고자료

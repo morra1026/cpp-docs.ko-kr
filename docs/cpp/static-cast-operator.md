@@ -1,27 +1,17 @@
 ---
-title: static_cast 연산자 | Microsoft Docs
-ms.custom: ''
+title: static_cast 연산자
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - static_cast_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - static_cast keyword [C++]
 ms.assetid: 1f7c0c1c-b288-476c-89d6-0e2ceda5c293
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c60eee337ba565c43217bf6afbcf7d9344337695
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 8e39fe7eb0fb9b77a82b305fa2f8186ad4e855a1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46090037"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601710"
 ---
 # <a name="staticcast-operator"></a>static_cast 연산자
 
@@ -35,7 +25,7 @@ static_cast <type-id> ( expression )
 
 ## <a name="remarks"></a>설명
 
-표준 C++에서는 변환의 안전성을 보장하기 위해 런타임 형식 검사가 수행되지 않습니다. C++/CX에서는 컴파일 시간 및 런타임 검사가 수행됩니다. 자세한 내용은 [캐스팅](casting.md)합니다.
+표준 C++에서는 변환의 안전성을 보장하기 위해 런타임 형식 검사가 수행되지 않습니다. C++/CX에서는 컴파일 시간 및 런타임 검사가 수행됩니다. 자세한 내용은 [캐스팅](casting.md)에 정의된 인터페이스의 private C++ 관련 구현입니다.
 
 합니다 **static_cast** 파생된 클래스에 대 한 포인터가 기본 클래스에 대 한 포인터의 변환과 같은 연산에 대 한 연산자를 사용할 수 있습니다. 이러한 변환이 항상 안전한 것은 아닙니다.
 

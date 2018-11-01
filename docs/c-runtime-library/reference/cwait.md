@@ -1,10 +1,6 @@
 ---
-title: _cwait | Microsoft 문서
-ms.custom: ''
+title: _cwait
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cwait
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _cwait
-dev_langs:
-- C++
 helpviewer_keywords:
 - cwait function
 - _cwait function
 ms.assetid: d9b596b5-45f4-4e03-9896-3f383cb922b8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 64d312c75dcbebd968760c5f7d09d8458e68e4b0
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: f7a49497ac71ec15261e1215bd2bbed2e49f42ab
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42573281"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489624"
 ---
 # <a name="cwait"></a>_cwait
 
@@ -96,7 +86,7 @@ Windows 운영 체제 응용 프로그램에서 NULL: 무시 다른 응용 프�
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_cwait.c

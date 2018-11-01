@@ -1,28 +1,18 @@
 ---
-title: '&lt;iterator&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;iterator&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <iterator>
 - iterator/std::<iterator>
-dev_langs:
-- C++
 helpviewer_keywords:
 - iterator header
 ms.assetid: c61a3962-f3ed-411a-b5a3-e8b3c2b500bd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 68d2ca3de8e6e3c05095580ce63a5bac253548c0
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 1582f6167d8aae3a9d5a318726cc7404c7e1ea62
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955454"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640364"
 ---
 # <a name="ltiteratorgt"></a>&lt;iterator&gt;
 
@@ -77,7 +67,7 @@ Visual Studio는 확인 및 확인되지 않은 반복기에 대한 다양한 �
 |연산자|설명|
 |-|-|
 |[operator!=](../standard-library/iterator-operators.md#op_neq)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체와 다른지를 테스트합니다.|
-|[operator==](../standard-library/iterator-operators.md#op_eq_eq)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체와 같은지를 테스트합니다.|
+|[연산자==](../standard-library/iterator-operators.md#op_eq_eq)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체와 같은지를 테스트합니다.|
 |[operator<](../standard-library/iterator-operators.md#op_lt)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체보다 작은지를 테스트합니다.|
 |[operator\<=](../standard-library/iterator-operators.md#op_gt_eq)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체보다 작거나 같은지를 테스트합니다.|
 |[operator>](../standard-library/iterator-operators.md#op_gt)|연산자의 좌변에 있는 반복기 개체가 우변에 있는 반복기 개체보다 큰지를 테스트합니다.|

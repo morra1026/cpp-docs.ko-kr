@@ -1,28 +1,18 @@
 ---
-title: __sidt | Microsoft Docs
-ms.custom: ''
+title: __sidt
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __sidt
-dev_langs:
-- C++
 helpviewer_keywords:
 - sidt instruction
 - __sidt intrinsic
 ms.assetid: 01e83d14-6e63-4dea-8f64-5a0339d69641
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9e185b04c5a23d7ee476c2cd1954c15df795cb57
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: 2188b2cdbf5c5f8836197f8cf2ee33928b7e9425
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820323"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624460"
 ---
 # <a name="sidt"></a>__sidt
 
@@ -52,7 +42,7 @@ void __sidt(void * Destination);
 
 ## <a name="remarks"></a>설명
 
-합니다 `__sidt` 함수는 동일 합니다 `SIDT` 컴퓨터 명령입니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+`__sidt` 함수는 `SIDT` 컴퓨터 명령에 해당합니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 **Microsoft 전용 종료**
 

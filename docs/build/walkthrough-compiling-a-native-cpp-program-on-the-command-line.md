@@ -1,28 +1,19 @@
 ---
-title: '연습: 명령줄에서 네이티브 c + + 프로그램 컴파일 | Microsoft Docs'
+title: '연습: 명령줄에서 네이티브 C++ 프로그램 컴파일'
 ms.custom: conceptual
 ms.date: 09/24/2018
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - native code [C++]
 - Visual C++, native code
 - compiling programs [C++]
 - command-line applications [C++], native
 ms.assetid: b200cfd1-0440-498f-90ee-7ecf92492dc0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 122d33be06755b92a17db62237787151a0811898
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 2d02560f9a76ee6f7a2aa7170f2bca6a95fe3ce8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860409"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602256"
 ---
 # <a name="walkthrough-compiling-a-native-c-program-on-the-command-line"></a>연습: 명령줄에서 네이티브 C++ 프로그램 컴파일
 
@@ -160,7 +151,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
 `cl /EHsc file1.cpp file2.cpp file3.cpp`
 
-`/EHsc` 명령줄 옵션은 컴파일러에 c + + 예외 처리를 사용 하도록 지시 합니다. 자세한 내용은 [/EH(예외 처리 모델)](../build/reference/eh-exception-handling-model.md)를 참조하세요.
+`/EHsc` 명령줄 옵션은 컴파일러에 C++ 예외 처리를 사용하도록 지시합니다. 자세한 내용은 [/EH(예외 처리 모델)](../build/reference/eh-exception-handling-model.md)를 참조하세요.
 
 추가 원본 파일을 제공 하는 경우 컴파일러는 프로그램 이름을 만드는 데 첫 번째 입력된 파일을 사용 합니다. 이 경우 file1.exe 프로그램을 출력 합니다. 추가 program1.exe를 이름으로 변경 하는 [/출력](../build/reference/out-output-file-name.md) 링커 옵션:
 

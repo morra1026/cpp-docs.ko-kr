@@ -1,11 +1,6 @@
 ---
-title: catan, catanf, catanl | Microsoft 문서
-ms.custom: ''
+title: catan, catanf, catanl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - catan
 - catanf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/catan
 - complex/catanf
 - complex/catanl
-dev_langs:
-- C++
 helpviewer_keywords:
 - catan function
 - catanf function
 - catanl function
 ms.assetid: 8415ed9c-7909-4d08-b532-4630bafdc7e8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a66781ad1b9962a8d6a1792ad0b77abf853f2559
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 99acdccca1b83be2fa667b5e5ef6e5181dc1ba81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393939"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50455226"
 ---
 # <a name="catan-catanf-catanl"></a>catan, catanf, catanl
 
-복소수의 허수 축 따라 [-1 5d; + 1] 간격 외부 컷 분기와의 아크탄젠트 값을 검색합니다.
+허수 축 따라 [-1; + 1] 간격에서 벗어난 분기를 사용 하 여 복소수의 아크탄젠트를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,17 +61,17 @@ _Lcomplex catan( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-에 대 한 아크탄젠트 *z*, 라디안에서입니다. 결과 허수 축을 따라 및 간격 내에 제한 [-π/2 + π/2;] 실제 축을 따라 합니다.
+아크탄젠트 *z*, 라디안에서입니다. 결과 허수 축을 따라 및 간격의 제한이 [-π/2; + π/2] 실수 축을 따라 합니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **catan** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **catan** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **catan** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **catan** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**catan**, **catanf**, **catanl**|\<complex.h>|\<ccomplex>|
+|**catan**하십시오 **catanf**, **catanl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

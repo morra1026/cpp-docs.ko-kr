@@ -1,11 +1,6 @@
 ---
-title: norm, normf, norml | Microsoft Docs
-ms.custom: ''
+title: norm, normf, norml
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - norm
 - normf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/norm
 - complex/normf
 - complex/norml
-dev_langs:
-- C++
 helpviewer_keywords:
 - norm function
 - normf function
 - norml function
 ms.assetid: 9786ecfe-0019-4553-b378-0af6c691e15c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 272f43a7b92c069da8fc4eda64a678ff38efd6ab
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c1803a54f0dfc27975af5bb0eeb7e5c042b2579
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401131"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628113"
 ---
 # <a name="norm-normf-norml"></a>norm, normf, norml
 
@@ -72,19 +61,19 @@ long double norm( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-제곱된 크기가 *z*합니다.
+제곱된 크기 *z*입니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **norm** 사용 하는 **_Fcomplex** 또는 **_Lcomplex** 값 및 반환 **float** 또는 **long double** 값입니다. C 프로그램에서 **norm** 항상 약간의 **_Dcomplex** 값과 반환은 **double** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **norm** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float** 또는 **long double** 값입니다. C 프로그램에서 **norm** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**norm**, **normf**, **norml**|\<complex.h>|\<complex.h>|
+|**norm**하십시오 **normf**, **norml**|\<complex.h>|\<complex.h>|
 
-**_Fcomplex**, **_Dcomplex**, 및 **_Lcomplex** 유형은 구현 되지 않은 네이티브 C99 형식의 해당 하는 Microsoft 전용 **_Complex float** , **double _Complex**, 및 **long double _Complex**각각.  호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+합니다 **_Fcomplex**를 **_Dcomplex**, 및 **_Lcomplex** 유형은 네이티브 구현 되지 않은 C99 형식의 해당 하는 Microsoft 전용 **float _Complex** 하십시오 **double _Complex**, 및 **long double _Complex**각각.  호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 
