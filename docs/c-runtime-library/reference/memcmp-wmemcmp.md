@@ -1,10 +1,6 @@
 ---
-title: memcmp, wmemcmp | Microsoft 문서
-ms.custom: ''
+title: memcmp, wmemcmp
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memcmp
 - wmemcmp
@@ -24,22 +20,16 @@ apitype: DLLExport
 f1_keywords:
 - memcmp
 - wmemcmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemcmp function
 - memcmp function
 ms.assetid: 0c21c3e3-8ee4-40e5-add1-eb26d225fd8d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1e40264c3ee7e48a545c88d7d48891126117ecc8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9504635a2a96c4579afc7a8d9caf1844504c05b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404391"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610469"
 ---
 # <a name="memcmp-wmemcmp"></a>memcmp, wmemcmp
 
@@ -69,25 +59,25 @@ int wmemcmp(
 두 번째 버퍼입니다.
 
 *count*<br/>
-비교할 문자 수입니다. (비교에 대 한 바이트 **memcmp**, 와이드 문자에 대 한 **wmemcmp**).
+비교할 문자 수입니다. (에 대 한 바이트를 비교 **memcmp**, 와이드 문자입니다 **wmemcmp**).
 
 ## <a name="return-value"></a>반환 값
 
 반환 값은 부분 문자열 간의 관계를 나타냅니다.
 
-|반환 값|첫 번째 관계 *count* buf1 및 b u f 2의 문자|
+|반환 값|첫 번째 관계 *개수* buf1 및 buf2에서의 문자|
 |------------------|---------------------------------------------------------------|
-|< 0|*buffer1* 미만 *buffer2*|
+|< 0|*buffer1* 보다 작거나 *buffer2*|
 |0|*buffer1* 동일 *buffer2*|
 |> 0|*buffer1* 보다 큰 *buffer2*|
 
 ## <a name="remarks"></a>설명
 
-첫 번째 비교 *count* 자의 *buffer1* 및 *buffer2* 하 고 서로의 관계를 나타내는 값을 반환 합니다. 0이 아닌 반환 값의 부호는 버퍼에서 첫 번째 서로 다른 값 쌍의 차이에 대한 부호입니다. 값으로 해석 됩니다 **서명 되지 않은** **char** 에 대 한 **memcmp**, 그리고 **wchar_t** 에 대 한 **wmemcmp**합니다.
+첫 번째 비교 *개수* 자의 *buffer1* 하 고 *buffer2* 관계를 나타내는 값을 반환 합니다. 0이 아닌 반환 값의 부호는 버퍼에서 첫 번째 서로 다른 값 쌍의 차이에 대한 부호입니다. 값으로 해석 됩니다 **부호 없는** **char** 에 대 한 **memcmp**에서 **wchar_t** 에 대 한 **wmemcmp**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**memcmp**|\<memory.h> 또는 \<string.h>|
 |**wmemcmp**|\<wchar.h>|
