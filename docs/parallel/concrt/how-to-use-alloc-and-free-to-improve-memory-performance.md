@@ -1,26 +1,16 @@
 ---
-title: '방법: Alloc를 사용 하 여 메모리 성능 향상을 위해 무료 | Microsoft Docs'
-ms.custom: ''
+title: '방법: Alloc 및 Free를 사용하여 메모리 성능 개선'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Alloc and Free, using [Concurrency Runtime]
 - Using Alloc and Free [Concurrency Runtime]
 ms.assetid: e1fab9e8-a97d-4104-bead-e95958db79f9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0ce828d15d68ade5ba24c3a010e76e3d702f9a83
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d91734859cd7d3499979566f427c10a0f026941b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405878"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467823"
 ---
 # <a name="how-to-use-alloc-and-free-to-improve-memory-performance"></a>방법: Alloc 및 Free를 사용하여 메모리 성능 개선
 

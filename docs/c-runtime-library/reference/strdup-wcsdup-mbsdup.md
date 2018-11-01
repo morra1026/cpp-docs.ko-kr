@@ -1,10 +1,6 @@
 ---
-title: _strdup, _wcsdup, _mbsdup | Microsoft Docs
-ms.custom: ''
+title: _strdup, _wcsdup, _mbsdup
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strdup
 - _mbsdup
@@ -30,8 +26,6 @@ f1_keywords:
 - _strdup
 - _ftcsdup
 - _wcsdup
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcsdup function
 - ftcsdup function
@@ -48,23 +42,19 @@ helpviewer_keywords:
 - tcsdup function
 - _tcsdup function
 ms.assetid: 8604f8bb-95e9-45d3-93ef-20397ebf247a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a88051cbf5ac32f51e18f6d3dd256b177b7044a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 094843fdb1432aa58ec04b3b4e39ac8861b928ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413514"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461518"
 ---
 # <a name="strdup-wcsdup-mbsdup"></a>_strdup, _wcsdup, _mbsdup
 
 문자열을 복제합니다.
 
 > [!IMPORTANT]
-> **_mbsdup** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 참조 [CRT 함수는 유니버설 Windows 플랫폼 앱에서 지원 되지 않습니다](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)합니다.
+> **_mbsdup** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원 되지 않습니다 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -87,13 +77,13 @@ Null 종료 소스 문자열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 복사한 문자열에 대 한 저장소 위치에 대 한 포인터를 반환 하거나 **NULL** 저장소를 할당할 수 없는 경우.
+이러한 각 함수는 복사한 문자열의 저장소 위치에 대 한 포인터를 반환 하거나 **NULL** 저장소를 할당할 수 없는 경우.
 
 ## <a name="remarks"></a>설명
 
-**_strdup** 함수 호출 [malloc](malloc.md) 의 복사본에 대 한 저장소 공간을 할당 하려면 *strSource* 다음 복사 *strSource* 에 공간을 할당 합니다.
+합니다 **_strdup** 함수 호출 [malloc](malloc.md) 복사본에 대 한 저장소 공간을 할당할 *strSource* 복사 *strSource* 에 할당 된 공간입니다.
 
-**_wcsdup** 및 **_mbsdup** 와이드 문자 및 멀티 바이트 문자 버전의 **_strdup**합니다. 인수 및 반환 값이 **_wcsdup** 은 와이드 문자열이 고 **_mbsdup** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**_wcsdup** 하 고 **_mbsdup** 와이드 문자 및 멀티 바이트 문자 버전입니다 **_strdup**합니다. 인수 및 반환 값 **_wcsdup** 은 와이드 문자열이 고 **_mbsdup** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
@@ -101,13 +91,13 @@ Null 종료 소스 문자열입니다.
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsdup**|**_strdup**|**_mbsdup**|**_wcsdup**|
 
-때문에 **_strdup** 호출 **malloc** 복사본의 저장 공간을 할당 하려면 *strSource*, 것이 좋습니다는 를호출하여이메모리를해제하려면항상[무료](free.md) 포인터에 대 한 호출에서 반환 되는 일상적인 **_strdup**합니다.
+때문에 **_strdup** 호출 **malloc** 복사본에 대 한 저장소 공간을 할당할 *strSource*, 항상 합니다 호출하여이메모리를해제하는것이좋습니다[여유](free.md) 호출에서 반환 되는 포인터에 대 한 일상적인 **_strdup**합니다.
 
-경우 **_DEBUG** 및 **_CRTDBG_MAP_ALLOC** 정의 된 **_strdup** 및 **_wcsdup** 호출에 의해 교체 **_strdup_dbg**  및 **_wcsdup_dbg** 메모리 할당 디버깅을 위해 합니다. 자세한 내용은 [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md)를 참조하세요.
+하는 경우 **_DEBUG** 하 고 **_CRTDBG_MAP_ALLOC** 정의 된 **_strdup** 하 고 **_wcsdup** 호출으로 대체 됩니다 **_strdup_dbg**  하 고 **_wcsdup_dbg** 메모리 할당 디버깅을 허용 합니다. 자세한 내용은 [_strdup_dbg, _wcsdup_dbg](strdup-dbg-wcsdup-dbg.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strdup**|\<string.h>|
 |**_wcsdup**|\<string.h> 또는 \<wchar.h>|
