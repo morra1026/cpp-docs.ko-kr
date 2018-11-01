@@ -1,10 +1,6 @@
 ---
-title: _lsearch_s | Microsoft 문서
-ms.custom: ''
+title: _lsearch_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lsearch_s
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _lsearch_s
 - lsearch_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - linear searching
 - values, searching for
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - _lsearch_s function
 - lsearch_s function
 ms.assetid: d2db0635-be7a-4799-8660-255f14450882
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12315350b62673abb0a838f9d30830354c58da73
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f57a96622419e3f72fc2df5b260cbbbdd59666ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404200"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677008"
 ---
 # <a name="lsearchs"></a>_lsearch_s
 
@@ -70,7 +60,7 @@ void *_lsearch_s(
 *base*<br/>
 검색할 배열의 기준에 대한 포인터입니다.
 
-*번호*<br/>
+*수*<br/>
 요소의 수입니다.
 
 *size*<br/>
@@ -84,30 +74,30 @@ void *_lsearch_s(
 
 ## <a name="return-value"></a>반환 값
 
-경우 *키* , 있으면 **_lsearch_s** 배열의 요소에 대 한 포인터를 반환 *기본* 일치 하는 *키*합니다. 경우 *키* 발견 되지 않으면 **_lsearch_s** 배열의 끝에 새로 추가 된 항목에 대 한 포인터를 반환 합니다.
+하는 경우 *키* 발견 되 면 **_lsearch_s** 배열의 요소에 대 한 포인터를 반환 합니다 *기본* 일치 하는 *키*합니다. 하는 경우 *키* 찾지 못하면 **_lsearch_s** 배열의 끝에서 새로 추가 된 항목에 대 한 포인터를 반환 합니다.
 
-함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행 한 다음 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **NULL**합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
+함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행이 계속 해 서를 허용 하는 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다. 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*key*|*base*|*compare*|*번호*|*size*|**errno**|
+|*key*|*base*|*compare*|*수*|*size*|**errno**|
 |-----------|------------|---------------|-----------|------------|-------------|
-|**NULL**|모두|모두|모두|모두|**EINVAL**|
-|모두|**NULL**|모두|!= 0|모두|**EINVAL**|
-|모두|모두|모두|any|0|**EINVAL**|
-|모두|모두|**NULL**|an|모두|**EINVAL**|
+|**NULL**|any|any|any|any|**EINVAL**|
+|any|**NULL**|any|!= 0|any|**EINVAL**|
+|any|any|any|any|0|**EINVAL**|
+|any|any|**NULL**|an|any|**EINVAL**|
 
 ## <a name="remarks"></a>설명
 
-**_lsearch_s** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch_s**, **_lsearch_s** 정렬할 배열 필요 하지 않습니다. 경우 *키* 발견 되지 않으면 다음 **_lsearch_s** 배열과 간격의 끝에 추가 *번호*합니다.
+합니다 **_lsearch_s** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch_s**하십시오 **_lsearch_s** 배열을 정렬할 필요가 없습니다. 하는 경우 *키* 발견 되지 않으면 다음 **_lsearch_s** 배열 및 증가의 끝에 추가 하 고 *번호*합니다.
 
-*비교* 함수는 두 배열 요소를 비교 하 고 서로의 관계를 지정 하는 값을 반환 하는 사용자 제공 루틴에 대 한 포인터입니다. *비교* 함수에는 또한 포인터는 첫 번째 인수는 컨텍스트를 사용 합니다. **_lsearch_s** 호출 *비교* 각 호출에 두 개의 배열 요소에 포인터를 전달 검색 하는 동안 한 번 이상. *비교* 요소를 비교 하 고 다음 중 하나를 반환 해야 (요소는 서로 다른 의미) 0이 아닌 값 또는 0 (요소는 동일).
+합니다 *비교* 함수는 두 배열 요소를 비교 하 고 서로의 관계를 지정 하는 값을 반환 하는 사용자가 제공한 루틴에 대 한 포인터입니다. 합니다 *비교* 함수는 첫 번째 인수로 컨텍스트에 대 한 포인터도 사용 합니다. **_lsearch_s** 호출 *비교* 검색, 각 호출에서 두 배열 요소에 대 한 포인터를 전달 하는 동안 한 번 이상. *비교* 요소를 비교 하 고 다음 중 하나를 반환 해야 합니다 (요소가 다르다는 의미) 0이 아닌 값 또는 0 (요소가 동일 하다는 의미).
 
-*컨텍스트* 포인터는 검색 된 데이터 구조가 개체의 일부 경우에 유용할 수 있습니다 및 *비교* 함수 개체의 멤버에 액세스 해야 합니다. 예를 들어 코드에 *비교* 함수는 void 포인터를 해당 개체의 적절 한 개체 유형 및 액세스 구성원으로 캐스팅할 수 있습니다. 추가 *컨텍스트* 포인터는 **_lsearch_s** 추가 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 보안은 *비교* 함수입니다.
+합니다 *상황에 맞는* 포인터는 검색된 데이터 구조가 개체의 일부 경우에 유용할 수 있습니다 및 *비교* 함수 개체의 멤버에 액세스 해야 합니다. 예를 들어, 코드를 *비교* 함수 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터를 캐스팅할 수 있습니다. 추가 합니다 *상황에 맞는* 포인터는 **_lsearch_s** 추가 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 연결 하는 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 보안 합니다 *비교* 함수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_lsearch_s**|\<search.h>|
 

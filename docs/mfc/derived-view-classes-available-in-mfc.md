@@ -1,28 +1,18 @@
 ---
-title: MFC에서 사용할 수 있는 뷰 클래스를 파생 | Microsoft Docs
-ms.custom: ''
+title: MFC에서 사용할 수 있는 파생된 뷰 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CView class [MFC], classes derived from
 - classes [MFC], derived
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0f8d058891b361b3747caafd9c4bd279c7626856
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9972586bd0cc4059e81d81be954a8cf0cada1f0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426917"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594499"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC에서 사용할 수 있는 파생된 뷰 클래스
 
@@ -34,7 +24,7 @@ ms.locfileid: "46426917"
 |-----------|-----------------|
 |[CView](../mfc/reference/cview-class.md)|모든 뷰의 기본 클래스입니다.|
 |[CCtrlView](../mfc/reference/cctrlview-class.md)|기본 클래스 `CTreeView`, `CListView`를 `CEditView`, 및 `CRichEditView`합니다. 이러한 클래스를 통해 문서/뷰 아키텍처를 사용 하 여 표시 된 Windows 공용 컨트롤을 사용 하 여 수 있습니다.|
-|[CEditView](../mfc/reference/ceditview-class.md)|Windows를 기반으로 간단한 뷰 편집 상자 컨트롤입니다. 입력 텍스트를 편집할 수 있습니다 및 간단한 텍스트 편집기 응용 프로그램에 대 한 기준으로 사용할 수 있습니다. `CRichEditView`을 참조하십시오.|
+|[CEditView](../mfc/reference/ceditview-class.md)|Windows를 기반으로 간단한 뷰 편집 상자 컨트롤입니다. 입력 텍스트를 편집할 수 있습니다 및 간단한 텍스트 편집기 응용 프로그램에 대 한 기준으로 사용할 수 있습니다. `CRichEditView`을 참조하세요.|
 |[CRichEditView](../mfc/reference/cricheditview-class.md)|포함 하는 뷰를 [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) 개체입니다. 이 클래스는 유사 `CEditView`, 하지만 달리 `CEditView`, `CRichEditView` 서식 있는 텍스트를 처리 합니다.|
 |[CListView](../mfc/reference/clistview-class.md)|포함 하는 뷰를 [CListCtrl](../mfc/reference/clistctrl-class.md) 개체입니다.|
 |[CTreeView](../mfc/reference/ctreeview-class.md)|포함 하는 뷰를 [CTreeCtrl](../mfc/reference/ctreectrl-class.md) Visual c + +에서 솔루션 탐색기 창 유사한 뷰에 대 한 개체입니다.|
