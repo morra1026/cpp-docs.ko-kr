@@ -1,18 +1,12 @@
 ---
-title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용 | Microsoft Docs'
-ms.custom: ''
+title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용'
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - bindable
 - requestedit
 - defaultbind
 - displaybind
 - dispid
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], data binding
 - data binding [MFC], MFC ActiveX controls
@@ -20,16 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 397356f8144e3680f3b2d19824d19c0a3bbaddd1
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 54cfbc6d31c0c86163400df691dec47e0c093d36
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50062615"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50603660"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용
 

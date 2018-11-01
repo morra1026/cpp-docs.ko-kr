@@ -1,11 +1,6 @@
 ---
-title: fesetexceptflag | Microsoft Docs
-ms.custom: ''
+title: fesetexceptflag
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fesetexceptflag
 apilocation:
@@ -24,21 +19,15 @@ apitype: DLLExport
 f1_keywords:
 - fesetexceptflag
 - fenv/fesetexceptflag
-dev_langs:
-- C++
 helpviewer_keywords:
 - fesetexceptflag function
 ms.assetid: 2f7dad77-9e54-4097-a3e3-35176ace4de5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eef8ba1c91e6db4f0d620ef820a6487b3b17e649
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9ac79e790f0b1e7a89413a0d4974f6053c95616e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398610"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50615880"
 ---
 # <a name="fesetexceptflag"></a>fesetexceptflag
 
@@ -56,9 +45,9 @@ int fesetexceptflag(
 ### <a name="parameters"></a>매개 변수
 
 *pstatus*<br/>
-에 대 한 포인터는 **fexcept_t** 예외 상태 플래그를 설정할 수 값을 포함 하는 개체입니다. 개체는 [fegetexceptflag](fegetexceptflag2.md)에 대한 이전 호출을 통해 설정될 수 있습니다.
+에 대 한 포인터를 **fexcept_t** 예외 상태 플래그를 설정할 값이 들어 있는 개체입니다. 개체는 [fegetexceptflag](fegetexceptflag2.md)에 대한 이전 호출을 통해 설정될 수 있습니다.
 
-*excepts*<br/>
+*제외한*<br/>
 설정할 부동 소수점 예외 상태 플래그입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -67,7 +56,7 @@ int fesetexceptflag(
 
 ## <a name="remarks"></a>설명
 
-**fesetexceptflag** 로 지정 된 부동 소수점 예외 상태 플래그의 상태를 설정 하는 함수 *excepts* 설정 된 해당 값에는 **fexcept_t** 가리키는 개체가 *pstatus*합니다.  이 함수는 예외를 발생시키지 않습니다. *pstatus* 포인터를 올바른 가리켜야 **fexcept_t** 개체 또는 후속 동작이 정의 되지 않습니다. **fesetexceptflag** 함수에서 이러한 예외 매크로 값에서는 *excepts*에 정의 된 \<fenv.h >:
+**fesetexceptflag** 함수에 지정 된 부동 소수점 예외 상태 플래그의 상태를 설정 합니다. *제외한* 설정 된 해당 값을 **fexcept_t** 개체에서 가리키는 *pstatus*합니다.  이 함수는 예외를 발생시키지 않습니다. 합니다 *pstatus* 유효한 포인터를 가리켜야 **fexcept_t** 개체 또는 후속 동작이 정의 되지 않습니다. 합니다 **fesetexceptflag** 함수에서 다음 예외 매크로 값을 지 원하는 *제외한*에 정의 된 \<n v. h >:
 
 |예외 매크로|설명|
 |---------------------|-----------------|
@@ -78,13 +67,13 @@ int fesetexceptflag(
 |FE_UNDERFLOW|초기 부동 소수점 작업 결과가 완전히 정확하게 표시하기에 너무 작습니다. 비정상적인 값이 생성되었습니다.|
 |FE_ALLEXCEPT|모든 지원되는 부동 소수점 예외의 비트 OR입니다.|
 
-*excepts* 인수는 0이 될 수 있습니다 또는 매크로 중 두 개 이상의 지원 되는 부동 소수점 예외 매크로 또는 비트의 하나입니다. 기타 인수 값의 결과는 정의 해제됩니다.
+합니다 *를 제외한* 인수는 0 일 수 있습니다 또는 매크로 중 두 개 이상의 지원 되는 부동 소수점 예외 매크로 또는 비트 중 하나입니다. 기타 인수 값의 결과는 정의 해제됩니다.
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fesetexceptflag**|\<fenv.h>|\<cfenv>|
 

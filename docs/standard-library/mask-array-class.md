@@ -1,27 +1,17 @@
 ---
-title: mask_array 클래스 | Microsoft 문서
-ms.custom: ''
+title: mask_array 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - valarray/std::mask_array
-dev_langs:
-- C++
 helpviewer_keywords:
 - mask_array class
 ms.assetid: c49bed6a-3000-4f39-bff6-cb9a453acb0b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1dc03a9d8f5f11b08ab2d5cb9d21190ac0a75925
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 108c942bef33e44b515d46e953c9d99274e3ce8d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962675"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50475821"
 ---
 # <a name="maskarray-class"></a>mask_array 클래스
 
@@ -37,7 +27,7 @@ ms.locfileid: "38962675"
 
 시퀀스의 최대 구성 `ba.size` 요소입니다. 요소 *J* 는 **ba**[ *J*]가 true인 경우에만 포함됩니다. 따라서 가지에 있는 true 요소 수 만큼의 요소가 시퀀스에 `ba`입니다. 하는 경우 `I` 에서 가장 낮은 true 요소의 인덱스가 `ba`, 한 다음 **va**[ `I`]는 선택한 시퀀스의 요소 0입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // mask_array.cpp

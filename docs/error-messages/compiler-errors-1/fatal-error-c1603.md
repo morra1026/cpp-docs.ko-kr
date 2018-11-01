@@ -1,27 +1,17 @@
 ---
-title: 심각한 오류 C1603 | Microsoft Docs
-ms.custom: ''
+title: 심각한 오류 C1603
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1603
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1603
 ms.assetid: e5a06925-f916-4637-8240-6d2d280e6124
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8481b23970bb95125258fde680897b9cb2bbd67d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 9f3eabbec0678653de442c95bbf2aa868b9328c3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46040969"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441342"
 ---
 # <a name="fatal-error-c1603"></a>심각한 오류 C1603
 

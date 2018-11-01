@@ -1,28 +1,18 @@
 ---
-title: 상황에 맞는 키워드 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: 상황에 맞는 키워드 (C + + /cli 및 C + + /cli CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - internal_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - context-sensitive keywords
 ms.assetid: e33da089-f434-44e9-8cce-4668d05a8939
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5d02939e61da4a247b46da5637c38d01e7990c49
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 78b61e77da8ed45a43b3830b7eaa9588c1860928
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327936"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652753"
 ---
 # <a name="context-sensitive-keywords--ccli-and-ccx"></a>상황에 맞는 키워드 (C + + /cli 및 C + + /cli CX)
 
@@ -111,4 +101,4 @@ int main() {
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

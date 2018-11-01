@@ -1,29 +1,19 @@
 ---
-title: _InterlockedAddLargeStatistic | Microsoft Docs
-ms.custom: ''
+title: _InterlockedAddLargeStatistic
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedAddLargeStatistic
 - _InterlockedAddLargeStatistic_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - _InterlockedAddLargeStatistic intrinsic
 - InterlockedAddLargeStatistic intrinsic
 ms.assetid: 2802e74b-bcee-46e4-b562-894908d44409
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6698a58ec2a5363700f7751565f1dde8e25c2bcf
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: befcd74c432eb62ab3a718223ada6d0f441e72c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46415982"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432827"
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
 
@@ -45,7 +35,7 @@ long _InterlockedAddLargeStatistic(
 *가 수*<br/>
 [out에서] 추가 작업의 첫 번째 피연산자에 대 한 포인터입니다. 가리킨 값을 더하기의 결과 의해 대체 됩니다.
 
-*Value*<br/>
+*값*<br/>
 [in] 두 번째 피연산자입니다. 첫 번째 피연산자에 추가할 값입니다.
 
 ## <a name="return-value"></a>반환 값

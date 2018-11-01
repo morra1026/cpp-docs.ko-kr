@@ -1,28 +1,17 @@
 ---
-title: 명령 개체 인터페이스 | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
+title: 명령 개체 인터페이스
+ms.date: 10/24/2018
 helpviewer_keywords:
 - command object interfaces [C++]
 - command objects [OLE DB]
 - OLE DB [C++], command object interfaces
 ms.assetid: dacff5ae-252c-4f20-9ad7-4e602cc48536
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 8176bad2921edd22edaab1688e38bc7de275b0bb
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: d9f663d4e857d300e5c0f5783b86445ce824ea8e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50074802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50598876"
 ---
 # <a name="command-object-interfaces"></a>명령 개체 인터페이스
 
@@ -32,4 +21,4 @@ ms.locfileid: "50074802"
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

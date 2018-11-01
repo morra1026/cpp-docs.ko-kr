@@ -1,10 +1,6 @@
 ---
-title: ferror | Microsoft 문서
-ms.custom: ''
+title: ferror
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - ferror
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - ferror
-dev_langs:
-- C++
 helpviewer_keywords:
 - ferror function
 - streams, testing for errors
 - errors [C++], testing for stream
 ms.assetid: 528a34bc-f2aa-4c3f-b89a-5b148e6864f7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 49aaff776a90dd687ee4dae1902903ed01b83e20
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2be90ffe8a135b4108abd9504099bd2f6c28f249
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397371"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50587891"
 ---
 # <a name="ferror"></a>ferror
 
@@ -59,17 +49,17 @@ int ferror(
 
 ## <a name="return-value"></a>반환 값
 
-에 오류가 발생 한 경우 *스트림*, **ferror** 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다. 스트림이 **NULL**, **ferror** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 0을 반환 합니다.
+오류가 발생 하는 경우 *스트림을*하십시오 **ferror** 0을 반환 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다. 스트림이 **NULL**하십시오 **ferror** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 0을 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**ferror** 루틴 (함수 및 매크로로 구현 됨)는 읽기 또는 쓰기와 관련 된 파일에서 오류에 대 한 테스트 *스트림*합니다. 오류가 발생 한 경우 스트림에 대 한 오류 표시기 설정이 그대로 유지 됩니다는 닫히거나 되 감 길 때까지 또는 until **clearerr** 이 대해 호출 됩니다.
+합니다 **ferror** 루틴 (함수 및 매크로로 구현 됨)는 읽기 또는 쓰기와 연결 된 파일에서 오류에 대 한 테스트 *스트림*합니다. 오류가 발생 하는 경우 스트림에 대 한 오류 표시기 설정 된 채로 남아 스트림이 닫히거나 되 감 길 때까지 또는 될 때까지 **clearerr** 에 대해 호출 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**ferror**|\<stdio.h>|
 

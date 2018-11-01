@@ -1,27 +1,18 @@
 ---
-title: '방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정 | Microsoft Docs'
+title: '방법: 대상 프레임워크 및 플랫폼 도구 집합 수정'
 ms.custom: conceptual
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
 f1_keywords:
 - msbuild.cpp.howto.modifytargetframeworkandplatformtoolset
-dev_langs:
-- C++
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 60fa9bd3d6db9d90e5d7f3bc94e7686e5cf9481e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 7759cf13e95fab97ee5a7b77e22c690a69fde41a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45708450"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523113"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임워크 및 플랫폼 도구 집합 수정
 
@@ -35,7 +26,7 @@ ms.locfileid: "45708450"
 > [!NOTE]
 >  대상 플랫폼 도구 집합을 변경하려면 연관된 버전의 Visual Studio 또는 Windows 플랫폼 SDK가 설치되어 있어야 합니다. 예를 들어 **Windows7.1SDK** 플랫폼 도구 집합이 있는 Itanium 플랫폼을 대상으로 하려면 [Windows 7용 Microsoft Windows SDK 및 .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) 이 설치되어 있어야 합니다. 그러나 올바른 Framework 버전 및 플랫폼 도구 집합을 대상으로 한 경우 Visual Studio의 다른 호환 버전을 사용하여 개발 작업을 수행할 수 있습니다.
 
-사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 [c + + 네이티브 멀티 타기 팅](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) Visual c + + 블로그.
+사용자 지정 플랫폼 도구 집합을 만들어 대상 플랫폼을 추가로 확장할 수 있습니다. 자세한 내용은 Visual C++ 블로그의 [C++ Native Multi-Targeting](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) 을 참조하세요.
 
 ### <a name="to-change-the-target-framework"></a>대상 프레임워크를 변경하려면
 

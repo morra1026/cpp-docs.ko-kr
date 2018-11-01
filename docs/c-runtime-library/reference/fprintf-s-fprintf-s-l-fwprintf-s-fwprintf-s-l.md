@@ -1,10 +1,6 @@
 ---
-title: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l | Microsoft 문서
-ms.custom: ''
+title: fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fprintf_s_l
 - fwprintf_s
@@ -26,8 +22,6 @@ f1_keywords:
 - _ftprintf_s
 - fprintf_s
 - fwprintf_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - ftprintf_s_l function
 - ftprintf_s function
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - _fwprintf_s_l function
 - print formatted data to streams
 ms.assetid: 16067c3c-69ce-472a-8272-9aadf1f5beed
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea8e9d28a960149d0f199b090daa98e76049f291
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 05886dc4ce7de771749f157913a222b6b01a5c5a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404219"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639428"
 ---
 # <a name="fprintfs-fprintfsl-fwprintfs-fwprintfsl"></a>fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l
 
@@ -92,7 +82,7 @@ int _fwprintf_s_l(
 형식 컨트롤 문자열입니다.
 
 *argument_list*<br/>
-서식 문자열에 선택적 인수입니다.
+형식 문자열에 대 한 선택적 인수입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
@@ -103,18 +93,18 @@ int _fwprintf_s_l(
 
 ## <a name="remarks"></a>설명
 
-**fprintf_s** 서식을 지정 하 고 인쇄 하는 일련의 문자 및 값을 출력 *스트림*합니다. 각 인수에 *argument_list* (있는 경우)이 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. *형식* 인수를 사용 하는 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
+**fprintf_s** 형식을 지정 하 고 일련의 문자 및 출력 값을 인쇄 *스트림*합니다. 각 인수 *argument_list* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 합니다 *형식* 인수 사용 합니다 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
 
-**fwprintf_s** 의 와이드 문자 버전이 **fprintf_s**, **fwprintf_s**, *형식* 는 와이드 문자 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **fprintf_s** 현재 출력 유니코드 스트림을 지원 하지 않습니다.
+**fwprintf_s** 의 와이드 문자 버전이 **fprintf_s**; **fwprintf_s**를 *형식* 는 와이드 문자 문자열입니다. 스트림이 ANSI 모드에서 열리는 경우 이러한 함수는 동일하게 작동합니다. **fprintf_s** 유니코드 스트림으로 출력을 현재 지원 하지 않습니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-안전 하지 않은 버전을 같은 (참조 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), 이러한 함수는 매개 변수의 유효성을 검사 하 고에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개변수유효성검사](../../c-runtime-library/parameter-validation.md)경우, *스트림* 또는 *형식* 가 null 포인터입니다. 형식 문자열 자체도 유효성이 검사 된다는 합니다. 알 수 없거나 잘못된 형식의 형식 지정자가 있는 경우 이러한 함수는 잘못된 매개 변수 예외를 생성합니다. 모든 경우에 실행을 계속 하도록 허용 된 경우 함수는-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다. 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+안전 하지 않은 버전과 같이 (참조 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)), 이러한 함수는 매개 변수 유효성 검사 및에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개변수유효성검사](../../c-runtime-library/parameter-validation.md)경우, *스트림* 또는 *형식* 가 null 포인터입니다. 형식 문자열 자체도 유효성이 검사도 됩니다. 알 수 없거나 잘못된 형식의 형식 지정자가 있는 경우 이러한 함수는 잘못된 매개 변수 예외를 생성합니다. 모든 경우에 실행을 계속 하도록 허용 된 경우 함수는-1을 반환 하 고 설정 **errno** 하 **EINVAL**합니다. 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -125,7 +115,7 @@ int _fwprintf_s_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**fprintf_s**, **_fprintf_s_l**|\<stdio.h>|
 |**fwprintf_s**, **_fwprintf_s_l**|\<stdio.h> 또는 \<wchar.h>|

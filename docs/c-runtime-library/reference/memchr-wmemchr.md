@@ -1,10 +1,6 @@
 ---
-title: memchr, wmemchr | Microsoft 문서
-ms.custom: ''
+title: memchr, wmemchr
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wmemchr
 - memchr
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - memchr
 - wmemchr
-dev_langs:
-- C++
 helpviewer_keywords:
 - memchr function
 - wmemchr function
 ms.assetid: 5a348581-28f1-4256-8434-687245f7fc9f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 43c76ae09f491ff163391f0ee46564af7bb629fe
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: 1de8826d2f072c689ed3363902d1e4742cf187b0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181174"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50438547"
 ---
 # <a name="memchr-wmemchr"></a>memchr, wmemchr
 
@@ -113,7 +103,7 @@ C에서 이러한 함수는 다음과 같이 사용 됩니다.는 **const** 첫 
 
 모든 버전의 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_memchr.c

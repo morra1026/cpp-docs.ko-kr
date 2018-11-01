@@ -1,30 +1,20 @@
 ---
-title: -ASSEMBLYDEBUG (DebuggableAttribute 추가) | Microsoft Docs
-ms.custom: ''
+title: /ASSEMBLYDEBUG(DebuggableAttribute 추가)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.AssemblyDebug
 - /ASSEMBLYDEBUG
-dev_langs:
-- C++
 helpviewer_keywords:
 - /ASSEMBLYDEBUG linker option
 - -ASSEMBLYDEBUG linker option
 - ASSEMBLYDEBUG linker option
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 81e60050fb577d3513b06fb67a3438ed3cb1d03b
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: e9b39791e6537976be37b942292e1b1d42d5f700
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706227"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478652"
 ---
 # <a name="assemblydebug-add-debuggableattribute"></a>/ASSEMBLYDEBUG(DebuggableAttribute 추가)
 
@@ -46,7 +36,7 @@ ms.locfileid: "45706227"
 
 기본적으로 내보내지 합니다 **DebuggableAttribute** 특성입니다.
 
-DebuggableAttribute 소스 코드에서 직접 어셈블리에도 추가할 수 있습니다. 예를 들어 개체에 적용된
+DebuggableAttribute 소스 코드에서 직접 어셈블리에도 추가할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 [assembly:Debuggable(true, true)];   // same as /ASSEMBLYDEBUG

@@ -1,23 +1,13 @@
 ---
-title: 프롤로그 및 에필로그 | Microsoft Docs
-ms.custom: ''
+title: 프롤로그 및 에필로그
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9c2a1a9b1891af1c5616e78932cf4a530a300786
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 2b54737edd46a5e108a211ee032889885be2b1da
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45718876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543119"
 ---
 # <a name="prolog-and-epilog"></a>프롤로그 및 에필로그
 
@@ -61,7 +51,7 @@ __Chkstk 도우미 R10, R11 및 조건 코드 레지스터를 수정 하지 않�
 
 에필로그 코드에서 예외 및 인터럽트를 통해 안정적으로 해제 하려면 엄격한 해제 코드에 대 한 규칙 집합을 따라야 합니다. 이 줄어듭니다 추가 데이터가 없습니다. 각 에필로그를 설명 하기 위해 필요 하므로 필요한 데이터를 해제 합니다. 대신 해제 코드는 에필로그 에필로그를 식별 하는 코드 스트림을 통해 앞으로 검색 하 여 실행 될 것임을 확인할 수 있습니다.
 
-프레임 포인터가 사용 되는 경우 함수를 다음 에필로그 먼저 할당을 취소 해야 고정된 부분의 스택의 비휘발성 레지스터를 팝 및 컨트롤이 호출 함수로 반환 됩니다. 예를 들어 개체에 적용된
+프레임 포인터가 사용 되는 경우 함수를 다음 에필로그 먼저 할당을 취소 해야 고정된 부분의 스택의 비휘발성 레지스터를 팝 및 컨트롤이 호출 함수로 반환 됩니다. 예를 들면 다음과 같습니다.
 
 ```
 add      RSP, fixed-allocation-size

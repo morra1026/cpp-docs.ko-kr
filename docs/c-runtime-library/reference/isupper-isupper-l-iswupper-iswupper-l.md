@@ -1,10 +1,6 @@
 ---
-title: isupper, _isupper_l, iswupper, _iswupper_l | Microsoft 문서
-ms.custom: ''
+title: isupper, _isupper_l, iswupper, _iswupper_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - isupper
 - iswupper
@@ -27,8 +23,6 @@ f1_keywords:
 - isupper
 - _istupper
 - iswupper
-dev_langs:
-- C++
 helpviewer_keywords:
 - istupper function
 - iswupper function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _iswupper_l function
 - isupper function
 ms.assetid: da2bcc9f-241c-48c0-9a0e-ad273827e16a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d58fc8e10fbc533787fe0e7b99194e282bb906f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 498644fc2de8a687e2b9b63a88591385055db6c8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402103"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588437"
 ---
 # <a name="isupper-isupperl-iswupper-iswupperl"></a>isupper, _isupper_l, iswupper, _iswupper_l
 
@@ -83,13 +73,13 @@ int _iwsupper_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 루틴 0이 아닌 경우 반환 각 *c* 대문자의 특정 표현인 합니다. **isupper** 경우 0이 아닌 값을 반환 *c* 대문자 (A ~ Z)가 있습니다. **iswupper** 경우 0이 아닌 값을 반환 *c* 는 와이드 문자는 대문자에 해당 하는 경우 또는 *c* 의 없음에 대 한 와이드 문자는 구현에서 정의 된 집합 중 하나입니다. **iswcntrl**, **iswdigit**, **iswpunct**, 또는 **iswspace** 0입니다. 이러한 각 루틴 0을 반환 *c* 테스트 조건을 만족 하지 않습니다.
+각 이러한 루틴 0이 아닌 경우 반환 *c* 대문자의 특정 표현인 합니다. **isupper** 이면 0이 아닌 값을 반환 *c* 가 대문자 (A ~ Z). **iswupper** 이면 0이 아닌 값을 반환 *c* 가 대문자에 해당 하는 와이드 문자인 경우 또는 *c* 중 하나인 와이드 문자는 구현 시 정의 된 집합 중 **iswcntrl**를 **iswdigit**합니다 **iswpunct**, 또는 **iswspace** 0이 아닌 합니다. 이러한 루틴은 각각 0을 반환 *c* 테스트 조건을 충족 하지 않습니다.
 
-이 있는 이러한 함수 버전은 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+접미사가 있는 이러한 함수 버전은 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작은 **isupper** 및 **_isupper_l** 경우 정의 되지 않습니다 *c* 가 EOF가 또는 0-0xFF 까지의 범위에 있습니다. CRT 디버그 라이브러리 사용 되는 경우 및 *c* 함수 생성에서는 이러한 값 중 하나가 아닙니다 한 어설션입니다.
+동작 **isupper** 하 고 **_isupper_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -98,7 +88,7 @@ int _iwsupper_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**isupper**|\<ctype.h>|
 |**_isupper_l**|\<ctype.h>|

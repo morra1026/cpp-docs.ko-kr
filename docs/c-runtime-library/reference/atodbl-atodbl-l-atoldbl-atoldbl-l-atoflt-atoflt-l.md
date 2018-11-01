@@ -1,10 +1,6 @@
 ---
-title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l | Microsoft 문서
-ms.custom: ''
+title: _atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _atoldbl
 - _atoldbl_l
@@ -38,8 +34,6 @@ f1_keywords:
 - atoflt
 - atoldbl_l
 - _atodbl
-dev_langs:
-- C++
 helpviewer_keywords:
 - _atodbl function
 - _atoldbl_l function
@@ -55,20 +49,16 @@ helpviewer_keywords:
 - _atoflt function
 - _atodbl_l function
 ms.assetid: 2d2530f4-4bd4-42e3-8083-f2d2fbc8432a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da36dfae81f33f5fb30a1a4bc93a57437980d720
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb8d711dc8dfa912333f34603ad607f0a74143bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393591"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50552037"
 ---
 # <a name="atodbl-atodbll-atoldbl-atoldbll-atoflt-atofltl"></a>_atodbl, _atodbl_l, _atoldbl, _atoldbl_l, _atoflt, _atoflt_l
 
-문자열을 double로 변환 (**_atodbl**), long double (**_atoldbl**), 또는 float (**_atoflt**).
+문자열을 double로 변환 합니다 (**_atodbl**), long double (**_atoldbl**), 또는 float (**_atoflt**).
 
 ## <a name="syntax"></a>구문
 
@@ -94,21 +84,21 @@ int _atoflt_l( _CRT_FLOAT * value, const char * str, locale_t locale );
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 0을 반환합니다. 가능한 오류 코드는 **_UNDERFLOW** 또는 **_OVERFLOW**, 헤더 파일에 정의 되어 있는 \<math.h > 합니다.
+성공하면 0을 반환합니다. 가능한 오류 코드는 **_UNDERFLOW** 하거나 **_OVERFLOW**, 헤더 파일에 정의 된 \<math.h >.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자열을 부동 소수점 값으로 변환합니다. 이러한 함수 간의 차이점 및 **atof** 함수 집합은 다음이 함수는 부동 소수점 코드를 생성 하지 않는 하 고 하드웨어 예외를 발생 합니다. 대신 오류 조건은 오류 코드로 보고됩니다.
+이러한 함수는 문자열을 부동 소수점 값으로 변환합니다. 이러한 함수 간의 차이점 및 **atof** 계열의 함수는 이러한 함수는 부동 소수점 코드를 생성 하지 않습니다 하 고 하드웨어 예외를 발생 하지 않습니다. 대신 오류 조건은 오류 코드로 보고됩니다.
 
-문자열에 부동 소수점 값으로 해석 하는 유효한 없는 경우 *값* 0이 되 고 반환 되는로 설정 된 값은 0입니다.
+문자열에 부동 소수점 값으로의 유효한 해석이 없으면 *값* 로 설정 되어 0이 있고 반환 값은 0입니다.
 
-있는 이러한 함수 버전의 **_l** 접미사는 동일 하지 않은 접미사를 사용 하는 점을 제외 하 고 버전은 *로캘* 는 현재 스레드 대신 전달 된 매개 변수 로캘입니다.
+접미사가 있는 이러한 함수 버전을 **_l** 접미사는 동일 없는 접미사를 사용 하는 점을 제외 하 고 버전을 *로캘* 현재 스레드 대신 전달 된 매개 변수 로캘입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 |루틴|필수 헤더|
 |--------------|---------------------|
-|**_atodbl**, **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**, **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|
+|**_atodbl**하십시오 **_atoldbl**, **_atoflt**<br /><br /> **_atodbl_l**하십시오 **_atoldbl_l**, **_atoflt_l**|\<stdlib.h>|
 
 ## <a name="example"></a>예제
 

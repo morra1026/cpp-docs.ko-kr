@@ -1,30 +1,19 @@
 ---
-title: 할당 되지 않은 기호 변경 | Microsoft Docs
-ms.custom: ''
+title: 할당되지 않은 기호 변경
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.changing.unassigned
-dev_langs:
-- C++
 helpviewer_keywords:
 - symbols [C++], unassigned
 - Change Symbol dialog box [C++]
 - unassigned symbols
 ms.assetid: b6abee4a-3c24-4697-a166-fe6a86cad35f
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0a4748184ddf6281270da00572ffbd5374a6d2aa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d4e8fe86e9d95cb128efd2f80f6096fdb6798265
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386889"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432481"
 ---
 # <a name="changing-unassigned-symbols"></a>할당되지 않은 기호 변경
 

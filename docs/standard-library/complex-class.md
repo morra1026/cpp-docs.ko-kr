@@ -1,31 +1,21 @@
 ---
-title: complex 클래스 | Microsoft 문서
-ms.custom: ''
+title: complex 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - complex/std::complex::value_type
 - complex/std::complex::imag
 - complex/std::complex::real
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::complex [C++], value_type
 - std::complex [C++], imag
 - std::complex [C++], real
 ms.assetid: d6492e1c-5eba-4bc5-835b-2a88001a5868
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de27208562a235f11e47e3fd5c1600c5fad4c3ba
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: efdd904c3c82142862895a3df8a55162c10a3aad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072085"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553389"
 ---
 # <a name="complex-class"></a>complex 클래스
 
@@ -33,10 +23,8 @@ ms.locfileid: "50072085"
 
 ## <a name="syntax"></a>구문
 
-```
-
-template <class
-Type>
+```cpp
+template <class Type>
 class complex
 ```
 
@@ -52,7 +40,7 @@ class complex
 
 특히 복사본 생성과 뒤에 할당이 이어지는 기본 생성 간에는 차이가 없을 수도 있습니다. 클래스의 개체에서 작업을 하나도 `Type` 예외를 throw 할 수 있습니다.
 
-세 개의 부동 소수점 형식에 대해 템플릿 클래스 complex의 명시적 특수화가 존재합니다. 이 구현에서 다른 형식의 값입니다 `Type` 형식으로 캐스팅 됩니다 **이중** 실제 계산을 위해 사용 하 여 합니다 **double** 결과 형식의 저장 된 개체에 다시 할당 `Type``.`
+세 개의 부동 소수점 형식에 대해 템플릿 클래스 complex의 명시적 특수화가 존재합니다. 이 구현에서 다른 형식의 값입니다 `Type` 형식으로 캐스팅 됩니다 **이중** 실제 계산을 위해 사용 하 여 합니다 **double** 형식의 저장 된 개체에 다시 할당 하는 결과 `Type`합니다.
 
 ### <a name="constructors"></a>생성자
 
@@ -95,15 +83,12 @@ class complex
 
 ```cpp
 constexpr complex(
-    const T&
-    _RealVal = 0  ,
-    const T&
-    _ImagVal = 0);
+    const T& _RealVal = 0,
+    const T& _ImagVal = 0);
 
-    template <class Other>
+template <class Other>
 constexpr complex(
-    const complex<Other>&
-    complexNum);
+    const complex<Other>& complexNum);
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -119,7 +104,7 @@ constexpr complex(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 생성자는 저장된 실수부를 _ *RealVal*로, 저장된 허수부를 \_ *Imagval*로 초기화합니다. 두 번째 생성자는 저장된 실수부를 `complexNum`**.real**()로, 저장된 허수부를 `complexNum`**.imag**()로 초기화합니다.
+첫 번째 생성자는 저장 된 실수 부분을  *\_RealVal* 하 고 저장 된 허수 부분을  *\_Imagval*합니다. 두 번째 생성자는 저장 된 실수 부분을 `complexNum.real()` 및 저장 된 허수 부분을 `complexNum.imag()`입니다.
 
 이 구현에서 변환기가 멤버 템플릿 함수를 지원하지 않는 경우는 결과는 다음과 같습니다.
 
@@ -131,7 +116,6 @@ complex(const complex<Other>& right);
 위 템플릿이 아래 템플릿으로 바뀝니다.
 
 ```
-
 complex(const complex& right);
 ```
 
@@ -147,31 +131,31 @@ complex(const complex& right);
 
 int main( )
 {
-   using namespace std;
-   double pi = 3.14159265359;
+    using namespace std;
+    double pi = 3.14159265359;
 
-   // The first constructor specifies real & imaginary parts
-   complex <double> c1 ( 4.0 , 5.0 );
-   cout << "Specifying initial real & imaginary parts,"
+    // The first constructor specifies real & imaginary parts
+    complex<double> c1( 4.0 , 5.0 );
+    cout << "Specifying initial real & imaginary parts,"
         << "c1 = " << c1 << endl;
 
-   // The second constructor initializes values of the real &
-   // imaginary parts using those of another complex number
-   complex <double> c2 ( c1 );
-   cout << "Initializing with the real and imaginary parts of c1,"
+    // The second constructor initializes values of the real &
+    // imaginary parts using those of another complex number
+    complex<double> c2( c1 );
+    cout << "Initializing with the real and imaginary parts of c1,"
         << " c2 = " << c2 << endl;
 
-   // Complex numbers can be initialized in polar form
-   // but will be stored in Cartesian form
-   complex <double> c3 ( polar ( sqrt( (double)8 ) , pi / 4 ) );
-   cout << "c3 = polar ( sqrt ( 8 ) , pi / 4 ) = " << c3 << endl;
+    // Complex numbers can be initialized in polar form
+    // but will be stored in Cartesian form
+    complex<double> c3( polar( sqrt( (double)8 ) , pi / 4 ) );
+    cout << "c3 = polar( sqrt( 8 ) , pi / 4 ) = " << c3 << endl;
 
-   // The modulus and argument of a complex number can be recovered
-   double absc3 = abs ( c3 );
-   double argc3 = arg ( c3 );
-   cout << "The modulus of c3 is recovered from c3 using: abs ( c3 ) = "
+    // The modulus and argument of a complex number can be recovered
+    double absc3 = abs( c3 );
+    double argc3 = arg( c3 );
+    cout << "The modulus of c3 is recovered from c3 using: abs( c3 ) = "
         << absc3 << endl;
-   cout << "Argument of c3 is recovered from c3 using:\n arg ( c3 ) = "
+    cout << "Argument of c3 is recovered from c3 using:\n arg( c3 ) = "
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
@@ -198,7 +182,7 @@ T imag(const T& right);
 
 ### <a name="remarks"></a>설명
 
-복소수 *a + bi*의 경우 허수부 또는 성분은 *Im(a + bi) = b.* 입니다.
+복소수 *a + bi*, 허수 부분 또는 구성 요소는 *Im(a + bi) = b*합니다.
 
 ### <a name="example"></a>예제
 
@@ -210,25 +194,25 @@ T imag(const T& right);
 
 int main( )
 {
-   using namespace std;
+    using namespace std;
 
-   complex <double> c1 ( 4.0 , 3.0 );
-   cout << "The complex number c1 = " << c1 << endl;
+    complex<double> c1( 4.0 , 3.0 );
+    cout << "The complex number c1 = " << c1 << endl;
 
-   double dr1 = c1.real ( );
-   cout << "The real part of c1 is c1.real ( ) = "
+    double dr1 = c1.real();
+    cout << "The real part of c1 is c1.real() = "
         << dr1 << "." << endl;
 
-   double di1 = c1.imag ( );
-   cout << "The imaginary part of c1 is c1.imag ( ) = "
+    double di1 = c1.imag();
+    cout << "The imaginary part of c1 is c1.imag() = "
         << di1 << "." << endl;
 }
 ```
 
 ```Output
 The complex number c1 = (4,3)
-The real part of c1 is c1.real ( ) = 4.
-The imaginary part of c1 is c1.imag ( ) = 3.
+The real part of c1 is c1.real() = 4.
+The imaginary part of c1 is c1.imag() = 3.
 ```
 
 ## <a name="op_star_eq"></a>  complex::operator*=
@@ -265,52 +249,53 @@ complex<Type>& operator*=(const complex<Type>& right);
 #include <complex>
 #include <iostream>
 
-int main() {
-   using namespace std;
-   double pi = 3.14159265359;
+int main()
+{
+    using namespace std;
+    double pi = 3.14159265359;
 
-   // Example of the first member function
-   // type complex<double> multiplied by type complex<double>
-   complex <double> cl1 ( polar ( 3.0 , pi / 6 ) );
-   complex <double> cr1 ( polar ( 2.0 , pi / 3 ) );
-   cout << "The left-side complex number is cl1 = " << cl1 << endl;
-   cout << "The right-side complex number is cr1 = " << cr1 << endl;
+    // Example of the first member function
+    // type complex<double> multiplied by type complex<double>
+    complex<double> cl1( polar ( 3.0 , pi / 6 ) );
+    complex<double> cr1( polar ( 2.0 , pi / 3 ) );
+    cout << "The left-side complex number is cl1 = " << cl1 << endl;
+    cout << "The right-side complex number is cr1 = " << cr1 << endl;
 
-   complex <double> cs1 = cl1 * cr1;
-   cout << "Quotient of two complex numbers is: cs1 = cl1 * cr1 = "
+    complex<double> cs1 = cl1 * cr1;
+    cout << "Quotient of two complex numbers is: cs1 = cl1 * cr1 = "
         << cs1 << endl;
 
-   // This is equivalent to the following operation
-   cl1 *= cr1;
-   cout << "Quotient of two complex numbers is also: cl1 *= cr1 = "
+    // This is equivalent to the following operation
+    cl1 *= cr1;
+    cout << "Quotient of two complex numbers is also: cl1 *= cr1 = "
         << cl1 << endl;
 
-   double abscl1 = abs ( cl1 );
-   double argcl1 = arg ( cl1 );
-   cout << "The modulus of cl1 is: " << abscl1 << endl;
-   cout << "The argument of cl1 is: "<< argcl1 << " radians, which is "
+    double abscl1 = abs ( cl1 );
+    double argcl1 = arg ( cl1 );
+    cout << "The modulus of cl1 is: " << abscl1 << endl;
+    cout << "The argument of cl1 is: "<< argcl1 << " radians, which is "
         << argcl1 * 180 / pi << " degrees." << endl << endl;
 
-   // Example of the second member function
-   // type complex<double> multiplied by type double
-   complex <double> cl2 ( polar ( 3.0 , pi / 6 ) );
-   double cr2 = 5.0;
-   cout << "The left-side complex number is cl2 = " << cl2 << endl;
-   cout << "The right-side complex number is cr2 = " << cr2 << endl;
+    // Example of the second member function
+    // type complex<double> multiplied by type double
+    complex<double> cl2 ( polar ( 3.0 , pi / 6 ) );
+    double cr2 = 5.0;
+    cout << "The left-side complex number is cl2 = " << cl2 << endl;
+    cout << "The right-side complex number is cr2 = " << cr2 << endl;
 
-   complex <double> cs2 = cl2 * cr2;
-   cout << "Quotient of two complex numbers is: cs2 = cl2 * cr2 = "
+    complex<double> cs2 = cl2 * cr2;
+    cout << "Quotient of two complex numbers is: cs2 = cl2 * cr2 = "
         << cs2 << endl;
 
-   // This is equivalent to the following operation
-   cl2 *= cr2;
-   cout << "Quotient of two complex numbers is also: cl2 *= cr2 = "
+    // This is equivalent to the following operation
+    cl2 *= cr2;
+    cout << "Quotient of two complex numbers is also: cl2 *= cr2 = "
         << cl2 << endl;
 
-   double abscl2 = abs ( cl2 );
-   double argcl2 = arg ( cl2 );
-   cout << "The modulus of cl2 is: " << abscl2 << endl;
-   cout << "The argument of cl2 is: "<< argcl2 << " radians, which is "
+    double abscl2 = abs ( cl2 );
+    double argcl2 = arg ( cl2 );
+    cout << "The modulus of cl2 is: " << abscl2 << endl;
+    cout << "The argument of cl2 is: "<< argcl2 << " radians, which is "
         << argcl2 * 180 / pi << " degrees." << endl;
 }
 ```
@@ -356,12 +341,12 @@ int main( )
 
    // Example of the first member function
    // type complex<double> added to type complex<double>
-   complex <double> cl1 ( 3.0 , 4.0 );
-   complex <double> cr1 ( 2.0 , -1.0 );
+   complex<double> cl1( 3.0 , 4.0 );
+   complex<double> cr1( 2.0 , -1.0 );
    cout << "The left-side complex number is cl1 = " << cl1 << endl;
    cout << "The right-side complex number is cr1 = " << cr1 << endl;
 
-   complex <double> cs1 = cl1 + cr1;
+   complex<double> cs1 = cl1 + cr1;
    cout << "The sum of the two complex numbers is: cs1 = cl1 + cr1 = "
         << cs1 << endl;
 
@@ -370,20 +355,20 @@ int main( )
    cout << "The complex number cr1 added to the complex number cl1 is:"
         << "\n cl1 += cr1 = " << cl1 << endl;
 
-   double abscl1 = abs ( cl1 );
-   double argcl1 = arg ( cl1 );
+   double abscl1 = abs( cl1 );
+   double argcl1 = arg( cl1 );
    cout << "The modulus of cl1 is: " << abscl1 << endl;
    cout << "The argument of cl1 is: "<< argcl1 << " radians, which is "
         << argcl1 * 180 / pi << " degrees." << endl << endl;
 
    // Example of the second member function
    // type double added to type complex<double>
-   complex <double> cl2 ( -2 , 4 );
+   complex<double> cl2( -2 , 4 );
    double cr2 =5.0;
    cout << "The left-side complex number is cl2 = " << cl2 << endl;
    cout << "The right-side complex number is cr2 = " << cr2 << endl;
 
-   complex <double> cs2 = cl2 + cr2;
+   complex<double> cs2 = cl2 + cr2;
    cout << "The sum of the two complex numbers is: cs2 = cl2 + cr2 = "
         << cs2 << endl;
 
@@ -392,8 +377,8 @@ int main( )
    cout << "The complex number cr2 added to the complex number cl2 is:"
         << "\n cl2 += cr2 = " << cl2 << endl;
 
-   double abscl2 = abs ( cl2 );
-   double argcl2 = arg ( cl2 );
+   double abscl2 = abs( cl2 );
+   double argcl2 = arg( cl2 );
    cout << "The modulus of cl2 is: " << abscl2 << endl;
    cout << "The argument of cl2 is: "<< argcl2 << " radians, which is "
         << argcl2 * 180 / pi << " degrees." << endl << endl;
@@ -462,12 +447,12 @@ int main( )
 
    // Example of the first member function
    // type complex<double> subtracted from type complex<double>
-   complex <double> cl1 ( 3.0 , 4.0 );
-   complex <double> cr1 ( 2.0 , -1.0 );
+   complex<double> cl1( 3.0 , 4.0 );
+   complex<double> cr1( 2.0 , -1.0 );
    cout << "The left-side complex number is cl1 = " << cl1 << endl;
    cout << "The right-side complex number is cr1 = " << cr1 << endl;
 
-   complex <double> cs1 = cl1 - cr1;
+   complex<double> cs1 = cl1 - cr1;
    cout << "The difference between the two complex numbers is:"
         << "\n cs1 = cl1 - cr1 = " << cs1 << endl;
 
@@ -476,20 +461,20 @@ int main( )
    cout << "Complex number cr1 subtracted from complex number cl1 is:"
         << "\n cl1 -= cr1 = " << cl1 << endl;
 
-   double abscl1 = abs ( cl1 );
-   double argcl1 = arg ( cl1 );
+   double abscl1 = abs( cl1 );
+   double argcl1 = arg( cl1 );
    cout << "The modulus of cl1 is: " << abscl1 << endl;
    cout << "The argument of cl1 is: "<< argcl1 << " radians, which is "
         << argcl1 * 180 / pi << " degrees." << endl << endl;
 
    // Example of the second member function
    // type double subtracted from type complex<double>
-   complex <double> cl2 ( 2.0 , 4.0 );
+   complex<double> cl2( 2.0 , 4.0 );
    double cr2 = 5.0;
    cout << "The left-side complex number is cl2 = " << cl2 << endl;
    cout << "The right-side complex number is cr2 = " << cr2 << endl;
 
-   complex <double> cs2 = cl2 - cr2;
+   complex<double> cs2 = cl2 - cr2;
    cout << "The difference between the two complex numbers is:"
         << "\n cs2 = cl2 - cr2 = " << cs2 << endl;
 
@@ -498,8 +483,8 @@ int main( )
    cout << "Complex number cr2 subtracted from complex number cl2 is:"
         << "\n cl2 -= cr2 = " << cl2 << endl;
 
-   double abscl2 = abs ( cl2 );
-   double argcl2 = arg ( cl2 );
+   double abscl2 = abs( cl2 );
+   double argcl2 = arg( cl2 );
    cout << "The modulus of cl2 is: " << abscl2 << endl;
    cout << "The argument of cl2 is: "<< argcl2 << " radians, which is "
         << argcl2 * 180 / pi << " degrees." << endl << endl;
@@ -570,12 +555,12 @@ int main( )
 
    // Example of the first member function
    // type complex<double> divided by type complex<double>
-   complex <double> cl1 ( polar (3.0 , pi / 6 ) );
-   complex <double> cr1 ( polar (2.0 , pi / 3 ) );
+   complex<double> cl1( polar (3.0 , pi / 6 ) );
+   complex<double> cr1( polar (2.0 , pi / 3 ) );
    cout << "The left-side complex number is cl1 = " << cl1 << endl;
    cout << "The right-side complex number is cr1 = " << cr1 << endl;
 
-   complex <double> cs1 = cl1 / cr1;
+   complex<double> cs1 = cl1 / cr1;
    cout << "The quotient of the two complex numbers is: cs1 = cl1 /cr1 = "
         << cs1 << endl;
 
@@ -584,20 +569,20 @@ int main( )
    cout << "Quotient of two complex numbers is also: cl1 /= cr1 = "
         << cl1 << endl;
 
-   double abscl1 = abs ( cl1 );
-   double argcl1 = arg ( cl1 );
+   double abscl1 = abs( cl1 );
+   double argcl1 = arg( cl1 );
    cout << "The modulus of cl1 is: " << abscl1 << endl;
    cout << "The argument of cl1 is: "<< argcl1 << " radians, which is "
         << argcl1 * 180 / pi << " degrees." << endl << endl;
 
    // Example of the second member function
    // type complex<double> divided by type double
-   complex <double> cl2 ( polar (3.0 , pi / 6 ) );
+   complex<double> cl2( polar(3.0 , pi / 6 ) );
    double cr2 =5;
    cout << "The left-side complex number is cl2 = " << cl2 << endl;
    cout << "The right-side complex number is cr2 = " << cr2 << endl;
 
-   complex <double> cs2 = cl2 / cr2;
+   complex<double> cs2 = cl2 / cr2;
    cout << "The quotient of the two complex numbers is: cs2 /= cl2 cr2 = "
         << cs2 << endl;
 
@@ -606,8 +591,8 @@ int main( )
    cout << "Quotient of two complex numbers is also: cl2 = /cr2 = "
         << cl2 << endl;
 
-   double abscl2 = abs ( cl2 );
-   double argcl2 = arg ( cl2 );
+   double abscl2 = abs( cl2 );
+   double argcl2 = arg( cl2 );
    cout << "The modulus of cl2 is: " << abscl2 << endl;
    cout << "The argument of cl2 is: "<< argcl2 << " radians, which is "
         << argcl2 * 180 / pi << " degrees." << endl << endl;
@@ -669,8 +654,8 @@ int main( )
 
    // Example of the first member function
    // type complex<double> assigned to type complex<double>
-   complex <double> cl1 ( 3.0 , 4.0 );
-   complex <double> cr1 ( 2.0 , -1.0 );
+   complex<double> cl1( 3.0 , 4.0 );
+   complex<double> cr1( 2.0 , -1.0 );
    cout << "The left-side complex number is cl1 = " << cl1 << endl;
    cout << "The right-side complex number is cr1 = " << cr1 << endl;
 
@@ -680,7 +665,7 @@ int main( )
 
    // Example of the second member function
    // type double assigned to type complex<double>
-   complex <double> cl2 ( -2 , 4 );
+   complex<double> cl2( -2 , 4 );
    double cr2 =5.0;
    cout << "The left-side complex number is cl2 = " << cl2 << endl;
    cout << "The right-side complex number is cr2 = " << cr2 << endl;
@@ -729,7 +714,7 @@ T real(const T& right);
 
 ### <a name="remarks"></a>설명
 
-복소수 *a + bi*의 경우 실수부 또는 성분은 *Re(a + bi) = a.* 입니다.
+복소수 *a + bi*, 실수 부분 또는 구성 요소는 *Re(a + bi) =는*합니다.
 
 ### <a name="example"></a>예제
 
@@ -743,23 +728,23 @@ int main( )
 {
    using namespace std;
 
-   complex <double> c1 ( 4.0 , 3.0 );
+   complex<double> c1( 4.0 , 3.0 );
    cout << "The complex number c1 = " << c1 << endl;
 
-   double dr1 = c1.real ( );
-   cout << "The real part of c1 is c1.real ( ) = "
+   double dr1 = c1.real();
+   cout << "The real part of c1 is c1.real() = "
         << dr1 << "." << endl;
 
-   double di1 = c1.imag ( );
-   cout << "The imaginary part of c1 is c1.imag ( ) = "
+   double di1 = c1.imag();
+   cout << "The imaginary part of c1 is c1.imag() = "
         << di1 << "." << endl;
 }
 ```
 
 ```Output
 The complex number c1 = (4,3)
-The real part of c1 is c1.real ( ) = 4.
-The imaginary part of c1 is c1.imag ( ) = 3.
+The real part of c1 is c1.real() = 4.
+The imaginary part of c1 is c1.imag() = 3.
 ```
 
 ## <a name="value_type"></a>  complex::value_type
@@ -767,7 +752,6 @@ The imaginary part of c1 is c1.imag ( ) = 3.
 복소수의 실수부와 허수부를 나타내는 데 사용되는 데이터 형식을 표시하는 형식입니다.
 
 ```
-
 typedef Type value_type;
 ```
 
@@ -785,13 +769,13 @@ typedef Type value_type;
 
 int main( )
 {
-   using namespace std;
-   complex <double>::value_type a = 3, b = 4;
+    using namespace std;
+    complex<double>::value_type a = 3, b = 4;
 
-   complex <double> c1 ( a , b );
-   cout << "Specifying initial real & imaginary parts"
-      << "\nof type value_type: "
-      << "c1 = " << c1 << "." << endl;
+    complex<double> c1 ( a , b );
+    cout << "Specifying initial real & imaginary parts"
+        << "\nof type value_type: "
+        << "c1 = " << c1 << "." << endl;
 }
 ```
 

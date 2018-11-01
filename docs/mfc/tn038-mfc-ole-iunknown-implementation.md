@@ -1,14 +1,8 @@
 ---
-title: 'TN038: MFC-OLE IUnknown 구현 | Microsoft Docs'
-ms.custom: ''
+title: 'TN038: MFC-OLE IUnknown 구현'
 ms.date: 06/28/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.mfc.ole
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregation macros [MFC]
 - COM interfaces, base interface
@@ -24,16 +18,12 @@ helpviewer_keywords:
 - END_INTERFACE_PART macro [MFC]
 - INTERFACE_PART macro
 ms.assetid: 19d946ba-beaf-4881-85c6-0b598d7f6f11
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84d37ad6303a9e5b4fb9d238dd8c15c3a40ccef6
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0722ce294e6a088446b8ba681810cf3f7885f122
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50058795"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50571433"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown 구현
 
@@ -80,7 +70,7 @@ ULONG CMyObj::Release()
 }
 ```
 
-합니다 [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) 멤버 함수는 약간 더 흥미롭습니다. 개체 멤버 함수만 해당 그리 흥미롭지 않습니다 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) -좋을 것 보다 많은 작업을 수행 하려면 개체에 알리는 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 이 옵션을 제공 합니다. 이 경우 [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) 유용 합니다. 동일한 개체에서 다른 "인터페이스"를 가져올 수 있습니다. 이러한 인터페이스는 일반적으로에서 파생 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 새 멤버 함수를 추가 하 여 추가 기능을 추가 합니다. COM 인터페이스는 인터페이스에 선언된 멤버 변수를 사용하지 않으며, 모든 멤버 함수가 pure-virtual로 선언됩니다. 예를 들어 개체에 적용된
+합니다 [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) 멤버 함수는 약간 더 흥미롭습니다. 개체 멤버 함수만 해당 그리 흥미롭지 않습니다 [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) 하 고 [릴리스](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) -좋을 것 보다 많은 작업을 수행 하려면 개체에 알리는 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 이 옵션을 제공 합니다. 이 경우 [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) 유용 합니다. 동일한 개체에서 다른 "인터페이스"를 가져올 수 있습니다. 이러한 인터페이스는 일반적으로에서 파생 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 새 멤버 함수를 추가 하 여 추가 기능을 추가 합니다. COM 인터페이스는 인터페이스에 선언된 멤버 변수를 사용하지 않으며, 모든 멤버 함수가 pure-virtual로 선언됩니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 class IPrintInterface : public IUnknown

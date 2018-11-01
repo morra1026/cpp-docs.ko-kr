@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e1edc9e4a6172b3ac55e7a8bc9b21cdc571774d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 24056346520897988fe92587ab45aa7cbc754199
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42578317"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50074997"
 ---
 # <a name="porting-third-party-libraries"></a>타사 라이브러리 포팅
 
-현재 버전의 Visual C++로 프로젝트를 업그레이드하는 경우 프로젝트에 사용되는 모든 라이브러리도 업그레이드하여 라이브러리와 프로젝트가 동일한 버전과 특성의 컴파일러로 빌드되도록 해야 합니다. 자세한 내용은 [잠재적인 업그레이드 문제 개요](overview-of-potential-upgrade-issues-visual-cpp.md)를 참조하세요. 
+현재 버전의 Visual C++로 프로젝트를 업그레이드하는 경우 프로젝트에 사용되는 모든 라이브러리도 업그레이드하여 라이브러리와 프로젝트가 동일한 버전과 특성의 컴파일러로 빌드되도록 해야 합니다. 자세한 내용은 [잠재적인 업그레이드 문제 개요](overview-of-potential-upgrade-issues-visual-cpp.md)를 참조하세요.
 
 ## <a name="introducing-vcpkg"></a>vcpkg 소개
 
@@ -35,7 +35,7 @@ ms.locfileid: "42578317"
 **vcpkg** 카탈로그에 해당 라이브러리가 없는 경우 [GitHub 리포지토리](https://github.com/Microsoft/vcpkg/issues)에서 문제를 열 수 있습니다. 커뮤니티 및 Visual C++ 팀은 여기서 문제를 확인하고 잠재적으로 이 라이브러리에 대한 포트 파일을 만들 수 있습니다.
 
 전용 타사 라이브러리(비오픈 소스)의 경우 라이브러리 공급자에게 문의하는 것이 좋습니다. 그러나 사용 중이거나 사용자를 차단하는 전용 라이브러리에 대해 알고 싶으니 어떤 라이브러리를 사용하고 있는지 알려주세요. vcupgrade@microsoft.com으로 연락하시면 됩니다.
-  
-## <a name="see-also"></a>참고 항목  
+
+## <a name="see-also"></a>참고 항목
 
 [Visual C++ 포팅 및 업그레이드 가이드](visual-cpp-porting-and-upgrading-guide.md)

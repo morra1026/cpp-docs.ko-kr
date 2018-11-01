@@ -1,27 +1,17 @@
 ---
-title: '&lt;tuple&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;tuple&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <tuple>
-dev_langs:
-- C++
 helpviewer_keywords:
 - tuple header
 ms.assetid: e4ef5c2d-318b-44f6-8bce-fce4ecd796a3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ba25328b86a51e34cba60bd55b63ce2eab696d6
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2e46b3997096c6e61f7dd6140131e3f10223b8e7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33864586"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50586669"
 ---
 # <a name="lttuplegt"></a>&lt;tuple&gt;
 
@@ -45,7 +35,7 @@ ms.locfileid: "33864586"
 
 |연산자|설명|
 |-|-|
-|[operator==](../standard-library/tuple-operators.md#op_eq_eq)|`tuple` 개체 비교, 같음|
+|[연산자==](../standard-library/tuple-operators.md#op_eq_eq)|`tuple` 개체 비교, 같음|
 |[operator!=](../standard-library/tuple-operators.md#op_neq)|`tuple` 개체 비교, 같지 않음|
 |[operator<](../standard-library/tuple-operators.md#op_lt)|`tuple` 개체 비교, 더 작음|
 |[operator<=](../standard-library/tuple-operators.md#op_lt_eq)|`tuple` 개체 비교, 작거나 같음|
@@ -54,7 +44,7 @@ ms.locfileid: "33864586"
 
 ### <a name="functions"></a>함수
 
-|함수|설명|
+|기능|설명|
 |-|-|
 |[get](../standard-library/tuple-functions.md#get)|`tuple` 개체에서 요소를 가져옵니다.|
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|요소 값에서 `tuple`을 만듭니다.|

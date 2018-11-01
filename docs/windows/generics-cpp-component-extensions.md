@@ -1,29 +1,19 @@
 ---
-title: 제네릭 (C + + /cli 및 C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: 제네릭 (C + + /cli 및 C + + /cli CX)
 ms.date: 10/12/2018
-ms.technology:
-- cpp-windows
 ms.topic: reference
 f1_keywords:
 - generic_cpp
 - generic
-dev_langs:
-- C++
 helpviewer_keywords:
 - generics [C++]
 ms.assetid: c7ccc316-a411-4c00-b2e2-f0c0eadc6cfd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 8bb0c6bc3459ff0b86200502b1a31ee341078280
-ms.sourcegitcommit: 3f4e92266737ecb70507871e87dc8e2965ad7e04
+ms.openlocfilehash: 5c00d8ece7d08adbb6e60cccd75cbe84487a9ecd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "49327677"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50477612"
 ---
 # <a name="generics--ccli-and-ccx"></a>제네릭 (C + + /cli 및 C + + /cli CX)
 
@@ -36,10 +26,10 @@ ms.locfileid: "49327677"
 [C +의 제네릭 개요 + CLI](../windows/overview-of-generics-in-visual-cpp.md)<br/>
 제네릭에 대한 정보, 언어 기능에 대한 동기, 제네릭을 설명하는 데 사용되는 용어의 정의 및 제네릭에 대한 형식 매개 변수로서 참조 형식과 값 형식의 사용에 대한 정보.
 
-[제네릭 인터페이스 (C + + /cli CLI)](../windows/generic-interfaces-visual-cpp.md)<br/>
+[제네릭 인터페이스(C++/CLI)](../windows/generic-interfaces-visual-cpp.md)<br/>
 제네릭 인터페이스의 정의 및 사용에 대한 정보.
 
-[제네릭 대리자 (C + + /cli CLI)](../windows/generic-delegates-visual-cpp.md)<br/>
+[제네릭 대리자(C++/CLI)](../windows/generic-delegates-visual-cpp.md)<br/>
 제네릭 대리자의 정의 및 사용에 대한 정보.
 
 [제네릭 형식 매개 변수에 대한 제약 조건(C++/CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)<br/>
@@ -48,7 +38,7 @@ ms.locfileid: "49327677"
 [제네릭 사용(C++/CLI)](../windows/consuming-generics-cpp-cli.md)<br/>
 C + 다른 언어로 작성 되었을 수 있는.NET 어셈블리에 정의 된 제네릭 사용에 대 한 정보 + CLI입니다.
 
-[제네릭 및 템플릿 (C + + /cli CLI)](../windows/generics-and-templates-visual-cpp.md)<br/>
+[제네릭 및 템플릿(C++/CLI)](../windows/generics-and-templates-visual-cpp.md)<br/>
 제네릭 및 템플릿의 비교, 개별로 사용해야 할 때와 유용하게 결합하는 방법.
 
 ### <a name="supported-by-the-common-language-runtime"></a>공용 언어 런타임에서 지원
@@ -66,4 +56,4 @@ C + 다른 언어로 작성 되었을 수 있는.NET 어셈블리에 정의 된 
 
 ## <a name="see-also"></a>참고 항목
 
-[.NET 및 UWP 용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)
+[.NET 및 UWP용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)

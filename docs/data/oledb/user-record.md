@@ -19,49 +19,49 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1c1958604edbb2f9d9c10e58082e70c2df400b8c
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e37ed0ac918b004513aa64308870a534a7b2af40
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50077376"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216294"
 ---
 # <a name="user-record"></a>사용자 레코드
 
-사용자 레코드에는 행 집합의 열 데이터를 나타내는 코드 및 데이터 구조를 제공 합니다. 컴파일 타임 또는 런타임에 사용자 레코드를 만들 수 있습니다. ATL OLE DB 공급자 마법사를 사용 하 여 공급자를 만들려면 마법사 다음과 같은 기본 사용자 레코드를 만듭니다 (의 공급자 이름 (약식 이름)로 지정 했다고 가정 *사용자 지정*):
+사용자 레코드에는 행 집합의 열 데이터를 나타내는 코드 및 데이터 구조를 제공 합니다. 컴파일 타임 또는 런타임에 사용자 레코드를 만들 수 있습니다. 사용 하 여 공급자를 만들면 합니다 **ATL OLE DB 공급자 마법사**, 마법사는 다음과 같은 기본 사용자 레코드를 만듭니다 (의 공급자 이름 (약식 이름)로 지정 했다고 가정 *MyProvider*):
 
 ```cpp
 class CWindowsFile:
    public WIN32_FIND_DATA
 {
 public:
-
-BEGIN_PROVIDER_COLUMN_MAP(CCustomWindowsFile)
+  
+BEGIN_PROVIDER_COLUMN_MAP(CMyProviderWindowsFile)
    PROVIDER_COLUMN_ENTRY("FileAttributes", 1, dwFileAttributes)
    PROVIDER_COLUMN_ENTRY("FileSizeHigh", 2, nFileSizeHigh)
    PROVIDER_COLUMN_ENTRY("FileSizeLow", 3, nFileSizeLow)
    PROVIDER_COLUMN_ENTRY_STR("FileName", 4, cFileName)
    PROVIDER_COLUMN_ENTRY_STR("AltFileName", 5, cAlternateFileName)
 END_PROVIDER_COLUMN_MAP()
-
+  
 };
 ```
 
-OLE DB 공급자 템플릿 클라이언트와의 상호 작용에 대 한 모든 OLE DB 세부 정보를 처리합니다. 공급자 호출을 획득 하기 위해 응답에 대 한 필요한 열 데이터는 `GetColumnInfo` 함수를 사용자 레코드에 배치 해야 합니다. 명시적으로 재정의할 수 `GetColumnInfo` 사용자 레코드에서 예를 들어 선언 하 여.h 파일에서 다음과 같이 합니다.
+OLE DB 공급자 템플릿 클라이언트와의 상호 작용에 모든 OLE DB 세부 정보를 처리합니다. 공급자 호출을 획득 하기 위해 응답에 대 한 필요한 열 데이터는 `GetColumnInfo` 함수를 사용자 레코드에 배치 해야 합니다. 명시적으로 재정의할 수 `GetColumnInfo` 사용자 레코드에서 예를 들어 선언 하 여.h 파일에서 다음과 같이 합니다.
 
 ```cpp
 template <class T>
-static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols)
+static ATLCOLUMNINFO* GetColumnInfo(T* pThis, ULONG* pcCols) 
 ```
 
-다음 코드와 동일합니다.
+이 것과 같습니다.
 
 ```cpp
 static ATLCOLUMNINFO* GetColumnInfo(CommandClass* pThis, ULONG* pcCols)
 static ATLCOLUMNINFO* GetColumnInfo(RowsetClass* pThis, ULONG* pcCols)
 ```
 
-도 구현 해야 `GetColumnInfo` 사용자 레코드의.cpp 파일에 있습니다.
+그런 다음 구현 `GetColumnInfo` 사용자 레코드의.cpp 파일에 있습니다.
 
 PROVIDER_COLUMN_MAP 매크로 만들기에 도움이 되는 `GetColumnInfo` 함수:
 
@@ -71,7 +71,7 @@ PROVIDER_COLUMN_MAP 매크로 만들기에 도움이 되는 `GetColumnInfo` 함�
 
 - END_PROVIDER_COLUMN_MAP 배열 및 함수를 닫습니다. 배열 요소 수에도 배치 합니다 *pcCols* 매개 변수입니다.
 
-런타임 시 사용자 레코드가 만들어질 때 `GetColumnInfo` 사용 하는 *pThis* 매개 변수 행 집합 또는 명령 인스턴스에 대 한 포인터를 수신 합니다. 명령 및 행 집합을 지원 해야 합니다는 `IColumnsInfo` 인터페이스를 this이 포인터에서 열 정보를 얻을 수 있도록 합니다.
+런타임 시 사용자 레코드가 만들어질 때 `GetColumnInfo` 사용 하는 *pThis* 매개 변수 행 집합 또는 명령 인스턴스에 대 한 포인터를 수신 합니다. 명령 및 행 집합을 지원 해야 합니다는 `IColumnsInfo` 인터페이스를 this이 포인터에서 열 정보를 사용할 수 있도록 합니다.
 
 `CommandClass` 및 `RowsetClass` 명령 및 사용자 레코드를 사용 하는 행 집합입니다.
 
@@ -79,4 +79,4 @@ PROVIDER_COLUMN_MAP 매크로 만들기에 도움이 되는 `GetColumnInfo` 함�
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)
+[OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

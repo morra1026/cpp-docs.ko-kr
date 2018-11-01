@@ -1,10 +1,6 @@
 ---
-title: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l | Microsoft 문서
-ms.custom: ''
+title: _ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbclower
 - _ismbclower_l
@@ -26,8 +22,6 @@ apitype: DLLExport
 f1_keywords:
 - _ismbcupper
 - _ismbclower
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbcupper function
 - ismbclower function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - ismbclower_l function
 - _ismbcupper_l function
 ms.assetid: 17d89587-65bc-477c-ba8f-a84e63cf59e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ef7b21cc10ca5e72a5054e34b0e228be89d74cb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 29a1e97f4583808931e5228a6905aed7c0a62702
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402236"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50431865"
 ---
 # <a name="ismbclower-ismbclowerl-ismbcupper-ismbcupperl"></a>_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l
 
@@ -85,24 +75,24 @@ int _ismbcupper_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 경우 *c*< 255 = 해당 하는 및 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
+이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 하는 경우 *c*< = 255 및 해당 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 각 함수는 지정한 조건에 대해 주어진 멀티바이트 문자를 테스트합니다.
 
-있는 이러한 함수 버전은 **_l** 접미사는은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-|루틴|테스트 조건|932 코드 페이지 예제|
+|루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbclower**|소문자 영문자|0이 아닌 경우 및 경우에만 반환 *c* 소문자 ASCII 영어 문자의 싱글바이트 표현인: 0x61 < =*c*< = 0x7A 합니다.|
-|**_ismbclower_l**|소문자 영문자|0이 아닌 경우 및 경우에만 반환 *c* 소문자 ASCII 영어 문자의 싱글바이트 표현인: 0x61 < =*c*< = 0x7A 합니다.|
-|**_ismbcupper**|대문자 영문자|0이 아닌 경우 및 경우에만 반환 *c* ASCII 영어 대문자 싱글바이트 표현인: 되었습니다 < =*c*< = 0x5A 합니다.|
-|**_ismbcupper_l**|대문자 영문자|0이 아닌 경우 및 경우에만 반환 *c* ASCII 영어 대문자 싱글바이트 표현인: 되었습니다 < =*c*< = 0x5A 합니다.|
+|**_ismbclower**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61 < =*c*< = 0x7A 합니다.|
+|**_ismbclower_l**|소문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 소문자 영어 문자의 싱글바이트 표현인: 0x61 < =*c*< = 0x7A 합니다.|
+|**_ismbcupper**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 합니다.|
+|**_ismbcupper_l**|대문자 영문자|경우에만 0이 아닌 값 반환 *c* ASCII 대문자 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbclower**|\<mbstring.h>|
 |**_ismbclower_l**|\<mbstring.h>|

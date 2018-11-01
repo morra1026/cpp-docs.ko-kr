@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 133214cceebf5d43610207e446698341d7803b71
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 56614dc0829834e77cfdf10d8d88ed44492237e3
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235544"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50070142"
 ---
 # <a name="walkthrough-testing-a-project-c"></a>연습: 프로젝트 테스트(C++)
 
@@ -41,7 +41,7 @@ ms.locfileid: "48235544"
 
 1. 다음과 같은 코드 줄을 선택합니다.
 
-     `Cardgame.solitaire(1);`
+   `Cardgame.solitaire(1);`
 
 1. 해당 줄에 중단점을 설정하려면 메뉴 모음에서 **디버그** > **중단점 설정/해제**를 선택하거나 **F9** 키를 선택합니다. 줄의 왼쪽에 빨간색 원이 나타나면 중단점이 설정되었음을 나타냅니다. 중단점을 제거하려면 메뉴 명령이나 **F9** 키를 다시 선택하면 됩니다.
 

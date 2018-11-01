@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a40738b5a360e521ff890ef53240609a9afde32
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dd4848ae88d7bd66286ef13b3505a741d9b55c5c
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388983"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50060887"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ 언어 규칙
 
@@ -93,8 +93,6 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |&nbsp;&nbsp;[P0283R2 인식할 수 없는 특성 무시](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0283r2.html)|VS 2015 <sup>[14](#note_14)</sup>|
 |&nbsp;&nbsp;[P0702R1 이니셜라이저 목록 작업자(initializer-list actors)에 대한 클래스 템플릿 인수 추론 문제 해결(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 
-  
-  
 |기능 영역| |
 |----|---|
 |__C++17 핵심 언어 기능(결함 보고서)__|__지원됨__|
@@ -105,8 +103,6 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |&nbsp;&nbsp;[P0962R2 range-for 루프 사용자 지정 지점 찾기 규칙 완화](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0962r1.html)|아니요|
 |&nbsp;&nbsp;[P0969R0 액세스할 수 있는 멤버에게 구조화된 바인딩 허용](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0969r0.pdf)|아니요|
 
-  
-  
 |기능 영역| |
 |----|---|
 |__C++20 핵심 언어 기능__|__지원됨__|
@@ -117,7 +113,6 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |&nbsp;&nbsp;[P0683R1 비트 필드에 대한 기본 멤버 이니셜라이저(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0683r1.html)|아니요|
 |&nbsp;&nbsp;[P0704R1 멤버에 대한 const lvalue ref-qualified 포인터 수정(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0704r1.html)|아니요|
 |&nbsp;&nbsp;[P0734R0 개념(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0734r0.pdf)|아니요|
-
 
 ## <a name="standard-library-features"></a>표준 라이브러리 기능
 
@@ -258,38 +253,55 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 
 ### <a name="supported-values"></a>지원되는 값
 
-__아니요__는 아직 구현되지 않은 것을 의미합니다.  
-__부분__은 Visual Studio 2017에서 부분적으로 구현되었음을 의미합니다. 자세한 내용은 참고 섹션을 참조하세요.  
-__해당 없음__은 제안 문서에서 해당 기능을 설명하지 않음을 의미합니다. 이러한 문서에서는 표준 언어를 변경했지만 구현자를 위한 작업을 만들지 않았습니다. 이 기능은 목록의 완전성을 위해 표시됩니다.  
-__VS 2010__은 Visual Studio 2010에서 지원되는 기능을 나타냅니다.  
-__VS 2013__은 Visual Studio 2013에서 지원되는 기능을 나타냅니다.  
-__VS 2015__은 Visual Studio 2015 RTM에서 지원되는 기능을 나타냅니다.  
-__VS 2015.2__ 및 __VS 2015.3__은 각각 Visual Studio 2015 업데이트 2와 Visual Studio 2015 업데이트 3에서 지원되는 기능을 나타냅니다.  
-__VS 2017__은 Visual Studio 2017 RTM에서 지원되는 기능을 나타냅니다.  
-__VS 2017 15.3__은 Visual Studio 2017 버전 15.3에서 지원되는 기능을 나타냅니다.  
-__VS 2017 15.5__는 Visual Studio 2017 버전 15.5에서 지원되는 기능을 나타냅니다.
-__VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 나타냅니다.
+__아니요__는 아직 구현되지 않은 것을 의미합니다.<br/>
+__부분__은 Visual Studio 2017에서 부분적으로 구현되었음을 의미합니다. 자세한 내용은 참고 섹션을 참조하세요.<br/>
+__해당 없음__은 제안 문서에서 해당 기능을 설명하지 않음을 의미합니다. 이러한 문서에서는 표준 언어를 변경했지만 구현자를 위한 작업을 만들지 않았습니다. 이 기능은 목록의 완전성을 위해 표시됩니다.<br/>
+__VS 2010__은 Visual Studio 2010에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2013__은 Visual Studio 2013에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2015__은 Visual Studio 2015 RTM에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2015.2__ 및 __VS 2015.3__은 각각 Visual Studio 2015 업데이트 2와 Visual Studio 2015 업데이트 3에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2017__은 Visual Studio 2017 RTM에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2017 15.3__은 Visual Studio 2017 버전 15.3에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2017 15.5__는 Visual Studio 2017 버전 15.5에서 지원되는 기능을 나타냅니다.<br/>
+__VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 나타냅니다.<br/>
 
 ### <a name="notes"></a>노트
 
 <a name="note_A"></a>__A__ In /std:c++14 모드에서는 동적 예외 사양이 구현되지 않은 상태로 남아 있으며 throw()는 여전히 \_\_declspec(nothrow)의 동의어로 처리됩니다. C++17에서 동적 예외 사양은 P0003R5에 의해 대부분 제거되었으므로 1개의 vestige: throw()가 더 이상 사용되지 않으며 noexcept의 동의어로 작동해야 합니다. In /std:c++17 모드에서 MSVC는 이제 noexcept, 즉 종료를 통한 적용과 동일한 동작을 throw()에게 제공하여 표준을 준수합니다.
-컴파일러 옵션 /Zc:noexceptTypes-는 \_\_declspec(nothrow)의 이전 동작을 요청합니다. C++20에서 throw()가 제거될 가능성이 있습니다. 표준 및 구현에서 이러한 변경 사항에 대한 응답으로 코드를 마이그레이션하는 것을 돕기 위해 예외 사양 문제에 대한 새로운 컴파일러 경고가 **/std:c++17** 및 **/permissive-** 아래에 추가되었습니다.  
-<a name="note_B"></a>__B__ Visual Studio 2017 버전 15.7의 /permissive- 모드에서 지원됩니다. 자세한 내용은 [2단계 이름 조회 지원이 MSVC에 제공](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/)을 참조하세요.  
-<a name="note_C"></a>__C__ Expression SFINAE에 대한 컴파일러의 지원은 Visual Studio 2015 업데이트 2 이후로 표준 라이브러리에 충분했습니다. /permissive- 모드가 설정되었는지 여부에 관계 없이 Visual Studio 2017 15.7에서 지원됩니다. 수정해야 할 몇 가지 버그가 남아 있습니다. "고유한 태그 형식" 해결 방법은 더 이상 필요하지 않아 STL 구현에서 이 해결 방법을 제거했습니다.  
-<a name="note_D"></a>__D__ Visual Studio 2017에서는 C99 전처리기 규칙에 대한 컴파일러의 지원이 불완전합니다. Variadic 매크로는 지원되지만 전처리기의 동작에 많은 버그가 있습니다.  전처리기를 개편하고 곧 **/permissive-** 모드에 해당 변경 사항을 실험적으로 제공할 것입니다.  
-<a name="note_E"></a>__E__ 컴파일러에서 확장된 정수 형식을 지원할 수는 있지만 필수는 아니므로 [적용할 수 없음]으로 표시됩니다.  GCC 및 Clang와 마찬가지로 지원하지 않기로 선택했습니다.  
-<a name="note_F"></a>__F__ 마찬가지로 컴파일러에서 이 최적화를 구현할 수는 있지만 필수는 아니므로 [적용할 수 없음]으로 표시됩니다.  
-<a name="note_G"></a>__G__ [/std:c++14](./build/reference/std-specify-language-standard-version.md) 아래에서 억제 가능한 경고로 표시됩니다.  
-<a name="note_J"></a>__J__ Visual Studio 2015에서 완전하지 않은 기능은 이 표의 다른 곳에 나와 있습니다.  
-<a name="note_K"></a>__K__ 이것은 완전히 새로운 구현이기 때문에 이전의 std::experimental 버전과 호환되지 않으며, symlink 지원, 버그 수정 및 표준 필수 동작의 변경이 필요합니다. 지금은 \<filesystem>을 포함하면 새로운 std::filesystem과 이전 std::experimental::filesystem을 제공하고 \<experimental/filesystem>을 포함하면 오래된 실험 구현만을 제공합니다. 실험적 구현은 다음 ABI-breaking 라이브러리 릴리스에서 제거될 것입니다.  
-<a name="note_L"></a>__L__ 컴파일러 내장 함수에서 지원됩니다.   
-<a name="note_14"></a>__14__ 이러한 C++17/20 기능은 [/std:c++14](build/reference/std-specify-language-standard-version.md)(기본값)를 지정한 경우에도 항상 활성화됩니다. 이는 **/std** 옵션을 도입하기 전에 기능이 구현되었거나 조건부 구현이 바람직하지 않게 복잡했기 때문입니다.  
-<a name="note_17"></a>__17__ 이러한 기능은 [/std:c++17](./build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션으로 활성화됩니다.  
-<a name="note_byte"></a>__byte__ `std::byte`는 [/std:c++17](./build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](./build/reference/std-specify-language-standard-version.md))로 활성화되지만, 경우에 따라 Windows SDK 헤더와 충돌할 수 있으므로 세분화된 옵트아웃 매크로가 있습니다. `_HAS_STD_BYTE`를 `0`으로 정의하여 비활성화할 수 있습니다.  
-<a name="note_C11"></a>__C11__ 유니버셜 CRT에서는 C99 `strftime()` E/O 대체 변환 지정자, C11 `fopen()` 단독 모드 및 C11 `aligned_alloc()`을 제외하고는 C++17에 필요한 C11 표준 라이브러리의 일부를 구현했습니다. 후자는 C11에서 `free()`의 Microsoft 구현과 호환되지 않는 방식으로 `free()`에서 고도로 정렬된 할당을 처리할 수 있어야 하는 `aligned_alloc()`을 지정했기 때문에 구현되지 않을 것입니다.  
-<a name="note_rem"></a>__rem__ [/std:c++17](./build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션이 지정되면 기능이 제거됩니다. 이러한 기능에는 `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS` 및 `_HAS_UNEXPECTED` 옵트아웃 매크로가 있습니다.  
-<a name="note_charconv"></a>__charconv__  from_chars() 및 to_chars()는 정수에 사용할 수 있습니다. 현재 부동 소수점 to_chars() 앞에 와야 할 부동 소수점 from_chars()에 대해 작업 중입니다.  
-<a name ="note_parallel"></a> __parallel__  C++17의 병렬 알고리즘 라이브러리가 완료되었습니다. 이는 모든 경우에서 모든 알고리즘이 병렬 처리된다는 것을 의미하지는 않습니다. 가장 중요한 알고리즘이 병렬 처리되었으며 알고리즘이 병렬화되지 않은 경우에도 실행 정책 서명이 제공됩니다. STL 구현의 중앙 내부 헤더인 yvals.h에는 다음과 같은 "병렬 알고리즘 노트"가 있습니다. C++은 구현 시 직렬 알고리즘에 대한 호출로서 병렬 알고리즘을 구현할 수 있습니다.   이 구현은 몇 가지 일반적인 알고리즘 호출을 병렬 처리하지만 전부는 아닙니다.  
+
+컴파일러 옵션 /Zc:noexceptTypes-는 \_\_declspec(nothrow)의 이전 동작을 요청합니다. C++20에서 throw()가 제거될 가능성이 있습니다. 표준 및 구현에서 이러한 변경 사항에 대한 응답으로 코드를 마이그레이션하는 것을 돕기 위해 예외 사양 문제에 대한 새로운 컴파일러 경고가 **/std:c++17** 및 **/permissive-** 아래에 추가되었습니다.
+
+<a name="note_B"></a>__B__ Visual Studio 2017 버전 15.7의 /permissive- 모드에서 지원됩니다. 자세한 내용은 [2단계 이름 조회 지원이 MSVC에 제공](https://blogs.msdn.microsoft.com/vcblog/2017/09/11/two-phase-name-lookup-support-comes-to-msvc/)을 참조하세요.
+
+<a name="note_C"></a>__C__ Expression SFINAE에 대한 컴파일러의 지원은 Visual Studio 2015 업데이트 2 이후로 표준 라이브러리에 충분했습니다. /permissive- 모드가 설정되었는지 여부에 관계 없이 Visual Studio 2017 15.7에서 지원됩니다. 수정해야 할 몇 가지 버그가 남아 있습니다. "고유한 태그 형식" 해결 방법은 더 이상 필요하지 않아 STL 구현에서 이 해결 방법을 제거했습니다.
+
+<a name="note_D"></a>__D__ Visual Studio 2017에서는 C99 전처리기 규칙에 대한 컴파일러의 지원이 불완전합니다. Variadic 매크로는 지원되지만 전처리기의 동작에 많은 버그가 있습니다.  전처리기를 개편하고 곧 **/permissive-** 모드에 해당 변경 사항을 실험적으로 제공할 것입니다.
+
+<a name="note_E"></a>__E__ 컴파일러에서 확장된 정수 형식을 지원할 수는 있지만 필수는 아니므로 [적용할 수 없음]으로 표시됩니다.  GCC 및 Clang와 마찬가지로 지원하지 않기로 선택했습니다.
+
+<a name="note_F"></a>__F__ 마찬가지로 컴파일러에서 이 최적화를 구현할 수는 있지만 필수는 아니므로 [적용할 수 없음]으로 표시됩니다.
+
+<a name="note_G"></a>__G__ [/std:c++14](./build/reference/std-specify-language-standard-version.md) 아래에서 억제 가능한 경고로 표시됩니다.
+
+<a name="note_J"></a>__J__ Visual Studio 2015에서 완전하지 않은 기능은 이 표의 다른 곳에 나와 있습니다.
+
+<a name="note_K"></a>__K__ 이것은 완전히 새로운 구현이기 때문에 이전의 std::experimental 버전과 호환되지 않으며, symlink 지원, 버그 수정 및 표준 필수 동작의 변경이 필요합니다. 지금은 \<filesystem>을 포함하면 새로운 std::filesystem과 이전 std::experimental::filesystem을 제공하고 \<experimental/filesystem>을 포함하면 오래된 실험 구현만을 제공합니다. 실험적 구현은 다음 ABI-breaking 라이브러리 릴리스에서 제거될 것입니다.
+
+<a name="note_L"></a>__L__ 컴파일러 내장 함수에서 지원됩니다.
+
+<a name="note_14"></a>__14__ 이러한 C++17/20 기능은 [/std:c++14](build/reference/std-specify-language-standard-version.md)(기본값)를 지정한 경우에도 항상 활성화됩니다. 이는 **/std** 옵션을 도입하기 전에 기능이 구현되었거나 조건부 구현이 바람직하지 않게 복잡했기 때문입니다.
+
+<a name="note_17"></a>__17__ 이러한 기능은 [/std:c++17](./build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션으로 활성화됩니다.
+
+<a name="note_byte"></a>__byte__ `std::byte`는 [/std:c++17](./build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](./build/reference/std-specify-language-standard-version.md))로 활성화되지만, 경우에 따라 Windows SDK 헤더와 충돌할 수 있으므로 세분화된 옵트아웃 매크로가 있습니다. `_HAS_STD_BYTE`를 `0`으로 정의하여 비활성화할 수 있습니다.
+
+<a name="note_C11"></a>__C11__ 유니버셜 CRT에서는 C99 `strftime()` E/O 대체 변환 지정자, C11 `fopen()` 단독 모드 및 C11 `aligned_alloc()`을 제외하고는 C++17에 필요한 C11 표준 라이브러리의 일부를 구현했습니다. 후자는 C11에서 `free()`의 Microsoft 구현과 호환되지 않는 방식으로 `free()`에서 고도로 정렬된 할당을 처리할 수 있어야 하는 `aligned_alloc()`을 지정했기 때문에 구현되지 않을 것입니다.
+
+<a name="note_rem"></a>__rem__ [/std:c++17](./build/reference/std-specify-language-standard-version.md)(또는 [/std:c++latest](./build/reference/std-specify-language-standard-version.md)) 컴파일러 옵션이 지정되면 기능이 제거됩니다. 이러한 기능에는 `_HAS_AUTO_PTR_ETC`, `_HAS_FUNCTION_ALLOCATOR_SUPPORT`, `_HAS_OLD_IOSTREAMS_MEMBERS` 및 `_HAS_UNEXPECTED` 옵트아웃 매크로가 있습니다.
+
+<a name="note_charconv"></a>__charconv__  from_chars() 및 to_chars()는 정수에 사용할 수 있습니다. 현재 부동 소수점 to_chars() 앞에 와야 할 부동 소수점 from_chars()에 대해 작업 중입니다.
+
+<a name ="note_parallel"></a> __parallel__  C++17의 병렬 알고리즘 라이브러리가 완료되었습니다. 이는 모든 경우에서 모든 알고리즘이 병렬 처리된다는 것을 의미하지는 않습니다. 가장 중요한 알고리즘이 병렬 처리되었으며 알고리즘이 병렬화되지 않은 경우에도 실행 정책 서명이 제공됩니다. STL 구현의 중앙 내부 헤더인 yvals.h에는 다음과 같은 "병렬 알고리즘 노트"가 있습니다. C++은 구현 시 직렬 알고리즘에 대한 호출로서 병렬 알고리즘을 구현할 수 있습니다.   이 구현은 몇 가지 일반적인 알고리즘 호출을 병렬 처리하지만 전부는 아닙니다.
 
 다음 알고리즘은 병렬 처리됩니다.
 
@@ -314,4 +326,4 @@ __VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 
 [Visual Studio 2017의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)<br/>
 [2003~ 2015 Visual C++ 주요 변경 내용](porting/visual-cpp-change-history-2003-2015.md)<br/>
 [Visual C++ 2003 ~ 2015의 새로운 기능](porting/visual-cpp-what-s-new-2003-through-2015.md)<br/>
-[Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)  
+[Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)

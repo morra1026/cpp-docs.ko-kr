@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eca30330e721575443ba9d3f7b0b19c315427eb2
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 3071b779338150816cb1d52d16932ac0e3878538
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234127"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50079324"
 ---
 # <a name="walkthrough-building-a-project-c"></a>연습: 프로젝트 빌드(C++)
 
@@ -49,7 +49,7 @@ ms.locfileid: "48234127"
 
 1. 구문 오류가 발생한 줄의 끝에 세미콜론을 다시 추가합니다.
 
-     `return 0;`
+   `return 0;`
 
 1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 

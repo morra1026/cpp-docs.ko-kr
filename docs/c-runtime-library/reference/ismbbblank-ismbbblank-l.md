@@ -1,10 +1,6 @@
 ---
-title: _ismbbblank, _ismbbblank_l | Microsoft 문서
-ms.custom: ''
+title: _ismbbblank, _ismbbblank_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbblank_l
 - _ismbbblank
@@ -21,19 +17,13 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 apitype: DLLExport
-dev_langs:
-- C++
 ms.assetid: d21b2e41-7206-41f5-85bb-9c9ab4f3e21b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d4d2849eca58c7fa3d7fc8250ab3bad0d346e4a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c6709d5a5870c44d200b704e4a34043ff9c37226
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399487"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646266"
 ---
 # <a name="ismbbblank-ismbbblankl"></a>_ismbbblank, _ismbbblank_l
 
@@ -64,11 +54,11 @@ int _ismbbblank_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbblank** 경우 0이 아닌 값을 반환 *c* (0x20) 공백 문자, 가로 탭 (0x09) 문자는 어떤 에대한텍스트줄에서단어를구분하는데사용되는로캘특정문자나타냅니다**isspace** true이 고, 그렇지 않으면, 0을 반환 합니다. **_ismbbblank** 모든 로캘 종속 동작에 대해 현재 로캘을 사용 합니다. **_ismbbblank_l** 에 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbblank** 이면 0이 아닌 값을 반환 *c* (0x20) 공백 문자, 가로 탭 (0x09) 문자인 또는 어떤 에대한텍스트줄내에서단어를구분하는데사용되는로캘별문자를나타내는**isspace** true, 그렇지 않으면 0을 반환 합니다. **_ismbbblank** 모든 로캘 종속 동작에 현재 로캘을 사용 합니다. **_ismbbblank_l** 전달 된 로캘을 대신 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbbblank**|\<mbctype.h>|
 |**_ismbbblank_l**|\<mbctype.h>|

@@ -1,10 +1,6 @@
 ---
-title: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l | Microsoft 문서
-ms.custom: ''
+title: _ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbcalpha
 - _ismbcalnum
@@ -36,8 +32,6 @@ f1_keywords:
 - _ismbcalnum_l
 - _ismbcalnum
 - ismbcdigit_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbcalpha function
 - _ismbcalnum function
@@ -52,16 +46,12 @@ helpviewer_keywords:
 - ismbcalnum_l function
 - ismbcalpha_l function
 ms.assetid: 12d57925-aebe-46e0-80b0-82b84c4c31ec
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a90fe131ff216bd9f758f3312d366e0ec29d79ae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a2f928d826b70b788220130f69c53cc351b4910
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532225"
 ---
 # <a name="ismbcalnum-ismbcalnuml-ismbcalpha-ismbcalphal-ismbcdigit-ismbcdigitl"></a>_ismbcalnum, _ismbcalnum_l, _ismbcalpha, _ismbcalpha_l, _ismbcdigit, _ismbcdigit_l
 
@@ -112,23 +102,23 @@ int _ismbcdigit_l
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 경우 *c*< 255 = 해당 하는 및 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
+이러한 각 루틴은 이 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 하는 경우 *c*< = 255 및 해당 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
 
 ## <a name="remarks"></a>설명
 
 이러한 각 루틴은 지정된 멀티바이트 문자를 지정된 조건에 대해 테스트합니다.
 
-있는 이러한 함수 버전은 **_l** 접미사는은 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+포함 된 이러한 함수의 버전을 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-|루틴|테스트 조건|932 코드 페이지 예제|
+|루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbcalnum**, **_ismbcalnum_l**|영숫자|0이 아닌 경우 및 경우에만 반환 *c* ASCII 영어 문자의 싱글바이트 표현인:에 대 한 예제를 참조 하십시오. **_ismbcdigit** 및 **_ismbcalpha**합니다.|
-|**_ismbcalpha**, **_ismbcalpha_l**|Alphabetic|0이 아닌 경우 및 경우에만 반환 *c* ASCII 영어 문자의 싱글바이트 표현인: 되었습니다 < =*c*< = 0x5A 또는 0x61 < =*c*< = 0x7A; 또는 가타카나 문자: 0xA6 < =*c*< 0xDF = 합니다.|
-|**_ismbcdigit**, **_ismbcdigit**|숫자|0이 아닌 경우 및 경우에만 반환 *c* 싱글바이트 표현인의 ASCII 숫자: 0x30 < =*c*< 0x39 = 합니다.|
+|**_ismbcalnum**, **_ismbcalnum_l**|영숫자|0이 아닌 경우 및 경우에만 반환 *c* ASCII 영어 문자의 싱글바이트 표현인:에 대 한 예제를 참조 하십시오 **_ismbcdigit** 하 고 **_ismbcalpha**합니다.|
+|**_ismbcalpha**, **_ismbcalpha_l**|Alphabetic|경우에만 0이 아닌 값 반환 *c* ASCII 영어 문자의 싱글바이트 표현인: 0x41 < =*c*< = 0x5A 또는 0x61&lt < =*c*< = 0x7A 또는 가타카나 문자: (0xa6&lt < =*c*< = 0xDF 합니다.|
+|**_ismbcdigit**, **_ismbcdigit**|숫자|경우에만 0이 아닌 값 반환 *c* ASCII 숫자의 싱글바이트 표현인. 0x30 < =*c*< = 0x39 합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbcalnum**, **_ismbcalnum_l**|\<mbstring.h>|
 |**_ismbcalpha**, **_ismbcalpha_l**|\<mbstring.h>|

@@ -1,30 +1,20 @@
 ---
-title: 이중 인터페이스 (ATL) 구현 | Microsoft Docs
-ms.custom: ''
+title: 이중 인터페이스 (ATL) 구현
 ms.date: 11/04/2016
-ms.technology:
-- cpp-atl
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - IDispatchImpl class, implementing dual interfaces
 - dual interfaces, implementing
 ms.assetid: d1da3633-b445-4dcd-8a0a-3efdafada3ea
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a362ba60b1601e2b291201e10ac49cf9c0ec1ef
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3b5363bb74a0db5b3cc5dad9bb0c0c6cb05edf15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765985"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50441225"
 ---
 # <a name="implementing-a-dual-interface"></a>이중 인터페이스를 구현합니다.
 
-사용 하 여 이중 인터페이스를 구현할 수 있습니다 합니다 [IDispatchImpl](../atl/reference/idispatchimpl-class.md) 의 기본 구현을 제공 하는 클래스는 `IDispatch` 이중 인터페이스에서 메서드. 자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.
+사용 하 여 이중 인터페이스를 구현할 수 있습니다 합니다 [IDispatchImpl](../atl/reference/idispatchimpl-class.md) 의 기본 구현을 제공 하는 클래스는 `IDispatch` 이중 인터페이스에서 메서드. 자세한 내용은 [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)을 참조하십시오.
 
 이 클래스를 사용 합니다.
 

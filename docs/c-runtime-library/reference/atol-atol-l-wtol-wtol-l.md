@@ -1,10 +1,6 @@
 ---
-title: atol, _atol_l, _wtol, _wtol_l | Microsoft 문서
-ms.custom: ''
+title: atol, _atol_l, _wtol, _wtol_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - atol
 - _wtol_l
@@ -31,8 +27,6 @@ f1_keywords:
 - _wtol
 - _ttol
 - _wtol_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - tstol function
 - atol function
@@ -49,16 +43,12 @@ helpviewer_keywords:
 - wtol function
 - _wtol function
 ms.assetid: cedfc21c-2d64-4e9c-bd04-bdf60b12db46
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: deb23d856fc0ec5aecfdb726256394d5135a18d4
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 486b6dc3bdfbbaf4b7becadde76768a0bb1c7c00
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450708"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537191"
 ---
 # <a name="atol-atoll-wtol-wtoll"></a>atol, _atol_l, _wtol, _wtol_l
 
@@ -93,9 +83,9 @@ long _wtol_l(
 
 ## <a name="return-value"></a>반환 값
 
-각 함수는 반환 된 **긴** 입력된 된 문자를 숫자로 해석 하 여 계산 된 값입니다. 반환 값은 0 L에 대 한 **atol** 입력 해당 형식의 값으로 변환할 수 없습니다.
+각 함수가 반환 하는 **긴** 입력된 문자를 숫자로 해석 하 여 생성 된 값입니다. 반환 값이에 대해 0l **atol** 해당 형식의 값으로 입력을 변환할 수 없는 경우.
 
-큰 양의 정수 값으로 하는 오버플로의 경우 **atol** 반환 **LONG_MAX**; 큰 음의 정수 값으로 하는 오버플로의 경우 **LONG_MIN** 은 반환 됩니다. 모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수는 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 0을 반환 합니다.
+큰 양의 정수 값을 사용 하는 오버플로의 경우 **atol** 반환 **LONG_MAX**큰 음의 정수 값을 사용 하는 오버플로의 경우 **LONG_MIN** 됩니다 반환 됩니다. 모든 범위를 벗어난 경우에 **errno** 로 설정 된 **ERANGE**합니다. 전달 된 매개 변수 인지 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -103,17 +93,17 @@ long _wtol_l(
 
 입력 문자열은 지정된 형식의 숫자 값으로 해석될 수 있는 문자 시퀀스입니다. 함수는 숫자의 일부로 인식할 수 없는 첫 번째 문자에서 입력 문자열 읽기를 중지합니다. 이 문자는 문자열을 종결하는 null 문자('\0' 또는 L'\0')일 수 있습니다.
 
-*str* 인수를 **atol** 형식은 다음과 같습니다.
+합니다 *str* 인수를 **atol** 다음과 같은 형식을 갖습니다.
 
-> [*공백*] [*기호*] [*자릿수*]]
+> [*공백을*] [*sign*] [*자릿수*]]
 
-A *공백* ; 무시 되는 공백 또는 탭 문자로 구성 되어 *기호* 는 더하기 (+) 또는 빼기 (-); 및 *자릿수* 는 되는 하나 이상의 숫자입니다.
+A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
 
-**_wtol** 동일 **atol** 제외 하 고 와이드 문자 문자열이 필요 합니다.
+**_wtol** 동일 **atol** 제외 하 고 와이드 문자 문자열을 사용 합니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -125,11 +115,11 @@ A *공백* ; 무시 되는 공백 또는 탭 문자로 구성 되어 *기호* �
 |루틴|필수 헤더|
 |--------------|---------------------|
 |**atol**|\<stdlib.h>|
-|**_atol_l**, **_wtol**, **_wtol_l**|\<stdlib.h> 및 \<wchar.h>|
+|**_atol_l**하십시오 **_wtol**, **_wtol_l**|\<stdlib.h> 및 \<wchar.h>|
 
 ## <a name="example"></a>예제
 
-이 프로그램은 방법 문자열로 저장 된 숫자를 사용 하 여 숫자 값으로 변환 될 수는 **atol** 함수입니다.
+이 프로그램을 사용 하 여 숫자 값을 문자열로 저장 된 숫자를 변환할 수 하는 방법을 보여 줍니다 합니다 **atol** 함수입니다.
 
 ```C
 // crt_atol.c

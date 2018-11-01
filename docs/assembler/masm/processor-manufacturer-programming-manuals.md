@@ -1,23 +1,13 @@
 ---
-title: 프로세서 제조업체 프로그래밍 설명서 | Microsoft Docs
-ms.custom: ''
+title: 프로세서 제조업체 프로그래밍 설명서
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: 61844163-de2f-419a-808e-04de39dfdddf
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 56e653f1870d3139031a79180cc3a02c33b162f5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: be650b0d19577b0a2191a6bf7d16063e720f3b0d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676260"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50545094"
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>프로세서 제조업체 프로그래밍 설명서
 

@@ -1,10 +1,6 @@
 ---
-title: _execv, _wexecv | Microsoft 문서
-ms.custom: ''
+title: _execv, _wexecv
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wexecv
 - _execv
@@ -25,24 +21,18 @@ f1_keywords:
 - _execv
 - _wexecv
 - wexecv
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wexecv function
 - _execv function
 - wexecv function
 - execv function
 ms.assetid: 8dbaf7bc-9040-4316-a0c1-db7e866b52af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f8c6013e7d62b3738efe717c95e1464f31e2f0bc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd0447e7863e25571a968a821b45614d5d76d1bd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399090"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523953"
 ---
 # <a name="execv-wexecv"></a>_execv, _wexecv
 
@@ -74,7 +64,7 @@ intptr_t _wexecv(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1은 오류를 나타내며이 경우는 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
 
 |**errno** 값|설명|
 |-------------------|-----------------|
@@ -92,11 +82,11 @@ intptr_t _wexecv(
 
 이러한 각 함수는 새 프로세스를 로드하고 실행하여 포인터 배열을 명령줄 인수에 전달합니다.
 
-**_execv** 함수는 매개 변수의 유효성을 검사 합니다. 경우 *cmdname* 가 null 포인터인 경우 또는 *argv* 가 null 포인터 이면 빈 배열에 대 한 포인터 또는 배열에는 빈 문자열이 첫 번째 인수로 포함 된 경우는 **_execv** 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 고-1을 반환 합니다. 프로세스가 시작되지 않습니다.
+합니다 **_execv** 함수 매개 변수 유효성을 검사 합니다. 하는 경우 *cmdname* 가 null 포인터 이거나 *argv* 가 null 포인터인 경우 빈 배열에 대 한 포인터 배열의 첫 번째 인수로 빈 문자열을 포함 하는 경우 또는 합니다 **_execv** 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다. 프로세스가 시작되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execv**|\<process.h>|\<errno.h>|
 |**_wexecv**|\<process.h> 또는 \<wchar.h>|\<errno.h>|

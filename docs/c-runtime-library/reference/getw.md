@@ -1,10 +1,6 @@
 ---
-title: _getw | Microsoft 문서
-ms.custom: ''
+title: _getw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getw
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _getw
-dev_langs:
-- C++
 helpviewer_keywords:
 - _getw function
 - integers, getting from streams
 - getw function
 ms.assetid: ef75facc-b84e-470f-9f5f-8746c90822a0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3caffb90252780b833b80e3e5d1cd6d5ef6b0fcb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 615d3ac9bdc73ad200368eaeabf7c84951bc91ae
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400544"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487609"
 ---
 # <a name="getw"></a>_getw
 
@@ -59,15 +49,15 @@ int _getw(
 
 ## <a name="return-value"></a>반환 값
 
-**_getw** 읽은 정수 값을 반환 합니다. 반환 값이 **EOF** 오류 또는 파일의 끝을 나타냅니다. 그러나 때문에 **EOF** 값은 또한 유효한 정수 값을 사용 하 여 **feof** 또는 **ferror** 파일 끝 또는 오류 조건을 확인 합니다. 경우 *스트림* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **EOF**합니다.
+**_getw** 읽은 정수 값을 반환 합니다. 반환 값 **EOF** 오류 또는 파일의 끝을 나타냅니다. 그러나 때문에 **EOF** 값은 올바른 정수 값도 사용 합니다 **feof** 또는 **ferror** 는 파일의 끝 또는 오류 조건을 확인 합니다. 하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **EOF**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_getw** 함수 형식의 다음 이진 값을 읽습니다 **int** 연결 된 파일에서 *스트림* 을 가리키도록 연결 된 파일 포인터 (있는 경우) 증가 읽지 않은 문자입니다. **_getw** 스트림의 항목의 특수 정렬도 간주 하지 않습니다. 이식 관련 문제가 발생할 수 있습니다 **_getw** 때문에 크기는 **int** 유형과 내의 바이트 순서가 **int** 형식은 시스템에서 다를 합니다.
+합니다 **_getw** 함수 형식의 다음 이진 값을 읽고 **int** 연관 된 파일에서 *stream* 가리키도록 (있는 경우) 연결된 된 파일 포인터를 증가 시킵니다 읽지 않은 다음 문자입니다. **_getw** 어떠한 특별 한 스트림의 항목 맞춤을 가정 하지는 않습니다. 이식 관련 문제가 발생할 수 있습니다 **_getw** 때문에 크기를 **int** 형식과 내의 바이트 순서를 **int** 형식이 시스템에서 다를 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_getw**|\<stdio.h>|
 

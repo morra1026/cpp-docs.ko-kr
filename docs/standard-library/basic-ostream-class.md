@@ -1,10 +1,6 @@
 ---
-title: basic_ostream 클래스 | Microsoft 문서
-ms.custom: ''
+title: basic_ostream 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - ostream/std::basic_ostream
 - ostream/std::basic_ostream::flush
@@ -14,8 +10,6 @@ f1_keywords:
 - ostream/std::basic_ostream::swap
 - ostream/std::basic_ostream::tellp
 - ostream/std::basic_ostream::write
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::basic_ostream [C++]
 - std::basic_ostream [C++], flush
@@ -26,16 +20,12 @@ helpviewer_keywords:
 - std::basic_ostream [C++], tellp
 - std::basic_ostream [C++], write
 ms.assetid: 5baadc65-b662-4fab-8c9f-94457c58cda1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f30e2b226524e1d4a62c9f8cc950f4dd30846861
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dce4911bd4b7abe6c73551d6a0b178d9b2700dbb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100978"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50543639"
 ---
 # <a name="basicostream-class"></a>basic_ostream 클래스
 
@@ -251,7 +241,7 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 함수 포인터입니다.
 
 *strbuf*<br/>
-에 대 한 포인터를 `stream_buf` 개체입니다.
+`stream_buf` 개체에 대한 포인터입니다.
 
 *val*<br/>
 스트림에 기록할 요소입니다.

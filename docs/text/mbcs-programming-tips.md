@@ -19,16 +19,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac4ed378640942dbe33490d618cec7289125b0c8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a88fffbfc42dd6e7386ec43e55f2013f2548b6f5
+ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418790"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50204472"
 ---
 # <a name="mbcs-programming-tips"></a>MBCS 프로그래밍 팁
 
-새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 유니코드로 대체된 레거시 기술입니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 권장 하는 MFC 응용 프로그램 및 MFC 하지 않고 작성 된 응용 프로그램에 적용 됩니다. 다음과 같은 내용을 다룹니다.
+새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 레거시 기술입니다 유니코드로 대체 되었습니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 권장 하는 MFC 응용 프로그램 및 MFC 하지 않고 작성 된 응용 프로그램에 적용 됩니다. 다음과 같은 내용을 다룹니다.
 
 - [일반적인 MBCS 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
 

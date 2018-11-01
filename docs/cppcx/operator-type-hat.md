@@ -1,24 +1,17 @@
 ---
-title: 연산자 Type ^ | Microsoft Docs
-ms.custom: ''
+title: 연산자 Type^
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: b24ffc83-0780-4f9a-8ee0-f5725db339d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b17b706c15e1cf996cb694842c05d70b33f8e1e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: fca53abb9dc17588695591d496b7db2a76e319f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106543"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553662"
 ---
 # <a name="operator-type"></a>연산자 Type^
 
-변환할 수 있습니다 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 에 `Platform::Type`입니다.
+[Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 을 `Platform::Type`으로 변환할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,11 +21,11 @@ Operator Type^(Windows::UI::Xaml::Interop::TypeName typeName);
 
 ### <a name="return-value"></a>반환 값
 
-반환 된 `Platform::Type` 주어 지 면을 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx)합니다.
+`Platform::Type` Windows::UI::Xaml::Interop::TypeName [이 제공되면](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx)을 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-`TypeName` 은 형식 정보를 나타내기 위한 언어 중립 Windows 런타임 구조체입니다. [Platform::Type](../cppcx/platform-type-class.md) 은 C++에서만 사용되며 ABI(응용 프로그램 이진 인터페이스) 전반에서 전달될 수 없습니다. 사용 하 여 다음과 같습니다 `TypeName`를 [탐색](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) 함수:
+`TypeName` 은 형식 정보를 나타내기 위한 언어 중립 Windows 런타임 구조체입니다. [Platform::Type](../cppcx/platform-type-class.md) 은 C++에서만 사용되며 ABI(응용 프로그램 이진 인터페이스) 전반에서 전달될 수 없습니다. 다음은 `TypeName`Navigate [함수에서](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) 을 사용하는 한 가지 방법입니다.
 
 ```
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
@@ -59,5 +52,5 @@ Type^ tx2 = (Type^)(tn);
 
 ## <a name="see-also"></a>참고 항목
 
-[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
+[연산자 Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
 [Platform::Type 클래스](../cppcx/platform-type-class.md)

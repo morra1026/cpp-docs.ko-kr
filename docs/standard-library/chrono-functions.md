@@ -1,18 +1,16 @@
 ---
-title: '&lt;chrono&gt; 함수 | Microsoft 문서'
-ms.custom: ''
+title: '&lt;chrono&gt; 함수'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - chrono/std::duration_cast
 - chrono/std::time_point_cast
 ms.assetid: d6800e15-77a1-4df3-900e-d8b2fee190c7
-ms.openlocfilehash: fc0af2eeb2e3207537fa6edf056aa7382198a5d8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 5aadf776cc25e22a40ed75f854481dff63cce4bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50053762"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50597498"
 ---
 # <a name="ltchronogt-functions"></a>&lt;chrono&gt; 함수
 

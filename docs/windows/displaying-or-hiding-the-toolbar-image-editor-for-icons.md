@@ -1,28 +1,17 @@
 ---
-title: 표시 또는 숨기기 (아이콘에 대 한 c + + 이미지 편집기) 도구 모음 | Microsoft Docs
-ms.custom: ''
+title: 표시 또는 숨기기 (아이콘에 대 한 c + + 이미지 편집기) 도구 모음
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Image editor [C++], toolbar
 - toolbars [C++], showing
 - toolbars [C++], hiding
 ms.assetid: 78d25184-a8f4-457f-aa6f-069a5a27bcf8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: d11fdea6e85bf542a00b497b311494ba6133e1d3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6a96c16e4a4a8da927ec54e23960c3b9179fd650
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46376592"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595821"
 ---
 # <a name="displaying-or-hiding-the-toolbar-c-image-editor-for-icons"></a>표시 또는 숨기기 (아이콘에 대 한 c + + 이미지 편집기) 도구 모음
 

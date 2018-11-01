@@ -1,10 +1,6 @@
 ---
-title: _getpid | Microsoft 문서
-ms.custom: ''
+title: _getpid
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _getpid
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _getpid
-dev_langs:
-- C++
 helpviewer_keywords:
 - getpid function
 - _getpid function
 - process identification numbers
 ms.assetid: d3e13bae-9a0c-4f33-86d3-ec9df9519285
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f93f6c1c70618b300e8bc05b8e3a15104de6fa6c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c110fb7b6d64be281fb3779c7e03f2c4145f4ce8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396750"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621080"
 ---
 # <a name="getpid"></a>_getpid
 
@@ -59,11 +49,11 @@ int _getpid( void );
 
 ## <a name="remarks"></a>설명
 
-**_getpid** 함수는 시스템에서 프로세스 ID를 가져옵니다. 프로세스 ID는 호출 프로세스를 고유하게 식별합니다.
+합니다 **_getpid** 함수는 시스템에서 프로세스 ID를 가져옵니다. 프로세스 ID는 호출 프로세스를 고유하게 식별합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_getpid**|\<process.h>|
 

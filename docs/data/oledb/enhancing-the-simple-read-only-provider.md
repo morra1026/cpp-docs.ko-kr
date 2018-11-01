@@ -1,29 +1,18 @@
 ---
-title: 단순한 읽기 전용 공급자의 기능 향상 | Microsoft Docs
-ms.custom: ''
-ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: reference
-dev_langs:
-- C++
+title: 단순한 읽기 전용 공급자의 기능 향상
+ms.date: 10/26/2018
 helpviewer_keywords:
 - read-only poviders [C++]
 - IRowsetLocate class
 - IRowsetLocate class, adding to OLE DB template providers
 - simple read-only poviders [C++]
 ms.assetid: cba0e09f-44c1-41c1-9456-332aa13dc158
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: dc899314070f10c0b10cd959af57a7230a406ac3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 4b06eb77851df0bf0bd0d3ef91a3ea960835ccba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069713"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50462922"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>단순한 읽기 전용 공급자의 기능 향상
 
@@ -39,4 +28,4 @@ ms.locfileid: "50069713"
 
 ## <a name="see-also"></a>참고 항목
 
-[단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)
+[단순한 읽기 전용 공급자 만들기](../../data/oledb/creating-a-simple-read-only-provider.md)<br/>

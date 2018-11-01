@@ -1,7 +1,7 @@
 ---
 title: RCustomRowset의 상속 수정 | Microsoft 문서
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/26/2018
 ms.technology:
 - cpp-data
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1a9b6e238d3824451ab0f820917c34c97826ffab
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 13e15b470be6f6a5af4f8012e3a70896f648e665
+ms.sourcegitcommit: 840033ddcfab51543072604ccd5656fc6d4a5d3a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060392"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50216515"
 ---
 # <a name="modifying-the-inheritance-of-rcustomrowset"></a>RCustomRowset의 상속 수정
 
@@ -35,28 +35,28 @@ ms.locfileid: "50060392"
 // CustomRS.h
 
 template <class T, class Storage, class CreatorClass, class ArrayType = CAtlArray<Storage>>
-class CCustomRowsetImpl:
+class CMyRowsetImpl:
    public CRowsetImpl<T, Storage, CreatorClass, ArrayType, CSimpleRow, IRowsetLocateImpl< T, IRowsetLocate >>
 {
 ...
 };
 ```
 
-이제 다음과 같이 되도록 CustomRS.h에서 COM 인터페이스 맵을 편집 합니다.
+이제에서 COM 인터페이스 맵을 편집 *사용자 지정*RS.h 다음과 같이 되도록 합니다.
 
 ```cpp
-BEGIN_COM_MAP(CCustomRowsetImpl)
+BEGIN_COM_MAP(CMyRowsetImpl)
    COM_INTERFACE_ENTRY(IRowsetLocate)
    COM_INTERFACE_ENTRY_CHAIN(_RowsetBaseClass)
 END_COM_MAP()
 ```
 
-지시 하는 COM 인터페이스 맵을 만듭니다 `CCustomRowsetImpl` 호출 `QueryInterface` 둘 다에 대해 합니다 `IRowset` 및 `IRowsetLocate` 인터페이스입니다. 다른 행 집합에 대 한 구현의 모든 클래스, 맵 링크는 `CCustomRowsetImpl` 클래스를는 `CRowsetBaseImpl` map의 COM 맵에 검색 하려면 OLE DB 템플릿 알려 주는 COM_INTERFACE_ENTRY_CHAIN 매크로 사용 하 여; OLE DB 템플릿에 정의 된 클래스 `CRowsetBaseImpl` 에 대 한 응답을 `QueryInterface` 호출 합니다.
+이 코드에 알려주는 COM 인터페이스 맵을 만듭니다 `CMyRowsetImpl` 호출할 `QueryInterface` 둘 다에 대 한 합니다 `IRowset` 및 `IRowsetLocate` 인터페이스. 다른 행 집합에 대 한 구현의 모든 클래스, 맵 링크는 `CMyRowsetImpl` 클래스를는 `CRowsetBaseImpl` map의 COM 맵에 검색 하려면 OLE DB 템플릿 알려 주는 COM_INTERFACE_ENTRY_CHAIN 매크로 사용 하 여; OLE DB 템플릿에 정의 된 클래스 `CRowsetBaseImpl` 에 대 한 응답을 `QueryInterface` 호출 합니다.
 
-마지막으로 연결 `RAgentRowset` 하 `CCustomRowsetBaseImpl` 수정 하 여 `RAgentRowset` 상속할 `CCustomRowsetImpl`같이:
+마지막으로 연결 `RAgentRowset` 하 `CMyRowsetBaseImpl` 수정 하 여 `RAgentRowset` 상속할 `CMyRowsetImpl`같이:
 
 ```cpp
-class RAgentRowset : public CCustomRowsetImpl<RAgentRowset, CAgentMan, CCustomCommand>
+class RAgentRowset : public CMyRowsetImpl<RAgentRowset, CAgentMan, CCustomCommand>
 ```
 
 `RAgentRowset` 이제 사용할 수는 `IRowsetLocate` 행 집합 클래스 구현의 나머지 부분을 활용 하는 인터페이스입니다.
@@ -65,4 +65,4 @@ class RAgentRowset : public CCustomRowsetImpl<RAgentRowset, CAgentMan, CCustomCo
 
 ## <a name="see-also"></a>참고 항목
 
-[단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)
+[단순한 읽기 전용 공급자의 기능 향상](../../data/oledb/enhancing-the-simple-read-only-provider.md)<br/>

@@ -1,11 +1,6 @@
 ---
-title: feclearexcept1 | Microsoft 문서
-ms.custom: ''
+title: feclearexcept1
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - feclearexcept
 apilocation:
@@ -24,21 +19,15 @@ apitype: DLLExport
 f1_keywords:
 - feclearexcept
 - fenv/feclearexcept
-dev_langs:
-- C++
 helpviewer_keywords:
 - feclearexcept function
 ms.assetid: ef419da3-c248-4432-b53c-8e7a475d9533
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: face2637f308a56d95baa7563a6409dd38870d73
-ms.sourcegitcommit: 2f571220e16f6c20e1fdb005f6cbc9e7ef5608f5
+ms.openlocfilehash: 3c2f037a5be903fc006debfa7319c483431fdd92
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37070079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50551114"
 ---
 # <a name="feclearexcept"></a>feclearexcept
 
@@ -54,16 +43,16 @@ int feclearexcept(
 
 ### <a name="parameters"></a>매개 변수
 
-*excepts*<br/>
+*제외한*<br/>
 지울 예외 상태 플래그입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이면 0을 반환 *excepts* 0이 아니면 지정 된 모든 예외를 지운 성공적으로 합니다. 그렇지 않으면 0이 아닌 값을 반환합니다.
+경우에는 0을 반환 합니다 *를 제외한* 가 0 이면 모든 지정 된 예외가 성공적으로 지워진 경우. 그렇지 않으면 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**feclearexcept** 부동의 선택을 취소 하려고 하는 함수 지점으로 지정 된 예외 상태 플래그 *excepts*합니다. 이 함수는 fenv.h에 정의된 다음 예외 매크로를 지원합니다.
+합니다 **feclearexcept** 부동의 선택을 취소 하려고 하는 함수 지점으로 지정 된 예외 상태 플래그 *제외한*합니다. 이 함수는 fenv.h에 정의된 다음 예외 매크로를 지원합니다.
 
 |예외 매크로|설명|
 |---------------------|-----------------|
@@ -74,7 +63,7 @@ int feclearexcept(
 |FE_UNDERFLOW|초기 부동 소수점 작업 결과가 완전히 정확하게 표시하기에 너무 작습니다. 비정상적인 값이 생성되었습니다.|
 |FE_ALL_EXCEPT|모든 지원되는 부동 소수점 예외의 비트 OR입니다.|
 
-*excepts* 인수는 0 또는 하나 이상의 지원 되는 예외 매크로의 비트 OR 될 수 있습니다. 기타 인수 값의 결과는 정의 해제됩니다.
+합니다 *를 제외한* 인수는 0 또는 지원 되는 예외 매크로 중 하나 이상의 비트 OR 일 수 있습니다. 기타 인수 값의 결과는 정의 해제됩니다.
 
 ## <a name="requirements"></a>요구 사항
 

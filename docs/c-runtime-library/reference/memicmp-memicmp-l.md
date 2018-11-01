@@ -1,10 +1,6 @@
 ---
-title: _memicmp, _memicmp_l | Microsoft 문서
-ms.custom: ''
+title: _memicmp, _memicmp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _memicmp_l
 - _memicmp
@@ -25,24 +21,18 @@ f1_keywords:
 - _memicmp
 - memicmp_l
 - _memicmp_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - memicmp function
 - _memicmp function
 - memicmp_l function
 - _memicmp_l function
 ms.assetid: 0a6eb945-4077-4f84-935d-1aaebe8db8cb
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a3ddd09fbfbfd4de095bfbc67bc669cf9c794dee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8beb632c8bd2cfac486fc58fc930b94490bdecbc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403055"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636815"
 ---
 # <a name="memicmp-memicmpl"></a>_memicmp, _memicmp_l
 
@@ -84,22 +74,22 @@ int _memicmp_l(
 
 |반환 값|buf1 및 buf2의 첫 번째 count 바이트의 관계|
 |------------------|--------------------------------------------------------|
-|< 0|*buffer1* 미만 *buffer2*합니다.|
+|< 0|*buffer1* 보다 작거나 *buffer2*합니다.|
 |0|*buffer1* 동일 *buffer2*합니다.|
 |> 0|*buffer1* 보다 큰 *buffer2*합니다.|
 |**_NLSCMPERROR**|오류가 발생했습니다.|
 
 ## <a name="remarks"></a>설명
 
-**_memicmp** 함수는 첫 번째 비교 *count* 는 두 버퍼의 문자 *buffer1* 및 *buffer2* 바이트 단위로 합니다. 대/소문자를 구분하지 않고 비교합니다.
+**_memicmp** 함수는 첫 번째 비교 *개수* 두 버퍼의 문자 *buffer1* 고 *buffer2* 바이트 단위로 합니다. 대/소문자를 구분하지 않고 비교합니다.
 
-어느 경우 *buffer1* 또는 *buffer2* 가 null 포인터의 설명 대로 잘못 된 매개 변수 처리기를 호출 하는이 함수 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **_NLSCMPERROR** 설정 **errno** 를 **EINVAL**합니다.
+이면 *buffer1* 또는 *buffer2* 가 null 포인터인 경우이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **_NLSCMPERROR** 설정 **errno** 하 **EINVAL**합니다.
 
-**_memicmp** 로캘 종속 동작에 대 한 현재 로캘을 사용 **_memicmp_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_memicmp** 로캘 종속 동작에 현재 로캘을 사용 **_memicmp_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_memicmp**|\<memory.h> 또는 \<string.h>|
 |**_memicmp_l**|\<memory.h> 또는 \<string.h>|

@@ -1,27 +1,17 @@
 ---
-title: 템플릿 함수 | Microsoft Docs
-ms.custom: ''
+title: 함수 템플릿
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - function templates
 - templates, function
 - function templates, about function templates
 ms.assetid: 59b56a4b-0689-4161-9c07-25021562e2a7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 82c68fa22f8acda313510cf1cf18e48332576e53
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 77f3d1ee704c8094fd3bd94597311976e54ba6a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46118689"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493524"
 ---
 # <a name="function-templates"></a>함수 템플릿
 
@@ -52,7 +42,7 @@ MySwap( j, k );          //OK
 MySwap( j, Hello );      //error
 ```
 
-컴파일러가 형식이 다른 매개 변수를 사용하여 `MySwap` 함수를 생성할 수 없으므로 두 번째 `MySwap` 호출은 컴파일 타임 오류를 트리거합니다. void 포인터가 사용된 경우 두 함수 호출 모두 올바르게 컴파일되지만 런타임에는 함수가 제대로 작동하지 않습니다.
+컴파일러가 형식이 다른 매개 변수를 사용하여 `MySwap` 함수를 생성할 수 없으므로 두 번째 `MySwap` 호출은 컴파일 시간 오류를 트리거합니다. void 포인터가 사용된 경우 두 함수 호출 모두 올바르게 컴파일되지만 런타임에는 함수가 제대로 작동하지 않습니다.
 
 함수 템플릿에 대한 템플릿 인수는 명시적으로 지정할 수 있습니다. 예를 들어:
 

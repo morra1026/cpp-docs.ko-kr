@@ -1,11 +1,6 @@
 ---
-title: carg, cargf, cargl | Microsoft 문서
-ms.custom: ''
+title: carg, cargf, cargl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - carg
 - cargf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/carg
 - complex/cargf
 - complex/cargl
-dev_langs:
-- C++
 helpviewer_keywords:
 - carg function
 - cargf function
 - cargl function
 ms.assetid: 610d6a93-b929-46ab-a966-b77db0b804be
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 34a5e55b4261c68d90c3bcb28cf2f0e7be1a2c50
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 584732594cd9ca9579907986e3dc3b5f3dbf52c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393474"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665597"
 ---
 # <a name="carg-cargf-cargl"></a>carg, cargf, cargl
 
@@ -79,17 +68,17 @@ long double cargl(
 
 ## <a name="return-value"></a>반환 값
 
-인수 (단계 라고도 함) *z*합니다. 결과 간격에 [-π, + π].
+인수 (단계 라고도 함) *z*입니다. 간격의 결과 [-π, + π].
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **carg** 사용 하는 **_Fcomplex** 또는 **_Lcomplex** 값 및 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **carg** 항상 약간의 **_Dcomplex** 값과 반환은 **double** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **carg** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **carg** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**carg**, **cargf**, **cargl**|\<complex.h>|\<ccomplex>|
+|**carg**하십시오 **cargf**, **cargl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

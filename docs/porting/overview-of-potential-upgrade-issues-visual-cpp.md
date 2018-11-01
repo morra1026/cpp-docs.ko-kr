@@ -8,18 +8,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdfa82580ba61ab276d6d64a9424d7043c2822f1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 742d722033d0fb2e686861d0e09fc45c73540ade
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46393778"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50075764"
 ---
 # <a name="overview-of-potential-upgrade-issues-visual-c"></a>잠재적인 업그레이드 문제 개요(Visual C++)
 
 지난 몇 년 동안 C++ 언어 자체, C++ 표준 라이브러리, C 런타임(CRT) 및 MFC, ATL 등의 기타 라이브러리의 변경과 함께 Microsoft Visual C++ 컴파일러에도 많은 변화가 있었습니다. 결과적으로, 이전 버전의 Visual Studio에서 응용 프로그램을 업그레이드할 때 이전에는 정상적으로 컴파일된 코드에서 컴파일러 및 링커 오류와 경고가 발생할 수 있습니다. 원래 코드베이스가 오래될수록 이러한 오류 가능성이 커집니다. 이 개요에서는 발생할 수 있는 가장 일반적인 문제 클래스를 요약하고 자세한 정보 링크를 제공합니다.
 
-> [!NOTE] 
+> [!NOTE]
 > 과거에는 여러 버전의 Visual Studio에 걸친 업그레이드를 한 번에 하나씩 증분 방식으로 수행하도록 권장했습니다. 이 방법은 더 이상 권장되지 않습니다. 코드베이스가 아무리 오래되었다 해도 최신 버전의 Visual Studio로 업그레이드하는 것이 더 간단한 경우가 많았습니다.
 
 업그레이드 프로세스와 관련된 질문이나 의견이 있으면 vcupgrade@microsoft.com로 보내주시기 바랍니다.
@@ -161,7 +161,7 @@ C++ 표준 자체가 이전 버전과 항상 호환되지는 않는 방식으로
 
 ### <a name="windows-version"></a>Windows 버전
 
-Windows API를 직접 또는 간접적으로 사용하는 프로그램을 업그레이드하는 경우 지원할 최소 Windows 버전을 결정해야 합니다. 대부분의 경우 Windows 7을 선택하는 것이 좋습니다. 자세한 내용은 [헤더 파일 문제](porting-guide-spy-increment.md#header_file_problems)를 참조하세요. `WINVER` 매크로는 프로그램이 실행되도록 설계된 가장 오래된 Windows 버전을 정의합니다. MFC 프로그램이 WINVER을 0x0501(Windows XP)로 설정하는 경우 MFC에서 XP를 더 이상 지원하기 않으므로 컴파일러 자체에 XP 모드가 있어도 경고가 발생합니다.  
+Windows API를 직접 또는 간접적으로 사용하는 프로그램을 업그레이드하는 경우 지원할 최소 Windows 버전을 결정해야 합니다. 대부분의 경우 Windows 7을 선택하는 것이 좋습니다. 자세한 내용은 [헤더 파일 문제](porting-guide-spy-increment.md#header_file_problems)를 참조하세요. `WINVER` 매크로는 프로그램이 실행되도록 설계된 가장 오래된 Windows 버전을 정의합니다. MFC 프로그램이 WINVER을 0x0501(Windows XP)로 설정하는 경우 MFC에서 XP를 더 이상 지원하기 않으므로 컴파일러 자체에 XP 모드가 있어도 경고가 발생합니다.
 
 자세한 내용은 [대상 Windows 버전 업데이트](porting-guide-spy-increment.md#updating_winver) 및 [더 오래된 헤더 파일](porting-guide-spy-increment.md#outdated_header_files)을 참조하세요.
 
@@ -188,4 +188,4 @@ ATL 및 MFC는 비교적 안정된 API이지만 때때로 변경됩니다. 자�
 ## <a name="see-also"></a>참고 항목
 
 [이전 버전의 Visual C++에서 프로젝트 업그레이드](upgrading-projects-from-earlier-versions-of-visual-cpp.md)<br/>
-[Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)  
+[Visual Studio 2017의 C++ 규칙 향상](../cpp-conformance-improvements-2017.md)

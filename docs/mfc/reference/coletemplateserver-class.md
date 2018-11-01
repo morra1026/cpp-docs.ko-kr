@@ -1,10 +1,6 @@
 ---
-title: COleTemplateServer 클래스 | Microsoft Docs
-ms.custom: ''
+title: COleTemplateServer 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - COleTemplateServer
 - AFXDISP/COleTemplateServer
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXDISP/COleTemplateServer::ConnectTemplate
 - AFXDISP/COleTemplateServer::Unregister
 - AFXDISP/COleTemplateServer::UpdateRegistry
-dev_langs:
-- C++
 helpviewer_keywords:
 - COleTemplateServer [MFC], COleTemplateServer
 - COleTemplateServer [MFC], ConnectTemplate
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aef24acf61aae2d6690e5f302822ce52aaa4917a
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f66936c597b8c595dc21ae6994d7af0477e8d2aa
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427162"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50528650"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
 
@@ -177,7 +167,7 @@ AFXDISP에 정의 되어 있는 OLE_APPTYPE 열거형의 값입니다. 8. 다음
 
 인수에 대 한 정보 *rglpszRegister* 하 고 *rglpszOverwrite* 호출을 통해 레지스트리에 기록 됩니다 [AfxOleRegisterServerClass](application-control.md#afxoleregisterserverclass)합니다. 두 인수는 NULL 때 등록 되는 기본 정보를 대부분의 응용 프로그램에 적합 합니다. 이러한 인수에 있는 정보의 구조에 대 한 자세한 내용은 `AfxOleRegisterServerClass`합니다.
 
-자세한 내용은 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)합니다.
+자세한 내용은 [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)을 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,29 +1,19 @@
 ---
-title: 디스패치 맵입니다. | Microsoft Docs
-ms.custom: ''
+title: 디스패치 맵
 ms.date: 06/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.mfc.macros.maps
-dev_langs:
-- C++
 helpviewer_keywords:
 - dispatch maps [MFC], macros
 - dispatch maps [MFC]
 - dispatch map macros [MFC]
 ms.assetid: bef9d08b-ad35-4c3a-99d8-04150c7c04e2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3d22c94513e80c4f353de9e10588f219a2d3be92
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5ebedaa02a03bcc7802110977b96659dae45f174
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388073"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50585083"
 ---
 # <a name="dispatch-maps"></a>디스패치 맵
 
@@ -156,7 +146,7 @@ DISP_FUNCTION(
 |VT_VARIANT|VARIANT|
 |VT_UNKNOWN|LPUNKNOWN|
 
-*vtsParams* 인수는 공백으로 구분 된 목록에서 값을 `VTS_*` 상수입니다. 공백 (쉼표가 아님)으로 구분 된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정 합니다. 예를 들어 개체에 적용된
+*vtsParams* 인수는 공백으로 구분 된 목록에서 값을 `VTS_*` 상수입니다. 공백 (쉼표가 아님)으로 구분 된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정 합니다. 예를 들면 다음과 같습니다.
 
 [!code-cpp[NVC_MFCAutomation#14](../../mfc/codesnippet/cpp/dispatch-maps_2.cpp)]
 

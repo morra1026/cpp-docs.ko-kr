@@ -1,10 +1,6 @@
 ---
-title: _filelength, _filelengthi64 | Microsoft 문서
-ms.custom: ''
+title: _filelength, _filelengthi64
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _filelengthi64
 - _filelength
@@ -25,8 +21,6 @@ f1_keywords:
 - _filelength
 - _filelengthi64
 - filelengthi64
-dev_langs:
-- C++
 helpviewer_keywords:
 - filelengthi64 function
 - lengths, file
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - files [C++], length
 - _filelengthi64 function
 ms.assetid: 3ab83d5a-543c-4079-b9d9-0abfc7da0275
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 33943eb81658b065116d30592f25ef004d4bfc1b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5434a6ea2155b75f1c034202477a67db36da8b3d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399334"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430488"
 ---
 # <a name="filelength-filelengthi64"></a>_filelength, _filelengthi64
 
@@ -68,11 +58,11 @@ __int64 _filelengthi64(
 
 ## <a name="return-value"></a>반환 값
 
-둘 다 **_filelength** 및 **_filelengthi64** 파일 길이와 연결 된 대상 파일의 바이트 단위로 반환 *fd*합니다. 경우 *fd* 은 잘못 된 파일 설명자의 설명 대로 잘못 된 매개 변수 처리기를 호출 하는이 함수 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 두 함수를 오류를 나타내는 설정-1l을 반환 실행 허용 된 경우 계속 하려면, **errno** 를 **EBADF**합니다.
+둘 다 **_filelength** 하 고 **_filelengthi64** 파일 길이 (바이트)와 연결 된 대상 파일의 반환 *fd*합니다. 하는 경우 *fd* 잘못 된 파일 설명자 인이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 두 함수 모두 오류가 발생 하 여 설정-1l을 반환 실행은 계속 하도록 허용 하는 경우 **errno** 하 **EBADF**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_filelength**|\<io.h>|
 |**_filelengthi64**|\<io.h>|

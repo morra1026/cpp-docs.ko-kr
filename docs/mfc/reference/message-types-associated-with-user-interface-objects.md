@@ -1,27 +1,17 @@
 ---
-title: 메시지의 사용자 인터페이스 개체와 연결 된 유형 | Microsoft Docs
-ms.custom: ''
+title: 사용자 인터페이스 개체와 관련된 메시지 형식
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.codewiz.uiobject.msgs
-dev_langs:
-- C++
 helpviewer_keywords:
 - message types and user interface objects [MFC]
 ms.assetid: 681ee1a7-f6e6-4ea0-9fc6-1fb53a35516e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bd89f19547eef8ade9d23a6176ea74cb49586857
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: 42584a6514a48e7c02d98e1b619c06a11a8f277b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860292"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50641690"
 ---
 # <a name="message-types-associated-with-user-interface-objects"></a>사용자 인터페이스 개체와 관련된 메시지 형식
 

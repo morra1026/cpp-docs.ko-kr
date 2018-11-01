@@ -1,10 +1,6 @@
 ---
-title: _strtold_l, strtold wcstold, _wcstold_l | Microsoft Docs
-ms.custom: ''
+title: strtold, _strtold_l, wcstold, _wcstold_l
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcstold
 - strtold
@@ -30,19 +26,13 @@ f1_keywords:
 - strtold
 - _strtold_l
 - wcstold
-dev_langs:
-- C++
 ms.assetid: 928c0c9a-bc49-445b-8822-100eb5954115
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a5018f9245da77fbadb301a8fa45d1f0f7b4117
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fce60775ee1ef6def214e559779004d4de95453c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417079"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484580"
 ---
 # <a name="strtold-strtoldl-wcstold-wcstoldl"></a>strtold, _strtold_l, wcstold, _wcstold_l
 
@@ -84,15 +74,15 @@ long double wcstold_l(
 
 ## <a name="return-value"></a>반환 값
 
-**strtold** 으로 부동 소수점 숫자의 값을 반환는 **긴** **double**, 표현을 오버플로가 인해 경우를 제외 하 고-+/-함수가반환하는경우**HUGE_VALL**합니다. 부호 **HUGE_VALL** 표현할 수 없는 값의 부호와 일치 합니다. **strtold** 변환 작업 없이 수행할 수 있습니다 또는 언더플로가 발생 하는 경우 0을 반환 합니다.
+**strtold** 부동 소수점 숫자의 값을 반환을 **긴** **double**, 표현 인해 오버플로가 발생 경우를 제외 하 고-+/-함수가반환하는경우**HUGE_VALL**합니다. 부호 **HUGE_VALL** 표현할 수 없는 값의 부호와 일치 합니다. **strtold** 변환을 수행할 수 없거나 언더플로가 발생 하는 경우 0을 반환 합니다.
 
-**wcstold** 유사 하 게에 값을 반환 **strtold**합니다. 두 함수에 대 한 **errno** 로 설정 된 **ERANGE** 오버플로 또는 언더플로가 발생 한 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+**wcstold** 와 동일한 값을 반환 **strtold**합니다. 두 함수 모두에 대 한 **errno** 로 설정 된 **ERANGE** 오버플로 또는 언더플로가 발생 하에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 하는 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-각 함수는 입력된 문자열을 변환 *strSource* 에 **긴** **double**합니다. **strtold** 함수 읽기를 중단 *strSource* 숫자의 일환으로 인식할 수 없는 첫 번째 문자에서 합니다. 이 문자는 종료 null 문자일 수 있습니다. 와이드 문자 버전의 **strtold** 은 **wcstold**; 해당 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
+각 함수는 입력된 문자열을 변환 *strSource* 에 **긴** **double**합니다. 합니다 **strtold** 함수는 문자열 읽기를 중단 *strSource* 숫자의 일부분으로 인식할 수 없는 첫 문자에서. 이 문자는 종료 null 문자일 수 있습니다. 와이드 문자 버전의 **strtold** 됩니다 **wcstold**; 해당 *strSource* 인수는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 동작합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 
@@ -101,19 +91,19 @@ long double wcstold_l(
 |**_tcstold**|**strtold**|**strtold**|**wcstold**|
 |**_tcstold_l**|**_strtold_l**|**_strtold_l**|**_wcstold_l**|
 
-**LC_NUMERIC** 현재 로캘 범주 설정에 있는 기 수 문자 인식 결정 *strSource*합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요. 없이 함수는 **_l** 접미사 사용은 현재 로캘; **_strtold_l** 및 **_wcstold_l** 동일 **_strtold** 및 **_wcstold** 로캘을 대신 사용 한다는 점을 제외 하 고 있는지를 전달합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+합니다 **LC_NUMERIC** 현재 로캘 범주 설정의 기 수 문자 인식이 결정 *strSource*합니다. 자세한 내용은 [setlocale, _wsetlocale](setlocale-wsetlocale.md)을 참조하세요. 없는 함수는 **_l** 접미사는 현재 로캘을 사용 **_strtold_l** 하 고 **_wcstold_l** 동일 **_strtold** 및 **_wcstold** 로캘을 대신 사용 한다는 점을 제외 하 고 있는지는 에 전달 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-경우 *endptr* 않습니다 **NULL**, 검색을 중지 하는 문자에 대 한 포인터에서 가리키는 위치에 저장 된 *endptr*합니다. 변환 작업 없이 수행할 수 있으면 (유효 자릿수 없이 발견 된 또는 지정 된 잘못 된 base)의 값 *strSource* 가 가리키는 위치에 저장 된 *endptr*합니다.
+하는 경우 *endptr* 아닙니다 **NULL**, 검색을 중지 한 문자에 대 한 포인터에서 가리키는 위치에 저장 됩니다 *endptr*합니다. 변환 작업 없이 수행할 수 있으면 (올바른 숫자를 찾을 수 없거나 잘못 된 자료를 지정 된), 값 *strSource* 이 가리키는 위치에 저장 됩니다 *endptr*합니다.
 
 **strtold** 예상 *strSource* 다음 형식의 문자열을 가리키도록 합니다.
 
-[*공백*] [*기호*] [*자리*] [. *숫자*] [{**d** &#124; **D** &#124; **e** &#124; **E**} [*기호* ]*자릿수*]
+[*공백을*] [*sign*] [*자릿수*] [. *자릿수*] [{**d** &#124; **D** &#124; **e** &#124; **E**} [*기호* ]*자릿수*]
 
-A *공백* ; 무시 되는 공백 및 탭 문자가 포함 될 수 *기호* 는 플러스 (**+**) 또는 빼기 (**-**); 및 *자리* 는 되는 하나 이상의 10 진수 숫자입니다. 기수 문자 앞에 숫자가 없는 경우 기수 문자 뒤에는 숫자가 하나 이상 있어야 합니다. 10진수 뒤에 지수가 올 수 있습니다. 지수는 소개 문자(**d**, **D**, **e** 또는 **E**) 및 부호 있는 정수(선택 사항)로 구성됩니다. 지수 부분과 기수 문자가 모두 없으면 기수 문자는 문자열의 마지막 숫자를 따르는 것으로 간주합니다. 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다.
+A *공백* 공백 및 탭 문자가 무시 되는 구성 될 수 있습니다 *기호* 는 plus (**+**) 또는 빼기 기호 (**-**); 및 *자릿수* 는 하나 이상의 10 진수입니다. 기수 문자 앞에 숫자가 없는 경우 기수 문자 뒤에는 숫자가 하나 이상 있어야 합니다. 10진수 뒤에 지수가 올 수 있습니다. 지수는 소개 문자(**d**, **D**, **e** 또는 **E**) 및 부호 있는 정수(선택 사항)로 구성됩니다. 지수 부분과 기수 문자가 모두 없으면 기수 문자는 문자열의 마지막 숫자를 따르는 것으로 간주합니다. 이 형식에 맞지 않는 첫 번째 문자가 발견되면 검색이 중지됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strtold**, **_strtold_l**|\<stdlib.h>|
 |**wcstold**, **_wcstold_l**|\<stdlib.h> 또는 \<wchar.h>|

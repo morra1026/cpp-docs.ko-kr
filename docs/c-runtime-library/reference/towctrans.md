@@ -1,10 +1,6 @@
 ---
-title: towctrans | Microsoft Docs
-ms.custom: ''
+title: towctrans
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - towctrans
 apilocation:
@@ -22,21 +18,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - towctrans
-dev_langs:
-- C++
 helpviewer_keywords:
 - towctrans function
 ms.assetid: 1ed1e70d-7b31-490f-a7d9-42564b5924ca
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b9d70570339868feb62ee906a707cf16ca03d556
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b814c65d2f5d0bb18b19d97a539d79dd6df8a1c6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407631"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561410"
 ---
 # <a name="towctrans"></a>towctrans
 
@@ -61,15 +51,15 @@ wint_t towctrans(
 
 ## <a name="return-value"></a>반환 값
 
-문자 *c*이후에 **towctrans** 에서 변환 규칙을 사용 *범주*합니다.
+문자 *c*뒤 **towctrans** 변환 규칙에서 사용 되는 *범주*합니다.
 
 ## <a name="remarks"></a>설명
 
-값 *범주* 는 이전 성공적으로 호출 하 여 반환 됐 어 야 [wctrans](wctrans.md)합니다.
+변수의 *범주* 호출에 의해 이전 성공적으로 반환 합니다 [wctrans](wctrans.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**towctrans**|\<wctype.h>|
 

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2884abbf02c9eb244d6fb446c7158b708c211557
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d0dca0359ea385e3a30f5dab6e8745a2d567ec1e
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46066455"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50055257"
 ---
 # <a name="thread-local-storage"></a>스레드 로컬 저장소
 
@@ -94,7 +94,7 @@ __declspec( thread ) int tls_i = 1;
     Thread int tls_i = sizeof( tls_i )    /* Okay  */
     ```
 
-     초기화되는 변수를 포함하는 sizeof 식은 자신에 대한 참조를 구성하지 않으며 허용됩니다.
+   초기화되는 변수를 포함하는 sizeof 식은 자신에 대한 참조를 구성하지 않으며 허용됩니다.
 
 - **__declspec(thread)** 의 사용은 DLL 가져오기의 [지연 로드](../build/reference/linker-support-for-delay-loaded-dlls.md)를 방해할 수 있습니다 **.**
 

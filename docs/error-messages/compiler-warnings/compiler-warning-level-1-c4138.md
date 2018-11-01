@@ -1,33 +1,23 @@
 ---
-title: 컴파일러 경고 (수준 1) C4138 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고(수준 1) C4138
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4138
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4138
 ms.assetid: 65ebf929-bba0-4237-923b-c1b66adfe17d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d2e637c73482b1a59034d6a269ea2240445bdef
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 96f8915b9bec166496ca4305d796ce8ef514ca15
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46046916"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481681"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>컴파일러 경고(수준 1) C4138
 
 '*/'가 주석 외부에 있습니다.
 
-닫는 주석 구분 기호 앞에 여는 주석 구분 기호가 없습니다. 컴파일러는 별표 사이 공백이 있다고 가정 (<strong>\*</strong>)와 슬래시 (/).
+닫는 주석 구분 기호 앞에 여는 주석 구분 기호가 없습니다. 컴파일러는 별표(<strong>\*</strong>)와 슬래시(/) 사이에 공백이 있다고 가정합니다.
 
 ## <a name="example"></a>예제
 

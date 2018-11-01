@@ -1,28 +1,18 @@
 ---
-title: 사용 하 여 종료 또는 반환 | Microsoft Docs
-ms.custom: ''
+title: exit 또는 return 사용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - Exit
-dev_langs:
-- C++
 helpviewer_keywords:
 - exit function
 - return keyword [C++], using for program termination
 ms.assetid: b5136c5c-2505-4229-8691-2a1d6a98760b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4ce62f17008bf4a1ba805db40583e6c63b69a302
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: d60084c0d07d3eeb3f49a1fea53de04d150a701b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46059987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50442746"
 ---
 # <a name="using-exit-or-return"></a>exit 또는 return 사용
 
@@ -68,7 +58,7 @@ int main() {
 
 위의 예제에서 `sd1`에 진입하기 전에 정적 개체 `sd2` 및 `main`가 만들어지고 초기화됩니다. 사용 하 여이 프로그램이 종료 후는 **반환** 문, 첫 번째 `sd2` 소멸 되 고 `sd1`합니다. `ShowData` 클래스에 대한 소멸자가 이 정적 개체와 연결된 파일을 닫습니다.
 
-범위를 벗어나면 소멸되도록 블록 범위를 사용해 `ShowData` 개체를 선언하여 이 코드를 작성할 수도 있습니다.
+범위를 벗어나면 제거되도록 블록 범위를 사용해 `ShowData` 개체를 선언하여 이 코드를 작성할 수도 있습니다.
 
 ```cpp
 int main() {

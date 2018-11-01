@@ -1,25 +1,15 @@
 ---
-title: '연습: MFC 자유 곡선 응용 프로그램 (2 부) 업데이트 | Microsoft Docs'
-ms.custom: ''
+title: '연습: MFC 자유 곡선 응용 프로그램 업데이트(파트 2)'
 ms.date: 09/20/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d3623eb594ff82660e97809eef609a33e74e74dc
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: d618d79c50892523b3e4a71be163b8778402e48e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235440"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570341"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 업데이트(파트 2)
 
@@ -190,7 +180,7 @@ ms.locfileid: "48235440"
 
 ### <a name="to-add-a-color-button-to-the-pen-panel"></a>펜 패널로 색 단추를 추가 하려면
 
-1. 색 단추를 추가 하려면 먼저 해당 메뉴 항목을 만듭니다. 에 **리소스 뷰** 창을 열려면 합니다 **IDR_SCRIBBTYPE** 메뉴 리소스입니다. 클릭 합니다 **펜** 펜 메뉴를 열려면 메뉴 항목입니다. 누른 **여기에 입력** 유형과 `&Color`합니다. 표시 하려면 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창입니다. ID 변경 `ID_PEN_COLOR`합니다.
+1. 색 단추를 추가 하려면 먼저 해당 메뉴 항목을 만듭니다. 에 **리소스 뷰** 창을 열려면 합니다 **IDR_SCRIBBTYPE** 메뉴 리소스입니다. 클릭 합니다 **펜** 펜 메뉴를 열려면 메뉴 항목입니다. 누른 **여기에 입력** 유형과 `&Color`합니다. 표시 하려면 입력 한 텍스트를 마우스 오른쪽 단추로 클릭 합니다 **속성** 창입니다. ID를 `ID_PEN_COLOR`로 변경합니다.
 
 1. 이제 색 단추를 추가 합니다. **도구 상자**, 끌어를 **색 단추** 에 **펜** 패널.
 

@@ -1,27 +1,17 @@
 ---
-title: ctype_base 클래스 | Microsoft 문서
-ms.custom: ''
+title: ctype_base 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - locale/std::ctype_base
-dev_langs:
-- C++
 helpviewer_keywords:
 - ctype_base class
 ms.assetid: ccffe891-d7ab-4d22-baf8-8eb6d438a96d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3def685a8cd108666b3e1b8be9314fc7585a9837
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 83ef35f9fac438cfa217decf222abd365ff84269
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33844896"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531133"
 ---
 # <a name="ctypebase-class"></a>ctype_base 클래스
 
@@ -79,7 +69,7 @@ struct ctype_base : public locale::facet
 
 - **graph**([isgraph](../standard-library/locale-functions.md#isgraph) 함수)
 
-이러한 상수를 OR 연산하여 분류의 조합을 특징지을 수 있습니다. 항상 true를 특히 **alnum과** = = ( **알파** &#124; **자리** \) 및 **그래프** \= \= \( **alnum과** &#124; **좁 힘**).
+이러한 상수를 OR 연산하여 분류의 조합을 특징지을 수 있습니다. 특히,이 항상 true입니다 **alnum** = = ( **알파** &#124; **자리** \) 하 고 **그래프** \= \= \( **alnum** &#124; **punct**).
 
 ## <a name="requirements"></a>요구 사항
 

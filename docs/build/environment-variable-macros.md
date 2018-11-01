@@ -1,27 +1,17 @@
 ---
-title: 환경 변수 매크로 | Microsoft Docs
-ms.custom: ''
+title: 환경 변수 매크로
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - NMAKE program, environment variable macros
 - environment variables, macros in NMAKE
 - macros, environment-variable
 ms.assetid: f8e96635-0906-47b0-9f56-12a6fdf5e347
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cebb544b1d8fc8489de298bf7512cc612a6dfef2
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4691f89f1886b40637a0800ee8a6a94e4b4e06c5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701170"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594300"
 ---
 # <a name="environment-variable-macros"></a>환경 변수 매크로
 

@@ -1,10 +1,6 @@
 ---
-title: _set_controlfp | Microsoft Docs
-ms.custom: ''
+title: _set_controlfp
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_controlfp
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - set_controlfp
 - _set_controlfp
-dev_langs:
-- C++
 helpviewer_keywords:
 - set_controlfp function
 - floating-point functions, setting control word
 - _set_controlfp function
 ms.assetid: e0689d50-f68a-4028-a9c1-fb23eedee4ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a2647e9719c2aa3fe303393fcc1da55de0385581
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1187502f09849d7ca4d8e595c237cfa511d00c6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50499032"
 ---
 # <a name="setcontrolfp"></a>_set_controlfp
 
@@ -68,13 +58,13 @@ void __cdecl _set_controlfp(
 
 ## <a name="remarks"></a>설명
 
-**_set_controlfp** 함수는 **_control87**을 부동 소수점 제어 단어 설정 *newControl*합니다. 값의 비트는 부동 소수점 제어 상태를 나타냅니다. 부동 소수점 제어 상태를 사용하면 프로그램이 부동 소수점 연산 패키지에서 정밀도, 반올림 및 무한대 모드를 변경할 수 있습니다. 또한 마스킹 또는 사용 하 여 부동 소수점 예외를 마스크 해제 수 **_set_controlfp**합니다. 자세한 내용은 [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)를 참조하세요.
+**_set_controlfp** 함수는 비슷합니다 **_control87**를 부동 소수점 제어 단어를만 설정 하지만 *newControl*합니다. 값의 비트는 부동 소수점 제어 상태를 나타냅니다. 부동 소수점 제어 상태를 사용하면 프로그램이 부동 소수점 연산 패키지에서 정밀도, 반올림 및 무한대 모드를 변경할 수 있습니다. 마스크 또는 사용 하 여 부동 소수점 예외를 마스크 해제할 수도 있습니다 **_set_controlfp**합니다. 자세한 내용은 [_control87, _controlfp, \__control87_2](control87-controlfp-control87-2.md)를 참조하세요.
 
-로 컴파일하는 경우이 함수는 사용 되지 않습니다 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 공용 언어 런타임은 기본 부동 소수점 정밀도만 지원 하기 때문에 있습니다.
+로 컴파일하는 경우이 함수는 사용 되지 않습니다 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 공용 언어 런타임은 기본 부동 소수점 정밀도만 지원 하기 때문입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|호환성|
+|루틴에서 반환된 값|필수 헤더|호환성|
 |-------------|---------------------|-------------------|
 |**_set_controlfp**|\<float.h>|x86 프로세서만|
 

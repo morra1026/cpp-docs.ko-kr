@@ -1,11 +1,6 @@
 ---
-title: tgamma, tgammaf, tgammal | Microsoft Docs
-ms.custom: ''
+title: tgamma, tgammaf, tgammal
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - tgamma
 - tgammaf
@@ -30,23 +25,17 @@ f1_keywords:
 - math/tgamma
 - math/tgammaf
 - math/tgammal
-dev_langs:
-- C++
 helpviewer_keywords:
 - tgamma function
 - tgammaf function
 - tgammal function
 ms.assetid: f1bd2681-8af2-48a9-919d-5358fd068acd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7861b297646f4a704134e0d874fad8c924a7ebc8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6cfe455b0e9e83cd5283d36fed33ca168bc97d0a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409877"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50570666"
 ---
 # <a name="tgamma-tgammaf-tgammal"></a>tgamma, tgammaf, tgammal
 
@@ -86,13 +75,13 @@ long double tgammal(
 
 성공 하면 반환의 감마 *x*합니다.
 
-범위 오류는 경우에 발생할 수 있습니다는 양이 *x* 이 너무 크거나 너무 작은 데이터 형식에 대 한 합니다. 경우에 발생할 수 있습니다는 도메인 오류 또는 범위 오류 *x* < = 0.
+범위 오류가 발생할 수 있습니다의 크기가 *x* 너무 크거나 너무 작은 데이터 형식에 대 한 합니다. 도메인 오류 또는 범위 오류는 경우 발생할 수 있습니다 *x* < = 0.
 
 |문제|반환|
 |-----------|------------|
 |x = ±0|±INFINITY|
 |x = 음의 정수|NaN|
-|x =-무한대|NaN|
+|x =-INFINITY|NaN|
 |x = +INFINITY|+INFINITY|
 |x = NaN|NaN|
 |도메인 오류|NaN|
@@ -104,15 +93,15 @@ long double tgammal(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **tgamma** 사용 하 고 반환 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **tgamma** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **tgamma** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **tgamma** 항상 받아서 반환 된 **double**합니다.
 
 X가 자연수인 경우 이 함수는 (x-1)의 계승을 반환합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**tgamma**, **tgammaf**, **tgammal**|\<math.h>|\<cmath>|
+|**tgamma**하십시오 **tgammaf**, **tgammal**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

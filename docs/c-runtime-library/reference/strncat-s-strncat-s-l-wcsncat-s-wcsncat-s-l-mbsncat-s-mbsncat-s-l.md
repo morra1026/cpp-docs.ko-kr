@@ -1,10 +1,6 @@
 ---
-title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l | Microsoft Docs
-ms.custom: ''
+title: strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wcsncat_s_l
 - wcsncat_s
@@ -35,8 +31,6 @@ f1_keywords:
 - strncat_s
 - _mbsncat_s
 - _tcsncat_s_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - concatenating strings
 - _mbsncat_s function
@@ -53,23 +47,19 @@ helpviewer_keywords:
 - wcsncat_s_l function
 - mbsncat_s function
 ms.assetid: de77eca2-4d9c-4e66-abf2-a95fefc21e5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d88467034eeab3f3a269f735d5b158d94a429873
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bb188f9cb5ab5f6f1a8bb66575364b7a94fe6e22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32418473"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50500752"
 ---
 # <a name="strncats-strncatsl-wcsncats-wcsncatsl-mbsncats-mbsncatsl"></a>strncat_s, _strncat_s_l, wcsncat_s, _wcsncat_s_l, _mbsncat_s, _mbsncat_s_l
 
 문자열에 문자를 추가합니다. 이러한 버전의 [strncat, _strncat_l, wcsncat, _wcsncat_l, _mbsncat, _mbsncat_l](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbsncat_s** 및 **_mbsncat_s_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncat_s** 하 고 **_mbsncat_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -179,17 +169,17 @@ Null 종료 소스 문자열입니다.
 
 |*strDestination*|*numberOfElements*|*strSource*|반환 값|내용을 *strDestination*|
 |----------------------|------------------------|-----------------|------------------|----------------------------------|
-|**NULL** 또는 종료 되지 않았습니다.|모두|모두|**EINVAL**|수정 안 됨|
-|모두|모두|**NULL**|**EINVAL**|수정 안 됨|
-|모두|0 또는 너무 작음|모두|**ERANGE**|수정 안 됨|
+|**NULL** 또는 종료 되지 않음|any|any|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|**EINVAL**|수정 안 됨|
+|any|0 또는 너무 작음|any|**ERANGE**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 첫 번째 추가 하려고 *D* 자의 *strSource* 의 끝에 *strDest*여기서 *D* 는 기간은*count* 의 길이가 *strSource*합니다. 추가 된 경우 *D* 문자 내에 맞는 *strDest* (필요에 따라 크기가로 지정 된 *numberOfElements*) 여전히 null 종결자를 한 문자 다음에 대 한 공간을 남겨 및 null 종료 원래부터 추가 됩니다 *strDest*, 추가 되 고, 그렇지 않으면 새 종료 null 이며 *strDest*[0]로 설정 되어 null 문자 있고 잘못 된 매개 변수 에 설명 된 대로 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
+이러한 함수를 첫 번째를 추가 하려고 시도할 *D* 자의 *strSource* 끝 *strDest*여기서 *D* 중더작은값은*개수* 의 길이 *strSource*합니다. 추가 된 경우 *D* 문자 내에 맞는 *strDest* (크기가으로 제공 됩니다 *numberOfElements*) null 종결자를 이러한 문자에 여전히 확보 하 고 null 종료 원래부터 추가 되기 *strDest*, 새 종료 null이 고, 그렇지 않으면 추가 하 고 *strDest*[0]로 설정 되는 null 문자 고 잘못 된 매개 변수 에 설명 된 대로 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다.
 
-위 단락의 설명에는 예외가 적용됩니다. 경우 *count* 은 [_TRUNCATE](../../c-runtime-library/truncate.md) 많이 다음 *strSource* 만큼 맞춤에 추가 됩니다 *strDest* 하지만 추가 하는 null 종료합니다.
+위 단락의 설명에는 예외가 적용됩니다. 경우 *개수* 됩니다 [_TRUNCATE](../../c-runtime-library/truncate.md) 만큼의 *strSource* 만큼가 추가 되며 *strDest* 추가할 포함할 공간은 남겨를 null 종료합니다.
 
-예를 들어 개체에 적용된
+예를 들면 다음과 같습니다.
 
 ```C
 char dst[5];
@@ -197,9 +187,9 @@ strncpy_s(dst, _countof(dst), "12", 2);
 strncat_s(dst, _countof(dst), "34567", 3);
 ```
 
-회원님께 의미 **strncat_s** 버퍼 5에 있는 두 문자에 3 개의 문자를 추가 하려면 긴 문자를 null 종결자에 공백이 없습니다. 따라서 남을 수 **strncat_s** 문자열 아웃 0으로 잘못 된 매개 변수 처리기를 호출 합니다.
+요청 하는 것을 의미 **strncat_s** 버퍼 5의에서 2 자에 3 자를 추가 하도록 바이트 길이의 이렇게 하면 null 종결자에 공백이 없습니다. 따라서 **strncat_s** 문자열을 0으로 잘못 된 매개 변수 처리기를 호출 합니다.
 
-잘라내기 동작 필요한 경우 사용 **_TRUNCATE** 조정 또는 *크기* 매개 변수 적절 하 게 합니다.
+잘라내기 동작이 필요한 경우 사용 **_TRUNCATE** 조정 또는 합니다 *크기* 매개 변수 적절 하 게 합니다.
 
 ```C
 strncat_s(dst, _countof(dst), "34567", _TRUNCATE);
@@ -213,9 +203,9 @@ strncat_s(dst, _countof(dst), "34567", _countof(dst)-strlen(dst)-1);
 
 모든 경우 결과 문자열은 null 문자로 종료됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
-경우 *strSource* 또는 *strDest* 은 **NULL**, 아니거나 *numberOfElements* 가 0 인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 계속 하려면 실행 허용 된 경우, 함수 반환 **EINVAL** 해당 매개 변수를 수정 하지 않고 있습니다.
+경우 *strSource* 또는 *strDest* 됩니다 **NULL**에 없거나 *numberOfElements* 가 0 이면에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 **EINVAL** 해당 매개 변수를 수정 하지 않고 있습니다.
 
-**wcsncat_s** 및 **_mbsncat_s** 와이드 문자 및 멀티 바이트 문자 버전의 **strncat_s**합니다. 문자열 인수 및 반환 값이 **wcsncat_s** 은 와이드 문자열이 고 **_mbsncat_s** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcsncat_s** 하 고 **_mbsncat_s** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncat_s**합니다. 반환 값과 문자열 인수 **wcsncat_s** 은 와이드 문자열이 고 **_mbsncat_s** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -223,18 +213,18 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcsncat_s**|**strncat_s**|**_mbsnbcat_s**|**wcsncat_s**|
 |**_tcsncat_s_l**|**_strncat_s_l**|**_mbsnbcat_s_l**|**_wcsncat_s_l**|
 
-**_strncat_s_l** 및 **_wcsncat_s_l** 로캘에 종속 되지 않습니다; 위해서만 제공 **_tcsncat_s_l**합니다.
+**_strncat_s_l** 하 고 **_wcsncat_s_l** 은 로캘에 종속 되지 않으면 용 으로만 제공 됩니다 **_tcsncat_s_l**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strncat_s**|\<string.h>|
 |**wcsncat_s**|\<string.h> 또는 \<wchar.h>|

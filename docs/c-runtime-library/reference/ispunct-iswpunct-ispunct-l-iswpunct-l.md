@@ -1,10 +1,6 @@
 ---
-title: ispunct, iswpunct, _ispunct_l, _iswpunct_l | Microsoft 문서
-ms.custom: ''
+title: ispunct, iswpunct, _ispunct_l, _iswpunct_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - ispunct
 - _iswpunct_l
@@ -27,8 +23,6 @@ f1_keywords:
 - iswpunct
 - _istpunct
 - ispunct
-dev_langs:
-- C++
 helpviewer_keywords:
 - _istpunct function
 - _ispunct_l function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _iswpunct_l function
 - iswpunct_l function
 ms.assetid: 94403240-85c8-40a4-9c2b-e3e95c729c76
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9509270906de3f0a9c7a20fd5f126ecffcafcff0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 209f94bb8f9d3338f62b719d4d4b94b152ed5ab7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402672"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496397"
 ---
 # <a name="ispunct-iswpunct-ispunctl-iswpunctl"></a>ispunct, iswpunct, _ispunct_l, _iswpunct_l
 
@@ -83,13 +73,13 @@ int _iswpunct_l(
 
 ## <a name="return-value"></a>반환 값
 
-각각의 이러한 루틴이 0이 아닌 경우 반환 *c* 문장 부호 문자의 특정 표현입니다. **ispunct** 있지 않은 공백 문자는 문자 인쇄 가능한 모든 문자에 대 한 값을 반환 **isalnum** 0입니다. **iswpunct** 공간 와이드 문자 또는 와이드 문자를 인쇄 가능한 모든 와이드 문자에 대 한 값을 반환 **iswalnum** 0입니다. 이러한 각 루틴 0을 반환 *c* 테스트 조건을 만족 하지 않습니다.
+각 이러한 루틴 0이 아닌 경우 반환 *c* 문장 부호 문자의 특정 표현입니다. **ispunct** 공백 문자 또는 문자를 하지 않은 모든 인쇄 가능한 문자에 대 한 0이 아닌 값을 반환 **isalnum** 0이 아닌 합니다. **iswpunct** 공백 와이드 문자 또는 와이드 문자는 인쇄 가능한 와이드 문자에 대 한 0이 아닌 값을 반환 **iswalnum** 0이 아닌 합니다. 이러한 루틴은 각각 0을 반환 *c* 테스트 조건을 충족 하지 않습니다.
 
-에 대 한 테스트 조건의 결과 **ispunct** 함수에 따라 달라 집니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 정보에 대 한 합니다. 가 없는 이러한 함수 버전은 **_l** 모든 로캘 종속 동작에 대해 현재 로캘 접미사 사용 하 고, 않은 버전은 **_l** 접미사를 사용 하는 점을 제외 하 고 동일는 대신에 전달 되는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+에 대 한 테스트 조건의 결과 **ispunct** 함수에 따라 달라 집니다 합니다 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 없는 이러한 함수의 버전은는 **_l** 로캘 종속 동작에 대해 현재 로캘 사용 접미사; 않은 버전을 **_l** 접미사를 사용 하는 점을 제외 하면 동일 합니다 대신에 전달 되는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작은 **ispunct** 및 **_ispunct_l** 경우 정의 되지 않습니다 *c* 가 EOF가 또는 0-0xFF 까지의 범위에 있습니다. CRT 디버그 라이브러리 사용 되는 경우 및 *c* 함수 생성에서는 이러한 값 중 하나가 아닙니다 한 어설션입니다.
+동작 **ispunct** 하 고 **_ispunct_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -97,7 +87,7 @@ int _iswpunct_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**ispunct**|\<ctype.h>|
 |**iswpunct**|\<ctype.h> 또는 \<wchar.h>|

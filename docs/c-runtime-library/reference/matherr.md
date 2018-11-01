@@ -1,10 +1,6 @@
 ---
-title: _matherr | Microsoft 문서
-ms.custom: ''
+title: _matherr
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _matherr
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - _matherr
 - matherr
-dev_langs:
-- C++
 helpviewer_keywords:
 - _matherr function
 - matherr function
 ms.assetid: b600d66e-165a-4608-a856-8fb418d46760
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5f8cba1887fe806c3a6cfa795437d3d60ed7f31e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 980bf8a14ceace82a76562cc47d353f78dbca582
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402327"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445723"
 ---
 # <a name="matherr"></a>_matherr
 
@@ -56,17 +46,17 @@ int _matherr( struct _exception * except );
 
 ## <a name="return-value"></a>반환 값
 
-**_matherr** 오류가 발생 하거나 성공을 나타내기 위해 0이 아닌 값을 나타내는 0을 반환 합니다. 경우 **_matherr** 반환 0, 오류 메시지가 표시 될 수 있습니다 및 **errno** 적절 한 오류 값으로 설정 됩니다. 경우 **_matherr** 반환 0이 아닌 값, 오류 메시지가 표시 되 고 **errno** 그대로 유지 됩니다.
+**_matherr** 오류가 발생 하거나 성공을 나타내기 위해 0이 아닌 값을 나타내기 위해 0을 반환 합니다. 하는 경우 **_matherr** 0을 반환 된 오류 메시지가 표시 될 수 있습니다 하 고 **errno** 적절 한 오류 값으로 설정 됩니다. 하는 경우 **_matherr** 0이 아닌 값, 오류 메시지가 표시 되는 반환 하 고 **errno** 그대로 유지 됩니다.
 
 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_matherr** 함수는 수학 라이브러리의 부동 소수점 함수에서 발생 한 오류를 처리 합니다. 이러한 함수가 호출 **_matherr** 오류가 발견 된 경우.
+합니다 **_matherr** 함수는 수학 라이브러리의 부동 소수점 함수에 의해 생성 된 오류를 처리 합니다. 이러한 함수 호출 **_matherr** 오류가 발견 된 경우.
 
-특별 오류 처리에 대 한의 다른 정의 제공할 수 있습니다 **_matherr**합니다. 동적으로 연결 된 버전의 C 런타임 라이브러리 (CRT)를 사용 하는 경우에 기본값을 대체할 수 **_matherr** 일상적인 클라이언트 실행 파일을 사용자 정의 버전입니다. 그러나 기본값을 바꿀 수 없습니다 **_matherr** CRT DLL의 DLL 클라이언트에서 일상적인 합니다.
+특수 한 오류 처리의 다른 정의 제공할 수 있습니다 **_matherr**합니다. C 런타임 라이브러리 (CRT)의 동적 연결된 버전을 사용 하는 경우에 기본값을 바꿀 수 있습니다 **_matherr** 사용자 정의 버전을 사용 하 여 실행 하는 클라이언트에서 루틴입니다. 그러나 기본값을 바꿀 수 없습니다 **_matherr** CRT DLL의 DLL 클라이언트에서 루틴입니다.
 
-수학 루틴에서 오류가 발생 하면 **_matherr** 에 대 한 포인터를 사용 하 여 호출 되는 **_exception** 형식 구조 (에 정의 된 \<math.h >)를 인수로 합니다. **_exception** 구조체에는 다음 요소가 포함되어 있습니다.
+수학 루틴에서 오류가 발생 하는 경우 **_matherr** 에 대 한 포인터를 사용 하 여 호출 되는 **_exception** 형식 구조 (에 정의 된 \<math.h >)를 인수로 합니다. **_exception** 구조체에는 다음 요소가 포함되어 있습니다.
 
 ```C
 struct _exception
@@ -79,24 +69,24 @@ struct _exception
 };
 ```
 
-**형식** 멤버 수학 오류의 형식을 지정 합니다. 에 정의 된 다음 값 중 하나가 \<math.h >:
+합니다 **형식** 멤버 수학 오류의 형식을 지정 합니다. 에 정의 된 다음 값 중 하나인 \<math.h >:
 
 |매크로|의미|
 |-|-|
-**_DOMAIN**|인수 도메인 오류
-**_SING**|인수 특이성입니다.
+**(_D)**|인수 도메인 오류
+**_SING**|인수 특이성
 **_OVERFLOW**|오버플로 범위 오류
 **_PLOSS**|중요성의 부분적 손실
-**_TLOSS**|중요성의 전체 손실
+**_TLOSS**|중요 전체 손실이
 **_UNDERFLOW**|결과가 너무 작아 나타낼 수 없습니다. 이 조건은 현재 지원되지 않습니다.
 
-구조체 멤버 **name**은 오류를 발생시킨 함수의 이름을 포함하는 null로 종료되는 문자열에 대한 포인터입니다. 구조체 멤버 **arg1** 및 **arg2**는 오류를 발생시킨 값을 지정합니다. 에 저장 되어 하나의 인수를 지정 하는 경우에 **arg1**합니다.
+구조체 멤버 **name**은 오류를 발생시킨 함수의 이름을 포함하는 null로 종료되는 문자열에 대한 포인터입니다. 구조체 멤버 **arg1** 및 **arg2**는 오류를 발생시킨 값을 지정합니다. 에 저장 되어 있는 하나의 인수를 지정 되었다면 **arg1**합니다.
 
 지정된 오류의 기본 반환 값은 **retval**입니다. 반환 값을 변경하는 경우 오류가 실제로 발생했는지 여부를 해당 값이 지정해야 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_matherr**|\<math.h>|
 

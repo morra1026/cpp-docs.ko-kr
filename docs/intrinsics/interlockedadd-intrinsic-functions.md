@@ -1,10 +1,6 @@
 ---
-title: _InterlockedAdd 내장 함수 | Microsoft Docs
-ms.custom: ''
+title: _InterlockedAdd Intrinsic Functions
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - _InterlockedAdd64_acq_cpp
 - _InterlockedAdd64_acq
@@ -20,8 +16,6 @@ f1_keywords:
 - _InterlockedAdd_acq_cpp
 - _InterlockedAdd64_nf
 - _InterlockedAdd
-dev_langs:
-- C++
 helpviewer_keywords:
 - _InterlockedAdd_nf intrinsic
 - _InterlockedAdd_rel intrinsic
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7a94bb2941662fc19fffa27f72497b04f79e7ac7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 0952a7727a433a718eac2f1873249327647599dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46445479"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461596"
 ---
 # <a name="interlockedadd-intrinsic-functions"></a>_InterlockedAdd Intrinsic Functions
 
@@ -91,7 +81,7 @@ __int64 _InterlockedAdd64_rel(
 *가 수*<br/>
 [out에서] 에 추가할 정수에 대 한 포인터 더하기 연산의 결과 바뀝니다.
 
-*Value*<br/>
+*값*<br/>
 [in] 추가할 값입니다.
 
 ## <a name="return-value"></a>반환 값

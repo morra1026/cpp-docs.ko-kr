@@ -1,25 +1,15 @@
 ---
-title: 삽입 연산자 사용 및 형식 제어 | Microsoft Docs
-ms.custom: ''
+title: 삽입 연산자 사용 및 형식 제어
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - insertion operators
 ms.assetid: cdefe986-6548-4cd1-8a67-b431d7d36a1c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 60f82332f9dd0fa6d6e64beb2a5d793784471a1f
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 8c04cc6d5deeaf5dfea65a7f8e92a8569084c077
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48234601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565414"
 ---
 # <a name="using-insertion-operators-and-controlling-format"></a>삽입 연산자 사용 및 형식 제어
 

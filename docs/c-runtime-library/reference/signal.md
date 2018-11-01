@@ -1,10 +1,6 @@
 ---
-title: signal | Microsoft Docs
-ms.custom: ''
+title: 신호
 ms.date: 04/12/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - signal
 apilocation:
@@ -22,20 +18,14 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - signal
-dev_langs:
-- C++
 helpviewer_keywords:
 - signal function
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f4e349707c22d8c252f56c08ea45fc78609e557
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1a0f9f8448149ce18155e0f5b88343c56d9b3d7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50660709"
 ---
 # <a name="signal"></a>신호
 
@@ -129,30 +119,30 @@ volatile double d = 0.0f;
 다음 예제에서는 사용 하는 방법을 보여 줍니다 **신호** 일부 사용자 지정 동작을 추가 하는 **SIGABRT** 신호입니다. abort 동작에 대한 자세한 내용은 [_set_abort_behavior](set-abort-behavior.md)를 참조하세요.
 
 ```C
-// crt_signal.c
-// compile with: /EHsc /W4
-// Use signal to attach a signal handler to the abort routine
-#include <stdlib.h>
-#include <signal.h>
-#include <tchar.h>
+// crt_signal.c
+// compile with: /EHsc /W4
+// Use signal to attach a signal handler to the abort routine
+#include <stdlib.h>
+#include <signal.h>
+#include <tchar.h>
 
-void SignalHandler(int signal)
+void SignalHandler(int signal)
 {
-    if (signal == SIGABRT) {
-        // abort signal handler code
-    } else {
-        // ...
-    }
+    if (signal == SIGABRT) {
+        // abort signal handler code
+    } else {
+        // ...
+    }
 }
 
-int main()
+int main()
 {
-    typedef void (*SignalHandlerPointer)(int);
+    typedef void (*SignalHandlerPointer)(int);
 
-    SignalHandlerPointer previousHandler;
-    previousHandler = signal(SIGABRT, SignalHandler);
+    SignalHandlerPointer previousHandler;
+    previousHandler = signal(SIGABRT, SignalHandler);
 
-    abort();
+    abort();
 }
 ```
 

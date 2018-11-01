@@ -1,10 +1,6 @@
 ---
-title: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l | Microsoft Docs
-ms.custom: ''
+title: strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strncmp
 - _mbsncmp
@@ -33,8 +29,6 @@ f1_keywords:
 - strncmp
 - _mbsncmp
 - wcsncmp
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tcsnccmp function
 - ftcsncmp function
@@ -54,23 +48,19 @@ helpviewer_keywords:
 - characters [C++], comparing
 - _ftcsnccmp function
 ms.assetid: 2fdbf4e6-77da-4b59-9086-488f6066b8af
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a64d7248151287f4f2af38e666db62f9a15d833f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b8b5472289bacc940bb0cbea7876f246243660bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417355"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50523767"
 ---
 # <a name="strncmp-wcsncmp-mbsncmp-mbsncmpl"></a>strncmp, wcsncmp, _mbsncmp, _mbsncmp_l
 
 두 문자열의 문자를 지정한 수까지 비교합니다.
 
 > [!IMPORTANT]
-> **_mbsncmp** 및 **_mbsncmp_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncmp** 하 고 **_mbsncmp_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -104,7 +94,7 @@ int _mbsncmp_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*string1*, *문자열 2*<br/>
+*string1*, *string2*<br/>
 비교할 문자열입니다.
 
 *count*<br/>
@@ -115,27 +105,27 @@ int _mbsncmp_l(
 
 ## <a name="return-value"></a>반환 값
 
-반환 값의 부분 문자열 간의 관계를 나타냅니다. *string1* 및 *string2* 다음과 같습니다.
+반환 값의 부분 문자열 간 관계를 나타냅니다 *string1* 하 고 *string2* 다음과 같습니다.
 
 |반환 값|설명|
 |------------------|-----------------|
-|< 0|*string1* 부분 문자열 보다 작은 *string2* 부분 문자열|
-|0|*string1* 부분 문자열을 동일한 *string2* 부분 문자열|
+|< 0|*string1* 부분 문자열 보다 작거나 *string2* 부분 문자열|
+|0|*string1* substring 동일 *string2* 부분 문자열|
 |> 0|*string1* 부분 문자열 보다 큰 *string2* 부분 문자열|
 
-매개 변수 유효성 검사 오류 시 **_mbsncmp** 및 **_mbsncmp_l** 반환 **_NLSCMPERROR**에 정의 된 \<g. h > 및 \< mbstring.h > 합니다.
+매개 변수 유효성 검사 오류 시 **_mbsncmp** 하 고 **_mbsncmp_l** 반환 **_NLSCMPERROR**에 정의 된 \<string.h > 및 \< mbstring.h >.
 
 ## <a name="remarks"></a>설명
 
-**strncmp** 최대 첫 번째 서 수 비교를 수행 하는 함수 *count* 에서 문자 *string1* 및 *string2* 및 부분 문자열 간의 관계를 나타내는 값을 반환 합니다. **strncmp** 의 대/소문자 구분 버전이 **_strnicmp**합니다. **wcsncmp** 및 **_mbsncmp** 의 대/소문자 구분 버전 **_wcsnicmp** 및 **_mbsnicmp**합니다.
+합니다 **strncmp** 최대 첫 번째 서 수 비교를 수행 하는 함수 *개수* 자 *string1* 및 *string2* 및 부분 문자열 간의 관계를 나타내는 값을 반환 합니다. **strncmp** 의 대/소문자 구분 버전이 **_strnicmp**합니다. **wcsncmp** 하 고 **_mbsncmp** 버전의 대/소문자 구분 **_wcsnicmp** 하 고 **_mbsnicmp**합니다.
 
-**wcsncmp** 및 **_mbsncmp** 와이드 문자 및 멀티 바이트 문자 버전의 **strncmp**합니다. 인수 **wcsncmp** 은 와이드 문자열이 고 **_mbsncmp** 는 멀티 바이트 문자 문자열입니다. **_mbsncmp** 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 반환 **_NLSCMPERROR** 오류 발생 시.
+**wcsncmp** 하 고 **_mbsncmp** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strncmp**합니다. 인수 **wcsncmp** 은 와이드 문자열이 고 **_mbsncmp** 는 멀티 바이트 문자 문자열입니다. **_mbsncmp** 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하며 반환 **_NLSCMPERROR** 오류 발생 시.
 
-또한 **_mbsncmp** 및 **_mbsncmp_l** 매개 변수 유효성 검사 합니다. 경우 *string1* 또는 *string2* 가 null 포인터에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_mbsncmp** 및 **_mbsncmp_l** 반환 **_NLSCMPERROR** 설정 **errno** 를  **EINVAL**합니다. **strncmp** 및 **wcsncmp** 매개 변수를 확인 하지 않습니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+또한 **_mbsncmp** 하 고 **_mbsncmp_l** 매개 변수 유효성 검사 합니다. 하는 경우 *string1* 하거나 *string2* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **_mbsncmp** 하 고 **_mbsncmp_l** 반환 **_NLSCMPERROR** 설정 하 고 **errno** 에  **EINVAL**합니다. **strncmp** 하 고 **wcsncmp** 해당 매개 변수를 확인 하지 않습니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-비교 동작 **_mbsncmp** 및 **_mbsncmp_l** 의 설정에 의해 영향을 받는 **LC_CTYPE** 로캘 범주를 설정 합니다. 이 설정은 멀티바이트 문자의 선행 및 후행 바이트 검색을 제어합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_mbsncmp** 함수가 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다. **_mbsncmp_l** 사용 한다는 점을 제외 하 고 함수는 동일는 *로캘* 매개 변수 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요. 이러한 함수의 동작은 동일 로캘이 싱글바이트 로캘의 경우 **strncmp**합니다.
+비교 동작에 **_mbsncmp** 하 고 **_mbsncmp_l** 설정의 영향을 받는 합니다 **LC_CTYPE** 로캘 범주 설정 합니다. 이 설정은 멀티바이트 문자의 선행 및 후행 바이트 검색을 제어합니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 합니다 **_mbsncmp** 함수가 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다. **_mbsncmp_l** 함수를 사용 한다는 점을 제외 하면 동일 합니다 *로캘* 매개 변수 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요. 로캘이 싱글바이트 로캘의 경우 이러한 함수의 동작이 동일 **strncmp**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -146,7 +136,7 @@ int _mbsncmp_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strncmp**|\<string.h>|
 |**wcsncmp**|\<string.h> 또는 \<wchar.h>|

@@ -1,12 +1,6 @@
 ---
-title: 컬렉션 클래스 선택에 대 한 권장 사항 | Microsoft Docs
-ms.custom: ''
+title: 컬렉션 클래스 선택에 대한 권장 사항
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - type safety of collection classes [MFC]
 - collection classes [MFC], serialization
@@ -22,16 +16,12 @@ helpviewer_keywords:
 - collection classes [MFC], duplicates allowed
 - collection classes [MFC], shapes
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0bb6338d7a40059da5f4e351dfac0d8d879e8c21
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2c8cb323feb44618909895a4ee536ad3b7832173
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404789"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50446737"
 ---
 # <a name="recommendations-for-choosing-a-collection-class"></a>컬렉션 클래스 선택에 대한 권장 사항
 
@@ -95,7 +85,7 @@ ms.locfileid: "46404789"
 |`CUIntArray`|아니요|아니요|예|예 3|
 |`CWordArray`|아니요|예|예|예 3|
 
-1. 를 serialize 하려면 명시적으로 호출 해야 컬렉션 개체의 `Serialize` 함수; 덤프를 명시적으로 호출 해야 해당 `Dump` 함수입니다. Serialize하는 데 `ar << collObj` 형식을 사용할 수 없으며 덤프하는 데 `dmp` `<< collObj` 형식을 사용할 수 없습니다.
+1. Serialize하려면 컬렉션 개체의 `Serialize` 함수를 명시적으로 호출해야 합니다. 마찬가지로 덤프하려면 `Dump` 함수를 명시적으로 호출해야 합니다. Serialize하는 데 `ar << collObj` 형식을 사용할 수 없으며 덤프하는 데 `dmp` `<< collObj` 형식을 사용할 수 없습니다.
 
 2. Serialize 가능성은 기본 컬렉션 유형에 따라 다릅니다. 예를 들어, 형식화된 포인터 배열이 `CObArray`에 기반을 두는 경우 이 배열은 serialize할 수 있지만 `CPtrArray`에 기반을 두는 경우에는 serialize할 수 없습니다. 일반적으로 "Ptr" 클래스는 serialize할 수 없습니다.
 

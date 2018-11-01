@@ -1,25 +1,15 @@
 ---
-title: 작업별 인터넷 정보 | Microsoft Docs
-ms.custom: ''
+title: 작업별 인터넷 정보
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, Internet applications
 ms.assetid: da078bf5-53c3-4167-b1ef-509b5a544ad9
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1070dbe1f912f8bb54092fdff4c32ed906100188
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: a3f1dca05eee7710d07818fb660e35be535fbb78
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46380517"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50432788"
 ---
 # <a name="internet-information-by-task"></a>작업별 인터넷 정보
 

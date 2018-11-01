@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 5e6a5dd4a00bd4d98c36222434d7cd83242905c9
-ms.sourcegitcommit: db6b2ad3195e71abfb60b62f3f015f08b0a719d0
+ms.openlocfilehash: 387550fa7d3e745038d0be8ee66574d4496132a0
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410761"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50061290"
 ---
 # <a name="connect-to-your-remote-linux-computer"></a>원격 Linux 컴퓨터에 연결
 
@@ -29,7 +29,7 @@ Visual Studio에서 C++ Linux 프로젝트를 빌드할 때 Linux 코드가 원�
    ![연결 관리자](media/settings_connectionmanager.png)
 
    두 경우 모두에, **원격 시스템에 연결** 창이 표시됩니다.
-   
+
    ![원격 시스템에 연결](media/connect.png)
 
 1. 다음 정보를 입력합니다.

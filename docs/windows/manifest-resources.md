@@ -1,27 +1,16 @@
 ---
-title: 매니페스트 리소스 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 매니페스트 리소스 (c + +)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - manifest resources [C++]
 - resources [C++], manifest
 ms.assetid: 8615334c-22a0-44c0-93e0-5924528c9917
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 2da93d1baaf95799c7ef68d6cc854d554fbe6c47
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 081fd12a86c31973c7856ca7b9f3fcb129e2eb81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46429567"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578284"
 ---
 # <a name="manifest-resources-c"></a>매니페스트 리소스 (c + +)
 
@@ -43,7 +32,7 @@ C + + 데스크톱 프로젝트에서 매니페스트 리소스는 응용 프로
 </dependency>
 ```
 
-Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 리소스 뿐만 아니라 지정 하 고 최신 버전의 Windows 공용 컨트롤 (v6.0, 위와 같이)을 사용 하 여 응용 프로그램 있지만 지원 합니다 [Syslink 컨트롤](/windows/desktop/Controls/syslink-overview)합니다.
+Windows XP 또는 Windows Vista 응용 프로그램의 경우, 매니페스트 리소스는 응용 프로그램이 최신 버전(위에 나온 대로 v6.0)의 Windows 공용 컨트롤을 사용하도록 지정할 뿐만 아니라 [Syslink 컨트롤](/windows/desktop/Controls/syslink-overview)도 지원합니다.
 
 버전을 보려면 매니페스트 리소스에 포함 된 정보를 입력을 XML 뷰어 또는 Visual Studio 텍스트 편집기에서 파일을 열 수 있습니다. 자세한 내용은 [Visual Studio 텍스트 편집기에서 매니페스트 리소스 열기](../windows/how-to-open-a-manifest-resource.md)를 참조하세요.
 

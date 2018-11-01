@@ -1,11 +1,6 @@
 ---
-title: casin, casinf, casinl | Microsoft 문서
-ms.custom: ''
+title: casin, casinf, casinl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - casin
 - casinf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/casin
 - complex/casinf
 - complex/casinl
-dev_langs:
-- C++
 helpviewer_keywords:
 - casin function
 - casinf function
 - casinl function
 ms.assetid: b75d1455-7b1e-43b0-bd46-c530be190be9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c977430528d8fa5834d3959cbf0645bf68165f0f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 209c3da6d6ed03cb5a5b129003c999b002a1a6b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50539622"
 ---
 # <a name="casin-casinf-casinl"></a>casin, casinf, casinl
 
-실제 축 따라 [-1, + 1] 간격 외부 분기 컷 복소수의 아크사인 값을 검색합니다.
+실수 축 따라 [-1, + 1] 간격에서 벗어난 분기를 사용 하 여 복소수의 아크사인을 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -79,17 +68,17 @@ _Lcomplex casinl(
 
 ## <a name="return-value"></a>반환 값
 
-아크사인 값 *z*, 라디안에서입니다. 결과 허수 축을 따라 및 간격 내에 제한 [-π/2 + 2 π /] 실제 축을 따라 합니다.
+아크사인 *z*, 라디안에서입니다. 결과 허수 축을 따라 및 간격의 제한이 [-π/2, + π/2] 실수 축을 따라 합니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **casin** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **casin** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **casin** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **casin** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**casin**, **casinf**, **casinl**|\<complex.h>|\<ccomplex>|
+|**casin**하십시오 **casinf**, **casinl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

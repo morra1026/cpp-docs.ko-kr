@@ -1,10 +1,6 @@
 ---
-title: _ismbbalpha, _ismbbalpha_l | Microsoft 문서
-ms.custom: ''
+title: _ismbbalpha, _ismbbalpha_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbalpha
 - _ismbbalpha_l
@@ -26,24 +22,18 @@ f1_keywords:
 - ismbbalpha_l
 - _ismbbalpha
 - _ismbbalpha_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbbalpha function
 - ismbbalpha_l function
 - _ismbbalpha function
 - _ismbbalpha_l function
 ms.assetid: 8e54cb92-fc2b-41f5-8ab4-b22ac8aa9ad0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6fa4708cf4c5c297d5a537728d4e5988f21e21b6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c08a92ae0630c977f12deb1d0bd7587f575efd86
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399097"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50588671"
 ---
 # <a name="ismbbalpha-ismbbalphal"></a>_ismbbalpha, _ismbbalpha_l
 
@@ -74,11 +64,11 @@ int _ismbbalpha_l(
 
 `isalpha(c) || _ismbbkalnum(c)`
 
-에 대 한이 0이 아닌 *c*, 없는 경우 0입니다. **_ismbbalpha** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbalpha_l** 전달 된 로캘을 사용 하 여 한다는 점을 제외 하 고는 동일 합니다.
+이 대 한 아닌 *c*, 있지 않으면 0입니다. **_ismbbalpha** 모든 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbalpha_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbbalpha**|\<mbctype.h>|
 |**_ismbbalpha_l**|\<mbctype.h>|

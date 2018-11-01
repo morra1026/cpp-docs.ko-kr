@@ -1,10 +1,6 @@
 ---
-title: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l | Microsoft 문서
-ms.custom: ''
+title: _ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbcpunct_l
 - _ismbcblank
@@ -42,8 +38,6 @@ f1_keywords:
 - ismbcgraph_l
 - ismbcspace
 - ismbcpunct
-dev_langs:
-- C++
 helpviewer_keywords:
 - ismbcspace_l function
 - _ismbcprint_l function
@@ -62,16 +56,12 @@ helpviewer_keywords:
 - _ismbcgraph_l function
 - _ismbcspace function
 ms.assetid: 8e0a5f47-ba64-4411-92a3-3c525d16e3be
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: da9231dcf64222aa075194f72892896972e2abf7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 05946def8c4d832751554a1653afa98c9965fee9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405499"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626215"
 ---
 # <a name="ismbcgraph-ismbcgraphl-ismbcprint-ismbcprintl-ismbcpunct-ismbcpunctl-ismbcblank-ismbcblankl-ismbcspace-ismbcspacel"></a>_ismbcgraph, _ismbcgraph_l, _ismbcprint, _ismbcprint_l, _ismbcpunct, _ismbcpunct_l, _ismbcblank, _ismbcblank_l, _ismbcspace, _ismbcspace_l
 
@@ -130,25 +120,25 @@ int _ismbcspace_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 루틴은 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 경우 *c* < 255 = 해당 하는 및 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
+이러한 각 루틴은 문자가 테스트 조건을 만족하는 경우 0이 아닌 값을 반환하고, 그렇지 않으면 0을 반환합니다. 하는 경우 *c* < = 255 및 해당 **_ismbb** 루틴 (예를 들어 **_ismbcalnum** 에 해당 **_ismbbalnum**), 결과 해당 반환 값 **_ismbb** 루틴입니다.
 
-이러한 함수 버전은 제외 하는 것과 동일는 **_l** 접미사는 현재 로캘 대신은 로캘 종속 동작에 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이러한 함수의 버전은 동일 요소를 포함 한다는 점을 제외 합니다 **_l** 접미사는 현재 로캘 대신 해당 로캘 종속 동작에 대해 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
 이러한 각 함수는 지정한 조건에 대해 주어진 멀티바이트 문자를 테스트합니다.
 
-|루틴|테스트 조건|932 코드 페이지 예제|
+|루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
-|**_ismbcgraph**|그래픽|0이 아닌 경우 및 경우에만 반환 *c* ASCII 또는 가타카나 인쇄 가능한 모든 문자는 공백 () 제외한의 단일 바이트 표현입니다.|
-|**_ismbcprint**|인쇄 가능|0이 아닌 경우 및 경우에만 반환 *c* ASCII 또는 가타카나 인쇄 가능한 모든 문자는 공백 () 등의 단일 바이트 표현입니다.|
-|**_ismbcpunct**|문장 부호|0이 아닌 경우 및 경우에만 반환 *c* 는 ASCII 또는 가타카나 문장 부호 문자의 싱글바이트 표현인 합니다.|
-|**_ismbcblank**|공백 또는 가로 탭|0이 아닌 경우 및 경우에만 반환 *c* 공백 또는 가로 탭 문자는: *c*0x20 = 또는 *c*0x09 = 합니다.|
-|**_ismbcspace**|공백|0이 아닌 경우 및 경우에만 반환 *c* 공백 문자: *c*= 0x20 또는 0x09 < =*c*< = 0x0D 합니다.|
+|**_ismbcgraph**|그래픽|경우에만 0이 아닌 값 반환 *c* 공백 ()를 제외한 모든 ASCII 또는 가타카나 인쇄 가능한 문자를 싱글바이트 표현입니다.|
+|**_ismbcprint**|인쇄 가능|경우에만 0이 아닌 값 반환 *c* 공백 ()를 포함 하 여 모든 ASCII 또는 가타카나 인쇄 가능한 문자를 싱글바이트 표현입니다.|
+|**_ismbcpunct**|문장 부호|경우에만 0이 아닌 값 반환 *c* 모든 ASCII 또는 가타카나 문장 부호 문자의 싱글바이트 표현인 합니다.|
+|**_ismbcblank**|공백 또는 가로 탭|경우에만 0이 아닌 값 반환 *c* 가 공백 또는 가로 탭 문자: *c*= 0x20 또는 *c*= 0x09) 인 합니다.|
+|**_ismbcspace**|공백|경우에만 0이 아닌 값 반환 *c* 공백 문자: *c*0x20 또는 0x09< = < =*c*< 0x0D =.|
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbcgraph**|\<mbstring.h>|
 |**_ismbcgraph_l**|\<mbstring.h>|

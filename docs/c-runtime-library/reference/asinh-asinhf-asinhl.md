@@ -1,10 +1,6 @@
 ---
-title: asinh, asinhf, asinhl | Microsoft 문서
-ms.custom: ''
+title: asinh, asinhf, asinhl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - asinh
 - asinhf
@@ -26,23 +22,17 @@ f1_keywords:
 - asinhf
 - asinhl
 - asinh
-dev_langs:
-- C++
 helpviewer_keywords:
 - asinh function
 - asinhl function
 - asinhf function
 ms.assetid: 4488babe-1a7e-44ca-8b7b-c2db0a70084f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1387e44b885d0f1ed58113b87d26ba5928768c18
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f6100268b77178487b7a7aa1cc3f10ac3ea7e9dc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393292"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662958"
 ---
 # <a name="asinh-asinhf-asinhl"></a>asinh, asinhf, asinhl
 
@@ -68,7 +58,7 @@ long double asinh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**asinh** 의 역 사인 (하이퍼볼릭 사인)을 반환 하는 함수 *x*합니다. 이 함수는 부동 소수점 도메인에 대해 유효합니다. 경우 *x* 가 quiet NaN, 무한 또는 무한대 이면 동일한 값이 반환 됩니다.
+합니다 **asinh** 의 역 쌍 곡 사인 값 (쌍곡선 아크사인)를 반환 하는 함수 *x*합니다. 이 함수는 부동 소수점 도메인에 대해 유효합니다. 하는 경우 *x* 는 quiet NaN, 무한 또는 무한대 이면 동일한 값이 반환 됩니다.
 
 |입력|SEH 예외|**_matherr** 예외|
 |-----------|-------------------|--------------------------|
@@ -76,13 +66,13 @@ long double asinh( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +를 사용 하는 경우의 오버 로드를 호출할 수 있습니다 **asinh** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **asinh** 항상 사용 하 고 반환 **double**합니다.
+C + +를 사용 하는 경우의 오버 로드를 호출할 수 있습니다 **asinh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **asinh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 C 헤더|필수 C++ 헤더|
+|기능|필수 C 헤더|필수 C++ 헤더|
 |--------------|--------------|------------------|
-|**asinh**, **asinhf**, **asinhl**|\<math.h>|\<cmath > 또는 \<math.h <|
+|**asinh**하십시오 **asinhf**, **asinhl**|\<math.h>|\<cmath > 또는 \<math.h <|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

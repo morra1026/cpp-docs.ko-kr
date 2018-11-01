@@ -1,28 +1,18 @@
 ---
-title: 폼 기반 MFC 응용 프로그램 만들기 | Microsoft Docs
-ms.custom: ''
+title: 폼 기반 MFC 응용 프로그램 만들기
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - vc.appwiz.mfcforms.project
-dev_langs:
-- C++
 helpviewer_keywords:
 - applications [MFC], forms-based
 - forms-based applications [MFC]
 ms.assetid: 048d2f7d-b60d-4386-ad8e-71d49af9c05e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 692370e06668152cb6f5d5ecc762a3bbe991af08
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d95a5ddd5b8504bedc8136ae553b62b3ee6740f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46374663"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518601"
 ---
 # <a name="creating-a-forms-based-mfc-application"></a>폼 기반 MFC 응용 프로그램 만들기
 

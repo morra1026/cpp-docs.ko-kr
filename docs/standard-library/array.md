@@ -1,27 +1,17 @@
 ---
-title: '&lt;array&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;array&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <array>
-dev_langs:
-- C++
 helpviewer_keywords:
 - array header
 ms.assetid: 084147c1-e805-478e-8201-76846020f187
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9dcf61895e884eeb16a6461e91675a3f1688d91d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 8915a652fe442af84f2582b9b9d47a243f416eeb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955951"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50553298"
 ---
 # <a name="ltarraygt"></a>&lt;array&gt;
 
@@ -45,7 +35,7 @@ ms.locfileid: "38955951"
 
 |연산자|설명|
 |-|-|
-|[operator==](../standard-library/array-operators.md#op_eq_eq)|배열 비교, 같음|
+|[연산자==](../standard-library/array-operators.md#op_eq_eq)|배열 비교, 같음|
 |[operator!=](../standard-library/array-operators.md#op_neq)|배열 비교, 같지 않음|
 |[operator\<](../standard-library/array-operators.md#op_lt)|배열 비교, 보다 작음|
 |[operator>=](../standard-library/array-operators.md#op_gt_eq)|배열 비교, 보다 크거나 같음|

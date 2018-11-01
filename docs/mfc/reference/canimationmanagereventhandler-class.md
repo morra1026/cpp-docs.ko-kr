@@ -1,10 +1,6 @@
 ---
-title: CAnimationManagerEventHandler 클래스 | Microsoft Docs
-ms.custom: ''
+title: CAnimationManagerEventHandler 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationManagerEventHandler
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler
@@ -12,24 +8,18 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::CreateInstance
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::OnManagerStatusChanged
 - AFXANIMATIONCONTROLLER/CAnimationManagerEventHandler::SetAnimationController
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationManagerEventHandler [MFC], CAnimationManagerEventHandler
 - CAnimationManagerEventHandler [MFC], CreateInstance
 - CAnimationManagerEventHandler [MFC], OnManagerStatusChanged
 - CAnimationManagerEventHandler [MFC], SetAnimationController
 ms.assetid: 6089ec07-e661-4805-b227-823b4652aade
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96d3ba28d7cd1b60743aec7d9bd5b53b8cf59127
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 497b6e0f5bdeb817eccb0bb42f66763a97da2af0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46405842"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445736"
 ---
 # <a name="canimationmanagereventhandler-class"></a>CAnimationManagerEventHandler 클래스
 
@@ -54,7 +44,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 |이름|설명|
 |----------|-----------------|
 |[CAnimationManagerEventHandler::CreateInstance](#createinstance)|인스턴스를 만들고 `CAnimationManagerEventHandler` 개체입니다.|
-|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|애니메이션 관리자의 상태가 변경 될 때 호출 됩니다. (`CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`를 재정의합니다.)|
+|[CAnimationManagerEventHandler::OnManagerStatusChanged](#onmanagerstatuschanged)|애니메이션 관리자의 상태가 변경 될 때 호출 됩니다. ( `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`을 재정의합니다.)|
 |[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|이벤트를 라우팅하도록 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.|
 
 ## <a name="remarks"></a>설명

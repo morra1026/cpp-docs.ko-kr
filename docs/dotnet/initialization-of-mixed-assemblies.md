@@ -1,12 +1,6 @@
 ---
-title: 혼합형된 어셈블리 초기화 | Microsoft Docs
-ms.custom: ''
+title: 혼합형 어셈블리 초기화
 ms.date: 03/09/2018
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - mixed assemblies [C++], loader lock
 - loader lock [C++]
@@ -16,23 +10,18 @@ helpviewer_keywords:
 - custom locales [C++]
 - mixed assemblies [C++], initilizing
 ms.assetid: bfab7d9e-f323-4404-bcb8-712b15f831eb
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: ba9f3143fb110b25f384e462e7dfcd69c0140802
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1f4ea7f5cfc6e99390c93ba9c2beadc46fce8584
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46439577"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50665012"
 ---
 # <a name="initialization-of-mixed-assemblies"></a>혼합형 어셈블리 초기화
 
 Windows 개발자가 항상 조심 하십시오 로더 잠금 하는 동안 코드를 실행할 때 `DllMain`합니다. 그러나 C +를 다룰 때 고려해 야 하는 일부 추가적인 고려 사항이 있습니다. + clr 혼합 모드 어셈블리입니다.
 
-내 코드 [DllMain](/windows/desktop/Dlls/dllmain) CLR을 액세스 하지 않아야 합니다. 즉, `DllMain` 은 관리되는 함수를 직접적으로든 간접적으로든 호출하지 않아야 하고, `DllMain`에서 관리 코드를 선언하거나 구현하지 않아야 하며, `DllMain`내에서 가비지 수집이나 자동 라이브러리 로드를 수행하지 않아야 합니다.
+[DllMain](/windows/desktop/Dlls/dllmain) 내의 코드에서 CLR에 액세스하면 안 됩니다. 즉, `DllMain` 은 관리되는 함수를 직접적으로든 간접적으로든 호출하지 않아야 하고, `DllMain`에서 관리 코드를 선언하거나 구현하지 않아야 하며, `DllMain`내에서 가비지 수집이나 자동 라이브러리 로드를 수행하지 않아야 합니다.
 
 ## <a name="causes-of-loader-lock"></a>로더 잠금 원인
 
@@ -129,7 +118,7 @@ Visual Studio 2005 이전 링커는 단순히 다른 소스 파일에 대 한 �
 
 로더 잠금 문제를 해결하려는 사용자의 편의를 위해 네이티브 구현과 관리되는 구현이 둘 다 있으면 링커에서 네이티브 구현을 선택합니다. 따라서 위와 같은 문제가 발생하지 않습니다. 그러나 이 릴리스에는 컴파일러에서 해결되지 않은 두 가지 문제로 인해 이 규칙에 두 가지 예외가 있습니다.
 
-- 전역 정적 함수 포인터를 통해 인라인 함수를 호출하게 됩니다. 가상 함수는 전역 함수 포인터를 통해 호출되므로 이 시나리오가 특히 두드러집니다. 예를 들어 개체에 적용된
+- 전역 정적 함수 포인터를 통해 인라인 함수를 호출하게 됩니다. 가상 함수는 전역 함수 포인터를 통해 호출되므로 이 시나리오가 특히 두드러집니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 #include "definesmyObject.h"

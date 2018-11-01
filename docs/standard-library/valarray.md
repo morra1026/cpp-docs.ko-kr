@@ -1,27 +1,17 @@
 ---
-title: '&lt;valarray&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;valarray&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <valarray>
-dev_langs:
-- C++
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98ee264d019e89ef3fbdf299a58c972ad895caed
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: efd3e750abb68ad84eb8894ea6b53fe8e29e0e17
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50447790"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -78,7 +68,7 @@ ms.locfileid: "38954801"
 |[operator+](../standard-library/valarray-operators.md#op_add)|크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 요소 합계를 가져옵니다.|
 |[operator-](../standard-library/valarray-operators.md#operator-)|크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 요소 차이를 가져옵니다.|
 |[operator/](../standard-library/valarray-operators.md#op_div)|크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 요소 몫을 가져옵니다.|
-|[operator==](../standard-library/valarray-operators.md#op_eq_eq)|크기가 같은 두 valarray의 해당 요소가 서로 같은지 또는 valarray의 모든 요소가 valarray 요소 형식의 지정된 값과 같은지 테스트합니다.|
+|[연산자==](../standard-library/valarray-operators.md#op_eq_eq)|크기가 같은 두 valarray의 해당 요소가 서로 같은지 또는 valarray의 모든 요소가 valarray 요소 형식의 지정된 값과 같은지 테스트합니다.|
 |[operator^](../standard-library/valarray-operators.md#op_xor)|크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 배타적 `OR`을 가져옵니다.|
 |[operator&#124;](../standard-library/valarray-operators.md#op_or)|크기가 같은 두 valarray의 해당 요소 간이나 valarray와 요소 형식의 지정된 값 간에 비트 `OR`을 가져옵니다.|
 |[operator&#124;&#124;](../standard-library/valarray-operators.md#op_lor)|크기가 같은 두 valarray의 해당 요소 간이나 valarray와 valarray 요소 형식의 지정된 값 간에 논리적 `OR`을 가져옵니다.|

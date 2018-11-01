@@ -1,10 +1,6 @@
 ---
-title: fwide | Microsoft 문서
-ms.custom: ''
+title: fwide
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - fwide
 apilocation:
@@ -21,21 +17,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - fwide
-dev_langs:
-- C++
 helpviewer_keywords:
 - fwide function
 ms.assetid: a4641f5b-d74f-4946-95d5-53a64610d28d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fd52c450e2eb34c40d44d00a76550c401abcb6c9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d992ebc527744beeb4ef14175e3f10646a77a064
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397271"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50557849"
 ---
 # <a name="fwide"></a>fwide
 
@@ -60,7 +50,7 @@ int fwide(
 
 ## <a name="return-value"></a>반환 값
 
-이 함수는 현재 방금 반환 *모드*합니다.
+이 함수는 현재는 그냥 반환 *모드*합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -68,7 +58,7 @@ int fwide(
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**fwide**|\<wchar.h>|
 

@@ -1,10 +1,6 @@
 ---
-title: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l | Microsoft 문서
-ms.custom: ''
+title: _mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbctohira
 - _mbctohira_l
@@ -32,8 +28,6 @@ f1_keywords:
 - mbctokata_l
 - mbctohira_l
 - _mbctokata_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbctokata function
 - _mbctokata_l function
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - _mbctohira function
 - mbctokata function
 ms.assetid: f949afd7-44d4-4f08-ac8f-1fef2c915a1c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 85c5cbca9d5decee1719f575f60db725c285d607
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 11b08449a7d27015c4ffe0ce398c471bbd6069f0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403094"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50637803"
 ---
 # <a name="mbctohira-mbctohiral-mbctokata-mbctokatal"></a>_mbctohira, _mbctohira_l, _mbctokata, _mbctokata_l
 
@@ -91,24 +81,24 @@ unsigned int _mbctokata_l(
 
 ## <a name="return-value"></a>반환 값
 
-변환 된 문자를 반환 하는 이러한 각 함수 *c*, 가능한 경우. 문자를 반환 하지 않으면 *c* 변경 되지 않습니다.
+변환 된 문자를 반환 하는 이러한 각 함수 *c*가능한 경우. 문자 그렇지 *c* 변경 되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
-**_mbctohira** 및 **_mbctokata** 함수는 문자를 테스트 *c* 고 가능한 경우 다음 변환 중 하나를 적용 합니다.
+합니다 **_mbctohira** 하 고 **_mbctokata** 함수는 문자를 테스트 *c* 고 가능한 경우 다음 변환 중 하나를 적용 합니다.
 
 |루틴|변환|
 |--------------|--------------|
 |**_mbctohira**, **_mbctohira_l**|멀티바이트 가타카나를 멀티바이트 히라가나로 변환|
 |**_mbctokata**, **_mbctokata_l**|멀티바이트 히라가나를 멀티바이트 가타카나로 변환|
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 접미사가 한다는 점을 제외 하면 이러한 함수 버전은 동일가 **_l** 접미사 접미사가 없는 및이 로캘 종속 동작에 대 한 현재 로캘을 사용는 **_l** 대신 접미사 에 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 이러한 함수의 버전은 제외 하 고는 동일가 **_l** 접미사가 없는 스냅숏과이 로캘 종속 동작에 대 한 현재 로캘을 사용 합니다 **_l** 대신 접미사 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbctohira** 변수의 이름이 **jtohira** 및 **_mbctokata** 변수의 이름이 **jtokata**합니다. 새 코드에서는 새 이름을 사용하세요.
+이전 버전에서는 **_mbctohira** 이름이 **jtohira** 하 고 **_mbctokata** 이름이 **jtokata**합니다. 새 코드에서는 새 이름을 사용하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbctohira**|\<mbstring.h>|
 |**_mbctohira_l**|\<mbstring.h>|

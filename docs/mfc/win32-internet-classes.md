@@ -1,30 +1,20 @@
 ---
-title: Win32 인터넷 클래스 | Microsoft Docs
-ms.custom: ''
+title: Win32 인터넷 클래스
 ms.date: 09/12/2018
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.win32
-dev_langs:
-- C++
 helpviewer_keywords:
 - Internet classes [MFC]
 - WinInet classes [MFC], classes
 - Win32 [MFC], Internet classes
 - Windows API [MFC], Internet classes
 ms.assetid: b49601d5-3025-4068-9408-316b54ee4375
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 075804ae82d2e8431bef97d656aeee212feb6757
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: a655759e8e1ffdcfe422305cd39623b9d7a6ca4e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50073801"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50486439"
 ---
 # <a name="win32-internet-classes"></a>Win32 인터넷 클래스
 

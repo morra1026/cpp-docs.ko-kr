@@ -1,10 +1,6 @@
 ---
-title: list 클래스 | Microsoft 문서
-ms.custom: ''
+title: list 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - list/std::list
 - list/std::list::allocator_type
@@ -53,8 +49,6 @@ f1_keywords:
 - list/std::list::splice
 - list/std::list::swap
 - list/std::list::unique
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::list [C++]
 - std::list [C++], allocator_type
@@ -104,16 +98,12 @@ helpviewer_keywords:
 - std::list [C++], swap
 - std::list [C++], unique
 ms.assetid: d3707f4a-10fd-444f-b856-f9ca2077c1cd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 86e1c74d3aa53dd64a48676e4fe9bdbc2065b9c5
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0f874cc6b9f00f72c4c4b6d15e4503b8b49fbf8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107490"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50481915"
 ---
 # <a name="list-class"></a>list 클래스
 
@@ -339,7 +329,7 @@ const_reference back() const;
 
 `back`의 반환 값이 `const_reference`에 할당된 경우 목록 개체는 수정할 수 없습니다. `back`의 반환 값이 `reference`에 할당된 경우 목록 개체는 수정할 수 있습니다.
 
-1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 목록의 요소에 액세스하려고 하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
+1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 목록의 요소에 액세스하려고 하면 런타임 오류가 발생합니다.  자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md) 를 참조하세요.
 
 ### <a name="example"></a>예제
 
@@ -1071,7 +1061,7 @@ const_reference front() const;
 
 `front`의 반환 값이 `const_reference`에 할당된 경우 목록 개체는 수정할 수 없습니다. `front`의 반환 값이 `reference`에 할당된 경우 목록 개체는 수정할 수 있습니다.
 
-1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 목록의 요소에 액세스하려고 하면 런타임 오류가 발생합니다.  자세한 내용은 [확인된 반복기](../standard-library/checked-iterators.md)를 참조하세요.
+1 또는 2로 정의된 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)을 사용하여 컴파일한 경우 빈 목록의 요소에 액세스하려고 하면 런타임 오류가 발생합니다.  자세한 내용은 [Checked Iterators](../standard-library/checked-iterators.md) 를 참조하세요.
 
 ### <a name="example"></a>예제
 
@@ -2370,7 +2360,7 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 *Where*<br/>
 대상 목록의 위치로, 이 위치 앞에서 삽입합니다.
 
-*Source*<br/>
+*소스*<br/>
 대상 목록으로 삽입할 원본 목록입니다.
 
 *Iter*<br/>

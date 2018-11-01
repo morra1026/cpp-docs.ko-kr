@@ -1,28 +1,18 @@
 ---
-title: 링커 도구 오류 LNK2019 | Microsoft Docs
-ms.custom: ''
+title: 링커 도구 오류 LNK2019
 ms.date: 12/15/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK2019
-dev_langs:
-- C++
 helpviewer_keywords:
 - nochkclr.obj
 - LNK2019
 - _check_commonlanguageruntime_version
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 679d322f6d5ebcf8e56d1691d18e634bb34a2bb2
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: af40a48e36d316842ec9a744ad95d6c3b3af3731
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46067547"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50555599"
 ---
 # <a name="linker-tools-error-lnk2019"></a>링커 도구 오류 LNK2019
 
@@ -60,7 +50,7 @@ Visual Studio에서 정의가 포함 된 소스 파일 작성 및 프로젝트�
 
 ### <a name="a-symbol-is-defined-in-a-c-file-but-declared-without-using-extern-c-in-a-c-file"></a>기호가 C 파일에 정의 되어 있지만 c + + 파일에서 extern "C"를 사용 하지 않고 선언
 
-C로 컴파일된 파일에 정의 된 기호를 사용 하지 않으면 c + + 파일에 선언 된 기호와 다른 트 데코 레이 된 이름이 있는 [extern "C"](../../cpp/using-extern-to-specify-linkage.md) 한정자입니다. 선언이 각 기호의 컴파일 링크와 일치하는지 확인하세요. 마찬가지로, C 프로그램에서 사용할 기호를 C++ 파일에서 정의하는 경우 정의에 `extern "C"` 을 사용하세요.
+[extern "C"](../../cpp/using-extern-to-specify-linkage.md) 한정자를 사용하는 경우를 제외하고, C로 컴파일된 파일에 정의된 기호에 C++ 파일에 선언된 기호와 다른 트데코레이된 이름이 있습니다. 선언이 각 기호의 컴파일 링크와 일치하는지 확인하세요. 마찬가지로, C 프로그램에서 사용할 기호를 C++ 파일에서 정의하는 경우 정의에 `extern "C"` 을 사용하세요.
 
 ### <a name="a-symbol-is-defined-as-static-and-then-later-referenced-outside-the-file"></a>기호를 static으로 정의 되 고 후 나중에 파일 외부 참조
 

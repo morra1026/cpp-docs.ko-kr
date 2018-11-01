@@ -1,8 +1,6 @@
 ---
-title: 'Platform:: agile 클래스 | Microsoft Docs'
-ms.custom: ''
+title: Platform::Agile 클래스
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - AGILE/Platform::Platform
@@ -11,21 +9,15 @@ f1_keywords:
 - AGILE/Platform::Platform::Agile::GetAddressOf
 - AGILE/Platform::Platform::Agile::GetAddressOfForInOut
 - AGILE/Platform::Platform::Agile::Release
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Agile
 ms.assetid: e34459a9-c429-4c79-97fd-030c43ca4155
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3745ead4fec8466df3f164c415b21d98f68c0ef7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9350d94fdff615056fca193d654b2bb001d78d72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109786"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50471203"
 ---
 # <a name="platformagile-class"></a>Platform::Agile 클래스
 
@@ -162,11 +154,11 @@ T^* GetAddressOf() throw();
 
 ### <a name="return-value"></a>반환 값
 
-형식의 개체에 대 한 핸들의 주소 `T`합니다.
+`T` 형식의 개체에 대한 핸들의 주소입니다.
 
 ### <a name="remarks"></a>설명
 
-이 작업 해제 형식의 개체의 현재 표현이 `T`있으면, Agile 개체의 데이터 멤버를 다시 초기화 하 고, 현재 스레딩 컨텍스트를 획득 하 고, 나타낼 수 있는 개체 핸들 변수의 주소를 반환을 agile이 아닌 개체입니다. 개체를 나타내는 Agile 클래스 인스턴스가 시킬 대입 연산자를 사용 하 여 ([agile:: operator =](#operator-assign)) 개체를 Agile 클래스 인스턴스에 할당 합니다.
+이 작업은 `T` 형식의 개체에 대한 현재 표시를 해제하고(있는 경우), Agile 개체의 데이터 멤버를 다시 초기화하고, 현재 스레딩 컨텍스트를 가져오고 나서, agile이 아닌 개체를 나타낼 수 있는 개체 핸들 변수의 주소를 반환합니다. 개체를 나타내는 Agile 클래스 인스턴스가 시킬 대입 연산자를 사용 하 여 ([agile:: operator =](#operator-assign)) 개체를 Agile 클래스 인스턴스에 할당 합니다.
 
 ## <a name="getaddressofforinout"></a>  Agile::GetAddressOfForInOut Method
 

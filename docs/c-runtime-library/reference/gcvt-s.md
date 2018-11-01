@@ -1,10 +1,6 @@
 ---
-title: _gcvt_s | Microsoft 문서
-ms.custom: ''
+title: _gcvt_s
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _gcvt_s
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _gcvt_s
 - gcvt_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _gcvt_s function
 - _CVTBUFSIZE
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - strings [C++], converting from floating point
 - CVTBUFSIZE
 ms.assetid: 0a8d8a26-5940-4ae3-835e-0aa6ec1b0744
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a2bd12a63db064bca0c880484f99a2df9d210f8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 168e0657150d072bbe41cd0ad6e914ca1f53e512
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403770"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554965"
 ---
 # <a name="gcvts"></a>_gcvt_s
 
@@ -87,19 +77,19 @@ errno_t _gcvt_s(
 
 ### <a name="error-conditions"></a>오류 조건
 
-|*buffer*|*sizeInBytes*|*값*|*digits*|반환|값을 *버퍼*|
+|*buffer*|*sizeInBytes*|*값*|*digits*|반환|값 *버퍼*|
 |--------------|-------------------|-------------|--------------|------------|-----------------------|
-|**NULL**|모두|모두|모두|**EINVAL**|수정되지 않습니다.|
-|하지 **NULL** (올바른 메모리를 가리킴)|0|모두|모두|**EINVAL**|수정되지 않습니다.|
-|하지 **NULL** (올바른 메모리를 가리킴)|모두|모두|>= *sizeInBytes*|**EINVAL**|수정되지 않습니다.|
+|**NULL**|any|any|any|**EINVAL**|수정되지 않습니다.|
+|되지 **NULL** (유효한 메모리를 가리킴)|0|any|any|**EINVAL**|수정되지 않습니다.|
+|되지 **NULL** (유효한 메모리를 가리킴)|any|any|>= *sizeInBytes*|**EINVAL**|수정되지 않습니다.|
 
 **보안 문제**
 
-**_gcvt_s** 경우 액세스 위반이 발생 수 *버퍼* 올바른 메모리를 가리키지 않습니다 아니며 **NULL**합니다.
+**_gcvt_s** 하는 경우 액세스 위반을 생성할 수 있습니다 *버퍼* 유효한 메모리를 가리키지 아니며 **NULL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_gcvt_s** 함수는 부동 소수점 변환 *값* 문자 문자열로 (소수점 및 가능한 기호 바이트 포함)에 문자열을 저장 하 고 *버퍼* . *버퍼* 변환 된 값에 더한 값은 자동으로 추가 종결 null 문자를 수용할 수 있어야 합니다. 버퍼 길이를 **_CVTBUFSIZE** 충분히는 부동 소수점 값입니다. 경우 버퍼 크기는 *자릿수* + 1이 사용, 함수 끝을 덮어쓰지 것입니다는 버퍼의 수 없으므로이 작업에 대 한 충분 한 버퍼를 제공 합니다. **_gcvt_s** 생성 하려고 *자릿수* 10 진수 형식의 숫자입니다. 생성을 표시할 수 없는 경우 *자릿수* 지 수 서식의 자릿수입니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
+합니다 **_gcvt_s** 함수는 부동 소수점 변환 *값* 를 포함 하는 소수점 및 가능한 부호 바이트 문자열로 문자열을 가져와 *버퍼* . *버퍼* 변환 된 값과 자동으로 추가 되는 종료 null 문자를 수용 하기에 충분 해야 합니다. 길이의 버퍼로 **_CVTBUFSIZE** 충분 모두 부동 소수점 값. 경우 버퍼 크기인 *숫자* + 1은 사용, 함수 끝을 덮어쓰지 것입니다 버퍼의 수 없으므로이 작업에 대 한 충분 한 버퍼를 제공 해야 합니다. **_gcvt_s** 생성 하려고 *자릿수* 10 진수 형식의 숫자입니다. 수 없는 경우 생성 *자릿수* 지 수 서식의 자릿수입니다. 변환 시 뒤에 오는 0을 표시하지 않을 수 있습니다.
 
 C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으므로 크기 인수를 지정할 필요가 없습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
@@ -107,7 +97,7 @@ C++에서는 템플릿 오버로드로 인해 이 함수를 사용하는 것이 
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_gcvt_s**|\<stdlib.h>|\<error.h>|
 

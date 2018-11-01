@@ -1,18 +1,13 @@
 ---
 layout: LandingPage
-ms.topic: conceptual
 title: C++ 설명서로 Linux 개발
 description: Linux에서 실행되는 응용 프로그램을 만들고 디버그합니다.
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c17106038bc79742351efef07a5900a4709c9569
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 78615df211381ec419b4fb46cac7a0ce8057c78e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213915"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50461488"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ 설명서로 Linux 개발
 

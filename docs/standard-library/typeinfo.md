@@ -1,31 +1,21 @@
 ---
-title: '&lt;typeinfo&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;typeinfo&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - typeinfo
-dev_langs:
-- C++
 helpviewer_keywords:
 - typeinfo header
 ms.assetid: 97ebc4d0-0e0e-41c3-9787-fdef2e38e56f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb353276892dfadbdfcea1c03816d6735481aeef
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cb793bdc4bacec5ad21d1cbbed21f871370cb40e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853429"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50647033"
 ---
 # <a name="lttypeinfogt"></a>&lt;typeinfo&gt;
 
-표준 헤더를 포함 \<typeinfo > 형식 id 연산자와 관련 된 몇 가지 형식을 정의 하 [typeid 연산자](../cpp/typeid-operator.md), 정적 및 동적 형식에 대 한 정보를 생성 합니다.
+표준 헤더 포함 \<typeinfo > 형식 식별 연산자와 연결 된 여러 형식을 정의 하기 [typeid 연산자](../cpp/typeid-operator.md), 정적 및 동적 형식에 대 한 정보를 생성 합니다.
 
 ## <a name="syntax"></a>구문
 

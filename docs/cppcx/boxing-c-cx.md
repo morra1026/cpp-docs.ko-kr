@@ -1,24 +1,17 @@
 ---
-title: Boxing (C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: Boxing(C++/CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7e9ab84bf840f01fbb22ef3b2510056338d10c74
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: dd950e2463da7541ebad731e74275ce360a1c8a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108386"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50491041"
 ---
 # <a name="boxing-ccx"></a>Boxing(C++/CX)
 
-*Boxing* 와 같은 값 형식 변수 래핑하 [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)-또는와 같은 기본 스칼라 형식이 `int`-ref 클래스 변수를 사용 하는 메서드에 전달 되 면에서 [ Platform:: object ^](../cppcx/platform-object-class.md) 입력된 형식으로 합니다.
+*boxing* 은 [Windows::Foundation::DateTime](https://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx)과 같은 값 형식 변수 또는 `int`와 같은 기본 스칼라 형식이 [Platform::Object^](../cppcx/platform-object-class.md) 을 해당 입력 형식으로 사용하는 메서드에 전달될 때 해당 변수를 ref 클래스에 래핑합니다.
 
 ## <a name="passing-a-value-type-to-an-object-parameter"></a>Object^ 매개 변수에 값 형식 전달
 

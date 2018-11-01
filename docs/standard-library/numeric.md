@@ -1,27 +1,17 @@
 ---
-title: '&lt;numeric&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;numeric&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <numeric>
-dev_langs:
-- C++
 helpviewer_keywords:
 - <numeric> header
 ms.assetid: 6d6ccb94-48cc-479b-b4a9-bd9c78d4896a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5705414bdc6915e758d66576855a45db5fcad23
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ee93d254dcf49b38cb817ba460060fa72b81e01f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853117"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50456175"
 ---
 # <a name="ltnumericgt"></a>&lt;numeric&gt;
 
@@ -41,7 +31,7 @@ numeric 알고리즘은 [\<algorithm>](algorithm.md)의 C++ 표준 라이브러�
 
 ### <a name="functions"></a>함수
 
-|함수|설명|
+|기능|설명|
 |-|-|
 |[accumulate](../standard-library/numeric-functions.md#accumulate)|몇 개의 초기 값을 포함하고 연속적 부분 합계를 계산하여 지정된 범위의 모든 요소의 합계를 계산하거나 합계 연산 대신 지정된 이진 연산을 사용하여 얻은 연속적 부분 결과를 계산합니다.|
 |[adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference)|각 요소와 입력 범위의 해당 선행 작업간 연속 차이를 계산하고 결과를 대상 범위로 출력하거나 차이 연산을 지정된 다른 이진 연산으로 대체한 일반화된 절차 결과를 계산합니다.|

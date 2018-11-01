@@ -1,10 +1,6 @@
 ---
-title: sin, sinf, sinl | Microsoft Docs
-ms.custom: ''
+title: sin, sinf, sinl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - sinl
 - sinf
@@ -27,8 +23,6 @@ f1_keywords:
 - sinf
 - sinl
 - sin
-dev_langs:
-- C++
 helpviewer_keywords:
 - _sinl function
 - sinl function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - trigonometric functions
 - sinf function
 ms.assetid: 737de73e-3590-45f9-8257-dc1c0c489dfc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f99e7792e177c6203d38a368f3dd4125fe848a76
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7006d7246837e5dc69733a007b3f7dab1c55280e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430364"
 ---
 # <a name="sin-sinf-sinl"></a>sin, sinf, sinl
 
@@ -72,24 +62,24 @@ long double sin(long double x);  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**sin** 의 사인을 반환 하는 함수 *x*합니다. 경우 *x* 보다 큰 또는 263 같거나 작은 보다 크거나-263, 결과에 중요 한 손실이 발생 합니다.
+합니다 **sin** 의 사인을 반환 하는 함수 *x*합니다. 하는 경우 *x* 가 보다 큰 263 같거나 작거나 같거나-263, 결과에 중요 한 손실이 발생 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|없음|_DOMAIN|
-|± ∞ (sin, sinf, sinl)|INVALID|_DOMAIN|
+|∞ (sin, sinf, sinl)|INVALID|_DOMAIN|
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **sin** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **sin** 항상 사용 하 고 반환 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **sin** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **sin** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더(C)|필수 헤더(C++)|
+|루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-|-|-|
-|**sin**, **sinf**, **sinl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**sin**하십시오 **sinf**, **sinl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

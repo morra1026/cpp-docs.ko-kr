@@ -1,29 +1,19 @@
 ---
-title: push_macro | Microsoft Docs
-ms.custom: ''
+title: push_macro
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - vc-pragma.push_macro
 - push_macro_CPP
-dev_langs:
-- C++
 helpviewer_keywords:
 - pragmas, push_macro
 - push_macro pragma
 ms.assetid: ac89efc9-afd1-4dfe-bfd1-497229b3e81d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a6a389289f8849ac6155543299392586dcd389d2
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 9b866fd5907faf46872665bbcaef97f2352efea9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50078949"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535683"
 ---
 # <a name="pushmacro"></a>push_macro
 값을 저장 합니다 *macro_name* 이 매크로 대 한 스택의 맨 위에 매크로입니다.

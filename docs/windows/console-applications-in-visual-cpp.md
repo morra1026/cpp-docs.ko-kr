@@ -1,24 +1,13 @@
 ---
-title: Visual c + +에서 응용 프로그램 콘솔 | Microsoft Docs
-ms.custom: ''
+title: Visual C++의 콘솔 응용 프로그램
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 3071307f-af0d-489a-8e20-02acded7fc66
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: f769f782c96f6a0143d98b2e2039ce915b2640f8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 20b203ffabd1403160141b27dab43b41a6c55db0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060366"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459139"
 ---
 # <a name="console-applications-in-visual-c"></a>Visual C++의 콘솔 응용 프로그램
 콘솔 응용 프로그램은 입력을 받아서 출력을 콘솔(즉, 명령 프롬프트)로 보냅니다. 콘솔 응용 프로그램을 만들어서 기본적인 작업을 수행하거나 복잡한 작업을 수행할 수 있습니다. 또한 콘솔 응용 프로그램을 나중에 Windows 데스크톱 응용 프로그램이나 유니버설 Windows 플랫폼 앱과 통합하려는 기능에 대한 개념 증명 데모로도 사용할 수 있습니다. 콘솔 응용 프로그램은 파이프나 다른 RPC 메커니즘을 사용하여 다른 데스크톱 응용 프로그램과 통신할 수 있습니다.

@@ -1,27 +1,17 @@
 ---
-title: 프레임 창 클래스 (Windows) | Microsoft Docs
-ms.custom: ''
+title: 프레임 창 클래스(Windows)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
 f1_keywords:
 - vc.classes.frame
-dev_langs:
-- C++
 helpviewer_keywords:
 - frame window classes [MFC], reference
 ms.assetid: 6342ec5f-f922-4da8-a78e-2f5f994c7142
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be63dd57900bbbe1691e132cd880d3da60caf4e5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 93df9ce745fc907425f1a840ffb7d16a696831fc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46431946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50514338"
 ---
 # <a name="frame-window-classes-windows"></a>프레임 창 클래스(Windows)
 
@@ -39,7 +29,7 @@ MDI 응용 프로그램의 문서 프레임 창에 대 한 기본 클래스입�
 [CMiniFrameWnd](../mfc/reference/cminiframewnd-class.md)<br/>
 일반적으로 부동 도구 모음을 표시 하는 절반 높이 프레임 창입니다.
 
-[COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md)<br/>
+[클래스에서 파생하는 대신](../mfc/reference/coleipframewnd-class.md)<br/>
 준비에서 서버 문서를 편집 하는 경우 프레임 창 보기를 제공 합니다.
 
 ## <a name="related-class"></a>관련된 클래스

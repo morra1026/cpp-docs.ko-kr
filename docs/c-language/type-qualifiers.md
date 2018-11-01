@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ecac60a1b9cbd2758090e52d917c7a65259d62d
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 4dc0fd45887975c9b50cee141b0c6e8faca33513
+ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46094392"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50083245"
 ---
 # <a name="type-qualifiers"></a>형식 한정자
 
@@ -69,7 +69,7 @@ int volatile vint;     /* Volatile integer        */
 
 - 컴파일러는 프로그램의 어떠한 지점에서도 `volatile` 변수의 값을 사용하거나 수정하는 알 수 없는 프로세스에 의해 해당 변수가 액세스될 수 있다고 가정합니다. 따라서 명령줄에 지정된 최적화와 관계없이 각각의 `volatile` 변수 할당 또는 참조에 대한 코드가 아무런 영향을 주지 않는 것처럼 보이는 경우에도 생성되어야 합니다.
 
-     `volatile`만 사용되는 경우에는 `int`가 가정됩니다. `volatile` 형식 지정자를 사용하여 특별한 메모리 위치에 대한 안정적인 액세스를 제공할 수 있습니다. 신호 처리기, 동시에 실행되는 프로그램 또는 메모리 매핑된 I/O 제어 레지스터와 같은 특수 하드웨어가 액세스하거나 변경할 수 있는 데이터 개체와 함께 `volatile`을 사용하십시오. 변수의 수명 동안 변수를 `volatile`로 선언하거나 단일 참조를 `volatile`로 캐스팅할 수 있습니다.
+   `volatile`만 사용되는 경우에는 `int`가 가정됩니다. `volatile` 형식 지정자를 사용하여 특별한 메모리 위치에 대한 안정적인 액세스를 제공할 수 있습니다. 신호 처리기, 동시에 실행되는 프로그램 또는 메모리 매핑된 I/O 제어 레지스터와 같은 특수 하드웨어가 액세스하거나 변경할 수 있는 데이터 개체와 함께 `volatile`을 사용하십시오. 변수의 수명 동안 변수를 `volatile`로 선언하거나 단일 참조를 `volatile`로 캐스팅할 수 있습니다.
 
 - 항목이 **const**이면서 `volatile`일 수도 있습니다. 이 경우 항목은 자체 프로그램에서 올바르게 수정될 수 없지만 비동기 프로세스에서 수정될 수 있습니다.
 

@@ -1,27 +1,17 @@
 ---
-title: 컴파일러 오류 C2872 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 오류 C2872
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C2872
-dev_langs:
-- C++
 helpviewer_keywords:
 - C2872
 ms.assetid: c619ef97-6e0e-41d7-867c-f8d28a07d553
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e4bdc67e13db11949371e2f9e3d8a205b146d701
-ms.sourcegitcommit: d3c41b16bf05af2149090e996d8e71cd6cd55c7a
+ms.openlocfilehash: 103998c7872b683c7405796ee28bd550246ae9bf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48890118"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566220"
 ---
 # <a name="compiler-error-c2872"></a>컴파일러 오류 C2872
 
@@ -31,7 +21,7 @@ ms.locfileid: "48890118"
 
 C2872 헤더 파일을 포함 하는 경우 발생할 수 있습니다는 [지시문을 사용 하 여](../../cpp/namespaces-cpp.md#using_directives), 및 후속 헤더 파일이 포함 되어에 지정 된 네임 스페이스에 있는 형식을 포함 하는 `using` 지시문입니다. 지정 된 `using` 헤더 파일 사용 하 여 지정 된 모든 해야만 지시문 `#include`합니다.
 
-C2872 Visual Studio 2013 간의 충돌로 인해 발생할 수 있습니다 합니다는 `Windows::Foundation::Metadata::Platform` 열거형 형식 및 C + + CX 정의한 `Platform` 네임 스페이스입니다. 이 문제를 해결 하려면 다음이 단계를 수행 합니다.
+C2872 Visual Studio 2013 간의 충돌로 인해 발생할 수 있습니다는 `Windows::Foundation::Metadata::Platform` 열거형 형식 및 C + + /cli CX 정의 `Platform` 네임 스페이스입니다. 이 문제를 해결 하려면 다음이 단계를 수행 합니다.
 
 - 프로젝트 파일에서 "네임 스페이스 Windows::Foundation::Metadata using" 절을 제거 합니다.
 
