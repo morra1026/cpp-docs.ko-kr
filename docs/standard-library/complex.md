@@ -1,28 +1,18 @@
 ---
-title: '&lt;complex&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;complex&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <complex>
 - std::<complex>
-dev_langs:
-- C++
 helpviewer_keywords:
 - complex header
 ms.assetid: 5e728995-3059-496a-9ce9-61d1bfbe4f2b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 84f94e4e7a3486f036af47f0444d85d0f2fe4446
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: afcdb1246d9c02f83dbc8708326d10e802ad2779
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45726702"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50525868"
 ---
 # <a name="ltcomplexgt"></a>&lt;complex&gt;
 
@@ -111,7 +101,7 @@ ms.locfileid: "45726702"
 |[operator-](../standard-library/complex-operators.md#operator-)|하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 뺍니다.|
 |[operator/](../standard-library/complex-operators.md#op_div)|하나 또는 둘 다 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 나눕니다.|
 |[operator<\<](../standard-library/complex-operators.md#op_lt_lt)|출력 스트림에 복소수를 삽입하는 템플릿 함수입니다.|
-|[operator==](../standard-library/complex-operators.md#op_eq_eq)|하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같은지 테스트합니다.|
+|[연산자==](../standard-library/complex-operators.md#op_eq_eq)|하나 또는 둘 모두 실수 및 허수 부분에서 형식의 일부에 속할 수 있는 두 복소수를 같은지 테스트합니다.|
 |[operator>>](../standard-library/complex-operators.md#op_gt_gt)|입력 스트림에서 복소수를 추출하는 템플릿 함수입니다.|
 
 ### <a name="classes"></a>클래스
