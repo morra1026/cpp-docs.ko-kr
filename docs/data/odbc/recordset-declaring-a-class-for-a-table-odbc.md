@@ -1,27 +1,16 @@
 ---
-title: '레코드 집합: 테이블 (ODBC)에 대 한 클래스 선언 | Microsoft Docs'
-ms.custom: ''
+title: '레코드 집합: 테이블에 대한 클래스 선언(ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC recordsets, declaring class for tables
 - recordsets, declaring classes for tables
 ms.assetid: 3fe286c2-3f3d-493d-9d8c-762310939d08
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 423ed9b97900777160818b7699f8dac7b81e38a8
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 28de6ed8dcbf34e2ab2c140fdc17a8cd803501de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50057533"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476689"
 ---
 # <a name="recordset-declaring-a-class-for-a-table-odbc"></a>레코드 집합: 테이블에 대한 클래스 선언(ODBC)
 

@@ -1,28 +1,17 @@
 ---
-title: 삭제 메뉴 및 메뉴 명령 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 메뉴 및 메뉴 명령 (c + +)를 삭제합니다.
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - menu items, deleting
 - commands [C++], deleting from menus
 - menus [C++], deleting
 ms.assetid: bdfd5b6e-3275-4597-a8bb-cd19bea9f9ad
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: a70c7f477e20aed50e20670b975174ac4a700c4f
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 4cc014494dc0ea3cddcc0bef84cb728be3b04207
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315758"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476338"
 ---
 # <a name="deleting-menus-and-menu-commands-c"></a>메뉴 및 메뉴 명령 (c + +)를 삭제합니다.
 ### <a name="to-delete-a-menu-or-menu-command"></a>메뉴 또는 메뉴 명령을 삭제하려면
