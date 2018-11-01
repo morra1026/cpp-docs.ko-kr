@@ -1,10 +1,6 @@
 ---
-title: wctrans | Microsoft Docs
-ms.custom: ''
+title: wctrans
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wctrans
 apilocation:
@@ -22,24 +18,18 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wctrans
-dev_langs:
-- C++
 helpviewer_keywords:
 - character codes, wctrans
 - characters, codes
 - characters, converting
 - wctrans function
 ms.assetid: 215404bf-6d60-489c-9ae9-880e6b586162
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 613c3c64885f10029a8b013504d84ffa8f35d664
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3c7aace7a93160d2e9a4c1523d49bcaf6ae4dc20
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50656692"
 ---
 # <a name="wctrans"></a>wctrans
 
@@ -60,7 +50,7 @@ wctrans_t wctrans(
 
 ## <a name="return-value"></a>반환 값
 
-경우는 **LC_CTYPE** 현재 로캘의 범주가 이름이 속성 문자열을 일치 매핑 정의 하지 않습니다 *속성*, 함수가 0을 반환 합니다. 그렇지 않으면 이 함수는 [towctrans](towctrans.md)에 대한 후속 호출에 두 번째 인수로 사용할 수 있는 0이 아닌 값을 반환합니다.
+경우는 **LC_CTYPE** 현재 로캘의 범주 이름이 속성 문자열을 일치 하는 매핑을 정의 하지 않습니다 *속성*, 함수가 0을 반환 합니다. 그렇지 않으면 이 함수는 [towctrans](towctrans.md)에 대한 후속 호출에 두 번째 인수로 사용할 수 있는 0이 아닌 값을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -68,7 +58,7 @@ wctrans_t wctrans(
 
 다음 호출 쌍은 모든 로캘에서 동일하게 동작하지만 "C" 로캘에서도 추가 매핑을 정의할 수 있습니다.
 
-|함수|동일한 항목|
+|기능|동일한 항목|
 |--------------|-------------|
 |tolower(c)|towctrans (c, wctrans("towlower"))|
 |towupper(c)|towctrans (c, wctrans("toupper"))|

@@ -1,23 +1,13 @@
 ---
-title: C.2 규칙 | Microsoft Docs
-ms.custom: ''
+title: C.2 규칙
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 4d52fef7-3eb7-4480-a335-8ed48681092b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c5845a9125bb32254fc0c03b03e9b6076a086d1
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7c0de4c14e229716bcf764d9859be439090368b1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404776"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50642808"
 ---
 # <a name="c2-rules"></a>C.2 규칙
 
@@ -199,18 +189,18 @@ ms.locfileid: "46404776"
 &nbsp;&nbsp;&nbsp;&nbsp;*threadprivate 지시문*
 
 *threadprivate 지시문*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**# pragma omp threadprivate (** *변수 목록***)** *줄 바꿈* 
+&nbsp;&nbsp;&nbsp;&nbsp;**# pragma omp threadprivate (** *변수 목록***)** *줄 바꿈*
 
 *데이터 절*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**개인 (** *변수 목록* **)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**copyprivate (***변수 목록***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**firstprivate (***변수 목록***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**lastprivate (** *변수 목록***)** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**copyprivate (***변수 목록***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**firstprivate (***변수 목록***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**lastprivate (** *변수 목록***)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**공유 (** *변수 목록* **)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**기본 (공유)**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**기본값 (없음)**<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**감소 (***reduction 연산자***:***변수 목록***)** <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**copyin (***변수 목록***)** 
+&nbsp;&nbsp;&nbsp;&nbsp;**감소 (***reduction 연산자***:***변수 목록***)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**copyin (***변수 목록***)**
 
 *reduction 연산자*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;중 하나:  **+  \* -& ^ &#124; & &&#124;&#124;**

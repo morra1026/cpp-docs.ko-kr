@@ -1,28 +1,18 @@
 ---
-title: output_iterator_tag 구조체 | Microsoft Docs
-ms.custom: ''
+title: output_iterator_tag 구조체
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xutility/std::output_iterator_tag
-dev_langs:
-- C++
 helpviewer_keywords:
 - output_iterator_tag class
 - output_iterator_tag struct
 ms.assetid: c23a4331-b069-4fa0-9c3a-1c9be7095553
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6130a6de2504f2a625677ceaac00d23bdbcd9372
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: cb2a59d2c81e6d7cc80de2714ba86476c5fa837f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961086"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659310"
 ---
 # <a name="outputiteratortag-struct"></a>output_iterator_tag 구조체
 
@@ -40,7 +30,7 @@ output_iterator_tag 구조체 {};
 
 이 태그는 다른 반복기 태그처럼 반복기에 대해 `value_type` 또는 `difference_type`에서 매개 변수화되지 않습니다. 출력 반복기에는 `value_type` 또는 `difference_type`이 없기 때문입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 [iterator_traits](../standard-library/iterator-traits-struct.md) 하거나 [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) 사용 하는 방법의 예 `iterator_tag`s입니다.
 

@@ -1,32 +1,22 @@
 ---
-title: '&lt;system_error&gt; | Microsoft Docs'
-ms.custom: ''
+title: '&lt;system_error&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <system_error>
 - system_error
-dev_langs:
-- C++
 helpviewer_keywords:
 - system_error header
 ms.assetid: 5e046c6e-48d9-4740-8c8a-05f3727c1215
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f182df5bda73f9b31c86407cc1475ee6c5ec9b9
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cb4870a22fd06039751f87f26dfa40e8ddcf2500
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856946"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662763"
 ---
 # <a name="ltsystemerrorgt"></a>&lt;system_error&gt;
 
-헤더를 포함 \<system_error > 예외 클래스를 정의 하려면 `system_error` 및 관련 처리 하위 수준 시스템 오류에 대 한 템플릿.
+헤더를 포함 \<system_error > 예외 클래스를 정의 하려면 `system_error` 및 관련 템플릿을 하위 수준 시스템 오류를 처리 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,18 +39,16 @@ ms.locfileid: "33856946"
 
 ### <a name="functions"></a>함수
 
-|함수|설명|
+|기능|설명|
 |-|-|
-|[make_error_code](../standard-library/system-error-functions.md#make_error_code)|
-          `error_code` 개체를 만듭니다.|
-|[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|
-          `error_condition` 개체를 만듭니다.|
+|[make_error_code](../standard-library/system-error-functions.md#make_error_code)|`error_code` 개체를 만듭니다.|
+|[make_error_condition](../standard-library/system-error-functions.md#make_error_condition)|`error_condition` 개체를 만듭니다.|
 
 ### <a name="operators"></a>연산자
 
 |연산자|설명|
 |-|-|
-|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|연산자의 좌변에 있는 개체가 우변에 있는 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/system-error-operators.md#op_eq_eq)|연산자의 좌변에 있는 개체가 우변에 있는 개체와 같은지 테스트합니다.|
 |[operator!=](../standard-library/system-error-operators.md#op_neq)|연산자의 좌변에 있는 개체가 우변에 있는 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/system-error-operators.md#op_lt)|개체가 비교를 위해 전달된 개체보다 작은지 여부를 테스트합니다.|
 
