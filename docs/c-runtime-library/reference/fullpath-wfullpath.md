@@ -1,10 +1,6 @@
 ---
-title: _fullpath, _wfullpath | Microsoft 문서
-ms.custom: ''
+title: _fullpath, _wfullpath
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fullpath
 - _wfullpath
@@ -26,8 +22,6 @@ f1_keywords:
 - fullpath
 - _wfullpath
 - _fullpath
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wfullpath function
 - relative file paths
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _fullpath function
 - fullpath function
 ms.assetid: 4161ec17-0d22-45dd-b07d-0222553afae9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b472987b0cac41c57e5fd22b2eedecef522613b4
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: aeacaf581b7f33ee893754c192ae547376ce73ea
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451682"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50550399"
 ---
 # <a name="fullpath-wfullpath"></a>_fullpath, _wfullpath
 
@@ -75,15 +65,15 @@ wchar_t *_wfullpath(
 상대 경로 이름입니다.
 
 *MaxLength*<br/>
-절대 경로 이름 버퍼의 최대 길이 (*absPath*). 이 길이 바이트 단위에 대 한 **_fullpath** 는 와이드 문자 (**wchar_t**)에 대 한 **_wfullpath**합니다.
+절대 경로 이름 버퍼의 최대 길이 (*absPath*). 이 길이 바이트 단위로 **_fullpath** 있지만 와이드 문자에서 (**wchar_t**)에 대 한 **_wfullpath**합니다.
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수를 절대 경로 이름을 포함 하는 버퍼에 대 한 포인터를 반환 (*absPath*). 오류가 발생 하는 경우 (값에 전달 하는 경우에 예를 들어 *relPath* 유효 하지 않거나 찾을 수 없는 드라이브 문자가 포함 된 경우 또는 작성된 된 절대 경로 이름 길이 (*absPath*) 보다 크면 *maxLength*)를 반환 하 고 **NULL**합니다.
+이러한 각 함수는 포인터 절대 경로 이름을 포함 하는 버퍼를 반환 합니다 (*absPath*). 오류가 발생 하는 경우 (값을 전달 하는 경우에 예를 들어 *relPath* 유효 하지 않거나 찾을 수 없는 드라이브 문자가 포함 경우 또는 작성된 된 절대 경로 이름의 길이 (*absPath*) 보다 *maxLength*)를 반환 **NULL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_fullpath** 함수 확장에서 상대 경로 이름을 *relPath* 완전히 정규화 된 또는 절대 경로와 저장소의 이름을이 *absPath*합니다. 경우 *absPath* 은 **NULL**, **malloc** 경로 이름을 저장할 충분 한 길이의 버퍼를 할당 하는 데 사용 됩니다. 호출자가 이 버퍼를 해제해야 합니다. 상대 경로 이름은 현재 위치에서 시작되는 또 다른 위치에 대한 경로를 지정합니다(예: 현재 작업 디렉터리: "."). 절대 경로 이름은 파일 시스템의 루트에서 원하는 위치에 도달하는 데 필요한 전체 경로를 설명하는 상태 경로 이름의 확장입니다. 와 달리 **_makepath**, **_fullpath** 상대 경로 대 한 절대 경로 이름을 가져오는 데 사용할 수 있습니다 (*relPath*)를 포함 하는 ". /"또는"... / "이름에 있습니다.
+합니다 **_fullpath** 함수 확장에서 상대 경로 이름을 *relPath* 완벽 하 게 정규화 된 또는 절대 경로 및 저장소에이 이름을 *absPath*합니다. 하는 경우 *absPath* 됩니다 **NULL**를 **malloc** 경로 이름을 포함 하도록 충분 한 길이의 버퍼를 할당 하는 데 사용 됩니다. 호출자가 이 버퍼를 해제해야 합니다. 상대 경로 이름은 현재 위치에서 시작되는 또 다른 위치에 대한 경로를 지정합니다(예: 현재 작업 디렉터리: "."). 절대 경로 이름은 파일 시스템의 루트에서 원하는 위치에 도달하는 데 필요한 전체 경로를 설명하는 상태 경로 이름의 확장입니다. 와 달리 **_makepath**를 **_fullpath** 상대 경로 대 한 절대 경로 이름을 가져오는 데 사용할 수 있습니다 (*relPath*)를 포함 하는 ". /"또는"... / "이름에 있습니다.
 
 예를 들어 C 런타임 루틴을 사용하려면 루틴 선언이 들어 있는 헤더 파일을 응용 프로그램에 포함해야 합니다. 각 헤더 파일의 include 문은 응용 프로그램 작업 디렉터리를 기준으로 한 상대적 방식으로 파일 위치를 참조합니다.
 
@@ -95,23 +85,23 @@ wchar_t *_wfullpath(
 
 `\\machine\shareName\msvcSrc\crt\headerFiles\stdlib.h`
 
-**_fullpath** 자동으로에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하며 멀티 바이트 문자열 인수를 적절 하 게 처리 합니다. **_wfullpath** 의 와이드 문자 버전이 **_fullpath**;에 대 한 문자열 인수 **_wfullpath** 는 와이드 문자 문자열입니다. **_wfullpath** 및 **_fullpath** 점을 제외 하 고 동일 하 게 작동 **_wfullpath** 멀티 바이트 문자열을 처리 하지 않습니다.
+**_fullpath** 에서 현재 사용 중인 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 합니다. 필요에 따라 멀티 바이트 문자열 인수를 자동으로 처리 합니다. **_wfullpath** 의 와이드 문자 버전이 **_fullpath**; 문자열 인수는 **_wfullpath** 는 와이드 문자 문자열입니다. **_wfullpath** 하 고 **_fullpath** 점을 제외 하면 동일 하 게 작동 **_wfullpath** 멀티 바이트 문자열을 처리 하지 않습니다.
 
-경우 **_DEBUG** 및 **_CRTDBG_MAP_ALLOC** 는 둘 다 정의에 대 한 호출 **_fullpath** 및 **_wfullpath** 를호출하여대체 **_fullpath_dbg** 및 **_wfullpath_dbg** 메모리 할당 디버깅을 위해 합니다. 자세한 내용은 [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md)를 참조하세요.
+경우 **_DEBUG** 하 고 **_CRTDBG_MAP_ALLOC** 가 둘 다 정의에 대 한 호출 **_fullpath** 하 고 **_wfullpath** 를호출하여바뀝니다 **_fullpath_dbg** 하 고 **_wfullpath_dbg** 메모리 할당 디버깅을 허용 합니다. 자세한 내용은 [_fullpath_dbg, _wfullpath_dbg](fullpath-dbg-wfullpath-dbg.md)를 참조하세요.
 
-이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)경우 *maxlen* 가 0 보다 작거나 같음. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **NULL**합니다.
+이 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)이면 *maxlen* 0 보다 작거나 같음. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **NULL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tfullpath**|**_fullpath**|**_fullpath**|**_wfullpath**|
 
-경우는 *absPath* 버퍼가 **NULL**, **_fullpath** 호출 [malloc](malloc.md) 버퍼를 할당 하 고 무시는 *maxLength*  인수입니다. 호출자는 [free](free.md)를 사용하여 이 버퍼를 적절하게 할당 해제해야 합니다. 경우는 *relPath* 디스크 드라이브를 지정 하는 인수,이 드라이브의 현재 디렉터리의 경로와 결합 됩니다.
+경우는 *absPath* 버퍼가 **NULL**합니다 **_fullpath** 호출 [malloc](malloc.md) 버퍼를 할당할 무시를 *maxLength*  인수입니다. 호출자는 [free](free.md)를 사용하여 이 버퍼를 적절하게 할당 해제해야 합니다. 경우는 *relPath* 디스크 드라이브를 지정 하는 인수,이 드라이브의 현재 디렉터리의 경로와 결합 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fullpath**|\<stdlib.h>|
 |**_wfullpath**|\<stdlib.h> 또는 \<wchar.h>|

@@ -1,12 +1,6 @@
 ---
-title: 니모닉 (선택 키)를 정의 합니다. | Microsoft Docs
-ms.custom: ''
+title: 니모닉(선택키) 정의
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - access keys [C++], adding
 - keyboard shortcuts [C++], controls
@@ -20,17 +14,12 @@ helpviewer_keywords:
 - controls [C++], access keys
 - access keys [C++]
 ms.assetid: 60a85435-aa30-4c5c-98b6-42fb045b9eb2
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6d707b0205c3f13954681eb4f6a033496a2997ce
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 8682ab38abebe1c453ef562e8eaac0e627f5c4bb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46425797"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488922"
 ---
 # <a name="defining-mnemonics-access-keys"></a>니모닉(선택키) 정의
 

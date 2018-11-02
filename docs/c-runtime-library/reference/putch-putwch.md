@@ -1,10 +1,6 @@
 ---
-title: _putch, _putwch | Microsoft Docs
-ms.custom: ''
+title: _putch, _putwch
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putwch
 - _putch
@@ -25,8 +21,6 @@ f1_keywords:
 - _putch
 - putwch
 - _putwch
-dev_langs:
-- C++
 helpviewer_keywords:
 - _putch function
 - characters, writing
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - putch function
 - console, writing characters to
 ms.assetid: 3babc7cf-e333-405d-8449-c788d61d51aa
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a0a6e50a4cd6794e28cc59bb2b080c57c0993986
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9abd27a926e641e72595360ed3951fad9e888676
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401807"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50434764"
 ---
 # <a name="putch-putwch"></a>_putch, _putwch
 
@@ -60,7 +50,7 @@ int _putch(
 int c
 );
 wint_t _putwch(
-   wchar_t c
+   wchar_t c
 );
 ```
 
@@ -71,15 +61,15 @@ wint_t _putwch(
 
 ## <a name="return-value"></a>반환 값
 
-정상적으로 실행되면 *c*를 반환합니다. 경우 **_putch** 실패 하면 반환 **EOF**경우 **_putwch** 실패 하면 반환 **WEOF**합니다.
+정상적으로 실행되면 *c*를 반환합니다. 하는 경우 **_putch** 실패 하면 반환 **EOF**같으면 **_putwch** 실패를 반환 합니다 **WEOF**합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자를 쓸 *c* 콘솔에 버퍼링 하지 않고 직접 합니다. Windows NT에서 **_putwch**는 현재 콘솔 로캘 설정을 사용하여 유니코드 문자를 씁니다.
+이러한 함수는 문자를 씁니다 *c* 콘솔에 버퍼링 하지 않고 직접. Windows NT에서 **_putwch**는 현재 콘솔 로캘 설정을 사용하여 유니코드 문자를 씁니다.
 
-**_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 자세한 내용은 참조 **_putch_nolock**, **_putwch_nolock**합니다.
+**_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 자세한 내용은 **_putch_nolock**를 **_putwch_nolock**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -87,7 +77,7 @@ wint_t _putwch(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_putch**|\<conio.h>|
 |**_putwch**|\<conio.h>|

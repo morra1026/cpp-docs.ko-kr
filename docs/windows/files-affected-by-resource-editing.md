@@ -1,27 +1,16 @@
 ---
-title: (C + +)를 편집 하는 리소스에 영향을 받는 파일 | Microsoft Docs
-ms.custom: ''
+title: (C + +)를 편집 하는 리소스에 영향을 받는 파일
 ms.date: 06/18/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource editing
 - resources [C++], editing
 ms.assetid: d0820df1-ba84-40ac-bce9-29ea5ee7e3f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 7b70a24e77e581ebab792d9fca4d7d1a3bd8db12
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 891794f42f3df1ab23d64c253ab4df8291e3ddcf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316278"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663306"
 ---
 # <a name="files-affected-by-resource-editing-c"></a>(C + +)를 편집 하는 리소스에 영향을 받는 파일
 

@@ -1,28 +1,18 @@
 ---
-title: '&lt;list&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;list&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <list>
 - std::<list>
-dev_langs:
-- C++
 helpviewer_keywords:
 - list header
 ms.assetid: 2345823b-5612-44d8-95d3-aa96ed076d17
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bfb3ca14ddd52b81aa597ff83452ba3ed01541a3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: cfe6e8b4f75a3dbf824574654bfba83dcbbd8ba6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857742"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50558013"
 ---
 # <a name="ltlistgt"></a>&lt;list&gt;
 
@@ -41,7 +31,7 @@ ms.locfileid: "33857742"
 |[operator!=](../standard-library/list-operators.md#op_neq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/list-operators.md#op_lt)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 작은지 테스트합니다.|
 |[operator\<=](../standard-library/list-operators.md#op_gt_eq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 작거나 같은지 테스트합니다.|
-|[operator==](../standard-library/list-operators.md#op_eq_eq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/list-operators.md#op_eq_eq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체와 같은지 테스트합니다.|
 |[operator>](../standard-library/list-operators.md#op_gt)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/list-operators.md#op_gt_eq)|연산자의 좌변에 있는 목록 개체가 우변에 있는 목록 개체보다 크거나 같은지 테스트합니다.|
 

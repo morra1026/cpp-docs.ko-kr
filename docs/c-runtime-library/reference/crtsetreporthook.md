@@ -1,10 +1,6 @@
 ---
-title: _CrtSetReportHook | Microsoft 문서
-ms.custom: ''
+title: _CrtSetReportHook
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtSetReportHook
 apilocation:
@@ -22,22 +18,16 @@ apitype: DLLExport
 f1_keywords:
 - _CrtSetReportHook
 - CrtSetReportHook
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtSetReportHook function
 - _CrtSetReportHook function
 ms.assetid: 1ae7c64f-8c84-4797-9574-b59f00f7a509
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1ef76fe0b7befb99b5bf0e8bb69fa1a1229782de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7dcb916ea920751618ffa6a4afbcde8df5e35cba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50478340"
 ---
 # <a name="crtsetreporthook"></a>_CrtSetReportHook
 
@@ -62,28 +52,28 @@ C 런타임 디버그 보고 프로세스에 연결할 새로운 클라이언트
 
 ## <a name="remarks"></a>설명
 
-**_CrtSetReportHook** 보고 프로세스는 C 런타임 디버그 라이브러리에 자체 보고 함수를 사용 하도록 응용 프로그램을 허용 합니다. 결과적으로 [_CrtDbgReport](crtdbgreport-crtdbgreportw.md)가 호출되어 디버그 보고서를 생성할 때마다 응용 프로그램의 보고 함수가 먼저 호출됩니다. 이 기능을 사용 하면 특정 할당 형식에 맞게 또는 보고서를 사용 하 여 사용할 수 없는 대상으로 보낼 수 있도록 디버그 보고서를 필터링 같은 작업을 수행 하는 응용 프로그램 **_CrtDbgReport**합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 정의 되지 않은에 대 한 호출이 **_CrtSetReportHook** 전처리 중 제거 됩니다.
+**_CrtSetReportHook** 응용 프로그램이 C 런타임 디버그 라이브러리 보고 프로세스에 고유한 보고 함수를 사용할 수 있습니다. 결과적으로 [_CrtDbgReport](crtdbgreport-crtdbgreportw.md)가 호출되어 디버그 보고서를 생성할 때마다 응용 프로그램의 보고 함수가 먼저 호출됩니다. 이 기능을 사용 하면 해당 특정 할당 형식에 중점을 두거나 이용할 수 없는 대상에 사용 하 여 보고서를 보낼 수 있도록 디버그 보고서 필터링과 같은 작업을 수행 하는 응용 프로그램 **_CrtDbgReport**합니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtSetReportHook** 전처리 중 제거 됩니다.
 
-보다 강력한 버전에 대 한 **_CrtSetReportHook**, 참조 [_CrtSetReportHook2](crtsetreporthook2-crtsetreporthookw2.md)합니다.
+보다 강력한 버전 **_CrtSetReportHook**를 참조 하십시오 [_CrtSetReportHook2](crtsetreporthook2-crtsetreporthookw2.md)합니다.
 
-**_CrtSetReportHook** 함수 설치 클라이언트 정의 보고 함수에 지정 된 새 *reportHook* 이전 클라이언트 정의 후크를 반환 합니다. 다음 예제에서는 클라이언트 정의 보고서 후크가 어떻게 프로토타입화되어야 하는지를 보여 줍니다.
+합니다 **_CrtSetReportHook** 함수를 설치 새로운 클라이언트 정의 보고 함수에 지정 된 *reportHook* 이전 클라이언트 정의 후크를 반환 합니다. 다음 예제에서는 클라이언트 정의 보고서 후크가 어떻게 프로토타입화되어야 하는지를 보여 줍니다.
 
 ```C
 int YourReportHook( int reportType, char *message, int *returnValue );
 ```
 
-여기서 *reportType* 디버그 보고서 유형 (**_CRT_WARN**, **_CRT_ERROR**, 또는 **_CRT_ASSERT**), *메시지* , 보고서에 포함 된 완벽 하 게 어셈블된 디버그 사용자 메시지 및 **returnValue** 클라이언트에서 정의 된 지정 된 값으로 반환 되어야 하는 함수를 보고 **_ CrtDbgReport**합니다. 사용 가능한 보고서 형식에 대한 자세한 설명은 [_CrtSetReportMode](crtsetreportmode.md) 함수를 참조하세요.
+여기서 *reportType* 는 디버그 보고서 형식 (**_CRT_WARN**에 **_CRT_ERROR**, 또는 **_CRT_ASSERT**), *메시지* 보고서에 포함할 완전히 어셈블된 디버그 사용자 메시지와 **returnValue** 클라이언트 정의 지정 된 값으로 반환 되어야 하는 함수를 보고 **_ CrtDbgReport**합니다. 사용 가능한 보고서 형식에 대한 자세한 설명은 [_CrtSetReportMode](crtsetreportmode.md) 함수를 참조하세요.
 
-클라이언트 정의 보고 함수는 완전히 필요한가 더 이상 보고 하지 않으려면 디버그 메시지를 처리, 함수 반환 해야 **TRUE**합니다. 함수가 반환 하는 경우 **FALSE**, **_CrtDbgReport** 보고서 유형, 모드 및 파일에 대 한 현재 설정을 사용 하 여 디버그 보고서를 생성 하기 위해 호출 됩니다. 또한를 지정 하 여는 **_CrtDbgReport** 반환 값에 **returnValue**, 응용 프로그램 디버그 중단 발생 하는지 여부를 제어할 수 있습니다. 디버그 보고서 구성 되 고 생성 되는 방법에 대 한 전체 설명은 참조 하세요. **_CrtSetReportMode**, [_CrtSetReportFile](crtsetreportfile.md), 및 **_CrtDbgReport**합니다.
+클라이언트 정의 보고 함수는 더 이상 보고 하지 않으려면 필요한 완전히 디버그 메시지를 처리를 하는 경우 함수 반환 해야 **TRUE**합니다. 함수가 반환 하는 경우 **FALSE**하십시오 **_CrtDbgReport** 보고서 형식, 모드 및 파일에 대 한 현재 설정을 사용 하 여 디버그 보고서를 생성 하기 위해 호출 됩니다. 또한 지정 하 여 합니다 **_CrtDbgReport** 에서 값 반환 **returnValue**, 응용 프로그램에서 디버그 중단 발생 하는지 여부를 제어할 수도 있습니다. 디버그 보고서를을 구성 하 고 생성 하는 방법의 설명은 참조 하세요. **_CrtSetReportMode**하십시오 [_CrtSetReportFile](crtsetreportfile.md), 및 **_CrtDbgReport**합니다.
 
 다른 후크 가능 런타임 함수를 사용하고 고유한 클라이언트 정의 후크 함수를 작성하는 방법에 대한 자세한 내용은 [디버그 후크 함수 작성](/visualstudio/debugger/debug-hook-function-writing)을 참조하세요.
 
 > [!NOTE]
-> 응용 프로그램은 컴파일된 경우 **/clr** 및 보고 함수를 호출 응용 프로그램이 종료 될 때 주, 보고 함수 모든 CRT 함수를 호출 하는 경우 CLR에서 예외가 throw 됩니다.
+> 응용 프로그램을 사용 하 여 컴파일된 경우 **/clr** 보고 함수를 호출 응용 프로그램이 종료 될 때 주, CLR 보고 함수가 CRT 함수를 호출 하는 경우 예외가 throw 됩니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_CrtSetReportHook**|\<crtdbg.h>|
 

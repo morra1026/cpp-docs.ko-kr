@@ -1,12 +1,6 @@
 ---
-title: C++ 표준 라이브러리 헤더 파일 | Microsoft 문서
-ms.custom: ''
+title: C++ 표준 라이브러리 헤더 파일
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - header files, C++ Standard Library
 - wrappers
@@ -15,22 +9,18 @@ helpviewer_keywords:
 - C++ Standard Library, header files
 - Visual C++, header files
 ms.assetid: e7bf497a-0f63-48d0-9b54-cb0eef4073c4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f177ebceff77aa9776ce2943ff5cb6176440ec3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a94e419e07194ffb8903cd474f878b0e8553356c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847002"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496358"
 ---
 # <a name="c-standard-library-header-files"></a>C++ 표준 라이브러리 헤더 파일
 
 범주별 C++ 표준 라이브러리 및 확장용 헤더 파일입니다.
 
-## <a name="headers-by-category"></a>범주별으로 헤더
+## <a name="headers-by-category"></a>범주 헤더
 
 |범주|헤더|
 |-|-|
@@ -48,7 +38,7 @@ ms.locfileid: "33847002"
 |수치 연산 및 숫자|[\<complex>](../standard-library/complex.md), [\<limits>](../standard-library/limits.md), [\<numeric>](../standard-library/numeric.md), [\<random>](../standard-library/random.md), [\<ratio>](../standard-library/ratio.md), [\<valarray>](../standard-library/valarray.md)|
 |[메모리 관리](../cpp/smart-pointers-modern-cpp.md)|[\<allocators>](../standard-library/allocators-header.md), [\<memory>](../standard-library/memory.md), [\<new>](../standard-library/new.md), [<scoped_allocator>](../standard-library/scoped-allocator.md)|
 |다중 스레딩|[\<atomic>](../standard-library/atomic.md), [<condition_variable>](../standard-library/condition-variable.md), [\<future>](../standard-library/future.md), [\<mutex>](../standard-library/mutex.md), [<shared_mutex>](../standard-library/shared-mutex.md), [\<thread>](../standard-library/thread.md)|
-|기타 유틸리티|[\<bitset>](../standard-library/bitset.md), [\<chrono>](../standard-library/chrono.md), [\<functional>](../standard-library/functional.md), [<initializer_list>](../standard-library/initializer-list.md), [\<tuple>](../standard-library/tuple.md), [<type_traits>](../standard-library/type-traits.md), [\<typeinfo>](../standard-library/typeinfo.md), [\<typeindex>](../standard-library/typeindex.md), [\<utility>](../standard-library/utility.md)|
+|다른 유틸리티|[\<bitset>](../standard-library/bitset.md), [\<chrono>](../standard-library/chrono.md), [\<functional>](../standard-library/functional.md), [<initializer_list>](../standard-library/initializer-list.md), [\<tuple>](../standard-library/tuple.md), [<type_traits>](../standard-library/type-traits.md), [\<typeinfo>](../standard-library/typeinfo.md), [\<typeindex>](../standard-library/typeindex.md), [\<utility>](../standard-library/utility.md)|
 |문자열 및 문자 데이터|[\<regex>](../standard-library/regex.md), [\<string>](../standard-library/string.md)
 
 ## <a name="see-also"></a>참고자료

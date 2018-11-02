@@ -1,26 +1,17 @@
 ---
-title: 컴파일러 경고 (수준 1) C4462 | Microsoft Docs
+title: 컴파일러 경고 (수준 1) C4462
 ms.date: 10/25/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4462
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4462
 ms.assetid: 4e20aca4-293e-4c75-a83d-961c27ab7840
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 105a78fe9f8a8d2b6442c9b403af0266de53d3b2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 801a440f131e9428c7f217346a6fd26c72cc1374
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50582327"
 ---
 # <a name="compiler-warning-level-1-c4462"></a>컴파일러 경고 (수준 1) C4462
 
@@ -28,7 +19,7 @@ ms.locfileid: "33281403"
 
 경고 C4462는 public `TypedEventHandler`의 형식 매개 변수 중 하나가 바깥쪽 클래스에 대한 참조일 때 Windows 런타임 응용 프로그램 또는 구성 요소에서 발생합니다.
 
-이 경고는 오류를 자동으로 승격 됩니다. 사용 하 여이 동작을 수정 하려는 경우 [#pragma 경고](../../preprocessor/warning.md)합니다. 예를 들어를 수준 4 경고로 C4462을 하려면이 줄을 소스 코드 파일을 추가 합니다.
+이 경고는 오류를 자동으로 승격 됩니다. 사용 하 여이 동작을 수정 하려는 경우 [#pragma 경고](../../preprocessor/warning.md)합니다. 예를 들어 C4462를 수준 4 경고로가 하도록 소스 코드 파일에이 줄을 추가:
 
 ```cpp
 #pragma warning(4:4462)
@@ -36,23 +27,23 @@ ms.locfileid: "33281403"
 
 ## <a name="example"></a>예제
 
-이 샘플에서는 C4462 경고를 생성합니다.
+이 샘플에서는 경고 C4462 오류가 생성 됩니다.
 
 ```cpp
 namespace N
 {
-       public ref struct EventArgs sealed {};
-       public ref struct R sealed
-       {
-              R() {}
-              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
-       };
+       public ref struct EventArgs sealed {};
+       public ref struct R sealed
+       {
+              R() {}
+              event Windows::Foundation::TypedEventHandler<R ^, EventArgs^>^ e;
+       };
 }
 
 [Platform::MTAThread]
 int main()
 {
-     auto x = ref new N::R();
+     auto x = ref new N::R();
 }
 ```
 

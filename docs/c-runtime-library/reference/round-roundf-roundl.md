@@ -1,10 +1,6 @@
 ---
-title: round, roundf, roundl | Microsoft Docs
-ms.custom: ''
+title: round, roundf, roundl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - round
 - roundl
@@ -26,23 +22,17 @@ f1_keywords:
 - roundf
 - roundl
 - round
-dev_langs:
-- C++
 helpviewer_keywords:
 - roundl function
 - round function
 - roundf function
 ms.assetid: 6be90877-193c-4b80-a32b-c3eca33f9c6f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83c157793b80ec851f2c6159a5454f7101d2baed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 126c6bace2b79123094a7f8bcc8f3d3378391d96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407241"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591774"
 ---
 # <a name="round-roundf-roundl"></a>round, roundf, roundl
 
@@ -75,21 +65,21 @@ long double roundl(
 
 ## <a name="return-value"></a>반환 값
 
-**반올림** 함수는 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
+합니다 **반올림** 함수에 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 중간값은 부동 소수점 반올림 모드의 설정과 관계없이 0에서 멀어지는 쪽으로 반올림됩니다. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± **QNAN**, **IND**|없음|**_DOMAIN**|
+|**QNAN**, **찾기**|없음|**(_D)**|
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **반올림** 사용 하 고 반환 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **반올림** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **반올림** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **반올림** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**반올림**, **roundf**, **roundl**|\<math.h>|
+|**반올림**하십시오 **roundf**, **roundl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

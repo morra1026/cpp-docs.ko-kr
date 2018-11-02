@@ -1,10 +1,6 @@
 ---
-title: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l | Microsoft Docs
-ms.custom: ''
+title: _strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strncoll
 - _mbsncoll_l
@@ -40,8 +36,6 @@ f1_keywords:
 - _strncoll
 - _tcsncoll
 - mbsncoll
-dev_langs:
-- C++
 helpviewer_keywords:
 - _strncoll_l function
 - code pages, using for string comparisons
@@ -66,23 +60,19 @@ helpviewer_keywords:
 - ftcsnccoll function
 - _wcsncoll_l function
 ms.assetid: e659a5a4-8afe-4033-8e72-17ffd4bdd8e9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 888484a80cc7c39921b973450afdaa361518432a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fe6c3283c9379b370911cc63184535e813b96d8c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415909"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50658538"
 ---
 # <a name="strncoll-wcsncoll-mbsncoll-strncolll-wcsncolll-mbsncolll"></a>_strncoll, _wcsncoll, _mbsncoll, _strncoll_l, _wcsncoll_l, _mbsncoll_l
 
 로캘별 정보를 사용하여 문자열을 비교합니다.
 
 > [!IMPORTANT]
-> **_mbsncoll** 및 **_mbsncoll_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbsncoll** 하 고 **_mbsncoll_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -124,7 +114,7 @@ int _mbsncoll_l(
 
 ### <a name="parameters"></a>매개 변수
 
-*string1*, *문자열 2*<br/>
+*string1*, *string2*<br/>
 비교할 Null 종료 문자열입니다.
 
 *count*<br/>
@@ -135,7 +125,7 @@ int _mbsncoll_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 함수의 각의 부분 문자열 간의 관계를 나타내는 값을 반환 *string1* 및 *string2*다음과 같이 합니다.
+이러한 함수는 각각의 부분 문자열 간 관계를 나타내는 값을 반환 *string1* 하 고 *string2*다음과 같이 합니다.
 
 |반환 값|문자열 1과 문자열 2의 관계|
 |------------------|----------------------------------------|
@@ -143,15 +133,15 @@ int _mbsncoll_l(
 |0|*string1* 동일 *string2*합니다.|
 |> 0|*string1* 보다 크면 *string2*합니다.|
 
-이러한 각 함수 반환 **_NLSCMPERROR**합니다. 사용 하도록 **_NLSCMPERROR**, STRING.h 또는 MBSTRING.h를 포함 합니다. **_wcsncoll** 경우 중 하나가 실패할 수 있습니다 *string1* 또는 *string2* 데이터 정렬 순서 도메인 외부에 있는 와이드 문자 코드를 포함 합니다. 오류가 발생 하면 **_wcsncoll** 설정할 수 있습니다 **errno** 를 **EINVAL**합니다. 에 대 한 호출에서 오류를 확인 하려면 **_wcsncoll**설정, **errno** 0으로 확인 후 **errno** 호출한 후 **_wcsncoll**합니다.
+이러한 각 함수 반환 **_NLSCMPERROR**합니다. 사용 하도록 **_NLSCMPERROR**, STRING.h 또는 MBSTRING.h를 포함 합니다. **_wcsncoll** 경우 실패할 수 있습니다 *string1* 하거나 *string2* 정렬 순서 도메인을 벗어나는 와이드 문자 코드가 포함 되어 있습니다. 오류가 발생 하는 경우 **_wcsncoll** 설정할 수 있습니다 **errno** 하 **EINVAL**합니다. 에 대 한 호출에서 오류를 확인 하려면 **_wcsncoll**설정 **errno** 0으로 확인 한 다음 **errno** 호출한 후 **_wcsncoll**합니다.
 
 ## <a name="remarks"></a>설명
 
-첫 번째 대/소문자 구분 비교를 수행 하는 이러한 각 함수 *count* 에서 문자 *string1* 및 *string2*에 현재 코드 페이지에 따라 사용 합니다. 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 다르며 이러한 차이가 문자열 비교 시 중요한 경우에만 이러한 함수를 사용하세요. 문자 집합 순서는 로캘별로 다릅니다. 에 없는 이러한 함수 버전은 **_l** 접미사 사용은 현재 로캘 하지만 있는 버전은 **_l** 접미사에 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이러한 각 함수의 첫 번째 대/소문자 구분 비교를 수행 *개수* 의 문자 *string1* 하 고 *string2*, 현재 코드 페이지에 따라 이 옵션을 사용 합니다. 코드 페이지에서 문자 집합 순서와 사전적 문자 순서가 다르며 이러한 차이가 문자열 비교 시 중요한 경우에만 이러한 함수를 사용하세요. 문자 집합 순서는 로캘별로 다릅니다. 없는 이러한 함수의 버전은는 **_l** 접미사 사용 하 여 현재 로캘에서 있지만 있는 버전의 **_l** 접미사는 전달 된 로캘을 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *string1* 또는 *string2* 가 null 포인터 또는 *count* 보다 크면 **INT_MAX**, 잘못 된 매개 변수 처리기가 호출 됩니다 에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된 경우 이러한 함수가 반환 **_NLSCMPERROR** 설정 **errno** 를 **EINVAL**합니다.
+이러한 모든 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *string1* 또는 *string2* 가 null 포인터인 경우 또는 *count* 보다 크면 **INT_MAX**, 잘못 된 매개 변수 처리기가 호출 됩니다 에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **_NLSCMPERROR** 설정 **errno** 하 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -160,7 +150,7 @@ int _mbsncoll_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strncoll**, **_strncoll_l**|\<string.h>|
 |**_wcsncoll**, **_wcsncoll_l**|\<wchar.h> 또는 \<string.h>|

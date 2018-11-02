@@ -1,28 +1,18 @@
 ---
-title: iterator 구조체 | Microsoft 문서
-ms.custom: ''
+title: iterator 구조체
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xutility/std::iterator
-dev_langs:
-- C++
 helpviewer_keywords:
 - iterator class
 - iterator struct
 ms.assetid: c74c8000-8b18-4829-9b71-6103c4229b74
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a399fa8a9f8fc9a73d75605f31245e42a2154b7c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 1dd62a6141e690d3bd4dcad69aa107c126a0f386
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963630"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631402"
 ---
 # <a name="iterator-struct"></a>iterator 구조체
 
@@ -59,7 +49,7 @@ struct iterator {
 
 유의 `value_type` 경우에도 상수 형식이 아니어야 `pointer` 의 개체 **const** `Type` 참조의 개체를 지정 하 고 **const** `Type`합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 반복기 기본 클래스에서 형식을 선언하고 사용하는 방법에 대한 예제는 [iterator_traits](../standard-library/iterator-traits-struct.md)를 참조하세요.
 

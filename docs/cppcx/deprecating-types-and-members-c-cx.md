@@ -1,31 +1,24 @@
 ---
-title: 사용 중단 하는 형식 및 멤버 (C + + /cli CX) | Microsoft Docs
-ms.custom: ''
+title: 형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 ms.date: 12/30/2016
-ms.technology: cpp-windows
-ms.topic: language-reference
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 500b93f3a84ecb39706b5c1575887a7339d1fdd4
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 661445c8a365451d94f938cfe262623866b0fa5e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102093"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618636"
 ---
 # <a name="deprecating-types-and-members-ccx"></a>형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 
 C + + /CX를 사용 하 여 생산자와 소비자에 대 한 Windows 런타임 형식 및 멤버의 사용 중단 된 [사용 되지 않는](/uwp/api/windows.foundation.metadata.deprecatedattribute) 특성은 지원 합니다. 이 속성이 적용된 API를 사용하는 경우 API가 더 이상 사용되지 않음을 나타내고 대체 API를 사용하도록 권장하는 컴파일 타임 경고 메시지가 나타납니다. public 형식 및 메서드에서 이 특성을 적용하고 사용자 지정 메시지를 제공할 수 있습니다.
 
 > [!CAUTION]
-> 합니다 [사용 되지 않는](/uwp/api/windows.foundation.metadata.deprecatedattribute) 특성은 Windows 런타임 형식에만 사용 합니다. 표준 c + + 클래스 및 멤버를 사용 하 여 [__declspec (deprecated)](../cpp/deprecated-cpp.md)합니다.
+> 합니다 [사용 되지 않는](/uwp/api/windows.foundation.metadata.deprecatedattribute) 특성은 Windows 런타임 형식에만 사용 합니다. 표준 C++ 클래스 및 멤버에는 [__declspec(deprecated)](../cpp/deprecated-cpp.md)를 사용하세요.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 Windows 런타임 구성 요소에서 사용자 고유의 공용 API를 사용할 수 없게 하는 방법을 보여 줍니다. 형식의 두 번째 매개 변수 [Windows: Foundation:: Metadata::DeprecationType](/uwp/api/windows.foundation.metadata.deprecationtype) API가 있는지 여부를 지정 되지 않거나 제거 합니다. 현재는 DeprecationType::Deprecated 값만 지원됩니다. 특성의 세 번째 매개 변수를 지정 합니다 [Windows::Foundation::Metadata::Platform](/uwp/api/windows.foundation.metadata.platformattribute) 특성이 적용 되는 합니다.
+다음 예제에서는 Windows 런타임 구성 요소에서 사용자 고유의 공용 API를 사용할 수 없게 하는 방법을 보여 줍니다. [Windows:Foundation::Metadata::DeprecationType](/uwp/api/windows.foundation.metadata.deprecationtype) 형식의 두 번째 매개 변수는 API를 사용할 수 없게 할지 제거할지 여부를 지정합니다. 현재는 DeprecationType::Deprecated 값만 지원됩니다. 특성의 세 번째 매개 변수는 특성이 적용되는 [Windows::Foundation::Metadata::Platform](/uwp/api/windows.foundation.metadata.platformattribute) 을 지정합니다.
 
 ```
 

@@ -1,28 +1,18 @@
 ---
-title: 컴파일러 옵션 사전순 목록 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 옵션 사전순 목록
 ms.date: 08/20/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - compiler options, C++
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f99df40d5718a450019fb7cd26aa0c00a59c0a48
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fa5ae089e112c147fb5e18b13af2ef5b95a7fda3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701860"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646734"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
-다음은 사전순으로 나열한 포괄적인 컴파일러 옵션 목록입니다. 범주 목록에 대 한 참조를 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)합니다.
+다음은 사전순으로 나열한 포괄적인 컴파일러 옵션 목록입니다. 범주별 목록을 보려면 [컴파일러 옵션 범주별 목록](compiler-options-listed-by-category.md)을 참조하세요.
 
 |옵션|용도|
 |------------|-------------|
@@ -79,9 +69,9 @@ ms.locfileid: "45701860"
 |[/guard:cf](guard-enable-control-flow-guard.md)|제어 흐름 가드 보안 검사를 추가합니다.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` 호출 규칙을 사용합니다(x86 및 x64에만 해당).|
 |[/Gw](gw-optimize-global-data.md)|전체 프로그램 전역 데이터 최적화를 사용하도록 설정합니다.|
-|[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 사용 하 여 [/EH](eh-exception-handling-model.md) 대신 합니다.|
+|[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 대신 [/EH](eh-exception-handling-model.md) 를 사용합니다.|
 |[/Gy](gy-enable-function-level-linking.md)|함수 수준 링크를 사용합니다.|
-|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 동일 [/rtc1](rtc-run-time-error-checks.md)합니다.|
+|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. [/RTC1](rtc-run-time-error-checks.md)과 동일합니다.|
 |[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
@@ -155,7 +145,7 @@ ms.locfileid: "45701860"
 |[/X](x-ignore-standard-include-paths.md)|표준 포함 디렉터리를 무시합니다.|
 |[/Y-](y-ignore-precompiled-header-options.md)|현재 빌드에서 미리 컴파일된 다른 모든 헤더 컴파일러 옵션을 무시합니다.|
 |[/Yc](yc-create-precompiled-header-file.md)|미리 컴파일된 헤더 파일을 만듭니다.|
-|[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 사용 하 여 [/Zi](z7-zi-zi-debug-information-format.md) 대신 합니다.|
+|[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 대신 [/Zi](z7-zi-zi-debug-information-format.md) 를 사용합니다.|
 |[/Yl](yl-inject-pch-reference-for-debug-library.md)|디버그 라이브러리를 만들 때 PCH 참조를 삽입합니다.|
 |[/Yu](yu-use-precompiled-header-file.md)|빌드하는 동안 미리 컴파일된 헤더 파일을 사용합니다.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|C 7.0 호환 디버깅 정보를 생성 합니다.|

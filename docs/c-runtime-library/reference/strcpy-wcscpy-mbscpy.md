@@ -1,10 +1,6 @@
 ---
-title: strcpy, wcscpy, _mbscpy | Microsoft Docs
-ms.custom: ''
+title: strcpy, wcscpy, _mbscpy
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - strcpy
 - wcscpy
@@ -29,8 +25,6 @@ f1_keywords:
 - wcscpy
 - _tcscpy
 - strcpy
-dev_langs:
-- C++
 helpviewer_keywords:
 - strcpy function
 - tcscpy function
@@ -43,23 +37,19 @@ helpviewer_keywords:
 - _ftcscpy function
 - _mbscpy function
 ms.assetid: f97a4f81-e9ee-4f15-888a-0fa5d7094c5a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c996fc8ceb81d98d24e3c95330f2ed9c37097e7d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a6846123fedf48601d36ab8779d7c9868e5e9917
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413923"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50640065"
 ---
 # <a name="strcpy-wcscpy-mbscpy"></a>strcpy, wcscpy, _mbscpy
 
 문자열을 복사합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [strcpy_s, wcscpy_s, _mbscpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)를 참조하세요.
 
 > [!IMPORTANT]
-> **_mbscpy** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbscpy** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -107,16 +97,16 @@ Null 종료 소스 문자열입니다.
 
 ## <a name="remarks"></a>설명
 
-**strcpy** 복사본 함수 *strSource*, 지정 된 위치에 종료 null 문자를 포함 하 여 *strDestination*합니다. 동작은 **strcpy** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
+**strcpy** 복사본 함수 *strSource*에 null 종결 문자에 지정 된 위치를 포함 하 여 *strDestination*합니다. 동작은 **strcpy** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
 
 > [!IMPORTANT]
-> 때문에 **strcpy** 에 공간이 충분 한지 확인 하지 않습니다 *strDestination* 복사 하기 전에 *strSource*, 버퍼 오버런의 잠재적 원인이 될 것이 있습니다. 따라서 [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)를 대신 사용하는 것이 좋습니다.
+> 때문에 **strcpy** 에 공간이 충분 한지 확인 하지 않습니다 *strDestination* 복사 하기 전에 *strSource*, 버퍼 오버런의 잠재적 원인이 될 것입니다. 따라서 [strcpy_s](strcpy-s-wcscpy-s-mbscpy-s.md)를 대신 사용하는 것이 좋습니다.
 
-**wcscpy** 및 **_mbscpy** 는 각각의 와이드 문자 및 멀티 바이트 문자 버전 **strcpy**합니다. 인수 및 반환 값이 **wcscpy** 은 와이드 문자열이 고 **_mbscpy** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcscpy** 하 고 **_mbscpy** 는 각각의 와이드 문자 및 멀티 바이트 문자 버전 **strcpy**합니다. 인수 및 반환 값 **wcscpy** 은 와이드 문자열이 고 **_mbscpy** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -124,7 +114,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strcpy**|\<string.h>|
 |**wcscpy**|\<string.h> 또는 \<wchar.h>|

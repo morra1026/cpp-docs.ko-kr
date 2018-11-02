@@ -1,10 +1,6 @@
 ---
-title: tmpfile | Microsoft Docs
-ms.custom: ''
+title: tmpfile
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - tmpfile
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - tmpfile
-dev_langs:
-- C++
 helpviewer_keywords:
 - temporary files
 - tmpfile function
 - temporary files, creating
 ms.assetid: c4a4dc24-70da-438d-ae4e-98352d88e375
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ebcad2a25af2f2acb0056d882c4191f1a51293d3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 98afcb7a3e04a96a1b08bc1b975634153e550839
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409071"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530327"
 ---
 # <a name="tmpfile"></a>tmpfile
 
@@ -52,19 +42,19 @@ FILE *tmpfile( void );
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **tmpfile** 스트림 포인터를 반환 합니다. 그렇지 않으면 반환 된 **NULL** 포인터입니다.
+성공 하면 **tmpfile** 스트림 포인터를 반환 합니다. 그러지 않으면 반환 된 **NULL** 포인터.
 
 ## <a name="remarks"></a>설명
 
-**tmpfile** 함수 임시 파일을 만들고 해당 스트림에 대 한 포인터를 반환 합니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
+합니다 **tmpfile** 함수는 임시 파일을 만들고 해당 스트림에 대 한 포인터를 반환 합니다. 임시 파일은 루트 디렉터리에 만들어집니다. 루트가 아닌 디렉터리에 임시 파일을 만들려면 [fopen](fopen-wfopen.md)과 함께 [tmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) 또는 [tempnam](tempnam-wtempnam-tmpnam-wtmpnam.md)을 사용합니다.
 
-파일을 열 수 없는 경우 **tmpfile** 반환는 **NULL** 포인터입니다. 파일이 닫힌 경우 또는 일반적으로 프로그램을 종료 하면이 임시 파일은 삭제 자동으로 **_rmtmp** 를 호출 하는 현재 작업 디렉터리를 변경 하지 않습니다. 임시 파일을 열 **w + b** (이진 읽기/쓰기) 모드입니다.
+파일을 열 수 없는 경우 **tmpfile** 반환 된 **NULL** 포인터입니다. 이 임시 파일은 때나 일반적으로 프로그램을 종료 하면 파일을 닫을 때 자동으로 삭제 됩니다 **_rmtmp** 현재 작업 디렉터리를 변경 하지 않습니다 가정 라고 합니다. 임시 파일에 열려 **w + b** (이진 읽기/쓰기) 모드입니다.
 
-TMP_MAX 이상 시도 하면 오류가 발생할 수 있습니다 (STDIO 참조 합니다. H) 사용 하 여 호출 **tmpfile**합니다.
+TMP_MAX 보다 더 시도 하면 오류가 발생할 수 있습니다 (STDIO 참조 합니다. H) 사용 하 여 호출 **tmpfile**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**tmpfile**|\<stdio.h>|
 

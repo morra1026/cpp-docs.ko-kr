@@ -1,30 +1,19 @@
 ---
-title: 지정된 된 기호 (c + +)에 대 한 리소스 편집기 열기 | Microsoft Docs
-ms.custom: ''
+title: 지정된 된 기호 (c + +)에 대 한 리소스 편집기 열기
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.symbol.resource
-dev_langs:
-- C++
 helpviewer_keywords:
 - resource symbols
 - View Use button
 - resource editors [C++], resource symbols
 ms.assetid: f715807b-5af2-4627-be25-be63b23fd097
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 6d8c478765a53c3884b736e798ffb51a46e73912
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2b8191896675f0ec51520ffa09a38138cdec8040
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46385484"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50537893"
 ---
 # <a name="opening-the-resource-editor-for-a-given-symbol-c"></a>지정된 된 기호 (c + +)에 대 한 리소스 편집기 열기
 

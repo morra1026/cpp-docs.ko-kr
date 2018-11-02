@@ -1,11 +1,6 @@
 ---
-title: fegetround, fesetround | Microsoft Docs
-ms.custom: ''
+title: fegetround, fesetround
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fegetround
 - fesetround
@@ -27,22 +22,16 @@ f1_keywords:
 - fesetround
 - fenv/fegetround
 - fenv/fesetround
-dev_langs:
-- C++
 helpviewer_keywords:
 - fegetround function
 - fesetround function
 ms.assetid: 596af00b-be2f-4f57-b2f5-460485f9ff0b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 137d886d557cbb1fee7db1dd60405b9557bf6bf2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 061f0c9563d284396e85c6de70a2fe0911218eb3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398086"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666806"
 ---
 # <a name="fegetround-fesetround"></a>fegetround, fesetround
 
@@ -65,9 +54,9 @@ int fesetround(
 
 ## <a name="return-value"></a>반환 값
 
-성공할 경우 **fegetround** 부동 소수점 반올림 매크로 값 중 하나로 반올림 모드를 반환 합니다. 현재 반올림 모드를 확인할 수 없는 경우 음수 값이 반환됩니다.
+성공 시 **fegetround** 부동 소수점 반올림 매크로 값 중 하나로 반올림 모드를 반환 합니다. 현재 반올림 모드를 확인할 수 없는 경우 음수 값이 반환됩니다.
 
-성공할 경우 **fesetround** 0을 반환 합니다. 그렇지 않으면 0이 아닌 값이 반환됩니다.
+성공 시 **fesetround** 0을 반환 합니다. 그렇지 않으면 0이 아닌 값이 반환됩니다.
 
 ## <a name="remarks"></a>설명
 
@@ -88,13 +77,13 @@ FE_TONEAREST의 기본 동작은 표현 가능한 값의 중간 결과를 짝수
 
 - 상수 식 외부의 부동 소수점 산술 연산자 결과
 
-- 라이브러리 반올림 함수와 같은 **rint** 및 **nearbyint**합니다.
+- 라이브러리와 같은 함수를 반올림 **인쇄** 하 고 **nearbyint**합니다.
 
 - 표준 라이브러리 수학 함수의 값을 반환합니다.
 
 현재 반올림 모드는 다음 작업에 영향을 주지 않습니다.
 
-- **trunc**, **ceil**, **floor**, 및 **lround** 라이브러리 함수입니다.
+- 합니다 **trunc**를 **ceil**를 **floor**, 및 **lround** 라이브러리 함수입니다.
 
 - 항상 0으로 반올림되는 부동 소수점-정수 암시적 캐스팅 및 변환
 
@@ -104,7 +93,7 @@ FE_TONEAREST의 기본 동작은 표현 가능한 값의 중간 결과를 짝수
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**fegetround**, **fesetround**|\<fenv.h>|\<cfenv>|
 

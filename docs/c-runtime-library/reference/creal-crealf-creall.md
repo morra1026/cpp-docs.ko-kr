@@ -1,11 +1,6 @@
 ---
-title: creal, crealf, creall | Microsoft 문서
-ms.custom: ''
+title: creal, crealf, creall
 ms.date: 03/30/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - creal
 - crealf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/creal
 - complex/crealf
 - complex/creall
-dev_langs:
-- C++
 helpviewer_keywords:
 - creal function
 - crealf function
 - creall function
 ms.assetid: fa3ac62f-7aa3-4238-a71f-d6b00cd0c7c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6b8d3ca02aeb0f3f9b12c8b82cbb27d9bd3ad3aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 32fd0898ccac80b74b467dbfe0a136eef139e642
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400862"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604307"
 ---
 # <a name="creal-crealf-creall"></a>creal, crealf, creall
 
@@ -72,19 +61,19 @@ long double creal( _Lcomplex z );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-실수 부분 *z*합니다.
+실수부 *z*입니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **creal** 사용 하는 **_Fcomplex** 또는 **_Lcomplex** 값 및 반환 **float** 또는 **long double** 값입니다. C 프로그램에서 **creal** 항상 약간의 **_Dcomplex** 값과 반환은 **double** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **creal** 사용 하는 **_Fcomplex** 하거나 **_Lcomplex** 값 및 반환 **float** 또는 **long double** 값입니다. C 프로그램에서 **creal** 는 항상 사용을 **_Dcomplex** 값과 반환을 **double** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**creal**, **crealf**, **creall**|\<complex.h>|\<ccomplex>|
+|**creal**하십시오 **crealf**, **creall**|\<complex.h>|\<ccomplex>|
 
-**_Fcomplex**, **_Dcomplex**, 및 **_Lcomplex** 유형은 구현 되지 않은 네이티브 C99 형식의 해당 하는 Microsoft 전용 **_Complex float** , **double _Complex**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+합니다 **_Fcomplex**를 **_Dcomplex**, 및 **_Lcomplex** 유형은 네이티브 구현 되지 않은 C99 형식의 해당 하는 Microsoft 전용 **float _Complex** 하십시오 **double _Complex**, 및 **long double _Complex**각각. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

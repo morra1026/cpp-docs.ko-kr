@@ -1,28 +1,17 @@
 ---
-title: 이미지 속성 변경 (아이콘에 대 한 이미지 편집기) | Microsoft Docs
-ms.custom: ''
+title: 이미지 속성 변경(아이콘에 대한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - images [C++], properties
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: f6172bf1-08c4-4dfd-b542-dd8749e83fe6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: e3b85faff95e3053ea46edcedef7443cdab445d3
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: dae1570ab447a3801e0835ede4502a0626283656
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422235"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459948"
 ---
 # <a name="changing-image-properties-image-editor-for-icons"></a>이미지 속성 변경(아이콘에 대한 이미지 편집기)
 

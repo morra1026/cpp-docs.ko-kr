@@ -1,28 +1,18 @@
 ---
-title: 지연 로드 도우미 함수의 Visual c + + 6.0 이후 DLL 변경 내용 | Microsoft Docs
-ms.custom: ''
+title: Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - delayed loading of DLLs, what's changed
 - PFromRva method
 - __delayLoadHelper2 function
 - helper functions, what's changed
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0caf74f02b005ef65e8ac30750fdf244ddeeed0d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8d50962bf66e07d6238be4a1a973c9d9ff06a556
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45712272"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613774"
 ---
 # <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용
 

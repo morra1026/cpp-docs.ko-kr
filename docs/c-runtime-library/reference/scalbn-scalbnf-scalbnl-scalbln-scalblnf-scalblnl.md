@@ -1,10 +1,6 @@
 ---
-title: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl | Microsoft Docs
-ms.custom: ''
+title: scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - scalblnl
 - scalbnl
@@ -32,8 +28,6 @@ f1_keywords:
 - scalbln
 - scalbn
 - scalbnf
-dev_langs:
-- C++
 helpviewer_keywords:
 - scalbn function
 - scalbln function
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - scalbnf function
 - scalblnf function
 ms.assetid: df2f1543-8e39-4af4-a5cf-29307e64807d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3bcaebf6578bfb4168d17131989b9b200a7ef8f9
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 7109340afaa634fc21177380d015c9eace506081
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209458"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646253"
 ---
 # <a name="scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl"></a>scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl
 
@@ -130,7 +120,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_scalbn.c

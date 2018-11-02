@@ -1,7 +1,7 @@
 ---
 title: C 키워드 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 10/09/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80c1f0d4ac5d843732771281202612e31a4073c2
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: d9a5255609c3abb4846ce08a2163407eee6f240c
+ms.sourcegitcommit: 8480f16893f09911f08a58caf684405404f7ac8e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48860890"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49161907"
 ---
 # <a name="c-keywords"></a>C 키워드
 
@@ -48,17 +48,19 @@ Microsoft C 컴파일러에서 다음 키워드 및 특수 식별자가 인식�
 
 |||||
 |-|-|-|-|
-|**__asm**|**dllimport**<sup>2</sup>|**__int8**|**naked**<sup>2</sup>|
-|**__based**<sup>1</sup>|**__except**|**__int16**|**__stdcall**|
-|**__cdecl**|**__fastcall**|**__int32**|**thread**<sup>2</sup>|
-|**__declspec**|**__finally**|**__int64**|**__try**|
-|**dllexport**<sup>2</sup>|**__inline**|**__leave**||
+|**__asm**<sup>3</sup>|**dllimport**<sup>2</sup>|**__int8**<sup>3</sup>|**naked**<sup>2</sup>|
+|**__based**<sup>1, 3</sup>|**__except**<sup>3</sup>|**__int16**<sup>3</sup>|**__stdcall**<sup>3</sup>|
+|**__cdecl**<sup>3</sup>|**__fastcall**|**__int32**<sup>3</sup>|**thread**<sup>2</sup>|
+|**__declspec**<sup>3</sup>|**__finally**<sup>3</sup>|**__int64**<sup>3</sup>|**__try**<sup>3</sup>|
+|**dllexport**<sup>2</sup>|**__inline**<sup>3</sup>|**__leave**<sup>3</sup>||
 
 <sup>1</sup> **__based**키워드의 경우 32비트 및 64비트 대상 컴파일에서 제한적으로 사용됩니다.
 
 <sup>2</sup> 이들은 **__declspec**과 함께 사용되는 특수 식별자이며 다른 컨텍스트에서의 사용은 제한되지 않습니다.
 
-Microsoft 확장은 기본적으로 사용하도록 설정됩니다. 프로그램이 완전하게 이식 가능하도록 하려면, 컴파일하는 동안 /Za 옵션(ANSI 호환을 위한 컴파일)을 지정하여 Microsoft 확장을 사용하지 않도록 설정할 수 있습니다. 이렇게 하면 Microsoft 관련 키워드를 사용할 수 없습니다.
+<sup>3</sup> 이전 버전과의 호환성을 위해 이러한 키워드는 Microsoft 확장이 사용하도록 설정된 경우 두 개의 선행 밑줄과 단일 선행 밑줄 둘 다와 함께 사용할 수 있습니다.
+
+Microsoft 확장은 기본적으로 사용하도록 설정됩니다. 프로그램이 완전하게 이식 가능하도록 컴파일하는 동안 [/Za\(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md) 옵션을 지정하여 Microsoft 확장을 사용하지 않을 수 있습니다. 이렇게 하면 몇 가지 Microsoft 관련 키워드를 사용할 수 없습니다.
 
 Microsoft 확장을 사용하면 위에 나열된 키워드를 프로그램에서 사용할 수 있습니다. ANSI 규격에 따라 이러한 키워드의 대부분에는 두 개의 밑줄이 앞에 옵니다. 네 가지 예외 사항인 **dllexport**, **dllimport**, **naked** 및 **thread**는 **__declspec**과 함께 사용되므로 선행 밑줄이 필요하지 않습니다. 이전 버전과의 호환성을 위해 나머지 키워드에는 밑줄 한 개가 옵니다.
 

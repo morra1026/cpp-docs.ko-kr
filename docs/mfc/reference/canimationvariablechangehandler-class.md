@@ -1,31 +1,21 @@
 ---
-title: CAnimationVariableChangeHandler 클래스 | Microsoft Docs
-ms.custom: ''
+title: CAnimationVariableChangeHandler 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CAnimationVariableChangeHandler
 - AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler
 - AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::OnValueChanged
 - AFXANIMATIONCONTROLLER/CAnimationVariableChangeHandler::SetAnimationController
-dev_langs:
-- C++
 helpviewer_keywords:
 - CAnimationVariableChangeHandler [MFC], OnValueChanged
 - CAnimationVariableChangeHandler [MFC], SetAnimationController
 ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 23521a9ee9706787df0568547fe3419fe7e4fae5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 589691f8bb2bc14eba46245082ff972ca6b97fcc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424601"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50604384"
 ---
 # <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler 클래스
 
@@ -50,7 +40,7 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 |이름|설명|
 |----------|-----------------|
 |`CAnimationVariableChangeHandler::CreateInstance`|인스턴스를 만들고 `CAnimationVariableChangeHandler` 개체입니다.|
-|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|애니메이션 변수 값이 변경 될 때 호출 합니다. (`CUIAnimationVariableChangeHandlerBase::OnValueChanged`를 재정의합니다.)|
+|[CAnimationVariableChangeHandler::OnValueChanged](#onvaluechanged)|애니메이션 변수 값이 변경 될 때 호출 합니다. ( `CUIAnimationVariableChangeHandlerBase::OnValueChanged`을 재정의합니다.)|
 |[CAnimationVariableChangeHandler::SetAnimationController](#setanimationcontroller)|이벤트를 라우팅하도록 애니메이션 컨트롤러에 대 한 포인터를 저장합니다.|
 
 ## <a name="remarks"></a>설명

@@ -1,10 +1,6 @@
 ---
-title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l | Microsoft 문서
-ms.custom: ''
+title: _cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _cwprintf_l
 - _cprintf_l
@@ -34,8 +30,6 @@ f1_keywords:
 - cprintf_l
 - _cprintf_l
 - _cwprintf_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _cprintf_l function
 - _cwprintf_l function
@@ -51,16 +45,12 @@ helpviewer_keywords:
 - cwprintf_l function
 - _cprintf function
 ms.assetid: 67ffefd4-45b3-4be0-9833-d8d26ac7c4e2
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 57eaced46b786352b794e68a1a11423ba13b0948
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ce1913012ee37b19e15602daaa4eea042a69a3de
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400875"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50534045"
 ---
 # <a name="cprintf-cprintfl-cwprintf-cwprintfl"></a>_cprintf, _cprintf_l, _cwprintf, _cwprintf_l
 
@@ -105,18 +95,18 @@ int _cwprintf_l(
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 형식 및 일련의 문자 및 값을 콘솔에 직접 인쇄를 사용 하는 **_putch** 함수 (**_putwch** 에 대 한 **_cwprintf**) 출력 자가 하 . 각 인수에 *argument_list* (있는 경우)이 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. *형식* 인수를 사용 하는 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 와 달리는 **fprintf**, **printf**, 및 **sprintf** 함수도 **_cprintf** 나 **_cwprintf**줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 출력 시.
+이러한 함수는 형식 및 일련의 문자 및 값을 콘솔에 직접 인쇄를 사용 하는 **_putch** 함수 (**_putwch** 에 대 한 **_cwprintf**) 문자를 출력 . 각 인수 *argument_list* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 합니다 *형식* 인수 사용 합니다 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 와 달리 합니다 **fprintf**를 **printf**, 및 **sprintf** 함수를 모두 **_cprintf** 나 **_cwprintf**줄 바꿈 문자를 캐리지 리턴-줄 바꿈 (CR-LF) 조합으로 변환 하면 출력 합니다.
 
-중요 한 차이점은 **_cwprintf** Windows에서 사용 될 때 유니코드 문자를 표시 합니다. 와 달리 **_cprintf**, **_cwprintf** 현재 콘솔 로캘 설정을 사용 합니다.
+중요 한 차이점이 **_cwprintf** Windows에서 사용 될 때 유니코드 문자를 표시 합니다. 와 달리 **_cprintf**하십시오 **_cwprintf** 는 현재 콘솔 로캘 설정을 사용 합니다.
 
-있는 이러한 함수 버전은 **_l** 은 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+포함 된 이러한 함수의 버전을 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
-**_cprintf** 유효성을 검사는 *형식* 매개 변수입니다. 경우 *형식* 가 null 포인터 이면 함수는에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 함수는-1 반환 하 고 집합을 계속 하려면 실행 허용 된 경우 **errno** 를 **EINVAL**합니다.
+**_cprintf** 의 유효성을 검사 합니다 *형식* 매개 변수입니다. 하는 경우 *형식* 가 null 포인터인 경우 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행 함수는-1 반환 하 고 집합을 계속 하도록 허용 된 경우 **errno** 하 **EINVAL**합니다.
 
 > [!IMPORTANT]
 > *format*이 사용자 정의 문자열이 아닌지 확인하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -125,7 +115,7 @@ int _cwprintf_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_cprintf**, **_cprintf_l**|\<conio.h>|
 |**_cwprintf**, **_cwprintf_l**|\<conio.h>|

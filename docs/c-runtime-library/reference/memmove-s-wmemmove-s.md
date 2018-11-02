@@ -1,10 +1,6 @@
 ---
-title: memmove_s, wmemmove_s | Microsoft 문서
-ms.custom: ''
+title: memmove_s, wmemmove_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wmemmove_s
 - memmove_s
@@ -24,22 +20,16 @@ apitype: DLLExport
 f1_keywords:
 - wmemmove_s
 - memmove_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - wmemmove_s function
 - memmove_s function
 ms.assetid: a17619e4-1307-4bb0-98c6-77f8c68dab2d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 39fde456dd2e45d38bdd1b6ba8d9d7eb9811dd05
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7b60174c3a06e60301a3e9123434220227f4f426
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561189"
 ---
 # <a name="memmoves-wmemmoves"></a>memmove_s, wmemmove_s
 
@@ -74,7 +64,7 @@ errno_t wmemmove_s(
 소스 개체입니다.
 
 *count*<br/>
-바이트 수입니다 (**memmove_s**) 또는 문자 (**wmemmove_s**)에 복사 합니다.
+바이트 수 (**memmove_s**) 또는 문자 (**wmemmove_s**) 복사 합니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -84,19 +74,19 @@ errno_t wmemmove_s(
 
 |*dest*|*numberOfElements*|*src*|반환 값|내용을 *dest*|
 |------------|------------------------|-----------|------------------|------------------------|
-|**NULL**|모두|모두|**EINVAL**|수정 안 됨|
-|모두|모두|**NULL**|**EINVAL**|수정 안 됨|
-|모두|< *개수*|모두|**ERANGE**|수정 안 됨|
+|**NULL**|any|any|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|**EINVAL**|수정 안 됨|
+|any|< *개수*|any|**ERANGE**|수정 안 됨|
 
 ## <a name="remarks"></a>설명
 
-복사본 *count* 바이트의 문자를 *src* 를 *dest*합니다. 소스 영역 및 대상의 일부 영역 겹치면 **memmove_s** 통해 원래 소스 바이트 겹치는 영역에 덮어쓰기 전에 복사 됩니다.
+복사본 *개수* 문자의 바이트 *src* 하 *dest*합니다. 소스 영역과 대상의 일부 영역이 겹치는 경우 **memmove_s** 겹치는 영역에서 원래 소스 바이트가 덮어쓰기 전에 복사 되는 확인 합니다.
 
-경우 *dest* 경우 *src* 가 null 포인터 이면 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 대상 문자열이 너무 작은 경우 또는 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) . 실행을 계속 허용 된 경우 이러한 함수가 반환 **EINVAL** 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *dest* 이거나 *src* 가 null 포인터인 경우 또는 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 대상 문자열이 너무 작은 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) . 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**memmove_s**|\<string.h>|
 |**wmemmove_s**|\<wchar.h>|

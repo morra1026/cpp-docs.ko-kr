@@ -1,10 +1,6 @@
 ---
-title: _putw | Microsoft Docs
-ms.custom: ''
+title: _putw
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _putw
 apilocation:
@@ -23,24 +19,18 @@ apitype: DLLExport
 f1_keywords:
 - _putw
 - putw
-dev_langs:
-- C++
 helpviewer_keywords:
 - integers, writing to streams
 - putw function
 - streams, writing integers to
 - _putw function
 ms.assetid: 83d63644-249d-4a39-87e5-3b7aa313968d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c5e33bc207fe83795c31f6c8b61d931985760e3a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3fd18c2a8869d6b09703547f50ee6e096bd72395
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404014"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50602685"
 ---
 # <a name="putw"></a>_putw
 
@@ -65,17 +55,17 @@ int _putw(
 
 ## <a name="return-value"></a>반환 값
 
-작성된 값을 반환합니다. 반환 값이 **EOF** 오류를 나타낼 수 있습니다. 때문에 **EOF** 유효한 정수 값을 사용 하 여 이기도 **ferror** 오류를 확인 합니다. 경우 *스트림* 가 null 포인터에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **EOF**합니다.
+작성된 값을 반환합니다. 반환 값 **EOF** 오류를 나타낼 수 있습니다. 때문에 **EOF** 합법적인 정수 값을 사용 하 여 이기도 **ferror** 오류를 확인 합니다. 하는 경우 *스트림을* 가 null 포인터인 경우에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EOF**합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_putw** 함수 형식의 이진 값이 기록 **int** 의 현재 위치에 *스트림 합니다.* **_putw** 스트림의 항목 정렬에 영향을 주지 않습니다 또는 특수 정렬도 간주 합니다. **_putw** 주로 이전 라이브러리와의 호환성을 위한 것입니다. 이동성 문제가 발생할 수 있습니다 **_putw** 때문에 크기는 **int** 내 바이트의 순서가 **int** 시스템 마다 다르기 합니다.
+합니다 **_putw** 함수 형식의 이진값을 씁니다 **int** 의 현재 위치에 *스트림 합니다.* **_putw** 스트림의 항목 정렬에 영향을 주지 않습니다도 않습니다 특수 정렬도 간주 합니다. **_putw** 주로 이전 라이브러리와의 호환성입니다. 이식성 문제가 발생할 수 있습니다 **_putw** 때문에 크기를 **int** 내의 바이트 순서가 **int** 시스템 간에 다릅니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_putw**|\<stdio.h>|
 

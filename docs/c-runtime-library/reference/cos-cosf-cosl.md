@@ -1,10 +1,6 @@
 ---
-title: cos, cosf, cosl | Microsoft Docs
-ms.custom: ''
+title: cos, cosf, cosl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - cos
 - cosf
@@ -26,8 +22,6 @@ f1_keywords:
 - cos
 - cosf
 - cosl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cosines
 - cosl function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - trigonometric functions
 - cosines, calculating
 ms.assetid: ae90435e-6b68-4a47-a81f-be87d5c08f16
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a49f8489d084b1f67bc46432970114350c56f09
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b050fd98a35028b121def8b665fce62ad58ec437
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395450"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519899"
 ---
 # <a name="cos-cosf-cosl"></a>cos, cosf, cosl
 
@@ -72,28 +62,28 @@ long double cos( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-코사인 *x*합니다. 경우 *x* 보다 큰 또는 263 같거나 작은 보다 크거나-263, 결과에 중요 한 손실이 발생 합니다.
+코사인 *x*합니다. 하는 경우 *x* 가 보다 큰 263 같거나 작거나 같거나-263, 결과에 중요 한 손실이 발생 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± QNAN, IND|없음|**_DOMAIN**|
-|± INF|**올바르지 않음**|**_DOMAIN**|
+|QNAN, 찾기|없음|**(_D)**|
+|INF|**올바르지 않음**|**(_D)**|
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **cos** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **cos** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cos** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **cos** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 C 헤더|필수 C++ 헤더|
+|루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|---------------------|-|
-|**cos**, **cosh**, **cosf**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**cos**하십시오 **cosh**, **cosf**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 
-예제를 참조 [sin, sinf, sinl](sin-sinf-sinl.md)합니다.
+예제를 참조 하세요 [sin, sinf, sinl](sin-sinf-sinl.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

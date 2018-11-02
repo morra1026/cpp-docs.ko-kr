@@ -1,10 +1,6 @@
 ---
-title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock | Microsoft Docs
-ms.custom: ''
+title: _ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ungetch_nolock
 - _ungetwch_nolock
@@ -34,8 +30,6 @@ f1_keywords:
 - _ungettch_nolock
 - _ungettch
 - _ungetwch_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ungetch function
 - ungetwch function
@@ -50,16 +44,12 @@ helpviewer_keywords:
 - ungetwch_nolock function
 - _ungetwch function
 ms.assetid: 70ae71c6-228c-4883-a57d-de6d5f873825
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1c9c6f09c3bd6ce679662d9ea77f8a7b360521b9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7407d26606bd5242c430961faa4f60090b83f036
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411298"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50430305"
 ---
 # <a name="ungetch-ungetwch-ungetchnolock-ungetwchnolock"></a>_ungetch, _ungetwch, _ungetch_nolock, _ungetwch_nolock
 
@@ -92,15 +82,15 @@ wint_t _ungetwch_nolock(
 
 ## <a name="return-value"></a>반환 값
 
-두 함수는 문자를 반환 합니다. *c* 성공 하는 경우. 오류가 발생 하는 경우 **_ungetch** 의 값을 반환 **EOF** 및 **_ungetwch** 반환 **WEOF**합니다.
+문자를 반환 하는 두 함수 모두 *c* 성공 합니다. 오류가 발생 하는 경우 **_ungetch** 의 값을 반환 **EOF** 하 고 **_ungetwch** 반환 **WEOF**합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수는 문자 푸시 *c* 콘솔에 다시 일으키는 *c* 읽을 다음 문자를 **_getch** 또는 **_getche** (또는 **_getwch** 또는 **_getwche**). **_ungetch** 및 **_ungetwch** 다음 읽기 전에 두 번 이상 호출 하는 경우 실패 합니다. *c* 인수 되지 않을 수 있습니다 **EOF** (또는 **WEOF**).
+이러한 함수는 문자를 푸시 *c* 콘솔로 다시 발생 *c* 읽은 다음 문자가 되도록 **_getch** 또는 **_getche** (또는 **_getwch** 하거나 **_getwche**). **_ungetch** 하 고 **_ungetwch** 는 다음 읽기 이전 두 번 이상 호출 하는 경우 실패 합니다. 합니다 *c* 인수 되지 않을 수 있습니다 **EOF** (또는 **WEOF**).
 
 **_nolock** 접미사가 있는 버전은 다른 스레드에 의한 간섭에서 보호되지 않는 점을 제외하면 동일합니다. 이러한 버전에서는 다른 스레드를 잠그는 오버헤드가 발생하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -109,7 +99,7 @@ wint_t _ungetwch_nolock(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ungetch**, **_ungetch_nolock**|\<conio.h>|
 |**_ungetwch**, **_ungetwch_nolock**|\<conio.h> 또는 \<wchar.h>|

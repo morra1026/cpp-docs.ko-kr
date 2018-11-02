@@ -1,10 +1,6 @@
 ---
-title: _CrtMemCheckpoint | Microsoft 문서
-ms.custom: ''
+title: _CrtMemCheckpoint
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _CrtMemCheckpoint
 apilocation:
@@ -23,22 +19,16 @@ f1_keywords:
 - CrtMemCheckpoint
 - _CrtMemCheckpoint
 - crtdbg/_CrtMemCheckpoint
-dev_langs:
-- C++
 helpviewer_keywords:
 - CrtMemCheckpoint function
 - _CrtMemCheckpoint function
 ms.assetid: f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e1418278f4b6756db4e747162f090545c3e9f3ae
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ee435ba3e9e40795280dee0f97feaad32c8b0fc3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107574"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589519"
 ---
 # <a name="crtmemcheckpoint"></a>_CrtMemCheckpoint
 
@@ -59,7 +49,7 @@ void _CrtMemCheckpoint(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_CrtMemCheckpoint** 함수 언제 든 디버그 힙의 현재 상태의 스냅숏을 만듭니다. 이 스냅숏은 메모리 누수를 비롯한 여러 문제를 손쉽게 감지하도록 [_CrtMemDifference](crtmemdifference.md) 같은 기타 힙 상태 함수에 사용할 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemState** 전처리 중 제거 됩니다.
+합니다 **_CrtMemCheckpoint** 함수 언제 든 디버그 힙의 현재 상태의 스냅숏을 만듭니다. 이 스냅숏은 메모리 누수를 비롯한 여러 문제를 손쉽게 감지하도록 [_CrtMemDifference](crtmemdifference.md) 같은 그 밖의 힙 상태 함수에 사용할 수 있습니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 가 정의 되지 않은, 호출 **_CrtMemState** 전처리 중 제거 됩니다.
 
 응용 프로그램의 이전에 할당 된 인스턴스에 대 한 포인터를 전달 해야 합니다 **_CrtMemState** 에 Crtdbg.h에 정의 된 합니다 *상태* 매개 변수. 하는 경우 **_CrtMemCheckpoint** 에서 검사점을 만드는 동안 오류가 발생 하는 함수 생성을 **_CRT_WARN** 문제를 설명 하는 보고서를 디버그 합니다.
 

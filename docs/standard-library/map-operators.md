@@ -1,8 +1,6 @@
 ---
-title: '&lt;map&gt; 연산자 | Microsoft 문서'
-ms.custom: ''
+title: '&lt;map&gt; 연산자'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - map/std::operator!=
 - map/std::operator&gt;
@@ -10,8 +8,6 @@ f1_keywords:
 - map/std::operator&lt;
 - map/std::operator&lt;=
 - map/std::operator==
-dev_langs:
-- C++
 ms.assetid: 7df02b9f-701c-44ed-834a-a819badc5bd0
 helpviewer_keywords:
 - std::operator!= (map)
@@ -20,21 +16,21 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 92314d923c591cce886683fcf536a24b404ba133
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 28acb02932ac2a6064ad49853adcb40dfb781520
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314873"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504314"
 ---
 # <a name="ltmapgt-operators"></a>&lt;map&gt; 연산자
 
 ||||
 |-|-|-|
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
-|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[operator==](#op_eq_eq)|
+|[operator&lt;](#op_lt)|[operator&lt;=](#op_lt_eq)|[연산자==](#op_eq_eq)|
 |[operator!= (multimap)](#op_neq_multimap)|[operator&gt;](#op_gt_multimap)|[operator&gt;=](#op_gt_eq_multimap)|
-|[operator&lt;](#op_lt_multimap)|[operator&lt;=](#op_lt_eq_multimap)|[operator==](#op_eq_eq_multimap)|
+|[operator&lt;](#op_lt_multimap)|[operator&lt;=](#op_lt_eq_multimap)|[연산자==](#op_eq_eq_multimap)|
 
 ## <a name="op_neq"></a>  operator!=
 

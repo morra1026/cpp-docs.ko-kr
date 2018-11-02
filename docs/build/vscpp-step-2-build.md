@@ -1,25 +1,17 @@
 ---
-title: C + + 콘솔 앱 프로젝트 빌드 및 실행 | Microsoft Docs
+title: C + + 콘솔 앱 프로젝트 빌드 및 실행
 description: 빌드 및 Visual c + +에서 Hello World 콘솔 앱 실행
 ms.custom: mvc
 ms.date: 12/12/2017
 ms.topic: tutorial
-ms.technology:
-- cpp-tools
 ms.devlang: C++
-dev_langs:
-- C++
 ms.assetid: 45138d71-719d-42dc-90d7-1d0ca31a2f55
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c9c32f6811a18fae00cb2943a9ca97a89cf159a1
-ms.sourcegitcommit: 92c568e9466ffd7346a4120c478c9bdea61c8756
+ms.openlocfilehash: 89681b4f6b2ff2780cc8dc1947e2ad758d294b48
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47029595"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467836"
 ---
 # <a name="build-and-run-a-c-console-app-project"></a>C + + 콘솔 앱 프로젝트 빌드 및 실행
 

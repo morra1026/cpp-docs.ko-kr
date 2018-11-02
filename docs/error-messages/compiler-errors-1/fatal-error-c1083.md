@@ -1,27 +1,17 @@
 ---
-title: 심각한 오류 C1083 | Microsoft Docs
-ms.custom: ''
+title: 심각한 오류 C1083
 ms.date: 09/01/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1083
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1083
 ms.assetid: 97e52df3-e79c-4f85-8f1e-bbd1057d55e7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c29fa07d13eb8d0a18491cb67b65fe4ad2d87de6
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: ae4c6a9f6c41d94aa1e36ba4a79226b49df08b49
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42540876"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50628009"
 ---
 # <a name="fatal-error-c1083"></a>심각한 오류 C1083
 
@@ -31,7 +21,7 @@ ms.locfileid: "42540876"
 
 ## <a name="the-specified-file-name-is-wrong"></a>지정한 파일 이름이 잘못됨
 
-파일 이름이 잘못 입력될 수 있습니다. 예를 들어 개체에 적용된
+파일 이름이 잘못 입력될 수 있습니다. 예를 들면 다음과 같습니다.
 
 `#include <algorithm.h>`
 
@@ -115,7 +105,7 @@ C1083 오류가 잘못된 버전의 파일이 포함되었음을 나타낼 수�
 
 - 파일 핸들이 충분하지 않습니다. 일부 응용 프로그램을 닫은 후 다시 컴파일하십시오. 이러한 경우는 일반적인 상황에서 거의 발생하지 않습니다. 하지만 실제 메모리가 제한된 컴퓨터에서 큰 프로젝트를 빌드하는 경우 발생할 수 있습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 C1083 오류가 발생 하는 경우 헤더 파일 `"test.h"` 포함 검색 경로 또는 원본 디렉터리에 존재 하지 않습니다.
 

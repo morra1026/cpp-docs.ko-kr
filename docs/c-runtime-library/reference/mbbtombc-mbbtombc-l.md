@@ -1,10 +1,6 @@
 ---
-title: _mbbtombc, _mbbtombc_l | Microsoft 문서
-ms.custom: ''
+title: _mbbtombc, _mbbtombc_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbbtombc_l
 - _mbbtombc
@@ -26,24 +22,18 @@ f1_keywords:
 - _mbbtombc
 - mbbtombc_l
 - mbbtombc
-dev_langs:
-- C++
 helpviewer_keywords:
 - mbbtombc_l function
 - mbbtombc function
 - _mbbtombc_l function
 - _mbbtombc function
 ms.assetid: 78593389-b0fc-43b6-8c1f-2a6bf702d64e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 98053437d2e189c26b46b53ec34ef67740d62bce
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63b5dd33399201cd6ead7dbd1f710c8bebe53c69
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50547994"
 ---
 # <a name="mbbtombc-mbbtombcl"></a>_mbbtombc, _mbbtombc_l
 
@@ -74,19 +64,19 @@ unsigned int _mbbtombc_l(
 
 ## <a name="return-value"></a>반환 값
 
-경우 **_mbbtombc** 성공적으로 변환 *c*, 멀티 바이트 문자를 반환 합니다; 그렇지 않으면 반환 *c*합니다.
+하는 경우 **_mbbtombc** 성공적으로 변환 *c*, 멀티 바이트 문자를 반환, 그렇지 않으면 반환 *c*합니다.
 
 ## <a name="remarks"></a>설명
 
-**_mbbtombc** 함수는 지정 된 싱글바이트 멀티 바이트 문자를 해당 더블 바이트 멀티 바이트 문자로 변환 합니다. 문자 변환 될 0xDF 0x20-0x7E 또는 0xA1-범위 사이 여야 합니다.
+합니다 **_mbbtombc** 함수는 지정 된 싱글바이트 멀티 바이트 문자를 해당 더블 바이트 멀티 바이트 문자로 변환 합니다. 문자 변환할 0xDF 0x20-0x7E 또는 0xA1-사이 여야 합니다.
 
-출력 값은의 설정에 영향을 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 정보에 대 한 합니다. 이 함수의 버전은 동일 합니다 점을 제외 하 고 **_mbbtombc** 이 로캘 종속 동작에 대 한 현재 로캘을 사용 하 고 **_mbbtombc_l** 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값의 설정이 적용 됩니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 이 함수의 버전은 동일 한다는 **_mbbtombc** 이 로캘 종속 동작에 현재 로캘을 사용 하 고 **_mbbtombc_l** 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-이전 버전에서는 **_mbbtombc** 변수의 이름이 **hantozen**합니다. 새 코드를 사용 하 여 **_mbbtombc**합니다.
+이전 버전에서는 **_mbbtombc** 이름이 **hantozen**합니다. 새 코드를 사용 하 여 **_mbbtombc**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbbtombc**|\<mbstring.h>|
 |**_mbbtombc_l**|\<mbstring.h>|

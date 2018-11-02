@@ -1,28 +1,18 @@
 ---
-title: __svm_clgi | Microsoft Docs
-ms.custom: ''
+title: __svm_clgi
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __svm_clgi
-dev_langs:
-- C++
 helpviewer_keywords:
 - CLGI instruction
 - __svm_clgi intrinsic
 ms.assetid: 6640f5ab-9472-46f9-a042-e15c4f1ff858
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 378dd025b4db769645ca53a01504c195c1265ac6
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 9f3484cc5cbffea1315d546ced317dfdfceee9e6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46410600"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618877"
 ---
 # <a name="svmclgi"></a>__svm_clgi
 
@@ -38,7 +28,7 @@ void __svm_clgi( void );
 
 ## <a name="remarks"></a>설명
 
-합니다 `__svm_clgi` 함수는 동일 합니다 `CLGI` 컴퓨터 명령입니다. 전역는 인터럽트 플래그를 여부를 결정 마이크로프로세서 무시, 연기, I/O 완료, 하드웨어 온도 경고를 또는 디버그 예외와 같은 이벤트로 인해 인터럽트를 처리 합니다.
+`__svm_clgi` 함수는 `CLGI` 컴퓨터 명령에 해당합니다. 전역는 인터럽트 플래그를 여부를 결정 마이크로프로세서 무시, 연기, I/O 완료, 하드웨어 온도 경고를 또는 디버그 예외와 같은 이벤트로 인해 인터럽트를 처리 합니다.
 
 이 함수는 게스트 운영 체제 및 해당 응용 프로그램과 호스트 가상 머신 모니터의 상호 작용을 지원합니다. 자세한 내용은 문서를 검색 "AMD64 아키텍처 프로그래머 수동 볼륨 2: 시스템 프로그래밍"에서 24593, 3.11, 수정 버전 번호를 문서화 합니다 [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) 사이트입니다.
 

@@ -1,11 +1,6 @@
 ---
-title: cacosh, cacoshf, cacoshl | Microsoft 문서
-ms.custom: ''
+title: cacosh, cacoshf, cacoshl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - cacosh
 - cacoshf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/cacosh
 - complex/cacoshf
 - complex/cacoshl
-dev_langs:
-- C++
 helpviewer_keywords:
 - cacosh function
 - cacoshf function
 - cacoshl function
 ms.assetid: 83fd05eb-3587-4741-9be6-589a830a1703
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c61130dbfcc0363ef020216389299634cfcd002f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa31dfa1b29eda18d34528fc8aa9544e58a5a082
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394157"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668197"
 ---
 # <a name="cacosh-cacoshf-cacoshl"></a>cacosh, cacoshf, cacoshl
 
@@ -79,17 +68,17 @@ _Lcomplex cacoshl(
 
 ## <a name="return-value"></a>반환 값
 
-쌍곡선 역코사인 *z*, 라디안에서입니다. 결과 unbounded 및 음수가 아닌 실제 축을 따라 및 간격에서 [-iπ, + iπ] 허수 축을 따라 합니다.
+역 쌍 곡 코사인 *z*, 라디안에서입니다. 결과 제한이 없고 음수가 아닌 간격에 실수 축을 따라 [-i π, + i π] 허수 축을 따라 합니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **cacosh** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **cacosh** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **cacosh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **cacosh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**cacosh**, **cacoshf**, **cacoshl**|\<complex.h>|\<ccomplex>|
+|**cacosh**하십시오 **cacoshf**, **cacoshl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

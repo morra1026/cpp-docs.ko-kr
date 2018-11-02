@@ -1,10 +1,6 @@
 ---
-title: _fclose_nolock | Microsoft 문서
-ms.custom: ''
+title: _fclose_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fclose_nolock
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - fclose_nolock
 - _fclose_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - streams, closing
 - fclose_nolock function
 - _fclose_nolock function
 ms.assetid: b4af4392-5fc8-49bb-9fe2-ca7293d3ce04
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7474d195f2a04525ed2bc4cf671950308a70c7b5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 440582bb42a1795721eab17b24be3e0bc3daf80f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398960"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50620963"
 ---
 # <a name="fclosenolock"></a>_fclose_nolock
 
@@ -60,7 +50,7 @@ int _fclose_nolock(
 
 ## <a name="return-value"></a>반환 값
 
-**fclose** 스트림을 성공적으로 종료 하는 경우 0을 반환 합니다. 반환 **EOF** 는 오류를 나타냅니다.
+**fclose** 스트림에 성공적으로 종료 하는 경우 0을 반환 합니다. 반환 **EOF** 는 오류를 나타냅니다.
 
 ## <a name="remarks"></a>설명
 
@@ -68,7 +58,7 @@ int _fclose_nolock(
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fclose_nolock**|\<stdio.h>|
 

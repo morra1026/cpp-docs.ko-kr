@@ -1,10 +1,6 @@
 ---
-title: 동시성 Namespace | Microsoft Docs
-ms.custom: ''
+title: 동시성 네임스페이스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_priority_queue/concurrency
 - agents/concurrency
@@ -21,21 +17,15 @@ f1_keywords:
 - concurrent_unordered_set/concurrency
 - pplconcrt/concurrency
 - internal_concurrent_hash/concurrency
-dev_langs:
-- C++
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: f1d33ca2-679b-4442-b140-22a9d9df61d1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 9d423d80606da9edcec2cb5f4da4d02e39213ba7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: ccfa168f811b2c357a3760097ca7bbaab4f5ed3a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46386030"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629855"
 ---
 # <a name="concurrency-namespace"></a>동시성 네임스페이스
 
@@ -237,7 +227,7 @@ namespace concurrency;
 |[operator&#124;&#124;](concurrency-namespace-operators.md#operator_lor)|오버로드됨. 인수로 제공된 작업 중 하나가 성공적으로 완료될 경우 완료되는 작업을 만듭니다.|
 |[operator<](concurrency-namespace-operators.md#operator_lt)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 작은지 테스트합니다.|
 |[operator<=](concurrency-namespace-operators.md#operator_lt_eq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 작거나 같은지 테스트합니다.|
-|[operator==](concurrency-namespace-operators.md#operator_eq_eq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체와 같은지 테스트합니다.|
+|[연산자==](concurrency-namespace-operators.md#operator_eq_eq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체와 같은지 테스트합니다.|
 |[operator>](concurrency-namespace-operators.md#operator_gt)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 큰지 테스트합니다.|
 |[operator>=](concurrency-namespace-operators.md#operator_lt_eq)|연산자의 좌변에 있는 `concurrent_vector` 개체가 우변에 있는 `concurrent_vector` 개체보다 크거나 같은지 테스트합니다.|
 

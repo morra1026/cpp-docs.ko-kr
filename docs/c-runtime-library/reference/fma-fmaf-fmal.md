@@ -1,11 +1,6 @@
 ---
-title: fma, fmaf, fmal | Microsoft 문서
-ms.custom: ''
+title: fma, fmaf, fmal
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fma
 - fmaf
@@ -30,23 +25,17 @@ f1_keywords:
 - math/fma
 - math/fmaf
 - math/fmal
-dev_langs:
-- C++
 helpviewer_keywords:
 - fma function
 - fmaf function
 - fmal function
 ms.assetid: 584a6037-da1e-4e86-9f0c-97aae86de0c0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b28009a9c3cc4edceb9032660a0c2a71916dfb2f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a3b540a72c6f2fc2264d6366111831fbe2a02a6b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401479"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50529950"
 ---
 # <a name="fma-fmaf-fmal"></a>fma, fmaf, fmal
 
@@ -106,10 +95,10 @@ long double fmal(
 
 |문제|반환|
 |-----------|------------|
-|*x* 무한대 = *y* = 0 또는<br /><br /> *x* = 0, *y* 무한대 =|NaN|
-|*x* 또는 *y* 정확한 ± 무한대 = *z* 부호가 다른 무한대 =|NaN|
-|*x* 또는 *y* = NaN|NaN|
-|없습니다 (*x* = 0, *y*무한 =) 및 *z* = NaN<br /><br /> 없습니다 (*x*무한 = *y*= 0) 및 *z* = NaN|NaN|
+|*x* 무한대 = *y* = 0 또는<br /><br /> *x* = 0 이면 *y* 무한대 =|NaN|
+|*x* 나 *y* 정확한에서 무한대 = *z* 부호가 반대 무한대 =|NaN|
+|*x* 나 *y* = NaN|NaN|
+|없습니다 (*x* = 0 이면 *y*= indefinite) 및 *z* = NaN<br /><br /> 없습니다 (*x*= indefinite, *y*= 0) 및 *z* = NaN|NaN|
 |오버플로 범위 오류|±HUGE_VAL, ±HUGE_VALF, 또는 ±HUGE_VALL|
 |언더플로 범위 오류|올바른 값, 반올림 후.|
 
@@ -117,15 +106,15 @@ long double fmal(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **fma** 사용 하 고 반환 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fma** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **fma** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **fma** 항상 받아서 반환 된 **double**합니다.
 
 이 함수는 무한 정밀도에 도달한 것처럼 값을 계산하고 최종 결과를 반올림합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**fma**, **fmaf**, **fmal**|\<math.h>|\<cmath>|
+|**fma**하십시오 **fmaf**, **fmal**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

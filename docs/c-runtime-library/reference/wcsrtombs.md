@@ -1,10 +1,6 @@
 ---
-title: wcsrtombs | Microsoft Docs
-ms.custom: ''
+title: wcsrtombs
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - wcsrtombs
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - wcsrtombs
-dev_langs:
-- C++
 helpviewer_keywords:
 - wcsrtombs function
 - string conversion, wide characters
 - wide characters, strings
 ms.assetid: a8d21fec-0d36-4085-9d81-9b1c61c7259d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d2ea0252714803fe8cad48635486d2011275407
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 46ef195ec4685c327c4b5951ec44e5c363214b59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415470"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494421"
 ---
 # <a name="wcsrtombs"></a>wcsrtombs
 
@@ -74,7 +64,7 @@ size_t wcsrtombs(
 변환할 문자의 수입니다.
 
 *mbstate*<br/>
-에 대 한 포인터는 **mbstate_t** 변환 상태 개체입니다.
+에 대 한 포인터를 **mbstate_t** 변환 상태 개체입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -82,19 +72,19 @@ size_t wcsrtombs(
 
 ## <a name="remarks"></a>설명
 
-**wcsrtombs** 함수 변환에 포함 된 지정 된 변환 상태에서 시작 하는 와이드 문자 문자열 *mbstate*에서 가리키는 간접 값에서 *wcstr*의 주소에 *mbstr*합니다. 변환 될 때까지 각 문자에 대해 계속: 와이드 문자 종료 null을 발생 아닌 해당 문자에 오류가 발생 한 후 또는 다음 문자에 포함 된 제한 초과 하는 경우 *count*합니다. 경우 **wcsrtombs** 이전 또는 때 와이드 null 문자 (L'\ \0')에서 발생 *count* 발생을 8 비트 0과 중지로 변환 합니다.
+합니다 **wcsrtombs** 함수에 포함 된 지정한 변환 상태부터 와이드 문자의 문자열로 변환 *mbstate*를 가리키는 간접 값에서 *wcstr*의 주소로 *mbstr*합니다. 변환 될 때까지 각 문자에 대해 계속: 발생 한 후 null 종결 와이드 문자에 해당 하지 않는 문자가 발견 되는 경우 또는 다음 문자에 포함 된 제한을 초과 하는 경우 *개수*합니다. 하는 경우 **wcsrtombs** 때나 그 전에 와이드 문자 null 문자 (L'\ \0')에 도달 하면 *개수* 로 변환 하 고는 8 비트 0을 중지 합니다.
 
-따라서 멀티 바이트 문자 문자열에서 *mbstr* 은 null로 끝나는 경우에 **wcsrtombs** 와이드 null 문자를 변환 하는 동안 발생 합니다. 시퀀스에서 가리키는 경우 *wcstr* 및 *mbstr* 겹치는 경우의 동작 **wcsrtombs** 정의 되지 않습니다. **wcsrtombs** 현재 로캘의 LC_TYPE 범주가 영향을 받습니다.
+따라서 멀티 바이트 문자 문자열에 *mbstr* 는 null로 끝나는 경우에 **wcsrtombs** 와이드 문자 null 문자를 변환 하는 동안 발생 합니다. 가리키는 시퀀스 하는 경우 *wcstr* 하 고 *mbstr* 겹치는 동작 **wcsrtombs** 정의 되지 않습니다. **wcsrtombs** 현재 로캘의 LC_TYPE 범주 영향입니다.
 
-**wcsrtombs** 함수에서와 다른 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) 다시 시작할 합니다. 변환 상태에 저장 됩니다 *mbstate* 같거나 다른 다시 시작 가능 함수에 대 한 후속 호출에 대 한 합니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다.  예를 들어 응용 프로그램 사용 **wcsrlen** 대신 **wcsnlen**후속 호출 하는 경우, **wcsrtombs** 대신 사용한 **wcstombs**.
+합니다 **wcsrtombs** 함수에서 다른 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md) 해당 다시 시작할 수 있다는입니다. 변환 상태에 저장 됩니다 *mbstate* 같거나 다른 다시 시작 가능 함수에 대 한 후속 호출에 대 한 합니다. 다시 시작할 수 있는 함수와 다시 시작할 수 없는 함수를 함께 사용할 때는 결과가 정의되지 않습니다.  예를 들어, 응용 프로그램 사용 **wcsrlen** 대신 **wcsnlen**경우에 대 한 후속 호출 **wcsrtombs** 대신 사용한 **wcstombs**.
 
-경우는 *mbstr* 인수가 **NULL**, **wcsrtombs** 대상 문자열의 바이트에서 필요한 크기를 반환 합니다. 경우 *mbstate* 매개 변수가 null 이면 내부 **mbstate_t** 변환 상태를 사용 합니다. 경우 문자 시퀀스 *wchar* 해당 멀티 바이트 없는 문자 표현이-1 반환 및 **errno** 로 설정 되어 **EILSEQ**합니다.
+경우는 *mbstr* 인수가 **NULL**에 **wcsrtombs** 대상 문자열의 바이트에 필요한 크기를 반환 합니다. 하는 경우 *mbstate* 이 null 이면 내부 **mbstate_t** 변환 상태가 사용 됩니다. 경우 문자 시퀀스 *wchar* 해당 멀티 바이트 없는 문자 표시를-1이 반환 하며 **errno** 로 설정 되어 **EILSEQ**합니다.
 
 C++에서 이 함수는 해당 최신 보안 버전을 호출하는 템플릿 오버로드를 포함합니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
 ## <a name="exceptions"></a>예외
 
-**wcsrtombs** 함수는 현재 스레드의 호출 함수는 아니면 다중 스레드로부터 안전 **setlocale** 이 함수를 실행 중일 때 및 *mbstate* null입니다.
+**wcsrtombs** 현재 스레드의 함수가 호출 함수는 다중 스레드 안전 **setlocale** 이 함수가 실행 중인 동안 하며 *mbstate* null이 아닙니다.
 
 ## <a name="example"></a>예제
 
@@ -144,7 +134,7 @@ The string was successfuly converted.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**wcsrtombs**|\<wchar.h>|
 

@@ -1,25 +1,15 @@
 ---
-title: recursive_directory_iterator 클래스 | Microsoft Docs
-ms.custom: ''
+title: recursive_directory_iterator 클래스
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - filesystem/std::tr2::sys::recursive_directory_iterator
-dev_langs:
-- C++
 ms.assetid: 79a061bd-5b64-404c-97e8-749c888c2ced
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0d3765f57ee299a70a54e3b69dbaee0e0687a64c
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 52e6f738aa226dba26bae0cf6e97cd18d107d677
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691655"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50593342"
 ---
 # <a name="recursivedirectoryiterator-class"></a>recursive_directory_iterator 클래스
 
@@ -81,7 +71,7 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
 |-|-|
 |[operator!=](#op_neq)|`!(*this == right)`를 반환합니다.|
 |[operator=](#op_as)|기본 멤버 대입 연산자가 예상대로 작동합니다.|
-|[operator==](#op_eq)|반환 **true** 두 경우에 `*this` 하 고 *오른쪽* 가 시퀀스의 끝 반복기 이거나 둘 다 하지 최종-의-시퀀스-반복기는 합니다.|
+|[연산자==](#op_eq)|반환 **true** 두 경우에 `*this` 하 고 *오른쪽* 가 시퀀스의 끝 반복기 이거나 둘 다 하지 최종-의-시퀀스-반복기는 합니다.|
 |[operator*](#op_multiply)|`myentry`를 반환합니다.|
 |[operator->](#op_cast)|`&**this`를 반환합니다.|
 |[operator++](#op_increment)|증가 된 `recursive_directory_iterator`합니다.|

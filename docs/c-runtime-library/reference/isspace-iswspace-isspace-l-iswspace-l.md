@@ -1,10 +1,6 @@
 ---
-title: isspace, iswspace, _isspace_l, _iswspace_l | Microsoft 문서
-ms.custom: ''
+title: isspace, iswspace, _isspace_l, _iswspace_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - iswspace
 - _isspace_l
@@ -27,8 +23,6 @@ f1_keywords:
 - iswspace
 - _istspace
 - isspace
-dev_langs:
-- C++
 helpviewer_keywords:
 - iswspace function
 - isspace function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _istspace function
 - istspace function
 ms.assetid: b851e0c0-36bb-4dac-a1a3-533540939035
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 404fee8d74cec18c277f6c076a7cc41065a8b242
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cd93b196c23be5e91852e8c02d75055c1051b912
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402249"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590455"
 ---
 # <a name="isspace-iswspace-isspacel-iswspacel"></a>isspace, iswspace, _isspace_l, _iswspace_l
 
@@ -83,13 +73,13 @@ int _iswspace_l(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 루틴 0이 아닌 경우 반환 각 *c* 공백 문자를 특정 표현인 합니다. **isspace** 경우 0이 아닌 값을 반환 *c* 공백 문자 (0x09-0x0D 또는 0x20). 에 대 한 테스트 조건의 결과 **isspace** 함수에 따라 달라 집니다는 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 정보에 대 한 합니다. 가 없는 이러한 함수 버전은 **_l** 모든 로캘 종속 동작에 대해 현재 로캘 접미사 사용 하 고, 않은 버전은 **_l** 접미사를 사용 하는 점을 제외 하 고 동일는 대신에 전달 되는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+각 이러한 루틴 0이 아닌 경우 반환 *c* 공백 문자의 특정 표현입니다. **isspace** 이면 0이 아닌 값을 반환 *c* 공백 문자 (0x09-(0x09-0x0d 또는 0x20). 에 대 한 테스트 조건의 결과 **isspace** 함수에 따라 달라 집니다 합니다 **LC_CTYPE** 로캘 범주 설정; 참조 [setlocale, _wsetlocale](setlocale-wsetlocale.md) 자세한 내용은 합니다. 없는 이러한 함수의 버전은는 **_l** 로캘 종속 동작에 대해 현재 로캘 사용 접미사; 않은 버전을 **_l** 접미사를 사용 하는 점을 제외 하면 동일 합니다 대신에 전달 되는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-**iswspace** 경우 0이 아닌 값을 반환 *c* 표준 공백 문자에 해당 하는 와이드 문자입니다.
+**iswspace** 이면 0이 아닌 값을 반환 *c* 가 표준 공백 문자에 해당 하는 와이드 문자인 합니다.
 
-동작은 **isspace** 및 **_isspace_l** 경우 정의 되지 않습니다 *c* 가 EOF가 또는 0-0xFF 까지의 범위에 있습니다. CRT 디버그 라이브러리 사용 되는 경우 및 *c* 함수 생성에서는 이러한 값 중 하나가 아닙니다 한 어설션입니다.
+동작 **isspace** 하 고 **_isspace_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -97,7 +87,7 @@ int _iswspace_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**isspace**|\<ctype.h>|
 |**iswspace**|\<ctype.h> 또는 \<wchar.h>|

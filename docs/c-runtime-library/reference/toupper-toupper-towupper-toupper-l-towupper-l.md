@@ -1,10 +1,6 @@
 ---
-title: toupper, _toupper, towupper, _toupper_l, _towupper_l | Microsoft Docs
-ms.custom: ''
+title: toupper, _toupper, towupper, _toupper_l, _towupper_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _toupper_l
 - towupper
@@ -29,8 +25,6 @@ f1_keywords:
 - _toupper
 - _totupper
 - toupper
-dev_langs:
-- C++
 helpviewer_keywords:
 - _toupper function
 - towupper function
@@ -47,16 +41,12 @@ helpviewer_keywords:
 - characters, converting
 - toupper function
 ms.assetid: cdef1b0f-b19c-4d11-b7d2-cf6334c9b6cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 73157691cc1635d038339d9fe707aa535e1df93f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7e0ae3f1c69b0e5f77ea2ed8141a93867fd43b33
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413462"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50608897"
 ---
 # <a name="toupper-toupper-towupper-toupperl-towupperl"></a>toupper, _toupper, towupper, _toupper_l, _towupper_l
 
@@ -96,17 +86,17 @@ int _towupper_l(
 
 이러한 각 루틴의 복사본을 변환 *c*, 가능한 경우 결과 반환 합니다.
 
-경우 *c* 는 와이드 문자를 **iswlower** 0을 해당 와이드 문자 이며 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 이 값은 0 **towupper** 해당 와이드 문자를 반환 합니다. 그렇지 않으면 **towupper** 반환 *c* 변경 되지 않습니다.
+하는 경우 *c* 와이드 문자는입니다 **iswlower** 0이 아닌를 해당 와이드 문자 이며 [iswupper](isupper-isupper-l-iswupper-iswupper-l.md) 값은 0 **towupper** 해당 와이드 문자를 반환 합니다. 그렇지 않으면 **towupper** 반환 *c* 변경 되지 않습니다.
 
 오류를 나타내기 위해 예약된 반환 값은 없습니다.
 
-에 대 한 순서 대로 **toupper** 예상된 결과를 제공할 [__isascii](isascii-isascii-iswascii.md) 및 [islower](islower-iswlower-islower-l-iswlower-l.md) 모두 반환 해야 0이 아닌 합니다.
+되려면에서 **toupper** 예상된 결과 있도록 [__isascii](isascii-isascii-iswascii.md) 하 고 [islower](islower-iswlower-islower-l-iswlower-l.md) 가 둘 다 반환 0이 아닌 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 각 루틴은 가능하며 적절한 경우 지정된 소문자를 대문자로 변환합니다. 대/소문자 변환은 **towupper** 는 로캘에 따라 다릅니다. 현재 로캘에서 유효한 문자의 대/소문자만 변경됩니다. 없이 함수는 **_l** 접미사를 사용 하 여 현재 설정 로캘 합니다. 있는 이러한 함수 버전은 **_l** 접미사 로캘을 매개 변수로 하 고 현재 설정 하는 대신 사용 하는 로캘 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+이러한 각 루틴은 가능하며 적절한 경우 지정된 소문자를 대문자로 변환합니다. 대/소문자 변환은 **towupper** 로캘에 따라 다릅니다. 현재 로캘에서 유효한 문자의 대/소문자만 변경됩니다. 없는 함수는 **_l** 접미사를 사용 하 여 현재 설정 로캘. 포함 된 이러한 함수의 버전은 **_l** 접미사는 로캘을 매개 변수로 및 현재 설정 대신 사용 하는 로캘. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-에 대 한 순서 대로 **toupper** 예상된 결과를 제공할 [__isascii](isascii-isascii-iswascii.md) 및 [isupper](isupper-isupper-l-iswupper-iswupper-l.md) 모두 반환 해야 0이 아닌 합니다.
+되려면에서 **toupper** 예상된 결과 있도록 [__isascii](isascii-isascii-iswascii.md) 하 고 [isupper](isupper-isupper-l-iswupper-iswupper-l.md) 가 둘 다 반환 0이 아닌 합니다.
 
 [데이터 변환 루틴](../../c-runtime-library/data-conversion.md)
 
@@ -118,11 +108,11 @@ int _towupper_l(
 |**_totupper_l**|**_toupper_l**|**_mbctoupper_l**|**_towupper_l**|
 
 > [!NOTE]
-> **_toupper_l** 및 **_towupper_l** 로캘에 종속 되지 않습니다 있고 직접 호출할 수 있는 것은 아닙니다. 내부 사용을 위해 제공 되는 **_totupper_l**합니다.
+> **_toupper_l** 하 고 **_towupper_l** 은 로캘에 종속 되지 되지 않으며 직접 호출할 수 있습니다. 내부 용도로 제공 됩니다 **_totupper_l**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**toupper**|\<ctype.h>|
 |**_toupper**|\<ctype.h>|

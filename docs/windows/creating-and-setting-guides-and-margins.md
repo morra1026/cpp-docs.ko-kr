@@ -1,12 +1,6 @@
 ---
-title: 안내선 및 여백 만들기 및 설정 | Microsoft Docs
-ms.custom: ''
+title: 안내선과 여백 만들기 및 설정
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - guides, clearing
 - guides
@@ -17,17 +11,12 @@ helpviewer_keywords:
 - guides, moving
 - margins, moving
 ms.assetid: fafa4545-8f00-436f-b590-300e76601156
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 0083affb850f35941ca18709785c9bd5e4fc35e8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: b41b05f8a6c69fb46392a2669cb3171da6c195ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46378256"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459516"
 ---
 # <a name="creating-and-setting-guides-and-margins"></a>안내선과 여백 만들기 및 설정
 

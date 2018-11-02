@@ -1,10 +1,6 @@
 ---
-title: copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl | Microsoft 문서
-ms.custom: ''
+title: copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - copysignf
 - copysignl
@@ -32,8 +28,6 @@ f1_keywords:
 - _copysign
 - copysignl
 - _copysignf
-dev_langs:
-- C++
 helpviewer_keywords:
 - copysignl function
 - _copysignl function
@@ -42,16 +36,12 @@ helpviewer_keywords:
 - _copysign function
 - copysignf function
 ms.assetid: 009216d6-72a2-402d-aa6c-91d924b2c9e4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f54b45e0b4488e76c501f67b1e98de071157ad7f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6f450da4a4391f94d1905beefdeca8e3f01fec51
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394732"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662815"
 ---
 # <a name="copysign-copysignf-copysignl-copysign-copysignf-copysignl"></a>copysign, copysignf, copysignl, _copysign, _copysignf, _copysignl
 
@@ -102,18 +92,18 @@ long double _copysignl(
 
 ## <a name="return-value"></a>반환 값
 
-**copysign** 의 크기를 결합 하는 부동 소수점 값을 반환 하는 함수 *x* 및 인수의 부호 *y*합니다. 반환되는 오류가 없습니다.
+**copysign** 의 크기를 결합 하는 부동 소수점 값을 반환 하는 함수 *x* 의 로그인 *y*합니다. 반환되는 오류가 없습니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **copysign** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **copysign** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **copysign** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **copysign** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_copysign**|\<float.h>|
-|**copysign**, **copysignf**, **copysignl**, **_copysignf**, **_copysignl**|\<math.h>|
+|**copysign**, **copysignf**를 **copysignl**하십시오 **_copysignf**, **_copysignl**|\<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,10 +1,6 @@
 ---
-title: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l | Microsoft 문서
-ms.custom: ''
+title: iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - iscntrl
 - _iswcntrl_l
@@ -30,8 +26,6 @@ f1_keywords:
 - _iscntrl_l
 - iscntrl
 - _istcntrl
-dev_langs:
-- C++
 helpviewer_keywords:
 - iscntrl function
 - _iscntrl_l function
@@ -41,16 +35,12 @@ helpviewer_keywords:
 - iswcntrl function
 - _istcntrl_l function
 ms.assetid: 616eebf9-aed4-49ba-ba2c-8677c8fe6fb5
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c87745a4aa1c2e9d93f2c779e089e0bff6f66fcb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 150073e78426f5029dd46cbc6766fbd6a2a242e1
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401531"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50506755"
 ---
 # <a name="iscntrl-iswcntrl-iscntrll-iswcntrll"></a>iscntrl, iswcntrl, _iscntrl_l, _iswcntrl_l
 
@@ -85,13 +75,13 @@ int _iswcntrl_l(
 
 ## <a name="return-value"></a>반환 값
 
-각각의 이러한 루틴이 0이 아닌 경우 반환 *c* 제어 문자의 특정 표현입니다. **iscntrl** 경우 0이 아닌 값을 반환 *c* 제어 문자 (0x00-0x7F 또는 0x1F). **iswcntrl** 경우 0이 아닌 값을 반환 *c* 컨트롤 와이드 문자입니다. 이러한 각 루틴 0을 반환 *c* 테스트 조건을 만족 하지 않습니다.
+각 이러한 루틴 0이 아닌 경우 반환 *c* 제어 문자의 특정 표현입니다. **iscntrl** 이면 0이 아닌 값을 반환 *c* 제어 문자가 (0x00-0x1F 또는 0x7F). **iswcntrl** 이면 0이 아닌 값을 반환 *c* 컨트롤 와이드 문자입니다. 이러한 루틴은 각각 0을 반환 *c* 테스트 조건을 충족 하지 않습니다.
 
-이 있는 이러한 함수 버전은 **_l** 접미사 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+접미사가 있는 이러한 함수 버전은 **_l** 접미사는 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-동작은 **iscntrl** 및 **_iscntrl_l** 경우 정의 되지 않습니다 *c* 가 EOF가 또는 0-0xFF 까지의 범위에 있습니다. CRT 디버그 라이브러리 사용 되는 경우 및 *c* 함수 생성에서는 이러한 값 중 하나가 아닙니다 한 어설션입니다.
+동작 **iscntrl** 하 고 **_iscntrl_l** 경우 정의 되지 않습니다 *c* EOF가 범위인 0부터 0xff까지 포괄 합니다. 디버그 CRT 라이브러리가 사용 되는 경우 및 *c* 함수 raise 이러한 값 중 하나가 아닌 한 어설션입니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -100,7 +90,7 @@ int _iswcntrl_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**iscntrl**|\<ctype.h>|
 |**iswcntrl**|\<ctype.h> 또는 \<wchar.h>|

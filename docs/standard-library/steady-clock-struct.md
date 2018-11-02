@@ -1,25 +1,15 @@
 ---
-title: steady_clock 구조체 | Microsoft Docs
-ms.custom: ''
+title: steady_clock 구조체
 ms.date: 05/22/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::steady_clock
-dev_langs:
-- C++
 ms.assetid: 970d12ec-fc80-4391-a2f7-b57b2aec668d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 53f4deb0bfe9439011f75cd22d0d52b74dae9c1f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 19e9f5c4dcfc7306b989605894e9a0787e0920ff
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959727"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579298"
 ---
 # <a name="steadyclock-struct"></a>steady_clock 구조체
 
@@ -41,7 +31,7 @@ Windows에 온 `steady_clock` 래핑하는 `QueryPerformanceCounter` 함수.
 
 ### <a name="public-typedefs"></a>공용 typedefs
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |`steady_clock::duration`|에 대 한 동의어 `nanoseconds`에 정의 된 \<chrono >.|
 |`steady_clock::period`|에 대 한 동의어 `nano`에 정의 된 \<비율 >.|
@@ -56,7 +46,7 @@ Windows에 온 `steady_clock` 래핑하는 `QueryPerformanceCounter` 함수.
 
 ## <a name="public-constants"></a>공용 상수
 
-|name|설명|
+|이름|설명|
 |----------|-----------------|
 |`steady_clock::is_steady`|보유 **true**합니다. `steady_clock`은 *지속*입니다.|
 

@@ -1,12 +1,7 @@
 ---
-title: '방법: 부분적으로 신뢰할 수 있는 응용 프로그램 만들기 (C + + /cli CLI) | Microsoft Docs'
+title: '방법: 부분적으로 신뢰할 수 있는 응용 프로그램 만들기 (C + + /cli CLI)'
 ms.custom: get-started-article
 ms.date: 11/04/2016
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - partially trusted applications [C++]
 - mixed assemblies [C++], partially trusted applications
@@ -15,17 +10,12 @@ helpviewer_keywords:
 - interop [C++], partially trusted applications
 - /clr compiler option [C++], partially trusted applications
 ms.assetid: 4760cd0c-4227-4f23-a7fb-d25b51bf246e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 8a009b7d70cebbf38f21cf33180acf80c2d2bb43
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fb65c8ff3dc4c3b03fa319fd1e7a6eb95f11bef2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46411373"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50445970"
 ---
 # <a name="how-to-create-a-partially-trusted-application-by-removing-dependency-on-the-crt-library-dll"></a>방법: CRT 라이브러리 DLL에 대한 종속성을 제거하여 부분적으로 신뢰할 수 있는 응용 프로그램 만들기
 

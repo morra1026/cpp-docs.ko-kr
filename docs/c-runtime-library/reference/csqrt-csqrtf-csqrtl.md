@@ -1,11 +1,6 @@
 ---
-title: csqrt, csqrtf, csqrtl | Microsoft 문서
-ms.custom: ''
+title: csqrt, csqrtf, csqrtl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - csqrt
 - csqrtf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/csqrt
 - complex/csqrtf
 - complex/csqrtl
-dev_langs:
-- C++
 helpviewer_keywords:
 - csqrt function
 - csqrtf function
 - csqrtl function
 ms.assetid: b65f086b-0f55-4622-a7a3-4e79d9c9c05c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 143bb55180b3394f8ac32b36f7641503dd346b76
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 00fe12d4f9c136278e56ceaf3fa62443092d0ec4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396312"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50449883"
 ---
 # <a name="csqrt-csqrtf-csqrtl"></a>csqrt, csqrtf, csqrtl
 
@@ -79,22 +68,22 @@ _Lcomplex csqrtl(
 
 ## <a name="return-value"></a>반환 값
 
-제곱근 *z*합니다. 결과는 오른쪽 반평면에 있습니다.
+제곱근 *z*입니다. 결과는 오른쪽 반평면에 있습니다.
 
 |입력|SEH 예외|**_matherr** 예외|
 |-----------|-------------------|--------------------------|
-|± QNAN, IND|없음|_DOMAIN|
+|QNAN, 찾기|없음|_DOMAIN|
 |- ∞|없음|_DOMAIN|
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **csqrt** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **csqrt** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **csqrt** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **csqrt** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**csqrt**, **csqrtf**, **csqrtl**|\<complex.h>|\<ccomplex>|
+|**csqrt**하십시오 **csqrtf**, **csqrtl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

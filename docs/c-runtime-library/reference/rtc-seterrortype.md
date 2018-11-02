@@ -1,10 +1,6 @@
 ---
-title: _RTC_SetErrorType | Microsoft Docs
-ms.custom: ''
+title: _RTC_SetErrorType
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_SetErrorType
 apilocation:
@@ -22,23 +18,17 @@ apitype: DLLExport
 f1_keywords:
 - RTC_SetErrorType
 - _RTC_SetErrorType
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors
 - RTC_SetErrorType function
 - _RTC_SetErrorType function
 ms.assetid: f5f99be7-d357-4b11-b8f5-ddd3428f2b06
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 83395727b37ea3901e2e3c28d7adb6663f043d12
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 022079bd199477c8bca92e853ed66879c96428db
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406617"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50635675"
 ---
 # <a name="rtcseterrortype"></a>_RTC_SetErrorType
 
@@ -59,9 +49,9 @@ int _RTC_SetErrorType(
 0과 [_RTC_NumErrors](rtc-numerrors.md)에서 반환한 값에서 1을 뺀 수 사이의 숫자입니다.
 
 *ErrType*<br/>
-이 *errnum*에 할당할 값입니다. 예를 들어 **_CRT_ERROR**를 사용할 수 있습니다. 사용 중인 경우 **_CrtDbgReport** 오류 처리기로 *ErrType* 에 정의 된 기호 중 하나일 수만 있습니다 [_CrtSetReportMode](crtsetreportmode.md)합니다. 고유한 오류 처리기([_RTC_SetErrorFunc](rtc-seterrorfunc.md))가 있는 경우 *errnum*의 개수만큼 *ErrType*을 사용할 수 있습니다.
+이 *errnum*에 할당할 값입니다. 예를 들어 **_CRT_ERROR**를 사용할 수 있습니다. 사용 중인 경우 **_CrtDbgReport** 오류 처리기로 *ErrType* 에 정의 된 기호 중 하나일 수만 있습니다 [_CrtSetReportMode](crtsetreportmode.md)합니다. 사용자 고유의 오류 처리기([_RTC_SetErrorFunc](rtc-seterrorfunc.md))가 있는 경우 *errnum*개수만큼 *ErrType*을 사용할 수 있습니다.
 
-*ErrType* _rtc_errtype_ignore 특별 한 의미를 갖는 **_CrtSetReportMode**;이 오류는 무시 됩니다.
+*ErrType* _rtc_errtype_ignore 특별 한 의미를 갖는 **_CrtSetReportMode**; 오류 무시 됩니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -75,7 +65,7 @@ int _RTC_SetErrorType(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_RTC_SetErrorType**|\<rtcapi.h>|
 

@@ -1,10 +1,6 @@
 ---
-title: CurrentScheduler 클래스 | Microsoft Docs
-ms.custom: ''
+title: CurrentScheduler 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - CurrentScheduler
 - CONCRT/concurrency::CurrentScheduler
@@ -18,21 +14,15 @@ f1_keywords:
 - CONCRT/concurrency::CurrentScheduler::IsAvailableLocation
 - CONCRT/concurrency::CurrentScheduler::RegisterShutdownEvent
 - CONCRT/concurrency::CurrentScheduler::ScheduleTask
-dev_langs:
-- C++
 helpviewer_keywords:
 - CurrentScheduler class
 ms.assetid: 31c20e0e-4cdf-49b4-8220-d726130aad2b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 27c295f1cf8c6d02721a999c46ce02d961cc3702
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 46bd55c39e79ca01664c3800d10e4efa8cf7d042
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46419024"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50619182"
 ---
 # <a name="currentscheduler-class"></a>CurrentScheduler 클래스
 
@@ -56,7 +46,7 @@ class CurrentScheduler;
 |[Get](#get)|현재 스케줄러 라고도 호출 컨텍스트와 연결 된 스케줄러에 대 한 포인터를 반환 합니다.|
 |[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|호출 컨텍스트와 연결 된 스케줄러에 대 한 가상 프로세서의 현재 수를 반환 합니다.|
 |[GetPolicy](#getpolicy)|현재 스케줄러를 사용 하 여 생성 된 정책의 복사본을 반환 합니다.|
-|[Id](#id)|현재 스케줄러에 대 한 고유 식별자를 반환합니다.|
+|[ID](#id)|현재 스케줄러에 대 한 고유 식별자를 반환합니다.|
 |[IsAvailableLocation](#isavailablelocation)|현재 스케줄러에서 지정된 위치를 사용할 수 있는지를 확인합니다.|
 |[RegisterShutdownEvent](#registershutdownevent)|Windows 이벤트 핸들을 전달 하면은 `_ShutdownEvent` 매개 변수를 현재 컨텍스트와 연결 된 스케줄러를 종료 하 고 자체를 제거 하는 경우 신호를 보낼 수 있습니다. 이벤트 신호를 받는 경우 스케줄러에 예약한는 모든 작업이 완료 됩니다. 이 메서드를 통해 여러 종료 이벤트를 등록할 수 있습니다.|
 |[ScheduleTask](#scheduletask)|오버로드됨. 호출 컨텍스트와 연결 된 스케줄러를 내에서 간단한 작업을 예약 합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.|

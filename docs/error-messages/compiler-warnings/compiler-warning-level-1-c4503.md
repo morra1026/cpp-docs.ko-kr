@@ -1,27 +1,17 @@
 ---
-title: 컴파일러 경고 (수준 1) C4503 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 경고(수준 1) C4503
 ms.date: 05/14/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4503
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4503
 ms.assetid: 7c5a98ae-5b6d-41d8-b881-12d3ffd5e392
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f60fdb44c5368ccc5c5f089002614332d95a63fe
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 94c88511d87c3adf3cf5687a94948c83ebc5b3d5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255676"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50459789"
 ---
 # <a name="compiler-warning-level-1-c4503"></a>컴파일러 경고(수준 1) C4503
 
@@ -29,17 +19,17 @@ ms.locfileid: "34255676"
 
 ## <a name="remarks"></a>설명
 
-이 컴파일러 경고가 사용 되지 않으며 Visual Studio 2017 및 이후 컴파일러에서 생성 되지 않습니다.
+이 컴파일러 경고가 사용 되지 않는 및 Visual Studio 2017 및 이후 컴파일러에서 생성 되지 않습니다.
 
-데코 레이트 된 이름 (4096) 컴파일러 한계를 초과 하 고 잘렸습니다. 이 경고와는 잘림을 방지 하려면 인수 개수 개 사용 되는 식별자의 이름 길이 줄이십시오. 데코레이팅된 적용 해시 있는 컴파일러 한계 보다 더 이상 없고 이름 충돌이 발생할 수 있음 되지 않은 이름입니다.
+트 데코 레이 된 이름 (4096) 컴파일러 한계를 초과 하 고 잘렸습니다. 이 경고와 잘림을 방지 하려면 인수 개수 또는 사용 되는 식별자 이름 길이 줄입니다. 데코레이팅된 이름 하는 컴파일러 한계 보다 더 이상 적용 하는 해시 이름 충돌의 위험에 있지 않습니다.
 
-코드 서식 파일을 포함 하는 경우이 경고를 발생 수는 이전 버전의 Visual Studio를 사용 하는 경우 특수화 된 반복 해 서 합니다. 예를 들어 지도 (표준 c + + 라이브러리)에서 맵. 이 상황에서 만들 수 있습니다 프로그램 typedef 형식 (한 **구조체**예를 들면) 해당 맵을 포함 하는 합니다.
+이전 버전의 Visual Studio를 사용 하는 경우에 코드 템플릿을 포함 하는 경우이 경고를 발생 수 반복적으로 서식 파일에서 특수화 된 합니다. 예를 들어, (c + + 표준 라이브러리)에서 맵의 맵. 이 이런 경우 변경할 수 있습니다 프로그램 typedef 형식 (을 **구조체**예를 들어) 맵을 포함 하는 합니다.
 
-그러나 코드를 재구성 하지 결정할 수도 있습니다.  C4503을 생성 하는 응용 프로그램을 출시할 수 있지만 잘린된 기호에 링크 타임 오류를 발생 한 경우 오류에 기호의 형식을 결정 하는 것이 어려울 수 있습니다. 또한 년 5 월 디버깅 하기가 어려울; 디버거 형식 이름에 문제가 많은 것 매핑 기호 이름이 있을 수 있습니다. 그러나 프로그램의 정확성 영향을 받지 않습니다 잘린된 이름입니다.
+그러나 코드를 재구성 하지 결정할 수 있습니다.  C4503를 생성 하는 응용 프로그램에 전달할 수 있지만의 잘린된 기호 링크 시간 오류를 받게 되 면 오류에 있는 기호의 형식을 확인 하는 것이 어려울 수 있습니다. 월도 디버깅 어려울 것입니다. 디버거는 데 어려움이 있으므로 이러한 기호 이름을 형식 이름으로 매핑 있을 수 있습니다. 그러나 프로그램의 정확성 영향을 받지 않습니다 잘린된 이름입니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C4503 Visual Studio 2017 전에 컴파일러에서 생성 됩니다.
+다음 샘플에서는 Visual Studio 2017 이전 컴파일러에서 C4503를 생성합니다.
 
 ```cpp
 // C4503.cpp

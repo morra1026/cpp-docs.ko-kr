@@ -1,14 +1,8 @@
 ---
-title: 액셀러레이터 키 편집기 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 액셀러레이터 키 편집기 (c + +)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
 f1_keywords:
 - vc.editors.accelerator.F1
-dev_langs:
-- C++
 helpviewer_keywords:
 - accelerator tables [C++], editing
 - tables [C++], accelerator key
@@ -16,17 +10,12 @@ helpviewer_keywords:
 - resource editors [C++], Accelerator editor
 - keyboard shortcuts [C++], Accelerator editor
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 42870002ff84b697599443da8ab9b9b88dbbd7ca
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: fdb2d9cf0954142da990a0a9f995cb482060345d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50621496"
 ---
 # <a name="accelerator-editor-c"></a>액셀러레이터 키 편집기 (c + +)
 
@@ -34,7 +23,7 @@ ms.locfileid: "44318800"
 
 일반적으로 액셀러레이터 키는 메뉴 또는 도구 모음에서도 사용할 수 있는 프로그램 명령에 대한 바로 가기 키로 사용됩니다. 그러나 연결된 사용자 인터페이스 개체가 없는 명령에 대한 키 조합을 정의하는 데 액셀러레이터 키 테이블을 사용할 수 있습니다.
 
-사용할 수 있습니다 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code) 액셀러레이터 키 명령을 코드에 연결 합니다.
+[클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code) 를 사용하여 액셀러레이터 키 명령을 코드에 연결할 수 있습니다.
 
 사용 하 여는 **가속기** 편집기를 할 수 있습니다.
 

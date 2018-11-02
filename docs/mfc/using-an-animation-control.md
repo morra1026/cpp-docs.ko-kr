@@ -1,27 +1,17 @@
 ---
-title: 애니메이션 컨트롤 사용 | Microsoft Docs
-ms.custom: ''
+title: 애니메이션 컨트롤 사용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - controls [MFC], animation
 - CAnimateCtrl class [MFC], animation controls
 - animation controls [MFC]
 ms.assetid: a009a464-e12d-4112-bf52-04a09b28dd88
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3da9684d0218c631cbd745475d48f1cf23addde5
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fa5ce6cc30d4bc31dbe52c0e559ce97e40acacba
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46404568"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630999"
 ---
 # <a name="using-an-animation-control"></a>애니메이션 컨트롤 사용
 
@@ -37,7 +27,7 @@ ms.locfileid: "46404568"
 
 - 컨트롤을 즉시 삭제 하려는 경우 클립 메모리에서 호출 하 여 제거를 `Close` 멤버 함수입니다.
 
-- 애니메이션 컨트롤이 대화 상자에 있으면이 고 `CAnimateCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CAnimateCtrl` 개체가 모두 제대로 소멸되었는지 확인해야 합니다. 컨트롤을 자동으로 제거 AVI 클립을 닫습니다.
+- 애니메이션 컨트롤이 대화 상자에 있으면이 고 `CAnimateCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CAnimateCtrl` 개체가 모두 제대로 제거되었는지 확인해야 합니다. 컨트롤을 자동으로 제거 AVI 클립을 닫습니다.
 
 ## <a name="see-also"></a>참고 항목
 

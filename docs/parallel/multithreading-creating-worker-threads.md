@@ -1,12 +1,6 @@
 ---
-title: '다중 스레딩: MFC에서 작업자 스레드를 만드는 | Microsoft Docs'
-ms.custom: ''
+title: 'MFC에서 다중 스레딩: 작업자 스레드를 만들기'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-parallel
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - multithreading [C++], worker threads
 - background tasks [C++]
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - threading [MFC], worker threads
 - threading [C++], user input not required
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3feeb0de4c634aa90cc5b5e54cf3cf005366ffa
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 54bea7b42018637bf868dfdd923b94dd75aa2307
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46446714"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50559486"
 ---
 # <a name="multithreading-creating-worker-threads-in-mfc"></a>MFC에서 다중 스레딩: 작업자 스레드를 만들기
 

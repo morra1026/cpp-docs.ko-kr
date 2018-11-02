@@ -1,25 +1,15 @@
 ---
-title: 집계 및 공용 구조체 | Microsoft Docs
-ms.custom: ''
+title: 집계 및 공용 구조체
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - aggregates [C++], and unions
 ms.assetid: 859fc211-b111-4f12-af98-de78e48f9b92
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: aac6da94a0786e5cdc2eee4d16f5927f66e0a8d5
-ms.sourcegitcommit: 997e6b7d336cddb388bb6e9e56527725fcaa0624
+ms.openlocfilehash: a4206a5e07c765e9c789eab5c8963c9db4c2f234
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48861189"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50496259"
 ---
 # <a name="aggregates-and-unions"></a>집계 및 공용 구조체
 
@@ -33,7 +23,7 @@ ms.locfileid: "48861189"
 
    데이터 개체의 정렬된 된 그룹을 포함합니다. 배열의 요소와 달리 구조체 내의 데이터 개체는 다른 데이터 형식 및 크기를 가질 수 있습니다. 각 데이터 개체 구조의 멤버를 라고 합니다.
 
-- 공용 구조체
+- Union
 
    명명 된 멤버 집합 중 하나를 포함 하는 개체입니다. 명명된 된 집합의 멤버는 모든 형식일 수 있습니다. 공용 구조체에 할당 된 저장소는 공용 구조체 맞춤에 필요한 안쪽 여백을의 가장 큰 멤버에 필요한 저장소와 동일 합니다.
 

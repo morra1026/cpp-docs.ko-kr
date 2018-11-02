@@ -1,10 +1,6 @@
 ---
-title: _mbsbtype, _mbsbtype_l | Microsoft 문서
-ms.custom: ''
+title: _mbsbtype, _mbsbtype_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbsbtype_l
 - _mbsbtype
@@ -26,24 +22,18 @@ f1_keywords:
 - mbsbtype_l
 - _mbsbtype_l
 - _mbsbtype
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbsbtype function
 - mbsbtype function
 - _mbsbtype_l function
 - mbsbtype_l function
 ms.assetid: 0d5dd91a-d32d-4f98-ac57-98dfc9e98eac
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: be098cb1fe53e1345f0c4f40212657f4bfd97f4f
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 5c2927b4e4b68b1284341fe7e767ec50feb21a44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451021"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50566805"
 ---
 # <a name="mbsbtype-mbsbtypel"></a>_mbsbtype, _mbsbtype_l
 
@@ -79,26 +69,26 @@ int _mbsbtype_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_mbsbtype** 및 **_mbsbtype_l** 에 지정 된 바이트 테스트의 결과 나타내는 정수 값을 반환 합니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
+**_mbsbtype** 하 고 **_mbsbtype_l** 지정 된 바이트에 대 한 테스트의 결과 나타내는 정수 값을 반환 합니다. 다음 표의 매니페스트 상수는 Mbctype.h에 정의됩니다.
 
 |반환 값|바이트 형식|
 |------------------|---------------|
-|**_MBC_SINGLE** (0)|싱글바이트 문자입니다. 예를 들어 코드 페이지 932에에서 **_mbsbtype** 내에 있으면 지정 된 바이트 범위 0x20-0x7E 또는 0xA1-0xDF 0을 반환 합니다.|
-|**_MBC_LEAD** (1)|멀티바이트 문자의 선행 바이트입니다. 예를 들어 코드 페이지 932에에서 **_mbsbtype** 0xFC 0x81-0x9F 또는 0xE0-범위 내에서 지정 된 바이트는 경우 1을 반환 합니다.|
-|**_MBC_TRAIL** (2)|멀티바이트 문자의 후행 바이트입니다. 예를 들어 코드 페이지 932에에서 **_mbsbtype** 0xFC 0x40-0x7E 또는 0x80-범위 내에서 지정 된 바이트는 경우 2를 반환 합니다.|
-|**_MBC_ILLEGAL** (-1)|**NULL** 문자열, 잘못 된 문자 또는 바이트 오프셋에서 이전에 찾은 null 바이트 *count* 에 *mbstr*합니다.|
+|**_MBC_SINGLE** (0)|싱글바이트 문자입니다. 코드 페이지 932에서의 예를 들어 **_mbsbtype** 지정 된 바이트는 범위에 0x20-0x7E 또는 0xA1 – 0xDF 경우 0을 반환 합니다.|
+|**_MBC_LEAD** (1)|멀티바이트 문자의 선행 바이트입니다. 코드 페이지 932에서의 예를 들어 **_mbsbtype** 지정 된 바이트는 범위에 0x81 – 0x9F 또는 0xE0 – 0xFC 있으면 1을 반환 합니다.|
+|**_MBC_TRAIL** (2)|멀티바이트 문자의 후행 바이트입니다. 코드 페이지 932에서의 예를 들어 **_mbsbtype** 내에 있으면 지정 된 바이트 범위는 0x40-0x7E 또는 0x80-0xFC 2를 반환 합니다.|
+|**_MBC_ILLEGAL** (-1)|**NULL** 문자열, 잘못 된 문자 또는 null 바이트 오프셋 바이트 앞에 있습니다 *개수* 에서 *mbstr*합니다.|
 
 ## <a name="remarks"></a>설명
 
-**_mbsbtype** 함수는 멀티 바이트 문자열의 바이트 형식을 결정 합니다. 함수 검사 오프셋에서 바이트만 *개수* 에 *mbstr*, 지정 된 바이트 앞에 잘못 된 문자를 무시 합니다.
+합니다 **_mbsbtype** 함수는 멀티 바이트 문자열에서 바이트 형식을 결정 합니다. 오프셋에 있는 바이트만 검사 하는 함수 *개수* 에 *mbstr*, 지정 된 바이트 앞에 잘못 된 문자를 무시 합니다.
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없이이 함수의 버전은 **_l** 접미사가 로캘 종속 동작에 대 한 현재 로캘을 사용 하 여 버전으로는 **_l** 제외 하 고 전달 된 로캘 매개 변수를 사용 하 여 접미사는 동일 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없이이 함수의 버전은는 **_l** 접미사가 로캘 종속 동작에 현재 로캘을 사용 버전을 합니다 **_l** 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 접미사가 동일 합니다. 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-입력된 문자열의 형식이 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **_MBC_ILLEGAL**합니다.
+입력 문자열이 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **_MBC_ILLEGAL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_mbsbtype**|\<mbstring.h>|\<mbctype.h>*|
 |**_mbsbtype_l**|\<mbstring.h>|\<mbctype.h>*|

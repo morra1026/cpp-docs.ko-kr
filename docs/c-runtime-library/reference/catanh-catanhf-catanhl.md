@@ -1,11 +1,6 @@
 ---
-title: catanh, catanhf, catanhl | Microsoft 문서
-ms.custom: ''
+title: catanh, catanhf, catanhl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - catanh
 - catanhf
@@ -30,27 +25,21 @@ f1_keywords:
 - complex/catanh
 - complex/catanhf
 - complex/catanhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - catanh function
 - catanhf function
 - catanhl function
 ms.assetid: 1b6021cb-647a-41b4-9d7f-919cc8b57b86
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cd74d00e7f5be5e7631bc33fb9b7ea13eb32a407
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c71d4e44de72b54fd334fc2464ca221f36855a3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393952"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646365"
 ---
 # <a name="catanh-catanhf-catanhl"></a>catanh, catanhf, catanhl
 
-실제 축 따라 [-1 5d; + 1] 간격 외부 분기 컷 복소수의 역 쌍 곡 탄젠트를 검색합니다.
+실수 축 따라 [-1; + 1] 간격에서 벗어난 분기를 사용 하 여 복합 숫자의 역 쌍 곡 탄젠트를 검색합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -79,17 +68,17 @@ _Lcomplex catanhl(
 
 ## <a name="return-value"></a>반환 값
 
-역 쌍 곡 탄젠트 *z*, 라디안에서입니다. 결과 실제 축을 따라 및 간격에서 경계 수 없습니다. [-iπ/2 + 2/iπ;] 허수 축을 따라 합니다. 도메인 오류가 발생 합니다 *z* [-1, + 1] 간격을 벗어납니다. 극 오류가 발생 합니다 *z* + 1 또는-1입니다.
+역 쌍 곡 탄젠트 *z*, 라디안에서입니다. 결과 간격에 실수 축을 따라 제한이 [-i π/2; + i π/2] 허수 축을 따라 합니다. 도메인 오류가 발생 *z* [-1, + 1] 간격에서 벗어난 합니다. 극 오류가 발생 *z* -1 또는 + 1입니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **catanh** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **catanh** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **catanh** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **catanh** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**catanh**, **catanhf**, **catanhl**|\<complex.h>|\<ccomplex>|
+|**catanh**하십시오 **catanhf**, **catanhl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

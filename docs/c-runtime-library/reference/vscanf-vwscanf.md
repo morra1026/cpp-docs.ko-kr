@@ -1,10 +1,6 @@
 ---
-title: vscanf, vwscanf | Microsoft Docs
-ms.custom: ''
+title: vscanf, vwscanf
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - vscanf
 - vwscanf
@@ -24,19 +20,13 @@ f1_keywords:
 - vscanf
 - vwscanf
 - _vtscanf
-dev_langs:
-- C++
 ms.assetid: d1df595b-11bc-4682-9441-a92616301e3b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 825d0d61fccc6d0f83ae8b11648a3c7a3a9c50a3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d7ba72e0dc313617211f7b9608bcbd8919bbc62f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414326"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50625087"
 ---
 # <a name="vscanf-vwscanf"></a>vscanf, vwscanf
 
@@ -68,20 +58,20 @@ int vwscanf(
 
 성공적으로 변환되고 할당된 필드 수를 반환합니다. 이때 읽혀졌지만 할당되지 않은 필드는 반환 값에 포함되지 않습니다. 반환 값이 0이면 할당된 필드가 없음을 나타냅니다.
 
-경우 *형식* 는 **NULL** 에 설명 된 대로 포인터, 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된 경우 이러한 함수가 반환 **EOF** 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *형식* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EOF** 설정 **errno** 하 **EINVAL**합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**vscanf** 함수는 표준 입력 스트림에서 데이터를 읽는 **stdin** 하 고 제공 된 위치에 데이터를 기록는 *arglist* 인수 목록입니다. 목록의 각 인수의 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *형식*합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
+합니다 **vscanf** 함수는 표준 입력 스트림에서 데이터를 읽습니다 **stdin** 의해 지정 된 위치로 데이터를 쓰고 합니다 *arglist* 인수 목록입니다. 목록의 각 인수에서 형식 지정자에 해당 하는 형식의 변수에 대 한 포인터 여야 합니다. *형식*합니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다.
 
 > [!IMPORTANT]
-> 사용 하는 경우 **vscanf** 문자열을 읽고, 항상에 대 한 너비 지정은 **%s** 형식 (예를 들어 **"%32s"** 대신 **"%s"**); 그렇지 않으면 잘못 된 형식의 입력 버퍼 오버런이 발생할 수 있습니다. [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) 또는 [fgets](fgets-fgetws.md)를 사용할 수도 있습니다.
+> 사용 하는 경우 **vscanf** 문자열을 읽고, 항상 너비를 지정 합니다 **%s** 형식 (예를 들어 **"32 초 %"** 대신 **"%s"**); 그렇지 않으면 서식이 잘못 된 입력 버퍼 오버런이 발생할 수 있습니다. [vscanf_s, vwscanf_s](vscanf-s-vwscanf-s.md) 또는 [fgets](fgets-fgetws.md)를 사용할 수도 있습니다.
 
-**vwscanf** 의 와이드 문자 버전이 **vscanf**; *형식* 인수를 **vwscanf** 는 와이드 문자 문자열입니다. **vwscanf** 및 **vscanf** 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **vscanf** UNICODE 스트림에서의 입력을 지원 하지 않습니다.
+**vwscanf** 의 와이드 문자 버전이 **vscanf**; *형식* 인수를 **vwscanf** 는 와이드 문자 문자열입니다. **vwscanf** 하 고 **vscanf** 스트림이 ANSI 모드에서 열리는 경우 동일 하 게 작동 합니다. **vscanf** UNICODE 스트림에서의 입력을 지원 하지 않습니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -91,12 +81,12 @@ int vwscanf(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**vscanf**|\<stdio.h>|
 |**vwscanf**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 응용 프로그램에서 지원 되지 않습니다. 콘솔을 사용 하는 연결 된 표준 스트림 핸들 **stdin**, **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

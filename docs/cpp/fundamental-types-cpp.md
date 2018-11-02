@@ -1,10 +1,6 @@
 ---
-title: 기본 형식 (c + +) | Microsoft Docs
-ms.custom: ''
+title: 기본 형식 (C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - __int128_cpp
 - __wchar_t_cpp
@@ -19,8 +15,6 @@ f1_keywords:
 - unsigned_cpp
 - unsigned_int_cpp
 - wchar_t_cpp
-dev_langs:
-- C++
 helpviewer_keywords:
 - specifiers [C++], type
 - float keyword [C++]
@@ -49,16 +43,12 @@ helpviewer_keywords:
 - storing types [C++]
 - data types [C++], void
 ms.assetid: 58b0106a-0406-4b74-a430-7cbd315c0f89
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7abb1efa9ca7260648574299cde454a33f84b3f4
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: f4af392ed559349b0e49fd26f3ecb4406a70b74b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46114893"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50601372"
 ---
 # <a name="fundamental-types--c"></a>기본 형식 (C++)
 
@@ -70,7 +60,7 @@ C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 �
 
 - 쉼표 연산자의 왼쪽 피연산자. 자세한 내용은 [쉼표 연산자](../cpp/comma-operator.md) 를 참조하세요.
 
-- 조건부 연산자의 두 번째 또는 세 번째 피연산자 (`? :`). 자세한 내용은 [조건 연산자를 사용하는 식](../cpp/conditional-operator-q.md) 를 참조하세요.
+- 조건 연산자의 두 번째 또는 세 번째 피연산자(`? :`)입니다. 자세한 내용은 [조건 연산자를 사용하는 식](../cpp/conditional-operator-q.md) 를 참조하세요.
 
 다음 표에서는 형식 크기에 대한 제한을 설명합니다. 이러한 제한은 Microsoft 구현과 무관합니다.
 

@@ -1,27 +1,17 @@
 ---
-title: slice_array 클래스 | Microsoft Docs
-ms.custom: ''
+title: slice_array 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - valarray/std::slice_array
-dev_langs:
-- C++
 helpviewer_keywords:
 - slice_array class
 ms.assetid: a182d5f7-f35c-4e76-86f2-b5ac64ddc846
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7cb34fd44214ac503c8b9e201d07dbe1a6eb85de
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9577447b2201c1c9e53192b99abad1979f45d15f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50467211"
 ---
 # <a name="slicearray-class"></a>slice_array 클래스
 
@@ -60,7 +50,7 @@ public:
 
 생성을 `slice_array<Type>` 개체 형식의 식을 작성 해야만 [va&#91;sl&#93;](../standard-library/valarray-class.md#op_at), 분할 영역에 대 한 `sl` valarray의 `va`. Slice_array 클래스의 멤버 함수에 대해 정의 된 해당 함수 시그니처 처럼 동작 `valarray<Type>`에 선택한 요소의 시퀀스에만 영향을 제외 하 고, 합니다. slice_array에 의해 제어되는 시퀀스는 조각 생성자의 3개 매개 변수(조각의 첫 번째 요소 인덱스, 요소의 수 및 요소 간 거리)로 정의됩니다. Valarray에서 잘라낸 slice_array `va` 선언 **va**[ `slice`(2, 5, 3)] 2, 5, 8, 11 및 14에서 인덱스를 사용 하 여 요소를 선택 `va`합니다. 인덱스가 유효해야 프로시저도 유효합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 slice_array를 선언하고 사용하는 방법의 예제는 [slice::slice](../standard-library/slice-class.md#slice)의 예제를 참조하세요.
 

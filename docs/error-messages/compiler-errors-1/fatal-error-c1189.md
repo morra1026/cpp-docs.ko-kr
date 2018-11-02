@@ -1,27 +1,17 @@
 ---
-title: 심각한 오류 C1189 | Microsoft Docs
-ms.custom: ''
+title: 심각한 오류 C1189
 ms.date: 04/27/2018
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C1189
-dev_langs:
-- C++
 helpviewer_keywords:
 - C1189
 ms.assetid: 2e5c8a78-edd4-411c-b619-558a96be148a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 051b7eb965526d12311dfacaeae7a00e4fbe4e75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 06d42316a0109ac063bba43cefebd9aab71c2e72
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50565531"
 ---
 # <a name="fatal-error-c1189"></a>심각한 오류 C1189
 
@@ -29,11 +19,11 @@ ms.locfileid: "33199796"
 
 ## <a name="remarks"></a>설명
 
-C1189에서 생성 되는 `#error` 지시문입니다. 지시문을 코딩 하는 개발자는 오류 메시지의 텍스트를 지정 합니다. 자세한 내용은 참조 [#error 지시문 (C/c + +)](../../preprocessor/hash-error-directive-c-cpp.md)합니다.
+C1189에서 생성 되는 `#error` 지시문입니다. 지시문을 코딩 하는 개발자는 오류 메시지의 텍스트를 지정 합니다. 자세한 내용은 [#error 지시문 (C/c + +)](../../preprocessor/hash-error-directive-c-cpp.md)합니다.
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 C1189 오류가 발생 합니다. 이 샘플에서는 개발자는 사용자 지정 오류 메시지를 때문에 `_WIN32` 식별자에 정의 되어 있지 않습니다.
+다음 샘플 C1189를 생성합니다. 이 샘플에서는 개발자 문제를 사용자 지정 오류 메시지 때문에 `_WIN32` 식별자가 정의 되지 않습니다.
 
 ```cpp
 // C1189.cpp

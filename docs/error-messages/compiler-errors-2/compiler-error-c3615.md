@@ -1,36 +1,27 @@
 ---
-title: 컴파일러 오류 C3615 | Microsoft Docs
+title: 컴파일러 오류 C3615
 ms.date: 10/24/2017
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3615
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3615
 ms.assetid: 5ce96ba9-3d31-49f3-9aa8-24e5cdf6dcfc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ce1ab43f8e15535614cedf43dba42fef882bf87a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e966295b5ab63350828ddb73d6791a9e30bb5c59
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253396"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652220"
 ---
 # <a name="compiler-error-c3615"></a>컴파일러 오류 C3615
 
 > constexpr 함수 '*함수*' 상수 식이 될 수 없습니다
 
-함수 *함수* 로 평가 될 수 없습니다 `constexpr` 컴파일 타임에 있습니다. 되도록 `constexpr`, 함수는 호출할 수 있습니다. 다른 `constexpr` 함수입니다.
+함수 *함수* 으로 평가할 수 없습니다. `constexpr` 컴파일 타임에 있습니다. 되도록 `constexpr`에서 함수를 호출할 수 있습니다. 다른 `constexpr` 함수입니다.
 
 ## <a name="example"></a>예제
 
-조건에 따라 평가 연산의 왼쪽 피연산자에서 유효 하지 않을 때 올바르게 visual Studio 2017에서 오류가 발생 한 `constexpr` 컨텍스트. Visual Studio 2017 있지만 Visual Studio 2015에 다음 코드를 컴파일합니다.
+조건부 계산 연산의 왼쪽 피연산자에서 유효 하지 않을 때 visual Studio 2017 오류를 올바르게 생성을 `constexpr` 컨텍스트. 다음 코드는 Visual Studio 2017 아니라 Visual Studio 2015에서 컴파일합니다.
 
 ```cpp
 // C3615.cpp
@@ -48,4 +39,4 @@ constexpr bool f(const myarray<1> &arr)
 }
 ```
 
-이 문제를 해결 하려면 선언 중 하나는 `array::size()` 클라이언트로 작동할 `constexpr` 또는 제거는 `constexpr` 한정자 `f`합니다.
+선언 하거나이 문제를 해결 하려면 합니다 `array::size()` 역할도 `constexpr` 또는 제거 합니다 `constexpr` 한정자 `f`합니다.

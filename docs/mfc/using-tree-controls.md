@@ -1,26 +1,16 @@
 ---
-title: 트리 컨트롤 사용 | Microsoft Docs
-ms.custom: ''
+title: 트리 컨트롤 사용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CTreeCtrl class [MFC], using
 - tree controls [MFC], about tree controls
 ms.assetid: 4e92941a-e477-4fb1-b1ce-4abeafbef1c1
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fc3efbf48a9005bf117c2dd7ab5f1bd01ed556d
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2a42392253f158365af6bf9f7a5e4a1f4df93e95
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46403684"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653404"
 ---
 # <a name="using-tree-controls"></a>트리 컨트롤 사용
 
@@ -38,7 +28,7 @@ ms.locfileid: "46403684"
 
 - 컨트롤의 내용을 검사 하는 다양 한 Get 함수를 사용 합니다. 또한 부모, 자식 및 형제의 지정된 된 항목에 대 한 핸들을 검색할 수 있도록 하는 함수를 사용 하 여 트리 컨트롤의 내용을 탐색할 수 있습니다. 특정 노드의 자식을 정렬할 수 있습니다.
 
-- 컨트롤을 사용 하 여 완료 하는 경우 제대로 제거 해야 합니다. 트리 컨트롤은 대화 상자 또는 뷰일 경우이 고 `CTreeCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CTreeCtrl` 개체가 모두 제대로 소멸되었는지 확인해야 합니다.
+- 컨트롤을 사용 하 여 완료 하는 경우 제대로 제거 해야 합니다. 트리 컨트롤은 대화 상자 또는 뷰일 경우이 고 `CTreeCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CTreeCtrl` 개체가 모두 제대로 제거되었는지 확인해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

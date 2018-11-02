@@ -1,10 +1,6 @@
 ---
-title: nan, nanf, nanl | Microsoft Docs
-ms.custom: ''
+title: nan, nanf, nanl
 ms.date: 94/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - nanf
 - nan
@@ -26,23 +22,17 @@ f1_keywords:
 - nan
 - nanl
 - nanf
-dev_langs:
-- C++
 helpviewer_keywords:
 - nan function
 - nanf function
 - nanl function
 ms.assetid: 790e9158-80ab-43e0-8f5a-096198553fd9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 204d59d88c97d9b0fa161fda6f64f31267c73fd5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22b0e14094a0b6f0f3571c4d7551552210177a22
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401453"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610264"
 ---
 # <a name="nan-nanf-nanl"></a>nan, nanf, nanl
 
@@ -63,17 +53,17 @@ long double nanl( const char* input );
 
 ## <a name="return-value"></a>반환 값
 
-**nan** 함수는 quiet NaN 값을 반환 합니다.
+합니다 **nan** 함수는 quiet NaN 값을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**nan** 함수는 quiet (비 신호) NaN에 해당 하는 부동 소수점 값을 반환 합니다. *입력* 값은 무시 됩니다. 출력에 NaN이 나타나는 방법에 대한 자세한 내용은 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)를 참조하세요.
+합니다 **nan** 함수는 quiet (비 신호) NaN에 해당 하는 부동 소수점 값을 반환 합니다. 합니다 *입력* 값은 무시 됩니다. 출력에 NaN이 나타나는 방법에 대한 자세한 내용은 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**nan**, **nanf**, **nanl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**nan**하십시오 **nanf**, **nanl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 ## <a name="see-also"></a>참고자료
 

@@ -1,10 +1,6 @@
 ---
-title: '&lt;chrono&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;chrono&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::nanoseconds
 - chrono/std::chrono::minutes
@@ -13,25 +9,19 @@ f1_keywords:
 - chrono/std::chrono::hours
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
-dev_langs:
-- C++
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d701b290100f812f3c7845096960561cb101472
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 904e4df6b6c16b846ab4417d24a1d9836380d75b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847496"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50544549"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
 표준 헤더 \<chrono>를 포함하여 기간 및 시간 인스턴트를 나타내고 조작하는 클래스와 함수를 정의합니다.
 
-Visual Studio 2015에서 구현부터 `steady_clock` 지 속성 및 단 조성에 대 한 c + + 표준 요구 사항을 충족 하도록 변경 되었습니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 Visual C++에서 `steady_clock::time_point`는 현재 `chrono::time_point<steady_clock>`에 대한 typedef이나, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
+Visual Studio 2015에서 구현부터 `steady_clock` 속성 및 단 조성에 대 한 c + + 표준 요구 사항을 충족 하도록 변경 되었습니다. 현재 `steady_clock`은 QueryPerformanceCounter()를 기반으로 하며 `high_resolution_clock`은 `steady_clock`에 대한 typedef입니다. 따라서 Visual C++에서 `steady_clock::time_point`는 현재 `chrono::time_point<steady_clock>`에 대한 typedef이나, 다른 구현에 이를 반드시 적용할 필요는 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -75,7 +65,7 @@ Visual Studio 2015에서 구현부터 `steady_clock` 지 속성 및 단 조성�
 |[operator+](../standard-library/chrono-operators.md#op_add)|`duration` 및 `time_point` 개체를 추가합니다.|
 |[operator&lt;](../standard-library/chrono-operators.md#op_lt)|하나의 `duration` 또는 `time_point`개체가 다른 `duration` 또는 `time_point` 개체보다 작은지 여부를 확인합니다.|
 |[operator&lt;=](../standard-library/chrono-operators.md#op_lt_eq)|하나의 `duration` 또는 `time_point`개체가 다른 `duration` 또는 `time_point` 개체보다 작거나 같은지 여부를 확인합니다.|
-|[operator==](../standard-library/chrono-operators.md#op_eq_eq)|두 `duration` 개체가 길이가 동일한 시간 간격을 나타내는지 여부 또는 두 `time_point` 개체가 동일한 시점을 나타내는지 여부를 확인합니다.|
+|[연산자==](../standard-library/chrono-operators.md#op_eq_eq)|두 `duration` 개체가 길이가 동일한 시간 간격을 나타내는지 여부 또는 두 `time_point` 개체가 동일한 시점을 나타내는지 여부를 확인합니다.|
 |[operator&gt;](../standard-library/chrono-operators.md#op_gt)|하나의 `duration` 또는 `time_point`개체가 다른 `duration` 또는 `time_point` 개체보다 큰지 여부를 확인합니다.|
 |[operator&gt;=](../standard-library/chrono-operators.md#op_gt_eq)|하나의 `duration` 또는 `time_point`개체가 다른 `duration` 또는 `time_point` 개체보다 크거나 같은지 여부를 확인합니다.|
 
@@ -99,9 +89,9 @@ Visual Studio 2015에서 구현부터 `steady_clock` 지 속성 및 단 조성�
 |Literal|설명|
 |-------------|-----------------|
 |chrono::hours 연산자 "" h(부호 없는 long long Val)|정수 계열 값으로 시간을 지정합니다.|
-|chrono::\<double 비율\<3600 >> 연산자 "" h (long double Val)|부동 소수점 값으로 시간을 지정합니다.|
+|chrono:: duration\<이중선 비율\<3600 >> 연산자 "" h (long double Val)|부동 소수점 값으로 시간을 지정합니다.|
 |chrono::minutes (연산자 "" min)(부호 없는 long long Val)|정수 계열 값으로 분을 지정합니다.|
-|chrono::\<double 비율\<60 >> (연산자 "" min) (long double Val)|부동 소수점 값으로 분을 지정합니다.|
+|chrono:: duration\<이중선 비율\<60 >> (연산자 "" min) (long double Val)|부동 소수점 값으로 분을 지정합니다.|
 |chrono::seconds 연산자 "" s(부호 없는 long long Val)|정수 계열 값으로 분을 지정합니다.|
 |chrono::duration\<double> 연산자 "" s(long double Val)|부동 소수점 값으로 초를 지정합니다.|
 |chrono::milliseconds 연산자 "" ms(부호 없는 long long Val)|정수 계열 값으로 밀리초를 지정합니다.|

@@ -1,10 +1,6 @@
 ---
-title: _strdate, _wstrdate | Microsoft Docs
-ms.custom: ''
+title: _strdate, _wstrdate
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strdate
 - _wstrdate
@@ -27,8 +23,6 @@ f1_keywords:
 - _wstrdate
 - _strdate
 - strdate
-dev_langs:
-- C++
 helpviewer_keywords:
 - strdate function
 - dates, copying
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _tstrdate function
 - copying dates
 ms.assetid: de8e4097-58f8-42ba-9dcd-cb4d9a9f1696
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8924ac1ad29408dd1d69a68c6f31d9194831fbc2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4dc2ea7f25e644c9bf7a4ddca4a625991f37d912
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411359"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50639613"
 ---
 # <a name="strdate-wstrdate"></a>_strdate, _wstrdate
 
@@ -86,15 +76,15 @@ wchar_t *_wstrdate(
 
 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [_strdate_s, _wstrdate_s](strdate-s-wstrdate-s.md)를 참조하세요. 가능한 경우에는 항상 더 안전한 함수를 사용하는 것이 좋습니다.
 
-**_strdate** 함수는 현재 시스템 날짜를 가리키는 버퍼에 복사 *datestr*포맷 된 **mm**/**dd** / **yy**여기서 **mm** 는 월을 나타내는 두 자리 숫자로 **dd** 는 날짜를 나타내는 두 자리 숫자로 및 **yy**  은 해당 연도의 마지막 두 자리 숫자입니다. 예를 들어 문자열 **12/05/99** 1999 년 12 월 5 일을 나타냅니다. 버퍼는 9바이트 이상이어야 합니다.
+합니다 **_strdate** 함수는 현재 시스템 날짜를 가리키는 버퍼에 복사 *datestr*서식을 **mm**/**dd** / **yy**여기서 **mm** 는 월을 나타내는 두 자리 숫자로 **dd** 는 일을 나타내는 두 자리 숫자로 및 **yy**  연도의 마지막 두 자리 됩니다. 예를 들어, 문자열 **9905/12/** 1999 년 12 월 5 일을 나타냅니다. 버퍼는 9바이트 이상이어야 합니다.
 
-경우 *datestr* 는 **NULL** 에 설명 된 대로 포인터, 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+하는 경우 *datestr* 되는 **NULL** 에 설명 된 대로 포인터인 경우 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
 
-**_wstrdate** 의 와이드 문자 버전이 **_strdate**; 인수 및 반환 값의 **_wstrdate** 는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wstrdate** 의 와이드 문자 버전이 **_strdate**;의 인수와 반환 값 **_wstrdate** 는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -102,7 +92,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strdate**|\<time.h>|
 |**_wstrdate**|\<time.h> 또는 \<wchar.h>|

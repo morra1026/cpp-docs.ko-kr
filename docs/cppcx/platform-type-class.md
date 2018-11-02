@@ -1,27 +1,19 @@
 ---
-title: 'Platform:: type 클래스 | Microsoft Docs'
-ms.custom: ''
+title: Platform::Type 클래스
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Type::GetTypeCode
 - VCCORLIB/Platform::Type::FullName
-dev_langs:
-- C++
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ea0723d1dfa3c278ab385e393cd0f3b0d9f633f0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 8df41f8845bad0847e8835c1c6c3a1019d2621d3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109060"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50517067"
 ---
 # <a name="platformtype-class"></a>Platform::Type 클래스
 
@@ -56,8 +48,8 @@ public ref class Platform::Type :
 
 |||
 |-|-|
-|[operator Type^](../cppcx/operator-type-hat.md)|`Windows::UI::Xaml::Interop::TypeName` 을 `Platform::Type`으로 변환할 수 있습니다.|
-|[operator Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)|`Platform::Type` 을 `Windows::UI::Xaml::Interop::TypeName`으로 변환할 수 있습니다.|
+|[연산자 Type^](../cppcx/operator-type-hat.md)|`Windows::UI::Xaml::Interop::TypeName` 을 `Platform::Type`으로 변환할 수 있습니다.|
+|[연산자 Windows::UI::Xaml::Interop::TypeName](../cppcx/operator-windows-ui-xaml-interop-typename.md)|`Platform::Type` 을 `Windows::UI::Xaml::Interop::TypeName`으로 변환할 수 있습니다.|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -112,7 +104,7 @@ Platform::TypeCode 열거형 값의 하나입니다.
 
 ### <a name="remarks"></a>설명
 
-gettypecode () 멤버 메서드에 해당 합니다 `typeid` 속성입니다.
+`typeid` 속성은 GetTypeCode() 멤버 메서드에 해당합니다.
 
 ## <a name="tostring"></a> Type::ToString 메서드
 
