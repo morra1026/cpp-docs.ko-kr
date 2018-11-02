@@ -1,10 +1,6 @@
 ---
-title: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l | Microsoft Docs
-ms.custom: ''
+title: _strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strlwr_s_l
 - _mbslwr_s_l
@@ -41,8 +37,6 @@ f1_keywords:
 - _mbslwr_s_l
 - wcslwr_s
 - _mbslwr_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tcslwr_s function
 - wcslwr_s function
@@ -66,23 +60,19 @@ helpviewer_keywords:
 - tcslwr_s_l function
 - strings [C++], converting case
 ms.assetid: 4883d31b-bdac-4049-83a1-91dfdeceee79
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 61f3db37a61a30909e8deadee96c3bfbe2c46bb5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b7eb9d81b1269018cd41c80c1f9c15aa92a4f85a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415341"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50497261"
 ---
 # <a name="strlwrs-strlwrsl-mbslwrs-mbslwrsl-wcslwrs-wcslwrsl"></a>_strlwr_s, _strlwr_s_l, _mbslwr_s, _mbslwr_s_l, _wcslwr_s, _wcslwr_s_l
 
 현재 로캘 또는 전달된 로캘 개체를 사용하여 문자열을 소문자로 변환합니다. 이러한 버전의 [_strlwr, _wcslwr, _mbslwr, _strlwr_l, _wcslwr_l, _mbslwr_l](strlwr-wcslwr-mbslwr-strlwr-l-wcslwr-l-mbslwr-l.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 향상된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbslwr_s** 및 **_mbslwr_s_l** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbslwr_s** 하 고 **_mbslwr_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -158,11 +148,11 @@ errno_t _wcslwr_s_l(
 
 정상적으로 실행되는 경우 0이고 오류가 발생하는 경우 0이 아닌 오류 코드입니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *str* 유효한 null로 끝나는 문자열이 아닌지에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 허용 된 경우 함수는 반환 **EINVAL** 설정 **errno** 를 **EINVAL**합니다. 경우 *numberOfElements* 함수도 반환 합니다.이 문자열의 길이 보다 작으면 **EINVAL** 설정 **errno** 를 **EINVAL**합니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *str* 유효한 null 종료 문자열이 아닙니다에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md) 합니다. 실행을 계속 하도록 허용 된 경우이 함수는 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다. 하는 경우 *numberOfElements* 반환할 수도 함수는 문자열의 길이 보다 작으면 **EINVAL** 설정 **errno** 에 **EINVAL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_strlwr_s** 함수 변환 장소에 모든 대문자의 *str* 소문자로 변경 합니다. **_mbslwr_s** 멀티 바이트 문자 버전의 **_strlwr_s**합니다. **_wcslwr_s** 의 와이드 문자 버전이 **_strlwr_s**합니다.
+합니다 **_strlwr_s** 원위치에서 함수 변환의 모든 대문자 *str* 소문자로 합니다. **_mbslwr_s** 의 멀티 바이트 문자 버전입니다 **_strlwr_s**합니다. **_wcslwr_s** 의 와이드 문자 버전이 **_strlwr_s**합니다.
 
 출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. **_l** 접미사가 없는 이러한 함수 버전은 이 로캘 종속 동작에 현재 로캘을 사용하며, **_l** 접미사가 있는 버전은 전달된 로캘 매개 변수를 대신 사용하는 경우를 제외하고는 동일합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
@@ -170,7 +160,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 이러한 함수의 디버그 버전은 우선 0xFD로 버퍼를 채웁니다. 이 동작을 사용하지 않으려면 [_CrtSetDebugFillThreshold](crtsetdebugfillthreshold.md)를 사용하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -179,7 +169,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strlwr_s**, **_strlwr_s_l**|\<string.h>|
 |**_mbslwr_s**, **_mbslwr_s_l**|\<mbstring.h>|

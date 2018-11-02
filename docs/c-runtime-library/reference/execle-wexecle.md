@@ -1,10 +1,6 @@
 ---
-title: _execle, _wexecle | Microsoft 문서
-ms.custom: ''
+title: _execle, _wexecle
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _execle
 - _wexecle
@@ -25,24 +21,18 @@ f1_keywords:
 - wexecle
 - _execle
 - _wexecle
-dev_langs:
-- C++
 helpviewer_keywords:
 - wexecle function
 - execle function
 - _wexecle function
 - _execle function
 ms.assetid: 75efa9c5-96b7-4e23-acab-06258901f63a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 519cdb78132c50513ae3197985de7faaceff7c91
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dbd84dd8d8e150a063dad4dc89a572c317bce544
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400644"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530522"
 ---
 # <a name="execle-wexecle"></a>_execle, _wexecle
 
@@ -83,7 +73,7 @@ intptr_t _wexecle(
 
 ## <a name="return-value"></a>반환 값
 
-성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1은 오류를 나타내며이 경우는 **errno** 전역 변수가 설정 됩니다.
+성공하면 이러한 함수는 호출 프로세스에 값을 반환하지 않습니다. 반환 값이-1 나타냅니다 오류가 있는 경우에 **errno** 전역 변수가 설정 됩니다.
 
 |**errno** 값|설명|
 |-------------------|-----------------|
@@ -101,11 +91,11 @@ intptr_t _wexecle(
 
 이러한 각 함수는 새 프로세스를 로드 및 실행하고, 각 명령줄 인수를 별도의 매개 변수로 전달하고, 포인터 배열을 환경 설정으로 전달합니다.
 
-**_execle** 함수는 매개 변수의 유효성을 검사 합니다. 경우 *cmdname* 또는 *arg0* null 포인터 또는 빈 문자열인 경우에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는이 함수를 이러한 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL** 고-1을 반환 합니다. 새 프로세스가 시작되지 않습니다.
+합니다 **_execle** 함수 매개 변수 유효성을 검사 합니다. 하는 경우 *cmdname* 또는 *arg0* 가 null 포인터 이거나 빈 문자열인 경우 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL** 고-1을 반환 합니다. 새 프로세스가 시작되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|선택적 헤더|
+|기능|필수 헤더|선택적 헤더|
 |--------------|---------------------|---------------------|
 |**_execle**|\<process.h>|\<errno.h>|
 |**_wexecle**|\<process.h> 또는 \<wchar.h>|\<errno.h>|

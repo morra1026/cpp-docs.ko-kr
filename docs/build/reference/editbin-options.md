@@ -1,27 +1,17 @@
 ---
-title: EDITBIN 옵션 | Microsoft Docs
-ms.custom: ''
+title: EDITBIN 옵션
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - editbin
-dev_langs:
-- C++
 helpviewer_keywords:
 - EDITBIN program, options
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0850f242b8368a9592a5622e627c781b4df4cde5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 263cfb79897ae60daff64521928db865f1dcb874
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45710140"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540545"
 ---
 # <a name="editbin-options"></a>EDITBIN 옵션
 
@@ -47,7 +37,7 @@ EDITBIN 다음 옵션이 있습니다.
 |[/NXCOMPAT](../../build/reference/nxcompat.md)|실행 가능 이미지가 Windows 데이터 실행 방지와 호환되는지 여부를 지정합니다.|
 |[/REBASE](../../build/reference/rebase.md)|지정된 개체에 대한 기준 주소를 설정합니다.|
 |[/RELEASE](../../build/reference/release.md)|헤더에 체크섬을 설정합니다.|
-|[/ 섹션](../../build/reference/section-editbin.md)|섹션의 특성을 재정의합니다.|
+|[/SECTION](../../build/reference/section-editbin.md)|섹션의 특성을 재정의합니다.|
 |[/STACK](../../build/reference/stack.md)|실행 가능 이미지의 스택 크기(바이트)를 설정합니다.|
 |[/SUBSYSTEM](../../build/reference/subsystem.md)|실행 환경을 지정합니다.|
 |[/SWAPRUN](../../build/reference/swaprun.md)|실행 가능 이미지를 스왑 파일에 복사한 후 여기에서 실행해야 하도록 지정합니다.|

@@ -1,12 +1,6 @@
 ---
-title: 명령 라우팅 | Microsoft Docs
-ms.custom: ''
+title: 명령 라우팅
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC, command routing
 - command handling [MFC], routing commands
@@ -14,16 +8,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 543b9e34c881285c295fb7ab7ee2107e36c99a9c
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: add047984f5a32e505e8a739922daa137b5e671d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46418322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541702"
 ---
 # <a name="command-routing"></a>명령 라우팅
 
@@ -45,11 +35,11 @@ ms.locfileid: "46418322"
 
 |명령을 수신하는 개체 형식 . .|자신 및 다른 명령 대상 개체가 명령을 처리하는 순서|
 |----------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|MDI 프레임 창(`CMDIFrameWnd`)|1.  Active `CMDIChildWnd`<br />2.  이 프레임 창<br />3.  응용 프로그램 (`CWinApp` 개체)|
-|문서 프레임 창(`CFrameWnd`, `CMDIChildWnd`)|1.  활성 뷰<br />2.  이 프레임 창<br />3.  응용 프로그램 (`CWinApp` 개체)|
+|MDI 프레임 창(`CMDIFrameWnd`)|1.  활성 `CMDIChildWnd`<br />2.  이 프레임 창<br />3.  응용 프로그램(`CWinApp` 개체)|
+|문서 프레임 창(`CFrameWnd`, `CMDIChildWnd`)|1.  활성 뷰<br />2.  이 프레임 창<br />3.  응용 프로그램(`CWinApp` 개체)|
 |보기|1.  이 뷰<br />2.  뷰에 연결된 문서|
 |문서|1.  이 문서<br />2.  문서에 연결된 문서 템플릿|
-|대화 상자|1.  이 대화 상자<br />2.  대화 상자를 소유하는 창<br />3.  응용 프로그램 (`CWinApp` 개체)|
+|대화 상자|1.  이 대화 상자<br />2.  대화 상자를 소유하는 창<br />3.  응용 프로그램(`CWinApp` 개체)|
 
 선행하는 테이블의 두 번째 열에 있는 번호가 매겨진 항목에서 다른 개체(예: 문서)를 지정한 경우 첫 번째 열에서 해당 항목을 참조합니다. 예를 들어, 두 번째 열에 뷰가 명령을 해당 문서에 전달하는 것으로 지정된 경우 이후의 라우팅을 확인하려면 첫 번째 열에 있는 "문서" 항목을 참조합니다.
 
