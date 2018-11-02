@@ -1,10 +1,6 @@
 ---
-title: regex_traits 클래스 | Microsoft Docs
-ms.custom: ''
+title: regex_traits 클래스
 ms.date: 09/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - regex/std::regex_traits
 - regex/std::regex_traits::char_type
@@ -23,8 +19,6 @@ f1_keywords:
 - regex/std::regex_traits::value
 - regex/std::regex_traits::imbue
 - regex/std::regex_traits::getloc
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::regex_traits [C++]
 - std::regex_traits [C++], char_type
@@ -44,16 +38,12 @@ helpviewer_keywords:
 - std::regex_traits [C++], imbue
 - std::regex_traits [C++], getloc
 ms.assetid: bc5a5eed-32fc-4eb7-913d-71c42e729e81
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ff45758e0c458ea333595ced51476826651b593e
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 80739d3d8f4bfd38dc3d252a5f3d6308653a7bb9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45723894"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50484060"
 ---
 # <a name="regextraits-class"></a>regex_traits 클래스
 
@@ -107,7 +97,7 @@ class regex_traits
 |[transform_primary](#transform_primary)|정렬된 해당 caseless 시퀀스로 변환합니다.|
 |[번역하기](#translate)|일치하는 해당 요소로 변환합니다.|
 |[translate_nocase](#translate_nocase)|해당 caseless 일치하는 요소로 변환합니다.|
-|[value](#value)|요소를 숫자 값으로 변환합니다.|
+|[값](#value)|요소를 숫자 값으로 변환합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
