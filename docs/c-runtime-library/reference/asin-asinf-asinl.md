@@ -1,10 +1,6 @@
 ---
-title: asin, asinf, asinl | Microsoft 문서
-ms.custom: ''
+title: asin, asinf, asinl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - asinf
 - asinl
@@ -26,8 +22,6 @@ f1_keywords:
 - asin
 - asinl
 - asinf
-dev_langs:
-- C++
 helpviewer_keywords:
 - asin function
 - asinl function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - trigonometric functions
 - arcsine function
 ms.assetid: ca05f9ea-b711-49f6-9f32-2f4019abfd69
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee65e4c8ce884ac42de35a23c81dbf5009dd1185
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 20a2ffc37ea666207b9558cb5c282c414cfd4838
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393279"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50476052"
 ---
 # <a name="asin-asinf-asinl"></a>asin, asinf, asinl
 
@@ -70,25 +60,25 @@ long double asin( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**asin** 함수 (역 사인 함수)의 아크사인을 반환 *x* π/2 라디안으로 범위-π/2에서입니다.
+합니다 **asin** 의 아크사인 (역 사인 함수)를 반환 *x* 는 범위-π/2 ~ π/2 라디안에서에서.
 
-기본적으로 경우 *x* 가-1 보다 작거나 1 보다 큰 경우 **asin** 는 무한를 반환 합니다.
+기본적으로 하는 경우 *x* -1 보다 작거나 1 보다 크면 **asin** 는 무한 한 값을 반환 합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
-|± ∞|**올바르지 않음**|**_DOMAIN**|
-|± **QNAN**, **IND**|없음|**_DOMAIN**|
-|&#124;x&#124;>1|**올바르지 않음**|**_DOMAIN**|
+|± ∞|**올바르지 않음**|**(_D)**|
+|**QNAN**, **찾기**|없음|**(_D)**|
+|&#124;x&#124;>1|**올바르지 않음**|**(_D)**|
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **asin** 와 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **asin** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **asin** 사용 하 여 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **asin** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더(C)|필수 헤더(C++)|
+|루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-------------|---------------------|-|
-|**asin**, **asinf**, **asinl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**asin**하십시오 **asinf**, **asinl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 ## <a name="example"></a>예제
 

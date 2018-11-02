@@ -1,10 +1,6 @@
 ---
-title: _query_new_handler | Microsoft Docs
-ms.custom: ''
+title: _query_new_handler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _query_new_handler
 apilocation:
@@ -23,24 +19,18 @@ apitype: DLLExport
 f1_keywords:
 - _query_new_handler
 - query_new_handler
-dev_langs:
-- C++
 helpviewer_keywords:
 - query_new_handler function
 - handler routines
 - error handling
 - _query_new_handler function
 ms.assetid: 9a84b5c3-fe33-4c01-83a0-be87dc3ec518
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 340574a57bf1e6309ac9a5e1aa59b7e28632ae59
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: febefbe46d95b7e5c8de026806a20d7eff74e7cc
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401001"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516001"
 ---
 # <a name="querynewhandler"></a>_query_new_handler
 
@@ -56,15 +46,15 @@ _PNH _query_new_handler(
 
 ## <a name="return-value"></a>반환 값
 
-설정한 대로 현재 새 처리기 루틴 주소 반환 **_set_new_handler**합니다.
+설정한 대로 현재 새 처리기 루틴의 주소를 반환 **_set_new_handler**합니다.
 
 ## <a name="remarks"></a>설명
 
-C + + **_query_new_handler** 함수는 c + +로 설정 된 현재 예외 처리 함수의 주소를 반환 합니다. [_set_new_handler](set-new-handler.md) 함수입니다. **_set_new_handler** 경우 제어할 수 있는 예외 처리 함수를 지정 하는 데 사용 되는 **새** 연산자가 메모리 할당에 실패 합니다. 자세한 내용은 C++ 언어 참조의 [new 및 delete 연산자](../../cpp/new-and-delete-operators.md)에 대한 설명을 참조하세요.
+C + + **_query_new_handler** 함수는 c + + 설정한 현재 예외 처리 함수의 주소를 반환 합니다. [_set_new_handler](set-new-handler.md) 함수입니다. **_set_new_handler** 경우 제어권을 얻는 예외 처리 함수를 지정 하는 데 사용 되는 **새** 연산자 메모리 할당에 실패 합니다. 자세한 내용은 C++ 언어 참조의 [new 및 delete 연산자](../../cpp/new-and-delete-operators.md)에 대한 설명을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_query_new_handler**|\<new.h>|
 

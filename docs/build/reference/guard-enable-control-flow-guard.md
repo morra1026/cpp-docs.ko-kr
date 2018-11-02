@@ -1,26 +1,16 @@
 ---
-title: -guard (제어 흐름 보호 사용) | Microsoft Docs
-ms.custom: ''
+title: /guard(제어 흐름 보호 사용)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - /guard
 - VC.Project.VCCLCompilerTool.ControlFlowGuard
-dev_langs:
-- C++
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f480dde44073b6674985f4c814fdc0c476da0144
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 8b15318ab7ae4233d6cf02a505ffe901bbe1d689
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45701469"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50516075"
 ---
 # <a name="guard-enable-control-flow-guard"></a>/guard(제어 흐름 보호 사용)
 

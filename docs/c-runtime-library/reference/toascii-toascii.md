@@ -1,10 +1,6 @@
 ---
-title: toascii, __toascii | Microsoft Docs
-ms.custom: ''
+title: toascii, __toascii
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - __toascii
 apilocation:
@@ -25,24 +21,18 @@ f1_keywords:
 - toascii
 - ctype/toascii
 - ctype/__toascii
-dev_langs:
-- C++
 helpviewer_keywords:
 - toascii function
 - string conversion, to ASCII characters
 - __toascii function
 - ASCII characters, converting to
 ms.assetid: a07c0608-b0e2-4da2-a20c-7b64d6a9b77c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cead516a7e298e56d13d8f1a09a054057796ca64
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22f76bdbdb21eb5b3cc9a226c111e321ee2fd0ce
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408424"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50578973"
 ---
 # <a name="toascii-toascii"></a>toascii, __toascii
 
@@ -68,17 +58,17 @@ int __toascii(
 
 ## <a name="remarks"></a>설명
 
-**__toascii** 루틴 하위 7 비트를 잘라 지정 된 문자를 ASCII 문자로 변환 합니다. 다른 변환은 적용되지 않습니다.
+합니다 **__toascii** 루틴의 하위 7 비트를 잘라내는 방법으로 지정 된 문자를 ASCII 문자로 변환 합니다. 다른 변환은 적용되지 않습니다.
 
-**__toascii** 전처리기 매크로 _CTYPE_DISABLE_MACROS 정의 되어 있지 않으면 루틴은 매크로로 정의 합니다. 이전 버전과 호환성에 대 한 **toascii** 매크로로 정의 된 경우에만 [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) 이 정의 되지 않았거나; 0으로 정의한 그렇지 않으면 정의 되지 않습니다.
+합니다 **__toascii** 전처리기 매크로 _CTYPE_DISABLE_MACROS가 정의 루틴이 매크로로 정의 됩니다. 이전 버전과 호환성을 위해 **toascii** 매크로로 정의 된 경우에만 [ &#95; &#95;STDC&#95; &#95; ](../../preprocessor/predefined-macros.md) 정의 되지 않았거나 0으로 정의 된 그렇지 않으면 정의 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**toascii**, **__toascii**|C: \<ctype.h><br /><br /> C++: \<cctype> 또는 \<ctype.h>|
 
-**toascii** 매크로 POSIX 확장 및 **__toascii** POSIX 확장의 Microsoft 관련 구현입니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+합니다 **toascii** 매크로 POSIX 확장이 고 **__toascii** POSIX 확장의 Microsoft 관련 구현입니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고자료
 

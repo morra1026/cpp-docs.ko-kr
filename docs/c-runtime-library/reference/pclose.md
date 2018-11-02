@@ -1,10 +1,6 @@
 ---
-title: _pclose | Microsoft Docs
-ms.custom: ''
+title: _pclose
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _pclose
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - _pclose
 - pclose
-dev_langs:
-- C++
 helpviewer_keywords:
 - _pclose function
 - pclose function
 - pipes, closing
 ms.assetid: e2e31a9e-ba3a-4124-bcbb-c4040110b3d3
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 01e58c23bc91e8819abb3cd24f1ed01ee161ff8f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eb0f54ec27992cd0e62b11d8fec5bd54c3daea4b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401778"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50507720"
 ---
 # <a name="pclose"></a>_pclose
 
@@ -59,21 +49,21 @@ FILE *stream
 ### <a name="parameters"></a>매개 변수
 
 *스트림*<br/>
-반환 값에 대 한 이전 호출에서 **_popen**합니다.
+에 대 한 이전 호출에서 값 반환 **_popen**합니다.
 
 ## <a name="return-value"></a>반환 값
 
-오류가 발생 한 경우에 종료 명령 처리기 또는-1의 종료 상태를 반환 합니다. 에 대 한 반환 값의 형식은 같습니다 **_cwait**하위 및 상위 바이트 바뀐다는 점을 제외 하 고, 합니다. 스트림이 **NULL**, **_pclose** 설정 **errno** 를 **EINVAL** 하 고-1을 반환 합니다.
+오류가 발생 하는 경우에 종료 명령 프로세서 또는-1의 종료 상태를 반환 합니다. 에 대 한 반환 값의 형식은 동일 **_cwait**하위 및 상위 바이트 바뀐다는 점을 제외 하 고, 합니다. 스트림이 **NULL**를 **_pclose** 설정 **errno** 하 **EINVAL** -1을 반환 합니다.
 
 이 오류 및 다른 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**_pclose** 함수는 연결 된 시작 명령 처리기 (Cmd.exe)의 프로세스 ID를 조회 **_popen** 호출, 실행 한 [_cwait](cwait.md) 새 명령에서 호출 프로세서, 연결 된 파이프에서 스트림을 닫습니다.
+합니다 **_pclose** 함수는 연결 된 시작 명령 프로세서 (Cmd.exe)의 프로세스 ID를 조회 **_popen** 호출, 실행을 [_cwait](cwait.md) 새 명령을 호출 합니다. 프로세서 및 연결된 된 파이프에서 스트림을 닫습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_pclose**|\<stdio.h>|
 

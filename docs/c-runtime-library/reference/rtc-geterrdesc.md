@@ -1,10 +1,6 @@
 ---
-title: _RTC_GetErrDesc | Microsoft Docs
-ms.custom: ''
+title: _RTC_GetErrDesc
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _RTC_GetErrDesc
 apilocation:
@@ -22,23 +18,17 @@ apitype: DLLExport
 f1_keywords:
 - RTC_GetErrDesc
 - _RTC_GetErrDesc
-dev_langs:
-- C++
 helpviewer_keywords:
 - run-time errors
 - _RTC_GetErrDesc function
 - RTC_GetErrDesc function
 ms.assetid: 7994ec2b-5488-4fd4-806d-a166c9a9f927
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7154f6de192ee6b681ed0419126f3d4b682abb8c
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: d164626ea89bbe10f5b2ffe4224bf6381e40bab0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451347"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590309"
 ---
 # <a name="rtcgeterrdesc"></a>_RTC_GetErrDesc
 
@@ -55,15 +45,15 @@ const char * _RTC_GetErrDesc(
 ### <a name="parameters"></a>매개 변수
 
 *errnum*<br/>
-0과 **_RTC_NumErrors**에서 반환한 값에서 1을 뺀 수 사이의 숫자입니다.
+0과 **_RTC_NumErrors**에서 반환한 값에서 1을 뺀 수 사이의 숫자를 반환합니다.
 
 ## <a name="return-value"></a>반환 값
 
-런타임 오류 검사 시스템에서 검색된 오류 형식 중 하나에 대한 간단한 설명을 포함하는 문자열입니다. 오류는 작거나 0 보다 또는 보다 큰 값을 반환 하는 경우 [_RTC_NumErrors](rtc-numerrors.md), **_RTC_GetErrDesc** 반환 **NULL**합니다.
+런타임 오류 검사 시스템에서 검색된 오류 형식 중 하나에 대한 간단한 설명을 포함하는 문자열입니다. 오류는 작거나 0 보다 또는 보다 큰 값을 반환 하는 경우 [_RTC_NumErrors](rtc-numerrors.md)하십시오 **_RTC_GetErrDesc** 반환 **NULL**.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_RTC_GetErrDesc**|\<rtcapi.h>|
 

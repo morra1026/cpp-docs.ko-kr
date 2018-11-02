@@ -1,10 +1,6 @@
 ---
-title: _fullpath_dbg, _wfullpath_dbg | Microsoft 문서
-ms.custom: ''
+title: _fullpath_dbg, _wfullpath_dbg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wfullpath_dbg
 - _fullpath_dbg
@@ -25,8 +21,6 @@ f1_keywords:
 - _wfullpath_dbg
 - _fullpath_dbg
 - fullpath_dbg
-dev_langs:
-- C++
 helpviewer_keywords:
 - _fullpath_dbg function
 - relative file paths
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - _wfullpath_dbg function
 - wfullpath_dbg function
 ms.assetid: 81f72f85-07da-4f5c-866a-598e0fb03f6b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d04f3d7b53eca27d38a38b0bce284c17b15cae02
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: b84c5b77d0a9bfb298d4c597e372cd39a92441f9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450897"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50488012"
 ---
 # <a name="fullpathdbg-wfullpathdbg"></a>_fullpath_dbg, _wfullpath_dbg
 
@@ -80,28 +70,28 @@ wchar_t *_wfullpath_dbg(
 상대 경로 이름입니다.
 
 *MaxLength*<br/>
-절대 경로 이름 버퍼의 최대 길이 (*absPath*). 이 길이 바이트 단위에 대 한 **_fullpath** 는 와이드 문자 (**wchar_t**)에 대 한 **_wfullpath**합니다.
+절대 경로 이름 버퍼의 최대 길이 (*absPath*). 이 길이 바이트 단위로 **_fullpath** 있지만 와이드 문자에서 (**wchar_t**)에 대 한 **_wfullpath**합니다.
 
 *blockType*<br/>
-요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**합니다.
+요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 하거나 **_NORMAL_BLOCK**합니다.
 
 *filename*<br/>
 할당 작업을 요청한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
 
 *linenumber*<br/>
-할당 작업이 요청 된 소스 파일의 줄 번호 또는 **NULL**합니다.
+할당 작업이 요청 있는 소스 파일의 줄 번호 또는 **NULL**합니다.
 
 ## <a name="return-value"></a>반환 값
 
-각 함수는 절대 경로 이름을 포함 하는 버퍼에 대 한 포인터를 반환 합니다 (*absPath*). 오류가 발생 하는 경우 (값에 전달 하는 경우에 예를 들어 *relPath* 유효 하지 않거나 찾을 수 없는 드라이브 문자가 포함 된 경우 또는 작성된 된 절대 경로 이름 길이 (*absPath*) 보다 크면 *maxLength*) 함수가 반환 **NULL**합니다.
+절대 경로 이름을 포함 하는 버퍼에 대 한 포인터를 반환 하는 각 함수 (*absPath*). 오류가 발생 하는 경우 (값을 전달 하는 경우에 예를 들어 *relPath* 유효 하지 않거나 찾을 수 없는 드라이브 문자가 포함 경우 또는 작성된 된 절대 경로 이름의 길이 (*absPath*) 보다 *maxLength*)를 반환 **NULL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_fullpath_dbg** 및 **_wfullpath_dbg** 함수는 동일 **_fullpath** 및 **_wfullpath** 점을 제외 하 고, **_DEBUG** 는 디버그 버전의를 사용 하 여 이러한 함수 정의 **malloc**, **_malloc_dbg**, 메모리를 할당 하는 경우 **NULL** 전달 됩니다 로 첫 번째 매개 변수입니다. 디버깅 기능에 대 한 내용은 **_malloc_dbg**, 참조 [_malloc_dbg](malloc-dbg.md)합니다.
+합니다 **_fullpath_dbg** 하 고 **_wfullpath_dbg** 함수는 동일 **_fullpath** 및 **_wfullpath** 점을 제외 하 고, **_DEBUG** 는 정의 된 이러한 함수 사용의 디버그 버전 **malloc**를 **_malloc_dbg**메모리를 할당 하는 경우 **NULL** 전달 됩니다 첫 번째 매개 변수입니다. 디버깅 기능에 대 한 내용은 **_malloc_dbg**를 참조 하십시오 [_malloc_dbg](malloc-dbg.md)합니다.
 
-대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신, 정의할 수 있습니다는 **_CRTDBG_MAP_ALLOC** 플래그입니다. 때 **_CRTDBG_MAP_ALLOC** 정의에 대 한 호출이 **_fullpath** 및 **_wfullpath** 다시 매핑됩니다 **_fullpath_dbg** 및 **_wfullpath_dbg**각각와 *blockType* 로 설정 **_NORMAL_BLOCK**합니다. 따라서 힙 블록으로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 하지 **_CLIENT_BLOCK**합니다. 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신 정의할 수 있습니다 합니다 **_CRTDBG_MAP_ALLOC** 플래그입니다. 때 **_CRTDBG_MAP_ALLOC** 에 대 한 호출을 정의 하면 **_fullpath** 하 고 **_wfullpath** 로 다시 매핑되고 **_fullpath_dbg** 및 **_wfullpath_dbg**각각 사용 하 여는 *blockType* 로 설정 **_NORMAL_BLOCK**합니다. 따라서 힙 블록으로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 없습니다 **_CLIENT_BLOCK**합니다. 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -109,7 +99,7 @@ wchar_t *_wfullpath_dbg(
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fullpath_dbg**|\<crtdbg.h>|
 |**_wfullpath_dbg**|\<crtdbg.h>|

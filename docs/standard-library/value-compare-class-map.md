@@ -1,30 +1,20 @@
 ---
-title: value_compare 클래스(&lt;map&gt;) | Microsoft Docs
-ms.custom: ''
+title: value_compare 클래스(&lt;map&gt;)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - std::value_compare
 - std.value_compare
 - map/std::value_compare
 - value_compare
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::value_compare
 ms.assetid: ea97c1d0-04b2-4d42-8d96-23522c04cc41
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46f8d00877aa4147e4b3e4ec2a6a23b70d8154c8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 69b484944c9ce30dc28fceacfb082051da31c053
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965850"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50472139"
 ---
 # <a name="valuecompare-class-ltmapgt"></a>value_compare 클래스(&lt;map&gt;)
 
@@ -49,7 +39,7 @@ protected:
 
 키 값이 요소 값과 동일한 단순 컨테이너인 sets 및 multisets의 경우 `value_compare`는 `key_compare`와 동일합니다. 반면 maps 및 multimaps의 경우에는 `pair` 형식 요소의 값이 요소 키의 값과 동일하지 않으므로 value_compare가 key_compare와 동일하지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `value_compare`를 선언하고 사용하는 방법의 예제는 [value_comp](../standard-library/map-class.md#value_comp)의 예제를 참조하세요.
 

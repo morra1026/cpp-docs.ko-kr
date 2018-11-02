@@ -1,10 +1,6 @@
 ---
-title: _dupenv_s, _wdupenv_s | Microsoft 문서
-ms.custom: ''
+title: _dupenv_s, _wdupenv_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _dupenv_s
 - _wdupenv_s
@@ -28,8 +24,6 @@ f1_keywords:
 - dupenv_s
 - _tdupenv_s
 - _wdupenv_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _dupenv_s function
 - _tdupenv_s function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - dupenv_s function
 - tdupenv_s function
 ms.assetid: b729ecc2-a31d-4ccf-92a7-5accedb8f8c8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5a918b866b0b43fb0e6b31e2deb5d9861dabe9a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bc8af3282b57c9fa411aac97f5fa4d414bc3305b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402116"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50646503"
 ---
 # <a name="dupenvs-wdupenvs"></a>_dupenv_s, _wdupenv_s
 
@@ -78,7 +68,7 @@ errno_t _wdupenv_s(
 변수 값을 저장하는 버퍼입니다.
 
 *numberOfElements*<br/>
-크기 *버퍼*합니다.
+크기인 *버퍼*합니다.
 
 *varname*<br/>
 환경 변수 이름입니다.
@@ -87,28 +77,28 @@ errno_t _wdupenv_s(
 
 성공 시 0, 실패 시 오류 코드가 나타납니다.
 
-이러한 함수에는 해당 매개 변수; 유효성 검사 경우 *버퍼* 또는 *varname* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하려면 허용한 경우 함수 설정 **errno** 를 **EINVAL** 다음 다시 돌아와 **EINVAL**합니다.
+이러한 함수는 매개 변수 유효성 검사 하는 경우 *버퍼* 또는 *varname* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 함수를 설정 **errno** 하 **EINVAL** 돌아와 **EINVAL**합니다.
 
-이러한 함수는 충분 한 메모리를 할당할 수 없는 경우 *버퍼* 를 **NULL** 및 *numberOfElements* 를 0으로 반환 **ENOMEM**합니다.
+이러한 함수는 충분 한 메모리를 할당할 수 없습니다, 하는 경우 *버퍼* 하 **NULL** 및 *numberOfElements* 0을 반환 **ENOMEM**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_dupenv_s** 함수에 대 한 환경 변수 목록을 검색 *varname*합니다. 변수가 있는 경우 **_dupenv_s** 버퍼를 할당 하 고 버퍼에 변수의 값을 복사 합니다. 버퍼의 주소 및 길이에 반환될지 *버퍼* 및 *numberOfElements*합니다. 자체는 버퍼를 할당 하 여 **_dupenv_s** 하는 보다 편리한 대신 제공 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)합니다.
+합니다 **_dupenv_s** 함수에 대 한 환경 변수 목록을 검색 *varname*합니다. 변수가 없으면 **_dupenv_s** 버퍼를 할당 하 고 변수 값을 버퍼로 복사 합니다. 에 반환 되는 버퍼의 주소 및 길이 *버퍼* 하 고 *numberOfElements*합니다. 버퍼 자체를 할당 하 여 **_dupenv_s** 는 보다 편리한 대안을 제공 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md)합니다.
 
 > [!NOTE]
 > [free](free.md)를 호출하여 메모리를 확보하는 것은 호출하는 프로그램이 해야 할 일입니다.
 
-변수가 없는 경우, 다음 *버퍼* 로 설정 된 **NULL**, *numberOfElements* 0으로 설정 하 고 반환 값은 0 이므로이 경우는 오류가 있는 것으로 간주 되지 않습니다 조건입니다.
+변수가 없는 경우, 한 다음 *버퍼* 로 설정 되어 **NULL**, *numberOfElements* 0으로 설정 되어이 이런이 오류로 간주 되지 않으므로 반환 값이 0 및 조건입니다.
 
 버퍼의 크기에 관심이 없는 경우 전달할 수 있습니다 **NULL** 에 대 한 *numberOfElements*합니다.
 
-**_dupenv_s** 대/소문자가 Windows 운영 체제에서 합니다. **_dupenv_s** 전역 변수가 가리키는 환경의 복사본을 사용 하 여 **_environ** 환경에 액세스 합니다. 설명을 참조 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 설명은 **_environ**합니다.
+**_dupenv_s** 대/소문자가 Windows 운영 체제에서. **_dupenv_s** 전역 변수에서 가리키는 환경의 복사본을 사용 하 여 **_environ** 환경에 액세스 합니다. 설명을 참조 하세요 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 대 한 설명은 **_environ**합니다.
 
-값 *버퍼* ; 환경 변수 값의 복사본은 환경에 영향을 주지 수정 합니다. [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) 함수를 사용하여 환경 변수 값을 수정합니다.
+값 *버퍼* 환경 변수 값의 복사본 인 환경에 영향을 주지 수정할 수 있습니다. [_putenv_s, _wputenv_s](putenv-s-wputenv-s.md) 함수를 사용하여 환경 변수 값을 수정합니다.
 
-**_wdupenv_s** 의 와이드 문자 버전이 **_dupenv_s**;의 인수 **_wdupenv_s** 는 와이드 문자 문자열입니다. **_wenviron** 전역 변수는 와이드 문자 버전의 **_environ**합니다. 설명을 참조 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 에 대 한 자세한 **_wenviron**합니다.
+**_wdupenv_s** 의 와이드 문자 버전이 **_dupenv_s**;의 인수 **_wdupenv_s** 는 와이드 문자 문자열입니다. 합니다 **_wenviron** 전역 변수는 와이드 문자 버전입니다 **_environ**합니다. 설명을 참조 하세요 [getenv_s, _wgetenv_s](getenv-s-wgetenv-s.md) 대 한 자세한 내용은 **_wenviron**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -116,7 +106,7 @@ errno_t _wdupenv_s(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_dupenv_s**|\<stdlib.h>|
 |**_wdupenv_s**|\<stdlib.h> 또는 \<wchar.h>|

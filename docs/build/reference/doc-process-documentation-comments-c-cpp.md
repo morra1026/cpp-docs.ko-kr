@@ -1,32 +1,22 @@
 ---
-title: -doc (문서 주석 처리) (C/c + +) | Microsoft Docs
-ms.custom: ''
+title: /doc(문서 주석 처리)(C/C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - VC.Project.VCCLCompilerTool.GenerateXMLDocumentationFiles
 - /doc
 - VC.Project.VCCLCompilerTool.XMLDocumentationFileName
-dev_langs:
-- C++
 helpviewer_keywords:
 - /doc compiler option [C++]
 - comments, C++ code
 - XML documentation, comments in source files
 - -doc compiler option [C++]
 ms.assetid: b54f7e2c-f28f-4f46-9ed6-0db09be2cc63
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 488ee353cf245303b5ea73be139a262aea5be49d
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 39b614b1ab21a654a35e30b0d3acffa15d244fb0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45706578"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50530041"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc(문서 주석 처리)(C/C++)
 
@@ -45,7 +35,7 @@ ms.locfileid: "45706578"
 
 .Xdc 파일 xdcmake.exe 사용 하 여.xml 파일로 처리 됩니다. 자세한 내용은 [XDCMake 참조](../../ide/xdcmake-reference.md)합니다.
 
-소스 코드 파일에 문서 주석을 추가할 수 있습니다. 자세한 내용은 [Tags for Documentation Comments 권장](../../ide/recommended-tags-for-documentation-comments-visual-cpp.md)합니다.
+소스 코드 파일에 문서 주석을 추가할 수 있습니다. 자세한 내용은 [문서 주석에 대한 권장 태그](../../ide/recommended-tags-for-documentation-comments-visual-cpp.md)를 참조하세요.
 
 IntelliSense를 사용 하 여 생성 된.xml 파일을 사용 하려면 지원 및.xml 파일을 저장 하려는 어셈블리와 동일한 어셈블리와 동일한 디렉터리에.xml 파일의 파일 이름을 지정 합니다. Visual Studio 프로젝트에서 어셈블리를 참조할 때.xml 파일을 찾을 수도 됩니다. 자세한 내용은 [IntelliSense를 사용 하 여](/visualstudio/ide/using-intellisense) 하 고 [XML 코드 주석 제공](/visualstudio/ide/supplying-xml-code-comments)합니다.
 

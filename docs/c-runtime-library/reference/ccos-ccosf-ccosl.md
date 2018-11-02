@@ -1,11 +1,6 @@
 ---
-title: ccos, ccosf, ccosl | Microsoft 문서
-ms.custom: ''
+title: ccos, ccosf, ccosl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - ccos
 - ccosf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/ccos
 - complex/ccosf
 - complex/ccosl
-dev_langs:
-- C++
 helpviewer_keywords:
 - ccos function
 - ccosf function
 - ccosl function
 ms.assetid: 4ab936ac-ff85-49ac-9418-2b69cf5d4696
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4345926f3eebb6c65c8f70f65cd37f1add956ed5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d1a94f7ad0bbd525480d344fa8ac5b3ee591a1b2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394553"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50489689"
 ---
 # <a name="ccos-ccosf-ccosl"></a>ccos, ccosf, ccosl
 
@@ -83,13 +72,13 @@ _Lcomplex ccosl(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **ccos** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **ccos** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **ccos** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **ccos** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**ccos**, **ccosf**, **ccosl**|\<complex.h>|\<ccomplex>|
+|**ccos**하십시오 **ccosf**, **ccosl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

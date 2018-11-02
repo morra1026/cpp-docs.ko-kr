@@ -1,27 +1,17 @@
 ---
-title: _com_error::ErrorMessage | Microsoft Docs
-ms.custom: ''
+title: _com_error::ErrorMessage
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
 f1_keywords:
 - _com_error::ErrorMessage
-dev_langs:
-- C++
 helpviewer_keywords:
 - ErrorMessage method [C++]
 ms.assetid: e47335b6-01af-4975-a841-121597479eb7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: afe11d570658ee077e8fdffe925349731f1921fd
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b1c1b5a79cdf5ee2a4a17d969d23ce0d0d85ab54
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46111370"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50504496"
 ---
 # <a name="comerrorerrormessage"></a>_com_error::ErrorMessage
 
@@ -41,7 +31,7 @@ const TCHAR * ErrorMessage( ) const throw( );
 
 ## <a name="remarks"></a>설명
 
-내에 기록 된 HRESULT에 대 한 적절 한 시스템 메시지 텍스트를 검색 합니다 `_com_error` 개체입니다. Win32를 호출 하 여 시스템 메시지 텍스트를 가져옵니다 [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) 함수입니다. 반환된 문자열은 `FormatMessage` API에 의해 할당되고, `_com_error` 개체가 소멸될 때 해제됩니다.
+내에 기록 된 HRESULT에 대 한 적절 한 시스템 메시지 텍스트를 검색 합니다 `_com_error` 개체입니다. Win32를 호출 하 여 시스템 메시지 텍스트를 가져옵니다 [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) 함수입니다. 반환된 문자열은 `FormatMessage` API에 의해 할당되고, `_com_error` 개체가 제거될 때 해제됩니다.
 
 **Microsoft 전용 종료**
 

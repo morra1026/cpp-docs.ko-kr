@@ -1,10 +1,6 @@
 ---
-title: _ismbbalnum, _ismbbalnum_l | Microsoft 문서
-ms.custom: ''
+title: _ismbbalnum, _ismbbalnum_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbalnum
 - _ismbbalnum_l
@@ -26,24 +22,18 @@ f1_keywords:
 - ismbbalnum
 - _ismbbalnum_l
 - ismbbalnum_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbbalnum_l function
 - ismbbalnum function
 - ismbbalnum_l function
 - _ismbbalnum function
 ms.assetid: 8025de50-a871-49fd-9ae6-f437b47aa987
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3ace530d1190de5df5eaac92d412b86f2b2cc3d4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5b5f54754907c09a34b0f4c3bae3e5c27336ca36
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398710"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50554845"
 ---
 # <a name="ismbbalnum-ismbbalnuml"></a>_ismbbalnum, _ismbbalnum_l
 
@@ -74,13 +64,13 @@ int _ismbbalnum_l(
 
 `isalnum(c) || _ismbbkalnum(c)`
 
-에 대 한이 0이 아닌 *c*, 없는 경우 0입니다.
+이 대 한 아닌 *c*, 있지 않으면 0입니다.
 
-이 함수의 버전은 **_l** 은 로캘 종속 동작에 현재 로캘 대신에 전달 된 로캘을 사용 하 여 접미사는 동일 합니다.
+버전을 사용 하 여이 함수는 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbbalnum**|\<mbctype.h>|
 |**_ismbbalnum_l**|\<mbctype.h>|

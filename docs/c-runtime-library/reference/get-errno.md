@@ -1,10 +1,6 @@
 ---
-title: _get_errno | Microsoft 문서
-ms.custom: ''
+title: _get_errno
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_errno
 apilocation:
@@ -22,23 +18,17 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _get_errno
-dev_langs:
-- C++
 helpviewer_keywords:
 - get_errno function
 - errno global variable
 - _get_errno function
 ms.assetid: b3fd5ebc-f41b-4314-a2f4-2f2d79d6e740
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: fec59334ff6585e2385295c58c284df7e602ca1c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6ffb76bb31fe1633af78ee73423bb06857e0b893
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397413"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50535722"
 ---
 # <a name="geterrno"></a>_get_errno
 
@@ -47,23 +37,23 @@ errno 전역 변수의 현재 값을 가져옵니다.
 ## <a name="syntax"></a>구문
 
 ```C
-errno_t _get_errno( 
-   int * pValue 
+errno_t _get_errno( 
+   int * pValue 
 );
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *pValue*<br/>
-현재 값으로 채워질 정수에 대 한 포인터는 **errno** 변수입니다.
+현재 값으로 채워지는 정수에 대 한 포인터를 **errno** 변수입니다.
 
 ## <a name="return-value"></a>반환 값
 
-성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. 경우 *pValue* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 이 함수를 설정 하는 경우 실행을 계속 허용 된, **errno** 를 **EINVAL** 반환 **EINVAL**합니다.
+성공하는 경우 0을 반환하고, 실패하는 경우 오류 코드를 반환합니다. 하는 경우 *pValue* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우이 함수를 설정 합니다 **errno** 하 **EINVAL** 반환 **EINVAL**합니다.
 
 ## <a name="remarks"></a>설명
 
-가능한 값 **errno** Errno.h에서 정의 됩니다. [errno 상수](../../c-runtime-library/errno-constants.md)를 참조하세요.
+가능한 값 **errno** Errno.h에 정의 됩니다. [errno 상수](../../c-runtime-library/errno-constants.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
@@ -93,7 +83,7 @@ fyi, ENOENT = 2
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_get_errno**|\<stdlib.h>|\<errno.h>|
 

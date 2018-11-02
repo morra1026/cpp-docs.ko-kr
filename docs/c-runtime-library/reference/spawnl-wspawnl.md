@@ -1,10 +1,6 @@
 ---
-title: _spawnl, _wspawnl | Microsoft Docs
-ms.custom: ''
+title: _spawnl, _wspawnl
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _wspawnl
 - _spawnl
@@ -26,8 +22,6 @@ f1_keywords:
 - wspawnl
 - _wspawnl
 - _spawnl
-dev_langs:
-- C++
 helpviewer_keywords:
 - spawnl function
 - processes, creating
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - wspawnl function
 - process creation
 ms.assetid: dd4584c9-7173-4fc5-b93a-6e7d3c2316d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dcd276e59edd78942f14211845c615d7e4f7eb6d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4dbc8fab611d98f7f87529196b0e10e85196faa9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410722"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518081"
 ---
 # <a name="spawnl-wspawnl"></a>_spawnl, _wspawnl
 
@@ -84,12 +74,12 @@ intptr_t _wspawnl(
 *cmdname*<br/>
 실행할 파일의 경로입니다.
 
-*arg0*, *arg1*,... *argn*<br/>
-인수에 대한 포인터 목록입니다. *arg0* 인수에 대 한 포인터는 일반적으로 *cmdname*합니다. 인수 *arg1* 통해 *argn* 은 새로운 인수 목록을 구성 하는 문자열을 가리키는 포인터입니다. 다음 *argn*, 있어야는 **NULL** 인수 목록의 끝을 표시 하는 포인터입니다.
+*arg0*하십시오 *arg1*,... *argn*<br/>
+인수에 대한 포인터 목록입니다. 합니다 *arg0* 인수에 대 한 포인터는 일반적으로 *cmdname*합니다. 인수 *arg1* 를 통해 *argn* 새로운 인수 목록을 구성 하는 문자열에 대 한 포인터입니다. 다음 *argn*에 있어야는 **NULL** 인수 목록의 끝을 표시에 대 한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-반환 값을 동기 **_spawnl** 또는 **_wspawnl** (**_P_WAIT** 에 대해 지정 된 *모드*)은 새 프로세스의 종료 상태입니다. 반환 값을 비동기 **_spawnl** 또는 **_wspawnl** (**_P_NOWAIT** 또는 **_P_NOWAITO** 에 대해 지정 된 *모드* )은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성된 된 프로세스가 명확 하 게 호출 하는 경우 종료 상태 0이 아닌 값으로 설정할 수 있습니다는 **종료** 일상적인 0이 아닌 인수를 사용 합니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단되거나 인터럽트된 비정상적인 종료를 나타냅니다. 반환 값이-1 (새 프로세스가 시작 되지 않습니다.) 오류를 나타냅니다. 이 경우 **errno** 다음 값 중 하나로 설정 됩니다.
+반환 값은 동기 **_spawnl** 하거나 **_wspawnl** (**_P_WAIT** 에 대해 지정 된 *모드*) 새 프로세스의 종료 상태입니다. 비동기 작업의 반환 값 **_spawnl** 하거나 **_wspawnl** (**_P_NOWAIT** 하거나 **_P_NOWAITO** 에 대해 지정 된 *모드* )은 프로세스 핸들입니다. 프로세스가 정상적으로 종료되는 경우 종료 상태는 0입니다. 생성된 된 프로세스를 명확 하 게 호출 하는 경우 종료 상태 0이 아닌 값으로 설정할 수 있습니다 합니다 **종료** 0이 아닌 인수를 사용 하 여 일상적인 합니다. 새 프로세스가 양수 값의 종료 상태를 명시적으로 설정하지 않은 경우, 양수 값의 종료 상태는 중단되거나 인터럽트된 비정상적인 종료를 나타냅니다. 반환 값이-1 (새 프로세스가 시작 되지 않습니다.) 오류를 나타냅니다. 이 예에서 **errno** 다음 값 중 하나로 설정 됩니다.
 
 |||
 |-|-|
@@ -101,7 +91,7 @@ intptr_t _wspawnl(
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 어느 경우 *cmdname* 또는 *arg0* 은 빈 문자열 또는 null 포인터 이면 잘못 된 매개 변수 처리기가 호출 됩니다에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 이러한 함수 설정 **errno** 를 **EINVAL**,-1을 반환 하 고 있습니다. 새로운 프로세스가 생성되지 않습니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 이면 *cmdname* 또는 *arg0* 빈 문자열 이거나 null 포인터인 경우 잘못 된 매개 변수 처리기가 호출 됩니다에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수 설정 **errno** 하 **EINVAL**,-1을 반환 합니다. 새로운 프로세스가 생성되지 않습니다.
 
 ## <a name="remarks"></a>설명
 
@@ -109,7 +99,7 @@ intptr_t _wspawnl(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_spawnl**|\<process.h>|
 |**_wspawnl**|\<stdio.h> 또는 \<wchar.h>|

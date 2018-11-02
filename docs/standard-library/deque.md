@@ -1,27 +1,17 @@
 ---
-title: '&lt;deque&gt; | Microsoft 문서'
-ms.custom: ''
+title: '&lt;deque&gt;'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - <deque>
-dev_langs:
-- C++
 helpviewer_keywords:
 - deque header
 ms.assetid: 4521fe92-5a91-4853-9e9f-59600bf9e46f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0a0f8ce0e6078f77dc62953ed84ec42d0be26b99
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 006b4f3a82fd750d99fde9db7e98445c2f2bb088
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33850589"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50513011"
 ---
 # <a name="ltdequegt"></a>&lt;deque&gt;
 
@@ -41,13 +31,13 @@ ms.locfileid: "33850589"
 |[operator!=](../standard-library/deque-operators.md#op_neq)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체와 같지 않은지 테스트합니다.|
 |[operator<](../standard-library/deque-operators.md#op_lt)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 작은지 테스트합니다.|
 |[operator\<=](../standard-library/deque-operators.md#op_gt_eq)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 작거나 같은지 테스트합니다.|
-|[operator==](../standard-library/deque-operators.md#op_eq_eq)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체와 같은지 테스트합니다.|
+|[연산자==](../standard-library/deque-operators.md#op_eq_eq)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체와 같은지 테스트합니다.|
 |[operator>](../standard-library/deque-operators.md#op_gt)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 큰지 테스트합니다.|
 |[operator>=](../standard-library/deque-operators.md#op_gt_eq)|연산자의 좌변에 있는 deque 개체가 우변에 있는 deque 개체보다 크거나 같은지 테스트합니다.|
 
 ### <a name="functions"></a>함수
 
-|함수|설명|
+|기능|설명|
 |-|-|
 |[swap](../standard-library/deque-functions.md#swap)|두 deque의 요소를 교환합니다.|
 

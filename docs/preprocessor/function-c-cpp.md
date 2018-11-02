@@ -1,29 +1,19 @@
 ---
-title: 함수 (C/c + +) | Microsoft Docs
-ms.custom: ''
+title: 함수 (C/C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - function_CPP
 - vc-pragma.function
-dev_langs:
-- C++
 helpviewer_keywords:
 - function pragma
 - pragmas, function
 ms.assetid: cbd1bd60-fabf-4b5a-9c3d-2d9f4b871365
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93faf0c914ef395192fc0df65e71a1c3d33cc00d
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 1c8c250e3ea28d56aec837f5c3353c3bb6515442
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065449"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611460"
 ---
 # <a name="function-cc"></a>함수 (C/C++)
 pragma의 인수 목록에서 지정된 함수에 대한 호출이 생성되도록 지정합니다.
