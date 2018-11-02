@@ -1,10 +1,6 @@
 ---
-title: sinh, sinhf, sinhl | Microsoft Docs
-ms.custom: ''
+title: sinh, sinhf, sinhl
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - sinhl
 - sinhf
@@ -26,8 +22,6 @@ f1_keywords:
 - sinh
 - sinhf
 - sinhl
-dev_langs:
-- C++
 helpviewer_keywords:
 - sinh function
 - sinhl function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - sinhf function
 - sinhl function
 - hyperbolic functions
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 220bbeb1d78957be153e23b578f217c8098f7e7d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7327809a20569c520aa799690203458d54e30fb5
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410465"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50569808"
 ---
 # <a name="sinh-sinhf-sinhl"></a>sinh, sinhf, sinhl
 
@@ -72,24 +62,24 @@ long double sinh(long double x);  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**sinh** 의 쌍 곡 사인을 반환 하는 함수 *x*합니다. 기본적으로 결과 너무 크면 **sinh** 설정 **errno** 를 **ERANGE** ± 반환**HUGE_VAL**합니다.
+합니다 **sinh** 의 쌍 곡 사인을 반환 하는 함수 *x*합니다. 기본적으로 결과 너무 크면 **sinh** 설정 **errno** 에 **ERANGE** 에서 반환 하 고**HUGE_VAL**합니다.
 
 |입력|SEH 예외|Matherr 예외|
 |-----------|-------------------|-----------------------|
 |± QNAN,IND|없음|_DOMAIN|
-|&#124;x&#124; ≥ 7.104760e + 002|OVERFLOW+INEXACT|OVERFLOW|
+|&#124;x&#124; ≥ 7.104760e+002(sinh|OVERFLOW+INEXACT|OVERFLOW|
 
 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **sinh** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **sinh** 항상 사용 하 고 반환 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **sinh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **sinh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더(C)|필수 헤더(C++)|
+|루틴에서 반환된 값|필수 헤더(C)|필수 헤더(C++)|
 |-|-|-|
-|**sinh**, **sinhf**, **sinhl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**sinh**하십시오 **sinhf**, **sinhl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
