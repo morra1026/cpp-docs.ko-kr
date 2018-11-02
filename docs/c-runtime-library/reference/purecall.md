@@ -1,10 +1,6 @@
 ---
-title: _purecall | Microsoft Docs
-ms.custom: ''
+title: _purecall
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _purecall
 apilocation:
@@ -23,22 +19,16 @@ apitype: DLLExport
 f1_keywords:
 - purecall
 - _purecall
-dev_langs:
-- C++
 helpviewer_keywords:
 - _purecall function
 - purecall function
 ms.assetid: 56135d9b-3403-4e22-822d-e714523801cc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3095f6fee4458af5a12662886fdc6b9d81fe07f5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a7a6db42dc4b8d9b2962a66c7866aae9db55eb3b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403068"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541189"
 ---
 # <a name="purecall"></a>_purecall
 
@@ -52,13 +42,13 @@ extern "C" int __cdecl _purecall();
 
 ## <a name="remarks"></a>설명
 
-**_purecall** 함수는 Microsoft Visual c + + 컴파일러의 Microsoft 특정 구현 세부 정보입니다. 이 함수는 코드에서 직접 호출할 수는 없으며 공용 헤더 선언을 포함하지 않습니다. 하지만 C 런타임 라이브러리의 공용 내보내기이므로 이 문서에 포함되어 있습니다.
+합니다 **_purecall** 함수는 Microsoft Visual c + + 컴파일러의 Microsoft 관련 구현 세부 정보입니다. 이 함수는 코드에서 직접 호출할 수는 없으며 공용 헤더 선언을 포함하지 않습니다. 하지만 C 런타임 라이브러리의 공용 내보내기이므로 이 문서에 포함되어 있습니다.
 
-순수 가상 함수에 대한 호출은 구현이 없으므로 오류입니다. 컴파일러를 호출 하는 코드를 생성 된 **_purecall** 오류 처리가 함수가 순수 가상 함수를 호출할 때입니다. 기본적으로 **_purecall** 프로그램을 종료 합니다. 를 종료 하기 전에 **_purecall** 함수가 호출 하는 **_purecall_handler** 프로세스에 대해 설정 된 경우에 작동 합니다. 순수 가상 함수 호출을 위해 고유한 오류 처리기 함수를 설치하여 디버깅 또는 보고용으로 이러한 호출을 catch할 수 있습니다. 사용자 고유의 오류 처리기를 사용 하려면 포함 된 함수를 만들어는 **_purecall_handler** 서명을 사용 하 여 [_set_purecall_handler](get-purecall-handler-set-purecall-handler.md) 현재 처리기 되도록 합니다.
+순수 가상 함수에 대한 호출은 구현이 없으므로 오류입니다. 컴파일러를 호출 하는 코드를 생성 합니다 **_purecall** 순수 가상 함수를 호출 하는 경우 오류 처리기 함수입니다. 기본적으로 **_purecall** 프로그램을 종료 합니다. 종료 하기 전에 **_purecall** 함수를 호출 하는 **_purecall_handler** 프로세스에 대해 설정 된 경우 작동 합니다. 순수 가상 함수 호출을 위해 고유한 오류 처리기 함수를 설치하여 디버깅 또는 보고용으로 이러한 호출을 catch할 수 있습니다. 사용자 고유의 오류 처리기를 사용 하려면 포함 된 함수를 만듭니다는 **_purecall_handler** 서명을 사용 하 여 [_set_purecall_handler](get-purecall-handler-set-purecall-handler.md) 현재 처리기를 확인 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-**_purecall** 함수 헤더 선언이 없습니다. **_purecall_handler** typedef에 정의 된 \<stdlib.h > 합니다.
+합니다 **_purecall** 함수에는 헤더 선언이 없습니다. 합니다 **_purecall_handler** 에 정의 된 typedef \<b. h >입니다.
 
 ## <a name="see-also"></a>참고자료
 

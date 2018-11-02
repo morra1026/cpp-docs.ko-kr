@@ -1,10 +1,6 @@
 ---
-title: _ismbbkprint, _ismbbkprint_l | Microsoft 문서
-ms.custom: ''
+title: _ismbbkprint, _ismbbkprint_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _ismbbkprint
 - _ismbbkprint_l
@@ -26,24 +22,18 @@ f1_keywords:
 - ismbbkprint
 - _ismbbkprint
 - ismbbkprint_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - _ismbbkprint function
 - ismbbkprint_l function
 - ismbbkprint function
 - _ismbbkprint_l function
 ms.assetid: 8d1d3258-1e34-4365-81ed-97c95de25475
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a1a6a215bac14f81d29d83a856313133fb4e88a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9d30abb0bcb587aeb15087ceb80d60d54ac1bebe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399503"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50645980"
 ---
 # <a name="ismbbkprint-ismbbkprintl"></a>_ismbbkprint, _ismbbkprint_l
 
@@ -71,11 +61,11 @@ int _ismbbkprint_l(
 
 ## <a name="return-value"></a>반환 값
 
-**_ismbbkprint** 경우 0이 아닌 값을 반환 하는 정수 *c* 은 ASCII가 아닌 텍스트 또는 ASCII가 아닌 문장 부호인 0 없는 경우. 예를 들어 **_ismbbkprint**는 932 코드 페이지에서만 가타카나 영숫자 또는 가타카나 문장 부호를 테스트합니다(범위: 0xA1 – 0xDF). **_ismbbkprint** 로캘 종속 문자 설정에 대 한 현재 로캘을 사용 합니다. **_ismbbkprint_l** 전달 된 로캘을 사용 하 여 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+**_ismbbkprint** 이면 0이 아닌 값을 반환 정수 *c* 되지 경우 ASCII가 아닌 텍스트 또는 ASCII가 아닌 문장 부호인 0입니다. 예를 들어 **_ismbbkprint**는 932 코드 페이지에서만 가타카나 영숫자 또는 가타카나 문장 부호를 테스트합니다(범위: 0xA1 – 0xDF). **_ismbbkprint** 로캘 종속 문자 설정에 대해 현재 로캘을 사용 합니다. **_ismbbkprint_l** 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_ismbbkprint**|\<mbctype.h>|
 |**_ismbbkprint_l**|\<mbctype.h>|

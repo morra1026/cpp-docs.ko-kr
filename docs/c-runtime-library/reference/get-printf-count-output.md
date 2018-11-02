@@ -1,10 +1,6 @@
 ---
-title: _get_printf_count_output | Microsoft 문서
-ms.custom: ''
+title: _get_printf_count_output
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _get_printf_count_output
 apilocation:
@@ -23,27 +19,21 @@ apitype: DLLExport
 f1_keywords:
 - get_printf_count_output
 - _get_printf_count_output
-dev_langs:
-- C++
 helpviewer_keywords:
 - '%n format'
 - get_printf_count_output function
 - _get_printf_count_output function
 ms.assetid: 850f9f33-8319-433e-98d8-6a694200d994
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 216df8d973f391db2b6114d9bbcb50dcf509c5b5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 477e4a9e987f27bd70b9707e91b9ea9d84b69993
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398372"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50610637"
 ---
 # <a name="getprintfcountoutput"></a>_get_printf_count_output
 
-나타냅니다 여부 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-제품군 지원 함수는 **%n** 형식입니다.
+나타냅니다 여부 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)-패밀리 함수가 지원 합니다 **%n** 형식.
 
 ## <a name="syntax"></a>구문
 
@@ -57,11 +47,11 @@ int _get_printf_count_output();
 
 ## <a name="remarks"></a>설명
 
-경우 **%n** 은 지원 되지 않습니다 (기본값) 이면 발생 **%n** 중 아무 메서드나 형식 문자열에는 **printf** 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 합니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 경우 **%n** 지원 됩니다 (참조 [_set_printf_count_output](set-printf-count-output.md)) 다음 **%n** 에 설명 된 대로 동작 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
+경우 **%n** 는 지원 되지 않습니다 (기본값), 발생 **%n** 의 형식 문자열에는 **printf** 함수에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 됩니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 하는 경우 **%n** 지원 됩니다 (참조 [_set_printf_count_output](set-printf-count-output.md)) 한 다음 **%n** 에 설명 된 대로 동작 합니다 [형식 사양 구문: printf 및 wprintf 함수](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_get_printf_count_output**|\<stdio.h>|
 

@@ -1,10 +1,6 @@
 ---
-title: atexit | Microsoft 문서
-ms.custom: ''
+title: atexit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - atexit
 apilocation:
@@ -21,22 +17,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - atexit
-dev_langs:
-- C++
 helpviewer_keywords:
 - processing, at exit
 - atexit function
 ms.assetid: 92c156d2-8052-4e58-96dc-00128baac6f9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d66954348d5d812fac7eca0b231304267cc26157
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 48f0fbfa1f3350f73899fcdbb3bf7922f1c6174d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393136"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50556647"
 ---
 # <a name="atexit"></a>atexit
 
@@ -61,21 +51,21 @@ int atexit(
 
 ## <a name="remarks"></a>설명
 
-**atexit** 함수는 함수의 주소 전달 *func* 프로그램 정상적으로 종료 될 때 호출 되 합니다. 에 대 한 연속 호출은 **atexit** lifo (후입선출) 방식으로 순서 대로 실행 하는 함수의 레지스터를 만듭니다. 함수에 전달 된 **atexit** 매개 변수를 사용할 수 없습니다. **atexit** 및 **_onexit** 힙에 레지스터의 함수를 사용 하 여 합니다. 따라서 등록 가능한 함수의 수는 힙 메모리에 의해서만 제한됩니다.
+합니다 **atexit** 함수는 함수의 주소가 전달 됩니다 *func* 프로그램이 정상적으로 종료 될 때 호출 되 합니다. 에 대 한 연속 호출 **atexit** lifo (후입선출) 순서로 마지막에 실행 되는 함수의 레지스터가 만들어집니다. 함수에 전달 **atexit** 매개 변수를 사용할 수 없습니다. **atexit** 하 고 **_onexit** 함수의 레지스터를 저장 하는 힙을 사용 합니다. 따라서 등록 가능한 함수의 수는 힙 메모리에 의해서만 제한됩니다.
 
-코드는 **atexit** 함수 수 이미 언로드될 때 모든 DLL에서 종속성을 모두 포함할 수 없습니다는 **atexit** 함수를 호출 합니다.
+코드를 **atexit** 함수 수 이미 언로드된 경우 모든 DLL에 대 한 종속성을 포함 하지 않아야는 **atexit** 함수를 호출 합니다.
 
-ANSI 호환 응용 프로그램을 생성 하려면 ANSI 표준을 사용 하 여 **atexit** 함수 (유사한 대신 **_onexit** 함수).
+ANSI 호환 응용 프로그램을 생성 하려면 ANSI 표준 사용 **atexit** 함수 (대신 유사한 **_onexit** 함수).
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**atexit**|\<stdlib.h>|
 
 ## <a name="example"></a>예제
 
-이 프로그램 푸시 4 개의 기능 때 실행할 함수 스택에 **atexit** 호출 됩니다. 프로그램이 종료되면 LIFO(후입선출) 방식으로 이러한 프로그램이 실행됩니다.
+이 프로그램 푸시 4 개의 함수 될 때 실행할 함수 스택에 **atexit** 라고 합니다. 프로그램이 종료되면 LIFO(후입선출) 방식으로 이러한 프로그램이 실행됩니다.
 
 ```C
 // crt_atexit.c

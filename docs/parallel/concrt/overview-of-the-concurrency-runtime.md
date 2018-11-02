@@ -1,28 +1,18 @@
 ---
-title: 동시성 런타임 개요 | Microsoft Docs
-ms.custom: ''
+title: 동시성 런타임 개요
 ms.date: 07/20/2018
-ms.technology:
-- cpp-concrt
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Concurrency Runtime, requirements
 - Concurrency Runtime, architecture
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b837a68c1887254cd6ace9546a9c5175d1ee08a9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: c1b9f9ca0565bfb04c3bff56b23ea1ef1dfa42d6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46384501"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50613670"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>동시성 런타임 개요
 이 문서에서는 동시성 런타임에 대한 개요를 제공합니다. 또한 동시성 런타임의 이점, 사용할 시기, 구성 요소가 서로 상호 작용하는 방식과 운영 체제 및 응용 프로그램과 상호 작용하는 방식에 대해 설명합니다.
@@ -39,7 +29,7 @@ ms.locfileid: "46384501"
 
 - [C + + 람다 식](#lambda)
 
-- [Requirements](#requirements)
+- [요구 사항](#requirements)
 
 ## <a name="dlls"></a> 동시성 런타임 구현 기록
 

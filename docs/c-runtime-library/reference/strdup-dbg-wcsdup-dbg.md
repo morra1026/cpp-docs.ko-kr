@@ -1,10 +1,6 @@
 ---
-title: _strdup_dbg, _wcsdup_dbg | Microsoft Docs
-ms.custom: ''
+title: _strdup_dbg, _wcsdup_dbg
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strdup_dbg
 - _wcsdup_dbg
@@ -25,8 +21,6 @@ f1_keywords:
 - strdup_dbg
 - _strdup_dbg
 - wcsdup_dbg
-dev_langs:
-- C++
 helpviewer_keywords:
 - _wcsdup_dbg function
 - stdup_dbg function
@@ -37,16 +31,12 @@ helpviewer_keywords:
 - _strdup_dbg function
 - wcsdup_dbg function
 ms.assetid: 681db70c-d124-43ab-b83e-5eeea9035097
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7b6e8f5f4634ec93cab619c1e073fa8071691fe6
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 3092c27df1e39c7b719f6e7037efa202d29c9e81
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451382"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531159"
 ---
 # <a name="strdupdbg-wcsdupdbg"></a>_strdup_dbg, _wcsdup_dbg
 
@@ -75,7 +65,7 @@ wchar_t *_wcsdup_dbg(
 Null 종료 소스 문자열입니다.
 
 *blockType*<br/>
-요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 또는 **_NORMAL_BLOCK**합니다.
+요청 된 메모리 블록의 형식: **_CLIENT_BLOCK** 하거나 **_NORMAL_BLOCK**합니다.
 
 *filename*<br/>
 할당 작업을 요청한 소스 파일의 이름에 대 한 포인터 또는 **NULL**합니다.
@@ -85,15 +75,15 @@ Null 종료 소스 문자열입니다.
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 복사한 문자열에 대 한 저장소 위치에 대 한 포인터를 반환 하거나 **NULL** 저장소를 할당할 수 없는 경우.
+이러한 각 함수는 복사한 문자열의 저장소 위치에 대 한 포인터를 반환 하거나 **NULL** 저장소를 할당할 수 없는 경우.
 
 ## <a name="remarks"></a>설명
 
-**_strdup_dbg** 및 **_wcsdup_dbg** 함수는 동일 **_strdup** 및 **_wcsdup** 점을 제외 하 고, **_ 디버그** 는 디버그 버전의를 사용 하 여 이러한 함수를 정의 **malloc**, **_malloc_dbg**, 중복된 문자열에 대 한 메모리를 할당할 수 있습니다. 디버깅 기능에 대 한 내용은 **_malloc_dbg**, 참조 [_malloc_dbg](malloc-dbg.md)합니다.
+합니다 **_strdup_dbg** 하 고 **_wcsdup_dbg** 함수는 동일 **_strdup** 및 **_wcsdup** 점을 제외 하 고, **_ 디버그** 는 디버그 버전의를 사용 하 여 이러한 함수를 정의 **malloc**, **_malloc_dbg**중복된 문자열에 대 한 메모리를 할당 합니다. 디버깅 기능에 대 한 내용은 **_malloc_dbg**를 참조 하십시오 [_malloc_dbg](malloc-dbg.md)합니다.
 
-대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 플래그를 정의할 수 대신 **_CRTDBG_MAP_ALLOC**합니다. 때 **_CRTDBG_MAP_ALLOC** 정의에 대 한 호출이 **_strdup** 및 **_wcsdup** 다시 매핑됩니다 **_strdup_dbg** 및 **_ wcsdup_dbg**각각와 *blockType* 로 설정 **_NORMAL_BLOCK**합니다. 따라서 힙 블록으로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 하지 **_CLIENT_BLOCK**합니다. 블록 형식에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
+대부분의 경우 이러한 함수를 명시적으로 호출할 필요가 없습니다. 대신 플래그를 정의할 수 있습니다 **_CRTDBG_MAP_ALLOC**합니다. 때 **_CRTDBG_MAP_ALLOC** 에 대 한 호출을 정의 하면 **_strdup** 하 고 **_wcsdup** 로 다시 매핑되고 **_strdup_dbg** 및 **_ wcsdup_dbg**각각 사용 하 여 합니다 *blockType* 로 설정 **_NORMAL_BLOCK**합니다. 따라서 힙 블록으로 표시 하려는 경우가 아니면 이러한 함수를 명시적으로 호출할 필요가 없습니다 **_CLIENT_BLOCK**합니다. 블록 형식에 대한 자세한 내용은 [디버그 힙의 블록 형식](/visualstudio/debugger/crt-debug-heap-details)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -101,7 +91,7 @@ Null 종료 소스 문자열입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strdup_dbg**, **_wcsdup_dbg**|\<crtdbg.h>|
 

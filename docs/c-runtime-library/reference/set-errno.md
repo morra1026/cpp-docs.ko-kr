@@ -1,10 +1,6 @@
 ---
-title: _set_errno | Microsoft Docs
-ms.custom: ''
+title: _set_errno
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_errno
 apilocation:
@@ -23,32 +19,26 @@ apitype: DLLExport
 f1_keywords:
 - set_errno
 - _set_errno
-dev_langs:
-- C++
 helpviewer_keywords:
 - errno global variable
 - set_errno function
 - _set_errno function
 ms.assetid: d338914a-1894-4cf3-ae45-f2c4eb26590b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 87c51aa82485b259a1911793d7aececf7534b144
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 42a60875d4ab701c05b8bc12f8d4afb77852e3a6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406084"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50452152"
 ---
 # <a name="seterrno"></a>_set_errno
 
-값으로 설정 된 **errno** 전역 변수입니다.
+값을 설정 합니다 **errno** 전역 변수입니다.
 
 ## <a name="syntax"></a>구문
 
 ```C
-errno_t _set_errno( int error_value );
+errno_t _set_errno( int error_value );
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -84,7 +74,7 @@ Oops: Illegal byte sequence
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_set_errno**|\<stdlib.h>|\<errno.h>|
 

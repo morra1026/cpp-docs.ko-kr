@@ -1,24 +1,14 @@
 ﻿---
-title: '방법: Windows 10을 사용 하 여 Windows 데스크톱 응용 프로그램에서 SDK | Microsoft Docs'
+title: '방법: Windows 데스크톱 응용 프로그램에서 Windows 10 SDK 사용'
 ms.custom: get-started-article
 ms.date: 07/12/2018
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: eed6421e-9355-44a6-9582-3f1d453a6d44
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: afe678ca4ea381709b126168639df3f710867b9e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ed860a229866991b01266093058b71cc2ae84986
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611322"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50669120"
 ---
 # <a name="how-to-use-the-windows-10-sdk-in-a-windows-desktop-application"></a>방법: Windows 데스크톱 응용 프로그램에서 Windows 10 SDK 사용
 

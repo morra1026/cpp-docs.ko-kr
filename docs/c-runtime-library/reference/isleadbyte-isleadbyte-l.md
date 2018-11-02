@@ -1,10 +1,6 @@
 ---
-title: isleadbyte, _isleadbyte_l | Microsoft 문서
-ms.custom: ''
+title: isleadbyte, _isleadbyte_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _isleadbyte_l
 - isleadbyte
@@ -25,8 +21,6 @@ f1_keywords:
 - _istleadbyte
 - _isleadbyte_l
 - isleadbyte
-dev_langs:
-- C++
 helpviewer_keywords:
 - lead bytes
 - _isleadbyte_l function
@@ -34,16 +28,12 @@ helpviewer_keywords:
 - istleadbyte function
 - isleadbyte function
 ms.assetid: 3b2bcf09-d82b-4803-9e80-59d04942802a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 682cdde6983c5e590920c43418e510b9c275b34e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a3f427e49e53bb553020da100b0e713350fab3f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50531891"
 ---
 # <a name="isleadbyte-isleadbytel"></a>isleadbyte, _isleadbyte_l
 
@@ -66,17 +56,17 @@ int _isleadbyte_l( int c );
 
 ## <a name="return-value"></a>반환 값
 
-**isleadbyte** 그렇지 않은 경우 인수가 0 또는 테스트 조건을 만족 하는 경우 0이 아닌 값을 반환 합니다. 문자 집합 (SBCS) 로캘 "C" 로캘 및 단일 바이트 **isleadbyte** 항상 0을 반환 합니다.
+**isleadbyte** 없으면 인수 0 또는 테스트 조건을 충족 하는 경우 0이 아닌 값을 반환 합니다. 문자 집합 (SBCS) 로캘에서 싱글바이트 및 "C" 로캘에서 **isleadbyte** 항상 0을 반환 합니다.
 
 ## <a name="remarks"></a>설명
 
-**isleadbyte** 매크로 인수가 멀티 바이트 문자의 첫 번째 바이트인 경우 0이 아닌 값을 반환 합니다. **isleadbyte** -1에서 모든 정수 인수에 대 한 의미 있는 결과 생성 (**EOF**)를 **UCHAR_MAX** (0xFF) (포함).
+합니다 **isleadbyte** 매크로 인수가 멀티 바이트 문자의 첫 번째 바이트 이면 0이 아닌 값을 반환 합니다. **isleadbyte** -1에서 모든 정수 인수에 대 한 의미 있는 결과 생성 (**EOF**)를 **UCHAR_MAX** (0xFF)를 포함 합니다.
 
-예상된 인수 형식은 **isleadbyte** 은 **int**부호 있는 문자가 전달 되는 경우 컴파일러 수 변환 하는 정수 여 부호 확장을 예측할 수 없는 결과 생성 합니다.
+예상된 인수 형식은 **isleadbyte** 됩니다 **int**부호 있는 문자를 전달 하는 경우 컴파일러가 부호 확장을 예측할 수 없는 결과 생성 하 여 정수로 것으로 변환할 수 있습니다.
 
-이 함수의 버전은 **_l** 은 로캘 종속 동작에 현재 로캘 대신에 전달 된 로캘을 사용 하 여 접미사는 동일 합니다.
+버전을 사용 하 여이 함수는 **_l** 접미사는 로캘 종속 동작에 현재 로캘 대신 전달 된 로캘을 사용 한다는 점을 제외 하 고는 동일 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -84,7 +74,7 @@ int _isleadbyte_l( int c );
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**isleadbyte**|\<ctype.h>|
 |**_isleadbyte_l**|\<ctype.h>|

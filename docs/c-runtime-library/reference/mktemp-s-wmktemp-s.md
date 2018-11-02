@@ -1,10 +1,6 @@
 ---
-title: _mktemp_s, _wmktemp_s | Microsoft Docs
-ms.custom: ''
+title: _mktemp_s, _wmktemp_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mktemp_s
 - _wmktemp_s
@@ -26,8 +22,6 @@ f1_keywords:
 - mktemp_s
 - _mktemp_s
 - _wmktemp_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - _tmktemp_s function
 - mktemp_s function
@@ -38,16 +32,12 @@ helpviewer_keywords:
 - wmktemp_s function
 - temporary files [C++]
 ms.assetid: 92a7e269-7f3d-4c71-bad6-14bc827a451d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cb4fcd681cc5286d02f0a7b8cb4ff95b8f3dd911
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: fef10f2cfbcc0332741d560a41a782b70ed14798
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42575504"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590946"
 ---
 # <a name="mktemps-wmktemps"></a>_mktemp_s, _wmktemp_s
 
@@ -137,7 +127,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // crt_mktemp_s.cpp

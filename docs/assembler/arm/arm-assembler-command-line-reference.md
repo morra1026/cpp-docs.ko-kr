@@ -1,23 +1,13 @@
 ---
-title: ARM 어셈블러 명령줄 참조 | Microsoft Docs
-ms.custom: ''
+title: ARM 어셈블러 명령줄 참조
 ms.date: 08/30/2018
-ms.technology:
-- cpp-masm
-ms.topic: reference
-dev_langs:
-- C++
 ms.assetid: f7b89478-1ab5-4995-8cde-a805f0462c45
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e88f35035944ee24bed0bef8733db0e2c0139c83
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f49b59a81fbe5f11c0f219d1e1fe83a4ee811c7a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685343"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579241"
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM 어셈블러 명령줄 참조
 

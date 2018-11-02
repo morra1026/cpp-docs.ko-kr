@@ -1,37 +1,27 @@
 ---
-title: 컴파일러 오류 C3278 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 오류 C3278
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C3278
-dev_langs:
-- C++
 helpviewer_keywords:
 - C3278
 ms.assetid: 56f818f5-85a6-4792-843b-54fe16327658
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b993aaaee0e50eacf47ce594b4c5efa47f83dd18
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 7618336c08dd111e495d7e4102b8e61c6e927c39
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705077"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579749"
 ---
 # <a name="compiler-error-c3278"></a>컴파일러 오류 C3278
 
-> 직접 호출 인터페이스 또는 순수 메서드 '*메서드*' 런타임 시 실패할 수
+> 직접 호출 인터페이스 또는 순수 메서드 '*메서드*' 런타임 시 실패
 
 ## <a name="remarks"></a>설명
 
 인터페이스 메서드 또는 순수 메서드를 호출했지만 허용되지 않습니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 샘플에서는 C3278을 생성합니다.
 

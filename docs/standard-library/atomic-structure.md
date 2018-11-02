@@ -1,25 +1,15 @@
 ---
-title: atomic 구조체 | Microsoft 문서
-ms.custom: ''
+title: atomic 구조체
 ms.date: 04/20/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - atomic/std::atomic
-dev_langs:
-- C++
 ms.assetid: 261628ed-7049-41ac-99b9-cfe49f696b44
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e5982fc303362a9636c4bf1b0e2d89c6aa05031
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 258812f033d34f040d96847581d6f51692a933b6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962360"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50590062"
 ---
 # <a name="atomic-structure"></a>atomic 구조체
 
@@ -96,7 +86,7 @@ atomic( Ty Value ) noexcept;
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 초기화 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -138,7 +128,7 @@ Ty operator=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 A *Ty* 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -175,7 +165,7 @@ Ty atomic<Ty>::operator+=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 정수 계열 또는 포인터 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -216,7 +206,7 @@ Ty atomic<Ty>::operator-=(
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 정수 계열 또는 포인터 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -242,7 +232,7 @@ atomic<Ty>::operator&= (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -268,7 +258,7 @@ atomic<Ty>::operator|= (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -294,7 +284,7 @@ atomic<Ty>::operator^= (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -339,7 +329,7 @@ bool compare_exchange_strong(
 *Exp*<br/>
 형식의 값입니다 *Ty*합니다.
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *(Diffgr:id="order1*<br/>
@@ -394,7 +384,7 @@ bool compare_exchange_weak(
 *Exp*<br/>
 형식의 값입니다 *Ty*합니다.
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *(Diffgr:id="order1*<br/>
@@ -434,7 +424,7 @@ Ty atomic<Ty>::exchange(
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *순서*<br/>
@@ -465,7 +455,7 @@ Ty atomic<Ty>::fetch_add (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *순서*<br/>
@@ -496,7 +486,7 @@ Ty atomic<Ty>::fetch_and (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *순서*<br/>
@@ -527,7 +517,7 @@ Ty atomic<Ty>::fetch_or (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *순서*<br/>
@@ -558,7 +548,7 @@ Ty atomic<Ty>::fetch_sub (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *순서*<br/>
@@ -589,7 +579,7 @@ Ty atomic<Ty>::fetch_xor (
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 형식의 값입니다 *Ty*합니다.
 
 *순서*<br/>
@@ -658,7 +648,7 @@ void atomic<Ty>::store(
 
 ### <a name="parameters"></a>매개 변수
 
-*Value*<br/>
+*값*<br/>
 A *Ty* 개체입니다.
 
 *순서*<br/>

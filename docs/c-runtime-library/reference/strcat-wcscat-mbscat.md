@@ -1,10 +1,6 @@
 ---
-title: strcat, wcscat, _mbscat | Microsoft Docs
-ms.custom: ''
+title: strcat, wcscat, _mbscat
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbscat
 - wcscat
@@ -29,8 +25,6 @@ f1_keywords:
 - _tcscat
 - strcat
 - wcscat
-dev_langs:
-- C++
 helpviewer_keywords:
 - concatenating strings
 - mbscat function
@@ -45,23 +39,19 @@ helpviewer_keywords:
 - appending strings
 - wcscat function
 ms.assetid: c89c4ef1-817a-44ff-a229-fe22d06ba78a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f2daf6621cb2e72c38212227da20f6b847bb08e9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b49e2e39fb0acd9128a52e83bf704567bb82d532
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32413416"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546395"
 ---
 # <a name="strcat-wcscat-mbscat"></a>strcat, wcscat, _mbscat
 
 문자열을 추가합니다. 이러한 함수의 더 안전한 버전을 사용할 수 있습니다. [strcat_s, wcscat_s, _mbscat_s](strcat-s-wcscat-s-mbscat-s.md)를 참조하세요.
 
 > [!IMPORTANT]
-> **_mbscat_s** 는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbscat_s** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -109,16 +99,16 @@ Null 종료 소스 문자열입니다.
 
 ## <a name="remarks"></a>설명
 
-**strcat** 함수 추가 *strSource* 를 *strDestination* 하 고 결과 문자열을 null 문자로 종료 합니다. 초기 문자 *strSource* 의 null 종결 문자를 덮어씁니다 *strDestination*합니다. 동작은 **strcat** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
+합니다 **strcat** 함수를 추가 *strSource* 하 *strDestination* 하 고 결과 문자열을 null 문자로 종료 됩니다. 첫 문자의 *strSource* 의 종료 null 문자를 덮어씁니다 *strDestination*합니다. 동작은 **strcat** 소스 문자열과 대상 문자열이 겹치는 경우 정의 되지 않습니다.
 
 > [!IMPORTANT]
-> 때문에 **strcat** 에 공간이 충분 한지 확인 하지 않습니다 *strDestination* 추가 하기 전에 *strSource*, 버퍼 오버런의 잠재적 원인이 될 것이 있습니다. 대신 [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)를 사용하는 것이 좋습니다.
+> 때문에 **strcat** 에 공간이 충분 한지 확인 하지 않습니다 *strDestination* 추가 하기 전에 *strSource*, 버퍼 오버런의 잠재적 원인이 될 것입니다. 대신 [strncat](strncat-strncat-l-wcsncat-wcsncat-l-mbsncat-mbsncat-l.md)를 사용하는 것이 좋습니다.
 
-**wcscat** 및 **_mbscat** 와이드 문자 및 멀티 바이트 문자 버전의 **strcat**합니다. 인수 및 반환 값이 **wcscat** 은 와이드 문자열이 고 **_mbscat** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**wcscat** 하 고 **_mbscat** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strcat**합니다. 인수 및 반환 값 **wcscat** 은 와이드 문자열이 고 **_mbscat** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하는 템플릿 오버로드를 갖고 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -126,7 +116,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**strcat**|\<string.h>|
 |**wcscat**|\<string.h> 또는 \<wchar.h>|

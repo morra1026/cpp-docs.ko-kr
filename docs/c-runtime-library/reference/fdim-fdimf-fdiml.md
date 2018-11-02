@@ -1,11 +1,6 @@
 ---
-title: fdim, fdimf, fdiml | Microsoft 문서
-ms.custom: ''
+title: fdim, fdimf, fdiml
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - fdim
 - fdimf
@@ -30,23 +25,17 @@ f1_keywords:
 - math/fdim
 - math/fdimf
 - math/fdiml
-dev_langs:
-- C++
 helpviewer_keywords:
 - fdim function
 - fdimf function
 - fdiml function
 ms.assetid: 2d4ac639-51e9-462d-84ab-fb03b06971a0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cdcad02c94717715fdda1b3a9d2e820fc16d0bf4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d8cea831e333ebcd9677d830641c60e460ba5ed4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397508"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50515091"
 ---
 # <a name="fdim-fdimf-fdiml"></a>fdim, fdimf, fdiml
 
@@ -92,7 +81,7 @@ long double fdiml(
 
 ## <a name="return-value"></a>반환 값
 
-양의 차이 반환 *x* 및 *y*:
+양의 차이 반환 *x* 하 고 *y*:
 
 |반환 값|시나리오|
 |------------------|--------------|
@@ -105,21 +94,21 @@ long double fdiml(
 |-----------|------------|
 |오버플로 범위 오류|+HUGE_VAL, +HUGE_VALF 또는 +HUGE_VALL|
 |언더플로 범위 오류|올바른 값(반올림 후)|
-|*x* 또는 *y* 은 NaN|NaN|
+|*x* 나 *y* 가 NaN|NaN|
 
 오류는 [_matherr](matherr.md)에 지정된 대로 보고됩니다.
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **fdim** 사용 하 고 반환 **float** 및 **긴** **double** 형식입니다. C 프로그램에서 **fdim** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **fdim** 및 반환 하는 **float** 하 고 **긴** **double** 형식입니다. C 프로그램에서 **fdim** 항상 받아서 반환 된 **double**합니다.
 
 NaN 처리를 제외 하 고이 함수는 동일 `fmax(x - y, 0)`합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**fdim**, **fdimf**, **fdiml**|\<math.h>|\<cmath>|
+|**fdim**하십시오 **fdimf**, **fdiml**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -1,26 +1,16 @@
 ---
-title: 코드 마법사 하지 않고 컨트롤에 대 한 형식이 안전한 액세스 | Microsoft Docs
-ms.custom: ''
+title: 코드 마법사를 사용하지 않고 컨트롤에 대한 형식이 안전한 액세스 수행
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - dialog boxes [MFC], accessing controls
 - dialog box controls [MFC], accessing
 ms.assetid: 325b4927-d49b-42b4-8e0b-fc84f31fb059
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 2685c946b9ee1c738ee83f9413b7fd955857febb
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2b337aa28d5fdf061d1db4b5cf66303688ef5bf3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46438342"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50501714"
 ---
 # <a name="type-safe-access-to-controls-without-code-wizards"></a>코드 마법사를 사용하지 않고 컨트롤에 대한 형식이 안전한 액세스 수행
 

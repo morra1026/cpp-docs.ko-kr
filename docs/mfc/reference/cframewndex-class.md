@@ -1,10 +1,6 @@
 ---
-title: CFrameWndEx 클래스 | Microsoft Docs
-ms.custom: ''
+title: CFrameWndEx 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CFrameWndEx
 - AFXFRAMEWNDEX/CFrameWndEx
@@ -94,8 +90,6 @@ f1_keywords:
 - AFXFRAMEWNDEX/CFrameWndEx::ShowPane
 - AFXFRAMEWNDEX/CFrameWndEx::UpdateCaption
 - AFXFRAMEWNDEX/CFrameWndEx::WinHelp
-dev_langs:
-- C++
 helpviewer_keywords:
 - CFrameWndEx [MFC], ActiveItemRecalcLayout
 - CFrameWndEx [MFC], AddPane
@@ -184,16 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 50b895bc23d37918a521c3ebd19b6fbadf6cd69e
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5e847fd3a3c5a4217db694ec5586a24313c8102f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46408768"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612210"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 
@@ -734,7 +724,7 @@ BOOL InsertPane(
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 각 컨트롤 막대를 등록 해야 합니다 [CDockingManager 클래스](../../mfc/reference/cdockingmanager-class.md) 도킹 레이아웃을 참여 하도록 합니다.
+[CDockingManager Class](../../mfc/reference/cdockingmanager-class.md) 를 사용하여 도킹 레이아웃에 참여할 각 컨트롤 막대를 등록해야 합니다.
 
 ##  <a name="isfullscreen"></a>  CFrameWndEx::IsFullScreen
 

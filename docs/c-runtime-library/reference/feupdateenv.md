@@ -1,11 +1,6 @@
 ---
-title: feupdateenv | Microsoft 문서
-ms.custom: ''
+title: feupdateenv
 ms.date: 04/05/2018
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - feupdateenv
 apilocation:
@@ -23,21 +18,15 @@ apitype: HeaderDef
 f1_keywords:
 - feupdateenv
 - fenv/feupdateenv
-dev_langs:
-- C++
 helpviewer_keywords:
 - feupdateenv function
 ms.assetid: 3d170042-dfd5-4e4f-a55f-038cf2296cc9
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1d88284717aec7a19c936d7ed8d87da96006d7ed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6d553d6899f55f5bdfb3ff313e88abfcb56ab4ec
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397596"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605112"
 ---
 # <a name="feupdateenv"></a>feupdateenv
 
@@ -54,7 +43,7 @@ int feupdateenv(
 ### <a name="parameters"></a>매개 변수
 
 *penv*<br/>
-에 대 한 포인터는 **fenv_t** 를 호출 하 여 부동 소수점 환경 설정 포함 된 개체 [fegetenv](fegetenv1.md) 또는 [feholdexcept](feholdexcept2.md)합니다. FE_DFL_ENV 매크로를 사용하여 기본 시작 부동 소수점 환경을 지정할 수도 있습니다.
+에 대 한 포인터를 **fenv_t** 를 호출 하 여 집합으로 부동 소수점 환경을 포함 하는 개체 [fegetenv](fegetenv1.md) 하거나 [feholdexcept](feholdexcept2.md)합니다. FE_DFL_ENV 매크로를 사용하여 기본 시작 부동 소수점 환경을 지정할 수도 있습니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -62,13 +51,13 @@ int feupdateenv(
 
 ## <a name="remarks"></a>설명
 
-**feupdateenv** 함수 여러 작업을 수행 합니다. 먼저, 현재 발생한 부동 소수점 예외 상태 플래그를 자동 저장소에 저장합니다. 그런 다음, 현재 부동 소수점 환경에 저장 된 값에서 설정 된 **fenv_t** 가리키는 개체 *penv*합니다. 경우 *penv* 않습니다 **FE_DFL_ENV** 유효한를 가리키지 않습니다 또는 **fenv_t** 개체를 후속 동작이 정의 되지 않습니다. 마지막으로, **feupdateenv** 로컬에 저장 된 부동 소수점 예외를 발생 시킵니다.
+합니다 **feupdateenv** 함수는 여러 작업을 수행 합니다. 먼저, 현재 발생한 부동 소수점 예외 상태 플래그를 자동 저장소에 저장합니다. 그런 다음 저장 된 값에서 현재 부동 소수점 환경을 설정 합니다 **fenv_t** 가리키는 개체 *penv*합니다. 하는 경우 *penv* 아닙니다 **FE_DFL_ENV** 유효한를 가리키지 않습니다 또는 **fenv_t** 개체를 후속 동작이 정의 되지 않습니다. 마지막으로, **feupdateenv** 로컬에 저장 된 부동 소수점 예외를 발생 시킵니다.
 
 이 함수를 사용하려면 호출 전에 `#pragma fenv_access(on)` 지시문을 사용하여 액세스를 방지할 수 있는 부동 소수점 최적화를 꺼야 합니다. 자세한 내용은 [fenv_access](../../preprocessor/fenv-access.md)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
 |**feupdateenv**|\<fenv.h>|\<cfenv>|
 

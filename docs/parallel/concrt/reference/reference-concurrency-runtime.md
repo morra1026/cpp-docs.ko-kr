@@ -1,10 +1,6 @@
 ---
-title: 참조 (동시성 런타임) | Microsoft Docs
-ms.custom: ''
+title: 참조(동시성 런타임)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - concurrent_vector/Concurrency::details::_Concurrent_vector_base_v4::_My_segment
 - agents/Concurrency::details::_Dynamic_array::_Swap
@@ -451,24 +447,18 @@ f1_keywords:
 - concrt/Concurrency::details::_Timer::_Stop
 - concrt/Concurrency::details::_TaskCollectionBase::_M_pParent
 - agents/Concurrency::_Network_link_iterator::operator->
-dev_langs:
-- C++
 helpviewer_keywords:
 - DWORD typedef
 - HANDLE typedef
 - LPSECURITY_ATTRIBUTES typedef
 - HRESULT typedef
 ms.assetid: a057c776-7caa-4605-8f33-9815cf6f9b27
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 575f21e03659f973a25b1ad2e7aae211f9dae187
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: fa1156aa6406f1c34712e845612147a42b753184
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46412108"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50663335"
 ---
 # <a name="reference-concurrency-runtime"></a>참조(동시성 런타임)
 
@@ -480,7 +470,7 @@ ms.locfileid: "46412108"
 ## <a name="in-this-section"></a>섹션 내용
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
-동시성 런타임에서 c + + 용 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수 및 동시성 네임 스페이스 클래스를 제공 합니다. 자세한 내용은 [동시성 런타임](../concurrency-runtime.md)을 참조하세요.
+동시성 런타임에서 c + + 용 동시 프로그래밍 프레임 워크에 대 한 액세스를 제공 하는 함수 및 동시성 네임 스페이스 클래스를 제공 합니다. 자세한 내용은 [Concurrency Runtime](../concurrency-runtime.md)을 참조하세요.
 
 [std 네임 스페이스](std-namespace.md)
 

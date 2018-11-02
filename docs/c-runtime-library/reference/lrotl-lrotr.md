@@ -1,10 +1,6 @@
 ---
-title: _lrotl, _lrotr | Microsoft 문서
-ms.custom: ''
+title: _lrotl, _lrotr
 ms.date: 04/04/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lrotl
 - _lrotr
@@ -26,8 +22,6 @@ f1_keywords:
 - lrotl
 - _lrotr
 - _lrotl
-dev_langs:
-- C++
 helpviewer_keywords:
 - lrotl function
 - bits
@@ -37,20 +31,16 @@ helpviewer_keywords:
 - _lrotl function
 - bits, rotating
 ms.assetid: d42f295b-35f9-49d2-9ee4-c66896ffe68e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0182256b06a3f04acbb941d02624e2b512b22a97
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 71ca61676e4551155f9f14e792c5c1cee65ddb7e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400631"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518419"
 ---
 # <a name="lrotl-lrotr"></a>_lrotl, _lrotr
 
-비트를 왼쪽으로 회전 (**_lrotl**) 또는 오른쪽 (**_lrotr**).
+비트를 왼쪽 회전 (**_lrotl**) 또는 오른쪽 (**_lrotr**).
 
 ## <a name="syntax"></a>구문
 
@@ -73,11 +63,11 @@ unsigned long _lrotr( unsigned long value, int shift );
 
 ## <a name="remarks"></a>설명
 
-**_lrotl** 및 **_lrotr** 함수 회전 *값* 여 *shift* 비트입니다. **_lrotl** 값을 더 중요 한 비트가 방향으로 왼쪽으로 순환 합니다. **_lrotr** 값 오른쪽 덜 중요 한 비트 방향으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
+**_lrotl** 하 고 **_lrotr** 함수 회전 *값* 하 여 *shift* 비트입니다. **_lrotl** 상위 비트가 방향으로 왼쪽 값을 기준으로 회전 합니다. **_lrotr** 값 오른쪽 덜 중요 한 비트 방향으로 회전 합니다. 두 함수 모두 순환되어 *value*의 한쪽 끝에서 잘린 비트 부분을 다른 쪽 끝에 추가합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_lrotl**, **_lrotr**|\<stdlib.h>|
 

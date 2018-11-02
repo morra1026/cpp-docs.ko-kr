@@ -1,29 +1,18 @@
 ---
-title: 줄이기 또는 늘이기 (아이콘에 대 한 이미지 편집기) 이미지 일부 줄이기 | Microsoft Docs
-ms.custom: ''
+title: 이미지 일부 줄이기 또는 늘이기(아이콘에 대한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - bitmaps [C++], shrinking
 - images [C++], stretching
 - bitmaps [C++], stretching
 - images [C++], shrinking
 ms.assetid: c5f58e2c-6b6e-4fb3-9784-76483b2440af
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5bfff5e307b7240a4ce765c31131f8702071b7e9
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 20034416fc9e84c0e12360f80d674602af7b11f2
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46424137"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50487752"
 ---
 # <a name="shrinking-or-stretching-part-of-an-image-image-editor-for-icons"></a>이미지 일부 줄이기 또는 늘이기(아이콘에 대한 이미지 편집기)
 

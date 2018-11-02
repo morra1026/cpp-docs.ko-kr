@@ -1,8 +1,6 @@
 ---
-title: '&lt;thread&gt; 연산자 | Microsoft Docs'
-ms.custom: ''
+title: '&lt;thread&gt; 연산자'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - thread/std::operator!=
 - thread/std::operator&gt;
@@ -11,8 +9,6 @@ f1_keywords:
 - thread/std::operator&lt;&lt;
 - thread/std::operator&lt;=
 - thread/std::operator==
-dev_langs:
-- C++
 ms.assetid: e6bb6c0f-64f9-4cb2-9ff2-05b88a6ba7ac
 helpviewer_keywords:
 - std::operator!= (thread)
@@ -22,12 +18,12 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (thread)
 - std::operator&lt;= (thread)
 - std::operator== (thread)
-ms.openlocfilehash: 5c9eba152ddaf0ab35fc1a331905a457ff339f28
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5a2fd845598ac9f9c983bf53cbd7665ef66ffb70
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45725987"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50636906"
 ---
 # <a name="ltthreadgt-operators"></a>&lt;thread&gt; 연산자
 
@@ -35,7 +31,7 @@ ms.locfileid: "45725987"
 |-|-|-|
 |[operator!=](#op_neq)|[operator&gt;](#op_gt)|[operator&gt;=](#op_gt_eq)|
 |[operator&lt;](#op_lt)|[operator&lt;&lt;](#op_lt_lt)|[operator&lt;=](#op_lt_eq)|
-|[operator==](#op_eq_eq)|
+|[연산자==](#op_eq_eq)|
 
 ## <a name="op_gt_eq"></a>  operator&gt;=
 
@@ -210,7 +206,7 @@ basic_ostream<Elem, Tr>& operator<<(
 *Ostr*<br/>
 [basic_ostream](../standard-library/basic-ostream-class.md) 개체입니다.
 
-*Id*<br/>
+*ID*<br/>
 `thread::id` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

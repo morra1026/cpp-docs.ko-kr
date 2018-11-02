@@ -1,26 +1,17 @@
 ---
-title: COM 및.NET에 대 한 c + + 특성 | Microsoft Docs
+title: COM 및.NET에 대 한 c + + 특성
 ms.custom: index-page
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
 ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 66188f1879c42eaf9429675a2f235130e263211f
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: bacfd4cb78c5bf65422fb4472a4563776041a87b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50072527"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50589282"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM 및.NET에 대 한 c + + 특성
 

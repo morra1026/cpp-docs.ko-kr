@@ -1,10 +1,6 @@
 ---
-title: _strdate_s, _wstrdate_s | Microsoft Docs
-ms.custom: ''
+title: _strdate_s, _wstrdate_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _strdate_s
 - _wstrdate_s
@@ -27,8 +23,6 @@ f1_keywords:
 - _wstrdate_s
 - strdate_s
 - _tstrdate_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - dates, copying
 - tstrdate_s function
@@ -39,16 +33,12 @@ helpviewer_keywords:
 - _strdate_s function
 - _wstrdate_s function
 ms.assetid: d41d8ea9-e5ce-40d4-864e-1ac29b455991
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8e4e9ff3783fc7a89e7af42ebf283209c034c0d6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 85c9ab7dcad68f3aa4832236461cd38b07d4ae44
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414313"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50629010"
 ---
 # <a name="strdates-wstrdates"></a>_strdate_s, _wstrdate_s
 
@@ -92,23 +82,23 @@ errno_t _wstrdate_s(
 |*buffer*|*numberOfElements*|반환|내용을 *버퍼*|
 |--------------|------------------------|------------|--------------------------|
 |**NULL**|(임의)|**EINVAL**|수정 안 됨|
-|하지 **NULL** (유효한 버퍼 가리킴)|0|**EINVAL**|수정 안 됨|
-|하지 **NULL** (유효한 버퍼 가리킴)|0 < *numberOfElements* < 9|**EINVAL**|빈 문자열|
-|하지 **NULL** (유효한 버퍼 가리킴)|*numberOfElements* > = 9|0|설명에 지정된 형식의 현재 날짜|
+|되지 **NULL** (유효한 버퍼를 가리킴)|0|**EINVAL**|수정 안 됨|
+|되지 **NULL** (유효한 버퍼를 가리킴)|0 < *numberOfElements* < 9|**EINVAL**|빈 문자열|
+|되지 **NULL** (유효한 버퍼를 가리킴)|*numberOfElements* > = 9|0|설명에 지정된 형식의 현재 날짜|
 
 ## <a name="security-issues"></a>보안 문제
 
-잘못 된 비 전달 **NULL** 경우 버퍼 액세스 위반이 발생에 대 한 값의 *numberOfElements* 매개 변수는 9 보다 큰 합니다.
+잘못 된 전달 되지 않은 **NULL** 버퍼 하면 액세스 위반이 발생 하는 경우에 대 한 값을 *numberOfElements* 매개 변수가 9 보다 크면 합니다.
 
-실제 크기 보다 크면 크기에 대 한 값을 전달는 *버퍼* 버퍼 오버런이 발생 합니다.
+실제 크기 보다 크면는 크기에 대 한 값을 전달 합니다 *버퍼* 버퍼 오버런이 발생 합니다.
 
 ## <a name="remarks"></a>설명
 
-이러한 함수의 더 안전한 버전을 제공 **_strdate** 및 **_wstrdate**합니다. **_strdate_s** 함수는 현재 시스템 날짜를 가리키는 버퍼에 복사 *버퍼*포맷 된 **mm**/**dd** / **yy**여기서 **mm** 는 월을 나타내는 두 자리 숫자로 **dd** 는 날짜를 나타내는 두 자리 숫자로 및 **yy**  은 해당 연도의 마지막 두 자리 숫자입니다. 예를 들어 문자열 **12/05/99** 1999 년 12 월 5 일을 나타냅니다. 버퍼의 길이는 9자 이상이어야 합니다.
+이러한 함수의 더 안전한 버전 제공 **_strdate** 하 고 **_wstrdate**합니다. 합니다 **_strdate_s** 함수는 현재 시스템 날짜를 가리키는 버퍼에 복사 *버퍼*서식을 **mm**/**dd** / **yy**여기서 **mm** 는 월을 나타내는 두 자리 숫자로 **dd** 는 일을 나타내는 두 자리 숫자로 및 **yy**  연도의 마지막 두 자리 됩니다. 예를 들어, 문자열 **9905/12/** 1999 년 12 월 5 일을 나타냅니다. 버퍼의 길이는 9자 이상이어야 합니다.
 
-**_wstrdate_s** 의 와이드 문자 버전이 **_strdate_s**; 인수 및 반환 값의 **_wstrdate_s** 는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
+**_wstrdate_s** 의 와이드 문자 버전이 **_strdate_s**;의 인수와 반환 값 **_wstrdate_s** 는 와이드 문자 문자열입니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-경우 *버퍼* 는 **NULL** 포인터 또는 *numberOfElements* 보다 작거나 9 자에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL** 버퍼가 **NULL** 경우 *numberOfElements*가 0 또는 집합을 보다 작거나 같으면 **errno** 를 **ERANGE** 경우 *numberOfElements* 9 보다 작으면 합니다.
+하는 경우 *버퍼* 되는 **NULL** 포인터 이거나 *numberOfElements* 9 자 보다 작으면가에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [ 매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL** 버퍼가 **NULL** 이거나 *numberOfElements*0 또는 집합 보다 작거나 같으면 **errno** 하 **ERANGE** 경우 *numberOfElements* 9 보다 작으면 합니다.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 
@@ -120,7 +110,7 @@ C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 �
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_strdate**|\<time.h>|
 |**_wstrdate**|\<time.h> 또는 \<wchar.h>|

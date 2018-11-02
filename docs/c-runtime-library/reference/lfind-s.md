@@ -1,10 +1,6 @@
 ---
-title: _lfind_s | Microsoft 문서
-ms.custom: ''
+title: _lfind_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _lfind_s
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - lfind_s
 - _lfind_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - linear searching
 - keys, finding in arrays
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - searching, linear
 - _lfind_s function
 ms.assetid: f1d9581d-5c9d-4222-a31c-a6dfafefa40d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 963b657a009f7376a17706b4ac1e5fb4e8b69237
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 08c04d9d1ca69998d54304c96468298013907179
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404820"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50648445"
 ---
 # <a name="lfinds"></a>_lfind_s
 
@@ -69,42 +59,42 @@ void *_lfind_s(
 *base*<br/>
 검색 데이터의 기준에 대한 포인터입니다.
 
-*번호*<br/>
+*수*<br/>
 배열 요소의 수입니다.
 
 *size*<br/>
 배열 요소의 크기(바이트)입니다.
 
 *compare*<br/>
-비교 루틴에 대한 포인터입니다. 첫 번째 매개 변수는 *컨텍스트* 포인터입니다. 두 번째 매개 변수는 검색할 키에 대한 포인터입니다. 세 번째 매개 변수는 키와 비교할 배열 요소에 대한 포인터입니다.
+비교 루틴에 대한 포인터입니다. 첫 번째 매개 변수를 *상황에 맞는* 포인터입니다. 두 번째 매개 변수는 검색할 키에 대한 포인터입니다. 세 번째 매개 변수는 키와 비교할 배열 요소에 대한 포인터입니다.
 
 *context*<br/>
 비교 함수에서 액세스할 수 있는 개체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
 
-키가 있으면 **_lfind_s** 배열의 요소에 대 한 포인터를 반환 *기본* 일치 하는 *키*합니다. 키가 없으면 **_lfind_s** 반환 **NULL**합니다.
+키가 있으면 **_lfind_s** 배열의 요소에 대 한 포인터를 반환 합니다. *기본* 일치 하는 *키*합니다. 키가 없으면 **_lfind_s** 반환 **NULL**합니다.
 
-함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가 반환 하 고 **NULL**합니다.
+함수에 잘못된 매개 변수를 전달하면 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 고 함수가 반환 **NULL**합니다.
 
 ### <a name="error-conditions"></a>오류 조건
 
 |key|base|compare|num|size|errno|
 |---------|----------|-------------|---------|----------|-----------|
-|**NULL**|모두|모두|모두|모두|**EINVAL**|
-|모두|**NULL**|모두|!= 0|모두|**EINVAL**|
-|모두|모두|모두|any|0|**EINVAL**|
-|모두|모두|**NULL**|an|모두|**EINVAL**|
+|**NULL**|any|any|any|any|**EINVAL**|
+|any|**NULL**|any|!= 0|any|**EINVAL**|
+|any|any|any|any|0|**EINVAL**|
+|any|any|**NULL**|an|any|**EINVAL**|
 
 ## <a name="remarks"></a>설명
 
-**_lfind_s** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch_s**, **_lfind_s** 정렬할 배열 필요 하지 않습니다. *기본* 인수는 검색할 배열의 기준에 대 한 포인터입니다. *비교* 인수는 두 개의 배열 요소를 비교 하 고 다음의 관계를 지정 하는 값을 반환 하는 사용자 제공 루틴에 대 한 포인터입니다. **_lfind_s** 호출은 *비교* 일상적인 한 번 이상 전달 검색 하는 동안는 *컨텍스트* 포인터와 각 호출에 두 개의 배열 요소에 대 한 포인터입니다. *비교* 루틴 요소를 비교 다음 0이 아닌 (의미 요소는 서로 다른)를 반환 해야 또는 0 (요소는 동일).
+합니다 **_lfind_s** 함수 값에 대 한 선형 검색을 수행 *키* 배열을 *번호* 의 각 요소 *너비* 바이트입니다. 와 달리 **bsearch_s**하십시오 **_lfind_s** 배열을 정렬할 필요가 없습니다. 합니다 *기본* 인수는 검색할 배열의 밑에 대 한 포인터입니다. 합니다 *비교* 인수는 두 배열 요소를 비교 하 고 해당 관계를 지정 하는 값을 반환 하는 사용자가 제공한 루틴에 대 한 포인터입니다. **_lfind_s** 호출을 *비교* 일상적인 한 번 이상 전달 검색 중를 *상황에 맞는* 포인터 및 각 호출에서 두 배열 요소에 대 한 포인터입니다. 합니다 *비교* 루틴 요소를 비교 다음 0이 아닌 값 (즉 요소를 서로 다르게 되어 있는지)를 반환 해야 합니다 또는 0 (요소가 동일 하다는 의미).
 
-**_lfind_s** 비슷합니다 **_lfind** 추가 제외 하 고는 *컨텍스트* , 비교 함수 인수 및 함수 매개 변수 목록에 대 한 포인터입니다. *컨텍스트* 포인터는 검색 된 데이터 구조가 개체의 일부 경우에 유용할 수 있습니다 및 *비교* 함수 개체의 멤버에 액세스 해야 합니다. *비교* 함수는 void 포인터를 해당 개체의 적절 한 개체 유형 및 액세스 구성원으로 캐스팅할 수 있습니다. 추가 *컨텍스트* 매개 변수를 사용 하면 **_lfind_s** 추가 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 보안은 *비교* 함수입니다.
+**_lfind_s** 비슷합니다 **_lfind** 추가 제외 하 고는 *상황에 맞는* 비교 함수의 인수 및 함수의 매개 변수 목록에 대 한 포인터입니다. 합니다 *상황에 맞는* 포인터는 검색된 데이터 구조가 개체의 일부 경우에 유용할 수 있습니다 및 *비교* 함수 개체의 멤버에 액세스 해야 합니다. 합니다 *비교* 함수 해당 개체의 적절 한 개체 유형 및 액세스 멤버에는 void 포인터를 캐스팅할 수 있습니다. 추가 합니다 *상황에 맞는* 매개 변수 **_lfind_s** 추가 데이터를 사용할 수 있도록 정적 변수를 사용 하 여 연결 하는 재진입 버그를 방지 하려면 추가 컨텍스트를 사용할 수 있으므로 보안 합니다 *비교* 함수입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_lfind_s**|\<search.h>|
 

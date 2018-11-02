@@ -1,10 +1,6 @@
 ---
-title: _fpreset | Microsoft 문서
-ms.custom: ''
+title: _fpreset
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fpreset
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - _fpreset
 - fpreset
-dev_langs:
-- C++
 helpviewer_keywords:
 - fpreset function
 - floating-point numbers, resetting math package
 - _fpreset function
 ms.assetid: f31c6a04-b464-4f07-a7c4-42133360e328
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8b550df3e43b56038ae6d1b2d6695c86d90c3499
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0b3ea4289cd0ff031fd2828e3c4183911459297c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32398896"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50592614"
 ---
 # <a name="fpreset"></a>_fpreset
 
@@ -53,13 +43,13 @@ void _fpreset( void );
 
 ## <a name="remarks"></a>설명
 
-**_fpreset** 함수에 부동 소수점 수학 패키지 다시 초기화 합니다. **_fpreset** 일반적으로 사용한 **신호**, **시스템**, 또는 **_exec** 또는 **_spawn** 함수입니다. 프로그램 부동 소수점 오류 신호를 트래핑 하는 경우 (**SIGFPE**)와 **신호**를 호출 하 여 부동 소수점 오류 로부터 안전 하 게 복구할 수 있는 **_fpreset** 를사용하고**longjmp**합니다.
+합니다 **_fpreset** 함수에 부동 소수점 수학 패키지 다시 초기화 합니다. **_fpreset** 일반적으로 사용 됩니다 **신호**, **system**, 또는 **_exec** 하거나 **_spawn** 함수. 프로그램 부동 소수점 오류 신호를 포착 하는 경우 (**SIGFPE**) 사용 하 여 **신호**를 호출 하 여 부동 소수점 오류에서 안전 하 게 복구할 수 있습니다 **_fpreset** 사용**longjmp**합니다.
 
-로 컴파일하는 경우이 함수는 사용 되지 않습니다 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 공용 언어 런타임은 기본 부동 소수점 정밀도만 지원 하기 때문에 있습니다.
+로 컴파일하는 경우이 함수는 사용 되지 않습니다 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 공용 언어 런타임은 기본 부동 소수점 정밀도만 지원 하기 때문입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fpreset**|\<float.h>|
 

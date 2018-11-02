@@ -1,29 +1,19 @@
 ---
-title: 컴파일러 옵션 범주별 목록 | Microsoft Docs
-ms.custom: ''
+title: 컴파일러 옵션 범주별 목록
 ms.date: 08/20/2018
-ms.technology:
-- cpp-tools
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: a255259af5f660a11007005fd71f85bff80a8e05
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: 20dab3e4ec1d0a409d591e2b470e127e20156a8a
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42573288"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50532953"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
-이 문서에는 컴파일러 옵션의 범주별 목록이 포함되어 있습니다. 사전순 목록에 대해서 [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)합니다.
+이 문서에는 컴파일러 옵션의 범주별 목록이 포함되어 있습니다. 사전순으로 나열된 목록을 보려면 [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)을 참조하세요.
 
 ### <a name="optimization"></a>최적화
 
@@ -65,9 +55,9 @@ ms.locfileid: "42573288"
 |[/guard:cf](guard-enable-control-flow-guard.md)|제어 흐름 가드 보안 검사를 추가합니다.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` 호출 규칙을 사용합니다(x86 및 x64에만 해당).|
 |[/Gw](gw-optimize-global-data.md)|전체 프로그램 전역 데이터 최적화를 사용하도록 설정합니다.|
-|[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 사용 하 여 [/EH](eh-exception-handling-model.md) 대신 합니다.|
+|[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 대신 [/EH](eh-exception-handling-model.md) 를 사용합니다.|
 |[/Gy](gy-enable-function-level-linking.md)|함수 수준 링크를 사용합니다.|
-|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. (동일 [/rtc1](rtc-run-time-error-checks.md))|
+|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. [/RTC1](rtc-run-time-error-checks.md)과 동일합니다.|
 |[/Gz](gd-gr-gv-gz-calling-convention.md)|`__stdcall` 호출 규칙을 사용합니다(x86 (x86 전용)|
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. X64에만이 컴파일러 옵션은 컴파일러 (네이티브 및 크로스 컴파일).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
@@ -129,7 +119,7 @@ ms.locfileid: "42573288"
 |[/vmv](vmm-vms-vmv-general-purpose-representation.md)|가상 상속을 선언합니다.|
 |[/Z7](z7-zi-zi-debug-information-format.md)|C 7.0 호환 디버깅 정보를 생성 합니다.|
 |[/Za](za-ze-disable-language-extensions.md)|언어 확장을 사용하지 않습니다.|
-|[/Zc](zc-conformance.md)|표준 동작을 지정 [/Ze](za-ze-disable-language-extensions.md)합니다.|
+|[/Zc](zc-conformance.md)|[/Ze](za-ze-disable-language-extensions.md)에서 표준 동작을 지정합니다.|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
 |[/Zf](zf.md)|PDB 병렬 빌드에서 생성 시간을 개선합니다.|
 |[/ZI](z7-zi-zi-debug-information-format.md)|편집하며 계속하기와 호환되는 프로그램 데이터베이스에 디버깅 정보를 포함합니다. (x86 전용)|
@@ -191,7 +181,7 @@ ms.locfileid: "42573288"
 |[/Wv](compiler-option-warning-level.md)|이후 버전의 컴파일러에서 도입된 경고를 사용하지 않습니다.|
 |[/WX](compiler-option-warning-level.md)|경고를 오류로 처리합니다.|
 |[/Yc](yc-create-precompiled-header-file.md)|만듭니다. PCH 파일입니다.|
-|[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 사용 하 여 [/Zi](z7-zi-zi-debug-information-format.md) 대신 합니다.|
+|[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 대신 [/Zi](z7-zi-zi-debug-information-format.md) 를 사용합니다.|
 |[/Yl](yl-inject-pch-reference-for-debug-library.md)|디버그 라이브러리를 만들 때 PCH 참조를 삽입합니다.|
 |[/Yu](yu-use-precompiled-header-file.md)|빌드하는 동안 미리 컴파일된 헤더 파일을 사용합니다.|
 |[/Y-](y-ignore-precompiled-header-options.md)|현재 빌드에서 미리 컴파일된 다른 모든 헤더 컴파일러 옵션을 무시합니다.|
@@ -209,17 +199,17 @@ ms.locfileid: "42573288"
 
 |옵션|용도|
 |------------|-------------|
-|[/clr:noAssembly](clr-common-language-runtime-compilation.md)|더 이상 사용되지 않습니다. 사용 하 여 [/LN (MSIL 모듈 만들기)](ln-create-msil-module.md) 대신 합니다.|
+|[/clr:noAssembly](clr-common-language-runtime-compilation.md)|더 이상 사용되지 않습니다. 대신 [/LN (Create MSIL Module)](ln-create-msil-module.md) 를 사용하세요.|
 |[/Fr](fr-fr-create-dot-sbr-file.md)|더 이상 사용되지 않습니다. 지역 변수 없이 찾아보기 정보 파일을 만듭니다.|
 |[/Ge](ge-enable-stack-probes.md)|더 이상 사용되지 않습니다. 스택 프로브를 활성화합니다. 기본적으로 설정되어 있습니다.|
-|[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 사용 하 여 [/EH](eh-exception-handling-model.md) 대신 합니다.|
-|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. 사용 하 여 [/rtc1](rtc-run-time-error-checks.md) 대신 합니다.|
+|[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 대신 [/EH](eh-exception-handling-model.md) 를 사용합니다.|
+|[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. 대신 [/RTC1](rtc-run-time-error-checks.md) 을 사용합니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
 |[QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환하는 방법을 지정하는 데 사용되었습니다.|
 |[/V](v-version-number.md)|더 이상 사용되지 않습니다. .obj 파일 버전 문자열을 설정합니다.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|사용되지 않습니다. 64비트 이식성 문제를 검색합니다.|
-|[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 사용 하 여 [/Zi](z7-zi-zi-debug-information-format.md) 대신 합니다.|
+|[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 대신 [/Zi](z7-zi-zi-debug-information-format.md) 를 사용합니다.|
 |[/Zc:forScope-](zc-forscope-force-conformance-in-for-loop-scope.md)|더 이상 사용되지 않습니다. for 루프 범위의 규칙을 사용하지 않도록 설정합니다.|
 |[/Ze](za-ze-disable-language-extensions.md)|더 이상 사용되지 않습니다. 언어 확장을 사용합니다.|
 |[/Zg](zg-generate-function-prototypes.md)|Visual C++ 2015에서 제거되었습니다. 함수 프로토타입을 생성합니다.|

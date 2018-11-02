@@ -1,22 +1,13 @@
 ---
-title: 컨테이너 (최신 c + +) | Microsoft Docs
-ms.custom: ''
+title: 컨테이너(최신 C++)
 ms.date: 1/18/2018
-ms.technology:
-- cpp-language
 ms.topic: conceptual
-dev_langs:
-- C++
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1a05eada2b5828cfc654496355bddcabcafc8d60
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: b25afe6d75147c37b92bf0805858a24f276195fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46086150"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50564660"
 ---
 # <a name="containers-modern-c"></a>컨테이너(최신 C++)
 

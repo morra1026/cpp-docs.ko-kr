@@ -1,23 +1,13 @@
 ---
-title: '연습: 컴파일 C + + /cli 프로그램 명령줄에 | Microsoft Docs'
-ms.custom: ''
+title: '연습: 명령줄에서 C++/CLI 프로그램 컴파일'
 ms.date: 09/24/2018
-ms.technology:
-- cpp-tools
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: cef41c88-faf9-439d-8423-25aa3f5674dd
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: bdc09d5c1de2e74f7e24b72439910068fe9f6c1a
-ms.sourcegitcommit: a738519aa491a493a8f213971354356c0e6a5f3a
+ms.openlocfilehash: e8841600fd61aacfe5b942ac4a4305619dff7e90
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48820631"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50451027"
 ---
 # <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 명령줄에서 C++/CLI 프로그램 컴파일
 

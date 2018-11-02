@@ -1,18 +1,16 @@
 ---
-title: '&lt;limits&gt; 열거형 | Microsoft 문서'
-ms.custom: ''
+title: '&lt;limits&gt; 열거형'
 ms.date: 11/04/2016
-ms.topic: reference
 f1_keywords:
 - limits/std::float_denorm_style
 - limits/std::float_round_style
 ms.assetid: c86680a2-ba97-4ed9-8c20-a448857d7dc5
-ms.openlocfilehash: 5795d146714c6eb00902518347138a98574679a8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 68f0ba605b62f2492f49a2b81030c42dca80bf5f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960650"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50653286"
 ---
 # <a name="ltlimitsgt-enums"></a>&lt;limits&gt; 열거형
 
@@ -41,7 +39,7 @@ enum float_denorm_style {
 
 - `denorm_present` 비 정규화 된 폼이 경우 다음을 제공 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 열거형의 값에 액세스할 수 있는 예제는 [numeric_limits::has_denorm](../standard-library/numeric-limits-class.md#has_denorm)을 참조하세요.
 
@@ -72,7 +70,7 @@ enum float_round_style {
 
 - `round_toward_neg_infinity` 하는 경우 더 음의 정수는 반올림 합니다.
 
-### <a name="example"></a>예
+### <a name="example"></a>예제
 
 이 열거형의 값에 액세스할 수 있는 예제는 [numeric_limits::round_style](../standard-library/numeric-limits-class.md#round_style)을 참조하세요.
 

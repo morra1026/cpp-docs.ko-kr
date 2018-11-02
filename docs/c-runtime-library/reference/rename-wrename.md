@@ -1,10 +1,6 @@
 ---
-title: rename, _wrename | Microsoft Docs
-ms.custom: ''
+title: rename, _wrename
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rename
 - _wrename
@@ -25,8 +21,6 @@ f1_keywords:
 - _wrename
 - _trename
 - Rename
-dev_langs:
-- C++
 helpviewer_keywords:
 - trename function
 - directories [C++], renaming
@@ -40,16 +34,12 @@ helpviewer_keywords:
 - names [C++], changing directory
 - renaming files
 ms.assetid: 9f0a6103-26a2-4dda-b14b-79a48946266a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f02829b394649b86dfda9baad7c5792853fce746
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70793dee54460b6372bfbe815115aa9211670c6f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407475"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50463988"
 ---
 # <a name="rename-wrename"></a>rename, _wrename
 
@@ -92,9 +82,9 @@ int _wrename(
 
 **rename** 함수는 *oldname*으로 지정된 파일이나 디렉터리의 이름을 *newname*으로 지정된 이름으로 바꿉니다. 이전 이름은 기존 파일이나 디렉터리의 경로여야 합니다. 새 이름은 기존 파일 또는 디렉터리의 이름이 아니어야 합니다. **rename**을 사용하면 *newname* 인수에 다른 경로를 제공하여 디렉터리나 장치 간에 파일을 이동할 수 있습니다. 그러나 **rename**을 사용하여 디렉터리를 이동할 수는 없습니다. 디렉터리는 이름을 바꿀 수는 있지만 이동할 수는 없습니다.
 
-**_wrename** 의 와이드 문자 버전이 **(_r)**;에 대 한 인수 **_wrename** 는 와이드 문자 문자열입니다. **_wrename** 및 **(_r)** 동일 하 게 작동 합니다.
+**_wrename** 의 와이드 문자 버전이 **_rename**;에 대 한 인수 **_wrename** 는 와이드 문자 문자열입니다. **_wrename** 하 고 **_rename** 동일 하 게 작동 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -102,7 +92,7 @@ int _wrename(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**rename**|\<io.h> 또는 \<stdio.h>|
 |**_wrename**|\<stdio.h> 또는 \<wchar.h>|

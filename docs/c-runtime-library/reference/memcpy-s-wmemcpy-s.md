@@ -1,10 +1,6 @@
 ---
-title: memcpy_s, wmemcpy_s | Microsoft 문서
-ms.custom: ''
+title: memcpy_s, wmemcpy_s
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - memcpy_s
 - wmemcpy_s
@@ -24,22 +20,16 @@ apitype: DLLExport
 f1_keywords:
 - wmemcpy_s
 - memcpy_s
-dev_langs:
-- C++
 helpviewer_keywords:
 - memcpy_s function
 - wmemcpy_s function
 ms.assetid: 5504e20a-83d9-4063-91fc-3f55f7dabe99
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 12bf97e596a7cb4e3befa4c0633a8ef2df29a6d1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e7d6cc7abdd5f343bf1482f534f5112eabbc96b8
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403796"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50607157"
 ---
 # <a name="memcpys-wmemcpys"></a>memcpy_s, wmemcpy_s
 
@@ -84,20 +74,20 @@ errno_t wmemcpy_s(
 
 |*dest*|*destSize*|*src*|*count*|반환 값|내용을 *dest*|
 |------------|----------------|-----------|---|------------------|------------------------|
-|모두|모두|모두|0|0|수정 안 됨|
-|**NULL**|모두|모두|0이 아닌 값|**EINVAL**|수정 안 됨|
-|모두|모두|**NULL**|0이 아닌 값|**EINVAL**|*dest* 0|
-|모두|< *개수*|모두|0이 아닌 값|**ERANGE**|*dest* 0|
+|any|any|any|0|0|수정 안 됨|
+|**NULL**|any|any|0이 아닌 값|**EINVAL**|수정 안 됨|
+|any|any|**NULL**|0이 아닌 값|**EINVAL**|*dest* 가 0이 됨|
+|any|< *개수*|any|0이 아닌 값|**ERANGE**|*dest* 가 0이 됨|
 
 ## <a name="remarks"></a>설명
 
-**memcpy_s** 복사본 *count* 바이트 *src* 를 *dest*; **wmemcpy_s** 복사본 *count* 와이드 문자 (2 바이트)입니다. 소스와 대상이 겹치는 경우의 동작 **memcpy_s** 정의 되지 않습니다. 사용 하 여 **memmove_s** 하면 겹치는 영역을 처리 하도록 합니다.
+**memcpy_s** 복사본 *개수* 바이트 *src* 하 *dest*; **wmemcpy_s** 복사본 *개수* 와이드 문자 (2 바이트)입니다. 소스와 대상이 겹치는 경우의 동작은 **memcpy_s** 정의 되지 않습니다. 사용 하 여 **memmove_s** 겹치는 영역을 처리 하도록 합니다.
 
-이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 경우 *count* 0이 아닌 및 *dest* 또는 *src* 가 null 포인터 또는 *destSize* 보다 작으면 *count*에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는이 함수를 이러한 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 허용 된 경우 이러한 함수가 반환 **EINVAL** 또는 **ERANGE** 설정 **errno** 반환 값입니다.
+이러한 함수는 해당 함수 매개 변수의 유효성을 검사합니다. 하는 경우 *개수* 0이 아닌 및 *dest* 또는 *src* 가 null 포인터인 경우 또는 *destSize* 보다 작은 *개수*, 이러한 함수에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EINVAL** 또는 **ERANGE** 설정 하 고 **errno** 반환 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**memcpy_s**|\<memory.h> 또는 \<string.h>|
 |**wmemcpy_s**|\<wchar.h>|

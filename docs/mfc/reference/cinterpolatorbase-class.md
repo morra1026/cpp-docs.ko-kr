@@ -1,10 +1,6 @@
 ---
-title: CInterpolatorBase 클래스 | Microsoft Docs
-ms.custom: ''
+title: CInterpolatorBase 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: reference
 f1_keywords:
 - CInterpolatorBase
 - AFXANIMATIONCONTROLLER/CInterpolatorBase
@@ -18,8 +14,6 @@ f1_keywords:
 - AFXANIMATIONCONTROLLER/CInterpolatorBase::SetCustomInterpolator
 - AFXANIMATIONCONTROLLER/CInterpolatorBase::SetDuration
 - AFXANIMATIONCONTROLLER/CInterpolatorBase::SetInitialValueAndVelocity
-dev_langs:
-- C++
 helpviewer_keywords:
 - CInterpolatorBase [MFC], CInterpolatorBase
 - CInterpolatorBase [MFC], CreateInstance
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - CInterpolatorBase [MFC], SetDuration
 - CInterpolatorBase [MFC], SetInitialValueAndVelocity
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5287c54aad0a4ec41145f8241123489ea74d19f7
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: e428478f2f437654ea2f0890993245afc53c01f3
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46407906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50541468"
 ---
 # <a name="cinterpolatorbase-class"></a>CInterpolatorBase 클래스
 
@@ -66,14 +56,14 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
 |이름|설명|
 |----------|-----------------|
 |[CInterpolatorBase::CreateInstance](#createinstance)|인스턴스를 만들고 `CInterpolatorBase` 이벤트를 처리 하는 사용자 지정 보간에 대 한 포인터를 저장 합니다.|
-|[CInterpolatorBase::GetDependencies](#getdependencies)|보간의 종속성을 가져옵니다. (`CUIAnimationInterpolatorBase::GetDependencies`를 재정의합니다.)|
-|[CInterpolatorBase::GetDuration](#getduration)|보간의 기간을 가져옵니다. (`CUIAnimationInterpolatorBase::GetDuration`를 재정의합니다.)|
-|[CInterpolatorBase::GetFinalValue](#getfinalvalue)|보간 잠재 고객을 최종 값을 가져옵니다. (`CUIAnimationInterpolatorBase::GetFinalValue`를 재정의합니다.)|
+|[CInterpolatorBase::GetDependencies](#getdependencies)|보간의 종속성을 가져옵니다. ( `CUIAnimationInterpolatorBase::GetDependencies`을 재정의합니다.)|
+|[CInterpolatorBase::GetDuration](#getduration)|보간의 기간을 가져옵니다. ( `CUIAnimationInterpolatorBase::GetDuration`을 재정의합니다.)|
+|[CInterpolatorBase::GetFinalValue](#getfinalvalue)|보간 잠재 고객을 최종 값을 가져옵니다. ( `CUIAnimationInterpolatorBase::GetFinalValue`을 재정의합니다.)|
 |[CInterpolatorBase::InterpolateValue](#interpolatevalue)|지정된 된 오프셋 위치에서 값을 보간합니다 (재정의 `CUIAnimationInterpolatorBase::InterpolateValue`.)|
 |[CInterpolatorBase::InterpolateVelocity](#interpolatevelocity)|지정된 된 오프셋 위치에서 속도 보간합니다 (재정의 `CUIAnimationInterpolatorBase::InterpolateVelocity`.)|
 |[CInterpolatorBase::SetCustomInterpolator](#setcustominterpolator)|이벤트를 처리 하는 사용자 지정 보간에 대 한 포인터를 저장 합니다.|
 |[CInterpolatorBase::SetDuration](#setduration)|보간의 기간 설정 (재정의 `CUIAnimationInterpolatorBase::SetDuration`.)|
-|[CInterpolatorBase::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|보간의 초기 값 및 개발 속도 설정합니다. (`CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`를 재정의합니다.)|
+|[CInterpolatorBase::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|보간의 초기 값 및 개발 속도 설정합니다. ( `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`을 재정의합니다.)|
 
 ## <a name="remarks"></a>설명
 

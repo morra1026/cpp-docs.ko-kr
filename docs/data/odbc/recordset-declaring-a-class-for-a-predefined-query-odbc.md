@@ -1,12 +1,6 @@
 ---
-title: '레코드 집합: 미리 정의 된 쿼리 (ODBC)에 대 한 클래스 선언 | Microsoft Docs'
-ms.custom: ''
+title: '레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)'
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - ODBC recordsets, queries
 - predefined queries and recordsets
@@ -14,17 +8,12 @@ helpviewer_keywords:
 - recordsets, predefined queries
 - recordsets, stored procedures
 ms.assetid: d27c4df9-dad2-4484-ba72-92ab0c8ff928
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 187b24b45ca24d45f6dd0f3f38cf62120633c790
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e83bf2ecb24a9abfd8dc9800a3a10d2d65025336
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50071249"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50611265"
 ---
 # <a name="recordset-declaring-a-class-for-a-predefined-query-odbc"></a>레코드 집합: 미리 정의된 쿼리에 대한 클래스 선언(ODBC)
 

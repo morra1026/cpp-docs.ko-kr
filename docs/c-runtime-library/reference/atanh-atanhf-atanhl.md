@@ -1,10 +1,6 @@
 ---
-title: atanh, atanhf, atanhl | Microsoft 문서
-ms.custom: ''
+title: atanh, atanhf, atanhl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - atanhl
 - atanhf
@@ -26,23 +22,17 @@ f1_keywords:
 - atanhl
 - atanhf
 - atanh
-dev_langs:
-- C++
 helpviewer_keywords:
 - atanhf function
 - atanhl function
 - atanh funciton
 ms.assetid: 83a43b5b-2580-4461-854f-dc84236d9f32
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90a24945a7d630fac909e097728ea4df61ae2b40
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6044c40427e407ee9746867e4b04104c1ca29c7c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393305"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50435362"
 ---
 # <a name="atanh-atanhf-atanhl"></a>atanh, atanhf, atanhl
 
@@ -68,22 +58,22 @@ long double atanh( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**atanh** 함수 반환의 역 탄젠트 (쌍 곡 아크탄젠트) *x*합니다. 경우 *x* 1 또는-1 보다 작은 보다 크면 **errno** 로 설정 된 **EDOM** 결과 quiet NaN입니다. 경우 *x* 은 1 또는-1 이상이 면 양 또는 음의 무한대가 각각 반환 되, 및 **errno** 로 설정 된 **ERANGE**합니다.
+합니다 **atanh** 의 역 쌍 곡 탄젠트 (원호의 하이퍼볼릭 탄젠트)를 반환 하는 함수 *x*합니다. 하는 경우 *x* -1 보다 작거나 1 보다 크거나 **errno** 로 설정 되어 **EDOM** 결과 quiet NaN입니다. 하는 경우 *x* 은 1 또는-1과 같으면 양 또는 음의 무한대가 각각 반환 되, 및 **errno** 로 설정 되어 **ERANGE**합니다.
 
 |입력|SEH 예외|**Matherr** 예외|
 |-----------|-------------------|-------------------------|
 |± QNAN,IND|없음|없음|
-|*X* ≥ 1; *x* ≤-1|없음|없음|
+|*X* ≥ 1 *x* ≤-1|없음|없음|
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **atanh** 사용 하 고 반환 **float** 또는 **긴** **double** 값입니다. C 프로그램에서 **atanh** 항상 사용 하 고 반환 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **atanh** 및 반환 하는 **float** 하거나 **긴** **double** 값입니다. C 프로그램에서 **atanh** 항상 받아서 반환 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**atanh**, **atanhf**, **atanhl**|\<math.h>|\<cmath> 또는 \<math.h>|
+|**atanh**하십시오 **atanhf**, **atanhl**|\<math.h>|\<cmath> 또는 \<math.h>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

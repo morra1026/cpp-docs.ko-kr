@@ -1,40 +1,31 @@
 ---
-title: 컴파일러 경고 (수준 1) C4772 | Microsoft Docs
+title: 컴파일러 경고(수준 1) C4772
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - C4772
-dev_langs:
-- C++
 helpviewer_keywords:
 - C4772
 ms.assetid: dafe6fd8-9faf-41f5-9d66-a55838742c14
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: cbdcfec8d36568c31c291a9de8f9af3aac821fc6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95243ab66d5d0296e1c316ff8dde7add75a030cd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282274"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50540025"
 ---
 # <a name="compiler-warning-level-1-c4772"></a>컴파일러 경고(수준 1) C4772
 
-> \#누락 된 형식 라이브러리;에서 형식을 참조 하는 가져오기 '*누락 형*' 자리 표시자로 사용
+> \#누락 된 형식 라이브러리;에서 형식을 참조 하는 가져오기 '*누락 된 형식*' 자리 표시자로 사용
 
-으로 참조 된 형식 라이브러리는 [#import](../../preprocessor/hash-import-directive-cpp.md) 지시문입니다. 형식 라이브러리와 참조 되지 않은 다른 형식 라이브러리에 대 한 참조를 포함 하는 반면 `#import`합니다. 컴파일러에 의해가이.tlb 파일을 찾을 수 없습니다.
+형식 라이브러리를 사용 하 여 참조를 [#import](../../preprocessor/hash-import-directive-cpp.md) 지시문입니다. 형식 라이브러리를 사용 하 여 참조 되지 않은 다른 형식 라이브러리에 대 한 참조를 포함 하는 반면 `#import`합니다. 이.tlb 파일 컴파일러에서 찾을 수 없습니다.
 
-컴파일러는 하지 되어 형식 라이브러리 서로 다른 디렉터리에 사용 하는 경우는 [/I (추가 포함 디렉터리)](../../build/reference/i-additional-include-directories.md) 컴파일러 옵션을이 디렉터리를 지정 합니다. 컴파일러에 다른 디렉터리에서 형식 라이브러리를 검색 하려는 경우 해당 디렉터리를 PATH 환경 변수를 추가 합니다.
+컴파일러는 형식 라이브러리에서에서 찾을 서로 다른 디렉터리를 사용 하는 경우를 확인 합니다 [/I (추가 포함 디렉터리)](../../build/reference/i-additional-include-directories.md) 컴파일러 옵션을 해당 디렉터리를 지정 합니다. 다른 디렉터리에서 형식 라이브러리를 검색 하는 컴파일러를 하려는 경우 해당 디렉터리를 PATH 환경 변수에 추가 합니다.
 
-기본적으로이 경고는 오류로 발생 합니다. /W0 C4772는 억제할 수 없습니다.
+기본적으로이 경고는 오류로 발생 합니다. / W0 C4772는 억제할 수 없습니다.
 
 ## <a name="example"></a>예제
 
-이것이 C4772 재현 하기 위한 첫 번째 형식 라이브러리입니다.
+이것이 C4772 재현 하는 데 필요한 첫 번째 형식 라이브러리입니다.
 
 ```IDL
 // c4772a.idl
@@ -49,7 +40,7 @@ library C4772aLib
 };
 ```
 
-이것이 C4772 재현 하기 위한 두 번째 형식 라이브러리입니다.
+이것이 C4772 재현 하는 데 필요한 두 번째 형식 라이브러리입니다.
 
 ```IDL
 // c4772b.idl

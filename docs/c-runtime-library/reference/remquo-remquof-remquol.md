@@ -1,10 +1,6 @@
 ---
-title: remquo, remquof, remquol | Microsoft Docs
-ms.custom: ''
+title: remquo, remquof, remquol
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - remquof
 - remquo
@@ -26,23 +22,17 @@ f1_keywords:
 - remquof
 - remquol
 - remquo
-dev_langs:
-- C++
 helpviewer_keywords:
 - remquol function
 - remquof function
 - remquo function
 ms.assetid: a1d3cb8b-8027-4cd3-8deb-04eb17f299fc
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 480bf65d61581866fe447c9563a267d08d17c838
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 4c7e93806600ff674baf186a66662aafdeceeaca
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207655"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50605107"
 ---
 # <a name="remquo-remquof-remquol"></a>remquo, remquof, remquol
 
@@ -90,7 +80,7 @@ C + +에서는 오버 로드를 허용 하므로 오버 로드를 호출할 수 
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```C
 // crt_remquo.c

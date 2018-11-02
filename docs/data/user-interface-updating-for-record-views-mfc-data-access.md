@@ -1,28 +1,17 @@
 ---
-title: 레코드 뷰 (MFC Data Access)에 대 한 사용자 인터페이스 업데이트 | Microsoft Docs
-ms.custom: ''
+title: 레코드 뷰의 사용자 인터페이스 업데이트  (MFC Data Access)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-data
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - user interfaces, updating
 - menus, updating as context changes
 - record views, user interface
 ms.assetid: 2c7914b6-2dc3-40c3-b2f2-8371da2a4063
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- data-storage
-ms.openlocfilehash: 4f730a8c0b2c1f552e0aca7f360f402788630c96
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 914a262560a10ba4085e0605a0c9f677d7a447fd
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065410"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50630401"
 ---
 # <a name="user-interface-updating-for-record-views--mfc-data-access"></a>레코드 뷰의 사용자 인터페이스 업데이트  (MFC Data Access)
 

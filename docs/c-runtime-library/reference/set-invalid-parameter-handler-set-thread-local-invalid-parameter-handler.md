@@ -1,10 +1,6 @@
 ---
-title: _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler | Microsoft Docs
-ms.custom: ''
+title: _set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _set_invalid_parameter_handler
 - _set_thread_local_invalid_parameter_handler
@@ -25,24 +21,18 @@ f1_keywords:
 - set_invalid_parameter_handler
 - _set_invalid_parameter_handler
 - _set_thread_local_invalid_parameter_handler
-dev_langs:
-- C++
 helpviewer_keywords:
 - invalid parameter handler
 - set_invalid_parameter_handler function
 - _set_invalid_parameter_handler function
 - _set_thread_local_invalid_parameter_handler function
 ms.assetid: c0e67934-1a41-4016-ad8e-972828f3ac11
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d4808367c94ec6c869c7f3bcafd2965a317553a6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1df876d6df9327e817d5d2c401e0abe97ad7a548
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407605"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50617037"
 ---
 # <a name="setinvalidparameterhandler-setthreadlocalinvalidparameterhandler"></a>_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler
 
@@ -70,7 +60,7 @@ _invalid_parameter_handler _set_thread_local_invalid_parameter_handler(
 
 ## <a name="remarks"></a>설명
 
-많은 C 런타임 함수가 자신에게 전달되는 인수의 유효성을 확인합니다. 함수는 잘못 된 인수를 전달 하는 경우 설정할 수는 **errno** 오류 번호 또는 오류 코드를 반환 합니다. 이 경우 잘못된 매개 변수 처리기도 호출됩니다. C 런타임은 프로그램을 종료하고 런타임 오류 메시지를 표시하는 기본 전역 잘못된 매개 변수 처리기를 제공합니다. 사용할 수는 **_set_invalid_parameter_handler** 전역 잘못 된 매개 변수 처리기로 사용자 고유의 함수를 설정할 수 있습니다. 또한 C 런타임은 스레드 로컬 잘못된 매개 변수 처리기도 지원합니다. 스레드 로컬 매개 변수 처리기를 사용 하 여 스레드에 설정 되어 있는지 **_set_thread_local_invalid_parameter_handler**, 된 스레드에서 호출 C 런타임 함수 대신 전역 처리기 해당 처리기를 사용 합니다. 한 번에 하나의 함수만 전역 잘못된 인수 처리기로 지정할 수 있습니다. 스레드당 하나의 함수만 스레드 로컬 잘못된 인수 처리기로 지정할 수 있지만, 각 스레드의 스레드 로컬 처리기는 서로 다를 수 있습니다. 따라서 다른 스레드의 동작에 영향을 주지 않고 코드의 특정 부분에서 사용되는 처리기를 변경할 수 있습니다.
+많은 C 런타임 함수가 자신에게 전달되는 인수의 유효성을 확인합니다. 함수는 잘못 된 인수를 전달 하는 경우 설정할 수는 **errno** 오류 번호 또는 오류 코드를 반환 합니다. 이 경우 잘못된 매개 변수 처리기도 호출됩니다. C 런타임은 프로그램을 종료하고 런타임 오류 메시지를 표시하는 기본 전역 잘못된 매개 변수 처리기를 제공합니다. 사용할 수는 **_set_invalid_parameter_handler** 전역 잘못 된 매개 변수 처리기로 함수를 직접 설정할 수 있습니다. 또한 C 런타임은 스레드 로컬 잘못된 매개 변수 처리기도 지원합니다. 스레드 로컬 매개 변수 처리기를 사용 하 여 스레드에서 설정 됩니다 **_set_thread_local_invalid_parameter_handler**, 스레드에서 호출 된 C 런타임 함수는 전역 처리기 대신 해당 처리기를 사용 합니다. 한 번에 하나의 함수만 전역 잘못된 인수 처리기로 지정할 수 있습니다. 스레드당 하나의 함수만 스레드 로컬 잘못된 인수 처리기로 지정할 수 있지만, 각 스레드의 스레드 로컬 처리기는 서로 다를 수 있습니다. 따라서 다른 스레드의 동작에 영향을 주지 않고 코드의 특정 부분에서 사용되는 처리기를 변경할 수 있습니다.
 
 런타임이 잘못된 매개 변수 함수를 호출할 때 이는 일반적으로 복구할 수 없는 오류가 발생했음을 의미합니다. 직접 제공하는 잘못된 매개 변수 처리기 함수는 저장할 수 있는 모든 데이터를 저장한 다음 중단되어야 하며, 오류를 확실히 복구할 수 있지 않는 한 컨트롤을 main 함수로 반환하면 안 됩니다.
 
@@ -86,15 +76,15 @@ void _invalid_parameter(
 );
 ```
 
-*식* 인수는 오류를 발생 시킨 인수 식의 와이드 문자열 표현입니다. *함수* 인수는 잘못 된 인수를 받은 CRT 함수의 이름입니다. *파일* 인수는 함수를 포함 하는 CRT 소스 파일의 이름입니다. *줄* 인수는 해당 파일의 줄 번호입니다. 마지막 인수는 예약되어 있습니다. 모든 매개 변수 값을 가진 **NULL** CRT 라이브러리의 디버그 버전을 사용 합니다.
+합니다 *식* 인수가 오류를 발생 시킨 인수 식의 와이드 문자열 표현입니다. 합니다 *함수* 인수가 잘못 된 인수를 받은 CRT 함수의 이름입니다. 합니다 *파일* 인수는 함수를 포함 하는 CRT 소스 파일의 이름입니다. 합니다 *줄* 인수는 해당 파일의 줄 번호입니다. 마지막 인수는 예약되어 있습니다. 모든 매개 변수 값을 가질 **NULL** CRT 라이브러리의 디버그 버전을 사용 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_set_invalid_parameter_handler**, **_set_thread_local_invalid_parameter_handler**|C: \<stdlib.h><br /><br /> C++: \<cstdlib> 또는 \<stdlib.h>|
 
-**_set_invalid_parameter_handler** 및 **_set_thread_local_invalid_parameter_handler** 함수는 Microsoft 전용입니다. 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+합니다 **_set_invalid_parameter_handler** 하 고 **_set_thread_local_invalid_parameter_handler** 함수는 Microsoft 전용입니다. 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

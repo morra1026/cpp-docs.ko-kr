@@ -1,25 +1,15 @@
 ---
-title: path 클래스 | Microsoft Docs
-ms.custom: ''
+title: path 클래스
 ms.date: 09/27/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - filesystem/std::experimental::filesystem::path
-dev_langs:
-- C++
 ms.assetid: 8a1227ca-aeb2-4e0e-84aa-86e34e4f4fe8
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7674f07c92f8a0c9d8a9070f3f99e00dfde39140
-ms.sourcegitcommit: 1d9bd38cacbc783fccd3884b7b92062161c91c84
+ms.openlocfilehash: 486245df3433f552c289786a0b20deb33c8fb6c0
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48235466"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50618220"
 ---
 # <a name="path-class"></a>path 클래스
 
@@ -61,12 +51,12 @@ class path;
 |[empty](#empty)|`mypath.empty()`를 반환합니다.|
 |[end](#end)|형식의 시퀀스의 끝 반복기를 반환 `iterator`합니다.|
 |[extension](#extension)|접미사를 반환 `filename()`합니다.|
-|[filename](#filename)|myname의 루트 디렉터리 구성 요소(구체적으로는 `empty() path() : *--end()`)를 반환합니다. 구성 요소는 비어 있을 수 있습니다.|
+|[filename](#filename)|myname의 루트 디렉터리 구성 요소, 특히 `empty() path() : *--end()`을 참조하세요. 구성 요소는 비어 있을 수 있습니다.|
 |[generic_string](#generic_string)|슬래시로 변환된 백슬래시와 함께 `this->string<Elem, Traits, Alloc>(al)` 를 반환합니다(Windows).|
-|[generic_u16string](#generic_u16string)|슬래시로 변환된 백슬래시와 함께 `u16string()`를 반환합니다(Windows).|
-|[generic_u32string](#generic_u32string)|슬래시로 변환된 백슬래시와 함께 `u32string()`를 반환합니다(Windows).|
-|[generic_u8string](#generic_u8string)|슬래시로 변환된 백슬래시와 함께 `u8string()`를 반환합니다(Windows).|
-|[generic_wstring](#generic_wstring)|슬래시로 변환된 백슬래시와 함께 `wstring()`를 반환합니다(Windows).|
+|[generic_u16string](#generic_u16string)|슬래시로 변환된 백슬래시와 함께 `u16string()` 를 반환합니다(Windows).|
+|[generic_u32string](#generic_u32string)|슬래시로 변환된 백슬래시와 함께 `u32string()` 를 반환합니다(Windows).|
+|[generic_u8string](#generic_u8string)|슬래시로 변환된 백슬래시와 함께 `u8string()` 를 반환합니다(Windows).|
+|[generic_wstring](#generic_wstring)|슬래시로 변환된 백슬래시와 함께 `wstring()` 를 반환합니다(Windows).|
 |[has_extension](#has_extension)|`!extension().empty()`를 반환합니다.|
 |[has_filename](#has_filename)|`!filename().empty()`를 반환합니다.|
 |[has_parent_path](#has_parent_path)|`!parent_path().empty()`를 반환합니다.|
@@ -268,7 +258,7 @@ path extension() const;
 
 ## <a name="filename"></a> path:: filename
 
-myname의 루트 디렉터리 구성 요소(구체적으로는 `empty() path() : *--end()`)를 반환합니다. 구성 요소는 비어 있을 수 있습니다.
+myname의 루트 디렉터리 구성 요소, 특히 `empty() path() : *--end()`을 참조하세요. 구성 요소는 비어 있을 수 있습니다.
 
 ```cpp
 path filename() const;
@@ -290,7 +280,7 @@ string generic_string() const;
 
 ## <a name="generic_u16string"></a> path::generic_u16string
 
-슬래시로 변환된 백슬래시와 함께 `u16string()`를 반환합니다(Windows).
+슬래시로 변환된 백슬래시와 함께 `u16string()` 를 반환합니다(Windows).
 
 ```cpp
 u16string generic_u16string() const;
@@ -298,7 +288,7 @@ u16string generic_u16string() const;
 
 ## <a name="generic_u32string"></a> path::generic_u32string
 
-슬래시로 변환된 백슬래시와 함께 `u32string()`를 반환합니다(Windows).
+슬래시로 변환된 백슬래시와 함께 `u32string()` 를 반환합니다(Windows).
 
 ```cpp
 u32string generic_u32string() const;
@@ -306,7 +296,7 @@ u32string generic_u32string() const;
 
 ## <a name="generic_u8string"></a> path::generic_u8string
 
-슬래시로 변환된 백슬래시와 함께 `u8string()`를 반환합니다(Windows).
+슬래시로 변환된 백슬래시와 함께 `u8string()` 를 반환합니다(Windows).
 
 ```cpp
 string generic_u8string() const;
@@ -314,7 +304,7 @@ string generic_u8string() const;
 
 ## <a name="generic_wstring"></a> path::generic_wstring
 
-슬래시로 변환된 백슬래시와 함께 `wstring()`를 반환합니다(Windows).
+슬래시로 변환된 백슬래시와 함께 `wstring()` 를 반환합니다(Windows).
 
 ```cpp
 wstring generic_wstring() const;
@@ -775,13 +765,13 @@ string string() const;
 
 첫 번째 (템플릿) 멤버 함수 변환에 저장 된 시퀀스 `mypath` 동일한 방식으로:
 
-1. `string<char, Traits, Alloc>()`에 대한 `string()`
+1. `string()` 에 대한 `string<char, Traits, Alloc>()`
 
-1. `string<wchar_t, Traits, Alloc>()`에 대한 `wstring()`
+1. `wstring()` 에 대한 `string<wchar_t, Traits, Alloc>()`
 
-1. `string<char16_t, Traits, Alloc>()`에 대한 `u16string()`
+1. `u16string()` 에 대한 `string<char16_t, Traits, Alloc>()`
 
-1. `string<char32_t, Traits, Alloc>()`에 대한 `u32string()`
+1. `u32string()` 에 대한 `string<char32_t, Traits, Alloc>()`
 
 두 번째 멤버 함수에 저장 된 시퀀스를 변환 `mypath` 에 대해 호스트 시스템에서 선호 하는 인코딩으로 **char** 시퀀스 및 반환 형식의 개체에 저장 된 `string`합니다.
 

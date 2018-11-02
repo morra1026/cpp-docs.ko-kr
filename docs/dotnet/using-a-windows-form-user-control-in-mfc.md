@@ -1,12 +1,6 @@
 ---
-title: MFC의 사용자 정의 컨트롤을 구성 하는 Windows를 사용 하 여 | Microsoft Docs
-ms.custom: ''
+title: MFC에서 Windows Form 사용자 정의 컨트롤 사용
 ms.date: 1/08/2018
-ms.technology:
-- cpp-cli
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - MFC [C++], Windows Forms support
 - interoperability [C++], Windows Forms in MFC
@@ -15,17 +9,12 @@ helpviewer_keywords:
 - interop [C++], MFC
 - Windows Forms [C++], MFC support
 ms.assetid: 63fb099b-1dff-469c-9e34-dab52e122fcd
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- dotnet
-ms.openlocfilehash: 4fef169cb0e2386c1629064ad7ea8a1a70a5c517
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: d36932a3edc0129f0497cb8db4095283650c5c96
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46382078"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50494161"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC에서 Windows Form 사용자 정의 컨트롤 사용
 

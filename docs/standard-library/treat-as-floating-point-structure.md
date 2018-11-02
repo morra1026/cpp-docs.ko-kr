@@ -1,25 +1,15 @@
 ---
-title: treat_as_floating_point 구조체 | Microsoft Docs
-ms.custom: ''
+title: treat_as_floating_point 구조체
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - chrono/std::chrono::treat_as_floating_point
-dev_langs:
-- C++
 ms.assetid: d0a2161c-bbb2-4924-8961-7568d5ad5434
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 96687959ce4fdd7b5431611a64b878cf05f855ab
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 1b7b58983032ee74ed3d88feb7325cd537e1cc2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33853302"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493862"
 ---
 # <a name="treatasfloatingpoint-structure"></a>treat_as_floating_point 구조체
 
@@ -38,7 +28,7 @@ struct treat_as_floating_point : is_floating_point<Rep>;
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<c h >
+**헤더:** \<chrono >
 
 **네임스페이스:** std::chrono
 

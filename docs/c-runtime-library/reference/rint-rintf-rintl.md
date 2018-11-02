@@ -1,10 +1,6 @@
 ---
-title: rint, rintf, rintl | Microsoft Docs
-ms.custom: ''
+title: rint, rintf, rintl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - rintf
 - rintl
@@ -26,23 +22,17 @@ f1_keywords:
 - rintf
 - rintl
 - rint
-dev_langs:
-- C++
 helpviewer_keywords:
 - rintf function
 - rint function
 - rintl function
 ms.assetid: 312ae3e6-278c-459a-9393-11b8f87d9184
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 784a540982c41ba7aa144559d3846746b59481f7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9e0e3875b7484735b5439c6c0e0a7252940d4552
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407290"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50609484"
 ---
 # <a name="rint-rintf-rintl"></a>rint, rintf, rintl
 
@@ -68,7 +58,7 @@ long double rint( long double x );  // C++ only
 
 ## <a name="return-value"></a>반환 값
 
-**rint** 함수는 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 중간 값이 같은 부동 소수점 반올림 모드의 현재 설정에 따라 반올림는 **nearbyint** 함수입니다. 와 달리는 **nearbyint** 함수는 **rint** 함수 발생 시킬 수는 **FE_INEXACT** 는 결과가 인수의 값과 다른 경우 부동 소수점 예외입니다. 반환되는 오류가 없습니다.
+합니다 **인쇄** 함수에 가장 가까운 정수를 나타내는 부동 소수점 값을 반환 *x*합니다. 중간 값은 동일 부동 소수점 반올림 모드의 현재 설정에 따라 반올림 된 **nearbyint** 함수입니다. 달리 합니다 **nearbyint** 함수는 **인쇄** 일으킬 수 있습니다 합니다 **FE_INEXACT** 결과 인수 값과 다른 경우 부동 소수점 예외. 반환되는 오류가 없습니다.
 
 |입력|SEH 예외|**_matherr** 예외|
 |-----------|-------------------|--------------------------|
@@ -77,13 +67,13 @@ long double rint( long double x );  // C++ only
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **rint** 사용 하 고 반환 **float** 및 **긴** **double** 값입니다. C 프로그램에서 **rint** 항상 사용 하 고 반환 된 **double**합니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **인쇄** 및 반환 하는 **float** 하 고 **긴** **double** 값입니다. C 프로그램에서 **인쇄** 항상 받아서 반환 된 **double**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|C 헤더|C++ 헤더|
+|기능|C 헤더|C++ 헤더|
 |--------------|--------------|------------------|
-|**rint**, **rintf**, **rintl**|\<math.h>|\<cmath>|
+|**인쇄**하십시오 **rintf**, **rintl**|\<math.h>|\<cmath>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

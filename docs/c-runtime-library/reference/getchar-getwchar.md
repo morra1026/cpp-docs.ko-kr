@@ -1,10 +1,6 @@
 ---
-title: getchar, getwchar | Microsoft 문서
-ms.custom: ''
+title: getchar, getwchar
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - getchar
 - getwchar
@@ -24,8 +20,6 @@ apitype: DLLExport
 f1_keywords:
 - getwchar
 - GetChar
-dev_langs:
-- C++
 helpviewer_keywords:
 - gettchar function
 - characters, reading
@@ -33,16 +27,12 @@ helpviewer_keywords:
 - _gettchar function
 - standard input, reading from
 ms.assetid: 19fda588-3e33-415c-bb60-dd73c028086a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7c05fca568c8d69d34aa1386030eef3f2cb09f11
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5f8d7dbeb35c8818706eb6070df613df8654feb6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399623"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626605"
 ---
 # <a name="getchar-getwchar"></a>getchar, getwchar
 
@@ -61,11 +51,11 @@ wint_t getwchar();
 
 ## <a name="remarks"></a>설명
 
-각 루틴에서 단일 문자를 읽습니다. **stdin** 다음 문자를 가리키도록 연결 된 파일 포인터를 증가 시킵니다. **getchar** 동일 [_fgetchar](fgetc-fgetwc.md), 하지만 함수 및 매크로로 구현 됩니다.
+각 루틴에서 단일 문자를 읽습니다 **stdin** 다음 문자를 가리키도록 연결 된 파일 포인터를 증가 시킵니다. **getchar** 같습니다 [_fgetchar](fgetc-fgetwc.md), 함수 및 매크로로 구현 됩니다.
 
 이러한 함수는 호출 스레드를 잠그므로 스레드로부터 안전합니다. 잠기지 않는 버전의 경우 [_getchar_nolock, _getwchar_nolock](getchar-nolock-getwchar-nolock.md)을 참조하세요.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -73,12 +63,12 @@ wint_t getwchar();
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**getchar**|\<stdio.h>|
 |**getwchar**|\<stdio.h> 또는 \<wchar.h>|
 
-콘솔 유니버설 Windows 플랫폼 (UWP) 응용 프로그램에서 지원 되지 않습니다. 콘솔을 사용 하는 연결 된 표준 스트림 핸들 **stdin**, **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
+콘솔 유니버설 Windows 플랫폼 (UWP) 앱에서 지원 되지 않습니다. 콘솔을 사용 하 여 연결 된 표준 스트림 핸들 **stdin**하십시오 **stdout**, 및 **stderr**, C 런타임 함수 UWP 앱에서 사용할 수 있는 되기 전에 리디렉션되어야 . 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 
 ## <a name="example"></a>예제
 

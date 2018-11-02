@@ -1,10 +1,6 @@
 ---
-title: _fwrite_nolock | Microsoft 문서
-ms.custom: ''
+title: _fwrite_nolock
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _fwrite_nolock
 apilocation:
@@ -23,23 +19,17 @@ apitype: DLLExport
 f1_keywords:
 - _fwrite_nolock
 - fwrite_nolock
-dev_langs:
-- C++
 helpviewer_keywords:
 - fwrite_nolock function
 - streams, writing data to
 - _fwrite_nolock function
 ms.assetid: 2b4ec6ce-742e-4615-8407-44a0a18ec1d7
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e22f2c281b076e64419686b9f7c058e284cc5532
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1c899e34e19547b30a42135f3f818f220f1bc5b7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397924"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50626058"
 ---
 # <a name="fwritenolock"></a>_fwrite_nolock
 
@@ -76,11 +66,11 @@ size_t _fwrite_nolock(
 
 ## <a name="remarks"></a>설명
 
-이 함수는 잠기지 않은 버전의 **fwrite**합니다. 동일 **fwrite** 다른 스레드의 방해 로부터 보호 되지 않으므로 한다는 점이 다릅니다. 이는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 호출 범위에서 이미 스레드 격리를 처리하는 경우에만 이 함수를 사용합니다.
+이 함수는 잠기지 않은 버전의 **fwrite**합니다. 동일 **fwrite** 다른 스레드의 간섭 으로부터 보호 되지 않으므로 한다는 점이 다릅니다. 이는 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 호출 범위에서 이미 스레드 격리를 처리하는 경우에만 이 함수를 사용합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**_fwrite_nolock**|\<stdio.h>|
 

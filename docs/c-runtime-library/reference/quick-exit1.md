@@ -1,11 +1,6 @@
 ---
-title: quick_exit1 | Microsoft Docs
-ms.custom: ''
+title: quick_exit1
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - quick_exit
 apilocation:
@@ -25,21 +20,15 @@ f1_keywords:
 - quick_exit
 - process/quick_exit
 - stdlib/quick_exit
-dev_langs:
-- C++
 helpviewer_keywords:
 - quick_exit function
 ms.assetid: ecfbdae6-01c4-45fa-aaeb-b368e1de2a9c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: de3eb88093db0eea470a0c1d775516574c466ddd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 50f1ee72cce04c2bebc8f7396a2b6fad98301dd7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405733"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50429017"
 ---
 # <a name="quickexit"></a>quick_exit
 
@@ -60,19 +49,19 @@ __declspec(noreturn) void quick_exit(
 
 ## <a name="return-value"></a>반환 값
 
-**quick_exit** 함수는 호출자에 반환할 수 없습니다.
+합니다 **quick_exit** 함수는 호출자로 반환할 수 없습니다.
 
 ## <a name="remarks"></a>설명
 
-**quick_exit** 함수로 인해 프로그램이 정상 종료 합니다. 호출 하 여 등록 된 함수가 없는 **atexit**, **_onexit** 하 여 등록 된 신호 처리기 또는 **신호** 함수입니다. 경우 동작이 정의 되지 않습니다 **quick_exit** 는 둘 이상의 한 번 호출 되거나 호출 하는 경우는 **종료** 함수 호출 또한 됩니다.
+합니다 **quick_exit** 함수로 인해 프로그램이 정상 종료 합니다. 등록자 없는 함수를 호출한 **atexit**, **_onexit** 신호 처리기가 등록 또는 합니다 **신호** 함수입니다. 경우 동작이 정의 되지 않습니다 **quick_exit** 보다 한 번 또는 라고 하는 경우를 **종료** 함수 라고 합니다.
 
-**quick_exit** 함수 방식으로, lifo (후입선출) 순서, 통해 등록 된 함수 호출 **at_quick_exit**될 때 이미 호출 된 함수는 함수가 등록 된 점을 제외 하 고, 합니다.  함수 호출을 종료하는 등록된 함수를 호출하는 동안 [longjmp](longjmp.md)가 호출되면 동작이 정의되지 않습니다.
+합니다 **quick_exit** 함수 마지막-, lifo (후입선출) 순서에 의해 등록 된 함수에서 호출 **at_quick_exit**함수가 등록 될 때 이미 호출 된 함수를 제외 하 고 있습니다.  함수 호출을 종료하는 등록된 함수를 호출하는 동안 [longjmp](longjmp.md) 가 호출되면 동작이 정의되지 않습니다.
 
-등록된 된 함수가 호출 된 후 **quick_exit** 호출 **_Exit** 를 사용 하 여는 *상태* 호스트 환경에 제어를 반환할 값입니다.
+등록 된 함수를 호출한 후 **quick_exit** 호출 **_Exit** 사용 하 여 합니다 *상태* 호스트 환경에 제어를 반환 하는 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**quick_exit**|\<process.h> 또는 \<stdlib.h>|
 

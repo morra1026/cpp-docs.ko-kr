@@ -1,27 +1,17 @@
 ---
-title: 링커 도구 오류 LNK1306 | Microsoft Docs
-ms.custom: ''
+title: 링커 도구 오류 LNK1306
 ms.date: 11/04/2016
-ms.technology:
-- cpp-diagnostics
-ms.topic: error-reference
 f1_keywords:
 - LNK1306
-dev_langs:
-- C++
 helpviewer_keywords:
 - LNK1306
 ms.assetid: fad1df6a-0bd9-412f-b0d1-7c9bc749c584
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 7cc007a4a594c8593d7820365377f1c811b1e23c
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: ddaa8797e0cf8ff617408aedc770b21cc656cec4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46050569"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50659673"
 ---
 # <a name="linker-tools-error-lnk1306"></a>링커 도구 오류 LNK1306
 

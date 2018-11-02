@@ -1,10 +1,6 @@
 ---
-title: imaxabs | Microsoft 문서
-ms.custom: ''
+title: imaxabs
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - imaxabs
 apilocation:
@@ -22,21 +18,15 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - imaxabs
-dev_langs:
-- C++
 helpviewer_keywords:
 - imaxabs function
 ms.assetid: de2566a3-1415-4e9a-91b5-7ac3a49ebf5e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e9476db108a4296811e1c88e820d12ddd24b1386
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a7492e08c3a078698292923ce395524ab5327ecf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400491"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50666250"
 ---
 # <a name="imaxabs"></a>imaxabs
 
@@ -57,14 +47,14 @@ intmax_t imaxabs(
 
 ## <a name="return-value"></a>반환 값
 
-**imaxabs** 함수 인수의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
+합니다 **imaxabs** 함수 인수의 절대값을 반환 합니다. 반환되는 오류가 없습니다.
 
 > [!NOTE]
-> 때문에 음의 정수를 사용 하 여 나타낼 수 있는 범위 **intmax_t** 범위 보다 크면 나타낼 수 있는 양의 정수는 인수를 제공할 수는 **imaxabs** 변환할 수 없습니다. 인수의 절대값을 반환 하 여 표현할 수 없는 경우 입력의 동작 **imaxabs** 정의 되지 않습니다.
+> 때문에 사용 하 여 나타낼 수 있는 음의 정수 범위의 **intmax_t** 범위 보다 큰 나타낼 수 있는 양의 정수 인수를 제공할 수 있기 **imaxabs** 변환할 수 없습니다. 인수의 절대값을 반환 하 여 표현할 수 없는 경우 입력, 동작 **imaxabs** 정의 되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**imaxabs**|\<inttypes.h>|
 

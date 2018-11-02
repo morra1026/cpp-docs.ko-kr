@@ -1,10 +1,6 @@
 ---
-title: _kbhit | Microsoft 문서
-ms.custom: ''
+title: _kbhit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _kbhit
 apilocation:
@@ -24,8 +20,6 @@ f1_keywords:
 - _kbhit
 - kbhit
 - conio/_kbhit
-dev_langs:
-- C++
 helpviewer_keywords:
 - keyboard input
 - user input, checking for keyboard
@@ -36,16 +30,12 @@ helpviewer_keywords:
 - _kbhit function
 - keyboards, checking input
 ms.assetid: e82a1cc9-bbec-4150-b678-a7e433220fe4
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f414403774a6f2dbd5e21b70d707ab8c8b20c63f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9133d73e92438327bb2381e3293fd37076dd27ee
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399051"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50668002"
 ---
 # <a name="kbhit"></a>_kbhit
 
@@ -63,15 +53,15 @@ int _kbhit( void );
 
 ## <a name="return-value"></a>반환 값
 
-**_kbhit** 는 키를 누른 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환합니다.
+**_kbhit** 는 키를 누를 경우 0이 아닌 값을 반환 합니다. 그렇지 않으면 0을 반환합니다.
 
 ## <a name="remarks"></a>설명
 
-**_kbhit** 함수는 콘솔에서 최근의 키 입력을 확인 합니다. 이 함수가 0이 아닌 값을 반환하면 키 입력이 버퍼에서 대기 중인 것입니다. 프로그램 호출할 수 **_getch** 또는 **_getche** 키 입력을 얻으려고 합니다.
+합니다 **_kbhit** 함수는 콘솔에서 최근의 키 입력을 확인 합니다. 이 함수가 0이 아닌 값을 반환하면 키 입력이 버퍼에서 대기 중인 것입니다. 프로그램을 호출할 수 있습니다 **_getch** 하거나 **_getche** 키 입력을 가져오려고 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_kbhit**|\<conio.h>|
 

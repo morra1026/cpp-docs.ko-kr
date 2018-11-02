@@ -1,11 +1,6 @@
 ---
-title: csin, csinf, csinl | Microsoft 문서
-ms.custom: ''
+title: csin, csinf, csinl
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: reference
 apiname:
 - csin
 - csinf
@@ -30,23 +25,17 @@ f1_keywords:
 - complex/csin
 - complex/csinf
 - complex/csinl
-dev_langs:
-- C++
 helpviewer_keywords:
 - csin function
 - csinf function
 - csinl function
 ms.assetid: 3ed475e8-9aae-42ba-a25c-7ae656a0fd4d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 572220af53fe937dd0d5306f0e0e7d287b1d41b8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 66483c9121750c3333850d6244704b89b8893cad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397316"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50633495"
 ---
 # <a name="csin-csinf-csinl"></a>csin, csinf, csinl
 
@@ -83,13 +72,13 @@ _Lcomplex csinl(
 
 ## <a name="remarks"></a>설명
 
-C + +는 오버 로딩을 허용 하기 때문에 오버 로드를 호출할 수 있습니다 **csin** 사용 하 고 반환 **_Fcomplex** 및 **_Lcomplex** 값입니다. C 프로그램에서 **csin** 항상 사용 하 고 반환 된 **_Dcomplex** 값입니다.
+C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니다 **csin** 및 반환 하는 **_Fcomplex** 하 고 **_Lcomplex** 값입니다. C 프로그램에서 **csin** 항상 받아서 반환 된 **_Dcomplex** 값입니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|C 헤더|C++ 헤더|
+|루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**csin**, **csinf**, **csinl**|\<complex.h>|\<ccomplex>|
+|**csin**하십시오 **csinf**, **csinl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

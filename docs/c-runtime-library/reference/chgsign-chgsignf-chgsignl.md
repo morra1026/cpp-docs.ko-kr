@@ -1,10 +1,6 @@
 ---
-title: _chgsign, _chgsignf, _chgsignl | Microsoft 문서
-ms.custom: ''
+title: _chgsign, _chgsignf, _chgsignl
 ms.date: 04/05/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _chgsignl
 - _chgsign
@@ -27,24 +23,18 @@ f1_keywords:
 - chgsign
 - _chgsignl
 - _chgsign
-dev_langs:
-- C++
 helpviewer_keywords:
 - _chgsignl function
 - _chgsignf function
 - chgsign function
 - _chgsign function
 ms.assetid: a6646f8e-213d-4564-8617-f43bc66f989f
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 781359972b67b2634f8f762fac98bf9216ef5ab5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dad60b1fec4d402d340eeb4c87028975ef09e3ad
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32393445"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50652636"
 ---
 # <a name="chgsign-chgsignf-chgsignl"></a>_chgsign, _chgsignf, _chgsignl
 
@@ -71,11 +61,11 @@ long double _chgsignl(
 
 ## <a name="return-value"></a>반환 값
 
-**_chgsign** 같은 부동 소수점 인수는 값을 반환 하는 함수 *x*, 하지만 부호를 반대로 합니다. 반환되는 오류가 없습니다.
+합니다 **_chgsign** 함수는 부동 소수점 인수는 같은 값을 반환 *x*, 하지만 그 부호는 반대로 합니다. 반환되는 오류가 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_chgsign**|\<float.h>|
 |**_chgsignf**, **_chgsignl**|\<math.h>|

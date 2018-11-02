@@ -1,10 +1,6 @@
 ---
-title: _malloca | Microsoft 문서
-ms.custom: ''
+title: _malloca
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _malloca
 apilocation:
@@ -22,23 +18,17 @@ apitype: DLLExport
 f1_keywords:
 - malloca
 - _malloca
-dev_langs:
-- C++
 helpviewer_keywords:
 - memory allocation, stack
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3c6f6b731bce5667ca992e7181518bf0a9eb2b87
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c8ce8bdf8ab40cae45ecec9c4b182bdf3d6bc82
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403289"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50563984"
 ---
 # <a name="malloca"></a>_malloca
 
@@ -59,32 +49,32 @@ void *_malloca(
 
 ## <a name="return-value"></a>반환 값
 
-**_malloca** 일상적인 반환은 **void** 모든 종류의 개체를 저장 하기 위한 맞도록로 할당된 된 공간에 대 한 포인터입니다. 경우 *크기* 은 0으로, **_malloca** 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다.
+합니다 **_malloca** 루틴의 반환을 **void** 맞춰지도록 모든 형식의 개체 저장소로 할당된 된 공간에 대 한 포인터입니다. 하는 경우 *크기* 가 0 이면 **_malloca** 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다.
 
 공간을 할당할 수 없는 경우 스택 오버플로 예외가 생성됩니다. 스택 오버플로 예외는 C++ 예외가 아니며 구조적 예외입니다. C++ 예외 처리를 사용하는 대신 [SEH(구조적 예외 처리)](../../cpp/structured-exception-handling-c-cpp.md)를 사용해야 합니다.
 
 ## <a name="remarks"></a>설명
 
-**_malloca** 할당 *크기* 프로그램 스택이 또는 요청 특정 제공한 바이트 크기를 초과 하는 경우 힙 바이트 **_ALLOCA_S_THRESHOLD**합니다. 차이 **_malloca** 및 **_alloca** 은 **_alloca** 스택의 크기에 관계 없이 항상 할당 합니다. 와 달리 **_alloca**, 필요 하지 않거나에 대 한 호출을 허용 하 **무료** 하므로 할당 된 메모리를 확보 하기 **_malloca** 사용 해야 [_freea](freea.md)메모리를 확보 합니다. 디버그 모드에서 **_malloca** 항상 힙에서 메모리를 할당 합니다.
+**_malloca** 할당 *크기* 프로그램 스택이나 요청 하 여 지정 된 바이트는 특정 크기를 초과 하는 경우 힙 바이트 **_ALLOCA_S_THRESHOLD**합니다. 차이점 **_malloca** 하 고 **_alloca** 는 **_alloca** 항상 크기에 관계 없이 스택에 할당 합니다. 와 달리 **_alloca**에 필요 하지 않거나에 대 한 호출을 허용 하는 **무료** 할당 메모리를 확보 하기 **_malloca** 사용 해야 [_freea](freea.md)메모리를 확보 합니다. 디버그 모드일에서 **_malloca** 항상 힙에서 메모리를 할당 합니다.
 
-명시적으로 호출 제한은 **_malloca** 예외 핸들러에서 (EH). x86급 프로세서에서 실행되는 EH 루틴은 고유한 메모리 프레임에서 작동합니다. 즉, 바깥쪽 함수 스택 포인터의 현재 위치를 기반으로 하지 않는 메모리 공간에서 해당 작업을 수행합니다. 가장 일반적인 구현에는 Windows NT SEH(구조적 예외 처리) 및 C++ catch 절 식이 포함됩니다. 따라서 명시적으로 호출 **_malloca** 호출 EH 루틴을 반환 하는 동안 프로그램 오류에 다음과 같은 시나리오 결과 중 하나:
+명시적으로 호출 제한은 **_malloca** 는 EH (예외 처리기)에 있습니다. x86급 프로세서에서 실행되는 EH 루틴은 고유한 메모리 프레임에서 작동합니다. 즉, 바깥쪽 함수 스택 포인터의 현재 위치를 기반으로 하지 않는 메모리 공간에서 해당 작업을 수행합니다. 가장 일반적인 구현에는 Windows NT SEH(구조적 예외 처리) 및 C++ catch 절 식이 포함됩니다. 따라서 명시적으로 호출 **_malloca** 호출 EH 루틴으로 돌아가는 동안 프로그램 오류가 발생 했습니다. 다음 시나리오 중 하나에서:
 
 - Windows NT SEH 예외 필터 식: **__except** (`_malloca ()` )
 
-- Windows NT SEH 최종 예외 처리기: **__finally** {`_malloca ()` }
+- Windows NT SEH 최종 예외 처리기: **__finally** {0}`_malloca ()` }
 
 - C++ EH catch 절 식
 
-그러나 **_malloca** 에서 호출할 수 있습니다에서 직접 호출 하는 응용 프로그램에서 제공 콜백을 또는 EH 루틴 내에서 앞에 나열 된 EH 시나리오 중 하나입니다.
+그러나 **_malloca** 수에서 직접 호출할 수는 EH 루틴 내 또는 호출 되는 응용 프로그램 제공 콜백에서 위에 나열 된 EH 시나리오 중 하나입니다.
 
 > [!IMPORTANT]
-> Windows XP의 경우 **_malloca** 라고 try/catch 블록 내 호출 해야 [_resetstkoflw](resetstkoflw.md) catch 블록에서 합니다.
+> Windows XP의 경우 **_malloca** 라고는 try/catch 블록 내에서 호출 해야 [_resetstkoflw](resetstkoflw.md) catch 블록에서.
 
-위의 제한을 사용 하는 경우 외에도 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 옵션을 **_malloca** 에 사용할 수 없는 **__except** 블록입니다. 자세한 내용은 [/clr Restrictions](../../build/reference/clr-restrictions.md)을 참조하십시오.
+위의 제한에 사용 하는 경우 외에 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md) 옵션을 **_malloca** 에서 사용할 수 없습니다 **__except** 블록입니다. 자세한 내용은 [/clr Restrictions](../../build/reference/clr-restrictions.md)을 참조하십시오.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_malloca**|\<malloc.h>|
 

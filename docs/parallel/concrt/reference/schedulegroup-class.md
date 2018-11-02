@@ -1,10 +1,6 @@
 ---
-title: ScheduleGroup 클래스 | Microsoft Docs
-ms.custom: ''
+title: ScheduleGroup 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-concrt
-ms.topic: reference
 f1_keywords:
 - ScheduleGroup
 - CONCRT/concurrency::ScheduleGroup
@@ -12,21 +8,15 @@ f1_keywords:
 - CONCRT/concurrency::ScheduleGroup::Reference
 - CONCRT/concurrency::ScheduleGroup::Release
 - CONCRT/concurrency::ScheduleGroup::ScheduleTask
-dev_langs:
-- C++
 helpviewer_keywords:
 - ScheduleGroup class
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 90687a1e0cb77694fce9e60004f3e43d0ea9acf0
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 6132ec6623a009c09a37b7d704ce683a58956a04
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46427422"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50518718"
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup 클래스
 
@@ -50,7 +40,7 @@ class ScheduleGroup;
 
 |이름|설명|
 |----------|-----------------|
-|[Id](#id)|Scheduler는 그룹이 속한 내에서 고유한 일정 그룹에 대 한 식별자를 반환 합니다.|
+|[ID](#id)|Scheduler는 그룹이 속한 내에서 고유한 일정 그룹에 대 한 식별자를 반환 합니다.|
 |[참조](#reference)|일정 그룹 참조 횟수를 증가시킵니다.|
 |[릴리스](#release)|일정 그룹 참조 횟수를 감소시킵니다.|
 |[ScheduleTask](#scheduletask)|일정 그룹 내에서 간단한 작업을 예약합니다.|

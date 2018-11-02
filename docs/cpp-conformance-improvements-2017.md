@@ -1,23 +1,19 @@
 ---
-title: C++ 규칙 향상 | Microsoft 문서
-ms.custom: ''
-ms.date: 08/15/2018
+title: C++ 규칙 향상
+ms.date: 10/31/2018
 ms.technology:
 - cpp-language
-ms.topic: conceptual
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5661ff0debb3d06947e5b8ff686cc049ebe68fee
-ms.sourcegitcommit: a3c9e7888b8f437a170327c4c175733ad9eb0454
+ms.openlocfilehash: 18e4185f1cbd8b37e0e3cc7b11abc24505980b7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50204745"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50562164"
 ---
-# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158)의 C++ 규칙 향상입니다.
+# <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)의 C++ 규칙 향상
 
 Microsoft Visual C++ 컴파일러는 일반화된 constexpr을 지원하고 집계에 NSDMI를 사용할 수 있기 때문에 이제 C++14 표준에 추가된 기능을 완벽히 갖췄습니다. 하지만 아직까지 C++11 표준 기능과 C++98 표준 기능이 몇 가지 부족합니다. 컴파일러의 현재 상태를 보여 주는 테이블은 [Visual C++ Language Conformance](visual-cpp-language-conformance.md)(Visual C++ 언어 규칙)를 참조하세요.
 
@@ -341,7 +337,7 @@ void bar(A<0> *p)
 
 [P0426R1](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0426r1.html) 상수 식에서 `std::string_view`를 사용할 수 있도록 `std::traits_type` 멤버 함수 `length`, `compare` 및 `find`로 변경합니다. (Visual Studio 2017 버전 15.6에서 Clang/LLVM에 대해서만 지원됩니다. 버전 15.7 미리 보기 2에서 ClXX에 대해서도 지원이 거의 완료되었습니다.)
 
-## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-and-158update158"></a>Visual Studio 버전 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157) 및 [15.8](#update_158)의 버그 수정
+## <a name="bug-fixes-in-visual-studio-versions-150-153update153-155update155-157update157-158update158-and-159update159"></a>Visual Studio 버전 15.0, [15.3](#update_153), [15.5](#update_155), [15.7](#update_157), [15.8](#update_158) 및 [15.9](#update_159)의 버그 수정
 
 ### <a name="copy-list-initialization"></a>Copy-list-initialization
 
@@ -1832,6 +1828,158 @@ struct X : Base<T>
         Base<T>::template foo<int>();
     }
 };
+```
+## <a name="update_159"></a> Visual Studio 2017 15.9 버전의 버그 수정 및 동작 변경
+
+### <a name="identifiers-in-member-alias-templates"></a>멤버 별칭 템플릿의 식별자
+멤버 별칭 템플릿 정의에서 사용된 식별자를 사용하기 전에 선언해야 합니다. 
+
+이전 버전의 컴파일러에서 다음 코드가 허용되었습니다.
+
+```cpp
+template <typename... Ts>
+struct A
+{
+  public:
+    template <typename U>
+    using from_template_t = decltype(from_template(A<U>{}));
+
+  private:
+    template <template <typename...> typename Type, typename... Args>
+    static constexpr A<Args...> from_template(A<Type<Args...>>);
+
+};
+
+A<>::from_template_t<A<int>> a;
+
+```
+
+Visual Studio 2017 버전 15.9의 **/permissive-** 모드에서 컴파일러는 C3861: *'from_template': 식별자를 찾을 수 없음*을 발생시킵니다. d
+
+오류를 해결하려면 `A` 전에 `a`를 선언합니다.
+
+### <a name="modules-changes"></a>모듈 변경
+
+Visual Studio 2017 버전 15.9에서 모듈에 대한 명령줄 옵션이 모듈 생성과 모듈 소비 쪽 간에 일치하지 않을 때마다 컴파일러는 C5050를 발생시킵니다. 다음 예제에서는 두 가지 문제가 있습니다.
+
+- 소비 쪽(main.cpp)에서 **/EHsc** 옵션이 지정되지 않습니다.
+- C++ 버전은 생성 쪽에서 **/std:c++17**이고, 소비 쪽에서 **/std:c++14**입니다. 
+
+```cmd
+cl /EHsc /std:c++17 m.ixx /experimental:module
+cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
+```
+
+이러한 모든 경우에 컴파일러는 C5050를 발생시킵니다. *C5050 경고: 모듈 'm'을 가져오는 동안 가능한 호환되지 않는 환경이 C++ 버전과 일치하지 않습니다.  현재 "201402" 모듈 버전 "201703"*
+
+또한 .ifc 파일이 조작될 때마다 컴파일러는 C7536을 발생시킵니다. 모듈 인터페이스의 헤더에는 아래 내용의 SHA2 해시가 포함됩니다. 가져오기에서 .ifc 파일이 동일한 방식으로 해시된 다음, 헤더에서 제공된 해시에 대해 확인됩니다. 이러한 항목이 일치하지 않는 경우 오류 C7536이 발생합니다. *ifc가 무결성 검사에 실패했습니다.  예상된 SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
+
+### <a name="partial-ordering-involving-aliases-and-non-deduced-contexts"></a>별칭 및 추론되지 않은 컨텍스트와 관련된 부분 순서
+
+추론되지 않은 컨텍스트에서 별칭을 포함하는 부분 순서 지정 규칙의 구현에 차이가 있습니다. 다음 예제에서 Clang이 코드를 허용하는 반면 **/permissive-** 모드의 GCC 및 Microsoft C++ 컴파일러는 오류를 발생시킵니다. 
+
+```cpp
+#include <utility>
+using size_t = std::size_t;
+
+template <typename T>
+struct A {};
+template <size_t, size_t>
+struct AlignedBuffer {};
+template <size_t len>
+using AlignedStorage = AlignedBuffer<len, 4>;
+
+template <class T, class Alloc>
+int f(Alloc &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 1;
+}
+
+template <class T, class Alloc>
+int f(A<Alloc> &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 2;
+}
+
+struct Alloc
+{
+    static constexpr size_t size = 10;
+};
+
+int main()
+{
+    A<void> a;
+    AlignedStorage<Alloc::size> buf;
+    if (f<Alloc>(a, buf) != 2)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+```
+
+이전 예제는 C2668을 발생시킵니다.
+
+```Output
+partial_alias.cpp(32): error C2668: 'f': ambiguous call to overloaded function
+partial_alias.cpp(18): note: could be 'int f<Alloc,void>(A<void> &,const AlignedBuffer<10,4> &)'
+partial_alias.cpp(12): note: or       'int f<Alloc,A<void>>(Alloc &,const AlignedBuffer<10,4> &)'
+        with
+        [
+            Alloc=A<void>
+        ]
+partial_alias.cpp(32): note: while trying to match the argument list '(A<void>, AlignedBuffer<10,4>)'
+```
+
+구현의 차이는 표준 단어 지정에서 회귀로 인한 것입니다. 여기서 중요 2235 문제에 대한 해결 방법이 이러한 오버로드를 정렬할 수 있는 일부 텍스트를 제거했습니다. 현재 C++ 표준은 이러한 함수를 부분적으로 정렬하는 메커니즘을 제공하지 않습니다. 따라서 모호하다고 여겨집니다.
+
+대안으로 이 문제를 해결하려면 부분 순서 지정을 사용하지 않고 대신 SFINAE를 사용하여 특정 오버로드를 제거하는 것이 좋습니다. 다음 예제에서 `Alloc`가 `A`의 특수화인 경우 `IsA` 도우미 클래스를 사용하여 첫 번째 오버로드를 제거합니다.
+
+```cpp
+#include <utility>
+using size_t = std::size_t;
+
+template <typename T>
+struct A {};
+template <size_t, size_t>
+struct AlignedBuffer {};
+template <size_t len>
+using AlignedStorage = AlignedBuffer<len, 4>;
+
+template <typename T> struct IsA : std::false_type {};
+template <typename T> struct IsA<A<T>> : std::true_type {};
+
+template <class T, class Alloc, typename = std::enable_if_t<!IsA<Alloc>::value>>
+int f(Alloc &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 1;
+}
+
+template <class T, class Alloc>
+int f(A<Alloc> &alloc, const AlignedStorage<T::size> &buffer)
+{
+    return 2;
+}
+
+struct Alloc
+{
+    static constexpr size_t size = 10;
+};
+
+int main()
+{
+    A<void> a;
+    AlignedStorage<Alloc::size> buf;
+    if (f<Alloc>(a, buf) != 2)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
 ```
 
 ## <a name="see-also"></a>참고 항목

@@ -1,26 +1,15 @@
 ---
-title: 이미지 (아이콘에 대 한 이미지 편집기)의 텍스트 글꼴 변경 | Microsoft Docs
-ms.custom: ''
+title: 이미지의 텍스트 글꼴 변경(아이콘에 대한 이미지 편집기)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-windows
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - fonts, changing on an image
 ms.assetid: b8849d40-d401-4e06-808f-e615cb2bee3b
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 5491f8a761eee80595265150ee0cb89c682b3079
-ms.sourcegitcommit: 3a141cf07b5411d5f1fdf6cf67c4ce928cf389c3
+ms.openlocfilehash: 2bbd8096a2957099acc8c06d501f3ad407b9a974
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084050"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50495526"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>이미지의 텍스트 글꼴 변경(아이콘에 대한 이미지 편집기)
 

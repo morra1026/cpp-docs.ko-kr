@@ -1,10 +1,6 @@
 ---
-title: _mbctombb, _mbctombb_l | Microsoft 문서
-ms.custom: ''
+title: _mbctombb, _mbctombb_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _mbctombb_l
 - _mbctombb
@@ -26,24 +22,18 @@ f1_keywords:
 - _mbctombb
 - mbctombb_l
 - mbctombb
-dev_langs:
-- C++
 helpviewer_keywords:
 - _mbctombb function
 - mbctombb_l function
 - mbctombb function
 - _mbctombb_l function
 ms.assetid: d90970b8-71ff-4586-b6a2-f9ceb811f776
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: adb233b489b5f4c190a4015805b07ab36770a283
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7395d94a6ec18f989d4a7153425b7af406a0bf45
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402906"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50519836"
 ---
 # <a name="mbctombb-mbctombbl"></a>_mbctombb, _mbctombb_l
 
@@ -74,19 +64,19 @@ unsigned int _mbctombb_l(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 **_mbctombb** 및 **_mbctombb_l** 에 해당 하는 단일 바이트 문자를 반환 *c*; 그렇지 않으면 반환 *c* .
+성공 하면 **_mbctombb** 하 고 **_mbctombb_l** 에 해당 하는 단일 바이트 문자를 반환 합니다 *c*; 그렇지 않으면 반환 *c* .
 
 ## <a name="remarks"></a>설명
 
-**_mbctombb** 및 **_mbctombb_l** 함수는 주어진된 멀티 바이트 문자를 해당 싱글바이트 멀티 바이트 문자로 변환 합니다. 문자 변환 될 0xDF 범위 0x20-0x7E 또는 0xA1-내의 단일 바이트 문자를 일치 해야 합니다.
+합니다 **_mbctombb** 하 고 **_mbctombb_l** 함수는 지정 된 멀티 바이트 문자를를 해당 싱글바이트 멀티 바이트 문자로 변환 합니다. 문자 변환 될 0xDF 범위 0x20-0x7E 또는 0xA1-내 단일 바이트 문자를 일치 해야 합니다.
 
-출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없이이 함수의 버전은 **_l** 접미사가 로캘 종속 동작에 대 한 현재 로캘을 사용 하 여 버전으로는 **_l** 제외 하 고 전달 된 로캘 매개 변수를 사용 하 여 접미사는 동일 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+출력 값은 로캘의 **LC_CTYPE** 범주 설정에 따른 영향을 받습니다. 자세한 내용은 [setlocale](setlocale-wsetlocale.md)을 참조하세요. 없이이 함수의 버전은는 **_l** 접미사가 로캘 종속 동작에 현재 로캘을 사용 버전을 합니다 **_l** 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 접미사가 동일 합니다. 대신 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 이전 버전에서는 **_mbctombb** 호출한 **zentohan**합니다. 사용 하 여 **_mbctombb** 대신 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_mbctombb**|\<mbstring.h>|
 |**_mbctombb_l**|\<mbstring.h>|

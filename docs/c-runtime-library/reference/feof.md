@@ -1,10 +1,6 @@
 ---
-title: feof | Microsoft 문서
-ms.custom: ''
+title: feof
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - feof
 apilocation:
@@ -22,22 +18,16 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - feof
-dev_langs:
-- C++
 helpviewer_keywords:
 - end of file, testing for
 - feof function
 ms.assetid: 09081eee-7c4b-4189-861f-2fad95d3ec6d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: c3162fd72acdfedc198764a92deec043cd681a10
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9c023290df601bfc48f9708af86d32d91cd52dc4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397017"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580702"
 ---
 # <a name="feof"></a>feof
 
@@ -58,19 +48,19 @@ int feof(
 
 ## <a name="return-value"></a>반환 값
 
-**feof** 함수 읽기 작업이 파일의 끝을 지나서 읽으려고 한 경우 0이 아닌 값을 반환 합니다; 그렇지 않으면 0을 반환 합니다. 스트림 포인터가 있으면 **NULL**의 설명 대로 잘못 된 매개 변수 처리기를 호출 하는 함수 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 및 **feof** 0을 반환 합니다.
+합니다 **feof** 읽기 작업이 파일 끝을 넘어 읽으려고 시도한 경우 함수는 0이 아닌 값을 반환, 그렇지 않으면 0을 반환 합니다. 스트림 포인터가 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 하는 함수 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 하며 **feof** 0을 반환 합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-**feof** 루틴 (함수 및 매크로로 구현) 결정 여부의 끝 *스트림* 전달 되었습니다. 파일의 끝이 전달 되 면 읽기 스트림이 닫힐 때까지 또는 될 때까지 파일 끝 표시기 소수점 [되감기](rewind.md), **fsetpos**, [fseek](fseek-fseeki64.md), 또는  **clearerr** 이 대해 호출 됩니다.
+**feof** 루틴 (함수 및 매크로로 구현 됨) 확인 여부를 끝 *스트림* 전달 되었습니다. 파일의 끝이 전달 되 면 읽기 스트림이 닫힐 때까지 또는 될 때까지 작업이 파일 끝 표시기를 반환 [rewind](rewind.md)를 **fsetpos**하십시오 [fseek](fseek-fseeki64.md), 또는  **clearerr** 에 대해 호출 됩니다.
 
-예를 들어 10 바이트를 포함 하는 파일 및 파일에서 10 바이트를 읽는 **feof** 있습니다 끝을 넘어 읽을을 시도 하지 않은 파일 포인터가 파일의 끝에 있는 경우에 때문에 0을 반환 합니다. 11 번째 바이트를 읽으려고 시도한 후에 **feof** 0이 아닌 값을 반환 합니다.
+예를 들어 10 바이트를 포함 하는 파일 및 파일에서 10 바이트를 읽는 **feof** 있습니다 끝을 넘어 읽으려고 시도 하지 파일 포인터가 파일 끝도 이므로 0을 반환 합니다. 11 번째 바이트를 읽으려고 시도한 후에 **feof** 0이 아닌 값을 반환 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
-|함수|필수 헤더|
+|기능|필수 헤더|
 |--------------|---------------------|
 |**feof**|\<stdio.h>|
 

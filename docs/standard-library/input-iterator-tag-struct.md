@@ -1,28 +1,18 @@
 ---
-title: input_iterator_tag 구조체 | Microsoft 문서
-ms.custom: ''
+title: input_iterator_tag 구조체
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - xutility/std::input_iterator_tag
-dev_langs:
-- C++
 helpviewer_keywords:
 - input_iterator_tag class
 - input_iterator_tag struct
 ms.assetid: ad68a4c6-f315-4ce1-8b74-c1fc71bd1577
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 95e2713f3c73a3dc35c11be8d245ede94b2c3bba
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5478a8f9fa6013202a1ea8dd838eedb80b9c367e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953981"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50493930"
 ---
 # <a name="inputiteratortag-struct"></a>input_iterator_tag 구조체
 
@@ -38,7 +28,7 @@ input_iterator_tag 구조체 {};
 
 형식은 동일 **반복기** \< **Iter**> **:: iterator_category** 때 `Iter` 으로 사용할 수 있는 개체에 설명 합니다.는 입력된 반복기입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 참조 [iterator_traits](../standard-library/iterator-traits-struct.md) 하거나 [random_access_iterator_tag](../standard-library/random-access-iterator-tag-struct.md) 사용 하는 방법의 예 `iterator_tag`s입니다.
 

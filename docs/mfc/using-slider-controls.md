@@ -1,27 +1,17 @@
 ---
-title: 슬라이더 컨트롤 사용 | Microsoft Docs
-ms.custom: ''
+title: 슬라이더 컨트롤 사용
 ms.date: 11/04/2016
-ms.technology:
-- cpp-mfc
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CSliderCtrl class [MFC], using
 - slider controls
 - slider controls [MFC], using
 ms.assetid: 2b1a8ac8-2b17-41e1-aa24-83c1fd737049
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: d0496a15b289ec055fd2706975603f25cef13938
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 7bb5bda4a7b85ea8bb852649b20f10f0c4693188
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46388838"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50533566"
 ---
 # <a name="using-slider-controls"></a>슬라이더 컨트롤 사용
 
@@ -33,7 +23,7 @@ ms.locfileid: "46388838"
 
 - 사용자가 컨트롤과 상호 작용하여 다양한 알림 메시지가 전송됩니다. 호출 하 여 컨트롤에서 슬라이더 값을 추출할 수 있습니다 합니다 [GetPos](../mfc/reference/csliderctrl-class.md#getpos) 멤버 함수입니다.
 
-- 컨트롤을 사용하여 작업을 완료한 경우 제대로 제거되었는지 확인해야 합니다. 대화 상자에 슬라이더 컨트롤이 있는 경우 해당 컨트롤 및 `CSliderCtrl` 개체는 자동으로 소멸됩니다. 그렇지 않은 경우 컨트롤 및 `CSliderCtrl` 개체가 모두 제대로 소멸되었는지 확인해야 합니다.
+- 컨트롤을 사용하여 작업을 완료한 경우 제대로 제거되었는지 확인해야 합니다. 대화 상자에 슬라이더 컨트롤이 있는 경우 해당 컨트롤 및 `CSliderCtrl` 개체는 자동으로 제거됩니다. 그렇지 않은 경우 컨트롤 및 `CSliderCtrl` 개체가 모두 제대로 제거되었는지 확인해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,31 +1,21 @@
 ---
-title: 기타 하나의 인수 출력 스트림 조작자 | Microsoft Docs
-ms.custom: ''
+title: 기타 하나의 인수 출력 스트림 조작자
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - output streams, one-argument manipulators
 ms.assetid: e381dee8-6b16-4cef-805a-4a6a1d2b696b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 30523a7db07dba1359af59c9fcc988feb0e4ec18
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b5f24033d8da0933b8252fdace60fb419ef2e605
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953828"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664830"
 ---
 # <a name="other-one-argument-output-stream-manipulators"></a>기타 하나의 인수 출력 스트림 조작자
 
 다음 예제에서는 클래스 `money`, 되는 **긴** 형식입니다. `setpic` 조작자는 클래스 `money`의 오버로드된 스트림 삽입 연산자가 사용할 수 있는 서식 지정 "picture" 문자열을 클래스에 연결합니다. picture 문자열은 스트림 클래스의 데이터 구성원이 아니라 `money` 클래스의 정적 변수로 저장되므로 새 출력 스트림 클래스를 파생하지 않아도 됩니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // one_arg_output.cpp

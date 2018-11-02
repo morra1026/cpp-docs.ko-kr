@@ -1,8 +1,6 @@
 ---
-title: 'Platform:: stringreference 클래스 | Microsoft Docs'
-ms.custom: ''
+title: Platform::StringReference 클래스
 ms.date: 12/30/2016
-ms.technology: cpp-windows
 ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::StringReference::StringReference
@@ -10,19 +8,13 @@ f1_keywords:
 - VCCORLIB/Platform::StringReference::Length
 - VCCORLIB/Platform::StringReference::GetHSTRING
 - VCCORLIB/Platform::StringReference::GetString
-dev_langs:
-- C++
 ms.assetid: 2d09c7ec-0f16-458e-83ed-7225a1b9221e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1b177cf30b4eee49d144ddf3516a4bbf3da91c85
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 09b15a1530661ce537c9d2aab333a1a17fa52ff9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105798"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50498386"
 ---
 # <a name="platformstringreference-class"></a>Platform::StringReference 클래스
 
@@ -72,7 +64,7 @@ class StringReference
 
 ## <a name="data"></a>  Stringreference:: Data 메서드
 
-이 항목의 내용을 반환 `StringReference` char16 값의 배열입니다.
+이 `StringReference`의 콘텐츠를 char16 값의 배열로 반환합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -199,7 +191,7 @@ StringReference(const ::default::char16* __strArg, size_t __lenArg);
 
 ### <a name="remarks"></a>설명
 
-이 생성자의 첫 번째 버전은 기본 생성자입니다. 두 번째 버전은 `StringReference` 매개 변수로 지정된 개체에서 새 `__fstrArg` 인스턴스 클래스를 초기화합니다. 세 번째와 네 번째 오버 로드 초기화 새 `StringReference` char16 값의 배열에서 인스턴스. char16은 16비트 유니코드 텍스트 문자를 나타냅니다.
+이 생성자의 첫 번째 버전은 기본 생성자입니다. 두 번째 버전은 `StringReference` 매개 변수로 지정된 개체에서 새 `__fstrArg` 인스턴스 클래스를 초기화합니다. 세 번째 및 네 번째 오버로드는 char16 값의 배열에서 새 `StringReference` 인스턴스를 초기화합니다. char16은 16비트 유니코드 텍스트 문자를 나타냅니다.
 
 ## <a name="see-also"></a>참고 항목
 

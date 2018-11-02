@@ -1,27 +1,16 @@
 ---
-title: Typedef, Enum, Union 및 Struct 특성 (c + + COM) | Microsoft Docs
-ms.custom: ''
+title: Typedef, Enum, Union 및 Struct 특성 (c + + COM)
 ms.date: 10/02/2018
-ms.technology:
-- cpp-windows
-ms.topic: reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - union attributes
 - attributes [C++/CLI], reference topics
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- uwp
-ms.openlocfilehash: 89e1511df2aeabe7cbd63549a1dca6e53944fbe2
-ms.sourcegitcommit: 955ef0f9d966e7c9c65e040f1e28fa83abe102a5
+ms.openlocfilehash: 289935c3651535b5f935624dc33246fbe83a4ceb
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48791425"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50631064"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union 및 Struct 특성
 
@@ -107,7 +96,7 @@ ms.locfileid: "48791425"
 |[requires_category](requires-category.md)|대상 클래스의 필수 구성 요소 범주를 지정합니다.|
 |[size_is](size-is.md)|메모리 크기의 할당 크기의 포인터에 대 한, 큰 크기의 포인터 및 단일 또는 다차원 배열에 대 한 포인터를 지정 합니다.|
 |[source](source-cpp.md)|클래스에서 연결 지점에 대 한 COM 개체의 소스 인터페이스를 지정합니다. 속성 또는 메서드, 개체 또는 VARIANT는 이벤트의 소스인 멤버 반환 됨을 나타냅니다.|
-|[스레딩](threading-cpp.md)|COM 개체에 대 한 스레딩 모델을 지정합니다.|
+|[threading](threading-cpp.md)|COM 개체에 대 한 스레딩 모델을 지정합니다.|
 |[unique](unique-cpp.md)|고유 포인터를 지정합니다.|
 |[uuid](uuid-cpp-attributes.md)|클래스 또는 인터페이스에 대 한 고유 ID를 지정 합니다.|
 |[version](version-cpp.md)|클래스의 여러 버전 중에서 특정 버전을 식별합니다.|

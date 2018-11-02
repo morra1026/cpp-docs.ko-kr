@@ -1,10 +1,6 @@
 ---
-title: forward_list 클래스 | Microsoft 문서
-ms.custom: ''
+title: forward_list 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - forward_list/std::forward_list
 - forward_list/std::forward_list::allocator_type
@@ -44,8 +40,6 @@ f1_keywords:
 - forward_list/std::forward_list::splice_after
 - forward_list/std::forward_list::swap
 - forward_list/std::forward_list::unique
-dev_langs:
-- C++
 helpviewer_keywords:
 - std::forward_list
 - std::forward_list::allocator_type
@@ -86,16 +80,12 @@ helpviewer_keywords:
 - std::forward_list::swap
 - std::forward_list::unique
 ms.assetid: 89a3b805-ab60-4858-b772-5855130c11b1
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 017d5d5c2934fa687f91898b896a0ad6f1dcab6f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a818be72266e2cb8471c2eb29a6e058b8dd3ef7d
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102579"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50612045"
 ---
 # <a name="forwardlist-class"></a>forward_list 클래스
 
@@ -884,7 +874,7 @@ void splice_after(
 *Where*<br/>
 대상 forward_list의 위치로, 이 위치 앞에서 삽입합니다.
 
-*Source*<br/>
+*소스*<br/>
 대상 forward_list으로 삽입할 원본 forward_list입니다.
 
 *Iter*<br/>

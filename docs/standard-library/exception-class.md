@@ -1,27 +1,17 @@
 ---
-title: exception 클래스 | Microsoft 문서
-ms.custom: ''
+title: exception 클래스
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - exception
-dev_langs:
-- C++
 helpviewer_keywords:
 - exception class
 ms.assetid: 4f181f67-5888-4b50-89a6-745091ffb2fe
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ec1cfe2be7f6a2172b6624f15cb3dcde4f0ba3c2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 009ef74d810976eb9f054b45e388ceb0fe612b2e
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957020"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50521034"
 ---
 # <a name="exception-class"></a>exception 클래스
 
@@ -51,7 +41,7 @@ class exception {
 > [!NOTE]
 > 생성자 `exception(const char* const &message)` 및 `exception(const char* const &message, int)`는 C++ 표준 라이브러리에 대한 Microsoft 확장입니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 `exception` 클래스에서 상속된 표준 예외 클래스 사용의 예는 [\<stdexcept>](../standard-library/stdexcept.md)를 참조하세요.
 

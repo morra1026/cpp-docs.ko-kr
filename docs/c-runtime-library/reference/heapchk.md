@@ -1,10 +1,6 @@
 ---
-title: _heapchk | Microsoft 문서
-ms.custom: ''
+title: _heapchk
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _heapchk
 apilocation:
@@ -23,8 +19,6 @@ apitype: DLLExport
 f1_keywords:
 - _heapchk
 - heapchk
-dev_langs:
-- C++
 helpviewer_keywords:
 - debugging [CRT], heap-related problems
 - consistency checking of heaps
@@ -32,16 +26,12 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b3fc500ee86bde40def0e1e2d3dd3edad3127daf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b34b4ea1bb2512628213cabb55e26e2dad6d445c
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399636"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50580624"
 ---
 # <a name="heapchk"></a>_heapchk
 
@@ -65,15 +55,15 @@ int _heapchk( void );
 **_HEAPEMPTY**|힙이 초기화되지 않았습니다.
 **_HEAPOK**|힙이 일치하는 것 같습니다.
 
-또한 오류가 발생 하는 경우 **_heapchk** 설정 **errno** 를 **ENOSYS**합니다.
+또한 오류가 발생 하는 경우 **_heapchk** 설정 **errno** 하 **ENOSYS**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_heapchk** 함수에 힙 최소한의 일관성을 확인 하 여 힙 관련 문제를 디버그 하는 데 도움이 됩니다. 운영 체제를 지원 하지 않는 경우 **_heapchk**함수 반환 (예: Windows 98) **_HEAPOK** 설정 **errno** 를 **ENOSYS**.
+합니다 **_heapchk** 함수를 사용 하면 힙의 최소 일관성 검사 하 여 힙 관련 문제를 디버그 합니다. 운영 체제를 지원 하지 않는 경우 **_heapchk**함수를 반환 합니다 (예: Windows 98) **_HEAPOK** 집합과 **errno** 에 **ENOSYS**.
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_heapchk**|\<malloc.h>|\<errno.h>|
 

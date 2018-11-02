@@ -1,10 +1,6 @@
 ---
-title: _chmod, _wchmod | Microsoft 문서
-ms.custom: ''
+title: _chmod, _wchmod
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _chmod
 - _wchmod
@@ -25,8 +21,6 @@ f1_keywords:
 - _chmod
 - _wchmod
 - wchmod
-dev_langs:
-- C++
 helpviewer_keywords:
 - _chmod function
 - wchmod function
@@ -35,16 +29,12 @@ helpviewer_keywords:
 - files [C++], changing permissions
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 0e4944f871195b276189014ed9d5d294b9b445fd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7f3133aac1548be5cb497fe32ae4f9f1c0e238d9
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399956"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50595132"
 ---
 # <a name="chmod-wchmod"></a>_chmod, _wchmod
 
@@ -67,11 +57,11 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ## <a name="return-value"></a>반환 값
 
-권한 설정을 성공적으로 변경한 경우 이러한 함수는 0을 반환합니다. 반환 값이-1은 오류를 나타냅니다. 지정된 된 파일을 찾을 수 없는, 경우 **errno** 로 설정 된 **ENOENT**매개 변수가 유효 하지 않을 경우; **errno** 로 설정 된 **EINVAL**합니다.
+권한 설정을 성공적으로 변경한 경우 이러한 함수는 0을 반환합니다. 반환 값이-1은 실패를 나타냅니다. 지정 된 파일을 찾을 수 없습니다, 하는 경우 **errno** 로 설정 된 **ENOENT**매개 변수가 유효 하지 않은 경우 **errno** 로 설정 되어 **EINVAL**합니다.
 
 ## <a name="remarks"></a>설명
 
-**_chmod** 함수 변경 하 여 지정 된 파일의 사용 권한 설정을 *filename*합니다. 권한 설정은 파일에 대한 읽기 및 쓰기 액세스를 제어합니다. 정수 식 *pmode* SYS\Stat.h에 정의 된 다음 매니페스트 상수 중 하나 또는 모두를 포함 합니다.
+합니다 **_chmod** 함수에서 지정한 파일의 권한 설정을 변경 *filename*합니다. 권한 설정은 파일에 대한 읽기 및 쓰기 액세스를 제어합니다. 정수 식 *pmode* SYS\Stat.h에 정의 된 다음 매니페스트 상수 중 하나 또는 모두를 포함 합니다.
 
 |*pmode*|의미|
 |-|-|
@@ -79,13 +69,13 @@ int _wchmod( const wchar_t *filename, int pmode );
 **_S_IWRITE**|쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다.
 **_S_IREAD** &AMP;#124; **_S_IWRITE**|읽기 및 쓰기를 허용합니다.
 
-두 상수가 지정 하는 경우와 비트 가입 or 연산자 (**|**). 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 모드 **_S_IWRITE** 및 **_S_IREAD** | **_S_IWRITE** 동일 합니다.
+두 상수가 지정 된 비트를 사용 하 여 결합 됩니다 or 연산자 (**|**). 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 모드 **_S_IWRITE** 하 고 **_S_IREAD** | **_S_IWRITE** 동일 합니다.
 
-**_wchmod** 의 와이드 문자 버전이 **_chmod**; *filename* 인수를 **_wchmod** 는 와이드 문자 문자열입니다. **_wchmod** 및 **_chmod** 동일 하 게 작동 합니다.
+**_wchmod** 의 와이드 문자 버전이 **_chmod**; *filename* 인수를 **_wchmod** 는 와이드 문자 문자열입니다. **_wchmod** 하 고 **_chmod** 동일 하 게 작동 합니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *pmode* 매니페스트 상수 중 하 나와 아니거나 통합 다른 집합의 상수, 함수 무시 하기만 하는 것입니다. 경우 *filename* 은 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수가-1을 반환 합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 하는 경우 *pmode* 매니페스트 상수 중 하나의 조합이 아니거나 다른 집합을 통합 상수의 함수가 무시 것입니다. 하는 경우 *filename* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **errno** 로 설정 된 **EINVAL** 함수-1을 반환 합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |Tchar.h 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|--------------------------------------|--------------------|-----------------------|
@@ -93,7 +83,7 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|선택적 헤더|
+|루틴에서 반환된 값|필수 헤더|선택적 헤더|
 |-------------|---------------------|---------------------|
 |**_chmod**|\<io.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|
 |**_wchmod**|\<io.h> 또는 \<wchar.h>|\<sys/types.h>, \<sys/stat.h>, \<errno.h>|

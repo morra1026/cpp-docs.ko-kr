@@ -1,10 +1,6 @@
 ---
-title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l | Microsoft Docs
-ms.custom: ''
+title: _sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 apiname:
 - _sprintf_p
 - _swprintf_p_l
@@ -31,8 +27,6 @@ f1_keywords:
 - swprint_p_l
 - swprintf_p
 - swprintf_p_l
-dev_langs:
-- C++
 helpviewer_keywords:
 - sprintf_p_l function
 - swprintf_p function
@@ -48,16 +42,12 @@ helpviewer_keywords:
 - formatted text [C++]
 - _stprintf_p_l function
 ms.assetid: a2ae78e8-6b0c-48d5-87a9-ea2365b0693d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 02c28da8c066f51bb4366c7ed20e04266d37b074
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: c55dce7d37d63c79e8c8d9976a76adf331412812
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451414"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50579599"
 ---
 # <a name="sprintfp-sprintfpl-swprintfp-swprintfpl"></a>_sprintf_p, _sprintf_p_l, _swprintf_p, _swprintf_p_l
 
@@ -106,7 +96,7 @@ int _swprintf_p_l(
 형식 컨트롤 문자열입니다.
 
 *argument_list*<br/>
-서식 문자열에 선택적 인수입니다.
+형식 문자열에 대 한 선택적 인수입니다.
 
 *locale*<br/>
 사용할 로캘입니다.
@@ -115,17 +105,17 @@ int _swprintf_p_l(
 
 ## <a name="return-value"></a>반환 값
 
-작성 된 문자 수 또는 오류가 발생 한 경우-1입니다.
+기록 된 문자 수 또는 오류가 발생 한 경우-1입니다.
 
 ## <a name="remarks"></a>설명
 
-**_sprintf_p** 포맷 하 고 일련의 문자 및 값을 저장 하는 함수 *버퍼*합니다. 각 인수에는 *argument_list* (있는 경우)이 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. *형식* 인수를 사용 하는 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 기록된 마지막 문자 뒤에 null 문자가 추가됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다. 차이 **_sprintf_p** 및 **sprintf_s** 은 **_sprintf_p** 지원 위치 매개 변수를 인수는 순서를 지정할 수 있습니다 형식 문자열에 사용 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
+합니다 **_sprintf_p** 포맷 하 고 일련의 문자 및 값을 저장 하는 함수 *버퍼*합니다. 각 인수는 *argument_list* (있는 경우) 변환 되 고 해당 형식 사양에 따라 출력 *형식*합니다. 합니다 *형식* 인수 사용 합니다 [형식 사양 구문 printf 및 wprintf 함수에 대 한](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)합니다. 기록된 마지막 문자 뒤에 null 문자가 추가됩니다. 중복되는 문자열 간에 복사가 이뤄지면 이 동작은 정의되지 않습니다. 차이점 **_sprintf_p** 하 고 **sprintf_s** 는 **_sprintf_p** 지원 위치는 매개 변수를 인수 하는 순서를 지정할 수 있습니다 형식 문자열에 사용 합니다. 자세한 내용은 [printf_p 위치 매개 변수](../../c-runtime-library/printf-p-positional-parameters.md)를 참조하세요.
 
-**_swprintf_p** 의 와이드 문자 버전이 **_sprintf_p**;에 대 한 포인터 인수 **_swprintf_p** 는 와이드 문자 문자열입니다. 인코딩 오류를 탐지 **_swprintf_p** 에 다를 수 있습니다 **_sprintf_p**합니다. **_swprintf_p** 및 **fwprintf_p** 점을 제외 하 고 동일 하 게 작동 **_swprintf_p** 유형의 대상 대신 문자열에 출력을 기록 **파일**, 및 **_swprintf_p** 필요는 *count* 매개 변수를 쓸 문자의 최대 수를 지정 합니다. 있는 이러한 함수 버전은 **_l** 은 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 하는 점을 제외 하 고 접미사는 동일 합니다.
+**_swprintf_p** 의 와이드 문자 버전이 **_sprintf_p**;에 대 한 포인터 인수 **_swprintf_p** 는 와이드 문자 문자열입니다. 인코딩 오류의 탐지 **_swprintf_p** 에 다를 수 있습니다 **_sprintf_p**합니다. **_swprintf_p** 하 고 **fwprintf_p** 점을 제외 하면 동일 하 게 작동 **_swprintf_p** 형식의 대상이 아니라 문자열에 출력을 기록 **파일**, 및 **_swprintf_p** 필요 합니다 *개수* 매개 변수를 쓸 문자의 최대 수를 지정 합니다. 포함 된 이러한 함수의 버전을 **_l** 접미사는 현재 스레드 로캘 대신 전달 된 로캘 매개 변수를 사용 한다는 점을 제외 하면 동일 합니다.
 
-**_sprintf_p** 에 저장 된 바이트 수를 반환 *버퍼*, 종결 null 문자를 제외 합니다. **_swprintf_p** 에 저장 된 와이드 문자 수를 반환 *버퍼*, 종료 null 와이드 문자를 제외 합니다. 경우 *버퍼* 또는 *형식* 가 null 포인터 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열에 잘못 된 서식 문자가 들어 [매개 변수 유효성 검사 ](../../c-runtime-library/parameter-validation.md). 실행을 계속 허용 된, 하는 경우 이러한 함수가-1을 반환 하 고 설정 **errno** 를 **EINVAL**합니다.
+**_sprintf_p** 에 저장 된 바이트 수를 반환 *버퍼*, 종결 null 문자를 제외 합니다. **_swprintf_p** 에 저장 된 와이드 문자 수를 반환 *버퍼*, 종료 null 와이드 문자를 제외 합니다. 하는 경우 *버퍼* 하거나 *형식* 가 null 포인터인 경우 또는에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 형식 문자열이 잘못 된 서식 문자열을 포함 하는 경우 [매개 변수 유효성 검사 ](../../c-runtime-library/parameter-validation.md). 실행은 계속 하도록 허용 하는 경우 이러한 함수가-1를 반환 하는 설정 **errno** 하 **EINVAL**합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -134,7 +124,7 @@ int _swprintf_p_l(
 
 ## <a name="requirements"></a>요구 사항
 
-|루틴|필수 헤더|
+|루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
 |**_sprintf_p**, **_sprintf_p_l**|\<stdio.h>|
 |**_swprintf_p**, **_swprintf_p_l**|\<stdio.h> 또는 \<wchar.h>|

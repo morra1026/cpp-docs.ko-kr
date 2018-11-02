@@ -1,28 +1,18 @@
 ---
-title: __svm_skinit | Microsoft Docs
-ms.custom: ''
+title: __svm_skinit
 ms.date: 11/04/2016
-ms.technology:
-- cpp-tools
-ms.topic: reference
 f1_keywords:
 - __svm_skinit
-dev_langs:
-- C++
 helpviewer_keywords:
 - SKINIT instruction
 - __svm_skinit intrinsic
 ms.assetid: 787ec781-4cf2-40a2-aa20-5192334b131a
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 1fa468fddd24bd622d839bb1882af99d393a3d99
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 630d4b9d93802038bd00b65495bb18455b0c61a4
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46426135"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50591219"
 ---
 # <a name="svmskinit"></a>__svm_skinit
 
@@ -46,7 +36,7 @@ void __svm_skinit(
 
 ## <a name="remarks"></a>설명
 
-합니다 `__svm_skinit` 함수는 동일 합니다 `SKINIT` 컴퓨터 명령입니다. 이 함수는 프로세서 및 신뢰할 수 있는 플랫폼 모듈 (TPM)를 사용 하 여 확인 하 고 보안 커널 (SK)를 호출 하는 신뢰할 수 있는 소프트웨어를 로드 하는 보안 시스템의 일부입니다. 가상 컴퓨터 모니터는 보안 커널의 예시입니다. 보안 시스템 프로그램 구성 요소 초기화 프로세스 중에 로드 하 고 컴퓨터가 다중 프로세서 인터럽트, 장치 액세스 또는 다른 응용 프로그램에 의해 변조 되지 않도록 보호 하는 구성 요소를 확인 합니다.
+`__svm_skinit` 함수는 `SKINIT` 컴퓨터 명령에 해당합니다. 이 함수는 프로세서 및 신뢰할 수 있는 플랫폼 모듈 (TPM)를 사용 하 여 확인 하 고 보안 커널 (SK)를 호출 하는 신뢰할 수 있는 소프트웨어를 로드 하는 보안 시스템의 일부입니다. 가상 컴퓨터 모니터는 보안 커널의 예시입니다. 보안 시스템 프로그램 구성 요소 초기화 프로세스 중에 로드 하 고 컴퓨터가 다중 프로세서 인터럽트, 장치 액세스 또는 다른 응용 프로그램에 의해 변조 되지 않도록 보호 하는 구성 요소를 확인 합니다.
 
 합니다 `SLB` 64k 메모리 블록을 호출의 실제 주소를 지정 하는 매개 변수를 *로더 블록 보안* (SLB). SLB를 컴퓨터에 대 한 운영 환경을 설정 하 고 이후에 보안 커널을 로드 하는 보안 로더를 호출 하는 프로그램을 포함 합니다.
 
