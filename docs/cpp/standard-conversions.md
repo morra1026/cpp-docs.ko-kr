@@ -1,27 +1,17 @@
 ---
-title: 표준 변환 | Microsoft Docs
-ms.custom: ''
+title: 표준 변환
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 helpviewer_keywords:
 - standard conversions, categories of
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: dec0456c880fea47219dc11c509bbecac025f5d3
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
-ms.translationtype: HT
+ms.openlocfilehash: 7a42a4f35a29489fe23327c6b34ed49197a64724
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070587"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50575450"
 ---
 # <a name="standard-conversions"></a>표준 변환
 
@@ -221,7 +211,7 @@ int main() {
 
 이러한 변환의 결과는 기본 클래스에서 완전히 설명하는 개체의 일부인 "하위 개체"에 대한 포인터입니다.
 
-다음 코드에서는 두 클래스 `A` 및 `B`를 정의합니다. `B`는 `A`에서 파생됩니다. (상속에 대 한 자세한 내용은 참조 하세요. [파생 클래스](../cpp/inheritance-cpp.md).) 그런 다음  형식의 개체인 `bObject`를 정의하고 이 개체를 가리키는 두 포인터(`B` 및 `pB`)를 정의합니다.
+다음 코드에서는 두 클래스 `A` 및 `B`를 정의합니다. `B`는 `A`에서 파생됩니다. (상속에 대 한 자세한 내용은 참조 하세요. [파생 클래스](../cpp/inheritance-cpp.md).) 그런 다음 `bObject` 형식의 개체인 `B`를 정의하고 이 개체를 가리키는 두 포인터(`pA` 및 `pB`)를 정의합니다.
 
 ```cpp
 // C2039 expected
