@@ -1,27 +1,17 @@
 ---
-title: 전역 상수 | Microsoft Docs
-ms.custom: ''
+title: 전역 상수
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - c.constants
-dev_langs:
-- C++
 helpviewer_keywords:
 - global constants
 ms.assetid: 778d86fd-3ca6-4d2b-b4c5-aee6dc1efe6b
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ba313599dafe1d14a4f7cb7fa8e69fd272dd68a3
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a23f45b7208899e31d755e17dad4ef1a184746f6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46032148"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50546383"
 ---
 # <a name="global-constants"></a>전역 상수
 
