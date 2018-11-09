@@ -1,23 +1,17 @@
 ---
-title: Visual C++ 샘플 | Microsoft 문서
-ms.custom: ''
+title: Visual C++ 샘플
 ms.date: 11/30/2017
 ms.technology:
 - cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: 76798022-5886-48e7-a7f2-f99352b15cbf
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: ee8e06636a7d02ac0f34940031d9f0cac3fbef6c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f4baf057f421ffbf604916e1077533057b1d1ccf
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612453"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50490391"
 ---
 # <a name="visual-c-samples"></a>Visual C++ 샘플
 
@@ -31,7 +25,7 @@ ms.locfileid: "42612453"
 
 [유니버설 Windows 앱 샘플](https://code.msdn.microsoft.com/windowsapps/Universal-Windows-app-cb3248c3)
 
-[올인원 코드 프레임워크](https://1code.codeplex.com/)
+[All-In-One 코드 프레임워크](https://1code.codeplex.com/)
 
 [Windows 데스크톱 코드 샘플](https://code.msdn.microsoft.com/windowsdesktop/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B&f%5B0%5D.Text=C%2B%2B)
 

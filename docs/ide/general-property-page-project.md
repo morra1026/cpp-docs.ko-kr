@@ -1,10 +1,6 @@
 ---
-title: 일반 속성 페이지(프로젝트) | Microsoft Docs
-ms.custom: ''
+title: 일반 속성 페이지(프로젝트)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCConfiguration.IntermediateDirectory
 - VC.Project.VCConfiguration.ConfigurationType
@@ -25,22 +21,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.AppSupport
 - VC.Project.VCConfiguration.ToolFiles
 - VC.Project.VCConfiguration.useOfATL
-dev_langs:
-- C++
 helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4d68cf6be3a512d478f4d7808ce321f18c0efd84
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 5479b892a2cb97fb645dba4ffac70dd9ac4aeffe
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46422266"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50594518"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
@@ -78,13 +68,13 @@ Windows 이외 프로젝트의 경우 [Linux C++ 속성 페이지 참조](../lin
 
    링커 등의 도구가 빌드 프로세스 중에 생성되는 모든 최종 출력 파일을 배치하는 디렉터리를 지정합니다. 일반적으로 이 디렉터리에는 링커, 라이브러리 관리자 또는 BSCMake와 같은 도구의 출력이 포함됩니다. 기본적으로 이 속성은 매크로 $(SolutionDir)$(Configuration)\에서 지정한 디렉터리입니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.OutputDirectory%2A>를 참조하세요.
 
 - **중간 디렉터리**
 
    컴파일러 등의 도구가 빌드 프로세스 중에 생성되는 모든 중간 파일을 배치하는 디렉터리를 지정합니다. 일반적으로 이 디렉터리에는 C/C++ 컴파일러, MIDL 및 리소스 컴파일러와 같은 도구의 출력이 포함됩니다. 기본적으로 이 속성은 매크로 $(Configuration)\에서 지정한 디렉터리입니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.IntermediateDirectory%2A>를 참조하세요.
 
 - **대상 이름**
 
@@ -98,7 +88,7 @@ Windows 이외 프로젝트의 경우 [Linux C++ 속성 페이지 참조](../lin
 
    **정리** 옵션(**빌드** 메뉴)은 프로젝트 구성이 빌드되는 중간 디렉터리에서 파일을 삭제합니다. 이 속성을 통해 지정된 확장명을 가진 파일은 **정리**를 실행하거나 다시 빌드를 수행할 경우 삭제됩니다. 중간 디렉터리에 있는 이러한 확장명의 파일뿐 아니라 빌드 시스템은 위치에 관계없이 알려진 빌드 출력(.obj 파일과 같은 중간 출력 포함)도 삭제합니다. 와일드카드 문자를 지정할 수 있습니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.DeleteExtensionsOnClean%2A>를 참조하세요.
 
 - **빌드 로그 파일**
 
@@ -142,31 +132,31 @@ Windows 이외 프로젝트의 경우 [Linux C++ 속성 페이지 참조](../lin
 
       유틸리티 도구 집합(MIDL, 사용자 지정 빌드, 사전 빌드, 사후 빌드 이벤트)을 표시합니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>를 참조하세요.
 
 - **MFC 사용**
 
    MFC 프로젝트가 MFC DLL에 정적 또는 동적으로 연결하는지를 지정합니다. 비 MFC 프로젝트는 **표준 Windows 라이브러리 사용**을 선택하여 MFC를 사용할 때 포함되는 다양한 Win32 라이브러리에 연결할 수 있습니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfMfc%2A>를 참조하세요.
 
 - **ATL 사용**
 
    ATL 프로젝트가 ATL .DLL에 정적 또는 동적으로 연결하는지를 지정합니다. **ATL 사용 안 함** 이외의 설정을 지정하면 컴파일러의 **명령줄** 속성 페이지에 define이 추가됩니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfATL%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.useOfATL%2A>를 참조하세요.
 
 - **문자 집합**
 
    _UNICODE 또는 _MBCS를 설정해야 하는지를 정의합니다. 해당하는 경우 링커 진입점에도 영향을 줍니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.CharacterSet%2A>를 참조하세요.
 
 - **공용 언어 런타임 지원**
 
    [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 사용하게 합니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>을 참조하세요.
+   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProject.VCProjectConfigurationProperties.ManagedExtensions%2A>를 참조하세요.
 
 - **.NET 대상 프레임워크 버전**
 
