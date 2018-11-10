@@ -1,25 +1,15 @@
 ---
-title: 응용 프로그램 로컬 폴더에 Visual C++ 응용 프로그램 배포 | Microsoft Docs
-ms.custom: ''
+title: 앱 로컬 폴더에 Visual C++ 응용 프로그램 배포
 ms.date: 09/17/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - deploying Visual C++ applications
 ms.assetid: 47a81c47-9dbe-47c6-96cc-fbb2fda5e6ad
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3db193c0537869e4b99bc4c0c94cc79c70f5e827
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6715dacf6e00aacf3ba3ef7e6cd3773f48fd8e2f
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50060665"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50596913"
 ---
 # <a name="walkthrough-deploying-a-visual-c-application-to-an-application-local-folder"></a>연습: 응용 프로그램 로컬 폴더에 Visual C++ 응용 프로그램 배포
 
