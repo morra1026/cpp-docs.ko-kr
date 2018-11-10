@@ -1,23 +1,13 @@
 ---
-title: 부동 소수점의 수학 | Microsoft Docs
-ms.custom: ''
+title: 부동 소수점의 수학
 ms.date: 11/04/2016
-ms.technology:
-- cpp-language
-ms.topic: language-reference
-dev_langs:
-- C++
 ms.assetid: 1ff2f7e9-f29a-4822-9b05-4b4267e80ba3
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 29492ee8584093b336ba10f4e35fdd153c48819b
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 3863b44bed4bc4b27dd58a3b8571f33e7568e516
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46034462"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50677684"
 ---
 # <a name="floating-point-math"></a>부동 소수점의 수학
 
