@@ -1,10 +1,6 @@
 ---
-title: 매니페스트 도구 입력 및 출력 속성(Visual C++) | Microsoft Docs
-ms.custom: ''
+title: 매니페스트 도구 입력 및 출력 속성(Visual C++)
 ms.date: 08/27/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCManifestTool.OutputManifestFile
 - VC.Project.VCManifestTool.InputResourceManifests
@@ -13,19 +9,13 @@ f1_keywords:
 - VC.Project.VCManifestTool.DependencyInformationFile
 - VC.Project.VCManifestTool.OutputResourceManifest
 - VC.Project.VCManifestTool.GenerateCatalogFiles
-dev_langs:
-- C++
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: b4320339021f0de25d49cba3fbe1f5e4377cd062
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8aa007e41cdabe0bf548f1184b801c1f81655596
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201221"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50624703"
 ---
 # <a name="input-and-output-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>입력 및 출력, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
 
@@ -73,6 +63,6 @@ ms.locfileid: "43201221"
 
 ## <a name="see-also"></a>참고 항목
 
-[ClickOnce 응용 프로그램 매니페스트](/visualstudio/deployment/clickonce-application-manifest)<br/>
+[ndptecclick](/visualstudio/deployment/clickonce-application-manifest)<br/>
 [매니페스트 도구 속성 페이지](../ide/manifest-tool-property-pages.md)<br/>
 [프로젝트 속성 사용](../ide/working-with-project-properties.md)<br/>

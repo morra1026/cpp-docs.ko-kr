@@ -1,26 +1,16 @@
 ---
-title: 텍스트 및 이진 스트림 | Microsoft Docs
-ms.custom: ''
+title: 텍스트 및 이진 스트림
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - binary streams
 - text streams
 ms.assetid: 57035e4a-955d-4e04-a560-fcf67ce68b4e
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 106e02de80c3132846d7b88161637a37f74a59ee
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: a47c0b79b10f685c1f43ae4bfbfc6e1b9ea2b508
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46068639"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50664908"
 ---
 # <a name="text-and-binary-streams"></a>텍스트 및 이진 스트림
 

@@ -1,12 +1,6 @@
 ---
-title: 네이티브 데스크톱 응용 프로그램 배포(Visual C++) | Microsoft Docs
-ms.custom: ''
+title: 네이티브 데스크톱 응용 프로그램 배포(Visual C++)
 ms.date: 05/11/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - deploying applications [C++]
 - application deployment [C++]
@@ -15,16 +9,12 @@ helpviewer_keywords:
 - deploying applications [C++], about deploying applications
 - distributing applications [C++]
 ms.assetid: 37f1691e-d67c-41e4-926e-528a237a9bac
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 4f4aa355c132b4c94f085cbdf7aa73785357d0f0
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ca3949c0cc2a505148da2a1edb8f07eaf1b6a1f7
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34259246"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50662685"
 ---
 # <a name="deploying-native-desktop-applications-visual-c"></a>네이티브 데스크톱 응용 프로그램 배포(Visual C++)
 
