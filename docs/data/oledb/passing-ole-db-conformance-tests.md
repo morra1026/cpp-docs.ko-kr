@@ -8,12 +8,12 @@ helpviewer_keywords:
 - conformance testing [OLE DB]
 - OLE DB providers, testing
 ms.assetid: d1a4f147-2edd-476c-b452-0e6a0ac09891
-ms.openlocfilehash: f7c5435003866e2c3490bd07e28ec10eca0ec0cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7365176df314baf40ac1cc1ed53936598f05c79e
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491717"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265076"
 ---
 # <a name="passing-ole-db-conformance-tests"></a>OLE DB 적합성 테스트 통과
 
@@ -26,7 +26,7 @@ Visual c + + 6.0 OLE DB 공급자 템플릿 다양 한 값과 속성을 확인�
 > [!NOTE]
 > OLE DB 적합성 테스트 통과를 공급자에 대해 여러 유효성 검사 함수를 추가 해야 합니다.
 
-이 공급자에는 두 가지 유효성 검사 루틴에 필요합니다. 첫 번째 루틴 `CRowsetImpl::ValidateCommandID`, 행 집합 클래스의 일부입니다. 행 집합을 만드는 동안 공급자 템플릿에 의해 호출 됩니다. 샘플이이 루틴을 사용 하 여 인덱스를 지원 하지 않습니다 소비자에 게 알립니다. 첫 번째 호출 하는 것 `CRowsetImpl::ValidateCommandID` (공급자를 사용 하는 참고 합니다 `_RowsetBaseClass` 의 인터페이스 맵에 추가 하는 typedef `CCustomRowset` 에서 [공급자의 책갈피 지원](../../data/oledb/provider-support-for-bookmarks.md)이므로 템플릿의 해당 긴 줄을 입력할 필요가 없습니다 인수)입니다. 인덱스 매개 변수가 NULL이 아닌 경우 DB_E_NOINDEX를이 어 반환 (나타냅니다는 소비자가 알아서 인덱스 사용). 명령 Id에 대 한 자세한 내용은 OLE DB 사양을 참조 하 고 검색할 `IOpenRowset::OpenRowset`합니다.
+이 공급자에는 두 가지 유효성 검사 루틴에 필요합니다. 첫 번째 루틴 `CRowsetImpl::ValidateCommandID`, 행 집합 클래스의 일부입니다. 행 집합을 만드는 동안 공급자 템플릿에 의해 호출 됩니다. 샘플이이 루틴을 사용 하 여 알릴 소비자는 인덱스를 지원 하지 않습니다. 첫 번째 호출 하는 것 `CRowsetImpl::ValidateCommandID` (공급자를 사용 하는 참고 합니다 `_RowsetBaseClass` 의 인터페이스 맵에 추가 하는 typedef `CCustomRowset` 에서 [공급자의 책갈피 지원](../../data/oledb/provider-support-for-bookmarks.md)템플릿의 해당 긴 줄을 입력 하지 않아도 되므로 인수)입니다. 인덱스 매개 변수 (이 나타내는 바로 여기 인덱스를 사용 하는 소비자가) NULL이 아닌 경우에 어 DB_E_NOINDEX를 반환 합니다. 명령 Id에 대 한 자세한 내용은 OLE DB 사양을 참조 하 고 검색할 `IOpenRowset::OpenRowset`합니다.
 
 다음 코드는는 `ValidateCommandID` 유효성 검사 과정:
 
@@ -48,9 +48,9 @@ HRESULT ValidateCommandID(DBID* pTableID, DBID* pIndexID)
 }
 ```
 
-공급자 템플릿 호출의 `OnPropertyChanged` 에서 속성을 변경 될 때마다 메서드는 `DBPROPSET_ROWSET` 그룹입니다. 적절 한 개체에 추가할 다른 그룹에 대 한 속성을 처리 하려는 경우 (즉, `DBPROPSET_SESSION` 검사를 진행 합니다 `CCustomSession` 클래스).
+공급자 템플릿 호출의 `OnPropertyChanged` DBPROPSET_ROWSET 그룹의 속성을 누군가 변경 될 때마다 메서드. 적절 한 개체에 추가할 다른 그룹에 대 한 속성을 처리 하려는 경우 (즉, DBPROPSET_SESSION 검사 진행을 `CCustomSession` 클래스).
 
-먼저 코드 속성에 다른 연결 되었는지 여부를 확인 합니다. 속성에 연결 될 경우에 설정 된 `DBPROP_BOOKMARKS` 속성을 `True`입니다. OLE DB 사양의 부록 C는 속성에 대 한 정보를 포함합니다. 이 정보 또한 알려 속성에 다른 연결 되었는지 여부입니다.
+먼저 코드 속성에 다른 연결 되었는지 여부를 확인 합니다. 속성에 연결 될 경우 DBPROP_BOOKMARKS 속성을 설정 `True`합니다. OLE DB 사양의 부록 C는 속성에 대 한 정보를 포함합니다. 이 정보 또한 알려 속성에 다른 연결 되었는지 여부입니다.
 
 추가할 수도 있습니다는 `IsValidValue` 일상적인 코드입니다. 템플릿 호출 `IsValidValue` 속성을 설정 하려고 할 때입니다. 속성 값을 설정 하는 경우 추가 처리가 필요한 경우이 메서드를 재정의 됩니다. 각 속성 집합에 대해 이러한 메서드 중 하나가 있습니다.
 

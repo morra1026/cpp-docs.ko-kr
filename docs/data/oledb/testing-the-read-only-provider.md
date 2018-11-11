@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB providers, calling
 - OLE DB providers, testing
 ms.assetid: e4aa30c1-391b-41f8-ac73-5270e46fd712
-ms.openlocfilehash: 18edc1ae13ef66f9646edbcf1d0fdfdbe0586cff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cda4efcdb26499f910ad875b2bf7b7504a825cf6
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611213"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265102"
 ---
 # <a name="testing-the-read-only-provider"></a>읽기 전용 공급자 테스트
 
@@ -24,11 +24,11 @@ ms.locfileid: "50611213"
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-1. 에 **프로젝트 형식** 창 합니다 **Visual c + + 프로젝트** 폴더입니다. 에 **템플릿을** 창 **MFC 응용 프로그램**합니다.
+1. 에 **프로젝트 형식** 창 합니다 **설치 됨** > **Visual c + +** > **MFC/ATL** 폴더입니다. 에 **템플릿을** 창 **MFC 응용 프로그램**합니다.
 
 1. 프로젝트 이름을 입력 *TestProv*를 클릭 하 고 **확인**합니다.
 
-   MFC 응용 프로그램 마법사가 나타납니다.
+   합니다 **MFC 응용 프로그램** 마법사가 나타납니다.
 
 1. 에 **응용 프로그램 종류** 페이지에서 **대화 상자 기반**입니다.
 
@@ -37,13 +37,14 @@ ms.locfileid: "50611213"
 > [!NOTE]
 > 추가 하는 경우 응용 프로그램 자동화 지원이 필요 하지 않습니다 `CoInitialize` 에서 `CTestProvApp::InitInstance`합니다.
 
-확인 및 편집할 수는 **TestProv** 에서 선택 하 여 대화 상자 (IDD_TESTPROV_DIALOG) **리소스 뷰**합니다. 대화 상자에서 행 집합의 각 문자열에 대해 하나씩 두 개의 목록 상자를 배치 합니다. 키를 눌러 목록 상자 둘 다에 대 한 정렬 속성을 해제 **Alt**+**Enter** 목록 확인란을 선택 하는 경우 클릭 합니다 **스타일** 탭을 지우면 합니다  **정렬** 확인란 합니다. 또한 배치는 **실행** 가져올 파일 대화 상자에서 단추입니다. 완성 된 **TestProv** 대화 상자는 각각 "String 1" 및 "2 String" 레이블이 지정 된 두 개의 목록 상자 있어야; 있습니다 **확인**합니다 **취소**, 및 **실행**  단추입니다.
+확인 및 편집할 수는 **TestProv** 에서 선택 하 여 대화 상자 (IDD_TESTPROV_DIALOG) **리소스 뷰**합니다. 대화 상자에서 행 집합의 각 문자열에 대해 하나씩 두 개의 목록 상자를 배치 합니다. 키를 눌러 목록 상자 둘 다에 대 한 정렬 속성을 해제 **Alt**+**Enter** 목록 상자를 선택 하면 설정 된 **정렬** 속성**False**합니다. 또한 배치는 **실행** 가져올 파일 대화 상자에서 단추입니다. 완성 된 **TestProv** 대화 상자는 각각 "String 1" 및 "2 String" 레이블이 지정 된 두 개의 목록 상자 있어야; 있습니다 **확인**합니다 **취소**, 및 **실행**  단추입니다.
 
 (이 경우 TestProvDlg.h)에서 대화 상자 클래스에 대 한 헤더 파일을 엽니다. 클래스 선언) (외부 헤더 파일에 다음 코드를 추가 합니다.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
 // TestProvDlg.h
+#include <atldbcli.h>  
 
 class CProvider
 {
@@ -68,11 +69,11 @@ END_COLUMN_MAP()
 ///////////////////////////////////////////////////////////////////////
 // TestProvDlg.cpp
 
-void CtestProvDlg::OnRun()
+void CTestProvDlg::OnRun()
 {
    CCommand<CAccessor<CProvider>> table;
    CDataSource source;
-   CSession   session;
+   CSession session;
 
    if (source.Open("Custom.Custom.1", NULL) != S_OK)
       return;
@@ -91,36 +92,17 @@ void CtestProvDlg::OnRun()
 }
 ```
 
-합니다 `CCommand`, `CDataSource`, 및 `CSession` OLE DB 소비자 템플릿에 속하는 모든 클래스입니다. 각 클래스는 공급자에서 COM 개체를 모방합니다. 합니다 `CCommand` 개체는 `CProvider` 템플릿 매개 변수로 헤더 파일에 선언 된 클래스입니다. `CProvider` 매개 변수는 공급자에서 데이터에 액세스 하는 데 사용할 수 있는 바인딩을 나타냅니다. 다음은 `Open` 데이터 원본, 세션 및 명령에 대 한 코드:
-
-```cpp
-if (source.Open("Custom.Custom.1", NULL) != S_OK)
-   return;
-
-if (session.Open(source) != S_OK)
-   return;
-
-if (table.Open(session, _T("c:\\samples\\myprov\\myData.txt")) != S_OK)
-   return;
-```
+합니다 `CCommand`, `CDataSource`, 및 `CSession` OLE DB 소비자 템플릿에 속하는 모든 클래스입니다. 각 클래스는 공급자에서 COM 개체를 모방합니다. 합니다 `CCommand` 개체는 `CProvider` 템플릿 매개 변수로 헤더 파일에 선언 된 클래스입니다. `CProvider` 매개 변수는 공급자에서 데이터에 액세스 하는 데 사용할 수 있는 바인딩을 나타냅니다. 
 
 열려는 클래스의 각 줄은 공급자의 각 COM 개체를 만듭니다. 사용 하 여 공급자를 찾으려면는 `ProgID` 공급자입니다. 가져올 수 있습니다는 `ProgID` Custom.rgs 파일을 확인 하거나 시스템 레지스트리에서 (공급자의 디렉터리를 열고 검색할는 `ProgID` 키).
 
-MyData.txt 파일이 포함 된 `MyProv` 샘플입니다. 자신만의 파일을 만들려면 편집기를 사용 하 고 enter 키를 눌러 각 문자열 사이 문자열의 짝수를 입력 합니다. 파일을 이동 하는 경우 경로 이름을 변경 합니다.
+MyData.txt 파일이 포함 된 `MyProv` 샘플입니다. 파일을 직접 사용 하 여 편집기를 만들고 입력 문자열에서 키를 눌러 수가 짝수인 **Enter** 각 문자열 사이입니다. 파일을 이동 하는 경우 경로 이름을 변경 합니다.
 
 문자열에 전달 "c:\\\samples\\\myprov\\\MyData.txt"에 `table.Open` 줄. 경우에 `Open` 호출 표시 하려면이 문자열은 전달 하는 `SetCommandText` 공급자의 메서드. `ICommandText::Execute` 메서드는 문자열을 사용 합니다.
 
 데이터를 페치 하려면 호출 `MoveNext` 테이블에 있습니다. `MoveNext` 호출 된 `IRowset::GetNextRows`, `GetRowCount`, 및 `GetData` 함수입니다. 더 많은 행이 없는 경우 (즉, 행 집합의 현재 위치 보다 큽니다 `GetRowCount`), 루프가 종료 됩니다.
 
-```cpp
-while (table.MoveNext() == S_OK)
-{
-   m_ctlString1.AddString(table.szField1);
-   m_ctlString2.AddString(table.szField2);
-}
-```
-
-행이 더 이상 경우 공급자 반환 DB_S_ENDOFROWSET note 합니다. DB_S_ENDOFROWSET 값 오류가 아닙니다. 데이터 인출 루프를 취소 하지 SUCCEEDED 매크로 사용 하는 S_OK에 대해 항상 확인 해야 합니다.
+행이 더 이상 경우 공급자 DB_S_ENDOFROWSET를 반환 합니다. DB_S_ENDOFROWSET 값 오류가 아닙니다. 데이터 인출 루프를 취소 하지 SUCCEEDED 매크로 사용 하는 S_OK에 대해 항상 확인 해야 합니다.
 
 이제을 빌드 및 프로그램을 테스트할 수 있어야 합니다.
 

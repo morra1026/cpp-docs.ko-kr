@@ -6,18 +6,18 @@ helpviewer_keywords:
 - dynamic column binding
 - providers [C++], dynamic column binding
 ms.assetid: 45e811e3-f5a7-4627-98cc-bf817c4e556e
-ms.openlocfilehash: 5ceb3b21d59bef3dcbe9d5b53e6a9b779b8b381f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f681907360812f51b34b187ee0ece776816cc82
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509320"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51264608"
 ---
 # <a name="dynamically-binding-columns-in-your-provider"></a>공급자에서 열을 동적으로 바인딩
 
 동적 열 바인딩 실제로 필요한 지 확인 합니다. 때문에 해야 할 수 있습니다.
 
-- 행 집합 열에 컴파일 타임에 정의 되지 않습니다.
+- 행 집합 열에는 컴파일 시간에 정의 되지 않습니다.
 
 - 열을 추가 하는 책갈피와 같은 요소를 지원 합니다.
 
