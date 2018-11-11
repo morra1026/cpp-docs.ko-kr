@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IRowsetLocate class
 - OLE DB providers, bookmark support
 ms.assetid: 1b14ccff-4f76-462e-96ab-1aada815c377
-ms.openlocfilehash: 4a0a0ea51cf6ac347cd79cb777f9cb6a51670063
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 326a52805cb78a3f31141d3eac6a0942a7fee477
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584628"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51264725"
 ---
 # <a name="provider-support-for-bookmarks"></a>공급자의 책갈피 지원
 
@@ -60,7 +60,7 @@ END_COM_MAP()
 
 마지막으로 처리 된 `IColumnsInfo::GetColumnsInfo` 호출 합니다. 이렇게 하려면 일반적으로 PROVIDER_COLUMN_ENTRY 매크로 사용할 수 있습니다. 그러나 소비자 책갈피를 사용 하려고 합니다. 소비자는 책갈피를 요청 하는 여부에 따라 공급자를 반환 하는 열을 변경할 수 있어야 합니다.
 
-처리 하는 `IColumnsInfo::GetColumnsInfo` 호출을 삭제 합니다 `PROVIDER_COLUMN` 에 매핑합니다를 `CTextData` 클래스. 함수를 정의 하는 PROVIDER_COLUMN_MAP 매크로 `GetColumnInfo`합니다. 정의 해야 자신의 `GetColumnInfo` 함수입니다. 함수 선언은 다음과 같습니다.
+처리 하는 `IColumnsInfo::GetColumnsInfo` 호출에서 PROVIDER_COLUMN 맵을 삭제 합니다 `CTextData` 클래스입니다. 함수를 정의 하는 PROVIDER_COLUMN_MAP 매크로 `GetColumnInfo`합니다. 사용자가 정의할 `GetColumnInfo` 함수입니다. 함수 선언은 다음과 같습니다.
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -78,7 +78,7 @@ class CTextData
 };
 ```
 
-그런 다음 구현를 `GetColumnInfo` CustomRS.cpp 파일에서 다음과 같이 작동 합니다.
+그런 다음 구현 된 `GetColumnInfo` 함수는 *사용자 지정*RS.cpp 다음과 같이 파일:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////
@@ -119,7 +119,6 @@ ATLCOLUMNINFO* CommonGetColInfo(IUnknown* pPropsUnk, ULONG* pcCols)
                         DBCOLUMNFLAGS_ISBOOKMARK)
          ulCols++;
       }
-
    }
 
    // Next set the other columns up.
@@ -151,9 +150,9 @@ ATLCOLUMNINFO* CAgentMan::GetColumnInfo(RUpdateRowset* pThis, ULONG* pcCols)
 
 `GetColumnInfo` 속성을 호출 하는지 여부를 확인 하려면 첫 번째 검사 `DBPROP_IRowsetLocate` 설정 됩니다. OLE DB에 각각의 선택적 인터페이스 행 집합 개체에 대 한 속성이 있습니다. 소비자가 이러한 선택적 인터페이스 중 하나를 사용 하려는 경우에 속성이 true로 설정 합니다. 그런 다음 공급자를이 속성을 확인 하 고 기반으로 하는 특별 한 조치를 취할 수 있습니다.
 
-구현에서 명령 개체에 대 한 포인터를 사용 하 여 속성을 가져옵니다. `pThis` 포인터는 행 집합이 나 명령 클래스를 나타냅니다. 으로이 작업에 전달 해야 하는 템플릿을 사용 하므로 여기에 `void` 포인터 또는 코드는 컴파일되지 않습니다.
+구현에서 명령 개체에 대 한 포인터를 사용 하 여 속성을 가져옵니다. `pThis` 포인터는 행 집합이 나 명령 클래스를 나타냅니다. 으로이 작업에 전달 해야 하는 템플릿을 사용 하므로 여기에 **void** 포인터 또는 코드는 컴파일되지 않습니다.
 
-열 정보를 포함 하도록 정적 배열을 지정 합니다. 소비자는 책갈피 열을 원하지 않을 경우 배열의 항목 낭비 됩니다. 이 배열에 동적으로 할당할 수 있습니다 하지만을 제대로 삭제 되도록 해야 합니다. 이 예제에서는 정의 하 고 정보 배열에 삽입할 ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX 매크로 사용 합니다. 다음 코드 에서처럼 CustomRS.H 파일에 매크로 추가할 수 있습니다.
+열 정보를 보유할 정적 배열을 지정 합니다. 소비자는 책갈피 열을 표시 하려고 하지 않습니다, 배열의 항목 낭비 됩니다. 이 배열에 동적으로 할당할 수 있습니다 하지만을 제대로 삭제 되도록 해야 합니다. 이 예제에서는 정의 하 고 정보 배열에 삽입할 ADD_COLUMN_ENTRY 및 ADD_COLUMN_ENTRY_EX 매크로 사용 합니다. 매크로를 추가할 수 있습니다 합니다 *사용자 지정*RS 합니다. 다음 코드 에서처럼 H 파일:
 
 ```cpp
 ////////////////////////////////////////////////////////////////////////
@@ -236,9 +235,9 @@ HRESULT hr = table.Compare(table.dwBookmark, table.dwBookmark,
 }
 ```
 
-**하는 동안** 루프를 호출 하도록 코드를 포함 합니다 `Compare` 에서 메서드를 `IRowsetLocate` 인터페이스입니다. 정확히 동일한 책갈피를 비교 하기 때문에 항상 코드를 전달 해야 합니다. 또한 한 책갈피를 임시 변수에 저장 후 사용할 수 있도록 합니다 **하는 동안** 호출 완료 루프는 `MoveToBookmark` 소비자 템플릿에 함수. 합니다 `MoveToBookmark` 함수 호출을 `GetRowsAt` 에서 메서드 `IRowsetLocate`합니다.
+**하는 동안** 루프를 호출 하도록 코드를 포함 합니다 `Compare` 에서 메서드를 `IRowsetLocate` 인터페이스입니다. 정확히 동일한 책갈피를 비교 하는 때문에 항상 코드를 전달 해야 합니다. 또한 한 책갈피를 임시 변수에 저장 후 사용할 수 있도록 합니다 **하는 동안** 호출 완료 루프는 `MoveToBookmark` 소비자 템플릿에 함수. 합니다 `MoveToBookmark` 함수 호출을 `GetRowsAt` 에서 메서드 `IRowsetLocate`합니다.
 
-소비자에서 사용자 레코드를 업데이트 해야 합니다. 책갈피 및 항목을 처리 하는 클래스에 항목을 추가 합니다 `COLUMN_MAP`:
+소비자에서 사용자 레코드를 업데이트 해야 합니다. 책갈피 및 COLUMN_MAP에 항목을 처리 하는 클래스에 항목을 추가 합니다.
 
 ```cpp
 ///////////////////////////////////////////////////////////////////////
@@ -263,7 +262,7 @@ END_ACCESSOR_MAP()
 };
 ```
 
-빌드 및 사용 하 여 공급자를 실행할 수 있어야 코드를 업데이트 하는 경우는 `IRowsetLocate` 인터페이스입니다.
+빌드 및 사용 하 여 공급자를 실행할 수 있어야 코드를 업데이트 한 경우는 `IRowsetLocate` 인터페이스입니다.
 
 ## <a name="see-also"></a>참고 항목
 
