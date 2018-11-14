@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-ms.openlocfilehash: 2c4c9fecd8e3c8e638af96bc7d047e03a0f31bfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff339bc2b144e22d7177638424dd8e617eecfb3b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651323"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330621"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray 클래스
 
@@ -39,8 +39,12 @@ private ref class WriteOnlyArray<T, 1>
 
 |이름|설명|
 |----------|-----------------|
-
-|[Writeonlyarray:: Begin](#begin)| 배열의 첫 번째 요소를 가리키는 반복기입니다. | | [Writeonlyarray:: Data](#data)| 데이터 버퍼에 대 한 포인터입니다. | | [Writeonlyarray:: End](#end)| 배열의 마지막 요소 하나 다음을 가리키는 반복기입니다. | | [Writeonlyarray:: Fastpass](#fastpass)| 배열 되는 시스템에서 투명 하 게 수행 하는 최적화 인 FastPass 메커니즘을 사용할 수 있는지 여부를 나타냅니다. 코드에서이 사용 하지 않는 | | [Writeonlyarray:: Length](#length)| 배열의 요소 수를 반환 합니다. | | [Writeonlyarray:: Set](#set)| 지정된 된 값으로 지정된 된 요소를 설정 합니다. |
+|[Writeonlyarray:: Begin](#begin)|배열의 첫 번째 요소를 가리키는 반복기입니다.|
+|[Writeonlyarray:: Data](#data)|데이터 버퍼에 대한 포인터입니다.|
+|[Writeonlyarray:: End](#end)|배열의 마지막 요소를 지난 요소를 가리키는 반복기입니다.|
+|[Writeonlyarray:: Fastpass](#fastpass)|시스템에서 투명하게 수행되는 최적화인 FastPass 메커니즘을 배열이 사용할 수 있는지 여부를 나타냅니다. 이 메서드는 코드에 사용하지 마세요.|
+|[Writeonlyarray:: Length](#length)|배열의 요소 수를 반환합니다.|
+|[Writeonlyarray:: Set](#set)|지정한 요소를 지정한 값으로 설정합니다.|
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

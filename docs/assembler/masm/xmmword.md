@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - XMMWORD directive
 ms.assetid: 18026d32-5cab-403e-ad7e-382fb41aa9b8
-ms.openlocfilehash: a248c9318764cd632fed2afd8481ee2b2102fe31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59d1ba71260ed08b761c332e887cf27517762303
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479784"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326344"
 ---
 # <a name="xmmword"></a>XMMWORD
 
@@ -28,5 +28,5 @@ MMX와 SSE (XMM) 지침을 사용 하 여 128 비트 멀티미디어 피연산�
 ## <a name="example"></a>예제
 
 ```asm
-    movdqa   xmm0, xmmword ptr [ebx]
+    movdqa   xmm0, xmmword ptr [ebx]
 ```

@@ -34,12 +34,12 @@ helpviewer_keywords:
 - dates, handling in MFC
 - time, handling in MFC
 ms.assetid: e718f294-16ec-4649-88b6-a4dbae5178fb
-ms.openlocfilehash: 2f63535210110e699daedd39a0b5a5ac25fc53c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9791f1c59bb393f7de64ffb16ccb95e99928b04c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505900"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525342"
 ---
 # <a name="coledatetime-class"></a>COleDateTime 클래스
 
@@ -104,7 +104,7 @@ class COleDateTime
 
 `COleDateTime` 기본 클래스는 없습니다.
 
-가능한 형식 중 하나인 합니다 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) OLE 자동화의 데이터 형식입니다. `COleDateTime` 값 절대 날짜 및 시간 값을 나타냅니다.
+가능한 형식 중 하나인 합니다 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) OLE 자동화의 데이터 형식입니다. `COleDateTime` 값 절대 날짜 및 시간 값을 나타냅니다.
 
 `DATE` 형식이 부동 소수점 값으로 구현 됩니다. 일 자정 1899 년 12 월 30 일에서 측정 됩니다. 다음 표에서 일부 날짜 및 관련된 값을 보여 줍니다.
 
@@ -828,7 +828,7 @@ COleDateTime& operator=(const UDATE& udate) throw();
 
 - **operator = (** `dateSrc` **)** 피연산자의 상태 확인 하 고 값이 복사 됩니다 `COleDateTime` 개체입니다.
 
-- **연산자 = (** *varSrc* **)** 하는 경우 변환 된 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체)를 날짜/시간 (VT_ 날짜) 성공 하면 변환 된 값이 복사 됩니다 `COleDateTime` 개체 및 해당 상태에 잘못 설정 됩니다. 이 개체의 값을 0 (30 1899 년 12 월 자정)로 설정 되는 변환이 성공한 경우 및 해당 상태를 잘못 되었습니다.
+- **연산자 = (** *varSrc* **)** 하는 경우 변환 된 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체)를 날짜/시간 (VT_ 날짜) 성공 하면 변환 된 값이 복사 됩니다 `COleDateTime` 개체 및 해당 상태에 잘못 설정 됩니다. 이 개체의 값을 0 (30 1899 년 12 월 자정)로 설정 되는 변환이 성공한 경우 및 해당 상태를 잘못 되었습니다.
 
 - **operator = (** `dtSrc` **)** 는 `DATE` 값이 복사 됩니다 `COleDateTime` 개체 및 해당 상태에 잘못 설정 됩니다.
 
@@ -836,11 +836,11 @@ COleDateTime& operator=(const UDATE& udate) throw();
 
 - **operator = (** *systimeSrc* **)** 는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 값 변환 되 고이 복사 `COleDateTime` 개체입니다. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨.
 
-- **operator = (** `udate` **)** 는 `UDATE` 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨. `UDATE` 구조 "압축 푼된" 날짜를 나타냅니다. 함수를 참조 하십시오 [VarDateFromUdate](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) 대 한 자세한 내용은 합니다.
+- **operator = (** `udate` **)** 는 `UDATE` 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 실패 하면 설정 된 경우를 잘못 됨. `UDATE` 구조 "압축 푼된" 날짜를 나타냅니다. 함수를 참조 하십시오 [VarDateFromUdate](/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) 대 한 자세한 내용은 합니다.
 
 - **operator = (** `filetimeSrc` **)** 는 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 값이 변환 되 고이 복사 `COleDateTime` 개체. 변환이 성공한 경우이 개체의 상태를로 잘못 되었습니다. 그렇지 않으면 설정에 잘못 된 합니다. `FILETIME` UTC 시간 구조에 전달 하면 결과를 현지 시간에서 UTC 시간 변환 됩니다 하 고 변형 시간으로 저장 됩니다 협정 세계시 (UTC)를 사용 합니다. 이 동작은 Visual c + + 6.0 및 Visual c + +.NET 2003 SP2 동일 합니다. 참조 [파일 시간](/windows/desktop/SysInfo/file-times) 자세한 내용은 Windows SDK에 있습니다.
 
-자세한 내용은 참조는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
+자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
 
 대 한 자세한 내용은 합니다 `time_t` 참조 데이터 형식으로 [시간](../../c-runtime-library/reference/time-time32-time64.md) 함수를 *런타임 라이브러리 참조*합니다.
 
@@ -1083,7 +1083,7 @@ int SetDateTime(
 |*nMin*|0 - 59|
 |*nSec*|0 - 59|
 
-월의 날짜를 오버플로 하는 경우 올바른 일자 다음 월 및 월으로 변환 됩니다 및/또는 연도 그에 따라 증가 합니다. 일 값이 0 이면 이전 월의 마지막 날짜를 나타냅니다. 동작은 동일 [SystemTimeToVariantTime](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime)합니다.
+월의 날짜를 오버플로 하는 경우 올바른 일자 다음 월 및 월으로 변환 됩니다 및/또는 연도 그에 따라 증가 합니다. 일 값이 0 이면 이전 월의 마지막 날짜를 나타냅니다. 동작은 동일 [SystemTimeToVariantTime](/windows/desktop/api/oleauto/nf-oleauto-systemtimetovarianttime)합니다.
 
 매개 변수로 지정 된 날짜 또는 시간 값을 유효 하지 않은 경우,이 개체의 상태를 유효 하지 않으며이 개체의 값을로 변경 되지 않습니다.
 

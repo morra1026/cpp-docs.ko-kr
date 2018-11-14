@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows Forms [C++], hosting as MFC Dialog
 - hosting Windows Forms control [C++]
 ms.assetid: 0434a9d7-8b14-48e6-ad69-9ba9a684677a
-ms.openlocfilehash: 44123e3cbad3115dc990cd8dc9f1316994560656
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6b7b7b3d1cb5ed9f3cd2b3655b45aaac8d8d195
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580923"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524926"
 ---
 # <a name="hosting-a-windows-form-user-control-as-an-mfc-dialog-box"></a>Windows Form 사용자 정의 컨트롤을 MFC 대화 상자로 호스팅
 
@@ -68,7 +68,7 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
    그런 다음 MFC 응용 프로그램에서 Windows Forms에서 컨트롤의 상태를 모니터링 하는 코드를 추가 합니다.
 
-9. OnInitDialog에 대 한 처리기를 추가 합니다.
+1. OnInitDialog에 대 한 처리기를 추가 합니다.
 
    표시 된 **속성** 창 (F4). **클래스 뷰**에서 CHostForWinForm을 선택 합니다. 에 **속성** 창에서 선택 재정의 OnInitDialog에 대 한 행의 왼쪽 열에서 클릭 및 선택 \< 추가 >. 그러면 CHostForWinForm.h에 다음 줄 추가:
 
@@ -76,9 +76,9 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
     virtual BOOL OnInitDialog();
     ```
 
-10. 다음과 같이 CHostForWinForm.cpp에서 OnInitDialog를 정의 합니다.
+1. 다음과 같이 CHostForWinForm.cpp에서 OnInitDialog를 정의 합니다.
 
-    ```
+    ```cpp
     BOOL CHostForWinForm::OnInitDialog() {
        CWinFormsDialog<WindowsControlLibrary1::UserControl1>::OnInitDialog();
        GetControl()->button1->Click += MAKE_DELEGATE(System::EventHandler, OnButton1);
@@ -86,9 +86,9 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
     }
     ```
 
-11. 다음 OnButton1 처리기를 추가 합니다. CHostForWinForm.h에서 CHostForWinForm 클래스의 public 섹션에 다음 줄을 추가 합니다.
+1. 다음 OnButton1 처리기를 추가 합니다. CHostForWinForm.h에서 CHostForWinForm 클래스의 public 섹션에 다음 줄을 추가 합니다.
 
-    ```
+    ```cpp
     virtual void OnButton1( System::Object^ sender, System::EventArgs^ e );
 
     BEGIN_DELEGATE_MAP( CHostForWinForm )
@@ -98,41 +98,41 @@ MFC를 사용 하는 Windows Forms을 보여 주는 샘플 응용 프로그램�
 
    CHostForWinForm.cpp에이 정의 추가 합니다.
 
-    ```
+    ```cpp
     void CHostForWinForm::OnButton1( System::Object^ sender, System::EventArgs^ e )
     {
        System::Windows::Forms::MessageBox::Show("test");
     }
     ```
 
-12. 프로젝트를 빌드하고 실행합니다. Windows 폼에 있는 단추를 클릭 하면 MFC 응용 프로그램에서 코드가 실행 됩니다.
+1. 프로젝트를 빌드하고 실행합니다. Windows 폼에 있는 단추를 클릭 하면 MFC 응용 프로그램에서 코드가 실행 됩니다.
 
-   다음 Windows 폼에 텍스트 상자에 값을 MFC 코드에서 표시 하는 코드를 추가 합니다.
+    다음 Windows 폼에 텍스트 상자에 값을 MFC 코드에서 표시 하는 코드를 추가 합니다.
 
-13. CHostForWinForm.h에서 CHostForWinForm 클래스의 public 섹션에 다음 선언을 추가 합니다.
+1. CHostForWinForm.h에서 CHostForWinForm 클래스의 public 섹션에 다음 선언을 추가 합니다.
 
-    ```
+    ```cpp
     CString m_sEditBoxOnWinForm;
     ```
 
-14. CHostForWinForm.cpp의 dodataexchange 정의에서 함수의 끝에 다음 세 줄을 추가 합니다.
+1. CHostForWinForm.cpp의 dodataexchange 정의에서 함수의 끝에 다음 세 줄을 추가 합니다.
 
-    ```
+    ```cpp
     if (pDX->m_bSaveAndValidate)
        m_sEditBoxOnWinForm = CString( GetControl()->textBox1->Text);
     else
        GetControl()->textBox1->Text = gcnew System::String(m_sEditBoxOnWinForm);
     ```
 
-15. CHostForWinForm.cpp의 onbutton1 정의에서 함수의 끝에 다음 세 줄을 추가 합니다.
+1. CHostForWinForm.cpp의 onbutton1 정의에서 함수의 끝에 다음 세 줄을 추가 합니다.
 
-    ```
+    ```cpp
     this->UpdateData(TRUE);
     System::String ^ z = gcnew System::String(m_sEditBoxOnWinForm);
     System::Windows::Forms::MessageBox::Show(z);
     ```
 
-16. 프로젝트를 빌드하고 실행합니다.
+1. 프로젝트를 빌드하고 실행합니다.
 
 ## <a name="see-also"></a>참고 항목
 

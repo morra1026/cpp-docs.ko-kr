@@ -22,16 +22,16 @@ helpviewer_keywords:
 - m_strCommandText
 - SetCommandText method
 ms.assetid: 9c2715cc-1e55-4468-8327-85341617ed46
-ms.openlocfilehash: fafd1198776c558ff39ef35c0b7beca538e976ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d05af932d5f531a4dab02e7e0ca171f4484891a3
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677697"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556324"
 ---
 # <a name="icommandtextimpl-class"></a>ICommandTextImpl 클래스
 
-에 대 한 구현을 제공 합니다 [ICommandText](/previous-versions/windows/desktop/ms714914) 인터페이스입니다.
+에 대 한 구현을 제공 합니다 [ICommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms714914(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -76,13 +76,13 @@ class ATL_NO_VTABLE ICommandTextImpl
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(GetCommandText)(GUID * pguidDialect, 
+STDMETHOD(GetCommandText)(GUID * pguidDialect,
    LPOLESTR * ppwszCommand);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) 에 *OLE DB Programmer's Reference*합니다. 합니다 *pguidDialect* 기본적으로 매개 변수가 무시 됩니다.
+참조 [ICommandText::GetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *pguidDialect* 기본적으로 매개 변수가 무시 됩니다.
 
 ## <a name="setcommandtext"></a> Icommandtextimpl:: Setcommandtext
 
@@ -91,13 +91,13 @@ STDMETHOD(GetCommandText)(GUID * pguidDialect, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(SetCommandText)(REFGUID rguidDialect, 
+STDMETHOD(SetCommandText)(REFGUID rguidDialect,
    LPCOLESTR pwszCommand);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709757) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandtext:: Setcommandtext](https://docs.microsoft.com/previous-versions/windows/desktop/ms709757(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="strcommandtext"></a> Icommandtextimpl:: M_strcommandtext
 

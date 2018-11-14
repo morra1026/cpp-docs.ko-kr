@@ -86,12 +86,12 @@ helpviewer_keywords:
 - stdext::hash_set::upper_bound
 - stdext::hash_set::value_comp
 ms.assetid: c765c06e-cbb6-48c2-93ca-d15468eb28d7
-ms.openlocfilehash: 12f177887552cb14edba6ae8cfeeab1abe24a45b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0668342468e30733f8257ccd2682bfe785551857
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657511"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333604"
 ---
 # <a name="hashset-class"></a>hash_set 클래스
 
@@ -565,7 +565,7 @@ hash_set에 일치하는 키가 있는 요소가 포함되지 않은 경우 0입
 
 멤버 함수가 다음 범위에 있는 요소의 수를 반환합니다.
 
-[ **lower_bound** (_ *Key* ), **upper_bound** (\_ *Key* ) ).
+\[ lower_bound (*키*), upper_bound (*키*)).
 
 ### <a name="example"></a>예제
 
@@ -1532,9 +1532,9 @@ key_compare key_comp() const;
 
 ### <a name="remarks"></a>설명
 
-저장된 개체는 멤버 함수
+저장된 개체는 구성원 함수
 
-**bool operator**( **const Key&** _ *xVal*, **const Key&** \_ `yVal`);를
+`bool operator( const Key& _xVal, const Key& _yVal );`
 
 정의합니다. 이 함수는 `_xVal`이 앞에 오며 정렬 순서가 `_yVal`과 같지 않으면 **true**를 반환합니다.
 
@@ -2294,9 +2294,9 @@ value_compare value_comp() const;
 
 ### <a name="remarks"></a>설명
 
-저장된 개체는 멤버 함수
+저장된 개체는 구성원 함수
 
-**bool operator**( **const Key&** _ *xVal*, **const Key&** \_ `yVal`);를
+`bool operator( const Key& _xVal, const Key& _yVal );`
 
 정의합니다. 이 함수는 `_xVal`이 앞에 오며 정렬 순서가 `_yVal`과 같지 않으면 **true**를 반환합니다.
 

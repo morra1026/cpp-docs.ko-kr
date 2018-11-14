@@ -50,12 +50,12 @@ helpviewer_keywords:
 - std::skipws [C++]
 - std::unitbuf [C++]
 - std::uppercase [C++]
-ms.openlocfilehash: bf22c0e4775ef93b1965a7c9d61f024441bea821
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18f42f8e5bcd69872e4300d154eb72f489015e36
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509684"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519687"
 ---
 # <a name="ltiosgt-functions"></a>&lt;ios&gt; 함수
 
@@ -213,7 +213,7 @@ _ *Str*이 파생되는 개체에 대한 참조입니다.
 
 `fixed` 부동 소수점 숫자에 대 한 기본 표시 표기법입니다. [scientific](../standard-library/ios-functions.md#scientific)은 과학적 표기법을 사용하여 부동 소수점 숫자를 표시하도록 합니다.
 
-조작자 * str.*[setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`합니다 `ios_base::floatfield`)를 반환 합니다 *str*합니다.
+조작자 *str*.[ setf](../standard-library/ios-base-class.md#setf)( `ios_base::fixed`를 `ios_base::floatfield` )를 반환 합니다 *str*합니다.
 
 ### <a name="example"></a>예제
 
@@ -872,15 +872,13 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 1 2 3
-
 ```
 
 ```Output
-
-      1 2 3.1.
+Enter three characters: 1 2 3
+.1.
 .2.
 .3.
 ```

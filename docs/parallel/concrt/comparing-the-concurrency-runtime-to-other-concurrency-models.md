@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, compared to other models
 ms.assetid: d8b9a1f4-f15f-43c3-a5b4-c0991edf9c86
-ms.openlocfilehash: 0b5c24761f176d9c256c1ef6aee85b25231cea2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82e1dca1345b909919320b911c4c107e965c9850
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655847"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332675"
 ---
 # <a name="comparing-the-concurrency-runtime-to-other-concurrency-models"></a>동시성 런타임과 기타 동시성 모델 비교
 
@@ -33,7 +33,7 @@ ms.locfileid: "50655847"
 
 ### <a name="preemptive-and-cooperative-scheduling"></a>선점형 일정 및 협조적 일정
 
-*선점형 일정* 은 지정된 시간 동안 모든 작업에 번갈아가며 컴퓨팅 리소스에 대한 독점적 액세스를 제공하는 우선 순위 기반의 라운드 로빈 메커니즘입니다. 선점형 일정은 Windows와 같은 멀티태스킹 운영 체제에서 일반적입니다 *. 협조적 일정*은 작업이 완료될 때까지 또는 작업이 액세스를 다른 리소스에 양보할 때까지 모든 작업에 컴퓨팅 리소스에 대한 독점적 액세스를 제공하는 메커니즘입니다. 동시성 런타임은 처리 리소스를 최대한 사용하기 위해 협조적 일정을 운영 체제의 선점형 스케줄러와 함께 사용합니다.
+*선점형 일정* 은 지정된 시간 동안 모든 작업에 번갈아가며 컴퓨팅 리소스에 대한 독점적 액세스를 제공하는 우선 순위 기반의 라운드 로빈 메커니즘입니다. 선점형 일정은 Windows와 같은 멀티태스킹 운영 체제에서 일반적입니다. *협조적 일정* 작업 리소스에 대 한 액세스를 생성 하거나 작업이 완료 될 때까지 컴퓨팅 리소스에 대 한 배타적 액세스 권한을 모든 작업을 제공 하는 메커니즘입니다. 동시성 런타임은 처리 리소스를 최대한 사용하기 위해 협조적 일정을 운영 체제의 선점형 스케줄러와 함께 사용합니다.
 
 ### <a name="differences-between-preemptive-and-cooperative-schedulers"></a>선점형 스케줄러와 협조적 스케줄러의 차이점
 

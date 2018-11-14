@@ -25,12 +25,12 @@ helpviewer_keywords:
 - sorting arrays
 - arrays [CRT], sorting
 ms.assetid: d6cb33eb-d209-485f-8d41-229eb743c027
-ms.openlocfilehash: e912a7a53619e9347cf2c0cd40adf0f9162b314b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd2fc9cd789b02f1fa1e0b9969b597aa51aceedd
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618493"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327553"
 ---
 # <a name="qsort"></a>qsort
 
@@ -41,7 +41,7 @@ ms.locfileid: "50618493"
 ```C
 void qsort(
    void *base,
-   size_t num,
+   size_t number,
    size_t width,
    int (__cdecl *compare )(const void *, const void *)
 );
@@ -49,7 +49,7 @@ void qsort(
 
 ### <a name="parameters"></a>매개 변수
 
-<br/>
+*base*<br/>
 대상 배열의 시작 부분입니다.
 
 *수*<br/>
@@ -68,7 +68,7 @@ void qsort(
 **qsort** 호출을 *비교* 일상적인 하나 이상의 정렬 하는 동안 시간 및 각 호출에서 두 배열 요소에 대 한 포인터를 전달 합니다.
 
 ```C
-compare( (void *) & elem1, (void *) & elem2 );
+compare( (void *) & elem1, (void *) & elem2 );
 ```
 
 루틴은 요소를 비교한 후에 다음 값 중 하나를 반환합니다.
@@ -81,7 +81,7 @@ compare( (void *) & elem1, (void *) & elem2 );
 
 비교 함수에 정의된 대로 배열은 오름차순으로 정렬됩니다. 배열을 내림차순으로 정렬하려면 비교 함수에서 "보다 큼"과 "보다 작음"의 의미를 반전하면 됩니다.
 
-이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *비교* 또는 *번호* 는 **NULL**, 이거나 *기본* 은 **NULL** 및 **수* 이 값은 0 이거나 *너비* 작으면 0 보다는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
+이 함수는 해당 매개 변수의 유효성을 검사합니다. 경우 *비교* 또는 *번호* 는 **NULL**, 이거나 *기본* 은 **NULL** 및 *수* 이 값은 0 이거나 *너비* 작으면 0 보다는 잘못 된 매개 변수 처리기가 호출에 설명 된 대로 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 함수 반환 하 고 **errno** 로 설정 된 **EINVAL**합니다.
 
 ## <a name="requirements"></a>요구 사항
 

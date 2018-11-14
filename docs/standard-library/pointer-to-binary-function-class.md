@@ -7,12 +7,12 @@ helpviewer_keywords:
 - pointer_to_binary_function function
 - pointer_to_binary_function class
 ms.assetid: fb50599f-bcb3-4076-a669-6dcc3eb189a5
-ms.openlocfilehash: 42e57c9fd5dafb60a866b24a7a5b8496643d1c76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd96aa1bf7f1f19b84e2e83e3ab5b33c4a0c5bfc
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487089"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332103"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function 클래스
 
@@ -45,7 +45,7 @@ public:
 
 ## <a name="return-value"></a>반환 값
 
-복사본을 저장 하는 템플릿 클래스 `pfunc`합니다. 그리고 해당 구성원 함수 `operator()`가 (\* **pfunc**)(_ *Left*, \_ *Right*)를 반환하는 것으로 정의합니다.
+복사본을 저장 하는 템플릿 클래스 `pfunc`합니다. 해당 멤버 함수 정의 `operator()` 반환 `(* pfunc)(Left, right)`합니다.
 
 ## <a name="remarks"></a>설명
 

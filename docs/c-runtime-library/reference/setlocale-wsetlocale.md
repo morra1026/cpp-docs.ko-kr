@@ -30,12 +30,12 @@ helpviewer_keywords:
 - defining locales
 - _wsetlocale function
 ms.assetid: 3ffb684e-5990-4202-9553-b5339af9520d
-ms.openlocfilehash: 0f2c0478ba5898ab369a04362734891f6d45cf42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c9f44e9619b9c34c9424e0be78186d14f2d6a21
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548540"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327137"
 ---
 # <a name="setlocale-wsetlocale"></a>setlocale, _wsetlocale
 
@@ -96,12 +96,12 @@ en-US
 
 |*범주* 플래그|미치는 영향|
 |-|-|
-**LC_ALL**|아래에 나열된 모든 범주입니다.
-**LC_COLLATE**|합니다 **strcoll**, **_stricoll**를 **wcscoll**를 **_wcsicoll**를 **strxfrm**, **_ strncoll**, **_strnicoll**를 **_wcsncoll**를 **_wcsnicoll**, 및 **wcsxfrm** 함수입니다.
-**LC_CTYPE**|문자 처리 함수 (제외한 **isdigit**, **isxdigit**를 **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다).
-**LC_MONETARY**|반환 되는 통화 서식 정보를 **localeconv** 함수입니다.
-**LC_NUMERIC**|소수점 문자 형식이 지정 된 출력 루틴 (같은 **printf**), 데이터 변환 루틴 및 반환 하는 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 제어에서 반환 된 문자열 집합 1000 단위 구분 기호 및 그룹화 [localeconv](localeconv.md)합니다.
-**LC_TIME**|합니다 **strftime** 하 고 **wcsftime** 함수입니다.
+| **LC_ALL** | 아래에 나열된 모든 범주입니다. |
+| **LC_COLLATE** | 합니다 **strcoll**, **_stricoll**를 **wcscoll**를 **_wcsicoll**를 **strxfrm**, **_ strncoll**, **_strnicoll**를 **_wcsncoll**를 **_wcsnicoll**, 및 **wcsxfrm** 함수입니다. |
+| **LC_CTYPE** | 문자 처리 함수 (제외한 **isdigit**, **isxdigit**를 **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다). |
+| **LC_MONETARY** | 반환 되는 통화 서식 정보를 **localeconv** 함수입니다. |
+| **LC_NUMERIC** | 소수점 문자 형식이 지정 된 출력 루틴 (같은 **printf**), 데이터 변환 루틴 및 반환 하는 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 제어에서 반환 된 문자열 집합 1000 단위 구분 기호 및 그룹화 [localeconv](localeconv.md)합니다. |
+| **LC_TIME** | 합니다 **strftime** 하 고 **wcsftime** 함수입니다. |
 
 이 함수는 범주 매개 변수의 유효성을 검사합니다. 범주 매개 변수가 이전 표에 지정된 값 중 하나가 아닌 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다. 함수를 설정 하는 경우는 계속 실행 하도록 허용 합니다 **errno** 하 **EINVAL** 반환 **NULL**합니다.
 

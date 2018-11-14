@@ -2,12 +2,12 @@
 title: 2.7.2.8 copyprivate
 ms.date: 11/04/2016
 ms.assetid: c382348c-c785-45b2-8ee6-a66b76b97f3e
-ms.openlocfilehash: d4df1b4216014d3cd15be1480d2f83334fddb72d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f46b8ae1d42083c770bbc84c46d13b02d5227498
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622913"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521858"
 ---
 # <a name="2728-copyprivate"></a>2.7.2.8 copyprivate
 
@@ -20,7 +20,6 @@ ms.locfileid: "50622913"
 copyprivate(
 variable-list
 )
-
 ```
 
 미치는 **copyprivate** 해당 변수 목록에서 변수에서 절을 연관 구조화 된 블록으로 실행 된 후 발생 합니다 **단일** 생성, 앞에 있는 스레드 중 하나는 팀이 해당 구문의 끝 장벽을 남았습니다. 그런 다음, 각 변수에 대 한 팀의 다른 모든 스레드는 *변수 목록*, 해당 변수가 정의한 (처럼 할당) 해당 값을 사용 하 여 구조적 구문을 실행 하는 스레드에서 변수 블록입니다.

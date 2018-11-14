@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK4221
 ms.assetid: 8e2eb2de-9532-4b85-908a-8c9ff5c4cccb
-ms.openlocfilehash: b44ba8f0b88beda3e81d9baf59e5348ad4949b01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baea8643001c550aeb3cb35dc6fe414e4330c0c1
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460972"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523470"
 ---
 # <a name="linker-tools-warning-lnk4221"></a>링커 도구 경고 LNK4221
 
@@ -31,7 +31,6 @@ int function()
 {
    return 0;
 }
-
 ```
 
 실행을 파일을 컴파일 및 두 개의 개체 파일을 만듭니다 **cl /c a.cpp b.cpp** 명령 프롬프트에서. 개체 파일을 실행 하 여 연결 하면 **연결/lib /out:test.lib a.obj b.obj**, LNK4221 경고를 받게 됩니다. 실행 하 여 개체를 링크 하는 경우 **연결/lib /out:test.lib b.obj a.obj**, 경고가 표시 되지 것입니다.

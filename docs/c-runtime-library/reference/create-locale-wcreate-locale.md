@@ -28,12 +28,12 @@ helpviewer_keywords:
 - create_locale function
 - __create_locale function
 ms.assetid: ca362464-9f4a-4ec6-ab03-316c55c5be81
-ms.openlocfilehash: 0ede14d56dc093b83078bf28eb01f5b5c55d8949
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 109a1d93692d0c65269b40fd0559381907ce1cab
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545927"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326565"
 ---
 # <a name="createlocale-wcreatelocale"></a>_create_locale, _wcreate_locale
 
@@ -70,16 +70,16 @@ _locale_t _wcreate_locale(
 
 **_wcreate_locale** 의 와이드 문자 버전이 **_create_locale**; *로캘* 인수 **_wcreate_locale** 는 와이드 문자 문자열입니다. **_wcreate_locale** 하 고 **_create_locale** 동일 하 게 작동 합니다.
 
-합니다 *범주* 인수 영향을 받는 로캘별 동작의 일부를 지정 합니다. 에 사용 되는 플래그 *범주* 영향을 주는 프로그램의 일부는 다음 표에 나와 있는 것 처럼 및 합니다.
+합니다 *범주* 인수 영향을 받는 로캘별 동작의 일부를 지정 합니다. 에 사용 되는 플래그 *범주* 이 테이블에 표시 된 대로 영향을 주는 프로그램의 일부 이며:
 
-|*범주* 플래그|미치는 영향|
-|-|-|
-**LC_ALL**|아래에 나열된 모든 범주입니다.
-**LC_COLLATE**|합니다 **strcoll**, **_stricoll**를 **wcscoll**를 **_wcsicoll**를 **strxfrm**, **_ strncoll**, **_strnicoll**를 **_wcsncoll**를 **_wcsnicoll**, 및 **wcsxfrm** 함수입니다.
-**LC_CTYPE**|문자 처리 함수 (제외한 **isdigit**, **isxdigit**를 **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다).
-**LC_MONETARY**|반환 되는 통화 서식 정보를 **localeconv** 함수입니다.
-**LC_NUMERIC**|소수점 문자 형식이 지정 된 출력 루틴 (같은 **printf**), 데이터 변환 루틴 및 반환 하는 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 제어에서 반환 된 문자열 집합 1000 단위 구분 기호 및 그룹화 [localeconv](localeconv.md)합니다.
-**LC_TIME**|합니다 **strftime** 하 고 **wcsftime** 함수입니다.
+| *범주* 플래그 | 미치는 영향 |
+|-----------------|---------|
+| **LC_ALL** |아래에 나열된 모든 범주입니다. |
+| **LC_COLLATE** |합니다 **strcoll**, **_stricoll**를 **wcscoll**를 **_wcsicoll**를 **strxfrm**, **_ strncoll**, **_strnicoll**를 **_wcsncoll**를 **_wcsnicoll**, 및 **wcsxfrm** 함수입니다. |
+| **LC_CTYPE** | 문자 처리 함수 (제외한 **isdigit**, **isxdigit**를 **mbstowcs**, 및 **mbtowc**, 영향을 받지 않습니다). |
+| **LC_MONETARY** | 반환 되는 통화 서식 정보를 **localeconv** 함수입니다. |
+| **LC_NUMERIC** | 소수점 문자 형식이 지정 된 출력 루틴 (같은 **printf**), 데이터 변환 루틴 및 반환 하는 비 통화 서식 지정 정보에 대 한 **localeconv**합니다. 소수점 문자 이외에 **LC_NUMERIC** 제어에서 반환 된 문자열 집합 1000 단위 구분 기호 및 그룹화 [localeconv](localeconv.md)합니다. |
+| **LC_TIME** | 합니다 **strftime** 하 고 **wcsftime** 함수입니다. |
 
 이 함수는 유효성을 검사 합니다 *범주* 하 고 *로캘* 매개 변수입니다. 범주 매개 변수가 이전 표에 지정 된 값 중 하나가 아닌 경우 또는 경우 *로캘* 됩니다 **NULL**를 반환 **NULL**합니다.
 

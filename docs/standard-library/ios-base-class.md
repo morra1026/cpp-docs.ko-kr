@@ -108,12 +108,12 @@ helpviewer_keywords:
 - std::ios_base [C++], width
 - std::ios_base [C++], xalloc
 ms.assetid: 0f9e0abc-f70f-49bc-aa1f-003859f56cfe
-ms.openlocfilehash: 3c9b1081a7e2ccd45c64c1cbcd833dcda9470f7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8911c3763e6a0c861c162611e1b2617ec26f0cf9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648671"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333360"
 ---
 # <a name="iosbase-class"></a>ios_base 클래스
 
@@ -914,7 +914,7 @@ fmtflags setf(
 
 ### <a name="remarks"></a>설명
 
-첫 번째 멤버 함수는 효과적으로 호출한 [플래그](#flags)(_ *마스크* &#124; \_ *플래그*) (선택한 비트 설정 됨) 한 다음 이전 서식 플래그를 반환 합니다. 두 번째 멤버 함수는 효과적으로 호출한 **플래그**(\_ *마스크* **& fmtfl, 플래그 & ~**`_Mask`) (선택 된 비트 마스크에서 바꾸기) 이전 서식 플래그를 반환 합니다.
+첫 번째 멤버 함수는 효과적으로 호출한 [플래그](#flags)(  *\_마스크* &#124;  *\_플래그*) (선택한 비트 설정 됨) 한 다음 반환 합니다 이전 서식 플래그입니다. 두 번째 멤버 함수는 효과적으로 호출한 `flags(_Mask & fmtfl, flags & ~_Mask)` (선택한 비트 마스크에서 바꾸기) 한 다음 이전 서식 플래그를 반환 합니다.
 
 ### <a name="example"></a>예제
 

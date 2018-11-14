@@ -108,12 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: 9509b122e271ac22529c1b8a7b8e8d0b4b50025b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91cf9b2035bf24c16007ed6021772c7d5344fc68
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641105"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333269"
 ---
 # <a name="ccombobox-class"></a>CComboBox 클래스
 
@@ -208,7 +208,7 @@ class CComboBox : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**ON_** 알림을 **(**`id`**하십시오**`memberFxn`**)**
+**ON\_**_알림_ **(** _id_하십시오 _memberFxn_ **)**
 
 여기서 `id` 알림을 전송 하는 콤보 상자 컨트롤의 자식 창 ID를 지정 하 고 `memberFxn` 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 

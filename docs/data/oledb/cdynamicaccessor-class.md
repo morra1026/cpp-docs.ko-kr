@@ -127,12 +127,12 @@ helpviewer_keywords:
 - SetStatus method
 - SetValue method
 ms.assetid: 374b13b7-1f09-457d-9e6b-df260ff4d178
-ms.openlocfilehash: ba456f11973a33eb3b65b8de940e5be76b821f89
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12953da220016c7f66e9a2f01b4b8860d2e508b8
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461478"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557026"
 ---
 # <a name="cdynamicaccessor-class"></a>CDynamicAccessor 클래스
 
@@ -156,7 +156,7 @@ class CDynamicAccessor : public CAccessorBase
 |-|-|
 |[AddBindEntry](#addbindentry)|기본 접근자를 재정의할 때 바인딩 항목을 출력 열에 추가 합니다.|
 |[CDynamicAccessor](#cdynamicaccessor)|인스턴스화하고 초기화는 `CDynamicAccessor` 개체입니다.|
-|[닫기](#close)|모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672) 클래스에 대 한 인터페이스 포인터입니다.|
+|[닫기](#close)|모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](https://docs.microsoft.com/previous-versions/windows/desktop/ms719672(v=vs.85)) 클래스에 대 한 인터페이스 포인터입니다.|
 |[GetBlobHandling](#getblobhandling)|BLOB 처리 현재 행에 대 한 값을 검색 합니다.|
 |[GetBlobSizeLimit](#getblobsizelimit)|최대 BLOB 크기 (바이트) 검색합니다.|
 |[GetBookmark](#getbookmark)|현재 행에 대 한 책갈피를 검색 합니다.|
@@ -196,7 +196,7 @@ HRESULT AddBindEntry(const DBCOLUMNINFO& info) throw();
 #### <a name="parameters"></a>매개 변수
 
 *정보*<br/>
-[in] `DBCOLUMNINFO` 열 정보가 포함 된 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.
+[in] `DBCOLUMNINFO` 열 정보가 포함 된 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -233,7 +233,7 @@ Binary large object (BLOB) 데이터 처리 방법을 지정 합니다. 기본�
 
 ## <a name="close"></a> Cdynamicaccessor:: Close
 
-모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672) 클래스에 대 한 인터페이스 포인터입니다.
+모든 열을 바인딩 해제, 할당된 된 메모리를 해제 하 고 해제 합니다 [IAccessor](https://docs.microsoft.com/previous-versions/windows/desktop/ms719672(v=vs.85)) 클래스에 대 한 인터페이스 포인터입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -313,7 +313,7 @@ DBORDINAL GetColumnCount() const throw();
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool GetColumnFlags(DBORDINAL nColumn, 
+bool GetColumnFlags(DBORDINAL nColumn,
    DBCOLUMNFLAGS* pFlags) const throw();
 ```
 
@@ -323,7 +323,7 @@ bool GetColumnFlags(DBORDINAL nColumn, 
 [in] 열 번호입니다. 열 번호는 1부터 시작 합니다. 값이 0 있으면 책갈피 열을 참조 합니다.
 
 *pFlags*<br/>
-[out] 열 특징을 설명 하는 비트 마스크에 대 한 포인터입니다. "DBCOLUMNFLAGS 열거 형식"을 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.
+[out] 열 특징을 설명 하는 비트 마스크에 대 한 포인터입니다. "DBCOLUMNFLAGS 열거 형식"을 참조 하세요 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -340,22 +340,22 @@ bool GetColumnFlags(DBORDINAL nColumn, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetColumnInfo(IRowset* pRowset, 
-   DBORDINAL* pColumns, 
-   DBCOLUMNINFO** ppColumnInfo, 
+HRESULT GetColumnInfo(IRowset* pRowset,
+   DBORDINAL* pColumns,
+   DBCOLUMNINFO** ppColumnInfo,
    OLECHAR** ppStringsBuffer) throw();
 ```
 
 #### <a name="parameters"></a>매개 변수
 
 *pRowset*<br/>
-[in] 에 대 한 포인터를 [IRowset](/previous-versions/windows/desktop/ms720986) 인터페이스입니다.
+[in] 에 대 한 포인터를 [IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) 인터페이스입니다.
 
 *pColumns*<br/>
 [out] 행 집합의 열 개수를 반환할 메모리에 대 한 포인터 있는 경우이 숫자는 책갈피 열을 포함 합니다.
 
 *ppColumnInfo*<br/>
-[out] 배열을 반환할 메모리에 대 한 포인터 `DBCOLUMNINFO` 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.
+[out] 배열을 반환할 메모리에 대 한 포인터 `DBCOLUMNINFO` 구조입니다. "DBCOLUMNINFO 구조"를 참조 하세요 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *ppStringsBuffer*<br/>
 [out] 모든 문자열 값에 대 한 저장소에 대 한 포인터를 반환할 메모리에 대 한 포인터 (이름 내에서 사용할 *columnid* 용인지 *pwszName*) 단일 할당 블록 내에서.
@@ -366,7 +366,7 @@ HRESULT 값 중 하나입니다.
 
 ### <a name="remarks"></a>설명
 
-참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference* 데이터 형식에 대 한 내용은 `DBORDINAL`를 `DBCOLUMNINFO`, 및 `OLECHAR`합니다.
+참조 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference* 데이터 형식에 대 한 내용은 `DBORDINAL`를 `DBCOLUMNINFO`, 및 `OLECHAR`합니다.
 
 ## <a name="getcolumnname"></a> Cdynamicaccessor:: Getcolumnname
 
@@ -394,7 +394,7 @@ LPOLESTR GetColumnName(DBORDINAL nColumn) const throw();
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool GetColumnType(DBORDINAL nColumn, 
+bool GetColumnType(DBORDINAL nColumn,
    DBTYPE* pType) const throw();
 ```
 
@@ -417,13 +417,13 @@ bool GetColumnType(DBORDINAL nColumn, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool GetLength(DBORDINAL nColumn, 
+bool GetLength(DBORDINAL nColumn,
    DBLENGTH* pLength) const throw();
 
-bool GetLength(const CHAR* pColumnName, 
+bool GetLength(const CHAR* pColumnName,
    DBLENGTH* pLength) const throw();
 
-bool GetLength(const WCHAR* pColumnName, 
+bool GetLength(const WCHAR* pColumnName,
    DBLENGTH* pLength) const throw();
 ```
 
@@ -479,7 +479,7 @@ bool GetOrdinal(const WCHAR* pColumnName,
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool GetStatus(DBORDINAL nColumn, 
+bool GetStatus(DBORDINAL nColumn,
    DBSTATUS* pStatus) const throw();
 
 bool GetStatus(const CHAR* pColumnName,
@@ -498,7 +498,7 @@ bool GetStatus(const WCHAR* pColumnName,
 [in] 열 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
 *pStatus*<br/>
-[out] 열 상태가 들어 있는 변수에 대 한 포인터입니다. 참조 [DBSTATUS](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+[out] 열 상태가 들어 있는 변수에 대 한 포인터입니다. 참조 [DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -608,13 +608,13 @@ Constructor 메서드 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool SetLength(DBORDINAL nColumn, 
+bool SetLength(DBORDINAL nColumn,
    DBLENGTH nLength)throw();
 
-bool SetLength(const CHAR* pColumnName, 
+bool SetLength(const CHAR* pColumnName,
    DBLENGTH nLength) throw();
 
-bool SetLength(const WCHAR* pColumnName, 
+bool SetLength(const WCHAR* pColumnName,
    DBLENGTH nLength) throw();
 ```
 
@@ -640,13 +640,13 @@ bool SetLength(const WCHAR* pColumnName, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool SetStatus(DBORDINAL nColumn, 
+bool SetStatus(DBORDINAL nColumn,
    DBSTATUS status)throw();
 
-bool SetStatus(const CHAR* pColumnName, 
+bool SetStatus(const CHAR* pColumnName,
    DBSTATUS status) throw();
 
-bool SetStatus(const WCHAR* pColumnName, 
+bool SetStatus(const WCHAR* pColumnName,
    DBSTATUS status) throw();
 ```
 
@@ -656,7 +656,7 @@ bool SetStatus(const WCHAR* pColumnName, 
 [in] 열 번호입니다. 열 번호는 1부터 시작 합니다. 값이 0 있으면 책갈피 열을 참조 합니다.
 
 *status*<br/>
-[in] 열 상태입니다. 참조 [DBSTATUS](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+[in] 열 상태입니다. 참조 [DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 *pColumnName*<br/>
 [in] 열 이름을 포함 하는 문자열에 대 한 포인터입니다.
@@ -673,16 +673,16 @@ bool SetStatus(const WCHAR* pColumnName, 
 
 ```cpp
 template <class ctype>
-bool SetValue( 
-   DBORDINAL nColumn, 
+bool SetValue(
+   DBORDINAL nColumn,
    constctype& data) throw( );
 
-template <class ctype>  
-bool SetValue( 
-   const CHAR * pColumnName, 
+template <class ctype> 
+bool SetValue(
+   const CHAR * pColumnName,
    const ctype& data) throw( );
 
-template <class ctype> 
+template <class ctype>
 bool SetValue(
    const WCHAR *pColumnName,
    const ctype& data) throw( );

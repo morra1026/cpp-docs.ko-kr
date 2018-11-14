@@ -20,12 +20,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: a6677d5d265b2de9f94160dae6afaedfb3c8b89f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a900a472a3783bde66584b64e361d80c606f0e9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644329"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524562"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 
@@ -657,7 +657,7 @@ BFF928E0: WINDOWS\SYSTEM\KERNEL32.DLL! UTUnRegister + 2492 bytes
 - IMAGEHLP 파일입니다. DLL 경로에 있어야 합니다. 이 DLL이 없으면 함수는 오류 메시지가 표시 됩니다. 참조 [이미지 도움말 라이브러리](/windows/desktop/Debug/image-help-library) IMAGEHLP에서 제공 하는 함수 집합에 대 한 정보에 대 한 합니다.
 
 - 스택 프레임에 있는 모듈 디버깅 정보를 포함 해야 합니다. 디버깅 정보를 포함 하지 않습니다 하는 경우 상태는 함수에서 스택 추적을 생성 하지만 추적 덜 자세하게 표시 됩니다.
-### <a name="requirements"></a>요구 사항
+  ### <a name="requirements"></a>요구 사항
 
 **헤더:** afx.h
 

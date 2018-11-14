@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - VCCORLIB/Platform::Box
 ms.assetid: b3d7ea37-e98a-4fbc-80b0-ad35e50250c6
-ms.openlocfilehash: 387fa03caebed599d51292dd1b6d18ad4afd921c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29cbe852dcd606ea5cf2953c709fc8e47b89e1f1
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429072"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327033"
 ---
 # <a name="platformbox-class"></a>Platform::Box 클래스
 
@@ -21,24 +21,29 @@ ms.locfileid: "50429072"
 ```cpp
 ref class Box abstract;
 ```
-  ### <a name="remarks"></a>설명
 
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** vccorlib.h
 
 **네임스페이스:** Platform
+
+### <a name="members"></a>멤버
+
 |멤버|설명|
 |------------|-----------------|
-|[Object^](#ctor)|지정된 형식의 값을 캡슐화할 수 있는 `Box`를 만듭니다.|
-|[연산자 상자&lt;const T&gt;^](#box-const-t)|`const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.|
-|[연산자 상자&lt;volatile const T&gt;^](#box-const-volatile-t)|`const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
-|[연산자 상자&lt;T&gt;^](#box-t)|값 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.|
-|[연산자 상자&lt;volatile T&gt;^](#box-volatile-t)|`volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.|
-|[Box:: operator T](#t)|값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다.|
+|[Object^](#ctor) | 지정된 형식의 값을 캡슐화할 수 있는 `Box`를 만듭니다. |
+|[연산자 상자&lt;const T&gt;^](#box-const-t) | `const` 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[연산자 상자&lt;volatile const T&gt;^](#box-const-volatile-t) | `const volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[연산자 상자&lt;T&gt;^](#box-t) | 값 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[연산자 상자&lt;volatile T&gt;^](#box-volatile-t) | `volatile` 값 클래스 `T` 또는 `enum` 형식 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[Box:: operator T](#t) | 값 클래스 `T` 또는 `enum` 클래스 `T`를 `Box<T>`로 boxing 변환할 수 있습니다. |
+|[Value 속성](#value) | `Box` 개체에 캡슐화된 값을 반환합니다. |
+
 ## <a name="ctor"></a> Box:: box 생성자
 
-만듭니다는 `Box` 지정 된 형식의 값을 캡슐화 할 수 있는. | |[ Value 속성](#value)| 캡슐화 된 값을 반환 합니다 `Box` 개체입니다. |
+지정된 형식의 값을 캡슐화할 수 있는 `Box`를 만듭니다.
+
 ### <a name="syntax"></a>구문
 
 ```cpp

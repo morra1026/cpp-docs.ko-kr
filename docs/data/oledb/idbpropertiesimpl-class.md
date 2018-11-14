@@ -22,12 +22,12 @@ helpviewer_keywords:
 - GetPropertyInfo method
 - SetProperties method
 ms.assetid: a7f15a8b-95b2-4316-b944-d5d03f8d74ab
-ms.openlocfilehash: 77385fc8b2869cc59c7a0061951c76a431490efe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ce9f3fa18d2a17d499b65258cfda52783ce46c5
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638050"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556948"
 ---
 # <a name="idbpropertiesimpl-class"></a>IDBPropertiesImpl 클래스
 
@@ -62,7 +62,7 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 
 ## <a name="remarks"></a>설명
 
-[IDBProperties](/previous-versions/windows/desktop/ms719607) 는 데이터 원본 개체에 대 한 필수 인터페이스 및 열거자에 대 한 선택적 인터페이스입니다. 그러나 열거자를 노출 하는 경우 [IDBInitialize](/previous-versions/windows/desktop/ms713706)를 노출 해야 `IDBProperties`합니다. `IDBPropertiesImpl` 구현 `IDBProperties` 정의 된 정적 함수를 사용 하 여 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)합니다.
+[IDBProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms719607(v=vs.85)) 는 데이터 원본 개체에 대 한 필수 인터페이스 및 열거자에 대 한 선택적 인터페이스입니다. 그러나 열거자를 노출 하는 경우 [IDBInitialize](https://docs.microsoft.com/previous-versions/windows/desktop/ms713706(v=vs.85))를 노출 해야 `IDBProperties`합니다. `IDBPropertiesImpl` 구현 `IDBProperties` 정의 된 정적 함수를 사용 하 여 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)합니다.
 
 ## <a name="getproperties"></a> Idbpropertiesimpl:: Getproperties
 
@@ -71,15 +71,15 @@ class ATL_NO_VTABLE IDBPropertiesImpl
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(GetProperties)(ULONG cPropertySets, 
-   const DBPROPIDSET rgPropertySets[], 
-   ULONG * pcProperties, 
+STDMETHOD(GetProperties)(ULONG cPropertySets,
+   const DBPROPIDSET rgPropertySets[],
+   ULONG * pcProperties,
    DBPROPSET ** prgProperties);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [idbproperties:: Getproperties](/previous-versions/windows/desktop/ms714344) 에 *OLE DB Programmer's Reference*합니다.
+참조 [idbproperties:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBProperties::GetProperties`:
 
@@ -101,16 +101,16 @@ STDMETHOD(GetProperties)(ULONG cPropertySets, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
-   const DBPROPIDSET rgPropertySets[], 
-   ULONG * pcPropertyInfoSets, 
-   DBPROPINFOSET ** prgPropertyInfoSets, 
+STDMETHOD(GetPropertyInfo)(ULONG cPropertySets,
+   const DBPROPIDSET rgPropertySets[],
+   ULONG * pcPropertyInfoSets,
+   DBPROPINFOSET ** prgPropertyInfoSets,
    OLECHAR ** ppDescBuffer);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [idbproperties:: Getpropertyinfo](/previous-versions/windows/desktop/ms718175) 에 *OLE DB Programmer's Reference*합니다.
+참조 [idbproperties:: Getpropertyinfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms718175(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IDBProperties::GetPropertyInfo`:
 
@@ -130,13 +130,13 @@ STDMETHOD(GetPropertyInfo)(ULONG cPropertySets, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [idbproperties:: Setproperties](/previous-versions/windows/desktop/ms723049) 에 *OLE DB Programmer's Reference*합니다.
+참조 [idbproperties:: Setproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723049(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 

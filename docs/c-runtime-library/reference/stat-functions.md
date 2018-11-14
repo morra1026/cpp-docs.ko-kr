@@ -106,12 +106,12 @@ helpviewer_keywords:
 - _tstat64 function
 - files [C++], getting status information
 ms.assetid: 99a75ae6-ff26-47ad-af70-5ea7e17226a5
-ms.openlocfilehash: 316012479ec374cc5f40061384475008fe04e331
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9272cd4596a54a38e1ba21ac92b038c2da0d207
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637283"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331206"
 ---
 # <a name="stat-stat32-stat64-stati64-stat32i64-stat64i32-wstat-wstat32-wstat64-wstati64-wstat32i64-wstat64i32"></a>_stat, _stat32, _stat64, _stati64, _stat32i64, _stat64i32, _wstat, _wstat32, _wstat64, _wstati64, _wstat32i64, _wstat64i32
 
@@ -228,17 +228,17 @@ int _wstat64i32(
 
 |필드||
 |-|-|
-**st_gid**|파일(UNIX 관련)을 소유하는 그룹의 숫자 식별자입니다. 이 필드는 Windows 시스템에서 항상 0입니다. 리디렉션된 파일은 Windows 파일로 분류됩니다.
-**st_atime**|파일의 마지막 액세스 시간입니다. NTFS에서는 유효하지만, FAT로 포맷한 디스크 드라이브에서는 유효하지 않습니다.
-**st_ctime**|파일 생성 시간입니다. NTFS에서는 유효하지만, FAT로 포맷한 디스크 드라이브에서는 유효하지 않습니다.
-**st_dev**|파일이 포함 된 디스크 드라이브 (동일 **st_rdev**).
-**st_ino**|정보 노드 수 (합니다 **inode**) 파일 (UNIX 관련)입니다. UNIX 파일 시스템에는 **inode** 파일 날짜 및 타임 스탬프, 권한 및 콘텐츠를 설명 합니다. 동일한 공유 파일이 서로 하드 링크 된 경우 **inode**합니다. 합니다 **inode**, 있어 **st_ino**, FAT, HPFS 또는 NTFS 파일 시스템에서 의미가 없습니다.
-**st_mode**|파일 모드 정보의 비트 마스크입니다. 합니다 **_S_IFDIR** 비트가 설정 됩니다 *경로* 디렉터리를 지정; **_S_IFREG** 비트가 설정 됩니다 *경로* 일반 파일 또는 장치를 지정 합니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. 파일 이름 확장명에 따라 사용자 실행 비트가 설정됩니다.
-**st_mtime**|파일의 마지막 수정 시간입니다.
-**st_nlink**|NTFS가 아닌 파일 시스템에서 항상 1입니다.
-**st_rdev**|파일이 포함 된 디스크 드라이브 (동일 **st_dev**).
-**st_size**|크기 (바이트)의 파일 인 변형의 64 비트 정수를 합니다 **i64** 접미사.
-**st_uid**|파일(UNIX 관련)을 소유하는 사용자의 숫자 식별자입니다. 이 필드는 Windows 시스템에서 항상 0입니다. 리디렉션된 파일은 Windows 파일로 분류됩니다.
+| **st_gid** | 파일(UNIX 관련)을 소유하는 그룹의 숫자 식별자입니다. 이 필드는 Windows 시스템에서 항상 0입니다. 리디렉션된 파일은 Windows 파일로 분류됩니다. |
+| **st_atime** | 파일의 마지막 액세스 시간입니다. NTFS에서는 유효하지만, FAT로 포맷한 디스크 드라이브에서는 유효하지 않습니다. |
+| **st_ctime** | 파일 생성 시간입니다. NTFS에서는 유효하지만, FAT로 포맷한 디스크 드라이브에서는 유효하지 않습니다. |
+| **st_dev** | 파일이 포함 된 디스크 드라이브 (동일 **st_rdev**). |
+| **st_ino** | 정보 노드 수 (합니다 **inode**) 파일 (UNIX 관련)입니다. UNIX 파일 시스템에는 **inode** 파일 날짜 및 타임 스탬프, 권한 및 콘텐츠를 설명 합니다. 동일한 공유 파일이 서로 하드 링크 된 경우 **inode**합니다. 합니다 **inode**, 있어 **st_ino**, FAT, HPFS 또는 NTFS 파일 시스템에서 의미가 없습니다. |
+| **st_mode** | 파일 모드 정보의 비트 마스크입니다. 합니다 **_S_IFDIR** 비트가 설정 됩니다 *경로* 디렉터리를 지정; **_S_IFREG** 비트가 설정 됩니다 *경로* 일반 파일 또는 장치를 지정 합니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. 파일 이름 확장명에 따라 사용자 실행 비트가 설정됩니다. |
+| **st_mtime** | 파일의 마지막 수정 시간입니다. |
+| **st_nlink** | NTFS가 아닌 파일 시스템에서 항상 1입니다. |
+| **st_rdev** | 파일이 포함 된 디스크 드라이브 (동일 **st_dev**). |
+| **st_size** | 크기 (바이트)의 파일 인 변형의 64 비트 정수를 합니다 **i64** 접미사. |
+| **st_uid** | 파일(UNIX 관련)을 소유하는 사용자의 숫자 식별자입니다. 이 필드는 Windows 시스템에서 항상 0입니다. 리디렉션된 파일은 Windows 파일로 분류됩니다. |
 
 하는 경우 *경로* 장치를 참조 합니다 **st_size**, 다양 한 시간 필드 **st_dev**, 및 **st_rdev** 필드를 **_stat**  구조는 의미가 없습니다. STAT.H가 TYPES.H에 정의된 [_dev_t](../../c-runtime-library/standard-types.md) 형식을 사용하기 때문입니다. 코드에서 STAT.H 앞에 TYPES.H를 포함해야 합니다.
 

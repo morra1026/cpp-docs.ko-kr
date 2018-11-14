@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-ms.openlocfilehash: 40294e0d0af3f5181ffe295a2a6c625fa5223f5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c35d7bf16b851fe9a96bdd896babfa450c726374
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463390"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525278"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 
@@ -1012,7 +1012,7 @@ OLE 비주얼 편집 서버, 자동화 서버 및 링크 컨테이너(포함에 
 OLE 편집 링크 대화 상자의 특별한 경우에 사용됩니다. 예를 들어, 문서에서 기존에 연결되거나 포함된 개체만 업데이트할 경우에 사용해야 합니다.
 
 [COleVariant 클래스](../../mfc/reference/colevariant-class.md)<br/>
-[VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식을 캡슐화합니다.
+[VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식을 캡슐화합니다.
 
 [CPagerCtrl 클래스](../../mfc/reference/cpagerctrl-class.md)<br/>
 `CPagerCtrl` 클래스는 윈도우에 맞지 않는 포함된 창을 보기로 스크롤할 수 있는 Windows 페이저 컨트롤을 래핑합니다.

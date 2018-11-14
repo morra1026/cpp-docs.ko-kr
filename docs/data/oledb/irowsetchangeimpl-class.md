@@ -32,16 +32,16 @@ helpviewer_keywords:
 - SetData method
 - FlushData method
 ms.assetid: 1e9fee15-ed9e-4387-af8f-215569beca6c
-ms.openlocfilehash: 13dadfdcaf912e5cb2d82361de997d09961f1ceb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dacf9de0835108ae946e7523472a0adf12e7e222
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514611"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556727"
 ---
 # <a name="irowsetchangeimpl-class"></a>IRowsetChangeImpl 클래스
 
-OLE DB 템플릿 구현의 합니다 [IRowsetChange](/previous-versions/windows/desktop/ms715790) OLE DB 사양에 대 한 인터페이스입니다.
+OLE DB 템플릿 구현의 합니다 [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) OLE DB 사양에 대 한 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -124,7 +124,7 @@ STDMETHOD (DeleteRows )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v%3dvs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowsetchange:: Deleterows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="insertrow"></a> Irowsetchangeimpl:: Insertrow
 
@@ -141,7 +141,7 @@ STDMETHOD (InsertRow )(HCHAPTER /* hReserved */,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowsetchange:: Insertrow](/previous-versions/windows/desktop/ms716921) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowsetchange:: Insertrow](https://docs.microsoft.com/previous-versions/windows/desktop/ms716921(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="setdata"></a> Irowsetchangeimpl:: Setdata
 
@@ -157,7 +157,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowsetchange:: Setdata](/previous-versions/windows/desktop/ms721232) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowsetchange:: Setdata](https://docs.microsoft.com/previous-versions/windows/desktop/ms721232(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="flushdata"></a> Irowsetchangeimpl:: Flushdata
 

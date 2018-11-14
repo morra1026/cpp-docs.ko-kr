@@ -6,18 +6,18 @@ helpviewer_keywords:
 - databases [C++], ODBC
 - data access [C++], ODBC
 ms.assetid: 56b6067a-651e-4c10-a24d-d4a6a17ca5e4
-ms.openlocfilehash: 49955f12c5e9d4105d9fdbe0ec16bbd302672546
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a4d6cad399b1773102dc0bc64e28049cca30d2d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468733"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523353"
 ---
 # <a name="open-database-connectivity-odbc"></a>ODBC(Open Database Connectivity)
 
 MFC(Microsoft Foundation Classes) 라이브러리는 ODBC(Open Database Connectivity)를 사용하여 프로그래밍하는 데 필요한 클래스를 제공합니다. Visual Studio 2015 및 SQL Server 2012 ODBC SQL 데이터 원본에 연결 하는 기본 방법은 이며
 
-MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 내용은 참조는 [개방형 데이터베이스 연결 (ODBC)](/previous-versions/windows/desktop/ms710252) MSDN의 SDK.
+MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 내용은 참조는 [개방형 데이터베이스 연결 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) MSDN의 SDK.
 
 
 ## <a name="in-this-section"></a>섹션 내용
@@ -58,7 +58,7 @@ MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 �
 
 ## <a name="odbc-database-tasks"></a>ODBC 데이터베이스 작업
 
-이러한 작업은 MFC에 기반한 [ODBC](odbc-basics.md) 클래스입니다. MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 내용은 참조는 [개방형 데이터베이스 연결 (ODBC)](/previous-versions/windows/desktop/ms710252) SDK.
+이러한 작업은 MFC에 기반한 [ODBC](odbc-basics.md) 클래스입니다. MFC 사용 하지 않고 ODBC API를 사용 하는 방법에 대 한 자세한 내용은 참조는 [개방형 데이터베이스 연결 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) SDK.
 
 - [설치 하 고 ODBC를 사용 하 여 시작](installing-and-getting-started-with-odbc.md)
 

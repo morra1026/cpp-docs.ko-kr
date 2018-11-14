@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::basic_stringbuf [C++], str
 - std::basic_stringbuf [C++], underflow
 ms.assetid: 40c85f9e-42a5-4a65-af5c-23c8e3bf8113
-ms.openlocfilehash: 87ea8150e13076d176665bc3ddcc04482d639b79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ed9deee46f7c99750ee3260a6b2a8de1f0f3397
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462027"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329646"
 ---
 # <a name="basicstringbuf-class"></a>basic_stringbuf 클래스
 
@@ -183,7 +183,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### <a name="remarks"></a>설명
 
-_ *Meta*가 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof)와 비교하여 같지 않은 경우 보호되는 가상 멤버 함수는 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*) 요소를 출력 버퍼에 삽입하려고 합니다. 수행할 수 있는 방법은 다양합니다.
+하는 경우  *\_Meta* 같음 비교 하지 않습니다 **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), 보호 된 가상 구성원 함수는 요소를 삽입 하려고  **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) 출력 버퍼에 있습니다. 수행할 수 있는 방법은 다양합니다.
 
 - 쓰기 위치가 사용 가능한 경우 요소를 쓰기 위치에 저장하고 출력 버퍼에 대해 다음 포인터를 증분할 수 있습니다.
 

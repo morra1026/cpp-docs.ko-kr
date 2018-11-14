@@ -88,12 +88,12 @@ helpviewer_keywords:
 - stdext::hash_map::upper_bound
 - stdext::hash_map::value_comp
 ms.assetid: 40879dfc-51ba-4a59-9f9e-26208de568a8
-ms.openlocfilehash: de000584ad0cb797886ac11d367940212aaa50e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eba534dd98e1687a7b1b66f037eed7e509b09c74
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495292"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333630"
 ---
 # <a name="hashmap-class"></a>hash_map 클래스
 
@@ -646,9 +646,9 @@ hash_map에 정렬 키가 매개 변수 키와 일치하는 요소가 있는 경
 
 ### <a name="remarks"></a>설명
 
-멤버 함수는 다음 범위에 있는 *x* 요소의 수를 반환합니다.
+구성원 함수는 다음 범위에 있는 요소 수 *x*를 반환합니다.
 
-[ `lower_bound` (_ *Key* ), `upper_bound` (\_ *Key* ) )
+\[ lower_bound (*키*), upper_bound (*키*))
 
 고유한 결합형 컨테이너인 hash_map의 경우 0 또는 1입니다.
 

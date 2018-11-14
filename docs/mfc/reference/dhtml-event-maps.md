@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 329b4176ad4d24651a41b5321c26318cf2af30e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75ceaf3d0532a557f5227e64edece2155aacb72f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547201"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519871"
 ---
 # <a name="dhtml-event-maps"></a>DHTML 이벤트 맵
 
@@ -441,7 +441,6 @@ DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
 
 ```
 DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -514,7 +513,6 @@ DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
 
 ```
 DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -540,7 +538,6 @@ DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -566,7 +563,6 @@ DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONFOCUS(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -592,7 +588,6 @@ DHTML_EVENT_ONFOCUS(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONHELP(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -618,7 +613,6 @@ DHTML_EVENT_ONHELP(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -644,7 +638,6 @@ DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -670,7 +663,6 @@ DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONKEYUP(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -696,7 +688,6 @@ DHTML_EVENT_ONKEYUP(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -722,7 +713,6 @@ DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -748,7 +738,6 @@ DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -774,7 +763,6 @@ DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -800,7 +788,6 @@ DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -826,7 +813,6 @@ DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONRESIZE(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -852,7 +838,6 @@ DHTML_EVENT_ONRESIZE(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONROWENTER(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -878,7 +863,6 @@ DHTML_EVENT_ONROWENTER(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -904,7 +888,6 @@ DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
 ```
 
 DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -972,7 +955,6 @@ END_DHTML_EVENT_MAP()
 
 ```
 BEGIN_DHTML_URL_EVENT_MAP()
-
 ```
 
 ### <a name="remarks"></a>설명
@@ -993,7 +975,6 @@ BEGIN_DHTML_URL_EVENT_MAP 구현 파일에 배치 하 [CMultiPageDHtmlDialog](..
 
 ```
 BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -1026,7 +1007,6 @@ DHTML 및 URL 이벤트 맵 내에서 포함 된 이벤트 맵 BEGIN_EMBED_DHTML
 
 ```
 BEGIN_URL_ENTRIES(className)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -1052,7 +1032,6 @@ URL 이벤트 항목 맵을 포함하는 클래스의 이름입니다. 이 클�
 
 ```
 DECLARE_DHTML_URL_EVENT_MAP()
-
 ```
 
 ### <a name="remarks"></a>설명
@@ -1071,7 +1050,6 @@ DHTML 및 URL 이벤트 맵의 끝을 표시 합니다.
 
 ```
 END_DHTML_URL_EVENT_MAP(className)
-
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -1093,7 +1071,6 @@ END_DHTML_URL_EVENT_MAP(className)
 
 ```
 END_EMBED_DHTML_EVENT_MAP()
-
 ```
 
 ### <a name="example"></a>예제
@@ -1110,7 +1087,6 @@ URL 이벤트 항목 맵은의 끝을 표시 합니다.
 
 ```
 END_URL_ENTRIES()
-
 ```
 
 ### <a name="example"></a>예제

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - catalog functions (ODBC), calling
 - ODBC [C++], API functions
 ms.assetid: 4295f1d9-4528-4d2e-bd6a-c7569953c7fa
-ms.openlocfilehash: 8c6781e0ff49b026e3b969f062f01e9923eb0a6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e76ff4da090a00409465333f8cbc9816ab4c4de6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665701"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518348"
 ---
 # <a name="odbc-calling-odbc-api-functions-directly"></a>ODBC: ODBC API 함수 직접 호출
 
@@ -38,7 +38,7 @@ ms.locfileid: "50665701"
 
 - 완료 하면 저장소 할당을 취소 합니다.
 
-다음이 단계에 대 한 자세한 내용은 참조 하세요. 합니다 [개방형 데이터베이스 연결 (ODBC)](/previous-versions/windows/desktop/ms710252) MSDN 설명서에서 SDK.
+다음이 단계에 대 한 자세한 내용은 참조 하세요. 합니다 [개방형 데이터베이스 연결 (ODBC)](/sql/odbc/microsoft-open-database-connectivity-odbc) MSDN 설명서에서 SDK.
 
 이러한 단계 외에도 함수 반환 값을 확인 하려면 프로그램 비동기 호출을 완료 하 고 기다리고 있지 않도록 추가 단계를 수행 해야 합니다. AFX_SQL_ASYNC 및 AFX_SQL_SYNC 매크로 사용 하 여 마지막 단계를 간소화할 수 있습니다. 자세한 내용은 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md) 에 *MFC 참조*합니다.
 

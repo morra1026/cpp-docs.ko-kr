@@ -6,12 +6,12 @@ helpviewer_keywords:
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: 3df2252e1879fbbcdf6cc950fa8dd637894ba3f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0c734648b084c3f58577cb56984e3ea003a6a8e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664557"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523939"
 ---
 # <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>방법: Visual c + + 대상 프로젝트를 64 비트 x64 구성 플랫폼
 
@@ -43,18 +43,18 @@ C + + 대상 응용 프로그램을 64 비트, x64 플랫폼 설정 하려면 Vi
 
 - 64비트 플랫폼을 대상으로 하도록 프로젝트를 설정하는 동안 **새 솔루션 플랫폼** 대화 상자가 열리는 경우 **다음에서 설정 복사** 드롭다운 목록에서 **Win32**를 선택합니다. 다음 프로젝트 설정이 프로젝트 수준에서 자동으로 업데이트됩니다.
 
-   - [/MACHINE](../build/reference/machine-specify-target-platform.md) 링커 옵션이 **/MACHINE:X64**로 설정됩니다.
+  - [/MACHINE](../build/reference/machine-specify-target-platform.md) 링커 옵션이 **/MACHINE:X64**로 설정됩니다.
 
-   - **출력 등록** 이 꺼집니다. 자세한 내용은 [Linker Property Pages](../ide/linker-property-pages.md)을 참조하세요.
+  - **출력 등록** 이 꺼집니다. 자세한 내용은 [Linker Property Pages](../ide/linker-property-pages.md)을 참조하세요.
 
-   - **대상 환경** 이 **/env x64**로 설정됩니다. 자세한 내용은 [MIDL Property Pages: General](../ide/midl-property-pages-general.md)을 참조하세요.
+  - **대상 환경** 이 **/env x64**로 설정됩니다. 자세한 내용은 [MIDL Property Pages: General](../ide/midl-property-pages-general.md)을 참조하세요.
 
-   - **매개 변수 유효성 검사** 가 초기화되어 기본값으로 다시 설정됩니다. 자세한 내용은 [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)을 참조하세요.
+  - **매개 변수 유효성 검사** 가 초기화되어 기본값으로 다시 설정됩니다. 자세한 내용은 [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)을 참조하세요.
 
-   - **디버그 정보 형식** 이 Win32 프로젝트 구성에서 **/ZI** 로 설정되면 64비트 프로젝트 구성에서는 **/Zi** 로 설정됩니다. 자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](../build/reference/z7-zi-zi-debug-information-format.md)를 참조하세요.
+  - **디버그 정보 형식** 이 Win32 프로젝트 구성에서 **/ZI** 로 설정되면 64비트 프로젝트 구성에서는 **/Zi** 로 설정됩니다. 자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](../build/reference/z7-zi-zi-debug-information-format.md)를 참조하세요.
 
-   > [!NOTE]
-   > 이러한 프로젝트 속성이 파일 수준에서 재정의된 경우에는 어떠한 속성도 변경되지 않습니다.
+  > [!NOTE]
+  > 이러한 프로젝트 속성이 파일 수준에서 재정의된 경우에는 어떠한 속성도 변경되지 않습니다.
 
 ## <a name="see-also"></a>참고 항목
 

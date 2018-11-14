@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::strstreambuf [C++], str
 - std::strstreambuf [C++], underflow
 ms.assetid: b040b8ea-0669-4eba-8908-6a9cc159c54b
-ms.openlocfilehash: 5a9fa47ab19a5935bf0c7c36dea37b3cfe6180ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75c9a96b727ef60280055536296f850f492d16ac
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512387"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327306"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf 클래스
 
@@ -186,11 +186,11 @@ virtual int overflow(int _Meta = EOF);
 
 ### <a name="return-value"></a>반환 값
 
-함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않고 _ *Meta* == `EOF`인 경우에는 `EOF` 이외의 값을 반환합니다. 그 외의 경우에는 \_ *Meta*를 반환합니다.
+함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않고  *\_Meta* == `EOF`, 이외의 일부 값을 반환 `EOF`합니다. 그렇지  *\_Meta*합니다.
 
 ### <a name="remarks"></a>설명
 
-_ *Meta* != `EOF`인 경우 보호되는 가상 구성원 함수는 ( `char`)\_ *Meta* 요소를 출력 버퍼에 삽입하려고 합니다. 함수는 여러 가지 방식으로 이 삽입을 수행할 수 있습니다.
+하는 경우  *\_Meta* ! = `EOF`, 보호 된 가상 구성원 함수는 요소를 삽입 하려고 `(char)_Meta` 출력 버퍼에 있습니다. 수행할 수 있는 방법은 다양합니다.
 
 - 쓰기 위치를 사용할 수 있는 경우 요소를 쓰기 위칭에 저장하고 출력 버퍼에 대해 다음 포인터를 증분할 수 있습니다.
 
@@ -211,13 +211,13 @@ virtual int pbackfail(int _Meta = EOF);
 
 ### <a name="return-value"></a>반환 값
 
-함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않고 _ *Meta* == `EOF`인 경우에는 `EOF` 이외의 값을 반환합니다. 그 외의 경우에는 \_ *Meta*를 반환합니다.
+함수는 정상적으로 실행되지 않으면 `EOF`를 반환합니다. 그렇지 않고  *\_Meta* == `EOF`, 이외의 일부 값을 반환 `EOF`합니다. 그렇지  *\_Meta*합니다.
 
 ### <a name="remarks"></a>설명
 
 보호된 가상 구성원 함수는 요소를 입력 버퍼에 다시 넣은 후 다음 포인터에서 가리키는 현재 요소로 설정하려고 합니다.
 
-_ *Meta* == `EOF`인 경우 현재 요소 이전에 스트림에 이미 있었던 요소를 실제로 다시 넣습니다. 그렇지 않으면 요소가 **ch** = ( `char`)\_ *Meta*에 의해 바뀝니다. 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
+하는 경우  *\_Meta* == `EOF`, 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 것입니다. 그렇지 않은 경우 해당 요소 바뀝니다 `ch = (char)_Meta`합니다. 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
 
 - Putback 위치를 사용할 수 있고 여기에 저장 된 요소는 비교 시 같으면 경우 `ch`, 해당 입력된 버퍼에 대 한 다음 포인터를 감소 시킬 수 있습니다.
 
@@ -289,15 +289,15 @@ virtual streampos seekoff(streamoff _Off,
 
 새 위치는 다음과 같이 결정됩니다.
 
-- `_Way` == `ios_base::beg`인 경우 새 위치는 스트림 시작 부분에 _ *Off*를 더한 위치입니다.
+- 하는 경우 `_Way == ios_base::beg`, 새 위치는 더하기 스트림의 시작 부분 *_Off*합니다.
 
-- `_Way` == `ios_base::cur`인 경우 새 위치는 현재 스트림 위치에 _ *Off*를 더한 위치입니다.
+- 하는 경우 `_Way == ios_base::cur`, 새 위치는 현재 스트림 위치가 plus *_Off*합니다.
 
-- `_Way` == `ios_base::end`인 경우 새 위치는 스트림 끝에 _ *Off*를 더한 위치입니다.
+- 하는 경우 `_Way == ios_base::end`, 새 위치는 더하기 스트림의 끝 *_Off*합니다.
 
-`_Which` & **ios_base::in**이 0이 아니고 입력 버퍼가 있으면 함수는 입력 버퍼에서 읽을 다음 위치를 변경합니다. `_Which` & **ios_base::out**도 0이 아니고 `_Way` != **ios_base::cur** 및 출력 버퍼가 있는 경우 함수는 읽을 다음 위치와 일치하도록 쓸 다음 위치도 설정합니다.
+경우 `_Which & ios_base::in` 0이 아닌, 입력된 버퍼가 있으면 함수는 입력된 버퍼에서 읽을 다음 위치를 변경 합니다. 하는 경우 `_Which & ios_base::out` 이 값은 0도 `_Way != ios_base::cur`을 출력 버퍼가 있으면 함수는 읽을 다음 위치와 일치 하도록 쓸 다음 위치도 설정 합니다.
 
-그렇지 않고 `_Which` & `ios_base::out`이 0이 아니며 출력 버퍼가 있으면 함수는 출력 버퍼에서 쓸 다음 위치를 변경합니다. 그렇지 않은 경우 위치 지정 작업이 실패합니다. 위치 지정 작업을 정상적으로 수행하려면 결과 스트림 위치가 제어되는 시퀀스 내에 있어야 합니다.
+그렇지 않은 경우, `_Which & ios_base::out` 0이 아닌 출력 버퍼가 있는 고 함수 출력 버퍼에 쓸 다음 위치를 변경 합니다. 그렇지 않은 경우 위치 지정 작업이 실패합니다. 위치 지정 작업을 정상적으로 수행하려면 결과 스트림 위치가 제어되는 시퀀스 내에 있어야 합니다.
 
 ## <a name="seekpos"></a>  strstreambuf::seekpos
 
@@ -321,7 +321,7 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 
 ### <a name="remarks"></a>설명
 
-보호된 가상 구성원 함수는 제어된 스트림의 현재 위치를 변경하려고 합니다. strstreambuf 클래스 개체의 경우 스트림 위치는 스트림 오프셋으로만 구성됩니다. 오프셋 0은 제어되는 시퀀스의 첫 번째 요소를 지정합니다. 새 위치는 _ *Sp*에 의해 결정됩니다.
+보호된 가상 구성원 함수는 제어된 스트림의 현재 위치를 변경하려고 합니다. strstreambuf 클래스 개체의 경우 스트림 위치는 스트림 오프셋으로만 구성됩니다. 오프셋 0은 제어되는 시퀀스의 첫 번째 요소를 지정합니다. 새 위치에 의해 결정 됩니다 *_Sp*합니다.
 
 `_Which` & **ios_base::in**이 0이 아니고 입력 버퍼가 있으면 함수는 입력 버퍼에서 읽을 다음 위치를 변경합니다. `_Which` & `ios_base::out`이 0이 아니고 출력 버퍼가 있는 경우 함수는 읽을 다음 위치와 일치하도록 쓸 다음 위치도 설정합니다. 그렇지 않고 `_Which` & `ios_base::out`이 0이 아니며 출력 버퍼가 있으면 함수는 출력 버퍼에서 쓸 다음 위치를 변경합니다. 그렇지 않은 경우 위치 지정 작업이 실패합니다. 위치 지정 작업을 정상적으로 수행하려면 결과 스트림 위치가 제어되는 시퀀스 내에 있어야 합니다.
 
@@ -398,7 +398,7 @@ strstreambuf(const unsigned char* _Getptr,
 
 첫 번째 생성자는 입력 버퍼, 출력 버퍼 및 strstreambuf 할당을 제어하는 모든 포인터에 null 포인터를 저장합니다. 이 생성자는 제어되는 시퀀스를 수정/확장할 수 있도록 저장된 strstreambuf 모드를 설정합니다. 또한 받아들이는지 *개수* 제안 된 초기 할당 크기로 합니다.
 
-두 번째 생성자도 첫 번째 생성자와 동일하게 동작합니다. 단, 저장소 할당을 호출하는 함수에 대한 포인터로 _ *Allocfunc*를 저장하고, 해당 저장소 확보를 호출하는 함수에 대한 포인터로 \_ *Freefunc*를 저장합니다.
+저장 한다는 점을 제외 하 고 두 번째 생성자는 첫 번째 처럼  *\_Allocfunc* 저장소를 할당 하기 위해 호출할 함수에 대 한 포인터로 및  *\_Freefunc* 포인터와 해당 저장소 확보를 호출 하는 함수입니다.
 
 아래에 3개 생성자의 코드가 나와 있습니다.
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - build steps [C++], output format
 - builds [C++], custom build steps
 ms.assetid: 92ad3e38-24d7-4b89-90e6-5a16f5f998da
-ms.openlocfilehash: 70ab20c1564d9530059fb850437bd1e3a47b9af9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 333d3af92da2388b42f51f197dee5da82900022d
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501558"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330413"
 ---
 # <a name="formatting-the-output-of-a-custom-build-step-or-build-event"></a>사용자 지정 빌드 단계 또는 빌드 이벤트의 출력 형식 지정
 
@@ -43,7 +43,7 @@ ms.locfileid: "50501558"
 예:
 
 > C:\\*sourcefile.cpp*(134): 오류 C2143: 구문 오류: '}' 앞에 ';' 누락
-
+>
 > LINK: 치명적인 오류 LNK1104: '*somelib.lib*' 파일을 열 수 없음
 
 ## <a name="see-also"></a>참고 항목

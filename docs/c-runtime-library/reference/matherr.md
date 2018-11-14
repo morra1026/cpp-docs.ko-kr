@@ -22,12 +22,12 @@ helpviewer_keywords:
 - _matherr function
 - matherr function
 ms.assetid: b600d66e-165a-4608-a856-8fb418d46760
-ms.openlocfilehash: 980bf8a14ceace82a76562cc47d353f78dbca582
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b830dc940fa2abb131f70130033d27b057412137
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445723"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329633"
 ---
 # <a name="matherr"></a>_matherr
 
@@ -73,12 +73,12 @@ struct _exception
 
 |매크로|의미|
 |-|-|
-**(_D)**|인수 도메인 오류
-**_SING**|인수 특이성
-**_OVERFLOW**|오버플로 범위 오류
-**_PLOSS**|중요성의 부분적 손실
-**_TLOSS**|중요 전체 손실이
-**_UNDERFLOW**|결과가 너무 작아 나타낼 수 없습니다. 이 조건은 현재 지원되지 않습니다.
+| **(_D)** | 인수 도메인 오류 |
+| **_SING** | 인수 특이성 |
+| **_OVERFLOW** | 오버플로 범위 오류 |
+| **_PLOSS** | 중요성의 부분적 손실 |
+| **_TLOSS** | 중요 전체 손실이 |
+| **_UNDERFLOW** | 결과가 너무 작아 나타낼 수 없습니다. 이 조건은 현재 지원되지 않습니다. |
 
 구조체 멤버 **name**은 오류를 발생시킨 함수의 이름을 포함하는 null로 종료되는 문자열에 대한 포인터입니다. 구조체 멤버 **arg1** 및 **arg2**는 오류를 발생시킨 값을 지정합니다. 에 저장 되어 있는 하나의 인수를 지정 되었다면 **arg1**합니다.
 

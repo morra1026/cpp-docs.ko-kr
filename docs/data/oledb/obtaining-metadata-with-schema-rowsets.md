@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, getting provider metadata
 - metadata, getting (OLE DB Templates)
 ms.assetid: 6b448461-82fb-4acf-816b-3cbb0ca1d186
-ms.openlocfilehash: cb0f7813a351f272d5417955fb98719d889a64ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a9717649c1bd4f956da8bc926e8f492f4eccff74
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561215"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556844"
 ---
 # <a name="obtaining-metadata-with-schema-rowsets"></a>스키마 행 집합을 사용하여 메타데이터 구하기
 
@@ -52,7 +52,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 합니다 [CRestrictions](../../data/oledb/crestrictions-class.md) 클래스는 제한을 지원 제공 합니다. 스키마 행 집합의 인스턴스를 만든 후 호출 [crestrictions:: Open](../../data/oledb/crestrictions-open.md)합니다. 이 메서드는 지정하는 제한을 기반으로 결과 집합을 반환합니다.
 
-제한 지정을 하려면를 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921) 및 사용 하는 행 집합을 조회 합니다. 예를 들어 `CColumns` 에 해당 하는 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052\(v%3dvs.85\));에서는 COLUMNS 행 집합에서 제한 열이 나열: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME 합니다. 제한을 지정할 때 이 순서를 따라야 합니다.
+제한 지정을 하려면를 참조 [부록 b: 스키마 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms712921(v=vs.85)) 및 사용 하는 행 집합을 조회 합니다. 예를 들어 `CColumns` 에 해당 하는 [COLUMNS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85)\(v%3dvs.85\));에서는 COLUMNS 행 집합에서 제한 열이 나열: TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME 합니다. 제한을 지정할 때 이 순서를 따라야 합니다.
 
 따라서 예를 들어 테이블 이름으로 제한 하려는 경우 TABLE_NAME는 세 번째 제한 열 및 호출 `Open`, 다음 예제에서와 같이 원하는 테이블 이름을 세 번째 제한 매개 변수로 지정 합니다.
 
@@ -82,7 +82,7 @@ CRestrictions<CAccessor<CColumnsInfo>
 
 스키마 행 집합의 참조를 OLE DB 템플릿에서 typedef 클래스가 제공 (참조 [스키마 행 집합 클래스 및 Typedef 클래스](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)).
 
-제한 열을 포함 하 여 OLE DB 스키마 행 집합에 대 한 자세한 내용은 참조 [부록 b: 스키마 행 집합](/previous-versions/windows/desktop/ms712921) 에 **OLE DB Programmer's Reference**합니다.
+제한 열을 포함 하 여 OLE DB 스키마 행 집합에 대 한 자세한 내용은 참조 [부록 b: 스키마 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms712921(v=vs.85)) 에 **OLE DB Programmer's Reference**합니다.
 
 스키마 행 집합 클래스를 사용 하는 방법의 더 복잡 한 예제를 참조 하세요. 합니다 [CatDB](https://github.com/Microsoft/VCSamples) 하 고 [DBViewer](https://github.com/Microsoft/VCSamples) 샘플입니다.
 

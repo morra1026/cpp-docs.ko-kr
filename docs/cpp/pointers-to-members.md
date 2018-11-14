@@ -8,12 +8,12 @@ helpviewer_keywords:
 - members [C++], pointers to
 - pointers, declarations
 ms.assetid: f42ddb79-9721-4e39-95b1-c56b55591f68
-ms.openlocfilehash: ac8a1b43b3bf8bde8f910e72b601bf7d94e0d19d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a15e519be14d9a05cb30a8c9282baccc87a5f35e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480290"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326968"
 ---
 # <a name="pointers-to-members"></a>pointers_to_members
 
@@ -25,28 +25,40 @@ ms.locfileid: "50480290"
 ```
 
 1. 선언 지정자:
-  - 선택적 저장소 클래스 지정자.
 
-  - 선택적 **상수** 및/또는 **volatile** 지정자입니다.
+   - 선택적 저장소 클래스 지정자.
 
-  - 형식 지정자: 형식의 이름  이는 클래스가 아니라 가리킬 멤버의 형식입니다.
+   - 선택적 **상수** 및/또는 **volatile** 지정자입니다.
+
+   - 형식 지정자: 형식의 이름  이는 클래스가 아니라 가리킬 멤버의 형식입니다.
 
 1. 선언자:
 
-  - 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.
-1. 가리킬 멤버가 포함된 클래스의 정규화된 이름입니다.
-  - :: 연산자
-  - 합니다 <strong>\*</strong> 연산자입니다.
-  - 선택적 **상수** 및/또는 **volatile** 지정자입니다.
-  - 멤버에 대한 포인터의 이름을 지정하는 식별자
+   - 선택적 Microsoft 전용 한정자. 자세한 내용은 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)합니다.
 
-  - 선택적 이니셜라이저:
-  - 합니다 **=** 연산자입니다.
-  - 합니다 **&** 연산자입니다.
-  - 클래스의 정규화된 이름
-  - `::` 연산자
-  - 적절한 형식의 클래스의 비정적 멤버 이름
-  - 항상 그렇듯이 여러 선언자(및 모든 관련 이니셜라이저)가 단일 선언에서 허용됩니다.
+   - 가리킬 멤버가 포함된 클래스의 정규화된 이름입니다.
+
+   - 합니다 __::__ 연산자입니다.
+
+   - 합니다 __\*__ 연산자입니다.
+
+   - 선택적 **상수** 및/또는 **volatile** 지정자입니다.
+
+   - 멤버에 대한 포인터의 이름을 지정하는 식별자
+
+1. 선택적 이니셜라이저:
+
+   - 합니다 **=** 연산자입니다.
+
+   - 합니다 **&** 연산자입니다.
+
+   - 클래스의 정규화된 이름
+
+   - 합니다 __::__ 연산자입니다.
+
+   - 적절한 형식의 클래스의 비정적 멤버 이름
+
+항상 그렇듯이 여러 선언자(및 모든 관련 이니셜라이저)가 단일 선언에서 허용됩니다.
 
 클래스의 멤버에 대한 포인터는 멤버의 형식과 멤버가 속한 클래스에 대한 형식 정보를 포함하기 때문에 일반 포인터와 다릅니다. 일반 포인터는 메모리에 있는 단일 개체만 식별합니다(해당 개체의 주소를 포함함). 클래스의 멤버에 대한 포인터는 클래스의 모든 인스턴스에서 해당 멤버를 식별합니다. 다음 예제에서는 `Window` 클래스와 멤버 데이터에 대한 몇 가지 포인터를 선언합니다.
 

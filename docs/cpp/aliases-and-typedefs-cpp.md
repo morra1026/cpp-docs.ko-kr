@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - typedef_cpp
 ms.assetid: af1c24d2-4bfd-408a-acfc-482e264232f5
-ms.openlocfilehash: 9bb39a668605276a82117c1f0a8fe6dd2db20eea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 155f1868123514dfec89ab448ef22f2da225c4d3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546252"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521474"
 ---
 # <a name="aliases-and-typedefs-c"></a>별칭 및 typedef(C++)
 
@@ -68,7 +68,6 @@ using func = void(*)(int);
 // func can be assigned to a function pointer value
 void actual_function(int arg) { /* some code */ }
 func fptr = &actual_function;
-
 ```
 
 에 대 한 제한 된 **typedef** 메커니즘은 템플릿으로 작동 하지. 그러나 C++ 11의 형식 별칭 구문을 사용하면 별칭 템플릿을 만들 수 있습니다.
@@ -78,7 +77,6 @@ template<typename T> using ptr = T*;
 
 // the name 'ptr<T>' is now an alias for pointer to T
 ptr<int> ptr_int;
-
 ```
 
 ## <a name="example"></a>예제

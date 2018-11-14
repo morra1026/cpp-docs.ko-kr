@@ -1,15 +1,15 @@
 ---
 title: 컴파일러 옵션 범주별 목록
-ms.date: 08/20/2018
+ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 20dab3e4ec1d0a409d591e2b470e127e20156a8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa93158e518950efa9d1f2f8092aeabbc3c7724c
+ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532953"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51598823"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -46,7 +46,7 @@ ms.locfileid: "50532953"
 |[/Gh](gh-enable-penter-hook-function.md)|후크 함수 `_penter`를 호출합니다.|
 |[/GH](gh-enable-pexit-hook-function.md)|후크 함수 `_pexit`를 호출합니다.|
 |[/GL](gl-whole-program-optimization.md)|전체 프로그램 최적화를 사용합니다.|
-|[/Gm](gm-enable-minimal-rebuild.md)|최소 재빌드를 사용합니다.|
+|[/Gm](gm-enable-minimal-rebuild.md)|더 이상 사용되지 않습니다. 최소 재빌드를 사용합니다.|
 |[/GR](gr-enable-run-time-type-information.md)|RTTI(런타임 형식 정보)를 사용합니다.|
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` 호출 규칙을 사용합니다(x86 (x86 전용)|
 |[/GS](gs-buffer-security-check.md)|버퍼 보안을 검사합니다.|
@@ -202,6 +202,7 @@ ms.locfileid: "50532953"
 |[/clr:noAssembly](clr-common-language-runtime-compilation.md)|더 이상 사용되지 않습니다. 대신 [/LN (Create MSIL Module)](ln-create-msil-module.md) 를 사용하세요.|
 |[/Fr](fr-fr-create-dot-sbr-file.md)|더 이상 사용되지 않습니다. 지역 변수 없이 찾아보기 정보 파일을 만듭니다.|
 |[/Ge](ge-enable-stack-probes.md)|더 이상 사용되지 않습니다. 스택 프로브를 활성화합니다. 기본적으로 설정되어 있습니다.|
+|[/Gm](gm-enable-minimal-rebuild.md)|더 이상 사용되지 않습니다. 최소 재빌드를 사용합니다.|
 |[/GX](gx-enable-exception-handling.md)|더 이상 사용되지 않습니다. 동기 예외 처리를 사용합니다. 대신 [/EH](eh-exception-handling-model.md) 를 사용합니다.|
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. 대신 [/RTC1](rtc-run-time-error-checks.md) 을 사용합니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|

@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _puttc function
 - puttc function
 ms.assetid: a37b2e82-9d88-4565-8190-ff8d04c0ddb9
-ms.openlocfilehash: 05bbb5434e6626076aab0d574b04058ec730b77c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de87ca4996540737dad319fc920f4c76415250b9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444697"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330882"
 ---
 # <a name="putc-putwc"></a>putc, putwc
 
@@ -63,7 +63,7 @@ wint_t putwc(
 
 ## <a name="return-value"></a>반환 값
 
-쓴 문자를 반환합니다. 오류 또는 파일 끝 조건을 나타내기 위해 **putc** 하 고 **putchar** 반환 * * EOF`; **putwc` 하 고 **putwchar** 반환 **WEOF**합니다. 4개 루틴 모두에 대해 [ferror](ferror.md) 또는 [feof](feof.md)를 사용하여 오류 또는 파일 끝을 확인합니다. Null 포인터에 전달 되 면 *스트림을*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EOF** 또는 **WEOF** 설정 하 고 **errno** 하 **EINVAL**합니다.
+쓴 문자를 반환합니다. 오류 또는 파일 끝 조건을 나타내기 위해 **putc** 하 고 **putchar** 반환 **EOF**; **putwc** 하 고 **putwchar** 반환 **WEOF**합니다. 4개 루틴 모두에 대해 [ferror](ferror.md) 또는 [feof](feof.md)를 사용하여 오류 또는 파일 끝을 확인합니다. Null 포인터에 전달 되 면 *스트림을*에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EOF** 또는 **WEOF** 설정 하 고 **errno** 하 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 

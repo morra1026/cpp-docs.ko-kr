@@ -91,12 +91,12 @@ helpviewer_keywords:
 - m_iRowset
 - m_rgRowHandles
 ms.assetid: 6a9189af-7556-45b1-adcb-9d62bb36704c
-ms.openlocfilehash: 744614dac72a96da2de8722d98789ab5babb170d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a1826155bec3313afe503ee1c58f786a5c4739e8
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646689"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556987"
 ---
 # <a name="irowsetimpl-class"></a>IRowsetImpl 클래스
 
@@ -106,7 +106,7 @@ ms.locfileid: "50646689"
 
 ```cpp
 template <
-   class T, 
+   class T,
    class RowsetInterface,
    class RowClass = CSimpleRow,
    class MapClass = CAtlMap <
@@ -162,7 +162,7 @@ class ATL_NO_VTABLE IRowsetImpl : public RowsetInterface
 
 ## <a name="remarks"></a>설명
 
-[IRowset](/previous-versions/windows/desktop/ms720986) 기본 행 집합 인터페이스입니다.
+[IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) 기본 행 집합 인터페이스입니다.
 
 ## <a name="addrefrows"></a> Irowsetimpl:: Addrefrows
 
@@ -179,7 +179,7 @@ STDMETHOD(AddRefRows )(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Addrefrows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="createrow"></a> Irowsetimpl:: Createrow
 
@@ -222,7 +222,7 @@ STDMETHOD(GetData )(HROW hRow,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowset:: Getdata](/previous-versions/windows/desktop/ms716988) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Getdata](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 에 해당 하는 일부 매개 변수 *OLE DB Programmer's Reference* 매개 변수에서 설명 하는 다른 이름의 `IRowset::GetData`:
 
@@ -255,7 +255,7 @@ virtual DBSTATUS GetDBStatus(RowClass* currentRow,
 
 ### <a name="return-value"></a>반환 값
 
-합니다 [DBSTATUS](/previous-versions/windows/desktop/ms722617) 열에 대 한 플래그입니다.
+합니다 [DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 열에 대 한 플래그입니다.
 
 ## <a name="getnextrows"></a> Irowsetimpl:: Getnextrows
 
@@ -273,7 +273,7 @@ STDMETHOD(GetNextRows )(HCHAPTER hReserved,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowset:: Getnextrows](/previous-versions/windows/desktop/ms709827) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Getnextrows](https://docs.microsoft.com/previous-versions/windows/desktop/ms709827(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="irowsetimpl"></a> Irowsetimpl:: Irowsetimpl
 
@@ -305,7 +305,7 @@ HRESULT RefRows(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Addrefrows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -327,7 +327,7 @@ STDMETHOD(ReleaseRows )(DBCOUNTITEM cRows,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Releaserows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="restartposition"></a> Irowsetimpl:: Restartposition
 
@@ -341,7 +341,7 @@ STDMETHOD(RestartPosition )(HCHAPTER /* hReserved */);
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowset:: Restartposition](/previous-versions/windows/desktop/ms712877) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Restartposition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -362,7 +362,7 @@ virtual HRESULT SetDBStatus(DBSTATUS* statusFlags,
 #### <a name="parameters"></a>매개 변수
 
 *statusFlags*<br/>
-합니다 [DBSTATUS](/previous-versions/windows/desktop/ms722617) 열에 대해 설정할 플래그입니다.
+합니다 [DBSTATUS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 열에 대해 설정할 플래그입니다.
 
 *currentRow*<br/>
 현재 행입니다.

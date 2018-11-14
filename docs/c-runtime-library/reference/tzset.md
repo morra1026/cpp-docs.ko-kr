@@ -23,12 +23,12 @@ helpviewer_keywords:
 - time environment variables
 - environment variables, setting time
 ms.assetid: 3f6ed537-b414-444d-b272-5dd377481930
-ms.openlocfilehash: 33fd1cc0a618fccc4a59e5aff059d3f2cdeec8fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6312297e6daa9b4790674bd26d21812d5bee34c6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661762"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330257"
 ---
 # <a name="tzset"></a>_tzset
 
@@ -51,11 +51,11 @@ void _tzset( void );
 
 |매개 변수|설명|
 |-|-|
-*tzn*|3자의 표준 시간대 이름(예: PST)입니다. 현지 시간에서 UTC로의 올바른 오프셋을 지정해야 합니다.
-*hh*|UTC와 현지 시간 사이의 차이(시간)입니다. 양수 값에 선택적인 (+) 부호입니다.
-*mm*|분. 분리 *hh* 콜론 (**:**).
-*ss*|초. 분리 *mm* 콜론 (**:**).
-*dzn*|3자의 일광 절약 시간 표준 시간대(예: PDT)입니다. 일광 절약 시간 적용 되지에서 위치를 설정 **TZ** 에 대 한 값이 없는 *dzn*합니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다.
+| *tzn* | 3자의 표준 시간대 이름(예: PST)입니다. 현지 시간에서 UTC로의 올바른 오프셋을 지정해야 합니다. |
+| *hh* | UTC와 현지 시간 사이의 차이(시간)입니다. 양수 값에 선택적인 (+) 부호입니다. |
+| *mm* | 분. 분리 *hh* 콜론 (**:**). |
+| *ss* | 초. 분리 *mm* 콜론 (**:**). |
+| *dzn* | 3자의 일광 절약 시간 표준 시간대(예: PDT)입니다. 일광 절약 시간 적용 되지에서 위치를 설정 **TZ** 에 대 한 값이 없는 *dzn*합니다. C 런타임 라이브러리에서는 DST(일광 절약 시간) 계산 구현을 위한 미국의 규칙이 사용된다고 가정합니다. |
 
 > [!NOTE]
 > 계산할 때는 시간 차이의 부호에 주의해야 합니다. 시간 차이는 현지 시간에서 UTC로의 오프셋(역방향 아님)이므로 부호가 직관적으로 예상하는 것과 반대일 수 있습니다. UTC보다 빠른 표준 시간대의 경우 시간 차이가 음수이고, UTC보다 늦은 표준 시간대의 경우 차이가 양수입니다.

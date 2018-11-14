@@ -9,12 +9,12 @@ helpviewer_keywords:
 - string comparison, CString operations
 - characters, accessing in CStrings
 ms.assetid: 41db66b2-9427-4bb3-845a-9b6869159a6c
-ms.openlocfilehash: d1f16e470123bd52cb2656541aafaabdfc16af8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b387cbb8671dda0aca63da9b57dd694e478b62a9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434077"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523132"
 ---
 # <a name="basic-cstring-operations"></a>기본 CString 작업
 
@@ -91,11 +91,10 @@ CString 개체를 다른 문자열 형식으로 변환 하는 방법에 대 한 
 
 CString 사용 하 여는 데 `wcout` 개체를 명시적으로 캐스팅 해야 합니다는 `const wchar_t*` 다음 예와에서 같이:
 
-```
+```cpp
 CString cs("meow");
 
-    wcout <<(const wchar_t*) cs <<endl;
-
+wcout << (const wchar_t*) cs << endl;
 ```
 
 캐스트를 사용 하지 않고 `cs` 로 처리 됩니다는 `void*` 고 `wcout` 개체의 주소를 출력 합니다. 이 문제는 c + + 표준 템플릿 인수 감소 및 오버 로드 확인의 올바른 자체는 및와 호환 되는 간에 미묘한 상호 작용을 통해 발생 합니다.

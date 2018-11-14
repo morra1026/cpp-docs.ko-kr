@@ -15,12 +15,12 @@ helpviewer_keywords:
 - ??! trigraph
 - ??' trigraph
 ms.assetid: 617f76ec-b8e8-4cfe-916c-4bc32cbd9aeb
-ms.openlocfilehash: 2106f7dda6ecc71478b29cfad3f15dfee0483025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f84e5c1a1455e35992aa4b118c345bc1fa6ae587
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523904"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331622"
 ---
 # <a name="trigraphs"></a>삼중자
 
@@ -34,29 +34,29 @@ Visual C++에서는 삼중자 대체가 계속 지원되지만 기본적으로�
 
 ### <a name="trigraph-sequences"></a>삼중자 시퀀스
 
-|삼중자|문장 부호 문자|
-|--------------|---------------------------|
-|??=|#|
-|??(|[|
-|??/|\|
-|??)|]|
-|??'|^|
-|??\<|{|
-|??!|&#124;|
-|??>|}|
-|??-|~|
+| 삼중자 | 문장 부호 문자 |
+|----------|-----------------------|
+| ??= | # |
+| ??( | \[ |
+| ??/ | \\ |
+| ??) | ] |
+| ??' | ^ |
+| ??\< | { |
+| ??! | &#124; |
+| ??> | } |
+| ??- | ~ |
 
 삼중자는 항상 단일 소스 문자로 처리됩니다. 삼중자 변환은 문자열 리터럴 및 문자 상수에서 이스케이프 문자를 인식하기 전에 첫 번째 [변환 단계](../preprocessor/phases-of-translation.md)에서 발생합니다. 위의 표에 나와 있는 9개의 삼중자만 인식됩니다. 다른 모든 문자 시퀀스는 변환되지 않고 유지됩니다.
 
 문자 이스케이프 시퀀스인 **\\?** 는 삼중자와 비슷한 문자 시퀀스가 잘못 해석되는 것을 방지합니다. 이스케이프 시퀀스에 대한 자세한 내용은 [이스케이프 시퀀스](../c-language/escape-sequences.md)를 참조하세요. 예를 들어, `What??!` 문자열을 이 `printf` 문으로 출력하려고 하면
 
-```
+```C
 printf( "What??!\n" );
 ```
 
 `What|`라는 문자열이 출력됩니다. 이는 `??!`가 `|` 문자로 바뀌는 삼중자 시퀀스이기 때문입니다. 문자열을 올바르게 출력하려면 다음과 같이 문을 작성하십시오.
 
-```
+```C
 printf( "What?\?!\n" );
 ```
 

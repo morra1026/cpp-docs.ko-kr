@@ -6,16 +6,16 @@ helpviewer_keywords:
 - IXMLHTTPRequest2 and tasks, example
 - IXHR2 and tasks, example
 ms.assetid: e8e12d46-604c-42a7-abfd-b1d1bb2ed6b3
-ms.openlocfilehash: 69e365c0f0bbee7014b6d754c920bd6241064fdf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36769fa531decaee81c73a4751f5c6ed24008ffc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495560"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525017"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>연습: 작업 및 XML HTTP 요청을 사용하여 연결
 
-사용 하는 방법을 보여 주는이 예제는 [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 유니버설 Windows 플랫폼 (UWP에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스 ) 앱입니다. `IXMLHTTPRequest2`를 작업과 함께 결합하여 다른 작업을 사용하여 구성되는 코드를 작성할 수 있습니다. 예를 들어 일련의 작업 중 일부로 다운로드 작업을 사용할 수 있습니다. 다운로드 작업은 작업이 취소되는 경우에도 응답할 수 있습니다.
+사용 하는 방법을 보여 주는이 예제는 [IXMLHTTPRequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 유니버설 Windows 플랫폼 (UWP에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스 ) 앱입니다. `IXMLHTTPRequest2`를 작업과 함께 결합하여 다른 작업을 사용하여 구성되는 코드를 작성할 수 있습니다. 예를 들어 일련의 작업 중 일부로 다운로드 작업을 사용할 수 있습니다. 다운로드 작업은 작업이 취소되는 경우에도 응답할 수 있습니다.
 
 > [!TIP]
 >  또한 c + + 앱을 사용 하 여 UWP 앱 또는 데스크톱 c + + 앱에서에서 HTTP 요청을 수행 하는 c + + REST SDK를 사용할 수 있습니다. 자세한 내용은 참조 하세요. [c + + REST SDK (코드명 "Casablanca")](https://github.com/Microsoft/cpprestsdk)합니다.
@@ -69,35 +69,34 @@ ms.locfileid: "50495560"
 
    [!code-xml[concrt-using-ixhr2#A1](../../parallel/concrt/codesnippet/xaml/walkthrough-connecting-using-tasks-and-xml-http-requests_4.xaml)]
 
-1. MainPage.xaml.h에서 다음 `#include` 지시문을 추가합니다.
+2. MainPage.xaml.h에서 다음 `#include` 지시문을 추가합니다.
 
    [!code-cpp[concrt-using-ixhr2#A2](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_5.h)]
 
-1. MainPage.xaml.h에서 다음 `private` 멤버 변수를 `MainPage` 클래스에 추가합니다.
+3. MainPage.xaml.h에서 다음 `private` 멤버 변수를 `MainPage` 클래스에 추가합니다.
 
    [!code-cpp[concrt-using-ixhr2#A3](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_6.h)]
 
-1. MainPage.xaml.h에서 `private` 메서드 `ProcessHttpRequest`를 선언합니다.
+4. MainPage.xaml.h에서 `private` 메서드 `ProcessHttpRequest`를 선언합니다.
 
    [!code-cpp[concrt-using-ixhr2#A4](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_7.h)]
 
-1. MainPage.xaml.cpp에서 다음 `using` 문을 추가합니다.
+5. MainPage.xaml.cpp에서 다음 `using` 문을 추가합니다.
 
    [!code-cpp[concrt-using-ixhr2#A5](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_8.cpp)]
 
-1. MainPage.xaml.cpp에서 `GetButton_Click` 클래스의 `PostButton_Click`, `CancelButton_Click` 및 `MainPage` 메서드를 구현합니다.
+6. MainPage.xaml.cpp에서 `GetButton_Click` 클래스의 `PostButton_Click`, `CancelButton_Click` 및 `MainPage` 메서드를 구현합니다.
 
    [!code-cpp[concrt-using-ixhr2#A6](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_9.cpp)]
 
-    > [!TIP]
-
-    >  앱 취소에 대 한 지원이 필요 하지 않으면, 전달 [concurrency:: cancellation_token:: none](reference/cancellation-token-class.md#none) 에 `HttpRequest::GetAsync` 및 `HttpRequest::PostAsync` 메서드.
+   > [!TIP]
+   > 앱 취소에 대 한 지원이 필요 하지 않으면, 전달 [concurrency:: cancellation_token:: none](reference/cancellation-token-class.md#none) 에 `HttpRequest::GetAsync` 및 `HttpRequest::PostAsync` 메서드.
 
 1. MainPage.xaml.cpp에서 `MainPage::ProcessHttpRequest` 메서드를 구현합니다.
 
    [!code-cpp[concrt-using-ixhr2#A7](../../parallel/concrt/codesnippet/cpp/walkthrough-connecting-using-tasks-and-xml-http-requests_10.cpp)]
 
-1. 프로젝트 속성에서 아래의 **링커**를 **입력**를 지정 `shcore.lib` 및 `msxml6.lib`합니다.
+8. 프로젝트 속성에서 아래의 **링커**를 **입력**를 지정 `shcore.lib` 및 `msxml6.lib`합니다.
 
 다음은 실행 중인 응용 프로그램입니다.
 

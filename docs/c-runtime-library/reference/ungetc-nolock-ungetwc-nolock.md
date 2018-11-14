@@ -32,12 +32,12 @@ helpviewer_keywords:
 - ungettc_nolock function
 - ungetc_nolock function
 ms.assetid: aa02d5c2-1be1-46d2-a8c4-b61269e9d465
-ms.openlocfilehash: 17fadee825aff7b691db74eaaa7b695ba5a49a42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55888f122af0848c92204168a23cca93e2517904
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482864"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331505"
 ---
 # <a name="ungetcnolock-ungetwcnolock"></a>_ungetc_nolock, _ungetwc_nolock
 
@@ -66,7 +66,7 @@ wint_t _ungetwc_nolock(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 이러한 함수의 각 반환에서 문자 인수 *c*합니다. 경우 *c* 다시 푸시할 수 없거나 읽은 문자가 없는 경우 입력된 스트림이 변경 하 고 **_ungetc_nolock** 반환 * * EOF`; **_ungetwc_nolock` 반환 **WEOF**합니다. 하는 경우 *스트림을* 됩니다 **NULL**, **EOF** 또는 **WEOF** 반환 됩니다 및 **errno** 로 설정 되어  **EINVAL**합니다.
+성공 하면 이러한 함수의 각 반환에서 문자 인수 *c*합니다. 하는 경우 *c* 다시 푸시할 수 없거나 읽은 문자가 없는 경우 입력된 스트림이 변경 하 고 **_ungetc_nolock** 반환 **EOF**; **_ungetwc_nolock** 반환 **WEOF**합니다. 하는 경우 *스트림을* 됩니다 **NULL**, **EOF** 또는 **WEOF** 반환 됩니다 및 **errno** 로 설정 되어  **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

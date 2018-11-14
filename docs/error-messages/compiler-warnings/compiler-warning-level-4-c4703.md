@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4703
 ms.assetid: 5dad454e-69e3-4931-9168-050a861c05f8
-ms.openlocfilehash: bc4d0d493b6ee935d3f58bae70e2f7779158ec95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab0e4ef0024446f51f7ee1e50480c1ab2b277652
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603517"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518037"
 ---
 # <a name="compiler-warning-level-4-c4703"></a>컴파일러 경고(수준 4) C4703
 
@@ -46,7 +46,6 @@ void main()
 ```Output
 c:\src\test.cpp(10) : warning C4701: potentially uninitialized local variable 'p' used
 c:\src\test.cpp(10) : warning C4703: potentially uninitialized local pointer variable 'p' used
-
 ```
 
 이 경고를 해결하려면 다음 예제에 표시된 것처럼 변수를 초기화합니다.

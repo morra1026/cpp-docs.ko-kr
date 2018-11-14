@@ -26,12 +26,12 @@ helpviewer_keywords:
 - heaps, checking consistency
 - _heapchk function
 ms.assetid: 859619a5-1e35-4f02-9e09-11d9fa266ec0
-ms.openlocfilehash: b34b4ea1bb2512628213cabb55e26e2dad6d445c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bdc0137761664a668d6ef95d739f09501e8290e5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580624"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331401"
 ---
 # <a name="heapchk"></a>_heapchk
 
@@ -49,11 +49,11 @@ int _heapchk( void );
 
 |반환 값|조건|
 |-|-|
-**_HEAPBADBEGIN**|초기 헤더 정보가 잘못되었거나 찾을 수 없습니다.
-**_HEAPBADNODE**|잘못된 노드가 검색되었거나 힙이 손상되었습니다.
-**_HEAPBADPTR**|힙 포인터가 잘못되었습니다.
-**_HEAPEMPTY**|힙이 초기화되지 않았습니다.
-**_HEAPOK**|힙이 일치하는 것 같습니다.
+| **_HEAPBADBEGIN** | 초기 헤더 정보가 잘못되었거나 찾을 수 없습니다. |
+| **_HEAPBADNODE** | 잘못된 노드가 검색되었거나 힙이 손상되었습니다. |
+| **_HEAPBADPTR** | 힙 포인터가 잘못되었습니다. |
+| **_HEAPEMPTY** | 힙이 초기화되지 않았습니다. |
+| **_HEAPOK** | 힙이 일치하는 것 같습니다. |
 
 또한 오류가 발생 하는 경우 **_heapchk** 설정 **errno** 하 **ENOSYS**합니다.
 

@@ -6,12 +6,12 @@ ms.technology:
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 18e4185f1cbd8b37e0e3cc7b11abc24505980b7d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5dca047f6de1ee77734be8842f0ac68402b7dbfc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562164"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524254"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)의 C++ 규칙 향상
 
@@ -223,9 +223,9 @@ B b(42L); // now calls B(int)
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {};
@@ -243,9 +243,9 @@ C++17에서 `Derived`는 이제 집계 형식으로 간주되므로 전용 기�
 struct Derived;
 
 struct Base {
-    friend struct Derived;
+    friend struct Derived;
 private:
-    Base() {}
+    Base() {}
 };
 
 struct Derived : Base {
@@ -1371,7 +1371,7 @@ constexpr 정적 데이터 멤버는 이제 암시적으로 인라인이므로 �
 
 ```cpp
 struct X {
-    static constexpr int size = 3;
+    static constexpr int size = 3;
 };
 const int X::size; // C5041
 ```
@@ -1600,7 +1600,6 @@ int main() {
     };
     return 0;
 }
-
 ```
 
 Visual Studio 2017 버전 15.7 업데이트 3 이상에서는 이전 예제에서 현재 ‘C2078 이니셜라이저가 너무 많음’이 발생합니다. 다음 예제는 코드를 수정하는 방법을 보여 줍니다. 중첩된 brace-init-lists를 사용하여 `std::array`를 초기화할 때 내부 배열에 자체 braced-list를 제공합니다.
@@ -1619,7 +1618,6 @@ int main() {
     }}; // note double braces
     return 0;
 }
-
 ```
 
 ## <a name="update_158"></a> Visual Studio 2017 15.8 버전의 버그 수정 및 동작 변경
@@ -1675,7 +1673,6 @@ struct S : Base<T> {
         return base_value;
     }
 };
-
 ```
 
 이 오류를 해결하려면 `return` 문을 `return this->base_value;`로 변경합니다.
@@ -1851,7 +1848,6 @@ struct A
 };
 
 A<>::from_template_t<A<int>> a;
-
 ```
 
 Visual Studio 2017 버전 15.9의 **/permissive-** 모드에서 컴파일러는 C3861: *'from_template': 식별자를 찾을 수 없음*을 발생시킵니다. d
@@ -1917,7 +1913,6 @@ int main()
 
     return 0;
 }
-
 ```
 
 이전 예제는 C2668을 발생시킵니다.
@@ -1979,7 +1974,6 @@ int main()
 
     return 0;
 }
-
 ```
 
 ## <a name="see-also"></a>참고 항목

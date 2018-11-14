@@ -2,16 +2,17 @@
 title: 키워드 요약
 ms.date: 11/04/2016
 ms.assetid: 341d8297-03eb-4351-9ed0-138ec59b375c
-ms.openlocfilehash: 0a21e6e81efb19d7895abb4df903b4156df165b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 780cb80a3c311239eed825101bb1d12be0b58a56
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495604"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325915"
 ---
 # <a name="summary-of-keywords"></a>키워드 요약
 
-*키워드*: 다음 중 하나<br/>
+*키워드*: 다음 중 하나
+
 |||||
 |-|-|-|-|
 |**auto**|**double**|**int**|**struct**|

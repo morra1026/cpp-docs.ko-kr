@@ -1,21 +1,23 @@
 ---
 title: 컴파일러 오류 C3409
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 f1_keywords:
 - C3409
 helpviewer_keywords:
 - C3409
 ms.assetid: e372d9fa-230c-4b28-b6d3-6ad81ccf9dbb
-ms.openlocfilehash: 2a677da40b64a19c4d2a27436344eec7adb80c14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b6ceb6f2e8700a5459dbd01db443ef90de314b5e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600891"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330088"
 ---
 # <a name="compiler-error-c3409"></a>컴파일러 오류 C3409
 
-빈 특성 블록 허용 되지 않습니다.
+> 빈 특성 블록 허용 되지 않습니다.
+
+## <a name="remarks"></a>설명
 
 대괄호는 컴파일러에 의해 해석 된를 [특성](../../windows/cpp-attributes-reference.md) 블록 하지만 특성이 없는 찾을 수 없습니다.
 
@@ -29,19 +31,15 @@ ms.locfileid: "50600891"
 
    1. 특성 블록을 제거 합니다.
 
-1. 대괄호는 람다 식의 일부일 경우:
+1. 대괄호를 사용 하면 람다 식의 일부인, 람다 식 구문이 규칙을 따르는지 있는지 확인 합니다.
 
-   1. 람다 식 구문이 규칙 따르는지 확인 합니다.
-
-         람다 식 구문에 대 한 자세한 내용은 참조 하세요. [람다 식 구문](../../cpp/lambda-expression-syntax.md)합니다.
-
-    2.
+   람다 식 구문에 대 한 자세한 내용은 참조 하세요. [람다 식 구문](../../cpp/lambda-expression-syntax.md)합니다.
 
 ## <a name="example"></a>예제
 
 다음 예제에서는 C3409를 생성합니다.
 
-```
+```cpp
 // C3409.cpp
 // compile with: /c
 #include <windows.h>
@@ -60,7 +58,7 @@ class b : public x {};
 
 다음 예제에서는 람다 식 사용 하기 때문에 C3409를 생성 합니다 `mutable` 사양 하지만 매개 변수 목록을 제공 하지 않습니다. 컴파일러는 대괄호 특성 블록 또는 람다 식의 정의 포함 되는지 여부를 확인할 수 없습니다.
 
-```
+```cpp
 // C3409b.cpp
 
 int main()

@@ -80,12 +80,12 @@ helpviewer_keywords:
 - shared classes, CStringT
 - CStringT class
 ms.assetid: 7cacc59c-425f-40f1-8f5b-6db921318ec9
-ms.openlocfilehash: 28b2f929e9f8695904bcd3f02dd2d315ab3ca349
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd8fefd3424ab5ec422adb352972ba846e45139d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483410"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525498"
 ---
 # <a name="cstringt-class"></a>CStringT 클래스
 
@@ -94,13 +94,10 @@ ms.locfileid: "50483410"
 ## <a name="syntax"></a>구문
 
 ```
-
 template<typename BaseType, class StringTraits>
 class CStringT :
-public CSimpleStringT<BaseType,
-                      _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>
-                      ::c_bIsMFCDLLTraits>
-
+    public CSimpleStringT<BaseType,
+        _CSTRING_IMPL_::_MFCDLLTraitsCheck<BaseType, StringTraits>::c_bIsMFCDLLTraits>
 ```
 
 #### <a name="parameters"></a>매개 변수
@@ -117,19 +114,19 @@ String 클래스의 문자 형식입니다. 다음 중 하나일 수 있습니�
 *StringTraits*<br/>
 String 클래스 C 런타임 (CRT) 라이브러리 지원 및 문자열 리소스가 있는 경우 결정 합니다. 다음 중 하나일 수 있습니다.
 
-- **StrTraitATL < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitATL < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    클래스에 필요한 CRT 지원 및 리소스 문자열에 지정 된 모듈에 대해 검색 `m_hInstResource` (응용 프로그램의 모듈 클래스의 멤버).
 
-- **StrTraitATL < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitATL < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    클래스에는 CRT 지원 및 리소스 문자열에 지정 된 모듈에 대해 검색 않아도 `m_hInstResource` (응용 프로그램의 모듈 클래스의 멤버).
 
-- **StrTraitMFC < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitMFC < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsCRT < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    클래스는 CRT 지원 및 표준 MFC 검색 알고리즘을 사용 하 여 리소스 문자열을 검색 해야 합니다.
 
-- **StrTraitMFC < wchar_t** &#124; `char` &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; `char` &#124; **TCHAR >>**
+- **StrTraitMFC < wchar_t** &#124; **char** &#124; **TCHAR, ChTraitsOS < wchar_t** &#124; **char** &#124;  **TCHAR >>**
 
    클래스에는 CRT 지원 및 표준 MFC 검색 알고리즘을 사용 하 여 리소스 문자열을 검색 필요 하지 않습니다.
 
@@ -295,9 +292,9 @@ BSTR AllocSysString() const;
 
 MFC 프로그램에는 [CMemoryException 클래스](../../mfc/reference/cmemoryexception-class.md) 메모리가 부족 하 여 없으면 throw 됩니다. ATL 프로그램에서을 [CAtlException](../../atl/reference/catlexception-class.md) throw 됩니다. 이 함수는 Automation에 대 한 문자열을 반환 하려면 일반적으로 사용 됩니다.
 
-일반적으로이 문자열은 COM 함수에 전달 하는 경우 [in] 매개 변수를 다음이 필요 호출자가 해제할 문자열입니다. 사용 하 여 이렇게 [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK에 설명 된 대로 합니다. 자세한 내용은 [Allocating 및 BSTR에 대해 메모리를 해제](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)합니다.
+일반적으로이 문자열은 COM 함수에 전달 하는 경우 [in] 매개 변수를 다음이 필요 호출자가 해제할 문자열입니다. 사용 하 여 이렇게 [SysFreeString](/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK에 설명 된 대로 합니다. 자세한 내용은 [Allocating 및 BSTR에 대해 메모리를 해제](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md)합니다.
 
-Windows에서 OLE 할당 함수에 대 한 자세한 내용은 참조 하세요. [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK에 있습니다.
+Windows에서 OLE 할당 함수에 대 한 자세한 내용은 참조 하세요. [SysAllocString](/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK에 있습니다.
 
 ### <a name="example"></a>예제
 

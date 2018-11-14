@@ -3,12 +3,12 @@ title: C++ 형식 시스템(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 3e500980fbb5e6397e992f53b58f28fa710e7af0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba24a4a739e4eb13d983202943ca046f857422d2
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602607"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521094"
 ---
 # <a name="c-type-system-modern-c"></a>C++ 형식 시스템(최신 C++)
 
@@ -86,7 +86,6 @@ int maxValue;                // Not recommended! maxValue contains
 
 const double PI = 3.1415;
 PI = .75 //Error. Cannot modify const variable.
-
 ```
 
 합니다 **상수** 한정자는 함수 및 변수 선언에 광범위 하 게 사용 하 고 "const 정확성" c + +의 중요 한 개념은 기본적으로 사용 하는 의미 **const** 컴파일 타임을 보장 하기 위해 값이 실수로 수정 되지 않습니다. 자세한 내용은 [const](../cpp/const-cpp.md)합니다.

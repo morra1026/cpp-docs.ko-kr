@@ -25,7 +25,6 @@ f1_keywords:
 - async/Microsoft::WRL::AsyncBase::put_Id
 - async/Microsoft::WRL::AsyncBase::PutOnComplete
 - async/Microsoft::WRL::AsyncBase::PutOnProgress
-- async/Microsoft::WRL::AsyncBase::Start
 - async/Microsoft::WRL::AsyncBase::TryTransitionToCompleted
 - async/Microsoft::WRL::AsyncBase::TryTransitionToError
 helpviewer_keywords:
@@ -51,16 +50,15 @@ helpviewer_keywords:
 - Microsoft::WRL::AsyncBase::put_Id method
 - Microsoft::WRL::AsyncBase::PutOnComplete method
 - Microsoft::WRL::AsyncBase::PutOnProgress method
-- Microsoft::WRL::AsyncBase::Start method
 - Microsoft::WRL::AsyncBase::TryTransitionToCompleted method
 - Microsoft::WRL::AsyncBase::TryTransitionToError method
 ms.assetid: 64259b9b-f427-4ffd-a611-e7a2f82362b2
-ms.openlocfilehash: 71839fbea4300560dbf2b9617fe7b8d3864676b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19c4779dbd4d39260d5fe03967e8c0a530a75026
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599672"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556922"
 ---
 # <a name="asyncbase-class"></a>AsyncBase 클래스
 
@@ -116,7 +114,7 @@ class AsyncBase<TComplete, Details::Nil, resultType> :
 [Asyncbase:: Put_id](#put-id)                 | 비동기 작업의 핸들을 설정 합니다.
 [Asyncbase:: Putoncomplete](#putoncomplete)   | 완료 이벤트 처리기의 주소를 지정된 된 값으로 설정합니다.
 [Asyncbase:: Putonprogress](#putonprogress)   | 진행률 이벤트 처리기의 주소를 지정된 된 값으로 설정합니다.
-[Asyncbase:: Start](#start)                   | 비동기 작업을 시작 합니다.
+
 
 ### <a name="protected-methods"></a>보호된 메서드
 
@@ -130,6 +128,7 @@ class AsyncBase<TComplete, Details::Nil, resultType> :
 [Asyncbase:: Oncancel](#oncancel)                                             | 파생된 클래스에서 재정의 되 면 비동기 작업을 취소 합니다.
 [Asyncbase:: Onclose](#onclose)                                               | 파생된 클래스에서 재정의 하는 경우 비동기 작업을 닫습니다.
 [Asyncbase:: Onstart](#onstart)                                               | 파생된 클래스에서 재정의 되 면 비동기 작업을 시작 합니다.
+[Asyncbase:: Start](#start)                                                   | 비동기 작업을 시작 합니다.
 [Asyncbase:: Trytransitiontocompleted](#trytransitiontocompleted)             | 현재 비동기 작업이 완료 되었는지 여부를 나타냅니다.
 [Asyncbase:: Trytransitiontoerror](#trytransitiontoerror)                     | 지정된 된 오류 코드 내부 오류 상태를 수정할 수 있는지 여부를 나타냅니다.
 
@@ -504,7 +503,7 @@ S_ok이 고, 작업을 시작 하거나 이미 있는 경우 시작 합니다. �
 
 ### <a name="remarks"></a>설명
 
-`Start()` 기본 구현 이며 `IAsyncInfo::Start`, 없습니다 실제 작업을 수행 합니다. 실제로 비동기 작업을 시작 하려면 재정의 `OnStart()` 순수 가상 메서드가 있습니다.
+`Start()` 비동기 작업 "핫 시작" 호출자에 게 반환 하기 전에 외부에서 볼 수 없는 보호 된 메서드입니다.
 
 ## <a name="trytransitiontocompleted"></a>Asyncbase:: Trytransitiontocompleted
 

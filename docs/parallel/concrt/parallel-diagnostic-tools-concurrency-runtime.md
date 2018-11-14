@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: 44bb32f87379a05829816234ee8bc412de1f24b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a9d6823a5f82e3d52f82f568d3e3c00b68236fef
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608574"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329217"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>병렬 진단 도구(동시성 런타임)
 
@@ -35,8 +35,13 @@ Visual Studio 디버거를 포함 합니다 **병렬 스택** 창 **병렬 태�
 
 |이벤트(event)|설명|값|
 |-----------|-----------------|-----------|
-
-|[concurrency::ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)| 동시성 런타임에 대 한 ETW 공급자 식별자입니다. | `f7b697a3-4db5-4d3b-be71-c4d284e6592f`| | [concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#contexteventguid)| 컨텍스트와 관련 된 이벤트를 표시 합니다. | `5727a00f-50be-4519-8256-f7699871fecb`| | [concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeventguid)| 진입 및 종료에 대 한 호출을 표시 합니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘입니다. | `31c8da6b-6165-4042-8b92-949e315f4d84`| | [concurrency::PPLParallelForeachEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeacheventguid)| 진입 및 종료에 대 한 호출을 표시 합니다 [concurrency:: parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘입니다. | `5cb7d785-9d66-465d-bae1-4611061b5434`| | [concurrency::PPLParallelInvokeEventGuid](reference/concurrency-namespace-constants1.md#pplparallelinvokeeventguid)| 진입 및 종료에 대 한 호출을 표시 합니다 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘입니다. | `d1b5b133-ec3d-49f4-98a3-464d1a9e4682`| | [concurrency::SchedulerEventGuid](reference/concurrency-namespace-constants1.md#schedulereventguid)| 관련 된 이벤트를 표시 합니다 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md). | `e2091f8a-1e0a-4731-84a2-0dd57c8a5261`| | [concurrency::VirtualProcessorEventGuid](reference/concurrency-namespace-constants1.md#virtualprocessoreventguid)| 가상 프로세서와 관련 된 이벤트를 표시 합니다. |`2f27805f-1676-4ecc-96fa-7eb09d44302f`|
+|[concurrency::ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)|동시성 런타임에 대 한 ETW 공급자 식별자입니다.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|
+|[concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#contexteventguid)|컨텍스트와 관련 된 이벤트를 표시 합니다.|`5727a00f-50be-4519-8256-f7699871fecb`|
+|[concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeventguid)|진입 및 종료에 대 한 호출을 표시 합니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘입니다.|`31c8da6b-6165-4042-8b92-949e315f4d84`|
+|[concurrency::PPLParallelForeachEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeacheventguid)|진입 및 종료에 대 한 호출을 표시 합니다 [concurrency:: parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) 알고리즘입니다.|`5cb7d785-9d66-465d-bae1-4611061b5434`|
+|[concurrency::PPLParallelInvokeEventGuid](reference/concurrency-namespace-constants1.md#pplparallelinvokeeventguid)|진입 및 종료에 대 한 호출을 표시 합니다 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘입니다.|`d1b5b133-ec3d-49f4-98a3-464d1a9e4682`|
+|[concurrency::SchedulerEventGuid](reference/concurrency-namespace-constants1.md#schedulereventguid)|관련 된 이벤트를 표시 합니다 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)합니다.|`e2091f8a-1e0a-4731-84a2-0dd57c8a5261`|
+|[concurrency::VirtualProcessorEventGuid](reference/concurrency-namespace-constants1.md#virtualprocessoreventguid)|가상 프로세서와 관련 된 이벤트를 표시 합니다.|`2f27805f-1676-4ecc-96fa-7eb09d44302f`|
 
 동시성 런타임에서 정의 하지만 발생 하지 않으므로 현재, 다음과 같은 이벤트입니다. 런타임에서 나중에 사용 하기 위해 이러한 이벤트를 예약 합니다.
 

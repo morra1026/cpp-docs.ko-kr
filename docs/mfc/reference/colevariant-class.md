@@ -20,16 +20,16 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: 528b46f1b370f8679b86e3d734712f936a153b9c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b37105cf1afdcf966176a2e2615f9c141022088d
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624996"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520520"
 ---
 # <a name="colevariant-class"></a>COleVariant 클래스
 
-[VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식을 캡슐화합니다.
+[VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 데이터 형식을 캡슐화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,14 +68,14 @@ class COleVariant : public tagVARIANT
 
 ## <a name="remarks"></a>설명
 
-이 데이터 형식은 OLE 자동화에 사용 됩니다. 특히 합니다 [DISPPARAMS](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagdispparams) 구조 VARIANT 구조의 배열에 대 한 포인터를 포함 합니다. A `DISPPARAMS` 구조는 매개 변수를 전달 하는 데 사용 됩니다 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)합니다.
+이 데이터 형식은 OLE 자동화에 사용 됩니다. 특히 합니다 [DISPPARAMS](/windows/desktop/api/oaidl/ns-oaidl-tagdispparams) 구조 VARIANT 구조의 배열에 대 한 포인터를 포함 합니다. A `DISPPARAMS` 구조는 매개 변수를 전달 하는 데 사용 됩니다 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)합니다.
 
 > [!NOTE]
 > 이 클래스에서 파생 되는 `VARIANT` 구조입니다. 즉, 전달할 수 있습니다는 `COleVariant` 필요로 하는 매개 변수를 `VARIANT` 하 고의 데이터 멤버를 `VARIANT` 구조는 액세스할 수 있는 데이터 멤버의 `COleVariant`합니다.
 
 MFC 클래스와 관련 된 두 [COleCurrency](../../mfc/reference/colecurrency-class.md) 하 고 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 통화 variant 데이터 형식을 캡슐화 ( `VT_CY`) 및 날짜 ( `VT_DATE`). 합니다 `COleVariant` 클래스를 DAO 클래스에서 광범위 하 게 사용 됩니다; 예를 들어이 클래스의 일반적인 사용에 대 한 이러한 클래스를 참조 하세요 [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md) 하 고 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md)합니다.
 
-자세한 내용은 참조 하세요. 합니다 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy), [DISPPARAMS](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagdispparams), 및 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK에는 항목입니다.
+자세한 내용은 참조 하세요. 합니다 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy), [DISPPARAMS](/windows/desktop/api/oaidl/ns-oaidl-tagdispparams), 및 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK에는 항목입니다.
 
 대 한 자세한 내용은 합니다 `COleVariant` 클래스 및 해당 OLE automation 사용 문서의 "전달 매개 변수에서 OLE Automation"을 참조 하세요. [Automation](../../mfc/automation.md)합니다.
 
@@ -91,7 +91,7 @@ MFC 클래스와 관련 된 두 [COleCurrency](../../mfc/reference/colecurrency-
 
 ##  <a name="attach"></a>  COleVariant::Attach
 
-연결 하려면이 함수를 호출 합니다 주어진 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체를 현재 `COleVariant` 개체입니다.
+연결 하려면이 함수를 호출 합니다 주어진 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체를 현재 `COleVariant` 개체입니다.
 
 ```
 void Attach(VARIANT& varSrc);
@@ -106,7 +106,7 @@ void Attach(VARIANT& varSrc);
 
 이 함수는 설정의 VARTYPE *varSrc* 값을 vt_empty로 합니다.
 
-자세한 내용은 참조는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 및 [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK에는 항목입니다.
+자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 및 [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK에는 항목입니다.
 
 ##  <a name="colevariant"></a>  COleVariant::COleVariant
 
@@ -222,11 +222,11 @@ void ChangeType(VARTYPE vartype, LPVARIANT pSrc = NULL);
 이 대 한 VARTYPE `COleVariant` 개체입니다.
 
 *pSrc*<br/>
-에 대 한 포인터를 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 변환 될 개체입니다. 이 값이 NULL 이면이 `COleVariant` 개체 변환에 원본으로 사용 됩니다.
+에 대 한 포인터를 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 변환 될 개체입니다. 이 값이 NULL 이면이 `COleVariant` 개체 변환에 원본으로 사용 됩니다.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 참조는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), 및 [VariantChangeType](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantchangetype) Windows SDK에는 항목.
+자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), 및 [VariantChangeType](/windows/desktop/api/oleauto/nf-oleauto-variantchangetype) Windows SDK에는 항목.
 
 ##  <a name="clear"></a>  COleVariant::Clear
 
@@ -244,7 +244,7 @@ void Clear();
 
 ##  <a name="detach"></a>  COleVariant::Detach
 
-기본 분리 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체에서 `COleVariant` 개체입니다.
+기본 분리 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체에서 `COleVariant` 개체입니다.
 
 ```
 VARIANT Detach();
@@ -257,7 +257,7 @@ VARIANT Detach();
 > [!NOTE]
 >  호출한 후 `Detach`은 호출 하는 호출자의 책임 `VariantClear` 결과에 `VARIANT` 구조입니다.
 
-자세한 내용은 참조는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), 및 [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) Windows SDK에는 항목.
+자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum), 및 [VariantClear](/windows/desktop/api/oleauto/nf-oleauto-variantclear) Windows SDK에는 항목.
 
 ##  <a name="getbytearrayfromvariantarray"></a>  COleVariant::GetByteArrayFromVariantArray
 
@@ -344,7 +344,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
 
 - **operator = (** *lbSrc* **)** 복사본을 [CLongBinary](../../mfc/reference/clongbinary-class.md) 이 개체로 `COleVariant` 개체입니다.
 
-자세한 내용은 참조는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 및 [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK에는 항목입니다.
+자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 및 [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK에는 항목입니다.
 
 ##  <a name="operator_eq_eq"></a>  COleVariant::operator = =
 

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - file handles [C++], associating
 - _open_osfhandle function
 ms.assetid: 30d94df4-7868-4667-a401-9eb67ecb7855
-ms.openlocfilehash: e8b7dc097c1af60894c627b8b660c4d9d81361db
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f45ca46cae459c8606f88a98d03b64c40e5d5f01
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519459"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327865"
 ---
 # <a name="openosfhandle"></a>_open_osfhandle
 
@@ -64,10 +64,10 @@ int _open_osfhandle (
 
 |||
 |-|-|
-**\_O\_추가**|모든 쓰기 작업 전에 파일 포인터를 파일 끝에 배치합니다.
-**\_O\_RDONLY**|읽기 전용으로 파일을 엽니다.
-**\_O\_TEXT**|파일을 텍스트(변환됨) 모드에서 엽니다.
-**\_O\_WTEXT**|파일을 유니코드(변환된 UTF-16) 모드에서 엽니다.
+| **\_O\_추가** | 모든 쓰기 작업 전에 파일 포인터를 파일 끝에 배치합니다. |
+| **\_O\_RDONLY** | 읽기 전용으로 파일을 엽니다. |
+| **\_O\_TEXT** | 파일을 텍스트(변환됨) 모드에서 엽니다. |
+| **\_O\_WTEXT** | 파일을 유니코드(변환된 UTF-16) 모드에서 엽니다. |
 
 합니다 **_open_osfhandle** 호출 파일 설명자에 Win32 파일 핸들의 소유권을 전송 합니다. 사용 하 여 연 파일을 닫으려면 **_open_osfhandle**를 호출 [ \_닫습니다](close.md)합니다. 호출 하 여 기본 OS 파일 핸들도 닫혀 **_close**이므로 Win32 함수를 호출할 필요는 없습니다 **CloseHandle** 원래 핸들에 대해 합니다. 파일 설명자가 소유 하는 경우는 **파일 &#42;**  스트림, 호출한 [fclose](fclose-fcloseall.md) 에 **파일 &#42;**  스트림 둘 다 파일 설명자 닫힙니다 및 기본 핸들입니다. 이 경우 호출 하지 마세요 **_close** 파일 설명자에 있습니다.
 

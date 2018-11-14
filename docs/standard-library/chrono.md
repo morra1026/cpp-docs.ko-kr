@@ -10,12 +10,12 @@ f1_keywords:
 - chrono/std::chrono::milliseconds
 - chrono/std::chrono::microseconds
 ms.assetid: 844de749-f306-482e-89bc-6f53c99c8324
-ms.openlocfilehash: 904e4df6b6c16b846ab4417d24a1d9836380d75b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1fcf87d84b2c99b89217b7f2e0fc7fecd55fff02
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544549"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331479"
 ---
 # <a name="ltchronogt"></a>&lt;chrono&gt;
 
@@ -84,7 +84,7 @@ Visual Studio 2015에서 구현부터 `steady_clock` 속성 및 단 조성에 �
 
 ### <a name="literals"></a>리터럴
 
-**(C++11)** \<chrono> 헤더는 코드의 형식 안전성과 유지 관리 및 편의성을 위해 사용할 수 있는 다음과 같은 [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md)을 정의합니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
+**(C + + 11)**  는 \<chrono > 헤더를 다음 정의 [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md) 큰 형식 안전성 및 편의성을 코드에 사용할 수 있습니다. 이러한 리터럴은 `literals::chrono_literals` 인라인 네임스페이스에 정의되며 std::chrono가 범위 내에 있을 때 범위 안에 있습니다.
 
 |Literal|설명|
 |-------------|-----------------|

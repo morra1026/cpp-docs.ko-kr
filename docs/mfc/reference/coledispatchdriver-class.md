@@ -26,12 +26,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: f6e52d993619929666d61f019c1f6d5d28243ab1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d0ffba2e8b682a33dc435b0968c59844a858c72
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569229"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524939"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver 클래스
 
@@ -258,7 +258,7 @@ void AFX_CDECL InvokeHelper(
 호출할 메서드 또는 속성을 식별합니다.
 
 *wflags에서*<br/>
-에 대 한 호출의 컨텍스트를 설명 하는 플래그 `IDispatch::Invoke`합니다. . 가능한 값 목록을 참조 하세요. 합니다 *wFlags* 에 매개 변수 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK의 합니다.
+에 대 한 호출의 컨텍스트를 설명 하는 플래그 `IDispatch::Invoke`합니다. . 가능한 값 목록을 참조 하세요. 합니다 *wFlags* 에 매개 변수 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK의 합니다.
 
 *vtRet*<br/>
 반환 값 형식을 지정합니다. 가능한 값은 설명 섹션을 참조하세요.
@@ -296,9 +296,9 @@ void AFX_CDECL InvokeHelper(
 
 합니다 *pbParamInfo* 인수는 공백으로 구분 된 목록을 **VTS_** 상수입니다. 공백(쉼표가 아님)으로 구분된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정합니다. 가능한 값은 [EVENT_CUSTOM](event-maps.md#event_custom) 매크로를 통해 나열됩니다.
 
-이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) 메서드. `Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. SCODE (상태 코드)에서 반환 하는 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) throw이 고, 그렇지 않으면 개체를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
+이 함수 VARIANTARG 값을 매개 변수를 문자열로 변환한 다음 호출을 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) 메서드. `Invoke` 호출에 실패하면 이 함수가 예외를 throw합니다. SCODE (상태 코드)에서 반환 하는 경우 `IDispatch::Invoke` DISP_E_EXCEPTION을를이 함수는 [COleException](../../mfc/reference/coleexception-class.md) throw이 고, 그렇지 않으면 개체를 [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).
 
-자세한 내용은 [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant)를 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)를 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), 및 [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에에서 있습니다.
+자세한 내용은 [VARIANTARG](/windows/desktop/api/oaidl/ns-oaidl-tagvariant)를 [IDispatch 인터페이스 구현](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)를 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), 및 [COM 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 

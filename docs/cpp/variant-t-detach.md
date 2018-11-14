@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Detach method [C++]
 - VARIANT object
 ms.assetid: c348ac08-62cf-4657-a16f-974a79c12158
-ms.openlocfilehash: 4b19e3c1615912550cdf1eb6a2b0b3f906ee4af9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 719852c4556291747b612d54c44d4bf82caa9188
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522332"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519008"
 ---
 # <a name="varianttdetach"></a>_variant_t::Detach
 
@@ -34,7 +34,7 @@ VARIANT Detach( );
 
 ## <a name="remarks"></a>설명
 
-추출 하 고 캡슐화 된 반환 `VARIANT`, 그런 다음이 지우고 `_variant_t` 제거 하지 않고 개체입니다. 이 멤버 함수를 제거 합니다 `VARIANT` 캡슐화 및 집합에서 합니다 `VARTYPE` 이 `_variant_t` 개체 값을 vt_empty로 합니다. 반환 된 릴리스 하는 것 `VARIANT` 를 호출 하 여 합니다 [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear) 함수입니다.
+추출 하 고 캡슐화 된 반환 `VARIANT`, 그런 다음이 지우고 `_variant_t` 제거 하지 않고 개체입니다. 이 멤버 함수를 제거 합니다 `VARIANT` 캡슐화 및 집합에서 합니다 `VARTYPE` 이 `_variant_t` 개체 값을 vt_empty로 합니다. 반환 된 릴리스 하는 것 `VARIANT` 를 호출 하 여 합니다 [VariantClear](/windows/desktop/api/oleauto/nf-oleauto-variantclear) 함수입니다.
 
 **Microsoft 전용 종료**
 

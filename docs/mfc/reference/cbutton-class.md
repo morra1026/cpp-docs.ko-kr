@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: ae1b444d424693a2372389fb27fcec90133b3a7d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 14018a1bf3265642f8ab06af51eea51eb1125dc8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662854"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333539"
 ---
 # <a name="cbutton-class"></a>CButton 클래스
 
@@ -153,13 +153,13 @@ class CButton : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**ON_** 알림을 **(**`id`하십시오 `memberFxn` **)**
+**ON\_**_알림_ **(** _id_하십시오 _memberFxn_ **)**
 
-여기서 `id` 알림을 전송 하는 컨트롤의 자식 창 ID를 지정 하 고 `memberFxn` 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
+여기서 *id* 알림을 전송 하는 컨트롤의 자식 창 ID를 지정 하 고 *memberFxn* 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
 부모의 함수 프로토타입에 다음과 같습니다.
 
-**afx_msg** `void` `memberFxn` **();**
+`afx_msg void memberFxn();`
 
 잠재적인 메시지 맵 항목은 다음과 같습니다.
 

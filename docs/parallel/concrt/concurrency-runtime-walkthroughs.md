@@ -5,12 +5,12 @@ helpviewer_keywords:
 - walkthroughs [Concurrency Runtime]
 - Concurrency Runtime, walkthroughs
 ms.assetid: 7374c5e9-54eb-44bf-9ed9-5e190cfd290b
-ms.openlocfilehash: f26ff3ba35539b24e4c670935212069a34b942a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2307581dc1cda3ed75ee1cea9fc4ff504a0a98b3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511087"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519492"
 ---
 # <a name="concurrency-runtime-walkthroughs"></a>동시성 런타임 연습
 
@@ -19,7 +19,7 @@ ms.locfileid: "50511087"
 ## <a name="in-this-section"></a>섹션 내용
 
 [연습: 작업 및 XML HTTP 요청을 사용하여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
-사용 하는 방법을 보여 줍니다는 [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 유니버설 Windows 플랫폼 (UWP) 앱에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스입니다.
+사용 하는 방법을 보여 줍니다는 [IXMLHTTPRequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) 유니버설 Windows 플랫폼 (UWP) 앱에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스입니다.
 
 [연습: 에이전트 기반 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
 기본 에이전트 기반 응용 프로그램을 만드는 방법을 설명 합니다.

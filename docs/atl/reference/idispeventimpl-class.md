@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventImpl class
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-ms.openlocfilehash: a07cf577ec6be2c6d2d895a85f49f44318596ded
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75946005acc22874b17ee806cd89ec99095f9c35
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497465"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524302"
 ---
 # <a name="idispeventimpl-class"></a>IDispEventImpl 클래스
 
@@ -151,7 +151,7 @@ HRESULT GetFuncInfoFromId(
 
 ##  <a name="getidsofnames"></a>  IDispEventImpl::GetIDsOfNames
 
-단일 멤버와 선택적 인수 이름 집합 정수 Dispid 후속 호출에서 사용할 수 있는 해당 집합에 매핑합니다 [idispatch:: Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)합니다.
+단일 멤버와 선택적 인수 이름 집합 정수 Dispid 후속 호출에서 사용할 수 있는 해당 집합에 매핑합니다 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke)합니다.
 
 ```
 STDMETHOD(GetIDsOfNames)(
@@ -164,7 +164,7 @@ STDMETHOD(GetIDsOfNames)(
 
 ### <a name="remarks"></a>설명
 
-참조 [IDispatch::GetIDsOfNames](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK에에서 있습니다.
+참조 [IDispatch::GetIDsOfNames](/windows/desktop/api/oaidl/nf-oaidl-idispatch-getidsofnames) Windows SDK에에서 있습니다.
 
 ##  <a name="gettypeinfo"></a>  IDispEventImpl::GetTypeInfo
 
@@ -189,7 +189,7 @@ STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 
 ### <a name="remarks"></a>설명
 
-참조 [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) Windows SDK에에서 있습니다.
+참조 [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) Windows SDK에에서 있습니다.
 
 ##  <a name="getuserdefinedtype"></a>  IDispEventImpl::GetUserDefinedType
 
@@ -204,7 +204,7 @@ VARTYPE GetUserDefinedType(
 ### <a name="parameters"></a>매개 변수
 
 *PTI*<br/>
-[in] 에 대 한 포인터를 [ITypeInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 사용자 정의 형식을 포함 하는 인터페이스입니다.
+[in] 에 대 한 포인터를 [ITypeInfo](/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 사용자 정의 형식을 포함 하는 인터페이스입니다.
 
 *hrt*<br/>
 [in] 검색 될 형식 설명에 대 한 핸들입니다.
@@ -215,7 +215,7 @@ Variant의 형식입니다.
 
 ### <a name="remarks"></a>설명
 
-참조 [ITypeInfo::GetRefTypeInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo)합니다.
+참조 [ITypeInfo::GetRefTypeInfo](/windows/desktop/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo)합니다.
 
 ##  <a name="idispeventimpl"></a>  IDispEventImpl::IDispEventImpl
 

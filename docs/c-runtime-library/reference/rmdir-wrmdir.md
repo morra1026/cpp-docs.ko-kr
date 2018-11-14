@@ -33,12 +33,12 @@ helpviewer_keywords:
 - _wrmdir function
 - wrmdir function
 ms.assetid: 652c2a5a-b0ac-4493-864e-1edf484333c5
-ms.openlocfilehash: 1169405ae2f03a1e6affe2fcc00d594912e08ae1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d0d9a25b70746174a66abbe088b297a5d9a0942
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511126"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328004"
 ---
 # <a name="rmdir-wrmdir"></a>_rmdir, _wrmdir
 
@@ -66,9 +66,9 @@ int _wrmdir(
 
 |errno 값|조건|
 |-|-|
-**ENOTEMPTY**|지정된 경로가 디렉터리가 아니거나, 디렉터리가 비어 있지 않거나, 디렉터리가 현재 작업 디렉터리 또는 루트 디렉터리입니다.
-**ENOENT**|경로가 잘못되었습니다.
-**EACCES**|프로그램에 디렉터리에 대한 열린 핸들이 있습니다.
+| **ENOTEMPTY** | 지정된 경로가 디렉터리가 아니거나, 디렉터리가 비어 있지 않거나, 디렉터리가 현재 작업 디렉터리 또는 루트 디렉터리입니다. |
+| **ENOENT** | 경로가 잘못되었습니다. |
+| **EACCES** | 프로그램에 디렉터리에 대한 열린 핸들이 있습니다. |
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 

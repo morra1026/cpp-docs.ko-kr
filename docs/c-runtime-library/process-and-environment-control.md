@@ -11,12 +11,12 @@ helpviewer_keywords:
 - environment control routines
 - process control routines
 ms.assetid: 7fde74c3-c2a6-4d15-84b8-092160d60c3e
-ms.openlocfilehash: 74194311eb33a23de5643b3cb956c2e3f752dea0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df080d1ed8c5a00711468a159acb07159ad31930
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525621"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329412"
 ---
 # <a name="process-and-environment-control"></a>프로세스 및 환경 제어
 
@@ -46,7 +46,7 @@ ms.locfileid: "50525621"
 |[exit](../c-runtime-library/reference/exit-exit-exit.md)|**atexit** 및 **_onexit**에서 등록한 함수를 호출하고, 모든 버퍼를 플러시하고, 열려 있는 모든 파일을 닫고, 프로세스를 종료합니다.|
 |[_exit](../c-runtime-library/reference/exit-exit-exit.md)|**atexit** 또는 **_onexit**를 호출하거나 버퍼를 플러시하지 않고 프로세스를 즉시 종료합니다.|
 |[getenv, _wgetenv](../c-runtime-library/reference/getenv-wgetenv.md), [getenv_s, _wgetenv_s](../c-runtime-library/reference/getenv-s-wgetenv-s.md)|환경 변수 값을 가져옵니다.|
-|[_getpid](../c-runtime-library/reference/getpid.md)|프로세스 ID 번호를 가져옵니다.|[System::Diagnostics::Process::Id](https://msdn.microsoft.com/library/system.diagnostics.process.id.aspx)|
+|[_getpid](../c-runtime-library/reference/getpid.md)|프로세스 ID 번호를 가져옵니다.|
 |[longjmp](../c-runtime-library/reference/longjmp.md)|저장된 스택 환경을 복원하고, 로컬이 아닌 **goto**를 실행하는 데 사용합니다.|
 |[_onexit](../c-runtime-library/reference/onexit-onexit-m.md)|프로그램 종료 시 실행 루틴을 예약합니다. Microsoft C/C++ 버전 7.0 및 이전 버전과의 호환성을 위해 사용합니다.|
 |[_pclose](../c-runtime-library/reference/pclose.md)|새 명령 프로세서가 실행될 때까지 기다렸다가 연결된 파이프에서 스트림을 닫습니다.|

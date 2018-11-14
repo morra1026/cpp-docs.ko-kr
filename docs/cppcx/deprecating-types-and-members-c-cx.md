@@ -2,12 +2,12 @@
 title: 형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: b20b01c1-a439-4ff0-8cf3-d7280c492813
-ms.openlocfilehash: 661445c8a365451d94f938cfe262623866b0fa5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e29f2ff73d6fb6fd499052d9f9255f8b1a659c7
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618636"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51325850"
 ---
 # <a name="deprecating-types-and-members-ccx"></a>형식 및 멤버가 사용되지 않도록 지정(C++/CX)
 
@@ -39,7 +39,7 @@ public:
 
 다음 표에서는 Deprecated 특성이 적용될 수 있는 구문을 보여 줍니다.
 
-||
+| |
 |-|
 |XAML 컨트롤|
 |대리자(delegate)|

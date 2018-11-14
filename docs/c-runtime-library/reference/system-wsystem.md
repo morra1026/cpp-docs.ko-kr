@@ -29,12 +29,12 @@ helpviewer_keywords:
 - commands, executing
 - command interpreter
 ms.assetid: 7d3df2b6-f742-49ce-bf52-012b0aee3df5
-ms.openlocfilehash: fa034b164a188b1b5b7ccd8a4ca71ab7ac754fa1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 46c4949fcc8cfbe4a3477e66b57d8fc6fc97ed73
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624668"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328658"
 ---
 # <a name="system-wsystem"></a>system, _wsystem
 
@@ -65,10 +65,10 @@ int _wsystem(
 
 |||
 |-|-|
-**E2BIG**|인수 목록(시스템에 따라 다름)이 너무 큽니다.
-**ENOENT**|명령 인터프리터를 찾을 수 없습니다.
-**ENOEXEC**|명령 인터프리터 파일 형식이 올바르지 않아서 실행할 수 없습니다.
-**ENOMEM**|메모리가 부족하여 명령을 실행할 수 없습니다. 사용 가능한 메모리가 손상되었거나 잘못된 블록이 있습니다. 이는 호출 프로세스가 제대로 할당되지 않았음을 나타냅니다.
+| **E2BIG** | 인수 목록(시스템에 따라 다름)이 너무 큽니다. |
+| **ENOENT** | 명령 인터프리터를 찾을 수 없습니다. |
+| **ENOEXEC** | 명령 인터프리터 파일 형식이 올바르지 않아서 실행할 수 없습니다. |
+| **ENOMEM** | 메모리가 부족하여 명령을 실행할 수 없습니다. 사용 가능한 메모리가 손상되었거나 잘못된 블록이 있습니다. 이는 호출 프로세스가 제대로 할당되지 않았음을 나타냅니다. |
 
 이러한 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

@@ -90,12 +90,12 @@ helpviewer_keywords:
 - SetParamStatus method
 - SetParamString method
 ms.assetid: 5f22626e-e80d-491f-8b3b-cedc50331960
-ms.openlocfilehash: b8c43a47eceb5213f292b825a771cd25e99efceb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2cc67e6e837844356a071aa362dcca85eca24e4
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592662"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556974"
 ---
 # <a name="cdynamicparameteraccessor-class"></a>CDynamicParameterAccessor 클래스
 
@@ -147,9 +147,10 @@ SQL Server 저장 프로시저를 실행 하 고 출력 매개 변수 값을 가
 
 ```cpp
 typedef CDynamicParameterAccessor _ParamClass;
-CDynamicParameterAccessor(DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
-   DBLENGTH nBlobSize = 8000 )
-   : CDynamicAccessor(eBlobHandling, nBlobSize )
+CDynamicParameterAccessor(
+   DBBLOBHANDLINGENUM eBlobHandling = DBBLOBHANDLING_DEFAULT,
+   DBLENGTH nBlobSize = 8000 )
+   : CDynamicAccessor(eBlobHandling, nBlobSize )
 ```
 
 #### <a name="parameters"></a>매개 변수
@@ -171,10 +172,10 @@ BLOB 데이터를 처리할 방법을 지정 합니다. 기본값은 DBBLOBHANDL
 ### <a name="syntax"></a>구문
 
 ```cpp
-template <class ctype>bool GetParam(DBORDINAL nParam, 
+template <class ctype>bool GetParam(DBORDINAL nParam,
    ctype* pData) const throw();
 
-template <class ctype> bool GetParam(TCHAR* pParamName, 
+template <class ctype> bool GetParam(TCHAR* pParamName,
    ctype* pData) const throw();
 
 void* GetParam(DBORDINAL nParam) const throw();
@@ -223,7 +224,7 @@ DB_UPARAMS GetParamCount() const throw();
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool GetParamIO(DBORDINAL nParam, 
+bool GetParamIO(DBORDINAL nParam,
    DBPARAMIO* pParamIO) const throw();
 ```
 
@@ -312,7 +313,7 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 [in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 참조 [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 예입니다.
 
 *pStatus*<br/>
-[out] 지정된 된 매개 변수의 DBSTATUS 상태가 들어 있는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
+[out] 지정된 된 매개 변수의 DBSTATUS 상태가 들어 있는 변수에 대 한 포인터입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -424,7 +425,7 @@ bool SetParam(TCHAR* pParamName,
 [in] 버퍼에 쓸 데이터를 포함 하는 메모리에 대 한 포인터입니다.
 
 *status*<br/>
-[in] DBSTATUS 열 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
+[in] DBSTATUS 열 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -472,7 +473,7 @@ bool SetParamStatus(DBORDINAL nParam,
 [in] 매개 변수 번호입니다(1에서 오프셋). 매개 변수 0은 반환 값으로 예약됩니다. 매개 변수 번호는 SQL 또는 저장 프로시저 호출에서 해당 순서를 기준으로 하는 매개 변수의 인덱스입니다. 참조 [SetParam](../../data/oledb/cdynamicparameteraccessor-setparam.md) 예입니다.
 
 *status*<br/>
-[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
+[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -485,10 +486,10 @@ bool SetParamStatus(DBORDINAL nParam,
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool SetParamString(DBORDINAL nParam, 
-   constCHAR* pString, 
-   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam, 
-   constWCHAR* pString, 
+bool SetParamString(DBORDINAL nParam,
+   constCHAR* pString,
+   DBSTATUS status = DBSTATUS_S_OK) throw();bool SetParamString(DBORDINAL nParam,
+   constWCHAR* pString,
    DBSTATUS status = DBSTATUS_S_OK) throw();
 ```
 
@@ -501,7 +502,7 @@ bool SetParamString(DBORDINAL nParam, 
 [in] ANSI에 대 한 포인터 (**CHAR**) 또는 유니코드 (**WCHAR**) 문자열 데이터의 지정된 된 매개 변수입니다. Oledb.h에서 DBSTATUS를 참조 하세요.
 
 *status*<br/>
-[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](/previous-versions/windows/desktop/ms722617) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
+[in] 지정된 된 매개 변수의 DBSTATUS 상태입니다. DBSTATUS 값에 대 한 자세한 내용은 [상태](https://docs.microsoft.com/previous-versions/windows/desktop/ms722617(v=vs.85)) 에 *OLE DB Programmer's Reference*, 또는 DBSTATUS oledb.h에서 검색 합니다.
 
 ### <a name="remarks"></a>설명
 

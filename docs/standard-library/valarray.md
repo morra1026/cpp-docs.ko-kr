@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - valarray header
 ms.assetid: 30835415-21c1-4801-8f24-6bbef7dd8ecd
-ms.openlocfilehash: efd3e750abb68ad84eb8894ea6b53fe8e29e0e17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b8118722d7219e3b30e11ad67411595c3dc36ad
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447790"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332636"
 ---
 # <a name="ltvalarraygt"></a>&lt;valarray&gt;
 
@@ -21,12 +21,11 @@ ms.locfileid: "50447790"
 
 ```cpp
 #include <valarray>
-
 ```
 
 ## <a name="remarks"></a>설명
 
-이러한 템플릿 클래스와 함수는 향상된 성능을 위해 특이한 방식으로 허용됩니다. 특히 **valarray\<** T1**>** 형식을 반환하는 함수는 다른 형식 T2의 개체를 반환할 수 있습니다. 이 경우 **valarray\<** T2**>** 형식의 인수를 하나 이상 사용하는 함수에는 각각 T2 형식의 인수로 대체된 이러한 인수의 임의 조합을 허용하는 오버로드가 있어야 합니다.
+이러한 템플릿 클래스와 함수는 향상된 성능을 위해 특이한 방식으로 허용됩니다. 특히, 반환 하는 함수 형식 `valarray<T1>` 다른 형식 T2의 개체를 반환할 수 있습니다. 형식의 하나 이상의 인수를 허용 하는 함수에 이런 경우 `valarray<T2>` 각각 T2 형식의 인수로 대체 이러한 인수의 임의 조합을 허용 하는 오버 로드가 있어야 합니다.
 
 ### <a name="functions"></a>함수
 

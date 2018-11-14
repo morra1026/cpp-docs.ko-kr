@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-ms.openlocfilehash: a2aa5e2521eafbdd5ab7be93ad133f118a8d9356
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ac5ebc991174ca5f835d30571b4995bedb5dea2
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536642"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329776"
 ---
 # <a name="binarynegate-class"></a>binary_negate 클래스
 
@@ -49,7 +49,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-템플릿 클래스는 단항 함수 개체 _ *Func*의 복사본을 저장합니다. 그리고 **!**\_를 반환하도록 해당 구성원 함수 `operator()`를 정의합니다. *Func (left, right)입니다.*
+이항 함수 개체의 복사본을 저장 하는 템플릿 클래스 *Func*합니다. 해당 멤버 함수 정의 `operator()` 반환 `!Func(left, right)`합니다.
 
 `binary_negate`의 생성자는 직접 사용되는 경우가 거의 없습니다. **binary_negator** 어댑터 조건자를 선언하고 사용하는 데 일반적으로 [not2](../standard-library/functional-functions.md#not2) 도우미 함수가 사용됩니다.
 

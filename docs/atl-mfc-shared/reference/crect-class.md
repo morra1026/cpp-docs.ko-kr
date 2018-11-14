@@ -1,6 +1,6 @@
 ---
 title: CRect 클래스
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 f1_keywords:
 - CRect
 - ATLTYPES/ATL::CRect
@@ -34,12 +34,12 @@ helpviewer_keywords:
 - LPRECT operator
 - RECT structure
 ms.assetid: dee4e752-15d6-4db4-b68f-1ad65b2ed6ca
-ms.openlocfilehash: 200f4a9345904055496a53ff2f751c3e2571e7d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f2ecaeb4f3b434ef7b57573f2ea379719aebcbff
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471489"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520038"
 ---
 # <a name="crect-class"></a>CRect 클래스
 
@@ -97,8 +97,8 @@ class CRect : public tagRECT
 |[CRect::operator! =](#operator_neq)|확인 여부를 `CRect` 사각형와 같지 않습니다.|
 |[CRect::operator &amp;](#operator_amp)|교차 부분을 만듭니다 `CRect` 사각형 및 결과 반환 하 고 `CRect`입니다.|
 |[CRect::operator &amp;=](#operator_amp_eq)|집합 `CRect` 의 교집합 같음 `CRect` 및 사각형입니다.|
-|[CRect::operator |](#operator_or)|합집합을 만듭니다 `CRect` 사각형 및 결과 반환 하 고 `CRect`입니다.|
-|[CRect::operator |=](#operator_or_eq)|집합 `CRect` 합한 같음 `CRect` 및 사각형입니다.|
+|[CRect::operator&#124;](#operator_or)|합집합을 만듭니다 `CRect` 사각형 및 결과 반환 하 고 `CRect`입니다.|
+|[CRect::operator &#124;=](#operator_or_eq)|집합 `CRect` 합한 같음 `CRect` 및 사각형입니다.|
 |[CRect::operator +](#operator_add)|지정 된 오프셋을 추가 `CRect` 를 확장 하거나 `CRect` 결과 반환 합니다. `CRect`합니다.|
 |[CRect::operator + =](#operator_add_eq)|지정한 오프셋을 추가 `CRect` 를 확장 또는 `CRect`합니다.|
 |[CRect::operator =](#operator_eq)|사각형의 크기를 복사 `CRect`합니다.|
@@ -112,7 +112,7 @@ class CRect : public tagRECT
 `CRect` 개체를 함수 매개 변수로 전달할 수 있습니다 위치를 `RECT` 구조 `LPCRECT`, 또는 `LPRECT` 전달 될 수 있습니다.
 
 > [!NOTE]
->  이 클래스에서 파생 되는 `tagRECT` 구조입니다. (이름을 `tagRECT` 이름인 덜 일반적으로 사용에 대 한는 `RECT` 구조입니다.) 즉, 데이터 멤버 (`left`, `top`를 `right`, 및 `bottom`)의 합니다 `RECT` 구조는 액세스할 수 있는 데이터 멤버의 `CRect`합니다.
+> 이 클래스에서 파생 되는 `tagRECT` 구조입니다. (이름을 `tagRECT` 이름인 덜 일반적으로 사용에 대 한는 `RECT` 구조입니다.) 즉, 데이터 멤버 (`left`, `top`를 `right`, 및 `bottom`)의 합니다 `RECT` 구조는 액세스할 수 있는 데이터 멤버의 `CRect`합니다.
 
 `CRect` 사각형의 왼쪽 위 및 맨 아래 왼쪽 지점을 정의 하는 멤버 변수를 포함 합니다.
 
@@ -443,11 +443,11 @@ BOOL EqualRect(LPCRECT lpRect) const throw();
 ### <a name="example"></a>예제
 
 ```cpp
-   CRect rect1(35, 150, 10, 25);
-   CRect rect2(35, 150, 10, 25);
-   CRect rect3(98, 999, 6, 3);
+CRect rect1(35, 150, 10, 25);
+CRect rect2(35, 150, 10, 25);
+CRect rect3(98, 999, 6, 3);
 ASSERT(rect1.EqualRect(rect2));
-   ASSERT(!rect1.EqualRect(rect3));
+ASSERT(!rect1.EqualRect(rect3));
 // works just fine against RECTs, as well
 
 RECT test;
@@ -484,12 +484,8 @@ int Height() const throw();
 CRect rect(20, 30, 80, 70);
 int nHt = rect.Height();
 
-```cpp
-   CRect rect(20, 30, 80, 70);
-int nHt = rect.Height();
-
-   // nHt is now 40
-   ASSERT(nHt == 40);
+// nHt is now 40
+ASSERT(nHt == 40);
 ```
 
 ##  <a name="inflaterect"></a>  CRect::InflateRect
@@ -578,7 +574,6 @@ BOOL IntersectRect(LPCRECT lpRect1, LPCRECT lpRect2) throw();
 CRect rectOne(125, 0, 150, 200);
 CRect rectTwo(0, 75, 350,  95);
 CRect rectInter;
-
 ```cpp
    CRect rectOne(125,  0, 150, 200);
    CRect rectTwo(0, 75, 350, 95);
@@ -617,7 +612,6 @@ BOOL IsRectEmpty() const throw();
 ```cpp
 CRect rectNone(0, 0, 0, 0);
 CRect rectSome(35, 50, 135, 150);
-
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -648,7 +642,6 @@ BOOL IsRectNull() const throw();
 ```cpp
 CRect rectNone(0, 0, 0, 0);
 CRect rectSome(35, 50, 135, 150);
-
 ```cpp
    CRect rectNone(0, 0, 0, 0);
    CRect rectSome(35, 50, 135, 150);
@@ -678,7 +671,6 @@ void MoveToX(int x) throw();
 ```cpp
 CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
-
 ```cpp
    CRect rect(0, 0, 100, 100);
 rect.MoveToX(10);
@@ -712,7 +704,6 @@ void MoveToXY(POINT point) throw();
 ```cpp
 CRect rect(0, 0, 100, 100);
 rect.MoveToXY(10, 10);
-
 ```cpp
    CRect rect(0, 0, 100, 100);
    rect.MoveToXY(10, 10);
