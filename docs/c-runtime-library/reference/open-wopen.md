@@ -31,12 +31,12 @@ helpviewer_keywords:
 - wopen function
 - open function
 ms.assetid: 13f6a0c3-d1aa-450d-a7aa-74abc91b163e
-ms.openlocfilehash: 2395b1aa48b7802a508ab0cb8be1ef35a1a81564
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ef28d6cafa0b74b50ee2c50ec380b8bd3aed79f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612993"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327293"
 ---
 # <a name="open-wopen"></a>_open, _wopen
 
@@ -74,11 +74,11 @@ int _wopen(
 
 |errno 값|조건|
 |-|-|
-**EACCES**|쓰기 위해 읽기 전용 파일을 열려고 했습니다. 파일의 공유 모드가 지정한 작업을 허용하지 않거나 지정한 경로가 디렉터리입니다.
-**EEXIST**|**_O_CREAT** 하 고 **_O_EXCL** 플래그를 지정 하지만 *filename* 이미 있습니다.
-**EINVAL**|잘못 된 *oflag* 하거나 *pmode* 인수입니다.
-**EMFILE**|사용할 수 있는 추가 파일 설명자가 없습니다. 열려 있는 파일이 너무 많습니다.
-**ENOENT**|파일 또는 경로를 찾을 수 없습니다.
+| **EACCES** | 쓰기 위해 읽기 전용 파일을 열려고 했습니다. 파일의 공유 모드가 지정한 작업을 허용하지 않거나 지정한 경로가 디렉터리입니다. |
+| **EEXIST** | **_O_CREAT** 하 고 **_O_EXCL** 플래그를 지정 하지만 *filename* 이미 있습니다. |
+| **EINVAL** | 잘못 된 *oflag* 하거나 *pmode* 인수입니다. |
+| **EMFILE** | 사용할 수 있는 추가 파일 설명자가 없습니다. 열려 있는 파일이 너무 많습니다. |
+| **ENOENT** | 파일 또는 경로를 찾을 수 없습니다. |
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
@@ -96,23 +96,23 @@ int _wopen(
 
 |*oflag* 상수|동작|
 |-|-|
-**_O_APPEND**|모든 쓰기 작업 전에 파일 끝으로 파일 포인터를 이동합니다.
-**_O_BINARY**|파일을 이진(변환되지 않음) 모드에서 엽니다. 이진 모드에 대한 설명은 [fopen](fopen-wfopen.md)을 참조하세요.
-**_O_CREAT**|파일을 만든 다음 쓰기 위해 엽니다. 파일을 지정 하면 아무 효과가 *filename* 존재 합니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다.
-**_O_CREAT** &AMP;#124; **_O_SHORT_LIVED**|파일을 임시로 만든 다음 가능한 경우 디스크로 플러시하지 않습니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다.
-**_O_CREAT** &AMP;#124; **_O_TEMPORARY**|파일을 임시로 만듭니다. 마지막 파일 설명자가 닫히면 파일이 삭제됩니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다.
-**_O_CREAT**&AMP;#124; ` _O_EXCL`|지정 된 파일이 있으면 오류 값을 반환 *filename* 존재 합니다. 사용 하는 경우에 적용 됩니다 **_O_CREAT**합니다.
-**_O_NOINHERIT**|공유 파일 설명자의 생성을 방지합니다.
-**_O_RANDOM**|캐싱이 디스크에서 임의 액세스를 위해 최적화되며 이에 제한되지 않습니다.
-**_O_RDONLY**|읽으려는 경우에만 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDWR** 하거나 **_O_WRONLY**합니다.
-**_O_RDWR**|읽고 쓰기 위해 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY** 하거나 **_O_WRONLY**합니다.
-**_O_SEQUENTIAL**|캐싱이 디스크에서 순차적 액세스를 위해 최적화되며 이에 제한되지 않습니다.
-**_O_TEXT**|파일을 텍스트(변환됨) 모드에서 엽니다. 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) 및 [fopen](fopen-wfopen.md)을 참조하세요.
-**_O_TRUNC**|파일을 열고 길이가 0이 되도록 자릅니다. 이 파일에는 쓰기 권한이 있어야 합니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY**합니다. **_O_TRUNC** 사용한 **_O_CREAT** 기존 파일을 열거나 파일을 만듭니다. **참고:** 는 **_O_TRUNC** 플래그 지정된 된 파일의 내용을 제거 합니다.
-**_O_WRONLY**|쓰려는 경우에만 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY** 하거나 **_O_RDWR**합니다.
-**_O_U16TEXT**|유니코드 UTF-16 모드에서 파일을 엽니다.
-**_O_U8TEXT**|유니코드 UTF-8 모드에서 파일을 엽니다.
-**_O_WTEXT**|유니코드 모드에서 파일을 엽니다.
+| **_O_APPEND** | 모든 쓰기 작업 전에 파일 끝으로 파일 포인터를 이동합니다. |
+| **_O_BINARY** | 파일을 이진(변환되지 않음) 모드에서 엽니다. 이진 모드에 대한 설명은 [fopen](fopen-wfopen.md)을 참조하세요. |
+| **_O_CREAT** | 파일을 만든 다음 쓰기 위해 엽니다. 파일을 지정 하면 아무 효과가 *filename* 존재 합니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
+| **_O_CREAT** &AMP;#124; **_O_SHORT_LIVED** | 파일을 임시로 만든 다음 가능한 경우 디스크로 플러시하지 않습니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
+| **_O_CREAT** &AMP;#124; **_O_TEMPORARY** | 파일을 임시로 만듭니다. 마지막 파일 설명자가 닫히면 파일이 삭제됩니다. 합니다 *pmode* 인수는 필수 **_O_CREAT** 지정 됩니다. |
+| **_O_CREAT**&AMP;#124; ` _O_EXCL` | 지정 된 파일이 있으면 오류 값을 반환 *filename* 존재 합니다. 사용 하는 경우에 적용 됩니다 **_O_CREAT**합니다. |
+| **_O_NOINHERIT** | 공유 파일 설명자의 생성을 방지합니다. |
+| **_O_RANDOM** | 캐싱이 디스크에서 임의 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
+| **_O_RDONLY** | 읽으려는 경우에만 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDWR** 하거나 **_O_WRONLY**합니다. |
+| **_O_RDWR** | 읽고 쓰기 위해 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY** 하거나 **_O_WRONLY**합니다. |
+| **_O_SEQUENTIAL** | 캐싱이 디스크에서 순차적 액세스를 위해 최적화되며 이에 제한되지 않습니다. |
+| **_O_TEXT** | 파일을 텍스트(변환됨) 모드에서 엽니다. 자세한 내용은 [텍스트 및 이진 모드 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md) 및 [fopen](fopen-wfopen.md)을 참조하세요. |
+| **_O_TRUNC** | 파일을 열고 길이가 0이 되도록 자릅니다. 이 파일에는 쓰기 권한이 있어야 합니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY**합니다. **_O_TRUNC** 사용한 **_O_CREAT** 기존 파일을 열거나 파일을 만듭니다. **참고:** 는 **_O_TRUNC** 플래그 지정된 된 파일의 내용을 제거 합니다. |
+| **_O_WRONLY** | 쓰려는 경우에만 파일을 엽니다. 사용 하 여 지정할 수 없습니다 **_O_RDONLY** 하거나 **_O_RDWR**합니다. |
+| **_O_U16TEXT** | 유니코드 UTF-16 모드에서 파일을 엽니다. |
+| **_O_U8TEXT** | 유니코드 UTF-8 모드에서 파일을 엽니다. |
+| **_O_WTEXT** | 유니코드 모드에서 파일을 엽니다. |
 
 파일 액세스 모드를 지정 하려면 지정 해야 **_O_RDONLY**하십시오 **_O_RDWR**, 또는 **_O_WRONLY**합니다. 액세스 모드의 기본값은 없습니다.
 
@@ -128,9 +128,9 @@ int _wopen(
 
 |*pmode*|의미|
 |-|-|
-**_S_IREAD**|읽기만 허용합니다.
-**_S_IWRITE**|쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다.
-**_S_IREAD** &AMP;#124; **_S_IWRITE**|읽기 및 쓰기를 허용합니다.
+| **_S_IREAD** | 읽기만 허용합니다. |
+| **_S_IWRITE** | 쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다. |
+| **_S_IREAD** &AMP;#124; **_S_IWRITE** | 읽기 및 쓰기를 허용합니다. |
 
 두 상수가 지정 된 경우 비트 OR 연산자를 사용 하 여 결합 됩니다 ( **&#124;** ). Windows에서는 모든 파일을 읽을 수 있으므로 쓰기 전용 권한은 설정할 수 없습니다. 따라서 **_S_IWRITE** 하 고 **_S_IREAD** | **_S_IWRITE** 동일 합니다.
 

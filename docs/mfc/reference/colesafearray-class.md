@@ -60,12 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-ms.openlocfilehash: efffa6057f6322f3de3d9d0bfe050d6d2021d9b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07e507f0546849a64625ccd67a0f7463cd510841
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648099"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525407"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray 클래스
 
@@ -408,7 +408,7 @@ VARIANT Detach();
 
 ### <a name="remarks"></a>설명
 
-함수 개체의 VARTYPE 값을 vt_empty로 설정 하 여 안전 하 게 배열에서 데이터를 분리 합니다. Windows 함수를 호출 하 여 배열 해제를 호출자의 책임 [VariantClear](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-variantclear)합니다.
+함수 개체의 VARTYPE 값을 vt_empty로 설정 하 여 안전 하 게 배열에서 데이터를 분리 합니다. Windows 함수를 호출 하 여 배열 해제를 호출자의 책임 [VariantClear](/windows/desktop/api/oleauto/nf-oleauto-variantclear)합니다.
 
 함수에서 오류를 throw 한 [COleException](../../mfc/reference/coleexception-class.md)합니다.
 
@@ -674,7 +674,7 @@ void PutElement(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 자동으로 Windows 함수 호출 [SafeArrayLock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearraylock) 하 고 [SafeArrayUnlock](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) 앞과 뒤 요소를 할당 합니다. 데이터 요소가 문자열, 개체 또는 Variant이면 함수는 이를 올바르게 복사하고 기존 요소가 문자열, 개체 또는 Variant이면 제대로 지워집니다.
+이 함수는 자동으로 Windows 함수 호출 [SafeArrayLock](/windows/desktop/api/oleauto/nf-oleauto-safearraylock) 하 고 [SafeArrayUnlock](/windows/desktop/api/oleauto/nf-oleauto-safearrayunlock) 앞과 뒤 요소를 할당 합니다. 데이터 요소가 문자열, 개체 또는 Variant이면 함수는 이를 올바르게 복사하고 기존 요소가 문자열, 개체 또는 Variant이면 제대로 지워집니다.
 
 배열에는 여러 잠금이 있을 수 있으므로 다른 작업에 의해 배열이 잠긴 동안 요소를 배열에 삽입할 수 있습니다.
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - connection strings [C++], OLE DB consumers
 - ATL OLE DB Consumer Wizard
 ms.assetid: dcb68ed1-2224-422f-9f7b-108a74864204
-ms.openlocfilehash: 835b3e6246741c3859f51e017686531f450db194
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59ad635f62ab7a20a31de7255ec4522136e102ec
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499569"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524133"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB 소비자 마법사
 
@@ -84,13 +84,13 @@ ms.locfileid: "50499569"
 
       **기타:** 에 **연결 제한 시간**, 시간 초과가 발생 하기 전에 허용 되는 유휴 시간 (초) 수를 지정 합니다. **액세스 권한을**, 데이터 연결에 대 한 액세스 권한을 지정 합니다.
 
-       고급 초기화 속성에 대 한 자세한 내용은 각 특정 OLE DB 공급자와 함께 제공 되는 설명서를 참조 하십시오.
+      고급 초기화 속성에 대 한 자세한 내용은 각 특정 OLE DB 공급자와 함께 제공 되는 설명서를 참조 하십시오.
 
    - **모든** 탭
 
       이 탭에는 데이터 원본 및 사용자가 지정한 연결에 대 한 초기화 속성의 요약이 표시 됩니다. 이러한 값을 편집할 수 있습니다.
 
-   클릭 **확인** 완료 합니다. 합니다 **데이터베이스 개체 선택** 대화 상자가 나타납니다. 이 대화 상자에서 테이블, 뷰 또는 소비자가 사용할 저장된 프로시저를 선택 합니다.
+      클릭 **확인** 완료 합니다. 합니다 **데이터베이스 개체 선택** 대화 상자가 나타납니다. 이 대화 상자에서 테이블, 뷰 또는 소비자가 사용할 저장된 프로시저를 선택 합니다.
 
 - **클래스**
 

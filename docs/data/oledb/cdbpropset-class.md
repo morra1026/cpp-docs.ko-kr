@@ -33,12 +33,12 @@ helpviewer_keywords:
 - SetGUID method
 - AddProperty method
 ms.assetid: 54190149-c277-4679-b81a-ef484d4d1c00
-ms.openlocfilehash: c0bc8a0a43051b3b4bfb2a007806dc2147e24a7f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b71fc43c3766f9a039d841b8872dee99210fe8c
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446279"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556753"
 ---
 # <a name="cdbpropset-class"></a>CDBPropSet 클래스
 
@@ -81,8 +81,8 @@ OLE DB 공급자와 소비자가 사용 하 여 `DBPROPSET` 배열을 전달 하
 ### <a name="syntax"></a>구문
 
 ```cpp
-bool AddProperty(DWORD dwPropertyID, 
-   constVARIANT& var, 
+bool AddProperty(DWORD dwPropertyID,
+   constVARIANT& var,
    DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
    LPCSTR szValue,  DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
    LPCWSTR szValue,DBPROPOPTIONS propoptions = DBPROPOPTIONS_REQUIRED) throw();bool AddProperty(DWORD dwPropertyID,
@@ -127,7 +127,7 @@ bool AddProperty(DWORD dwPropertyID, 
 
 ## <a name="cdbpropset"></a> Cdbpropset:: Cdbpropset
 
-생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 `guidPropertySet` 의 필드를 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 구조입니다.
+생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 `guidPropertySet` 의 필드를 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -160,7 +160,7 @@ void SetGUID(const GUID& guid) throw();
 #### <a name="parameters"></a>매개 변수
 
 *guid*<br/>
-[in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 구조입니다.
+[in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -181,5 +181,5 @@ CDBPropSet& operator =(CDBPropSet& propset) throw();
 [OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CDBPropIDSet 클래스](../../data/oledb/cdbpropidset-class.md)<br/>
-[DBPROPSET 구조](/previous-versions/windows/desktop/ms714367)
-[DBPROP 구조](/previous-versions/windows/desktop/ms717970)
+[DBPROPSET 구조](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85))
+[DBPROP 구조](https://docs.microsoft.com/previous-versions/windows/desktop/ms717970(v=vs.85))

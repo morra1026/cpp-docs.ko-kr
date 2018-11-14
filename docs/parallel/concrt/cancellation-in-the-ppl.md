@@ -9,12 +9,12 @@ helpviewer_keywords:
 - parallel work trees [Concurrency Runtime]
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-ms.openlocfilehash: b776aedb71f81d7dc27f9322ed87fd080c8819a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1a762f97cf144c39043203dbf68d927b2cbd0e4
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558728"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327423"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL에서의 취소
 
@@ -90,13 +90,12 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 `cancel_current_task` 함수가 throw하므로 현재 루프 또는 함수에서 명시적으로 반환할 필요가 없습니다.
 
 > [!TIP]
-
->  호출할 수 있습니다 합니다 [concurrency:: interruption_point](reference/concurrency-namespace-functions.md#interruption_point) 함수 대신 `cancel_current_task`합니다.
+> 호출할 수 있습니다 합니다 [concurrency:: interruption_point](reference/concurrency-namespace-functions.md#interruption_point) 함수 대신 `cancel_current_task`합니다.
 
 작업을 취소됨 상태로 전환하므로 취소에 응답할 때 `cancel_current_task`를 호출해야 합니다. `cancel_current_task`를 호출하지 않고 조기에 반환하는 경우 작업이 완료됨 상태로 전환되고 값 기반 연속이 실행됩니다.
 
 > [!CAUTION]
->  코드에서 `task_canceled`를 throw하지 마세요. 대신 `cancel_current_task`를 호출하세요.
+> 코드에서 `task_canceled`를 throw하지 마세요. 대신 `cancel_current_task`를 호출하세요.
 
 태스크가 취소 된 상태로 끝난 경우 합니다 [concurrency::task::get](reference/task-class.md#get) 메서드가 throw [concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md)합니다. (반대로 [concurrency::task::wait](reference/task-class.md#wait) 반환 [task_status:: canceled](reference/concurrency-namespace-enums.md#task_group_status) 하며 발생 하지 않습니다.) 다음 예제에서는 작업 기반 연속에 대한 이 동작을 보여 줍니다. 작업 기반 연속은 선행 작업이 취소되어도 항상 호출됩니다.
 
@@ -107,8 +106,7 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 [!code-cpp[concrt-task-canceled#2](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_4.cpp)]
 
 > [!CAUTION]
-
->  취소 토큰을 전달 하지 않는 경우는 `task` 생성자 또는 [concurrency:: create_task](reference/concurrency-namespace-functions.md#create_task) 함수는 작업은 취소할 수 없습니다. 또한 모든 작업을 동시에 취소하려면 중첩된 작업(다른 작업의 본문 내에 생성된 작업)의 생성자에 같은 취소 토큰을 전달해야 합니다.
+> 취소 토큰을 전달 하지 않는 경우는 `task` 생성자 또는 [concurrency:: create_task](reference/concurrency-namespace-functions.md#create_task) 함수는 작업은 취소할 수 없습니다. 또한 모든 작업을 동시에 취소하려면 중첩된 작업(다른 작업의 본문 내에 생성된 작업)의 생성자에 같은 취소 토큰을 전달해야 합니다.
 
 취소 토큰이 취소될 때 임의의 코드를 실행해야 할 수 있습니다. 예를 들어 사용자가 선택 된 **취소** 단추 작업을 취소 하려면 사용자 인터페이스에서 비활성화할 수도 사용자가 다른 작업을 시작할 때까지 해당 단추입니다. 다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 [concurrency::cancellation_token::register_callback](reference/cancellation-token-class.md#register_callback) 취소 토큰이 취소 될 때 실행 되는 콜백 함수를 등록 하는 방법입니다.
 
@@ -123,11 +121,10 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 결함이 있는 작업(예외를 throw하는 작업)은 이들 동작에 영향을 미치지 않습니다. 이 경우 값 기반 연속이 취소되고 작업 기반 연속은 취소되지 않습니다.
 
 > [!CAUTION]
->  다른 작업에서 생성된 작업(중첩된 작업)은 부모 작업의 취소 토큰을 상속하지 않습니다. 값 기반 연속만 선행 작업의 취소 토큰을 상속합니다.
+> 다른 작업에서 생성된 작업(중첩된 작업)은 부모 작업의 취소 토큰을 상속하지 않습니다. 값 기반 연속만 선행 작업의 취소 토큰을 상속합니다.
 
 > [!TIP]
-
->  사용 하 여는 [concurrency:: cancellation_token:: none](reference/cancellation-token-class.md#none) 생성자 나 사용 하는 함수를 호출 하는 경우 메서드는 `cancellation_token` 개체 작업을 취소할 수 원하지 않는 합니다.
+> 사용 하 여는 [concurrency:: cancellation_token:: none](reference/cancellation-token-class.md#none) 생성자 나 사용 하는 함수를 호출 하는 경우 메서드는 `cancellation_token` 개체 작업을 취소할 수 원하지 않는 합니다.
 
 `task_group` 또는 `structured_task_group` 개체의 생성자에 취소 토큰을 제공할 수도 있습니다. 이 방법의 중요한 측면은 자식 작업 그룹이 이 취소 토큰을 상속한다는 점입니다. 사용 하 여이 개념을 보여 주는 예제는 [run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) 함수 호출을 실행 하려면 `parallel_for`를 참조 [병렬 알고리즘 취소](#algorithms) 이 항목의 뒷부분에 나오는 문서입니다.
 

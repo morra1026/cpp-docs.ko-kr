@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2338
 ms.assetid: 49bba575-1de4-4963-86c6-ce3226a2ba51
-ms.openlocfilehash: 4ca3feb2a71efa60229afdbf918109a5d5d59cad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a76ecaf78b117b0c1acabd9fcd50c9ae0f73b98
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539596"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332064"
 ---
 # <a name="compiler-error-c2338"></a>컴파일러 오류 C2338
 
@@ -21,11 +21,11 @@ ms.locfileid: "50539596"
 
 컴파일러가 외부 공급자가이 오류 메시지를 생성할 수도 있습니다. 대부분의 경우에서 이러한 오류는 특성 공급자 ATLPROV 같은 DLL로 보고 됩니다. 이 메시지의 몇 가지 일반적인 형태는 다음과 같습니다.
 
-> '*특성*' Atl 특성 공급자: 오류 ATL*번호* *메시지*
+- '*특성*' Atl 특성 공급자: 오류 ATL*번호* *메시지*
 
-> 잘못 된 사용 특성의 '*특성*'
+- 잘못 된 사용 특성의 '*특성*'
 
-> '*사용량*': 특성 '사용 현황' 형식이 잘못 되었습니다.
+- '*사용량*': 특성 '사용 현황' 형식이 잘못 되었습니다.
 
 이러한 오류는 종종 복구할 및 치명적 컴파일러 오류가 뒤 수 있습니다.
 

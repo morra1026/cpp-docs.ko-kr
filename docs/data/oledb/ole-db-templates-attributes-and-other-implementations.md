@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB templates, about OLE DB templates
 - OLE DB templates
 ms.assetid: 0c780c1b-9bba-4788-8c33-8552d9f120ac
-ms.openlocfilehash: 97924110d6dd59e59eda9492713518dedf68af55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 079ec68afe2e538a40920fb2c6524f8d5b8aae89
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596601"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520643"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB 템플릿, 특성 및 기타 구현
 
@@ -25,7 +25,7 @@ OLE DB 템플릿, ATL (액티브 템플릿 라이브러리)의 일부인 고성�
 
 - **OLE DB 공급자 템플릿** OLE DB 서버 (공급자) 응용 프로그램을 구현 하는 데 사용 합니다.
 
-OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643)합니다.
+OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)합니다.
 
 자세한 내용은 다음을 수행할 수 있습니다.
 
@@ -37,7 +37,7 @@ OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이�
 
 - 목록은 [OLE DB 템플릿 샘플](https://github.com/Microsoft/VCSamples)합니다.
 
-- 참조 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643) (Windows SDK)에 있습니다.
+- 참조 [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) (Windows SDK)에 있습니다.
 
 ## <a name="ole-db-attributes"></a>OLE DB 특성
 
@@ -49,7 +49,7 @@ MFC 라이브러리에는 하나의 클래스 [COleDBRecordView](../../mfc/refer
 
 ## <a name="ole-db-sdk-interfaces"></a>OLE DB SDK 인터페이스
 
-OLE DB 템플릿은 OLE DB 기능을 지원 하지는 경우에는 OLE DB 인터페이스를 직접 사용 해야 합니다. 자세한 내용은 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms713643) Windows SDK에 있습니다.
+OLE DB 템플릿은 OLE DB 기능을 지원 하지는 경우에는 OLE DB 인터페이스를 직접 사용 해야 합니다. 자세한 내용은 [OLE DB Programmer's Reference](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming) Windows SDK에 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LOCAL directive
 ms.assetid: 76147e2d-23ca-4f1e-8817-81428becd113
-ms.openlocfilehash: c8ea49b9862159a5a56bfb3d2c3cd0c1f4cd7413
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94af498865151ff5c49fac9dbc03de65c4ecb934
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596874"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327605"
 ---
 # <a name="local-masm"></a>LOCAL (MASM)
 
@@ -19,9 +19,9 @@ ms.locfileid: "50596874"
 
 ## <a name="syntax"></a>구문
 
-> 로컬 *localname* [[합니다 *localname*]]...
-
-> 로컬 *레이블을* [[[*개수*]]] [[:*형식*]] [[를 *레이블* [[[*개수*]]] [[ *형식*]]]]...
+> 로컬 *localname* \[하십시오 *localname*]...
+>
+> 로컬 *레이블을* \[ __\[__ *count*__]__ ] \[ __:__  *형식*] \[ __하십시오__ *레이블* \[ __\[__ *개수* __]__  ] \[ *형식*]]...
 
 ## <a name="remarks"></a>설명
 

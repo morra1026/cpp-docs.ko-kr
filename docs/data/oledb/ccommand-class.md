@@ -49,12 +49,12 @@ helpviewer_keywords:
 - SetParameterInfo method
 - Unprepare method
 ms.assetid: 0760bfc5-b9ee-4aee-8e54-31bd78714d3a
-ms.openlocfilehash: 64774f5a8a81d7c4b3432800376c00f7d1e96d62
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f25c552001411565e4ad370c6e454b4c0ae4ae48
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596848"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557000"
 ---
 # <a name="ccommand-class"></a>CCommand 클래스
 
@@ -81,7 +81,7 @@ class CCommand :
 행 집합 클래스의 형식 (같은 `CArrayRowset` 또는 `CNoRowset`) 명령에서 사용 되도록 합니다. 기본값은 `CRowset`입니다.
 
 *TMultiple*<br/>
-여러 결과 반환할 수 있는 OLE DB 명령을 사용 하 여, 지정 [CMultipleResults](../../data/oledb/cmultipleresults-class.md)합니다. 사용이 고, 그렇지 [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md)합니다. 자세한 내용은 참조 하세요 [IMultipleResults](/previous-versions/windows/desktop/ms721289)합니다.
+여러 결과 반환할 수 있는 OLE DB 명령을 사용 하 여, 지정 [CMultipleResults](../../data/oledb/cmultipleresults-class.md)합니다. 사용이 고, 그렇지 [CNoMultipleResults](../../data/oledb/cnomultipleresults-class.md)합니다. 자세한 내용은 참조 하세요 [IMultipleResults](https://docs.microsoft.com/previous-versions/windows/desktop/ms721289(v=vs.85))합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -213,13 +213,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 [in] 세션에서 명령을 실행 합니다.
 
 *wszCommand*<br/>
-[in] 를 실행 하려면 명령에 유니코드 문자열로 전달 합니다. 사용 하는 경우 NULL 일 수 있습니다 `CAccessor`, 명령에 전달 된 값에서 검색할 경우 합니다 [DEFINE_COMMAND](../../data/oledb/define-command.md) 매크로입니다. 참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095) 에 *OLE DB Programmer's Reference* 세부 정보에 대 한 합니다.
+[in] 를 실행 하려면 명령에 유니코드 문자열로 전달 합니다. 사용 하는 경우 NULL 일 수 있습니다 `CAccessor`, 명령에 전달 된 값에서 검색할 경우 합니다 [DEFINE_COMMAND](../../data/oledb/define-command.md) 매크로입니다. 참조 [icommand:: Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) 에 *OLE DB Programmer's Reference* 세부 정보에 대 한 합니다.
 
 *szCommand*<br/>
 [in] 동일 *wszCommand* 제외 하 고이 매개 변수는 ANSI 명령 문자열을 사용 합니다. 이 메서드의 네 번째 폼에는 NULL 값을 걸릴 수 있습니다. 자세한 내용은이 항목의 뒷부분에 나오는 "주의"를 참조 하세요.
 
 *pPropSet*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
 
 *pRowsAffected*<br/>
 [에서/out] 명령에 의해 영향을 받는 행 수가 반환 되는 메모리에 대 한 포인터입니다. 하는 경우  *\*pRowsAffected* 가 null 인 경우 없는 행 수가 반환 됩니다. 그렇지 않으면 `Open` 설정  *\*pRowsAffected* 다음 조건에 따라:
@@ -231,13 +231,13 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 |명령을 업데이트 하지 않습니다, 삭제 또는 행을 삽입|*\*pRowsAffected* 정의 되지 않습니다.|
 
 *guidCommand*<br/>
-[in] 명령 텍스트를 구문 분석 중 구문 및 사용 하도록 공급자에 대 한 일반 규칙을 지정 하는 GUID입니다. 참조 [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) 및 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709757) 에 *OLE DB Programmer's Reference* 세부 정보에 대 한 합니다.
+[in] 명령 텍스트를 구문 분석 중 구문 및 사용 하도록 공급자에 대 한 일반 규칙을 지정 하는 GUID입니다. 참조 [ICommandText::GetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) 및 [icommandtext:: Setcommandtext](https://docs.microsoft.com/previous-versions/windows/desktop/ms709757(v=vs.85)) 에 *OLE DB Programmer's Reference* 세부 정보에 대 한 합니다.
 
 *bBind*<br/>
 [in] 실행 중인 후 명령을 자동으로 바인딩할 지 여부를 지정 합니다. 기본값은 **true**, 그러면 명령이 자동으로 바인딩할 수 있습니다. 설정 *bBind* 하 **false** 수동으로 바인딩할 수 있도록 명령의 자동 바인딩 방지 합니다. (수동 바인딩으로 OLAP 사용자에 게 특히 관심입니다.)
 
 *ulPropSets*<br/>
-[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 구조에 전달 합니다 *pPropSet* 인수입니다.
+[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -260,7 +260,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 
 ## <a name="create"></a> Ccommand:: Create
 
-호출 [ccommand:: Createcommand](../../data/oledb/ccommand-createcommand.md) 지정된 된 세션에 대 한 명령을 만드는 데 호출 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709825) 명령 텍스트를 지정 합니다.
+호출 [ccommand:: Createcommand](../../data/oledb/ccommand-createcommand.md) 지정된 된 세션에 대 한 명령을 만드는 데 호출 [icommandtext:: Setcommandtext](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) 명령 텍스트를 지정 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -286,7 +286,7 @@ HRESULT CCommandBase::Create(const CSession& session,
 [in] 명령 문자열을 ANSI 텍스트에 대 한 포인터입니다.
 
 *guidCommand*<br/>
-[in] 명령 텍스트를 구문 분석 중 구문 및 사용 하도록 공급자에 대 한 일반 규칙을 지정 하는 GUID입니다. 언어에 대 한 참조 [ICommandText::GetCommandText](/previous-versions/windows/desktop/ms709825) 에 *OLE DB Programmer's Reference*합니다.
+[in] 명령 텍스트를 구문 분석 중 구문 및 사용 하도록 공급자에 대 한 일반 규칙을 지정 하는 GUID입니다. 언어에 대 한 참조 [ICommandText::GetCommandText](https://docs.microsoft.com/previous-versions/windows/desktop/ms709825(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -333,7 +333,7 @@ HRESULT CCommandBase::GetParameterInfo(DB_UPARAMS* pParams,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandwithparameters:: Getparameterinfo](/previous-versions/windows/desktop/ms714917) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandwithparameters:: Getparameterinfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms714917(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -360,7 +360,7 @@ HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 OLE DB 메서드를 래핑합니다 [icommandprepare:: Prepare](/previous-versions/windows/desktop/ms718370)합니다.
+이 메서드는 OLE DB 메서드를 래핑합니다 [icommandprepare:: Prepare](https://docs.microsoft.com/previous-versions/windows/desktop/ms718370(v=vs.85))합니다.
 
 ## <a name="releasecommand"></a> Ccommand:: Releasecommand
 
@@ -390,7 +390,7 @@ HRESULT CCommandBase::SetParameterInfo(DB_UPARAMS ulParams,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandwithparameters:: Setparameterinfo](/previous-versions/windows/desktop/ms725393) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandwithparameters:: Setparameterinfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms725393(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -412,7 +412,7 @@ HRESULT CCommandBase::Unprepare() throw();
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 OLE DB 메서드를 래핑합니다 [icommandprepare:: Unprepare](/previous-versions/windows/desktop/ms719635)합니다.
+이 메서드는 OLE DB 메서드를 래핑합니다 [icommandprepare:: Unprepare](https://docs.microsoft.com/previous-versions/windows/desktop/ms719635(v=vs.85))합니다.
 
 ## <a name="see-also"></a>참고 항목
 

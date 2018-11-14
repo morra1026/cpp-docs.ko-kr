@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - auto keyword [C++]
 ms.assetid: e9d495d7-601c-4547-b897-998389a311f4
-ms.openlocfilehash: f396d95d08a435ac3d85e214226921ce468a2259
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4d17069ed4e06a85b80d2027433ff87be6d1521
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447452"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518569"
 ---
 # <a name="auto-c"></a>auto (c + +)
 
@@ -69,24 +69,23 @@ auto declarator initializer;
 사용 하 여 유의 **자동** 참조, const 한정자 및 volatile 한정자를 삭제 합니다. 다음 예제를 참조하세요.
 
 ```cpp
-// cl.exe /analyze /EHsc /W4
-#include <iostream>
+// cl.exe /analyze /EHsc /W4
+#include <iostream>
 
-using namespace std;
+using namespace std;
 
-int main( )
+int main( )
 {
-    int count = 10;
-    int& countRef = count;
-    auto myAuto = countRef;
+    int count = 10;
+    int& countRef = count;
+    auto myAuto = countRef;
 
-    countRef = 11;
-    cout << count << " ";
+    countRef = 11;
+    cout << count << " ";
 
-    myAuto = 12;
-    cout << count << endl;
+    myAuto = 12;
+    cout << count << endl;
 }
-
 ```
 
 이전 예에서 myAuto가 int, int 참조 되지 있으므로 출력은 `11 11`이 아니라 `11 12` 참조 한정자에 의해 삭제 되지 해야 하는 경우에 해당 것 처럼 **자동**합니다.

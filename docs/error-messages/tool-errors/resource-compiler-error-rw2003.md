@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - RW2003
 ms.assetid: 9dc0ba70-6776-4aef-b316-5f1711d8e42e
-ms.openlocfilehash: 2e0a7d2d5b7e8fc4603b10450ba30dbf014e02cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f359c1f71f03ce0d946579776230398fb31d046f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583172"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520610"
 ---
 # <a name="resource-compiler-error-rw2003"></a>리소스 컴파일러 오류 RW2003
 
@@ -51,10 +51,10 @@ ms.locfileid: "50583172"
 
    Windows 3.1의 경우 리소스는 대략 65000 바이트를 초과할 수 없습니다. 리소스 경우 다음 됩니다 Visual c + + 또는 리소스 명령줄 컴파일러를 사용 하 여 컴파일할 수 있습니다. 커서, 아이콘, 비트맵 또는 기타 파일 기반 리소스에는 이 제한이 적용되지 않습니다.
 
-9. **리소스 파일 3.00 형식이 아닙니다.**
+1. **리소스 파일 3.00 형식이 아닙니다.**
 
    아이콘 또는 커서를 이전 버전 3.00 형식을 사용 합니다. 리소스는 변환 또는 버전 3.00 형식을 사용 하 여 다시 이상 이어야 합니다.
 
-10. **임시 파일을 열 수 없습니다.**
+1. **임시 파일을 열 수 없습니다.**
 
    리소스 컴파일러/Visual C++에서 임시 파일을 열 수 없습니다. 가능한 원인은 디렉터리에 대 한 쓰기 권한이 없는 또는 디렉터리가 없습니다. 리소스 컴파일러/Visual C++는 **TMP** 환경 변수로 지정된 디렉터리 또는 지정되지 않은 경우 현재 디렉터리에서 이러한 파일을 사용하려고 합니다.

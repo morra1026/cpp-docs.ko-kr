@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLL version of MFC [MFC]
 - TN033
 ms.assetid: b6f1080b-b66b-4b1e-8fb1-926c5816392c
-ms.openlocfilehash: 89a9fddd6f12f92d18bcd6fc75f117beb14746f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17ffc8b46060e742449c9612424b1cd06dd8a9d3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571823"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523969"
 ---
 # <a name="tn033-dll-version-of-mfc"></a>TN033: MFC의 DLL 버전
 
@@ -174,7 +174,6 @@ protected: \
     public: \
     static AFX_DATA CRuntimeClass class##class_name; \
     virtual CRuntimeClass* GetRuntimeClass() const; \
-
 ```
 
 시작 하는 줄 "정적 `AFX_DATA`" 클래스 내에서 정적 개체를 선언 하는 합니다. 이 클래스를 올바르게 내보내고 클라이언트에서 런타임 정보에 액세스 합니다. 이 정적 개체를 내보내야 할 EXE를 합니다. 정적 개체는 한정자로 선언 되었으므로 `AFX_DATA`를 정의 해야 `AFX_DATA` 되도록 `__declspec(dllexport)` DLL을 빌드할 때으로 정의 `__declspec(dllimport)` 실행 클라이언트를 빌드할 때입니다.

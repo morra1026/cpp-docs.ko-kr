@@ -28,12 +28,12 @@ helpviewer_keywords:
 - _ungettc function
 - ungetc function
 ms.assetid: e0754f3a-b4c6-408f-90c7-e6387b830d84
-ms.openlocfilehash: 95d2160ba4d008ab67f443d4e9dda7180d62b590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c504540f8fbbe14961fa051bb93ebef350c2c1da
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633586"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332389"
 ---
 # <a name="ungetc-ungetwc"></a>ungetc, ungetwc
 
@@ -62,7 +62,7 @@ wint_t ungetwc(
 
 ## <a name="return-value"></a>반환 값
 
-성공 하면 이러한 함수의 각 반환에서 문자 인수 *c*합니다. 경우 *c* 다시 푸시할 수 없거나 읽은 문자가 없는 경우 입력된 스트림이 변경 하 고 **ungetc** 반환 * * EOF`; **ungetwc` 반환 **WEOF**합니다. 하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **EOF** 또는 **WEOF** 반환 되 고 **errno** 로 설정 되어 **EINVAL**합니다.
+성공 하면 이러한 함수의 각 반환에서 문자 인수 *c*합니다. 하는 경우 *c* 다시 푸시할 수 없거나 읽은 문자가 없는 경우 입력된 스트림이 변경 하 고 **ungetc** 반환 **EOF**; **ungetwc** 반환 **WEOF**합니다. 하는 경우 *스트림을* 됩니다 **NULL**에 설명 된 대로 잘못 된 매개 변수 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 **EOF** 또는 **WEOF** 반환 되 고 **errno** 로 설정 되어 **EINVAL**합니다.
 
 이러한 오류 코드 및 기타 오류 코드에 대한 내용은 [_doserrno, errno, _sys_errlist, 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

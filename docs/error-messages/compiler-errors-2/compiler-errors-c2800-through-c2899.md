@@ -42,12 +42,12 @@ helpviewer_keywords:
 - C2895
 - C2899
 ms.assetid: e5de1e92-746a-4315-a331-c5d9efb76dbb
-ms.openlocfilehash: 1c1b001e4d55c913cd2b9a50ee2e4bb4d2915523
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c35cd91f836070ff45faa489e1c16c40909f922
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601112"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332077"
 ---
 # <a name="compiler-errors-c2800-through-c2899"></a>컴파일러 오류 C2800 ~ C2899
 
@@ -74,7 +74,7 @@ ms.locfileid: "50601112"
 |[컴파일러 오류 C2812](compiler-error-c2812.md)|/clr을 사용한 #import를 사용할 수 없습니다: pure 및 /clr: safe|
 |[컴파일러 오류 C2813](compiler-error-c2813.md)|/MP를 지정하면 #import를 사용할 수 없습니다.|
 |[컴파일러 오류 C2814](compiler-error-c2814.md)|'*멤버*': 네이티브 형식은 관리 되는 WinRT 형식 내에서 중첩 될 수 없습니다 '*클래스*'|
-|[컴파일러 오류 C2815](compiler-error-c2815.md)|operator delete': 첫 번째 정식 매개 변수 이어야 ' void *'에 있지만 '* 형식 *' 사용한|
+|[컴파일러 오류 C2815](compiler-error-c2815.md)|operator delete': 첫 번째 정식 매개 변수 이어야 ' void \*'에 있지만 '*형식*' 사용한|
 |컴파일러 오류 C2816|사용되지 않습니다.|
 |[컴파일러 오류 C2817](compiler-error-c2817.md)|'operator delete'에 대 한 반환 형식은 'void' 여야 합니다.|
 |[컴파일러 오류 C2818](compiler-error-c2818.md)|응용 프로그램의 'operator->' 오버 로드 된 형식을 통해 재귀적입니다. '*클래스*'|
@@ -83,7 +83,7 @@ ms.locfileid: "50601112"
 |[컴파일러 오류 C2821](compiler-error-c2821.md)|'operator new' 첫 번째 정식 매개 변수 'size_t' 이어야 합니다.|
 |컴파일러 오류 C2822|로컬 해제가이 플랫폼에서 지원 되지 않습니다.|
 |[컴파일러 오류 C2823](compiler-error-c2823.md)|typedef 템플릿/제네릭 올바르지 않습니다.|
-|[컴파일러 오류 C2824](compiler-error-c2824.md)|'operator new' 이어야 합니다 반환 형식은 ' void *'|
+|[컴파일러 오류 C2824](compiler-error-c2824.md)|'operator new' 이어야 합니다 반환 형식은 ' void \*'|
 |[컴파일러 오류 C2825](compiler-error-c2825.md)|'*식별자*': 클래스 또는 네임 스페이스 뒤에 하는 경우 여야 ': '|
 |컴파일러 오류 C2826|사용되지 않습니다.|
 |[컴파일러 오류 C2827](compiler-error-c2827.md)|' 연산자 *연산자*' 단항 형식을 사용 하 여 전역으로 재정의할 수 없습니다|

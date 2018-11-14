@@ -2,12 +2,12 @@
 title: 명시적으로 기본 설정 및 삭제된 함수
 ms.date: 11/04/2016
 ms.assetid: 5a588478-fda2-4b3f-a279-db3967f5e07e
-ms.openlocfilehash: a090bd1b1a60dd7a5a5350fcf81dec7f17e083c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa03ca826eebe467e45e2bb7e0bc47537d40f366
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662607"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327020"
 ---
 # <a name="explicitly-defaulted-and-deleted-functions"></a>명시적으로 기본 설정 및 삭제된 함수
 
@@ -36,12 +36,12 @@ C++에서 컴파일러는 형식을 자체적으로 선언하지 않을 경우 �
    - 이동 할당 연산자가 자동으로 생성되지 않습니다.
 
 > [!NOTE]
->  또한 C++ 11 표준은 다음 추가 규칙을 지정합니다.
+> 또한 C++ 11 표준은 다음 추가 규칙을 지정합니다.
 >
 > - 복사 생성자나 소멸자가 명시적으로 선언된 경우 복사 할당 연산자가 자동으로 생성되지 않습니다.
 > - 복사 할당 연산자나 소멸자가 명시적으로 선언된 경우 복사 생성자가 자동으로 생성되지 않습니다.
 >
->  두 경우 모두 Visual Studio에서는 필요한 함수가 암시적으로 자동 생성되며 경고를 생성하지 않습니다.
+> 두 경우 모두 Visual Studio에서는 필요한 함수가 암시적으로 자동 생성되며 경고를 생성하지 않습니다.
 
 이러한 규칙으로 인해 개체 계층 구조에 누수가 발생할 수도 있습니다. 예를 들어, 어떤 이유로 든 기본 클래스를 파생 클래스에서 호출할 수 있는 기본 생성자가 실패 하는 경우-즉, 한 **공개** 또는 **보호** 매개 변수가 없는 생성자-클래스에 다음 파생 되는 자체 기본 생성자를 자동으로 생성할 수 없습니다.
 

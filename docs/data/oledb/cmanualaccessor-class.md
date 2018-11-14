@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: d6a910f53d15e637ead31235380b27fe608a792c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3d4a1a6f4680579adafec7c1fcf5f4372f9918e
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470319"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556714"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor 클래스
 
@@ -84,7 +84,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [DBBINDING](/previous-versions/windows/desktop/ms716845) 에 *OLE DB Programmer's Reference*합니다.
+참조 [DBBINDING](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -125,7 +125,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [DBBINDING](/previous-versions/windows/desktop/ms716845) 에 *OLE DB Programmer's Reference*합니다.
+참조 [DBBINDING](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *nOrdinal*<br/>
 [in] 매개 변수 수입니다.
@@ -159,8 +159,8 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateAccessor(int nBindEntries, 
-  void* pBuffer, 
+HRESULT CreateAccessor(int nBindEntries,
+  void* pBuffer,
    DBLENGTH nBufferSize) throw();
 ```
 
@@ -190,8 +190,8 @@ HRESULT 값 중 하나입니다.
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT CreateParameterAccessor(int nBindEntries, 
-   void* pBuffer, 
+HRESULT CreateParameterAccessor(int nBindEntries,
+   void* pBuffer,
    DBLENGTH nBufferSize) throw();
 ```
 

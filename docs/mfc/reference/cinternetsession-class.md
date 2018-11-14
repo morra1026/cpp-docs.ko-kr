@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: a3acc035a1781bd67cfc3b5561eb6dbdef41de72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b820ea3687fd52947eff48e4814ab4173fd95c7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586328"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519295"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession 클래스
 
@@ -318,12 +318,12 @@ FTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 *pstrPassword*<br/>
 로그인 하는 데 암호를 지정 하는 null로 끝나는 문자열에 대 한 포인터입니다. 둘 다 *pstrPassword* 하 고 *pstrUserName* 이 NULL 이면 기본 익명 암호는 사용자의 전자 메일 이름입니다. 하는 경우 *pstrPassword* NULL (또는 빈 문자열)가 있지만 *pstrUserName* NULL이 아니면 빈 암호가 사용 됩니다. 다음 표에서 동작의 네 가지 가능한 설정에 대 한 설명 *pstrUserName* 하 고 *pstrPassword*:
 
-|*pstrUserName*|*pstrPassword*|FTP 서버에 전송 하는 사용자 이름|FTP 서버에 전송 하는 암호|
-|--------------------|--------------------|---------------------------------|---------------------------------|
-|NULL 또는 ""|NULL 또는 ""|"anonymous"|사용자의 전자 메일 이름|
-|NULL이 아닌 문자열|NULL 또는 ""|*pstrUserName*|" "|
-|NULL|NULL이 아닌 문자열|오류|오류||
-|NULL이 아닌 문자열|NULL이 아닌 문자열|*pstrUserName*|*pstrPassword*|
+| *pstrUserName*  | *pstrPassword*  | FTP 서버에 전송 하는 사용자 이름 | FTP 서버에 전송 하는 암호 |
+|-----------------|-----------------|-----------------------------|-----------------------------|
+|   NULL 또는 ""   |   NULL 또는 ""   |         "anonymous"         |      사용자의 전자 메일 이름      |
+| NULL이 아닌 문자열 |   NULL 또는 ""   |       *pstrUserName*        |             " "             |
+|      NULL       | NULL이 아닌 문자열 |            오류            |            오류            |
+| NULL이 아닌 문자열 | NULL이 아닌 문자열 |       *pstrUserName*        |       *pstrPassword*        |
 
 *nPort*<br/>
 서버에서 사용 하 여 TCP/IP 포트를 식별 하는 번호입니다.

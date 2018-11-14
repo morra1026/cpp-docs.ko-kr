@@ -30,12 +30,12 @@ helpviewer_keywords:
 - process creation
 - _spawnvp function
 ms.assetid: 8d8774ec-6ad4-4680-a5aa-440cde1e0249
-ms.openlocfilehash: 5470c88ea0c39c421f027d219af5d3465324b1ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b697eabd7a45eedbf9c892acee570a9e8b818d1b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649542"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330725"
 ---
 # <a name="spawnvp-wspawnvp"></a>_spawnvp, _wspawnvp
 
@@ -76,11 +76,11 @@ intptr_t _wspawnvp(
 
 |||
 |-|-|
-**E2BIG**|인수 목록이 1024바이트를 초과합니다.
-**EINVAL**|*모드* 인수가 잘못 되었습니다.
-**ENOENT**|파일 또는 경로를 찾을 수 없습니다.
-**ENOEXEC**|지정한 파일이 실행할 수 없거나 실행 파일 형식이 잘못되었습니다.
-**ENOMEM**|메모리가 부족하여 새 프로세스를 실행할 수 없습니다.
+| **E2BIG** | 인수 목록이 1024바이트를 초과합니다. |
+| **EINVAL** | *모드* 인수가 잘못 되었습니다. |
+| **ENOENT** | 파일 또는 경로를 찾을 수 없습니다. |
+| **ENOEXEC** | 지정한 파일이 실행할 수 없거나 실행 파일 형식이 잘못되었습니다. |
+| **ENOMEM** | 메모리가 부족하여 새 프로세스를 실행할 수 없습니다. |
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - iterator conventions
 - C++ Standard Library, iterator conventions
 ms.assetid: 2f746be7-b37d-4bfc-bf05-be4336ca982f
-ms.openlocfilehash: cf1f519521d86f2b7782fb93ed3b4aca4ecd5b24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b6713a80244d7063baac2c75ffead76fe93facc
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643445"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326501"
 ---
 # <a name="iterators"></a>반복기
 
@@ -41,7 +41,7 @@ for (auto num : vec)
 
 반복기에는 5가지 범주가 있습니다. 범주는 증가하는 거듭제곱 순으로 다음과 같습니다.
 
-- **출력**. *출력 반복기* `X` 정방향으로 반복 시퀀스를 사용 하 여 합니다 **++** 연산자를 사용 하 여 요소를 한 번만 작성할 수는 **&ast;** 연산자입니다.
+- **출력**. *출력 반복기* `X` 정방향으로 반복 시퀀스를 사용 하 여 합니다 **++** 연산자를 사용 하 여 요소를 한 번만 작성할 수는 __\*__ 연산자입니다.
 
 - **입력**. *입력된 반복기* `X` 정방향으로 반복 시퀀스를 사용 하 여는 + + 연산자를 사용 하 여 요소를 여러 번 읽을 수 있습니다는 **&ast;** 연산자. 사용 하 여 입력된 반복기를 비교할 수는 **++** 하 고 **! =** 연산자입니다. 입력 반복기의 복사본을 증가시킨 후에는 다른 복사본을 안전하게 비교하거나 역참조하거나 증가시킬 수 없습니다.
 

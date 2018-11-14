@@ -9,12 +9,12 @@ helpviewer_keywords:
 - date functions
 - time functions
 ms.assetid: 93599220-c011-45d5-978f-12182abfdd2f
-ms.openlocfilehash: e7b34101e6c09238316d7dc0ebb223ede25d60bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67b993325c7f9c649d1509ce2c1ecf09a2404bc8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623771"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328931"
 ---
 # <a name="time-management"></a>시간 관리
 
@@ -29,7 +29,7 @@ ms.locfileid: "50623771"
 |[asctime, _wasctime](../c-runtime-library/reference/asctime-wasctime.md), [asctime_s, _wasctime_s](../c-runtime-library/reference/asctime-s-wasctime-s.md)|**struct tm** 형식의 시간을 문자열로 변환합니다. **_s** 접미사가 있는 버전의 함수가 더 안전합니다.|
 |[clock](../c-runtime-library/reference/clock.md)|프로세스의 경과된 벽시계 시간을 반환합니다.|
 |[ctime, _ctime32, _ctime64, _wctime, _wctime32, _wctime64](../c-runtime-library/reference/ctime-ctime32-ctime64-wctime-wctime32-wctime64.md), [_ctime_s, _ctime32_s, _ctime64_s, _wctime_s, _wctime32_s, _wctime64_s](../c-runtime-library/reference/ctime-s-ctime32-s-ctime64-s-wctime-s-wctime32-s-wctime64-s.md)|**time_t**, **__time32_t** 또는 **__time64_t** 형식의 시간을 문자열로 변환합니다. **_s** 접미사가 있는 버전의 함수가 더 안전합니다.|
-|[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|두 시간 사이의 차이를 계산합니다.|[System::DateTime::Subtract](https://msdn.microsoft.com/library/system.datetime.subtract.aspx)|
+|[difftime, _difftime32, _difftime64](../c-runtime-library/reference/difftime-difftime32-difftime64.md)|두 시간 사이의 차이를 계산합니다.|
 |[_ftime, _ftime32, _ftime64](../c-runtime-library/reference/ftime-ftime32-ftime64.md),[_ftime_s, _ftime32_s, _ftime64_s](../c-runtime-library/reference/ftime-s-ftime32-s-ftime64-s.md)|현재 시스템 시간을 **struct _timeb** 또는 **struct __timeb64** 형식의 변수에 저장합니다. **_s** 접미사가 있는 버전의 함수가 더 안전합니다.|
 |[_futime, _futime32, _futime64](../c-runtime-library/reference/futime-futime32-futime64.md)|열린 파일의 수정 시간을 설정합니다.|
 |[gmtime, _gmtime32, _gmtime64](../c-runtime-library/reference/gmtime-gmtime32-gmtime64.md), [gmtime_s, _gmtime32_s, _gmtime64_s](../c-runtime-library/reference/gmtime-s-gmtime32-s-gmtime64-s.md)|시간을 **time_t**에서 **struct tm** 형식으로 변환하거나 **__time64_t**에서 **struct tm** 형식으로 변환합니다. **_s** 접미사가 있는 버전의 함수가 더 안전합니다.|

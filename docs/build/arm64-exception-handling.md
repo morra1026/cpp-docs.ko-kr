@@ -1,12 +1,12 @@
 ---
 title: ARM64 예외 처리
 ms.date: 07/11/2018
-ms.openlocfilehash: 82775a61adf8437565b5bb691716451b225e72e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5189c399a4cbff071d2ec846008229ba76306882
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620599"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333591"
 ---
 # <a name="arm64-exception-handling"></a>ARM64 예외 처리
 
@@ -56,7 +56,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
 연결 프레임 함수에 대 한 최적화 고려 사항에 따라 로컬 변수 영역에서 다른 위치에 있는 fp 및 lr 쌍을 저장할 수 있습니다. 목표는 프레임 포인터 (r29) 또는 스택 포인터 (sp)에 따라 하나의 단일 명령으로 연결할 수 있는 지역 수를 최대화 하는 것입니다. 그러나 한 `alloca` 함수 연결 되어야 합니다 및 r29 스택의 맨 아래를 가리켜야 합니다. 더 나은 레지스터 쌍-주소 지정-모드 검사를 허용 하려면 비휘발성 영역 로컬 영역 스택의 맨 위에 있는 놓이는 aave를 등록 합니다. 가장 효율적인 프롤로그 시퀀스의 몇 가지를 보여 주는 예제는 다음과 같습니다. 쉽게 구별할 수 있도록 캐시 효율 향상을 위해 모든 정식 프롤로그에서 호출 수신자 저장 레지스터를 저장 하는 순서는 "성장" 순서로 지정 됩니다. `#framesz` 아래 전체 스택 (alloca 영역 제외)의 크기를 나타냅니다. `#localsz` 및 `#outsz` 로컬 영역 크기를 나타냅니다 (저장을 포함 하 여 영역을 \<r29, lr > 쌍) 및 매개 변수 크기를 각각 나가는 합니다.
 
-1. 연결, #localsz < = 512
+1. 연결, #localsz \<512 =
 
     ```asm
         stp    r19,r20,[sp,-96]!        // pre-indexed, save in 1st FP/INT pair
@@ -95,7 +95,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
         sub    sp,#framesz-72           // allocate the remaining local area
     ```
 
-   SP.에 따라 모든 지역에 액세스 하는 \<r29, lr > 이전 프레임을 가리킵니다. 프레임 크기에 대 한 < = 512는 "sub sp,..." 최적화 될 수 있는 저장 regs 영역 스택의 맨 아래에 이동 되 면 합니다. 위의 다른 레이아웃을 사용 하 여 일치 하지 않습니다 하 고 저장 된 regs 쌍 regs 및 사전 및 사후 인덱싱된 오프셋된 주소 지정 모드에 대 한 범위의 참여의 단점은입니다.
+   SP.에 따라 모든 지역에 액세스 하는 \<r29, lr > 이전 프레임을 가리킵니다. 프레임 크기에 대 한 \<512 =는 "sub sp,..." 최적화 될 수 있는 저장 regs 영역 스택의 맨 이동 합니다. 위의 다른 레이아웃을 사용 하 여 일치 하지 않습니다 하 고 저장 된 regs 쌍 regs 및 사전 및 사후 인덱싱된 오프셋된 주소 지정 모드에 대 한 범위의 참여의 단점은입니다.
 
 1. 체인화, 비-리프 함수 (lr 저장 Int 영역에 저장 됩니다.)
 
@@ -131,7 +131,7 @@ ARM64에서 Windows 동일한 구조적된 예외 처리 비동기 하드웨어�
 
    SP.에 따라 모든 지역에 액세스 하는 \<r29 > 이전 프레임을 가리킵니다.
 
-1. 연결, #framesz < #outsz 512 = = 0
+1. 연결, #framesz \<#outsz 512 = = 0
 
     ```asm
         stp    r29, lr, [sp, -#framesz]!    // pre-indexed, save <r29,lr>
@@ -283,40 +283,40 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 
 해제 코드는 아래 표에 따라 인코딩됩니다. 모든 해제 코드는 엄청난 스택을 할당 하는 것을 제외 하 고는 단일/더블 바이트입니다. 완전히 21 해제 코드가 있습니다. 각 해제 코드 맵 하나만 명령 프롤로그/에필로그 부분적으로 실행 된 프롤로그 및 에필로그 해제를 허용 하기 위해입니다.
 
-해제 코드|Bits 및 해석
+|해제 코드|Bits 및 해석|
 |-|-|
-`alloc_s`|000xxxxx: 크기 < 512를 사용 하 여 작은 스택 할당 (2 ^5 * 16).
-`save_r19r20_x`|    001zzzzz: 저장 \<r19, r20 > 쌍 [sp-#Z * 8]!, 미리 인덱싱된 오프셋 >-248 =
-`save_fplr`|        01zzzzzz: 저장 \<r29, lr > 쌍에서 [sp + #Z * 8], 오프셋 < 504 =.
-`save_fplr_x`|        10zzzzzz: 저장 \<r29, lr > 쌍에서 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 =
-`alloc_m`|        11000xxx\|xxxxxxxx: 크기가 16k < 큰 스택 할당 (2 ^11 * 16).
-`save_regp`|        110010xx\|xxzzzzzz: r(19+#X) 쌍에 저장 [sp + #Z * 8], 오프셋 < 504 =
-`save_regp_x`|        110011xx\|xxzzzzzz:에서 쌍 r(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 =
-`save_reg`|        110100xx\|xxzzzzzz:에서 reg r(19+#X) 저장 [sp + #Z * 8], 오프셋 < 504 =
-`save_reg_x`|        1101010 x\|xxxzzzzz:에서 reg r(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 =
-`save_lrpair`|         x 1101011\|xxzzzzzz: 쌍을 저장 \<r19 + 2 *#X, lr >에서 [sp + #Z*8], 오프셋 < 504 =
-`save_fregp`|        1101100 x\|xxzzzzzz:에서 쌍 d(8+#X) 저장 [sp + #Z * 8], 오프셋 < 504 =
-`save_fregp_x`|        1101101 x\|xxzzzzzz:에서 쌍 d(8+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 =
-`save_freg`|        1101110 x\|xxzzzzzz:에서 reg d(8+#X) 저장 [sp + #Z * 8], 오프셋 < 504 =
-`save_freg_x`|        11011110\|xxxzzzzz:에서 reg d(8+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 =
-`alloc_l`|         11100000\|xxxxxxxx\|xxxxxxxx\|xxxxxxxx: < 256m 크기가 큰 스택 할당 (2 ^24 * 16)
-`set_fp`|        11100001: r29 설정: 사용 하 여: mov r29 sp
-`add_fp`|        11100010\|xxxxxxxx: 사용 하 여 r29 설정: r29, sp, #x 추가 * 8
-`nop`|            11100011: 없습니다 해제 작업이 필요 합니다.
-`end`|            11100100: 해제 코드의 끝입니다. 의미 에필로그에 만료 됩니다.
-`end_c`|        11100101: 현재 연결 된 범위에서 해제 코드의 끝입니다.
-`save_next`|        11100110: 다음 비휘발성 Int를 저장 하거나 FP 쌍을 등록 합니다.
-`arithmetic(add)`|    11100111\| 000zxxxx: lr 쿠키 reg(z) 추가할 (0 = x28, 1 = sp); lr, lr, reg(z) 추가
-`arithmetic(sub)`|    11100111\| 001zxxxx: lr에서 쿠키 reg(z) 하위 (0 = x28, 1 = sp); lr, lr, reg(z) 하위
-`arithmetic(eor)`|    11100111\| 010zxxxx: reg(z) 쿠키를 사용 하 여 eor lr (0 = x28, 1 = sp); eor lr, lr reg(z)
-`arithmetic(rol)`|    11100111\| 0110xxxx: 쿠키 reg (x28)를 사용 하 여 lr의 시뮬레이션 된 rol; xip0 neg = x28; xip0 ror lr
-`arithmetic(ror)`|    11100111\| 100zxxxx: reg(z) 쿠키를 사용 하 여 ror lr (0 = x28, 1 = sp); ror lr, lr reg(z)
-||            11100111: xxxz---:---예약
-||              11101xxx: asm 루틴에 대해서만 생성 사용자 지정 스택 사례에 대 한 예약
-||              11101001: MSFT_OP_TRAP_FRAME에 대 한 사용자 지정 스택
-||              11101010: MSFT_OP_MACHINE_FRAME에 대 한 사용자 지정 스택
-||              11101011: MSFT_OP_CONTEXT에 대 한 사용자 지정 스택
-||              1111xxxx: 예약
+|`alloc_s`|000xxxxx: 크기를 사용 하 여 작은 스택 할당 \< 512 (2 ^5 * 16).|
+|`save_r19r20_x`|    001zzzzz: 저장 \<r19, r20 > 쌍 [sp-#Z * 8]!, 미리 인덱싱된 오프셋 >-248 = |
+|`save_fplr`|        01zzzzzz: 저장할 \<r29, lr > 쌍에서 [sp + #Z * 8], 오프셋 \<504 =. |
+|`save_fplr_x`|        10zzzzzz: 저장 \<r29, lr > 쌍에서 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
+|`alloc_m`|        11000xxx'xxxxxxxx: 크기를 사용 하 여 큰 스택 할당 \< 16k (2 ^11 * 16). |
+|`save_regp`|        110010xx'xxzzzzzz: r(19+#X) 쌍에 저장 [sp + #Z * 8], 오프셋 \<504 = |
+|`save_regp_x`|        110011xx'xxzzzzzz:에서 쌍 r(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
+|`save_reg`|        110100xx'xxzzzzzz:에서 reg r(19+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
+|`save_reg_x`|        1101010 x'xxxzzzzz:에서 reg r(19+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 = |
+|`save_lrpair`|         1101011 x'xxzzzzzz: 쌍을 저장할 \<r19 + 2 *#X, lr >에서 [sp + #Z*8], 오프셋 \<504 = |
+|`save_fregp`|        1101100 x'xxzzzzzz:에서 쌍 d(8+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
+|`save_fregp_x`|        1101101 x'xxzzzzzz:에서 쌍 d(8+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-512 = |
+|`save_freg`|        1101110 x'xxzzzzzz:에서 reg d(8+#X) 저장 [sp + #Z * 8], 오프셋 \<504 = |
+|`save_freg_x`|        11011110' xxxzzzzz:에서 reg d(8+#X) 저장 [sp-(#Z + 1) * 8]!, 미리 인덱싱된 오프셋 >-256 = |
+|`alloc_l`|         11100000' xxxxxxxx 'xxxxxxxx' xxxxxxxx: 크기를 사용 하 여 큰 스택 할당 \< 256m (2 ^24 * 16) |
+|`set_fp`|        11100001: r29 설정: 사용 하 여: mov r29 sp |
+|`add_fp`|        11100010' xxxxxxxx: 사용 하 여 r29 설정: r29, sp, #x 추가 * 8 |
+|`nop`|            11100011: 없습니다 해제 작업이 필요 합니다. |
+|`end`|            11100100: 해제 코드의 끝입니다. 의미 에필로그에 만료 됩니다. |
+|`end_c`|        11100101: 현재 연결 된 범위에서 해제 코드의 끝입니다. |
+|`save_next`|        11100110: 다음 비휘발성 Int를 저장 하거나 FP 쌍을 등록 합니다. |
+|`arithmetic(add)`|    11100111' 000zxxxx: lr 쿠키 reg(z) 추가할 (0 = x28, 1 = sp); lr, lr, reg(z) 추가 |
+|`arithmetic(sub)`|    11100111' 001zxxxx: lr에서 쿠키 reg(z) 하위 (0 = x28, 1 = sp); lr, lr, reg(z) 하위 |
+|`arithmetic(eor)`|    11100111' 010zxxxx: reg(z) 쿠키를 사용 하 여 eor lr (0 = x28, 1 = sp); eor lr, lr reg(z) |
+|`arithmetic(rol)`|    11100111' 0110xxxx: 쿠키 reg (x28);를 사용 하 여 lr의 시뮬레이션 된 rol xip0 neg x28; = lr ror xip0 |
+|`arithmetic(ror)`|    11100111' 100zxxxx: reg(z) 쿠키를 사용 하 여 ror lr (0 = x28, 1 = sp); ror lr, lr reg(z) |
+| |            11100111: xxxz---:---예약 |
+| |              11101xxx: asm 루틴에 대해서만 생성 사용자 지정 스택 사례에 대 한 예약 |
+| |              11101001: MSFT_OP_TRAP_FRAME에 대 한 사용자 지정 스택 |
+| |              11101010: MSFT_OP_MACHINE_FRAME에 대 한 사용자 지정 스택 |
+| |              11101011: MSFT_OP_CONTEXT에 대 한 사용자 지정 스택 |
+| |              1111xxxx: 예약 |
 
 여러 바이트를 포함 하는 큰 값을 사용 하 여 지침, 가장 중요 한 비트가 먼저 저장 됩니다. 위의 해제 코드는 코드의 첫 번째 바이트를 단순히 조회 하 여 해제 코드의 바이트의 총 크기를 알 수 있기 되도록 설계 되었습니다. 각 해제 코드 프롤로그/에필로그의 명령에 매핑된 정확히는 프롤로그 또는 에필로그의 크기를 계산을 수행 해야 하는 조회 테이블 또는 유사한 장치를 사용 하 여 확인을 끝으로 시퀀스의 시작 부분에서 설명 시간 cor 응답 opcode 값이 있습니다.
 
@@ -382,7 +382,7 @@ ULONG ComputeXdataSize(PULONG *Xdata)
 5d|(**CR** 00 = = \| \| **CR**01 = =) &AMP; &AMP;<br/>#locsz < 4088 =|1|`sub sp,sp, #locsz`|`alloc_s`/`alloc_m`
 5e|(**CR** 00 = = \| \| **CR**01 = =) &AMP; &AMP;<br/>#locsz > 4088|2|`sub sp,sp,4088`<br/>`sub sp,sp, (#locsz-4088)`|`alloc_m`<br/>`alloc_s`/`alloc_m`
 
-\*: **CR** 01 = = 및 **RegI** 홀수가, 2 단계 및 1 단계의 마지막 save_rep 하나 save_regp에 병합 됩니다.
+\* 하는 경우 **CR** 01 = = 및 **RegI** 홀수가, 2 단계 및 1 단계의 마지막 save_rep 하나 save_regp에 병합 됩니다.
 
 \*\* 하는 경우 **RegI** == **CR** = = 0, 및 **RegF** ! = 0, 첫 번째 stp 부동 소수점있지 않습니다는 사전 감소 합니다.
 

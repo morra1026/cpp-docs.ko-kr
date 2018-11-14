@@ -6,12 +6,12 @@ helpviewer_keywords:
 - database classes [C++], OLE DB
 - database classes [C++], ATL
 ms.assetid: 219766aa-e18a-405f-9e36-d7a0fdb31b2b
-ms.openlocfilehash: c73b4f318009cf95f58bdd69ec9fc4e0c967604f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4304c350ce6a9303a7542809fa85fb0cd2560031
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610381"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522081"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL 데이터베이스 클래스(OLE DB 템플릿)
 
@@ -29,7 +29,7 @@ OLE DB 템플릿 템플릿은 c + + ATL에서 OLE DB 데이터베이스 기술�
 
 MFC 라이브러리 클래스를 포함 하는 참고 [COleDBRecordView](../mfc/reference/coledbrecordview-class.md), 컨트롤의 데이터베이스 레코드를 표시 하는 합니다. 뷰는에 직접 연결 하는 폼 보기를 `CRowset` 개체 및 필드가 표시 됩니다는 `CRowset` 대화 상자 템플릿의 컨트롤에는 개체입니다.
 
-자세한 내용은 [OLE DB 프로그래밍](../data/oledb/ole-db-programming.md) 하 고 [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643)합니다.
+자세한 내용은 [OLE DB 프로그래밍](../data/oledb/ole-db-programming.md) 하 고 [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - recordsets, constructing SQL statements
 - ODBC recordsets, selecting records
 ms.assetid: 343a6a91-aa4c-4ef7-b21f-2f2bfd0d3787
-ms.openlocfilehash: 9e39929b4e669b6d7ed5662484ee71f762b4ea42
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e7bbaad949b5f4456ce4c8aea60099792deb786
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618454"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329477"
 ---
 # <a name="recordset-how-recordsets-select-records-odbc"></a>레코드 집합: 레코드 집합의 레코드 선택 방법(ODBC)
 
@@ -61,9 +61,8 @@ ms.locfileid: "50618454"
 
 - 합니다 [정렬](../../data/odbc/recordset-sorting-records-odbc.md) 레코드 집합에 포함 되어 있는 경우 순서는 [m_strSort](../../mfc/reference/crecordset-class.md#m_strsort) 데이터 멤버입니다. SQL을 생성 하려면이 문자열을 사용 하는 프레임 워크 **ORDER BY** 절.
 
-
-    > [!TIP]
-    >  SQL을 사용 하 **GROUP BY** 절 (및 합니다 **HAVING** 절)을 필터 문자열의 끝에 절을 추가 합니다.
+   > [!TIP]
+   > SQL을 사용 하 **GROUP BY** 절 (및 합니다 **HAVING** 절)을 필터 문자열의 끝에 절을 추가 합니다.
 
 - 모든 값 [매개 변수 데이터 멤버](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md) 클래스에 지정 합니다. 호출 하기 바로 전에 매개 변수 값을 설정한 `Open` 또는 `Requery`합니다. 프레임 워크 바인딩하여 매개 변수 값을 "?"는 SQL 문자열의 자리 표시자입니다. 컴파일 타임에 자리 표시자를 사용 하 여 문자열을 지정 합니다. 런타임 시 프레임 워크를 전달 하면 매개 변수 값을 기반으로 하는 세부 정보를 채웁니다.
 

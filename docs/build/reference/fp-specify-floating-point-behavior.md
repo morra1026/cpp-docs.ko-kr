@@ -1,6 +1,6 @@
 ---
-title: /fp(부동 소수점 동작 지정)
-ms.date: 11/04/2016
+title: /fp (부동 소수점 동작 지정)
+ms.date: 11/09/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.floatingPointModel
 - VC.Project.VCCLWCECompilerTool.FloatingPointExceptions
@@ -11,90 +11,254 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: 8b948edba3244eb22089b2ef5b4c8131736e1fb3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78abe5e3b491ec0d658a40628dadc81e334c212f
+ms.sourcegitcommit: d94714522428834a02ede6e6884572f0f6ca9824
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452574"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597540"
 ---
-# <a name="fp-specify-floating-point-behavior"></a>/fp(부동 소수점 동작 지정)
+# <a name="fp-specify-floating-point-behavior"></a>/fp (부동 소수점 동작 지정)
 
-소스 코드 파일에서 부동 소수점 동작을 지정합니다.
+컴파일러는 부동 소수점 식, 최적화 및 예외를 처리 하는 방법을 지정 합니다. 합니다 **/fp** 옵션 생성된 된 코드의 부동 소수점 환경을 변경 하 고 반올림 모드, 예외 마스크, subnormal 동작을 허용 하는지 여부 및 현재, 정확한 부동 소수점 상태 검사의 반환 여부를 지정 합니다. 결과입니다. 컴파일러에서 소스 작업 및 식 순서를 유지 관리 하 고 NaN 전파에 대 한 표준을 준수 하는 코드를 생성 하는 여부 또는 순서를 변경 또는 작업을 결합 및 단순화를 사용할 수 있는 보다 효율적인 코드 대신 생성 하는 경우 제어 표준에서 허용 되지 않는-변환 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/fp:**[**정확한** | **제외한**[**-**] | **빠른** | **엄격한**]
+> **/fp:**[**정확한** | **엄격한** | **빠른** | **제외한**[ **-**]]
 
 ### <a name="arguments"></a>인수
 
 #### <a name="precise"></a>정확한
 
-기본값인 **/fp** 됩니다 **/fp: 정확한**합니다.
+컴파일러는 기본적으로 다음을 사용 합니다. **/fp: 정확한** 동작 합니다.
 
-합니다 **/fp: 정확한** 플래그는 부동 소수점 계산의 전체 자릿수를 변경할 수 있는 최적화를 사용 하지 않도록 설정 하 여 같음 및 다름에 대 한 부동 소수점 테스트의 일관성을 향상 시킵니다. (엄격한 ANSI 준수를 위해 정해진 정밀도를 유지해야 합니다.) 기본적으로 x86 코드에서 사용 하 여 x87 프로세서 지침, 컴파일러는 보조 프로세서 아키텍처의 80 비트 부동 소수점 계산의 중간 결과 저장할에 등록 합니다. 따라서 프로그램 속도가 빨라지고 프로그램 크기가 작아집니다. 그러나 이 계산은 메모리에서 80비트 미만으로 표현되는 부동 소수점 데이터 형식을 처리하므로, 긴 계산을 통해 정밀도의 추가된 비트(80비트에서 작은 부동 소수점 형식의 비트 수 빼기)를 수반하는 경우에는 결과가 일치하지 않을 수도 있습니다.
+아래 **/fp: 정확한** 컴파일러 소스 식은 순서 지정 및 부동 소수점 코드의 속성을 생성 하 고 대상 컴퓨터에 대 한 개체 코드를 최적화 하는 경우 반올림을 유지 합니다. 컴파일러가 식 평가 중 네 개의 특정 지점에서 소스 코드 정밀도로 반올림 합니다: 할당에 있는 포인터로 변환, 부동 소수점 값 및 부동 소수점 인수는 함수 호출에 전달 될 때 함수 호출에서 반환 됩니다. 컴퓨터 전체 자릿수에서 중간 계산을 수행할 수 있습니다. 대입문 명시적으로 중간 계산을 반올림 데 사용할 수 있습니다.
 
-사용 하 여 **/fp: 정확한** x86 프로세서에서는 컴파일러가 수행 형식 변수에서 반올림 `float` 할당 및 캐스팅 함수에 매개 변수가 전달 되는 경우에 대 한 올바른 정밀도로 합니다. 이렇게 반올림하면 데이터가 해당 형식의 수용작업량보다 큰 상위값을 갖지 않도록 할 수 있습니다. 프로그램을 사용 하 여 컴파일된 **/fp: 정확한** 느리고 없이 컴파일 1 보다 큰 수 **/fp: 정확한**합니다. **/fp: 정확한** 내장 함수를 비활성화; 표준 런타임 라이브러리 루틴을 대신 사용 합니다. 자세한 내용은 [/Oi(내장 함수 만들기)](../../build/reference/oi-generate-intrinsic-functions.md)를 참조하세요.
+컴파일러가 변환은 항상 비트 동일한 결과 생성 하지 않는 한 다시 배포 등의 부동 소수점 식에 대 수 변환을 수행 하지 않습니다.
+특수 값 (NaN, + infinity,-infinity,-0.0)를 포함 하는 식 IEEE-754 사양에 따라 처리 됩니다. 예를 들어 `x != x` 로 평가 **true** x가 NaN입니다. 부동 소수점 *축약*, 아래에 있는 부동 소수점 작업을 결합 하는 컴퓨터 명령이 생성 될 수 있습니다, 즉 **/fp: 정확한**합니다.
 
-다음 부동 소수점 동작을 사용 하도록 설정 되었는지 **/fp: 정확한**:
+컴파일러 실행 되도록 코드를 생성 합니다 [기본 부동 소수점 환경을](#the-default-floating-point-environment) 하며 부동 소수점 환경을 액세스 또는 런타임에 수정 하지는 것으로 가정 합니다. 즉,는 코드는 부동 소수점 예외를 마스크 해제, 읽기 또는 부동 소수점 상태 레지스터를 작성 하거나 변경 하지 반올림 모드 가정 합니다.
 
-- 축약, 즉 마지막에 한 번만 반올림하는 합성 연산을 사용하여 여러 개의 연산을 대체합니다.
-
-- 특별한 값(NaN, +infinity, -infinity, +0, -0)에 대해 유효하지 않은 식 최적화가 허용되지 않습니다. 최적화 x-x > 0 = x * 0 = > 0, x-0 = > x, x + 0 = > x 및 0 x = > 다양 한 이유로-x 올바르지 않습니다. (IEEE 754 및 C99 표준을 참조하십시오.)
-
-- 컴파일러는 NaN이 관련된 비교를 올바르게 처리합니다. 예를 들어 x! = x로 **true** 경우 `x` NaN 이며 NaN이 관련 된 순서가 지정 된 비교에서 예외가 발생 합니다.
-
-- 식 평가는 C99 FLT_EVAL_METHOD=2를 따르지만 다음의 경우는 예외로 합니다. x86 프로세서를 프로그래밍할 때 FPU가 53비트의 정밀도로 설정되어 있기 때문에 long-double 정밀도로 간주됩니다.
-
-- 정확히 1.0을 곱하는 식은 다른 인수를 사용하도록 변형됩니다. x * y\*1.0 x로 변환 됩니다\*y입니다. 마찬가지로, x\*1.0\*y x로 변환 됩니다\*y입니다.
-
-- 정확히 1.0으로 나누는 식은 피제수를 사용하도록 변형됩니다. x * y/1.0 x로 변환 됩니다\*y입니다. 마찬가지로, x / 1.0\*y x로 변환 됩니다\*y입니다.
-
-사용 하 여 **/fp: 정확한** 때 [fenv_access](../../preprocessor/fenv-access.md) 부동 소수점 식의 컴파일 시간 평가가 같은 최적화에 사용 하지 않도록 설정 됩니다. 예를 들어, 사용 하는 경우 [_control87, _controlfp, \__control87_2](../../c-runtime-library/reference/control87-controlfp-control87-2.md) 부동 소수점 계산을 수행 하는 반올림 모드 및 컴파일러를 변경 하려면, 지정한 반올림 모드가 적용 되지 않은 경우가 아니면 `fenv_access`가 ON입니다.
-
-**/fp: 정확한** 대체 합니다 **/Op** 컴파일러 옵션입니다.
-
-#### <a name="fast"></a>빠른
-
-합니다 **/fp:fast** 옵션은 부동 소수점 연산을 최적화에 대 한 규칙을 완화 하 여 대부분의 경우에서 가장 빠른 코드를 만듭니다. 이렇게 하면 컴파일러에서 부동 소수점 코드를 속도에 맞게 최적화하는데, 그 대신 정확성이 저하됩니다. 때 **/fp:fast** 지정 된 컴파일러 수에서 올바르게 반올림할 대입문, 대입문 또는 함수 호출 및 중간 식의 반올림을 수행 하지 않을 수 있습니다. 컴파일러는 연산의 순서를 바꾸거나 연결 및 분배 규칙을 따르는 것과 같은 방식으로 유한 정밀도 결과에 대한 영향에 관계없이 대수 변형을 수행할 수 있습니다. 컴파일러는 C++ 형식 승격 규칙을 따르는 대신 연산 및 피연산자를 단정밀도로 변경할 수 있습니다. 부동 소수점 별 축약 최적화는 항상 사용 하도록 설정 ([fp_contract](../../preprocessor/fp-contract.md) 켜져). 부동 소수점 예외 및 FPU 환경 액세스 비활성화 됩니다 (**/fp: 제외한-** 인 것으로 간주 하 고 [fenv_access](../../preprocessor/fenv-access.md) 가 OFF).
-
-**/fp:fast** 함께 사용할 수 없습니다 **/fp: strict** 하거나 **/fp: 정확한**합니다. 명령줄에 마지막으로 지정된 옵션이 사용됩니다. 둘 다 지정 하면 **/fp:fast** 하 고 **/fp: 제외한** 컴파일러 오류를 생성 합니다.
-
-지정 [/Za, /Ze (언어 확장명 사용 안 함)](../../build/reference/za-ze-disable-language-extensions.md) (ANSI 호환성) 및 **/fp:fast** 예기치 않은 동작이 발생할 수 있습니다. 예를 들어, 단정밀도 부동 소수점 연산이 단정밀도로 반올림되지 않을 수 있습니다.
-
-#### <a name="except"></a>except
-
-합니다 **/fp: 제외한** 옵션을 사용 하면 신뢰할 수 있는 부동 소수점 예외 모델입니다. 예외가 트리거되는 즉시 발생합니다. 이 옵션은 기본적으로 해제되어 있습니다. 옵션에 빼기 기호를 추가 (**/fp: 제외한-**) 명시적으로 사용 하지 않도록 설정 합니다.
+작업 및 부동 소수점 문의 식 순서 부동 소수점 코드를 받지 않습니다 하는 경우 (중요 하지 않은 경우에 예를 들어 있는지 여부를 `a * b + a * c` 로 계산 됩니다 `(b + c) * a` 또는 `2 * a` 으로 `a + a`)를 고려 합니다 [/fp:fast](#fast) 옵션을 보다 빠르고 보다 효율적인 코드를 생성할 수 있습니다. 코드 모두 작업 및 식 순서에 따라 및 액세스 또는 변경 (예: 반올림 모드를 변경 하거나 부동 소수점 예외를 트래핑 하) 부동 소수점 환경을 경우 사용 하 여 [/fp: strict](#strict)합니다.
 
 #### <a name="strict"></a>strict
 
-합니다 **/fp: strict** 옵션을 사용 하면 가장 엄격한 부동 소수점 모델입니다. **/fp: strict** 발생 [fp_contract](../../preprocessor/fp-contract.md) 는 OFF 및 [fenv_access](../../preprocessor/fenv-access.md) 가 ON입니다. **/fp: 제외한** 암시적 및 명시적으로 지정 하 여 비활성화할 수 있습니다 **/fp: 제외한-** 합니다. 와 함께 사용할 때 **/fp: 제외 하 고-**, **/fp: strict** 엄격한 부동 소수점 의미 체계를 적용 없이 예외 이벤트에 대 한 기준입니다.
+**/fp: strict** 동작이 비슷합니다 **/fp: 정확한**, 즉, 컴파일러가 소스 순서를 유지 및 부동 소수점 코드를 생성 하 고 최적화 하는 경우 반올림 속성 개체는 대상 컴퓨터에 대 한 코드 에 특수 한 값을 처리 하는 경우 표준을 관찰 합니다. 또한 프로그램 있습니다 안전 하 게 액세스 하거나 런타임에 부동 소수점 환경을 수정 합니다.
+
+아래 **/fp: strict**, 컴파일러는 프로그램을 안전 하 게 부동 소수점 예외를 마스크 해제, 읽기 또는 쓰기 부동 소수점 상태 레지스터 또는 반올림 모드를 변경할 수 있도록 코드를 생성 합니다. 식 평가 중 네 개의 특정 지점에서 원본 코드의 전체 자릿수 반올림 합니다: 할당에 있는 포인터로 변환, 부동 소수점 값 및 부동 소수점 인수는 함수 호출에 전달 될 때 함수 호출에서 반환 됩니다. 컴퓨터 전체 자릿수에서 중간 계산을 수행할 수 있습니다. 대입문 명시적으로 중간 계산을 반올림 데 사용할 수 있습니다. 컴파일러가 변환은 항상 비트 동일한 결과 생성 하지 않는 한 다시 배포 등의 부동 소수점 식에 대 수 변환을 수행 하지 않습니다. 특수 값 (NaN, + infinity,-infinity,-0.0)를 포함 하는 식 IEEE-754 사양에 따라 처리 됩니다. 예를 들어 `x != x` 로 평가 **true** x가 NaN입니다. 부동 소수점 축약에서 생성 되지 않습니다 **/fp: strict**합니다.
+
+**/fp: strict** 계산 보다 비용이 더 높은 **/fp: 정확한** 컴파일러 예외를 트래핑 하 고 액세스 하거나에서 부동 소수점 환경을 수정 프로그램에 추가 지침을 삽입 해야 하기 때문에 런타임입니다. 코드는이 기능을 사용 하지 않습니다 하지만 소스 코드 순서 지정 및 반올림 필요, 특수 값을 사용 하는 경우 사용 하 여 **/fp: 정확한**합니다. 그렇지 않은 경우 사용 하는 것이 좋습니다 **/fp:fast**, 빠르고 작은 코드를 생성할 수 있습니다.
+
+#### <a name="fast"></a>빠른
+
+합니다 **/fp:fast** 옵션을 사용 하면 컴파일러를 다시 정렬, 결합, 아니면 속도 및 공간에 대 한 부동 소수점 코드를 최적화 하는 부동 소수점 작업을 간소화 합니다. 컴파일러는 대입문에서 반올림을 생략할 수, 대입문 또는 함수 호출 합니다. 작업 순서를 변경 또는 이러한 변형을 만들 띄는 다른 반올림 동작을 수행 하는 경우에 연관 및 분배 법칙을 사용 하 여 예를 들어, 대 수 변형을 수행할 수 있습니다. 이러한 향상 된 최적화 때문에 일부 부동 소수점 계산의 결과에서 다른 생성 된 달라질 **/fp** 옵션입니다. 특수 값 (NaN, + infinity,-infinity,-0.0) 전파할 수 없습니다 또는 IEEE-754 표준에 따라 엄격 하 게 동작 합니다. 부동 소수점 축약에서 생성 될 수 있습니다 **/fp:fast**합니다. 컴파일러에서 기본 아키텍처를 기준으로 여전히 바인딩되어 **/fp:fast**에 추가 최적화를 사용 하 여 사용할 수는 [/arch](../../build/reference/arch-minimum-cpu-architecture.md) 옵션입니다.
+
+아래 **/fp:fast**, 컴파일러는 기본 부동 소수점 환경에서 실행 되도록 코드를 생성 하 고 부동 소수점 환경을 액세스할 수 없거나 런타임에 수정 가정 합니다. 즉,는 코드는 부동 소수점 예외를 마스크 해제, 읽기 또는 부동 소수점 상태 레지스터를 작성 하거나 변경 하지 반올림 모드 가정 합니다.
+
+**/fp:fast** 엄격한 소스 코드 순서가 및 부동 소수점 식의 반올림 필요 하지 않으며, NaN 등의 특수 값을 처리 하기 위한 표준 규칙에 의존 하지 마십시오는 프로그램을 위한 것입니다. 부동 소수점 코드 순서 지정 및 반올림, 소스 코드를 유지 해야 하거나 특수 한 값을 사용 하 여의 표준 동작에 의존 하는 경우 [/fp: 정확한](#precise)합니다. 코드에 액세스 또는 부동 소수점 반올림 모드를 변경할 환경을 수정 하는 경우 부동 소수점 예외를 마스크 해제 또는 부동 소수점 상태를 확인, 사용 하 여 [/fp: strict](#strict)합니다.
+
+#### <a name="except"></a>except
+
+합니다 **/fp: 제외한** 옵션을 확인 하는 발생 하는, 정확한 시점 마스킹되 지 않은 부동 소수점 예외 발생 하 고 추가 부동 소수점 예외가 발생 하는 코드를 생성 합니다. 기본적으로 **/fp: strict** 옵션을 사용 하면 **/fp: 제외한**, 및 **/fp: 정확한** 하지 않습니다. **/fp: 제외한** 옵션을 사용 하 여 호환 되지 **/fp:fast**합니다. 가 귀하의 옵션을 명시적으로 비활성화할 수 있습니다 **/fp: 제외한-** 합니다.
+
+유의 **/fp: 제외한** 자체적으로 부동 소수점 예외를 사용 하지 않습니다 부동 소수점 예외를 사용 하도록 설정 하려면 프로그램에 대 한 필수 이지만 합니다. 참조 [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md) 부동 소수점 예외를 사용 하는 방법에 대 한 정보에 대 한 합니다.
 
 ## <a name="remarks"></a>설명
 
-여러 **/fp** 동일한 컴파일에서 옵션을 지정할 수 있습니다.
+여러 **/fp** 동일한 컴파일러 명령줄 옵션을 지정할 수 있습니다. 중 하나만 **/fp: strict**를 **/fp:fast**, 및 **/fp: 정확한** 옵션은 한 번에 적용할 수 있습니다. 명령줄에서 다음이 옵션 중 하나 이상 지정은 뒷부분에 나오는 옵션이 우선 하 고 컴파일러 경고를 생성 합니다. **/fp: strict** 및 **/fp: 제외한** 옵션이 호환 되지 않습니다. **/clr**합니다.
 
-함수에서 부동 소수점 동작을 제어 하려면 참조는 [float_control](../../preprocessor/float-control.md) pragma입니다. 이 재정의 **/fp** 컴파일러 설정을 사용 합니다. 로컬 부동 소수점 동작을 저장 및 복원하는 것이 엔지니어링 방법으로 좋습니다.
+합니다 [/Za](../../build/reference/za-ze-disable-language-extensions.md) 옵션 (ANSI 호환성)와 호환 되지 않습니다 **/fp**합니다.
+
+### <a name="using-pragmas-to-control-floating-point-behavior"></a>부동 소수점 동작을 제어 하는 Pragma를 사용 하 여
+
+컴파일러 명령줄에 지정 된 부동 소수점 동작을 재정의 하려면 세 가지 pragma directivess 제공: [float_control](../../preprocessor/float-control.md)하십시오 [fenv_access](../../preprocessor/fenv-access.md), 및 [fp_contract](../../preprocessor/fp-contract.md). 수준 함수는 함수 내에 있지 부동 소수점 동작을 제어 하려면 이러한 pragma를 사용할 수 있습니다. 이러한 pragma에 직접 해당 하지 않는 참고 합니다 **/fp** 옵션입니다. 이 테이블에 표시 하는 방법을 **/fp** 옵션과 pragma 서로 매핑합니다. 자세한 내용은 개별 옵션과 pragma에 대 한 설명서를 참조 합니다.
+
+||float_control(precise)|float_control(except)|fenv_access|fp_contract|
+|-|-|-|-|-|
+|**/fp:fast**|해제|해제|해제|위치|
+|**/fp: 정확 하 게**|위치|해제|해제|위치|
+|**/fp: 제외 하 고**|위치|위치|위치|해제|
+
+### <a name="the-default-floating-point-environment"></a>기본 부동 소수점 환경
+
+프로세스 초기화 될 때 합니다 *부동 소수점 환경의 기본* 설정 됩니다. 이 환경의 모든 부동 소수점 예외를 마스크, 가장 가까운 반올림 하려면 반올림 모드를 설정 (`FE_TONEAREST`), subnormal 유지 (비정상) 값에 대 한 유효 (가) 기본 전체 자릿수를 사용 하 여 **float**합니다 **이중**, 및 **long double** 값 하 고, 지원 되는 경우 무한대 제어는 기본 모드를 설정 합니다.
+
+### <a name="floating-point-environment-access-and-modification"></a>부동 소수점 환경 액세스 및 수정
+
+Microsoft Visual c + + 런타임 액세스 부동 소수점 환경을 수정 하는 여러 함수를 제공 합니다. 여기에 포함 됩니다 [_controlfp](../../c-runtime-library/reference/control87-controlfp-control87-2.md)를 [_clearfp](../../c-runtime-library/reference/clear87-clearfp.md), 및 [_statusfp](../../c-runtime-library/reference/status87-statusfp-statusfp2.md) 및 변형 합니다. 코드에 액세스 하거나 부동 소수점 환경을 수정 하는 경우 올바른 프로그램 동작을 보장 하기 위해 `fenv_access` 하거나 사용할 수 있어야 합니다 여는 **/fp: strict** 옵션 또는 사용 하 여는 `fenv_access` 하기 위해 이러한 함수에 대 한 pragma 아무런 효과가 있습니다. 때 `fenv_access` 는 사용 하지 않는 액세스 또는 부동 소수점 환경의 수정 예기치 않은 프로그램 동작이 발생할: 코드 수 부동 소수점 환경에 요청한 변경 내용을 인식 하지 않으면 부동 소수점 상태 레지스터를 보고 하지 않을 수 있습니다 현재 또는 예상 결과 예기치 않은 부동 소수점 예외가 발생할 수 있습니다 하거나 예상 되는 부동 소수점 예외 발생 하지 않을 수 있습니다.
+
+코드에 액세스 또는 부동 소수점 환경을 수정 하는 경우 주의 해야 코드를 결합 하는 경우 여기서 `fenv_access` 하지 않은 코드를 사용 하 여 사용 하도록 설정할지 `fenv_access` 사용 하도록 설정 합니다. 코드에서 있는 `fenv_access` 을 설정 하지 않으면 컴파일러는 부동 소수점 상태 액세스 되거나 수정 되지 하 고 플랫폼 기본 부동 소수점 환경에 적용 되는 합니다. 저장 하 고 제어 되지 않은 함수에 전송 되기 전에 로컬 부동 소수점 환경을 기본 상태로 복원 하는 것이 좋습니다 `fenv_access` 사용 하도록 설정 합니다. 이 예제에서는 방법을 `float_control` pragma를 설정 하 고 복원할 수 있습니다.
 
 ```cpp
-#pragma float_control(precise, on, push)
-// Code that uses /fp:precise mode
+#pragma float_control(strict, on, push)
+// Code that uses /fp:strict mode
 #pragma float_control(pop)
 ```
 
-대부분의 부동 소수점 최적화와 관련 된 **/fp: strict**, **/fp: 제외한** (및 해당 해당 pragma) 및 `fp_contract` pragma는 컴퓨터에 따라 다릅니다. **/fp: strict** 하 고 **/fp: 제외한** 와 호환 되지 않습니다 **/clr**합니다.
+### <a name="floating-point-rounding-modes"></a>부동 소수점 반올림 모드
 
-**/fp: 정확한** 대부분의 응용 프로그램의 부동 소수점 요구 사항 해결 해야 합니다. 사용할 수 있습니다 **/fp: 제외한** 및 **/fp: strict**, 하지만 성능이 저하 될 수 있습니다. 성능이 가장 중요 한 경우를 사용할지 고려 **/fp:fast**합니다.
+아래에 모두 **/fp: 정확한** 하 고 **/fp:fast** 컴파일러 기본 부동 소수점 환경에서 실행 하기 위해 코드를 생성 하 고 환경에 액세스할 수 없거나 런타임에 수정 가정 합니다. 즉,는 코드는 부동 소수점 예외를 마스크 해제, 읽기 또는 부동 소수점 상태 레지스터를 작성 하거나 변경 하지 반올림 모드 가정 합니다.  그러나 일부 프로그램 부동 소수점 환경을 변경 해야 합니다. 예를 들어이 샘플 부동 소수점 반올림 모드를 변경 하 여 부동 소수점 곱셈의 오류 범위를 계산 합니다.
 
-**/fp: strict**, **/fp:fast**, 및 **/fp: 정확한** 정밀도 (정확도) 모드입니다. 이러한 옵션은 한 번에 하나만 적용할 수 있습니다. 모두 **/fp: strict** 하 고 **/fp: 정확한** 지정 된 경우 컴파일러는 마지막으로 처리 되는 것을 사용 합니다. 둘 다 **/fp: strict** 하 고 **/fp:fast** 지정할 수 없습니다.
+```cpp
+// fp_error_bounds.cpp
+#include <iostream>
+#include <limits>
+using namespace std;
 
-자세한 내용은 [Microsoft Visual c + + 부동 소수점 최적화](floating-point-optimization.md)합니다.
+int main(void)
+{
+    float a = std::<float>::max();
+    float b = -1.1;
+    float cLower = 0.0;
+    float cUpper = 0.0;
+    unsigned int control_word = 0;
+    int err = 0;
+
+    // compute lower error bound.
+    // set rounding mode to -infinity.
+    err = _controlfp_s(&control_word, _RC_DOWN, _MCW_RC);
+    if (err)
+    {
+        cout << "_controlfp_s(&control_word, _RC_DOWN, _MCW_RC) failed with error:" << err << endl;
+    }  
+    cLower = a * b;
+
+    // compute upper error bound.
+    // set rounding mode to +infinity.
+    err = _controlfp_s(&control_word, _RC_UP, _MCW_RC);
+    if (err)
+    {
+        cout << "_controlfp_s(&control_word, _RC_UP, _MCW_RC) failed with error:" << err << endl;
+    }
+    cUpper = a * b;
+
+    // restore default rounding mode.
+    err = _controlfp_s(&control_word, _CW_DEFAULT, _MCW_RC);
+    if (err)
+    {
+        cout << "_controlfp_s(&control_word, _CW_DEFAULT, _MCW_RC) failed with error:" << err << endl;
+    }
+    // display error bounds.
+    cout << "cLower = " << cLower << endl;
+    cout << "cUpper = " << cUpper << endl;
+    return 0;
+}
+```
+
+컴파일러가 부동 소수점 환경의에서 기본값을 가정 하므로 **/fp:fast** 하 고 **/fp: 정확한** 에 대 한 호출을 무시 하는 것이 없으면 `_controlfp_s`. 예를 들어, 둘 다를 사용 하 여 컴파일하면 **/o2** 하 고 **/fp: 정확한** x86 아키텍처 경계 계산 되지 않는 및 샘플 프로그램 출력:
+
+```Output
+cLower = -inf
+cUpper = -inf
+```
+
+다로 컴파일할 **/o2** 하 고 **/fp: strict** x86 아키텍처 샘플 프로그램 출력:
+
+```Output
+cLower = -inf
+cUpper = -3.40282e+38
+```
+
+### <a name="floating-point-special-values"></a>특수 부동 소수점 값
+
+아래 **/fp: 정확한** 및 **/fp: strict**, IEEE-754 사양에 따라 동작 (NaN, + infinity,-infinity,-0.0) 특수 한 값을 포함 하는 식입니다. 아래 **/fp:fast**, 이러한 특수 한 값의 동작 IEEE-754와 일치 하지 않을 수 있습니다.
+
+이 샘플에서 특수 한 값의 다른 동작을 보여 줍니다 **/fp: 정확한**를 **/fp: strict** 하 고 **/fp:fast**:
+
+```cpp
+// fp_special_values.cpp
+#include <stdio.h>
+#include <cmath>
+
+float gf0 = -0.0;
+
+int main()
+{
+    float f1 = INFINITY;
+    float f2 = NAN;
+    float f3 = -INFINITY;
+    bool a, b;
+    float c, d, e;
+    a = (f1 == f1);
+    b = (f2 == f2);
+    c = (f1 - f1);
+    d = (f2 - f2);
+    printf("INFINITY == INFINITY : %d\n", a);
+    printf("NAN == NAN           : %d\n", b);
+    printf("INFINITY - INFINITY  : %f\n", c);
+    printf("NAN - NAN            : %f\n", d);
+
+    e = gf0 / abs(f3);
+    printf("std::signbit(-0.0/-INFINITY): %d\n", std::signbit(c));
+    return 0;
+}
+```
+
+컴파일하면 **/o2** **/fp: 정확한** 또는 **/o2** **/fp: strict** x86 아키텍처, 출력은 IEEE-754와 일치 사양:
+
+```Output
+INFINITY == INFINITY : 1
+NAN == NAN           : 0
+INFINITY - INFINITY  : -nan(ind)
+NAN - NAN            : -nan(ind)
+std::signbit(-0.0/-INFINITY): 1
+```
+
+사용 하 여 컴파일하면 **/o2** **/fp:fast** x86 아키텍처 출력 IEEE-754와 일치 하지 않습니다.:
+
+```Output
+INFINITY == INFINITY : 1
+NAN == NAN           : 1
+INFINITY - INFINITY  : 0.000000
+NAN - NAN            : 0.000000
+std::signbit(-0.0/-INFINITY): 0
+```
+
+### <a name="floating-point-algebraic-transformations"></a>대 수 부동 소수점 변환
+
+아래 **/fp: 정확한** 및 **/fp: strict**, 컴파일러 변환은 항상 비트 동일한 결과 생성 하지 않는 한 수학 변환을 수행 하지 않습니다. 컴파일러에서 이러한 변환을 수행할 수 있습니다 **/fp:fast**합니다. 예를 들어 식 `a * b + a * c` 샘플 함수에서 `algebraic_transformation` 컴파일될 수 있습니다 `a * (b + c)` 아래 **/fp:fast**합니다. 이러한 변환에서 수행 되지 않습니다 **/fp: 정확한** 또는 **/fp: strict**, 컴파일러에서 생성 및 `a * b + a * c`합니다.
+
+```cpp
+float algebraic_transformation (float a, float b, float c)
+{
+    return a * b + a * c;
+}
+```
+
+### <a name="floating-point-explicit-casting-points"></a>부동 소수점 명시적 캐스팅 지점
+
+아래 **/fp: 정확한** 및 **/fp: strict**, 컴파일러가 식 평가 중 네 개의 특정 지점에서 소스 코드 정밀도로 반올림: 할당 시에 대입문 때 부동 소수점 인수 부동 소수점 값을 함수 호출에서 반환 될 때 및 함수 호출에 전달 됩니다. 대입문 명시적으로 중간 계산을 반올림 데 사용할 수 있습니다. 아래 **/fp:fast**, 컴파일러는 소스 코드의 전체 자릿수를 보장 하기 위해이 지점에서 명시적 캐스트를 생성 하지 않습니다. 이 샘플에서 다른 동작을 보여 줍니다 **/fp** 옵션:
+
+```cpp
+float casting(float a, float b)
+{
+    return 5.0*((double)(a+b));
+}
+```
+
+사용 하 여 컴파일하면 **/o2** **/fp: 정확한** 또는 **/o2** **/fp: strict**, 둘 다에 명시적 형식 캐스트 삽입 되는 것을 볼 수 있습니다는 형식 캐스팅 및 x64에 대 한 생성된 된 코드에서 점을 반환 함수에서 아키텍처:
+
+```asm
+        addss    xmm0, xmm1
+        cvtss2sd xmm0, xmm0
+        mulsd    xmm0, QWORD PTR __real@4014000000000000
+        cvtsd2ss xmm0, xmm0
+        ret      0
+```
+
+아래 **/o2** **/fp:fast** 모든 캐스트는 최적화할 때문에 생성 된 코드를 간소화 됩니다.
+
+```asm
+        addss    xmm0, xmm1
+        mulss    xmm0, DWORD PTR __real@40a00000
+        ret      0
+```
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
 1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-1. 확장 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
+1. 선택 된 **구성 속성** > **C/c + +** > **코드 생성** 속성 페이지.
 
 1. 수정 된 **부동 소수점 모델** 속성입니다.
 
@@ -104,6 +268,6 @@ ms.locfileid: "50452574"
 
 ## <a name="see-also"></a>참고자료
 
-- [컴파일러 옵션](compiler-options.md)
-- [컴파일러 옵션 설정](setting-compiler-options.md)
-- [Microsoft Visual c + + 부동 소수점 최적화](floating-point-optimization.md)
+[컴파일러 옵션](compiler-options.md)<br/>
+[컴파일러 옵션 설정](setting-compiler-options.md)<br/>
+[Microsoft Visual c + + 부동 소수점 최적화](floating-point-optimization.md)<br/>

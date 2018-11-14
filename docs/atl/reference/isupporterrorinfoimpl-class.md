@@ -10,16 +10,16 @@ helpviewer_keywords:
 - ISupportErrorInfoImpl class
 - error information, ATL
 ms.assetid: e33a4b11-a123-41cf-bcea-7b19743902af
-ms.openlocfilehash: a4427a1190f145cc001a3288535df287326e97e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3227142d6ca31d0015411a3619281894eb5e419
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523292"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520051"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>ISupportErrorInfoImpl 클래스
 
-이 클래스의 기본 구현을 제공 합니다 [ISupportErrorInfo 인터페이스](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) 는 단일 인터페이스만 개체에서 오류를 생성 하는 경우에 사용할 수 있습니다.
+이 클래스의 기본 구현을 제공 합니다 [ISupportErrorInfo 인터페이스](/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) 는 단일 인터페이스만 개체에서 오류를 생성 하는 경우에 사용할 수 있습니다.
 
 > [!IMPORTANT]
 >  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
@@ -35,7 +35,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 #### <a name="parameters"></a>매개 변수
 
 *piid*<br/>
-지 원하는 인터페이스의 IID에 대 한 포인터 [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo)합니다.
+지 원하는 인터페이스의 IID에 대 한 포인터 [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo)합니다.
 
 ## <a name="members"></a>멤버
 
@@ -43,11 +43,11 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 
 |이름|설명|
 |----------|-----------------|
-|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|인터페이스를 구분 하는지 여부를 나타냅니다 `riid` 지원 합니다 [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 인터페이스입니다.|
+|[ISupportErrorInfoImpl::InterfaceSupportsErrorInfo](#interfacesupportserrorinfo)|인터페이스를 구분 하는지 여부를 나타냅니다 `riid` 지원 합니다 [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 인터페이스입니다.|
 
 ## <a name="remarks"></a>설명
 
-합니다 [ISupportErrorInfo 인터페이스](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) 하면 클라이언트에 오류 정보를 반환할 수 있습니다. 사용 하는 개체 `IErrorInfo` 구현 해야 `ISupportErrorInfo`합니다.
+합니다 [ISupportErrorInfo 인터페이스](/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) 하면 클라이언트에 오류 정보를 반환할 수 있습니다. 사용 하는 개체 `IErrorInfo` 구현 해야 `ISupportErrorInfo`합니다.
 
 클래스 `ISupportErrorInfoImpl` 의 기본 구현을 제공 `ISupportErrorInfo` 는 단일 인터페이스만 개체에서 오류를 생성 하는 경우에 사용할 수 있습니다. 예를 들어:
 
@@ -65,7 +65,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 
 ##  <a name="interfacesupportserrorinfo"></a>  ISupportErrorInfoImpl::InterfaceSupportsErrorInfo
 
-인터페이스를 구분 하는지 여부를 나타냅니다 `riid` 지원 합니다 [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 인터페이스입니다.
+인터페이스를 구분 하는지 여부를 나타냅니다 `riid` 지원 합니다 [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 인터페이스입니다.
 
 ```
 STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
@@ -73,7 +73,7 @@ STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 
 ### <a name="remarks"></a>설명
 
-참조 [ISupportErrorInfo::InterfaceSupportsErrorInfo](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) Windows SDK에에서 있습니다.
+참조 [ISupportErrorInfo::InterfaceSupportsErrorInfo](/windows/desktop/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) Windows SDK에에서 있습니다.
 
 ##  <a name="getsize"></a>  IThreadPoolConfig::GetSize
 

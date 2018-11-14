@@ -84,16 +84,17 @@ helpviewer_keywords:
 - std::experimental::filesystem::system_complete
 - std::experimental::filesystem::temp_directory_path
 - std::experimental::filesystem::u8path
-ms.openlocfilehash: ff908ab57b1130f959e5e9818e4185a8b3cfd348
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49a5b59234d92d2587abceff80382e477f66e762
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473582"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333311"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;filesystem&gt; 함수
 
 [\<filesystem>](../standard-library/filesystem.md) 헤더의 이러한 사용 가능한 함수는 경로, 파일, symlink, 디렉터리 및 볼륨에서 수정 및 쿼리 작업을 수행합니다. 자세한 내용 및 코드 예제를 보려면 [파일 시스템 탐색(C++)](../standard-library/file-system-navigation.md)을 참조하세요.
+
 ||||
 |-|-|-|
 |[absolute](#absolute)|[begin](#begin)|[canonical](#canonical)|

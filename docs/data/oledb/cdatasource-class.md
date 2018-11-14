@@ -57,12 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: f52b5b4313f8c9703a578f7d0d3ed672555f647e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 53e9305dd308e77afbd8d53754614c1cfb559f94
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646115"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557078"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 
@@ -117,7 +117,7 @@ void Close() throw();
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetInitializationString(BSTR* pInitializationString, 
+HRESULT GetInitializationString(BSTR* pInitializationString,
    bool bIncludePassword = false) throw();
 ```
 
@@ -144,15 +144,15 @@ HRESULT GetInitializationString(BSTR* pInitializationString, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetProperties(ULONG ulPropIDSets, 
-   constDBPROPIDSET* pPropIDSet, 
-   ULONG* pulPropertySets, 
+HRESULT GetProperties(ULONG ulPropIDSets,
+   constDBPROPIDSET* pPropIDSet,
+   ULONG* pulPropertySets,
    DBPROPSET** ppPropsets) const throw();
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [idbproperties:: Getproperties](/previous-versions/windows/desktop/ms714344) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
+참조 [idbproperties:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -169,8 +169,8 @@ HRESULT GetProperties(ULONG ulPropIDSets, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT GetProperty(const GUID& guid, 
-   DBPROPID propid, 
+HRESULT GetProperty(const GUID& guid,
+   DBPROPID propid,
    VARIANT* pVariant) const throw();
 ```
 
@@ -228,13 +228,13 @@ HRESULT Open(const CEnumerator& enumerator,
 HRESULT Open(HWND hWnd = GetActiveWindow(),
    DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_WIZARDSHEET) throw();
 
-HRESULT Open(LPCWSTR szProgID, 
-   DBPROPSET* pPropSet = NULL, 
+HRESULT Open(LPCWSTR szProgID,
+   DBPROPSET* pPropSet = NULL,
    ULONG nPropertySets = 1) throw();
 
-HRESULT Open(LPCSTR szProgID, 
-   LPCTSTR pName,LPCTSTR pUserName = NULL, 
-   LPCTSTR pPassword = NULL, 
+HRESULT Open(LPCSTR szProgID,
+   LPCTSTR pName,LPCTSTR pUserName = NULL,
+   LPCTSTR pPassword = NULL,
    long nInitMode = 0) throw();
 ```
 
@@ -244,10 +244,10 @@ HRESULT Open(LPCSTR szProgID, 
 [in] `CLSID` 데이터 공급자입니다.
 
 *pPropSet*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
 
 *nPropertySets*<br/>
-[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 구조에 전달 합니다 *pPropSet* 인수입니다.
+[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
 
 *pName*<br/>
 [in] 연결할 데이터베이스의 이름입니다.
@@ -259,7 +259,7 @@ HRESULT Open(LPCSTR szProgID, 
 [in] 사용자의 암호입니다.
 
 *nInitMode*<br/>
-[in] 데이터베이스 초기화 모드입니다. 참조 [초기화 속성](/previous-versions/windows/desktop/ms723127)에 *OLE DB Programmer's Reference* 올바른 초기화 모드 목록을 Windows sdk입니다. 하는 경우 *nInitMode* 0, 아니요 초기화가 모드는 연결을 여는데 사용 되는 속성 집합에 포함 됩니다.
+[in] 데이터베이스 초기화 모드입니다. 참조 [초기화 속성](https://docs.microsoft.com/previous-versions/windows/desktop/ms723127(v=vs.85))에 *OLE DB Programmer's Reference* 올바른 초기화 모드 목록을 Windows sdk입니다. 하는 경우 *nInitMode* 0, 아니요 초기화가 모드는 연결을 여는데 사용 되는 속성 집합에 포함 됩니다.
 
 *szProgID*<br/>
 [in] 프로그램 식별자입니다.
@@ -304,7 +304,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 *szFileName*<br/>
 [in] 일반적으로 데이터 소스 연결(.UDL) 파일의 이름입니다.
 
-데이터 연결 파일 (.udl 파일)에 대 한 자세한 내용은 참조 하세요. [데이터 링크 API 개요](/previous-versions/windows/desktop/ms718102) Windows SDK에 있습니다.
+데이터 연결 파일 (.udl 파일)에 대 한 자세한 내용은 참조 하세요. [데이터 링크 API 개요](https://docs.microsoft.com/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -321,7 +321,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString, 
+HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
    bool fPromptForInfo= false) throw();
 ```
 
@@ -350,8 +350,8 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ), 
-   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE, 
+HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
+   DBPROMPTOPTIONS dwPromptOptions = DBPROMPTOPTIONS_NONE,
    LPCOLESTR szInitialDirectory = NULL) throw();
 ```
 
@@ -399,10 +399,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] 데이터 공급자의 프로그램 ID입니다.
 
 *pPropset*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. 동일한 속성에 두 번 이상 지정 된 경우 *pPropset*, 다음 사용 되는 값은 공급자별으로 다릅니다. 하는 경우 *ulPropSets* 가 0 이면이 매개 변수가 무시 됩니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. 동일한 속성에 두 번 이상 지정 된 경우 *pPropset*, 다음 사용 되는 값은 공급자별으로 다릅니다. 하는 경우 *ulPropSets* 가 0 이면이 매개 변수가 무시 됩니다.
 
 *ulPropSets*<br/>
-[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367) 구조에 전달 합니다 *pPropSet* 인수입니다. 이 값이 0 이면 공급자 무시 *pPropset*합니다.
+[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다. 이 값이 0 이면 공급자 무시 *pPropset*합니다.
 
 ### <a name="return-value"></a>반환 값
 

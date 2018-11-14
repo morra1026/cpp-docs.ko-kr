@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ribbon resource, converting from an MFC ribbon
 - MFC ribbon, converting to a ribbon resource
 ms.assetid: 324b7ff6-58f9-4691-96a9-9836a79d0fb6
-ms.openlocfilehash: 2ba2907a95018948670847282fd09e0a71a8c106
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 627c50758b10ad18e45fc1432340c0eb2dad7b19
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509568"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524367"
 ---
 # <a name="how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource"></a>방법: 기존 MFC 리본을 리본 리소스로 변환
 
@@ -24,7 +24,6 @@ ms.locfileid: "50509568"
 
 ```
     m_wndRibbonBar.SaveToXMLFile("RibbonOutput.xml");
-
 ```
 
    파일을 저장한 후 닫습니다.
@@ -41,7 +40,6 @@ ms.locfileid: "50509568"
 
 ```
     m_wndRibbonBar.LoadFromResource(IDR_RIBBON1);
-
 ```
 
 1. 프로젝트를 빌드하고 프로그램을 실행 합니다.

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - projects [C++]
 - solutions [C++], about solutions
 ms.assetid: 93a3f290-e294-46e3-876e-e3084d9ae833
-ms.openlocfilehash: 6cbd4cf86e6828d637430c468afd1306665746a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 968e4981a28d646b75335ee380635fd8f8e863e3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459737"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519233"
 ---
 # <a name="walkthrough-working-with-projects-and-solutions-c"></a>연습: 프로젝트 및 솔루션 작업(C++)
 
@@ -70,7 +70,7 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 1. Cardgame.h 파일을 편집하고 다음과 같이 변경합니다.
 
    - 클래스 정의의 여는 중괄호 뒤에 두 개의 전용 데이터 멤버를 추가합니다.
-      <!--      [!code-cpp[NVC_Walkthrough_Working_With_Projects#100](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_1.h)] -->
+     <!--      [!code-cpp[NVC_Walkthrough_Working_With_Projects#100](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_1.h)] -->
 
       ```cpp
       int players;
@@ -92,18 +92,19 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
    변경한 후 Cardgame.h 파일은 아래 코드와 유사합니다.
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#103](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_4.h)]-->
-   ```cpp
-   #pragma once
-   class Cardgame
-   {
-       int players;
-       static int totalParticipants;
-   public:
-       Cardgame(int players);
-       ~Cardgame();
-       static int GetParticipants() { return totalParticipants; }
-   };
-   ```
+
+    ```cpp
+    #pragma once
+    class Cardgame
+    {
+        int players;
+        static int totalParticipants;
+    public:
+        Cardgame(int players);
+        ~Cardgame();
+        static int GetParticipants() { return totalParticipants; }
+    };
+    ```
 
    `#pragma once` 줄은 컴파일러에 헤더 파일을 한 번만 포함하도록 지시합니다. 자세한 내용은 [once](../preprocessor/once.md)를 참조하세요. 위의 헤더 파일에 포함된 다른 C++ 키워드에 대한 자세한 내용은 [class](../cpp/class-cpp.md), [int](../cpp/fundamental-types-cpp.md), [static](../cpp/storage-classes-cpp.md) 및 [public](../cpp/public-cpp.md)을 참조하세요.
 
@@ -112,27 +113,28 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 1. 파일에 있는 모든 항목을 삭제하고 다음 코드로 바꿉니다.
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#111](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_5.cpp)]-->
-   ```cpp
-   #include "pch.h"
-   #include "Cardgame.h"
-   #include <iostream>
 
-   using namespace std;
+    ```cpp
+    #include "pch.h"
+    #include "Cardgame.h"
+    #include <iostream>
 
-   int Cardgame::totalParticipants = 0;
+    using namespace std;
 
-   Cardgame::Cardgame(int players)
-       : players(players)
-   {
-       totalParticipants += players;
-       cout << players << " players have started a new game.  There are now "
-            << totalParticipants << " players in total." << endl;
-   }
+    int Cardgame::totalParticipants = 0;
 
-   Cardgame::~Cardgame()
-   {
-   }
-   ```
+    Cardgame::Cardgame(int players)
+        : players(players)
+    {
+        totalParticipants += players;
+        cout << players << " players have started a new game.  There are now "
+             << totalParticipants << " players in total." << endl;
+    }
+
+    Cardgame::~Cardgame()
+    {
+    }
+    ```
 
    > [!NOTE]
    > 코드를 입력할 때 자동 완성 기능을 사용할 수 있습니다. 예를 들어 키보드에서 이 코드를 입력한 경우 *pl* 또는 *tot*를 입력한 다음, **Ctrl**+**스페이스바**를 누릅니다. 자동 완성 기능이 `players` 또는 `totalParticipants`를 자동으로 입력합니다.
@@ -146,31 +148,33 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 1. **Game.cpp** 편집기 창에서 기존 코드를 다음과 같이 바꿉니다.
 
    <!--[!code-cpp[NVC_Walkthrough_Working_With_Projects#120](../ide/codesnippet/CPP/walkthrough-working-with-projects-and-solutions-cpp_6.cpp)]-->
-   ```cpp
-   // Game.cpp : Defines the entry point for the console application.
-   //
 
-   #include "pch.h"
-   #include "Cardgame.h"
-   #include <iostream>
+    ```cpp
+    // Game.cpp : Defines the entry point for the console application.
+    //
 
-   using namespace std;
+    #include "pch.h"
+    #include "Cardgame.h"
+    #include <iostream>
 
-   void PlayGames()
-   {
-       Cardgame bridge(4);
-       Cardgame blackjack(8);
-       Cardgame solitaire(1);
-       Cardgame poker(5);
-   }
+    using namespace std;
 
-   int main()
-   {
-       PlayGames();
-       return 0;
-   }
-   ```
-이 코드는 소스 코드에 테스트 함수 `PlayGames`를 추가하고, `main`에서 호출합니다.
+    void PlayGames()
+    {
+        Cardgame bridge(4);
+        Cardgame blackjack(8);
+        Cardgame solitaire(1);
+        Cardgame poker(5);
+    }
+
+    int main()
+    {
+        PlayGames();
+        return 0;
+    }
+    ```
+
+   이 코드는 소스 코드에 테스트 함수 `PlayGames`를 추가하고, `main`에서 호출합니다.
 
 ## <a name="build-and-run-your-app-project"></a>앱 프로젝트 빌드 및 실행
 
@@ -182,15 +186,15 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
    빌드의 출력이 **출력** 창에 표시됩니다. 빌드가 성공한 경우 출력은 다음과 같습니다.
 
-   ```Output
-   1>------ Build started: Project: Game, Configuration: Debug Win32 ------
-   1>pch.cpp
-   1>Cardgame.cpp
-   1>Game.cpp
-   1>Generating Code...
-   1>Game.vcxproj -> C:\Users\<username>\source\repos\Game\Debug\Game.exe
-   ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
-   ```
+    ```Output
+    1>------ Build started: Project: Game, Configuration: Debug Win32 ------
+    1>pch.cpp
+    1>Cardgame.cpp
+    1>Game.cpp
+    1>Generating Code...
+    1>Game.vcxproj -> C:\Users\<username>\source\repos\Game\Debug\Game.exe
+    ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+    ```
 
    빌드 구성에 따라 **출력** 창에 다른 단계가 표시될 수 있지만, 프로젝트 빌드가 성공한 경우 마지막 줄은 표시된 출력과 비슷합니다.
 
@@ -198,13 +202,14 @@ C++ 언어의 기본적인 사항을 이해하고 컴파일러, 링커 및 디�
 
 1. 프로젝트를 실행하려면 메뉴 모음에서 **디버그** > **디버그하지 않고 시작**을 선택합니다. 콘솔 창이 나타나고 출력은 다음과 같습니다.
 
-   ```Output
-   4 players have started a new game.  There are now 4 players in total.
-   8 players have started a new game.  There are now 12 players in total.
-   1 players have started a new game.  There are now 13 players in total.
-   5 players have started a new game.  There are now 18 players in total.
-   ```
-콘솔 창을 닫으려면 키를 누릅니다.
+    ```Output
+    4 players have started a new game.  There are now 4 players in total.
+    8 players have started a new game.  There are now 12 players in total.
+    1 players have started a new game.  There are now 13 players in total.
+    5 players have started a new game.  There are now 18 players in total.
+    ```
+
+   콘솔 창을 닫으려면 키를 누릅니다.
 
 축하합니다, 앱 프로젝트와 솔루션을 성공적으로 빌드했습니다. Visual Studio에서 C++ 코드 프로젝트를 빌드하는 방법에 대해 자세히 알아보려면 연습을 계속합니다.
 

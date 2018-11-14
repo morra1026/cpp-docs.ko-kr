@@ -16,12 +16,12 @@ helpviewer_keywords:
 - ismbc routines
 - _ismbc routines
 ms.assetid: b8995391-7857-4ac3-9a1e-de946eb4464d
-ms.openlocfilehash: 707287ea7abe255409911f5388cd1f96d976802b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 97094c6773ee6b67655dacc557335ed222fed311
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454637"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326734"
 ---
 # <a name="ismbc-routines"></a>_ismbc 루틴
 
@@ -42,7 +42,7 @@ ms.locfileid: "50454637"
 |루틴에서 반환된 값|테스트 조건|932 코드 페이지 예제|
 |-------------|--------------------|---------------------------|
 |[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|영숫자|`c`가 ASCII 영어 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환합니다. `_ismbcdigit` 및 `_ismbcalpha`의 예제를 참조하십시오.|
-|[_ismbcalpha, _ismbcalpha\_](../c-runtime-library/reference/ismbcalnum-functions.md)|Alphabetic|`c`가 ASCII 영어 문자(`_ismbcupper` 및 `_ismbclower`에 대한 예 참조) 또는 가타카나 문자(0xA6<=`c`<=0xDF)의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환합니다.|
+|[_ismbcalpha, _ismbcalpha_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alphabetic|`c`가 ASCII 영어 문자(`_ismbcupper` 및 `_ismbclower`에 대한 예 참조) 또는 가타카나 문자(0xA6<=`c`<=0xDF)의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환합니다.|
 |[_ismbcdigit, _ismbcdigit_l](../c-runtime-library/reference/ismbcalnum-functions.md)|숫자|`c`가 ASCII 숫자(0x30<=`c`<=0x39)의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환합니다.|
 |[_ismbcgraph, _ismbcgraph_l](../c-runtime-library/reference/ismbcgraph-functions.md)|그래픽|`c`가 공백 ( )을 제외하고 모든 ASCII 또는 가타카나 인쇄 가능한 문자의 싱글바이트 표현인 경우에만 0이 아닌 값을 반환합니다. `_ismbcdigit`, `_ismbcalpha` 및 `_ismbcpunct`에 대한 예를 참조하세요.|
 |[_ismbclegal, _ismbclegal_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|유효한 멀티바이트 문자|`c`의 첫 번째 바이트는 0x81 – 0x9F 또는 0xE0 – 0xFC 범위 내에 있고 두 번째 바이트는 0x40 - 0x7E 또는 0x80 - FC 범위 내에 있는 경우에만 0이 아닌 값을 반환합니다.|

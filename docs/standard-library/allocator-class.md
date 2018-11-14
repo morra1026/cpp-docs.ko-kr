@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::allocator [C++], max_size
 - std::allocator [C++], rebind
 ms.assetid: 3fd58076-56cc-43bb-ad58-b4b7c9c6b410
-ms.openlocfilehash: dbae9ef71927fd5b781488258bf801cf19f4fb90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40e99901d4d4105902010a9e5b71ed3edf7d00db
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450676"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518868"
 ---
 # <a name="allocator-class"></a>allocator 클래스
 
@@ -63,7 +63,7 @@ class allocator
 
 예를 들어 할당자 개체에서 전용 힙 또는 공유 메모리에 저장소를 할당하거나, 작거나 큰 개체 크기에 맞게 최적화할 수 있습니다. 또한 제공된 형식 정의를 사용하여 공유 메모리를 관리하는 특수 접근자 개체를 통해 요소에 액세스하거나 자동 가비지 컬렉션을 수행하도록 지정할 수 있습니다. 따라서 할당자 개체를 사용하여 저장소를 할당하는 클래스는 C++ 표준 라이브러리의 컨테이너처럼 이러한 형식을 사용하여 포인터 및 참조 개체를 선언해야 합니다.
 
-**(C_++98/03만 해당)** 할당자 클래스에서 파생시키는 경우 `_Other` typedef에서 새로 파생 클래스를 참조하는 [rebind](#rebind) 구조체를 제공해야 합니다.
+<strong>(C + + 98/03만)</strong>  제공 해야 하는 할당자 클래스에서 파생 시킬 때를 [rebind](#rebind) 구조체 인 `_Other` typedef 새로 파생 클래스를 참조 합니다.
 
 따라서 할당자는 다음과 같은 형식을 정의합니다.
 

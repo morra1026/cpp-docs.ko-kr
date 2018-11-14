@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: d86978c6bf8aba87828cdda91c3e849a2f755a90
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6438b9d125cc2b44c6c4525dcfa5a2bd95763304
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525270"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524432"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -95,7 +95,7 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
-리소스 스크립트 편집에 대 한 자세한 내용은 참조 하세요. [방법: 리소스 스크립트 파일을 텍스트 형식으로 열기](../../windows/how-to-open-a-resource-script-file-in-text-format.md)합니다. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 참조 하세요. [공통 제어 매개 변수](/windows/desktop/menurc/common-control-parameters) 에서 Windows SDK *: SDK Tools*합니다.
+리소스 스크립트 편집에 대 한 자세한 내용은 참조 하세요. [방법: 리소스 스크립트 파일을 텍스트 형식으로 열기](../../windows/how-to-open-a-resource-script-file-in-text-format.md)합니다. 컨트롤 리소스 정의 문에 대 한 자세한 내용은 참조 하세요. [공통 제어 매개 변수](/windows/desktop/menurc/common-control-parameters) Windows SDK에서: SDK Tools입니다.
 
 일반 대화 상자에 대 한 자세한 내용은 참조 [DialogBox](/windows/desktop/api/winuser/nf-winuser-dialogboxa) 하 고 [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK에 있습니다.
 
@@ -160,7 +160,7 @@ ATLAPI AtlAxCreateControl(
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
 
-- 와 같은 URL "http://www.microsoft.com"
+- 와 같은 URL "<http://www.microsoft.com>"
 
 - 와 같은 활성 문서에 대 한 참조 "file://\\\Documents\MyDoc.doc"
 
@@ -212,7 +212,7 @@ ATLAPI AtlAxCreateControlEx(
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
 
-- 와 같은 URL "http://www.microsoft.com"
+- 와 같은 URL "<http://www.microsoft.com>"
 
 - 와 같은 활성 문서에 대 한 참조 "file://\\\Documents\MyDoc.doc"
 
@@ -271,7 +271,7 @@ ATLAPI AtlAxCreateControlLic(
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
 
-- 와 같은 URL "http://www.microsoft.com"
+- 와 같은 URL "<http://www.microsoft.com>"
 
 - 와 같은 활성 문서에 대 한 참조 "file://\\\Documents\MyDoc.doc"
 
@@ -325,7 +325,7 @@ ATLAPI AtlAxCreateControlLicEx(
 
 - "{8E27C92B-1264-101C-8A2F-040224009C02}"와 같은 CLSID
 
-- 와 같은 URL "http://www.microsoft.com"
+- 와 같은 URL "<http://www.microsoft.com>"
 
 - 와 같은 활성 문서에 대 한 참조 "file://\\\Documents\MyDoc.doc"
 

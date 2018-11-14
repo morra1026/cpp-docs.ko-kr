@@ -6,12 +6,12 @@ helpviewer_keywords:
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 3f12eb7c7da449715116e88c9f78ee2e32fc327f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6256328caa11d188f3a50445f62df096b6f6acb3
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596172"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51557039"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
 
@@ -39,7 +39,7 @@ OLE DB 공급자 템플릿에 필요한 모든 인터페이스에 대 한 미리
 
 OLE DB 공급자 템플릿 행 및 저장소 개체를 구현 하지 않습니다.
 
-다음 표에서 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스에 따라 합니다 [OLE DB 2.6 SDK 설명서](/previous-versions/windows/desktop/ms722784)합니다.
+다음 표에서 위에 나열 된 개체에 대 한 필수 및 선택적 인터페이스에 따라 합니다 [OLE DB 2.6 SDK 설명서](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))합니다.
 
 |구성 요소|인터페이스|주석|
 |---------------|---------------|-------------|
@@ -58,4 +58,4 @@ OLE DB 공급자 템플릿 행 및 저장소 개체를 구현 하지 않습니�
 ## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
-[OLE DB 인터페이스](/previous-versions/windows/desktop/ms709709)<br/>
+[OLE DB 인터페이스](https://docs.microsoft.com/previous-versions/windows/desktop/ms709709(v=vs.85))<br/>

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MMWORD directive
 ms.assetid: b4c5a104-9078-4fb4-afc3-d1e63abe562a
-ms.openlocfilehash: 1205338f9140c74a3a6e0b4bce57983edc80862e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4ebaa9d47a569bc9cf7d843d3ddb54ca5d713a0
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541120"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328229"
 ---
 # <a name="mmword"></a>MMWORD
 
@@ -36,5 +36,5 @@ MMX와 SSE (XMM) 지침을 사용 하 여 64 비트 멀티미디어 피연산자
 ## <a name="example"></a>예제
 
 ```asm
-    movq     mm0, mmword ptr [ebx]
+    movq     mm0, mmword ptr [ebx]
 ```

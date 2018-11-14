@@ -94,12 +94,12 @@ helpviewer_keywords:
 - std::basic_streambuf [C++], xsgetn
 - std::basic_streambuf [C++], xsputn
 ms.assetid: 136af6c3-13bf-4501-9288-b93da26efac7
-ms.openlocfilehash: d15e38c63e335dbd574ad2d1c1ee23e0d5a70a30
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 581652ea39d0729079666dc675b7214b4b3a4da3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565726"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524679"
 ---
 # <a name="basicstreambuf-class"></a>basic_streambuf 클래스
 
@@ -457,7 +457,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### <a name="remarks"></a>설명
 
-_ *Meta*가 **traits_type::eof**와 비교하여 같지 않은 경우 보호되는 가상 멤버 함수는 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*) 요소를 출력 스트림에 삽입하려고 합니다. 수행할 수 있는 방법은 다양합니다.
+하는 경우  *\_Meta* 같음 비교 하지 않습니다 **traits_type:: eof**, 보호 된 가상 구성원 함수는 요소를 삽입 하려고 **traits_type::** [ to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*) 출력 스트림으로. 수행할 수 있는 방법은 다양합니다.
 
 - `write position`이 사용 가능한 경우 요소를 쓰기 위치에 저장하고 출력 버퍼에 대해 다음 포인터를 증가시킬 수 있습니다.
 
@@ -492,7 +492,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### <a name="remarks"></a>설명
 
-_ *Meta*가 **traits_type::eof**와 비교하여 같은 경우 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 요소입니다. 아닌 경우 해당 요소는 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*)로 바뀝니다. 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
+하는 경우  *\_Meta* 비교 하 여 같은 **traits_type:: eof**, 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 것입니다. 그렇지 않은 경우 해당 요소 바뀝니다 **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
 
 - putback 위치가 사용 가능한 경우 요소를 putback 위치에 저장하고 입력 버퍼에 대해 다음 포인터를 증가시킬 수 있습니다.
 
@@ -689,15 +689,12 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 3
-
 ```
 
 ```Output
-
-      33
+33
 51
 ```
 
@@ -967,14 +964,11 @@ int main( )
 }
 ```
 
-```Output
-
+```Input
 aa
-
 ```
 
 ```Output
-
 aa97
 ```
 

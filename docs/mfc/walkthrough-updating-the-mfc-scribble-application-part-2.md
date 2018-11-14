@@ -4,12 +4,12 @@ ms.date: 09/20/2018
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-ms.openlocfilehash: d618d79c50892523b3e4a71be163b8778402e48e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a52486658307f001001e91772dad1167730def2
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570341"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519271"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 업데이트(파트 2)
 
@@ -120,25 +120,25 @@ ms.locfileid: "50570341"
 
    1. 다음 코드를 `CScribbleDoc::OnPenThinWidth`에 추가합니다.
 
-    ```cpp
-    // Get a pointer to the ribbon bar
-    CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx*) AfxGetMainWnd())->GetRibbonBar();
-    ASSERT_VALID(pRibbon);
+        ```cpp
+        // Get a pointer to the ribbon bar
+        CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx*) AfxGetMainWnd())->GetRibbonBar();
+        ASSERT_VALID(pRibbon);
 
-    // Get a pointer to the Thin Width combo box
-    CMFCRibbonComboBox* pThinComboBox = DYNAMIC_DOWNCAST(
-    CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THIN_WIDTH));
+        // Get a pointer to the Thin Width combo box
+        CMFCRibbonComboBox* pThinComboBox = DYNAMIC_DOWNCAST(
+        CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THIN_WIDTH));
 
-    //Get the selected value
-    int nCurSel = pThinComboBox->GetCurSel();
-    if (nCurSel>= 0)
-    {
-        m_nThinWidth = atoi(CStringA(pThinComboBox->GetItem(nCurSel)));
-    }
+        //Get the selected value
+        int nCurSel = pThinComboBox->GetCurSel();
+        if (nCurSel>= 0)
+        {
+            m_nThinWidth = atoi(CStringA(pThinComboBox->GetItem(nCurSel)));
+        }
 
-    // Create a new pen using the selected width
-    ReplacePen();
-    ```
+        // Create a new pen using the selected width
+        ReplacePen();
+        ```
 
 1. 그런 다음 메뉴 굵게 펜에 대 한 항목 및 이벤트 처리기를 만듭니다.
 
@@ -154,23 +154,23 @@ ms.locfileid: "50570341"
 
    1. 다음 코드를 `CScribbleDoc::OnPenThickWidth`에 추가합니다.
 
-      ```cpp
-      // Get a pointer to the ribbon bar
-      CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx *) AfxGetMainWnd())->GetRibbonBar();
-      ASSERT_VALID(pRibbon);
+        ```cpp
+        // Get a pointer to the ribbon bar
+        CMFCRibbonBar* pRibbon = ((CMDIFrameWndEx *) AfxGetMainWnd())->GetRibbonBar();
+        ASSERT_VALID(pRibbon);
 
-      CMFCRibbonComboBox* pThickComboBox = DYNAMIC_DOWNCAST(
-          CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THICK_WIDTH));
-      // Get the selected value
-      int nCurSel = pThickComboBox->GetCurSel();
-      if (nCurSel>= 0)
-      {
-          m_nThickWidth = atoi(CStringA(pThickComboBox->GetItem(nCurSel)));
-      }
+        CMFCRibbonComboBox* pThickComboBox = DYNAMIC_DOWNCAST(
+            CMFCRibbonComboBox, pRibbon->FindByID(ID_PEN_THICK_WIDTH));
+        // Get the selected value
+        int nCurSel = pThickComboBox->GetCurSel();
+        if (nCurSel>= 0)
+        {
+            m_nThickWidth = atoi(CStringA(pThickComboBox->GetItem(nCurSel)));
+        }
 
-      // Create a new pen using the selected width
-      ReplacePen();
-      ```
+        // Create a new pen using the selected width
+        ReplacePen();
+        ```
 
 1. 변경 사항을 저장한 다음 응용 프로그램을 빌드하고 실행합니다. 새 단추와 콤보 상자를 표시 되어야 합니다. Scribble을 다른 펜 너비를 사용해 보세요.
 

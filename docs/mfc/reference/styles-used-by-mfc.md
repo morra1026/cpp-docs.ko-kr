@@ -196,12 +196,12 @@ helpviewer_keywords:
 - WS_EX_TRANSPARENT constant [MFC]
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-ms.openlocfilehash: dc70059e2de054e4b1aac4800e1d61c58bc9b467
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0aef399b734ad5b15a9a2d4028be3fde3f02505
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642912"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525309"
 ---
 # <a name="styles-used-by-mfc"></a>MFC에서 사용하는 스타일
 
@@ -338,7 +338,7 @@ ms.locfileid: "50642912"
 |LBS_HASSTRINGS|문자열로 구성 된 항목을 포함 하는 소유자 그리기 목록 상자를 지정 합니다. 응용 프로그램에서 사용할 수 있도록 하는 메모리 및 문자열에 대 한 포인터 목록 상자 유지는 `GetText` 특정 항목에 대 한 텍스트를 검색 하려면 멤버 함수입니다.|
 |LBS_MULTICOLUMN|가로로 스크롤되는 여러 열 목록 상자를 지정 합니다. `SetColumnWidth` 열의 너비를 설정 하는 멤버 함수입니다.|
 |LBS_MULTIPLESEL|문자열 선택 될 때마다 사용자가 클릭 하거나 문자열을 두 번 클릭 설정/해제 합니다. 임의 개수의 문자열을 선택할 수 있습니다.|
-|LBS_NODATA|데이터가 없는 목록 상자를 지정합니다. 목록 상자에서 항목 수보다 하나 천 초과 하는 경우이 스타일을 지정 합니다. 데이터가 없는 목록 상자 LBS_OWNERDRAWFIXED 스타일 있어야 하지만 LBS_SORT 또는 LBS_HASSTRINGS 스타일을 포함 하지 않아야 합니다. <br /></b r / > 데이터가 없는 목록 상자가 소유자가 그린 목록 상자를 유사 하 게 제외 하 고 항목에 대 한 문자열 또는 비트맵 데이터가 포함 됩니다. 명령에 추가 하려면 삽입 또는 항목을 삭제 특정 데이터 항목을 항상 무시 목록 상자 내에서 문자열을 항상 찾으려는 요청이 실패 합니다. 시스템 항목을 그려야 하는 경우 소유자 창에 WM_DRAWITEM 메시지를 보냅니다. itemID 멤버는 `DRAWITEMSTRUCT` WM_DRAWITEM 메시지와 함께 전달 된 구조체에 그릴 항목의 줄 번호를 지정 합니다. 데이터가 없는 목록 상자 WM_DELETEITEM 메시지를 보내지 않습니다.|
+|LBS_NODATA|데이터가 없는 목록 상자를 지정합니다. 목록 상자에서 항목 수보다 하나 천 초과 하는 경우이 스타일을 지정 합니다. 데이터가 없는 목록 상자 LBS_OWNERDRAWFIXED 스타일 있어야 하지만 LBS_SORT 또는 LBS_HASSTRINGS 스타일을 포함 하지 않아야 합니다.<br/><br/> 데이터가 없는 목록 상자와 제외 하 고 항목에 대 한 문자열 또는 비트맵 데이터가 없는 포함 소유자가 그린 목록 상자는 유사 합니다. 명령에 추가 하려면 삽입 또는 항목을 삭제 특정 데이터 항목을 항상 무시 목록 상자 내에서 문자열을 항상 찾으려는 요청이 실패 합니다. 시스템 항목을 그려야 하는 경우 소유자 창에 WM_DRAWITEM 메시지를 보냅니다. itemID 멤버는 `DRAWITEMSTRUCT` WM_DRAWITEM 메시지와 함께 전달 된 구조체에 그릴 항목의 줄 번호를 지정 합니다. 데이터가 없는 목록 상자 WM_DELETEITEM 메시지를 보내지 않습니다.|
 |LBS_NOINTEGRALHEIGHT|목록 상자의 크기가 목록 상자를 만들 때 응용 프로그램에서 지정 된 크기를 정확 하 게 합니다. 일반적으로 Windows 크기 목록 상자의 목록 상자 부분 항목을 표시 하지 않도록 합니다.|
 |LBS_NOREDRAW|목록 상자 표시에는 변경 될 때 업데이트 되지 않습니다. 이 스타일 WM_SETREDRAW 메시지를 전송 하 여 언제 든 지 변경할 수 있습니다.|
 |LBS_NOSEL|목록 상자에 항목을 볼 수 있지만 선택 되지 포함 되도록 지정 합니다.|
@@ -350,7 +350,7 @@ ms.locfileid: "50642912"
 |LBS_USETABSTOPS|목록 상자를 인식 하 고 해당 문자열을 그릴 때 탭 문자를 확장할 수 있습니다. 기본 탭 위치는 32 대화 단위입니다. (대화 상자 단위는 가로 또는 세로 거리를가 하는 데 사용 합니다. 하나의 가로 대화 상자 단위 현재 대화 기본 너비 단위의 1 / 4와 같습니다. 대화 상자 기본 단위는 현재 시스템 글꼴의 너비와 높이에 따라 계산 됩니다. `GetDialogBaseUnits` Windows 함수 현재 대화 상자 기본 단위를 픽셀 단위로 반환 합니다.) 이 스타일 LBS_OWNERDRAWFIXED로 쓰일 수 없습니다.|
 |LBS_WANTKEYBOARDINPUT|목록 상자의 소유자는 목록 상자에 입력 포커스가 있는 동안 사용자가 키를 누를 때마다 WM_CHARTOITEM 또는 WM_VKEYTOITEM 메시지를 받습니다. 이렇게 하면 키보드 입력에 특수 한 처리를 수행할 응용을 프로그램을 수 있습니다.|
 
-##<a name="message-box-styles"></a>  메시지 상자 스타일
+## <a name="message-box-styles"></a>  메시지 상자 스타일
 
 메시지 상자 스타일에 적용할 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox) 항목입니다. 스타일의 조합을 지정 합니다 *n 형식* 의 매개 변수 `AfxMessageBox`합니다. Windows 메시지 상자 스타일에 대 한 자세한 내용은 참조 하세요. [MessageBox 함수 (Windows)](/windows/desktop/api/winuser/nf-winuser-messagebox)합니다.
 
@@ -383,6 +383,7 @@ ms.locfileid: "50642912"
 |MB_ICONINFORMATION|메시지 상자에 "I" 원으로 구성 된 아이콘이 나타납니다.|
 |MB_ICONQUESTION|메시지 상자에는 물음표 아이콘이 표시 됩니다.|
 |MB_ICONSTOP|메시지 상자에는 정지 표지판 아이콘이 표시 됩니다.|
+
 ### <a name="message-box-default-buttons"></a>메시지 상자의 기본 단추
 
 |스타일|설명|

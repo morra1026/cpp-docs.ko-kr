@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: e709404ed6e0ba79159131de1cbff80905e9f216
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1c98056d5a5e2565e57044b1fb551db4f354f34
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517652"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326207"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: DLL의 일부로 MFC 사용
 
@@ -33,7 +33,7 @@ MFC를 사용 하는 응용 프로그램과 DLL을 원하는 경우 MFC 라이�
 
 - 정적으로 MFC에 링크 되는 기본 MFC Dll에 DLL의 크기를 사용 하 고 연결 하는 MFC 및 C 런타임 루틴에만 따라 달라 집니다.
 
-- 동적으로 MFC에 링크 되는 기본 MFC Dll을 사용 하 여 공유 버전의 MFC 사용 하 여 메모리를 절약 중요할 수 있습니다. 공유 Dll에서 Mfc를 배포 해야 하는 반면*\<버전 >*.dll 및 Msvvcrt*\<버전 >* DLL 사용 하 여.dll입니다.
+- 동적으로 MFC에 링크 되는 기본 MFC Dll을 사용 하 여 공유 버전의 MFC 사용 하 여 메모리를 절약 중요할 수 있습니다. 공유 Dll에서 Mfc를 배포 해야 하는 반면\<*버전*>.dll 및 Msvvcrt\<*버전*> DLL 사용 하 여.dll입니다.
 
 - DLL 디자인은 독립적 클래스를 구현 하는 방법입니다. DLL 디자인 하려는 Api에만 내보냅니다. 결과적으로 구현이 변경 되 면 기본 MFC Dll는 여전히 유효 합니다.
 

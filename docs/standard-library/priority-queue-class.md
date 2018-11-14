@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::priority_queue [C++], size
 - std::priority_queue [C++], top
 ms.assetid: 69fca9cc-a449-4be4-97b7-02ca5db9cbb2
-ms.openlocfilehash: 1b276f427fc127fb04f4f8e09f0278033ef64754
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8f2b4ab788c82e531d1121f04dd0d422efb17cd
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677177"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333217"
 ---
 # <a name="priorityqueue-class"></a>priority_queue 클래스
 
@@ -224,9 +224,9 @@ After a pop, the element at the top of the priority_queue is 20.
 ```cpp
 priority_queue();
 
-explicit priority_queue(const Traits&_comp);
+explicit priority_queue(const Traits& _comp);
 
-priority_queue(const Traits&_comp, const container_type& _Cont);
+priority_queue(const Traits& _comp, const container_type& _Cont);
 
 priority_queue(const priority_queue& right);
 
@@ -234,15 +234,15 @@ template <class InputIterator>
 priority_queue(InputIterator first, InputIterator last);
 
 template <class InputIterator>
-priority_queue(InputIterator first, InputIterator last, const Traits&_comp);
+priority_queue(InputIterator first, InputIterator last, const Traits& _comp);
 
 template <class InputIterator>
-priority_queue(InputIterator first, InputIterator last, const Traits&_comp, const container_type& _Cont);
+priority_queue(InputIterator first, InputIterator last, const Traits& _comp, const container_type& _Cont);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
-*_ comp*<br/>
+*_comp*<br/>
 priority_queue의 요소 순서를 지정하는 데 사용되는 **constTraits** 형식의 비교 함수로, 기본 컨테이너의 비교 함수를 기본값으로 사용합니다.
 
 *_Cont*<br/>
@@ -263,7 +263,7 @@ priority_queue의 요소 순서를 지정하는 데 사용되는 **constTraits**
 
 네 번째 생성자는 priority_queue의 복사본을 지정 *오른쪽*합니다.
 
-마지막 3 개 생성자는 범위를 복사 [* 먼저 마지막 *) 일부 컨테이너의 값을 사용 하 여 클래스의 비교 함수 형식을 지정할 때 명 시도가 향상 priority_queue를 초기화 **Traits** 및 `container_type`.
+마지막 3 개 생성자는 범위를 복사 \[ *첫 번째*를 *마지막*) 일부 컨테이너를 사용 하 여 값의 형식을 지정할 때 명 시도가 향상 priority_queue를 초기화 합니다. 클래스의 비교 함수 `Traits` 고 `container_type`입니다.
 
 ### <a name="example"></a>예제
 

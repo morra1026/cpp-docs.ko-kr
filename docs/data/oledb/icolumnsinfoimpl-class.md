@@ -27,23 +27,23 @@ helpviewer_keywords:
 - GetColumnInfo method
 - MapColumnIDs method
 ms.assetid: ba74c1c5-2eda-4452-8b57-84919fa0d066
-ms.openlocfilehash: 149d8ea9b23abffb73b5ea620ea094d6f5b792b9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67052bdc5d49673146c036167c027d1efd882495
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498932"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556506"
 ---
 # <a name="icolumnsinfoimpl-class"></a>IColumnsInfoImpl 클래스
 
-구현을 제공 합니다 [IColumnsInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.
+구현을 제공 합니다 [IColumnsInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms724541(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
 template <class T>
 class ATL_NO_VTABLE IColumnsInfoImpl :
-   public IColumnsInfo,  
+   public IColumnsInfo, 
    public CDBIDOps
 ```
 
@@ -83,7 +83,7 @@ STDMETHOD (GetColumnInfo)(DBORDINAL* pcColumns,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="mapcolumnids"></a> Icolumnsinfoimpl:: Mapcolumnids
 
@@ -99,7 +99,7 @@ STDMETHOD (MapColumnIDs)(DBORDINAL cColumnIDs,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IColumnsInfo::MapColumnIDs](/previous-versions/windows/desktop/ms714200) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IColumnsInfo::MapColumnIDs](https://docs.microsoft.com/previous-versions/windows/desktop/ms714200(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - recordsets, parameterizing
 - passing parameters, to queries at runtime
 ms.assetid: 7d1dfeb6-5ee0-45e2-aacc-63bc52a465cd
-ms.openlocfilehash: fdea70f8d87604ca0665baa64c8652c14295a670
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f58a33a0c43cb0d70d98f3f2ae33f766058b1c23
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506576"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331271"
 ---
 # <a name="recordset-parameterizing-a-recordset-odbc"></a>레코드 집합: 레코드 집합 매개 변수화(ODBC)
 
@@ -54,7 +54,7 @@ ms.locfileid: "50506576"
 
    레코드 집합의 필터 문자열을 저장 `m_strFilter`, 아래와 같습니다.
 
-    ```
+    ```cpp
     "StudentID = ?"
     ```
 
@@ -62,7 +62,7 @@ ms.locfileid: "50506576"
 
    매개 변수 값을 다음과 같이 지정 합니다.
 
-    ```
+    ```cpp
     strInputID = "100";
     ...
     m_strParam = strInputID;
@@ -70,7 +70,7 @@ ms.locfileid: "50506576"
 
    이 방식으로 필터 문자열을 설정 하려고 하지 않습니다.
 
-    ```
+    ```cpp
     m_strFilter = "StudentID = 100";   // 100 is incorrectly quoted
                                        // for some drivers
     ```
@@ -79,15 +79,15 @@ ms.locfileid: "50506576"
 
    매개 변수 값이 다르면 새로운 학생 id 레코드 집합 다시 쿼리 해도 될 때마다
 
-    > [!TIP]
-    >  매개 변수를 사용 하면 단순히 필터 보다 더 효율적입니다. 데이터베이스 매개 변수가 있는 레코드 집합에 대 한 SQL을 처리 해야 합니다 **선택** 문을 한 번만 합니다. 매개 변수 없이 필터링 된 레코드 집합에 대 한 합니다 **선택** 문을 처리 해야 할 때마다 `Requery` 새 필터 값으로.
+   > [!TIP]
+   > 매개 변수를 사용 하면 단순히 필터 보다 더 효율적입니다. 데이터베이스 매개 변수가 있는 레코드 집합에 대 한 SQL을 처리 해야 합니다 **선택** 문을 한 번만 합니다. 매개 변수 없이 필터링 된 레코드 집합에 대 한 합니다 **선택** 문을 처리 해야 할 때마다 `Requery` 새 필터 값으로.
 
 필터에 대 한 자세한 내용은 참조 하세요. [레코드 집합: 레코드 필터링 (ODBC)](../../data/odbc/recordset-filtering-records-odbc.md)합니다.
 
 ##  <a name="_core_parameterizing_your_recordset_class"></a> 레코드 집합 클래스를 매개 변수화
 
 > [!NOTE]
->  이 섹션에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 매개 변수를 사용 하는 경우에 유사한 프로세스가입니다. 자세한 내용은 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+> 이 섹션에서 파생 된 개체에 적용 됩니다 `CRecordset` 의 대량 행 페치 구현 되지 않았습니다. 대량 행 페치를 구현 하는 매개 변수를 사용 하는 경우에 유사한 프로세스가입니다. 자세한 내용은 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 레코드 집합 클래스를 만들기 전에 필요한 매개 변수, 해당 데이터 형식 이란, 및 레코드 집합을 사용 하는 방법을 결정 합니다.
 
@@ -116,7 +116,7 @@ ms.locfileid: "50506576"
 
 1. 수정 된 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) .cpp 파일에서 멤버 함수 정의 합니다. 클래스에 추가한 각 매개 변수 데이터 멤버에 대해 RFX 함수 호출을 추가 합니다. RFX 함수를 작성 하는 방법에 대 한 내용은 [레코드 필드 교환: RFX 작동 방식](../../data/odbc/record-field-exchange-how-rfx-works.md)합니다. 에 대 한 단일 호출을 사용 하 여 매개 변수에 대해 RFX 호출 앞에 야 합니다.
 
-    ```
+    ```cpp
     pFX->SetFieldType( CFieldExchange::param );
     // RFX calls for parameter data members
     ```
@@ -130,11 +130,10 @@ ms.locfileid: "50506576"
    런타임 시 "?" 자리 표시자는, 순서 대로 채워집니다, 매개 변수 값으로 전달 합니다. 후 첫 번째 매개 변수 데이터 멤버를 설정 합니다 [SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) 호출할 바뀝니다 첫 번째 "?"는 SQL 문자열에서 두 번째 매개 변수 데이터 멤버 바꿉니다 두 번째"?" 등.
 
 > [!NOTE]
->  매개 변수 순서가 중요: RFX 순서에서 매개 변수에 대 한 호출에 `DoFieldExchange` 함수에는 SQL 문자열에 매개 변수 자리 표시자의 순서와 일치 해야 합니다.
+> 매개 변수 순서가 중요: RFX 순서에서 매개 변수에 대 한 호출에 `DoFieldExchange` 함수에는 SQL 문자열에 매개 변수 자리 표시자의 순서와 일치 해야 합니다.
 
 > [!TIP]
-
->  작업할 가능성이 문자열은 지정한 문자열 (있는 경우)를 클래스에 대 한 [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) 데이터 멤버 이지만 일부 ODBC 드라이버 다른 SQL 절에서 매개 변수를 사용할 수 있습니다.
+> 작업할 가능성이 문자열은 지정한 문자열 (있는 경우)를 클래스에 대 한 [m_strFilter](../../mfc/reference/crecordset-class.md#m_strfilter) 데이터 멤버 이지만 일부 ODBC 드라이버 다른 SQL 절에서 매개 변수를 사용할 수 있습니다.
 
 ##  <a name="_core_passing_parameter_values_at_run_time"></a> 런타임에 매개 변수 값 전달
 

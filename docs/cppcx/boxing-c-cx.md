@@ -2,12 +2,12 @@
 title: Boxing(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: edfb12fa-2a9b-42f6-bdac-d4d76cb8274e
-ms.openlocfilehash: dd950e2463da7541ebad731e74275ce360a1c8a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c680ea0262e8e65345cba40280a389453c2985bb
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491041"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519518"
 ---
 # <a name="boxing-ccx"></a>Boxing(C++/CX)
 
@@ -34,7 +34,6 @@ C# XAML 클라이언트에서 이러한 메서드를 다음과 같이 사용할 
     int? a = null;
     int? b = 5;
     var result = obj.Multiply(a,b); //result = null
-
 ```
 
 ## <a name="see-also"></a>참고 항목

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - NULL, character constant
 - wide characters, strings
 ms.assetid: 61de8f6f-2714-4e7b-86b6-a3f885d3b9df
-ms.openlocfilehash: 787756dd3e886afb6afa87ed3871158bddcbf3ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3721f3624a64a24de0a5458d88de4836b07a9c1
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614593"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329841"
 ---
 # <a name="string-and-character-literals--c"></a>문자열 및 문자 리터럴 (c + +)
 
@@ -49,7 +49,7 @@ int main()
 
     // Raw string literals containing unescaped \ and "
     auto R0 =   R"("Hello \ world")"; // const char*
-    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
+    auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
     auto R2 =  LR"("Hello \ world")"; // const wchar_t*
     auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
     auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
@@ -106,15 +106,22 @@ int main()
 
 이스케이프 시퀀스는 단순, 8진수 및 16진수의 세 종류가 있습니다. 이스케이프 시퀀스의 종류는 다음과 같습니다.
 
-|값|이스케이프 시퀀스|값|이스케이프 시퀀스|
-|-----------|---------------------|-----------|---------------------|
-|줄 바꿈|\n|백슬래시|\\\|
-|가로 탭|\t|물음표|? 또는 \\?|
-|세로 탭|\v|작은따옴표|\\'|
-|백스페이스|\b|큰따옴표|\\"|
-|캐리지 리턴|\r|null 문자|\0|
-|폼 피드|\f|8진수|\ooo|
-|경고(벨)|\a|16진수|\xhhh|
+|값|이스케이프 시퀀스|
+|-----------|---------------------|
+| 줄 바꿈 | \\N |
+| 백슬래시 | \\\\ |
+| 가로 탭 | \\t |
+| 물음표 | ? 또는 \\? |
+| 세로 탭 | \\V |
+| 작은따옴표 | \\' |
+| 백스페이스 | \\B |
+| 큰따옴표 | \\" |
+| 캐리지 리턴 | \\R |
+| null 문자 | \\0 |
+| 폼 피드 | \\F |
+| 8진수 | \\ooo |
+| 경고(벨) | \\a |
+| 16진수 | \\xhhh |
 
 다음 코드는 몇 가지 예가 일반 문자 리터럴을 사용 하 여 이스케이프 된 문자를 보여줍니다. 동일한 이스케이프 시퀀스 구문은 다른 문자 리터럴 형식에 대 한 유효 합니다.
 
@@ -253,7 +260,7 @@ auto s4 = U"hello"; // const char32_t*
 // represents the string: An unescaped \ character
 const char* raw_narrow = R"(An unescaped \ character)";
 const wchar_t* raw_wide = LR"(An unescaped \ character)";
-const char*       raw_utf8  = u8R"(An unescaped \ character)";
+const char*       raw_utf8  = u8R"(An unescaped \ character)";
 const char16_t* raw_utf16 = uR"(An unescaped \ character)";
 const char32_t* raw_utf32 = UR"(An unescaped \ character)";
 ```

@@ -1,6 +1,6 @@
 ---
 title: CStockPropImpl 클래스
-ms.date: 11/04/2016
+ms.date: 11/06/2018
 f1_keywords:
 - CStockPropImpl
 - ATLCTL/ATL::CStockPropImpl
@@ -64,33 +64,33 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: 7befbce6e062bdb7944c2ed1f351d6927adfd75a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff7610d85d73a99d55d6181fad178d0b12be0c32
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480862"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332428"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl 클래스
 
 이 클래스는 스톡 속성 값을 지원 하기 위한 메서드를 제공 합니다.
 
 > [!IMPORTANT]
->  이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
+> 이 클래스 및 해당 멤버는 Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
 ```
-template <class T, class InterfaceName,
+template <
+    class T, 
+    class InterfaceName,
     const IID* piid = &_ATL_IIDOF(InterfaceName),
     const GUID* plibid = &CComModule::m_libid,
     WORD wMajor = 1,
-    WORD wMinor = 0, class tihclass = CcomTypeInfoHolder>
-class ATL_NO_VTABLE CStockPropImpl : public IDispatchImpl<InterfaceName, piid,
-plibid,
-    wMajor,
-wMinor,
-    tihclass>
+    WORD wMinor = 0, 
+    class tihclass = CcomTypeInfoHolder>
+class ATL_NO_VTABLE CStockPropImpl :
+    public IDispatchImpl<InterfaceName, piid, plibid, wMajor, wMinor, tihclass>
 ```
 
 #### <a name="parameters"></a>매개 변수
@@ -949,7 +949,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 ### <a name="parameters"></a>매개 변수
 
-*/&ast; hWnd &ast;/*<br/>
+*hWnd*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값

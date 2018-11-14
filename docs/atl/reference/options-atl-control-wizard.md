@@ -6,16 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, options
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
-ms.openlocfilehash: 932661227daa216934c061a8b6807b05ca8270ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e607e35b2b3970f329692ba8d2c612d7f6a6591b
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443760"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522313"
 ---
 # <a name="options-atl-control-wizard"></a>옵션, ATL 컨트롤 마법사
-
-여기 "검색 결과" 요약을 삽입 합니다.
 
 마법사의이 페이지를 사용 하 여 만들려는 컨트롤의 형식 및 인터페이스를 지 원하는 포함의 수준을 정의 합니다.
 
@@ -29,17 +27,17 @@ ms.locfileid: "50443760"
 
 - **복합 컨트롤**:는 ActiveX 컨트롤 (대화 상자와 유사)를 포함할 수 있는 다른 ActiveX 컨트롤 또는 Windows 컨트롤입니다. 복합 컨트롤에 다음이 포함 됩니다.
 
-   - 복합 컨트롤을 구현 하는 대화 상자에 사용 되는 템플릿.
+  - 복합 컨트롤을 구현 하는 대화 상자에 사용 되는 템플릿.
 
-   - 사용자 지정 리소스를 자동으로 호출 될 때 복합 컨트롤을 등록 하는 레지스트리입니다.
+  - 사용자 지정 리소스를 자동으로 호출 될 때 복합 컨트롤을 등록 하는 레지스트리입니다.
 
-   - 복합 컨트롤을 구현 하는 c + + 클래스입니다.
+  - 복합 컨트롤을 구현 하는 c + + 클래스입니다.
 
-   - 복합 컨트롤에서 노출 하는 COM 인터페이스입니다.
+  - 복합 컨트롤에서 노출 하는 COM 인터페이스입니다.
 
-   - 복합 컨트롤을 포함 하는 HTML 테스트 페이지입니다.
+  - 복합 컨트롤을 포함 하는 HTML 테스트 페이지입니다.
 
-   기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다. 싱크 맵을 구현합니다. 자세한 내용은 [DHTML 컨트롤에 대 한 지원을](../../atl/atl-support-for-dhtml-controls.md)합니다.
+    기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다. 싱크 맵을 구현합니다. 자세한 내용은 [DHTML 컨트롤에 대 한 지원을](../../atl/atl-support-for-dhtml-controls.md)합니다.
 
 - **DHTML 컨트롤**:는 ATL DHTML 컨트롤에는 HTML을 사용 하 여 사용자 인터페이스를 지정 합니다. DHTML UI 클래스를 COM 맵을 포함합니다. 기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다.
 

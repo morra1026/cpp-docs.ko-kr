@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2797
 ms.assetid: 9fb26d35-eb5c-46fc-9ff5-756fba5bdaff
-ms.openlocfilehash: 8ae8c4b8755e6f9c89c0706b0644f220761bd9c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04a7b2b1d33ab7efa77563406ab3c12831cf80fc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616244"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518309"
 ---
 # <a name="compiler-error-c2797"></a>컴파일러 오류 C2797
 
@@ -29,7 +29,6 @@ struct S {
     std::vector<int> v1;
     std::vector<int> v2{1, 2}; // C2797, VS2013 RTM incorrectly calls 'vector(size_type, const int &)'
 };
-
 ```
 
 또한 다음과 같이 C2797도 생성합니다.
@@ -44,7 +43,6 @@ struct S2 {
     S1 s1;
     S1 s2{0}; // C2797, VS2013 RTM interprets as S1 s2 = S1(0); causing C2664
 };
-
 ```
 
 이 문제를 해결하려면 안쪽 목록의 명시적 생성을 사용할 수 있습니다. 예를 들면 다음과 같습니다.
@@ -58,7 +56,6 @@ struct S {
     Vector v1;
     Vector v2 = Vector{1, 2};
 };
-
 ```
 
 목록 초기화를 수행할 필요가 없는 경우에는 다음과 같은 코드를 사용합니다.
@@ -70,7 +67,6 @@ struct S {
     std::string s1;
     std::string s2 = std::string("");
 };
-
 ```
 
 Visual Studio 2013 업데이트 3 이전 버전 Visual Studio 2013의 컴파일러는 이 작업을 암시적으로 수행합니다.

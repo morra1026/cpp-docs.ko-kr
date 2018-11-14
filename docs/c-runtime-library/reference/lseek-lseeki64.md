@@ -29,12 +29,12 @@ helpviewer_keywords:
 - file pointers [C++], moving
 - seek file pointers
 ms.assetid: aba8a768-d40e-48c3-b38e-473dbd782f93
-ms.openlocfilehash: 19a312bcc3cdeea82bcebce6da95e26ef88992b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d0320b45cb8cd99f1d9f6494b7dcb17bc545a81
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541689"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326097"
 ---
 # <a name="lseek-lseeki64"></a>_lseek, _lseeki64
 
@@ -78,9 +78,9 @@ __int64 _lseeki64(
 
 |*원본* 값||
 |-|-|
-**SEEK_SET**|파일 시작
-**SEEK_CUR**|파일 포인터의 현재 위치
-**SEEK_END**|파일 끝
+| **SEEK_SET** | 파일 시작 |
+| **SEEK_CUR** | 파일 포인터의 현재 위치 |
+| **SEEK_END** | 파일 끝 |
 
 사용할 수 있습니다 **_lseek** 위치를 변경 하려면 포인터가 아무 곳 이나 파일 또는 파일의 끝을 초과 합니다.
 

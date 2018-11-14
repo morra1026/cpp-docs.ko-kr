@@ -33,12 +33,12 @@ helpviewer_keywords:
 - operator=, property sets
 - SetGUID method
 ms.assetid: 52bb806c-9581-494d-9af7-50d8a4834805
-ms.openlocfilehash: b6e7208628ee77df8647eaa46b00e6e22d294879
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fdda18243366de059b26fd566b5eecb308cbed14
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529144"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556649"
 ---
 # <a name="cdbpropidset-class"></a>CDBPropIDSet 클래스
 
@@ -72,7 +72,7 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 ## <a name="remarks"></a>설명
 
-OLE DB 소비자가 사용 하 여 `DBPROPIDSET` 는 소비자가 속성 정보를 가져올 속성 Id의 배열을 전달 하는 구조입니다. 단일에서 식별 된 속성을 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) 구조 하나의 속성 집합에 속합니다.
+OLE DB 소비자가 사용 하 여 `DBPROPIDSET` 는 소비자가 속성 정보를 가져올 속성 Id의 배열을 전달 하는 구조입니다. 단일에서 식별 된 속성을 [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) 구조 하나의 속성 집합에 속합니다.
 
 ## <a name="addpropertyid"></a> Cdbpropidset:: Addpropertyid
 
@@ -91,7 +91,7 @@ bool AddPropertyID(DBPROPID propid) throw();
 
 ## <a name="cdbpropidset"></a> Cdbpropidset:: Cdbpropidset
 
-생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 (선택 사항) `guidPropertySet` 의 필드를 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) 구조입니다.
+생성자입니다. 초기화 합니다 `rgProperties`, `cProperties`, 및 (선택 사항) `guidPropertySet` 의 필드를 [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) 구조입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -124,7 +124,7 @@ void SetGUID(const GUID& guid) throw();
 #### <a name="parameters"></a>매개 변수
 
 *guid*<br/>
-[in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPIDSET](/previous-versions/windows/desktop/ms717981) 구조입니다.
+[in] 설정 하는 데 GUID를 `guidPropertySet` 필드를 [DBPROPIDSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms717981(v=vs.85)) 구조입니다.
 
 ### <a name="remarks"></a>설명
 

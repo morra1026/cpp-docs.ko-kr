@@ -13,12 +13,12 @@ helpviewer_keywords:
 - CRestrictions class
 - Open method
 ms.assetid: 0aaa2364-641c-4318-b110-7446aada4b4f
-ms.openlocfilehash: 0a6b6b10d4275cbfc2cd99180aa472d9476b17e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 95517931f3156c4850e07c78910ccbffff424faa
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565139"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556519"
 ---
 # <a name="crestrictions-class"></a>CRestrictions 클래스
 
@@ -92,7 +92,7 @@ HRESULT 값 중 하나입니다.
 
 스키마 행 집합에서 최대 7 개의 제한 지정할 수 있습니다.
 
-참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.
+참조 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 각 스키마 행 집합에서 정의 된 제한에 대 한 정보에 대 한 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

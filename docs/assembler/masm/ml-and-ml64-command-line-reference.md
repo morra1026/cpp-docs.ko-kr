@@ -54,12 +54,12 @@ helpviewer_keywords:
 - command line, reference [ML]
 - /Ta MASM compiler option
 ms.assetid: 712623c6-f77e-47ea-a945-089e57c50b40
-ms.openlocfilehash: 64d56ea5eb29162e65782998e91fc1ff70cbf73b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a452bab03e31436ee5dde476117bce8b73c7571f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430227"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331258"
 ---
 # <a name="ml-and-ml64-command-line-reference"></a>ML 및 ML64 명령줄 참조
 
@@ -69,9 +69,9 @@ Ml64.exe에 대 한 자세한 내용은 참조 하세요. [MASM (ml64.exe) x64](
 
 ## <a name="syntax"></a>구문
 
-> ML [[*옵션*]] *filename* [[[[*옵션*]] *filename*]]
-
-> ML64 [[*옵션*]] *filename* [[[[*옵션*]] *filename*]]... [[/ l i n *linkoptions*]]
+> ML \[ *옵션*] *filename* \[ \[ *옵션*] *filename*]
+>
+> ML64 \[ *옵션*] *filename* \[ \[ *옵션*] *filename*]... \[/l i n *linkoptions*]
 
 ### <a name="parameters"></a>매개 변수
 

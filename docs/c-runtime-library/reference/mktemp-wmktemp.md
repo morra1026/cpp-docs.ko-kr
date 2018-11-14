@@ -33,12 +33,12 @@ helpviewer_keywords:
 - mktemp function
 - temporary files [C++]
 ms.assetid: 055eb539-a8c2-4a7d-be54-f5b6d1eb5c85
-ms.openlocfilehash: 9dbaba9e4a68523c0d79762c6a7ff54c238e397d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c1c5f0ee12c9e07d76405014bb4a6a6ecc7d97e6
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554168"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326266"
 ---
 # <a name="mktemp-wmktemp"></a>_mktemp, _wmktemp
 
@@ -82,7 +82,7 @@ wchar_t *_wmktemp(
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tmktemp**|**_mktemp**|**_mktemp**|**_wmktemp**|
 
-합니다 *nameTemplate* 인수의 형식은 *기본 * * XXXXXX*여기서 *기본* 제공 하는 새 파일 이름 부분은 속하며 각 X는에서 제공 하는 문자열에 대 한 자리 표시자 **_mktemp**합니다. 각 자리 표시자 문자 *nameTemplate* 는 대문자 X 여야 **_mktemp** 유지 *기본* 첫 번째 후행 X를 영문자로 바꿉니다. **_mktemp** 대체 다음 후행 X 5 자리 숫자 값을 사용 하 여이 값은 프로세스 또는 다중 스레드 프로그램을 호출 하는 스레드에서 호출을 식별 하는 고유 번호입니다.
+합니다 *nameTemplate* 인수의 형식은 *기본*XXXXXX 여기서 *기본* 제공 하는 새 파일 이름 부분은 속하며 각 X는에서 제공 하는 문자열에 대 한 자리 표시자 **_mktemp**합니다. 각 자리 표시자 문자 *nameTemplate* 는 대문자 X 여야 **_mktemp** 유지 *기본* 첫 번째 후행 X를 영문자로 바꿉니다. **_mktemp** 대체 다음 후행 X 5 자리 숫자 값을 사용 하 여이 값은 프로세스 또는 다중 스레드 프로그램을 호출 하는 스레드에서 호출을 식별 하는 고유 번호입니다.
 
 성공한 각 호출에 **_mktemp** 수정 *nameTemplate*합니다. 각 후속 호출에서 동일한 프로세스 또는 스레드의 동일한 *nameTemplate* 인수 **_mktemp** 반환한 이름과 일치 하는 파일 이름에 대 한 검사 **_mktemp** 에서 이전 호출 합니다. 지정 된 이름에 대 한 파일이 없는 경우 **_mktemp** 해당 이름을 반환 합니다. 이전에 반환 된 모든 이름에 대 한 파일이 존재 하는 경우 **_mktemp** 다음 사용 가능한 소문자를 'a' ~ 'z'까지에서 순서 대로 사용 하 여 이전에 반환 된 이름에서 사용한 영문자를 대체 하 여 새 이름을 만듭니다. 예를 들어 있으면 *기본* 됩니다.
 

@@ -6,16 +6,16 @@ helpviewer_keywords:
 - references, to properties in providers
 - referencing properties in providers
 ms.assetid: bfbb3851-5eed-467a-a179-4a97a9515525
-ms.openlocfilehash: d6a750d3c2c6c409a1b7d3ce40ef13566b522cff
-ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
+ms.openlocfilehash: 642e6219f72e506205e8192770be7d8af5d0d817
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51265167"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556474"
 ---
 # <a name="referencing-a-property-in-your-provider"></a>공급자의 속성 참조
 
-원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](/previous-versions/windows/desktop/ms722734) 에 **OLE DB Programmer's Reference**합니다.
+원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](https://docs.microsoft.com/previous-versions/windows/desktop/ms722734(v=vs.85)) 에 **OLE DB Programmer's Reference**합니다.
 
 다음 예에서는 행 집합에서 속성을 가져올 하고자 하는 것을 가정 합니다. 세션 또는 명령에 대 한 코드는 유사 하지만 서로 다른 인터페이스를 사용 합니다.
 

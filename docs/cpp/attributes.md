@@ -2,12 +2,12 @@
 title: C + + 특성
 ms.date: 06/01/2018
 ms.assetid: 748340d9-8abf-4940-b0a0-91b6156a3ff8
-ms.openlocfilehash: a4d24324165f3cce60d259adf6e3d21638296cf8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 444abf2ddf6d4563dcbeb5b683adc52f903bd97f
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471827"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520792"
 ---
 # <a name="attributes-in-c"></a>C + + 특성
 
@@ -45,16 +45,16 @@ void Foo(int);
 
 - `[[nodiscard]]` **Visual Studio 2017 버전 15.3 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)) 지정 하는 함수의 반환 값이 아닙니다 삭제 됩니다. 이 예제에 표시 된 대로, C4834 경고를 발생 시킵니다.
 
-   ```cpp
-   [[nodiscard]]
-   int foo(int i) { return i * i; }
+    ```cpp
+    [[nodiscard]]
+    int foo(int i) { return i * i; }
 
-   int main()
-   {
-       foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
-       return 0;
-   }
-   ```
+    int main()
+    {
+        foo(42); //warning C4834: discarding return value of function with 'nodiscard' attribute
+        return 0;
+    }
+    ```
 
 - `[[maybe_unused]]` **Visual Studio 2017 버전 15.3 이상:** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)) 변수, 함수, 클래스, typedef, 비정적 데이터 멤버, 열거형 또는 템플릿 특수화 될 수 있습니다 의도적으로 사용 하지 않도록 지정 합니다. 엔터티의 표시 하는 경우 컴파일러에서 경고 하지 않습니다 `[[maybe_unused]]` 사용 되지 않습니다. 특성 없이 선언 된 엔터티의 나중에 다시 선언할 수 특성과 그 반대로 가능 합니다. 엔터티의 표시 표시 된 첫 번째 선언을 분석 한 후 현재 변환 단위 변환의 나머지 부분에 대 한 것으로 간주 됩니다.
 
@@ -75,12 +75,12 @@ void Foo(int);
     }
     ```
 
-   이 예제에서는 이러한 경고를 발생 시킵니다.
+  이 예제에서는 이러한 경고를 발생 시킵니다.
 
-   - 26494 (형식 규칙 5: 항상 개체를 초기화 합니다.)
+  - 26494 (형식 규칙 5: 항상 개체를 초기화 합니다.)
 
-   - 26485 (범위 규칙 3: 없는 배열에서 포인터로 감소 합니다.)
+  - 26485 (범위 규칙 3: 없는 배열에서 포인터로 감소 합니다.)
 
-   - 26481 (범위 규칙 1: 포인터 산술 연산을 사용 하지 마세요. 범위 대신 사용 합니다.)
+  - 26481 (범위 규칙 1: 포인터 산술 연산을 사용 하지 마세요. 범위 대신 사용 합니다.)
 
-   처음 두 경고 CppCoreCheck 코드 분석 도구를 설치 하 고 활성화를 사용 하 여이 코드를 컴파일할 때 발생 합니다. 하지만 세 번째 경고를 특성으로 인해 발생 하지 않습니다. 특정 규칙 수를 포함 하지 않고 [[gsl::suppress(bounds)]]을 작성 하 여 전체 범위 프로필을 억제할 수 있습니다. C + + Core Guidelines는 더 나은 하 고 안전한 코드를 작성할 수 있도록 설계 되었습니다. 표시 안 함 특성 쉽게 필요 하지는 때에 경고를 해제 합니다.
+  처음 두 경고 CppCoreCheck 코드 분석 도구를 설치 하 고 활성화를 사용 하 여이 코드를 컴파일할 때 발생 합니다. 하지만 세 번째 경고를 특성으로 인해 발생 하지 않습니다. 특정 규칙 수를 포함 하지 않고 [[gsl::suppress(bounds)]]을 작성 하 여 전체 범위 프로필을 억제할 수 있습니다. C + + Core Guidelines는 더 나은 하 고 안전한 코드를 작성할 수 있도록 설계 되었습니다. 표시 안 함 특성 쉽게 필요 하지는 때에 경고를 해제 합니다.

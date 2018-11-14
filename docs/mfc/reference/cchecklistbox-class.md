@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-ms.openlocfilehash: 72038e119f7d4483dcd6c6b343d20fd3655856b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3bf93a876f9092d5615b75ca45fea71341d3557
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533876"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327345"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox 클래스
 
@@ -80,13 +80,13 @@ class CCheckListBox : public CListBox
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**ON_** 알림을 **(**`id`하십시오 `memberFxn` **)**
+**ON\_**_알림_ **(** _id_하십시오 _memberFxn_ **)**
 
 여기서 `id` 알림을 전송 하는 컨트롤의 자식 창 ID를 지정 하 고 `memberFxn` 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
 부모의 함수 프로토타입에 다음과 같습니다.
 
-**afx_msg** `void` `memberFxn` **();**
+`afx_msg void memberFxn();`
 
 특히 관련 된 메시지 맵 항목이 하나만 `CCheckListBox` (에 대 한 메시지 맵 항목을 참조 하세요. 하지만 [CListBox](../../mfc/reference/clistbox-class.md)):
 

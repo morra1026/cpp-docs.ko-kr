@@ -35,12 +35,12 @@ helpviewer_keywords:
 - _gmtime_s function
 - _gmtime32_s function
 ms.assetid: 261c7df0-2b0c-44ba-ba61-cb83efaec60f
-ms.openlocfilehash: 1d9bfc7858dbc718e0f6c07358c5ebcec546063e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8225fed21ca9dc67440a4af5dcf43b2ad5cfdffb
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650010"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332467"
 ---
 # <a name="gmtimes-gmtime32s-gmtime64s"></a>gmtime_s, _gmtime32_s, _gmtime64_s
 
@@ -114,7 +114,7 @@ errno_t _gmtime64_s(
 
 |루틴에서 반환된 값|필수 C 헤더|필수 C++ 헤더|
 |-------------|---------------------|-|
-|**gmtime_s**|하십시오 **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime > 또는 \<time.h >|
+|**gmtime_s**하십시오 **_gmtime32_s**, **_gmtime64_s**|\<time.h>|\<ctime > 또는 \<time.h >|
 
 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

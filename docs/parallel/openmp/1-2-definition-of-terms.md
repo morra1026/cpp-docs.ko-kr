@@ -2,12 +2,12 @@
 title: 1.2 용어 정의
 ms.date: 11/04/2016
 ms.assetid: fcaa8eb8-bbbf-4a24-ad0e-e299c442db79
-ms.openlocfilehash: ac117a03f784e617e5db246f4bda28e350d2e7a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cd8bcc47a7fc9d1d0683c220ccd5ef1edac2b4e9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597212"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326032"
 ---
 # <a name="12-definition-of-terms"></a>1.2 용어 정의
 
@@ -63,7 +63,7 @@ ms.locfileid: "50597212"
 
 - 구조화 된 블록
 
-   구조화 된 블록에는 단일 항목 및 단일 종료 된 문 (단일 또는 복합)입니다. 문이 없는 경우 구조화 된 블록 또는 해당 문 외부로 점프 되 (에 대 한 호출을 포함 하 여 **longjmp**(3c) 또는 사용 **throw**에 대 한 호출이 **종료** 허용 됩니다). 열 때 항상 실행 시작 하는 경우 복합 문은 구조화 된 블록 **{0}** 항상 닫는 끝나는 **}** 합니다. 식, 선택 문, 반복 문 또는 **시도** 블록은 해당 복합 문의로 묶어서 얻은 경우 구조화 된 블록 **{0}** 고 **}** 구조화 된 블록을 것입니다. 점프 문, labeled 문 또는 선언문 구조화 된 블록이 아닙니다.
+   구조화 된 블록에는 단일 항목 및 단일 종료 된 문 (단일 또는 복합)입니다. 문이 없는 경우 구조화 된 블록 또는 해당 문 외부로 점프 되 (에 대 한 호출을 포함 하 여 **longjmp**(3c) 또는 사용 **throw**에 대 한 호출이 **종료** 허용 됩니다). 열 때 항상 실행 시작 하는 경우 복합 문은 구조화 된 블록 **{0}** 항상 닫는 끝나는 **}** 합니다. 식, 선택 문, 반복 문 또는 **시도** 블록은 해당 복합 문의로 묶어서 얻은 경우 구조화 된 블록 **{0}** 고 **}**  구조화 된 블록을 것입니다. 점프 문, labeled 문 또는 선언문 구조화 된 블록이 아닙니다.
 
 - 팀
 

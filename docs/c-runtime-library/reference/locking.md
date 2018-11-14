@@ -25,12 +25,12 @@ helpviewer_keywords:
 - files [C++], locking
 - _locking function
 ms.assetid: 099aaac1-d4ca-4827-aed6-24dff9844150
-ms.openlocfilehash: 1309d99d8e7040626384e38324c1e910e4731295
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90327ed3388d4f18e0f64f92c33112c9ddd800f5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523811"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327046"
 ---
 # <a name="locking"></a>_locking
 
@@ -63,10 +63,10 @@ int _locking(
 
 |errno 값|조건|
 |-|-|
-**EACCES**|잠금 위반(파일이 이미 잠겨 있거나 잠금 해제됨)입니다.
-**EBADF**|잘못된 파일 설명자입니다.
-**EDEADLOCK**|잠금 위반입니다. 반환 된 **_LK_LOCK** 또는 **_LK_RLCK** 플래그를 지정 하 고 10 번 시도 후 파일을 잠글 수 없습니다.
-**EINVAL**|잘못 된 인수가 지정 된 **_locking**합니다.
+| **EACCES** | 잠금 위반(파일이 이미 잠겨 있거나 잠금 해제됨)입니다. |
+| **EBADF** | 잘못된 파일 설명자입니다. |
+| **EDEADLOCK** | 잠금 위반입니다. 반환 된 **_LK_LOCK** 또는 **_LK_RLCK** 플래그를 지정 하 고 10 번 시도 후 파일을 잠글 수 없습니다. |
+| **EINVAL** | 잘못 된 인수가 지정 된 **_locking**합니다. |
 
 잘못된 파일 설명자와 같이 잘못된 매개 변수로 인해 오류가 발생한 경우 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다.
 
@@ -78,11 +78,11 @@ int _locking(
 
 |*모드* 값|효과|
 |-|-|
-**_LK_LOCK**|지정된 바이트를 잠급니다. 바이트를 잠글 수 없는 경우 프로그램에서 1초 후 바로 다시 시도합니다. 10번 시도 후에도 바이트를 잠글 수 없으면 상수에서 오류가 반환됩니다.
-**_LK_NBLCK**|지정된 바이트를 잠급니다. 바이트를 잠글 수 없으면 상수에서 오류가 반환됩니다.
-**_LK_NBRLCK**|동일 **_LK_NBLCK**합니다.
-**_LK_RLCK**|동일 **_LK_LOCK**합니다.
-**_LK_UNLCK**|지정된 바이트를 잠금 해제합니다. 이러한 바이트는 이미 잠겨 있어야 합니다.
+| **_LK_LOCK** | 지정된 바이트를 잠급니다. 바이트를 잠글 수 없는 경우 프로그램에서 1초 후 바로 다시 시도합니다. 10번 시도 후에도 바이트를 잠글 수 없으면 상수에서 오류가 반환됩니다. |
+| **_LK_NBLCK** | 지정된 바이트를 잠급니다. 바이트를 잠글 수 없으면 상수에서 오류가 반환됩니다. |
+| **_LK_NBRLCK** | 동일 **_LK_NBLCK**합니다. |
+| **_LK_RLCK** | 동일 **_LK_LOCK**합니다. |
+| **_LK_UNLCK** | 지정된 바이트를 잠금 해제합니다. 이러한 바이트는 이미 잠겨 있어야 합니다. |
 
 파일에서 겹치지 않는 여러 영역을 잠글 수 있습니다. 잠금 해제할 영역은 이미 잠겨 있어야 합니다. **_locking** 잠긴된 두 영역이 인접 한 경우 각 지역 잠금 해제 해야 별도로; 병합 인접 지역 하지 않습니다. 영역은 일시적으로만 잠가야 하며 파일을 닫거나 프로그램을 종료하기 전에 잠금을 해제해야 합니다.
 

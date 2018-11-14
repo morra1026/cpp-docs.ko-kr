@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 8d4caca4d5a0b5c12b0af5a948b17b7e2ad05221
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4012f1f0729ff0f46a8504c44f27a37cd55c77e5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474271"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327449"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
@@ -250,27 +250,8 @@ ON_COMMAND_EX(id, memberFxn);
 
 ### <a name="remarks"></a>설명
 
-명령 메시지 처리기의 확장된 된 형태는 고급 용도로 사용할 수 있습니다. ON_COMMAND_EX 매크로 이러한 메시지 처리기 및 [ON_COMMAND] (#on_command) 기능의 상위 집합을 제공 합니다.  확장된 명령 처리기 멤버 함수는 단일 매개 변수를 명령 ID를 포함 하는 UINT 및 부울을 반환 합니다. 반환 값 TRUE를 해야 합니다.
-
-이 매크로 명령이 확장된 명령 처리기 멤버 함수에 매핑합니다.
-
-### <a name="syntax"></a>구문
-
-```
-ON_COMMAND_EX(id,  memberFxn);
-```
-
-### <a name="parameters"></a>매개 변수
-
-*ID*<br/>
-명령 ID입니다.
-
-*memberFxn*<br/>
-명령이 매핑되는 메시지-처리기 함수의 이름입니다.
-
-### <a name="remarks"></a>설명
-
 명령 메시지 처리기의 확장된 된 형태는 고급 용도로 사용할 수 있습니다. ON_COMMAND_EX 매크로 이러한 메시지 처리기에 사용 되 고의 상위 집합을 제공 합니다 [ON_COMMAND](message-map-macros-mfc.md#on_command) 기능입니다. 확장된 명령 처리기 멤버 함수는 단일 매개 변수를 명령 ID를 포함 하는 UINT 및 부울을 반환 합니다. 반환 값은 명령을 처리 된 것; 나타내려면 TRUE 여야 합니다. 그렇지 않으면 라우팅 다른 명령 대상 개체에 계속 됩니다.
+
 자세한 내용은 기술 참고를 참조 하세요. [TN006: 메시지 맵] tm006-메시지-maps.md).
 
 ### <a name="requirements"></a>요구 사항

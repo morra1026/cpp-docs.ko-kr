@@ -40,12 +40,12 @@ helpviewer_keywords:
 - std::basic_filebuf [C++], uflow
 - std::basic_filebuf [C++], underflow
 ms.assetid: 3196ba5c-bf38-41bd-9a95-70323ddfca1a
-ms.openlocfilehash: fcf673d8e6d871a7920150b5f62fd3d62135b52c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 817e7fb2b434d06d6c0dfdfc100be8004f6fa4ef
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500531"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332649"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf 클래스
 
@@ -504,11 +504,11 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 
 ### <a name="return-value"></a>반환 값
 
-함수는 정상적으로 실행되지 않으면 `traits_type::eof`를 반환합니다. 아닌 경우 **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*)를 반환합니다.
+함수는 정상적으로 실행되지 않으면 `traits_type::eof`를 반환합니다. 그렇지 **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(*\_Meta*).
 
 ### <a name="remarks"></a>설명
 
-보호된 가상 멤버 함수는 요소를 입력 버퍼에 다시 넣은 후 다음 포인터에서 가리키는 현재 요소로 설정합니다. _ *Meta* **== traits_type::**[eof](../standard-library/char-traits-struct.md#eof)인 경우 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 요소입니다. 아닌 경우 해당 요소는 **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(\_ *Meta*)로 바뀝니다. 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
+보호된 가상 멤버 함수는 요소를 입력 버퍼에 다시 넣은 후 다음 포인터에서 가리키는 현재 요소로 설정합니다. 하는 경우  *\_Meta* **= = traits_type::**[eof](../standard-library/char-traits-struct.md#eof), 다시 푸시할 요소는 실제로 현재 요소 이전 스트림에 이미 있는 것입니다. 그렇지 않은 경우 해당 요소 바뀝니다 **ch = traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*\_Meta*). 함수는 여러 가지 방법으로 요소를 다시 넣을 수 있습니다.
 
 - Putback 위치를 사용할 수 있고 여기에 저장 된 요소는 비교 시 같으면 경우 `ch`, 해당 입력된 버퍼에 대 한 다음 포인터를 감소 시킬 수 있습니다.
 

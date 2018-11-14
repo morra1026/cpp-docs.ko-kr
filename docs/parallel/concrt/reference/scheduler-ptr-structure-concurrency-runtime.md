@@ -8,12 +8,12 @@ f1_keywords:
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-ms.openlocfilehash: 7fd81a1ccf6702c74a013c5772d59f01121b61a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0da45fa18d12b3f1c93df6b8c8736ed1bfb58ade
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479224"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525006"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr 구조체
 
@@ -58,7 +58,7 @@ struct scheduler_ptr;
 
 ##  <a name="get"></a>  scheduler_ptr:: get 메서드
 
-스케줄러에 대한 원시 포인터를 반환합니다.
+스케줄러에 원시 포인터를 반환합니다.
 
 ```
 scheduler_interface* get() const;
@@ -68,39 +68,39 @@ scheduler_interface* get() const;
 
 ##  <a name="operator_bool"></a>  scheduler_ptr::operator bool
 
-스케줄러 포인터가 null이 아닌지 여부를 테스트합니다.
-
-' ' operator bool () const;
-```
-
-##  <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;
-
-Behave like a pointer
+스케줄러 포인터가 null 인지 테스트 합니다.
 
 ```
-scheduler_interface 연산자 () const;->
+operator bool() const;
 ```
 
-### Return Value
+##  <a name="operator_ptr"></a>  scheduler_ptr:: operator-&gt;
 
-##  <a name="ctor"></a>  scheduler_ptr::scheduler_ptr Constructor
-
-Creates a scheduler pointer from shared_ptr to scheduler
+에 대 한 포인터 처럼 동작합니다.
 
 ```
-명시적 scheduler_ptr (std:: shared_ptr < scheduler_interface > 스케줄러);
-
-명시적 scheduler_ptr (_In_opt_ scheduler_interface pScheduler);
+scheduler_interface* operator->() const;
 ```
 
-### Parameters
+### <a name="return-value"></a>반환 값
+
+##  <a name="ctor"></a>  scheduler_ptr:: scheduler_ptr 생성자
+
+Shared_ptr에서 스케줄러에 대 한 스케줄러 포인터를 만듭니다.
+
+```
+explicit scheduler_ptr(std::shared_ptr<scheduler_interface> scheduler);
+explicit scheduler_ptr(_In_opt_ scheduler_interface* pScheduler);
+```
+
+### <a name="parameters"></a>매개 변수
 
 *scheduler*<br/>
-The scheduler to convert.
+변환할 스케줄러입니다.
 
 *pScheduler*<br/>
-The scheduler pointer to convert.
+변환할 스케줄러 포인터입니다.
 
-## See Also
+## <a name="see-also"></a>참고 항목
 
-[concurrency Namespace](concurrency-namespace.md)
+[concurrency 네임스페이스](concurrency-namespace.md)

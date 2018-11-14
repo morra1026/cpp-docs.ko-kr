@@ -2,12 +2,12 @@
 title: 코드를 유니버설 CRT로 업그레이드
 ms.date: 03/31/2017
 ms.assetid: eaf34c1b-da98-4058-a059-a10db693a5ce
-ms.openlocfilehash: 5e417df380ff2239b7c09ba32cc02b784e9343d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41b33698c1617cef02f1b98a654d3403843215d8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668613"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331752"
 ---
 # <a name="upgrade-your-code-to-the-universal-crt"></a>코드를 유니버설 CRT로 업그레이드
 
@@ -37,7 +37,7 @@ Visual C++ 프로젝트를 업데이트할 때 프로젝트의 **Linker** 속성
 
 Visual Studio 2015 또는 Visual Studio 2017에서 지원하는 Windows 버전에서 UCRT를 사용할 수 있습니다. Windows 10이 아닌 지원되는 다른 버전의 Windows에 대해 vcredist 패키지를 사용하여 재배포할 수 있습니다. vcredist 패키지는 UCRT 구성 요소를 포함하고 이들 구성 요소가 기본적으로 설치되지 않은 Windows 운영 체제에 자동으로 설치합니다. 자세한 내용은 [Visual C++ 파일 재배포](../ide/redistributing-visual-cpp-files.md)를 참조하세요.
 
-UCRT의 app-local 배포가 지원되지만 성능 및 보안상의 이유로 권장되지 않습니다. app-local 배포용 DLL은 **redist** 하위 디렉터리 아래에 Windows SDK의 일부로 포함됩니다. 필요한 DLL에는 ucrtbase.dll 및 api-ms-win-_subset_.dll이라는 **APISet 전달자** DLL 집합이 포함됩니다. 각 운영 체제에서 필요한 DLL 집합은 다르므로 app-local 배포를 사용할 경우 모든 DLL을 포함하는 것이 좋습니다. app-local 배포에 대한 자세한 내용 및 주의할 점은 [Visual C++의 배포](../ide/deployment-in-visual-cpp.md)을 참조하세요.
+UCRT의 app-local 배포가 지원되지만 성능 및 보안상의 이유로 권장되지 않습니다. app-local 배포용 DLL은 **redist** 하위 디렉터리 아래에 Windows SDK의 일부로 포함됩니다. 필요한 DLL에는 ucrtbase.dll 및 api-ms-win-_subset_.dll이라는 **APISet 전달자** DLL 집합이 포함됩니다. 각 운영 체제에서 필요한 DLL 집합은 다르므로 app-local 배포를 사용할 경우 모든 DLL을 포함하는 것이 좋습니다. app-local 배포에 대한 자세한 내용 및 주의할 점은 [Visual C++의 배포](../ide/deployment-in-visual-cpp.md)을 참조하세요.
 
 ## <a name="changes-to-the-universal-crt-functions-and-macros"></a>유니버설 CRT 함수 및 매크로에 대한 변경 내용
 

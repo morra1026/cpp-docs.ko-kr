@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: 92d34bd048061781809941d56f5de052cecadca9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 519bbe0bdbef786c95ca3f6711b344b7a4f6b641
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626670"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329890"
 ---
 # <a name="implements-c"></a>implements(C++)
 
@@ -20,7 +20,7 @@ IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스
 ## <a name="syntax"></a>구문
 
 ```cpp
-[ implements( 
+[ implements(
    interfaces={interfaces}, dispinterfaces={dispinterfaces})]
 ```
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - task parallelism
 - tasks [Concurrency Runtime]
 ms.assetid: 42f05ac3-2098-494a-ba84-737fcdcad077
-ms.openlocfilehash: 43af08f3be75bff7621cd2f57b9d50b658420f26
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9f18dfd1498538ce3700fd73a27ce6f6088ee42
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630427"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331219"
 ---
 # <a name="task-parallelism-concurrency-runtime"></a>작업 병렬 처리(동시성 런타임)
 
@@ -22,8 +22,7 @@ ms.locfileid: "50630427"
 비동기 코드를 작성할 때 비동기 작업이 완료된 후 일부 작업이 발생되도록 하려는 경우 작업을 사용합니다. 예를 들어 파일에서 비동기적으로 읽은 다음 다른 작업을 사용 하는 작업을 사용할 수 있습니다-를 *연속 작업*,이 문서의 뒷부분에 설명 되어 있는-사용할 수 있게 데이터를 처리 하는 데 있습니다. 반대로 작업 그룹을 사용하여 병렬 작업을 더 작은 부분으로 분해할 수 있습니다. 예를 들어 남은 작업을 두 파티션으로 분할하는 재귀 알고리즘이 있다고 가정합니다. 작업 그룹을 사용하여 이러한 파티션을 동시에 실행한 다음 분할된 작업이 완료될 때까지 기다릴 수 있습니다.
 
 > [!TIP]
-
->  동시에 컬렉션의 모든 요소에 동일한 루틴을 적용 하려는 경우 병렬 알고리즘을 사용과 같은 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for), 작업 또는 작업 그룹을 대신 합니다. 병렬 알고리즘에 대 한 자세한 내용은 참조 하세요. [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)합니다.
+> 동시에 컬렉션의 모든 요소에 동일한 루틴을 적용 하려는 경우 병렬 알고리즘을 사용과 같은 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for), 작업 또는 작업 그룹을 대신 합니다. 병렬 알고리즘에 대 한 자세한 내용은 참조 하세요. [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)합니다.
 
 ## <a name="key-points"></a>주요 사항
 
@@ -205,7 +204,6 @@ C + + 및 XAML을 사용 하 여 디스크에 파일 집합을 기록 하는 UWP
 1. MainPage.xaml.cpp에서 예제에 표시된 대로 `WriteFilesAsync`를 구현합니다.
 
 > [!TIP]
-
 > `when_all`은 `task`를 해당 결과로 생성하는 비블로킹 함수입니다. 와 달리 [task:: wait](reference/task-class.md#wait), ASTA (응용 프로그램 STA) 스레드에서 UWP 앱에서이 함수를 호출 해도 됩니다.
 
 ###  <a name="when-any"></a> When_any 함수
@@ -229,14 +227,14 @@ C + + 및 XAML을 사용 하 여 디스크에 파일 집합을 기록 하는 UWP
 이 예제에서는 `task<pair<int, size_t>>`를 지정하여 작업 기반 연속을 생성할 수도 있습니다.
 
 > [!NOTE]
->  `when_all`과 마찬가지로 `when_any`에 전달되는 작업은 모두 동일한 형식을 반환해야 합니다.
+> `when_all`과 마찬가지로 `when_any`에 전달되는 작업은 모두 동일한 형식을 반환해야 합니다.
 
 다음 예제와 같이 `||` 구문을 사용하여 작업 집합의 첫 번째 작업이 완료된 후 완료되는 작업을 생성할 수도 있습니다.
 
 `auto t = t1 || t2; // same as when_any`
 
 > [!TIP]
->  와 마찬가지로 `when_all`, `when_any` 는 비블로킹 이며 ASTA 스레드에서 UWP 앱에서 호출할 수 있습니다.
+> 와 마찬가지로 `when_all`, `when_any` 는 비블로킹 이며 ASTA 스레드에서 UWP 앱에서 호출할 수 있습니다.
 
 ##  <a name="delayed-tasks"></a> 지연 된 작업 실행
 
@@ -257,8 +255,7 @@ PPL을 사용 합니다 [concurrency:: task_group](reference/task-group-class.md
 PPL 작업 그룹을 이러한 두 가지 범주로 나눕니다: *구조화 되지 않은 작업 그룹* 하 고 *구조적 작업 그룹*합니다. PPL은 `task_group` 클래스를 사용하여 비구조적 작업 그룹을 나타내고 `structured_task_group` 클래스를 사용하여 구조적 작업 그룹을 나타냅니다.
 
 > [!IMPORTANT]
-
->  또한 PPL이 정의 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘을 사용 하는 `structured_task_group` 작업 집합을 병렬로 실행 하는 클래스입니다. `parallel_invoke` 알고리즘에는 더 간결한 구문이 있으므로 가능한 경우 `structured_task_group` 클래스 대신 사용하는 것이 좋습니다. 항목 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md) 설명 `parallel_invoke` 에서 더 자세히 설명 합니다.
+> 또한 PPL이 정의 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 알고리즘을 사용 하는 `structured_task_group` 작업 집합을 병렬로 실행 하는 클래스입니다. `parallel_invoke` 알고리즘에는 더 간결한 구문이 있으므로 가능한 경우 `structured_task_group` 클래스 대신 사용하는 것이 좋습니다. 항목 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md) 설명 `parallel_invoke` 에서 더 자세히 설명 합니다.
 
 동시에 실행하려는 여러 독립된 작업이 있고 계속하려면 모든 작업이 완료될 때까지 기다려야 하는 경우 `parallel_invoke`를 사용합니다. 이 기술을 종종 이라고 *분기 및 조인* 병렬 처리 합니다. 동시에 실행하려는 여러 독립된 작업이 있지만 작업이 나중에 완료될 때까지 기다리려면 `task_group`을 사용합니다. 예를 들어 `task_group` 개체에 작업을 추가하고 작업이 다른 함수 또는 다른 스레드에서 완료될 때까지 기다릴 수 있습니다.
 

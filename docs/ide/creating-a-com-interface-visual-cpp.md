@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, creating
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-ms.openlocfilehash: 53379a7937bd96b50de61652f67bd0dcb34a6730
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d76dac150f86078e67374eec2e5e2e0f8b9f5e3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569739"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523503"
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM 인터페이스 만들기(Visual C++)
 
@@ -53,7 +53,6 @@ ATL 프로젝트를 열면, [클래스 추가](../ide/add-class-dialog-box.md) �
 ```
 interface IMyInterface {
 };
-
 ```
 
 자세한 내용은 [인터페이스 구현](../ide/implementing-an-interface-visual-cpp.md) 및 [ATL 프로젝트에 개체 및 컨트롤 추가](../atl/reference/adding-objects-and-controls-to-an-atl-project.md)를 참조하세요.
