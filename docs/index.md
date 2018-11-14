@@ -4,12 +4,12 @@ title: Visual C++ 설명서
 description: C++를 사용하여 플랫폼과 장치용 응용 프로그램, 서비스 및 도구를 개발하는 방법을 알아봅니다.
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: b4e660af273fac320fcebed19c135d8e37d1a50f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b5629adf14e1ba5caad4157a28db65b4198b904
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677866"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328294"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -377,7 +377,7 @@ ms.locfileid: "50677866"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>구성 요소 확장</h3>
-                                                    <p>C++ 구성 요소 확장: .NET 프로그래밍용 C++/CLI 및 UWP 프로그래밍용 C++/CX입니다.</p>
+                                                    <p>C++에 대한 구성 요소 확장: .NET 프로그래밍용 C++/CLI 및 UWP 프로그래밍용 C++/CX입니다.</p>
                                                 </div>
                                             </div>
                                         </div>

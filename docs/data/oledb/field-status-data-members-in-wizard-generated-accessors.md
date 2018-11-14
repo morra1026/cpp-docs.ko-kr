@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB consumer templates, field status
 - field status in OLE DB templates
 ms.assetid: 66e4e223-c60c-471e-860d-d23abcdfe371
-ms.openlocfilehash: 25bb370c0714bfef97bc6659deae2fbd21aed23f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 46cf285e07bffe178874546d13d196b5165cb28b
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664570"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524360"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>마법사 생성 접근자의 필드 상태 데이터 멤버
 
@@ -58,7 +58,7 @@ public:
 
 또한 특정 필드에 NULL 값을 설정 하는 상태 값을 사용할 수 있습니다. 이렇게 하면 0이 아닌 NULL로 필드 값을 구분 하고자 하는 경우에 도움이 됩니다. 유효한 값 또는 특수 한 값을 NULL 인지 여부를 결정 하 고 응용 프로그램 처리 해야 하는 방법을 결정 하는 것입니다. OLE DB 일반 NULL 값을 지정 하는 올바른 수단으로 DBSTATUS_S_ISNULL을 정의 합니다. 소비자 데이터를 읽고, 값이 null, status 필드 DBSTATUS_S_ISNULL에 설정 됩니다. 소비자를 NULL 값을 설정 하려는 소비자는 공급자를 호출 하기 전에 상태 값을 DBSTATUS_S_ISNULL을 설정 합니다.
 
-다음으로 열고 Oledb.h DBSTATUSENUM 검색 합니다. DBSTATUSENUM 열거형 값에 대해 0이 아닌 상태를 나타내는 숫자 값을 일치 시킬 수 있습니다. 열거형 이름 무엇이 잘못 인지 여부를 알려줍니다. 즉, 충분 하지 않으면를 **상태** 항목에는 **바인딩 데이터 값** 부분을 [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643). 이 항목의 상태 값을 가져오거나 데이터를 설정할 때 사용 되는 테이블을 포함 합니다. 길이 값에 대 한 자세한 내용은 합니다 **길이** 동일한 섹션에서 항목입니다.
+다음으로 열고 Oledb.h DBSTATUSENUM 검색 합니다. DBSTATUSENUM 열거형 값에 대해 0이 아닌 상태를 나타내는 숫자 값을 일치 시킬 수 있습니다. 열거형 이름 무엇이 잘못 인지 여부를 알려줍니다. 즉, 충분 하지 않으면를 **상태** 항목에는 **바인딩 데이터 값** 부분을 [OLE DB Programmer's Guide](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming). 이 항목의 상태 값을 가져오거나 데이터를 설정할 때 사용 되는 테이블을 포함 합니다. 길이 값에 대 한 자세한 내용은 합니다 **길이** 동일한 섹션에서 항목입니다.
 
 ## <a name="retrieving-the-length-or-status-of-a-column"></a>길이 또는 열의 상태를 검색합니다.
 

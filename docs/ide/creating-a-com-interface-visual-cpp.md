@@ -1,27 +1,17 @@
 ---
-title: COM 인터페이스 만들기(Visual C++) | Microsoft Docs
-ms.custom: ''
+title: COM 인터페이스 만들기(Visual C++)
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.codewiz.com.creating.interfaces
-dev_langs:
-- C++
 helpviewer_keywords:
 - COM interfaces, creating
 ms.assetid: 1be84d3c-6886-4d1e-8493-56c4d38a96d4
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: e573e65e1b9f3638aaa2f1b25c36d6c959f194d8
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 2d76dac150f86078e67374eec2e5e2e0f8b9f5e3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46390101"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523503"
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM 인터페이스 만들기(Visual C++)
 
@@ -63,7 +53,6 @@ ATL 프로젝트를 열면, [클래스 추가](../ide/add-class-dialog-box.md) �
 ```
 interface IMyInterface {
 };
-
 ```
 
 자세한 내용은 [인터페이스 구현](../ide/implementing-an-interface-visual-cpp.md) 및 [ATL 프로젝트에 개체 및 컨트롤 추가](../atl/reference/adding-objects-and-controls-to-an-atl-project.md)를 참조하세요.

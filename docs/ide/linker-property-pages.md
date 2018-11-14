@@ -1,31 +1,21 @@
 ---
-title: 링커 속성 페이지 | Microsoft Docs
-ms.custom: ''
+title: 링커 속성 페이지
 ms.date: 11/21/2017
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - VC.Project.VCLinkerTool.RegisterOutput
 - VC.Project.VCLinkerTool.OVERWRITEImportLibrary
 - VC.Project.VCLinkerTool.UseLibraryDependencyInputs
 - VC.Project.VCLinkerTool.LinkLibraryDependencies
-dev_langs:
-- C++
 helpviewer_keywords:
 - per-user redirection
 - Linker property pages
 ms.assetid: 7e7671e5-a35a-4e67-9bdb-661d75c4d11e
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: eec1620d9ae84e5c0b957b7426ad388c70626813
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 1ac499d11b1e806a046d7ff9105da43cebcee1af
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46379218"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50561592"
 ---
 # <a name="linker-property-pages"></a>링커 속성 페이지
 
@@ -37,13 +27,13 @@ ms.locfileid: "46379218"
 
 이 속성은 이 빌드에서 생성된 .lib 출력을 종속 프로젝트에 연결하지 않도록 링커에 지시합니다. 이렇게 하면 프로젝트 시스템이 빌드될 때 .lib 파일을 생성하지 않는.dll 파일을 처리할 수 있습니다. 프로젝트가 DLL을 생성하는 다른 프로젝트에 종속되는 경우 프로젝트 시스템은 해당 하위 프로젝트에서 생성한 .lib 파일을 자동으로 연결합니다. COM DLL 또는 리소스 전용 DLL을 생성하는 프로젝트에서는 이 기능이 필요하지 않을 수 있습니다. 이러한 DLL에는 의미 있는 내보내기가 없습니다. DLL에 내보내기가 없는 경우 링커는 .lib 파일을 생성하지 않습니다. 디스크에 내보내기 .lib 파일이 없는 경우 프로젝트 시스템에서 링커에게 이 (누락된) DLL로 연결하도록 지시하면 연결이 실패합니다. 이 문제를 해결하려면 **가져오기 라이브러리 무시** 속성을 사용하세요. **예**로 설정하면 프로젝트 시스템이 해당 .lib 파일의 유무를 무시하고, 이 프로젝트에 종속된 모든 프로젝트가 존재하지 않는 .lib 파일과 연결되지 않도록 합니다.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.IgnoreImportLibrary%2A>를 참조하세요.
 
 ### <a name="register-output"></a>출력 등록
 
 .dll 프로젝트에서만 유효한 빌드 출력에서 `regsvr32.exe /s $(TargetPath)`를 실행합니다. .exe 프로젝트의 경우 이 속성은 무시됩니다. .exe 출력을 등록하려면 구성에 postbuild 이벤트를 설정하여, 등록된 .exe 파일에 항상 필요한 사용자 지정 등록을 수행합니다.
 
-프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>을 참조하세요.
+프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RegisterOutput%2A>를 참조하세요.
 
 ### <a name="per-user-redirection"></a>사용자별 리디렉션
 

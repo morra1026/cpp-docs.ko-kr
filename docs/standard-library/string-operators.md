@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: a35188e0194a57ac399610f3130634132addf8f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3ca469058ba65f83b0df60a93c63895e34f916e
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644823"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332220"
 ---
 # <a name="ltstringgt-operators"></a>&lt;string&gt; 연산자
 
@@ -115,7 +115,7 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### <a name="remarks"></a>설명
 
-각 함수는 `operator+`를 오버로드하여 템플릿 클래스 [basic_string 클래스](../standard-library/basic-string-class.md)의 두 개체를 연결합니다. 모든 함수는 실제로는 `basic_string`\< **CharType**, **Traits**, **Allocator**>(_ *Left*). [append](../standard-library/basic-string-class.md#append)(\_ *Right*)를 반환합니다.
+각 함수는 `operator+`를 오버로드하여 템플릿 클래스 [basic_string 클래스](../standard-library/basic-string-class.md)의 두 개체를 연결합니다. 모든 함수는 실제로 `basic_string< CharType, Traits, Allocator>(Left).append(right)`합니다. 자세한 내용은 [추가](../standard-library/basic-string-class.md#append)합니다.
 
 ### <a name="example"></a>예제
 
@@ -575,7 +575,7 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="remarks"></a>설명
 
-템플릿 함수는 **operator<<** 를 오버로드하여 템플릿 클래스 [basic_string](../standard-library/basic-string-class.md)의 _ *Str* 개체를 스트림 \_ *Ostr*에 씁니다. 이 함수는 실제로는 \_ *Ostr*. **write**( \_ *Str*. [c_str](../standard-library/basic-string-class.md#c_str), \_ *Str*. [size](../standard-library/basic-string-class.md#size))를 반환합니다.
+템플릿 함수 오버 로드가 **연산자 <<** 개체를 삽입할 *str* 템플릿 클래스의 [basic_string](../standard-library/basic-string-class.md) 스트림으로  *\_ Ostr*합니다. 효과적으로 반환 `_Ostr.write( str.c_str, str.size )`합니다.
 
 ## <a name="op_gt"></a>  operator&gt;
 

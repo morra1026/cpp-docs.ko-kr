@@ -7,12 +7,12 @@ helpviewer_keywords:
 - strings [C++], formatting
 - strings [C++], special characters
 ms.assetid: c40f394a-8b2c-4896-ab30-6922863ddbb5
-ms.openlocfilehash: 740bf02d40dfcb236eef0dccbf55201dd79aec4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b60f48983913f4dc146af1b4645710cd1393d072
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493849"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328333"
 ---
 # <a name="adding-formatting-or-special-characters-to-a-string-resource-c"></a>문자열 리소스 (c + +)에 형식 지정 또는 특수 문자 추가
 
@@ -29,12 +29,12 @@ ms.locfileid: "50493849"
 
    |이 가져오려면|이 입력|
    |-----------------|---------------|
-   |줄 바꿈|\n|
-   |캐리지 리턴|\r|
-   |탭|\t|
-   |백슬래시(\\)|\\\|
-   |ASCII 문자|\ddd (8 진수 표기법)|
-   |경고 (벨)|\a|
+   | 줄 바꿈 | \\N |
+   | 캐리지 리턴 | \\R |
+   | 탭 | \\t |
+   | 백슬래시(\\) | \\\\ |
+   | ASCII 문자 | \\ddd (8 진수 표기법) |
+   | 경고 (벨) | \\a |
 
 > [!NOTE]
 > 합니다 **문자열** 편집기 이스케이프 ASCI 문자로의 전체 집합을 지원 하지 않습니다. 위에 나열 된만 사용할 수 있습니다.

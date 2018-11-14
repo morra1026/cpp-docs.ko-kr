@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::auto_ptr [C++], release
 - std::auto_ptr [C++], reset
 ms.assetid: 7f9108b6-9eb3-4634-b615-cf7aa814f23b
-ms.openlocfilehash: 587168323b8af63d232b8df63e9dcac2f4601433
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0c8e0c1f4dc2e1082d5df230c74efafcae24f29
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620950"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327124"
 ---
 # <a name="autoptr-class"></a>auto_ptr 클래스
 
@@ -282,11 +282,11 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 ### <a name="return-value"></a>반환 값
 
-`auto_ptr`\< **Type**> 형식의 개체에 대한 참조입니다.
+`auto_ptr<Type>` 형식의 개체에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
-할당 식을 `delete myptr`, 경우에 저장 된 포인터를 `myptr` 할당의 결과로 변경 합니다. 그런 다음 _ *Right*에 저장된 포인터의 소유권을 전송하기 위해 \_ *Right*. [릴리스](#release) 에서 `myptr`합니다. 함수는 **\*this**를 반환합니다.
+할당 식을 `delete myptr`, 경우에 저장 된 포인터를 `myptr` 할당의 결과로 변경 합니다. 다음에 저장 된 포인터의 소유권을 전송 *오른쪽*에 저장 하 여 *오른쪽*.[ 릴리스](#release) 에서 `myptr`합니다. 함수는 __\*this__를 반환합니다.
 
 ### <a name="example"></a>예제
 

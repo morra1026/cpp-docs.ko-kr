@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::num_put [C++], do_put
 - std::num_put [C++], put
 ms.assetid: 36c5bffc-8283-4201-8ed4-78c4d81f8a17
-ms.openlocfilehash: c6866358cde7d381ec8a703d50aeb3193bef9d5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ede0ccd85f116f300939c819ae8209435da72b7
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441862"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327332"
 ---
 # <a name="numput-class"></a>num_put 클래스
 
@@ -258,7 +258,7 @@ virtual iter_type do_put(iter_type next,
 
 부울 출력 필드를 생성 한다는 점을 제외 하면 첫 번째 동일 하 게 동작 *val*합니다.
 
-부울 출력 필드는 두 가지 형식 중 하나를 사용합니다. **iosbase**. **flags** & `ios_base::`[boolalpha](../standard-library/ios-functions.md#boolalpha)가 **false**이면 구성원 함수는 `do_put`(_ *Next*, \_ *Iosbase*, \_ *Fill*, ( **long**) `val`)을 반환합니다. 이 경우 일반적으로 생성된 0(**false**의 경우) 또는 1(**true**의 경우) 시퀀스가 생성됩니다. 그렇지 않으면 생성된 시퀀스는 **fac**. [falsename](../standard-library/numpunct-class.md#falsename)`)`(**false**의 경우) 또는 **fac**. [truename](../standard-library/numpunct-class.md#truename)(**true**의 경우)입니다.
+부울 출력 필드는 두 가지 형식 중 하나를 사용합니다. 하는 경우 `iosbase.flags & ios_base::` [boolalpha](../standard-library/ios-functions.md#boolalpha) 됩니다 **false**, 멤버 함수는 반환 `do_put(_Next, _Iosbase, _Fill, (long)val)`, 일반적으로 0의 생성 된 시퀀스를 생성 하는 (에 대 한 **false**) 또는 1 (에 대 한 **true**). 생성된 된 시퀀스는 그러지 *fac*.[ falsename](../standard-library/numpunct-class.md#falsename) (에 대 한 **false**), 또는 *fac*.[ truename](../standard-library/numpunct-class.md#truename) (에 대 한 **true**).
 
 일곱 번째 보호된 가상 구성원 함수는 다음 코드와 같습니다.
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-ms.openlocfilehash: 5a9026ca400c3e7c403ff8f2b86f486bcde79cf8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b4da7df691837b47daa35c4b474711062d4e5c7
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569782"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523171"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>문서/뷰 아키텍처의 대체
 
@@ -48,15 +48,15 @@ MFC에서 제공하는 문서/뷰 아키텍처는 응용 프로그램의 많은 
 
    에 선언 된 `CDocument`:
 
-   - 두 개의 `CString` 개체입니다.
+  - 두 개의 `CString` 개체입니다.
 
-   - 세 **BOOL**s입니다.
+  - 세 **BOOL**s입니다.
 
-   - 한 개의 `CDocTemplate` 포인터입니다.
+  - 한 개의 `CDocTemplate` 포인터입니다.
 
-   - 문서 보기 목록이 포함된 한 개의 `CPtrList` 개체입니다.
+  - 문서 보기 목록이 포함된 한 개의 `CPtrList` 개체입니다.
 
-   또한 문서에는 문서 개체를 만드는 시간, 해당 뷰 개체, 프레임 창 및 문서 템플릿 개체가 필요합니다.
+  또한 문서에는 문서 개체를 만드는 시간, 해당 뷰 개체, 프레임 창 및 문서 템플릿 개체가 필요합니다.
 
 - 문서와 뷰 모두 사용하지 않는 부속물로 취급합니다. 데이터 관리 및 그리기 코드를 뷰 대신 프레임 창에 넣습니다. 이 방법은 C 언어 프로그래밍 모델에 더 가깝습니다.
 

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], transactions
 - distributed transactions [C++]
 ms.assetid: 3d72e583-ad38-42ff-8f11-e2166d60a5a7
-ms.openlocfilehash: 58316a6f09fcd60aae8b8de41e22af138ae88813
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 647112f480f6470f7d893ecd1d5177618dc23708
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527169"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556272"
 ---
 # <a name="supporting-transactions-in-ole-db"></a>OLE DB에서 트랜잭션 지원
 
@@ -22,11 +22,11 @@ A [트랜잭션](../../data/transactions-mfc-data-access.md) 그룹 또는 일�
 
 OLE DB는 다음 세 가지 메서드를 사용 하 여 트랜잭션을 지원합니다.
 
-- [ITransactionLocal::StartTransaction](/previous-versions/windows/desktop/ms709786)
+- [ITransactionLocal::StartTransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85))
 
-- [ITransaction::Commit](/previous-versions/windows/desktop/ms713008)
+- [ITransaction::Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85))
 
-- [ITransaction::Abort](/previous-versions/windows/desktop/ms709833)
+- [ITransaction::Abort](https://docs.microsoft.com/previous-versions/windows/desktop/ms709833(v=vs.85))
 
 ## <a name="relationship-of-sessions-and-transactions"></a>세션 및 트랜잭션과의 관계
 
@@ -48,7 +48,7 @@ OLE DB는 다음 세 가지 메서드를 사용 하 여 트랜잭션을 지원�
 
 ## <a name="nested-transactions"></a>중첩 된 트랜잭션
 
-A [트랜잭션 중첩](/previous-versions/windows/desktop/ms716985) 세션에 활성 트랜잭션이 이미 있는 경우 새 로컬 트랜잭션을 시작할 때 발생 합니다. 현재 트랜잭션 아래 중첩 트랜잭션으로 새 트랜잭션이 시작 됩니다. 공급자는 중첩 된 트랜잭션을 지원 하지 않으면, 호출 `StartTransaction` 세션에 활성 트랜잭션이 이미 있을 때 XACT_E_XTIONEXISTS를 반환 합니다.
+A [트랜잭션 중첩](https://docs.microsoft.com/previous-versions/windows/desktop/ms716985(v=vs.85)) 세션에 활성 트랜잭션이 이미 있는 경우 새 로컬 트랜잭션을 시작할 때 발생 합니다. 현재 트랜잭션 아래 중첩 트랜잭션으로 새 트랜잭션이 시작 됩니다. 공급자는 중첩 된 트랜잭션을 지원 하지 않으면, 호출 `StartTransaction` 세션에 활성 트랜잭션이 이미 있을 때 XACT_E_XTIONEXISTS를 반환 합니다.
 
 ## <a name="distributed-transactions"></a>분산 트랜잭션
 

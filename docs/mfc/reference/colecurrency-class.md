@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: d831353c72c40ab4f35b64046ab5d5236aa9644a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3b0a369071571fb343d1b5030eebbf7c471bc81
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553493"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519193"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 
@@ -132,11 +132,11 @@ COleCurrency(
 
 - COleCurrency (`curSrc`)를 생성 한 `COleCurrency` 기존 개체 `COleCurrency` 개체입니다. 새 개체는 소스 개체와 동일한 상태입니다.
 
-- COleCurrency (`varSrc`)를 생성 한 `COleCurrency` 개체입니다. 변환 하려고 시도 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 구조 또는 `COleVariant` 개체 (VT_CY) 통화 값입니다. 이 변환에 성공한 경우 변환 된 값은 복사할 새 `COleCurrency` 개체입니다. 없으면의 값을 `COleCurrency` 개체 영 (0) 및 해당 상태를 잘못 됨로 설정 됩니다.
+- COleCurrency (`varSrc`)를 생성 한 `COleCurrency` 개체입니다. 변환 하려고 시도 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 구조 또는 `COleVariant` 개체 (VT_CY) 통화 값입니다. 이 변환에 성공한 경우 변환 된 값은 복사할 새 `COleCurrency` 개체입니다. 없으면의 값을 `COleCurrency` 개체 영 (0) 및 해당 상태를 잘못 됨로 설정 됩니다.
 
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' 개체에서 지정된 된 숫자 구성 요소입니다. 소수 부분의 절대값이 10,000 보다 크면 단위에 적절 한 조정이 이루어집니다. 참고 단위 및 소수 부분이 서명 된 long 값으로 지정 됩니다.
 
-자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
+자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 및 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
 
 ### <a name="example"></a>예제
 
@@ -314,7 +314,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
 
 - **연산자 = (** *varSrc* **)** 하는 경우 변환 된 `VARIANT` 값 (또는 [COleVariant](../../mfc/reference/colevariant-class.md) 개체) 통화로 ( `VT_CY`)는 성공 하면 변환 된 값이 복사 됩니다 `COleCurrency` 개체 및 해당 상태에 잘못 설정 됩니다. 변환이 성공적 이면 값은 `COleCurrency` 개체 0과를 잘못 됨 상태가로 설정 됩니다.
 
-자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 및 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
+자세한 내용은 참조는 [통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy) 및 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK에는 항목입니다.
 
 ### <a name="example"></a>예제
 

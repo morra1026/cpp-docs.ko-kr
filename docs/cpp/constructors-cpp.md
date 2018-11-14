@@ -6,12 +6,12 @@ helpviewer_keywords:
 - objects [C++], creating
 - instance constructors
 ms.assetid: 3e9f7211-313a-4a92-9584-337452e061a9
-ms.openlocfilehash: 66edab2950a752e00767e10e7b8c36a3a01240ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91d85f62917ff722a61ecbc87c58379a00016b83
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460881"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523158"
 ---
 # <a name="constructors-c"></a>생성자 (C++)
 
@@ -127,7 +127,6 @@ int main() {
 ```cpp
     // Default constructor
     Box() = delete;
-
 ```
 
 모든 클래스 멤버에 기본 형식이 아닌 경우 삭제 된 것으로 컴파일러에서 생성 된 기본 생성자를 정의 합니다. 예를 들어, 기본 생성자 및 소멸자에 액세스할 수 있는 클래스 형식의 모든 멤버 및 해당 클래스 형식 멤버에 있어야 합니다. 참조의 모든 데이터 멤버 형식으로으로 **const** 멤버가 기본 멤버 이니셜라이저 있어야 합니다.

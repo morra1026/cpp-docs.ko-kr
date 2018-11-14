@@ -49,12 +49,12 @@ helpviewer_keywords:
 - _fstati64 function
 - fstat32i64 function
 ms.assetid: 088f5e7a-9636-4cf7-ab8e-e28d2aa4280a
-ms.openlocfilehash: 2cec64e408b326dccc7b950656d0aa699c084f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36d8b0d6480266f86136119a470fb7af5859a5b8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677788"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331245"
 ---
 # <a name="fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32"></a>_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32
 
@@ -107,14 +107,14 @@ int _fstat64i32(
 
 |필드|의미|
 |-|-|
-**st_atime**|마지막 파일 액세스 시간입니다.
-**st_ctime**|파일 생성 시간입니다.
-**st_dev**|장치인 경우 *fd*그렇지 않으면 0입니다.
-**st_mode**|파일 모드 정보의 비트 마스크입니다. 합니다 **_S_IFCHR** 비트가 설정 됩니다 *fd* 장치를 참조 합니다. 합니다 **_S_IFREG** 비트가 설정 됩니다 *fd* 일반 파일을 가리킵니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. **_S_IFCHR** 및 기타 상수는 SYS\Stat.h에 정의 됩니다.
-**st_mtime**|파일의 마지막 수정 시간입니다.
-**st_nlink**|NTFS가 아닌 파일 시스템에서 항상 1입니다.
-**st_rdev**|장치인 경우 *fd*그렇지 않으면 0입니다.
-**st_size**|파일 크기(바이트)입니다.
+| **st_atime** | 마지막 파일 액세스 시간입니다. |
+| **st_ctime** | 파일 생성 시간입니다. |
+| **st_dev** | 장치인 경우 *fd*그렇지 않으면 0입니다. |
+| **st_mode** | 파일 모드 정보의 비트 마스크입니다. 합니다 **_S_IFCHR** 비트가 설정 됩니다 *fd* 장치를 참조 합니다. 합니다 **_S_IFREG** 비트가 설정 됩니다 *fd* 일반 파일을 가리킵니다. 파일의 사용 권한 모드에 따라 사용자 읽기/쓰기 비트가 설정됩니다. **_S_IFCHR** 및 기타 상수는 SYS\Stat.h에 정의 됩니다. |
+| **st_mtime** | 파일의 마지막 수정 시간입니다. |
+| **st_nlink** | NTFS가 아닌 파일 시스템에서 항상 1입니다. |
+| **st_rdev** | 장치인 경우 *fd*그렇지 않으면 0입니다. |
+| **st_size** | 파일 크기(바이트)입니다. |
 
 하는 경우 *fd* 장치를 참조 합니다 **st_atime**를 **st_ctime**를 **st_mtime**, 및 **st_size** 필드는 이 값은 의미가 없습니다.
 

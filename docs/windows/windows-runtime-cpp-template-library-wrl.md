@@ -3,12 +3,12 @@ title: Windows 런타임 C++ 템플릿 라이브러리(WRL)
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b915afce-553b-44a7-b8dc-0ab601758eb0
-ms.openlocfilehash: 777e8226a12b3e57c136ea54d301ff7c9eb890a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 484718ee044b752c381d54b471a33e58ca470d80
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641937"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520662"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows 런타임 C++ 템플릿 라이브러리(WRL)
 
@@ -16,7 +16,7 @@ WRL(Windows 런타임 C++ 템플릿 라이브러리)은 Windows 런타임 구성
 
 > [!NOTE]
 > WRL 이제 대체 된 C + + /cli WinRT, 표준 C + + 17 개의 언어 프로젝션 Windows 런타임 Api에 대 한 합니다. C + + /cli WinRT는 Windows 10 SDK 부터는 버전 1803에서에서 사용할 수 있습니다. C + + /cli WinRT 헤더 파일에서 완전히 구현 되 고 최신 Windows API에 대 한 최고 수준의 액세스를 제공 하도록 설계 되었습니다.
-
+>
 > C + + /cli WinRT를 모두 사용 하는 모든 표준 호환 C + + 17 컴파일러를 사용 하 여 Windows 런타임 Api를 작성 합니다. C + + /cli WinRT에서 일반적으로 더 나은 성능을 제공 하 고 Windows 런타임에 대 한 다른 언어 옵션 보다 더 작은 이진 파일을 생성 합니다. 우리는 계속 지원 C + + /cli CX 및 WRL, 되지만 항상 권장 구성이 새 응용 프로그램에서 사용할 C + + WinRT 합니다. 자세한 내용은 [C + + /cli WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index)합니다.
 
 ## <a name="benefits"></a>이점
@@ -65,7 +65,7 @@ Windows Runtime c + + 템플릿 라이브러리를 사용 하 여 비동기 작�
 .winmd 메타데이터에서 IDL 파일을 만들어 WRL의 사용자 지정 Windows 런타임 구성 요소를 사용하는 방법을 살펴봅니다.
 
 [연습: 작업 및 XML HTTP 요청을 사용하여 연결](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)<br/>
-사용 하는 방법을 보여 줍니다 합니다 [IXMLHTTPRequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) UWP 앱에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스.
+사용 하는 방법을 보여 줍니다 합니다 [IXMLHTTPRequest2](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) 하 고 [IXMLHTTPRequest2Callback](/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) UWP 앱에서 웹 서비스에 HTTP GET 및 POST 요청을 보내는 작업 함께 인터페이스.
 
 [Bing Maps Trip Optimizer 샘플](https://code.msdn.microsoft.com/Bing-Maps-trip-optimizer-c4e037f7)<br/>
 사용 하는 `HttpRequest` 에 정의 된 클래스 [연습:를 사용 하 여 작업 연결 및 XML HTTP 요청](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md) 완전 한 UWP 앱의 컨텍스트에서 합니다.

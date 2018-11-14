@@ -14,12 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: 54cfbc6d31c0c86163400df691dec47e0c093d36
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9efac8ba0889d648def622ca045b9398c8eeef11
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603660"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518491"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용
 
@@ -45,7 +45,7 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 것 보다는 할 수 있지만 주식 데이터 바인딩된 속성을 만들 수는 [바인딩할 수 있는 get/set 메서드](#vchowcreatingbindablegetsetmethod)합니다.
 
 > [!NOTE]
->  스톡 속성을 `bindable` 및 `requestedit` 기본적으로 특성입니다.
+> 스톡 속성을 `bindable` 및 `requestedit` 기본적으로 특성입니다.
 
 #### <a name="to-add-a-bindable-stock-property-using-the-add-property-wizard"></a>속성 추가 마법사를 사용 하 여 바인딩 가능한 스톡 속성을 추가 하려면
 
@@ -74,7 +74,7 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 데이터 바인딩된 get/set 메서드 외에도 만들 수도 있습니다는 [바인딩할 수 있는 스톡 속성](#vchowcreatingbindablestockproperty)합니다.
 
 > [!NOTE]
->  이 절차는 Windows 컨트롤을 프로젝트 ActiveX 컨트롤을 가정 합니다.
+> 이 절차는 Windows 컨트롤을 프로젝트 ActiveX 컨트롤을 가정 합니다.
 
 #### <a name="to-add-a-bindable-getset-method-using-the-add-property-wizard"></a>속성 추가 마법사를 사용 하 여 바인딩 가능한 get/set 메서드를 추가 하려면
 
@@ -96,37 +96,37 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 
 1. **구현 형식**에서 **Get/Set 메서드**를 클릭합니다.
 
-9. IDL 특성 탭에서 다음 확인란을 선택 합니다. **바인딩할 수 있는**, **requestedit**, **displaybind**, 및 **defaultbind** 추가할 프로젝트의 속성 정의에 대 한 특성입니다. IDL 파일입니다. 이러한 컨트롤을 사용자에 게 표시 되도록 특성과 스톡 속성의 기본 바인딩 가능 속성을 확인 합니다.
+1. IDL 특성 탭에서 다음 확인란을 선택 합니다. **바인딩할 수 있는**, **requestedit**, **displaybind**, 및 **defaultbind** 추가할 프로젝트의 속성 정의에 대 한 특성입니다. IDL 파일입니다. 이러한 컨트롤을 사용자에 게 표시 되도록 특성과 스톡 속성의 기본 바인딩 가능 속성을 확인 합니다.
 
-10. **마침**을 클릭합니다.
+1. **마침**을 클릭합니다.
 
-11. 본문을 수정 합니다 `SetMyProp` 함수를 다음 코드를 포함 합니다.
+1. 본문을 수정 합니다 `SetMyProp` 함수를 다음 코드를 포함 합니다.
 
    [!code-cpp[NVC_MFC_AxData#2](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_2.cpp)]
 
-12. 매개 변수를 전달 합니다 `BoundPropertyChanged` 및 `BoundPropertyRequestEdit` 기능은 id () 특성의 속성에 대해 전달 된 매개 변수 속성의 dispid를 합니다. IDL 파일입니다.
+1. 매개 변수를 전달 합니다 `BoundPropertyChanged` 및 `BoundPropertyRequestEdit` 기능은 id () 특성의 속성에 대해 전달 된 매개 변수 속성의 dispid를 합니다. IDL 파일입니다.
 
-13. 수정 된 [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) 함수 이므로 다음 코드를 포함 합니다.
+1. 수정 된 [OnOcmCommand](../mfc/mfc-activex-controls-subclassing-a-windows-control.md) 함수 이므로 다음 코드를 포함 합니다.
 
    [!code-cpp[NVC_MFC_AxData#1](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_1.cpp)]
 
-14. 수정 된 `OnDraw` 함수를 다음 코드를 포함 합니다.
+1. 수정 된 `OnDraw` 함수를 다음 코드를 포함 합니다.
 
    [!code-cpp[NVC_MFC_AxData#3](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_3.cpp)]
 
-15. 헤더 파일 컨트롤 클래스에 대 한 헤더 파일의 공용 섹션으로 멤버 변수에 대 한 다음 정의 (생성자)를 추가 합니다.
+1. 헤더 파일 컨트롤 클래스에 대 한 헤더 파일의 공용 섹션으로 멤버 변수에 대 한 다음 정의 (생성자)를 추가 합니다.
 
    [!code-cpp[NVC_MFC_AxData#4](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_4.h)]
 
-16. 다음 줄의 마지막 줄을 확인 합니다 `DoPropExchange` 함수:
+1. 다음 줄의 마지막 줄을 확인 합니다 `DoPropExchange` 함수:
 
    [!code-cpp[NVC_MFC_AxData#5](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_5.cpp)]
 
-17. 수정 된 `OnResetState` 함수를 다음 코드를 포함 합니다.
+1. 수정 된 `OnResetState` 함수를 다음 코드를 포함 합니다.
 
    [!code-cpp[NVC_MFC_AxData#6](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_6.cpp)]
 
-18. 수정 된 `GetMyProp` 함수를 다음 코드를 포함 합니다.
+1. 수정 된 `GetMyProp` 함수를 다음 코드를 포함 합니다.
 
    [!code-cpp[NVC_MFC_AxData#7](../mfc/codesnippet/cpp/mfc-activex-controls-using-data-binding-in-an-activex-control_7.cpp)]
 

@@ -22,27 +22,27 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: c148bdb0a897e19bc3f3aeb7ed40e905073336b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb44af102f08e05edddc2fb692d1e30dd7e31717
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428603"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556680"
 ---
 # <a name="cenumerator-class"></a>CEnumerator 클래스
 
-노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.
+노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms715969(v=vs.85)) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
-class CEnumerator : 
+class CEnumerator :
    public CAccessorRowset< CAccessor <CEnumeratorAccessor >>
 ```
 
 ## <a name="requirements"></a>요구 사항
 
-**Header:** atldbcli.h
+**헤더:** atldbcli.h
 
 ## <a name="members"></a>멤버
 
@@ -79,7 +79,7 @@ bool Find(TCHAR* szSearchName) throw();
 
 ### <a name="remarks"></a>설명
 
-이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969) 인터페이스입니다.
+이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms715969(v=vs.85)) 인터페이스입니다.
 
 ## <a name="getmoniker"></a> Cenumerator:: Getmoniker
 
@@ -90,7 +90,7 @@ bool Find(TCHAR* szSearchName) throw();
 ```cpp
 HRESULT GetMoniker(LPMONIKER* ppMoniker) const throw();
 
-HRESULT GetMoniker(LPMONIKER* ppMoniker, 
+HRESULT GetMoniker(LPMONIKER* ppMoniker,
    LPCTSTR lpszDisplayName) const throw();
 ```
 
@@ -108,7 +108,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker, 
 
 ## <a name="open"></a> Cenumerator:: Open
 
-지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200)합니다.
+지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85))합니다.
 
 ### <a name="syntax"></a>구문
 

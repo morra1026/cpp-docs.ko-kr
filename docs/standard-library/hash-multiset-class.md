@@ -86,12 +86,12 @@ helpviewer_keywords:
 - stdext::hash_multiset::upper_bound
 - stdext::hash_multiset::value_comp
 ms.assetid: 0580397a-a76e-40ad-aea2-5c6f3a9d0a21
-ms.openlocfilehash: 31ea9e74dc00a511351614ab708949e05ab2c567
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b12c782ff7071987214acfe1ef8c52ca391b25ad
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636945"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333565"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset 클래스
 
@@ -555,7 +555,7 @@ hash_multiset에서 개 변수로 지정된 키가 있는 요소 수입니다.
 
 멤버 함수가 다음 범위에 있는 요소의 수를 반환합니다.
 
-[ `lower_bound` (_ `Key` ), `upper_bound` (\_ `Key` ) ).
+\[ lower_bound (*키*), upper_bound (*키*)).
 
 ### <a name="example"></a>예제
 

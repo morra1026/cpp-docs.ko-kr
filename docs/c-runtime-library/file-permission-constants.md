@@ -1,15 +1,9 @@
 ---
-title: 파일 사용 권한 상수 | Microsoft Docs
-ms.custom: ''
+title: 파일 사용 권한 상수
 ms.date: 11/04/2016
-ms.technology:
-- cpp-standard-libraries
-ms.topic: conceptual
 f1_keywords:
 - _S_IWRITE
 - _S_IREAD
-dev_langs:
-- C++
 helpviewer_keywords:
 - S_IWRITE constant
 - constants [C++], file attributes
@@ -18,16 +12,12 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6ae2e7d669edda1ab3069cf3cdb30b79482047e5
-ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
+ms.openlocfilehash: 0e4a60b5f3dad70f881387d5befca2def9bff7f3
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46026645"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520428"
 ---
 # <a name="file-permission-constants"></a>파일 사용 권한 상수
 
@@ -36,7 +26,6 @@ ms.locfileid: "46026645"
 ```
 
 #include <sys/stat.h>
-
 ```
 
 ## <a name="remarks"></a>설명

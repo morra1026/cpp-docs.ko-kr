@@ -5,12 +5,12 @@ helpviewer_keywords:
 - servers, implementing
 - OLE server applications [MFC], implementing OLE servers
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-ms.openlocfilehash: bd5967fe07670bd4b3bd076ca23fda62b02b2177
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5c89ff1256d557ef417b9e53ce76bbf1b5d6196
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566761"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518964"
 ---
 # <a name="servers-implementing-a-server"></a>서버: 서버 구현
 
@@ -22,11 +22,11 @@ ms.locfileid: "50566761"
 
 - 서버 리소스를 정의 합니다.
 
-   - 서버는 자체 창에 포함 된 항목을 편집할 때에 메뉴 리소스입니다.
+  - 서버는 자체 창에 포함 된 항목을 편집할 때에 메뉴 리소스입니다.
 
-   - 서버 내부에서 활성 상태일 때 사용 되는 메뉴 및 도구 모음 리소스입니다.
+  - 서버 내부에서 활성 상태일 때 사용 되는 메뉴 및 도구 모음 리소스입니다.
 
-   이러한 리소스에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
+  이러한 리소스에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
 
 - 항목 클래스 정의에서 파생 된 `COleServerItem`합니다. 서버 항목에 자세한 내용은 참조 하세요 [서버: 서버 항목](../mfc/servers-server-items.md)합니다.
 

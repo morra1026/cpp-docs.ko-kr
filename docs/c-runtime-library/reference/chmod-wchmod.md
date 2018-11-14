@@ -29,12 +29,12 @@ helpviewer_keywords:
 - files [C++], changing permissions
 - _wchmod function
 ms.assetid: 92f7cb86-b3b0-4232-a599-b8c04a2f2c19
-ms.openlocfilehash: 7f3133aac1548be5cb497fe32ae4f9f1c0e238d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 278ee1e6dda9e153b55676ce5c0ca389f383efd1
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595132"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518413"
 ---
 # <a name="chmod-wchmod"></a>_chmod, _wchmod
 
@@ -63,13 +63,13 @@ int _wchmod( const wchar_t *filename, int pmode );
 
 합니다 **_chmod** 함수에서 지정한 파일의 권한 설정을 변경 *filename*합니다. 권한 설정은 파일에 대한 읽기 및 쓰기 액세스를 제어합니다. 정수 식 *pmode* SYS\Stat.h에 정의 된 다음 매니페스트 상수 중 하나 또는 모두를 포함 합니다.
 
-|*pmode*|의미|
+| *pmode* | 의미 |
 |-|-|
-**_S_IREAD**|읽기만 허용합니다.
-**_S_IWRITE**|쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다.
-**_S_IREAD** &AMP;#124; **_S_IWRITE**|읽기 및 쓰기를 허용합니다.
+| **\_S\_IREAD** | 읽기만 허용합니다. |
+| **\_S\_IWRITE** | 쓰기를 허용합니다. 실제로는 읽기 및 쓰기를 모두 허용합니다. |
+| **\_S\_IREAD** &AMP;#124;  **\_S\_IWRITE** | 읽기 및 쓰기를 허용합니다. |
 
-두 상수가 지정 된 비트를 사용 하 여 결합 됩니다 or 연산자 (**|**). 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 모드 **_S_IWRITE** 하 고 **_S_IREAD** | **_S_IWRITE** 동일 합니다.
+두 상수가 지정 된 비트를 사용 하 여 결합 됩니다 or 연산자 (**\|**). 쓰기 권한이 부여되지 않은 경우 파일은 읽기 전용입니다. 모든 파일을 항상 읽을 수 있으므로 쓰기 전용 권한을 부여할 수 없습니다. 따라서 모드 **_S_IWRITE** 하 고 **_S_IREAD** \| **_S_IWRITE** 동일 합니다.
 
 **_wchmod** 의 와이드 문자 버전이 **_chmod**; *filename* 인수를 **_wchmod** 는 와이드 문자 문자열입니다. **_wchmod** 하 고 **_chmod** 동일 하 게 작동 합니다.
 
@@ -157,7 +157,6 @@ int main( void )
 ```Output
 
 A line of text.
-
 ```
 
 ```Output

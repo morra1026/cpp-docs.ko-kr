@@ -6,16 +6,14 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, appearance
 ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
-ms.openlocfilehash: d2ebba551d9b848a3a59944f7efb5f0f39af95e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34c72fa8a2c5108a20065041c5cb7ea461e501a8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602165"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330595"
 ---
 # <a name="appearance-atl-control-wizard"></a>모양, ATL 컨트롤 마법사
-
-여기 "검색 결과" 요약을 삽입 합니다.
 
 마법사의이 페이지를 사용 하 여 컨트롤에 대 한 추가 사용자 요소 옵션을 식별 합니다. 로 식별 되는 컨트롤에 대 한이 페이지는 **표준 컨트롤** 아래에서 **컨트롤 형식과** 에 [옵션, ATL 컨트롤 마법사](../../atl/reference/options-atl-control-wizard.md) 페이지입니다.
 

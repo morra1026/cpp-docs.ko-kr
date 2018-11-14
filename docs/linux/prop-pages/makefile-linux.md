@@ -1,23 +1,13 @@
 ---
 title: 일반 속성(Linux C++ 메이크파일 프로젝트)| Microsoft Docs
-ms.custom: ''
 ms.date: 9/26/2017
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: Linux
-ms.topic: conceptual
 ms.assetid: 3dec6853-43f6-412b-9806-9bfad333a204
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-- linux
-ms.openlocfilehash: 6fb23d2c7275788b05fe4450613770c268ca6c64
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: fb742d552d0b70ba5f5c406dd43bdf4cf8d1914b
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705701"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50524594"
 ---
 # <a name="makefile-project-properties-linux-c"></a>메이크파일 프로젝트 속성(Linux C++)
 

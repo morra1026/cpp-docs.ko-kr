@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: dd53bdea211610b208516860b29c1b0094f5a4da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a6ad49533028dbcb8c45b63c55a51090533137e
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523269"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51522493"
 ---
 # <a name="ccomvariant-class"></a>CComVariant 클래스
 
@@ -98,7 +98,7 @@ HRESULT Attach(VARIANT* pSrc);
 ### <a name="parameters"></a>매개 변수
 
 *pSrc*<br/>
-[in] 가리키는 합니다 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체에 연결 합니다.
+[in] 가리키는 합니다 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 개체에 연결 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -242,7 +242,7 @@ HRESULT Copy(const VARIANT* pSrc);
 ### <a name="parameters"></a>매개 변수
 
 *pSrc*<br/>
-[in] 에 대 한 포인터를 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 복사 합니다.
+[in] 에 대 한 포인터를 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 복사 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -342,7 +342,7 @@ CComVariant& operator=(char cSrc) throw();
 ### <a name="parameters"></a>매개 변수
 
 *varSrc*<br/>
-[in] 합니다 `CComVariant` 또는 [VARIANT](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 할당할 수는 `CComVariant` 개체입니다. 원본 변형의 콘텐츠가 변환 하지 않고 대상에 복사 됩니다.
+[in] 합니다 `CComVariant` 또는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 할당할 수는 `CComVariant` 개체입니다. 원본 변형의 콘텐츠가 변환 하지 않고 대상에 복사 됩니다.
 
 *bstrSrc*<br/>
 [in] 에 할당할 BSTR은 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_BSTR 됩니다.

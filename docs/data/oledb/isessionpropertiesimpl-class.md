@@ -14,23 +14,23 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: ca0ba254-c7dc-4c52-abec-cf895a0c6a63
-ms.openlocfilehash: d4fb67d68a77b9af21229be00808bd7b05db9f6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6b2abc97a44117c0fdd7c08c61de7ba900d1115
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528962"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556311"
 ---
 # <a name="isessionpropertiesimpl-class"></a>ISessionPropertiesImpl 클래스
 
-구현을 제공 합니다 [ISessionProperties](/previous-versions/windows/desktop/ms713721) 인터페이스입니다.
+구현을 제공 합니다 [ISessionProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms713721(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE ISessionPropertiesImpl :
-   public ISessionProperties,  
+   public ISessionProperties, 
    public CUtlProps<PropClass>
 ```
 
@@ -66,15 +66,15 @@ class ATL_NO_VTABLE ISessionPropertiesImpl :
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(GetProperties)(ULONG cPropertyIDSets, 
-   const DBPROPIDSET rgPropertyIDSets[], 
-   ULONG * pcPropertySets, 
+STDMETHOD(GetProperties)(ULONG cPropertyIDSets,
+   const DBPROPIDSET rgPropertyIDSets[],
+   ULONG * pcPropertySets,
    DBPROPSET ** prgPropertySets);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [ISessionProperties::GetProperties](/previous-versions/windows/desktop/ms723643) 에 *OLE DB Programmer's Reference*합니다.
+참조 [ISessionProperties::GetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723643(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="setproperties"></a> Isessionpropertiesimpl:: Setproperties
 
@@ -83,13 +83,13 @@ STDMETHOD(GetProperties)(ULONG cPropertyIDSets, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [ISessionProperties::SetProperties](/previous-versions/windows/desktop/ms714405) 에 *OLE DB Programmer's Reference*합니다.
+참조 [ISessionProperties::SetProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714405(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 

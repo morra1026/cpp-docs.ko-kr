@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -EH compiler option [C++]
 - /EH compiler option [C++]
 ms.assetid: 754b916f-d206-4472-b55a-b6f1b0f2cb4d
-ms.openlocfilehash: f118f55ddaa4a2dbc8a4a3ad1e596ec461a2b078
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8707ac716a010ea1d3dc0fa51740e76a5822462
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615061"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329302"
 ---
 # <a name="eh-exception-handling-model"></a>/EH(예외 처리 모델)
 
@@ -29,12 +29,17 @@ ms.locfileid: "50615061"
 
 ## <a name="arguments"></a>인수
 
-|||
-|-|-|
-**a**|비동기 모두 catch 하는 예외 처리 모델 (구조적) 및 c + +를 사용 하 여 동기 (c + +) 예외 `catch(...)` 구문입니다.
-**s**|동기 (c + +) 예외를 catch 하 고로 선언 된 함수를 컴파일러에 지시 하는 예외 처리 모델 **extern "C"** 예외가 throw 될 수 있습니다.
-**c**|사용 하는 경우 **s** (**/EHsc**), c + + 예외만 catch 하 고 컴파일러가로 선언 된 함수를 가정 합니다 **extern "C"** c + + 예외가 throw 되지 않습니다. **/EHca** 는 **/EHa**와 같습니다.
-**r**|모든에 대해 항상 런타임 종료 검사를 생성 하도록 컴파일러에 지시 **noexcept** 함수입니다. 기본적으로 런타임 검사에 대 한 **noexcept** 컴파일러만 throw 되지 않는 함수를 호출 하는 함수를 결정 하는 경우 지금 최적화 될 수 있습니다.
+**a**<br/>
+비동기 모두 catch 하는 예외 처리 모델 (구조적) 및 c + +를 사용 하 여 동기 (c + +) 예외 `catch(...)` 구문입니다.
+
+**s**<br/>
+동기 (c + +) 예외를 catch 하 고로 선언 된 함수를 컴파일러에 지시 하는 예외 처리 모델 **extern "C"** 예외가 throw 될 수 있습니다.
+
+**c**<br/>
+사용 하는 경우 **s** (**/EHsc**), c + + 예외만 catch 하 고 컴파일러가로 선언 된 함수를 가정 합니다 **extern "C"** c + + 예외가 throw 되지 않습니다. **/EHca** 는 **/EHa**와 같습니다.
+
+**r**<br/>
+모든에 대해 항상 런타임 종료 검사를 생성 하도록 컴파일러에 지시 **noexcept** 함수입니다. 기본적으로 런타임 검사에 대 한 **noexcept** 컴파일러만 throw 되지 않는 함수를 호출 하는 함수를 결정 하는 경우 지금 최적화 될 수 있습니다.
 
 ## <a name="remarks"></a>설명
 

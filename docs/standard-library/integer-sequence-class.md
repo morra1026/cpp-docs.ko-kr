@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::make_integer_sequence
 - std::index_sequence_for
 ms.assetid: 2cfdddee-819d-478e-bb78-c8a9c2696803
-ms.openlocfilehash: f9ce63aeba4db7c49aee36bc9b847e6832d26f8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c996fdc2756ee489dc3b0abf9321a1d9ce47aded
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638717"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332402"
 ---
 # <a name="integersequence-class"></a>integer_sequence 클래스
 
@@ -45,7 +45,7 @@ struct integer_sequence
 |||
 |-|-|
 |`static size_t size() noexcept`|시퀀스의 요소 수입니다.|
-|typedef T value_type|시퀀스에 있는 각 요소의 형식입니다. 정수 계열 형식이어야 합니다.|
+|`typedef T value_type`|시퀀스에 있는 각 요소의 형식입니다. 정수 계열 형식이어야 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -57,10 +57,9 @@ struct integer_sequence
 
 `a2t` 함수에서 `index_sequence`는 `size_t` 정수 계열 형식을 기반으로 하는 `integer_sequence`의 별칭입니다. `make_index_sequence`는 컴파일 시간에 호출자에 의해 전달되는 배열과 동일한 수의 요소로 0부터 시작하는 `index_sequence`를 만드는 별칭입니다. `a2t`는 값별로 `index_sequence`를 `a2t_`에 전달합니다. 여기서 `a[I]...` 식은 `I`의 압축을 풉니다. 그러면 요소는 개별 인수로 사용되는 `make_tuple`에 공급됩니다. 예를 들어 시퀀스에 세 개의 요소가 포함되어 있으면 `make_tuple`이 make_tuple(a[0], a[1], a[2])로 호출됩니다. 물론 배열 요소 자체는 임의 형식일 수 있습니다.
 
-apply 함수는 [std::tuple](../standard-library/tuple-class.md)을 허용하고 `tuple_size` 도우미 클래스를 사용하여 integer_sequence를 생성합니다. [std::decay_t](../standard-library/decay-class.md)_는 [tuple_size](../standard-library/tuple-size-class-tuple.md)가 참조 형식에서 작동하지 않기 때문에 필요합니다. `apply_` 함수는 튜플 멤버의 압축을 풀고 별도의 인수로 함수 호출에 전달합니다. 이 예제에서 함수는 값을 출력하는 간단한 람다 식입니다.
+적용 함수가 허용을 [std:: tuple](../standard-library/tuple-class.md), 생성 및는 `integer_sequence` 사용 하 여는 `tuple_size` 도우미 클래스입니다. 사실은 [std:: decay_t](../standard-library/decay-class.md) 필요 하므로 [tuple_size](../standard-library/tuple-size-class-tuple.md) 참조 형식에서 작동 하지 않습니다. `apply_` 함수는 튜플 멤버의 압축을 풀고 별도의 인수로 함수 호출에 전달합니다. 이 예제에서 함수는 값을 출력하는 간단한 람다 식입니다.
 
-```
-
+```cpp
 #include <stddef.h>
 #include <iostream>
 #include <tuple>
@@ -114,7 +113,6 @@ int main()
     char c;
     cin >> c;
 }
-
 ```
 
 매개 변수 팩에 대한 `index_sequence`를 만들려면 `make_index_sequence`\<sizeof...(T)>의 별칭인 `index_sequence_for`\<T...>를 사용합니다.

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: acb0eaa446bf21a014d8be8c4dbeaedf0f282a1a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b43db182d9274281020d7ce92cfa1b3efe724197
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648190"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326019"
 ---
 # <a name="unarynegate-class"></a>unary_negate 클래스
 
@@ -44,7 +44,7 @@ public:
 
 ## <a name="remarks"></a>설명
 
-템플릿 클래스는 단항 함수 개체 function object _ *Func*의 복사본을 저장합니다. 그리고 **!**\_를 반환하도록 해당 구성원 함수 `operator()`를 정의합니다. *Func(left).*
+단항 함수 개체의 복사본을 저장 하는 템플릿 클래스  *\_Func*합니다. 해당 멤버 함수 정의 `operator()` 반환 `!_Func(left)`합니다.
 
 `unary_negate`의 생성자는 직접 사용되는 경우가 거의 없습니다. 도우미 함수 [not1](../standard-library/functional-functions.md#not1)을 사용하면 **unary_negator** 어댑터 조건자를 보다 쉽게 선언하고 사용할 수 있습니다.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB provider templates [C++], about OLE DB provider templates
 - templates [C++], OLE DB
 ms.assetid: fccff85f-2af8-4500-82bd-6312d28a74b8
-ms.openlocfilehash: 99bf377ff10a2978a912666e787ed3a024d8654e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4b0523234e5e62b76762b07bb74b21a97c6713b
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485187"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556597"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB 공급자 템플릿(C++)
 
@@ -70,5 +70,5 @@ OLE DB 공급자 템플릿 OLE DB 버전 2.7 사양을 지원 합니다. OLE DB 
 ## <a name="see-also"></a>참고 항목
 
 [데이터 액세스](../data-access-in-cpp.md)<br/>
-[OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784)<br/>
-[OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms713643)<br/>
+[OLE DB SDK 설명서](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
+[OLE DB 프로그래머 참조](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)<br/>

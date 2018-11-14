@@ -1,27 +1,17 @@
 ---
-title: '연습: 프로젝트 빌드(C++) | Microsoft Docs'
-ms.custom: ''
+title: '연습: 프로젝트 빌드(C++)'
 ms.date: 09/14/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - building projects [C++]
 - projects [C++], building
 - project building [C++]
 ms.assetid: d459bc03-88ef-48d0-9f9a-82d17f0b6a4d
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 3071b779338150816cb1d52d16932ac0e3878538
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: c12cd50dd92e728c88945cd83029f7e5e62816da
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50079324"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524159"
 ---
 # <a name="walkthrough-building-a-project-c"></a>연습: 프로젝트 빌드(C++)
 
@@ -37,15 +27,15 @@ ms.locfileid: "50079324"
 
 1. Game.cpp에서 마지막 줄의 세미콜론을 삭제하여 다음 문과 같이 만듭니다.
 
-    `return 0`
+   `return 0`
 
 1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 
 1. **오류 목록** 창의 메시지에 프로젝트 빌드에 오류가 있는 것으로 표시되어 있습니다. 설명은 다음 오류 메시지와 같이 나타납니다.
 
-    `error C2143: syntax error: missing ';' before '}'`
+   `error C2143: syntax error: missing ';' before '}'`
 
-  이 오류에 대한 도움말 정보를 보려면 **오류 목록** 창에서 오류를 강조 표시한 후 **F1** 키를 선택합니다.
+   이 오류에 대한 도움말 정보를 보려면 **오류 목록** 창에서 오류를 강조 표시한 후 **F1** 키를 선택합니다.
 
 1. 구문 오류가 발생한 줄의 끝에 세미콜론을 다시 추가합니다.
 
@@ -53,7 +43,7 @@ ms.locfileid: "50079324"
 
 1. 메뉴 모음에서 **빌드** > **솔루션 빌드**를 선택합니다.
 
-  프로젝트가 성공적으로 컴파일되었다는 메시지가 **출력** 창에 표시됩니다.
+   프로젝트가 성공적으로 컴파일되었다는 메시지가 **출력** 창에 표시됩니다.
 
     ```Output
     1>------ Build started: Project: Game, Configuration: Debug Win32 ------

@@ -90,12 +90,12 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: eaecf466617669e6abf156370854b88d16fc4086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ceaa8fea4414bab4bbb035aa4525b415ca7ac0b8
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542082"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331440"
 ---
 # <a name="findfirst-findfirst32-findfirst32i64-findfirst64-findfirst64i32-findfirsti64-wfindfirst-wfindfirst32-wfindfirst32i64-wfindfirst64-wfindfirst64i32-wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
@@ -166,12 +166,12 @@ intptr_t _wfindfirst64i32(
 
 성공 하면 **_findfirst** 파일 또는 일치 하는 파일 그룹을 식별 하는 고유 검색 핸들을 반환 합니다 *filespec* 사양에 대 한 후속 호출에서 사용할 수 있는 [_ findnext](findnext-functions.md) 나 [_findclose](findclose.md)합니다. 이 고, 그렇지 **_findfirst** -1을 반환 하 고 설정 **errno** 에 다음 값 중 하나입니다.
 
-|errno 값|조건|
+| errno 값 | 조건 |
 |-|-|
-**EINVAL**|잘못 된 매개 변수: *filespec* 하거나 *fileinfo* 되었습니다 **NULL**합니다. 또는 운영 체제에서 예기치 않은 오류를 반환했습니다.
-**ENOENT**|일치시킬 수 없는 파일 사양입니다.
-**ENOMEM**|메모리가 부족합니다.
-**EINVAL**|지정 된 파일 이름 또는 잘못 된 파일 이름 지정 된 보다 큰 **MAX_PATH**합니다.
+| **EINVAL** | 잘못 된 매개 변수: *filespec* 하거나 *fileinfo* 되었습니다 **NULL**합니다. 또는 운영 체제에서 예기치 않은 오류를 반환했습니다. |
+| **ENOENT** | 일치시킬 수 없는 파일 사양입니다. |
+| **ENOMEM** | 메모리가 부족합니다. |
+| **EINVAL** | 지정 된 파일 이름 또는 잘못 된 파일 이름 지정 된 보다 큰 **MAX_PATH**합니다. |
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하십시오.
 

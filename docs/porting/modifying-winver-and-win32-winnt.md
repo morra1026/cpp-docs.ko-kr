@@ -1,26 +1,16 @@
 ---
-title: WINVER 및 _WIN32_WINNT 수정 | Microsoft 문서
-ms.custom: ''
+title: WINVER 및 _WIN32_WINNT 수정
 ms.date: 09/04/2017
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - WINVER in an upgraded Visual C++ project
 - _WIN32_WINNT in an upgraded Visual C++ project
 ms.assetid: 6a1f1d66-ae0e-48a7-81c3-524d8e8f3447
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: df0b01cebb9e88602a201e50cbfdc45daf44d615
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 3381b6657f78144e7804112135c437824d8555fe
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50070922"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51332247"
 ---
 # <a name="modifying-winver-and-win32winnt"></a>WINVER 및 _WIN32_WINNT 수정
 
@@ -67,4 +57,4 @@ Visual C++에서는 더 이상 Windows 95, Windows 98, Windows ME, Windows NT �
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++ 변경 기록](..\porting\visual-cpp-change-history-2003-2015.md)
+[Visual C++ 변경 기록](../porting/visual-cpp-change-history-2003-2015.md)

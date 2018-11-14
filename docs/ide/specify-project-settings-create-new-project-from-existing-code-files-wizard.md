@@ -1,27 +1,17 @@
 ---
-title: 프로젝트 설정 지정, 기존 코드 파일에서 새 프로젝트 만들기 마법사 | Microsoft Docs
-ms.custom: ''
+title: 기존 코드 파일에서 새 프로젝트 만들기 마법사, 프로젝트 설정 지정
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.appwiz.importwiz.appsettings
-dev_langs:
-- C++
 helpviewer_keywords:
 - Create New Project From Existing Code Files Wizard, project settings
 ms.assetid: 9b8860c9-d35f-4f18-9565-2934d3d7f569
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f86361bf947a5a6117c53ce2c92c40ef1abb7117
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: f46436295e16d527718e59f1c4c199643f9e35ed
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46387824"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50522345"
 ---
 # <a name="specify-project-settings-create-new-project-from-existing-code-files-wizard"></a>기존 코드 파일에서 새 프로젝트 만들기 마법사, 프로젝트 설정 지정
 

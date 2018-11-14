@@ -50,12 +50,12 @@ helpviewer_keywords:
 - omp_unset_lock OpenMP function
 - omp_unset_nest_lock OpenMP function
 ms.assetid: a55a2e5c-a260-44ee-bbd6-de7e2351b384
-ms.openlocfilehash: 36954115d817f3fef042f063a673976e8ce09c43
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0435d75b69ea870db50739933245925d6860cbf9
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489508"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333288"
 ---
 # <a name="openmp-functions"></a>OpenMP 함수
 
@@ -976,8 +976,8 @@ void omp_unset_lock(
 중첩 가능 잠금을 해제합니다.
 
 ```
-void omp_unset_nest_lock( 
-   omp_nest_lock_t *lock 
+void omp_unset_nest_lock(
+   omp_nest_lock_t *lock
 );
 ```
 

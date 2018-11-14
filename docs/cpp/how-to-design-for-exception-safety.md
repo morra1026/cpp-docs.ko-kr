@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: d15a1ffda81c41e48eaf4a12c95f83d06c5af900
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f384da3eee0c7bca80d8d6c61f8d8cf0cfaece92
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530270"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327007"
 ---
 # <a name="how-to-design-for-exception-safety"></a>방법: 예외 안전성을 위한 디자인
 
@@ -26,60 +26,60 @@ ms.locfileid: "50530270"
 클래스에 수동 리소스 관리를 캡슐화할 때는 각 리소스 관리만 수행하는 클래스를 사용합니다. 그렇지 않으면 누출이 발생할 수 있습니다. 사용 하 여 [스마트 포인터](../cpp/smart-pointers-modern-cpp.md) 가능한 경우 다음 예와에서 같이 합니다. 이 예제는 의도적으로 만들어졌으며, `shared_ptr`이 사용될 때의 차이점을 보여주기 위해 단순화한 것입니다.
 
 ```cpp
-// old-style new/delete version
-class NDResourceClass {
+// old-style new/delete version
+class NDResourceClass {
 private:
-    int*   m_p;
-    float* m_q;
+    int*   m_p;
+    float* m_q;
 public:
-    NDResourceClass() : m_p(0), m_q(0) {
-        m_p = new int;
-        m_q = new float;
-    }
+    NDResourceClass() : m_p(0), m_q(0) {
+        m_p = new int;
+        m_q = new float;
+    }
 
-    ~NDResourceClass() {
-        delete m_p;
-        delete m_q;
-    }
-    // Potential leak! When a constructor emits an exception, 
-    // the destructor will not be invoked.   
+    ~NDResourceClass() {
+        delete m_p;
+        delete m_q;
+    }
+    // Potential leak! When a constructor emits an exception,
+    // the destructor will not be invoked.
 };
 
-// shared_ptr version
-#include <memory>
+// shared_ptr version
+#include <memory>
 
-using namespace std;
+using namespace std;
 
-class SPResourceClass {
+class SPResourceClass {
 private:
-    shared_ptr<int> m_p;
-    shared_ptr<float> m_q;
+    shared_ptr<int> m_p;
+    shared_ptr<float> m_q;
 public:
-    SPResourceClass() : m_p(new int), m_q(new float) { }
-    // Implicitly defined dtor is OK for these members, 
-    // shared_ptr will clean up and avoid leaks regardless.
+    SPResourceClass() : m_p(new int), m_q(new float) { }
+    // Implicitly defined dtor is OK for these members,
+    // shared_ptr will clean up and avoid leaks regardless.
 };
 
-// A more powerful case for shared_ptr
+// A more powerful case for shared_ptr
 
-class Shape {
-    // ...
+class Shape {
+    // ...
 };
 
-class Circle : public Shape {
-    // ...
+class Circle : public Shape {
+    // ...
 };
 
-class Triangle : public Shape {
-    // ...
+class Triangle : public Shape {
+    // ...
 };
 
-class SPShapeResourceClass {
+class SPShapeResourceClass {
 private:
-    shared_ptr<Shape> m_p;
-    shared_ptr<Shape> m_q;
+    shared_ptr<Shape> m_p;
+    shared_ptr<Shape> m_q;
 public:
-    SPShapeResourceClass() : m_p(new Circle), m_q(new Triangle) { }
+    SPShapeResourceClass() : m_p(new Circle), m_q(new Triangle) { }
 };
 ```
 

@@ -58,12 +58,12 @@ helpviewer_keywords:
 - tutime64 function
 - tutime32 function
 ms.assetid: 8d482d40-19b9-4591-bfee-5d7f601d1a9e
-ms.openlocfilehash: f1e9633784ad78a2b46701e6600ad1ddb6b3318e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e52845a828e272ff3b8458b299c3757b8def748
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471095"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524640"
 ---
 # <a name="utime-utime32-utime64-wutime-wutime32-wutime64"></a>_utime, _utime32, _utime64, _wutime, _wutime32, _wutime64
 
@@ -112,10 +112,10 @@ int _wutime64(
 
 |errno 값|조건|
 |-|-|
-**EACCES**|경로가 디렉터리 또는 읽기 전용 파일을 지정함
-**EINVAL**|잘못 된 *번* 인수
-**EMFILE**|파일이 너무 많이 열려 있음(수정 시간을 변경하려면 파일을 열어야 함)
-**ENOENT**|경로 또는 파일 이름을 찾을 수 없음
+| **EACCES** | 경로가 디렉터리 또는 읽기 전용 파일을 지정함 |
+| **EINVAL** | 잘못 된 *번* 인수 |
+| **EMFILE** | 파일이 너무 많이 열려 있음(수정 시간을 변경하려면 파일을 열어야 함) |
+| **ENOENT** | 경로 또는 파일 이름을 찾을 수 없음 |
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
@@ -123,14 +123,14 @@ int _wutime64(
 
 ## <a name="remarks"></a>설명
 
-합니다 **_utime** 로 지정 된 파일의 수정 시간을 설정 하는 함수 *filename * * 합니다.* 시간을 변경하려면 프로세스에 파일에 대한 쓰기 권한이 있어야 합니다. Windows 운영 체제에서 액세스 시간과 수정 시간을 변경할 수는 **_utimbuf** 구조입니다. 하는 경우 *번* 되는 **NULL** 포인터 이면 수정 시간은 현재 현지 시간으로 설정 됩니다. 그렇지 않으면 *번* 형식의 구조체를 가리켜야 **_utimbuf**SYS\UTIME에 정의 된 합니다. 8.
+합니다 **_utime** 로 지정 된 파일의 수정 시간을 설정 하는 함수 *filename*합니다. 시간을 변경하려면 프로세스에 파일에 대한 쓰기 권한이 있어야 합니다. Windows 운영 체제에서 액세스 시간과 수정 시간을 변경할 수는 **_utimbuf** 구조입니다. 하는 경우 *번* 되는 **NULL** 포인터 이면 수정 시간은 현재 현지 시간으로 설정 됩니다. 그렇지 않으면 *번* 형식의 구조체를 가리켜야 **_utimbuf**SYS\UTIME에 정의 된 합니다. 8.
 
 합니다 **_utimbuf** 구조에서 사용 하는 파일 액세스 및 수정 시간을 저장 **_utime** 에서 파일 수정 날짜를 변경 합니다. 구조에 형식이 둘 다 다음 필드를 **time_t**:
 
-|필드||
-|-|-|
-**actime**|파일 액세스 시간
-**modtime**|파일 수정 시간
+| 필드 |   |
+|-------|---|
+| **actime** | 파일 액세스 시간 |
+| **modtime** | 파일 수정 시간 |
 
 특정 버전을 **_utimbuf** 구조 (**_utimebuf32** 하 고 **__utimbuf64**) 시간 형식의 32 비트 및 64 비트 버전을 사용 하 여 정의 됩니다. 이러한 구조체는 이 함수의 32비트 및 64비트별 버전에서 사용됩니다. **_utimbuf** 경우가 아니면 64 비트 시간 형식의 사용 하 여 기본적으로 자체 **_USE_32BIT_TIME_T** 정의 됩니다.
 

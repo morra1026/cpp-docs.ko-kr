@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE DB provider templates
 ms.assetid: 518358f0-bab1-4de9-bce9-4062cc87c11f
-ms.openlocfilehash: 973274209ae291ea645a82f4a182e81a917cdf00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b7a90081d342d29be391bdf73f43a82ef4c5fbb5
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460998"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556857"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB 공급자 템플릿 참조
 
@@ -52,7 +52,7 @@ OLE DB 공급자를 구현할 필요는 `HACCESSOR`, 배열의 태그는 `DBBIND
 페이지를 열고 단일 기본 테이블 또는 인덱스에서 모든 행이 포함 된 행 집합을 반환 합니다. 세션 개체에 대 한 필수 인터페이스입니다.
 
 [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md)<br/>
-OLE DB 구현 [IRowsetChange](/previous-versions/windows/desktop/ms715790) 행을 삭제 하 고 새 행을 삽입의 기존 행에 있는 열의 값으로 업데이트할 수 있도록 하는 인터페이스입니다.
+OLE DB 구현 [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) 행을 삭제 하 고 새 행을 삽입의 기존 행에 있는 열의 값으로 업데이트할 수 있도록 하는 인터페이스입니다.
 
 [IRowsetCreatorImpl](../../data/oledb/irowsetcreatorimpl-class.md)<br/>
 이 클래스에서 상속 [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) 재정의 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite)합니다. `IRowsetCreatorImpl` 동일한 기능을 수행 `IObjectWithSite` 또한 OLE DB 속성을 사용 하지만 `DBPROPCANSCROLLBACKWARDS` 고 `DBPROPCANFETCHBACKWARDS`입니다.
@@ -67,13 +67,13 @@ OLE DB 구현 [IRowsetChange](/previous-versions/windows/desktop/ms715790) 행�
 명령 클래스에 정의 된 지도 집합 하는 속성을 사용 하 여 행 집합 속성을 구현 합니다. 필수 행 집합 인터페이스입니다.
 
 [IRowsetLocateImpl](../../data/oledb/irowsetlocateimpl-class.md)<br/>
-OLE DB 구현 [IRowsetLocate](/previous-versions/windows/desktop/ms721190) 인터페이스 행 집합에서 임의의 행을 인출 합니다. 행 집합의 OLE DB 책갈피를 지원 하려면이 클래스에서 상속 하는 행 집합을 확인 합니다.
+OLE DB 구현 [IRowsetLocate](https://docs.microsoft.com/previous-versions/windows/desktop/ms721190(v=vs.85)) 인터페이스 행 집합에서 임의의 행을 인출 합니다. 행 집합의 OLE DB 책갈피를 지원 하려면이 클래스에서 상속 하는 행 집합을 확인 합니다.
 
 [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md)<br/>
-구현 브로드캐스트 수신기 연결 지점에 advise 할 함수 `IID_IRowsetNotify` 행 집합의 내용 변경 합니다. 알림을 처리 하는 소비자 구현 [IRowsetNotify](/previous-versions/windows/desktop/ms712959) 하 고 해당 연결 지점에 등록 합니다.
+구현 브로드캐스트 수신기 연결 지점에 advise 할 함수 `IID_IRowsetNotify` 행 집합의 내용 변경 합니다. 알림을 처리 하는 소비자 구현 [IRowsetNotify](https://docs.microsoft.com/previous-versions/windows/desktop/ms712959(v=vs.85)) 하 고 해당 연결 지점에 등록 합니다.
 
 [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md)<br/>
-OLE DB 구현 [IRowsetUpdate](/previous-versions/windows/desktop/ms714401) 인터페이스를 사용 하 여 변경 내용 전송 지연 하는 소비자를 사용 하도록 설정 [IRowsetChange](/previous-versions/windows/desktop/ms715790) 를 데이터 원본 및 전송 하기 전에 변경 내용을 취소 합니다.
+OLE DB 구현 [IRowsetUpdate](https://docs.microsoft.com/previous-versions/windows/desktop/ms714401(v=vs.85)) 인터페이스를 사용 하 여 변경 내용 전송 지연 하는 소비자를 사용 하도록 설정 [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) 를 데이터 원본 및 전송 하기 전에 변경 내용을 취소 합니다.
 
 ## <a name="command-classes"></a>명령 클래스
 
@@ -109,7 +109,7 @@ OLE DB 구현 [IRowsetUpdate](/previous-versions/windows/desktop/ms714401) 인�
 
 [IErrorRecordsImpl](../../data/oledb/ierrorrecordsimpl-class.md)
 
-OLE DB 구현 [IErrorRecords](/previous-versions/windows/desktop/ms718112) 인터페이스 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 합니다.
+OLE DB 구현 [IErrorRecords](https://docs.microsoft.com/previous-versions/windows/desktop/ms718112(v=vs.85)) 인터페이스 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - linker [C++], DEPENDENTLOADFLAG
 - DEPENDENTLOADFLAG linker option
 - /DEPENDENTLOADFLAG linker option
-ms.openlocfilehash: 80065bb4e67674c49761d0832395ae535bbfbf24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bdf2542d641f751f40757079eb576f2c97540dc
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604280"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326162"
 ---
 # <a name="dependentloadflag-set-default-dependent-load-flags"></a>/ DEPENDENTLOADFLAG (집합 기본 종속 로드가 플래그)
 
@@ -27,9 +27,8 @@ ms.locfileid: "50604280"
 
 ### <a name="arguments"></a>인수
 
-|||
-|-|-|
-*loadflags*|선택적 "C" 스타일 16 비트 정수 값 10 진수, 앞에 0을 사용 하 여 8 진수 또는 16 진수 숫자로 `0x`에 모두 적용 하는 종속 로드가 플래그를 지정 하는 [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) 호출 합니다. 기본값은 0입니다.
+*loadflags*<br/>
+선택적 "C" 스타일 16 비트 정수 값 10 진수, 앞에 0을 사용 하 여 8 진수 또는 16 진수 숫자로 `0x`에 모두 적용 하는 종속 로드가 플래그를 지정 하는 [LoadLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) 호출 합니다. 기본값은 0입니다.
 
 ## <a name="remarks"></a>설명
 

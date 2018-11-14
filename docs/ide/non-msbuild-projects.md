@@ -1,25 +1,15 @@
 ---
-title: Visual C++의 폴더 열기 프로젝트 | Microsoft Docs
-ms.custom: ''
+title: Visual C++의 폴더 열기 프로젝트
 ms.date: 06/01/2018
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Open Folder Projects in Visual C++
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 5c7473cd7d6f2f07d81011eca0826b8066513d23
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 6354cc656d501d1611219378f72831cc2fa94389
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50069258"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51524003"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual C++의 폴더 열기 프로젝트
 
@@ -43,7 +33,8 @@ Visual C++에서 모든 빌드 시스템을 사용할 수 있으며 Visual C++ I
 ## <a name="configuring-open-folder-projects"></a>폴더 열기 프로젝트 구성
 
 3개의 JSON 파일을 통해 폴더 열기 프로젝트를 사용자 지정할 수 있습니다.
-|||
+
+| | |
 |-|-|
 |CppProperties.json|검색에 대한 사용자 지정 구성 정보를 지정합니다. 필요한 경우 이 파일을 루트 프로젝트 폴더에 만듭니다.|
 |launch.vs.json|명령줄 인수를 지정합니다. **솔루션 탐색기**의 상황에 맞는 메뉴 항목 **디버그 및 시작 설정**을 통해 액세스합니다.|
@@ -68,6 +59,7 @@ IntelliSense 및 검색 동작은 #include 경로, 컴파일러 스위치 및 �
   ]
 }
 ```
+
 구성에는 다음 속성 중 하나가 있을 수 있습니다.
 
 |||
@@ -145,6 +137,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
   ]
 }
 ```
+
 또한 구성 내에 **environments** 속성을 정의하여 해당 구성에만 적용하고 동일한 이름의 전역 변수를 재정의할 수 있습니다. 다음 예제에서 x64 구성은 전역 값을 재정의하는 지역 **INCLUDE** 변수를 정의합니다.
 
 ```json
@@ -196,6 +189,7 @@ Linux 워크로드가 설치되면 원격으로 Linux 및 WSL을 대상으로 �
 #### <a name="macros"></a>매크로
 
 CppProperties.json 내에서 액세스할 수 있는 기본 제공 매크로는 다음과 같습니다.
+
 |||
 |-|-|
 |`${workspaceRoot}`| 작업 영역 폴더의 전체 경로|
@@ -268,11 +262,13 @@ CppProperties.json에서 임의 개수의 구성을 만들 수 있습니다. 각
   ]
 }
 ```
+
 tasks.vs.json이 저장되면 폴더의 .cpp 파일을 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **Echo filename(파일 이름 화면 표시)** 을 선택하여 [출력 창]에 표시된 파일 이름을 확인할 수 있습니다.
 
 #### <a name="appliesto"></a>appliesTo
 
 `appliesTo` 필드에 이름을 지정하여 모든 파일 또는 폴더에 대한 작업을 만들 수 있습니다(예: `"appliesTo" : "hello.cpp"`). 다음 파일 마스크를 값으로 사용할 수 있습니다.
+
 |||
 |-|-|
 |`"*"`| 작업 영역의 모든 파일 및 폴더에서 작업을 사용할 수 있음|
@@ -350,4 +346,3 @@ tasks.vs.json에서 사용자 지정 매크로를 정의하려면 작업 블록 
 ## <a name="see-also"></a>참고 항목
 
 [IDE 및 Visual C++ 개발 도구](ide-and-tools-for-visual-cpp-development.md)
-

@@ -10,16 +10,16 @@ helpviewer_keywords:
 - rowsets, event notifications
 - OLE DB providers, notifications
 ms.assetid: 305a1103-0c87-40c8-94bc-7fbbdd52ae32
-ms.openlocfilehash: 20572fa444f585d231bc5374bebac4dbb71166a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 491da4d1735a32eba4e6e5bd8bee6604da4aeb73
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647774"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556337"
 ---
 # <a name="receiving-notifications"></a>알림 수신
 
-OLE DB 이벤트가 발생할 때 알림을 수신 하기 위한 인터페이스를 제공 합니다. 에 설명 된 이러한 [OLE DB 개체 알림을](/previous-versions/windows/desktop/ms725406) 에 **OLE DB Programmer's Reference**합니다. 표준 COM 연결 지점 메커니즘을 사용 하는 이러한 이벤트를 설치 합니다. ATL 개체를 통해 이벤트를 검색 하려고 하는 예를 들어 `IRowsetNotify` 구현 합니다 `IRowsetNotify` 인터페이스를 추가 하 여 `IRowsetNotify` 파생 된 클래스 목록 및 COM_INTERFACE_ENTRY 매크로 통해 노출 합니다.
+OLE DB 이벤트가 발생할 때 알림을 수신 하기 위한 인터페이스를 제공 합니다. 에 설명 된 이러한 [OLE DB 개체 알림을](https://docs.microsoft.com/previous-versions/windows/desktop/ms725406(v=vs.85)) 에 **OLE DB Programmer's Reference**합니다. 표준 COM 연결 지점 메커니즘을 사용 하는 이러한 이벤트를 설치 합니다. ATL 개체를 통해 이벤트를 검색 하려고 하는 예를 들어 `IRowsetNotify` 구현 합니다 `IRowsetNotify` 인터페이스를 추가 하 여 `IRowsetNotify` 파생 된 클래스 목록 및 COM_INTERFACE_ENTRY 매크로 통해 노출 합니다.
 
 `IRowsetNotify` 에 여러 번 호출할 수 있는 세 가지 메서드가 있습니다. 이러한 메서드 중 하나에 응답 하려는 경우 사용할 수 있습니다 합니다 [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) 관심이 없는 메서드에 대 한 E_NOTIMPL을 반환 하는 클래스입니다.
 

@@ -1,27 +1,17 @@
 ---
-title: 클래스 추가 대화 상자 | Microsoft 문서
-ms.custom: ''
+title: 클래스 추가 대화 상자
 ms.date: 11/04/2016
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
 f1_keywords:
 - vc.addclass
-dev_langs:
-- C++
 helpviewer_keywords:
 - Add Class dialog box
 ms.assetid: 916259b8-8e5f-4267-bd10-313483beba67
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f1eb848ae20ba9a587bfdf14881e1a3df3bbeb31
-ms.sourcegitcommit: 799f9b976623a375203ad8b2ad5147bd6a2212f0
+ms.openlocfilehash: 405f88f7f77ea75584ec3cfd76af1ea9a0457ed6
+ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46420285"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50643198"
 ---
 # <a name="add-class-dialog-box"></a>클래스 추가 대화 상자
 

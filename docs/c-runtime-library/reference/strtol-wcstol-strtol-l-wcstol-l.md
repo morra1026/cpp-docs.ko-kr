@@ -37,12 +37,12 @@ helpviewer_keywords:
 - _strtol_l function
 - strtol function
 ms.assetid: 1787c96a-f283-4a83-9325-33cfc1c7e240
-ms.openlocfilehash: 5aa69a44a2ce8bde0ee16b02ecd9923f247c7e65
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73df5dd3ffcd4a9b2fca8b6b713b645ef94addb5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617466"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326721"
 ---
 # <a name="strtol-wcstol-strtoll-wcstoll"></a>strtol, wcstol, _strtol_l, _wcstol_l
 
@@ -108,7 +108,7 @@ long _wcstol_l(
 |**_tcstol**|**strtol**|**strtol**|**wcstol**|
 |**_tcstol_l**|**_strtol_l**|**_strtol_l**|**_wcstol_l**|
 
-현재 로캘의 **LC_NUMERIC** 범주 설정의 기 수 문자 인식이 결정 *strSource * *;* 자세한 내용은 참조 하십시오 [setlocale](setlocale-wsetlocale.md)합니다. 없는 함수는 **_l** 접미사는 현재 로캘을 사용 **_strtol_l** 하 고 **_wcstol_l** 없는 해당 함수와 동일 합니다 **_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하면 접미사가 있습니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+현재 로캘의 **LC_NUMERIC** 범주 설정의 기 수 문자 인식이 결정 *strSource*; 자세한 내용은 참조 하십시오 [setlocale](setlocale-wsetlocale.md)합니다. 없는 함수는 **_l** 접미사는 현재 로캘을 사용 **_strtol_l** 하 고 **_wcstol_l** 없는 해당 함수와 동일 합니다 **_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하면 접미사가 있습니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 하는 경우 *endptr* 아닙니다 **NULL**, 검색을 중지 한 문자에 대 한 포인터에서 가리키는 위치에 저장 됩니다 *endptr*합니다. 변환 작업 없이 수행할 수 있으면 (올바른 숫자를 찾을 수 없거나 잘못 된 자료를 지정 된), 값 *strSource* 가리키는 위치에 저장 된 *endptr*합니다.
 

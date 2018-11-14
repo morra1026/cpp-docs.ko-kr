@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C2059
 ms.assetid: 2be4eb39-3f37-4b32-8e8d-75835e07c78a
-ms.openlocfilehash: 915121b28adbc97032d5949726dc6fd5d3ab5091
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dec5f7a9eb91603b129cfb589352b6ee2579e553
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632481"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521793"
 ---
 # <a name="compiler-error-c2059"></a>컴파일러 오류 C2059
 
@@ -112,7 +112,6 @@ template <typename T> struct Allocator {
 template <typename X, typename AY> struct Container {
     typedef typename AY::Rebind<X>::Other AX; // error C2059
 };
-
 ```
 
 기본적으로 C++는 `AY::Rebind`이 템플릿이 아니라고 가정하기 때문에 다음 `<`는 보다 작음 기호로 해석됩니다.  꺾쇠 괄호로 올바르게 구문 분석될 수 있도록 `Rebind`이 템플릿임을 컴파일러에 명시적으로 알려야 합니다. 이 오류를 해결하려면 다음과 같이 종속 형식의 이름에서 `template` 키워드를 사용합니다.
@@ -127,5 +126,4 @@ template <typename T> struct Allocator {
 template <typename X, typename AY> struct Container {
     typedef typename AY::template Rebind<X>::Other AX; // correct
 };
-
 ```

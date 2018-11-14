@@ -26,23 +26,23 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: 39c4f441e7b18fd93510620f1052677cdd0e881e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61544658f2aef4b59b2b70baa310dcc09e2740fe
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580286"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556207"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
 
-에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541) 인터페이스입니다.
+에 대 한 구현을 제공 합니다 [IRowsetInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms724541(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
 ```cpp
 template <class T, class PropClass = T>
 class ATL_NO_VTABLE IRowsetInfoImpl :
-   public IRowsetInfo,  
+   public IRowsetInfo, 
    public CUtlProps<PropClass>
 ```
 
@@ -87,7 +87,7 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowsetinfo:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms719611(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="getreferencedrowset"></a> Irowsetinfoimpl:: Getreferencedrowset
 
@@ -103,7 +103,7 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다.
+참조 [IRowsetInfo::GetReferencedRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms721145(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다.
 
 ## <a name="getspecification"></a> Irowsetinfoimpl:: Getspecification
 
@@ -118,7 +118,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IRowsetInfo::GetSpecification](https://docs.microsoft.com/previous-versions/windows/desktop/ms716746(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 

@@ -1,25 +1,15 @@
 ---
-title: Visual Studio 2015와 Visual Studio 2017 간의 C++ 이진 호환성 | Microsoft Docs
-ms.custom: ''
+title: Visual Studio 2015와 Visual Studio 2017 간의 C++ 이진 호환성
 ms.date: 09/24/2018
-ms.technology:
-- cpp-language
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - binary compatibility, Visual C++
 ms.assetid: 591580f6-3181-4bbe-8ac3-f4fbaca949e6
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 6f6d81f5cdce8955194985f66863940b97e32d40
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: e526002bdca0eee122531f39c195aef3474cc61c
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50065527"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329828"
 ---
 # <a name="c-binary-compatibility-between-visual-studio-2015-and-visual-studio-2017"></a>Visual Studio 2015와 Visual Studio 2017 간의 C++ 이진 호환성
 
@@ -33,4 +23,4 @@ ms.locfileid: "50065527"
 
 ## <a name="see-also"></a>참고 항목
 
-[Visual C++ 변경 기록](..\porting\visual-cpp-change-history-2003-2015.md)
+[Visual C++ 변경 기록](../porting/visual-cpp-change-history-2003-2015.md)

@@ -12,19 +12,19 @@ helpviewer_keywords:
 - std::operator&amp; (bitset)
 - std::operator&gt;&gt; (bitset)
 - std::operator&lt;&lt; (bitset)
-ms.openlocfilehash: c51bc5ecf2bc3a74b25a06320f0ca8fd64749f5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1c4c1b6f6c023514a1d3ae46f6670247e4bf99d4
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531146"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331739"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; 연산자
 
 ||||
 |-|-|-|
 |[operator&amp;](#op_amp)|[operator&gt;&gt;](#op_gt_gt)|[operator&lt;&lt;](#op_lt_lt)|
-|[operator^](#op_xor)|[operator|](#op_or)|
+|[operator^](#op_xor)|[operator&#124;](#op_or)| |
 
 ## <a name="op_amp"></a>  operator&amp;
 
@@ -83,7 +83,6 @@ bitset 3: 0001
 비트 시퀀스의 텍스트 표현을 출력 스트림에 삽입합니다.
 
 ```
-
 template <class CharType, class Traits, size_t N>
 basic_ostream<CharType, Traits>& operator<<(
     basic_ostream<CharType, Traits>& ostr,
@@ -141,7 +140,6 @@ int main( )
 bitset에 대한 비트 문자의 문자열을 읽습니다.
 
 ```
-
 template <class CharType, class Traits, size_t Bits>
 basic_istream<CharType, Traits>& operator>> (
     basic_istream<CharType, Traits>&
@@ -275,7 +273,7 @@ bitset 2: 0011
 bitset 3: 0110
 ```
 
-## <a name="op_or"></a>  operator|
+## <a name="op_or"></a>  operator&#124;
 
 두 bitset 간에 비트 `OR`을 수행합니다.
 

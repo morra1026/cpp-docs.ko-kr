@@ -1,27 +1,15 @@
 ---
-title: Visual C++의 CMake 프로젝트 | Microsoft Docs
-ms.custom: ''
+title: Visual C++의 CMake 프로젝트
 ms.date: 10/18/2018
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 93cfa14e943e277b5255eeb486491c831eba0da3
-ms.sourcegitcommit: 8c2de32e96c84d0147af3cce1e89e4f28707ff12
+ms.openlocfilehash: a4f7b3931dc8ed8bd7206c7f30ce4b65633f08b6
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143733"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51518986"
 ---
 # <a name="cmake-projects-in-visual-c"></a>Visual C++의 CMake 프로젝트
 
@@ -50,8 +38,11 @@ Visual Studio 2017부터 **CMake용 Visual C++ 도구** 구성 요소에서 **�
 **파일 | 열기 | 폴더**를 차례로 사용하여 CMakeLists.txt 파일이 포함된 폴더를 열면 다음과 같이 수행됩니다.
 
 - Visual Studio에서 CMake 스크립트를 보고 편집하는 명령이 있는 **CMake** 메뉴 항목이 주 메뉴에 추가됩니다.
+
 - **솔루션 탐색기**에서 폴더 구조와 파일이 표시됩니다.
+
 - Visual Studio에서 CMake.exe를 실행하고 x86 디버그인 기본 *구성*에 대한 CMake 캐시를 생성합니다. CMake 명령줄이 CMake의 추가 출력과 함께 **출력 창**에 표시됩니다.  **Visual Studio 2017 버전 15.7 이상**: 자동 캐시 생성은 **도구 | 옵션 | CMake | 일반** 대화 상자에서 비활성화할 수 있습니다.
+
 - IntelliSense, 검색 정보, 리팩터링 등을 사용할 수 있도록 하기 위해 Visual Studio에서 백그라운드로 소스 파일을 인덱싱합니다. 작업하는 동안 Visual Studio에서 편집기와 디스크의 변경 내용을 모니터링하여 인덱스가 소스와 동기화되도록 유지합니다.
 
 여러 CMake 프로젝트가 포함된 폴더를 열 수 있습니다. Visual Studio에서는 작업 영역의 모든 "루트" CMakeLists.txt 파일을 검색하고 구성합니다. C++ IntelliSense 및 검색뿐만 아니라 CMake 작업(구성, 빌드, 디버그)도 작업 영역의 모든 CMake 프로젝트에서 사용할 수 있습니다.
@@ -89,7 +80,9 @@ Visual Studio 2017부터 **CMake용 Visual C++ 도구** 구성 요소에서 **�
 CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니다.
 
 1. **디버그** 드롭다운에서 대상을 선택하고, **F5** 키를 누르거나 **실행**(녹색 삼각형) 단추를 클릭합니다. Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
+
 1. CMakeLists.txt를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **빌드**를 선택합니다. 폴더 구조에 여러 대상이 있는 경우 모든 대상 또는 특정 대상만 빌드하도록 선택할 수 있습니다.
+
 1. 주 메뉴에서 **빌드 | 솔루션 빌드**(**F7** 또는 **Ctrl+Shift+B**)를 선택합니다. **일반** 도구 모음의 **시작 항목** 드롭다운에서 CMake 대상이 이미 선택되어 있는지 확인합니다.
 
 ![CMake 빌드 메뉴 명령](media/cmake-build-menu.png "CMake 빌드 명령 메뉴")
@@ -194,20 +187,25 @@ JSON IntelliSense를 사용하면 CMakeSettings.json 파일을 편집할 수 있
       "buildCommandArgs": "-v",
       "ctestCommandArgs": ""
     },
-
 ```
 
 1. **name**: C++ 구성 드롭다운에 표시되는 이름입니다. 이 속성 값은 매크로(`${name}`)로 사용되어 다른 속성 값을 지정할 수 있습니다. 예를 들어 CMakeSettings.json의 **buildRoot** 정의를 참조합니다.
 
 1. **generator**: **-G** 스위치에 매핑되고 사용할 생성기를 지정합니다. 이 속성도 매크로(`${generator}`)로 사용되어 다른 속성 값을 지정할 수 있도록 합니다. Visual Studio에서 현재 지원하는 CMake 생성기는 다음과 같습니다.
 
-    - "Ninja"
-    - "Visual Studio 14 2015"
-    - "Visual Studio 14 2015 ARM"
-    - "Visual Studio 14 2015 Win64"
-    - "Visual Studio 15 2017"
-    - "Visual Studio 15 2017 ARM"
-    - "Visual Studio 15 2017 Win64"
+   - "Ninja"
+
+   - "Visual Studio 14 2015"
+
+   - "Visual Studio 14 2015 ARM"
+
+   - "Visual Studio 14 2015 Win64"
+
+   - "Visual Studio 15 2017"
+
+   - "Visual Studio 15 2017 ARM"
+
+   - "Visual Studio 15 2017 Win64"
 
 Ninja는 유연성과 기능 대신 빠른 속도로 빌드하도록 설계되었으므로 기본값으로 설정됩니다. 그러나 일부 CMake 프로젝트는 Ninja를 사용하여 올바르게 빌드하지 못할 수도 있습니다. 이 경우 CMake에서 Visual Studio 프로젝트를 대신 생성하도록 지시할 수 있습니다.
 
@@ -244,11 +242,17 @@ CMakeSettings.json은 위에서 언급한 속성 중 하나에서 환경 변수�
 또한 이 파일에 기본 제공된 매크로에 액세스할 수 있습니다.
 
 - `${workspaceRoot}` - 작업 영역 폴더의 전체 경로를 제공합니다.
+
 - `${workspaceHash}` - 작업 영역 위치의 해시입니다. 현재 작업 영역에 대한 고유 식별자를 만드는 데 유용합니다(예: 폴더 경로에서 사용).
+
 - `${projectFile}` - 루트 CMakeLists.txt 파일의 전체 경로
+
 - `${projectDir}` - 루트 CMakeLists.txt 파일의 폴더에 대한 전체 경로
+
 - `${thisFile}` - CMakeSettings.json 파일의 전체 경로
+
 - `${name}` - 구성의 이름
+
 - `${generator}` - 이 구성에 사용된 CMake 생성기의 이름
 
 ### <a name="ninja-command-line-arguments"></a>Ninja 명령줄 인수
@@ -405,9 +409,11 @@ CMakeSettings.json 또는 CMakeLists.txt 파일을 크게 변경하면 Visual St
 ![CMake 단일 파일 컴파일](media/cmake-single-file-compile.png)
 
 ## <a name="run-cmake-from-the-command-line"></a>명령줄에서 CMake 실행
+
 Visual Studio 설치 관리자에서 CMake를 설치한 경우 다음 단계에 따라 명령줄에서 이를 실행할 수 있습니다.
 
 1. 해당하는 vsdevcmd.bat(x86/x64)를 실행합니다. 자세한 내용은 [명령줄에서 빌드](../build/building-on-the-command-line.md)를 참조하세요.
-1. 출력 폴더로 전환합니다.
-1. CMake를 실행하여 앱을 빌드/구성합니다.
 
+1. 출력 폴더로 전환합니다.
+
+1. CMake를 실행하여 앱을 빌드/구성합니다.

@@ -12,12 +12,12 @@ f1_keywords:
 - CONCRT/concurrency::join_type
 - CONCRT/concurrency::message_status Enumeration
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-ms.openlocfilehash: 97d2e9fd8e64475d9194bb8b2ab12fdee315e176
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 342655e290167315b7f10caba979804461e10658
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677346"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521078"
 ---
 # <a name="concurrency-namespace-enums"></a>concurrency 네임 스페이스 열거형
 
@@ -164,6 +164,7 @@ enum DynamicProgressFeedbackType;
 |----------|-----------------|
 |`ProgressFeedbackDisabled`|스케줄러에서 진행률 정보를 수집 하지 않습니다. 리 밸 러 싱 기본 하드웨어 스레드의 구독 수준에만 기반 수행 됩니다. 구독 수준에 대 한 자세한 내용은 참조 하세요. [iexecutionresource:: Currentsubscriptionlevel](IExecutionResource-structure.md)합니다.<br /><br /> 이 값은 런타임에서 사용 하 여 예약 되어 있습니다.|
 |`ProgressFeedbackEnabled`|스케줄러가는 진행률 정보를 수집 하 고 리소스 관리자에 게 전달 합니다. 리소스 관리자는 기본 하드웨어 스레드의 구독 수준 외에도 스케줄러를 대신 하 여 리소스 균형을 다시 조정이 통계 정보를 사용 합니다. 구독 수준에 대 한 자세한 내용은 참조 하세요. [iexecutionresource:: Currentsubscriptionlevel](IExecutionResource-structure.md)합니다.|
+
 ##  <a name="join_type"></a>  join_type 열거형
 
 `join` 메시징 블록의 형식입니다.

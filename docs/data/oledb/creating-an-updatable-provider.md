@@ -6,12 +6,12 @@ helpviewer_keywords:
 - notifications, support in providers
 - OLE DB providers, creating
 ms.assetid: bdfd5c9f-1c6f-4098-822c-dd650e70ab82
-ms.openlocfilehash: 39e0fffa10af560537a932d503946ec2469bef5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04db02bc8ad4db0c669e07a0bcf1b60ffa22e8ad
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570588"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51521403"
 ---
 # <a name="creating-an-updatable-provider"></a>업데이트 가능 공급자 만들기
 
@@ -40,7 +40,7 @@ ms.locfileid: "50570588"
 
 1. 행 집합 클래스에서 상속 `IRowsetChangeImpl` 또는 `IRowsetUpdateImpl`합니다. 이러한 클래스는 데이터 저장소 변경에 대 한 적절 한 인터페이스를 제공 합니다.
 
-     **IRowsetChange 추가**
+   **IRowsetChange 추가**
 
    추가 `IRowsetChangeImpl` 이 형식을 사용 하 여 사용자가 상속 체인을 합니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "50570588"
 
    추가할 수도 `COM_INTERFACE_ENTRY(IRowsetChange)` 에 `BEGIN_COM_MAP` 행 집합 클래스에서 섹션입니다.
 
-     **IRowsetUpdate 추가**
+   **IRowsetUpdate 추가**
 
    추가 `IRowsetUpdate` 이 형식을 사용 하 여 사용자가 상속 체인을 합니다.
 
@@ -58,22 +58,27 @@ ms.locfileid: "50570588"
     IRowsetUpdateImpl< rowset-name, storage>
     ```
 
-    > [!NOTE]
-    > 제거 해야 합니다 `IRowsetChangeImpl` 상속 체인에 줄. 앞에서 언급 한 지시문이 한 가지 예외에 대 한 코드를 포함 해야 `IRowsetChangeImpl`합니다.
+   > [!NOTE]
+   > 제거 해야 합니다 `IRowsetChangeImpl` 상속 체인에 줄. 앞에서 언급 한 지시문이 한 가지 예외에 대 한 코드를 포함 해야 `IRowsetChangeImpl`합니다.
 
 1. 다음을 고 COM 맵에 추가 합니다 (`BEGIN_COM_MAP ... END_COM_MAP`):
 
-    |구현 하는 경우|COM 맵에 추가|
-    |----------------------|--------------------|
-    |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|
-    |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)COM_INTERFACE_ENTRY(IRowsetUpdate)`|
+   |  구현 하는 경우   |           COM 맵에 추가             |
+   |---------------------|--------------------------------------|
+   | `IRowsetChangeImpl` | `COM_INTERFACE_ENTRY(IRowsetChange)` |
+   | `IRowsetUpdateImpl` | `COM_INTERFACE_ENTRY(IRowsetUpdate)` |
+
+   | 구현 하는 경우 | 속성 집합 구조에 추가 |
+   |----------------------|-----------------------------|
+   | `IRowsetChangeImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)` |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. 명령에 다음 속성 집합 맵에 추가 합니다 (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):
 
-    |구현 하는 경우|속성 집합 구조에 추가|
-    |----------------------|-----------------------------|
-    |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|
-    |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|
+   |  구현 하는 경우   |                                             속성 집합 구조에 추가                                              |
+   |---------------------|------------------------------------------------------------------------------------------------------------------|
+   | `IRowsetChangeImpl` |                            `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`                             |
+   | `IRowsetUpdateImpl` | `PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)` |
 
 1. 사용자 속성 집합 구조의 포함 해야 다음 설정 중 모든 아래 나타나는:
 
@@ -97,41 +102,41 @@ ms.locfileid: "50570588"
 
    속성 Id 및 값을 Atldb.h에 검색 하 여 이러한 매크로 호출에 사용 되는 값을 찾을 수 있습니다 (Atldb.h 온라인 설명서와 다른 경우 Atldb.h 대체 설명서).
 
-    > [!NOTE]
-    > 많은 합니다 `VARIANT_FALSE` 및 `VARIANT_TRUE` 설정은 OLE DB 템플릿에서 필요; OLE DB 사양은 읽기/쓰기 수 하지만 OLE DB 템플릿 하나의 값을 하나만 지원할 수 있습니다.
+   > [!NOTE]
+   > 많은 합니다 `VARIANT_FALSE` 및 `VARIANT_TRUE` 설정은 OLE DB 템플릿에서 필요; OLE DB 사양은 읽기/쓰기 수 하지만 OLE DB 템플릿 하나의 값을 하나만 지원할 수 있습니다.
 
-     **IRowsetChangeImpl를 구현 하는 경우**
+   **IRowsetChangeImpl를 구현 하는 경우**
 
    구현 하는 경우 `IRowsetChangeImpl`를 공급자에는 다음 속성을 설정 해야 합니다. 이러한 속성을 통해 인터페이스를 요청 사용 주로 `ICommandProperties::SetProperties`합니다.
 
-    - `DBPROP_IRowsetChange`: 설정 집합이 자동으로 `DBPROP_IRowsetChange`입니다.
+   - `DBPROP_IRowsetChange`: 설정 집합이 자동으로 `DBPROP_IRowsetChange`입니다.
 
-    - `DBPROP_UPDATABILITY`지원 되는 메서드를 지정 하는 비트 마스크: `IRowsetChange`: `SetData`하십시오 `DeleteRows`, 또는 `InsertRow`합니다.
+   - `DBPROP_UPDATABILITY`지원 되는 메서드를 지정 하는 비트 마스크: `IRowsetChange`: `SetData`하십시오 `DeleteRows`, 또는 `InsertRow`합니다.
 
-    - `DBPROP_CHANGEINSERTEDROWS`: 소비자를 호출할 수 있습니다 `IRowsetChange::DeleteRows` 또는 `SetData` 새로 삽입된 된 행에 대 한 합니다.
+   - `DBPROP_CHANGEINSERTEDROWS`: 소비자를 호출할 수 있습니다 `IRowsetChange::DeleteRows` 또는 `SetData` 새로 삽입된 된 행에 대 한 합니다.
 
-    - `DBPROP_IMMOBILEROWS`: 행 집합 삽입 되거나 업데이트 된 행 순서를 바꾸지 않습니다.
+   - `DBPROP_IMMOBILEROWS`: 행 집합 삽입 되거나 업데이트 된 행 순서를 바꾸지 않습니다.
 
-     **IRowsetUpdateImpl를 구현 하는 경우**
+   **IRowsetUpdateImpl를 구현 하는 경우**
 
    구현 하는 경우 `IRowsetUpdateImpl`를 설정 해야 다음 속성을 공급자 뿐만 아니라 모든 속성을 설정 하 `IRowsetChangeImpl` 위에 나열 된:
 
-    - `DBPROP_IRowsetUpdate`.
+   - `DBPROP_IRowsetUpdate`.
 
-    - `DBPROP_OWNINSERT`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
+   - `DBPROP_OWNINSERT`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
 
-    - `DBPROP_OWNUPDATEDELETE`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
+   - `DBPROP_OWNUPDATEDELETE`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
 
-    - `DBPROP_OTHERINSERT`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
+   - `DBPROP_OTHERINSERT`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
 
-    - `DBPROP_OTHERUPDATEDELETE`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
+   - `DBPROP_OTHERUPDATEDELETE`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
 
-    - `DBPROP_REMOVEDELETED`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
+   - `DBPROP_REMOVEDELETED`: READ_ONLY 및 VARIANT_TRUE 여야 합니다.
 
-    - `DBPROP_MAXPENDINGROWS`.
+   - `DBPROP_MAXPENDINGROWS`.
 
-        > [!NOTE]
-        > 알림을 지 원하는 경우 해야 할 수 있습니다 다른 속성 에서도; 섹션을 참조 `IRowsetNotifyCP` 이 목록에 대 한 합니다.
+   > [!NOTE]
+   > 알림을 지 원하는 경우 해야 할 수 있습니다 다른 속성 에서도; 섹션을 참조 `IRowsetNotifyCP` 이 목록에 대 한 합니다.
 
 ##  <a name="vchowwritingtothedatasource"></a> 데이터 원본에 쓰기
 

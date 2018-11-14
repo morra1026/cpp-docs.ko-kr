@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - collection classes
 ms.assetid: eff95de6-78ef-4212-9d7d-1dacbdd4cc58
-ms.openlocfilehash: 21c77f71fb576177a6e61ef38d1ef0459f14ab05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a67afdf00f0a524a94b50643d6541251feca2c2c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625175"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520259"
 ---
 # <a name="collection-classes"></a>컬렉션 클래스
 
@@ -32,9 +32,9 @@ ms.locfileid: "50625175"
 
 - [CComQIPtrElementTraits](../atl/reference/ccomqiptrelementtraits-class.md) 이 클래스는 메서드를 정적 함수를 제공 하 고 인터페이스 포인터 typedef COM의 컬렉션을 만들 때 유용 합니다.
 
-- [CComSafeArray](../atl/reference/ccomsafearray-class.md) 이 클래스에 대 한 래퍼인 합니다 [SAFEARRAY 데이터 형식](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) 구조입니다.
+- [CComSafeArray](../atl/reference/ccomsafearray-class.md) 이 클래스에 대 한 래퍼인 합니다 [SAFEARRAY 데이터 형식](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray) 구조입니다.
 
-- [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) 이 클래스는에 대 한 래퍼를 [SAFEARRAYBOUND](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) 구조입니다.
+- [CComSafeArrayBound](../atl/reference/ccomsafearraybound-class.md) 이 클래스는에 대 한 래퍼를 [SAFEARRAYBOUND](/windows/desktop/api/oaidl/ns-oaidl-tagsafearraybound) 구조입니다.
 
 - [CComUnkArray](../atl/reference/ccomunkarray-class.md) 이 클래스는 저장 **IUnknown** 포인터를 매개 변수로 사용할 수는 [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) 템플릿 클래스입니다.
 

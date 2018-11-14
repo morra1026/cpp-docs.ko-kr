@@ -16,16 +16,16 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: b1411f3df97aeaf66abcccc5be78c734e3a71f19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6736eac040b2186ddb1b1dc1c5c3a5b6b957d20
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603491"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556155"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl 클래스
 
-구현을 제공 합니다 [ICommandProperties](/previous-versions/windows/desktop/ms723044) 인터페이스입니다.
+구현을 제공 합니다 [ICommandProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723044(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -67,15 +67,15 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
-   const DBPROPIDSET rgPropertyIDSets[], 
-   ULONG * pcPropertySets, 
+STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
+   const DBPROPIDSET rgPropertyIDSets[],
+   ULONG * pcPropertySets,
    DBPROPSET ** prgPropertySets);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandproperties:: Getproperties](/previous-versions/windows/desktop/ms723119) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandproperties:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723119(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -88,13 +88,13 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets, 
 ### <a name="syntax"></a>구문
 
 ```cpp
-STDMETHOD(SetProperties)(ULONG cPropertySets, 
+STDMETHOD(SetProperties)(ULONG cPropertySets,
    DBPROPSET rgPropertySets[]);
 ```
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandproperties:: Setproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms711497(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,31 +1,25 @@
 ---
-title: Visual Studio의 Visual C++ | Microsoft Docs
+title: Visual Studio의 Visual C++
 description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
-ms.custom: ''
 ms.date: 09/26/2018
 ms.technology:
 - cpp-ide
-ms.topic: conceptual
-dev_langs:
-- C++
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 8cb811ccd3291caa9b3da095310c74416fbd5799
-ms.sourcegitcommit: a9dcbcc85b4c28eed280d8e451c494a00d8c4c25
+ms.openlocfilehash: 0b5f263bb6716d4f66673257115d37cd17a59051
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50067945"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51327189"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio의 Visual C++
 
 > [!NOTE]
 > 이 개발자 설명서는 Visual Studio 2015 및 Visual Studio 2017에 적용됩니다.
-
+>
 > 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.
 
 

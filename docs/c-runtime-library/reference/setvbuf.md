@@ -23,12 +23,12 @@ helpviewer_keywords:
 - stream buffering
 - setvbuf function
 ms.assetid: 6aa5aa37-3408-4fa0-992f-87f9f9c4baea
-ms.openlocfilehash: b2a5cfc08da7812e32ad84940ab4c78288017720
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4336c6cc478a035fcc0b9b059a7161d58bc4442
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445775"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328099"
 ---
 # <a name="setvbuf"></a>setvbuf
 
@@ -75,9 +75,9 @@ int setvbuf(
 
 |*모드* 값|의미|
 |-|-|
-**_IOFBF**|전체 버퍼링 즉, *버퍼* 버퍼로 사용 됩니다 하 고 *크기* 버퍼의 크기로 사용 됩니다. 경우 *버퍼* 은 **NULL**를 자동으로 할당 된 버퍼 *크기* 바이트 길이의 사용 됩니다.
-**_IOLBF**|이 값을 사용하는 경우 라인 버퍼링이 제공되는 시스템도 있습니다. 그러나 win32의 동작은 동일 **_IOFBF** -전체 버퍼링 합니다.
-**_IONBF**|버퍼가 사용에 관계 없이 없거나 *버퍼* 하거나 *크기*합니다.
+| **_IOFBF** | 전체 버퍼링 즉, *버퍼* 버퍼로 사용 됩니다 하 고 *크기* 버퍼의 크기로 사용 됩니다. 경우 *버퍼* 은 **NULL**를 자동으로 할당 된 버퍼 *크기* 바이트 길이의 사용 됩니다. |
+| **_IOLBF** | 이 값을 사용하는 경우 라인 버퍼링이 제공되는 시스템도 있습니다. 그러나 win32의 동작은 동일 **_IOFBF** -전체 버퍼링 합니다. |
+| **_IONBF** | 버퍼가 사용에 관계 없이 없거나 *버퍼* 하거나 *크기*합니다. |
 
 ## <a name="requirements"></a>요구 사항
 

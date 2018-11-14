@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CStreamRowset class, constructor
 - Close method
 ms.assetid: a106e953-a38a-464e-8ea5-28963d9e4811
-ms.openlocfilehash: d15807c7204841a436180d4da96357eba89dbb5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69844a9048601060a425f7bcf52bc2cf30381227
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488181"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556477"
 ---
 # <a name="cstreamrowset-class"></a>CStreamRowset 클래스
 
@@ -61,7 +61,7 @@ class CStreamRowset
 |||
 |-|-|
 |[CStreamRowset](#cstreamrowset)|생성자입니다. 인스턴스화하고 초기화는 `CStreamRowset` 개체입니다.|
-|[닫기](#close)|릴리스를 [ISequentialStream](/previous-versions/windows/desktop/ms718035) 클래스에 대 한 인터페이스 포인터입니다.|
+|[닫기](#close)|릴리스를 [ISequentialStream](https://docs.microsoft.com/previous-versions/windows/desktop/ms718035(v=vs.85)) 클래스에 대 한 인터페이스 포인터입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -94,7 +94,7 @@ CStreamRowset();
 
 ## <a name="close"></a> Cstreamrowset:: Close
 
-릴리스를 [ISequentialStream](/previous-versions/windows/desktop/ms718035) 클래스에 대 한 인터페이스 포인터입니다.
+릴리스를 [ISequentialStream](https://docs.microsoft.com/previous-versions/windows/desktop/ms718035(v=vs.85)) 클래스에 대 한 인터페이스 포인터입니다.
 
 ### <a name="syntax"></a>구문
 

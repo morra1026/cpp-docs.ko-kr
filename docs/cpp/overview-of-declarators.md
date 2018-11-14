@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - declarators, about declarators
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
-ms.openlocfilehash: 8279dcb7f3cbc137320e46dded48d140d1429f8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 66f1068fd3f69d3e4546f159ec22b34024bd2057
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583355"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51326760"
 ---
 # <a name="overview-of-declarators"></a>선언자 개요
 
@@ -155,11 +155,11 @@ int a, *b, c[5], **d, &e=a;
 
 - `declarator`는 다음 중 하나로 정의됩니다.
 
-  - 식별자 
-  - 정규화 된 이름 
+  - 식별자
+  - 정규화 된 이름
   - 선언 자 (인수 목록) [cv-qualfiers] [예외-spec]
   - 선언 자 [[상수-식]]
-  - 포인터 연산자 선언 자 
+  - 포인터 연산자 선언 자
   - (선언)
 
 - 및 *포인터 연산자* 중 하나입니다.

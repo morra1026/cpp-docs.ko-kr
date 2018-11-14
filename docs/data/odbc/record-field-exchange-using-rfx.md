@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - RFX (ODBC), implementing
 ms.assetid: ada8f043-37e6-4d41-9db3-92c997a61957
-ms.openlocfilehash: e1ecb43226c9e21f3b13c2d5b7c2a0f93b72f3cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d8ba1e66c1ffc46429b5c0e987be833aef2e72f
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469552"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51328536"
 ---
 # <a name="record-field-exchange-using-rfx"></a>레코드 필드 교환: RFX 사용
 
@@ -30,10 +30,13 @@ ms.locfileid: "50469552"
 
 |사용자|프레임워크|
 |---------|-------------------|
-
-| 마법사를 사용 하 여 레코드 집합 클래스를 선언 합니다. 필드 데이터 멤버의 이름과 데이터 형식을 지정 합니다. | 마법사에서 파생 되는 `CRecordset` 클래스 및 쓰기를 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 를 재정의 각 필드 데이터 멤버에 대 한 호출을 함수는 RFX를 포함 하 여. | | ( 선택 사항) 매개 변수 데이터 멤버는 클래스를 통해 필요한를 수동으로 추가 합니다. RFX 함수 호출에 수동으로 추가 `DoFieldExchange` 각 매개 변수 데이터 멤버에 대 한 호출을 추가 [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) 매개 변수 그룹에 대 한 매개 변수에서의 총 수를 지정 하 고 [m_nParams ](../../mfc/reference/crecordset-class.md#m_nparams). 참조 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md). | | | ( 선택 사항) 수동으로 필드 데이터 멤버에 추가 열을 바인딩합니다. 수동으로 늘리려면 [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)합니다. 참조 [레코드 집합: 데이터 열 (ODBC) 동적 바인딩](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md). | |
-
-| 레코드 집합 클래스의 개체를 생성 합니다. 개체를 사용 하기 전에 값을 설정 매개 변수의 데이터 멤버가 있는 경우. | 효율성을 높이기 위해 프레임 워크를 워크가 미리 ODBC를 사용 하 여 매개 변수를 바인딩합니다. 매개 변수 값을 전달 하는 경우 프레임 워크 데이터 원본에 전달 합니다. 정렬 및/또는 필터 문자열을 변경 하지 않은 재쿼리에 대 한 매개 변수 값만 전송 됩니다. | | 사용 하 여 레코드 집합 개체를 엽니다 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open). | 레코드 집합의 쿼리를 실행, 호출 및 레코드 집합의 필드 데이터 멤버 열을 바인딩합니다 `DoFieldExchange` 첫 번째 선택 된 레코드 및 레코드 집합의 필드 데이터 멤버 간에 데이터를 교환 합니다. | | 사용 하 여 레코드 집합 스크롤 [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) 또는 메뉴 또는 도구 모음 명령입니다. | 호출 `DoFieldExchange` 새 현재 레코드에서 필드 데이터 멤버에 데이터를 전송 합니다. | | 추가, 업데이트 및 레코드를 삭제 합니다. | 호출 `DoFieldExchange` 데이터 원본에 데이터를 전송 합니다. |
+|마법사를 사용 하 여 레코드 집합 클래스를 선언 합니다. 필드 데이터 멤버의 이름과 데이터 형식을 지정 합니다.|마법사에서 파생 되는 `CRecordset` 클래스 및 쓰기를 [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) 를 재정의 각 필드 데이터 멤버에 대 한 호출을 함수는 RFX를 포함 하 여 합니다.|
+|(선택 사항) 클래스에 필요한 매개 변수 데이터 멤버를 수동으로 추가 합니다. RFX 함수 호출에 수동으로 추가 `DoFieldExchange` 각 매개 변수 데이터 멤버에 대 한 호출을 추가 [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype) 매개 변수 그룹에 대 한 매개 변수에서의 총 수를 지정 하 고 [m_nParams ](../../mfc/reference/crecordset-class.md#m_nparams). 참조 [레코드 집합: 레코드 집합 (ODBC)를 매개 변수화](../../data/odbc/recordset-parameterizing-a-recordset-odbc.md)합니다.||
+|(선택 사항) 필드 데이터 멤버에 수동으로 추가 열을 바인딩하십시오. 수동으로 늘리려면 [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields)합니다. 참조 [레코드 집합: 데이터 열 (ODBC) 동적 바인딩](../../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)합니다.||
+|레코드 집합 클래스의 개체를 생성 합니다. 개체를 사용 하기 전에 값을 설정할 매개 변수의 데이터 멤버 있는 경우.|효율성을 높이기 위해 프레임 워크를 워크가 미리 ODBC를 사용 하 여 매개 변수를 바인딩합니다. 매개 변수 값을 전달 하는 경우 프레임 워크 데이터 원본에 전달 합니다. 정렬 및/또는 필터 문자열을 변경 하지 않은 재쿼리에 대 한 매개 변수 값만 전송 됩니다.|
+|사용 하 여 레코드 집합 개체를 엽니다 [crecordset:: Open](../../mfc/reference/crecordset-class.md#open)합니다.|레코드 집합의 쿼리를 실행, 호출 및 레코드 집합의 필드 데이터 멤버 열을 바인딩합니다 `DoFieldExchange` 첫 번째 선택 된 레코드 및 레코드 집합의 필드 데이터 멤버 간에 데이터를 교환 합니다.|
+|사용 하 여 레코드 집합 스크롤 [CRecordset::Move](../../mfc/reference/crecordset-class.md#move) 또는 메뉴 또는 도구 모음 명령입니다.|호출 `DoFieldExchange` 새 현재 레코드에서 필드 데이터 멤버에 데이터를 전송 합니다.|
+|추가, 업데이트 및 레코드를 삭제 합니다.|호출 `DoFieldExchange` 데이터 원본에 데이터를 전송 합니다.|
 
 ## <a name="see-also"></a>참고 항목
 

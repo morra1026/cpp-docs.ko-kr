@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, code_seg
 - code_seg pragma
 ms.assetid: bf4faac1-a511-46a6-8d9e-456851d97d56
-ms.openlocfilehash: 794280bc3b439a4c833483de51ffad91ebd6fc9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80edcb709073021ccf024aaf14c9a914bd8d8939
+ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655951"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597705"
 ---
 # <a name="codeseg"></a>code_seg
 함수가 .obj 파일에 저장되는 텍스트 세그먼트를 지정합니다.
@@ -24,7 +24,7 @@ ms.locfileid: "50655951"
 #pragma code_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )
 ```
 
-### <a name="paramters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
 **push**<br/>
 (선택 사항) 내부 컴파일러 스택의 레코드를 배치합니다. A **푸시** 있을 수 있습니다는 *식별자* 하 고 *세그먼트 이름이*합니다.

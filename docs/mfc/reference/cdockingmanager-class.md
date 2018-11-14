@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: 6a920c92a0a3b3948ad89e31cfaf317f54ad6724
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1cc4a4a0d6841523aaafcc1865173ba5402948c
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438043"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51519986"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager 클래스
 
@@ -280,13 +280,13 @@ class CDockingManager : public CObject
 
 - [CDockingManager 클래스](../../mfc/reference/cdockingmanager-class.md) 이러한 도킹 모드를 지원 합니다.
 
-    - `AFX_DOCK_TYPE::DT_IMMEDIATE`
+  - `AFX_DOCK_TYPE::DT_IMMEDIATE`
 
-    - `AFX_DOCK_TYPE::DT_STANDARD`
+  - `AFX_DOCK_TYPE::DT_STANDARD`
 
-    - `AFX_DOCK_TYPE::DT_SMART`
+  - `AFX_DOCK_TYPE::DT_SMART`
 
-   이러한 도킹 모드가 정의한 [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) 를 호출 하 여 설정 됩니다 [CDockingManager::SetDockingMode](#setdockingmode)합니다.
+  이러한 도킹 모드가 정의한 [CDockingManager::m_dockModeGlobal](#m_dockmodeglobal) 를 호출 하 여 설정 됩니다 [CDockingManager::SetDockingMode](#setdockingmode)합니다.
 
 - 비 부동, 크기 조정이 불가능 창을 만들려는 경우 호출 된 [CDockingManager::AddPane](#addpane) 메서드. 이 메서드는 창의 레이아웃을 담당 하 고 도킹 관리자를 사용 하 여 창에 등록 합니다.
 

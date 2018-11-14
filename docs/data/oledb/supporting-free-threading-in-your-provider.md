@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE DB providers, multithreaded
 - threading [C++], providers
 ms.assetid: a91270dc-cdf9-4855-88e7-88a54be7cbe8
-ms.openlocfilehash: 653736b52c116f1c72856bf0c12e9deff05e0cfb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 14acaa6ad96f74b2a3f88ca366a43caa9199a1d8
+ms.sourcegitcommit: 943c792fdabf01c98c31465f23949a829eab9aad
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676202"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265037"
 ---
 # <a name="supporting-free-threading-in-your-provider"></a>공급자에서 자유 스레딩 지원
 
@@ -39,7 +39,7 @@ HRESULT MyObject::MyMethod(void)
 
 임계 섹션을 보호 하는 방법에 대 한 자세한 내용은 `Lock` 및 `Unlock`를 참조 하세요 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
-메서드를 재정의 하는 확인 해야 합니다 (같은 `Execute`)는 스레드로부터 안전 합니다.
+메서드를 재정의 하는 확인 (같은 `Execute`)는 스레드로부터 안전 합니다.
 
 ## <a name="see-also"></a>참고 항목
 

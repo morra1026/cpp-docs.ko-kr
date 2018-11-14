@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 4d69b0b262ec53460d655a19cd421051f7177636
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0415fb98cec6b1d92f6a5a43ff705f1b5a7cd348
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498863"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51523821"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -329,7 +329,7 @@ virtual UINT GetTypeInfoCount();
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 기본적으로 구현 [IDispatch::GetTypeInfoCount](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount)합니다.
+이 멤버 함수는 기본적으로 구현 [IDispatch::GetTypeInfoCount](/windows/desktop/api/oaidl/nf-oaidl-idispatch-gettypeinfocount)합니다.
 
 파생된 클래스에는 (0 또는 1)를 제공 하는 형식 정보 인터페이스의 수를 반환 하려면이 함수를 재정의 해야 합니다. 재정의 되지 않으면 `GetTypeInfoCount` 0을 반환 합니다. 재정의 하려면 사용 합니다 [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) 도 구현 하는 매크로 `GetTypeLib` 및 `GetTypeLibCache`.
 

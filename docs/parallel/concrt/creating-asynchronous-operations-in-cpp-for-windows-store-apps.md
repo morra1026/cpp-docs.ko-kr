@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: ecef168d2162adf3a478268ec08b0a61f35c6260
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4824180ec0ff9f7adb7c2d0a9b505a2abb58c20b
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563204"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51333334"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>C + + UWP 앱 용 비동기 작업 만들기
 
@@ -148,11 +148,10 @@ UI가 있는 앱에서 ASTA(응용 프로그램 STA) 스레드는 창 메시지�
 다음 섹션에서는 디스크에서 파일을 읽고 해당 파일에서 가장 일반적인 단어를 찾은 다음 UI에 결과를 표시하는 앱을 보여 줍니다. UI를 업데이트하는 최종 작업은 UI 스레드에서 발생합니다.
 
 > [!IMPORTANT]
->  이 동작은 UWP 앱에 특정 합니다. 데스크톱 앱의 경우 연속이 실행되는 위치를 제어하지 않습니다. 대신 스케줄러가 각 연속을 실행할 작업자 스레드를 선택합니다.
+> 이 동작은 UWP 앱에 특정 합니다. 데스크톱 앱의 경우 연속이 실행되는 위치를 제어하지 않습니다. 대신 스케줄러가 각 연속을 실행할 작업자 스레드를 선택합니다.
 
 > [!IMPORTANT]
-
->  STA에서 실행되는 연속의 본문에서 [concurrency::task::wait](reference/task-class.md#wait) 를 호출하지 마세요. 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](reference/task-class.md#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.
+> STA에서 실행되는 연속의 본문에서 [concurrency::task::wait](reference/task-class.md#wait) 를 호출하지 마세요. 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](reference/task-class.md#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.
 
 ##  <a name="example-app"></a> 예: c + + 및 XAML을 사용 하 여 Windows 런타임 앱에서 실행 제어
 

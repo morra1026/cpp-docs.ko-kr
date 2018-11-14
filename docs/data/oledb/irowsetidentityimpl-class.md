@@ -14,16 +14,16 @@ helpviewer_keywords:
 - IRowsetIdentityImpl class
 - IsSameRow method
 ms.assetid: 56821edf-e045-40c8-96bd-231552cd5799
-ms.openlocfilehash: 5ce4db130f4e8569b666047ca7a5c2bc4e0e6cb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b70ebdaa44331d9fa545763f0dd19e6320dd652b
+ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593195"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51556220"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl 클래스
 
-OLE DB 구현 [IRowsetIdentity](/previous-versions/windows/desktop/ms715913) 행 id에 대 한 테스트 수 있도록 하는 인터페이스입니다.
+OLE DB 구현 [IRowsetIdentity](https://docs.microsoft.com/previous-versions/windows/desktop/ms715913(v=vs.85)) 행 id에 대 한 테스트 수 있도록 하는 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -66,7 +66,7 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IRowsetIdentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 

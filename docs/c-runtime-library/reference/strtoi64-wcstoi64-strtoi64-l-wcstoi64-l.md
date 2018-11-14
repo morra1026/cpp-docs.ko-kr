@@ -39,12 +39,12 @@ helpviewer_keywords:
 - strtoi64 function
 - wcstoi64_l function
 ms.assetid: ea2abc50-7bfe-420e-a46b-703c3153593a
-ms.openlocfilehash: a8097a31ebbc56281008f14da58671d5b2e4e8b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5479448a4e3a3cedba3a62d9b12b0dbe4160f7c
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490781"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51331700"
 ---
 # <a name="strtoi64-wcstoi64-strtoi64l-wcstoi64l"></a>_strtoi64, _wcstoi64, _strtoi64_l, _wcstoi64_l
 
@@ -112,7 +112,7 @@ __int64 _wcstoi64_l(
 |**_tcstoi64**|**_strtoi64**|**_strtoi64**|**_wcstoi64**|
 |**_tcstoi64_l**|**_strtoi64_l**|**_strtoi64_l**|**_wcstoi64_l**|
 
-로캘의 **LC_NUMERIC** 범주 설정의 기 수 문자 인식이 결정 *strSource * *;* 자세한 내용은 참조 하십시오 [setlocale](setlocale-wsetlocale.md)합니다. _L 접미사가 없는 함수는 현재 로캘을 사용합니다 **_strtoi64_l** 하 고 **_wcstoi64_l** 없는 해당 함수와 동일 합니다 **_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하면 접미사가 있습니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
+로캘의 **LC_NUMERIC** 범주 설정의 기 수 문자 인식이 결정 *strSource*; 자세한 내용은 참조 하십시오 [setlocale](setlocale-wsetlocale.md)합니다. _L 접미사가 없는 함수는 현재 로캘을 사용합니다 **_strtoi64_l** 하 고 **_wcstoi64_l** 없는 해당 함수와 동일 합니다 **_l** 대신 전달 된 로캘을 사용 한다는 점을 제외 하면 접미사가 있습니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 하는 경우 *endptr* 아닙니다 **NULL**, 검색을 중지 한 문자에 대 한 포인터에서 가리키는 위치에 저장 됩니다 *endptr*합니다. 변환 작업 없이 수행할 수 있으면 (올바른 숫자를 찾을 수 없거나 잘못 된 자료를 지정 된), 값 *strSource* 가리키는 위치에 저장 된 *endptr*합니다.
 

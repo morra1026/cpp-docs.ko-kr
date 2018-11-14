@@ -1,14 +1,8 @@
 ---
-title: 디버그 루틴 | Microsoft Docs
-ms.custom: ''
+title: 디버그 루틴
 ms.date: 04/10/2018
-ms.technology:
-- cpp-standard-libraries
-ms.topic: reference
 f1_keywords:
 - c.debug
-dev_langs:
-- C++
 helpviewer_keywords:
 - debugging [CRT], using macros
 - macros, debugging with
@@ -16,16 +10,12 @@ helpviewer_keywords:
 - debug macros
 - debugging [CRT], runtime routines
 ms.assetid: cb4d2664-10f3-42f7-a516-595558075471
-author: corob-msft
-ms.author: corob
-ms.workload:
-- cplusplus
-ms.openlocfilehash: 46018d2ec8747b1fac459e1ac1d28b59eea2385b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e1281b578435086dc7de04c7962145c2b265277a
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203474"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51329470"
 ---
 # <a name="debug-routines"></a>디버그 루틴
 
@@ -73,7 +63,7 @@ C 런타임 라이브러리의 디버그 버전은 디버깅 프로그램을 더
 |[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|디버깅 헤더에 대한 추가 공간이 있는 힙에서 지정된 개수의 메모리 블록을 할당하고 버퍼를 덮어씁니다.|
 |[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|블록을 확장하거나 축소하여 힙에서 지정된 메모리 블록의 크기를 조정합니다.|
 |[_free_dbg](../c-runtime-library/reference/free-dbg.md)|힙에서 메모리 블록을 해제합니다.|
-|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|메모리를 할당하는 [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)를 사용하여 지정된 상대 경로 이름의 절대 또는 전체 경로 이름을 만듭니다.|[System::IO::File::Create](https://msdn.microsoft.com/library/system.io.file.create.aspx)|
+|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|메모리를 할당하는 [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)를 사용하여 지정된 상대 경로 이름의 절대 또는 전체 경로 이름을 만듭니다.|
 |[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|메모리를 할당하는 [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)를 사용하여 현재 작업 디렉터리를 가져옵니다.|
 |[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|디버깅 헤더에 대한 추가 공간이 있는 힙에서 메모리 블록을 할당하고 버퍼를 덮어씁니다.|
 |[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|힙에서 메모리 블록의 크기를 계산합니다.|

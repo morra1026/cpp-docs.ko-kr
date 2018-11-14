@@ -1,24 +1,13 @@
 ---
-title: Visual C++ 2003 ~ 2015의 새로운 기능 | Microsoft 문서
-ms.custom: ''
+title: Visual C++ 2003 ~ 2015의 새로운 기능
 ms.date: 11/04/2016
-ms.technology:
-- cpp
-- devlang-cpp
-ms.topic: conceptual
-dev_langs:
-- C++
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-author: mikeblome
-ms.author: mblome
-ms.workload:
-- cplusplus
-ms.openlocfilehash: f005beb9bc71724c289322822a3bae4c03f19d48
-ms.sourcegitcommit: 072e12d6b7a242765bdcc9afe4a14a284ade01fc
+ms.openlocfilehash: 6d79406e07b8839e196f15d9bc3aed96cbc3dca8
+ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50136252"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51520184"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -271,7 +260,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
    예를 들어 코드에서 **placement new** 및 **placement delete**를 둘 다 정의한다고 가정합니다.
 
    ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
    ```
 
@@ -317,15 +306,15 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
    이제 표준을 더 잘 준수합니다. 이전 컴파일러 버전에서는 익명 공용 구조체에 대한 명시적 생성자 및 소멸자를 생성했습니다. 이러한 항목은 Visual Studio 2015에서 삭제됩니다.
 
    ```cpp
-    struct S {
-      S();
-     };
+   struct S {
+      S();
+   };
 
-     union {
-      struct {
-       S s;
-      };
-     } u; // C2280
+   union {
+      struct {
+         S s;
+      };
+   } u; // C2280
    ```
 
    앞의 코드는 Visual Studio 2015에서 다음 오류를 생성합니다.
@@ -339,14 +328,14 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    ```cpp
     struct S {
-    // Provide a default constructor by adding an empty function body.
-    S() {}
+       // Provide a default constructor by adding an empty function body.
+       S() {}
     };
 
     union {
-    struct {
-    S s;
-    };
+       struct {
+          S s;
+       };
     } u;
    ```
 
@@ -563,7 +552,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
     }
    ```
 
-  또는
+  \-또는-
 
    ```cpp
     class base;  // as above
@@ -597,7 +586,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
     void * __cdecl operator new(size_t cb, const std::nothrow_t&)  // removed 'static inline'
    ```
 
-      Additionally, although the compiler doesn't give a specific diagnostic, inline operator new is considered ill-formed.
+   또한 컴파일러가 특정 진단을 제공하지는 않지만, 인라인 operator new는 잘못된 형식으로 간주됩니다.
 
 - **비클래스 형식에서 'operator *type*()'(사용자 정의 변환) 호출** 이전 버전의 컴파일러는 'operator *type*()'을 자동으로 무시하면서 비클래스 형식에서 호출할 수 있었습니다. 이 이전 동작으로 잘못된 코드가 자동으로 생성되어 예기치 않은 런타임 동작이 발생하는 위험이 초래되었습니다. 컴파일러는 이러한 방식으로 작성된 코드를 더 이상 허용하지 않으며, 대신 컴파일러 오류 C2228이 발생합니다.
 
@@ -1684,10 +1673,10 @@ C++11 명시적 변환 연산자, 이니셜라이저 목록, 범위가 지정된
 - 범위가 지정된 열거형 지원 C++ enum class 열거형-키가 지원됩니다. 다음 코드에서는 이 열거형-키가 이전 열거형 동작과 다른 점을 보여 줍니다.
 
    ```cpp
-enum class Element { Hydrogen, Helium, Lithium, Beryllium };
-void func1(Element e);
-func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
-func1(Element::Helium); // OK
+  enum class Element { Hydrogen, Helium, Lithium, Beryllium };
+  void func1(Element e);
+  func1(Hydrogen); // error C2065: 'Hydrogen' : undeclared identifier
+  func1(Element::Helium); // OK
    ```
 
 ### <a name="windows-runtime-app-development-support"></a>Windows 런타임 앱 개발 지원
