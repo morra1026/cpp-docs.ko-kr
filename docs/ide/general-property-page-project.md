@@ -25,12 +25,12 @@ helpviewer_keywords:
 - Clean Build option
 - output files, setting directory
 - Unicode, creating C++ build configuration
-ms.openlocfilehash: 5479b892a2cb97fb645dba4ffac70dd9ac4aeffe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f7af0f3dd9ff373a458a6f93fb78fda443bd8e9
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594518"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51520481"
 ---
 # <a name="general-property-page-project"></a>일반 속성 페이지(프로젝트)
 
@@ -110,29 +110,29 @@ Windows 이외 프로젝트의 경우 [Linux C++ 속성 페이지 참조](../lin
 
 - **구성 형식**
 
-   선택할 수 있는 여러 구성 형식이 있습니다.
+  선택할 수 있는 여러 구성 형식이 있습니다.
 
-   - **응용 프로그램(.exe)**
+  - **응용 프로그램(.exe)**
 
-      링커 도구 집합(C/C++ 컴파일러, MIDL, 리소스 컴파일러, 링커, BSCMake, XML Web services 프록시 생성기, 사용자 지정 빌드, 사전 빌드, 사전 링크, 사후 빌드 이벤트)을 표시합니다.
+     링커 도구 집합(C/C++ 컴파일러, MIDL, 리소스 컴파일러, 링커, BSCMake, XML Web services 프록시 생성기, 사용자 지정 빌드, 사전 빌드, 사전 링크, 사후 빌드 이벤트)을 표시합니다.
 
-   - **동적 라이브러리(.dll)**
+  - **동적 라이브러리(.dll)**
 
-      링커 도구 집합을 표시하고 /DLL 링커 옵션을 지정하고 CL에 _WINDLL define을 추가합니다.
+     링커 도구 집합을 표시하고 /DLL 링커 옵션을 지정하고 CL에 _WINDLL define을 추가합니다.
 
-   - **메이크파일**
+  - **메이크파일**
 
-      메이크파일 도구 집합(NMake)을 표시합니다.
+     메이크파일 도구 집합(NMake)을 표시합니다.
 
-   - **정적 라이브러리(.lib)**
+  - **정적 라이브러리(.lib)**
 
-      라이브러리 관리자 도구 집합(링커를 라이브러리 관리자로 대체하고 XML Web services 프록시 생성기를 생략하는 점을 제외하고 링커 도구 집합과 같음)을 표시합니다.
+     라이브러리 관리자 도구 집합(링커를 라이브러리 관리자로 대체하고 XML Web services 프록시 생성기를 생략하는 점을 제외하고 링커 도구 집합과 같음)을 표시합니다.
 
-   - **유틸리티**
+  - **유틸리티**
 
-      유틸리티 도구 집합(MIDL, 사용자 지정 빌드, 사전 빌드, 사후 빌드 이벤트)을 표시합니다.
+     유틸리티 도구 집합(MIDL, 사용자 지정 빌드, 사전 빌드, 사후 빌드 이벤트)을 표시합니다.
 
-   프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>를 참조하세요.
+  프로그래밍 방식으로 이 속성에 액세스하려면 <xref:Microsoft.VisualStudio.VCProjectEngine.VCConfiguration.ConfigurationType%2A>를 참조하세요.
 
 - **MFC 사용**
 
