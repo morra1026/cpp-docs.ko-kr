@@ -6,12 +6,12 @@ ms.technology:
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 5dca047f6de1ee77734be8842f0ac68402b7dbfc
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 7755e0f1cb2292fc88788ab1b75e19c00f144310
+ms.sourcegitcommit: 48d7d17820be7a95b793e2485b7223879ece5f08
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524254"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51635167"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)의 C++ 규칙 향상
 
@@ -1844,15 +1844,14 @@ struct A
   private:
     template <template <typename...> typename Type, typename... Args>
     static constexpr A<Args...> from_template(A<Type<Args...>>);
-
 };
 
 A<>::from_template_t<A<int>> a;
 ```
 
-Visual Studio 2017 버전 15.9의 **/permissive-** 모드에서 컴파일러는 C3861: *'from_template': 식별자를 찾을 수 없음*을 발생시킵니다. d
+Visual Studio 2017 버전 15.9의 **/permissive-** 모드에서 컴파일러는 C3861: *'from_template': 식별자를 찾을 수 없음*을 발생시킵니다.
 
-오류를 해결하려면 `A` 전에 `a`를 선언합니다.
+오류를 해결하려면 `from_template_t` 전에 `from_template`를 선언합니다.
 
 ### <a name="modules-changes"></a>모듈 변경
 

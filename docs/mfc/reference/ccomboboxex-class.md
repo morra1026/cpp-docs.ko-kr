@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-ms.openlocfilehash: 92a81e318c74f1acd39fbfe870a7ad1277b25125
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05545051b145f3beb11e4b48e8f93fd7908a783a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501636"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694246"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx 클래스
 
@@ -247,7 +247,7 @@ int DeleteItem(int iIndex);
 
 ### <a name="remarks"></a>설명
 
-메시지의 기능을 구현 하는이 멤버 함수 [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem)Windows SDK에 설명 된 대로 합니다. DeleteItem, 호출 하는 경우는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) CBEN_DELETEITEM 알림 메시지를 부모 창에 보내집니다.
+메시지의 기능을 구현 하는이 멤버 함수 [CBEM_DELETEITEM](/windows/desktop/Controls/cbem-deleteitem)Windows SDK에 설명 된 대로 합니다. DeleteItem, 호출 하는 경우는 [WM_NOTIFY](/windows/desktop/controls/wm-notify) CBEN_DELETEITEM 알림 메시지를 부모 창에 보내집니다.
 
 ##  <a name="getcomboboxctrl"></a>  CComboBoxEx::GetComboBoxCtrl
 
@@ -373,7 +373,7 @@ int InsertItem(const COMBOBOXEXITEM* pCBItem);
 
 ### <a name="remarks"></a>설명
 
-호출 하는 경우 `InsertItem`, a [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) 부모 창에 알림이 전송 됩니다.
+호출 하는 경우 `InsertItem`, a [WM_NOTIFY](/windows/desktop/controls/wm-notify) 메시지 [CBEN_INSERTITEM](/windows/desktop/Controls/cben-insertitem) 부모 창에 알림이 전송 됩니다.
 
 ##  <a name="setextendedstyle"></a>  CComboBoxEx::SetExtendedStyle
 

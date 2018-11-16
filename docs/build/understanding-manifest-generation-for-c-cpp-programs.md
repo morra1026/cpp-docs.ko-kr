@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 ms.assetid: a1f24221-5b09-4824-be48-92eae5644b53
-ms.openlocfilehash: d4dceec94a8868ed9b6d744a9f481825bf6af58a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a4391ffd3b7d293ed04a4852582444550570e577
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660445"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693362"
 ---
 # <a name="understanding-manifest-generation-for-cc-programs"></a>C/C++ 프로그램의 매니페스트 생성 이해
 
-A [매니페스트](https://msdn.microsoft.com/library/aa375365) 외부 XML 파일 또는 리소스를 지정할 수 있는 XML 문서에 포함 된 응용 프로그램 또는 어셈블리입니다. 매니페스트를 [격리 된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications) 이름과는 응용 프로그램이 런타임에 바인딩해야 하는 공유 side-by-side-어셈블리의 버전을 관리 하는 데 사용 됩니다. Side-by-side-어셈블리의 매니페스트는 이름, 버전, 리소스 및 다른 어셈블리에서 해당 종속성을 지정합니다.
+A [매니페스트](/windows/desktop/sbscs/manifests) 외부 XML 파일 또는 리소스를 지정할 수 있는 XML 문서에 포함 된 응용 프로그램 또는 어셈블리입니다. 매니페스트를 [격리 된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications) 이름과는 응용 프로그램이 런타임에 바인딩해야 하는 공유 side-by-side-어셈블리의 버전을 관리 하는 데 사용 됩니다. Side-by-side-어셈블리의 매니페스트는 이름, 버전, 리소스 및 다른 어셈블리에서 해당 종속성을 지정합니다.
 
 격리 된 응용 프로그램 또는 side-by-side-어셈블리에 대 한 매니페스트를 만드는 두 가지가 있습니다. 먼저 어셈블리의 작성자는 규칙 및 명명 요구 사항에 매니페스트 파일을 수동으로 만들 수 있습니다. 또는 에서만 프로그램이 CRT, MFC, ATL 또는 다른 사용자와 같은 Visual c + + 어셈블리에 종속 하는 경우 다음 매니페스트를 생성할 수 있습니다 자동으로 링커에 의해.
 

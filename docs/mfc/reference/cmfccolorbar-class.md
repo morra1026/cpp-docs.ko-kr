@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: 6dc3044d1ca402ca099184eced2e5615ff161804
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e6ce3f48e2b0a7b0aa8396047eb4a52015f364d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636880"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694844"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar 클래스
 
@@ -129,7 +129,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |[CMFCColorBar::AllowChangeTextLabels](#allowchangetextlabels)|색 단추 텍스트 레이블을 변경할 수 있는지 여부를 나타냅니다.|
 |[CMFCColorBar::AllowShowOnList](#allowshowonlist)|사용자 지정 프로세스 중 색 막대 컨트롤 개체 도구 모음 목록에 표시 될 수 있는지 여부를 나타냅니다.|
 |[CMFCColorBar::CalcSize](#calcsize)|레이아웃 계산 프로세스의 일부로 프레임 워크에서 호출 됩니다.|
-|[CMFCColorBar::CreatePalette](#createpalette)|색상표 색의 지정된 된 배열에 색을 사용 하 여 초기화 합니다.|
+|[CMFCColorBar::CreatePalette](#createpalette)|색상표 색의 지정된 된 배열에 색을 사용 하 여 초기화합니다.|
 |[CMFCColorBar::GetColorGridSize](#getcolorgridsize)|색 막대 컨트롤의 눈금의 행과 열 개수를 계산 합니다.|
 |[CMFCColorBar::GetExtraHeight](#getextraheight)|현재 색 막대와 같은 기타 사용자 인터페이스 요소를 표시 하는 데 필요한 추가 높이 계산 하는 **다른** 단추, 문서 색 및 등입니다.|
 |[CMFCColorBar::InitColors](#initcolors)|색 색상표를 지정된 하거나 시스템 기본 색상표에서 색을 사용 하 여 배열을 초기화합니다.|

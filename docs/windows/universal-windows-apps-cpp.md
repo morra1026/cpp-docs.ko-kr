@@ -2,12 +2,12 @@
 title: 유니버설 Windows 앱(C++)
 ms.date: 03/30/2018
 ms.assetid: 357121cc-d390-4bae-b34a-39614861a9f4
-ms.openlocfilehash: e6e294b45e183e5e8baebcaad65cece846adb07e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ffcc38dfd849c9cd5eaf9e6466d53731becdd9a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481902"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693089"
 ---
 # <a name="universal-windows-apps-c"></a>유니버설 Windows 앱(C++)
 
@@ -32,8 +32,9 @@ C + + /cli WinRT 프로젝션인 새, 헤더 전용 라이브러리 기반 c + +
 
 ## <a name="uwp-apps-that-use-the-windows-runtime-c-template-library-wrl"></a>Windows 런타임 c + + 템플릿 라이브러리 (WRL)를 사용 하는 UWP 앱
 
-Windows Runtime c + + 템플릿 라이브러리는 ISO c + + 코드가 예외 없는 환경에서 Windows 런타임 액세스할 수 있는 하위 수준 COM 인터페이스를 제공 합니다. 대부분의 경우에서 것이 좋습니다를 사용 하는 C + + /cli WinRT 또는 C + + UWP 앱 개발을 위한 Windows Runtime c + + 템플릿 라이브러리 대신 CX 합니다. Windows Runtime c + + 템플릿 라이브러리에 대 한 정보를 참조 하세요 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)합니다.
+Windows Runtime c + + 템플릿 라이브러리는 ISO c + + 코드가 예외 없는 환경에서 Windows 런타임 액세스할 수 있는 하위 수준 COM 인터페이스를 제공 합니다. 대부분의 경우에서 것이 좋습니다를 사용 하는 C + + /cli WinRT 또는 C + + UWP 앱 개발을 위한 Windows Runtime c + + 템플릿 라이브러리 대신 CX 합니다. Windows Runtime c + + 템플릿 라이브러리에 대 한 정보를 참조 하세요 [Windows 런타임 c + + 템플릿 라이브러리 (WRL)](windows-runtime-cpp-template-library-wrl.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
 [Visual C++](../visual-cpp-in-visual-studio.md)<br/>
+[C++의 Windows 프로그래밍 개요](overview-of-windows-programming-in-cpp.md)<br/>

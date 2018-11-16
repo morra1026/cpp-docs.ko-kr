@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-ms.openlocfilehash: 0a1d0c79e97cf9f9cb0c2b0c6b140654deb4c227
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3752e8b58560e522aecc3689e2a5c3be2649b1e1
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454654"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694168"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 
@@ -210,7 +210,7 @@ LRESULT DefWindowProc();
 
 ### <a name="remarks"></a>설명
 
-기본적으로 `DefWindowProc` 호출을 [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) Win32 함수에 지정 된 창 프로시저 메시지 정보를 보낼 [m_pfnSuperWindowProc](#m_pfnsuperwindowproc)합니다.
+기본적으로 `DefWindowProc` 호출을 [CallWindowProc](/windows/desktop/api/winuser/nf-winuser-callwindowproca) Win32 함수에 지정 된 창 프로시저 메시지 정보를 보낼 [m_pfnSuperWindowProc](#m_pfnsuperwindowproc)합니다.
 
 자동으로 매개 변수가 없는 함수는 현재 메시지에서 필요한 매개 변수를 검색합니다.
 

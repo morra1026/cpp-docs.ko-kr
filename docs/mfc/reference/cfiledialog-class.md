@@ -132,12 +132,12 @@ helpviewer_keywords:
 - CFileDialog [MFC], OnTypeChange
 - CFileDialog [MFC], m_ofn
 ms.assetid: fda4fd3c-08b8-4ce0-8e9d-7bab23f8c6c0
-ms.openlocfilehash: 94530f17c801c62005e837055ce3608e2eaa512f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87f99b4f037c8cc881b33e1d07b4f07596ee9a1b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499687"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694545"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog 클래스
 
@@ -258,7 +258,7 @@ class CFileDialog : public CCommonDialog
 대화 상자 컨트롤을 초기화 한 후 호출 된 [CFileDialog::DoModal](#domodal) 대화 상자를 표시 하는 방법 상자는 사용자의 경로 파일 이름을 입력할 수 있도록 합니다. `DoModal` 사용자 (IDOK) 확인 또는 취소 (IDCANCEL) 단추를 클릭 여부를 반환 합니다. 경우 `DoModal` IDOK 반환 중 하나를 사용할 수 있습니다는 `CFileDialog` 정보를 검색 하는 공용 멤버 함수에 사용자가 저장 합니다.
 
 > [!NOTE]
-> Windows Vista 이상에 대 한 여러 호출은 [IFileDialog::SetFileTypes](https://msdn.microsoft.com/library/windows/desktop/bb775980) 오류가 발생 합니다. 두 번째 호출은 `SetFileTypes` 의 모든 인스턴스에 대해는 `CFileDialog` Windows Vista 이상에서 E_UNEXPECTED를 반환 합니다. 일부 `CFileDialog` 메서드 호출을 함수 `SetFileTypes`합니다. 예를 들어 두 호출 `CFileDialog::DoModal` 의 동일한 인스턴스를 `CFileDialog` 생성 [ASSERT](diagnostic-services.md#assert)합니다.
+> Windows Vista 이상에 대 한 여러 호출은 [IFileDialog::SetFileTypes](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) 오류가 발생 합니다. 두 번째 호출은 `SetFileTypes` 의 모든 인스턴스에 대해는 `CFileDialog` Windows Vista 이상에서 E_UNEXPECTED를 반환 합니다. 일부 `CFileDialog` 메서드 호출을 함수 `SetFileTypes`합니다. 예를 들어 두 호출 `CFileDialog::DoModal` 의 동일한 인스턴스를 `CFileDialog` 생성 [ASSERT](diagnostic-services.md#assert)합니다.
 
 `CFileDialog` 공유 위반, 파일 이름 유효성 검사 및 목록 상자 변경 알림을 사용자 지정 처리 작업을 수행할 수 있는 몇 가지 보호 된 멤버를 포함 합니다. 이러한 보호 된 멤버는 대부분의 응용 프로그램 기본 처리를 자동으로 수행 되기 때문에 사용 하지 않아도 콜백 함수입니다. 표준 가상 함수가 이기 때문에 이러한 함수에 대 한 메시지 맵 항목 필요 하지 않습니다.
 
@@ -851,7 +851,7 @@ IFileOpenDialog* GetIFileOpenDialog();
 
 Windows Vista에만 또는 있는 개체를 사용 하 여 나중에이 함수를 사용 하 여 *bVistaStyle* TRUE로 설정 합니다. 경우이 함수는 NULL을 반환 합니다 `CFileDialog` 아닙니다를 **열기** 대화 상자 이거나 *bVistaStyle* 가 FALSE로 설정 합니다. 이 마지막 경우에만 반환 NULL-릴리스 모드에서 디버그 모드에서 throw 됩니다 어설션 합니다.
 
-에 대 한 자세한 내용은 합니다 `IFileOpenDialog` 인터페이스를 참조 하십시오 [IFileOpenDialog](https://msdn.microsoft.com/library/windows/desktop/bb775834)합니다.
+에 대 한 자세한 내용은 합니다 `IFileOpenDialog` 인터페이스를 참조 하십시오 [IFileOpenDialog](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifileopendialog)합니다.
 
 ### <a name="example"></a>예제
 

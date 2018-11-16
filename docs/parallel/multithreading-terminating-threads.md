@@ -13,12 +13,12 @@ helpviewer_keywords:
 - stopping threads
 - AfxEndThread method
 ms.assetid: 4c0a8c6d-c02f-456d-bd02-0a8c8d006ecb
-ms.openlocfilehash: c92d95bc2aa63d78c98d10e25de79344fe1ee0f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 37a7a6fc443e172f80cc7c30c462ec4d69b3e8de
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484021"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693297"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>다중 스레딩: MFC에서 스레드 종료
 
@@ -34,7 +34,7 @@ ms.locfileid: "50484021"
 
 작업자 스레드의 경우 정상적인 스레드 종료는 간단 합니다: 제어 함수를 종료 하 고 종료 이유를 나타내는 값을 반환 합니다. 하나를 사용 합니다 [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) 함수 또는 **반환** 문입니다. 일반적으로 성공적으로 완료 되 면 0을 사용 하지만 사용자의 몫입니다.
 
-사용자 인터페이스 스레드, 프로세스는 간단 합니다:에서 호출에 사용자 인터페이스 스레드 내에서 [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) Windows SDK에 있습니다. 유일한 매개 변수는 `PostQuitMessage` 는 스레드의 종료 코드입니다. 작업자 스레드와 마찬가지로 0을 사용 하 여 성공적으로 완료 된 경우를 나타냅니다.
+사용자 인터페이스 스레드, 프로세스는 간단 합니다:에서 호출에 사용자 인터페이스 스레드 내에서 [PostQuitMessage](/windows/desktop/api/winuser/nf-winuser-postquitmessage) Windows SDK에 있습니다. 유일한 매개 변수는 `PostQuitMessage` 는 스레드의 종료 코드입니다. 작업자 스레드와 마찬가지로 0을 사용 하 여 성공적으로 완료 된 경우를 나타냅니다.
 
 ##  <a name="_core_premature_thread_termination"></a> 스레드 완전 종료
 

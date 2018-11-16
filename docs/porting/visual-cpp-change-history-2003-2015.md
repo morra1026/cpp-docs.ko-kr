@@ -4,12 +4,12 @@ ms.date: 08/30/2017
 helpviewer_keywords:
 - breaking changes [C++]
 ms.assetid: b38385a9-a483-4de9-99a6-797488bc5110
-ms.openlocfilehash: 1025b3469611ee1e880a2abd5a4e553a1317a0d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1070a330e40c0bf73f3713783b3f126d0848cbc
+ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570718"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51525524"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ 변경 기록 2003 - 2015
 
@@ -64,19 +64,19 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
 
    이동된 함수:
 
-   - double abs(double) 및 float abs(float)
+  - double abs(double) 및 float abs(float)
 
-   - double pow(double, int), float pow(float, float), float pow(float, int), long double pow(long double, long double), long double pow(long double, int)
+  - double pow(double, int), float pow(float, float), float pow(float, int), long double pow(long double, long double), long double pow(long double, int)
 
-   - 부동 소수점 함수 acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, ceil, copysign, cos, cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, log, log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, remainder, remquo, rint, round, scalbln, scalbn, sin, sinh, sqrt, tan, tanh, tgamma, trunc의 float 및 long double 버전
+  - 부동 소수점 함수 acos, acosh, asin, asinh, atan, atanh, atan2, cbrt, ceil, copysign, cos, cosh, erf, erfc, exp, exp2, expm1, fabs, fdim, floor, fma, fmax, fmin, fmod, frexp, hypot, ilogb, ldexp, lgamma, llrint, llround, log, log10, log1p, log2, lrint, lround, modf, nearbyint, nextafter, nexttoward, remainder, remquo, rint, round, scalbln, scalbn, sin, sinh, sqrt, tan, tanh, tgamma, trunc의 float 및 long double 버전
 
-   math.h 헤더만 포함된 abs를 부동 소수점 형식과 함께 사용하는 코드가 있으면 부동 소수점 버전을 더 이상 사용할 수 없으므로 현재 호출은 부동 소수점 인수가 포함되더라도 abs(int)로 확인됩니다. 이로 인해 오류가 발생합니다.
+  math.h 헤더만 포함된 abs를 부동 소수점 형식과 함께 사용하는 코드가 있으면 부동 소수점 버전을 더 이상 사용할 수 없으므로 현재 호출은 부동 소수점 인수가 포함되더라도 abs(int)로 확인됩니다. 이로 인해 오류가 발생합니다.
 
     ```Output
     warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
     ```
 
-   이 경고를 해결하려면 `abs`에 대한 호출을 `abs`의 부동 소수점 버전(예: double 인수에 대한 `fabs` 또는 float 인수에 대한 `fabsf`)으로 바꾸거나, cmath 헤더를 포함하고 `abs`를 계속 사용합니다.
+  이 경고를 해결하려면 `abs`에 대한 호출을 `abs`의 부동 소수점 버전(예: double 인수에 대한 `fabs` 또는 float 인수에 대한 `fabsf`)으로 바꾸거나, cmath 헤더를 포함하고 `abs`를 계속 사용합니다.
 
 - **부동 소수점 적합성**
 
@@ -116,7 +116,7 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
 
    이 라이브러리를 IDE의 링커 입력에 추가하려면 프로젝트 노드의 상황에 맞는 메뉴를 열고, **속성**을 선택한 다음, **프로젝트 속성** 대화 상자에서 **링커**를 선택하고, **링커 입력**을 편집하여 `legacy_stdio_definitions.lib`를 세미콜론으로 구분된 목록에 추가합니다.
 
-   프로젝트가 Visual Studio 2015 이전의 릴리스로 컴파일된 고정 라이브러리와 연결되면 링커에서 확인되지 않은 외부 기호가 보고될 수 있습니다. 이들 오류는 _iob, _iob_func에 대한 내부 stdio 정의 또는 _imp\_* 형식의 특정 stdio 함수에 대한 관련 가져오기를 참조할 수 있습니다. 프로젝트를 업그레이드할 때 C++ 컴파일러 및 라이브러리의 최신 버전으로 모든 고정 라이브러리를 다시 컴파일하는 것이 좋습니다. 라이브러리가 소스를 사용할 수 없는 타사 라이브러리이면 타사로부터 업데이트된 라이브러리를 요청하거나 이전 버전의 컴파일러 및 라이브러리으로 컴파일하는 별도의 DLL로 해당 라이브러리 사용을 캡슐화해야 합니다.
+   프로젝트가 Visual Studio 2015 이전의 릴리스로 컴파일된 고정 라이브러리와 연결되면 링커에서 확인되지 않은 외부 기호가 보고될 수 있습니다. 이들 오류는 `_iob`, `_iob_func`에 대한 내부 stdio 정의 또는 _imp_\* 형식의 특정 stdio 함수에 대한 관련 가져오기를 참조할 수 있습니다. 프로젝트를 업그레이드할 때 C++ 컴파일러 및 라이브러리의 최신 버전으로 모든 고정 라이브러리를 다시 컴파일하는 것이 좋습니다. 라이브러리가 소스를 사용할 수 없는 타사 라이브러리이면 타사로부터 업데이트된 라이브러리를 요청하거나 이전 버전의 컴파일러 및 라이브러리으로 컴파일하는 별도의 DLL로 해당 라이브러리 사용을 캡슐화해야 합니다.
 
     > [!WARNING]
     > Windows SDK 8.1 이하와 연결되어 있으면 이러한 확인되지 않은 외부 기호 오류가 발생할 수 있습니다. 이 경우 앞에 설명된 대로 링커 입력에 legacy_stdio_definitions.lib를 추가하여 오류를 해결해야 합니다.
@@ -139,27 +139,27 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
 
    이전 버전에서 무한대 및 NaN은 일련의 MSVC 관련 센티널 문자열을 사용하여 서식이 지정됩니다.
 
-   - 무한대: 1.#INF
+  - 무한대: 1.#INF
 
-   - 자동 NaN: 1.#QNAN
+  - 자동 NaN: 1.#QNAN
 
-   - 신호 NaN: 1.#SNAN
+  - 신호 NaN: 1.#SNAN
 
-   - 무한 NaN: 1.#IND
+  - 무한 NaN: 1.#IND
 
-   이러한 문자열 앞에 부호가 추가될 수 있고 필드 너비 및 전체 자릿수에 따라 서식이 약간 다르게 지정되었을 수 있습니다. #INF는 2자리 전체 자릿수로 "반올림"되기 때문에 경우에 따라 비정상적인 효과로 인해 `printf("%.2f\n", INFINITY)`가 1.#J를 인쇄합니다. C99는 무한대 및 NaN 서식을 지정하는 방법에 대한 새로운 요구 사항을 새로 추가했습니다. 현재 MSVC 구현은 이러한 요구 사항을 준수합니다. 새 문자열은 다음과 같습니다.
+  이러한 문자열 앞에 부호가 추가될 수 있고 필드 너비 및 전체 자릿수에 따라 서식이 약간 다르게 지정되었을 수 있습니다. #INF는 2자리 전체 자릿수로 "반올림"되기 때문에 경우에 따라 비정상적인 효과로 인해 `printf("%.2f\n", INFINITY)`가 1.#J를 인쇄합니다. C99는 무한대 및 NaN 서식을 지정하는 방법에 대한 새로운 요구 사항을 새로 추가했습니다. 현재 MSVC 구현은 이러한 요구 사항을 준수합니다. 새 문자열은 다음과 같습니다.
 
-   - 무한대: inf
+  - 무한대: inf
 
-   - 자동 NaN: nan
+  - 자동 NaN: nan
 
-   - 신호 NaN: nan(snan)
+  - 신호 NaN: nan(snan)
 
-   - 무한 NaN: nan(ind)
+  - 무한 NaN: nan(ind)
 
-   이들 문자열 앞에 부호가 추가될 수 있습니다. 대문자 서식 지정자가 사용되면(%f 대신 %F) 문자열은 요구된 대로 대문자로 인쇄됩니다(inf 대신 INF).
+  이들 문자열 앞에 부호가 추가될 수 있습니다. 대문자 서식 지정자가 사용되면(%f 대신 %F) 문자열은 요구된 대로 대문자로 인쇄됩니다(inf 대신 INF).
 
-   [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) 함수는 이들 새 문자열을 구문 분석하도록 수정되었으므로 이들 문자열은 printf 및 scanf를 통해 왕복됩니다.
+  [scanf](../c-runtime-library/reference/scanf-scanf-l-wscanf-wscanf-l.md) 함수는 이들 새 문자열을 구문 분석하도록 수정되었으므로 이들 문자열은 printf 및 scanf를 통해 왕복됩니다.
 
 - **부동 소수점 서식 지정 및 구문 분석**
 
@@ -171,8 +171,16 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
     printf("%.0f\n", pow(2.0, 80))
     ```
 
+   이전 출력:
+
     ```Output
-        Old:  1208925819614629200000000    New:  1208925819614629174706176
+    1208925819614629200000000
+    ```
+
+   새 출력:
+
+    ```Output
+    1208925819614629174706176
     ```
 
    이전 구문 분석 알고리즘에서는 입력 문자열에서 최대 17자리만 고려되고 나머지 자릿수는 무시됩니다. 문자열로 표현되는 값의 매우 가까운 근사치를 생성하려면 이것으로 충분하고 결과는 대개 올바르게 반올림됨 결과에 매우 가깝습니다. 새 구현에서는 모든 제공된 자릿수를 고려하고 모든 입력에 대한 올바르게 반올림된 결과를 생성합니다(최대 768자리 길이). 또한 현재 이들 함수는 반올림 모드를 따릅니다(fesetround를 통해 제어 가능).  이들 함수가 다른 결과를 출력할 수 있으므로 이는 잠재적으로 중요한 동작 변경입니다. 새 결과는 항상 이전 결과보다 더 정확합니다.
@@ -641,7 +649,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
    예를 들어 코드에서 **placement new** 및 **placement delete**를 둘 다 정의한다고 가정합니다.
 
     ```cpp
-    void * operator new(std::size_t, std::size_t);
+    void * operator new(std::size_t, std::size_t);
     void operator delete(void*, std::size_t) noexcept;
     ```
 

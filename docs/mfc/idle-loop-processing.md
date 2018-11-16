@@ -16,18 +16,18 @@ helpviewer_keywords:
 - processing [MFC]
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-ms.openlocfilehash: 1eff76e2e5fd98e63dccb9110882656f69da6539
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35078b944412142a07906791e74209fd5dab06d3
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604277"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693440"
 ---
 # <a name="idle-loop-processing"></a>유휴 루프 처리
 
 대부분의 응용 프로그램 "에서"배경입니다. 시간이 오래 걸리는 처리를 수행합니다. 경우에 따라 성능 고려 사항 이러한 작업에 대 한 다중 스레드를 사용 하 여 지정 합니다. MFC에서 수행 하는 유휴 시간 작업 등의 간단한 작업에 대 한 권장 되지 않습니다 있도록 스레드 추가 개발 오버 헤드를 포함 합니다 [OnIdle](../mfc/reference/cwinthread-class.md#onidle) 함수입니다. 이 문서는 유휴 처리에 중점을 둡니다. 다중 스레딩, 참조에 대 한 자세한 내용은 [다중 스레딩 항목](../parallel/multithreading-support-for-older-code-visual-cpp.md)합니다.
 
-일부 종류의 백그라운드 처리는 사용자가 그렇지 않은 경우 응용 프로그램 상호 작용 하지는 간격 동안 적절 하 게 수행 됩니다. Microsoft Windows 운영 체제에 대 한 개발 된 응용 프로그램에서 응용 프로그램 시간이 오래 걸리는 프로세스가 많은 작은 조각으로 분할 하 여 유휴 시간 처리를 수행할 수 있습니다. 각 조각은 처리 한 후 응용 프로그램 생성을 사용 하 여 Windows 실행 제어를 [PeekMessage](https://msdn.microsoft.com/library/windows/desktop/ms644943) 루프입니다.
+일부 종류의 백그라운드 처리는 사용자가 그렇지 않은 경우 응용 프로그램 상호 작용 하지는 간격 동안 적절 하 게 수행 됩니다. Microsoft Windows 운영 체제에 대 한 개발 된 응용 프로그램에서 응용 프로그램 시간이 오래 걸리는 프로세스가 많은 작은 조각으로 분할 하 여 유휴 시간 처리를 수행할 수 있습니다. 각 조각은 처리 한 후 응용 프로그램 생성을 사용 하 여 Windows 실행 제어를 [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagea) 루프입니다.
 
 이 문서에서는 유휴 응용 프로그램에서 처리를 수행 하는 두 가지를 설명 합니다.
 
@@ -37,7 +37,7 @@ ms.locfileid: "50604277"
 
 ##  <a name="_core_peekmessage_in_the_mfc_message_loop"></a> MFC 메시지 루프의 PeekMessage
 
-MFC를 사용 하 여 개발한 응용 프로그램에서 주 메시지 루프를 `CWinThread` 를 호출 하는 메시지 루프를 포함 하는 클래스를 [PeekMessage](https://msdn.microsoft.com/library/windows/desktop/ms644943) Win32 API입니다. 이 루프도 호출 합니다 `OnIdle` 멤버 함수 `CWinThread` 메시지 사이입니다. 응용 프로그램 재정의 하 여 유휴 시간에 메시지를 처리할 수는 `OnIdle` 함수입니다.
+MFC를 사용 하 여 개발한 응용 프로그램에서 주 메시지 루프를 `CWinThread` 를 호출 하는 메시지 루프를 포함 하는 클래스를 [PeekMessage](/windows/desktop/api/winuser/nf-winuser-peekmessagea) Win32 API입니다. 이 루프도 호출 합니다 `OnIdle` 멤버 함수 `CWinThread` 메시지 사이입니다. 응용 프로그램 재정의 하 여 유휴 시간에 메시지를 처리할 수는 `OnIdle` 함수입니다.
 
 > [!NOTE]
 >  `Run`를 `OnIdle`, 한 다른 멤버 함수는 특정 클래스의 멤버는 이제 `CWinThread` 아닌 클래스의 `CWinApp`합니다. `CWinApp`는 `CWinThread`에서 파생됩니다.

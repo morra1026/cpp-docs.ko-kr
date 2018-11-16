@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 71b5eb9c97b8c6370a08281fdf4be7074a579f8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d5216cd399943cda67bc9387ea37c938e5cab48
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596666"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694337"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -646,7 +646,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 ### <a name="parameters"></a>매개 변수
 
 *lpWndClass*<br/>
-에 대 한 포인터를 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 창 클래스 등록에 대 한 정보를 포함 하는 구조체. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
+에 대 한 포인터를 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 창 클래스 등록에 대 한 정보를 포함 하는 구조체. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
 ### <a name="return-value"></a>반환 값
 
@@ -681,7 +681,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 ### <a name="parameters"></a>매개 변수
 
 *nClassStyle*<br/>
-Windows 클래스 스타일 또는 조합 스타일에 비트 OR를 사용 하 여 만든 지정 ( **&#124;**) 창 클래스에 대 한 연산자입니다. 클래스 스타일의 목록은 참조 하세요. 합니다 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK에는 구조입니다. NULL 인 경우 기본값을 다음과 같이 설정 됩니다.
+Windows 클래스 스타일 또는 조합 스타일에 비트 OR를 사용 하 여 만든 지정 ( **&#124;**) 창 클래스에 대 한 연산자입니다. 클래스 스타일의 목록은 참조 하세요. 합니다 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) Windows SDK에는 구조입니다. NULL 인 경우 기본값을 다음과 같이 설정 됩니다.
 
 - CS_DBLCLKS를 보내고 메시지 창 프로시저를 두 번 클릭 마우스를 두 번 클릭할 때를 마우스로 스타일을 설정 합니다.
 

@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 5e847fd3a3c5a4217db694ec5586a24313c8102f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9489e1a36eac89ccff510c3c0fae467c2bb2deab
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612210"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694623"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 
@@ -359,7 +359,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 
 ### <a name="remarks"></a>설명
 
-Hdwp 구조에서 초기화 되는 [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) 메서드.
+Hdwp 구조에서 초기화 되는 [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) 메서드.
 
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu
 
@@ -1197,7 +1197,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
 ### <a name="parameters"></a>매개 변수
 
 *lpMMI*<br/>
-[in] 에 대 한 포인터를 [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) 구조입니다.
+[in] 에 대 한 포인터를 [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) 구조입니다.
 
 ### <a name="remarks"></a>설명
 

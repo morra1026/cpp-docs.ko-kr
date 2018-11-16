@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: 706e7cd290e41ba9f3761f43688dc89fad5f3b74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80d28aa6a71adb72b8a3e0f5cd997577d61d0a52
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579324"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678589"
 ---
 # <a name="coleclientitem-class"></a>COleClientItem 클래스
 
@@ -226,7 +226,7 @@ class COleClientItem : public CDocItem
 |[COleClientItem::GetDocument](#getdocument)|반환 된 `COleDocument` 있는 항목이 포함 된 개체입니다.|
 |[COleClientItem::GetDrawAspect](#getdrawaspect)|렌더링에 대 한 항목의 현재 뷰를 가져옵니다.|
 |[COleClientItem::GetExtent](#getextent)|OLE 항목의 직사각형의 경계를 반환합니다.|
-|[COleClientItem::GetIconFromRegistry](#geticonfromregistry)|특정 CLSID의 서버에 연결 된 아이콘에 대 한 핸들을 검색.|
+|[COleClientItem::GetIconFromRegistry](#geticonfromregistry)|특정 CLSID의 서버에 연결 된 아이콘에 대 한 핸들을 검색 합니다.|
 |[COleClientItem::GetIconicMetafile](#geticonicmetafile)|항목의 아이콘을 그리는 데 사용 하 여 메타 파일을 가져옵니다.|
 |[COleClientItem::GetInPlaceWindow](#getinplacewindow)|항목의 전체 편집 창에 대 한 포인터를 반환합니다.|
 |[COleClientItem::GetItemState](#getitemstate)|항목의 현재 상태를 가져옵니다.|

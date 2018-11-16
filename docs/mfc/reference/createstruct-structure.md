@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CREATESTRUCT structure [MFC]
 ms.assetid: 028c7b5e-4fdc-48da-a550-d3e4f9e6cc85
-ms.openlocfilehash: 13f715dc914ccc052945790aeaff9c47bd34ed46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1de42ba3e26f7a06918a69358083e68f142836cc
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619650"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694701"
 ---
 # <a name="createstruct-structure"></a>CREATESTRUCT 구조체
 
@@ -69,7 +69,7 @@ typedef struct tagCREATESTRUCT {
 새 창의 이름을 지정 하는 null로 끝나는 문자열을 가리킵니다.
 
 *lpszClass*<br/>
-새 창을 Windows 클래스 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 구조체; 자세한 내용은 Windows SDK를 참조 하세요).
+새 창을 Windows 클래스 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 구조체; 자세한 내용은 Windows SDK를 참조 하세요).
 
 *dwExStyle*<br/>
 지정 된 [확장 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 새 창에 대 한 합니다.

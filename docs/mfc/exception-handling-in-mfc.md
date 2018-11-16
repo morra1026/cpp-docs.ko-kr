@@ -33,12 +33,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: fcc233b2cc0bfeeb589fec10c94343839f2c8032
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b520072bd0c07e261f2cf4baf51d7ea3d14a5ab
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623446"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694558"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC의 예외 처리
 
@@ -103,7 +103,7 @@ C + + 예외를 직접 사용 하거나 MFC 예외 매크로 사용 하는 경�
 |[CUserException 클래스](../mfc/reference/cuserexception-class.md)|예외 메시지 상자를 사용 하 여 사용자에 게 알려 주는 제네릭 throw [CException 클래스](../mfc/reference/cexception-class.md)|
 
 > [!NOTE]
->  MFC는 c + + 예외와 MFC 예외 매크로 지원합니다. MFC에서 직접 지원 하지 Windows NT 구조적 예외 처리기 (SEH)에 설명 된 대로 [구조적 예외 처리](https://msdn.microsoft.com/library/windows/desktop/ms680657)합니다.
+>  MFC는 c + + 예외와 MFC 예외 매크로 지원합니다. MFC에서 직접 지원 하지 Windows NT 구조적 예외 처리기 (SEH)에 설명 된 대로 [구조적 예외 처리](/windows/desktop/debug/structured-exception-handling)합니다.
 
 ##  <a name="_core_further_reading_about_exceptions"></a> 예외에 대 한 추가 정보
 

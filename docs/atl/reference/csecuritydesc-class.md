@@ -34,12 +34,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityDesc class
 ms.assetid: 3767a327-378f-4690-ba40-4d9f6a1f5ee4
-ms.openlocfilehash: d06ec86b4a049daba945c347f4b424b5987010f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 615c9a409b66ca0f515b15fbb55fd794102524fd
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605807"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694077"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc 클래스
 
@@ -186,7 +186,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 [GetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa446647)합니다.
+이 메서드를 호출 [GetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-getsecuritydescriptorcontrol)합니다.
 
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl
 
@@ -553,7 +553,7 @@ bool SetControl(
 ### <a name="parameters"></a>매개 변수
 
 *ControlBitsOfInterest*<br/>
-설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582)합니다.
+설정 제어 비트를 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크입니다. 설정할 수 있는 플래그 목록은 참조 하세요 [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol)합니다.
 
 *ControlBitsToSet*<br/>
 지정 된 컨트롤 비트에 대 한 새 값을 나타내는 SECURITY_DESCRIPTOR_CONTROL 마스크를 *ControlBitsOfInterest* 마스크입니다. 이 매개 변수에 대해 나열 된 플래그의 조합 수를 *ControlBitsOfInterest* 매개 변수입니다.
@@ -564,7 +564,7 @@ bool SetControl(
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582)합니다.
+이 메서드를 호출 [SetSecurityDescriptorControl](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-setsecuritydescriptorcontrol)합니다.
 
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl
 

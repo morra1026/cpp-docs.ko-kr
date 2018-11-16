@@ -6,12 +6,12 @@ helpviewer_keywords:
 - drag and drop [MFC], CTreeCtrl
 - tree controls [MFC], drag and drop operations
 ms.assetid: 3cf78b4c-4579-4fe1-9bc9-c5ab876e4af1
-ms.openlocfilehash: 5dc498008c6b019635cd361a950c6d2926e26541
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf0adce847c514a41389d3c6a0a86651ee9dc486
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519368"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693310"
 ---
 # <a name="tree-control-drag-and-drop-operations"></a>트리 컨트롤 끌어서 드롭 작업
 
@@ -19,7 +19,7 @@ ms.locfileid: "50519368"
 
 호출 하 여 끌기 작업 중에 표시할 이미지를 받아야 합니다 [CreateDragImage](../mfc/reference/ctreectrl-class.md#createdragimage) 멤버 함수입니다. 트리 컨트롤 끌고 있는 항목의 레이블을 기반으로 끌어 놓고 비트맵을 만듭니다. 트리 컨트롤 이미지 목록을 만듭니다 비트맵을 추가 하 고에 대 한 포인터를 반환 합니다 [CImageList](../mfc/reference/cimagelist-class.md) 개체입니다.
 
-실제로 항목을 끄는 코드를 제공 해야 합니다. 이미지 목록 함수 끌기 기능을 사용 하 고 처리 하는 [WM_MOUSEMOVE](/windows/desktop/inputdev/wm-mousemove) 하 고 [WM_LBUTTONUP](/windows/desktop/inputdev/wm-lbuttonup) (또는 [WM_RBUTTONUP](/windows/desktop/inputdev/wm-rbuttonup)) 끌기 작업이 시작 된 후 전송 된 메시지입니다. 이미지 목록 함수에 대 한 자세한 내용은 참조 하세요. [CImageList](../mfc/reference/cimagelist-class.md) 에 *MFC 참조* 및 [이미지 나열](https://msdn.microsoft.com/library/windows/desktop/bb761389) Windows sdk에서입니다. 트리 컨트롤 항목을 끌어 하는 방법에 대 한 자세한 내용은 참조 하세요. [트리 뷰 항목을 끌어](/windows/desktop/Controls/tree-view-controls), Windows SDK에도 합니다.
+실제로 항목을 끄는 코드를 제공 해야 합니다. 이미지 목록 함수 끌기 기능을 사용 하 고 처리 하는 [WM_MOUSEMOVE](/windows/desktop/inputdev/wm-mousemove) 하 고 [WM_LBUTTONUP](/windows/desktop/inputdev/wm-lbuttonup) (또는 [WM_RBUTTONUP](/windows/desktop/inputdev/wm-rbuttonup)) 끌기 작업이 시작 된 후 전송 된 메시지입니다. 이미지 목록 함수에 대 한 자세한 내용은 참조 하세요. [CImageList](../mfc/reference/cimagelist-class.md) 에 *MFC 참조* 및 [이미지 나열](/windows/desktop/controls/image-lists) Windows sdk에서입니다. 트리 컨트롤 항목을 끌어 하는 방법에 대 한 자세한 내용은 참조 하세요. [트리 뷰 항목을 끌어](/windows/desktop/Controls/tree-view-controls), Windows SDK에도 합니다.
 
 트리 컨트롤에서 항목을 끌어서 놓기 작업의 대상이 될 경우 대상 항목에 마우스 커서를 가져갈 때를 알 필요가 있습니다. 호출 하 여 확인할 수 있습니다 합니다 [HitTest](../mfc/reference/ctreectrl-class.md#hittest) 멤버 함수입니다. 지점 및 정수 또는의 주소 지정을 [TVHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvhittestinfo) 마우스 커서의 현재 좌표를 포함 하는 구조입니다. 함수는 반환 될 때 정수 또는 구조 트리 컨트롤을 기준으로 마우스 커서의 위치를 나타내는 플래그를 포함 합니다. 커서가 트리 컨트롤의 항목 위에 있는 경우 구조는 항목 에서도의 핸들을 포함 합니다.
 

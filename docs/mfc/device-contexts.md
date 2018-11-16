@@ -32,12 +32,12 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-ms.openlocfilehash: 8eca18795fac96e5cbddb404b901eb35da2de4b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 105e438a9ed3e8f7de7edc813fec516c0e99700a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585980"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694688"
 ---
 # <a name="device-contexts"></a>장치 컨텍스트
 
@@ -57,21 +57,21 @@ ms.locfileid: "50585980"
 
 ### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
 
-- [장치 컨텍스트 (정의)](https://msdn.microsoft.com/library/windows/desktop/dd183553)
+- [장치 컨텍스트 (정의)](/windows/desktop/gdi/device-contexts)
 
 - [뷰에 그리기](../mfc/drawing-in-a-view.md)
 
 - [뷰를 통해 사용자 입력 해석](../mfc/interpreting-user-input-through-a-view.md)
 
-- [선 및 곡선](https://msdn.microsoft.com/library/windows/desktop/dd145028)
+- [선 및 곡선](/windows/desktop/gdi/lines-and-curves)
 
-- [채워진된 도형](https://msdn.microsoft.com/library/windows/desktop/dd162714)
+- [채워진된 도형](/windows/desktop/gdi/filled-shapes)
 
 - [글꼴 및 텍스트](/windows/desktop/gdi/fonts-and-text)
 
-- [색](https://msdn.microsoft.com/library/windows/desktop/dd183450)
+- [색](/windows/desktop/gdi/colors)
 
-- [좌표 공간 및 변환](https://msdn.microsoft.com/library/windows/desktop/dd183475)
+- [좌표 공간 및 변환](/windows/desktop/gdi/coordinate-spaces-and-transformations)
 
 ## <a name="see-also"></a>참고 항목
 

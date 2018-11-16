@@ -6,12 +6,12 @@ helpviewer_keywords:
 - message handling [MFC]
 - message maps [MFC]
 ms.assetid: 62fe2a1b-944c-449d-a0f0-63c11ee0a3cb
-ms.openlocfilehash: 1b109a3f85ffd3311d08c3d749d543b1e625e77c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f76e9b2ef25c8a6c046cb6c47f0f5761854453c9
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628620"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694714"
 ---
 # <a name="message-handling-and-mapping"></a>메시지 처리 및 매핑
 
@@ -23,7 +23,7 @@ WM_COMMAND 메시지-메뉴나 도구 모음 단추 액셀러레이터 키에서
 
 메시지 맵 (예: 메뉴 및 도구 모음 단추), 사용자 인터페이스 개체를 업데이트 하는 방법을 제공 하거나 현재 컨텍스트에 맞게 해제 합니다.
 
-메시지 및 Windows 메시지 큐에 대 한 일반적인 정보를 참조 하세요 [메시지와 메시지 큐](https://msdn.microsoft.com/library/windows/desktop/ms632590) Windows SDK에 있습니다.
+메시지 및 Windows 메시지 큐에 대 한 일반적인 정보를 참조 하세요 [메시지와 메시지 큐](/windows/desktop/winmsg/messages-and-message-queues) Windows SDK에 있습니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
 

@@ -37,12 +37,12 @@ f1_keywords:
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 - atlwin/ATL::REFLECTED_NOTIFY_RANGE_HANDLER
 ms.assetid: eefdd546-8934-4a30-b263-9c06a8addcbd
-ms.openlocfilehash: 5502dae40392679f47b691a822260accbf597dc0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a246e907d401167011b5a3e1306c146a338e233a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555105"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694376"
 ---
 # <a name="message-map-macros-atl"></a>메시지 맵 매크로 (ATL)
 
@@ -607,7 +607,7 @@ MESSAGE_HANDLER 매크로에 지정 된 모든 함수는 다음과 같이 정의
 > [!NOTE]
 >  항상 메시지 맵을 사용 하 여 시작 [BEGIN_MSG_MAP](#begin_msg_map)합니다. 후속 대체 메시지 맵을 사용 하 여 선언할 수 있습니다 [ALT_MSG_MAP](#alt_msg_map)합니다. 합니다 [END_MSG_MAP](#end_msg_map) 매크로 메시지 map의 끝을 표시 합니다. 모든 메시지 맵이 BEGIN_MSG_MAP 및 END_MSG_MAP 인스턴스가 하나만 있어야 합니다.
 
-MESSAGE_HANDLER, 외에도 사용할 수 있습니다 [COMMAND_HANDLER](#command_handler) 하 고 [NOTIFY_HANDLER](#notify_handler) 매핑할 [WM_COMMAND](/windows/desktop/menurc/wm-command) 고 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 각각.
+MESSAGE_HANDLER, 외에도 사용할 수 있습니다 [COMMAND_HANDLER](#command_handler) 하 고 [NOTIFY_HANDLER](#notify_handler) 매핑할 [WM_COMMAND](/windows/desktop/menurc/wm-command) 고 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 메시지 각각.
 
 메시지 맵을 사용 하 여 ATL에 대 한 자세한 내용은 참조 하세요. [메시지 맵](../../atl/message-maps-atl.md)합니다.
 
@@ -644,7 +644,7 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER
 
-비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 알림 코드 에서만 메시지 기반 합니다.
+비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되는 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 알림 코드 에서만 메시지 기반 합니다.
 
 ```
 NOTIFY_CODE_HANDLER(cd, func)
@@ -683,7 +683,7 @@ NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="remarks"></a>설명
 
-NOTIFY_HANDLER 매핑하는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 알림 코드 및 컨트롤 식별자를 기반으로 지정 된 처리기 함수에 메시지입니다.
+NOTIFY_HANDLER 매핑하는 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 알림 코드 및 컨트롤 식별자를 기반으로 지정 된 처리기 함수에 메시지입니다.
 
 NOTIFY_HANDLER 매크로에 지정 된 모든 함수는 다음과 같이 정의 되어야 합니다.
 
@@ -708,7 +708,7 @@ NOTIFY_HANDLER, 외에도 사용할 수 있습니다 [MESSAGE_HANDLER](#message_
 
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER
 
-비슷합니다 [NOTIFY_HANDLER](#notify_handler), 속하지만 매핑되는 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 메시지 식별자를 기준만 제어 합니다.
+비슷합니다 [NOTIFY_HANDLER](#notify_handler), 속하지만 매핑되는 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 메시지 식별자를 기준만 제어 합니다.
 
 ```
 NOTIFY_ID_HANDLER( id, func )
@@ -728,7 +728,7 @@ NOTIFY_ID_HANDLER( id, func )
 
 ##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER
 
-비슷합니다 [NOTIFY_RANGE_HANDLER](#notify_range_handler)에 속하지만 매핑되 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 단일 처리기 함수에 다양 한 컨트롤에서에서 특정 알림 코드를 사용 하 여 메시지입니다.
+비슷합니다 [NOTIFY_RANGE_HANDLER](#notify_range_handler)에 속하지만 매핑되 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 단일 처리기 함수에 다양 한 컨트롤에서에서 특정 알림 코드를 사용 하 여 메시지입니다.
 
 ```
 NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -758,7 +758,7 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER
 
-비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 단일 처리기 함수에 다양 한 컨트롤에서에서 메시지입니다.
+비슷합니다 [NOTIFY_HANDLER](#notify_handler)에 속하지만 매핑되 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 단일 처리기 함수에 다양 한 컨트롤에서에서 메시지입니다.
 
 ```
 NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
