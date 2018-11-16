@@ -23,12 +23,12 @@ helpviewer_keywords:
 - std::discrete_distribution [C++], param_type
 - std::discrete_distribution [C++], param_type
 ms.assetid: 8c8ba8f8-c06f-4f07-b354-f53950142fcf
-ms.openlocfilehash: 5bf5deec5820976c742efa490bf02d0c0d830a09
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ad375c14e9034a55d280a2927d6ef00f098ddbc
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464898"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693909"
 ---
 # <a name="discretedistribution-class"></a>discrete_distribution 클래스
 
@@ -230,7 +230,7 @@ explicit discrete_distribution(const param_type& parm);
 
 *firstW* 및 *lastW* 매개 변수가 포함된 반복기 범위 생성자는 간격 시퀀스 [*firstW*, *lastW*)에 대해 반복기에서 가져온 가중치 값을 사용하여 분포 개체를 생성합니다.
 
-*weightlist* 매개 변수가 포함된 이니셜라이저 목록 생성자는 이니셜라이저 목록 *weightlist*의 가중치를 사용하여 분포 개체를 생성합니다.
+에 이니셜라이저 목록 생성자는 *weightlist* 이니셜라이저 목록에서 가중치로 분포 개체를 생성 하는 매개 변수 *weightlist*합니다.
 
 *count*, *low*, *high* 및 *weightfunc* 매개 변수가 포함된 생성자는 다음 규칙에 따라 초기화된 분포 개체를 생성합니다.
 

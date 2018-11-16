@@ -42,12 +42,12 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: 33ca9e1c07dc350845104a6027166e511b3bbe4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf2f97c1c3b389d0ee2b3d4bcdd2d9da2dbb3c8d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605085"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694857"
 ---
 # <a name="cregkey-class"></a>CRegKey 클래스
 
@@ -892,7 +892,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 |DACL_SECURITY_INFORMATION|키의 임의 액세스 제어 목록 (DACL)을 설정합니다. 키 WRITE_DAC 액세스 해야 합니다. 또는 호출 하는 프로세스 개체의 소유자 여야 합니다.|
 |GROUP_SECURITY_INFORMATION|키의 주 그룹 SID (보안 식별자)를 설정합니다. 키 WRITE_OWNER 액세스 해야 합니다. 또는 호출 하는 프로세스 개체의 소유자 여야 합니다.|
 |OWNER_SECURITY_INFORMATION|키의 소유자 SID를 설정합니다. 키 WRITE_OWNER 액세스 해야 합니다. 또는 호출 프로세스에 개체의 소유자 이거나 SE_TAKE_OWNERSHIP_NAME 권한을 사용 하도록 설정 해야 합니다.|
-|SACL_SECURITY_INFORMATION|키의 시스템 액세스 제어 목록 (SACL)를 설정합니다. 키에 ACCESS_SYSTEM_SECURITY 권한이 있어야 합니다. 이 액세스 권한을 얻을 수 있는 적절 한 방법은 se_security_name 권한을 사용 하도록 설정 하는 것 [권한](https://msdn.microsoft.com/library/windows/desktop/aa379306) 호출자의 현재 액세스 토큰에서 ACCESS_SYSTEM_SECURITY 액세스에 대 한 핸들을 연 다음 권한을 사용 하지 않도록 설정 합니다.|
+|SACL_SECURITY_INFORMATION|키의 시스템 액세스 제어 목록 (SACL)를 설정합니다. 키에 ACCESS_SYSTEM_SECURITY 권한이 있어야 합니다. 이 액세스 권한을 얻을 수 있는 적절 한 방법은 se_security_name 권한을 사용 하도록 설정 하는 것 [권한](/windows/desktop/secauthz/privileges) 호출자의 현재 액세스 토큰에서 ACCESS_SYSTEM_SECURITY 액세스에 대 한 핸들을 연 다음 권한을 사용 하지 않도록 설정 합니다.|
 
 *psd*<br/>
 에 대 한 포인터를 [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) 설정할 지정된 된 키에 대 한 보안 특성을 지정 하는 구조입니다.

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: ffe7b975443b8bdc050bcb19af4f990b2e5ffafa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50fb7da1a59d35d96f1f65428b3a361e3a226607
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576633"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694456"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd 클래스
 
@@ -142,7 +142,7 @@ virtual BOOL Create(
 ### <a name="parameters"></a>매개 변수
 
 *lpszClassName*<br/>
-Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 구조). 클래스 이름을 사용 하 여 등록 된 모든 이름 수는 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 전역 함수입니다. 표준 NULL 이어야 합니다 `CMDIChildWnd`합니다.
+Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 구조). 클래스 이름을 사용 하 여 등록 된 모든 이름 수는 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 전역 함수입니다. 표준 NULL 이어야 합니다 `CMDIChildWnd`합니다.
 
 *lpszWindowName*<br/>
 창 이름을 나타내는 null로 끝나는 문자열을 가리킵니다. 제목 표시줄에 대 한 텍스트로 사용 합니다.

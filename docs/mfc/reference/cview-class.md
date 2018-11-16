@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: f325423c940df46940d7074c599eb8e502e90586
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 679cdc5b5a0a85ade09fe1999e8de40300a8ae8e
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669081"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694389"
 ---
 # <a name="cview-class"></a>CView 클래스
 
@@ -548,7 +548,7 @@ virtual DROPEFFECT OnDropEx(
 
 이 함수를 마우스 오른쪽 단추 끌어서 놓기 효과 구현 하려면 재정의 합니다. 마우스 오른쪽 단추 끌어서 놓기 일반적으로 표시 메뉴 선택 마우스 오른쪽 단추를 놓을 때.
 
-재정의가 `OnDropEx` 를 마우스 오른쪽 단추를 쿼리해야 합니다. 호출할 수 있습니다 [GetKeyState](https://msdn.microsoft.com/library/windows/desktop/ms646301) 에서 마우스 오른쪽 단추 상태를 저장할 사용자 [OnDragEnter](#ondragenter) 처리기입니다.
+재정의가 `OnDropEx` 를 마우스 오른쪽 단추를 쿼리해야 합니다. 호출할 수 있습니다 [GetKeyState](/windows/desktop/api/winuser/nf-winuser-getkeystate) 에서 마우스 오른쪽 단추 상태를 저장할 사용자 [OnDragEnter](#ondragenter) 처리기입니다.
 
 - 마우스 오른쪽 단추 다운 된 경우 재정의 놓기 소스에서 지 원하는 놓기 효과 제공 하는 팝업 메뉴가 표시 됩니다.
 

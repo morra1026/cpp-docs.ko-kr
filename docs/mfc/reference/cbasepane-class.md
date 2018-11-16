@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CBasePane [MFC], UndockPane
 - CBasePane [MFC], DoPaint
 ms.assetid: 8163dd51-d7c7-4def-9c74-61f8ecdfad82
-ms.openlocfilehash: eef6c6e08fec3b0ee89046aae19db9c23849f91f
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1de59e4404960ed99dedaadfa576168bc31da444
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525420"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694792"
 ---
 # <a name="cbasepane-class"></a>CBasePane 클래스
 
@@ -1566,7 +1566,7 @@ virtual HDWP MoveWindow(
 
 ### <a name="remarks"></a>설명
 
-NULL을 전달 하는 경우는 *hdwp* 매개 변수를이 메서드는 창을 일반적으로 이동 합니다. 핸들을 전달 하면이 메서드는 지연 된 창을 이동을 수행 합니다. 호출 하 여 핸들을 가져올 수 있습니다 [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) 또는이 메서드에 대 한 이전 호출의 반환 값을 저장 합니다.
+NULL을 전달 하는 경우는 *hdwp* 매개 변수를이 메서드는 창을 일반적으로 이동 합니다. 핸들을 전달 하면이 메서드는 지연 된 창을 이동을 수행 합니다. 호출 하 여 핸들을 가져올 수 있습니다 [BeginDeferWindowPos](/windows/desktop/api/winuser/nf-winuser-begindeferwindowpos) 또는이 메서드에 대 한 이전 호출의 반환 값을 저장 합니다.
 
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent
 

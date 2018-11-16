@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-ms.openlocfilehash: 91d1793999c12951bd80e0f592772bbae1e2d679
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab08476923f253d666e024d8944aec64ed0af8da
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463302"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693677"
 ---
 # <a name="tn006-message-maps"></a>TN006: 메시지 맵
 
@@ -237,7 +237,7 @@ ON_CONTROL(wNotificationCode, id, memberFxn)
 > [!NOTE]
 > 클래스 마법사 사용자 인터페이스에서 ON_CONTROL 또는 ON_CONTROL_RANGE 처리기 만들기를 지원 하지 않습니다. 텍스트 편집기를 사용 하 여 수동으로 입력 해야 합니다. 클래스 마법사는 이러한 항목을 구문 분석를 다른 메시지 맵 항목 처럼을 탐색할 수 있도록 합니다.
 
-Windows 공용 컨트롤 사용 더욱 강력해 진 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583) 복잡 한 컨트롤 알림에 대 한 합니다. 이 버전의 MFC는 ON_NOTIFY 및 ON_NOTIFY_RANGE 매크로 사용 하 여 새 메시지에 대 한 직접 지원 합니다. 이러한 매크로 대 한 자세한 내용은 제품 설명서를 참조 하세요.
+Windows 공용 컨트롤 사용 더욱 강력해 진 [WM_NOTIFY](/windows/desktop/controls/wm-notify) 복잡 한 컨트롤 알림에 대 한 합니다. 이 버전의 MFC는 ON_NOTIFY 및 ON_NOTIFY_RANGE 매크로 사용 하 여 새 메시지에 대 한 직접 지원 합니다. 이러한 매크로 대 한 자세한 내용은 제품 설명서를 참조 하세요.
 
 ## <a name="see-also"></a>참고자료
 

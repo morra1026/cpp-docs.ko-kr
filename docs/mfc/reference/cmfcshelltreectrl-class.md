@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCShellTreeCtrl [MFC], SetFlags
 - CMFCShellTreeCtrl [MFC], SetRelatedList
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-ms.openlocfilehash: 5f257cb57e7b6f287d5032bdc2655bb65fe946cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cf7e5f9c9b44524491737b27098bc91bb472cb32
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445879"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694287"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl 클래스
 
@@ -53,7 +53,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 |이름|설명|
 |----------|-----------------|
 |[CMFCShellTreeCtrl::EnableShellContextMenu](#enableshellcontextmenu)|사용 하거나 바로 가기 메뉴를 사용 하지 않도록 설정 합니다.|
-|[CMFCShellTreeCtrl::GetFlags](#getflags)|에 전달 되는 플래그의 조합을 반환 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.|
+|[CMFCShellTreeCtrl::GetFlags](#getflags)|에 전달 되는 플래그의 조합을 반환 [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)합니다.|
 |[CMFCShellTreeCtrl::GetItemPath](#getitempath)|항목에 대 한 경로 검색합니다.|
 |[CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist)|에 대 한 포인터를 반환 합니다는 [CMFCShellListCtrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md) 이 함께 사용 되는 개체 `CMFCShellTreeCtrl` 개체는 탐색기와 유사한 창을 만들 수 있습니다.|
 |[CMFCShellTreeCtrl::OnChildNotify](#onchildnotify)|이 멤버 함수는이 창에 적용 되는 알림 메시지를 받으면이 창의 부모 창에서 호출 됩니다. (재정의 [cwnd:: Onchildnotify](../../mfc/reference/cwnd-class.md#onchildnotify).)|
@@ -118,7 +118,7 @@ DWORD GetFlags() const;
 
 ### <a name="remarks"></a>설명
 
-플래그를 설정 합니다 `CMFCShellTreeCtrl` 메서드에 전송 됩니다 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066) 때마다 개체가 새로 고쳐집니다. 플래그를 변경할 수 있습니다 합니다 [CMFCShellTreeCtrl::SetFlags](#setflags) 메서드.
+플래그를 설정 합니다 `CMFCShellTreeCtrl` 메서드에 전송 됩니다 [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) 때마다 개체가 새로 고쳐집니다. 플래그를 변경할 수 있습니다 합니다 [CMFCShellTreeCtrl::SetFlags](#setflags) 메서드.
 
 ##  <a name="getitempath"></a>  CMFCShellTreeCtrl::GetItemPath
 
@@ -269,7 +269,7 @@ void SetFlags(
 
 ### <a name="remarks"></a>설명
 
-합니다 `CMFCShellTreeCtrl` 플래그를 설정할 모든 패스 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다. 다른 플래그의 값에 대 한 자세한 내용은 참조 [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066)합니다.
+합니다 `CMFCShellTreeCtrl` 플래그를 설정할 모든 패스 [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)합니다. 다른 플래그의 값에 대 한 자세한 내용은 참조 [IShellFolder::EnumObjects](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)합니다.
 
 ##  <a name="setrelatedlist"></a>  CMFCShellTreeCtrl::SetRelatedList
 

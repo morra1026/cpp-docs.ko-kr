@@ -80,12 +80,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-ms.openlocfilehash: fa7562f49834bf71da6bd095aec19360a43f1538
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: def8334cf0ed9b6b2ee821e1e0f1a717d90f2163
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447959"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694584"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase 클래스
 
@@ -1547,7 +1547,7 @@ TRUE 이면 호출 컨트롤에 키보드 포커스를 설정 합니다. FALSE �
 
 ### <a name="remarks"></a>설명
 
-Windows API 함수를 창 컨트롤용 [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) 라고 합니다. 창 없는 컨트롤에 대 한 [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) 라고 합니다. 이 호출을 통해 창 없는 컨트롤에서 키보드 포커스 및 창 메시지에 응답할 수 있습니다.
+Windows API 함수를 창 컨트롤용 [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) 라고 합니다. 창 없는 컨트롤에 대 한 [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) 라고 합니다. 이 호출을 통해 창 없는 컨트롤에서 키보드 포커스 및 창 메시지에 응답할 수 있습니다.
 
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty
 

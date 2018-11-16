@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-ms.openlocfilehash: 1814d95ae4346706c8f78125903e26fca8136d68
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cb4ec679e26adc32ffc6d68ebff9b1ed73c2f43
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544601"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694233"
 ---
 # <a name="caxdialogimpl-class"></a>CAxDialogImpl 클래스
 
@@ -177,7 +177,7 @@ INT_PTR DoModal(
 ### <a name="parameters"></a>매개 변수
 
 *hWndParent*<br/>
-[in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.
+[in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 함수입니다.
 
 *dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.

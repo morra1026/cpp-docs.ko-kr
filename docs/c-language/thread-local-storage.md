@@ -8,12 +8,12 @@ helpviewer_keywords:
 - thread-local storage
 - storage, thread local storage
 ms.assetid: a0f1b109-c953-4079-aa10-e47f5483173d
-ms.openlocfilehash: e13aa9600cd26fba47ce43a318fa7174995d58fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a20e337cddcc45701f20941ac5d7fea5e4324a5
+ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572226"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51330309"
 ---
 # <a name="thread-local-storage"></a>스레드 로컬 저장소
 
@@ -86,7 +86,7 @@ __declspec( thread ) int tls_i = 1;
 
    초기화되는 변수를 포함하는 sizeof 식은 자신에 대한 참조를 구성하지 않으며 허용됩니다.
 
-- **__declspec(thread)** 의 사용은 DLL 가져오기의 [지연 로드](../build/reference/linker-support-for-delay-loaded-dlls.md)를 방해할 수 있습니다 **.**
+- **\_\_declspec(thread)** 의 사용은 DLL 가져오기의 [지연 로드](../build/reference/linker-support-for-delay-loaded-dlls.md)를 방해할 수 있습니다.
 
 thread 특성 사용에 대한 자세한 내용은 [다중 스레딩 항목](../parallel/multithreading-support-for-older-code-visual-cpp.md)을 참조하세요.
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: 3ac8037e032112e269332d2bbf9c2065ade84ded
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04acfb9c653df85be8958d7248bafd93f3e0a30b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572102"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693683"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 
@@ -93,7 +93,7 @@ template <class T,
 |컨트롤 만들기|[ATL 자습서](../../atl/active-template-library-atl-tutorial.md)|
 |ATL 대화 상자를 사용 하 여|[ATL 창 클래스](../../atl/atl-window-classes.md)|
 |ATL 프로젝트 마법사|[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)|
-|대화 상자|[대화 상자](https://msdn.microsoft.com/library/windows/desktop/ms632588) 및 Windows SDK의 후속 항목|
+|대화 상자|[대화 상자](/windows/desktop/dlgbox/dialog-boxes) 및 Windows SDK의 후속 항목|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -197,7 +197,7 @@ INT_PTR DoModal(
 ### <a name="parameters"></a>매개 변수
 
 *hWndParent*<br/>
-[in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 함수입니다.
+[in] 소유자 창에 대 한 핸들입니다. 기본값은의 반환 값을 [GetActiveWindow](/windows/desktop/api/winuser/nf-winuser-getactivewindow) Win32 함수입니다.
 
 *dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
