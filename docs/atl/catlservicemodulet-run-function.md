@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - ATL services, security
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-ms.openlocfilehash: 3abb6908a64864463c45d8fc4dc24bfc813db586
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91b6465dd975a1e3227d1416f2b78a8abbd441ad
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458670"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694325"
 ---
 # <a name="catlservicemoduletrun-function"></a>Catlservicemodulet:: Run 함수
 
-`Run` 에 대 한 호출을 포함 `PreMessageLoop`하십시오 `RunMessageLoop`, 및 `PostMessageLoop`합니다. 호출 된 후 `PreMessageLoop` 먼저 저장 서비스의 스레드 id입니다. 서비스는 Win32 API 함수를 사용 하 여 WM_QUIT 메시지를 보내 자체를 닫으려면이 ID를 사용 하는 [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946)합니다.
+`Run` 에 대 한 호출을 포함 `PreMessageLoop`하십시오 `RunMessageLoop`, 및 `PostMessageLoop`합니다. 호출 된 후 `PreMessageLoop` 먼저 저장 서비스의 스레드 id입니다. 서비스는 Win32 API 함수를 사용 하 여 WM_QUIT 메시지를 보내 자체를 닫으려면이 ID를 사용 하는 [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea)합니다.
 
 `PreMessageLoop` 그런 다음 호출 `InitializeSecurity`합니다. 기본적으로 `InitializeSecurity` 호출 [CoInitializeSecurity](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializesecurity) NULL로 설정 하는 보안 설명자를 사용 하 여는 것을 의미 하는 모든 사용자가 개체에 대 한 액세스.
 

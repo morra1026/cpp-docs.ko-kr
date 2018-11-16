@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CMFCToolBarButton [MFC], m_nStyle
 - CMFCToolBarButton [MFC], m_strText
 ms.assetid: 8a6ecffb-86b0-4f5c-8211-a9146b463efd
-ms.openlocfilehash: 930434a6d1e447d38d5cec9a6b0b8adee8e37b81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec5b6692197dc224f503be050a537e6fa265f6d5
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438085"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694662"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton 클래스
 
@@ -467,7 +467,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 
 ### <a name="remarks"></a>설명
 
-이 메서드를 호출 합니다 `EnableWindow` 함수를 사용 하도록 설정 하거나 입력을 사용 하지 않도록 설정 합니다. 자세한 내용은 [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK에 있습니다.
+이 메서드를 호출 합니다 `EnableWindow` 함수를 사용 하도록 설정 하거나 입력을 사용 하지 않도록 설정 합니다. 자세한 내용은 [EnableWindow](/windows/desktop/api/winuser/nf-winuser-enablewindow) Windows SDK에 있습니다.
 
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarButton::ExportToMenuButton
 

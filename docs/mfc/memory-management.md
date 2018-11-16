@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory [MFC], managing
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-ms.openlocfilehash: b5b91245d08c6c4a17c9ba96a0ca4dcf19932d9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22c5c2c835872a189fe342093a737d7887538256
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461384"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51692752"
 ---
 # <a name="memory-management"></a>메모리 관리
 
@@ -21,7 +21,7 @@ ms.locfileid: "50461384"
 
 두 할당 기술 간의 주요 차이점 중 하나는 일반적으로 실제 메모리를 사용 하 여 작업할 프레임 할당을 사용 하 여 블록 자체를 힙 할당을 사용 하 여 항상 제공 됩니다에 대 한 포인터는 메모리 블록에 있지만 됩니다. 두 스키마의 또 다른 주요 차이점은 된 프레임 개체는 자동으로 삭제, 프로그래머가 힙 개체를 명시적으로 삭제 해야 하는 동안.
 
-Windows의 프로그램에서 메모리 관리에 대 한 비 MFC 정보를 참조 하세요 [메모리 관리](https://msdn.microsoft.com/library/windows/desktop/aa366779) Windows SDK에 있습니다.
+Windows의 프로그램에서 메모리 관리에 대 한 비 MFC 정보를 참조 하세요 [메모리 관리](/windows/desktop/memory/memory-management) Windows SDK에 있습니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
 

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: fc2080470e3292a459325679a6c5dc00c01d6b35
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da95b1dac2f058de67719b4754d2df6dbeb6f7f0
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528380"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694051"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
@@ -132,7 +132,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    이 함수를 처리 하는 코드 작성 *메시지* Windows에서 응용 프로그램에서 받는 경우 *이벤트* 발생 합니다. 사용자는 응용 프로그램에서 확인 단추를 선택 하면 Windows 메시지를 보냅니다 하 고 내 코드를 작성할 수 있습니다 예를 들어 프로그램 `WndProc` 적합 한 모든 작업을 수행 하는 함수입니다. 라고 *처리* 이벤트입니다. 응용 프로그램에 대 한 관련 된 이벤트를 처리 합니다.
 
-   자세한 내용은 [창 프로시저](https://msdn.microsoft.com/library/windows/desktop/ms632593)를 참조하세요.
+   자세한 내용은 [창 프로시저](/windows/desktop/winmsg/window-procedures)를 참조하세요.
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain 함수에 기능을 추가하려면
 
@@ -157,7 +157,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
    위의 구조의 필드에 대 한 정보를 참조 하세요 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다.
 
-1. 등록 된 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587) 함수를 사용하고 창 클래스 구조를 인수로 전달합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
+1. 등록 된 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) 함수를 사용하고 창 클래스 구조를 인수로 전달합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
 
    ```cpp
    if (!RegisterClassEx(&wcex))
@@ -237,7 +237,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    return (int) msg.wParam;
    ```
 
-   메시지 루프의 구조 및 함수에 대한 자세한 내용은 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage)및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)를 참조하세요.
+   메시지 루프의 구조 및 함수에 대한 자세한 내용은 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage)및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)를 참조하세요.
 
    이때 `WinMain` 함수는 다음 코드와 유사합니다.
 

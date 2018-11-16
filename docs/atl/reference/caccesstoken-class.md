@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: faa715e8f5333a717689d281ccb89bd2369e9929
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8fadb6825bbdc970e952d2ea6c26a27b4837dfc
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661268"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694532"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken 클래스
 
@@ -254,7 +254,7 @@ bool CreatePrimaryToken(
 
 ### <a name="remarks"></a>설명
 
-`CreatePrimaryToken` 호출 [DuplicateTokenEx](https://msdn.microsoft.com/library/windows/desktop/aa446617) 새 기본 토큰을 만들어야 합니다.
+`CreatePrimaryToken` 호출 [DuplicateTokenEx](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) 새 기본 토큰을 만들어야 합니다.
 
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser
 
@@ -289,7 +289,7 @@ bool CreateProcessAsUser(
 에 대 한 포인터를 [STARTUPINFO](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) 새 프로세스의 주 창 표시 방법을 지정 하는 구조입니다.
 
 *dwCreationFlags*<br/>
-우선 순위 클래스 및 프로세스의 생성을 제어 하는 추가 플래그를 지정 합니다. Win32 함수를 참조 하세요 [createprocessasuser가](https://msdn.microsoft.com/library/windows/desktop/ms682429) 플래그의 목록은 합니다.
+우선 순위 클래스 및 프로세스의 생성을 제어 하는 추가 플래그를 지정 합니다. Win32 함수를 참조 하세요 [createprocessasuser가](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) 플래그의 목록은 합니다.
 
 *bLoadProfile*<br/>
 사용자의 프로필을 사용 하 여 로드 되 고 TRUE 인 경우 [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea)합니다.
@@ -312,7 +312,7 @@ bool CreateProcessAsUser(
 
 ### <a name="remarks"></a>설명
 
-`CreateProcessAsUser` 사용 하는 `CreateProcessAsUser` 나타내는 사용자의 보안 컨텍스트에서 실행 하는 새 프로세스를 만들려는 Win32 함수는 `CAccessToken` 개체입니다. 에 대 한 설명을 참조는 [createprocessasuser가](https://msdn.microsoft.com/library/windows/desktop/ms682429) 대 한 전체 설명은 필요한 매개 변수는 함수입니다.
+`CreateProcessAsUser` 사용 하는 `CreateProcessAsUser` 나타내는 사용자의 보안 컨텍스트에서 실행 하는 새 프로세스를 만들려는 Win32 함수는 `CAccessToken` 개체입니다. 에 대 한 설명을 참조는 [createprocessasuser가](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessasusera) 대 한 전체 설명은 필요한 매개 변수는 함수입니다.
 
 이 메서드가 성공 하려면에 대 한는 `CAccessToken` 개체 (아닌 경우 제한 된 토큰) AssignPrimaryToken 가져야 및 IncreaseQuota 권한.
 
@@ -348,7 +348,7 @@ bool CreateRestrictedToken(
 
 ### <a name="remarks"></a>설명
 
-`CreateRestrictedToken` 사용 하는 [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583) Win32 함수를 만들기 위한 `CAccessToken` 개체를 제한 합니다.
+`CreateRestrictedToken` 사용 하는 [CreateRestrictedToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) Win32 함수를 만들기 위한 `CAccessToken` 개체를 제한 합니다.
 
 > [!IMPORTANT]
 >  사용 하는 경우 `CreateRestrictedToken`, 다음을 확인: 기존 토큰이 유효한 (및 사용자가 입력 없습니다) 및 *SidsToDisable* 하 고 *PrivilegesToDelete* 모두 유효한 (및 사용자가 입력 없습니다). 메서드가 FALSE를 반환 하는 경우 기능을 거부 합니다.

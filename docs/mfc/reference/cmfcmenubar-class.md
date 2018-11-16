@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CMFCMenuBar [MFC], SetRecentlyUsedMenus
 - CMFCMenuBar [MFC], SetShowAllCommands
 ms.assetid: 8a3ce4c7-b012-4dc0-b4f8-53c10b4b86b8
-ms.openlocfilehash: cb1143b51dafd9711e058134a9338e28ffcb44b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a15291b49127b6c5f1efd97d8102b272c126cc10
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599890"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694364"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar 클래스
 
@@ -391,7 +391,7 @@ virtual BOOL CreateEx(
 
 이 함수 대신 사용 해야 [CMFCMenuBar::Create](#create) styl toolbar 외에도 스타일을 지정 하려는 경우. 일부 자주 사용 되는 추가 스타일은 TBSTYLE_TRANSPARENT 및 CBRS_TOP입니다.
 
-추가 스타일의 목록, 참조 [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles), [공통 컨트롤 스타일](/windows/desktop/Controls/common-control-styles), 및 [공통 창 스타일](https://msdn.microsoft.com/library/windows/desktop/ms632600)합니다.
+추가 스타일의 목록, 참조 [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles), [공통 컨트롤 스타일](/windows/desktop/Controls/common-control-styles), 및 [공통 창 스타일](/windows/desktop/winmsg/window-styles)합니다.
 
 ### <a name="example"></a>예제
 

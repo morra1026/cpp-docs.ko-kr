@@ -2,12 +2,12 @@
 title: 네임스페이스 및 형식 표시 유형(C++/CX)
 ms.date: 12/30/2016
 ms.assetid: cbc01a3a-3b69-4ded-9c42-ecbf0fd0a00e
-ms.openlocfilehash: e9efc207fe0ed49fecf30366d265019e7a3ee009
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02a73f84314d4406c5fb8e9b8635a307c30e4c3d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440523"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693896"
 ---
 # <a name="namespaces-and-type-visibility-ccx-"></a>네임스페이스 및 형식 표시 유형(C++/CX)
 
@@ -40,7 +40,7 @@ private ref 클래스, 인터페이스 또는 대리자에서는 public 액세�
 
 ## <a name="windows-runtime-namespaces"></a>Windows 런타임 네임 스페이스
 
-Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임 스페이스입니다. 이러한 네임스페이스는 Windows용으로 예약되어 있으며 해당 네임스페이스에는 형식을 추가할 수 없습니다. **개체 브라우저**의 windows.winmd 파일에서 이러한 네임스페이스를 볼 수 있습니다. 이러한 네임스페이스에 대한 설명은 [Windows API](https://msdn.microsoft.com/library/windows/apps/br211377)를 참조하세요.
+Windows API는 Windows에서 선언 된 형식으로 구성 됩니다::\* 네임 스페이스입니다. 이러한 네임스페이스는 Windows용으로 예약되어 있으며 해당 네임스페이스에는 형식을 추가할 수 없습니다. **개체 브라우저**의 windows.winmd 파일에서 이러한 네임스페이스를 볼 수 있습니다. 이러한 네임스페이스에 대한 설명은 [Windows API](/uwp/api/)를 참조하세요.
 
 ## <a name="ccx-namespaces"></a>C++/CX 네임스페이스
 

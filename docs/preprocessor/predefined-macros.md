@@ -1,7 +1,7 @@
 ---
 title: 미리 정의된 매크로
 ms.custom: update_every_version
-ms.date: 04/30/2018
+ms.date: 11/12/2018
 f1_keywords:
 - _ATL_VER
 - __ATOM__
@@ -143,12 +143,12 @@ helpviewer_keywords:
 - _WINRT_DLL macro
 - __func__ identifier
 ms.assetid: 1cc5f70a-a225-469c-aed0-fe766238e23f
-ms.openlocfilehash: 42b81431ca69de84a5d38cca3eaa088bb7255656
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ebc23545817de0f249185700454237c66610c13
+ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660462"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51678356"
 ---
 # <a name="predefined-macros"></a>미리 정의된 매크로
 
@@ -378,6 +378,8 @@ Microsoft Visual c + +는 이러한 추가 미리 정의 된 매크로 지원합
    |Visual Studio 2017 15.5 버전|1912|
    |Visual Studio 2017 버전 15.6|1913|
    |Visual Studio 2017 버전 15.7|1914|
+   |Visual Studio 2017 버전 15.8|1915|
+   |Visual Studio 2017 버전 15.9|1916|
 
    컴파일러 릴리스 또는 특정된 버전의 Visual Studio 또는 후에 업데이트를 사용 하 여 테스트 하는 **>=** 비교할 (큰 크거나 같음) 연산자  **&#95;MSC&#95;VER** 알려진에 대해 버전. 상호 배타적인 방식으로 비교할 여러 버전에 있는 경우에 내림차순으로 정렬 된 버전 번호의 비교를 주문 하는 것이 좋습니다. 예를 들어, 해제 또는 Visual Studio 2013, 그 이후에 컴파일러는 다음 Visual Studio 2013 이전에 릴리스된 모든 컴파일러에 대 한 작업을 수행 하는 다음이 코드는 Visual Studio 2015 이상 버전을 출시 하는 컴파일러에 대 한 확인:
 

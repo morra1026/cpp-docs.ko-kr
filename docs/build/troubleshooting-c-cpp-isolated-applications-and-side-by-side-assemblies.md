@@ -6,12 +6,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: a9d1e3638df46f9a60af54ae4c402337710c7561
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 58d8453cc50c28527c1f777db1b47ea23299d38f
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474740"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693947"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 문제 해결
 
@@ -37,7 +37,7 @@ ms.locfileid: "50474740"
 
 1. 응용 프로그램이 side-by-side 어셈블리에 종속된 경우 매니페스트가 없으면 링커에서 프로젝트에 대한 매니페스트를 생성하도록 해야 합니다. 링커 옵션을 확인 **매니페스트 생성** 에 **프로젝트 속성** 프로젝트에 대 한 대화 상자.
 
-1. 매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용 하는 리소스 ID에 대 한 자세한 내용은 참조 하세요. [(Windows) 리소스로 사용 하 여 Side-by-side-어셈블리](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource)합니다. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포에 대 한 규칙에 대 한 자세한 내용은 참조 하세요. [매니페스트](https://msdn.microsoft.com/library/aa375365)합니다.
+1. 매니페스트가 이진 파일에 포함된 경우 RT_MANIFEST의 ID가 이 형식의 이진 파일에 적합한지 확인합니다. 사용 하는 리소스 ID에 대 한 자세한 내용은 참조 하세요. [(Windows) 리소스로 사용 하 여 Side-by-side-어셈블리](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource)합니다. 매니페스트가 별도의 파일에 있는 경우 XML 편집기나 텍스트 편집기에서 엽니다. 매니페스트 및 배포에 대 한 규칙에 대 한 자세한 내용은 참조 하세요. [매니페스트](/windows/desktop/sbscs/manifests)합니다.
 
    > [!NOTE]
    > 포함된 매니페스트와 별도의 매니페스트 파일이 둘 다 있는 경우 운영 체제 로더는 포함된 매니페스트를 사용하고 별도의 파일을 무시합니다. 그러나 Windows XP에서는 반대로 별도의 매니페스트 파일이 사용되고 포함된 매니페스트가 무시됩니다.

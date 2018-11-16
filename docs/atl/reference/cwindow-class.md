@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: 59258864eddb251b24f2e191d309707abf3736a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ce3c93c7cb8c26ae6008516c93faa8c8a5b37fb
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441108"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694597"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 
@@ -388,7 +388,7 @@ UINT ArrangeIconicWindows() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [ArrangeIconicWindows](https://msdn.microsoft.com/library/windows/desktop/ms632671) Windows SDK에에서 있습니다.
+참조 [ArrangeIconicWindows](/windows/desktop/api/winuser/nf-winuser-arrangeiconicwindows) Windows SDK에에서 있습니다.
 
 ##  <a name="attach"></a>  CWindow::Attach
 
@@ -433,7 +433,7 @@ BOOL BringWindowToTop() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673) Windows SDK에에서 있습니다.
+참조 [BringWindowToTop](/windows/desktop/api/winuser/nf-winuser-bringwindowtotop) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -509,7 +509,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [ChildWindowFromPoint](https://msdn.microsoft.com/library/windows/desktop/ms632676) Windows SDK에에서 있습니다.
+참조 [ChildWindowFromPoint](/windows/desktop/api/winuser/nf-winuser-childwindowfrompoint) Windows SDK에에서 있습니다.
 
 ##  <a name="childwindowfrompointex"></a>  CWindow::ChildWindowFromPointEx
 
@@ -578,7 +578,7 @@ HWND Create(
 [in] 형식 변수의 [_U_MENUorID](../../atl/reference/u-menuorid-class.md) 메뉴 또는 창 식별자에 대 한 핸들을 지정 합니다. 기본값은 0U 합니다.
 
 *lpCreateParam*<br/>
-창 만들기에 포함 된 데이터에 대 한 포인터를 [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) 구조입니다.
+창 만들기에 포함 된 데이터에 대 한 포인터를 [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -813,7 +813,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK에에서 있습니다.
+참조 [EnableWindow](/windows/desktop/api/winuser/nf-winuser-enablewindow) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -857,7 +857,7 @@ BOOL GetClientRect(LPRECT lpRect) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetClientRect](https://msdn.microsoft.com/library/windows/desktop/ms633503) Windows SDK에에서 있습니다.
+참조 [GetClientRect](/windows/desktop/api/winuser/nf-winuser-getclientrect) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1109,7 +1109,7 @@ HWND GetLastActivePopup() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetLastActivePopup](https://msdn.microsoft.com/library/windows/desktop/ms633507) Windows SDK에에서 있습니다.
+참조 [GetLastActivePopup](/windows/desktop/api/winuser/nf-winuser-getlastactivepopup) Windows SDK에에서 있습니다.
 
 ##  <a name="getmenu"></a>  CWindow::GetMenu
 
@@ -1157,7 +1157,7 @@ HWND GetParent() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetParent](https://msdn.microsoft.com/library/windows/desktop/ms633510) Windows SDK에에서 있습니다.
+참조 [GetParent](/windows/desktop/api/winuser/nf-winuser-getparent) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1268,7 +1268,7 @@ HWND GetTopWindow() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetTopWindow](https://msdn.microsoft.com/library/windows/desktop/ms633514) Windows SDK에에서 있습니다.
+참조 [GetTopWindow](/windows/desktop/api/winuser/nf-winuser-gettopwindow) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1363,7 +1363,7 @@ LONG_PTR GetWindowLongPtr(int nIndex) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowLongPtr](https://msdn.microsoft.com/library/windows/desktop/ms633585) Windows SDK에에서 있습니다.
+참조 [GetWindowLongPtr](/windows/desktop/api/winuser/nf-winuser-getwindowlongptra) Windows SDK에에서 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1384,7 +1384,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowPlacement](https://msdn.microsoft.com/library/windows/desktop/ms633518) Windows SDK에에서 있습니다.
+참조 [GetWindowPlacement](/windows/desktop/api/winuser/nf-winuser-getwindowplacement) Windows SDK에에서 있습니다.
 
 ##  <a name="getwindowprocessid"></a>  CWindow::GetWindowProcessID
 
@@ -1396,7 +1396,7 @@ DWORD GetWindowProcessID() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowThreadProcessID](https://msdn.microsoft.com/library/windows/desktop/ms633522) Windows SDK에에서 있습니다.
+참조 [GetWindowThreadProcessID](/windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1412,7 +1412,7 @@ BOOL GetWindowRect(LPRECT lpRect) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowRect](https://msdn.microsoft.com/library/windows/desktop/ms633519) Windows SDK에에서 있습니다.
+참조 [GetWindowRect](/windows/desktop/api/winuser/nf-winuser-getwindowrect) Windows SDK에에서 있습니다.
 
 ##  <a name="getwindowrgn"></a>  CWindow::GetWindowRgn
 
@@ -1470,7 +1470,7 @@ int GetWindowTextLength() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowTextLength](https://msdn.microsoft.com/library/windows/desktop/ms633521) Windows SDK에에서 있습니다.
+참조 [GetWindowTextLength](/windows/desktop/api/winuser/nf-winuser-getwindowtextlengtha) Windows SDK에에서 있습니다.
 
 ##  <a name="getwindowthreadid"></a>  CWindow::GetWindowThreadID
 
@@ -1482,7 +1482,7 @@ DWORD GetWindowThreadID() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowThreadProcessID](https://msdn.microsoft.com/library/windows/desktop/ms633522) Windows SDK에에서 있습니다.
+참조 [GetWindowThreadProcessID](/windows/desktop/api/winuser/nf-winuser-getwindowthreadprocessid) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1599,7 +1599,7 @@ BOOL IsChild(const HWND hWnd) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [IsChild](https://msdn.microsoft.com/library/windows/desktop/ms633524) Windows SDK에에서 있습니다.
+참조 [IsChild](/windows/desktop/api/winuser/nf-winuser-ischild) Windows SDK에에서 있습니다.
 
 ##  <a name="isdialogmessage"></a>  CWindow::IsDialogMessage
 
@@ -1635,7 +1635,7 @@ BOOL IsIconic() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [IsIconic](https://msdn.microsoft.com/library/windows/desktop/ms633527) Windows SDK에에서 있습니다.
+참조 [IsIconic](/windows/desktop/api/winuser/nf-winuser-isiconic) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1663,7 +1663,7 @@ BOOL IsWindow() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [IsWindow](https://msdn.microsoft.com/library/windows/desktop/ms633528) Windows SDK에에서 있습니다.
+참조 [IsWindow](/windows/desktop/api/winuser/nf-winuser-iswindow) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1679,7 +1679,7 @@ BOOL IsWindowEnabled() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [IsWindowEnabled](https://msdn.microsoft.com/library/windows/desktop/ms646303) Windows SDK에에서 있습니다.
+참조 [IsWindowEnabled](/windows/desktop/api/winuser/nf-winuser-iswindowenabled) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1695,7 +1695,7 @@ BOOL IsWindowVisible() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [IsWindowVisible](https://msdn.microsoft.com/library/windows/desktop/ms633530) Windows SDK에에서 있습니다.
+참조 [IsWindowVisible](/windows/desktop/api/winuser/nf-winuser-iswindowvisible) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1711,7 +1711,7 @@ BOOL IsWindowUnicode() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [에서 IsWindowUnicode](https://msdn.microsoft.com/library/windows/desktop/ms633529) Windows SDK에에서 있습니다.
+참조 [에서 IsWindowUnicode](/windows/desktop/api/winuser/nf-winuser-iswindowunicode) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -1727,7 +1727,7 @@ BOOL IsZoomed() const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [IsZoomed](https://msdn.microsoft.com/library/windows/desktop/ms633531) Windows SDK에에서 있습니다.
+참조 [IsZoomed](/windows/desktop/api/winuser/nf-winuser-iszoomed) Windows SDK에에서 있습니다.
 
 ##  <a name="killtimer"></a>  CWindow::KillTimer
 
@@ -1739,7 +1739,7 @@ BOOL KillTimer(UINT nIDEvent) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [KillTimer](https://msdn.microsoft.com/library/windows/desktop/ms644903) Windows SDK에에서 있습니다.
+참조 [KillTimer](/windows/desktop/api/winuser/nf-winuser-killtimer) Windows SDK에에서 있습니다.
 
 ##  <a name="lockwindowupdate"></a>  CWindow::LockWindowUpdate
 
@@ -1978,7 +1978,7 @@ BOOL PostMessage(
 
 ### <a name="remarks"></a>설명
 
-참조 [PostMessage](https://msdn.microsoft.com/library/windows/desktop/ms644944) Windows SDK에에서 있습니다.
+참조 [PostMessage](/windows/desktop/api/winuser/nf-winuser-postmessagea) Windows SDK에에서 있습니다.
 
 메시지를 처리 하는 스레드를 기다리지 않고 반환 합니다.
 
@@ -2206,7 +2206,7 @@ static LRESULT SendMessage(
 
 ### <a name="remarks"></a>설명
 
-참조 [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows SDK에에서 있습니다.
+참조 [SendMessage](/windows/desktop/api/winuser/nf-winuser-sendmessage) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2255,7 +2255,7 @@ BOOL SendNotifyMessage(
 
 ### <a name="remarks"></a>설명
 
-참조 [SendNotifyMessage](https://msdn.microsoft.com/library/windows/desktop/ms644953) Windows SDK에에서 있습니다.
+참조 [SendNotifyMessage](/windows/desktop/api/winuser/nf-winuser-sendnotifymessagea) Windows SDK에에서 있습니다.
 
 호출 스레드에서 창을 만든 경우 `SendNotifyMessage` 창 프로시저에서 메시지를 처리할 때까지 반환 되지 않습니다. 그렇지 않은 경우 즉시 반환 합니다.
 
@@ -2269,7 +2269,7 @@ HWND SetActiveWindow() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [SetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646311) Windows SDK에에서 있습니다.
+참조 [SetActiveWindow](/windows/desktop/api/winuser/nf-winuser-setactivewindow) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2285,7 +2285,7 @@ HWND SetCapture() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [SetCapture](https://msdn.microsoft.com/library/windows/desktop/ms646262) Windows SDK에에서 있습니다.
+참조 [SetCapture](/windows/desktop/api/winuser/nf-winuser-setcapture) Windows SDK에에서 있습니다.
 
 ##  <a name="setclipboardviewer"></a>  CWindow::SetClipboardViewer
 
@@ -2353,7 +2353,7 @@ HWND SetFocus() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) Windows SDK에에서 있습니다.
+참조 [SetFocus](/windows/desktop/api/winuser/nf-winuser-setfocus) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2441,7 +2441,7 @@ HWND SetParent(HWND hWndNewParent) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [SetParent](https://msdn.microsoft.com/library/windows/desktop/ms633541) Windows SDK에에서 있습니다.
+참조 [SetParent](/windows/desktop/api/winuser/nf-winuser-setparent) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2527,7 +2527,7 @@ UINT SetTimer(
 
 ### <a name="remarks"></a>설명
 
-참조 [SetTimer](https://msdn.microsoft.com/library/windows/desktop/ms644906) Windows SDK에에서 있습니다.
+참조 [SetTimer](/windows/desktop/api/winuser/nf-winuser-settimer) Windows SDK에에서 있습니다.
 
 ##  <a name="setwindowcontexthelpid"></a>  CWindow::SetWindowContextHelpId
 
@@ -2566,7 +2566,7 @@ LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [SetWindowLongPtr](https://msdn.microsoft.com/library/windows/desktop/ms644898) Windows SDK에에서 있습니다.
+참조 [SetWindowLongPtr](/windows/desktop/api/winuser/nf-winuser-setwindowlongptra) Windows SDK에에서 있습니다.
 
 이 함수를 대체 합니다 `CWindow::SetWindowLong` 메서드. 32 비트 및 64 비트 버전 Windows의 호환 되는 코드를 작성 하려면 사용할 `CWindow::SetWindowLongPtr`합니다.
 
@@ -2580,7 +2580,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
 
 ### <a name="remarks"></a>설명
 
-참조 [SetWindowPlacement](https://msdn.microsoft.com/library/windows/desktop/ms633544) Windows SDK에에서 있습니다.
+참조 [SetWindowPlacement](/windows/desktop/api/winuser/nf-winuser-setwindowplacement) Windows SDK에에서 있습니다.
 
 ##  <a name="setwindowpos"></a>  CWindow::SetWindowPos
 
@@ -2673,7 +2673,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [ShowOwnedPopups](https://msdn.microsoft.com/library/windows/desktop/ms633547) Windows SDK에에서 있습니다.
+참조 [ShowOwnedPopups](/windows/desktop/api/winuser/nf-winuser-showownedpopups) Windows SDK에에서 있습니다.
 
 ##  <a name="showscrollbar"></a>  CWindow::ShowScrollBar
 
@@ -2697,7 +2697,7 @@ BOOL ShowWindow(int nCmdShow) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [ShowWindow](https://msdn.microsoft.com/library/windows/desktop/ms633548) Windows SDK에에서 있습니다.
+참조 [ShowWindow](/windows/desktop/api/winuser/nf-winuser-showwindow) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 
@@ -2713,7 +2713,7 @@ BOOL ShowWindowAsync(int nCmdShow) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [ShowWindowAsync](https://msdn.microsoft.com/library/windows/desktop/ms633549) Windows SDK에에서 있습니다.
+참조 [ShowWindowAsync](/windows/desktop/api/winuser/nf-winuser-showwindowasync) Windows SDK에에서 있습니다.
 
 ##  <a name="updatewindow"></a>  CWindow::UpdateWindow
 

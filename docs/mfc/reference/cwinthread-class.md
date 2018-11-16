@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: c1eeb649917e8457af5a3a27324ae65ae8259ac8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f6c41b3675251df6b07e44003215fa67fb7e795
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477323"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694194"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
@@ -445,7 +445,7 @@ BOOL PostThreadMessage(
 게시 된 메시지는 메시지 맵 매크로 ON_THREAD_MESSAGE에 의해 적절 한 메시지 처리기에 매핑됩니다.
 
 > [!NOTE]
-> 호출 하는 경우 [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946), 메시지는 스레드의 메시지 큐에 배치 됩니다. 그러나 이러한 방식으로 게시 되는 메시지 창에 연결 되어 있지 않으므로 MFC는 디스패치하지 해당 메시지나 명령 처리기에. 이러한 메시지를 처리 하기 위해 재정의 `PreTranslateMessage()` CWinApp 파생의 함수 클래스를 수동으로 메시지를 처리 합니다.
+> 호출 하는 경우 [PostThreadMessage](/windows/desktop/api/winuser/nf-winuser-postthreadmessagea), 메시지는 스레드의 메시지 큐에 배치 됩니다. 그러나 이러한 방식으로 게시 되는 메시지 창에 연결 되어 있지 않으므로 MFC는 디스패치하지 해당 메시지나 명령 처리기에. 이러한 메시지를 처리 하기 위해 재정의 `PreTranslateMessage()` CWinApp 파생의 함수 클래스를 수동으로 메시지를 처리 합니다.
 
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage
 

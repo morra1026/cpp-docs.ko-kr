@@ -5,12 +5,12 @@ helpviewer_keywords:
 - side-by-side assemblies [C++]
 - isolated assemblies [C++]
 ms.assetid: 945a885f-cb3e-4c8a-a0b9-2c2e3e02cc50
-ms.openlocfilehash: 6453e68b07013bc5f5799b7252ad9a88e73250f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac354ed34bc3ab849eecf9256b447308f449abfe
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532940"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693574"
 ---
 # <a name="concepts-of-isolated-applications-and-side-by-side-assemblies"></a>격리된 응용 프로그램 및 side-by-side 어셈블리 개념
 
@@ -22,7 +22,7 @@ side-by-side 어셈블리는 공유 또는 전용으로 설정할 수 있습니�
 
 ## <a name="manifests-and-search-order"></a>매니페스트 및 검색 순서
 
-격리된 응용 프로그램과 side-by-side 어셈블리는 모두 [매니페스트](https://msdn.microsoft.com/library/aa375365)로 설명됩니다. 매니페스트는 응용 프로그램이나 어셈블리에 리소스로 포함되거나 외부 파일로 제공되는 XML 문서입니다. 격리된 응용 프로그램의 매니페스트 파일은 런타임에 응용 프로그램을 바인딩해야 하는 공유 side-by-side 어셈블리의 이름과 버전을 관리하는 데 사용됩니다. side-by-side 어셈블리의 매니페스트는 side-by-side 어셈블리의 종속 어셈블리, 이름, 버전 및 리소스를 지정합니다. 공유 side-by-side 어셈블리의 경우 매니페스트는 %WINDIR%\WinSxS\Manifests\ 폴더에 설치됩니다. 전용 어셈블리의 경우 매니페스트를 DLL에 ID가 1인 리소스로 포함하는 것이 좋습니다. 전용 어셈블리의 이름을 DLL과 같은 이름으로 지정할 수도 있습니다. 자세한 내용은 [전용 어셈블리에 대 한](/windows/desktop/SbsCs/about-private-assemblies-)합니다.
+격리된 응용 프로그램과 side-by-side 어셈블리는 모두 [매니페스트](/windows/desktop/sbscs/manifests)로 설명됩니다. 매니페스트는 응용 프로그램이나 어셈블리에 리소스로 포함되거나 외부 파일로 제공되는 XML 문서입니다. 격리된 응용 프로그램의 매니페스트 파일은 런타임에 응용 프로그램을 바인딩해야 하는 공유 side-by-side 어셈블리의 이름과 버전을 관리하는 데 사용됩니다. side-by-side 어셈블리의 매니페스트는 side-by-side 어셈블리의 종속 어셈블리, 이름, 버전 및 리소스를 지정합니다. 공유 side-by-side 어셈블리의 경우 매니페스트는 %WINDIR%\WinSxS\Manifests\ 폴더에 설치됩니다. 전용 어셈블리의 경우 매니페스트를 DLL에 ID가 1인 리소스로 포함하는 것이 좋습니다. 전용 어셈블리의 이름을 DLL과 같은 이름으로 지정할 수도 있습니다. 자세한 내용은 [전용 어셈블리에 대 한](/windows/desktop/SbsCs/about-private-assemblies-)합니다.
 
 프로그램을 실행할 때 Windows에서는 응용 프로그램의 매니페스트에 있는 어셈블리 정보를 사용하여 필요한 side-by-side 어셈블리를 검색하고 로드합니다. 격리된 응용 프로그램에서 어셈블리 종속성을 지정하는 경우 운영 체제는 먼저 %WINDIR%\WinSxS\ 폴더에 있는 네이티브 어셈블리 캐시의 공유 어셈블리 중에서 필요한 어셈블리를 검색합니다. 필요한 어셈블리를 찾지 못하면 운영 체제는 응용 프로그램의 디렉터리 구조에서 관련 폴더의 전용 어셈블리를 검색합니다. 자세한 내용은 [어셈블리 검색 시퀀스](/windows/desktop/SbsCs/assembly-searching-sequence)를 참조하세요.
 

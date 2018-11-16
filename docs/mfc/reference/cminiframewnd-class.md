@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CMiniFrameWnd [MFC], Create
 - CMiniFrameWnd [MFC], CreateEx
 ms.assetid: b8f534ed-0532-4d8e-9657-5595cf677749
-ms.openlocfilehash: f16a8cd21fe724c44a1ed648f29e42cb5d00dcd1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6fdef34ba5873718caed509100cbe7e905d880d
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663309"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693529"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd 클래스
 
@@ -167,7 +167,7 @@ virtual BOOL CreateEx(
 확장된 스타일을 지정 합니다 `CMiniFrameWnd` 만들어지는 합니다. 적용 된 [확장 창 스타일](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) 창에 있습니다.
 
 *lpClassName*<br/>
-Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) 구조). 전역으로 등록 된 모든 이름 클래스 이름일 수 있습니다 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 함수 또는 미리 정의 된 컨트롤 클래스 이름입니다. NULL이 아니어야 합니다.
+Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가리키는 (한 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 구조). 전역으로 등록 된 모든 이름 클래스 이름일 수 있습니다 [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) 함수 또는 미리 정의 된 컨트롤 클래스 이름입니다. NULL이 아니어야 합니다.
 
 *lpWindowName*<br/>
 창 이름이 포함 된 null로 끝나는 문자열을 가리킵니다.

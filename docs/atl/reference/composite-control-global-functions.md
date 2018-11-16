@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 6438b9d125cc2b44c6c4525dcfa5a2bd95763304
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 3b4abc1afc99a00d83c25574df06ebfb27141c65
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524432"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694181"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -490,7 +490,7 @@ inline BOOL AtlAxWinTerm();
 
 ### <a name="remarks"></a>설명
 
-이 함수 호출 [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) Windows SDK에 설명 된 대로 합니다.
+이 함수 호출 [UnregisterClass](/windows/desktop/api/winuser/nf-winuser-unregisterclassa) Windows SDK에 설명 된 대로 합니다.
 
 이 함수를 호출 하면 모든 기존 호스트 창을 제거 된 후 정리 하기 위해 호출 [AtlAxWinInit](#atlaxwininit) 및 호스트 창을 만들 필요가 없습니다. 이 함수를 호출 하지 않으면, 창 클래스를 등록 취소할 수 자동으로 프로세스가 종료 될 때.
 
