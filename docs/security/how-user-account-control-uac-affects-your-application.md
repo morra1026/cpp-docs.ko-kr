@@ -1,18 +1,18 @@
 ---
 title: UAC(사용자 계정 컨트롤)가 응용 프로그램에 주는 영향
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - UAC [C++]
 - security [C++], User Account Control
 - user accounts [C++]
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-ms.openlocfilehash: 336260ddc1c9da795478d5541af73d9801633843
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04bfc16f2d82863faca806d4cb8d5295104a0cc9
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556964"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177045"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>UAC(사용자 계정 컨트롤)가 응용 프로그램에 주는 영향
 
@@ -34,7 +34,7 @@ UAC를 사용하지 않는 Windows Vista에 Visual C++ 프로젝트를 빌드하
 
 다음 순서도는 UAC의 사용 여부와 응용 프로그램에 UAC 매니페스트가 있는지 여부에 따라 응용 프로그램이 어떻게 실행되는지를 설명합니다.
 
-![Windows Vista 로더 동작](media/uacflowchart.png "UACflowchart")
+![Windows 로더 동작](media/uacflowchart.png "Windows 로더 동작")
 
 ## <a name="see-also"></a>참고 항목
 

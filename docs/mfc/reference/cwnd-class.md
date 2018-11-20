@@ -1,6 +1,6 @@
 ---
 title: CWnd 클래스
-ms.date: 08/27/2018
+ms.date: 11/19/2018
 f1_keywords:
 - CWnd
 - AFXWIN/CWnd
@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: 365ecea539d47892b8697bb7b6ce2015bc18cda3
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: f1d418cadd2739b840efd14874fd4bbd6afeb4c5
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694896"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177110"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1816,7 +1816,7 @@ CWnd* ChildWindowFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 테스트할 점의 클라이언트 좌표를 지정 합니다.
 
 *nflags*<br/>
@@ -2655,7 +2655,7 @@ BOOL DragDetect(POINT pt) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 화면 좌표에서 마우스의 초기 위치입니다. 함수는이 지점을 사용 하 여 끌기 사각형의 좌표를 결정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -5688,10 +5688,10 @@ int MessageBox(
 
 |||
 |-|-|
-|![중지 &#40;x&#41; 아이콘](../../mfc/reference/media/vc364f1.gif "vc364f1")|MB_ICONHAND, MB_ICONSTOP, 및 MB_ICONERROR|
-|![도움말 &#40; &#41; 아이콘](../../mfc/reference/media/vc364f2.gif "vc364f2")|MB_ICONQUESTION|
-|![중요 &#40; &#33; &#41; 아이콘](../../mfc/reference/media/vc364f3.gif "vc364f3")|MB_ICONEXCLAMATION 및 MB_ICONWARNING|
-|![정보 &#40;i&#41; 아이콘](../../mfc/reference/media/vc364f4.gif "vc364f4")|MB_ICONASTERISK 및 MB_ICONINFORMATION|
+|![중지 &#40;x&#41; 아이콘](../../mfc/reference/media/vc364f1.gif "중지 &#40;x&#41; 아이콘")|MB_ICONHAND, MB_ICONSTOP, 및 MB_ICONERROR|
+|![도움말 &#40;? &#41; 아이콘](../../mfc/reference/media/vc364f2.gif "도움말 &#40;?&#41; 아이콘")|MB_ICONQUESTION|
+|![중요 &#40; &#33; &#41; 아이콘](../../mfc/reference/media/vc364f3.gif "중요 &#40; &#33; &#41; 아이콘")|MB_ICONEXCLAMATION 및 MB_ICONWARNING|
+|![정보 &#40;i&#41; 아이콘](../../mfc/reference/media/vc364f4.gif "정보 &#40;있습니까&#41; 아이콘")|MB_ICONASTERISK 및 MB_ICONINFORMATION|
 
 ### <a name="example"></a>예제
 
@@ -7497,7 +7497,7 @@ afx_msg void OnLButtonDblClk(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -7532,7 +7532,7 @@ afx_msg void OnLButtonDown(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -7563,7 +7563,7 @@ afx_msg void OnLButtonUp(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -7596,7 +7596,7 @@ afx_msg void OnMButtonDblClk(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -7631,7 +7631,7 @@ afx_msg void OnMButtonDown(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -7662,7 +7662,7 @@ afx_msg void OnMButtonUp(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -7964,7 +7964,7 @@ afx_msg void OnMouseHover(
 |매개 변수|설명|
 |---------------|-----------------|
 |*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8002,7 +8002,7 @@ afx_msg void OnMouseHWheel(
 |---------------|-----------------|
 |*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.<br /><br /> 플래그 목록은 참조에서 "메시지 매개 변수" 부제목 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.|
 |*zDelta*|[in] 120 인 배수로 WHEEL_DELTA의 사업부에 표현 된 휠이 회전 되는 거리를 나타냅니다. 양수 값 이면 휠 오른쪽으로 회전 된는 음수 값 휠을 왼쪽 회전을 나타냅니다.|
-|*(태평양 표준시)*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*pt*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8051,7 +8051,7 @@ afx_msg void OnMouseMove(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8090,7 +8090,7 @@ afx_msg BOOL OnMouseWheel(
 *zDelta*<br/>
 거리 회전을 나타냅니다. 합니다 *zDelta* 값 120 인 배수로 또는 WHEEL_DELTA에의 한 부분으로 표현 됩니다. 값이 0 보다 작은 값 (사용자 반대쪽) 앞으로 회전 0 보다 크면 하는 동안 회전 뒤로 (원통이 사용자)를 나타냅니다. 사용자는 소프트웨어 마우스에서에서 휠 설정을 변경 하 여이 응답을 되돌릴 수 있습니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하세요.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -8257,7 +8257,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 커서의 x 좌표와 y 좌표를 포함합니다. 이러한 좌표는 항상 화면 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -8284,7 +8284,7 @@ afx_msg void OnNcLButtonDblClk(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8309,7 +8309,7 @@ afx_msg void OnNcLButtonDown(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8334,7 +8334,7 @@ afx_msg void OnNcLButtonUp(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8359,7 +8359,7 @@ afx_msg void OnNcMButtonDblClk(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8382,7 +8382,7 @@ afx_msg void OnNcMButtonDown(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8405,7 +8405,7 @@ afx_msg void OnNcMButtonUp(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8428,7 +8428,7 @@ afx_msg void OnNcMouseHover(
 |매개 변수|설명|
 |---------------|-----------------|
 |*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8467,7 +8467,7 @@ afx_msg void OnNcMouseMove(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8506,7 +8506,7 @@ afx_msg void OnNcRButtonDblClk(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8529,7 +8529,7 @@ afx_msg void OnNcRButtonDown(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8552,7 +8552,7 @@ afx_msg void OnNcRButtonUp(
 *nHitTest*<br/>
 지정 된 [적중 테스트 코드](#onnchittest)합니다. 적중 횟수 테스트에는 커서의 위치를 결정 하는 테스트가입니다.
 
-*지점*<br/>
+*point*<br/>
 지정 된 `CPoint` x 및 y를 포함 하는 개체는 커서 위치의 좌표를 화면. 이러한 좌표는 항상 화면의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8598,7 +8598,7 @@ void OnNcXButtonDblClk(
 |---------------|-----------------|
 |*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
 |*n 단추*|[in] 첫 번째 Microsoft Intellimouse X 단추를 두 번 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8624,7 +8624,7 @@ afx_msg void OnNcXButtonDown(
 |---------------|-----------------|
 |*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
 |*n 단추*|[in] 값이 첫 번째 X 마우스 단추를 누르는 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 누르면 됩니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -8650,7 +8650,7 @@ afx_msg void OnNcXButtonUp(
 |---------------|-----------------|
 |*nHitTest*|[in] 적중 테스트 값을 반환 합니다 [CWnd::DefWindowProc](#defwindowproc) 처리의 결과로 함수는 [WM_NCHITTEST](/windows/desktop/inputdev/wm-nchittest) 메시지입니다.|
 |*n 단추*|[in] 값이 첫 번째 X 마우스 단추를 놓을 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 놓으면 됩니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 화면의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -9043,7 +9043,7 @@ afx_msg void OnRButtonDblClk(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 X 및 y를 지정 합니다. 커서의 좌표가 합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -9078,7 +9078,7 @@ afx_msg void OnRButtonDown(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 X 및 y를 지정 합니다. 커서의 좌표가 합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -9108,7 +9108,7 @@ afx_msg void OnRButtonUp(
 
 - SHIFT 키가 눌러져 MK_SHIFT 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 X 및 y를 지정 합니다. 커서의 좌표가 합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로 합니다.
 
 ### <a name="remarks"></a>설명
@@ -9860,7 +9860,7 @@ virtual INT_PTR OnToolHitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 커서의 x 및 y 좌표를 지정합니다. 이러한 좌표는 항상 창의 왼쪽 위 모퉁이 기준으로
 
 *PTI*<br/>
@@ -9902,7 +9902,7 @@ virtual BOOL OnTouchInput(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 클라이언트 좌표로 나타낸 화면 연결 된 위치를 가리킵니다.
 
 *nInputNumber*<br/>
@@ -10312,7 +10312,7 @@ afx_msg void OnXButtonDblClk(
 |---------------|-----------------|
 |*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
 |*n 단추*|[in] 첫 번째 Microsoft Intellimouse X 단추를 두 번 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10350,7 +10350,7 @@ afx_msg void OnXButtonDown(
 |---------------|-----------------|
 |*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
 |*n 단추*|[in] 값이 첫 번째 Microsoft Intellimouse X 단추를 클릭 했을 경우 XBUTTON1 또는 xbutton2를 놓으면 경우 두 번째 X 단추를 클릭 합니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10388,7 +10388,7 @@ afx_msg void OnXButtonUp(
 |---------------|-----------------|
 |*nFlags*|[in] 한정자 키를 누르면 여부를 나타내는 플래그의 비트 조합 (OR)입니다. 예를 들어 MK_CONTROL 플래그 CTRL 키를 눌렀음을 나타냅니다.|
 |*n 단추*|[in] 첫 번째 Microsoft Intellimouse X 단추를 두 번 클릭할 경우 XBUTTON1 또는 xbutton2를 놓으면 값 경우 두 번째 X 단추를 두 번 클릭 합니다.|
-|*지점*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
+|*point*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 하는 개체를 *x* 하 고 *y* 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 커서의 좌표가 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -11261,7 +11261,7 @@ static void PASCAL SetCaretPos(POINT point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 새 x 및 y를 지정 합니다. 캐럿의 좌표 (클라이언트 좌표로).
 
 ### <a name="remarks"></a>설명
@@ -12341,7 +12341,7 @@ static CWnd* PASCAL WindowFromPoint(POINT point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 지정 된 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체 또는 [가리킨](../../mfc/reference/point-structure1.md) 검사할 지점을 정의 하는 데이터 구조.
 
 ### <a name="return-value"></a>반환 값

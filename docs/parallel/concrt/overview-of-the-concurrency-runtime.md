@@ -1,18 +1,18 @@
 ---
 title: 동시성 런타임 개요
-ms.date: 07/20/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Concurrency Runtime, requirements
 - Concurrency Runtime, architecture
 - Concurrency Runtime, overview
 - Concurrency Runtime, lambda expressions
 ms.assetid: 56237d96-10b0-494a-9cb4-f5c5090436c5
-ms.openlocfilehash: dab4860bcc69780fa6a6390e2ef111216642637a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: ffaf560361da2fd54febb5e38af121ad5149f012
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693658"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176668"
 ---
 # <a name="overview-of-the-concurrency-runtime"></a>동시성 런타임 개요
 
@@ -60,10 +60,10 @@ Visual Studio 2015 이상에서는 동시성 런타임 작업 Scheduler가 더 �
 
 **동시성 런타임 아키텍처**
 
-![동시성 런타임 아키텍처](../../parallel/concrt/media/concurrencyrun.png "concurrencyrun")
+![동시성 런타임 아키텍처](../../parallel/concrt/media/concurrencyrun.png "동시성 런타임 아키텍처")
 
 > [!IMPORTANT]
->  작업 Scheduler 및 리소스 관리자 구성 요소 ppltasks.h에 작업 클래스나 기타 형식을 사용 하는 경우 또는 유니버설 Windows 플랫폼 (UWP) 앱에서 사용할 수 있습니다.
+> 작업 Scheduler 및 리소스 관리자 구성 요소 ppltasks.h에 작업 클래스나 기타 형식을 사용 하는 경우 또는 유니버설 Windows 플랫폼 (UWP) 앱에서 사용할 수 있습니다.
 
 동시성 런타임에서 항상 *구성 가능한*, 즉, 더 많은 기존 기능에 결합할 수 있습니다. 동시성 런타임은 하위 수준의 구성 요소에서 병렬 알고리즘과 같은 많은 기능을 작성합니다.
 

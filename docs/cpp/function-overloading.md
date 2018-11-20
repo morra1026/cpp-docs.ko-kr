@@ -1,17 +1,17 @@
 ---
 title: 함수 오버로드
-ms.date: 1/25/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - function overloading [C++], about function overloading
 - function overloading
 - declaring functions [C++], overloading
 ms.assetid: 3c9884cb-1d5e-42e8-9a49-6f46141f929e
-ms.openlocfilehash: f37a539c74b995b1dce5f68344c555a679a87991
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c05e4b840a02b3d9bbcd4ed259509be4c35c22c2
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333373"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176304"
 ---
 # <a name="function-overloading"></a>함수 오버로드
 
@@ -280,7 +280,8 @@ volatile Over&
 
    - 파생 클래스에 대한 포인터에서 기본 클래스에 대한 포인터로 변환할 경우 기본 클래스가 직접 기본 클래스에 가까울수록 더 잘 일치합니다. 클래스 계층 구조가 다음 그림과 같다고 가정합니다.
 
-![기본 변환을](../cpp/media/vc391t1.gif "vc391T1") 그래프를 보여 주는 기본 설정 변환
+![기본 변환에 대 한 그래프](../cpp/media/vc391t1.gif "기본 변환에 대 한 그래프") <br/>
+기본 변환을 보여 주는 그래프
 
 `D*` 형식에서 `C*` 형식으로 변환하는 것이 `D*` 형식에서 `B*` 형식으로 변환하는 것보다 좋습니다. 마찬가지로 `D*` 형식에서 `B*` 형식으로 변환하는 것이 `D*` 형식에서 `A*` 형식으로 변환하는 것보다 좋습니다.
 
@@ -290,7 +291,8 @@ volatile Over&
 
 앞의 규칙은 지정된 파생 경로에만 적용됩니다. 다음 그림에 표시된 그래프를 살펴보세요.
 
-![다중&#45;기본 변환을 보여 주는 상속](../cpp/media/vc391t2.gif "vc391T2") 다중 상속 그래프를 보여 주는 기본 설정 변환
+![여러&#45;기본 변환을 보여 주는 상속](../cpp/media/vc391t2.gif "여러&#45;기본 변환을 보여 주는 상속") <br/>
+기본 변환을 보여 주는 다중 상속 그래프
 
 `C*` 형식에서 `B*` 형식으로 변환하는 것이 `C*` 형식에서 `A*` 형식으로 변환하는 것보다 좋습니다. 이유는 이들이 동일한 경로에 있고 `B*`가 더 가깝기 때문입니다. 그러나 `C*` 형식에서 `D*` 형식으로 변환하는 것이 `A*` 형식으로 변환하는 것보다 좋다고 할 수 없습니다. 이들 변환은 서로 다른 경로를 따르므로 우선 순위가 없기 때문입니다.
 

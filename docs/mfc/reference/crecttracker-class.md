@@ -1,6 +1,6 @@
 ---
 title: CRectTracker 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CRectTracker
 - AFXEXT/CRectTracker
@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CRectTracker [MFC], m_rect
 - CRectTracker [MFC], m_sizeMin
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
-ms.openlocfilehash: 519f88a3706812ae77d7dbd77e199b3e3ef4e97a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c82b06903f0705a79a15b263b1dbdfc6aee4c8ca
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473374"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176512"
 ---
 # <a name="crecttracker-class"></a>CRectTracker 클래스
 
@@ -237,7 +237,7 @@ virtual UINT GetHandleMask() const;
 
 사각형의 8 크기 조정 핸들 번호 0-7입니다. 각 크기 조정 핸들이 나타내는 비트 마스크; 해당 비트의 값은 2 ^ *n*, 여기서 *n* 크기 조정 핸들입니다. 시계 방향으로 이동 왼쪽 위에서 시작 하 여 모퉁이 크기 조정 핸들을 해당 비트 0-3입니다. 시계 방향으로 위쪽에서 시작 하는 핸들의 크기를 조정 하는 비트 4-7 쪽에 해당 합니다. 다음 그림에서는 사각형의 크기 조정 핸들 및 핸들 번호 및 값의 크기를 조정 해당 보여 줍니다.
 
-![크기 조정 핸들 번호](../../mfc/reference/media/vc35dp1.gif "vc35dp1")
+![크기 조정 핸들 번호](../../mfc/reference/media/vc35dp1.gif "크기 조정 핸들 번호")
 
 기본 구현을 `GetHandleMask` 크기 조정 핸들이 표시 되도록 비트 마스크를 반환 합니다. 단일 비트에 있으면 해당 크기 조정 핸들을 그립니다.
 
@@ -270,7 +270,7 @@ int HitTest(CPoint point) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 테스트 장치 좌표 지점입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -424,7 +424,7 @@ BOOL Track(
 *pWnd*<br/>
 사각형을 포함 하는 창 개체입니다.
 
-*지점*<br/>
+*point*<br/>
 장치 좌표 클라이언트 영역을 기준으로 마우스의 현재 위치입니다.
 
 *bAllowInvert*<br/>
@@ -461,7 +461,7 @@ BOOL TrackRubberBand(
 *pWnd*<br/>
 사각형을 포함 하는 창 개체입니다.
 
-*지점*<br/>
+*point*<br/>
 장치 좌표 클라이언트 영역을 기준으로 마우스의 현재 위치입니다.
 
 *bAllowInvert*<br/>

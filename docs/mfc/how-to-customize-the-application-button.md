@@ -1,21 +1,21 @@
 ---
 title: '방법: 응용 프로그램 단추 사용자 지정'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - application button [MFC], customizing
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-ms.openlocfilehash: e556e9e6509179b692e4c86b67d59ff2e2ec0f02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba29e9ad65e0bb1d2163e4051c7c7b53664d8817
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592792"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175329"
 ---
 # <a name="how-to-customize-the-application-button"></a>방법: 응용 프로그램 단추 사용자 지정
 
 응용 프로그램 단추를 클릭 하면 명령 메뉴를 표시 됩니다. 일반적으로 메뉴 명령이 파일 관련와 같은 **엽니다**, **저장**를 **인쇄**, 및 **종료**합니다.
 
-![MFC 리본 응용 프로그램 단추](../mfc/media/application_button.png "application_button")
+![MFC 리본 응용 프로그램 단추](../mfc/media/application_button.png "MFC 리본 응용 프로그램 단추")
 
 응용 프로그램 단추를 사용자 지정 하려면 열에 **속성** 창에서 속성을 수정한 다음 리본 컨트롤을 미리 봅니다.
 
@@ -57,4 +57,3 @@ ms.locfileid: "50592792"
 ## <a name="see-also"></a>참고 항목
 
 [리본 디자이너(MFC)](../mfc/ribbon-designer-mfc.md)
-

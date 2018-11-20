@@ -1,6 +1,6 @@
 ---
 title: MDI 자식 창 관리
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - MDICLIENT
 helpviewer_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - child windows [MFC]
 - MDI [MFC], frame windows
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-ms.openlocfilehash: 2055c215392c6805791de729ff6ab8c6a9057308
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4b6ccf8a75cc7679f78fba48314073bc53b66a5
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629413"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176798"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI 자식 창 관리
 
@@ -25,7 +25,8 @@ MDI 주 프레임 창 (응용 프로그램 당 하나)는 MDICLIENT 창 이라�
 
 MDI 프레임 창에서 프레임 창은 컨트롤 막대를 사용 하 여 함께 MDICLIENT 창을 관리 합니다. MDICLIENT 창에는 차례로 모든 MDI 자식 프레임 창을 관리합니다. 다음 그림은 MDI 프레임 창, 해당 MDICLIENT 창 및 해당 자식 문서 프레임 창 사이의 관계를 보여 줍니다.
 
-![MDI 프레임 창의 자식 창](../mfc/media/vc37gb1.gif "vc37gb1") MDI 프레임 Windows 및 자식
+![MDI 프레임 창의 자식 창](../mfc/media/vc37gb1.gif "MDI 프레임 창의 자식 창") <br/>
+MDI 프레임 창 및 자식
 
 MDI 프레임 창은 또한 현재 MDI 자식 창(있는 경우)과 결합한 상태에서도 작동합니다. MDI 프레임 창은 명령 메시지를 직접 처리하려고 시도하기 전에 이를 먼저 MDI 자식에 위임합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: CMFCTasksPaneTask 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCTasksPaneTask
 - AFXTASKSPANE/CMFCTasksPaneTask
@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTask [MFC], m_strName
 - CMFCTasksPaneTask [MFC], m_uiCommandID
 ms.assetid: c5a7513b-cd8f-4e2e-b16f-650e1fe30954
-ms.openlocfilehash: 77fd20ad7a7f5bae8b9c654ef12b708c58cab33f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d7f5a87dc005ee67f9ce65f4ad686cb27d007c2
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516885"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176551"
 ---
 # <a name="cmfctaskspanetask-class"></a>CMFCTasksPaneTask 클래스
 
@@ -81,10 +81,10 @@ class CMFCTasksPaneTask : public CObject
 
 다음 그림에서는 세 가지 작업을 포함 하는 작업 그룹을 보여 줍니다.
 
-![작업 그룹, 확장 됨](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")
+![작업 그룹, 확장 됨](../../mfc/reference/media/nexttaskgrpexpand.png "작업 그룹, 확장 됨")
 
 > [!NOTE]
->  작업에 유효한 명령 ID를 찾을 수 없는 경우 단순 레이블로 처리 됩니다.
+> 작업에 유효한 명령 ID를 찾을 수 없는 경우 단순 레이블로 처리 됩니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

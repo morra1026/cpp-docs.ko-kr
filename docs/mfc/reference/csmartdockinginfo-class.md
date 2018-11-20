@@ -1,6 +1,6 @@
 ---
 title: CSmartDockingInfo 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CSmartDockingInfo
 - AFXDOCKINGMANAGER/CSmartDockingInfo
@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-ms.openlocfilehash: 885af55987c2d1e78cd0145fcee5ca0f4ef67dc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8931af856bc75bd499d8237278998adfcdb02a6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524662"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176772"
 ---
 # <a name="csmartdockinginfo-class"></a>CSmartDockingInfo 클래스
 
@@ -75,7 +75,7 @@ class CSmartDockingInfo : public CObject
 
 프레임 워크 처리는 내부적으로 도킹 표식 스마트합니다. 다음 그림에서는 표준 스마트 도킹 표식 보여 줍니다.
 
-![스마트 도킹의 표준 마커](../../mfc/reference/media/nextsdmarkers.png "nextsdmarkers")
+![스마트 도킹의 표준 마커](../../mfc/reference/media/nextsdmarkers.png "스마트 도킹의 표준 마커")
 
 이 그림에서 왼쪽에서 이미지를 사용 하도록 설정 하는 탭으로 도킹 되지 않은 중앙 그룹 스마트 도킹 표식 보여 줍니다. 가운데에서 이미지에는 오른쪽 가장자리 스마트 도킹 표식을 보여 줍니다. 오른쪽에서 이미지를 사용 하도록 설정 하는 탭으로 도킹 없는 중앙 그룹 스마트 도킹 표식 보여 줍니다. 중앙 그룹 스마트 도킹 표식의 주 비트맵 및 5 스마트 도킹 표식 비트맵입니다.
 
@@ -93,7 +93,7 @@ class CSmartDockingInfo : public CObject
 
 다음 그림에서는 사용자 지정 된 스마트 도킹 표식의 예를 보여 줍니다.
 
-![스마트 도킹의 사용자 지정 마커](../../mfc/reference/media/nextsdmarkerscustom.png "nextsdmarkerscustom")
+![스마트 도킹의 사용자 지정 마커](../../mfc/reference/media/nextsdmarkerscustom.png "스마트 도킹의 사용자 지정 마커")
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

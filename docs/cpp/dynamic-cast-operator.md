@@ -1,17 +1,17 @@
 ---
 title: dynamic_cast 연산자
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - dynamic_cast_cpp
 helpviewer_keywords:
 - dynamic_cast keyword [C++]
 ms.assetid: f380ada8-6a18-4547-93c9-63407f19856b
-ms.openlocfilehash: 75085fe6dd1478fee769e23938c55c6300429d86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b359885eb72f9272fb1efe14afe9a6cbe6ddb30
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529157"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176967"
 ---
 # <a name="dynamiccast-operator"></a>dynamic_cast 연산자
 
@@ -121,7 +121,8 @@ int main() {
 }
 ```
 
-![다중 상속을 보여 주는 계층 구조 클래스](../cpp/media/vc39011.gif "vc39011") 클래스 계층 구조를 보여 주는 다중 상속
+![다중 상속을 보여 주는 계층 구조 클래스](../cpp/media/vc39011.gif "다중 상속을 보여 주는 계층 구조 클래스") <br/>
+여러 상속을 보여 주는 클래스 계층 구조
 
 형식의 개체에 대 한 포인터 `D` 안전 하 게 캐스팅할 수 있습니다 `B` 또는 `C`합니다. 그러나 경우 `D` 가리키도록 캐스팅은 `A` 개체의 인스턴스 `A` 초래? 따라서 모호한 캐스팅 오류가 발생 합니다. 를이 문제를 해결 하기 위해 두 개의 모호 하지 않은 캐스트를 수행할 수 있습니다. 예를 들어:
 
@@ -141,13 +142,15 @@ void f() {
 
 가상 기본 클래스를 사용 하는 경우에 추가 모호성을 도입할 수 있습니다. 다음 그림에 표시 된 클래스 계층 구조를 고려 합니다.
 
-![가상 기본 클래스를 보여 주는 계층 구조 클래스](../cpp/media/vc39012.gif "vc39012") 클래스 계층 구조를 보여 주는 가상 기본 클래스
+![가상 기본 클래스를 보여 주는 계층 구조 클래스](../cpp/media/vc39012.gif "가상 기본 클래스를 보여 주는 계층 구조 클래스") <br/>
+가상 기본 클래스를 보여 주는 클래스 계층 구조
 
 이 계층에서 `A` 는 가상 기본 클래스입니다. 클래스의 인스턴스가 지정 된 `E` 에 대 한 포인터를 `A` 하위 개체를 **dynamic_cast** 포인터로 `B` 모호성으로 인해 실패 합니다. 먼저 전체으로 다시 캐스팅 해야 `E` 개체를 만든 다음, 올바른 연결할 명확한 방식으로 작업을 진행 계층 백업 `B` 개체입니다.
 
 다음 그림에 표시 된 클래스 계층 구조를 고려 합니다.
 
-![중복 기본 클래스를 보여 주는 계층 클래스](../cpp/media/vc39013.gif "vc39013") 클래스 계층 구조를 보여 주는 중복 기본 클래스
+![중복 기본 클래스를 보여 주는 계층 클래스](../cpp/media/vc39013.gif "클래스 중복 기본 클래스를 보여 주는 계층 구조") <br/>
+중복된 기본 클래스를 보여 주는 클래스 계층 구조
 
 형식의 개체를 지정 된 `E` 에 대 한 포인터를 `D` 하위 개체에서 탐색 하는 `D` 맨 왼쪽에는 하위 `A` 하위 개체, 세 가지 변환을 만들 수 있습니다. 수행할 수 있습니다는 **dynamic_cast** 변환할 합니다 `D` 에 대 한 포인터를 `E` 포인터를 변환 (하거나 **dynamic_cast** 또는 암시적으로 변환) 에서`E`하 `B`, 및 마지막으로 암시적으로 변환할 `B` 에 `A`입니다. 예를 들어:
 

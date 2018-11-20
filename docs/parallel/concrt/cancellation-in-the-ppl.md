@@ -1,6 +1,6 @@
 ---
 title: PPL에서의 취소
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms, canceling [Concurrency Runtime]
 - canceling parallel algorithms [Concurrency Runtime]
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - parallel work trees [Concurrency Runtime]
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-ms.openlocfilehash: b1a762f97cf144c39043203dbf68d927b2cbd0e4
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 1cb5404ff8c18492b940f7396ab4c8f4154d69e6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327423"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177019"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL에서의 취소
 
@@ -57,7 +57,7 @@ ms.locfileid: "51327423"
 
 PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 계산을 관리합니다. 폼에 작업 그룹을 중첩할 수 있습니다 *트리* 병렬 작업입니다. 다음 그림은 병렬 작업 트리를 보여 줍니다. 이 그림에서 `tg1` 및 `tg2`는 작업 그룹을 나타내고, `t1`, `t2`, `t3`, `t4` 및 `t5`는 작업 그룹에서 수행하는 작업을 나타냅니다.
 
-![병렬 작업 트리](../../parallel/concrt/media/parallelwork_trees.png "parallelwork_trees")
+![병렬 작업 트리](../../parallel/concrt/media/parallelwork_trees.png "병렬 작업 트리")
 
 다음 예제에서는 그림의 트리를 만드는 데 필요한 코드를 보여 줍니다. 이 예에서 `tg1` 하 고 `tg2` 됩니다 [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) 개체 `t1`, `t2`를 `t3`를 `t4`, 및 `t5` 됩니다 [concurrency:: task_handle](../../parallel/concrt/reference/task-handle-class.md) 개체입니다.
 
