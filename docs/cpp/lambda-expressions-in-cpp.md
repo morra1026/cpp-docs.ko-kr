@@ -1,17 +1,17 @@
 ---
 title: C++의 람다 식
-ms.date: 07/19/2017
+ms.date: 11/19/2018
 helpviewer_keywords:
 - lambda expressions [C++]
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: 44255df8633ad677587129dd27c0bdc23a616d96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b8568d69fea002e59925e1e9354407457954e42
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493810"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176265"
 ---
 # <a name="lambda-expressions-in-c"></a>C++의 람다 식
 
@@ -43,7 +43,7 @@ void abssort(float* x, unsigned n) {
 
 이 그림에서는 람다의 부분을 보여 줍니다.
 
-![람다 식의 구조적 요소](../cpp/media/lambdaexpsyntax.png "LambdaExpSyntax")
+![람다 식의 구조적 요소](../cpp/media/lambdaexpsyntax.png "람다 식의 구조적 요소")
 
 1. *캡처 절* (라고도 합니다 *람다 도입부* c + + 사양에.)
 

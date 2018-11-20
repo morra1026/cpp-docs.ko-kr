@@ -1,6 +1,6 @@
 ---
 title: CMFCPropertySheet 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCPropertySheet
 - AFXPROPERTYSHEET/CMFCPropertySheet
@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-ms.openlocfilehash: 8e643474d577c606e80f5f34c6166a59753610f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1168375606ef86061269454aa361a076efa331a4
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531614"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176408"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet 클래스
 
@@ -112,15 +112,15 @@ class CMFCPropertySheet : public CPropertySheet
 
 다음 그림에서는 포함된 Microsoft Outlook 도구 모음 스타일의 속성 시트를 보여 줍니다. Outlook 도구 모음은 속성 시트의 왼쪽에 나타납니다.
 
-![CMFCPropertySheet 색 컨트롤](../../mfc/reference/media/cmfcpropertysheet_color.png "cmfcpropertysheet_color")
+![CMFCPropertySheet 색 컨트롤](../../mfc/reference/media/cmfcpropertysheet_color.png "CMFCPropertySheet 색 컨트롤")
 
 다음 그림에서는 포함 된 속성 시트를 보여 줍니다.는 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md) 개체입니다. 해당 개체는 표준 공용 컨트롤 속성 시트 스타일의 속성 시트입니다.
 
-![CMFCPropertySheet 목록 및 속성 컨트롤](../../mfc/reference/media/cmfcpropertysheet_list.png "cmfcpropertysheet_list")
+![CMFCPropertySheet 목록 및 속성 컨트롤](../../mfc/reference/media/cmfcpropertysheet_list.png "CMFCPropertySheet 목록 및 속성 컨트롤")
 
 다음 그림에서는 트리 컨트롤 스타일의 속성 시트를 보여 줍니다.
 
-![속성 트리](../../mfc/reference/media/proptree.png "proptree")
+![속성 트리](../../mfc/reference/media/proptree.png "속성 트리")
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -391,7 +391,7 @@ virtual void OnDrawPageHeader(
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다. 이 메서드를 재정의 하는 경우 호출 된 [CMFCPropertySheet::EnablePageHeader](#enablepageheader) 프레임 워크는이 메서드를 호출 하기 전에 합니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다. 이 메서드를 재정의 하는 경우 호출 된 [CMFCPropertySheet::EnablePageHeader](#enablepageheader) 프레임 워크는이 메서드를 호출 하기 전에 합니다.
 
 ##  <a name="onremovetreepage"></a>  CMFCPropertySheet::OnRemoveTreePage
 

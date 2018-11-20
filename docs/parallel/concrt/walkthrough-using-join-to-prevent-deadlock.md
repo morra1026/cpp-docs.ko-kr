@@ -1,18 +1,18 @@
 ---
 title: '연습: join을 사용하여 교착 상태 방지'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - preventing deadlock with joins [Concurrency Runtime]
 - deadlock, preventing [Concurrency Runtime]
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: b98c2deb158b9b9fc71caa7133aeaeb2acfd369c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b62f4007a79faaff479e4e8ff998a8b48e4d5dd1
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498824"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175917"
 ---
 # <a name="walkthrough-using-join-to-prevent-deadlock"></a>연습: join을 사용하여 교착 상태 방지
 
@@ -48,7 +48,7 @@ ms.locfileid: "50498824"
 
 식당 철학자 문제가 응용 프로그램에서 교착 상태가 발생 하는 방법을 보여 줍니다. 이 문제가 5 철학자 라운드 테이블에 배치 합니다. 모든 철학자 생각과 식사 간에 대체 합니다. 왼쪽을 인접 한 항목을 사용 하 여 모든 철학자 젓가락을 공유 해야 사람과 오른쪽에 있습니다. 다음 그림에서는이 레이아웃을 보여 줍니다.
 
-![식사 철학자 문제가](../../parallel/concrt/media/dining_philosophersproblem.png "dining_philosophersproblem")
+![식당 철학자 문제가](../../parallel/concrt/media/dining_philosophersproblem.png "만찬 철학자 문제")
 
 식사를 철학자 두 젓가락 보유 해야 합니다. 모든 철학자 하나만 젓가락을 보유 하 고 다른 기다리고 음식을 먹을 수 다음 및 모든 고갈.
 

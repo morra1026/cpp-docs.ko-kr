@@ -1,6 +1,6 @@
 ---
 title: CMFCRibbonCategory 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCRibbonCategory
 - AFXRIBBONCATEGORY/CMFCRibbonCategory
@@ -130,12 +130,12 @@ helpviewer_keywords:
 - CMFCRibbonCategory [MFC], SetName
 - CMFCRibbonCategory [MFC], SetTabColor
 ms.assetid: 99ba25b6-d060-4fdd-bfab-3c46c22981bb
-ms.openlocfilehash: b510befa8993337ce62b5bd3b00ea3f48091b0e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96a3351656807fa841661ec9f082bb4255d5136a
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657351"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176616"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonCategory 클래스
 
@@ -244,7 +244,7 @@ CMFCRibbonPanel* pPanel = pCategory->AddPanel (
 
 다음 다이어그램에서는 RibbonApp 샘플 응용 프로그램의 홈 범주의 그림을 보여 줍니다.
 
-![CMFCRibbonCategory 이미지](../../mfc/reference/media/cmfcribboncategory.png "cmfcribboncategory")
+![RibbonApp 샘플 응용 프로그램의 홈 범주](../../mfc/reference/media/cmfcribboncategory.png "RibbonApp 샘플 응용 프로그램의 홈 범주")
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -717,7 +717,7 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -909,7 +909,7 @@ CMFCRibbonPanel* HighlightPanel(
 *pHLPanel*<br/>
 [in] 리본 패널에 강조 표시에 대 한 포인터입니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -932,7 +932,7 @@ CMFCRibbonBaseElement* HitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.
 
 *bCheckPanelCaption*<br/>
@@ -956,7 +956,7 @@ int HitTestEx(CPoint point) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -977,8 +977,8 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-[in] 테스트할 점입니다.
+*point*<br/>
+[in] 테스트할 지점입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1176,7 +1176,7 @@ virtual CMFCRibbonBaseElement* OnLButtonDown(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 마우스 포인터의 x 및 y 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1195,7 +1195,7 @@ virtual void OnLButtonUp(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -1210,7 +1210,7 @@ virtual void OnMouseMove(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -1416,7 +1416,7 @@ void SetTabColor(AFX_RibbonCategoryColor color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 리본 범주의 새 색을 지정합니다.
 
 ### <a name="remarks"></a>설명

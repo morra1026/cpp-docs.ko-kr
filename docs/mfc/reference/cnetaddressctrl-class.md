@@ -1,6 +1,6 @@
 ---
 title: CNetAddressCtrl 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CNetAddressCtrl
 - AFXCMN/CNetAddressCtrl
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 09dfdb57fb22b958edc64ec8cbdce95527a304d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee44c05fa6417aaca367798d7a94a900d521b896
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654681"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176240"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 
@@ -64,7 +64,7 @@ class CNetAddressCtrl : public CEdit
 
 다음 그림은 네트워크 주소 컨트롤이 포함 된 대화 상자를 보여 줍니다. 텍스트 상자 (1) 네트워크 주소 컨트롤에 대 한 잘못 된 네트워크 주소를 포함합니다. 정보 팁 메시지 (2)는 네트워크 주소가 유효 하지 않은 경우에 표시 됩니다.
 
-![네트워크 주소 컨트롤 및 정보 팁을 사용 하 여 대화 상자. ](../../mfc/reference/media/cnetaddctrl.png "cnetaddctrl")
+![네트워크 주소 컨트롤 및 정보 팁을 사용 하 여 대화 상자. ](../../mfc/reference/media/cnetaddctrl.png "네트워크 주소 컨트롤 및 정보 팁을 사용 하 여 대화 상자.")
 
 ## <a name="example"></a>예제
 

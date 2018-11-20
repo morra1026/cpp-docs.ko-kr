@@ -1,13 +1,13 @@
 ---
 title: 데이터 버퍼에 대한 포인터 얻기(C++/CX)
-ms.date: 12/30/2016
+ms.date: 11/19/2018
 ms.assetid: db4f9370-dd95-4896-b5b8-4b202284f579
-ms.openlocfilehash: 6fc136af4098659779b4b4ff7fb8878e1cea6590
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2cd99019d75272f4362518de78b729cd7a2549f3
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514272"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175108"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>데이터 버퍼에 대한 포인터 얻기(C++/CX)
 
@@ -15,7 +15,7 @@ Windows 런타임에서 [Windows::Storage::Streams::IBuffer](https://msdn.micros
 
 다음 다이어그램에서는 원본이 [Windows::UI::Xaml::Media::Imaging WriteableBitmap](https://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx)인 XAML 이미지 요소를 보여 줍니다. 임의의 언어로 작성된 클라이언트 앱은 `WriteableBitmap` 에 대한 참조를 C++ 코드에 전달할 수 있으며, 그러면 C++는 내부 버퍼에서 가져올 참조를 사용할 수 있습니다. C + +로 작성 된 유니버설 Windows 플랫폼 앱에서 Windows 런타임 구성 요소에 패키징하지 않고 소스 코드에서 직접 다음 예제의 함수를 사용할 수 있습니다.
 
-![C&#43; &#43; 픽셀 데이터에 직접 액세스 하는 코드](../cppcx/media/ibufferbyteaccessdiagram.png "IBufferByteAccessDiagram")
+![C&#43; &#43; 픽셀 데이터를 직접 액세스 하는 코드가](../cppcx/media/ibufferbyteaccessdiagram.png "C&#43; &#43; 직접 픽셀 데이터에 액세스 하는 코드")
 
 ## <a name="getpointertopixeldata"></a>GetPointerToPixelData
 

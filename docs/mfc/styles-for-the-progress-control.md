@@ -1,18 +1,18 @@
 ---
 title: 진행률 컨트롤 스타일
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - PBS_SMOOTH style
 - progress controls [MFC], styles
 - PBS_VERTICAL style
 - CProgressCtrl class [MFC], styles
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
-ms.openlocfilehash: 494f5df03d15e1662f20aff644fb414a7254ad5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d33e9306c1d70bb58ad628297360bc6e34e6ce2
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451729"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174956"
 ---
 # <a name="styles-for-the-progress-control"></a>진행률 컨트롤 스타일
 
@@ -34,11 +34,11 @@ PBS_VERTICAL 가로로 아닌 세로 방향으로 컨트롤 하려면 사용 합
 
 PBS_SMOOTH 스타일 없이:
 
-![표준 진행률 막대 스타일](../mfc/media/vc4ruw1.gif "vc4ruw1")
+![표준 진행률 막대 스타일](../mfc/media/vc4ruw1.gif "표준 진행률 막대 스타일")
 
 PBS_SMOOTH 및 PBS_VERTICAL 스타일를 사용 하 여:
 
-![진행률 표시줄 스타일을 원활 하 고 세로](../mfc/media/vc4ruw2.gif "vc4ruw2")
+![진행률 표시줄 스타일을 원활 하 고 세로](../mfc/media/vc4ruw2.gif "진행률 막대 스타일을 원활 하 고 세로")
 
 자세한 내용은 [창 스타일](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) 에 *MFC 참조*합니다.
 

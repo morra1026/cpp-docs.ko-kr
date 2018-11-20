@@ -1,16 +1,16 @@
 ---
 title: DHTML 컨트롤 프로젝트의 요소를 식별합니다.
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
-ms.openlocfilehash: bb7fa67e6a3009922596c225895032bfb2f4fbb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e38b94e200754ce9dd37df2bfb17dfaa32cafe49
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533694"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175709"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML 컨트롤 프로젝트의 요소를 식별합니다.
 
@@ -26,7 +26,7 @@ DHTML 컨트롤은 모든 ATL 컨트롤과 비슷하지만 제외:
 
 다음 그림에서는 DLL, DHTML 컨트롤, 웹 브라우저 및 HTML 리소스 간의 관계를 보여 줍니다.
 
-![DHTML 컨트롤 프로젝트의 요소](../atl/media/vc52en1.gif "vc52en1")
+![DHTML 컨트롤 프로젝트의 요소](../atl/media/vc52en1.gif "DHTML 컨트롤 프로젝트의 요소")
 
 > [!NOTE]
 >  이 그래픽에서 이름은 자리 표시자입니다. HTML 리소스 및 컨트롤에 노출 된 인터페이스의 이름은 ATL 컨트롤 마법사에 할당할 이름을 기반으로 합니다.
@@ -47,7 +47,7 @@ DHTML 컨트롤은 모든 ATL 컨트롤과 비슷하지만 제외:
 
 ATL 컨트롤 마법사 HTML 리소스 및.cpp 파일에서 기본 코드를 사용 하 여 컨트롤을 생성합니다. 컴파일 및 마법사에 의해 생성 된 컨트롤을 실행 하 고 웹 브라우저 또는 ActiveX 컨트롤 테스트 컨테이너에서 컨트롤을 볼 수 있습니다. 아래 그림은 테스트 컨테이너에 표시 된 세 개의 단추를 사용 하 여 기본 ATL DHTML 컨트롤을 보여줍니다.
 
-![ATL DHTML 컨트롤](../atl/media/vc52en2.gif "vc52en2")
+![ATL DHTML 컨트롤](../atl/media/vc52en2.gif "ATL DHTML 컨트롤")
 
 참조 [ATL DHTML 컨트롤 만들기](../atl/creating-an-atl-dhtml-control.md) 여 DHTML 컨트롤 빌드를 시작 합니다. 참조 [속성 및 이벤트 테스트 컨테이너를 사용 하 여 테스트](../mfc/testing-properties-and-events-with-test-container.md) 테스트 컨테이너에 액세스 하는 방법에 대 한 정보에 대 한 합니다.
 

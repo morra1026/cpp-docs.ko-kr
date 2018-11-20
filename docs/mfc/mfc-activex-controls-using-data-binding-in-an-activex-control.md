@@ -1,6 +1,6 @@
 ---
 title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용'
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 f1_keywords:
 - bindable
 - requestedit
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: 9efac8ba0889d648def622ca045b9398c8eeef11
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: a5cb73496cd6678e3f45500d9d53c2127b0fb17c
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518491"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175810"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용
 
@@ -30,7 +30,8 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 
 이 문서에서는 제어 측면에서의 작업을 설명 합니다. 데이터베이스를 사용 하 여 데이터 바인딩 상호 작용을 구현 하는 것은 컨트롤 컨테이너의 책임입니다. 이 문서의 범위를 벗어납니다 컨테이너에서 데이터베이스 상호 작용을 관리 하는 방법입니다. 이 문서의 나머지 부분에서 데이터 바인딩에 대 한 제어를 준비 하는 방법을 설명 되어 있습니다.
 
-![데이터 영역의 개념 다이어그램과&#45;컨트롤을 바인딩할](../mfc/media/vc374v1.gif "vc374v1") 데이터 바인딩된 컨트롤의 개념적 다이어그램
+![데이터 영역의 개념 다이어그램과&#45;컨트롤에 바인딩된](../mfc/media/vc374v1.gif "데이터 영역의 개념 다이어그램과&#45;바인딩 컨트롤") <br/>
+데이터 바인딩된 컨트롤의 개념적 다이어그램
 
 `COleControl` 클래스는 데이터 바인딩 구현 하는 쉬운 프로세스는 두 멤버 함수를 제공 합니다. 첫 번째 함수 [BoundPropertyRequestEdit](../mfc/reference/colecontrol-class.md#boundpropertyrequestedit), 속성 값을 변경 하는 권한을 요청 하는 데 사용 됩니다. [BoundPropertyChanged](../mfc/reference/colecontrol-class.md#boundpropertychanged), 두 번째 함수는 속성 값을 성공적으로 변경 된 후 호출 됩니다.
 

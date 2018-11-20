@@ -1,6 +1,6 @@
 ---
 title: CVSListBox 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CVSListBox
 - AFXVSLISTBOX/CVSListBox
@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-ms.openlocfilehash: e44fa868fc573efbf89bb00147f670298f633381
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb12f17aec43653931343e80926d59560d879c3a
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513765"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176214"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox 클래스
 
@@ -81,7 +81,7 @@ class CVSListBox : public CVSListBoxBase
 
 다음은 편집할 수 있는 목록 컨트롤의 그림입니다. "Item2" 이라는 두 번째 목록 항목을 편집 하기 위해 선택 됩니다.
 
-![CVSListBox 컨트롤](../../mfc/reference/media/cvslistbox.png "cvslistbox")
+![CVSListBox 컨트롤](../../mfc/reference/media/cvslistbox.png "CVSListBox 컨트롤")
 
 리소스 편집기를 사용 하 여 편집할 수 있는 목록 컨트롤을 추가 하는 경우 다음에 유의 합니다 **도구 상자** 편집기의 창 편집할 수 있는 미리 정의 된 목록 컨트롤을 제공 하지 않습니다. 대신,와 같은 정적 컨트롤을 추가 합니다 **그룹 상자** 제어 합니다. 프레임 워크를 사용 하면 자리 표시자로 정적 컨트롤을 사용 하는 크기 및 편집할 수 있는 목록 컨트롤의 위치 지정 합니다.
 

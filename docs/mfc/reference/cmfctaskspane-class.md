@@ -1,6 +1,6 @@
 ---
 title: CMFCTasksPane 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCTasksPane
 - AFXTASKSPANE/CMFCTasksPane
@@ -194,16 +194,16 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-ms.openlocfilehash: e11d1f95cf44756a39ab52fcd4dfeb87addc6e17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aaf0e68391dd1273c3f973315ac58fe0d6bd1c24
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563659"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176811"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 `CMFCTasksPane` 클래스는 클릭할 수 있는 항목(작업) 목록을 구현합니다.
 
@@ -350,11 +350,11 @@ class CMFCTasksPane : public CDockablePane
 
 다음 그림에서는 일반적인 작업 창 컨트롤을 보여 줍니다. 첫 번째 그룹은는 *특수* 그룹이 고 해당 캡션은 더 진한 색입니다. 세 번째 그룹이 축소됩니다. 마지막 그룹은 작업 창의 아래쪽에 맞춰지고 캡션을 포함하지 않고, 그룹의 마지막 작업은 단순한 레이블입니다.
 
-![작업 창 예제](../../mfc/reference/media/nexttaskpane.png "nexttaskpane")
+![작업 창 예제](../../mfc/reference/media/nexttaskpane.png "작업창의 예")
 
 다양한 여백 및 오프셋을 조정하여 작업 창의 모양을 사용자 지정할 수 있습니다. 다음 그림에서는 이들 변수의 의미를 분명히 설명합니다.
 
-![사용자 지정 작업 그룹](../../mfc/reference/media/nexttaskgrpcustom.png "nexttaskgrpcustom")
+![사용자 지정 작업 그룹](../../mfc/reference/media/nexttaskgrpcustom.png "사용자 지정 작업 그룹")
 
 ## <a name="example"></a>예제
 
@@ -1720,7 +1720,7 @@ BOOL SetGroupTextColor(
 *해제*<br/>
 [in] 그룹의 인덱스를 지정합니다.
 
-*색*<br/>
+*color*<br/>
 [in] 텍스트 색을 지정 합니다.
 
 *colorHot*<br/>
@@ -1914,7 +1914,7 @@ BOOL SetTaskTextColor(
 *nTask*<br/>
 [in] 작업의 인덱스를 지정합니다.
 
-*색*<br/>
+*color*<br/>
 [in] 작업에 대 한 텍스트 색을 지정 합니다.
 
 *colorHot*<br/>

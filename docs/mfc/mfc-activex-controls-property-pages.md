@@ -1,6 +1,6 @@
 ---
 title: 'MFC ActiveX 컨트롤: 속성 페이지'
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - DDP_ functions [MFC]
 - MFC ActiveX controls [MFC], properties
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 764590b5d7162d7f10a60dda24649adde9e090c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7027a58960e07903c9d774e07379c8050bc489b8
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656185"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176460"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX 컨트롤: 속성 페이지
 
@@ -32,7 +32,8 @@ ActiveX 컨트롤 속성 페이지는 두 가지 방법으로 표시 됩니다.
 
 현재 속성 페이지에서 속성 페이지 및 속성 페이지 대화 상자를 닫는 등의 일반적인 작업을 수행 하는 단추 컬렉션 간에 전환에 대 한 탭 표시 영역 이루어져 있습니다 (다음 그림에 나와 있는) 속성 대화 상자 변경 된 내용을, 취소 또는 ActiveX 컨트롤에 변경 내용을 즉시 적용 됩니다.
 
-![Circ3 속성 대화 상자](../mfc/media/vc373i1.gif "vc373i1") 속성 대화 상자
+![Circ3 속성 대화 상자](../mfc/media/vc373i1.gif "circ3 속성 대화 상자") <br/>
+속성 대화 상자
 
 이 문서에서는 ActiveX 컨트롤에서 속성 페이지를 사용 하 여 관련 된 항목을 다룹니다. 여기에는 다음이 포함됩니다.
 

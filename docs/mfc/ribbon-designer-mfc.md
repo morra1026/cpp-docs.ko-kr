@@ -1,24 +1,24 @@
 ---
 title: 리본 디자이너(MFC)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - vc.editors.ribbon.F1
 helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 3b28783cb12aeeb03bf1687e5922b276af0d52c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 903adc96f4c9bc092ac23787781a76c0e7e3714c
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521400"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175836"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
 
 리본 디자이너를 사용하여 MFC 응용 프로그램에서 리본을 만들고 사용자 지정할 수 있습니다. 리본은 명령을 논리 그룹으로 구성하는 UI(사용자 인터페이스) 요소입니다. 이러한 그룹은 창 위쪽을 가로지르는 스트립에 별도의 탭으로 나타납니다. 리본은 메뉴 모음 및 도구 모음을 대체합니다. 리본으로 응용 프로그램 사용 편의성을 크게 향상시킬 수 있습니다. 자세한 내용은 [리본](/windows/desktop/uxguide/cmd-ribbons)합니다. 다음 그림에서는 리본을 보여 줍니다.
 
-![MFC 리본 리소스 컨트롤](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")
+![MFC 리본 리소스 컨트롤](../mfc/media/ribbon_no_callouts.png "MFC 리본 리소스 컨트롤")
 
 Visual Studio의 이전 버전에서는 리본 같은 MFC 리본 클래스를 사용 하는 코드를 작성 하 여 만들 수 해야 [CMFCRibbonBar 클래스](../mfc/reference/cmfcribbonbar-class.md)합니다. Visual Studio 2010 이상 버전에서는 리본 디자이너 리본을 작성 하는 것에 대 한 대체 방법을 제공 합니다. 먼저 리소스로 리본을 만들고 사용자 지정합니다. 그런 다음 MFC 응용 프로그램의 코드에서 리본 리소스를 로드합니다. 리본 리소스와 MFC 리본 클래스를 함께 사용할 수도 있습니다. 예를 들어 리본 리소스를 만들고 프로그래밍 방식으로 더 많은 요소를 추가 런타임 시 코드를 사용 하 여 수 있습니다.
 
@@ -71,7 +71,7 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 다음 그림에서는 리본 디자이너의 다양한 구성 요소를 보여 줍니다.
 
-![MFC 리본 디자이너](../mfc/media/ribbon_designer.png "ribbon_designer")
+![MFC 리본 디자이너](../mfc/media/ribbon_designer.png "MFC 리본 디자이너")
 
 - **도구 상자:** 디자이너 화면으로 끌어 올 수 있는 컨트롤을 포함 합니다.
 
@@ -95,7 +95,7 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 ## <a name="definitions-of-ribbon-elements"></a>리본 요소의 정의
 
-![MFC 리본](../mfc/media/ribbon.png "리본")
+![MFC 리본](../mfc/media/ribbon.png "MFC 리본")
 
 - **응용 프로그램 단추:** 리본 메뉴의 왼쪽 위 모서리에 나타나는 단추입니다. 응용 프로그램 단추는 파일 메뉴를 대체하고 리본이 최소화되는 경우에도 표시됩니다. 이 단추를 클릭하면 명령 목록이 있는 메뉴가 표시됩니다.
 

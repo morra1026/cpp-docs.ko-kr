@@ -1,17 +1,17 @@
 ---
 title: OLE DB 공급자 템플릿 구조
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - OLE DB [C++], object model
 - architecture [C++], OLE DB Provider
 - OLE DB provider templates, object model
 ms.assetid: 639304a3-f9e0-44dc-8d0c-0ebd2455b363
-ms.openlocfilehash: 6256328caa11d188f3a50445f62df096b6f6acb3
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 099c29e141d721645c416e60be240c22d22cd869
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557039"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175641"
 ---
 # <a name="ole-db-provider-template-architecture"></a>OLE DB 공급자 템플릿 구조
 
@@ -19,7 +19,7 @@ ms.locfileid: "51557039"
 
 OLE DB 공급자 아키텍처에는 데이터 원본 개체 및 하나 이상의 세션이 포함 됩니다. 데이터 원본 개체에는 모든 공급자를 인스턴스화해야 하는 초기 개체가입니다. 소비자 응용 프로그램에서 데이터를 필요한 경우 공동 공급자를 시작 하려면 데이터 원본 개체를 만듭니다. 데이터 원본 개체에는 세션 개체를 만듭니다 (사용 하 여는 `IDBCreateSession` 인터페이스)를 통해 소비자는 데이터 원본 개체에 연결 합니다. ODBC 프로그래머에 게 데이터 원본 개체에 해당 하는 것으로 생각할 수 있습니다는 `HENV` 와 동등 하 게 세션 개체는 `HDBC`합니다.
 
-![공급자 아키텍처](../../data/oledb/media/vc4twb1.gif "vc4twb1")
+![공급자 아키텍처](../../data/oledb/media/vc4twb1.gif "공급자 아키텍처")
 
 만든 소스 파일과 함께 합니다 **OLE DB 공급자 마법사**, 데이터 원본 개체를 구현 하는 OLE DB 템플릿. OLE DB에 해당 하는 개체인 세션 `TSession`합니다.
 

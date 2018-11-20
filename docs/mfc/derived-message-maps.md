@@ -1,18 +1,18 @@
 ---
 title: 파생된 메시지 맵
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - message handling [MFC], derived message handlers
 - messages, routing
 - message maps [MFC], derived
 - derived message maps
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
-ms.openlocfilehash: 1413290bc04af37a6d3204150dff5244e1dcb5c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ae536a53a43472a4fb81d30e685fbc3faaa603f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662529"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175604"
 ---
 # <a name="derived-message-maps"></a>파생된 메시지 맵
 
@@ -20,7 +20,8 @@ ms.locfileid: "50662529"
 
 에 유의 `CView`의 기본 클래스 `CMyView`를 차례로에서 파생 된 `CWnd`합니다. 따라서 `CMyView` *는* 는 `CView` 및 *됩니다* 는 `CWnd`합니다. 이러한 클래스의 각 자신의 메시지 맵을 있습니다. "는 계층 구조 보기" 아래에 유지 되지만 클래스, 계층적 관계를 보여 줍니다. 그림을 염두에 두어야 하는 `CMyView` 개체는 세 클래스 모두의 특성을 가진 단일 개체입니다.
 
-![뷰 계층 구조](../mfc/media/vc38621.gif "vc38621") 뷰 계층 구조
+![뷰 계층 구조](../mfc/media/vc38621.gif "뷰 계층 구조") <br/>
+계층 구조 보기
 
 클래스에서 메시지를 일치 시킬 수 없습니다. 따라서 `CMyView`의 프레임 워크가 메시지 맵을 직접 기본 클래스의 메시지 맵을 검색 합니다. `BEGIN_MESSAGE_MAP` 메시지 맵에서의 시작 부분에 매크로 인수로 두 클래스 이름을 지정 합니다.
 

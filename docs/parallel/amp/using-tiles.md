@@ -1,13 +1,13 @@
 ---
 title: 타일 사용
-ms.date: 06/28/2018
+ms.date: 11/19/2018
 ms.assetid: acb86a86-2b7f-43f1-8fcf-bcc79b21d9a8
-ms.openlocfilehash: 02a6f35801c30ce5e25e79a4e736e6c08776a1da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ede62c80a83b5f5fc1d691bf52dde67140e68246
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588517"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176096"
 ---
 # <a name="using-tiles"></a>타일 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "50588517"
 
 다음 다이어그램은 2x3 타일에 있는 데이터는 8x9 매트릭스를 나타냅니다.
 
-![8&#45;에서&#45;9 8x9 매트릭스를 2&#45;에서&#45;3 타일](../../parallel/amp/media/usingtilesmatrix.png "usingtilesmatrix")
+![8&#45;에서&#45;9 8x9 매트릭스를 2&#45;에서&#45;3 타일](../../parallel/amp/media/usingtilesmatrix.png "8&#45;에서&#45;9 8x9 매트릭스를 2&#45;에서&#45;3 타일")
 
 다음 예제에서는 전역, 타일을 표시 하 고 바둑판식 매트릭스의 로컬 인덱스 키를 누릅니다. `array_view` 형식의 요소를 사용 하 여 개체를 만들 `Description`합니다. `Description` 보유 전역, 타일 및 행렬에 있는 요소의 로컬 인덱스입니다. 에 대 한 호출의 코드 `parallel_for_each` 값 전역, 타일 및 각 요소의 로컬 인덱스를 설정 합니다. 출력에서 값을 표시 합니다 `Description` 구조입니다.
 

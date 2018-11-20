@@ -1,6 +1,6 @@
 ---
 title: try-finally 문
-ms.date: 10/09/2018
+ms.date: 11/19/2018
 f1_keywords:
 - __try
 - _try
@@ -20,12 +20,12 @@ helpviewer_keywords:
 - __leave keyword [C++], try-finally statement
 - structured exception handling [C++], try-finally
 ms.assetid: 826e0347-ddfe-4f6e-a7bc-0398e0edc7c2
-ms.openlocfilehash: 55d22951c4203c582f7823fef033a0476f8c9a52
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: d05e1d113f4fc661cb6e2e2905fbd8c9dcdd7e2d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326924"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175923"
 ---
 # <a name="try-finally-statement"></a>try-finally 문
 
@@ -68,7 +68,8 @@ ms.locfileid: "51326924"
 
 예를 들어, 일련의 함수 호출 링크에서는 함수 A를 D에 연결한다고 가정합니다(아래 그림 참조). 각 함수에는 종료 처리기가 하나씩 있습니다. 예외가 D 함수에서 발생하고 A에서 처리될 경우 시스템이 스택 D, C, B를 해제하면 그 순서대로 종료 처리기가 호출됩니다.
 
-![종료 순서&#45;처리기 실행](../cpp/media/vc38cx1.gif "vc38CX1") 종료 처리기 실행 순서
+![종료 순서&#45;처리기 실행](../cpp/media/vc38cx1.gif "종료 순서&#45;처리기 실행") <br/>
+종료 처리기 실행 순서
 
 > [!NOTE]
 > Try-finally의 동작은의 사용을 지 원하는 다른 언어에서 다른 **마지막**, C#과 같은 합니다.  단일 **__try** 하나만 하거나, 있을 수 있습니다 **__finally** 하 고 **__except**합니다.  모두 함께 사용되는 경우 외부 try-except 문은 내부 try-finally 문을 포함해야 합니다.  또한 각 블록을 실행할 때 지정되는 규칙은 서로 다릅니다.

@@ -1,6 +1,6 @@
 ---
 title: MFC ActiveX 컨트롤
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 f1_keywords:
 - MFC ActiveX Controls (MFC)
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - MFC ActiveX controls [MFC]
 ms.assetid: c911fb74-3afc-4bf3-a0f5-7922b14d9a1b
-ms.openlocfilehash: 95e1e1cc47d9c14448635fae5d6a9added8e15e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 10ad0645e873a1a745168be9b839bbf97a1c05a6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553274"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174880"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX 컨트롤
 
@@ -39,7 +39,8 @@ ActiveX 컨트롤은 일반적인 ActiveX 컨트롤 컨테이너와 인터넷의
 
 ActiveX 컨트롤은 OLE 컨테이너에서 사용할 수 있는 In-process 서버(일반적으로 작은 개체)로 구현됩니다. ActiveX 컨트롤의 전체 기능은 ActiveX 컨트롤을 인식하도록 디자인된 OLE 컨테이너 내에서 사용하는 경우에만 사용할 수 있습니다. 참조 [포트 ActiveX 컨트롤을 다른 응용 프로그램](../mfc/containers-for-activex-controls.md) ActiveX 컨트롤을 지 원하는 컨테이너의 목록은 합니다. 이 컨테이너 형식("컨트롤 컨테이너")은 컨트롤의 속성 및 메서드를 사용하여 ActiveX 컨트롤을 작동할 수 있으며 이벤트의 형식으로 ActiveX 컨트롤에서 알림을 받습니다. 다음 그림에서는 이 상호 작용을 보여 줍니다.
 
-![ActiveX 컨트롤 컨테이너와 컨트롤의 상호 작용](../mfc/media/vc37221.gif "vc37221") ActiveX 컨트롤 컨테이너를는 간 상호 작용 및 창 있는 ActiveX 컨트롤
+![ActiveX 컨트롤 컨테이너와 컨트롤의 상호 작용](../mfc/media/vc37221.gif "컨트롤과 상호 작용의 ActiveX 컨트롤 컨테이너") <br/>
+ActiveX 컨트롤 컨테이너와 창 있는 ActiveX 컨트롤 간의 상호 작용
 
 ActiveX 컨트롤 최적화에 최신 정보를 참조 하세요 [MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
 
@@ -69,7 +70,8 @@ ActiveX 컨트롤은 컨트롤 컨테이너와 사용자 간의 효율적인 상
 
 컨트롤 컨테이너 내에서 컨트롤을 사용하는 경우 통신을 위해 속성 및 메서드를 노출하고 이벤트를 발생시키는 두 가지 메커니즘을 사용합니다. 다음 그림에서는 이러한 두 가지 메커니즘이 구현되는 방법에 대해 보여 줍니다.
 
-![ActiveX 컨트롤 컨테이너와 통신](../mfc/media/vc37222.gif "vc37222") ActiveX 컨트롤 컨테이너를는 간 통신 및 ActiveX 컨트롤
+![ActiveX 컨트롤 컨테이너와 통신](../mfc/media/vc37222.gif "ActiveX 컨트롤 컨테이너와 통신") <br/>
+ActiveX 컨트롤 컨테이너와 ActiveX 컨트롤 간의 통신
 
 이전 그림은 다른 OLE 인터페이스(자동화 및 이벤트의 경우)가 컨트롤을 통해 처리되는 방법도 보여 줍니다.
 
@@ -83,7 +85,8 @@ ActiveX 컨트롤은 컨트롤 컨테이너와 사용자 간의 효율적인 상
 
 창이 있는 컨트롤이 활성화되면 해당 컨트롤은 컨트롤 컨테이너, 사용자 및 Windows와 완전히 상호 작용할 수 있습니다. 아래 그림에서는 ActiveX 컨트롤, 컨트롤 컨테이너 및 운영 체제 간의 통신 경로를 보여 줍니다.
 
-![활성 창 있는 ActiveX 컨트롤에서 msg 처리](../mfc/media/vc37223.gif "vc37223") 창 있는 ActiveX 컨트롤 (때 활성)에서 Windows 메시지 처리
+![활성 창 있는 ActiveX 컨트롤에서 msg 처리](../mfc/media/vc37223.gif "활성 창 있는 ActiveX 컨트롤에서 Msg 처리") <br/>
+창 있는 ActiveX 컨트롤의 Windows 메시지 처리(활성화된 경우)
 
 ##  <a name="_core_serializing_activex_elements"></a> Serialization
 

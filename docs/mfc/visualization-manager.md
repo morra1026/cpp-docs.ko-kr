@@ -1,29 +1,34 @@
 ---
 title: 시각화 관리자
-ms.date: 06/28/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Visualization Manager
 ms.assetid: c9dd1365-27ac-42e5-8caa-1004525b4129
-ms.openlocfilehash: befff860f50677f9c70c0fbb6b45ac528c36e773
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c9dc19266d80d56f696953c5f5896eb9d99cc8b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521374"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175576"
 ---
 # <a name="visualization-manager"></a>시각화 관리자
 
 비주얼 관리자는 전체 응용 프로그램의 모양을 제어 하는 개체입니다. 역할 단일 클래스로 응용 프로그램에 대 한 모든 그리기 코드를 넣을 수 있는 합니다. MFC 라이브러리는 여러 비주얼 관리자를 포함합니다. 응용 프로그램에 대 한 사용자 지정 보기를 만들려는 경우에 고유한 비주얼 관리자를 만들 수 있습니다. 다음 이미지는 다른 비주얼 관리자 활성화 된 경우 동일한 응용 프로그램을 보여 줍니다.
 
-![CMFCVisualManagerWindows에서 렌더링 된 MyApp](../mfc/media/vmwindows.png "vmwindows") CMFCVisualManagerWindows 비주얼 관리자를 사용 하는 MyApp
+![CMFCVisualManagerWindows에서 렌더링 된 MyApp](../mfc/media/vmwindows.png "CMFCVisualManagerWindows에서 렌더링 된 MyApp") <br/>
+CMFCVisualManagerWindows 비주얼 관리자를 사용 하는 MyApp
 
-![CMFCVisualManagerVS2005에서 렌더링 된 MyApp](../mfc/media/vmvs2005.png "vmvs2005") CMFCVisualManagerVS2005 비주얼 관리자를 사용 하는 MyApp
+![CMFCVisualManagerVS2005에서 렌더링 된 MyApp](../mfc/media/vmvs2005.png "CMFCVisualManagerVS2005에서 렌더링 된 MyApp") <br/>
+CMFCVisualManagerVS2005 비주얼 관리자를 사용 하는 MyApp
 
-![CMFCVisualManagerOfficeXP에서 렌더링 된 MyApp](../mfc/media/vmofficexp.png "vmofficexp") CMFCVisualManagerOfficeXP 비주얼 관리자를 사용 하는 MyApp
+![CMFCVisualManagerOfficeXP에서 렌더링 된 MyApp](../mfc/media/vmofficexp.png "CMFCVisualManagerOfficeXP에서 렌더링 된 MyApp") <br/>
+CMFCVisualManagerOfficeXP 비주얼 관리자를 사용 하는 MyApp
 
-![CMFCVisualManagerOffice2003에서 렌더링 된 MyApp](../mfc/media/vmoffice2003.png "vmoffice2003") CMFCVisualManagerOffice2003 비주얼 관리자를 사용 하는 MyApp
+![CMFCVisualManagerOffice2003에서 렌더링 된 MyApp](../mfc/media/vmoffice2003.png "CMFCVisualManagerOffice2003에서 렌더링 된 MyApp") <br/>
+CMFCVisualManagerOffice2003 비주얼 관리자를 사용 하는 MyApp
 
-![CMFCVisualManagerOffice2007에서 렌더링 된 MyApp](../mfc/media/msoffice2007.png "msoffice2007") CMFCVisualManagerOffice2007 비주얼 관리자를 사용 하는 MyApp
+![CMFCVisualManagerOffice2007에서 렌더링 된 MyApp](../mfc/media/msoffice2007.png "CMFCVisualManagerOffice2007에서 렌더링 된 MyApp") <br/>
+CMFCVisualManagerOffice2007 비주얼 관리자를 사용 하는 MyApp
 
 기본적으로 visual manager에는 여러 GUI 요소에 대 한 그리기 코드를 유지 관리합니다. 사용자 지정 UI 요소를 제공 하려면 비주얼 관리자의 관련된 그리기 메서드를 재정의 해야 합니다. 이러한 메서드의 목록에 대 한 참조 [CMFCVisualManager 클래스](../mfc/reference/cmfcvisualmanager-class.md)합니다. 사용자 지정 모양을 제공 하기 위해 재정의할 수 있는 메서드는 시작 하는 모든 메서드 `OnDraw`합니다.
 

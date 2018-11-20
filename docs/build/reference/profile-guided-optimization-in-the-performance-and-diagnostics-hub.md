@@ -1,13 +1,13 @@
 ---
 title: 성능 및 진단 허브의 프로필 기반 최적화
-ms.date: 03/14/2018
+ms.date: 11/19/2018
 ms.assetid: dc3a1914-dbb6-4401-bc63-10665a8c8943
-ms.openlocfilehash: 57e0c32b401f2c1c3216a120bc86efa649ee0104
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a8c0467e1a3051609f52053894ea59064e40a3ac
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50580858"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176200"
 ---
 # <a name="profile-guided-optimization-in-the-visual-studio-2013-performance-and-diagnostics-hub"></a>Visual Studio 2013 성능 및 진단 허브의 프로필 기반 최적화
 
@@ -45,21 +45,21 @@ PGO(프로필 기반 최적화)는 사용자의 상호 작용 방식에 최적�
 
 성능 및 진단 허브를 열고, 메뉴 모음에서 **분석**를 **성능 및 진단**합니다. 그러면 프로젝트 형식에 사용할 수 있는 분석 도구가 포함된 진단 세션 페이지가 열립니다.
 
-![성능 및 진단 허브의 PGO](../../build/reference/media/pgofig0hub.png "PGOFig0Hub")
+![성능 및 진단 허브의 PGO](../../build/reference/media/pgofig0hub.png "성능 및 진단 허브의 PGO")
 
 **사용 가능한 도구**를 선택 합니다 **프로필 기반 최적화** 확인란 합니다. 선택 된 **시작** PGO 플러그인을 시작 하는 단추입니다.
 
-![PGO 소개 페이지](../../build/reference/media/pgofig1start.png "PGOFig1Start")
+![PGO 소개 페이지](../../build/reference/media/pgofig1start.png "PGO 소개 페이지")
 
 합니다 **프로필 기반 최적화** 페이지에서는 앱의 성능을 향상 시키기 위해 플러그인에서 사용 하는 단계를 설명 합니다. 선택 된 **시작** 단추입니다.
 
-![PGO 계측 페이지](../../build/reference/media/pgofig2instrument.png "PGOFig2Instrument")
+![PGO 계측 페이지](../../build/reference/media/pgofig2instrument.png "PGO 계측 페이지")
 
 에 **계측** 사용 섹션을 **교육을 처음 사용 하는** 학습의 일부로 앱의 시작 단계를 포함할지 여부를 선택할 수 있는 옵션. 이 옵션을 선택하지 않으면, 교육을 명시적으로 설정할 때까지 실행 중인 계측된 응용 프로그램에서 교육 데이터가 기록되지 않습니다.
 
 선택 된 **계측** 특별 한 컴파일러 옵션 집합을 사용 하 여 앱을 작성 하려면 단추입니다. 컴파일러가 생성된 코드에 검사 지침을 삽입합니다. 이러한 지침은 교육 단계 중에 프로파일링 데이터를 기록합니다.
 
-![PGO 계측 된 빌드 페이지](../../build/reference/media/pgofig3build.PNG "PGOFig3Build")
+![PGO 계측 된 빌드 페이지](../../build/reference/media/pgofig3build.PNG "PGO 계측 된 빌드 페이지")
 
 응용 프로그램의 계측된 빌드가 완료되면 응용 프로그램이 자동으로 시작됩니다.
 
@@ -67,22 +67,22 @@ PGO(프로필 기반 최적화)는 사용자의 상호 작용 방식에 최적�
 
 앱이 시작 되 면 사용할 수는 **교육 시작** 및 **교육 일시 중지** 에서 링크를 **교육** 프로 파일링 정보는 기록 하는 경우를 제어 하는 섹션입니다. 사용할 수는 **응용 프로그램 중지** 하 고 **응용 프로그램 시작** 중지 하 고 앱을 다시 시작에 대 한 링크입니다.
 
-![PGO 학습 페이지](../../build/reference/media/pgofig4training.PNG "PGOFig4Training")
+![PGO 학습 페이지](../../build/reference/media/pgofig4training.PNG "PGO 학습 페이지")
 
 교육을 하는 동안, 시나리오를 살펴보고 코드를 최적화하기 위해 PGO 플러그인에 필요한 프로파일링 정보를 캡처합니다. 학습을 마친 응용 프로그램을 닫거나 선택 합니다 **응용 프로그램 중지** 링크 합니다. 선택 된 **분석** 분석 단계를 시작 하는 단추입니다.
 
 분석이 완료 되 면 합니다 **분석** 섹션에는 사용자 시나리오 교육 단계 중 캡처된 프로 파일링 정보의 보고서를 보여 줍니다. 이 보고서에서는 사용자의 응용 프로그램이 호출한 기능 및 가장 많은 시간이 소비된 함수를 조사할 수 있습니다. PGO 플러그인은 이 정보를 사용해서 속도를 최적화할 응용 프로그램 기능과 크기를 최적화할 기능을 확인할 수 있습니다. PGO 플러그인은 교육 중 기록한 사용자 시나리오에 대해 가장 작고 가장 빠른 응용 프로그램을 만들기 위한 빌드 최적화를 구성합니다.
 
-![PGO 분석 페이지](../../build/reference/media/pgofig5analyze.png "PGOFig5Analyze")
+![PGO 분석 페이지](../../build/reference/media/pgofig5analyze.png "PGO 분석 페이지")
 
 학습 예상된 프로 파일링 정보를 캡처한 경우 선택할 수 있습니다 **변경 내용 저장** 이후 빌드 최적화 하기 위해 프로젝트에서 분석 된 프로필 데이터를 저장 합니다. 프로필 데이터를 삭제 하 고 처음부터 교육을 시작 하려면 **교육 다시 실행**합니다.
 
 프로필 데이터 파일은 프로젝트에서 저장 한 **PGO 교육 데이터** 폴더입니다. 이 데이터는 응용 프로그램에서 컴파일러 빌드 최적화 설정을 제어하는 데 사용됩니다.
 
-![솔루션 탐색기의 PGO 데이터 파일](../../build/reference/media/pgofig6data.png "PGOFig6Data")
+![솔루션 탐색기의 PGO 데이터 파일](../../build/reference/media/pgofig6data.png "솔루션 탐색기의 PGO 데이터 파일")
 
 분석 후, PGO 플러그인은 컴파일 중 프로필 데이터를 사용해서 응용 프로그램을 선택적으로 최적화할 수 있도록 프로젝트에서 빌드 옵션을 설정합니다. 계속해서 동일한 프로필 데이터를 사용해서 응용 프로그램을 수정하고 빌드할 수 있습니다. 응용 프로그램이 빌드되었으면 빌드 출력에 프로필 데이터를 사용해서 얼마나 많은 기능 및 명령이 최적화되었는지 보고됩니다.
 
-![PGO 출력 진단](../../build/reference/media/pgofig7diagnostics.png "PGOFig7Diagnostics")
+![PGO 출력 진단](../../build/reference/media/pgofig7diagnostics.png "PGO 출력 진단")
 
 개발 중 상당한 코드를 변경한 경우 최상의 최적화 효과를 얻기 위해 응용 프로그램을 다시 교육해야 할 수 있습니다. 프로필 데이터를 사용해서 80% 이하의 기능 또는 명령이 최적화된 것으로 빌드 출력에 보고될 경우 응용 프로그램을 다시 교육하는 것이 좋습니다.

@@ -1,6 +1,6 @@
 ---
 title: 이니셜라이저
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - array-element initializers
 - initializing arrays [C++], initializers
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - declarators, as initializers
 - initializers, array element
 ms.assetid: ce301ed8-aa1c-47b2-bb39-9f0541b4af85
-ms.openlocfilehash: 2948e65538359815da151a540e96227e56bbea6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1890899fb2ad63bff06d514ae8b18f9dc3ff9e21
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544666"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176291"
 ---
 # <a name="initializers"></a>이니셜라이저
 
@@ -528,7 +528,8 @@ int main()
 
 참조 형식 변수를 초기화할 때 컴파일러는 다음 그림과 같은 결정 그래프를 사용하여 개체에 대한 참조 만들기 또는 참조가 가리키는 임시 개체 만들기 중에서 선택합니다.
 
-![의사 결정 그래프 초기화 참조 형식에 대 한](../cpp/media/vc38s71.gif "vc38S71") 참조 형식의 초기화에 대 한 의사 결정 그래프
+![참조 형식 초기화에 대 한 의사 결정 그래프](../cpp/media/vc38s71.gif "판단 그래프 초기화 참조 형식") <br/>
+판단 그래프 초기화 참조 형식
 
 에 대 한 참조 **volatile** 형식 (으로 선언 **volatile** *typename* <strong>&</strong> *식별자*) 초기화 될 수 있습니다 **volatile** 로 선언 되지 않은 개체 또는 동일한 유형의 개체 **volatile**합니다. 하지만 이러한 없습니다,, 초기화할 **const** 해당 형식의 개체입니다. 마찬가지로,에 대 한 참조 **상수** 형식 (으로 선언 **const** *typename* <strong>&</strong> *식별자* )로 초기화할 수 있습니다 **const** 같은 형식의 개체 (또는 변환으로 선언 되지 않은 개체 또는 해당 형식에 있는 모든 **const**). 하지만 사용 하 여 초기화를 수 없습니다, **volatile** 해당 형식의 개체입니다.
 

@@ -1,17 +1,17 @@
 ---
 title: C++ 비트 필드
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - bitfields [C++]
 - fields [C++], bit
 - bit fields
 ms.assetid: 6f4b62e3-cc1d-4e5d-bf34-05904104f71a
-ms.openlocfilehash: df4e5a068f76c35dc22b3915ad7e4ace421ca10b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 747920378472cc091928a080e303a0543e287aaa
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644964"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175095"
 ---
 # <a name="c-bit-fields"></a>C++ 비트 필드
 
@@ -43,7 +43,8 @@ struct Date {
 
 다음 그림에서는 `Date` 형식 개체의 개념적 메모리 레이아웃을 보여 줍니다.
 
-![날짜 개체의 메모리 레이아웃](../cpp/media/vc38uq1.png "vc38UQ1") 날짜 개체의 메모리 레이아웃
+![날짜 개체의 메모리 레이아웃](../cpp/media/vc38uq1.png "날짜 개체의 메모리 레이아웃") <br/>
+날짜 개체의 메모리 레이아웃
 
 사실은 `nYear` 길이가 8 비트 이며 선언 된 형식의 단어 경계를 벗어납니다 **부호 없는** **짧은**합니다. 따라서 새의 시작 부분에서 시작 됩니다 **unsigned** **짧은**합니다. 모든 비트 필드가 기본 형식의 한 개체에 맞아야 할 필요는 없습니다. 선언에서 요청된 비트 수에 따라 새 저장소 단위가 할당됩니다.
 
@@ -69,7 +70,8 @@ struct Date {
 
 그런 다음 메모리 레이아웃은 다음 그림에 나와 있는 것 처럼:
 
-![0 사용 하 여 날짜 개체의 레이아웃&#45;비트 필드 길이](../cpp/media/vc38uq2.png "vc38UQ2") 길이가 0 인 비트 필드가 있는 레이아웃의 Date 개체
+![0 사용 하 여 날짜 개체의 레이아웃&#45;비트 필드 길이](../cpp/media/vc38uq2.png "0 사용 하 여 날짜의 레이아웃 개체&#45;비트 필드 길이") <br/>
+길이가 0인 비트 필드가 있는 날짜 개체의 레이아웃
 
 비트 필드의 내부 형식에 설명 된 대로 정수 계열 형식 이어야 합니다 [기본 형식](../cpp/fundamental-types-cpp.md)합니다.
 

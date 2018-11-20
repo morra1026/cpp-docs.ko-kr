@@ -6,18 +6,18 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: 5d203d228ed2171a901f65cd01af8bd0d9703517
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 520537f5d562450dc4ea2a5e5a0c68af513da509
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511594"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175058"
 ---
 # <a name="atl-connection-points"></a>ATL 연결 지점
 
 연결 가능 개체는 송신 인터페이스를 지원합니다. 송신 인터페이스에서는 개체가 클라이언트와 통신할 수 있습니다. 연결 가능 개체는 각 송신 인터페이스에 대해 연결 지점을 노출합니다. 각 송신 인터페이스는 싱크라는 개체에서 클라이언트에 의해 구현됩니다.
 
-![연결 지점](../atl/media/vc2zw31.gif "vc2zw31")
+![연결 지점](../atl/media/vc2zw31.gif "연결점")
 
 각 연결 지점은 지원 합니다 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) 인터페이스입니다. 연결 가능 개체를 통해 클라이언트에 해당 연결 지점을 노출 합니다 [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) 인터페이스입니다.
 

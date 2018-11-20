@@ -1,17 +1,17 @@
 ---
 title: 표준 변환
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - standard conversions, categories of
 - L-values [C++]
 - conversions, standard
 ms.assetid: ce7ac8d3-5c99-4674-8229-0672de05528d
-ms.openlocfilehash: 7a42a4f35a29489fe23327c6b34ed49197a64724
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aee100bdc7e8ba6dd7d06c6bca9ed39c09cf2d97
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575450"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176980"
 ---
 # <a name="standard-conversions"></a>표준 변환
 
@@ -189,7 +189,8 @@ int main() {
 
 기본 클래스에 액세스할 수 있는지 여부는 파생에서 사용되는 상속의 종류에 따라 달라집니다. 다음 그림에 나와 있는 상속을 살펴보세요.
 
-![기본을 보여 주는 상속 그래프&#45;내게 필요한 옵션 클래스](../cpp/media/vc38xa1.gif "vc38XA1") 그림의 기본 클래스 접근성에 대 한 상속 그래프
+![기본을 보여 주는 상속 그래프&#45;내게 필요한 옵션 클래스](../cpp/media/vc38xa1.gif "기본 보여 주는 상속 그래프&#45;내게 필요한 옵션 클래스") <br/>
+기본 클래스 접근성을 보여 주는 상속 그래프
 
 다음 표에서는 그림에 나와 있는 상황에 대한 기본 클래스 접근성을 보여 줍니다.
 
