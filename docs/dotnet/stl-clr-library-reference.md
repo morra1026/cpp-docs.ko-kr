@@ -7,16 +7,16 @@ helpviewer_keywords:
 - STL/CLR, redistribution
 - cliext directory
 ms.assetid: a9d9ca00-7bf2-48c1-b205-3ae6f8c25f82
-ms.openlocfilehash: b1628ebc315dd0e94b54f6d0c7847d46e002351e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6914b61597e38c94a214089ecc3aeed17aec46d3
+ms.sourcegitcommit: 984fb4814a2dd9bcea5ec88c9528707f17a7cffa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539466"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51949520"
 ---
 # <a name="stlclr-library-reference"></a>STL/CLR 라이브러리 참조
 
-STL/CLR 라이브러리를 사용 하 여 c + + 및.NET Framework 공용 언어 런타임 (CLR)에 대 한 c + + 표준 라이브러리 컨테이너와 비슷한 인터페이스를 제공합니다. STL/CLR c + + 표준 라이브러리의 Microsoft 구현과 완전히 별개입니다. STL/CLR 레거시 지원을 위해 유지는 되지만 c + + 표준을 사용 하 여 최신 상태로 유지 됩니다. 네이티브를 사용 하는 것이 좋습니다 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md) 대신 가능한 STL/CLR 컨테이너입니다.
+STL/CLR 라이브러리를 사용 하 여 c + + 및.NET Framework 공용 언어 런타임 (CLR)에 대 한 c + + 표준 라이브러리 컨테이너와 비슷한 인터페이스를 제공합니다. STL/CLR c + + 표준 라이브러리의 Microsoft 구현을 완전히 별개입니다. STL/CLR 레거시 지원을 위해 유지는 되지만 c + + 표준을 사용 하 여 최신 상태로 유지 됩니다. 네이티브를 사용 하는 것이 좋습니다 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md) 대신 가능한 STL/CLR 컨테이너입니다.
 
 STL/CLR을 사용 합니다 하:
 

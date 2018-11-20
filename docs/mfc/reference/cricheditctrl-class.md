@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: e8575c2eb814bd7fb3cb307654b0e3622506c6c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 756f50afd9b67e4895d8d1b15652602630c24918
+ms.sourcegitcommit: 984fb4814a2dd9bcea5ec88c9528707f17a7cffa
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505419"
+ms.lasthandoff: 11/19/2018
+ms.locfileid: "51949546"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 
@@ -360,7 +360,7 @@ int CharFromPos(CPoint pt) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 지정 된 지점의 좌표를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
