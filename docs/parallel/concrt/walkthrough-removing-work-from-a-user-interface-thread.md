@@ -1,16 +1,16 @@
 ---
 title: '연습: 사용자 인터페이스 스레드에서 작업 제거'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 85622b68f94342ece2c9fc666b9ff6d515cfe10b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1230cf2b3fa510aeca8516e41cf30f9665987d05
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472439"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176317"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 
@@ -104,11 +104,11 @@ ms.locfileid: "50472439"
 
    [!code-cpp[concrt-mandelbrot#8](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_8.cpp)]
 
-9. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 업데이트 되었는지 확인 합니다.
+1. 응용 프로그램을 빌드하고 실행 하 여 성공적으로 업데이트 되었는지 확인 합니다.
 
 다음 그림에서는 Mandelbrot 응용 프로그램의 결과 보여 줍니다.
 
-![Mandelbrot 응용 프로그램](../../parallel/concrt/media/mandelbrot.png "mandelbrot")
+![Mandelbrot 응용 프로그램](../../parallel/concrt/media/mandelbrot.png "Mandelbrot 응용 프로그램")
 
 각 픽셀에 대 한 계산 과정이 이기 때문에 UI 스레드 전체 계산이 완료 될 때까지 추가 메시지를 처리할 수 없습니다. 이 응용 프로그램의 응답성을 저하 될 수 있습니다. 그러나 UI 스레드에서 작업을 제거 하 여이 문제를 덜 수 있습니다.
 

@@ -1,13 +1,13 @@
 ---
 title: 컬렉션(C++/CX)
-ms.date: 01/22/2017
+ms.date: 11/19/2018
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-ms.openlocfilehash: d139bcfc6cdf61940a40ca069dd157c1805e2034
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d256e333ddf31bdb637680b70718af85e753a21d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531591"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176395"
 ---
 # <a name="collections-ccx"></a>컬렉션(C++/CX)
 
@@ -15,7 +15,7 @@ C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이�
 
 컬렉션 및 관련된 형식 및 C +에 대 한 인터페이스를 정의 하는 Windows 런타임 + CX collection.h 헤더 파일의 구체적 c + + 구현을 제공 합니다. 다음 그림에서는 컬렉션 형식 간의 관계를 보여 줍니다.
 
-![C&#43;&#43;&#47;컬렉션 형식에 대 한 /CX 상속 트리](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")
+![C&#43;&#43;&#47;컬렉션 형식에 대 한 /CX 상속 트리](../cppcx/media/cppcxcollectionsinheritancetree.png "C&#43;&#43;&#47;컬렉션 형식에 대 한 /CX 상속 트리")
 
 - [Platform::Collections::Vector 클래스](../cppcx/platform-collections-vector-class.md) 는 [std::vector 클래스](../standard-library/vector-class.md)와 유사합니다.
 
@@ -63,7 +63,7 @@ C + + /CX 프로그램 가능 표준 템플릿 라이브러리 (STL) 컨테이�
 
 다음 그림에서는 `range for` 에 대한 `IVector<Person^>`루프를 보여 줍니다. 64번 줄의 중단점에서 실행이 중지됩니다. **간략한 조사식** 창에서 반복기 변수 `p` 가 실제로는 `VectorProxy<Person^>` 및 `m_v` 멤버 변수가 있는 `m_i` 라는 것을 확인할 수 있습니다. 그러나 이 변수에 대해 `GetType` 을 호출하면 `Person` 인스턴스 `p2`와 동일한 형식이 반환됩니다. `VectorProxy` 및 `ArrowProxy` 는 **간략한 조사식**, 디버거 특정 컴파일러 오류 또는 기타 위치에 나타날 수 있지만 일반적으로 해당 항목을 명시적으로 코딩할 필요는 없습니다.
 
-![범위의 VectorProxy&#45;기반 for 루프](../cppcx/media/vectorproxy-1.png "VectorProxy_1")
+![범위의 VectorProxy&#45;기반 for 루프](../cppcx/media/vectorproxy-1.png "범위의 VectorProxy&#45;루프에 대 한 기준")
 
 프록시 개체를 코딩해야 하는 시나리오 중 하나는 `dynamic_cast` 요소 컬렉션에서 특정 형식의 XAML 개체를 찾을 때 등에 요소에 대해 `UIElement` 를 수행해야 하는 경우입니다. 이 경우 먼저 요소를 [Platform::Object](../cppcx/platform-object-class.md)^으로 캐스팅한 다음 동적 캐스팅을 수행해야 합니다.
 

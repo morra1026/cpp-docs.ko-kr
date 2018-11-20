@@ -1,6 +1,6 @@
 ---
 title: 소멸자 (C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - objects [C++], destroying
 - Visual C++, destructors
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - destructors, about destructors
 - destructors, C++
 ms.assetid: afa859b0-f3bc-4c4d-b250-c68b335b6004
-ms.openlocfilehash: 5c56a6ffc43f8fa00ffd540a5922d8ac279475ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f26f797da75f0d7d7aa6f6849c9484cea35fb125
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586019"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175875"
 ---
 # <a name="destructors-c"></a>소멸자 (C++)
 
@@ -152,8 +152,7 @@ B1 dtor
 
 가상 기본 클래스의 소멸자는 방향이 있는 비순환 그래프(깊이 우선, 왼쪽에서 오른쪽으로, 후위 운행법)에서 표시되는 역순으로 호출됩니다. 다음 그림은 상속 그래프를 보여 줍니다.
 
-![가상 기본 클래스를 보여 주는 상속 그래프](../cpp/media/vc392j1.gif "vc392J1")
-
+![가상 기본 클래스를 보여 주는 상속 그래프](../cpp/media/vc392j1.gif "가상 기본 클래스를 보여 주는 상속 그래프") <br/>
 가상 기본 클래스를 보여 주는 상속 그래프
 
 다음은 그림에 표시된 클래스의 클래스 헤드를 나열합니다.

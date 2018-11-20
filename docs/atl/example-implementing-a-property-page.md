@@ -1,15 +1,15 @@
 ---
 title: 속성 페이지 (ATL) 구현
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - property pages, implementing
 ms.assetid: c30b67fe-ce08-4249-ae29-f3060fa8d61e
-ms.openlocfilehash: 6eb65ca3ddff79262c2f2b53d84d2f964f273c9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a76a0f49e8b0ec7458b781785cd5030d2c523f0b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669094"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176473"
 ---
 # <a name="example-implementing-a-property-page"></a>예: 속성 페이지 구현
 
@@ -58,7 +58,7 @@ ms.locfileid: "50669094"
 
 속성 페이지에 생성 된 경우에 이제 해당 페이지를 나타내는 대화 상자 리소스에 몇 가지 컨트롤을 추가 해야 합니다. 편집 상자, 정적 텍스트 컨트롤 및 확인란을 추가 하 고 아래와 같이 해당 Id를 설정 합니다.
 
-![대화 상자 리소스 편집](../atl/media/ppgresourcelabeled.gif "ppgresourcelabeled")
+![대화 상자 리소스 편집](../atl/media/ppgresourcelabeled.gif "대화 상자 리소스 편집")
 
 이러한 컨트롤은 문서와 읽기 전용 상태가의 파일 이름을 표시 하도록 사용 됩니다.
 

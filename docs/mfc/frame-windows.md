@@ -1,6 +1,6 @@
 ---
 title: 프레임 창
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - document frame windows [MFC]
 - windows [MFC], MDI
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 09db7bab392778297f17c14f7bb807f91af4d896
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76c2f303713644c5f78f20d2ea868bd67b9eae71
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619936"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175377"
 ---
 # <a name="frame-windows"></a>프레임 창
 
@@ -30,7 +30,8 @@ ms.locfileid: "50619936"
 
 MFC 프레임 워크는 프레임 창을 사용 하 여 보기가 포함 되어 있습니다. 두 구성 요소-프레임 및 콘텐츠-표시 되 고 MFC의 두 다른 클래스에 의해 관리 됩니다. 프레임 창 클래스는 프레임을 관리 하 고 뷰 클래스 콘텐츠를 관리 합니다. 보기 프레임 창의 자식입니다. 그리기 및 문서를 사용 하 여 사용자 상호 작용이 없습니다 프레임 창의 클라이언트 영역 보기의 클라이언트 영역에서 수행 합니다. 프레임 창의 캡션 표시줄을 최소화 하 고 창을 최대화 단추 컨트롤 메뉴와 같은 표준 창 컨트롤을 사용 하 여 전체 뷰 주위에 보이는 프레임을 제공 하 고 창의 크기를 조정 하는 것에 대 한 제어 합니다. "콘텐츠" 자식 창에서 완벽 하 게 사용 되 고 있는 창의 클라이언트 영역의 구성-보기. 다음 그림 프레임 창 및 뷰 간의 관계를 보여 줍니다.
 
-![프레임 창 보기](../mfc/media/vc37fx1.gif "vc37fx1") 프레임 창 및 뷰
+![프레임 창 보기](../mfc/media/vc37fx1.gif "프레임 창 보기") <br/>
+프레임 창 및 뷰
 
 ## <a name="frame-windows-and-splitter-windows"></a>프레임 Windows 및 Windows 분할자
 

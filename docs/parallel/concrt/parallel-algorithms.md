@@ -1,15 +1,15 @@
 ---
 title: 병렬 알고리즘
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - parallel algorithms [Concurrency Runtime]
 ms.assetid: 045dca7b-4d73-4558-a44c-383b88a28473
-ms.openlocfilehash: 0ad7f67016dcb7d4638de0f159feb23cd1282b19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8a08919ce6792babb9b8b1b809e242465a200f9
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445593"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176447"
 ---
 # <a name="parallel-algorithms"></a>병렬 알고리즘
 
@@ -247,7 +247,7 @@ PPL은 세 가지 정렬 알고리즘을 제공 합니다. [concurrency:: parall
 
 다음 그림은 세 가지 병렬 정렬 알고리즘의 중요 속성을 그래픽으로 보여줍니다.
 
-![정렬 알고리즘 비교](../../parallel/concrt/media/concrt_parallel_sorting.png "concrt_parallel_sorting")
+![정렬 알고리즘 비교](../../parallel/concrt/media/concrt_parallel_sorting.png "정렬 알고리즘 비교")
 
 이러한 병렬 정렬 알고리즘은 취소 및 예외 처리의 규칙을 따릅니다. 취소 및 동시성 런타임에서 예외 처리에 대 한 자세한 내용은 참조 하세요. [병렬 알고리즘 취소](../../parallel/concrt/cancellation-in-the-ppl.md#algorithms) 하 고 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)합니다.
 

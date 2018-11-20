@@ -1,6 +1,6 @@
 ---
 title: CMFCPropertyGridCtrl 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCPropertyGridCtrl
 - AFXPROPERTYGRIDCTRL/CMFCPropertyGridCtrl
@@ -150,16 +150,16 @@ helpviewer_keywords:
 - CMFCPropertyGridCtrl [MFC], OnSelectCombo
 - CMFCPropertyGridCtrl [MFC], ValidateItemData
 ms.assetid: 95877cae-2311-4a2a-9031-0c8c3cf0a5f9
-ms.openlocfilehash: 764a1fc33d91888c8c32111eca41666d9d0abbd7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fe22924039cc0e2547df2cc07b0c4387ad908bd
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557328"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177058"
 ---
 # <a name="cmfcpropertygridctrl-class"></a>CMFCPropertyGridCtrl 클래스
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 속성을 사전순 또는 계층적 순서로 표시할 수 있는 편집 가능한 속성 표 컨트롤을 지원합니다.
 
@@ -293,7 +293,7 @@ class CMFCPropertyGridCtrl : public CWnd
 
 다음 그림은 두 가지 방법으로 속성을 표시 하는 속성 표 컨트롤을 설명 합니다. 첫 번째 그림 속성을 계층적으로 표시 되 고 두 번째 속성이 사전순으로 표시 됩니다.
 
-![속성 목록 PropertySheet](../../mfc/reference/media/proplist.png "proplist")
+![속성 목록 PropertySheet](../../mfc/reference/media/proplist.png "속성 목록 PropertySheet")
 
 ## <a name="example"></a>예제
 
@@ -1053,7 +1053,7 @@ CMFCPropertyGridProperty* HitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 *pnArea*<br/>
@@ -1272,7 +1272,7 @@ virtual void OnClickButton(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="remarks"></a>설명
@@ -1608,7 +1608,7 @@ virtual void UpdateColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] RGB 색 값입니다.
 
 ### <a name="remarks"></a>설명

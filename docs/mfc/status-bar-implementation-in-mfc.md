@@ -1,6 +1,6 @@
 ---
 title: MFC의 상태 표시줄 구현
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - COldStatusBar
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - status indicators
 - status bars [MFC], Windows 95 implementation
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
-ms.openlocfilehash: 25848e4467a0d767c40ffb00a1bd4d50a062d3a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 521b24646b673159d14e89bd57ea698a7ba73381
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496282"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175371"
 ---
 # <a name="status-bar-implementation-in-mfc"></a>MFC의 상태 표시줄 구현
 
@@ -33,7 +33,8 @@ A [CStatusBar](../mfc/reference/cstatusbar-class.md) 개체의 텍스트 출력 
 
 다음 그림에는 몇 가지 지표를 표시 하는 상태 표시줄을 보여 줍니다.
 
-![상태 표시줄](../mfc/media/vc37dy1.gif "vc37dy1") 는 상태 표시줄
+![상태 표시줄](../mfc/media/vc37dy1.gif "상태 표시줄") <br/>
+상태 표시줄
 
 도구 모음과 같은 상태 표시줄 개체 부모 프레임 창에 포함 된 및 프레임 창 생성 될 때 자동으로 생성 됩니다. 모든 컨트롤 막대와 같은 상태 표시줄을 자동으로 제거도 부모 프레임 소멸 될 때입니다.
 
