@@ -1,6 +1,6 @@
 ---
 title: 접근자 및 행 집합
-ms.date: 10/22/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - accessors [C++]
 - OLE DB consumer templates, rowset support
@@ -17,12 +17,12 @@ helpviewer_keywords:
 - accessors [C++], rowsets
 - rowsets [C++], supported types
 ms.assetid: edc9c8b3-1a2d-4c2d-869f-7e058c631042
-ms.openlocfilehash: 74a839d36f96b115d1f4e0c35532bd76d998a4b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d29c409f2ed410d9f697419e9a98b675eee7a69d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651258"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175716"
 ---
 # <a name="accessors-and-rowsets"></a>접근자 및 행 집합
 
@@ -34,7 +34,7 @@ ms.locfileid: "50651258"
 
 다음 그림에는 접근자 형식을 보여 줍니다.
 
-![접근자 형식](../../data/oledb/media/vcaccessortypes.gif "vcaccessortypes")<br/>
+![접근자 형식](../../data/oledb/media/vcaccessortypes.gif "접근자 형식")<br/>
 접근자 클래스
 
 - [CAccessor](../../data/oledb/caccessor-class.md) 디자인 타임에 원본 데이터베이스의 구조를 알고 있는 경우이 접근자를 사용 합니다. `CAccessor` 정적으로 버퍼를 포함 하는 데이터베이스 레코드를 데이터 소스에 바인딩합니다.
@@ -63,7 +63,7 @@ OLE DB 템플릿 지원 행 집합 (위 그림 참조)의 세 가지 종류: 행
 
 다음 그림에는 행 집합 형식을 보여 줍니다.
 
-![RowsetType 그래픽](../../data/oledb/media/vcrowsettypes.gif "vcrowsettypes")<br/>
+![RowsetType 그래픽](../../data/oledb/media/vcrowsettypes.gif "RowsetType 그래픽")<br/>
 행 집합 클래스
 
 [스키마 행 집합](../../data/oledb/obtaining-metadata-with-schema-rowsets.md) 안 데이터의 데이터 액세스 저장 되지만 대신 메타 데이터 라고 하는 데이터 저장소에 대 한 정보에 액세스 합니다. 스키마 행 집합은 일반적으로 데이터베이스 구조 컴파일 타임에 알려질 및 런타임 시 얻을 수 해야 상황에서 사용 됩니다.

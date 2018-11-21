@@ -2,14 +2,15 @@
 title: 정의 위치 이동
 ms.date: 11/16/2016
 ms.assetid: c6d507ac-c61e-4da2-95c8-d504b42e2520
-ms.openlocfilehash: fd4fe2fb755919656fba935c29ab8a8591426bea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7957e18732dfae92b7b3ae9cf7ecea441fc3a6b4
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462363"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693207"
 ---
 # <a name="move-definition-location"></a>정의 위치 이동
+
 **대상:** 함수 정의를 해당 헤더 파일로 즉시 이동할 수 있습니다.
 
 **시기:** 헤더 파일로 이동할 함수가 있는 경우.

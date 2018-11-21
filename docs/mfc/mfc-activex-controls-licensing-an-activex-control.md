@@ -1,6 +1,6 @@
 ---
 title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스'
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 f1_keywords:
 - COleObjectFactory
 helpviewer_keywords:
@@ -11,18 +11,18 @@ helpviewer_keywords:
 - GetLicenseKey method [MFC]
 - licensing ActiveX controls
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-ms.openlocfilehash: 4001d49da8477ab9dd481d0eb3ee02cb10e1e18b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35ca5d410f642f2557d9ee797eda2d9529f7f4d1
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465626"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176361"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스
 
 지원 라이선스 ActiveX 컨트롤의 선택적 기능으로 지정할 수 있습니다를 사용 하거나 컨트롤을 배포할 수 있습니다. (추가 내용은 라이선스 문제에 대 한 라이선스 문제를 참조 하세요 [기존 ActiveX 컨트롤 업그레이드](../mfc/upgrading-an-existing-activex-control.md).)
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
 
 이 문서에서는 다음 내용을 다룹니다.
@@ -43,13 +43,15 @@ ActiveX 컨트롤에 대 한 라이선스 지원을 제공 하는 [COleObjectFac
 
 아래 그림에서는 ActiveX 컨트롤 컨테이너 응용 프로그램을 개발 하는 동안 사용할 라이선스 확인을 보여 줍니다. 이전에 설명한 대로 적절 한 컨테이너 응용 프로그램 개발자에 있어야 합니다. 컨트롤의 인스턴스를 만들려면 개발 컴퓨터에 설치-사용권 계약 파일입니다.
 
-![사용이 허가 된 ActiveX 컨트롤이 개발 시 확인 됨](../mfc/media/vc374d1.gif "vc374d1") 사용이 허가 된 ActiveX 컨트롤 중 개발 확인
+![사용이 허가 된 ActiveX 컨트롤이 개발 시 확인 됨](../mfc/media/vc374d1.gif "사용이 허가 된 ActiveX 컨트롤이 개발 시 확인 됨") <br/>
+개발 도중 사용이 허가된 ActiveX 컨트롤 확인
 
 다음 그림에 표시 된 다음 프로세스는 최종 사용자는 컨테이너 응용 프로그램을 실행 하는 경우에 발생 합니다.
 
 응용 프로그램이 시작 되 면 컨트롤의 인스턴스는 일반적으로 만들려는 해야 합니다. 컨테이너를 호출 하 여이 수행 `CreateInstanceLic`, 포함 된 라이선스 키를 매개 변수로 전달 합니다. 그런 다음 문자열 비교를 포함 된 라이선스 키와 라이선스 키의 컨트롤의 자체 복사본 간에 이루어집니다. 성공한 일치 하는 경우 컨트롤의 인스턴스 생성 되 고 응용 프로그램 계속 정상적으로 실행 합니다. 유의 합니다. 없음 파일 제어 사용자의 컴퓨터에 없이 필요 합니다.
 
-![사용이 허가 된 ActiveX 컨트롤이 실행 시 확인 됨](../mfc/media/vc374d2.gif "vc374d2") 사용이 허가 된 ActiveX 컨트롤 중 실행 확인
+![사용이 허가 된 ActiveX 컨트롤이 실행 시 확인 됨](../mfc/media/vc374d2.gif "사용이 허가 된 ActiveX 컨트롤이 실행 시 확인 됨") <br/>
+실행 도중 사용이 허가된 ActiveX 컨트롤 확인
 
 두 가지 기본 구성 요소로 이루어져 컨트롤 라이선스: DLL 컨트롤 구현에서 특정 코드 및 라이선스 파일. 코드는 두 개 (또는 세 가지 가능한 경우) 함수 호출부터 "라이선스"를 포함 하는 문자열 저작권 표시 라고 하는 문자열의 구성 됩니다. 컨트롤 구현에서 이러한 호출 및 라이선스 문자열 있습니다 (합니다. Cpp) 합니다. ActiveX 컨트롤 마법사에서 생성 한 라이선스 파일에는 저작권 정보를 사용 하 여 텍스트 파일입니다. 라고 하 고 사용 하 여 프로젝트 이름을 사용 하는 합니다. 예를 들어 샘플 없음 확장입니다. 없음입니다. 사용이 허가 된 컨트롤을 디자인 타임에 사용 하 여 필요한 경우 라이선스 파일 수반 되어야 합니다.
 

@@ -1,15 +1,15 @@
 ---
 title: '방법: unique_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 9a373030-e587-452f-b9a5-c5f9d58b7673
-ms.openlocfilehash: 13823b34042d8658d0d690e6657e1f41db50f788
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3e5705b47a4cfdf17b9a4b4829f1e13565dd7ce
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610251"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174887"
 ---
 # <a name="how-to-create-and-use-uniqueptr-instances"></a>방법: unique_ptr 인스턴스 만들기 및 사용
 
@@ -17,7 +17,7 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) 해당 포인터를 공�
 
 다음 다이어그램은 두 `unique_ptr` 인스턴스 사이의 소유권 이전을 보여 줍니다.
 
-![고유한의 소유권 이동&#95;ptr](../cpp/media/unique_ptr.png "unique_ptr")
+![고유한의 소유권 이동&#95;ptr](../cpp/media/unique_ptr.png "고유한의 소유권 이동&#95;ptr")
 
 `unique_ptr` 에 정의 된는 `<memory>` c + + 표준 라이브러리의 헤더입니다. 정확 하 게 원시 포인터 만큼 효율적이 고 c + + 표준 라이브러리 컨테이너에서 사용할 수 있습니다. 추가 `unique_ptr` c + + 표준 라이브러리 컨테이너 인스턴스는 효율적 때문에 이동 생성자를 `unique_ptr` 복사 작업에 대 한 필요가 없습니다.
 

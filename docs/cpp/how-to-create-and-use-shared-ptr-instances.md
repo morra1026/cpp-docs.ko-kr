@@ -1,15 +1,15 @@
 ---
 title: '방법: shared_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: f437ccb476456a8081fa3be293bf67adb4fb2d0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79d85de6859096bdff3e2bc17357b721e5ce5846
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606650"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176278"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>방법: shared_ptr 인스턴스 만들기 및 사용
 
@@ -17,33 +17,33 @@ ms.locfileid: "50606650"
 
 다음 그림에서는 한 개의 메모리 위치를 가리키는 여러 `shared_ptr` 인스턴스를 보여 줍니다.
 
-[![공유 포인터](../cpp/media/shared_ptr.png "shared_ptr")]
+![공유 포인터 다이어그램](../cpp/media/shared_ptr.png "공유 포인터 다이어그램")
 
-## <a name="example"></a>예제
+## <a name="example-1"></a>예제 1
 
 가능 하면 사용 된 [make_shared](../standard-library/memory-functions.md#make_shared) 만드는 함수를 `shared_ptr` 메모리 리소스를 처음 만들어질 때. `make_shared`는 예외로부터 안전합니다. 동일한 호출을 사용하여 제어 블록 및 리소스에 대한 메모리를 할당하고 이를 통해 생성 오버헤드가 감소됩니다. `make_shared`를 사용하지 않는 경우 `shared_ptr` 생성자에 전달하기 전에 새 명시적 식을 사용하여 개체를 만들어야 합니다. 다음 예제에서는 새 개체와 함께 `shared_ptr`을 선언하고 초기화하는 다양한 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#1](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_1.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-2"></a>예제 2
 
 다음 예제에서는 이미 다른 `shared_ptr`로 할당된 개체의 소유권을 공유하는 `shared_ptr` 인스턴스를 선언하고 초기화하는 방법을 보여 줍니다. `sp2`가 초기화된 `shared_ptr`임을 가정하십시오.
 
 [!code-cpp[stl_smart_pointers#2](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_2.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-3"></a>예제 3
 
 `shared_ptr` 유용도 c + + 표준 라이브러리 컨테이너의 요소를 복사 하는 알고리즘을 사용 하는 경우입니다. `shared_ptr`에 요소를 래핑한 다음 내부 메모리가 필요할 때까지 유효하거나 더 이상 유효하지 않음을 인식하며 해당 요소를 다른 컨테이너에 복사할 수 있습니다. 다음 예제에서는 벡터의 `replace_copy_if` 인스턴스에서 `shared_ptr` 알고리즘을 사용하는 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-4"></a>예제 4
 
 `dynamic_pointer_cast`, `static_pointer_cast` 및 `const_pointer_cast`를 사용하여 `shared_ptr`을 캐스팅할 수 있습니다. 이러한 함수는 `dynamic_cast`, `static_cast` 및 `const_cast` 연산자와 비슷합니다. 다음 예제에서는 기본 클래스에서 `shared_ptr`의 벡터에 있는 각 요소의 파생 형식을 테스트한 다음 요소를 복사하고 이에 대한 정보를 표시하는 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#5](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_4.cpp)]
 
-## <a name="example"></a>예제
+## <a name="example-5"></a>예제 5
 
 `shared_ptr`을 다음과 같은 방법으로 다른 함수에 전달할 수 있습니다.
 
@@ -59,7 +59,7 @@ ms.locfileid: "50606650"
 
 - 경우에 따라 `std:vector<shared_ptr<T>>`의 예제에서 각 `shared_ptr`을 람다 식 본문 또는 명명된 함수 개체로 전달해야 할 수도 있습니다. 람다 또는 함수가 포인터를 저장하지 않는 경우 참조로 `shared_ptr`을 전달하여 각 요소에 대한 복사 생성자를 호출하지 않습니다.
 
-## <a name="example"></a>예제
+## <a name="example-6"></a>예제 6
 
 다음 예제에서는 `shared_ptr`이 `shared_ptr` 인스턴스가 소유하는 메모리의 포인터를 비교할 수 있도록 다양한 비교 연산자를 오버로드하는 방법을 보여 줍니다.
 

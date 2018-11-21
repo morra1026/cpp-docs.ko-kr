@@ -1,6 +1,6 @@
 ---
 title: 투명 또는 불투명 배경 선택(아이콘에 대한 이미지 편집기)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - opaque backgrounds [C++]
 - colors [C++], image
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - images [C++], transparency
 - images [C++], opaque background
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
-ms.openlocfilehash: a7e4d427a6926d48b5115a1b5bb9ba2ca2d8068c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ceea31b998d5c4dca52657db570ace664f7e373f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653533"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175433"
 ---
 # <a name="choosing-a-transparent-or-opaque-background-image-editor-for-icons"></a>투명 또는 불투명 배경 선택(아이콘에 대한 이미지 편집기)
 
@@ -21,7 +21,7 @@ ms.locfileid: "50653533"
 
 불투명 한 배경으로 투명 한 배경을 (기본값)에서 전환 하 고 다시 수 있습니다. 선택 도구를 사용 하는 경우는 **투명 한 배경을** 및 **불투명 한 배경** 옵션에 표시 합니다 **옵션** 선택기는 **이미지 편집기** 도구 모음 (아래와 같이).
 
-![배경 옵션 &#45; 불투명 또는 투명](../windows/media/vcimageeditoropaqtranspback.gif "vcImageEditorOpaqTranspBack")<br/>
+![배경 옵션 &#45; 불투명 또는 투명](../windows/media/vcimageeditoropaqtranspback.gif "백그라운드 옵션 &#45; 불투명 또는 투명")<br/>
 **투명 한 픽셀과 불투명 한 옵션** 에 **이미지 편집기 도구 모음**
 
 ### <a name="to-switch-between-a-transparent-and-opaque-background"></a>투명 한 픽셀과 불투명 한 배경 사이 전환 하려면
@@ -32,9 +32,9 @@ ms.locfileid: "50653533"
 
    - `Transparent Background (T)`: 현재 배경색을 일치 하는 선택 영역의 부분 기존 이미지 보여 줍니다.
 
-\- 또는 -
+   \- 또는 -
 
-- 에 **이미지** 메뉴에서 선택 하거나 선택을 취소 **불투명 하 게 그리기**합니다.
+1. 에 **이미지** 메뉴에서 선택 하거나 선택을 취소 **불투명 하 게 그리기**합니다.
 
 이미지의 어느 요소가 투명 하 게 변경 효과에 이미 선택 하는 동안 배경색을 변경할 수 있습니다.
 

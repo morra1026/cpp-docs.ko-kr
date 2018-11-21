@@ -1,6 +1,6 @@
 ---
 title: 단일 상속
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - single inheritance
 - base classes [C++], indirect
@@ -10,18 +10,19 @@ helpviewer_keywords:
 - derived classes [C++], single base class
 - inheritance, single
 ms.assetid: 1cb946ed-8b1b-4cf1-bde0-d9cecbfdc622
-ms.openlocfilehash: a188780201c00451b125288b37c7c62fbe2322c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96af0c42a32f14280fd8c208a3e4eaec38a8ca3a
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461856"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175628"
 ---
 # <a name="single-inheritance"></a>단일 상속
 
 일반적인 상속 형식인 "단일 상속"에서 클래스에는 기본 클래스가 하나만 포함됩니다. 다음 그림에 나와 있는 관계를 살펴보십시오.
 
-![기본 단일&#45;상속 그래프](../cpp/media/vc38xj1.gif "vc38XJ1") 단순 Single_inheritance 그래프
+![기본 단일&#45;상속 그래프](../cpp/media/vc38xj1.gif "기본 단일&#45;상속 그래프") <br/>
+간단한 단일 상속 그래프
 
 그림에 나와 있는 일반적인 관계에서 구체적인 관계로의 진행 방식을 잘 살펴보십시오. 대부분의 클래스 계층 구조 디자인에서 확인할 수 있는 또 다른 공통적인 특성은, 파생 클래스와 기본 클래스 간에 "일종의" 관계가 있다는 것입니다. 그림에서 `Book`은 일종의 `PrintedDocument`이고 `PaperbackBook`은 일종의 `book`입니다.
 
@@ -47,12 +48,13 @@ class PaperbackBook : public Book {};
 
 다음 그림과 같이 클래스 하나를 여러 특정 클래스의 기본 클래스로 사용할 수 있습니다.
 
-![지시 된 방향이 있는 비순환 그래프](../cpp/media/vc38xj2.gif "vc38XJ2") 샘플의 방향성 비순환 그래프
+![지시 된 방향이 있는 비순환 그래프](../cpp/media/vc38xj2.gif "지시 된 방향이 있는 비순환 그래프") <br/>
+방향이 있는 비순환 그래프 샘플
 
 위의 다이어그램에 나와 있는 "DAG"("방향이 있는 비순환 그래프")에서 일부 클래스는 파생 클래스 두 개 이상의 기본 클래스입니다. 그러나 그 반대의 경우는 성립하지 않습니다. 즉, 지정된 파생 클래스의 직접 기본 클래스는 하나뿐입니다. 그림의 그래프는 "단일 상속" 구조체를 나타냅니다.
 
 > [!NOTE]
->  방향이 있는 비순환 그래프는 단일 상속만을 고유하게 나타내지 않습니다. 즉, 다중 상속 그래프를 나타내는 데 사용되기도 합니다.
+> 방향이 있는 비순환 그래프는 단일 상속만을 고유하게 나타내지 않습니다. 즉, 다중 상속 그래프를 나타내는 데 사용되기도 합니다.
 
 상속에서 파생 클래스는 기본 클래스의 멤버와 새로 추가하는 멤버를 포함합니다. 따라서 파생 클래스는 기본 클래스의 멤버를 참조할 수 있습니다(해당 멤버가 파생 클래스에서 다시 정의되는 경우는 제외). 이러한 멤버가 파생 클래스에서 다시 정의된 경우에는 범위 결정 연산자(`::`)를 사용하여 직접 또는 간접 기본 클래스의 멤버를 참조할 수 있습니다. 다음 예제를 고려해 보세요.
 

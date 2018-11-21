@@ -1,6 +1,6 @@
 ---
 title: '레코드 집합: 데이터 열 동적 바인딩(ODBC)'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - ODBC recordsets [C++], binding columns dynamically
 - data binding [C++], recordset columns
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - data binding [C++], columns in recordsets
 - columns [C++], binding to recordsets
 ms.assetid: bff67254-d953-4ae4-9716-91c348cb840b
-ms.openlocfilehash: 0284fbeed23c5fdad47cafd29af7a47251b923a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2fc870ba08bbec0a886b3d77281f3c697ae09fe
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469682"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175667"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>레코드 집합: 데이터 열 동적 바인딩(ODBC)
 
@@ -78,7 +78,7 @@ ms.locfileid: "50469682"
 
    한 가지 방법은 빌드용 하나 이상의 동적 목록, 새 열의 이름, 다른 해당 결과 값과 해당 데이터 형식에 대 한 세 번째 (필요한 경우). 이러한 목록, 특히 값 목록에 있는 정보 및 바인딩에 대 한 필요한 저장소를 제공합니다. 다음 그림은 목록 만들기를 보여 줍니다.
 
-   ![동적으로 바인딩할 열 목록 만들기](../../data/odbc/media/vc37w61.gif "vc37w61")<br/>
+   ![동적으로 바인딩할 열 목록 만들기](../../data/odbc/media/vc37w61.gif "동적으로 바인딩할 열 목록 만들기")<br/>
    동적으로 바인딩할 열 목록 만들기
 
 1. RFX 함수 호출에서 기본 레코드 집합의 추가 `DoFieldExchange` 되는 각 열에 대해 작동 합니다. 이러한 RFX 호출 레코드를 인출 하 고 추가 열을 포함 하 여에 동적으로 제공 된 저장소 또는 데이터 멤버 레코드 집합에 열을 바인딩 작업을 수행 합니다.

@@ -1,18 +1,18 @@
 ---
 title: 액티브 문서 컨테이너
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - active documents [MFC], containers
 - active document containers [MFC]
 - containers [MFC], active document
 - MFC COM, active document containment
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-ms.openlocfilehash: ec2e4d11e00040cf0b94957db8466d127e0b5420
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfd4018496f1516f8016bb56da2406f2e4b04c08
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510840"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176785"
 ---
 # <a name="active-document-containers"></a>액티브 문서 컨테이너
 
@@ -54,7 +54,7 @@ MFC에서는 활성 문서 컨테이너에 대 한 전체 지원을 제공 합�
 
 다음 그림 컨테이너 및 해당 구성 요소 (왼쪽)에 및 활성 문서 (오른쪽)에서 해당 뷰 간의 개념적 관계를 보여 줍니다. 활성 문서 저장소 및 데이터를 관리 하 고 뷰를 표시 하거나 필요에 따라 해당 데이터를 출력 합니다. 굵게 표시 된 인터페이스는 활성 문서 참여; 필요 이러한 굵게 및 기울임꼴는 선택적입니다. 다른 모든 인터페이스는 필수입니다.
 
-![액티브 문서 컨테이너 인터페이스](../mfc/media/vc37gj1.gif "vc37gj1")
+![액티브 문서 컨테이너 인터페이스](../mfc/media/vc37gj1.gif "액티브 문서 컨테이너 인터페이스")
 
 하나의 구체적 클래스에는 하나의 뷰만 지 원하는 문서 보기 및 문서 구성 요소 (즉, 해당 인터페이스)를 구현할 수 있습니다. 또한 한 번에 하나의 보기에만 지 원하는 컨테이너 사이트 구체적인 사이트를 단일 클래스로 문서 사이트 및 사이트 보기 결합할 수 있습니다. 컨테이너의 문서 구성 요소는 단순히 여기에 포함 된 아키텍처의 완전 한 설명을 제공 하 고 컨테이너의 프레임 개체 있지만 별도로 존재 해야 합니다. 액티브 문서 포함 아키텍처에는 영향을 받지 않습니다.
 

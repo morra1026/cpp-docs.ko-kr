@@ -2,16 +2,16 @@
 title: Visual Studio 2017에서 c + + 지원 설치
 description: Visual Studio의 Visual c + + 지원 설치
 ms.custom: mvc
-ms.date: 09/17/2018
+ms.date: 11/19/2018
 ms.topic: tutorial
 ms.devlang: C++
 ms.assetid: 45138d70-719d-42dc-90d7-1d0ca31a2f54
-ms.openlocfilehash: 019eadee35829bb546de0a69707520dc98f4077e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0dd1c25cd17c67c310840396c80fe05dfc2b7e1
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507239"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175745"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
 
@@ -45,11 +45,11 @@ Visual Studio 2015를 설치하려면 [이전 버전의 Visual Studio 다운로�
 
 1. 다운로드 하 고 실행 하면 설치 관리자 파일을 찾습니다. 브라우저에서 표시 될 수 있습니다 또는 다운로드 폴더에서 찾을 수 있습니다. 설치 관리자를 실행 하려면 관리자 권한이 필요 합니다. 표시 될 수 있습니다는 **사용자 계정 컨트롤** 설치 프로그램에서 시스템 변경; 선택 권한을 부여 하려면 묻는 대화 상자 **예**합니다. 문제가 있는 경우 파일 탐색기에서 다운로드 한 파일을 찾을 설치 관리자 아이콘을 마우스 오른쪽 단추로 클릭 선택할 **관리자 권한으로 실행** 상황에 맞는 메뉴입니다.
 
-   ![Visual Studio 2017 설치 관리자를 실행](../build/media/vscpp-concierge-run-installer.gif "Visual Studio 설치 관리자를 실행 합니다.")
+   ![다운로드 하 여 Visual Studio 설치 관리자 설치](../build/media/vscpp-concierge-run-installer.gif "다운로드 하 여 Visual Studio 설치 관리자를 설치 합니다.")
 
 1. 설치 관리자는 특정 개발 영역에 대한 관련 옵션의 그룹인 워크로드 목록을 제공합니다. C + +에 대 한 지원은 이제 기본적으로 설치 되지 않은 선택적 워크 로드의 일부입니다.
 
-   ![C + +를 사용한 데스크톱 개발](../build/media/desktop-development-with-cpp.png "c + +를 사용한 데스크톱 개발")
+   ![C + + 워크 로드를 사용한 데스크톱 개발](../build/media/desktop-development-with-cpp.png "c + +를 사용한 데스크톱 개발")
 
    C + +를 선택 합니다 **c + +를 사용한 데스크톱 개발** 워크 로드를 선택한 후 **설치**합니다.
 

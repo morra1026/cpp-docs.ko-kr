@@ -1,6 +1,6 @@
 ---
 title: 대화 상자 데이터 교환
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - initializing dialog boxes
 - canceling data exchange
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - UpdateData method [MFC]
 - retrieving dialog box data [MFC]
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-ms.openlocfilehash: a72be4daf6c10a7d16b8558bfdddb8337ff1b1be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f80d80dc9e212dbe0d87da65ac92943ad1f0edad
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566285"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175498"
 ---
 # <a name="dialog-data-exchange"></a>대화 상자 데이터 교환
 
@@ -34,7 +34,8 @@ DDX 메커니즘을 사용 하는 경우 대화 상자의 초기 값 개체의 �
 
 다음 그림에서는 대화 상자 데이터 교환 합니다.
 
-![대화 상자 데이터 교환](../mfc/media/vc379d1.gif "vc379d1") 대화 상자 데이터 교환
+![대화 상자 데이터 교환](../mfc/media/vc379d1.gif "대화 상자 데이터 교환") <br/>
+대화 상자 데이터 교환
 
 `UpdateData` 지정 된 대로 양방향으로 작동 합니다 **BOOL** 매개 변수를 전달 합니다. 교환 수행 하 `UpdateData` 설정 된 `CDataExchange` 대화 상자 클래스의 개체 및 호출의 재정의 `CDialog`의 `DoDataExchange` 멤버 함수입니다. `DoDataExchange` 형식의 인수 `CDataExchange`합니다. 합니다 `CDataExchange` 에 전달 된 개체 `UpdateData` exchange의 방향으로 이러한 정보를 정의 exchange의 컨텍스트를 나타냅니다.
 

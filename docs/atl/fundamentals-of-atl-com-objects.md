@@ -1,24 +1,24 @@
 ---
 title: ATL COM 개체의 기본 사항
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - COM, and ATL
 - ATL, COM
 - ATL COM objects
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-ms.openlocfilehash: 243b7f84fc20e1c002e866ae0720ab9521d24748
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6af732b381ab0c6c507d1d651b096e3976ab2d4b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437240"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176499"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM 개체의 기본 사항
 
 다음 그림에서는 클래스 및 ATL COM 개체를 정의 하는 데 사용 되는 인터페이스 간의 관계를 보여 줍니다.
 
-![ATL 구조](../atl/media/vc307y1.gif "vc307y1")
+![ATL 구조](../atl/media/vc307y1.gif "ATL 구조")
 
 > [!NOTE]
 >  이 다이어그램에 따르면 `CComObject` 에서 파생 됩니다 `CYourClass` 반면 `CComAggObject` 하 고 `CComPolyObject` 포함 `CYourClass` 멤버 변수입니다.

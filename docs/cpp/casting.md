@@ -1,6 +1,6 @@
 ---
 title: 캐스팅
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - casting [C++]
 - coercion [C++]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - polymorphic classes [C++]
 - classes [C++], polymorphism
 ms.assetid: 3dbeb06e-2f4b-4693-832d-624bc8ec95de
-ms.openlocfilehash: eb309319a4af6d604d8558552ce313ba1d0fb629
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02ade663ee92d3a301fda95bb385c3ffa48ead12
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560799"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175550"
 ---
 # <a name="casting"></a>캐스팅
 
@@ -23,11 +23,13 @@ C++ 언어에서는 클래스가 가상 함수를 포함하는 기본 클래스�
 
 파생 클래스에는 해당 클래스가 파생되는 모든 기본 클래스의 정의가 완전히 포함되어 있으므로 포인터를 이러한 기본 클래스에 대한 클래스 계층 구조 위로 캐스팅해도 됩니다. 기본 클래스에 포인터를 지정하면 포인터를 계층 구조 아래로 캐스팅해도 안전할 수 있습니다. 포인터가 지정 중인 개체가 실제로 기본 클래스에서 파생된 형식이면 안전합니다. 이 경우 실제 개체는 "완전한 개체"라고 합니다. 기본 클래스의 포인터는 완전한 개체의 "하위 개체"를 가리킨다고 합니다. 예를 들어 다음 그림과 같은 클래스 계층 구조를 고려해 보겠습니다.
 
-![클래스 계층 구조의](../cpp/media/vc38zz1.gif "vc38ZZ1") 클래스 계층 구조
+![클래스 계층 구조의](../cpp/media/vc38zz1.gif "클래스 계층 구조") <br/>
+클래스 계층 구조
 
 `C` 형식의 개체는 다음 그림과 같이 시각화될 수 있습니다.
 
-![하위 클래스 C&#45;개체 B 및 A](../cpp/media/vc38zz2.gif "vc38ZZ2") 하위 개체 B 및 A 하위 개체를 사용 하 여 클래스 C
+![하위 클래스 C&#45;개체 B 및 A](../cpp/media/vc38zz2.gif "sub 사용 하 여 클래스 C&#45;개체 B 및 A") <br/>
+하위 개체 B 및 A 포함 클래스 C
 
 `C` 클래스의 인스턴스를 제공하면 `B` 하위 개체 및 `A` 하위 개체가 있습니다. `C` 및 `A` 하위 개체를 포함한 `B`의 인스턴스는 "완전한 개체"입니다.
 

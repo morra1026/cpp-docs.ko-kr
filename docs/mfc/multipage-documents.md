@@ -1,6 +1,6 @@
 ---
 title: 다중 페이지 문서
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - pagination [MFC]
 - overriding [MFC], View class functions for printing
@@ -25,12 +25,12 @@ helpviewer_keywords:
 - printing [MFC], pagination
 - documents [MFC], paginating
 ms.assetid: 69626b86-73ac-4b74-b126-9955034835ef
-ms.openlocfilehash: 0c0363c1741b713ff24ec7ca7837f0f3c1b3eaf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4ec9f456443b9cd180f1558946829281bc10a36
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587670"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176382"
 ---
 # <a name="multipage-documents"></a>다중 페이지 문서
 
@@ -68,7 +68,8 @@ ms.locfileid: "50587670"
 
 다음 그림 인쇄 프로세스에 관련 된 단계를 보여 줍니다 및 위치를 보여 줍니다. 각 `CView`멤버 함수가 호출 될 인쇄 합니다. 이 문서의 나머지 부분에서는 대부분의 이러한 단계를 자세히 설명합니다. 인쇄 프로세스의 추가 파트는 문서에 설명 되어 있습니다 [GDI 리소스 할당](../mfc/allocating-gdi-resources.md)합니다.
 
-![루프 프로세스 인쇄](../mfc/media/vc37c71.gif "vc37c71") The 인쇄 루프
+![루프 프로세스 인쇄](../mfc/media/vc37c71.gif "루프 프로세스 인쇄") <br/>
+인쇄 루프
 
 ##  <a name="_core_pagination"></a> 페이지 매김
 

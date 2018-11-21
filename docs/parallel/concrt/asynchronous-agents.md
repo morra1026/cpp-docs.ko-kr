@@ -1,16 +1,16 @@
 ---
 title: 비동기 에이전트
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - asynchronous agents
 - agents [Concurrency Runtime]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-ms.openlocfilehash: 949074981d77702fd23ee3ff70f219c013fa6543
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a99400e4df49e36e1cddda7068f315485b976cde
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467602"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176538"
 ---
 # <a name="asynchronous-agents"></a>비동기 에이전트
 
@@ -22,7 +22,7 @@ ms.locfileid: "50467602"
 
 에이전트에 수명 주기를 설정된 합니다. 합니다 [concurrency:: agent_status](reference/concurrency-namespace-enums.md#agent_status) 열거형은 에이전트의 다양 한 상태를 정의 합니다. 다음 그림은 다른 에이전트의 상태가 진행 하는 방식을 보여 주는 상태 다이어그램. 실선은이 그림에서는 응용 프로그램에서 호출 하는 메서드를 나타냅니다. 점선은 런타임에서 호출 되는 메서드를 나타냅니다.
 
-![에이전트 상태 다이어그램](../../parallel/concrt/media/agentstate.png "agentstate")
+![에이전트 상태 다이어그램](../../parallel/concrt/media/agentstate.png "에이전트 상태 다이어그램")
 
 다음 표에서 각 상태에는 `agent_status` 열거형입니다.
 

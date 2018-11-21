@@ -1,6 +1,6 @@
 ---
 title: CMFCTasksPaneTaskGroup 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCTasksPaneTaskGroup
 - AFXTASKSPANE/CMFCTasksPaneTaskGroup
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], m_rectGroup
 - CMFCTasksPaneTaskGroup [MFC], m_strName
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-ms.openlocfilehash: 25e714aa617cdccc4e02e288f1a24f636e05cb0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ed50950bc62a0c2f382e42782c58a0d7354116f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539609"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176590"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup 클래스
 
@@ -72,19 +72,19 @@ class CMFCTasksPaneTaskGroup : public CObject
 
 다음 그림에서는 확장 된 작업 그룹을 보여 줍니다.
 
-![작업 그룹, 확장 됨](../../mfc/reference/media/nexttaskgrpexpand.png "nexttaskgrpexpand")
+![작업 그룹, 확장 됨](../../mfc/reference/media/nexttaskgrpexpand.png "작업 그룹, 확장 됨")
 
 다음 그림에서는 축소 된 작업 그룹을 보여 줍니다.
 
-![축소 된 작업 그룹](../../mfc/reference/media/nexttaskgrpcollapse.png "nexttaskgrpcollapse")
+![축소 된 작업 그룹](../../mfc/reference/media/nexttaskgrpcollapse.png "축소 된 작업 그룹")
 
 다음 그림은 캡션이 없는 작업 그룹을 보여 줍니다.
 
-![캡션이 없는 작업 그룹](../../mfc/reference/media/nexttaskgrpnocapt.png "nexttaskgrpnocapt")
+![캡션이 없는 작업 그룹](../../mfc/reference/media/nexttaskgrpnocapt.png "캡션이 없는 작업 그룹")
 
 다음 그림에서는 두 작업 그룹을 보여 줍니다. 설정 하 여 첫 번째 작업 그룹으로 특별 한 표시는 `m_bIsSpecial` 플래그입니다. TRUE 이면 두 번째 작업 그룹을 취소 하는 동안 특별 한 합니다. 첫 번째 작업 그룹에 대 한 캡션을 두 번째 작업 그룹과 음영이 짙을 수록 성은 note:
 
-![특수 작업 그룹](../../mfc/reference/media/nexttaskgrpspecial.png "nexttaskgrpspecial")
+![특수 작업 그룹](../../mfc/reference/media/nexttaskgrpspecial.png "특별 한 작업 그룹")
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 

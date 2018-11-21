@@ -1,17 +1,17 @@
 ---
 title: 배열 (C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - declaring arrays [C++], about declaring arrays
 - multidimensional arrays [C++]
 - arrays [C++]
 ms.assetid: 3f5986aa-485c-4ba4-9502-67e2ef924238
-ms.openlocfilehash: 746a6b5a2122a7ccdd207d278d285af3e448d7ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 176e358bd0217ac914eb4ee6079126d3f429b6dd
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550672"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176881"
 ---
 # <a name="arrays-c"></a>배열 (C++)
 
@@ -75,7 +75,8 @@ int i2[5][7];
 
 형식의 배열을 지정 합니다 **int**, 다음 그림에 표시 된 대로 5 개의 행과 7 개의 열, 2 차원 행렬에 개념적으로 정렬 합니다.
 
-![다중의 개념적 레이아웃&#45;차원 배열인](../cpp/media/vc38rc1.gif "vc38RC1") 다차원 배열의 개념적 레이아웃
+![다중의 개념적 레이아웃&#45;차원 배열인](../cpp/media/vc38rc1.gif "다중의 개념적 레이아웃&#45;차원 배열") <br/>
+다차원 배열의 개념적 레이아웃
 
 이니셜라이저 목록이 있는 다차원 배열의 선언에서 (에 설명 된 대로 [이니셜라이저](../cpp/initializers.md)), 첫 번째 차원에 대 한 범위를 지정 하는 상수 식을 생략할 수 있습니다. 예를 들어:
 

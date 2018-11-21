@@ -1,6 +1,6 @@
 ---
 title: 명령 및 테이블
-ms.date: 10/22/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - OLE DB consumer templates, table support
 - CCommand class, OLE DB consumer templates
@@ -11,18 +11,18 @@ helpviewer_keywords:
 - tables [C++], OLE DB Consumer Templates
 - OLE DB consumer templates, command support
 ms.assetid: 4bd3787b-6d26-40a9-be0c-083080537c12
-ms.openlocfilehash: 0baa388fc1667769892c841a4cc5d68a1b9d0255
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94581339353866d78faf7e20335c80250fb6027b
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543483"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175316"
 ---
 # <a name="commands-and-tables"></a>명령 및 테이블
 
 명령 및 테이블에 액세스할 수 있습니다; 행 집합 즉, 행 집합을 열고, 명령을 실행 및 열을 바인딩하십시오. 합니다 [CCommand](../../data/oledb/ccommand-class.md) 하 고 [CTable](../../data/oledb/ctable-class.md) 클래스 각각 명령 및 테이블 개체를 인스턴스화합니다. 이러한 클래스에서 파생 [CAccessorRowset](../../data/oledb/caccessorrowset-class.md) 다음 그림과 같습니다.
 
-![CCommand 및 CTable](../../data/oledb/media/vccommandstables.gif "vccommandstables")<br/>
+![CCommand 및 CTable](../../data/oledb/media/vccommandstables.gif "CCommand 및 CTable")<br/>
 명령 및 테이블 클래스
 
 이전 표에 `TAccessor` 나열할 수 있습니다 접근자 형식일 [접근자 형식](../../data/oledb/accessors-and-rowsets.md)합니다. `TRowset` 모든 행 집합 형식에 나열할 수 있습니다 [행 집합 형식](../../data/oledb/accessors-and-rowsets.md)합니다. `TMultiple` 결과 유형을 지정 합니다 (단일 또는 여러 결과 집합).

@@ -2,14 +2,15 @@
 title: 선언/정의 만들기
 ms.date: 10/19/2018
 ms.assetid: 6b1cdcb2-765e-4b93-8cef-92b861f64eba
-ms.openlocfilehash: 56f15ba040314b07450dc8730a913a18361e092f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59ae3ebc23303554a35eea17c7e28850a4a1499a
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456968"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693128"
 ---
 # <a name="create-declaration--definition"></a>선언/정의 만들기
+
 **대상:** 함수의 선언 또는 정의를 즉시 생성할 수 있습니다.
 
 **시기:** 선언이 필요한 함수가 있거나 그 반대의 경우입니다.
