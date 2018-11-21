@@ -1,16 +1,16 @@
 ---
 title: C + + UWP 앱 용 비동기 작업 만들기
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 4824180ec0ff9f7adb7c2d0a9b505a2abb58c20b
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 59630c7702dffc4b606943e174e44fdba6aecfe8
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333334"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176954"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>C + + UWP 앱 용 비동기 작업 만들기
 
@@ -77,7 +77,7 @@ Windows 런타임을 사용 하 여 다양 한 프로그래밍 언어의 유용�
 
 다음 표에는 앱에서 비동기 작업을 정의하는 데 사용할 수 있는 조합이 요약되어 있습니다.
 
-|이 Windows 런타임 인터페이스를 만들려면|`create_async`|암시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|명시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|
+|이 Windows 런타임 인터페이스를 만들려면| `create_async`|암시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|명시적 취소 토큰을 사용하기 위해 작업 함수에 전달할 매개 변수 형식|
 |----------------------------------------------------------------------------------|------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 |`IAsyncAction`|`void` 또는 `task<void>`|(없음)|(`cancellation_token`)|
 |`IAsyncActionWithProgress<TProgress>`|`void` 또는 `task<void>`|(`progress_reporter`)|(`progress_reporter`, `cancellation_token`)|
@@ -124,7 +124,7 @@ MainPage.xaml의 `MainPage` 클래스에 다음 코드를 추가합니다. 이 �
 
 다음 그림에서는 각 옵션을 선택한 후의 `Primes` 앱을 보여 줍니다.
 
-![Windows 런타임 Primes 앱](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")
+![Windows 런타임 앱 Primes](../../parallel/concrt/media/concrt_windows_primes.png "Windows 런타임 Primes 앱")
 
 `create_async` 를 사용하여 다른 언어에서 사용할 수 있는 비동기 작업을 만드는 예는 [Bing 지도 여정 최적화 프로그램 샘플에서 C++ 사용](https://msdn.microsoft.com/library/windows/apps/hh699891.aspx) 및 [PPL을 사용하는 C++의 Windows 8 비동기 작업](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d)을 참조하세요.
 
@@ -186,7 +186,7 @@ MainPage.cpp에서 `MainPage::MakeWordList`, `MainPage::FindCommonWords`및 `Mai
 
 다음 그림에서는 `CommonWords` 앱의 결과를 보여 줍니다.
 
-![Windows 런타임 CommonWords 앱](../../parallel/concrt/media/concrt_windows_common_words.png "concrt_windows_common_words")
+![Windows 런타임 CommonWords 앱](../../parallel/concrt/media/concrt_windows_common_words.png "Windows 런타임 CommonWords 앱")
 
 이 예에서는 `task` 를 지원하는 `create_async` 개체가 암시적 취소 토큰을 사용하기 때문에 취소를 지원할 수 있습니다. 작업이 협조적으로 취소에 응답해야 하는 경우 `cancellation_token` 개체를 사용하도록 작업 함수를 정의합니다. PPL에서의 취소에 대한 자세한 내용은 [Cancellation in the PPL](cancellation-in-the-ppl.md)을 참조하세요.
 
