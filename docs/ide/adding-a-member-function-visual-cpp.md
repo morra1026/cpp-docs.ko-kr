@@ -1,38 +1,103 @@
 ---
-title: 멤버 함수 추가(Visual C++)
-ms.date: 11/04/2016
+title: 멤버 함수 추가
+ms.date: 11/09/2018
 f1_keywords:
 - vc.codewiz.classes.member.function
+- vc.codewiz.function.overview
 helpviewer_keywords:
 - member functions, adding to classes
 - classes [C++], adding members
+- add member function wizard [C++]
 ms.assetid: 55b25ddb-541d-44ed-957c-974ef91cfc85
-ms.openlocfilehash: ab660ba19c1ac4f892bae94020726a1bb77b1cce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1cd7abbbc43ae56861b3b83451b41933b8b0b4f0
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575089"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693414"
 ---
-# <a name="adding-a-member-function-visual-c"></a>멤버 함수 추가(Visual C++)
+# <a name="add-a-member-function"></a>멤버 함수 추가
 
 **클래스 뷰**에서 모든 클래스에 멤버 함수를 추가할 수 있습니다. 이 경우 헤더 파일에 선언이 추가되고 클래스의 구현 파일에 스텁 멤버 함수 본문이 추가되며 이 본문은 수정할 수 있습니다.
 
-### <a name="to-add-a-member-function-to-a-class"></a>클래스에 멤버 함수를 추가하려면
+**클래스에 멤버 함수를 추가하려면:**
 
 1. **클래스 뷰**에서 프로젝트 노드를 확장하여 프로젝트의 클래스를 표시합니다. (**클래스 뷰**를 열려면 메뉴 모음에서 **보기**, **클래스 뷰**를 선택합니다.)
 
 1. 멤버 함수를 추가할 클래스의 바로 가기 메뉴를 열고 **추가**, **함수 추가**를 선택합니다.
 
-1. 멤버 함수에 대한 적절한 정보를 제공합니다. 자세한 내용은 [멤버 함수 추가 마법사](../ide/add-member-function-wizard.md)를 참조하세요.
+1. 멤버 함수에 대한 적절한 정보를 제공합니다. 자세한 내용은 [멤버 함수 추가 마법사](#add-member-function-wizard)를 참조하세요.
 
 1. **마침** 단추를 선택하여 멤버 함수 코드를 생성합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="in-this-section"></a>단원 내용
 
-[코드 마법사로 기능 추가](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
-[클래스 추가](../ide/adding-a-class-visual-cpp.md)<br>
-[멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)<br>
-[가상 함수 재정의](../ide/overriding-a-virtual-function-visual-cpp.md)<br>
-[MFC 메시지 처리기](../mfc/reference/adding-an-mfc-message-handler.md)<br>
-[클래스 구조 탐색](../ide/navigating-the-class-structure-visual-cpp.md)
+- [멤버 함수 추가 마법사](#add-member-function-wizard)
+
+## <a name="add-member-function-wizard"></a>멤버 함수 추가 마법사
+
+이 마법사는 멤버 함수 선언을 헤더 파일에 추가합니다. 또한 선택한 클래스의 구현 파일에 스텁 멤버 함수 구현을 추가합니다.
+
+마법사를 사용하여 멤버 함수를 추가하면 개발 환경에서 코드를 편집할 수 있습니다.
+
+- **반환 형식**
+
+  추가하는 멤버 함수의 반환 형식을 설정합니다. 반환 형식을 직접 제공하거나 사용 가능한 형식 목록에서 선택할 수 있습니다. 형식에 대한 자세한 내용은 [기본 형식](../cpp/fundamental-types-cpp.md)을 참조하세요.
+
+  | | | |
+  |---|---|---|
+  | `char` | `int` | `unsigned int` |
+  | `double` | `long` | `unsigned long` |
+  | `float` | `short` | `void` |
+  | `HRESULT` | `unsigned char` | |
+
+- **함수 이름**
+
+  추가하는 멤버 함수의 이름을 설정합니다.
+
+- **매개 변수 형식**
+
+  멤버 함수에 매개 변수가 있는 경우 멤버 함수에 대해 추가하는 매개 변수의 형식을 설정합니다. 매개 변수 형식을 직접 제공하거나 사용 가능한 형식 목록에서 선택할 수 있습니다.
+
+  | | | |
+  |---|---|---|
+  | `char` | `int` | `unsigned char` |
+  | `double` | `long` | `unsigned int` |
+  | `float` | `short` | `unsigned long` |
+
+- **매개 변수 이름**
+
+  멤버 함수에 매개 변수가 있는 경우 멤버 함수에 대해 추가하는 매개 변수의 이름을 설정합니다.
+
+- **매개 변수 목록**
+
+  멤버 함수에 추가한 매개 변수 목록을 표시합니다. 매개 변수를 목록에 추가하려면 **매개 변수 형식** 및 **매개 변수 이름** 상자에 형식 및 이름을 입력하고 **추가**를 선택합니다. 목록에서 매개 변수를 제거하려면 매개 변수를 선택하고 **제거**를 선택합니다.
+
+- **Access**
+
+  멤버 함수에 대한 액세스를 설정합니다. 액세스 한정자는 다른 클래스의 멤버 함수 액세스 권한을 지정하는 키워드입니다. 액세스 권한 지정에 대한 자세한 내용은 [멤버 액세스 제어](../cpp/member-access-control-cpp.md)를 참조하세요. 멤버 함수 액세스 수준은 기본적으로 `public`으로 설정됩니다.
+
+  - [public](../cpp/public-cpp.md)
+  - [protected](../cpp/protected-cpp.md)
+  - [private](../cpp/private-cpp.md)
+
+  새 멤버 함수가 정적 또는 가상인지, 인라인 또는 순수한지 확인합니다. 멤버 함수를 순수로 설정하는 경우 **가상** 확인란이 선택되고, **인라인** 확인란을 사용할 수 없게 됩니다. 기본값은 비정적, 비가상 멤버 함수입니다.
+
+  | 옵션 | 설명 |
+  |--------|-------------|
+  | [정적](../cpp/storage-classes-cpp.md) |  함수가 글로벌처럼 작동하고 클래스 인스턴스화 없이도 클래스 외부에서 호출할 수 있도록 지정합니다. 멤버 함수는 비정적 멤버에 액세스할 수 없습니다. `Static`으로 지정된 멤버 함수는 가상일 수 없습니다. |
+  | [가상](../cpp/virtual-cpp.md) | 멤버 함수 호출을 만드는 데 사용되는 식에 관계없이 적합한 멤버 함수가 개체에 대해 호출되는지 확인합니다. `Virtual`으로 지정된 멤버 함수는 정적일 수 없습니다. |
+  | **순수** | 선언되는 가상 멤버 함수에 대한 구현이 제공않음을 나타냅니다. **순수**는 가상 멤버 함수에서만 지정할 수 있습니다. 순수 가상 멤버 함수가 하나 이상 포함된 클래스는 추상 클래스로 간주됩니다. 추상 클래스에서 파생된 클래스는 순수 가상 멤버 함수를 구현해야 합니다. 이렇게 하지 않으면 파생 클래스도 추상 클래스가 됩니다. |
+  | [인라인](../cpp/inline-functions-cpp.md) | 멤버 함수가 호출되는 각 위치에 멤버 함수 본문의 복사본을 삽입하도록 컴파일러에 지시합니다. **인라인**으로 지정된 멤버 함수는 순수일 수 없습니다. |
+
+- **.cpp 파일**
+
+  스텁 멤버 함수 구현이 작성되는 파일 위치를 설정합니다. 기본적으로 멤버 함수가 추가된 클래스의 .cpp 파일에 기록됩니다. 줄임표 단추를 선택하여 파일 이름을 변경합니다. 멤버 함수 구현이 선택된 파일의 콘텐츠에 추가됩니다.
+
+- **설명**
+
+  멤버 함수에 대한 헤더 파일에 주석을 제공합니다.
+
+- **함수 시그니처**
+
+  **마침**을 선택하면 코드에서 멤버 함수 약어를 표시합니다. 이 상자의 텍스트를 편집할 수 없습니다. 멤버 함수를 변경하려면 마법사에서 해당 상자를 변경합니다.

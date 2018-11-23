@@ -1,21 +1,21 @@
 ---
 title: 스트림 상태
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - streams, states
 ms.assetid: 5f28c968-f132-403f-968c-8417ff315e52
-ms.openlocfilehash: d51f24b82c10d58e91f5d20b6656eb16621004ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43d28fa504c64fcb25d5c7cd3ee2c6ed906acd7e
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481174"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175563"
 ---
 # <a name="stream-states"></a>스트림 상태
 
 스트림의 유효한 상태 및 상태 변화가 다음 그림에 표시됩니다.
 
-![스트림](../c-runtime-library/media/stream.gif "스트림")
+![스트림 상태 다이어그램](../c-runtime-library/media/stream.gif "스트림 상태 다이어그램")
 
 각 원은 안정적인 상태를 나타냅니다. 각 줄은 스트림에서 동작하는 함수 호출의 결과로 일어날 수 있는 전환을 나타냅니다. 5개 그룹의 함수가 상태 전환을 일으킬 수 있습니다.
 

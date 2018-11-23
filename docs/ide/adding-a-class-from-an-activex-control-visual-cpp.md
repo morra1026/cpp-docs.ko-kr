@@ -1,44 +1,105 @@
 ---
-title: ActiveX 컨트롤의 클래스 추가(Visual C++)
-ms.date: 09/07/2018
+title: ActiveX 컨트롤의 클래스 추가
+ms.date: 11/08/2018
+f1_keywords:
+- vc.codewiz.class.axcontrol
 helpviewer_keywords:
 - ActiveX controls [C++], adding classes
 - classes [C++], creating
+- ActiveX Control Wizard
+- add class from ActiveX control wizard [C++]
 ms.assetid: 729fcb37-54b8-44d5-9b4e-50bb16e0eea4
-ms.openlocfilehash: c78919aeee2d2577cd7371952d95c57c17b1e5ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d91d98082a5c5d6d45bfa31e81c59e8925aa2c2
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466627"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694220"
 ---
-# <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX 컨트롤의 클래스 추가(Visual C++)
+# <a name="add-a-class-from-an-activex-control"></a>ActiveX 컨트롤의 클래스 추가
 
 이 마법사를 사용하여 사용 가능한 ActiveX 컨트롤의 인터페이스에서 MFC 클래스를 만듭니다. MFC 클래스를 [MFC 응용 프로그램](../mfc/reference/creating-an-mfc-application.md), [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md) 또는 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md)에 추가할 수 있습니다.
 
 > [!WARNING]
-> Visual Studio 2017 버전 15.9에서 이 코드 마법사는 더 이상 사용되지 않으므로 Visual Studio의 이후 버전에서 제거됩니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 의견을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
-
+> Microsoft는 Visual Studio 2017 버전 15.9에서 이 코드 마법사를 사용하지 않으므로 Visual Studio의 이후 버전에서 제거할 예정입니다. 이 마법사는 거의 사용되지 않습니다. 이 마법사가 제거되더라도 ATL 및 MFC에 대한 일반 지원은 그대로 유지됩니다. 이 지원 중단에 대한 피드백을 공유하려면 [이 설문 조사](https://www.surveymonkey.com/r/QDWKKCN)를 완료하세요. 여러분의 의견은 소중합니다.
+<!-- Blank comment here to separate the warning and note. -->
 > [!NOTE]
->  ActiveX 컨트롤에서 클래스를 추가하기 위해 자동화가 활성화된 MFC 프로젝트를 만들 필요가 없습니다.
+> ActiveX 컨트롤에서 클래스를 추가하기 위해 Automation이 활성화된 MFC 프로젝트를 만들 필요가 없습니다.
 
-ActiveX 컨트롤은 다양한 OLE 기능을 지원하고 많은 소프트웨어 요구 사항에 맞게 사용자 지정할 수 있는 COM(구성 요소 개체 모델)을 기반으로 재사용 가능한 소프트웨어 구성 요소입니다. ActiveX 컨트롤은 일반적인 ActiveX 컨트롤 컨테이너와 인터넷의 World Wide Web 페이지 모두에 사용할 수 있도록 디자인되었습니다.
+ActiveX 컨트롤은 다양한 OLE 기능을 지원하는 COM(구성 요소 개체 모델)을 기반으로 재사용 가능한 소프트웨어 구성 요소이며, 많은 소프트웨어 요구 사항에 맞게 사용자 지정할 수 있습니다. 일반적인 ActiveX 컨트롤 컨테이너 또는 인터넷의 World Wide Web 페이지에서 ActiveX 컨트롤을 사용할 수 있습니다.
 
-### <a name="to-add-an-mfc-class-from-an-activex-control"></a>ActiveX 컨트롤에서 MFC 클래스를 추가하려면
+**ActiveX 컨트롤에서 MFC 클래스를 추가하려면:**
 
 1. **솔루션 탐색기** 또는 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code)에서 ActiveX 컨트롤 클래스를 추가할 프로젝트의 이름을 마우스 오른쪽 단추로 클릭합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **클래스 추가**를 클릭합니다.
+1. 바로 가기 메뉴에서 **추가**를 선택한 다음, **클래스 추가**를 선택합니다.
 
-1. [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자의 템플릿 창에서 **ActiveX 컨트롤의 MFC 클래스**를 클릭한 다음, **열기**를 클릭하여 [ActiveX 컨트롤에서 클래스 추가 마법사](../ide/add-class-from-activex-control-wizard.md)를 표시합니다.
+1. [클래스 추가](../ide/add-class-dialog-box.md) 대화 상자의 **템플릿** 창에서 **ActiveX 컨트롤의 MFC 클래스**를 클릭한 다음, **열기**를 클릭하여 [ActiveX 컨트롤에서 클래스 추가 마법사](#add-class-from-activex-control-wizard)를 표시합니다.
 
-이 마법사에서 ActiveX 컨트롤의 인터페이스 여러 개를 추가할 수 있습니다. 마찬가지로, 단일 마법사 세션에서 ActiveX 컨트롤 여러 개의 클래스를 만들 수 있습니다.
+이 마법사에서 ActiveX 컨트롤의 인터페이스 여러 개를 추가할 수 있습니다. 단일 마법사 세션에 있는 둘 이상의 ActiveX 컨트롤에서 클래스를 만들 수도 있습니다.
 
-시스템에 등록된 ActiveX 컨트롤에서 클래스를 추가하거나, 시스템에 처음 등록하지 않고도 형식 라이브러리 파일(.tlb, .olb, .dll, .ocx 또는 .exe)에 있는 ActiveX 컨트롤에서 클래스를 추가할 수 있습니다. ActiveX 컨트롤 등록에 대한 자세한 내용은 [OLE 컨트롤 등록](../mfc/reference/registering-ole-controls.md)을 참조하세요.
+시스템에 등록된 ActiveX 컨트롤에서 클래스를 추가하거나, 시스템에 처음 등록하지 않고도 형식 라이브러리 파일(.tlb, .olb, .dll, .ocx 또는 .exe)에 있는 ActiveX 컨트롤에서 클래스를 추가할 수 있습니다. ActiveX 컨트롤을 등록하는 방법에 대한 자세한 내용은 [OLE 컨트롤 등록](../mfc/reference/registering-ole-controls.md)을 참조하세요.
 
 마법사는 선택한 ActiveX 컨트롤에서 추가한 각 인터페이스에 대해 [CWnd](../mfc/reference/cwnd-class.md) 또는 [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md)에서 파생된 MFC 클래스를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="in-this-section"></a>단원 내용
 
-[MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br>
-[COM 및 ATL 소개](../atl/introduction-to-com-and-atl.md)
+- [ActiveX 컨트롤의 클래스 추가 마법사](#add-class-from-activex-control-wizard)
+
+## <a name="add-class-from-activex-control-wizard"></a>ActiveX 컨트롤의 클래스 추가 마법사
+
+이 마법사를 사용하여 사용 가능한 ActiveX 컨트롤에서 MFC 클래스를 추가합니다. 마법사는 선택한 ActiveX 컨트롤에서 추가하는 각 인터페이스에 대한 클래스를 만듭니다.
+
+- **추가할 클래스 위치**
+
+  클래스가 만들어지는 형식 라이브러리의 위치를 지정합니다.
+
+  |옵션|설명|
+  |------------|-----------------|
+  |**Registry**|형식 라이브러리가 시스템에 등록됩니다. 등록된 형식 라이브러리는 **사용 가능한 ActiveX 컨트롤**에 나열됩니다.|
+  |**파일**|형식 라이브러리가 반드시 시스템에 등록되지는 않지만 파일에는 저장됩니다. **위치**에 파일 위치를 입력합니다.|
+
+- **사용 가능한 ActiveX 컨트롤**
+
+  현재 시스템에 등록된 ActiveX 컨트롤을 지정합니다. 이 목록에서 ActiveX 컨트롤을 선택하여 **인터페이스** 목록에 해당 인터페이스를 표시합니다. ActiveX 컨트롤을 등록하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: ActiveX 컨트롤 배포](../mfc/mfc-activex-controls-distributing-activex-controls.md)를 참조하세요.
+
+  **추가할 클래스 위치** 아래에서 **파일**을 선택하면 이 상자를 변경할 수 없습니다.
+
+- **위치**
+
+  ActiveX 컨트롤의 위치를 지정합니다. **추가할 클래스 위치** 아래에서 **파일**을 선택하면 형식 라이브러리가 포함된 파일의 위치를 입력할 수 있습니다. 파일의 위치로 이동하려면 줄임표 단추를 선택합니다.
+
+  **추가할 클래스 위치** 아래에서 **레지스트리**를 선택하면 이 상자를 변경할 수 없습니다.
+
+- **인터페이스**
+
+  ActiveX 컨트롤의 인터페이스를 지정합니다. 마법사는 **사용 가능한 ActiveX 컨트롤**에서 현재 선택 영역의 인터페이스를 사용하거나 **위치**에 지정된 형식 라이브러리 파일의 인터페이스를 사용합니다.
+
+  |전송 단추|설명|
+  |---------------------|-----------------|
+  |**>**|**인터페이스** 목록에서 현재 선택한 인터페이스를 추가합니다. 인터페이스를 선택하지 않으면 사용할 수 없습니다.|
+  |**>>**|ActiveX 컨트롤의 모든 인터페이스를 추가합니다. 마법사는 **사용 가능한 ActiveX 컨트롤**에서 현재 선택 영역의 인터페이스를 사용하거나 **위치**에 지정된 형식 라이브러리 파일의 인터페이스를 사용합니다.|
+  |**\<**|**생성된 클래스** 목록에서 현재 선택한 클래스를 제거합니다. **생성된 클래스** 목록에서 클래스를 현재 선택하지 않으면 사용할 수 없습니다.|
+  |**\<\<**|**생성된 클래스** 목록의 모든 클래스를 제거합니다. **생성된 클래스** 목록이 비어 있으면 사용할 수 없습니다.|
+
+- **생성된 클래스**
+
+  **>** 또는 **>>** 단추를 사용하여 추가한 인터페이스에서 생성할 클래스 이름을 지정합니다. 이 상자를 선택하여 클래스를 선택한 다음, 위쪽 또는 아래쪽 키를 사용하여 목록을 스크롤할 수 있습니다. **완료**를 선택하면 **클래스** 상자에서 생성된 클래스 이름 및 **.h 파일** 상자에서 생성된 파일 이름을 각각 확인할 수 있습니다. 이 상자에서는 한 번에 하나의 클래스만 선택할 수 있습니다.
+
+  이 목록에서 클래스를 선택하고 **<** 를 선택하여 클래스를 제거할 수 있습니다. **생성된 클래스** 상자에서 클래스를 선택하여 클래스를 모두 제거할 필요가 없습니다. **<<** 를 선택하여 **생성된 클래스** 상자에서 모든 클래스를 제거합니다.
+
+- **클래스**
+
+   **마침**을 선택하면 마법사에서 추가하는 **생성된 클래스** 상자에서 선택한 클래스의 이름을 지정합니다. **클래스** 상자에서 이름을 편집할 수 있습니다.
+
+- **.h 파일**
+
+  새 개체 클래스에 대한 헤더 파일의 이름을 설정합니다. 기본적으로 이 이름은 **생성된 클래스**에 제공한 이름을 기반으로 합니다. 파일 이름을 선택한 위치에 저장하거나 클래스 선언을 기존 파일에 추가하려면 줄임표 단추를 선택합니다. 기존 파일을 선택하면 **마침**을 선택할 때까지 마법사에서는 해당 파일이 선택한 위치에 저장하지 않습니다.
+
+  마법사는 파일을 덮어쓰지 않습니다. 기존 파일의 이름을 선택한 다음, **마침**을 선택하면 마법사에서는 클래스 선언을 파일 콘텐츠에 추가할지 여부를 나타내는 메시지를 표시합니다. **예**를 선택하여 파일을 추가하거나, **아니요**를 선택하여 마법사로 돌아가서 다른 파일 이름을 지정합니다.
+
+- **.cpp 파일**
+
+  새 개체의 클래스에 대한 구현 파일의 이름을 설정합니다. 기본적으로 이 이름은 **생성된 클래스**에 제공한 이름을 기반으로 합니다. 파일 이름을 선택한 위치에 저장하려면 줄임표 단추를 선택합니다. 마법사에서 **마침**을 선택하면 해당 파일이 선택한 위치에 저장됩니다.
+
+  마법사는 파일을 덮어쓰지 않습니다. 기존 파일의 이름을 선택한 다음, **마침**을 선택하면 마법사에서는 클래스 구현을 파일 콘텐츠에 추가할지 여부를 나타내는 메시지를 표시합니다. **예**를 선택하여 파일을 추가하거나, **아니요**를 선택하여 마법사로 돌아가서 다른 파일 이름을 지정합니다.
