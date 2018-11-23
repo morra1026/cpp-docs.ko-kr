@@ -1,13 +1,13 @@
 ---
 title: '포팅 가이드: Spy++'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.assetid: e558f759-3017-48a7-95a9-b5b779d5e51d
-ms.openlocfilehash: 9e36bbefb2ab851350e17c0561addb680593f457
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bd69853b13d58ff79910eafcc601b0507d5a9ad
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487817"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177006"
 ---
 # <a name="porting-guide-spy"></a>포팅 가이드: Spy++
 
@@ -25,7 +25,7 @@ Spy++는 Windows 데스크톱의 사용자 인터페이스 요소에 대해 모�
 
 두 프로젝트를 업그레이드한 후 솔루션은 다음과 같았습니다.
 
-![Spy&#43;&#43; 솔루션](../porting/media/spyxxsolution.PNG "SpyxxSolution")
+![감시&#43;&#43; 솔루션](../porting/media/spyxxsolution.PNG "&#43;&#43; 솔루션")
 
 하나는 많은 C++ 파일을 포함하고 다른 하나는 C로 작성된 DLL을 포함하는 두 개의 프로젝트가 있습니다.
 
