@@ -101,7 +101,7 @@ class CByteArray : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[CObArray::operator]](../../mfc/reference/cobarray-class.md#operator_at)|지정한 인덱스에 있는 요소를 설정하거나 가져옵니다.|
+|[CObArray::operator[ ]](../../mfc/reference/cobarray-class.md#operator_at)|지정한 인덱스에 있는 요소를 설정하거나 가져옵니다.|
 
 ## <a name="remarks"></a>설명
 
