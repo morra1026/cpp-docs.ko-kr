@@ -1,15 +1,15 @@
 ---
 title: /SDL(추가 보안 검사 사용)
-ms.date: 11/04/2016
+ms.date: 11/26/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-ms.openlocfilehash: 84e3b7b80727c359e711f182e2f06a7332989549
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49ac57f81ef07eb2a9c1e11280e160f0c48fce73
+ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587462"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389944"
 ---
 # <a name="sdl-enable-additional-security-checks"></a>/SDL(추가 보안 검사 사용)
 
@@ -49,7 +49,17 @@ ms.locfileid: "50587462"
 
 - 제한된 포인터 삭제를 수행합니다. 역참조를 포함하지 않으며 사용자 정의된 소멸자가 없는 식에서 포인터 참조는 `delete`에 대한 호출 이후 유효하지 않은 주소로 설정됩니다. 이렇게 하면 오래된 포인터 참조가 재사용되지 않습니다.
 
-- 클래스 멤버 초기화를 수행합니다. 개체 인스턴스화 시(생성자 실행 전) 모든 클래스 멤버를 자동으로 0으로 초기화합니다. 이렇게 하면 생성자가 명시적으로 초기화하지 않는 클래스 멤버와 연관된 초기화되지 않은 데이터를 사용하지 않도록 방지할 수 있습니다.
+- 클래스 멤버 포인터 초기화를 수행합니다. 자동으로 초기화 클래스에 대 한 포인터 형식의 멤버 **nullptr** 개체 인스턴스화 (생성자 실행) 이전에 있습니다. 이렇게 하면 생성자를 명시적으로 초기화 하지 않는 초기화 되지 않은 포인터의 사용을 금지할 수 있습니다. 컴파일러에서 생성 된 멤버 포인터 초기화 라고으로:
+
+  - 개체는 사용자 지정 (사용자 정의)를 사용 하 여 할당 되지 않습니다. `operator new`
+
+  - 개체 배열의 일환으로 할당 되지 않습니다 (예를 들어 `new A[x]`)
+
+  - 클래스는 관리 또는 가져온 되지
+
+  - 클래스에는 사용자 정의 기본 생성자입니다.
+
+  컴파일러에서 생성 된 클래스 초기화 함수로 초기화할 멤버 포인터와 하지 속성 또는 상수 여야 합니다.
 
 ## <a name="remarks"></a>설명
 
