@@ -1,6 +1,6 @@
 ---
 title: CMFCImageEditorDialog 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCImageEditorDialog
 - AFXIMAGEEDITORDIALOG/CMFCImageEditorDialog
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCImageEditorDialog [MFC], CMFCImageEditorDialog
 ms.assetid: 6a7d08f3-1ec2-4062-9b79-a0c2776b58d1
-ms.openlocfilehash: 84bbe72abeedc03f19f06a1f8498023ff54be95e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 68cfa663f9be9f190a6d3425a2ebf6ceb73e2007
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503066"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175075"
 ---
 # <a name="cmfcimageeditordialog-class"></a>CMFCImageEditorDialog 클래스
 
@@ -47,7 +47,7 @@ class CMFCImageEditorDialog : public CDialogEx
 
 다음 그림에서는 이미지 편집기 대화 상자를 보여 줍니다.
 
-![CMFCImageEditorDialog 대화 상자](../../mfc/reference/media/imageedit.png "imageedit")
+![CMFCImageEditorDialog 대화 상자](../../mfc/reference/media/imageedit.png "CMFCImageEditorDialog 대화 상자")
 
 사용 하는 한 가지 방법은 `CMFCImageEditorDialog` 개체가 전달는 `CBitmap` 이미지를 편집할 수 있습니다. 영역 편집 이미지 크기가 제한 논리 픽셀 크기 영역에 맞게 조정 됩니다 때문 큰 이미지를 만들지 마십시오. 호출 된 `DoModal` 모달 대화 상자를 시작 하는 방법입니다.
 

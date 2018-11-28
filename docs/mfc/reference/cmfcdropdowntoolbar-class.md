@@ -1,6 +1,6 @@
 ---
 title: CMFCDropDownToolBar 클래스
-ms.date: 10/188/2018
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCDropDownToolBar
 - AFXDROPDOWNTOOLBAR/CMFCDropDownToolBar
@@ -20,18 +20,18 @@ helpviewer_keywords:
 - CMFCDropDownToolBar [MFC], OnSendCommand
 - CMFCDropDownToolBar [MFC], OnUpdateCmdUI
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
-ms.openlocfilehash: ccbdd69baea104f306cfdca69efb46985ee97b91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c5115d2453f21d83eda39950ac45a0290e9bfa8
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582002"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176941"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar 클래스
 
 사용자가 최상위 도구 모음 단추를 누르고 있을 때 나타나는 도구 모음입니다.
 
-   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+   더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 ## <a name="syntax"></a>구문
 
 ```
@@ -60,7 +60,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 
 다음 그림에 표시 된 `CMFCDropDownToolBar` 개체:
 
-![CMFCDropDownToolbar의 예제](../../mfc/reference/media/cmfcdropdown.png "cmfcdropdown")
+![CMFCDropDownToolbar의 예제](../../mfc/reference/media/cmfcdropdown.png "CMFCDropDownToolbar의 예제")
 
 만든를 `CMFCDropDownToolBar` 는 일반 도구 모음을 만든 동일한 방식으로 개체 (참조 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md)).
 

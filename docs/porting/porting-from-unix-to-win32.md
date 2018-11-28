@@ -10,12 +10,12 @@ helpviewer_keywords:
 - porting to Win32 [C++]
 - Win32 applications [C++], migrating from UNIX
 ms.assetid: 3837e4fe-3f96-4f24-b2a1-7be94718a881
-ms.openlocfilehash: ac1fb2304c6d06a6d3e1638fa7ded8a6903ee9fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70cbff207931ada378a89b978acf13fadb3a8744
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467784"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51694090"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX에서 Win32로 이식
 
@@ -61,7 +61,7 @@ UNIX에서 Win32로의 포팅을 지원하는 소프트웨어를 제공하는 �
 
 다른 옵션은 Win32로 직접 UNIX 응용 프로그램을 포팅하는 것입니다. ANSI C/C++ 라이브러리 및 상업용 C 컴파일러 라이브러리를 통해 UNIX 응용 프로그램에서 사용하는 일반적인 시스템 호출을 Win32 응용 프로그램에서 대부분 사용할 수 있습니다.
 
-Win32 콘솔 API는 **stdio** 모델을 모방하며 Win32 콘솔 API를 사용하는 *curses* 버전이 있기 때문에 **stdio** 기반 응용 프로그램의 출력 모델을 변경할 필요는 없습니다. 자세한 내용은 [SetConsoleCursorPosition](https://msdn.microsoft.com/library/windows/desktop/ms686025)을 참조하세요.
+Win32 콘솔 API는 **stdio** 모델을 모방하며 Win32 콘솔 API를 사용하는 *curses* 버전이 있기 때문에 **stdio** 기반 응용 프로그램의 출력 모델을 변경할 필요는 없습니다. 자세한 내용은 [SetConsoleCursorPosition](/windows/console/setconsolecursorposition)을 참조하세요.
 
 Berkeley 소켓 기반 응용 프로그램의 경우 Win32 응용 프로그램으로 작동하기 위해 거의 변경할 필요가 없습니다. Windows 소켓 인터페이스는 WinSock 사양의 소개 단원에 설명된 최소한의 변경으로 BSD 소켓 포팅이 가능하도록 설계되었습니다.
 
@@ -69,7 +69,7 @@ Windows는 DCE 규격 RPC를 지원하므로 RPC 기반 응용 프로그램을 �
 
 가장 큰 차이점 중 하나는 프로세스 모델입니다. UNIX에는 `fork`가 있고 Win32에는 없습니다. `fork` 및 코드베이스 사용에 따라 Win32에는 사용할 수 있는 두 개의 API(`CreateProcess` 및 `CreateThread`)가 있습니다. 자신의 여러 복사본을 분기하는 UNIX 응용 프로그램을 여러 프로세스나 여러 스레드가 포함된 단일 프로세스를 사용하도록 Win32에서 다시 작업할 수 있습니다. 여러 프로세스를 사용하는 경우 프로세스 간에 통신하고, `fork`에서 제공하는 기능이 필요한 경우 새 프로세스의 코드 및 데이터를 부모처럼 업데이트하는 데 사용할 수 있는 IPC의 여러 메서드가 있습니다. IPC에 대한 자세한 내용은 [Interprocess Communications](/windows/desktop/ipc/interprocess-communications)(프로세스 간 통신)를 참조하세요.
 
-Windows 및 UNIX 그래픽 모델은 매우 다릅니다. UNIX는 X 창 시스템 GUI를 사용하는 반면, Windows는 GDI를 사용합니다. 개념상 비슷하지만 X API와 GDI API 간의 단순 매핑은 없습니다. 그러나 UNIX OpenGL 기반 응용 프로그램 마이그레이션을 위한 OpenGL 지원이 제공됩니다. 또한 Windows용 X 클라이언트 및 X 서버가 있습니다. GDI에 대한 자세한 내용은 [Device Contexts](https://msdn.microsoft.com/library/windows/desktop/dd183553)(장치 컨텍스트)를 참조하세요.
+Windows 및 UNIX 그래픽 모델은 매우 다릅니다. UNIX는 X 창 시스템 GUI를 사용하는 반면, Windows는 GDI를 사용합니다. 개념상 비슷하지만 X API와 GDI API 간의 단순 매핑은 없습니다. 그러나 UNIX OpenGL 기반 응용 프로그램 마이그레이션을 위한 OpenGL 지원이 제공됩니다. 또한 Windows용 X 클라이언트 및 X 서버가 있습니다. GDI에 대한 자세한 내용은 [Device Contexts](/windows/desktop/gdi/device-contexts)(장치 컨텍스트)를 참조하세요.
 
 많은 CGI 응용 프로그램을 포함하여 기본 UNIX 응용 프로그램은 Windows에서 실행되는 Visual C++로 쉽게 포팅되어야 합니다. `open`, `fopen`, `read`, `write` 등의 함수는 Visual C++ 런타임 라이브러리에서 사용할 수 있습니다. 또한 C UNIX API와 Win32 API 간에 일대일 매핑이 있습니다(`open`을 `CreateFile`로, `read`를 `ReadFile`로, `write`를 `WriteFile`로, `ioctl`을 `DeviceIOControl`로, `close`를 `CloseFile`로 매핑).
 

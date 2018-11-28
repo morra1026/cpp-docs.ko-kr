@@ -1,6 +1,6 @@
 ---
 title: CSplitButton 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CSplitButton
 - AFXCMN/CSplitButton
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: ca4899714fa336d058b2a53bcd5103c5b0c993e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56c006eaa9b0c9860a973727602fd29a33d7ec43
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547279"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176630"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton 클래스
 
@@ -58,7 +58,7 @@ class CSplitButton : public CButton
 
 다음 그림에서는 pager 컨트롤 및 (1) 분할 단추 컨트롤을 포함 하는 대화 상자를 보여 줍니다. (2)에서 드롭다운 화살표를 클릭 했는지 이미 및 (3) 하위 메뉴가 표시 됩니다.
 
-![Splitbutton 및 pager 컨트롤이 있는 대화 상자. ](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")
+![Splitbutton 및 pager 컨트롤이 있는 대화 상자. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton 및 pager 컨트롤이 있는 대화 상자.")
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -188,7 +188,7 @@ void SetDropDownMenu(CMenu* pMenu);
 
 다음 그림에서는 pager 컨트롤 및 (1) 분할 단추 컨트롤을 포함 하는 대화 상자를 보여 줍니다. (2)에서 드롭다운 화살표를 클릭 했는지 이미 및 (3) 하위 메뉴가 표시 됩니다.
 
-![Splitbutton 및 pager 컨트롤이 있는 대화 상자. ](../../mfc/reference/media/splitbutton_pager.png "splitbutton_pager")
+![Splitbutton 및 pager 컨트롤이 있는 대화 상자. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton 및 pager 컨트롤이 있는 대화 상자.")
 
 ### <a name="example"></a>예제
 

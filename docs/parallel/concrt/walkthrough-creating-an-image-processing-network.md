@@ -1,16 +1,16 @@
 ---
 title: '연습: 이미지 처리 네트워크 만들기'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - image-processing networks, creating [Concurrency Runtime]
 - creating image-processing networks [Concurrency Runtime]
 ms.assetid: 78ccadc9-5ce2-46cc-bd62-ce0f99d356b8
-ms.openlocfilehash: 4eb1d6f9e5bc0055a1a4b4be5e18497b20c3a73a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93a20ca9967c8730e1563a653c8f4546d94161fb
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643640"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176174"
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>연습: 이미지 처리 네트워크 만들기
 
@@ -134,7 +134,7 @@ ms.locfileid: "50643640"
 
 다음 그림에서는 이미지 처리 네트워크를 보여 줍니다.
 
-![이미지 처리 네트워크](../../parallel/concrt/media/concrt_imageproc.png "concrt_imageproc")
+![이미지 처리 네트워크](../../parallel/concrt/media/concrt_imageproc.png "이미지 처리 네트워크")
 
 `countdown_event` 이 예제의 개체에에서 모든 이미지 처리 되 면 기본 응용 프로그램을 알리기 위해 이미지 처리 네트워크를 사용 하도록 설정 합니다. 합니다 `countdown_event` 클래스가 사용 하는 [concurrency:: event](../../parallel/concrt/reference/event-class.md) 카운터 값을 0에 도달할 때 신호를 보내는 개체입니다. 주 응용 프로그램 네트워크에 파일 이름을 보낼 때마다 카운터를 증가 시킵니다. 네트워크 감소의 터미널 노드 각 이미지 처리 된 후 카운터입니다. 대기 후 지정된 된 디렉터리를 통과 하는 기본 응용 프로그램에는 `countdown_event` 해당 카운터를 0에 도달 했음을 알리기 위해 개체입니다.
 
@@ -152,7 +152,7 @@ ms.locfileid: "50643640"
 
 다음 그림은 샘플 출력을 보여 줍니다. 각 원본 이미지는 해당 수정 된 이미지 위에 있습니다.
 
-![샘플 출력 예제](../../parallel/concrt/media/concrt_imageout.png "concrt_imageout")
+![샘플 출력 예제](../../parallel/concrt/media/concrt_imageout.png "예제에 대 한 출력 샘플")
 
 `Lighthouse` Tom Alphin 하 여 작성 된 하 고 따라서 회색조로 변환 됩니다. `Chrysanthemum``Desert`, `Koala`, 및 `Tulips` 빨간색 주요 색상으로 및 따라서 녹색 및 파랑 색 구성 요소를 제거 있고 짙게 됩니다. `Hydrangeas`를 `Jellyfish`, 및 `Penguins` 기본 기준과 일치 되며 따라서 toned 세피아 합니다.
 

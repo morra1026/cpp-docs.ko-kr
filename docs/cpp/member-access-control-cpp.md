@@ -1,17 +1,17 @@
 ---
 title: 멤버 Access Control(C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - access control [C++]
 - member access [C++]
 - member-access control [C++]
 ms.assetid: 2d596bca-56ad-4277-94e1-ce3db45fa14a
-ms.openlocfilehash: ee4e9d89878aab4be2e4daf45525f9e951d214f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 546b23b939078c723084bdfc659ff4fd3216b479
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611421"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176227"
 ---
 # <a name="member-access-control-c"></a>멤버 Access Control(C++)
 
@@ -234,7 +234,8 @@ int main()
 
 가상 기본 클래스를 사용하는 다중 상속 격자의 경우 지정된 이름은 둘 이상의 경로를 통해 도달할 수 있습니다. 이렇게 다양한 경로에는 다양한 액세스 제어가 적용될 수 있기 때문에 컴파일러는 최적의 액세스를 제공하는 경로를 선택합니다. 다음 그림을 참조하세요.
 
-![상속 그래프의 경로 따라 액세스](../cpp/media/vc38v91.gif "vc38V91") 상속 그래프의 경로 따라 액세스
+![상속 그래프의 경로 따라 액세스](../cpp/media/vc38v91.gif "상속 그래프의 경로 따라 액세스") <br/>
+상속 그래프의 경로를 따라 액세스
 
 그림에서 클래스 `VBase`에 선언된 이름은 언제나 클래스 `RightPath`를 통해 도달됩니다.  `RightPath`는 `VBase`를 공용 기본 클래스로 선언하지만, `LeftPath`는 `VBase`를 비공개로 선언합니다. 따라서, 오른쪽 경로를 보다 쉽게 액세스할 수 있습니다.
 

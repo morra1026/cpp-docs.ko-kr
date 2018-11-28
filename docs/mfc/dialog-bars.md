@@ -1,6 +1,6 @@
 ---
 title: 대화 상자 모음
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - MFC, control bars
 - CDialogBar class [MFC], dialog bars
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - dialog bars
 - dialog bars [MFC], about dialog bars
 ms.assetid: 485c8055-6bb0-4051-8417-dd2971499321
-ms.openlocfilehash: 3a3276e9b5d0e1ab8d8e77fae983d24ff1e4b4e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 800cc208df7299cf440508c2705b0b0ddb9ae665
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557403"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175355"
 ---
 # <a name="dialog-bars"></a>대화 상자 모음
 
@@ -21,7 +21,8 @@ ms.locfileid: "50557403"
 
 여러 키 간에 차이가 도구 모음 및 `CDialogBar` 개체입니다. `CDialogBar` Visual c + + 대화 상자 편집기를 사용 하 여 만들 수 있는 및 모든 종류의 Windows 컨트롤을 포함할 수 있는 대화 상자 템플릿 리소스에서 개체가 만들어집니다. 사용자는 컨트롤을 컨트롤에서 탭 수입니다. 및 부모 조정 된 경우이를 그대로 둘 수도 또는 부모 프레임 창의 일부를 사용 하 여 대화 상자 막대에 맞게 맞춤 스타일을 지정할 수 있습니다. 다음 그림에는 다양 한 컨트롤을 사용 하 여 대화 상자 막대를 보여 줍니다.
 
-![VC 대화 상자 막대](../mfc/media/vc378t1.gif "vc378t1") 대화 상자 모음
+![VC 대화 상자 막대](../mfc/media/vc378t1.gif "VC 대화 상자 모음") <br/>
+대화 상자 모음
 
 작업 측면에서는 `CDialogBar` 개체가 같은 모덜리스 대화 상자를 사용 합니다. 대화 상자 편집기를 사용 하 여 디자인 하 고 대화 상자 리소스를 만들어야 합니다.
 

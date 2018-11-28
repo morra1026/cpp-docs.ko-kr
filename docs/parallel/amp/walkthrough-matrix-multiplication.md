@@ -1,13 +1,13 @@
 ---
 title: '연습: 매트릭스 곱'
-ms.date: 11/06/2018
+ms.date: 11/19/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: d9516cf79b738ec03dd98133a4603b47f75eb2c8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: ae86ff5a111348404616c8bb4fecd3bf22afc90c
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327111"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176161"
 ---
 # <a name="walkthrough-matrix-multiplication"></a>연습: 매트릭스 곱
 
@@ -41,13 +41,13 @@ ms.locfileid: "51327111"
 
 이 섹션에서는 다음과 같이 정의 된 A와 B 라는 두 행렬 곱셈을 고려 합니다.
 
-![3&#45;에서&#45;행렬](../../parallel/amp/media/campmatrixanontiled.png "campmatrixanontiled")
+![3&#45;에서&#45;는 행렬](../../parallel/amp/media/campmatrixanontiled.png "3&#45;에서&#45;는 행렬")
 
-![2&#45;에서&#45;3 매트릭스](../../parallel/amp/media/campmatrixbnontiled.png "campmatrixbnontiled")
+![2&#45;에서&#45;3 행렬 B](../../parallel/amp/media/campmatrixbnontiled.png "2&#45;에서&#45;3 행렬 B")
 
 3을 2 행렬 이며 B가 2 ~ 3 행렬입니다. B가 곱하는 a 제품은 다음-3x3 매트릭스입니다. 제품 b 요소 별로 열을 기준으로 행을 곱하여 계산 됩니다.
 
-![3&#45;에서&#45;3 매트릭스](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;에서&#45;3 행렬")
+![3&#45;에서&#45;3 제품 매트릭스](../../parallel/amp/media/campmatrixproductnontiled.png "3&#45;에서&#45;의 3 개 제품 매트릭스")
 
 ### <a name="to-multiply-without-using-c-amp"></a>C + + AMP를 사용 하지 않고 곱할
 
@@ -159,21 +159,21 @@ void main() {
 
 를 이용 하려면 바둑판식 배열에서 행렬 곱 알고리즘 행렬을 타일로 분할 하며 타일 데이터를 복사 `tile_static` 빠른 액세스에 대 한 변수입니다. 이 예제에서는 행렬은 동일한 크기의 submatrices에 분할 됩니다. 제품을는 submatrices 곱하여 찾을 수 있습니다. 두 매트릭스 및이 예제의 제품 같습니다.
 
-![4&#45;에서&#45;4 매트릭스](../../parallel/amp/media/campmatrixatiled.png "4&#45;에서&#45;4 매트릭스는")
+![4&#45;에서&#45;는 4 매트릭스](../../parallel/amp/media/campmatrixatiled.png "4&#45;에서&#45;4 매트릭스는")
 
-![4&#45;에서&#45;4 매트릭스](../../parallel/amp/media/campmatrixbtiled.png "4&#45;에서&#45;4 매트릭스 B")
+![4&#45;에서&#45;4 매트릭스 B](../../parallel/amp/media/campmatrixbtiled.png "4&#45;에서&#45;4 매트릭스 B")
 
-![4&#45;에서&#45;4 매트릭스](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;에서&#45;4 매트릭스 제품")
+![4&#45;에서&#45;4 제품 행렬](../../parallel/amp/media/campmatrixproducttiled.png "4&#45;에서&#45;의 4 제품 매트릭스")
 
 매트릭스가 다음과 같이 정의 된 4 개의 2x2 행렬으로 분할 됩니다.
 
-![4&#45;에서&#45;4 매트릭스를 2로 분할 된&#45;에서&#45;2 하위&#45;행렬](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;에서&#45;4 매트릭스를 2로 분할 된&#45;에서&#45;2 하위&#45;행렬")
+![4&#45;에서&#45;4 매트릭스는 2로 분할 된&#45;에서&#45;2 하위&#45;행렬](../../parallel/amp/media/campmatrixapartitioned.png "4&#45;에서&#45;4 매트릭스는 2로 분할 된&#45;에서&#45;2 하위&#45;행렬")
 
-![4&#45;에서&#45;4 매트릭스를 2로 분할 된&#45;에서&#45;2 하위&#45;행렬](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;에서&#45;4 매트릭스를 2로 분할 된&#45;에서&#45;2 하위&#45;행렬")
+![4&#45;에서&#45;4 매트릭스 B가 2를 분할할&#45;에서&#45;2 하위&#45;행렬](../../parallel/amp/media/campmatrixbpartitioned.png "4&#45;에서&#45;4 매트릭스 B가 2를 분할할&#45;에서&#45;2 하위&#45;행렬")
 
 A 제품 B 현재의 기록 고 다음과 같이 계산할 수 있습니다.
 
-![4&#45;에서&#45;4 매트릭스를 2로 분할 된&#45;에서&#45;2 하위&#45;행렬](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;에서&#45;4 매트릭스를 곱한 값 A와 B")
+![4&#45;에서&#45;4 매트릭스는 B 2로 분할 된&#45;에서&#45;2 하위&#45;행렬](../../parallel/amp/media/campmatrixproductpartitioned.png "4&#45;에서&#45;4 매트릭스는 B 2로 분할 된&#45;에서&#45;2 하위&#45;행렬")
 
 때문에 행렬 `a` 를 통해 `h` 2x2 행렬의 모든 제품 이며의 합계도 2x2 행렬입니다. 따르는 것 제품 a 고 B는 4x4 행렬을 예상 합니다. 알고리즘을 신속 하 게 확인 하려면 첫 번째 행의 요소, 제품의 첫 번째 열 값을 계산 합니다. 예제에서는 되는 요소의 값은 첫 번째 행과 첫째 열에 `ae + bg`입니다. 첫 번째 행을 첫 번째 열을 계산 해야 `ae` 고 `bg` 각 용어에 대 한 합니다. 해당 값에 대 한 `ae` 는 `(1 * 1) + (2 * 5) = 11`합니다. 에 대 한 값 `bg` 는 `(3 * 1) + (4 * 5) = 23`합니다. 최종 값은 `11 + 23 = 34`, 올바른 인 합니다.
 

@@ -1,6 +1,6 @@
 ---
 title: 문서, 뷰 및 프레임워크
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - document templates [MFC], template objects
 - applications [MFC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - MFC object relationships
 - thread objects [MFC]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
-ms.openlocfilehash: f9397c2a16d8411fe91cbf6c1c1de3ecdffbeae7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e59e8b69dcdf0bf3b22d4286ba4692558a11e096
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662373"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175758"
 ---
 # <a name="documents-views-and-the-framework"></a>문서, 뷰 및 프레임워크
 
@@ -59,7 +59,8 @@ MFC 프레임 워크의 핵심은 문서 및 뷰 개념입니다. 문서에 있�
 
 실행 중인 응용 프로그램에서 이러한 개체의 사용자 동작에 협조적으로 응답 함께 바인딩된 명령 및 기타 메시지입니다. 단일 응용 프로그램 개체를 하나 이상의 문서 서식 파일을 관리합니다. 각 문서 템플릿을 만들고 (인지 여부에 따라 응용 프로그램 SDI MDI) 하나 이상의 문서를 관리 합니다. 사용자 뷰 및 프레임 창 안에 포함 된 뷰를 통해 문서를 조작 합니다. 다음 그림 SDI 응용 프로그램에 대 한 이러한 개체 간의 관계를 보여 줍니다.
 
-![실행 중인 SDI 응용 프로그램에서 개체](../mfc/media/vc386v1.gif "vc386v1") 실행 중인 SDI 응용 프로그램의 개체
+![실행 중인 SDI 응용 프로그램에서 개체](../mfc/media/vc386v1.gif "실행 중인 SDI 응용 프로그램에서 개체") <br/>
+실행 중인 SDI 응용 프로그램의 개체
 
 프레임 워크 도구, MFC 응용 프로그램 마법사 및 리소스 편집기에서 이러한 개체를 만들 방법, 함께 작동 방식 및 사용 하는 방법으로 프로그래밍의 문서이에서는의 나머지 부분에 설명 합니다. 문서, 뷰 및 프레임 창에 자세히 설명 [창 개체](../mfc/window-objects.md) 하 고 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)합니다.
 

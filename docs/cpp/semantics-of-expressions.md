@@ -1,18 +1,18 @@
 ---
 title: 식의 의미
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - grammar, expressions
 - expressions [C++], semantics
 - expression evaluation
 - expression evaluation, about expression evaluation
 ms.assetid: 4a792154-533b-48b9-8709-31bfc170f0a7
-ms.openlocfilehash: df86f73aa38ad9393adcbf193390cd785c934115
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2ce510478bcf1574429c85f704552e6b73100ea
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490963"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175787"
 ---
 # <a name="semantics-of-expressions"></a>식의 의미
 
@@ -43,7 +43,8 @@ int main()
 54
 ```
 
-![식에서 계산 순서](../cpp/media/vc38zv1.gif "vc38ZV1") 식 평가 순서
+![식에서 계산 순서](../cpp/media/vc38zv1.gif "식의 평가 순서") <br/>
+식 계산 순서
 
 위의 그림에 표시된 식이 계산되는 순서는 연산자의 우선 순위 및 결합성에 따라 결정됩니다.
 
@@ -55,7 +56,8 @@ int main()
 
 괄호를 사용하여 하위 식을 그룹화할 경우 다음 그림에 표시된 것처럼 우선 순위 및 식이 계산되는 순서도 변경됩니다.
 
-![괄호가 있는 식의 평가 순서](../cpp/media/vc38zv2.gif "vc38ZV2") 괄호를 사용 하 여 식 계산 순서
+![괄호가 있는 식의 평가 순서](../cpp/media/vc38zv2.gif "괄호가 있는 식의 평가 순서") <br/>
+괄호가 있는 식 평가 순서
 
 위의 그림에 있는 것과 같은 식은 전적으로 의도하지 않은 결과를 위해 계산되며, 이 경우에는 표준 출력 장치로 정보를 전송하기 위해 계산됩니다.
 
@@ -68,7 +70,7 @@ C++ 언어는 피연산자를 지정할 때 특정 호환성을 지정합니다.
 |필요한 형식|허용되는 형식|
 |-------------------|-------------------|
 |*type*|`const` *type*<br /> `volatile` *type*<br /> *type*&<br /> `const` *type*&<br /> `volatile` *type*&<br /> `volatile const` *type*<br /> `volatile const` *type*&|
-|*type*\*|*type*\*<br /> `const` *type*\*<br /> `volatile` *type*\*<br /> `volatile const` *type*\*|
+|*형식* \*|*형식* \*<br /> `const` *형식* \*<br /> `volatile` *형식* \*<br /> `volatile const` *형식* \*|
 |`const` *type*|*type*<br /> `const` *type*<br />`const` *type*&|
 |`volatile` *type*|*type*<br /> `volatile` *type*<br /> `volatile` *type*&|
 

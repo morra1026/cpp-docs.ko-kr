@@ -1,39 +1,83 @@
 ---
-title: 이벤트 추가(Visual C++)
-ms.date: 11/04/2016
+title: 이벤트 추가
+ms.date: 11/12/2018
+f1_keywords:
+- vc.codewiz.event.overview
 helpviewer_keywords:
 - ActiveX controls [C++], adding events to
 - MFC ActiveX controls [C++], adding events
 - events [C++], ActiveX controls
+- add event wizard [C++]
 ms.assetid: fe34832a-edfc-4f86-aacb-8df77001873d
-ms.openlocfilehash: 6dd4ecd249e47523b08433bda12838fb8b220157
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d5a8f5666dd04e00f8a438fdbf00320c37e14f4
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444787"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693427"
 ---
-# <a name="adding-an-event-visual-c"></a>이벤트 추가(Visual C++)
+# <a name="add-an-event"></a>이벤트 추가
 
-클래스 뷰에서 [이벤트 추가 마법사](../ide/add-event-wizard.md)를 사용하여 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md) 프로젝트의 컨트롤 클래스에만 이벤트를 추가할 수 있습니다. 다른 형식의 프로젝트에 이벤트를 추가하려면 [속성 창](/visualstudio/ide/reference/properties-window)에서 **이벤트** 단추를 사용합니다.
+클래스 뷰에서 [이벤트 추가 마법사](#add-event-wizard)를 사용하여 [MFC ActiveX 컨트롤](../mfc/reference/creating-an-mfc-activex-control.md) 프로젝트의 컨트롤 클래스에만 이벤트를 추가할 수 있습니다. 다른 형식의 프로젝트에 이벤트를 추가하려면 [속성 창](/visualstudio/ide/reference/properties-window)에서 **이벤트** 단추를 사용합니다.
 
-### <a name="to-add-an-event-to-your-mfc-activex-control-project"></a>MFC ActiveX 컨트롤 프로젝트에 이벤트를 추가하려면
+**MFC ActiveX 컨트롤 프로젝트에 이벤트를 추가하려면:**
 
 1. 클래스 뷰에서 프로젝트 노드를 확장하여 프로젝트의 클래스를 표시합니다.
 
 1. 프로젝트의 컨트롤 클래스를 마우스 오른쪽 단추로 클릭합니다.
 
-1. 바로 가기 메뉴에서 **추가**를 클릭한 다음, **이벤트 추가**를 클릭하여 이벤트 추가 마법사를 표시합니다.
+1. 바로 가기 메뉴에서 **추가**를 선택한 다음, **이벤트 추가**를 선택하여 이벤트 추가 마법사를 표시합니다.
 
 1. 적절한 마법사 상자에 이벤트 정보를 입력합니다.
 
-1. **마침**을 클릭하여 이벤트를 프로젝트에 추가합니다.
+1. **마침**을 선택하여 이벤트를 프로젝트에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="in-this-section"></a>단원 내용
 
-[코드 마법사로 기능 추가](../ide/adding-functionality-with-code-wizards-cpp.md)<br>
-[클래스 추가](../ide/adding-a-class-visual-cpp.md)<br>
-[멤버 변수 추가](../ide/adding-a-member-variable-visual-cpp.md)<br>
-[멤버 함수 추가](../ide/adding-a-member-function-visual-cpp.md)<br>
-[MFC 메시지 처리기](../mfc/reference/adding-an-mfc-message-handler.md)<br>
-[클래스 구조 탐색](../ide/navigating-the-class-structure-visual-cpp.md)
+- [이벤트 추가 마법사](#add-event-wizard)
+
+## <a name="add-event-wizard"></a>이벤트 추가 마법사
+
+이 마법사는 MFC ActiveX 컨트롤 프로젝트에 이벤트를 추가합니다. 고유한 이벤트를 지정하거나, 일반적인 스톡 이벤트를 사용자 지정하거나, 스톡 이벤트 목록에서 선택할 수 있습니다.
+
+- **이벤트 이름**
+
+   자동화 클라이언트가 클래스에서 이벤트를 요청하는 데 사용하는 이름을 설정합니다. 이름을 입력하거나 목록에서 하나를 선택합니다.
+
+- **이벤트 유형**
+
+   추가할 이벤트 유형을 나타냅니다. **이벤트 이름** 목록에서 선택한 경우에만 사용할 수 있습니다.
+
+   |옵션|설명|
+   |------------|-----------------|
+   |**스톡**|단추 클릭과 같은 스톡 이벤트가 이 클래스에 대해 구현되도록 지정합니다. 스톡 이벤트는 MFC(Microsoft Foundation Class) 라이브러리에 정의되어 있습니다.|
+   |**사용자 지정**|이벤트의 고유한 구현을 사용하도록 지정합니다.|
+
+- **내부 이름**
+
+   이벤트를 보내는 멤버 함수의 이름을 설정합니다. 사용자 지정 이벤트에만 사용할 수 있습니다. 이름은 **이벤트 이름**을 기반으로 합니다. **이벤트 이름**과 다른 이름을 제공하려는 경우 내부 이름을 변경할 수 있습니다.
+
+- **매개 변수 형식**
+
+   **매개 변수 이름**의 형식을 설정합니다. 목록에서 형식을 선택합니다.
+
+- **매개 변수 이름**
+
+   이벤트를 통과할 매개 변수의 이름을 설정합니다. 이름을 입력한 후에 **추가**를 선택하여 매개 변수 목록에 추가해야 합니다.
+
+   **추가**를 선택하면 매개 변수 이름이 **매개 변수 목록**에 나타납니다.
+
+   > [!NOTE]
+   > 매개 변수 이름을 입력한 다음, **추가**를 선택하기 전에 **마침**을 선택하면 매개 변수가 이벤트에 추가되지 않습니다. 메서드를 찾아 수동으로 매개 변수를 삽입해야 합니다.
+
+- **추가**
+
+   **매개 변수 이름** 및 해당 형식에 지정한 매개 변수를 **매개 변수 목록**에 추가합니다. **추가**를 선택하여 목록에 매개 변수를 추가합니다.
+
+- **제거**
+
+   **매개 변수 목록**에서 선택한 매개 변수를 목록에서 제거합니다.
+
+- **매개 변수 목록**
+
+   메서드에 대해 현재 추가된 모든 매개 변수와 해당 형식을 표시합니다. 매개 변수를 추가하면 마법사가 **매개 변수 목록**을 업데이트하여 각 매개 변수와 형식을 함께 표시합니다.

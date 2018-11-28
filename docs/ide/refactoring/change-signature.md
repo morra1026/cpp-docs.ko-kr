@@ -2,14 +2,15 @@
 title: 시그니처 변경
 ms.date: 11/16/2016
 ms.assetid: 8daaa060-7305-4035-99d2-8b460b4f4454
-ms.openlocfilehash: 776f777eb64128e9914e6d087551930593a490fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec42fd00ecf48fb700042f02543e3fe194fe6975
+ms.sourcegitcommit: 7c05ebd2c75e9326fe774e95cbce7f150ba2eeba
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584043"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52281950"
 ---
 # <a name="change-signature"></a>시그니처 변경
+
 **대상:** 함수의 매개 변수를 수정할 수 있습니다.
 
 **시기:** 다양한 위치에서 현재 사용 중인 함수의 매개 변수를 다시 정렬하거나, 다시 이동하거나, 수정하려고 합니다.

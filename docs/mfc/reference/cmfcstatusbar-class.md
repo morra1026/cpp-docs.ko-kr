@@ -1,6 +1,6 @@
 ---
 title: CMFCStatusBar 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CMFCStatusBar
 - AFXSTATUSBAR/CMFCStatusBar
@@ -72,18 +72,18 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: bd63ee83412c3f89b6eea755c0b0a213b1dcc2e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4891c6bb66fe5e4b737ca9b128a01bcedcf39e7
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498048"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176577"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar 클래스
 
 합니다 `CMFCStatusBar` 유사한 상태 표시줄을 구현 하는 클래스는 `CStatusBar` 클래스입니다. 그러나 `CMFCStatusBar` 클래스에는 `CStatusBar` 클래스에 의해 제공되지 않는 기능(예: 이미지, 애니메이션 및 진행률 표시줄을 표시하는 기능 및 마우스 두 번 클릭에 응답하는 기능)이 포함되어 있습니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -140,7 +140,7 @@ class CMFCStatusBar : public CPane
 
 다음 다이어그램에서 상태 표시줄의 그림을 보여 줍니다 [상태 표시줄 데모 샘플](../../visual-cpp-samples.md) 응용 프로그램입니다.
 
-![CMFCStatusBar의 예제](../../mfc/reference/media/cmfcstatusbar.png "cmfcstatusbar")
+![CMFCStatusBar의 예제](../../mfc/reference/media/cmfcstatusbar.png "CMFCStatusBar의 예제")
 
 ## <a name="example"></a>예제
 

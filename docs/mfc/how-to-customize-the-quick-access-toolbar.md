@@ -1,21 +1,21 @@
 ---
 title: '방법: 빠른 실행 도구 모음 사용자 지정'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - quick access toolbar [MFC], customization
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-ms.openlocfilehash: d9bdc523218c7fad217d066eabd518aaff011df3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aced2e732b68f838c679518ef67b1d6bdd361964
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558485"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176330"
 ---
 # <a name="how-to-customize-the-quick-access-toolbar"></a>방법: 빠른 실행 도구 모음 사용자 지정
 
 QAT(빠른 실행 도구 모음)는 응용 프로그램 단추 옆 또는 범주 탭 아래에 표시된 명령 집합이 포함된 사용자 지정 가능한 도구 모음입니다. 다음 그림에서는 일반적인 빠른 실행 도구 모음을 보여 줍니다.
 
-![MFC 리본 빠른 실행 도구 모음](../mfc/media/quick_access_toolbar.png "quick_access_toolbar")
+![MFC 리본 빠른 실행 도구 모음](../mfc/media/quick_access_toolbar.png "MFC 리본 빠른 실행 도구 모음")
 
 빠른 실행 도구 모음을 사용자 지정 하려면 열에 **속성** 창에서 해당 명령을 수정한 다음 리본 컨트롤을 미리 봅니다.
 
@@ -55,4 +55,3 @@ QAT(빠른 실행 도구 모음)는 응용 프로그램 단추 옆 또는 범주
 ## <a name="see-also"></a>참고 항목
 
 [리본 디자이너(MFC)](../mfc/ribbon-designer-mfc.md)
-

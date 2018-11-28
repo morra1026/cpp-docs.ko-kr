@@ -1,6 +1,6 @@
 ---
 title: 새 문서, 창 및 뷰 만들기
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - MDI [MFC], creating windows
 - window objects [MFC], creating
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - views [MFC], overriding default behavior
 - initializing views [MFC]
 ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
-ms.openlocfilehash: 20bc94c7a688d3cf88fa89fff060ab155d327606
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57e558848ce76a7c74b5715529661ad24c9cbb8e
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643900"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175394"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>새 문서, 창 및 뷰 만들기
 
@@ -37,11 +37,14 @@ ms.locfileid: "50643900"
 
 이 프로세스를 완료 하면 협동 개체가 존재 하 고 서로에 대 한 포인터를 저장 합니다. 다음 그림에서는 개체 생성 하는 시퀀스를 보여 줍니다. 그림에는 순서를 따를 수 있습니다.
 
-![문서 만들기 시퀀스](../mfc/media/vc387l1.gif "vc387l1") 문서 만들기 시퀀스
+![문서 만들기 시퀀스](../mfc/media/vc387l1.gif "문서 만들기 시퀀스") <br/>
+문서를 만드는 순서
 
-![프레임 창 만들기 시퀀스](../mfc/media/vc387l2.png "vc387l2") 프레임 창 만들기 시퀀스
+![프레임 창 만들기 시퀀스](../mfc/media/vc387l2.png "프레임 창 만들기 시퀀스") <br/>
+프레임 창을 만드는 순서
 
-![뷰를 만드는 순서](../mfc/media/vc387l3.gif "vc387l3") 뷰 만들기 시퀀스
+![뷰를 만드는 순서](../mfc/media/vc387l3.gif "뷰 만들기 시퀀스") <br/>
+뷰를 만드는 순서
 
 프레임 워크를 새 문서, 뷰 및 프레임 창 개체를 초기화 하는 방법에 대 한 내용은 클래스를 참조 하십시오 [CDocument](../mfc/reference/cdocument-class.md), [CView](../mfc/reference/cview-class.md)를 [CFrameWnd](../mfc/reference/cframewnd-class.md)합니다 [CMDIFrameWnd](../mfc/reference/cmdiframewnd-class.md), 및 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) MFC 라이브러리 참조에서 합니다. 도 참조 하세요 [Technical Note 22](../mfc/tn022-standard-commands-implementation.md), 해당 프레임 워크의 표준 명령에 대 한 설명은 아래 추가로 생성 및 초기화 프로세스를 설명 하는 합니다 **새로 만들기** 및 **엽니다** 항목에 **파일** 메뉴.
 

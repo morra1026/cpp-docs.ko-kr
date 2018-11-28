@@ -1,6 +1,6 @@
 ---
 title: 연결 지점
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - IConnectionPoint
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - CCmdTarget class [MFC], and connection points
 - sinks, connection points
 ms.assetid: bc9fd7c7-8df6-4752-ac8c-0b177442c88d
-ms.openlocfilehash: cddbdb30cbc5f5ddb5fa98524ad067655f262be1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf21e7bf591a5b1977784db1542053817a73e6cd
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517639"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175485"
 ---
 # <a name="connection-points"></a>연결 지점
 
@@ -30,7 +30,8 @@ ms.locfileid: "50517639"
 
 연결에는 두 부분이 있습니다: 원본 및 인터페이스를 구현 하는 개체를 호출 하는 인터페이스를 호출 하는 개체 싱크를 호출 합니다. 연결 지점에는 원본에 의해 노출 된 인터페이스입니다. 원본은 연결점을 노출 하 여 자체 (원본)에 대 한 연결을 설정 하는 싱크를 허용 합니다. 연결을 통해 지점 메커니즘 (의 `IConnectionPoint` 인터페이스)를 싱크 인터페이스에 대 한 포인터는 원본 개체에 전달 됩니다. 이 포인터는 멤버 함수 집합이 싱크 구현에 대 한 액세스를 사용 하 여 소스를 제공합니다. 예를 들어, 싱크에 의해 구현 된 이벤트를 발생 원본 싱크 구현의 적절 한 메서드를 호출할 수 있습니다. 다음 그림에는 연결 방법을 보여 줍니다. 위에서 설명한 지점입니다.
 
-![연결 지점 구현](../mfc/media/vc37lh1.gif "vc37lh1") 는 구현 된 연결 지점
+![연결 지점 구현](../mfc/media/vc37lh1.gif "연결 지점 구현") <br/>
+구현된 연결 지점
 
 MFC에서이 모델을 구현 하는 [CConnectionPoint](../mfc/reference/cconnectionpoint-class.md) 하 고 [CCmdTarget](../mfc/reference/ccmdtarget-class.md) 클래스입니다. 파생 된 클래스 `CConnectionPoint` 구현 된 `IConnectionPoint` 인터페이스를 다른 개체에 연결 지점을 노출 하는 데 사용 합니다. 클래스에서 파생 된 `CCmdTarget` 구현 된 `IConnectionPointContainer` 인터페이스를 사용 가능한 연결 지점 개체의 모든 열거 하거나 특정 연결 지점을 찾을 수 있습니다.
 
@@ -54,7 +55,8 @@ MFC에서이 모델을 구현 하는 [CConnectionPoint](../mfc/reference/cconnec
 
 이 코드에 삽입 된 후에 `CCmdTarget`-파생된 클래스에 대 한 연결 지점을 노출 된 `ISampleSink` 인터페이스입니다. 다음 그림에서는이 예제를 보여 줍니다.
 
-![MFC를 사용 하 여 구현 된 연결 지점](../mfc/media/vc37lh2.gif "vc37lh2") 는 MFC를 사용 하 여 연결을 구현 지점
+![MFC를 사용 하 여 구현 된 연결 지점](../mfc/media/vc37lh2.gif "MFC를 사용 하 여 구현 된 연결 지점") <br/>
+MFC를 사용 하 여 구현 하는 연결 지점
 
 일반적으로 연결점 지원 "멀티 캐스팅"-여러 싱크를 브로드캐스트할 수 있도록 동일한 인터페이스에 연결 합니다. 다음 예제에서는 부분을 보여 줍니다. 각 싱크에 연결 지점에서 반복 하 여 멀티 캐스트 하는 방법.
 

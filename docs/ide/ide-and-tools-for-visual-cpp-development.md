@@ -1,16 +1,16 @@
 ---
 title: IDE 및 Visual C++ 개발 도구
 description: Visual Studio IDE는 코드 편집기, 디버거, 테스트 프레임워크, 정적 분석기 및 기타 프로그래밍 도구를 사용하여 Windows, Linux, Android 및 iOS에서 C++ 개발을 수행하도록 지원합니다.
-ms.date: 09/27/2018
+ms.date: 11/18/2018
 helpviewer_keywords:
 - Visual C++, development tools
 ms.assetid: 56eabafb-1956-4f0f-bec5-29b887763559
-ms.openlocfilehash: e24ba58cf0cf94f1505adaf056f64580b8f7829e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5dd7f681d05d36215c4086165165122a05be23c
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473361"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693960"
 ---
 # <a name="ide-and-compiler-tools-for-visual-c-development"></a>IDE 및 Visual C++ 개발을 위한 컴파일러 도구
 
@@ -105,14 +105,24 @@ Microsoft Store를 통해 기존 데스크톱 응용 프로그램과 UWP 앱을 
 
 C++/CLI 프로그램의 배포에 대한 자세한 내용은 [개발자를 위한 배포 가이드](/dotnet/framework/deployment/deployment-guide-for-developers)를 참조하세요.
 
+## <a name="in-this-section"></a>단원 내용
+
+|||
+|-|-|
+|[코드 작성 및 리팩터링(C++)](writing-and-refactoring-code-cpp.md)| C++ 코드 편집기를 사용하여 코드를 작성하고, 리팩터링하고, 탐색하는 방법|
+|[Visual Studio 버전의 Visual C++ 도구 및 기능](visual-cpp-tools-and-features-in-visual-studio-editions.md)|다양한 Visual Studio 버전에서 사용할 수 있는 기능을 보여 줍니다.|
+|[Visual Studio의 C++ 열기 폴더 프로젝트](non-msbuild-projects.md)|Visual Studio에서 임의의 C++ 빌드 시스템을 사용하는 방법을 설명합니다.|
+|[Visual C++의 CMake 프로젝트](cmake-tools-for-visual-cpp.md).|Visual Studio에서 CMake 프로젝트를 빌드하는 방법을 설명합니다.|
+|[MSBuild 기반 프로젝트 만들기 및 관리](creating-and-managing-visual-cpp-projects.md)|Visual Studio의 C++ MSBuild 기반 프로젝트에 대한 개요와 해당 프로젝트를 만들고 관리하는 방법을 설명하는 다른 문서에 대한 링크를 제공합니다.|
+|[데스크톱 응용 프로그램 배포](deploying-native-desktop-applications-visual-cpp.md)|C++ 앱 및 배포에 대해 자세히 설명하는 다른 문서로 연결되는 링크에 대한 개요를 제공합니다.|
+|[코드 마법사로 기능 추가(C++)](adding-functionality-with-code-wizards-cpp.md)| 안내하는 마법사를 사용하여 프로젝트에 클래스, 파일 또는 사용자 인터페이스 요소를 추가합니다.|
+|[XML 문서(Visual C++)](xml-documentation-visual-cpp.md)| API에 대한 XML 문서를 만듭니다.|
+|[Visual Studio에서 C++ 프로젝트 빌드](building-cpp-projects-in-visual-studio.md)|Visual Studio IDE를 사용하여 프로젝트를 빌드하는 방법|
+
 ## <a name="related-articles"></a>관련 문서
 
 |||
 |-|-|
-|[Visual Studio 버전의 Visual C++ 도구 및 기능](visual-cpp-tools-and-features-in-visual-studio-editions.md)|다양한 Visual Studio 버전에서 사용할 수 있는 기능을 보여 줍니다.|
-|[MSBuild 기반 프로젝트 만들기 및 관리](creating-and-managing-visual-cpp-projects.md)|Visual Studio의 C++ MSBuild 기반 프로젝트에 대한 개요와 해당 프로젝트를 만들고 관리하는 방법을 설명하는 다른 문서에 대한 링크를 제공합니다.|
-|[Visual C++의 CMake 프로젝트](cmake-tools-for-visual-cpp.md).|Visual C++에서 CMake 또는 다른 비 MSBuild 프로젝트를 빌드하는 방법을 설명합니다.|
-|[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)|C++ 프로젝트를 빌드하는 방법을 설명합니다.|
-|[데스크톱 응용 프로그램 배포](deploying-native-desktop-applications-visual-cpp.md)|C++ 앱 및 배포에 대해 자세히 설명하는 다른 문서로 연결되는 링크에 대한 개요를 제공합니다.|
+|[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)|C++ 프로젝트를 빌드하는 방법에 대한 심층 정보|
 |[Visual C++ 포팅 및 업그레이드 가이드](../porting/visual-cpp-porting-and-upgrading-guide.md)|이전 버전의 Visual Studio에서 만들어진 C++ 응용 프로그램을 업그레이드하는 방법 및 Visual Studio 이외의 다른 도구를 사용하여 생성된 응용 프로그램을 마이그레이션하는 방법에 대한 자세한 정보입니다.|
 |[Visual C++](../visual-cpp-in-visual-studio.md)|Visual Studio에 포함된 Visual C++의 주요 기능을 설명하고 Visual C++ 설명서의 나머지 부분에 연결합니다.|

@@ -1,21 +1,22 @@
 ---
 title: 선언자 개요
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - declarators, about declarators
 ms.assetid: 0f2e2312-80bd-4154-8345-718bd9ed2173
-ms.openlocfilehash: 66f1068fd3f69d3e4546f159ec22b34024bd2057
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e651b4422a159bf947e364c82cc4aac1b888d30d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326760"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177084"
 ---
 # <a name="overview-of-declarators"></a>선언자 개요
 
 선언자는 개체 또는 함수 이름을 지정하는 선언의 구성 요소입니다. 선언자는 명명된 개체가 개체, 포인터, 참조 또는 배열인지 여부도 지정합니다.  선언자는 기본 형식을 지정하지는 않지만, 포인터, 참조 및 배열과 같은 파생 형식을 지정하는 기본 형식의 형식 정보를 수정합니다.  함수에 적용되는 선언자는 형식 지정자와 함께 작동하여 개체, 포인터 또는 참조가 될 함수의 반환 형식을 완전히 지정합니다. (에 설명 된 지정자 [선언 및 정의](declarations-and-definitions-cpp.md), 형식 및 저장소 클래스와 같은 속성을 전달 합니다. 이 섹션에서 설명 된 한정자 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md), 선언 자를 수정 합니다.) 다음 그림에서는 `MyFunction`의 전체 선언과 선언의 구성 요소를 보여 줍니다.
 
-![한정자, 지정자 및 선언 자](../cpp/media/vc38qy1.gif "vc38QY1") 지정자, 한정자 및 선언 자
+![한정자, 지정자 및 선언 자](../cpp/media/vc38qy1.gif "한정자, 지정자 및 선언 자") <br/>
+지정자, 한정자 및 선언 자
 
 **Microsoft 전용**
 

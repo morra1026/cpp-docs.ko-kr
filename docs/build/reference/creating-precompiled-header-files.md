@@ -1,6 +1,6 @@
 ---
 title: 미리 컴파일된 헤더 파일 만들기
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - pch
 helpviewer_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: 3014b2da9f9d9e03e9ea791c9a97ff59f842e8ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b570b76328ee9824610aac495d97cede19189cf9
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482617"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176434"
 ---
 # <a name="creating-precompiled-header-files"></a>미리 컴파일된 헤더 파일 만들기
 
@@ -42,8 +42,6 @@ Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C �
 
 미리 컴파일된 헤더와 관련 된 컴파일러 옵션에 대 한 참조 정보를 참조 하세요 [/Y (미리 컴파일된 헤더)](../../build/reference/y-precompiled-headers.md)합니다.
 
-<a name="when-to-precompile-source-code"></a>
-
 ## <a name="when-to-precompile-source-code"></a>소스 코드를 미리 컴파일하는 시기
 
 경우에 특히 컴파일 시간을 줄이려면 개발 주기 동안 미리 컴파일된 코드는 유용 합니다.
@@ -57,11 +55,9 @@ Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C �
 C 및 c + + 프로그램을 미리 컴파일할 수 있습니다. C + + 프로그래밍에서는 헤더 파일에 클래스 인터페이스 정보를 구분 하는 것이 있습니다. 나중에 클래스를 사용 하는 프로그램에 이들 헤더 파일을 포함할 수 있습니다. 이러한 헤더를 미리 컴파일하면, 프로그램을 컴파일하는 데 걸리는 시간을 줄일 수 있습니다.
 
 > [!NOTE]
->  소스 파일 당 미리 컴파일된 헤더 (.pch) 파일을 하나만 사용할 수 있지만 프로젝트에 여러 개의.pch 파일을 사용할 수 있습니다.
+> 소스 파일 당 미리 컴파일된 헤더 (.pch) 파일을 하나만 사용할 수 있지만 프로젝트에 여러 개의.pch 파일을 사용할 수 있습니다.
 
-<a name="two-choices-for-precompiling-code"></a>
-
-# <a name="two-choices-for-precompiling-code"></a>코드를 미리 컴파일하기 위한 두 가지 선택 사항
+## <a name="two-choices-for-precompiling-code"></a>코드를 미리 컴파일하기 위한 두 가지 선택 사항
 
 Visual c + +를 사용 하 여 모든 C 또는 c + + 코드를 미리 컴파일할 수 있습니다. 헤더 파일에만 미리 컴파일하도록 제한 되지 않습니다.
 
@@ -73,13 +69,9 @@ Visual c + +를 사용 하 여 모든 C 또는 c + + 코드를 미리 컴파일�
 
 에 대 한 컴파일러 옵션 참조 항목 **/Yu** 하 고 **/Yc** 개발 환경에서이 기능에 액세스 하는 방법을 설명 합니다.
 
-<a name="precompiled-header-consistency-rules"></a>
-
 ## <a name="precompiled-header-consistency-rules"></a>미리 컴파일된 헤더의 일관성 규칙
 
 PCH 파일에서 컴퓨터 환경에 대 한 정보 뿐만 아니라 프로그램의 메모리 주소 정보에 포함 하기 때문에 만들어진 컴퓨터의 PCH 파일만 사용 해야 합니다.
-
-<a name="consistency-rules-for-per-file-use-of-precompiled-headers"></a>
 
 ## <a name="consistency-rules-for-per-file-use-of-precompiled-headers"></a>미리 컴파일된 헤더의 파일별 사용에 대한 일관성 규칙
 
@@ -134,8 +126,6 @@ PCH 파일을 만들 때 일반적으로 처리 하는 Pragma 이후에 PCH 파�
 |`data_seg`|`intrinsic`|`warning`|
 |`function`|`optimize`||
 
-<a name="consistency-rules-for-yc-and-yu"></a>
-
 ## <a name="consistency-rules-for-yc-and-yu"></a>/Yc 및 /Yu에 대한 일관성 규칙
 
 /Yc 또는 /Yu를 사용 하 여 만든 미리 컴파일된 헤더를 사용 하면 컴파일러는 PCH 파일을 만들 때 존재 하는 현재 컴파일 환경을 비교 합니다. 이전 (일치 하는 컴파일러 옵션, pragma, 및 등을 사용 하 여) 현재 컴파일의 일관 된 환경을 지정 해야 합니다. 컴파일러에서 불일치를 감지 하면 경고를 실행 하 고 가능한 경우 불일치가 식별 합니다. 이러한 경고 PCH 파일을 사용 하 여 문제를 반드시 나타내지 않습니다. 단순히 경고 충돌 하는 경우. 다음 섹션에서는 미리 컴파일된 헤더에 대 한 일관성 요구 사항에 설명 합니다.
@@ -155,15 +145,11 @@ PCH 파일을 만들 때 일반적으로 처리 하는 Pragma 이후에 PCH 파�
 > [!NOTE]
 >  미리 컴파일된 헤더 기능 C 및 c + + 소스 파일에만 사용 하 여 위한 것입니다.
 
-<a name="using-precompiled-headers-in-a-project"></a>
-
 ## <a name="using-precompiled-headers-in-a-project"></a>프로젝트에 미리 컴파일된 헤더 사용
 
 이전 섹션에서는 미리 컴파일된 헤더의 개요를 제공 합니다. /Yc 및 /Yu를 /Fp 옵션 및 [hdrstop](../../preprocessor/hdrstop.md) pragma입니다. 이 섹션에서는 프로젝트에 수동 미리 컴파일된 헤더 옵션을 사용 하는 방법 설명 예제 메이크파일 및 관리 하는 코드를 사용 하 여 종료 됩니다.
 
 프로젝트에 수동 미리 컴파일된 헤더 옵션을 사용 하 여 다른 방법에 대 한 Visual c + +의 기본 설치 중에 만든 MFC\SRC 디렉터리에 있는 메이크파일 중 하나를 조사 합니다. 이러한 메이크파일 여기에 제시 된 것과 비슷한 방법 데 Microsoft 프로그램 유지 관리 유틸리티 (NMAKE) 매크로 사용 있고 빌드 프로세스의 제어를 제공 합니다.
-
-<a name="pch-files-in-the-build-process"></a>
 
 ## <a name="pch-files-in-the-build-process"></a>빌드 프로세스의 PCH 파일
 
@@ -171,8 +157,8 @@ PCH 파일을 만들 때 일반적으로 처리 하는 Pragma 이후에 PCH 파�
 
 그림 3 개의 다이어그램 장치를 사용 하 여 빌드 프로세스의 흐름을 보여 줍니다. 사각형을 나타내는 명명 된 각 파일 또는 매크로 세 가지 매크로 하나 이상의 파일을 나타냅니다. 음영 처리 된 영역은 각 컴파일 또는 링크 동작을 나타냅니다. 화살표는 컴파일 또는 연결 프로세스 하는 동안 결합 되는 파일 및 매크로 보여 줍니다.
 
-![미리 컴파일된 헤더 파일을 사용 하는 메이크파일](../../build/reference/media/vc30ow1.gif "미리 컴파일된 헤더 파일을 사용 하는 메이크파일의 구조")
-##### <a name="structure-of-a-makefile-that-uses-a-precompiled-header-file"></a>미리 컴파일된 헤더 파일을 사용하는 메이크파일의 구조
+![미리 컴파일된 헤더 파일을 사용 하는 메이크파일의 구조](../../build/reference/media/vc30ow1.gif "미리 컴파일된 헤더 파일을 사용 하는 메이크파일의 구조") <br/>
+미리 컴파일된 헤더 파일을 사용하는 메이크파일의 구조
 
 다이어그램의 맨 위에 있는 모두 STABLEHDRS 경계와 하지 컴파일해야 할 파일을 나열할 수 없는 NMAKE 매크로입니다. 이러한 파일 명령 문자열에 의해 컴파일됩니다.
 
@@ -187,8 +173,6 @@ PCH 파일을 만들 때 일반적으로 처리 하는 Pragma 이후에 PCH 파�
 MYAPP.obj 최종 응용을 프로그램을 나타냅니다. MYAPP.cpp에서 만든 하 고 파일 UNSTABLEHDRS 매크로에 나열 된 미리 컴파일된 코드를 미리 컴파일된 헤더입니다.
 
 마지막으로, 실행 파일 (MYAPP 합니다. EXE) OBJ 매크로 (APPLIB.obj 및 MYAPP.obj)에 나열 된 파일을 연결 하 여 만들어집니다.
-
-<a name="sample-makefile-for-pch"></a>
 
 ## <a name="sample-makefile-for-pch"></a>PCH용 샘플 메이크파일
 
@@ -254,8 +238,6 @@ NMAKE DEBUG=0
 ```
 
 메이크파일에 대 한 자세한 내용은 참조 하세요. [NMAKE 참조](../../build/nmake-reference.md)합니다. 도 참조 하세요 [컴파일러 옵션](../../build/reference/compiler-options.md) 하며 [링커 옵션](../../build/reference/linker-options.md)합니다.
-
-<a name="example-code-for-pch"></a>
 
 ## <a name="example-code-for-pch"></a>PCH에 대한 예제 코드
 

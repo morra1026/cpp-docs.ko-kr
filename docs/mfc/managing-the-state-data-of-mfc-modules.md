@@ -1,6 +1,6 @@
 ---
 title: MFC 모듈의 상태 데이터 관리
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - global state [MFC]
 - data management [MFC], MFC modules
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - multiple modules [MFC]
 - module state restored [MFC]
 ms.assetid: 81889c11-0101-4a66-ab3c-f81cf199e1bb
-ms.openlocfilehash: 757fe9d8b4c9985cd3fa36d399cdc92057c03011
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1bed6f3b0dddf0d4ae5e8309d683e52c9e82410
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562216"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174883"
 ---
 # <a name="managing-the-state-data-of-mfc-modules"></a>MFC 모듈의 상태 데이터 관리
 
@@ -28,11 +28,13 @@ ms.locfileid: "50562216"
 
 다음 그림에 표시 된 것과 같이 MFC 응용 프로그램에서 사용 되는 각 모듈에 대 한 상태 데이터를 갖습니다. 이 데이터의 예로 Windows 인스턴스 핸들 (리소스 로드를 위한 사용), 현재 포인터 `CWinApp` 고 `CWinThread` 응용 프로그램, OLE 모듈 참조 횟수 및 다양 한 간의 연결을 유지 관리 하는 맵 개체 Windows 핸들 및 MFC 개체의 해당 인스턴스 개체입니다. 그러나 응용 프로그램에서는 여러 모듈 상태 데이터를 각 모듈의 경우 응용 프로그램 다양 합니다. 대신, 각 모듈에 MFC의 상태 데이터의 고유한 개인 복사본이 있습니다.
 
-![단일 모듈의 데이터 상태 &#40;응용 프로그램&#41;](../mfc/media/vc387n1.gif "vc387n1") 단일 모듈 (응용 프로그램)의 상태 데이터
+![단일 모듈의 데이터 상태 &#40;응용 프로그램&#41;](../mfc/media/vc387n1.gif "단일 모듈의 데이터 상태 &#40;응용 프로그램&#41;") <br/>
+단일 모듈(응용 프로그램)의 상태 데이터
 
 모듈의 상태 데이터 구조에 포함 되어 있으며는 항상 해당 구조에 대 한 포인터를 통해 사용할 수 있습니다. 들어가면 실행 흐름을 특정 모듈의 경우, 다음 그림에 나와 있는 것 처럼, 해당 모듈의 상태는 "현재" 또는 "효율적인" 상태 여야 합니다. 따라서 각 스레드 개체에 해당 응용 프로그램의 유효한 상태 구조체에 대 한 포인터입니다. 전혀 업데이트 this이 포인터를 유지 시간에 매우 중요 응용 프로그램의 전역 상태를 관리 하 고 각 모듈의 상태의 무결성을 유지 합니다. 잘못 된 관리 전역 상태를 예측할 수 없는 응용 프로그램 동작이 발생할 수 있습니다.
 
-![여러 모듈의 데이터 상태](../mfc/media/vc387n2.gif "vc387n2") 여러 모듈의 상태 데이터
+![여러 모듈의 데이터 상태](../mfc/media/vc387n2.gif "여러 모듈의 데이터 상태") <br/>
+여러 모듈의 상태 데이터
 
 즉, 각 모듈은 올바르게 해당 진입점의 모든 모듈 상태를 전환 하는 일을 담당 합니다. "진입점"은 실행 흐름을 모듈의 코드를 입력할 수 있는 곳입니다. 진입점은 다음과 같습니다.
 
@@ -45,4 +47,3 @@ ms.locfileid: "50562216"
 ## <a name="see-also"></a>참고 항목
 
 [일반 MFC 항목](../mfc/general-mfc-topics.md)
-

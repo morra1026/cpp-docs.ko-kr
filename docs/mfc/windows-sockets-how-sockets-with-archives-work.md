@@ -1,6 +1,6 @@
 ---
 title: 'Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Windows Sockets [MFC], synchronous
 - sockets [MFC], synchronous operation
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Windows Sockets [MFC], with archives
 - two-state socket object
 ms.assetid: d8ae4039-391d-44f0-a19b-558817affcbb
-ms.openlocfilehash: e87ee1467946003580ffa75e36e39b2c747892b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6101193c85e41fbf82681b0b2ae1e09e4162f87
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510762"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174914"
 ---
 # <a name="windows-sockets-how-sockets-with-archives-work"></a>Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법
 
@@ -30,7 +30,8 @@ ms.locfileid: "50510762"
 
 다음 그림은 통신의 양쪽 모두에 이러한 개체 간의 관계를 보여 줍니다.
 
-![CArchive, CSocketFile 및 CSocket](../mfc/media/vc38ia1.gif "vc38ia1") CArchive, CSocketFile 및 CSocket
+![CArchive, CSocketFile 및 CSocket](../mfc/media/vc38ia1.gif "CArchive, CSocketFile 및 CSocket") <br/>
+CArchive, CSocketFile 및 CSocket
 
 이 복잡성의 목적은 소켓의 세부 정보를 직접 관리할 필요가 없도록 하기입니다. 소켓, 파일 및 보관 파일을 만들고 보관 파일에 삽입 하거나 보관 파일에서 추출 하 여 송신 또는 수신 데이터를 시작 합니다. [CArchive](../mfc/reference/carchive-class.md), [CSocketFile](../mfc/reference/csocketfile-class.md), 및 [CSocket](../mfc/reference/csocket-class.md) 백그라운드 세부 사항을 관리 합니다.
 
@@ -41,7 +42,7 @@ ms.locfileid: "50510762"
 경우 `CSocket` 구현 되지 않았던 두 가지 상태 개체로 이전 알림이 처리 된 하는 동안 동일한 종류의 이벤트에 대 한 추가 알림을 받을 수 수 있습니다. 예를 들어, 발생할 수 있습니다는 `OnReceive` 알림을 처리 하는 동안는 `OnReceive`합니다. 위의 코드 조각에서 추출 `str` 아카이브에서 재귀가 발생할 수 있습니다. 상태를 전환 하 여 `CSocket` 추가 알림을 방지 하 여 재귀를 방지 합니다. 일반적인 규칙은 알림 내에서 알림이 표시 되지 않습니다.
 
 > [!NOTE]
->  A `CSocketFile` 없이 (제한 됨) 파일로 사용할 수도 있습니다는 `CArchive` 개체입니다. 기본적으로 `CSocketFile` 생성자 *bArchiveCompatible* 매개 변수가 **TRUE**합니다. 이 보관 파일 사용에 대 한 파일 개체를 지정 합니다. 개체를 사용 하는 파일을 보관 하지 않고, 전달 **FALSE** 에 *bArchiveCompatible* 매개 변수입니다.
+> A `CSocketFile` 없이 (제한 됨) 파일로 사용할 수도 있습니다는 `CArchive` 개체입니다. 기본적으로 `CSocketFile` 생성자 *bArchiveCompatible* 매개 변수가 **TRUE**합니다. 이 보관 파일 사용에 대 한 파일 개체를 지정 합니다. 개체를 사용 하는 파일을 보관 하지 않고, 전달 **FALSE** 에 *bArchiveCompatible* 매개 변수입니다.
 
 "보관 호환 되는" 모드로 `CSocketFile` 개체는 더 나은 성능을 제공 줄이고 "deadlock."의 위험 교착 상태는 송신 및 수신 소켓은 서로 대기 하거나 일반적인 리소스를 대기 하는 경우 발생 합니다. 하는 경우이 상황이 발생할 수 있습니다는 `CArchive` 와 협력 하는 개체를 `CSocketFile` 와 서는 `CFile` 개체. 사용 하 여 `CFile`, 보관 파일을 요청한 것 보다 더 적은 바이트를 수신 하는 경우 파일의 끝에 도달 했음을 가정할 수 있습니다. 그러나 사용 하 여 `CSocketFile`, 데이터를 기반으로 하는 메시지 버퍼에서 여러 메시지를 포함할 수, 있으므로 요청 된 바이트 수보다 적은 받는 파일의 끝을 의미 하지 않습니다. 사용 하 여 처럼이 경우 응용 프로그램 차단 하지 않습니다 `CFile`, 버퍼가 비어 때까지 버퍼에서 메시지 읽기를 계속할 수 있습니다. 합니다 [IsBufferEmpty](../mfc/reference/carchive-class.md#isbufferempty) 함수 `CArchive` 보관 파일의 경우 버퍼의 상태를 모니터링 하는 데 유용 합니다.
 
@@ -51,4 +52,3 @@ ms.locfileid: "50510762"
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)<br/>
 [Cobject:: Serialize](../mfc/reference/cobject-class.md#serialize)
-

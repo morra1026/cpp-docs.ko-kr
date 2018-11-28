@@ -1,6 +1,6 @@
 ---
 title: friend (C++)
-ms.date: 07/02/2018
+ms.date: 11/19/2018
 f1_keywords:
 - friend_cpp
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - friend classes [C++]
 - friend keyword [C++]
 ms.assetid: 8fe9ee55-d56f-40cd-9075-d9fb1375aff4
-ms.openlocfilehash: 46027692bfa4a7245418ab032168b5b3c107e839
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 769720877cc58de530791b268811d7d01adad3e6
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480524"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176720"
 ---
 # <a name="friend-c"></a>friend (C++)
 
@@ -230,7 +230,8 @@ friendship은 상속되지 않습니다. 즉, `YourOtherClass`에서 파생 클�
 
 다음 그림에서는 `Base`, `Derived`, `aFriend` 및 `anotherFriend`라는 네 가지 클래스 선언을 보여 줍니다. `aFriend` 클래스만 `Base` 전용 멤버(및 `Base`에서 상속했을 수 있는 모든 멤버)에 직접 액세스할 수 있습니다.
 
-![친구 관계의 의미](../cpp/media/vc38v41.gif "vc38V41") friend 관계의 의미
+![친구 관계의 의미](../cpp/media/vc38v41.gif "친구 관계의 의미") <br/>
+친구 관계의 의미
 
 ## <a name="inline-friend-definitions"></a>인라인 friend 정의
 

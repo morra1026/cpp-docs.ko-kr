@@ -1,6 +1,6 @@
 ---
 title: 문서 템플릿 및 문서-뷰 만들기 프로세스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - icons, for multiple document templates
 - document templates [MFC], and views
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CDocTemplate class [MFC]
 - templates [MFC], document templates
 ms.assetid: 311ce4cd-fbdf-4ea1-a51b-5bb043abbcee
-ms.openlocfilehash: 544a9bf60ee2066688703faa7e430e2337454e66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29575166a188b0691465bef0a72810d2e3d97624
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606351"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52174889"
 ---
 # <a name="document-templates-and-the-documentview-creation-process"></a>문서 템플릿 및 문서/뷰 만들기 프로세스
 
@@ -24,7 +24,8 @@ ms.locfileid: "50606351"
 
 일부 응용 프로그램에는 여러 문서 유형을 지원 합니다. 예를 들어, 응용 프로그램은 텍스트 문서 및 그래픽 문서 지원할 수 있습니다. 이러한 응용 프로그램에서 사용자가 파일 메뉴에서 새 명령을 선택할 때 대화 상자에는 가능한 형식의 새 문서를 열려면 목록을 표시 합니다. 각 지원 되는 문서 형식에 대 한 응용 프로그램에 고유한 문서 템플릿 개체를 사용합니다. 다음 그림에서는 두 문서 형식을 지원 하며, 여러 열린 문서를 표시 하는 MDI 응용 프로그램의 구성을 보여 줍니다.
 
-![두 가지 문서 형식이 포함 된 MDI 응용 프로그램](../mfc/media/vc387h1.gif "vc387h1") 두 문서 형식을 사용 하 여 MDI 응용 프로그램
+![두 가지 문서 형식이 포함 된 MDI 응용 프로그램](../mfc/media/vc387h1.gif "2 가지 문서 형식이 있는 MDI 응용 프로그램") <br/>
+두 문서 형식을 사용하는 MDI 응용 프로그램
 
 문서 템플릿 생성 및 응용 프로그램 개체에서 유지 관리 됩니다. 주요 작업 중 하나를 수행할 응용 프로그램 중 `InitInstance` 기능은 적절 한 종류의 하나 이상의 문서 템플릿이 생성 하는 것입니다. 이 기능에 설명 되어 [문서 템플릿 만들기](../mfc/document-template-creation.md)합니다. 응용 프로그램 개체 템플릿 목록에서 각 서식 파일에 대 한 포인터를 저장 하 고 문서 템플릿을 추가 하는 인터페이스를 제공 합니다.
 

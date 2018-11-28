@@ -1,18 +1,18 @@
 ---
 title: '연습: C++ AMP 응용 프로그램 디버깅'
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - debugging, C++ Accelerated Massive Parallelism
 - C++ AMP, debugging
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 4f8cdc315b561b5cbb4538e8486208d6278af9df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 610cf317982204715d55d12ece510cb477543f4d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579905"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176694"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>연습: C++ AMP 응용 프로그램 디버깅
 
@@ -201,7 +201,8 @@ ms.locfileid: "50579905"
 
 4. (약 67 줄 70 번째 줄) 다음 그림에 표시 된 코드의 줄에 중단점을 설정 합니다.
 
-     ![CPU 중단점](../../parallel/amp/media/campcpubreakpoints.png "campcpubreakpoints") CPU 중단점
+   ![CPU 중단점](../../parallel/amp/media/campcpubreakpoints.png "CPU 중단점") <br/>
+   CPU 중단점
 
 5. 메뉴 모음에서 **디버그** > **디버깅 시작**을 차례로 선택합니다.
 
@@ -229,7 +230,8 @@ ms.locfileid: "50579905"
 
 6. 다음 그림에 나와 있는 것 처럼 30 줄에 중단점을 설정 합니다.
 
-     ![GPU 중단점](../../parallel/amp/media/campgpubreakpoints.png "campgpubreakpoints") GPU 중단점
+   ![GPU 중단점](../../parallel/amp/media/campgpubreakpoints.png "GPU 중단점") <br/>
+   GPU 중단점
 
 7. 메뉴 모음에서 **디버그** > **디버깅 시작**을 차례로 선택합니다. GPU 코드의 해당 줄이 CPU에서 실행 되기 때문에 디버깅 하는 동안 CPU 코드 67 및 70 줄에 중단점 실행 되지 않습니다.
 
@@ -241,7 +243,8 @@ ms.locfileid: "50579905"
 
 2. 도킹 된 **GPU 스레드** Visual Studio의 맨 아래에 있는 창입니다. 선택 된 **스레드 스위치 확장** 타일 및 스레드 텍스트 상자에 표시할 단추입니다. 합니다 **GPU 스레드** 다음 그림과에서 같이 총 활성 및 차단 된 GPU 스레드 창에 표시 합니다.
 
-     ![4 개의 활성 스레드가 있는 GPU 스레드 창](../../parallel/amp/media/campc.png "campc") GPU 스레드 창
+   ![4 개의 활성 스레드가 있는 GPU 스레드 창](../../parallel/amp/media/campc.png "4 개의 활성 스레드가 있는 GPU 스레드 창") <br/>
+   GPU 스레드 창
 
    이 계산에 대 한 할당 313 타일이 있습니다. 각 타일에는 스레드 32 개 포함 되어 있습니다. 소프트웨어 에뮬레이터에서 발생 로컬 GPU 디버깅을 하기 때문에 4 개의 활성 GPU 스레드가 있습니다. 4 개 스레드 지침을 동시에 실행 한 다음 함께 다음 명령으로 합니다.
 
@@ -263,13 +266,15 @@ ms.locfileid: "50579905"
 
 3. 했는지 **스레드** 왼쪽 위 모서리에 있는 목록에서 선택 합니다. 다음 그림에는 **병렬 스택** 창에서 볼 수 있는 GPU 스레드 호출 스택 초점을 맞춘 보기에 표시 합니다 **GPU 스레드** 창.
 
-     ![4 개의 활성 스레드가 있는 병렬 스택 창](../../parallel/amp/media/campd.png "campd") 병렬 스택 창
+   ![4 개의 활성 스레드가 있는 병렬 스택 창](../../parallel/amp/media/campd.png "4 개의 활성 스레드가 있는 병렬 스택 창") <br/>
+   병렬 스택 창
 
    오류가 발생 했습니다. 32 개의 스레드 `_kernel_stub` 의 람다 문으로 합니다 `parallel_for_each` 함수 호출 하 고는 `sum_kernel_tiled` 함수를 위한 병렬 영역 감소 발생 합니다. 28 32 개의 스레드 부족 상태까지 진행 합니다 [tile_barrier:: wait](reference/tile-barrier-class.md#wait) 문을 다른 4 개의 스레드를에서 활성 상태로 유지 하는 반면 22 줄에서 차단 된 상태로 유지 하 고는 `sum_kernel_tiled` 30 줄 함수입니다.
 
    사용할 수 있는 GPU 스레드 속성을 검사할 수는 **GPU 스레드** 의 다양 한 DataTip에서 창 합니다 **병렬 스택** 창. 이렇게 하려면의 스택 프레임에 마우스 포인터를 놓고 **sum_kernel_tiled**합니다. 다음 그림에서는 DataTip을 보여 줍니다.
 
-     ![병렬 스택 창에 대 한 DataTip](../../parallel/amp/media/campe.png "campe") DataTip GPU 스레드
+   ![병렬 스택 창에 대 한 DataTip](../../parallel/amp/media/campe.png "DataTip 병렬 스택 창") <br/>
+   GPU 스레드 DataTip
 
    에 대 한 자세한 내용은 합니다 **병렬 스택** 창 참조 [병렬 스택 창 사용](/visualstudio/debugger/using-the-parallel-stacks-window)합니다.
 
@@ -291,7 +296,8 @@ ms.locfileid: "50579905"
 
    선택 된 **localA [localIdx [0]]** 열을 정렬 하려면 열 머리글입니다. 다음 그림을 기준으로 정렬 결과 보여 줍니다 **localA [localIdx [0]]** 합니다.
 
-     ![정렬 된 결과 사용 하 여 병렬 조사식 창](../../parallel/amp/media/campf.png "campf") 정렬 결과
+   ![정렬 된 결과 사용 하 여 병렬 조사식 창](../../parallel/amp/media/campf.png "정렬 된 결과 사용 하 여 병렬 조사식 창") <br/>
+   정렬 결과
 
    콘텐츠를 내보낼 수 있습니다는 **병렬 조사식** 선택 하 여 Excel 창을 합니다 **Excel** 단추를 선택한 다음 **Excel에서 열기**합니다. Excel이 개발 컴퓨터에 설치 된 경우이 콘텐츠를 포함 하는 Excel 워크시트를 엽니다.
 
@@ -313,7 +319,8 @@ ms.locfileid: "50579905"
 
    다음 그림에서 4 개의 활성 플래그가 지정 된 스레드는 **GPU 스레드** 창입니다.
 
-     ![플래그가 지정 된 스레드가 있는 GPU 스레드 창](../../parallel/amp/media/campg.png "campg") GPU 스레드 창의 활성 스레드
+   ![플래그가 지정 된 스레드가 있는 GPU 스레드 창](../../parallel/amp/media/campg.png "플래그가 지정 된 스레드가 있는 GPU 스레드 창") <br/>
+   GPU 스레드 창의 활성 스레드
 
    합니다 **병렬 조사식** 창과의 DataTip 합니다 **병렬 스택** 창 모두 플래그가 지정 된 스레드를 나타냅니다.
 
@@ -321,8 +328,8 @@ ms.locfileid: "50579905"
 
    선택 된 **스레드만 표시** windows 또는에서 단추를 **디버그 위치** 도구 모음. 다음 그림에 표시 된 **스레드만 표시** 단추를 **디버그 위치** 도구 모음입니다.
 
-     ![디버그 위치 도구 모음 플래그가 지정 된 항목만 표시 아이콘이](../../parallel/amp/media/camph.png "camph")
-**스레드만 표시** 단추
+   ![디버그 위치 도구 모음 플래그가 지정 된 항목만 표시 아이콘이](../../parallel/amp/media/camph.png "플래그가 지정 된 항목만 표시 아이콘이 있는 디버그 위치 도구 모음") <br/>
+   **플래그가 지정 된 항목만 표시** 단추
 
    이제는 **GPU 스레드**를 **병렬 조사식**, 및 **병렬 스택** windows 플래그가 지정 된 스레드만 표시 합니다.
 
@@ -340,7 +347,8 @@ ms.locfileid: "50579905"
 
    다음 그림에서는 합니다 **GPU 스레드** 모든 4 개의 스레드 고정 된 창에 표시 됩니다.
 
-     ![고정 된 스레드를 표시 하는 GPU 스레드 창을](../../parallel/amp/media/campk.png "campk") 스레드를 고정 합니다 **GPU 스레드** 창
+   ![고정 된 스레드를 표시 하는 GPU 스레드 창을](../../parallel/amp/media/campk.png "고정 된 스레드를 표시 하는 GPU 스레드 창") <br/>
+   스레드를 고정 합니다 **GPU 스레드** 창
 
    마찬가지로, 합니다 **병렬 조사식** 모든 4 개의 스레드 고정 된 창에 표시 됩니다.
 
@@ -356,7 +364,8 @@ ms.locfileid: "50579905"
 
    스레드는 **GPU 스레드** 창 주소 그룹화 됩니다. 주소는 각 스레드 그룹이 위치한 디스어셈블리에 있는 명령에 해당 합니다. 24 스레드는 22 줄 위치를 [tile_barrier:: wait 메서드](reference/tile-barrier-class.md#wait) 실행 됩니다. 12 스레드는 장애물 줄 32에 대 한 지침입니다. 이러한 스레드 중 4 개 플래그가 지정 됩니다. 8 개 스레드는 30 줄에 중단점입니다. 이러한 스레드 중 4 개 고정 됩니다. 다음 그림에서는 그룹화 된 스레드가 합니다 **GPU 스레드** 창입니다.
 
-     ![주소로 그룹화 된 스레드가 있는 GPU 스레드 창](../../parallel/amp/media/campl.png "campl") 스레드를 그룹화 합니다 **GPU 스레드** 창
+   ![주소로 그룹화 된 스레드가 있는 GPU 스레드 창](../../parallel/amp/media/campl.png "주소로 그룹화 된 스레드가 있는 GPU 스레드 창") <br/>
+   스레드를 그룹화 합니다 **GPU 스레드** 창
 
 2. 수행할 수도 있습니다는 **Group By** 의 데이터 표에 대 한 바로 가기 메뉴를 열고 작업 합니다 **병렬 조사식** 창 선택 **Group By**를 선택한 다음 메뉴 스레드를 그룹화 하려는 방법에 해당 하는 항목입니다.
 

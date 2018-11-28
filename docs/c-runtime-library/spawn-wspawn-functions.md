@@ -45,12 +45,12 @@ helpviewer_keywords:
 - tspawnlpe function
 - _tspawnle function
 ms.assetid: bb47c703-5216-4e09-8023-8cf25bbf2cf9
-ms.openlocfilehash: 49a65680d330752679c86c47c4b142ee3153237c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: caaa3fb40a75292bd32e14ddec33b504e0c1296b
+ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533798"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51693716"
 ---
 # <a name="spawn-wspawn-functions"></a>_spawn, _wspawn 함수
 
@@ -139,7 +139,7 @@ ms.locfileid: "50533798"
 
 DLL 또는 GUI 응용 프로그램에서 `_spawn`을 호출하며 출력을 파이프로 리디렉션하려는 경우 두 가지 옵션이 있습니다.
 
-- Win32 API를 사용하여 파이프를 만든 다음 [AllocConsole](https://msdn.microsoft.com/library/windows/desktop/ms681944)을 호출하고, 시작 구조에서 핸들 값을 설정하고, [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다.
+- Win32 API를 사용하여 파이프를 만든 다음 [AllocConsole](/windows/console/allocconsole)을 호출하고, 시작 구조에서 핸들 값을 설정하고, [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa)를 호출합니다.
 
 - 그런 다음 [_popen, _wpopen](../c-runtime-library/reference/popen-wpopen.md)을 호출합니다. 이 함수는 **cmd.exe /c** 또는 **command.exe /c**를 사용하여 파이프를 만들고 앱을 호출합니다.
 

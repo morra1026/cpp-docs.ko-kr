@@ -1,6 +1,6 @@
 ---
 title: 여러 문서 형식, 뷰 및 프레임 창
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - static splitter windows [MFC]
 - multiple views [MFC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 - multiple frame windows [MFC]
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-ms.openlocfilehash: 3c1422aed5535d30a2f9fb79300f6093326d2ef3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9c26413d45dfa03087bf9909bf8004064766a00
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669107"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175795"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>여러 문서 형식, 뷰 및 프레임 창
 
@@ -64,7 +64,8 @@ MFC는 같은 문서에 대한 다중 뷰가 필요한 세 가지 공용 사용�
 
 다음 그림은 a, b, 및 c로 나누어 세 개의 사용자 인터페이스 모델을 위에서 설명한 순서로 보여 줍니다.
 
-![여러&#45;사용자 인터페이스를 보려면](../mfc/media/vc37a71.gif "vc37a71") 다중 뷰 사용자 인터페이스
+![여러&#45;사용자 인터페이스를 보려면](../mfc/media/vc37a71.gif "여러&#45;사용자 인터페이스") <br/>
+여러 뷰 사용자 인터페이스
 
 프레임워크에서는 새 창 명령을 구현하고 [분할 창](../mfc/reference/csplitterwnd-class.md)에서 설명한 대로 [CSplitterWnd](#_core_splitter_windows)클래스를 제공하여 이 세 가지 모델을 제공합니다. 이 방법으로 시작하여 다른 모델을 구현할 수도 있습니다. 다른 구성의 뷰, 프레임 창 및 분할 창을 보여 주는 샘플 프로그램은 [MFC 샘플](../visual-cpp-samples.md)을 참조하세요.
 

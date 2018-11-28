@@ -1,16 +1,16 @@
 ---
 title: 키보드 및 마우스 사용자 지정
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - customizations [MFC], keyboard and mouse (MFC Extensions)
 - keyboard and mouse customizations (MFC Extensions)
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
-ms.openlocfilehash: 8bb685974ed4020611ffe275ba504951d132afac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ccbe83185c48439273024a97c881f1c32a2ddc7
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487390"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175683"
 ---
 # <a name="keyboard-and-mouse-customization"></a>키보드 및 마우스 사용자 지정
 
@@ -22,7 +22,8 @@ MFC 응용 프로그램 키보드 및 마우스 입력을 처리 하는 방법�
 
 다음 그림에 표시 합니다 **키보드** 탭의 **사용자 지정** 대화 상자.
 
-![사용자 지정 대화 상자의 키보드 탭](../mfc/media/mfcnextkeyboardtab.png "mfcnextkeyboardtab") 키보드 사용자 지정 탭
+![사용자 지정 대화 상자의 키보드 탭](../mfc/media/mfcnextkeyboardtab.png "사용자 지정 대화 상자의 키보드 탭") <br/>
+키보드 사용자 지정 탭
 
 명령에 하나 이상의 바로 가기 키를 할당할 키보드 탭을 사용 하 여 사용자 상호 작용 합니다. 사용 가능한 명령 탭의 왼쪽에 나열 됩니다. 사용자 메뉴에서 사용할 수 있는 명령을 선택할 수 있습니다. 바로 가기 키를 사용 하 여 메뉴 명령에만 연결할 수 있습니다. 사용자가 새 바로 가기를 입력 합니다 **할당** 단추가 활성화 됩니다. 사용자가이 단추를 클릭 하면 응용 프로그램 바로 가기 선택한 명령을 연결 합니다.
 
@@ -36,7 +37,8 @@ MFC 응용 프로그램 키보드 및 마우스 입력을 처리 하는 방법�
 
 다음 그림에 표시 합니다 **마우스** 탭의 **사용자 지정** 대화 상자.
 
-![사용자 지정 대화 상자의 마우스 탭](../mfc/media/mfcnextmousetab.png "mfcnextmousetab") 마우스 사용자 지정 탭
+![사용자 지정 대화 상자의 마우스 탭](../mfc/media/mfcnextmousetab.png "사용자 지정 대화 상자의 마우스 탭") <br/>
+마우스 사용자 지정 탭
 
 메뉴를 할당 하려면이 탭을 사용 하 여 사용자 상호 작용 명령을 마우스 작업을 두 번 클릭 합니다. 사용자 창의 왼쪽에서 뷰를 선택 하 고 오른쪽의 컨트롤을 사용 하 여 명령을 두 번 클릭 동작을 사용 하 여 연결 합니다. 사용자가 클릭할 **닫기**, 응용 프로그램은 사용자가 보기에서 아무 곳 이나 두 번 클릭할 때마다 연결된 명령을 실행 합니다.
 

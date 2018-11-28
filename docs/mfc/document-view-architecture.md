@@ -1,6 +1,6 @@
 ---
 title: 문서 뷰 아키텍처
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - CView class [MFC], view architecture
 - CDocument class [MFC]
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: 943199e2398bcb49c7dddf6b3a67f5556c9c81a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0886f364637c8844aceb5d5d7b6b2ed7175225d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509281"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176851"
 ---
 # <a name="documentview-architecture"></a>문서/뷰 아키텍처
 
@@ -47,7 +47,8 @@ MFC 문서/뷰 아키텍처 쉽게 여러 뷰, 여러 문서 형식, 분할 창 
 
 다음 그림을 문서와 뷰 간의 관계를 보여 줍니다.
 
-![뷰는 표시 되는 문서의 부분](../mfc/media/vc379n1.gif "vc379n1") 문서 및 보기
+![뷰는 표시 되는 문서의 부분](../mfc/media/vc379n1.gif "뷰는 표시 되는 문서의 부분") <br/>
+문서 및 보기
 
 클래스 라이브러리의 문서/뷰 구현에는 데이터 자체 데이터에 대해 사용자 작업 및 해당 표시에서 구분합니다. 데이터의 모든 변경 내용은 문서 클래스를 통해 관리 됩니다. 뷰에 액세스 하 여 데이터를 업데이트 하려면이 인터페이스를 호출 합니다.
 

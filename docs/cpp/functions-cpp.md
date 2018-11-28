@@ -1,6 +1,6 @@
 ---
 title: 함수(C++)
-ms.date: 01/25/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - defaults, arguments
 - function definitions
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - default arguments
 - declarators, functions
 ms.assetid: 33ba01d5-75b5-48d2-8eab-5483ac7d2274
-ms.openlocfilehash: 777bffab922bc7122444110a32874f9b77171b0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aafd3be3b27fbe134b380a29083b4ca36177e702
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626150"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176486"
 ---
 # <a name="functions-c"></a>함수(C++)
 
@@ -125,7 +125,8 @@ int sum(int a, int b)
 
 다음 그림에서는 함수 정의의 일부분을 보여 줍니다. 음영 처리된 영역은 함수 본문입니다.
 
-![함수 정의 부분](../cpp/media/vc38ru1.gif "vc38RU1") 함수 정의 부분
+![함수 정의 부분](../cpp/media/vc38ru1.gif "함수 정의 부분") <br/>
+함수 정의 부분
 
 ## <a name="function-definitions"></a>함수 정의
 

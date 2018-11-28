@@ -1,14 +1,14 @@
 ---
 title: C++ 형식 시스템(최신 C++)
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: ba24a4a739e4eb13d983202943ca046f857422d2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 476ebabc4bfc19f995119649d6f012d4b39d8369
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521094"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176343"
 ---
 # <a name="c-type-system-modern-c"></a>C++ 형식 시스템(최신 C++)
 
@@ -59,7 +59,7 @@ int maxValue;                // Not recommended! maxValue contains
 
 다음 그림은 기본 제공 형식의 상대적 크기를 보여 줍니다.
 
-![크기 (바이트)의 기본 제공&#45;형식의](../cpp/media/built-intypesizes.png "inTYpeSizes 기본 제공")
+![크기 (바이트)의 기본 제공&#45;형식의](../cpp/media/built-intypesizes.png "크기 (바이트)의 기본 제공&#45;형식")
 
 다음 표에는 가장 자주 사용하는 기본 형식이 나와 있습니다.
 
@@ -70,13 +70,13 @@ int maxValue;                // Not recommended! maxValue contains
 |bool|1바이트|true 또는 false가 될 수 있는 값을 나타냅니다.|
 |char|1바이트|UNICODE로 변환되지 않는 이전 C 스타일 문자열 또는 std::string 개체의 ASCII 문자에 사용합니다.|
 |wchar_t|2바이트|UNICODE 형식(Windows의 경우 UTF-16, 운영 체제마다 다를 수 있음)으로 인코딩할 수 있는 "와이드" 문자 값을 나타냅니다. `std::wstring` 형식 문자열에 사용되는 문자 형식입니다.|
-|unsigned char|1바이트|C++에는 기본 `byte` 형식이 없습니다.  바이트 값을 나타내려면 부호 없는 문자를 사용합니다.|
+|부호 없는&nbsp;char|1바이트|C++에는 기본 `byte` 형식이 없습니다.  바이트 값을 나타내려면 부호 없는 문자를 사용합니다.|
 |unsigned int|4바이트|비트 플래그에 대한 기본 선택입니다.|
 |long long|8바이트|매우 큰 정수 값을 나타냅니다.|
 
 ## <a name="the-void-type"></a>void 형식입니다.
 
-**void** 형식이 특수 형식이; 형식의 변수를 선언할 수 없습니다 **void**, 형식의 변수를 선언할 수 있지만 `void *` (에 대 한 포인터 **void**), 즉 원시 (형식화 되지 않은) 메모리를 할당 하는 경우에 작업이 필요한 경우도 있습니다. 그러나에 대 한 포인터 **void** 은 보장 되지 않는 형식 및 일반적으로 사용은 최신 c + +에서는 것이 좋습니다. 함수 선언에는 **void** 반환 값 이면 함수는 값을 반환 하지 않습니다는이 일반적이 고 허용 가능한 사용 **void**합니다. C에 필요한 언어 함수는 0 매개 변수를 선언 하는 동안 **void** 예를 들어, 매개 변수 목록에서 `fou(void)`,이 이렇게 했지만 최신 c + + 및 선언 해야 `fou()`합니다. 자세한 내용은 [형식 변환 및 형식 안전성](../cpp/type-conversions-and-type-safety-modern-cpp.md)합니다.
+합니다 **void** 형식이 특수 형식이; 형식의 변수를 선언할 수 없습니다 **void**, 형식의 변수를 선언할 수 있지만 __void \*__  ( 에대한포인터**void**)에 필요한 경우가 원시 (형식화 되지 않은) 메모리를 할당 합니다. 그러나에 대 한 포인터 **void** 은 보장 되지 않는 형식 및 일반적으로 사용은 최신 c + +에서는 것이 좋습니다. 함수 선언에는 **void** 반환 값 이면 함수는 값을 반환 하지 않습니다는이 일반적이 고 허용 가능한 사용 **void**합니다. C에 필요한 언어 함수는 0 매개 변수를 선언 하는 동안 **void** 예를 들어, 매개 변수 목록에서 `fou(void)`,이 이렇게 했지만 최신 c + + 및 선언 해야 `fou()`합니다. 자세한 내용은 [형식 변환 및 형식 안전성](../cpp/type-conversions-and-type-safety-modern-cpp.md)합니다.
 
 ## <a name="const-type-qualifier"></a>const 형식 한정자
 

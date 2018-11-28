@@ -1,6 +1,6 @@
 ---
 title: 세션 개체 인터페이스
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - session objects [OLE DB]
 - session objects [OLE DB], interfaces
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - interfaces, session object
 - interfaces, list of
 ms.assetid: ac01a958-6dde-4bd7-8b63-94459e488335
-ms.openlocfilehash: 6b4748b804572c72b75f63b8ea2473818bdac989
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 284f93d96b974a616e957a65ef0c8aa39b33a564
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556623"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176902"
 ---
 # <a name="session-object-interfaces"></a>세션 개체 인터페이스
 
@@ -42,7 +42,7 @@ ms.locfileid: "51556623"
 
 세션 개체는 행 집합 개체를 만듭니다. 공급자 명령에서는 하는 경우 세션도 명령 개체를 만듭니다 (`CCommand`를 구현 하는 OLE DB `TCommand`). 명령 개체를 구현 하는 `ICommand` 사용 하 여 인터페이스를 `ICommand::Execute` 다음 그림에 표시 된 대로 행 집합에서 명령을 실행 하는 방법입니다.
 
-![공급자 개념적 다이어그램](../../data/oledb/media/vc4u551.gif "vc4u551")
+![공급자 개념적 다이어그램](../../data/oledb/media/vc4u551.gif "공급자 개념적 다이어그램")
 
 ## <a name="see-also"></a>참고 항목
 

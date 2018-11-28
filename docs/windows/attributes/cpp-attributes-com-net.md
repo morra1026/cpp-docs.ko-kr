@@ -1,17 +1,17 @@
 ---
 title: COM 및.NET에 대 한 c + + 특성
 ms.custom: index-page
-ms.date: 10/02/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
-ms.openlocfilehash: bacfd4cb78c5bf65422fb4472a4563776041a87b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a37542bd69926572e44322c406862117560affe
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589282"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175771"
 ---
 # <a name="c-attributes-for-com-and-net"></a>COM 및.NET에 대 한 c + + 특성
 
@@ -55,7 +55,7 @@ class CMyReceiver
 
 다음 그림에서는 컴파일러 및 특성 공급자 간의 관계를 보여 줍니다.
 
-![구성 요소 특성 통신](../media/vccompattrcomm.gif "vcCompAttrComm")
+![구성 요소 특성 통신](../media/vccompattrcomm.gif "구성 요소 특성 통신")
 
 > [!NOTE]
 > 특성 사용 소스 파일의 내용을 변경 하지 않습니다. 디버깅 세션 중에 생성 된 특성 코드를 표시 됩니다. 또한 프로젝트의 각 소스 파일에 대 한 특성 대체의 결과 표시 하는 텍스트 파일을 생성할 수 있습니다. 이 절차에 대 한 자세한 내용은 참조 하세요. [/Fx (삽입 된 코드 병합)](../../build/reference/fx-merge-injected-code.md) 하 고 [삽입 된 코드 디버그](/visualstudio/debugger/how-to-debug-injected-code)합니다.

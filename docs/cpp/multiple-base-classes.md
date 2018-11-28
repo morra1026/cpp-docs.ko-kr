@@ -1,18 +1,18 @@
 ---
 title: 다중 기본 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - base classes [C++], multiple
 - derived classes [C++], multiple bases
 - multiple inheritance, class declaration
 - multiple base classes [C++]
 ms.assetid: a30c69fe-401c-4a87-96a0-e0da70c7c740
-ms.openlocfilehash: fbbe6d6194b878b4851cbde84b55d71b9e4fc02c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b58c238da37fbbaf7c2c2913b652c26d98fbd96e
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483462"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176365"
 ---
 # <a name="multiple-base-classes"></a>다중 기본 클래스
 
@@ -52,11 +52,13 @@ class CollectionOfBook : public Book, public Collection {
 
 다음 그림에서 시뮬레이션된 런치 라인을 설명하는 클래스 계층 구조를 살펴보세요.
 
-![시뮬레이션 된 lunch line 그래프](../cpp/media/vc38xp1.gif "vc38XP1") 시뮬레이션 된 Lunch-line 그래프
+![시뮬레이션 된 lunch line 그래프](../cpp/media/vc38xp1.gif "시뮬레이션 된 lunch line 그래프") <br/>
+시뮬레이션 된 lunch-line 그래프
 
 그림에서 `Queue`는 `CashierQueue` 및 `LunchQueue`에 대한 기본 클래스입니다. 하지만 두 클래스가 결합되어 `LunchCashierQueue`를 형성할 경우 새 클래스에 형식이 `Queue`인 두 하위 개체가 포함되는데 하나는 `CashierQueue`의 하위 개체이고 하나는 `LunchQueue`의 하위 개체인 문제가 발생할 수 있습니다. 다음 그림에서는 개념적 메모리 레이아웃을 보여 줍니다.(실제 메모리 레이아웃은 최적화될 수도 있습니다.)
 
-![점심 시뮬레이션 된&#45;줄 개체](../cpp/media/vc38xp2.gif "vc38XP2") 시뮬레이션 된 Lunch-line 개체
+![점심 시뮬레이션 된&#45;줄 개체](../cpp/media/vc38xp2.gif "점심 시뮬레이션 된&#45;줄 개체") <br/>
+시뮬레이션된 Lunch-Line 개체
 
 `Queue` 개체에 두 개의 `LunchCashierQueue` 하위 개체가 있습니다. 다음 코드에서는 `Queue`를 가상 기본 클래스로 선언합니다.
 
@@ -71,15 +73,18 @@ class LunchCashierQueue : public LunchQueue, public CashierQueue {};
 
 합니다 **가상** 키워드를 사용 하면 해당 하위 개체의 복사본을 하나만 `Queue` 포함 됩니다 (다음 그림 참조).
 
-![점심 시뮬레이션 된&#45;줄 개체, 가상 기본 클래스](../cpp/media/vc38xp3.gif "vc38XP3") 가상 기본 클래스를 사용 하 여 시뮬레이션 된 Lunch-line 개체
+![점심 시뮬레이션 된&#45;줄 개체, 가상 기본 클래스](../cpp/media/vc38xp3.gif "점심 시뮬레이션 된&#45;줄 개체, 가상 기본 클래스") <br/>
+가상 기본 클래스를 사용 하 여 시뮬레이션 된 lunch-line 개체
 
 클래스에는 주어진 형식의 가상 구성 요소와 비가상 구성 요소가 둘 다 있을 수 있습니다. 이는 다음 그림에서 설명하는 조건에서 발생합니다.
 
-![클래스의 가상 및 비가상 구성 요소](../cpp/media/vc38xp4.gif "vc38XP4") 가상 및 비가상 구성 요소는 같은 클래스
+![가상 및 비&#45;클래스의 가상 구성 요소](../cpp/media/vc38xp4.gif "가상 및 비&#45;클래스의 가상 구성 요소") <br/>
+동일한 클래스의 가상 및 비가상 구성 요소
 
 그림에서 `CashierQueue` 및 `LunchQueue`는 `Queue`를 가상 기본 클래스로 사용합니다. 하지만 `TakeoutQueue`는 `Queue`를 가상 기본 클래스가 아니라 기본 클래스로 지정합니다. 따라서, `LunchTakeoutCashierQueue`는 형식이 `Queue`인 두 개의 하위 개체를 가지는데, 하나는 `LunchCashierQueue`를 포함하는 상속 경로의 하위 개체이고 하나는 `TakeoutQueue`를 포함하는 경로의 하위 개체입니다. 이는 다음 그림에 설명되어 있습니다.
 
-![개체 레이아웃의 가상 및 비가상 상속](../cpp/media/vc38xp5.gif "vc38XP5") 가상 및 비가상 상속을 사용 하 여 개체 레이아웃
+![가상 및 비&#45;개체의 레이아웃에서 가상 상속](../cpp/media/vc38xp5.gif "가상 & 아닌&#45;개체 레이아웃의 가상 상속") <br/>
+가상 및 비가상 상속을 사용 하 여 개체 레이아웃
 
 > [!NOTE]
 >  가상 상속은 비가상 상속과 비교했을 때 상당한 크기의 혜택을 제공하지만, 추가 처리 오버헤드가 발생할 수 있습니다.
@@ -187,7 +192,8 @@ public:
 
 - 주소 연산자를 사용하여 얻은 포인터를 기본 클래스 형식 `A`로 명시적으로 변환하는 경우의 효과. 개체의 주소를 `A*` 형식으로 강제 변환하면 선택할 `A` 형식의 하위 개체에 대한 충분한 정보가 컴파일러에 제공되지 않는 경우도 있습니다. 이 경우에는 두 하위 개체가 존재합니다.
 
-![포인터에서 기본 클래스로의 모호한 변환](../cpp/media/vc38xt1.gif "vc38XT1") 모호한 기본 클래스에 대 한 포인터의 변환
+![포인터에서 기본 클래스로의 모호한 변환](../cpp/media/vc38xt1.gif "포인터에서 기본 클래스로의 모호한 변환") <br/>
+포인터에서 기본 클래스로의 모호한 변환
 
 `A*` 형식의 하위 개체 중 올바른 것을 구별할 수 없기 때문에 `A`(`A`에 대한 포인터) 형식으로의 변환은 모호합니다. 다음과 같이 사용하려는 하위 개체를 명시적으로 지정하여 모호성을 방지할 수 있습니다.
 
@@ -202,7 +208,8 @@ public:
 
 다음 그림에서는 가상 및 비가상 상속을 사용하여 개체를 구성하는 방법을 보여 줍니다.
 
-![가상 파생 및 비가상 파생](../cpp/media/vc38xr1.gif "vc38XR1") 가상 vs. 비가상 파생
+![가상 파생 및 비&#45;가상 파생](../cpp/media/vc38xr1.gif "가상 파생 및 비&#45;가상 파생") <br/>
+가상 및 비가상 파생
 
 이 그림에서 비가상 기본 클래스를 통해 `A` 클래스의 임의 멤버에 액세스하면 모호성이 발생합니다. 컴파일러는 `B`에 연결된 하위 개체를 사용할지, 아니면 `C`에 연결된 하위 개체를 사용할지를 설명하는 정보를 가지고 있지 않습니다. 그러나 `A`를 가상 기본 클래스로 지정하면 어느 하위 개체에 액세스할지가 분명해집니다.
 

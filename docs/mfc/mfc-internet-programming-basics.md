@@ -1,6 +1,6 @@
 ---
 title: MFC 인터넷 프로그래밍 기본 사항
-ms.date: 09/12/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - ISAPI extensions, programming with ISAPI
 - Internet applications [MFC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 9d44d78474ccb030184c6e79ed2f257ffb00a068
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bb6a1d379ed754ed96637dfe5b3e4da983edb9f
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509463"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175589"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC 인터넷 프로그래밍 기본 사항
 
@@ -30,7 +30,7 @@ Microsoft는 클라이언트와 서버 응용 프로그램 프로그래밍에 �
 >[!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. 자세한 내용은 [ActiveX 컨트롤](activex-controls.md)합니다.
 
-![클라이언트 및 서버 응용 프로그램](../mfc/media/vc38bq1.gif "vc38bq1")
+![클라이언트 및 서버 응용 프로그램](../mfc/media/vc38bq1.gif "클라이언트 및 서버 응용 프로그램")
 
 MFC는 인터넷 프로그래밍을 지 원하는 클래스를 제공 합니다. 사용할 수 있습니다 [COleControl](../mfc/reference/colecontrol-class.md) 하 고 [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) 및 관련 MFC ActiveX 컨트롤 및 액티브 문서를 작성 하는 클래스입니다. 와 같은 MFC 클래스를 사용할 수 있습니다 [CInternetSession](../mfc/reference/cinternetsession-class.md)를 [CFtpConnection](../mfc/reference/cftpconnection-class.md), 및 [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) 파일 및 FTP와 같은 인터넷 프로토콜을 사용 하 여 정보를 검색 하려면 HTTP 및 gopher 합니다.
 

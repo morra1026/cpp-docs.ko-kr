@@ -1,6 +1,6 @@
 ---
 title: 범위 (C++)
-ms.date: 04/08/2018
+ms.date: 11/19/2018
 helpviewer_keywords:
 - classes [C++], scope
 - scope [C++]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [C++], scope
 - scope, C++ names
 ms.assetid: 81fecbb0-338b-4325-8332-49f33e716352
-ms.openlocfilehash: f44b75be7b2b1459e3ee9d0472f9a5ef6dac9025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 534bb9711ff54e21ca091b399aa3d13ec5a7359d
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506615"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176759"
 ---
 # <a name="scope-c"></a>범위 (C++)
 
@@ -41,7 +41,8 @@ ms.locfileid: "50506615"
 
 이름을 포함된 블록에서 선언하여 숨길 수 있습니다. 다음 그림에서는 `i`가 내부 블록 안에서 다시 선언되므로 바깥쪽 블록 범위에서 `i`와 연결된 변수가 숨겨집니다.
 
-![블록&#45;범위 이름 숨기기](../cpp/media/vc38sf1.png "vc38SF1") 블록 범위 및 이름 숨기기
+![블록&#45;범위 이름 숨기기](../cpp/media/vc38sf1.png "블록&#45;범위 이름 숨기기") <br/>
+블록 범위 및 이름 숨기기
 
 그림에 표시된 프로그램의 출력은 다음과 같습니다.
 

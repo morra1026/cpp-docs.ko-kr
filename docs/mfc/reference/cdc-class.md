@@ -1,6 +1,6 @@
 ---
 title: CDC 클래스
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 f1_keywords:
 - CDC
 - AFXWIN/CDC
@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 40de8b3aca3cca7acb2fefa352f9358a16f43e51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06c68d02433ce53c2b27167a985fc5854ca49700
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492082"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52176915"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 
@@ -1674,7 +1674,7 @@ BOOL DrawIcon(
 *hIcon*<br/>
 그릴 아이콘의 핸들을 식별 합니다.
 
-*지점*<br/>
+*point*<br/>
 논리적 x 좌표와 y-아이콘의 왼쪽 위 모퉁이 지정합니다. 전달할 수는 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1764,7 +1764,7 @@ BOOL DrawState(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 이미지의 위치를 지정합니다.
 
 *size*<br/>
@@ -3242,7 +3242,7 @@ static CBrush* PASCAL GetHalftoneBrush();
 
 하프톤 브러시 색을 나타내는 또는 전경색 및 배경색 디더링된 패턴을 만들려면 픽셀을 보여 줍니다. 다음은 하프톤 브러시 만든 디더링된 패턴의 예입니다.
 
-![디더링된의 세부 정보](../../mfc/reference/media/vc318s1.gif "vc318s1")
+![디더링된의 세부 정보](../../mfc/reference/media/vc318s1.gif "디더링된의 세부 정보")
 
 ##  <a name="getkerningpairs"></a>  CDC::GetKerningPairs
 
@@ -3565,7 +3565,7 @@ COLORREF GetPixel(POINT point) const;
 *y*<br/>
 검사할 요소의 논리적 y 좌표를 지정 합니다.
 
-*지점*<br/>
+*point*<br/>
 논리적 x 좌표와 y-검사할 요소의 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -4278,7 +4278,7 @@ BOOL LineTo(POINT point);
 *y*<br/>
 줄에 대 한 끝점의 논리적 y 좌표를 지정합니다.
 
-*지점*<br/>
+*point*<br/>
 줄에 대 한 끝점을 지정합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -4485,7 +4485,7 @@ CPoint MoveTo(POINT point);
 *y*<br/>
 새 위치에 대 한 논리적 y 좌표를 지정합니다.
 
-*지점*<br/>
+*point*<br/>
 새 위치를 지정합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -5115,7 +5115,7 @@ BOOL PtVisible(POINT point) const;
 *y*<br/>
 요소의 논리적 y 좌표를 지정합니다.
 
-*지점*<br/>
+*point*<br/>
 체크 인 되는 논리적 좌표를 지정 합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -5331,7 +5331,7 @@ BOOL RoundRect(
 *lpRect*<br/>
 논리 단위에서 경계 사각형을 지정합니다. 전달할 수 있습니다는 `CRect` 개체나에 대 한 포인터를 `RECT` 이 매개 변수 구조입니다.
 
-*지점*<br/>
+*point*<br/>
 x 좌표 *지점* (논리 단위)에 둥근된 모퉁이 그리는 타원의 너비를 지정 합니다. y 좌표 *지점* (논리 단위)에 둥근된 모퉁이 그리는 타원의 높이 지정 합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -5908,7 +5908,7 @@ X 좌표 (장치 단위로) 새 원본을 지정합니다. 이 값 범위는 0-7
 *y*<br/>
 Y 좌표 (장치 단위로) 새 원본을 지정합니다. 이 값 범위는 0-7 여야 합니다.
 
-*지점*<br/>
+*point*<br/>
 새 원점의 x 및 y 좌표를 지정합니다. 각 값 범위는 0-7 여야 합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -6179,7 +6179,7 @@ COLORREF SetPixel(
 *crColor*<br/>
 지점을 그리는 데 사용 되는 색을 지정 하는 COLORREF RGB 값입니다. 참조 [COLORREF](/windows/desktop/gdi/colorref) 이 값에 대 한 Windows SDK에 있습니다.
 
-*지점*<br/>
+*point*<br/>
 논리적 x 좌표와 y-설정할 요소의 지정 합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -6218,7 +6218,7 @@ BOOL SetPixelV(
 *crColor*<br/>
 지점을 그리는 데 사용할 색을 지정 합니다.
 
-*지점*<br/>
+*point*<br/>
 논리적 x 좌표와 y-설정할 요소의 지정 합니다. 전달할 수 있습니다는 [지점](../../mfc/reference/point-structure1.md) 데이터 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -6537,7 +6537,7 @@ X 좌표 (장치 단위로) 뷰포트의 원점을 지정합니다. 장치 좌�
 *y*<br/>
 Y 좌표 (장치 단위로) 뷰포트의 원점을 지정합니다. 장치 좌표계의 범위 내 값 이어야 합니다.
 
-*지점*<br/>
+*point*<br/>
 뷰포트의 원점을 지정합니다. 장치 좌표계의 범위 내 값 이어야 합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -6625,7 +6625,7 @@ CPoint SetWindowOrg(POINT point);
 *y*<br/>
 창의 새 origin의 논리적 y 좌표를 지정합니다.
 
-*지점*<br/>
+*point*<br/>
 창의 새 origin의 논리적 좌표를 지정합니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값

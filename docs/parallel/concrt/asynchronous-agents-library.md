@@ -1,16 +1,16 @@
 ---
 title: 비동기 에이전트 라이브러리
-ms.date: 11/04/2016
+ms.date: 11/19/2018
 helpviewer_keywords:
 - Agents Library
 - Asynchronous Agents Library
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-ms.openlocfilehash: 9086734b22523d395022299fb75b7a130a8e7a16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b4e8e6489e98aadb6ea41d32d5a9ba14efe2668
+ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629283"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52175862"
 ---
 # <a name="asynchronous-agents-library"></a>비동기 에이전트 라이브러리
 
@@ -26,7 +26,7 @@ ms.locfileid: "50629283"
 
 다음 그림에서는 사용 하 여 메시지 블록 및 전달할 메시지 전달 함수 두 에이전트를 보여 줍니다. 이 그림과 `agent1` 메시지를 보내는 `agent2` 사용 하 여 합니다 [concurrency:: send](reference/concurrency-namespace-functions.md#send) 함수 및 [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 개체입니다. `agent2` 사용 하는 [concurrency:: receive](reference/concurrency-namespace-functions.md#receive) 메시지를 읽는 함수입니다. `agent2` 동일한 메서드를 사용 하 여 메시지를 보내는 `agent1`합니다. 점선으로 된 화살표에는 에이전트 간의 데이터 흐름을을 나타냅니다. 실선 화살표에서 읽기 또는 쓰기에 해당 하는 메시지 블록에 에이전트를 연결 합니다.
 
-![에이전트 라이브러리의 구성 요소](../../parallel/concrt/media/agent_librarycomp.png "agent_librarycomp")
+![에이전트 라이브러리의 구성 요소](../../parallel/concrt/media/agent_librarycomp.png "에이전트 라이브러리의 구성 요소")
 
 이 그림에서는 구현 하는 코드 예제는이 항목의 뒷부분에 표시 됩니다.
 
