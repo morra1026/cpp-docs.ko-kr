@@ -184,6 +184,8 @@ ___
 | 2열은      | 가운데 맞춤      |   $12 |
 | 1열은 기본값 | 왼쪽 맞춤     |    $1 |
 
+[Markdown 표 생성 도구](http://www.tablesgenerator.com/markdown_tables)를 사용하면  보다 쉽게 만들 수 있습니다. 
+
 ## <a name="code"></a>코드
 
 코드를 포함하는 가장 효율적인 방법은 작동하는 샘플의 조각을 포함하는 것입니다. [지원 가이드](../CONTRIBUTING.md#contributing-to-samples)의 지침에 따라 샘플을 만들 수 있습니다.
