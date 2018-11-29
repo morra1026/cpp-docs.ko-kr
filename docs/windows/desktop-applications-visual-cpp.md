@@ -19,7 +19,7 @@ C++를 이용한 *데스크톱 응용 프로그램*에서는 전체 Windows API�
 
 Windows 10에서 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 응용 프로그램으로 패키징하고 터치와 같은 UWP 기능을 추가하거나 최신 Windows API를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램간 통신이 가능합니다.
 
-Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키징하는 작업을 단순화 하는 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용하는 레지스트리 호출이나 API와 관련하여 몇 가지 제한이 적용되지만 대부분의 경우 앱 패키지에서 실행되는 동안 유사한 기능을 얻기 위해 대체할 수 있는 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows-uwp/porting/desktop-to-uwp-root)를 참조하세요.
+Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키징하는 작업을 단순화하는 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용하는 레지스트리 호출이나 API와 관련하여 몇 가지 제한이 적용되지만 대부분의 경우 앱 패키지에서 실행되는 동안 유사한 기능을 얻기 위해 대체할 수 있는 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows-uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
 ### <a name="terminology"></a>용어
 
@@ -27,11 +27,11 @@ Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로
 
 - [구성 요소 개체 모델(COM)](/windows/desktop/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성요소가 COM 개체로 구현되어 있으며 표준 COM 규칙에 따라 개체 생성, 검색 및 삭제됩니다. C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것은 더 높은 수준의 지식이 필요 합니다. [라이브러리 ATL(액티브 템플릿)](../atl/atl-com-desktop-components.md)은 매크로 및 COM 개발을 간소화하는 도우미 함수를 제공합니다.
 
-- MFC 응용 프로그램은 [Microsoft Foundation Classes](../mfc/mfc-desktop-applications.md)를 사용하여 사용자 인터페이스를 만드는 Windows 데스크톱 응용 프로그램 입니다. MFC 응용 프로그램 역시 CRT 및 표준 라이브러리 API뿐만 아니라 COM 구성 요소를 사용할 수 있습니다. MFC는 창 메시지 루프 및 Windows API를 통해 가벼운 C++ 객체 지향 래퍼를 제공합니다. MFC는 사용자 인터페이스 컨트롤이나 특정 사용자들을 위한 사용자 정의 컨트롤이 많이 포함된 응용 프로그램, 특히 엔터프라이즈 유형 응용 프로그램에서 좋은 선택입니다. MFC 창 관리, 직렬화, 텍스트 조작, 인쇄 및 리본과 같은 최신 사용자 인터페이스 요소 들의 편리한 도우미 클래스를 제공합니다. MFC를 효율적으로 적용하려면 Win32에 대해 잘 알고 있어야 합니다.
+- MFC 응용 프로그램은 [Microsoft Foundation Classes](../mfc/mfc-desktop-applications.md)를 사용하여 사용자 인터페이스를 만드는 Windows 데스크톱 응용 프로그램입니다. MFC 응용 프로그램 역시 CRT 및 표준 라이브러리 API뿐만 아니라 COM 구성 요소를 사용할 수 있습니다. MFC는 창 메시지 루프 및 Windows API를 통해 가벼운 C++ 객체 지향 래퍼를 제공합니다. MFC는 사용자 인터페이스 컨트롤이나 특정 사용자들을 위한 사용자 정의 컨트롤이 많이 포함된 응용 프로그램, 특히 엔터프라이즈 유형 응용 프로그램에서 좋은 선택입니다. MFC 창 관리, 직렬화, 텍스트 조작, 인쇄 및 리본과 같은 최신 사용자 인터페이스 요소들의 편리한 도우미 클래스를 제공합니다. MFC를 효율적으로 적용하려면 Win32에 대해 잘 알고 있어야 합니다.
 
 - C++/CLI 응용 프로그램 또는 구성요소는 C++ 언어 사양에서 허용되는 C++ 구문을 확장을 통해 .NET과 네이티브 C++ 코드 간의 상호작용을 가능하도록 합니다.  C++/CLI 응용 프로그램은 네이티브로 실행하는 부분과 .NET 기본 클래스 라이브러리에 액세스할 수 있는 .NET 프레임워크에서 실행되는 부분으로 구성됩니다. C++/CLI는 C# 또는 Visual Basic으로 작성된 코드와 함께 동작하는 네이티브 C++ 코드가 필요할 경우 먼저 고려할 수 있는 방식입니다. 사용자 인터페이스 코드가 아닌 .NET DLL에서 주로 사용됩니다. 자세한 내용은 [.NET 프로그래밍 C++/CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)를 참조합니다.
 
-C++로 만든 Windows 데스크톱 응용 프로그램이라면 CRT(C 런타임) 및 표준 라이브러리 클래스 및 함수, COM 개체 및 공용 Windows 함수라고 통칭 Windows API를 사용할 수 있습니다. C++에서 Windows 데스크톱 응용 프로그램에 대한 소개는 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조합니다.
+C++로 만든 Windows 데스크톱 응용 프로그램이라면 CRT(C 런타임) 및 표준 라이브러리 클래스 및 함수, COM 개체 및 공용 Windows 함수라고 통칭하는 Windows API를 사용할 수 있습니다. C++에서 Windows 데스크톱 응용 프로그램에 대한 소개는 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조합니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
