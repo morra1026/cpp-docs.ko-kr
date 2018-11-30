@@ -16,15 +16,15 @@ ms.locfileid: "50483319"
 # <a name="working-with-resource-files"></a>리소스 파일 작업
 
 > [!WARNING]
-> 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 응용 프로그램에 적용됩니다. C++로 작성 된 유니버설 Windows 플랫폼 앱의 리소스에 대한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)를 참조합니다.
+> 이 섹션의 내용은 C++로 작성된 Windows 데스크톱 응용 프로그램에 적용됩니다. C++로 작성된 유니버설 Windows 플랫폼 앱의 리소스에 대한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)를 참조하세요.
 >
-> C++/CLI 프로젝트에 리소스를 추가 하는 방법은 *.NET 프레임워크 개발자 가이드*의 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조합니다.
+> C++/CLI 프로젝트에 리소스를 추가하는 방법은 *.NET 프레임워크 개발자 가이드*의 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조하세요.
 
 리소스는 사용자에게 정보를 제공하는 인터페이스 요소(예: 비트맵, 아이콘, 커서), 응용 프로그램에 필요한 데이터를 포함하는 사용자 지정 리소스, 설치 API에 사용되는 버전 리소스 그리고 메뉴 및 대화 상자 리소스를 포함하는 광범위한 요소로 구성될 수 있습니다.
 
 프로젝트에 새 리소스를 추가하고 적절한 리소스 편집기를 사용하여 리소스를 수정할 수 있습니다. 대부분의 Visual C++ 마법사에서는 프로젝트에 대해 .rc 파일을 자동으로 생성합니다.
 
-관리되는 프로젝트에 리소스를 추가 하는 방법에 대한 내용은 *.NET 프레임워크 개발자 가이드*의 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조합니다. 관린되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조합니다.
+관리되는 프로젝트에 리소스를 추가하는 방법에 대한 내용은 *.NET 프레임워크 개발자 가이드*의 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조하세요. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
 ## <a name="in-this-section"></a>섹션 내용
 
