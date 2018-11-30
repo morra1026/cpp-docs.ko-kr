@@ -25,11 +25,11 @@ ms.locfileid: "50461700"
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
 > [!NOTE]
-> 이 자료는 Windows 데스크톱 응용 프로그램에 적용됩니다. 유니버설 Windows 플랫폼 앱의 리소스에 대 한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)합니다.
+> 이 자료는 Windows 데스크톱 응용 프로그램에 적용됩니다. 유니버설 Windows 플랫폼 앱의 리소스에 대한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)를 참조합니다.
 >
-> 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
+> 관리되는 프로젝트에 리소스를 추가하는 방법에 대한 정보는 *.NET 프레임워크 개발자 가이드*의 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 액세스, 정적 리소스 표시 및 속성에 리소스 문자열을 할당하는 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 리소스 지역화에 대한 내용은 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)를 참조하세요.
 >
-> 를 참조하세요. .NET 프로그래밍 언어의 프로젝트는 리소스 스크립트 파일을 사용하지 않으므로 **솔루션 탐색기**를 참조하세요. 관리되는 프로젝트에서 리소스 파일로 작업하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
+> .NET 프로그래밍 언어의 프로젝트는 리소스 스크립트 파일을 사용하지 않으므로 **솔루션 탐색기**에서 리소스를 열어야 합니다. 관리되는 프로젝트에서 리소스 파일로 작업하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집하고자 하는 관리되는 모든 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
 
 "리소스 파일"이라는 용어는 다음을 포함한 여러 파일 형식을 나타낼 수 있습니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "50461700"
 
 - .rc 파일에서 참조되며 개발 환경에서 생성된 헤더 파일(예: Resource.h)
 
-또한 .exe, .dll 및 .res 파일과 같은 [다른 파일 형식](../windows/editable-file-types-for-resources.md) 의 리소스도 찾아볼 수 있습니다. 프로젝트 내에서 리소스 및 리소스 파일에 대한 작업을 하고 현재 프로젝트에 포함되지 않은 리소스 및 리소스 파일에 대한 작업도 할 수 있습니다. 또한 Visual Studio 개발 환경에서 생성되지 않은 리소스 파일에 대한 작업도 할 수 있습니다. 예를 들어 다음 작업을 할 수 있습니다.
+또한 .exe, .dll 및 .res 파일과 같은 [다른 파일 형식](../windows/editable-file-types-for-resources.md)의 리소스도 찾아볼 수 있습니다. 프로젝트 내의 리소스나 현재 프로젝트에 포함되지 않은 리소스 및 리소스 파일에 대한 작업도 할 수 있습니다. 또한 Visual Studio 개발 환경에서 생성되지 않은 리소스 파일에 대한 작업도 할 수 있습니다. 예를 들어 다음 작업을 할 수 있습니다.
 
 - 중첩되어 조건부로 포함된 리소스 파일에 대한 작업
 
