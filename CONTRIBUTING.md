@@ -93,6 +93,6 @@ DocFX를 사용하는 방법은 여러 가지가 있고 대부분 [DocFX 시작 
 
 # <a name="contributor-license-agreement"></a>기여자 라이선스 계약
 
-PR(Pull Request, 끌어오기 요청)이 병합되기 전에 [기여자 라이선스 계약(Contribution License Agreement, CLA)](LICENSE)에 서명해야 합니다. docs.microsoft.com에서는 처음에 한번만 서명하면 기록이 유지됩니다. 위키피디아에서 [기여자 라이선스 계약 (CLA)] (https://en.wikipedia.org/wiki/Contributor_License_Agreement)에 대한 자세한 내용을 볼 수 있습니다.
+PR(Pull Request, 끌어오기 요청)이 병합되기 전에 [기여자 라이선스 계약(Contribution License Agreement, CLA)](LICENSE)에 서명해야 합니다. docs.microsoft.com에서는 처음에 한번만 서명하면 기록이 유지됩니다. 위키피디아에서 [기여자 라이선스 계약(CLA)](https://en.wikipedia.org/wiki/Contributor_License_Agreement)에 대한 자세한 내용을 볼 수 있습니다.
 
 계약에 꼭 서명 할 필요는 없습니다. 일반적인 PR 제출, 복제, 포크가 가능합니다. PR이 생성되면 CLA 봇에 의해 분류됩니다. 변경이 간단한 (예 : 오타를 수정 한 경우), PR에는 CLA가 필요하지 않다고 라벨링을 합니다. 이런경우가 아니라면 CLA 필수로 분류됩니다. CLA에 서명하면 현재 및 향후 모든 끌어 오기 요청(Pull Request, PR)에 CLA 서명이 표시됩니다.
