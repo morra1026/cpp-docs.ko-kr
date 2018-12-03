@@ -19,13 +19,13 @@ C++ 콘솔 응용 프로그램은 콘솔 창의 명령줄에서 실행되고 텍
  
 ## <a name="native-desktop-client-applications"></a>네이티브 데스크톱 클라이언트 응용 프로그램
 
-용어 *데스크톱 네이티브 클라이언트 응용 프로그램* C 또는 c + + 기간 이동 하는 응용 프로그램 원본 Windows Win32 Api를 사용 하 여 액세스 운영 체제를 가리킵니다. 이러한 Api는 주로 C로 작성 된 자체 운영 체제 이벤트를 처리 하는 C 스타일 메시지 루프에 대해 직접 프로그래밍 또는 사용 하 여 선택할 수 있습니다이 종류의 응용 프로그램을 만들 때 *Microsoft Foundation Classes* (MFC), Win32를 래핑하는 c + + 라이브러리 방식 다소 개체 지향입니다. 두 접근 방식에는 "최신" 유니버설 Windows 플랫폼 (아래 참조) 비교할 수 있지만 모두 여전히 완전히 지원 되며 현재 환경에서 실행 되는 코드의 줄에 수백만 개의으로 간주 됩니다.
+*데스크톱 네이티브 클라이언트 응용 프로그램*은 원래 Windows Win32 API를 사용하여 운영체제에 액세스하는 C/C++ 윈도우 응용 프로그램을 가리킵니다. 이러한 API 자체는 주로 C 언어로 작성됩니다. 응용 프로그램을 만들 때 운영 체제 이벤트를 처리하는 C 스타일의 메시지 루프를 직접 프로그래밍하거나 다소 객체 지향적인 방식으로 Win32를 래핑한 *Microsoft Foundation Classes* (MFC)를 사용할 수 있습니다. 두 접근 방식에는 "최신" 유니버설 Windows 플랫폼 (아래 참조) 비교할 수 있지만 모두 여전히 완전히 지원되며 현재 환경에서 실행되는 코드의 줄에 수백만 개의 으로 간주됩니다.
 
 기존의 Windows C++ 프로그래밍을 시작하려면 [Win32 및 C++ 시작](/windows/desktop/LearnWin32/learn-to-program-for-windows)을 참조하세요. Win32에 대해 이해를 하면 [MFC 데스크톱 응용 프로그램](/mfc/mfc-desktop-applications)에 대해 더 쉽게 배울 수 있습니다. 정교한 그래픽을 사용하는 전통적인 C ++ 데스크탑 응용 프로그램의 예는 [Hilo: Windows용 C++ 응용 프로그램 개발](https://msdn.microsoft.com/library/windows/desktop/ff708696.aspx)을 참조하세요.
 
-### <a name="c-or-net"></a>C + + 또는.NET? 
+### <a name="c-or-net"></a>C++? .NET? 
 
-대부분의 데스크톱 응용 프로그램 시나리오 (즉, 타기 팅 하지 UWP)를 사용 하는 것이 좋습니다 C# 및.NET. 이.NET 프로그래밍은 덜 복잡 한 일반적으로 적으며 오류 발생률, Win32 또는 MFC 보다 더 최신 개체 지향 api 때문입니다. 대부분의 경우, 해당 성능 보다 더 적합합니다. .NET 기능을 풍부한 그래픽에 대 한 Windows Presentation Foundation (WPF) 및 Win32 뿐만 아니라 (UWP 아래 참조)는 최신 Windows 런타임 API 사용할 수 있습니다. 일반적으로 필요한 경우 데스크톱 응용 프로그램에 대 한 c + +를 사용 하는 것이 좋습니다.
+UWP를 대상으로 하지 않는 대부분의 데스크톱 응용 프로그램 시나리오의 경우 C# 및 .NET 사용을 고려하십시오. 이는 .NET 프로그래밍이 일반적으로 덜 복잡하고 오류가 적게 발생하며 Win32나 MFC 보다 현대적인 객체 지향 API를 이용하기 때문에 대부분의 상황에서 적합한 성능을 얻을 수 있기 때문입니다. .NET은 풍부한 그래픽 표현을 위한 WPF(Windows Presentation Foundation), 최신 Windows 런타임 API(아래의 UWP 참조)뿐만 아니라 Win32도 사용할 수 있습니다. 아래의 경우 일반적으로 데스크탑 응용 프로그램에 C++를 사용할 것을 권장합니다.
 
 - 메모리 사용량에 대한 정밀한 제어
 - 전력 소비 효율의 극대화
@@ -39,9 +39,9 @@ Windows 운영 체제의 많은 부분은 프로그래밍 언어에 관계없이
 
 ## <a name="windows-universal-apps"></a>Windows 유니버설 앱
 
-유니버설 Windows 플랫폼 (UWP)는 최신 Windows API입니다. UWP 앱에 모든 Windows 10 장치에서 실행, XAML을 사용 하 여 사용자 인터페이스에 대 한 및 터치를 완벽 하 게 사용 됩니다. UWP에 대 한 자세한 내용은 참조 하세요. [유니버설 Windows 플랫폼 (UWP) 앱 이란?](/windows/uwp/get-started/whats-a-uwp) 하 고 [Windows 유니버설 앱 가이드](/windows/uwp/get-started/universal-application-platform-guide)합니다.
+유니버설 Windows 플랫폼(UWP)은 최신 Windows API입니다. UWP 응용 프로그램은 Windows 10이 설치된 장치라면 모두 실행 가능하며 사용자 인터페이스에 XAML을 사용하고, 터치 동작을 완전하게 지원합니다. UWP에 대한 자세한 내용은 [유니버설 Windows 플랫폼(UWP) 앱이란?](/windows/uwp/get-started/whats-a-uwp)과 [Windows 유니버설 앱 가이드](/windows/uwp/get-started/universal-application-platform-guide)를 참조하세요.
 
-UWP에 대 한 원래 c + + 지원 구성의 (1) C + + /CX에서는 언어 구문 확장을 사용 하 여 c + + 또는 c + + 표준과 COM.를 기반으로 하는 (2) Windows 런타임 라이브러리 (WRL) C + + /CX 및 WRL은 계속 지원 합니다. 새 프로젝트에 대 한 것이 좋습니다 [C + + /cli WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt) 완전히 표준 c + +에 기반 하며 더 빠른 성능을 제공 합니다. 
+UWP에 대한 종전의 C++ 지원은 (1) C++언어의 구문 확장을 사용하는 C++/CX와  C++의 언어 또는 (2) 표준 C++ 및 COM을 기반으로 하는 Windows 런타임 라이브러리(WRL)로 구성됩니다. C++/CX와 WRL은 계속 사용할 수 있지만, 새 프로젝트의 경우 완전한 표준 C++에 기반하며 더 빠른 성능을 제공하는 [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/intro-to-using-cpp-with-winrt)를 권장합니다. 
 
 Windows 10용으로 Microsoft Store를 통해 배포하기 위해 기존 C++ 데스크톱 응용 프로그램을 패키지할 수 있습니다. 자세한 내용은 [데스크톱 응용 프로그램 (데스크톱 브리지) 패키지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
@@ -67,7 +67,7 @@ Windows *서비스* 는 사용자 상호 작용이 거의 또는 전혀 없이 �
 
 ## <a name="sdks-libraries-and-header-files"></a>SDK, 라이브러리 및 헤더 파일
 
-Visual Studio C 런타임 라이브러리 (CRT), c + + 표준 라이브러리 및 기타 Microsoft 전용 라이브러리를 포함합니다. 이러한 라이브러리에 대 한 헤더 파일이 포함 된 포함 폴더는 \VC\ 폴더 아래에서 또는 Windows SDK 설치 폴더에서 CRT의 경우 Visual Studio 설치 디렉터리에서.
+Visual Studio에는 C 런타임 라이브러리(CRT), C++ 표준 라이브러리 및 기타 Microsoft 전용 라이브러리가 포함되어 있습니다. 이러한 라이브러리의 헤더 파일이 포함된 폴더는 \VC\ 폴더 하에 있는 Visual Studio 설치 디렉터리, CRT의 경우 Windows SDK 설치 폴더에 있습니다.
 
 [Vcpkg 패키지 관리자](../vcpkg.md)를 사용하면 수백 개의 Windows용 타사 오픈 소스 라이브러리를 편리하게 설치할 수 있습니다.
 
@@ -83,7 +83,7 @@ Microsoft 라이브러리에는 다음이 포함됩니다.
 
 많은 Windows 프로그래밍 시나리오에는 Windows 운영 체제 구성 요소에 액세스할 수 있는 헤더 파일을 포함하는 Windows SDK도 필요합니다. 기본적으로 Visual Studio는 유니버설 Windows 앱을 개발할 수 있도록 하는 C++ 데스크톱 워크로드의 구성 요소로 Windows SDK를 설치합니다. UWP 앱을 개발하려면 Windows 10 버전의 Windows SDK가 필요합니다. 자세한 내용은 [Windows 10 SDK](https://dev.windows.com/downloads/windows-10-sdk)를 참조하세요. (이전 버전 Windows의 Windows SDK에 대한 자세한 내용은 [Windows SDK 아카이브](https://developer.microsoft.com/windows/downloads/sdk-archive)를 참조하세요.)
 
-**프로그램 파일 (x86) \Windows 키트** 설치 된 Windows SDK의 모든 버전에 대 한 기본 위치입니다.
+**Program Files (x86)\Windows Kits**는 모든 Windows SDK 버전에 대한 기본 위치입니다.
 
 Xbox, Azure 등 다른 플랫폼은 설치가 필요한 고유의 SDK가 있습니다. 자세한 내용은 DirectX 개발자 센터 및 Azure 개발자 센터를 참조하세요.
 
