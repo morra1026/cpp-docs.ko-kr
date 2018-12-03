@@ -1,4 +1,4 @@
----
+﻿---
 title: C++를 이용한 Windows 프로그래밍 개요
 ms.date: 11/15/2018
 ms.assetid: efc691d7-21f3-47ae-ae56-cab999ccf59d
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/15/2018
 ms.locfileid: "51693864"
 ---
-# <a name="overview-of-windows-programming-in-c"></a>C++의 Windows 프로그래밍 개요
+# <a name="overview-of-windows-programming-in-c"></a>C++를 이용한 Windows 프로그래밍 개요
 
 C++를 사용하면 다양한 종류의 Windows 응용 프로그램을 만들 수 있습니다. 프로그램은 각각 고유한 프로그래밍 모델과 Windows 관련 라이브러리 집합으로 구성되지만, C++ 표준 라이브러리나 타사 C++라이브러리도 물론 사용할 수 있습니다.
 

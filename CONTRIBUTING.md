@@ -1,4 +1,4 @@
-# <a name="contributing"></a>참여
+﻿# <a name="contributing"></a>참여
 
 Visual C++ 설명서 기여에 관심을 가져주셔서 감사합니다!
 
