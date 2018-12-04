@@ -1,4 +1,4 @@
-# <a name="visual-studio-2017-documentation-for-visual-c"></a>Visual C++에 대한 Visual Studio 2017 설명서
+﻿# <a name="visual-studio-2017-documentation-for-visual-c"></a>Visual C++에 대한 Visual Studio 2017 설명서
 
 환영합니다. 이 리포지토리에는 개발 중인 Visual C++ 기술 설명서의 원본 파일이 포함됩니다. 항목은 [Visual C++ 설명서 사이트](https://docs.microsoft.com/cpp)에 게시됩니다.
 
@@ -10,7 +10,7 @@ Visual Basic 및 Visual C#에 대한 설명서는 [http://github.com/dotnet/core
 
 Visual C++ 문서 개선에 도움이 되는 모든 기여를 환영합니다. docs.microsoft.com에 참여하는 포괄적인 가이드는 [Microsoft Docs 기여자 가이드 개요](https://docs.microsoft.com/contribute)를 참조하세요. Visual C++ 설명서에 기여하는 방법에 대한 세부 정보는 [기여](CONTRIBUTING.md) 가이드를 참조하세요.
 
-Visual C++의 여러 가지 기능 영역은 이 리포지토리에서 고유한 폴더를 사용합니다. 예를 들어 C++ 표준 라이브러리에 대한 항목의 경우 `standard-library`, Visual Studio IDE(대화형 개발 환경)에 대한 C++ 특정 항목의 경우 `ide`를 사용합니다. 각 폴더의 `/media` 하위 폴더에는 해당 항목에 대한 아트 파일이 포함되어 있습니다. [기여](CONTRIBUTING.md) 가이드에는 자세한 내용이 포함됩니다.
+Visual Studio의 여러 가지 기능 영역은 이 리포지토리에서 고유한 폴더를 사용합니다. 예를 들어 C++ 표준 라이브러리에 대한 항목의 경우 **standard-library**, Visual Studio IDE(대화형 개발 환경)에 대한 항목의 경우 **ide**를 사용하는 형식입니다. 각 폴더의 **/media** 하위 폴더에는 해당 항목에 대한 아트 파일이 포함되어 있습니다. 자세한 내용은 [기여 가이드](CONTRIBUTING.md)를 참조하세요.
 
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft 오픈 소스 사용 규정
 
