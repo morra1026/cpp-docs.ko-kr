@@ -13,17 +13,17 @@ ms.locfileid: "51694571"
 
 C++를 이용한 *데스크톱 응용 프로그램*에서는 전체 Windows API를 모두 사용할 수 있으며 Windows나 시스템 콘솔 창에서 실행할 수 있는 네이티브 응용 프로그램입니다. 데스크톱 응용 프로그램은 Windows XP부터 Windows 10에 이르기까지 실행될 수 있습니다. (Windows XP는 더 이상 공식적으로 지원되지 않으며 이후 도입된 많은 Windows API가 존재합니다.)
 
-데스크톱 응용 프로그램은 Windows 10에서 실행하는 PC, XBox, Windows Phone, Surface Hub 및 기타 장치에서 실행할 수 있는 한 유니버설 Windows 플랫폼(UWP) 앱과 다릅니다. 데스크톱과 UWP 애플리케이션에 대한 차이점은 [기술 선택](/windows/desktop/choose-your-technology).
+데스크톱 응용 프로그램은 Windows 10에서 실행되는 PC, XBox, Windows Phone, Surface Hub 및 기타 장치에서 실행할 수 있는 유니버설 Windows 플랫폼(UWP) 앱과는 다릅니다. 데스크톱과 UWP 애플리케이션에 대한 차이점은 [기술 선택](/windows/desktop/choose-your-technology)을 참조하세요.
 
 ### <a name="desktop-bridge"></a>데스크톱 브리지
 
 Windows 10에서 기존 데스크톱 응용 프로그램 또는 COM 개체를 UWP 응용 프로그램으로 패키징하고 터치와 같은 UWP 기능을 추가하거나 최신 Windows API를 호출할 수 있습니다. 또한 Visual Studio의 데스크톱 솔루션에 UWP 응용 프로그램을 추가하고 단일 패키지로 함께 패키지화하고 Windows API를 사용하여 UWP 응용 프로그램간 통신이 가능합니다.
 
-Visual Studio 2017 버전 15.4 이상에서 크게 기존 데스크톱 응용 프로그램을 패키징하는 작업을 단순화 하는 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 어떤 레지스트리 호출에 대해 몇 가지 제한 사항이 적용 됩니다. 또는 데스크톱 응용 프로그램 Api 사용 하지만 대부분의 앱 패키지에 실행 하는 동안 유사한 기능을 달성 하기 위해 대체 코드 경로 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows-uwp/porting/desktop-to-uwp-root)를 참조하세요.
+Visual Studio 2017 버전 15.4 이상에서는 기존 데스크톱 응용 프로그램을 패키징하는 작업을 단순화하는 Windows 응용 프로그램 패키지 프로젝트를 만들 수 있습니다. 데스크톱 응용 프로그램에서 사용하는 레지스트리 호출이나 API와 관련하여 몇 가지 제한이 적용되지만 대부분의 경우 앱 패키지에서 실행되는 동안 유사한 기능을 얻기 위해 대체할 수 있는 코드 경로를 만들 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows-uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
 ### <a name="terminology"></a>용어
 
-- *Win32* 응용 프로그램은 네이티브 [Windows C API 및/또는 COM API](/windows/desktop/apiindex/windows-api-list)와 CRT, 표준 라이브러리 API 및 타사 라이브러리를 사용해 C++를 이용한 데스크톱 응용 프로그램입니다. Win32 응용 프로그램은 개발자가 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 처리해준 Windows로 실행될 수 있습니다.  Win32 응용 프로그램이라는 공통된 이름을 사용하지만 32비트(x86) 또는 64비트(x64) 이진 파일로 컴파일할 수 있습니다. Visual Studio IDE에서 x86 용어 및 Win32는 동의어입니다.
+- *Win32* 응용 프로그램은 네이티브 [Windows C API 및/또는 COM API](/windows/desktop/apiindex/windows-api-list)와 CRT, 표준 라이브러리 API 및 타사 라이브러리를 사용해 C++를 이용한 데스크톱 응용 프로그램입니다. Win32 응용 프로그램은 개발자가 Windows 프로시저 함수 내에서 Windows 메시지를 명시적으로 처리해준 Windows로 실행될 수 있습니다.  Win32 응용 프로그램이라는 공통된 이름을 사용하지만 32비트(x86) 또는 64비트(x64) 이진 파일로 컴파일할 수 있습니다. Visual Studio IDE에서 x86과 Win32 용어는 동의어입니다.
 
 - [구성 요소 개체 모델(COM)](/windows/desktop/com/the-component-object-model)은 다른 언어로 작성된 프로그램 간에 서로 통신할 수 있게 해줍니다. 많은 Windows 구성요소가 COM 개체로 구현되어 있으며 표준 COM 규칙에 따라 개체 생성, 검색 및 삭제됩니다.  C++ 데스크톱 응용 프로그램에서 COM 개체를 사용하는 것은 비교적 간단하지만 고유한 COM 개체를 작성하는 것은 더 높은 수준의 지식이 필요 합니다. [라이브러리 ATL(액티브 템플릿)](../atl/atl-com-desktop-components.md)은 매크로 및 COM 개발을 간소화하는 도우미 함수를 제공합니다.
 
