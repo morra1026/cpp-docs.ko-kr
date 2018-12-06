@@ -22,12 +22,12 @@ helpviewer_keywords:
 - aligned_recalloc_dbg function
 - _aligned_recalloc_dbg function
 ms.assetid: 55c3c27e-561c-4d6b-9bf9-1e34cc556e4b
-ms.openlocfilehash: 85af821aaa873b6e71341823d47085996f697235
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0f0cacc5efa5e63cbe05b481f922b35742e3924
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664700"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977786"
 ---
 # <a name="alignedrecallocdbg"></a>_aligned_recalloc_dbg
 
@@ -74,7 +74,7 @@ void * _aligned_recalloc_dbg(
 
 ## <a name="remarks"></a>설명
 
-**_aligned_recalloc_dbg** 의 디버그 버전이 합니다 [_aligned_recalloc](aligned-recalloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_recalloc_dbg** 대 한 호출으로 줄어듭니다 **_aligned_recalloc**합니다. 둘 다 **_aligned_recalloc** 하 고 **_aligned_recalloc_dbg** 기본 힙에서 메모리 블록 다시 할당 하지만 **_aligned_recalloc_dbg** 몇 가지 디버깅 수용 기능: 누수 테스트, 블록 형식 매개 변수로 특정 할당 형식 추적 블록의 사용자 부분 양쪽에서 버퍼와 *filename*/*linenumber* 할당 요청의 원점을 확인 하는 정보입니다.
+**_aligned_recalloc_dbg** 의 디버그 버전이 합니다 [_aligned_recalloc](aligned-recalloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_recalloc_dbg** 대 한 호출으로 줄어듭니다 **_aligned_recalloc**합니다. 둘 다 **_aligned_recalloc** 하 고 **_aligned_recalloc_dbg** 기본 힙에서 메모리 블록 다시 할당 하지만 **_aligned_recalloc_dbg** 몇 가지 디버깅 수용 기능: 누수 테스트, 블록의 사용자 부분 양쪽에서 버퍼와 *filename*/*linenumber* 할당의 출처를 확인 하는 정보 요청 수입니다. 블록 형식 매개 변수를 사용 하 여 특정 할당 형식 추적는 정렬 된 할당에 대 한 지원 되는 디버그 기능이 아닙니다. 정렬 된 할당 _NORMAL_BLOCK 블록 형식으로 표시 됩니다.
 
 **_aligned_recalloc_dbg** 요청된 된 크기 보다 약간 더 많은 공간을 사용 하 여 지정 된 메모리 블록 다시 할당 (*번호* * *크기*) 더 크거나 작을 수 있는 보다 원래 할당 된 메모리 블록의 크기입니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 다시 할당하면 원래 메모리 블록이 힙의 다른 위치로 이동하고 메모리 블록의 크기가 변할 수 있습니다. 블록의 사용자 부분은 값 0xCD로 채워지고 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
@@ -96,6 +96,6 @@ void * _aligned_recalloc_dbg(
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - aligned_offset_realloc_dbg function
 - _aligned_offset_realloc_dbg function
 ms.assetid: 64e30a12-887e-453b-aea8-aed793fca9d8
-ms.openlocfilehash: e5ffb37227e1e20f32e065290056da05e7dcd065
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7684a752f489eb726b2105b1055b6da1e86e9cd1
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625864"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977825"
 ---
 # <a name="alignedoffsetreallocdbg"></a>_aligned_offset_realloc_dbg
 
@@ -72,7 +72,7 @@ void * _aligned_offset_realloc_dbg(
 
 ## <a name="remarks"></a>설명
 
-**_aligned_offset_realloc_dbg** 의 디버그 버전이 합니다 [_aligned_offset_realloc](aligned-offset-realloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_offset_realloc_dbg** 대 한 호출으로 줄어듭니다 **_aligned_offset_realloc**합니다. 둘 다 **_aligned_offset_realloc** 하 고 **_aligned_offset_realloc_dbg** 기본 힙에서 메모리 블록 다시 할당 하지만 **_aligned_offset_realloc_dbg** 수용 몇 가지 디버깅 기능: 누수 테스트, 블록 형식 매개 변수로 특정 할당 형식 추적 블록의 사용자 부분 양쪽에서 버퍼와 *filename*/*linenumber*  정보로 할당 요청의 원점을 확인 하 합니다.
+**_aligned_offset_realloc_dbg** 의 디버그 버전이 합니다 [_aligned_offset_realloc](aligned-offset-realloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_offset_realloc_dbg** 대 한 호출으로 줄어듭니다 **_aligned_offset_realloc**합니다. 둘 다 **_aligned_offset_realloc** 하 고 **_aligned_offset_realloc_dbg** 기본 힙에서 메모리 블록 다시 할당 하지만 **_aligned_offset_realloc_dbg** 수용 몇 가지 디버깅 기능: 누수 테스트, 블록의 사용자 부분 양쪽에서 버퍼와 *filename*/*linenumber* 의 출처를 확인 하는 정보 할당 요청 수입니다. 블록 형식 매개 변수를 사용 하 여 특정 할당 형식 추적는 정렬 된 할당에 대 한 지원 되는 디버그 기능이 아닙니다. 정렬 된 할당 _NORMAL_BLOCK 블록 형식으로 표시 됩니다.
 
 와 같은 [_aligned_offset_malloc](aligned-offset-malloc.md)하십시오 **_aligned_offset_realloc_dbg** 는 구조가 구조 내 오프셋에서 정렬 될 수 있도록 합니다.
 
@@ -94,6 +94,6 @@ void * _aligned_offset_realloc_dbg(
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)<br/>
