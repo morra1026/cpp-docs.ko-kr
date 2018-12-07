@@ -17,22 +17,22 @@ ms.locfileid: "50558147"
 
 기반 주소 지정은 개체가 할당된(정적 및 동적 기반 데이터) 세그먼트를 정밀하게 제어해야 할 때 유용합니다.
 
-기반 주소 지정의 32 비트 및 64 비트 컴파일 허용 되는 "포인터 기반" 유일한 형식에 따라 또는 32 비트 또는 64 비트 자료에는 32 비트 또는 64 비트 치환을 포함 하는 형식 정의 하는 **void**합니다.
-
+기반 주소 지정의 32 비트 및 64 비트 컴파일 허용 되는 "포인터 기반" 유일한 형식에 따라 또는 32 비트 또는 64 비트 자료에는 32 비트 또는 64 비트 치환을 포함 하는 형식 정의 하는 **void**합니다.   
+  
 ## <a name="grammar"></a>문법
 
-*범위 기반-한정자*: **__based (***자료 식***)** 
+*based-range-modifier*: **__based (***base-expression***)** 
 
-*기본 식*: *based-variablebased-abstract-declaratorsegment-namesegment-cast*
+*base-expression*: *based-variablebased-abstract-declaratorsegment-namesegment-cast*
 
-*기반 변수*: *식별자*
+*based-variable*: *identifier*
 
-*기반-추상 선언 자*: *추상 선언 자*
+*based-abstract-declarator*: *abstract-declarator*
 
-*기본 형식*: *형식-이름*
+*base-type*: *type-name*
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고
 
 [기반 포인터](../cpp/based-pointers-cpp.md)
