@@ -22,12 +22,12 @@ helpviewer_keywords:
 - aligned_malloc_dbg function
 - _aligned_malloc_dbg function
 ms.assetid: fb0429c3-685d-4826-9075-2515c5bdc5c6
-ms.openlocfilehash: 4fc6789e5fecda38678052c7e805728a49219bc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb58313c892ffe13e9f8e34e98b7940022899d14
+ms.sourcegitcommit: beeb77b2976e997debc55b1af35024cc62e62799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631873"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977812"
 ---
 # <a name="alignedmallocdbg"></a>_aligned_malloc_dbg
 
@@ -64,7 +64,7 @@ void * _aligned_malloc_dbg(
 
 ## <a name="remarks"></a>설명
 
-**_aligned_malloc_dbg** 의 디버그 버전이 합니다 [_aligned_malloc](aligned-malloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_malloc_dbg** 대 한 호출으로 줄어듭니다 `_aligned_malloc`합니다. 둘 다 `_aligned_malloc` 하 고 **_aligned_malloc_dbg** 기본 힙에서 메모리 블록을 할당 하지만 **_aligned_malloc_dbg** 여러 디버깅 기능을 제공:의 사용자 부분 양쪽에서 버퍼를 누수 테스트, 블록 및 *filename*/*linenumber* 정보로 할당 요청의 원점을 확인 하 합니다.
+**_aligned_malloc_dbg** 의 디버그 버전이 합니다 [_aligned_malloc](aligned-malloc.md) 함수입니다. 때 [_DEBUG](../../c-runtime-library/debug.md) 를 정의 하지 않은를 호출할 때마다 **_aligned_malloc_dbg** 대 한 호출으로 줄어듭니다 `_aligned_malloc`합니다. 둘 다 `_aligned_malloc` 하 고 **_aligned_malloc_dbg** 기본 힙에서 메모리 블록을 할당 하지만 **_aligned_malloc_dbg** 여러 디버깅 기능을 제공:의 사용자 부분 양쪽에서 버퍼를 누수 테스트, 블록 및 *filename*/*linenumber* 정보로 할당 요청의 원점을 확인 하 합니다. 블록 형식 매개 변수를 사용 하 여 특정 할당 형식 추적는 정렬 된 할당에 대 한 지원 되는 디버그 기능이 아닙니다. 정렬 된 할당 _NORMAL_BLOCK 블록 형식으로 표시 됩니다.
 
 **_aligned_malloc_dbg** 는 요청 된 것 보다 약간 더 많은 공간을 사용 하 여 메모리 블록 할당 *크기*합니다. 디버그 힙 관리자는 추가 공간을 사용하여 디버그 메모리 블록을 연결하고 응용 프로그램에 디버그 헤더 정보를 제공하고 버퍼를 덮어씁니다. 블록이 할당되면 블록의 사용자 부분은 값 0xCD로 채워지고 각 덮어쓰기 버퍼는 0xFD로 채워집니다.
 
@@ -84,6 +84,6 @@ void * _aligned_malloc_dbg(
 
 [C 런타임 라이브러리](../../c-runtime-library/crt-library-features.md)의 디버그 버전만 해당됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참조
 
 [디버그 루틴](../../c-runtime-library/debug-routines.md)
