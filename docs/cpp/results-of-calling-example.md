@@ -21,27 +21,27 @@ ms.locfileid: "52175416"
 
 ## <a name="cdecl"></a>__cdecl
 
-C 데코레이팅된 함수 이름은 `_MyFunc`합니다.
+C 데코레이팅된 함수 이름은 `_MyFunc`입니다.
 
-![Cdecl 호출 규칙이](../cpp/media/vc37i01.gif "CDECL 호출 규칙") <br/>
-합니다 **__cdecl** 호출 규칙
+![Cdecl 호출 규칙](../cpp/media/vc37i01.gif "CDECL 호출 규칙") <br/>
+**__cdecl** 호출 규칙
 
 ## <a name="stdcall-and-thiscall"></a>__stdcall 및 thiscall
 
-C 데코레이팅된 이름 (**__stdcall**)은 `_MyFunc@20`합니다. C 데코레이팅된 이름은 구현 별입니다.
+C 데코레이팅된 이름(**__stdcall**)은 `_MyFunc@20`입니다. C 데코레이팅된 이름은 상표로 보호받고 있습니다.
 
 ![&#95;&#95;stdcall 및 thiscall 호출 규칙](../cpp/media/vc37i02.gif "&#95;&#95;stdcall 및 thiscall 호출 규칙") <br/>
 __stdcall 및 thiscall 호출 규칙
 
 ## <a name="fastcall"></a>__fastcall
 
-C 데코레이팅된 이름 (**__fastcall**)은 `@MyFunc@20`합니다. C 데코레이팅된 이름은 구현 별입니다.
+C 데코레이팅된 이름(**__fastcall**)은 `@MyFunc@20`입니다. C 데코레이팅된 이름은 상표로 보호받고 있습니다.
 
-![호출 규칙에 대 한 &#95; &#95;fastcall](../cpp/media/vc37i03.gif "호출 규칙에 대 한 &#95; &#95;fastcall") <br/>
+![&#95;&#95;fastcall 호출 규칙](../cpp/media/vc37i03.gif "&#95;&#95;fastcall 호출 규칙") <br/>
 __fastcall 호출 규칙
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [호출 예제: 함수 프로토타입 및 호출](../cpp/calling-example-function-prototype-and-call.md)
