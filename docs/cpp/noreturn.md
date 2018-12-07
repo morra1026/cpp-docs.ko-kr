@@ -27,7 +27,7 @@ ms.locfileid: "50611863"
 
 ## <a name="example"></a>예제
 
-다음 샘플에서는 **else** 절에 return 문이 없습니다.  `fatal`을 **__declspec(noreturn)** 로 선언하면 오류 또는 경고 메시지를 발생하지 않습니다.
+다음 샘플에서는 **else** 절에 return 문이 없습니다. `fatal`을 **__declspec(noreturn)** 로 선언하면 오류 또는 경고 메시지가 발생하지 않습니다.
 
 ```cpp
 // noreturn2.cpp
