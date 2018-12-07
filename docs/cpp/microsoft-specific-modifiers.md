@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft 전용 한정자
 ms.date: 08/16/2018
 ms.assetid: 22c7178c-f854-47fa-9de6-07d23fda58e1
@@ -13,7 +13,7 @@ ms.locfileid: "50646032"
 
 이 단원에서는 다음 영역에서의 Microsoft 전용 C++ 확장에 대해 설명합니다.
 
-- [기반 주소 지정](based-addressing.md), 다른 포인터를 오프셋할 수 있는 기반으로서의 포인터 사용 추천 사항
+- [기반 주소 지정](based-addressing.md), 다른 포인터를 오프셋할 수 있는 기반으로서의 포인터 사용 추천 사항 
 
 - [함수 호출 규칙](calling-conventions.md)
 
@@ -23,8 +23,8 @@ ms.locfileid: "50646032"
 
 ## <a name="microsoft-specific-keywords"></a>Microsoft 전용 키워드
 
-Microsoft 전용 키워드 중 대다수는 파생 형식을 형성하는 선언자를 수정하는 데 사용될 수 있습니다. 선언 자에 대 한 자세한 내용은 참조 하세요. [선언 자](overview-of-declarators.md)합니다.
-
+Microsoft 전용 키워드 중 대다수는 선언자를 변경하여 파생 형식을 만들 때 사용할 수 있습니다. 선언자에 대한 자세한 내용은 [선언자](overview-of-declarators.md)를 참조하세요. 
+  
 |키워드|의미|파생 형식을 만드는 데 사용됩니까?|
 |-------------|-------------|---------------------------------|
 |[__based](based-grammar.md)|뒤에 오는 이름은 선언에 포함된 32비트 기준으로의 32비트 옵셋을 선언합니다.|예|

@@ -1,4 +1,4 @@
-# <a name="metadata-and-markdown-template"></a>메타데이터 및 Markdown 템플릿
+﻿# <a name="metadata-and-markdown-template"></a>메타데이터 및 Markdown 템플릿
 
 이 핵심 문서 템플릿에는 Markdown 구문의 예제와 메타데이터 설정 지침이 포함되어 있습니다. 이 템플릿을 최대한 활용하려면 [원시 Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) 및 [렌더링된 보기](https://github.com/dotnet/docs/blob/master/styleguide/template.md)를 모두 확인해야 합니다. 예를 들어 원시 Markdown에는 메타데이터 블록이 표시되는 반면 렌더링된 보기에는 표시되지 않습니다.
 
