@@ -1,4 +1,4 @@
----
+﻿---
 title: Microsoft 확장
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,15 +14,15 @@ ms.locfileid: "50592207"
 # <a name="microsoft-extensions"></a>Microsoft 확장
 
 *asm-statement*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__asm** assembly-instruction; <sub>opt  </sub><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**__asm** { assembly-instruction-list }; <sub>opt    </sub>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm**  *assembly-instruction* **;**<sub>opt</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__asm {**  *assembly-instruction-list*  **} ;**<sub>opt</sub>
 
 *assembly-instruction-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;** <sub>opt</sub> <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;** *assembly-instruction-list* **;** <sub>opt</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;**<sub>opt</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*assembly-instruction* **;** *assembly-instruction-list* **;**<sub>opt</sub>
 
 *ms-modifier-list*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*ms-modifier ms-modifier-list*<sub>opt</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;*ms-modifier* *ms-modifier-list*<sub>opt</sub>
 
 *ms-modifier*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__cdecl**<br/>
