@@ -41,6 +41,6 @@ MyFunc ('x', 12, 8192, 2.7183);
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참조
+## <a name="see-also"></a>참고 항목
 
 [호출 규칙](../cpp/calling-conventions.md)
