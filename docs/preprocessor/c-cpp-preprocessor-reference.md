@@ -27,7 +27,7 @@ ms.locfileid: "50607664"
 ANSI 및 Microsoft C++에서 지정되어 있는 미리 정의된 매크로에 대해 설명합니다.
 
 [pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)<br/>
-각 컴파일러가 C 및 C++ 언어와 전반적인 호환성을 유지하면서 시스템 및 운영체제별 기능을 제공하는데 사용되는 pragma에 대해 설명합니다.
+각 컴파일러가 C 및 C++ 언어와 전반적인 호환성을 유지하면서 시스템 및 운영체제별 기능을 제공하는 데 사용되는 pragma에 대해 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원
 
