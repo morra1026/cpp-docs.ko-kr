@@ -27,7 +27,7 @@ ms.locfileid: "50454550"
 
 일반적으로 전체 함수의 동작을 변경하려면 키워드보다는 `__declspec ( restrict )`를 사용하는 것이 효율적입니다.
 
-이전 버전과 호환성을 위해 **_restrict**에 대한 동의어가 **__restrict** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안함)](../build/reference/za-ze-disable-language-extensions.md)을 지정합니다.
+이전 버전과 호환성을 위해 **_restrict**에 대한 동의어가 **__restrict** 하지 않으면 컴파일러 옵션 [/Za \(언어 확장 사용 안 함)](../build/reference/za-ze-disable-language-extensions.md)을 지정합니다.
 
 Visual Studio 2015 이상에서는 **__restrict** C++ 참조에 사용할 수 있습니다.
 
