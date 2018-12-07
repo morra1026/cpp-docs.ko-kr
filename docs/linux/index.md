@@ -26,7 +26,7 @@ Visual Studio 2017을 사용하여 Linux에서 실행되는 응용 프로그램�
                     </div>
                     <div class="cardText">
                         <h3>Linux 개발을 위한 설치 및 설정</h3>
-                        <p>Visual Studio 2017(이후 버전 포함)에서 C++을 이용한 Linux 응용 프로그램을 빌드 방법을 알아봅니다.</p>
+                        <p>Visual Studio 2017(이후 버전 포함)에서 C++를 이용한 Linux 응용 프로그램 빌드 방법을 알아봅니다.</p>
                     </div>
                 </div>
             </div>
