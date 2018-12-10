@@ -25,7 +25,7 @@ ms.locfileid: "50642821"
 ## <a name="syntax"></a>구문
 
 ```
-#pragma deprecated( 식별자1 [,식별자2, ...] )
+#pragma deprecated( identifier1 [,identifier2, ...] )
 ```
 
 ## <a name="remarks"></a>설명
