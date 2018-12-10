@@ -28,6 +28,7 @@ ms.locfileid: "50571810"
 
 ```Output
 serial time: 312 ms
+
 parallel time: 78 ms
 ```
 
