@@ -1,5 +1,5 @@
 ---
-title: 사용되지 않음 (C/C++)
+title: deprecated (C/C++)
 ms.date: 11/04/2016
 f1_keywords:
 - vc-pragma.deprecated
@@ -17,10 +17,10 @@ ms.locfileid: "50642821"
 ---
 # <a name="deprecated-cc"></a>사용되지 않음 (C/C++)
 
-합니다 **사용 되지 않는** 는 함수, 형식 또는 다른 식별자 더 이상 지원 되지 않을 이후에서를 나타낼 수 pragma 없습니다 릴리스 또는 더 이상 사용 해야 합니다.
+합니다 **deprecated** 는 함수, 형식 또는 다른 식별자 더 이상 지원 되지 않을 이후에서를 나타낼 수 pragma 없습니다 릴리스 또는 더 이상 사용 해야 합니다.
 
 > [!NOTE]
-> C + + 14에 대 한 자세한 `[[deprecated]]` 특성에 대 한 지침을 사용 하는 경우 Microsoft declspec 또는 pragma vs 특성을 참조 하십시오 [c + + 표준 특성](../cpp/attributes.md) 특성입니다.
+> C++14에 대 한 자세한 `[[deprecated]]` 특성에 대 한 지침을 사용 하는 경우 Microsoft declspec 또는 pragma vs 특성을 참조 하십시오 [C++ 표준 특성](../cpp/attributes.md) 특성입니다.
 
 ## <a name="syntax"></a>구문
 
