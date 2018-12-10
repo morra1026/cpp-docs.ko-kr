@@ -14,7 +14,7 @@ ms.locfileid: "50571810"
 ---
 # <a name="how-to-use-combinable-to-combine-sets"></a>방법: combinable을 사용하여 집합 결합
 
-이 항목에서는 [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) 클래스를 사용하여 소수 집합을 계산 하는 방법을 보여 줍니다.
+이 항목에서는 [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) 클래스를 사용하여 소수 집합을 계산하는 방법을 보여 줍니다.
 
 ## <a name="example"></a>예제
 
