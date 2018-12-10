@@ -1,6 +1,6 @@
 # [Visual Studio 2017의 Visual C++](visual-cpp-in-visual-studio.md)
 # [Visual Studio 2017의 Visual C++에 대한 새로운 기능](what-s-new-for-visual-cpp-in-visual-studio.md)
-# [Visual C++ 자습서](build/vscpp-step-0-installation.md)
+# Visual C++ 자습서
 ## [Visual Studio에서 C++ 지원 설치](build/vscpp-step-0-installation.md)
 ## [C++ 콘솔 앱 프로젝트 만들기](build/vscpp-step-1-create.md)
 ## [C++ 콘솔 앱 프로젝트 빌드 및 실행](build/vscpp-step-2-build.md)
