@@ -6,12 +6,12 @@ ms.technology:
 ms.assetid: 6bc23c18-fcd9-47bc-bff2-17537700be4a
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 3b01c58349aa1dff1c782b051156250fd495df91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5aee74c9fee1480d2bb61c36abba97edc5c5d4cf
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460010"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178098"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ 도움말 및 커뮤니티
 
@@ -45,4 +45,4 @@ Microsoft 개발자 콘텐츠를 온라인으로 볼 수 있습니다. 이 콘�
 |[Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)|다양한 주제에 대한 Visual C++ 제품 팀 전문가의 게시물을 포함합니다.|
 |[Channel 9](https://channel9.msdn.com/)|동영상 인터뷰 및 강의를 포함합니다. Channel 9 홈페이지에서 검색 상자를 사용하여 C++ 콘텐츠 찾을 수 있습니다.|
 |[Visual Studio](https://visualstudio.microsoft.com/)|Visual Studio 및 관련 개발 도구에 대한 기사 및 뉴스를 포함합니다.|
-|[MSDN 포럼](https://social.msdn.microsoft.com/Forums/en-US/home?category=visualc) 및 [개발자 커뮤니티](https://developercommunity.visualstudio.com)|C++에 대한 질문을 게시하고 Microsoft 및 커뮤니티 전문가로부터 답변을 얻을 수 있는 공식 Microsoft 포럼입니다.|
+|[MSDN 포럼](https://social.msdn.microsoft.com/Forums/home?category=visualc) 및 [개발자 커뮤니티](https://developercommunity.visualstudio.com)|C++에 대한 질문을 게시하고 Microsoft 및 커뮤니티 전문가로부터 답변을 얻을 수 있는 공식 Microsoft 포럼입니다.|
