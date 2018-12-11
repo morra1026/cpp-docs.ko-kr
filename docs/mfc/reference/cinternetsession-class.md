@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: 3b820ea3687fd52947eff48e4814ab4173fd95c7
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 216f3bf0ce62eb6e69ad0650289c4c2d91f95159
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519295"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178163"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession 클래스
 
@@ -98,10 +98,10 @@ class CInternetSession : public CObject
 
 `CInternetSession` 멤버 함수 [SetCookie](#setcookie)를 [GetCookie](#getcookie), 및 [GetCookieLength](#getcookielength) 는 서버 및 스크립트 유지 Win32 쿠키 데이터베이스를 관리 하는 방법을 제공 합니다. 클라이언트 워크스테이션에 대 한 상태 정보입니다.
 
-기본 인터넷 프로그래밍 작업에 대 한 자세한 내용은 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다. MFC WinInet 클래스를 사용 하는 방법에 대 한 일반 정보에 대 한 문서를 참조 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
+기본 인터넷 프로그래밍 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다. MFC WinInet 클래스를 사용 하는 방법에 대 한 일반 정보에 대 한 문서를 참조 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
 > [!NOTE]
-> `CInternetSession` throw를 [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) 지원 되지 않는 서비스 형식에 대 한 합니다. 다음 서비스 유형에 현재 지원 됩니다: FTP, HTTP, gopher를 및 파일입니다.
+> `CInternetSession` throw를 [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) 지원 되지 않는 서비스 형식에 대 한 합니다. 다음 서비스 유형에 현재 지원 됩니다. FTP, HTTP, gopher를 및 파일입니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -223,7 +223,7 @@ DWORD_PTR GetContext() const;
 
 [OnStatusCallback](#onstatuscallback) 에서 반환 된 컨텍스트 ID를 사용 하 여 `GetContext` 특정 응용 프로그램의 상태를 보고 합니다. 예를 들어, 사용자 상태 정보 반환을 포함 하는 인터넷 요청을 활성화할 때 상태 콜백이 특정 요청에 상태 보고에 컨텍스트 ID를 사용 합니다. 사용자가 두 개의 별도 활성화 하는 경우 인터넷 요청 상태 정보를 반환 합니다. 둘 다 포함 `OnStatusCallback` 컨텍스트 식별자를 사용 하 여 해당 요청에 대 한 상태를 반환 합니다. 따라서 모든 상태 콜백 작업에 대 한 컨텍스트 식별자가 사용 되며 세션이 종료 될 때까지 세션에 연결 됩니다.
 
-비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
+비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
@@ -457,7 +457,7 @@ virtual void OnStatusCallback(
 |-----------|-------------|
 |INTERNET_STATUS_RESOLVING_NAME|에 포함 된 이름의 IP 주소를 찾는 *lpvStatusInformation*합니다.|
 |INTERNET_STATUS_NAME_RESOLVED|IP 주소에 포함 된 이름 찾았습니다 *lpvStatusInformation*합니다.|
-|INTERNET_STATUS_CONNECTING_TO_SERVER|소켓 주소에 연결 ([SOCKADDR](../../mfc/reference/sockaddr-structure.md))로 가리키는 *lpvStatusInformation*합니다.|
+|INTERNET_STATUS_CONNECTING_TO_SERVER|소켓 주소에 연결 ([SOCKADDR](/windows/desktop/winsock/sockaddr-2))로 가리키는 *lpvStatusInformation*합니다.|
 |INTERNET_STATUS_CONNECTED_TO_SERVER|가 가리키는 소켓 주소 (SOCKADDR)에 연결 했습니다 *lpvStatusInformation*합니다.|
 |INTERNET_STATUS_SENDING_REQUEST|서버에 정보 요청을 보냅니다. 합니다 *lpvStatusInformation* 매개 변수는 NULL입니다.|
 |INTERNET_STATUS_ REQUEST_SENT|서버에 정보 요청을 보냈습니다. 합니다 *lpvStatusInformation* 매개 변수는 NULL입니다.|
@@ -475,7 +475,7 @@ virtual void OnStatusCallback(
 
 [!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
 
-비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
+비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
 
 ## <a name="openurl"></a>  CInternetSession::OpenURL
 

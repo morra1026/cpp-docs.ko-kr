@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: f1d418cadd2739b840efd14874fd4bbd6afeb4c5
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 0a27b78d873b0a561b84b13cc16c67aef9ff2e8b
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177110"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179086"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -1554,7 +1554,7 @@ CDC* BeginPaint(LPPAINTSTRUCT lpPaint);
 ### <a name="parameters"></a>매개 변수
 
 *lpPaint*<br/>
-가리키는 합니다 [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) 구조 그리기 정보를 수신 하는 것입니다.
+가리키는 합니다 [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) 구조 그리기 정보를 수신 하는 것입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1854,10 +1854,10 @@ void ClientToScreen(LPPOINT lpPoint) const;  void ClientToScreen(LPRECT lpRect) 
 ### <a name="parameters"></a>매개 변수
 
 *lpPoint*<br/>
-가리키는 [POINT 구조](../../mfc/reference/point-structure1.md) 또는 `CPoint` 클라이언트를 포함 하는 개체를 변환할 수 조정 합니다.
+가리키는 [POINT 구조](/windows/desktop/api/windef/ns-windef-tagpoint) 또는 `CPoint` 클라이언트를 포함 하는 개체를 변환할 수 조정 합니다.
 
 *lpRect*<br/>
-가리키는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 또는 `CRect` 클라이언트를 포함 하는 개체를 변환할 수 조정 합니다.
+가리키는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 또는 `CRect` 클라이언트를 포함 하는 개체를 변환할 수 조정 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2061,13 +2061,13 @@ BOOL CreateControl(
 Windows 스타일입니다. 사용 가능한 스타일 설명 아래 나열 됩니다.
 
 *rect*<br/>
-컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md)합니다.
+컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect)합니다.
 
 *ppt*<br/>
-가리키는 [POINT 구조](../../mfc/reference/point-structure1.md) 또는 `CPoint` 컨트롤의 왼쪽된 위 모퉁이 있는 개체입니다.
+가리키는 [POINT 구조](/windows/desktop/api/windef/ns-windef-tagpoint) 또는 `CPoint` 컨트롤의 왼쪽된 위 모퉁이 있는 개체입니다.
 
 *pSize*<br/>
-가리키는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 `CSize` 컨트롤의 크기를 포함 하는 개체
+가리키는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 또는 `CSize` 컨트롤의 크기를 포함 하는 개체
 
 *pParentWnd*<br/>
 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.
@@ -2977,7 +2977,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint);
 ### <a name="parameters"></a>매개 변수
 
 *lpPaint*<br/>
-가리키는 [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) 검색 되는 그리기 정보를 포함 하는 구조를 [BeginPaint](#beginpaint) 멤버 함수입니다.
+가리키는 [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) 검색 되는 그리기 정보를 포함 하는 구조를 [BeginPaint](#beginpaint) 멤버 함수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3710,7 +3710,7 @@ void GetClientRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 또는 `CRect` 클라이언트 좌표를 받을 개체입니다. 합니다 `left` 고 `top` 멤버가 0이 됩니다. 합니다 `right` 및 `bottom` 멤버 창의 높이 너비에 포함 됩니다.
+가리키는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 또는 `CRect` 클라이언트 좌표를 받을 개체입니다. 합니다 `left` 고 `top` 멤버가 0이 됩니다. 합니다 `right` 및 `bottom` 멤버 창의 높이 너비에 포함 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -3784,7 +3784,7 @@ static const MSG* PASCAL GetCurrentMessage();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 반환 합니다 [메시지](../../mfc/reference/msg-structure1.md) 창 메시지를 포함 하는 구조는 현재 처리 하는 합니다. 만 호출 해야 경우는 **온**<em>메시지</em> 처리기입니다.
+에 대 한 포인터를 반환 합니다 [메시지](/windows/desktop/api/winuser/ns-winuser-tagmsg) 창 메시지를 포함 하는 구조는 현재 처리 하는 합니다. 만 호출 해야 경우는 **온**<em>메시지</em> 처리기입니다.
 
 ### <a name="example"></a>예제
 
@@ -4158,7 +4158,7 @@ TRUE 이면 경우 32 픽셀 아이콘으로 32 픽셀을 지정 합니다. FALS
 
 ### <a name="return-value"></a>반환 값
 
-아이콘에 대 한 핸들입니다. 실패 하면 NULL을 반환 합니다.
+아이콘에 대한 핸들입니다. 실패 하면 NULL을 반환 합니다.
 
 ##  <a name="getlastactivepopup"></a>  CWnd::GetLastActivePopup
 
@@ -4491,7 +4491,7 @@ void GetProperty(
 > [!NOTE]
 > 이 함수 에서만 호출 해야는 `CWnd` ActiveX 컨트롤을 나타내는 개체입니다.
 
-ActiveX 컨트롤 컨테이너를 사용 하 여이 멤버 함수를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../../mfc/programming-activex-controls-in-a-activex-control-container.md)합니다.
+ActiveX 컨트롤 컨테이너를 사용 하 여이 멤버 함수를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../../mfc/programming-activex-controls-in-a-activex-control-container.md)합니다.
 
 ##  <a name="getrendertarget"></a>  CWnd::GetRenderTarget
 
@@ -4864,7 +4864,7 @@ BOOL GetUpdateRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 `CRect` 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 업데이트 영역을 둘러싸는 업데이트의 클라이언트 좌표에 수신 하는 것입니다.
+가리키는 `CRect` 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 업데이트 영역을 둘러싸는 업데이트의 클라이언트 좌표에 수신 하는 것입니다.
 
 이 매개 변수는 업데이트 영역 내에 있는지 여부를 결정 하는 NULL로 설정 된 `CWnd`합니다. 하는 경우 *lpRect* 가 null 인 경우는 `GetUpdateRect` 업데이트 영역을 존재 하 고 없으면 0 그렇지 않은 경우 멤버 함수가 0이 아닌 반환 합니다. WM_PAINT 메시지를 잘못 된 영역에서 발생 하는지 여부를 결정 하는 방법을 제공 합니다. Windows 버전 3.0에서에서 NULL 및 이전 버전에이 매개 변수를 설정 하지 마십시오.
 
@@ -5050,7 +5050,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT* lpwndpl) const;
 
 ### <a name="remarks"></a>설명
 
-합니다 `flags` 의 멤버는 [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) 이 함수에 의해 검색 되는 구조는 항상 0입니다. 경우 `CWnd` 최대화, 합니다 `showCmd` 소속 `WINDOWPLACEMENT` SW_SHOWMAXIMIZED 됩니다. 창을 최소화 하면 SW_SHOWMINIMIZED 것입니다. 이 SW_SHOWNORMAL 없게 됩니다.
+합니다 `flags` 의 멤버는 [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) 이 함수에 의해 검색 되는 구조는 항상 0입니다. 경우 `CWnd` 최대화, 합니다 `showCmd` 소속 `WINDOWPLACEMENT` SW_SHOWMAXIMIZED 됩니다. 창을 최소화 하면 SW_SHOWMINIMIZED 것입니다. 이 SW_SHOWNORMAL 없게 됩니다.
 
 ##  <a name="getwindowrect"></a>  CWnd::GetWindowRect
 
@@ -5063,7 +5063,7 @@ void GetWindowRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 `CRect` 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 왼쪽 및 오른쪽 아래 모퉁이의 화면 좌표를 수신 하는 합니다.
+가리키는 `CRect` 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 왼쪽 및 오른쪽 아래 모퉁이의 화면 좌표를 수신 하는 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -5286,7 +5286,7 @@ void InvalidateRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 `CRect` 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 업데이트 영역에 추가할 사각형 (클라이언트 좌표)를 포함 하는 합니다. 하는 경우 *lpRect* 가 null 인 경우 전체 클라이언트 영역에 추가 됩니다.
+가리키는 `CRect` 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 업데이트 영역에 추가할 사각형 (클라이언트 좌표)를 포함 하는 합니다. 하는 경우 *lpRect* 가 null 인 경우 전체 클라이언트 영역에 추가 됩니다.
 
 *bErase*<br/>
 업데이트 영역 내에서 백그라운드 지울 수 있는지 여부를 지정 합니다.
@@ -5370,7 +5370,7 @@ void AFX_CDECL InvokeHelper(
 > [!NOTE]
 > 이 함수 에서만 호출 해야는 `CWnd` ActiveX 컨트롤을 나타내는 개체입니다.
 
-ActiveX 컨트롤 컨테이너를 사용 하 여이 멤버 함수를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../../mfc/programming-activex-controls-in-a-activex-control-container.md)합니다.
+ActiveX 컨트롤 컨테이너를 사용 하 여이 멤버 함수를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../../mfc/programming-activex-controls-in-a-activex-control-container.md)합니다.
 
 ##  <a name="ischild"></a>  CWnd::IsChild
 
@@ -5416,7 +5416,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 ### <a name="parameters"></a>매개 변수
 
 *lpMsg*<br/>
-가리키는 [MSG](../../mfc/reference/msg-structure1.md) 검사할 메시지를 포함 하는 구조입니다.
+가리키는 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 검사할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -5649,7 +5649,7 @@ void MapWindowPoints(
 지점은 변환할 수 있는 사각형을 지정 합니다. 이 함수의 첫 번째 버전은 Windows 3.1 이상 에서만 사용할 수 있습니다.
 
 *lpPoint*<br/>
-배열에 대 한 포인터 [POINT 구조](../../mfc/reference/point-structure1.md) 변환할 요소의 집합을 포함 하는 합니다.
+배열에 대 한 포인터 [POINT 구조](/windows/desktop/api/windef/ns-windef-tagpoint) 변환할 요소의 집합을 포함 하는 합니다.
 
 *nCount*<br/>
 개수를 지정 `POINT` 가리키는 배열 구조 *lpPoint*합니다.
@@ -5827,7 +5827,7 @@ void MoveWindow(
 지정 여부 `CWnd` 다시 그려져 야 하는 것입니다. TRUE 이면 `CWnd` 수신를 [WM_PAINT](/windows/desktop/gdi/wm-paint) 메시지가 있는 해당 [OnPaint](#onpaint) 처리기를 일반적인 방식으로 메시지입니다. 이 매개 변수가 FALSE 인 경우 모든 종류의 없습니다 다시 발생 합니다. 이 클라이언트 영역, 비클라이언트 영역 (제목 및 스크롤 막대가 포함), 및의 결과로 처리 되지 않는 부모 창 부분이 적용 됩니다 `CWnd`의 이동 합니다. 응용 프로그램 명시적으로 무효화 해야 하거나 모든 부분을 다시 그리게이 매개 변수가 FALSE 인 경우 `CWnd` 및 다시 그려야 하는 부모 창입니다.
 
 *lpRect*<br/>
-합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 새 크기와 위치를 지정 하는 합니다.
+합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 새 크기와 위치를 지정 하는 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6099,7 +6099,7 @@ afx_msg void OnChangeUIState(
 
 - UISF_HIDEFOCUS 포커스 표시기입니다.
 
-- UISF_ACTIVE Windows XP: 컨트롤을 현재 컨트롤에 사용 되는 스타일 그려야 합니다.
+- UISF_ACTIVE Windows XP: 현재 컨트롤에 사용 되는 스타일 컨트롤을 그려야 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6338,7 +6338,7 @@ afx_msg int OnCompareItem(
 WM_COMPAREITEM 메시지를 전송 하는 컨트롤의 식별자입니다.
 
 *lpCompareItemStruct*<br/>
-에 대 한 긴 포인터를 포함 한 [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) 식별자 및 두 항목의 목록 또는 콤보 상자에 대 한 응용 프로그램에서 제공한 데이터를 포함 하는 데이터 구조입니다.
+에 대 한 긴 포인터를 포함 한 [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) 식별자 및 두 항목의 목록 또는 콤보 상자에 대 한 응용 프로그램에서 제공한 데이터를 포함 하는 데이터 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6446,7 +6446,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpCreateStruct*<br/>
-가리키는 [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) 구조에 대 한 정보를 포함 하는 `CWnd` 만들어지는 개체입니다.
+가리키는 [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구조에 대 한 정보를 포함 하는 `CWnd` 만들어지는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6581,7 +6581,7 @@ afx_msg void OnDeleteItem(
 WM_DELETEITEM 메시지를 전송 하는 컨트롤의 식별자입니다.
 
 *lpDeleteItemStruct*<br/>
-에 대 한 긴 포인터를 지정 된 [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) 삭제 된 목록 상자 항목에 대 한 정보를 포함 하는 데이터 구조입니다.
+에 대 한 긴 포인터를 지정 된 [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) 삭제 된 목록 상자 항목에 대 한 정보를 포함 하는 데이터 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -6749,7 +6749,7 @@ WM_DRAWITEM 메시지를 전송 하는 컨트롤의 식별자를 포함 합니�
 
 ### <a name="remarks"></a>설명
 
-`itemAction` 의 멤버는 [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) 구조 수행 하는 그리기 작업을 정의 합니다. 이 멤버의 데이터를 컨트롤의 소유자를 필요한 그리기 작업이 무엇 인지 결정할 수 있습니다.
+`itemAction` 의 멤버는 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 구조 수행 하는 그리기 작업을 정의 합니다. 이 멤버의 데이터를 컨트롤의 소유자를 필요한 그리기 작업이 무엇 인지 결정할 수 있습니다.
 
 이 메시지 처리에서 반환 되기 전에 응용 프로그램 확인 해야 하는 지정 된 디바이스 컨텍스트는 *hDC* 의 멤버는 `DRAWITEMSTRUCT` 구조를 기본 상태로 복원 됩니다.
 
@@ -7018,7 +7018,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 ### <a name="parameters"></a>매개 변수
 
 *lpMMI*<br/>
-가리키는 `MINMAXINFO` 크기 및 위치 및 최소 및 최대 추적 크기를 창에 대 한 정보가 포함 된 구조체의 최대화 합니다. 이 구조에 대 한 자세한 내용은 참조는 [MINMAXINFO](../../mfc/reference/minmaxinfo-structure.md) 구조입니다.
+가리키는 `MINMAXINFO` 크기 및 위치 및 최소 및 최대 추적 크기를 창에 대 한 정보가 포함 된 구조체의 최대화 합니다. 이 구조에 대 한 자세한 내용은 참조는 [MINMAXINFO](/windows/desktop/api/winuser/ns-winuser-tagminmaxinfo) 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7502,7 +7502,7 @@ afx_msg void OnLButtonDblClk(
 
 ### <a name="remarks"></a>설명
 
-CS_DBLCLKS 있는 창만 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 스타일 받을 `OnLButtonDblClk` 호출 합니다. 이것이 Microsoft Foundation Class windows에 대 한 기본값입니다. Windows 호출 `OnLButtonDblClk` , 릴리스를 클릭 하 고 다음 시스템 내에 다시 마우스 왼쪽된 단추를 누를 때 제한 시간을 두 번 클릭 합니다. 4 개의 이벤트를 생성 실제로 마우스 왼쪽된 단추를 두 번 클릭 합니다. [WM_LBUTTONDOWN](#onlbuttondown)를 [WM_LBUTTONUP](#onlbuttonup) 메시지, WM_LBUTTONDBLCLK 호출 및 단추 때 다른 WM_LBUTTONUP 메시지 해제 합니다.
+CS_DBLCLKS 있는 창만 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 스타일 받을 `OnLButtonDblClk` 호출 합니다. 이것이 Microsoft Foundation Class windows에 대 한 기본값입니다. Windows 호출 `OnLButtonDblClk` , 릴리스를 클릭 하 고 다음 시스템 내에 다시 마우스 왼쪽된 단추를 누를 때 제한 시간을 두 번 클릭 합니다. 4 개의 이벤트를 생성 실제로 마우스 왼쪽된 단추를 두 번 클릭 합니다. [WM_LBUTTONDOWN](#onlbuttondown)하십시오 [WM_LBUTTONUP](#onlbuttonup) 메시지, WM_LBUTTONDBLCLK 호출 및 단추를 놓을 때 다른 WM_LBUTTONUP 메시지입니다.
 
 > [!NOTE]
 > 이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.
@@ -7601,7 +7601,7 @@ afx_msg void OnMButtonDblClk(
 
 ### <a name="remarks"></a>설명
 
-CS_DBLCLKS 있는 창만 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 스타일 받을 `OnMButtonDblClk` 호출 합니다. 이것은 모든 Microsoft Foundation Class windows에 대 한 기본값입니다. Windows에서는 오류가 발생 하는 `OnMButtonDblClk` 를 누르면, 릴리스 및 다음 마우스 가운데 단추를 시스템 내에서 다시 누르면 제한 시간을 두 번 호출 합니다. 4 개의 이벤트를 생성 실제로 마우스 가운데 단추를 두 번 클릭 합니다. [WM_MBUTTONDOWN](#onmbuttondown) 하 고 [WM_MBUTTONUP](#onmbuttonup) 메시지, WM_MBUTTONDBLCLK 호출 및 다른 WM_MBUTTONUP 메시지.
+CS_DBLCLKS 있는 창만 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 스타일 받을 `OnMButtonDblClk` 호출 합니다. 이것은 모든 Microsoft Foundation Class windows에 대 한 기본값입니다. Windows에서는 오류가 발생 하는 `OnMButtonDblClk` 를 누르면, 릴리스 및 다음 마우스 가운데 단추를 시스템 내에서 다시 누르면 제한 시간을 두 번 호출 합니다. 4 개의 이벤트를 생성 실제로 마우스 가운데 단추를 두 번 클릭 합니다. [WM_MBUTTONDOWN](#onmbuttondown) 하 고 [WM_MBUTTONUP](#onmbuttonup) 메시지, WM_MBUTTONDBLCLK 호출 및 다른 WM_MBUTTONUP 메시지입니다.
 
 > [!NOTE]
 > 이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.
@@ -7714,7 +7714,7 @@ afx_msg void OnMeasureItem(
 컨트롤의 ID입니다.
 
 *lpMeasureItemStruct*<br/>
-가리키는 [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) 소유자 그리기 컨트롤의 차원을 포함 하는 데이터 구조입니다.
+가리키는 [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) 소유자 그리기 컨트롤의 차원을 포함 하는 데이터 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -7975,9 +7975,9 @@ afx_msg void OnMouseHover(
 |보조 키|설명|
 |------------------|-----------------|
 |MK_CONTROL|CTRL 키가 눌러져 있습니다.|
-|MK_LBUTTON|마우스 왼쪽된 단추가 눌러져 있습니다.|
+|MK_LBUTTON|마우스 왼쪽 단추가 눌러져 있습니다.|
 |MK_MBUTTON|마우스 가운데 단추가 눌러져 있습니다.|
-|MK_RBUTTON|마우스 오른쪽 단추를 눌렀습니다.|
+|MK_RBUTTON|마우스 오른쪽 단추가 눌러져 있습니다.|
 |MK_SHIFT|SHIFT 키가 눌러져 있습니다.|
 |MK_XBUTTON1|Microsoft IntelliMouse의 XBUTTON1 마우스 단추가 눌러져 있습니다.|
 |MK_XBUTTON2|Microsoft IntelliMouse의 xbutton2를 놓으면 마우스 단추가 눌러져 있습니다.|
@@ -8149,7 +8149,7 @@ afx_msg void OnMoving(
 이동할 창의 가장자리입니다.
 
 *lpRect*<br/>
-주소를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 항목의 좌표를 포함 하는 됩니다.
+주소를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 항목의 좌표를 포함 하는 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -8196,7 +8196,7 @@ afx_msg void OnNcCalcSize(
 응용 프로그램 클라이언트 영역 부분에 올바른 정보가 지정 해야 하는지 여부를 지정 합니다. Windows는 새 클라이언트 영역 내에서 지정된 된 영역으로 올바른 정보를 복사 합니다. 이 매개 변수가 TRUE 인 경우 응용 프로그램의 클라이언트 영역 부분 유효 지정 해야 합니다.
 
 *lpncsp*<br/>
-가리키는 [NCCALCSIZE_PARAMS](../../mfc/reference/nccalcsize-params-structure.md) 응용 프로그램은 새 크기와 위치를 계산 하는 데 사용할 수 정보를 포함 하는 데이터 구조를 `CWnd` 사각형 (클라이언트 영역, 테두리, 캡션, 스크롤 막대 및 등 포함) .
+가리키는 [NCCALCSIZE_PARAMS](/windows/desktop/api/winuser/ns-winuser-tagnccalcsize_params) 응용 프로그램은 새 크기와 위치를 계산 하는 데 사용할 수 정보를 포함 하는 데이터 구조를 `CWnd` 사각형 (클라이언트 영역, 테두리, 캡션, 스크롤 막대 및 등 포함) .
 
 ### <a name="remarks"></a>설명
 
@@ -8222,7 +8222,7 @@ afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpCreateStruct*<br/>
-가리키는 합니다 [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) 데이터의 구조 `CWnd`합니다.
+가리키는 합니다 [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 데이터의 구조 `CWnd`합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -8791,7 +8791,7 @@ afx_msg void OnPaintClipboard(
 클립보드 응용 프로그램 창에 대한 포인터를 지정합니다. 해당 포인터는 임시적이며, 나중에 사용하려고 저장하면 안됩니다.
 
 *hPaintStruct*<br/>
-그릴 클라이언트 영역을 정의하는 [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) 데이터 구조를 식별합니다.
+그릴 클라이언트 영역을 정의하는 [PAINTSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagpaintstruct) 데이터 구조를 식별합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -8988,7 +8988,7 @@ afx_msg UINT OnQueryUIState();
 
 - UISF_HIDEACCEL 키보드 액셀러레이터 키 숨겨져 있습니다.
 
-- UISF_ACTIVE Windows XP: 컨트롤을 현재 컨트롤에 사용 되는 스타일 그려야 합니다.
+- UISF_ACTIVE Windows XP: 현재 컨트롤에 사용 되는 스타일 컨트롤을 그려야 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -9048,7 +9048,7 @@ X 및 y를 지정 합니다. 커서의 좌표가 합니다. 이러한 좌표는 
 
 ### <a name="remarks"></a>설명
 
-CS_DBLCLKS 있는 창만 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 스타일을 받을 수 `OnRButtonDblClk` 호출 합니다. 이것이 Microsoft Foundation Class 라이브러리 내에서 windows에 대 한 기본값입니다. Windows 호출 `OnRButtonDblClk` , 릴리스를 클릭 하 고 다시 시스템 내에서 마우스 오른쪽 단추를 누를 때 제한 시간을 두 번 클릭 합니다. 4 개의 이벤트를 생성 실제로 마우스 오른쪽 단추를 두 번 클릭: [WM_RBUTTONDOWN](#onrbuttondown) 하 고 [WM_RBUTTONUP](#onrbuttonup) 메시지를 `OnRButtonDblClk` 호출과 다른 WM_RBUTTONUP 메시지 단추 때 해제 합니다.
+CS_DBLCLKS 있는 창만 [WNDCLASS](/windows/desktop/api/winuser/ns-winuser-tagwndclassa) 스타일을 받을 수 `OnRButtonDblClk` 호출 합니다. 이것이 Microsoft Foundation Class 라이브러리 내에서 windows에 대 한 기본값입니다. Windows 호출 `OnRButtonDblClk` , 릴리스를 클릭 하 고 다시 시스템 내에서 마우스 오른쪽 단추를 누를 때 제한 시간을 두 번 클릭 합니다. 4 개의 이벤트를 생성 실제로 마우스 오른쪽 단추를 두 번 클릭 합니다. [WM_RBUTTONDOWN](#onrbuttondown) 하 고 [WM_RBUTTONUP](#onrbuttonup) 메시지는 `OnRButtonDblClk` 호출과 단추를 놓을 때 다른 WM_RBUTTONUP 메시지.
 
 > [!NOTE]
 > 이 멤버 함수는 응용프로그램에서 Windows 메시지를 처리할 수 있도록 프레임워크에서 호출됩니다. 함수에 전달되는 매개 변수는 해당 메시지가 수신되었을 때 프레임워크에서 받았던 매개 변수를 반영합니다. 이 함수의 기본 클래스 구현을 호출하는 경우, 해당 구현은 해당 함수에 공급한 매개변수가 아닌, 메시지와 함께 전달 받았던 원래의 매개 변수를 사용할 것입니다.
@@ -9410,7 +9410,7 @@ afx_msg void OnSizing(
 이동할 창의 가장자리입니다.
 
 *lpRect*<br/>
-주소를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 항목의 좌표를 포함 하는 됩니다.
+주소를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 항목의 좌표를 포함 하는 됩니다.
 
 ### <a name="remarks"></a>설명
 
@@ -9961,7 +9961,7 @@ afx_msg void OnUniChar(
 |---------------|-----------------|
 |*NChar*|[in] 누른된 키의 문자 코드를 지정합니다.|
 |*nRepCnt*|[in] 현재 메시지의 반복 횟수를 지정합니다. 값을 사용 하면 키 입력은 autorepeated 사용자 키를 누른 횟수입니다. 했으면 하는 동안 충분 한 경우 여러 메시지가 전송 됩니다. 그러나 반복 횟수 누적 아닙니다.|
-|*nFlags*|[in] 다음 표에 나와 있는 것 처럼 검색 코드, 확장 된 키, 상황에 맞는 코드, 이전 키 상태 및 전환 상태를 지정 하는 플래그:<br /><br /> **0-7:** 검색 코드를 지정 합니다. 값을 원래 장비 제조업체 (OEM)에 따라 달라 집니다.<br /><br /> **8:** 오른쪽 ALT CTRL 키 등 향상된 된 101 또는 102 키 키보드에 표시 되는 확장 된 키를 지정 합니다. 플래그는 1 키가 확장된 된 키입니다. 그렇지 않으면 0입니다.<br /><br /> **9-12:** Windows에서 내부적으로 사용 합니다.<br /><br /> **13:** 상황에 맞는 코드를 지정 합니다. 키가 눌러져; 동안 ALT 키를 누르고 있으면 플래그는 1 그렇지 않으면 값은 0입니다.<br /><br /> **14:** 이전 키 상태를 지정 합니다. 등록 키가 있으면 플래그가 메시지를 보내기 전에 키가 눌러져 있으면 1 또는 0입니다.<br /><br /> **15:** 전환 상태를 지정 합니다. 키를 누른 경우 플래그는 키를 해제 하 고, 1 또는 0입니다.|
+|*nFlags*|[in] 다음 표에 나와 있는 것 처럼 검색 코드, 확장 된 키, 상황에 맞는 코드, 이전 키 상태 및 전환 상태를 지정 하는 플래그:<br /><br /> **0-7:** 검색 코드를 지정합니다. 값을 원래 장비 제조업체 (OEM)에 따라 달라 집니다.<br /><br /> **8:** 향상된 된 101 또는 102 키 키보드에 표시 되는 오른쪽 ALT 및 CTRL 키와 같은 확장 된 키를 지정 합니다. 플래그는 1 키가 확장된 된 키입니다. 그렇지 않으면 0입니다.<br /><br /> **9-12:**  Windows에서 내부적으로 사용 합니다.<br /><br /> **13:**  상황에 맞는 코드를 지정합니다. 키가 눌러져; 동안 ALT 키를 누르고 있으면 플래그는 1 그렇지 않으면 값은 0입니다.<br /><br /> **14:**  이전 키 상태를 지정합니다. 등록 키가 있으면 플래그가 메시지를 보내기 전에 키가 눌러져 있으면 1 또는 0입니다.<br /><br /> **15:**  전환 상태를 지정합니다. 키를 누른 경우 플래그는 키를 해제 하 고, 1 또는 0입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -10022,7 +10022,7 @@ afx_msg void OnUpdateUIState(
 
 - UISF_HIDEFOCUS 포커스 표시기입니다.
 
-- UISF_ACTIVE Windows XP: 컨트롤을 현재 컨트롤에 사용 되는 스타일 그려야 합니다.
+- UISF_ACTIVE Windows XP: 현재 컨트롤에 사용 되는 스타일 컨트롤을 그려야 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -10202,7 +10202,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 ### <a name="parameters"></a>매개 변수
 
 *lpwndpos*<br/>
-가리키는 [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) 창의 새 크기와 위치에 대 한 정보를 포함 하는 데이터 구조입니다.
+가리키는 [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) 창의 새 크기와 위치에 대 한 정보를 포함 하는 데이터 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -10226,7 +10226,7 @@ afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 
 ### <a name="remarks"></a>설명
 
-응용 프로그램을 설정 또는 적절 한 비트를 해제 하 여 창에 변경 내용에 방지할 수는 **플래그** 의 멤버는 [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) 구조입니다.
+응용 프로그램을 설정 또는 적절 한 비트를 해제 하 여 창에 변경 내용에 방지할 수는 **플래그** 의 멤버는 [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) 구조입니다.
 
 사용 하 여 창에 대 한 합니다 [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) 또는 [WS_THICKFRAME](styles-used-by-mfc.md#window-styles) 스타일을 기본 구현은 보냅니다는 [WM_GETMINMAXINFO](/windows/desktop/winmsg/wm-getminmaxinfo) 창에 메시지를 합니다. 새 크기와 창의 위치를 확인 하 고 CS_BYTEALIGNCLIENT 및 CS_BYTEALIGN 클라이언트 스타일을 적용할 수행 됩니다. 응용 프로그램 하지 해당 기본 클래스를 호출 하 여이 기능을 재정의할 수 있습니다.
 
@@ -10323,9 +10323,9 @@ afx_msg void OnXButtonDblClk(
 |보조 키|설명|
 |------------------|-----------------|
 |MK_CONTROL|CTRL 키가 눌러져 있습니다.|
-|MK_LBUTTON|마우스 왼쪽된 단추가 눌러져 있습니다.|
+|MK_LBUTTON|마우스 왼쪽 단추가 눌러져 있습니다.|
 |MK_MBUTTON|마우스 가운데 단추가 눌러져 있습니다.|
-|MK_RBUTTON|마우스 오른쪽 단추를 눌렀습니다.|
+|MK_RBUTTON|마우스 오른쪽 단추가 눌러져 있습니다.|
 |MK_SHIFT|SHIFT 키가 눌러져 있습니다.|
 |MK_XBUTTON1|Microsoft IntelliMouse의 XBUTTON1 마우스 단추가 눌러져 있습니다.|
 |MK_XBUTTON2|Microsoft IntelliMouse의 xbutton2를 놓으면 마우스 단추가 눌러져 있습니다.|
@@ -10361,9 +10361,9 @@ afx_msg void OnXButtonDown(
 |보조 키|설명|
 |------------------|-----------------|
 |MK_CONTROL|CTRL 키가 눌러져 있습니다.|
-|MK_LBUTTON|마우스 왼쪽된 단추가 눌러져 있습니다.|
+|MK_LBUTTON|마우스 왼쪽 단추가 눌러져 있습니다.|
 |MK_MBUTTON|마우스 가운데 단추가 눌러져 있습니다.|
-|MK_RBUTTON|마우스 오른쪽 단추를 눌렀습니다.|
+|MK_RBUTTON|마우스 오른쪽 단추가 눌러져 있습니다.|
 |MK_SHIFT|SHIFT 키가 눌러져 있습니다.|
 |MK_XBUTTON1|Microsoft IntelliMouse의 XBUTTON1 마우스 단추가 눌러져 있습니다.|
 |MK_XBUTTON2|Microsoft IntelliMouse의 xbutton2를 놓으면 마우스 단추가 눌러져 있습니다.|
@@ -10399,9 +10399,9 @@ afx_msg void OnXButtonUp(
 |보조 키|설명|
 |------------------|-----------------|
 |MK_CONTROL|CTRL 키가 눌러져 있습니다.|
-|MK_LBUTTON|마우스 왼쪽된 단추가 눌러져 있습니다.|
+|MK_LBUTTON|마우스 왼쪽 단추가 눌러져 있습니다.|
 |MK_MBUTTON|마우스 가운데 단추가 눌러져 있습니다.|
-|MK_RBUTTON|마우스 오른쪽 단추를 눌렀습니다.|
+|MK_RBUTTON|마우스 오른쪽 단추가 눌러져 있습니다.|
 |MK_SHIFT|SHIFT 키가 눌러져 있습니다.|
 |MK_XBUTTON1|Microsoft IntelliMouse의 XBUTTON1 마우스 단추가 눌러져 있습니다.|
 |MK_XBUTTON2|Microsoft IntelliMouse의 xbutton2를 놓으면 마우스 단추가 눌러져 있습니다.|
@@ -10549,7 +10549,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 ### <a name="parameters"></a>매개 변수
 
 *cs*<br/>
-A [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) 구조입니다.
+A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -10597,7 +10597,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-가리키는 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.
+가리키는 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 처리할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -10719,7 +10719,7 @@ BOOL RedrawWindow(
 ### <a name="parameters"></a>매개 변수
 
 *lpRectUpdate*<br/>
-가리키는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 업데이트 사각형의 좌표를 포함 합니다. 이 매개 변수가 무시 됩니다 *prgnUpdate* 올바른 영역 핸들을 포함 합니다.
+가리키는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 업데이트 사각형의 좌표를 포함 합니다. 이 매개 변수가 무시 됩니다 *prgnUpdate* 올바른 영역 핸들을 포함 합니다.
 
 *prgnUpdate*<br/>
 업데이트 영역을 식별합니다. 둘 다 *prgnUpdate* 하 고 *lpRectUpdate* 이 NULL 이면 전체 클라이언트 영역을 업데이트 영역에 추가 됩니다.
@@ -10889,10 +10889,10 @@ void RepositionBars(UINT nIDFirst,
 - `CWnd::reposExtra` 값을 더 *lpRectParam* 의 클라이언트 영역에 *nIDLast* 역시 레이아웃을 수행 합니다.
 
 *lpRectParam*<br/>
-가리키는 [RECT 구조체](../../mfc/reference/rect-structure1.md);의 값에 종속 되는 사용량 *플래그*합니다.
+가리키는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect);의 값에 종속 되는 사용량 *플래그*합니다.
 
 *lpRectClient*<br/>
-가리키는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 사용 가능한 클라이언트 영역을 포함 합니다. NULL 인 경우 창의 클라이언트 영역 사용 됩니다.
+가리키는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 사용 가능한 클라이언트 영역을 포함 합니다. NULL 인 경우 창의 클라이언트 영역 사용 됩니다.
 
 *bStretch*<br/>
 막대 프레임의 크기를 위해 늘여 야 하는지 여부를 나타냅니다.
@@ -10939,10 +10939,10 @@ void ScreenToClient(LPPOINT lpPoint) const;  void ScreenToClient(LPRECT lpRect) 
 ### <a name="parameters"></a>매개 변수
 
 *lpPoint*<br/>
-가리키는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체 또는 [POINT 구조](../../mfc/reference/point-structure1.md) 변환할 화면 좌표를 포함 하는 합니다.
+가리키는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체 또는 [POINT 구조](/windows/desktop/api/windef/ns-windef-tagpoint) 변환할 화면 좌표를 포함 하는 합니다.
 
 *lpRect*<br/>
-가리키는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 변환할 화면 좌표를 포함 하는 합니다.
+가리키는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 변환할 화면 좌표를 포함 하는 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -10973,7 +10973,7 @@ void ScrollWindow(
 세로 스크롤의 장치 단위로 크기를 지정합니다. 이 매개 변수 위로 스크롤하려면 음수 값 이어야 합니다.
 
 *lpRect*<br/>
-가리키는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 클라이언트 영역을 스크롤할 수의 부분을 지정 하는 합니다. 하는 경우 *lpRect* 가 null 인 경우 전체 클라이언트 영역 스크롤됩니다. 커서 사각형이 스크롤 사각형 교차 하는 경우에 캐럿 위치가 변경 되 면 합니다.
+가리키는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 클라이언트 영역을 스크롤할 수의 부분을 지정 하는 합니다. 하는 경우 *lpRect* 가 null 인 경우 전체 클라이언트 영역 스크롤됩니다. 커서 사각형이 스크롤 사각형 교차 하는 경우에 캐럿 위치가 변경 되 면 합니다.
 
 *lpClipRect*<br/>
 가리키는 `CRect` 개체 또는 `RECT` 스크롤해야 클리핑 사각형을 지정 하는 구조입니다. 이 사각형 안에 비트만 스크롤됩니다. Bits이이 사각형 밖에 있는 경우에 영향을 받지 않습니다 합니다 *lpRect* 사각형입니다. 하는 경우 *lpClipRect* 가 null 인 경우 클리핑은 스크롤 사각형에서 수행 됩니다.
@@ -11012,7 +11012,7 @@ int ScrollWindowEx(
 세로 스크롤의 장치 단위로 크기를 지정합니다. 이 매개 변수 위로 스크롤하려면 음수 값이 있어야 합니다.
 
 *lpRectScroll*<br/>
-가리키는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 클라이언트 영역을 스크롤할 수의 부분을 지정 하는 합니다. 이 매개 변수가 NULL 인 경우 전체 클라이언트 영역이 스크롤됩니다.
+가리키는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 클라이언트 영역을 스크롤할 수의 부분을 지정 하는 합니다. 이 매개 변수가 NULL 인 경우 전체 클라이언트 영역이 스크롤됩니다.
 
 *lpRectClip*<br/>
 가리키는 `RECT` 스크롤해야 클리핑 사각형을 지정 하는 구조입니다. 이 구조에서 가리키는 사각형에 우선 *lpRectScroll*합니다. 이 사각형 안에 비트만 스크롤됩니다. Bits이이 사각형 밖에 있는 경우에 영향을 받지 않습니다 합니다 *lpRectScroll* 사각형입니다. 이 매개 변수가 NULL 이면 클리핑은 스크롤 사각형에서 수행 됩니다.
@@ -11453,7 +11453,7 @@ TRUE 이면 경우 32 픽셀 아이콘으로 32 픽셀을 지정 합니다. FALS
 
 ### <a name="return-value"></a>반환 값
 
-아이콘에 대 한 핸들입니다.
+아이콘에 대한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -11588,7 +11588,7 @@ void AFX_CDECL SetProperty(
 > [!NOTE]
 > 이 함수 에서만 호출 해야는 `CWnd` OLE 컨트롤을 나타내는 개체입니다.
 
-OLE 컨트롤 컨테이너를 사용 하 여이 멤버 함수를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../../mfc/programming-activex-controls-in-a-activex-control-container.md)합니다.
+OLE 컨트롤 컨테이너를 사용 하 여이 멤버 함수를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../../mfc/programming-activex-controls-in-a-activex-control-container.md)합니다.
 
 ##  <a name="setredraw"></a>  CWnd::SetRedraw
 
@@ -11811,7 +11811,7 @@ BOOL SetWindowPlacement(const WINDOWPLACEMENT* lpwndpl);
 ### <a name="parameters"></a>매개 변수
 
 *lpwndpl*<br/>
-가리키는 [WINDOWPLACEMENT](../../mfc/reference/windowplacement-structure.md) 새 표시 상태와 위치를 지정 하는 구조입니다.
+가리키는 [WINDOWPLACEMENT](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement) 새 표시 상태와 위치를 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -12304,7 +12304,7 @@ void ValidateRect(LPCRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 업데이트 영역에서 제거할 사각형의 클라이언트 좌표를 포함 하는 합니다. 하는 경우 *lpRect* 가 null 인 경우 전체 창 유효성을 검사 합니다.
+가리키는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 업데이트 영역에서 제거할 사각형의 클라이언트 좌표를 포함 하는 합니다. 하는 경우 *lpRect* 가 null 인 경우 전체 창 유효성을 검사 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -12342,7 +12342,7 @@ static CWnd* PASCAL WindowFromPoint(POINT point);
 ### <a name="parameters"></a>매개 변수
 
 *point*<br/>
-지정 된 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체 또는 [가리킨](../../mfc/reference/point-structure1.md) 검사할 지점을 정의 하는 데이터 구조.
+지정 된 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체 또는 [가리킨](/windows/desktop/api/windef/ns-windef-tagpoint) 검사할 지점을 정의 하는 데이터 구조.
 
 ### <a name="return-value"></a>반환 값
 
@@ -12420,7 +12420,7 @@ BOOL RegisterTouchWindow(
 TRUE 이면 레지스터 Windows touch 지원을 FALSE이 고, 그렇지 합니다.
 
 *ulFlags*<br/>
-선택 사항 수정 작업을 지정 하는 비트 플래그 집합입니다. 이 필드는 0 또는 다음 값 중 하나에 포함 될 수 있습니다: TWF_FINETOUCH, TWF_WANTPALM 합니다.
+선택 사항 수정 작업을 지정 하는 비트 플래그 집합입니다. 이 필드는 0 또는 다음 값 중 하나에 포함할 수 있습니다. TWF_FINETOUCH, TWF_WANTPALM 합니다.
 
 ### <a name="return-value"></a>반환 값
 

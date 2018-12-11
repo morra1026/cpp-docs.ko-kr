@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 745b04751c96e79c6bfa332ebdde15b254578137
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 26dcf50cc3dc48fec5d6e4957ffd1ef340ad1dbf
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694805"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178645"
 ---
 # <a name="cbutton-class"></a>CButton 클래스
 
@@ -265,7 +265,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDrawItemStruct*<br/>
-에 대 한 긴 포인터를 [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) 구조입니다. 구조에 그릴 항목 및 필요한 그리기의 형식에 대 한 정보가 들어 있습니다.
+에 대 한 긴 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 구조입니다. 구조에 그릴 항목 및 필요한 그리기의 형식에 대 한 정보가 들어 있습니다.
 
 ### <a name="remarks"></a>설명
 
@@ -359,7 +359,7 @@ HICON GetIcon() const;
 
 ### <a name="return-value"></a>반환 값
 
-아이콘에 대 한 핸들입니다. 아이콘이 없는 이전에 지정 된 경우 NULL입니다.
+아이콘에 대한 핸들입니다. 아이콘이 없는 이전에 지정 된 경우 NULL입니다.
 
 ### <a name="example"></a>예제
 
@@ -532,7 +532,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pSize*|[out] 에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체는 사각형의 설명입니다.|
+|*pSize*|[out] 에 대 한 포인터를 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체는 사각형의 설명입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1006,7 +1006,7 @@ BOOL SetSplitSize(LPSIZE pSize);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*pSize*|[in] 에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 경계 사각형을 설명 하는 구조입니다.|
+|*pSize*|[in] 에 대 한 포인터를 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 경계 사각형을 설명 하는 구조입니다.|
 
 ### <a name="return-value"></a>반환 값
 

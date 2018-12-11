@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: bcaf24c14938bcf56eb083ad2dd79e4c245c7c84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2834de457ce9e2a71537e706f0fdf84463b16a8d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613683"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178926"
 ---
 # <a name="cmenu-class"></a>CMenu 클래스
 
@@ -322,7 +322,7 @@ UINT CheckMenuItem(
 
 ### <a name="return-value"></a>반환 값
 
-항목의 이전 상태: MF_CHECKED 또는 MF_UNCHECKED, 또는 메뉴 항목을 존재 하지 않은 경우에 0xFFFFFFFF입니다.
+항목의 이전 상태: MF_CHECKED MF_UNCHECKED, 또는 메뉴 항목을 존재 하지 않은 경우에 0xFFFFFFFF입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -551,7 +551,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDrawItemStruct*<br/>
-에 대 한 포인터를 [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
+에 대 한 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 

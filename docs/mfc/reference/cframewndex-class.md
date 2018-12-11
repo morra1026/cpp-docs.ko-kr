@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: 9489e1a36eac89ccff510c3c0fae467c2bb2deab
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: a0e6861ecf3a6704ddb31c39f7bb2c44cb75ccd8
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694623"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179008"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 
@@ -202,7 +202,7 @@ class CFrameWndEx : public CFrameWnd
 |이름|설명|
 |----------|-----------------|
 |[CFrameWndEx::ActiveItemRecalcLayout](#activeitemrecalclayout)|OLE 클라이언트 항목 및 프레임의 클라이언트 영역 레이아웃을 조정합니다.|
-|`CFrameWndEx::AddDockSite`|이 메서드는 사용 되지 않습니다.|
+|`CFrameWndEx::AddDockSite`|이 메서드가 사용되지 않습니다.|
 |[CFrameWndEx::AddPane](#addpane)|컨트롤 막대 고 도킹 관리자에 등록합니다.|
 |[CFrameWndEx::AdjustDockingLayout](#adjustdockinglayout)|프레임 창으로 도킹 된 모든 창의 레이아웃을 다시 계산 됩니다.|
 |[CFrameWndEx::DelayUpdateFrameMenu](#delayupdateframemenu)|프레임 메뉴를 설정 하 고 명령 처리 유휴 상태일 때 업데이트 됩니다.|
@@ -694,7 +694,7 @@ virtual BOOL GetToolbarButtonToolTipText(
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다. 도구 모음 단추의 도구 설명 표시 하려는 경우이 메서드를 재정의 합니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다. 도구 모음 단추의 도구 설명 표시 하려는 경우이 메서드를 재정의 합니다.
 
 ##  <a name="insertpane"></a>  CFrameWndEx::InsertPane
 
@@ -767,7 +767,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 요소의 위치입니다.
 
 *dwBarAlignment*<br/>
@@ -1062,7 +1062,7 @@ afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpCreateStruct*<br/>
-[in] 에 대 한 포인터를 [CREATESTRUCT 구조체](../../mfc/reference/createstruct-structure.md) 새 프레임에 대 한 합니다.
+[in] 에 대 한 포인터를 [CREATESTRUCT 구조체](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 새 프레임에 대 한 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1240,7 +1240,7 @@ afx_msg void OnLButtonDown(
 *nFlags*<br/>
 [in] 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONDOWN 알림](/windows/desktop/inputdev/wm-lbuttondown)합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.
 
 ### <a name="remarks"></a>설명
@@ -1260,7 +1260,7 @@ afx_msg void OnLButtonUp(
 *nFlags*<br/>
 [in] 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_LBUTTONUP 알림](/windows/desktop/inputdev/wm-lbuttonup)합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이에 상대적인 x를 포인터의 y 좌표를 지정합니다.
 
 ### <a name="remarks"></a>설명
@@ -1338,7 +1338,7 @@ afx_msg void OnMouseMove(
 *nFlags*<br/>
 [in] 사용자 보조키를 눌렀는지 여부를 나타냅니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_MOUSEMOVE 알림](/windows/desktop/inputdev/wm-mousemove)합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] X 및 y를 지정 된 창의 왼쪽 위 모퉁이 기준으로 포인터의 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -1411,7 +1411,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표에서 포인터의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1435,7 +1435,7 @@ afx_msg void OnNcMouseMove(
 *nHitTest*<br/>
 [in] 포인터 적중 열거 값입니다. 가능한 값 목록을 참조 하세요 [WM_NCHITTEST 알림을](/windows/desktop/inputdev/wm-nchittest)합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표에서 포인터의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -1704,7 +1704,7 @@ afx_msg void OnSizing(
 [in] 이동 되는 프레임의 가장자리입니다. 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZING 알림](/windows/desktop/winmsg/wm-sizing)합니다.
 
 *pRect*<br/>
-[out에서] 에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](../../mfc/reference/rect-structure1.md) 프레임의 좌표를 포함 하는 구조입니다.
+[out에서] 에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 프레임의 좌표를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1874,7 +1874,7 @@ afx_msg void OnWindowPosChanged(WINDOWPOS FAR* lpwndpos);
 ### <a name="parameters"></a>매개 변수
 
 *lpwndpos*<br/>
-[in] 에 대 한 포인터를 [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) 새 크기와 위치를 포함 하는 구조입니다.
+[in] 에 대 한 포인터를 [WINDOWPOS](/windows/desktop/api/winuser/ns-winuser-tagwindowpos) 새 크기와 위치를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1898,7 +1898,7 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 검사할 요소의 화면 좌표입니다.
 
 *nSensitivity*<br/>
@@ -1934,7 +1934,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-[in] 에 대 한 포인터를 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.
+[in] 에 대 한 포인터를 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 처리할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 

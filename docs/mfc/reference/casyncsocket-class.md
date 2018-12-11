@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: 29fe705292b223a0ae367d34d67a99aa60fb719c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b138c4f84a10823d9c340218baefd530c016027a
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660020"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179034"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket 클래스
 
@@ -160,12 +160,12 @@ class CAsyncSocket : public CObject
 
 이 클래스는 가정을 기반으로 네트워크 통신을 이해 합니다. 차단 바이트 순서 차이 처리 하는 일을 담당 하는 하 고 유니코드 및 멀티 바이트 문자 간 변환 (MBCS) 문자열을 설정 합니다. 이러한 문제를 관리 하는 편리한 인터페이스를 클래스를 참조 하세요 [CSocket](../../mfc/reference/csocket-class.md)합니다.
 
-사용 하는 `CAsyncSocket` 개체를 해당 생성자를 호출 호출 합니다 [만들기](#create) 의 기본 소켓 핸들을 만드는 함수 (형식 `SOCKET`), 수락된 소켓을 제외 하 고 합니다. 서버 소켓 호출에 대 한는 [수신](#listen) 멤버 함수 및 클라이언트 소켓 호출에 대 한 합니다 [연결](#connect) 멤버 함수입니다. 서버 소켓 호출 해야 합니다 [Accept](#accept) 연결 요청을 받으면 함수입니다. 나머지를 사용 하 여 `CAsyncSocket` 소켓 간의 통신을 수행 하는 함수입니다. 완료 되 면 삭제 합니다 `CAsyncSocket` 힙에 생성 된 경우 개체; 소멸자를 자동으로 호출 합니다 [닫기](#close) 함수. 문서에 설명 되어 소켓 데이터 형식을 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md)합니다.
+사용 하는 `CAsyncSocket` 개체를 해당 생성자를 호출 호출 합니다 [만들기](#create) 의 기본 소켓 핸들을 만드는 함수 (형식 `SOCKET`), 수락된 소켓을 제외 하 고 합니다. 서버 소켓 호출에 대 한는 [수신](#listen) 멤버 함수 및 클라이언트 소켓 호출에 대 한 합니다 [연결](#connect) 멤버 함수입니다. 서버 소켓 호출 해야 합니다 [Accept](#accept) 연결 요청을 받으면 함수입니다. 나머지를 사용 하 여 `CAsyncSocket` 소켓 간의 통신을 수행 하는 함수입니다. 완료 되 면 삭제 합니다 `CAsyncSocket` 힙에 생성 된 경우 개체; 소멸자를 자동으로 호출 합니다 [닫기](#close) 함수. 소켓 데이터 형식은 문서에 설명 되어 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md)합니다.
 
 > [!NOTE]
 >  정적으로 연결 된 MFC 응용 프로그램에서 보조 스레드에서 MFC 소켓을 사용 하는 경우 호출 해야 `AfxSocketInit` 소켓을 사용 하 여 소켓 라이브러리를 초기화 하는 각 스레드에서 합니다. 기본적으로 `AfxSocketInit` 기본 스레드에서만에서 호출 됩니다.
 
-자세한 내용은 [Windows 소켓: 클래스를 사용 하 여 CAsyncSocket](../../mfc/windows-sockets-using-class-casyncsocket.md) 및 관련 문서. 뿐만 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: Casyncsocket 클래스 사용](../../mfc/windows-sockets-using-class-casyncsocket.md) 관련 문서. 뿐만 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -194,7 +194,7 @@ virtual BOOL Accept(
 연결에 사용할 수 있는 새 소켓을 식별 하는 참조 합니다.
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 네트워크에서 알려진 구조는 연결의 주소를 수신 하는 소켓입니다. 정확한 형식을 합니다 *lpSockAddr* 인수 소켓 만들어질 때 설정 하는 주소 패밀리에 의해 결정 됩니다. 하는 경우 *lpSockAddr* 및/또는 *lpSockAddrLen* 같은지 NULL로 반환 되 고 받아들인된 소켓의 원격 주소에 대 한 정보가 없습니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 네트워크에서 알려진 구조는 연결의 주소를 수신 하는 소켓입니다. 정확한 형식을 합니다 *lpSockAddr* 인수 소켓 만들어질 때 설정 하는 주소 패밀리에 의해 결정 됩니다. 하는 경우 *lpSockAddr* 및/또는 *lpSockAddrLen* 같은지 NULL로 반환 되 고 받아들인된 소켓의 원격 주소에 대 한 정보가 없습니다.
 
 *lpSockAddrLen*<br/>
 주소의 길이에 대 한 포인터 *lpSockAddr* (바이트)에서입니다. *lpSockAddrLen* 는 결과 값 매개 변수: 가리키는 공간의 처음 있어야 *lpSockAddr*; 반환 실제 길이 (바이트) 반환 주소를 포함 합니다.
@@ -207,7 +207,7 @@ virtual BOOL Accept(
 
 - WSAENETDOWN The Windows 소켓 구현이 네트워크 하위 시스템 실패 했음을 발견 했습니다.
 
-- WSAEFAULT 합니다 *lpSockAddrLen* 인수가 너무 작아서 (의 크기 보다 작은 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조).
+- WSAEFAULT 합니다 *lpSockAddrLen* 인수가 너무 작아서 (의 크기 보다 작은 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조).
 
 - Windows 소켓을 차단 호출 WSAEINPROGRESS는 진행 중입니다.
 
@@ -268,7 +268,7 @@ BOOL AsyncSelect(long lEvent = FD_READ | FD_WRITE | FD_OOB | FD_ACCEPT | FD_CONN
 
 ### <a name="remarks"></a>설명
 
-이 함수는 소켓에 대해 MFC 콜백 알림 함수를 호출할 수는 지정에 사용 됩니다. `AsyncSelect` 이 소켓 비블로킹 모드로 자동 설정 됩니다. 자세한 내용은 문서 참조 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+이 함수는 소켓에 대해 MFC 콜백 알림 함수를 호출할 수는 지정에 사용 됩니다. `AsyncSelect` 이 소켓 비블로킹 모드로 자동 설정 됩니다. 자세한 내용은 문서를 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ##  <a name="attach"></a>  CAsyncSocket::Attach
 
@@ -330,7 +330,7 @@ BOOL Bind (
 네트워크 주소 "128.56.22.8" 같은 점으로 구분 된 번호입니다. 이 매개 변수를 나타내는 문자열을 NULL이 전달 된 `CAsyncSocket` 인스턴스는 모든 네트워크 인터페이스에서 클라이언트 활동에 대 한 수신 대기 해야 합니다.
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 이 소켓에 할당할 주소를 포함 하는 구조입니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 이 소켓에 할당할 주소를 포함 하는 구조입니다.
 
 *nSockAddrLen*<br/>
 주소의 길이 *lpSockAddr* (바이트)에서입니다.
@@ -345,7 +345,7 @@ BOOL Bind (
 
 - WSAEADDRINUSE 지정 된 주소를 이미 사용 중인 경우 (아래 SO_REUSEADDR 소켓 옵션을 참조 하세요 [SetSockOpt](#setsockopt).)
 
-- WSAEFAULT 합니다 *nSockAddrLen* 인수가 너무 작아서 (의 크기 보다 작은 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조).
+- WSAEFAULT 합니다 *nSockAddrLen* 인수가 너무 작아서 (의 크기 보다 작은 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조).
 
 - Windows 소켓을 차단 호출 WSAEINPROGRESS는 진행 중입니다.
 
@@ -410,7 +410,7 @@ BOOL Connect(
 소켓 응용 프로그램을 식별 하는 포트입니다.
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 연결된 된 소켓의 주소를 포함 하는 구조입니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 연결된 된 소켓의 주소를 포함 하는 구조입니다.
 
 *nSockAddrLen*<br/>
 주소의 길이 *lpSockAddr* (바이트)에서입니다.
@@ -535,7 +535,7 @@ SOCK_STREAM 또는 SOCK_DGRAM 합니다.
 > [!IMPORTANT]
 > `Create` 됩니다 **되지** 스레드로부터 안전 합니다.  호출 하는 경우 해당 다중 스레드 환경에서 동시에 서로 다른 스레드에 의해 호출 될 수 없습니다, 뮤텍스 또는 다른 동기화 잠금을 사용 하 여 각 호출을 보호 해야 합니다.
 
-스트림 및 데이터 그램 소켓에 대 한 자세한 내용은 문서를 참조 하세요 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md) 하 고 [Windows 소켓: 포트 및 소켓 주소](../../mfc/windows-sockets-ports-and-socket-addresses.md) 및 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).
+스트림 및 데이터 그램 소켓에 대 한 자세한 내용은 문서를 참조 하세요. [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md) 고 [Windows 소켓: 포트 및 소켓 주소](../../mfc/windows-sockets-ports-and-socket-addresses.md) 하 고 [Windows 2 소켓 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.
 
 ##  <a name="detach"></a>  CAsyncSocket::Detach
 
@@ -607,7 +607,7 @@ BOOL GetPeerName(
 포트를 저장 하는 UINT에 대 한 참조입니다.
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조체 피어 소켓의 이름입니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조체 피어 소켓의 이름입니다.
 
 *lpSockAddrLen*<br/>
 주소의 길이에 대 한 포인터 *lpSockAddr* (바이트)에서입니다. 반환 된 *lpSockAddrLen* 의 실제 크기를 포함 하는 인수 *lpSockAddr* 바이트 단위로 반환 합니다.
@@ -693,7 +693,7 @@ BOOL GetSockName(
 포트를 저장 하는 UINT에 대 한 참조입니다.
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 소켓의 주소를 수신 하는 구조입니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 소켓의 주소를 수신 하는 구조입니다.
 
 *lpSockAddrLen*<br/>
 주소의 길이에 대 한 포인터 *lpSockAddr* (바이트)에서입니다.
@@ -954,7 +954,7 @@ virtual void OnAccept(int nErrorCode);
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ##  <a name="onclose"></a>  CAsyncSocket::OnClose
 
@@ -979,7 +979,7 @@ virtual void OnClose(int nErrorCode);
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ##  <a name="onconnect"></a>  CAsyncSocket::OnConnect
 
@@ -1029,7 +1029,7 @@ virtual void OnConnect(int nErrorCode);
 > [!NOTE]
 >  [CSocket](../../mfc/reference/csocket-class.md), `OnConnect` 알림 함수가 호출 되지 않습니다. 연결의 경우 단순히 호출 `Connect`, (성공적으로 또는 오류에서) 연결이 완료 되 면 반환 합니다. MFC 구현 세부 정보는 연결 알림을 처리 하는 방법입니다.
 
-자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -1056,7 +1056,7 @@ virtual void OnOutOfBandData(int nErrorCode);
 
 대역의 데이터는 각 쌍이 SOCK_STREAM 형식의 연결 된 소켓의 연결 된 논리적으로 독립 채널. 채널은 긴급 한 데이터를 보내는 데 일반적으로 합니다.
 
-MFC에는 있지만 클래스의 사용자가 대역의 데이터를 지 원하는 `CAsyncSocket` 않는 정보를 사용할 것이 좋습니다. 더 쉬운 방법은 해당 데이터를 전달 하는 데는 두 번째 소켓을 만드는 것입니다. 대역의 데이터에 대 한 자세한 내용은 참조 하세요. [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+MFC에는 있지만 클래스의 사용자가 대역의 데이터를 지 원하는 `CAsyncSocket` 않는 정보를 사용할 것이 좋습니다. 더 쉬운 방법은 해당 데이터를 전달 하는 데는 두 번째 소켓을 만드는 것입니다. 대역의 데이터에 대 한 자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ##  <a name="onreceive"></a>  CAsyncSocket::OnReceive
 
@@ -1077,7 +1077,7 @@ virtual void OnReceive(int nErrorCode);
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -1102,7 +1102,7 @@ virtual void OnSend(int nErrorCode);
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [Windows 소켓: 소켓 알림](../../mfc/windows-sockets-socket-notifications.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../../mfc/windows-sockets-socket-notifications.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -1213,7 +1213,7 @@ virtual int Receive(
 
 ##  <a name="receivefrom"></a>  CAsyncSocket::ReceiveFrom
 
-데이터 그램을 받고에서 원본 주소를 저장 하려면이 멤버 함수를 호출 합니다 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조 나 *rSocketAddress*합니다.
+데이터 그램을 받고에서 원본 주소를 저장 하려면이 멤버 함수를 호출 합니다 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조 나 *rSocketAddress*합니다.
 
 ```
 int ReceiveFrom(
@@ -1246,7 +1246,7 @@ int ReceiveFrom(
 포트를 저장 하는 UINT에 대 한 참조입니다.
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 반환 될 때 원본 주소를 보유 하는 구조입니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 반환 될 때 원본 주소를 보유 하는 구조입니다.
 
 *lpSockAddrLen*<br/>
 원본 주소 길이에 대 한 포인터 *lpSockAddr* (바이트)에서입니다.
@@ -1298,13 +1298,13 @@ IPv6 주소를 처리 하려면 [CAsyncSocket::ReceiveFromEx](#receivefromex)합
 
 데이터 그램 소켓에 대 한 데이터는 제공 된 버퍼의 크기를 최대 첫 번째 큐에 넣은 데이터 그램에서 추출 됩니다. 데이터 그램 제공 된 버퍼 보다 큰 경우 메시지의 첫 번째 부분을 사용 하 여 버퍼가 채워집니다, 초과 데이터는 손실 및 `ReceiveFrom` 오류 코드로 SOCKET_ERROR 값 WSAEMSGSIZE로 반환 합니다.
 
-하는 경우 *lpSockAddr* 이 값은 0 및 소켓은 SOCK_DGRAM 형식의 데이터를 전송 하는 소켓의 네트워크 주소를 해당 복사할 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조입니다. 가리키는 값 *lpSockAddrLen* 이 구조체의 크기로 초기화 되 고 여기에 저장 된 주소의 실제 크기를 나타내기 위해 반환이 수정 됩니다. 소켓에서 들어오는 데이터가 없는 경우는 `ReceiveFrom` 소켓이 아닌 도착 하는 데이터에 대 한 호출은 기다립니다 비차단 합니다. 이 경우 SOCKET_ERROR 값 WSAEWOULDBLOCK로 오류 코드로 반환 됩니다. `OnReceive` 콜백 더 많은 데이터가 도착 하는 경우 결정 데 사용할 수 있습니다.
+하는 경우 *lpSockAddr* 이 값은 0 및 소켓은 SOCK_DGRAM 형식의 데이터를 전송 하는 소켓의 네트워크 주소를 해당 복사할 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조입니다. 가리키는 값 *lpSockAddrLen* 이 구조체의 크기로 초기화 되 고 여기에 저장 된 주소의 실제 크기를 나타내기 위해 반환이 수정 됩니다. 소켓에서 들어오는 데이터가 없는 경우는 `ReceiveFrom` 소켓이 아닌 도착 하는 데이터에 대 한 호출은 기다립니다 비차단 합니다. 이 경우 SOCKET_ERROR 값 WSAEWOULDBLOCK로 오류 코드로 반환 됩니다. `OnReceive` 콜백 더 많은 데이터가 도착 하는 경우 결정 데 사용할 수 있습니다.
 
 소켓 SOCK_STREAM 형식이 며 원격측에 연결이 정상적으로 종료, 하는 경우는 `ReceiveFrom` 수신한 0 바이트를 사용 하 여 즉시 완료 됩니다.
 
 ##  <a name="receivefromex"></a>  CAsyncSocket::ReceiveFromEx
 
-데이터 그램을 받고에서 원본 주소를 저장 하려면이 멤버 함수를 호출 합니다 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조 나 *rSocketAddress* (IPv6 주소 처리).
+데이터 그램을 받고에서 원본 주소를 저장 하려면이 멤버 함수를 호출 합니다 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조 나 *rSocketAddress* (IPv6 주소 처리).
 
 ```
 int ReceiveFromEx(
@@ -1376,7 +1376,7 @@ int ReceiveFromEx(
 
 데이터 그램 소켓에 대 한 데이터는 제공 된 버퍼의 크기를 최대 첫 번째 큐에 넣은 데이터 그램에서 추출 됩니다. 데이터 그램 제공 된 버퍼 보다 큰 경우 메시지의 첫 번째 부분을 사용 하 여 버퍼가 채워집니다, 초과 데이터는 손실 및 `ReceiveFromEx` 오류 코드로 SOCKET_ERROR 값 WSAEMSGSIZE로 반환 합니다.
 
-하는 경우 *lpSockAddr* 이 값은 0 및 소켓은 SOCK_DGRAM 형식의 데이터를 전송 하는 소켓의 네트워크 주소를 해당 복사할 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조입니다. 가리키는 값 *lpSockAddrLen* 이 구조체의 크기로 초기화 되 고 여기에 저장 된 주소의 실제 크기를 나타내기 위해 반환이 수정 됩니다. 소켓에서 들어오는 데이터가 없는 경우는 `ReceiveFromEx` 소켓이 아닌 도착 하는 데이터에 대 한 호출은 기다립니다 비차단 합니다. 이 경우 SOCKET_ERROR 값 WSAEWOULDBLOCK로 오류 코드로 반환 됩니다. `OnReceive` 콜백 더 많은 데이터가 도착 하는 경우 결정 데 사용할 수 있습니다.
+하는 경우 *lpSockAddr* 이 값은 0 및 소켓은 SOCK_DGRAM 형식의 데이터를 전송 하는 소켓의 네트워크 주소를 해당 복사할 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조입니다. 가리키는 값 *lpSockAddrLen* 이 구조체의 크기로 초기화 되 고 여기에 저장 된 주소의 실제 크기를 나타내기 위해 반환이 수정 됩니다. 소켓에서 들어오는 데이터가 없는 경우는 `ReceiveFromEx` 소켓이 아닌 도착 하는 데이터에 대 한 호출은 기다립니다 비차단 합니다. 이 경우 SOCKET_ERROR 값 WSAEWOULDBLOCK로 오류 코드로 반환 됩니다. `OnReceive` 콜백 더 많은 데이터가 도착 하는 경우 결정 데 사용할 수 있습니다.
 
 소켓 SOCK_STREAM 형식이 며 원격측에 연결이 정상적으로 종료, 하는 경우는 `ReceiveFromEx` 수신한 0 바이트를 사용 하 여 즉시 완료 됩니다.
 
@@ -1444,7 +1444,7 @@ virtual int Send(
 
 ### <a name="remarks"></a>설명
 
-`Send` 연결 된 스트림 또는 데이터 그램 소켓에 보내는 데이터를 쓸 사용 됩니다. 데이터 그램 소켓에 대 한 주의 해야 하지 하 여 제공 된 기본 서브넷으로 최대 IP 패킷 크기를 초과 하는 `iMaxUdpDg` 요소에는 [WSADATA](../../mfc/reference/wsadata-structure.md) 반환한 구조 `AfxSocketInit`합니다. 데이터가 너무 길어 기본 프로토콜을 통해 자동으로 전달할 경우 WSAEMSGSIZE는 반환 된 오류를 통해 `GetLastError`, 데이터가 전송 됩니다.
+`Send` 연결 된 스트림 또는 데이터 그램 소켓에 보내는 데이터를 쓸 사용 됩니다. 데이터 그램 소켓에 대 한 주의 해야 하지 하 여 제공 된 기본 서브넷으로 최대 IP 패킷 크기를 초과 하는 `iMaxUdpDg` 요소에는 [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) 반환한 구조 `AfxSocketInit`합니다. 데이터가 너무 길어 기본 프로토콜을 통해 자동으로 전달할 경우 WSAEMSGSIZE는 반환 된 오류를 통해 `GetLastError`, 데이터가 전송 됩니다.
 
 데이터 그램 소켓 성공적으로 완료 된을 `Send` 성공적으로 전달 된 데이터를 나타내지 않습니다.
 
@@ -1496,7 +1496,7 @@ int SendTo(
 - MSG_OOB 대역의 데이터 보내기 (SOCK_STREAM에만 해당).
 
 *lpSockAddr*<br/>
-에 대 한 포인터를 [SOCKADDR](../../mfc/reference/sockaddr-structure.md) 대상 소켓의 주소를 포함 하는 구조입니다.
+에 대 한 포인터를 [SOCKADDR](/windows/desktop/winsock/sockaddr-2) 대상 소켓의 주소를 포함 하는 구조입니다.
 
 *nSockAddrLen*<br/>
 주소의 길이 *lpSockAddr* (바이트)에서입니다.
@@ -1513,7 +1513,7 @@ int SendTo(
 
 - WSAEINPROGRESS는 차단 하는 Windows 소켓 작업이 진행 중입니다.
 
-- WSAEFAULT 합니다 *lpBuf* 또는 *lpSockAddr* 매개 변수 사용자 주소 공간에 속하지 않는 또는 *lpSockAddr* 인수가 너무 작아서 ( 는크기보다작은[SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조).
+- WSAEFAULT 합니다 *lpBuf* 또는 *lpSockAddr* 매개 변수 사용자 주소 공간에 속하지 않는 또는 *lpSockAddr* 인수가 너무 작아서 ( 는크기보다작은[SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조).
 
 - WSAEINVAL 호스트 이름이 올바르지 않습니다.
 
@@ -1547,7 +1547,7 @@ int SendTo(
 
 ### <a name="remarks"></a>설명
 
-`SendTo` 데이터 그램 또는 스트림 소켓에서 사용 됩니다 하 고 소켓에 보내는 데이터를 쓸 사용 됩니다. 데이터 그램 소켓에 대 한 주의 해야 하지 하 여 제공 된 기본 서브넷으로 최대 IP 패킷 크기를 초과 하는 `iMaxUdpDg` 요소에는 [WSADATA](../../mfc/reference/wsadata-structure.md) 구조 작성 하 여 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). 데이터가 너무 길어 기본 프로토콜을 통해 자동으로 전달 하는 경우 오류 WSAEMSGSIZE 반환 되 고 데이터가 전송 됩니다.
+`SendTo` 데이터 그램 또는 스트림 소켓에서 사용 됩니다 하 고 소켓에 보내는 데이터를 쓸 사용 됩니다. 데이터 그램 소켓에 대 한 주의 해야 하지 하 여 제공 된 기본 서브넷으로 최대 IP 패킷 크기를 초과 하는 `iMaxUdpDg` 요소에는 [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) 구조 작성 하 여 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). 데이터가 너무 길어 기본 프로토콜을 통해 자동으로 전달 하는 경우 오류 WSAEMSGSIZE 반환 되 고 데이터가 전송 됩니다.
 
 성공적으로 완료 된 `SendTo` 성공적으로 전달 된 데이터를 나타내지 않습니다.
 
@@ -1603,7 +1603,7 @@ int SendToEx(
 
 - WSAEINPROGRESS는 차단 하는 Windows 소켓 작업이 진행 중입니다.
 
-- WSAEFAULT 합니다 *lpBuf* 또는 *lpSockAddr* 매개 변수 사용자 주소 공간에 속하지 않는 또는 *lpSockAddr* 인수가 너무 작아서 ( 는크기보다작은[SOCKADDR](../../mfc/reference/sockaddr-structure.md) 구조).
+- WSAEFAULT 합니다 *lpBuf* 또는 *lpSockAddr* 매개 변수 사용자 주소 공간에 속하지 않는 또는 *lpSockAddr* 인수가 너무 작아서 ( 는크기보다작은[SOCKADDR](/windows/desktop/winsock/sockaddr-2) 구조).
 
 - WSAEINVAL 호스트 이름이 올바르지 않습니다.
 
@@ -1639,7 +1639,7 @@ int SendToEx(
 
 이 메서드는 동일 [CAsyncSocket::SendTo](#sendto) IPv6 처리 한다는 점을 제외 하면 주소도으로 이전 프로토콜입니다.
 
-`SendToEx` 데이터 그램 또는 스트림 소켓에서 사용 됩니다 하 고 소켓에 보내는 데이터를 쓸 사용 됩니다. 데이터 그램 소켓에 대 한 주의 해야 하지 하 여 제공 된 기본 서브넷으로 최대 IP 패킷 크기를 초과 하는 `iMaxUdpDg` 요소에는 [WSADATA](../../mfc/reference/wsadata-structure.md) 구조 작성 하 여 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). 데이터가 너무 길어 기본 프로토콜을 통해 자동으로 전달 하는 경우 오류 WSAEMSGSIZE 반환 되 고 데이터가 전송 됩니다.
+`SendToEx` 데이터 그램 또는 스트림 소켓에서 사용 됩니다 하 고 소켓에 보내는 데이터를 쓸 사용 됩니다. 데이터 그램 소켓에 대 한 주의 해야 하지 하 여 제공 된 기본 서브넷으로 최대 IP 패킷 크기를 초과 하는 `iMaxUdpDg` 요소에는 [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) 구조 작성 하 여 [AfxSocketInit](../../mfc/reference/application-information-and-management.md#afxsocketinit). 데이터가 너무 길어 기본 프로토콜을 통해 자동으로 전달 하는 경우 오류 WSAEMSGSIZE 반환 되 고 데이터가 전송 됩니다.
 
 성공적으로 완료 된 `SendToEx` 성공적으로 전달 된 데이터를 나타내지 않습니다.
 
@@ -1699,7 +1699,7 @@ BOOL SetSockOpt(
 
 `SetSockOpt` 모든 상태에서 모든 형식의 소켓을 사용 하 여 연결 된 소켓 옵션의 현재 값을 설정 합니다. 옵션 여러 프로토콜 수준에서 존재할 수 있지만이 사양은 위 "소켓" 수준에서 존재 하는 옵션을 정의 합니다. 옵션 브로드캐스트 메시지 소켓에 전송할 수 있습니다 하 고 등 일반 데이터 스트림에서 긴급된 데이터가 수신 되는 여부와 같은 소켓 작업을 영향을 줍니다.
 
-소켓 옵션의 두 종류가 있습니다: 기능 또는 동작을 활성화 또는 비활성화 하는 부울 옵션과 정수 값 또는 구조를 필요로 하는 옵션입니다. 부울 옵션을 사용할 수 있도록 *lpOptionValue* 0이 아닌 정수를 가리킵니다. 옵션을 사용 하지 않으려면 *lpOptionValue* 0과 같은 정수를 가리킵니다. *nOptionLen* 같아야 `sizeof(BOOL)` 부울 옵션에 대 한 합니다. 다른 옵션에 대 한 *lpOptionValue* 정수 또는 옵션을 원하는 값을 포함 하는 구조를 가리키는 하 고 *nOptionLen* 클래스 또는 구조체는 정수입니다.
+소켓 옵션는 다음과 같은 두 종류가 있습니다. 기능 또는 동작을 활성화 또는 비활성화 하는 부울 옵션 및는 정수 값 또는 구조를 필요로 하는 옵션입니다. 부울 옵션을 사용할 수 있도록 *lpOptionValue* 0이 아닌 정수를 가리킵니다. 옵션을 사용 하지 않으려면 *lpOptionValue* 0과 같은 정수를 가리킵니다. *nOptionLen* 같아야 `sizeof(BOOL)` 부울 옵션에 대 한 합니다. 다른 옵션에 대 한 *lpOptionValue* 정수 또는 옵션을 원하는 값을 포함 하는 구조를 가리키는 하 고 *nOptionLen* 클래스 또는 구조체는 정수입니다.
 
 SO_LINGER 소켓에서 대기 하는 보내지 않은 데이터가 때 수행할 동작을 제어 및 `Close` 함수가 호출 되어 소켓을 닫습니다.
 
@@ -1707,7 +1707,7 @@ SO_LINGER 소켓에서 대기 하는 보내지 않은 데이터가 때 수행할
 
 Windows 소켓 구현에 알림을 보내야 하는 `Bind` 소켓에 대 한 호출이 다른 소켓에서 사용 하 여 이미 원하는 주소 기 때문에 허용 되지 해야, 응용 프로그램 실행 하기 전에 소켓 SO_REUSEADDR 소켓 옵션을 설정 해야 합니다 `Bind` 호출 합니다. 옵션의 경우에만 해석 됩니다는 `Bind` 호출: 따라서 필요 없는 (무해) 하지만 기존 주소를 바인딩할 필요가 소켓 옵션을 설정 하 고 하거나 다시 설정 후 옵션을는 `Bind` 호출에 이 또는 다른 소켓에 아무런 영향이 없습니다.
 
-응용 프로그램은 Windows 소켓 구현이 SO_KEEPALIVE 소켓 옵션을 설정 하 여 전송 제어 프로토콜 (TCP) 연결에서 "유지" 패킷 사용할 수 있도록 요청할 수 있습니다. Windows 소켓 구현을 연결 유지 사용을 지원 하지 않아도:이 경우 정확한 의미 체계 구현 별 되지만의 RFC 1122 4.2.3.6를 준수 해야: "인터넷 호스트에 대 한 요구 사항-통신 계층입니다." 연결 결과로 삭제 되 면 "연결 유지"의 오류 코드 WSAENETRESET 진행 중인 모든 호출에 소켓에서 돌아가고 WSAENOTCONN를 사용 하 여 모든 후속 호출은 실패 합니다.
+응용 프로그램은 Windows 소켓 구현이 SO_KEEPALIVE 소켓 옵션을 설정 하 여 전송 제어 프로토콜 (TCP) 연결에서 "유지" 패킷 사용할 수 있도록 요청할 수 있습니다. Windows 소켓 구현을 연결 유지 사용을 지원 하지 않아도:이 경우 정확한 의미 체계 구현 별 되지만의 RFC 1122 4.2.3.6를 준수 해야 합니다. "인터넷 호스트에 대 한 요구 사항-통신 계층입니다." 연결 결과로 삭제 되 면 "연결 유지"의 오류 코드 WSAENETRESET 진행 중인 모든 호출에 소켓에서 돌아가고 WSAENOTCONN를 사용 하 여 모든 후속 호출은 실패 합니다.
 
 TCP_NODELAY 옵션 Nagle 알고리즘을 사용 하지 않도록 설정 합니다. Nagle 알고리즘은 큰 패킷을 보낼 수까지 어댑터로 송신 데이터를 버퍼링 하 여 호스트에서 전송 하는 작은 패킷 수를 줄이는 데 사용 됩니다. 그러나 일부 응용 프로그램에 대 한이 알고리즘 성능 방해할 수 있으며 TCP_NODELAY 해제 데 사용할 수 있습니다. 아닌 경우의 영향 하므로 잘 알려져 있으며 원하는 TCP_NODELAY 설정 네트워크 성능에 크게 저하 될 수 있으므로 응용 프로그램 작성자 TCP_NODELAY를 설정 하지 않아야 합니다. TCP_NODELAY은 경우에 지원 되는 수준 IPPROTO_TCP;를 사용 하는 소켓 옵션 다른 모든 옵션에는 SOL_SOCKET 수준을 사용합니다.
 
@@ -1809,7 +1809,7 @@ BOOL Socket(
 *lEvent*<br/>
 응용 프로그램에는 관여 하는 네트워크 이벤트의 조합을 지정 하는 비트 마스크입니다.
 
-- `FD_READ`: 준비 읽기에 대 한 알림을 받도록 하려고 합니다.
+- `FD_READ`: 읽기에 대 한 준비 상태에 대 한 알림을 수신 하려고 합니다.
 
 - `FD_WRITE`: 작성 하기 위한 준비에 대 한 알림을 수신 하려고 합니다.
 

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CBrush [MFC], FromHandle
 - CBrush [MFC], GetLogBrush
 ms.assetid: e5ef2c62-dd95-4973-9090-f52f605900e1
-ms.openlocfilehash: 4f6b5db22b956584507a2979a517ff26d5364a0c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dbc5e36fdf613f1db2818ac6193709829e3bd001
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661645"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178709"
 ---
 # <a name="cbrush-class"></a>CBrush 클래스
 
@@ -185,7 +185,7 @@ BOOL CreateDIBPatternBrush(
 압축 된 장치 독립적 비트맵이 DIB ()를 포함 하는 전역 메모리 개체를 식별 합니다.
 
 *nUsage*<br/>
-지정 여부를 합니다 `bmiColors[]` 의 필드를 [BITMAPINFO](../../mfc/reference/bitmapinfo-structure.md) 현재 실현된 논리 팔레트에 명시적 RGB 값 또는 인덱스를 포함 하는 데이터 구조 ("압축 DIB"의 일부). 매개 변수는 다음 값 중 하나 여야 합니다.
+지정 여부를 합니다 `bmiColors[]` 의 필드를 [BITMAPINFO](/windows/desktop/api/wingdi/ns-wingdi-tagbitmapinfo) 현재 실현된 논리 팔레트에 명시적 RGB 값 또는 인덱스를 포함 하는 데이터 구조 ("압축 DIB"의 일부). 매개 변수는 다음 값 중 하나 여야 합니다.
 
 - DIB_PAL_COLORS 색은 16 비트 인덱스 배열을 이루어져 있습니다.
 

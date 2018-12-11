@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: 2eebfe18275aa63ac26c0c898a5d796300860db8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8cfaef2c8b064cb9faa8c0f6bf65a8868eed7cc7
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476624"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178742"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
 
@@ -787,7 +787,7 @@ virtual void OnFindNext(
 찾을 문자열입니다.
 
 *다음*<br/>
-검색 방향입니다: TRUE 이면 중지 하도록 합니다. FALSE를 설정 합니다.
+검색 방향: TRUE 이면 중지 하도록 합니다. FALSE를 설정 합니다.
 
 *bCase*<br/>
 검색은 대/소문자 구분 여부를 나타냅니다.
@@ -933,7 +933,7 @@ virtual void OnReplaceSel(
 바꿀 텍스트입니다.
 
 *다음*<br/>
-검색의 방향을 나타냅니다: TRUE입니다. FALSE를 설정 합니다.
+검색의 방향을 나타냅니다. TRUE가입니다. FALSE를 설정 합니다.
 
 *bCase*<br/>
 검색은 대/소문자 구분 하는 경우를 나타냅니다.
@@ -1050,7 +1050,7 @@ long PrintInsideRect(
 출력 영역에 대 한 장치 컨텍스트에 대 한 포인터입니다.
 
 *rectLayout*<br/>
-[RECT](../../mfc/reference/rect-structure1.md) 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 출력 영역을 정의 하는 합니다.
+[RECT](/windows/desktop/api/windef/ns-windef-tagrect) 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 출력 영역을 정의 하는 합니다.
 
 *nIndexStart*<br/>
 서식을 지정할 첫 번째 문자의 0부터 시작 인덱스입니다.

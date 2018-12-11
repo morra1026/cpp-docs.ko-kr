@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: a565e1c9d9c9e4d3773763b0ee78c49f61696723
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d9a2d33f61aa9033bb17c090989b4f08ee82bd7
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617544"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178384"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd 클래스
 
@@ -160,7 +160,7 @@ virtual BOOL CreateClient(
 ### <a name="parameters"></a>매개 변수
 
 *lpCreateStruct*<br/>
-에 대 한 긴 포인터를 [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) 구조입니다.
+에 대 한 긴 포인터를 [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구조입니다.
 
 *pWindowMenu*<br/>
 팝업 창 메뉴에 대 한 포인터입니다.
@@ -276,7 +276,7 @@ void MDICascade(int nType);
 ### <a name="parameters"></a>매개 변수
 
 *n 형식*<br/>
-Cascade 플래그를 지정합니다. 다음 플래그를 지정할 수 있습니다: MDITILE_SKIPDISABLED 비활성화 된 MDI 자식 창을 연계 되 고 않도록 하는 합니다.
+Cascade 플래그를 지정합니다. 다음 플래그를 지정할 수 있습니다. MDITILE_SKIPDISABLED 비활성화 된 MDI 자식 창을 연계 되 고 않도록 하는 합니다.
 
 ### <a name="remarks"></a>설명
 

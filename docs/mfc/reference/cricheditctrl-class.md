@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: 756f50afd9b67e4895d8d1b15652602630c24918
-ms.sourcegitcommit: 984fb4814a2dd9bcea5ec88c9528707f17a7cffa
+ms.openlocfilehash: c42f7b77c04b2c94923908fa8b9542bea313b154
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51949546"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178995"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 
@@ -427,7 +427,7 @@ virtual BOOL Create(
 편집 컨트롤의 스타일을 지정합니다. 에 나열 된 창 스타일의 조합을 적용 합니다 **주의** 섹션 아래 및 [컨트롤 스타일을 편집](/windows/desktop/Controls/edit-control-styles)Windows SDK에서 설명 합니다.
 
 *rect*<br/>
-편집 컨트롤의 크기와 위치를 지정합니다. 수는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.
+편집 컨트롤의 크기와 위치를 지정합니다. 수는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조입니다.
 
 *pParentWnd*<br/>
 편집 컨트롤의 부모 창 지정 (종종를 [CDialog](../../mfc/reference/cdialog-class.md)). NULL이 아니어야 합니다.
@@ -552,7 +552,7 @@ BOOL DisplayBand(LPRECT pDisplayRect);
 ### <a name="parameters"></a>매개 변수
 
 *pDisplayRect*<br/>
-에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure1.md) 하거나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 영역의 텍스트를 표시할 장치를 지정 하는 개체입니다.
+에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 하거나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 영역의 텍스트를 표시할 장치를 지정 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -973,7 +973,7 @@ void GetRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) 또는에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure1.md) 의 서식 지정 영역을 받으려면 `CRichEditCtrl` 개체입니다.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) 또는에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 의 서식 지정 영역을 받으려면 `CRichEditCtrl` 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1855,7 +1855,7 @@ void SetRect(LPCRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-[CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure1.md) 서식 지정 영역에 대 한 새 범위를 나타내는입니다.
+[CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 서식 지정 영역에 대 한 새 범위를 나타내는입니다.
 
 ### <a name="remarks"></a>설명
 

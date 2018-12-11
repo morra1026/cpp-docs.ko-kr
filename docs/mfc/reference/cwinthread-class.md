@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 0f6c41b3675251df6b07e44003215fa67fb7e795
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 9c2b393354f65195e0d0060a08b83e321e3d5b1d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694194"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178423"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
@@ -126,7 +126,7 @@ class CWinThread : public CCmdTarget
 
 호출 하는 대신 `AfxBeginThread`를 생성할 수는 `CWinThread`-파생 개체와 호출 `CreateThread`합니다. 이 두 단계 생성 방법은 다시 사용 하려는 경우에 유용 합니다 `CWinThread` 연속 생성 및 종료 스레드 실행 간에 개체입니다.
 
-에 대 한 자세한 `CWinThread`, 문서를 참조 하세요 [c + + 및 MFC 다중 스레딩](../../parallel/multithreading-with-cpp-and-mfc.md)를 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md), [다중 스레딩: 작업자 만들기 스레드](../../parallel/multithreading-creating-worker-threads.md), 및 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
+에 대 한 자세한 `CWinThread`, 문서를 참조 하세요 [c + + 및 MFC 다중 스레딩](../../parallel/multithreading-with-cpp-and-mfc.md), [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md), [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md), 및 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -458,7 +458,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-가리키는 [MSG 구조체](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 합니다.
+가리키는 [MSG 구조체](/windows/desktop/api/winuser/ns-winuser-tagmsg) 처리할 메시지를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -484,7 +484,7 @@ virtual BOOL ProcessMessageFilter(
 후크 코드를 지정합니다. 이 멤버 함수는 코드를 사용 하 여 처리 하는 방법을 결정 *lpMsg 합니다.*
 
 *lpMsg*<br/>
-Windows에 대 한 포인터 [MSG 구조체](../../mfc/reference/msg-structure1.md)합니다.
+Windows에 대 한 포인터 [MSG 구조체](/windows/desktop/api/winuser/ns-winuser-tagmsg)합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -512,7 +512,7 @@ virtual LRESULT ProcessWndProcException(
 처리 되지 않은 예외를 가리킵니다.
 
 *pMsg*<br/>
-가리키는 [MSG 구조체](../../mfc/reference/msg-structure1.md) 예외를 throw 하기 위해 프레임 워크를 발생 시킨 windows 메시지에 대 한 정보를 포함 합니다.
+가리키는 [MSG 구조체](/windows/desktop/api/winuser/ns-winuser-tagmsg) 예외를 throw 하기 위해 프레임 워크를 발생 시킨 windows 메시지에 대 한 정보를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
 

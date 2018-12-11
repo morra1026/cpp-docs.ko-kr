@@ -80,12 +80,12 @@ helpviewer_keywords:
 - CMFCButton [MFC], m_nAlignStyle
 - CMFCButton [MFC], m_nFlatStyle
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-ms.openlocfilehash: b33c4c89276b99b6b5f8a4129ef17f809f058ac5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a82793ce29765bf01e8c52c94257bd3150187505
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547318"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178465"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 
@@ -567,7 +567,7 @@ virtual void OnDraw(
 [in] 단추를 제한 하는 사각형에 대 한 참조입니다.
 
 *uiState*<br/>
-[in] 현재 단추 상태입니다. 자세한 내용은 참조는 `itemState` 의 멤버는 [DRAWITEMSTRUCT 구조체](../../mfc/reference/drawitemstruct-structure.md) 항목.
+[in] 현재 단추 상태입니다. 자세한 내용은 참조는 `itemState` 의 멤버는 [DRAWITEMSTRUCT 구조체](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 항목.
 
 ### <a name="remarks"></a>설명
 
@@ -593,7 +593,7 @@ virtual void OnDrawBorder(
 [in] 단추를 제한 하는 사각형에 대 한 참조입니다.
 
 *uiState*<br/>
-[in] 현재 단추 상태입니다. 자세한 내용은 참조는 `itemState` 의 멤버는 [DRAWITEMSTRUCT 구조체](../../mfc/reference/drawitemstruct-structure.md) 항목.
+[in] 현재 단추 상태입니다. 자세한 내용은 참조는 `itemState` 의 멤버는 [DRAWITEMSTRUCT 구조체](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 항목.
 
 ### <a name="remarks"></a>설명
 

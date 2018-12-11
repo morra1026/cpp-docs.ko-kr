@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: bed403e4bc1cca1d31a394be7157de9e65abff95
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cedd1bfd4ea955f920e13b5d01beb3a478656b69
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519446"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178124"
 ---
 # <a name="ctime-class"></a>CTime 클래스
 
@@ -169,10 +169,10 @@ CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `CTime` 개체입니다.
 
 *st*<br/>
-A [SYSTEMTIME](../../mfc/reference/systemtime-structure.md) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
+A [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
 
 *ft*<br/>
-A [FILETIME](../../mfc/reference/filetime-structure.md) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
+A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
 
 *dbts*<br/>
 현재 현지 시간을 포함 하는 DBTIMESTAMP 구조체에 대 한 참조입니다.

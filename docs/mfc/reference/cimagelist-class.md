@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: d311c064d9b91967a60823fc3fd0e43f22a119c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bcf815fce4123ca1014e1679fd810c1ce321be4
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500765"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178592"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 
@@ -479,7 +479,7 @@ static BOOL PASCAL DragEnter(
 *pWndLock*<br/>
 끌기 이미지를 소유 하는 창에 대 한 포인터입니다.
 
-*지점*<br/>
+*point*<br/>
 끌기 이미지를 표시 하는 위치입니다. 클라이언트 영역이 아닌 창의 왼쪽된 위 모퉁이 기준으로 좌표는입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -529,7 +529,7 @@ static BOOL PASCAL DragMove(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 새 위치를 끕니다.
 
 ### <a name="return-value"></a>반환 값
@@ -585,7 +585,7 @@ BOOL Draw(
 *nImage*<br/>
 그릴 이미지의 0부터 시작 인덱스입니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 지정 된 디바이스 컨텍스트 내에 그릴 위치입니다.
 
 *nStyle*<br/>
@@ -630,7 +630,7 @@ BOOL DrawEx(
 *nImage*<br/>
 그릴 이미지의 0부터 시작 인덱스입니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 지정 된 디바이스 컨텍스트 내에 그릴 위치입니다.
 
 *sz*<br/>
@@ -690,11 +690,11 @@ BOOL DrawIndirect(
 *nImage*<br/>
 그릴 이미지의 0부터 시작 하는 인덱스입니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 의 x 좌표와 y-이미지를 그릴 위치를 포함 하는 구조체.
 
 *sz*<br/>
-A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 그릴 이미지의 크기를 나타내는 구조입니다.
+A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 그릴 이미지의 크기를 나타내는 구조입니다.
 
 *ptOrigin*<br/>
 A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 포함 된 x 및 y 좌표 이미지 자체와 관련 하 여 그리기 작업의 왼쪽된 위 모퉁이 지정 하는 구조입니다. 이미지의 픽셀에 대 한 x-좌표 이상에 대 한 y-좌표는 왼쪽에 그려집니다.
