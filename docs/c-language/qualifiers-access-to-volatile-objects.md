@@ -17,4 +17,4 @@ volatile 한정 형식에 대한 모든 참조가 액세스입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[구현 ](../c-language/implementation-defined-behavior.md)
