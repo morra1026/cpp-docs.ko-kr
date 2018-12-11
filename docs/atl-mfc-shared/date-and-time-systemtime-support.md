@@ -11,18 +11,18 @@ helpviewer_keywords:
 - dates [C++], MFC
 - formatting [C++], time
 ms.assetid: 201528e4-2ffa-48fc-af8f-203aa86d942a
-ms.openlocfilehash: 6074eff2db45bfa69f83d7c45be1203dd19cc987
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: db19d236d0f0d8672f08c808237de471bf5bc64d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549918"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53177735"
 ---
 # <a name="date-and-time-systemtime-support"></a>날짜 및 시간: SYSTEMTIME 지원
 
 합니다 [CTime](../atl-mfc-shared/reference/ctime-class.md) 클래스에는 Win32에서 시스템 및 파일 시간을 허용 하는 생성자가 있습니다. 이러한 용도로 `CTime` 개체를 사용하는 경우 이 문서에서 설명하는 대로 해당 초기화를 적절하게 수정해야 합니다.
 
-SYSTEMTIME 구조체에 대 한 정보를 참조 하세요 [SYSTEMTIME](../mfc/reference/systemtime-structure.md)합니다. FILETIME 구조체에 대 한 정보를 참조 하세요 [FILETIME](../mfc/reference/filetime-structure.md)합니다.
+SYSTEMTIME 구조체에 대 한 정보를 참조 하세요 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950)합니다. FILETIME 구조체에 대 한 정보를 참조 하세요 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)합니다.
 
 MFC는 MS-DOS 스타일의 시간 인수를 가져오는 `CTime` 생성자를 계속 제공합니다. 그러나 MFC 버전 3.0부터 `CTime` 클래스는 Win32 `SYSTEMTIME` 구조체를 가져오는 생성자와 Win32 `FILETIME` 구조체를 가져오는 또 다른 생성자도 지원합니다.
 

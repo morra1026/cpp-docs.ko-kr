@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: 879f7d6eb4887dfebcc9b2be393b60da4942a351
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9eac0f7efdacc6181d8aaa15398f4d7365c0edd3
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614936"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178501"
 ---
 # <a name="cdialog-class"></a>CDialog 클래스
 
@@ -69,7 +69,7 @@ class CDialog : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[CDialog::Create](#create)|초기화는 `CDialog` 개체입니다. 모덜리스 대화 상자를 만들고 연결 하는 `CDialog` 개체입니다.|
+|[CDialog::Create](#create)|`CDialog` 개체를 초기화합니다. 모덜리스 대화 상자를 만들고 연결 하는 `CDialog` 개체입니다.|
 |[CDialog::CreateIndirect](#createindirect)|(리소스 기반 아님) 메모리의 대화 상자 템플릿에서 모덜리스 대화 상자를 만듭니다.|
 |[CDialog::DoModal](#domodal)|모달 대화 상자를 호출 하 고 수행 하는 경우를 반환 합니다.|
 |[CDialog::EndDialog](#enddialog)|모달 대화 상자를 닫습니다.|
@@ -405,7 +405,7 @@ void MapDialogRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 변환할 조정 대화 상자를 포함 하는 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 변환할 조정 대화 상자를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
 

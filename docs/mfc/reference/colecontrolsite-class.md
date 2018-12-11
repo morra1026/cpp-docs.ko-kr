@@ -106,12 +106,12 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-ms.openlocfilehash: c9aa5b57b2610dbe0528d99d1c8ad996e1fc4a60
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26d0f5e875c4f3982705a2cf571b15cd5bfac985
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437806"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178925"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite 클래스
 
@@ -444,7 +444,7 @@ virtual BOOL EnableWindow(BOOL bEnable);
 ### <a name="parameters"></a>매개 변수
 
 *bEnable*<br/>
-창을 사용할지 여부를 지정 합니다: 창 입력 되 면 사용이 고, 그렇지 않으면 FALSE를 TRUE입니다.
+창을 사용할지 여부를 지정 합니다. 창 입력 설정 된 경우, 그렇지 않으면 FALSE 이면 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1062,7 +1062,7 @@ virtual CWnd* SetFocus(LPMSG lpmsg);
 ### <a name="parameters"></a>매개 변수
 
 *lpmsg*<br/>
-에 대 한 포인터를 [MSG 구조체](../../mfc/reference/msg-structure1.md)합니다. 이 구조에 포함 된 Windows 메시지 트리거하는 `SetFocus` 현재 컨트롤 사이트에 포함 된 컨트롤에 대 한 요청입니다.
+에 대 한 포인터를 [MSG 구조체](/windows/desktop/api/winuser/ns-winuser-tagmsg)합니다. 이 구조에 포함 된 Windows 메시지 트리거하는 `SetFocus` 현재 컨트롤 사이트에 포함 된 컨트롤에 대 한 요청입니다.
 
 ### <a name="return-value"></a>반환 값
 

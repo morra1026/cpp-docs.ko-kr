@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 295f61ed120e957bc0d5ec1746e7d3bdfbb6d001
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6722011bf343a391fcc7180558eead5c039afc59
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624603"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178176"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 
@@ -155,7 +155,7 @@ BOOL CreateBitmap(
 
 `CBitmap` 함수에서 만들어진 `CreateBitmap` 개체 사용을 완료하면 먼저 장치 컨텍스트에서 비트맵을 선택하고 나서 `CBitmap` 개체를 삭제합니다.
 
-자세한 내용은 참조에 대 한 설명을 `bmBits` 필드에 `BITMAP` 구조입니다. [BITMAP](../../mfc/reference/bitmap-structure.md) 구조체는 [CBitmap::CreateBitmapIndirect](#createbitmapindirect) 멤버 함수에서 설명합니다.
+자세한 내용은 참조에 대 한 설명을 `bmBits` 필드에 `BITMAP` 구조입니다. [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 구조체는 [CBitmap::CreateBitmapIndirect](#createbitmapindirect) 멤버 함수에서 설명합니다.
 
 ##  <a name="createbitmapindirect"></a>  Cbitmap:: Createbitmapindirect
 
@@ -168,7 +168,7 @@ BOOL CreateBitmapIndirect(LPBITMAP lpBitmap);
 ### <a name="parameters"></a>매개 변수
 
 *lpBitmap*<br/>
-가리키는 [비트맵](../../mfc/reference/bitmap-structure.md) 비트맵에 대 한 정보를 포함 하는 구조입니다.
+가리키는 [비트맵](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 비트맵에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -286,7 +286,7 @@ int GetBitmap(BITMAP* pBitMap);
 ### <a name="parameters"></a>매개 변수
 
 *pBitMap*<br/>
-에 대 한 포인터를 [비트맵 구조](../../mfc/reference/bitmap-structure.md) 이미지 속성을 받는 구조체입니다. 이 매개 변수가 NULL이 아니어야 합니다.
+에 대 한 포인터를 [비트맵](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 이미지 속성을 받는 구조체입니다. 이 매개 변수가 NULL이 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 

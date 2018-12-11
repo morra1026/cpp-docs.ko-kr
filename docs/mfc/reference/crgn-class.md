@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 9c08b679f1423b499a5b95b260fd0fac9ddeaf9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74ee046e81e0f55e5550220166c957317c2bf6cd
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467982"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178553"
 ---
 # <a name="crgn-class"></a>CRgn 클래스
 
@@ -78,13 +78,13 @@ class CRgn : public CGdiObject
 |[CRgn::CombineRgn](#combinergn)|집합을 `CRgn` 개체의 지정 된 두 합집합에 해당 하는 것에 있도록 `CRgn` 개체입니다.|
 |[CRgn::CopyRgn](#copyrgn)|집합을 `CRgn` 개체는 지정된 된 사본을 `CRgn` 개체입니다.|
 |[CRgn::CreateEllipticRgn](#createellipticrgn)|초기화는 `CRgn` 타원형 지역이 있는 개체입니다.|
-|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|초기화를 `CRgn` 정의한 타원형 영역을 사용 하 여 개체를 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.|
+|[CRgn::CreateEllipticRgnIndirect](#createellipticrgnindirect)|초기화를 `CRgn` 정의한 타원형 영역을 사용 하 여 개체를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조입니다.|
 |[CRgn::CreateFromData](#createfromdata)|지정된 된 지역 및 변환 데이터에서 영역을 만듭니다.|
 |[CRgn::CreateFromPath](#createfrompath)|지정 된 장치 컨텍스트로 선택 된 경로에서 영역을 만듭니다.|
 |[CRgn::CreatePolygonRgn](#createpolygonrgn)|초기화는 `CRgn` 다각형 영역을 사용 하 여 개체입니다. 시스템이 닫습니다 다각형 자동으로 필요한 경우 첫 번째와 마지막 꼭지점에서 선을 그려.|
 |[CRgn::CreatePolyPolygonRgn](#createpolypolygonrgn)|초기화는 `CRgn` 는 일련의 닫힌된 다각형으로 구성 된 지역과 개체입니다. 다각형이 있거나 겹칠 수 있습니다.|
 |[CRgn::CreateRectRgn](#createrectrgn)|초기화는 `CRgn` 사각형 영역을 사용 하 여 개체입니다.|
-|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|초기화를 `CRgn` 하 여 정의 된 사각형 영역을 사용 하 여 개체를 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.|
+|[CRgn::CreateRectRgnIndirect](#createrectrgnindirect)|초기화를 `CRgn` 하 여 정의 된 사각형 영역을 사용 하 여 개체를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조입니다.|
 |[CRgn::CreateRoundRectRgn](#createroundrectrgn)|초기화는 `CRgn` 모퉁이가 둥근 사각형 영역을 사용 하 여 개체입니다.|
 |[CRgn::EqualRgn](#equalrgn)|에서는 두 `CRgn` 동일한 지 여부를 결정 하는 개체입니다.|
 |[CRgn::FromHandle](#fromhandle)|에 대 한 포인터를 반환 합니다.는 `CRgn` Windows 지역에 대 한 핸들을 지정 하는 경우 개체입니다.|
@@ -297,13 +297,13 @@ BOOL CreateFromData(
 ### <a name="parameters"></a>매개 변수
 
 *lpXForm*<br/>
-가리키는 [XFORM](../../mfc/reference/xform-structure.md) 영역에서 수행할 변환을 정의 하는 데이터 구조입니다. 이 포인터가 NULL 인 경우 id 변환을 사용 됩니다.
+가리키는 [XFORM](/windows/desktop/api/wingdi/ns-wingdi-tagxform) 영역에서 수행할 변환을 정의 하는 데이터 구조입니다. 이 포인터가 NULL 인 경우 id 변환을 사용 됩니다.
 
 *nCount*<br/>
 가리키는 바이트 수를 지정 *pRgnData*합니다.
 
 *pRgnData*<br/>
-가리키는 [RGNDATA](../../mfc/reference/rgndata-structure.md) 지역 데이터를 포함 하는 데이터 구조입니다.
+가리키는 [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) 지역 데이터를 포함 하는 데이터 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -631,7 +631,7 @@ int GetRegionData(
 ### <a name="parameters"></a>매개 변수
 
 *lpRgnData*<br/>
-가리키는 [RGNDATA](../../mfc/reference/rgndata-structure.md) 정보를 수신 하는 데이터 구조입니다. 이 매개 변수가 NULL 인 경우 반환 값에는 지역의 데이터에 필요한 바이트 수를 포함 합니다.
+가리키는 [RGNDATA](/windows/desktop/api/wingdi/ns-wingdi-_rgndata) 정보를 수신 하는 데이터 구조입니다. 이 매개 변수가 NULL 인 경우 반환 값에는 지역의 데이터에 필요한 바이트 수를 포함 합니다.
 
 *nCount*<br/>
 크기 (바이트) 지정 합니다 *lpRgnData* 버퍼입니다.
@@ -705,7 +705,7 @@ int OffsetRgn(POINT point);
 *y*<br/>
 위로 또는 아래로 이동할 단위의 수를 지정 합니다.
 
-*지점*<br/>
+*point*<br/>
 x 좌표 *지점* 오른쪽 또는 왼쪽으로 이동할 단위의 수를 지정 합니다. y 좌표 *지점* 위나 아래로 이동할 단위의 수를 지정 합니다. 합니다 *가리킨* 매개 변수 중 하나일 수 있습니다는 `POINT` 구조 또는 `CPoint` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -768,7 +768,7 @@ BOOL PtInRegion(POINT point) const;
 *y*<br/>
 테스트할 점의의 논리적 y 좌표를 지정 합니다.
 
-*지점*<br/>
+*point*<br/>
 x 좌표와 y 좌표 *지점* 의 값을 테스트할 점의 x 및 y 좌표를 지정 합니다. 합니다 *가리킨* 매개 변수 수는 `POINT` 구조 또는 `CPoint` 개체입니다.
 
 ### <a name="return-value"></a>반환 값

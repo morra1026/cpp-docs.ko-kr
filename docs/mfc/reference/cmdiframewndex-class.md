@@ -156,12 +156,12 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bCanCovertControlBarToMDIChild
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
-ms.openlocfilehash: be9ecf2eaabb51f4c2dffd996bca76bd3f4c9128
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ed2d1de2a91f90cd4e7efecac728e66f86d95a6
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512869"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178632"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx 클래스
 
@@ -180,7 +180,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |이름|설명|
 |----------|-----------------|
 |[CMDIFrameWndEx::ActiveItemRecalcLayout](#activeitemrecalclayout)|활성 항목의 레이아웃을 다시 계산 됩니다.|
-|`CMDIFrameWndEx::AddDockSite`|이 메서드는 사용 되지 않습니다.|
+|`CMDIFrameWndEx::AddDockSite`|이 메서드가 사용되지 않습니다.|
 |[CMDIFrameWndEx::AddPane](#addpane)|창을 도킹 관리자에 등록합니다.|
 |[CMDIFrameWndEx::AdjustClientArea](#adjustclientarea)|클라이언트 영역 테두리에 대 한 허용을 줄일 수 있습니다.|
 |[CMDIFrameWndEx::AdjustDockingLayout](#adjustdockinglayout)|모든 도킹 된 창 레이아웃 다시 계산 됩니다.|
@@ -270,7 +270,7 @@ MDI 응용 프로그램에서 확장 된 사용자 지정 기능을 사용 하�
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 파생 클래스에서 `CMDIFrameWndEx`합니다. 이 코드 조각에서 제공 되는 [DrawClient 샘플: MFC Ribbon-Based OLE 개체 그리기 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 파생 클래스에서 `CMDIFrameWndEx`합니다. 이 코드 조각에서 제공 되는 [DrawClient 샘플: MFC 리본 기반의 OLE 개체 그리기 응용 프로그램](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_DrawClient#1](../../mfc/reference/codesnippet/cpp/cmdiframewndex-class_1.h)]
 
@@ -366,7 +366,7 @@ BOOL AreMDITabs(int* pnMDITabsType=NULL) const;
 
 - 0: 모든 기능이 비활성화 됩니다.
 
-- 1: MDI 탭 사용 하도록 설정 합니다.
+- 1: MDI 탭을 사용 합니다.
 
 - 2: MDI 탭 그룹을 사용할 수 있습니다.
 
@@ -449,7 +449,7 @@ virtual CMDIChildWndEx* CreateDocumentWindow(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `CreateDocumentWindow` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `CreateDocumentWindow` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 이 예제에서는 `g_strStartViewName` 문서의"가상" (예: "시작 페이지")는 디스크 파일에서 실제로 로드 되지 않은 이름일 수 있습니다. 따라서 이런 경우를 처리 하는 특수 한 처리 해야 합니다.
 
@@ -505,7 +505,7 @@ void DockPane(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `DockPane` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `DockPane` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#4](../../mfc/codesnippet/cpp/cmdiframewndex-class_3.cpp)]
 
@@ -537,7 +537,7 @@ BOOL DockPaneLeftOf(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 하는 방법을 `DockPaneLeftOf` 메서드를 사용 합니다 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제와 방법을 `DockPaneLeftOf` 메서드를 사용 합니다 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#5](../../mfc/codesnippet/cpp/cmdiframewndex-class_4.cpp)]
 
@@ -568,7 +568,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 하는 방법을 `EnableAutoHidePanes` 메서드를 사용 합니다 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제와 방법을 `EnableAutoHidePanes` 메서드를 사용 합니다 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#6](../../mfc/codesnippet/cpp/cmdiframewndex-class_5.cpp)]
 
@@ -595,7 +595,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 하는 방법을 `EnableDocking` 메서드를 사용 합니다 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제와 방법을 `EnableDocking` 메서드를 사용 합니다 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#7](../../mfc/codesnippet/cpp/cmdiframewndex-class_6.cpp)]
 
@@ -686,7 +686,7 @@ MDI 탭 그룹은 이미 설정 된 경우에 다시 자식 창에 대 한 설�
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `EnableMDITabbedGroups` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `EnableMDITabbedGroups` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#8](../../mfc/codesnippet/cpp/cmdiframewndex-class_7.cpp)]
 
@@ -807,7 +807,7 @@ void EnablePaneMenu(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `EnablePaneMenu` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `EnablePaneMenu` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#9](../../mfc/codesnippet/cpp/cmdiframewndex-class_9.cpp)]
 
@@ -849,7 +849,7 @@ void EnableWindowsDialog(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `EnableWindowsDialog` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `EnableWindowsDialog` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#10](../../mfc/codesnippet/cpp/cmdiframewndex-class_10.cpp)]
 
@@ -1132,7 +1132,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표에서 지정 된 지점입니다.
 
 *dwBarAlignment*<br/>
@@ -1224,7 +1224,7 @@ virtual BOOL LoadMDIState(LPCTSTR lpszProfileName);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `LoadMDIState` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `LoadMDIState` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#11](../../mfc/codesnippet/cpp/cmdiframewndex-class_11.cpp)]
 
@@ -1260,7 +1260,7 @@ void MDITabNewGroup(BOOL bVert=TRUE);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `MDITabNewGroup` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `MDITabNewGroup` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#12](../../mfc/codesnippet/cpp/cmdiframewndex-class_12.cpp)]
 
@@ -1280,7 +1280,7 @@ MDI 자식 창에 도킹 컨트롤 막대를 변환할 수 있는지 여부를 �
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `m_bCanCovertControlBarToMDIChild` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `m_bCanCovertControlBarToMDIChild` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#13](../../mfc/codesnippet/cpp/cmdiframewndex-class_2.cpp)]
 
@@ -1322,7 +1322,7 @@ virtual BOOL NegotiateBorderSpace(
 - `borderSet` = 3
 
 *lpRectBorder*<br/>
-[out에서] 에 대 한 포인터를 [RECT 구조체](../../mfc/reference/rect-structure1.md) 또는 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md) 테두리 좌표를 지정 하는 개체입니다.
+[out에서] 에 대 한 포인터를 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 또는 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md) 테두리 좌표를 지정 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1592,7 +1592,7 @@ virtual BOOL OnShowMDITabContextMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표에서 메뉴의 위치입니다.
 
 *dwAllowedItems*<br/>
@@ -1621,7 +1621,7 @@ virtual BOOL OnShowMDITabContextMenu(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `OnShowMDITabContextMenu` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `OnShowMDITabContextMenu` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#14](../../mfc/codesnippet/cpp/cmdiframewndex-class_13.cpp)]
 
@@ -1745,7 +1745,7 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 화면 좌표로 나타낸 점입니다.
 
 *nSensitivity*<br/>
@@ -1856,7 +1856,7 @@ virtual BOOL SaveMDIState(LPCTSTR lpszProfileName);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `SaveMDIState` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `SaveMDIState` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#15](../../mfc/codesnippet/cpp/cmdiframewndex-class_14.cpp)]
 
@@ -1939,7 +1939,7 @@ void ShowPane(
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `ShowPane` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `ShowPane` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#16](../../mfc/codesnippet/cpp/cmdiframewndex-class_15.cpp)]
 
@@ -1953,7 +1953,7 @@ void ShowWindowsDialog();
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `ShowWindowsDialog` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `ShowWindowsDialog` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmdiframewndex-class_16.cpp)]
 
@@ -1980,7 +1980,7 @@ virtual BOOL TabbedDocumentToControlBar(CMDIChildWndEx* pMDIChildWnd);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 어떻게 `TabbedDocumentToControlBar` 에 사용 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 어떻게 `TabbedDocumentToControlBar` 에 사용 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#19](../../mfc/codesnippet/cpp/cmdiframewndex-class_17.cpp)]
 

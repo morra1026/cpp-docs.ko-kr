@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 2294890ad18d88efaf4d5dd54cad319565a23e02
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3259780d73004c9d1654c26434b55627923cfe23
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481447"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178794"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 
@@ -475,7 +475,7 @@ void FloatControlBar(
 *pBar*<br/>
 컨트롤 막대를 놓을지에 가리킵니다.
 
-*지점*<br/>
+*point*<br/>
 위치를 화면 좌표에서 컨트롤 막대의 왼쪽된 위 모퉁이 배치할 위치입니다.
 
 *dwStyle*<br/>
@@ -844,7 +844,7 @@ virtual BOOL NegotiateBorderSpace(
 - `borderSet` = 3
 
 *lpRectBorder*<br/>
-에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 테두리 좌표를 지정 하는 개체입니다.
+에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 테두리 좌표를 지정 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -902,7 +902,7 @@ virtual BOOL OnCreateClient(
 ### <a name="parameters"></a>매개 변수
 
 *lpc*<br/>
-Windows에 대 한 포인터 [CREATESTRUCT](../../mfc/reference/createstruct-structure.md) 구조입니다.
+Windows에 대 한 포인터 [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구조입니다.
 
 *pContext*<br/>
 에 대 한 포인터를 [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) 구조입니다.
@@ -1190,7 +1190,7 @@ void SetProgressBarState(TBPFLAG tbpFlags);
 ### <a name="parameters"></a>매개 변수
 
 *tbpFlags*<br/>
-진행률 단추의 현재 상태를 제어 하는 플래그입니다. 모든 상태는 함께 사용할 수 없습니다 때문에 다음 중 하나에 플래그 지정: TBPF_NOPROGRESS TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED 합니다.
+진행률 단추의 현재 상태를 제어 하는 플래그입니다. 모든 상태는 함께 사용할 수 없습니다 때문에 다음 플래그 중 하나만 지정 합니다. TBPF_NOPROGRESS TBPF_INDETERMINATE, TBPF_NORMAL, TBPF_ERROR, TBPF_PAUSED 합니다.
 
 ### <a name="remarks"></a>설명
 

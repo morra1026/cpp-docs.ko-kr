@@ -108,12 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: 91cf9b2035bf24c16007ed6021772c7d5344fc68
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e7472b808d8b5d743d884d9e3806df7ffe499836
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333269"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178781"
 ---
 # <a name="ccombobox-class"></a>CComboBox 클래스
 
@@ -331,7 +331,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpCompareItemStruct*<br/>
-에 대 한 긴 포인터를 [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) 구조입니다.
+에 대 한 긴 포인터를 [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -383,7 +383,7 @@ virtual BOOL Create(
 콤보 상자의 스타일을 지정합니다. 어떤 조합도 적용할 [콤보 상자 스타일](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) 상자로 합니다.
 
 *rect*<br/>
-콤보 상자의 크기와 위치를 가리킵니다. 수는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 또는 `CRect` 개체입니다.
+콤보 상자의 크기와 위치를 가리킵니다. 수는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 또는 `CRect` 개체입니다.
 
 *pParentWnd*<br/>
 콤보 상자의 부모 창 (일반적으로 `CDialog`). NULL이 아니어야 합니다.
@@ -450,7 +450,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDeleteItemStruct*<br/>
-Windows에 대 한 긴 포인터 [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) 삭제 된 항목에 대 한 정보를 포함 하는 구조입니다. 참조 [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) 이 구조에 대 한 합니다.
+Windows에 대 한 긴 포인터 [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) 삭제 된 항목에 대 한 정보를 포함 하는 구조입니다. 참조 [CWnd::OnDeleteItem](../../mfc/reference/cwnd-class.md#ondeleteitem) 이 구조에 대 한 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -542,7 +542,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDrawItemStruct*<br/>
-에 대 한 포인터를 [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
+에 대 한 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -645,7 +645,7 @@ int GetCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-항목의 수입니다. 반환 된 수 (인덱스는 0부터 시작) 마지막 항목의 인덱스 값을 보다 하나 더 큰 경우 오류가 발생 하는 경우 CB_ERR입니다.
+항목 수입니다. 반환 된 수 (인덱스는 0부터 시작) 마지막 항목의 인덱스 값을 보다 하나 더 큰 경우 오류가 발생 하는 경우 CB_ERR입니다.
 
 ### <a name="example"></a>예제
 
@@ -715,7 +715,7 @@ void GetDroppedControlRect(LPRECT lprect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lprect*<br/>
-가리키는 합니다 [RECT 구조체](../../mfc/reference/rect-structure1.md) 좌표를 수신 하는 것입니다.
+가리키는 합니다 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 좌표를 수신 하는 것입니다.
 
 ### <a name="example"></a>예제
 
@@ -911,7 +911,7 @@ void GetLBText(
 문자열을 수신 하는 버퍼를 가리킵니다. 버퍼에 문자열 및 null 종결 문자에 대 한 충분 한 공간이 있어야 합니다.
 
 *rString*<br/>
-에 대 한 참조를 `CString`입니다.
+`CString`에 대한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1107,7 +1107,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpMeasureItemStruct*<br/>
-에 대 한 긴 포인터를 [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) 구조입니다.
+에 대 한 긴 포인터를 [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) 구조입니다.
 
 ### <a name="remarks"></a>설명
 

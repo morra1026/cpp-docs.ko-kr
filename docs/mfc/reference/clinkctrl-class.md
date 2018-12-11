@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CLinkCtrl [MFC], SetItemState
 - CLinkCtrl [MFC], SetItemUrl
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-ms.openlocfilehash: 79c6aa9f0448ed399554d634d48f666aaaf60566
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b24b92006b73dff2ae9f091256ef8401efc64fe9
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597563"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178047"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl 클래스
 
@@ -134,7 +134,7 @@ virtual BOOL Create(DWORD dwStyle,
 링크 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 참조 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) 에 `Windows SDK` 자세한 내용은 합니다.
 
 *rect*<br/>
-링크 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.
+링크 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조입니다.
 
 *pParentWnd*<br/>
 링크 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.
@@ -196,7 +196,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 링크 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 자세한 내용은 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK의 합니다.
 
 *rect*<br/>
-링크 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.
+링크 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조입니다.
 
 *pParentWnd*<br/>
 링크 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.
@@ -245,7 +245,7 @@ int GetIdealSize(
 |매개 변수|설명|
 |---------------|-----------------|
 |*cxMaxWidth*|[in] 링크 픽셀에서의 최대 너비입니다.|
-|[out] \* *pSize*|Windows에 대 한 포인터 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조입니다. 이 메서드는 반환 될 때를 *cy* 의 멤버는 `SIZE` 구조에 지정 된 링크 텍스트의 너비에 대 한 이상적인 링크 텍스트 높이가 포함 됩니다 *cxMaxWidth*합니다. 합니다 *cx* 구조체의 멤버에 실제로 필요한 링크 텍스트의 너비를 포함 합니다.|
+|[out] \* *pSize*|Windows에 대 한 포인터 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조입니다. 이 메서드는 반환 될 때를 *cy* 의 멤버는 `SIZE` 구조에 지정 된 링크 텍스트의 너비에 대 한 이상적인 링크 텍스트 높이가 포함 됩니다 *cxMaxWidth*합니다. 합니다 *cx* 구조체의 멤버에 실제로 필요한 링크 텍스트의 너비를 포함 합니다.|
 
 ### <a name="return-value"></a>반환 값
 

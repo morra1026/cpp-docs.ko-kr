@@ -7,12 +7,12 @@ helpviewer_keywords:
 - TN014
 - custom controls [MFC]
 ms.assetid: 1917a498-f643-457c-b570-9a0af7dbf7bb
-ms.openlocfilehash: e773d270c302ef71a6f6527061ba13c870fa4500
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f04029e47ee7d262cdc5e2eab463799acd7d943
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557822"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178410"
 ---
 # <a name="tn014-custom-controls"></a>TN014: 사용자 지정 컨트롤
 
@@ -88,7 +88,7 @@ MFC 기본 구현을 제공 (에 `CWnd` 하 고 [CMenu](../mfc/reference/cmenu-c
     // insert code to delete an item from this combo box
     ```
 
-소유자 그리기 구조에 대 한 자세한 내용은 ([DRAWITEMSTRUCT](../mfc/reference/drawitemstruct-structure.md), [MEASUREITEMSTRUCT](../mfc/reference/measureitemstruct-structure.md)하십시오 [COMPAREITEMSTRUCT](../mfc/reference/compareitemstruct-structure.md), 및 [DELETEITEMSTRUCT](../mfc/reference/deleteitemstruct-structure.md))에 대 한 MFC 설명서를 참조 하세요 `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`합니다 `CWnd::OnCompareItem`, 및 `CWnd::OnDeleteItem` 각각.
+소유자 그리기 구조에 대 한 자세한 내용은 ([DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct), [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct)하십시오 [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct), 및 [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct))에 대 한 MFC 설명서를 참조 하세요 `CWnd::OnDrawItem`, `CWnd::OnMeasureItem`합니다 `CWnd::OnCompareItem`, 및 `CWnd::OnDeleteItem` 각각.
 
 ## <a name="using-self-draw-controls-and-menus"></a>자체 그리기 컨트롤 및 메뉴 사용
 

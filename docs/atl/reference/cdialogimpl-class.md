@@ -17,12 +17,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: 04acfb9c653df85be8958d7248bafd93f3e0a30b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: b4844ed2246b5e700d9dc1895c3292cdde4efe8b
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693683"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178150"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 
@@ -88,7 +88,7 @@ template <class T,
 
 여기서 `MyDlg` 은 **약식 이름** 마법사의 입력 **이름** 페이지.
 
-|추가 정보|보기|
+|추가 정보|참조|
 |--------------------------------|---------|
 |컨트롤 만들기|[ATL 자습서](../../atl/active-template-library-atl-tutorial.md)|
 |ATL 대화 상자를 사용 하 여|[ATL 창 클래스](../../atl/atl-window-classes.md)|
@@ -263,7 +263,7 @@ BOOL MapDialogRect(LPRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 `CRect` 개체 또는 [RECT](../../mfc/reference/rect-structure.md) 구조 업데이트 영역을 둘러싸는 업데이트의 클라이언트 좌표를 수신 하는 것입니다.
+가리키는 `CRect` 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 업데이트 영역을 둘러싸는 업데이트의 클라이언트 좌표를 수신 하는 것입니다.
 
 ### <a name="return-value"></a>반환 값
 

@@ -192,12 +192,12 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: c25d79dc1fb201d10e090f512a5a96f649efbcfe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f9afdf18fcaff0d3613b4204d8690f915079e7d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542365"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178943"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
@@ -1060,7 +1060,7 @@ virtual BOOL InitInstance();
 
 응용 프로그램 초기화 개념적으로 두 영역으로 나뉩니다: 첫 번째 수행 되는 일회성 응용 프로그램 초기화 시간 프로그램 실행 및 각 실행 되는 인스턴스 초기화 시간 처음으로 포함 하 여 프로그램 실행을 복사 합니다. 프레임 워크의 구현의 `WinMain` 이 함수를 호출 합니다.
 
-재정의 `InitInstance` Windows에서 실행 중인 응용 프로그램의 각 새 인스턴스를 초기화 합니다. 재정의 하는 일반적으로 `InitInstance` 주 창 개체를 생성 하 고 설정 하 여 `CWinThread::m_pMainWnd` 창으로 가리키도록 데이터 멤버입니다. 이 멤버 함수를 재정의 하는 방법은 참조 하세요 [CWinApp: 응용 프로그램 클래스](../../mfc/cwinapp-the-application-class.md)합니다.
+재정의 `InitInstance` Windows에서 실행 중인 응용 프로그램의 각 새 인스턴스를 초기화 합니다. 재정의 하는 일반적으로 `InitInstance` 주 창 개체를 생성 하 고 설정 하 여 `CWinThread::m_pMainWnd` 창으로 가리키도록 데이터 멤버입니다. 이 멤버 함수를 재정의에 대 한 자세한 내용은 참조 하세요. [CWinApp: 응용 프로그램 클래스](../../mfc/cwinapp-the-application-class.md)합니다.
 
 > [!NOTE]
 > MFC 응용 프로그램은 단일 스레드 아파트 (STA)로 초기화 되어야 합니다. 호출 하는 경우 [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) 에서 프로그램 `InitInstance` 재정의 COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED 아님)를 지정 합니다.
@@ -1437,7 +1437,7 @@ LPCTSTR m_pszAppName;
 전역 함수에서 반환한 [AfxGetAppName](application-information-and-management.md#afxgetappname)합니다. `m_pszAppName` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
-> 값을 할당 하는 경우 `m_pszAppName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
+> 값을 할당 하는 경우 `m_pszAppName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCWindowing#57](../../mfc/reference/codesnippet/cpp/cwinapp-class_18.cpp)]
 
@@ -1458,7 +1458,7 @@ LPCTSTR m_pszExeName;
 와 달리 [m_pszAppName](#m_pszappname),이 이름은 공백을 포함할 수 없습니다. `m_pszExeName` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
-> 값을 할당 하는 경우 `m_pszExeName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
+> 값을 할당 하는 경우 `m_pszExeName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCWindowing#58](../../mfc/reference/codesnippet/cpp/cwinapp-class_20.cpp)]
 
@@ -1475,7 +1475,7 @@ LPCTSTR m_pszHelpFilePath;
 기본적으로 프레임 워크는 다음과 같이 초기화 됩니다. `m_pszHelpFilePath` 사용 하 여 응용 프로그램의 이름으로 ". HLP "추가 합니다. 도움말 파일의 이름을 변경 하려면 설정 `m_pszHelpFilePath` 원하는 도움말 파일의 전체 이름을 포함 하는 문자열을 가리키도록 합니다. 응용 프로그램에서은이 작업을 수행 하는 편리한 장소 [InitInstance](#initinstance) 함수입니다. `m_pszHelpFilePath` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
-> 값을 할당 하는 경우 `m_pszHelpFilePath`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
+> 값을 할당 하는 경우 `m_pszHelpFilePath`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCWindowing#59](../../mfc/reference/codesnippet/cpp/cwinapp-class_21.cpp)]
 
@@ -1492,7 +1492,7 @@ LPCTSTR m_pszProfileName;
 `m_pszProfileName` 형식의 공용 변수 **const char**<strong>\*</strong>합니다.
 
 > [!NOTE]
-> 값을 할당 하는 경우 `m_pszProfileName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
+> 값을 할당 하는 경우 `m_pszProfileName`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCWindowing#60](../../mfc/reference/codesnippet/cpp/cwinapp-class_22.cpp)]
 
@@ -1508,9 +1508,9 @@ LPCTSTR m_pszRegistryKey;
 
 일반적으로이 데이터 멤버는 읽기 전용으로 처리 됩니다.
 
-- 값은 레지스트리 키에 저장 됩니다. 응용 프로그램 프로필 설정에 대 한 이름이 다음 레지스트리 키에 추가 됩니다: HKEY_CURRENT_USER/소프트웨어/LocalAppWizard 생성 /입니다.
+- 값은 레지스트리 키에 저장 됩니다. 응용 프로그램 프로필 설정에 대 한 이름은 다음 레지스트리 키에 추가 됩니다. HKEY_CURRENT_USER/소프트웨어/LocalAppWizard 생성 /입니다.
 
-값을 할당 하는 경우 `m_pszRegistryKey`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어:
+값을 할당 하는 경우 `m_pszRegistryKey`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCWindowing#61](../../mfc/reference/codesnippet/cpp/cwinapp-class_23.cpp)]
 
@@ -1793,7 +1793,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-에 대 한 포인터를 [MSG](../../mfc/reference/msg-structure1.md) 처리할 메시지를 포함 하는 구조입니다.
+에 대 한 포인터를 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 처리할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1815,7 +1815,7 @@ virtual BOOL ProcessMessageFilter(
 후크 코드를 지정합니다. 이 멤버 함수는 코드를 사용 하 여 처리 하는 방법을 결정 *lpMsg 합니다.*
 
 *lpMsg*<br/>
-Windows에 대 한 포인터 [MSG](../../mfc/reference/msg-structure1.md) 구조입니다.
+Windows에 대 한 포인터 [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1886,7 +1886,7 @@ virtual LRESULT ProcessWndProcException(
 예외로 포인터입니다.
 
 *pMsg*<br/>
-A [MSG](../../mfc/reference/msg-structure1.md) 예외를 throw 하기 위해 프레임 워크를 발생 시킨 windows 메시지에 대 한 정보를 포함 하는 구조입니다.
+A [MSG](/windows/desktop/api/winuser/ns-winuser-tagmsg) 예외를 throw 하기 위해 프레임 워크를 발생 시킨 windows 메시지에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2086,7 +2086,7 @@ BOOL RunEmbedded();
 
 ### <a name="remarks"></a>설명
 
-있는 경우 옵션은 명령줄에서 제거 됩니다. 포함에 대 한 자세한 내용은 문서 참조 [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
+있는 경우 옵션은 명령줄에서 제거 됩니다. 포함에 대 한 자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
 
 ##  <a name="saveallmodified"></a>  CWinApp::SaveAllModified
 
@@ -2118,7 +2118,7 @@ void SelectPrinter(
 ### <a name="parameters"></a>매개 변수
 
 *hDevNames*<br/>
-에 대 한 핸들을 [DEVNAMES](../../mfc/reference/devnames-structure.md) 드라이버, 장치 및 특정 프린터의 출력 포트 이름을 식별 하는 구조입니다.
+에 대 한 핸들을 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 드라이버, 장치 및 특정 프린터의 출력 포트 이름을 식별 하는 구조입니다.
 
 *hDevMode*<br/>
 에 대 한 핸들을 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 장치 초기화 및 프린터의 환경에 대 한 정보를 지정 하는 구조입니다.
@@ -2168,7 +2168,7 @@ void SetRegistryKey(UINT nIDRegistryKey);
 
 ### <a name="remarks"></a>설명
 
-이 함수를 설정 합니다 *m_pszRegistryKey*에서 사용 되는 합니다 `GetProfileInt`를 `GetProfileString`를 `WriteProfileInt`, 및 `WriteProfileString` 의 멤버 함수 `CWinApp`합니다. 이 함수를 호출 하면 가장 최근에 사용한 (MRU) 파일의 목록도 레지스트리에 저장 됩니다. 레지스트리 키를 일반적으로 회사의 이름입니다. 다음과 같은 형식의 키에 저장 됩니다: HKEY_CURRENT_USER\Software\\< 회사 이름\>\\< 응용 프로그램 이름\>\\< 섹션 이름\>\\< 값 이름\>합니다.
+이 함수를 설정 합니다 *m_pszRegistryKey*에서 사용 되는 합니다 `GetProfileInt`를 `GetProfileString`를 `WriteProfileInt`, 및 `WriteProfileString` 의 멤버 함수 `CWinApp`합니다. 이 함수를 호출 하면 가장 최근에 사용한 (MRU) 파일의 목록도 레지스트리에 저장 됩니다. 레지스트리 키를 일반적으로 회사의 이름입니다. 다음과 같은 형식의 키에 저장 됩니다. HKEY_CURRENT_USER\Software\\< 회사 이름\>\\< 응용 프로그램 이름\>\\< 섹션 이름\>\\< 값 이름\>합니다.
 
 ##  <a name="supportsapplicationrecovery"></a>  CWinApp::SupportsApplicationRecovery
 
@@ -2395,4 +2395,4 @@ void SetAppID(LPCTSTR lpcszAppID);
 
 [CWinThread 클래스](../../mfc/reference/cwinthread-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)
+[어떻게: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)

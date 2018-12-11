@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: 176c076027a0b1b315fbcef3edd4104bad66ae34
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef44c917411efefeb6719af95185ddf7993fbab1
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534136"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179021"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 
@@ -556,7 +556,7 @@ OLE 컨트롤 창 없이 사용 되는 내부 활성화 될 수 있습니다. �
 
 OLE 컨트롤 개체 활성화 되기 있지만 비활성-활성 전환 하는 데 필요한 작업 시간을 이동 및 전환의 속도 중단 하는 경우에 창을 만들 수도 있습니다. 문제가 발생 하는 경우가 있습니다: 예를 들어 입력란의 표는 것이 좋습니다. 때 열을 위아래로 커서, 각 컨트롤 이어야 합니다 전체 활성화 및 비활성화 합니다. 활성/비활성 전환의 속도 스크롤 속도가 저하 직접 될 합니다.
 
-OLE 컨트롤 프레임 워크를 개발에 대 한 자세한 내용은 문서를 참조 하세요 [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md) 하 고 [개요: MFC ActiveX 컨트롤 프로그램을 만드는](../../mfc/reference/mfc-activex-control-wizard.md)합니다. OLE 컨트롤, 창 및 깜박임 컨트롤을 포함 하 여 최적화에 대 한 내용은 [MFC ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
+OLE 컨트롤 프레임 워크를 개발에 대 한 자세한 내용은 문서를 참조 하세요 [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md) 고 [개요: MFC ActiveX 컨트롤 프로그램을 만드는](../../mfc/reference/mfc-activex-control-wizard.md)합니다. OLE 컨트롤, 창 및 깜박임 컨트롤을 포함 하 여 최적화에 대 한 정보를 참조 하세요. [MFC ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -598,7 +598,7 @@ CString AmbientDisplayName();
 
 ### <a name="return-value"></a>반환 값
 
-OLE 컨트롤의 이름입니다. 기본값은 길이가 0 인 문자열입니다.
+OLE 컨트롤의 이름입니다. 기본값은 길이가 0인 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -848,7 +848,7 @@ BOOL ClipCaretRect(LPRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-입력에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure1.md) 조정 캐럿 영역이 포함 된 구조입니다. 출력, 조정 된 캐럿 영역 또는 캐럿 사각형에 완전히 포함 하는 경우 NULL입니다.
+입력에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 조정 캐럿 영역이 포함 된 구조입니다. 출력, 조정 된 캐럿 영역 또는 캐럿 사각형에 완전히 포함 하는 경우 NULL입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -902,7 +902,7 @@ virtual void DisplayError(
 ### <a name="parameters"></a>매개 변수
 
 *scode*<br/>
-보고 될 상태 코드 값입니다. 가능한 코드의 전체 목록은, 문서를 참조 하세요 [ActiveX 컨트롤: 고급 항목](../../mfc/mfc-activex-controls-advanced-topics.md)합니다.
+보고 될 상태 코드 값입니다. 가능한 코드의 전체 목록은, 문서를 참조 하세요. [ActiveX 컨트롤: 고급 항목](../../mfc/mfc-activex-controls-advanced-topics.md)합니다.
 
 *lpszDescription*<br/>
 보고 된 오류 설명입니다.
@@ -934,7 +934,7 @@ void DoClick();
 
 재정의 가능한 `COleControl::OnClick` 멤버 함수가 호출 될 및 주식 이벤트가 발생, 컨트롤에서 지원 되는 경우 클릭 합니다.
 
-이 함수에서 사용할 수는 `COleControl` 호출 DoClick 스톡 메서드로 기본 클래스입니다. 자세한 내용은 문서 참조 [ActiveX 컨트롤: 메서드](../../mfc/mfc-activex-controls-methods.md)합니다.
+이 함수에서 사용할 수는 `COleControl` 호출 DoClick 스톡 메서드로 기본 클래스입니다. 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 메서드](../../mfc/mfc-activex-controls-methods.md)합니다.
 
 ##  <a name="dopropexchange"></a>  COleControl::DoPropExchange
 
@@ -953,7 +953,7 @@ virtual void DoPropExchange(CPropExchange* pPX);
 
 이 함수는 정상적으로 호출 하는 합니다 **PX_** 패밀리를 로드 하거나 OLE 컨트롤의 특정 사용자 정의 속성을 저장 하는 함수입니다.
 
-이 함수의 재정의 된 버전에서 지원 되는 스톡 속성을 serialize 컨트롤 마법사 OLE 컨트롤 프로젝트를 만들려면 사용 된 경우 `COleControl` 기본 클래스 함수를 호출 하 여 `COleControl::DoPropExchange`입니다. OLE 컨트롤에 사용자 정의 속성을 추가 하면 새 속성을 serialize 하려면이 함수를 수정 해야 합니다. Serialization에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: 직렬화](../../mfc/mfc-activex-controls-serializing.md)합니다.
+이 함수의 재정의 된 버전에서 지원 되는 스톡 속성을 serialize 컨트롤 마법사 OLE 컨트롤 프로젝트를 만들려면 사용 된 경우 `COleControl` 기본 클래스 함수를 호출 하 여 `COleControl::DoPropExchange`입니다. OLE 컨트롤에 사용자 정의 속성을 추가 하면 새 속성을 serialize 하려면이 함수를 수정 해야 합니다. Serialization에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 직렬화](../../mfc/mfc-activex-controls-serializing.md)합니다.
 
 ##  <a name="dosuperclasspaint"></a>  COleControl::DoSuperclassPaint
 
@@ -977,7 +977,7 @@ void DoSuperclassPaint(
 
 비활성 OLE 컨트롤의 그리기를 올바르게 처리 하려면이 함수를 호출 합니다. OLE Windows 컨트롤을 서브 클래스를 제어 하 고 호출 해야 하는 경우에이 함수를 사용 해야는 `OnDraw` 컨트롤의 기능입니다.
 
-이 함수 및 Windows 컨트롤 서브클래싱에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
+이 함수 및 Windows 컨트롤 서브클래싱에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
 
 ##  <a name="drawcontent"></a>  COleControl::DrawContent
 
@@ -1099,7 +1099,7 @@ Nonzero 성공 함수 그렇지 않으면 0입니다.
 
 일반적으로 첫 번째 함수는 컨트롤의 재정의에서 호출 됩니다 `COleControl::DoPropExchange`합니다. 를 로드할 때이 함수는 영구 데이터의 버전 번호를 읽고 버전 특성을 설정 합니다 [CPropExchange](../../mfc/reference/cpropexchange-class.md) 개체를 적절 하 게 합니다. 에 저장 하는 경우이 함수는 영구 데이터의 버전 번호를 씁니다.
 
-지 속성 및 버전 관리에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: 직렬화](../../mfc/mfc-activex-controls-serializing.md)합니다.
+지 속성 및 버전 관리에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 직렬화](../../mfc/mfc-activex-controls-serializing.md)합니다.
 
 ##  <a name="fireclick"></a>  COleControl::FireClick
 
@@ -1143,7 +1143,7 @@ void FireError(
 ### <a name="parameters"></a>매개 변수
 
 *scode*<br/>
-보고 될 상태 코드 값입니다. 가능한 코드의 전체 목록은, 문서를 참조 하세요 [ActiveX 컨트롤: 고급 항목](../../mfc/mfc-activex-controls-advanced-topics.md)합니다.
+보고 될 상태 코드 값입니다. 가능한 코드의 전체 목록은, 문서를 참조 하세요. [ActiveX 컨트롤: 고급 항목](../../mfc/mfc-activex-controls-advanced-topics.md)합니다.
 
 *lpszDescription*<br/>
 보고 된 오류 설명입니다.
@@ -1679,7 +1679,7 @@ enum ControlFlags {
 
 ### <a name="remarks"></a>설명
 
-기본적으로 `GetControlFlags` 반환 `fastBeginPaint | clipPaintDC`합니다.
+기본적으로 `GetControlFlags`는 `fastBeginPaint | clipPaintDC`을 반환합니다.
 
 |||
 |-|-|
@@ -1808,7 +1808,7 @@ LPFONTDISP GetFont();
 
 ### <a name="remarks"></a>설명
 
-호출자가 완료 되 면 개체를 해제 해야 하는 참고 합니다. 컨트롤의 구현 내에서 사용 하 여 `InternalGetFont` 컨트롤의 스톡 글꼴 개체에 액세스 합니다. 컨트롤의 글꼴을 사용 하 여에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: ActiveX 컨트롤에서 사용 하 여 글꼴](../../mfc/mfc-activex-controls-using-fonts.md)합니다.
+호출자가 완료 되 면 개체를 해제 해야 하는 참고 합니다. 컨트롤의 구현 내에서 사용 하 여 `InternalGetFont` 컨트롤의 스톡 글꼴 개체에 액세스 합니다. 컨트롤의 글꼴을 사용 하 여에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: ActiveX 컨트롤에서 글꼴을 사용 하 여](../../mfc/mfc-activex-controls-using-fonts.md)입니다.
 
 ##  <a name="getfonttextmetrics"></a>  COleControl::GetFontTextMetrics
 
@@ -1989,7 +1989,7 @@ virtual IDropTarget* GetWindowlessDropTarget();
 
 ### <a name="remarks"></a>설명
 
-일반적으로 이를 위해서는 컨트롤의 창이 놓기 대상으로 등록되어야 합니다. 하지만 컨트롤에는 고유의 창이 있으므로 컨테이너가 사용할 자체 창 놓기 대상으로 합니다. 컨트롤은 단순히의 구현을 제공 해야 합니다 `IDropTarget` 인터페이스는 컨테이너 호출을 위임할 수 적절 한 시간입니다. 예를 들어:
+일반적으로 이를 위해서는 컨트롤의 창이 놓기 대상으로 등록되어야 합니다. 하지만 컨트롤에는 고유의 창이 있으므로 컨테이너가 사용할 자체 창 놓기 대상으로 합니다. 컨트롤은 단순히의 구현을 제공 해야 합니다 `IDropTarget` 인터페이스는 컨테이너 호출을 위임할 수 적절 한 시간입니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]
 
@@ -2448,7 +2448,7 @@ virtual BOOL OnEdit(
 
 이 컨트롤의 OLEIVERB_UIACTIVATE 동사를 호출 하는 것과 동일한 효과가 있습니다.
 
-이 함수는 대개 ON_OLEVERB 메시지 맵 항목에 대 한 처리기 함수로 사용 됩니다. 이렇게 하면 컨트롤의 "Object" 메뉴에서 사용할 수 있는 "편집" 동사가 있습니다. 예를 들어:
+이 함수는 대개 ON_OLEVERB 메시지 맵 항목에 대 한 처리기 함수로 사용 됩니다. 이렇게 하면 컨트롤의 "Object" 메뉴에서 사용할 수 있는 "편집" 동사가 있습니다. 예를 들어 다음과 같습니다.
 
 [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]
 
@@ -3565,7 +3565,7 @@ void Refresh();
 
 ### <a name="remarks"></a>설명
 
-이 함수에서 사용할 수는 `COleControl` 주식 메서드를 새로 고침으로 기본 클래스입니다. 따라서 OLE 컨트롤의 사용자가 특정 시간에 컨트롤을 다시 그려야 합니다. 이 메서드에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: 메서드](../../mfc/mfc-activex-controls-methods.md)합니다.
+이 함수에서 사용할 수는 `COleControl` 주식 메서드를 새로 고침으로 기본 클래스입니다. 따라서 OLE 컨트롤의 사용자가 특정 시간에 컨트롤을 다시 그려야 합니다. 이 메서드에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 메서드](../../mfc/mfc-activex-controls-methods.md)합니다.
 
 ##  <a name="releasecapture"></a>  COleControl::ReleaseCapture
 
@@ -3636,9 +3636,9 @@ void ResetStockProps();
 
 ### <a name="remarks"></a>설명
 
-속성은: 모양, BackColor, BorderStyle, 캡션, 사용, 글꼴, 전경색, hWnd 및 텍스트입니다. 스톡 속성 설명을 참조 하세요 [ActiveX 컨트롤: 스톡 속성 추가](../../mfc/mfc-activex-controls-adding-stock-properties.md)합니다.
+속성은 다음과 같습니다. 모양, BackColor, BorderStyle, 캡션, 사용, 글꼴, 전경색, hWnd 및 텍스트입니다. 스톡 속성 설명을 참조 하세요. [ActiveX 컨트롤: 스톡 속성 추가](../../mfc/mfc-activex-controls-adding-stock-properties.md)합니다.
 
-사용 하 여 컨트롤의 이진 초기화 성능을 향상 시킬 수 있습니다 `ResetStockProps` 하 고 `ResetVersion` 재정의할 `COleControl::OnResetState`합니다. 아래 예제를 참조하십시오. 초기화를 최적화에 대 한 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
+사용 하 여 컨트롤의 이진 초기화 성능을 향상 시킬 수 있습니다 `ResetStockProps` 하 고 `ResetVersion` 재정의할 `COleControl::OnResetState`합니다. 아래 예제를 참조하십시오. 초기화를 최적화에 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -3659,7 +3659,7 @@ void ResetVersion(DWORD dwVersionDefault);
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 컨트롤의 이진 초기화 성능을 향상 시킬 수 있습니다 `ResetVersion` 하 고 `ResetStockProps` 재정의할 `COleControl::OnResetState`합니다. 예제를 참조 하세요 [ResetStockProps](#resetstockprops)합니다. 초기화를 최적화에 대 한 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
+사용 하 여 컨트롤의 이진 초기화 성능을 향상 시킬 수 있습니다 `ResetVersion` 하 고 `ResetStockProps` 재정의할 `COleControl::OnResetState`합니다. 예제를 참조 하세요 [ResetStockProps](#resetstockprops)합니다. 초기화를 최적화에 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
 ##  <a name="scrollwindow"></a>  COleControl::ScrollWindow
 
@@ -3741,7 +3741,7 @@ void SerializeExtent(CArchive& ar);
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 컨트롤의 이진 지 속성 성능은 향상 시킬 수 있습니다 `SerializeExtent`, `SerializeStockProps`, 및 `SerializeVersion` 재정의할 `COleControl::Serialize`합니다. 아래 예제를 참조하십시오. 초기화를 최적화에 대 한 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
+사용 하 여 컨트롤의 이진 지 속성 성능은 향상 시킬 수 있습니다 `SerializeExtent`, `SerializeStockProps`, 및 `SerializeVersion` 재정의할 `COleControl::Serialize`합니다. 아래 예제를 참조하십시오. 초기화를 최적화에 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -3749,7 +3749,7 @@ void SerializeExtent(CArchive& ar);
 
 ##  <a name="serializestockprops"></a>  COleControl::SerializeStockProps
 
-Serialize 하거나의 상태를 초기화 합니다 `COleControl` 스톡 속성: 모양, 배경색, BorderStyle, 캡션, 사용, 글꼴, ForeColor, 및 텍스트입니다.
+Serialize 하거나의 상태를 초기화 합니다 `COleControl` 스톡 속성: 모양, BackColor, BorderStyle, 캡션, 사용 하도록 설정, 글꼴, ForeColor, 및 텍스트입니다.
 
 ```
 void SerializeStockProps(CArchive& ar);
@@ -3762,9 +3762,9 @@ void SerializeStockProps(CArchive& ar);
 
 ### <a name="remarks"></a>설명
 
-스톡 속성 설명을 참조 하세요 [ActiveX 컨트롤: 스톡 속성 추가](../../mfc/mfc-activex-controls-adding-stock-properties.md)합니다.
+스톡 속성 설명을 참조 하세요. [ActiveX 컨트롤: 스톡 속성 추가](../../mfc/mfc-activex-controls-adding-stock-properties.md)합니다.
 
-사용 하 여 컨트롤의 이진 지 속성 성능은 향상 시킬 수 있습니다 `SerializeStockProps`, `SerializeExtent`, 및 `SerializeVersion` 재정의할 `COleControl::Serialize`합니다. 예를 들어 있는 코드를 참조 하세요 [SerializeExtent](#serializeextent)합니다. 초기화를 최적화에 대 한 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
+사용 하 여 컨트롤의 이진 지 속성 성능은 향상 시킬 수 있습니다 `SerializeStockProps`, `SerializeExtent`, 및 `SerializeVersion` 재정의할 `COleControl::Serialize`합니다. 예를 들어 있는 코드를 참조 하세요 [SerializeExtent](#serializeextent)합니다. 초기화를 최적화에 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
 ##  <a name="serializeversion"></a>  COleControl::SerializeVersion
 
@@ -3794,7 +3794,7 @@ DWORD SerializeVersion(
 
 ### <a name="remarks"></a>설명
 
-사용 하 여 컨트롤의 이진 지 속성 성능은 향상 시킬 수 있습니다 `SerializeVersion`, `SerializeExtent`, 및 `SerializeStockProps` 재정의할 `COleControl::Serialize`합니다. 예를 들어 있는 코드를 참조 하세요 [SerializeExtent](#serializeextent)합니다. 초기화를 최적화에 대 한 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
+사용 하 여 컨트롤의 이진 지 속성 성능은 향상 시킬 수 있습니다 `SerializeVersion`, `SerializeExtent`, 및 `SerializeStockProps` 재정의할 `COleControl::Serialize`합니다. 예를 들어 있는 코드를 참조 하세요 [SerializeExtent](#serializeextent)합니다. 초기화를 최적화에 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
 ##  <a name="setappearance"></a>  COleControl::SetAppearance
 
@@ -3811,7 +3811,7 @@ A **짧은** (VT_I2) 값을 컨트롤의 모양을 사용할 수 있습니다. �
 
 ### <a name="remarks"></a>설명
 
-스톡 속성에 대 한 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 속성](../../mfc/mfc-activex-controls-properties.md)합니다.
+스톡 속성에 대 한 자세한 내용은 참조 [ActiveX 컨트롤: 속성](../../mfc/mfc-activex-controls-properties.md)합니다.
 
 ##  <a name="setbackcolor"></a>  COleControl::SetBackColor
 
@@ -3828,7 +3828,7 @@ void SetBackColor(OLE_COLOR dwBackColor);
 
 ### <a name="remarks"></a>설명
 
-이 속성 및 다른 사용에 대 한 자세한 내용은 관련 속성에 대 한 문서를 참조 하세요 [ActiveX 컨트롤: 속성](../../mfc/mfc-activex-controls-properties.md)합니다.
+이 속성 및 다른 사용에 대 한 자세한 내용은 관련 속성에 대 한 문서를 참조 하세요. [ActiveX 컨트롤: 속성](../../mfc/mfc-activex-controls-properties.md)합니다.
 
 ##  <a name="setborderstyle"></a>  COleControl::SetBorderStyle
 
@@ -3952,7 +3952,7 @@ OLE_COLOR 전경 컨트롤 그리기에 사용할 값입니다.
 
 ### <a name="remarks"></a>설명
 
-이 속성 및 다른 사용에 대 한 자세한 내용은 관련 속성에 대 한 문서를 참조 하세요 [ActiveX 컨트롤: 속성](../../mfc/mfc-activex-controls-properties.md)합니다.
+이 속성 및 다른 사용에 대 한 자세한 내용은 관련 속성에 대 한 문서를 참조 하세요. [ActiveX 컨트롤: 속성](../../mfc/mfc-activex-controls-properties.md)합니다.
 
 ##  <a name="setinitialdataformats"></a>  COleControl::SetInitialDataFormats
 
@@ -3964,7 +3964,7 @@ virtual void SetInitialDataFormats();
 
 ### <a name="remarks"></a>설명
 
-기본 구현은 두 가지 형식 지정: CF_METAFILEPICT 및 영구 속성을 설정 합니다.
+기본 구현은 두 가지 형식을 지정합니다. CF_METAFILEPICT 및 영구 속성을 설정합니다.
 
 ##  <a name="setinitialsize"></a>  COleControl::SetInitialSize
 
@@ -4086,7 +4086,7 @@ void ThrowError(
 ### <a name="parameters"></a>매개 변수
 
 *sc*<br/>
-보고 될 상태 코드 값입니다. 가능한 코드의 전체 목록은, 문서를 참조 하세요 [ActiveX 컨트롤: 고급 항목](../../mfc/mfc-activex-controls-advanced-topics.md)합니다.
+보고 될 상태 코드 값입니다. 가능한 코드의 전체 목록은, 문서를 참조 하세요. [ActiveX 컨트롤: 고급 항목](../../mfc/mfc-activex-controls-advanced-topics.md)합니다.
 
 *nDescriptionID*<br/>
 문자열 리소스 ID 예외 보고 됩니다.
