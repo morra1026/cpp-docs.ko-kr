@@ -19,4 +19,4 @@ Microsoft C는 선언자 수를 제한하지 않습니다. 이 수는 사용 가
 
 ## <a name="see-also"></a>참고 항목
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[구현 정의 ](../c-language/implementation-defined-behavior.md)
