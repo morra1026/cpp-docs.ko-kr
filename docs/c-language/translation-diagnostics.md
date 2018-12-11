@@ -21,4 +21,4 @@ Microsoft C는 다음의 경우에 형식에서 오류 메시지를 생성합니
 
 ## <a name="see-also"></a>참고 항목
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[구현 정의 ](../c-language/implementation-defined-behavior.md)
