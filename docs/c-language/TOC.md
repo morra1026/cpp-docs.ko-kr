@@ -1,4 +1,4 @@
-# [C# 언어 참조](c-language-reference.md)
+# [C 언어 참조](c-language-reference.md)
 ## [C 언어 참조의 구조](organization-of-the-c-language-reference.md)
 ### [이 설명서의 범위](scope-of-this-manual.md)
 ### [ANSI 규칙](ansi-conformance.md)
