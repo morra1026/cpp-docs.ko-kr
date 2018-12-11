@@ -1,5 +1,5 @@
 ---
-title: '방법: 리소스 (C++) 만들기'
+title: '방법: 리소스(C++) 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - toolbars [C++], resources
@@ -16,11 +16,11 @@ ms.locfileid: "50513698"
 # <a name="how-to-create-a-resource"></a>방법: 리소스 파일 만들기
 
 > [!NOTE]
-> Express 버전에서는 **리소스 뷰**가 지원 되지 않습니다.
+> Express 버전에서는 **리소스 뷰**가 지원되지 않습니다.
 
 ### <a name="to-create-a-new-resource-in-resource-view"></a>리소스 뷰에서 새 리소스를 만들려면
 
-1. [리소스 뷰](../windows/resource-view-window.md)의 .rc 파일에 포커스를 두고 **편집**메뉴 선택 후 **리소스 추가**를 클릭 합니다. 또는 .rc파일에서 마우스 오른쪽 단추 클릭 후 바로 가기를 이용해 **리소스 추가**를 선택합니다.
+1. [리소스 뷰](../windows/resource-view-window.md)의 .rc 파일에 포커스를 두고 **편집**메뉴를 선택한 후 **리소스 추가**를 클릭합니다. 또는 .rc 파일에서 마우스 오른쪽 단추를 클릭한 후 바로 가기를 이용해 **리소스 추가**를 선택합니다.
 
    > [!NOTE]
    > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
@@ -49,7 +49,7 @@ ms.locfileid: "50513698"
 
 리소스를 새 기본 리소스(템플릿에 기반을 두지 않은 리소스) 또는 [템플릿](../windows/how-to-use-resource-templates.md)을 기반으로 패턴화된 리소스로 만들 수 있습니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법은 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)의 *.NET 프레임워크 개발자 가이드*를 참조합니다.
+관리되는 프로젝트에 리소스를 추가하는 방법은 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)의 *.NET 프레임워크 개발자 가이드*를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
