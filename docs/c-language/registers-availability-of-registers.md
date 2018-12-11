@@ -19,4 +19,4 @@ ms.locfileid: "50616530"
 
 ## <a name="see-also"></a>참고 항목
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[구현 정의 ](../c-language/implementation-defined-behavior.md)
