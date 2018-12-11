@@ -25,8 +25,8 @@ ms.locfileid: "50573578"
 
 - [C 언어 구문 요약](../c-language/c-language-syntax-summary.md)
 
-- [Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+- [구현이 정의된 ](../c-language/implementation-defined-behavior.md)
 
 ## <a name="see-also"></a>참고 항목
 
-[C# 언어 참조](../c-language/c-language-reference.md)
+[C 언어 참조](../c-language/c-language-reference.md)
