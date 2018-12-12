@@ -15,7 +15,7 @@ ms.locfileid: "50461284"
 # <a name="grammar-summary-cc"></a>문법 요약 (C/C++)
 전처리기의 정식 문법에 대해 설명하는 이 단원에서는 전처리 지시문의 구문을 설명 하 고 연산자에서 설명한 [전처리기](../preprocessor/preprocessor.md) 고 [Pragma 지시문](../preprocessor/pragma-directives-and-the-pragma-keyword.md)합니다.
 
-주제는 다음과 같습니다.
+다루는 내용은 다음과 같습니다.
 
 - [정의](../preprocessor/definitions-for-the-grammar-summary.md)
 
@@ -25,4 +25,4 @@ ms.locfileid: "50461284"
 
 ## <a name="see-also"></a>참고 항목
 
-[ 전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)
+[전처리기 참조](../preprocessor/c-cpp-preprocessor-reference.md)

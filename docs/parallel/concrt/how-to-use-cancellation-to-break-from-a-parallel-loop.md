@@ -18,17 +18,17 @@ ms.locfileid: "50612747"
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 배열에서 요소를 검색 하려면 취소를 사용 합니다. `parallel_find_any` 함수는 합니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘 및 [run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) 함수를 지정된 된 값을 포함 하는 위치를 검색 합니다. 병렬 루프는 값을 찾을 경우 호출 하는 [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) 이후의 작업을 취소 하는 방법입니다.
+다음 예제에서는 취소를 사용하여 배열에서 요소를 검색합니다. `parallel_find_any` 함수는 [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘과 [run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) 함수를 사용하여 지정된 값을 포함하는 위치를 검색합니다. 병렬 루프에서 값을 찾았을 때,  [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) 메소드를 호출하여 이후의 작업을 취소합니다.
 
 [!code-cpp[concrt-parallel-array-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-cancellation-to-break-from-a-parallel-loop_1.cpp)]
 
-합니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘은 동시에 동작 합니다. 따라서 미리 결정 된 순서로 작업을 수행 하지 않습니다. 값의 여러 인스턴스를 포함 하는 경우 결과 해당 위치 중 하나일 수 있습니다.
+[concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘은 동시에 동작합니다. 따라서 미리 결정된 순서대로 작업을 수행하지 않습니다. 지정된 값의 인스턴스가 배열에 여러 개 포함되어 있으면 결과는 해당 위치 중 하나가 될 수 있습니다.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `parallel-array-search.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `parallel-array-search.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc 병렬-배열-search.cpp**
+**cl.exe /EHsc parallel-array-search.cpp**
 
 ## <a name="see-also"></a>참고 항목
 

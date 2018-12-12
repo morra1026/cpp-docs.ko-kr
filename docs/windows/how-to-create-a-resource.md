@@ -16,7 +16,7 @@ ms.locfileid: "50513698"
 # <a name="how-to-create-a-resource"></a>방법: 리소스 파일 만들기
 
 > [!NOTE]
-> **리소스 뷰** Express 버전에서는 지원 되지 않습니다.
+> Express 버전에서는 **리소스 뷰**가 지원되지 않습니다.
 
 ### <a name="to-create-a-new-resource-in-resource-view"></a>리소스 뷰에서 새 리소스를 만들려면
 
@@ -45,11 +45,11 @@ ms.locfileid: "50513698"
 
 1. **프로젝트** 메뉴에서 **리소스 추가**를 선택합니다.
 
-새 리소스를 만들 때 Visual c + + 고유 이름을 할당, 예를 들어 `IDD_Dialog1`합니다. 연결된 리소스 편집기 또는 [속성 창](/visualstudio/ide/reference/properties-window)에서 리소스에 대한 속성을 편집하여 이 리소스 ID를 사용자 지정할 수 있습니다.
+새 리소스를 만들면 Visual C++은 `IDD_Dialog1`과 같은 고유 이름을 할당합니다. 연결된 리소스 편집기 또는 [속성 창](/visualstudio/ide/reference/properties-window)에서 리소스에 대한 속성을 편집하여 이 리소스 ID를 사용자 지정할 수 있습니다.
 
 리소스를 새 기본 리소스(템플릿에 기반을 두지 않은 리소스) 또는 [템플릿](../windows/how-to-use-resource-templates.md)을 기반으로 패턴화된 리소스로 만들 수 있습니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.
+관리되는 프로젝트에 리소스를 추가하는 방법은 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)의 *.NET 프레임워크 개발자 가이드*를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

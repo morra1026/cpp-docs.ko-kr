@@ -17,4 +17,4 @@ Microsoft C는 **switch** 문의 **case** 값 수를 제한하지 않습니다. 
 
 ## <a name="see-also"></a>참고 항목
 
-[Implementation-Defined Behavior](../c-language/implementation-defined-behavior.md)
+[구현 정의 ](../c-language/implementation-defined-behavior.md)
