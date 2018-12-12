@@ -1,4 +1,4 @@
----
+﻿---
 title: '레지스터: 레지스터의 가용성'
 ms.date: 11/04/2016
 helpviewer_keywords:

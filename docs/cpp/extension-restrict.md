@@ -1,4 +1,4 @@
----
+﻿---
 title: __restrict
 ms.date: 10/10/2018
 f1_keywords:

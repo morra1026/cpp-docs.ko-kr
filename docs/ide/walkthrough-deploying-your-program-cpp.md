@@ -20,7 +20,7 @@ ms.locfileid: "50496436"
 
 [C++ 데스크톱 개발에 Visual Studio IDE 사용](../ide/using-the-visual-studio-ide-for-cpp-desktop-development.md)에 나열된 초기 관련 연습을 수행하여 응용 프로그램을 만들었으므로 마지막 단계는 사용자가 컴퓨터에 프로그램을 설치할 수 있도록 설치 관리자를 만드는 것입니다. 설치 관리자의 경우 기존 솔루션에 새 프로젝트를 추가합니다. 이 새 프로젝트에서 다른 컴퓨터에 응용 프로그램을 설치하는 setup.exe 파일이 생성됩니다.
 
-이 연습에서는 Windows Installer를 사용하여 응용 프로그램을 배포하는 방법을 보여 줍니다. ClickOnce를 사용하여 응용 프로그램을 배포할 수도 있습니다. 자세한 내용은 [ClickOnce Deployment for Visual C++ Applications](../ide/clickonce-deployment-for-visual-cpp-applications.md)를 참조하세요. 배포에 대한 일반적인 자세한 내용은 [응용 프로그램, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)를 참조하세요.
+이 연습에서는 Windows Installer를 사용하여 응용 프로그램을 배포하는 방법을 보여 줍니다. ClickOnce를 사용하여 응용 프로그램을 배포할 수도 있습니다. 자세한 내용은 [Visual c + + 응용 프로그램에 대 한 ClickOnce 배포](../ide/clickonce-deployment-for-visual-cpp-applications.md)합니다. 배포에 대한 일반적인 자세한 내용은 [응용 프로그램, 서비스 및 구성 요소 배포](/visualstudio/deployment/deploying-applications-services-and-components)를 참조하세요.
 
 ## <a name="prerequisites"></a>전제 조건
 

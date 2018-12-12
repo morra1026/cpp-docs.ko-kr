@@ -1,4 +1,4 @@
----
+﻿---
 title: 변환 단계
 ms.date: 10/18/2018
 helpviewer_keywords:

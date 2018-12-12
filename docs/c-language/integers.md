@@ -1,4 +1,4 @@
----
+﻿---
 title: 정수
 ms.date: 11/04/2016
 helpviewer_keywords:

@@ -4,12 +4,12 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: aa93158e518950efa9d1f2f8092aeabbc3c7724c
-ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
+ms.openlocfilehash: ef61ebbfad62e6a7bf764bad35204247e47d8ddb
+ms.sourcegitcommit: 6990f842fefc27b522b15cf352f3517b319d78da
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51598823"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248574"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -62,7 +62,7 @@ ms.locfileid: "51598823"
 |[/homeparams](homeparams-copy-register-parameters-to-stack.md)|레지스터에 전달된 매개 변수를 함수 시작 시 스택의 해당 위치에 기록합니다. X64에만이 컴파일러 옵션은 컴파일러 (네이티브 및 크로스 컴파일).|
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
 |[/Qfast_transcendentals](qfast-transcendentals-force-fast-transcendentals.md)|빠른 초월수를 생성합니다.|
-|[QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환해야 할 때 도우미 함수 `_ftol` 이 호출되지 않도록 합니다. (x86 전용)|
+|[/QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환해야 할 때 도우미 함수 `_ftol` 이 호출되지 않도록 합니다. (x86 전용)|
 |[/Qimprecise_fwaits](qimprecise-fwaits-remove-fwaits-inside-try-blocks.md)|`fwait` 블록 내에 있는 `try` 명령을 제거합니다.|
 |[/Qpar](qpar-auto-parallelizer.md)|루프 자동 병렬화를 사용하도록 설정합니다.|
 |[/Qpar-report](qpar-report-auto-parallelizer-reporting-level.md)|자동 병렬화에 대한 보고 수준을 사용하도록 설정합니다.|
@@ -207,7 +207,7 @@ ms.locfileid: "51598823"
 |[/GZ](gz-enable-stack-frame-run-time-error-checking.md)|더 이상 사용되지 않습니다. 빠른 검사를 사용하도록 설정합니다. 대신 [/RTC1](rtc-run-time-error-checks.md) 을 사용합니다.|
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/Og](og-global-optimizations.md)|더 이상 사용되지 않습니다. 전역 최적화를 사용합니다.|
-|[QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환하는 방법을 지정하는 데 사용되었습니다.|
+|[/QIfist](qifist-suppress-ftol.md)|더 이상 사용되지 않습니다. 부동 소수점 형식에서 정수 계열 형식으로 변환하는 방법을 지정하는 데 사용되었습니다.|
 |[/V](v-version-number.md)|더 이상 사용되지 않습니다. .obj 파일 버전 문자열을 설정합니다.|
 |[/Wp64](wp64-detect-64-bit-portability-issues.md)|사용되지 않습니다. 64비트 이식성 문제를 검색합니다.|
 |[/Yd](yd-place-debug-information-in-object-file.md)|더 이상 사용되지 않습니다. 모든 개체 파일에 완전한 디버깅 정보를 저장합니다. 대신 [/Zi](z7-zi-zi-debug-information-format.md) 를 사용합니다.|

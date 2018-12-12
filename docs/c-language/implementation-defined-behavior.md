@@ -1,4 +1,4 @@
----
+﻿---
 title: 구현 정의 동작
 ms.date: 11/04/2016
 helpviewer_keywords:

@@ -1,4 +1,4 @@
----
+﻿---
 title: 배열 및 포인터
 ms.date: 11/04/2016
 helpviewer_keywords:
