@@ -9,12 +9,12 @@ helpviewer_keywords:
 - functions [MFC], callback
 - callback functions [MFC]
 ms.assetid: b2a6857c-fdd3-45ec-8fd8-2e71fac77582
-ms.openlocfilehash: 17078bd9d916aac2676180f8854d93a4de92aa4a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: acb7b6c677d03ef1320e24373671a7577c2ccda8
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555612"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178436"
 ---
 # <a name="callback-functions-used-by-mfc"></a>MFC에서 사용하는 콜백 함수
 
@@ -45,7 +45,7 @@ int CALLBACK EXPORT ObjectFunc(
 ### <a name="parameters"></a>매개 변수
 
 *lpszLogObject*<br/>
-가리키는 [LOGPEN](../../mfc/reference/logpen-structure.md) 하거나 [LOGBRUSH](../../mfc/reference/logbrush-structure.md) 개체의 논리적 특성에 대 한 정보를 포함 하는 데이터 구조입니다.
+가리키는 [LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen) 하거나 [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) 개체의 논리적 특성에 대 한 정보를 포함 하는 데이터 구조입니다.
 
 *lpData*<br/>
 응용 프로그램에서 제공한 데이터를 가리킵니다. 전달 된 `EnumObjects` 함수입니다.

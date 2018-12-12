@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CPrintDialogEx [MFC], PrintSelection
 - CPrintDialogEx [MFC], m_pdex
 ms.assetid: 1d506703-ee1c-44cc-b4ce-4e778fec26b8
-ms.openlocfilehash: 79d696f89ca7474220559abbf5464f32b6e684c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb88cc39ddaffe51b80484bbe8460507a1d0aecb
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543327"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178449"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx 클래스
 
@@ -154,7 +154,7 @@ CPrintDialogEx(
 
 ##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC
 
-프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.
+프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 구조입니다.
 
 ```
 HDC CreatePrinterDC();
@@ -216,9 +216,9 @@ TRUE 이면 성공적이 고, 그렇지 않으면 FALSE.
 
 ### <a name="remarks"></a>설명
 
-프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.
+프린터 장치 컨텍스트 (DC)를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 구조입니다.
 
-`GetDefaults` 인쇄 속성 시트를 표시 하지 않습니다. 설정 대신 합니다 `hDevNames` 및 `hDevMode` 멤버인 [m_pdex](#m_pdex) 에 대 한 핸들을는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 및 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조에 대 한 초기화 되는 시스템 기본 프린터입니다. 둘 다 `hDevNames` 하 고 `hDevMode` 는 NULL 이어야 또는 `GetDefaults` 실패 합니다.
+`GetDefaults` 인쇄 속성 시트를 표시 하지 않습니다. 설정 대신 합니다 `hDevNames` 및 `hDevMode` 멤버인 [m_pdex](#m_pdex) 에 대 한 핸들을는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 및 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 구조에 대 한 초기화 되는 시스템 기본 프린터입니다. 둘 다 `hDevNames` 하 고 `hDevMode` 는 NULL 이어야 또는 `GetDefaults` 실패 합니다.
 
 PD_RETURNDC 플래그가 설정 된 경우이 함수는 반환 하지 않습니다만 `hDevNames` 하 고 `hDevMode` (에 있는 `m_pdex.hDevNames` 및 `m_pdex.hDevMode`) 호출자에 게에서 프린터 DC도 반환 됩니다 `m_pdex.hDC`합니다. DC 프린터를 삭제 하는 Windows를 호출 하는 호출자의 책임이 [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) 완료 했으면 핸들에 대해 함수를 `CPrintDialogEx` 개체입니다.
 

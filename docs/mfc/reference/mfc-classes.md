@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-ms.openlocfilehash: c35d7bf16b851fe9a96bdd896babfa450c726374
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: ee64ca259f2466bb02f7dd650a10dc18f8d8f8a1
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525278"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178956"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 
@@ -1099,7 +1099,7 @@ MRU(가장 최근에 사용됨) 파일 목록의 컨트롤을 지원합니다.
 컨트롤에 데이터베이스 레코드를 표시하는 뷰입니다.
 
 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)<br/>
-Windows 비슷합니다 [RECT 구조체](rect-structure.md)합니다.
+Windows 비슷합니다 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect)합니다.
 
 [CRectTracker 클래스](../../mfc/reference/crecttracker-class.md)<br/>
 항목을 다른 방식으로 표시, 이동하거나 크기를 변경할 수 있도록 합니다.
@@ -1165,7 +1165,7 @@ SDI(단일 문서 인터페이스)를 구현하는 문서 템플릿을 정의합
 애니메이션 변수의 초기 속도에 의해 진폭이 결정되는 사인 곡선 속도 전환을 캡슐화합니다.
 
 [CSize 클래스](../../atl-mfc-shared/reference/csize-class.md)<br/>
-상대 좌표 또는 위치를 구현하는 Windows [SIZE](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체와 유사합니다.
+상대 좌표 또는 위치를 구현하는 Windows [SIZE](/windows/desktop/api/windef/ns-windef-tagsize) 구조체와 유사합니다.
 
 [CSliderCtrl 클래스](../../mfc/reference/csliderctrl-class.md)<br/>
 Windows의 공용 슬라이더 컨트롤의 기능을 제공합니다.

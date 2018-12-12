@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CCheckListBox [MFC], SetCheck
 - CCheckListBox [MFC], SetCheckStyle
 ms.assetid: 1dd78438-00e8-441c-b36f-9c4f9ac0d019
-ms.openlocfilehash: b3bf93a876f9092d5615b75ca45fea71341d3557
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: b1e64e947f798becef32fa4d99f21e61133cc8fc
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327345"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53177838"
 ---
 # <a name="cchecklistbox-class"></a>CCheckListBox 클래스
 
@@ -146,7 +146,7 @@ virtual BOOL Create(
 검사 목록 상자의 스타일을 지정합니다. LBS_HASSTRINGS LBS_OWNERDRAWFIXED (목록의 모든 항목이 같은 높이 하는 데 사용) 또는 LBS_OWNERDRAWVARIABLE 스타일 이어야 합니다 (목록의 항목은 다양 한 높이가). 이 스타일을 다른와 결합할 수 있습니다 [목록 상자 스타일](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) LBS_USETABSTOPS를 제외 하 고 있습니다.
 
 *rect*<br/>
-검사 목록 상자 크기와 위치를 지정합니다. 일 수를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](../../mfc/reference/rect-structure1.md) 구조입니다.
+검사 목록 상자 크기와 위치를 지정합니다. 일 수를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조입니다.
 
 *pParentWnd*<br/>
 검사 목록 상자의 부모 창 (일반적으로 `CDialog` 개체). NULL이 아니어야 합니다.
@@ -193,7 +193,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDrawItemStruct*<br/>
-에 대 한 긴 포인터를 [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
+에 대 한 긴 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -242,7 +242,7 @@ int GetCheck(int nIndex);
 
 |값|설명|
 |-----------|-----------------|
-|BST_CHECKED|확인 확인란 합니다.|
+|BST_CHECKED|확인란이 선택되었습니다.|
 |BST_UNCHECKED|확인란 확인 하지 않습니다.|
 |BST_INDETERMINATE|확인란 상태가 확정적이 지 않습니다.|
 
@@ -290,7 +290,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpMeasureItemStruct*<br/>
-에 대 한 긴 포인터를 [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) 구조입니다.
+에 대 한 긴 포인터를 [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) 구조입니다.
 
 ### <a name="remarks"></a>설명
 

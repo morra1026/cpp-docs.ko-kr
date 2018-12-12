@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMetaFileDC [MFC], Create
 - CMetaFileDC [MFC], CreateEnhanced
 ms.assetid: ffce60fa-4181-4d46-9832-25e46fad4db4
-ms.openlocfilehash: 343ab1a5d0c38ab0d17c609fbfc134b144502553
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfbe03c5c81b2c7d6517dff7ce4e5f88b7c076bc
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471814"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178306"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC 클래스
 
@@ -186,7 +186,7 @@ BOOL CreateEnhanced(
 Null로 끝나는 문자열을 가리킵니다. 만들려는 확장된 메타 파일의 파일 이름을 지정 합니다. 확장된 메타 파일 메모리 기반 이며 손실 또는 경우는 개체가 소멸 될 때 해당 내용을이 매개 변수가 NULL 인 경우 Win32 `DeleteEnhMetaFile` 함수를 호출 합니다.
 
 *lpBounds*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 데이터 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) HIMETRIC 단위 (.01 밀리미터 단위로) 그림의 확장된 메타 파일에 저장 될 크기를 지정 하는 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 데이터 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) HIMETRIC 단위 (.01 밀리미터 단위로) 그림의 확장된 메타 파일에 저장 될 크기를 지정 하는 개체입니다.
 
 *lpszDescription*<br/>
 그림의 제목 뿐만 아니라 그림을 생성 한 응용 프로그램의 이름을 지정 하는 0으로 끝나는 문자열을 가리킵니다.

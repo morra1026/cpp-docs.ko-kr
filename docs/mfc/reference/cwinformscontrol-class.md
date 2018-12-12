@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-ms.openlocfilehash: c27bcfa88ec5ba8b330a62f6ecfbad7e10a54d6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8728c876badcf6648740cc842a1f289789bf0f4
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547487"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178241"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl 클래스
 
@@ -111,10 +111,10 @@ inline BOOL CreateManagedControl(
 만들려는 컨트롤의 데이터 형식입니다. 이어야 합니다는 [형식](https://msdn.microsoft.com/library/system.type) 데이터 형식입니다.
 
 *dwStyle*<br/>
-컨트롤에 적용할 창 스타일입니다. 조합을 지정할 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다. 현재 다음 스타일만 지원 됩니다: WS_TABSTOP, WS_VISIBLE, WS_DISABLED 및 WS_GROUP 합니다.
+컨트롤에 적용할 창 스타일입니다. 조합을 지정할 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다. 현재, 다음과 같은 스타일만 지원 됩니다. WS_TABSTOP, WS_VISIBLE, WS_DISABLED 및 WS_GROUP 합니다.
 
 *rect*<br/>
-A [RECT 구조체](../../mfc/reference/rect-structure1.md) 컨트롤의 왼쪽 및 오른쪽 아래 모퉁이의 좌표를 정의 하는 (첫 번째 오버 로드만).
+A [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 컨트롤의 왼쪽 및 오른쪽 아래 모퉁이의 좌표를 정의 하는 (첫 번째 오버 로드만).
 
 *nPlaceHolderID*<br/>
 리소스 편집기에서 배치 하는 정적 자리 표시자 컨트롤의 핸들입니다. 새로 만든된 Windows Forms 컨트롤을 해당 위치, z-순서 및 스타일 가정 하 고 정적 컨트롤을 대체 (두 번째 오버 로드만).

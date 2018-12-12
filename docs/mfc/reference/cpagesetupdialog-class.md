@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: 136f172dcd406e323afddae87d6fb234b5d4b273
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3fdcfa664de93f62b8b4dbcbc6184d08fdf591c
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544887"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178084"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 
@@ -142,7 +142,7 @@ CPageSetupDialog(
 
 - PSD_DISABLEORIENTATION은 페이지 방향 대화 상자 컨트롤을 비활성화합니다.
 
-- PSD_RETURNDEFAULT 발생 `CPageSetupDialog` 반환할 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 대화 상자를 표시 하지 않고 시스템 기본 프린터에 대 한 초기화 되는 구조입니다. 가정 하는 두 `hDevNames` 고 `hDevMode` 함수는 오류를 반환 하는 고, 그렇지 않으면 null입니다. 시스템 기본 프린터는 이전 프린터 드라이버 (이전의 Windows 버전 3.0)에서 지원 되는 경우만 `hDevNames` 를 반환 합니다. `hDevMode` NULL입니다.
+- PSD_RETURNDEFAULT 발생 `CPageSetupDialog` 반환할 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 대화 상자를 표시 하지 않고 시스템 기본 프린터에 대 한 초기화 되는 구조입니다. 가정 하는 두 `hDevNames` 고 `hDevMode` 함수는 오류를 반환 하는 고, 그렇지 않으면 null입니다. 시스템 기본 프린터는 이전 프린터 드라이버 (이전의 Windows 버전 3.0)에서 지원 되는 경우만 `hDevNames` 를 반환 합니다. `hDevMode` NULL입니다.
 
 - PSD_DISABLEPAPER 문서 선택 컨트롤을 비활성화 합니다.
 
@@ -171,7 +171,7 @@ CPageSetupDialog(
 
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC
 
-프린터 장치 컨텍스트를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](../../mfc/reference/devnames-structure.md) 구조입니다.
+프린터 장치 컨텍스트를 만듭니다.는 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 하 고 [DEVNAMES](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames) 구조입니다.
 
 ```
 HDC CreatePrinterDC();
@@ -262,7 +262,7 @@ void GetMargins(
 ### <a name="parameters"></a>매개 변수
 
 *lpRectMargins*<br/>
-에 대 한 포인터를 [RECT](rect-structure.md) 구조 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 현재 선택한 프린터에서 인쇄 여백을 (1/1000 인치 또는 1/100 mm)에서 설명 하는 개체입니다. 이 사각형에 관심이 없는 경우이 매개 변수에 대해 NULL을 전달 합니다.
+에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 현재 선택한 프린터에서 인쇄 여백을 (1/1000 인치 또는 1/100 mm)에서 설명 하는 개체입니다. 이 사각형에 관심이 없는 경우이 매개 변수에 대해 NULL을 전달 합니다.
 
 *lpRectMinMargins*<br/>
 에 대 한 포인터를 `RECT` 구조 또는 `CRect` 현재 선택된 된 프린터에 대 한 최소 인쇄 여백 (1/1000 인치 또는 1/100 mm)에서 설명 하는 개체입니다. 이 사각형에 관심이 없는 경우이 매개 변수에 대해 NULL을 전달 합니다.
@@ -341,7 +341,7 @@ virtual UINT OnDrawPage(
 - 반송 주소 표현에 대 한 WM_PSD_YAFULLPAGERECT 영역입니다. 이 영역은 샘플 페이지 영역의 가장자리에 확장 됩니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](rect-structure.md) 그리기 영역의 좌표를 포함 하는 개체입니다.
+에 대 한 포인터를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 하거나 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 그리기 영역의 좌표를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 

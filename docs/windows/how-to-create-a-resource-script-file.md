@@ -1,5 +1,5 @@
 ---
-title: '방법: 리소스 스크립트 파일 (c + +) 만들기'
+title: '방법: 리소스 스크립트 파일(C++) 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - rc files [C++], creating

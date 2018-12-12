@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-ms.openlocfilehash: 4faa067f95f43939d6dbd05837f961b3baa7f17f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 938df6599ca3bfec3e08e77d7a60106133f54324
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593247"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178540"
 ---
 # <a name="ctoolbar-class"></a>CToolBar 클래스
 
@@ -141,7 +141,7 @@ Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니
 
 라디오 단추를 만들려면 호출을 [CCmdUI](../../mfc/reference/ccmdui-class.md) 개체의 [SetRadio](../../mfc/reference/ccmdui-class.md#setradio) ON_UPDATE_COMMAND_UI 처리기에서 멤버 함수입니다. 전달 `SetRadio` 않은 상태 또는 검사에 대 한 0이 아닌 값에 대 한 인수로 0입니다. 라디오 그룹을 함께 동작을 제공 하기 위해 모든 단추에 대 한 ON_UPDATE_COMMAND_UI 처리기 그룹에 있어야 합니다.
 
-사용 하 여 대 한 자세한 내용은 `CToolBar`, 문서를 참조 하세요 [MFC 도구 모음 구현](../../mfc/mfc-toolbar-implementation.md) 하 고 [Technical Note 31: 컨트롤 막대](../../mfc/tn031-control-bars.md)합니다.
+사용 하 여 대 한 자세한 내용은 `CToolBar`, 문서를 참조 하세요 [MFC 도구 모음 구현](../../mfc/mfc-toolbar-implementation.md) 고 [Technical Note 31: 컨트롤 막대](../../mfc/tn031-control-bars.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -406,7 +406,7 @@ virtual void GetItemRect(
 검색할 인 사각형 좌표는 (단추 또는 구분 기호) 항목의 인덱스입니다.
 
 *lpRect*<br/>
-주소를 [RECT](../../mfc/reference/rect-structure1.md) 항목의 좌표를 포함 하는 구조입니다.
+주소를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 항목의 좌표를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -565,7 +565,7 @@ void SetButtonInfo(
 스타일 TBBS_SEPARATOR 있는 구분 기호에 대해이 함수는 구분 기호 너비를 픽셀 단위로 설정에 저장 된 값 *iImage*합니다.
 
 > [!NOTE]
->  단추 상태를 사용 하 여 설정할 수도 있습니다는 *nStyle* 매개 변수 이지만 단추 상태에 의해 제어 됩니다 때문에 [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) 처리기 상태가 사용 하 여 설정한 `SetButtonInfo` 손실 됩니다 다음 중 유휴 처리 합니다. 참조 [사용자 인터페이스 개체 업데이트 하는 방법](../../mfc/how-to-update-user-interface-objects.md) 하 고 [TN031: 컨트롤 막대](../../mfc/tn031-control-bars.md) 자세한 내용은 합니다.
+>  단추 상태를 사용 하 여 설정할 수도 있습니다는 *nStyle* 매개 변수 이지만 단추 상태에 의해 제어 됩니다 때문에 [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) 처리기 상태가 사용 하 여 설정한 `SetButtonInfo` 손실 됩니다 다음 중 유휴 처리 합니다. 참조 [사용자 인터페이스 개체를 업데이트 하는 방법](../../mfc/how-to-update-user-interface-objects.md) 고 [TN031: 컨트롤 막대](../../mfc/tn031-control-bars.md) 자세한 내용은 합니다.
 
 비트맵 이미지 및 단추에 대 한 내용은 참조는 [CToolBar](../../mfc/reference/ctoolbar-class.md) 개요 및 [CToolBar::LoadBitmap](#loadbitmap)합니다.
 
@@ -640,7 +640,7 @@ void SetButtonStyle(
 호출 하기 전에 `SetButtonStyle`를 호출 합니다 [GetButtonStyle](#getbuttonstyle) 단추 또는 구분 기호 스타일을 검색 하려면 멤버 함수입니다.
 
 > [!NOTE]
->  단추 상태를 사용 하 여 설정할 수도 있습니다는 *nStyle* 매개 변수 이지만 단추 상태에 의해 제어 됩니다 때문에 [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) 처리기 상태가 사용 하 여 설정한 `SetButtonStyle` 손실 됩니다 다음 중 유휴 처리 합니다. 참조 [사용자 인터페이스 개체 업데이트 하는 방법](../../mfc/how-to-update-user-interface-objects.md) 하 고 [TN031: 컨트롤 막대](../../mfc/tn031-control-bars.md) 자세한 내용은 합니다.
+>  단추 상태를 사용 하 여 설정할 수도 있습니다는 *nStyle* 매개 변수 이지만 단추 상태에 의해 제어 됩니다 때문에 [ON_UPDATE_COMMAND_UI](message-map-macros-mfc.md#on_update_command_ui) 처리기 상태가 사용 하 여 설정한 `SetButtonStyle` 손실 됩니다 다음 중 유휴 처리 합니다. 참조 [사용자 인터페이스 개체를 업데이트 하는 방법](../../mfc/how-to-update-user-interface-objects.md) 고 [TN031: 컨트롤 막대](../../mfc/tn031-control-bars.md) 자세한 내용은 합니다.
 
 ##  <a name="setbuttontext"></a>  CToolBar::SetButtonText
 

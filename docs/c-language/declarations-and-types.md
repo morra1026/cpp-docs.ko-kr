@@ -42,4 +42,4 @@ ms.locfileid: "50607339"
 
 ## <a name="see-also"></a>참고 항목
 
-[C# 언어 참조](../c-language/c-language-reference.md)
+[C 언어 참조](../c-language/c-language-reference.md)

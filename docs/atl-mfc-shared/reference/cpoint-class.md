@@ -11,12 +11,12 @@ helpviewer_keywords:
 - POINT structure
 - CPoint class
 ms.assetid: a6d4db93-35cc-444d-9221-c3e160f6edaa
-ms.openlocfilehash: 5df8dbe03a59f899f2157eff842218e91e8f40dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f6ab15f80ac448b4e7383e2db92f22262c20d08
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500622"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178071"
 ---
 # <a name="cpoint-class"></a>CPoint 클래스
 
@@ -55,9 +55,9 @@ class CPoint : public tagPOINT
 
 ## <a name="remarks"></a>설명
 
-또한 조작 하는 멤버 함수 `CPoint` 하 고 [지점](../../mfc/reference/point-structure.md) 구조입니다.
+또한 조작 하는 멤버 함수 `CPoint` 하 고 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조입니다.
 
-A `CPoint` 개체 수 아무 곳에 나 사용을 `POINT` 구조를 사용 합니다. 이 클래스의 "크기"를 사용 하 여 상호 작용 하는 연산자를 허용 하거나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체 또는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조를 두는 서로 바꿔 사용할 수 있습니다.
+A `CPoint` 개체 수 아무 곳에 나 사용을 `POINT` 구조를 사용 합니다. 이 클래스의 "크기"를 사용 하 여 상호 작용 하는 연산자를 허용 하거나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체 또는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조를 두는 서로 바꿔 사용할 수 있습니다.
 
 > [!NOTE]
 >  이 클래스에서 파생 되는 `tagPOINT` 구조입니다. (이름을 `tagPOINT` 자주 사용 되는 이름입니다는 `POINT` 구조입니다.) 즉, 데이터 멤버를 `POINT` 구조 `x` 및 `y`, 액세스할 수 있는 데이터 멤버는 `CPoint`합니다.
@@ -96,10 +96,10 @@ CPoint(LPARAM dwPoint) throw();
 `y`의 `CPoint` 멤버 값을 지정합니다.
 
 *initPt*<br/>
-[지점](../../mfc/reference/point-structure.md) 구조 나 `CPoint` 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
+[지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 나 `CPoint` 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
 
 *initSize*<br/>
-[크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
+[크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 초기화 하는 데 사용 하는 값을 지정 하는 `CPoint`합니다.
 
 *dwPoint*<br/>
 집합의 `x` 멤버의 하위 단어를 *dwPoint* 하며 `y` 멤버의 상위 단어를 *dwPoint*합니다.
@@ -153,11 +153,11 @@ void Offset(SIZE size) throw();
 *y 오프셋*<br/>
 오프셋할 크기를 지정 합니다 `y` 의 멤버는 `CPoint`합니다.
 
-*지점*<br/>
-크기를 지정 합니다 ( [지점](../../mfc/reference/point-structure.md) 또는 `CPoint`) 오프셋을 `CPoint`입니다.
+*point*<br/>
+크기를 지정 합니다 ( [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 또는 `CPoint`) 오프셋을 `CPoint`입니다.
 
 *size*<br/>
-크기를 지정 합니다 ( [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md)) 오프셋을 `CPoint`입니다.
+크기를 지정 합니다 ( [크기](/windows/desktop/api/windef/ns-windef-tagsize) 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md)) 오프셋을 `CPoint`입니다.
 
 ### <a name="example"></a>예제
 
@@ -173,8 +173,8 @@ BOOL operator==(POINT point) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 `CPoint` 개체입니다.
+*point*<br/>
+포함 된 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 `CPoint` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -194,8 +194,8 @@ BOOL operator!=(POINT point) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 `CPoint` 개체입니다.
+*point*<br/>
+포함 된 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 `CPoint` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -217,10 +217,10 @@ void operator+=(POINT point) throw();
 ### <a name="parameters"></a>매개 변수
 
 *size*<br/>
-포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+포함 된 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*지점*<br/>
-포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+*point*<br/>
+포함 된 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -246,10 +246,10 @@ void operator-=(POINT point) throw();
 ### <a name="parameters"></a>매개 변수
 
 *size*<br/>
-포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+포함 된 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*지점*<br/>
-포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+*point*<br/>
+포함 된 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -276,13 +276,13 @@ CRect operator+(const RECT* lpRect) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *size*<br/>
-포함 된 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+포함 된 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
-*지점*<br/>
-포함 된 [지점](../../mfc/reference/point-structure.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+*point*<br/>
+포함 된 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 포함 한 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
+에 대 한 포인터를 포함 한 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -311,14 +311,14 @@ CPoint operator-() const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-A [지점](../../mfc/reference/point-structure.md) 구조 나 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+*point*<br/>
+A [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 나 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 *size*<br/>
-A [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](../../mfc/reference/rect-structure.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
+에 대 한 포인터를 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -344,7 +344,7 @@ A `CSize` 두 점 사이의 차이 나타내는 `CPoint` 크기의 부정 만큼
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[POINT 구조체](../../mfc/reference/point-structure.md)<br/>
+[POINT 구조체](/windows/desktop/api/windef/ns-windef-tagpoint)<br/>
 [CRect 클래스](../../atl-mfc-shared/reference/crect-class.md)<br/>
 [CSize 클래스](../../atl-mfc-shared/reference/csize-class.md)
 

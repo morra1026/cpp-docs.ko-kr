@@ -32,7 +32,7 @@ ms.locfileid: "50616998"
 
 컴파일러는 멤버 선택 연산자의 오른쪽에이 특성으로 선언 된 데이터 멤버를 확인 하는 경우 ("**합니다.**"또는"**->**")를 변환 하는 작업을 `get` 또는 `put` 함수를 이러한 식은 l-value 또는 r-value 인지에 따라 합니다. 더 복잡 한 컨텍스트에서 같은 "`+=`"를 다시 쓰기를 모두 수행 하 여 수행 됩니다 `get` 고 `put`입니다.
 
-이 특성은 클래스 또는 구조체 정의에 있는 빈 배열의 선언에서도 사용할 수 있습니다. 예를 들어:
+이 특성은 클래스 또는 구조체 정의에 있는 빈 배열의 선언에서도 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 __declspec(property(get=GetX, put=PutX)) int x[];
@@ -66,7 +66,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

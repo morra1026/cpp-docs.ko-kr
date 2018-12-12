@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 3ec5b734b23a27522fe430d24d2a65eebcca3dd3
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 9a06f3bd8a8c5646f384c3f788518078b121bfe1
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694727"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178137"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl 클래스
 
@@ -111,7 +111,7 @@ virtual BOOL Create(
 바로 가기 키 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 참조 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) 자세한 내용은 Windows sdk입니다.
 
 *rect*<br/>
-바로 가기 키 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md)합니다.
+바로 가기 키 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect)합니다.
 
 *pParentWnd*<br/>
 바로 가기 키 컨트롤의 부모 창에 일반적으로 지정 된 [CDialog](../../mfc/reference/cdialog-class.md)합니다. NULL이 아니어야 합니다.

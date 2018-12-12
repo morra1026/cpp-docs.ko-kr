@@ -102,12 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: 38463d5e7daf86c40cdef429cd80b18598e19025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad9f945a91a96c40afe614240a847a028ba5b5d9
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656094"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178618"
 ---
 # <a name="clistbox-class"></a>CListBox 클래스
 
@@ -339,7 +339,7 @@ virtual int CompareItem(LPCOMPAREITEMSTRUCT lpCompareItemStruct);
 
 ### <a name="return-value"></a>반환 값
 
-에 설명 된 두 항목의 상대 위치를 나타내는 합니다 [COMPAREITEMSTRUCT](../../mfc/reference/compareitemstruct-structure.md) 구조입니다. 다음 값 중 하나일 수 있습니다.
+에 설명 된 두 항목의 상대 위치를 나타내는 합니다 [COMPAREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcompareitemstruct) 구조입니다. 다음 값 중 하나일 수 있습니다.
 
 |값|의미|
 |-----------|-------------|
@@ -426,7 +426,7 @@ virtual void DeleteItem(LPDELETEITEMSTRUCT lpDeleteItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDeleteItemStruct*<br/>
-Windows에 대 한 긴 포인터 [DELETEITEMSTRUCT](../../mfc/reference/deleteitemstruct-structure.md) 삭제 된 항목에 대 한 정보를 포함 하는 구조입니다.
+Windows에 대 한 긴 포인터 [DELETEITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdeleteitemstruct) 삭제 된 항목에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -511,7 +511,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpDrawItemStruct*<br/>
-에 대 한 긴 포인터를 [DRAWITEMSTRUCT](../../mfc/reference/drawitemstruct-structure.md) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
+에 대 한 긴 포인터를 [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) 필요한 드로잉의 종류에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -770,7 +770,7 @@ int GetItemRect(
 항목의 0부터 시작 하는 인덱스를 지정합니다.
 
 *lpRect*<br/>
-에 대 한 긴 포인터를 지정 된 [RECT 구조체](../../mfc/reference/rect-structure1.md) 을 받는 항목의 목록 상자 클라이언트 좌표에 합니다.
+에 대 한 긴 포인터를 지정 된 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 을 받는 항목의 목록 상자 클라이언트 좌표에 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1039,7 +1039,7 @@ UINT ItemFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 목록 상자의 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 지정 된 가장 가까운 항목을 찾을 수 있는 지점입니다.
 
 *bOutside*<br/>
@@ -1068,7 +1068,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 ### <a name="parameters"></a>매개 변수
 
 *lpMeasureItemStruct*<br/>
-에 대 한 긴 포인터를 [MEASUREITEMSTRUCT](../../mfc/reference/measureitemstruct-structure.md) 구조입니다.
+에 대 한 긴 포인터를 [MEASUREITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagmeasureitemstruct) 구조입니다.
 
 ### <a name="remarks"></a>설명
 

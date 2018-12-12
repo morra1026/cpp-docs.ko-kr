@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: d2214af96f3eba7d1b1d3c8e52f0c82873b982d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e2df5117f6cbb96c69f54fe9e21f85b45218d6d
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463009"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178982"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -1106,7 +1106,7 @@ BOOL GetMaxSize(LPSIZE pSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *pSize*<br/>
-에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체 항목의 크기입니다.
+에 대 한 포인터를 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 항목의 크기입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1247,7 +1247,7 @@ int GetState(int nID) const;
 
 ### <a name="remarks"></a>설명
 
-이 함수는 둘 이상의 단추 상태를 검색 하려는 경우에 특히 유용 합니다. 방금 한 상태를 검색 하려면 다음 구성원 함수 중 하나를 사용 합니다. [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked)를 [IsButtonPressed](#isbuttonpressed), [IsButtonHidden ](#isbuttonhidden), 또는 [IsButtonIndeterminate](#isbuttonindeterminate)합니다. 그러나는 `GetState` 멤버 함수는 유일한 방법은 TBSTATE_WRAP 단추 상태를 감지할 수 있습니다.
+이 함수는 둘 이상의 단추 상태를 검색 하려는 경우에 특히 유용 합니다. 방금 한 상태를 검색 하려면 다음 멤버 함수 중 하나를 사용 합니다. [IsButtonEnabled](#isbuttonenabled), [IsButtonChecked](#isbuttonchecked)합니다 [IsButtonPressed](#isbuttonpressed)를 [IsButtonHidden](#isbuttonhidden), 또는 [IsButtonIndeterminate](#isbuttonindeterminate)합니다. 그러나는 `GetState` 멤버 함수는 유일한 방법은 TBSTATE_WRAP 단추 상태를 감지할 수 있습니다.
 
 ##  <a name="getstring"></a>  CToolBarCtrl::GetString
 
@@ -2335,7 +2335,7 @@ BOOL SetState(
 
 ### <a name="remarks"></a>설명
 
-이 함수는 둘 이상의 단추 상태를 설정 하려는 경우에 특히 유용 합니다. 방금 한 상태를 설정 하려면 다음 구성원 함수 중 하나를 사용 합니다. [EnableButton](#enablebutton), [CheckButton](#checkbutton), [HideButton](#hidebutton), [비활성](#indeterminate), 또는 [PressButton](#pressbutton)합니다.
+이 함수는 둘 이상의 단추 상태를 설정 하려는 경우에 특히 유용 합니다. 방금 한 상태를 설정 하려면 다음 멤버 함수 중 하나를 사용 합니다. [EnableButton](#enablebutton), [CheckButton](#checkbutton)를 [HideButton](#hidebutton)를 [비활성화](#indeterminate), 또는 [PressButton](#pressbutton)합니다.
 
 ##  <a name="setstyle"></a>  CToolBarCtrl::SetStyle
 

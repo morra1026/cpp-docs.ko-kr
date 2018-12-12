@@ -311,18 +311,18 @@ helpviewer_keywords:
 - CMFCToolBar [MFC], m_bDontScaleImages
 - CMFCToolBar [MFC], m_dblLargeImageRatio
 ms.assetid: e7679c01-fb94-44c0-98c6-3af955292fb5
-ms.openlocfilehash: d1677716db42f7f2e3b74e63562d00527291c144
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 98de92a9473d64a87b9b7a9f2891adf4263e1951
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524669"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178969"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar 클래스
 
 합니다 `CMFCToolBar` 클래스와 유사 [CToolBar 클래스](../../mfc/reference/ctoolbar-class.md), 하지만 사용자 인터페이스 기능에 대 한 추가 지원을 제공 합니다. 여기에는 평면 도구 모음, 핫 이미지 포함 도구 모음, 큰 아이콘, 페이저 단추, 잠긴 도구 모음, rebar 컨트롤, 이미지 아래 텍스트, 배경 이미지, 탭 도구 모음이 포함됩니다. `CMFCToolBar` 클래스에는 기본 제공 사용자 지정 도구 모음과 메뉴, 메뉴 사이 끌어 놓기, 콤보 상자 단추, 편집 상자 단추, 색 선택 및 롤업 단추 도구 모음이 포함됩니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -452,7 +452,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 |[CMFCToolBar::OnReset](#onreset)|도구 모음을 원래 상태로 복원합니다.|
 |[CMFCToolBar::OnSetAccData](#onsetaccdata)|(재정의 [cbasepane:: Onsetaccdata](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|
 |[CMFCToolBar::OnSetDefaultButtonText](#onsetdefaultbuttontext)|도구 모음 단추의 텍스트를 기본 상태로 복원합니다.|
-|`CMFCToolBar::OnUpdateCmdUI`|내부적으로 사용 합니다.|
+|`CMFCToolBar::OnUpdateCmdUI`|내부적으로 사용됩니다.|
 |[CMFCToolBar::RemoveAllButtons](#removeallbuttons)|도구 모음에서 모든 단추를 제거합니다.|
 |[CMFCToolBar::RemoveButton](#removebutton)|도구 모음에서 지정된 된 인덱스를 사용 하 여 단추를 제거합니다.|
 |[CMFCToolBar::RemoveStateFromRegistry](#removestatefromregistry)|Windows 레지스트리에서 도구 모음에 대 한 상태 정보를 삭제합니다.|
@@ -519,7 +519,7 @@ class CMFCToolBar : public CMFCBaseToolBar
 
 1. 호출 [CBasePane::EnableDocking](../../mfc/reference/cbasepane-class.md#enabledocking) 도킹 스타일을 지정 합니다.
 
-특수 단추를 삽입 하려면 콤보 상자 또는 드롭다운 도구 모음과 같은 부모 리소스에서 더미 단추를 예약 하 고 사용 하 여 런타임 시에 더미 단추를 교체할 [CMFCToolBar::ReplaceButton](#replacebutton)합니다. 자세한 내용은 [연습: 도구 모음에 컨트롤 배치](../walkthrough-putting-controls-on-toolbars.md)합니다.
+특수 단추를 삽입 하려면 콤보 상자 또는 드롭다운 도구 모음과 같은 부모 리소스에서 더미 단추를 예약 하 고 사용 하 여 런타임 시에 더미 단추를 교체할 [CMFCToolBar::ReplaceButton](#replacebutton)합니다. 자세한 내용은 참조 하세요. [연습: 도구 모음에 컨트롤 넣기](../walkthrough-putting-controls-on-toolbars.md)합니다.
 
 `CMFCToolBar` MFC 라이브러리 클래스에 대 한 기본 클래스인 [CMFCMenuBar 클래스](../../mfc/reference/cmfcmenubar-class.md)를 [CMFCPopupMenuBar 클래스](../../mfc/reference/cmfcpopupmenubar-class.md), 및 [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md)합니다.
 
@@ -1242,7 +1242,7 @@ void EnableReflections(BOOL bEnable = TRUE);
 
 콤보 상자와 같은 포함 된 컨트롤을 포함 하는 도구 모음 단추에 대 한 명령 리플렉션 사용 하도록 설정 하려면이 메서드를 호출 합니다.
 
-명령 리플렉션에 대 한 자세한 내용은 참조 하세요. [TN062: Windows 컨트롤에 대 한 메시지 리플렉션](../../mfc/tn062-message-reflection-for-windows-controls.md)합니다.
+명령 리플렉션에 대 한 자세한 내용은 참조 하세요. [TN062: Windows 컨트롤에 대 한 리플렉션 메시지](../../mfc/tn062-message-reflection-for-windows-controls.md)합니다.
 
 ##  <a name="enabletextlabels"></a>  CMFCToolBar::EnableTextLabels
 
@@ -2146,7 +2146,7 @@ virtual int HitTest(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 클라이언트 좌표로 테스트할 점입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2491,7 +2491,7 @@ static BOOL IsLastCommandFromButton(CMFCToolBarButton* pButton);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 포인터를 가져옵니다을 [MSG 구조체](../../mfc/reference/msg-structure1.md) 를 호출 하 여 `CWnd::GetCurrentMessage`입니다. 다음 단추를 사용 하 여 HWND를 비교 하는 `MSG::lParam` 및 `MSG::hwnd` 멤버 단추 명령 원본 했는지 확인 하려면.
+이 메서드는 포인터를 가져옵니다을 [MSG 구조체](/windows/desktop/api/winuser/ns-winuser-tagmsg) 를 호출 하 여 `CWnd::GetCurrentMessage`입니다. 다음 단추를 사용 하 여 HWND를 비교 하는 `MSG::lParam` 및 `MSG::hwnd` 멤버 단추 명령 원본 했는지 확인 하려면.
 
 ##  <a name="islocked"></a>  CMFCToolBar::IsLocked
 
@@ -3905,5 +3905,5 @@ AFX_IMPORT_DATA static BOOL m_bDontScaleImages;
 [CMFCMenuBar 클래스](../../mfc/reference/cmfcmenubar-class.md)<br/>
 [CMFCPopupMenuBar 클래스](../../mfc/reference/cmfcpopupmenubar-class.md)<br/>
 [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
-[연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 

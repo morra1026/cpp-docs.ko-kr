@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-ms.openlocfilehash: e0095f2c490ebde10d20ec0705b1297b976b76b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e853a770dd1f98b1e7f06afd814962f3b3805ceb
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528663"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53177877"
 ---
 # <a name="ceditview-class"></a>CEditView 클래스
 
@@ -110,7 +110,7 @@ class CEditView : public CCtrlView
 
 형식의 개체를 만들 `CEditView` 편집 창 위에 나열 된 추가 기능을 사용 하려는 경우 또는 간단한 텍스트 편집기 기능을 사용 하려는 경우. `CEditView` 개체 창에 전체 클라이언트 영역을 차지할 수 있습니다. 고유한 클래스를 파생할 `CEditView` 를 추가 하 여 기본 기능을 수정 하거나 문서 템플릿에 추가할 수 있는 클래스를 선언 합니다.
 
-클래스의 기본 구현은 `CEditView` 다음 명령을 처리: ID_EDIT_SELECT_ALL "," ID_EDIT_FIND "," ID_EDIT_REPLACE "," ID_EDIT_REPEAT, "및" ID_FILE_PRINT 합니다.
+클래스의 기본 구현은 `CEditView` 다음 명령을 처리 합니다. ID_EDIT_SELECT_ALL, ID_EDIT_FIND, ID_EDIT_REPLACE, ID_EDIT_REPEAT, 및 ID_FILE_PRINT 합니다.
 
 기본 문자 제한은 `CEditView` 은 (1024 \* 1024-1 = 1048575). 내부 편집 컨트롤의 EM_LIMITTEXT 함수를 호출 하 여 변경할 수 있습니다. 그러나 제한 운영 체제에 따라 서로 다르고 형식의 편집 컨트롤 (단일 또는 여러 줄). 이러한 제한에 대 한 자세한 내용은 참조 하세요. [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext)합니다.
 
@@ -401,7 +401,7 @@ UINT PrintInsideRect(
 프린터 장치 컨텍스트 포인터입니다.
 
 *rectLayout*<br/>
-에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](../../mfc/reference/rect-structure1.md) 텍스트를 렌더링할의 사각형을 지정 합니다.
+에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT 구조체](/windows/desktop/api/windef/ns-windef-tagrect) 텍스트를 렌더링할의 사각형을 지정 합니다.
 
 *nIndexStart*<br/>
 렌더링할 첫 번째 문자의 버퍼 내의 인덱스입니다.

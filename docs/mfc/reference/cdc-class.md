@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 06c68d02433ce53c2b27167a985fc5854ca49700
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 0c8944846e249e4f752183b057bf8d2857022ab5
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176915"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179060"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 
@@ -842,7 +842,7 @@ BOOL AngleArc(
 원의 중심의 논리적 y 좌표를 지정합니다.
 
 *nRadius*<br/>
-원의 반지름을 논리 단위로 지정합니다. 이 값은 양수 여야 합니다.
+원의 반지름을 논리 단위로 지정합니다. 이 값은 양수여야 합니다.
 
 *fStartAngle*<br/>
 시작 각도 x 축 기준으로 단위로 지정합니다.
@@ -913,7 +913,7 @@ BOOL Arc(
 (논리 단위)의 경계 사각형을 지정 합니다. 중 하나는 LPRECT를 전달할 수 있습니다 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *ptStart*<br/>
-호를 정의 하는 지점의 x 및 y 좌표 (논리 단위)에서 시작점의 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
+호를 정의 하는 지점의 x 및 y 좌표 (논리 단위)에서 시작점의 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *ptEnd*<br/>
 호의 끝 지점 (논리 단위)를 정의 하는 지점의 x 및 y 좌표를 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
@@ -980,10 +980,10 @@ BOOL ArcTo(
 원호의 끝점 (논리 단위)를 정의 하는 지점의 y 좌표를 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다.
 
 *lpRect*<br/>
-(논리 단위)의 경계 사각형을 지정 합니다. 에 대 한 포인터를 전달할 수 있습니다는 [RECT](../../mfc/reference/rect-structure1.md) 데이터 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
+(논리 단위)의 경계 사각형을 지정 합니다. 에 대 한 포인터를 전달할 수 있습니다는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 데이터 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *ptStart*<br/>
-호를 정의 하는 지점의 x 및 y 좌표 (논리 단위)에서 시작점의 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](../../mfc/reference/point-structure1.md) 데이터 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
+호를 정의 하는 지점의 x 및 y 좌표 (논리 단위)에서 시작점의 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *ptEnd*<br/>
 호의 끝 지점 (논리 단위)를 정의 하는 지점의 x 및 y 좌표를 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 `POINT` 데이터 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
@@ -1169,7 +1169,7 @@ Chord의 끝점 (논리 단위)를 정의 하는 지점의 y 좌표를 지정 �
 원호가 정의 하는 지점의 x 및 y 좌표 (논리 단위)에서 시작점의 지정 합니다. 이 여기서는 현에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
 
 *ptEnd*<br/>
-Chord의 끝 지점 (논리 단위)를 정의 하는 지점의 x 및 y 좌표를 지정 합니다. 이 여기서는 현에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
+Chord의 끝 지점 (논리 단위)를 정의 하는 지점의 x 및 y 좌표를 지정 합니다. 이 여기서는 현에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1361,7 +1361,7 @@ void DPtoHIMETRIC(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpSize*<br/>
-가리키는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+가리키는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1383,16 +1383,16 @@ void DPtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-배열을 가리킵니다 [지점](../../mfc/reference/point-structure1.md) 구조 나 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+배열을 가리킵니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 나 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 *nCount*<br/>
 배열에서 요소의 수입니다.
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다. 이 매개 변수는 논리 지점 장치 지점에서 한 사각형을 변환 하는 간단한 경우에 사용 됩니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 나 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다. 이 매개 변수는 논리 지점 장치 지점에서 한 사각형을 변환 하는 간단한 경우에 사용 됩니다.
 
 *lpSize*<br/>
-가리키는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+가리키는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1420,7 +1420,7 @@ void Draw3dRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-(논리 단위)의 경계 사각형을 지정 합니다. 에 대 한 포인터를 전달할 수 있습니다는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
+(논리 단위)의 경계 사각형을 지정 합니다. 에 대 한 포인터를 전달할 수 있습니다는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *clrTopLeft*<br/>
 3 차원 사각형의 위쪽과 왼쪽된의 색을 지정 합니다.
@@ -1465,13 +1465,13 @@ void DrawDragRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 사각형의 논리적 좌표를 지정 하는 개체-여기서는 다시 그려지는 사각형의 끝 위치입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 사각형의 논리적 좌표를 지정 하는 개체-여기서는 다시 그려지는 사각형의 끝 위치입니다.
 
 *size*<br/>
 사각형의 내부 테두리 (즉, 테두리의 두께)의 왼쪽 위 모퉁이에 외부 테두리 왼쪽 위 모서리에서 거리를 지정합니다.
 
 *lpRectLast*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 논리적 좌표가 사각형의 위치를 지정 하는 개체-여기서 그릴 사각형의 원래 위치입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 논리적 좌표가 사각형의 위치를 지정 하는 개체-여기서 그릴 사각형의 원래 위치입니다.
 
 *sizeLast*<br/>
 원래 그릴 사각형의 내부 테두리 (즉, 테두리의 두께)의 왼쪽 위 모퉁이에 외부 테두리 왼쪽 위 모서리에서 거리를 지정 합니다.
@@ -1555,7 +1555,7 @@ void DrawFocusRect(LPCRECT lpRect);
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 그릴 사각형의 논리적 좌표를 지정 하는 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 그릴 사각형의 논리적 좌표를 지정 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1675,7 +1675,7 @@ BOOL DrawIcon(
 그릴 아이콘의 핸들을 식별 합니다.
 
 *point*<br/>
-논리적 x 좌표와 y-아이콘의 왼쪽 위 모퉁이 지정합니다. 전달할 수는 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
+논리적 x 좌표와 y-아이콘의 왼쪽 위 모퉁이 지정합니다. 전달할 수는 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1786,7 +1786,7 @@ CBitmap 개체에 대 한 포인터입니다.
 CBrush 개체에 대 한 포인터입니다.
 
 *hIcon*<br/>
-아이콘에 대 한 핸들입니다.
+아이콘에 대한 핸들입니다.
 
 *lpszText*<br/>
 텍스트 포인터입니다.
@@ -1833,7 +1833,7 @@ int DrawText(
 문자열의 문자 수를 지정 합니다. 하는 경우 *nCount* -1 이면 *lpszString* 는 null로 끝나는 문자열에 대 한 긴 포인터 것으로 간주 됩니다 및 `DrawText` 문자 수를 자동으로 계산 합니다.
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 서식을 지정할 텍스트가입니다 (논리적 좌표로) 사각형을 포함 하는 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 서식을 지정할 텍스트가입니다 (논리적 좌표로) 사각형을 포함 하는 개체입니다.
 
 *str*<br/>
 A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 을 그릴 수 있도록 지정된 된 문자를 포함 하는 개체입니다.
@@ -1890,7 +1890,7 @@ int DrawTextEx(
 문자열의 문자 수를 지정 합니다. 하는 경우 *nCount* -1 이면 *lpszString* 는 null로 끝나는 문자열에 대 한 긴 포인터 것으로 간주 됩니다 및 `DrawText` 문자 수를 자동으로 계산 합니다.
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 서식을 지정할 텍스트가입니다 (논리적 좌표로) 사각형을 포함 하는 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 서식을 지정할 텍스트가입니다 (논리적 좌표로) 사각형을 포함 하는 개체입니다.
 
 *str*<br/>
 A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 을 그릴 수 있도록 지정된 된 문자를 포함 하는 개체입니다.
@@ -2301,7 +2301,7 @@ BOOL ExtTextOut(
 - 현재 배경색을 사각형을 채우는 ETO_OPAQUE 지정 합니다. (설정 하 고 사용 하 여 현재 배경색을 쿼리할 수 있습니다 합니다 [SetBkColor](#setbkcolor) 하 고 [GetBkColor](#getbkcolor) 멤버 함수입니다.)
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 사각형의 크기를 결정 하는 구조체입니다. 이 매개 변수는 NULL 일 수 있습니다. 전달할 수도 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 사각형의 크기를 결정 하는 구조체입니다. 이 매개 변수는 NULL 일 수 있습니다. 전달할 수도 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *lpszString*<br/>
 그릴 수 있도록 지정 된 문자열을 가리킵니다. 전달할 수도 있습니다는 [CString](../../atl-mfc-shared/reference/cstringt-class.md) 이 매개 변수에 대 한 개체입니다.
@@ -2354,7 +2354,7 @@ void FillRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 채울 사각형의 논리적 좌표를 포함 하는 구조입니다. 전달할 수도 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 채울 사각형의 논리적 좌표를 포함 하는 구조입니다. 전달할 수도 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *pBrush*<br/>
 사각형을 채우는 데 사용 되는 브러시를 식별 합니다.
@@ -2419,7 +2419,7 @@ void FillSolidRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-(논리 단위)의 경계 사각형을 지정 합니다. 에 대 한 포인터를 전달할 수 있습니다는 [RECT](../../mfc/reference/rect-structure1.md) 데이터 구조 또는 `CRect` 이 매개 변수에 대 한 개체입니다.
+(논리 단위)의 경계 사각형을 지정 합니다. 에 대 한 포인터를 전달할 수 있습니다는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 데이터 구조 또는 `CRect` 이 매개 변수에 대 한 개체입니다.
 
 *clr* 사각형을 채우는 데 사용할 색을 지정 합니다.
 
@@ -2501,7 +2501,7 @@ void FrameRect(
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 사각형의 왼쪽 및 오른쪽 아래 모퉁이의 논리적 좌표를 포함 하는 개체입니다. 전달할 수도 있습니다는 `CRect` 이 매개 변수에 대 한 개체입니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 사각형의 왼쪽 및 오른쪽 아래 모퉁이의 논리적 좌표를 포함 하는 개체입니다. 전달할 수도 있습니다는 `CRect` 이 매개 변수에 대 한 개체입니다.
 
 *pBrush*<br/>
 사각형을 프레이밍에 사용 되는 브러시를 식별 합니다.
@@ -2767,10 +2767,10 @@ BOOL GetCharABCWidths(
 문자 너비 반환 되는 현재 글꼴에서 문자 범위의 마지막 문자를 지정 합니다.
 
 *lpabc*<br/>
-배열을 가리킵니다 [ABC](../../mfc/reference/abc-structure.md) 함수가 반환할 때 문자 너비를 수신 하는 구조입니다. 이 배열은 만큼 이상 포함 해야 합니다 `ABC` 구조에서 지정 된 범위의 문자 수 만큼 합니다 *nFirstChar* 하 고 *nLastChar* 매개 변수.
+배열을 가리킵니다 [ABC](/windows/desktop/api/wingdi/ns-wingdi-_abc) 함수가 반환할 때 문자 너비를 수신 하는 구조입니다. 이 배열은 만큼 이상 포함 해야 합니다 `ABC` 구조에서 지정 된 범위의 문자 수 만큼 합니다 *nFirstChar* 하 고 *nLastChar* 매개 변수.
 
 *lpABCF*<br/>
-배열 사용 하 여 응용 프로그램에서 제공한 버퍼를 가리키는 [ABCFLOAT](../../mfc/reference/abcfloat-structure.md) 함수가 반환할 때 문자 너비를 수신 하는 구조입니다. 이 함수에서 반환 하 고 너비는 IEEE 부동 소수점 형식입니다.
+배열 사용 하 여 응용 프로그램에서 제공한 버퍼를 가리키는 [ABCFLOAT](/windows/desktop/api/wingdi/ns-wingdi-_abcfloat) 함수가 반환할 때 문자 너비를 수신 하는 구조입니다. 이 함수에서 반환 하 고 너비는 IEEE 부동 소수점 형식입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2911,7 +2911,7 @@ virtual int GetClipBox(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-가리키는 합니다 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 사각형 크기를 수신 하는 개체입니다.
+가리키는 합니다 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 사각형 크기를 수신 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2940,7 +2940,7 @@ BOOL GetColorAdjustment(LPCOLORADJUSTMENT lpColorAdjust) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpColorAdjust*<br/>
-가리키는 [COLORADJUSTMENT](../../mfc/reference/coloradjustment-structure.md) 색 조정 값을 받을 데이터 구조입니다.
+가리키는 [COLORADJUSTMENT](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) 색 조정 값을 받을 데이터 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3513,7 +3513,7 @@ int GetPath(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-배열을 가리킵니다 [지점](../../mfc/reference/point-structure1.md) 데이터 구조 또는 `CPoint` 줄 끝점과 곡선의 제어점 개체 배치 됩니다.
+배열을 가리킵니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조 또는 `CPoint` 줄 끝점과 곡선의 제어점 개체 배치 됩니다.
 
 *lpTypes*<br/>
 꼭 짓 점 형식 배치 되는 바이트 배열 가리킵니다. 값은 다음 중 하나:
@@ -3531,7 +3531,7 @@ int GetPath(
 - PT_CLOSEFIGURE 지정 해당 줄 후 자동으로 닫혀 그림 또는 곡선을 그립니다. 그림은 PT_MOVETO 마지막 해당 지점에 선이나 곡선 끝점에서 선을 그려 닫혀 있습니다.
 
 *nCount*<br/>
-총 개수를 지정 [지점](../../mfc/reference/point-structure1.md) 에 추가할 수 있는 데이터 구조를 *lpPoints* 배열입니다. 이 값에 올 수 있는 바이트 수가 동일 해야 합니다 *lpTypes* 배열입니다.
+총 개수를 지정 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 에 추가할 수 있는 데이터 구조를 *lpPoints* 배열입니다. 이 값에 올 수 있는 바이트 수가 동일 해야 합니다 *lpTypes* 배열입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3578,7 +3578,7 @@ COLORREF GetPixel(POINT point) const;
 
 모든 장치가 `GetPixel` 기능을 지원하지는 않습니다. 자세한 내용은 아래 RC_BITBLT 래스터 기능 참조를 [GetDeviceCaps](#getdevicecaps) 멤버 함수입니다.
 
-`GetPixel` 멤버 함수에는 두 가지 형태가 있습니다. 첫 번째는 두 개의 좌표 값 두 번째는 한 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+`GetPixel` 멤버 함수에는 두 가지 형태가 있습니다. 첫 번째는 두 개의 좌표 값 두 번째는 한 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 ##  <a name="getpolyfillmode"></a>  CDC::GetPolyFillMode
 
@@ -3841,7 +3841,7 @@ BOOL GetTextExtentExPointI(
 부분 문자 모양 익스텐트를 받는 정수 배열에 대 한 포인터입니다. 배열의 각 요소에에서 제공 하 여 지정 된 공간에 적합 한 문자 모양을 문자 모양 인덱스 배열의 시작 부분 사이의 논리적 단위로 거리 *nMaxExtent*합니다. 이 배열에서 지정 된 문자 모양 인덱스 이상의 요소가 있어야 하지만 *cgi*, 함수에 의해 지정 된 대로 많은 수의 문자 모양 인덱스에 대해서만 범위를 사용 하 여 배열을 채웁니다 *lpnFit*합니다. 하는 경우 *lpnDx* 가 null 인 경우 함수는 부분 문자열 너비를 계산 하지 않습니다.
 
 *lpSize*<br/>
-에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체 논리 단위에서 문자 모양 인덱스 배열 크기입니다. 이 값은 NULL 일 수 없습니다.
+에 대 한 포인터를 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 논리 단위에서 문자 모양 인덱스 배열 크기입니다. 이 값은 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3871,7 +3871,7 @@ BOOL GetTextExtentPointI(
 가 가리키는 배열의 문자 모양 수를 지정 *pgiIn*합니다.
 
 *lpSize*<br/>
-에 대 한 포인터를 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조체 논리 단위에서 문자 모양 인덱스 배열 크기입니다. 이 값은 NULL 일 수 없습니다.
+에 대 한 포인터를 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조체 논리 단위에서 문자 모양 인덱스 배열 크기입니다. 이 값은 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -4130,7 +4130,7 @@ void HIMETRICtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpSize*<br/>
-가리키는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+가리키는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4147,7 +4147,7 @@ void HIMETRICtoLP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpSize*<br/>
-가리키는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+가리키는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 나 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4309,16 +4309,16 @@ void LPtoDP(LPSIZE lpSize) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-요소의 배열 가리킵니다. 배열의 각 요소는 [가리킨](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
+요소의 배열 가리킵니다. 배열의 각 요소는 [가리킨](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 개체입니다.
 
 *nCount*<br/>
 배열에서 요소의 수입니다.
 
 *lpRect*<br/>
-가리키는 [RECT](../../mfc/reference/rect-structure1.md) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다. 이 매개 변수는 장치 단위를 논리적 좌표에서 사각형을 매핑하는 일반적인 경우에 사용 됩니다.
+가리키는 [RECT](/windows/desktop/api/windef/ns-windef-tagrect) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체입니다. 이 매개 변수는 장치 단위를 논리적 좌표에서 사각형을 매핑하는 일반적인 경우에 사용 됩니다.
 
 *lpSize*<br/>
-가리키는 [크기](https://msdn.microsoft.com/library/windows/desktop/dd145106) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
+가리키는 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 구조 또는 [CSize](../../atl-mfc-shared/reference/csize-class.md) 개체입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -4713,7 +4713,7 @@ BOOL Pie(
 경계 사각형을 지정합니다. 전달할 수 있습니다는 `CRect` 개체나에 대 한 포인터를 `RECT` 이 매개 변수 구조입니다.
 
 *ptStart*<br/>
-원호의 시작점을 지정합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](../../mfc/reference/point-structure1.md) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
+원호의 시작점을 지정합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 *ptEnd*<br/>
 원호의 끝점을 지정 합니다. 이 여기서는 호에 정확 하 게 식별할 필요가 없습니다. 전달할 수 있습니다는 `POINT` 구조 또는 `CPoint` 이 매개 변수에 대 한 개체입니다.
@@ -4850,7 +4850,7 @@ BOOL PolyBezier(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-배열을 가리킵니다 [지점](../../mfc/reference/point-structure1.md) 는 spline(s)의 제어점과 끝점을 포함 하는 데이터 구조입니다.
+배열을 가리킵니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 는 spline(s)의 제어점과 끝점을 포함 하는 데이터 구조입니다.
 
 *nCount*<br/>
 에 있는 점의 개수를 지정 합니다 *lpPoints* 배열입니다. 이 값 하나 그릴 스플라인 수가 세 배 이상 이어야 하며, 두 개의 제어점, 끝점 및 초기 스플라인 각 Bzier 스플라인 필요 하기 때문에 필요한 추가 시작 지점.
@@ -4878,7 +4878,7 @@ BOOL PolyBezierTo(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-배열을 가리킵니다 [지점](../../mfc/reference/point-structure1.md) 끝점 및 컨트롤을 포함 하는 데이터 구조를 가리킵니다.
+배열을 가리킵니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 끝점 및 컨트롤을 포함 하는 데이터 구조를 가리킵니다.
 
 *nCount*<br/>
 에 있는 점의 개수를 지정 합니다 *lpPoints* 배열입니다. 이 값 두 개의 제어점과 끝점 각 Bzier 스플라인 필요 하기 때문에 세 번 스플라인 곡선을 그릴 수 여야 합니다.
@@ -4909,7 +4909,7 @@ BOOL PolyDraw(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-배열을 가리킵니다 [지점](../../mfc/reference/point-structure1.md) 각각에 대 한 끝점을 포함 하는 데이터 구조 줄 세그먼트 및 끝점 및 각 Bzier 스플라인 지점을 제어 합니다.
+배열을 가리킵니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 각각에 대 한 끝점을 포함 하는 데이터 구조 줄 세그먼트 및 끝점 및 각 Bzier 스플라인 지점을 제어 합니다.
 
 *lpTypes*<br/>
 요소에서 각 방법을 지정 하는 배열을 가리킵니다 합니다 *lpPoints* 배열을 사용 합니다. 값 중 하나일 수 있습니다.
@@ -5016,7 +5016,7 @@ BOOL PolylineTo(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoints*<br/>
-배열을 가리킵니다 [지점](../../mfc/reference/point-structure1.md) 줄의 꼭 짓 점을 포함 하는 데이터 구조입니다.
+배열을 가리킵니다 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 줄의 꼭 짓 점을 포함 하는 데이터 구조입니다.
 
 *nCount*<br/>
 배열의 점 개수를 지정합니다.
@@ -5932,7 +5932,7 @@ BOOL SetColorAdjustment(const COLORADJUSTMENT* lpColorAdjust);
 ### <a name="parameters"></a>매개 변수
 
 *lpColorAdjust*<br/>
-가리키는 [COLORADJUSTMENT](../../mfc/reference/coloradjustment-structure.md) 색 조정 값을 포함 하는 데이터 구조입니다.
+가리키는 [COLORADJUSTMENT](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment) 색 조정 값을 포함 하는 데이터 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6219,7 +6219,7 @@ BOOL SetPixelV(
 지점을 그리는 데 사용할 색을 지정 합니다.
 
 *point*<br/>
-논리적 x 좌표와 y-설정할 요소의 지정 합니다. 전달할 수 있습니다는 [지점](../../mfc/reference/point-structure1.md) 데이터 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
+논리적 x 좌표와 y-설정할 요소의 지정 합니다. 전달할 수 있습니다는 [지점](/windows/desktop/api/windef/ns-windef-tagpoint) 데이터 구조 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 이 매개 변수에 대 한 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -6330,7 +6330,7 @@ int SetStretchBltMode(int nStretchMode);
 ||하프톤 늘이기 모드를 설정한 후 응용 프로그램이 Win32 함수를 호출 해야 합니다 [SetBrushOrgEx](/windows/desktop/api/wingdi/nf-wingdi-setbrushorgex) 브러시 원점을 설정 합니다. 이렇게 하려면 실패 한 경우 브러시 잘못 맞춤 발생 합니다.|
 |STRETCH_ANDSCANS|**Windows 95/98**: BLACKONWHITE 동일|
 |STRETCH_DELETESCANS|**Windows 95/98**: COLORONCOLOR 동일|
-|STRETCH_HALFTONE|**Windows 95/98**: 하프톤 동일 합니다.|
+|STRETCH_HALFTONE|**Windows 95/98**: 하프톤와 동일 합니다.|
 |STRETCH_ORSCANS|**Windows 95/98**: WHITEONBLACK 동일|
 |WHITEONBLACK|제거 및 기존 픽셀에 대 한 색 값을 사용 하는 부울 OR 연산을 수행 합니다. 흑백 비트맵 비트맵을 사용 하는 경우이 모드는 검정 픽셀이 희생 흰색 픽셀을 유지 합니다.|
 

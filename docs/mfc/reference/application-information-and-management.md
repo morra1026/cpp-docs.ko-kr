@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: 9d5216cd399943cda67bc9387ea37c938e5cab48
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: c1e742d3320dae4140cc4886c47d34dbe9b6071f
+ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694337"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53178345"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -114,7 +114,7 @@ CWinThread* AfxBeginThread(
 
 다중 스레딩 응용 프로그램에서 사용할 수 있어야 합니다. 그렇지 않으면이 함수가 실패 합니다. 다중 스레딩을 사용에 대 한 자세한 내용은 참조 [/MD, /MT, /LD (런타임 라이브러리 사용)](../../build/reference/md-mt-ld-use-run-time-library.md) 아래에서 *Visual c + + 컴파일러 옵션*합니다.
 
-에 대 한 자세한 `AfxBeginThread`, 문서를 참조 하세요 [다중 스레딩: 작업자 스레드 만들기](../../parallel/multithreading-creating-worker-threads.md) 하 고 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md)합니다.
+에 대 한 자세한 `AfxBeginThread`, 문서를 참조 [다중 스레딩: 작업자 스레드를 만들지](../../parallel/multithreading-creating-worker-threads.md) 고 [다중 스레딩: 사용자 인터페이스 스레드 만들기](../../parallel/multithreading-creating-user-interface-threads.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -164,7 +164,7 @@ void AFXAPI AfxEndThread(
 
 종료 될 스레드 내에서 호출 되어야 합니다.
 
-에 대 한 자세한 `AfxEndThread`, 문서를 참조 하세요 [다중 스레딩: 스레드 종료](../../parallel/multithreading-terminating-threads.md)합니다.
+에 대 한 자세한 `AfxEndThread`, 문서를 참고 [다중 스레딩: 스레드 종료](../../parallel/multithreading-terminating-threads.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -565,11 +565,11 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 - 응용 프로그램 로드는 디렉터리입니다.
 
-- 현재 디렉터리입니다.
+- 현재 디렉터리
 
-- **Windows 95/98:** Windows 시스템 디렉터리입니다. **Windows NT:** 32 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 이름은 SYSTEM32입니다.
+- **Windows 95/98:** Windows 시스템 디렉터리입니다. **Windows NT의 경우:** 32 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 이름은 SYSTEM32입니다.
 
-- **Windows NT:** 는 16 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 경로 가져옵니다 하는 Win32 함수가 있지만 검색 됩니다. 이 디렉터리의 이름은 시스템입니다.
+- **Windows NT에만 해당:** 16 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 경로 가져옵니다 하는 Win32 함수가 있지만 검색 됩니다. 이 디렉터리의 이름은 시스템입니다.
 
 - Windows 디렉터리입니다.
 
@@ -802,7 +802,7 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 ### <a name="parameters"></a>매개 변수
 
 *lpwsaData*<br/>
-에 대 한 포인터를 [WSADATA](../../mfc/reference/wsadata-structure.md) 구조입니다. 하는 경우 *lpwsaData* 을 NULL로 다음의 주소와 같지 않은 합니다 `WSADATA` 구조 호출에 의해 채워집니다 `WSAStartup`합니다. 이 함수 또한 되도록 `WSACleanup` 응용 프로그램을 종료 하기 전에 사용자에 대해 호출 됩니다.
+에 대 한 포인터를 [WSADATA](/windows/desktop/api/winsock2/ns-winsock2-wsadata) 구조입니다. 하는 경우 *lpwsaData* 을 NULL로 다음의 주소와 같지 않은 합니다 `WSADATA` 구조 호출에 의해 채워집니다 `WSAStartup`합니다. 이 함수 또한 되도록 `WSACleanup` 응용 프로그램을 종료 하기 전에 사용자에 대해 호출 됩니다.
 
 ### <a name="return-value"></a>반환 값
 

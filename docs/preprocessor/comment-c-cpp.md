@@ -1,5 +1,5 @@
 ---
-title: C 주석 (C/C++)
+title: comment (C/C++)
 ms.date: 11/04/2016
 f1_keywords:
 - vc-pragma.comment
@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50612825"
 ---
-# <a name="comment-cc"></a>C 주석 (C/C++)
+# <a name="comment-cc"></a>comment (C/C++)
 
 주석 기록을 개체 파일 또는 실행 파일에 배치합니다.
 
