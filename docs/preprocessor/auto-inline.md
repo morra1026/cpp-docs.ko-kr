@@ -16,7 +16,7 @@ ms.lasthandoff: 10/31/2018
 ms.locfileid: "50633348"
 ---
 # <a name="autoinline"></a>auto_inline
-범위 내에 정의 된 모든 함수를 제외 합니다. 여기서 **해제** 자동 인라인 확장에 대 한 후보로 간주 되 고에서 지정 된 합니다.
+**auto_inline** pragma가 **off**로 지정된 범위내의 함수는 인라인 자동화가 이루어 지지 않도록 인라인 확장의 후보에서 제외 시킵니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,7 +26,7 @@ ms.locfileid: "50633348"
 
 ## <a name="remarks"></a>설명
 
-사용 하는 **auto_inline** pragma를 앞과 바로 뒤 저장 (에 없는) 함수 정의 합니다. pragma가 표시된 후 첫 번째 함수 정의에서 pragma가 적용됩니다.
+**auto_inline** pragma를 사용하려면 함수 정의 후에 사용합니다. 함수 정의 안쪽에는 사용하지 않습니다. pragma를 지정된 이후 코드 부터 함수 정의에서 pragma가 적용됩니다.
 
 ## <a name="see-also"></a>참고 항목
 
