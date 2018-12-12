@@ -1,4 +1,4 @@
----
+﻿---
 title: 라이브러리 함수
 ms.date: 11/04/2016
 ms.assetid: 90c096ab-31df-479e-91d8-289900dc0bff

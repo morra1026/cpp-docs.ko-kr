@@ -1,4 +1,4 @@
----
+﻿---
 title: '방법: 리소스 (C++) 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -20,7 +20,7 @@ ms.locfileid: "50513698"
 
 ### <a name="to-create-a-new-resource-in-resource-view"></a>리소스 뷰에서 새 리소스를 만들려면
 
-1. [리소스 뷰](../windows/resource-view-window.md) 의 .rc 파일에 포커스를 두고 **편집** 메뉴를 선택한 후 **리소스 추가** 를 클릭합니다. 또는 .rc 파일에서 마우스 오른쪽 단추를 클릭한 후 바로 가기를 이용해 **리소스 추가**를 선택합니다 **.**
+1. [리소스 뷰](../windows/resource-view-window.md)의 .rc 파일에 포커스를 두고 **편집**메뉴를 선택한 후 **리소스 추가**를 클릭합니다. 또는 .rc 파일에서 마우스 오른쪽 단추를 클릭한 후 바로 가기를 이용해 **리소스 추가**를 선택합니다.
 
    > [!NOTE]
    > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.

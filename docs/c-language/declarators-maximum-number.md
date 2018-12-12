@@ -1,4 +1,4 @@
----
+﻿---
 title: '선언자: 최대 수'
 ms.date: 11/04/2016
 helpviewer_keywords:

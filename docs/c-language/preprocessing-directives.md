@@ -1,4 +1,4 @@
----
+﻿---
 title: 전처리 지시문
 ms.date: 11/04/2016
 helpviewer_keywords:

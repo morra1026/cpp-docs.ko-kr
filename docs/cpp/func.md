@@ -1,4 +1,4 @@
----
+﻿---
 title: __func__
 ms.date: 10/19/2017
 f1_keywords:
@@ -23,7 +23,7 @@ __func__
 
 ## <a name="return-value"></a>반환 값
 
-함수 이름을 포함하는 문자의 null로 끝나는 const char 배열을 반환합니다.
+함수 이름을 포함하는 문자의 null로 끝나는 const char 배열을 반환합니다.  
 
 ## <a name="example"></a>예제
 

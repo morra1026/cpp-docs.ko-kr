@@ -1,4 +1,4 @@
----
+﻿---
 title: '변환: 진단'
 ms.date: 11/04/2016
 ms.assetid: 3730ca7c-0147-452d-bd4a-6a1e97e9793e

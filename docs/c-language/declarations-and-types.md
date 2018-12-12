@@ -1,4 +1,4 @@
----
+﻿---
 title: 선언 및 형식
 ms.date: 11/04/2016
 helpviewer_keywords:

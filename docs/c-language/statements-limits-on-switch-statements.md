@@ -1,4 +1,4 @@
----
+﻿---
 title: '문: Switch 문의 제한'
 ms.date: 11/04/2016
 ms.assetid: d327ef3f-2b11-4bd6-abfe-539697fd21a7
