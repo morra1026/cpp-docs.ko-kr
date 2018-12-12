@@ -23,16 +23,16 @@ ms.locfileid: "50558147"
 
 *범위 기반-한정자*: **__based (***자료 식***)** 
 
-*기본 식*: *based-variablebased-abstract-declaratorsegment-namesegment-cast*
+*base-expression*: *based-variablebased-abstract-declaratorsegment-namesegment-cast*
 
-*기반 변수*: *식별자*
+*based-variable*: *identifier*
 
-*기반-추상 선언 자*: *추상 선언 자*
+*based-abstract-declarator*: *abstract-declarator*
 
-*기본 형식*: *형식-이름*
+*base-type*: *type-name*
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고
 
 [기반 포인터](../cpp/based-pointers-cpp.md)

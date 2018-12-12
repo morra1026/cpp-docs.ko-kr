@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: C++ 설명서로 Linux 개발
+title: Linux 개발을 위한 C++ 관련 설명서
 description: Linux에서 실행되는 응용 프로그램을 만들고 디버그합니다.
 ms.openlocfilehash: 78615df211381ec419b4fb46cac7a0ce8057c78e
 ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50461488"
 ---
-# <a name="linux-development-with-c-documentation"></a>C++ 설명서로 Linux 개발
+# <a name="linux-development-with-c-documentation"></a>Linux 개발을 위한 C++ 관련 설명서
 
 Visual Studio 2017을 사용하여 Linux에서 실행되는 응용 프로그램을 만들고 디버그합니다.
 
@@ -25,8 +25,8 @@ Visual Studio 2017을 사용하여 Linux에서 실행되는 응용 프로그램�
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Linux 작업 설치 및 구성</h3>
-                        <p>Visual Studio 2017 이상을 설치하여 C++에서 Linux 응용 프로그램을 빌드하는 방법을 알아봅니다.</p>
+                        <h3>Linux 개발을 위한 설치 및 설정</h3>
+                        <p>Visual Studio 2017(이후 버전 포함)에서 C++를 이용한 Linux 응용 프로그램 빌드 방법을 알아봅니다.</p>
                     </div>
                 </div>
             </div>
@@ -44,8 +44,8 @@ Visual Studio 2017을 사용하여 Linux에서 실행되는 응용 프로그램�
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Linux 블로그에 대한 Visual C++</h3>
-                        <p>Linux 작업의 Visual C++에 추가된 새로운 기능에 대한 최신 정보를 받으세요.</p>
+                        <h3>Visual C++ 블로그에서의 Linux 개발</h3>
+                        <p>Linux 작업과 관련된 Visual C++의 새로운 기능에 대한 최신 정보를 받으세요.</p>
                     </div>
                 </div>
             </div>

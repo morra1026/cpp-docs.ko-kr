@@ -17,20 +17,20 @@ Visual C/C++ 컴파일러는 내부 및 외부 함수 호출에 몇 가지 다�
 
 이 주제의 항목에서는 호출 규칙간의 차이점, 인수를 전달하는 방식, 함수가 값을 반환하는 방식에 대해 설명합니다. 또한 고급 기능인 naked 함수 호출에 대한 설명을 통해 사용자 지정 프롤로그 및 에필로그 코드를 작성할 수 있도록 합니다.
 
-X64 호출 규칙에 대 한 정보에 대 한 프로세서를 참조 하세요 [호출 규칙](../build/calling-convention.md)합니다.
+X64 프로세서의 호출 규칙에 대한 자세한 내용은 [호출 규칙](../build/calling-convention.md)을 참조하세요.
 
 ## <a name="topics-in-this-section"></a>이 단원의 항목
 
-- [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md) (`__cdecl`하십시오 `__stdcall`, `__fastcall`, 등)
+- [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md) (`__cdecl`, `__stdcall`, `__fastcall` 및 기타)
 
 - [호출 예제: 함수 프로토타입 및 호출](../cpp/calling-example-function-prototype-and-call.md)
 
-- [Naked 함수 호출을 사용 하 여 사용자 지정 프롤로그/에필로그 코드 작성](../cpp/naked-function-calls.md)
+- [Naked 함수 호출을 사용하여 사용자 지정 프롤로그/에필로그 코드 작성](../cpp/naked-function-calls.md)
 
 - [부동 소수점 보조 프로세서 및 호출 규칙](../cpp/floating-point-coprocessor-and-calling-conventions.md)
 
-- [사용 되지 않는 호출 규칙](../cpp/obsolete-calling-conventions.md)
+- [사용되지 않는 호출 규칙](../cpp/obsolete-calling-conventions.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [Microsoft 전용 한정자](../cpp/microsoft-specific-modifiers.md)
