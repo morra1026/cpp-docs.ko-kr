@@ -27,7 +27,7 @@ ms.locfileid: "50608028"
 |[#else](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#ifdef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#line](../preprocessor/hash-line-directive-c-cpp.md)|[#endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|
 |[#ifndef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)|||
 
-숫자 기호 (**#**) 해야 합니다; 지시문이 포함 된 줄에서 첫 번째 공백이 아닌 문자 수 공백 문자는 숫자 기호와 지시문의 첫 문자 사이 나타날 수 있습니다. 일부 지시문에는 인수 또는 값이 포함됩니다. 인수 또는 지시문의 일부인 값) (제외 지시문 뒤에 오는 모든 텍스트 줄으로 된 주석 구분 기호 뒤에 야 (**//**)로 묶여야 주석 구분 기호 ( __/ \*\*/__). 전처리기 지시문이 포함 된 줄 바로 앞에 백슬래시를 사용 하 여 줄의 끝 표식에서 계속할 수 있습니다 (**\\**).
+숫자 기호 (**#**)는 지시문을 포함하는 행의 비공백 문자중 첫 번째 문자여야 합니다. 공백 문자는 숫자 기호와 지시문의 첫 문자 사이에 나타날 수 있습니다. 일부 지시문에는 인수 또는 값을 함께 사용합니다. 지시문의 일부인 인수 또는 값을 제외한 지시문 뒤에 오는 문자는 한 줄 주석 구분 기호(**//**) 뒤에 오거나 주석 구분 기호 (__/\*  \*/__) 로 묶여야 합니다. 전처리기 지시문이 포함된 줄의 끝에 백슬래시(**\\**)를 사용하여 다음 줄로 연속시킬 수 있습니다
 
 전처리기 지시문은 소스 파일의 어느 곳에나 나타날 수 있지만 소스 파일의 나머지 부분에만 적용됩니다.
 
