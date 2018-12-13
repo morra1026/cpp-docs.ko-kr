@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: C++ 설명서로 Linux 개발
+title: Linux 개발을 위한 C++ 관련 설명서
 description: Linux에서 실행되는 응용 프로그램을 만들고 디버그합니다.
 ms.openlocfilehash: 78615df211381ec419b4fb46cac7a0ce8057c78e
 ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd

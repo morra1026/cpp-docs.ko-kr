@@ -1,5 +1,5 @@
----
-title: '호출 예제: 함수 프로토타입 및 호출'
+﻿---
+title: '호출 예: 함수 프로토타입 및 호출'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - calling conventions, examples [C++]
