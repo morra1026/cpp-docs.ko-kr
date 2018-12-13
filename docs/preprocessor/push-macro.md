@@ -16,7 +16,7 @@ ms.lasthandoff: 10/31/2018
 ms.locfileid: "50535683"
 ---
 # <a name="pushmacro"></a>push_macro
-값을 저장 합니다 *macro_name* 이 매크로 대 한 스택의 맨 위에 매크로입니다.
+매크로 스택에 *macro_name*의 매크로를 저장합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,9 +28,9 @@ macro_name
 
 ## <a name="remarks"></a>설명
 
-에 대 한 값을 검색할 수 있습니다 *macro_name* 사용 하 여 `pop_macro`입니다.
+`pop_macro`를 사용하여 매크로 스택에서 *macro_name*의 매크로를 가져 옵니다.
 
-참조 [pop_macro](../preprocessor/pop-macro.md) 샘플입니다.
+[pop_macro](../preprocessor/pop-macro.md) 샘플을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
