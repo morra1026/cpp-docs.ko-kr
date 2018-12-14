@@ -22,7 +22,6 @@ ms.locfileid: "50573171"
 ## <a name="syntax"></a>구문
 
 > #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias("*long_filename*", "*short_filename*")
-
 > #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias(<*long_filename*>, <*short_filename*>)
 
 ## <a name="remarks"></a>설명
