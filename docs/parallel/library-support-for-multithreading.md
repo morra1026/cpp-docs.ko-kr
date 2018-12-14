@@ -14,9 +14,9 @@ ms.locfileid: "50562268"
 ---
 # <a name="library-support-for-multithreading"></a>다중 스레딩을 위한 라이브러리 지원
 
-이제 모든 버전의 CRT는 일부 함수의 비잠금 버전을 제외 하 고 다중 스레딩 지원 합니다. 참조 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md) 자세한 내용은 합니다.
+일부 함수의 비잠금 버전을 제외한 모든 버전의 CRT는 이제 다중 스레딩을 지원합니다.자세한 내용은 [다중 스레드 라이브러리 성능](../c-runtime-library/multithreaded-libraries-performance.md)을 참조하십시오.
 
-참조 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md) CRT 버전에 대 한 자세한 내용은 합니다.
+CRT 버전에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
