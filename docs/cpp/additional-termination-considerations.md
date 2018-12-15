@@ -15,8 +15,8 @@ ms.locfileid: "50522483"
 ---
 # <a name="additional-termination-considerations"></a>추가 종료 고려 사항
 
-사용 하 여 c + + 프로그램을 종료할 수 있습니다 `exit`하십시오 **반환**, 또는 `abort`합니다. `atexit` 함수를 사용하여 종료 처리를 추가할 수 있습니다. 다음 단원에서 이에 대해 설명합니다.
+`exit`, **return** 또는 `abort`를 사용하여 C++ 프로그램을 종료할 수 있습니다. `atexit` 함수를 사용하여 종료 처리를 추가할 수 있습니다. 다음 단원에서 이에 대해 설명합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[시작 및 종료](../cpp/startup-and-termination-cpp.md)
+[시작 및 종료 (++)](../cpp/startup-and-termination-cpp.md)
