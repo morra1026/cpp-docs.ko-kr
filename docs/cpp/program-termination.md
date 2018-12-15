@@ -18,12 +18,12 @@ ms.locfileid: "50448219"
 
 C++에서는 프로그램을 종료하는 몇 가지 방법이 있습니다.
 
-- 호출 된 [종료](../cpp/exit-function.md) 함수입니다.
+- [exit](../cpp/exit-function.md) 함수를 호출합니다.
 
-- 호출 된 [중단](../cpp/abort-function.md) 함수입니다.
+- [abort](../cpp/abort-function.md) 함수를 호출합니다.
 
-- 실행 된 [반환](../cpp/return-statement-in-program-termination-cpp.md) 문이 `main`합니다.
+- `main`에서 [return](../cpp/return-statement-in-program-termination-cpp.md) 문을 실행합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [main: 프로그램 시작](../cpp/main-program-startup.md)
