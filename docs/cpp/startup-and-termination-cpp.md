@@ -11,8 +11,8 @@ ms.locfileid: "50500596"
 ---
 # <a name="startup-and-termination-c"></a>시작 및 종료 (C++)
 
-Program startup 및 termination 두 함수를 사용 하 여 촉진 됩니다. [주](../cpp/main-program-startup.md) 하 고 [종료](../cpp/program-termination.md). 다른 시작 및 종료 코드를 실행할 수도 있습니다.
+프로그램 시작과 종료는 [main](../cpp/main-program-startup.md) 및 [exit](../cpp/program-termination.md) 함수를 사용하여 원활하게 수행됩니다. 다른 시작 및 종료 코드를 실행할 수도 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [기본 개념](../cpp/basic-concepts-cpp.md)
