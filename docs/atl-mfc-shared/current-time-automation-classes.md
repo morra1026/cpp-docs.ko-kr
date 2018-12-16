@@ -17,11 +17,11 @@ ms.locfileid: "50596575"
 ---
 # <a name="current-time-automation-classes"></a>현재 시간: 자동화 클래스
 
-다음 절차에는 만드는 방법을 보여 줍니다는 `COleDateTime` 개체 및 현재 시간을 사용 하 여 초기화 합니다.
+다음 절차에서는 `COleDateTime` 개체를 만드는 방법과 현재 시간을 사용하여 초기화 하는 것을 보여 줍니다.
 
-## <a name="to-get-the-current-time"></a>현재 시간을 가져오려면
+## <a name="to-get-the-current-time"></a>현재 시간 가져오기
 
-1. `COleDateTime` 개체를 만듭니다.
+1. `COleDateTime`개체를 만듭니다.
 
 1. `GetCurrentTime`를 호출합니다.
 
