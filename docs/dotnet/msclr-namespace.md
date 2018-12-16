@@ -23,7 +23,7 @@ ms.locfileid: "50586786"
 ---
 # <a name="msclr-namespace"></a>msclr 네임스페이스
 
-`msclr` 네임 스페이스는 c + + 지원 라이브러리의 모든 클래스를 포함 합니다. 이러한 클래스에 대 한 자세한 내용은 참조 하세요. [c + + 지원 라이브러리](../dotnet/cpp-support-library.md)합니다.
+`msclr` 네임 스페이스는 C++ 지원 라이브러리의 모든 클래스를 포함합니다. 이 클래스에 대한 자세한 내용은 [C++ 지원 라이브러리](../dotnet/cpp-support-library.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
