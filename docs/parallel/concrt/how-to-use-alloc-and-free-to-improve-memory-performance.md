@@ -1,4 +1,4 @@
----
+﻿---
 title: '방법: Alloc 및 Free를 사용하여 메모리 성능 개선'
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -50,7 +50,7 @@ Took 1672 ms with malloc/free.
 Took 656 ms with Alloc/Free.
 ```
 
-`Alloc` 및 `Free` 함수는 여러 스레드에서 메모리 블록을 자주 할당하고 해제하기 위해 최적화되어 있으므로 이 예제에서는 `Alloc` 및 `Free` 함수를 사용하는 형식의 메모리 성능이 가장 좋습니다.
+'Alloc' 및 'Free' 함수는 여러 스레드에서 메모리 블록을 자주 할당하고 해제하기 위해 최적화되어 있으므로 이 예제에서는 Alloc 및 Free 함수를 사용하는 형식의 메모리 성능이 가장 좋습니다.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
