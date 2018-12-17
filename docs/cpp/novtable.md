@@ -58,4 +58,4 @@ In Y
 ## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
-[C++ 키워드](../cpp/keywords-cpp.md)
+[키워드](../cpp/keywords-cpp.md)
