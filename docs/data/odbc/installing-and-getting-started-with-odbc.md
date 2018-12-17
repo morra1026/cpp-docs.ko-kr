@@ -14,13 +14,13 @@ ms.locfileid: "50484255"
 ---
 # <a name="installing-and-getting-started-with-odbc"></a>ODBC 설치 및 시작
 
-다음 항목 수와 Open Database Connectivity (ODBC) 해야 하는 구성 요소를 설치 합니다.
+다음 항목은 Open Database Connectivity (ODBC) 작업을 시작할 때 필요한 구성 요소를 설치하는데 도움이 됩니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
-- [Visual c + +를 사용 하 여 제공 되는 ODBC 드라이버 설치](../../data/odbc/odbc-administrator.md)
+- [Visual C++ 제공 되는 ODBC 드라이버 설치](../../data/odbc/odbc-administrator.md)
 
-- [고객에 게 ODBC 구성 요소 재배포](../../data/odbc/odbc-basics.md)
+- [고객에게 ODBC 구성 요소 재배포](../../data/odbc/odbc-basics.md)
 
 ## <a name="see-also"></a>참고 항목
 
