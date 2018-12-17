@@ -16,7 +16,7 @@ ms.locfileid: "50467823"
 
 이 문서에서는 [concurrency::alloc](reference/concurrency-namespace-functions.md#alloc) 및 [concurrency::free](reference/concurrency-namespace-functions.md#free) 함수를 사용하여 메모리 성능을 향상시키는 방법을 보여 줍니다. 여기에서는 각각 `new` 및 `delete` 연산자를 지정하는 세 가지 다른 형식에 대해 병렬로 배열 요소의 순서를 바꾸는 데 필요한 시간을 비교합니다.
 
-`Alloc` 하 고 `Free` 함수는 둘 다는 여러 스레드가 자주 호출 하는 경우 가장 유용 `Alloc` 고 `Free`합니다. 런타임에서;는 각 스레드에 대해 별도 메모리 캐시를 보유합니다. 따라서 런타임에서 잠금이나 메모리 장벽을 사용 하지 않고 메모리를 관리 합니다.
+`Alloc` 및 `Free` 함수는 여러 스레드에서 `Alloc`과 `Free`를 둘 다 자주 호출할 때 가장 유용합니다. 런타임은 각 스레드를 위해 별도의 메모리 캐시를 보유하므로 런타임에서는 잠금 또는 메모리 차단을 사용하지 않아도 메모리를 관리할 수 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -32,7 +32,7 @@ ms.locfileid: "50467823"
 
 ## <a name="example"></a>예제
 
-다음 예제와 `wmain` 함수에 필요한 시간을 계산 하는 합니다 `reverse_array` 작업할 함수는 `new_delete`, `malloc_free`, 및 `Alloc_Free` 다른 메모리 할당 체계를 사용 하 여 각 형식.
+다음 예제에서는 `wmain` 함수를 보여줍니다. 이 함수는 각각 서로 다른 메모리 할당 체계를 사용하는 `new_delete`, `malloc_free` 및 `Alloc_Free` 형식에서 `reverse_array` 함수를 사용하는 데 필요한 시간을 계산합니다.
 
 [!code-cpp[concrt-allocators#3](../../parallel/concrt/codesnippet/cpp/how-to-use-alloc-and-free-to-improve-memory-performance_3.cpp)]
 
@@ -50,7 +50,7 @@ Took 1672 ms with malloc/free.
 Took 656 ms with Alloc/Free.
 ```
 
-이 예에서 사용 하는 형식의 `Alloc` 하 고 `Free` 함수 때문에 메모리 성능을 높일 수는 `Alloc` 및 `Free` 자주 할당 및 여러에서 메모리 블록을 해제에 대 한 최적화 된 함수 스레드입니다.
+`Alloc` 및 `Free` 함수는 여러 스레드에서 메모리 블록을 자주 할당하고 해제하기 위해 최적화되어 있으므로 이 예제에서는 `Alloc` 및 `Free` 함수를 사용하는 형식의 메모리 성능이 가장 좋습니다.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
