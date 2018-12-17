@@ -1,4 +1,4 @@
----
+﻿---
 title: '방법: Alloc 및 Free를 사용하여 메모리 성능 개선'
 ms.date: 11/04/2016
 helpviewer_keywords:
