@@ -15,7 +15,7 @@ ms.locfileid: "50523251"
 ---
 # <a name="event-handling"></a>이벤트 처리
 
-이벤트 처리는 주로 COM 클래스에서 지원됩니다. 일반적으로 COM개체 C++클래스는 ATL 클래스 또는 [coclass](../windows/coclass.md) 특성(attribute)을 사용하여 구현합니다. 자세한 내용은 [COM에서 이벤트 처리](../cpp/event-handling-in-com.md)를 참조합니다.
+이벤트 처리는 주로 COM 클래스(일반적으로 COM 개체를 구현하는 C++클래스로서 일반적으로 ATL 클래스 또는 coclass 특성(attribute)을 사용합니다)에서 지원됩니다. 자세한 내용은 [COM에서 이벤트 처리](../cpp/event-handling-in-com.md)를 참조합니다.
 
 COM 개체를 구현하지 않는 C++ 클래스인 네이티브 C++ 클래스도 이벤트 처리가 가능하지만 이는 더 이상 지원되지 않으며 향후 릴리스에서 제거될 수 있습니다. 자세한 내용은 [네이티브 C++에서 이벤트 처리](../cpp/event-handling-in-native-cpp.md)를 참조합니다.
 
