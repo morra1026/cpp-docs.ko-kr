@@ -13,8 +13,8 @@ ms.locfileid: "50451235"
 ---
 # <a name="abort-function"></a>abort 함수
 
-**중단** 표준 포함 파일에도 선언 된 함수 \<b. h >, c + + 프로그램을 종료 합니다. 차이점 `exit` 하 고 **중단** 는 `exit` 수행 (전역 개체 소멸자 호출 된다는)를 c + + 런타임 종료 처리를 허용 하지만 **중단** 프로그램을 즉시 종료 됩니다. 자세한 내용은 [중단](../c-runtime-library/reference/abort.md) 에 *런타임 라이브러리 참조*합니다.
+표준 포함 파일 STDLIB.H에서 선언된 **abort** 함수는 C++ 프로그램을 종료합니다. `exit`와 **abort**의 차이는 `exit`에서는 C++ 런타임 종료 처리 과정이 발생하지만(전역 개체 소멸자 호출) **abort**에서는 프로그램이 즉시 종료된다는 점입니다. 자세한 내용은 런타임 라이브러리 참조에서 [abort](../c-runtime-library/reference/abort.md)를 참조하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 자료
 
 [프로그램 종료](../cpp/program-termination.md)
