@@ -55,7 +55,7 @@ In Y
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [__declspec](../cpp/declspec.md)<br/>
 [키워드](../cpp/keywords-cpp.md)
