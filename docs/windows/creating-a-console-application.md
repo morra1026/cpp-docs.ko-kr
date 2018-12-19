@@ -16,7 +16,7 @@ ms.locfileid: "50538842"
 ---
 # <a name="creating-a-console-application"></a>콘솔 응용 프로그램 만들기
 
-Win32 콘솔 응용 프로그램을 만드는 가장 쉬운 방법은 사용 하는 것은 **Win32 응용 프로그램 마법사**합니다.
+Win32 콘솔 응용 프로그램을 만드는 가장 간단한 방법은 **Win32 응용 프로그램 마법사**를 사용하는 것입니다.
 
 ### <a name="to-create-a-win32-console-application"></a>Win32 콘솔 응용 프로그램을 만들려면
 
@@ -24,15 +24,15 @@ Win32 콘솔 응용 프로그램을 만드는 가장 쉬운 방법은 사용 하
 
 2. 에 **새 프로젝트** 대화 상자에서 **Win32 콘솔 프로젝트** 에 **템플릿** 마법사를 열려면 창입니다.
 
-3. 정의 [응용 프로그램 설정](../windows/application-settings-win-32-project-wizard.md) 사용 하는 [Win32 응용 프로그램 마법사](../windows/win32-application-wizard.md)합니다.
+3. [Win32 응용 프로그램 마법사](../windows/application-settings-win-32-project-wizard.md)를 사용하여 [응용 프로그램 설정](../windows/win32-application-wizard.md)을 정의합니다.
 
    > [!NOTE]
    > 마법사의 기본 설정을 그대로 유지하려면 이 단계를 건너 뜁니다.
 
-4. 클릭 **완료할** 열립니다 마법사와 새로 만든된 프로젝트를 닫습니다 **솔루션 탐색기**합니다.
+4. **마침**을 클릭하여 마법사를 닫으면 새로 만든 프로젝트가 **솔루션 탐색기**에서 열립니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[콘솔 프로젝트](/visualstudio/debugger/debugging-preparation-console-projects)<br/>
+[디버깅 준비: 콘솔 프로젝트](/visualstudio/debugger/debugging-preparation-console-projects)<br/>
 [코드 마법사로 기능 추가](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[속성 페이지](../ide/property-pages-visual-cpp.md)
+[속성 페이지(Visual C++)](../ide/property-pages-visual-cpp.md)
