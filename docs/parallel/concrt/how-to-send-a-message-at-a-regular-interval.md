@@ -18,7 +18,7 @@ ms.locfileid: "50549619"
 
 ## <a name="example"></a>예제
 
-다음 예제에서 `timer`는 시간이 오래 걸리는 작업을 하는 동안 진행률을 보고 하는 개체입니다. 이 예제의 링크된 `timer` 개체는 [concurrency::call](../../parallel/concrt/reference/call-class.md) 개체입니다. `call` 개체는 일정 한 간격으로 진행률 표시기를 콘솔에 출력 합니다. [concurrency::timer::start](reference/timer-class.md#start) 메서드는 별도 컨텍스트에서 타이머를 실행 합니다. `perform_lengthy_operation` 함수에서 호출하는 [concurrency::wait](reference/concurrency-namespace-functions.md#wait) 함수는 주 컨텍스트에서 시간이 많이 걸리는 작업을 시뮬레이션 합니다.
+다음 예제에서 `timer`는 시간이 오래 걸리는 작업을 하는 동안 진행률을 보고하는 개체입니다. 이 예제의 링크된 `timer` 개체는 [concurrency::call](../../parallel/concrt/reference/call-class.md)개체입니다. `call` 개체는 일정한 간격으로 진행률 표시기를 콘솔에 출력합니다. [concurrency::timer::start](reference/timer-class.md#start) 메서드는 별도 컨텍스트에서 타이머를 실행합니다. `perform_lengthy_operation` 함수에서 호출하는 [concurrency::wait](reference/concurrency-namespace-functions.md#wait) 함수는 주 컨텍스트에서 시간이 많이 걸리는 작업을 시뮬레이션합니다.
 
 [!code-cpp[concrt-report-progress#1](../../parallel/concrt/codesnippet/cpp/how-to-send-a-message-at-a-regular-interval_1.cpp)]
 
