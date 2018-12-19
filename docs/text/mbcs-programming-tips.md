@@ -1,5 +1,5 @@
 ---
-title: MBCS 프로그래밍 팁
+title: 멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 ms.date: 11/04/2016
 f1_keywords:
 - _mbcs
@@ -16,11 +16,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50552622"
 ---
-# <a name="mbcs-programming-tips"></a>MBCS 프로그래밍 팁
+# <a name="mbcs-programming-tips"></a>멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 
-새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 레거시 기술입니다 유니코드로 대체 되었습니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 권장 하는 MFC 응용 프로그램 및 MFC 하지 않고 작성 된 응용 프로그램에 적용 됩니다. 다음과 같은 내용을 다룹니다.
+새롭게 개발을 시작하는 상황이라면 응용 프로그램에 포함된 문자열을 모두가 올바르게 볼 수 있도록 문자열 처리에 유니코드를 사용해야 합니다. 멀티바이트 문자 집합(MBCS)은 오래된 과거의 기술이며 유니코드로 대체 되었습니다. 이 단원에서는 MBCS를 사용하는 기존 프로그램을 유지보수해야 하거나 유니코드로의 변환이 어려운 부분들에 참고가 될 만한 조언들을 제공합니다. 이 단원의 내용은 MFC의 사용여부와는 관계없이 모든 애플리케이션을 대상으로 합니다. 다루는 주제는 다음과 같습니다.
 
-- [일반적인 MBCS 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
+- [일반적인 MBCS 프로그래밍 조언](../text/general-mbcs-programming-advice.md)
 
 - [포인터 증가 및 감소](../text/incrementing-and-decrementing-pointers.md)
 
@@ -32,8 +32,8 @@ ms.locfileid: "50552622"
 
 - [문자 비교](../text/character-comparison.md)
 
-- [버퍼 오버플로](../text/buffer-overflow.md)
+- [버퍼오버플로](../text/buffer-overflow.md)
 
 ## <a name="see-also"></a>참고 항목
 
-[MBCS(멀티바이트 문자 집합) 지원](../text/support-for-multibyte-character-sets-mbcss.md)
+[멀티바이트 문자 집합(MBCS) 지원](../text/support-for-multibyte-character-sets-mbcss.md)
