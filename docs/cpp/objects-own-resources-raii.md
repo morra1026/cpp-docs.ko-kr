@@ -10,13 +10,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50593612"
 ---
-# <a name="objects-own-resources-raii"></a>개체가 리소스 소유(RAII)
+# <a name="objects-own-resources-raii"></a>리소스를 소유하는 오브젝트(RAII)
 
-고유한 리소스 개체는 있는지 확인 합니다. 이 원칙은 라고도 하며 "resource acquisition is 초기화" 또는 "RAII."
+소유된 리소스 개체인 것을 확인합니다. 이 원칙은 "리소스 획득 초기화" 또는 "RAII" 라고 알려져 있습니다.
 
 ## <a name="example"></a>예제
 
-생성자 인수로 (거의 항상 unique_ptr) 소유 하는 다른 명명 된 개체에 "새" 모든 개체를 전달 합니다.
+이름 있는 개별 개체의 생성자 인수로 "new" 개체를 전달합니다(대부분 unique_ptr).
 
 ```cpp
 void f() {
@@ -27,7 +27,7 @@ void f() {
   // automatic exception safety, as if "finally { p->dispose(); x.w.dispose(); }"
 ```
 
-소유 하는 다른 개체에 새 리소스를 항상 즉시 전달 합니다.
+이를 소유하는 다른 개체에 항상 즉시 새로운 리소스를 전달합니다.
 
 ```cpp
 void g() {
@@ -37,7 +37,7 @@ void g() {
   // automatic exception safety, as if "finally { y.file.dispose(); }"
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
