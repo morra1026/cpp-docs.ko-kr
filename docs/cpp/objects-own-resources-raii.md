@@ -10,13 +10,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50593612"
 ---
-# <a name="objects-own-resources-raii"></a>리소스를 소용하는 오브젝트(RAII)
+# <a name="objects-own-resources-raii"></a>리소스를 소유하는 오브젝트(RAII)
 
-소유된 리소스 개체인 것을 확인 합니다. 이 원칙은 "리소스 획득 초기화" 또는 "RAII" 라고 알려져 있습니다.
+소유된 리소스 개체인 것을 확인합니다. 이 원칙은 "리소스 획득 초기화" 또는 "RAII" 라고 알려져 있습니다.
 
 ## <a name="example"></a>예제
 
-개별의 이름 있는 개체의 생성자 인수로 "new" 개체를 전달 합니다(대부분 꼭 unique_ptr).
+이름 있는 개별 개체의 생성자 인수로 "new" 개체를 전달합니다(대부분 unique_ptr).
 
 ```cpp
 void f() {
@@ -27,7 +27,7 @@ void f() {
   // automatic exception safety, as if "finally { p->dispose(); x.w.dispose(); }"
 ```
 
-항상 즉시 이것을 소유하는 다른 개체에 새로운 리소스를 전달합니다.
+이를 소유하는 다른 개체에 항상 즉시 새로운 리소스를 전달합니다.
 
 ```cpp
 void g() {
