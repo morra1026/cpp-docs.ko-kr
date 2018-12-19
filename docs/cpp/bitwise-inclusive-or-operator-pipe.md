@@ -17,7 +17,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50649165"
 ---
-# <a name="bitwise-inclusive-or-operator-"></a>비트 포함 OR 연산자: |
+# <a name="bitwise-inclusive-or-operator-"></a>포괄적 비트 OR 연산자: |
 
 ## <a name="syntax"></a>구문
 
@@ -25,13 +25,13 @@ ms.locfileid: "50649165"
 
 ## <a name="remarks"></a>설명
 
-비트 포함 OR 연산자 (**&#124;**)는 두 번째 피연산자의 해당 비트의 첫 번째 피연산자의 각 비트와 비교 합니다. 어느 한쪽 비트가 1이면 해당 결과 비트는 1로 설정됩니다. 그렇지 않으면 해당 결과 비트는 0으로 설정됩니다.
+포괄적 비트 OR 연산자 (**&#124;**)는 첫 번째 피연산자의 각 비트를 두 번째 피연산자의 해당 비트와 비교합니다. 어느 한쪽 비트가 1이면 해당 결과 비트는 1로 설정됩니다. 그렇지 않으면 해당 결과 비트는 0으로 설정됩니다.
 
-포괄적 비트 OR 연산자에 대한 두 피연산자는 모두 정수 계열 형식이어야 합니다. 다루는 일반적인 산술 변환은 [표준 변환](standard-conversions.md) 피연산자에 적용 됩니다.
+포괄적 비트 OR 연산자에 대한 두 피연산자는 모두 정수 계열 형식이어야 합니다. 산술 변환에서 다루는 일반적인 [표준 변환](standard-conversions.md)은 피연산자에 적용됩니다.
 
-## <a name="operator-keyword-for-124"></a>에 대 한 연산자 키워드&#124;
+## <a name="operator-keyword-for-124"></a>&#124;에 대한 연산자 키워드
 
-합니다 **bitor** 연산자는 해당 하는 텍스트 **&#124;** 합니다. 두 가지 방법으로 액세스 하는 **bitor** 프로그램에서 연산자: 헤더 파일을 포함 \<iso646.h >,으로 컴파일하는 [/Za](../build/reference/za-ze-disable-language-extensions.md) (언어 확장명 사용 안 함) 컴파일러 옵션.
+**bitor** 연산자는 다음의 텍스트 &#124;에 해당하는 것입니다. 프로그램에서 **bitor** 연산자에 액세스하는 두 가지 방법이 있습니다. 헤더 파일 <iso646.h>를 포함하거나 [/Za](../build/reference/za-ze-disable-language-extensions.md)(언어 확장 사용 안 함) 컴파일러 옵션으로 컴파일하는 것입니다.
 
 ## <a name="example"></a>예제
 
