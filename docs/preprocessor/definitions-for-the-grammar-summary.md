@@ -1,4 +1,4 @@
----
+﻿---
 title: 문법 요약 정의
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -18,9 +18,9 @@ ms.locfileid: "50521127"
 
 넌터미널은 구문에서 자리를 표시합니다. 대부분은 이 구문 요약의 다른 곳에서 정의되어 있습니다. 정의는 재귀적일 수 있습니다. 다음 넌터미널 함수는 *C++ 언어 레퍼런스*의 [어휘 규칙](../cpp/lexical-conventions.md) 섹션에 정의되어 있습니다.
 
-`constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`
+*C++ 언어 레퍼런스*: `constant`, *constant-expression*, *identifier*, *keyword*, `operator`, `punctuator`
 
-선택적 구성 요소는 아래첨자 <sub>opt</sub>로 표시됩니다. 예를 들어 다음은 중괄호로 묶인 선택적 표현식을 나타냅니다.
+선택적 구성 요소는 아래첨자 <sub>선택적</sub>로 표시됩니다. 예를들어 다음은 중괄호로 묶인 선택적 표현식을 나타냅니다.
 
 **{** *표현식*<sub></sub> **}**
 
