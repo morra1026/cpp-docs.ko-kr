@@ -1,4 +1,4 @@
----
+﻿---
 title: 유니코드 프로그래밍 요약
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
 ms.openlocfilehash: 01e5866866bfc9cf81b243c569e527ab5019b928
 ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50437941"
@@ -87,7 +87,7 @@ MFC 및 C 런타임의 유니코드 지원을 이용하려면 다음의 내용�
 
 - 런타임 라이브러리는 모든 문자열 처리 함수의 유니코드 버전을 제공합니다.(런타임 라이브러리는 유니코드 및 멀티바이트 문자 집합(MBCS) 버전과 이를 쉽게 이식할 수 있는 방법 또한 제공하며, 이는 `_tcs` 매크로입니다.)
 
-- tchar.h에서는 이식 가능한 데이터 형식을 제공하며 리터럴 문자열과 문자를 쉽게 이식하기 위한 `_T` 매크로를 제공합니다. 자세한 내용은 [tchar.h를 이용한 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
+- Tchar.h에서는 이식 가능한 데이터 형식을 제공 하며 `_T` 매크로 리터럴 문자열 및 문자를 변환 합니다. 자세한 내용은 [tchar.h를 이용한 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
 
 - 런타임 라이브러리의 `main`의 와이드 문자 기반 버전을 제공합니다. `wmain`을 사용하여 응용 프로그램이 바로 유니코드를 인식할 수 있게 만드세요.
 
