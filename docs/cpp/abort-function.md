@@ -13,8 +13,8 @@ ms.locfileid: "50451235"
 ---
 # <a name="abort-function"></a>abort 함수
 
-표준 포함 파일 STDLIB.H에서 선언된 **abort** 함수는 C++ 프로그램을 종료합니다. `exit`와 **abort**의 차이는 `exit`에서는 C++ 런타임 종료 처리 과정이 발생하지만(전역 개체 소멸자 호출) **abort**에서는 프로그램이 즉시 종료된다는 점입니다. 자세한 내용은 런타임 라이브러리 참조에서 [abort](../c-runtime-library/reference/abort.md)를 참조하십시오.
+표준 포함 파일 STDLIB.H에서 선언된 **abort** 함수는 C++ 프로그램을 종료합니다. `exit`와 **abort**의 차이는 `exit`에서는 C++ 런타임 종료 처리 과정이 발생하지만(전역 개체 소멸자 호출) **abort**에서는 프로그램이 즉시 종료된다는 점입니다. 자세한 내용은 런타임 라이브러리에서 [abort](../c-runtime-library/reference/abort.md)를 참조하십시오.
 
-## <a name="see-also"></a>참고 자료
+## <a name="see-also"></a>참고 항목
 
 [프로그램 종료](../cpp/program-termination.md)
