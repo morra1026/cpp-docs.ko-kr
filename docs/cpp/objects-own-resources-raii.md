@@ -1,5 +1,5 @@
 ---
-title: 개체가 리소스 소유(RAII)
+title: 리소스를 소유하는 오브젝트(RAII)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
