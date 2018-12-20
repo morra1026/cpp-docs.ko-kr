@@ -17,7 +17,7 @@ ms.locfileid: "50469383"
 ---
 # <a name="c-language-reference"></a>C++ 언어 참조
 
-이 참조는 Microsoft Visual C++에서 구현되는 것처럼 C++ 프로그래밍 언어를 설명합니다. 기반으로 *The Annotated c + + Reference Manual* 구성은 Margaret Ellis와 Bjarne Stroustrup 및 ANSI/ISO c + + 국제 표준 (ISO/IEC FDIS 14882). C++ 언어 기능의 Microsoft 전용 구현이 포함되어 있습니다.
+이 문서에서는 Microsoft Visual C++에서 사용하는 C++ 프로그래밍 언어를 설명하며 [*The Annotated C++ Reference Manual*](http://www.stroustrup.com/arm.html)(머거렛 앨리스(Margaret Ellis), 비야네 스트롭스트룹(Bjarne Stroustrup) 공저)의 구성을 참고하고 ANSI/ISO C++ 국제 표준(ISO/IEC FDIS 14882)을 기반으로 합니다. 또한 C++ 언어 기능의 Microsoft 전용 구현 사항이 포함되어 있습니다.
 
 모던 C++ 프로그래밍 방법은 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
 
@@ -51,7 +51,7 @@ C++의 연산자입니다.
 표현식, null, 복합, 선택, 반복, 점프 및 선언문입니다.
 
 [선언 및 정의](declarations-and-definitions-cpp.md)<br/>
-저장소 클래스 지정자, 함수 정의 초기화, 열거형 **클래스**를 **구조체**, 및 **union** 선언 및 **typedef**  선언 합니다. 또한 **인라인** 함수 **const** 키워드, 네임 스페이스입니다.
+기억 영역 클래스 지정자(auto, register, static 등), 함수 정의, 초기화, 열거형 **클래스**, **구조체**, **인라인** 함수, **const** 키워드, 네임 스페이스, **union** 및 **typedef**의 선언 및 정의와 관련된 내용입니다. 또한 **인라인** 함수 **const** 키워드, 네임 스페이스입니다.
 
 [클래스, 구조체 및 공용 구조체](../cpp/classes-and-structs-cpp.md)<br/>
 클래스, 구조체 및 공용 구조체에 대한 소개입니다. 멤버 함수, 특수 멤버 함수, 데이터 멤버, 비트 필드 **this** 포인터, 중첩된 클래스와 관련된 내용입니다.
