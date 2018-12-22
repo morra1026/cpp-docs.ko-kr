@@ -14,11 +14,11 @@ ms.locfileid: "50427913"
 ---
 # <a name="how-to-create-a-release-build"></a>방법: 릴리스 빌드 만들기
 
-### <a name="to-generate-a-release-build-of-your-program"></a>프로그램의 릴리스 빌드를 생성 하려면
+### <a name="to-generate-a-release-build-of-your-program"></a>프로그램의 릴리스 빌드를 만들려면
 
-1. 선택 **릴리스** 에서 합니다 **솔루션 구성** 드롭 다운 목록으로 사용 되는 **표준** 도구 모음.
+1. **표준** 도구 모음에 있는 **솔루션 구성** 드롭다운 목록에서 **릴리스**를 선택합니다.
 
-1. 에 **빌드할** 메뉴에서 클릭 **빌드**합니다.
+1. **빌드** 메뉴에서 **빌드**를 클릭합니다.
 
 ## <a name="see-also"></a>참고 항목
 

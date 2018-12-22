@@ -16,7 +16,7 @@ ms.locfileid: "51265063"
 ---
 # <a name="working-with-ole-db-provider-templates"></a>OLE DB 공급자 템플릿을 사용하여 작업
 
-OLE DB 공급자 템플릿을 사용 하 여 작업 하는 방법에 알아보려면 다음 항목을 참조 합니다.
+OLE DB 공급자 템플릿을 사용하여 작업하는 방법에 대한 자세한 내용은 다음 항목을 참조하십시오.
 
 - [공급자에 인터페이스 추가](../../data/oledb/adding-an-interface-to-your-provider.md)
 
@@ -37,4 +37,4 @@ OLE DB 공급자 템플릿을 사용 하 여 작업 하는 방법에 알아보�
 ## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿 참조](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)

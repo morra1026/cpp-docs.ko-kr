@@ -19,7 +19,7 @@ ms.locfileid: "50593520"
 ## <a name="in-this-section"></a>섹션 내용
 
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
-응용 프로그램에서 문자열 데이터를 관리 하는 방법에 설명 합니다.
+응용 프로그램에서 문자열 데이터를 관리하는 방법에 대해 설명합니다.
 
 ## <a name="see-also"></a>참고 항목
 
