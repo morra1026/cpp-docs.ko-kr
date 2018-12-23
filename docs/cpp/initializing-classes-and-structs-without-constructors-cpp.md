@@ -60,9 +60,9 @@ int main()
 }
 ```
 
-클래스 또는 구조체에 생성자가 없는 경우 제공 하는 멤버 클래스에서 선언 되는 순서로 목록 요소를 참고 합니다. 클래스에 생성자가 하는 경우 매개 변수를 순서 대로 요소를 제공 합니다.
+클래스 또는 구조체에 생성자가 없는 경우 제공하는 멤버 클래스에서 선언 되는 순서로 목록 요소를 참고합니다. 클래스에 생성자가 있는 경우 매개 변수를 순서대로 요소를 제공합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[클래스 및 구조체](../cpp/classes-and-structs-cpp.md)<br/>
-[생성자](../cpp/constructors-cpp.md)
+[클래스 및 구조체 (C++)](../cpp/classes-and-structs-cpp.md)<br/>
+[생성자 (C++)](../cpp/constructors-cpp.md)
