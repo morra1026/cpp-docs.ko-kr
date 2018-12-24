@@ -2091,7 +2091,7 @@ __sptr, __uptr
 - `/CLRTHREADATTRIBUTE`(CLR 스레드 특성 설정) 링커 옵션이 추가되었습니다.
 - `/CLRUNMANAGEDCODECHECK`(SuppressUnmanagedCodeSecurityAttribute 추가) 링커 옵션이 추가되었습니다.
 - `/ERRORREPORT`(내부 링커 오류 보고) 링커 옵션이 추가되었습니다.
-- `/EXETYPE` 링커 옵션이 제거되었습니다. 링커는 더 이상 Windows 95 및 Windows 98 장치 드라이버를 만들도록 지원하지 않습니다. 적절한 DDK를 사용하여 이러한 장치 드라이버를 만듭니다. EXETYPE 키워드는 더 이상 모듈 정의 파일에 유효하지 않습니다.
+- `/EXETYPE` 링커 옵션이 제거되었습니다. 링커는 더 이상 Windows 95 및 Windows 98 디바이스 드라이버를 만들도록 지원하지 않습니다. 적절한 DDK를 사용하여 이러한 디바이스 드라이버를 만듭니다. EXETYPE 키워드는 더 이상 모듈 정의 파일에 유효하지 않습니다.
 - `/FUNCTIONPADMIN`(핫 패치 가능 이미지 만들기) 링커 옵션이 추가되었습니다.
 - `/LTCG` 링커 옵션이 `/clr`을 사용하여 컴파일된 모듈에서 지원됩니다. `/LTCG`는 프로필 기반 최적화를 지원하도록 업데이트되었습니다.
 - `/MANIFEST`(동시에 어셈블리 매니페스트 만들기) 링커 옵션이 추가되었습니다.
@@ -2104,14 +2104,14 @@ __sptr, __uptr
 - `/SECTION`(섹션 특성 지정) 링커 옵션이 특성 부정을 지원하며, 더 이상 L 또는 D(VxD 관련) 특성을 지원하지 않습니다.
 - 컴파일러 및 링커에서의 유니코드 지원
 - `/VERBOSE`(출력 진행 메시지) 링커 옵션은 이제 ICF 및 REF도 허용합니다.
-- `/VXD` 링커 옵션이 제거되었습니다. 링커는 더 이상 Windows 95 및 Windows 98 장치 드라이버를 만들도록 지원하지 않습니다. 적절한 DDK를 사용하여 이러한 장치 드라이버를 만듭니다. VXD 키워드는 더 이상 모듈 정의 파일에 유효하지 않습니다.
+- `/VXD` 링커 옵션이 제거되었습니다. 링커는 더 이상 Windows 95 및 Windows 98 디바이스 드라이버를 만들도록 지원하지 않습니다. 적절한 DDK를 사용하여 이러한 디바이스 드라이버를 만듭니다. VXD 키워드는 더 이상 모듈 정의 파일에 유효하지 않습니다.
 - `/WS` 링커 옵션이 제거되었습니다. `/WS`는 Windows NT 4.0에 대한 대상 이미지를 수정하는 데 사용되었습니다. IMAGECFG.exe -R filename을 `/WS` 대신 사용할 수 있습니다. IMAGECFG.exe는 Windows NT 4.0 CD-ROM의 SUPPORT\DEBUG\I386\IMAGECFG.EXE에 있습니다.
 - `/WX`(링커 경고를 오류로 처리) 링커 옵션이 문서화되었습니다.
 
 ### <a name="new-linker-utility-features"></a>새 링커 유틸리티 기능
 
 - `/ALLOWISOLATION` editbin 옵션이 추가되었습니다.
-- DESCRIPTION 모듈 정의 파일 문이 제거되었습니다. 링커는 더 이상 가상 장치 드라이버를 작성하도록 지원하지 않습니다.
+- DESCRIPTION 모듈 정의 파일 문이 제거되었습니다. 링커는 더 이상 가상 디바이스 드라이버를 작성하도록 지원하지 않습니다.
 - `/ERRORREPORT` 옵션이 bscmake.exe, dumpbin.exe, editbin.exe 및 lib.exe에 추가되었습니다.
 - `/LTCG` lib 옵션이 추가되었습니다.
 - `/NXCOMPAT` editbin 옵션이 추가되었습니다.

@@ -29,13 +29,13 @@ ms.locfileid: "50442642"
 |[_fdopen, wfdopen](../c-runtime-library/reference/fdopen-wfdopen.md)|열려 있는 파일의 파일 설명자에 스트림을 연결합니다.|
 |[feof](../c-runtime-library/reference/feof.md)|스트림에서 파일의 끝을 테스트합니다.|
 |[ferror](../c-runtime-library/reference/ferror.md)|스트림에서 오류를 테스트합니다.|
-|[fflush](../c-runtime-library/reference/fflush.md)|스트림을 버퍼 또는 저장 장치로 플러시합니다.|
+|[fflush](../c-runtime-library/reference/fflush.md)|스트림을 버퍼 또는 저장 디바이스로 플러시합니다.|
 |[fgetc, fgetwc](../c-runtime-library/reference/fgetc-fgetwc.md)|스트림에서 문자를 읽습니다(**getc** 및 **getwc**의 함수 버전).|
 |[_fgetchar, _fgetwchar](../c-runtime-library/reference/fgetc-fgetwc.md)|**stdin**에서 문자를 읽습니다(**getchar** 및 **getwchar**의 함수 버전).|
 |[fgetpos](../c-runtime-library/reference/fgetpos.md)|스트림 위치 표시기를 가져옵니다.|
 |[fgets, fgetws](../c-runtime-library/reference/fgets-fgetws.md)|스트림에서 문자열을 읽습니다.|
 |[_fileno](../c-runtime-library/reference/fileno.md)|스트림과 연결된 파일 설명자를 가져옵니다.|
-|[_flushall](../c-runtime-library/reference/flushall.md)|모든 스트림을 버퍼 또는 저장 장치로 플러시합니다.|
+|[_flushall](../c-runtime-library/reference/flushall.md)|모든 스트림을 버퍼 또는 저장 디바이스로 플러시합니다.|
 |[fopen, _wfopen](../c-runtime-library/reference/fopen-wfopen.md), [fopen_s, _wfopen_s](../c-runtime-library/reference/fopen-s-wfopen-s.md)|스트림을 엽니다.|
 |[fprintf, _fprintf_l, fwprintf, _fwprintf_l](../c-runtime-library/reference/fprintf-fprintf-l-fwprintf-fwprintf-l.md), [fprintf_s, _fprintf_s_l, fwprintf_s, _fwprintf_s_l](../c-runtime-library/reference/fprintf-s-fprintf-s-l-fwprintf-s-fwprintf-s-l.md)|스트림에 형식이 지정된 데이터를 씁니다.|
 |[fputc, fputwc](../c-runtime-library/reference/fputc-fputwc.md)|문자를 스트림에 씁니다(**putc** 및 **putwc**의 함수 버전).|

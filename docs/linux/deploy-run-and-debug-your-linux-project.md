@@ -79,7 +79,7 @@ Linux 프로젝트를 조작하고 디버그할 수 있는 여러 가지 방법�
 
 ## <a name="next-steps"></a>다음 단계
 
-- Linux에서 ARM 장치를 디버깅하려면 [Visual Studio에서 포함된 ARM 장치 디버깅](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/) 블로그 게시물을 참조하세요.
+- Linux에서 ARM 디바이스를 디버깅하려면 [Visual Studio에서 포함된 ARM 디바이스 디버깅](https://blogs.msdn.microsoft.com/vcblog/2018/01/10/debugging-an-embedded-arm-device-in-visual-studio/) 블로그 게시물을 참조하세요.
 
 - **프로세스에 연결** 명령을 사용하여 디버깅하려면 [프로젝트 시스템에 대한 Linux C++ 워크로드 개선 사항, Linux 콘솔 창, rsync 및 프로세스에 연결](https://blogs.msdn.microsoft.com/vcblog/2018/03/13/linux-c-workload-improvements-to-the-project-system-linux-console-window-rsync-and-attach-to-process/) 블로그 게시물을 참조하세요.
 
