@@ -1,4 +1,4 @@
----
+﻿---
 title: 유니코드 프로그래밍 요약
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
 ms.openlocfilehash: 01e5866866bfc9cf81b243c569e527ab5019b928
 ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50437941"
@@ -22,7 +22,7 @@ MFC 및 C 런타임의 유니코드 지원을 이용하려면 다음의 내용�
 
 - 진입점을 지정 합니다.
 
-   프로젝트의 [속성 페이지](../ide/property-pages-visual-cpp.md) 대화상자의 왼쪽 트리에서 **링커(Linker)**를 선택하고 **고급(Advanced)** 페이지의 **진입점** 기호를 `wWinMainCRTStartup`으로 설정합니다.
+   프로젝트의 [속성 페이지](../ide/property-pages-visual-cpp.md) 대화상자의 왼쪽 트리에서 **링커(Linker)** 를 선택하고 **고급(Advanced)** 페이지의 **진입점** 기호를 `wWinMainCRTStartup`으로 설정합니다.
 
 - 이식 가능한 런타임 함수 및 형식을 사용합니다.
 

@@ -33,7 +33,7 @@ ms.locfileid: "53178709"
 ---
 # <a name="cbrush-class"></a>CBrush 클래스
 
-Windows GDI(그래픽 장치 인터페이스) 브러시를 캡슐화합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 브러시를 캡슐화합니다.
 
 ## <a name="syntax"></a>구문
 

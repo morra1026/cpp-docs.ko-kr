@@ -23,7 +23,7 @@ ms.locfileid: "50580650"
 ---
 # <a name="randomdevice-class"></a>random_device 클래스
 
-외부 장치에서 임의 시퀀스를 생성합니다.
+외부 디바이스에서 임의 시퀀스를 생성합니다.
 
 ## <a name="syntax"></a>구문
 

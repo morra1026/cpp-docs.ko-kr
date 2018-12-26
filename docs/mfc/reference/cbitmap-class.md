@@ -43,7 +43,7 @@ ms.locfileid: "53178176"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 
-Windows GDI(그래픽 장치 인터페이스) 비트맵을 캡슐화하고 비트맵을 조작하는 멤버 함수를 제공합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 비트맵을 캡슐화하고 비트맵을 조작하는 멤버 함수를 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -115,7 +115,7 @@ CBitmap();
 
 ##  <a name="createbitmap"></a>  CBitmap::CreateBitmap
 
-너비, 높이 및 비트 패턴이 지정되어 있는 장치 종속적 메모리 비트맵을 초기화합니다.
+너비, 높이 및 비트 패턴이 지정되어 있는 디바이스 종속적 메모리 비트맵을 초기화합니다.
 
 ```
 BOOL CreateBitmap(
@@ -151,7 +151,7 @@ BOOL CreateBitmap(
 
 색 비트맵에 대 한 중 하나는 *nPlanes* 하거나 *nBitcount* 매개 변수 1로 설정 해야 합니다. 이러한 매개 변수가 둘 다 1로 설정되면 `CreateBitmap` 은 단색 비트맵을 만듭니다.
 
-디스플레이 장치에 대한 비트맵을 직접 선택할 수는 없지만 [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) 를 사용하여 “메모리 장치 컨텍스트"에 대한 현재 비트맵을 선택하고 [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) 함수를 사용하여 호환되는 장치 컨텍스트에 복사할 수 있습니다.
+디스플레이 디바이스에 대한 비트맵을 직접 선택할 수는 없지만 [CDC::SelectObject](../../mfc/reference/cdc-class.md#selectobject) 를 사용하여 “메모리 디바이스 컨텍스트"에 대한 현재 비트맵을 선택하고 [CDC::BitBlt](../../mfc/reference/cdc-class.md#bitblt) 함수를 사용하여 호환되는 디바이스 컨텍스트에 복사할 수 있습니다.
 
 `CBitmap` 함수에서 만들어진 `CreateBitmap` 개체 사용을 완료하면 먼저 장치 컨텍스트에서 비트맵을 선택하고 나서 `CBitmap` 개체를 삭제합니다.
 

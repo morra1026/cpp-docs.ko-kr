@@ -69,7 +69,7 @@ Windows는 DCE 규격 RPC를 지원하므로 RPC 기반 응용 프로그램을 �
 
 가장 큰 차이점 중 하나는 프로세스 모델입니다. UNIX에는 `fork`가 있고 Win32에는 없습니다. `fork` 및 코드베이스 사용에 따라 Win32에는 사용할 수 있는 두 개의 API(`CreateProcess` 및 `CreateThread`)가 있습니다. 자신의 여러 복사본을 분기하는 UNIX 응용 프로그램을 여러 프로세스나 여러 스레드가 포함된 단일 프로세스를 사용하도록 Win32에서 다시 작업할 수 있습니다. 여러 프로세스를 사용하는 경우 프로세스 간에 통신하고, `fork`에서 제공하는 기능이 필요한 경우 새 프로세스의 코드 및 데이터를 부모처럼 업데이트하는 데 사용할 수 있는 IPC의 여러 메서드가 있습니다. IPC에 대한 자세한 내용은 [Interprocess Communications](/windows/desktop/ipc/interprocess-communications)(프로세스 간 통신)를 참조하세요.
 
-Windows 및 UNIX 그래픽 모델은 매우 다릅니다. UNIX는 X 창 시스템 GUI를 사용하는 반면, Windows는 GDI를 사용합니다. 개념상 비슷하지만 X API와 GDI API 간의 단순 매핑은 없습니다. 그러나 UNIX OpenGL 기반 응용 프로그램 마이그레이션을 위한 OpenGL 지원이 제공됩니다. 또한 Windows용 X 클라이언트 및 X 서버가 있습니다. GDI에 대한 자세한 내용은 [Device Contexts](/windows/desktop/gdi/device-contexts)(장치 컨텍스트)를 참조하세요.
+Windows 및 UNIX 그래픽 모델은 매우 다릅니다. UNIX는 X 창 시스템 GUI를 사용하는 반면, Windows는 GDI를 사용합니다. 개념상 비슷하지만 X API와 GDI API 간의 단순 매핑은 없습니다. 그러나 UNIX OpenGL 기반 응용 프로그램 마이그레이션을 위한 OpenGL 지원이 제공됩니다. 또한 Windows용 X 클라이언트 및 X 서버가 있습니다. GDI에 대한 자세한 내용은 [Device Contexts](/windows/desktop/gdi/device-contexts)(디바이스 컨텍스트)를 참조하세요.
 
 많은 CGI 응용 프로그램을 포함하여 기본 UNIX 응용 프로그램은 Windows에서 실행되는 Visual C++로 쉽게 포팅되어야 합니다. `open`, `fopen`, `read`, `write` 등의 함수는 Visual C++ 런타임 라이브러리에서 사용할 수 있습니다. 또한 C UNIX API와 Win32 API 간에 일대일 매핑이 있습니다(`open`을 `CreateFile`로, `read`를 `ReadFile`로, `write`를 `WriteFile`로, `ioctl`을 `DeviceIOControl`로, `close`를 `CloseFile`로 매핑).
 

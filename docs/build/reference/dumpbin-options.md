@@ -15,9 +15,9 @@ ms.locfileid: "50434309"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN 옵션
 
-대시 (-) 또는 슬래시 (/) 옵션의 이름 뒤에 옵션 지정자를 사용 하는 옵션으로 구성 됩니다. 옵션 이름은 간략 한 형태로 사용할 수 없습니다. 일부 옵션 인수, 콜론 (:) 뒤에 지정 합니다. 공백 또는 탭 옵션 사양에 허용 됩니다. 명령줄에서 옵션 사양 구분 하려면 하나 이상의 공백이 나 탭을 사용 합니다. 옵션 이름 및 키워드 또는 파일 이름 인수는 대/소문자 구분 하지 않습니다. 대부분의 옵션은 모든 이진 파일에 적용 몇 가지에 특정 형식의 파일을 적용 합니다. DUMPBIN을 기본적으로 표준 출력에 정보를 보냅니다. 사용 합니다 [/출력](../../build/reference/out-dumpbin.md) 출력 파일을 보낼 수 있습니다.
+옵션은 옵션 지정자(대시( - ) 또는 슬래시( / ) 중 하나)와 그 다음에 나오는 옵션 이름으로 구성됩니다. 옵션 이름은 약식으로 표기할 수 없습니다. 일부 옵션에서는 콜론( : ) 다음에 인수를 지정합니다. 옵션 사양에는 공백이나 탭을 사용할 수 없습니다. 한 개 이상의 공백 또는 탭을 사용하여 명령줄에서 옵션 사양을 구분합니다. 옵션 이름 및 그 키워드 또는 파일 이름 인수는 대/소문자를 구분하지 않습니다. 대부분의 옵션은 모든 이진 파일에 적용되지만 일부 옵션은 특정 파일 형식에만 적용됩니다. 기본적으로 DUMPBIN은 표준 출력으로 정보를 보냅니다. 출력을 파일로 보내려면 [/OUT](../../build/reference/out-dumpbin.md) 옵션을 사용합니다.
 
-DUMPBIN 다음 옵션이 있습니다.
+DUMPBIN에는 다음과 같은 옵션이 있습니다.
 
 - [/ALL](../../build/reference/all.md)
 
@@ -39,7 +39,7 @@ DUMPBIN 다음 옵션이 있습니다.
 
 - [/HEADERS](../../build/reference/headers.md)
 
-- [/ 가져오기](../../build/reference/imports-dumpbin.md)
+- [/IMPORTS](../../build/reference/imports-dumpbin.md)
 
 - [/LINENUMBERS](../../build/reference/linenumbers.md)
 
@@ -69,5 +69,5 @@ DUMPBIN 다음 옵션이 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[C/C++ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
 [DUMPBIN 참조](../../build/reference/dumpbin-reference.md)

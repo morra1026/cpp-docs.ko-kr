@@ -39,7 +39,7 @@ ms.locfileid: "53177851"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject 클래스
 
-비트맵, 영역, 브러시, 펜, 색상표와 글꼴 등 다양한 Windows GDI(그래픽 장치 인터페이스) 개체에 기본 클래스를 제공합니다.
+비트맵, 영역, 브러시, 펜, 색상표와 글꼴 등 다양한 Windows GDI(그래픽 디바이스 인터페이스) 개체에 기본 클래스를 제공합니다.
 
 ## <a name="syntax"></a>구문
 

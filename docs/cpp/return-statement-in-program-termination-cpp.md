@@ -15,7 +15,7 @@ ms.locfileid: "50613046"
 ---
 # <a name="return-statement-in-program-termination-c"></a>프로그램 종료 시 return 문 (C++)
 
-실행을 **반환** 문을 `main` 호출 하는 기능적를 `exit` 함수. 다음 예제를 참조하세요.
+`main`에서 **return** 문을 실행하는 것은 `exit` 함수를 호출하는 것과 기능적으로 동일합니다. 다음 예제를 참조하십시오.
 
 ```cpp
 // return_statement.cpp
@@ -27,8 +27,8 @@ int main()
 }
 ```
 
-합니다 `exit` 하 고 **반환** 문 앞의 예제에서 기능적으로 동일 합니다. 그러나 c + +에서는 함수를 반환 형식 이외의 **void** 값을 반환 합니다. 합니다 **반환** 문을 사용 하면에서 값을 반환 하려면 `main`합니다.
+위의 예제에서 `exit` 및 **return** 문은 기능적으로 동일합니다. 그러나 C++에서는 **void**가 아닌 반환 형식을 가지는 함수가 값을 반환해야 합니다. **return** 문을 사용하면 `main`에서 값을 반환할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [프로그램 종료](../cpp/program-termination.md)

@@ -244,7 +244,7 @@ bool uncaught_exception();
 
 ### <a name="return-value"></a>반환 값
 
-반환 **true** throw 식 및 일치 하는 처리기 또는 호출의 예외 선언 초기화를 완료 하기 전에 평가 완료 한 후 [예기치 않은](../standard-library/exception-functions.md#unexpected) 의 결과로 throw 식입니다. 특히 `uncaught_exception` 돌아갑니다 **true** 예외 해제 중에 호출 되는 소멸자에서 호출 합니다. 장치의 경우 `uncaught_exception`은 Windows Mobile 2005 플랫폼을 포함하여 Windows CE 5.00 이상 버전에서만 지원됩니다.
+반환 **true** throw 식 및 일치 하는 처리기 또는 호출의 예외 선언 초기화를 완료 하기 전에 평가 완료 한 후 [예기치 않은](../standard-library/exception-functions.md#unexpected) 의 결과로 throw 식입니다. 특히 `uncaught_exception` 돌아갑니다 **true** 예외 해제 중에 호출 되는 소멸자에서 호출 합니다. 디바이스의 경우 `uncaught_exception`은 Windows Mobile 2005 플랫폼을 포함하여 Windows CE 5.00 이상 버전에서만 지원됩니다.
 
 ### <a name="example"></a>예제
 
