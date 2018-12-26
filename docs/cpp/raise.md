@@ -59,7 +59,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고 자료
+## <a name="see-also"></a>참고 항목
 
 [키워드](../cpp/keywords-cpp.md)<br/>
 [이벤트 처리](../cpp/event-handling.md)<br/>
