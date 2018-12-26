@@ -1,4 +1,4 @@
----
+﻿---
 title: 멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 ms.date: 11/04/2016
 f1_keywords:
