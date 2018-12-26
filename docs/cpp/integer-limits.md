@@ -28,8 +28,8 @@ ms.locfileid: "50522969"
 |SCHAR_MIN|**signed char** 형식 변수의 최소값입니다.|-128|
 |SCHAR_MAX|**signed char** 형식 변수의 최대값입니다.|127|
 |UCHAR_MAX|**unsigned char** 형식 변수의 최대값입니다.|255(0Xff)|
-|CHAR_MIN|**char** 형식 변수의 최소값입니다.|/J 옵션이 사용된 경우, –128; 0|
-|CHAR_MAX|**char** 형식 변수의 최대값입니다.|/J 옵션이 사용된 경우, –127; 255|
+|CHAR_MIN|**char** 형식 변수의 최소값|–128, /J 옵션이 사용된 경우, 0|
+|CHAR_MAX|**char** 형식 변수의 최대값|127, /J 옵션이 사용된 경우, 255|
 |MB_LEN_MAX|여러 문자 상수에서의 최대 바이트 수입니다.|5|
 |SHRT_MIN|**short** 형식 변수의 최소값입니다.|-32768|
 |SHRT_MAX|**short** 형식 변수의 최대값입니다.|32767|
@@ -42,7 +42,7 @@ ms.locfileid: "50522969"
 |ULONG_MAX|**unsigned long** 형식 변수의 최대값입니다.|4294967295(0xffffffff)|
 |LLONG_MIN|**long long** 형식 변수의 최소값|-9223372036854775808|
 |LLONG_MAX|**long long** 형식 변수의 최대값|9223372036854775807|
-|ULLONG_MAX|**unsigned long long** 형식의 변수에 대한 최대값입니다|18446744073709551615(0xffffffffffffffff)|
+|ULLONG_MAX|**unsigned long long** 형식의 변수에 대한 최대값|18446744073709551615(0xffffffffffffffff)|
 
 값이 최대 정수 표현을 초과하는 경우 Microsoft 컴파일러에서 오류가 발생합니다.
 
