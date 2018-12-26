@@ -17,13 +17,13 @@ ms.locfileid: "50487804"
 ---
 # <a name="configure-visual-c-for-64-bit-x64-targets"></a>64 비트 x64 용 Visual c + + 구성 대상
 
-이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어있습니다.
+이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
 - [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64비트 Visual C++ 도구 집합 활성화](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64비트 Visual C++ 도구 집합 사용](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)
 
