@@ -16,7 +16,7 @@ ms.lasthandoff: 10/31/2018
 ms.locfileid: "50437243"
 ---
 # <a name="popmacro"></a>pop_macro
-값을 설정 합니다 *macro_name* 매크로 값이이 매크로 대 한 스택의 맨 위에 있습니다.
+매크로 스택에서 *macro_name* 매크로를 가져온 후 *macro_name*에 값을 설정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,7 +28,7 @@ macro_name
 
 ## <a name="remarks"></a>설명
 
-먼저 실행 해야 합니다는 [push_macro](../preprocessor/push-macro.md) 에 대 한 *macro_name* 수행 하기 전에 **pop_macro**합니다.
+**pop_macro**를 수행하기 전에 반드시 [push_macro](../preprocessor/push-macro.md)를 먼저 수행해야 합니다.
 
 ## <a name="example"></a>예제
 
