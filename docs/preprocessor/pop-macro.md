@@ -28,7 +28,7 @@ macro_name
 
 ## <a name="remarks"></a>설명
 
-**pop_macro**를 수행전에 반드시 [push_macro](../preprocessor/push-macro.md)가 먼저 수행되어야 합니다.
+**pop_macro**를 수행하기 전에 반드시 [push_macro](../preprocessor/push-macro.md)를 먼저 수행해야 합니다.
 
 ## <a name="example"></a>예제
 
