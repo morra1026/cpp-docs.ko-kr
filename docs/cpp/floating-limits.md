@@ -45,6 +45,6 @@ ms.locfileid: "50469979"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고 
+## <a name="see-also"></a>참고 항목
 
 [정수 제한](../cpp/integer-limits.md)
