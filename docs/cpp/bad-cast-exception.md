@@ -77,7 +77,7 @@ Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-그리고 나서 다음과 같이 **try** 블록의 캐스트 감각을 반전시킵니다:
+그리고 나서 다음과 같이 **try** 블록의 캐스트 감각을 반전시킵니다.
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
