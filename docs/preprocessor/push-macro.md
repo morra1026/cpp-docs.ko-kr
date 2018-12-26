@@ -28,7 +28,7 @@ macro_name
 
 ## <a name="remarks"></a>설명
 
-`pop_macro`를 사용하여 매크로 스택에서 *macro_name*의 매크로를 가져 옵니다.
+`pop_macro`를 사용하여 매크로 스택에서 *macro_name*의 매크로를 가져옵니다.
 
 [pop_macro](../preprocessor/pop-macro.md) 샘플을 참조하세요.
 
