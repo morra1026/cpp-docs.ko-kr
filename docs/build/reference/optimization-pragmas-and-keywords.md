@@ -15,7 +15,7 @@ ms.locfileid: "50504405"
 ---
 # <a name="optimization-pragmas-and-keywords"></a>최적화 pragma 및 키워드
 
-키워드 및 pragma는 C 또는 c + + 코드에서 사용 하는 몇 가지 최적화를 영향을 줍니다.
+C 또는 C++ 코드에서 사용하는 다음 몇 가지 키워드와 pragma는 최적화에 영향을 줍니다.
 
 - [__asm](../../assembler/inline/asm.md)
 
@@ -27,15 +27,15 @@ ms.locfileid: "50504405"
 
 - [#pragma check_stack](../../preprocessor/check-stack.md)
 
-- [#pragma 함수](../../preprocessor/function-c-cpp.md)
+- [#pragma function](../../preprocessor/function-c-cpp.md)
 
 - [#pragma inline_depth](../../preprocessor/inline-depth.md)
 
 - [#pragma inline_recursion](../../preprocessor/inline-recursion.md)
 
-- [#pragma 내장 함수](../../preprocessor/intrinsic.md)
+- [#pragma intrinsic](../../preprocessor/intrinsic.md)
 
-- [#pragma 최적화](../../preprocessor/optimize.md)
+- [#pragma optimize](../../preprocessor/optimize.md)
 
 - [register 키워드](../../cpp/storage-classes-cpp.md#register)
 

@@ -18,7 +18,7 @@ ms.locfileid: "50667430"
 
 함수는 C 언어 모듈에서 액세스 하려는 c + + 링크가 대신 C 링크가 있는 이러한 함수를 선언 해야 합니다 c + +로 작성 된 DLL에 있는 경우. 달리 지정 하지 않으면 c + + 컴파일러는 형식이 안전한 명명 규칙 (라고도: 이름 데코레이션이) c + + 및 c + + 호출 규칙 3. 호출 하기 어려울 수 있습니다 사용
 
-C 링크를 지정 하려면 지정 `extern "C"` 함수 선언에 대 한 합니다. 예를 들어:
+C 링크를 지정하려면 함수 선언에 대해 `extern "C"`를 지정합니다. 예를 들면 다음과 같습니다.
 
 ```
 extern "C" __declspec( dllexport ) int MyFunc(long parm1);
@@ -26,23 +26,23 @@ extern "C" __declspec( dllexport ) int MyFunc(long parm1);
 
 ## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [.Def 파일을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS를 사용 하 여 가져오기 및 내보내기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
 
-- [C 또는 c + + 언어 실행 파일에서 사용 하기 위해 내보내기 C 함수](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
 - [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
 
-- [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [트 데코 레이 된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](../build/reference/decorated-names.md)
 
 - [extern을 사용하여 링크 지정](../cpp/using-extern-to-specify-linkage.md)
 

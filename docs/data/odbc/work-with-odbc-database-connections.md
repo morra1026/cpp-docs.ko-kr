@@ -18,7 +18,7 @@ ms.locfileid: "50628425"
 ---
 # <a name="work-with-odbc-database-connections"></a>ODBC 데이터베이스 연결을 사용한 작업
 
-다음 항목에서는 ODBC 데이터 원본에 연결 하는 방법에 설명 합니다.
+다음 항목에서는 ODBC 데이터 원본에 연결하는 방법에 대해 설명합니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 

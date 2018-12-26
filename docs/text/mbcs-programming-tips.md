@@ -1,5 +1,5 @@
 ---
-title: MBCS 프로그래밍 팁
+title: 멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 ms.date: 11/04/2016
 f1_keywords:
 - _mbcs
@@ -16,9 +16,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50552622"
 ---
-# <a name="mbcs-programming-tips"></a>MBCS 프로그래밍 팁
+# <a name="mbcs-programming-tips"></a>멀티바이트 문자 집합(MBCS) 프로그래밍 팁
 
-새로운 개발에서 최종 사용자가 볼 수 있는 모든 문자열에 대해 유니코드 문자 인코딩을 사용해야 합니다. MBCS는 레거시 기술입니다 유니코드로 대체 되었습니다. 이 단원에서는 MBCS를 사용하고 유니코드로의 변환이 실용적이지 않은 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 권장 하는 MFC 응용 프로그램 및 MFC 하지 않고 작성 된 응용 프로그램에 적용 됩니다. 다음과 같은 내용을 다룹니다.
+새로운 개발에서는 가능하면 최종 사용자가 볼 수 있는 모든 문자열은 유니코드 문자 인코딩을 사용해야 합니다. MBCS 레거시 기술은 유니코드에 의해 대체되었습니다. 이 섹션에서는 MBCS를 사용하고 유니코드로 변환하는 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 이 팁은 MFC 응용 프로그램 및 MFC 없이 작성된 응용 프로그램에 적용됩니다. 다음 내용을 다룹니다.
 
 - [일반적인 MBCS 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
 
@@ -36,4 +36,4 @@ ms.locfileid: "50552622"
 
 ## <a name="see-also"></a>참고 항목
 
-[MBCS(멀티바이트 문자 집합) 지원](../text/support-for-multibyte-character-sets-mbcss.md)
+[멀티바이트 문자 집합(MBCS) 지원](../text/support-for-multibyte-character-sets-mbcss.md)

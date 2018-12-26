@@ -15,21 +15,21 @@ ms.locfileid: "50442707"
 ---
 # <a name="importing-into-an-application"></a>응용 프로그램으로 가져오기
 
-함수는 두 메서드를 사용 하 여 응용 프로그램으로 가져올 수 있습니다.
+다음과 같은 두 가지 방법을 사용하여 함수를 응용 프로그램으로 가져올 수 있습니다.
 
-- 키워드를 사용 하 여 **__declspec (dllimport)** 주 응용 프로그램의 함수 정의에서
+- 기본 응용 프로그램의 함수 정의에 **__declspec (dllimport)** 키워드 사용
 
-- 와 함께 모듈 정의 (.def) 파일을 사용 하 여 **__declspec (dllimport)**
+- 모듈 정의 파일(.def)과 **__declspec (dllimport)** 을 함께 사용
 
-## <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
+## <a name="what-do-you-want-to-do"></a>수행할 작업
 
-- [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec (dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
 
-- [__Declspec (dllimport)를 사용 하 여 함수 호출 가져오기](../build/importing-function-calls-using-declspec-dllimport.md)
+- [__declspec (dllimport)을 사용하여 함수 호출 가져오기](../build/importing-function-calls-using-declspec-dllimport.md)
 
-- [데이터를 사용 하 여 __declspec (dllimport) 가져오기](../build/importing-data-using-declspec-dllimport.md)
+- [__declspec (dllimport)을 사용하여 데이터 가져오기](../build/importing-data-using-declspec-dllimport.md)
 
-- [DEF 파일을 사용 하 여 가져오기](../build/importing-using-def-files.md)
+- [DEF 파일을 사용하여 가져오기](../build/importing-using-def-files.md)
 
 ## <a name="see-also"></a>참고 항목
 

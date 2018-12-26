@@ -30,12 +30,12 @@ ms.locfileid: "50469979"
 |`FLT_EPSILON`<br/>`DBL_EPSILON`<br/>`LDBL_EPSILON`|x + 1.0이 1.0과 같지 않은 가장 작은 양수 x입니다.|1.192092896e-07F<br/>2.2204460492503131e-016<br/>2.2204460492503131e-016|
 |`FLT_GUARD`||0|
 |`FLT_MANT_DIG`<br/>`DBL_MANT_DIG`<br/>`LDBL_MANT_DIG`|지정한 기 수 자릿수 `FLT_RADIX` 부동 소수점 유효 숫자에서. 기 수는 2입니다. 따라서 이러한 값 비트를 지정합니다.|24<br/>53<br/>53|
-|`FLT_MAX`<br/>`DBL_MAX`<br/>`LDBL_MAX`|최대 표현 가능한 부동 소수점 수입니다.|3.402823466e+38F<br/>1.7976931348623158e+308<br/>1.7976931348623158e+308|
-|`FLT_MAX_10_EXP`<br/>`DBL_MAX_10_EXP`<br/>`LDBL_MAX_10_EXP`|최대 정수 10를 해당 숫자로 표현 가능한 부동 소수점 수입니다.|38<br/>308<br/>308|
-|`FLT_MAX_EXP`<br/>`DBL_MAX_EXP`<br/>`LDBL_MAX_EXP`|최대 정수는 `FLT_RADIX` 번호가 표현 가능한 부동 소수점 수 인지에 발생 합니다.|128<br/>1024<br/>1024|
+|`FLT_MAX`<br/>`DBL_MAX`<br/>`LDBL_MAX`|표현 가능한 최대 부동 소수점 수입니다.|3.402823466e+38F<br/>1.7976931348623158e+308<br/>1.7976931348623158e+308|
+|`FLT_MAX_10_EXP`<br/>`DBL_MAX_10_EXP`<br/>`LDBL_MAX_10_EXP`|10을 해당 수만큼 거듭제곱한 값이 표현 가능한 부동 소수점 수인 최대 정수입니다.|38<br/>308<br/>308|
+|`FLT_MAX_EXP`<br/>`DBL_MAX_EXP`<br/>`LDBL_MAX_EXP`|`FLT_RADIX`를 해당 수만큼 거듭제곱한 값이 표현 가능한 부동 소수점 수인 최대 정수입니다.|128<br/>1024<br/>1024|
 |`FLT_MIN`<br/>`DBL_MIN`<br/>`LDBL_MIN`|최소 양수 값입니다.|1.175494351e-38F<br/>2.2250738585072014e-308<br/>2.2250738585072014e-308|
-|`FLT_MIN_10_EXP`<br/>`DBL_MIN_10_EXP`<br/>`LDBL_MIN_10_EXP`|최소 음의 정수 10를 해당 숫자로 표현 가능한 부동 소수점 수입니다.|-37<br/>-307<br/>-307|
-|`FLT_MIN_EXP`<br/>`DBL_MIN_EXP`<br/>`LDBL_MIN_EXP`|최소 음의 정수는 `FLT_RADIX` 번호가 표현 가능한 부동 소수점 수 인지에 발생 합니다.|-125<br/>-1021<br/>-1021|
+|`FLT_MIN_10_EXP`<br/>`DBL_MIN_10_EXP`<br/>`LDBL_MIN_10_EXP`|10을 해당 수만큼 거듭제곱한 값이 표현 가능한 부동 소수점 수인 최소 음의 정수입니다.|-37<br/>-307<br/>-307|
+|`FLT_MIN_EXP`<br/>`DBL_MIN_EXP`<br/>`LDBL_MIN_EXP`|`FLT_RADIX`를 해당 수만큼 거듭제곱한 값이 표현 가능한 부동 소수점 수인 최소 음의 정수입니다.|-125<br/>-1021<br/>-1021|
 |`FLT_NORMALIZE`||0|
 |`FLT_RADIX`<br/>`_DBL_RADIX`<br/>`_LDBL_RADIX`|지수를 표현하는 기수입니다.|2<br/>2<br/>2|
 |`FLT_ROUNDS`<br/>`_DBL_ROUNDS`<br/>`_LDBL_ROUNDS`|부동 소수점 더하기의 반올림 모드입니다.|1(근사값)<br/>1(근사값)<br/>1(근사값)|
@@ -45,6 +45,6 @@ ms.locfileid: "50469979"
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [정수 제한](../cpp/integer-limits.md)

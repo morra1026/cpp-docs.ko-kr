@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
 ms.openlocfilehash: a72e6f1905bad81fc0d79c1f90e88e96fe8b110b
 ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50487804"
@@ -19,7 +19,7 @@ ms.locfileid: "50487804"
 
 이 섹션에는 항목이 포함 되어 있습니다. 64 비트 x64를 대상으로 하는 방법에 대 한 하드웨어 Visual c + + 빌드 도구입니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 - [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
@@ -31,15 +31,15 @@ ms.locfileid: "50487804"
 
 ## <a name="related-sections"></a>관련 단원
 
-[.NET framework에 대 한 64 비트 응용 프로그램](/dotnet/framework/64-bit-apps)
+[.NET framework에 대한 64비트 응용 프로그램](/dotnet/framework/64-bit-apps)
 
-[align](../cpp/align-cpp.md)
+[align(C++)](../cpp/align-cpp.md)
 
 [/clr(공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)
 
 [/favor(아키텍처에 맞게 최적화)](../build/reference/favor-optimize-for-architecture-specifics.md)
 
-[64 비트 Windows에 대 한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
+[64비트 Windows에 대한 프로그래밍 가이드](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)
 
 [x64용 MASM(ml64.exe)](../assembler/masm/masm-for-x64-ml64-exe.md)
 
