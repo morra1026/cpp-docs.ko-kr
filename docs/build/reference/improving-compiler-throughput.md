@@ -16,9 +16,9 @@ ms.locfileid: "50496566"
 ---
 # <a name="improving-compiler-throughput"></a>컴파일러 처리량 향상
 
-프로젝트를 더 빠르게 빌드할 미리 컴파일된 헤더 파일을 사용 합니다. 이 ATL, MFC 또는 Windows SDK 헤더 파일을 사용 하는 경우 중요 합니다.
+미리 컴파일된 헤더 파일을 사용하여 프로젝트 빌드 시간을 단축할 수 있습니다. 이는 ATL, MFC 또는 Windows SDK 헤더 파일을 사용하고 있는 경우 중요한 부분에 해당합니다.
 
-참조 [/Yc](../../build/reference/yc-create-precompiled-header-file.md) 하 고 [/Yu](../../build/reference/yu-use-precompiled-header-file.md)합니다.
+[/Yc](../../build/reference/yc-create-precompiled-header-file.md) 및 [/Yu](../../build/reference/yu-use-precompiled-header-file.md)를 참조하십시오.
 
 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../../build/reference/creating-precompiled-header-files.md)를 참조하세요.
 

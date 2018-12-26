@@ -1,4 +1,4 @@
----
+﻿---
 title: 예외 처리기에 대한 제한
 ms.date: 11/04/2016
 helpviewer_keywords:

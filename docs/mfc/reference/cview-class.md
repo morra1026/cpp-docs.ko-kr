@@ -306,16 +306,16 @@ virtual void OnBeginPrinting(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-프린터 장치 컨텍스트를 가리킵니다.
+프린터 디바이스 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
 현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
 ### <a name="remarks"></a>설명
 
-이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 인쇄용으로 특별히 필요한 GDI 리소스(예: 펜 또는 글꼴)를 할당하려면 이 함수를 재정의합니다. GDI 개체를 사용하는 각 페이지에 대한 [OnPrint](#onprint) 멤버 함수 내에서 장치 컨텍스트로 GDI 개체를 선택합니다. 동일한 view 개체를 사용하여 화면 표시와 인쇄를 모두 수행하는 경우 각 화면 표시에 필요한 GDI 리소스에 별도의 변수를 사용합니다. 이렇게 하면 인쇄하는 동안 화면을 업데이트할 수 있습니다.
+이 함수의 기본 구현은 아무 작업도 수행하지 않습니다. 인쇄용으로 특별히 필요한 GDI 리소스(예: 펜 또는 글꼴)를 할당하려면 이 함수를 재정의합니다. GDI 개체를 사용하는 각 페이지에 대한 [OnPrint](#onprint) 멤버 함수 내에서 디바이스 컨텍스트로 GDI 개체를 선택합니다. 동일한 view 개체를 사용하여 화면 표시와 인쇄를 모두 수행하는 경우 각 화면 표시에 필요한 GDI 리소스에 별도의 변수를 사용합니다. 이렇게 하면 인쇄하는 동안 화면을 업데이트할 수 있습니다.
 
-또한 이 함수를 사용하여 프린터 장치 컨텍스트의 속성에 따라 초기화를 수행할 수 있습니다. 예를 들어 문서를 인쇄하는 데 필요한 페이지 수는 사용자가 인쇄 대화 상자에서 지정한 설정(예: 페이지 길이)에 따라 다를 수 있습니다. 이러한 상황에서는 일반적인 경우와 달리 [OnPreparePrinting](#onprepareprinting) 멤버 함수에서 문서 길이를 지정할 수 없습니다. 대화 상자 설정에 따라 프린터 장치 컨텍스트가 만들어질 때까지 기다려야 합니다. [OnBeginPrinting](#onbeginprinting) 은 프린터 장치 컨텍스트를 나타내는 [CDC](../../mfc/reference/cdc-class.md) 개체에 대한 액세스를 제공하는 첫 번째 재정의 가능 함수이므로 이 함수에서 문서 길이를 설정할 수 있습니다. 이때까지 문서 길이를 지정하지 않으면 인쇄 미리 보기 중에 스크롤 막대가 표시되지 않습니다.
+또한 이 함수를 사용하여 프린터 디바이스 컨텍스트의 속성에 따라 초기화를 수행할 수 있습니다. 예를 들어 문서를 인쇄하는 데 필요한 페이지 수는 사용자가 인쇄 대화 상자에서 지정한 설정(예: 페이지 길이)에 따라 다를 수 있습니다. 이러한 상황에서는 일반적인 경우와 달리 [OnPreparePrinting](#onprepareprinting) 멤버 함수에서 문서 길이를 지정할 수 없습니다. 대화 상자 설정에 따라 프린터 디바이스 컨텍스트가 만들어질 때까지 기다려야 합니다. [OnBeginPrinting](#onbeginprinting) 은 프린터 장치 컨텍스트를 나타내는 [CDC](../../mfc/reference/cdc-class.md) 개체에 대한 액세스를 제공하는 첫 번째 재정의 가능 함수이므로 이 함수에서 문서 길이를 설정할 수 있습니다. 이때까지 문서 길이를 지정하지 않으면 인쇄 미리 보기 중에 스크롤 막대가 표시되지 않습니다.
 
 ##  <a name="ondragenter"></a>  CView::OnDragEnter
 
@@ -589,7 +589,7 @@ virtual void OnEndPrinting(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-프린터 장치 컨텍스트를 가리킵니다.
+프린터 디바이스 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
 현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
@@ -613,7 +613,7 @@ virtual void OnEndPrintPreview(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-프린터 장치 컨텍스트를 가리킵니다.
+프린터 디바이스 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
 현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
@@ -732,7 +732,7 @@ virtual void OnPrint(
 ### <a name="parameters"></a>매개 변수
 
 *pDC*<br/>
-프린터 장치 컨텍스트를 가리킵니다.
+프린터 디바이스 컨텍스트를 가리킵니다.
 
 *pInfo*<br/>
 가리키는 `CPrintInfo` 현재 인쇄 작업을 설명 하는 구조입니다.

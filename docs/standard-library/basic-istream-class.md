@@ -152,7 +152,7 @@ setstate(state);
 |[seekg](#seekg)|스트림에서 읽기 위치를 이동합니다.|
 |[sentry](#sentry)|중첩된 클래스는 선언에서 형식이 지정된 입력 함수 및 형식이 지정되지 않은 입력 함수를 구성하는 개체를 설명합니다.|
 |[swap](#swap)|이 `basic_istream` 개체를 제공된 `basic_istream` 개체 매개 변수로 교환합니다.|
-|[sync](#sync)|스트림과 연결된 입력 장치를 스트림 버퍼와 동기화합니다.|
+|[sync](#sync)|스트림과 연결된 입력 디바이스를 스트림 버퍼와 동기화합니다.|
 |[tellg](#tellg)|스트림에서 현재 읽기 위치를 보고합니다.|
 |[unget](#unget)|가장 최근에 읽은 문자를 다시 스트림에 넣습니다.|
 
@@ -898,7 +898,7 @@ void swap(basic_istream& right);
 
 ## <a name="sync"></a>  basic_istream::sync
 
-스트림과 연결된 입력 장치를 스트림 버퍼와 동기화합니다.
+스트림과 연결된 입력 디바이스를 스트림 버퍼와 동기화합니다.
 
 ```cpp
 int sync();

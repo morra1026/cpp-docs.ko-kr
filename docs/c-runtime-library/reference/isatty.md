@@ -33,7 +33,7 @@ ms.locfileid: "50545589"
 ---
 # <a name="isatty"></a>_isatty
 
-파일 설명자가 문자 장치와 연결되어 있는지 여부를 확인합니다.
+파일 설명자가 문자 디바이스와 연결되어 있는지 여부를 확인합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,7 +44,7 @@ int _isatty( int fd );
 ### <a name="parameters"></a>매개 변수
 
 *fd*<br/>
-테스트할 장치를 나타내는 파일 설명자입니다.
+테스트할 디바이스를 나타내는 파일 설명자입니다.
 
 ## <a name="return-value"></a>반환 값
 

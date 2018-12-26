@@ -29,7 +29,7 @@ ms.locfileid: "50607899"
 ---
 # <a name="cfont-class"></a>CFont 클래스
 
-Windows GDI(그래픽 장치 인터페이스) 글꼴을 캡슐화하고 글꼴 조작을 위한 멤버 함수를 제공합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 글꼴을 캡슐화하고 글꼴 조작을 위한 멤버 함수를 제공합니다.
 
 ## <a name="syntax"></a>구문
 

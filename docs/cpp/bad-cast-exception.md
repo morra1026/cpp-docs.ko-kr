@@ -1,4 +1,4 @@
----
+﻿---
 title: bad_cast 예외
 ms.date: 11/04/2016
 f1_keywords:
@@ -17,7 +17,7 @@ ms.locfileid: "50573350"
 ---
 # <a name="badcast-exception"></a>bad_cast 예외
 
-합니다 **bad_cast** 예외를 throw 합니다 **dynamic_cast** 참조 형식에 실패 한 캐스팅 결과로 연산자.
+**bad_cast** 예외는 참조 형식에 대한 실패한 캐스팅 결과로 **dynamic_cast** 연산자가 throw합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,7 +28,7 @@ catch (bad_cast)
 
 ## <a name="remarks"></a>설명
 
-에 대 한 인터페이스 **bad_cast** 됩니다.
+**bad_cast**의 인터페이스는 다음과 같습니다.
 
 ```cpp
 class bad_cast : public exception {
@@ -39,7 +39,7 @@ public:
 };
 ```
 
-다음 코드에는 실패 한의 예가 포함 되어 있습니다. **dynamic_cast** 을 throw 합니다 **bad_cast** 예외입니다.
+다음 코드에는 **bad_cast** 예외를 throw하는 실패한 **dynamic_cast**의 예제가 포함되어 있습니다.
 
 ```cpp
 // expre_bad_cast_Exception.cpp
@@ -77,14 +77,14 @@ Circle circle_instance;
 Circle& ref_circle = circle_instance;
 ```
 
-다음의 캐스트 감각을 반전 합니다 **시도** 같이 차단:
+그리고 나서 다음과 같이 **try** 블록의 캐스트 감각을 반전시킵니다.
 
 ```cpp
 Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [dynamic_cast 연산자](../cpp/dynamic-cast-operator.md)<br/>
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [C++ 예외 처리](../cpp/cpp-exception-handling.md)

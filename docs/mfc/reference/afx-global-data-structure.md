@@ -259,7 +259,7 @@ BOOL DrawTextOnGlass(
 [in] 장치 컨텍스트에 대 한 포인터입니다.
 
 *iPartId*<br/>
-[in] 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 [파트 및 상태](/windows/desktop/controls/parts-and-states)에 설명된 표의 파트 열을 참조하세요. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 장치 컨텍스트로 선택된 글꼴로 그려집니다.
+[in] 원하는 텍스트 모양이 있는 컨트롤 파트입니다. 자세한 내용은 [파트 및 상태](/windows/desktop/controls/parts-and-states)에 설명된 표의 파트 열을 참조하세요. 이 값이 0이면 텍스트가 기본 글꼴로 그려지거나 디바이스 컨텍스트로 선택된 글꼴로 그려집니다.
 
 *iStateId*<br/>
 [in] 원하는 텍스트 모양이 있는 컨트롤 상태입니다. 자세한 내용은 [파트 및 상태](/windows/desktop/controls/parts-and-states)에 설명된 표의 상태 열을 참조하세요.

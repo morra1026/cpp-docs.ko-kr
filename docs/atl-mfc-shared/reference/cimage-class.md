@@ -682,7 +682,7 @@ HDC GetDC() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-장치 컨텍스트에 대한 핸들입니다.
+디바이스 컨텍스트에 대한 핸들입니다.
 
 ### <a name="remarks"></a>설명
 

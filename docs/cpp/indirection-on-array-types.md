@@ -16,6 +16,6 @@ ms.locfileid: "50551023"
 
 간접 참조 연산자를 사용 (<strong>\*</strong>)에 *n*-차원 배열 형식 생성을 *n*-1 차원 배열입니다. 하는 경우 *n* 1은 스칼라 (또는 배열 요소)가 생성 됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[배열](../cpp/arrays-cpp.md)
+[배열(C++)](../cpp/arrays-cpp.md)

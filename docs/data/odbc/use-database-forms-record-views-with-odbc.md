@@ -14,17 +14,17 @@ ms.locfileid: "50498061"
 ---
 # <a name="use-database-forms-record-views-with-odbc"></a>ODBC에서 데이터베이스 폼(레코드 뷰) 사용
 
-데이터 항목 또는 데이터 보기와 같은 일부 응용 프로그램 대화 상자 스타일 컨트롤을 사용 하 여 뷰를 폼에 필요합니다.
+데이터 입력 응용 프로그램이나 데이터 보기 응용 프로그램 같은 일부 응용 프로그램에는 폼(대화 상자 스타일의 컨트롤이 포함된 뷰)이 필요합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
-- [폼에 데이터베이스 데이터를 표시 합니다.](../../data/record-views-mfc-data-access.md)
+- [폼에 데이터베이스 데이터 표시](../../data/record-views-mfc-data-access.md)
 
 - [레코드 뷰 클래스의 기능](../../data/features-of-record-view-classes-mfc-data-access.md)
 
 - [레코드 뷰의 데이터 교환](../../data/data-exchange-for-record-views-mfc-data-access.md)
 
-- [레코드 뷰를 사용 하 여 작업에서 역할](../../data/your-role-in-working-with-a-record-view-mfc-data-access.md)
+- [레코드 뷰를 사용하여 작업할 때의 사용자 작업](../../data/your-role-in-working-with-a-record-view-mfc-data-access.md)
 
 - [레코드 뷰 디자인 및 만들기](../../data/designing-and-creating-a-record-view-mfc-data-access.md)
 
