@@ -53,6 +53,6 @@ C++에서는 연산자를 오버로드할 수 있으며 해당 의미는 사용�
     > [!NOTE]
     >  기본 제공 형식에 대한 연산자를 오버 로드할 수 없으며 해당 동작은 미리 정의되어 있습니다.
 
-## <a name="see-also"></a>참고 자료
+## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)
