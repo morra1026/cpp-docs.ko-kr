@@ -1,4 +1,4 @@
----
+﻿---
 title: 식의 배열
 ms.date: 11/04/2016
 helpviewer_keywords:
