@@ -16,9 +16,9 @@ ms.locfileid: "50491289"
 ---
 # <a name="concurrency-runtime-best-practices"></a>동시성 런타임 유용한 정보
 
-이 섹션에서는 동시성 런타임을 효율적으로 활용하는데 도움이 되는 모범 사례를 설명합니다. 이 모범 사례는 PPL[병렬 패턴 라이브러리](../../parallel/concrt/parallel-patterns-library-ppl.md), [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 및 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)에 적용됩니다.
+이 섹션에서는 동시성 런타임을 효율적으로 활용하는 데 도움이 되는 모범 사례를 설명합니다. 이 모범 사례는 PPL[병렬 패턴 라이브러리](../../parallel/concrt/parallel-patterns-library-ppl.md), [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 및 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)에 적용됩니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [병렬 패턴 라이브러리의 유용한 정보](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 PPL(병렬 패턴 라이브러리)을 사용할 때 따라야 할 모범 사례를 설명합니다.
