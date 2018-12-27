@@ -14,7 +14,7 @@ ms.locfileid: "50478171"
 ---
 # <a name="arrays-in-expressions"></a>식의 배열
 
-배열 형식의 식별자가 `sizeof`, address-of(**&**) 또는 참조의 초기화 이외의 식에 나타나는 경우 첫 번째 배열 요소에 대한 포인터로 변환됩니다. 예를 들면 다음과 같습니다:
+배열 형식의 식별자가 `sizeof`, address-of(**&**) 또는 참조의 초기화 이외의 식에 나타나는 경우 첫 번째 배열 요소에 대한 포인터로 변환됩니다. 예를 들면 다음과 같습니다.
 
 ```cpp
 char szError1[] = "Error: Disk drive not ready.";
