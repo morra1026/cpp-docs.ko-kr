@@ -41,6 +41,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [식 문](../cpp/expression-statement.md)

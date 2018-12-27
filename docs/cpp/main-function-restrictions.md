@@ -17,7 +17,7 @@ ms.locfileid: "50555740"
 
 에 몇 가지 제한 사항이 적용 된 **주** 다른 c + + 함수에 적용 되지 않는 함수입니다. 합니다 **주** 함수:
 
-- 오버 로드할 수 없습니다 (참조 [함수 오버 로드](function-overloading.md)).
+- 오버로드될 수 없습니다([오버로드](function-overloading.md) 참조).
 
 - 로 선언할 수 없습니다 **인라인**합니다.
 
@@ -27,6 +27,6 @@ ms.locfileid: "50555740"
 
 - 호출할 수 없습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고
 
 [main: 프로그램 시작](../cpp/main-program-startup.md)

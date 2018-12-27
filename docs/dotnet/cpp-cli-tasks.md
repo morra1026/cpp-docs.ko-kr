@@ -11,9 +11,9 @@ ms.locfileid: "50645109"
 ---
 # <a name="ccli-tasks"></a>C++/CLI 작업
 
-설명서의이 섹션의 문서에는 C +의 다양 한 기능을 사용 하는 방법을 보여 줍니다 + CLI입니다.
+설명서의 이 단원의 문서는 C++/CLI의 다양한 기능을 사용하는 방법을 보여줍니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 - [방법: CLR 빈 프로젝트 만들기](../dotnet/how-to-create-clr-empty-projects.md)
 - [방법: CLR 콘솔 응용 프로그램 만들기(C++/CLI)](../dotnet/how-to-create-clr-console-applications-cpp-cli.md)

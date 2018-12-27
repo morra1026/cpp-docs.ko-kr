@@ -14,15 +14,15 @@ ms.locfileid: "50468707"
 ---
 # <a name="basic-concepts--c"></a>기본 개념 (c + +)
 
-이 섹션에서는 c + + 이해에 필수적인 개념을 설명 합니다. C 프로그래머는 이러한 개념을 사용 하 여 익숙할 것도 예기치 않은 프로그램 결과 일으킬 수 있는 몇 가지 미묘한 차이가 있습니다. 주제는 다음과 같습니다.
+이 단원에서는 C++ 이해에 필수적인 개념을 설명합니다. C 프로그래머는 이러한 개념 대부분에 대해 잘 알고 있지만 예기치 않은 프로그램 결과를 초래할 수 있는 몇 가지 미묘한 차이가 있습니다. 주제는 다음과 같습니다.
 
 - [선언 및 정의](../cpp/declarations-and-definitions-cpp.md)
 
-- [C + + 개체 또는 함수의 범위](../cpp/scope-visual-cpp.md)
+- [C++ 개체 또는 함수의 범위](../cpp/scope-visual-cpp.md)
 
-- [프로그램 정 및 링크 규칙](../cpp/program-and-linkage-cpp.md)
+- [프로그램 정의 및 링크 규칙](../cpp/program-and-linkage-cpp.md)
 
-- [Startup 및 termination](../cpp/startup-and-termination-cpp.md)
+- [시작 및 종료](../cpp/startup-and-termination-cpp.md)
 
 - [L-value 및 r-value](../cpp/lvalues-and-rvalues-visual-cpp.md)
 
@@ -34,6 +34,6 @@ ms.locfileid: "50468707"
 
 - [간단한 표준 레이아웃 및 POD 형식](../cpp/trivial-standard-layout-and-pod-types.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)
