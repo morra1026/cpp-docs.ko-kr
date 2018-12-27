@@ -25,7 +25,7 @@ ms.locfileid: "50448817"
 
    위 예제에서는 선행 바이트가 아니라 후행 바이트를 인덱스할 수 있으므로 `character`를 가리키지 않을 수 있습니다.
 
-- [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) 함수를 사용하여 앞의 문제를 해결합니다:
+- [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) 함수를 사용하여 앞의 문제를 해결합니다.
 
     ```cpp
     while ( rgch[ i ] != '\\' )
