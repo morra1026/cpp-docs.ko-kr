@@ -19,25 +19,25 @@ ms.locfileid: "50558888"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>다중 스레드 프로그램 컴파일 및 링크
 
-Bounce.c 프로그램에 도입 되어 [샘플 다중 스레드 C 프로그램](sample-multithread-c-program.md)합니다.
+Bounce.c 프로그램은 [샘플 다중 스레드 C 프로그램](sample-multithread-c-program.md)에서 설명합니다.
 
-프로그램을 컴파일되지 기본적으로 다중 스레드입니다.
+프로그램은 기본적으로 다중 스레드로 컴파일됩니다.
 
-### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>컴파일 및 개발 환경 내에서 Bounce.c 다중 스레드 프로그램을 연결 하려면
+### <a name="to-compile-and-link-the-multithread-program-bouncec-from-within-the-development-environment"></a>개발 환경 내에서 Bounce.c 다중 스레드 프로그램을 컴파일하고 링크하려면
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
-1. 에 **프로젝트 형식** 창 클릭 **Win32**합니다.
+1. **프로젝트 형식** 창에서 **Win32**를 클릭합니다.
 
-1. 에 **템플릿을** 창 클릭 **Win32 콘솔 응용 프로그램**, 한 다음 프로젝트의 이름을 합니다.
+1. **템플릿 창**에서 **Win32 콘솔 응용 프로그램**을 클릭한 다음 프로젝트의 이름을 지정합니다.
 
-1. 프로젝트에 C 소스 코드를 포함 하는 파일을 추가 합니다.
+1. C 소스 코드를 포함하는 파일을 프로젝트에 추가합니다.
 
-1. 에 **빌드** 메뉴를 클릭 하 여 프로젝트를 빌드합니다 합니다 **빌드** 명령.
+1. **빌드** 메뉴에서 **빌드** 명령을 클릭하여 프로젝트를 빌드합니다.
 
-### <a name="to-compile-and-link-the-multithread-program-bouncec-from-the-command-line"></a>컴파일하고 Bounce.c 명령줄에서 다중 스레드 프로그램을 연결 하려면
+### <a name="to-compile-and-link-the-multithread-program-bouncec-from-the-command-line"></a>명령줄에서 Bounce.c 다중 스레드 프로그램을 컴파일하고 링크하려면
 
-1. 컴파일하고 프로그램을 링크 합니다.
+1. 다음 명령을 사용하여 프로그램을 컴파일하고 링크합니다.
 
     ```
     CL BOUNCE.C
