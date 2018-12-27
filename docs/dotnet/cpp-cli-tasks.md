@@ -11,7 +11,7 @@ ms.locfileid: "50645109"
 ---
 # <a name="ccli-tasks"></a>C++/CLI 작업
 
-이 단원의 기사에는 C++/CLI의 다양한 기능을 사용하는 방법을 보여줍니다.
+설명서의 이 단원의 문서는 C++/CLI의 다양한 기능을 사용하는 방법을 보여줍니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
