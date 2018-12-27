@@ -36,7 +36,7 @@ ms.locfileid: "50498945"
 
 - [사용자 정의 리터럴](../cpp/user-defined-literals-cpp.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [프로그램 및 링크](program-and-linkage-cpp.md)

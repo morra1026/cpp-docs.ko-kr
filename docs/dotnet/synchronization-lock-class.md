@@ -14,9 +14,9 @@ ms.locfileid: "50523970"
 ---
 # <a name="synchronization-lock-class"></a>동기화(lock 클래스)
 
-개체에 대 한 액세스를 동기화 하는 잠금을 자동화 하는 메커니즘을 제공 합니다.
+개체에 대한 액세스를 동기화하는 잠금을 자동화하는 메커니즘을 제공합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [lock](../dotnet/lock.md)
 
