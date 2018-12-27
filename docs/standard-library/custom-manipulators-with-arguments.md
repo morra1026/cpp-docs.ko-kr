@@ -19,9 +19,9 @@ ms.locfileid: "50650702"
 
 ## <a name="in-this-section"></a>단원 내용
 
-[출력 인수 하나를 사용하는 Stream 조작자](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md) (**int** 혹은 **long**)
+[인수 하나를 사용하는 출력 스트림 조작자](../standard-library/output-stream-manipulators-with-one-argument-int-or-long.md)(**int** 혹은 **long**)
 
-[다른 하나의 인자를 사용하는 출력 스트림 조작자](../standard-library/other-one-argument-output-stream-manipulators.md)
+[다른 하나의 인수를 사용하는 출력 스트림 조작자](../standard-library/other-one-argument-output-stream-manipulators.md)
 
 ## <a name="see-also"></a>참고 항목
 
