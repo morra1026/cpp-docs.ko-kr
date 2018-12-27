@@ -25,7 +25,7 @@ CLR 빈 프로젝트를 생성하려면 **새 프로젝트** 대화 상자에서
 
    **새 프로젝트** 대화 상자가 나타납니다.
 
-1. **설치 된 템플릿**에서 **Visual C++** 노드 클릭한 다음 **CLR** 노드를 클릭합니다. **CLR 빈 프로젝트** 아이콘을 선택합니다.
+1. **설치된 템플릿**에서 **Visual C++** 노드를 클릭한 다음 **CLR** 노드를 클릭합니다. **CLR 빈 프로젝트** 아이콘을 선택합니다.
 
 1. **이름** 상자에 응용 프로그램의 고유 이름을 입력합니다.
 
@@ -37,4 +37,4 @@ CLR 빈 프로젝트를 생성하려면 **새 프로젝트** 대화 상자에서
 ## <a name="see-also"></a>참고 항목
 
 [Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)<br/>
-[디버깅 준비: Visual C++ 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+[Visual C++ 프로젝트 형식](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
