@@ -30,7 +30,7 @@ ms.locfileid: "50498945"
 
 - [문장 부호](../cpp/punctuators-cpp.md)
 
-- [숫자, Boolean 및 포인터 리터럴](../cpp/numeric-boolean-and-pointer-literals-cpp.md)
+- [숫자, 부울 및 포인터 리터럴](../cpp/numeric-boolean-and-pointer-literals-cpp.md)
 
 - [문자열 및 문자 리터럴](../cpp/string-and-character-literals-cpp.md)
 
