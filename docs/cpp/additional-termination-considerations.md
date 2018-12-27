@@ -19,4 +19,4 @@ ms.locfileid: "50522483"
 
 ## <a name="see-also"></a>참고 항목
 
-[시작 및 종료 (++)](../cpp/startup-and-termination-cpp.md)
+[시작 및 종료 (C++)](../cpp/startup-and-termination-cpp.md)
