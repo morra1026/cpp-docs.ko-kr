@@ -20,7 +20,7 @@ ms.locfileid: "50583913"
 ---
 # <a name="elapsed-time-automation-classes"></a>경과 시간: 자동화 클래스
 
-이 절차에서는 두 `CTime` 객체 간의 차이를 계산하고 `CTimeSpan` 결과를 얻는 방법을 보여 준다.
+이 절차에서는 두 `CTime` 객체 간의 차이를 계산하고 `CTimeSpan` 결과를 얻는 방법을 보여 줍니다.
 
 ## <a name="to-calculate-elapsed-time"></a>경과된 시간을 계산하는 방법
 
