@@ -20,6 +20,6 @@ Visual C++는 범용 프로그래밍에서 복수의 코어와 GPU를 사용하�
 |[자동 병렬화 및 자동 벡터화](auto-parallelization-and-auto-vectorization.md)|코드 실행 속도를 빠르게 하기 위한 컴파일러 최적화 방법입니다.|
 |[동시성 런타임](concrt/concurrency-runtime.md)|데이터 병렬 처리 또는 작업 병렬 처리를 사용 하는 프로그램의 작성을 단순화 하는 클래스입니다.|
 |[C++ AMP(C++ Accelerated Massive Parallelism)](amp/cpp-amp-cpp-accelerated-massive-parallelism.md)|최신 그래픽 프로세서를 일반적인 목적으로 사용하기 위한 클래스입니다.|
-|[오래된 코드에서의 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)|오래된 응용 프로그램에 유용할 수 있는 기존 기술입니다. 새로운 프로젝트에서는 동시성 런타임 또는 C++ AMP를 사용 합니다.|
+|[레거시 코드에서의 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)|레거시 응용 프로그램에 유용할 수 있는 기존 기술입니다. 새로운 프로젝트에서는 동시성 런타임 또는 C++ AMP를 사용합니다.|
 |[OpenMP](openmp/openmp-in-visual-cpp.md)|OpenMP API의 Microsoft 구현입니다.|
-|[Visual C++](../visual-cpp-in-visual-studio.md)|설명서의이 섹션에서는 Visual C++ 기능의 대부분에 대한 정보를 포함합니다.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|설명서의 이 섹션에서는 Visual C++ 기능의 대부분에 대한 정보를 포함합니다.|
