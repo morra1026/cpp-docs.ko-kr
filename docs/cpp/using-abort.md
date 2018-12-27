@@ -17,6 +17,6 @@ ms.locfileid: "50591830"
 
 [abort](../c-runtime-library/reference/abort.md) 함수를 호출하면 즉시 종료됩니다. 이 함수는 초기화된 전역 정적 개체에 대한 일반적인 소멸 프로세스를 건너뜁니다. 또한 이 함수는 `atexit` 함수를 사용하여 지정된 모든 특수 처리를 건너뜁니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고
 
 [추가 종료 고려 사항](../cpp/additional-termination-considerations.md)
