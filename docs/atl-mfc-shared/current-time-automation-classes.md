@@ -21,7 +21,7 @@ ms.locfileid: "50596575"
 
 ## <a name="to-get-the-current-time"></a>현재 시간 가져오기
 
-1. `COleDateTime`개체를 만듭니다.
+1. `COleDateTime` 개체를 만듭니다.
 
 1. `GetCurrentTime`를 호출합니다.
 
