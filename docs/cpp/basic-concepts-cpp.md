@@ -28,7 +28,7 @@ ms.locfileid: "50468707"
 
 - [임시 개체](../cpp/temporary-objects.md)
 
-- [Alignment](../cpp/alignment-cpp-declarations.md)
+- [맞춤](../cpp/alignment-cpp-declarations.md)
 
 - [alignof 및 alignas](../cpp/alignof-and-alignas-cpp.md)
 
