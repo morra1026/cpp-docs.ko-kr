@@ -18,15 +18,15 @@ ms.locfileid: "50554289"
 ## <a name="in-this-section"></a>단원 내용
 
 [CStringT를 사용한 메모리 관리](../atl-mfc-shared/memory-management-with-cstringt.md)<br/>
-`CStringT` 클래스의 메모리 관리에 대해서 설명하고, 가변 길이 문자 문자열 조작 하는데 사용하는 템플릿 클래스입니다
+`CStringT` 클래스의 메모리 관리에 대해서 설명하고, 가변 길이 문자 문자열을 조작하는 데 사용하는 템플릿 클래스입니다.
 
 [CStringT를 사용하여 문자열 클래스 내보내기](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)<br/>
-사용자 고유의 문자열 클래스를 CStringT 템플릿 클래스를 사용하여 DLL에서 내보내기 하는 방법을 설명합니다.
+사용자 고유의 문자열 클래스를 CStringT 템플릿 클래스를 사용하여 DLL에서 내보내기하는 방법을 설명합니다.
 
 ## <a name="reference"></a>참조
 
 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)합니다.<br/>
-공유에 대한 참조 정보를 제공하하는 `CStringT` 클래스입니다.
+공유에 대한 참조 정보를 제공하는 `CStringT` 클래스입니다.
 
 ## <a name="see-also"></a>참고 항목
 
