@@ -1,4 +1,4 @@
----
+﻿---
 title: 다중 스레딩을 위한 라이브러리 지원
 ms.date: 11/04/2016
 helpviewer_keywords:

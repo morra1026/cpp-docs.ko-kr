@@ -1,4 +1,4 @@
----
+﻿---
 title: bad_cast 예외
 ms.date: 11/04/2016
 f1_keywords:
@@ -39,7 +39,7 @@ public:
 };
 ```
 
-다음 코드에는 실패 한의 예가 포함 되어 있습니다. **dynamic_cast** 을 throw 합니다 **bad_cast** 예외입니다.
+다음 코드에는 **bad_cast** 예외를 throw하는 실패한 **dynamic_cast**의 예제가 포함되어 있습니다.
 
 ```cpp
 // expre_bad_cast_Exception.cpp

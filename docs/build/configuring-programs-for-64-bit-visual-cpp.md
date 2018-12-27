@@ -17,7 +17,7 @@ ms.locfileid: "50487804"
 ---
 # <a name="configure-visual-c-for-64-bit-x64-targets"></a>64 비트 x64 용 Visual c + + 구성 대상
 
-이 섹션에는 항목이 포함 되어 있습니다. 64 비트 x64를 대상으로 하는 방법에 대 한 하드웨어 Visual c + + 빌드 도구입니다.
+이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
