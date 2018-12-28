@@ -15,7 +15,7 @@ ms.locfileid: "50663270"
 ---
 # <a name="odbc-driver-list"></a>ODBC 드라이버 목록
 
-Visual C++는 다음과 같은 데이터베이스용 ODBC 드라이버를 제공됩니다.
+Visual C++는 다음과 같은 데이터베이스용 ODBC 드라이버를 제공합니다.
 
 - SQL Server
 
