@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - match_results class
 ms.assetid: b504fdca-e5dd-429d-9960-6e27c9167fa6
-ms.openlocfilehash: bfb1a8b779f741360b406d9a5c24a36bca5e54f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 32a5f9d20999740d4368f7901c797d87acce0be9
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662516"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657463"
 ---
 # <a name="matchresults-class"></a>match_results 클래스
 
@@ -80,7 +80,7 @@ class match_results
 |연산자|설명|
 |-|-|
 |[operator=](#op_eq)|match_results 개체를 복사합니다.|
-|[operator[]](#op_at)|하위 개체에 액세스합니다.|
+|[operator\[\]](#op_at)|하위 개체에 액세스합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -560,6 +560,6 @@ typedef sub_match<BidIt> value_type;
 
 typedef는 `sub_match<BidIt>`형식의 동의어입니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [\<regex>](../standard-library/regex.md)<br/>

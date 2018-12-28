@@ -1,6 +1,6 @@
 ---
 title: 인수 전달 및 명명 규칙
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 helpviewer_keywords:
 - argument passing [C++], conventions
 - arguments [C++], widening
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - passing arguments [C++], conventions
 - conventions [C++], argument names
 ms.assetid: de468979-eab8-4158-90c5-c198932f93b9
-ms.openlocfilehash: 735e703e3e7d3ddb55a04fb0d29b3899682fe24e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca09d31d3d8d50ca94543c5e02262edd7b2deefc
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473296"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627243"
 ---
 # <a name="argument-passing-and-naming-conventions"></a>인수 전달 및 명명 규칙
 
@@ -31,11 +31,11 @@ x86 플랫폼에서 모든 인수는 전달될 때 32비트로 확장됩니다. 
 컴파일러는 ESI, EDI, EBX 및 EBP 레지스터가 함수에서 사용되는 경우 이러한 레지스터를 저장하고 복원하는 프롤로그 및 에필로그 코드를 생성합니다.
 
 > [!NOTE]
->  구조체, 공용 구조체 또는 클래스가 값으로 함수에서 반환되는 경우 형식의 모든 정의가 동일해야 하며, 그렇지 않으면 프로그램이 런타임에 실패할 수 있습니다.
+> 구조체, 공용 구조체 또는 클래스가 값으로 함수에서 반환되는 경우 형식의 모든 정의가 동일해야 하며, 그렇지 않으면 프로그램이 런타임에 실패할 수 있습니다.
 
 사용자 고유의 함수 프롤로그 및 에필로그 코드를 정의 하는 방법에 대 한 자세한 내용은 [Naked 함수 호출](../cpp/naked-function-calls.md)합니다.
 
-대상을 x64 플랫폼에서 참조 하는 코드의 호출 규칙 기본값에 대 한 자세한 [개요 x64 호출 규칙](../build/overview-of-x64-calling-conventions.md)합니다. ARM 플랫폼을 대상으로 하는 코드의 호출 규칙 문제에 대 한 자세한 내용은 [일반적인 Visual c + + ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)합니다.
+대상을 x64 플랫폼에서 참조 하는 코드의 호출 규칙 기본값에 대 한 자세한 [x64 호출 규칙](../build/x64-calling-convention.md)합니다. ARM 플랫폼을 대상으로 하는 코드의 호출 규칙 문제에 대 한 자세한 내용은 [일반적인 Visual c + + ARM 마이그레이션 문제](../build/common-visual-cpp-arm-migration-issues.md)합니다.
 
 다음과 같은 호출 규칙이 Visual C/C++ 컴파일러에서 지원됩니다.
 
@@ -52,6 +52,6 @@ x86 플랫폼에서 모든 인수는 전달될 때 32비트로 확장됩니다. 
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [호출 규칙](../cpp/calling-conventions.md)

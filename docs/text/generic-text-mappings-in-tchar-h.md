@@ -12,16 +12,16 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: 969894502689dd5aeeeaa27404bafc3c483c1336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf7c5e58b88da4f60d2e784692cb6d4a0ed84970
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667586"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627509"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>Tchar.h의 제네릭 텍스트 매핑
 
-전송을 단순화 하기 위해 전 세계에서 사용 하는 코드를 Microsoft 런타임 라이브러리는 많은 데이터 형식, 루틴 및 다른 개체에 대 한 Microsoft 특정 일반 텍스트 매핑을 제공 합니다. 싱글바이트 멀티 바이트에 대해 컴파일할 수 있는 일반 코드를 쓸 Tchar.h에 정의 된 이러한 매핑을 사용 하 여 또는 유니코드 문자 집합을 사용 하 여 정의 하는 매니페스트 상수에 따라는 `#define` 문입니다. 제네릭 텍스트 매핑은 ANSI와 호환되지 않는 Microsoft 확장입니다.
+전송을 단순화 하기 위해 전 세계에서 사용 하는 코드를 Microsoft 런타임 라이브러리는 많은 데이터 형식, 루틴 및 다른 개체에 대 한 Microsoft 특정 일반 텍스트 매핑을 제공 합니다. 싱글바이트 멀티 바이트에 대해 컴파일할 수 있는 일반 코드를 쓸 tchar.h에 정의 된 이러한 매핑을 사용 하 여 또는 유니코드 문자 집합을 사용 하 여 정의 하는 매니페스트 상수에 따라는 `#define` 문입니다. 제네릭 텍스트 매핑은 ANSI와 호환되지 않는 Microsoft 확장입니다.
 
 Tchar.h를 사용 하 여 단일 바이트, 멀티 바이트 문자 집합 (MBCS) 및 동일한 원인에서 유니코드 응용 프로그램을 빌드할 수 있습니다. Tchar.h 매크로 정의 (접두사를 포함 하는 `_tcs`) 매핑되는 올바른 전처리기 정의 사용 하 여 `str`를 `_mbs`, 또는 `wcs` 함수를 적절 하 게 합니다. MBCS를 빌드하려면 기호를 정의 `_MBCS`합니다. 유니코드를 빌드하려면 기호를 정의 `_UNICODE`합니다. 싱글바이트 응용 프로그램을 빌드하려면 모두 (기본값)을 정의 합니다. 기본적으로 `_MBCS` MFC 응용 프로그램에 대해 정의 됩니다.
 
@@ -43,7 +43,7 @@ Tchar.h를 사용 하 여 단일 바이트, 멀티 바이트 문자 집합 (MBCS
 |`_MBCS`|멀티바이트 문자|`_tcsrev`는 `_mbsrev`에 매핑됩니다.|
 |None (기본값에 둘 다 `_UNICODE` 나 `_MBCS` 정의)|SBCS(ASCII)|`_tcsrev`는 `strrev`에 매핑됩니다.|
 
-예를 들어 제네릭 텍스트 함수인 `_tcsrev`, Tchar.h에 정의 되어 있는 매핑되 `_mbsrev` 정의한 경우 `_MBCS` 또는 프로그램에 `_wcsrev` 정의한 경우 `_UNICODE`합니다. 그렇지 않으면 `_tcsrev`는 `strrev`로 매핑됩니다. 프로그래밍 편의 위해 다른 데이터 형식 매핑이 Tchar.h에 제공 되지만 `_TCHAR` 가장 유용 합니다.
+예를 들어 제네릭 텍스트 함수인 `_tcsrev`, tchar.h에 정의 되어 있는 매핑되 `_mbsrev` 정의한 경우 `_MBCS` 또는 프로그램에 `_wcsrev` 정의한 경우 `_UNICODE`합니다. 그렇지 않으면 `_tcsrev`는 `strrev`로 매핑됩니다. 프로그래밍 편의 위해 다른 데이터 형식 매핑이 tchar.h에 제공 되지만 `_TCHAR` 가장 유용 합니다.
 
 ### <a name="generic-text-data-type-mappings"></a>일반 텍스트 데이터 형식 매핑
 
