@@ -8,12 +8,12 @@ helpviewer_keywords:
 - programming [C++], 64-bit
 - Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: a72e6f1905bad81fc0d79c1f90e88e96fe8b110b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: 85bfa6cb82b4b1825ae9b9a9a0f3a9f06e579499
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487804"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626710"
 ---
 # <a name="configure-visual-c-for-64-bit-x64-targets"></a>64 비트 x64 용 Visual c + + 구성 대상
 
@@ -21,9 +21,9 @@ ms.locfileid: "50487804"
 
 ## <a name="in-this-section"></a>단원 내용
 
-- [방법: 64비트, x64 플랫폼을 대상으로 한 Visual C++ 프로젝트 구성](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [방법: X64을 64 비트 대상 Visual c + + 프로젝트 구성 플랫폼](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64비트 Visual C++ 도구 집합 사용](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)
 

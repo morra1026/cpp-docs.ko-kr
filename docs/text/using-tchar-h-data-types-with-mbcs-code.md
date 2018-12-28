@@ -12,12 +12,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-ms.openlocfilehash: 81e51f136a42c0d0db12744735521ae2b3cdb5f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dcb194c72ca2a64317cddda8a1559e78edc0978f
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510710"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626671"
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS 코드와 TCHAR.H 데이터 형식 사용
 
@@ -43,7 +43,7 @@ ms.locfileid: "50510710"
     #define _USE_INLINING
     ```
 
-   이 메서드를 사용 하면 일반 텍스트 루틴을 해당 MBCS 루틴에 직접 매핑할 Tchar.h에 제공 된 인라인 함수 썽크가 합니다. Tchar.h에서 코드 발췌가 수행 되는 방법의 예제를 제공 합니다.
+   이 메서드를 사용 하면 일반 텍스트 루틴을 해당 MBCS 루틴에 직접 매핑할 tchar.h에 제공 된 인라인 함수 썽크가 합니다. Tchar.h에서 코드 발췌가 수행 되는 방법의 예제를 제공 합니다.
 
     ```cpp
     __inline char *_tcsrev(char *_s1)
@@ -58,7 +58,7 @@ ms.locfileid: "50510710"
     #define _MB_MAP_DIRECT
     ```
 
-   기본 동작을 사용하지 않으려고 하거나 인라인을 사용할 수 없는 경우 이 방법이 가장 빠른 대안입니다. 일반 텍스트 루틴이 매크로 의해 MBCS 버전의 Tchar.h의 다음 예제와 같이 루틴에 직접 매핑해야 발생 합니다.
+   기본 동작을 사용하지 않으려고 하거나 인라인을 사용할 수 없는 경우 이 방법이 가장 빠른 대안입니다. 일반 텍스트 루틴이 매크로 의해 MBCS 버전의 tchar.h의 다음 예제와 같이 루틴에 직접 매핑해야 발생 합니다.
 
     ```cpp
     #define _tcschr _mbschr

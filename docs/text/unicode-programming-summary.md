@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-ms.openlocfilehash: 01e5866866bfc9cf81b243c569e527ab5019b928
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: df9335fa2fc66ebba73b5c92ecd8007ca435f499
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437941"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627269"
 ---
 # <a name="unicode-programming-summary"></a>유니코드 프로그래밍 요약
 
@@ -22,11 +22,11 @@ MFC 및 C 런타임의 유니코드 지원을 이용하려면 다음의 내용�
 
 - 진입점을 지정 합니다.
 
-   프로젝트의 [속성 페이지](../ide/property-pages-visual-cpp.md) 대화상자의 왼쪽 트리에서 **링커(Linker)** 를 선택하고 **고급(Advanced)** 페이지의 **진입점** 기호를 `wWinMainCRTStartup`으로 설정합니다.
+   에 **고급** 페이지의 **링커** 프로젝트의 폴더 [속성 페이지](../ide/property-pages-visual-cpp.md) 대화 상자에서를 **진입점** 기호`wWinMainCRTStartup`.
 
 - 이식 가능한 런타임 함수 및 형식을 사용합니다.
 
-   유니코드 문자열 처리에 적합한 C 런타임 함수를 사용합니다. 와이드 문자 기반으로 `wcs`로 시작하는 함수를 사용할 수도 있지만 추후 국제적으로 사용 가능하도록 쉽게 이식하기 위해 `_TCHAR` 매크로를 우선 고려합니다. 이 매크로 기반 함수는 모두 앞이 `_tcs`로 시작하며 `str`로 시작하는 문자열 관련 함수군을 대체합니다. 이 함수들은 *런타임 라이브러리 참조*의 [국제화](../c-runtime-library/internationalization.md) 지원 섹션에서 자세히 설명합니다. 자세한 내용은 [tchar.h를 이용한 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
+   유니코드 문자열 처리에 적합한 C 런타임 함수를 사용합니다. 와이드 문자 기반으로 `wcs`로 시작하는 함수를 사용할 수도 있지만 추후 국제적으로 사용 가능하도록 쉽게 이식하기 위해 `_TCHAR` 매크로를 우선 고려합니다. 이 매크로 기반 함수는 모두 앞이 `_tcs`로 시작하며 `str`로 시작하는 문자열 관련 함수군을 대체합니다. 이 함수들은 *런타임 라이브러리 참조*의 [국제화](../c-runtime-library/internationalization.md) 지원 섹션에서 자세히 설명합니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
 
    `_TCHAR`와 관련된 이식 가능한 데이터 형식은 [유니코드 지원](../text/support-for-unicode.md)에서 다루고 있습니다.
 
@@ -87,7 +87,7 @@ MFC 및 C 런타임의 유니코드 지원을 이용하려면 다음의 내용�
 
 - 런타임 라이브러리는 유니코드 버전의 모든 문자열 처리 함수를 제공합니다. (런타임 라이브러리 버전도 제공 휴대용 적합 한 MBCS 또는 유니코드에 대 한 합니다. 이들은 `_tcs` 매크로입니다.)
 
-- Tchar.h에서는 이식 가능한 데이터 형식을 제공 하며 `_T` 매크로 리터럴 문자열 및 문자를 변환 합니다. 자세한 내용은 [tchar.h를 이용한 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
+- Tchar.h에서는 이식 가능한 데이터 형식을 제공 하며 `_T` 매크로 리터럴 문자열 및 문자를 변환 합니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
 
 - 런타임 라이브러리의 `main`의 와이드 문자 기반 버전을 제공합니다. `wmain`을 사용하여 응용 프로그램이 바로 유니코드를 인식할 수 있게 만드세요.
 

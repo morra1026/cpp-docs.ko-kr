@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - array class
 ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
-ms.openlocfilehash: 7543249719cd7fab10bac7824e69023fefbc35f1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 93ef654bb71a342a6215ce5cd60786f36cadedf7
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523730"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657554"
 ---
 # <a name="array-class"></a>array 클래스
 
@@ -77,7 +77,7 @@ friend class array;
 |----------|-----------------|
 |[operator std:: vector&lt;value_type&gt;](#operator_vec)|사용 하 여 `copy(*this, vector)` 변환할 암시적으로 배열 된 std::[벡터](../../../standard-library/vector-class.md) 개체입니다.|
 |[operator()](#operator_call)|매개 변수로 지정 된 요소 값을 반환 합니다.|
-|[operator[]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|
+|[operator\[\]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `array` 을 여기에 개체입니다.|
 
 ### <a name="public-constants"></a>공용 상수
@@ -121,7 +121,7 @@ friend class array;
 
 **헤더:** amp.h
 
-**네임스페이스:** 동시성
+**Namespace:** 동시성
 
 ##  <a name="dtor"></a> ~array
 
