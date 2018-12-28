@@ -24,15 +24,15 @@ RTTI(런타임 형식 정보)는 프로그램 실행 중에 개체의 형식이 
 
 런타임 형식 정보에는 다음 세 가지 기본 C++ 언어 요소가 있습니다.
 
-- [dynamic_cast](../cpp/dynamic-cast-operator.md) 연산자.
+- [dynamic_cast](../cpp/dynamic-cast-operator.md) 연산자
 
    다형 형식을 변환하는 데 사용됩니다.
 
-- [typeid](../cpp/typeid-operator.md) 연산자.
+- [typeid](../cpp/typeid-operator.md) 연산자
 
    개체의 정확한 형식을 식별하는 데 사용됩니다.
 
-- [type_info](../cpp/type-info-class.md) 클래스.
+- [type_info](../cpp/type-info-class.md) 클래스
 
    **typeid** 연산자에서 반환된 형식 정보를 저장하는 데 사용됩니다.
 
