@@ -39,7 +39,7 @@ ms.locfileid: "50440341"
 
 - [레코드 뷰](../../data/record-views-mfc-data-access.md)
 
-- [Serialization: Serialization vs. Database Input/Output](../../mfc/serialization-serialization-vs-database-input-output.md)
+- [Serialization: Serialization과 입/출력 데이터베이스](../../mfc/serialization-serialization-vs-database-input-output.md)
 
 - [스냅숏](../../data/odbc/snapshot.md)
 
@@ -47,9 +47,9 @@ ms.locfileid: "50440341"
 
 - [트랜잭션(ODBC)](../../data/odbc/transaction-odbc.md)
 
-먼저 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)를 읽는 것이 좋습니다.
+먼저 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)을 읽는 것이 좋습니다. 
 
-MFC 참조에서 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)을 .
+MFC 참조에서 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
