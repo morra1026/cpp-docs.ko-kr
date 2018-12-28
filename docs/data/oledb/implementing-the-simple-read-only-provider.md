@@ -17,7 +17,7 @@ ms.locfileid: "50617245"
 
 - [문자열을 공급자에 읽어들이기](../../data/oledb/reading-strings-into-the-ole-db-provider.md)
 
-- [문자열을 공급자에 저장](../../data/oledb/storing-strings-in-the-ole-db-provider.md)
+- [공급자에 문자열 저장](../../data/oledb/storing-strings-in-the-ole-db-provider.md)
 
 ## <a name="see-also"></a>참고 항목
 
