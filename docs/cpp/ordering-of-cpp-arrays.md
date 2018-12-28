@@ -1,4 +1,4 @@
----
+﻿---
 title: C++ 배열 순서 지정
 ms.date: 11/04/2016
 helpviewer_keywords:

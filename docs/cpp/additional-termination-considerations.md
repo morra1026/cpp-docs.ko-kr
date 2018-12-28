@@ -1,4 +1,4 @@
----
+﻿---
 title: 추가 종료 고려 사항
 ms.date: 11/04/2016
 helpviewer_keywords:
