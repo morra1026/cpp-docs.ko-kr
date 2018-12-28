@@ -1,4 +1,4 @@
----
+﻿---
 title: 바이트 인덱스
 ms.date: 11/04/2016
 helpviewer_keywords:
