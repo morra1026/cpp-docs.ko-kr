@@ -15,7 +15,7 @@ ms.locfileid: "50453757"
 
 여러 사용자가 동일한 ODBC 데이터베이스로 작업하는 환경에서 ODBC를 사용합니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 ## <a name="see-also"></a>참고 항목
 
