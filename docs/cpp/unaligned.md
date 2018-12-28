@@ -1,6 +1,6 @@
 ---
 title: __unaligned
-ms.date: 10/10/2018
+ms.date: 12/17/2018
 f1_keywords:
 - __unaligned_cpp
 - __unaligned
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - __unaligned keyword [C++]
 ms.assetid: 0cd83aad-1840-47e3-ad33-59bfcbe6375b
-ms.openlocfilehash: 8abe64a8eb82188ab86c91a023254b3a4106797c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8eb1b93aa55601125600b6c69d9bff3d9ca43aa3
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487011"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626866"
 ---
 # <a name="unaligned"></a>__unaligned
 
@@ -29,7 +29,7 @@ ms.locfileid: "50487011"
 
 정렬에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [align](../cpp/align-cpp.md)
+- [align(C++)](../cpp/align-cpp.md)
 
 - [__alignof 연산자](../cpp/alignof-operator.md)
 
@@ -37,8 +37,8 @@ ms.locfileid: "50487011"
 
 - [/Zp(구조체 멤버 맞춤)](../build/reference/zp-struct-member-alignment.md)
 
-- [구조체 맞춤 예제](../build/examples-of-structure-alignment.md)
+- [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

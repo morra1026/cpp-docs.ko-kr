@@ -24,12 +24,12 @@ helpviewer_keywords:
 - portability [C++], character sets
 - MBCS [C++], international programming
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
-ms.openlocfilehash: bb658db157433aadce183e7fab437f15251ff54c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: c6083fcf9db8236df15d1cb5e7de4cc15fe5916e
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631298"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626723"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++의 텍스트 및 문자열
 
@@ -49,7 +49,7 @@ Visual C++이 지원하는 유니코드 및 MBCS 프로그래밍 관련 내용�
 [Tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)<br/>
 다양한 데이터 형식, 루틴 및 기타 개체에 대해 Microsoft가 제공하는 일반 텍스트 매핑을 설명합니다.
 
-[방법: 다양한 문자열 형식 간 변환](../text/how-to-convert-between-various-string-types.md)<br/>
+[방법: 다양 한 문자열 형식 간 변환](../text/how-to-convert-between-various-string-types.md)<br/>
 Visual C++에서 다양한 문자열 형식을 다른 문자열로 변환하는 방법에 대해 설명합니다.
 
 ## <a name="related-sections"></a>관련 단원

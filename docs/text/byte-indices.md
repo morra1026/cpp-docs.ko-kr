@@ -36,5 +36,5 @@ ms.locfileid: "50448817"
 
 ## <a name="see-also"></a>참고 항목
 
-[MBCS 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
+[멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/mbcs-programming-tips.md)<br/>
 [문자열의 마지막 문자](../text/last-character-in-a-string.md)

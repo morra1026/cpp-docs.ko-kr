@@ -9,12 +9,12 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - MBCS [C++]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-ms.openlocfilehash: b6c8dc5548eb1082866b7a069fb38fd329effc75
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: 9f309f6d7147b37691564d3d72c151da90055c6a
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437258"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627347"
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>MBCS(멀티바이트 문자 집합) 지원
 
@@ -47,7 +47,7 @@ C 런타임 라이브러리 및 MFC는 단일 바이트, 멀티바이트 문자 
 
 ### <a name="mbcsunicode-portability"></a>MBCS/유니코드 이식성
 
-tchar.h 헤더 파일을 사용하여 동일한 소스에서 단일 바이트, 멀티바이트 문자 집합(MBCS) 및 유니코드 응용 프로그램을 빌드할 수 있습니다. tchar.h에는 `str`, `_mbs` 또는 `wcs` 계열 함수에 적절히 매핑되는 *_tcs* 접두사가 붙은 매크로가 정의되어 있습니다. 멀티바이트 문자 집합(MBCS)으로 빌드하려면 `_MBCS` 상수를 정의하고 유니코드로 빌드하려면 `_UNICODE` 상수를 정의합니다. 기본적으로 `_UNICODE`는 MFC 응용 프로그램에 대해 정의됩니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
+Tchar.h 헤더 파일을 사용 하 여 빌드할 수 있습니다 단일 바이트, MBCS 및 유니코드 동일한 원본 으로부터의 응용 프로그램입니다. Tchar.h에 접두사로 추가 하는 매크로 정의 *_tcs* , 매핑되는 `str`를 `_mbs`, 또는 `wcs` 함수를 적절 하 게 합니다. MBCS를 빌드하려면 기호를 정의 `_MBCS`합니다. 유니코드를 빌드하려면 기호를 정의 `_UNICODE`합니다. 기본적으로 `_UNICODE` MFC 응용 프로그램에 대해 정의 됩니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
 
 > [!NOTE]
 >  `_UNICODE`와 `_MBCS`를 모두 사용한다면 정의되지 않은 동작이 발생할 수 있습니다.
@@ -60,7 +60,7 @@ mbctype.h 및 mbstring.h 헤더 파일은 경우에 따라 필요할 수 있는 
 
 - [프로그램에서 MBCS 사용](../text/international-enabling.md)
 
-- [프로그램에서 유니코드 및 MBCS를 사용 하도록 설정](../text/internationalization-strategies.md)
+- [프로그램에서 유니코드 및 MBCS를 사용하도록 설정](../text/internationalization-strategies.md)
 
 - [MBCS를 사용하여 국제화된 프로그램 만들기](../text/mbcs-programming-tips.md)
 

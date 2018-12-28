@@ -17,12 +17,12 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch
 - AMP_GRAPHICS/concurrency::graphics::texture::row_pitch
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
-ms.openlocfilehash: 675112e108f57ad5208899005865570491e0d055
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e427206379f1e7d094362411f074ad9cafb43fd
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486592"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657541"
 ---
 # <a name="texture-class"></a>texture 클래스
 
@@ -76,7 +76,7 @@ class texture;
 |이름|설명|
 |----------|-----------------|
 |[operator()](#operator_call)|매개 변수로 지정 된 요소 값을 반환 합니다.|
-|[operator[]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|
+|[operator\[\]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|
 |[operator=](#operator_eq)|지정 된 복사 [질감](texture-class.md) 여기에 개체입니다.|
 
 ### <a name="public-constants"></a>공용 상수
@@ -103,7 +103,7 @@ class texture;
 
 **헤더:** amp_graphics.h
 
-**Namespace:** concurrency:: graphics
+**Namespace:** Concurrency:: graphics
 
 ##  <a name="dtor"></a> ~ 질감
 
@@ -335,7 +335,7 @@ void set(
 *_Rank*<br/>
 인덱스의 순위입니다.
 
-*값*<br/>
+*value*<br/>
 요소의 새 값입니다.
 
 ##  <a name="ctor"></a> 질감

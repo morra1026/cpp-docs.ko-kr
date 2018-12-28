@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: da31f6eef95364ad010d9c9aeb19225d42a42283
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 767d4782ec637a0404051e6871d584f73cefdcd2
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452327"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657476"
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray 클래스
 
@@ -67,7 +67,7 @@ class CTypedPtrArray : public BASE_CLASS
 
 |이름|설명|
 |----------|-----------------|
-|[CTypedPtrArray::operator]](#operator_at)|지정한 인덱스에 있는 요소를 설정하거나 가져옵니다.|
+|[CTypedPtrArray::operator \[ \]](#operator_at)|지정한 인덱스에 있는 요소를 설정하거나 가져옵니다.|
 
 ## <a name="remarks"></a>설명
 

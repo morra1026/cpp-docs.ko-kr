@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_map class
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-ms.openlocfilehash: 31eec71dd134a5c675f70070ce1457462d10b739
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50868d020224e7bade9766f7307bfcc46ce4be47
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509372"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657593"
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map 클래스
 
@@ -107,7 +107,7 @@ false>>;
 
 |이름|설명|
 |----------|-----------------|
-|[operator[]](#operator_at)|오버로드됨. 지정된 키가 있는 요소를 찾거나 삽입합니다. 이 메서드는 동시성이 보장 합니다.|
+|[operator\[\]](#operator_at)|오버로드됨. 지정된 키가 있는 요소를 찾거나 삽입합니다. 이 메서드는 동시성이 보장 합니다.|
 |[operator=](#operator_eq)|오버로드됨. 다른 내용을 할당 `concurrent_unordered_map` 여기에 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.|
 
 ## <a name="remarks"></a>설명
@@ -425,7 +425,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 *V*<br/>
 Map에 삽입 된 값의 형식입니다.
 
-*값*<br/>
+*value*<br/>
 삽입할 값입니다.
 
 *_Where*<br/>

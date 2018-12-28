@@ -9,18 +9,18 @@ helpviewer_keywords:
 - MBCS [C++], programming
 - dialog boxes [C++], fonts
 ms.assetid: 7b541235-f3e5-4af0-b2c2-a0112cd5fbfb
-ms.openlocfilehash: 0ff15244f4e93ecd2913fa825e8b5c351c7ff84d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: 800e94bfb8a52b806ad45368499f126fbf163389
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501844"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626697"
 ---
 # <a name="general-mbcs-programming-advice"></a>일반적인 MBCS 프로그래밍 팁
 
 다음의 MBCS 프로그래밍 팁을 참고하세요.
 
-- 코드의 유연성을 위해 가급적 `_tcschr`나 `_tcscpy`와 같은 런타임 매크로를 사용하세요. 자세한 내용은 [tchar.h를 이용한 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
+- 코드의 유연성을 위해 가급적 `_tcschr`나 `_tcscpy`와 같은 런타임 매크로를 사용하세요. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
 
 - C 런타임의 `_getmbcp` 함수는 현재 코드 페이지 정보를 가져옵니다.
 

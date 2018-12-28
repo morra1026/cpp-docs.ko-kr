@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
-ms.openlocfilehash: 404796a4ff51ef821b4d5ce805b8564ab2471d25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 754232ea57a77b4eb37a72ff98a3150419d0a248
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677320"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657372"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString 클래스
 
@@ -106,7 +106,7 @@ class CMapStringToString : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[CMapStringToOb::operator [ ]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map에 요소를 삽입-에 대 한 연산자 대체 `SetAt`합니다.|
+|[CMapStringToOb::operator \[ \]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Map에 요소를 삽입-에 대 한 연산자 대체 `SetAt`합니다.|
 
 ## <a name="remarks"></a>설명
 

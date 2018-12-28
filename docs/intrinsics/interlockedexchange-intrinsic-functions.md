@@ -1,6 +1,6 @@
 ---
 title: _InterlockedExchangePointer Intrinsic Functions
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedExchange_rel
 - _InterlockedExchange8_nf
@@ -44,12 +44,12 @@ helpviewer_keywords:
 - _InterlockedExchange intrinsic
 - _InterlockedExchange8_nf
 ms.assetid: be2f232a-6301-462a-a92b-fcdeb8b0f209
-ms.openlocfilehash: 034e0bb0c8c3f60d0686a5f88ee4b19ed473d72d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ecf69b1e910dab9824131f26d8db1eb5615d6e18
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450689"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627178"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_InterlockedExchangePointer Intrinsic Functions
 
@@ -186,4 +186,4 @@ HLE(Hardware Lock Elision) 명령을 지원하는 Intel 플랫폼에서 `_HLEAcq
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
 [키워드](../cpp/keywords-cpp.md)<br/>
-[x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)
+[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

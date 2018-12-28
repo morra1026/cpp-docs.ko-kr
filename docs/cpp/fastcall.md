@@ -1,6 +1,6 @@
 ---
 title: __fastcall
-ms.date: 10/09/2018
+ms.date: 12/17/2018
 f1_keywords:
 - __fastcall_cpp
 - __fastcall
@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - __fastcall keyword [C++]
 ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
-ms.openlocfilehash: 19cc8efb98660e8cdb3f6d9b03f0b7bd85a34949
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3e7cd4b1202ee717abf9a9767785ed8abe96bd69
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480043"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627366"
 ---
 # <a name="fastcall"></a>__fastcall
 
@@ -29,11 +29,11 @@ ms.locfileid: "50480043"
 |대/소문자 변환 규칙|대/소문자 변환은 수행되지 않습니다.|
 
 > [!NOTE]
->  이후 컴파일러 버전은 다른 레지스터를 사용하여 매개 변수를 저장할 수도 있습니다.
+> 이후 컴파일러 버전은 다른 레지스터를 사용하여 매개 변수를 저장할 수도 있습니다.
 
 사용 하는 [/Gr](../build/reference/gd-gr-gv-gz-calling-convention.md) 컴파일러 옵션을로 컴파일 모듈에서 각 함수 사용 하면 **__fastcall** 함수가 충돌 하는 특성을 사용 하 여 선언 된 함수의 이름은 경우가 아니면 `main` .
 
-합니다 **__fastcall** 키워드 수락 하 고 ARM 및 x64를 대상으로 하는 컴파일러에서 무시 아키텍처는 x64 칩, 규칙에 따라 처음 네 개의 인수가 가능 하면 레지스터로 전달 되 고 추가 인수 전달 됩니다 스택에 합니다. 자세한 내용은 [개요 x64 호출 규칙](../build/overview-of-x64-calling-conventions.md)합니다. ARM 칩의 경우 최대 4개의 정수 인수와 8개의 부동 소수점 인수가 레지스터로 전달될 수 있으며 추가 인수는 스택에 전달됩니다.
+합니다 **__fastcall** 키워드 수락 하 고 ARM 및 x64를 대상으로 하는 컴파일러에서 무시 아키텍처는 x64 칩, 규칙에 따라 처음 네 개의 인수가 가능 하면 레지스터로 전달 되 고 추가 인수 전달 됩니다 스택에 합니다. 자세한 내용은 [x64 호출 규칙](../build/x64-calling-convention.md)합니다. ARM 칩의 경우 최대 4개의 정수 인수와 8개의 부동 소수점 인수가 레지스터로 전달될 수 있으며 추가 인수는 스택에 전달됩니다.
 
 비정적 클래스 함수의 경우 함수가 아웃오브 라인으로 정의되면 호출 규칙 한정자를 아웃오브 라인 정의에서 지정하지 않아도 됩니다. 즉, 클래스 비정적 멤버 메서드의 경우 선언하는 동안 지정된 호출 규칙이 정의 시 가정됩니다. 다음의 클래스 정의를 가정해 봅니다.
 
@@ -72,7 +72,7 @@ typedef BOOL (__fastcall *funcname_ptr)(void * arg1, const char * arg2, DWORD fl
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [키워드](../cpp/keywords-cpp.md)
