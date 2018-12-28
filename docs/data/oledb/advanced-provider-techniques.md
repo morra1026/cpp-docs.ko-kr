@@ -13,7 +13,7 @@ ms.locfileid: "51265011"
 ---
 # <a name="advanced-provider-techniques"></a>고급 공급자 기술
 
-고급 공급자 기술에 대한 자세한 내용은 다음 항목을 참조하십시오.
+고급 공급자 기술에 대한 자세한 내용은 다음 항목을 참조하세요.
 
 - [알림 지원](../../data/oledb/supporting-notifications.md)
 
