@@ -43,7 +43,7 @@ ms.locfileid: "50580910"
 
 부호 없는 수량의 단항 부정은 2^n에서 피연산자의 값을 빼서 수행됩니다. 여기서 n은 지정된 부호 없는 형식의 개체에 있는 비트 수입니다.
 
-## <a name="see-also"></a>참고 
+## <a name="see-also"></a>참고 항목
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
 [C++ 기본 제공 연산자, 우선 순위 및 결합성](../cpp/cpp-built-in-operators-precedence-and-associativity.md)
