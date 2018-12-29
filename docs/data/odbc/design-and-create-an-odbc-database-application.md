@@ -13,15 +13,15 @@ ms.locfileid: "50570316"
 ---
 # <a name="design-and-create-an-odbc-database-application"></a>ODBC 데이터베이스 응용 프로그램 디자인과 작성
 
-이러한 항목 디자인 및 ODBC 데이터베이스 응용 프로그램을 설정 하는 데 도움이 됩니다.
+다음 항목은 ODBC 데이터베이스 응용 프로그램을 디자인하고 설정하는 데 도움이 됩니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 - [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)
 
 - [MFC ODBC 레코드 집합 사용](../../data/odbc/use-mfc-odbc-recordsets.md)
 
-- [ODBC 기본 사항](../../data/odbc/odbc-basics.md)
+- [ODBC 기초](../../data/odbc/odbc-basics.md)
 
 
 ## <a name="see-also"></a>참고 항목
