@@ -49,7 +49,7 @@ ms.locfileid: "50440341"
 
 먼저 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)을 읽는 것이 좋습니다.
 
-에 *MFC 참조*를 참조 하세요 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)합니다.
+*MFC 참조*에서 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
