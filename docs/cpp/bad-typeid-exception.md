@@ -17,7 +17,7 @@ ms.locfileid: "51331674"
 ---
 # <a name="badtypeid-exception"></a>bad_typeid 예외
 
-**bad_typeid** 예외를 throw 합니다 [typeid 연산자](../cpp/typeid-operator.md) 경우 피연산자 **typeid** 가 NULL 포인터.
+**typeid**의 피연산자가 NULL 포인터인 경우 [typeid 연산자](../cpp/typeid-operator.md)가 **bad_typeid** 예외를 throw합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,7 +28,7 @@ catch (bad_typeid)
 
 ## <a name="remarks"></a>설명
 
-에 대 한 인터페이스 **bad_typeid** 됩니다.
+**bad_typeid**의 인터페이스는 다음과 같습니다.
 
 ```cpp
 class bad_typeid : public exception
@@ -40,7 +40,7 @@ public:
 };
 ```
 
-다음 예제에서는 합니다 **typeid** 를 throw 하는 연산자는 **bad_typeid** 예외입니다.
+다음 예제에서는 **bad_typeid** 예외를 throw하는 **typeid** 연산자를 보여 줍니다.
 
 ```cpp
 // expre_bad_typeid.cpp
@@ -74,7 +74,7 @@ catch (bad_typeid){
 Object is NULL
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [런타임 형식 정보](../cpp/run-time-type-information.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[키워드 (C++)](../cpp/keywords-cpp.md)
