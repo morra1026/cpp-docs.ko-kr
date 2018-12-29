@@ -21,7 +21,7 @@ C 또는 C++ 코드에서 사용하는 다음 몇 가지 키워드와 pragma는 
 
 - [__assume](../../intrinsics/assume.md)
 
-- [__inline 인라인 또는 \__forceinline](../../cpp/inline-functions-cpp.md)
+- [inline, _inline 또는 \__forceinline](../../cpp/inline-functions-cpp.md)
 
 - [#pragma auto_inline](../../preprocessor/auto-inline.md)
 
