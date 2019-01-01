@@ -20,7 +20,7 @@ ms.locfileid: "50644784"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [Try-문을 제외 하 고](../cpp/try-except-statement.md)
+- [try-except 문](../cpp/try-except-statement.md)
 
 - [예외 필터 작성](../cpp/writing-an-exception-filter.md)
 
@@ -28,8 +28,8 @@ ms.locfileid: "50644784"
 
 - [하드웨어 예외](../cpp/hardware-exceptions.md)
 
-- [예외 처리기에 대 한 제한](../cpp/restrictions-on-exception-handlers.md)
+- [예외 처리기에 대한 제한](../cpp/restrictions-on-exception-handlers.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)
