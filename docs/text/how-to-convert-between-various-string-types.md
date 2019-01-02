@@ -30,7 +30,7 @@ ms.locfileid: "50443357"
 
 ```cpp
 // convert_from_char.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -45,35 +45,37 @@ using namespace System;
 
 int main()
 {
-    // C 스타일의 문자열을 화면에 표시한 다음,
-    // 이를 여러 종류의 문자열로 변환합니다.
+    // Create and display a C style string, and then use it
+    // to create different kinds of strings.
     char *orig = "Hello, World!";
     cout << orig << " (char *)" << endl;
 
-    // newsize는 바이트 수가 아닌 와이드 문자 갯수로,
-    // wcstring이라는 wchar_t 타입 문자열의 길이입니다.
+    // newsize describes the length of the
+    // wchar_t string called wcstring in terms of the number
+    // of wide characters, not the number of bytes.
     size_t newsize = strlen(orig) + 1;
 
-    // 다음은 원래 문자열의 문자수를 수용할 수 있는
-    // 충분한 크기의 버퍼를 만듭니다.
-    // 문자열에 더 많은 문자를 추가하려면 newsize 값을
-    // 늘려 버퍼의 크기를 늘립니다.
+    // The following creates a buffer large enough to contain
+    // the exact number of characters in the original string
+    // in the new format. If you want to add more characters
+    // to the end of the string, increase the value of newsize
+    // to increase the size of the buffer.
     wchar_t * wcstring = new wchar_t[newsize];
 
-    // char* 문자열을 wchar_t* 타입으로 변환합니다.
+    // Convert char* string to a wchar_t* string.
     size_t convertedChars = 0;
     mbstowcs_s(&convertedChars, wcstring, newsize, orig, _TRUNCATE);
-    // 결과를 표시하고 문자열의 타입을 표시합니다.
+    // Display the result and indicate the type of string that it is.
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // C 스타일 문자열을 _bstr_t 문자열로 변환합니다.
+    // Convert the C style string to a _bstr_t string.
     _bstr_t bstrt(orig);
-    // 문자열 타입을 새 문자열에 추가한다음
-    // 결과를 화면에 표시합니다.
+    // Append the type of string to the new string
+    // and then display the result.
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // C 스타일 문자열을 CComBSTR 문자열로 변환합니다.
+    // Convert the C style string to a CComBSTR string.
     CComBSTR ccombstr(orig);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
     {
@@ -81,24 +83,24 @@ int main()
         cout << printstr << endl;
     }
 
-    // C 스타일 문자열을 CStringA로 변환하여 표시합니다.
+    // Convert the C style string to a CstringA and display it.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
 
-    // C 스타일 문자열을 CStringW로 변환하여 표시합니다.
+    // Convert the C style string to a CStringW and display it.
     CStringW cstring(orig);
     cstring += " (CStringW)";
-    // CStringW를 화면에 정확히 표시하기 위해 wcout을
-    // 사용하고, LPCWSTR 형식으로 형변환 합니다.
+    // To display a CStringW correctly, use wcout and cast cstring
+    // to (LPCTSTR).
     wcout << (LPCTSTR)cstring << endl;
 
-    // C 스타일 문자열을 basic_string으로 변환하여 표시합니다.
+    // Convert the C style string to a basic_string and display it.
     string basicstring(orig);
     basicstring += " (basic_string)";
     cout << basicstring << endl;
 
-    // C 스타일 문자열을 System::String으로 변환하여 표시합니다.
+    // Convert the C style string to a System::String and display it.
     String ^systemstring = gcnew String(orig);
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
@@ -129,7 +131,7 @@ Hello, World! (System::String)
 
 ```cpp
 // convert_from_wchar_t.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -144,83 +146,85 @@ using namespace System;
 
 int main()
 {
-    // 와이드 문자 기반의 문자열을 화면에 표시한 다음,
-    // 이를 여러 종류의 문자열로 변환합니다.
+    // Create a string of wide characters, display it, and then
+    // use this string to create other types of strings.
     wchar_t *orig = _T("Hello, World!");
     wcout << orig << _T(" (wchar_t *)") << endl;
 
-    // wchar_t 기반 문자열을 char* 문자열로 변환합니다.
-    // 원래 문자열의 길이를 저장하고 null문자를 위해
-    // origsize에 1을 더 추가합니다.
+    // Convert the wchar_t string to a char* string. Record
+    //.the length of the original string and add 1 to it to
+    //.account for the terminating null character.
     size_t origsize = wcslen(orig) + 1;
     size_t convertedChars = 0;
 
-    // 멀티바이트 문자열을 사용하여 결과를 표시하기 전에 
-    // 문자열 형식을 새 문자열에 추가합니다.
+    // Use a multibyte string to append the type of string
+    // to the new string before displaying the result.
     char strConcat[] = " (char *)";
     size_t strConcatsize = (strlen( strConcat ) + 1)*2;
 
-    // 와이드 문자 null을 포함한 입력된 문자열의
-    // 모든 와이드 문자에 대한 멀티바이트의 받는 문자열에
-    // 2바이트를 할당합니다. 멀티바이트 문자는 1바이트나
-    // 2바이트가 될 수 있으므로, 각 문자에 대해 2바이트를
-    // 할당해야합니다. 새 문자열을 위해 여유 공간을 확보하는
-    // 것은 문제가 되지 않지만, 공간이 충분치 않다는건
-    // 잠재적인 보안문제 입니다.
+    // Allocate two bytes in the multibyte output string for every wide
+    // character in the input string (including a wide character
+    // null). Because a multibyte character can be one or two bytes,
+    // you should allot two bytes for each character. Having extra
+    // space for the new string is not an error, but having
+    // insufficient space is a potential security problem.
     const size_t newsize = origsize*2;
-    // 새로운 문자열에는 기존 문자열이 변환된 복사본과
-    // 거기에 문자열 형식이 추가됩니다.
+    // The new string will contain a converted copy of the original
+    // string plus the type of string appended to it.
     char *nstring = new char[newsize+strConcatsize];
 
-    // 변환되는 문자열을 nstring에 복사합니다
+    // Put a copy of the converted string into nstring
     wcstombs_s(&convertedChars, nstring, newsize, orig, _TRUNCATE);
-    // 문자열 형식을 새 문자열에 추가합니다.
+    // append the type of string to the new string.
     _mbscat_s((unsigned char*)nstring, newsize+strConcatsize, (unsigned char*)strConcat);
-    // 결과물를 표시합니다.
+    // Display the result.
     cout << nstring << endl;
 
-    // wchar_t 기반의 문자열을 _bstr_t 기반의 문자열로 변환하여 표시합니다.
+    // Convert a wchar_t to a _bstr_t string and display it.
     _bstr_t bstrt(orig);
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // BSTR 문자열을 만들기 위해 ATL의 CComBSTR 래퍼클래스를 이용하여
-    // wchar_t 기반의 문자열을 BSTR 와이드 문자열로 변환합니다.
-    // 변환 후 결과물을 표시합니다.
+    // Convert the wchar_t string to a BSTR wide character string
+    // by using the ATL CComBSTR wrapper class for BSTR strings.
+    // Then display the result.
+
     CComBSTR ccombstr(orig);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
     {
-        // CW2A를 이용해 ccombstr을 멀티바이트 기반인 printstr로
-        // 변환 후 화면에 표시합니다.
+        // CW2A converts the string in ccombstr to a multibyte
+        // string in printstr, used here for display output.
         CW2A printstr(ccombstr);
         cout << printstr << endl;
-        // 다음과 같은 코드를 통해 와이드 문자 기반 문자열을 
-        // 쉽게 표시할 수 있습니다.
-        wcout << (LPCWSTR) ccombstr << endl;
+        // The following line of code is an easier way to
+        // display wide character strings:
+        // wcout << (LPCTSTR) ccombstr << endl;
     }
 
-    // 와이드 문자 형식인 wchar_t 기반인 문자열을 멀티바이트 형식인 CStringA로
-    // 변환하고 스트링 형식을 추가합니다. 그리고 화면에 표시 합니다.
+    // Convert a wide wchar_t string to a multibyte CStringA,
+    // append the type of string to it, and display the result.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
 
-    // 와이드 문자 형식인 wchar_t 기반 문자열을 같은 문자 형식 기반인 CStringW로
-    // 대입하고 스트링 형식을 추가합니다.
+    // Convert a wide character wchar_t string to a wide
+    // character CStringW string and append the type of string to it
     CStringW cstring(orig);
     cstring += " (CStringW)";
-    // CStringW 문자열을 바르게 출력하기 위해 wcout과 (LPCWSTR) 형식으로
-    // 문자열을 형변환 합니다.
-    wcout << (LPCWSTR)cstring << endl;
+    // To display a CStringW correctly, use wcout and cast cstring
+    // to (LPCTSTR).
+    wcout << (LPCTSTR)cstring << endl;
 
-    // 와이드 문자 형식은 wchar_t 기반 문자열을 basic_string으로 변환하고
-    // 스트링 형식을 추가한 후 결과를 화면에 표시 합니다.
+    // Convert the wide character wchar_t string to a
+    // basic_string, append the type of string to it, and
+    // display the result.
     wstring basicstring(orig);
     basicstring += _T(" (basic_string)");
     wcout << basicstring << endl;
 
-    // 와이드 문자 wchar_t 기반 문자열을 System::String 문자열로 변환하고
-    // 문자열의 타입을 추가한 후 결과물을 화면에 표시합니다.
+    // Convert a wide character wchar_t string to a
+    // System::String string, append the type of string to it,
+    // and display the result.
     String ^systemstring = gcnew String(orig);
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
@@ -251,7 +255,7 @@ Hello, World! (System::String)
 
 ```cpp
 // convert_from_bstr_t.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -266,37 +270,36 @@ using namespace System;
 
 int main()
 {
-    // _bstr_t 문자열 개체를 만들고 화면에 
-    // 생성한 문자열과 개체 타입을 표시합니다.
+    // Create a _bstr_t string, display the result, and indicate the
+    // type of string that it is.
     _bstr_t orig("Hello, World!");
     wcout << orig << " (_bstr_t)" << endl;
 
-    // 와이드 문자 기반의 _bstr_t 문자열을 C 스타일의 문자열로
-    // 변환합니다. 안전한 변환을 위해 char* 문자열을 구성하는 문자마다
-    // 2바이트를 할당합니다. 여기엔 문자열 종료를 위한 null문자도
-    // 포함됩니다.
+    // Convert the wide character _bstr_t string to a C style
+    // string. To be safe, allocate two bytes for each character
+    // in the char* string, including the terminating null.
     const size_t newsize = (orig.length()+1)*2;
     char *nstring = new char[newsize];
 
-    // _bstr_t의 (char*) 형식으로 형변환하는 연산자를 이용해
-    // nstring에 _bstr_t 객체에서 null 문자로 끝나는 문자열을
-    // 복사하고 형식을 추가한 후 화면에 표시 합니다.
+    // Uses the _bstr_t operator (char *) to obtain a null
+    // terminated string from the _bstr_t object for
+    // nstring.
     strcpy_s(nstring, newsize, (char *)orig);
     strcat_s(nstring, newsize, " (char *)");
     cout << nstring << endl;
 
-    // 결과에 추가할 문자열 형식을 준비합니다.
+    // Prepare the type of string to append to the result.
     wchar_t strConcat[] = _T(" (wchar_t *)");
     size_t strConcatLen = wcslen(strConcat) + 1;
 
-    // _bstr_t에서 wchar_t* 형식의 문자열로 변환합니다.
+    // Convert a _bstr_t to a wchar_t* string.
     const size_t widesize = orig.length()+ strConcatLen;
     wchar_t *wcstring = new wchar_t[newsize];
     wcscpy_s(wcstring, widesize, (wchar_t *)orig);
     wcscat_s(wcstring, widesize, strConcat);
     wcout << wcstring << endl;
 
-    // _bstr_t에서 CComBSTR 문자열로 변환합니다.
+    // Convert a _bstr_t string to a CComBSTR string.
     CComBSTR ccombstr((char *)orig);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
     {
@@ -304,24 +307,24 @@ int main()
         cout << printstr << endl;
     }
 
-    // _bstr_t에서 CStringA 문자열로 변환합니다.
+    // Convert a _bstr_t to a CStringA string.
     CStringA cstringa(orig.GetBSTR());
     cstringa += " (CStringA)";
     cout << cstringa << endl;
 
-    // _bstr_t에서 CStringW 문자열로 변환합니다.
+    // Convert a _bstr_t to a CStringW string.
     CStringW cstring(orig.GetBSTR());
     cstring += " (CStringW)";
-    // 올바르게 출력하기 위해 wcout을 사용하고
-    // (LPCWSTR)로 형변환 합니다.
-    wcout << (LPCWSTR)cstring << endl;
+    // To display a cstring correctly, use wcout and
+    // "cast" the cstring to (LPCTSTR).
+    wcout << (LPCTSTR)cstring << endl;
 
-    // _bstr_t에서 basic_string으로 변환합니다.
+    // Convert the _bstr_t to a basic_string.
     string basicstring((char *)orig);
     basicstring += " (basic_string)";
     cout << basicstring << endl;
 
-    // _bstr_t에서 System::String으로 변환합니다.
+    // Convert the _bstr_t to a System::String.
     String ^systemstring = gcnew String((char *)orig);
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
@@ -352,7 +355,7 @@ Hello, World! (System::String)
 
 ```cpp
 // convert_from_ccombstr.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -369,71 +372,69 @@ using namespace System::Runtime::InteropServices;
 
 int main()
 {
-    // CComBSTR 개체에 BSTR 문자열을 만들어 초기화 합니다.
+    // Create and initialize a BSTR string by using a CComBSTR object.
     CComBSTR orig("Hello, World!");
-    // BSTR을 멀티바이트 문자열로 변환하고, 결과를 표시한 후
-    // 문자열 형식을 표시합니다.
+    // Convert the BSTR into a multibyte string, display the result,
+    // and indicate the type of string that it is.
     CW2A printstr(orig);
     cout << printstr << " (CComBSTR)" << endl;
 
-    // 와이드 문자 기반 CComBSTR 문자열을 일반적인
-    // 멀티바이트 char* 문자열로 변환합니다.
-    // 가장 많은 공간을 차지할 경우를 가정하여 새로운 문자열을 위한
-    // 충분한 공간을 확보합니다. 여기에는 문자열 끝을 의미하는
-    // null 문자의 공간도 포함됩니다.
+    // Convert a wide character CComBSTR string to a
+    // regular multibyte char* string. Allocate enough space
+    // in the new string for the largest possible result,
+    // including space for a terminating null.
     const size_t newsize = (orig.Length()+1)*2;
     char *nstring = new char[newsize];
 
-    // 문자열 변환 객체를 만들고 새 char* 문자열에 복하한 다음
-    // 결과를 화면에 표시합니다.
+    // Create a string conversion object, copy the result to
+    // the new char* string, and display the result.
     CW2A tmpstr1(orig);
     strcpy_s(nstring, newsize, tmpstr1);
     cout << nstring << " (char *)" << endl;
 
-    // 결과에 추가할 문자열 형식 문자열을 준비합니다.
+    // Prepare the type of string to append to the result.
     wchar_t strConcat[] = _T(" (wchar_t *)");
     size_t strConcatLen = wcslen(strConcat) + 1;
 
-    // 와이드 문자 기반 CComBSTR 문자열을 wchar_t*로 변환합니다.
-    // 변환된 문자열의 길이와 추가된 형식 문자열 길이를 정한다음
-    // 화면에 표시할 wchar_t 문자 기반 문자열을 준비합니다.
+    // Convert a wide character CComBSTR string to a wchar_t*.
+    // The code first determines the length of the converted string
+    // plus the length of the appended type of string, then
+    // prepares the final wchar_t string for display.
     const size_t widesize = orig.Length()+ strConcatLen;
     wchar_t *wcstring = new wchar_t[widesize];
     wcscpy_s(wcstring, widesize, orig);
     wcscat_s(wcstring, widesize, strConcat);
 
-    // 결과를 표시합니다. CStringW와는 달리 wchar_t는 wcout을 이용할 때
-    // (LPCWSTR)으로의 형변환이 필요하지 않습니다.
+    // Display the result. Unlike CStringW, a wchar_t does not need
+    // a cast to (LPCTSTR) with wcout.
     wcout << wcstring << endl;
 
-    // 와이드 문자 기반 CComBSTR을 같은 와이드 문자 기반인 _bstr_t로
-    // 변환하고, 문자열 형식을 추가한 다음 화면에 표시합니다.
+    // Convert a wide character CComBSTR to a wide character _bstr_t,
+    // append the type of string to it, and display the result.
     _bstr_t bstrt(orig);
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // 와이드 문자기반 CComBSTR을 멀티바이트의 CStringA로 변환하고
-    // 문자열 형식을 추가한 다음 결과물을 화면에 표시합니다.
+    // Convert a wide character CComBSTR to a multibyte CStringA,
+    // append the type of string to it, and display the result.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
 
-    // 와이드 문자 기반의 CComBSTR을 와이드 문자 기반인 CStringW로
-    // 변환합니다.
+    // Convert a wide character CComBSTR to a wide character CStringW.
     CStringW cstring(orig);
     cstring += " (CStringW)";
-    // cstring을 올바르게 표시하기 위해 wcout과 함께 (LPCWSTR)로
-    // 형변환 합니다.
-    wcout << (LPCWSTR)cstring << endl;
+    // To display a cstring correctly, use wcout and cast cstring
+    // to (LPCTSTR).
+    wcout << (LPCTSTR)cstring << endl;
 
-    // 와이드 문자 기반 CComBSTR을 와이드 문자 기반의
-    // basic_string으로 변환합니다.
+    // Convert a wide character CComBSTR to a wide character
+    // basic_string.
     wstring basicstring(orig);
     basicstring += _T(" (basic_string)");
     wcout << basicstring << endl;
 
-    // 와이드 문자 기반의 CComBSTR을 System::String으로
-    // 변환합니다.
+    // Convert a wide character CComBSTR to a System::String.
     String ^systemstring = gcnew String(orig);
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
@@ -460,13 +461,13 @@ Hello, World! (System::String)
 
 이 예제에서는 `CString` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CString`은 `_UNICODE` 심볼의 정의 여부에 따라 형식이 달라지는 TCHAR 데이터 형식 기반의 문자열 입니다. `TCHAR`는 `_UNICODE`가 정의되어 있지 않다면 `char`로 정의되어 `CString`은 멀티바이트 문자열이 포함됩니다. `_UNICODE`가 정의되었다면 `TCHAR`는 `wchar_t`로 정의되며 `CString`은 와이드 문자열 기반이 됩니다.
 
-`CStringA`는 멀티바이트 기반 전용 문자열이며 `CStringW`는 와이드 기반 전용 문자열입니다. `CStringA`와 `CStringW`는 `_UNICODE`의 정의여부에 따라 컴파일시 기반 형식이 달라지지 않습니다. 이 예제에서의 `CStringA`와 `CStringW`의 구분은, 버퍼 크기 할당이나 출력을 올바르게 처리하기 위한 사소한 차이점을 명확하게 전달하기 위하여 사용됩니다.
+이 예제에서는 `CString` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CString`은 `_UNICODE` 심볼의 정의 여부에 따라 형식이 달라지는 TCHAR 데이터 형식 기반의 문자열 입니다. `TCHAR`는 `_UNICODE`가 정의되어 있지 않다면 `char`로 정의되어 `CString`은 멀티바이트 문자열이 포함됩니다. `_UNICODE`가 정의되었다면 `TCHAR`는 `wchar_t`로 정의되며 `CString`은 와이드 문자열 기반이 됩니다.
 
 ### <a name="code"></a>코드
 
 ```cpp
 // convert_from_cstring.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -481,98 +482,103 @@ using namespace System;
 
 int main()
 {
-    // 멀티바이트 CStringA 문자열을 설정합니다.
+    // Set up a multibyte CStringA string.
     CStringA origa("Hello, World!");
     cout << origa << " (CStringA)" << endl;
+```
 
-    // 와이드 문자 기반의 CStringW 문자열을 설정합니다.
-    CStringW origw("Hello, World!");
-    wcout << (LPCWSTR)origw << _T(" (CStringW)") << endl;
+```cpp
+// Set up a wide character CStringW string.
+CStringW origw("Hello, World!");
+wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
 
-    // CStringA 문자열을 char* 문자열로 변환하고
-    // 화면에 표시합니다.
-    const size_t newsizea = (origa.GetLength() + 1);
-    char *nstringa = new char[newsizea];
-    strcpy_s(nstringa, newsizea, origa);
-    cout << nstringa << " (char *)" << endl;
+// Convert to a char* string from CStringA string
+// and display the result.
+const size_t newsizea = (origa.GetLength() + 1);
+char *nstringa = new char[newsizea];
+strcpy_s(nstringa, newsizea, origa);
+cout << nstringa << " (char *)" << endl;
 
-    // 와이드 문자 기반 CStringW 문자열을 char* 문자열로
-    // 변환합니다. 안전한 변환을 위해 char* 문자열을 구성하는 문자마다
-    // 2바이트를 할당합니다. 여기엔 문자열 종료를 위한 null문자도
-    // 포함됩니다. 
-    const size_t newsizew = (origw.GetLength() + 1)*2;
-    char *nstringw = new char[newsizew];
-    size_t convertedCharsw = 0;
-    wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
-    cout << nstringw << " (char *)" << endl;
-    
-    // CStringA를 wchar_t* 문자열로 변환합니다.
-    size_t convertedCharsa = 0;
-    wchar_t *wcstring = new wchar_t[newsizea];
-    mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
-    wcout << wcstring << _T(" (wchar_t *)") << endl;
+// Convert to a char* string from a wide character
+// CStringW string. To be safe, we allocate two bytes for each
+// character in the original string, including the terminating
+// null.
+const size_t newsizew = (origw.GetLength() + 1)*2;
+char *nstringw = new char[newsizew];
+size_t convertedCharsw = 0;
+wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
+cout << nstringw << " (char *)" << endl;
 
-    // 와이드 문자기반 CStringW 문자열을 같은 와이드 문자 기반
-    // wchar_t* 문자열로 변환합니다.
-    wchar_t *n2stringw = new wchar_t[newsizew];
-    wcscpy_s( n2stringw, newsizew, origw );
-    wcout << n2stringw << _T(" (wchar_t *)") << endl;
+// Convert to a wchar_t* from CStringA
+size_t convertedCharsa = 0;
+wchar_t *wcstring = new wchar_t[newsizea];
+mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
+wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // 멀티바이트 CStringA를 와이드 문자 기반 _bstr_t 문자열로
-    // 변환합니다.
-    _bstr_t bstrt(origa);
-    bstrt += _T(" (_bstr_t)");
-    wcout << bstrt << endl;
+// Convert to a wide character wchar_t* string from
+// a wide character CStringW string.
+wchar_t *n2stringw = new wchar_t[newsizew];
+wcscpy_s( n2stringw, newsizew, origw );
+wcout << n2stringw << _T(" (wchar_t *)") << endl;
 
-    // 와이드 문자 기반 CStringW 문자열을 같은 와이드 문가 기반
-    // _bstr_t 문자열로 변환합니다.
-    bstr_t bstrtw(origw);
-    bstrtw += " (_bstr_t)";
-    wcout << bstrtw << endl;
+// Convert to a wide character _bstr_t string from
+// a multibyte CStringA string.
+_bstr_t bstrt(origa);
+bstrt += _T(" (_bstr_t)");
+wcout << bstrt << endl;
 
-    // 멀티바이트 문자 기반 CStringA 문자열을 와이드 문자 기반
-    // CComBSTR 문자열로 변환합니다.
-    CComBSTR ccombstr(origa);
-    if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
-    {
-        // 와이드 문자 기반 문자열을 출력을 위해 멀티바이트로
-        // 변환합니다.
-        CW2A printstr(ccombstr);
-        cout << printstr << endl;
-    }
-    
-    // 와이드 문자 기반의 CStringW 문자열을 같은 와이드 문자 기반
-    // CComBSTR 문자열로 변환합니다.
-    CComBSTR ccombstrw(origw);
-    
-    // 문자열 형식을 붙이고, 화면에 표시합니다.
-    if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
-    {
-        CW2A printstrw(ccombstrw);
-        wcout << printstrw << endl;
-    }
-    
-    // 멀티바이트 문자 기반 CStringA를 멀티바이트 형식 기반의
-    // basic_string 문자열로 변환합니다.
-    string basicstring(origa);
-    basicstring += " (basic_string)";
-    cout << basicstring << endl;
-    
-    // 와이드 문자 기반의 CStringW를 와이드 문자 기반의
-    // basic_string 문자열로 변환합니다.
-    wstring basicstringw(origw);
-    basicstringw += _T(" (basic_string)");
-    wcout << basicstringw << endl;
-    
-    // 멀티바이트 문자 기반 CStringA를 System::String으로
-    // 변환합니다.
-    String ^systemstring = gcnew String(origa);
-    systemstring += " (System::String)";
-    Console::WriteLine("{0}", systemstring);
-    delete systemstring;
-    
-    // 와이드 문자 기반 CStringW를 System::String으로
-    // 변환합니다.
+// Convert to a wide character_bstr_t string from
+// a wide character CStringW string.
+bstr_t bstrtw(origw);
+bstrtw += " (_bstr_t)";
+wcout << bstrtw << endl;
+
+// Convert to a wide character CComBSTR string from
+// a multibyte character CStringA string.
+CComBSTR ccombstr(origa);
+if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
+{
+    // Convert the wide character string to multibyte
+    // for printing.
+    CW2A printstr(ccombstr);
+    cout << printstr << endl;
+}
+
+// Convert to a wide character CComBSTR string from
+// a wide character CStringW string.
+CComBSTR ccombstrw(origw);
+// Append the type of string to it, and display the result.
+
+if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
+{
+    CW2A printstrw(ccombstrw);
+    wcout << printstrw << endl;
+}
+
+// Convert a multibyte character CStringA to a
+// multibyte version of a basic_string string.
+string basicstring(origa);
+basicstring += " (basic_string)";
+cout << basicstring << endl;
+
+// Convert a wide character CStringW to a
+// wide character version of a basic_string
+// string.
+wstring basicstringw(origw);
+basicstringw += _T(" (basic_string)");
+wcout << basicstringw << endl;
+
+// Convert a multibyte character CStringA to a
+// System::String.
+String ^systemstring = gcnew String(origa);
+systemstring += " (System::String)";
+Console::WriteLine("{0}", systemstring);
+delete systemstring;
+```
+
+```cpp
+    // Convert a wide character CStringW to a
+    // System::String.
     String ^systemstringw = gcnew String(origw);
     systemstringw += " (System::String)";
     Console::WriteLine("{0}", systemstringw);
@@ -595,7 +601,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-basicstring"></a>basic_string에서 변환
+## <a name="converting-from-basicstring"></a>Basic_string에서 변환
 
 ## <a name="example"></a>예제
 
@@ -607,7 +613,7 @@ Hello, World! (System::String)
 
 ```cpp
 // convert_from_basic_string.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -622,58 +628,57 @@ using namespace System;
 
 int main()
 {
-    // basic_string 문자열을 설정합니다.
+    // Set up a basic_string string.
     string orig("Hello, World!");
     cout << orig << " (basic_string)" << endl;
 
-    // 와이드 문자 기반 basic_string 문자열을 멀티바이트 char* 문자열로
-    // 변환합니다. 안전한 변환을 위해 문자열을 구성하는 문자마다
-    // 2바이트를 할당합니다. 여기엔 문자열 종료를 위한 null문자도
-    // 포함됩니다. 
+    // Convert a wide char basic_string string to a multibyte char*
+    // string. To be safe, we allocate two bytes for each character
+    // in the original string, including the terminating null.
     const size_t newsize = (strlen(orig.c_str()) + 1)*2;
     char *nstring = new char[newsize];
     strcpy_s(nstring, newsize, orig.c_str());
     cout << nstring << " (char *)" << endl;
 
-    // basic_string 문자열을 와이드 문자 wchar_t* 문자열로
-    // 변환합니다. 이를 위해 먼저 char*로 변환합니다.
+    // Convert a basic_string string to a wide character
+    // wchar_t* string. You must first convert to a char*
+    // for this to work.
     const size_t newsizew = strlen(orig.c_str()) + 1;
     size_t convertedChars = 0;
     wchar_t *wcstring = new wchar_t[newsizew];
     mbstowcs_s(&convertedChars, wcstring, newsizew, orig.c_str(), _TRUNCATE);
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // basic_string 문자열을 와이드 문자 기반 _bstr_t 문자열로
-    // 변환합니다.
+    // Convert a basic_string string to a wide character
+    // _bstr_t string.
     _bstr_t bstrt(orig.c_str());
     bstrt += _T(" (_bstr_t)");
     wcout << bstrt << endl;
 
-    // basic_string 문자열을 와이드 문자 기반 CComBSTR 문자열로
-    // 변환합니다.
+    // Convert a basic_string string to a wide character
+    // CComBSTR string.
     CComBSTR ccombstr(orig.c_str());
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
     {
-        // 멀티바이트 기반의 CComBSTR 문자열을 만들고
-        // 결과물을 화면에 표시합니다.
+        // Make a multibyte version of the CComBSTR string
+        // and display the result.
         CW2A printstr(ccombstr);
         cout << printstr << endl;
     }
 
-    // basic_string 문자열을 멀티바이트 CStringA 문자열로
-    // 변환합니다.
+    // Convert a basic_string string into a multibyte
+    // CStringA string.
     CStringA cstring(orig.c_str());
     cstring += " (CStringA)";
     cout << cstring << endl;
 
-    // basic_string 문자열을 와이드 문자 기반 CStringW 문자열로
-    // 변환합니다.
+    // Convert a basic_string string into a wide
+    // character CStringW string.
     CStringW cstringw(orig.c_str());
     cstringw += _T(" (CStringW)");
-    wcout << (LPCWSTR)cstringw << endl;
+    wcout << (LPCTSTR)cstringw << endl;
 
-    // basic_string 문자열을 System::String 문자열로
-    // 변환합니다.
+    // Convert a basic_string string to a System::String
     String ^systemstring = gcnew String(orig.c_str());
     systemstring += " (System::String)";
     Console::WriteLine("{0}", systemstring);
@@ -704,7 +709,7 @@ Hello, World! (System::String)
 
 ```cpp
 // convert_from_system_string.cpp
-// 컴파일 옵션: /clr /link comsuppw.lib
+// compile with: /clr /link comsuppw.lib
 
 #include <iostream>
 #include <stdlib.h>
@@ -721,19 +726,20 @@ using namespace System::Runtime::InteropServices;
 
 int main()
 {
-    // System::String을 설정하고 결과물을 화면에 표시합니다.
+    // Set up a System::String and display the result.
     String ^orig = gcnew String("Hello, World!");
     Console::WriteLine("{0} (System::String)", orig);
 
-    // System::String의 포인터를 가져와 가비지 컬렉터(GC)가
-    // 네이티브 함수를 호출하는 동안 개체를 이동시키지 못하도록
-    // 먼저 메모리를 잠급니다.
+    // Obtain a pointer to the System::String in order to
+    // first lock memory into place, so that the
+    // Garbage Collector (GC) cannot move that object
+    // while we call native functions.
     pin_ptr<const wchar_t> wch = PtrToStringChars(orig);
 
-    // System::String 문자열의 멀티바이트 char* 문자열
-    // 복사본을 만듭니다. 문장의 종료를 표현하는 null문자를 포함,
-    // 모든 와이드 입력 문자에 대하여 출력되는 멀티바이트 문자열은
-    // 글자마다 2바이트를 할당합니다.
+    // Make a copy of the system string as a multibyte
+    // char* string. Allocate two bytes in the multibyte
+    // output string for every wide character in the input
+    // string, including space for a terminating null.
     size_t origsize = wcslen(wch) + 1;
     const size_t newsize = origsize*2;
     size_t convertedChars = 0;
@@ -741,44 +747,44 @@ int main()
     wcstombs_s(&convertedChars, nstring, newsize, wch, _TRUNCATE);
     cout << nstring << " (char *)" << endl;
 
-    // 와이드 문자 기반 System::String을 같은 와이드 문자 기반
-    // wchar_t* 문자열로 변환합니다.
+    // Convert a wide character system string to a
+    // wide character wchar_t* string.
     const size_t newsizew = origsize;
     wchar_t *wcstring = new wchar_t[newsizew];
     wcscpy_s(wcstring, newsizew, wch);
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // 와이드 문자 기반 System::String을 같은 와이드 문자 기반
-    // _bstr_t 문자열로 변환합니다.
+    // Convert a wide character system string to a
+    // wide character _bstr_t string.
     _bstr_t bstrt(wch);
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // 와이드 문자 기반 System::String을 같은 와이드 문자 기반
-    // CComBSTR 문자열로 변환합니다.
+    // Convert a wide character system string
+    // to a wide character CComBSTR string.
     CComBSTR ccombstr(wch);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
     {
-        // 멀티바이트 기반의 CComBSTR 문자열 복사본을 만들어
-        // 화면에 표시합니다.
+        // Make a multibyte copy of the CComBSTR string
+        // and display the result.
         CW2A printstr(ccombstr);
         cout << printstr << endl;
     }
 
-    // 와이드 문자 기반의 System::String을
-    // 멀티바이트 CStringA 문자열로 변환합니다.
+    // Convert a wide character System::String to
+    // a multibyte CStringA string.
     CStringA cstring(wch);
     cstring += " (CStringA)";
     cout << cstring << endl;
 
-    // 와이드 문자 기반의 System::String을
-    // 같은 와이드 문자 CStringW 문자열로 변환합니다.
+    // Convert a wide character System::String to
+    // a wide character CStringW string.
     CStringW cstringw(wch);
     cstringw += " (CStringW)";
-    wcout << (LPCWSTR)cstringw << endl;
+    wcout << (LPCTSTR)cstringw << endl;
 
-    // 와이드 문자 기반의 System::String을
-    // 같은 와이드 문자 기반의 basic_string으로 변환합니다.
+    // Convert a wide character System::String to
+    // a wide character basic_string.
     wstring basicstring(wch);
     basicstring += _T(" (basic_string)");
     wcout << basicstring << endl;
