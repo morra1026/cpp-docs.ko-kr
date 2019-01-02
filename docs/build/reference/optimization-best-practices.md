@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Visual C++, optimization
 - optimization, best practices
 ms.assetid: f3433148-7255-4ca6-8a4f-7c31aac88508
-ms.openlocfilehash: 67a071ecd457495510b2015f05466e1aa9bfc989
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da493ceb1a0b751e302d296a9840b668e446ff62
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477352"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978337"
 ---
 # <a name="optimization-best-practices"></a>최적화에 대 한 유용한 정보
 
@@ -34,7 +34,7 @@ Visual c + + 지원 *프로필 기반 최적화* (PGO). 이 최적화는 응용 
 
 64 비트 환경에 연결 하는 것에 대 한 것이 좋습니다 사용 하는 **ICF, /opt: ref** 링커 옵션 및 32 비트 환경 **/opt: ref** 것이 좋습니다. 자세한 내용은 [/OPT (최적화)](../../build/reference/opt-optimizations.md)합니다.
 
-또한 강력한도 최적화 된 릴리스 빌드에서 디버그 기호를 생성 하는 것이 좋습니다. 생성된 된 코드를 적용 하지 않습니다 하 고 해결할 수 있도록 하는 경우 응용 프로그램을 디버그 하기가 매우 쉬워집니다 있어야 합니다.
+또한 강력한도 최적화 된 릴리스 빌드에서 디버그 기호를 생성 하는 것이 좋습니다. 생성된 된 코드에 영향을 주지 않습니다 하 고 해결할 수 있도록 하는 경우 응용 프로그램을 디버그 하기가 매우 쉬워집니다 있어야 합니다.
 
 ### <a name="floating-point-switches"></a>부동 소수점 스위치
 
@@ -131,6 +131,6 @@ int myFunc() {...}
 
 마지막으로, 예외적인 경우에만 대 한 예외를 throw 합니다. 일반 제어 흐름에 대 한 예외를 사용 하 여 성능이 저하 될 가능성이 확인 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [코드 최적화](../../build/reference/optimizing-your-code.md)
