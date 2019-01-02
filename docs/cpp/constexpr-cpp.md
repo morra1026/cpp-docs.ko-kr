@@ -13,7 +13,7 @@ ms.locfileid: "50605740"
 ---
 # <a name="constexpr-c"></a>constexpr(C++)
 
-키워드 **constexpr** c++11에서 도입 되었으며 c++14에서 향상 되었습니다. 의미 *상수 식*합니다. 와 같은 **const**, 코드 값을 수정 하려고 하는 경우 컴파일러 오류가 발생 되도록 변수에 적용할 수 있습니다. 와 달리 **상수**를 **constexpr** 클래스 생성자 및 함수에 적용할 수도 있습니다. **constexpr** 함을 나타냅니다 값 또는 반환 값이 상수입니다. 가능한 경우 컴파일 시간에 계산할 수 됩니다.
+키워드 **constexpr**는 C++11에서 도입되었으며 C++14에서 향상되었습니다. *상수 식*을 뜻합니다. **const**처럼, 변수에 적용할 수 있으며 코드가 값을 수정하려고 하는 경우 컴파일러 오류가 발생하게 됩니다. **const**와는 달리 **constexpr**는 함수와 클래스 생성자에 적용할 수도 있습니다. **constexpr**는 값 또는 반환 값이 상수임을 나타내며 가능하다면 컴파일 시간에 계산됩니다.
 
 **constexpr** 정수 값은 템플릿 인수 및 배열 선언과 같은 const 정수가 필요할 때마다 사용될 수 있습니다. 그리고 값이 런타임 대신 컴파일 시간에 계산될 때, 프로그램을 보다 빠르게 돌아가게 하고 보다 적은 메모리를 사용하도록 도움을 줍니다.
 
@@ -96,11 +96,11 @@ constexpr float exp(float x, int n)
 ```
 
 > [!TIP]
-> 참고: Visual Studio 디버거에서 최적화 되지 않은 디버깅 빌드를 디버그 하는 경우 알 수 있는지 여부를 **constexpr** 함수 내에 중단점을 배치 하 여 컴파일 시간에 평가 되는 합니다. 중단점을 적중할 경우 함수가 런타임에 호출되었습니다.  그렇지 않을 경우 함수가 컴파일 타임에 호출되었습니다.
+> 참고: Visual Studio 디버거에서 최적화되지 않은 디버깅 빌드를 디버그하는 경우 **constexpr** 함수 내에 중단점을 배치하여 컴파일 시간에 평가되는지의 여부를 알 수 있습니다. 중단점이 적중할 경우 함수는 런타임에 호출되었으며,  그렇지 않다면 함수는 컴파일 시간에 호출되었습니다.
 
 ## <a name="extern-constexpr"></a>extern constexpr
 
-[/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션을 사용 하면 적용할 컴파일러 [외부 링크가]() 사용 하 여 선언 된 변수를 **extern constexpr**합니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:externConstexpr-** 지정 된 경우 Visual Studio 내부 링크에 적용 됩니다 **constexpr** 경우에도 변수는 **extern** 키워드를 사용 합니다. 합니다 **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6부터 사용할 수 있습니다. 기본적으로 꺼져 있습니다. /permissive-option /zc: externconstexpr 활성화 되지 않습니다.
+[/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션은 컴파일러가 **extern constexpr**을 사용하여 선언된 변수에 [외부 링크]()()가 적용되게 합니다. 이전 버전의 Visual Studio에서와 기본적으로 혹은 **/Zc:externConstexpr-** 가 지정된 경우 Visual Studio는 **extern** 키워드가 사용 중이라도 내부 링크를 **constexpr** 변수에 적용합니다. **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6 부터 사용할 수 있으며 기본적으로는 꺼져 있습니다. /permissive- 옵션은 /zc: externconstexpr을 활성화하지 않습니다.
 
 ## <a name="example"></a>예제
 
