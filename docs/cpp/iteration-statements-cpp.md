@@ -31,4 +31,4 @@ C++에서는 [while](../cpp/while-statement-cpp.md), [do](../cpp/do-while-statem
 
 ## <a name="see-also"></a>참고 항목
 
-[C++문 개요](../cpp/overview-of-cpp-statements.md)
+[C++ 문 개요](../cpp/overview-of-cpp-statements.md)
