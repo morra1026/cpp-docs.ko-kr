@@ -6,12 +6,12 @@ helpviewer_keywords:
 - lambda expressions [C++], overview
 - lambda expressions [C++], vs. function objects
 ms.assetid: 713c7638-92be-4ade-ab22-fa33417073bf
-ms.openlocfilehash: 1b8568d69fea002e59925e1e9354407457954e42
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 9ebe4fec06996e908c619b6ac14af098b1c07a01
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176265"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978311"
 ---
 # <a name="lambda-expressions-in-c"></a>C++의 람다 식
 
@@ -55,7 +55,7 @@ void abssort(float* x, unsigned n) {
 
 1. *후행 반환 형식당* 선택 사항입니다.
 
-1. *람다 본문*)
+1. *람다 본문*합니다.
 
 ### <a name="capture-clause"></a>캡처 절
 
@@ -104,7 +104,7 @@ void f(Args... args) {
 
 **Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 합니다 **이** 지정 하 여 값으로 포인터를 캡처할 수 있습니다 `*this` 캡처 절에 있습니다. 값별로 캡처 즉 전체 *클로저*,-는 익명 함수 개체는 encapulates 람다 식, 람다가 호출 되는 모든 호출 사이트에 복사 됩니다. 값별로 캡처 비동기 또는 병렬 작업, NUMA와 같은 특정 하드웨어 아키텍처에서 특히 람다를 실행 하는 경우에 유용 합니다.
 
-클래스 메서드에 람다 식을 사용 하는 방법을 보여 주는 예로,의 "예제:를 사용 하 여 람다 식에는 메서드에"를 참조 하세요 [람다 식의 예](../cpp/examples-of-lambda-expressions.md)합니다.
+클래스 메서드에 람다 식을 사용 하는 방법을 보여 주는 예제를 참조 하세요. "예: 람다 식 사용 메서드에서" [람다 식의 예](../cpp/examples-of-lambda-expressions.md)합니다.
 
 캡처 절을 사용하는 경우 특히 람다를 다중 스레딩과 함께 사용할 때는 다음과 같은 사항에 유의해야 합니다.
 
@@ -324,7 +324,7 @@ vector v after 2nd call to fillVector(): 10 11 12 13 14 15 16 17 18
 
 ## <a name="constexpr-lambda-expressions"></a>constexpr 람다 식
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 람다 식으로 선언할 수 있습니다 `constexpr` 상수 식에서 사용할 때 각 데이터 멤버의 초기화 한다는 캡처 또는에서는 상수 식 내에서 허용 됩니다.
+**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 람다 식으로 선언할 수 있습니다 `constexpr` 캡처하거나 소개 하는 각 데이터 멤버를 초기화 하는 상수 식 내에서 허용 되는 경우 상수 식에 사용 합니다.
 
 ```cpp
     int y = 32;
@@ -376,7 +376,7 @@ auto Sqr = [](int t) __declspec(code_seg("PagedMem")) -> int { return t*t; };
 
 C++11 표준 람다 기능을 하는 것 외에도 Visual Studio 상태 비저장 람다를 통해 임의의 호출 규칙을 사용 하는 함수 포인터에 대 한 포인터로 지원 합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리의 함수 개체](../standard-library/function-objects-in-the-stl.md)<br/>

@@ -22,7 +22,7 @@ Win32 콘솔 응용 프로그램을 만드는 가장 간단한 방법은 **Win32
 
 1. [Visual C++ 응용 프로그램 마법사를 사용하여 프로젝트 만들기](../ide/creating-desktop-projects-by-using-application-wizards.md) 도움말 항목의 지침을 따릅니다.
 
-2. **새 프로젝트** 대화 상자의 템플릿 창에서 **Win32 콘솔 프로젝트**를 선택하여 마법사를 엽니다.
+2. **새 프로젝트** 대화 상자의 템플릿 창에서 **Win32 콘솔 프로젝트**를 선택하여 마법사를 엽니다 **.**
 
 3. [Win32 응용 프로그램 마법사](../windows/win32-application-wizard.md)를 사용하여 [응용 프로그램 설정](../windows/application-settings-win-32-project-wizard.md)을 정의합니다.
 

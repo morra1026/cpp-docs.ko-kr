@@ -19,7 +19,7 @@ ms.locfileid: "50451209"
 ---
 # <a name="dumpbin-reference"></a>DUMPBIN 참조
 
-Microsoft COFF Binary File Dumper (DUMPBIN 합니다. EXE) 개체 파일 형식 COFF (공용) 이진 파일에 대 한 정보를 표시합니다. COFF 개체 파일, COFF 개체, 실행 파일 및 동적 연결 라이브러리 (Dll)의 표준 라이브러리를 검사 하려면 DUMPBIN을 사용할 수 있습니다.
+Microsoft COFF Binary File Dumper(DUMPBIN.EXE)는 COFF(공용 개체 파일 형식) 이진 파일에 대한 정보를 표시합니다. DUMPBIN을 사용하여 COFF 개체 파일, COFF 개체의 표준 라이브러리, 실행 파일 및 DLL(동적 연결 라이브러리)을 검사할 수 있습니다.
 
 > [!NOTE]
 >  이 도구는 Visual Studio 명령 프롬프트에서만 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다.

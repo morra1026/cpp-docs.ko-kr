@@ -1,4 +1,4 @@
----
+﻿---
 title: 최적화 pragma 및 키워드
 ms.date: 11/04/2016
 helpviewer_keywords:

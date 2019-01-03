@@ -1,4 +1,4 @@
----
+﻿---
 title: Visual C++에서 MBCS 지원
 ms.date: 11/04/2016
 f1_keywords:
@@ -37,7 +37,7 @@ ms.locfileid: "50465236"
 
 Visual C++의 각 기능에서 더블 바이트 문자를 사용할 수 있습니다. Visual C++ 리소스 편집기의 대화상자나 텍스트 항목의 경로나 파일 이름, 대화상자 편집기나 아이콘 편집기의 정적 텍스트 항목 모두가 포함됩니다. 전처리기는 `#include`에 사용되는 파일 경로와 `code_seg`, `data_seg` pragma의 인수 등에 더블 바이트 지시문을 인식합니다. 소스 코드 편집기에서 변수명과 같은 C/C++ 언어 요소가 아닌 것 중에 주석과 문자열 리터럴은 더블바이트 문자가 허용됩니다.
 
-##  <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a> 입력 방법 편집기(IME, Input method editor) 지원
+##  <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a>입력 방법 편집기(IME, Input method editor) 지원
 
 한국어와 같이 멀티바이트 문자 집합(MBCS)을 사용하는 동아시아용으로 개발된 응용 프로그램은 일반적으로 단일 바이트 문자뿐만아니라 더블 바이트 문자도 입력할 수 있는 Windows IME를 지원합니다. Visual C++ 개발 환경으로 IME에 대한 전체 기능 지원이 가능합니다.
 
@@ -49,7 +49,7 @@ ALT + \` 키 조합으로 IME를 활성화하면 버튼들과 변환 창(Convers
 
 ## <a name="visual-c-debugger"></a>Visual C++ 디버거
 
-Visual C++ 디버거를 이용해 IME 메시지에 중단점을 설정할 수 있으며, 메모리 창에 더블 바이트 문자를 표시할 수 있습니다.
+Visual C++ 디버거를 이용해 IME 메시지에 중단점을 설정할 수 있으며,  메모리 창에 더블 바이트 문자를 표시할 수 있습니다.
 
 ## <a name="command-line-tools"></a>명령줄 도구
 
