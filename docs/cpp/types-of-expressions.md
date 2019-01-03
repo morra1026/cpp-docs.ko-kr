@@ -38,4 +38,4 @@ C++ 식은 여러 범주로 나뉩니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[식 (C++)](../cpp/expressions-cpp.md)
+[식(C++)](../cpp/expressions-cpp.md)
