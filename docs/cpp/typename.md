@@ -15,7 +15,7 @@ ms.locfileid: "50665857"
 ---
 # <a name="typename"></a>typename
 
-템플릿 정의에 알 수 없는 식별자 형식 인지 컴파일러에 힌트를 제공 합니다. 템플릿 매개 변수 목록의 형식 매개 변수 지정에 사용 됩니다.
+템플릿 정의에서 알 수 없는 식별자가 형식이라는 힌트를 컴파일러에 알려줍니다. 템플릿 매개변수 목록에서 형식 매개변수를 지정하는데 사용됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,20 +25,21 @@ typename identifier;
 
 ## <a name="remarks"></a>설명
 
-템플릿 정의에서 이름을 정규화 된 이름 템플릿 인수;에 종속 된 경우이 키워드를 사용 해야 정규화 된 이름이 종속 하는 경우 선택 사항입니다. 자세한 내용은 [템플릿 및 이름 확인](../cpp/templates-and-name-resolution.md)합니다.
+This keyword must be used if a name in a template definition is a qualified name that is dependent on a template argument; it is optional if the qualified name is not dependent. For more information, see Templates and Name Resolution.
+템플릿 정의에서의 이름이 템플릿 인수에 속하는 한정된 이름(Qualified name)인 경우 이 키워드를 사용합니다.  한정된 이름이 종속성은 선택사항 입니다. 자세한 내용은 [템플릿 및 이름 확인](../cpp/templates-and-name-resolution.md)을 참조합니다.
 
-**typename** 템플릿 선언 또는 정의에 어디서 나 모든 형식에서 사용할 수 있습니다. 템플릿 기본 클래스의 템플릿 인수로 사용되지 않는 한 기본 클래스 목록에서는 허용되지 않습니다.
+**typename**은 템플릿 정의나 선언의 어디에서나 사용할 수 있습니다. 템플릿 기반 클래스(Base class)에 대한 템플릿 인수로 사용되지 않는 한 기반 클래스 목록에는 사용할 수 없습니다.
 
 ```cpp
 template <class T>
-class C1 : typename T::InnerType // Error - typename not allowed.
+class C1 : typename T::InnerType // 오류 - typename은 허용되지 않습니다.
 {};
 template <class T>
 class C2 : A<typename T::InnerType>  // typename OK.
 {};
 ```
 
-합니다 **typename** 키워드 대신 사용할 수도 있습니다 **클래스** 템플릿 매개 변수에서를 나열 합니다. 예를 들어 다음 문은 기능적으로 동일합니다.
+템플릿 매개변수 목록에 **class** 대신 **typename** 키워드를 대신 사용할 수도 있습니다. 예를 들어 다음은 의미상 동일합니다.
 
 ```cpp
 template<class T1, class T2>...
@@ -51,7 +52,7 @@ template<typename T1, typename T2>...
 // typename.cpp
 template<class T> class X
 {
-   typename T::Y m_y;   // treat Y as a type
+   typename T::Y m_y;   // Y를 형식으로 취급합니다.
 };
 
 int main()
