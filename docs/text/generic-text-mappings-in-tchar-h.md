@@ -12,18 +12,18 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: bf7c5e58b88da4f60d2e784692cb6d4a0ed84970
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 59df523cc553881186921a878d131a109ae3cf27
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627509"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978298"
 ---
 # <a name="generic-text-mappings-in-tcharh"></a>tchar.h의 제네릭 텍스트 매핑
 
 세계적으로 사용되는 문자열 관련 코드 전송을 단순하게 하기 위해 Microsoft 런타임 라이브러리에는 다양한 데이터 형식과 루틴, 기타 개체들에 대한 Microsoft만의 특화된 제네릭 텍스트 매핑용 도구가 있습니다. tchar.h에 정의되어 있는 이러한 매핑 도구는 `#define`된 매니페스트 상수에 따라 싱글, 멀티바이트 및 유니코드 문자 집합에 관계없이 컴파일됩니다. 이러한 제네릭 텍스트 매핑은 ANSI 표준과 호환되지 않는 Microsoft 확장입니다.
 
-tchar.h를 사용하여 같은 소스 코드를 가지고 싱글, 멀티바이트 문자 집합(MBCS)뿐만 아니라 유니코드 기반 애플리케이션을 빌드할 수 있습니다. `_tcs` 접두어를 가지고 있는 tchar.h에 정의되어 있는 매크로는 전처리기 정의에 따라 적절하게 `str`, `_mbs`나 `wcs` 계열 함수를 호출합니다. MBCS로 빌드하려면 `_MBCS` 상수를, 유니코드로 빌드하려면 `_UNICODE` 상수를 정의합니다. 싱글바이트 응용 프로그램을 빌드하려면 이 두가지를 정의하지 않습니다. MFC 응용 프로그램에서는 `_MBCS`가 기본적으로 정의됩니다.
+tchar.h를 사용하여 같은 소스 코드를 가지고 싱글, 멀티바이트 문자 집합(MBCS)뿐만 아니라 유니코드 기반 애플리케이션을 빌드할 수 있습니다. `_tcs` 접두어를 가지고 있는 tchar.h에 정의되어 있는 매크로는 전처리기 정의에 따라 적절하게 `str`, `_mbs`나 `wcs` 계열 함수를 호출합니다. MBCS로 빌드하려면 `_MBCS` 상수를, 유니코드로 빌드하려면 `_UNICODE` 상수를 정의합니다. 싱글바이트 응용 프로그램을 빌드하려면 이 두가지를 정의하지 않습니다. MFC 응용 프로그램에서는 `_UNICODE`가 기본적으로 정의됩니다.
 
 `_TCHAR` 데이터 형식은 tchar.h에서 조건에 따라 정의가 달라집니다. `_UNICODE`가 정의되어 있다면 `_TCHAR`은 **wchar_t**로 정의되고, 만일 싱글바이트 및 멀티바이트 문자 집합(MBCS) 기반의 빌드라면 **char**로 정의됩니다. (**wchar_t**는 기본 유니코드 와이드 문자 데이터 형식입니다. 이것은 8비트의 부호 있는 **char**이 짝을 이룬 16비트입니다.) 세계적으로 사용되는 애플리케이션 개발을 위해 바이트가 아닌 `_TCHAR` 단위를 사용하는 `_tcs` 함수군을 사용하세요. 예를 들어 `_tcsncpy` 함수가 복사하는 단위는 `n` 바이트가 아닌 `_TCHARs`입니다.
 
