@@ -67,4 +67,4 @@ int main() {
 ## <a name="see-also"></a>참고 항목
 
 [캐스팅 연산자](../cpp/casting-operators.md)<br/>
-[키워드 (C++)](../cpp/keywords-cpp.md)
+[키워드(C++)](../cpp/keywords-cpp.md)
