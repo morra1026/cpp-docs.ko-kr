@@ -1,4 +1,4 @@
----
+﻿---
 title: MFC ODBC 클래스에 대한 추가 정보
 ms.date: 11/04/2016
 helpviewer_keywords:

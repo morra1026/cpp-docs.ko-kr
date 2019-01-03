@@ -1,4 +1,4 @@
----
+﻿---
 title: OLE DB 공급자 템플릿을 사용하여 작업
 ms.date: 10/29/2018
 helpviewer_keywords:

@@ -1,4 +1,4 @@
----
+﻿---
 title: constexpr(C++)
 ms.date: 04/06/2018
 f1_keywords:
@@ -39,7 +39,7 @@ Constexpr 변수 또는 함수는 [리터럴 형식](trivial-standard-layout-and
 
 ## <a name="constexpr-variables"></a>constexpr 변수
 
-const 및 constexpr 변수 간의 주요 차이점은 const 변수의 초기화는 런타임까지 지연시킬 수 있는 반면에 constexpr 변수는 컴파일 타임에 초기화해야 한다는 것입니다.  모든 constexpr 변수는 const입니다.
+const 및 constexpr 변수 간의 주요 차이점은 const 변수의 초기화는 런타임까지 지연시킬 수 있는 반면에 constexpr 변수는 컴파일 타임에 초기화해야 한다는 것입니다. 모든 constexpr 변수는 const입니다.
 
 - 변수가 리터럴 형식이며 초기화되었다면 **constexpr**로 선언될 수 있습니다. 초기화를 생성자에서 수행하는 경우 생성자는 **constexpr**로 선언되어야만 합니다.
 
@@ -58,7 +58,7 @@ constexpr int k = j + 1; //Error! j not a constant expression
 
 ## <a name="constexpr_functions"></a> constexpr 함수
 
-**constexpr** 함수는 필요한 코드를 사용하는 경우 컴파일 시 반환 값을 계산할 수 있습니다.  해당 인수가 **constexpr** 값이고 사용하는 코드가 컴파일 시간에 반환 값을 필요로 할 때, 예를 들어 **constexpr** 변수를 초기화하거나 비형식 템플릿 인수를 제공하기 위해서, 컴파일 시간 상수를 생성합니다. 비-**constexpr** 인수로 호출될 때 혹은 그 값이 컴파일 시간에 필요하지 않을 때 일반 함수처럼 런타임에 값을 생성합니다.  (이 이중 동작은 같은 함수의 **constexpr** 및 비-**constexpr** 버전을 각각 작성하지 않아도 되게 합니다.)
+**constexpr** 함수는 필요한 코드를 사용하는 경우 컴파일 시 반환 값을 계산할 수 있습니다. 해당 인수가 **constexpr** 값이고 사용하는 코드가 컴파일 시간에 반환 값을 필요로 할 때, 예를 들어 **constexpr** 변수를 초기화하거나 비형식 템플릿 인수를 제공하기 위해서, 컴파일 시간 상수를 생성합니다. 비-**constexpr** 인수로 호출될 때 혹은 그 값이 컴파일 시간에 필요하지 않을 때 일반 함수처럼 런타임에 값을 생성합니다. (이 이중 동작은 같은 함수의 **constexpr** 및 비-**constexpr** 버전을 각각 작성하지 않아도 되게 합니다.)
 
 **constexpr** 함수 또는 생성자는 암시적으로 **인라인**입니다.
 
@@ -96,11 +96,11 @@ constexpr float exp(float x, int n)
 ```
 
 > [!TIP]
-> 참고: Visual Studio 디버거에서 최적화되지 않은 디버깅 빌드를 디버그하는 경우 **constexpr** 함수 내에 중단점을 배치하여 컴파일 시간에 평가되는지의 여부를 알 수 있습니다. 중단점이 적중할 경우 함수는 런타임에 호출되었으며,  그렇지 않다면 함수는 컴파일 시간에 호출되었습니다.
+> 참고: Visual Studio 디버거에서 최적화되지 않은 디버깅 빌드를 디버그하는 경우 **constexpr** 함수 내에 중단점을 배치하여 컴파일 시간에 평가되는지의 여부를 알 수 있습니다. 중단점이 적중할 경우 함수는 런타임에 호출되었으며, 그렇지 않다면 함수는 컴파일 시간에 호출되었습니다.
 
 ## <a name="extern-constexpr"></a>extern constexpr
 
-[/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션은 컴파일러가 **extern constexpr**을 사용하여 선언된 변수에 [외부 링크]()()가 적용되게 합니다. 이전 버전의 Visual Studio에서와 기본적으로 혹은 **/Zc:externConstexpr-** 가 지정된 경우 Visual Studio는 **extern** 키워드가 사용 중이라도 내부 링크를 **constexpr** 변수에 적용합니다. **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6 부터 사용할 수 있으며 기본적으로는 꺼져 있습니다. /permissive- 옵션은 /zc: externconstexpr을 활성화하지 않습니다.
+[/zc: externconstexpr](../build/reference/zc-externconstexpr.md) 컴파일러 옵션은 컴파일러가 **extern constexpr**을 사용하여 선언된 변수에 [외부 링크]()가 적용되게 합니다. 이전 버전의 Visual Studio에서와 기본적으로 혹은 **/Zc:externConstexpr-** 가 지정된 경우 Visual Studio는 **extern** 키워드가 사용 중이라도 내부 링크를 **constexpr** 변수에 적용합니다. **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6부터 사용할 수 있으며 기본적으로는 꺼져 있습니다. /permissive- 옵션은 /zc: externconstexpr을 활성화하지 않습니다.
 
 ## <a name="example"></a>예제
 
