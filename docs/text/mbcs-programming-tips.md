@@ -20,7 +20,7 @@ ms.locfileid: "50552622"
 
 새로운 개발에서는 가능하면 최종 사용자가 볼 수 있는 모든 문자열은 유니코드 문자 인코딩을 사용해야 합니다. MBCS 레거시 기술은 유니코드에 의해 대체되었습니다. 이 섹션에서는 MBCS를 사용하고 유니코드로 변환하는 기존 프로그램을 유지 관리해야 하는 개발자에 대한 팁을 제공합니다. 이 팁은 MFC 응용 프로그램 및 MFC 없이 작성된 응용 프로그램에 적용됩니다. 다음 내용을 다룹니다.
 
-- [일반적인 MBCS 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
+- [멀티바이트 문자 집합(MBCS) 프로그래밍 팁](../text/general-mbcs-programming-advice.md)
 
 - [포인터 증가 및 감소](../text/incrementing-and-decrementing-pointers.md)
 
