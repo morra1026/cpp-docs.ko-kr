@@ -36,6 +36,6 @@ C++ 점프 문에 대한 설명은 다음 항목을 참조하십시오.
 
 - [goto 문](../cpp/goto-statement-cpp.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[C++ 문 개요](../cpp/overview-of-cpp-statements.md)
+[C++문 개요](../cpp/overview-of-cpp-statements.md)
