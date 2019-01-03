@@ -1,5 +1,5 @@
----
-title: '비트 포함 OR 연산자: |'
+﻿---
+title: '포괄적 비트 OR 연산자: |'
 ms.date: 06/14/2018
 f1_keywords:
 - bitor
@@ -31,7 +31,7 @@ ms.locfileid: "50649165"
 
 ## <a name="operator-keyword-for-124"></a>&#124;에 대한 연산자 키워드
 
-**bitor** 연산자는 다음의 텍스트 &#124;에 해당하는 것입니다. 프로그램에서 **bitor** 연산자에 액세스하는 두 가지 방법이 있습니다. 헤더 파일 <iso646.h>를 포함하거나 [/Za](../build/reference/za-ze-disable-language-extensions.md)(언어 확장 사용 안 함) 컴파일러 옵션으로 컴파일하는 것입니다.
+**bitor** 연산자는 다음의 텍스트 **&#124**;에 해당하는 것입니다. 프로그램에서 **bitor** 연산자에 액세스하는 두 가지 방법이 있습니다. 헤더 파일 \<iso646.h>를 포함하거나 [/Za](../build/reference/za-ze-disable-language-extensions.md)(언어 확장 사용 안 함) 컴파일러 옵션으로 컴파일하는 것입니다.
 
 ## <a name="example"></a>예제
 

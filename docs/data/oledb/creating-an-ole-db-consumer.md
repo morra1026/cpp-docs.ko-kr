@@ -1,4 +1,4 @@
----
+﻿---
 title: OLE DB 소비자 만들기
 ms.date: 10/22/2018
 helpviewer_keywords:
@@ -13,7 +13,7 @@ ms.locfileid: "50471092"
 ---
 # <a name="creating-an-ole-db-consumer"></a>OLE DB 소비자 만들기
 
-ATL OLE DB 소비자 마법사 사용 여부에 상관 없이 OLE DB 템플릿 소비자를 만들 수 있지만 마법사를 사용하는 것이 좋습니다. 소비자는 ATL을 지원하는 모든 응용 프로그램에서 작동될 수 있습니다.
+**ATL OLE DB 소비자 마법사** 사용 여부에 상관 없이 OLE DB 템플릿 소비자를 만들 수 있지만 마법사를 사용하는 것이 좋습니다. 소비자는 ATL을 지원하는 모든 응용 프로그램에서 작동될 수 있습니다.
 
 이 단원에서는 다음 항목에 대해 설명합니다.
 

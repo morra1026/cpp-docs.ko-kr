@@ -32,9 +32,9 @@ ms.locfileid: "53626697"
 
 - 일부 글꼴은 모든 시스템에서 사용하지 못할 수도 있으므로, 애플리케이션에서 글꼴을 사용할 때 주의해야 합니다.
 
-- 대화 상자의 글꼴 선택시 MS Sans Serif나 Helvetica 대신 [MS Shell Dlg](/windows/desktop/Intl/using-ms-shell-dlg-and-ms-shell-dlg-2)를 선택합니다. MS Shell Dlg는 대화 상자를 생성시 시스템에서 올바른 글꼴로 바뀝니다. MS Shell Dlg 사용하면 운영 체제 시스템마다 변경될 수 있는 모든 사항을 자동으로 적용할 수 있습니다. MFC는 MS Shell Dlg를 DEFAULT_GUI_FONT로 변경합니다. Windows 95, Windows 98 및 Windows NT 4는 시스템 글꼴로 바꿉니다. 해당 시스템에서는 MS Shell Dlg를 올바르게 처리하지 못하기 때문입니다.
+- 대화 상자의 글꼴 선택시 MS Sans Serif나 Helvetica 대신 [MS Shell Dlg](/windows/desktop/Intl/using-ms-shell-dlg-and-ms-shell-dlg-2)를 선택합니다. MS Shell Dlg는 대화 상자를 생성시 시스템에서 올바른 글꼴로 바뀝니다. MS Shell Dlg 사용하면 운영 체제 시스템마다 변경될 수 있는 모든 사항을 자동으로 적용할 수 있습니다. (MFC는 MS Shell Dlg를 DEFAULT_GUI_FONT로 변경합니다. Windows 95, Windows 98 및 Windows NT 4는 시스템 글꼴로 바꿉니다.해당 시스템에서는 MS Shell Dlg를 올바르게 처리하지 못하기 때문입니다.)
 
-- 응용 프로그램을 디자인할 때 어떤 문자열을 지역화할 수 있는지를 결정합니다. 확실하지 않은 경우 주어진 문자열은 지역화될 것이라고 가정합니다.지역화 가능한 문자열과 그렇지 않은 문자열을 혼용하지 마세요.
+- 응용 프로그램을 디자인할 때 어떤 문자열을 지역화할 수 있는지를 결정합니다. 확실하지 않은 경우 주어진 문자열은 지역화될 것이라고 가정합니다. 지역화 가능한 문자열과 그렇지 않은 문자열을 혼용하지 마세요.
 
 ## <a name="see-also"></a>참고 항목
 

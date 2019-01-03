@@ -1,4 +1,4 @@
----
+﻿---
 title: 지연 로드된 가져오기 덤프
 ms.date: 11/04/2016
 helpviewer_keywords:

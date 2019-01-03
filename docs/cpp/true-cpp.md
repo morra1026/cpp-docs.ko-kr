@@ -24,7 +24,7 @@ bool-expression logical-operator true ;
 
 ## <a name="remarks"></a>설명
 
-이 키워드는 [bool](../cpp/bool-cpp.md) 형식의 변수 또는 조건식의 값 2개 중 하나입니다. 이제 조건식이 부울 식입니다. i가 **bool** 형식이면 i = true; 문이 i에 **true**를 할당합니다.
+이 키워드는 [bool](../cpp/bool-cpp.md) 형식의 변수 또는 조건식의 값 2개 중 하나입니다. 이제 조건식이 부울 식입니다. `i`가 **bool** 형식이면 `i = true;`문이 `i`에 **true**를 할당합니다.
 
 ## <a name="example"></a>예제
 

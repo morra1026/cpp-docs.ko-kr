@@ -1,4 +1,4 @@
----
+﻿---
 title: constexpr(C++)
 ms.date: 04/06/2018
 f1_keywords:
