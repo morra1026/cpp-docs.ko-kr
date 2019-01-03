@@ -77,4 +77,4 @@ Object is NULL
 ## <a name="see-also"></a>참고 항목
 
 [런타임 형식 정보](../cpp/run-time-type-information.md)<br/>
-[키워드 (C++)](../cpp/keywords-cpp.md)
+[키워드(C++)](../cpp/keywords-cpp.md)
