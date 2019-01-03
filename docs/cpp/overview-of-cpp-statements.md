@@ -45,4 +45,4 @@ try-throw-catch
 
 ## <a name="see-also"></a>참고자료
 
-[문 (C++)](../cpp/statements-cpp.md)
+[문(C++)](../cpp/statements-cpp.md)
