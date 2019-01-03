@@ -25,14 +25,13 @@ typename identifier;
 
 ## <a name="remarks"></a>설명
 
-This keyword must be used if a name in a template definition is a qualified name that is dependent on a template argument; it is optional if the qualified name is not dependent. For more information, see Templates and Name Resolution.
 템플릿 정의에서의 이름이 템플릿 인수에 속하는 한정된 이름(Qualified name)인 경우 이 키워드를 사용합니다.  한정된 이름이 종속성은 선택사항 입니다. 자세한 내용은 [템플릿 및 이름 확인](../cpp/templates-and-name-resolution.md)을 참조합니다.
 
 **typename**은 템플릿 정의나 선언의 어디에서나 사용할 수 있습니다. 템플릿 기반 클래스(Base class)에 대한 템플릿 인수로 사용되지 않는 한 기반 클래스 목록에는 사용할 수 없습니다.
 
 ```cpp
 template <class T>
-class C1 : typename T::InnerType // 오류 - typename은 허용되지 않습니다.
+class C1 : typename T::InnerType // Error - typename not allowed.
 {};
 template <class T>
 class C2 : A<typename T::InnerType>  // typename OK.
