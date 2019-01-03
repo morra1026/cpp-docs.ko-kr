@@ -48,6 +48,6 @@ char chArray[(int)Size];
 
 쉼표 연산자와 할당 연산자를 상수 식에 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 
+## <a name="see-also"></a>참고 항목
 
 [식의 형식](../cpp/types-of-expressions.md)
