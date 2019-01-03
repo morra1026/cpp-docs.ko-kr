@@ -51,7 +51,7 @@ template<typename T1, typename T2>...
 // typename.cpp
 template<class T> class X
 {
-   typename T::Y m_y;   // Y를 형식으로 취급합니다.
+   typename T::Y m_y;   // treat Y as a type
 };
 
 int main()
