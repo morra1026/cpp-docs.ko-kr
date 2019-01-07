@@ -26,12 +26,12 @@ helpviewer_keywords:
 - files [C++], translation
 - setmode function
 ms.assetid: 996ff7cb-11d1-43f4-9810-f6097182642a
-ms.openlocfilehash: 887936299dce0a13738f9dd891a168785d17c979
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67cca27ba03a99d7e192d438a98f1bb3a93845ee
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617440"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031280"
 ---
 # <a name="setmode"></a>_setmode
 
@@ -66,7 +66,12 @@ int _setmode (
 
 합니다 **_setmode** 함수를 설정 *모드* 제공한 파일의 변환 모드 *fd*합니다. 전달 **_O_TEXT** 으로 *모드* 설정 텍스트 (즉, 변환 됨) 모드입니다. 캐리지 리턴-줄 바꿈된 (CR-LF) 조합은 단일 줄 바꿈 문자 입력 시로 변환 됩니다. 줄 바꿈 문자는 출력 시 CR-LF 조합으로 변환됩니다. 전달 **_O_BINARY** 집합 이진 (변환 되지 않음된) 모드는 이러한 변환은 표시 되지 않습니다.
 
-전달할 수도 있습니다 **_O_U16TEXT**를 **_O_U8TEXT**, 또는 **_O_WTEXT** 이 문서의 뒷부분에서 두 번째 예제에서 설명한 것 처럼 유니코드 모드를 사용 하도록 설정 합니다. **_setmode** 의 기본 변환 모드를 수정 하려면 일반적으로 사용 됩니다 **stdin** 하 고 **stdout**, 하지만 모든 파일에 사용할 수 있습니다. 적용 하는 경우 **_setmode** 스트림에 대 한 파일 설명자 인 호출 **_setmode** 스트림에서 입력 또는 출력 작업을 수행 하기 전에 합니다.
+전달할 수도 있습니다 **_O_U16TEXT**를 **_O_U8TEXT**, 또는 **_O_WTEXT** 이 문서의 뒷부분에서 두 번째 예제에서 설명한 것 처럼 유니코드 모드를 사용 하도록 설정 합니다.
+
+> [!CAUTION]
+> 유니코드 모드 와이드 인쇄 기능입니다 (예를 들어 `wprintf`) 좁은 인쇄 기능에 대 한 지원 되지 않습니다. 유니코드 모드 스트림에 좁은 print 함수가 사용 assert를 트리거합니다.
+
+**_setmode** 의 기본 변환 모드를 수정 하려면 일반적으로 사용 됩니다 **stdin** 하 고 **stdout**, 하지만 모든 파일에 사용할 수 있습니다. 적용 하는 경우 **_setmode** 스트림에 대 한 파일 설명자 인 호출 **_setmode** 스트림에서 입력 또는 출력 작업을 수행 하기 전에 합니다.
 
 > [!CAUTION]
 > 쓰는 경우 데이터 파일 스트림 플러시 명시적으로 코드를 사용 하 여 [fflush](fflush.md) 사용 하기 전에 **_setmode** 모드를 변경 합니다. 코드를 플러시하지 않은 경우 예기치 않은 동작이 발생할 수 있습니다. 스트림에 데이터를 쓰지 않을 경우 코드를 플러시할 필요가 없습니다.
