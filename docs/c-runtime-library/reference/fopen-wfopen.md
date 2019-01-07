@@ -32,12 +32,12 @@ helpviewer_keywords:
 - files [C++], opening
 - fopen function
 ms.assetid: e868993f-738c-4920-b5e4-d8f2f41f933d
-ms.openlocfilehash: 1397f3b3513fc9a3e93a69841a93b40c16e490cf
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: fb5f78411521dcbaddefda6c621b7fe44ce91736
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333230"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031293"
 ---
 # <a name="fopen-wfopen"></a>fopen, _wfopen
 
@@ -72,7 +72,7 @@ FILE *_wfopen(
 
 ## <a name="remarks"></a>설명
 
-합니다 **fopen** 함수에 지정 된 파일을 엽니다 *filename*합니다. 기본적으로 반각 *filename* 문자열은 ANSI 코드 페이지 (CP_ACP)를 사용 하 여 해석 됩니다. Windows 데스크톱 응용 프로그램에서 이 페이지를 [SetFileApisToOEM](/windows/desktop/api/fileapi/nf-fileapi-setfileapistooem) 함수를 사용하여 OEM 코드 페이지(CP_OEMCP)로 변경할 수 있습니다. 사용할 수는 [AreFileApisANSI](/windows/desktop/api/fileapi/nf-fileapi-arefileapisansi) 함수를 여부를 *filename* ANSI 또는 시스템의 기본 OEM 코드 페이지를 사용 하 여 해석 됩니다. **_wfopen** 의 와이드 문자 버전이 **fopen**;에 대 한 인수 **_wfopen** 는 와이드 문자 문자열입니다. 그렇지 않으면 **_wfopen** 하 고 **fopen** 동일 하 게 작동 합니다. 사용 하 여 방금 **_wfopen** 파일 스트림에 사용 되는 코딩 된 문자 집합에는 영향을 주지 않습니다.
+합니다 **fopen** 함수에 지정 된 파일을 엽니다 *filename*합니다. 기본적으로 반각 *filename* 문자열은 ANSI 코드 페이지 (CP_ACP)를 사용 하 여 해석 됩니다. Windows 데스크톱 애플리케이션에서 이 페이지를 [SetFileApisToOEM](/windows/desktop/api/fileapi/nf-fileapi-setfileapistooem) 함수를 사용하여 OEM 코드 페이지(CP_OEMCP)로 변경할 수 있습니다. 사용할 수는 [AreFileApisANSI](/windows/desktop/api/fileapi/nf-fileapi-arefileapisansi) 함수를 여부를 *filename* ANSI 또는 시스템의 기본 OEM 코드 페이지를 사용 하 여 해석 됩니다. **_wfopen** 의 와이드 문자 버전이 **fopen**;에 대 한 인수 **_wfopen** 는 와이드 문자 문자열입니다. 그렇지 않으면 **_wfopen** 하 고 **fopen** 동일 하 게 작동 합니다. 사용 하 여 방금 **_wfopen** 파일 스트림에 사용 되는 코딩 된 문자 집합에는 영향을 주지 않습니다.
 
 **fopen** 실행 시점에 파일 시스템에 유효한 경로 허용 합니다. **fopen** UNC 경로 및 경로 관련 된 코드를 실행 하는 시스템에 공유에 액세스할 수 있는 매핑된 네트워크 드라이브 또는 매핑된 드라이브는 실행 시간을 허용 합니다. 에 대 한 경로 생성할 때 **fopen**, 드라이브, 경로 또는 네트워크 공유 수 있는 실행 환경에 있는지 확인 합니다. 슬래시(/) 또는 백슬래시(\\)를 경로의 디렉터리 구분 기호로 사용할 수 있습니다.
 
@@ -99,7 +99,7 @@ FILE *_wfopen(
 
 |ccs 플래그|BOM이 없거나 새 파일|BOM: UTF-8|BOM: UTF-16|
 |----------------|----------------------------|-----------------|------------------|
-|**유니코드**|**UTF-16LE**|**U T F-8**|**UTF-16LE**|
+|**UNICODE**|**UTF-16LE**|**U T F-8**|**UTF-16LE**|
 |**U T F-8**|**U T F-8**|**U T F-8**|**UTF-16LE**|
 |**UTF-16LE**|**UTF-16LE**|**U T F-8**|**UTF-16LE**|
 
@@ -160,25 +160,25 @@ FILE *_wfopen(
 
 에 유효한 문자는 *모드* 에 사용 되는 문자열 **fopen** 하 고 **_fdopen** 에 해당 *oflag* 에사용되는인수[_open](open-wopen.md) 하 고 [_sopen](sopen-wsopen.md)다음과 같이 합니다.
 
-|문자 *모드* 문자열|동등한 *oflag* 열기 (_o) / _sopen 값|
+|문자 *모드* 문자열|동등한 *oflag* 에 대해 값 \_엽니다 /\_sopen|
 |-------------------------------|----------------------------------------------------|
-|**a**|**_O_WRONLY** &#124; **_O_APPEND** (일반적으로 **_O_WRONLY** &#124; **_O_CREAT** &#124;* * _O_APPEND * *)|
-|**+**|**_O_RDWR** &#124; **_O_APPEND** (일반적으로 **_O_RDWR** &#124; **_O_APPEND** &#124; **_O_CREAT** )|
-|**r**|**_O_RDONLY**|
-|**r +**|**_O_RDWR**|
-|**w**|**_O_WRONLY** (일반적으로 **_O_WRONLY** &#124; **_O_CREAT** &#124;* * _O_TRUNC * *)|
-|**w +**|**_O_RDWR** (일반적으로 **_O_RDWR** &#124; **_O_CREAT** &#124; **_O_TRUNC**)|
-|**b**|**_O_BINARY**|
-|**t**|**_O_TEXT**|
+|**a**|**\_O\_WRONLY** &#124;  **\_O\_APPEND** (일반적으로  **\_O\_WRONLY** &#124;  **\_O\_CREAT** &#124;  **\_O\_APPEND**)|
+|**+**|**\_O\_RDWR** &#124;  **\_O\_APPEND** (일반적으로  **\_O\_RDWR** &#124;  **\_ O\_APPEND** &#124;  **\_O\_CREAT** )|
+|**r**|**\_O\_RDONLY**|
+|**r +**|**\_O\_RDWR**|
+|**w**|**\_O\_WRONLY** (일반적으로  **\_O\_WRONLY** &#124;  **\_O\_CREAT** &#124;  **\_O\_TRUNC**)|
+|**w +**|**\_O\_RDWR** (일반적으로  **\_O\_RDWR** &#124;  **\_O\_CREAT** &#124;  **\_ O\_TRUNC**)|
+|**b**|**\_O\_이진**|
+|**t**|**\_O\_TEXT**|
 |**c**|없음|
 |**n**|없음|
-|**S**|**_O_SEQUENTIAL**|
-|**R**|**_O_RANDOM**|
-|**T**|**_O_SHORTLIVED**|
-|**D**|**_O_TEMPORARY**|
-|**ccs 유니코드 =**|**_O_WTEXT**|
-|**ccs = u t F-8**|**_O_UTF8**|
-|**ccs = u t F-16LE**|**_O_UTF16**|
+|**S**|**\_O\_순차**|
+|**R**|**\_O\_임의**|
+|**T**|**\_O\_SHORTLIVED**|
+|**D**|**\_O\_임시**|
+|**ccs 유니코드 =**|**\_O\_WTEXT**|
+|**ccs = u t F-8**|**\_O\_UTF8**|
+|**ccs = u t F-16LE**|**\_O\_UTF16**|
 
 사용 중인 경우 **rb** 모드 필요가 없습니다 코드 이식 및 큰 파일의 대부분을 읽어야 하거나 네트워크 성능에 신경을 쓰지 않는 경우 고려할 수도 있습니다 있는지 여부를 메모리를 사용 하도록 매핑된 Win32 파일 옵션으로 합니다.
 
