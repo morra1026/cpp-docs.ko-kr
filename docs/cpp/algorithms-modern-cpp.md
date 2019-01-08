@@ -1,5 +1,5 @@
 ---
-title: 알고리즘(최신 C++)
+title: 알고리즘(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6f758d3c-a7c7-4a50-92bb-97b2f6d4ab27
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50576516"
 ---
-# <a name="algorithms-modern-c"></a>알고리즘(최신 C++)
+# <a name="algorithms-modern-c"></a>알고리즘( C++)
 
 최신 c + + 프로그래밍에 대 한 것이 좋습니다에 알고리즘을 사용 하 여 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)합니다. 몇 가지 중요 한 예는 다음과 같습니다.
 
@@ -75,6 +75,6 @@ auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
