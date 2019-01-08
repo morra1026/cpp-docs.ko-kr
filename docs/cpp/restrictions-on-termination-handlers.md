@@ -24,4 +24,4 @@ ms.locfileid: "50628230"
 ## <a name="see-also"></a>참고 항목
 
 [종료 처리기 작성](../cpp/writing-a-termination-handler.md)<br/>
-[구조적 예외 처리 (C/C++)](../cpp/structured-exception-handling-c-cpp.md)
+[구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)
