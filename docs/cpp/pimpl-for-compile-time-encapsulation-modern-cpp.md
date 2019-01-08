@@ -1,5 +1,5 @@
 ---
-title: 컴파일 시간 캡슐화에 대한 Pimpl(최신 C++)
+title: 컴파일 시간 캡슐화에 대한 Pimpl(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3e8a90a-b328-4990-82bb-e1b147f76e07
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50594365"
 ---
-# <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>컴파일 시간 캡슐화에 대한 Pimpl(최신 C++)
+# <a name="pimpl-for-compile-time-encapsulation-modern-c"></a>컴파일 시간 캡슐화에 대한 Pimpl(모던 C++)
 
 합니다 *캡슐화 pimpl 관용구* 숨기기 결합을 최소화 하 고 분리 인터페이스를 구현 하는 최신 c + + 기술 됩니다. 캡슐화 Pimpl는 짧은 "포인터" 구현 합니다. 개념에 익숙할 수 있지만 명칭 또는 컴파일러 방화벽 관용구와 같은 다른 이름으로 알고 이미 있습니다.
 
@@ -59,6 +59,6 @@ Throw 되지 않는 스왑 특수화에 대 한 지원을 추가할지 여부를
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
