@@ -1,5 +1,5 @@
 ---
-title: 문자열 및 I-o 서식 (최신 c + +)
+title: 문자열 및 I-O 서식 (모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/09/2018
 ms.locfileid: "51326188"
 ---
-# <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(최신 C++)
+# <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(모던 C++)
 
 C + + [iostreams](../standard-library/iostream.md) 서식 문자열 I/O 수입니다. 예를 들어, 다음 코드를 보여 줍니다 정수 먼저 현재 상태를 저장 하 고 나중에 다시 설정, 이런 방식으로 한 줄에 대 한 뿐 아니라 변경 될 때까지 상태 서식 지정이 cout에 전달 된 후 유지 하기 때문에 16 진수로 출력 서식을 지정 하도록 cout를 설정 하는 방법 코드입니다.
 
@@ -64,7 +64,7 @@ Boost.Format c + +에 빌드되어 있지만 [iostreams](../standard-library/ios
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
 [\<iostream>](../standard-library/iostream.md)<br/>
