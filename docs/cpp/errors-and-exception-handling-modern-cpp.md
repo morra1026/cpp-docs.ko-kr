@@ -1,5 +1,5 @@
 ---
-title: 오류 및 예외 처리(최신 C++)
+title: 오류 및 예외 처리(모던 C++)
 ms.date: 09/17/2018
 ms.topic: conceptual
 ms.assetid: a6c111d0-24f9-4bbb-997d-3db4569761b7
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/10/2018
 ms.locfileid: "51523290"
 ---
-# <a name="errors-and-exception-handling-modern-c"></a>오류 및 예외 처리(최신 C++)
+# <a name="errors-and-exception-handling-modern-c"></a>오류 및 예외 처리( C++)
 
 대부분의 시나리오에서 최신 c + +의 보고 및 논리 오류 및 런타임 오류를 처리 하는 기본 방법은 예외를 사용 합니다. 스택의 오류를 감지 하는 함수 및 처리 하는 방법을 확인 하기 위한 컨텍스트가 있는 함수 간의 몇 가지 함수 호출 포함 될 수 있습니다 하는 경우 특히 그렇습니다. 예외 호출 스택 정보를 전달 하는 오류를 감지 하는 코드에 대 한 정식, 잘 정의 된 방법을 제공 합니다.
 
@@ -101,6 +101,6 @@ SEH에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리 (C
 ## <a name="see-also"></a>참고자료
 
 [방법: 예외 코드와 예외가 아닌 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
