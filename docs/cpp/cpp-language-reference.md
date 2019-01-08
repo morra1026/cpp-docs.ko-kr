@@ -19,7 +19,7 @@ ms.locfileid: "54031267"
 
 이 문서에서는 Microsoft Visual C++에서 사용하는 C++ 프로그래밍 언어를 설명하며 기반으로 [ *The Annotated c + + Reference Manual* ](http://www.stroustrup.com/arm.html) 구성은 Margaret Ellis와 Bjarne Stroustrup 및 ANSI/ISO c + + 국제 표준 (ISO/IEC FDIS 14882). 또한 C++ 언어 기능의 Microsoft 전용 구현 사항이 포함되어 있습니다.
 
-모던 C++ 프로그래밍 방법은 [C++의 진화(최신 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
+모던 C++ 프로그래밍 방법은 [C++의 진화(모던 C++)](welcome-back-to-cpp-modern-cpp.md)를 참조합니다.
 
 키워드나 연산자를 빠르게 찾으려면 다음 표를 참조하십시오.
 
@@ -51,13 +51,13 @@ C++의 연산자입니다.
 표현식, null, 복합, 선택, 반복, 점프 및 선언문입니다.
 
 [선언 및 정의](declarations-and-definitions-cpp.md)<br/>
-기억 영역 클래스 지정자(auto, register, static 등), 함수 정의, 초기화, 열거형 **클래스**, **구조체**, **인라인** 함수, **const** 키워드, 네임 스페이스, **union** 및 **typedef**의 선언 및 정의와 관련된 내용입니다. 
+기억 영역 클래스 지정자(auto, register, static 등), 함수 정의, 초기화, 열거형, 클래스(**class**), 구조체(**struct**), 인라인(**inline**) 함수, **const** 키워드, 네임 스페이스, **union** 및 **typedef**의 선언 및 정의와 관련된 내용입니다. 
 
 [클래스, 구조체 및 공용 구조체](../cpp/classes-and-structs-cpp.md)<br/>
 클래스, 구조체 및 공용 구조체에 대한 소개입니다. 멤버 함수, 특수 멤버 함수, 데이터 멤버, 비트 필드 **this** 포인터, 중첩된 클래스와 관련된 내용입니다.
 
 [파생된 클래스](../cpp/inheritance-cpp.md)<br/>
-단일 및 다중 상속, **가상** 함수, 다중 기본 클래스, **추상** 클래스, 범위 관련 규칙입니다. 또한 **__super**와 **__interface** 키워드도 포함됩니다.
+단일 및 다중 상속, 가상(**virtual**) 함수, 다중 기본 클래스, 추상(**abstract**) 클래스, 범위 관련 규칙입니다. 또한 **__super**와 **__interface** 키워드도 포함됩니다.
 
 [멤버 Access Control](../cpp/member-access-control-cpp.md)<br/>
 클래스 멤버에 대한 액세스 제어: **public**, **private**, 및 **protected** 키워드 관련 내용입니다. Friend 함수 및 클래스도 포함됩니다.
