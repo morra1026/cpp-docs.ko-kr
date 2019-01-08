@@ -1,5 +1,5 @@
 ---
-title: 값 형식(최신 C++)
+title: 값 형식(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f63bb62c-60da-40d5-ac14-4366608fe260
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50628958"
 ---
-# <a name="value-types-modern-c"></a>값 형식(최신 C++)
+# <a name="value-types-modern-c"></a>값 형식(모던 C++)
 
 C + + 클래스는 기본 값 형식으로 됩니다. 이 항목에서는 값 형식 및 용도 관련 된 문제 소개 개요를 제공 합니다.
 
@@ -116,7 +116,7 @@ public:
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 형식 시스템](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ 형식 시스템(모던 C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
