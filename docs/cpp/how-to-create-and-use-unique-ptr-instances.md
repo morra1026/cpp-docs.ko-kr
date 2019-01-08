@@ -53,5 +53,5 @@ A [unique_ptr](../standard-library/unique-ptr-class.md) 해당 포인터를 공�
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터](../cpp/smart-pointers-modern-cpp.md)<br/>
+[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)<br/>
 [make_unique](../standard-library/memory-functions.md#make_unique)
