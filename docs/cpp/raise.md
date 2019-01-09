@@ -1,4 +1,4 @@
----
+﻿---
 title: __raise
 ms.date: 11/04/2016
 f1_keywords:
@@ -26,9 +26,9 @@ __raise method-declarator;
 
 ## <a name="remarks"></a>설명
 
-관리 코드에서 이벤트가 정의된 클래스 내에서만 이벤트를 발생시킬 수 있습니다. 참조 [이벤트](../windows/event-cpp-component-extensions.md) 자세한 내용은 합니다.
+관리 코드에서 이벤트가 정의된 클래스 내에서만 이벤트를 발생시킬 수 있습니다. 자세한 내용은 [이벤트](../windows/event-cpp-component-extensions.md)를 참조하십시오.
 
-키워드 **__raise** 이벤트가 호출 하는 경우 내보낼 오류가 발생 합니다.
+비 이벤트를 호출할 경우 **__raise** 키워드를 사용하면 오류가 발생합니다.
 
 > [!NOTE]
 >  템플릿 기반 클래스 또는 구조체에 event를 포함시킬 수 없습니다.
@@ -59,7 +59,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [키워드](../cpp/keywords-cpp.md)<br/>
 [이벤트 처리](../cpp/event-handling.md)<br/>

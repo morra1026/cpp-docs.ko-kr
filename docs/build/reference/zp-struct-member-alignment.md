@@ -1,6 +1,6 @@
 ---
 title: /Zp(구조체 멤버 맞춤)
-ms.date: 04/30/2018
+ms.date: 12/17/2018
 f1_keywords:
 - /zp
 - VC.Project.VCCLCompilerTool.StructMemberAlignment
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /Zp compiler option [C++]
 - -Zp compiler option [C++]
 ms.assetid: 5242f656-ed9b-48a3-bc73-cfcf3ed2520f
-ms.openlocfilehash: 7b9176d42b2dac0082b6627f5338799660ded1f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1821d8dc5eab202a918893a1e7895151629b551
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518224"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627529"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp(구조체 멤버 맞춤)
 
@@ -47,13 +47,13 @@ ms.locfileid: "50518224"
 
 사용할 수도 있습니다 [팩](../../preprocessor/pack.md) 컨트롤 구조체 압축 합니다. 정렬에 대한 자세한 내용은 다음을 참조하십시오.
 
-- [align](../../cpp/align-cpp.md)
+- [align(C++)](../../cpp/align-cpp.md)
 
 - [__alignof 연산자](../../cpp/alignof-operator.md)
 
 - [__unaligned](../../cpp/unaligned.md)
 
-- [구조체 맞춤 예제](../../build/examples-of-structure-alignment.md) (x64 전용)
+- [구조체 맞춤 예제](../../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -67,7 +67,7 @@ ms.locfileid: "50518224"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [컴파일러 옵션](../../build/reference/compiler-options.md)
 - [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

@@ -26,14 +26,14 @@ ms.locfileid: "50573396"
 
 ## <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [Try-finally 문](../cpp/try-finally-statement.md)
+- [try-finally 문](../cpp/try-finally-statement.md)
 
 - [리소스 정리](../cpp/cleaning-up-resources.md)
 
 - [예외 처리에서의 작업 타이밍](../cpp/timing-of-exception-handling-a-summary.md)
 
-- [종료 처리기에 대 한 제한](../cpp/restrictions-on-termination-handlers.md)
+- [종료 처리기에 대한 제한](../cpp/restrictions-on-termination-handlers.md)
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)

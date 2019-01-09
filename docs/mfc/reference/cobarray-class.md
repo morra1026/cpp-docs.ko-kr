@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
-ms.openlocfilehash: 255928fd767dab36404af561f9dda2c1115fc30f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 031f163a5a4b5663b296dc6615712fe7dd5dbc56
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508266"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657606"
 ---
 # <a name="cobarray-class"></a>CObArray 클래스
 
@@ -93,7 +93,7 @@ class CObArray : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[CObArray::operator]](#operator_at)|지정한 인덱스에 있는 요소를 설정하거나 가져옵니다.|
+|[CObArray::operator \[ \]](#operator_at)|지정한 인덱스에 있는 요소를 설정하거나 가져옵니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -814,7 +814,7 @@ void SetSize(
 ### <a name="parameters"></a>매개 변수
 
 *nNewSize*<br/>
-새 배열 크기 (요소 수)입니다. 0 보다 크거나 이어야 합니다.
+새 배열 크기 (요소 수)입니다. 0보다 크거나 같아야 합니다.
 
 *nGrowBy*<br/>
 크기 증가 필요한 경우 할당할 요소 슬롯의 최소 수입니다.

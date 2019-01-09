@@ -31,7 +31,7 @@ C 런타임 라이브러리에서는 한 번에 열 수 있는 파일의 수가 
 |[_filelength, _filelengthi64](../c-runtime-library/reference/filelength-filelengthi64.md)|파일 길이 가져오기|
 |[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)|설명자에서 파일 상태 정보 가져오기|
 |[_get_osfhandle](../c-runtime-library/reference/get-osfhandle.md)|기존 C 런타임 파일 설명자와 연결된 운영 체제 파일 핸들 반환|
-|[_isatty](../c-runtime-library/reference/isatty.md)|문자 입출력 장치 확인|
+|[_isatty](../c-runtime-library/reference/isatty.md)|문자 입출력 디바이스 확인|
 |[_locking](../c-runtime-library/reference/locking.md)|파일의 잠금 영역|
 |[_open_osfhandle](../c-runtime-library/reference/open-osfhandle.md)|기존 운영 체제 파일 핸들에 C 런타임 파일 설명자 연결|
 |[_setmode](../c-runtime-library/reference/setmode.md)|파일 변환 모드 설정|

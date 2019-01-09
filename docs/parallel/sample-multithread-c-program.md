@@ -11,7 +11,7 @@ ms.locfileid: "50615893"
 ---
 # <a name="sample-multithread-c-program"></a>샘플 다중 스레드 C 프로그램
 
-Bounce.c는 샘플 다중 스레드 프로그램에서는 새입니다 스레드 때마다 문자 `a` 또는 `A` 형식화 됩니다. 각 스레드는 화면 주위에 여러 색상의 움직이는 웃는 얼굴을 바운스합니다. 최대 32 개의 스레드를 만들 수 있습니다. 프로그램의 정상적으로 종료 하면 `q` 또는 `Q` 형식화 됩니다. 컴파일 및 Bounce.c를 연결 하는 방법에 대 한 내용은 [연결 다중 스레드 프로그램 컴파일 및](compiling-and-linking-multithread-programs.md)합니다.
+Bounce.c는 문자 `a` 또는 `A`가 입력될 때마다 새 스레드를 만드는 샘플 다중 스레드 프로그램입니다. 각 스레드는 화면 주위에 여러 색상의 움직이는 웃는 얼굴을 표시합니다. 최대 32개의 스레드를 만들 수 있습니다. `q` 또는 `Q`를 입력하면 프로그램이 정상적으로 종료됩니다. Bounce.c를 컴파일하고 링크하는 데 대한 자세한 내용은 [다중 스레드 프로그램 컴파일 및 링크](compiling-and-linking-multithread-programs.md)를 참조하십시오.
 
 ## <a name="example"></a>예제
 

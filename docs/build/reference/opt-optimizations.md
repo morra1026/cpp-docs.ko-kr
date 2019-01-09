@@ -17,12 +17,12 @@ helpviewer_keywords:
 - optimization, linker
 - /OPT linker option
 ms.assetid: 8f229863-5f53-48a8-9478-243a647093ac
-ms.openlocfilehash: ad89dfa29df6e4ef500e01e53f203fa3c401602b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a6fa8b9c923ff697831c29b8004ce360baf7d77
+ms.sourcegitcommit: ae2f71fe0d64f1a90ef722759fe93c82abc064ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638232"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587891"
 ---
 # <a name="opt-optimizations"></a>/OPT(최적화)
 
@@ -67,7 +67,7 @@ LINK가 빌드하는 동안 수행할 최적화를 제어합니다.
 
 ## <a name="remarks"></a>설명
 
-명령줄을 사용 하면 링커가 기본적으로 **ICF, /opt: ref LBR**합니다. 하는 경우 **/debug** 기본값은 지정 된 **NOICR, /opt: noref NOLBR**합니다.
+명령줄을 사용 하면 링커가 기본적으로 **ICF, /opt: ref LBR**합니다. 하는 경우 **/debug** 기본값은 지정 된 **NOICF, /opt: noref NOLBR**합니다.
 
 합니다 **/opt** 최적화 일반적으로 이미지 크기를 줄이고 프로그램 속도 향상 합니다. 일반 정품 빌드에 기본적으로 설정 된 이유는 이러한 향상 된이 기능, 더 큰 프로그램에서 길 수 있습니다.
 
@@ -105,7 +105,7 @@ LINK가 빌드하는 동안 수행할 최적화를 제어합니다.
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableCOMDATFolding%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OptimizeReferences%2A> 속성을 참조하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 - [링커 옵션 설정](../../build/reference/setting-linker-options.md)
 - [링커 옵션](../../build/reference/linker-options.md)

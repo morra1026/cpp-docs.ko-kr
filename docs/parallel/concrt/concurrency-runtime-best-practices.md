@@ -16,7 +16,7 @@ ms.locfileid: "50491289"
 ---
 # <a name="concurrency-runtime-best-practices"></a>동시성 런타임 유용한 정보
 
-이 섹션에서는 동시성 런타임을 효율적으로 활용하는 데 도움이 되는 모범 사례를 설명합니다. 이러한 모범 사례에 적용 합니다 [병렬 패턴 라이브러리](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL)를 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md), 및 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)합니다.
+이 섹션에서는 동시성 런타임을 효율적으로 활용하는 데 도움이 되는 모범 사례를 설명합니다. 이 모범 사례는 PPL[병렬 패턴 라이브러리](../../parallel/concrt/parallel-patterns-library-ppl.md), [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md) 및 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)에 적용됩니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
@@ -44,5 +44,5 @@ C++용 동시성 프레임워크인 동시성 런타임에 대해 소개합니�
 동시성 런타임이 제공하는 다양한 동기화 기본 형식에 대해 설명합니다.
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
-작업 Scheduler를 사용하여 응용 프로그램의 성능을 조정하는 방법을 설명합니다.
+작업 스케줄러를 사용하여 응용 프로그램의 성능을 조정하는 방법을 설명합니다.
 

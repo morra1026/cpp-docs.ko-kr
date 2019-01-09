@@ -1,4 +1,4 @@
----
+﻿---
 title: false (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,7 +15,7 @@ ms.locfileid: "50464066"
 ---
 # <a name="false-c"></a>false (C++)
 
-키워드를 사용 하면 형식의 변수에 대 한 두 값 중 하나인 [bool](../cpp/bool-cpp.md) 조건식 (조건식은 이제는 **true** 부울 식). 예를 들어 경우 `i` 형식의 변수가 **bool**의 `i = false;` 문 할당 **false** 를 `i`합니다.
+이 키워드는 [bool](../cpp/bool-cpp.md) 형식의 변수나 조건식(조건식은 이제 **true** 부울 식임)에 대한 두 값 중 하나입니다. 예를 들어 `i`가 **bool** 형식의 변수인 경우 `i = false;` 문은 **false**를 `i`에 할당합니다.
 
 ## <a name="example"></a>예제
 
@@ -37,6 +37,6 @@ int main()
 0
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: 예외 처리기에 대한 제한
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -14,9 +14,9 @@ ms.locfileid: "50573994"
 ---
 # <a name="restrictions-on-exception-handlers"></a>예외 처리기에 대한 제한
 
-예외 처리기를 사용 하 여 코드에서의 주요 제한 사항은 사용할 수 없습니다는 **goto** 으로 이동 하는 문을 **__try** 문 블록입니다. 대신, 정상적인 제어 흐름을 통해 문 블록에 들어가야 합니다. 외부로 이동할 수는 **__try** 문을 차단 하 고 선택 하 여 예외 처리기를 중첩 합니다.
+코드에서 예외 처리기를 사용할 때의 주요 제한 사항은 **goto** 문을 사용하여 **__try** 문 블록으로 이동할 수 없다는 점입니다. 대신, 정상적인 제어 흐름을 통해 문 블록에 들어가야 합니다. **__try** 문 블록의 외부로 이동할 수 있으며 선택한 예외 처리기를 중첩할 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 
 
 [예외 처리기 작성](../cpp/writing-an-exception-handler.md)<br/>
 [구조적 예외 처리(C/C++)](../cpp/structured-exception-handling-c-cpp.md)

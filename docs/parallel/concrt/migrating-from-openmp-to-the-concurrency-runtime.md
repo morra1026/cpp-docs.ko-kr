@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-ms.openlocfilehash: 4b70aa57a6485fefe0dbb678e72ba127502c89e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 78fa83c30bc55d82ffa5d2ba1e7d65472643f86b
+ms.sourcegitcommit: ee0103752884425843556a19cf418a504dc3cd02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481928"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737626"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP에서 동시성 런타임으로 마이그레이션
 
@@ -34,7 +34,7 @@ OpenMP는 병렬 처리 수준이 미리 결정되어 있고 시스템에서 사
 |예외 처리 지원 해야 합니다.|PPL 및 병렬 영역 또는 루프 외부에서 예외를 catch 수 있습니다. Openmp에서는 루프를 병렬 영역 내부 예외를 처리 해야 합니다.|
 |취소 메커니즘이 필요합니다.|PPL 개별 태스크 및 작업의 병렬 트리 모두 취소 하는 응용 프로그램을 수 있습니다. OpenMP 자체 취소 메커니즘을 구현 하는 응용 프로그램에 필요 합니다.|
 |병렬 코드를 시작 하는 다른 컨텍스트에서 완료 해야 합니다.|동시성 런타임 컨텍스트에서 작업을 시작 하 고 다음 대기 하거나 다른 컨텍스트에서 해당 작업을 취소할 수 있습니다. Openmp에서는 시작 하는 컨텍스트에서 모든 병렬 작업 완료 해야 합니다.|
-|향상 된 디버깅 지원이 필요 합니다.|Visual Studio에서 제공 합니다 **병렬 스택** 하 고 **병렬 작업** windows 다중 스레드 응용 프로그램 보다 쉽게 디버깅할 수 있도록 합니다.<br /><br /> 동시성 런타임에 대 한 디버깅 지원에 대 한 자세한 내용은 참조 하세요. [작업 창 사용](/visualstudio/debugger/using-the-tasks-window)를 [병렬 스택 창 사용](/visualstudio/debugger/using-the-parallel-stacks-window), 및 [연습: 병렬 디버깅 응용 프로그램](/visualstudio/debugger/walkthrough-debugging-a-parallel-application)합니다.|
+|향상 된 디버깅 지원이 필요 합니다.|Visual Studio에서 제공 합니다 **병렬 스택** 하 고 **병렬 작업** windows 다중 스레드 응용 프로그램 보다 쉽게 디버깅할 수 있도록 합니다.<br /><br /> 동시성 런타임에 대 한 디버깅 지원에 대 한 자세한 내용은 참조 하세요. [작업 창 사용](/visualstudio/debugger/using-the-tasks-window)를 [병렬 스택 창 사용](/visualstudio/debugger/using-the-parallel-stacks-window), 및 [연습: 병렬 응용 프로그램을 디버깅](/visualstudio/debugger/walkthrough-debugging-a-parallel-application)합니다.|
 
 ## <a name="when-not-to-migrate-from-openmp-to-the-concurrency-runtime"></a>OpenMP에서 동시성 런타임으로 마이그레이션하 하지 않는 경우
 
@@ -48,17 +48,17 @@ OpenMP는 병렬 처리 수준이 미리 결정되어 있고 시스템에서 사
 
 ## <a name="related-topics"></a>관련 항목
 
-[방법: 동시성 런타임을 사용하기 위해 OpenMP parallel for 루프 변환](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
+[방법: OpenMP parallel for 루프 동시성 런타임을 사용 하 여 변환](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
 
 OpenMP를 사용 하는 기본 루프가 지정 된 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) 하 고 [에 대 한](../../parallel/openmp/reference/for-openmp.md) 지시문을 동시성 런타임을 사용 하도록 변환 하는 방법을 보여 줍니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘입니다.
 
-[방법: 동시성 런타임을 사용하기 위해 취소를 사용하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
+[방법: 동시성 런타임을 사용 하 여 취소를 사용 하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
 OpenMP 주어진 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 루프를 실행 하려면 모든 반복 하지 않아도 되는 동시성 런타임에서 취소 메커니즘을 사용 하도록 변환 하는 방법에 설명 합니다.
 
-[방법: 동시성 런타임을 사용하기 위해 예외 처리를 사용하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that uses-exception-handling.md)<br/>
+[방법: 동시성 런타임을 사용 하 여 예외 처리를 사용 하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md)<br/>
 지정 OpenMP [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 예외 처리를 수행 하는 루프에는 동시성 런타임에서 예외 처리 메커니즘을 사용 하도록 변환 하는 방법을 보여 줍니다.
 
-[방법: 동시성 런타임을 사용하기 위해 환산 변수를 사용하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
+[방법: 동시성 런타임을 사용 하기 위해 환산 변수를 사용 하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
 OpenMP 지정 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 사용 하는 루프를 [감소](../../parallel/openmp/reference/reduction.md) 절에는 동시성 런타임을 사용 하도록 변환 하는 방법을 보여 줍니다. 합니다.
 
 ## <a name="see-also"></a>참고 항목

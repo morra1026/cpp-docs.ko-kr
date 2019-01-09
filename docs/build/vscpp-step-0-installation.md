@@ -15,7 +15,7 @@ ms.locfileid: "52977747"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio에서 c + + 지원 설치
 
-다운로드 하 고 Visual Studio 2017 및 Visual c + + 도구를 아직 설치 하지 않은 경우 시작 하는 방법을 다음과 같습니다.
+Visual Studio 2017 및 Visual c++ 도구를 아직 설치하지 않은 경우 시작하는 방법은 다음과 같습니다.
 
 ## <a name="prerequisites"></a>전제 조건
 

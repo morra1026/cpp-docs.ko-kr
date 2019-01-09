@@ -1,5 +1,5 @@
 ---
-title: 개체 수명 및 리소스 관리(최신 C++)
+title: 개체 수명 및 리소스 관리(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50609939"
 ---
-# <a name="object-lifetime-and-resource-management-modern-c"></a>개체 수명 및 리소스 관리(최신 C++)
+# <a name="object-lifetime-and-resource-management-modern-c"></a>개체 수명 및 리소스 관리(모던 C++)
 
 관리 되는 언어와 달리 c + +에는 프로그램이 실행 될 때 자동으로 아니요 긴-사용 되는 메모리 리소스를 릴리스 하는 가비지 수집 (GC)이 없습니다. C + +에서는 리소스 관리 개체 수명을 직접 관련 되어 있습니다. 이 문서에서는 c + +에서 개체 수명 및 관리 하는 방법에 영향을 주는 요인을 설명 합니다.
 
@@ -85,6 +85,6 @@ void functionUsingWidget () {
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

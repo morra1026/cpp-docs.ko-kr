@@ -1,4 +1,4 @@
----
+﻿---
 title: 변경할 수 있는 데이터 멤버 (C++)
 ms.date: 11/04/2016
 f1_keywords:
@@ -15,7 +15,7 @@ ms.locfileid: "50514181"
 ---
 # <a name="mutable-data-members-c"></a>변경할 수 있는 데이터 멤버 (C++)
 
-이 키워드는 클래스의 비정적 데이터 멤버 중에서 const가 아닌 멤버에만 적용할 수 있습니다. 데이터 멤버가 선언 된 경우 **변경할 수**에서이 데이터 멤버에 값을 할당할 수는 것을 **const** 멤버 함수입니다.
+이 키워드는 클래스에서 static도 const도 아닌 데이터 멤버에만 적용할 수 있습니다. 데이터 멤버를 **mutable**로 선언하면, **const** 멤버 함수에서 이 데이터 멤버에 대한 값 할당 작업이 허용됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -25,7 +25,7 @@ mutable member-variable-declaration;
 
 ## <a name="remarks"></a>설명
 
-예를 들어, 다음 코드는 컴파일되지 오류 없이 때문 `m_accessCount` 되도록 선언 된 **변경할 수**에서 수정할 수 있습니다 `GetFlag` 도 `GetFlag` 는 const 멤버 함수입니다.
+예를 들어, 다음 코드는 `m_accessCount`가 **mutable**로 선언되었기 때문에 오류 없이 컴파일되고, 따라서 `GetFlag`가 const 멤버 함수라도 `GetFlag`에서 이를 변경할 수 있습니다.
 
 ```cpp
 // mutable.cpp
@@ -47,6 +47,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)

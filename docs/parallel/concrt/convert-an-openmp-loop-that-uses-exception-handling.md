@@ -1,18 +1,18 @@
 ---
-title: '방법: 동시성 런타임을 사용하기 위해 예외 처리를 사용하는 OpenMP 루프 변환'
+title: '방법: 동시성 런타임을 사용 하 여 예외 처리를 사용 하는 OpenMP 루프 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exception handling, converting from OpenMP to the Concurrency Runtime
 - converting from OpenMP to the Concurrency Runtime, exception handling
 ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
-ms.openlocfilehash: f47beb7deffa0511e707768d2a1a84f47e489d5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9fa5ff2bcdfa6680dde6e9316d143089bf586671
+ms.sourcegitcommit: ee0103752884425843556a19cf418a504dc3cd02
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608405"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53740505"
 ---
-# <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용하기 위해 예외 처리를 사용하는 OpenMP 루프 변환
+# <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용 하 여 예외 처리를 사용 하는 OpenMP 루프 변환
 
 이 예제에는 OpenMP를 변환 하는 방법을 보여 줍니다 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 동시성 런타임에서 예외 처리 메커니즘을 사용 하는 예외 처리를 수행 하는 루프입니다.
 
@@ -24,7 +24,7 @@ Openmp에서는 병렬 영역에서 throw 되는 예외를 포착 하 고 동일
 
 이 예제에서는 OpenMP에서 예외를 처리 하는 방법을 보여 줍니다 `parallel` 지역에 대 한 호출 `parallel_for`합니다. 합니다 `do_work` 함수가 성공 하지 못하고 따라서 형식의 예외를 throw 하는 메모리 할당 요청을 수행 [std:: bad_alloc](../../standard-library/bad-alloc-class.md)합니다. OpenMP를 사용 하는 버전에서는 예외를 throw 하는 스레드 해야도 catch 합니다. 즉, OpenMP 병렬 루프 반복 될 때마다 예외를 처리 해야 합니다. 동시성 런타임을 사용 하는 버전을 주 스레드가 다른 스레드에 의해 throw 되는 예외를 catch 합니다.
 
-[!code-cpp[concrt-openmp#3](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that uses-exception-handling_1.cpp)]
+[!code-cpp[concrt-openmp#3](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that-uses-exception-handling_1.cpp)]
 
 이 예제의 결과는 다음과 같습니다.
 
@@ -54,13 +54,13 @@ OpenMP를 사용 하는 버전 예외 발생 후 종료 되는, 필요한 경우
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `concrt-omp-exceptions.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `concrt-omp-exceptions.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc /openmp concrt-omp-exceptions.cpp**
 
 ## <a name="see-also"></a>참고 항목
 
 [OpenMP에서 동시성 런타임으로 마이그레이션](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
-[예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
+[Visual C++에서 예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)
 

@@ -103,7 +103,7 @@ ActiveX 컨트롤(이전의 OLE 컨트롤)에서 비동기 모니커를 사용�
 기본 전환을 나타냅니다.
 
 [CBitmap 클래스](../../mfc/reference/cbitmap-class.md)<br/>
-Windows GDI(그래픽 장치 인터페이스) 비트맵을 캡슐화하고 비트맵을 조작하는 멤버 함수를 제공합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 비트맵을 캡슐화하고 비트맵을 조작하는 멤버 함수를 제공합니다.
 
 [CBitmapButton 클래스](../../mfc/reference/cbitmapbutton-class.md)<br/>
 텍스트가 아닌 비트맵 이미지로 레이블이 표시된 누름 단추 컨트롤을 만듭니다.
@@ -112,7 +112,7 @@ Windows GDI(그래픽 장치 인터페이스) 비트맵을 캡슐화하고 비�
 `ID2D1BitmapRenderTarget`의 래퍼입니다.
 
 [CBrush 클래스](../../mfc/reference/cbrush-class.md)<br/>
-Windows GDI(그래픽 장치 인터페이스) 브러시를 캡슐화합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 브러시를 캡슐화합니다.
 
 [CButton 클래스](../../mfc/reference/cbutton-class.md)<br/>
 Windows 단추 컨트롤의 기능을 제공합니다.
@@ -394,7 +394,7 @@ Windows용 공용 파일 대화 상자를 캡슐화합니다.
 폴더 선택 모드에서 CFileDialog를 구현합니다.
 
 [CFont 클래스](../../mfc/reference/cfont-class.md)<br/>
-Windows GDI(그래픽 장치 인터페이스) 글꼴을 캡슐화하고 글꼴 조작을 위한 멤버 함수를 제공합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 글꼴을 캡슐화하고 글꼴 조작을 위한 멤버 함수를 제공합니다.
 
 [CFontDialog 클래스](../../mfc/reference/cfontdialog-class.md)<br/>
 글꼴 선택 대화 상자를 응용 프로그램에 통합할 수 있습니다.
@@ -418,7 +418,7 @@ Windows GDI(그래픽 장치 인터페이스) 글꼴을 캡슐화하고 글꼴 �
 FTP 서버의 인터넷 파일 검색에 유용합니다.
 
 [CGdiObject 클래스](../../mfc/reference/cgdiobject-class.md)<br/>
-비트맵, 영역, 브러시, 펜, 색상표와 글꼴 등 다양한 Windows GDI(그래픽 장치 인터페이스) 개체에 기본 클래스를 제공합니다.
+비트맵, 영역, 브러시, 펜, 색상표와 글꼴 등 다양한 Windows GDI(그래픽 디바이스 인터페이스) 개체에 기본 클래스를 제공합니다.
 
 [CGopherConnection 클래스](../../mfc/reference/cgopherconnection-class.md)<br/>
 Gopher 인터넷 서버 연결을 관리합니다.
@@ -574,7 +574,7 @@ Windows `HMENU`의 캡슐화입니다.
 분리 메뉴를 관리합니다. 분리 메뉴는 메뉴 모음의 메뉴입니다. 사용자는 메뉴 모음에서 분리 메뉴를 제거하여 이동 가능한 상태로 만들 수 있습니다.
 
 [CMetaFileDC 클래스](../../mfc/reference/cmetafiledc-class.md)<br/>
-원하는 이미지 또는 텍스트를 만들기 위해 재생할 수 있는 GDI(그래픽 장치 인터페이스) 명령 시퀀스가 포함된 Windows 메타파일을 구현합니다.
+원하는 이미지 또는 텍스트를 만들기 위해 재생할 수 있는 GDI(그래픽 디바이스 인터페이스) 명령 시퀀스가 포함된 Windows 메타파일을 구현합니다.
 
 [CMFCAcceleratorKey 클래스](../../mfc/reference/cmfcacceleratorkey-class.md)<br/>
 가상 키 매핑 및 서식을 구현하는 도우미 클래스입니다.
@@ -1048,7 +1048,7 @@ MFC에서 구현한 도킹 모델의 기본 구성 요소입니다. 이 클래�
 포물선 가속 전환을 캡슐화합니다.
 
 [CPen 클래스](../../mfc/reference/cpen-class.md)<br/>
-Windows GDI(그래픽 장치 인터페이스) 펜을 캡슐화합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 펜을 캡슐화합니다.
 
 [CPictureHolder 클래스](../../mfc/reference/cpictureholder-class.md)<br/>
 사용자가 컨트롤에 사진을 표시할 수 있도록 하는 사진 속성을 구현합니다.
@@ -1114,7 +1114,7 @@ Windows에서 요청된 리소스를 찾거나 할당할 수 없을 경우 발�
 역방향 전환을 캡슐화합니다.
 
 [CRgn 클래스](../../mfc/reference/crgn-class.md)<br/>
-Windows GDI(그래픽 장치 인터페이스) 영역을 캡슐화합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 영역을 캡슐화합니다.
 
 [CRichEditCntrItem 클래스](../../mfc/reference/cricheditcntritem-class.md)<br/>
 사용 하 여 [CRichEditView 클래스](../../mfc/reference/cricheditview-class.md) 하 고 [CRichEditDoc 클래스](../../mfc/reference/cricheditdoc-class.md), MFC의 문서 뷰 아키텍처 컨텍스트 내에서 rich edit 컨트롤의 기능을 제공 합니다.

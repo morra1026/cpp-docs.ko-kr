@@ -1,4 +1,4 @@
----
+﻿---
 title: 고급 공급자 기술
 ms.date: 10/29/2018
 helpviewer_keywords:
@@ -13,7 +13,7 @@ ms.locfileid: "51265011"
 ---
 # <a name="advanced-provider-techniques"></a>고급 공급자 기술
 
-고급 공급자 기술에 대 한 자세한 내용은 다음 항목을 참조 하세요.
+고급 공급자 기술에 대한 자세한 내용은 다음 항목을 참조하세요.
 
 - [알림 지원](../../data/oledb/supporting-notifications.md)
 
@@ -28,4 +28,4 @@ ms.locfileid: "51265011"
 ## <a name="see-also"></a>참고 항목
 
 [OLE DB 공급자 템플릿 참조](../../data/oledb/ole-db-provider-templates-reference.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)

@@ -57,7 +57,7 @@ C++/CLI를 사용하여 .NET 코드에서 네이티브 C++ 라이브러리를 �
 
 네이티브 코드에서 SQL Server 데이터베이스에 액세스하려면 ODBC 또는 OLE DB를 사용합니다. 자세한 내용은 [SQL Server 네이티브 클라이언트](/sql/relational-databases/native-client/odbc/sql-server-native-client-odbc)를 참조하세요.
 
-## <a name="windows-device-drivers"></a>Windows 장치 드라이버
+## <a name="windows-device-drivers"></a>Windows 디바이스 드라이버
 
 드라이버는 응용 프로그램 및 기타 운영 체제 구성 요소가 액세스할 수 있는 하드웨어 장치의 데이터를 만드는 하위 수준의 구성 요소입니다. 자세한 내용은 [Windows Driver Kit(WDK)](/windows-hardware/drivers/index)을 참조하세요.
 

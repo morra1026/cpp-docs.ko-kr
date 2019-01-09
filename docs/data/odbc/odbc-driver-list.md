@@ -15,7 +15,7 @@ ms.locfileid: "50663270"
 ---
 # <a name="odbc-driver-list"></a>ODBC 드라이버 목록
 
-Visual c + +는 다음 데이터베이스에 대 한 ODBC 드라이버를 제공합니다.
+Visual C++는 다음과 같은 데이터베이스용 ODBC 드라이버를 제공합니다.
 
 - SQL Server
 
@@ -31,7 +31,7 @@ Visual c + +는 다음 데이터베이스에 대 한 ODBC 드라이버를 제공
 
 - 텍스트 파일
 
-Microsoft ODBC Driver 팩을 비롯 한 다른 회사에서 사용할 수 있는 ODBC 드라이버에 대 한 내용은 Microsoft 기술 지원 서비스에 문의 합니다.
+ODBC Driver Pack을 포함하여 Microsoft 및 다른 회사에서 구할 수 있는 ODBC 드라이버에 대한 자세한 내용은 Microsoft 기술 지원 서비스에 문의하십시오.
 
 ## <a name="see-also"></a>참고 항목
 

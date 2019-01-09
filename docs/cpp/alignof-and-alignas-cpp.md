@@ -2,12 +2,12 @@
 title: alignof 및 alignas(C++)
 ms.date: 11/04/2016
 ms.assetid: 1d18aa8a-9621-4fb5-86e5-4cc86d5187f4
-ms.openlocfilehash: e5d023d7969764bdd36030a508abdd94068e48b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 825df25494497e13d29212f7f951be8247b6f136
+ms.sourcegitcommit: 185b8ee6dd4e10045df730c5b957b9729813da2d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493654"
+ms.lasthandoff: 12/14/2018
+ms.locfileid: "53411925"
 ---
 # <a name="alignof-and-alignas-c"></a>alignof 및 alignas(C++)
 
@@ -15,7 +15,7 @@ ms.locfileid: "50493654"
 
 ## <a name="example"></a>예제
 
-사용할 수 있습니다 **alignas** 구조체 / 공용 구조체, 클래스 또는 개별 멤버입니다. 때 여러 **alignas** 지정자 발생 하는, 컴파일러는 엄격한 것 (가장 큰 값을 사용 하 여 하나)를 선택 합니다.
+사용할 수 있습니다 **alignas** 클래스, 구조체 또는 공용 구조체 또는 개별 멤버입니다. 때 여러 **alignas** 지정자 발생 하는, 컴파일러는 엄격한 것 (가장 큰 값을 사용 하 여 하나)를 선택 합니다.
 
 ```cpp
 // alignas_alignof.cpp
@@ -36,6 +36,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [맞춤](../cpp/alignment-cpp-declarations.md)

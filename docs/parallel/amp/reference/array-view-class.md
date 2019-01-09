@@ -26,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-ms.openlocfilehash: a0d8fa733a5da14e8ee16acf2623df07c9974893
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d33c54e82e9bc228b97bff4802c9231a98f51033
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523379"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657489"
 ---
 # <a name="arrayview-class"></a>array_view 클래스
 
@@ -94,7 +94,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 |이름|설명|
 |----------|-----------------|
 |[operator()](#operator_call)|매개 변수 또는 매개 변수에서 지정 된 요소의 값을 반환 합니다.|
-|[operator[]](#operator_at)|매개 변수로 지정 된 요소를 반환 합니다.|
+|[operator\[\]](#operator_at)|매개 변수로 지정 된 요소를 반환 합니다.|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `array_view` 을 여기에 개체입니다.|
 
 ### <a name="public-constants"></a>공용 상수
@@ -151,7 +151,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 **헤더:** amp.h
 
-**네임스페이스:** 동시성
+**Namespace:** 동시성
 
 ##  <a name="dtor"></a> ~array_view
 

@@ -441,7 +441,7 @@ Windows SDK Insider Preview의 빌드 17025부터 C++/WinRT가 Windows SDK에 �
 
 ## <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 그래픽 진단
 
-Visual Studio 그래픽 진단은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 후 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중이거나 Windows 장치 에뮬레이터 또는 원격 PC나 장치에서 실행 중인 앱에서 그래픽 진단 기능을 사용할 수 있습니다.
+Visual Studio 그래픽 진단은 Direct3D 앱의 렌더링 및 성능 문제를 기록한 후 분석하기 위한 도구 집합입니다. Windows PC에서 로컬로 실행 중이거나 Windows 디바이스 에뮬레이터 또는 원격 PC나 디바이스에서 실행 중인 앱에서 그래픽 진단 기능을 사용할 수 있습니다.
 
 - **꼭짓점 및 기하 도형 셰이더의 입력 및 출력:** 꼭짓점 셰이더 및 기하 도형 셰이더의 입력과 출력을 볼 수 있는 기능은 가장 많이 요청된 기능 중 하나였으며 이제 도구에서 지원됩니다. 파이프라인 단계 보기에서 VS 또는 GS 단계를 선택하면 아래 표의 입력 및 출력 검사가 시작됩니다.
 

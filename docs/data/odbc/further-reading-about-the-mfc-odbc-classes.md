@@ -1,4 +1,4 @@
----
+﻿---
 title: MFC ODBC 클래스에 대한 추가 정보
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -13,7 +13,7 @@ ms.locfileid: "50440341"
 ---
 # <a name="further-reading-about-the-mfc-odbc-classes"></a>MFC ODBC 클래스에 대한 추가 정보
 
-다음 항목에서는 추가 개념 및이 항목에서 소개 하는 기술을 설명 합니다.
+다음 항목에서는 이 항목에서 소개한 개념과 기술을 더 자세하게 설명합니다.
 
 - [MFC 응용 프로그램 마법사, 데이터베이스 지원](../../mfc/reference/database-support-mfc-application-wizard.md)
 
@@ -47,9 +47,9 @@ ms.locfileid: "50440341"
 
 - [트랜잭션(ODBC)](../../data/odbc/transaction-odbc.md)
 
-사용 하는 것에 읽기를 시작 하는 것이 좋습니다 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)합니다.
+먼저 [레코드 집합(ODBC)](../../data/odbc/recordset-odbc.md)을 읽는 것이 좋습니다.
 
-에 *MFC 참조*를 참조 하세요 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)합니다.
+*MFC 참조*에서 [CDatabase](../../mfc/reference/cdatabase-class.md), [CRecordset](../../mfc/reference/crecordset-class.md), [CRecordView](../../mfc/reference/crecordview-class.md), [CFieldExchange](../../mfc/reference/cfieldexchange-class.md), 및 [CDBException](../../mfc/reference/cdbexception-class.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,6 +1,6 @@
 ---
 title: __vectorcall
-ms.date: 10/10/2018
+ms.date: 12/17/2018
 f1_keywords:
 - __vectorcall_cpp
 - __vectorcall
@@ -9,18 +9,18 @@ helpviewer_keywords:
 - __vectorcall keyword
 - __vectorcall
 ms.assetid: 1c95ed59-86c6-4857-b4ed-10519193f851
-ms.openlocfilehash: ab542a7fbae286a7f39b66bb4857cd8e8ff6ab59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55c383c4bdf83ddb5fdf1c4990d5f2e47b4d819a
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507226"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627453"
 ---
 # <a name="vectorcall"></a>__vectorcall
 
 **Microsoft 전용**
 
-합니다 **__vectorcall** 호출 규칙 지정 함수에 대 한 인수를 가능 하면 레지스터로 전달 하도록 합니다. **__vectorcall** 인수에 대 한 자세한 레지스터를 사용 하 여 [__fastcall](../cpp/fastcall.md) 기본값을 가져오거나 [x64 호출 규칙](../build/overview-of-x64-calling-conventions.md) 사용 합니다. 합니다 **__vectorcall** 호출 규칙은 sse2(스트리밍 SIMD 확장 2 ()를 포함 하는 x86 및 x64 프로세서 이상 네이티브 코드에만 지원 됩니다. 사용 하 여 **__vectorcall** 레지스터에 로드 된 여러 부동 소수점을 전달 하는 함수 또는 SIMD 벡터 인수 속도 및 인수를 활용 하는 작업을 수행 합니다. 다음은 x86 및 x64 구현에 공통 되는 기능을 보여 줍니다 **__vectorcall**합니다. 차이점은 이 문서의 뒷부분에 설명되어 있습니다.
+합니다 **__vectorcall** 호출 규칙 지정 함수에 대 한 인수를 가능 하면 레지스터로 전달 하도록 합니다. **__vectorcall** 인수에 대 한 자세한 레지스터를 사용 하 여 [__fastcall](../cpp/fastcall.md) 기본값을 가져오거나 [x64 호출 규칙](../build/x64-calling-convention.md) 사용 합니다. 합니다 **__vectorcall** 호출 규칙은 sse2(스트리밍 SIMD 확장 2 ()를 포함 하는 x86 및 x64 프로세서 이상 네이티브 코드에만 지원 됩니다. 사용 하 여 **__vectorcall** 레지스터에 로드 된 여러 부동 소수점을 전달 하는 함수 또는 SIMD 벡터 인수 속도 및 인수를 활용 하는 작업을 수행 합니다. 다음은 x86 및 x64 구현에 공통 되는 기능을 보여 줍니다 **__vectorcall**합니다. 차이점은 이 문서의 뒷부분에 설명되어 있습니다.
 
 |요소|구현|
 |-------------|--------------------|
@@ -297,7 +297,7 @@ int __cdecl main( void )
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [인수 전달 및 명명 규칙](../cpp/argument-passing-and-naming-conventions.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - /SOURCELINK linker option
 - /SOURCELINK
-ms.openlocfilehash: 5c742a37803f450aa6084c862800583f70bcedde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5a01ca56a49791a608c5c836312c7728e9328c3
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480992"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978285"
 ---
-# <a name="sourcelink-include-sourcelink-file-in-pdb"></a>/ SOURCELINK (Sourcelink 포함 파일 PDB)
+# <a name="sourcelink-include-source-link-file-in-pdb"></a>/ SOURCELINK (PDB에 소스 링크 포함 파일)
 
-링커에 의해 생성 되는 PDB 파일에 포함할 SourceLink 구성 파일을 지정 합니다.
+링커에 의해 생성 되는 PDB 파일에 포함할 원본 연결 구성 파일을 지정 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -28,7 +28,7 @@ JSON 형식의 구성 파일을 지정 로컬 파일 경로를 Url의 간단한 
 
 ## <a name="remarks"></a>설명
 
-SourceLink는 원본 이진 파일에 대 한 디버깅을 제공 하기 위한 언어 및 소스 제어 알 수 없는 시스템. Visual Studio 2017 버전 15.8에서에서 시작 하는 네이티브 c + + 이진 파일에 대 한 SourceLink 지원 됩니다. SourceLink 개요를 참조 하세요 [소스 링크](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md)합니다. 프로젝트의 일부로 SourceLink 파일을 생성 하는 방법과 SourceLink 프로젝트에서 사용 하는 방법에 대 한 내용은 참조 하세요 [를 사용 하 여 SourceLink](https://github.com/dotnet/sourcelink#using-sourcelink)합니다.
+소스 링크는 소스 이진 파일에 대 한 디버깅을 제공 하기 위한 언어 및 소스 제어 알 수 없는 시스템. Visual Studio 2017 버전 15.8에서에서 시작 하는 네이티브 c + + 이진 파일에 대 한 소스 링크가 지원 됩니다. 소스 링크의 개요를 보려면 [소스 링크](https://github.com/dotnet/designs/blob/master/accepted/diagnostics/source-link.md)합니다. 프로젝트에서 소스 링크를 사용 하는 방법 및 프로젝트의 일부로 SourceLink 파일을 생성 하는 방법에 대 한 내용은 참조 하세요 [소스 링크를 사용 하 여](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects)입니다.
 
 ### <a name="to-set-the-sourcelink-linker-option-in-visual-studio"></a>Visual Studio에서 /SOURCELINK 링커 옵션을 설정 하려면
 
@@ -42,7 +42,7 @@ SourceLink는 원본 이진 파일에 대 한 디버깅을 제공 하기 위한 
 
 - 이 옵션에 프로그래밍 방식으로 해당 하는 없습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

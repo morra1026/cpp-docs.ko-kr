@@ -1,6 +1,6 @@
 ---
 title: include_alias
-ms.date: 11/04/2016
+ms.date: 12/16/2018
 f1_keywords:
 - vc-pragma.include_alias
 - include_alias_CPP
@@ -8,28 +8,28 @@ helpviewer_keywords:
 - pragmas, include_alias
 - include_alias pragma
 ms.assetid: 3256d589-12b3-4af0-a586-199e96eabacc
-ms.openlocfilehash: 616672d713a9f0ac6eab4be8bce9b178d2510723
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d32cad2533b6044348651797d0278bcbebcafd6
+ms.sourcegitcommit: ae2f71fe0d64f1a90ef722759fe93c82abc064ab
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573171"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587878"
 ---
 # <a name="includealias"></a>include_alias
 
-*short_filename* 대신 *long_filename*을 사용할 수 있도록 별칭으로 지정합니다. *long_filename*이 반드시 *short_filename*보다 글자수가 많아야 되는건 아닙니다.
+되도록 지정 *alias_filename* 에서 발견 되는 `#include` 지시문, 컴파일러 대체 *actual_filename* 그 자리에 합니다.
 
 ## <a name="syntax"></a>구문
 
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias("*long_filename*", "*short_filename*")
-> #<a name="pragma-includealiaslongfilename-shortfilename"></a>pragma include_alias(<*long_filename*>, <*short_filename*>)
+> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>pragma include_alias ("*alias_filename*","*actual_filename*")
+> #<a name="pragma-includealiasaliasfilename-actualfilename"></a>pragma include_alias (\<*alias_filename*>를 \< *actual_filename*>)
 
 ## <a name="remarks"></a>설명
 
-일반적인 최근 파일시스템은 FAT 파일시스템의 8.3 파일이름 길이 제한보다 더 긴 헤더파일 이름을 가질 수 있습니다. 컴파일러는 두 파일명 중 더 긴 헤더 파일 이름의 처음 8자가 고유하다는 보장이 되지 않기 때문에 더 긴 이름을 8.3으로 자를 수 없습니다. 컴파일러는 `#include`하는 헤더파일 중 *long_filename* 문자열을 만나면 *short_filename*으로 대체하고, *short_filename* 헤더파일을 찾습니다. pragma 선언은 대체하려고 하는 `#include` 지시문 전에 배치되어야 합니다. 다음은 사용예를 보여줍니다.
+합니다 **include_alias** pragma 지시문을 사용 하면 다른 이름이 나 원본 파일에 의해 포함 파일 이름에 대 한 경로 파일을 대체할 수 있습니다. 예를 들어, 일부 파일 시스템 8.3 FAT 파일 시스템 제한 보다 더 긴 헤더 파일을 허용합니다. 더 긴 헤더 파일 이름의 첫 8개 문자가 고유하지 않을 수 있기 때문에 컴파일러는 더 긴 이름을 8.3으로 간단히 자를 수 없습니다. 컴파일러가 합니다 *alias_filename* 대체 문자열 *actual_filename*, 및 헤더 파일을 찾습니다 *actual_filename* 대신 합니다. 이 pragma는 해당 `#include` 지시문 앞에 배치되어야 합니다. 예:
 
 ```cpp
-// 두 파일의 처음 8글자는 고유하지 않습니다.
+// First eight characters of these two files not unique.
 #pragma include_alias( "AppleSystemHeaderQuickdraw.h", "quickdra.h" )
 #pragma include_alias( "AppleSystemHeaderFruit.h", "fruit.h" )
 
@@ -40,7 +40,7 @@ ms.locfileid: "50573171"
 #include "GraphicsMenu.h"
 ```
 
-별칭이 올바르게 검색되어 매칭시키기 위해서는 철자, 큰따옴표나 꺾쇠 괄호 까지 지정된 내용과 정확하게 일치해야 합니다. **include_alias** pragma는 파일 이름에 대하여 간단한 문자열 매칭 여부를 수행합니다. 다른 파일 이름의 유효성 검증은 수행되지 않습니다. 다음 예를 살펴보면,
+검색된 별칭은 철자, 큰따옴표 또는 꺾쇠 괄호 사용에서 지정된 내용과 정확하게 일치해야 합니다. 합니다 **include_alias** pragma는 파일 이름에 대해 일치 하는 간단한 문자열; 없는 다른 파일 이름 유효성 검사를 수행 합니다. 예를 들어 다음과 같은 지시문에서는
 
 ```cpp
 #pragma include_alias("mymath.h", "math.h")
@@ -48,7 +48,7 @@ ms.locfileid: "50573171"
 #include "sys/mymath.h"
 ```
 
-헤더 파일 문자열이 정확하게 일치하지 않기 때문에 별칭 대체가 수행되지 않습니다. 또한 `/Yu`나 `/Yc` 컴파일러 옵션 또는 `hdrstop` pragma에 대한 인수로 사용되는 헤더파일 이름은 대체되지 않습니다. 예를 들어 소스 파일에 다음 지시문이 포함된 경우,
+헤더 파일 문자열이 정확하게 일치하지 않기 때문에 별칭 대체가 수행되지 않습니다. 또한 `/Yu`나 `/Yc` 컴파일러 옵션 또는 `hdrstop` pragma에 대한 인수로 사용되는 헤더 파일 이름은 대체되지 않습니다. 예를 들어 소스 파일에 다음 지시문이 포함된 경우,
 
 ```cpp
 #include <AppleSystemHeaderStop.h>
@@ -58,7 +58,7 @@ ms.locfileid: "50573171"
 
 > /YcAppleSystemHeaderStop.h
 
-**include_alias** pragma를 사용하여 헤더파일 이름을 다른파일 경로로 매핑할 수 있습니다. 예를들면,
+**include_alias** pragma를 사용하여 헤더 파일 이름을 다른 파일 경로로 매핑할 수 있습니다. 예를 들면,
 
 ```cpp
 #pragma include_alias( "api.h", "c:\version1.0\api.h" )
@@ -67,27 +67,27 @@ ms.locfileid: "50573171"
 #include <stdio.h>
 ```
 
-큰따옴표로 묶인 파일 이름과 꺾쇠 괄호로 묶인 파일 이름을 섞어 사용하지 마십시오. 예를 들어, `#pragma include_alias` 지시문 두 개가 있다면 컴파일러는 다음 `#include` 지시문에 별칭 파일이름으로 대체하지 않습니다.:
+큰따옴표로 묶인 파일 이름과 꺾쇠 괄호로 묶인 파일 이름을 섞어 사용하지 마십시오. 예를 들어, `#pragma include_alias` 지시문 두 개가 있다면 컴파일러는 다음 `#include` 지시문에 별칭 파일 이름으로 대체하지 않습니다.
 
 ```cpp
 #include <api.h>
 #include "stdio.h"
 ```
 
-다음 지시문은 에러가 발생합니다.
+다음 지시문에서는 오류가 발생합니다.
 
 ```cpp
-#pragma include_alias(<header.h>, "header.h")  // 에러
+#pragma include_alias(<header.h>, "header.h")  // Error
 ```
 
-에러 메세지에 나오거나 `__FILE__` 매크로가 확장하는 파일이름은 별칭으로 대체가 수행 된 후의 이름입니다. 예를 들어 다음 지시문 뒤 출력을 참조 하세요.
+오류 메시지에 나오거나 `__FILE__` 매크로가 확장하는 파일 이름은 별칭으로 대체가 수행된 후의 이름입니다. 예를 들어 다음 지시문 뒤 출력을 참조하세요.
 
 ```cpp
 #pragma include_alias( "VERYLONGFILENAME.H", "myfile.h" )
 #include "VERYLONGFILENAME.H"
 ```
 
-VERYLONGFILENAME.H에서 다음과 같은 에러가 발생됩니다.
+VERYLONGFILENAME에 오류가 있습니다. H 다음 오류 메시지가 생성 됩니다.
 
 ```Output
 myfile.h(15) : error C2059 : syntax error
@@ -101,7 +101,7 @@ myfile.h(15) : error C2059 : syntax error
 #include "one.h"
 ```
 
-컴파일러는 three.h가 아니라 two.h 파일을 검색합니다.
+컴파일러는 파일 two.h three.h가 아니라 검색합니다.
 
 ## <a name="see-also"></a>참고 항목
 

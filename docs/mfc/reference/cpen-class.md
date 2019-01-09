@@ -27,7 +27,7 @@ ms.locfileid: "53178566"
 ---
 # <a name="cpen-class"></a>CPen 클래스
 
-Windows GDI(그래픽 장치 인터페이스) 펜을 캡슐화합니다.
+Windows GDI(그래픽 디바이스 인터페이스) 펜을 캡슐화합니다.
 
 ## <a name="syntax"></a>구문
 

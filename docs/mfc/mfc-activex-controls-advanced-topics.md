@@ -126,7 +126,7 @@ MFC 데이터베이스 클래스의 일반적인 개요를 참조 하세요 [MFC
 |CTL_E_BADRECORDNUMBER|레코드 개수가 잘못되었습니다.|
 |CTL_E_BADFILENAME|잘못 된 파일 이름|
 |CTL_E_TOOMANYFILES|파일이 너무 많습니다.|
-|CTL_E_DEVICEUNAVAILABLE|장치를 사용할 수 없습니다.|
+|CTL_E_DEVICEUNAVAILABLE|디바이스를 사용할 수 없습니다.|
 |CTL_E_PERMISSIONDENIED|사용 권한이 거부됨|
 |CTL_E_DISKNOTREADY|디스크가 준비되지 않았습니다.|
 |CTL_E_PATHFILEACCESSERROR|경로/파일 액세스 오류입니다.|

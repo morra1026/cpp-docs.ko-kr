@@ -1,6 +1,6 @@
 ---
 title: pack
-ms.date: 09/17/2018
+ms.date: 12/17/2018
 f1_keywords:
 - pack_CPP
 - vc-pragma.pack
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - pragmas, pack
 - pack pragma
 ms.assetid: e4209cbb-5437-4b53-b3fe-ac264501d404
-ms.openlocfilehash: 0067b30c5c2eae9391defeea11c722d455ec8f1a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b959c161a933cc76590cfbd65d295aad36f07d7
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507603"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627516"
 ---
 # <a name="pack"></a>pack
 구조체, 공용 구조체 및 클래스 멤버에 대한 압축 맞춤을 지정합니다.
@@ -53,11 +53,11 @@ ms.locfileid: "50507603"
 
 - [__alignof](../cpp/alignof-operator.md)
 
-- [align](../cpp/align-cpp.md)
+- [align(C++)](../cpp/align-cpp.md)
 
 - [__unaligned](../cpp/unaligned.md)
 
-- [구조체 맞춤 예제](../build/examples-of-structure-alignment.md) (x64 전용)
+- [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
 
    > [!WARNING]
    > Visual Studio 2015 이상에서는 `__alignof` 및 `declspec( align )`와 달리 컴파일러 간에 이식 가능한 표준 alignas 및 alignof 연산자를 사용할 수 있습니다. C + + 표준에서는 압축을 처리 하지을 반드시 사용 해야 하므로 **팩** (또는 다른 컴파일러에서 해당 확장 프로그램)는 대상 아키텍처의 단어 크기 보다 작은 맞춤을 지정 합니다.
