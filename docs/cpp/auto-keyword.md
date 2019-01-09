@@ -24,11 +24,11 @@ auto declarator initializer;
 
 **auto** 키워드 정의는 C 프로그래밍 언어가 아닌 C++ 프로그래밍 언어로 변경됩니다.
 
-다음 항목에서는 **auto** 키워드 및 해당 컴파일러 옵션을 설명합니다:
+다음 항목에서는 **auto** 키워드 및 해당 컴파일러 옵션을 설명합니다.
 
-- [auto (C++)](../cpp/auto-cpp.md)은 **auto** 키워드의 새 정의를 설명합니다.
+- [auto(C++)](../cpp/auto-cpp.md)는 **auto** 키워드의 새 정의를 설명합니다.
 
-- [/Zc: auto (변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)은 사용할 **auto** 키워드의 정의를 컴파일러에 알리는 컴파일러 옵션을 설명합니다.
+- [/Zc: auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)은 사용할 **auto** 키워드의 정의를 컴파일러에 알리는 컴파일러 옵션을 설명합니다.
 
 ## <a name="see-also"></a>참고 항목
 
