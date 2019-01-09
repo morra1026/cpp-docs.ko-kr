@@ -77,4 +77,4 @@ int main()
 
 ## <a name="see-also"></a>참고 항목
 
-[기본 형식 (C++)](../cpp/fundamental-types-cpp.md)
+[기본 형식(C++)](../cpp/fundamental-types-cpp.md)
