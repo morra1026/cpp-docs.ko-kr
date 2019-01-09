@@ -13,7 +13,7 @@ ms.locfileid: "50430032"
 ---
 # <a name="override-specifier"></a>override 지정자
 
-사용할 수는 **재정의** 키워드를 기본 클래스의 가상 함수를 재정의 하는 함수 멤버를 지정 합니다.
+**override** 키워드를 사용하여 기본 클래스에서 가상 함수를 재정의하는 멤버 함수를 지정할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -23,11 +23,11 @@ function-declaration override;
 
 ## <a name="remarks"></a>설명
 
-**재정의** 상황에 맞는 특별 한 경우에만 의미가 이며 멤버 함수 선언 뒤에 사용할 수행 되며이 고, 그렇지 않습니다 예약된 된 키워드입니다.
+**override**는 상황에 따라 달라지며 멤버 함수 선언 뒤에 사용할 경우에만 특별한 의미가 있으며 그렇지 않으면 예약된 키워드가 아닙니다.
 
 ## <a name="example"></a>예제
 
-사용 하 여 **재정의** 코드에서 부주의 한 상속 동작을 방지할 수 있도록 합니다. 다음 예제에서는 사용 하지 않고, 위치를 보여 줍니다. **재정의**, 파생된 클래스의 멤버 함수 동작이 의도 되지 않을 수 있습니다. 컴파일러는 이 코드의 오류를 내보내지 않습니다.
+**override**를 사용하여 코드에서 부주의한 상속 동작이 생기지 않도록 합니다. 다음 예제에서는 **override**를 사용하지 않고 의도하지 않은 파생 클래스의 멤버 함수 동작이 발생하는 경우를 보여 줍니다. 컴파일러는 이 코드의 오류를 내보내지 않습니다.
 
 ```cpp
 class BaseClass
@@ -51,7 +51,7 @@ class DerivedClass: public BaseClass
 };
 ```
 
-사용 하는 경우 **재정의**, 컴파일러는 자동으로 새 멤버 함수를 만드는 대신 오류를 생성 합니다.
+**override**를 사용하면 컴파일러가 자동으로 새 멤버 함수를 만드는 대신 오류를 생성합니다.
 
 ```cpp
 class BaseClass
@@ -78,9 +78,9 @@ class DerivedClass: public BaseClass
 };
 ```
 
-함수를 재정의할 수 없습니다 및 클래스를 상속할 수 없습니다 지정 하려면 사용 합니다 [최종](../cpp/final-specifier.md) 키워드입니다.
+함수를 재정의할 수 없으며 클래스를 상속할 수 없도록 지정하려면 [final](../cpp/final-specifier.md) 키워드를 사용하십시오.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [final 지정자](../cpp/final-specifier.md)<br/>
-[키워드](../cpp/keywords-cpp.md)
+[키워드 (C++)](../cpp/keywords-cpp.md)
