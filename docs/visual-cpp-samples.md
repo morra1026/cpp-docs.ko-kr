@@ -15,7 +15,7 @@ ms.locfileid: "50490391"
 ---
 # <a name="visual-c-samples"></a>Visual C++ 샘플
 
-아래에 나열된 Visual C++ 샘플은 여러 기술의 다양한 기능을 보여 줍니다.
+아래에 나열된 Visual C++ 샘플은 여러 기술을  다양한 기능을 보여 줍니다.
 
 [Visual C++ 샘플](https://github.com/Microsoft/vcsamples)
 
