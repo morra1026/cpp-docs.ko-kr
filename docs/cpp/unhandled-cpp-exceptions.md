@@ -21,7 +21,7 @@ ms.locfileid: "50609875"
 
 ## <a name="example"></a>예제
 
-다음 예제는 char *`char *` 예외를 throw하지만 `char *` 형식의 예외를 catch하도록 지정된 처리기를 포함하지 않습니다. `set_terminate` 호출은 `terminate`가 `term_func`를 호출하도록 명령합니다.
+다음 예제는 `char *` 예외를 throw하지만 `char *` 형식의 예외를 catch하도록 지정된 처리기를 포함하지 않습니다. `set_terminate` 호출은 `terminate`가 `term_func`를 호출하도록 명령합니다.
 
 ```cpp
 // exceptions_Unhandled_Exceptions.cpp
