@@ -1,5 +1,5 @@
 ---
-title: '&lt;string&gt; functions'
+title: '&lt;string&gt; 함수'
 ms.date: 11/04/2016
 f1_keywords:
 - string/std::getline
@@ -35,7 +35,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/10/2018
 ms.locfileid: "51519219"
 ---
-# <a name="ltstringgt-functions"></a>&lt;string&gt; functions
+# <a name="ltstringgt-functions"></a>&lt;string&gt; 함수
 
 ||||
 |-|-|-|

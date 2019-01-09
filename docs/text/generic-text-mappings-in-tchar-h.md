@@ -1,5 +1,5 @@
----
-title: Tchar.h의 제네릭 텍스트 매핑
+﻿---
+title: tchar.h의 제네릭 텍스트 매핑
 ms.date: 11/04/2016
 f1_keywords:
 - tchar.h
@@ -12,28 +12,29 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 01e1bb74-5a01-4093-8720-68b6c1fdda80
-ms.openlocfilehash: 969894502689dd5aeeeaa27404bafc3c483c1336
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59df523cc553881186921a878d131a109ae3cf27
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667586"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978298"
 ---
-# <a name="generic-text-mappings-in-tcharh"></a>Tchar.h의 제네릭 텍스트 매핑
+# <a name="generic-text-mappings-in-tcharh"></a>tchar.h의 제네릭 텍스트 매핑
 
-전송을 단순화 하기 위해 전 세계에서 사용 하는 코드를 Microsoft 런타임 라이브러리는 많은 데이터 형식, 루틴 및 다른 개체에 대 한 Microsoft 특정 일반 텍스트 매핑을 제공 합니다. 싱글바이트 멀티 바이트에 대해 컴파일할 수 있는 일반 코드를 쓸 Tchar.h에 정의 된 이러한 매핑을 사용 하 여 또는 유니코드 문자 집합을 사용 하 여 정의 하는 매니페스트 상수에 따라는 `#define` 문입니다. 제네릭 텍스트 매핑은 ANSI와 호환되지 않는 Microsoft 확장입니다.
+세계적으로 사용되는 문자열 관련 코드 전송을 단순하게 하기 위해 Microsoft 런타임 라이브러리에는 다양한 데이터 형식과 루틴, 기타 개체들에 대한 Microsoft만의 특화된 제네릭 텍스트 매핑용 도구가 있습니다. tchar.h에 정의되어 있는 이러한 매핑 도구는 `#define`된 매니페스트 상수에 따라 싱글, 멀티바이트 및 유니코드 문자 집합에 관계없이 컴파일됩니다. 이러한 제네릭 텍스트 매핑은 ANSI 표준과 호환되지 않는 Microsoft 확장입니다.
 
-Tchar.h를 사용 하 여 단일 바이트, 멀티 바이트 문자 집합 (MBCS) 및 동일한 원인에서 유니코드 응용 프로그램을 빌드할 수 있습니다. Tchar.h 매크로 정의 (접두사를 포함 하는 `_tcs`) 매핑되는 올바른 전처리기 정의 사용 하 여 `str`를 `_mbs`, 또는 `wcs` 함수를 적절 하 게 합니다. MBCS를 빌드하려면 기호를 정의 `_MBCS`합니다. 유니코드를 빌드하려면 기호를 정의 `_UNICODE`합니다. 싱글바이트 응용 프로그램을 빌드하려면 모두 (기본값)을 정의 합니다. 기본적으로 `_MBCS` MFC 응용 프로그램에 대해 정의 됩니다.
+tchar.h를 사용하여 같은 소스 코드를 가지고 싱글, 멀티바이트 문자 집합(MBCS)뿐만 아니라 유니코드 기반 애플리케이션을 빌드할 수 있습니다. `_tcs` 접두어를 가지고 있는 tchar.h에 정의되어 있는 매크로는 전처리기 정의에 따라 적절하게 `str`, `_mbs`나 `wcs` 계열 함수를 호출합니다. MBCS로 빌드하려면 `_MBCS` 상수를, 유니코드로 빌드하려면 `_UNICODE` 상수를 정의합니다. 싱글바이트 응용 프로그램을 빌드하려면 이 두가지를 정의하지 않습니다. MFC 응용 프로그램에서는 `_UNICODE`가 기본적으로 정의됩니다.
 
-`_TCHAR` tchar.h에서 데이터 형식 조건에 따라 정의 됩니다. 경우 기호 `_UNICODE` 하는 빌드에 대해 정의 된 `_TCHAR` 란 **wchar_t**고, 그렇지 않으면로 정의 된 싱글바이트 및 MBCS 빌드에 대 한 **char**합니다. (**wchar_t**, 기본 유니코드 와이드 문자 데이터 형식에는 8 비트 부호 있는 16 비트 누구 **char**.) 국가별 응용 프로그램을 사용 합니다 `_tcs` 작동 하는 함수 패밀리 `_TCHAR` 단위, 바이트가 아닌 합니다. 예를 들어 `_tcsncpy` 복사본 `n` `_TCHARs`아니라 `n` 바이트입니다.
+`_TCHAR` 데이터 형식은 tchar.h에서 조건에 따라 정의가 달라집니다. `_UNICODE`가 정의되어 있다면 `_TCHAR`은 **wchar_t**로 정의되고, 만일 싱글바이트 및 멀티바이트 문자 집합(MBCS) 기반의 빌드라면 **char**로 정의됩니다. (**wchar_t**는 기본 유니코드 와이드 문자 데이터 형식입니다. 이것은 8비트의 부호 있는 **char**이 짝을 이룬 16비트입니다.) 세계적으로 사용되는 애플리케이션 개발을 위해 바이트가 아닌 `_TCHAR` 단위를 사용하는 `_tcs` 함수군을 사용하세요. 예를 들어 `_tcsncpy` 함수가 복사하는 단위는 `n` 바이트가 아닌 `_TCHARs`입니다.
 
-일부 단일 바이트 문자 집합 (SBCS) 문자열 처리 함수는 (signed) 때문 `char*` 매개 변수, 형식 불일치 컴파일러 경고 발생 경우 `_MBCS` 정의 됩니다. 이 경고를 방지 하는 방법은 세 가지가 있습니다.
+일부 단일 바이트 문자 집합(SBCS) 문자열 처리 함수는 매개변수로 signed `char*` 형식을 받기 때문에 `_MBCS`가 정의되어 있다면 컴파일러 경고가 발생합니다. 이 경고를 방지할 수 있는 3가지 방법이 있습니다.
 
-1. Tchar.h에 형식이 안전한 인라인 함수 썽크가 사용 합니다. 이것은 기본적인 동작입니다.
+1. tchar.h에 구현된 형식에 안전한 인라인 타입의 작은 함수(thunk)를 사용합니다. 이는 기본 동작입니다.
 
-1. Tchar.h에 직접 매크로 사용 하 여 정의 하 여 `_MB_MAP_DIRECT` 명령줄에서. 이렇게 하는 경우 형식을 수동으로 일치시켜야 합니다. 가장 빠른 방법 이지만 형식이 안전 하지 않습니다.
+1. 명령줄에서 `_MB_MAP_DIRECT`를 정의하여 tchar.h의 매크로를 직접 사용하십시오. 이렇게 하려면 형식을 수동으로 일치시켜야 합니다. 가장 빠른 방법이지만 형식이 안전하지 않습니다.
+2. 명령줄에서 `_MB_MAP_DIRECT`를 정의하여 tchar.h의 매크로를 직접 사용하십시오. 이렇게 하려면 형식을 수동으로 일치시켜야 합니다. 가장 빠른 방법이지만 형식이 안전하지 않습니다.
 
-1. Tchar.h에 형식이 안전한 정적 링크 라이브러리 함수 썽크를 사용 합니다. 이렇게 하려면 명령줄에서 `_NO_INLINING` 상수를 정의합니다. 이는 속도가 가장 느린 방법이지만 형식은 가장 안전합니다.
+3. tchar.h에 구현된 정적 라이브러리의 형식에 안전한 인라인 타입 작은 함수(thunk)를 사용합니다. 이렇게 하려면 명령줄에서 `_NO_INLINING` 상수를 정의합니다. 이는 속도가 가장 느리지만 형식이 가장 안전 방법입니다.
 
 ### <a name="preprocessor-directives-for-generic-text-mappings"></a>일반 텍스트 매핑용 전처리기 지시문
 
@@ -41,55 +42,55 @@ Tchar.h를 사용 하 여 단일 바이트, 멀티 바이트 문자 집합 (MBCS
 |---------------|----------------------|-------------|
 |`_UNICODE`|유니코드(와이드 문자)|`_tcsrev`는 `_wcsrev`에 매핑됩니다.|
 |`_MBCS`|멀티바이트 문자|`_tcsrev`는 `_mbsrev`에 매핑됩니다.|
-|None (기본값에 둘 다 `_UNICODE` 나 `_MBCS` 정의)|SBCS(ASCII)|`_tcsrev`는 `strrev`에 매핑됩니다.|
+|None (`_UNICODE`나 `_MBCS`가 정의되지 않음. 기본값.)|SBCS(ASCII)|`_tcsrev`는 `strrev`에 매핑됩니다.|
 
-예를 들어 제네릭 텍스트 함수인 `_tcsrev`, Tchar.h에 정의 되어 있는 매핑되 `_mbsrev` 정의한 경우 `_MBCS` 또는 프로그램에 `_wcsrev` 정의한 경우 `_UNICODE`합니다. 그렇지 않으면 `_tcsrev`는 `strrev`로 매핑됩니다. 프로그래밍 편의 위해 다른 데이터 형식 매핑이 Tchar.h에 제공 되지만 `_TCHAR` 가장 유용 합니다.
+예를 들어, tchar.h에 정의된 제네릭 텍스트 함수 `_tcsrev`는 `_MBCS`를 프로그램에서 정의한 경우 `_mbsrev`로 매핑되고, `_UNICODE`를 정의한 경우 `_wcsrev`로 매핑됩니다. 그렇지 않으면 `_tcsrev`가 `strrev`로 매핑됩니다. 프로그래밍 편의를 위해 tchar.h에서 제공하는 다른 데이터 유형 매핑을 사용할 수 있지만 `_TCHAR``이 가장 유용합니다.
 
 ### <a name="generic-text-data-type-mappings"></a>일반 텍스트 데이터 형식 매핑
 
-|일반 텍스트<br /> 데이터 형식 이름|_UNICODE &AMP;<br /> _MBCS 정의 되지 않음|_MBCS<br /> 정의됨|_UNICODE<br /> 정의됨|
+|일반 텍스트<br /> 데이터 형식|_UNICODE &AMP;<br /> _MBCS 정의되지 않음|_MBCS<br /> 정의됨|_UNICODE<br /> 정의됨|
 |--------------------------------------|----------------------------------------|------------------------|---------------------------|
 |`_TCHAR`|**char**|**char**|**wchar_t**|
 |`_TINT`|**int**|**unsigned int**|`wint_t`|
-|`_TSCHAR`|**서명 된 char**|**서명 된 char**|**wchar_t**|
+|`_TSCHAR`|**(signed) char**|**(signed) char**|**wchar_t**|
 |`_TUCHAR`|**unsigned char**|**unsigned char**|**wchar_t**|
 |`_TXCHAR`|**char**|**unsigned char**|**wchar_t**|
-|`_T` 또는 `_TEXT`|효과 없음(전처리기에 의해 제거됨)|효과 없음(전처리기에 의해 제거됨)|`L` (유니코드 문자에는 다음 문자 또는 문자열 변환)|
+|`_T` 또는 `_TEXT`|효과 없음(전처리기에 의해 제거됨)|효과 없음(전처리기에 의해 제거됨)|`L` (유니코드 문자열로 변환)|
 
-루틴, 변수 및 기타 개체의 제네릭 텍스트 매핑의 목록을 참조 하세요 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md) 런타임 라이브러리 참조에서 합니다.
+루틴, 변수 및 기타 개체의 제네릭 텍스트 매핑 목록은 런타임 라이브러리 참조의 [제네릭 텍스트 매핑](../c-runtime-library/generic-text-mappings.md)을 참조합니다.
 
 > [!NOTE]
->  사용 하지 마십시오는 `str` 포함할 수 있는 유니코드 문자열을 사용 하 여 함수 패밀리를 null 바이트를 포함 합니다. 마찬가지로, 사용 하지 마십시오는 `wcs` MBCS (또는 SBCS) 문자열을 사용 하 여 함수의 제품군입니다.
+>  유니코드 문자열에는 null 바이트가 포함되어 있기 때문에 `str` 계열 함수군을 사용하면 안 됩니다. 마찬가지로 `wcs` 계열 함수군에 MBCS나 SBCS 문자열을 사용하지 않습니다.
 
-다음 코드 조각은 MBCS, 유니코드 및 SBCS 모델에 매핑하는 데 `_TCHAR` 및 `_tcsrev`를 사용하는 방법을 보여 줍니다.
+다음 코드 조각은 `_TCHAR` 및 `_tcsrev`를 MBCS, 유니코드 및 SBCS 모델에 매핑하여 사용하는 방법을 보여줍니다.
 
 ```cpp
 _TCHAR *RetVal, *szString;
 RetVal = _tcsrev(szString);
 ```
 
-경우 `_MBCS` 되었습니다 정의 된 전처리기가이 조각에 매핑됩니다이 코드:
+`_MBCS`가 정의된 경우 전처리기에 의해 매핑됩니다.
 
 ```cpp
 char *RetVal, *szString;
 RetVal = _mbsrev(szString);
 ```
 
-경우 `_UNICODE` 되었습니다 정의 된 전처리기가이 조각에 매핑됩니다이 코드:
+`_UNICODE`가 정의된 경우 또한, 전처리기에 의해 매핑됩니다.
 
 ```cpp
 wchar_t *RetVal, *szString;
 RetVal = _wcsrev(szString);
 ```
 
-모두 `_MBCS` 나 `_UNICODE` 되었습니다 정의 전처리기 매핑되 조각을 싱글바이트 ASCII 코드를 다음과 같이 합니다.
+`_MBCS`나 `_UNICODE`가 정의되어 있지 않은 경우 전처리기는 다음과 같이 싱글바이트 ASCII 코드로 매핑합니다.
 
 ```cpp
 char *RetVal, *szString;
 RetVal = strrev(szString);
 ```
 
-따라서 작성할 수 있습니다. 유지 관리 및 실행 문자 집합의 세 가지 종류 중 하나에 관련 된 루틴을 사용 하 여 단일 소스 코드 파일을 컴파일하십시오.
+따라서 하나의 소스 코드 파일을 작성하고 유지 관리하면 컴파일을 통해 세 가지 문자 집합 중 특정 루틴을 선택적으로 실행할 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

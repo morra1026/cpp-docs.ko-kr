@@ -1,5 +1,5 @@
 ---
-title: '방법: 다양한 문자열 형식 간 변환'
+title: '방법: 다양 한 문자열 형식 간 변환'
 ms.custom: get-started-article
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 8ee8790e960c05827404d932a2305a7de79cbced
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 549fd0409929beaefd24cceaa91370bb1df41aa0
+ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443357"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54031254"
 ---
-# <a name="how-to-convert-between-various-string-types"></a>방법: 다양한 문자열 형식 간 변환
+# <a name="how-to-convert-between-various-string-types"></a>방법: 다양 한 문자열 형식 간 변환
 
 이 항목에서는 다양 한 Visual c + + 문자열 형식을 다른 문자열로 변환 하는 방법에 설명 합니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 경우에 새 형식으로 변환할 때 문자열의 복사본이 만들어집니다. 새 문자열을 변경한 내용을 원래 문자열에서 영향을 주지 것입니다 그 반대로 가능 합니다.
 
@@ -83,7 +83,7 @@ int main()
         cout << printstr << endl;
     }
 
-    // Convert the C style string to a CstringA and display it.
+    // Convert the C style string to a CStringA and display it.
     CStringA cstringa(orig);
     cstringa += " (CStringA)";
     cout << cstringa << endl;
@@ -485,98 +485,94 @@ int main()
     // Set up a multibyte CStringA string.
     CStringA origa("Hello, World!");
     cout << origa << " (CStringA)" << endl;
-```
+    
+    // Set up a wide character CStringW string.
+    CStringW origw("Hello, World!");
+    wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
 
-```cpp
-// Set up a wide character CStringW string.
-CStringW origw("Hello, World!");
-wcout << (LPCTSTR)origw << _T(" (CStringW)") << endl;
+    // Convert to a char* string from CStringA string
+    // and display the result.
+    const size_t newsizea = (origa.GetLength() + 1);
+    char *nstringa = new char[newsizea];
+    strcpy_s(nstringa, newsizea, origa);
+    cout << nstringa << " (char *)" << endl;
 
-// Convert to a char* string from CStringA string
-// and display the result.
-const size_t newsizea = (origa.GetLength() + 1);
-char *nstringa = new char[newsizea];
-strcpy_s(nstringa, newsizea, origa);
-cout << nstringa << " (char *)" << endl;
+    // Convert to a char* string from a wide character
+    // CStringW string. To be safe, we allocate two bytes for each
+    // character in the original string, including the terminating
+    // null.
+    const size_t newsizew = (origw.GetLength() + 1)*2;
+    char *nstringw = new char[newsizew];
+    size_t convertedCharsw = 0;
+    wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
+    cout << nstringw << " (char *)" << endl;
 
-// Convert to a char* string from a wide character
-// CStringW string. To be safe, we allocate two bytes for each
-// character in the original string, including the terminating
-// null.
-const size_t newsizew = (origw.GetLength() + 1)*2;
-char *nstringw = new char[newsizew];
-size_t convertedCharsw = 0;
-wcstombs_s(&convertedCharsw, nstringw, newsizew, origw, _TRUNCATE );
-cout << nstringw << " (char *)" << endl;
+    // Convert to a wchar_t* from CStringA
+    size_t convertedCharsa = 0;
+    wchar_t *wcstring = new wchar_t[newsizea];
+    mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
+    wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-// Convert to a wchar_t* from CStringA
-size_t convertedCharsa = 0;
-wchar_t *wcstring = new wchar_t[newsizea];
-mbstowcs_s(&convertedCharsa, wcstring, newsizea, origa, _TRUNCATE);
-wcout << wcstring << _T(" (wchar_t *)") << endl;
+    // Convert to a wide character wchar_t* string from
+    // a wide character CStringW string.
+    wchar_t *n2stringw = new wchar_t[newsizew];
+    wcscpy_s( n2stringw, newsizew, origw );
+    wcout << n2stringw << _T(" (wchar_t *)") << endl;
 
-// Convert to a wide character wchar_t* string from
-// a wide character CStringW string.
-wchar_t *n2stringw = new wchar_t[newsizew];
-wcscpy_s( n2stringw, newsizew, origw );
-wcout << n2stringw << _T(" (wchar_t *)") << endl;
+    // Convert to a wide character _bstr_t string from
+    // a multibyte CStringA string.
+    _bstr_t bstrt(origa);
+    bstrt += _T(" (_bstr_t)");
+    wcout << bstrt << endl;
 
-// Convert to a wide character _bstr_t string from
-// a multibyte CStringA string.
-_bstr_t bstrt(origa);
-bstrt += _T(" (_bstr_t)");
-wcout << bstrt << endl;
+    // Convert to a wide character_bstr_t string from
+    // a wide character CStringW string.
+    bstr_t bstrtw(origw);
+    bstrtw += " (_bstr_t)";
+    wcout << bstrtw << endl;
 
-// Convert to a wide character_bstr_t string from
-// a wide character CStringW string.
-bstr_t bstrtw(origw);
-bstrtw += " (_bstr_t)";
-wcout << bstrtw << endl;
+    // Convert to a wide character CComBSTR string from
+    // a multibyte character CStringA string.
+    CComBSTR ccombstr(origa);
+    if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
+    {
+        // Convert the wide character string to multibyte
+        // for printing.
+        CW2A printstr(ccombstr);
+        cout << printstr << endl;
+    }
 
-// Convert to a wide character CComBSTR string from
-// a multibyte character CStringA string.
-CComBSTR ccombstr(origa);
-if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
-{
-    // Convert the wide character string to multibyte
-    // for printing.
-    CW2A printstr(ccombstr);
-    cout << printstr << endl;
-}
+    // Convert to a wide character CComBSTR string from
+    // a wide character CStringW string.
+    CComBSTR ccombstrw(origw);
+    // Append the type of string to it, and display the result.
 
-// Convert to a wide character CComBSTR string from
-// a wide character CStringW string.
-CComBSTR ccombstrw(origw);
-// Append the type of string to it, and display the result.
+    if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
+    {
+        CW2A printstrw(ccombstrw);
+        wcout << printstrw << endl;
+    }
 
-if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
-{
-    CW2A printstrw(ccombstrw);
-    wcout << printstrw << endl;
-}
+    // Convert a multibyte character CStringA to a
+    // multibyte version of a basic_string string.
+    string basicstring(origa);
+    basicstring += " (basic_string)";
+    cout << basicstring << endl;
 
-// Convert a multibyte character CStringA to a
-// multibyte version of a basic_string string.
-string basicstring(origa);
-basicstring += " (basic_string)";
-cout << basicstring << endl;
+    // Convert a wide character CStringW to a
+    // wide character version of a basic_string
+    // string.
+    wstring basicstringw(origw);
+    basicstringw += _T(" (basic_string)");
+    wcout << basicstringw << endl;
 
-// Convert a wide character CStringW to a
-// wide character version of a basic_string
-// string.
-wstring basicstringw(origw);
-basicstringw += _T(" (basic_string)");
-wcout << basicstringw << endl;
-
-// Convert a multibyte character CStringA to a
-// System::String.
-String ^systemstring = gcnew String(origa);
-systemstring += " (System::String)";
-Console::WriteLine("{0}", systemstring);
-delete systemstring;
-```
-
-```cpp
+    // Convert a multibyte character CStringA to a
+    // System::String.
+    String ^systemstring = gcnew String(origa);
+    systemstring += " (System::String)";
+    Console::WriteLine("{0}", systemstring);
+    delete systemstring;
+    
     // Convert a wide character CStringW to a
     // System::String.
     String ^systemstringw = gcnew String(origw);
@@ -736,7 +732,7 @@ int main()
     // while we call native functions.
     pin_ptr<const wchar_t> wch = PtrToStringChars(orig);
 
-    // Make a copy of the system string as a multibyte
+    // Make a copy of the System::String as a multibyte
     // char* string. Allocate two bytes in the multibyte
     // output string for every wide character in the input
     // string, including space for a terminating null.
@@ -747,20 +743,20 @@ int main()
     wcstombs_s(&convertedChars, nstring, newsize, wch, _TRUNCATE);
     cout << nstring << " (char *)" << endl;
 
-    // Convert a wide character system string to a
+    // Convert a wide character System::String to a
     // wide character wchar_t* string.
     const size_t newsizew = origsize;
     wchar_t *wcstring = new wchar_t[newsizew];
     wcscpy_s(wcstring, newsizew, wch);
     wcout << wcstring << _T(" (wchar_t *)") << endl;
 
-    // Convert a wide character system string to a
+    // Convert a wide character System::String to a
     // wide character _bstr_t string.
     _bstr_t bstrt(wch);
     bstrt += " (_bstr_t)";
     cout << bstrt << endl;
 
-    // Convert a wide character system string
+    // Convert a wide character System::String
     // to a wide character CComBSTR string.
     CComBSTR ccombstr(wch);
     if (ccombstr.Append(_T(" (CComBSTR)")) == S_OK)
@@ -808,9 +804,9 @@ Hello, World! (basic_string)
 
 [ATL 및 MFC 문자열 변환 매크로](../atl/reference/string-conversion-macros.md)<br/>
 [C 스타일 문자열 관련 CString 작업](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-[방법: 표준 문자열을 System::String으로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
-[방법: System::String을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
-[방법: system:: string을 wchar_t * 또는 char 변환할\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
+[방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
+[방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
+[방법: System:: string을 wchar_t * 또는 char 변환합니다\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
 [CComBSTR을 사용한 프로그래밍](../atl/programming-with-ccombstr-atl.md)<br/>
 [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
 [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>

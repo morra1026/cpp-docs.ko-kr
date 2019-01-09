@@ -36,7 +36,7 @@ expression % expression
 
 곱하기 연산자는 다음과 같습니다.
 
-- 곱하기 (<strong>\**</strong>)
+- 곱하기 (<strong>\*</strong>)
 
 - 나누기 (**/**)
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: 국제화 전략
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - character sets [C++], international programming strategies
 - localization [C++], character sets
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-ms.openlocfilehash: 615ad42d5a1e4cb6076877e1d1b5de4bd11fdf83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
-ms.translationtype: HT
+ms.openlocfilehash: 91f4805152944202b7d3f7f45fce494f7e9d81af
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501324"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626684"
 ---
 # <a name="internationalization-strategies"></a>국제화 전략
 
@@ -28,9 +28,9 @@ ms.locfileid: "50501324"
 
 - 응용 프로그램이 MBCS를 사용하면 모든 Win32 플랫폼에서 실행 가능합니다.
 
-   MBCS을 사용하면 문자열에는 싱글 바이트 문자, 더블 바이트 문자 또는 두 문자 집합을 모두 포함할 수 있습니다. C 런타임 라이브러리는 MBCS 프로그래밍을 위한 전용 함수, 매크로 및 데이터 형식을 제공합니다. MFC는 완벽하게 MBCS도 지원합니다.
+   MBCS을 사용하면 문자열에는 싱글 바이트 문자, 더블 바이트 문자 또는 두 문자 집합을 모두 포함할 수 있습니다 C 런타임 라이브러리는 MBCS 프로그래밍을 위한 전용 함수, 매크로 및 데이터 형식을 제공합니다. MFC는 완벽하게 MBCS도 지원합니다.
 
-- 만일 다양한 환경으로의 이식성에 대비해 응용 프로그램의 소스 코드를 작성해야 한다면 `_UNICODE` 또는 `_MBCS` 기호를 이용해 코드를 작성하여 개발할 수 있습니다. 자세한 내용은 [tchar.h를 이용한 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)을 참조합니다.
+- 만일 다양한 환경으로의 이식성에 대비해 응용 프로그램의 소스 코드를 작성해야 한다면 `_UNICODE` 또는 `_MBCS` 기호를 이용해 코드를 작성하여 개발할 수 있습니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
 
    완전한 이식이 가능한 C 런타임 함수, 매크로 및 데이터 형식을 사용할 수 있습니다. MFC를 사용하면 이러한 전략을 유연하게 적용할 수 있습니다.
 

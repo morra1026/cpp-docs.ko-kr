@@ -40,7 +40,7 @@ C 런타임 라이브러리는 로캘 및 멀티 바이트, 이 두 가지 유�
 
 마찬가지로 멀티바이트 코드 페이지가 변경되면 멀티바이트 함수의 동작이 선택한 코드 페이지에 의해 지정되고 변경됩니다. 기본적으로 모든 멀티바이트 함수는 운영체제의 기본 코드 페이지에 해당하는 멀티바이트 코드 페이지를 사용하여 실행을 시작합니다. `_setmbcp` 함수를 사용하여 내부 멀티바이트 코드 페이지를 변경할 수 있습니다.
 
-C 런타임 함수 `setlocale`은 현재 프로그램에서 로캘 정보 일부 또는 전체에 대해 설정, 변경 또는 질의합니다. [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 루틴은 `setlocale`의 와이드 문자 버전입니다. `_wsetlocale`는 인수와 반환값 모두 와이드 문자 문자열을 다룹니다.
+C 런타임 함수 `setlocale`은 현재 프로그램에서 로캘 정보 일부 또는 전체에 대해 설정, 변경 또는 질의합니다. [_wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) 루틴은 `setlocale`의 와이드 문자 버전입니다. `_wsetlocale` 는 인수와 반환값 모두 와이드 문자 문자열을 다룹니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: 버퍼 오버플로
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -47,7 +47,7 @@ while( (cb + _mbclen( sz )) <= sizeof( rgch ) )
 }
 ```
 
-이 코드는 `_mbclen`을 사용하여 `sz`가 가리키는 현재 문자의 크기를 점검하여 루프에서의 버퍼 오버플로우를 방지합니다. `_mbsnbcpy` 함수를 사용하면 **while** 루프 코드를 다음과 같이 한 줄로 바꿀 수 있습니다.
+이 코드는 `_mbclen`을 사용하여 `sz`가 가리키는 현재 문자의 크기를 점검하여 루프에서의 버퍼 오버플로우를 방지합니다. `_mbsnbcpy` 함수를 사용하면 **while** 루프 코드를 다음과 같이 한 줄로 바꿀 수 있습니다. 예를 들어:
 
 ```cpp
 _mbsnbcpy( rgch, sz, sizeof( rgch ) );

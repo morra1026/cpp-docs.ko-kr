@@ -33,12 +33,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-ms.openlocfilehash: 367a5ed6bf9d42730a309570c93afd1b315bae25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8036b0942600e5d47254583e2675c525010a5c1
+ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501753"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657567"
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector 클래스
 
@@ -121,7 +121,7 @@ private details::_Concurrent_vector_base_v4;
 
 |이름|설명|
 |----------|-----------------|
-|[operator[]](#operator_at)|오버로드됨. 동시 벡터의 지정된 된 인덱스에 있는 요소에 대 한 액세스를 제공합니다. 이 메서드는 동시성이 읽기 작업에 대 한 및 보장 하는 값으로 벡터를 증가 하는 동안 `_Index` 동시 벡터 크기 보다 작습니다.|
+|[operator\[\]](#operator_at)|오버로드됨. 동시 벡터의 지정된 된 인덱스에 있는 요소에 대 한 액세스를 제공합니다. 이 메서드는 동시성이 읽기 작업에 대 한 및 보장 하는 값으로 벡터를 증가 하는 동안 `_Index` 동시 벡터 크기 보다 작습니다.|
 |[operator=](#operator_eq)|오버로드됨. 다른 내용을 할당 `concurrent_vector` 여기에 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.|
 
 ## <a name="remarks"></a>설명

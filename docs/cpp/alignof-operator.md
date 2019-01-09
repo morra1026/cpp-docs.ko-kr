@@ -1,6 +1,6 @@
 ---
 title: __alignof 연산자
-ms.date: 10/09/2018
+ms.date: 12/17/2018
 f1_keywords:
 - alignas_cpp
 - __alignof_cpp
@@ -14,12 +14,12 @@ helpviewer_keywords:
 - alignof [C++]
 - types [C++], alignment requirements
 ms.assetid: acb1eed7-6398-40bd-b0c5-684ceb64afbc
-ms.openlocfilehash: 391535d7d80b075149c797cbd00fa34d46ed677d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96c85db83c133af6f1712baa8597ed3360277854
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50479497"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627461"
 ---
 # <a name="alignof-operator"></a>__alignof 연산자
 
@@ -37,7 +37,7 @@ C + + 11 소개 합니다 **alignof** 바이트 단위로 지정 된 형식의 �
 
 ## <a name="remarks"></a>설명
 
-예를 들어:
+예를 들면 다음과 같습니다.
 
 |식|값|
 |----------------|-----------|
@@ -80,21 +80,21 @@ S* p = (S*)aligned_malloc(n * sizeof(S), __alignof(S));
 
 - [pack](../preprocessor/pack.md)
 
-- [align](../cpp/align-cpp.md)
+- [align(C++)](../cpp/align-cpp.md)
 
 - [__unaligned](../cpp/unaligned.md)
 
 - [/Zp(구조체 멤버 맞춤)](../build/reference/zp-struct-member-alignment.md)
 
-- [구조체 맞춤 예제](../build/examples-of-structure-alignment.md) (x64 전용)
+- [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
 
 X86 및 x64 관련 코드에서 맞춤의 차이점에 대한 자세한 내용은 다음을 참조하세요.
 
-- [x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)
+- [x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [단항 연산자가 있는 식](../cpp/expressions-with-unary-operators.md)<br/>
 [키워드](../cpp/keywords-cpp.md)

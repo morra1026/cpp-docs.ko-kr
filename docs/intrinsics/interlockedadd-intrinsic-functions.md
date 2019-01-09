@@ -1,6 +1,6 @@
 ---
 title: _InterlockedAdd Intrinsic Functions
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - _InterlockedAdd64_acq_cpp
 - _InterlockedAdd64_acq
@@ -26,18 +26,18 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: 0952a7727a433a718eac2f1873249327647599dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 473d113ff9af3b009075dfef657082034b1bbcb6
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461596"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626908"
 ---
 # <a name="interlockedadd-intrinsic-functions"></a>_InterlockedAdd Intrinsic Functions
 
 **Microsoft 전용**
 
-여러 스레드가 공유 변수에 액세스할 수 있을 때 작업이 정상적으로 완료되도록 원자성 추가를 수행합니다.
+이러한 함수는 하는 경우 둘 이상의 스레드가 공유 변수에 대 한 액세스 작업을 성공적으로 완료 되도록 원자성 추가 수행 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -105,13 +105,13 @@ __int64 _InterlockedAdd64_rel(
 
 ## <a name="remarks"></a>설명
 
-`_acq` 또는 `_rel` 접미사가 포함된 이러한 함수 버전은 획득 또는 해제 의미 체계 후에 연관 추가를 수행합니다. 획득 의미 체계란 후속 메모리 읽기 및 쓰기 이전에 작업 결과가 모든 스레드와 프로세서에 표시됨을 의미합니다. 취득은 임계 영역을 입력할 때 유용합니다. 해제 의미 체계란 작업 결과 자체가 표시되기 전에 모든 메모리 읽기 및 쓰기가 모든 스레드와 프로세서에 표시되도록 강제 지정됨을 의미합니다. 해제는 임계 영역을 벗어날 때 유용합니다. `_nf`("no fence"의 약어) 접미사가 포함된 내장 함수는 메모리 장벽으로 작동하지 않습니다.
+`_acq` 또는 `_rel` 접미사가 포함된 이러한 함수 버전은 획득 또는 해제 의미 체계 후에 연관 추가를 수행합니다. *의미 체계를 획득* 이상 메모리 읽기 및 쓰기 전에 연산의 결과 모든 스레드와 프로세서에 표시 됩니다 것을 의미 합니다. 취득은 임계 영역을 입력할 때 유용합니다. *의미 체계를 릴리스* 표시 되도록 모든 스레드와 프로세서에 자체 작업의 결과 표시 되기 전에 모든 메모리 읽기 및 쓰기 즉 강제 합니다. 해제는 임계 영역을 벗어날 때 유용합니다. 포함 된 내장 함수는 `_nf` ("no fence") 접미사는 메모리 장벽으로 작동 하지 않습니다.
 
 이러한 루틴은 내장 함수로만 사용할 수 있습니다.
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // interlockedadd.cpp
 // Compile with: /Oi /EHsc
 // processor: ARM
@@ -132,13 +132,13 @@ int main()
 
 ## <a name="output"></a>출력
 
-```
+```Output
 0xffffff00 0xff0000 0xffffff00
 ```
 
 ## <a name="example"></a>예제
 
-```
+```cpp
 // interlockedadd64.cpp
 // compile with: /Oi /EHsc
 // processor: ARM
@@ -162,7 +162,7 @@ int main()
 
 ## <a name="output"></a>출력
 
-```
+```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff
 ```
@@ -172,4 +172,4 @@ Return value: ffff00ffffffff
 ## <a name="see-also"></a>참고 항목
 
 [컴파일러 내장 함수](../intrinsics/compiler-intrinsics.md)<br/>
-[x86 컴파일러와 충돌](../build/conflicts-with-the-x86-compiler.md)
+[x86 컴파일러와 충돌](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

@@ -12,5 +12,6 @@
 ## [C/C++ 속성(Linux)](prop-pages/c-cpp-linux.md)
 ## [링커 속성(Linux)](prop-pages/linker-linux.md)
 ## [빌드 이벤트 속성(Linux)](prop-pages/build-events-linux.md)
-## [사용자 지정 빌드 단계 속성(Linux)](prop-pages/custom-build-step-linux.md) 
+## [사용자 지정 빌드 단계 속성(Linux)](prop-pages/custom-build-step-linux.md)
 ## [메이크파일 프로젝트 속성(Linux)](prop-pages/makefile-linux.md)
+## [원격 아카이브 속성(Linux)](prop-pages/remote-ar-linux.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MBCS [C++], enabling
 - Unicode [C++], enabling
 ms.assetid: b077f4ca-5865-40ef-a46e-d9e4d686ef21
-ms.openlocfilehash: 4476b0805c8806d344a9290ba190aed7c7697a8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51d85991fdab273d1cdad4e99400d1ad8ed6324c
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514636"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627464"
 ---
 # <a name="international-enabling"></a>국가별 사용
 
@@ -27,7 +27,7 @@ ms.locfileid: "50514636"
 
    - MFC 이식 가능한 환경 중 하나에서 동일한 이식 가능한 런타임 함수를 사용 합니다.
 
-   - 리터럴 문자열 및 문자를 환경 중 하나에서 이식 가능 하도록 사용 하는 `_T` 매크로입니다. 자세한 내용은 [Tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
+   - 리터럴 문자열 및 문자를 환경 중 하나에서 이식 가능 하도록 사용 하는 `_T` 매크로입니다. 자세한 내용은 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)합니다.
 
    - Mbcs 문자열 구문 분석 하는 경우에 주의 해야 합니다. 유니코드에서 이러한 예방 조치 필요 하지 않습니다. 자세한 내용은 [MBCS 프로그래밍 팁](../text/mbcs-programming-tips.md)합니다.
 

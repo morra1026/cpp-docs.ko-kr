@@ -1,4 +1,4 @@
----
+﻿---
 title: 정수 제한
 ms.date: 01/29/2018
 helpviewer_keywords:
@@ -18,7 +18,7 @@ ms.locfileid: "50522969"
 
 **Microsoft 전용**
 
-다음 표에서는 정수 형식에 대한 제한 사항을 보여 줍니다. 이러한 제한은 표준 헤더 파일 <limits.h>에도 정의되어 있습니다.
+다음 표에서는 정수 형식에 대한 제한 사항을 보여 줍니다. 이러한 제한은 표준 헤더 파일 \<limits.h>에도 정의되어 있습니다.
 
 ## <a name="limits-on-integer-constants"></a>정수 상수에 대한 제한
 

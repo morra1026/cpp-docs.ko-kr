@@ -1,18 +1,18 @@
 ---
 title: 맞춤 (C++)
-ms.date: 11/04/2016
+ms.date: 12/17/2018
 f1_keywords:
 - align_cpp
 helpviewer_keywords:
 - align __declspec keyword
 - __declspec keyword [C++], align
 ms.assetid: 9cb63f58-658b-4425-ac47-af8eabfc5878
-ms.openlocfilehash: f5353354a334f6ee597bca3e49dfa2b4f98a0005
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1bfe6e7a4646be8cea622078b4d85f20f458e1c5
+ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440445"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53627334"
 ---
 # <a name="align-c"></a>맞춤 (C++)
 
@@ -78,9 +78,9 @@ __declspec(align(32)) struct Str1{
 
 - [데이터 압축과 함께 작동을 정렬 하는 방법](#vclrfhowalignworkswithdatapacking)
 
-- [구조체 맞춤 예제](../build/examples-of-structure-alignment.md) (x64 전용)
+- [구조체 맞춤 예제](../build/x64-software-conventions.md#examples-of-structure-alignment) (x64 전용)
 
-##  <a name="vclrfalignexamples"></a> align 예제
+## <a name="vclrfalignexamples"></a> align 예제
 
 다음 예제에서는 `__declspec(align(#))`가 데이터 구조체의 크기 및 맞춤에 영향을 주는 방식을 보여 줍니다. 예제에서는 다음과 같은 정의를 가정합니다.
 
@@ -171,7 +171,7 @@ void fn() {
 
 메모리가 힙에 할당된 경우 호출되는 할당 함수에 따라 맞춤이 결정됩니다.  예를 들어, `malloc`를 사용할 경우 피연산자 크기에 따라 결과가 결정됩니다. 하는 경우 *arg* > = 8 이면 반환 되는 메모리는 8 바이트에 맞춰집니다. 하는 경우 *arg* < 8, 반환 되는 메모리의 맞춤은 2의 첫 번째 거듭제곱이 미만 *arg*합니다. 예를 들어 malloc(7)를 사용하는 경우의 맞춤은 4바이트입니다.
 
-##  <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#))를 사용 하 여 새 형식 정의
+## <a name="vclrf_declspecaligntypedef"></a> __Declspec(align(#))를 사용 하 여 새 형식 정의
 
 맞춤 특성을 사용하여 형식을 정의할 수 있습니다.
 
@@ -184,7 +184,7 @@ typedef __declspec(align(32)) struct aType bType;
 
 이제 `aType` 하 고 `bType` 동일한 크기 (8 바이트)는 형식의 변수에 `bType` 32 바이트 맞춤 됩니다.
 
-##  <a name="vclrfthreadlocalstorageallocation"></a> 스레드 로컬 저장소에서 데이터 정렬
+## <a name="vclrfthreadlocalstorageallocation"></a> 스레드 로컬 저장소에서 데이터 정렬
 
 `__declspec(thread)` 특성으로 만들어 이미지의 TLS 섹션에 넣은 정적 TLS(스레드 로컬 저장소)는 보통의 정적 데이터와 똑같은 맞춤으로 작동합니다. 운영 체제에서는 TLS 데이터를 만들기 위해 메모리에 TLS 섹션의 크기를 할당하고 TLS 섹션 맞춤 특성을 고려합니다.
 
@@ -207,7 +207,7 @@ struct CACHE_ALIGN S9 {
 __declspec(thread) struct S9 a;
 ```
 
-##  <a name="vclrfhowalignworkswithdatapacking"></a> 데이터 압축과 함께 작동을 정렬 하는 방법
+## <a name="vclrfhowalignworkswithdatapacking"></a> 데이터 압축과 함께 작동을 정렬 하는 방법
 
 합니다 `/Zp` 컴파일러 옵션 및 `pack` pragma는 구조체 및 공용 구조체 멤버에 대 한 데이터를 압축 하는 중입니다. 이 예제에서는 어떻게 `/Zp` 및 `__declspec(align(#))` 함께 사용:
 
@@ -244,4 +244,4 @@ struct S {
 
 [__declspec](../cpp/declspec.md)<br/>
 [ARM ABI 규칙 개요](../build/overview-of-arm-abi-conventions.md)<br/>
-[x64 호출 규칙 개요](../build/overview-of-x64-calling-conventions.md)
+[x64 소프트웨어 규칙](../build/x64-software-conventions.md)
