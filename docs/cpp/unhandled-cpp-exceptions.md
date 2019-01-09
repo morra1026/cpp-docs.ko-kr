@@ -17,7 +17,7 @@ ms.locfileid: "50609875"
 ---
 # <a name="unhandled-c-exceptions"></a>처리되지 않은 C++ 예외
 
-경우 일치 하는 처리기 (또는 줄임표 **catch** 처리기)는 미리 정의 된 현재 예외를 찾을 수 없습니다 `terminate` 런타임 함수를 호출 합니다. `terminate`는 모든 처리기에서 명시적으로 호출할 수도 있습니다. `terminate`의 기본 작업은 `abort`를 호출하는 것입니다. 응용 프로그램을 종료하기 전에 `terminate`로 프로그램의 몇 가지 다른 함수를 호출하려면 단일 인수로 호출되는 함수 이름을 사용하여 `set_terminate` 함수를 호출합니다. `set_terminate`는 프로그램에서 언제든지 호출할 수 있습니다. 합니다 `terminate` 루틴에 대 한 인수로 주어진 마지막 함수를 항상 호출 `set_terminate`합니다.
+현재 예외에 대해 일치하는 처리기(또는 줄임표 **catch** 처리기)를 찾을 수 없는 경우 미리 정의된 `terminate` 런타임 함수가 호출됩니다. `terminate`는 모든 처리기에서 명시적으로 호출할 수도 있습니다. `terminate`의 기본 작업은 `abort`를 호출하는 것입니다. 응용 프로그램을 종료하기 전에 `terminate`로 프로그램의 몇 가지 다른 함수를 호출하려면 단일 인수로 호출되는 함수 이름을 사용하여 `set_terminate` 함수를 호출합니다. `set_terminate`는 프로그램에서 언제든지 호출할 수 있습니다. `terminate`루틴은 `set_terminate`에 대한 인수로 주어진 마지막 함수를 항상 호출합니다.
 
 ## <a name="example"></a>예제
 
@@ -54,6 +54,6 @@ term_func was called by terminate.
 
 `term_func` 함수는 `exit`를 호출하여 프로그램이나 현재 스레드를 종료합니다. 이 호출이 호출자로 반환되면 `abort`가 호출됩니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [C++ 예외 처리](../cpp/cpp-exception-handling.md)
