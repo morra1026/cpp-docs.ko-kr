@@ -1,5 +1,5 @@
 ---
-title: 스마트 포인터(모던 C++)
+title: 스마트 포인터(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50616907"
 ---
-# <a name="smart-pointers-modern-c"></a>스마트 포인터( C++)
+# <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 
 최신 c + + 프로그래밍에서 표준 라이브러리 포함 *스마트 포인터*, 프로그램이 수 있도록 하는 데 사용 되는 것은 메모리 및 리소스 누수 되며 예외 로부터 안전 합니다.
 
