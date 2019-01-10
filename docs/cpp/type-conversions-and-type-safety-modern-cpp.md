@@ -1,5 +1,5 @@
 ---
-title: 형식 변환 및 형식 안전성(모던 C++)
+title: 형식 변환 및 형식 안전성(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/09/2018
 ms.locfileid: "51332623"
 ---
-# <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(모던 C++)
+# <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(최신 C++)
 
 이 문서에서는 공용 형식 변환 문제를 식별하고 C++ 코드에서 이 문제를 방지하는 방법에 대해 설명합니다.
 
