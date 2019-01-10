@@ -29,11 +29,11 @@ __super::member_function();
 
 액세스할 수 있는 모든 기본 클래스 메서드가 오버로드 확인 단계에서 고려되고 가장 일치하는 함수가 호출되는 함수입니다.
 
-**__super** 멤버 함수의 본문 내 에서만 사용할 수 있습니다.
+**__super**는 멤버 함수의 본문 내에서만 나타날 수 있습니다.
 
-**__super** 을 사용 하 여 사용할 수 없습니다. 선언 합니다. 참조 [선언을 사용 하 여](../cpp/using-declaration.md) 자세한 내용은 합니다.
+**__super**는 using 선언과 함께 사용할 수 없습니다. 자세한 내용은 [선언 사용](../cpp/using-declaration.md)을 참조하십시오.
 
-되면서 [특성](../windows/cpp-attributes-reference.md) 코드를 삽입 하는, 코드는 호출 하려는 메서드를 포함 하는 이름이 해당 모를 수 있습니다 하나 이상의 기본 클래스가 포함 될 수 있습니다.
+코드를 삽입하는 [특성](../windows/cpp-attributes-reference.md)이 도입되면서 이름을 모를 수도 있지만 호출하려는 메서드를 포함하는 하나 이상의 기본 클래스가 코드에 포함될 수도 있습니다.
 
 ## <a name="example"></a>예제
 
@@ -60,6 +60,6 @@ struct D : B1, B2 {
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)
+[C++ 키워드](../cpp/keywords-cpp.md)
