@@ -1,17 +1,17 @@
 ---
-title: '방법: weak_ptr 인스턴스 만들기 및 사용'
+title: '방법: Weak_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 07/12/2018
 ms.topic: conceptual
 ms.assetid: 8dd6909b-b070-4afa-9696-f2fc94579c65
-ms.openlocfilehash: c3f788a23acf30fac84757f8cd4430f128df67af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a0e2880e97a77a0c9975553631a6024072745f0
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478197"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220324"
 ---
-# <a name="how-to-create-and-use-weakptr-instances"></a>방법: weak_ptr 인스턴스 만들기 및 사용
+# <a name="how-to-create-and-use-weakptr-instances"></a>방법: Weak_ptr 인스턴스 만들기 및 사용
 
 개체의 기본 개체에 액세스 하는 방법을 저장 해야 경우에 따라는 `shared_ptr` 참조 횟수를 증가 시킬 없이 합니다. 사이 순환 참조가 있는 경우 이러한 상황이 발생 하는 일반적으로 `shared_ptr` 인스턴스.
 
@@ -86,4 +86,4 @@ Press any key
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(최신 C++)](../cpp/smart-pointers-modern-cpp.md)

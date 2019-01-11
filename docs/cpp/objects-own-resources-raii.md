@@ -3,12 +3,12 @@ title: 리소스를 소유하는 오브젝트(RAII)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f86b484e-5a27-4c3b-a92a-dfaa5dd6d93a
-ms.openlocfilehash: a10d6c2177c391ead6065767994b09fb6236ee3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5705fc1996343141b13e37d1267b2e8c981c1eba
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593612"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220428"
 ---
 # <a name="objects-own-resources-raii"></a>리소스를 소유하는 오브젝트(RAII)
 
@@ -37,8 +37,8 @@ void g() {
   // automatic exception safety, as if "finally { y.file.dispose(); }"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

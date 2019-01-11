@@ -3,12 +3,12 @@ title: C++ 형식 시스템(최신 C++)
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
-ms.openlocfilehash: 476ebabc4bfc19f995119649d6f012d4b39d8369
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ea4d8da9af10df2fb930daaad8374d70b6704d28
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176343"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220675"
 ---
 # <a name="c-type-system-modern-c"></a>C++ 형식 시스템(최신 C++)
 
@@ -20,7 +20,7 @@ ms.locfileid: "52176343"
 
 **개체**: 단순 성과 일관성에 대 한이 문서에서는 용어 *개체* 를 가리키도록 모든 인스턴스는 클래스 또는 구조체의 일반적인 의미에서 사용 하는 경우에 모든 형식이 포함 됩니다 스칼라 변수를 포함 합니다.
 
-**POD 형식이** (일반 이전 데이터): c + +에서 데이터 유형의 비공식적 범주는 스칼라 형식으로 나타냅니다 (기본 유형 섹션 참조) 또는 *POD 클래스*합니다. POD 클래스는 POD가 아닌 정적 데이터 멤버가 없으며 사용자 정의 생성자, 사용자 정의 소멸자 또는 사용자 정의 할당 연산자가 없습니다. 또한 POD 클래스에는 가상의 함수, 기본 클래스 및 비공개 또는 보호된 비정적 데이터 멤버가 없습니다. POD 유형은 주로 외부 데이터 교환(예: POD 유형만 있는 C 언어로 작성된 모듈)에 사용됩니다.
+**POD 형식의** (일반 이전 데이터): C + +에서 데이터 유형의 비공식적 범주는 스칼라 형식으로 나타냅니다 (기본 유형 섹션 참조) 또는 *POD 클래스*합니다. POD 클래스는 POD가 아닌 정적 데이터 멤버가 없으며 사용자 정의 생성자, 사용자 정의 소멸자 또는 사용자 정의 할당 연산자가 없습니다. 또한 POD 클래스에는 가상의 함수, 기본 클래스 및 비공개 또는 보호된 비정적 데이터 멤버가 없습니다. POD 유형은 주로 외부 데이터 교환(예: POD 유형만 있는 C 언어로 작성된 모듈)에 사용됩니다.
 
 ## <a name="specifying-variable-and-function-types"></a>변수 및 함수 형식 지정
 
@@ -170,6 +170,6 @@ C++ 형식 시스템에 대한 자세한 내용은 다음 항목을 참조하십
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

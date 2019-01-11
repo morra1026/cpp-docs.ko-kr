@@ -3,12 +3,12 @@ title: 스마트 포인터(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 909ef870-904c-49b6-b8cd-e9d0b7dc9435
-ms.openlocfilehash: 5f04a4ab23241d63fc1694d419f85d8b694b7fff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c976f9ec72929f2c8ff91fb9f9594d91c7457365
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616907"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220662"
 ---
 # <a name="smart-pointers-modern-c"></a>스마트 포인터(최신 C++)
 
@@ -68,23 +68,23 @@ C++ 스마트 포인터 관용구는 C# 같은 언어에서의 개체 생성과 
 POCO(Plain Old C++ 개체)에 대한 포인터를 캡슐화하는 데 가장 먼저 스마트 포인터를 사용합니다.
 
 - `unique_ptr`<br/>
-   기본 포인터로 한 명의 소유자만 허용합니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적 이며, 크기는 1 포인터 및 빠른 삽입 및 c + + 표준 라이브러리 컬렉션에서 검색에 대 한 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md) 하 고 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)합니다.
+   기본 포인터로 한 명의 소유자만 허용합니다. `shared_ptr`이 필요하다는 점을 확실히 알 경우 POCO의 기본 선택으로 사용합니다. 새 소유자로 이동할 수 있지만 복사하거나 공유할 수 없습니다. 사용하지 않는 `auto_ptr`을 대체합니다. `boost::scoped_ptr`과 비교합니다. `unique_ptr` 작고 효율적 이며, 크기는 1 포인터 및 빠른 삽입 및 c + + 표준 라이브러리 컬렉션에서 검색에 대 한 rvalue 참조를 지원 합니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: Unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md) 하 고 [unique_ptr 클래스](../standard-library/unique-ptr-class.md)합니다.
 
 - `shared_ptr`<br/>
-   참조 횟수가 계산되는 스마트 포인터입니다. 원시 포인터 하나를 여러 소유자에게 할당하려고 할 경우 사용합니다(예: 컨테이너에서 포인터 복사본을 반환할 때 원본을 유지하고 싶을 경우). 원시 포인터는 모든 `shared_ptr` 소유자가 범위를 벗어나거나 소유권을 포기할 때까지 삭제되지 않습니다. 크기는 2개의 포인터입니다. 하나는 개체용이고, 다른 하나는 참조 횟수가 포함된 공유 제어 블록용입니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: shared_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-shared-ptr-instances.md) 하 고 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)합니다.
+   참조 횟수가 계산되는 스마트 포인터입니다. 원시 포인터 하나를 여러 소유자에게 할당하려고 할 경우 사용합니다(예: 컨테이너에서 포인터 복사본을 반환할 때 원본을 유지하고 싶을 경우). 원시 포인터는 모든 `shared_ptr` 소유자가 범위를 벗어나거나 소유권을 포기할 때까지 삭제되지 않습니다. 크기는 2개의 포인터입니다. 하나는 개체용이고, 다른 하나는 참조 횟수가 포함된 공유 제어 블록용입니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: Shared_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-shared-ptr-instances.md) 하 고 [shared_ptr 클래스](../standard-library/shared-ptr-class.md)합니다.
 
 - `weak_ptr`<br/>
-    `shared_ptr`과 함께 사용할 수 있는 특별한 경우의 스마트 포인터입니다. `weak_ptr`은 하나 이상의 `shared_ptr` 인스턴스가 소유하는 개체에 대한 액세스를 제공하지만, 참조 수 계산에 참가하지 않습니다. 개체를 관찰하는 동시에 해당 개체를 활성 상태로 유지하지 않으려는 경우 사용합니다. `shared_ptr` 인스턴스 사이의 순환 참조를 차단하기 위해 필요한 경우도 있습니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: weak_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-weak-ptr-instances.md) 하 고 [weak_ptr 클래스](../standard-library/weak-ptr-class.md)합니다.
+    `shared_ptr`과 함께 사용할 수 있는 특별한 경우의 스마트 포인터입니다. `weak_ptr`은 하나 이상의 `shared_ptr` 인스턴스가 소유하는 개체에 대한 액세스를 제공하지만, 참조 수 계산에 참가하지 않습니다. 개체를 관찰하는 동시에 해당 개체를 활성 상태로 유지하지 않으려는 경우 사용합니다. `shared_ptr` 인스턴스 사이의 순환 참조를 차단하기 위해 필요한 경우도 있습니다. 헤더 파일: `<memory>`. 자세한 내용은 [방법: Weak_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-weak-ptr-instances.md) 하 고 [weak_ptr 클래스](../standard-library/weak-ptr-class.md)합니다.
 
 ### <a name="smart-pointers-for-com-objects-classic-windows-programming"></a>COM 개체의 스마트 포인터(Windows 기본 프로그래밍)
 
 COM 개체를 사용하는 경우 인터페이스 포인터를 적절한 스마트 포인터 형식으로 래핑합니다. ATL(Active Template Library)은 다양한 목적을 위해 여러 스마트 포인터를 정의합니다. .tlb 파일에서 래퍼 클래스를 만들 때 컴파일러가 사용하는 `_com_ptr_t` 스마트 포인터 형식을 사용할 수도 있습니다. ATL 헤더 파일을 포함하지 않으려는 경우에 가장 좋습니다.
 
 [CComPtr 클래스](../atl/reference/ccomptr-class.md)<br/>
-ATL을 사용할 수 없는 이상 이 형식을 사용합니다. `AddRef` 및 `Release` 메서드를 사용하여 참조 수 계산을 수행합니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.
+ATL을 사용할 수 없는 이상 이 형식을 사용합니다. `AddRef` 및 `Release` 메서드를 사용하여 참조 수 계산을 수행합니다. 자세한 내용은 [방법: 만들고 CComPtr 및 CComQIPtr 인스턴스를 사용 하 여](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)입니다.
 
 [CComQIPtr 클래스](../atl/reference/ccomqiptr-class.md)<br/>
-`CComPtr`과 유사하지만 COM 개체에서 `QueryInterface`를 호출하는 간단한 구문을 제공합니다. 자세한 내용은 참조 하세요. [방법: 만들기 및 사용 하 여 CComPtr 및 CComQIPtr 인스턴스](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)합니다.
+`CComPtr`과 유사하지만 COM 개체에서 `QueryInterface`를 호출하는 간단한 구문을 제공합니다. 자세한 내용은 [방법: 만들고 CComPtr 및 CComQIPtr 인스턴스를 사용 하 여](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md)입니다.
 
 [CComHeapPtr 클래스](../atl/reference/ccomheapptr-class.md)<br/>
 `CoTaskMemFree`를 사용하여 메모리를 해제하는 개체에 대한 스마트 포인터
@@ -116,6 +116,6 @@ C를 사용 하 여 할당 된 개체에 대 한 스마트 포인터 [malloc](..
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
