@@ -39,4 +39,4 @@ COM(구성 요소 개체 모델) 개체를 인스턴스화할 때 소멸자에�
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)

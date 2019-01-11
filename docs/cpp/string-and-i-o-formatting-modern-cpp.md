@@ -1,5 +1,5 @@
 ---
-title: 문자열 및 I-o 서식 (최신 c + +)
+title: 문자열 및 I-O 서식(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
@@ -64,7 +64,7 @@ Boost.Format c + +에 빌드되어 있지만 [iostreams](../standard-library/ios
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
 [\<iostream>](../standard-library/iostream.md)<br/>
