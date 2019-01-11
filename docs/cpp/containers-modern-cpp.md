@@ -1,5 +1,5 @@
 ---
-title: 컨테이너(모던 C++)
+title: 컨테이너(최신 C++)
 ms.date: 1/18/2018
 ms.topic: conceptual
 ms.openlocfilehash: b25afe6d75147c37b92bf0805858a24f276195fd
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50564660"
 ---
-# <a name="containers-modern-c"></a>컨테이너(모던 C++)
+# <a name="containers-modern-c"></a>컨테이너(최신 C++)
 
 기본적으로 사용 하 여 [벡터](../standard-library/vector-class.md) c + +에서 기본 순차 컨테이너로 합니다. 이 설정은 `List<T>` .NET 언어에서입니다.
 
