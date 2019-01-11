@@ -178,7 +178,7 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
 
 ## <a name="see-also"></a>참고자료
 
-[C + + 형식 시스템](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ 형식 시스템(모던 C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

@@ -1,4 +1,4 @@
----
+﻿---
 title: auto 키워드
 ms.date: 11/04/2016
 ms.assetid: 744a41c0-2510-4140-a1be-96257e722908
@@ -11,7 +11,7 @@ ms.locfileid: "50607690"
 ---
 # <a name="auto-keyword"></a>auto 키워드
 
-합니다 **자동** 키워드는 선언 지정자. 그러나 C++ 표준에는 이 키워드의 원래 의미와 수정된 의미가 정의되어 있습니다. Visual c + + 2010 이전를 **자동** 키워드에서 변수를 선언 합니다 *자동* 저장소 클래스, 즉 변수는 로컬 수명을 갖고입니다. Visual c + + 2010을 사용 하 여 시작 합니다 **자동** 선언의 초기화 식에서 형식이 추론 되는 변수를 선언 하는 키워드입니다. [/zc: auto&#91;-&#93; ](../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션의 의미를 제어 합니다 **auto** 키워드입니다.
+**auto** 키워드는 선언 지정자입니다. 그러나 C++ 표준에는 이 키워드의 원래 의미와 수정된 의미가 정의되어 있습니다. Visual C++ 2010 전까지 **auto** 키워드에서는 자동 저장소 클래스에 있는 변수, 즉 지역 변수를 선언합니다. Visual C++ 2010부터 **auto** 키워드에서는 선언의 초기화 식에서 형식이 추론되는 변수를 선언합니다. [/Zc: auto&#91;-&#93; ](../build/reference/zc-auto-deduce-variable-type.md) 컴파일러 옵션은 **auto** 키워드의 의미를 제어합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -22,14 +22,14 @@ auto declarator initializer;
 
 ## <a name="remarks"></a>설명
 
-정의 된 **자동** C 프로그래밍 언어 아니라 c + + 프로그래밍 언어의 키워드 변경 합니다.
+**auto** 키워드 정의는 C 프로그래밍 언어가 아닌 C++ 프로그래밍 언어로 변경됩니다.
 
-다음 항목에 설명 합니다 **자동** 키워드 및 해당 컴파일러 옵션:
+다음 항목에서는 **auto** 키워드 및 해당 컴파일러 옵션을 설명합니다.
 
-- [자동](../cpp/auto-cpp.md) 의 새 정의 설명 합니다 **자동** 키워드입니다.
+- [auto(C++)](../cpp/auto-cpp.md)는 **auto** 키워드의 새 정의를 설명합니다.
 
-- [/Zc: auto (변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md) 는 정의 컴파일러에 알리는 컴파일러 옵션을 설명 합니다 **자동** 키워드를 사용 합니다.
+- [/Zc: auto(변수 형식 추론)](../build/reference/zc-auto-deduce-variable-type.md)은 사용할 **auto** 키워드의 정의를 컴파일러에 알리는 컴파일러 옵션을 설명합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)
+[키워드 (C++)](../cpp/keywords-cpp.md)

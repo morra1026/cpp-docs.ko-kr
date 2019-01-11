@@ -3,12 +3,12 @@ title: Visual Studio에서 Linux CMake 프로젝트 구성
 description: Visual Studio에서 Linux CMake 프로젝트를 구성하는 방법
 ms.date: 07/20/2018
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: 32d69e28c0991adc6117b7f9496eeb1022943ef2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28902f0a2938fe653eb4dfbb6e512367b1052b8c
+ms.sourcegitcommit: fe1e21df175cd004d21c6e4659082efceb649a8b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585044"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53978324"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake 프로젝트 구성
 
@@ -18,7 +18,7 @@ Visual Studio에 대한 Linux C++ 워크로드를 설치하면 Linux용 CMake �
 이 항목에서는 Visual Studio의 CMake 지원에 대한 기본 지식이 있다고 가정합니다. 자세한 내용은 [Visual C++용 CMake 도구](../ide/cmake-tools-for-visual-cpp.md)를 참조하세요. CMake 자체에 대한 자세한 내용은 [CMake를 사용하여 소프트웨어 빌드, 테스트 및 패키지](https://cmake.org/)를 참조하세요.
 
 > [!NOTE]
-> Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 다운로드합니다.
+> Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 다운로드합니다. Visual Studio 2019에서 미리 빌드된 바이너리를 자동으로 배포할 수 있습니다([미리 빌드된 CMake 바이너리 다운로드](#download-prebuilt-cmake-binaries) 참조).
 
 ## <a name="open-a-folder"></a>폴더 열기
 
@@ -109,6 +109,9 @@ Linux 대상을 지정하면 Linux 컴퓨터에 소스가 복사됩니다. 그�
 ## <a name="download-prebuilt-cmake-binaries"></a>미리 빌드된 CMake 바이너리 다운로드
 
 Linux distro에 이전 버전의 CMake가 있을 수 있습니다. Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 다운로드합니다.
+
+**Visual Studio 2019**<br/>
+유효한 CMake를 원격 머신에서 찾을 수 없는 경우 정보 표시줄이 표시되고 미리 빌드된 CMake 바이너리를 자동으로 배포하는 옵션이 제공됩니다. 바이너리는 `~/.vs/cmake`에 설치됩니다. 바이너리를 배포하면 프로젝트가 자동으로 다시 생성됩니다. `CMakeSettings.json`의 `cmakeExecutable` 필드에 의해 지정된 CMake가 잘못되고(존재하지 않거나 지원되지 않는 버전인 경우) 미리 빌드된 바이너리가 있는 경우 Visual Studio는 `cmakeExecutable`을 무시하고 미리 빌드된 바이너리를 사용합니다.
 
 ## <a name="see-also"></a>참고 항목
 
