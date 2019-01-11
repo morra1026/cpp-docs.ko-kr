@@ -1,4 +1,4 @@
----
+﻿---
 title: '방법: CComPtr 및 CComQIPtr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/04/2016
