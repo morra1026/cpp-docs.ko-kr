@@ -39,6 +39,6 @@ void g() {
 
 ## <a name="see-also"></a>참고 항목
 
-[C++의 진화](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
