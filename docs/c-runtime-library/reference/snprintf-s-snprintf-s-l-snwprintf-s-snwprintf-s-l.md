@@ -109,10 +109,10 @@ int _snwprintf_s(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-출력을 위한 저장소 위치입니다.
+출력을 위한 스토리지 위치입니다.
 
 *sizeOfBuffer*<br/>
-출력을 위한 저장소 위치의 크기입니다. 크기 **바이트** 에 대 한 **_snprintf_s** 크기 **단어** 에 대 한 **_snwprintf_s**합니다.
+출력을 위한 스토리지 위치의 크기입니다. 크기 **바이트** 에 대 한 **_snprintf_s** 크기 **단어** 에 대 한 **_snwprintf_s**합니다.
 
 *count*<br/>
 저장할 최대 문자 수 또는 [_TRUNCATE](../../c-runtime-library/truncate.md)입니다.

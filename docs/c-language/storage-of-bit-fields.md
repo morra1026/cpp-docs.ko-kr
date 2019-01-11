@@ -1,5 +1,5 @@
 ---
-title: 비트 필드의 저장
+title: 비트 필드의 스토리지
 ms.date: 11/04/2016
 ms.assetid: 4816a241-1580-4d1c-82ed-13d359733959
 ms.openlocfilehash: 7aa6e02c347ff14bb0552320567b343c7215ebc7
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50499089"
 ---
-# <a name="storage-of-bit-fields"></a>비트 필드의 저장
+# <a name="storage-of-bit-fields"></a>비트 필드의 스토리지
 
 **ANSI 3.5.2.1** int 내 비트 필드의 할당 순서
 

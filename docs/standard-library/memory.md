@@ -36,12 +36,12 @@ ms.locfileid: "51521937"
 |[allocate_shared](../standard-library/memory-functions.md#allocate_shared)|지정된 할당자를 사용하여 지정된 형식에 대해 할당되고 생성되는 개체에 대한 `shared_ptr`을 만듭니다.|
 |[const_pointer_cast](../standard-library/memory-functions.md#const_pointer_cast)|`shared_ptr`로 const_cast를 수행합니다.|
 |[declare_no_pointers](../standard-library/memory-functions.md#declare_no_pointers)|지정된 주소에서 시작하고 표시된 블록 크기 내에 속하는 문자는 추적 가능한 포인터를 포함하지 않음을 가비지 수집기에 알립니다.|
-|[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|지정된 주소가 할당된 저장소 대한 것이며 접근할 수 있음을 가비지 컬렉션에 알립니다.|
+|[declare_reachable](../standard-library/memory-functions.md#declare_reachable)|지정된 주소가 할당된 스토리지에 대한 것이며 접근할 수 있음을 가비지 컬렉션에 알립니다.|
 |[default_delete](../standard-library/memory-functions.md#default_delete)|`operator new`를 사용하여 할당된 개체를 삭제합니다. `unique_ptr`에 사용하는 데 적합합니다.|
 |[dynamic_pointer_cast](../standard-library/memory-functions.md#dynamic_pointer_cast)|`shared_ptr`로 dynamic_cast를 수행합니다.|
 |[get_deleter](../standard-library/memory-functions.md#get_deleter)|`shared_ptr`에서 Deleter 가져오기|
 |[get_pointer_safety](../standard-library/memory-functions.md#get_pointer_safety)|모든 가비지 수집기에서 간주된 포인터 안전 형식을 반환합니다.|
-|[get_temporary_buffer](../standard-library/memory-functions.md#get_temporary_buffer)|지정된 수의 요소를 초과하지 않는 요소의 시퀀스를 위한 임시 저장소를 할당합니다.|
+|[get_temporary_buffer](../standard-library/memory-functions.md#get_temporary_buffer)|지정된 수의 요소를 초과하지 않는 요소의 시퀀스를 위한 임시 스토리지를 할당합니다.|
 |[make_shared](../standard-library/memory-functions.md#make_shared)|기본 할당자를 사용하여 하나 이상의 인수에서 작성된 할당된 개체를 가리키는 `shared_ptr`를 만들고 반환합니다.|
 |[make_unique](../standard-library/memory-functions.md#make_unique)|0개 이상의 인수에서 생성된 할당된 개체를 가리키는 [unique_ptr](../standard-library/unique-ptr-class.md)을 만들고 반환합니다.|
 |[owner_less](../standard-library/memory-functions.md#owner_less)|공유된 포인터와 약한 포인트에 대한 소유권 기반의 혼합된 비교를 허용합니다.|
@@ -72,7 +72,7 @@ ms.locfileid: "51521937"
 
 |클래스|설명|
 |-|-|
-|[allocator](../standard-library/allocator-class.md)|템플릿 클래스는 **형식** 형식의 개체 배열에 대한 저장소 할당 및 해제를 관리하는 개체를 설명합니다.|
+|[allocator](../standard-library/allocator-class.md)|템플릿 클래스는 **Type** 형식의 개체 배열에 대한 스토리지 할당 및 해제를 관리하는 개체를 설명합니다.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하는 개체에 대해 설명합니다.|
 |[auto_ptr](../standard-library/auto-ptr-class.md)|형식의 할당 된 개체에 대 한 포인터를 저장 하는 개체를 설명 하는 템플릿 클래스 **형식** <strong>\*</strong> 하는 요소는 바깥쪽 auto_ptr 때 삭제 되는 개체를 확인 하는 소멸 됩니다.|
 |[bad_weak_ptr](../standard-library/bad-weak-ptr-class.md)|불량 weak_ptr 예외를 보고합니다.|

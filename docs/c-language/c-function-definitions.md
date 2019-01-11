@@ -81,7 +81,7 @@ ms.locfileid: "50507213"
 *compound-statement*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**{** *declaration-list*<sub>opt</sub> *statement-list*<sub>opt</sub> **}**
 
-함수 선언을 수정할 수 있는 유일한 저장소 클래스 지정자는 **extern** 및 **static**입니다. **extern** 지정자는 다른 파일에서 함수를 참조할 수 있음을 나타냅니다. 즉, 함수 이름이 링커로 내보내집니다. **static** 지정자는 다른 파일에서 함수를 참조할 수 없음을 나타냅니다. 즉, 이름이 링커에 의해 내보내지지 않습니다. 저장소 클래스가 함수 정의에 없을 경우 **extern**으로 간주됩니다. 어떤 경우이든 함수는 정의 지점에서 파일의 끝까지 항상 표시됩니다.
+함수 선언을 수정할 수 있는 유일한 스토리지 클래스 지정자는 **extern** 및 **static**입니다. **extern** 지정자는 다른 파일에서 함수를 참조할 수 있음을 나타냅니다. 즉, 함수 이름이 링커로 내보내집니다. **static** 지정자는 다른 파일에서 함수를 참조할 수 없음을 나타냅니다. 즉, 이름이 링커에 의해 내보내지지 않습니다. 스토리지 클래스가 함수 정의에 없을 경우 **extern**으로 간주됩니다. 어떤 경우이든 함수는 정의 지점에서 파일의 끝까지 항상 표시됩니다.
 
 선택적 *declaration-specifiers* 및 필수 *declarator*는 함께 함수의 반환 형식 및 이름을 지정합니다. *declarator*는 함수를 명명하는 식별자와 함수 이름 뒤에 나오는 괄호의 조합입니다. 선택적 *attribute-seq* 비터미널은 [함수 특성](../c-language/function-attributes.md)에 정의된 Microsoft 고유의 기능입니다.
 

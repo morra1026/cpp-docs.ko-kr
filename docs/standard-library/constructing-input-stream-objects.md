@@ -41,7 +41,7 @@ ms.locfileid: "50543678"
 
 ## <a name="vclrfinputstringstreamconstructorsanchor9"></a>입력 문자열 스트림 생성자
 
-입력 문자열 스트림 생성자를 사용하려면 미리 할당되고 미리 초기화된 저장소의 주소가 필요합니다.
+입력 문자열 스트림 생성자를 사용하려면 미리 할당되고 미리 초기화된 스토리지의 주소가 필요합니다.
 
 ```cpp
 string s("123.45");

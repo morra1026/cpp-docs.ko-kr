@@ -48,7 +48,7 @@ int fgetpos(
 대상 스트림입니다.
 
 *pos*<br/>
-위치 표시기 저장소입니다.
+위치 표시기 스토리지입니다.
 
 ## <a name="return-value"></a>반환 값
 

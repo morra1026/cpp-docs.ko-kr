@@ -117,7 +117,7 @@ ms.locfileid: "51333360"
 ---
 # <a name="iosbase-class"></a>ios_base 클래스
 
-이 클래스는 템플릿 매개 변수에 따라 달라지지 않는 입력 및 출력 스트림에 공통된 저장소 및 멤버 함수를 설명합니다. (템플릿 클래스 [basic_ios](../standard-library/basic-ios-class.md)는 공통된 항목과 템플릿 매개 변수에 따라 달라지는 항목에 대해 설명합니다.)
+이 클래스는 템플릿 매개 변수에 따라 달라지지 않는 입력 및 출력 스트림에 공통된 스토리지 및 멤버 함수를 설명합니다. (템플릿 클래스 [basic_ios](../standard-library/basic-ios-class.md)는 공통된 항목과 템플릿 매개 변수에 따라 달라지는 항목에 대해 설명합니다.)
 
 Ios_base 클래스의 개체는 다음 항목으로 구성되는 형식 지정 정보를 저장합니다.
 
@@ -721,7 +721,7 @@ void *& pword(int _Idx);
 
 멤버 함수는 요소 _에 대 한 참조를 반환 *Idx* 형식의 요소를 사용 하 여 확장 가능한 배열의 **void** 포인터입니다. 모든 요소는 효과적으로 존재하며 처음에는 null 포인터를 저장합니다. 반환된 참조는 개체에 대한 `pword`를 다음에 호출한 후, **basic_ios::**[copyfmt](../standard-library/basic-ios-class.md#copyfmt)를 호출하여 개체가 변경된 후 또는 개체가 삭제된 후에는 유효하지 않게 됩니다.
 
-_ *Idx*가 음수인 경우 또는 요소에 대해 고유한 저장소를 사용할 수 없는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** 를 호출하고 고유하지 않을 수 있는 참조를 반환합니다.
+_*Idx*가 음수인 경우 또는 요소에 대해 고유한 스토리지를 사용할 수 없는 경우 함수는 [setstate](../standard-library/basic-ios-class.md#setstate)**(badbit)** 를 호출하고 고유하지 않을 수 있는 참조를 반환합니다.
 
 `ios_base` 형식의 모든 개체에서 사용하도록 고유 인덱스를 가져오려면 [xalloc](#xalloc)를 호출합니다.
 

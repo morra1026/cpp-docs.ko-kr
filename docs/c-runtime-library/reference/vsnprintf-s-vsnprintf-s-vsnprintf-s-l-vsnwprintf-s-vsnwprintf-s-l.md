@@ -109,7 +109,7 @@ int _vsnwprintf_s(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-출력을 위한 저장소 위치입니다.
+출력을 위한 스토리지 위치입니다.
 
 *sizeOfBuffer*<br/>
 크기를 *버퍼* 출력의 경우 문자 수입니다.

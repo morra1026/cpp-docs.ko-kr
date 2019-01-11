@@ -1,5 +1,5 @@
 ---
-title: extern 저장소 클래스 지정자
+title: extern 스토리지 클래스 지정자
 ms.date: 07/10/2018
 helpviewer_keywords:
 - extern keyword [C]
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50650317"
 ---
-# <a name="extern-storage-class-specifier"></a>extern 저장소 클래스 지정자
+# <a name="extern-storage-class-specifier"></a>extern 스토리지 클래스 지정자
 
 **extern** 저장소 클래스 지정자를 사용하여 선언된 변수는 다른 소스 파일에서 정의된 것과 같은 이름이 지정된 변수에 대한 참조입니다. 외부 수준 변수 정의를 표시하는 데 사용됩니다. **extern**으로 선언된 변수에는 자체에 할당된 저장소가 없습니다. 이름만 있습니다.
 

@@ -37,7 +37,7 @@ using aligned_union_t = typename aligned_union<Len, Types...>::type;
 
 ## <a name="remarks"></a>설명
 
-초기화되지 않은 저장소에 공용 구조체를 저장하기 위해 필요한 맞춤과 크기를 가져오기 위해 템플릿 클래스를 사용합니다. 멤버 typedef `type` POD 유형의 이름을 저장소에 나열 된 모든 형식에 적합 한 *형식을*; 최소 크기가 *Len*합니다. 정적 멤버 `alignment_value` 형식의 `std::size_t` 에 나열 된 모든 형식에 필요한 가장 엄격한 맞춤 포함 *형식*합니다.
+초기화되지 않은 스토리지에 공용 구조체를 저장하기 위해 필요한 맞춤과 크기를 가져오기 위해 템플릿 클래스를 사용합니다. 멤버 typedef `type` POD 유형의 이름을 저장소에 나열 된 모든 형식에 적합 한 *형식을*; 최소 크기가 *Len*합니다. 정적 멤버 `alignment_value` 형식의 `std::size_t` 에 나열 된 모든 형식에 필요한 가장 엄격한 맞춤 포함 *형식*합니다.
 
 ## <a name="example"></a>예제
 

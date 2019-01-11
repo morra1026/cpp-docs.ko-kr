@@ -66,7 +66,7 @@ wchar_t *_getws_s( wchar_t (&buffer)[size] ); // C++ only
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-입력 문자열에 대한 저장소 위치입니다.
+입력 문자열에 대한 스토리지 위치입니다.
 
 *sizeInCharacters*<br/>
 버퍼의 크기입니다.

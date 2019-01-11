@@ -61,7 +61,7 @@ ANSI 사양을 따르려면 <strong>void\*\*</strong>를 <strong>int\*\*</strong
 
 **Microsoft 전용 종료**
 
-[Typedef 선언](../c-language/typedef-declarations.md)에 설명된 대로 **typedef** 선언으로 추가 형식 지정자를 만들 수 있습니다. 각 형식의 크기에 대한 자세한 내용은 [기본 형식의 저장소](../c-language/storage-of-basic-types.md)를 참조하세요.
+[Typedef 선언](../c-language/typedef-declarations.md)에 설명된 대로 **typedef** 선언으로 추가 형식 지정자를 만들 수 있습니다. 각 형식의 크기에 대한 자세한 내용은 [기본 형식의 스토리지](../c-language/storage-of-basic-types.md)를 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 

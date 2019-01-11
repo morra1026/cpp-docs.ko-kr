@@ -18,7 +18,7 @@ ms.locfileid: "50437195"
 
 signed/unsigned `int` 항목의 크기는 특정 시스템의 표준 정수 크기입니다. 예를 들어, 16비트 운영 체제에서 `int` 형식은 보통 16비트 또는 2바이트입니다. 32비트 운영 체제에서 `int` 형식은 보통 32비트 또는 4바이트입니다. 따라서, 대상 환경에 따라 `int` 형식은 `short int` 또는 **long int** 형식과 동일하며 `unsigned int` 형식은 **unsigned short** 또는 `unsigned long` 형식과 동일합니다. 특별한 지정이 없는 한 `int` 형식은 모두 부호 있는 값을 표시합니다.
 
-형식 지정자 `int` 및 `unsigned int`(또는 단순히 `unsigned`)는 C 언어의 특정한 기능(예: `enum` 형식)을 정의합니다. 이러한 경우 특정 구현에 대한 `int` 정의 및 unsigned int로 실제 저장소가 결정됩니다.
+형식 지정자 `int` 및 `unsigned int`(또는 단순히 `unsigned`)는 C 언어의 특정한 기능(예: `enum` 형식)을 정의합니다. 이러한 경우 특정 구현에 대한 `int` 정의 및 unsigned int로 실제 스토리지가 결정됩니다.
 
 **Microsoft 전용**
 

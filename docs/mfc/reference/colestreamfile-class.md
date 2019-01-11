@@ -29,7 +29,7 @@ ms.locfileid: "50577543"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile 클래스
 
-OLE 구조적 저장소의 일부로 복합 파일의 데이터 스트림(`IStream`)을 나타냅니다.
+OLE 구조적 스토리지의 일부로 복합 파일의 데이터 스트림(`IStream`)을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 

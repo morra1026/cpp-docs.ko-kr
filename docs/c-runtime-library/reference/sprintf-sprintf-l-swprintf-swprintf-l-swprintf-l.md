@@ -107,7 +107,7 @@ int _sprintf_l(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-출력을 위한 저장소 위치
+출력을 위한 스토리지 위치
 
 *count*<br/>
 이 함수의 유니코드 버전에 저장할 최대 문자 수입니다.

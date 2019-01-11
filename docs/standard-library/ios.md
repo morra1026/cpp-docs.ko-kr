@@ -79,9 +79,9 @@ istr>> noskipws;
 
 |클래스|설명|
 |-|-|
-|[basic_ios](../standard-library/basic-ios-class.md)|이 템플릿 클래스는 템플릿 매개 변수에 따라 달라지는 입력 스트림(템플릿 클래스 [basic_istream](../standard-library/basic-istream-class.md)) 및 출력 스트림(템플릿 클래스 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통된 저장소 및 멤버 함수를 설명합니다.|
+|[basic_ios](../standard-library/basic-ios-class.md)|이 템플릿 클래스는 템플릿 매개 변수에 따라 달라지는 입력 스트림(템플릿 클래스 [basic_istream](../standard-library/basic-istream-class.md)) 및 출력 스트림(템플릿 클래스 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통된 스토리지 및 멤버 함수를 설명합니다.|
 |[fpos](../standard-library/fpos-class.md)|이 템플릿 클래스는 스트림 내의 임의 파일 위치 표시기를 복원하는 데 필요한 모든 정보를 저장할 수 있는 개체를 설명합니다.|
-|[ios_base](../standard-library/ios-base-class.md)|이 클래스는 템플릿 매개 변수에 따라 달라지지 않는 입력 및 출력 스트림에 공통된 저장소 및 멤버 함수를 설명합니다.|
+|[ios_base](../standard-library/ios-base-class.md)|이 클래스는 템플릿 매개 변수에 따라 달라지지 않는 입력 및 출력 스트림에 공통된 스토리지 및 멤버 함수를 설명합니다.|
 
 ## <a name="see-also"></a>참고자료
 

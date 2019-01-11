@@ -169,7 +169,7 @@ class unordered_set;
 
 |형식 정의|설명|
 |-|-|
-|[allocator_type](#allocator_type)|저장소 관리를 위한 할당자의 형식입니다.|
+|[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[const_iterator](#const_iterator)|제어되는 시퀀스에 대한 상수 반복기의 형식입니다.|
 |[const_local_iterator](#const_local_iterator)|제어되는 시퀀스에 대한 상수 버킷 반복기의 형식입니다.|
 |[const_pointer](#const_pointer)|요소에 대한 상수 포인터의 형식입니다.|
@@ -227,7 +227,7 @@ class unordered_set;
 
 제어된 시퀀스의 실제 요소 순서는 해시 함수, 비교 함수, 삽입 순서, 최대 로드 비율, 현재 버킷 수에 따라 달라집니다. 제어된 시퀀스의 요소 순서는 일반적으로 예측할 수 없습니다. 하지만 동일하게 정렬된 요소의 하위 집합은 제어된 시퀀스에서 항상 인접해 있습니다.
 
-개체는 [unordered_set::allocator_type](#allocator_type) 형식의 저장된 할당자 개체를 통해 제어하는 시퀀스에 대한 저장소를 할당하고 해제합니다. 그러한 할당자 개체는 템플릿 클래스 `allocator`의 개체와 같은 외부 인터페이스가 있어야 합니다. 컨테이너 개체를 할당하는 경우 저장된 할당자 개체는 복사되지 않습니다.
+개체는 [unordered_set::allocator_type](#allocator_type) 형식의 저장된 할당자 개체를 통해 제어하는 시퀀스에 대한 스토리지를 할당하고 해제합니다. 그러한 할당자 개체는 템플릿 클래스 `allocator`의 개체와 같은 외부 인터페이스가 있어야 합니다. 컨테이너 개체를 할당하는 경우 저장된 할당자 개체는 복사되지 않습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -237,7 +237,7 @@ class unordered_set;
 
 ## <a name="allocator_type"></a>  unordered_set::allocator_type
 
-저장소 관리를 위한 할당자의 형식입니다.
+스토리지 관리를 위한 할당자의 형식입니다.
 
 ```cpp
 typedef Alloc allocator_type;

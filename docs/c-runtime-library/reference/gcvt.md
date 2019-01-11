@@ -58,7 +58,7 @@ char *_gcvt(
 저장된 유효 자릿수입니다.
 
 *buffer*<br/>
-결과의 저장소 위치입니다.
+결과의 스토리지 위치입니다.
 
 ## <a name="return-value"></a>반환 값
 

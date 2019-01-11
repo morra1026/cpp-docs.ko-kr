@@ -1,5 +1,5 @@
 ---
-title: 스레드 로컬 저장소
+title: 스레드 로컬 스토리지
 ms.date: 11/04/2016
 helpviewer_keywords:
 - thread-local variables
@@ -15,13 +15,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/09/2018
 ms.locfileid: "51330309"
 ---
-# <a name="thread-local-storage"></a>스레드 로컬 저장소
+# <a name="thread-local-storage"></a>스레드 로컬 스토리지
 
 **Microsoft 전용**
 
-TLS(스레드 로컬 저장소)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터의 저장소를 할당하는 메커니즘입니다. 표준 다중 스레드 프로그램에서 데이터는 지정된 프로세스의 모든 스레드에서 공유되지만 스레드 로컬 저장소는 스레드별 데이터를 할당하기 위한 메커니즘입니다. 스레드에 대한 자세한 내용은 Windows SDK에서 [프로세스 및 스레드](/windows/desktop/ProcThread/processes-and-threads)를 참조하세요.
+TLS(스레드 로컬 스토리지)는 지정된 다중 스레드 프로세스의 각 스레드에서 스레드별 데이터의 스토리지를 할당하는 메커니즘입니다. 표준 다중 스레드 프로그램에서 데이터는 지정된 프로세스의 모든 스레드에서 공유되지만 스레드 로컬 스토리지는 스레드별 데이터를 할당하기 위한 메커니즘입니다. 스레드에 대한 자세한 내용은 Windows SDK에서 [프로세스 및 스레드](/windows/desktop/ProcThread/processes-and-threads)를 참조하세요.
 
-Microsoft C 언어에는 스레드 로컬 변수를 선언하기 위해 __declspec 키워드와 함께 사용되는 확장 저장소 클래스 특성, 스레드가 포함되어 있습니다. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
+Microsoft C 언어에는 스레드 로컬 변수를 선언하기 위해 __declspec 키워드와 함께 사용되는 확장 스토리지 클래스 특성, 스레드가 포함되어 있습니다. 예를 들어, 다음 코드는 정수 스레드 로컬 변수를 선언한 다음 값으로 초기화합니다.
 
 ```
 __declspec( thread ) int tls_i = 1;
@@ -38,7 +38,7 @@ __declspec( thread ) int tls_i = 1;
     Thread void func();      /* Error */
     ```
 
-- 정적 저장 기간이 있는 데이터 항목에만 thread 특성을 지정할 수 있습니다. 여기에는 전역 데이터(정적 및 외부 모두)와 지역 정적 데이터가 포함됩니다. 자동 데이터는 thread 특성을 사용하여 선언할 수 없습니다. 예를 들어, 다음 코드는 컴파일러 오류를 생성합니다.
+- 정적 스토리지 기간이 있는 데이터 항목에만 thread 특성을 지정할 수 있습니다. 여기에는 전역 데이터(정적 및 외부 모두)와 지역 정적 데이터가 포함됩니다. 자동 데이터는 thread 특성을 사용하여 선언할 수 없습니다. 예를 들어, 다음 코드는 컴파일러 오류를 생성합니다.
 
     ```C
     #define Thread   __declspec( thread )

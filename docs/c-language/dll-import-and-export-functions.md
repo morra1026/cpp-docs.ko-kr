@@ -24,7 +24,7 @@ ms.locfileid: "50572391"
 
 **dllimport** 및 `dllexport` 저장소 클래스 한정자는 Microsoft 전용 C 언어 확장입니다. 이러한 한정자는 해당 클라이언트에 대한 DLL 인터페이스(실행 파일 또는 다른 DLL)를 명시적으로 정의합니다. 함수를 `dllexport`로 선언하면 모듈 정의(.DEF) 파일을 사용할 필요가 없습니다. 또한 **dllimport** 및 `dllexport` 한정자는 데이터 및 개체와 함께 사용할 수 있습니다.
 
-다음 예제와 같이 **dllimport** 및 `dllexport` 저장소 클래스 한정자는 확장된 특성 구문 키워드인 `__declspec`와 함께 사용해야 합니다.
+다음 예제와 같이 **dllimport** 및 `dllexport` 스토리지 클래스 한정자는 확장된 특성 구문 키워드인 `__declspec`와 함께 사용해야 합니다.
 
 ```
 #define DllImport   __declspec( dllimport )
@@ -36,7 +36,7 @@ DllExport int j;
 DllExport int n;
 ```
 
-확장된 저장소 클래스 한정자에 사용되는 구문에 대한 자세한 내용은 [확장된 저장소 클래스 특성](../c-language/c-extended-storage-class-attributes.md)을 참조하세요.
+확장된 스토리지 클래스 한정자에 사용되는 구문에 대한 자세한 내용은 [확장된 스토리지 클래스 특성](../c-language/c-extended-storage-class-attributes.md)을 참조하세요.
 
 **Microsoft 전용 종료**
 

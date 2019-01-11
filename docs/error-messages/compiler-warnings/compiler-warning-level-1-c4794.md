@@ -15,7 +15,7 @@ ms.locfileid: "50464079"
 ---
 # <a name="compiler-warning-level-1-c4794"></a>컴파일러 경고(수준 1) C4794
 
-스레드 로컬 저장소 변수 'variable'의 세그먼트가 'section name'에서 '.tls$'로 변경되었습니다.
+스레드 로컬 스토리지 변수 'variable'의 세그먼트가 'section name'에서 '.tls$'로 변경되었습니다.
 
 .tls$로 시작하지 않는 섹션에 tls 변수를 넣기 위해 [#pragma data_seg](../../preprocessor/data-seg.md) 를 사용했습니다.
 
