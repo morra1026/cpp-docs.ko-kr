@@ -1,4 +1,4 @@
----
+﻿---
 title: __ptr32, __ptr64
 ms.date: 10/09/2018
 f1_keywords:
