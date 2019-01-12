@@ -15,7 +15,7 @@ ms.locfileid: "50611408"
 ---
 # <a name="specifiers"></a>지정자
 
-이 항목에 설명 합니다 *-specifiers* (선언 지정자) 구성 요소를 [선언](declarations-and-definitions-cpp.md).
+이 항목에서는 [선언](declarations-and-definitions-cpp.md)의 *decl-specifiers* (선언 지정자) 구성 요소에 대해 설명합니다.
 
 다음 자리 표시자 및 언어 키워드는 선언 지정자입니다.
 
@@ -33,9 +33,9 @@ ms.locfileid: "50611408"
 
 ## <a name="remarks"></a>설명
 
-합니다 *-specifiers* 선언의 부분은의 가장 긴 시퀀스 *-specifiers* 또는 참조 한정자는 포인터를 포함 하지 않는 형식 이름을 의미 하기 위해 사용할 수 있는 합니다. 선언의 나머지 부분은 합니다 *선언 자*에 소개 된 이름을 포함 하는 합니다.
+선언의 *decl-specifiers* 부분이 포인터 또는 참조 한정자를 포함하지 않는 형식 이름을 의미하기 위해 사용할 수 있는 *decl-specifiers*의 가장 긴 시퀀스입니다. 선언의 나머지 부분은 소개된 이름을 포함하는 *declarator* 입니다.
 
-다음 표에서 4 개의 선언을 목록과 후 각 선언의 *선언 지정자* 하 고 *declarator* 구성 요소 개별적으로 합니다.
+다음 표에서는 4개의 선언을 나열한 후 각 선언의 *decl-specifers* 및 *declarator* 구성 요소를 따로 나열합니다.
 
 |선언|*선언 지정자*|`declarator`|
 |-----------------|------------------------|------------------|
@@ -44,11 +44,11 @@ ms.locfileid: "50611408"
 |`const int func1();`|**const int**|`func1`|
 |`volatile void *pvvObj;`|**volatile void**|`*pvvObj`|
 
-때문에 **서명**, **부호 없는**합니다 **긴**, 및 **짧은** 의미 모든 **int**,  **typedef** 의 구성원으로 만들어진 다음이 키워드 중 하나로 다음 이름을 *declarator-list* 아닌 *-specifiers*합니다.
+**signed**, **unsigned**, **long** 및 **short**는 모두 **int**를 암시하므로 이러한 키워드 다음에 오는 **typedef** 이름은 *decl-specifiers*가 아닌 *declarator-list*의 멤버로 간주됩니다.
 
 > [!NOTE]
->  이름은 다시 선언할 수 있기 때문에 현재 범위에서 최신 선언에 해석이 적용됩니다. 재선언은 어떻게 해석 되는 컴파일러에 의해 특히 영향을 줄 수 **typedef** 이름입니다.
+>  이름은 다시 선언할 수 있기 때문에 현재 범위에서 최신 선언에 해석이 적용됩니다. 재선언은 특히 **typedef** 이름이 컴파일러에 의해 해석되는 방법에 영향을 줄 수 있습니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [선언 및 정의](declarations-and-definitions-cpp.md)
