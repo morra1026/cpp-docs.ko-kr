@@ -14,7 +14,7 @@ ms.locfileid: "50472100"
 ---
 # <a name="mapi-samples"></a>MAPI 샘플
 
-Microsoft 응용 프로그램 프로그래밍 인터페이스 MAPI (메시징) 기능을 보여 주는 다음 예제 프로그램을 참조 하세요.
+Microsoft MAPI(메시징 애플리케이션 프로그래밍 인터페이스) 기능을 보여주는 다음 예제 프로그램을 참조하세요.
 
 - [NPP](../visual-cpp-samples.md)
 
