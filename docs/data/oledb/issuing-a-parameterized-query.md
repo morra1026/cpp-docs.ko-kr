@@ -13,7 +13,7 @@ ms.locfileid: "50533044"
 ---
 # <a name="issuing-a-parameterized-query"></a>매개 변수가 있는 쿼리 실행
 
-다음 예제는 Microsoft Access 데이터베이스의 테이블에서 나이 필드 값이 (30 이상인) 레코드를 검색하는 단순 매개 변수가 있는 쿼리를 실행합니다. 매개 변수를 지원하려면 사용자 레코드에 추가 맵이 있어야 합니다. 다음 ATL 프로젝트의 코드에서는 이전 예제 [단순 행 집합 검색](../../data/oledb/traversing-a-simple-rowset.md)에서 사용된 `CTable` 클래스 대신 `CCommand` 클래스를 사용합니다.
+다음 예제에서는 Microsoft Access 데이터베이스의 테이블에서 (즉, 30 보다 큰) 연령 필드를 사용 하 여 레코드를 검색 하는 단순 매개 변수화 된 쿼리를 발급 합니다. 매개 변수를 지원 하려면 사용자 레코드에는 추가 맵이 있어야 합니다. 다음 코드에서는 ATL 프로젝트에서 사용 합니다 `CCommand` 클래스 대신를 `CTable` 앞의 예에서 사용 되는 클래스 [단순 행 집합 검색](../../data/oledb/traversing-a-simple-rowset.md)합니다.
 
 ```cpp
 #include <atldbcli.h>
@@ -51,7 +51,7 @@ int main()
 }
 ```
 
-사용자 레코드 `CArtists`는 다음과 같습니다:
+사용자 레코드 `CArtists`, 다음과 같은이 예제:
 
 ```cpp
 class CArtists
