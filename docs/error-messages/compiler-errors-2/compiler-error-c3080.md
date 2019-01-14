@@ -15,7 +15,7 @@ ms.locfileid: "50455824"
 ---
 # <a name="compiler-error-c3080"></a>컴파일러 오류 C3080
 
-'finalizer_function': 종료자에는 저장소 클래스 지정자를 사용할 수 없습니다.
+'finalizer_function': 종료자에는 스토리지 클래스 지정자를 사용할 수 없습니다.
 
 자세한 내용은 [방법의 소멸자 및 종료자: 클래스 및 구조체 정의 및 사용 (C + + /cli CLI)](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers)합니다.
 

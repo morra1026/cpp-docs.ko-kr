@@ -47,13 +47,13 @@ class strstreambuf : public streambuf
 
 - 수정할 수 있는지 여부
 
-- 저장소를 다시 할당하여 확장할 수 있는지 여부
+- 스토리지를 다시 할당하여 확장 가능합니다.
 
 - 고정되어 개체가 아닌 에이전시에서 해당 개체를 삭제하거나 해제(할당된 경우)하기 전에 고정 해제해야 하는지 여부
 
 고정된 제어되는 시퀀스는 이러한 별도 모드 비트의 상태에 관계없이 수정하거나 확장할 수 없습니다.
 
-개체는 `strstreambuf` 할당을 제어하는 두 함수에 대한 포인터를 저장합니다. null 포인터인 경우 개체가 제어되는 시퀀스에 대한 저장소를 할당 및 해제하는 고유한 메서드를 만듭니다.
+개체는 `strstreambuf` 할당을 제어하는 두 함수에 대한 포인터를 저장합니다. null 포인터인 경우 개체가 제어되는 시퀀스에 대한 스토리지를 할당 및 해제하는 고유한 메서드를 만듭니다.
 
 > [!NOTE]
 > 이 클래스는 사용되지 않습니다. 대신 [stringbuf](../standard-library/sstream-typedefs.md#stringbuf) 또는 [wstringbuf](../standard-library/sstream-typedefs.md#wstringbuf)를 사용하는 것이 좋습니다.

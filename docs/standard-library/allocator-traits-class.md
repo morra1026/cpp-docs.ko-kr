@@ -49,7 +49,7 @@ ms.locfileid: "50537763"
 ---
 # <a name="allocatortraits-class"></a>allocator_traits 클래스
 
-템플릿 클래스는 *할당자 형식*을 보완하는 개체를 설명합니다. 할당자 형식은 할당된 저장소를 관리하는 데 사용되는 할당자 개체를 설명하는 형식입니다. 특히 할당자 형식 `Alloc`에 대해서는 할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하기 위해 `allocator_traits<Alloc>`를 사용할 수 있습니다. 자세한 내용은 기본 [allocator 클래스](../standard-library/allocator-class.md)를 참조하세요.
+템플릿 클래스는 *할당자 형식*을 보완하는 개체를 설명합니다. 할당자 형식은 할당된 스토리지를 관리하는 데 사용되는 할당자 개체를 설명하는 형식입니다. 특히 할당자 형식 `Alloc`에 대해서는 할당자를 사용할 수 있는 컨테이너에 필요한 모든 정보를 확인하기 위해 `allocator_traits<Alloc>`를 사용할 수 있습니다. 자세한 내용은 기본 [allocator 클래스](../standard-library/allocator-class.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -113,7 +113,7 @@ static pointer allocate(Alloc& al, size_type count,
 할당할 요소의 수입니다.
 
 *힌트*<br/>
-요청 이전에 할당된 개체의 주소를 찾음으로써 저장소에 대한 요청을 충족하여 할당자 개체를 지원할 수 있는 `const_pointer`입니다. Null 포인터는 힌트 없음으로 처리됩니다.
+요청 이전에 할당된 개체의 주소를 찾음으로써 스토리지에 대한 요청을 충족하여 할당자 개체를 지원할 수 있는 `const_pointer`입니다. Null 포인터는 힌트 없음으로 처리됩니다.
 
 ### <a name="return-value"></a>반환 값
 

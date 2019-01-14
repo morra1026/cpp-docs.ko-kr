@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 19ecc5d4-297d-4c4e-b4f3-4fccab890b3d
-ms.openlocfilehash: f384da3eee0c7bca80d8d6c61f8d8cf0cfaece92
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 2dada25ea712b7bb6d48d80525c824a0457b18cf
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327007"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220555"
 ---
 # <a name="how-to-design-for-exception-safety"></a>방법: 예외 안전성을 위한 디자인
 
@@ -95,7 +95,7 @@ public:
 
 오류 없음(?또는 "throw 없음") 보증은 함수가 제공할 수 있는 가장 강력한 보증입니다. 이 형태의 보증에서 함수는 예외를 throw하지 않거나 예외가 전파되는 것을 허용하지 않습니다. 하지만 (a) 이 함수가 호출하는 모든 함수도 오류 없음 보장을 제공하는지 알고 있고, (b) throw되는 모든 예외가 이 함수에 도달하기 전에 catch된다는 것을 알고 있고, (c) 이 함수에 도달할 수 있는 모든 예외를 catch하고 올바르게 처리하는 방법을 알고 있는 경우를 제외하고는 그러한 보증을 안정적으로 제공할 수 없을 것입니다.
 
-강력한 보증 및 기본 보증은 소멸자에 대한 오류가 없다는 가정에 의존합니다. 표준 라이브러리의 모든 컨테이너 및 형식은 소멸자가 예외를 throw하지 않음을 보증합니다. 또한 반대되는 요구 사항도 있습니다. 표준 라이브러리의 경우 템플릿 인수와 같이 여기에 제공되는 사용자 정의된 형식은 예외를 throw하지 않는 소멸자를 포함해야 합니다.
+강력한 보증 및 기본 보증은 소멸자에 대한 오류가 없다는 가정에 의존합니다. 표준 라이브러리의 모든 컨테이너 및 형식은 소멸자가 예외를 throw하지 않음을 보증합니다. 역방향 요구 사항 이기도합니다. 표준 라이브러리는 사용자 정의 형식에 필요한 권한을 부여-템플릿 인수로 사용 예를 들어-소멸자가 throw 되지 않는 있어야 합니다.
 
 ### <a name="strong-guarantee"></a>강력한 보증
 
@@ -121,5 +121,5 @@ public:
 
 ## <a name="see-also"></a>참고자료
 
-[오류 및 예외 처리(모던 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
-[방법: 예외 코드와 예외가 아닌 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)
+[오류 및 예외 처리(최신 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[방법: 예외 및 비 예외 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)

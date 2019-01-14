@@ -24,7 +24,7 @@ ms.locfileid: "50618779"
 |루틴|사용|
 |-------------|---------|
 |[_alloca](../c-runtime-library/reference/alloca.md), [_malloca](../c-runtime-library/reference/malloca.md)|스택에서 메모리 할당|
-|[calloc](../c-runtime-library/reference/calloc.md)|할당된 블록에서 모든 바이트를 0으로 초기화하는 배열에 저장소 할당|
+|[calloc](../c-runtime-library/reference/calloc.md)|할당된 블록에서 모든 바이트를 0으로 초기화하는 배열에 스토리지 할당|
 |[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|**calloc**의 디버그 버전이며, 런타임 라이브러리의 디버그 버전에서만 사용할 수 있습니다.|
 |[operator delete](../c-runtime-library/operator-delete-crt.md)|할당된 블록 확보|
 |[operator delete&#91;&#93;](../c-runtime-library/delete-operator-crt.md)|할당된 블록 확보|

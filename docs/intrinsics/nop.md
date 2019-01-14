@@ -7,12 +7,12 @@ helpviewer_keywords:
 - nop instruction
 - __nop intrinsic
 ms.assetid: 7a2a938b-87e0-476d-a348-03ea7635b6b9
-ms.openlocfilehash: 25ba27485990ceaae77e1827f0c74680914e2f40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b0033b0e3a62a16c2856b0e25daeebdb5df0c81f
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651726"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220389"
 ---
 # <a name="nop"></a>__nop
 
@@ -30,7 +30,7 @@ void __nop();
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`__nop`|x86, x64|
+|`__nop`|x86, ARM, x64, ARM64|
 
 **헤더 파일** \<intrin.h >
 
@@ -38,7 +38,7 @@ void __nop();
 
 ## <a name="remarks"></a>설명
 
-`__nop` 함수는 `NOP` 컴퓨터 명령에 해당합니다. 자세한 내용은 문서를 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조"에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
+`__nop` 함수는 `NOP` 컴퓨터 명령에 해당합니다. X86 및 x64에 대 한 자세한 내용은 문서에 대해 검색 "Intel 아키텍처 소프트웨어 개발자 설명서 볼륨 2: 명령 집합 참조를 "에 [Intel Corporation](https://software.intel.com/articles/intel-sdm) 사이트입니다.
 
 ## <a name="see-also"></a>참고 항목
 

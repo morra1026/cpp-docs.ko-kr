@@ -60,7 +60,7 @@ wchar_t *_wgetcwd(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-경로의 저장소 위치입니다.
+경로의 스토리지 위치입니다.
 
 *maxlen*<br/>
 문자에서는 경로의 최대 길이: **char** 에 대 한 **_getcwd** 하 고 **wchar_t** 에 대 한 **_wgetcwd**합니다.

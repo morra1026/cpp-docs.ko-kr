@@ -15,13 +15,13 @@ ms.locfileid: "52177006"
 
 ## <a name="spy"></a>Spy++
 
-Spy++는 Windows 데스크톱의 사용자 인터페이스 요소에 대해 모든 종류의 정보를 제공하는 널리 사용되는 Windows 데스크톱용 GUI 진단 도구입니다. 창의 전체 계층 구조를 표시하고 각 창과 컨트롤에 대한 메타데이터에 액세스할 수 있게 합니다. 이 유용한 응용 프로그램은 수년 동안 Visual Studio와 함께 제공되었습니다. Visual C++ 6.0에서 마지막으로 컴파일된 이전 버전이 Visual Studio 2015로 이식되었습니다. Visual Studio 2017의 환경은 거의 동일해야 합니다.
+Spy++는 Windows 데스크톱의 사용자 인터페이스 요소에 대해 모든 종류의 정보를 제공하는 널리 사용되는 Windows 데스크톱용 GUI 진단 도구입니다. 창의 전체 계층 구조를 표시하고 각 창과 컨트롤에 대한 메타데이터에 액세스할 수 있게 합니다. 이 유용한 애플리케이션은 수년 동안 Visual Studio와 함께 제공되었습니다. Visual C++ 6.0에서 마지막으로 컴파일된 이전 버전이 Visual Studio 2015로 이식되었습니다. Visual Studio 2017의 환경은 거의 동일해야 합니다.
 
-이 사례가 특히 Visual C++ 6.0 이후 Visual C++의 각 릴리스로 업데이트되지 않은 오래된 프로젝트에 대해 MFC 및 Win32 API를 사용하는 Windows 데스크톱 응용 프로그램을 포팅하는 일반적인 경우라고 간주했습니다.
+이 사례가 특히 Visual C++ 6.0 이후 Visual C++의 각 릴리스로 업데이트되지 않은 오래된 프로젝트에 대해 MFC 및 Win32 API를 사용하는 Windows 데스크톱 애플리케이션을 포팅하는 일반적인 경우라고 간주했습니다.
 
 ##  <a name="convert_project_file"></a> 1단계. 프로젝트 파일 변환
 
-프로젝트 파일인 Visual C++ 6.0의 이전 .dsw 파일 두 개는 추가로 주의가 필요한 문제없이 쉽게 변환되었습니다. 한 프로젝트는 Spy++ 응용 프로그램입니다. 다른 프로젝트는 지원 DLL인 C로 작성된 SpyHk입니다. 보다 복잡한 프로젝트는 [여기](../porting/visual-cpp-porting-and-upgrading-guide.md)서 설명한 것처럼 쉽게 업그레이드되지 않을 수도 있습니다.
+프로젝트 파일인 Visual C++ 6.0의 이전 .dsw 파일 두 개는 추가로 주의가 필요한 문제없이 쉽게 변환되었습니다. 한 프로젝트는 Spy++ 애플리케이션입니다. 다른 프로젝트는 지원 DLL인 C로 작성된 SpyHk입니다. 보다 복잡한 프로젝트는 [여기](../porting/visual-cpp-porting-and-upgrading-guide.md)서 설명한 것처럼 쉽게 업그레이드되지 않을 수도 있습니다.
 
 두 프로젝트를 업그레이드한 후 솔루션은 다음과 같았습니다.
 
@@ -63,7 +63,7 @@ warning MSB8012: TargetPath(...\spyxx\spyxxhk\.\..\Debug\SpyxxHk.dll) does not m
 C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxv_w32.h(40): fatal error C1189: #error:  MFC does not support WINVER less than 0x0501.  Please change the definition of WINVER in your project properties or precompiled header.
 ```
 
-Windows XP는 Microsoft에서 더 이상 지원되지 않으므로 Visual Studio에서 대상으로 지정할 수는 있지만 응용 프로그램에서 지원을 단계적으로 중단하고 사용자가 새 버전의 Windows를 채택하도록 장려해야 합니다.
+Windows XP는 Microsoft에서 더 이상 지원되지 않으므로 Visual Studio에서 대상으로 지정할 수는 있지만 애플리케이션에서 지원을 단계적으로 중단하고 사용자가 새 버전의 Windows를 채택하도록 장려해야 합니다.
 
 오류를 제거하려면 **프로젝트 속성** 설정을 현재 대상으로 지정하려는 가장 낮은 Windows 버전으로 업데이트하여 WINVER을 정의합니다. 다양한 Windows 릴리스에 대한 값 테이블은 [여기](/windows/desktop/WinProg/using-the-windows-headers)서 확인할 수 있습니다.
 
@@ -406,7 +406,7 @@ DWORD dwWindowsVersion = GetVersion();
 
 [Operating system version changes in Windows 8.1 and Windows Server 2012 R2](https://msdn.microsoft.com/library/windows/desktop/dn302074.aspx)(Windows 8.1 및 Windows Server 2012 R2의 운영 체제 버전 변경 내용) 문서에서 이 상황을 설명합니다.
 
-`IsWindows9x`, `IsWindows4x` 및 `IsWindows5x` 운영 체제 버전을 쿼리하는 `CSpyApp` 클래스에 메서드가 있습니다. 이 오래된 응용 프로그램에서 사용하는 기술과 관련해서 지원하려는 Windows 버전(Windows 7 이상)이 모두 Windows NT 5에 가깝다는 가정에서 시작하는 것이 좋습니다. 이러한 메서드는 이전 운영 체제의 제한 사항을 처리하는 데 사용됩니다. 따라서 `IsWindows5x`에 대해 TRUE를 반환하고 다른 값에 대해 FALSE를 반환하도록 해당 메서드를 변경했습니다.
+`IsWindows9x`, `IsWindows4x` 및 `IsWindows5x` 운영 체제 버전을 쿼리하는 `CSpyApp` 클래스에 메서드가 있습니다. 이 오래된 애플리케이션에서 사용하는 기술과 관련해서 지원하려는 Windows 버전(Windows 7 이상)이 모두 Windows NT 5에 가깝다는 가정에서 시작하는 것이 좋습니다. 이러한 메서드는 이전 운영 체제의 제한 사항을 처리하는 데 사용됩니다. 따라서 `IsWindows5x`에 대해 TRUE를 반환하고 다른 값에 대해 FALSE를 반환하도록 해당 메서드를 변경했습니다.
 
 ```cpp
 BOOL IsWindows9x() {/*return(m_bIsWindows9x);*/ return FALSE;  }
@@ -498,7 +498,7 @@ virtual void OnSelectTab(int /*nTab*/) {};
 warning C4211: nonstandard extension used: redefined extern to static
 ```
 
-변수가 처음에 **extern**으로 선언된 다음, 나중에 **정적**으로 선언된 경우 문제가 발생합니다. 이러한 두 저장소 클래스 지정자의 의미는 양립할 수 없지만 Microsoft 확장으로 허용됩니다. 코드를 다른 컴파일러로 이식 가능하게 하거나 `/Za`(ANSI 호환성)를 사용하여 컴파일하려는 경우 일치하는 저장소 클래스 지정자를 포함하도록 선언을 변경합니다.
+변수가 처음에 **extern**으로 선언된 다음, 나중에 **정적**으로 선언된 경우 문제가 발생합니다. 이러한 두 스토리지 클래스 지정자의 의미는 양립할 수 없지만 Microsoft 확장으로 허용됩니다. 코드를 다른 컴파일러로 이식 가능하게 하거나 `/Za`(ANSI 호환성)를 사용하여 컴파일하려는 경우 일치하는 스토리지 클래스 지정자를 포함하도록 선언을 변경합니다.
 
 ##  <a name="porting_to_unicode"></a> 11단계. MBCS에서 유니코드로 포팅
 
@@ -516,7 +516,7 @@ mfc의 오래된 정적 라이브러리 버전이 링커 입력에 포함되어 
 msvcrtd.lib;msvcirtd.lib;kernel32.lib;user32.lib;gdi32.lib;advapi32.lib;Debug\SpyHk55.lib;%(AdditionalDependencies)
 ```
 
-이제 실제로 이전 MBCS(멀티바이트 문자 집합) 코드를 유니코드로 업데이트하겠습니다. Windows 데스크톱 플랫폼에 깊이 연결된 Windows 응용 프로그램이므로 Windows에서 사용하는 UTF-16 유니코드로 포팅하겠습니다. 플랫폼 간 코드를 작성하거나 Windows 응용 프로그램을 다른 플랫폼으로 포팅하는 경우 다른 운영 체제에서 널리 사용되는 UTF-8로 포팅하는 것이 좋습니다.
+이제 실제로 이전 MBCS(멀티바이트 문자 집합) 코드를 유니코드로 업데이트하겠습니다. Windows 데스크톱 플랫폼에 깊이 연결된 Windows 애플리케이션이므로 Windows에서 사용하는 UTF-16 유니코드로 포팅하겠습니다. 플랫폼 간 코드를 작성하거나 Windows 애플리케이션을 다른 플랫폼으로 포팅하는 경우 다른 운영 체제에서 널리 사용되는 UTF-8로 포팅하는 것이 좋습니다.
 
 UTF-16 유니코드로 포팅하는 경우 MBCS로 컴파일하는 옵션을 원하는지 여부를 결정해야 합니다.  MBCS를 지원하는 옵션을 포함하려는 경우 컴파일하는 동안 \_MBCS 또는 \_UNICODE가 정의되었는지에 따라 **char** 또는 **wchar_t**로 확인되는 TCHAR 매크로를 문자 형식으로 사용해야 합니다. **wchar_t** 및 관련된 API 대신 TCHAR 및 TCHAR 버전의 다양한 API로 전환하면 간단히 \_UNICODE 대신 \_MBCS 매크로를 정의하여 코드의 MBCS 버전으로 돌아갈 수 있습니다. TCHAR 외에도 널리 사용되는 typedef, 매크로 및 함수의 다양한 TCHAR 버전이 있습니다. 예를 들어 LPCSTR 대신 LPCTSTR을 사용합니다. 프로젝트 속성 대화 상자의 **구성 속성** 아래, **일반** 섹션에서 **문자 집합** 속성을 **MBCS 문자 집합 사용**에서 **유니코드 문자 집합 사용**으로 변경합니다. 이 설정은 컴파일하는 동안 미리 정의되는 매크로에 영향을 줍니다. UNICODE 매크로와 \_UNICODE 매크로가 둘 다 있습니다. 프로젝트 속성은 두 매크로에 일관되게 적용됩니다. Windows 헤더는 unicode를 사용하고 MFC와 같은 Visual C++ 헤더는 \_UNICODE를 사용하지만 하나가 정의될 때 다른 하나도 항상 정의됩니다.
 

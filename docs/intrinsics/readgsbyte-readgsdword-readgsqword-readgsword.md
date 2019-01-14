@@ -12,12 +12,12 @@ helpviewer_keywords:
 - __readgsqword intrinsic
 - __readgsbyte intrinsic
 ms.assetid: f822632d-854c-4558-a71b-cdfc3eea2236
-ms.openlocfilehash: 1bc6a3b2ef2d78e5b30ea36149ea691468c9b0ec
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: fee7101ab72b9a0aecffb8ab8365dda1ec52d170
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327514"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220415"
 ---
 # <a name="readgsbyte-readgsdword-readgsqword-readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
 
@@ -44,7 +44,7 @@ unsigned __int64 __readgsqword(
 
 #### <a name="parameters"></a>매개 변수
 
-*오프셋*<br/>
+*Offset*<br/>
 [in] 시작 부분 으로부터의 오프셋 `GS` 에서 읽을 수 있습니다.
 
 ## <a name="return-value"></a>반환 값
@@ -64,7 +64,7 @@ unsigned __int64 __readgsqword(
 
 ## <a name="remarks"></a>설명
 
-이러한 내장 함수 에서만 커널 모드에서 사용할 수 있으며 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 루틴은 내장 함수로 사용할 수만 있습니다.
 
 **Microsoft 전용 종료**
 

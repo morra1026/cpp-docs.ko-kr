@@ -1,5 +1,5 @@
 ---
-title: register 저장소 클래스 지정자
+title: register 스토리지 클래스 지정자
 ms.date: 11/04/2016
 helpviewer_keywords:
 - register variables
@@ -12,7 +12,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50668652"
 ---
-# <a name="register-storage-class-specifier"></a>register 저장소 클래스 지정자
+# <a name="register-storage-class-specifier"></a>register 스토리지 클래스 지정자
 
 **Microsoft 전용**
 

@@ -34,7 +34,7 @@ class raw_storage_iterator
 저장되는 개체에 대한 출력 반복기를 지정합니다.
 
 *Type*<br/>
-저장소를 할당할 개체 형식입니다.
+스토리지를 할당할 개체 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -48,14 +48,14 @@ class raw_storage_iterator
 
 |생성자|설명|
 |-|-|
-|[raw_storage_iterator](#raw_storage_iterator)|지정된 기본 출력 반복기를 사용하여 원시 저장소 반복기를 생성합니다.|
+|[raw_storage_iterator](#raw_storage_iterator)|지정된 기본 출력 반복기를 사용하여 원시 스토리지 반복기를 생성합니다.|
 
 ### <a name="typedefs"></a>형식 정의
 
 |형식 이름|설명|
 |-|-|
-|[element_type](#element_type)|원시 저장소 반복기를 저장할 요소를 설명하는 형식을 제공합니다.|
-|[iter_type](#iter_type)|원시 저장소 반복기의 기반이 되는 반복기를 설명하는 형식을 제공합니다.|
+|[element_type](#element_type)|원시 스토리지 반복기를 저장할 요소를 설명하는 형식을 제공합니다.|
+|[iter_type](#iter_type)|원시 스토리지 반복기의 기반이 되는 반복기를 설명하는 형식을 제공합니다.|
 
 ### <a name="operators"></a>연산자
 
@@ -63,7 +63,7 @@ class raw_storage_iterator
 |-|-|
 |[operator*](#op_star)|출력 반복기 식을 구현 하는 데 사용 되는 역참조 연산자 \* `ii`  =  `x`합니다.|
 |[operator=](#op_eq)|원시 저장소 반복기 식을 구현 하는 데 사용 되는 대입 연산자 \* `i`  =  `x` 메모리에 저장 합니다.|
-|[operator++](#op_add_add)|원시 저장소 반복기에 대한 사전 증가 및 사후 증가 연산자입니다.|
+|[operator++](#op_add_add)|원시 스토리지 반복기에 대한 사전 증가 및 사후 증가 연산자입니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -73,7 +73,7 @@ class raw_storage_iterator
 
 ## <a name="element_type"></a>  raw_storage_iterator::element_type
 
-원시 저장소 반복기를 저장할 요소를 설명하는 형식을 제공합니다.
+원시 스토리지 반복기를 저장할 요소를 설명하는 형식을 제공합니다.
 
 ```cpp
 typedef Type element_type;
@@ -85,7 +85,7 @@ typedef Type element_type;
 
 ## <a name="iter_type"></a>  raw_storage_iterator::iter_type
 
-원시 저장소 반복기의 기반이 되는 반복기를 설명하는 형식을 제공합니다.
+원시 스토리지 반복기의 기반이 되는 반복기를 설명하는 형식을 제공합니다.
 
 ```cpp
 typedef ForwardIterator iter_type;
@@ -105,7 +105,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator*();
 
 ### <a name="return-value"></a>반환 값
 
-원시 저장소 반복기에 대한 참조
+원시 스토리지 반복기에 대한 참조
 
 ### <a name="remarks"></a>설명
 
@@ -178,7 +178,7 @@ raw_storage_iterator<ForwardIterator, Type>& operator=(
 
 ### <a name="return-value"></a>반환 값
 
-연산자는 `val`을 메모리에 삽입한 다음 원시 저장소 반복기에 대한 참조를 반환합니다.
+연산자는 `val`을 메모리에 삽입한 다음 원시 스토리지 반복기에 대한 참조를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -237,7 +237,7 @@ Constructing 5
 
 ## <a name="op_add_add"></a>  raw_storage_iterator::operator++
 
-원시 저장소 반복기에 대한 사전 증가 및 사후 증가 연산자입니다.
+원시 스토리지 반복기에 대한 사전 증가 및 사후 증가 연산자입니다.
 
 ```cpp
 raw_storage_iterator<ForwardIterator, Type>& operator++();
@@ -247,7 +247,7 @@ raw_storage_iterator<ForwardIterator, Type> operator++(int);
 
 ### <a name="return-value"></a>반환 값
 
-원시 저장소 반복기 또는 원시 저장소 반복기에 대한 참조입니다.
+원시 스토리지 반복기 또는 원시 스토리지 반복기에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -293,7 +293,7 @@ array 4 = 8
 
 ## <a name="raw_storage_iterator"></a>  raw_storage_iterator::raw_storage_iterator
 
-지정된 기본 출력 반복기를 사용하여 원시 저장소 반복기를 생성합니다.
+지정된 기본 출력 반복기를 사용하여 원시 스토리지 반복기를 생성합니다.
 
 ```cpp
 explicit raw_storage_iterator(ForwardIterator first);

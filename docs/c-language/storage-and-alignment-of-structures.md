@@ -1,5 +1,5 @@
 ---
-title: 저장소 및 구조체의 맞춤
+title: 스토리지 및 구조체의 맞춤
 ms.date: 11/04/2016
 helpviewer_keywords:
 - alignment of structures
@@ -14,7 +14,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50460621"
 ---
-# <a name="storage-and-alignment-of-structures"></a>저장소 및 구조체의 맞춤
+# <a name="storage-and-alignment-of-structures"></a>스토리지 및 구조체의 맞춤
 
 **Microsoft 전용**
 

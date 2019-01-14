@@ -24,7 +24,7 @@ ms.locfileid: "50562788"
 |[포인터](../c-language/pointer-declarations.md)|다른 변수를 가리키고 값 대신 가변 위치(주소 형태)를 포함하는 변수|
 |[열거형 변수](../c-language/c-enumeration-declarations.md)|명명된 정수 상수 집합의 값 하나를 보유하는 정수 계열 형식의 단순 변수|
 |[구조체](../c-language/structure-declarations.md)|다양한 형식을 가질 수 있는 값의 컬렉션으로 구성된 변수|
-|[공용 구조체](../c-language/union-declarations.md)|같은 저장소 공간을 차지하는 서로 다른 형식의 여러 값으로 구성된 변수|
+|[공용 구조체](../c-language/union-declarations.md)|같은 스토리지 공간을 차지하는 서로 다른 형식의 여러 값으로 구성된 변수|
 
 선언자는 프로그램에 정의될 이름을 지정하는 선언부입니다. <strong>\*</strong>(포인터) 및 Microsoft 호출 규칙 키워드와 같은 한정자를 포함할 수 있습니다.
 

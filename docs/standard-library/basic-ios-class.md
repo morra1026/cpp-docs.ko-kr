@@ -64,7 +64,7 @@ ms.locfileid: "51524914"
 ---
 # <a name="basicios-class"></a>basic_ios 클래스
 
-이 템플릿 클래스는 템플릿 매개 변수에 따라 달라지는 입력 스트림(템플릿 클래스 [basic_istream](../standard-library/basic-istream-class.md)) 및 출력 스트림(템플릿 클래스 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통된 저장소 및 멤버 함수를 설명합니다. [ios_base](../standard-library/ios-base-class.md) 클래스는 일반적이고 템플릿 매개 변수에 따라 달라지지 않는 사항을 설명합니다. 클래스의 개체 **basic_ios\<class Elem, class >** 형식의 요소가 있는 스트림을 제어 하는 데 도움이 됩니다 `Elem`에서 문자 특성이 클래스에 의해 결정 됩니다 `Traits`합니다.
+이 템플릿 클래스는 템플릿 매개 변수에 따라 달라지는 입력 스트림(템플릿 클래스 [basic_istream](../standard-library/basic-istream-class.md)) 및 출력 스트림(템플릿 클래스 [basic_ostream](../standard-library/basic-ostream-class.md))에 공통된 스토리지 및 멤버 함수를 설명합니다. [ios_base](../standard-library/ios-base-class.md) 클래스는 일반적이고 템플릿 매개 변수에 따라 달라지지 않는 사항을 설명합니다. 클래스의 개체 **basic_ios\<class Elem, class >** 형식의 요소가 있는 스트림을 제어 하는 데 도움이 됩니다 `Elem`에서 문자 특성이 클래스에 의해 결정 됩니다 `Traits`합니다.
 
 ## <a name="syntax"></a>구문
 

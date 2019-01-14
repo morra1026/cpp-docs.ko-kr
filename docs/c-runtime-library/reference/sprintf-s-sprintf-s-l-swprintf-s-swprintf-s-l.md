@@ -97,7 +97,7 @@ int swprintf_s(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-출력을 위한 저장소 위치
+출력을 위한 스토리지 위치
 
 *sizeOfBuffer*<br/>
 저장할 최대 문자 수입니다.

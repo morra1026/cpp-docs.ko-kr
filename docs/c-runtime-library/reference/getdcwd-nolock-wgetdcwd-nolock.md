@@ -46,7 +46,7 @@ ms.locfileid: "50563689"
 지정한 드라이브의 현재 작업 디렉터리의 전체 경로를 가져옵니다.
 
 > [!IMPORTANT]
-> 이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> 이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -69,7 +69,7 @@ wchar_t *_wgetdcwd_nolock(
 디스크 드라이브입니다.
 
 *buffer*<br/>
-경로의 저장소 위치입니다.
+경로의 스토리지 위치입니다.
 
 *maxlen*<br/>
 문자에서 경로의 최대 길이: **char** 에 대 한 **_getdcwd** 하 고 **wchar_t** 에 대 한 **_wgetdcwd**합니다.
@@ -80,7 +80,7 @@ wchar_t *_wgetdcwd_nolock(
 
 ## <a name="remarks"></a>설명
 
-**_getdcwd_nolock** 하 고 **_wgetdcwd_nolock** 동일 **_getdcwd** 하 고 **_wgetdcwd**각각에서 보호 되지 않는 점을 제외 하 고 다른 스레드의 방해 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 응용 프로그램과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
+**_getdcwd_nolock** 하 고 **_wgetdcwd_nolock** 동일 **_getdcwd** 하 고 **_wgetdcwd**각각에서 보호 되지 않는 점을 제외 하 고 다른 스레드의 방해 합니다. 이들은 다른 스레드를 잠그는 오버헤드를 유발하지 않으므로 속도가 더 빠를 수 있습니다. 단일 스레드 애플리케이션과 같은 스레드로부터 안전한 컨텍스트 또는 이미 스레드 격리를 처리한 호출 범위에서만 이러한 함수를 사용합니다.
 
 ### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
 

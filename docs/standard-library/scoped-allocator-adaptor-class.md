@@ -122,7 +122,7 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 ### <a name="parameters"></a>매개 변수
 
 *count*<br/>
-충분한 저장소를 할당할 요소의 수입니다.
+충분한 스토리지를 할당해야 할 요소의 수입니다.
 
 *힌트*<br/>
 요청 이전에 할당된 개체의 주소를 찾아서 할당자 개체를 지원할 수 있는 포인터입니다.

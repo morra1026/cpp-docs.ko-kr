@@ -3,12 +3,12 @@ title: 개체 수명 및 리소스 관리(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8aa0e1a1-e04d-46b1-acca-1d548490700f
-ms.openlocfilehash: d7bf45881ef82ecf0d11892e5ddf3d3c16a437cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5964078960a5b241cb5af369aeddba45a06e48ad
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609939"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220634"
 ---
 # <a name="object-lifetime-and-resource-management-modern-c"></a>개체 수명 및 리소스 관리(모던 C++)
 
@@ -22,7 +22,7 @@ C + +는 메모리 내 리소스를 처리 하지 않는 것 때문에 주로 GC
 
 수명 관리의 다른 중요 한 개념: 소멸자입니다. 소멸자는 리소스를 해제할을 캡슐화합니다.  (일반적으로 사용 되는 니모닉 RRID, Resource Release Is Destruction입니다.)  리소스는 "시스템"에서 가져와 나중에 다시 제공 해야 하는 것입니다.  메모리는 가장 일반적인 리소스에 있지만 파일, 소켓, 질감 및 기타 메모리 내 리소스가 있습니다. 리소스를 "소유" 필요 하지만를 사용 하 여 완료 되 면 해제 해야 하는 경우 사용할 수 있습니다 하는 것을 의미 합니다.  개체 소멸 될 때 해당 소멸자가 소유 하는 리소스를 해제 합니다.
 
-최종 개념은 DAG (방향성 비순환 그래프).  프로그램에서 소유권의 구조는 DAG를 형성합니다. 자체 개체가 소유할 수 있습니다-없는 불가능 하지만 근본적으로 의미가 없습니다. 하지만 두 개체는 세 번째 개체의 소유권을 공유할 수 있습니다.  여러 종류의 링크가 같이 DAG에 있을 수: A가 B의 구성원이 (B는 소유)를 C 저장소를 `vector<D>` (C D 요소당 소유)를 E 저장소를 `shared_ptr<F>` (E 공유 f의 소유권 수 있는 다른 개체를 사용 하 여), 등.  순환이 가지 고 DAG에서 모든 링크는 개체로 표시 됩니다 (원시 포인터, 핸들 또는 기타 메커니즘) 하는 대신 소멸자가 있는 다음 않고 언어 리소스 누수 가능 하지 않습니다. 리소스가 더 이상 필요한 가비지 수집기를 실행 하지 않고 즉시 해제 됩니다. 추적 수명은 스택 범위, 자료, 멤버 및 관련된 사례에 대 한 오버 헤드 해제 하 고에 대 한 저렴 한 `shared_ptr`합니다.
+최종 개념은 DAG (방향성 비순환 그래프).  프로그램에서 소유권의 구조는 DAG를 형성합니다. 자체 개체가 소유할 수 있습니다-없는 불가능 하지만 근본적으로 의미가 없습니다. 하지만 두 개체는 세 번째 개체의 소유권을 공유할 수 있습니다.  여러 종류의 링크가 같이 DAG에 나타날 수 있습니다. A가 B의 구성원이 (B는 소유)를 C 저장소를 `vector<D>` (C D 요소당 소유), E 저장소를 `shared_ptr<F>` (E 공유 소유권 f의 가능한 다른 개체를 사용 하 여) 등입니다.  순환이 가지 고 DAG에서 모든 링크는 개체로 표시 됩니다 (원시 포인터, 핸들 또는 기타 메커니즘) 하는 대신 소멸자가 있는 다음 않고 언어 리소스 누수 가능 하지 않습니다. 리소스가 더 이상 필요한 가비지 수집기를 실행 하지 않고 즉시 해제 됩니다. 추적 수명은 스택 범위, 자료, 멤버 및 관련된 사례에 대 한 오버 헤드 해제 하 고에 대 한 저렴 한 `shared_ptr`합니다.
 
 ### <a name="heap-based-lifetime"></a>힙 기반 수명
 
@@ -85,6 +85,6 @@ void functionUsingWidget () {
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 기본 형식의 저장소
+title: 기본 형식의 스토리지
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifiers [C++], type
@@ -28,13 +28,13 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50555001"
 ---
-# <a name="storage-of-basic-types"></a>기본 형식의 저장소
+# <a name="storage-of-basic-types"></a>기본 형식의 스토리지
 
-다음 표에서는 각 기본 형식과 관련된 저장소에 대해 요약합니다.
+다음 표에서는 각 기본 형식과 관련된 스토리지에 대해 요약합니다.
 
 ### <a name="sizes-of-fundamental-types"></a>기본 형식의 크기
 
-|형식|저장소|
+|형식|스토리지|
 |----------|-------------|
 |`char`, `unsigned char`, **signed char**|1바이트|
 |**short**, **unsigned short**|2바이트|

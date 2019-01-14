@@ -188,7 +188,7 @@ ms.locfileid: "50553156"
 |컴파일러 경고 (수준 1) C4732|이 아키텍처에서 내장 함수 '%s'를 사용할 수 없습니다.|
 |[컴파일러 경고(수준 1) C4733](../../error-messages/compiler-warnings/compiler-warning-level-1-c4733.md)|인라인 asm 'fs:0'에 할당 합니다: 처리기 안전한 처리기로 등록 되지 않았습니다|
 |[컴파일러 경고(수준 3) C4738](../../error-messages/compiler-warnings/compiler-warning-level-3-c4738.md)|32비트 float 결과를 메모리에 저장하면 성능이 저하될 수 있습니다.|
-|컴파일러 경고 (수준 1) C4739|'var' 변수에 대한 참조가 저장 공간을 초과합니다.|
+|컴파일러 경고 (수준 1) C4739|'var' 변수에 대한 참조가 스토리지 공간을 초과합니다.|
 |[컴파일러 경고(수준 4) C4740](../../error-messages/compiler-warnings/compiler-warning-level-4-c4740.md)|인라인 asm 코드 안팎에서 흐름을 선택 하면 전역 최적화|
 |[컴파일러 경고(수준 1) C4742](../../error-messages/compiler-warnings/compiler-warning-level-1-c4742.md)|'var'에 'file1' 및 'file2' 다른 맞춤: 수 및 수|
 |[컴파일러 경고(수준 1) C4743](../../error-messages/compiler-warnings/compiler-warning-level-1-c4743.md)|'type'에서 'file1' 및 'file2' 크기가 다른: 수와 바이트 수입니다.|

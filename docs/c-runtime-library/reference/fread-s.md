@@ -46,7 +46,7 @@ size_t fread_s(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-데이터의 저장소 위치입니다.
+데이터의 스토리지 위치입니다.
 
 *BufferSize*<br/>
 출력 버퍼의 바이트 크기입니다.

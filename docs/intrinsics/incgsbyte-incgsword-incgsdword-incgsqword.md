@@ -16,12 +16,12 @@ helpviewer_keywords:
 - __incgsqword intrinsic
 - __incgsdword intrinsic
 ms.assetid: 06bfdf4f-7643-4fe0-8455-60ce3068073e
-ms.openlocfilehash: d1b394a578ada8afaec18cf3437fce4e654e89de
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c0fb12a56a8c6e0220818d54ee5ec7413fe56b43
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326149"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220259"
 ---
 # <a name="incgsbyte-incgsword-incgsdword-incgsqword"></a>__incgsbyte, __incgsword, __incgsdword, __incgsqword
 
@@ -48,7 +48,7 @@ void __incgsqword(
 
 #### <a name="parameters"></a>매개 변수
 
-*오프셋*<br/>
+*Offset*<br/>
 [in] 시작 부분 으로부터의 오프셋 `GS`합니다.
 
 ## <a name="requirements"></a>요구 사항
@@ -62,7 +62,7 @@ void __incgsqword(
 
 ## <a name="remarks"></a>설명
 
-이러한 내장 함수 에서만 커널 모드에서 사용할 수 있으며 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 루틴은 내장 함수로 사용할 수만 있습니다.
 
 **Microsoft 전용 종료**
 

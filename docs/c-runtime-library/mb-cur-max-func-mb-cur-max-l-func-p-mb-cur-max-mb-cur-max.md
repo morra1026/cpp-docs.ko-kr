@@ -56,7 +56,7 @@ locale 결과를 검색할 로캘 구조입니다. 이 값이 null이면 현재 
 
 ## <a name="remarks"></a>설명
 
-CRT가 스레드 로컬 저장소에서 [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md) 매크로의 현재 값을 검색하는 데 사용하는 내부 함수입니다. 사용자 코드에서는 이식성을 위해 `MB_CUR_MAX` 매크로를 사용하는 것이 좋습니다.
+CRT가 스레드 로컬 스토리지에서 [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md) 매크로의 현재 값을 검색하는 데 사용하는 내부 함수입니다. 사용자 코드에서는 이식성을 위해 `MB_CUR_MAX` 매크로를 사용하는 것이 좋습니다.
 
 `__mb_cur_max` 매크로는 `___mb_cur_max_func()` 함수를 호출하는 편리한 방법입니다. `__p___mb_cur_max` 함수는 Visual C++ 5.0 및 이전 버전과의 호환성을 위해 정의되었습니다.
 

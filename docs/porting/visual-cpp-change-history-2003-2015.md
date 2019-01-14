@@ -223,7 +223,7 @@ Visual Studio 2017에 대한 자세한 내용은 [Visual Studio 2017의 Visual C
 
    현재 [_setmode](../c-runtime-library/reference/setmode.md) 함수는 _O_U8TEXT 모드에서 열린 스트림의 모드를 올바르게 보고합니다. 이전 라이브러리 버전에서는 해당 스트림을 _O_WTEXT에서 열린 것으로 보고했습니다.
 
-   이는 코드가 인코딩이 UTF-8인 스트림에 대한 _O_WTEXT 모드를 해석할 경우 주요 변경 내용입니다. 응용 프로그램이 UTF_8을 지원하지 않으면 점점 더 일반화되는 이 인코딩에 대한 지원을 추가하는 것이 좋습니다.
+   이는 코드가 인코딩이 UTF-8인 스트림에 대한 _O_WTEXT 모드를 해석할 경우 주요 변경 내용입니다. 애플리케이션이 UTF_8을 지원하지 않으면 점점 더 일반화되는 이 인코딩에 대한 지원을 추가하는 것이 좋습니다.
 
 - **snprintf 및 vsnprintf**
 
@@ -452,7 +452,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **mutable 키워드**
 
-   이전에 오류 없이 컴파일했던 위치에서 **변경 가능** 저장소 클래스 지정자가 더 이상 허용되지 않습니다. 현재 컴파일러에서는 오류 C2071(저장소 클래스가 잘못되었습니다.)을 표시합니다. 표준에 따라 **mutable** 지정자는 클래스 데이터 멤버의 이름에만 적용되고 const 또는 정적으로 선언된 이름과 참조 멤버에는 적용할 수 없습니다.
+   이전에 오류 없이 컴파일했던 위치에서 **변경 가능** 스토리지 클래스 지정자가 더 이상 허용되지 않습니다. 현재 컴파일러에서는 오류 C2071(스토리지 클래스가 잘못되었습니다.)을 표시합니다. 표준에 따라 **mutable** 지정자는 클래스 데이터 멤버의 이름에만 적용되고 const 또는 정적으로 선언된 이름과 참조 멤버에는 적용할 수 없습니다.
 
    예를 들어, 다음 코드를 고려하세요.
 
@@ -959,7 +959,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **명시적 특수화의 저장소 클래스가 무시됩니다.**
 
-   다음 코드에서 정적 저장소 클래스 지정자가 무시됩니다.
+   다음 코드에서 정적 스토리지 클래스 지정자가 무시됩니다.
 
     ```cpp
     template <typename T>
@@ -1190,7 +1190,7 @@ Visual Studio 2015에서 컴파일러 규칙 향상 작업이 진행 중이므�
 
 - **MFC 예외는 복사할 수 없으므로 값으로 catch할 수 없음**
 
-   이제 MFC 응용 프로그램의 다음 코드는 오류 C2316을 발생시킵니다. ‘D’: 소멸자 및(또는) 복사 생성자가 액세스할 수 없는 상태이거나 삭제되었으므로 catch될 수 없습니다.
+   이제 MFC 애플리케이션의 다음 코드는 오류 C2316을 발생시킵니다. ‘D’: 소멸자 및(또는) 복사 생성자가 액세스할 수 없는 상태이거나 삭제되었으므로 catch될 수 없습니다.
 
     ```cpp
     struct B {
@@ -3033,7 +3033,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="ide"></a>IDE
 
-- C++/CLI에서 Windows Forms 응용 프로그램을 만들지 않는 것이 좋지만 기존 C++/CLI UI 응용 프로그램의 유지 관리는 지원됩니다. Windows Forms 응용 프로그램이나 다른 .NET UI 응용 프로그램을 만들어야 하는 경우 C# 또는 Visual Basic을 사용합니다. 상호 운용성 목적으로만 C++/CLI를 사용합니다.
+- C++/CLI에서 Windows Forms 애플리케이션을 만들지 않는 것이 좋지만 기존 C++/CLI UI 애플리케이션의 유지 관리는 지원됩니다. Windows Forms 애플리케이션이나 다른 .NET UI 애플리케이션을 만들어야 하는 경우 C# 또는 Visual Basic을 사용합니다. 상호 운용성 목적으로만 C++/CLI를 사용합니다.
 
 ### <a name="parallel-patterns-library-and-concurrency-runtime-library"></a>병렬 패턴 라이브러리 및 동시성 런타임 라이브러리
 
@@ -3233,7 +3233,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="compiler"></a>컴파일러
 
-- **auto** 키워드에 새로운 기본 의미가 있습니다. 이전 의미가 거의 사용되지 않았으므로 대부분의 응용 프로그램은 이 변경의 영향을 받지 않습니다.
+- **auto** 키워드에 새로운 기본 의미가 있습니다. 이전 의미가 거의 사용되지 않았으므로 대부분의 애플리케이션은 이 변경의 영향을 받지 않습니다.
 
 - 새로운 **static_assert** 키워드가 도입되었으며, 코드에 해당 이름의 식별자가 이미 있는 경우 이름 충돌이 발생합니다.
 
@@ -3265,7 +3265,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 ### <a name="ide"></a>IDE
 
-- 응용 프로그램 종료 대화 상자에서 더 이상 응용 프로그램을 종료하지 않습니다. 이전 릴리스에서는 `abort()` 또는 `terminate()` 함수가 응용 프로그램의 일반 정품 빌드를 닫을 때 C 런타임 라이브러리가 콘솔 창이나 대화 상자에 응용 프로그램 종료 메시지를 표시했습니다. “이 응용 프로그램에서 비정상적인 종료를 런타임에 요청했습니다. 자세한 내용은 해당 응용 프로그램의 지원 팀에 문의하세요.”라는 메시지가 표시되었습니다. 이후에 Windows에서 대체로 Windows 오류 보고(Dr. Watson) 대화 상자 또는 Visual Studio 디버거인 현재 종료 처리기를 표시했기 때문에 응용 프로그램 종료 메시지가 중복되었습니다. Visual Studio 2010부터 C 런타임 라이브러리가 메시지를 표시하지 않습니다. 또한 런타임에서 디버거가 시작되기 전에 응용 프로그램이 종료되지 않도록 방지합니다. 이는 응용 프로그램 종료 메시지의 이전 동작을 사용하는 경우에만 주요 변경 내용입니다.
+- 애플리케이션 종료 대화 상자에서 더 이상 애플리케이션을 종료하지 않습니다. 이전 릴리스에서는 `abort()` 또는 `terminate()` 함수가 애플리케이션의 일반 정품 빌드를 닫을 때 C 런타임 라이브러리가 콘솔 창이나 대화 상자에 애플리케이션 종료 메시지를 표시했습니다. “이 애플리케이션에서 비정상적인 종료를 런타임에 요청했습니다. 자세한 내용은 해당 애플리케이션의 지원 팀에 문의하세요.”라는 메시지가 표시되었습니다. 이후에 Windows에서 대체로 Windows 오류 보고(Dr. Watson) 대화 상자 또는 Visual Studio 디버거인 현재 종료 처리기를 표시했기 때문에 응용 프로그램 종료 메시지가 중복되었습니다. Visual Studio 2010부터 C 런타임 라이브러리가 메시지를 표시하지 않습니다. 또한 런타임에서 디버거가 시작되기 전에 애플리케이션이 종료되지 않도록 방지합니다. 이는 애플리케이션 종료 메시지의 이전 동작을 사용하는 경우에만 주요 변경 내용입니다.
 
 - 특히 Visual Studio 2010에서는 IntelliSense가 C++/CLI 코드 또는 특성에 대해 작동하지 않고, **모든 참조 찾기**가 지역 변수에 대해 작동하지 않으며, 코드 모델이 가져온 어셈블리에서 형식 이름을 검색하거나 형식을 정규화된 이름으로 확인하지 않습니다.
 
@@ -3287,7 +3287,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
    0으로 정의된 NULL에서는 `CComPtr`을 계속 생성할 수 있지만 리터럴 0이 아닌 정수에서 생성할 경우 실패합니다. **nullptr**을 대신 사용합니다.
 
-- 다음 `ctype` 멤버 함수가 제거되었습니다. `ctype::_Do_narrow_s`, `ctype::_Do_widen_s`, `ctype::_narrow_s`, `ctype::_widen_s` 응용 프로그램이 이러한 멤버 함수 중 하나를 사용하는 경우 해당하는 비보안 버전인 `ctype::do_narrow`, `ctype::do_widen`, `ctype::narrow`, `ctype::widen`으로 대체해야 합니다.
+- 다음 `ctype` 멤버 함수가 제거되었습니다. `ctype::_Do_narrow_s`, `ctype::_Do_widen_s`, `ctype::_narrow_s`, `ctype::_widen_s` 애플리케이션이 이러한 멤버 함수 중 하나를 사용하는 경우 해당하는 비보안 버전인 `ctype::do_narrow`, `ctype::do_widen`, `ctype::narrow`, `ctype::widen`으로 대체해야 합니다.
 
 ### <a name="crt-mfc-and-atl-libraries"></a>CRT, MFC 및 ATL 라이브러리
 
@@ -3379,7 +3379,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - Windows 95, Windows 98, Windows Millennium Edition 및 Windows NT 4.0에 대한 지원이 제거되었습니다.
 
-- _HAS_ITERATOR_DEBUGGING(Visual Studio 2010 후에는 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 대체됨)을 정의하여 디버그 모드에서 컴파일하는 경우 반복기가 기본 컨테이너의 경계를 지나서 증가 또는 감소를 시도하면 이제 응용 프로그램이 어설션됩니다.
+- _HAS_ITERATOR_DEBUGGING(Visual Studio 2010 후에는 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 대체됨)을 정의하여 디버그 모드에서 컴파일하는 경우 반복기가 기본 컨테이너의 경계를 지나서 증가 또는 감소를 시도하면 이제 애플리케이션이 어설션됩니다.
 
 - 스택 클래스의 멤버 변수 c가 이제 protected로 선언됩니다. 이전에는 이 멤버 변수가 public으로 선언되었습니다.
 
@@ -3409,7 +3409,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - MFC 대화 상자의 컨트롤 탭 순서: MFC ActiveX 컨트롤이 탭 순서에 삽입된 경우 MFC 대화 상자에 있는 여러 컨트롤의 올바른 탭 순서를 방해합니다. 이 변경은 해당 문제를 해결합니다.
 
-   예를 들어 ActiveX 컨트롤 및 여러 개의 편집 컨트롤이 들어 있는 MFC 대화 상자 응용 프로그램을 만듭니다. 편집 컨트롤의 탭 순서 중간에 ActiveX 컨트롤을 배치합니다. 응용 프로그램을 시작하고 탭 순서가 ActiveX 컨트롤 뒤에 오는 편집 컨트롤을 클릭한 후 Tab 키를 누릅니다. 이 변경 전에는 포커스가 탭 순서의 다음 편집 컨트롤 대신 ActiveX 컨트롤 뒤에 있는 편집 컨트롤로 이동했습니다.
+   예를 들어 ActiveX 컨트롤 및 여러 개의 편집 컨트롤이 들어 있는 MFC 대화 상자 애플리케이션을 만듭니다. 편집 컨트롤의 탭 순서 중간에 ActiveX 컨트롤을 배치합니다. 애플리케이션을 시작하고 탭 순서가 ActiveX 컨트롤 뒤에 오는 편집 컨트롤을 클릭한 후 Tab 키를 누릅니다. 이 변경 전에는 포커스가 탭 순서의 다음 편집 컨트롤 대신 ActiveX 컨트롤 뒤에 있는 편집 컨트롤로 이동했습니다.
 
 - `CFileDialog` 클래스: `CFileDialog` 클래스에 대한 사용자 지정 템플릿을 Windows Vista로 자동으로 포트할 수 없습니다. 여전히 사용할 수는 있지만 Windows Vista 스타일 대화 상자의 추가 기능이나 모양은 제공되지 않습니다.
 
@@ -3417,9 +3417,9 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
    `CFrameWnd::GetMenuBarInfo` 메서드는 이제 비가상 메서드입니다. 자세한 내용은 Windows SDK의 **GetMenuBarInfo 함수**를 참조하세요.
 
-- MFC ISAPI 지원: MFC에서 ISAPI(Internet Server Application Programming Interface)를 사용한 응용 프로그램 빌드를 더 이상 지원하지 않습니다. ISAPI 응용 프로그램을 빌드하려는 경우 ISAPI 확장을 직접 호출합니다.
+- MFC ISAPI 지원: MFC에서 ISAPI(Internet Server Application Programming Interface)를 사용한 애플리케이션 빌드를 더 이상 지원하지 않습니다. ISAPI 애플리케이션을 빌드하려는 경우 ISAPI 확장을 직접 호출합니다.
 
-- 사용되지 않는 ANSI API: 여러 MFC 메서드의 ANSI 버전이 사용되지 않습니다. 이후 응용 프로그램에서는 해당 메서드의 유니코드 버전을 사용합니다. 자세한 내용은 **Windows Vista 공용 컨트롤의 빌드 요구 사항**을 참조하세요.
+- 사용되지 않는 ANSI API: 여러 MFC 메서드의 ANSI 버전이 사용되지 않습니다. 이후 애플리케이션에서는 해당 메서드의 유니코드 버전을 사용합니다. 자세한 내용은 **Windows Vista 공용 컨트롤의 빌드 요구 사항**을 참조하세요.
 
 ## <a name="visual-c-2005-breaking-changes"></a>Visual C++ 2005의 주요 변경 내용
 
@@ -3429,7 +3429,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 이제 많은 함수가 매개 변수의 유효성을 검사하며, 잘못된 매개 변수가 제공될 경우 실행을 중지합니다. 이로 인해 잘못된 매개 변수를 전달하며, 함수가 해당 매개 변수를 무시하거나 단순히 오류 코드를 반환해야 하는 코드가 중단될 수 있습니다. **매개 변수 유효성 검사**를 참조하세요.
 
-- 이제 파일 설명자 값 -2를 사용하여 stdout 및 stderr을 출력에 사용할 수 없음을 나타냅니다. 예를 들어 콘솔 창이 없는 Windows 응용 프로그램의 경우입니다. 이전에는 값 -1을 사용했습니다. 자세한 내용은 [_fileno](../c-runtime-library/reference/fileno.md)를 참조하세요.
+- 이제 파일 설명자 값 -2를 사용하여 stdout 및 stderr을 출력에 사용할 수 없음을 나타냅니다. 예를 들어 콘솔 창이 없는 Windows 애플리케이션의 경우입니다. 이전에는 값 -1을 사용했습니다. 자세한 내용은 [_fileno](../c-runtime-library/reference/fileno.md)를 참조하세요.
 
 - 단일 스레드 CRT 라이브러리인 libc.lib 및 libcd.lib가 제거되었습니다. 다중 스레드 CRT 라이브러리를 사용합니다. `/ML` 컴파일러 플래그가 더 이상 지원되지 않습니다. 다중 스레드 코드와 단일 스레드 코드 간의 성능 차이가 잠재적으로 중요한 경우를 위해 일부 함수의 비잠금 버전이 추가되었습니다.
 
@@ -3449,7 +3449,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - 이제 RTC가 기본적으로 와이드 문자를 사용합니다.
 
-- 부동 소수점 제어 단어 지원 함수가 /CLR 또는 /CLR:PURE로 컴파일된 응용 프로그램에 대해 사용되지 않습니다. 영향을 받는 함수는 `_clear87`, `_clearfp`, `_control87`, `_controlfp`, `_fpreset`, `_status87`, `_statusfp`입니다. _CRT_MANAGED_FP_NO_DEPRECATE를 정의하여 사용 중단 경고를 해제할 수 있지만 관리 코드에서 이러한 함수의 사용은 예측하기 어렵고 지원되지 않습니다.
+- 부동 소수점 제어 단어 지원 함수가 /CLR 또는 /CLR:PURE로 컴파일된 애플리케이션에 대해 사용되지 않습니다. 영향을 받는 함수는 `_clear87`, `_clearfp`, `_control87`, `_controlfp`, `_fpreset`, `_status87`, `_statusfp`입니다. _CRT_MANAGED_FP_NO_DEPRECATE를 정의하여 사용 중단 경고를 해제할 수 있지만 관리 코드에서 이러한 함수의 사용은 예측하기 어렵고 지원되지 않습니다.
 
 - 이제 일부 함수가 const 포인터를 반환합니다. _CONST_RETURN을 정의하면 이전의 비 const 동작을 복구할 수 있습니다. 영향을 받는 함수는 다음과 같습니다.
 
@@ -3471,7 +3471,7 @@ Visual Studio 2013의 C++ 컴파일러는 Visual Studio 2010에서 구현된 _IT
 
 - `valarray::resize()`를 호출하는 경우 `valarray`의 내용이 손실되고 기본값으로 대체됩니다. `resize()` 메서드는 벡터처럼 동적으로 확장하는 대신 `valarray`를 다시 초기화합니다.
 
-- 디버그 반복기: C 런타임 라이브러리의 디버그 버전으로 빌드된 응용 프로그램이 반복기를 잘못 사용하는 경우 런타임에 어설션이 표시될 수 있습니다. 이러한 어설션을 사용하지 않으려면 _HAS_ITERATOR_DEBUGGING(Visual Studio 2010 후에는 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 대체됨)을 0으로 정의해야 합니다. 자세한 내용은 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 참조하세요.
+- 디버그 반복기: C 런타임 라이브러리의 디버그 버전으로 빌드된 애플리케이션이 반복기를 잘못 사용하는 경우 런타임에 어설션이 표시될 수 있습니다. 이러한 어설션을 사용하지 않으려면 _HAS_ITERATOR_DEBUGGING(Visual Studio 2010 후에는 [_ITERATOR_DEBUG_LEVEL](../standard-library/iterator-debug-level.md)로 대체됨)을 0으로 정의해야 합니다. 자세한 내용은 [디버그 반복기 지원](../standard-library/debug-iterator-support.md)을 참조하세요.
 
 ## <a name="visual-c-net-2003-breaking-changes"></a>Visual C++ .NET 2003의 주요 변경 내용
 
