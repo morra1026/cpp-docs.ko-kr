@@ -67,7 +67,7 @@ wchar_t *_wgetdcwd(
 지정된 드라이브를 사용할 수 없는 경우 또는 드라이브 유형(예: 이동식, 고정, CD-ROM, RAM 디스크 또는 네트워크 드라이브)을 확인할 수 없는 경우 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다.
 
 *buffer*<br/>
-경로에 대한 저장소 위치 또는 **NULL**입니다.
+경로에 대한 스토리지 위치 또는 **NULL**입니다.
 
 하는 경우 **NULL** 지정 된 경우이 함수에서의 버퍼를 하나 이상 할당 *maxlen* 사용 하 여 크기 **malloc**, 및의 반환 값 **_getdcwd**할당된 된 버퍼에 대 한 포인터입니다. 호출 하 여 버퍼를 해제할 수 있습니다 **무료** 포인터를 전달 합니다.
 

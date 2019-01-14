@@ -68,7 +68,7 @@ wchar_t *_wgetdcwd_dbg(
 디스크 드라이브의 이름입니다.
 
 *buffer*<br/>
-경로의 저장소 위치입니다.
+경로의 스토리지 위치입니다.
 
 *maxlen*<br/>
 문자에서는 경로의 최대 길이: **char** 에 대 한 **_getdcwd_dbg** 하 고 **wchar_t** 에 대 한 **_wgetdcwd_dbg**합니다.

@@ -3,12 +3,12 @@ title: 형식 변환 및 형식 안전성(최신 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
-ms.openlocfilehash: 201f09cc9ac17f76634103c9c9b6c0259c8a8637
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 79285e4870b73ff01ed3b230a0162f87c0400aa8
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332623"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220649"
 ---
 # <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(최신 C++)
 
@@ -178,7 +178,7 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
 
 ## <a name="see-also"></a>참고자료
 
-[C++ 형식 시스템(모던 C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++ 형식 시스템(최신 C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
+[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

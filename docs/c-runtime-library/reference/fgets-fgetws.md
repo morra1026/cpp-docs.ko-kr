@@ -58,7 +58,7 @@ wchar_t *fgetws(
 ### <a name="parameters"></a>매개 변수
 
 *str*<br/>
-데이터의 저장소 위치입니다.
+데이터의 스토리지 위치입니다.
 
 *numChars*<br/>
 읽을 최대 문자 수입니다.

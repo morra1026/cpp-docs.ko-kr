@@ -39,7 +39,7 @@ ms.locfileid: "53248574"
 |[/clr](clr-common-language-runtime-compilation.md)|공용 언어 런타임에 실행할 출력 파일을 생성합니다.|
 |[/EH](eh-exception-handling-model.md)|예외 처리 모델을 지정합니다.|
 |[/fp](fp-specify-floating-point-behavior.md)|부동 소수점 동작을 지정합니다.|
-|[/GA](ga-optimize-for-windows-application.md)|Windows 응용 프로그램에 맞게 최적화합니다.|
+|[/GA](ga-optimize-for-windows-application.md)|Windows 애플리케이션에 맞게 최적화합니다.|
 |[/Gd](gd-gr-gv-gz-calling-convention.md)|`__cdecl` 호출 규칙을 사용합니다(x86 (x86 전용)|
 |[/Ge](ge-enable-stack-probes.md)|더 이상 사용되지 않습니다. 스택 프로브를 활성화합니다.|
 |[/GF](gf-eliminate-duplicate-strings.md)|문자열 풀링을 사용합니다.|
@@ -51,7 +51,7 @@ ms.locfileid: "53248574"
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` 호출 규칙을 사용합니다(x86 (x86 전용)|
 |[/GS](gs-buffer-security-check.md)|버퍼 보안을 검사합니다.|
 |[/Gs](gs-control-stack-checking-calls.md)|스택 프로브를 제어합니다.|
-|[/GT](gt-support-fiber-safe-thread-local-storage.md)|정적 스레드 로컬 저장소를 사용하여 할당한 데이터의 파이버 안전을 지원합니다.|
+|[/GT](gt-support-fiber-safe-thread-local-storage.md)|정적 스레드 로컬 스토리지를 사용하여 할당한 데이터의 파이버 안전을 지원합니다.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|제어 흐름 가드 보안 검사를 추가합니다.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` 호출 규칙을 사용합니다(x86 및 x64에만 해당).|
 |[/Gw](gw-optimize-global-data.md)|전체 프로그램 전역 데이터 최적화를 사용하도록 설정합니다.|

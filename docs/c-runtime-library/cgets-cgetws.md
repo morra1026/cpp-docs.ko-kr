@@ -42,7 +42,7 @@ ms.locfileid: "50434270"
 >  이러한 함수는 사용되지 않습니다. Visual Studio 2015부터 CRT에서 사용할 수 없습니다. 이러한 함수의 안전한 버전인 _cgets_s 및 _cgetws_s는 계속 사용할 수 있습니다. 이러한 대체 함수에 대한 자세한 내용은 [_cgets_s, _cgetws_s](../c-runtime-library/reference/cgets-s-cgetws-s.md)를 참조하세요.
 
 > [!IMPORTANT]
->  이 API는 Windows 런타임에서 실행되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+>  이 API는 Windows 런타임에서 실행되는 애플리케이션에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -66,7 +66,7 @@ wchar_t *_cgetws(
 #### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-데이터의 저장소 위치입니다.
+데이터의 스토리지 위치입니다.
 
 ## <a name="return-value"></a>반환 값
 

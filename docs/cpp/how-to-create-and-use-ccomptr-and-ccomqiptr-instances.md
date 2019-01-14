@@ -4,12 +4,12 @@ ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b0356cfb-12cc-4ee8-b988-8311ed1ab5e0
-ms.openlocfilehash: 8065e0b8782c1c28d83aa6fc9690150793fe51ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bcabfe80185939b899c84fc44f71b98608fc3c7
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518705"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220552"
 ---
 # <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>방법: CComPtr 및 CComQIPtr 인스턴스 만들기 및 사용
 
@@ -39,4 +39,4 @@ COM(구성 요소 개체 모델) 개체를 인스턴스화할 때 소멸자에�
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(최신 C++)](../cpp/smart-pointers-modern-cpp.md)

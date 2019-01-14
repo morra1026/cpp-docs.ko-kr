@@ -1,17 +1,17 @@
 ﻿---
-title: '방법: shared_ptr 인스턴스 만들기 및 사용'
+title: '방법: Shared_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 7d6ebb73-fa0d-4b0b-a528-bf05de96518e
-ms.openlocfilehash: 79d85de6859096bdff3e2bc17357b721e5ce5846
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 8363139efddb2fa64057fdb995ab7bd5dfbcfd9b
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176278"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220597"
 ---
-# <a name="how-to-create-and-use-sharedptr-instances"></a>방법: shared_ptr 인스턴스 만들기 및 사용
+# <a name="how-to-create-and-use-sharedptr-instances"></a>방법: Shared_ptr 인스턴스 만들기 및 사용
 
 `shared_ptr` 형식은 둘 이상의 소유자가 메모리에 있는 개체의 수명을 관리하는 시나리오를 위해 디자인된 C++ 표준 라이브러리의 스마트 포인터입니다. `shared_ptr`을 초기화한 후 복사, 함수 인수의 값으로 전달 및 다른 `shared_ptr` 인스턴스로 할당할 수 있습니다. 모든 인스턴스는 동일한 개체를 가리키고 새 `shared_ptr`이 추가되거나 범위를 벗어나거나 다시 설정될 때마다 하나의 "제어 블록"에 대한 액세스를 공유합니다. 참조 횟수가 0에 도달하면 메모리 리소스 및 제어 블록이 삭제됩니다.
 
@@ -67,4 +67,4 @@ ms.locfileid: "52176278"
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(최신 C++)](../cpp/smart-pointers-modern-cpp.md)

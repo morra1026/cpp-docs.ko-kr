@@ -16,12 +16,12 @@ helpviewer_keywords:
 - __addgsdword intrinsic
 - __addgsbyte intrinsic
 ms.assetid: 4fa03e69-d849-49ed-ba37-1d3aa23c2a21
-ms.openlocfilehash: 76d511b387ce52a6c5127b1e2b1f6051565f4cc6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 9514c193468d526aa645ea7984691034feebc07a
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331427"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220467"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 
@@ -52,7 +52,7 @@ void __addgsqword(
 
 #### <a name="parameters"></a>매개 변수
 
-*오프셋*<br/>
+*Offset*<br/>
 [in] 시작 부분 으로부터의 오프셋 `GS`합니다.
 
 *Data*<br/>
@@ -69,7 +69,7 @@ void __addgsqword(
 
 ## <a name="remarks"></a>설명
 
-이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 하 고 이러한 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 루틴은 내장 함수로 사용할 수만 있습니다.
 
 **Microsoft 전용 종료**
 

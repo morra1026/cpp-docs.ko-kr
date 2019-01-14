@@ -51,7 +51,7 @@ class cache_chunklist
 |멤버 함수|설명|
 |-|-|
 |[allocate](#allocate)|메모리 블록을 할당합니다.|
-|[deallocate](#deallocate)|지정된 위치부터 시작하여 저장소에서 지정된 개수의 개체를 해제합니다.|
+|[deallocate](#deallocate)|지정된 위치부터 시작하여 스토리지에서 지정된 개수의 개체를 해제합니다.|
 
 ## <a name="requirements"></a>요구 사항
 
@@ -91,7 +91,7 @@ cache_chunklist();
 
 ## <a name="deallocate"></a>  cache_chunklist::deallocate
 
-지정된 위치부터 시작하여 저장소에서 지정된 개수의 개체를 해제합니다.
+지정된 위치부터 시작하여 스토리지에서 지정된 개수의 개체를 해제합니다.
 
 ```cpp
 void deallocate(void* ptr, std::size_t count);
@@ -101,8 +101,8 @@ void deallocate(void* ptr, std::size_t count);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*ptr*|저장소에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
-|*count*|저장소에서 할당을 취소할 개체의 수입니다.|
+|*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
+|*count*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
 ### <a name="remarks"></a>설명
 

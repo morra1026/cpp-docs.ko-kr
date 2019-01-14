@@ -48,7 +48,7 @@ int fsetpos(
 **FILE** 구조체에 대한 포인터입니다.
 
 *pos*<br/>
-위치 표시기 저장소입니다.
+위치 표시기 스토리지입니다.
 
 ## <a name="return-value"></a>반환 값
 

@@ -3,12 +3,12 @@ title: 문자열 및 I-O 서식(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3954e8de-a59b-4175-89c9-4ee842ab89ed
-ms.openlocfilehash: 816eb71dae011f853a6e7ade1a1a2a8144a457c5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: c051a7d70042456d30bee0ebb2b362c5d05b8e37
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326188"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220506"
 ---
 # <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(최신 C++)
 
@@ -42,11 +42,11 @@ int main()
 
 Boost.Format의 몇 가지 이점은 다음과 같습니다.
 
-- 안전: 형식이 안전한 오류에 대 한 예외를 throw-예를 들어, 너무 적거나 너무 많은 항목 사양입니다.
+- 안전 하 게 보호 합니다. 형식이 안전한 오류에 대 한 예외를 throw-예를 들어, 너무 적거나 너무 많은 항목 사양입니다.
 
-- 스트리밍할 수 있는 모든 형식에 대 한 확장 가능: 작동 합니다.
+- 확장 가능 합니다. 스트리밍할 수 있는 모든 형식에 대해 작동 합니다.
 
-- 간편함: 표준 Posix와 유사한 형식 문자열입니다.
+- 편리 하 게 합니다. 표준 Posix와 유사한 형식 문자열입니다.
 
 Boost.Format c + +에 빌드되어 있지만 [iostreams](../standard-library/iostream-programming.md), 성능 최적화 하지 않은 안전 하 고 확장 가능 합니다. 성능 최적화를 요구 하면 C는 것이 좋습니다 [printf](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md) 하 고 [sprintf](../c-runtime-library/reference/sprintf-sprintf-l-swprintf-swprintf-l-swprintf-l.md), 빠르고 쉽게 사용할 수는 있습니다. 그러나 없는 확장 가능한 또는 취약성 으로부터 안전 합니다. (안전한 버전이 존재 하지만 성능이 약간 저하 있습니다. 자세한 내용은 [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md) 하 고 [sprintf_s, _sprintf_s_l, swprintf_s, _swprintf_s_l](../c-runtime-library/reference/sprintf-s-sprintf-s-l-swprintf-s-swprintf-s-l.md)).
 
@@ -64,7 +64,7 @@ Boost.Format c + +에 빌드되어 있지만 [iostreams](../standard-library/ios
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>
 [\<iostream>](../standard-library/iostream.md)<br/>

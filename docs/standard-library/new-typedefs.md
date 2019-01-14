@@ -27,7 +27,7 @@ typedef void (*new_handler)();
 
 ### <a name="remarks"></a>설명
 
-이 유형의 처리기 함수는 추가 저장소 요청을 충족할 수 없을 때 **operatornew** 또는 `operator new[]`에 의해 호출됩니다.
+이 유형의 처리기 함수는 추가 스토리지 요청을 충족할 수 없을 때 **operatornew** 또는 `operator new[]`에 의해 호출됩니다.
 
 ### <a name="example"></a>예제
 

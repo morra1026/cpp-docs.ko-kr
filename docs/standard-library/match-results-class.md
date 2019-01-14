@@ -30,7 +30,7 @@ class match_results
 부분 일치에 대한 반복기 형식입니다.
 
 *할당*<br/>
-저장소 관리를 위한 할당자의 형식입니다.
+스토리지 관리를 위한 할당자의 형식입니다.
 
 ## <a name="remarks"></a>설명
 
@@ -46,7 +46,7 @@ class match_results
 
 |형식 이름|설명|
 |-|-|
-|[allocator_type](#allocator_type)|저장소 관리를 위한 할당자의 형식입니다.|
+|[allocator_type](#allocator_type)|스토리지 관리를 위한 할당자의 형식입니다.|
 |[char_type](#char_type)|요소의 형식입니다.|
 |[const_iterator](#const_iterator)|부분 일치에 대한 상수 반복기 형식입니다.|
 |[const_reference](#const_reference)|요소 const 참조의 형식입니다.|
@@ -190,7 +190,7 @@ empty == false
 
 ## <a name="allocator_type"></a>  match_results::allocator_type
 
-저장소 관리를 위한 할당자의 형식입니다.
+스토리지 관리를 위한 할당자의 형식입니다.
 
 ```cpp
 typedef Alloc allocator_type;

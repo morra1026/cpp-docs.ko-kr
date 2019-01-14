@@ -1,17 +1,17 @@
 ---
-title: '방법: 예외 코드와 예외가 아닌 코드 간 인터페이스'
+title: '방법: 예외 및 비 예외 코드 간 인터페이스'
 ms.custom: how-to
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: fd5bb4af-5665-46a1-a321-614b48d4061e
-ms.openlocfilehash: b6da1142ee04668033a516f2c20c4a2354ff5598
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8ff92f965f48faa7954ae0364ec7877428e519c
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576685"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220629"
 ---
-# <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>방법: 예외 코드와 예외가 아닌 코드 간 인터페이스
+# <a name="how-to-interface-between-exceptional-and-non-exceptional-code"></a>방법: 예외 및 비 예외 코드 간 인터페이스
 
 이 문서에서는 C++ 모듈에서 일관된 예외 처리를 구현하는 방법 및 예외 경계에서 이러한 예외를 오류 코드에서 및 오류 코드로 변환하는 방법을 설명합니다.
 
@@ -236,5 +236,5 @@ bool DiffFiles3(const string& file1, const string& file2)
 
 ## <a name="see-also"></a>참고자료
 
-[오류 및 예외 처리(모던 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[오류 및 예외 처리(최신 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [방법: 예외 안전성을 위한 디자인](../cpp/how-to-design-for-exception-safety.md)<br/>

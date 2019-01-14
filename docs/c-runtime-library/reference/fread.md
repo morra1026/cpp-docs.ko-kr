@@ -49,7 +49,7 @@ size_t fread(
 ### <a name="parameters"></a>매개 변수
 
 *buffer*<br/>
-데이터의 저장소 위치입니다.
+데이터의 스토리지 위치입니다.
 
 *size*<br/>
 항목 크기(바이트)입니다.

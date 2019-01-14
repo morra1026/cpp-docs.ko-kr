@@ -15,7 +15,7 @@ ms.locfileid: "51520646"
 ---
 # <a name="ltnewgt"></a>&lt;new&gt;
 
-프로그램이 제어하는 저장소의 할당 및 해제를 제어하는 여러 형식 및 함수를 정의합니다. 또한 저장소 관리 오류에 대한 보고를 위해 구성 요소를 정의합니다.
+프로그램이 제어하는 스토리지의 할당 및 해제를 제어하는 여러 형식 및 함수를 정의합니다. 또한 스토리지 관리 오류에 대한 보고를 위해 구성 요소를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,10 +49,10 @@ ms.locfileid: "51520646"
 
 |연산자|설명|
 |-|-|
-|[operator delete](../standard-library/new-operators.md#op_delete)|개별 개체에 대해 저장소를 할당 해제하기 위해 delete 식에서 호출되는 함수입니다.|
-|[operator delete&#91;&#93;](../standard-library/new-operators.md#op_delete_arr)|개체 배열에 대해 저장소를 할당 해제하기 위해 delete 식에서 호출되는 함수입니다.|
-|[operator new](../standard-library/new-operators.md#op_new)|개별 개체에 대해 저장소를 할당하기 위해 new 식에서 호출되는 함수입니다.|
-|[operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|개체 배열에 대해 저장소를 할당하기 위해 new 식에서 호출되는 함수입니다.|
+|[operator delete](../standard-library/new-operators.md#op_delete)|개별 개체에 대해 스토리지를 할당 해제하기 위해 delete 식에서 호출되는 함수입니다.|
+|[operator delete&#91;&#93;](../standard-library/new-operators.md#op_delete_arr)|개체 배열에 대해 스토리지를 할당 해제하기 위해 delete 식에서 호출되는 함수입니다.|
+|[operator new](../standard-library/new-operators.md#op_new)|개별 개체에 대해 스토리지를 할당하기 위해 new 식에서 호출되는 함수입니다.|
+|[operator new&#91;&#93;](../standard-library/new-operators.md#op_new_arr)|개체 배열에 대해 스토리지를 할당하기 위해 new 식에서 호출되는 함수입니다.|
 
 ### <a name="classes"></a>클래스
 

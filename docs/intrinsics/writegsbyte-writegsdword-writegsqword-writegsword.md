@@ -12,12 +12,12 @@ helpviewer_keywords:
 - __writegsword intrinsic
 - __writegsdword intrinsic
 ms.assetid: 7746cf6d-2259-4139-9aab-c07dd75c8037
-ms.openlocfilehash: 4e248d8a500dd7c855213ef87198f0227b3749a6
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 9276c727d93491e3d85cbae26f6b3df9c0384c59
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326942"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220246"
 ---
 # <a name="writegsbyte-writegsdword-writegsqword-writegsword"></a>__writegsbyte, __writegsdword, __writegsqword, __writegsword
 
@@ -48,7 +48,7 @@ void __writegsqword(
 
 #### <a name="parameters"></a>매개 변수
 
-*오프셋*<br/>
+*Offset*<br/>
 [in] 쓸 GS 시작 부분 으로부터의 오프셋입니다.
 
 *Data*<br/>
@@ -67,7 +67,7 @@ void __writegsqword(
 
 ## <a name="remarks"></a>설명
 
-이러한 내장 함수는 커널 모드 에서만 사용할 수 있습니다 하 고 이러한 루틴은 내장 함수로 사용할 수 있습니다.
+이러한 루틴은 내장 함수로 사용할 수만 있습니다.
 
 **Microsoft 전용 종료**
 

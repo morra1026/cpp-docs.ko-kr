@@ -90,7 +90,7 @@ class allocator_base
 |[address](#address)|값이 지정된 개체의 주소를 찾습니다.|
 |[allocate](#allocate)|적어도 지정된 개수의 요소를 저장할 수 있을 만큼 큰 메모리 블록을 할당합니다.|
 |[construct](#construct)|지정된 값으로 초기화된 특정 형식의 개체를 지정된 주소에 생성합니다.|
-|[deallocate](#deallocate)|지정된 위치부터 시작하여 저장소에서 지정된 개수의 개체를 해제합니다.|
+|[deallocate](#deallocate)|지정된 위치부터 시작하여 스토리지에서 지정된 개수의 개체를 해제합니다.|
 |[destroy](#destroy)|개체가 저장된 메모리 할당을 취소하지 않고 개체 소멸자를 호출합니다.|
 |[max_size](#max_size)|사용 가능한 메모리가 모두 사용되기 전에 allocator 클래스의 개체가 할당할 수 있는 *Type* 형식의 요소 수를 반환합니다.|
 
@@ -134,8 +134,8 @@ void _Chardealloc(void* ptr, size_type count);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*ptr*|저장소에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
-|*count*|저장소에서 할당을 취소할 개체의 수입니다.|
+|*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
+|*count*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -248,7 +248,7 @@ void construct(pointer ptr, const Type& val);
 
 ## <a name="deallocate"></a>  allocator_base::deallocate
 
-지정된 위치부터 시작하여 저장소에서 지정된 개수의 개체를 해제합니다.
+지정된 위치부터 시작하여 스토리지에서 지정된 개수의 개체를 해제합니다.
 
 ```cpp
 void deallocate(pointer ptr, size_type _Nx);
@@ -258,8 +258,8 @@ void deallocate(pointer ptr, size_type _Nx);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*ptr*|저장소에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
-|*_Nx*|저장소에서 할당을 취소할 개체의 수입니다.|
+|*ptr*|스토리지에서 할당을 취소할 첫 번째 개체에 대한 포인터입니다.|
+|*_Nx*|스토리지에서 할당을 취소할 개체의 수입니다.|
 
 ### <a name="remarks"></a>설명
 

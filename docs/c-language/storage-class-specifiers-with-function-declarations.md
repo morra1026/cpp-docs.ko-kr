@@ -1,5 +1,5 @@
 ---
-title: 함수 선언이 포함된 저장소 클래스 지정자
+title: 함수 선언이 포함된 스토리지 클래스 지정자
 ms.date: 11/04/2016
 helpviewer_keywords:
 - function specifiers, storage class
@@ -16,9 +16,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50447062"
 ---
-# <a name="storage-class-specifiers-with-function-declarations"></a>함수 선언이 포함된 저장소 클래스 지정자
+# <a name="storage-class-specifiers-with-function-declarations"></a>함수 선언이 포함된 스토리지 클래스 지정자
 
-함수 선언에서 **static** 또는 `extern` 저장소 클래스 지정자를 사용할 수 있습니다. 함수에는 항상 전역 수명이 있습니다.
+함수 선언에서 **static** 또는 `extern` 스토리지 클래스 지정자를 사용할 수 있습니다. 함수에는 항상 전역 수명이 있습니다.
 
 **Microsoft 전용**
 
@@ -32,7 +32,7 @@ ms.locfileid: "50447062"
 
 - `extern`으로 선언된 함수는 나중에 **static**으로 재선언하지 않는 한 프로그램의 모든 소스 파일에서 볼 수 있습니다. 모든 함수는 `extern` 함수를 호출할 수 있습니다.
 
-- 저장소 클래스 지정자를 생략하는 함수 선언은 기본적으로 `extern`입니다.
+- 스토리지 클래스 지정자를 생략하는 함수 선언은 기본적으로 `extern`입니다.
 
 **Microsoft 전용**
 

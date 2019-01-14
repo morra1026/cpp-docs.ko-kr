@@ -53,7 +53,7 @@ ms.locfileid: "50646734"
 |[/FS](fs-force-synchronous-pdb-writes.md)|MSPDBSRV.EXE를 통해 serialize될 프로그램 데이터베이스(PDB) 파일에 강제로 씁니다.|
 |[/FU](fu-name-forced-hash-using-file.md)|파일 이름이 [#using](../../preprocessor/hash-using-directive-cpp.md) 지시문에 전달된 것처럼 사용되도록 합니다.|
 |[/Fx](fx-merge-injected-code.md)|삽입된 코드와 소스 파일을 병합합니다.|
-|[/GA](ga-optimize-for-windows-application.md)|Windows 응용 프로그램에 맞게 코드를 최적화합니다.|
+|[/GA](ga-optimize-for-windows-application.md)|Windows 애플리케이션에 맞게 코드를 최적화합니다.|
 |[/Gd](gd-gr-gv-gz-calling-convention.md)|`__cdecl` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/Ge](ge-enable-stack-probes.md)|더 이상 사용되지 않습니다. 스택 프로브를 활성화합니다.|
 |[/GF](gf-eliminate-duplicate-strings.md)|문자열 풀링을 사용합니다.|
@@ -65,7 +65,7 @@ ms.locfileid: "50646734"
 |[/Gr](gd-gr-gv-gz-calling-convention.md)|`__fastcall` 호출 규칙을 사용합니다. x86 전용입니다.|
 |[/GS](gs-buffer-security-check.md)|보안 검사를 버퍼링합니다.|
 |[/Gs](gs-control-stack-checking-calls.md)|스택 프로브를 제어합니다.|
-|[/GT](gt-support-fiber-safe-thread-local-storage.md)|정적 스레드 로컬 저장소를 사용하여 할당한 데이터의 파이버 안전을 지원합니다.|
+|[/GT](gt-support-fiber-safe-thread-local-storage.md)|정적 스레드 로컬 스토리지를 사용하여 할당한 데이터의 파이버 안전을 지원합니다.|
 |[/guard:cf](guard-enable-control-flow-guard.md)|제어 흐름 가드 보안 검사를 추가합니다.|
 |[/Gv](gd-gr-gv-gz-calling-convention.md)|`__vectorcall` 호출 규칙을 사용합니다(x86 및 x64에만 해당).|
 |[/Gw](gw-optimize-global-data.md)|전체 프로그램 전역 데이터 최적화를 사용하도록 설정합니다.|

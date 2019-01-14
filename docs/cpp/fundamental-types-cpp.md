@@ -82,7 +82,7 @@ C++의 기본 형식은 정수 계열, 부동 소수점 및 void의 세 가지 �
 
 **Microsoft 전용**
 
-다음 표에서는 Microsoft C++의 기본 형식에 필요한 저장소 크기를 나열합니다.
+다음 표에서는 Microsoft C++의 기본 형식에 필요한 스토리지 크기를 나열합니다.
 
 ### <a name="sizes-of-fundamental-types"></a>기본 형식의 크기
 

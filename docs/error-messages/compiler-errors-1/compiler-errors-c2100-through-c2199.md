@@ -100,7 +100,7 @@ ms.locfileid: "50546562"
 |[컴파일러 오류 C2156](compiler-error-c2156.md)|pragma는 함수 외부에 있어야 합니다.|
 |[컴파일러 오류 C2157](compiler-error-c2157.md)|'*식별자*': pragma 목록에서 사용 하기 전에 선언 되어야 합니다|
 |[컴파일러 오류 C2158](compiler-error-c2158.md)|'*형식*': #pragma make_public 지시문은 현재 기본 템플릿이 아닌 형식에 대 한 지원|
-|[컴파일러 오류 C2159](compiler-error-c2159.md)|저장소 클래스를 두 개 이상 지정했습니다.|
+|[컴파일러 오류 C2159](compiler-error-c2159.md)|스토리지 클래스를 두 개 이상 지정했습니다.|
 |[컴파일러 오류 C2160](compiler-error-c2160.md)|매크로 정의 시작에 '##'이 올 수 없습니다.|
 |[컴파일러 오류 C2161](compiler-error-c2161.md)|매크로 정의 끝에 '##'이 올 수 없습니다.|
 |[컴파일러 오류 C2162](compiler-error-c2162.md)|예상된 매크로 정식 매개 변수|

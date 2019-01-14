@@ -18,7 +18,7 @@ ms.locfileid: "54031254"
 
 이 항목에서는 Visual C++에서의 다양한 문자열 형식을 다른 형식으로 변환하는 방법에 대해 설명하며 `char*`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md) 및 <xref:System.String?displayProperty=fullName> 문자열 형식 변환을 다룹니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
 
-## <a name="converting-from-char-"></a>char*에서 변환
+## <a name="converting-from-char-"></a>char\*에서 변환
 
 ## <a name="example"></a>예제
 
@@ -119,7 +119,7 @@ Hello, World! (basic_string)
 Hello, World! (System::String)
 ```
 
-## <a name="converting-from-wchart-"></a>wchar_t*에서 변환
+## <a name="converting-from-wchart-"></a>wchar_t\*에서 변환
 
 ## <a name="example"></a>예제
 
@@ -603,7 +603,7 @@ Hello, World! (System::String)
 
 ### <a name="description"></a>설명
 
-이 예제에서는 `basic_string`을 위에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다.
+이 예제에서는 `basic_string` 을 위에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다.
 
 ### <a name="code"></a>코드
 
@@ -806,7 +806,7 @@ Hello, World! (basic_string)
 [C 스타일 문자열 관련 CString 작업](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
 [방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
 [방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
-[방법: System:: string을 wchar_t * 또는 char 변환합니다\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
+[방법: 방법: System::String을 wchar_t* 또는 char*로\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
 [CComBSTR을 사용한 프로그래밍](../atl/programming-with-ccombstr-atl.md)<br/>
 [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>
 [wcstombs_s, _wcstombs_s_l](../c-runtime-library/reference/wcstombs-s-wcstombs-s-l.md)<br/>
