@@ -8,23 +8,22 @@ helpviewer_keywords:
 - WEOF function
 - end of file
 ms.assetid: a7150563-cdae-4cdf-9798-ad509990e505
-ms.openlocfilehash: 9317fdad16121374b31e0862f3326f4150c71579
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4c35518130fc233afd055133704bcb0abaccca8
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667391"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220727"
 ---
 # <a name="eof-weof"></a>EOF, WEOF
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 파일 끝(또는 경우에 따라 오류)이 발견되면 I/O 루틴에 의해 EOF가 반환됩니다.
 

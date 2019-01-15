@@ -20,12 +20,12 @@ helpviewer_keywords:
 - _SH_DENYNO constant
 - SH_COMPAT constant
 ms.assetid: 95fadc3a-55dc-473d-98b5-e8211900465d
-ms.openlocfilehash: ecc7e5fc5afaf1d6d97f3ab46be3b1ed3001d8e5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 5bcebc4f9321ebf3f85bdd757118f779a759fc62
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519544"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220519"
 ---
 # <a name="sharing-constants"></a>상수 공유
 
@@ -34,11 +34,10 @@ ms.locfileid: "51519544"
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <share.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 *shflag* 인수는 공유 모드를 결정하며 하나 이상의 상수로 구성됩니다. *oflag* 인수([파일 상수](../c-runtime-library/file-constants.md) 참조)와 함께 사용할 수 있습니다.
 

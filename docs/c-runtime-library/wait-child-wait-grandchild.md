@@ -12,23 +12,22 @@ helpviewer_keywords:
 - _WAIT_CHILD constant
 - _WAIT_GRANDCHILD constant
 ms.assetid: 7acd96fa-d118-4339-bb00-e5afaf286945
-ms.openlocfilehash: 714b4e79f1c229817a12908aad0d726f74023036
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: b484f068ce94ab7a2a637723641e1206072cf24b
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524393"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220272"
 ---
 # <a name="waitchild-waitgrandchild"></a>_WAIT_CHILD, _WAIT_GRANDCHILD
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <process.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_cwait` 함수는 다른 프로세스를 대기하는 모든 프로세스에서 사용할 수 있습니다(프로세스 ID가 알려진 경우). 작업 인수는 다음 값 중 하나가 될 수 있습니다.
 

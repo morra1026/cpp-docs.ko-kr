@@ -12,23 +12,22 @@ helpviewer_keywords:
 - _S_IWRITE constant
 - _S_IREAD constant
 ms.assetid: 593cad33-31d1-44d2-8941-8af7d210c88c
-ms.openlocfilehash: 0e4a60b5f3dad70f881387d5befca2def9bff7f3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: c0c5e02458fa6b5436b029392a40bd2f54f22c0c
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520428"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220285"
 ---
 # <a name="file-permission-constants"></a>파일 사용 권한 상수
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <sys/stat.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `_O_CREAT`(`_open`, `_sopen`)가 지정되었을 때 이러한 상수 중 하나가 필요합니다.
 
