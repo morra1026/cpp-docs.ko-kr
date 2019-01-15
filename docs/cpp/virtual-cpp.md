@@ -37,7 +37,7 @@ virtual [access-specifier] base-class-name
 멤버 함수를 선언합니다.
 
 *액세스 지정자*<br/>
-기본 클래스 **public**, **protected** 또는 **private**에 대한 액세스 수준을 정의합니다. **virtual** 키워드 앞이나 뒤에 나타날 수 있습니다.
+기본 클래스에 대한 액세스 수준을 **public**, **protected** 또는 **private**으로 정의합니다. **virtual** 키워드 앞이나 뒤에 나타날 수 있습니다.
 
 *기본 클래스 이름*<br/>
 이전에 선언된 클래스 형식을 식별합니다.
