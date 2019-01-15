@@ -21,9 +21,9 @@ ms.locfileid: "50460439"
 
 내보내기가 없는 .exe 파일을 빌드하는 경우 .def 파일을 사용하면 출력 파일의 크기가 커지고 로드 속도는 느려지게 됩니다.
 
-예제를 보려면 [DEF 파일을 사용하여 DLL에서 내보내기](../../build/exporting-from-a-dll-using-def-files.md)를 참조하십시오.
+예제를 보려면 [DEF 파일을 사용하여 DLL에서 내보내기](../../build/exporting-from-a-dll-using-def-files.md)를 참조하세요.
 
-자세한 내용은 다음 단원을 참조하십시오.
+자세한 내용은 다음 단원을 참조하세요.
 
 - [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)
 
