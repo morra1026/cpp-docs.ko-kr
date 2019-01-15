@@ -27,7 +27,7 @@ ms.locfileid: "50591791"
 
 ## <a name="remarks"></a>설명
 
-다음 예제에서는 **if** 문의 일부 문으로서 복합 문을 사용합니다. 구문에 대한 자세한 정보는 [If 문](../cpp/if-else-statement-cpp.md)을 참조하십시오:
+다음 예제에서는 **if** 문의 일부 문으로서 복합 문을 사용합니다. 구문에 대한 자세한 정보는 [If 문](../cpp/if-else-statement-cpp.md)을 참조하십시오.
 
 ```cpp
 if( Amount > 100 )
