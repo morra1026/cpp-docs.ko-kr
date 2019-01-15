@@ -47,7 +47,7 @@ class DerivedClass: public BaseClass
 };
 ```
 
-멤버 함수를 재정의할 수 있음을 지정하는 방법에 대한 자세한 내용은 [override 지정자](../cpp/override-specifier.md)를 참조하십시오.
+멤버 함수를 재정의할 수 있음을 지정하는 방법에 대한 자세한 내용은 [override 지정자](../cpp/override-specifier.md)를 참조하세요.
 
 다음 예제는 **final** 키워드를 사용하여 클래스를 상속할 수 없음을 지정합니다.
 
@@ -64,5 +64,5 @@ class DerivedClass: public BaseClass // compiler error: BaseClass is
 
 ## <a name="see-also"></a>참고 항목
 
-[키워드 (C++)](../cpp/keywords-cpp.md)<br/>
+[키워드(C++)](../cpp/keywords-cpp.md)<br/>
 [override 지정자](../cpp/override-specifier.md)
