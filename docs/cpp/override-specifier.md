@@ -27,7 +27,7 @@ function-declaration override;
 
 ## <a name="example"></a>예제
 
-**override**를 사용하여 코드에서 부주의한 상속 동작이 생기지 않도록 합니다. 다음 예제에서는 **override**를 사용하지 않고 의도하지 않은 파생 클래스의 멤버 함수 동작이 발생하는 경우를 보여 줍니다. 컴파일러는 이 코드의 오류를 내보내지 않습니다.
+**override**를 사용하여 코드에서 부주의한 상속 동작이 생기지 않도록 합니다. 다음 예제에서는 **override**를 사용하지 않아 의도하지 않은 파생 클래스의 멤버 함수 동작이 발생하는 경우를 보여 줍니다. 컴파일러는 이 코드의 오류를 내보내지 않습니다.
 
 ```cpp
 class BaseClass
@@ -78,9 +78,9 @@ class DerivedClass: public BaseClass
 };
 ```
 
-함수를 재정의할 수 없으며 클래스를 상속할 수 없도록 지정하려면 [final](../cpp/final-specifier.md) 키워드를 사용하십시오.
+함수를 재정의할 수 없으며 클래스를 상속할 수 없도록 지정하려면 [final](../cpp/final-specifier.md) 키워드를 사용하세요.
 
 ## <a name="see-also"></a>참고 항목
 
 [final 지정자](../cpp/final-specifier.md)<br/>
-[키워드 (C++)](../cpp/keywords-cpp.md)
+[키워드(C++)](../cpp/keywords-cpp.md)
