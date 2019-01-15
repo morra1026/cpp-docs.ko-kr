@@ -17,25 +17,25 @@ ms.locfileid: "51692752"
 ---
 # <a name="memory-management"></a>메모리 관리
 
-문서의이 그룹의 Microsoft Foundation 클래스 라이브러리 (MFC) 메모리 관리와 관련 된 일반적인 서비스를 활용 하는 방법을 설명 합니다. 메모리 할당 두 범주로 나눌 수 있습니다: 프레임 할당 및 힙 할당 합니다.
+다음의 항목들을 통하여 메모리 관리와 관련된 MFC(Microsoft Foundation Class Library)의 일반 서비스를 활용하는 방법에 대해 설명합니다. 메모리 할당은 프레임 할당과 힙 할당의 두 가지 주요 범주로 나눌 수 있습니다.
 
-두 할당 기술 간의 주요 차이점 중 하나는 일반적으로 실제 메모리를 사용 하 여 작업할 프레임 할당을 사용 하 여 블록 자체를 힙 할당을 사용 하 여 항상 제공 됩니다에 대 한 포인터는 메모리 블록에 있지만 됩니다. 두 스키마의 또 다른 주요 차이점은 된 프레임 개체는 자동으로 삭제, 프로그래머가 힙 개체를 명시적으로 삭제 해야 하는 동안.
+두 할당 기술의 큰 차이점 중 하나는 프레임 할당을 사용하면 일반적으로 실제 메모리 블록 자체에서 작업하는 반면 힙 할당에서는 항상 메모리 블록에 대한 포인터가 제공된다는 것입니다. 두 스키마의 또 다른 주요 차이점은 프레임 객체가 자동으로 삭제되는 반면 힙 객체는 프로그래머가 명시적으로 삭제해야 한다는 것입니다.
 
-Windows의 프로그램에서 메모리 관리에 대 한 비 MFC 정보를 참조 하세요 [메모리 관리](/windows/desktop/memory/memory-management) Windows SDK에 있습니다.
+MFC를 사용하지 않는 Windows용 프로그램의 메모리 관리에 대한 정보는 Windows SDK의 [메모리 관리](/windows/desktop/memory/memory-management)를 참조하십시오.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [프레임 할당](../mfc/memory-management-frame-allocation.md)
 
 - [힙 할당](../mfc/memory-management-heap-allocation.md)
 
-- [배열에 대 한 메모리를 할당합니다.](../mfc/memory-management-examples.md)
+- [배열에 대한 메모리 할당](../mfc/memory-management-examples.md)
 
-- [힙에서 배열에 대 한 메모리를 할당 해제](../mfc/memory-management-examples.md)
+- [힙에서 배열에 대한 메모리 할당 해제](../mfc/memory-management-examples.md)
 
-- [데이터 구조에 대 한 메모리를 할당합니다.](../mfc/memory-management-examples.md)
+- [데이터 구조에 대한 메모리 할당](../mfc/memory-management-examples.md)
 
-- [개체에 대 한 메모리를 할당합니다.](../mfc/memory-management-examples.md)
+- [개체에 대한 메모리 할당](../mfc/memory-management-examples.md)
 
 - [크기 조정 가능한 메모리 블록](../mfc/memory-management-resizable-memory-blocks.md)
 
