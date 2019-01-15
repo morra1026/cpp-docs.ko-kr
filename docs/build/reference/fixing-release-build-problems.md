@@ -17,15 +17,15 @@ ms.locfileid: "50633477"
 ---
 # <a name="fixing-release-build-problems"></a>릴리스 빌드 문제 해결
 
-릴리스 빌드로 디버그 빌드에서 전환한 후 컴파일 오류를 생성 하는 코드에서 경우 일부 영역을 확인 해야 합니다.
+디버그 빌드에서 릴리스 빌드로 전환한 후 코드에서 컴파일 오류가 발생하는 경우에는 몇 가지 영역을 확인해야 합니다.
 
-디버그 빌드 동안 받지 못한 프로그램 최적화 (릴리스) 빌드 중 컴파일러 경고가 표시 될 수 있습니다.
+디버그 빌드 동안에는 없었던 컴파일러 경고가 최적화된(릴리스) 빌드 동안에 발생할 수도 있습니다.
 
-- [ASSERT 문을 검사합니다](../../build/reference/using-verify-instead-of-assert.md)
+- [ASSERT 문 검사](../../build/reference/using-verify-instead-of-assert.md)
 
-- [메모리 덮어쓰기 확인 하려면 디버그 빌드를 사용 합니다.](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md)
+- [디버그 빌드를 사용한 메모리 덮어쓰기 확인](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md)
 
-- [릴리스 빌드에 대 한 디버그 정보 생성 설정](../../build/reference/how-to-debug-a-release-build.md)
+- [릴리스 빌드에 대한 디버그 정보 생성 활성화](../../build/reference/how-to-debug-a-release-build.md)
 
 - [메모리 덮어쓰기 확인](../../build/reference/checking-for-memory-overwrites.md)
 
