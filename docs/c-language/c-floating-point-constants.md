@@ -9,12 +9,12 @@ helpviewer_keywords:
 - floating-point constants, about floating-point constants
 - double data type, floating-point constants
 ms.assetid: e1bd9b44-d6ab-470c-93e5-07142c7a2062
-ms.openlocfilehash: d7879f3382016e098db0c8073322b99d596e8f83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bde8ecdfa7e93160a86829c466ab9a78b71d48e
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664921"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220376"
 ---
 # <a name="c-floating-point-constants"></a>C 부동 소수점 상수
 
@@ -48,7 +48,7 @@ ms.locfileid: "50664921"
 
 다음 예제에서는 부동 소수점 상수 및 식의 몇 가지 형태를 보여 줍니다.
 
-```
+```C
 15.75
 1.575E1   /* = 15.75   */
 1575e-2   /* = 15.75   */
@@ -60,16 +60,16 @@ ms.locfileid: "50664921"
 
 **f**, **F**, **l** 또는 **L** 접미사가 없는 부동 소수점 상수는 `double` 형식입니다. 문자 **f** 또는 **F**가 접미사이면 상수 형식은 `float`입니다. 그 뒤에 문자 **l** 또는 **L**이 오는 경우 형식은 `long double`입니다. 예:
 
-```
-100L  /* Has type long double  */
-100F  /* Has type float        */
+```C
+10.0L  /* Has type long double  */
+10.0F  /* Has type float        */
 ```
 
-Microsoft C 컴파일러는 내부적으로 `long double`을 `double` 형식과 동일하게 나타냅니다. `double`, `float` 및 `long double` 형식에 대한 내용은 [기본 형식 저장소](../c-language/storage-of-basic-types.md)를 참조하세요.
+Microsoft C 컴파일러는 내부적으로 `long double`을 `double` 형식과 동일하게 나타냅니다. `double`, `float` 및 `long double` 형식에 대한 내용은 [기본 형식 스토리지](../c-language/storage-of-basic-types.md)를 참조하세요.
 
 다음 예제와에서 같이 부동 소수점 상수의 정수 부분을 생략할 수 있습니다. 숫자 .75는 다음을 포함한 다양한 방식으로 나타낼 수 있습니다.
 
-```
+```C
 .0075e2
 0.075e1
 .075e1

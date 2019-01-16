@@ -12,23 +12,22 @@ helpviewer_keywords:
 - maximum number of files
 - open files, maximum
 ms.assetid: 39cf5196-250a-459d-ae90-ce3d99f79039
-ms.openlocfilehash: 41c9f2f1297c7338ff7b4b91dd7663fc1348ce81
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2e240c7f797e385cc96fd414e0e4484cc1fdc82e
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517178"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220298"
 ---
 # <a name="fopenmax-sysopen"></a>FOPEN_MAX, _SYS_OPEN
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <stdio.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이는 동시에 열 수 있는 최대 파일 수입니다. `FOPEN_MAX`는 ANSI와 호환 가능한 이름입니다. `_SYS_OPEN`은 기존 코드와의 호환성을 위해 제공됩니다.
 

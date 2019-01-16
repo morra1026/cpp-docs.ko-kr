@@ -9,23 +9,22 @@ helpviewer_keywords:
 - _HEAP_MAXREQ constants
 - heap constants
 ms.assetid: c2dbc2ea-35ad-45d8-b459-d76ba0089ff7
-ms.openlocfilehash: 98a78a3ad54ed2e91c85ae043a98abeef9774b74
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: f779631c41642b2615731371407974e04bc233b2
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524516"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220701"
 ---
 # <a name="heapmaxreq"></a>_HEAP_MAXREQ
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <malloc.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 메모리에 대해 허가할 수 있는 최대 사용자 요청 크기입니다.
 

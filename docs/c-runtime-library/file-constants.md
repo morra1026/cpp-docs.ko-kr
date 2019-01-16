@@ -25,23 +25,22 @@ helpviewer_keywords:
 - O_RDONLY constant
 - _O_WRONLY constant
 ms.assetid: c8fa5548-9ac2-4217-801d-eb45e86f2fa4
-ms.openlocfilehash: 672297b2a1d6466f28a7addf74b8d88e2460b15e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2dc473db50b1835d4e1495ce255c0a826563b70a
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51517587"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220441"
 ---
 # <a name="file-constants"></a>파일 상수
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <fcntl.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 상수 중 하나 이상을 사용하여 만든 정수 식에 따라 허용되는 읽기 또는 쓰기 작업의 형식이 결정됩니다. 이 식은 하나 이상의 상수를 변환 모드 상수와 결합하여 만듭니다.
 
