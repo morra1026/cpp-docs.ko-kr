@@ -33,7 +33,7 @@ ms.locfileid: "50611408"
 
 ## <a name="remarks"></a>설명
 
-선언의 *decl-specifiers* 부분이 포인터 또는 참조 한정자를 포함하지 않는 형식 이름을 의미하기 위해 사용할 수 있는 *decl-specifiers*의 가장 긴 시퀀스입니다. 선언의 나머지 부분은 소개된 이름을 포함하는 *declarator* 입니다.
+선언의 *decl-specifiers* 부분은 *decl-specifiers*의 가장 긴 시퀀스이며, 포인터 또는 참조 한정자를 포함하지 않는 형식 이름을 의미하기 위해 사용할 수 있습니다. 선언의 나머지 부분은 *declarator* 로서, 소개된 이름을 포함합니다.
 
 다음 표에서는 4개의 선언을 나열한 후 각 선언의 *decl-specifers* 및 *declarator* 구성 요소를 따로 나열합니다.
 
