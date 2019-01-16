@@ -15,9 +15,9 @@ ms.locfileid: "50610602"
 ---
 # <a name="using-an-existing-ado-recordset"></a>기존 ADO 레코드 집합 사용
 
-OLE DB 소비자 템플릿 및 현재 데이터 개체 (ADO)를 혼합 하려면 (OLE DB 소비자 템플릿 행 집합에 해당) 레코드 집합을 열려고 ADO를 사용 합니다. 레코드 집합에 있는 경우에 OLE DB 행 집합에 연결 하려면 다음을 수행 합니다.
+OLE DB 소비자 템플릿과 ADO(Active Data Objects)를 혼합하려면, ADO를 사용하여 OLE DB 소비자 템플릿의 행 집합에 해당하는 레코드 집합을 여십시오. 레코드 집합이 있으면 다음을 수행하여 OLE DB 행 집합에 연결하십시오.
 
-1. 호출 `QueryInterface` 에 대 한 합니다 `IRowset` 고 `IAccessor` 포인터입니다.
+1. `IRowset` 및 `IAccessor` 포인터에 대해 `QueryInterface`를 호출합니다.
 
     ```cpp
     IRowset* lpRowset = NULL;
@@ -27,9 +27,9 @@ OLE DB 소비자 템플릿 및 현재 데이터 개체 (ADO)를 혼합 하려면
     ```
 
     > [!NOTE]
-    > *lpUnk* 가리키는 `IUnknown` ADO 레코드 집합의 개체입니다.
+    > *lpUnk*는 ADO 레코드 집합의 `IUnknown` 개체를 가리킵니다.
 
-1. 적절 한 OLE DB 소비자 템플릿 클래스에 접근자 및 행 집합을 연결 합니다.
+1. 접근자와 행 집합을 알맞은 OLE DB 소비자 템플릿 클래스에 첨부합니다.
 
     ```cpp
     CRowset rs;
