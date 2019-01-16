@@ -13,20 +13,20 @@ ms.locfileid: "50621561"
 ---
 # <a name="checking-for-memory-overwrites"></a>메모리 덮어쓰기 확인
 
-힙 조작 함수를 호출할 때 액세스 위반을 받게 되 면 프로그램 힙 손상 된 것입니다. 이 경우의 일반적인 증상 것입니다.
+힙 조작 함수 호출 시 액세스 위반이 발생되면 프로그램이 힙을 손상시켰을 가능성이 있습니다. 이러한 경우의 일반적인 증상은 다음과 같습니다.
 
 ```
 Access Violation in _searchseg
 ```
 
-[_heapchk](../../c-runtime-library/reference/heapchk.md) 함수 디버그에 사용할 수 있고 릴리스 빌드 (Windows NT에만 해당)는 런타임 라이브러리 힙의 무결성을 확인 합니다. 사용할 수 있습니다 `_heapchk` 거의 동일한 방법으로 `AfxCheckMemory` 예를 들어, 힙 덮어쓰는 격리 하는 함수:
+[_heapchk](../../c-runtime-library/reference/heapchk.md) 함수는 디버그 빌드와 릴리스 빌드 모두에서(Windows NT에만 해당) 런타임 라이브러리 힙의 무결성을 확인하는 데 사용할 수 있습니다. `_heapchk`는 `AfxCheckMemory` 함수를 사용하여 힙 덮어쓰기를 확인하는 것과 같은 방법으로 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 if(_heapchk()!=_HEAPOK)
    DebugBreak();
 ```
 
-이 함수가 실패 하는 경우 격리 해야이 시점에서 힙 손상 되었습니다.
+이 함수가 실패하는 경우에는 힙이 손상된 시점을 확인해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
