@@ -16,7 +16,7 @@ ms.locfileid: "51325980"
 ---
 # <a name="while-statement-c"></a>while 문 (C++)
 
-*표현식(expression)*이 0이 될때까지 *명령문(statement)*을 반복 실행합니다.
+*표현식(expression)* 이 0이 될 때까지 *명령문(statement)* 을 반복 실행합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -27,7 +27,7 @@ while ( expression )
 
 ## <a name="remarks"></a>설명
 
-*표현식*의 실행은 루프가 실행되기 전에 수행됩니다. 따라서 **while** 루프는 0번 이상 실행됩니다. *표현식*은 정수 형식, 포인터 형식이나 정수 또는 포인터 유형으로의 모호하지 않은 변환이 되는 클래스 형식이어야합니다.
+*표현식*의 실행은 루프가 실행되기 전에 수행됩니다. 따라서 **while** 루프는 0번 이상 실행됩니다. *표현식*은 정수 형식, 포인터 형식이나 정수 또는 포인터 유형으로의 모호하지 않은 변환이 되는 클래스 형식이어야 합니다.
 
 **while** 루프는 명령문 본문 내에서 [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md)나 [return](../cpp/return-statement-cpp.md)이 실행될 때 종료 될 수도 있습니다. [continue](../cpp/continue-statement-cpp.md)를 사용하여 **while** 루프를 종료하지 않고 현재의 반복을 종료합니다. **continue**를 만나면 제어가 **while** 루프의 다음 반복으로 계속됩니다.
 

@@ -13,7 +13,7 @@ ms.locfileid: "50506602"
 ---
 # <a name="constexpr-lambda-expressions-in-c"></a>c + +에서 constexpr 람다 식
 
-**Visual Studio 2017 버전 15.3 이상** (사용할 수 있습니다 [/std: c + + 17](../build/reference/std-specify-language-standard-version.md)): 람다 식으로 선언할 수 있습니다 **constexpr** 상수 식에서 사용할 때 각 초기화 캡처하거나 소개 하는 데이터 멤버는 상수 식 내에서 허용 됩니다.
+**Visual Studio 2017 15.3버전 이상** (컴파일 옵션 [/std:c++17](../build/reference/std-specify-language-standard-version.md)와 함께 사용 가능): 람다식은 **constexpr**로 선언되거나 캡처되거나 상수 내에서 각 데이터 맴버의 초기화가 허용되는 경우 상수식에 사용됩니다.
 
 ```cpp
     int y = 32;
@@ -29,7 +29,7 @@ ms.locfileid: "50506602"
     }
 ```
 
-람다는 암시적으로 **constexpr** 결과의 요구 사항을 충족 하는 경우를 **constexpr** 함수:
+람다는 결과가 **constexpr**함수의 요구사항을 만족하면 암시적으로 **constexpr**가 됩니다.
 
 ```cpp
     auto answer = [](int n)
@@ -40,7 +40,7 @@ ms.locfileid: "50506602"
     constexpr int response = answer(10);
 ```
 
-람다는 암시적 또는 명시적으로 하는 경우 **constexpr**, 및 함수 포인터로 변환할 결과 함수가 이기도 **constexpr**:
+람다는 암시적 혹은 명시적으로도 **constexpr**이고, 함수 포인터로 변환하면 결과 함수도 **constexpr**입니다.
 
 ```cpp
     auto Increment = [](int n)
