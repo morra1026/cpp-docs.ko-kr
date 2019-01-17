@@ -19,7 +19,7 @@ ms.locfileid: "50621561"
 Access Violation in _searchseg
 ```
 
-[_heapchk](../../c-runtime-library/reference/heapchk.md) 함수 디버그에 사용할 수 있고 릴리스 빌드 (Windows NT에만 해당)는 런타임 라이브러리 힙의 무결성을 확인 합니다. 사용할 수 있습니다 `_heapchk` 거의 동일한 방법으로 `AfxCheckMemory` 예를 들어, 힙 덮어쓰는 격리 하는 함수:
+[_heapchk](../../c-runtime-library/reference/heapchk.md) 함수는 디버그 빌드와 릴리스 빌드 모두에서(Windows NT에만 해당) 런타임 라이브러리 힙의 무결성을 확인하는 데 사용할 수 있습니다. `_heapchk`는 `AfxCheckMemory` 함수를 사용하여 힙 덮어쓰기를 확인하는 것과 같은 방법으로 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```
 if(_heapchk()!=_HEAPOK)
