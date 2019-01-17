@@ -18,7 +18,7 @@ ms.locfileid: "50519649"
 ---
 # <a name="data-source-object-interfaces"></a>데이터 소스 개체 인터페이스
 
-다음 표에서 데이터 원본 개체에 대 한 OLE DB에서 정의 된 필수 및 선택적 인터페이스를 보여 줍니다.
+다음 표는 OLE DB가 데이터 소스 개체에 대해 정의한 필수 인터페이스와 선택적 인터페이스를 보여 줍니다.
 
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|
 |---------------|---------------|--------------------------------------|
@@ -32,7 +32,7 @@ ms.locfileid: "50519649"
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Optional|아니요|
 |`ISupportErrorInfo`|Optional|아니요|
 
-데이터 원본 개체를 `IDBProperties`, `IDBInitialize`, 및 `IDBCreateSession` 상속을 통해 인터페이스입니다. 상속 하거나 이러한 구현 클래스 중 하나에서 상속 하지 않도록 하 여 추가 기능을 지원 하도록 선택할 수 있습니다. 지원 하려는 경우는 `IDBDataSourceAdmin` 인터페이스에서 상속 해야 합니다 `IDBDataSourceAdminImpl` 클래스입니다.
+데이터 소스 개체는 상속을 통해 `IDBProperties`, `IDBInitialize` 및 `IDBCreateSession` 인터페이스를 구현합니다. 이러한 구현 클래스 중 하나에서 상속하거나 상속하지 않도록 하여 추가 기능을 지원하도록 선택할 수 있습니다. `IDBDataSourceAdmin` 인터페이스를 지원하려는 경우 `IDBDataSourceAdminImpl` 클래스에서 상속해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
