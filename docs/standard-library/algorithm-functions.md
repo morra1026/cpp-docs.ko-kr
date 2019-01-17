@@ -200,12 +200,12 @@ helpviewer_keywords:
 - std::count_if [C++]
 - std::partition_copy [C++]
 - std::swap [C++]
-ms.openlocfilehash: 5fdb5a89bc475cf2d6a358768b84b8542da5e0e8
-ms.sourcegitcommit: d94714522428834a02ede6e6884572f0f6ca9824
+ms.openlocfilehash: 260b2ee780956550678fcb01b3a018a60fb58deb
+ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597566"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334679"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algorithm&gt; 함수
 
@@ -432,7 +432,7 @@ bool binary_search(
 *last*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*값*<br/>
+*value*<br/>
 요소의 값과 일치해야 하는 값 또는 이진 조건자에 의해 지정된 요소 값의 조건을 충족해야 하는 값입니다.
 
 *comp*<br/>
@@ -973,16 +973,16 @@ bool equal(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*<br/>
+*First1*<br/>
 테스트할 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1*<br/>
+*Last1*<br/>
 테스트할 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2*<br/>
+*First2*<br/>
 테스트할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2*<br/>
+*First2*<br/>
 테스트할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 *구성 요소*<br/>
@@ -1281,13 +1281,13 @@ OutputIterator fill_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*<br/>
+*첫째*<br/>
 범위에서 첫 번째 요소 위치의 주소를 지정 하는 출력 반복기 값을 할당 받을 *Val*합니다.
 
 *개수*<br/>
 값을 할당할 요소의 수를 지정하는 부호 있는/부호 없는 정수 형식입니다.
 
-*val*<br/>
+*Val*<br/>
 범위의 요소에 할당할 값 [ *첫 번째*하십시오 *First + Count*).
 
 ### <a name="return-value"></a>반환 값
@@ -1402,16 +1402,16 @@ ForwardIterator1 find_end(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*<br/>
+*First1*<br/>
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last1*<br/>
+*Last1*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*first2*<br/>
+*First2*<br/>
 검색할 범위에서 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*last2*<br/>
+*Last2*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
 *구성 요소*<br/>
@@ -2055,13 +2055,13 @@ void generate_n(
 
 ### <a name="parameters"></a>매개 변수
 
-*첫 번째*<br/>
+*첫째*<br/>
 값이 할당된 범위 내 첫 번째 요소의 주소를 지정하는 출력 반복기입니다
 
 *개수*<br/>
 생성기 함수를 통해 값이 할당되는 요소 수를 지정하는 부호가 있거나 없는 정수 형식입니다.
 
-*범용*<br/>
+*Gen*<br/>
 인수 없이 호출되는 함수 개체로, 범위 내 각 요소에 할당되는 값을 생성하는 데 사용됩니다.
 
 ### <a name="remarks"></a>설명
@@ -2344,7 +2344,7 @@ void inplace_merge(
 *first*<br/>
 단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
-*중간*<br/>
+*middle*<br/>
 단일 범위로 결합하고 정렬할 두 개의 정렬된 연속 소스 범위 중 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 양방향 반복기입니다.
 
 *last*<br/>
@@ -2618,16 +2618,16 @@ bool is_permutation(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*<br/>
+*First1*<br/>
 범위의 첫 번째 요소를 참조하는 정방향 반복기입니다.
 
-*last1*<br/>
+*Last1*<br/>
 범위의 마지막 요소를 지난 요소를 참조하는 정방향 반복기입니다.
 
-*first2*<br/>
+*First2*<br/>
 비교에 사용되는, 두 번째 범위의 첫 번째 요소를 참조하는 정방향 반복기입니다.
 
-*last2*<br/>
+*Last2*<br/>
 비교에 사용되는, 두 번째 범위의 마지막 요소를 지난 요소를 참조하는 정방향 반복기입니다.
 
 *pred*<br/>
@@ -3104,7 +3104,7 @@ ForwardIterator lower_bound(
 *last*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*값*<br/>
+*value*<br/>
 정렬된 범위에서 첫 번째 위치 또는 가능한 첫 번째 위치가 검색되는 값입니다.
 
 *comp*<br/>
@@ -3681,7 +3681,7 @@ OutputIterator merge(
 *last2*<br/>
 단일 범위로 결합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 두 개의 소스 범위가 정렬된 단일 범위로 결합되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
 *comp*<br/>
@@ -4208,7 +4208,7 @@ constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
 
 `pair<ForwardIterator, ForwardIterator>`
 
-`(` [min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`합니다.
+`(` [min_element](../standard-library/algorithm-functions.md#min_element)`(first, last), `[max_element](../standard-library/algorithm-functions.md#max_element)`(first, last))`.
 
 ### <a name="remarks"></a>설명
 
@@ -4310,16 +4310,16 @@ mismatch(
 
 ### <a name="parameters"></a>매개 변수
 
-*first1*<br/>
+*First1*<br/>
 테스트할 첫 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last1*<br/>
+*Last1*<br/>
 테스트할 첫 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*first2*<br/>
+*First2*<br/>
 테스트할 두 번째 범위에서 첫 번째 요소 위치의 주소를 지정하는 입력 반복기입니다.
 
-*last2*<br/>
+*Last2*<br/>
 테스트할 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
 *구성 요소*<br/>
@@ -5561,7 +5561,7 @@ int main() {
 
 ## <a name="random_shuffle"></a>  random_shuffle
 
-Std::random_shuffle() 함수 되지 바뀝니다 [std:: shuffle](../standard-library/algorithm-functions.md#shuffle)합니다. 코드 예제 및 자세한 내용은 참조 하세요 [ \<임의 >](../standard-library/random.md) 과 Stackoverflow 게시물 [이유는 std:: random_shuffle 메서드가 사용 되지 않는 C + + 14에서?](http://go.microsoft.com/fwlink/p/?linkid=397954)합니다.
+Std::random_shuffle() 함수 되지 바뀝니다 [std:: shuffle](../standard-library/algorithm-functions.md#shuffle)합니다. 코드 예제 및 자세한 내용은 참조 하세요 [ \<임의 >](../standard-library/random.md) 및 Stack Overflow 게시물 [이유는 std:: random_shuffle 메서드가 사용 되지 않는 C + + 14에서?](http://go.microsoft.com/fwlink/p/?linkid=397954)합니다.
 
 ## <a name="remove"></a>  remove
 
@@ -5662,7 +5662,7 @@ OutputIterator remove_copy(InputIterator first, InputIterator last, OutputIterat
 *last*<br/>
 요소가 제거되는 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 요소가 제거되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *val*<br/>
@@ -5744,7 +5744,7 @@ OutputIterator remove_copy_if(InputIterator first, InputIterator Last, OutputIte
 *last*<br/>
 요소가 제거되는 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 요소가 제거되는 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *_Pred*<br/>
@@ -6004,7 +6004,7 @@ OutputIterator replace_copy(
 *last*<br/>
 요소가 대체되는 범위의 마지막 요소 하나 다음에 대한 위치를 가리키는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 변경된 요소 시퀀스를 복사할 대상 범위의 첫 번째 요소를 가리키는 출력 반복기입니다.
 
 *_OldVal*<br/>
@@ -6106,7 +6106,7 @@ OutputIterator replace_copy_if(
 *last*<br/>
 요소가 대체되는 범위의 마지막 요소 하나 다음에 대한 위치를 가리키는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 요소가 복사되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
 
 *_Pred*<br/>
@@ -6359,7 +6359,7 @@ OutputIterator reverse_copy(
 *last*<br/>
 요소가 순열되는 소스 범위의 마지막 요소 하나 다음 위치를 가리키는 양방향 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 요소가 복사되는 대상 범위에서 첫 번째 요소의 위치를 가리키는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -6427,7 +6427,7 @@ void rotate(
 *first*<br/>
 회전할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*중간*<br/>
+*middle*<br/>
 해당 요소를 범위의 첫 번째 부분에 있는 요소와 교환해야 하는 범위의 두 번째 부분에서 첫 번째 요소의 위치를 지정하는 범위 내 경계를 정의하는 정방향 반복기입니다.
 
 *마지막*<br/>
@@ -6532,12 +6532,12 @@ OutputIterator rotate_copy(
 *first*<br/>
 회전할 범위 내 첫 번째 요소 위치의 주소를 지정하는 정방향 반복기입니다.
 
-*중간*<br/>
+*middle*<br/>
 해당 요소를 범위의 첫 번째 부분에 있는 요소와 교환해야 하는 범위의 두 번째 부분에서 첫 번째 요소의 위치를 지정하는 범위 내 경계를 정의하는 정방향 반복기입니다.
 
 _ *마지막* 회전할 하나 다음 위치의 마지막 요소 범위에서 주소를 지정 하는 정방향 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -6927,7 +6927,7 @@ OutputIterator set_difference(
 *last2*<br/>
 두 소스 범위의 차이를 나타내는 단일 범위로 통합하고 정렬할 두 개의 연속 정렬된 소스 범위 중 두 번째 범위에서 마지막 요소 하나 다음 위치의 주소를 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 두 소스 범위의 차이를 나타내는 정렬된 단일 범위로 두 개의 소스 범위를 통합할 대상 범위에서 첫 번째 요소 위치의 주소를 지정하는 출력 반복기입니다.
 
 *comp*<br/>
@@ -7601,7 +7601,7 @@ int main()
 }
 ```
 
-## <a name="shuffle"></a>  순서 섞기
+## <a name="shuffle"></a>  shuffle
 
 난수 생성기를 사용하여 지정된 범위 내 요소의 순서를 섞습니다(다시 정렬).
 
@@ -7620,7 +7620,7 @@ void shuffle(RandomAccessIterator first,
 *last*<br/>
 순서를 섞으려는 범위 내 마지막 요소에 대한 반복기로, 이 요소는 제외됩니다. `RandomAccessIterator` 및 `ValueSwappable`의 요구 사항을 충족해야 합니다.
 
-*범용*<br/>
+*gen*<br/>
 `shuffle()` 함수가 연산에 사용하는 난수 생성기입니다. `UniformRandomNumberGenerator`의 요구 사항을 충족해야 합니다.
 
 ### <a name="remarks"></a>설명
@@ -8215,7 +8215,7 @@ OutputIterator transform(
 *first2*<br/>
 작업을 수행할 두 번째 소스 범위에서 첫 번째 요소의 위치를 주소 지정하는 입력 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 대상 범위의 첫 번째 요소의 위치를 주소 지정하는 출력 반복기입니다.
 
 *_Func*<br/>
@@ -8478,7 +8478,7 @@ OutputIterator unique_copy( InputIterator first,
 *last*<br/>
 복사할 소스 범위 내 마지막 요소 하나 다음의 위치 주소를 지정하는 정방향 반복기입니다.
 
-*결과*<br/>
+*result*<br/>
 연속 중복 항목이 제거된 복사본을 수신하는 대상 범위에서 첫 번째 요소 위치의 주소 지정하는 출력 반복기입니다.
 
 *comp*<br/>
@@ -8597,7 +8597,7 @@ template<class ForwardIterator, class Type, class Predicate>
 *last*<br/>
 검색할 범위에서 마지막 요소 하나 다음의 위치입니다.
 
-*값*<br/>
+*value*<br/>
 반환된 반복기로 주소가 지정된 요소의 값이 초과해야 하는 정렬된 범위의 값입니다.
 
 *comp*<br/>

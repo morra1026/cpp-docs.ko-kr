@@ -39,7 +39,7 @@ modifier __interface interface-name {interface-definition};
 
 ## <a name="remarks"></a>설명
 
-C + + [클래스](../cpp/class-cpp.md) 또는 [구조체](../cpp/struct-cpp.md) 이러한 규칙을 사용 하 여 구현할 수 있지만 **__interface** 적용 합니다.
+C++ [클래스](../cpp/class-cpp.md) 또는 [구조체](../cpp/struct-cpp.md)가 이러한 규칙을 사용하여 구현될 수도 있지만, **__interface**가 이러한 규칙을 적용합니다.
 
 예를 들어 다음은 샘플 인터페이스 정의입니다.
 
@@ -50,7 +50,7 @@ __interface IMyInterface {
 };
 ```
 
-관리 되는 인터페이스에 대 한 내용은 참조 하세요 [인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)합니다.
+관리되는 인터페이스에 대한 자세한 내용은 [인터페이스 클래스](../windows/interface-class-cpp-component-extensions.md)를 참조하십시오.
 
 `CommitX` 및 `get_X` 함수가 순수 가상 함수임을 명시적으로 나타낼 필요가 없습니다. 첫 번째 함수에 대한 동일한 선언은 다음과 같습니다.
 
@@ -58,7 +58,7 @@ __interface IMyInterface {
 virtual HRESULT CommitX() = 0;
 ```
 
-**__interface** 것을 의미 합니다 [novtable](../cpp/novtable.md) **__declspec** 한정자입니다.
+**__interface**는 [novtable](../cpp/novtable.md) **__declspec** 한정자를 의미합니다.
 
 ## <a name="example"></a>예제
 
@@ -144,7 +144,7 @@ bstr_data = Testing
 
 **Microsoft 전용 종료**
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[키워드](../cpp/keywords-cpp.md)<br/>
+[C++ 키워드](../cpp/keywords-cpp.md)<br/>
 [인터페이스 특성](../windows/attributes/interface-attributes.md)
