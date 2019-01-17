@@ -51,7 +51,7 @@ int main()
 }
 ```
 
-사용자 레코드 `CArtists`는 다음과 같습니다:
+사용자 레코드 `CArtists`는 다음과 같습니다.
 
 ```cpp
 class CArtists
