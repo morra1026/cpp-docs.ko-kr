@@ -17,7 +17,7 @@ ms.locfileid: "52176902"
 ---
 # <a name="session-object-interfaces"></a>세션 개체 인터페이스
 
-다음 표에서 세션 개체에 대 한 OLE DB에서 정의 된 필수 및 선택적 인터페이스를 보여 줍니다.
+다음 표는 OLE DB가 세션 개체에 대해 정의한 필수 인터페이스와 선택적 인터페이스를 보여 줍니다.
 
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|
 |---------------|---------------|--------------------------------------|
@@ -40,7 +40,7 @@ ms.locfileid: "52176902"
 |[ITransactionLocal](https://docs.microsoft.com/previous-versions/windows/desktop/ms714893(v=vs.85))|Optional|아니요|
 |[ITransactionObject](https://docs.microsoft.com/previous-versions/windows/desktop/ms713659(v=vs.85))|Optional|아니요|
 
-세션 개체는 행 집합 개체를 만듭니다. 공급자 명령에서는 하는 경우 세션도 명령 개체를 만듭니다 (`CCommand`를 구현 하는 OLE DB `TCommand`). 명령 개체를 구현 하는 `ICommand` 사용 하 여 인터페이스를 `ICommand::Execute` 다음 그림에 표시 된 대로 행 집합에서 명령을 실행 하는 방법입니다.
+세션 개체는 행 집합 개체를 만듭니다. 또한 공급자가 명령을 지원하는 경우에는 명령 개체(OLE DB `TCommand`를 구현하는 `CCommand`)도 만듭니다. 명령 개체는 다음 그림과 같이 `ICommand` 인터페이스를 구현하고 `ICommand::Execute` 메서드를 사용하여 행 집합에 대한 명령을 실행합니다.
 
 ![공급자 개념적 다이어그램](../../data/oledb/media/vc4u551.gif "공급자 개념적 다이어그램")
 
