@@ -41,23 +41,22 @@ helpviewer_keywords:
 - EXDEV constant
 - EILSEQ constant
 ms.assetid: 47089258-d5a5-4cd8-b193-223894dea0cf
-ms.openlocfilehash: c7c623b81d626b3d653dbd731521ffe2649671ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d092f9c1626f48dcdb006e18ece2a45bfeed36e
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645603"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220610"
 ---
 # <a name="errno-constants"></a>errno 상수
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <errno.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 **errno** 값은 여러 오류 조건에서 [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)에 할당된 상수입니다.
 
@@ -73,7 +72,7 @@ ERRNO.H는 **errno** 값의 정의를 포함합니다. 그러나 ERRNO.H에서 �
 |**EAGAIN**|더 이상 프로세스가 없습니다. 더 이상 프로세스 슬롯이 없거나, 메모리가 부족하거나, 최대 중첩 수준에 도달했기 때문에 새 프로세스를 만들려는 시도가 실패했습니다.|
 |**E2BIG**|인수 목록이 너무 깁니다.|
 |**EACCES**|사용 권한이 거부되었습니다. 파일의 권한 설정이 지정된 액세스를 허용하지 않습니다. 이 오류는 파일의 특성과 호환되지 않는 방식으로 파일(또는 일부 경우 디렉터리)에 액세스하려는 시도가 있었음을 의미합니다.<br/><br/>예를 들어 열려 있지 않은 파일로부터 읽거나, 기존 읽기 전용 파일을 쓰기 위해 열거나, 파일 대신 디렉터리를 열려는 시도가 있는 경우 오류가 발생할 수 있습니다. MS-DOS 운영 체제 버전 3.0 이상에서 **EACCES**는 잠금 또는 공유 위반을 나타낼 수도 있습니다.<br/><br/>파일 또는 디렉터리의 이름을 바꾸거나 기존 디렉터리를 제거하려는 동안 오류가 발생할 수도 있습니다.|
-|**EBADF**|잘못된 파일 번호입니다. 가능한 원인은 두 가지입니다. 1) 지정한 파일 설명자가 잘못된 값이거나 열려 있는 파일을 참조하지 않습니다. 2) 읽기 전용으로 열린 파일 또는 디바이스에 쓰려는 시도가 있었습니다.|
+|**EBADF**|잘못된 파일 번호입니다. 두 가지의 가능한 원인이 있습니다. 1) 지정한 파일 설명자가 잘못된 값이거나 열려 있는 파일을 참조하지 않습니다. 2) 읽기 전용으로 열린 파일 또는 디바이스에 쓰려는 시도가 있었습니다.|
 |**EDEADLOCK**|리소스 교착 상태가 발생합니다. 수학 함수에 대한 인수는 함수의 도메인에 포함되지 않습니다.|
 |**EDOM**|수학 인수입니다.|
 |**EEXIST**|파일이 존재합니다. 이미 존재하는 파일을 만들려는 시도가 있었습니다. 예를 들어 **_O_CREAT** 및 **_O_EXCL** 플래그가 **_open** 호출에서 지정되지만 명명된 파일이 이미 있습니다.|

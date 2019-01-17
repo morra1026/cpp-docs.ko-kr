@@ -25,23 +25,22 @@ helpviewer_keywords:
 - _A_HIDDEN constant
 - _A_RDONLY constant
 ms.assetid: 8dc8ccb9-99f5-446b-876c-7ebecc2f764f
-ms.openlocfilehash: 9aceef7f9c28da3ed3d0d98f4fc579a3c17480e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90aacc1e1e8c45f739c1f6aec973f55e7fab67d9
+ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660345"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54220181"
 ---
 # <a name="file-attribute-constants"></a>파일 특성 상수
 
 ## <a name="syntax"></a>구문
 
 ```
-
 #include <io.h>
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이러한 상수는 함수가 지정하는 디렉터리나 파일의 현재 속성을 지정합니다.
 
