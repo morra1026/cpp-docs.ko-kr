@@ -30,7 +30,7 @@ while ( expression ) ;
 
 ## <a name="remarks"></a>설명
 
-종료 조건은 테스트는 루프의 각 실행 후 수행 따라서 한 **수행-동안** 루프는 종료 식의 값에 따라 여러 번 실행 합니다. **do-while** 문은 문 본문 내에서 [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md) 또는 [return](../cpp/return-statement-cpp.md) 문이 실행되는 경우에도 종료될 수 있습니다.
+종료 조건의 확인은 루프를 실행할 때마다 수행됩니다. 따라서 **do-while** 루프는 종료식의 결과에 따라 한번 이상 실행됩니다. **do-while**문은 [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), 또는 [return](../cpp/return-statement-cpp.md)문으로 인해 반복 실행되는 도중에 루프가 종료될 수 있습니다.
 
 *식(expression)* 은 산술 형식이나 포인터 형식이어야 합니다. 다음과 같이 실행됩니다.
 
