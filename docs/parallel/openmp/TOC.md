@@ -1,13 +1,15 @@
+---
+ms.openlocfilehash: 5f74861f75ed3cd431379f26f9802c0fb29a8bea
+ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54397318"
+---
 # [Visual C++의 OpenMP](openmp-in-visual-cpp.md)
-# [OpenMP C 및 C++ 응용 프로그램 인터페이스](openmp-c-and-cpp-application-program-interface.md)
+# [OpenMP C 및 C++ 애플리케이션 인터페이스](openmp-c-and-cpp-application-program-interface.md)
 ## [목차](contents.md)
 ## [1. 소개](1-introduction.md)
-### [1.1 범위](1-1-scope.md)
-### [1.2 용어 정의](1-2-definition-of-terms.md)
-### [1.3 실행 모델](1-3-execution-model.md)
-### [1.4 규격](1-4-compliance.md)
-### [1.5 표준 참조](1-5-normative-references.md)
-### [1.6 조직](1-6-organization.md)
 ## [2. 지시문](2-directives.md)
 ### [2.1 지시문 형식](2-1-directive-format.md)
 ### [2.2 조건부 컴파일](2-2-conditional-compilation.md)
@@ -61,10 +63,6 @@
 #### [3.3.1 omp_get_wtime 함수](3-3-1-omp-get-wtime-function.md)
 #### [3.3.2 omp_get_wtick 함수](3-3-2-omp-get-wtick-function.md)
 ## [4. 환경 변수](4-environment-variables.md)
-### [4.1 OMP_SCHEDULE](4-1-omp-schedule.md)
-### [4.2 OMP_NUM_THREADS](4-2-omp-num-threads.md)
-### [4.3 OMP_DYNAMIC](4-3-omp-dynamic.md)
-### [4.4 OMP_NESTED](4-4-omp-nested.md)
 ## [A. 예제](a-examples.md)
 ### [A.1   병렬로 단일 루프 실행](a-1-executing-a-simple-loop-in-parallel.md)
 ### [A.2   조건부 컴파일 지정](a-2-specifying-conditional-compilation.md)
@@ -99,8 +97,6 @@
 ### [A.31   스레드로부터 안전한 Lock 함수](a-31-thread-safe-lock-functions.md)
 ## [B. 런타임 라이브러리 함수의 스텁](b-stubs-for-run-time-library-functions.md)
 ## [C. OpenMP C 및 C++ 문법](c-openmp-c-and-cpp-grammar.md)
-### [C.1 표기법](c-1-notation.md)
-### [C.2 규칙](c-2-rules.md)
 ## [D. schedule 절 사용](d-using-the-schedule-clause.md)
 ## [E. OpenMP C/C++에서 구현이 정의된 동작](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
 ## [F. Version 2.0에서 새 기능 및 설명](f-new-features-and-clarifications-in-version-2-0.md)
