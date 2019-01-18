@@ -1,5 +1,5 @@
 ---
-title: '&lt;알고리즘&gt;'
+title: '&lt;algorithm&gt;'
 ms.date: 11/04/2016
 f1_keywords:
 - <algorithm>
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50484073"
 ---
-# <a name="ltalgorithmgt"></a>&lt;알고리즘&gt;
+# <a name="ltalgorithmgt"></a>&lt;algorithm&gt;
 
 알고리즘을 수행하는 C++ 표준 라이브러리 컨테이너 템플릿 함수를 정의합니다.
 
