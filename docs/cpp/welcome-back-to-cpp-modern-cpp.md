@@ -1,14 +1,14 @@
-﻿---
+---
 title: C++의 진화(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1cb1b849-ed9c-4721-a972-fd8f3dab42e2
-ms.openlocfilehash: a7d82a65141e402e779a428ba32d15ddd70016c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08563f6a67ec7105da688d566d71d8ea15cb8cec
+ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454631"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54334627"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++의 진화(모던 C++)
 
@@ -28,7 +28,7 @@ C++의 초기 철학 중 하나는 C 언어와의 하위 호환성입니다. C++
 
 - 원시 배열이나 사용자 정의 컨테이너 대신 `vector`, `list`, `map`과 같은 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-header-files.md)의 컨테이너를 사용하세요. [\<vector >](../standard-library/vector.md), [\<list >](../standard-library/list.md)[\<map >](../standard-library/map.md)을 참조합니다.
 
-- 직접 만든 알고리즘 대신 C++ 표준 라이브러리의 [\알고리즘](../standard-library/algorithm.md)을 사용합니다.
+- 직접 만든 알고리즘 대신 C++ 표준 라이브러리의 [알고리즘](../standard-library/algorithm.md)을 사용합니다.
 
 - 오류 조건 보고를 위한 예외 사용
 
@@ -91,7 +91,7 @@ void f()
 }
 ```
 
-모던 C++에서는 대신 스마트 포인터를 사용할 수 있기 때문에 new/delete나 명시적 예외 처리를 사용할 필요가 없습니다. **auto**를 이용한 형식 추론과 [람다 함수](../cpp/lambda-expressions-in-cpp.md)를 사용하면 더욱 빠르고 친화적이며 더 이해하기 쉬운 코드를 작성할 수 있습니다. 또한 범위 기반 **for** 루프를 사용하면 깔끔하고 사용하기 쉬우며, C 스타일보다 의도하지 않은 오류를 줄일 수 있습니다.**** 표준을 준수하는 최소한의 코드로 앱을 만드는 것이 가능합니다. 또한 코드가 예외나 메모리 관련 문제로부터 안전하며, 할당/할당해제나 에러 코드를 다루지 않아도 됩니다.
+모던 C++에서는 대신 스마트 포인터를 사용할 수 있기 때문에 new/delete나 명시적 예외 처리를 사용할 필요가 없습니다. **auto**를 이용한 형식 추론과 [람다 함수](../cpp/lambda-expressions-in-cpp.md)를 사용하면 더욱 빠르고 친화적이며 더 이해하기 쉬운 코드를 작성할 수 있습니다. 범위 기반 **for** 루프는 C 스타일 **for** 루프보다 깨끗하고 사용하기 쉽고 의도하지 않은 오류가 적습니다. 표준을 준수하는 최소한의 코드로 앱을 만드는 것이 가능합니다. 또한 코드가 예외나 메모리 관련 문제로부터 안전하며, 할당/할당해제나 에러 코드를 다루지 않아도 됩니다.
 
 모던 C++는 템플릿을 이용한 컴파일 타임 다형성과 상속과 가상화를 이용한 런타임, 두 종류의 다형성을 사용할 수 있습니다. 두 가지의 다형성을 모두 사용하여 더 뛰어난 효과를 낼 수도 있습니다. C++ 표준 라이브러리 템플릿의 `shared_ptr`은 내부 가상 메소드를 사용하여 확실하고 편리하게 형식에 종속되는 문제를 해결해 줄 수 있습니다. 템플릿이 더 나은 선택인 경우 다형성을 위해 과도한 가상화를 사용하지 마십시오. 템플릿은 어떤 상황에도 좋은 선택입니다.
 
@@ -111,7 +111,7 @@ void f()
 
 - [리소스를 소유하는 오브젝트(RAII)](../cpp/objects-own-resources-raii.md)
 
-- [스마트 포인터](../cpp/smart-pointers-modern-cpp.md)
+- [스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)
 
 - [컴파일 시간 캡슐화 Pimpl](../cpp/pimpl-for-compile-time-encapsulation-modern-cpp.md)
 
@@ -121,11 +121,11 @@ void f()
 
 - [문자열 및 I/O 서식(모던 C++)](../cpp/string-and-i-o-formatting-modern-cpp.md)
 
-- [오류 및 예외 처리](../cpp/errors-and-exception-handling-modern-cpp.md)
+- [오류 및 예외 처리(모던 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)
 
 - [ABI 경계의 이식성](../cpp/portability-at-abi-boundaries-modern-cpp.md)
 
-자세한 내용은 StackOverflow 문서를 참조하세요. [C++11에서 더이상 사용되지 않는 C++ 어구](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11)
+자세한 내용은 Stack Overflow 문서를 참조 [c +는 + 관용구는 C + + 11에서 사용 되지 않는](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11)합니다.
 
 ## <a name="see-also"></a>참고자료
 
