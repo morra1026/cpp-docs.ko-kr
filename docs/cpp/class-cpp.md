@@ -32,7 +32,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 #### <a name="parameters"></a>매개 변수
 
 *template-spec*<br/>
-선택적으로 사용할 수 있으며 템플릿을 지정입니다. 자세한 내용은 [템플릿](templates-cpp.md)을 참조합니다.
+선택적으로 사용할 수 있으며 템플릿을 지정니다. 자세한 내용은 [템플릿](templates-cpp.md)을 참조합니다.
 
 *class*<br/>
 **class** 키워드 입니다.
