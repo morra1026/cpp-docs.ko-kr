@@ -50,7 +50,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 클래스 멤버 목록입니다. 더 자세한 정보는 [클래스 멤버 개요](../cpp/class-member-overview.md) 를 참조합니다.
 
 *declarators*<br/>
-클래스 유형의 하나 이상의 인스턴스 이름을 지정하는 선언자 목록입니다. 선언자는 클래스의 모든 데이터 멤버가 **public**인 경우 초기화 목록을 포함 할 수 있습니다. 이것은 데이터 멤버가 기본적으로 **public** 인 구조에서 클래스보다 일반적입니다. 자세한 내용은 [선언자 개요](../cpp/overview-of-declarators.md)를 참조하십시오.
+클래스 유형의 하나 이상의 인스턴스 이름을 지정하는 선언자 목록입니다. 선언자는 클래스의 모든 데이터 멤버가 **public**인 경우 이니셜라이저 리스트(initializer list)을 포함 할 수 있습니다. 이것은 데이터 멤버가 기본적으로 **public** 인 구조에서 클래스보다 일반적입니다. 자세한 내용은 [선언자 개요](../cpp/overview-of-declarators.md)를 참조하십시오.
 
 ## <a name="remarks"></a>설명
 
