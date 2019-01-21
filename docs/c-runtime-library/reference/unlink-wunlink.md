@@ -32,12 +32,12 @@ helpviewer_keywords:
 - files [C++], removing
 - _tunlink function
 ms.assetid: 5e4f5f1b-1e99-4391-9b18-9ac63c32fae8
-ms.openlocfilehash: 7565679c58af83d64fd59419e8e841ee48133edf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec59a02f1302fe4a2149889cf1b48090d061d6b2
+ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544199"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417618"
 ---
 # <a name="unlink-wunlink"></a>_unlink, _wunlink
 
@@ -61,7 +61,7 @@ int _wunlink(
 
 ## <a name="return-value"></a>반환 값
 
-이러한 각 함수는 정상적으로 실행되면 0을 반환합니다. 함수가-1을 반환 하는 고, 그렇지 집합과 **errno** 하 **EACCES**, 경로 의미 하는 읽기 전용 파일을 지정 합니다. 또는 **ENOENT**, 즉, 파일 또는 경로 찾을 수 없습니다 또는 경로 디렉터리를 지정 합니다.
+이러한 각 함수는 정상적으로 실행되면 0을 반환합니다. 함수가-1을 반환 하는 고, 그렇지 집합과 **errno** 하 **EACCES**, 읽기 전용 파일 또는 디렉터리를 지정 경로 즉 또는 **ENOENT**, 즉, 파일 또는 경로 가 없습니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은 [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 
