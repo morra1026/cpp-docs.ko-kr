@@ -16,7 +16,7 @@ ms.locfileid: "51330998"
 ---
 # <a name="class-c"></a>클래스 (C++)
 
-**class** 키워드를 이용하여 클래스 형식을 선언하거나 클래스 형식의 개체를 정의합니다.
+**class** 키워드를 사용하여 클래스 형식을 선언하거나 클래스 형식의 개체를 정의할 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,20 +41,20 @@ class [ms-decl-spec] [tag [: base-list ]]
 선택적으로 사용할 수 있으며 저장소 클래스를 지정합니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조합니다.
 
 *tag*<br/>
-클래스에 주어진 형식 이름입니다. 태그에는 클래스의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략 하면 익명 클래스 정의 됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조합니다.
+클래스에 주어진 형식 이름입니다. 태그에는 클래스의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략 하면 익명 클래스가 정의됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조합니다.
 
 *base-list*<br/>
-이 클래스가 구성원을 파생시킬 클래스 또는 구조의 선택적 목록입니다. 자세한 내용은 [기본 클래스](../cpp/base-classes.md)를 참조하십시오. 각 기본 클래스 또는 구조체 이름 앞에는 액세스 지정자 ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md))) 및 [virtual](../cpp/virtual-cpp.md) 키워드가 올 수 있습니다. 자세한 내용은 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)의 멤버 액세스 테이블을 참조하십시오.
+이 클래스가 구성원을 파생시킬 클래스 또는 구조의 선택적 목록입니다. 자세한 내용은 [기본 클래스](../cpp/base-classes.md)를 참조하세요. 각 기본 클래스 또는 구조체 이름 앞에는 액세스 지정자 ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md))) 및 [virtual](../cpp/virtual-cpp.md) 키워드가 올 수 있습니다. 자세한 내용은 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)의 멤버 액세스 테이블을 참조하세요.
 
 *member-list*<br/>
 클래스 멤버 목록입니다. 더 자세한 정보는 [클래스 멤버 개요](../cpp/class-member-overview.md) 를 참조합니다.
 
 *declarators*<br/>
-클래스 유형의 하나 이상의 인스턴스 이름을 지정하는 선언자 목록입니다. 선언자는 클래스의 모든 데이터 멤버가 **public**인 경우 이니셜라이저 리스트(initializer list)을 포함 할 수 있습니다. 이것은 데이터 멤버가 기본적으로 **public** 인 구조에서 클래스보다 일반적입니다. 자세한 내용은 [선언자 개요](../cpp/overview-of-declarators.md)를 참조하십시오.
+클래스 형식의 하나 이상의 인스턴스 이름을 지정하는 이니셜라이저 목록입니다. 이니셜라이저는 클래스의 모든 데이터 멤버가 **public**인 경우 이니셜라이저 목록을 포함할 수 있습니다. 이것은 데이터 멤버가 기본적으로 **public** 인 구조에서 클래스보다 일반적입니다. 자세한 내용은 [선언자 개요](../cpp/overview-of-declarators.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
-클래스에 대한 자세한 내용은 다음 항목 중 하나를 참조하세요.
+일반적인 클래스에 대한 자세한 내용은 다음 항목 중 하나를 참조하세요.
 
 - [struct](../cpp/struct-cpp.md)
 
@@ -66,7 +66,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-매니지드 클래스 및 구조체에 대한 내용은 [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)를 참조하세요.
+관리되는 클래스 및 구조체에 대한 내용은 [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
