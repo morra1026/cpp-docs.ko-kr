@@ -18,7 +18,7 @@ ms.locfileid: "51326669"
 ---
 # <a name="do-while-statement-c"></a>do-while 문(C++)
 
-지정된 종료 조건 (*표현식(expression)*)의 값이 0이 될때까지 *명령문(statement)*을 반복 실행합니다.
+지정된 종료 조건(*식(expression)*)의 값이 0이 될때까지 *문(statement)*을 반복 실행합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -30,13 +30,13 @@ while ( expression ) ;
 
 ## <a name="remarks"></a>설명
 
-종료 조건의 확인은 루프를 실행할 때마다 수행됩니다. 따라서 **do-while** 루프는 종료식의 결과에 따라 한번 이상 실행됩니다. **do-while**문은 [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md)나 [return](../cpp/return-statement-cpp.md)문으로 인해 반복 실행되는 도중에 루프가 종료 될 수 있습니다.
+종료 조건의 확인은 루프를 실행할 때마다 수행됩니다. 따라서 **do-while** 루프는 종료식의 결과에 따라 한번 이상 실행됩니다. **do-while**문은 [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md), 또는 [return](../cpp/return-statement-cpp.md)문으로 인해 반복 실행되는 도중에 루프가 종료될 수 있습니다.
 
-*표현식(expression)*은 산술 형식이나 포인터 형식이어야 합니다. 다음과 같이 실행됩니다.
+*식(expression)*은 산술 형식이나 포인터 형식이어야 합니다. 다음과 같이 실행됩니다.
 
-1. 명령문들이 실행됩니다.
+1. 문 본문이 실행됩니다.
 
-1. 다음으로, *표현식(expression)*이 평가됩니다. *표현식(expression)*이 false인 경우 **do-while** 문이 종료되고 프로그램 제어가 다음 문으로 넘어갑니다. *표현식(expression)*이 true(0이 아님)인 경우에는 1단계부터 과정이 반복됩니다.
+1. 다음으로, *식(expression)*이 평가됩니다. *표현식(expression)*이 false인 경우 **do-while** 문이 종료되고 프로그램 제어가 다음 문으로 넘어갑니다. *식(expression)*이 true(0이 아님)인 경우에는 1단계부터 과정이 반복됩니다.
 
 ## <a name="example"></a>예제
 
