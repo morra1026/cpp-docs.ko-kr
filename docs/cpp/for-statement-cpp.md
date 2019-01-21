@@ -32,9 +32,9 @@ for ( init-expression ; cond-expression ; loop-expression )
 
 |구문 이름|실행 시기|설명|
 |-----------------|-------------------|-----------------|
-|`init-expression`|다른 요소 앞의 **에 대 한** 문을 `init-expression` 한 번만 실행 됩니다. 그런 다음 `cond-expression`으로 제어가 전달됩니다.|루프 인덱스를 초기화하는 데 자주 사용됩니다. 식 또는 선언을 포함할 수 있습니다.|
-|`cond-expression`|첫 번째 반복을 포함한 `statement`의 각 반복을 실행하기 전에 `statement`는 `cond-expression`이 true(0이 아님)로 평가될 때만 실행됩니다.|정수 형식으로 명확한 변환을 하는 정수 형식 또는 클래스 형식으로 평가되는 식입니다. 일반적으로 루프 종료 기준을 테스트하는 데 사용됩니다.|
-|`loop-expression`|`statement`의 각 반복 끝에서 `loop-expression`이 실행된 후, `cond-expression`이 평가됩니다.|일반적으로 루프 인덱스 증가에 사용됩니다.|
+|`init-expression`|**for** 문의 다른 요소가 나오기 전에 `init-expression`은 한 번만 실행됩니다. 그런 다음 `cond-expression`으로 제어가 전달됩니다.|루프 인덱스를 초기화하는 데 종종 사용됩니다. 표현식이나 선언을 포함할 수 있습니다.|
+|`cond-expression`|첫 번째 반복을 포함하여 `statement`의 각 반복을 실행하기 전에 `cond-expression`이 참(0이 아님)으로 평가될 때만 `statement`가 실행됩니다.|정수 형식이나 정수 형식으로 명확히 변환되는 클래스 형식으로 평가되는 식입니다. 일반적으로 루프 종료 기준을 판단하는 데 사용됩니다.|
+|`loop-expression`|`statement`이 반복될 때마다 `loop-expression`이 실행된 후 `cond-expression`이 평가됩니다.|일반적으로 루프 인덱스 증가에 사용됩니다.|
 
 다음 예제에서는 **for** 문을 사용하는 다양한 방법을 보여줍니다.
 
@@ -130,7 +130,7 @@ for (int i = 0 ; i < 5 ; i++) {
 
 [/Ze](../build/reference/za-ze-disable-language-extensions.md) 컴파일 옵션과 함께 빌드되었다면, 기본적으로 **for** 루프에서 선언된 변수는 **for** 루프의 범위를 끝내기 전까지 범위에 남아있습니다.
 
-[/Zc: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md) 지정 하지 않고도 for 루프에서 선언 된 변수의 표준 동작을 활성화 `/Za`합니다.
+[/Zc: forscope](../build/reference/zc-forscope-force-conformance-in-for-loop-scope.md)는 `/Za`를 지정할 필요 없이 **for** 루프에 선언된 변수의 표준 동작을 활성화합니다.
 
 다음과 같이 **for** 루프의 범위 지정 차이를 사용하여 `/Ze`에서 변수를 다시 선언할 수도 있습니다.
 
@@ -144,7 +144,7 @@ int main(){
 }
 ```
 
-에 선언 된 변수의 표준 동작을 더 가깝게 모방이 **에 대 한** 루프에서 선언 된 변수를 필요로 하는 **에 대 한** 루프가 완료 되 면 범위를 벗어나는 루프입니다. 변수가 선언 된 경우는 **에 대 한** 루프 컴파일러 내부적으로 승격에서 지역 변수를 **에 대 한** 루프의 안에 있는 바깥쪽 범위 변수가 이미 같은 이름의 지역 변수인 경우에 합니다.
+이것은 **for** 루프에서 선언된 변수 표준 동작을 더 가깝게 모방합니다. **for** 루프에서 선언된 변수는 루프가 완료된 후에 범위를 벗어나야 합니다. **for** 루프에서 변수를 선언하면 컴파일러는 동일한 이름의 로컬 변수가 이미 있더라도 **for** 루프의 범위를 포함하는 로컬 변수로 내부적으로 이를 승격합니다.
 
 ## <a name="see-also"></a>참고자료
 
