@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: 5f74861f75ed3cd431379f26f9802c0fb29a8bea
-ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397318"
----
 # [Visual C++의 OpenMP](openmp-in-visual-cpp.md)
 # [OpenMP C 및 C++ 애플리케이션 인터페이스](openmp-c-and-cpp-application-program-interface.md)
 ## [목차](contents.md)
