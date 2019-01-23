@@ -43,8 +43,8 @@ class [ms-decl-spec] [tag [: base-list ]]
 *tag*<br/>
 클래스에 주어진 형식 이름입니다. 태그에는 클래스의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략 하면 익명 클래스가 정의됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조합니다.
 
-*기본-목록*<br/>
-클래스 또는 구조체의 선택적 목록이이 클래스는 해당 멤버에서 파생 됩니다. 참조 [기본 클래스](../cpp/base-classes.md) 자세한 내용은 합니다. 각 기본 클래스 또는 구조체 이름 액세스 지정자 뒤에 올 수 있습니다 ([공용](../cpp/public-cpp.md)를 [개인](../cpp/private-cpp.md)하십시오 [보호](../cpp/protected-cpp.md)) 및 [가상](../cpp/virtual-cpp.md) 키워드입니다. 멤버 액세스 테이블을 참조 하세요 [클래스 멤버에 대 한 액세스 제어](member-access-control-cpp.md) 자세한 내용은 합니다.
+*base-list*<br/>
+이 클래스가 구성원을 파생시킬 클래스 또는 구조의 선택적 목록입니다. 자세한 내용은 [기본 클래스](../cpp/base-classes.md)를 참조하세요. 각 기본 클래스 또는 구조체 이름 앞에는 액세스 지정자 ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md)) 및 [virtual](../cpp/virtual-cpp.md) 키워드가 올 수 있습니다. 자세한 내용은 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)의 멤버 액세스 테이블을 참조하세요.
 
 *member-list*<br/>
 클래스 멤버 목록입니다. 더 자세한 정보는 [클래스 멤버 개요](../cpp/class-member-overview.md) 를 참조합니다.
@@ -66,7 +66,7 @@ class [ms-decl-spec] [tag [: base-list ]]
 
 - [__virtual_inheritance](../cpp/inheritance-keywords.md)
 
-관리 되는 클래스와 구조체에 대 한 정보를 참조 하세요. [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)
+관리되는 클래스 및 구조체에 대한 내용은 [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)를 참조하세요.
 
 ## <a name="example"></a>예제
 
