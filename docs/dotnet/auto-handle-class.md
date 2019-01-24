@@ -1,19 +1,26 @@
 ---
 title: auto_handle 클래스
-ms.date: 11/04/2016
+ms.date: 01/16/2019
 ms.topic: reference
 f1_keywords:
-- auto_handle, msclr::auto_handle
-- msclr.auto_handle
+- msclr::auto_handle::auto_handle
+- msclr::auto_handle::get
+- msclr::auto_handle::release
+- msclr::auto_handle::reset
+- msclr::auto_handle::swap
+- msclr::auto_handle::operator->
+- msclr::auto_handle::operator=
+- msclr::auto_handle::operator auto_handle
+- msclr::auto_handle::operator!
 helpviewer_keywords:
-- auto_handle class
+- msclr::auto_handle class
 ms.assetid: a65604d1-ecbb-44fd-ae2f-696ddeeed9d6
-ms.openlocfilehash: 0f4139e4ed2ebcb2cf753c13821178ac8ff6172b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad98bfa9ff447f08c458427961b427e0f2087e62
+ms.sourcegitcommit: 9813e146a4eb30929d8352872859e8fcb7ff6d2f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524010"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54806009"
 ---
 # <a name="autohandle-class"></a>auto_handle 클래스
 
@@ -21,15 +28,43 @@ ms.locfileid: "50524010"
 
 ## <a name="syntax"></a>구문
 
-```
+```cpp
 template<typename _element_type>
 ref class auto_handle;
 ```
 
-#### <a name="parameters"></a>매개 변수
+### <a name="parameters"></a>매개 변수
 
 *_element_type*<br/>
 포함할 관리 되는 형식입니다.
+
+## <a name="members"></a>멤버 
+
+### <a name="public-constructors"></a>Public 생성자  
+
+|이름|설명|  
+|---------|-----------|  
+|[auto_handle::auto_handle](#auto-handle)|`auto_handle` 생성자입니다.|  
+|[auto_handle::~auto_handle](#tilde-auto-handle)|`auto_handle` 소멸자입니다.|  
+
+### <a name="public-methods"></a>public 메서드  
+
+|이름|설명|  
+|---------|-----------|  
+|[auto_handle::get](#get)|포함 된 개체를 가져옵니다.|  
+|[auto_handle::release](#release)|개체를 해제 `auto_handle` 관리 합니다.|
+|[auto_handle::reset](#reset)|현재 소유한 개체를 제거 하 고 필요에 따라 새 개체의 소유를 수행 합니다.| 
+|[auto_handle::swap](#swap)|다른 개체를 바꿉니다 `auto_handle`합니다.|  
+
+### <a name="public-operators"></a>Public 연산자 
+
+|이름|설명|  
+|---------|-----------| 
+|[auto_handle::operator-&gt;](#operator-arrow)|멤버 액세스 연산자입니다.|   
+|[auto_handle::operator=](#operator-assign)|대입 연산자입니다.| 
+|[auto_handle::operator auto_handle](#operator-auto-handle)|형식 캐스팅 연산자 간의 `auto_handle` 및 호환 되는 형식입니다.|  
+|[auto_handle::operator bool](#operator-bool)|연산자를 사용 하 여 `auto_handle` 조건식에서입니다.|   
+|[auto_handle::operator!](#operator-logical-not)|연산자를 사용 하 여 `auto_handle` 조건식에서입니다.|  
 
 ## <a name="requirements"></a>요구 사항
 
@@ -37,8 +72,647 @@ ref class auto_handle;
 
 **Namespace** msclr
 
-## <a name="see-also"></a>참고 항목
+## <a name="auto-handle"></a>auto_handle::auto_handle
 
-[auto_handle](../dotnet/auto-handle.md)<br/>
-[auto_handle 멤버](../dotnet/auto-handle-members.md)<br/>
-[auto_gcroot 클래스](../dotnet/auto-gcroot-class.md)
+`auto_handle` 생성자입니다.
+
+```cpp
+auto_handle();
+auto_handle(
+   _element_type ^ _ptr
+);
+auto_handle(
+   auto_handle<_element_type> % _right
+);
+template<typename _other_type>
+auto_handle(
+   auto_handle<_other_type> % _right
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*_ptr*<br/>
+개체 자체입니다.
+
+*_right*<br/>
+기존 `auto_handle`입니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_auto_handle.cpp
+// compile with: /clr
+#include "msclr\auto_handle.h"
+
+using namespace System;
+using namespace msclr;
+ref class RefClassA {
+protected:
+   String^ m_s;
+public:
+   RefClassA(String^ s) : m_s(s) {
+      Console::WriteLine( "in RefClassA constructor: " + m_s );
+   }
+   ~RefClassA() {
+      Console::WriteLine( "in RefClassA destructor: " + m_s );
+   }
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class RefClassB : RefClassA {
+public:
+   RefClassB( String^ s ) : RefClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main()
+{
+   {
+      auto_handle<RefClassA> a(gcnew RefClassA( "first" ) );
+      a->PrintHello();
+   }
+
+   {
+      auto_handle<RefClassB> b(gcnew RefClassB( "second" ) );
+      b->PrintHello();
+      auto_handle<RefClassA> a(b); //construct from derived type
+      a->PrintHello();
+      auto_handle<RefClassA> a2(a); //construct from same type
+      a2->PrintHello();
+   }
+
+   Console::WriteLine("done");
+}
+```
+
+```Output
+in RefClassA constructor: first
+Hello from first A!
+in RefClassA destructor: first
+in RefClassA constructor: second
+Hello from second B!
+Hello from second A!
+Hello from second A!
+in RefClassA destructor: second
+done
+```
+
+## <a name="tilde-auto-handle"></a>auto_handle::~auto_handle
+
+`auto_handle` 소멸자입니다.
+
+```cpp
+~auto_handle();
+```
+
+### <a name="remarks"></a>설명
+
+소멸자에는 또한 소유한 개체를 destructs 합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_dtor.cpp
+// compile with: /clr
+#include "msclr\auto_handle.h"
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+public:
+   ClassA() { Console::WriteLine( "ClassA constructor" ); }
+   ~ClassA() { Console::WriteLine( "ClassA destructor" ); }
+};
+
+int main()
+{
+   // create a new scope for a:
+   {
+      auto_handle<ClassA> a = gcnew ClassA;
+   }
+   // a goes out of scope here, invoking its destructor
+   // which in turns destructs the ClassA object.
+
+   Console::WriteLine( "done" );
+}
+```
+
+```Output
+ClassA constructor
+ClassA destructor
+done
+```
+
+## <a name="get"></a>auto_handle::get
+
+포함 된 개체를 가져옵니다.
+
+```cpp
+_element_type ^ get();
+```
+
+### <a name="return-value"></a>반환 값
+
+포함된 개체입니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_get.cpp
+// compile with: /clr
+#include "msclr\auto_handle.h"
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ){
+      Console::WriteLine( "in ClassA constructor:" + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "in ClassA destructor:" + m_s );
+   }
+
+   void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+void PrintA( ClassA^ a ) {
+   a->PrintHello();
+}
+
+int main() {
+   auto_handle<ClassA> a = gcnew ClassA( "first" );
+   a->PrintHello();
+
+   ClassA^ a2 = a.get();
+   a2->PrintHello();
+
+   PrintA( a.get() );
+}
+```
+
+```Output
+in ClassA constructor:first
+Hello from first A!
+Hello from first A!
+Hello from first A!
+in ClassA destructor:first
+```
+
+## <a name="release"></a>auto_handle::release
+
+개체를 해제 `auto_handle` 관리 합니다.
+
+```cpp
+_element_type ^ release();
+```
+
+### <a name="return-value"></a>반환 값
+
+출시 된 개체입니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_release.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {
+      Console::WriteLine( "ClassA constructor: " + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "ClassA destructor: " + m_s );
+   }
+
+   void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+int main()
+{
+   ClassA^ a;
+
+   // create a new scope:
+   {
+      auto_handle<ClassA> agc1 = gcnew ClassA( "first" );
+      auto_handle<ClassA> agc2 = gcnew ClassA( "second" );
+      a = agc1.release();
+   }
+   // agc1 and agc2 go out of scope here
+
+   a->PrintHello();
+
+   Console::WriteLine( "done" );
+}
+```
+
+```Output
+ClassA constructor: first
+ClassA constructor: second
+ClassA destructor: second
+Hello from first A!
+done
+```
+
+## <a name="reset"></a>auto_handle::reset
+
+현재 소유한 개체를 제거 하 고 필요에 따라 새 개체의 소유를 수행 합니다.
+
+
+```cpp
+void reset(
+   _element_type ^ _new_ptr
+);
+void reset();
+```
+
+### <a name="parameters"></a>매개 변수
+
+*_new_ptr*<br/>
+(선택 사항) 새 개체입니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_reset.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {
+      Console::WriteLine( "ClassA constructor: " + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "ClassA destructor: " + m_s );
+   }
+
+   void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+int main()
+{
+   auto_handle<ClassA> agc1 = gcnew ClassA( "first" );
+   agc1->PrintHello();
+
+   ClassA^ ha = gcnew ClassA( "second" );
+   agc1.reset( ha ); // release first object, reference second
+   agc1->PrintHello();
+
+   agc1.reset(); // release second object, set to nullptr
+
+   Console::WriteLine( "done" );
+}
+```
+
+```Output
+ClassA constructor: first
+Hello from first A!
+ClassA constructor: second
+ClassA destructor: first
+Hello from second A!
+ClassA destructor: second
+done
+```
+
+## <a name="swap"></a>auto_handle::swap
+
+다른 개체를 바꿉니다 `auto_handle`합니다.
+
+```cpp
+void swap(
+   auto_handle<_element_type> % _right
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*_right*<br/>
+`auto_handle` 교환할 수 있는 개체입니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_swap.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_handle<String> s1 = "string one";
+   auto_handle<String> s2 = "string two";
+
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+   s1.swap( s2 );
+   Console::WriteLine( "s1 = '{0}', s2 = '{1}'",
+      s1->ToString(), s2->ToString() );
+}
+```
+
+```Output
+s1 = 'string one', s2 = 'string two'
+s1 = 'string two', s2 = 'string one'
+```
+
+## <a name="operator-arrow"></a>auto_handle::operator-&gt;
+
+멤버 액세스 연산자입니다.
+
+```cpp
+_element_type ^ operator->();
+```
+
+### <a name="return-value"></a>반환 값
+
+개체가 래핑하는 `auto_handle`합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_op_arrow.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {}
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+
+   int m_i;
+};
+
+int main() {
+   auto_handle<ClassA> a( gcnew ClassA( "first" ) );
+   a->PrintHello();
+
+   a->m_i = 5;
+   Console::WriteLine( "a->m_i = {0}", a->m_i );
+}
+```
+
+```Output
+Hello from first A!
+a->m_i = 5
+```
+
+## <a name="operator-assign"></a>auto_handle::operator=
+
+대입 연산자입니다.
+
+```cpp
+auto_handle<_element_type> % operator=(
+   auto_handle<_element_type> % _right
+);
+template<typename _other_type>
+auto_handle<_element_type> % operator=(
+   auto_handle<_other_type> % _right
+);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*_right*<br/>
+합니다 `auto_handle` 현재 할당할 `auto_handle`합니다.
+
+### <a name="return-value"></a>반환 값
+
+현재 `auto_handle`이제 소유 `_right`합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_op_assign.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA(String^ s) : m_s(s) {
+      Console::WriteLine( "in ClassA constructor: " + m_s );
+   }
+   ~ClassA() {
+      Console::WriteLine( "in ClassA destructor: " + m_s );
+   }
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class ClassB : ClassA {
+public:
+   ClassB( String^ s ) : ClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main()
+{
+   auto_handle<ClassA> a;
+   auto_handle<ClassA> a2(gcnew ClassA( "first" ) );
+   a = a2; // assign from same type
+   a->PrintHello();
+
+   auto_handle<ClassB> b(gcnew ClassB( "second" ) );
+   b->PrintHello();
+   a = b; // assign from derived type
+   a->PrintHello();
+
+   Console::WriteLine("done");
+}
+```
+
+```Output
+in ClassA constructor: first
+Hello from first A!
+in ClassA constructor: second
+Hello from second B!
+in ClassA destructor: first
+Hello from second A!
+done
+in ClassA destructor: second
+```
+
+## <a name="operator-auto-handle"></a>auto_handle::operator auto_handle
+
+형식 캐스팅 연산자 간의 `auto_handle` 및 호환 되는 형식입니다.
+
+
+```cpp
+template<typename _other_type>
+operator auto_handle<_other_type>();
+```
+
+### <a name="return-value"></a>반환 값
+
+현재 `auto_handle` 캐스팅할 `auto_handle<_other_type>`합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_op_auto_handle.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+ref class ClassA {
+protected:
+   String^ m_s;
+public:
+   ClassA( String^ s ) : m_s( s ) {}
+
+   virtual void PrintHello() {
+      Console::WriteLine( "Hello from {0} A!", m_s );
+   }
+};
+
+ref class ClassB : ClassA {
+public:
+   ClassB( String ^ s) : ClassA( s ) {}
+   virtual void PrintHello() new {
+      Console::WriteLine( "Hello from {0} B!", m_s );
+   }
+};
+
+int main() {
+   auto_handle<ClassB> b = gcnew ClassB("first");
+   b->PrintHello();
+   auto_handle<ClassA> a = (auto_handle<ClassA>)b;
+   a->PrintHello();
+}
+```
+
+```Output
+Hello from first B!
+Hello from first A!
+```
+
+## <a name="operator-bool"></a>auto_handle::operator bool
+
+연산자를 사용 하 여 `auto_handle` 조건식에서입니다.
+
+```cpp
+operator bool();
+```
+
+### <a name="return-value"></a>반환 값
+
+`true` 래핑된 개체가 잘못 되었습니다. `false` 그렇지 않은 경우.
+
+### <a name="remarks"></a>설명
+
+이 연산자를 실제로 변환 `_detail_class::_safe_bool` 는 보다 안전한 `bool` 정수 계열 형식으로 변환할 수 없기 때문입니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_operator_bool.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_handle<String> s1;
+   auto_handle<String> s2 = "hi";
+   if ( s1 ) Console::WriteLine( "s1 is valid" );
+   if ( !s1 ) Console::WriteLine( "s1 is invalid" );
+   if ( s2 ) Console::WriteLine( "s2 is valid" );
+   if ( !s2 ) Console::WriteLine( "s2 is invalid" );
+   s2.reset();
+   if ( s2 ) Console::WriteLine( "s2 is now valid" );
+   if ( !s2 ) Console::WriteLine( "s2 is now invalid" );
+}
+```
+
+```Output
+s1 is invalid
+s2 is valid
+s2 is now invalid
+```
+
+## <a name="operator-logical-not"></a>auto_handle::operator!
+
+연산자를 사용 하 여 `auto_handle` 조건식에서입니다.
+
+```cpp
+bool operator!();
+```
+
+### <a name="return-value"></a>반환 값
+
+`true` 래핑된 개체 잘못 된 경우 `false` 그렇지 않은 경우.
+
+### <a name="example"></a>예제
+
+```cpp
+// msl_auto_handle_operator_not.cpp
+// compile with: /clr
+#include <msclr\auto_handle.h>
+
+using namespace System;
+using namespace msclr;
+
+int main() {
+   auto_handle<String> s1;
+   auto_handle<String> s2 = "something";
+   if ( s1) Console::WriteLine( "s1 is valid" );
+   if ( !s1 ) Console::WriteLine( "s1 is invalid" );
+   if ( s2 ) Console::WriteLine( "s2 is valid" );
+   if ( !s2 ) Console::WriteLine( "s2 is invalid" );
+   s2.reset();
+   if ( s2 ) Console::WriteLine( "s2 is now valid" );
+   if ( !s2 ) Console::WriteLine( "s2 is now invalid" );
+}
+```
+
+```Output
+s1 is invalid
+s2 is valid
+s2 is now invalid
+```
