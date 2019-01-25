@@ -15,7 +15,7 @@ ms.locfileid: "50677112"
 ---
 # <a name="creating-a-project-for-the-provider"></a>공급자용 프로젝트 만들기
 
-## <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB 공급자는 귀하가 거주 하는 프로젝트를 만들려면
+## <a name="to-create-a-project-in-which-the-ole-db-provider-will-reside"></a>OLE DB 공급자가 상주할 프로젝트를 만들려면
 
 1. **파일** 메뉴에서 **새로 만들기**를 클릭한 다음 **프로젝트**를 클릭합니다.
 
@@ -26,9 +26,9 @@ ms.locfileid: "50677112"
     > [!NOTE]
     > Visual Studio의 이전 버전에서에서 프로젝트 형식의 찾을 **설치 됨** > **템플릿** > **Visual c + +**  >  **ATL**합니다.
 
-1. 에 **이름을** 상자, 프로젝트의 이름을 입력 한 다음 클릭 **확인**합니다.
+1. **이름** 상자에 프로젝트의 이름을 입력한 후 **확인**을 클릭합니다.
 
-   합니다 **ATL 프로젝트 마법사** 나타납니다.
+   **ATL 프로젝트 마법사**가 나타납니다.
 
 1. 에 **ATL 프로젝트 마법사**, 선택 **동적 연결 라이브러리 (DLL)** 에 대 한 **응용 프로그램 유형을**합니다.
 
