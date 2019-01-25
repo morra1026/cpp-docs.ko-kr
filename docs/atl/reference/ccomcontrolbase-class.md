@@ -80,12 +80,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-ms.openlocfilehash: def8334cf0ed9b6b2ee821e1e0f1a717d90f2163
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 67d2be23aa6209c36b1a72eca3322efd1e977447
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694584"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894434"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase 클래스
 
@@ -113,7 +113,7 @@ class ATL_NO_VTABLE CComControlBase
 |이름|설명|
 |----------|-----------------|
 |[CComControlBase::CComControlBase](#ccomcontrolbase)|생성자입니다.|
-|[CComControlBase:: ~ CComControlBase](#dtor)|소멸자입니다.|
+|[CComControlBase::~CComControlBase](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -124,7 +124,7 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase::DoesVerbUIActivate](#doesverbuiactivate)|하는지 확인 합니다 *iVerb* 매개 변수에서 사용 하는 `IOleObjectImpl::DoVerb` 활성화 하려면 컨트롤의 사용자 인터페이스 시키고 TRUE를 반환 합니다.|
 |[CComControlBase::DoVerbProperties](#doverbproperties)|컨트롤의 속성 페이지를 표시합니다.|
 |[CComControlBase::FireViewChange](#fireviewchange)|컨트롤의 뷰가 변경 되는 등록 된 advise 싱크 알림 또는 컨트롤을 다시 그리게 컨테이너에 전달 하려면이 메서드를 호출 합니다.|
-|[CComControlBase::GetAmbientAppearance](#getambientappearance)|DISPID_AMBIENT_APPEARANCE, 컨트롤 설정 현재 모양을 검색: 0 평면 음영 및 3D에 대 한 1입니다.|
+|[CComControlBase::GetAmbientAppearance](#getambientappearance)|DISPID_AMBIENT_APPEARANCE, 현재 모양 컨트롤에 대 한 설정을 검색 합니다. 단순 및 3D에 대 한 1 0입니다.|
 |[CComControlBase::GetAmbientAutoClip](#getambientautoclip)|DISPID_AMBIENT_AUTOCLIP, 컨테이너 자동 클리핑이 컨트롤 표시 영역을 지원 하는지 여부를 나타내는 플래그를 검색 합니다.|
 |[CComControlBase::GetAmbientBackColor](#getambientbackcolor)|DISPID_AMBIENT_BACKCOLOR, 컨테이너에 의해 정의 된 모든 컨트롤에 대 한 앰비언트 배경색을 검색 합니다.|
 |[CComControlBase::GetAmbientCharSet](#getambientcharset)|DISPID_AMBIENT_CHARSET를 앰비언트 문자 컨테이너에 의해 정의 된 모든 컨트롤에 대 한 집합을 검색 합니다.|
@@ -143,7 +143,7 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase::GetAmbientShowGrabHandles](#getambientshowgrabhandles)|DISPID_AMBIENT_SHOWGRABHANDLES, 컨테이너가 활성 상태인 경우 자체에 대 한 잡기 핸들을 표시 하도록 컨트롤을 허용 하는지 여부를 나타내는 플래그를 검색 합니다.|
 |[CComControlBase::GetAmbientShowHatching](#getambientshowhatching)|DISPID_AMBIENT_SHOWHATCHING, 컨테이너 UI 활성 상태일 때 교차 무늬 패턴을 사용 하 여 표시 하도록 컨트롤을 허용 하는지 여부를 나타내는 플래그를 검색 합니다.|
 |[CComControlBase::GetAmbientSupportsMnemonics](#getambientsupportsmnemonics)|DISPID_AMBIENT_SUPPORTSMNEMONICS, 컨테이너 키보드 니모닉 지원 하는지 여부를 나타내는 플래그를 검색 합니다.|
-|[CComControlBase::GetAmbientTextAlign](#getambienttextalign)|DISPID_AMBIENT_TEXTALIGN, 컨테이너에서 지 원하는 기본 텍스트 맞춤을 검색 합니다: 일반 맞춤 (숫자 오른쪽 텍스트 왼쪽)에 대해 0, 1 왼쪽 맞춤, 가운데 맞춤에 대 한 2 및 3 오른쪽 맞춤에 대 한 합니다.|
+|[CComControlBase::GetAmbientTextAlign](#getambienttextalign)|DISPID_AMBIENT_TEXTALIGN, 컨테이너에서 지 원하는 기본 텍스트 맞춤을 검색 합니다. 일반 맞춤 (숫자 오른쪽 텍스트 왼쪽)에 대 한 0, 1 왼쪽된 맞춤, 가운데 맞춤에 대 한 2 및 오른쪽 맞춤에 대 한 3.|
 |[CComControlBase::GetAmbientTopToBottom](#getambienttoptobottom)|DISPID_AMBIENT_TOPTOBOTTOM, 콘텐츠를 컨테이너에 의해 표시 되는 방향을 검색 합니다.|
 |[CComControlBase::GetAmbientUIDead](#getambientuidead)|DISPID_AMBIENT_UIDEAD, 컨테이너 컨트롤 사용자 인터페이스 작업에 응답할가 있는지 여부를 나타내는 플래그를 검색 합니다.|
 |[CComControlBase::GetAmbientUserMode](#getambientusermode)|DISPID_AMBIENT_USERMODE, 컨테이너 (TRUE)를 실행 모드 또는 디자인 모드 (FALSE) 인지 여부를 나타내는 플래그를 검색 합니다.|
@@ -235,7 +235,7 @@ CComControlBase(HWND& h);
 
 컨트롤 크기를 HIMETRIC 단위 5080 X 5080 초기화 ("2" X 2)를 초기화 하 고는 `CComControlBase` 데이터 멤버 값을 NULL 또는 FALSE입니다.
 
-##  <a name="dtor"></a>  CComControlBase:: ~ CComControlBase
+##  <a name="dtor"></a>  CComControlBase::~CComControlBase
 
 소멸자입니다.
 
@@ -358,7 +358,7 @@ HRESULT 값 중 하나입니다.
 
 ##  <a name="getambientappearance"></a>  CComControlBase::GetAmbientAppearance
 
-DISPID_AMBIENT_APPEARANCE, 컨트롤 설정 현재 모양을 검색: 0 평면 음영 및 3D에 대 한 1입니다.
+DISPID_AMBIENT_APPEARANCE, 현재 모양 컨트롤에 대 한 설정을 검색 합니다. 단순 및 3D에 대 한 1 0입니다.
 
 ```
 HRESULT GetAmbientAppearance(short& nAppearance);
@@ -511,7 +511,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
 ### <a name="parameters"></a>매개 변수
 
 *ppFont*<br/>
-컨테이너에 대 한 포인터의 앰비언트 [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) 디스패치 인터페이스입니다.
+컨테이너에 대 한 포인터의 앰비언트 [IFontDisp](/windows/desktop/api/ocidl/nn-ocidl-ifontdisp) 디스패치 인터페이스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -531,7 +531,7 @@ HRESULT GetAmbientForeColor(OLE_COLOR& ForeColor);
 
 ### <a name="parameters"></a>매개 변수
 
-*전경색*<br/>
+*ForeColor*<br/>
 DISPID_AMBIENT_FORECOLOR 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -704,7 +704,7 @@ HRESULT 값 중 하나입니다.
 
 ##  <a name="getambienttextalign"></a>  CComControlBase::GetAmbientTextAlign
 
-DISPID_AMBIENT_TEXTALIGN, 컨테이너에서 지 원하는 기본 텍스트 맞춤을 검색 합니다: 일반 맞춤 (숫자 오른쪽 텍스트 왼쪽)에 대해 0, 1 왼쪽 맞춤, 가운데 맞춤에 대 한 2 및 3 오른쪽 맞춤에 대 한 합니다.
+DISPID_AMBIENT_TEXTALIGN, 컨테이너에서 지 원하는 기본 텍스트 맞춤을 검색 합니다. 일반 맞춤 (숫자 오른쪽 텍스트 왼쪽)에 대 한 0, 1 왼쪽된 맞춤, 가운데 맞춤에 대 한 2 및 오른쪽 맞춤에 대 한 3.
 
 ```
 HRESULT GetAmbientTextAlign(short& nTextAlign);
@@ -1217,11 +1217,11 @@ CComPtr<IOleInPlaceSiteWindowless>
 
 다음 표는 하는 방법을 `m_spInPlaceSite` 포인터 형식에 따라 달라 집니다 합니다 [m_bWndLess](#m_bwndless) 하 고 [m_bInPlaceSiteEx](#m_binplacesiteex) 데이터 멤버 플래그:
 
-|m_spInPlaceSite 형식|m_bWndLess 값|m_bInPlaceSiteEx 값|
+|m_spInPlaceSite 형식|m_bWndLess 값|m_bInPlaceSiteEx Value|
 |---------------------------|-----------------------|-----------------------------|
-|`IOleInPlaceSiteWindowless`|true|TRUE 또는 FALSE|
-|`IOleInPlaceSiteEx`|false|true|
-|`IOleInPlaceSite`|FALSE|false|
+|`IOleInPlaceSiteWindowless`|TRUE|TRUE 또는 FALSE|
+|`IOleInPlaceSiteEx`|FALSE|true|
+|`IOleInPlaceSite`|FALSE|FALSE|
 
 ##  <a name="m_spoleadviseholder"></a>  CComControlBase::m_spOleAdviseHolder
 
@@ -1518,7 +1518,7 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
 모양 또는 컨트롤의 뷰입니다.
 
 *lindex*<br/>
-변경 된 보기의 일부입니다. 1만 유효합니다.
+변경된 뷰 부분입니다. 1만 유효합니다.
 
 ### <a name="return-value"></a>반환 값
 

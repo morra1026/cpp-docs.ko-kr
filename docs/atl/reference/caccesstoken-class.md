@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: e8fadb6825bbdc970e952d2ea6c26a27b4837dfc
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: e53160860211ba09114f2d4d101a2eaaf7de941f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694532"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894245"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken 클래스
 
@@ -224,7 +224,7 @@ bool CreateImpersonationToken(
 
 ### <a name="remarks"></a>설명
 
-`CreateImpersonationToken` 호출 [DuplicateToken](https://msdn.microsoft.com/library/windows/desktop/aa446616) 새 가장 토큰을 만들어야 합니다.
+`CreateImpersonationToken` 호출 [DuplicateToken](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) 새 가장 토큰을 만들어야 합니다.
 
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken
 
@@ -661,7 +661,7 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 
 ### <a name="remarks"></a>설명
 
-호출 된 [OpenProcessToken](https://msdn.microsoft.com/library/aa379295) Win32 함수입니다.
+호출 된 [OpenProcessToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) Win32 함수입니다.
 
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile
 
@@ -1093,7 +1093,7 @@ bool PrivilegeCheck(
 
 ### <a name="remarks"></a>설명
 
-때 `PrivilegeCheck` 반환 합니다 `Attributes` 의 각 멤버 [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) 구조는 해당 권한을 사용 하도록 설정 하는 경우 SE_PRIVILEGE_USED_FOR_ACCESS로 설정 됩니다. 이 메서드를 호출 합니다 [PrivilegeCheck](https://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 함수입니다.
+때 `PrivilegeCheck` 반환 합니다 `Attributes` 의 각 멤버 [LUID_AND_ATTRIBUTES](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) 구조는 해당 권한을 사용 하도록 설정 하는 경우 SE_PRIVILEGE_USED_FOR_ACCESS로 설정 됩니다. 이 메서드를 호출 합니다 [PrivilegeCheck](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-privilegecheck) Win32 함수입니다.
 
 ##  <a name="revert"></a>  CAccessToken::Revert
 

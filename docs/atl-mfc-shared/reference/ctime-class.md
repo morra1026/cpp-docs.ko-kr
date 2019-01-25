@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CTime class
 - shared classes, CTime
 ms.assetid: 0a299544-485b-48dc-9d3c-fdc30f57d612
-ms.openlocfilehash: cedd1bfd4ea955f920e13b5d01beb3a478656b69
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: a73baab3e43467b76c1b4e3592314a4323d22ffb
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178124"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893979"
 ---
 # <a name="ctime-class"></a>CTime 클래스
 
@@ -57,7 +57,7 @@ class CTime
 |[CTime::Format](#format)|변환는 `CTime` 서식이 지정 된 문자열 개체로-현지 표준 시간대에 따라 합니다.|
 |[CTime::FormatGmt](#formatgmt)|변환는 `CTime` 서식이 지정 된 문자열 개체로-UTC를 기반으로 합니다.|
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|저장 된 시간 정보를 변환 합니다 `CTime` Win32 호환 DBTIMESTAMP 구조에는 개체입니다.|
-|[CTime::GetAsSystemTime](#getassystemtime)|저장 된 시간 정보를 변환 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.|
+|[CTime::GetAsSystemTime](#getassystemtime)|저장 된 시간 정보를 변환 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조입니다.|
 |[CTime::GetCurrentTime](#getcurrenttime)|만듭니다는 `CTime` 현재 (정적 멤버 함수)를 나타내는 개체입니다.|
 |[CTime::GetDay](#getday)|일 나타내는 반환 합니다 `CTime` 개체입니다.|
 |[CTime::GetDayOfWeek](#getdayofweek)|나타내는 요일 반환을 `CTime` 개체입니다.|
@@ -75,10 +75,10 @@ class CTime
 
 |||
 |-|-|
-|[연산자 +-](#operator_add_-)|이러한 연산자는 더하기 및 빼기 `CTimeSpan` 고 `CTime` 개체입니다.|
-|[operator + =, =](#operator_add_eq_-_eq)|이러한 연산자는 더하기 및 빼기는 `CTimeSpan` 개체를이 `CTime` 개체입니다.|
+|[operator + -](#operator_add_-)|이러한 연산자는 더하기 및 빼기 `CTimeSpan` 고 `CTime` 개체입니다.|
+|[operator +=, -=](#operator_add_eq_-_eq)|이러한 연산자는 더하기 및 빼기는 `CTimeSpan` 개체를이 `CTime` 개체입니다.|
 |[operator =](#operator_eq)|대입 연산자입니다.|
-|[연산자 = =, <, 등입니다.](#ctime_comparison_operators)|비교 연산자입니다.|
+|[operator ==, < , etc.](#ctime_comparison_operators)|비교 연산자입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -153,7 +153,7 @@ CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 *time*<br/>
 `__time64_t` 시간 값은 1970 년 1 월 1 일 UTC 이후의 초 수입니다. 현지 시간으로 조정 됩니다이 note 합니다. 예를 들어, 뉴욕에 만들려는 경우는 `CTime` 자릿수가 0 인 매개 변수를 전달 하 여 개체 [CTime::GetMonth](#getmonth) 12를 반환 합니다.
 
-*nYear*, *nMonth*합니다 *발생 한 날짜*를 *n 시간*를 *nMin*, *nSec*<br/>
+*nYear*, *nMonth*, *nDay*, *nHour*, *nMin*, *nSec*<br/>
 복사할 새 날짜 및 시간 값을 나타내는 `CTime` 개체입니다.
 
 *nDST*<br/>
@@ -169,10 +169,10 @@ CTime(const DBTIMESTAMP& dbts, int nDST = -1) throw();
 MS-DOS 날짜 및 시간 값을 날짜/시간 값으로 변환 되어 새 복사 `CTime` 개체입니다.
 
 *st*<br/>
-A [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
+A [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
 
 *ft*<br/>
-A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 하는 날짜/시간 값으로 변환 하 고 새 복사 구조 `CTime` 개체입니다.
 
 *dbts*<br/>
 현재 현지 시간을 포함 하는 DBTIMESTAMP 구조체에 대 한 참조입니다.
@@ -193,8 +193,8 @@ A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 하는
    |---------------|-----------|
    |*nYear*|1970-3000|
    |*nMonth*|1-12|
-   |*발생 한 날짜*|1-31|
-   |*n 시간*|0-23|
+   |*nDay*|1-31|
+   |*nHour*|0-23|
    |*nMin*|0-59|
    |*nSec*|0-59|
 
@@ -209,7 +209,7 @@ A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 하는
    > [!NOTE]
    > 생성자를 통해 `DBTIMESTAMP` OLEDB.h 포함 되는 경우 매개 변수는만 사용할 수 있습니다.
 
-자세한 내용은 참조는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 및 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK에는 구조입니다. 참조를 [MS-DOS 날짜 및 시간](/windows/desktop/SysInfo/ms-dos-date-and-time) Windows SDK에는 항목입니다.
+자세한 내용은 참조는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 및 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) Windows SDK에는 구조입니다. 참조를 [MS-DOS 날짜 및 시간](/windows/desktop/SysInfo/ms-dos-date-and-time) Windows SDK에는 항목입니다.
 
 ### <a name="example"></a>예제
 
@@ -304,7 +304,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
 
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime
 
-저장 된 시간 정보를 변환 하려면이 멤버 함수를 호출 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.
+저장 된 시간 정보를 변환 하려면이 멤버 함수를 호출 합니다 `CTime` Win32 호환 개체 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조입니다.
 
 ```
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -313,7 +313,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *timeDest*<br/>
-에 대 한 참조를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 의 변환 된 날짜/시간 값을 포함 하는 구조는 `CTime` 개체입니다.
+에 대 한 참조를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 의 변환 된 날짜/시간 값을 포함 하는 구조는 `CTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -574,7 +574,7 @@ CTime& operator=(__time64_t time) throw();
 
 이 오버 로드 된 할당 연산자 복사 원본에 `CTime` 개체입니다. 내부 시간 저장소에는 `CTime` 개체가 표준 시간대와 무관 합니다. 표준 시간대 변환 할당 하는 동안 필요 하지 않습니다.
 
-##  <a name="operator_add_-"></a>  CTime::operator +,-
+##  <a name="operator_add_-"></a>  CTime::operator +, -
 
 이러한 연산자는 더하기 및 빼기 `CTimeSpan` 고 `CTime` 개체입니다.
 
@@ -604,7 +604,7 @@ A `CTime` 또는 `CTimeSpan` 작업의 결과 나타내는 개체입니다.
 
 [!code-cpp[NVC_ATLMFC_Utilities#159](../../atl-mfc-shared/codesnippet/cpp/ctime-class_13.cpp)]
 
-##  <a name="operator_add_eq_-_eq"></a>  CTime::operator + =, =
+##  <a name="operator_add_eq_-_eq"></a>  CTime::operator +=, -=
 
 이러한 연산자는 더하기 및 빼기는 `CTimeSpan` 개체를이 `CTime` 개체입니다.
 
@@ -615,7 +615,7 @@ CTime& operator-=(CTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 `CTimeSpan` 개체를 추가 하거나 뺄 수 있습니다.
 
 ### <a name="return-value"></a>반환 값

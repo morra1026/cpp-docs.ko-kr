@@ -6,12 +6,12 @@ helpviewer_keywords:
 - access keys [MFC], hot keys
 - CHotKeyCtrl class [MFC], setting hot key
 ms.assetid: 6f3bc141-e346-4dce-9ca7-3e6b2c453f3f
-ms.openlocfilehash: a5dc885767137a4e53d1ea0d066944d5f276c38c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebaddb4a64a4d9d47b82fd36f118c74527554e53
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508799"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893226"
 ---
 # <a name="setting-a-hot-key"></a>바로 가기 키 설정
 
@@ -19,7 +19,7 @@ ms.locfileid: "50508799"
 
 - 전송 하 여 비 자식 창을 활성화 하기 위한 전역 바로 가기 키를 설정 된 [WM_SETHOTKEY](/windows/desktop/inputdev/wm-sethotkey) 활성화할 창에 메시지.
 
-- Windows 함수를 호출 하 여 스레드 관련 바로 가기 키를 설정 [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309)합니다.
+- Windows 함수를 호출 하 여 스레드 관련 바로 가기 키를 설정 [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey)합니다.
 
 ## <a name="see-also"></a>참고 항목
 

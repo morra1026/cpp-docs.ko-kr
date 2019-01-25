@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-ms.openlocfilehash: cec3a0fce1147ca58f2ee2c51b9d728d81dddda4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d31dd9ed1d30633b8f7078794dad06d51ec119f2
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601411"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893441"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT 클래스
 
@@ -52,7 +52,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 |이름|설명|
 |----------|-----------------|
 |[CAtlExeModuleT::CAtlExeModuleT](#catlexemodulet)|생성자입니다.|
-|[CAtlExeModuleT:: ~ CAtlExeModuleT](#dtor)|소멸자입니다.|
+|[CAtlExeModuleT::~CAtlExeModuleT](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -114,7 +114,7 @@ CAtlExeModuleT() throw();
 
 EXE 모듈을 초기화할 수 없습니다, 경우 WinMain 추가적인 처리 없이 즉시 반환 됩니다.
 
-##  <a name="dtor"></a>  CAtlExeModuleT:: ~ CAtlExeModuleT
+##  <a name="dtor"></a>  CAtlExeModuleT::~CAtlExeModuleT
 
 소멸자입니다.
 
@@ -284,7 +284,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. SW_HIDE 기본값은입니다.
+창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션입니다. SW_HIDE 기본값은입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -341,7 +341,7 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.
+창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션입니다.
 
 ### <a name="return-value"></a>반환 값
 

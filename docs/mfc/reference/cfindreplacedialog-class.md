@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: e891a6694f0a85715a7d76d196865e3238695753
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: abf230f8c9e68365f8d1db8b654174ad3e152862
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571186"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894408"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog 클래스
 
@@ -89,7 +89,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 사용 된 [m_fr](#m_fr) 호출 하기 전에 대화 상자를 초기화 하는 구조 `Create`합니다. 합니다 `m_fr` 형식의 구조체가 [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea)합니다. 이 구조에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
 
-찾기/바꾸기 요청 알릴 부모 창에 대 한 순서를 사용 해야 하는 Windows [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) 함수를 사용 합니다 [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) 프레임에 대 한 메시지 맵 매크로 이 등록 된 메시지를 처리 하는 창입니다.
+찾기/바꾸기 요청 알릴 부모 창에 대 한 순서를 사용 해야 하는 Windows [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) 함수를 사용 합니다 [ON_REGISTERED_MESSAGE](message-map-macros-mfc.md#on_registered_message) 프레임에 대 한 메시지 맵 매크로 이 등록 된 메시지를 처리 하는 창입니다.
 
 사용자가 대화 상자를 종료 하기로 여부를 확인할 수 있습니다는 `IsTerminating` 멤버 함수입니다.
 
@@ -175,7 +175,7 @@ virtual BOOL Create(
 
 ### <a name="remarks"></a>설명
 
-찾기/바꾸기 요청 알릴 부모 창에 대 한 순서를 사용 해야 하는 Windows [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) 함수 반환 값은 응용 프로그램의 인스턴스에 대해 고유한 메시지 번호가 있습니다. 프레임 창에 콜백 함수를 선언 하는 메시지 맵 항목을 있어야 합니다. ( `OnFindReplace` 뒤에 나오는 예제에서)이 등록 된 메시지를 처리 하는 합니다. 다음 코드 조각은 라는 프레임 창 클래스에 대 한이 작업을 수행 하는 방법의 예로 `CMyRichEditView`:
+찾기/바꾸기 요청 알릴 부모 창에 대 한 순서를 사용 해야 하는 Windows [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) 함수 반환 값은 응용 프로그램의 인스턴스에 대해 고유한 메시지 번호가 있습니다. 프레임 창에 콜백 함수를 선언 하는 메시지 맵 항목을 있어야 합니다. ( `OnFindReplace` 뒤에 나오는 예제에서)이 등록 된 메시지를 처리 하는 합니다. 다음 코드 조각은 라는 프레임 창 클래스에 대 한이 작업을 수행 하는 방법의 예로 `CMyRichEditView`:
 
 [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]
 

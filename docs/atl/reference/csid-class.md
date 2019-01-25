@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSid class
 ms.assetid: be58b7ca-5958-49c3-a833-ca341aaaf753
-ms.openlocfilehash: 57edb46047021d0ede04164584e79748028e05b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6fcff646a577500fd05b7c938b2c336ebe725957
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465366"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894317"
 ---
 # <a name="csid-class"></a>CSid 클래스
 
@@ -78,18 +78,18 @@ class CSid
 |||
 |-|-|
 |[operator =](#operator_eq)|대입 연산자입니다.|
-|[const SID 연산자 *](#operator_const_sid__star)|캐스트를 `CSid` 개체에 대 한 포인터를 `SID` 구조입니다.|
+|[operator const SID *](#operator_const_sid__star)|캐스트를 `CSid` 개체에 대 한 포인터를 `SID` 구조입니다.|
 
 ### <a name="global-operators"></a>전역 연산자
 
 |||
 |-|-|
 |[operator ==](#operator_eq_eq)|두 보안 설명자 개체가 같은지를 테스트합니다.|
-|[연산자! =](#operator_neq)|두 보안 설명자 개체가 다른 지를 테스트합니다.|
-|[연산자 \<](#operator_lt_)|두 보안 설명자 개체의 상대 값을 비교합니다.|
-|[연산자 >](#operator_gt_)|두 보안 설명자 개체의 상대 값을 비교합니다.|
-|[연산자 \<=](#operator_lt__eq)|두 보안 설명자 개체의 상대 값을 비교합니다.|
-|[연산자 > =](#operator_gt__eq)|두 보안 설명자 개체의 상대 값을 비교합니다.|
+|[operator !=](#operator_neq)|두 보안 설명자 개체가 다른 지를 테스트합니다.|
+|[operator \<](#operator_lt_)|두 보안 설명자 개체의 상대 값을 비교합니다.|
+|[operator >](#operator_gt_)|두 보안 설명자 개체의 상대 값을 비교합니다.|
+|[operator \<=](#operator_lt__eq)|두 보안 설명자 개체의 상대 값을 비교합니다.|
+|[operator >=](#operator_gt__eq)|두 보안 설명자 개체의 상대 값을 비교합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -232,7 +232,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [EqualPrefixSid](https://msdn.microsoft.com/library/windows/desktop/aa446621) 대 한 자세한 내용은 Windows SDK에 있습니다.
+참조 [EqualPrefixSid](/windows/desktop/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="getlength"></a>  CSid::GetLength
 
@@ -410,7 +410,7 @@ bool operator==(
 
 보안 설명자가 고, 그렇지 않으면 FALSE 같은 경우 TRUE입니다.
 
-##  <a name="operator_neq"></a>  CSid::operator! =
+##  <a name="operator_neq"></a>  CSid::operator !=
 
 두 보안 설명자 개체가 다른 지를 테스트합니다.
 

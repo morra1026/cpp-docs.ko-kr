@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: 26a0feadfd6603f74ce222e4850f0da9cf71e7d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48b02843cc957994aa3f3109a82cb2188dd9acff
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509593"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894200"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl 클래스
 
@@ -229,7 +229,7 @@ Month calendar 컨트롤에 적용 되는 Windows 스타일의 조합을 지정 
 *rect*<br/>
 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. Month calendar 컨트롤의 크기와 위치를 포함합니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) month calendar 컨트롤의 위치를 식별 하는 구조입니다.
 
 *pParentWnd*<br/>
@@ -412,7 +412,7 @@ BOOL GetCurSel(LPSYSTEMTIME pDateTime) const;
 에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 개체 또는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다. 현재 시간을 받습니다.
 
 *pDateTime*<br/>
-에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조는 현재 선택 된 날짜 정보를 받게 됩니다. 이 매개 변수는 유효한 주소 여야 하며 NULL 일 수 없습니다.
+에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조는 현재 선택 된 날짜 정보를 받게 됩니다. 이 매개 변수는 유효한 주소 여야 하며 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -579,7 +579,7 @@ int GetMonthRange(
 에 대 한 참조를 `COleDateTime` 또는 `CTime` 사용할 수 있는 최대 날짜를 포함 하는 개체입니다.
 
 *pMinRange*<br/>
-에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
 
 *pMaxRange*<br/>
 에 대 한 포인터를 `SYSTEMTIME` 범위의 가장 높은 끝 날짜를 포함 하는 구조입니다.
@@ -625,10 +625,10 @@ DWORD GetRange(
 ### <a name="parameters"></a>매개 변수
 
 *pMinRange*<br/>
-에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
 
 *pMaxRange*<br/>
-에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 범위의 가장 높은 끝 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 범위의 가장 높은 끝 날짜를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -674,7 +674,7 @@ BOOL GetSelRange(
 에 대 한 참조를 `COleDateTime` 또는 `CTime` 사용할 수 있는 최대 날짜를 포함 하는 개체입니다.
 
 *pMinRange*<br/>
-에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
 
 *pMaxRange*<br/>
 에 대 한 포인터를 `SYSTEMTIME` 범위의 가장 높은 끝 날짜를 포함 하는 구조입니다.
@@ -705,7 +705,7 @@ BOOL GetToday(LPSYSTEMTIME pDateTime) const;
 에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 하거나 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 현재 날짜를 나타내는 개체입니다.
 
 *pDateTime*<br/>
-에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 날짜 정보를 받는 구조체입니다. 이 매개 변수는 유효한 주소 여야 하며 NULL 일 수 없습니다.
+에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 날짜 정보를 받는 구조체입니다. 이 매개 변수는 유효한 주소 여야 하며 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -953,7 +953,7 @@ BOOL SetCurrentView(DWORD dwNewView);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*dwNewView*|[in] 월간, 연간, 10 년 동안 또는 세기 뷰를 지정 하는 다음 값 중 하나입니다.<br /><br /> 월별 보기 MCMV_MONTH:<br /><br /> MCMV_YEAR: 연간 보기<br /><br /> MCMV_DECADE: 10 년 동안 보기<br /><br /> MCMV_CENTURY: 세기 보기|
+|*dwNewView*|[in] 월간, 연간, 10 년 동안 또는 세기 뷰를 지정 하는 다음 값 중 하나입니다.<br /><br /> MCMV_MONTH: 월별 보기<br /><br /> MCMV_YEAR: 연간 보기<br /><br /> MCMV_DECADE: 10 년 동안 보기<br /><br /> MCMV_CENTURY: 세기 보기|
 
 ### <a name="return-value"></a>반환 값
 
@@ -979,7 +979,7 @@ BOOL SetCurSel(const CTime& refDateTime);
 에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 하거나 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 현재 선택 된 month calendar 컨트롤을 나타내는 개체입니다.
 
 *pDateTime*<br/>
-에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 현재 선택 항목으로 설정할 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 현재 선택 항목으로 설정할 날짜를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1079,7 +1079,7 @@ BOOL SetMaxSelCount(int nMax);
 
 ### <a name="parameters"></a>매개 변수
 
-*최대*<br/>
+*nMax*<br/>
 최대 개수를 선택할 수 있는 일에 설정 될 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1164,7 +1164,7 @@ BOOL SetRange(
 ### <a name="parameters"></a>매개 변수
 
 *pMinRange*<br/>
-에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
 
 *pMaxRange*<br/>
 에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 `SYSTEMTIME` 범위의 가장 높은 끝 날짜를 포함 하는 구조입니다.
@@ -1202,7 +1202,7 @@ BOOL SetSelRange(
 ### <a name="parameters"></a>매개 변수
 
 *pMinRange*<br/>
-에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
+에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 범위의 가장 낮은 끝 날짜를 포함 하는 구조입니다.
 
 *pMaxRange*<br/>
 에 대 한 포인터를 `COleDateTime` 개체를 `CTime` 개체 또는 `SYSTEMTIME` 범위의 가장 높은 끝 날짜를 포함 하는 구조입니다.
@@ -1231,7 +1231,7 @@ void SetToday(const CTime* pDateTime);
 에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 현재 날짜를 포함 하는 개체입니다.
 
 *pDateTime*<br/>
-두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 현재 날짜 정보를 포함 하는 개체입니다. 세 번째 버전에서는에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 현재 날짜 정보를 포함 하는 구조입니다.
+두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 현재 날짜 정보를 포함 하는 개체입니다. 세 번째 버전에서는에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 현재 날짜 정보를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 

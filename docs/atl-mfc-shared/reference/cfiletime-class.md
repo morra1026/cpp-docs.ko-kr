@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CFileTime class
 - shared classes, CFileTime
 ms.assetid: 1a358a65-1383-4124-b0d4-59b026e6860f
-ms.openlocfilehash: 5d3c81a31d49a2817b4605f734d5348dc518076a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42c89bcfa064bbb151f9d110cbd25763dbd44185
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614229"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893940"
 ---
 # <a name="cfiletime-class"></a>CFileTime 클래스
 
@@ -59,15 +59,15 @@ class CFileTime :  public FILETIME
 
 |이름|설명|
 |----------|-----------------|
-|[CFileTime::operator-](#operator_-)|이 연산자에 대해 빼기를 수행 되는 `CFileTime` 또는 `CFileTimeSpan` 개체입니다.|
-|[CFileTime::operator! =](#operator_neq)|이 연산자는 두 비교 `CFileTime` 개체가 다른 지 합니다.|
+|[CFileTime::operator -](#operator_-)|이 연산자에 대해 빼기를 수행 되는 `CFileTime` 또는 `CFileTimeSpan` 개체입니다.|
+|[CFileTime::operator !=](#operator_neq)|이 연산자는 두 비교 `CFileTime` 개체가 다른 지 합니다.|
 |[CFileTime::operator +](#operator_add)|이 연산자는 `CFileTimeSpan` 개체에 대해 더하기를 수행하는 데 사용됩니다.|
-|[CFileTime::operator + =](#operator_add_eq)|이 연산자는 `CFileTimeSpan` 개체에 대해 더하기를 수행하고 결과를 현재 개체에 할당하는 데 사용됩니다.|
+|[CFileTime::operator +=](#operator_add_eq)|이 연산자는 `CFileTimeSpan` 개체에 대해 더하기를 수행하고 결과를 현재 개체에 할당하는 데 사용됩니다.|
 |[CFileTime::operator &lt;](#operator_lt)|이 연산자는 두 `CFileTime` 개체를 비교하여 더 작은 값을 확인합니다.|
 |[CFileTime::operator &lt;=](#operator_lt_eq)|이 연산자는 두 `CFileTime` 개체를 비교하여 더 작거나 같은 값을 확인합니다.|
 |[CFileTime::operator =](#operator_eq)|대입 연산자입니다.|
-|[CFileTime::operator =](#operator_-_eq)|이 연산자에 대해 빼기를 수행 되는 `CFileTimeSpan` 개체 및 현재 개체에 결과 할당 합니다.|
-|[CFileTime::operator = =](#operator_eq_eq)|이 연산자는 두 `CFileTime` 개체가 같은지 비교합니다.|
+|[CFileTime::operator -=](#operator_-_eq)|이 연산자에 대해 빼기를 수행 되는 `CFileTimeSpan` 개체 및 현재 개체에 결과 할당 합니다.|
+|[CFileTime::operator ==](#operator_eq_eq)|이 연산자는 두 `CFileTime` 개체가 같은지 비교합니다.|
 |[CFileTime::operator &gt;](#operator_gt)|이 연산자는 두 `CFileTime` 개체를 비교하여 더 큰 값을 확인합니다.|
 |[CFileTime::operator &gt;=](#operator_gt_eq)|이 연산자는 두 `CFileTime` 개체를 비교하여 더 크거나 같은 값을 확인합니다.|
 
@@ -124,9 +124,9 @@ CFileTime(ULONGLONG nTime) throw();
 ### <a name="parameters"></a>매개 변수
 
 *ft*<br/>
-A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 구조입니다.
+A [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 구조입니다.
 
-*않았습니다*<br/>
+*nTime*<br/>
 날짜 및 64 비트 값으로 표현 된 시간입니다.
 
 ### <a name="remarks"></a>설명
@@ -225,7 +225,7 @@ static const ULONGLONG Minute = Second* 60;
 
 예를 참조 하세요 [CFileTime::Millisecond](#millisecond)합니다.
 
-##  <a name="operator_-"></a>  CFileTime::operator-
+##  <a name="operator_-"></a>  CFileTime::operator -
 
 이 연산자에 대해 빼기를 수행 되는 `CFileTime` 또는 `CFileTimeSpan` 개체입니다.
 
@@ -236,7 +236,7 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 `CFileTimeSpan` 개체입니다.
 
 *ft*<br/>
@@ -246,7 +246,7 @@ CFileTimeSpan operator-(CFileTime ft) const throw();
 
 반환 된 `CFileTime` 개체 또는 `CFileTimeSpan` 두 개체 사이의 시간 차이의 결과 나타내는 개체입니다.
 
-##  <a name="operator_neq"></a>  CFileTime::operator! =
+##  <a name="operator_neq"></a>  CFileTime::operator !=
 
 이 연산자는 두 비교 `CFileTime` 개체가 다른 지 합니다.
 
@@ -273,14 +273,14 @@ CFileTime operator+(CFileTimeSpan span) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 반환 된 `CFileTime` 원래 시간 상대적 시간을 합한 결과 나타내는 개체입니다.
 
-##  <a name="operator_add_eq"></a>  CFileTime::operator + =
+##  <a name="operator_add_eq"></a>  CFileTime::operator +=
 
 이 연산자는 `CFileTimeSpan` 개체에 대해 더하기를 수행하고 결과를 현재 개체에 할당하는 데 사용됩니다.
 
@@ -290,7 +290,7 @@ CFileTime& operator+=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 `CFileTimeSpan` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -352,7 +352,7 @@ CFileTime& operator=(const FILETIME& ft) throw();
 
 업데이트 된 반환 `CFileTime` 개체입니다.
 
-##  <a name="operator_-_eq"></a>  CFileTime::operator =
+##  <a name="operator_-_eq"></a>  CFileTime::operator -=
 
 이 연산자에 대해 빼기를 수행 되는 `CFileTimeSpan` 개체 및 현재 개체에 결과 할당 합니다.
 
@@ -362,14 +362,14 @@ CFileTime& operator-=(CFileTimeSpan span) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*범위*<br/>
+*span*<br/>
 `CFileTimeSpan` 뺄 상대 시간을 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 업데이트 된 반환 `CFileTime` 개체입니다.
 
-##  <a name="operator_eq_eq"></a>  CFileTime::operator = =
+##  <a name="operator_eq_eq"></a>  CFileTime::operator ==
 
 이 연산자는 두 `CFileTime` 개체가 같은지 비교합니다.
 
@@ -380,7 +380,7 @@ bool operator==(CFileTime ft) const throw();
 ### <a name="parameters"></a>매개 변수
 
 *ft*<br/>
-`CFileTime` 비교할 개체입니다.
+비교할 `CFileTime` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -442,7 +442,7 @@ void SetTime(ULONGLONG nTime) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*않았습니다*<br/>
+*nTime*<br/>
 날짜 및 시간, 현지 또는 utc (협정 세계시) 형식 중 하나를 나타내는 64 비트 값입니다.
 
 ##  <a name="utctolocal"></a>  CFileTime::UTCToLocal
@@ -475,7 +475,7 @@ static const ULONGLONG Week = Day* 7;
 
 ## <a name="see-also"></a>참고 항목
 
-[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)<br/>
+[FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)<br/>
 [CFileTimeSpan 클래스](../../atl-mfc-shared/reference/cfiletimespan-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [ATL/MFC 공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)
