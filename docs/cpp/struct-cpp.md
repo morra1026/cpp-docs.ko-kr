@@ -15,7 +15,7 @@ ms.locfileid: "54893342"
 ---
 # <a name="struct-c"></a>struct (C++)
 
-합니다 **구조체** 키워드 구조체 형식 및/또는 구조체 형식의 변수를 정의 합니다.
+**struct** 키워드는 구조체의 형식 및/또는 구조체 형식 변수를 정의합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -33,7 +33,7 @@ ms.locfileid: "54893342"
 선택적으로 사용할 수 있으며 템플릿을 지정입니다. 자세한 내용은 참조 [템플릿 지정](templates-cpp.md)합니다.
 
 *struct*<br/>
-합니다 **구조체** 키워드입니다.
+구조체를 사용하기 위한 **struct** 키워드 입니다.
 
 *ms-decl-spec*<br/>
 선택적으로 사용할 수 있으며 저장소 클래스를 지정합니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조합니다.
@@ -54,19 +54,19 @@ ms.locfileid: "54893342"
 
 구조체 형식은 사용자 정의 복합 형식입니다. 이 형식은 다른 형식을 가질 수 있는 필드 또는 멤버로 구성됩니다.
 
-C + +에서 구조체는 클래스와 같은 해당 멤버는 한다는 **공용** 기본적으로 합니다.
+C++에서 구조체는 맴버가 기본적으로 **public**이라는 점을 제외하면 클래스와 같습니다.
 
-관리 되는 클래스 및 구조체에 대 한 내용은 참조 하세요 [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)합니다.
+매니지드 클래스 및 구조체에 대한 내용은 [클래스 및 구조체](../windows/classes-and-structs-cpp-component-extensions.md)를 참조합니다.
 
 ## <a name="using-a-structure"></a>구조체 사용
 
-C에서 명시적으로 사용 해야 합니다 **구조체** 구조체를 선언 하는 키워드입니다. C + +에서는 필요가 없습니다 사용 하는 **구조체** 형식을 정의한 후에 키워드입니다.
+C에서는 명시적으로 **struct** 키워드를 사용하여 구조체를 선언합니다. C++에서는 형식이 정의된 후에 **struct** 키워드를 사용할 필요가 없습니다.
 
 닫는 중괄호와 세미콜론 사이에 쉼표로 구분된 변수 이름을 하나 이상 넣어 구조체 형식이 정의될 때 변수를 선언하는 옵션이 있습니다.
 
 구조체 변수를 초기화할 수 있습니다. 각 변수의 초기화는 중괄호로 묶어야 합니다.
 
-관련 정보를 참조 하세요 [클래스](../cpp/class-cpp.md), [union](../cpp/unions.md), 및 [enum](../cpp/enumerations-cpp.md)합니다.
+관련 정보는 [class](../cpp/class-cpp.md), [union](../cpp/unions.md)과 [enum](../cpp/enumerations-cpp.md)을 참조합니다.
 
 ## <a name="example"></a>예제
 
