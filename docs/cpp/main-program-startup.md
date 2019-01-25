@@ -1,5 +1,5 @@
 ---
-title: 'main: 프로그램 시작'
+title: '주: 프로그램 시작'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.main.startup
@@ -12,14 +12,14 @@ helpviewer_keywords:
 - startup code, main function
 - main function, program startup
 ms.assetid: f9581cd6-93f7-4bcd-99ec-d07c3c107dd4
-ms.openlocfilehash: 76c580d4b48e1651803ae9bf62f0e2346e19e06c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 358ae8ec88281bab741393b1196ee2a1e615e896
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603283"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894304"
 ---
-# <a name="main-program-startup"></a>main: 프로그램 시작
+# <a name="main-program-startup"></a>주: 프로그램 시작
 
 이라는 특수 함수 **주** 모든 C 및 c + + 프로그램에 대 한 실행의 시작 지점입니다. 유니코드 프로그래밍 모델을 따르는 코드를 작성 하는, 하는 경우 사용할 수 있습니다 `wmain`의 와이드 문자 버전인 **주**합니다.
 
@@ -51,7 +51,7 @@ int wmain( );
 int wmain(int argc, wchar_t *argv[], wchar_t *envp[]);
 ```
 
-TCHAR.h에 정의된 `_tmain`을 사용할 수도 있습니다. `_tmain` 로 확인 되 **주** _UNICODE가 정의 합니다. _UNICODE가 정의된 경우에는 `_tmain`이 `wmain`으로 확인됩니다.
+사용할 수도 있습니다 `_tmain`, tchar.h에서 정의 됩니다. `_tmain` 로 확인 되 **주** _UNICODE가 정의 합니다. _UNICODE가 정의된 경우에는 `_tmain`이 `wmain`으로 확인됩니다.
 
 또는 합니다 **주** 하 고 `wmain` 반환 하도록 함수를 선언할 수 있습니다 **void** (반환 값 없음). 선언 하는 경우 **주** 또는 `wmain` 반환 **void**를 사용 하 여 부모 프로세스나 운영 체제 종료 코드를 반환할 수 없습니다는 [반환](../cpp/return-statement-in-program-termination-cpp.md) 문입니다. 경우는 종료 코드를 반환할 **주** 또는 `wmain` 로 선언 됩니다 **void**를 사용 해야 합니다는 [종료](../cpp/exit-function.md) 함수입니다.
 

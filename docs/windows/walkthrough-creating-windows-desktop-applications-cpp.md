@@ -6,16 +6,16 @@ helpviewer_keywords:
 - Windows applications [C++], Win32
 - Windows Desktop applications [C++]
 - Windows API [C++]
-ms.openlocfilehash: da95b1dac2f058de67719b4754d2df6dbeb6f7f0
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 07da91ea092b4e7bee974b0387e72ea0cacaec8e
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694051"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893901"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>연습: 기존 Windows 데스크톱 응용 프로그램을 만듭니다 (c + +)
 
-이 연습에서는 Visual Studio에서 기존 Windows 데스크톱 응용 프로그램을 만드는 방법을 보여 줍니다. 예제 응용 프로그램을 만든 Windows API를 사용 하 여 "Hello, Windows desktop!"를 표시 하려면 줍니다. 이 연습에서 개발하는 코드를 패턴으로 사용하여 다른 Windows 데스크톱 응용 프로그램을 만들 수 있습니다.
+이 연습에서는 Visual Studio에서 기존 Windows 데스크톱 응용 프로그램을 만드는 방법을 보여 줍니다. 예제 응용 프로그램을 만든 Windows API를 사용 하 여 "Hello, Windows desktop!"를 표시 하려면 줍니다. 이 연습에서 개발하는 코드를 패턴으로 사용하여 다른 Windows 데스크톱 애플리케이션을 만들 수 있습니다.
 
 Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API)는 Windows 응용 프로그램을 만들기 위한 C 언어 기반 프레임 워크입니다. 1980 년대부터 존재에서 되었습니다 하 고 수십 Windows 응용 프로그램을 만드는 데 사용 된 합니다. MFC, ATL 및.NET framework와 같은 Windows API를 기반으로 빌드되어 더욱 고급 및 프로그램을 쉽게 프레임 워크입니다. C +로 작성 된 UWP 및 스토어 앱에 대 한 가장 최신 코드 + WinRT 아래 Windows API를 사용 합니다. Windows API에 대 한 자세한 내용은 참조 하세요. [Windows API 인덱스](/windows/desktop/apiindex/windows-api-list)합니다. 여러 가지 방법으로 Windows 응용 프로그램을 만들어야 하지만 위에서 설명한 프로세스 첫 번째입니다.
 
@@ -94,7 +94,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 다음으로 Visual Studio에서 Windows 데스크톱 응용 프로그램에 대 한 코드를 만드는 방법에 알아봅니다.
 
-### <a name="to-start-a-windows-desktop-application"></a>Windows 데스크톱 응용 프로그램을 시작하려면
+### <a name="to-start-a-windows-desktop-application"></a>Windows 데스크톱 애플리케이션을 시작하려면
 
 1. 모든 C와 마찬가지로 응용 프로그램 및 c + + 응용 프로그램이 있어야 합니다는 `main` 데스크톱 응용 프로그램에 있어야 하는 모든 Windows 시작 지점으로 함수를 `WinMain` 함수입니다. `WinMain` 에는 다음 구문이 있습니다.
 
@@ -107,7 +107,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    );
    ```
 
-   매개 변수 및 반환 값이 함수에 대 한 정보를 참조 하세요 [WinMain 진입점](https://msdn.microsoft.com/library/windows/desktop/ms633559)합니다.
+   매개 변수 및 반환 값이 함수에 대 한 정보를 참조 하세요 [WinMain 진입점](/windows/desktop/api/winbase/nf-winbase-winmain)합니다.
 
    > [!NOTE]
    > 추가 된 모든 단어를 같은 이란 `CALLBACK`, 또는 `HINSTANCE`, 또는 `_In_`? 기존의 Windows API는 typedef를 사용 하 고 전처리기 매크로 추상화를 광범위 하 게 형식 및 플랫폼별의 세부 정보 중 일부 코딩, 규칙을 호출 하는 등 **__declspec** 선언과 컴파일러 pragmas 합니다. Visual Studio에서 IntelliSense를 사용할 수 있습니다 [요약 정보](/visualstudio/ide/using-intellisense#quick-info) 이러한 typedefs 및 매크로 정의 항목을 참조 하는 기능입니다. 관심 단어 위로 마우스를 가져가서 또는 선택 하 고 키를 눌러 **Ctrl**+**K**를 **Ctrl**+**합니까** 에 대 한는 정의 포함 하는 작은 팝업 창입니다. 자세한 내용은 [IntelliSense 사용](/visualstudio/ide/using-intellisense)을 참조하세요. 매개 변수 및 반환 형식을 사용할 경우가 많습니다 *SAL 주석을* 수 있도록 프로그래밍 오류 catch 합니다. 자세한 내용은 [C/c + + 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)합니다.
@@ -136,7 +136,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
 
 ### <a name="to-add-functionality-to-the-winmain-function"></a>WinMain 함수에 기능을 추가하려면
 
-1. 에 `WinMain` 함수를 형식의 구조체를 채우는 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다. 예를 들어, 응용 프로그램 아이콘, 제목 표시줄에 중요 한 점은 창 프로시저에 대 한 함수 포인터를 표시할 이름 창의 배경색을 창에 대 한 정보를 포함 하는 구조입니다. 다음 예제에서는 일반적인 `WNDCLASSEX` 구조를 보여 줍니다.
+1. 에 `WinMain` 함수를 형식의 구조체를 채우는 [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa)합니다. 예를 들어, 응용 프로그램 아이콘, 제목 표시줄에 중요 한 점은 창 프로시저에 대 한 함수 포인터를 표시할 이름 창의 배경색을 창에 대 한 정보를 포함 하는 구조입니다. 다음 예제에서는 일반적인 `WNDCLASSEX` 구조를 보여 줍니다.
 
    ```cpp
    WNDCLASSEX wcex;
@@ -155,7 +155,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    wcex.hIconSm        = LoadIcon(wcex.hInstance, IDI_APPLICATION);
    ```
 
-   위의 구조의 필드에 대 한 정보를 참조 하세요 [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577)합니다.
+   위의 구조의 필드에 대 한 정보를 참조 하세요 [WNDCLASSEX](/windows/desktop/api/winuser/ns-winuser-tagwndclassexa)합니다.
 
 1. 등록 된 `WNDCLASSEX` 한다는 창 및 메시지를 보내는 방법에 대 한 알 수 있도록 Windows를 사용 하 여 합니다. [RegisterClassEx](/windows/desktop/api/winuser/nf-winuser-registerclassexa) 함수를 사용하고 창 클래스 구조를 인수로 전달합니다. `_T` 매크로 사용 하기 때문에 사용 되는 `TCHAR` 형식.
 
@@ -237,7 +237,7 @@ Windows API (라고도: Win32 API, Windows Desktop API 및 Windows 클래식 API
    return (int) msg.wParam;
    ```
 
-   메시지 루프의 구조 및 함수에 대한 자세한 내용은 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage)및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)를 참조하세요.
+   메시지 루프의 구조 및 함수에 대한 자세한 내용은 [MSG](/windows/desktop/api/winuser/ns-winuser-msg), [GetMessage](/windows/desktop/api/winuser/nf-winuser-getmessage), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage)및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)를 참조하세요.
 
    이때 `WinMain` 함수는 다음 코드와 유사합니다.
 

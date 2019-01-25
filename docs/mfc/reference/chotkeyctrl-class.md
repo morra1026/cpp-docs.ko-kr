@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 9a06f3bd8a8c5646f384c3f788518078b121bfe1
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 0b673c873f773844c13894d3f0448536f297dc53
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178137"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894512"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl 클래스
 
@@ -67,7 +67,7 @@ class CHotKeyCtrl : public CWnd
 
 사용자가 키 조합의 선택한 경우 응용 프로그램 컨트롤에서 지정 된 키 조합을 검색 하 고 WM_SETHOTKEY 메시지를 사용 하 여 시스템에 바로 가기 키를 설정할 수 있습니다. 사용자를 누를 때마다 바로 가기 키 이후부터 시스템의 모든 부분에서 WM_SETHOTKEY 메시지에 지정 된 창의 SC_HOTKEY 지정 WM_SYSCOMMAND 메시지를 받습니다. 이 메시지에 수신 하는 창을 활성화 합니다. 바로 가기 키까지 WM_SETHOTKEY 종료를 호출 하는 응용 프로그램의 경우 유효 합니다.
 
-이 메커니즘은 WM_HOTKEY 메시지는 Windows에 따라 달라 지는 바로 가기 키 지원 다릅니다 [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) 하 고 [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) 함수입니다.
+이 메커니즘은 WM_HOTKEY 메시지는 Windows에 따라 달라 지는 바로 가기 키 지원 다릅니다 [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey) 하 고 [UnregisterHotKey](/windows/desktop/api/winuser/nf-winuser-unregisterhotkey) 함수입니다.
 
 사용 하 여 대 한 자세한 내용은 `CHotKeyCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CHotKeyCtrl 사용 하 여](../../mfc/using-chotkeyctrl.md).
 
@@ -306,9 +306,9 @@ void SetRules(
 
 - HKCOMB_S SHIFT
 
-- HKCOMB_SA SHIFT + ALT
+- HKCOMB_SA SHIFT+ALT
 
-- HKCOMB_SC SHIFT + CTRL
+- HKCOMB_SC SHIFT+CTRL
 
 - HKCOMB_SCA SHIFT + CTRL + ALT
 

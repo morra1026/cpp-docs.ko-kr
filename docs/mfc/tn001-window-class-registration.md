@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WNDCLASS [MFC]
 - AfxRegisterClass function
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-ms.openlocfilehash: 8f16480d238ca2a3e683219984c54d67159f806d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 4ae94d1c9c57f6c315ae482e44576ae25194c00f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693871"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894265"
 ---
 # <a name="tn001-window-class-registration"></a>TN001: 창 클래스 등록
 
@@ -31,7 +31,7 @@ ms.locfileid: "51693871"
 
 - 명시적으로 MFC를 호출한 [AfxRegisterWndClass](../mfc/reference/application-information-and-management.md#afxregisterwndclass) 하거나 [AfxRegisterClass](../mfc/reference/application-information-and-management.md#afxregisterclass)합니다.
 
-- Windows 루틴을 호출 하 여 명시적으로 [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586)합니다.
+- Windows 루틴을 호출 하 여 명시적으로 [RegisterClass](/windows/desktop/api/winuser/nf-winuser-registerclassa)합니다.
 
 ## <a name="wndclass-fields"></a>WNDCLASS 필드
 
@@ -61,7 +61,7 @@ ms.locfileid: "51693871"
 
 - 클래스 스타일: CS_DBLCLKS &#124; CS_HREDRAW &#124; CS_VREDRAW;
 
-- AFX_IDI_STD_FRAME 아이콘
+- icon AFX_IDI_STD_FRAME
 
 - 화살표 커서
 

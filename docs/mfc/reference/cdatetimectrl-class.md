@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: 36ef44534803e35d3544b53dbeeca75a7fb3f475
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 5acac454bd0b22b994b74a052bd3cf0b0eee2614
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178527"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894343"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl 클래스
 
@@ -353,7 +353,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 첫 번째 버전에서는에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 버전에서는에 대 한 참조를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.
 
 *pTimeDest*<br/>
-에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.
+에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -583,7 +583,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew = NULL);
 에 대 한 참조를 [COleDateTime](../../atl-mfc-shared/reference/coledatetime-class.md) 개체를 포함 하는 컨트롤을 설정 해야 합니다.
 
 *pTimeNew*<br/>
-에 대 한 포인터 위의 두 번째 버전을 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 에 대 한 포인터 위의 세 번째 버전에는 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.
+에 대 한 포인터 위의 두 번째 버전을 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 에 대 한 포인터 위의 세 번째 버전에는 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 컨트롤은 설정할 시간을 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 

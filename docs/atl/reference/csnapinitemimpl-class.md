@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CSnapInItemImpl class
 - snap-ins
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
-ms.openlocfilehash: 19c957ae80267efda89a3b151f57c453ecb935bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff7336d393ca4680b4d448b9c775888063125b86
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609413"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893615"
 ---
 # <a name="csnapinitemimpl-class"></a>CSnapInItemImpl 클래스
 
@@ -106,7 +106,7 @@ TRUE 이면 개체는 스냅인 확장; 그렇지 않으면 FALSE입니다.
 
 ##  <a name="addmenuitems"></a>  CSnapInItemImpl::AddMenuItems
 
-이 메서드 구현 Win32 함수 [IExtendContextMenu::AddMenuItems](https://msdn.microsoft.com/library/aa814841)합니다.
+이 메서드 구현 Win32 함수 [IExtendContextMenu::AddMenuItems](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-addmenuitems)합니다.
 
 ```
 AddMenuItems(
@@ -117,7 +117,7 @@ AddMenuItems(
 
 ### <a name="parameters"></a>매개 변수
 
-*변수인 piCallback*<br/>
+*piCallback*<br/>
 [in] 에 대 한 포인터를 `IContextMenuCallback` 상황에 맞는 메뉴에 항목을 추가할 수는 있습니다.
 
 *pInsertionAllowed*<br/>
@@ -144,7 +144,7 @@ AddMenuItems(
 
 ##  <a name="command"></a>  CSnapInItemImpl::Command
 
-이 메서드 구현 Win32 함수 [IExtendContextMenu::Command](https://msdn.microsoft.com/library/aa814842)합니다.
+이 메서드 구현 Win32 함수 [IExtendContextMenu::Command](/windows/desktop/api/mmc/nf-mmc-iextendcontextmenu-command)합니다.
 
 ```
 Command(long lCommandID, DATA_OBJECT_TYPES type);
@@ -168,7 +168,7 @@ Command(long lCommandID, DATA_OBJECT_TYPES type);
 
 ##  <a name="createpropertypages"></a>  CSnapInItemImpl::CreatePropertyPages
 
-이 메서드 구현 Win32 함수 [IExtendPropertySheet::CreatePropertyPages](https://msdn.microsoft.com/library/aa814846)합니다.
+이 메서드 구현 Win32 함수 [IExtendPropertySheet::CreatePropertyPages](/windows/desktop/api/mmc/nn-mmc-iextendpropertysheet2)합니다.
 
 ```
 CreatePropertyPages(
@@ -294,7 +294,7 @@ SCOPEDATAITEM m_scopeDataItem;
 
 ##  <a name="m_resultdataitem"></a>  CSnapInItemImpl::m_resultDataItem
 
-합니다 [RESULTDATAITEM](https://msdn.microsoft.com/library/aa815165) 스냅인 데이터 개체의 구조가 있습니다.
+합니다 [RESULTDATAITEM](/windows/desktop/api/mmc/ns-mmc-resultdataitem) 스냅인 데이터 개체의 구조가 있습니다.
 
 ```
 RESULTDATAITEM m_resultDataItem;
@@ -441,7 +441,7 @@ void SetToolbarButtonInfo(
 
 - 줄 바꿈을 TBSTATE_WRAP 단추는 다음과 같습니다. 단추는 TBSTATE_ENABLED 있어야 합니다.
 
-*fstype 이라*<br/>
+*fsType*<br/>
 [in] 단추 상태 플래그입니다. 다음 중 하나 이상의 수 있습니다.
 
 - TBSTYLE_BUTTON 표준 누름 단추를 만듭니다.

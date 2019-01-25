@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - struct constructors
 ms.assetid: 3c6ba273-e248-4ff1-8c69-d2abcf1263c6
-ms.openlocfilehash: 9b70a4caea2b9aa5d86c0e97b97eae784594ec87
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 78d3df4a96cb769cb31760c53c8486c86189e00c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326110"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893342"
 ---
 # <a name="struct-c"></a>struct (C++)
 
@@ -20,7 +20,7 @@ ms.locfileid: "51326110"
 ## <a name="syntax"></a>구문
 
 ```
-[template-spec] struct[ms-decl-spec] [tag [: base-list ]]
+[template-spec] struct [ms-decl-spec] [tag [: base-list ]]
 {
    member-list
 } [declarators];
@@ -29,26 +29,26 @@ ms.locfileid: "51326110"
 
 #### <a name="parameters"></a>매개 변수
 
-*템플릿 사양*<br/>
-선택적 템플릿 지정입니다. 자세한 내용은 참조 [템플릿 지정](templates-cpp.md)합니다.
+*template-spec*<br/>
+선택적으로 사용할 수 있으며 템플릿을 지정입니다. 자세한 내용은 참조 [템플릿 지정](templates-cpp.md)합니다.
 
 *struct*<br/>
 합니다 **구조체** 키워드입니다.
 
-*ms-선언-사양*<br/>
-선택적 저장소 클래스 지정입니다. 자세한 내용은 참조는 [__declspec](../cpp/declspec.md) 키워드입니다.
+*ms-decl-spec*<br/>
+선택적으로 사용할 수 있으며 저장소 클래스를 지정합니다. 자세한 내용은 [__declspec](../cpp/declspec.md) 키워드를 참조합니다.
 
-*태그*<br/>
-구조체에 지정된 형식 이름입니다. 태그는 구조체의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략할 경우 익명 구조체가 정의됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)합니다.
+*tag*<br/>
+구조체에 지정된 형식 이름입니다. 태그는 구조체의 범위 내에서 예약어가 됩니다. 태그는 선택 사항입니다. 생략할 경우 익명 구조체가 정의됩니다. 자세한 내용은 [익명 클래스 형식](../cpp/anonymous-class-types.md)을 참조합니다.
 
-*기본-목록*<br/>
-이 구조체가 해당 멤버를 파생할 클래스 또는 구조체의 선택적 목록입니다. 참조 [기본 클래스](../cpp/base-classes.md) 자세한 내용은 합니다. 각 기본 클래스 또는 구조체 이름 액세스 지정자 뒤에 올 수 있습니다 ([공용](../cpp/public-cpp.md)를 [개인](../cpp/private-cpp.md)하십시오 [보호](../cpp/protected-cpp.md)) 및 [가상](../cpp/virtual-cpp.md) 키워드입니다. 멤버 액세스 테이블을 참조 하세요 [클래스 멤버에 대 한 액세스 제어](member-access-control-cpp.md) 자세한 내용은 합니다.
+*base-list*<br/>
+이 구조체가 해당 멤버를 파생할 클래스 또는 구조체의 선택적 목록입니다. 자세한 내용은 [기본 클래스](../cpp/base-classes.md)를 참조하세요. 각 기본 클래스 또는 구조체 이름 앞에는 액세스 지정자 ([public](../cpp/public-cpp.md), [private](../cpp/private-cpp.md), [protected](../cpp/protected-cpp.md)) 및 [virtual](../cpp/virtual-cpp.md) 키워드가 올 수 있습니다. 자세한 내용은 [클래스 멤버에 대한 액세스 제어](member-access-control-cpp.md)의 멤버 액세스 테이블을 참조하세요.
 
-*멤버 목록*<br/>
-구조체 멤버 목록입니다. 가리킵니다 [클래스 멤버 개요](../cpp/class-member-overview.md) 자세한 내용은 합니다. 여기에서 유일한 차이점 **구조체** 대신 사용 됩니다 **클래스**합니다.
+*member-list*<br/>
+구조체 멤버 목록입니다. 더 자세한 정보는 [클래스 멤버 개요](../cpp/class-member-overview.md) 를 참조합니다. 여기에서 유일한 차이점 **구조체** 대신 사용 됩니다 **클래스**합니다.
 
-*선언 자*<br/>
-클래스의 이름을 지정하는 선언자 목록입니다. 선언자 목록은 구조체 형식의 하나 이상의 인스턴스를 선언합니다. 클래스의 모든 데이터 멤버를 선언 자 이니셜라이저 목록을 포함할 수 있습니다 **공용**합니다. 데이터 멤버는 이니셜라이저 목록은 구조에서 흔히 **공용** 기본적으로 합니다.  참조 [개요의 선언 자](../cpp/overview-of-declarators.md) 자세한 내용은 합니다.
+*declarators*<br/>
+구조체의 이름을 지정 하는 선언 자 목록입니다. 선언자 목록은 구조체 형식의 하나 이상의 인스턴스를 선언합니다. 구조체의 모든 데이터 멤버를 선언 자 이니셜라이저 목록을 포함할 수 있습니다 **공용**합니다. 데이터 멤버는 이니셜라이저 목록은 구조에서 흔히 **공용** 기본적으로 합니다.  자세한 내용은 [선언자 개요](../cpp/overview-of-declarators.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 

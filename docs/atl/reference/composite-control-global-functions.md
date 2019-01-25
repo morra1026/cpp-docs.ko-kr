@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - composite controls, global functions
 ms.assetid: 536884cd-e863-4c7a-ab0a-604dc60a0bbe
-ms.openlocfilehash: 3b4abc1afc99a00d83c25574df06ebfb27141c65
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 26d8d004c933e48833047f85727ae6282c4b43d7
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694181"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893862"
 ---
 # <a name="composite-control-global-functions"></a>복합 컨트롤 전역 함수
 
@@ -77,7 +77,7 @@ ATLAPI_(int) AtlAxDialogBox(
 [in] 대화 상자를 소유 하는 창을 식별 합니다.
 
 *lpDialogProc*<br/>
-[in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.
+[in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc)합니다.
 
 *dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
@@ -124,7 +124,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 [in] 대화 상자를 소유 하는 창을 식별 합니다.
 
 *lpDialogProc*<br/>
-[in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469)합니다.
+[in] 대화 상자 프로시저를 가리킵니다. 대화 상자 프로시저에 대 한 자세한 내용은 참조 하세요. [DialogProc](/windows/desktop/api/winuser/nc-winuser-dlgproc)합니다.
 
 *dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.

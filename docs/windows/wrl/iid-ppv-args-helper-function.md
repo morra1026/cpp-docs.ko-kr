@@ -7,19 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - IID_PPV_ARGS_Helper function
 ms.assetid: afee9b23-8df1-4575-903f-e9ba748418f0
-ms.openlocfilehash: cae29c70c551701a351cdcf404342ed1634a0e3b
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: 5ef4dd6c9db2d19e0c8a4143c5b4ed3f0ac75f6a
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54336473"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894122"
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper 함수
 
 지정 된 인수의 형식에서 파생 되는 확인 된 `IUnknown` 인터페이스입니다.
 
 > [!IMPORTANT]
-> 이 템플릿 특수화 WRL 인프라를 지원 하며 코드에서 직접 사용할 수 없습니다. 사용 하 여 [IID_PPV_ARGS](https://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) 대신 합니다.
+> 이 템플릿 특수화 WRL 인프라를 지원 하며 코드에서 직접 사용할 수 없습니다. 사용 하 여 [IID_PPV_ARGS](/windows/desktop/api/combaseapi/nf-combaseapi-iid_ppv_args) 대신 합니다.
 
 ## <a name="syntax"></a>구문
 

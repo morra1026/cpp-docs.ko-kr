@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 0415fb98cec6b1d92f6a5a43ff705f1b5a7cd348
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 4e93f167b9cb28a83c42220fa58b17d5c4845a75
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523821"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894291"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -86,7 +86,7 @@ class CCmdTarget : public CObject
 |[CCmdTarget::GetDispatchIID](#getdispatchiid)|기본 디스패치 인터페이스 ID를 가져옵니다.|
 |[CCmdTarget::GetIDispatch](#getidispatch)|에 대 한 포인터를 반환 합니다 `IDispatch` 연관 된 개체는 `CCmdTarget` 개체입니다.|
 |[CCmdTarget::GetTypeInfoCount](#gettypeinfocount)|개체를 제공 하는 형식 정보 인터페이스의 수를 검색 합니다.|
-|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|지정된 된 GUID에 해당 하는 형식 설명을 검색 합니다.|
+|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|지정된 GUID에 해당하는 형식 설명을 검색합니다.|
 |[CCmdTarget::GetTypeLib](#gettypelib)|형식 라이브러리에 대 한 포인터를 가져옵니다.|
 |[CCmdTarget::GetTypeLibCache](#gettypelibcache)|형식 라이브러리 캐시를 가져옵니다.|
 |[CCmdTarget::IsInvokeAllowed](#isinvokeallowed)|자동화 메서드 호출을 사용 하도록 설정 합니다.|
@@ -163,7 +163,7 @@ BOOL DoOleVerb(
 동사의 숫자 식별자입니다.
 
 *lpMsg*<br/>
-에 대 한 포인터를 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) 동사를 호출한 이벤트 (예: 두 번 클릭)를 설명 하는 구조입니다.
+에 대 한 포인터를 [MSG](/windows/desktop/api/winuser/ns-winuser-msg) 동사를 호출한 이벤트 (예: 두 번 클릭)를 설명 하는 구조입니다.
 
 *hWndParent*<br/>
 개체가 포함된 문서 창의 핸들입니다.
@@ -335,7 +335,7 @@ virtual UINT GetTypeInfoCount();
 
 ##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid
 
-지정된 된 GUID에 해당 하는 형식 설명을 검색 합니다.
+지정된 GUID에 해당하는 형식 설명을 검색합니다.
 
 ```
 HRESULT GetTypeInfoOfGuid(
@@ -484,7 +484,7 @@ NULL이 아닌 경우 `OnCmdMsg` 채웁니다 합니다 *pTarget* 및 *pmf* 의 
 
 재정의 하는 경우 `OnCmdMsg`에 대 한 적절 한 값을 제공 해야 합니다 *nCode*, 명령 알림 코드 및 *pExtra*의 값에 따라 다름 *nCode* . 다음 표에서 해당 값을 나열합니다.
 
-|*nCode* 값|*pExtra* 값|
+|*nCode* 값|*pExtra* value|
 |-------------------|--------------------|
 |CN_COMMAND|[CCmdUI](../../mfc/reference/ccmdui-class.md)\*|
 |CN_EVENT|AFX_EVENT\*|
