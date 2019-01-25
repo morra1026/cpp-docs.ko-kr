@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: b577ee002e34fa051b6e1dd5ffca71f935d93433
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad682980fbc885d79598b41a5dcc094bb65db8cf
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619143"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893537"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT 클래스
 
@@ -76,7 +76,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 |이름|설명|
 |----------|-----------------|
-|[Catlservicemodulet:: Handler](#handler)|서비스에 대 한 처리기 루틴입니다.|
+|[CAtlServiceModuleT::Handler](#handler)|서비스에 대 한 처리기 루틴입니다.|
 |[CAtlServiceModuleT::InitializeSecurity](#initializesecurity)|기본 서비스에 대 한 보안 설정을 제공합니다.|
 |[CAtlServiceModuleT::Install](#install)|설치 하 고 서비스를 만듭니다.|
 |[CAtlServiceModuleT::IsInstalled](#isinstalled)|서비스가 설치 되어 있는지 확인 합니다.|
@@ -90,10 +90,10 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 |[CAtlServiceModuleT::ParseCommandLine](#parsecommandline)|명령줄을 구문 분석 하 고 필요한 경우 등록을 수행 합니다.|
 |[CAtlServiceModuleT::PreMessageLoop](#premessageloop)|이 메서드는 메시지 루프에 들어가기 직전에 호출 됩니다.|
 |[CAtlServiceModuleT::RegisterAppId](#registerappid)|레지스트리에 서비스를 등록합니다.|
-|[Catlservicemodulet:: Run](#run)|서비스를 실행 합니다.|
-|[Catlservicemodulet:: Servicemain](#servicemain)|서비스 제어 관리자에 의해 호출 된 메서드가 있습니다.|
+|[CAtlServiceModuleT::Run](#run)|서비스를 실행 합니다.|
+|[CAtlServiceModuleT::ServiceMain](#servicemain)|서비스 제어 관리자에 의해 호출 된 메서드가 있습니다.|
 |[CAtlServiceModuleT::SetServiceStatus](#setservicestatus)|서비스 상태를 업데이트합니다.|
-|[Catlservicemodulet:: Start](#start)|호출한 `CAtlServiceModuleT::WinMain` 서비스가 시작할 때입니다.|
+|[CAtlServiceModuleT::Start](#start)|호출한 `CAtlServiceModuleT::WinMain` 서비스가 시작할 때입니다.|
 |[CAtlServiceModuleT::Uninstall](#uninstall)|중지 하 고 서비스를 제거 합니다.|
 |[CAtlServiceModuleT::Unlock](#unlock)|서비스의 잠금 횟수를 줄입니다.|
 |[CAtlServiceModuleT::UnregisterAppId](#unregisterappid)|레지스트리에서 서비스를 제거합니다.|
@@ -143,7 +143,7 @@ CAtlServiceModuleT() throw();
 
 데이터 멤버를 초기화 하 고 초기 서비스의 상태를 설정 합니다.
 
-##  <a name="handler"></a>  Catlservicemodulet:: Handler
+##  <a name="handler"></a>  CAtlServiceModuleT::Handler
 
 서비스에 대 한 처리기 루틴입니다.
 
@@ -162,7 +162,7 @@ void Handler(DWORD dwOpcode) throw();
 
 |작업 코드|의미|
 |--------------------|-------------|
-|하면 SERVICE_CONTROL_STOP|서비스를 중지합니다. 메서드 재정의 [CAtlServiceModuleT::OnStop](#onstop) 동작을 변경 하는 atlbase.h에서.|
+|SERVICE_CONTROL_STOP|서비스를 중지합니다. 메서드 재정의 [CAtlServiceModuleT::OnStop](#onstop) 동작을 변경 하는 atlbase.h에서.|
 |SERVICE_CONTROL_PAUSE|사용자를 구현 합니다. 빈 메서드 재정의 [CAtlServiceModuleT::OnPause](#onpause) 서비스를 일시 중지 하는 atlbase.h에서.|
 |SERVICE_CONTROL_CONTINUE|사용자를 구현 합니다. 빈 메서드 재정의 [CAtlServiceModuleT::OnContinue](#oncontinue) 서비스를 계속 하려면 atlbase.h에서.|
 |SERVICE_CONTROL_INTERROGATE|사용자를 구현 합니다. 빈 메서드 재정의 [CAtlServiceModuleT::OnInterrogate](#oninterrogate) 서비스를 질의 하는 atlbase.h에서.|
@@ -421,7 +421,7 @@ inline HRESULT RegisterAppId(bool bService = false) throw();
 
 성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
 
-##  <a name="run"></a>  Catlservicemodulet:: Run
+##  <a name="run"></a>  CAtlServiceModuleT::Run
 
 서비스를 실행 합니다.
 
@@ -432,7 +432,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다. 기본값은 SW_HIDE 합니다.
+창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션입니다. 기본값은 SW_HIDE 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -442,7 +442,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 호출 된 후 `Run` 호출 [CAtlServiceModuleT::PreMessageLoop](#premessageloop)하십시오 [CAtlExeModuleT::RunMessageLoop](../../atl/reference/catlexemodulet-class.md#runmessageloop), 및 [CAtlExeModuleT::PostMessageLoop](../../atl/reference/catlexemodulet-class.md#postmessageloop).
 
-##  <a name="servicemain"></a>  Catlservicemodulet:: Servicemain
+##  <a name="servicemain"></a>  CAtlServiceModuleT::ServiceMain
 
 이 메서드는 서비스 제어 관리자에 의해 호출 됩니다.
 
@@ -481,7 +481,7 @@ void SetServiceStatus(DWORD dwState) throw();
 
 서비스에 대 한 서비스 제어 관리자의 상태 정보를 업데이트합니다. 에 의해 호출 됩니다 [catlservicemodulet:: Run](#run)하십시오 [catlservicemodulet:: Servicemain](#servicemain) 및 기타 처리기 메서드. 상태는 멤버 변수에 저장 된 수도 [CAtlServiceModuleT::m_status](#m_status)합니다.
 
-##  <a name="start"></a>  Catlservicemodulet:: Start
+##  <a name="start"></a>  CAtlServiceModuleT::Start
 
 호출한 `CAtlServiceModuleT::WinMain` 서비스가 시작할 때입니다.
 
@@ -492,7 +492,7 @@ HRESULT Start(int nShowCmd) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.
+창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -553,7 +553,7 @@ int WinMain(int nShowCmd) throw();
 ### <a name="parameters"></a>매개 변수
 
 *nShowCmd*<br/>
-창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) 섹션입니다.
+창 표시 방법을 지정 합니다. 이 매개 변수에서 설명 하는 값 중 하나일 수 있습니다 합니다 [WinMain](/windows/desktop/api/winbase/nf-winbase-winmain) 섹션입니다.
 
 ### <a name="return-value"></a>반환 값
 

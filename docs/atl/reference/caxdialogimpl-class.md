@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-ms.openlocfilehash: 9cb4ec679e26adc32ffc6d68ebff9b1ed73c2f43
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 852656b33eca1a8c87c6931b58cd49c0c41fe3dc
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694233"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893641"
 ---
 # <a name="caxdialogimpl-class"></a>CAxDialogImpl 클래스
 
@@ -135,7 +135,7 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 *dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.
 
-*RECT &AMP;*<br/>
+*RECT&*<br/>
 이 매개 변수는 사용되지 않습니다. 이 매개 변수는에 의해 전달 된 `CComControl`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -255,7 +255,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 ### <a name="parameters"></a>매개 변수
 
 *pMsg*<br/>
-에 대 한 포인터를 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) 검사할 메시지를 포함 하는 구조입니다.
+에 대 한 포인터를 [MSG](/windows/desktop/api/winuser/ns-winuser-msg) 검사할 메시지를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 

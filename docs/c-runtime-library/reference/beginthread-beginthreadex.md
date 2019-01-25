@@ -29,12 +29,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: d7e98ae38d91fbc0c1d428e94c6fa29fd8651e85
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d70d2fb0ecb647d4854a6277d6c69cd9886e072f
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626787"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894213"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -121,7 +121,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 호출할 수 있습니다 [_endthread](endthread-endthreadex.md) 또는 **_endthreadex** 명시적으로 스레드를 종료할; 그러나 **_endthread** 하거나 **_endthreadex** 라고 자동으로 반환 될 때 스레드가 매개 변수로 전달 된 루틴에서. 호출 하 여 스레드를 종료 **_endthread** 하거나 **_endthreadex** 스레드에 대 한 할당 되는 리소스의 올바른 복구 보장 합니다.
 
-**_endthread** 스레드 핸들을 자동으로 닫지만 **_endthreadex** 하지 않습니다. 따라서 사용 하는 경우 **_beginthread** 하 고 **_endthread**를 명시적으로 닫지 마세요 스레드 핸들을 Win32를 호출 하 여 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. 이 동작은 Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API와 다릅니다.
+**_endthread** 스레드 핸들을 자동으로 닫지만 **_endthreadex** 하지 않습니다. 따라서 사용 하는 경우 **_beginthread** 하 고 **_endthread**를 명시적으로 닫지 마세요 스레드 핸들을 Win32를 호출 하 여 [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) API. 이 동작은 Win32 [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API와 다릅니다.
 
 > [!NOTE]
 > Libcmt.lib로 연결 된 실행 파일에 대 한 Win32을 호출 하지 마세요 **ExitThread** API 런타임 시스템에서 회수 하지 없도록 할당 된 리소스입니다. **_endthread** 하 고 **_endthreadex** 할당 된 스레드 리소스를 회수 하 고 호출 **ExitThread**합니다.
@@ -132,7 +132,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 새 스레드의 로캘에 프로세스별 전역 현재 로캘 정보를 사용 하 여 초기화 됩니다. 스레드별 로캘은를 호출 하 여 설정할지 여부 [_configthreadlocale](configthreadlocale.md) (전역으로 또는 새 스레드에 대 한 전용), 스레드 수 해당 로캘 독립적으로 다른 스레드에서 호출 하 여 변경할 **setlocale** 또는 **_wsetlocale**합니다. 스레드별 로캘 플래그가 설정 되지 않은 스레드는 새로 생성 된 모든 스레드의 뿐만 아니라 없는 또한 스레드별 로캘 플래그를 설정 하 고, 다른 모든 스레드 로캘 정보를 발생할 수 있습니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
-에 대 한 **/clr** 코드 **_beginthread** 및 **_beginthreadex** 각각 두 개의 오버 로드를 포함 합니다. 하나는 네이티브 호출 규칙 함수 포인터 및 다른 오버 로드는 **__clrcall** 함수 포인터입니다. 첫 번째 오버로드는 응용 프로그램 도메인에 안전하지 않고 어떤 방법으로도 안전할 수 없습니다. 작성 하는 경우 **/clr** 관리 되는 리소스를 코드에 액세스 하기 전에 새 스레드가 올바른 응용 프로그램 도메인에 들어가면 있는지 확인 해야 합니다. 이 작업은 예를 들어 [call_in_appdomain 함수](../../dotnet/call-in-appdomain-function.md)를 사용하여 수행할 수 있습니다. 두 번째 오버 로드는 응용 프로그램 도메인 안전 합니다. 호출자의 응용 프로그램 도메인에서 새로 생성된 된 스레드는 항상 결국 **_beginthread** 하거나 **_beginthreadex**합니다.
+에 대 한 **/clr** 코드 **_beginthread** 및 **_beginthreadex** 각각 두 개의 오버 로드를 포함 합니다. 하나는 네이티브 호출 규칙 함수 포인터 및 다른 오버 로드는 **__clrcall** 함수 포인터입니다. 첫 번째 오버로드는 애플리케이션 도메인에 안전하지 않고 어떤 방법으로도 안전할 수 없습니다. 작성 하는 경우 **/clr** 관리 되는 리소스를 코드에 액세스 하기 전에 새 스레드가 올바른 응용 프로그램 도메인에 들어가면 있는지 확인 해야 합니다. 이 작업은 예를 들어 [call_in_appdomain 함수](../../dotnet/call-in-appdomain-function.md)를 사용하여 수행할 수 있습니다. 두 번째 오버 로드는 응용 프로그램 도메인 안전 합니다. 호출자의 응용 프로그램 도메인에서 새로 생성된 된 스레드는 항상 결국 **_beginthread** 하거나 **_beginthreadex**합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -267,7 +267,7 @@ void Bounce( void * parg )
 }
 ```
 
-아무 키나 눌러 샘플 응용 프로그램을 종료합니다.
+아무 키나 눌러 샘플 애플리케이션을 종료합니다.
 
 ## <a name="example"></a>예제
 

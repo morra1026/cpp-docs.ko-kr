@@ -5,12 +5,12 @@ helpviewer_keywords:
 - managing a scheduler instance [Concurrency Runtime]
 - scheduler instances, managing [Concurrency Runtime]
 ms.assetid: 2cc804f0-5ff3-498b-97f1-a9f67a005448
-ms.openlocfilehash: 8c19eb801c7761b85580526e1ff8bed89112cc5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8e79f7c132abd8e43f661f4dc7c7bb758cb2a6d
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437819"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893992"
 ---
 # <a name="how-to-manage-a-scheduler-instance"></a>방법: 스케줄러 인스턴스 관리
 
@@ -38,7 +38,7 @@ ms.locfileid: "50437819"
 
 1. 이벤트에 핸들을 전달 합니다 [WaitForSingleObject](/windows/desktop/api/synchapi/nf-synchapi-waitforsingleobject) 함수를 종료 하려면 스케줄러에 대 한 대기 합니다.
 
-1. 호출 된 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) 함수를 이벤트 개체에 대 한 핸들을 닫습니다.
+1. 호출 된 [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) 함수를 이벤트 개체에 대 한 핸들을 닫습니다.
 
 ## <a name="example"></a>예제
 
@@ -71,9 +71,9 @@ Current scheduler id: 0
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `scheduler-instance.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `scheduler-instance.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc 스케줄러-instance.cpp**
+**cl.exe /EHsc scheduler-instance.cpp**
 
 ## <a name="see-also"></a>참고 항목
 

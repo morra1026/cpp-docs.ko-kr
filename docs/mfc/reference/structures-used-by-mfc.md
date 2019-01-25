@@ -7,12 +7,12 @@ helpviewer_keywords:
 - structures
 - structures, MFC
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-ms.openlocfilehash: 1b691741338b1fe9ec8296b95ee67f031028d5e3
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 7e531937fc61898a6d2d432f74cb5608ea94fbc9
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178111"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893472"
 ---
 # <a name="structures-used-by-mfc"></a>MFC에서 사용하는 구조체
 
@@ -34,7 +34,7 @@ ms.locfileid: "53178111"
 |[CDaoQueryDefInfo 구조체](../../mfc/reference/cdaoquerydefinfo-structure.md)|[RGNDATA 구조체](/windows/desktop/api/wingdi/ns-wingdi-_rgndata)|
 |[CDaoRelationFieldInfo 구조체](../../mfc/reference/cdaorelationfieldinfo-structure.md)|[SOCKADDR 구조체](/windows/desktop/winsock/sockaddr-2)|
 |[CDaoRelationInfo 구조체](../../mfc/reference/cdaorelationinfo-structure.md)|[SOCKADDR_IN 구조체](/windows/desktop/winsock/sockaddr-2)|
-|[CDaoTableDefInfo 구조체](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME 구조체](https://msdn.microsoft.com/library/windows/desktop/ms724950)
+|[CDaoTableDefInfo 구조체](../../mfc/reference/cdaotabledefinfo-structure.md)|[SYSTEMTIME 구조체](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime)
 |[CDaoWorkspaceInfo 구조체](../../mfc/reference/cdaoworkspaceinfo-structure.md)|[WINDOWPLACEMENT 구조체](/windows/desktop/api/winuser/ns-winuser-tagwindowplacement)|
 |[CODBCFieldInfo 구조체](../../mfc/reference/codbcfieldinfo-structure.md)|[WINDOWPOS 구조체](/windows/desktop/api/winuser/ns-winuser-tagwindowpos)
 |[COLORADJUSTMENT 구조체](/windows/desktop/api/wingdi/ns-wingdi-tagcoloradjustment)|[WSADATA 구조체](/windows/desktop/api/winsock2/ns-winsock2-wsadata)|
@@ -44,7 +44,7 @@ ms.locfileid: "53178111"
 |[DEVNAMES 구조체](/windows/desktop/api/commdlg/ns-commdlg-tagdevnames)||
 |[DHtmlUrlEventMapEntry 구조체](../../mfc/reference/dhtmlurleventmapentry-structure.md)||
 |[DRAWITEMSTRUCT 구조체](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct)||
-|[FILETIME 구조체](https://msdn.microsoft.com/library/windows/desktop/ms724284)||
+|[FILETIME 구조체](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)||
 
 ## <a name="see-also"></a>참고 항목
 

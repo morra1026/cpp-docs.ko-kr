@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-ms.openlocfilehash: 9469770dc0538b968cfaafa2de45f28bd864193c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ecde92cbd9fb9e028e79c9a0ce75859ce85790a
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532004"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893459"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread 클래스
 
@@ -54,7 +54,7 @@ class CWorkerThread
 |이름|설명|
 |----------|-----------------|
 |[CWorkerThread::CWorkerThread](#cworkerthread)|작업자 스레드에 대 한 생성자입니다.|
-|[CWorkerThread:: ~ CWorkerThread](#dtor)|작업자 스레드에 대 한 소멸자입니다.|
+|[CWorkerThread::~CWorkerThread](#dtor)|작업자 스레드에 대 한 소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -166,7 +166,7 @@ HRESULT AddTimer(
 CWorkerThread() throw();
 ```
 
-##  <a name="dtor"></a>  CWorkerThread:: ~ CWorkerThread
+##  <a name="dtor"></a>  CWorkerThread::~CWorkerThread
 
 소멸자입니다.
 
@@ -248,7 +248,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 
 ### <a name="remarks"></a>설명
 
-핸들 제거 되 면 [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) 에 전달 된 연결된 된 개체에서 호출 되는 [AddHandle](#addhandle)합니다. 이 호출이 실패 하면 `CWorkerThread` 는 Windows를 호출 하는 [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) 핸들에는 함수입니다.
+핸들 제거 되 면 [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) 에 전달 된 연결된 된 개체에서 호출 되는 [AddHandle](#addhandle)합니다. 이 호출이 실패 하면 `CWorkerThread` 는 Windows를 호출 하는 [CloseHandle](/windows/desktop/api/handleapi/nf-handleapi-closehandle) 핸들에는 함수입니다.
 
 ##  <a name="shutdown"></a>  CWorkerThread::Shutdown
 

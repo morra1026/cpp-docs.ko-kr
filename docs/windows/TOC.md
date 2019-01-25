@@ -1,11 +1,3 @@
----
-ms.openlocfilehash: d9d9ab0bca9ae2be9854c1c14f0e0b77191f012e
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334666"
----
 # [C++의 Windows 프로그래밍 개요](overview-of-windows-programming-in-cpp.md)
 # [C++의 Windows 데스크톱 애플리케이션](desktop-applications-visual-cpp.md)
 ## [C++의 Windows 콘솔 애플리케이션](console-applications-in-visual-cpp.md)

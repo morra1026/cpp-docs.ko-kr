@@ -3,12 +3,12 @@ title: '방법: WRL을 사용 하 여 클래식 COM 구성 요소 만들기'
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: 5efe7690-90d5-4c3c-9e53-11a14cefcb19
-ms.openlocfilehash: 918369a6e43dc9cfb81c5f07afc7aa88a663dee3
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: e19ff4a331a98e64c39dc2e163459b2696bbdee5
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54336534"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893732"
 ---
 # <a name="how-to-create-a-classic-com-component-using-wrl"></a>방법: WRL을 사용 하 여 클래식 COM 구성 요소 만들기
 
@@ -28,7 +28,7 @@ ms.locfileid: "54336534"
 
    [!code-cpp[wrl-classic-com-component#1](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_1.idl)]
 
-5. CalculatorComponent.cpp에서 `CalculatorComponent` 클래스를 정의합니다. 합니다 `CalculatorComponent` 클래스에서 상속 [Microsoft::WRL::RuntimeClass](runtimeclass-class.md)합니다. [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](runtimeclassflags-structure.md) 클래스에서 파생 되는 지정 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 아니라 [IInspectable](https://msdn.microsoft.com/library/br205821)합니다. (`IInspectable` Windows 런타임 앱 구성 요소에만 사용할 수 있습니다.) `CoCreatableClass` 와 같은 함수를 사용 하 여 사용할 수 있는 클래스에 대 한 팩터리를 만듭니다 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.
+5. CalculatorComponent.cpp에서 `CalculatorComponent` 클래스를 정의합니다. 합니다 `CalculatorComponent` 클래스에서 상속 [Microsoft::WRL::RuntimeClass](runtimeclass-class.md)합니다. [Microsoft::WRL::RuntimeClassFlags\<ClassicCom >](runtimeclassflags-structure.md) 클래스에서 파생 되는 지정 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 아니라 [IInspectable](/windows/desktop/api/inspectable/nn-inspectable-iinspectable)합니다. (`IInspectable` Windows 런타임 앱 구성 요소에만 사용할 수 있습니다.) `CoCreatableClass` 와 같은 함수를 사용 하 여 사용할 수 있는 클래스에 대 한 팩터리를 만듭니다 [CoCreateInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance)합니다.
 
    [!code-cpp[wrl-classic-com-component#2](../codesnippet/CPP/how-to-create-a-classic-com-component-using-wrl_2.cpp)]
 

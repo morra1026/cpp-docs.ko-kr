@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -fp compiler option [C++]
 - /fp compiler option [C++]
 ms.assetid: 10469d6b-e68b-4268-8075-d073f4f5d57e
-ms.openlocfilehash: 78abe5e3b491ec0d658a40628dadc81e334c212f
-ms.sourcegitcommit: d94714522428834a02ede6e6884572f0f6ca9824
+ms.openlocfilehash: c571bf104fd7e8f6a287c3dd35c444d904b4b7e8
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597540"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894096"
 ---
 # <a name="fp-specify-floating-point-behavior"></a>/fp (부동 소수점 동작 지정)
 
@@ -24,7 +24,7 @@ ms.locfileid: "51597540"
 
 ## <a name="syntax"></a>구문
 
-> **/fp:**[**정확한** | **엄격한** | **빠른** | **제외한**[ **-**]]
+> **/fp:**[**precise** | **strict** | **fast** | **except**[**-**]]
 
 ### <a name="arguments"></a>인수
 
@@ -71,13 +71,13 @@ ms.locfileid: "51597540"
 
 ### <a name="using-pragmas-to-control-floating-point-behavior"></a>부동 소수점 동작을 제어 하는 Pragma를 사용 하 여
 
-컴파일러 명령줄에 지정 된 부동 소수점 동작을 재정의 하려면 세 가지 pragma directivess 제공: [float_control](../../preprocessor/float-control.md)하십시오 [fenv_access](../../preprocessor/fenv-access.md), 및 [fp_contract](../../preprocessor/fp-contract.md). 수준 함수는 함수 내에 있지 부동 소수점 동작을 제어 하려면 이러한 pragma를 사용할 수 있습니다. 이러한 pragma에 직접 해당 하지 않는 참고 합니다 **/fp** 옵션입니다. 이 테이블에 표시 하는 방법을 **/fp** 옵션과 pragma 서로 매핑합니다. 자세한 내용은 개별 옵션과 pragma에 대 한 설명서를 참조 합니다.
+컴파일러 명령줄에 지정 된 부동 소수점 동작을 재정의 하려면 세 가지 pragma 지시문을 제공 합니다. [float_control](../../preprocessor/float-control.md)를 [fenv_access](../../preprocessor/fenv-access.md), 및 [fp_contract](../../preprocessor/fp-contract.md). 수준 함수는 함수 내에 있지 부동 소수점 동작을 제어 하려면 이러한 pragma를 사용할 수 있습니다. 이러한 pragma에 직접 해당 하지 않는 참고 합니다 **/fp** 옵션입니다. 이 테이블에 표시 하는 방법을 **/fp** 옵션과 pragma 서로 매핑합니다. 자세한 내용은 개별 옵션과 pragma에 대 한 설명서를 참조 합니다.
 
 ||float_control(precise)|float_control(except)|fenv_access|fp_contract|
 |-|-|-|-|-|
 |**/fp:fast**|해제|해제|해제|위치|
-|**/fp: 정확 하 게**|위치|해제|해제|위치|
-|**/fp: 제외 하 고**|위치|위치|위치|해제|
+|**/fp:precise**|위치|해제|해제|위치|
+|**/fp:strict**|위치|위치|위치|해제|
 
 ### <a name="the-default-floating-point-environment"></a>기본 부동 소수점 환경
 

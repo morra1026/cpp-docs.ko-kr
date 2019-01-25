@@ -30,12 +30,12 @@ helpviewer_keywords:
 - wremove function
 - remove function
 ms.assetid: b6345ec3-3289-4645-93a4-28b9e478cc19
-ms.openlocfilehash: d5636912ea36fd1b1412a556d516ac3e8184e0b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05f1c5b6760520e5a982777faa903b3c5116ad05
+ms.sourcegitcommit: 22f7c4a9b4fc2158fb5283810f15275803cafe10
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613972"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54417605"
 ---
 # <a name="remove-wremove"></a>remove, _wremove
 
@@ -59,7 +59,7 @@ int _wremove(
 
 ## <a name="return-value"></a>반환 값
 
-파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 합니다 설정 **errno** 하거나 **EACCES** 경로 읽기 전용 파일을 지정 하거나 파일이 열려 또는 **ENOENT** 나타내는 합니다 파일 이름 또는 경로 찾을 수 없거나 경로가 디렉터리를 지정 합니다.
+파일이 삭제되면 이러한 함수 각각이 0을 반환합니다. 그렇지 않으면-1을 반환 하 고 설정 **errno** 하거나 **EACCES** 경로가 지정 읽기 전용 파일을 나타내기 위해 디렉터리를 지정 하거나 파일이 열려 또는 **ENOENT** 파일 이름 또는 경로 찾지 못했음을 나타냅니다.
 
 이러한 반환 코드 및 기타 반환 코드에 대한 자세한 내용은  [_doserrno, errno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)을 참조하세요.
 

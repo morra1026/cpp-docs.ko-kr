@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: bd0bdd1a3f423257b2f73745d7260d1fac12a0d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93189c5c9301e513cfbdf110cf7753e211420fef
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556665"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894135"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController 클래스
 
@@ -127,7 +127,7 @@ class CAnimationController : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationController::CAnimationController](#canimationcontroller)|애니메이션 컨트롤러를 생성합니다.|
-|[CAnimationController:: ~ CAnimationController](#canimationcontroller__~canimationcontroller)|소멸자입니다. 애니메이션 컨트롤러 개체가 소멸 될 때 호출 됩니다.|
+|[CAnimationController::~CAnimationController](#canimationcontroller__~canimationcontroller)|소멸자입니다. 애니메이션 컨트롤러 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -206,7 +206,7 @@ CAnimationController 클래스에는 애니메이션을 관리 하는 키 클래
 
 **헤더:** afxanimationcontroller.h
 
-##  <a name="_dtorcanimationcontroller"></a>  CAnimationController:: ~ CAnimationController
+##  <a name="_dtorcanimationcontroller"></a>  CAnimationController::~CAnimationController
 
 소멸자입니다. 애니메이션 컨트롤러 개체가 소멸 될 때 호출 됩니다.
 
@@ -419,7 +419,7 @@ virtual BOOL EnablePriorityComparisonHandler(DWORD dwHandlerType);
 
 ### <a name="remarks"></a>설명
 
-처리기가 (사용)를 설정 하는 경우 Windows 애니메이션 dwHandlerType에 따라 다음 가상 메서드를 호출 하는: OnHasPriorityCancel, OnHasPriorityConclude, OnHasPriorityTrim OnHasPriorityCompress 합니다. dwHandler 플래그의 조합일 수 있습니다: UI_ANIMATION_PHT_NONE-릴리스 모든 처리기 UI_ANIMATION_PHT_CANCEL-취소 설정 비교 처리기 UI_ANIMATION_PHT_CONCLUDE-Conclude 비교 처리기 UI_ANIMATION_PHT_COMPRESS 설정-설정 압축 비교 처리기 UI_ANIMATION_PHT_TRIM-Trim 비교 처리기 UI_ANIMATION_PHT_CANCEL_REMOVE 설정-취소 비교 처리기 UI_ANIMATION_PHT_CONCLUDE_REMOVE 제거-Conclude 비교 처리기 UI_ANIMATION_PHT_COMPRESS_를 제거 합니다. 제거-압축 비교 처리기 UI_ANIMATION_PHT_TRIM_REMOVE-제거 Trim 비교 처리기를 제거 합니다.
+처리기 경우 집합 (사용) Windows 애니메이션 dwHandlerType에 따라 다음 가상 메서드를 호출 합니다. OnHasPriorityCancel, OnHasPriorityConclude, OnHasPriorityTrim, OnHasPriorityCompress. dwHandler는 플래그의 조합일 수 있습니다. UI_ANIMATION_PHT_NONE-릴리스 모든 처리기 UI_ANIMATION_PHT_CANCEL-취소 설정 비교 처리기 UI_ANIMATION_PHT_CONCLUDE-설정 Conclude 비교 처리기 UI_ANIMATION_PHT_COMPRESS-압축 비교 처리기 UI_ANIMATION_PHT_TRIM 설정-설정 비교 처리기 UI_ANIMATION_PHT_CANCEL_REMOVE 자릅니다-취소 비교 처리기 UI_ANIMATION_PHT_CONCLUDE_REMOVE Conclude 비교 처리기 UI_ANIMATION_PHT_COMPRESS_REMOVE 제거-제거 UI_ANIMATION_PHT 압축 비교 처리기를 제거 합니다. _TRIM_REMOVE-Trim 비교 처리기 제거
 
 ##  <a name="enablestoryboardeventhandler"></a>  CAnimationController::EnableStoryboardEventHandler
 
@@ -871,7 +871,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_CANCEL을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_CANCEL을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)합니다.
 
 ##  <a name="onhasprioritycompress"></a>  CAnimationController::OnHasPriorityCompress
 
@@ -901,7 +901,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_COMPRESS를 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_COMPRESS를 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)합니다.
 
 ##  <a name="onhaspriorityconclude"></a>  CAnimationController::OnHasPriorityConclude
 
@@ -931,7 +931,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)합니다.
 
 ##  <a name="onhasprioritytrim"></a>  CAnimationController::OnHasPriorityTrim
 
@@ -961,7 +961,7 @@ pGroupNew에서 소유한 스토리보드가 우선인 경우 TRUE를 반환해�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](https://msdn.microsoft.com/library/dd371759)합니다.
+이 메서드는 CAnimationController::EnablePriorityComparisonHandler를 사용하여 우선 순위 비교 이벤트를 활성화하고 UI_ANIMATION_PHT_TRIM을 지정하는 경우 호출됩니다. 응용 프로그램별 작업을 수행하기 위해 파생된 클래스에서 재정의될 수 있습니다. 에 대 한 자세한 정보에 대 한 읽기 Windows 애니메이션 API 설명서 [충돌 관리](/windows/desktop/api/uianimation/nf-uianimation-iuianimationprioritycomparison-haspriority)합니다.
 
 ##  <a name="onstoryboardstatuschanged"></a>  CAnimationController::OnStoryboardStatusChanged
 
