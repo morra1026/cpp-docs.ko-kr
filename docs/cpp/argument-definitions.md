@@ -17,20 +17,20 @@ ms.locfileid: "51328125"
 ---
 # <a name="argument-definitions"></a>인수 정의
 
-프로토타입의 인수를 사용하면
+다음과 같은 프로토타입 인수를 사용하면
 
 ```cpp
 int main( int argc, char* argv[], char* envp[]);
 int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 ```
 
-인수를 편리하게 명령줄에서 구문 분석하고 선택적으로 환경 변수에 액세스할 수 있습니다. 인수 정의는 다음과 같습니다.
+인수를 편리하게 명령줄에서 구문 분석하고 원하는 환경 변수를 선택적으로 액세스할 수 있습니다. 인수 정의는 다음과 같습니다.
 
 *argc*<br/>
-아래에 나오는 인수의 수를 포함 하는 정수 *argv*합니다. 합니다 *argc* 매개 변수는 항상 1 보다 크거나 같은 경우입니다.
+*argv*에 따라오는 인수 갯수로 정수 형식입니다. *argc* 매개변수는 항상 1보다 크거나 같습니다.
 
 *argv*<br/>
-프로그램의 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열의 배열입니다. 규칙에 따라 `argv[0]` 가 있는 프로그램을 호출 하는, 명령 `argv[1]` 일까 지는 첫 번째 명령줄 인수 및 등과 `argv[argc]`, 항상 NULL 인 합니다. 참조 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md) 명령줄 처리 억제에 대 한 정보에 대 한 합니다.
+프로그램을 실행할 때 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열 배열입니다. 규칙에 따라 `argv[0]`은 프로그램이 호출되는 명령이고, `argv[1]`은 첫 번째 명령줄 인수이며 `argv[argc]`는 항상 NULL입니다. 명렬줄 처리를 없애려고 한다면 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md)을 참조합니다.
 
 첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc - 1]`입니다.
 
@@ -46,7 +46,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 사용 하는 방법을 보여 줍니다 합니다 *argc*를 *argv*, 및 *envp* 인수를 `main`:
+다음 예제에서는 *argc*, *argv* 및 *envp* 인수를 `main`에서 사용하는 방법을 보여줍니다.
 
 ```cpp
 // argument_definitions.cpp
