@@ -19,9 +19,9 @@ ms.locfileid: "50575606"
 일반적으로 해야 사용자가 직접 멤버에서 함수의 ODBC API 함수 호출을 캡슐화 하는 MFC ODBC 데이터베이스 클래스를 [CDatabase](../../mfc/reference/cdatabase-class.md) 하 고 [CRecordset](../../mfc/reference/crecordset-class.md) 클래스입니다. 예를 들어, 복잡 한 ODBC 호출 시퀀스, 저장소 위치, 오류 조건 처리 및 기타 작업에 반환된 된 레코드의 바인딩을 관리 하면 데이터베이스 클래스에서. 결과적으로, 레코드를 레코드 집합 개체를 통해 조작에 상당히 단순 클래스 인터페이스를 사용 합니다.
 
 > [!NOTE]
->  ODBC 데이터 원본 MFC 데이터 액세스 개체 (DAO) 클래스 또는이 항목에 설명 된 대로 MFC ODBC 클래스를 통해 액세스할 수 있습니다.
+>  ODBC 데이터 소스는 이 항목에서 설명하는 MFC ODBC 클래스뿐 아니라 MFC Data Access Object(DAO) 클래스를 통해서도 액세스할 수 있습니다.
 
-데이터베이스 클래스 ODBC 기능을 캡슐화 하는 있지만 ODBC API 함수를 한 일대일 매핑을 제공 하지 않습니다. 데이터베이스 클래스를 더 높은 수준의 추상화, Microsoft Access 및 Microsoft Visual Basic에서 데이터 액세스 개체를 찾으면 모델링을 제공 합니다. 자세한 내용은 [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)합니다.
+데이터베이스 클래스는 ODBC 기능을 캡슐화하지만 ODBC API 함수와의 일대일 매핑을 제공하지는 않습니다. 데이터베이스 클래스는 Microsoft Access 및 Microsoft Visual Basic에서 사용하는 데이터 액세스 개체 모델을 따르는 높은 수준의 추상화를 제공합니다. 자세한 내용은 [ODBC 및 MFC](../../data/odbc/odbc-and-mfc.md)를 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
