@@ -2,12 +2,12 @@
 title: 2. 지시문
 ms.date: 01/18/2019
 ms.assetid: d1a69374-6c03-45fb-8c86-e91cea8adae8
-ms.openlocfilehash: bf96d5ee6963a76c2b2462d5b3a0639c1141ea15
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 125d2d83b277e62d007e3a208e426ea717d52790
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894248"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087342"
 ---
 # <a name="2-directives"></a>2. 지시문
 
@@ -111,12 +111,12 @@ iam = omp_get_thread_num() + index;
 ### <a name="cross-references"></a>상호 참조
 
 - `private`를 `firstprivate`, `default`, `shared`합니다 `copyin`, 및 `reduction` 절 ([2.7.2 섹션](#272-data-sharing-attribute-clauses))
-- [OMP_NUM_THREADS](4-2-omp-num-threads.md) 환경 변수
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) 라이브러리 함수
-- [OMP_DYNAMIC](4-3-omp-dynamic.md) 환경 변수
-- [omp_set_nested](3-1-9-omp-set-nested-function.md) function
-- [OMP_NESTED](4-4-omp-nested.md) 환경 변수
-- [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md) 라이브러리 함수
+- [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) 환경 변수
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) 라이브러리 함수
+- [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic) 환경 변수
+- [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) function
+- [OMP_NESTED](4-environment-variables.md#44-omp_nested) 환경 변수
+- [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) 라이브러리 함수
 
 ## <a name="24-work-sharing-constructs"></a>2.4 작업 공유 구문
 
@@ -227,7 +227,7 @@ OpenMP 규격 프로그램을 올바르게 실행에 대 한 특정 일정 의�
 #### <a name="cross-references"></a>상호 참조
 
 - `private`를 `firstprivate`하십시오 `lastprivate`, 및 `reduction` 절 ([2.7.2 섹션](#272-data-sharing-attribute-clauses))
-- [OMP_SCHEDULE](4-1-omp-schedule.md) 환경 변수
+- [OMP_SCHEDULE](4-environment-variables.md#41-omp_schedule) 환경 변수
 - [정렬](#266-ordered-construct) 생성
 - [일정](d-using-the-schedule-clause.md) 절
 
@@ -520,7 +520,7 @@ if (x!=0) {
 
 이 섹션에서는 지시문 및 다음과 같은 병렬 영역을 실행 하는 동안 데이터 환경 제어에 대 한 여러 절을 제공 합니다.
 
-- `threadprivate` 지시문 파일 범위, 네임 스페이스 범위, 또는 정적 블록 범위 변수를 스레드에 로컬 만들기 위해 제공 됩니다 (다음 섹션 참조).
+- A [threadprivate](#271-threadprivate-directive) 지시문 파일 범위, 네임 스페이스 범위, 또는 정적 블록 범위 변수를 스레드에 로컬 확인 하기 위해 제공 됩니다.
 
 - 설명 하는 기간 또는 병렬 작업 공유 구문에 대 한 변수 공유 특성을 제어 하는 지시문에 지정 될 수 있는 절 [2.7.2 섹션](#272-data-sharing-attribute-clauses)합니다.
 
@@ -582,8 +582,8 @@ void f(int n) {
 
 #### <a name="cross-references"></a>상호 참조
 
-- [동적 스레드](3-1-7-omp-set-dynamic-function.md)
-- [OMP_DYNAMIC](4-3-omp-dynamic.md) 환경 변수
+- [동적 스레드](3-run-time-library-functions.md#317-omp_set_dynamic-function)
+- [OMP_DYNAMIC](4-environment-variables.md#43-omp_dynamic) 환경 변수
 
 ### <a name="272-data-sharing-attribute-clauses"></a>2.7.2 데이터 공유 특성 절
 

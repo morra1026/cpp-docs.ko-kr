@@ -2,12 +2,12 @@
 title: 3. 런타임 라이브러리 함수
 ms.date: 01/17/2019
 ms.assetid: b226e512-6822-4cbe-a2ca-74cc2bb7e880
-ms.openlocfilehash: 7d48338683037c06ca208bff32c5c2e9b546a9fe
-ms.sourcegitcommit: 774db6a005a85e2a1268ca34309b993792701819
+ms.openlocfilehash: 4e72d2d74bb26f8eeeb422881cabf92630cced43
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55065024"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087316"
 ---
 # <a name="3-run-time-library-functions"></a>3. 런타임 라이브러리 함수
 
@@ -49,7 +49,7 @@ ms.locfileid: "55065024"
 void omp_set_num_threads(int num_threads);
 ```
 
-매개 변수의 *num_threads* 양의 정수 여야 합니다. 미치는은 스레드 수를 동적으로 조정 활성화 되어 있는지 여부에 따라 다릅니다. 다양 한 간의 상호 작용에 대 한 규칙에 대 한는 `omp_set_num_threads` 함수 및 스레드, 동적으로 조정 섹션 2.3을 참조 하세요.
+매개 변수의 *num_threads* 양의 정수 여야 합니다. 미치는은 스레드 수를 동적으로 조정 활성화 되어 있는지 여부에 따라 다릅니다. 포괄적인 간의 상호 작용에 대 한 규칙에 대 한 합니다 `omp_set_num_threads` 함수 및 스레드, 동적으로 조정 참조 [2.3 섹션](2-directives.md#23-parallel-construct)합니다.
 
 이 함수는 프로그램의 부분에서 호출 하는 경우 위에서 설명한 효과가 있는 `omp_in_parallel` 함수가 0을 반환 합니다. 프로그램의 부분에서 호출 되 면 여기서는 `omp_in_parallel` 0이 아닌 값을 반환 하는 함수,이 함수의 동작이 정의 되지 않습니다.
 
@@ -60,7 +60,7 @@ void omp_set_num_threads(int num_threads);
 - [omp_set_dynamic](#317-omp_set_dynamic-function) function
 - [omp_get_dynamic](#318-omp_get_dynamic-function) function
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads) 환경 변수
-- [num_threads](2-3-parallel-construct.md) 절
+- [num_threads](2-directives.md#23-parallel-construct) 절
 
 ### <a name="312-ompgetnumthreads-function"></a>3.1.2 omp_get_num_threads 함수
 
@@ -78,8 +78,8 @@ int omp_get_num_threads(void);
 #### <a name="cross-references"></a>상호 참조
 
 - [OMP_NUM_THREADS](4-environment-variables.md#42-omp_num_threads)
-- [num_threads](2-3-parallel-construct.md)
-- [parallel](2-3-parallel-construct.md)
+- [num_threads](2-directives.md#23-parallel-construct)
+- [parallel](2-directives.md#23-parallel-construct)
 
 ### <a name="313-ompgetmaxthreads-function"></a>3.1.3 omp_get_max_threads 함수
 
@@ -107,7 +107,7 @@ threads-used-for-next-team
 - [omp_get_num_threads](#312-omp_get_num_threads-function)
 - [omp_set_num_threads](#311-omp_set_num_threads-function)
 - [omp_set_dynamic](#317-omp_set_dynamic-function)
-- [num_threads](2-3-parallel-construct.md)
+- [num_threads](2-directives.md#23-parallel-construct)
 
 ### <a name="314-ompgetthreadnum-function"></a>3.1.4 omp_get_thread_num 함수
 
