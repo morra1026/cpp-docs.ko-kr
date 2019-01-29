@@ -2,12 +2,12 @@
 title: 4. 환경 변수
 ms.date: 01/16/2019
 ms.assetid: 4ec7ed81-e9ca-46a1-84f8-8f9ce4587346
-ms.openlocfilehash: 5d08031c252d1f3c45fc45c021d24476b393fe33
-ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
+ms.openlocfilehash: 558b835c36253fb67339fba9b46cb0170dd6d1d0
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397331"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087199"
 ---
 # <a name="4-environment-variables"></a>4. 환경 변수
 
@@ -46,14 +46,14 @@ setenv OMP_SCHEDULE "dynamic"
 
 ### <a name="cross-references"></a>상호 참조
 
-- [에 대 한](2-4-1-for-construct.md) 지시문
-- [에 대 한 병렬](2-5-1-parallel-for-construct.md) 지시문
+- [에 대 한](2-directives.md#241-for-construct) 지시문
+- [에 대 한 병렬](2-directives.md#251-parallel-for-construct) 지시문
 
 ## <a name="42-ompnumthreads"></a>4.2 OMP_NUM_THREADS
 
 `OMP_NUM_THREADS` 기본 실행 하는 동안 사용할 스레드 수를 설정 하는 환경 변수입니다. `OMP_NUM_THREADS` 해당 숫자를 호출 하 여 명시적으로 변경 하는 경우 무시 됩니다는 `omp_set_num_threads` 라이브러리 루틴입니다. 명시적인 없는 경우에이 무시 됩니다 됩니다 `num_threads` 절을 `parallel` 지시문입니다.
 
-값을 `OMP_NUM_THREADS` 환경 변수는 양의 정수 여야 합니다. 미치는은 스레드 수를 동적으로 조정 활성화 되어 있는지 여부에 따라 다릅니다. 다양 한 간의 상호 작용에 대 한 규칙에 대 한는 `OMP_NUM_THREADS` 환경 변수 및 동적 조정 스레드 섹션 2.3을 참조 하세요.
+값을 `OMP_NUM_THREADS` 환경 변수는 양의 정수 여야 합니다. 미치는은 스레드 수를 동적으로 조정 활성화 되어 있는지 여부에 따라 다릅니다. 포괄적인 간의 상호 작용에 대 한 규칙에 대 한 합니다 `OMP_NUM_THREADS` 환경 변수 및 동적 조정 하는 스레드를 참조 하세요 [2.3 섹션](2-directives.md#23-parallel-construct)합니다.
 
 사용할 스레드 수는 구현 시 정의 하는 경우:
 
@@ -69,9 +69,9 @@ setenv OMP_NUM_THREADS 16
 
 ### <a name="cross-references"></a>상호 참조
 
-- [num_threads](2-3-parallel-construct.md) 절
-- [omp_set_num_threads](3-1-1-omp-set-num-threads-function.md) function
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) function
+- [num_threads](2-directives.md#23-parallel-construct) 절
+- [omp_set_num_threads](3-run-time-library-functions.md#311-omp_set_num_threads-function) function
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
 ## <a name="43-ompdynamic"></a>4.3 OMP_DYNAMIC
 
@@ -87,8 +87,8 @@ setenv OMP_DYNAMIC TRUE
 
 ### <a name="cross-references"></a>상호 참조
 
-- [병렬 영역](2-3-parallel-construct.md)
-- [omp_set_dynamic](3-1-7-omp-set-dynamic-function.md) function
+- [병렬 영역](2-directives.md#23-parallel-construct)
+- [omp_set_dynamic](3-run-time-library-functions.md#317-omp_set_dynamic-function) function
 
 ## <a name="44-ompnested"></a>4.4 OMP_NESTED
 
@@ -102,4 +102,4 @@ setenv OMP_NESTED TRUE
 
 ### <a name="cross-reference"></a>상호 참조
 
-- [omp_set_nested](3-1-9-omp-set-nested-function.md) function
+- [omp_set_nested](3-run-time-library-functions.md#319-omp_set_nested-function) function
