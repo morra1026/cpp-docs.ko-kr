@@ -22,7 +22,7 @@ ms.locfileid: "50517795"
 
 MFC 응용 프로그램 마법사나 **클래스 추가**([MFC ODBC 소비자 추가](../../mfc/reference/adding-an-mfc-odbc-consumer.md)의 설명 참조)를 사용하여 뷰 클래스 및 여기에 연결되는 레코드 집합 클래스를 동시에 만들 수 있습니다.
 
-레코드 뷰 및 해당 레코드 집합 문서를 닫을 때 삭제 됩니다. 레코드 뷰에 대 한 자세한 내용은 참조 하세요. [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다. RFX에 대 한 자세한 내용은 참조 하세요. [Exchange RFX (레코드 필드)](../../data/odbc/record-field-exchange-rfx.md)합니다.
+레코드 뷰 및 해당 레코드 집합은 문서를 닫을 때 삭제됩니다. 레코드 뷰에 대한 자세한 내용은 [레코드 뷰](../../data/record-views-mfc-data-access.md)를 참조하십시오. [레코드 필드 교환(RFX)](../../data/odbc/record-field-exchange-rfx.md)에 대한 자세한 내용은 RFX를 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
