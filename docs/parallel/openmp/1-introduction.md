@@ -2,12 +2,12 @@
 title: 1. 소개
 ms.date: 01/16/2019
 ms.assetid: c42e72bc-0e31-4b1c-b670-cd82673c0c5a
-ms.openlocfilehash: 99020e9cf8c38bcfaeefdf5c31663b3e66352556
-ms.sourcegitcommit: 2ebbf8093fadb9a1b78a4381439bcd5c01a89267
+ms.openlocfilehash: 8c735408bdf9f9a13693bd0ad25df185bb1db42a
+ms.sourcegitcommit: 382e247c0f1b4cb7c2dab837b8b6fdff24bff47a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54397305"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55087277"
 ---
 # <a name="1-introduction"></a>1. 소개
 
@@ -134,4 +134,4 @@ OpenMP C/c + + API 지정 동작은 특정 *구현 시 정의 합니다.* 표준
 - [런타임 라이브러리 함수](3-run-time-library-functions.md)
 - [환경 변수](4-environment-variables.md)
 - [구현 시 정의 된 동작에서 OpenMP C/c + +](e-implementation-defined-behaviors-in-openmp-c-cpp.md)
-- [OpenMP C/c + + 버전 2.0의 새로운 기능](f-new-features-and-clarifications-in-version-2-0.md)
+- [OpenMP C/c + +에서 버전 2.0의 새로운 기능](f-new-features-and-clarifications-in-version-2-0.md)
