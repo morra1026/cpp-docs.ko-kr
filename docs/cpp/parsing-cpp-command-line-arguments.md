@@ -37,7 +37,7 @@ Microsoft C/C++ 시작 코드는 운영 체제 명령줄에서 입력된 인수�
 
 ## <a name="example"></a>예제
 
-다음 프로그램은 어떻게 명령줄 인수를 보여 줍니다. 전달 됩니다.
+다음 프로그램은 명령줄 인수가 전달되는 방법을 보여줍니다.
 
 ```cpp
 // command_line_arguments.cpp
