@@ -30,7 +30,7 @@ C++ 라이브러리 헤더에는 광범위한 두 개의 하위 영역이 있습
 
 - [iostreams](../standard-library/iostreams-conventions.md) 규칙.
 
-- [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md) 규칙.
+- [C++ 표준 라이브러리 참조](../standard-library/cpp-standard-library-reference.md) 규칙입니다.
 
 이 섹션에는 다음 섹션이 포함되어 있습니다.
 
@@ -44,7 +44,7 @@ C++ 라이브러리 헤더에는 광범위한 두 개의 하위 영역이 있습
 
 - [안전한 라이브러리: C++ 표준 라이브러리](../standard-library/safe-libraries-cpp-standard-library.md)
 
-- [Checked Iterators](../standard-library/checked-iterators.md)
+- [확인된 반복기](../standard-library/checked-iterators.md)
 
 - [Debug Iterator Support](../standard-library/debug-iterator-support.md)
 
@@ -56,7 +56,7 @@ C++ 라이브러리 헤더에는 광범위한 두 개의 하위 영역이 있습
 
 - [정규식(C++)](../standard-library/regular-expressions-cpp.md)
 
-Visual C++ 런타임 라이브러리에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참고하십시오.
+Visual C++ 런타임 라이브러리에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.
 
 ## <a name="see-also"></a>참고 항목
 
