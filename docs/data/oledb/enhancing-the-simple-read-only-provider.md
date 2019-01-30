@@ -16,15 +16,15 @@ ms.locfileid: "50462922"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>단순한 읽기 전용 공급자의 기능 향상
 
-이 섹션에서는 개선 하는 방법을 보여 줍니다 합니다 [단순한 읽기 전용 공급자](../../data/oledb/implementing-the-simple-read-only-provider.md) 이전 섹션에서 만든 합니다. `IRowsetLocateImpl` 에 대 한 구현을 만듭니다는 `IRowsetLocate` 인터페이스 및 책갈피 지원을 추가 합니다.
+이 단원에서는 이전 단원에서 만든 [단순한 읽기 전용 공급자](../../data/oledb/implementing-the-simple-read-only-provider.md)의 기능을 향상시키는 방법을 보여 줍니다. `IRowsetLocateImpl`은 `IRowsetLocate` 인터페이스를 구현하고 책갈피 지원을 추가합니다.
 
-작업 공급자를 사용 하는 경우에 공급자 업데이트를 트랜잭션 처리 하거나 행 인출 알고리즘의 성능을 향상 시킬 수 있도록 개선 하는 것이 좋습니다. 공급자 향상 된 기능을 대부분 기존 COM 개체에 인터페이스를 추가 하는 작업이 포함 됩니다.
+작동하는 공급자를 만들면 공급자의 기능을 향상시켜 공급자 업데이트를 만들거나, 트랜잭션을 처리하도록 하거나, 행 페치 알고리즘의 성능을 향상시킬 수 있습니다. 대부분 공급자 기능을 향상시키기 위해 기존 COM 개체에 인터페이스를 추가합니다.
 
-다음 항목의 예제를 추가 하 여 행 인출 메커니즘을 개선 합니다 `IRowsetLocate` 인터페이스를 `CAgentRowset`입니다. 표시 하는 항목에:
+다음 항목의 예제에서는 `CAgentRowset`에 `IRowsetLocate` 인터페이스를 추가하여 행 페치 메커니즘을 향상시킵니다. 이 항목을 통해 다음 작업에 대한 방법을 알 수 있습니다.
 
-- [IRowsetLocate에서 상속 RCustomRowset 확인](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md)합니다.
+- [IRowsetLocate에서 RMyProviderRowset 상속](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md)
 
-- [소비자에 게 반환 되는 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)합니다.
+- [소비자에게 반환할 열을 동적으로 결정](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md)
 
 ## <a name="see-also"></a>참고 항목
 

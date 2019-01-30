@@ -18,11 +18,11 @@ ms.locfileid: "50441771"
 ---
 # <a name="access-to-odbc-and-sql"></a>ODBC 및 SQL 액세스
 
-Microsoft Foundation Class 라이브러리를 대부분 Windows API 호출을 캡슐화 하 고 여전히 모든 Windows API 함수를 직접 호출할 수 있습니다. 데이터베이스 클래스는 ODBC API와 관련 하 여 동일한 유연성을 제공 합니다. 어디에서 나 직접 ODBC API 함수를 호출할 수 있지만 데이터베이스 클래스에는 ODBC의 복잡성에서 보호, 프로그램에서 합니다.
+Microsoft Foundation Class 라이브러리에는 많은 Windows API 함수가 캡슐화되어 있으며 프로그래머가 Windows API 함수를 직접 호출할 수도 있습니다. 데이터베이스 클래스는 ODBC API와 비교할 때 동일한 유연성을 제공합니다. 데이터베이스 클래스를 이용하면 ODBC 사용과 관련된 복잡한 문제를 피할 수 있는 반면 프로그램의 어디서나 ODBC API 함수를 직접 호출할 수도 있습니다.
 
-데이터베이스 클래스를 사용 하 여 작업 하는 것과 있습니다으로 보호 되는 마찬가지로 [SQL](../../data/odbc/sql.md), 하지만 원하는 경우 SQL을 직접 사용할 수 있습니다. 사용자 지정 SQL 문 (또는 기본 문의 설정 부분)를 전달 하 여 레코드 집합 개체를 사용자 지정할 수 있습니다 레코드 집합을 열 때. 사용 하 여 직접 SQL 호출도 가능 합니다 [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) 클래스의 멤버 함수 [CDatabase](../../mfc/reference/cdatabase-class.md)합니다.
+마찬가지로 데이터베이스 클래스를 이용하면 좀더 쉽게 [SQL](../../data/odbc/sql.md) 작업을 수행할 수 있지만 필요하면 SQL을 직접 사용할 수도 있습니다. 레코드 집합을 열 때 사용자 지정 SQL 문 또는 기본 명령문의 설정 부분을 전달하여 레코드 집합 개체를 사용자 지정할 수 있습니다. 또한 [CDatabase](../../mfc/reference/cdatabase-class.md) 클래스의 [ExecuteSQL](../../mfc/reference/cdatabase-class.md#executesql) 멤버 함수를 사용하여 SQL을 직접 호출할 수도 있습니다.
 
-자세한 내용은 [ODBC: 호출 ODBC API 함수 직접](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) 하 고 [SQL: 만드는 직접 SQL 호출 (ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)합니다.
+자자세한 내용은 [ODBC: ODBC API 함수 직접 호출](../../data/odbc/odbc-calling-odbc-api-functions-directly.md) 및 [SQL: SQL 직접 호출(ODBC)](../../data/odbc/sql-making-direct-sql-calls-odbc.md)을 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
