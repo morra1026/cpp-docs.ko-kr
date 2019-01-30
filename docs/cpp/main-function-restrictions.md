@@ -17,7 +17,7 @@ ms.locfileid: "50555740"
 
 다른 모든 C++ 함수에는 적용되지 않는 **`main`** 함수에 대한 제한이 몇 가지 있습니다. **`main`** 함수에 대한 제한은 다음과 같습니다.
 
-- 오버로드될 수 없습니다([오버로드](function-overloading.md) 참조).
+- 오버로드될 수 없습니다([함수 오버로드](function-overloading.md) 참조).
 
 - **inline** 으로 선언될 수 없습니다.
 
@@ -27,6 +27,6 @@ ms.locfileid: "50555740"
 
 - 호출할 수 없습니다.
 
-## <a name="see-also"></a>참고
+## <a name="see-also"></a>참고 항목
 
 [main: 프로그램 시작](../cpp/main-program-startup.md)
