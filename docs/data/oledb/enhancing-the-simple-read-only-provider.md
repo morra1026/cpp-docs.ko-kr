@@ -20,7 +20,7 @@ ms.locfileid: "50462922"
 
 작동하는 공급자를 만들면 공급자의 기능을 향상시켜 공급자 업데이트를 만들거나, 트랜잭션을 처리하도록 하거나, 행 페치 알고리즘의 성능을 향상시킬 수 있습니다. 대부분 공급자 기능을 향상시키기 위해 기존 COM 개체에 인터페이스를 추가합니다.
 
-다음 항목의 예제에서는 `CAgentRowset`에 `IRowsetLocate` 인터페이스를 추가하여 행 페치 메커니즘을 향상시킵니다. 이 항목을 통해 다음 작업에 대한 방법을 알 수 있습니다:
+다음 항목의 예제에서는 `CAgentRowset`에 `IRowsetLocate` 인터페이스를 추가하여 행 페치 메커니즘을 향상시킵니다. 이 항목을 통해 다음 작업에 대한 방법을 알 수 있습니다.
 
 - [IRowsetLocate에서 RMyProviderRowset 상속](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md)
 
