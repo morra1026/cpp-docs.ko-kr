@@ -16,7 +16,7 @@ ms.locfileid: "50661658"
 ---
 # <a name="data-source-programmatically-creating-a-table-in-an-odbc-data-source"></a>데이터 소스: ODBC 데이터 소스에서 프로그래밍 방식으로 테이블 작성
 
-이 항목에서는 `CDatabase` 클래스의 `ExecuteSQL` 멤버 함수를 사용하고 **CREATE TABLE** SQL 문을 포함하는 문자열을 함수에 전달하여 데이터 소스에 대한 테이블 만드는 방법에 대해 설명합니다.
+이 항목에서는 `CDatabase` 클래스의 `ExecuteSQL` 멤버 함수를 사용하고 **CREATE TABLE** SQL 문을 포함하는 문자열을 함수에 전달하여 데이터 소스에 대한 테이블을 만드는 방법에 대해 설명합니다.
 
 MFC의 ODBC 데이터 소스에 대한 일반 정보는 [데이터 소스(ODBC)](../../data/odbc/data-source-odbc.md)를 참조하십시오. [데이터 소스: 프로그래밍 방식으로 ODBC 데이터 소스 구성](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)에서는 데이터 소스를 만드는 방법에 대해 설명합니다.
 
