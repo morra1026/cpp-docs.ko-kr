@@ -32,7 +32,7 @@ CDBPropSet propset(DBPROPSET_ROWSET);
 propset.AddProperty(DBPROP_IConnectionPointContainer, true);
 ```
 
-그러면 아래 코드처럼 사용합니다:
+그러면 아래 코드처럼 사용합니다.
 
 ```cpp
 product.Open(session, _T("Products"), &propset);
