@@ -23,7 +23,7 @@ ms.locfileid: "51265128"
 |Client Cursor를 제외한 모든 서비스|0xfffffffb|
 |Pooling, AutoEnlistment, Client Cursor를 제외한 모든 서비스|0xfffffff0|
 |서비스 사용 안 함|0x00000000|
-|집합체 없음, 모든 서비스 사용 안 함|\<누락 된 키 >|
+|집계 없음, 모든 서비스 사용 안 함|\<누락 된 키 >|
 
 ## <a name="see-also"></a>참고 항목
 
