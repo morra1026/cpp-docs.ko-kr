@@ -25,7 +25,7 @@ ms.locfileid: "50666078"
 
 Visual C++에서는 동일한 어셈블리 및 동일한 파일 내에서 관리되는 구문과 관리되지 않는 구문이 공존하고 상호 운용될 수 있도록 하는 상호 운용성 기능을 지원합니다. 이 기능의 작은 부분 집합인 P/Invoke와 같은 기능은 다른 .NET 언어에서도 지원되지만, Visual C++에서 제공하는 상호 운용성 지원의 대부분은 다른 언어에서 사용할 수 없습니다.
 
-## <a name="in-this-section"></a>단원 내용
+## <a name="in-this-section"></a>섹션 내용
 
 [혼합형(네이티브 및 관리) 어셈블리](../dotnet/mixed-native-and-managed-assemblies.md)<br/>
 관리되는 기능과 관리되지 않는 기능을 모두 포함하는 [/clr(공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션을 사용하여 생성한 어셈블리에 대해 설명합니다.
