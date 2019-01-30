@@ -27,7 +27,7 @@ myDB.ExecuteSQL("CREATE TABLE OFFICES (OfficeID TEXT(4)" ",
                          OfficeName TEXT(10))");
 ```
 
-이 코드 예제에서는 Microsoft Access 데이터 원본 연결에서 유지 관리에서 "사무실" 이라는 테이블 `myDB`; 테이블 "OfficeID" 및 "OfficeName." 라는 두 필드를 포함 합니다.
+이 코드 예제는 `myDB`에 의해 유지되는 Microsoft Access 데이터 소스 연결에서 "OFFICES"라는 테이블을 만듭니다. 이 테이블에는 "OfficeID"와 "OfficeName"의 두 개의 필드가 포함됩니다.
 
 > [!NOTE]
 >  **CREATE TABLE** SQL 문에 지정되는 필드 형식은 사용하는 ODBC 드라이버에 따라 다를 수 있습니다. Visual C++ 1.5와 함께 배포되는 Microsoft Query 프로그램을 사용하면 데이터 소스에 대해 사용할 수 있는 필드 형식을 알 수 있습니다. Microsoft Query에서 **파일**을 클릭하고 **테이블 정의**를 클릭한 후 데이터 소스에서 테이블을 선택하면 **형식** 콤보 상자에 필드 형식이 표시됩니다. 인덱스를 작성하기 위한 SQL 구문도 있습니다.
