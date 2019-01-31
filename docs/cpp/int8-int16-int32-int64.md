@@ -44,13 +44,13 @@ __int32 nLarge;     // Declares 32-bit integer
 __int64 nHuge;      // Declares 64-bit integer
 ```
 
-**__int8**, **__int16** 및 **__int32** 형식은 동일한 크기를 가진 ANSI 형식에 대한 동의어이고, 여러 플랫폼에서 동일하게 동작하는 이식 가능한 코드 작성에 유용합니다. **__int8** 데이터 형식은 **char** 형식과 동의어이고, **__int16**은 **short**, 그리고 **__int32**는 **int**와 동의어입니다. **__int64**는 **long long**와 동의어입니다.
+**__int8**, **__int16** 및 **__int32** 형식은 동일한 크기를 가진 ANSI 형식에 대한 동의어이고, 여러 플랫폼에서 동일하게 동작하는 이식 가능한 코드 작성에 유용합니다. **__int8** 데이터 형식은 **char** 형식과 동의어이고, **__int16**은 **short**, 그리고 **__int32**는 **int**와 동의어입니다. **__int64**는 **long long**과 동의어입니다.
 
 이전 버전과 호환성에 대 한 **_int8**하십시오 **_int16**, **_int32**, 및 **_int64** 는 **__int8** 하십시오 **__int16**, **__int32**, 및 **__int64** 하지 않는 한 컴파일러 옵션 [/Za \(언어를 사용 하지 않도록 설정 확장)](../build/reference/za-ze-disable-language-extensions.md) 지정 됩니다.
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 __int *xx* 매개 변수가 **int**로 승격되는 것을 보여 줍니다:
+다음 예제에서는 __int *xx* 매개 변수가 **int**로 승격되는 것을 보여 줍니다.
 
 ```cpp
 // sized_int_types.cpp
