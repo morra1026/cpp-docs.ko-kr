@@ -3,18 +3,30 @@ title: 바이너리 편집기 (c + +)
 ms.date: 11/04/2016
 f1_keywords:
 - vc.editors.binary.F1
+- vc.editors.binary
 helpviewer_keywords:
 - editors, Binary
 - resources [C++], editing
 - resource editors [C++], Binary editor
 - Binary editor
+- binary data, editing
+- resources [C++], opening for binary editing
+- binary data
+- hexadecimal bytes in binary data
+- strings [C++], searching for
+- file searches [C++]
+- binary data, finding
+- ASCII characters, finding in binary data
+- custom resources [C++]
+- data resources [C++]
+- resources [C++], creating
 ms.assetid: 2483c48b-1252-4dbc-826b-82e6c1a0e9cb
-ms.openlocfilehash: 1b5e1c16ff63c55617ee9b2bbcb47a7201635789
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06c4a224b745f5aba8c9105d32489f8ca3109e1c
+ms.sourcegitcommit: b488462a6e035131121e6f32d8f3b108cc798b5e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451703"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55293600"
 ---
 # <a name="binary-editor-c"></a>바이너리 편집기 (c + +)
 
@@ -31,21 +43,98 @@ ms.locfileid: "50451703"
 > [!TIP]
 > 사용 하는 동안 합니다 **이진** 리소스별 명령의 바로 가기 메뉴를 표시할 단추로 편집기 경우가 많습니다. 사용할 수 있는 명령은 커서가 가리키는 내용에 따라 달라집니다. 예를 들어을 가리키는 동안 클릭 하면 합니다 **이진** 선택한 16 진수 값을 사용 하 여 편집기 바로 가기 메뉴에 표시 합니다 **잘라내기**, **복사**, 및 **붙여넣기**  명령입니다.
 
-사용 하 여 합니다 **이진** 편집기를 할 수 있습니다.
+## <a name="binary-editor-how-to"></a>바이너리 편집기 사용 방법
 
-- [바이너리 편집을 위해 리소스 열기](../windows/opening-a-resource-for-binary-editing.md)
+사용 하 여 합니다 **이진** 편집기에서 다음 작업을 참조 하세요.
 
-- [이진 데이터 편집](../windows/editing-binary-data.md)
+### <a name="to-open-a-resource-for-binary-editing"></a>바이너리 편집을 위해 리소스를 열려면
 
-- [이진 데이터 찾기](../windows/finding-binary-data.md)
+#### <a name="to-open-a-windows-desktop-resource"></a>Windows 데스크톱 리소스를 열려면
 
-- [새 사용자 지정 또는 데이터 리소스 만들기](../windows/creating-a-new-custom-or-data-resource.md)
+1. [리소스 뷰](../windows/resource-view-window.md)에서 편집할 특정 리소스 파일을 선택합니다.
+
+   > [!NOTE]
+   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
+
+1. 리소스를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **이진 데이터 열기** 를 클릭합니다.
+
+   > [!NOTE]
+   > 사용 하는 경우는 [리소스 뷰](../windows/resource-view-window.md) 는 Visual Studio는 인식 되지 않는 형식의 (예: RCDATA 또는 사용자 지정 리소스)에 리소스를 사용 하 여 리소스를 열려면 창에서 자동으로 열릴 합니다 **이진** 편집기.
+
+#### <a name="to-open-a-managed-resource"></a>관리 되는 리소스를 열려면
+
+1. **솔루션 탐색기**, 편집할 특정 리소스 파일을 선택 합니다.
+
+1. 리소스를 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **연결 프로그램** 을 선택합니다.
+
+1. **연결 프로그램** 대화 상자에서 **바이너리 편집기**를 선택합니다.
+
+   > [!NOTE]
+   > 관리되는 프로젝트에서 리소스 파일로 작업하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
+
+![Binary Editor](../mfc/media/vcbinaryeditor2.gif "vcBinaryEditor2")<br/>
+바이너리 편집기에 표시되는 대화 상자의 이진 데이터
+
+바이너리 편집기에는 특정 ASCII 값만 표시됩니다(0x20 ~ 0x7E). 확장 문자는 바이너리 편집기의 ASCII 값 섹션(오른쪽 패널)에 마침표로 표시됩니다. "인쇄 가능" 문자는 ASCII 값 32 ~ 126입니다.
+
+> [!NOTE]
+> 사용 하려는 경우는 **이진** 편집기 이미 다른 편집기 창에서 편집 중인 리소스에 먼저 다른 편집기 창을 닫아야 합니다.
+
+### <a name="to-edit-a-resource-in-the-binary-editor"></a>바이너리 편집기에서 리소스를 편집 하려면
+
+1. 편집 하려는 바이트를 선택 합니다.
+
+   합니다 **탭** 키의 16 진수 및 ASCII 섹션 간에 포커스를 이동 합니다 **이진** 편집기입니다. 사용할 수는 **Page Up** 하 고 **Page Down** 한 번에 하나의 리소스 화면을 통해 이동 하는 키입니다.
+
+1. 새 값을 입력합니다.
+
+   값이 16 진수 및 ASCII 섹션 모두에서 즉시 변경 되 고 줄에서 다음 값으로 포커스가 이동 합니다.
+
+   > [!NOTE]
+   > 합니다 **이진** 편집기 변경 내용을 자동으로 적용 된 편집기를 닫을 때.
+
+### <a name="to-find-binary-data"></a>이진 데이터를 찾으려면
+
+ASCII 문자열 또는 16 진수 바이트를 검색할 수 있습니다. 예를 들어, "Hello"을 찾으려면 검색할 수 있습니다에 대 한 문자열 "Hello" 또는 "48 65 6C C 6F 6" (16 진수).
+
+1. **편집** 메뉴 선택 [찾을](/visualstudio/ide/reference/find-command)합니다.
+
+1. 에 **찾을 내용** 상자, 드롭 다운 목록에서 이전에 검색 문자열을 선택 하거나 찾으려는 데이터를 입력 합니다.
+
+1. 중 하나를 선택 합니다 **찾을** 옵션입니다.
+
+1. 선택 **다음 찾기**합니다.
+
+### <a name="to-create-a-new-custom-or-data-resource"></a>새 사용자 지정 또는 데이터 리소스를 만들려면
+
+프로젝트를 마우스 오른쪽 단추로 클릭 하 여 기본 리소스 스크립트 (.rc) 파일 구문을 사용 하 여 별도 파일에 다음 파일을 포함 하는 리소스를 배치 하 여 새 사용자 지정 또는 데이터 리소스를 만들 수 있습니다 **솔루션 탐색기** 클릭 **리소스 포함** 바로 가기 메뉴.
+
+1. 사용자 지정 또는 데이터 리소스가 포함된[.rc 파일을 만듭니다](../windows/how-to-create-a-resource-script-file.md) .
+
+   null로 끝나는 따옴표가 붙은 문자열이나 10진수, 16진수 또는 8진수 형식의 정수로 .rc 파일의 사용자 지정 데이터를 입력할 수 있습니다.
+
+1. **솔루션 탐색기**에서 프로젝트의 .rc 파일을 마우스 오른쪽 단추로 클릭한 후 바로 가기 메뉴에서 **리소스 내용** 을 클릭합니다.
+
+1. 에 **컴파일 시간 지시문** 상자에 입력을 `#include` 문을 사용자 지정 리소스를 포함 하는 파일의 이름을 제공 하는 합니다. 예를 들어:
+
+    ```cpp
+    #include mydata.rc
+    ```
+
+   입력한 구문 및 맞춤법이 정확한지 확인합니다. **컴파일 타임 지시문** 상자의 내용은 입력한 대로 정확하게 리소스 스크립트 파일에 삽입됩니다.
+
+1. 선택 **확인** 변경 내용을 기록 합니다.
+
+사용자 지정 리소스를 만드는 또 다른 방법은 사용자 지정 리소스와 같이 외부 파일을 가져오는 것입니다. 자세한 내용은 [리소스 가져오기 및 내보내기](../windows/how-to-import-and-export-resources.md)를 참조하세요.
+
+> [!NOTE]
+> 새 사용자 지정 또는 데이터 리소스를 만들려면 Win32 필요 합니다.
 
 ## <a name="managed-resources"></a>관리되는 리소스
 
 사용할 수는 [이미지 편집기](../windows/image-editor-for-icons.md) 하며 **이진** 관리 되는 프로젝트에 리소스 파일로 작업 하는 편집기입니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
+관리되는 프로젝트에 리소스를 추가하는 방법에 대한 내용은 *.NET 프레임워크 개발자 가이드*의 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)를 참조하세요. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
