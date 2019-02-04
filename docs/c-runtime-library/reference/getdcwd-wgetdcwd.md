@@ -16,6 +16,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-stdio-l1-1-0.dll
+- api-ms-win-crt-environment-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - wgetdcwd
@@ -33,12 +34,12 @@ helpviewer_keywords:
 - current working directory
 - directories [C++], current working
 ms.assetid: 184152f5-c7b0-495b-918d-f9a6adc178bd
-ms.openlocfilehash: 87cccec82ce648498c2bd3a7ac0ecbe436cb9baf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 464a254775d9a1d2488247d6dafb4b85cd763f10
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677021"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702936"
 ---
 # <a name="getdcwd-wgetdcwd"></a>_getdcwd, _wgetdcwd
 
@@ -61,10 +62,10 @@ wchar_t *_wgetdcwd(
 
 ### <a name="parameters"></a>매개 변수
 
-*드라이브*<br/>
+*drive*<br/>
 드라이브를 지정하는 음수가 아닌 정수입니다(0 = 기본 드라이브, 1 = A, 2 = B 등).
 
-지정된 드라이브를 사용할 수 없는 경우 또는 드라이브 유형(예: 이동식, 고정, CD-ROM, RAM 디스크 또는 네트워크 드라이브)을 확인할 수 없는 경우 [Parameter Validation](../../c-runtime-library/parameter-validation.md)에 설명된 대로 잘못된 매개 변수 처리기가 호출됩니다.
+지정된 된 드라이브를 사용할 수 없는 경우 또는 드라이브 유형 (예: 이동식, 고정, CD-ROM, RAM 디스크 또는 네트워크 드라이브)을 확인할 수 없는 잘못 된 매개 변수 처리기가 호출 됩니다. 자세한 내용은 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)를 참조하세요.
 
 *buffer*<br/>
 경로에 대한 스토리지 위치 또는 **NULL**입니다.
@@ -74,13 +75,13 @@ wchar_t *_wgetdcwd(
 *maxlen*<br/>
 문자에서는 경로의 최대 길이 지정 하는 0이 아닌 양의 정수: **char** 에 대 한 **_getdcwd** 하 고 **wchar_t** 에 대 한 **_wgetdcwd**.
 
-하는 경우 *maxlen* 에서 설명 하는 잘못 된 매개 변수 처리기를 0 보다 크지 않습니다 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)에 호출 됩니다.
+하는 경우 *maxlen* 보다 작거나 0에 잘못 된 매개 변수 처리기를 호출 합니다. 자세한 내용은 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)를 참조하세요.
 
 ## <a name="return-value"></a>반환 값
 
 지정된 된 드라이브의 현재 작업 디렉터리의 전체 경로 나타내는 문자열에 대 한 포인터 또는 **NULL**, 오류가 나타냅니다.
 
-하는 경우 *버퍼* 로 지정 됩니다 **NULL** 할당할 메모리가 부족 하 고 *maxlen* 문자, 오류가 발생 하 고 **errno** 는 로 **ENOMEM**합니다. Null 종결 문자를 포함 하는 경로의 길이 초과 하는 경우 *maxlen*, 오류가 발생 하 고 **errno** 로 설정 되어 **ERANGE**합니다. 이러한 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
+하는 경우 *버퍼* 로 지정 됩니다 **NULL** 할당할 메모리가 부족 하 고 *maxlen* 문자, 오류가 발생 하 고 **errno** 는 로 **ENOMEM**합니다. Null 종결 문자를 포함 하 여 경로의 길이 초과 하는 경우 *maxlen*, 오류가 발생 하 고 **errno** 로 설정 되어 **ERANGE**합니다. 이러한 오류 코드에 대한 자세한 내용은 [errno, _doserrno, _sys_errlist 및 _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md)를 참조하세요.
 
 ## <a name="remarks"></a>설명
 
