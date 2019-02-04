@@ -3,8 +3,8 @@ title: ctanh, ctanhf, ctanhl
 ms.date: 11/04/2016
 apiname:
 - ctanh
-- ctahf
-- ctahl
+- ctanhf
+- ctanhl
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -30,12 +30,12 @@ helpviewer_keywords:
 - ctanhl function
 - ctanhf function
 ms.assetid: 807f2cd1-8740-4988-afff-5911c346385b
-ms.openlocfilehash: e390aceaad2ee82e1fe2a865d3903f5062f52e9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f63329e45fdcd3a26d613f73cd911fdf6fb10401
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470562"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702689"
 ---
 # <a name="ctanh-ctanhf-ctanhl"></a>ctanh, ctanhf, ctanhl
 
@@ -83,7 +83,7 @@ C + +에서는 오버 로드 하므로 오버 로드를 호출할 수 있습니�
 
 |루틴에서 반환된 값|C 헤더|C++ 헤더|
 |-------------|--------------|------------------|
-|**ctanh**하십시오 **ctanhf**, **ctanhl**|\<complex.h>|\<ccomplex>|
+|**ctanh**,               **ctanhf**, **ctanhl**|\<complex.h>|\<ccomplex>|
 
 호환성에 대한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

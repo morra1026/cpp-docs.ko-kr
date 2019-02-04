@@ -1,9 +1,10 @@
 ---
-title: strcat_s, wcscat_s, _mbscat_s
-ms.date: 11/04/2016
+title: strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
+ms.date: 01/22/2019
 apiname:
 - strcat_s
 - _mbscat_s
+- _mbscat_s_l
 - wcscat_s
 apilocation:
 - msvcrt.dll
@@ -23,27 +24,29 @@ f1_keywords:
 - strcat_s
 - wcscat_s
 - _mbscat_s
+- _mbscat_s_l
 helpviewer_keywords:
 - wcscat_s function
 - strcat_s function
 - mbscat_s function
 - strings [C++], appending
 - _mbscat_s function
+- _mbscat_s_l function
 - appending strings
 ms.assetid: 0f2f9901-c5c5-480b-98bc-f8f690792fc0
-ms.openlocfilehash: 7b622fbefc690317a4b57e3fd1bb54712b84f2a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92829421cc0adac0ff9bbd2354fe4438a7b22871
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621314"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702923"
 ---
-# <a name="strcats-wcscats-mbscats"></a>strcat_s, wcscat_s, _mbscat_s
+# <a name="strcats-wcscats-mbscats-mbscatsl"></a>strcat_s, wcscat_s, _mbscat_s, _mbscat_s_l
 
 문자열을 추가합니다. 이러한 버전의 [strcat, wcscat, _mbscat](strcat-wcscat-mbscat.md)에는 [CRT의 보안 기능](../../c-runtime-library/security-features-in-the-crt.md)에 설명된 대로 강화된 보안 기능이 포함되어 있습니다.
 
 > [!IMPORTANT]
-> **_mbscat_s** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbscat_s** 하 고 **_mbscat_s_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -63,6 +66,12 @@ errno_t _mbscat_s(
    size_t numberOfElements,
    const unsigned char *strSource
 );
+errno_t _mbscat_s_l(
+   unsigned char *strDestination,
+   size_t numberOfElements,
+   const unsigned char *strSource,
+   _locale_t locale
+);
 template <size_t size>
 errno_t strcat_s(
    char (&strDestination)[size],
@@ -78,6 +87,12 @@ errno_t _mbscat_s(
    unsigned char (&strDestination)[size],
    const unsigned char *strSource
 ); // C++ only
+template <size_t size>
+errno_t _mbscat_s_l(
+   unsigned char (&strDestination)[size],
+   const unsigned char *strSource,
+   _locale_t locale
+); // C++ only
 ```
 
 ### <a name="parameters"></a>매개 변수
@@ -90,6 +105,9 @@ Null 종료 대상 문자열 버퍼입니다.
 
 *strSource*<br/>
 null 종료 소스 문자열 버퍼입니다.
+
+*locale*<br/>
+사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -119,6 +137,8 @@ strcat_s(buf, 16 - strlen(buf), " End"); // Incorrect
 **wcscat_s** 하 고 **_mbscat_s** 와이드 문자 및 멀티 바이트 문자 버전입니다 **strcat_s**합니다. 인수 및 반환 값 **wcscat_s** 은 와이드 문자열이 고 **_mbscat_s** 는 멀티 바이트 문자 문자열입니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
 
 경우 *strDestination* null 포인터 이거나 null로 종료 되지 이거나 *strSource* 되는 **NULL** 포인터 대상 문자열이 너무 작은 경우 또는 잘못 된 매개 변수 에 설명 된 대로 처리기가 호출 [매개 변수 유효성 검사](../../c-runtime-library/parameter-validation.md)합니다. 실행을 계속 하도록 허용 된 경우 이러한 함수는 반환 **EINVAL** 설정 **errno** 하 **EINVAL**합니다.
+
+함수의 버전은 **_l** 접미사 동일 하 게 동작에 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 하 여 합니다. 자세한 내용은 [Locale](../../c-runtime-library/locale.md)을 참조하세요.
 
 C++에서는 템플릿 오버로드로 인해 이러한 함수를 사용하는 것이 보다 간단해 집니다. 오버로드는 버퍼 길이를 자동으로 유추할 수 있으며(크기 인수를 지정할 필요가 없어짐), 기존의 비보안 함수를 보다 최신의 보안 대응 함수로 자동으로 바꿀 수 있습니다. 자세한 내용은 [Secure Template Overloads](../../c-runtime-library/secure-template-overloads.md)을 참조하세요.
 

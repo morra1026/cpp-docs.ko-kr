@@ -1,9 +1,10 @@
 ---
-title: strcmp, wcscmp, _mbscmp
-ms.date: 11/04/2016
+title: strcmp, wcscmp, _mbscmp, _mbscmp_l
+ms.date: 01/22/2019
 apiname:
 - wcscmp
 - _mbscmp
+- _mbscmp_l
 - strcmp
 apilocation:
 - msvcrt.dll
@@ -23,6 +24,7 @@ apilocation:
 apitype: DLLExport
 f1_keywords:
 - _mbscmp
+- _mbscmp_l
 - wcscmp
 - strcmp
 - _tcscmp
@@ -34,24 +36,25 @@ helpviewer_keywords:
 - mbscmp function
 - string comparison [C++]
 - _mbscmp function
+- _mbscmp_l function
 - wcscmp function
 - _tcscmp function
 - _ftcscmp function
 - ftcscmp function
 ms.assetid: 5d216b57-7a5c-4cb3-abf0-0f4facf4396d
-ms.openlocfilehash: b7d8614fffc96a600c0d1f92b85503259cfc5cbb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dae5e04809ac7312097cb418ab5ffd561fdbd1d1
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600527"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703157"
 ---
-# <a name="strcmp-wcscmp-mbscmp"></a>strcmp, wcscmp, _mbscmp
+# <a name="strcmp-wcscmp-mbscmp-mbscmpl"></a>strcmp, wcscmp, _mbscmp, _mbscmp_l
 
 비교 문자열입니다.
 
 > [!IMPORTANT]
-> **_mbscmp** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
+> **_mbscmp** 하 고 **_mbscmp_l** Windows 런타임에서 실행 되는 응용 프로그램에서 사용할 수 없습니다. 자세한 내용은 [유니버설 Windows 플랫폼 앱에서 지원되지 않는 CRT 함수](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -68,12 +71,20 @@ int _mbscmp(
    const unsigned char *string1,
    const unsigned char *string2
 );
+int _mbscmp_l(
+   const unsigned char *string1,
+   const unsigned char *string2,
+   _locale_t locale
+);
 ```
 
 ### <a name="parameters"></a>매개 변수
 
 *string1*, *string2*<br/>
 비교할 Null 종료 문자열입니다.
+
+*locale*<br/>
+사용할 로캘입니다.
 
 ## <a name="return-value"></a>반환 값
 
@@ -85,13 +96,13 @@ int _mbscmp(
 |0|*string1* 동일 *string2*|
 |> 0|*string1* 보다 크면 *string2*|
 
-매개 변수 유효성 검사 오류 시 **_mbscmp** 반환 **_NLSCMPERROR**에 정의 된 \<string.h > 및 \<mbstring.h >.
+매개 변수 유효성 검사 오류 시 **_mbscmp** 하 고 **_mbscmp_l** 반환 **_NLSCMPERROR**에 정의 된 \<string.h > 및 \< mbstring.h >.
 
 ## <a name="remarks"></a>설명
 
-**strcmp** 의 서 수 비교를 수행 하는 함수 *string1* 하 고 *string2* 관계를 나타내는 값을 반환 합니다. **wcscmp** 하 고 **_mbscmp** 는 각각의 와이드 문자 및 멀티 바이트 문자 버전 **strcmp**합니다. **_mbscmp** 현재 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 반환 **_NLSCMPERROR** 오류 발생 시. 자세한 내용은 [코드 페이지](../../c-runtime-library/code-pages.md) 참조하세요. 또한 경우 *string1* 하거나 *string2* 가 null 포인터 **_mbscmp** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개변수유효성검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **_mbscmp** 반환 **_NLSCMPERROR** 설정 하 고 **errno** 하 **EINVAL**합니다. **strcmp** 하 고 **wcscmp** 해당 매개 변수를 확인 하지 않습니다. 그렇지 않으면 이들 세 함수는 동일하게 작동합니다.
+**strcmp** 의 서 수 비교를 수행 하는 함수 *string1* 하 고 *string2* 관계를 나타내는 값을 반환 합니다. **wcscmp** 하 고 **_mbscmp** 는 각각의 와이드 문자 및 멀티 바이트 문자 버전 **strcmp**합니다. **_mbscmp** 현재 멀티 바이트 코드 페이지에 따라 멀티 바이트 문자 시퀀스를 인식 하 고 반환 **_NLSCMPERROR** 오류 발생 시. **_mbscmp_l** 동작이 동일 하지만 현재 로캘 대신 전달 된 로캘 매개 변수를 사용 합니다. 자세한 내용은 [코드 페이지](../../c-runtime-library/code-pages.md) 참조하세요. 또한 경우 *string1* 하거나 *string2* 가 null 포인터 **_mbscmp** 에 설명 된 대로 잘못 된 매개 변수 처리기를 호출 [매개변수유효성검사](../../c-runtime-library/parameter-validation.md). 실행을 계속 하도록 허용 된 경우 **_mbscmp** 하 고 **_mbscmp_l** 반환 **_NLSCMPERROR** 설정 하 고 **errno** 에 **EINVAL** . **strcmp** 하 고 **wcscmp** 해당 매개 변수를 확인 하지 않습니다. 그 외의 경우에는 이들 함수가 동일하게 작동합니다.
 
-### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 라우팅 매핑
+### <a name="generic-text-routine-mappings"></a>제네릭 텍스트 루틴 매핑
 
 |TCHAR.H 루틴|_UNICODE 및 _MBCS 정의되지 않음|_MBCS 정의됨|_UNICODE 정의됨|
 |---------------------|------------------------------------|--------------------|-----------------------|
@@ -103,7 +114,7 @@ int _mbscmp(
 
 사용할 수 있는 문자 집합과 사전적 문자 순서가 다른 로캘에서 **strcoll** of **strcmp** 문자열의 사전적 비교에 대 한 합니다. 사용할 수 있습니다 **strxfrm** 원래 문자열에 사용 하 여 **strcmp** 결과 문자열에 있습니다.
 
-합니다 **strcmp** 함수는 대/소문자 구분 합니다. **_stricmp**, **_wcsicmp**, 및 **_mbsicmp** 첫 번째을 변환 하 여 소문자 형식 문자열을 비교 합니다. 'Z' 사이 있는 문자를 포함 하는 두 개의 문자열 ASCII 테이블의 ' a' 및 ('[','\\', ']', ' ^', '_' 및 '\`')은 대 소문자에 따라 다르게 비교 합니다. "ABCDE" 문자열을 두는 예를 들어, 및 "ABCD ^"는 한 가지 방법은 비교는 소문자 비교 ("abcde" > "abcd ^") 및 다른 방법으로 ("ABCDE" < "ABCD ^") 비교 대문자 인 경우.
+합니다 **strcmp** 함수는 대/소문자 구분 합니다. **\_stricmp**,  **\_wcsicmp**, 및  **\_mbsicmp** 첫 번째을 변환 하 여 소문자 형식 문자열을 비교 합니다. 'Z' 사이 있는 문자를 포함 하는 두 개의 문자열 ASCII 테이블의 ' a' 및 ('[','\\', ']', ' ^', '_' 및 '\`')은 대 소문자에 따라 다르게 비교 합니다. "ABCDE" 문자열을 두는 예를 들어, 및 "ABCD ^"는 한 가지 방법은 비교는 소문자 비교 ("abcde" > "abcd ^") 및 다른 방법으로 ("ABCDE" < "ABCD ^") 비교 대문자 인 경우.
 
 ## <a name="requirements"></a>요구 사항
 
