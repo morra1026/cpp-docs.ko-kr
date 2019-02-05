@@ -11,6 +11,7 @@ apilocation:
 - msvcr110_clr0400.dll
 - msvcrt.dll
 - msvcr110.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - CIlog10
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - _CIlog10 intrinsic
 - CIlog10 intrinsic
 ms.assetid: 05d7fcaa-3cff-4cc5-8d44-015e7cacba24
-ms.openlocfilehash: 29052a2398186bb8ac39ba6e3361c9cbc977f8b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0814043f56122e5e5363940ead338f8617279b09
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646109"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702949"
 ---
 # <a name="cilog10"></a>_CIlog10
 
@@ -36,7 +37,7 @@ ms.locfileid: "50646109"
 void __cdecl _CIlog10();
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 버전의 `log10` 함수는 컴파일러가 이해할 수 있는 특별한 호출 규칙을 가집니다. 이 함수는 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

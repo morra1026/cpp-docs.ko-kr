@@ -14,6 +14,7 @@ apilocation:
 - msvcrt.dll
 - msvcr90.dll
 - msvcr120.dll
+- api-ms-win-crt-locale-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - ___mb_cur_max_func
@@ -26,12 +27,12 @@ helpviewer_keywords:
 - ___mb_cur_max_l_func
 - __p___mb_cur_max
 ms.assetid: 60d36108-1ca7-45a6-8ce7-68a91f13e3a1
-ms.openlocfilehash: cb84c77ebafc7fb53c1544f9ec07db3fba6f02d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e59f487825b49c8ee6fefe41b41100b571619c6c
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657043"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702793"
 ---
 # <a name="mbcurmaxfunc-mbcurmaxlfunc-pmbcurmax-mbcurmax"></a>___mb_cur_max_func, ___mb_cur_max_l_func, __p___mb_cur_max, __mb_cur_max
 
@@ -54,7 +55,7 @@ locale 결과를 검색할 로캘 구조입니다. 이 값이 null이면 현재 
 
 현재 스레드 로컬 또는 지정된 로컬에 대한 멀티바이트 문자의 최대 바이트 수입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 CRT가 스레드 로컬 스토리지에서 [MB_CUR_MAX](../c-runtime-library/mb-cur-max.md) 매크로의 현재 값을 검색하는 데 사용하는 내부 함수입니다. 사용자 코드에서는 이식성을 위해 `MB_CUR_MAX` 매크로를 사용하는 것이 좋습니다.
 
