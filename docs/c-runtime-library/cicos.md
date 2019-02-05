@@ -11,6 +11,7 @@ apilocation:
 - msvcr80.dll
 - msvcr110_clr0400.dll
 - msvcr110.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - CIcos
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - _CIcos intrinsic
 - CIcos intrinsic
 ms.assetid: 6fc203fb-66f3-4ead-9784-f85833c26f1b
-ms.openlocfilehash: fc6cb9a45a7467e63129bd859817ebdfc23a0160
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fef9ef9e197dcd6e8a1880c3acdfa2755ccf1ae1
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497232"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702728"
 ---
 # <a name="cicos"></a>_CIcos
 
@@ -36,7 +37,7 @@ ms.locfileid: "50497232"
 void __cdecl _CIcos();
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 버전의 [cos](../c-runtime-library/reference/cos-cosf-cosl.md) 함수에는 컴파일러에서 인식할 수 있는 특별한 호출 규칙이 있습니다. 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

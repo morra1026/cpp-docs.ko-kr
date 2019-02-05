@@ -11,6 +11,7 @@ apilocation:
 - msvcrt.dll
 - msvcr110_clr0400.dll
 - msvcr90.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - CIexp
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - CIexp intrinsic
 - _CIexp intrinsic
 ms.assetid: f8a3e3b7-fa57-41a3-9983-6c81914cbb55
-ms.openlocfilehash: e71f85cf987ba02d888c0920933033400543d795
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa608af9406dc03047ff9f113ac648e215b0d117
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432067"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703287"
 ---
 # <a name="ciexp"></a>_CIexp
 
@@ -36,7 +37,7 @@ ms.locfileid: "50432067"
 void __cdecl _CIexp();
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 버전의 `exp` 함수는 컴파일러가 이해할 수 있는 특별한 호출 규칙을 가집니다. 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 
