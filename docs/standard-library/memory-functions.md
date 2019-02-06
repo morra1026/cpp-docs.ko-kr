@@ -1,6 +1,6 @@
 ---
 title: '&lt;memory&gt; 함수'
-ms.date: 11/04/2016
+ms.date: 02/06/2019
 f1_keywords:
 - memory/std::addressof
 - memory/std::align
@@ -74,12 +74,12 @@ helpviewer_keywords:
 - std::uninitialized_copy_n [C++]
 - std::uninitialized_fill [C++]
 - std::uninitialized_fill_n [C++]
-ms.openlocfilehash: e0a62b7afd215a9cad62ba1d0469f68459e6f403
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 71cae7bfbb8bfc0bef79a087d4450505c2880e5c
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519180"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763936"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;memory&gt; 함수
 
@@ -105,7 +105,7 @@ T* addressof(T& Val);
 
 ### <a name="parameters"></a>매개 변수
 
-*val*<br/>
+*Val*<br/>
 실제 주소를 가져올 개체 또는 함수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -135,7 +135,7 @@ void* align(
 *Size*<br/>
 정렬된 스토리지의 크기(바이트 단위)입니다.
 
-*ptr*<br/>
+*Ptr*<br/>
 사용 가능한 인접 스토리지 풀 중 사용할 스토리지 풀의 시작 주소입니다. 이 매개 변수는 출력 매개 변수 이기도 하 고 맞춤에 성공한 경우 새 시작 주소를 포함 하도록 설정 됩니다. `align()`이 성공하지 않을 경우 이 매개 변수는 수정되지 않습니다.
 
 *스페이스바*<br/>
@@ -186,7 +186,7 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 
 ### <a name="parameters"></a>매개 변수
 
-*할당*<br/>
+*Alloc*<br/>
 개체를 만드는 데 사용된 할당자입니다.
 
 *Args*<br/>
@@ -261,7 +261,7 @@ void declare_no_pointers(
 |매개 변수|설명|
 |---------------|-----------------|
 |*ptr*|추적 가능한 포인터를 더 이상 포함하지 않는 첫 번째 문자의 주소입니다.|
-|*크기 _s*|시작 된 블록의 크기 *ptr* 없습니다 추적 가능한 포인터를 포함 하는 합니다.|
+|*_Size*|시작 된 블록의 크기 *ptr* 없습니다 추적 가능한 포인터를 포함 하는 합니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -299,7 +299,7 @@ struct default_delete {
 
 ### <a name="parameters"></a>매개 변수
 
-*ptr*<br/>
+*Ptr*<br/>
 삭제할 개체에 대한 포인터입니다.
 
 *기타*<br/>
@@ -647,13 +647,13 @@ make_unique(Types&&...) = delete;
 
 ### <a name="remarks"></a>설명
 
-첫 번째 오버로드는 단일 개체에 사용되고, 두 번째 오버로드는 배열에 대해 호출되고, 세 번째 오버로드는 형식 인수(make_unique\<T[N]>)에서 배열 크기를 지정하지 않도록 방지합니다. 현재 표준에서는 이 생성이 지원되지 않습니다. `make_unique`를 사용하여 배열에 대한 `unique_ptr`을 만드는 경우 배열 요소를 별도로 초기화해야 합니다. 이 오버로드를 고려하는 경우 [std::vector](../standard-library/vector-class.md)를 사용하는 것이 더 나을 수 있습니다.
+단일 개체에 대 한 첫 번째 오버 로드를 사용 하는, 두 번째 오버 로드는 배열에 대해 호출 되 고 세 번째 오버 로드에서 형식 인수에 배열 크기를 지정 하면 메시지를 표시 합니다 (make_unique\<T [N] >);이 생성은 현재 지원 되지 않습니다 표준입니다. `make_unique`를 사용하여 배열에 대한 `unique_ptr`을 만드는 경우 배열 요소를 별도로 초기화해야 합니다. 이 오버로드를 고려하는 경우 [std::vector](../standard-library/vector-class.md)를 사용하는 것이 더 나을 수 있습니다.
 
 `make_unique`는 예외 안전성을 위해 신중하게 구현되기 때문에 `make_unique` 생성자를 직접 호출하는 대신 `unique_ptr`를 사용할 것을 추천합니다.
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `make_unique`을 사용하는 방법을 보여 줍니다. 더 많은 예제는 [방법: unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md)을 참조하세요.
+다음 예제에서는 `make_unique`을 사용하는 방법을 보여 줍니다. 추가 예제는 [방법: Unique_ptr 인스턴스 만들기 및 사용](../cpp/how-to-create-and-use-unique-ptr-instances.md)합니다.
 
 [!code-cpp[stl_smart_pointers#214](../cpp/codesnippet/CPP/memory-functions_1.cpp)]
 
@@ -700,7 +700,7 @@ struct owner_less<weak_ptr<Type>>
 
 ### <a name="parameters"></a>매개 변수
 
-*_ 왼쪽*<br/>
+*_left*<br/>
 공유 또는 약한 포인터입니다.
 
 *right*<br/>
