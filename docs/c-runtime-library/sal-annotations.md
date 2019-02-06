@@ -56,7 +56,7 @@ ms.locfileid: "50617141"
 ---
 # <a name="sal-annotations"></a>SAL 주석
 
-라이브러리 헤더 파일에서 `_In_z` 및 `_Out_z_cap_(_Size)`와 같은 특수한 주석을 볼 수 있습니다. 이러한 주석은 Microsoft SAL(소스 코드 주석 언어)의 예로서 가정과 완료에 대한 보장 등 함수에서 매개 변수를 사용하는 방법을 설명하는 주석 모음을 제공합니다. 헤더 파일 \<sal.h>는 주석을 정의합니다.
+라이브러리 헤더 파일에서 `_In_z` 및 `_Out_z_cap_(_Size)`와 같은 특수한 주석을 볼 수 있습니다. 이러한 주석은 Microsoft SAL(소스 코드 주석 언어)의 예로서 함수가 매개 변수를 검증하고 종료시까지 올바르게 사용하는 것을 보장하기 위한 사용 방법을 설명하는 주석 모음을 제공합니다. 헤더 파일 \<sal.h>는 주석을 정의합니다.
 
 Visual Studio에서 SAL 주석을 사용하는 방법에 대한 자세한 내용은 [C/C++ 코드 오류를 줄이기 위한 SAL 주석 사용](/visualstudio/code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects)을 참조하세요.
 
