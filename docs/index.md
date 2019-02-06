@@ -1,15 +1,15 @@
 ---
 layout: HubPage
 title: Visual C++ 설명서
-description: C++를 사용하여 플랫폼과 디바이스용 응용 프로그램, 서비스 및 도구를 개발하는 방법을 알아봅니다.
+description: C++를 사용하여 플랫폼과 장치용 애플리케이션, 서비스 및 도구를 개발하는 방법을 알아봅니다.
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 9b5629adf14e1ba5caad4157a28db65b4198b904
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: e8fe8dec14560579e255446c4de3ee5a17e302f6
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51328294"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703209"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -110,7 +110,7 @@ ms.locfileid: "51328294"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++를 사용한 Windows 개발</h3>
-                                                    <p>Win32, MFC, ATL, COM 및/또는 C++/CLI를 사용하여 클래식 Windows 데스크톱 응용 프로그램, 정적 라이브러리 및 DLL을 만듭니다.</p>
+                                                    <p>Win32, MFC, ATL, COM 및/또는 C++/CLI를 사용하여 클래식 Windows 데스크톱 애플리케이션, 정적 라이브러리 및 DLL을 만듭니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -129,7 +129,7 @@ ms.locfileid: "51328294"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Linux 개발</h3>
-                                                    <p>다양한 Linux 배포용 응용 프로그램을 만듭니다.</p>
+                                                    <p>다양한 Linux 배포용 애플리케이션을 만듭니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -148,7 +148,7 @@ ms.locfileid: "51328294"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++를 사용한 모바일 개발</h3>
-                                                    <p>iOS, Android 및 UWP용 모바일 응용 프로그램을 만듭니다.</p>
+                                                    <p>iOS, Android 및 UWP용 모바일 애플리케이션을 만듭니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -156,7 +156,7 @@ ms.locfileid: "51328294"
                                 </a>
                             </li>
                             <li>
-                                <a href="https://msdn.microsoft.com/windows/uwp/gaming/e2e">
+                                <a href="/windows/uwp/gaming/e2e">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -167,7 +167,7 @@ ms.locfileid: "51328294"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>C++를 사용한 게임 개발</h3>
-                                                    <p>DirectX, Unreal, Cocos2D 등을 사용하여 게임 및 그래픽 응용 프로그램을 만듭니다.</p>
+                                                    <p>DirectX, Unreal, Cocos2D 등을 사용하여 게임 및 그래픽 애플리케이션을 만듭니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,7 +186,7 @@ ms.locfileid: "51328294"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Python</h3>
-                                                    <p>Python Tools for Visual Studio를 사용하여 C++ 프로그램과 상호 작용하는 Python 응용 프로그램을 만듭니다.</p>
+                                                    <p>Python Tools for Visual Studio를 사용하여 C++ 프로그램과 상호 작용하는 Python 애플리케이션을 만듭니다.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -290,7 +290,7 @@ ms.locfileid: "51328294"
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>배포</h3>
+                                                    <h3>배포:</h3>
                                                     <p>최종 사용자에게 완성된 프로그램을 배포합니다.</p>
                                                 </div>
                                             </div>
@@ -377,7 +377,7 @@ ms.locfileid: "51328294"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>구성 요소 확장</h3>
-                                                    <p>C++에 대한 구성 요소 확장: .NET 프로그래밍용 C++/CLI 및 UWP 프로그래밍용 C++/CX입니다.</p>
+                                                    <p>C++의 구성 요소 확장: .NET 프로그래밍용 C++/CLI 및 UWP 프로그래밍용 C++/CX.</p>
                                                 </div>
                                             </div>
                                         </div>
