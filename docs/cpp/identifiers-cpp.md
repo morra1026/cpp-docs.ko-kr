@@ -1,5 +1,5 @@
 ---
-title: 식별자 (c + +)
+title: 식별자 (C++)
 ms.date: 09/12/2018
 helpviewer_keywords:
 - decorated names
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50653663"
 ---
-# <a name="identifiers-c"></a>식별자 (c + +)
+# <a name="identifiers-c"></a>식별자 (C++)
 
 식별자는 다음 중 하나를 나타내는 데 사용되는 문자 시퀀스입니다.
 
