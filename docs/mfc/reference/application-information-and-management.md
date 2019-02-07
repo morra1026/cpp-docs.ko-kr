@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - applications [MFC], managing
 ms.assetid: b72f4154-24db-4e75-bca3-6873e2459c15
-ms.openlocfilehash: c1e742d3320dae4140cc4886c47d34dbe9b6071f
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 6bdcf97c921dc45939ab9ddf18f1d624c2fd83b8
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178345"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850300"
 ---
 # <a name="application-information-and-management"></a>응용 프로그램 정보 및 관리
 
@@ -138,10 +138,6 @@ CContextMenuManager* afxContextMenuManager;
 
 **헤더:** afxcontextmenumanager.h
 
-### <a name="see-also"></a>참고 항목
-
-[CContextMenuManager 클래스](ccontextmenumanager-class.md)
-
 ##  <a name="afxendthread"></a>  AfxEndThread
 
 현재 실행 중인 스레드를 종료 하려면이 함수를 호출 합니다.
@@ -157,7 +153,7 @@ void AFXAPI AfxEndThread(
 *nExitCode*<br/>
 스레드의 종료 코드를 지정합니다.
 
-*b 삭제*<br/>
+*bDelete*<br/>
 스레드 개체가 메모리에서 삭제 합니다.
 
 ### <a name="remarks"></a>설명
@@ -209,10 +205,6 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxwin.h
-
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)
 
 ##  <a name="afxfreelibrary"></a>  AfxFreeLibrary
 
@@ -490,11 +482,6 @@ BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 
 **헤더:** afxpriv.h
 
-### <a name="see-also"></a>참고 항목
-
-[CWnd 클래스](cwnd-class.md)<br/>
-[CFrameWndEx 클래스](cframewndex-class.md)
-
 ## <a name="afxismfctoolbar"></a> AfxIsMFCToolBar
 
 지정된 된 창 도구 모음 개체 인지 여부를 결정 합니다.
@@ -522,11 +509,6 @@ BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 
 **헤더:** afxpriv.h
 
-### <a name="see-also"></a>참고 항목
-
-[CWnd 클래스](cwnd-class.md)<br/>
-[CMFCToolBar 클래스](cmfctoolbar-class.md)
-
 ## <a name="afxkeyboardmanager"></a> AfxKeyboardManager
 
 전역에 대 한 포인터 [키보드 manager](ckeyboardmanager-class.md)합니다.
@@ -540,11 +522,6 @@ CKeyboardManager* afxKeyboardManager;
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxkeyboardmanager.h
-
-### <a name="see-also"></a>참고 항목
-
-[매크로, 전역 함수 및 전역 변수](mfc-macros-and-globals.md)<br/>
-[CKeyboardManager 클래스](ckeyboardmanager-class.md)
 
 ##  <a name="afxloadlibrary"></a>  AfxLoadLibrary
 
@@ -567,7 +544,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 - 현재 디렉터리
 
-- **Windows 95/98:** Windows 시스템 디렉터리입니다. **Windows NT의 경우:** 32 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 이름은 SYSTEM32입니다.
+- **Windows 95/98:** Windows 시스템 디렉터리입니다. **Windows NT:** 32 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 이름은 SYSTEM32입니다.
 
 - **Windows NT에만 해당:** 16 비트 Windows 시스템 디렉터리입니다. 이 디렉터리의 경로 가져옵니다 하는 Win32 함수가 있지만 검색 됩니다. 이 디렉터리의 이름은 시스템입니다.
 
@@ -613,10 +590,6 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 
 **헤더:** afxmenutearoffmanager.h
 
-### <a name="see-also"></a>참고 항목
-
-[CMenuTearOffManager 클래스](cmenutearoffmanager-class.md)
-
 ## <a name="afxmousemanager"></a>  AfxMouseManager
 
 전역에 대 한 포인터 [마우스 manager](cmousemanager-class.md)합니다.
@@ -630,10 +603,6 @@ CMouseManager* afxMouseManager;
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxmousemanager.h
-
-### <a name="see-also"></a>참고 항목
-
-[CMouseManager 클래스](cmousemanager-class.md)
 
 ##  <a name="afxregisterclass"></a>  AfxRegisterClass
 
@@ -787,10 +756,6 @@ CShellManager* afxShellManager;
 
 **헤더:** afxshellmanager.h
 
-### <a name="see-also"></a>참고 항목
-
-[CShellManager 클래스](cshellmanager-class.md)
-
 ##  <a name="afxsocketinit"></a>  AfxSocketInit
 
 이 함수를 호출 하면 `CWinApp::InitInstance` Windows 소켓을 초기화 하는 재정의 합니다.
@@ -829,10 +794,6 @@ CUserToolsManager* afxUserToolsManager;
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxusertoolsmanager.h
-
-### <a name="see-also"></a>참고 항목
-
-[CUserToolsManager 클래스](cusertoolsmanager-class.md)
 
 ##  <a name="afxwininit"></a>  AfxWinInit
 
@@ -877,7 +838,16 @@ GUI 응용 프로그램의 주 창이 표시 되는 방법을 지정 합니다.
 
   **헤더** afxwin.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CWinApp 클래스](../../mfc/reference/cwinapp-class.md)
+[매크로 및 전역](mfc-macros-and-globals.md)<br/>
+[CWinApp 클래스](cwinapp-class.md)<br/>
+[CContextMenuManager 클래스](ccontextmenumanager-class.md)<br/>
+[CWnd 클래스](cwnd-class.md)<br/>
+[CFrameWndEx 클래스](cframewndex-class.md)<br/>
+[CMFCToolBar 클래스](cmfctoolbar-class.md)<br/>
+[CKeyboardManager 클래스](ckeyboardmanager-class.md)<br/>
+[CMenuTearOffManager 클래스](cmenutearoffmanager-class.md)<br/>
+[CMouseManager 클래스](cmousemanager-class.md)<br/>
+[CShellManager 클래스](cshellmanager-class.md)<br/>
+[CUserToolsManager 클래스](cusertoolsmanager-class.md)

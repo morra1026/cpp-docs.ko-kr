@@ -20,12 +20,12 @@ helpviewer_keywords:
 - databases [MFC], dialog data exchange (DDX) support
 - DAO [MFC], dialog data exchange (DDX) support
 ms.assetid: 0d8cde38-3a2c-4100-9589-ac80a7b1ce91
-ms.openlocfilehash: 7a6de35f9e3154b6d182eddcc51fd7a14cbd0dd5
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 36341a1b122e6dcb1c475f2f95e03d384c3a034f
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764014"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850037"
 ---
 # <a name="dialog-data-exchange-functions-for-crecordview-and-cdaorecordview"></a>CRecordView 및 CDaoRecordView에 대한 대화 상자 데이터 교환 함수
 
@@ -527,10 +527,6 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 **헤더:** afxdao.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)
-
 ##  <a name="ddx_fieldtext"></a>  DDX_FieldText
 
 `DDX_FieldText` 함수도의 전송을 관리 **int**, **짧은**를 **긴**, DWORD [CString](../../atl-mfc-shared/reference/cstringt-class.md), **float**, **double**합니다 **BOOL**, 또는 **바이트** 레코드 집합의 필드 데이터 멤버는 편집 상자 컨트롤 사이 데이터입니다.
@@ -679,4 +675,4 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)
+[매크로 및 전역](mfc-macros-and-globals.md)

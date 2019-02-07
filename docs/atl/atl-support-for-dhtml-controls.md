@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DHTML controls, ATL support
 - DHTML controls
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
-ms.openlocfilehash: 321c8c14f2049622b43741cfa9d856cb00e2cd61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0aa7c7d997ba00495f0ed05ad5e0dfc4b5773a3
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638687"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849409"
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML 컨트롤에 대한 ATL 지원
 
@@ -21,7 +21,7 @@ ATL을 사용 하 여, DHTML (동적 HTML) 기능을 사용 하 여 컨트롤을
 
 - HTML과 DHTML 컨트롤의 사용자 인터페이스 (UI)를 사용 하 여 여부를 지정 합니다.
 
-- 해당 인터페이스를 통해 해당 메서드와 WebBrowser 개체에 액세스 [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx)합니다.
+- 해당 인터페이스를 통해 해당 메서드와 WebBrowser 개체에 액세스 [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\))합니다.
 
 - C + + 코드와 HTML 간의 통신을 관리합니다.
 

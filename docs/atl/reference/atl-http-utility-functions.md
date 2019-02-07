@@ -2,12 +2,12 @@
 title: ATL HTTP 유틸리티 함수
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: 43813d91daf572ad6094a5a9fe070234e5086593
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be38dc8b8547574ea47021f8b14f21060a0755f0
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481719"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849650"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP 유틸리티 함수
 
@@ -75,10 +75,6 @@ inline BOOL AtlCanonicalizeUrl(
 ### <a name="remarks"></a>설명
 
 현재 버전 처럼 [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) 하지만 WinInet 또는 Internet Explorer를 설치할 필요는 없습니다.
-
-### <a name="see-also"></a>참고 항목
-
-[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
 
 ## <a name="atlcombineurl"></a> AtlCombineUrl
 
@@ -250,7 +246,7 @@ bool inline RGBToHtml(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 RGB 색 값입니다.
 
 *pbOut*<br/>
@@ -287,5 +283,6 @@ RFC 2616에 정의 된 대로 HTTP 날짜 시간을 수신 하는 문자열 변�
 
 ## <a name="see-also"></a>참고 항목
 
-[개념](../../atl/active-template-library-atl-concepts.md)<br/>
-[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)
+[개념](../active-template-library-atl-concepts.md)<br/>
+[ATL COM 데스크톱 구성 요소](../atl-com-desktop-components.md)<br/>
+[InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)

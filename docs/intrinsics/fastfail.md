@@ -2,12 +2,12 @@
 title: __fastfail
 ms.date: 11/04/2016
 ms.assetid: 9cd32639-e395-4c75-9f3a-ac3ba7f49921
-ms.openlocfilehash: b05c86148014a4a34d852d1a00caeb71ee136548
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e96d981be5c5186d6cc472cc8f4dffcbf1c2b7bf
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521387"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849478"
 ---
 # <a name="fastfail"></a>__fastfail
 
@@ -41,6 +41,7 @@ void __fastfail(unsigned int code);
 |x86|int 0x29|ecx|
 |X64|int 0x29|rcx|
 |ARM|Opcode 0xDEFB|r0|
+|ARM64|Opcode 0xF003|x0|
 
 빠른 실패 요청은 독립적이며 대개 두 가지 명령만 있으면 실행할 수 있습니다. 빠른 실패 요청이 실행되면 커널이 적절한 작업을 수행합니다. 사용자 모드 코드에서는 빠른 실패 이벤트 발생 시 명령 포인터 자체 이외의 메모리 종속성이 없습니다. 따라서 메모리가 심각하게 손상되어도 안정성을 최대화할 수 있습니다.
 
@@ -56,7 +57,7 @@ Windows 8부터는 빠른 실패 메커니즘이 기본적으로 지원됩니다
 
 |내장 함수|아키텍처|
 |---------------|------------------|
-|`__fastfail`|x86, x64, ARM|
+|`__fastfail`|x86, x64, ARM, ARM64|
 
 **헤더 파일** \<intrin.h >
 

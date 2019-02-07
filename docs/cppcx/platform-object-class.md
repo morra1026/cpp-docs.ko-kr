@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: 6d5f3e21e14c34ffbeb335bc1ec4feebd5148c7f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 00f2b57bdf63f9f8bcfd9e544bebab2805ff7f65
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493615"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850093"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 
@@ -57,7 +57,7 @@ public ref class Object : Object
 
 **헤더:** vccorlib.h
 
-**네임스페이스:** Platform
+**네임스페이스:** 플랫폼
 
 ## <a name="equals"></a> Object:: equals 메서드
 
@@ -124,12 +124,6 @@ A [platform:: type](../cppcx/platform-type-class.md) 개체의 런타임 형식�
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
 ```
 
-## <a name="see-also"></a>참고 항목
-
-[Platform::Type 클래스](../cppcx/platform-type-class.md)<br/>
-[Platform 네임 스페이스](../cppcx/platform-namespace-c-cx.md)<br/>
-[Type System](../cppcx/type-system-c-cx.md
-
 ## <a name="ctor"></a>  Object:: object 생성자
 
 Object 클래스의 새 인스턴스를 초기화합니다.
@@ -191,4 +185,6 @@ public:
 
 ## <a name="see-also"></a>참고 항목
 
-[플랫폼 Namespace](platform-namespace-c-cx.md)
+[플랫폼 Namespace](platform-namespace-c-cx.md)<br/>
+[Platform::Type 클래스](platform-type-class.md)<br/>
+[형식 시스템](type-system-c-cx.md)
