@@ -1,6 +1,6 @@
 ---
 title: 수학식 및 부동 소수점 지원
-ms.date: 04/06/2018
+ms.date: 01/31/2019
 f1_keywords:
 - c.math
 helpviewer_keywords:
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - math routines
 - floating-point numbers
 ms.assetid: e4fcaf69-5c8e-4854-a9bb-1f412042131e
-ms.openlocfilehash: 9e1baeb7236e5b1144b52df0bd83cc0f4a4b7796
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d03333dee12989af5897c34ba96484930a39673
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558238"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703131"
 ---
 # <a name="math-and-floating-point-support"></a>수학식 및 부동 소수점 지원
 
@@ -69,7 +69,6 @@ UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 �
 [fesetround](../c-runtime-library/reference/fegetround-fesetround2.md)|지정된 부동 소수점 반올림 모드를 설정합니다.
 [fetestexcept](../c-runtime-library/reference/fetestexcept1.md)|설정된 부동 소수점 예외 상태 플래그를 결정합니다.
 [feupdateenv](../c-runtime-library/reference/feupdateenv.md)|부동 소수점 환경을 복원한 다음, 이전 예외를 발생시킵니다.
-[_finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|유한 값인지 여부를 결정합니다.
 [floor, floorf, floorl](../c-runtime-library/reference/floor-floorf-floorl.md)|최젓값을 계산합니다.
 [fma, fmaf, fmal](../c-runtime-library/reference/fma-fmaf-fmal.md)|단일 곱셈 누산기(Fused Multiply-Add)를 계산합니다.
 [fmax, fmaxf, fmaxl](../c-runtime-library/reference/fmax-fmaxf-fmaxl.md)|인수의 최댓값을 계산합니다.
@@ -87,7 +86,11 @@ UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 �
 [ilogb, ilogbf, ilogbl](../c-runtime-library/reference/ilogb-ilogbf-ilogbl2.md)|밑이 2인 정수 지수를 계산합니다.
 [imaxabs](../c-runtime-library/reference/imaxabs.md)|정수 형식의 절대값을 계산합니다.
 [imaxdiv](../c-runtime-library/reference/imaxdiv.md)|두 정수 값의 몫과 나머지를 계산합니다.
+[isfinite, _finite, _finitef](../c-runtime-library/reference/finite-finitef.md)|유한 값인지 여부를 결정합니다.
+[isgreater, isgreaterequal, isless, islessequal, islessgreater, isunordered](../c-runtime-library/reference/floating-point-ordering.md)|두 부동 소수점 값의 순서 비교
+[isinf](../c-runtime-library/reference/isinf.md)|부동 소수점 값이 무한인지 확인
 [isnan, _isnan, _isnanf](../c-runtime-library/reference/isnan-isnan-isnanf.md)|NaN에 대한 부동 소수점 값을 테스트합니다.
+[isnormal](../c-runtime-library/reference/isnormal.md)|부동 소수점 값이 유한하고 비정상적인지 여부를 테스트합니다.
 [_j0, _j1, _jn](../c-runtime-library/reference/bessel-functions-j0-j1-jn-y0-y1-yn.md)|Bessel 함수를 계산합니다.
 [ldexp, ldexpf, ldexpl](../c-runtime-library/reference/ldexp.md)|x*2<sup>n</sup>을 계산합니다.
 [lgamma, lgammaf, lgammal](../c-runtime-library/reference/lgamma-lgammaf-lgammal.md)|감마 함수의 절대값에 대한 자연 로그를 계산합니다.
@@ -118,6 +121,7 @@ UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 �
 [scalbn, scalbnf, scalbnl, scalbln, scalblnf, scalblnl](../c-runtime-library/reference/scalbn-scalbnf-scalbnl-scalbln-scalblnf-scalblnl.md)|부동 소수점 숫자를 **FLT_RADIX**의 정수 거듭제곱으로 곱합니다.
 [_set_controlfp](../c-runtime-library/reference/set-controlfp.md)|부동 소수점 제어 단어를 설정합니다.
 [_set_SSE2_enable](../c-runtime-library/reference/set-sse2-enable.md)|SSE2 명령을 사용하거나 사용하지 않도록 설정합니다.
+[signbit](../c-runtime-library/reference/signbit.md)|부동 소수점 값의 부호 비트를 테스트합니다.
 [sin, sinf, sinl](../c-runtime-library/reference/sin-sinf-sinl.md)|사인을 계산합니다.
 [sinh, sinhf, sinhl](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|쌍곡선 사인을 계산합니다.
 [sqrt, sqrtf, sqrtl](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|제곱근을 계산합니다.
@@ -134,3 +138,4 @@ UCRT(유버니설 C 런타임) 라이브러리는 ISO C99에 필요한 모든 �
 ## <a name="see-also"></a>참고 항목
 
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[부동 소수점 기본 형식](../c-runtime-library/reference/floating-point-primitives.md)<br/>

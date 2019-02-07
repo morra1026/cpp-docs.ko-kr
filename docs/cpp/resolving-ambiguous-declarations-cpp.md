@@ -1,5 +1,5 @@
 ---
-title: 모호한 선언 해결 (c + +)
+title: 모호한 선언 해결 (C++)
 ms.date: 11/04/2016
 ms.assetid: 3d773ee7-bbea-47de-80c2-cb0a9d4ec0b9
 ms.openlocfilehash: 52e94f474d59505298cb4f78a477cedd21b90aad
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50507369"
 ---
-# <a name="resolving-ambiguous-declarations-c"></a>모호한 선언 해결 (c + +)
+# <a name="resolving-ambiguous-declarations-c"></a>모호한 선언 해결 (C++)
 
 한 형식에서 다른 한 형식으로의 명시적 변환을 수행하려면 원하는 형식 이름을 지정하여 캐스팅을 사용해야 합니다. 일부 형식 캐스팅 결과 구문이 모호해집니다. 다음 함수 스타일 형식 캐스팅이 모호합니다.
 
