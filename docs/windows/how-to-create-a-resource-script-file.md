@@ -3,6 +3,7 @@ title: '방법: 리소스 스크립트 파일 (c + +) 만들기'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.editors.resource
+- vc.resvw.add.MFC
 helpviewer_keywords:
 - rc files [C++], creating
 - .rc files [C++], creating
@@ -14,20 +15,24 @@ helpviewer_keywords:
 - resource script files [C++], opening in text format
 - .rc files [C++], opening in text format
 - rc files [C++], opening in text format
+- rc files [C++], adding MFC support
+- .rc files [C++], adding MFC support
+- MFC, adding support to resource scripts files
+- resource script files [C++], adding MFC support
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
-ms.openlocfilehash: f3f0adff256742c98a672e40e6b31de9bd7a84ed
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 9055e0f787c238276d3134c2fa6a8afae0102433
+ms.sourcegitcommit: 5a7dbd640376e13379f5d5b2cf66c4842e5e737b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849960"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55905682"
 ---
 # <a name="how-to-create-a-resource-script-file-c"></a>방법: 리소스 스크립트 파일 (c + +) 만들기
 
 > [!NOTE]
 > Express 버전에서는 **리소스 편집기**를 사용할 수 없습니다.
 >
-> 이 자료는 Windows 데스크톱 애플리케이션에 적용됩니다. .NET 언어의 프로젝트에서는 리소스 스크립트 파일을 사용하지 않습니다. 자세한 내용은 [리소스 파일](../windows/resource-files-visual-studio.md), 자세한 내용은 합니다.
+> 이 자료는 Windows 데스크톱 애플리케이션에 적용됩니다. .NET 언어의 프로젝트에서는 리소스 스크립트 파일을 사용하지 않습니다. 자세한 내용은 [리소스 파일](../windows/resource-files-visual-studio.md)합니다.
 
 ## <a name="to-create-a-new-resource-script-rc-file"></a>새 리소스 스크립트(.rc) 파일을 만들려면
 
@@ -120,11 +125,39 @@ ms.locfileid: "55849960"
 
 1. 바로 가기 메뉴에서 선택 **로 열기...** 을 선택한 후 **소스 코드 (텍스트) 편집기**합니다.
 
+## <a name="to-add-mfc-support-to-resource-script-files"></a>리소스 스크립트 파일에 MFC 지원을 추가 하려면
+
+Windows를 사용 하 여 MFC 응용 프로그램을 빌드할 때 일반적으로 [MFC 응용 프로그램 마법사](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation의 핵심 기능을 포함 하는 기본 파일 (리소스 스크립트 (.rc) 파일 포함) 집합을 생성 하는 마법사 클래스 (MFC)입니다. 그러나 MFC를 기반으로 하지 않는 Windows 응용 프로그램용.rc 파일을 편집 하는 경우 MFC 프레임 워크에 관련 된 다음 기능 사용할 수 없습니다.
+
+- MFC 코드 마법사
+
+- 메뉴 프롬프트 문자열
+
+- 콤보 상자 컨트롤에 대한 내용 나열
+
+- ActiveX 컨트롤 호스팅
+
+그러나 없는 기존.rc 파일에 MFC 지원을 추가할 수 있습니다.
+
+> [!NOTE]
+> 이러한 단계에는 MFC 필요합니다.
+
+### <a name="to-add-mfc-support-to-rc-files"></a>.rc 파일에 MFC 지원을 추가하려면
+
+1. 리소스 스크립트 파일을 엽니다.
+
+1. [리소스 뷰](../windows/resource-view-window.md), 리소스 폴더 (예: MFC.rc)를 강조 표시 합니다.
+
+1. 에 [속성 창](/visualstudio/ide/reference/properties-window)로 설정 합니다 **MFC Mode** 속성을 **True**.
+
+   > [!NOTE]
+   > 이 플래그를 설정하는 것 외에도 .rc 파일은 MFC 프로젝트의 일부여야 합니다. 예를 들어, 설정 하는 것 **MFC Mode** 하 **True** Win32에서.rc 파일에서 프로젝트를 제공 하지 않습니다 MFC 기능입니다.
+
 ## <a name="requirements"></a>요구 사항
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)
