@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - /utf-8 compiler option
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-ms.openlocfilehash: cb71e1846348adf4cf8a8eb385e6c5f7ac2bac74
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: efe37f66790832874f7ff2aa9623b07b5fba5371
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636529"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851637"
 ---
 # <a name="utf-8-set-source-and-executable-character-sets-to-utf-8"></a>/utf-8 (소스 및 실행 문자 집합을 u t F-8)
 
@@ -35,9 +35,9 @@ Visual Studio는 기본적으로 인지 하는 경우 소스 파일 인코딩된
 
 1. 확장 된 **구성 속성**, **C/c + +** 를 **명령줄** 폴더입니다.
 
-1. **고급 옵션**를 추가 합니다 **/utf-8** 옵션을 선택한 기본 인코딩을 지정 합니다.
+1. **추가 옵션**를 추가 합니다 **/utf-8** 기본 인코딩을 지정 하는 옵션입니다.
 
-1. 선택할 **확인** 변경 내용을 저장 합니다.
+1. **확인**을 선택하여 변경 내용을 저장합니다.
 
 ## <a name="see-also"></a>참고 항목
 

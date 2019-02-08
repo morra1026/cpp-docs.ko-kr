@@ -13,12 +13,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: d44928d9fda20082496df1c475d8b3ab05ba4fc4
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8b40afbfcc453a4908b434dc53b7b86959673453
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522092"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851684"
 ---
 # <a name="exception-processing"></a>예외 처리
 
@@ -40,7 +40,7 @@ Microsoft Foundation Class 라이브러리를 포함 하는 몇 가지 매크로
 
 |||
 |-|-|
-|[시도](#try)|예외 처리에 대 한 코드 블록을 지정합니다.|
+|[TRY](#try)|예외 처리에 대 한 코드 블록을 지정합니다.|
 |[CATCH](#catch)|앞의 예외를 catch 하는 것에 대 한 코드 블록을 지정 **시도** 블록입니다.|
 |[CATCH_ALL](#catch_all)|앞의 모든 예외를 catch 하는 것에 대 한 코드 블록을 지정 **시도** 블록입니다.|
 |[AND_CATCH](#and_catch)|앞에서 추가 예외 형식을 catch 하기 위한 코드 블록을 지정 **시도** 블록입니다.|
@@ -88,7 +88,7 @@ MFC는 다음 종료 함수를 제공 합니다.
 |-|-|
 |[AfxAbort](#afxabort)|호출 시 오류가 응용 프로그램 종료를 발생 합니다.|
 
-##  <a name="try"></a>  시도
+##  <a name="try"></a>  TRY
 
 설정 된 **시도** 블록입니다.
 
@@ -372,12 +372,6 @@ void AfxThrowInvalidArgException( );
 
 **헤더:** afx.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[CInvalidArgException 클래스](cinvalidargexception-class.md)<br/>
-[THROW](#throw)
-
 ##  <a name="afxthrowmemoryexception"></a>  AfxThrowMemoryException
 
 메모리 예외를 throw합니다.
@@ -456,7 +450,7 @@ void AFXAPI AfxThrowOleDispatchException(
 
 ### <a name="parameters"></a>매개 변수
 
-*WCode*<br/>
+*wCode*<br/>
 응용 프로그램에 특정 오류 코드입니다.
 
 *lpszDescription*<br/>
@@ -587,5 +581,6 @@ void  AfxAbort();
 
 ## <a name="see-also"></a>참고 항목
 
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)<br/>
-[CException 클래스](../../mfc/reference/cexception-class.md)
+[매크로 및 전역](mfc-macros-and-globals.md)<br/>
+[CException 클래스](cexception-class.md)<br/>
+[CInvalidArgException 클래스](cinvalidargexception-class.md)
