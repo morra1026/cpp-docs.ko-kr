@@ -13,12 +13,12 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-ms.openlocfilehash: d3df96c92c39b9fdc05a019ed1ada033dc36d05e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a546c821690bcbe1afedd4909810317553e3b283
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536554"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849755"
 ---
 # <a name="database-macros-and-globals"></a>데이터베이스 매크로 및 전역
 
@@ -58,10 +58,6 @@ void AFXAPI AfxDbInitModule( );
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** \<afxdll_.h >
-
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)
 
 ##  <a name="afx_odbc_call"></a>  AFX_ODBC_CALL
 
@@ -104,7 +100,7 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 
 ### <a name="parameters"></a>매개 변수
 
-*pr*<br/>
+*prs*<br/>
 `CRecordset` 개체 또는 `CDatabase` 개체에 대한 포인터입니다. MFC 4.2부터는 이 매개 변수 값이 무시됩니다.
 
 *SQLFunc*<br/>

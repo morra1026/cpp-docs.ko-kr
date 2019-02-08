@@ -14,12 +14,12 @@ helpviewer_keywords:
 - ODBC recordsets [C++], documents and views
 - ODBC [C++], forms
 ms.assetid: 83979974-fc63-46ac-b162-e8403a572e2c
-ms.openlocfilehash: 5e4610af199f1fd19c1edd71a8fd67bd82ab9a8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f8bb3be7cdc253f53b50898cfc3ee840e70b2d68
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624837"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849748"
 ---
 # <a name="mfc-using-database-classes-with-documents-and-views"></a>MFC: 문서 및 뷰를 이용한 데이터베이스 클래스 사용
 
@@ -31,7 +31,7 @@ ms.locfileid: "50624837"
 
 - [기타 고려 사항](#_core_other_factors)합니다.
 
-대안에 대해서 [MFC: 문서 데이터베이스 클래스를 사용 하 여 뷰와](../data/mfc-using-database-classes-without-documents-and-views.md)합니다.
+대체를 참조 하세요. [MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스를 사용 하 여](../data/mfc-using-database-classes-without-documents-and-views.md)입니다.
 
 ##  <a name="_core_writing_a_form.2d.based_application"></a> 폼 기반 응용 프로그램 작성
 
@@ -63,14 +63,14 @@ ms.locfileid: "50624837"
 
 ##  <a name="_core_other_factors"></a> 다른 요소
 
-폼 기반 응용 프로그램 종종 없는 프레임 워크의 문서 serialization 메커니즘을 사용 하 여 모든 않으므로 제거, 사용 안 함, 또는 교체 해야 할 수는 **새로 만들기** 하 고 **열기** 명령에는 **파일** 메뉴. 문서를 참조 [Serialization: Serialization vs. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
+폼 기반 응용 프로그램 종종 없는 프레임 워크의 문서 serialization 메커니즘을 사용 하 여 모든 않으므로 제거, 사용 안 함, 또는 교체 해야 할 수는 **새로 만들기** 하 고 **열기** 명령에는 **파일** 메뉴. 문서를 참조 [직렬화 합니다. Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)합니다.
 
 확인 하려는 수도 프레임 워크를 지원할 수 있는 많은 사용자 인터페이스 기능을 활용 합니다. 예를 들어, 여러 개 사용할 수 있습니다 `CRecordView` 분할자 창에서 개체 여러 문서 MDI (인터페이스) 자식 창, 및 등 다른 다중 레코드 집합을 엽니다.
 
 보기에 인쇄를 구현 하려는 경우, 폼을 사용 하 여 구현 인지 `CRecordView` 또는 다른 요소입니다. 파생 된 클래스 `CFormView`, `CRecordView` 않습니다 인쇄를 지원 하지 않습니다 하지만 재정의할 수는 `OnPrint` 인쇄할 수 있도록 하려면 멤버 함수입니다. 자세한 내용은 클래스를 참조 하세요 [CFormView](../mfc/reference/cformview-class.md)합니다.
 
-문서 및 뷰를 전혀 사용 하지 않을 수도 있습니다. 이 경우 참조 [MFC: 문서 데이터베이스 클래스를 사용 하 여 뷰와](../data/mfc-using-database-classes-without-documents-and-views.md)합니다.
+문서 및 뷰를 전혀 사용 하지 않을 수도 있습니다. 이 경우 참조 [MFC: 문서 및 뷰 하지 않는 데이터베이스 클래스를 사용 하 여](../data/mfc-using-database-classes-without-documents-and-views.md)입니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[MFC 데이터베이스 클래스 (... / data/mfc-database-classes-odbc-and-dao.md)
+[MFC 데이터베이스 클래스](../data/mfc-database-classes-odbc-and-dao.md)

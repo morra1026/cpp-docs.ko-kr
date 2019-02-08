@@ -7,12 +7,12 @@ helpviewer_keywords:
 - parsing, URLs
 - URLs, parsing
 ms.assetid: 46c6384f-e4a6-4dbd-9196-219c19040ec5
-ms.openlocfilehash: 8765a0712fc79ee60041f9142fbd25f744246ac8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 144ca5cddb70dd04bf25d790c493d15d75b8163a
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477157"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850136"
 ---
 # <a name="internet-url-parsing-globals-and-helpers"></a>인터넷 URL 전역 구문 분석 및 도우미
 
@@ -102,13 +102,13 @@ URL 문자열을 구문 분석 하 고 서비스 및 해당 구성 요소의 형
 
 예를 들어 `AfxParseURL` 형식의 Url을 구문 분석 *service://server/dir/dir/object.ext:port* 다음과 같이 저장 된 구성 요소를 반환 합니다.
 
-*strServer* "server" = =
+*strServer* == "server"
 
-*strObject* = = "/ dir/dir/object/object.ext"
+*strObject* == "/dir/dir/object/object.ext"
 
-*nPort* #port = =
+*nPort* == #port
 
-*dwServiceType* #service = =
+*dwServiceType* == #service
 
 > [!NOTE]
 >  이 함수를 호출 하려면 프로젝트가 AFXINET 포함 해야 합니다. 8.
@@ -180,7 +180,7 @@ URL이 가리키는 개체 (비어 있을 수 있습니다).
 *nPort*<br/>
 있는 경우 URL의 서버 또는 개체 부분에서 결정 합니다.
 
-*여 strUsername*<br/>
+*strUsername*<br/>
 에 대 한 참조를 `CString` 사용자의 이름을 포함 하는 개체입니다.
 
 *strPassword*<br/>
@@ -213,10 +213,6 @@ URL 문자열을 구문 분석 하 고 사용자의 이름 및 암호를 제공 
 ### <a name="requirements"></a>요구 사항
 
   **헤더** afxinet.h
-
-## <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)
 
 ## <a name="afxgetinternethandletype"></a>  AfxGetInternetHandleType
 
@@ -274,11 +270,6 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 
 **헤더:** afxinet.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
-
 ## <a name="afxthrowinternetexception"></a>  AfxThrowInternetException
 
 인터넷 예외가 throw 됩니다.
@@ -308,9 +299,9 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 
 **헤더:** afxinet.h
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
 [CInternetException 클래스](cinternetexception-class.md)<br/>
-[THROW](#throw)
+[AfxParseURL](internet-url-parsing-globals.md#afxparseurl)
 

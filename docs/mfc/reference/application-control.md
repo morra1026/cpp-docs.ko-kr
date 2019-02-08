@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - application control [MFC]
 ms.assetid: c1f69f15-e0fe-4515-9f36-d63d31869deb
-ms.openlocfilehash: 55a5dcad21502e7aff7427dbdad41d25298356e7
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: e4944c1cf1114bbd009ebc62b776628ba86b3b4d
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518920"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850313"
 ---
 # <a name="application-control"></a>응용 프로그램 컨트롤
 
@@ -212,11 +212,6 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 
 **헤더:** afxwin.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[AfxOleUnlockControl](#afxoleunlockcontrol)
-
 ##  <a name="afxoleregisterserverclass"></a>  AfxOleRegisterServerClass
 
 이 함수를 사용 하면 OLE 시스템 레지스트리에 서버를 등록할 수 있습니다.
@@ -327,15 +322,11 @@ void AFXAPI AfxOleSetEditMenu(
 
 클라이언트 응용 프로그램 리소스 스크립트에서 다음 문이 있어야 합니다. (합니다. RC) 파일:
 
-**#include \<afxolecl.rc >**
+**#include \<afxolecl.rc>**
 
 ### <a name="requirements"></a>요구 사항
 
 **헤더**: afxole.h
-
-## <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)
 
 ## <a name="afxoleunlockcontrol"></a> AfxOleUnlockControl
 
@@ -376,8 +367,6 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 
 **헤더:** afxwin.h
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[AfxOleLockControl](#afxolelockcontrol)
-

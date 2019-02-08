@@ -23,12 +23,12 @@ helpviewer_keywords:
 - malloca function
 - _malloca function
 ms.assetid: 293992df-cfca-4bc9-b313-0a733a6bb936
-ms.openlocfilehash: 8c8ce8bdf8ab40cae45ecec9c4b182bdf3d6bc82
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22a63002c900d69e8a7706a54acedf0b4b4f6376
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563984"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850412"
 ---
 # <a name="malloca"></a>_malloca
 
@@ -51,13 +51,13 @@ void *_malloca(
 
 합니다 **_malloca** 루틴의 반환을 **void** 맞춰지도록 모든 형식의 개체 저장소로 할당된 된 공간에 대 한 포인터입니다. 하는 경우 *크기* 가 0 이면 **_malloca** 길이가 0 인 항목을 할당 하 고 해당 항목에 대 한 유효한 포인터를 반환 합니다.
 
-공간을 할당할 수 없는 경우 스택 오버플로 예외가 생성됩니다. 스택 오버플로 예외는 C++ 예외가 아니며 구조적 예외입니다. C++ 예외 처리를 사용하는 대신 [SEH(구조적 예외 처리)](../../cpp/structured-exception-handling-c-cpp.md)를 사용해야 합니다.
+경우 *크기* 보다 크면 **_ALLOCA_S_THRESHOLD**, 한 다음 **_malloca** 힙에서 할당 하려고 하며 공간을 할당할 수 없는 경우 null 포인터를 반환 합니다. 하는 경우 *크기* 보다 작거나 같음 **_ALLOCA_S_THRESHOLD**, 한 다음 **_malloca** 스택의 스택 오버플로 예외에 할당 하려고 공간이 없는 경우 생성 됩니다 할당 됩니다. 스택 오버플로 예외는 c + + 예외를 하지 않습니다. 이 구조적된 예외입니다. C + + 예외 처리를 사용 하는 대신 사용 해야 합니다 [구조적 예외 처리](../../cpp/structured-exception-handling-c-cpp.md) (SEH)이이 예외를 catch 합니다.
 
 ## <a name="remarks"></a>설명
 
 **_malloca** 할당 *크기* 프로그램 스택이나 요청 하 여 지정 된 바이트는 특정 크기를 초과 하는 경우 힙 바이트 **_ALLOCA_S_THRESHOLD**합니다. 차이점 **_malloca** 하 고 **_alloca** 는 **_alloca** 항상 크기에 관계 없이 스택에 할당 합니다. 와 달리 **_alloca**에 필요 하지 않거나에 대 한 호출을 허용 하는 **무료** 할당 메모리를 확보 하기 **_malloca** 사용 해야 [_freea](freea.md)메모리를 확보 합니다. 디버그 모드일에서 **_malloca** 항상 힙에서 메모리를 할당 합니다.
 
-명시적으로 호출 제한은 **_malloca** 는 EH (예외 처리기)에 있습니다. x86급 프로세서에서 실행되는 EH 루틴은 고유한 메모리 프레임에서 작동합니다. 즉, 바깥쪽 함수 스택 포인터의 현재 위치를 기반으로 하지 않는 메모리 공간에서 해당 작업을 수행합니다. 가장 일반적인 구현에는 Windows NT SEH(구조적 예외 처리) 및 C++ catch 절 식이 포함됩니다. 따라서 명시적으로 호출 **_malloca** 호출 EH 루틴으로 돌아가는 동안 프로그램 오류가 발생 했습니다. 다음 시나리오 중 하나에서:
+명시적으로 호출 제한은 **_malloca** 는 EH (예외 처리기)에 있습니다. X86 급 프로세서에서 실행 되는 EH 루틴은 고유한 메모리 프레임에서 작동 합니다. 바깥쪽 함수 스택 포인터의 현재 위치를 기반으로 하지 않는 메모리 공간에서 해당 작업을 수행 하며 합니다. 가장 일반적인 구현에는 Windows NT SEH(구조적 예외 처리) 및 C++ catch 절 식이 포함됩니다. 따라서 명시적으로 호출 **_malloca** 호출 EH 루틴으로 돌아가는 동안 프로그램 오류가 발생 했습니다. 다음 시나리오 중 하나에서:
 
 - Windows NT SEH 예외 필터 식: **__except** (`_malloca ()` )
 
