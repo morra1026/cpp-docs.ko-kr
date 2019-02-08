@@ -22,7 +22,7 @@ ms.locfileid: "51327215"
 기본 정수형을 확장하여 정수 오버플로를 방지하고 다양한 유형의 정수를 비교할 수 있습니다.
 
 > [!NOTE] 
-> 이 라이브러리의 최신 버전에 위치한 [ https://github.com/dcleblanc/SafeInt ](https://github.com/dcleblanc/SafeInt)합니다.
+> 이 라이브러리의 최신 버전은 [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt)에 있습니다.
 
 ## <a name="syntax"></a>구문
 
