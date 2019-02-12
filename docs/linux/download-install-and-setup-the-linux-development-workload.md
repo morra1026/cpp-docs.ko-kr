@@ -1,14 +1,14 @@
 ---
 title: Visual Studio에서 C++ Linux 워크로드 설치
 description: Visual Studio에서 C++에 대한 Linux 워크로드를 다운로드하고, 설치하고, 설정하는 방법을 설명합니다.
-ms.date: 10/12/2018
+ms.date: 02/06/2019
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: 2fa4036ece6dd161c73a5176740870c5593f4669
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c01c8ddeeb8439a7610c0f6c7c11b608ab3675d8
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441927"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763890"
 ---
 # <a name="download-install-and-setup-the-linux-workload"></a>Linux 작업 다운로드, 설치, 설정
 
@@ -27,13 +27,13 @@ Windows에서 Visual Studio IDE를 사용하여 Linux 물리적 컴퓨터, 가�
 
 ## <a name="options-for-creating-a-linux-environment"></a>Linux 환경 만들기 옵션
 
-아직 Linux 머신이 없는 경우 Azure에서 Linux 가상 머신을 만들 수 있습니다. 자세한 내용은 [빠른 시작: Azure Portal을 사용하여 Linux 가상 머신 만들기](/azure/virtual-machines/linux/quick-create-portal)를 참조하세요.
+아직 Linux 머신이 없는 경우 Azure에서 Linux 가상 머신을 만들 수 있습니다. 자세한 내용은 [빠른 시작: Azure Portal에서 Linux 가상 머신 만들기](/azure/virtual-machines/linux/quick-create-portal)를 참조하세요.
 
 Windows 10에서 다른 옵션은 Linux용 Windows 하위 시스템을 활성화하는 것입니다. 자세한 내용은 [Windows 10 설치 가이드](/windows/wsl/install-win10)를 참조하세요.
 
 ## <a name="linux-setup-ubuntu"></a>Linux 설정: Ubuntu
 
-대상 Linux 컴퓨터에 **openssh-server**, **g++**, **gdb** 및 **gdbserver**가 설치되어 있고 ssh 데몬이 실행되고 있어야 합니다. IntelliSense 지원을 위해 로컬 머신과 원격 헤더를 자동 동기화하려면 **zip**이 필요합니다. 이러한 응용 프로그램이 없다면 다음과 같이 설치할 수 있습니다.
+대상 Linux 컴퓨터에 **openssh-server**, **g++**, **gdb** 및 **gdbserver**가 설치되어 있고 ssh 데몬이 실행되고 있어야 합니다. IntelliSense 지원을 위해 로컬 머신과 원격 헤더를 자동 동기화하려면 **zip**이 필요합니다. 이러한 애플리케이션이 없다면 다음과 같이 설치할 수 있습니다.
 
 1. Linux 컴퓨터의 셸 프롬프트에서 다음을 실행합니다.
 
@@ -53,7 +53,7 @@ Fedora를 실행하는 대상 시스템은 **dnf** 패키지 설치 프로그램
 
 1. Linux 컴퓨터의 셸 프롬프트에서 다음을 실행합니다.
 
-   `sudo dnf install openssh-server g++ gdb gdbserver zip`
+   `sudo dnf install openssh-server gcc-g++ gdb gdb-gdbserver zip`
 
    sudo 명령 때문에 루트 암호를 입력하라는 메시지가 표시될 수 있습니다.  메시지가 표시되면 루트 암호를 입력하고 계속합니다. 완료되면 필수 서비스 및 도구가 설치됩니다.
 
