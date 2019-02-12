@@ -21,7 +21,7 @@ ms.locfileid: "50620742"
 ## <a name="in-this-section"></a>섹션 내용
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
-구성 요소 개체 모델(COM)의 개요를 제공 합니다. 인터페이스를 비롯한 `IUnknown`, 참조 횟수, `QueryInterface`, 마샬링 및 집계에 대한 기본적인 개념을 설명합니다.
+구성 요소 개체 모델(COM)의 개요를 제공합니다. 인터페이스를 비롯한 `IUnknown`, 참조 횟수, `QueryInterface`, 마샬링 및 집계에 대한 기본적인 개념을 설명합니다.
 
 [ATL 소개](../atl/introduction-to-atl.md)<br/>
 액티브 템플릿 라이브러리(ATL)의 설계와 템플릿 라이브러리 그리고 ATL 버전 번호에 대해 간략하게 설명합니다. ATL 및 MFC 중에 선택 권장 사항이 포함되어 있습니다.
