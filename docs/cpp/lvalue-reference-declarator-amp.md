@@ -30,7 +30,7 @@ lvalue 참조를 개체의 또 다른 이름으로 간주할 수 있습니다. l
 
 주소가 지정된 포인터 형식으로 변환될 수 있는 개체는 유사한 참조 형식으로도 변환될 수 있습니다. 예를 들어 주소가 `char *` 형식으로 변환될 수 있는 개체는 `char &` 형식으로도 변환될 수 있습니다.
 
-참조 선언을 사용 하 여 혼동 하지 마십시오 합니다 [address-of 연산자](../cpp/address-of-operator-amp.md)합니다. 경우는 `&` *식별자* 와 같은 형식으로 앞에 **int** 또는 **char**를 *식별자* 에 대 한 참조로 선언 됨 형식입니다. 때 `&` *식별자* 앞에 오지 사용법은 address-of 연산자의 형식으로 합니다.
+참조 선언을 [주소 연산자](../cpp/address-of-operator-amp.md) 사용과 혼동하지 마십시오. `&` *식별자* 앞에 **int** 또는 **char**와 같은 형식이 있는 경우 `&` *식별자*는 해당 형식에 대한 참조로 선언됩니다. `&` *식별자* 앞에 형식이 없는 경우에는 주소 연산자와 용도가 같습니다.
 
 ## <a name="example"></a>예제
 
@@ -71,7 +71,7 @@ int main()
 Bill is 40
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목 
 
 [참조](../cpp/references-cpp.md)<br/>
 [참조 형식 함수 인수](../cpp/reference-type-function-arguments.md)<br/>
