@@ -77,7 +77,7 @@ long DateOfYear( const Date& date );
 
 이 프로토타입은 `DateOfYear` 함수가 인수를 변경하지 않도록 합니다.
 
-참조 형식으로 프로토타입된 모든 함수는 *typename*에서 *typename* **&** 으로의 표준 변환이 있기 때문에 해당 위치에서 같은 형식의 개체를 받을 수 있습니다.
+참조 형식으로 프로토타입된 모든 함수는 *typename*에서 *typename* **&**으로의 표준 변환이 있기 때문에 해당 위치에서 같은 형식의 개체를 받을 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 
