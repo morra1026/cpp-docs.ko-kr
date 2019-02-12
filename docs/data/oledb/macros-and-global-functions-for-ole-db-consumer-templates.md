@@ -1,6 +1,6 @@
 ---
 title: OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수
-ms.date: 11/04/2016
+ms.date: 02/11/2019
 f1_keywords:
 - vc.templates.ole
 - ATL.AtlTraceErrorRecords
@@ -100,12 +100,12 @@ helpviewer_keywords:
 - END_PARAM_MAP macro
 - SET_PARAM_TYPE macro
 ms.assetid: 8765eb7b-32dd-407c-bacf-8890ef959837
-ms.openlocfilehash: 4254c2637c4ed937a3196310ffa83c48504911af
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 1826f674e219b850e62fdae07b3a97e8b8cf2d48
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557117"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149000"
 ---
 # <a name="macros-and-global-functions-for-ole-db-consumer-templates"></a>OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수
 
@@ -198,11 +198,7 @@ inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);
 
 #### <a name="remarks"></a>설명
 
-하는 경우 *hErr* S_OK 아닙니다 `AtlTraceErrorRecords` OLE DB 오류 레코드 덤프 장치 정보를 덤프 (합니다 **디버그** 출력 창 또는 파일로 탭). 공급자에서 가져온 오류 레코드 정보를 각 오류 레코드 항목에 대 한 행 번호, 원본, 설명, 도움말 파일, 컨텍스트 및 GUID를 포함 합니다. `AtlTraceErrorRecords` 디버그 빌드에서만에서이 정보를 덤프합니다. 릴리스 빌드에서 빈 스텁을 아웃 최적화 된 것입니다.
-
-#### <a name="see-also"></a>참고 항목
-
-[CDBErrorInfo 클래스](../../data/oledb/cdberrorinfo-class.md)
+하는 경우 *hErr* S_OK 아닙니다 `AtlTraceErrorRecords` OLE DB 오류 레코드 덤프 장치 정보를 덤프 (합니다 **디버그** 출력 창 또는 파일로 탭). 공급자에서 가져온 오류 레코드 정보를 각 오류 레코드 항목에 대 한 행 번호, 원본, 설명, 도움말 파일, 컨텍스트 및 GUID를 포함 합니다. `AtlTraceErrorRecords` 디버그 빌드에서만에서이 정보를 덤프합니다. 릴리스 빌드에서 빈 스텁을 아웃 최적화 된 것입니다. 자세한 내용은 [CDBErrorInfo 클래스](../../data/oledb/cdberrorinfo-class.md)합니다.
 
 ### <a name="begin_accessor"></a> BEGIN_ACCESSOR
 
@@ -669,10 +665,7 @@ END_COLUMN_MAP()
 };
 ```
 
-#### <a name="see-also"></a>참고 항목
-
-[CBookmark 클래스](../../data/oledb/cbookmark-class.md)<br/>
-[DBPROP_BOOKMARKS](https://docs.microsoft.com/previous-versions/windows/desktop/ms709728(v=vs.85))
+자세한 내용은 [를 사용 하 여 책갈피](using-bookmarks.md) 하 고 [CBookmark 클래스](../../data/oledb/cbookmark-class.md).
 
 ### <a name="column_entry"></a> COLUMN_ENTRY
 
@@ -1469,7 +1462,7 @@ END_COLUMN_MAP()
 
 #### <a name="example"></a>예제
 
-참조 [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md)합니다.
+See [BEGIN_COLUMN_MAP](../../data/oledb/begin-column-map.md).
 
 ### <a name="define_command"></a> DEFINE_COMMAND
 
@@ -1640,9 +1633,9 @@ END_COLUMN_MAP()
 
 **헤더:** atldbcli.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)
