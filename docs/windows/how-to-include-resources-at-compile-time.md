@@ -20,15 +20,17 @@ helpviewer_keywords:
 - directories [C++], specifying include paths for resources
 - include files [C++], specifying for resources
 - resources [C++], including in projects
+- symbols [C++], finding
+- resources [C++], searching for symbols
 ms.assetid: 357e93c2-0a29-42f9-806f-882f688b8924
-ms.openlocfilehash: 52145d2a656a7cac0d07a43ceaf298fbebb5ad40
-ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
+ms.openlocfilehash: 8df5a8ee6583b1e9f5c50a428b69babb0d56961b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55764079"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152380"
 ---
-# <a name="how-to-include-resources-at-compile-time"></a>방법: 컴파일 타임에 리소스 포함
+# <a name="how-to-include-resources-at-compile-time-c"></a>방법: (C + +) 컴파일 타임에 리소스 포함
 
 일반적으로 쉽고 편리 하 게 하나의 리소스 스크립트 (.rc) 파일에서 모든 리소스의 기본 배열을 사용 하는 것이 것입니다. 그러나 하면 리소스를 추가할 수 다른 파일의 현재 프로젝트 컴파일 타임에 나열 합니다 **컴파일 시간 지시문** 상자에 **리소스 내용** 대화 상자.
 
@@ -42,7 +44,7 @@ ms.locfileid: "55764079"
 
 - 여러 다른 프로젝트에서 사용 중인 또는 소스 코드 버전 제어 시스템의 일부분이 며 따라서 수정 모든 프로젝트에 적용 됩니다 중앙 위치에 있어야 하는 리소스를 포함 합니다.
 
-- 사용자 지정 형식인 리소스(예: RCDATA 리소스)를 포함하기 위해서입니다. RCDATA 리소스에는 특별한 요구 사항이 있을 수 있습니다. 예를 들어 nameID 필드의 값으로 식을 사용할 수 없습니다. 자세한 내용은 Windows SDK 설명서를 참조 하세요.
+- 사용자 지정 형식인 리소스(예: RCDATA 리소스)를 포함하기 위해서입니다. RCDATA 리소스에는 특별한 요구 사항이 있을 수 있습니다. 예를 들어 nameID 필드의 값으로 식을 사용할 수 없습니다. 자세한 내용은 Windows SDK 설명서를 참조하세요.
 
 섹션에서는 이러한 조건 중 하나라도 충족 하는 기존.rc 파일에 있는 경우 하나에 섹션을 배치 해야 하거나 별도.rc 파일 및 사용 하 여 프로젝트에 포함 된 **리소스 내용** 대화 상자. 합니다 *Projectname*.rc2 파일을 새 프로젝트의 \res 하위 디렉터리에 생성이 용도로 사용 됩니다.
 
@@ -59,7 +61,7 @@ ms.locfileid: "55764079"
 > [!NOTE]
 > 이러한 텍스트 상자에 항목으로 표시.rc 파일에 나타나는 `TEXTINCLUDE 1`, `TEXTINCLUDE 2`, 및 `TEXTINCLUDE 3` 각각. 자세한 내용은 참조 하세요. [TN035: Visual c + +를 사용 하 여 여러 리소스 파일과 헤더 파일을 사용 하 여](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)입니다.
 
-사용 하 여 리소스 파일에 변경 내용을 적용 하 고 나면 합니다 **리소스 내용** .rc 파일을 닫은 다음 다시 변경 내용을 적용 하려면 필요한 대화 상자. 자세한 내용은 [컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)합니다.
+사용 하 여 리소스 파일에 변경 내용을 적용 하 고 나면 합니다 **리소스 내용** .rc 파일을 닫은 다음 다시 변경 내용을 적용 하려면 필요한 대화 상자.
 
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) .NET Framework Developer's Guide에 있습니다.
 
@@ -73,11 +75,27 @@ ms.locfileid: "55764079"
 
    이런 식으로 포함된 파일의 리소스는 컴파일 시간에 실행 파일의 일부가 됩니다. 프로젝트의 주.rc 파일에서 작업할 때 직접 편집 하거나 수정 하기 위해 사용할 수 없습니다. 개별적으로 포함 된.rc 파일을 엽니다. 포함 되었지만.rc 확장명이 없는 모든 파일은 리소스 편집기에서 편집할 수 없습니다.
 
-## <a name="to-specify-include-directories-for-a-specific-resource-rc-file-c"></a>지정 하는 특정 리소스 (.rc 파일)에 대 한 디렉터리를 포함 (c + +)
+## <a name="to-specify-include-directories-for-a-specific-resource-rc-file"></a>지정 하는 특정 리소스 (.rc 파일)에 대 한 디렉터리를 포함 합니다.
 
 1. 솔루션 탐색기에서.rc 파일을 마우스 오른쪽 단추로 누르고 **속성** 바로 가기 메뉴에서.
 
 1. 에 **속성 페이지** 대화 상자를 선택 합니다 **리소스** 왼쪽된 창에서 노드 추가 포함 디렉터리를 지정 합니다는 **추가 포함 디렉터리**속성입니다.
+
+## <a name="to-find-symbols-in-resources"></a>리소스에서 기호를 찾으려면
+
+1. **편집할** 메뉴 선택 **기호 찾기**합니다.
+
+1. 에 [기호 찾기 대화 상자](/visualstudio/ide/go-to)를 **찾을 내용** 상자, 드롭 다운 목록에서 이전에 검색 문자열을 선택 하거나 (예: ID_ACCEL1) 찾으려는 액셀러레이터 키를 입력 합니다.
+
+   > [!TIP]
+   > 사용 하도록 [정규식](/visualstudio/ide/using-regular-expressions-in-visual-studio) 검색을 사용 해야 합니다는 [파일에서에서 찾기 명령](/visualstudio/ide/reference/find-command) 에서 합니다 **편집** 대신 메뉴는 **기호 찾기**명령입니다. 정규식을 사용 하도록 설정 하려면 해야는 **사용: Regular Expressions** 확인란을 선택 합니다 [찾기 대화 상자](/visualstudio/ide/finding-and-replacing-text)합니다. 오른쪽의 오른쪽 화살표 단추를 선택할 수 있습니다 합니다 **찾을 내용** 정규 검색 식의 목록을 표시 하려면 상자입니다. 검색 텍스트로 대체 식을이 목록에서를 선택 하면 합니다 **찾을 내용** 상자입니다.
+
+1. 중 하나를 선택 합니다 **찾을** 옵션입니다.
+
+1. **다음 찾기**를 선택합니다.
+
+> [!NOTE]
+> 문자열, 액셀러레이터 또는 이진 리소스에서 기호를 검색할 수 없습니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -87,5 +105,4 @@ Win32
 
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)<br/>
-[TN035: Visual c + +에서 여러 리소스 파일과 헤더 파일 사용](../mfc/tn035-using-multiple-resource-files-and-header-files-with-visual-cpp.md)<br/>
 [기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
