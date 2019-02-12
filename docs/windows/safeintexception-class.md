@@ -72,7 +72,7 @@ SafeIntException(
 
 ### <a name="remarks"></a>설명
 
-가능한 *코드*값은 Safeint.h 파일에 정의되어 있습니다. 편의를 위한 가능한 값도 여기에 나와 있습니다.
+가능한 *코드* 값은 Safeint.h 파일에 정의되어 있습니다. 편의를 위한 가능한 값도 여기에 나와 있습니다.
 
 - `SafeIntNoError`
 - `SafeIntArithmeticOverflow`
