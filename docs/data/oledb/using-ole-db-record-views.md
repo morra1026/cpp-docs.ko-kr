@@ -27,9 +27,9 @@ COleDBRecordView myRecordView;
 CRowset<CAccessor<CProductAccessor>> myRowSet = myRecordView.OnGetRowset();
 ```
 
-뷰는 대화 상자의 컨트롤에 `CRowset` 개체의 필드를 표시합니다. `COleDBRecordView` 개체에서는 DDX(대화 상자 데이터 교환) 및 `CRowset`에 내장된 탐색 기능( `MoveFirst`, `MoveNext`, `MovePrev` 및 `MoveLast`)을 사용하여 폼의 컨트롤과 행 집합의 필드 사이에 데이터 이동을 자동화합니다. `COleDBRecordView`는 레코드 뷰가 사용자 인터페이스를 업데이트할 수 있도록 행 집합에서 사용자의 위치를 추적하고, 다른 레코드로 이동하기 전에 현재 레코드를 업데이트하는 [OnMove](../../mfc/reference/coledbrecordview-class.md#onmove) 메서드도 지원합니다.
+뷰는 대화 상자의 컨트롤에 `CRowset` 개체의 필드를 표시합니다. `COleDBRecordView` 개체에서는 DDX(대화 상자 데이터 교환) 및 `CRowset`에 내장된 탐색 기능(`MoveFirst`, `MoveNext`, `MovePrev` 및 `MoveLast`)을 사용하여 폼의 컨트롤과 행 집합의 필드 사이에 데이터 이동을 자동화합니다. `COleDBRecordView`는 레코드 뷰가 사용자 인터페이스를 업데이트할 수 있도록 행 집합에서 사용자의 위치를 추적하고, 다른 레코드로 이동하기 전에 현재 레코드를 업데이트하는 [OnMove](../../mfc/reference/coledbrecordview-class.md#onmove) 메서드도 지원합니다.
 
-DDX 함수를 `COleDbRecordView`와 사용하여 데이터베이스 레코드 집합의 데이터를 직접 구해서 대화 상자 컨트롤에 표시할 수 있습니다. `DDX_FieldText` 같은 **DDX_Field** * 함수가 아닌 `DDX_Text` 같은 **DDX_** * 메서드를 `COleDbRecordView`와 함께 사용해야 합니다.
+DDX 함수를 `COleDbRecordView`와 사용하여 데이터베이스 레코드 집합의 데이터를 직접 가져와서 대화 상자 컨트롤에 표시할 수 있습니다. `DDX_FieldText` 같은 **DDX_Field** * 함수가 아닌 `DDX_Text` 같은 **DDX_** * 메서드를 `COleDbRecordView`와 함께 사용해야 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
