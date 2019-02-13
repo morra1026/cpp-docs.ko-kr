@@ -1,4 +1,4 @@
-﻿---
+---
 title: COM 및 ATL 소개
 ms.custom: index-page
 ms.date: 11/04/2016
@@ -29,11 +29,11 @@ ms.locfileid: "50620742"
 ## <a name="related-sections"></a>관련 단원
 
 [구성 요소 개체 모델](/windows/desktop/com/the-component-object-model)<br/>
-Com Windows SDK 자료
+COM을 구성하는 Windows SDK
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
 [ATL 클래스 개요](../atl/atl-class-overview.md)<br/>
-ATL 클래스에 대 한 링크 및 참조 정보를 제공합니다.
+ATL 클래스에 대한 참조 정보와 링크를 제공합니다.
 

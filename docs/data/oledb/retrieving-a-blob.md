@@ -15,7 +15,7 @@ ms.locfileid: "51556545"
 ---
 # <a name="retrieving-a-blob"></a>BLOB 검색
 
-다양 한 방법으로 이진 대형 개체 (BLOB)를 검색할 수 있습니다. 사용할 수 있습니다 `DBTYPE_BYTES` 같은 인터페이스를 사용 하거나 바이트의 시퀀스로 BLOB 검색 `ISequentialStream`합니다. 자세한 내용은 [BLOB 및 OLE 개체](https://docs.microsoft.com/previous-versions/windows/desktop/ms711511(v=vs.85)) 에 **OLE DB Programmer's Reference**합니다.
+여러 방법으로 BLOB(이진 대형 개체)를 검색할 수 있습니다. `DBTYPE_BYTES`를 사용하여 BLOB를 바이트의 시퀀스로 검색하거나 `ISequentialStream` 같은 인터페이스를 사용할 수 있습니다. 자세한 내용은 **OLE DB Programmer's Reference**에서 [BLOBS and OLE Objects](https://docs.microsoft.com/previous-versions/windows/desktop/ms711511(v=vs.85))를 참조하십시오.
 
 다음 코드를 사용 하 여 BLOB을 검색 하는 방법을 보여 줍니다 `ISequentialStream`합니다. 매크로 [BLOB_ENTRY](../../data/oledb/blob-entry.md) 인터페이스 및 인터페이스에 사용 되는 플래그를 지정할 수 있습니다. 테이블을 연 후 코드는 다음과 같이 호출 됩니다. `Read` 에 반복적으로 `ISequentialStream` BLOB에서 바이트를 읽을 수 있습니다. 호출 `Release` 호출 하기 전에 인터페이스 포인터를 삭제 하기 위해 `MoveNext` 다음 레코드를 가져오려고 합니다.
 
@@ -31,7 +31,7 @@ END_COLUMN_MAP()
 };
 ```
 
-그런 다음 다음 코드에 의해 사용:
+그런 후 다음 코드에서 사용됩니다.
 
 ```cpp
 CTable<CAccessor<CCategories>> categories;

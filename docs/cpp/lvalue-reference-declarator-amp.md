@@ -71,7 +71,7 @@ int main()
 Bill is 40
 ```
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [참조](../cpp/references-cpp.md)<br/>
 [참조 형식 함수 인수](../cpp/reference-type-function-arguments.md)<br/>

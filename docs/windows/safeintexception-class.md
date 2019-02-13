@@ -20,10 +20,10 @@ ms.locfileid: "50566662"
 ---
 # <a name="safeintexception-class"></a>SafeIntException 클래스
 
-합니다 `SafeInt` 클래스는 `SafeIntException` 수학 작업을 완료할 수 없습니다는 이유를 확인 하려면.
+`SafeInt` 클래스는 `SafeIntException`을 사용하여 수학 연산을 완료할 수 없는 이유를 확인합니다.
 
 > [!NOTE]
-> 이 라이브러리의 최신 버전에 위치한 [ https://github.com/dcleblanc/SafeInt ](https://github.com/dcleblanc/SafeInt)합니다.
+> 이 라이브러리의 최신 버전은 [https://github.com/dcleblanc/SafeInt](https://github.com/dcleblanc/SafeInt)에 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,9 +41,9 @@ class SafeIntException;
 
 ## <a name="remarks"></a>설명
 
-합니다 [SafeInt 클래스](../windows/safeint-class.md) 사용 하는 유일한 클래스는 `SafeIntException` 클래스입니다.
+[SafeInt 클래스](../windows/safeint-class.md)는 `SafeIntException` 클래스를 사용하는 유일한 클래스입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `SafeIntException`
 
@@ -51,7 +51,7 @@ class SafeIntException;
 
 **헤더:** safeint.h
 
-**Namespace:** msl:: utilities
+**네임스페이스:** msl::utilities
 
 ## <a name="safeintexception"></a>Safeintexception:: Safeintexception
 
@@ -68,11 +68,11 @@ SafeIntException(
 ### <a name="parameters"></a>매개 변수
 
 *코드*<br/>
-[in] 발생 한 오류를 설명 하는 열거형된 데이터 값입니다.
+[in] 발생한 오류를 설명하는 열거형 데이터 값입니다.
 
 ### <a name="remarks"></a>설명
 
-가능한 값에 대 한 *코드* Safeint.h 파일에 정의 됩니다. 편의 위해 가능한 값도 여기에 나와 있습니다.
+가능한 *코드* 값은 Safeint.h 파일에 정의되어 있습니다. 편의를 위한 가능한 값도 여기에 나와 있습니다.
 
 - `SafeIntNoError`
 - `SafeIntArithmeticOverflow`
