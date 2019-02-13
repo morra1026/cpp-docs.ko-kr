@@ -1,4 +1,4 @@
-﻿---
+---
 title: 국제화 전략
 ms.date: 11/04/2016
 helpviewer_keywords:

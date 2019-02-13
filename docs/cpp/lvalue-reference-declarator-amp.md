@@ -1,4 +1,4 @@
----
+﻿---
 title: 'Lvalue 참조 선언 자: &amp;'
 ms.date: 11/04/2016
 f1_keywords:

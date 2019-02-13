@@ -1,5 +1,5 @@
 ﻿---
-title: Win32 프로젝트 마법사, 응용 프로그램 설정
+title: Win32 프로젝트 마법사, 애플리케이션 설정
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.win32.appset
@@ -14,11 +14,11 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50592675"
 ---
-# <a name="application-settings-win-32-project-wizard"></a>Win32 프로젝트 마법사, 응용 프로그램 설정
+# <a name="application-settings-win-32-project-wizard"></a>Win32 프로젝트 마법사, 애플리케이션 설정
 
 마법사의 이 페이지를 사용하여 Win32 프로젝트에 대한 옵션을 설정 합니다.  
 
-## <a name="application-type"></a>응용 프로그램 유형
+## <a name="application-type"></a>애플리케이션 유형
 
 지정된 응용 프로그램 유형을 만듭니다.  
 
