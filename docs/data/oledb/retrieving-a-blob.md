@@ -1,4 +1,4 @@
----
+﻿---
 title: BLOB 검색
 ms.date: 10/24/2018
 helpviewer_keywords:
