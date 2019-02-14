@@ -53,7 +53,7 @@ class SafeIntException;
 
 **네임스페이스:** msl::utilities
 
-## <a name="safeintexception"></a>Safeintexception:: Safeintexception
+## <a name="safeintexception"></a>Safeintexception::Safeintexception
 
 `SafeIntException` 개체를 만듭니다.
 
