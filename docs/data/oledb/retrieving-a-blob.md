@@ -17,7 +17,7 @@ ms.locfileid: "51556545"
 
 여러 방법으로 BLOB(이진 대형 개체)를 검색할 수 있습니다. `DBTYPE_BYTES`를 사용하여 BLOB를 바이트의 시퀀스로 검색하거나 `ISequentialStream` 같은 인터페이스를 사용할 수 있습니다. 자세한 내용은 **OLE DB Programmer's Reference**에서 [BLOBS and OLE Objects](https://docs.microsoft.com/previous-versions/windows/desktop/ms711511(v=vs.85))를 참조하십시오.
 
-다음 코드를 사용 하 여 BLOB을 검색 하는 방법을 보여 줍니다 `ISequentialStream`합니다. 매크로 [BLOB_ENTRY](../../data/oledb/blob-entry.md) 인터페이스 및 인터페이스에 사용 되는 플래그를 지정할 수 있습니다. 테이블을 연 후 코드는 다음과 같이 호출 됩니다. `Read` 에 반복적으로 `ISequentialStream` BLOB에서 바이트를 읽을 수 있습니다. 호출 `Release` 호출 하기 전에 인터페이스 포인터를 삭제 하기 위해 `MoveNext` 다음 레코드를 가져오려고 합니다.
+다음 코드는 `ISequentialStream`을 사용하여 BLOB를 검색하는 방법에 대해 보여 줍니다. 매크로 [BLOB_ENTRY](../../data/oledb/blob-entry.md)를 사용하면 인터페이스와 인터페이스에 사용되는 플래그를 지정할 수 있습니다. 테이블을 연 후 코드는 `ISequentialStream`에서 `Read`를 반복 호출하여 BLOB의 바이트를 읽습니다. 코드는 다음 레코드를 구하는 `MoveNext`를 호출하기 전에 `Release`를 호출하여 인터페이스 포인터를 삭제합니다.
 
 ```cpp
 class CCategories
@@ -51,7 +51,7 @@ while (categories.MoveNext() == S_OK)
 }
 ```
 
-BLOB 데이터를 처리 하는 매크로 대 한 자세한 내용은 참조 하세요. **열 맵 매크로** 에 [매크로 및 OLE DB 소비자 템플릿에 대 한 전역 함수](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)합니다.
+BLOB 데이터를 처리하는 매크로에 대한 자세한 내용은 [OLE DB 소비자 템플릿에 대한 매크로 및 전역 함수](../../data/oledb/macros-and-global-functions-for-ole-db-consumer-templates.md)의 **열 맵 매크로**를 참조하십시오.
 
 ## <a name="see-also"></a>참고 항목
 
