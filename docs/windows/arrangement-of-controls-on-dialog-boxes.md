@@ -3,6 +3,7 @@ title: 대화 상자 (c + +)에 컨트롤 배치 | Microsoft Docs
 ms.date: 11/04/2016
 f1_keywords:
 - vc.editors.dialog.grouping
+- vc.editors.dialog.combo
 helpviewer_keywords:
 - controls [C++], positioning
 - dialog box controls [C++], placement
@@ -57,13 +58,34 @@ helpviewer_keywords:
 - Tabstop property for controls
 - controls [C++], focus
 - dialog box controls [C++], tab order
+- Dialog Editor [C++], selecting controls
+- dominant controls
+- dialog box controls [C++], selecting in editor
+- controls [C++], selecting
+- size, controls
+- controls [C++], dominant
+- controls [C++], removing from groups
+- Dialog Editor [C++], dominant control
+- Size to Content command
+- size, controls
+- text, autosizing controls to fit text
+- controls [C++], sizing
+- Make Same Size command
+- combo boxes, sizing
+- list controls [C++], scroll bar width
+- CListBox::SetHorizontalExtent
+- controls [C++], scroll bar
+- scroll bars [C++], displaying in controls
+- horizontal scroll bar width
+- CListBox class, scroll bar width
+- scroll bars [C++], width
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
-ms.openlocfilehash: 210fbf8e062b4dd8c469f9c40a015bbc19bc2843
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: 99667898428fe9532d59277bfedafd24927304dc
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152744"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264883"
 ---
 # <a name="arrangement-of-controls-on-dialog-boxes-c"></a>대화 상자 (c + +)에 컨트롤 배치
 
@@ -116,7 +138,7 @@ ms.locfileid: "56152744"
 
 안내선과 컨트롤의 간격을 결정 하는 눈금자의 눈금은 대화 상자 단위 (Dlu)로 정의 됩니다. DLU는 일반적으로 8 포인트 MS Shell Dlg 대화 상자 글꼴 크기를 기반으로 합니다. 가로 DLU는 4로 나눈 대화 상자 글꼴의 평균 너비입니다. 세로 DLU은 평균 8로 나눈 글꼴 높이입니다.
 
-#### <a name="to-size-a-group-of-controls-with-guides"></a>그룹 가이드를 사용 하 여 컨트롤의 크기
+가이드를 사용 하 여 컨트롤의 그룹 크기:
 
 1. 안내선에 컨트롤 (또는 컨트롤)의 한 쪽을 맞춥니다.
 
@@ -126,7 +148,7 @@ ms.locfileid: "56152744"
 
 1. 컨트롤의 크기는 (또는 컨트롤) 가이드 중 하나를 이동 합니다.
 
-#### <a name="to-change-the-intervals-of-the-tick-marks"></a>눈금 표시의 간격을 변경 하려면
+눈금 표시의 간격을 변경:
 
 1. **형식** 메뉴 선택 **안내선 설정**합니다.
 
@@ -136,32 +158,23 @@ ms.locfileid: "56152744"
 
 안내선의 맞춤 효과 사용 하지 않도록 설정 하려면 마우스와 함께에서 특수 키를 사용할 수 있습니다. 사용 하는 **Alt** 키 선택이 가이드의 맞춤 효과 사용 하지 않도록 설정 합니다. 지침을 사용 하 여 이동 합니다 **Shift** 키 가이드를 사용 하 여 이동 모눈된 컨트롤을 방지 합니다.
 
-#### <a name="to-disable-the-snapping-effect-of-the-guides"></a>안내선의 맞춤 효과 사용 하지 않도록 설정
+- 안내선의 맞춤 효과 해제 하려면 컨트롤 채로 끕니다 합니다 **Alt** 키입니다.
 
-누른 채 컨트롤을 끌어 합니다 **Alt** 키입니다.
+- 안내선 맞춰진된 컨트롤을 이동 하지 않고 이동할 가이드 채로 끕니다 합니다 **Shift** 키입니다.
 
-#### <a name="to-move-guides-without-moving-the-snapped-controls"></a>안내선 맞춰진된 컨트롤을 이동 하지 않고 이동 하려면
-
-이 가이드를 누른 채 끌어서 합니다 **Shift** 키입니다.
-
-#### <a name="to-turn-off-the-guides"></a>가이드를 사용 하지 않으려면
-
-1. **형식** 메뉴 선택 **안내선 설정**합니다.
-
-1. 에 **안내선 설정** 대화 상자의 **레이아웃 안내선**를 선택 **None**합니다.
+- 가이드에서 해제 하는 **형식** 메뉴 선택 **안내선 설정**합니다. 그런 다음 합니다 **안내선 설정** 대화 상자의 **레이아웃 안내선**를 선택 **None**합니다.
 
    > [!NOTE]
    > 눈금자를 두 번 클릭할 수도 있습니다는 **안내선 설정** 대화 상자.
 
-\- 또는 -
-
-에 **형식** 메뉴에서 **안내선 설정/해제**합니다.
+> [!TIP]
+> 안내선을 해제 하려면 바로 가기에는 합니다 **형식** 메뉴에서 **안내선 설정/해제**합니다.
 
 ### <a name="modify-the-layout-grid"></a>레이아웃 모눈 수정
 
 배치 또는 대화 상자에서 컨트롤 정렬 하는 경우에 보다 정확한 위치에 대 한 레이아웃 모눈을 사용할 수 있습니다. 표에서 켜져 컨트롤 "에 맞출" 그리드의 점선은 자석 처럼 나타납니다. 이 "눈금에 맞춤" 기능을 켜고 끄는 하 고 레이아웃 표 형태 셀의 크기를 변경할 수 있습니다.
 
-#### <a name="to-turn-the-layout-grid-on-or-off"></a>레이아웃 모눈 켜기 / 끄기를
+레이아웃 모눈을 켜거나 끕니다 하:
 
 1. **형식** 메뉴 선택 **안내선 설정**합니다.
 
@@ -169,11 +182,120 @@ ms.locfileid: "56152744"
 
    개별 메서드는 눈금을 제어할 수 있습니다 **대화 상자** 사용 하 여 편집기 창을 **눈금 설정/해제** 단추를 [대화 상자 편집기 도구 모음](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)합니다.
 
-#### <a name="to-change-the-size-of-the-layout-grid"></a>레이아웃 모눈의 크기를 변경 하려면
+레이아웃 모눈의 크기를 변경 합니다.
 
 1. **형식** 메뉴 선택 **안내선 설정**합니다.
 
 1. 에 **안내선 설정** 대화 상자에서 표의 셀에 대 한 Dlu 높이 너비를 입력 합니다. 최소 높이 또는 너비는 4 개의 Dlu입니다.
+
+## <a name="selecting-controls"></a>컨트롤 선택
+
+컨트롤 크기를 선택, 정렬, 이동, 복사 또는 삭제할 수 및 다음 작업을 완료 합니다. 대부분의 경우에서에서 크기 조정 및 맞춤 도구를 사용 하려면 둘 이상의 컨트롤을 선택 해야 합니다 [대화 상자 편집기 도구 모음](../windows/showing-or-hiding-the-dialog-editor-toolbar.md)합니다.
+
+컨트롤이 선택 되는 음영 처리 된 주위에 테두리가 실선 (활성) 또는 비어 있는 (비활성)는 제곱 작은 "크기 조정 핸들을" 하는 경우 선택 테두리에 표시 합니다. 여러 컨트롤을 선택 하면 기준 컨트롤에 단색 크기 조정 핸들 있고 다른 선택된 된 컨트롤이 모두 속이 빈 크기 조정 핸들입니다.
+
+크기를 조정 하거나 여러 개의 컨트롤을 정렬 하는 경우는 **대화** 편집기 "기준 컨트롤"을 사용 하 여 다른 컨트롤의 크기와 정렬 하는 방법을 확인 하려면. 기본적으로 주요 컨트롤에는 선택한 첫 번째 컨트롤이입니다.
+
+### <a name="to-select-multiple-controls"></a>여러 컨트롤을 선택 하려면
+
+1. 에 [도구 상자 창](/visualstudio/ide/reference/toolbox)를 선택 합니다 **포인터** 도구입니다.
+
+1. 선택을 하려면 다음 단계 중 하나를 사용 합니다.
+
+   - 대화 상자에서 선택 하려는 컨트롤 주위의 선택 상자에 대 한 포인터를 끕니다. 마우스 단추를 놓으면 모든 내부 및 선택 상자는 선택한 교차 제어 합니다.
+
+   - 누른 합니다 **Shift** 키 및 선택 영역에 포함 하려는 컨트롤을 선택 합니다.
+
+   - 누른 합니다 **Ctrl** 키 및 선택 영역에 포함 하려는 컨트롤을 선택 합니다.
+
+### <a name="to-remove-a-control-from-a-group-of-selected-controls-or-to-add-a-control-to-a-group-of-selected-controls"></a>선택한 컨트롤의 그룹에서 컨트롤을 제거 하려면 또는 그룹 선택된 된 컨트롤에 컨트롤을 추가 하려면
+
+선택한 컨트롤의 그룹을 사용 하 여 길게 누른 합니다 **Shift** 키를 기존 선택 항목에 추가 하거나 제거할 하려는 컨트롤을 선택 합니다.
+
+   > [!NOTE]
+   > 누른 합니다 **Ctrl** 키 및 선택 영역 내에 있는 컨트롤을 선택 하면 선택에서 기준 컨트롤을 제어 하는 확인 됩니다.
+
+### <a name="to-specify-the-dominant-control"></a>기준 컨트롤 지정
+
+누른 합니다 **Ctrl** 키를 크기와 다른 컨트롤의 위치를 정하는 데 사용 하려는 컨트롤을 선택 *첫 번째*입니다.
+
+> [!NOTE]
+> 기준 컨트롤의 크기 조정 핸들은 하위 컨트롤의 핸들은 속이 빈 실선입니다. 모든 크기 조정 이나 맞춤 기준 컨트롤을 기반으로 합니다.
+
+### <a name="to-change-the-dominant-control"></a>기준 컨트롤을 변경 하려면
+
+1. 현재 선택된 된 컨트롤이 모두 외부를 클릭 하 여 현재 선택을 모두 취소 합니다.
+
+1. 다른 컨트롤을 먼저 선택 하면 이전 절차를 반복 합니다.
+
+## <a name="sizing-controls"></a>컨트롤 크기 조정
+
+컨트롤의 크기를 조정 하려면 크기 조정 핸들을 사용 합니다. 크기 조정 핸들의 포인터가 셰이프 컨트롤을 조정할 수 있는 방향을 가리키도록 변경 됩니다. 현재 크기 조정 핸들은 실선입니다. 크기 조정 핸들을 속이 빈 경우 컨트롤이 해당 축을 따라 크기 조정할 수 없습니다.
+
+또한 가이드 또는 여백 컨트롤 스냅 하 여 컨트롤의 크기를 변경할 수 있습니다 또는 하나 이동 하 여 기본 컨트롤 및 다른에서 가이드입니다.
+
+### <a name="to-size-an-individual-control"></a>개별 컨트롤의 크기
+
+1. 컨트롤을 선택 합니다.
+
+1. 컨트롤의 크기를 변경 하려면 크기 조정 핸들을 끕니다.
+
+   - 위와 옆에 있는 크기 조정 핸들 가로 또는 세로 크기를 변경 합니다.
+
+   - 모퉁이에 크기 조정 핸들 가로 및 세로 크기를 변경합니다.
+
+   > [!TIP]
+   > 누른 여 한 번에 하나의 대화 상자 단위 (DLU) 컨트롤을 조정할 수 있습니다는 **Shift** 키 및 사용 하 여는 **오른쪽 화살표** 하 고 **아래쪽 화살표** 키입니다.
+
+### <a name="to-automatically-size-a-control-to-fit-the-text-within-it"></a>자동으로 그 텍스트에 맞게 컨트롤의 크기
+
+선택 **콘텐츠 크기를 조정** 에서 합니다 **형식** 메뉴 또는 컨트롤을 마우스 오른쪽 단추로 클릭 하 고 선택 **콘텐츠 크기를 조정** 바로 가기 메뉴에서.
+
+### <a name="to-make-controls-the-same-width-height-or-size"></a>확인 하기 위해 동일한 너비, 높이 또는 크기 제어
+
+기준 컨트롤의 크기를 기준으로 하는 컨트롤 그룹의 크기를 조정할 수 있습니다.
+
+1. 크기를 조정 하려면 컨트롤을 선택 합니다.
+
+   시리즈의 처음 선택 된 컨트롤에는 주요 컨트롤이입니다. 그룹에 있는 컨트롤의 최종 크기 기준 컨트롤의 크기에 따라 달라 집니다.
+
+1. **형식** 메뉴 선택 **같은 크기로**를 선택한 **둘 다**를 **높이**, 또는 **너비**합니다.
+
+### <a name="to-set-the-size-of-the-combo-box-and-its-drop-down-list"></a>상자 및 드롭다운 목록의 콤보의 크기를 설정 하려면
+
+대화 상자에 추가할 때 콤보 상자 크기. 또한 드롭다운 목록 상자의 크기를 지정할 수 있습니다. 자세한 내용은 [콤보 상자 컨트롤에 추가 값](../windows/adding-values-to-a-combo-box-control.md)합니다.
+
+#### <a name="to-size-a-combo-box"></a>콤보 상자 크기
+
+1. 대화 상자에서 콤보 상자 컨트롤을 선택 합니다.
+
+   처음에 오른쪽 및 왼쪽 크기 조정 핸들만 활성화 됩니다.
+
+1. 콤보 상자의 너비를 설정 하려면 크기 조정 핸들을 사용 합니다.
+
+또한 콤보 상자의 드롭다운 부분이의 세로 크기를 설정할 수 있습니다.
+
+#### <a name="to-set-the-size-of-the-combo-box-drop-down-list"></a>드롭다운 목록 상자 콤보의 크기를 설정 하려면
+
+1. 콤보 상자의 오른쪽에 있는 드롭다운 화살표 단추를 선택 합니다.
+
+   ![MFC 프로젝트에서 콤보 상자에서 화살표](../mfc/media/vccomboboxarrow.gif "vcComboBoxArrow")
+
+   드롭다운 목록에서 영역이 확장을 사용 하 여 콤보 상자의 크기를 표시 하려면 해당 컨트롤의 개요입니다.
+
+1. 드롭다운 목록에서 영역의 초기 크기를 변경 하려면 아래쪽 크기 조정 핸들을 사용 합니다.
+
+   ![콤보&#45;MFC 프로젝트의 상자 크기 조정](../mfc/media/vccomboboxsizing.gif "vcComboBoxSizing")
+
+1. 콤보 상자의 드롭다운 목록에서 일부를 다시 드롭다운 화살표를 선택 합니다.
+
+### <a name="to-set-the-width-of-a-horizontal-scroll-bar-and-make-it-appear"></a>가로 스크롤 막대의 너비를 설정 하 고 표시 되도록 하려면
+
+MFC 클래스를 사용 하 여 대화 상자에 가로 스크롤 막대를 사용 하 여 목록 상자에 추가한 경우 스크롤 막대를 응용 프로그램에 자동으로 나타나지 않습니다.
+
+호출 하 여 광범위 한 요소에 대 한 최대 너비를 설정할 [CListBox::SetHorizontalExtent](../mfc/reference/clistbox-class.md#sethorizontalextent) 코드에서.
+
+   이 값을 설정 하지 않고 스크롤 막대 표시 되지도 목록 상자의 항목 상자 보다 넓을 경우.
 
 ## <a name="group-radio-buttons-on-a-dialog-box"></a>대화 상자에 라디오 단추 그룹화
 
@@ -208,29 +330,22 @@ ms.locfileid: "56152744"
 
 1. 이제 선택된 상태로 표시할 라디오 단추를 지정하도록 코드를 수정할 수 있습니다. 예를 들어 `m_radioBox1 = 0;` 그룹의 첫 번째 라디오 단추를 선택 합니다.
 
-## <a name="align-groups-of-controls"></a>컨트롤 그룹 맞춤
+## <a name="to-align-groups-of-controls"></a>컨트롤의 그룹에 맞게
 
-다음 절차에서는 컨트롤을 정렬 하는 방법을 보여 줍니다.
-
-### <a name="to-align-groups-of-controls"></a>컨트롤의 그룹에 맞게
-
-1. [컨트롤 선택](../windows/selecting-multiple-controls.md) 정렬 해야 합니다. 기준 컨트롤을 먼저 되도록 하려는 컨트롤을 선택 해야 하거나 맞춤을 실행 하거나 명령 크기를 조정 하기 전에 주요 컨트롤 수를 설정 합니다.
+1. 정렬 하려는 컨트롤을 선택 합니다. 기준 컨트롤을 먼저 되도록 하려는 컨트롤을 선택 해야 하거나 맞춤을 실행 하거나 명령 크기를 조정 하기 전에 주요 컨트롤 수를 설정 합니다.
 
    컨트롤 그룹의 최종 위치 기준 컨트롤의 위치에 따라 달라 집니다. 기준 컨트롤 선택에 대 한 자세한 내용은 참조 하세요. [기준 컨트롤 지정](../windows/specifying-the-dominant-control.md)합니다.
 
 1. **형식** 메뉴 선택 **Align**, 맞춤 다음 방법 중 하나를 선택:
 
-   - `Lefts`: 선택한 컨트롤을 왼쪽으로 맞춥니다.
-
-   - `Centers`: 선택한 컨트롤의 가운데 일렬로 가로로 맞춥니다.
-
-   - `Rights`: 선택한 컨트롤의 오른쪽 면 일렬로 정렬 합니다.
-
-   - `Tops`: 위쪽 가장자리를 따라 선택된 된 컨트롤에 맞춥니다.
-
-   - `Middles`: 선택한 컨트롤의 중간 일렬로 세로로 맞춥니다.
-
-   - `Bottoms`: 아래쪽 가장자리를 따라 선택된 된 컨트롤에 맞춥니다.
+   |값|설명|
+   |-----|-----------|
+   |`Lefts`|선택한 컨트롤을 왼쪽으로 맞춥니다.|
+   |`Centers`|선택한 컨트롤의 가운데 일렬로 가로로 맞춥니다.|
+   |`Rights`|선택한 컨트롤의 오른쪽 면 일렬로 정렬합니다.|
+   |`Tops`|위쪽 가장자리를 따라 선택한 컨트롤을 맞춥니다.|
+   |`Middles`|선택한 컨트롤의 중간 일렬로 세로로 맞춥니다.|
+   |`Bottoms`|아래쪽 가장자리를 따라 선택한 컨트롤을 맞춥니다.|
 
 ### <a name="to-even-the-spacing-between-controls"></a>컨트롤 사이의 간격을 일정
 
@@ -265,55 +380,6 @@ ms.locfileid: "56152744"
    - `Bottom`: 대화 상자의 아래쪽 가장자리를 따라 누름 단추를 배치 합니다.
 
        누름 단추 이외의 컨트롤을 선택할 위치로 영향을 받지 않습니다.
-
-## <a name="change-the-tab-order-of-controls"></a>컨트롤의 탭 순서 변경
-
-탭 순서는 순서를 **탭** 키 대화 상자 내에서 다음 컨트롤에서 입력된 포커스를 이동 합니다. 일반적으로 탭 순서는 왼쪽에서 오른쪽, 위쪽에서 대화 상자에서 아래쪽으로 진행 됩니다. 각 컨트롤에는 **Tabstop** 컨트롤에 입력 포커스가 있는지 여부를 결정 하는 속성입니다.
-
-### <a name="to-set-input-focus-for-a-control"></a>컨트롤에 대 한 입력된 포커스를 설정 하려면
-
-에 [속성 창](/visualstudio/ide/reference/properties-window)를 선택 **True** 또는 **False** 에 **Tabstop** 속성입니다.
-
-없는 컨트롤을 **Tabstop** 속성으로 설정 **True** 탭 순서의 일부가 되도록 해야 합니다. 예를 들어 탭 순서는 중요 경우 있습니다 [액세스 키 (니모닉) 정의](../windows/defining-mnemonics-access-keys.md) 캡션이 없는 컨트롤에 대 한 합니다. 관련된 컨트롤에 대 한 액세스 키를 포함 하는 정적 텍스트 바로 앞에 나와야 관련된 컨트롤 탭 순서에서입니다.
-
-> [!NOTE]
-> 겹치는 컨트롤을 포함 하는 대화 상자에서 탭 순서 변경 컨트롤이 표시 되는 방식을 변경할 수 있습니다. 탭 순서에서 나중에 제공 되는 컨트롤은 항상 탭 순서에서 앞에 겹치는 컨트롤 위에 표시 됩니다.
-
-### <a name="to-view-the-current-tab-order-for-all-controls-in-a-dialog-box"></a>대화 상자에서 모든 컨트롤에 대 한 현재 탭 순서를 보려면
-
-에 **형식** 메뉴에서 **탭 순서**합니다.
-
-\- 또는 -
-
-- 키를 눌러 **Ctrl** + **D**합니다.
-
-### <a name="to-change-the-tab-order-for-all-controls-in-a-dialog-box"></a>대화 상자에서 모든 컨트롤에 대 한 탭 순서를 변경 하려면
-
-1. 에 **형식** 메뉴에서 **탭 순서**합니다.
-
-   각 컨트롤의 왼쪽 위 모서리에 있는 숫자로 현재 탭 순서에서 해당 위치를 보여 줍니다.
-
-1. 원하는 순서 대로 각 컨트롤을 클릭 하 여 탭 순서를 설정 합니다 **탭** 키에 따라 합니다.
-
-1. 키를 눌러 **Enter** 끝내려면 **탭 순서** 모드입니다.
-
-   > [!TIP]
-   > 입력 한 후 **탭 순서** 모드를 눌러도 **Esc** 또는 **Enter** 탭 순서를 변경 하는 기능을 사용 하지 않도록 설정 합니다.
-
-### <a name="to-change-the-tab-order-for-two-or-more-controls"></a>두 개 이상 컨트롤의 탭 순서를 변경 하려면
-
-1. **형식** 메뉴 선택 **탭 순서**합니다.
-
-1. 순서 변경을 시작 위치를 지정 합니다. 먼저 누른 합니다 **Ctrl** 키 컨트롤을 선택 하 고 변경된 된 순서를 시작 하려는 항목을 선택 합니다.
-
-   예를 들어, 컨트롤의 순서를 변경 하려는 경우 `7` 를 통해 `9`를 누른 **Ctrl**를 한 컨트롤을 선택 `6` 첫 번째입니다.
-
-   > [!NOTE]
-   > 특정 컨트롤 번호를 설정 하려면 `1` (탭 순서)에서 첫 번째 컨트롤을 두 번 클릭 합니다.
-
-1. 릴리스를 **Ctrl** 키를 다음 순서에 컨트롤을 선택 합니다 **탭** 해당 지점에서 수행 하는 키입니다.
-
-1. 키를 눌러 **Enter** 끝내려면 **탭 순서** 모드입니다.
 
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
