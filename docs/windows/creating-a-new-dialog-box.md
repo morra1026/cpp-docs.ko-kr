@@ -8,15 +8,37 @@ helpviewer_keywords:
 - Dialog Editor [C++], creating dialog boxes
 - modal dialog boxes [C++], logon screens
 - logon screens
+- Test Dialog command
+- testing, dialog boxes
+- dialog boxes [C++], testing
+- dialog boxes [C++], size
+- dialog boxes [C++], positioning
 ms.assetid: 303de801-c4f8-42e1-b622-353f6423f688
-ms.openlocfilehash: 928432000fb9a6347433b78b224e15f07ce810d2
-ms.sourcegitcommit: 52c05e10b503e834c443ef11e7ca1987e332f876
+ms.openlocfilehash: a3b8143d3a70906f910a445816a188913a593e5d
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742650"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264818"
 ---
 # <a name="creating-a-dialog-box-c"></a>대화 상자 (c + +) 만들기
+
+위치 및 크기의 c + + 대화 상자, 위치 및 안에 있는 컨트롤의 크기는 대화 단위로 측정 됩니다. 개별 컨트롤 및 대화 상자에 대 한 값은 Visual Studio 상태를 선택 하면 표시줄의 오른쪽 아래에 나타납니다.
+
+대화 상자를 디자인할 때 시뮬레이션 수 및 프로그램을 컴파일하지 않고 런타임에 동작을 테스트 해야 합니다. 이 모드에서 다음 작업을 수행할 수 있습니다.
+
+- 텍스트 입력, 콤보 상자 목록에서 선택, 옵션 켜기 또는 끄기, 명령 선택
+
+- 탭 순서 테스트
+
+- 라디오 단추 또는 확인란과 같은 컨트롤의 그룹화 테스트
+
+- 대화 상자의 컨트롤에 대한 바로가기 키 테스트
+
+   > [!NOTE]
+   > 마법사를 사용하여 만든 대화 상자 코드에 대한 연결은 시뮬레이션에 포함되지 않습니다.
+
+대화 상자를 테스트할 때는 일반적으로 주 프로그램 창을 기준으로 상대적인 위치에 표시됩니다. 대화 상자를 설정한 경우 **Absolute Align** 속성을 **True**를 화면의 왼쪽 위 모퉁이 기준으로 하는 위치에 있는 대화 상자에 표시 됩니다.
 
 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
@@ -52,14 +74,23 @@ ms.locfileid: "55742650"
 > [!NOTE]
 > MFC 응용 프로그램에 대 한 사용자가 종료할 수 없습니다. 대화 상자를 만들려면 재정의 해야의 기본 동작 `OnOK` 하 고 `OnCancel` 키를 눌러 대화 상자를 닫을 여전히 수 연결된 단추를 삭제 하는 경우에 하기 때문에  **입력** 나 **Esc**합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index)합니다.
+## <a name="to-specify-the-location-and-size-of-a-dialog-box"></a>대화 상자의 크기와 위치를 지정 하려면
+
+세 가지 속성에 설정할 수 있는 합니다 [속성 창](/visualstudio/ide/reference/properties-window) 대화 상자가 화면 표시를 지정 합니다. 합니다 **Center** 속성은 부울; 값을 설정 하는 경우 **True**, 대화 상자 화면 중앙에 항상 표시 됩니다. 설정 하면 **False**를 설정할 수 있습니다 합니다 **XPos** 및 **YPos** 화면 대화 상자를 표시할 위치를 명시적으로 정의 하는 속성입니다. 위치 속성으로 정의 된 보기 영역의 왼쪽 위 모서리에서 오프셋된 값은 `{X=0, Y=0}`합니다. 위치를 기준으로 합니다 **Absolute Align** 속성: 경우 **True**, 좌표는 화면을 기준으로 하는 경우 **False**, 대화 상자를 기준으로 좌표는 소유자 창입니다.
+
+## <a name="to-test-a-dialog-box"></a>대화 상자를 테스트하려면
+
+1. 경우는 **대화 상자** 편집기가 활성 창, 메뉴 모음에서 선택 합니다 **형식** > **테스트 대화 상자**합니다.
+
+1. 시뮬레이션을 종료 하려면 키를 누릅니다 **Esc**를 선택 하거나 합니다 **닫기** 테스트 하는 대화 상자에서 단추입니다.
 
 ## <a name="requirements"></a>요구 사항
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [방법: 리소스 만들기](../windows/how-to-create-a-resource.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
-[대화 상자 편집기](../windows/dialog-editor.md)
+[대화 상자 편집기](../windows/dialog-editor.md)<br/>
+[대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)<br/>
