@@ -1,6 +1,6 @@
 ---
 title: 리소스 편집기 (c + +)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vs.editors.resource
 - vc.resvw.resource.editors
@@ -21,12 +21,12 @@ helpviewer_keywords:
 - properties [C++], resources
 - resources [C++], properties
 ms.assetid: e20a29ec-d6fb-4ead-98f3-431a0e23aaaf
-ms.openlocfilehash: 43eab011cefed116723bd983b685c1c8c230326f
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: aeeca87ceb5b2c5e54da7087b5020ccbc1c39039
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226321"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320811"
 ---
 # <a name="resource-editors-c"></a>리소스 편집기 (c + +)
 
@@ -36,8 +36,6 @@ A **리소스** 편집기를 만들거나 Visual Studio 프로젝트에 포함 �
 
 > [!NOTE]
 > 리소스를 관리 되는 프로젝트는 리소스 스크립트 파일을 사용 하지 않으므로 열어야 **솔루션 탐색기**합니다. 관리되는 프로젝트에서 리소스 파일로 작업하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
 |사용...|편집...|
 |----------------|----------------|
@@ -51,7 +49,10 @@ A **리소스** 편집기를 만들거나 Visual Studio 프로젝트에 포함 �
 |[도구 모음 편집기](../windows/toolbar-editor.md)|Visual C++ 프로젝트의 도구 모음 리소스입니다. 도구 모음 편집기는 이미지 편집기의 일부입니다.|
 |[버전 정보 편집기](../windows/version-information-editor.md)|Visual C++ 프로젝트의 버전 정보입니다.|
 
-## <a name="view-and-edit-resources-in-a-resource-editor"></a>리소스 편집기에서 리소스 보기 및 편집
+> [!NOTE]
+> 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
+
+## <a name="view-and-edit-resources"></a>보기 및 편집 리소스
 
 각 리소스 종류에는 **리소스** 리소스 유형에 특정 한 편집기입니다. 다시 정렬의 크기를 조정 하거나 컨트롤 및 기능을 추가 합니다. 그렇지 않으면 연결된 된 편집기를 사용 하 여 리소스의 기능을 수정할 수 있습니다. 리소스를 편집할 수도 있습니다 [텍스트 형식](../windows/how-to-open-a-resource-script-file-in-text-format.md) 하 고 [이진 형식](../windows/opening-a-resource-for-binary-editing.md)합니다.
 
@@ -62,16 +63,13 @@ A **리소스** 편집기를 만들거나 Visual Studio 프로젝트에 포함 �
 > [!NOTE]
 > 리소스의 속성 [속성 창을 사용 하 여 수정할 수 있습니다](../windows/changing-the-properties-of-a-resource.md)합니다.
 
-리소스의 속성을 편집 합니다.
+### <a name="to-edit-the-properties-of-a-resource"></a>리소스 속성을 편집하려면
 
 1. [리소스 뷰](../windows/resource-view-window.md)을 편집 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **속성** 바로 가기 메뉴에서.
 
-   > [!NOTE]
-   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
-
 1. 에 [속성 창](/visualstudio/ide/reference/properties-window), 리소스의 속성을 변경 합니다.
 
-에 리소스의 속성에 대 한 변경 내용을 취소 합니다.
+### <a name="to-undo-a-change-made-to-the-properties-of-a-resource"></a>리소스의 속성에 대 한 변경을 취소 하려면
 
 1. 리소스에 포커스를가지고 있는지 **리소스 뷰**합니다.
 
@@ -81,7 +79,7 @@ A **리소스** 편집기를 만들거나 Visual Studio 프로젝트에 포함 �
 
 Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](../windows/resource-view-window.md) 창입니다.
 
-리소스 편집기에서 Win32 리소스를 보려면:
+#### <a name="to-view-a-win32-resource-in-a-resource-editor"></a>리소스 편집기에서 Win32 리소스를 보려면
 
 1. 선택 **리소스 뷰** 에서 합니다 **보기** 메뉴.
 
@@ -89,37 +87,30 @@ Win32 리소스에 액세스할 수 있습니다 합니다 [리소스 뷰](../wi
 
 1. **리소스 뷰**를 보려는 리소스를 포함 하는 프로젝트에 대 한 폴더를 확장 합니다. 대화 상자 리소스를 보려는 경우 확장 하는 예를 들어 합니다 **대화 상자** 폴더입니다.
 
-   > [!NOTE]
-   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
-
 1. 예를 들어 리소스를 두 번 클릭 **IDD_ABOUTBOX**합니다.
 
    리소스가 해당 편집기에서 열립니다. 예를 들어, 대화 상자 리소스에서 열립니다는 **대화 상자** 편집기입니다.
 
    할 수도 있습니다 [프로젝트를 열지 않고도.rc (리소스 스크립트) 파일에서 리소스를 볼](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md)합니다.
 
-에 기존 win32 리소스를 삭제 합니다.
+#### <a name="to-delete-an-existing-win-32-resource"></a>기존 win32 리소스를 삭제 하려면
 
 1. **리소스 뷰**, 리소스 종류에 대 한 노드를 확장 합니다.
 
-2. 선택한 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 **삭제** 바로 가기 메뉴에서.
+1. 선택한 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 **삭제** 바로 가기 메뉴에서.
 
    > [!NOTE]
    > .Rc 파일이 프로젝트 외부에서 문서 창에 열려 있는 경우 동일한 바로 가기 메뉴 명령을 사용 하 여 리소스를 삭제할 수 있습니다.
 
-### <a name="resources-in-managed-projects"></a>관리 되는 프로젝트의 리소스
+### <a name="managed-project-resources"></a>관리 되는 프로젝트 리소스
 
 리소스를 관리 되는 프로젝트에서 리소스 스크립트 파일을 사용 하지 않으므로 열어야 **솔루션 탐색기**합니다. 관리되는 프로젝트에서 리소스 파일로 작업하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md) 를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기가 포함 된 리소스 편집을 지원 하지 않습니다.
 
-리소스 편집기에서 관리 되는 리소스를 보려면:
-
-**솔루션 탐색기**, 예를 들어 리소스를 두 번 클릭 *Bitmap1.bmp*합니다.
+- 리소스 편집기에서 관리 되는 리소스에서 보려는 **솔루션 탐색기**, 예를 들어 리소스를 두 번 클릭 *Bitmap1.bmp*합니다.
 
    리소스가 해당 편집기에서 열립니다.
 
-기존 관리 되는 리소스를 삭제 합니다.
-
-**솔루션 탐색기**를 선택 하 고 삭제 하려는 리소스를 마우스 오른쪽 단추로 클릭 **삭제** 바로 가기 메뉴에서.
+- 기존 관리 되는 리소스를 삭제할 **솔루션 탐색기**를 삭제 하 고 선택 하려는 리소스를 마우스 오른쪽 단추로 클릭 **삭제** 바로 가기 메뉴에서.
 
 ## <a name="preview-resources"></a>리소스 미리 보기
 
@@ -132,12 +123,9 @@ Visual 미리 보기 함수는 리소스에 적용 되지 않습니다. 액셀�
 > [!NOTE]
 > 리소스를 미리 보려면 Win32 필요 합니다.
 
-리소스를 미리 보려면:
+### <a name="to-preview-resources"></a>리소스를 미리 보려면
 
 1. [리소스 뷰](../windows/resource-view-window.md) 또는 문서 창에 예를 들어, 리소스 선택 `IDD_ABOUTBOX`합니다.
-
-   > [!NOTE]
-   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
 1. 에 [속성 창](/visualstudio/ide/reference/properties-window)를 선택 합니다 **속성 페이지** 단추입니다.
 
@@ -150,9 +138,8 @@ Visual 미리 보기 함수는 리소스에 적용 되지 않습니다. 액셀�
 
 없음
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
-[메뉴 및 기타 리소스](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>

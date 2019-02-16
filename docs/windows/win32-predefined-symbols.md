@@ -1,17 +1,17 @@
 ---
 title: 미리 정의된 Win32 기호
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 helpviewer_keywords:
 - Win32 [C++], predefined symbols
 - symbols [C++], Win32 predefined
 - Windows API [C++], predefined symbols
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
-ms.openlocfilehash: 703e00ebcf50c987fe3a0a9399cd7497bb9c95f8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b282db2680b2459fdbece41d3c0e0d15f523e44
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434699"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320447"
 ---
 # <a name="win32-predefined-symbols"></a>미리 정의된 Win32 기호
 
@@ -20,18 +20,18 @@ ms.locfileid: "50434699"
 |||
 |-|-|
 |IDABORT|컨트롤: 대화 상자 중단 단추|
-|IDC_STATIC|대화 상자에서 정적 텍스트 컨트롤:|
+|IDC_STATIC|컨트롤: 대화 상자에서 정적 텍스트|
 |IDCANCEL|컨트롤: 대화 상자 취소 단추|
-|IDD_ABOUTBOX|대화 상자에 대 한 대화 상자: 제품|
+|IDD_ABOUTBOX|대화 상자: 대화 상자에 대 한 제품|
 |IDI_PROJECTNAME|아이콘: 현재 프로젝트 아이콘|
-|IDI_SMALL과|아이콘: 현재 프로젝트의 작은 아이콘|
-|IDIGNORE|컨트롤: 대화 상자에서 무시 단추 사용|
+|IDI_SMALL|아이콘: 현재 프로젝트의 작은 아이콘|
+|IDIGNORE|컨트롤: 대화 상자에서 무시 단추|
 |IDM_ABOUT|메뉴 항목: 도움말을 사용 하는 중... 에 대 한 중...|
-|IDM_EXIT|메뉴 항목: 파일과 함께 사용 하는 중... 종료 하는 중...|
+|IDM_EXIT|메뉴 항목: 파일을 사용 하는 중... 종료 하는 중...|
 |IDNO|컨트롤: 대화 상자의 단추가 제공 되지 않음|
 |IDOK|컨트롤: 대화 상자의 확인 단추|
 |IDRETRY|컨트롤: 대화 상자 다시 시도 단추|
-|IDS_APP_TITLE|현재 응용 프로그램 이름 문자열입니다.|
+|IDS_APP_TITLE|문자열: 현재 응용 프로그램 이름|
 |IDYES|컨트롤: 대화 상자 예 단추|
 
 ## <a name="requirements"></a>요구 사항
@@ -41,4 +41,5 @@ Win32
 ## <a name="see-also"></a>참고 항목
 
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)
+[미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)<br/>
+[미리 정의된 ATL 기호](../windows/atl-predefined-symbols.md)<br/>

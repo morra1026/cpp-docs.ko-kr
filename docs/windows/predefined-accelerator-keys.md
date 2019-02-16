@@ -1,6 +1,6 @@
 ---
 title: 액셀러레이터 키 (c + +)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.accelerator
 helpviewer_keywords:
@@ -10,16 +10,14 @@ helpviewer_keywords:
 - menus [C++], shortcut keys
 - keyboard shortcuts [C++], menu association
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
-ms.openlocfilehash: 1e87d80b8995760eecda34334dab702480bd9669
-ms.sourcegitcommit: 5beace7dcc6bf0e8b8cc96a930e7424f9daa05cb
+ms.openlocfilehash: 6ef8f84564d6fd1957452971cb1e88dc99aa27e9
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55232125"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320512"
 ---
 # <a name="accelerator-keys-c"></a>액셀러레이터 키 (c + +)
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.
 
 ## <a name="predefined-accelerator-keys"></a>사전 정의된 액셀러레이터 키
 
@@ -79,7 +77,7 @@ Windows 응용 프로그램 프로젝트에 포함될 수 있는 미리 정의�
 |VK_XBUTTON1|Windows: X1 마우스 단추|
 |VK_XBUTTON2|Windows: X2 마우스 단추|
 
-## <a name="associating-an-accelerator-key-with-a-menu-item"></a>메뉴 항목과 액셀러레이터 키 연결
+## <a name="accelerator-key-association"></a>액셀러레이터 키 연결
 
 메뉴 항목과 키보드 조합에서 동일한 프로그램 명령을 여러 번 실행하도록 하려고 합니다. 이렇게 하려면 메뉴 항목과 응용 프로그램의 액셀러레이터 테이블에 있는 항목에 동일한 리소스 식별자(ID)를 할당합니다. 그런 다음 메뉴 항목의 캡션을 편집하여 액셀러레이터 키의 이름을 표시합니다. 메뉴 항목과 액셀러레이터 키에 대 한 자세한 내용은 참조 하세요. [액셀러레이터 키를 사용 하 여 메뉴 항목을 연결](../windows/associating-a-menu-command-with-an-accelerator-key.md)합니다.
 
@@ -90,4 +88,3 @@ Win32
 ## <a name="see-also"></a>참고 항목
 
 [액셀러레이터 키 편집기](../windows/accelerator-editor.md)<br/>
-[리소스 편집기](../windows/resource-editors.md)
