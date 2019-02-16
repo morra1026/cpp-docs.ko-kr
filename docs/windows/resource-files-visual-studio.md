@@ -1,6 +1,6 @@
 ---
 title: 리소스 파일(C++)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.resource
 helpviewer_keywords:
@@ -24,20 +24,16 @@ helpviewer_keywords:
 - files [C++], editable types
 - resource editing
 ms.assetid: 4d2b6fcc-07cf-4289-be87-83a60f69533c
-ms.openlocfilehash: 65500644b70841f372edcc6911edefc6c7b9f432
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: 4d56a62dfa350b3113a28355433130563464c6be
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56152692"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320538"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
 > [!NOTE]
-> 이 자료는 Windows 데스크톱 애플리케이션에 적용됩니다. 유니버설 Windows 플랫폼 앱의 리소스에 대한 자세한 내용은 [앱 리소스 정의](/windows/uwp/app-resources/)를 참조하세요.
->
-> 관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 리소스 지역화에 대한 내용은 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)를 참조하세요.
->
 > .NET 프로그래밍 언어의 프로젝트는 리소스 스크립트 파일을 사용하지 않으므로 **솔루션 탐색기**에서 리소스를 열어야 합니다. 관리되는 프로젝트에서 리소스 파일로 작업하려면 [이미지 편집기](../windows/image-editor-for-icons.md) 및 [바이너리 편집기](binary-editor.md)를 사용할 수 있습니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다.
 
 "리소스 파일"이라는 용어는 다음을 포함한 여러 파일 형식을 나타낼 수 있습니다.
@@ -50,7 +46,7 @@ ms.locfileid: "56152692"
 
 - .rc 파일에서 참조되며 개발 환경에서 생성된 헤더 파일(예: Resource.h)
 
-리소스에 있습니다. 또한 [다른 파일 형식](../windows/editable-file-types-for-resources.md) .exe,.dll 및.res 파일과 같은 합니다. 현재 프로젝트의 일부가 아닌 스냅숏과 프로젝트 내에서 리소스 및 리소스 파일을 사용 하 여 작업할 수 있습니다. Visual Studio의 개발 환경에서 작성 하지 않은 리소스 파일을 사용 하 여 작업할 수 있습니다. 예를 들어 다음 작업을 할 수 있습니다.
+.Exe,.dll 및.res 파일과 같은 다른 파일 형식에서 리소스 되기도 합니다. 현재 프로젝트의 일부가 아닌 스냅숏과 프로젝트 내에서 리소스 및 리소스 파일을 사용 하 여 작업할 수 있습니다. Visual Studio의 개발 환경에서 작성 하지 않은 리소스 파일을 사용 하 여 작업할 수 있습니다. 예를 들어 다음 작업을 할 수 있습니다.
 
 - 중첩되어 조건부로 포함된 리소스 파일에 대한 작업
 
@@ -64,26 +60,6 @@ ms.locfileid: "56152692"
 
 - 개발 환경에서 지원하지 않는 리소스 형식 포함
 
-다음 형식의 파일을 열고 포함 하는 리소스를 편집할 수 있습니다.
-
-|파일 이름|설명|
-|---------------|-----------------|
-|.rc|리소스 스크립트 파일입니다.|
-|.rct|리소스 템플릿 파일입니다.|
-|.res|리소스 파일입니다.|
-|.resx|관리되는 리소스 파일입니다.|
-|.exe|실행 파일입니다.|
-|.dll|동적 연결 라이브러리 파일입니다.|
-|.bmp, .ico, .dib, and .cur|비트맵, 아이콘, 도구 모음 및 커서 파일입니다.|
-
-Visual Studio 환경을 사용 하며 리소스 편집 세션 중 다음 표에 표시 된 파일에 영향을 줍니다.
-
-|파일 이름|설명|
-|---------------|-----------------|
-|Resource.h|개발 환경에서 생성된 헤더 파일로, 기호 정의를 포함합니다. (소스 제어에이 파일을 포함 합니다.)|
-|Filename.aps|현재 리소스 스크립트 파일의 이진 버전으로, 빠른 로드를 위해 사용됩니다.<br /><br /> 리소스 편집기에서.rc 또는 resource.h 파일을 읽을 직접 하지 않습니다. 리소스 컴파일러는 리소스 편집기에서 사용되는 이러한 파일을 .aps 파일로 컴파일합니다. 이 파일은 컴파일 단계이며 기호화된 데이터만 저장합니다. 일반적인 컴파일 프로세스를 따라 없는 (예: 주석) 기호화 된 정보에는 컴파일 프로세스 중 삭제 됩니다. .aps 파일이 .rc 파일과 동기화되지 않을 때마다 .rc 파일이 다시 생성됩니다. 예를 들어 저장하면 리소스 편집기에서 .rc 파일 및 resource.h 파일을 덮어씁니다. 리소스 자체의 모든 변경 내용은 .rc 파일에 통합된 상태로 유지되지만 주석은 .rc 파일을 덮어쓰면 항상 손실됩니다. 주석을 유지 하는 방법에 대 한 자세한 내용은 [컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)합니다. (일반적으로 있습니다 포함 하지 않아야.aps 파일이 소스 제어에.)|
-|.rc|현재 프로젝트의 리소스에 대한 스크립트가 포함된 리소스 스크립트 파일입니다. 저장할 때마다 .aps 파일이 이 파일을 덮어씁니다. (소스 제어에이 파일을 포함 합니다.)|
-
 이 섹션에서는 설명 하는 방법.
 
 - [리소스 만들기](../windows/how-to-create-a-resource-script-file.md)
@@ -91,6 +67,28 @@ Visual Studio 환경을 사용 하며 리소스 편집 세션 중 다음 표에 
 - [리소스 관리](../windows/how-to-copy-resources.md)
 
 - [컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)
+
+## <a name="editable-resource-file-types"></a>편집할 수 있는 리소스 파일 형식
+
+포함 하는 리소스를 편집 하려면 다음 형식의 파일을 열 수 있습니다.
+
+|파일 이름|설명|
+|---------|-----------------|
+|.rc|리소스 스크립트 파일|
+|.rct|리소스 템플릿 파일|
+|.res|리소스 파일|
+|.resx|관리 되는 리소스 파일|
+|.exe|실행 파일|
+|.dll|동적 연결 라이브러리 파일|
+|.bmp, .ico, .dib, and .cur|비트맵, 아이콘, 도구 모음 및 커서 파일입니다.|
+
+Visual Studio 환경을 사용 하며 리소스 편집 세션 중 다음 파일이 영향을 주는지:
+
+|파일 이름|설명|
+|---------------|-----------------|
+|Resource.h|개발 환경에서 생성된 헤더 파일로, 기호 정의를 포함합니다. (소스 제어에이 파일을 포함 합니다.)|
+|Filename.aps|현재 리소스 스크립트 파일의 이진 버전으로, 빠른 로드를 위해 사용됩니다.<br /><br /> 리소스 편집기에서.rc 또는 resource.h 파일을 읽을 직접 하지 않습니다. 리소스 컴파일러는 리소스 편집기에서 사용되는 이러한 파일을 .aps 파일로 컴파일합니다. 이 파일은 컴파일 단계이며 기호화된 데이터만 저장합니다. 일반적인 컴파일 프로세스를 따라 없는 (예: 주석) 기호화 된 정보에는 컴파일 프로세스 중 삭제 됩니다. .aps 파일이 .rc 파일과 동기화되지 않을 때마다 .rc 파일이 다시 생성됩니다. 예를 들어 저장하면 리소스 편집기에서 .rc 파일 및 resource.h 파일을 덮어씁니다. 리소스 자체의 모든 변경 내용은 .rc 파일에 통합된 상태로 유지되지만 주석은 .rc 파일을 덮어쓰면 항상 손실됩니다. 주석을 유지 하는 방법에 대 한 자세한 내용은 [컴파일 타임에 리소스 포함](../windows/how-to-include-resources-at-compile-time.md)합니다. (일반적으로 있습니다 포함 하지 않아야.aps 파일이 소스 제어에.)|
+|.rc|현재 프로젝트의 리소스에 대한 스크립트가 포함된 리소스 스크립트 파일입니다. 저장할 때마다 .aps 파일이 이 파일을 덮어씁니다. (소스 제어에이 파일을 포함 합니다.)|
 
 ## <a name="manifest-resources"></a>매니페스트 리소스
 
@@ -116,11 +114,15 @@ Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 �
 
 버전을 보려면 매니페스트 리소스에 포함 된 정보를 입력을 XML 뷰어 또는 Visual Studio 텍스트 편집기에서 파일을 열 수 있습니다. [리소스 뷰](../windows/resource-view-window.md)에서 매니페스트 리소스를 열면 리소스가 이진 형식으로 열립니다. 쉬운 형식에서 매니페스트 리소스의 콘텐츠를 보려는 리소스를 열어야 **솔루션 탐색기**합니다.
 
-매니페스트 리소스를 열려면 다음 단계에서 선택 합니다.
+### <a name="to-open-a-manifest-resource"></a>매니페스트 리소스를 열려면
 
-- 프로젝트를 열고 사용 하 여 텍스트 편집기에 대 한 **솔루션 탐색기**를 확장 합니다 **리소스 파일** 폴더.manifest 파일을 두 번 클릭 합니다.
+1. Visual Studio에서 프로젝트를 엽니다.
 
-- 다른 편집기에서 **솔루션 탐색기**.manifest 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **연결 프로그램...**  바로 가기 메뉴에서. 에 **연결** 대화 상자에서 사용 하 고 선택 하려는 편집기를 지정한 **오픈**합니다.
+1. 이동할 **솔루션 탐색기** 를 확장 합니다 **리소스 파일** 폴더입니다.
+
+   - 텍스트 편집기에 대 한.manifest 파일을 두 번 클릭 합니다.
+
+   - 다른 편집기에 대해.manifest 파일을 마우스 오른쪽 단추로 클릭 하 고 선택 **연결 프로그램...** 를 사용 하 여 선택한 편집기를 지정 합니다 **오픈**합니다.
 
 > [!NOTE]
 > 모듈별로 매니페스트 리소스를 하나만 사용할 수 있습니다.
@@ -129,9 +131,8 @@ Windows XP 또는 Windows Vista 응용 프로그램의 경우 매니페스트 �
 
 Win32
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[리소스 편집기](../windows/resource-editors.md)<br/>
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
-[메뉴 및 기타 리소스](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>
-[컨트롤](../mfc/controls-mfc.md)<br/>
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 편집기](../windows/resource-editors.md)<br/>

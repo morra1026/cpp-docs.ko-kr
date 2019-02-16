@@ -1,16 +1,16 @@
 ---
 title: 미리 정의된 기호 ID
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 helpviewer_keywords:
 - symbols [C++], predefined IDs
 - predefined symbol IDs
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
-ms.openlocfilehash: cb2f80315e0480c3fcb73092123cad88712dff05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7402bf7aaaf7c72382b57963d5d759adaa71115
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477300"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320798"
 ---
 # <a name="predefined-symbol-ids"></a>미리 정의된 기호 ID
 
@@ -35,4 +35,6 @@ Win32, MFC 또는 ATL
 
 ## <a name="see-also"></a>참고 항목
 
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
+[기호 만들기](../windows/creating-new-symbols.md)<br/>
+[기호 관리](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>

@@ -1,6 +1,6 @@
 ---
 title: '방법: 기호 (c + +) 만들기'
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.creating
 - vc.editors.symbol.managing
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - View Use button
 - resource editors [C++], resource symbols
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
-ms.openlocfilehash: 49860f2277dbb462c7e1cd8cb59b86a3edbd3cc9
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: 01b810d162da4d59c2044fe02a1da5c0929d41b9
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226334"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320603"
 ---
 # <a name="how-to-create-symbols-c"></a>방법: 기호 (c + +) 만들기
 
@@ -35,7 +35,7 @@ ms.locfileid: "56226334"
 대화 상자에는 다음 속성이 포함 됩니다.
 
 |속성|설명|
-|---|---|
+|--------------------------|------------------------------------------|
 |**이름**|기호의 이름을 표시합니다. 자세한 내용은 [기호 이름 제한](../windows/symbol-name-restrictions.md)합니다.|
 |**값**|기호의 숫자 값을 표시합니다. 자세한 내용은 [기호 값 제한](../windows/symbol-value-restrictions.md)합니다.|
 |**사용**|선택하면 하나 이상의 리소스에서 기호를 사용하고 있음을 지정합니다. 해당 리소스가 다음에서 사용 상자에 나열됩니다.|
@@ -45,9 +45,9 @@ ms.locfileid: "56226334"
 |**Change**|열립니다는 **기호 변경** 대화 상자를 이름 또는 기호 값을 변경할 수 있습니다. 사용 중인 컨트롤 또는 리소스에 대한 기호인 경우 해당 리소스 편집기에서만 기호를 변경할 수 있습니다. 자세한 내용은 [할당 되지 않은 기호 변경](../windows/changing-unassigned-symbols.md)합니다.|
 |**사용 리소스 보기**|해당 리소스 편집기에서 기호를 포함하는 리소스를 엽니다.|
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.
+## <a name="create-symbols"></a>기호 만들기
 
-## <a name="to-create-a-new-symbol"></a>새 기호를 만들려면
+### <a name="to-create-a-new-symbol"></a>새 기호를 만들려면
 
 1. 에 **리소스 기호** 대화 상자에서 **새로 만들기**합니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "56226334"
 > [!NOTE]
 > 이미 있는 기호 이름을 입력하면 해당 이름을 사용하는 기호가 이미 정의되어 있다는 메시지 상자가 나타납니다. 이름이 같은 기호를 두 개 이상 정의할 수는 없지만 동일한 숫자 값을 사용하는 서로 다른 기호는 정의할 수 있습니다. 자세한 내용은 [기호 이름 제한](../windows/symbol-name-restrictions.md) 하 고 [기호 값 제한](../windows/symbol-value-restrictions.md)합니다.
 
-## <a name="to-view-resource-symbols"></a>리소스 기호를 보려면
+### <a name="to-view-resource-symbols"></a>리소스 기호를 보려면
 
 1. [리소스 뷰](../windows/resource-view-window.md),.rc 파일을 마우스 오른쪽 단추로 클릭 합니다.
 
@@ -72,11 +72,11 @@ ms.locfileid: "56226334"
    > [!NOTE]
    > 미리 정의 된 기호를 확인 합니다 **읽기 전용 기호 표시** 확인란 합니다.
 
-## <a name="to-open-the-resource-editor-for-a-given-symbol"></a>지정된 된 기호에 대 한 리소스 편집기를 열려면
+### <a name="to-open-the-resource-editor-for-a-given-symbol"></a>지정된 된 기호에 대 한 리소스 편집기를 열려면
 
 기호를 검색 하는 경우는 **리소스 기호**, 특정 기호를 사용 하는 방법에 대 한 자세한 내용은 확인할 수 있습니다. 합니다 **사용 리소스 보기** 단추에는이 정보를 얻으려면 빠른 방법을 제공 합니다.
 
-### <a name="to-move-to-the-resource-editor-where-a-symbol-is-being-used"></a>기호가 사용되는 리소스 편집기로 이동하려면
+#### <a name="to-move-to-the-resource-editor-where-a-symbol-is-being-used"></a>기호가 사용되는 리소스 편집기로 이동하려면
 
 1. 기호를 선택 합니다 **이름을** 상자를 **리소스 기호** 대화 상자.
 
@@ -90,7 +90,8 @@ ms.locfileid: "56226334"
 
 Win32
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
-[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
+[기호 관리](../windows/changing-a-symbol-or-symbol-name-id.md)<br/>
+[미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>

@@ -1,6 +1,6 @@
 ---
-title: '기호: 리소스 식별자 (c + +)'
-ms.date: 11/04/2016
+title: 리소스 식별자 (기호) (c + +)
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.identifiers
 helpviewer_keywords:
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - symbols [C++], editing
 - resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
-ms.openlocfilehash: abe6297d74df4941328d3e606fb3b0f646d36265
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7359fdfd1007cb49025908ffea51093622943052
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530002"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320499"
 ---
-# <a name="symbols-resource-identifiers-c"></a>기호: 리소스 식별자 (c + +)
+# <a name="resource-identifiers-symbols-c"></a>리소스 식별자 (기호) (c + +)
 
 기호는 두 부분 즉, 텍스트 문자열(기호 이름)과 이와 매핑되는 정수 값(기호 값)으로 구성된 리소스 식별자(ID)입니다. 예를 들어:
 
@@ -34,29 +34,13 @@ IDC_EDITNAME = 5100
 > [!NOTE]
 > .rc 파일 간에 리소스 또는 리소스 개체를 복사할 경우 Visual C++에서는 기존 파일에 있는 기호 이름 또는 값과의 충돌을 방지하려고 복사된 리소스의 기호 값 또는 기호 이름과 값을 변경할 수 있습니다.
 
-응용 프로그램의 크기가 커지고 복잡해질수록 리소스와 기호 수도 증가합니다. 여러 파일에 흩어져 있는 많은 기호를 추적하는 작업은 어려울 수 있습니다. 다음을 수행할 수 있는 중앙 집중식 도구를 제공하는 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md)를 사용하면 기호를 간단하게 관리할 수 있습니다.
+애플리케이션의 크기가 커지고 복잡해질수록 리소스와 기호 수도 증가합니다. 여러 파일에 흩어져 있는 많은 기호를 추적하는 작업은 어려울 수 있습니다. 다음을 수행할 수 있는 중앙 집중식 도구를 제공하는 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md)를 사용하면 기호를 간단하게 관리할 수 있습니다.
 
-- [리소스 기호 보기](../windows/viewing-resource-symbols.md)
+- [기호 만들기](../windows/creating-new-symbols.md)
 
-- [새 기호 만들기](../windows/creating-new-symbols.md)
-
-- [할당되지 않은 기호 변경](../windows/changing-unassigned-symbols.md)
-
-- [할당되지 않은 기호 삭제](../windows/deleting-unassigned-symbols.md)
-
-- [지정된 기호에 대한 리소스 편집기 열기](../windows/opening-the-resource-editor-for-a-given-symbol.md)
-
-- [기호 또는 기호 이름(ID) 변경](../windows/changing-a-symbol-or-symbol-name-id.md)
-
-- [기호 숫자 값 변경](../windows/changing-a-symbol-s-numeric-value.md)
-
-- [기호 헤더 파일의 이름 변경](../windows/changing-the-names-of-symbol-header-files.md)
-
-- [공유(읽기 전용) 또는 계산된 기호 포함](../windows/including-shared-read-only-or-calculated-symbols.md)
+- [기호 관리](../windows/changing-a-symbol-or-symbol-name-id.md)
 
 - [미리 정의된 기호 ID 보기](../windows/predefined-symbol-ids.md)
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -64,6 +48,6 @@ Win32
 
 ## <a name="see-also"></a>참고 항목
 
-[방법: 리소스에서 기호 검색](../windows/how-to-search-for-symbols-in-resources.md)<br/>
+[리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
 [리소스 편집기](../windows/resource-editors.md)<br/>
-[리소스 파일](../windows/resource-files-visual-studio.md)

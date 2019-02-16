@@ -1,6 +1,6 @@
 ---
 title: '방법: 기호 관리'
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.symbol.changing
 - vc.editors.symbol.restrictions.name
@@ -35,12 +35,12 @@ helpviewer_keywords:
 - calculated symbols
 - shared symbols
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
-ms.openlocfilehash: 4bc0376b6b5ff402f0cc9f40093e000763ad6656
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: 4f1c44e8fc2ae34ddcb65ec23ca8d98e11d50ec0
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226373"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320590"
 ---
 # <a name="how-to-manage-symbols"></a>방법: 기호 관리
 
@@ -49,8 +49,6 @@ ms.locfileid: "56226373"
 단일 리소스와 연결 된 기호를 사용할 수도 있습니다는 **속성** 기호 값을 변경 하는 창입니다. 사용할 수는 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md) 리소스에 할당 되어 있지 않은 기호의 값을 변경 합니다.
 
 일반적으로 모든 기호 정의에 저장 됩니다 `Resource.h`합니다. 그러나 예를 들어 같은 디렉터리에서 둘 이상의 리소스 파일을 사용할 수 있도록 이 포함 파일 이름을 변경해야 할 수 있습니다.
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다.
 
 > [!NOTE]
 > 참조 프로젝트에.rc 파일이 없으면 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)합니다.
@@ -142,7 +140,7 @@ ms.locfileid: "56226373"
 
 새 값은 다음에 프로젝트를 저장할 때 기호 헤더 파일에 저장됩니다. 기호 이름만 ID 상자;에 표시 하는 상태로 유지 됩니다. 등호와 값의 유효성을 검사 하는 후 표시 되지 않습니다.
 
-## <a name="change-or-delete-unassigned-symbols"></a>변경 하거나 할당 되지 않은 기호 삭제
+## <a name="change-or-delete-symbols"></a>변경 또는 삭제 기호
 
 에 있는 동안 합니다 [리소스 기호 대화 상자](../windows/resource-symbols-dialog-box.md), 편집 하거나 이미 리소스 또는 개체에 할당 되지 않은 기존 기호를 삭제할 수 있습니다.
 
@@ -162,7 +160,7 @@ ms.locfileid: "56226373"
    > [!NOTE]
    > 리소스 파일에서 사용되지 않은 기호를 삭제하려면 먼저 프로그램의 다른 위치나 컴파일 시간에 포함된 리소스 파일에서 사용되지 않는지 확인합니다.
 
-## <a name="include-shared-read-only-or-calculated-symbols"></a>포함 공유 (읽기 전용) 또는 계산 된 기호
+## <a name="include-symbols"></a>기호를 포함 합니다.
 
 다른 응용 프로그램에서 만든 리소스 파일을 처음으로 개발 환경에서 읽는 경우 포함된 헤더 파일을 모두 읽기 전용으로 표시합니다. 사용할 수 있지만 합니다 [리소스 내용 대화 상자](../windows/resource-includes-dialog-box.md) 추가 읽기 전용 기호 헤더 파일을 추가 합니다.
 
@@ -215,8 +213,8 @@ ms.locfileid: "56226373"
 
 Win32
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)<br/>
+[리소스 식별자 (기호)](../windows/symbols-resource-identifiers.md)<br/>
+[기호 만들기](../windows/creating-new-symbols.md)<br/>
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>
-[리소스 기호 보기](../windows/viewing-resource-symbols.md)<br/>

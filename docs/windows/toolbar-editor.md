@@ -1,6 +1,6 @@
 ---
 title: 도구 모음 편집기 (c + +)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.toolbar.F1
 - vc.editors.toolbar
@@ -50,12 +50,12 @@ helpviewer_keywords:
 - buttons [C++], tool tips
 - Toolbar editor [C++], creating tool tips
 ms.assetid: aa9f0adf-60f6-4f79-ab05-bc330f15ec43
-ms.openlocfilehash: 61b4d3ba6fc70e78c6f794528822eb66fb94de7e
-ms.sourcegitcommit: 5a7dbd640376e13379f5d5b2cf66c4842e5e737b
+ms.openlocfilehash: 7ef08551960c9308a84b9838249a3d9ff4950d98
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55905786"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320616"
 ---
 # <a name="toolbar-editor-c"></a>도구 모음 편집기 (c + +)
 
@@ -66,23 +66,6 @@ ms.locfileid: "55905786"
 ![도구 모음 편집기](../mfc/media/vctoolbareditor.gif "vcToolbarEditor") 도구 모음 편집기
 
 합니다 **도구 모음** 편집기는 비슷합니다는 **이미지** 편집기 기능에서입니다. 메뉴 항목, 그래픽 도구 및 비트맵 그리드는와 동일 합니다 **이미지** 편집기입니다. 메뉴 명령에 있는지를 **이미지** 메뉴 간을 전환할 수 있도록 합니다 **도구 모음** 편집기 및 **이미지** 편집기입니다. 사용 하 여 대 한 자세한 내용은 합니다 **그래픽** 도구 모음 **색** 팔레트 또는 **이미지** 메뉴 참조 [이미지 편집기](../windows/image-editor-for-icons.md)합니다.
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
-
-사용 하 여 합니다 **도구 모음** 편집기를 할 수 있습니다.
-
-## <a name="create-new-toolbars"></a>새 도구 모음 만들기
-
-1. **자원** 보거나.rc 파일을 마우스 오른쪽 단추로 클릭 한 다음 선택 **리소스 추가** 바로 가기 메뉴에서. (단추로 단순히 기존 도구 모음.rc 파일에 있는 경우는 **도구 모음** 선택한 폴더 **도구 모음 삽입** 바로 가기 메뉴에서.)
-
-   > [!NOTE]
-   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
-
-1. 에 **리소스 추가** 대화 상자에서 **도구 모음** 에 **리소스 종류** 목록에서 선택한 **새로 만들기**합니다.
-
-   더하기 기호 (**+**) 옆에 표시 되는 **도구 모음** 리소스 종류, 즉 모음 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
-
-## <a name="convert-bitmaps-to-toolbar-resources"></a>비트맵을 도구 모음 리소스로 변환
 
 비트맵을 변환 하 여 c + + 프로젝트에서 새 도구 모음을 만들 수 있습니다. 비트맵에서 그래픽 도구 모음 단추 이미지를 변환합니다. 일반적으로 비트맵 각 단추에 대 한 하나의 이미지를 사용 하 여 단일 비트맵에 여러 단추 이미지를 포함합니다. 기본값은 이미지의 높이 및 너비가 16 픽셀 이미지 임의 크기 일 수 있습니다. 단추 이미지의 크기를 지정할 수 있습니다 합니다 **새 도구 모음 리소스** 선택 하면 대화 상자 **도구 모음 편집기** 에서 합니다 **이미지** 이미지 편집기의 메뉴.
 
@@ -97,7 +80,32 @@ ms.locfileid: "55905786"
 |**Button Width**|도구 모음 리소스 비트맵 리소스를 변환 하는 도구 모음 단추에 대 한 너비를 입력할 공간을 제공 합니다. 이미지 너비와 높이가 지정 된 자르고 색 표준 도구 모음 색 (16 색)을 사용 하도록 조정 됩니다.|
 |**단추의 높이**|도구 모음 리소스 비트맵 리소스를 변환 하는 도구 모음 단추에 대 한 높이 입력할 공간을 제공 합니다. 이미지 너비와 높이가 지정 된 자르고 색 표준 도구 모음 색 (16 색)을 사용 하도록 조정 됩니다.|
 
-### <a name="to-convert-bitmaps-to-a-toolbar"></a>비트맵을 도구 모음을 변환 하려면
+기본적으로 도구 모음의 오른쪽 끝에서 공백 또는 새 단추가 표시 됩니다. 편집 하기 전에이 단추를 이동할 수 있습니다. 새 단추를 만들면 다른 빈 단추 편집 단추 오른쪽에 나타납니다. 도구 모음을 저장 하면 빈 단추 저장 되지 않습니다.
+
+도구 모음 단추의 속성을 다음과 같습니다.
+
+|속성|Description|
+|--------------|-----------------|
+|**ID**|단추에 대 한 ID를 정의합니다. 드롭다운 목록에는 일반적인 나와 **ID** 이름입니다.|
+|**너비**|단추의 너비를 설정합니다. 16 픽셀을 사용 하는 것이 좋습니다.|
+|**높이**|단추의 높이 설정합니다. 도구 모음에서 모든 단추의 높이 변경 하는 하나의 단추의 높이입니다. 15 픽셀을 사용 하는 것이 좋습니다.|
+|**프롬프트**|상태 표시줄에 표시 되는 메시지를 정의 합니다. 도구 모음 단추를 도구 설명 추가 \n 및 이름을 추가 합니다. 자세한 내용은 [도구 설명을 만드는](../windows/creating-a-tool-tip-for-a-toolbar-button.md)합니다.|
+
+**너비** 하 고 **높이** 모든 단추에 적용 합니다. 도구 모음을 만드는 데 사용 되는 비트맵은 2048의 최대 너비입니다. 따라서 단추 너비를 512로 설정 하는 경우 수만 단추 4 개 있고 513를 너비를 설정 하면 세 개의 단추만 넣을 수 있습니다.
+
+## <a name="how-to"></a>방법
+
+합니다 **도구 모음** 편집기가 있습니다.
+
+### <a name="to-create-new-toolbars"></a>새 도구 모음을 만들려면
+
+1. **자원** 보거나.rc 파일을 마우스 오른쪽 단추로 클릭 한 다음 선택 **리소스 추가** 바로 가기 메뉴에서. (단추로 단순히 기존 도구 모음.rc 파일에 있는 경우는 **도구 모음** 선택한 폴더 **도구 모음 삽입** 바로 가기 메뉴에서.)
+
+1. 에 **리소스 추가** 대화 상자에서 **도구 모음** 에 **리소스 종류** 목록에서 선택한 **새로 만들기**합니다.
+
+   더하기 기호 (**+**) 옆에 표시 되는 **도구 모음** 리소스 종류, 즉 모음 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
+
+### <a name="to-convert-bitmaps-to-toolbar-resources"></a>비트맵을 도구 모음 리소스로 변환
 
 1. 기존 비트맵 리소스를 엽니다는 [이미지 편집기](../windows/image-editor-for-icons.md)합니다. (.Rc 파일을 마우스 오른쪽 단추로 클릭 비트맵.rc 파일에 있지 않은 경우, 선택 **가져오기** 바로 가기 메뉴에서.rc 파일을 추가 하려는 비트맵을 이동한 다음 선택 **오픈**.)
 
@@ -112,31 +120,13 @@ ms.locfileid: "55905786"
 
 사용 하 여 새 도구 모음에서 단추 명령 Id를 변경할 수도 있습니다는 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
 
-## <a name="create-move-and-edit-toolbar-buttons"></a>도구 모음 단추 만들기, 이동 및 편집
+### <a name="to-create-move-and-edit-toolbar-buttons"></a>만들기, 이동 및 편집 도구 모음 단추
 
-있습니다 수 쉽게 만들기, 이동, 복사 및 편집 도구 모음 단추입니다.
+있습니다 수 쉽게 만들기, 이동, 복사 및 편집 도구 모음 단추:
 
-기본적으로 도구 모음의 오른쪽 끝에서 공백 또는 새 단추가 표시 됩니다. 편집 하기 전에이 단추를 이동할 수 있습니다. 새 단추를 만들면 다른 빈 단추 편집 단추 오른쪽에 나타납니다. 도구 모음을 저장 하면 빈 단추 저장 되지 않습니다.
-
-도구 모음 단추의 속성을 다음과 같습니다.
-
-|속성|Description|
-|--------------|-----------------|
-|**ID**|단추에 대 한 ID를 정의합니다. 드롭다운 목록에는 일반적인 나와 **ID** 이름입니다.|
-|**너비**|단추의 너비를 설정합니다. 16 픽셀을 사용 하는 것이 좋습니다.|
-|**높이**|단추의 높이 설정합니다. 도구 모음에서 모든 단추의 높이 변경 하는 하나의 단추의 높이입니다. 15 픽셀을 사용 하는 것이 좋습니다.|
-|**프롬프트**|상태 표시줄에 표시 되는 메시지를 정의 합니다. 도구 모음 단추를 도구 설명 추가 \n 및 이름을 추가 합니다. 자세한 내용은 [도구 설명을 만드는](../windows/creating-a-tool-tip-for-a-toolbar-button.md)합니다.|
-
-**너비** 하 고 **높이** 모든 단추에 적용 합니다. 도구 모음을 만드는 데 사용 되는 비트맵은 2048의 최대 너비입니다. 따라서 단추 너비를 512로 설정 하는 경우 수만 단추 4 개 있고 513를 너비를 설정 하면 세 개의 단추만 넣을 수 있습니다.
-
-다음 작업을 참조 하세요.
-
-### <a name="to-create-a-new-toolbar-button"></a>새 도구 모음 단추를 만들려면
+#### <a name="to-create-a-new-toolbar-button"></a>새 도구 모음 단추를 만들려면
 
 1. [리소스 뷰](../windows/resource-view-window.md) 리소스 폴더를 확장 (예를 들어 *: Project1.rc*).
-
-   > [!NOTE]
-   > 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
 1. 확장 된 **도구 모음** 폴더를 편집 하려면 도구 모음을 선택 합니다.
 
@@ -148,7 +138,7 @@ ms.locfileid: "55905786"
 
 또한 복사 하 고 새 단추 여 도구 모음 이미지를 붙여넣을 수 있습니다.
 
-### <a name="to-add-an-image-to-a-toolbar-as-a-button"></a>도구 모음에 단추와 이미지를 추가 하려면
+#### <a name="to-add-an-image-to-a-toolbar-as-a-button"></a>도구 모음에 단추와 이미지를 추가 하려면
 
 1. [리소스 뷰](../windows/resource-view-window.md)를 두 번 클릭 하 여 도구 모음을 엽니다.
 
@@ -165,21 +155,21 @@ ms.locfileid: "55905786"
 
    이미지는 새 단추도 도구 모음에 표시 됩니다.
 
-### <a name="to-move-a-toolbar-button"></a>도구 모음 단추 이동 하려면
+#### <a name="to-move-a-toolbar-button"></a>도구 모음 단추 이동 하려면
 
 에 **도구 모음 보기** 창 도구 모음에서 새 위치로 이동 하려면 단추를 끌어 옵니다.
 
-### <a name="to-copy-buttons-from-a-toolbar"></a>도구 모음에서 단추 복사
+#### <a name="to-copy-buttons-from-a-toolbar"></a>도구 모음에서 단추 복사
 
 1. 누른 합니다 **Ctrl** 키입니다.
 
 1. 에 **도구 모음 보기** 창 끌거나 단추 중 하나를 새 위치로 도구 모음에서 위치에 다른 도구 모음에서 합니다.
 
-### <a name="to-delete-a-toolbar-button"></a>도구 모음 단추를 삭제 하려면
+#### <a name="to-delete-a-toolbar-button"></a>도구 모음 단추를 삭제 하려면
 
 도구 모음 단추를 선택 하 고 도구 모음 밖으로 끕니다.
 
-### <a name="to-insert-or-remove-space-between-buttons-on-a-toolbar"></a>삽입 하거나 도구 모음에서 단추 사이의 공백 제거
+#### <a name="to-insert-or-remove-space-between-buttons-on-a-toolbar"></a>삽입 하거나 도구 모음에서 단추 사이의 공백 제거
 
 일반적으로 단추 사이 공백을 삽입할 끌어 다른 도구 모음에서 합니다. 공간을 제거 하려면 다른 쪽으로 끌어 옵니다.
 
@@ -193,13 +183,13 @@ ms.locfileid: "55905786"
 > [!NOTE]
 > 다른 위치로 끌어 온 다음 단추 공간이 없을 경우 끌면 단추 옆에 있는 단추를 반 이상 합니다 **도구 모음** 편집기에는 또한 수 있는 단추의 반대쪽에 공백을 삽입 끕니다.
 
-### <a name="to-change-the-properties-of-a-toolbar-button"></a>도구 모음 단추의 속성을 변경 하려면
+#### <a name="to-change-the-properties-of-a-toolbar-button"></a>도구 모음 단추의 속성을 변경 하려면
 
 1. C + + 프로젝트의 도구 모음 단추를 선택 합니다.
 
 1. 에 새 ID를 입력 합니다 **ID** 속성에는 [속성 창](/visualstudio/ide/reference/properties-window), 드롭 다운 목록을 사용 하 여 새 선택 또는 **ID**합니다.
 
-### <a name="to-create-a-tool-tip-for-a-toolbar-button"></a>도구 모음 단추에 대 한 도구 설명을 만들려면
+#### <a name="to-create-a-tool-tip-for-a-toolbar-button"></a>도구 모음 단추에 대 한 도구 설명을 만들려면
 
 1. 도구 모음 단추를 선택 합니다.
 
@@ -226,7 +216,7 @@ ms.locfileid: "55905786"
 
 MFC 또는 ATL
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [메뉴 및 기타 리소스](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)<br/>

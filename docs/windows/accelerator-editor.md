@@ -1,6 +1,6 @@
 ---
 title: 액셀러레이터 키 편집기 (c + +)
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 f1_keywords:
 - vc.editors.accelerator.F1
 - vc.editors.accelerator
@@ -33,12 +33,12 @@ helpviewer_keywords:
 - keyboard shortcuts [C++], property changing
 - accelerator tables [C++], changing properties
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
-ms.openlocfilehash: 5ece5c7e85a3ef59b728474746e9553a751d43c6
-ms.sourcegitcommit: bec1480a03e7b4070b469a6c131a69f516bbac70
+ms.openlocfilehash: 90ef142336cf88c5e40f78f6cc651b2bb35a0f6c
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56226347"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320642"
 ---
 # <a name="accelerator-editor-c"></a>액셀러레이터 키 편집기 (c + +)
 
@@ -55,8 +55,6 @@ ms.locfileid: "56226347"
 
    > [!NOTE]
    > Windows에서는 빈 액셀러레이터 키 테이블을 만들 수 없습니다. 항목이 없는 액셀러레이터 키 테이블을 만들 경우 해당 테이블을 저장할 때 테이블이 자동으로 삭제됩니다.
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
 ## <a name="accelerator-properties"></a>액셀러레이터 키 속성
 
@@ -123,9 +121,6 @@ ms.locfileid: "56226347"
 C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀러레이터 키 테이블을 편집할 수 있습니다 합니다 **가속기** 편집기입니다.
 
 표준 속성 페이지를 사용 하려면 아래 절차 참조, 바로 편집 기능 및 방법 모두 결과가 동일 합니다. 변경 내용을 속성 페이지를 사용 하 여 또는 내부 편집을 사용 하 여 액셀러레이터 키 테이블에 즉시 반영 됩니다.
-
-> [!NOTE]
-> 프로젝트에 .rc 파일이 아직 없는 경우 [새 리소스 스크립트 파일 만들기](../windows/how-to-create-a-resource-script-file.md)를 참조하세요.
 
 ### <a name="to-edit-in-an-accelerator-table"></a>액셀러레이터 키 테이블에서 편집하려면
 
@@ -209,9 +204,7 @@ C + + 프로젝트에서 직접 사용 하 여 현재 위치에서 편집 액셀
 
 Win32
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
-[리소스 편집기](../windows/resource-editors.md)
-
-[액셀러레이터 키 테이블에서 편집](../windows/editing-in-an-accelerator-table.md)<br/>
+[리소스 편집기](../windows/resource-editors.md)<br/>
 [미리 정의된 액셀러레이터 키](../windows/predefined-accelerator-keys.md)<br/>
