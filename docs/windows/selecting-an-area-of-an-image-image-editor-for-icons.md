@@ -1,6 +1,6 @@
 ---
-title: 이미지 편집
-ms.date: 11/04/2016
+title: '방법: 이미지 편집'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.image.editing
 - vc.editors.image.editing
@@ -40,14 +40,14 @@ helpviewer_keywords:
 - Image editor [C++], Properties window
 - Properties window, image editor
 ms.assetid: 8b6ce4ad-eba1-4ece-86ba-cea92c3edff2
-ms.openlocfilehash: 928a37d1b85378c3c50f41dba441259ace2d3af9
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 906244b692253a8423af55eb91d46622087713e3
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320681"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336531"
 ---
-# <a name="editing-an-image"></a>이미지 편집
+# <a name="how-to-edit-an-image"></a>방법: 이미지 편집
 
 잘라내기, 복사, 지우기, 크기를 조정, 반전, 또는 이동 하려는 이미지의 영역을 정의 하려면 선택 도구를 사용할 수 있습니다. 사용 하 여 합니다 **사각형 선택** 도구를 정의 하 고 이미지의 사각형 영역을 선택할 수 있습니다. 사용 하 여 합니다 **부정형** 도구 잘라내기, 복사 또는 다른 작업에 대 한 선택 하려는 영역의 윤곽선을 자유롭게 그릴 수 있습니다.
 
@@ -56,9 +56,7 @@ ms.locfileid: "56320681"
 
 선택 영역에서 사용자 지정 브러시도 만들 수 있습니다. 자세한 내용은 [사용자 지정 브러시 만들기](../windows/creating-a-custom-brush-image-editor-for-icons.md)합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
-
-## <a name="selecting-an-image"></a>이미지 선택
+## <a name="select-an-image"></a>이미지를 선택 합니다.
 
 1. 에 **이미지 편집기** 도구 모음 (또는 합니다 **이미지** 메뉴에서 **도구** 명령), 원하는 선택 도구를 선택 합니다.
 
@@ -72,7 +70,7 @@ ms.locfileid: "56320681"
 
 1. 현재 선택 영역 외부의 이미지를 선택 합니다. 선택 영역 테두리 포커스 변경 및 다시 한 번에 전체 이미지를 포함 합니다.
 
-## <a name="editing-parts-of-an-image"></a>이미지의 일부 편집
+## <a name="edit-parts-of-an-image"></a>이미지의 일부를 편집 합니다.
 
 표준 편집 작업을 수행할 수 있습니다-잘라내기, 복사, 해제 및 이동-에 [선택](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md)의 일부 또는 전체 이미지 선택 인지, 합니다. 때문에 **이미지** 편집기를 사용 합니다 **Windows 클립보드**, 간에 이미지를 전송할 수 있습니다는 **이미지** 편집기 및 Windows 용 응용 프로그램.
 
@@ -119,7 +117,7 @@ ms.locfileid: "56320681"
 
 선택 하 여 드로잉에 대 한 자세한 내용은 참조 하세요. [사용자 지정 브러시 만들기](../windows/creating-a-custom-brush-image-editor-for-icons.md)합니다.
 
-## <a name="flipping-an-image"></a>이미지 대칭 이동
+## <a name="flip-an-image"></a>이미지 대칭 이동
 
 대칭 이동 하거나 원래의 미러 이미지를 만들기, 뒤집어 이미지, 또는 한 번에 이미지를 오른쪽 90도 회전 이미지 회전 수 있습니다.
 
@@ -132,7 +130,7 @@ ms.locfileid: "56320681"
    > [!NOTE]
    > 사용할 수도 있습니다는 [액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md) 이러한 명령에 대 한 바로 가기 메뉴 (이미지 편집기의 이미지 외부를 클릭)에서 명령에 액세스 또는 합니다.
 
-## <a name="resizing-an-image"></a>이미지 크기 조정
+## <a name="resize-an-image"></a>이미지 크기를 조정합니다
 
 동작을 **이미지** 이미지 크기 조정 하는 동안 편집기 인지에 따라 달라 집니다 [선택한](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) 전체 이미지 또는의 일부입니다.
 
@@ -185,7 +183,7 @@ ms.locfileid: "56320681"
 
 1. 선택 영역 오른쪽 크기가 될 때까지 크기 조정 핸들 중 하나를 끕니다.
 
-## <a name="editing-an-image-outside-of-a-project"></a>프로젝트 외부의 이미지 편집
+## <a name="edit-an-image-outside-of-a-project"></a>프로젝트 외부의 이미지 편집
 
 열고 모든 그래픽 응용 프로그램에서와 마찬가지로 개발 환경에서 이미지를 편집 합니다. 작업할 이미지에는 독립 실행형 편집을 위해 Visual Studio 프로젝트의 일부를 상태일 필요가 없습니다.
 
@@ -197,7 +195,7 @@ ms.locfileid: "56320681"
 
 1. 찾아 편집 하려는 이미지를 엽니다.
 
-## <a name="changing-image-properties"></a>이미지 속성 변경
+## <a name="change-image-properties"></a>이미지 속성 변경
 
 설정 하거나 사용 하 여 이미지의 속성을 수정할 수는 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
 

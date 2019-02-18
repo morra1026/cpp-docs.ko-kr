@@ -1,6 +1,6 @@
 ---
-title: 아이콘에 대한 이미지 편집기
-ms.date: 10/17/2018
+title: (C + +) 아이콘에 대 한 이미지 편집기
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.cursor.F1
 - vc.editors.icon.F1
@@ -42,14 +42,14 @@ helpviewer_keywords:
 - Image editor [C++], grid settings
 - grid settings, Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
-ms.openlocfilehash: 48b363b7b9021042fe6242be70c74f0daeade0c2
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 782462a4aeba72252c4d6043bd192f6892a3966f
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320707"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336581"
 ---
-# <a name="image-editor-for-icons"></a>아이콘에 대한 이미지 편집기
+# <a name="image-editor-for-icons-c"></a>(C + +) 아이콘에 대 한 이미지 편집기
 
 솔루션 탐색기에서 이미지 파일 (예:.ico,.bmp,.png)를 클릭 하면 이미지는 이미지 편집기에서 코드 파일이 코드 편집기에서 열려 있는 동일한 방식으로에서 열립니다. 이미지 편집기 탭이 활성화 되어 있으면 도구 모음 만들기 및 편집 이미지에 대 한 많은 도구를 사용 하 여 표시 됩니다. 비트맵, 아이콘 및 커서와 함께 명령을 사용 하 여 GIF 나 JPEG 형식의 이미지도 편집할 수 있습니다 합니다 **이미지** 메뉴와 도구의 합니다 **이미지 편집기** 도구 모음입니다.
 
@@ -232,13 +232,11 @@ ms.locfileid: "56320707"
 
 사용할 수는 **이미지** 편집기와 [바이너리 편집기](binary-editor.md) 관리 프로젝트에서 리소스 파일로 작업 하 합니다. 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기가 포함 된 리소스 편집을 지원 하지 않습니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
-
 ## <a name="requirements"></a>요구 사항
 
 없음
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [아이콘](https://msdn.microsoft.com/library/windows/desktop/ms646973.aspx)

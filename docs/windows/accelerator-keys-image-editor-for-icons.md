@@ -1,6 +1,6 @@
 ---
 title: 액셀러레이터 키 (아이콘에 대 한 c + + 이미지 편집기)
-ms.date: 11/04/2016
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - accelerator keys
 - Image editor [C++], accelerator keys
 ms.assetid: add37861-3e17-4a6f-89e8-46df12e74a90
-ms.openlocfilehash: 062b860849d968e18657afb66b568a1bf6f2b6d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 604f97edc8e4e49bad477d76e0e46334b8cf726b
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505107"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336540"
 ---
 # <a name="accelerator-keys-c-image-editor-for-icons"></a>액셀러레이터 키 (아이콘에 대 한 c + + 이미지 편집기)
 
@@ -59,10 +59,8 @@ ms.locfileid: "50505107"
 |이미지.더작은브러시|**Ctrl**  +  **-** (빼기)|브러시 크기를 각 방향마다 1픽셀씩 줄입니다. 브러시 크기를 다시 확장하려면 이 표의 이미지.더큰브러시를 참조하십시오.|
 |이미지.텍스트도구|**Ctrl** + **T**|열립니다는 [텍스트 도구 대화 상자](../windows/text-tool-dialog-box-image-editor-for-icons.md)합니다.|
 |Image.UseSelectionAsBrush|**Ctrl** + **U**|현재 선택 사항을 브러시로 사용하여 그립니다.|
-|이미지.확대|**Ctrl** + **Shift** + **합니다.** (마침표)<br /><br /> 또는<br /><br /> **Ctrl** + **위쪽 화살표**|현재 보기 비율을 늘립니다.|
+|이미지.확대|**Ctrl** + **Shift** + **.** (마침표)<br /><br /> 또는<br /><br /> **Ctrl** + **위쪽 화살표**|현재 보기 비율을 늘립니다.|
 |이미지.축소|**Ctrl** + **,** (쉼표)<br /><br /> 또는<br /><br /> **Ctrl** + **아래쪽 화살표**|현재 보기 비율을 줄입니다.|
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
 
 ## <a name="requirements"></a>요구 사항
 

@@ -1,6 +1,6 @@
 ---
-title: 그리기 도구 사용
-ms.date: 11/04/2016
+title: '방법: 그리기 도구 사용'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.image.drawing
 helpviewer_keywords:
@@ -16,16 +16,18 @@ helpviewer_keywords:
 - graphics [C++], custom brushes
 - custom brushes
 ms.assetid: 1f8c6eef-7760-45a9-a5cb-9e15c6f91245
-ms.openlocfilehash: 72224581e021a22b31ec5e6fa5940ff5a568a4e0
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 135509626e20044b0d4ec8e63d8916f4c537388e
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320551"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336555"
 ---
-# <a name="using-a-drawing-tool"></a>그리기 도구 사용
+# <a name="how-to-use-a-drawing-tool"></a>방법: 그리기 도구 사용
 
 합니다 **이미지** 편집기의 그리기 및 지우기 동일한 방식으로 작동 하는 도구에 자유롭게: 도구를 선택 및 필요한 경우 [전경색 및 배경색을 선택](../windows/selecting-foreground-or-background-colors-image-editor-for-icons.md) 크기 및 모양 옵션입니다. 다음 이미지에 포인터를 이동 하 고 클릭 하거나 그리기 및 지우기으로 끌어 옵니다.
+
+## <a name="drawing-tools"></a>그리기 도구
 
 선택 하는 경우는 **지우개** 도구인 **브러시** 도구인 또는 **에 어 브러시** 도구, 옵션 선택기에는 해당 도구의 옵션이 표시 됩니다.
 
@@ -34,7 +36,7 @@ ms.locfileid: "56320551"
 
 그리기 도구 중에서 선택할 수 있습니다 합니다 **이미지 편집기** 도구 모음 또는 **이미지** 메뉴.
 
-## <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>선택 하 고 이미지 편집기 도구 모음에서 그리기 도구 사용
+### <a name="to-select-and-use-a-drawing-tool-from-the-image-editor-toolbar"></a>선택 하 고 이미지 편집기 도구 모음에서 그리기 도구 사용
 
 1. 단추를 선택 합니다 **이미지 편집기** 도구 모음입니다.
 
@@ -65,7 +67,7 @@ ms.locfileid: "56320551"
 
 1. 연계 하위 메뉴를 사용 하려면이 도구를 선택 합니다.
 
-## <a name="drawing-lines-or-closed-figures"></a>선 또는 닫힌 그림 그리기
+## <a name="lines-or-closed-figures"></a>선 또는 닫힌된 그림
 
 선 그리기에 대 한 이미지 편집기 도구와 동일한 방식으로 닫힌된 그림 작동: 한 지점에 삽입점을 배치 및 다른 위치로 끕니다. 줄에 대 한 이러한 지점은 끝점입니다. 닫힌된 그림에서 이러한 지점은 그림 경계 사각형의 모퉁이 반대 됩니다.
 
@@ -97,7 +99,7 @@ ms.locfileid: "56320551"
 
 1. 대각선 방향으로 반대쪽 모퉁이에 대 한 포인터를 끕니다.
 
-## <a name="create-a-custom-brush"></a>사용자 지정 브러시 만들기
+## <a name="custom-brushes"></a>사용자 지정 브러시
 
 사용자 지정 브러시는 선택 하 고와 같이 사용할 수 있는 이미지의 사각형 부분을 **이미지** 편집기의 바로 사용할 수 있는 브러시입니다. 선택 영역에서 수행할 수 있는 모든 작업을 사용자 지정 브러시도 수행할 수 있습니다.
 
@@ -105,11 +107,7 @@ ms.locfileid: "56320551"
 
 1. [이미지의 일부 선택](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md) 브러시에 사용 하려는.
 
-1. 보유 하는 **Shift** 아래로 키 선택에서 선택 하 고 이미지를 끕니다.
-
-   \- 또는 -
-
-1. **이미지** 메뉴 선택 **사용 하 여 선택 항목을 브러시로**합니다.
+1. 포함 된 **Shift** 아래로 키 선택에서 선택 하 고 이미지를 끕니다. 또는 합니다 **이미지** 메뉴 선택 **사용 하 여 선택 항목을 브러시로**합니다.
 
    선택한은 이미지에 색 선택 영역에 분산 하는 사용자 지정 브러시 됩니다. 선택 항목의 복사본은 끌기 경로 남아 있습니다. 끌면 더 느린, 많은 복사본이 만들어집니다.
 
@@ -138,13 +136,11 @@ ms.locfileid: "56320551"
 
 키를 눌러 **Esc** 하거나 다른 그리기 도구를 선택 합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
-
 ## <a name="requirements"></a>요구 사항
 
 없음
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [액셀러레이터 키](../windows/accelerator-keys-image-editor-for-icons.md)<br/>
 [그래픽 리소스 편집](../windows/editing-graphical-resources-image-editor-for-icons.md)<br/>

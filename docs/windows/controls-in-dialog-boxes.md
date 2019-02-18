@@ -1,6 +1,6 @@
 ---
 title: 컨트롤이 대화 상자 (c + +) | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 02/15/2019
 f1_keywords:
 - Custom Control
 helpviewer_keywords:
@@ -13,12 +13,12 @@ helpviewer_keywords:
 - dialog box controls [C++], custom (user) controls
 - Dialog Editor [C++], custom controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
-ms.openlocfilehash: 1f231a376b335d7fb711ef2039c13f49624e6bfb
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: 6360491ebb4478ee4ce22115eced7ed672866565
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264844"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336516"
 ---
 # <a name="controls-in-dialog-boxes-c"></a>컨트롤이 대화 상자 (c + +)
 
@@ -30,25 +30,11 @@ ms.locfileid: "56264844"
 
 대화 상자에 컨트롤을 추가한 후에 해당 캡션 등의 속성을 변경할 수 있습니다 합니다 [속성 창](/visualstudio/ide/reference/properties-window)합니다. 여러 컨트롤을 선택할 수 있으며 해당 속성을 한 번에 변경할 수 있습니다.
 
-- [컨트롤 추가, 편집 및 삭제](adding-editing-or-deleting-controls.md)
+- [방법: Add, Edit, 또는 컨트롤 삭제](adding-editing-or-deleting-controls.md)
 
-- [컨트롤 선택](../windows/selecting-controls.md)
+- [방법: 컨트롤 정렬](../windows/arrangement-of-controls-on-dialog-boxes.md)
 
-- [각 컨트롤 크기 조정](../windows/sizing-individual-controls.md)
-
-- [컨트롤의 너비, 높이, 크기를 동일하게 만들기](../windows/making-controls-the-same-width-height-or-size.md)
-
-- [콤보 상자 및 드롭다운 목록의 크기 설정](setting-the-size-of-the-combo-box-and-its-drop-down-list.md)
-
-- [콤보 상자 컨트롤에 값 추가](../windows/adding-values-to-a-combo-box-control.md)
-
-- [가로 스크롤 막대 너비 설정](../windows/setting-the-width-of-a-horizontal-scroll-bar.md)
-
-- [대화 상자에서 컨트롤 정렬](../windows/arrangement-of-controls-on-dialog-boxes.md)
-
-- [니모닉(선택키) 정의](../windows/defining-mnemonics-access-keys.md)
-
-- [대화 상자의 위치와 크기 지정](../windows/specifying-the-location-and-size-of-a-dialog-box.md)
+- [방법: 액세스 제어 및 값 정의](../windows/defining-mnemonics-access-keys.md)
 
 사용할 수 있는 표준 컨트롤을 **도구 상자** 이벤트와 기본:
 
@@ -110,8 +96,6 @@ ms.locfileid: "56264844"
 - 컨트롤의 스타일을 설정 하는 32 비트 16 진수 값을 입력 합니다.
 
 - 확장된 스타일을 설정 합니다.
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 

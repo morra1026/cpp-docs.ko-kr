@@ -1,6 +1,6 @@
 ---
-title: 아이콘 또는 다른 이미지 만들기
-ms.date: 11/04/2016
+title: '방법: 아이콘 또는 다른 이미지 만들기'
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.bitmap
 - vc.editors.icon
@@ -87,14 +87,14 @@ helpviewer_keywords:
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 66db3fb2-cfc1-48a2-9bdd-53f61eb7ee30
-ms.openlocfilehash: 3ce4d10c9ab085973f1ab00dba205c22ff17f42f
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 69fffc71a7b5dfad12e70a9132fc61b11a0914cc
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320733"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336594"
 ---
-# <a name="creating-an-icon-or-other-image"></a>아이콘 또는 다른 이미지 만들기
+# <a name="how-to-create-an-icon-or-other-image"></a>방법: 아이콘 또는 다른 이미지 만들기
 
 새 이미지 (비트맵, 아이콘, 커서 또는 도구 모음)를 만들려면 다음 이미지 편집기를 사용 하 여 모양을 사용자 지정할 수 있습니다. 뒤에 패턴화 새 비트맵을 만들 수도 있습니다는 [템플릿](../windows/how-to-use-resource-templates.md)합니다.
 
@@ -133,13 +133,9 @@ ms.locfileid: "56320733"
 
 아이콘 또는 커서 리소스를 열면 합니다 [이미지 편집기](../windows/image-editor-for-icons.md), 기본적으로 열려 대부분의 현재 디스플레이 장치에 밀접 하 게 일치 하는 이미지입니다.
 
-#### <a name="new-ltdevicegt-image-type-dialog-box"></a>새 &lt;장치&gt; 이미지 형식 대화 상자
-
 합니다 **새로 만들기 &lt;장치&gt; 이미지 형식** 대화 상자를 사용 하면 지정 된 형식의 새 장치 이미지를 만들 수 있습니다. 열려는 합니다 **새로 만들기 \<장치 > 이미지** 대화 상자에서 **새 이미지 형식** 에 **이미지** 메뉴. 포함 된 다음과 같은 속성을 **대상 이미지 형식** 하 고 **사용자 지정**합니다.
 
-##### <a name="target-image-type"></a>대상 이미지 형식
-
-사용 가능한 이미지 목록을 표시 합니다. 열려는 이미지 형식 선택:
+합니다 **대상 이미지 형식** 속성 사용 가능한 이미지 목록을 표시 합니다. 열려는 이미지 형식 선택:
 
 ||||
 |-|-|-|
@@ -153,9 +149,7 @@ ms.locfileid: "56320733"
 > [!NOTE]
 > 기존 이미지가이 목록에 나타나지 않습니다.
 
-##### <a name="custom"></a>사용자 지정
-
-열립니다는 **사용자 지정 이미지** 대화 상자는 사용자 지정 크기와 색상 수를 사용 하 여 새 이미지를 만들 수 있습니다.
+**사용자 지정** 속성이 열립니다 합니다 **사용자 지정 이미지** 대화 상자는 사용자 지정 크기와 색상 수는 새 이미지를 만들 수 있습니다.
 
 합니다 **사용자 지정 이미지** 대화 상자를 사용 하면 사용자 지정 크기와 색상 수를 사용 하 여 새 이미지를 만들 수 있습니다. 포함 된 다음 속성은 다음과 같습니다.
 
@@ -164,8 +158,6 @@ ms.locfileid: "56320733"
 |**너비**|픽셀 (1-512 최대 2048)에서 사용자 지정 이미지의 너비를 입력할 공간을 제공 합니다.|
 |**높이**|사용자 지정 이미지 픽셀 (1-512 최대 2048)의 높이 입력할 공간을 제공 합니다.|
 |**색**|사용자 지정 이미지에 대 한 색의 수를 선택 하기 위한 공간을 제공 합니다. 2, 16, 또는 256입니다.|
-
-#### <a name="open-ltdevicegt-image-dialog-box"></a>오픈 &lt;장치&gt; 이미지 대화 상자
 
 사용 된 **엽니다 &lt;장치&gt; 이미지** c + + 프로젝트에서 장치 이미지를 열려면 대화 상자. 현재 리소스 (현재 리소스의 일부인 이미지)의 기존 장치 이미지를 나열 합니다. 포함 된 속성은:
 
@@ -184,13 +176,13 @@ ms.locfileid: "56320733"
 
    더하기 기호 (**+**)에서 이미지 리소스 형식을 옆에 표시 되는 **삽입 리소스** 대화 상자, 즉 모음 템플릿을 사용할 수 있습니다. 템플릿의 목록을 확장 하는 템플릿을 선택 하 고 선택 하려면 더하기 기호 **새로 만들기**합니다.
 
-### <a name="add-an-image-for-a-different-display-device"></a>다른 디스플레이 장치용 이미지 추가
+### <a name="to-add-an-image-for-a-different-display-device"></a>다른 디스플레이 장치용 이미지 추가 하려면
 
 1. 에 **이미지** 메뉴에서 **새 장치 이미지** (마우스 오른쪽 단추로 클릭 하거나는 **이미지 편집기** 창 선택 **새 장치 이미지** 에서 바로 가기 메뉴)입니다.
 
 1. 추가 하려는 이미지의 유형을 선택 합니다. 선택할 수도 있습니다 **사용자 지정** 크기가 기본 목록에서 사용할 수 없는 아이콘을 만들려고 합니다.
 
-### <a name="copy-a-device-image"></a>장치 이미지 복사
+### <a name="to-copy-a-device-image"></a>장치 이미지를 복사 하려면
 
 1. 에 **이미지** 메뉴에서 **장치 이미지 열기** 현재 이미지 목록에서 이미지를 선택 합니다. 예를 들어 32 × 32, 16 색 버전의 아이콘을 선택 합니다.
 
@@ -200,14 +192,14 @@ ms.locfileid: "56320733"
 
 1. 아이콘 이미지를 붙여 넣습니다 (**Ctrl**+**V**) 간에 **이미지 편집기** 다른 창입니다. 더 큰 크기를 더 작은 크기에 붙여넣을 경우 이미지 크기를 조정 하는 아이콘 핸들을 사용할 수 있습니다.
 
-### <a name="delete-a-device-image"></a>장치 이미지 삭제
+### <a name="to-delete-a-device-image"></a>장치 이미지를 삭제 하려면
 
 아이콘 이미지에 표시 되는 동안 합니다 **이미지** 편집기 선택 **장치 이미지 삭제** 에서 합니다 **이미지** 메뉴. 리소스의 마지막 아이콘 이미지를 삭제 하면 리소스가 삭제 됩니다.
 
    > [!NOTE]
    > 누를 때 합니다 **Del** 키, 이미지 및 아이콘 그린 색 삭제는 남아 있지만 이제 디자인할 수 있습니다. 키를 누르면 **Del** 눌러도 실수로 **Ctrl**+**Z** 작업을 취소 하 합니다.
 
-### <a name="create-transparent-or-inverse-regions-in-device-images"></a>장치 이미지에서 투명 하 게 또는 반전 영역 만들기
+### <a name="to-create-transparent-or-inverse-regions-in-device-images"></a>장치 이미지에서 투명 하 게 또는 반전 영역을 만드는 데
 
 에 [이미지 편집기](../windows/image-editor-for-icons.md), 초기 아이콘 또는 커서 이미지의 특성은 투명 합니다. 아이콘 및 커서 이미지는 사각형, 대부분 표시 되지 않습니다 있도록 이미지 부분; 투명 하 게 되므로 아이콘 또는 커서를 통해 화면에서 기본 이미지를 보여 줍니다. 아이콘을 끌어 이미지의 부분 반전된 된 색으로 나타날 수 있습니다. 화면색 및 반전색에서 설정 하 여 이러한 효과 낼 합니다 [색 창](../windows/colors-window-image-editor-for-icons.md)합니다.
 
@@ -344,13 +336,11 @@ GIF 또는 JPEG 이미지를 열 수를 **이미지** 편집기 비트맵으로 
    > [!NOTE]
    > 편집할 관리되는 리소스는 연결된 리소스여야 합니다. Visual Studio 리소스 편집기에서는 포함된 리소스를 편집할 수 없습니다. 자세한 내용은 [리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps) 에 *.NET Framework Developer's Guide*합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
-
 ## <a name="requirements"></a>요구 사항
 
 없음
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [비트맵을 도구 모음으로 변환](../windows/converting-bitmaps-to-toolbars.md)<br/>
 [새 도구 모음 만들기](../windows/creating-new-toolbars.md)<br/>
