@@ -1,4 +1,4 @@
----
+﻿---
 title: 모호한 선언 해결 (C++)
 ms.date: 11/04/2016
 ms.assetid: 3d773ee7-bbea-47de-80c2-cb0a9d4ec0b9

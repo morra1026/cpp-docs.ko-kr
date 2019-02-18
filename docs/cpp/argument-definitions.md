@@ -1,4 +1,4 @@
----
+﻿---
 title: 인수 정의
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -32,10 +32,10 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
 *argv*<br/>
 프로그램을 실행할 때 사용자가 입력한 명령줄 인수를 나타내는 null로 끝나는 문자열 배열입니다. 규칙에 따라 `argv[0]`은 프로그램이 호출되는 명령이고, `argv[1]`은 첫 번째 명령줄 인수이며 `argv[argc]`는 항상 NULL입니다. 명렬줄 처리를 없애려고 한다면 [명령줄 처리 사용자 지정](../cpp/customizing-cpp-command-line-processing.md)을 참조합니다.
 
-첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc - 1]`입니다.
+첫 번째 명령줄 인수는 항상 `argv[1]`이고 마지막 인수는 `argv[argc-1]`입니다.
 
 > [!NOTE]
-> 규칙상 `argv[0]`은 프로그램이 호출되는 명령입니다.  그러나 [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)를 사용하여 프로세스를 생성할 때 첫번째와 두번째 인수(*lpApplicationName*과 *lpCommandLine*)를 모두 사용하는 경우 `argv[0]`은 실행 파일 이름이 아닐 수도 있습니다. [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)을 사용하여 실행 파일 이름과 해당 정규화된 경로를 검색합니다.
+> 규칙상 `argv[0]`은 프로그램이 호출되는 명령입니다. 그러나 [CreateProcess](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)를 사용하여 프로세스를 생성할 때 첫번째와 두번째 인수(*lpApplicationName*과 *lpCommandLine*)를 모두 사용하는 경우 `argv[0]`은 실행 파일 이름이 아닐 수도 있습니다. [GetModuleFileName](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulefilenamea)을 사용하여 실행 파일 이름과 해당 정규화된 경로를 검색합니다.
 
 ## <a name="microsoft-specific"></a>Microsoft 전용
 

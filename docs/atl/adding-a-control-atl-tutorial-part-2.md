@@ -1,4 +1,4 @@
----
+﻿---
 title: 컨트롤 추가(ATL 자습서, 2부)
 ms.custom: get-started-article
 ms.date: 09/26/2018
@@ -43,7 +43,7 @@ ms.locfileid: "50428654"
 |**Type**|컨트롤에 대한 설명입니다.|
 |**ProgID**|컨트롤의 CLSID를 찾는 데 사용할 읽을 수 있는 이름입니다.|
 
-**ATL 컨트롤** 마법사에서 몇 가지 추가 설정을 확인해야 합니다.
+**ATL 컨트롤** 마법사에서 몇 가지 추가 설정을 확인해야 합니다.  
 
 ### <a name="to-enable-support-for-rich-error-information-and-connection-points"></a>다양한 오류 정보와 연결 지점에 대한 지원을 사용하도록 설정
 

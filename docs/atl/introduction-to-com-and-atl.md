@@ -1,4 +1,4 @@
----
+﻿---
 title: COM 및 ATL 소개
 ms.custom: index-page
 ms.date: 11/04/2016
@@ -36,4 +36,3 @@ COM을 구성하는 Windows SDK
 
 [ATL 클래스 개요](../atl/atl-class-overview.md)<br/>
 ATL 클래스에 대한 참조 정보와 링크를 제공합니다.
-

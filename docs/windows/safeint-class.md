@@ -1,4 +1,4 @@
----
+﻿---
 title: SafeInt 클래스
 ms.date: 10/22/2018
 ms.topic: reference

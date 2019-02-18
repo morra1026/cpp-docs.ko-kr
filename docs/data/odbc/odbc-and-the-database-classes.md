@@ -1,4 +1,4 @@
----
+﻿---
 title: ODBC 및 데이터베이스 클래스
 ms.date: 11/04/2016
 helpviewer_keywords:

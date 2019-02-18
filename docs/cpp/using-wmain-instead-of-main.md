@@ -1,4 +1,4 @@
----
+﻿---
 title: main 대신 wmain 사용
 ms.date: 11/04/2016
 f1_keywords:
