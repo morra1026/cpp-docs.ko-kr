@@ -1,6 +1,6 @@
 ---
 title: 대화 상자 편집기 (c + +)
-ms.date: 11/04/2016
+ms.date: 02/15/2019
 f1_keywords:
 - vc.editors.dialog.dialog
 - vc.editors.dialog.F1
@@ -23,12 +23,12 @@ helpviewer_keywords:
 - Dialog Editor [C++], switching between controls and code
 - Dialog Editor [C++], shortcut keys
 ms.assetid: d94884ef-2cca-49d8-9b58-775f34848134
-ms.openlocfilehash: 827a7610aa919d5349313346ac0bfa80bd0647b0
-ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
+ms.openlocfilehash: fef4a7f0d4c785a40ea946127d8e3c84c797e1aa
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "56264896"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336698"
 ---
 # <a name="dialog-editor-c"></a>대화 상자 편집기 (c + +)
 
@@ -38,28 +38,18 @@ ms.locfileid: "56264896"
 
 대화 상자를 템플릿으로 저장하여 다시 사용할 수 있습니다. 대화 상자 디자인과 이를 구현하는 코드 편집 간을 쉽게 전환할 수도 있습니다.
 
-대화 상자 편집기에서 단일 또는 여러 컨트롤의 속성을 편집할 수도 있습니다. 탭 순서를 변경할 수 있습니다, 컨트롤에 대 한 나타나는 순서 즉, 포커스를 **탭** 키를 누르면 또는 키보드를 사용 하 여 컨트롤을 선택할 수 있게 해 주는 액세스 키 (키 조합)을 정의할 수 있습니다. 미리 설정된 액세스 키 목록은 [대화 상자 편집기의 액셀러레이터 키](../windows/accelerator-keys-for-the-dialog-editor.md)를 참조하세요.
+대화 상자 편집기에서 단일 또는 여러 컨트롤의 속성을 편집할 수도 있습니다. 탭 순서를 변경할 수 있습니다, 컨트롤에 대 한 나타나는 순서 즉, 포커스를 **탭** 키를 누르면 또는 키보드를 사용 하 여 컨트롤을 선택할 수 있게 해 주는 액세스 키 (키 조합)을 정의할 수 있습니다.
 
 합니다 **대화 상자** 편집기에서는 ActiveX 컨트롤을 포함 하 여 사용자 지정 컨트롤을 사용할 수 있습니다. 또한 [폼 보기](../mfc/reference/cformview-class.md), [레코드 뷰](../data/record-views-mfc-data-access.md)또는 [대화 상자 모음](../mfc/dialog-bars.md)을 편집할 수 있습니다.
 
 Visual Studio 2015부터 컨트롤의 이동 및 사용자가 대화 상자 크기 조정의 크기를 조정 하는 방법을 지정 하는 동적 레이아웃을 정의 하려면 대화 상자 편집기를 사용할 수 있습니다. 자세한 내용은 [Dynamic Layout](../mfc/dynamic-layout.md)을 참조하세요.
 
-- [새 대화 상자 만들기](../windows/creating-a-new-dialog-box.md)
-
-- [런타임에 사용자가 종료할 수 없는 대화 상자 만들기](../windows/creating-a-dialog-box-that-users-cannot-exit.md)
+- [방법: 대화 상자를 만들려면](../windows/creating-a-new-dialog-box.md)
 
 - [대화 상자의 컨트롤](../windows/controls-in-dialog-boxes.md)
 
-- [대화 상자 컨트롤에 사용할 이벤트 처리기 추가](../windows/adding-event-handlers-for-dialog-box-controls.md)
-
-- [대화 상자 테스트](../windows/testing-a-dialog-box.md)
-
-- [대화 상자 편집기 문제 해결](../windows/troubleshooting-the-dialog-editor.md)
-
    > [!TIP]
-   > 사용 하는 동안 합니다 **대화 상자** 편집기, 대부분의 경우 자주 사용 되는 명령의 바로 가기 메뉴를 표시 하려면 마우스 오른쪽 단추 클릭 수 있습니다.
-
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
+   > 사용 하는 동안 합니다 **대화 상자** 편집기에서 많은 인스턴스를 선택할 수 있습니다 자주 사용 되는 명령의 바로 가기 메뉴를 표시 하려면 마우스 오른쪽 단추입니다.
 
 ## <a name="dialog-editor-toolbar"></a>대화 상자 편집기 도구 모음
 
@@ -132,7 +122,7 @@ MFC 응용 프로그램에서 대화 상자 컨트롤 처리기 코드로 이동
 
 Win32
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [리소스 편집기](../windows/resource-editors.md)<br/>
 [리소스 파일](../windows/resource-files-visual-studio.md)<br/>

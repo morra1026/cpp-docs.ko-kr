@@ -1,6 +1,6 @@
 ---
-title: 메뉴 명령 속성 (c + +)
-ms.date: 11/04/2016
+title: 메뉴 명령 (c + +)
+ms.date: 02/15/2019
 helpviewer_keywords:
 - menu items, properties
 - keyboard shortcuts [C++], menu association
@@ -17,14 +17,14 @@ helpviewer_keywords:
 - mnemonics [C++], uniqueness checking
 - Check Mnemonics command
 ms.assetid: 6d308205-3c9e-42f2-ab42-45e656940e45
-ms.openlocfilehash: 8989b96640bbb64eb5dcba09d60363dd0989263f
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 9f91973fdf2d5a45c631f24d3eed41482a91a834
+ms.sourcegitcommit: 24592ba0a38c7c996ffd3d55fe1024231a59ccc2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320577"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56336607"
 ---
-# <a name="menu-command-properties-c"></a>메뉴 명령 속성 (c + +)
+# <a name="menu-commands-c"></a>메뉴 명령 (c + +)
 
 아래 정보에 따라 구성 됩니다는 **메뉴** 에 표시 되는 속성을 [속성 창](/visualstudio/ide/reference/properties-window) 메뉴 명령을 선택 하면 합니다. 이러한 항목은 사전순 이지만 합니다 **속성** 창도 이러한 속성을 범주별으로 볼 수 있습니다.
 
@@ -47,8 +47,6 @@ ms.locfileid: "56320577"
 
 메뉴 명령과 키보드 조합에서 동일한 프로그램 명령을 종종 실행하도록 하려고 합니다. 사용 하 여 동일한 명령을 실행 합니다 **메뉴** 메뉴 명령 및 응용 프로그램의 액셀러레이터 키 테이블의 항목에 동일한 리소스 식별자를 할당 하는 편집기입니다. 그러고 나서 메뉴 명령의 [캡션](../windows/menu-command-properties.md) 을 편집하여 액셀러레이터 키의 이름을 표시합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
-
 ### <a name="to-associate-a-menu-command-with-an-accelerator-key"></a>메뉴 명령을 액셀러레이터 키와 연결하려면
 
 1. **메뉴** 편집기에서 원하는 메뉴 명령을 선택합니다.
@@ -59,13 +57,13 @@ ms.locfileid: "56320577"
 
    - 보조 키의 이름을 입력 합니다 (**Ctrl**를 **Alt**, 또는 **Shift**) 뒤에 더하기 기호 (**+**) 및 이름, 문자 또는 추가 키의 기호입니다.
 
-       예를 들어 할당할 **Ctrl**+**O** 에 **열기** 명령을 **파일** 메뉴에서 메뉴 명령의 수정 **캡션** 다음 텍스트와 표시 되도록 합니다.
+   예를 들어 할당할 **Ctrl**+**O** 에 **열기** 명령을 **파일** 메뉴에서 메뉴 명령의 수정 **캡션** 다음 텍스트와 표시 되도록 합니다.
 
-        ```
-        &Open...\tCtrl+O
-        ```
+   ```
+   &Open...\tCtrl+O
+   ```
 
-       메뉴 명령에는 **메뉴** 편집기 입력 한 대로 새 캡션이 반영 하도록 업데이트 됩니다.
+   메뉴 명령에는 **메뉴** 편집기 입력 한 대로 새 캡션이 반영 하도록 업데이트 됩니다.
 
 1. [액셀러레이터](../windows/adding-an-entry-to-an-accelerator-table.md) 편집기에서 **액셀러레이터 테이블 항목을 만들고** 메뉴 명령과 같은 식별자를 할당합니다. 기억하기 쉬운 키 조합을 사용합니다.
 
@@ -98,5 +96,4 @@ Win32
 ## <a name="see-also"></a>참고 항목
 
 [메뉴 편집기](../windows/menu-editor.md)<br/>
-[메뉴에 명령 추가](../windows/adding-commands-to-a-menu.md)<br/>
 [문자열 (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)<br/>
