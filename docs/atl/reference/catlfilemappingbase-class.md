@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFileMappingBase class
 ms.assetid: be555723-2790-4f57-a8fb-be4d68460775
-ms.openlocfilehash: 71b3b8621f4148f680337e9bce6ef469b90de746
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12a8159cbf28c64efe36357761f4f404ccff9541
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614381"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894018"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase 클래스
 
@@ -43,7 +43,7 @@ class CAtlFileMappingBase
 |이름|설명|
 |----------|-----------------|
 |[CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase)|생성자입니다.|
-|[CAtlFileMappingBase:: ~ CAtlFileMappingBase](#dtor)|소멸자입니다.|
+|[CAtlFileMappingBase::~CAtlFileMappingBase](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -96,7 +96,7 @@ CAtlFileMappingBase() throw();
 
 [!code-cpp[NVC_ATL_Utilities#71](../../atl/codesnippet/cpp/catlfilemappingbase-class_1.cpp)]
 
-##  <a name="dtor"></a>  CAtlFileMappingBase:: ~ CAtlFileMappingBase
+##  <a name="dtor"></a>  CAtlFileMappingBase::~CAtlFileMappingBase
 
 소멸자입니다.
 
@@ -193,7 +193,7 @@ HRESULT MapFile(
 파일을 매핑할 때 파일 보기에 대 한 필요한 보호 합니다. 참조 *flProtect* 에 [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK에 있습니다.
 
 *dwViewDesiredAccess*<br/>
-파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK에 있습니다.
+파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -201,7 +201,7 @@ HRESULT MapFile(
 
 ### <a name="remarks"></a>설명
 
-파일 매핑 개체;의 크기는 파일 매핑 개체를 만든 후 파일의 크기를 초과할 수 없습니다. 이 경우 파일의 내용 중 일부만 공유를 위해 제공 됩니다. 자세한 내용은 참조 하세요. [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) 하 고 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows sdk에서입니다.
+파일 매핑 개체;의 크기는 파일 매핑 개체를 만든 후 파일의 크기를 초과할 수 없습니다. 이 경우 파일의 내용 중 일부만 공유를 위해 제공 됩니다. 자세한 내용은 참조 하세요. [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) 하 고 [mapviewoffileex가](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows sdk에서입니다.
 
 ### <a name="example"></a>예제
 
@@ -239,7 +239,7 @@ HRESULT MapSharedMem(
 파일을 매핑할 때 파일 보기의 경우 필요한 보호 합니다. 참조 *flProtect* 에서 `CreateFileMapping` Windows SDK에 있습니다.
 
 *dwViewDesiredAccess*<br/>
-파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK에 있습니다.
+파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -273,7 +273,7 @@ HRESULT OpenMapping(
 시작 하려면 매핑 인 파일 오프셋입니다. 오프셋된 값을 시스템의 메모리 할당 세분성의 배수 여야 합니다.
 
 *dwViewDesiredAccess*<br/>
-파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK에 있습니다.
+파일 보기 및 따라서 파일에서 매핑된 페이지 보호에 대 한 액세스 형식을 지정 합니다. 참조 *dwDesiredAccess* 에 [mapviewoffileex가](/windows/desktop/api/memoryapi/nf-memoryapi-mapviewoffileex) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -314,7 +314,7 @@ HRESULT Unmap() throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [unmapviewoffile이](https://msdn.microsoft.com/library/windows/desktop/aa366882) 대 한 자세한 내용은 Windows SDK에 있습니다.
+참조 [unmapviewoffile이](/windows/desktop/api/memoryapi/nf-memoryapi-unmapviewoffile) 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

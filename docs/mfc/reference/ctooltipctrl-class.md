@@ -72,16 +72,16 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: 808d8b5f023e88b67458c514e871692aac94ccd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 177f6eeada942440c33f7dd0a0cbc6d9e59d867c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50500414"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894148"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 
-응용 프로그램 도구의 용도를 설명하는 텍스트 한 줄을 표시하는 작은 팝업 창인 "도구 설명 컨트롤"의 기능을 캡슐화합니다.
+애플리케이션 도구의 용도를 설명하는 텍스트 한 줄을 표시하는 작은 팝업 창인 "도구 설명 컨트롤"의 기능을 캡슐화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -287,7 +287,7 @@ virtual BOOL Create(CWnd* pParentWnd, DWORD dwStyle = 0);
 
 생성 된 `CToolTipCtrl` 두 단계에서. 먼저 생성 하는 생성자를 호출 합니다 `CToolTipCtrl` 개체를 호출 `Create` 도구 설명 컨트롤을 만들고 연결 하는 `CToolTipCtrl` 개체입니다.
 
-합니다 *dwStyle* 매개 변수 조합 될 수 있습니다 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다. 또한 도구 설명 컨트롤에 두 클래스 관련 스타일: TTS_ALWAYSTIP 및 TTS_NOPREFIX 합니다.
+합니다 *dwStyle* 매개 변수 조합 될 수 있습니다 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)합니다. 또한 도구 설명 컨트롤에는 두 가지 클래스 관련 스타일: TTS_ALWAYSTIP 및 TTS_NOPREFIX 합니다.
 
 |스타일|의미|
 |-----------|-------------|
@@ -616,7 +616,7 @@ BOOL HitTest(
 *pWnd*<br/>
 도구가 포함 된 창에 대 한 포인터입니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 에 대 한 포인터를 `CPoint` 테스트할 점의 좌표를 포함 하는 개체입니다.
 
 *lpToolInfo*<br/>
@@ -693,7 +693,7 @@ void RelayEvent(LPMSG lpMsg);
 ### <a name="parameters"></a>매개 변수
 
 *lpMsg*<br/>
-에 대 한 포인터를 [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) 릴레이에 메시지를 포함 하는 구조입니다.
+에 대 한 포인터를 [MSG](/windows/desktop/api/winuser/ns-winuser-msg) 릴레이에 메시지를 포함 하는 구조입니다.
 
 ### <a name="remarks"></a>설명
 

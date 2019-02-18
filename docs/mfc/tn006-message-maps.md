@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ON_COMMAND_EX macro [MFC]
 - message maps [MFC], Windows messaging
 ms.assetid: af4b6794-4b40-4f1e-ad41-603c3b7409bb
-ms.openlocfilehash: ab08476923f253d666e024d8944aec64ed0af8da
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 3536cb215da04fb7114853d3fa5d764585cbb58e
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693677"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894083"
 ---
 # <a name="tn006-message-maps"></a>TN006: 메시지 맵
 
@@ -50,7 +50,7 @@ MFC는 창에 전송 된 메시지를 처리 하도록 기존 Windows 기반 프
 
 - 보호 된 가상 함수 호출 `GetMessageMap` 의 주소를 반환 하는 *messageMap*합니다.
 
-이 매크로 메시지 맵을 사용 하 여 클래스의 선언에 배치 해야 합니다. 규칙으로 클래스 선언의 끝입니다. 예:
+이 매크로 메시지 맵을 사용 하 여 클래스의 선언에 배치 해야 합니다. 규칙으로 클래스 선언의 끝입니다. 예를 들어:
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -121,7 +121,7 @@ pWnd->SendMessage(WM_MYMESSAGE);
 
 ## <a name="registered-windows-messages"></a>등록 된 Windows 메시지
 
-합니다 [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) 함수를 사용 하는 시스템 전체에서 고유 하 게 보장 되는 새 창 메시지를 정의 합니다. ON_REGISTERED_MESSAGE 매크로 이러한 메시지 처리에 사용 됩니다. 이 매크로의 이름을 허용 된 *UINT 거의* 등록 된 windows 메시지 ID를 포함 하는 변수 예
+합니다 [RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) 함수를 사용 하는 시스템 전체에서 고유 하 게 보장 되는 새 창 메시지를 정의 합니다. ON_REGISTERED_MESSAGE 매크로 이러한 메시지 처리에 사용 됩니다. 이 매크로의 이름을 허용 된 *UINT 거의* 등록 된 windows 메시지 ID를 포함 하는 변수 예
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -213,7 +213,7 @@ ON_UPDATE_COMMAND_UI(id, memberFxn)
     }
     ```
 
-고급 사용자는 단일 명령 처리기를 사용 하 여 다양 한 명령 처리할 수 있습니다: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) 또는 ON_COMMAND_RANGE_EX 합니다. 이러한 매크로 대 한 자세한 내용은 제품 설명서를 참조 하세요.
+고급 사용자는 단일 명령 처리기를 사용 하 여 다양 한 명령 처리할 수 있습니다. [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) 또는 ON_COMMAND_RANGE_EX 합니다. 이러한 매크로 대 한 자세한 내용은 제품 설명서를 참조 하세요.
 
 > [!NOTE]
 > 클래스 마법사 만들기 ON_COMMAND 및 ON_UPDATE_COMMAND_UI 처리기를 지원 하지만 만들기 ON_COMMAND_EX 또는 ON_COMMAND_RANGE 처리기를 지원 하지 않습니다. 그러나 클래스 마법사 구문 분석 하 고 4 개의 명령 처리기 변형이 모두를 탐색할 수 있도록 합니다.

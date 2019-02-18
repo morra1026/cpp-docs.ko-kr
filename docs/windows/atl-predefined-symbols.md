@@ -1,16 +1,16 @@
 ---
 title: 미리 정의된 ATL 기호
-ms.date: 11/04/2016
+ms.date: 02/14/2019
 helpviewer_keywords:
 - symbols [C++], ATL predefined
 - ATL symbols
 ms.assetid: 60d8f4e6-6ed9-47f3-9051-e4bf34384456
-ms.openlocfilehash: 37d24dcfb65566b2b13c8b1ba8c826ec68271477
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb8b0db77b2add584e2fa8716a2d1821f5cae1fc
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654404"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320460"
 ---
 # <a name="atl-predefined-symbols"></a>미리 정의된 ATL 기호
 
@@ -24,9 +24,9 @@ ms.locfileid: "50654404"
 |IDIGNORE|컨트롤: 대화 상자 무시 단추|
 |IDNO|컨트롤: 대화 상자의 단추가 제공 되지 않음|
 |IDOK|컨트롤: 대화 상자의 확인 단추|
-|IDR_ACCELERATOR1|액셀러레이터 키 테이블 리소스:|
+|IDR_ACCELERATOR1|리소스: 액셀러레이터 키 테이블|
 |IDRETRY|컨트롤: 대화 상자 다시 시도 단추|
-|IDS_PROJNAME|현재 응용 프로그램 이름 문자열입니다.|
+|IDS_PROJNAME|문자열: 현재 응용 프로그램 이름|
 |IDYES|컨트롤: 대화 상자 예 단추|
 
 ## <a name="requirements"></a>요구 사항
@@ -36,4 +36,5 @@ ATL
 ## <a name="see-also"></a>참고 항목
 
 [미리 정의된 기호 ID](../windows/predefined-symbol-ids.md)<br/>
-[기호: 리소스 식별자](../windows/symbols-resource-identifiers.md)
+[미리 정의된 MFC 기호](../windows/mfc-predefined-symbols.md)<br/>
+[미리 정의된 Win32 기호](../windows/win32-predefined-symbols.md)<br/>

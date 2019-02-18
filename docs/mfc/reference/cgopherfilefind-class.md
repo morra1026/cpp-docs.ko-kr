@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-ms.openlocfilehash: 7d5c8ceeaeb87b2e0f099ac027bbacc744598e8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dafa313d9d2c7aae13e83a891c79d437ac276e08
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662412"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894499"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind 클래스
 
@@ -123,7 +123,7 @@ explicit CGopherFileFind(
 
 ### <a name="remarks"></a>설명
 
-기본값 *dwContext* MFC에서 전송한 합니다 `CGopherFileFind` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CGopherFileFind` 개체입니다. 생성 하는 경우는 `CGopherFileFind` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+기본값 *dwContext* MFC에서 전송한 합니다 `CGopherFileFind` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CGopherFileFind` 개체입니다. 생성 하는 경우는 `CGopherFileFind` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="findfile"></a>  CGopherFileFind::FindFile
 
@@ -191,7 +191,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 ### <a name="parameters"></a>매개 변수
 
 *pTimeStamp*<br/>
-에 대 한 포인터를 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 파일을 만든 시간을 포함 하는 구조입니다.
+에 대 한 포인터를 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 파일을 만든 시간을 포함 하는 구조입니다.
 
 *refTime*<br/>
 에 대 한 참조를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.
@@ -222,7 +222,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 에 대 한 참조를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.
 
 *pTimeStamp*<br/>
-에 대 한 포인터를 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 파일을 마지막으로 액세스 한 시간을 포함 하는 구조체.
+에 대 한 포인터를 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 파일을 마지막으로 액세스 한 시간을 포함 하는 구조체.
 
 ### <a name="return-value"></a>반환 값
 
@@ -247,7 +247,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 ### <a name="parameters"></a>매개 변수
 
 *pTimeStamp*<br/>
-에 대 한 포인터를 [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) 파일에 마지막으로 쓴 시간을 포함 하는 구조입니다.
+에 대 한 포인터를 [FILETIME](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) 파일에 마지막으로 쓴 시간을 포함 하는 구조입니다.
 
 *refTime*<br/>
 에 대 한 참조를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 개체입니다.

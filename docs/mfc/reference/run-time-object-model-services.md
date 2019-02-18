@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: fb5d35782e70924605fd344e2c330e18d611f44c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fce6fb938b501da7bc9251de51c71714e4613fd5
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519211"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850287"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 
@@ -25,7 +25,7 @@ Serialization은 쓰거나 읽을 하거나 개체의 내용을 파일에서의 
 
 다음 표에서 런타임 클래스 정보, serialization 및 동적 생성을 지 원하는 MFC 매크로 나열 합니다.
 
-이러한 런타임 개체 서비스와 serialization에 대 한 자세한 내용은 문서 참조 [CObject 클래스: 런타임 클래스 정보 액세스](../../mfc/accessing-run-time-class-information.md)합니다.
+이러한 런타임 개체 서비스와 serialization에 대 한 자세한 내용은 문서를 참조 하세요. [CObject 클래스: 런타임 클래스 정보 액세스](../../mfc/accessing-run-time-class-information.md)합니다.
 
 ### <a name="run-time-object-model-services-macros"></a>런타임 개체 모델 서비스 매크로
 
@@ -68,7 +68,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
 
 ### <a name="parameters"></a>매개 변수
 
-*프로시저*<br/>
+*proc*<br/>
 함수 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터 또는 함수의 서 수 값을 지정 합니다. 하위 단어;에 있어야이 매개 변수 서 수 값 인 경우 상위 단어에는 0 이어야 합니다. 이 매개 변수는 유니코드 여야 합니다.
 
 ### <a name="remarks"></a>설명
@@ -78,11 +78,6 @@ AFX_COMCTL32_IF_EXISTS(  proc );
 ### <a name="requirements"></a>요구 사항
 
 afxcomctl32.h, afxcomctl32.inl이
-
-### <a name="see-also"></a>참고 항목
-
-[MFC 공용 컨트롤 라이브러리 격리](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS2](#afx_comctl32_if_exists2)
 
 ## <a name="afx_comctl32_if_exists2"></a>  AFX_COMCTL32_IF_EXISTS2
 
@@ -96,7 +91,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
 
 ### <a name="parameters"></a>매개 변수
 
-*프로시저*<br/>
+*proc*<br/>
 함수 이름을 포함 하는 null로 끝나는 문자열에 대 한 포인터 또는 함수의 서 수 값을 지정 합니다. 하위 단어;에 있어야이 매개 변수 서 수 값 인 경우 상위 단어에는 0 이어야 합니다. 이 매개 변수는 유니코드 여야 합니다.
 
 ### <a name="remarks"></a>설명
@@ -106,11 +101,6 @@ AFX_COMCTL32_IF_EXISTS2( proc );
 ### <a name="requirements"></a>요구 사항
 
 afxcomctl32.h, afxcomctl32.inl이
-
-### <a name="see-also"></a>참고 항목
-
-[MFC 공용 컨트롤 라이브러리 격리](../isolation-of-the-mfc-common-controls-library.md)<br/>
-[AFX_COMCTL32_IF_EXISTS](#afx_comctl32_if_exists)
 
 ##  <a name="declare_dynamic"></a>  DECLARE_DYNAMIC
 
@@ -200,10 +190,6 @@ DECLARE_OLECTLTYPE( class_name )
 
 **헤더:** afxctl.h
 
-### <a name="see-also"></a>참고 항목
-
-[IMPLEMENT_OLECTLTYPE](#implement_olectltype)
-
 ## <a name="declareproppageids"></a>DECLARE_PROPPAGEIDS
 
 OLE 컨트롤 속성을 표시 하도록 속성 페이지의 목록을 제공 하는 선언 합니다.
@@ -223,16 +209,11 @@ DECLARE_PROPPAGEIDS( class_name )
 
 사용 된 `DECLARE_PROPPAGEIDS` 클래스 선언의 끝 매크로입니다. 그런 다음 클래스의 멤버 함수를 정의 하는.cpp 파일에서 사용 하 여 합니다 `BEGIN_PROPPAGEIDS` 매크로, 각 컨트롤의 속성 페이지에 대해 매크로 항목 및 `END_PROPPAGEIDS` 속성 페이지 목록의 끝을 선언 하는 매크로입니다.
 
-속성 페이지에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: 속성 페이지](../mfc-activex-controls-property-pages.md)합니다.
+속성 페이지에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 속성 페이지](../mfc-activex-controls-property-pages.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxctl.h
-
-### <a name="see-also"></a>참고 항목
-
-[BEGIN_PROPPAGEIDS](#begin_proppageids)<br/>
-[END_PROPPAGEIDS](#end_proppageids)
 
 ##  <a name="declare_serial"></a>  DECLARE_SERIAL
 
@@ -382,12 +363,6 @@ OLE 클래스 ID가 고유 128 비트 식별자 개체입니다. 하나 이루�
 
 **헤더:** afxdisp.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[DECLARE_OLECREATE](#declare_olecreate)<br/>
-[CLSID 키](/windows/desktop/com/clsid-key-hklm)
-
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
 
 구현 된 `GetUserTypeNameID` 고 `GetMiscStatus` 컨트롤 클래스의 멤버 함수입니다.
@@ -416,16 +391,11 @@ IMPLEMENT_OLECTLTYPE, 외에도 DECLARE_OLECTLTYPE 매크로 컨트롤 클래스
 `GetUserTypeNameID` 멤버 함수는 사용자 컨트롤 클래스를 식별 하는 리소스 문자열을 반환 합니다. `GetMiscStatus` 컨트롤에 대 한 OLEMISC 비트를 반환합니다. 이 열거형 컨트롤의 기타 특성을 설명 하는 설정의 컬렉션을 지정 합니다. 에 대 한 전체 설명은 OLEMISC 설정을 참조 하세요 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK에 있습니다.
 
 > [!NOTE]
->  ActiveX 컨트롤에서 사용 하는 기본 설정이: OLEMISC_ACTIVATEWHENVISIBLE "," OLEMISC_SETCLIENTSITEFIRST "," OLEMISC_INSIDEOUT "," OLEMISC_CANTLINKINSIDE, "및" OLEMISC_RECOMPOSEONRESIZE 합니다.
+>  ActiveX 컨트롤에서 사용 하는 기본 설정은 다음과 같습니다. OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST, OLEMISC_INSIDEOUT, OLEMISC_CANTLINKINSIDE, 및 OLEMISC_RECOMPOSEONRESIZE 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxctl.h
-
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[DECLARE_OLECTLTYPE](#declare_olectltype)
 
 ##  <a name="implement_serial"></a>  IMPLEMENT_SERIAL
 
@@ -547,7 +517,9 @@ OLE 클래스 ID가 고유 128 비트 식별자 개체입니다. 하나 이루�
 
 **헤더**: afxdisp.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)
+[매크로 및 전역](mfc-macros-and-globals.md)<br/>
+[MFC 공용 컨트롤 라이브러리 격리](../isolation-of-the-mfc-common-controls-library.md)<br/>
+[CLSID 키](/windows/desktop/com/clsid-key-hklm)
 

@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-ms.openlocfilehash: 570611c335130039495b13624737b820144cb7f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1252f97a93e67348a00c9809e3f216d4ed63c4d8
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545836"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893681"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl 클래스
 
@@ -87,7 +87,7 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 |[CMFCToolBarDateTimeCtrl::GetDateTimeCtrl](#getdatetimectrl)|날짜 및 시간 선택 컨트롤에 대 한 포인터를 반환합니다.|
 |[CMFCToolBarDateTimeCtrl::GetHwnd](#gethwnd)|도구 모음 단추와 연결 된 창 핸들을 검색 합니다. (재정의 [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).)|
 |`CMFCToolBarDateTimeCtrl::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
-|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|날짜 및 시간 선택 컨트롤에서 선택한 시간을 가져오고 지정 된 배치 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.|
+|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|날짜 및 시간 선택 컨트롤에서 선택한 시간을 가져오고 지정 된 배치 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조입니다.|
 |[CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall)|지정 된 명령 ID가 있는 시간 선택 컨트롤 단추에서 선택한 시간을 반환 합니다.|
 |[CMFCToolBarDateTimeCtrl::HaveHotBorder](#havehotborder)|사용자가 단추를 선택할 때 단추의 테두리가 표시 되는지 여부를 결정 합니다. (재정의 [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|
 |[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|단추를 처리 하는지 여부를 지정 합니다 [WM_COMMAND](/windows/desktop/menurc/wm-command) 메시지입니다. (재정의 [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|
@@ -110,7 +110,7 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 
 ## <a name="remarks"></a>설명
 
-날짜 및 시간 선택 컨트롤을 사용 하는 방법의 예로, ToolbarDateTimePicker 샘플 프로젝트를 참조 하세요. 도구 모음 단추 컨트롤을 추가 하는 방법에 대 한 정보를 참조 하세요 [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)합니다.
+날짜 및 시간 선택 컨트롤을 사용 하는 방법의 예로, ToolbarDateTimePicker 샘플 프로젝트를 참조 하세요. 도구 모음 단추 컨트롤을 추가 하는 방법에 대 한 정보를 참조 하세요. [연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)합니다.
 
 ## <a name="inheritance-hierarchy"></a>상속 계층
 
@@ -203,7 +203,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*MenuButton*<br/>
+*menuButton*<br/>
 [in] 대상 메뉴 단추에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -269,7 +269,7 @@ virtual HWND GetHwnd();
 
 ##  <a name="gettime"></a>  CMFCToolBarDateTimeCtrl::GetTime
 
-지정 된 배치 및 연결 된 날짜 및 시간 선택 컨트롤에서 선택한 시간을 가져옵니다 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조
+지정 된 배치 및 연결 된 날짜 및 시간 선택 컨트롤에서 선택한 시간을 가져옵니다 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조
 
 ```
 BOOL GetTime(COleDateTime& timeDest) const;
@@ -283,7 +283,7 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 [out] 첫 번째 오버 로드에는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 오버 로드에는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.
 
 *pTimeDest*<br/>
-[out] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.
+[out] 에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -320,7 +320,7 @@ static DWORD GetTimeAll(
 [out] 첫 번째 오버 로드에는 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 시스템 시간 정보를 받게 될 개체입니다. 두 번째 오버 로드에는 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 시스템 시간 정보를 받게 될 개체입니다.
 
 *pTimeDest*<br/>
-[out] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.
+[out] 에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 시스템 시간 정보를 받는 구조체입니다. NULL이 아니어야 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -564,7 +564,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 [in] 첫 번째 버전에서는에 대 한 참조를 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다.
 
 *pTimeNew*<br/>
-[in] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.
+[in] 에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 컨트롤은 설정할 시간을 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -601,7 +601,7 @@ static BOOL SetTimeAll(
 [in] 첫 번째 버전에서을 [COleDateTime 클래스](../../atl-mfc-shared/reference/coledatetime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다. 두 번째 버전에서는에 대 한 포인터를 [CTime](../../atl-mfc-shared/reference/ctime-class.md) 컨트롤은 설정할 시간을 포함 하는 개체입니다.
 
 *pTimeNew*<br/>
-[in] 에 대 한 포인터를 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 컨트롤은 설정할 시간을 포함 하는 구조입니다.
+[in] 에 대 한 포인터를 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 컨트롤은 설정할 시간을 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -616,5 +616,5 @@ static BOOL SetTimeAll(
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
-[연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
+[연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)
 

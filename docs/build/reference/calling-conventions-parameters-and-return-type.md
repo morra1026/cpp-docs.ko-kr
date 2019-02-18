@@ -1,17 +1,17 @@
 ---
 title: 호출 규칙, 매개 변수, 반환 형식
-ms.date: 11/04/2016
+ms.date: 02/13/2019
 helpviewer_keywords:
 - calling conventions, helper functions
 - helper functions, calling conventions
 - helper functions, return types
 ms.assetid: 0ffa4558-6005-4803-be95-7a8ec8837660
-ms.openlocfilehash: 8343c17828040ca36b042cb99e0c51c37548d3b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15631b305246cbfd7dcd8081cb1ee488bf225fec
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654430"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264805"
 ---
 # <a name="calling-conventions-parameters-and-return-type"></a>호출 규칙, 매개 변수, 반환 형식
 
@@ -27,12 +27,12 @@ FARPROC WINAPI __delayLoadHelper2(
 ### <a name="parameters"></a>매개 변수
 
 *pidd*<br/>
-다양한 가져오기 관련 데이터의 오프셋, 바인딩 정보에 대한 타임스탬프 및 설명자 콘텐츠에 대한 추가 정보를 제공하는 특성 집합이 포함된 `const`(delayimp.h 참조)에 대한 `ImgDelayDescr` 포인터입니다. 현재 설명자의 주소가 상대 가상 주소(가상 주소의 반대)임을 나타내는 `dlattrRva` 특성만 있습니다.
+A `const` 에 대 한 포인터를 `ImgDelayDescr` 포함 하는 다양 한 가져오기 관련 데이터, 바인딩 정보에 대 한 타임 스탬프 및 설명자 콘텐츠에 대 한 추가 정보를 제공 하는 특성 집합의 오프셋입니다. 현재는 하나의 특성만 `dlattrRva`를 나타내는 설명자의 주소가 상대 가상 주소입니다. 자세한 내용은 참조의 선언과 *delayimp.h*합니다.
 
 정의 대해서는 `PCImgDelayDescr` 구조체를 참조 하십시오 [구조체 및 상수 정의](../../build/reference/structure-and-constant-definitions.md)합니다.
 
 *ppfnIATEntry*<br/>
-가져온 함수의 주소로 업데이트되는 지연 로드된 IAT(가져오기 주소 테이블)의 슬롯 포인터입니다. 도우미 루틴은 이 위치에 반환할 값과 동일한 값을 저장해야 합니다.
+가져온 함수의 주소로 업데이트 되는 지연 로드 가져오기 주소 테이블 (IAT)의 슬롯 포인터입니다. 도우미 루틴은이 위치에 반환 되는 동일한 값을 저장 해야 합니다.
 
 ## <a name="expected-return-values"></a>예상 반환 값
 
@@ -44,13 +44,14 @@ FARPROC WINAPI __delayLoadHelper2(
 
 - 지정된 DLL에서 실패한 `LoadLibrary`
 
-- `GetProcAddress`의 실패
+- 
+  `GetProcAddress`의 실패
 
-이러한 예외를 처리하는 것은 사용자의 책임입니다.
+이러한 예외를 처리 해야 하는 것입니다.
 
 ## <a name="remarks"></a>설명
 
-도우미 함수의 호출 규칙은 `__stdcall`입니다. 반환 값의 형식이 관련 없으므로 FARPROC가 사용됩니다. 이 함수에는 C 링크가 있습니다.
+도우미 함수의 호출 규칙은 `__stdcall`입니다. 반환 값 유형의 관련이 관련 없으므로 FARPROC가 사용 됩니다. 이 함수에는 C 링크가 있습니다.
 
 도우미 루틴을 알림 후크로 사용하지 않으려는 경우에는 지연 로드 도우미의 반환 값을 전달된 함수 포인터 위치에 저장해야 합니다. 이러한 경우 사용자 코드가 반환할 적절한 함수 포인터 찾기를 담당합니다. 그러면 링커가 생성한 썽크 코드가 해당 반환 값을 가져오기의 실제 대상으로 인식하여 해당 대상으로 직접 이동합니다.
 
@@ -131,10 +132,10 @@ FARPROC WINAPI delayHook(unsigned dliNotify, PDelayLoadInfo pdli)
 
 /*
 and then at global scope somewhere
-PfnDliHook __pfnDliNotifyHook2 = delayHook;
+const PfnDliHook __pfnDliNotifyHook2 = delayHook;
 */
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [도우미 함수 이해](../../build/reference/understanding-the-helper-function.md)

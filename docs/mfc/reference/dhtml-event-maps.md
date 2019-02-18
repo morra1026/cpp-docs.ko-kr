@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 75ceaf3d0532a557f5227e64edece2155aacb72f
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 306fb718e7c333e6ff603b7c6c88c10f03f567b5
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519871"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850339"
 ---
 # <a name="dhtml-event-maps"></a>DHTML 이벤트 맵
 
@@ -93,7 +93,7 @@ BEGIN_DHTML_EVENT_MAP(className)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 DHTML 이벤트 맵을 포함 하는 클래스의 이름입니다. 이 클래스에 직접 또는 간접적으로에서 파생 되어야 [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) 등과 합니다 [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) 해당 클래스 정의 내에서 매크로입니다.
 
 ### <a name="remarks"></a>설명
@@ -118,7 +118,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 DHTML 이벤트 맵을 포함 하는 클래스의 이름입니다. 이 클래스에 직접 또는 간접적으로에서 파생 되어야 [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) 등과 합니다 [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) 해당 클래스 정의 내에서 매크로입니다.
 
 ### <a name="remarks"></a>설명
@@ -195,7 +195,7 @@ DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
 *dispid*<br/>
 처리할 이벤트의 디스패치 ID입니다.
 
-*컨트롤 이름*<br/>
+*controlName*<br/>
 이벤트를 시작 하는 컨트롤의 HTML ID를 보유 하는 LPCWSTR 합니다.
 
 *memberFxn*<br/>
@@ -979,10 +979,10 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 이벤트 맵을 포함 하는 클래스의 이름입니다. 이 클래스에서 직접 또는 간접적으로 파생 시켜야 [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)합니다. 포함 된 DHTML 이벤트 맵 내에 있어야 합니다.는 [DHTML 및 URL 이벤트 맵](#begin_dhtml_url_event_map)).
 
-*맵 이름*<br/>
+*mapName*<br/>
 이 이벤트 매핑 페이지를 지정 합니다. 일치 *맵 이름* 에 [URL_EVENT_ENTRY](#url_event_entry) 실제로 URL 또는 HTML 리소스를 정의 하는 매크로입니다.
 
 ### <a name="remarks"></a>설명
@@ -1011,7 +1011,7 @@ BEGIN_URL_ENTRIES(className)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 URL 이벤트 항목 맵을 포함하는 클래스의 이름입니다. 이 클래스에서 직접 또는 간접적으로 파생 시켜야 [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)합니다. URL 이벤트 항목 맵 내에 있어야 합니다.는 [DHTML 및 URL 이벤트 맵](#begin_dhtml_url_event_map)).
 
 ### <a name="remarks"></a>설명
@@ -1054,7 +1054,7 @@ END_DHTML_URL_EVENT_MAP(className)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 이벤트 맵을 포함 하는 클래스의 이름입니다. 이 클래스에서 직접 또는 간접적으로 파생 시켜야 [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)합니다. 이 일치 해야 *className* 해당 [BEGIN_DHTML_URL_EVENT_MAP](#begin_dhtml_url_event_map) 매크로입니다.
 
 ### <a name="example"></a>예제
@@ -1107,13 +1107,13 @@ URL_EVENT_ENTRY(className, url,  mapName)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 URL 이벤트 항목 맵을 포함하는 클래스의 이름입니다. 이 클래스에서 직접 또는 간접적으로 파생 시켜야 [CMultiPageDHtmlDialog](../../mfc/reference/cmultipagedhtmldialog-class.md)합니다. URL 이벤트 항목 맵 내에 있어야 합니다.는 [DHTML 및 URL 이벤트 맵](#begin_dhtml_url_event_map)).
 
-*Url*<br/>
+*url*<br/>
 페이지에 대 한 URL 또는 HTML 리소스입니다.
 
-*맵 이름*<br/>
+*mapName*<br/>
 URL이 페이지를 지정 *url*합니다. 일치 *맵 이름* 에 [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) 이 페이지에서 이벤트를 매핑하는 매크로입니다.
 
 ### <a name="remarks"></a>설명
@@ -1148,6 +1148,6 @@ END_DHTML_EVENT_MAP_INLINE( )
 
 **헤더:** afxdhtml.h
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고 항목
 
 [매크로 및 전역](mfc-macros-and-globals.md)

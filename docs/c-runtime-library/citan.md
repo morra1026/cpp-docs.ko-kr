@@ -11,6 +11,7 @@ apilocation:
 - msvcr110.dll
 - msvcr90.dll
 - msvcr120.dll
+- api-ms-win-crt-math-l1-1-0.dll
 apitype: DLLExport
 f1_keywords:
 - _CItan
@@ -19,12 +20,12 @@ helpviewer_keywords:
 - CItan intrinsic
 - _CItan intrinsic
 ms.assetid: d1ea3113-50a2-45a6-b6bc-680fcdcc0928
-ms.openlocfilehash: fdefe8674ede78de194fbb884bd2c90fe0a96d06
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d64ce3e187a055185a82868988825c418b3f54bd
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650699"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55702871"
 ---
 # <a name="citan"></a>_CItan
 
@@ -36,7 +37,7 @@ ms.locfileid: "50650699"
 void __cdecl _CItan();
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 버전의 [tan](../c-runtime-library/reference/tan-tanf-tanl.md) 함수에는 컴파일러에서 인식할 수 있는 특별한 호출 규칙이 있습니다. 이 함수는 복사본이 생성되지 않도록 하며 레지스터 할당을 돕기 때문에 실행 속도를 높입니다.
 

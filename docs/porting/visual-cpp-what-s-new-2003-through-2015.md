@@ -2,12 +2,12 @@
 title: Visual C++ 2003 ~ 2015의 새로운 기능
 ms.date: 11/04/2016
 ms.assetid: c4afde6f-3d75-40bf-986f-be57e3818e26
-ms.openlocfilehash: 6d79406e07b8839e196f15d9bc3aed96cbc3dca8
-ms.sourcegitcommit: 31a2a9845f5e1d35ab054906d8cdc6582a5220bd
+ms.openlocfilehash: bc0092aeb8910f960befc174c1f71ce05c4eb131
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51520184"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894356"
 ---
 # <a name="visual-c-what39s-new-2003-through-2015"></a>Visual C++ 2003 ~ 2015의 새로운 기능
 
@@ -1279,7 +1279,7 @@ Visual Studio 2015 이상 버전에서 컴파일러 규칙이 지속적으로 �
 
    이 변경과 관련된 컴파일러 진단은 없습니다.
 
-   예
+   예제
 
    ```cpp
     #include <type_traits>
@@ -1797,7 +1797,7 @@ Microsoft 특정 **__nullptr** 키워드는 **nullptr**과 같은 의미이지�
 
 **새 /clr:nostdlib CLR(공용 언어 런타임) 옵션** `/clr`(공용 언어 런타임 컴파일)에 대한 새 옵션이 추가되었습니다. 동일한 라이브러리의 서로 다른 버전이 포함되면 컴파일 오류가 발생합니다. 새 옵션을 사용하면 프로그램에서 지정된 버전을 사용할 수 있도록 기본 CLR 라이브러리를 제외할 수 있습니다.
 
-**새 detect_mistmatch pragma 지시문** detect_mismatch pragma 지시문을 사용하면 동일한 이름을 가진 다른 태그와 비교되는 태그를 파일에 추가할 수 있습니다. 같은 이름에 대해 여러 값이 있으면 링커에서 오류가 발생합니다.
+**새 pragma 지시문 detect_mismatch** detect_mismatch pragma 지시문을 사용하면 동일한 이름을 가진 다른 태그와 비교되는 태그를 파일에 추가할 수 있습니다. 같은 이름에 대해 여러 값이 있으면 링커에서 오류가 발생합니다.
 
 **XOP, FMA4 및 LWP 내장 함수** Visual Studio 2010 SP1 프로세서 기술용으로 추가된 XOP, FMA4 및 LWP 내장 함수를 지원하는 새로운 내장 함수가 추가되었습니다. 특정 컴퓨터에서 지원되는 프로세서 기술을 확인하려면 __cpuid, __cpuidex를 사용합니다.
 
@@ -2197,7 +2197,7 @@ __sptr, __uptr
 
 - 이전 버전의 런타임에서 현재 버전의 컴파일러를 사용하여 빌드된 Managed Extensions for C++ 애플리케이션을 실행하는 방법에 대한 정보.
 - Managed Extensions for C++에 대한 FAQ(질문과 대답)
-- Managed Extensions for C++를 사용하도록 기존 네이티브 애플리케이션을 이식하는 방법을 보여 주는 연습(연습: .NET Framework 구성 요소와 상호 운용하도록 기존 네이티브 C++ 애플리케이션 이식)이 추가되었습니다.
+- 기존 네이티브 애플리케이션을 이식하여 Managed Extensions for C++를 사용하는 방법을 보여주는 연습이 추가되었습니다. 연습: .NET Framework 구성 요소와 상호 운용하기 위해 기존 네이티브 C++ 애플리케이션 이식
 - 값 형식의 메서드에 대리자를 만들 수 있습니다.
 - Visual C++ .NET 2003에 대한 컴파일러의 C++ 표준 준수가 크게 향상되었습니다.
 - `/arch` 컴파일러 옵션이 추가되었습니다.

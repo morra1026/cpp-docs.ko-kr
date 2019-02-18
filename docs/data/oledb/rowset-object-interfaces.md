@@ -17,7 +17,7 @@ ms.locfileid: "51556584"
 ---
 # <a name="rowset-object-interfaces"></a>행 집합 개체 인터페이스
 
-다음 표에서 행 집합 개체에 대 한 OLE DB에서 정의 된 필수 및 선택적 인터페이스를 보여 줍니다.
+다음 표는 OLE DB가 행 집합 개체에 대해 정의한 필수 인터페이스와 선택적 인터페이스를 보여 줍니다.
 
 |인터페이스|필수 여부|OLE DB 템플릿에서 구현 되었습니까?|
 |---------------|---------------|--------------------------------------|
@@ -46,7 +46,7 @@ ms.locfileid: "51556584"
 |[ISupportErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms715816(v=vs.85))|Optional|예|
 |[IRowsetBookmark](https://docs.microsoft.com/previous-versions/windows/desktop/ms714246(v=vs.85))|Optional|아니요|
 
-마법사에서 생성 된 행 집합 개체에 구현 `IAccessor`, `IRowset`, 및 `IRowsetInfo` 상속을 통해. `IAccessorImpl` 모두 출력 열을 바인딩합니다. `IRowset` 인출 행 및 데이터를 처리 하는 인터페이스입니다. `IRowsetInfo` 행 집합 속성을 처리 하는 인터페이스입니다.
+마법사가 생성한 행 집합 개체는 상속을 통해 `IAccessor`, `IRowset` 및 `IRowsetInfo`를 구현합니다. `IAccessorImpl` 인터페이스는 출력 열을 바인딩합니다. `IRowset` 인터페이스는 행과 데이터 페치를 처리합니다. `IRowsetInfo` 인터페이스는 행 집합 속성을 처리합니다.
 
 ## <a name="see-also"></a>참고 항목
 

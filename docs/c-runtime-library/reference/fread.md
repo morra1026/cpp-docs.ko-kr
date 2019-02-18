@@ -24,12 +24,12 @@ helpviewer_keywords:
 - data [C++], reading from input stream
 - streams [C++], reading data from
 ms.assetid: 9a3c1538-93dd-455e-ae48-77c1e23c53f0
-ms.openlocfilehash: 4f9cb6940d1708dffd5d5ca03fac28397f1db846
-ms.sourcegitcommit: 53bfb772c43319d49686c167f492606348ad362b
+ms.openlocfilehash: 7248eb08409b50d855dbb70c7638a856302b345b
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/03/2018
-ms.locfileid: "52819698"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849973"
 ---
 # <a name="fread"></a>fread
 
@@ -57,7 +57,7 @@ size_t fread(
 *count*<br/>
 읽힐 항목의 최대 수입니다.
 
-*스트림*<br/>
+*stream*<br/>
 **FILE** 구조체에 대한 포인터입니다.
 
 ## <a name="return-value"></a>반환 값
@@ -135,7 +135,7 @@ Contents of buffer = zyxwvutsrqponmlkjihgfedcb
 ## <a name="see-also"></a>참고자료
 
 [스트림 I/O](../../c-runtime-library/stream-i-o.md)<br/>
-[텍스트 및 이진 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br />
-[fopen](fopen-wfopen.md)<br />
+[텍스트 및 이진 파일 I/O](../../c-runtime-library/text-and-binary-mode-file-i-o.md)<br/>
+[fopen](fopen-wfopen.md)<br/>
 [fwrite](fwrite.md)<br/>
 [_read](read.md)<br/>

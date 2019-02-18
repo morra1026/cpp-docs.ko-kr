@@ -1,6 +1,6 @@
 ---
 title: OLE DB 공급자 템플릿에 대한 매크로
-ms.date: 11/04/2016
+ms.date: 02/11/2019
 f1_keywords:
 - vc.templates.ole
 - BEGIN_PROPERTY_SET
@@ -51,12 +51,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: 8fbad23d49490f42416dd7e7234776ff1c5ac7bf
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: a2a5bf14da1a39439db67a4fb062fd06763754fc
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557053"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151119"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB 공급자 템플릿에 대한 매크로
 
@@ -162,7 +162,7 @@ BEGIN_PROPSET_MAP(Class)
 
 - [세션 개체](https://docs.microsoft.com/previous-versions/windows/desktop/ms711572(v=vs.85))
 
-- [명령](https://docs.microsoft.com/previous-versions/windows/desktop/ms724608(v=vs.85))
+- [도구](https://docs.microsoft.com/previous-versions/windows/desktop/ms724608(v=vs.85))
 
 #### <a name="example"></a>예제
 
@@ -298,7 +298,7 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 *dwPropID*<br/>
 [in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](https://docs.microsoft.com/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
 
-*값*<br/>
+*value*<br/>
 [in] `DWORD`형식의 속성 값입니다.
 
 #### <a name="remarks"></a>설명
@@ -342,7 +342,7 @@ END_PROVIDER_COLUMN_MAP()
 
 #### <a name="example"></a>예제
 
-참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.
+See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
 ### <a name="provider_column_entry"></a> PROVIDER_COLUMN_ENTRY
 
@@ -359,7 +359,7 @@ PROVIDER_COLUMN_ENTRY (name, ordinal, member)
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *member*<br/>
@@ -380,7 +380,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *dbtype*<br/>
@@ -395,7 +395,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 
 #### <a name="example"></a>예제
 
-참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.
+See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
 ### <a name="provider_column_entry_gn"></a> PROVIDER_COLUMN_ENTRY_GN
 
@@ -412,7 +412,7 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *flags*<br/>
@@ -427,7 +427,7 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
 *precision*<br/>
 [in] 경우에 데이터를 가져올 때 사용할 전체 자릿수를 나타내는 *dbType* DBTYPE_NUMERIC 인지 DBTYPE_DECIMAL 합니다. 참조를 `bPrecision` 설명을 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
 
-*크기 조정*<br/>
+*scale*<br/>
 [in] DbType DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL 이면 데이터를 가져올 때 사용할 소수 자릿수를 나타냅니다. 참조를 `bScale` 설명을 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
 
 *guid*<br/>
@@ -452,7 +452,7 @@ PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *size*<br/>
@@ -467,7 +467,7 @@ PROVIDER_COLUMN_ENTRY_LENGTH(name, ordinal, size, member)
 
 #### <a name="example"></a>예제
 
-참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.
+See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
 ### <a name="provider_column_entry_str"></a> PROVIDER_COLUMN_ENTRY_STR
 
@@ -484,7 +484,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *member*<br/>
@@ -496,7 +496,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
 
 #### <a name="example"></a>예제
 
-참조 [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md)합니다.
+See [BEGIN_PROVIDER_COLUMN_MAP](../../data/oledb/begin-provider-column-map.md).
 
 ### <a name="provider_column_entry_type_length"></a> PROVIDER_COLUMN_ENTRY_TYPE_LENGTH
 
@@ -513,7 +513,7 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *dbtype*<br/>
@@ -544,7 +544,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
 *name*<br/>
 [in] 열 이름입니다.
 
-*서 수*<br/>
+*ordinal*<br/>
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *member*<br/>
@@ -583,9 +583,9 @@ BEGIN_SCHEMA_MAP(SchemaClass);
 END_SCHEMA_MAP()
 ```
 
-#### <a name="see-also"></a>참고 항목
+#### <a name="remarks"></a>설명
 
-[IDBSchemaRowsetImpl 클래스](../../data/oledb/idbschemarowsetimpl-class.md)
+자세한 내용은 [IDBSchemaRowsetImpl 클래스](../../data/oledb/idbschemarowsetimpl-class.md)합니다.
 
 ### <a name="schema_entry"></a> SCHEMA_ENTRY
 
@@ -626,7 +626,7 @@ HRESULT Execute (LONG* pcRowsAffected,
 
 마법사는 또한 스키마 구조의 세 해당 항목을 추가합니다. 참조 [OLE DB 템플릿 공급자 만들기](../../data/oledb/creating-an-ole-db-provider.md) 마법사를 사용 하 여 공급자를 만드는 데 대 한 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE DB 공급자 템플릿](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
 [OLE DB 공급자 템플릿 구조](../../data/oledb/ole-db-provider-template-architecture.md)<br/>

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - diagnostics [MFC], diagnostic services
 - diagnostic functions and variables [MFC]
 ms.assetid: 8d78454f-9fae-49c2-88c9-d3fabd5393e8
-ms.openlocfilehash: dbb243453b6d869082a4232b12b27f5510d84aa5
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: a4979ab7bbc0e396de5629fba1b86f3bfb602dcf
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657632"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850442"
 ---
 # <a name="diagnostic-services"></a>진단 서비스
 
@@ -45,7 +45,7 @@ MFC 라이브러리는 프로그램을 더 쉽게 디버그할 수 있는 많은
 
 구현 파일에서 **new** 에 대한 모든 호출은 파일 이름 및 메모리 할당이 발생한 줄 번호를 저장합니다. [CMemoryState::DumpAllObjectsSince](cmemorystate-structure.md#dumpallobjectssince) 함수는 이 추가 정보를 표시하여 메모리 누수를 확인할 수 있도록 합니다. 또한 진단 출력에 대한 자세한 내용은 [CDumpContext](../../mfc/reference/cdumpcontext-class.md) 클래스를 참조하세요.
 
-또한 C 런타임 라이브러리는 응용 프로그램을 디버그하는 데 사용할 수 있는 진단 함수 집합도 지원합니다. 자세한 내용은 런타임 라이브러리 참조에서 [루틴 디버그](../../c-runtime-library/debug-routines.md) 를 참조하세요.
+또한 C 런타임 라이브러리는 애플리케이션을 디버그하는 데 사용할 수 있는 진단 함수 집합도 지원합니다. 자세한 내용은 런타임 라이브러리 참조에서 [루틴 디버그](../../c-runtime-library/debug-routines.md) 를 참조하세요.
 
 ### <a name="mfc-general-diagnostic-macros"></a>MFC 일반 진단 매크로
 
@@ -320,12 +320,6 @@ ENSURE_VALID (디버그 빌드에서만에서 효과가)는 ASSERT_VALID 매크�
 
 **헤더:** afx.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[VERIFY](#verify)<br/>
-[ATLENSURE](#altensure)
-
 ## <a name="this_file"></a> THIS_FILE
 
 컴파일 중인 파일의 이름으로 확장 합니다.
@@ -355,12 +349,6 @@ static char THIS_FILE[] = __FILE__;
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afx.h
-
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[ASSERT](#assert)<br/>
-[VERIFY](#verify)
 
 ##  <a name="trace"></a>  TRACE
 
@@ -464,10 +452,6 @@ void AfxDump(const CObject* pOb);
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afx.h
-
-### <a name="see-also"></a>참고 항목
-
-[CObject::Dump](cobject-class.md#dump)
 
 ##  <a name="afxmemdf"></a>  afxMemDF
 
@@ -582,10 +566,6 @@ void AfxDump(const CObject* pOb);
 
 **헤더:** afx.h
 
-### <a name="see-also"></a>참고 항목
-
-[CObject::Dump](cobject-class.md#dump)
-
 ##  <a name="afxdumpstack"></a>  AfxDumpStack
 
 현재 스택의 이미지를 생성 하려면이 전역 함수를 사용할 수 있습니다.
@@ -680,12 +660,12 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 
 ### <a name="remarks"></a>설명
 
-응용 프로그램이 MFC 라이브러리를 언로드하면 MFC 라이브러리는 메모리 누수를 확인합니다. 이 시점에서 모든 메모리 누수가 통해 사용자에 게 보고 합니다 **디버그** Visual Studio의 창.
+애플리케이션이 MFC 라이브러리를 언로드하면 MFC 라이브러리는 메모리 누수를 확인합니다. 이 시점에서 모든 메모리 누수가 통해 사용자에 게 보고 합니다 **디버그** Visual Studio의 창.
 
-응용 프로그램이 MFC 라이브러리 전에 다른 라이브러리를 로드하는 경우, 해당 라이브러리의 일부 메모리 할당이 메모리 누수로 잘못 보고됩니다. 거짓 메모리 누수가 발생하면 MFC 라이브러리에서 이를 보고하므로 응용 프로그램이 느리게 종료될 수 있습니다. 이 경우 메모리 누수 덤프를 사용하지 않으려면 `AfxEnableMemoryLeakDump` 를 사용합니다.
+애플리케이션이 MFC 라이브러리 전에 다른 라이브러리를 로드하는 경우, 해당 라이브러리의 일부 메모리 할당이 메모리 누수로 잘못 보고됩니다. 거짓 메모리 누수가 발생하면 MFC 라이브러리에서 이를 보고하므로 애플리케이션이 느리게 종료될 수 있습니다. 이 경우 메모리 누수 덤프를 사용하지 않으려면 `AfxEnableMemoryLeakDump` 를 사용합니다.
 
 > [!NOTE]
->  이 방법을 사용하여 메모리 누수 덤프를 끄는 경우, 응용 프로그램에서 발생하는 유효한 메모리 누수의 보고서를 받지 못합니다. 메모리 누수 보고서에 거짓 메모리 누수가 포함되어 있다고 확신하는 경우에만 이 방법을 사용해야 합니다.
+>  이 방법을 사용하여 메모리 누수 덤프를 끄는 경우, 애플리케이션에서 발생하는 유효한 메모리 누수의 보고서를 받지 못합니다. 메모리 누수 보고서에 거짓 메모리 누수가 포함되어 있다고 확신하는 경우에만 이 방법을 사용해야 합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -856,12 +836,12 @@ AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
 
 Microsoft Foundation Class 라이브러리 디버그 메모리 할당자는 메모리 할당을 모니터링 하 고 할당 허용 되는지 여부를 제어 하는 사용자를 허용 하는 사용자 정의 후크 함수를 호출할 수 있습니다. 할당 후크 함수는 프로토타입 다음과 같습니다.
 
-**BOOL AFXAPI AllocHook (size_t** `nSize` **, BOOL** `bObject` **긴** `lRequestNumber` **);**
+**BOOL AFXAPI AllocHook( size_t** `nSize`**, BOOL** `bObject`**, LONG** `lRequestNumber` **);**
 
 *nSize*<br/>
 제안 된 메모리 할당의 크기입니다.
 
-*개체*<br/>
+*bObject*<br/>
 할당에 대 한 경우 TRUE를 `CObject`-파생된 개체가; 그렇지 않으면 FALSE입니다.
 
 *lRequestNumber*<br/>
@@ -940,6 +920,7 @@ void AfxDoForAllObjects(
 
 [!code-cpp[NVC_MFCCollections#116](../../mfc/codesnippet/cpp/diagnostic-services_19.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)
+[매크로 및 전역](mfc-macros-and-globals.md)<br/>
+[CObject::Dump](cobject-class.md#dump)

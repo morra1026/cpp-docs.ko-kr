@@ -1,44 +1,268 @@
 ---
 title: 컨트롤 추가, 편집 및 삭제
 ms.date: 11/04/2016
+f1_keywords:
+- vc.editors.dialog.dialog
+- vc.controls.activex
+- vc.editors.dialog.insertActiveXControls
 helpviewer_keywords:
 - Dialog Editor [C++], creating controls
+- dialog boxes [C++], adding controls to
+- Toolbox [C++], Dialog Editor tab
+- controls [C++], types
+- syslink controls in dialog boxes
+- custom controls [C++], dialog boxes
+- controls [C++], standard
+- Dialog Editor [C++], creating controls
+- controls [C++], adding to dialog boxes
+- controls [C++], adding multiple
+- dialog box controls [C++], size
+- controls [C++], sizing
+- dialog boxes [C++], adding ActiveX controls
+- ActiveX controls [C++], adding to dialog boxes
+- Insert ActiveX Control dialog box [C++]
+- controls [C++], editing properties
+- ActiveX controls [C++], properties
+- controls [C++], undoing changes
+- controls [C++], editing properties
+- dialog box controls [C++], editing properties
+- dialog box controls [C++], deleting
+- controls [C++], deleting
+- Dialog Editor [C++], default control events
+- controls [C++], default control events
+- events [C++], controls
+- dialog box controls [C++], events
+- member variables, defining for controls
+- variables, dialog box control member variables
+- controls [C++], member variables
+- Dialog Editor [C++], defining member variables for controls
+- controls [C++], troubleshooting
+- Dialog Editor [C++], troubleshooting
+- dialog boxes [C++], troubleshooting
+- InitCommonControls
+- RichEdit 1.0 control
+- rich edit controls [C++], RichEdit 1.0
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
-ms.openlocfilehash: ff222ce6d91810931f3102810730ab6eeb5b3687
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 648ac3329409ba221881f75eaa51e1779091b0f0
+ms.sourcegitcommit: eb2b34a24e6edafb727e87b138499fa8945f981e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569165"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "56264870"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>컨트롤 추가, 편집 및 삭제
 
 사용 하는 **대화** 편집기에 추가 하려면 크기 조정, 편집 및 대화 상자에서 컨트롤을 삭제 합니다. 해당 ID와 같은 컨트롤의 속성을 편집할 수도 있습니다 여부를 런타임에 처음 표시 되 나 합니다.
 
-바로 가기 메뉴를 사용할 수는 **대화 상자** 신속 하 게 추가할 편집기 대화 상자에 ActiveX 컨트롤을 등록 하 고 ActiveX 컨트롤을 추가할 수 있습니다 합니다 **도구 상자** 빠른 액세스를 위해 (자세한 내용은 참조 [도구 상자](/visualstudio/ide/reference/toolbox)).
+합니다 **대화 상자 편집기** 탭에 표시 됩니다는 [도구 상자 창](/visualstudio/ide/reference/toolbox) 에서 작업 하는 경우는 **대화** 편집기입니다. 사용자 지정할 수도 있습니다는 **도구 상자** 창을 쉽게 사용할 수 있도록 합니다. 자세한 내용은 [도구 상자를 사용 하 여](/visualstudio/ide/using-the-toolbox) 하 고 [표시 또는 숨기기 도구 상자 창](showing-or-hiding-the-dialog-editor-toolbar.md)합니다.
 
-- [대화 상자에 컨트롤 추가](adding-a-control-to-a-dialog-box.md)
+바로 가기 메뉴를 사용할 수 있습니다는 **대화 상자** 신속 하 게 추가할 편집기 대화 상자에 ActiveX 컨트롤을 등록 하 고 ActiveX 컨트롤을 추가할 수 있습니다 합니다 **도구 상자** 빠른 액세스를 위해.
 
-- [컨트롤을 추가할 때 크기 조정](sizing-a-control-while-you-add-it.md)
+관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대한 내용은 [데스크톱 앱에 대한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)를 참조하세요. 관리되는 앱의 전역화 및 지역화 리소스에 대한 내용은 [Globalizing and Localizing .NET Framework Applications](/dotnet/standard/globalization-localization/index)을 참조하세요.
 
-- [여러 개의 컨트롤 추가](adding-multiple-controls.md)
+## <a name="to-add-a-control"></a>컨트롤을 추가 하려면
 
-- [대화 상자에 ActiveX 컨트롤 추가](viewing-and-adding-activex-controls-to-a-dialog-box.md)
+새 대화 상자에 컨트롤을 추가할 컨트롤을 끌어 옵니다 합니다 **도구 상자** 만드는 대화 상자. 그런 다음 컨트롤을 주변으로 이동하거나 크기와 모양을 변경할 수 있습니다.
 
-- [컨트롤 또는 컨트롤의 속성 편집](editing-control-properties.md)
+선택 하 여 대화 상자에 사용자 지정 컨트롤을 추가할 수 있습니다는 **사용자 지정 컨트롤** 아이콘에는 **도구 상자** 끌어서 놓아 대화 상자. 추가 하는 **Syslink** 컨트롤, 사용자 지정 컨트롤을 추가한 다음 컨트롤의 변경 **클래스** 속성을 **Syslink**합니다. 이 작업에는 속성을 새로 고치고 표시 하면 합니다 **Syslink** 속성을 제어 합니다. MFC 래퍼 클래스에 대 한 자세한 내용은 [CLinkCtrl](../mfc/reference/clinkctrl-class.md)합니다.
 
-- [컨트롤 삭제](deleting-a-control.md)
+### <a name="to-add-a-control-to-a-dialog-box"></a>대화 상자에 컨트롤을 추가하려면
 
-- [도구 상자 창을 표시 하거나 숨기려면](showing-or-hiding-the-dialog-editor-toolbar.md)
+1. 대화 상자 탭 창이 편집기 프레임에서 현재 문서인지 확인합니다. 대화 상자에서 현재 문서에 없는 경우 볼 수 없습니다는 **대화 상자 편집기 탭** 에 **도구 상자**합니다.
 
-관리 되는 프로젝트에 리소스를 추가 하는 방법에 대 한 정보를 참조 하세요 [데스크톱 앱의 리소스](/dotnet/framework/resources/index) 에 *.NET Framework Developer's Guide*합니다. 수동으로 관리 되는 프로젝트에 리소스 파일을 추가, 리소스 액세스, 정적 리소스 표시 및 속성에 리소스 문자열 할당에 대 한 내용은 참조 하세요 [데스크톱 앱에 대 한 리소스 파일 만들기](/dotnet/framework/resources/creating-resource-files-for-desktop-apps)합니다. 전역화 및 지역화 관리 되는 앱의 리소스에 대 한 내용은 참조 하세요 [Globalizing and Localizing.NET Framework Applications](/dotnet/standard/globalization-localization/index)합니다.
+1. 에 **대화 상자 편집기** 탭의 **도구 상자** 창 후 원하는 컨트롤을 선택:
+
+   대화 상자 컨트롤을 배치 하려는 위치를 선택 합니다. 컨트롤을 선택한 위치 표시 됩니다.
+
+   \- 또는 -
+
+   끌어서 놓기 컨트롤을 **도구 상자** 대화 상자에서 위치를 창입니다.
+
+   \- 또는 -
+
+   컨트롤을 두 번 클릭 합니다 **도구 상자** 창 (대화 상자에 표시)을 원하는 위치로 컨트롤 위치를 변경 합니다.
+
+### <a name="to-add-multiple-controls"></a>여러 컨트롤을 추가 하려면
+
+1. 누른 채 합니다 **Ctrl** 키, 컨트롤을 선택 합니다 **도구 상자** 창입니다.
+
+1. 릴리스를 **Ctrl** 키 및 특정 컨트롤을 추가 하려는 만큼 대화 상자를 선택 합니다.
+
+1. 키를 눌러 **Esc** 컨트롤을 배치를 중지 합니다.
+
+### <a name="to-size-a-control-while-you-add-it"></a>컨트롤을 추가할 때 크기
+
+1. 컨트롤을 선택 합니다 **도구 상자** 창입니다.
+
+1. 대화 상자에 새 컨트롤의 왼쪽 위 모퉁이 만들려는 (십자)는 커서를 놓습니다.
+
+1. 선택 하 고 대화 상자에서 컨트롤의 왼쪽 위 모퉁이 고정 하려면 마우스 단추를 누른 후 컨트롤의 원하는 크기가 될 때까지 커서를 오른쪽 아래로 끕니다.
+
+   > [!NOTE]
+   > 실제로 그릴 컨트롤의 네 모퉁이 고정할 수 있습니다. 이 절차 예를 들어 왼쪽 위 모퉁이 사용 합니다.
+
+1. 마우스 단추를 놓습니다. 컨트롤의 대화 상자에서 지정한 크기에 도달 합니다.
+
+   > [!TIP]
+   > 컨트롤의 테두리의 크기 조정 핸들을 이동 하 여 대화 상자에 끌어다 놓으면 후 컨트롤 크기를 조정할 수 있습니다. 자세한 내용은 [개별 컨트롤 크기 조정](../windows/sizing-individual-controls.md)합니다.
+
+### <a name="to-add-an-activex-control"></a>ActiveX 컨트롤을 추가 하려면
+
+Visual Studio에서는 ActiveX 컨트롤을 대화 상자에 삽입할 수 있습니다. 자세한 내용은 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md) 하 고 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)합니다.
+
+합니다 **ActiveX 컨트롤 삽입** 대화 상자를 사용 하면 사용 하는 동안 대화 상자에 ActiveX 컨트롤을 삽입 하는 [대화 상자 편집기](../windows/dialog-editor.md)합니다. 이 대화 상자에는 다음 속성이 포함 됩니다.
+
+|속성|설명|
+|---|---|
+|**ActiveX 컨트롤**|Activex 컨트롤의 목록을 표시합니다. 이 대화 상자에서 컨트롤을 삽입 래퍼 클래스를 생성 하지 않습니다. 래퍼 클래스를 해야 하는 경우 사용 하 여 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code) 만들려면 (자세한 내용은 참조 하십시오 [클래스를 추가](../ide/adding-a-class-visual-cpp.md)). Activex 컨트롤을이 대화 상자에 표시 되지 않으면, 공급 업체의 지침에 따라 컨트롤을 설치 하십시오.|
+|**Path**|ActiveX 컨트롤은 찾을 수 있는 파일이 표시 됩니다.|
+
+#### <a name="to-see-the-activex-controls-available"></a>ActiveX 컨트롤을 사용할 수 있는 보고
+
+1. 대화 상자 편집기에서 대화 상자를 엽니다.
+
+1. 대화 상자의 본문에서 아무 곳 이나 마우스 오른쪽 단추로 클릭 합니다.
+
+1. 바로 가기 메뉴에서 선택 **ActiveX 컨트롤 삽입**합니다.
+
+   합니다 **ActiveX 컨트롤 삽입** 시스템에서 모든 ActiveX 컨트롤을 보여 주는 대화 상자가 나타납니다. 대화 상자 아래쪽에 ActiveX 컨트롤 파일 경로가 표시됩니다.
+
+#### <a name="to-add-an-activex-control-to-a-dialog-box"></a>대화 상자에 ActiveX 컨트롤을 추가하려면
+
+1. 에 **ActiveX 컨트롤 삽입** 대화 상자, 대화 상자에 추가 하 고 선택 하려는 컨트롤을 선택 **확인**합니다.
+
+   컨트롤이 대화 상자에 표시되고, 이 대화 상자에서 컨트롤을 편집하거나 다른 컨트롤처럼 컨트롤용 처리기를 만들 수 있습니다.
+
+   > [!NOTE]
+   > ActiveX 컨트롤을 추가할 수 있습니다 합니다 **도구 상자** 창에 쉽게 액세스할 수 있도록 합니다.
+
+   > [!CAUTION]
+   > 시스템에 일부 ActiveX 컨트롤을 배포하지 못할 수 있습니다. 컨트롤을 설치한 소프트웨어에 대한 사용권 계약을 참조하거나 소프트웨어 회사에 문의하세요.
+
+## <a name="to-edit-a-control"></a>컨트롤을 편집 하려면
+
+### <a name="to-edit-the-properties-of-a-control-or-controls"></a>컨트롤 또는 컨트롤의 속성을 편집 하려면
+
+1. 대화 상자에서 수정 하려는 컨트롤을 선택 합니다.
+
+   > [!NOTE]
+   > 여러 컨트롤을 선택 하면 선택한 컨트롤에 공통 된 속성만 편집할 수 있습니다.
+
+1. 에 [속성 창](/visualstudio/ide/reference/properties-window), 컨트롤의 속성을 변경 합니다.
+
+   > [!NOTE]
+   > 설정한 경우 합니다 **비트맵** 단추, 라디오 단추 또는 확인란 컨트롤 같은 속성을 **True**, 스타일을 컨트롤에 대 한 BS_BITMAP 구현 됩니다. 자세한 내용은 [단추 스타일](../mfc/reference/styles-used-by-mfc.md#button-styles)합니다. 컨트롤을 사용 하 여 비트맵을 연결 하는 예제를 보려면 [CButton::SetBitmap](../mfc/reference/cbutton-class.md#setbitmap)합니다. 비트맵에 있는 동안 컨트롤에 표시 되지 것입니다 합니다 **대화 상자** 리소스 편집기입니다.
+
+### <a name="to-undo-changes-to-the-properties-of-a-control"></a>컨트롤의 속성 변경 내용을 실행 취소 하려면
+
+1. 컨트롤에 포커스를가지고 있는지 확인 합니다 **대화 상자** 편집기입니다.
+
+1. 선택 **실행 취소** 에서 **편집** 메뉴 (컨트롤에 포커스가 없으면 합니다 **취소** 명령을 사용할 수 없게 됩니다).
+
+### <a name="to-edit-properties-for-an-activex-control"></a>ActiveX 컨트롤에 대 한 속성을 편집 하려면
+
+개별 공급 업체에서 제공 하는 ActiveX 컨트롤 속성 및 특성 자체와 함께 가져올 수 있습니다. ActiveX 컨트롤에 대 한 속성에 표시 되는 **속성** 창입니다. 또한, ActiveX 컨트롤의 작성자가 만든 모든 속성 페이지에 표시 됩니다는 **속성 페이지** 대화 상자 (보려는 합니다 **속성 페이지** 특정 ActiveX 컨트롤을 클릭 합니다 **속성 페이지** 단추를 [속성 창](/visualstudio/ide/reference/properties-window)).
+
+ActiveX 컨트롤의 일부로 제공 되는 속성 시트에 따라 ActiveX 컨트롤에 대 한 속성 페이지에서 다양 한 탭 표시 됩니다.
+
+> [!NOTE]
+> 속성 페이지를 사용 하 여 ActiveX 컨트롤을 편집 하려면 다음 절차에 적용 됩니다. 또한 이동 하 고 새 ActiveX 속성을 편집할 수 있습니다 **속성** 창입니다.
+
+1. 선택 된 **ActiveX** 제어 합니다.
+
+1. 에 **뷰** 메뉴에서 **속성 페이지** 속성을 확인 합니다.
+
+1. 속성 페이지에서 필요에 따라 변경 합니다.
+
+### <a name="to-define-a-member-variable-for-a-non-button-dialog-box-control"></a>(단추 이외의) 대화 상자 컨트롤에 대해 멤버 변수를 정의하려면
+
+단추를 제외한 대화 상자 컨트롤에 대해 멤버 변수를 정의하려면 다음 메서드를 사용할 수 있습니다.
+
+> [!NOTE]
+> 이 프로세스는 MFC 프로젝트 내의 대화 상자 컨트롤에만 적용 됩니다. ATL 프로젝트를 사용 해야 합니다 **새 Windows 메시지 및 이벤트 처리기** 대화 상자. 자세한 내용은 [메시지 형식 개체와 연결 된 사용자 인터페이스](../mfc/reference/message-types-associated-with-user-interface-objects.md)를 [메시지 처리기 편집](../mfc/reference/editing-a-message-handler.md), 및 [반영메시지의메시지처리기정의](../mfc/reference/defining-a-message-handler-for-a-reflected-message.md).
+
+1. 에 [대화 상자 편집기](../windows/dialog-editor.md), 컨트롤을 선택 합니다.
+
+1. 누른 채 합니다 **Ctrl** 키, 대화 상자 컨트롤을 두 번 클릭 합니다.
+
+   합니다 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md) 나타납니다.
+
+1. 적절 한 정보를 입력 합니다 **멤버 변수 추가** 마법사. 자세한 내용은 [대화 상자 데이터 교환](../mfc/dialog-data-exchange.md)합니다.
+
+1. 선택 **확인** 돌아가려면 합니다 **대화 상자** 편집기입니다.
+
+   > [!TIP]
+   > 대화 상자 컨트롤에서 기존 처리기로 이동하려면 컨트롤을 두 번 클릭합니다.
+
+사용할 수도 있습니다는 **멤버 변수** 탭에서 [MFC 클래스 마법사](../mfc/reference/mfc-class-wizard.md) , 지정된 된 클래스에 대 한 새 멤버 변수를 추가 하 여 이미 정의 된 멤버 변수를 표시 합니다.
+
+## <a name="to-delete-a-control"></a>컨트롤을 삭제 하려면
+
+대화 상자에서 컨트롤 및 키를 눌러 선택 합니다 **삭제** 키입니다.
+
+   \- 또는 -
+
+에 **편집할** 메뉴에서 **삭제**합니다.
+
+   > [!TIP]
+   > 사용 하는 동안 합니다 **대화 상자** 편집기, 대부분의 경우 자주 사용 되는 명령의 바로 가기 메뉴를 표시 하려면 마우스 오른쪽 단추 클릭 수 있습니다.
+
+## <a name="known-issue"></a>알려진 문제
+
+공용 컨트롤 또는 서식 있는 편집 컨트롤을 대화 상자를 추가한 후 대화 상자를 테스트할 때나 자체 대화 상자에 나타나지는 표시 되지 않습니다.
+
+문제의 예를 보려면:
+
+1. Windows 응용 프로그램 (콘솔 앱)을 만든 하므로 응용 프로그램 설정을 수정 Win32 프로젝트를 만듭니다.
+
+1. [리소스 뷰](../windows/resource-view-window.md),.rc 파일을 두 번 클릭 합니다.
+
+1. 대화 상자 옵션에서 두 번 클릭 합니다 **에 대 한** 상자입니다.
+
+1. 추가 된 **IP 주소 컨트롤** 대화 상자.
+
+1. 저장 하 고 **모두 다시 빌드**합니다.
+
+1. 프로그램을 실행 합니다.
+
+1. 대화 상자에서 **도움말** 메뉴에서 클릭 합니다 **에 대 한** 명령; 없는 대화 상자가 표시 됩니다.
+
+현재는 **대화 상자** rich edit 컨트롤을 대화 상자에 끌어다 놓으면 다음과 같은 일반적인 컨트롤 또는 때 편집기 프로젝트에 자동으로 코드 추가 하지 않습니다. 도 Visual Studio 제공 오류 또는 경고가 발생이 문제가 발생 합니다. 를 해결 하려면 컨트롤에 대 한 코드를 수동으로 추가 합니다.
+
+||||
+|-|-|-|
+|슬라이더 컨트롤|트리 컨트롤|날짜 시간 선택|
+|스핀 컨트롤|탭 컨트롤|Month Calendar|
+|진행률 컨트롤|애니메이션 컨트롤|IP 주소 컨트롤|
+|바로 가기 키|Rich Edit 컨트롤|확장 된 콤보 상자|
+|목록 컨트롤|Rich Edit 2.0 컨트롤|사용자 지정 컨트롤|
+
+대화 상자에서 공용 컨트롤을 사용 하려면 호출 [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) 또는 `AFXInitCommonControls` 대화 상자를 만들어야 합니다.
+
+RichEdit 컨트롤을 사용 하려면 `LoadLibrary`합니다. 자세한 내용은 [Rich Edit 컨트롤](/windows/desktop/Controls/about-rich-edit-controls) Windows sdk에서 및 [서식 있는 편집 컨트롤의 개요](../mfc/overview-of-the-rich-edit-control.md)합니다.
+
+> [!NOTE]
+> MFC에서 RichEdit 컨트롤을 사용 하려면 먼저 불러와야 [AfxInitRichEdit2](../mfc/reference/application-information-and-management.md#afxinitrichedit2) RichEdit 2.0 컨트롤 (RICHED20 로드 하려면. DLL)를 호출 하거나 [AfxInitRichEdit](../mfc/reference/application-information-and-management.md#afxinitrichedit) 이전에 RichEdit 1.0 컨트롤 (RICHED32 로드 하려면. DLL)입니다.
+>
+> 현재 사용할 수 있습니다 [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) 이전 RichEdit 1.0 컨트롤을 사용 하 여 클래스 이지만 `CRichEditCtrl` RichEdit 2.0 제어를 지원 하도록 디자인 되었습니다. RichEdit 1.0 및 2.0 RichEdit 유사한 이기 때문에 대부분의 메서드가 작동 합니다. 그러나 일부의 차이점이 1.0 및 2.0 컨트롤 간의 몇 가지 방법을 제대로 작동 하지 않을 수 있습니다 하거나 전혀 작동 하지 않음 note 합니다.
 
 ## <a name="requirements"></a>요구 사항
 
 Win32
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
+[대화 상자 편집기](../windows/dialog-editor.md)<br/>
 [대화 상자의 컨트롤](controls-in-dialog-boxes.md)<br/>
-[대화 상자 컨트롤에 사용할 이벤트 처리기 추가](adding-event-handlers-for-dialog-box-controls.md)<br/>
-[대화 상자 컨트롤 및 변수 형식](../ide/dialog-box-controls-and-variable-types.md)
+[리소스 파일](../windows/resource-files-visual-studio.md)<br/>
+
+<!-- excluded links
+[Mapping Messages to Functions](../mfc/reference/mapping-messages-to-functions.md)<br/>
+[Adding Functionality with Code Wizards](../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
+[Adding a Class](../ide/adding-a-class-visual-cpp.md)<br/>
+[Adding a Member Function](../ide/adding-a-member-function-visual-cpp.md)<br/>
+[Adding a Member Variable](../ide/adding-a-member-variable-visual-cpp.md)<br/>
+[Overriding a Virtual Function](../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
+[MFC Message Handler](../mfc/reference/adding-an-mfc-message-handler.md)
+[Declaring a Variable Based on Your New Control Class](../mfc/reference/declaring-a-variable-based-on-your-new-control-class.md)<br/>
+-->

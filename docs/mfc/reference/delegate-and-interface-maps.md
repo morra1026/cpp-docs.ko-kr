@@ -6,12 +6,12 @@ helpviewer_keywords:
 - event map macros [MFC]
 - interface map macros [MFC]
 ms.assetid: 3840e642-ff7d-4bdc-998b-c7d8fc50890e
-ms.openlocfilehash: cd1f38236baf2caca9f2a2a426f28f797291fb13
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8f48b916f7130551fc8d4da5bb2ebc75d8d728d5
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524653"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850205"
 ---
 # <a name="delegate-and-interface-map-macros"></a>대리자 및 인터페이스 맵 매크로
 
@@ -40,7 +40,7 @@ BEGIN_DELEGATE_MAP(  CLASS );
 
 ### <a name="parameters"></a>매개 변수
 
-*클래스*<br/>
+*CLASS*<br/>
 관리 되는 컨트롤 호스트 되는 클래스입니다.
 
 ### <a name="remarks"></a>설명
@@ -50,10 +50,6 @@ BEGIN_DELEGATE_MAP(  CLASS );
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** msclr\event.h
-
-### <a name="see-also"></a>참고 항목
-
-[방법: 네이티브 C++ 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
 ##  <a name="begin_interface_map"></a>BEGIN_INTERFACE_MAP
 
@@ -102,17 +98,13 @@ delegate void CommandHandler(  UINT^ cmdID  );
 
 이 대리자 명령 소스를 사용 하 여 콜백 메서드를 등록합니다. 명령 소스 개체에 대리자를 추가 하는 경우 콜백 메서드는 지정 된 원본에서 가져온 명령에 대 한 처리기를 됩니다.
 
-자세한 내용은 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)합니다.
+자세한 내용은 [방법: 추가 명령 라우팅에 Windows Forms 컨트롤](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)합니다.
 
 Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxwinforms.h (atlmfc\lib\mfcmifc80.dll 어셈블리에에서 정의 됨)
-
-### <a name="see-also"></a>참고 항목
-
-[방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)
 
 ##  <a name="commanduihandler"></a>CommandUIHandler
 
@@ -142,11 +134,6 @@ Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사�
 
 **헤더:** afxwinforms.h (atlmfc\lib\mfcmifc80.dll 어셈블리에에서 정의 됨)
 
-### <a name="see-also"></a>참고 항목
-
-[방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
-[CommandHandler](#commandhandler)
-
 ##  <a name="end_delegate_map"></a>END_DELEGATE_MAP
 
 대리자 맵에 종료합니다.
@@ -164,10 +151,6 @@ END_DELEGATE_MAP();
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** msclr\event.h
-
-### <a name="see-also"></a>참고 항목
-
-[방법: 네이티브 C++ 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)
 
 ##  <a name="end_interface_map"></a>END_INTERFACE_MAP
 
@@ -187,11 +170,6 @@ END_INTERFACE_MAP( )
 
 **헤더:** afxwin.h
 
-### <a name="see-also"></a>참고 항목
-
-[매크로 및 전역](mfc-macros-and-globals.md)<br/>
-[BEGIN_INTERFACE_MAP](#begin_interface_map)
-
 ##  <a name="event_delegate_entry"></a>EVENT_DELEGATE_ENTRY
 
 대리자 맵에 항목을 만듭니다.
@@ -204,7 +182,7 @@ EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
 
 ### <a name="parameters"></a>매개 변수
 
-*멤버*<br/>
+*MEMBER*<br/>
 컨트롤에 연결할 이벤트 처리기 메서드입니다.
 
 *ARG0*<br/>
@@ -230,12 +208,6 @@ END_DELEGATE_MAP()
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** msclr\event.h
-
-### <a name="see-also"></a>참고 항목
-
-[MAKE_DELEGATE](#make_delegate)<br/>
-[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](#end_delegate_map)
 
 ##  <a name="interface_part"></a>INTERFACE_PART
 
@@ -278,10 +250,10 @@ MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 
 ### <a name="parameters"></a>매개 변수
 
-*대리자*<br/>
+*DELEGATE*<br/>
 관리 되는 이벤트 처리기의 형식 같은 대리자 [EventHandler](assetId:///T:System.EventHandler?qualifyHint=False&autoUpgrade=True)합니다.
 
-*멤버*<br/>
+*MEMBER*<br/>
 컨트롤에 연결할 이벤트 처리기 메서드의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -290,7 +262,7 @@ MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 
 ### <a name="example"></a>예제
 
-다음 코드 예제를 호출 하는 방법을 보여 줍니다 `MAKE_DELEGATE` 연결 하는 `OnClick` MFC 컨트롤에 이벤트 처리기 `MyControl`합니다. MFC 응용 프로그램에서이 매크로 작동 방식을 더 광범위 한 내용은 참조 하세요 [방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)합니다.
+다음 코드 예제를 호출 하는 방법을 보여 줍니다 `MAKE_DELEGATE` 연결 하는 `OnClick` MFC 컨트롤에 이벤트 처리기 `MyControl`합니다. 이 매크로 MFC 응용 프로그램에서 작동 하는 방식에 대 한 광범위 한 설명과 참조 하세요. [방법: 네이티브 c + + 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)합니다.
 
 ```cpp
 // CMyView derives from CWinFormsView.
@@ -306,9 +278,8 @@ void CMyView::OnInitialUpdate()
 
 **헤더:** msclr\event.h
 
-### <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[BEGIN_DELEGATE_MAP](#begin_delegate_map)<br/>
-[END_DELEGATE_MAP](#end_delegate_map)<br/>
-[EVENT_DELEGATE_ENTRY](#event_delegate_entry)
-
+[방법: 네이티브 C++ 클래스에서 Windows Forms 이벤트 싱크](../../dotnet/how-to-sink-windows-forms-events-from-native-cpp-classes.md)<br/>
+[방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
+[매크로 및 전역](mfc-macros-and-globals.md)<br/>

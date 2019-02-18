@@ -64,12 +64,12 @@ helpviewer_keywords:
 - controls [ATL], stock properties
 - stock properties, ATL controls
 ms.assetid: 45f11d7d-6580-4a0e-872d-3bc8b836cfda
-ms.openlocfilehash: ff7610d85d73a99d55d6181fad178d0b12be0c32
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: a22a419018f3f4b2b7e6cee2471bf0f162b65f2e
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51332428"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894005"
 ---
 # <a name="cstockpropimpl-class"></a>CStockPropImpl 클래스
 
@@ -559,7 +559,7 @@ HRESULT STDMETHODCALLTYPE get_Picture(IPictureDisp** ppPicture);
 ### <a name="parameters"></a>매개 변수
 
 *ppPicture*<br/>
-그림의 속성에 대 한 포인터를 받는 변수입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.
+그림의 속성에 대 한 포인터를 받는 변수입니다. 참조 [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -864,7 +864,7 @@ HRESULT STDMETHODCALLTYPE put_Enabled(VARIANT_BOOL bEnabled);
 
 ### <a name="parameters"></a>매개 변수
 
-*b 사용*<br/>
+*bEnabled*<br/>
 컨트롤을 사용 하는 경우 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1005,7 +1005,7 @@ HRESULT STDMETHODCALLTYPE put_Picture(IPictureDisp* pPicture);
 ### <a name="parameters"></a>매개 변수
 
 *pPicture*<br/>
-그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.
+그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1153,7 +1153,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 ### <a name="parameters"></a>매개 변수
 
 *pPicture*<br/>
-그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](https://msdn.microsoft.com/library/windows/desktop/ms680762) 대 한 자세한 내용은 합니다.
+그림의 속성에 대 한 포인터입니다. 참조 [IPictureDisp](/windows/desktop/api/ocidl/nn-ocidl-ipicturedisp) 대 한 자세한 내용은 합니다.
 
 ### <a name="return-value"></a>반환 값
 

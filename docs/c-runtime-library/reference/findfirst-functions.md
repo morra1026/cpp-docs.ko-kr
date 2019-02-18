@@ -4,6 +4,16 @@ ms.date: 11/04/2016
 apiname:
 - _findfirst
 - _wfindfirst
+- _findfirst32
+- _wfindfirst32
+- _findfirst32i64
+- _wfindfirst32i64
+- _findfirst64
+- _wfindfirst64
+- _findfirst64i32
+- _wfindfirst64i32
+- _findfirsti64
+- _wfindfirsti64
 apilocation:
 - msvcrt.dll
 - msvcr80.dll
@@ -90,12 +100,12 @@ helpviewer_keywords:
 - wfindfirst64i32 function
 - _wfindfirst64 function
 ms.assetid: 9bb46d1a-b946-47de-845a-a0b109a33ead
-ms.openlocfilehash: ceaa8fea4414bab4bbb035aa4525b415ca7ac0b8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 47a1d7301b59a942a1af860f310e1f1f9da12ec7
+ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331440"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55703144"
 ---
 # <a name="findfirst-findfirst32-findfirst32i64-findfirst64-findfirst64i32-findfirsti64-wfindfirst-wfindfirst32-wfindfirst32i64-wfindfirst64-wfindfirst64i32-wfindfirsti64"></a>_findfirst, _findfirst32, _findfirst32i64, _findfirst64, _findfirst64i32, _findfirsti64, _wfindfirst, _wfindfirst32, _wfindfirst32i64, _wfindfirst64, _wfindfirst64i32, _wfindfirsti64
 
@@ -179,7 +189,7 @@ intptr_t _wfindfirst64i32(
 
 ## <a name="remarks"></a>설명
 
-호출 해야 합니다 [_findclose](findclose.md) 중 하나를 사용 하 여 작업을 마친 후 합니다 **_findfirst** 하거나 [_findnext](findnext-functions.md) 함수 (또는 모든 변형). 그러면 응용 프로그램에서 이러한 함수에 사용된 리소스가 해제됩니다.
+호출 해야 합니다 [_findclose](findclose.md) 중 하나를 사용 하 여 작업을 마친 후 합니다 **_findfirst** 하거나 [_findnext](findnext-functions.md) 함수 (또는 모든 변형). 그러면 애플리케이션에서 이러한 함수에 사용된 리소스가 해제됩니다.
 
 있는 이러한 함수의 변형은 **w** 접두사는 와이드 문자 버전입니다. 그렇지 않은 경우 즉, 해당 단일 바이트 함수와 동일 합니다.
 
@@ -193,7 +203,7 @@ intptr_t _wfindfirst64i32(
 
 ### <a name="time-type-and-file-length-type-variations-of-findfirst"></a>_findfirst의 시간 형식 및 파일 길이 형식 변형
 
-|함수|**_USE_32BIT_TIME_T** 정의?|시간 형식|파일 길이 형식|
+|함수|**_USE_32BIT_TIME_T** defined?|시간 형식|파일 길이 형식|
 |---------------|----------------------------------|---------------|----------------------|
 |**_findfirst**, **_wfindfirst**|정의되지 않음|64비트|32비트|
 |**_findfirst**, **_wfindfirst**|정의됨|32비트|32비트|

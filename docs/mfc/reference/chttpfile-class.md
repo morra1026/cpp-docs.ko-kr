@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: 1fa1b63ed045c176841565473476185bb15999e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ee92a6cb627cee701b9b98a8a32666a0877f62c
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564461"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54893654"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 
@@ -62,7 +62,7 @@ class CHttpFile : public CInternetFile
 |[CHttpFile::GetVerb](#getverb)|HTTP 서버에 요청에 사용 된 동사를 가져옵니다.|
 |[CHttpFile::QueryInfo](#queryinfo)|HTTP 서버에서 응답 또는 요청 헤더를 반환합니다.|
 |[CHttpFile::QueryInfoStatusCode](#queryinfostatuscode)|HTTP 요청을 사용 하 여 연결 된 상태 코드를 검색 하 고 제공 된 배치 `dwStatusCode` 매개 변수입니다.|
-|[Chttpfile:: Sendrequest](#sendrequest)|HTTP 서버에 요청을 보냅니다.|
+|[CHttpFile::SendRequest](#sendrequest)|HTTP 서버에 요청을 보냅니다.|
 |[CHttpFile::SendRequestEx](#sendrequestex)|사용 하 여 HTTP 서버에 요청을 보냅니다 합니다 [작성](../../mfc/reference/cinternetfile-class.md#write) 또는 [WriteString](../../mfc/reference/cinternetfile-class.md#writestring) 메서드의 `CInternetFile`합니다.|
 
 ## <a name="remarks"></a>설명
@@ -182,7 +182,7 @@ CHttpFile(
 
 되지 생성을 `CHttpFile` 개체를 직접; 대신 호출 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 또는 [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) 대신 합니다.
 
-기본값 `dwContext` MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 `CInternetSession::OpenURL` 나 `CHttpConnection` 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+기본값 `dwContext` MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 `CInternetSession::OpenURL` 나 `CHttpConnection` 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="endrequest"></a>  CHttpFile::EndRequest
 
@@ -212,7 +212,7 @@ BOOL EndRequest(
 
 ### <a name="remarks"></a>설명
 
-기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="getfileurl"></a>  CHttpFile::GetFileURL
 
@@ -293,7 +293,7 @@ BOOL QueryInfo(
 
 - 응용 프로그램 응답 헤더를 쿼리 하는 대개 HTTP_QUERY_FLAG_REQUEST_HEADERS 하지만 응용 프로그램이이 플래그를 사용 하 여 요청 헤더를 쿼리할 수도 있습니다.
 
-- 이러한 헤더는 "마지막 수정 시간," 등의 날짜/시간 문자열 값인 HTTP_QUERY_FLAG_SYSTEMTIME이이 플래그는 표준 Win32 헤더 값을 반환 합니다. [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 응용 프로그램에 필요 하지 않은 구조체 데이터를 구문 분석 합니다. 사용 하려는 경우이 플래그를 사용 하 여 `SYSTEMTIME` 함수의 재정의 합니다.
+- 이러한 헤더는 "마지막 수정 시간," 등의 날짜/시간 문자열 값인 HTTP_QUERY_FLAG_SYSTEMTIME이이 플래그는 표준 Win32 헤더 값을 반환 합니다. [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 응용 프로그램에 필요 하지 않은 구조체 데이터를 구문 분석 합니다. 사용 하려는 경우이 플래그를 사용 하 여 `SYSTEMTIME` 함수의 재정의 합니다.
 
 - 이러한 헤더는 상태 코드와 같은 숫자 값인 HTTP_QUERY_FLAG_NUMBER이이 플래그는 32 비트 숫자로 데이터를 반환 합니다.
 
@@ -315,7 +315,7 @@ BOOL QueryInfo(
 인덱스 값입니다. 참조 *lpdwIndex*합니다.
 
 *pSysTime*<br/>
-Win32 포인터로 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) 구조입니다.
+Win32 포인터로 [SYSTEMTIME](/windows/desktop/api/minwinbase/ns-minwinbase-systemtime) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -424,7 +424,7 @@ HTTP 상태 코드는 요청의 성공 여부를 나타내는 그룹에 속합�
 |500|알 수 없는 서버 오류|
 |503|서버 용량에 도달 했습니다|
 
-##  <a name="sendrequest"></a>  Chttpfile:: Sendrequest
+##  <a name="sendrequest"></a>  CHttpFile::SendRequest
 
 HTTP 서버에 요청을 보내도록이 멤버 함수를 호출 합니다.
 
@@ -506,7 +506,7 @@ BOOL SendRequestEx(
 
 콘텐츠 파일에 기록 된 후 호출 [EndRequest](#endrequest) 작업을 종료 합니다.
 
-기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+기본값 *dwContext* MFC에서 전송한 합니다 `CHttpFile` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CHttpFile` 개체입니다. 호출 하는 경우 [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) 하거나 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 생성 하는 `CHttpFile` 개체를 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ### <a name="example"></a>예제
 

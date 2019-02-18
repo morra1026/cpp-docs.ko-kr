@@ -11,12 +11,12 @@ helpviewer_keywords:
 - __popcnt64
 - __popcnt
 ms.assetid: e525b236-adc8-42df-9b9b-8b7d8c245d3b
-ms.openlocfilehash: a0a5a51bfcb5265f7b415433c3f6b64423840ebe
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: a6424f3414d9da17e52c0a9f78290497f5e5e01e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522461"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56146894"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
 
@@ -40,7 +40,7 @@ unsigned __int64 __popcnt64(
 
 #### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 [in] 16-, 32 비트 또는 64 비트 부호 없는 정수 채우기 수를 사용 하도록 하겠습니다.
 
 ## <a name="return-value"></a>반환 값
@@ -59,7 +59,7 @@ unsigned __int64 __popcnt64(
 
 ## <a name="remarks"></a>설명
 
-각 이러한 내장 함수 생성을 `popcnt` 명령입니다.  값의 크기는는 `popcnt` 인수의 크기와 동일 하 게 반환 하는 명령입니다.  32 비트 모드로 레지스터가 없습니다 64-bit 범용, 따라서 64 비트 이상 `popcnt`합니다.
+각 이러한 내장 함수 생성을 `popcnt` 명령입니다. 32 비트 모드로 레지스터가 없습니다 64-bit 범용, 따라서 64 비트 이상 `popcnt`합니다.
 
 에 대 한 하드웨어 지원을 확인 하는 `popcnt` 명령을 호출 합니다 `__cpuid` 포함 된 내장 함수 `InfoType=0x00000001` 23 많은 확인 및 `CPUInfo[2] (ECX)`합니다. 이 비트는 그렇지 않은 경우 명령 지원 되 면 1과 0입니다. 경우 코드를 실행 하면 사용 하 여이 내장 함수를 지원 하지 않는 하드웨어를 `popcnt` 명령 결과 예측할 수 없습니다.
 

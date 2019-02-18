@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: 4ce3c93c7cb8c26ae6008516c93faa8c8a5b37fb
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: f420715f0e90cbdf811d9a4f731885bd4f382d11
+ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694597"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54894460"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 
@@ -252,7 +252,7 @@ class CWindow
 |[CWindow::GetWindowRect](#getwindowrect)|창의 테두리 크기를 검색합니다.|
 |[CWindow::GetWindowRgn](#getwindowrgn)|창의 창 영역 복사본을 가져옵니다.|
 |[CWindow::GetWindowText](#getwindowtext)|창의 텍스트를 검색합니다.|
-|[Cwindow:: Getwindowtextlength](#getwindowtextlength)|창의 텍스트의 길이 검색합니다.|
+|[CWindow::GetWindowTextLength](#getwindowtextlength)|창의 텍스트의 길이 검색합니다.|
 |[CWindow::GetWindowThreadID](#getwindowthreadid)|지정된 된 기간을 생성 하는 스레드의 식별자를 검색 합니다.|
 |[CWindow::GetWindowWord](#getwindowword)|별도 창 메모리에 지정 된 오프셋을 16 비트 값을 검색합니다.|
 |[CWindow::GotoDlgCtrl](#gotodlgctrl)|대화 상자에서 컨트롤에 키보드 포커스를 설정 합니다.|
@@ -317,7 +317,7 @@ class CWindow
 |[CWindow::SetWindowPlacement](#setwindowplacement)|표시 상태와 위치를 설정합니다.|
 |[CWindow::SetWindowPos](#setwindowpos)|크기, 위치 및 Z 순서를 설정합니다.|
 |[CWindow::SetWindowRgn](#setwindowrgn)|창의 창 영역을 설정합니다.|
-|[Cwindow:: Setwindowtext](#setwindowtext)|창의 텍스트를 변경합니다.|
+|[CWindow::SetWindowText](#setwindowtext)|창의 텍스트를 변경합니다.|
 |[CWindow::SetWindowWord](#setwindowword)|별도 창 메모리에 지정 된 오프셋을 16 비트 값을 설정합니다.|
 |[CWindow::ShowCaret](#showcaret)|시스템 캐럿을 표시합니다.|
 |[CWindow::ShowOwnedPopups](#showownedpopups)|표시 하거나 창이 소유한 팝업 창을 숨깁니다.|
@@ -349,7 +349,7 @@ class CWindow
 
 |CWindow 메서드|Win32 함수|
 |--------------------|--------------------|
-|**BOOL ShowWindow (int** `nCmdShow` **);**|**BOOL ShowWindow (HWND** `hWnd` **, int** `nCmdShow` **);**|
+|**BOOL ShowWindow( int** `nCmdShow` **);**|**BOOL ShowWindow (HWND** `hWnd` **, int** `nCmdShow` **);**|
 
 `CWindow::ShowWindow` Win32 함수 호출 `ShowWindow` 전달 하 여 `CWindow::m_hWnd` 첫 번째 매개 변수로 합니다. 모든 `CWindow` 직접 Win32 함수를 래핑하는 메서드를 전달 합니다 `m_hWnd` 멤버 이므로 대부분의 `CWindow` 설명서를 참조 하는 Windows SDK입니다.
 
@@ -521,7 +521,7 @@ HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [ChildWindowFromPointEx](https://msdn.microsoft.com/library/windows/desktop/ms632677) Windows SDK에에서 있습니다.
+참조 [ChildWindowFromPointEx](/windows/desktop/api/winuser/nf-winuser-childwindowfrompointex) Windows SDK에에서 있습니다.
 
 ##  <a name="clienttoscreen"></a>  CWindow::ClientToScreen
 
@@ -669,7 +669,7 @@ HDWP DeferWindowPos(
 
 ### <a name="remarks"></a>설명
 
-참조 [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows SDK에에서 있습니다.
+참조 [DeferWindowPos](/windows/desktop/api/winuser/nf-winuser-deferwindowpos) Windows SDK에에서 있습니다.
 
 ##  <a name="destroywindow"></a>  CWindow::DestroyWindow
 
@@ -1456,11 +1456,11 @@ int GetWindowText(CSimpleString& strText) const;
 
 ### <a name="remarks"></a>설명
 
-참조 [GetWindowText](https://msdn.microsoft.com/library/windows/desktop/ms633520) Windows SDK에에서 있습니다.
+참조 [GetWindowText](/windows/desktop/api/winuser/nf-winuser-getwindowtexta) Windows SDK에에서 있습니다.
 
 이 메서드의 두 번째 버전을 사용 하면 BSTR;에서 텍스트를 저장할 수 있습니다. 세 번째 버전을 사용 하면 결과를 저장할 수 있습니다는 [CString](../../atl-mfc-shared/reference/cstringt-class.md), 있으므로 `CSimpleString` 의 기본 클래스인 `CString`합니다.
 
-##  <a name="getwindowtextlength"></a>  Cwindow:: Getwindowtextlength
+##  <a name="getwindowtextlength"></a>  CWindow::GetWindowTextLength
 
 창의 텍스트의 길이 검색합니다.
 
@@ -1751,7 +1751,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*블록*<br/>
+*bLock*<br/>
 [in] 경우 TRUE (기본값), 창 잠깁니다. 그렇지 않으면 해당 잠금이 해제 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1949,7 +1949,7 @@ BOOL OpenClipboard() throw();
 
 참조 [OpenClipboard](/windows/desktop/api/winuser/nf-winuser-openclipboard) Windows SDK에에서 있습니다.
 
-##  <a name="operator_hwnd"></a>  HWND CWindow::operator
+##  <a name="operator_hwnd"></a>  CWindow::operator HWND
 
 변환 된 `CWindow` 를 HWND로 개체입니다.
 
@@ -2619,7 +2619,7 @@ int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 
 참조 [SetWindowRgn](/windows/desktop/api/winuser/nf-winuser-setwindowrgn) Windows SDK에에서 있습니다.
 
-##  <a name="setwindowtext"></a>  Cwindow:: Setwindowtext
+##  <a name="setwindowtext"></a>  CWindow::SetWindowText
 
 창의 텍스트를 변경합니다.
 
@@ -2629,7 +2629,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
 
 ### <a name="remarks"></a>설명
 
-참조 [SetWindowText](https://msdn.microsoft.com/library/windows/desktop/ms633546) Windows SDK에에서 있습니다.
+참조 [SetWindowText](/windows/desktop/api/winuser/nf-winuser-setwindowtexta) Windows SDK에에서 있습니다.
 
 ### <a name="example"></a>예제
 

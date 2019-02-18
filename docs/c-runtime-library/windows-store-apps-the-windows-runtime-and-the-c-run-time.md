@@ -1,13 +1,13 @@
 ---
 title: UWP 앱, Windows 런타임 및 C 런타임
-ms.date: 11/04/2016
+ms.date: 02/02/2019
 ms.assetid: 356d6d8d-76ee-4181-9ad0-6f24b2fede38
-ms.openlocfilehash: ea6e3e5017fcbef997a1e844e9f84e9c385bd31d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae57390dc916116b8d799b9f937ff882abaef970
+ms.sourcegitcommit: 63c072f5e941989636f5a2b13800b68bb7129931
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441134"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55763894"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>UWP 앱, Windows 런타임 및 C 런타임
 
@@ -24,10 +24,6 @@ Windows 런타임에서는 다음 CRT 기능을 지원하지 않습니다.
 - 대부분의 멀티바이트 문자 및 문자열 함수
 
    그러나 유니코드 텍스트와 ANSI 텍스트 모두 지원됩니다.
-
-- 콘솔 응용 프로그램 및 명령줄 인수
-
-   그러나 일반적인 데스크톱 응용 프로그램에서도 콘솔 및 명령줄 인수를 지원합니다.
 
 - 환경 변수.
 
@@ -48,3 +44,4 @@ UWP 앱에서 사용할 수 없는 CRT 함수의 전체 목록 및 대체 기능
 [호환성](../c-runtime-library/compatibility.md)<br/>
 [Windows 런타임 지원되지 않는 CRT 함수](../c-runtime-library/windows-runtime-unsupported-crt-functions.md)<br/>
 [범주별 유버니설 C 런타임 루틴](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[유니버설 Windows 플랫폼 콘솔 앱 만들기](/windows/uwp/launch-resume/console-uwp)

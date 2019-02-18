@@ -28,12 +28,12 @@ helpviewer_keywords:
 - ranges, message map
 - message map ranges
 ms.assetid: 531b15ce-32b5-4ca0-a849-bb519616c731
-ms.openlocfilehash: 4012f1f0729ff0f46a8504c44f27a37cd55c77e5
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 09c023f6dcbf1fd33a0caac17af75f449d80c509
+ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327449"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850274"
 ---
 # <a name="message-map-macros-mfc"></a>메시지 맵 매크로(MFC)
 
@@ -256,12 +256,7 @@ ON_COMMAND_EX(id, memberFxn);
 
 ### <a name="requirements"></a>요구 사항
 
-헤더 파일: afxmsg_.h
-
-### <a name="see-also"></a>참고 항목
-
-[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
-[TN006: 메시지 맵](../tn006-message-maps.md)
+Header file: afxmsg_.h
 
 ## <a name="on_control"></a>  ON_CONTROL
 
@@ -383,97 +378,97 @@ OLE 명령 식별자입니다.
 
 `IOleCommandTarget` 표준 메뉴 명령을 다음 매크로의 MFC에서 구현 되었습니다.
 
-**ON_OLECMD_CLEARSELECTION)**
+**ON_OLECMD_CLEARSELECTION( )**
 
 Clear 편집 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_CLEARSELECTION, ID_EDIT_CLEAR)`
 
-**ON_OLECMD_COPY)**
+**ON_OLECMD_COPY( )**
 
 복사본 편집 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_COPY, ID_EDIT_COPY)`
 
-**ON_OLECMD_CUT)**
+**ON_OLECMD_CUT( )**
 
 잘라내기 편집 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_CUT, ID_EDIT_CUT)`
 
-**ON_OLECMD_NEW)**
+**ON_OLECMD_NEW( )**
 
 새 파일 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_NEW, ID_FILE_NEW)`
 
-**ON_OLECMD_OPEN)**
+**ON_OLECMD_OPEN( )**
 
 파일 열기 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_OPEN, ID_FILE_OPEN)`
 
-**ON_OLECMD_PAGESETUP)**
+**ON_OLECMD_PAGESETUP( )**
 
 파일 페이지 설정 메뉴를 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_PAGESETUP, ID_FILE_PAGE_SETUP)`
 
-**ON_OLECMD_PASTE)**
+**ON_OLECMD_PASTE( )**
 
 편집 붙여넣기 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_PASTE, ID_EDIT_PASTE)`
 
-**ON_OLECMD_PASTESPECIAL)**
+**ON_OLECMD_PASTESPECIAL( )**
 
 편집 하 여 붙여넣기 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_PASTESPECIAL, ID_EDIT_PASTE_SPECIAL)`
 
-**ON_OLECMD_PRINT)**
+**ON_OLECMD_PRINT( )**
 
 파일 인쇄 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_PRINT, ID_FILE_PRINT)`
 
-**ON_OLECMD_PRINTPREVIEW)**
+**ON_OLECMD_PRINTPREVIEW( )**
 
 파일 인쇄 미리 보기 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_PRINTPREVIEW, ID_FILE_PRINT_PREVIEW)`
 
-**ON_OLECMD_REDO)**
+**ON_OLECMD_REDO( )**
 
 편집 다시 실행 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_REDO, ID_EDIT_REDO)`
 
-**ON_OLECMD_SAVE)**
+**ON_OLECMD_SAVE( )**
 
 파일 저장 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_SAVE, ID_FILE_SAVE)`
 
-**ON_OLECMD_SAVE_AS)**
+**ON_OLECMD_SAVE_AS( )**
 
 다른 이름으로 저장 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_SAVEAS, ID_FILE_SAVE_AS)`
 
-**ON_OLECMD_SAVE_COPY_AS)**
+**ON_OLECMD_SAVE_COPY_AS( )**
 
 파일 복사본으로 저장 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_SAVECOPYAS, ID_FILE_SAVE_COPY_AS)`
 
-**ON_OLECMD_SELECTALL)**
+**ON_OLECMD_SELECTALL( )**
 
 모두 선택 편집 명령을 디스패치합니다. 구현:
 
 `ON_OLECMD(NULL, OLECMDID_SELECTALL, ID_EDIT_SELECT_ALL)`
 
-**ON_OLECMD_UNDO)**
+**ON_OLECMD_UNDO( )**
 
 실행 취소 편집 명령을 디스패치합니다. 구현:
 
@@ -482,11 +477,6 @@ Clear 편집 명령을 디스패치합니다. 구현:
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxdocob.h
-
-### <a name="see-also"></a>참고 항목
-
-[COleCmdUI 클래스](colecmdui-class.md)<br/>
-[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)
 
 ## <a name="on_registered_message"></a>  ON_REGISTERED_MESSAGE
 
@@ -525,11 +515,6 @@ END_MESSAGE_MAP()
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxmsg_.h
-
-### <a name="see-also"></a>참고 항목
-
-[RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)<br/>
-[사용자 정의 처리기](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE
 
@@ -610,10 +595,6 @@ ON_UPDATE_COMMAND_UI( id, memberFxn )
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxole.h
-
-### <a name="see-also"></a>참고 항목
-
-[CCmdUI 클래스](ccmdui-class.md)
 
 ## <a name="on_command_range"></a>  ON_COMMAND_RANGE
 
@@ -736,3 +717,13 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 ### <a name="requirements"></a>요구 사항
 
 **헤더:** afxmsg_.h
+
+## <a name="see-also"></a>참고자료
+
+[ON_COMMAND](message-map-macros-mfc.md#on_command)<br/>
+[TN006: 메시지 맵](../tn006-message-maps.md)<br/>
+[COleCmdUI 클래스](colecmdui-class.md)<br/>
+[COleServerDoc::OnExecOleCmd](coleserverdoc-class.md#onexecolecmd)<br/>
+[RegisterWindowMessage](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea)<br/>
+[사용자 정의 처리기](user-defined-handlers.md)<br/>
+[CCmdUI 클래스](ccmdui-class.md)
