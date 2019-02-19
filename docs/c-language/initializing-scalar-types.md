@@ -12,12 +12,12 @@ helpviewer_keywords:
 - automatic storage class
 - types [C], initializing
 ms.assetid: 73c516f5-c3ad-4d56-ab3b-f2a82b621104
-ms.openlocfilehash: f991eff82e5b6919f7960513ae9bc502cad77069
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3cf7eddcf43a65a787de60c391863d6471be7bcf
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641092"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151145"
 ---
 # <a name="initializing-scalar-types"></a>스칼라 형식 초기화
 
@@ -48,9 +48,9 @@ ms.locfileid: "50641092"
 
 - 파일 범위 수준에서 선언된 변수를 초기화할 수 있습니다. 외부 수준에서 변수를 명시적으로 초기화하지 않는 경우 해당 변수는 기본적으로 0으로 초기화됩니다.
 
-- 상수 식을 사용하면 **static** *storage-class-specifier*로 선언된 모든 전역 변수를 초기화할 수 있습니다. **static**으로 선언될 변수는 프로그램 실행이 시작될 때 초기화됩니다. 전역 **static** 변수를 명시적으로 초기화하지 않는 경우 해당 변수는 기본적으로 0으로 초기화되고 포인터 형식을 갖는 모든 멤버에 null 포인터가 할당됩니다.
+- 상수 식을 사용하면 **static***storage-class-specifier*로 선언된 모든 글로벌 변수를 초기화할 수 있습니다. **static**으로 선언될 변수는 프로그램 실행이 시작될 때 초기화됩니다. 전역 **static** 변수를 명시적으로 초기화하지 않는 경우 해당 변수는 기본적으로 0으로 초기화되고 포인터 형식을 갖는 모든 멤버에 null 포인터가 할당됩니다.
 
-- **auto** 또는 **register** 저장소 클래스 지정자로 선언된 변수는 해당 변수가 선언된 블록에 실행 제어가 전달될 때마다 초기화됩니다. **auto** 또는 **register** 변수의 선언에서 이니셜라이저를 생략하는 경우 변수의 초기 값이 정의되지 않습니다. 자동 및 레지스터 값의 경우 이니셜라이저는 상수가 되는 것으로 제한되지 않습니다. 따라서 이니셜라이저는 함수가 호출되어도 이전에 정의된 값을 포함하는 모든 식일 수 있습니다.
+- **auto** 또는 **register** 스토리지 클래스 지정자로 선언된 변수는 해당 변수가 선언된 블록에 실행 제어가 전달될 때마다 초기화됩니다. **auto** 또는 **register** 변수의 선언에서 이니셜라이저를 생략하는 경우 변수의 초기 값이 정의되지 않습니다. 자동 및 레지스터 값의 경우 이니셜라이저는 상수가 되는 것으로 제한되지 않습니다. 따라서 이니셜라이저는 함수가 호출되어도 이전에 정의된 값을 포함하는 모든 식일 수 있습니다.
 
 - 외부 변수 선언 및 모든 **static** 변수에 대한 초기 값은 외부 또는 내부인지에 상관없이 상수 식이어야 합니다. 자세한 내용은 [상수 식](../c-language/c-constant-expressions.md)을 참조하세요. 외부 선언 또는 정적 변수의 주소는 상수이므로 이러한 주소를 사용하면 내부적으로 선언된 **static** 포인터 변수를 초기화할 수 있습니다. 그러나 **auto** 변수의 주소는 블록의 각 실행에 대해 서로 다를 수 있으며 정적 이니셜라이저로 사용될 수 없습니다. 상수 또는 변수 값을 사용하여 **auto** 및 **register** 변수를 초기화할 수 있습니다.
 

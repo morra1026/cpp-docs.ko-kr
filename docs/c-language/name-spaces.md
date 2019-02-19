@@ -10,19 +10,19 @@ helpviewer_keywords:
 - tags, structure tags
 - union keyword [C]
 ms.assetid: b4bda1d1-cb5e-4f60-ac2b-29af93d8a9a2
-ms.openlocfilehash: ebf1961d83d14bf95633d4248c2f970c54923274
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 76ad9b797a4f192e8f22f8c040f5a308371a461b
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51325993"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148415"
 ---
 # <a name="name-spaces"></a>네임스페이스
 
 컴파일러가 "네임스페이스"를 설정하여 여러 종류의 항목에 사용된 식별자를 구별합니다. 각 네임스페이스에 있는 이름이 고유해야 충돌을 피할 수 있지만 네임스페이스 안에 같은 이름이 두 번 이상 나타날 수도 있습니다. 즉, 항목이 서로 다른 네임스페이스에 있을 경우 2개 이상의 다른 항목에 같은 식별자를 사용할 수 있습니다. 컴파일러는 프로그램에서 식별자의 구문 컨텍스트를 기반으로 참조를 확인할 수 있습니다.
 
 > [!NOTE]
-> 네임스페이스의 제한된 C 개념과 C++ "네임 스페이스" 기능을 혼동하지 마세요. 자세한 내용은 C++ 언어 참조의 [네임스페이스](../cpp/namespaces-cpp.md)를 참조하세요.
+> 네임스페이스의 제한된 C 개념과 C++ "네임 스페이스" 기능을 혼동하지 마십시오. 자세한 내용은 C++ 언어 참조의 [네임스페이스](../cpp/namespaces-cpp.md)를 참조하세요.
 
 이 목록에서는 C에 사용되는 네임스페이스를 설명합니다.
 

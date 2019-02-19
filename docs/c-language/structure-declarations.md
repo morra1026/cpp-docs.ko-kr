@@ -8,12 +8,12 @@ helpviewer_keywords:
 - structure members
 - embedded structures
 ms.assetid: 5be3be77-a236-4153-b574-7aa77675df7f
-ms.openlocfilehash: 5c557b3db2e58001fa0b7a1a5bef5b1043e2cd86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a17bb996f13fdbe11bb569c8af5669a9d0c5363f
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607287"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152289"
 ---
 # <a name="structure-declarations"></a>구조체 선언
 
@@ -53,7 +53,7 @@ ms.locfileid: "50607287"
 
 *struct-declaration-list*는 구조체 구성원의 형식 및 이름을 지정합니다. *struct-declaration-list* 인수에는 하나 이상의 변수 또는 비트 필드 선언이 포함됩니다.
 
-*struct-declaration-list*에 선언된 각 변수는 구조체 형식의 구성원으로 정의됩니다. *struct-declaration-list* 내 변수 선언의 형태는 선언에 저장소 클래스 지정자 또는 이니셜라이저를 포함할 수 없다는 점을 제외하고 이 섹션에 설명된 다른 변수 선언과 동일합니다. 구조체 멤버에는 `void` 형식, 불완전한 형식 또는 함수 형식을 제외한 모든 변수 형식을 포함할 수 있습니다.
+*struct-declaration-list*에 선언된 각 변수는 구조체 형식의 구성원으로 정의됩니다. *struct-declaration-list* 내 변수 선언의 형태는 선언에 스토리지 클래스 지정자 또는 이니셜라이저를 포함할 수 없다는 점을 제외하고 이 섹션에 설명된 다른 변수 선언과 동일합니다. 구조체 멤버에는 `void` 형식, 불완전한 형식 또는 함수 형식을 제외한 모든 변수 형식을 포함할 수 있습니다.
 
 자신이 나타나는 구조체의 형식을 가지도록 멤버를 선언할 수 없습니다. 그러나 구조체 형식에 태그가 있는 한 자신이 나타나는 구조체 형식에 대한 포인터로 멤버를 선언할 수 있습니다. 이렇게 하면 연결된 구조체 목록을 만들 수 있습니다.
 

@@ -6,16 +6,16 @@ f1_keywords:
 helpviewer_keywords:
 - sizeof operator
 ms.assetid: 70826d03-3451-41e4-bebb-a820ae66d53f
-ms.openlocfilehash: 0b5d25e0316c710ce758479ad9417c92201d929d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bc0de5481cade10f89634d9e4ec78f4ec7b09f6
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577634"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149559"
 ---
 # <a name="sizeof-operator-c"></a>sizeof 연산자 (C)
 
-`sizeof` 연산자는 피연산자 형식의 개체를 저장하기 위해 필요한 저장소 공간(바이트)을 제공합니다. 이 연산자를 사용하면 프로그램에서 컴퓨터 종속 데이터 크기를 지정하지 않아도 됩니다.
+`sizeof` 연산자는 피연산자 형식의 개체를 저장하기 위해 필요한 스토리지 공간(바이트)을 제공합니다. 이 연산자를 사용하면 프로그램에서 컴퓨터 종속 데이터 크기를 지정하지 않아도 됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -24,7 +24,7 @@ sizeof unary-expression
 sizeof ( type-name )
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 이 피연산자는 *unary-expression* 식별자이거나 괄호로 묶은 형식 지정자인 형식 캐스트 식입니다. *unary-expression*은 비트 필드 개체, 불완전한 형식 또는 함수 지정자를 나타낼 수 없습니다. 결과는 부호 없는 정수 계열 상수입니다. 표준 헤더 STDDEF.H에서는 이 형식을 **size_t**로 정의합니다.
 

@@ -11,18 +11,18 @@ helpviewer_keywords:
 - cpp.stop
 - Class View, hint file
 ms.assetid: 17194f66-cf62-4523-abec-77db0675ab65
-ms.openlocfilehash: 0b3ca7c6b09d85cddb519242e63af0b8097e3fec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44566408a3afcfee7a15299a5845b5af385aeef8
+ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558784"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56320694"
 ---
 # <a name="hint-files"></a>힌트 파일
 
 *힌트 파일*을 사용하면 Visual Studio IDE(통합 개발 환경)에서 함수 및 매크로의 이름과 같은 Visual C++ 식별자를 해석할 수 있습니다. Visual C++ 프로젝트를 열면 IDE의 *구문 분석 시스템*에서 프로젝트의 각 소스 파일에 있는 코드를 분석하고 모든 식별자에 대한 정보를 수집합니다. 그런 다음, IDE는 해당 정보를 사용하여 **클래스 뷰** 브라우저 및 **탐색 모음**과 같은 기능을 지원합니다.
 
-Visual C++ 2010에 도입된 구문 분석 시스템에서는 C/C++ 구문을 인식하지만 매크로가 포함된 명령문을 잘못 해석할 수 있습니다. 작성된 소스 코드가 매크로로 인해 구문적으로 올바르지 않은 경우 명령문을 잘못 해석할 수 있습니다. 소스 코드가 컴파일되고 전처리기에서 [매크로 식별자](../preprocessor/hash-define-directive-c-cpp.md)를 해당 정의로 바꾸면 명령문이 구문적으로 올바를 수 있습니다. 구문 분석 시스템은 힌트 파일을 사용하여 매크로를 해석하므로 프로젝트를 빌드하지 않고도 작동합니다. 따라서 **클래스 뷰**와 같은 검색 기능을 즉시 사용할 수 있습니다.
+Visual C++ 2010에 도입된 구문 분석 시스템에서는 C/C++ 구문을 인식하지만 매크로가 포함된 명령문을 잘못 해석할 수 있습니다. 작성된 소스 코드가 매크로로 인해 구문적으로 올바르지 않은 경우 명령문을 잘못 해석할 수 있습니다. 소스 코드가 컴파일되고 전처리기에서 [매크로 식별자](../preprocessor/hash-define-directive-c-cpp.md)를 해당 정의로 바꾸면 명령문이 구문적으로 올바르게 될 수 있습니다. 구문 분석 시스템은 힌트 파일을 사용하여 매크로를 해석하므로 프로젝트를 빌드하지 않고도 작동합니다. 따라서 **클래스 뷰**와 같은 검색 기능을 즉시 사용할 수 있습니다.
 
 힌트 파일에는 C/C++ 매크로 정의와 동일한 구문이 있는 사용자 지정 가능 *힌트*가 포함되어 있습니다. Visual C++에는 대부분의 프로젝트에 충분한 기본 제공 힌트 파일이 있지만, Visual Studio에서 식별자를 처리하는 방식을 개선하기 위해 사용자 고유의 힌트 파일을 만들 수 있습니다.
 

@@ -2,12 +2,12 @@
 title: 멀티바이트 문자
 ms.date: 11/04/2016
 ms.assetid: 09fe1431-1006-41f9-bf47-ca82724c23ae
-ms.openlocfilehash: 74f6854add2ba7090cbcd149059ad61f3f78a037
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87d9b500f2da6b7c6b967c8da483bd2813a5996e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461470"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150820"
 ---
 # <a name="multibyte-characters"></a>멀티바이트 문자
 

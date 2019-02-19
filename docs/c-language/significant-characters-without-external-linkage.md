@@ -2,12 +2,12 @@
 title: 외부 링크가 없는 중요한 문자
 ms.date: 11/04/2016
 ms.assetid: 396cfb36-391a-4aa9-885d-20198d4dc2ec
-ms.openlocfilehash: 8476bf692665ba4f045ec7b1807f4707e8f6aaf0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f509eb730a7c68d84a1e71686fee1ba02e73b366
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666949"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151314"
 ---
 # <a name="significant-characters-without-external-linkage"></a>외부 링크가 없는 중요한 문자
 

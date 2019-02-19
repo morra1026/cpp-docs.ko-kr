@@ -1,13 +1,13 @@
-﻿---
+---
 title: 문자
 ms.date: 11/04/2016
 ms.assetid: 4f42680f-42fd-4356-adae-735dc18c6727
-ms.openlocfilehash: ccde073a46019f5c1c5e9fd67030629e56ba4e70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b74a6cbc2e808751fa3972e1f6eae81f4dd6f22
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647839"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150963"
 ---
 # <a name="characters"></a>문자
 

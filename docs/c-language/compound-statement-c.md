@@ -5,12 +5,12 @@ helpviewer_keywords:
 - compound statements
 - statements, compound
 ms.assetid: 32d1bf86-cbbc-42a9-ba3a-1be1c6c7754c
-ms.openlocfilehash: dc4e13d82c03a30023f72759ecacb798aedec0ac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42d4c1d21c3e98dfc0281a47a35e033852f8de18
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532303"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152159"
 ---
 # <a name="compound-statement-c"></a>복합 문 (C)
 
@@ -35,7 +35,7 @@ ms.locfileid: "50532303"
 
 복합 문에서 변수 또는 함수를 선언할 때 스토리지 클래스 `extern`을 사용하지 않으면 스토리지가 할당되지 않고 초기화가 허용되지 않습니다. 선언은 외부 변수나 다른 곳에서 정의된 함수를 참조합니다.
 
-**auto** 또는 **register** 키워드를 사용하여 블록에서 선언된 변수는 다시 할당되고, 필요한 경우 복합 문이 시작될 때마다 초기화됩니다. 이 변수는 복합 문이 종료된 후에는 정의되지 않습니다. 블록 내부에서 선언된 변수에 **static** 특성이 있는 경우 프로그램 실행이 시작되고 프로그램 전체에 해당 값을 유지하면 변수가 초기화됩니다. **static**에 대한 자세한 내용은 [저장소 클래스](../c-language/c-storage-classes.md)를 참조하세요.
+**auto** 또는 **register** 키워드를 사용하여 블록에서 선언된 변수는 다시 할당되고, 필요한 경우 복합 문이 시작될 때마다 초기화됩니다. 이 변수는 복합 문이 종료된 후에는 정의되지 않습니다. 블록 내부에서 선언된 변수에 **static** 특성이 있는 경우 프로그램 실행이 시작되고 프로그램 전체에 해당 값을 유지하면 변수가 초기화됩니다. **static**에 대한 자세한 내용은 [스토리지 클래스](../c-language/c-storage-classes.md)를 참조하세요.
 
 다음 예제는 복합 문에 대해 설명합니다.
 

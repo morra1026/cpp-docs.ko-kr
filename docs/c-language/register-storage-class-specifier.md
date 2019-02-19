@@ -5,12 +5,12 @@ helpviewer_keywords:
 - register variables
 - register storage class
 ms.assetid: 7577bf48-88ec-4191-873c-ef4217a4034e
-ms.openlocfilehash: 339a96e33e186ddcc0615f89ff68a7f87b0bfdc7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0fac6db2254a909d0ec558a7e76f7ccf32aa7ac3
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668652"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147349"
 ---
 # <a name="register-storage-class-specifier"></a>register 스토리지 클래스 지정자
 
@@ -22,4 +22,4 @@ Microsoft C/C++ 컴파일러는 레지스터 변수에 대한 사용자 요청�
 
 ## <a name="see-also"></a>참고 항목
 
-[내부 수준 선언에 대한 저장소 클래스 지정자](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+[내부 수준 선언에 대한 스토리지 클래스 지정자](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

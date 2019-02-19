@@ -10,12 +10,12 @@ helpviewer_keywords:
 - memory, access using volatile
 - volatile keyword [C], type specifier
 ms.assetid: bb4c6744-1dd7-40a8-b4eb-f5585be30908
-ms.openlocfilehash: 31cfa4d0d443cc6bb854e8010f1e1535cd39b51b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5cb7ab3de8938b77dc95be3ee442f71d3b18b42
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507684"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147310"
 ---
 # <a name="type-qualifiers"></a>형식 한정자
 
@@ -55,7 +55,7 @@ int volatile vint;     /* Volatile integer        */
 
 다음 목록에서는 **const** 및 `volatile`을 사용하는 방법을 설명합니다.
 
-- **const** 키워드를 사용하여 모든 기본 또는 집계 형식을 수정하거나 모든 형식의 개체에 대한 포인터 또는 `typedef`를 수정할 수 있습니다. 항목이 **const** 형식 한정자만 사용하여 선언되는 경우 형식은 **const int**로 간주됩니다. **const** 변수는 초기화되거나 저장소의 읽기 전용 영역에 배치될 수 있습니다. **const** 키워드를 사용하여 포인터를 **const**로 선언하면 함수가 어떤 식으로든 포인터를 변경하지 못하게 되므로 유용합니다.
+- **const** 키워드를 사용하여 모든 기본 또는 집계 형식을 수정하거나 모든 형식의 개체에 대한 포인터 또는 `typedef`를 수정할 수 있습니다. 항목이 **const** 형식 한정자만 사용하여 선언되는 경우 형식은 **const int**로 간주됩니다. **const** 변수는 초기화되거나 스토리지의 읽기 전용 영역에 배치될 수 있습니다. **const** 키워드를 사용하여 포인터를 **const**로 선언하면 함수가 어떤 식으로든 포인터를 변경하지 못하게 되므로 유용합니다.
 
 - 컴파일러는 프로그램의 어떠한 지점에서도 `volatile` 변수의 값을 사용하거나 수정하는 알 수 없는 프로세스에 의해 해당 변수가 액세스될 수 있다고 가정합니다. 따라서 명령줄에 지정된 최적화와 관계없이 각각의 `volatile` 변수 할당 또는 참조에 대한 코드가 아무런 영향을 주지 않는 것처럼 보이는 경우에도 생성되어야 합니다.
 
