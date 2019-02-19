@@ -1,17 +1,17 @@
 ---
 title: / CETCOMPAT (제어 흐름 적용 기술이 호환)
-ms.date: 02/01/2019
+ms.date: 02/19/2019
 f1_keywords:
 - /CETCOMPAT
 helpviewer_keywords:
 - /CETCOMPAT linker option
 - /CETCOMPAT
-ms.openlocfilehash: 3adb147804674b52a5d77030c48567ec04da6aa6
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 48eb1e2369e54d855bd19bb1d26ad057c903b9d0
+ms.sourcegitcommit: 7cd712176e5bc341b9d8f899d41ad49f02f85e5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55703464"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418694"
 ---
 # <a name="cetcompat-control-flow-enforcement-technology-compatible"></a>/ CETCOMPAT (제어 흐름 적용 기술이 호환)
 
@@ -24,7 +24,7 @@ ms.locfileid: "55703464"
 ## <a name="arguments"></a>인수
 
 **NO**<br/>
-executalbe 표시 되지 않아야 CET 호환을 지정 합니다.
+실행 파일이 표시 되지 않아야 CET 호환을 지정 합니다.
 
 ## <a name="remarks"></a>설명
 
@@ -44,7 +44,7 @@ executalbe 표시 되지 않아야 CET 호환을 지정 합니다.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>프로그래밍 방식으로 이 링커 옵션을 설정하려면
 
-- 이 옵션에 프로그래밍 방식으로 해당 하는 없습니다.
+이 옵션에 프로그래밍 방식으로 해당 하는 없습니다.
 
 ## <a name="see-also"></a>참고자료
 
