@@ -7,12 +7,12 @@ helpviewer_keywords:
 - portability [C++], type int
 - signed integers
 ms.assetid: 0067ce9a-281e-491a-ae63-632952981e13
-ms.openlocfilehash: 6391e167ad214bb793b8d6b3b62637a113039afc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 848c9799e7ab5cfdfd2b25cc84e55de02c673f3e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437195"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56150014"
 ---
 # <a name="type-int"></a>int 형식
 
@@ -22,7 +22,7 @@ signed/unsigned `int` 항목의 크기는 특정 시스템의 표준 정수 크�
 
 **Microsoft 전용**
 
-부호 있는 정수는 2의 보수 형식으로 표시됩니다. 최상위 비트는 음수에 대해서는 부호 1을, 양수와 0에 대해서는 0을 가집니다. 값의 범위는 헤더 파일 LIMITS.H의 [C++ 정수 제한](../c-language/cpp-integer-limits.md)에 있습니다.
+부호 있는 정수는 2의 보수 형식으로 표시됩니다. 가장 중요한 비트는 부호(음수의 경우 1, 양수 및 0의 경우 0)를 포함합니다. 값의 범위는 헤더 파일 LIMITS.H의 [C++ 정수 제한](../c-language/cpp-integer-limits.md)에 있습니다.
 
 **Microsoft 전용 종료**
 
@@ -31,4 +31,4 @@ signed/unsigned `int` 항목의 크기는 특정 시스템의 표준 정수 크�
 
 ## <a name="see-also"></a>참고 항목
 
-[기본 형식의 저장소](../c-language/storage-of-basic-types.md)
+[기본 형식의 스토리지](../c-language/storage-of-basic-types.md)
