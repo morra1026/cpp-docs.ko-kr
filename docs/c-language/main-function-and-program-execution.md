@@ -9,12 +9,12 @@ helpviewer_keywords:
 - main function
 - programs [C++], terminating
 ms.assetid: 5984f1bd-072d-4e06-8640-122fb1454401
-ms.openlocfilehash: e975f09b62ffbb536790c13eb8614453b1c1e8b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d16f8a5b7b6b23ad90aad886bbb9654e706549cb
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610433"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151042"
 ---
 # <a name="main-function-and-program-execution"></a>기본 함수 및 프로그램 실행
 
@@ -26,7 +26,7 @@ ms.locfileid: "50610433"
 main( int argc, char *argv[ ], char *envp[ ] )
 ```
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 소스 프로그램 내의 함수는 하나 이상의 특정 작업을 수행합니다. **main** 함수는 각 작업을 수행하기 위해 이러한 함수를 호출할 수 있습니다. 다른 함수를 호출할 때 **main**은 실행이 함수의 첫 번째 문에서 시작될 수 있도록 해당 함수에 실행 제어를 전달합니다. 함수는 `return` 문이 실행되거나 함수 끝에 도달할 때 **main**에 제어를 반환합니다.
 
