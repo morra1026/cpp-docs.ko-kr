@@ -7,18 +7,18 @@ helpviewer_keywords:
 - __finally keyword [C]
 - structured exception handling, try-finally
 ms.assetid: 514400c1-c322-4bf3-9e48-3047240b8a82
-ms.openlocfilehash: ada38f80ff16f91a676803134854bca0b0dd4f14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82cc5ffa3f50196fc5f518b8bb5b2080ff14fd8d
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523866"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151834"
 ---
 # <a name="try-finally-statement-c"></a>try-finally 문 (C)
 
 **Microsoft 전용**
 
-`try-finally` 문은 코드 블록 실행이 중단될 때 응용 프로그램에서 정리 코드가 실행되도록 보장하는 C 언어에 대한 Microsoft 확장입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. `try-finally` 문은 루틴으로부터 중간에 반환되게 만들 수 있는 오류가 있는지 확인하기 위해 검사가 수행되는 위치가 많은 루틴에 특히 유용합니다.
+`try-finally` 문은 코드 블록 실행이 중단될 때 애플리케이션에서 정리 코드가 실행되도록 보장하는 C 언어에 대한 Microsoft 확장입니다. 정리는 메모리 할당 해제, 파일 닫기 및 파일 핸들 해제와 같은 작업으로 구성됩니다. `try-finally` 문은 루틴으로부터 중간에 반환되게 만들 수 있는 오류가 있는지 확인하기 위해 검사가 수행되는 위치가 많은 루틴에 특히 유용합니다.
 
 *try-finally-statement*: **__try**  *compound-statement*
 
