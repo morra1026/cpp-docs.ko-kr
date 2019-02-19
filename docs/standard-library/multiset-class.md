@@ -86,12 +86,12 @@ helpviewer_keywords:
 - std::multiset [C++], upper_bound
 - std::multiset [C++], value_comp
 ms.assetid: 630e8c10-0ce9-4ad9-8d79-9e91a600713f
-ms.openlocfilehash: 8d2e298a2e4c6eb16a1851b3a9ce7ddc886a76f2
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: 3b059db877d24f5e4414745ba6c2f9ee4f6591e7
+ms.sourcegitcommit: 7cd712176e5bc341b9d8f899d41ad49f02f85e5f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678472"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56418720"
 ---
 # <a name="multiset-class"></a>multiset 클래스
 
@@ -114,7 +114,7 @@ multiset에 저장되는 요소 데이터 형식입니다.
 
 C++14에서는 형식 매개 변수가 없는 `std::less<>` 또는 `std::greater<>` 조건자를 지정하여 유형이 다른 조회를 사용하도록 설정할 수 있습니다. 자세한 내용은 [연관 컨테이너의 유형이 다른 조회](../standard-library/stl-containers.md#sequence_containers)를 참조하세요
 
-*할당자*<br/>
+*Allocator*<br/>
 multiset의 메모리 할당 및 할당 취소에 대한 세부 정보를 캡슐화하는 저장된 할당자 개체를 나타내는 형식입니다. 기본값은 `allocator<Key>`입니다.
 
 ## <a name="remarks"></a>설명
@@ -482,7 +482,7 @@ multiset에서 일치하는지 확인할 요소의 키입니다.
 
 구성원 함수는 다음 범위에 있는 요소 수 *x*를 반환합니다.
 
-\[ lower_bound (*키*), upper_bound (*키*))
+\[ lower_bound(*key*), upper_bound(*key*) )
 
 ### <a name="example"></a>예제
 
@@ -705,7 +705,7 @@ iterator emplace(Args&&... args);
 
 |매개 변수|설명|
 |-|-|
-|*인수*|multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -773,7 +773,7 @@ iterator emplace_hint(
 
 |매개 변수|설명|
 |-|-|
-|*인수*|multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
+|*args*|multiset에 삽입할 요소를 생성하기 위해 전달되는 인수입니다.|
 |*where*|올바른 삽입 지점 검색을 시작할 위치입니다. (해당 지점 바로 앞에 있으면 *여기서*, 로그 시간 대신 분할 상환된 상수 시간에 삽입이 발생할 수 있습니다.)|
 
 ### <a name="return-value"></a>반환 값
@@ -953,7 +953,7 @@ size_type erase(
 *Where*<br/>
 제거할 요소의 위치입니다.
 
-*첫 번째*<br/>
+*첫째*<br/>
 제거할 첫 번째 요소의 위치입니다.
 
 *마지막*<br/>
@@ -1168,10 +1168,10 @@ IList);
 
 |매개 변수|설명|
 |-|-|
-|*val*|multiset에 삽입할 요소의 값입니다.|
+|*Val*|multiset에 삽입할 요소의 값입니다.|
 |*Where*|올바른 삽입 지점 검색을 시작할 위치입니다. (해당 지점 바로 앞에 있으면 *여기서*, 로그 시간 대신 분할 상환된 상수 시간에 삽입이 발생할 수 있습니다.)|
 |*ValTy*|Multiset의 요소를 생성 하는 데 사용할 수 있는 인수 형식을 지정 하는 템플릿 매개 변수 [value_type](../standard-library/map-class.md#value_type), 및 완벽 하 게 전달 *Val* 인수로 합니다.|
-|*첫 번째*|복사할 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 마지막 요소 바로 다음 위치입니다.|
 |*InputIterator*|[value_type](../standard-library/map-class.md#value_type) 개체를 생성하는 데 사용할 수 있는 형식의 요소를 가리키는 [입력 반복기](../standard-library/input-iterator-tag-struct.md)의 요구 사항을 충족하는 템플릿 함수 인수입니다.|
 |*IList*|요소를 복사할 원본 [initializer_list](../standard-library/initializer-list.md)입니다.|
@@ -1567,7 +1567,7 @@ multiset (
 |*Al*|이 multiset 개체에 사용할 스토리지 할당자 클래스로, 기본값은 `Allocator`입니다.|
 |*구성 요소*|multiset의 요소 순서를 지정하는 데 사용되는 `const Compare` 형식의 비교 함수로, 기본값은 `Compare`입니다.|
 |*오른쪽*|생성된 multiset가 복사본으로 지정될 multiset입니다.|
-|*첫 번째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
+|*첫째*|복사할 요소의 범위에서 첫 번째 요소의 위치입니다.|
 |*마지막*|복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.|
 |*IList*|요소를 복사해올 initializer_list입니다.|
 
@@ -1929,7 +1929,7 @@ int main() {
       cout << *ms1_Iter << " ";
    cout << "." << endl;
 
-   // rend can be used to terminate an interation
+   // rend can be used to terminate an iteration
    // through a multiset in a reverse order
    cout << "The reversed multiset is: ";
    for ( ms1_rIter = ms1.rbegin( ) ; ms1_rIter != ms1.rend( ); ms1_rIter++ )
