@@ -12,12 +12,12 @@ helpviewer_keywords:
 - function body
 - declaring functions, variables
 ms.assetid: ebab23c8-6eb8-46f3-b21d-570cd8457a80
-ms.openlocfilehash: dd396cb182aeae9ef587ab58f04893cf0283a8a9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61662caf28fad2f961a580cf280799711a6909bb
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507213"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147687"
 ---
 # <a name="c-function-definitions"></a>C 함수 정의
 
@@ -87,11 +87,11 @@ ms.locfileid: "50507213"
 
 *declarator* 구문의 *direct-declarator*는 정의될 함수의 이름과 매개 변수의 식별자를 지정합니다. *direct-declarator*에 *parameter-type-list*가 포함된 경우 목록은 모든 매개 변수의 형식을 지정합니다. 이러한 선언자는 이후의 함수 호출을 위해 함수 프로토타입의 역할도 합니다.
 
-함수 정의의 *declaration-list*에 있는 *declaration*에는 **register**가 아닌 *storage-class-specifier*가 포함될 수 없습니다. **register** 저장소 클래스가 **int** 형식의 값에 지정된 경우에만 *declaration-specifiers* 구문에서 *type-specifier*를 생략할 수 있습니다.
+함수 정의의 *declaration-list*에 있는 *declaration*에는 **register**가 아닌 *storage-class-specifier*가 포함될 수 없습니다. **register** 스토리지 클래스가 **int** 형식의 값에 지정된 경우에만 *declaration-specifiers* 구문에서 *type-specifier*를 생략할 수 있습니다.
 
 *compound-statement*는 지역 변수 선언, 외부에서 선언된 항목에 대한 참조 및 문이 포함된 함수 본문입니다.
 
-[함수 특성](../c-language/function-attributes.md), [저장소 클래스](../c-language/storage-class.md), [반환 형식](../c-language/return-type.md), [매개 변수](../c-language/parameters.md) 및 [함수 본문](../c-language/function-body.md) 섹션에서는 함수 정의의 구성 요소에 대해 자세히 설명합니다.
+[함수 특성](../c-language/function-attributes.md), [스토리지 클래스](../c-language/storage-class.md), [반환 형식](../c-language/return-type.md), [매개 변수](../c-language/parameters.md) 및 [함수 본문](../c-language/function-body.md) 섹션에서는 함수 정의의 구성 요소에 대해 자세히 설명합니다.
 
 ## <a name="see-also"></a>참고 항목
 

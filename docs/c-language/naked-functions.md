@@ -7,20 +7,20 @@ helpviewer_keywords:
 - prolog code
 - epilog code
 ms.assetid: 2543c8af-00d4-4a2a-8a87-e746da1f9929
-ms.openlocfilehash: 250a47157e915dfe2f2a9e5f6d912bbf83334d55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b752dd6fa378bc1275e8a7da90420aa2b8247e4e
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430377"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152198"
 ---
 # <a name="naked-functions"></a>Naked 함수
 
 **Microsoft 전용**
 
-`naked` 저장소 클래스 특성은 Microsoft 전용 C 언어 확장입니다. `naked` 저장소 클래스 특성으로 선언된 함수의 경우, 컴파일러는 코드를 프롤로그 및 에필로그 코드 없이 생성합니다. 이 기능을 이용하여 인라인 어셈블러 코드로 사용자 정의 프롤로그/에필로그 코드 시퀀스를 작성할 수 있습니다. naked 함수는 가상 디바이스 드라이버 작성에 특히 유용합니다.
+`naked` 스토리지 클래스 특성은 Microsoft 전용 C 언어 확장입니다. `naked` 스토리지 클래스 특성으로 선언된 함수의 경우, 컴파일러는 코드를 프롤로그 및 에필로그 코드 없이 생성합니다. 이 기능을 이용하여 인라인 어셈블러 코드로 사용자 정의 프롤로그/에필로그 코드 시퀀스를 작성할 수 있습니다. naked 함수는 가상 디바이스 드라이버 작성에 특히 유용합니다.
 
-`naked` 특성은 함수의 정의에만 관련되고 형식 수정자가 아니기 때문에 naked 함수는 확장된 특성 구문을 사용합니다([확장된 저장소 클래스 특성](../c-language/c-extended-storage-class-attributes.md) 참조).
+`naked` 특성은 함수의 정의에만 관련되고 형식 수정자가 아니기 때문에 naked 함수는 확장된 특성 구문을 사용합니다([확장된 스토리지 클래스 특성](../c-language/c-extended-storage-class-attributes.md) 참조).
 
 다음 예제에서는 `naked` 특성으로 함수를 정의합니다.
 

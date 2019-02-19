@@ -1,16 +1,16 @@
-﻿---
+---
 title: 함수 (C)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - functions [C]
 - Visual C, functions
 ms.assetid: 31839f65-49f4-43e1-85ec-8769924ffa96
-ms.openlocfilehash: 2d434e5bb0e876d7b2d87500d75dc62154a5327b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50b03b6eb155b9f64803faccd65bce156455bc41
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649646"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148155"
 ---
 # <a name="functions-c"></a>함수 (C)
 
@@ -28,7 +28,7 @@ ms.locfileid: "50649646"
 
 - [Naked 함수](../c-language/naked-functions.md)
 
-- [저장소 클래스](../c-language/storage-class.md)
+- [스토리지 클래스](../c-language/storage-class.md)
 
 - [반환 형식](../c-language/return-type.md)
 

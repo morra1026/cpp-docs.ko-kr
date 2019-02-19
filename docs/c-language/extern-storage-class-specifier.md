@@ -8,16 +8,16 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - external linkage, extern modifier
 ms.assetid: 6e16d927-291f-49e4-986c-9d91a482a441
-ms.openlocfilehash: 426bf816b988730530ba52c3f995aa2b0a8f0140
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6bbae7c778f5196ac0dca387265499b27119a367
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50650317"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56151392"
 ---
 # <a name="extern-storage-class-specifier"></a>extern 스토리지 클래스 지정자
 
-**extern** 저장소 클래스 지정자를 사용하여 선언된 변수는 다른 소스 파일에서 정의된 것과 같은 이름이 지정된 변수에 대한 참조입니다. 외부 수준 변수 정의를 표시하는 데 사용됩니다. **extern**으로 선언된 변수에는 자체에 할당된 저장소가 없습니다. 이름만 있습니다.
+**extern** 스토리지 클래스 지정자를 사용하여 선언된 변수는 다른 소스 파일에서 정의된 것과 같은 이름이 지정된 변수에 대한 참조입니다. 외부 수준 변수 정의를 표시하는 데 사용됩니다. **extern**으로 선언된 변수에는 자체에 할당된 스토리지가 없습니다. 이름만 있습니다.
 
 ## <a name="example"></a>예
 
@@ -65,4 +65,4 @@ void func(void)
 
 ## <a name="see-also"></a>참고 항목
 
-[내부 수준 선언에 대한 저장소 클래스 지정자](../c-language/storage-class-specifiers-for-internal-level-declarations.md)
+[내부 수준 선언에 대한 스토리지 클래스 지정자](../c-language/storage-class-specifiers-for-internal-level-declarations.md)

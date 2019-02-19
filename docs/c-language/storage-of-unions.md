@@ -6,12 +6,12 @@ helpviewer_keywords:
 - union keyword [C], storage
 - union keyword [C]
 ms.assetid: b33d246a-8d20-41c4-89b2-ab05f1428792
-ms.openlocfilehash: 06444151a453017055667885304ecb59534f5774
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49b99dc17fd7bdddd8a47e3bfd5913a70a7631a7
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602230"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152822"
 ---
 # <a name="storage-of-unions"></a>공용 구조체의 스토리지
 
@@ -25,7 +25,7 @@ union         /* Defines a union named x */
 } x;
 ```
 
-`x` 공용 구조체의 멤버는 선언 순서대로 `char` 값의 포인터, `char` 값, **float** 값의 배열입니다. `x`는 공용 구조체의 가장 긴 멤버이므로 `f`에 할당된 저장소는 요소가 20개인 배열 `f`에 필요한 저장소입니다. 공용 구조체에 연결된 태그가 없으므로 해당 형식에 이름이 없거나 "익명"입니다.
+`x` 공용 구조체의 멤버는 선언 순서대로 `char` 값의 포인터, `char` 값, **float** 값의 배열입니다. `x`는 공용 구조체의 가장 긴 멤버이므로 `f`에 할당된 스토리지는 요소가 20개인 배열 `f`에 필요한 스토리지입니다. 공용 구조체에 연결된 태그가 없으므로 해당 형식에 이름이 없거나 "익명"입니다.
 
 ## <a name="see-also"></a>참고 항목
 
