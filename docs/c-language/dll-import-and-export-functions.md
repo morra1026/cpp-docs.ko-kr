@@ -9,12 +9,12 @@ helpviewer_keywords:
 - extended storage-class attributes
 - dllexport attribute [C++], storage-class attribute
 ms.assetid: 08d164b9-770a-4e14-afeb-c6f21d9e33e4
-ms.openlocfilehash: b4f0674e68f2c7b8deeae663c42470b83777ac78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d703045773e4d2c320eaef2aa80c4ce74d23472
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572391"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149312"
 ---
 # <a name="dll-import-and-export-functions"></a>DLL 가져오기 및 내보내기 함수
 
@@ -22,7 +22,7 @@ ms.locfileid: "50572391"
 
 이 내용에 대한 가장 완벽한 최신 정보는 [dllexport, dllimport](../cpp/dllexport-dllimport.md)에서 확인할 수 있습니다.
 
-**dllimport** 및 `dllexport` 저장소 클래스 한정자는 Microsoft 전용 C 언어 확장입니다. 이러한 한정자는 해당 클라이언트에 대한 DLL 인터페이스(실행 파일 또는 다른 DLL)를 명시적으로 정의합니다. 함수를 `dllexport`로 선언하면 모듈 정의(.DEF) 파일을 사용할 필요가 없습니다. 또한 **dllimport** 및 `dllexport` 한정자는 데이터 및 개체와 함께 사용할 수 있습니다.
+**dllimport** 및 `dllexport` 스토리지 클래스 한정자는 Microsoft 전용 C 언어 확장입니다. 이러한 한정자는 해당 클라이언트에 대한 DLL 인터페이스(실행 파일 또는 다른 DLL)를 명시적으로 정의합니다. 함수를 `dllexport`로 선언하면 모듈 정의(.DEF) 파일을 사용할 필요가 없습니다. 또한 **dllimport** 및 `dllexport` 한정자는 데이터 및 개체와 함께 사용할 수 있습니다.
 
 다음 예제와 같이 **dllimport** 및 `dllexport` 스토리지 클래스 한정자는 확장된 특성 구문 키워드인 `__declspec`와 함께 사용해야 합니다.
 

@@ -10,20 +10,20 @@ helpviewer_keywords:
 - __except keyword [C], in try-except
 - try-catch keyword [C], try-except keyword [C]
 ms.assetid: f76db9d1-fc78-417f-b71f-18e545fc01c3
-ms.openlocfilehash: b186a1923eadedd201119ff8fbbd0a730c33cff8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9940fdf983f6141c0de207509bb800533b0f1eb8
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611902"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56152328"
 ---
 # <a name="try-except-statement-c"></a>try-except 문 (C)
 
 **Microsoft 전용**
 
-**try-except** 문은 정상적으로 실행을 종료시키는 이벤트가 발생하는 경우 응용 프로그램이 프로그램의 제어를 얻을 수 있도록 하는 C 언어에 대한 Microsoft 확장입니다. 이러한 이벤트를 예외라고 하고 예외를 처리하는 메커니즘은 구조적 예외 처리라고 합니다.
+**try-except** 문은 정상적으로 실행을 종료시키는 이벤트가 발생하는 경우 애플리케이션이 프로그램의 제어를 얻을 수 있도록 하는 C 언어에 대한 Microsoft 확장입니다. 이러한 이벤트를 예외라고 하고 예외를 처리하는 메커니즘은 구조적 예외 처리라고 합니다.
 
-예외는 하드웨어 또는 소프트웨어 기반일 수 있습니다. 응용 프로그램을 하드웨어 또는 소프트웨어 예외로부터 완전히 복구할 수 없더라도 구조적 예외 처리를 통해 오류 정보를 표시하고 응용 프로그램의 내부 상태를 트래핑하여 문제를 진단하는 데 도움이 되도록 합니다. 이것은 쉽게 재현할 수 없는 간헐적인 문제에 특히 유용합니다.
+예외는 하드웨어 또는 소프트웨어 기반일 수 있습니다. 애플리케이션을 하드웨어 또는 소프트웨어 예외로부터 완전히 복구할 수 없더라도 구조적 예외 처리를 통해 오류 정보를 표시하고 애플리케이션의 내부 상태를 트래핑하여 문제를 진단하는 데 도움이 되도록 합니다. 이것은 쉽게 재현할 수 없는 간헐적인 문제에 특히 유용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,7 +53,7 @@ ms.locfileid: "50611902"
 > [!NOTE]
 >  C++ 프로그램의 경우 구조적 예외 처리 대신 C++ 예외 처리를 사용해야 합니다. 자세한 내용은 *C++ 언어 참조*의 [예외 처리](../cpp/exception-handling-in-visual-cpp.md)를 참조하세요.
 
-응용 프로그램의 각 루틴에는 자체 예외 처리기가 있을 수 있습니다. `__except` 식은 `__try` 본문의 범위에서 실행됩니다. 즉, 이 범위에서 선언된 모든 지역 변수에 액세스할 수 있습니다.
+애플리케이션의 각 루틴에는 자체 예외 처리기가 있을 수 있습니다. `__except` 식은 `__try` 본문의 범위에서 실행됩니다. 즉, 이 범위에서 선언된 모든 지역 변수에 액세스할 수 있습니다.
 
 `__leave` 키워드는 **try-except** 문 블록 내에서 유효합니다. `__leave`의 효과는 **try-except** 블록의 끝으로 이동하는 것입니다. 예외 처리기의 끝 다음에 실행이 다시 시작됩니다. `goto` 문을 사용하여 동일한 결과를 얻을 수 있지만 `goto` 문은 스택 해제를 초래합니다. `__leave` 문은 스택 해제를 초래하지 않으므로 더 효율적입니다.
 

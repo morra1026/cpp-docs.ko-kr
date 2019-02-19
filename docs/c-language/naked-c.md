@@ -7,12 +7,12 @@ helpviewer_keywords:
 - prolog code
 - epilog code
 ms.assetid: 23b1209b-93ba-46ad-a60f-2327c1933eaf
-ms.openlocfilehash: c79502d1793df2a3340eed26c67cca5d2a8b0d9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 519d7bceb700e9862f0d0025b755cf28fb0fbc0c
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50537243"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56149780"
 ---
 # <a name="naked-c"></a>Naked (C)
 
@@ -26,4 +26,4 @@ naked 특성 사용에 대한 자세한 내용은 [Naked 함수](../c-language/n
 
 ## <a name="see-also"></a>참고 항목
 
-[C 확장 저장소 클래스 특성](../c-language/c-extended-storage-class-attributes.md)
+[C 확장 스토리지 클래스 특성](../c-language/c-extended-storage-class-attributes.md)

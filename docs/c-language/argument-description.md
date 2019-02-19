@@ -8,18 +8,18 @@ helpviewer_keywords:
 - argv argument
 - argc argument
 ms.assetid: 91c2cbe3-9aca-4277-afa1-6137eb8fb704
-ms.openlocfilehash: 64c94798587ad64f369ca0ed03a7251d0eb9acb5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 71301bd5eedf2806e97b8d24d95beaf2843427ad
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447153"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56148506"
 ---
 # <a name="argument-description"></a>인수 설명
 
 **main** 및 **wmain** 함수 안의 `argc` 매개 변수는 명령줄에서 프로그램에 전달되는 인수의 개수를 지정하는 정수입니다. 프로그램 이름이 인수로 간주되므로 `argc`의 값이 1 이상입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 `argv` 매개 변수는 프로그램 인수를 나타내며 null로 끝나는 문자열에 대한 포인터의 배열입니다. 배열의 각 요소는 **main** 또는 **wmain**에 전달되는 인수의 문자열 표현을 가리킵니다. 배열에 대한 내용은 [배열 선언](../c-language/array-declarations.md)을 참조하세요. `argv` 형식에 대한 포인터의 배열(`char`) 또는 `char *argv[]` 형식에 대한 포인터의 포인터(`char`)로 `char **argv` 매개 변수를 선언할 수 있습니다. **wmain**의 경우 `wchar_t` 형식에 대한 포인터의 배열(`wchar_t *argv[]`) 또는 `wchar_t` 형식에 대한 포인터의 포인터(`wchar_t **argv`)로 `argv` 매개 변수를 선언할 수 있습니다.
 

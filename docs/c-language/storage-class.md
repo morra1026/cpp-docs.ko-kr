@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external linkage, storage-class specifiers
 - static storage class specifiers
 ms.assetid: 39a79ba6-edf5-42b6-8e45-f94227603dd6
-ms.openlocfilehash: 98e685556fe5dc874f2af818d8c86d0dcadefe29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d5664634687c689316427c8652865ba9423e24f4
+ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575671"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56147817"
 ---
 # <a name="storage-class"></a>스토리지 클래스
 
@@ -41,9 +41,9 @@ ms.locfileid: "50575671"
 
 함수 선언에 *storage-class-specifier* `extern`이 포함되어 있는 경우 식별자의 링크가 파일 범위를 포함하는 식별자의 모든 표시되는 선언의 링크와 동일합니다. 파일 범위를 포함하는 표시되는 선언이 없는 경우 식별자에 외부 링크가 있습니다. 식별자에 파일 범위가 있으며 *storage-class-specifier*는 없는 경우 식별자에 외부 링크가 있습니다. 외부 링크는 식별자의 각 인스턴스가 동일한 개체 또는 함수를 표시함을 의미합니다. 링크 및 파일 범위에 대한 자세한 내용은 [수명, 범위, 표시 유형 및 링크](../c-language/lifetime-scope-visibility-and-linkage.md)를 참조하세요.
 
-`extern`이 아닌 저장소 클래스 지정자를 포함하는 블록 범위 함수 선언은 오류를 발생시킵니다.
+`extern`이 아닌 스토리지 클래스 지정자를 포함하는 블록 범위 함수 선언은 오류를 발생시킵니다.
 
-**static** 저장소 클래스를 포함하는 함수는 정의된 소스 파일에서만 볼 수 있습니다. 다른 모든 함수는 `extern` 스토리지 클래스가 명시적으로 또는 암시적으로 제공된 경우 프로그램의 모든 소스 파일에서 표시됩니다. **static** 저장소 클래스가 필요한 경우 함수가 처음으로 선언된 경우 및 함수가 정의된 경우 선언되어야 합니다.
+**static** 스토리지 클래스를 포함하는 함수는 정의된 소스 파일에서만 볼 수 있습니다. 다른 모든 함수는 `extern` 스토리지 클래스가 명시적으로 또는 암시적으로 제공된 경우 프로그램의 모든 소스 파일에서 표시됩니다. **static** 스토리지 클래스가 필요한 경우 함수가 처음으로 선언된 경우 및 함수가 정의된 경우 선언되어야 합니다.
 
 **Microsoft 전용**
 
