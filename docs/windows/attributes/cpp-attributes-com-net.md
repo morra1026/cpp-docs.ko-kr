@@ -28,9 +28,9 @@ Microsoft은.NET Framework 공용 언어 런타임 개발 및 COM 프로그래�
 
 - 친숙하고 간단한 호출 규칙을 표시합니다.
 
-- 사용하여 매크로 달리 디버거에서 인식 하는 코드를 삽입 합니다.
+- 매크로와는 달리 디버거에서 인식하는 삽입 코드를 사용합니다.
 
-- 세부적인 구현하지 않는 기본 클래스에서 쉽게 파생을 허용합니다.
+- 세부적인 구현이 필요하지 않은, 기본 클래스에서 쉽게 파생하는 것을 허용합니다.
 
 - 몇 가지 간단한 특성을 사용 하 여 COM 구성 요소에서 필요한 IDL 코드의 양이 대체 합니다.
 
@@ -45,7 +45,7 @@ class CMyReceiver
 }
 ```
 
-설정할 수 있습니다 합니다 `CMyReceiver` 메서드 `handler1` 하 고 `handler2` 이벤트를 처리할 (내장 함수를 사용하여 [__hook](../../cpp/hook.md))를 사용하여 만들 수 있는 이벤트 원본에서 [event_source](event-source.md).
+`CMyReceiver` 메서드 `handler1` 및 `handler2`를 설정하여 이벤트를 처리할 수 있으며(내장 함수 [__hook](../../cpp/hook.md)를 사용), 이는 [event_source](event-source.md)를 사용하여 생성할 수 있습니다.
 
 ## <a name="basic-mechanics-of-attributes"></a>특성의 기본 메커니즘
 
@@ -94,7 +94,7 @@ class CMyReceiver
 
 ### <a name="required-attributes"></a>필수 특성
 
-이 필드에 나열 되어야 하는 다른 특성 제대로 작동 하려면 지정 된 특성 (즉, 동일한 대상에 적용 됨)를 제공 합니다. 특성을이 필드에 대한 모든 항목에 대 한 일반적인 것입니다.
+이 필드는 지정된 특성이 제대로 작동하기 위해 존재해야 하는(즉, 동일한 대상에 적용되는) 다른 특성을 나열합니다. 특성에 이 필드에 대한 항목이 있는 것은 드뭅니다.
 
 ### <a name="invalid-attributes"></a>잘못 된 특성
 
