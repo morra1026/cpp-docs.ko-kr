@@ -121,5 +121,5 @@ public:
 
 ## <a name="see-also"></a>참고자료
 
-[오류 및 예외 처리(최신 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[오류 및 예외 처리(모던 C++)](../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
 [방법: 예외 및 비 예외 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)
