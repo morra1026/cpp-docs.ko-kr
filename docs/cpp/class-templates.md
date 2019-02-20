@@ -15,7 +15,7 @@ ms.locfileid: "50660319"
 ---
 # <a name="class-templates"></a>클래스 템플릿
 
-이 항목에서는 C++ 클래스 템플릿과 관련된 규칙을 설명 합니다.
+이 항목에서는 C++ 클래스 템플릿과 관련된 규칙을 설명합니다.
 
 ## <a name="member-functions-of-class-templates"></a>클래스 템플릿의 멤버 함수
 
