@@ -17,7 +17,7 @@ ms.locfileid: "50516911"
 ---
 # <a name="attributes-alphabetical-reference"></a>특성 사전순 참조
 
-다음 특성은 Microsoft c + + 컴파일러에서 사용할 수 있습니다.
+다음 특성은 Microsoft C++ 컴파일러에서 사용할 수 있습니다.
 
 |특성|설명|
 |---------------|-----------------|
@@ -61,7 +61,7 @@ ms.locfileid: "50516911"
 |[hidden](hidden.md)|항목이 있지만 하지 사용자 기반 브라우저에 표시할지를 나타냅니다.|
 |[ID](id.md)|멤버 함수 (속성 또는 메서드를 인터페이스나 dispinterface)에 대 한 DISPID를 지정합니다.|
 |[idl_module](idl-module.md)|DLL에 진입점을 지정합니다.|
-|[idl_quote](idl-quote.md)|특성을 사용할 수 있습니다 또는 IDL을 생성 하는 현재 버전의 Visual c + +에서 지원 되지 않습니다.|
+|[idl_quote](idl-quote.md)|특성을 사용할 수 있습니다 또는 IDL을 생성 하는 현재 버전의 Visual C++에서 지원 되지 않습니다.|
 |[iid_is](iid-is.md)|인터페이스 포인터에서 가리키는 COM 인터페이스의 IID를 지정 합니다.|
 |[immediatebind](immediatebind.md)|데이터베이스는 즉시 알림을 받을 수는 데이터 바인딩된 개체의 속성에는 모든 변경 내용을 나타냅니다.|
 |[implements](implements-cpp.md)|IDL coclass의 구성원으로 강제 적용 되는 디스패치 인터페이스를 지정 합니다.|
