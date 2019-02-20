@@ -21,11 +21,11 @@ ATL 코드는 단일 스레드 개체로, 아파트 모델 개체, 자유 스레
 
 이 섹션에서 다루는 항목은 다음과 같습니다.
 
-- 어떻게를 [템플릿 라이브러리](../atl/using-a-template-library.md) 표준 라이브러리에서 다릅니다.
+- [템플릿 라이브러리](../atl/using-a-template-library.md)가 표준 라이브러리와 다른 점.
 
-- 여러분이 [ATL을 사용 하 여 수행할 수 있고 수](../atl/scope-of-atl.md)입니다.
+- [ATL로 할 수 있는 일과 할 수 없는 일](../atl/scope-of-atl.md)
 
-- [ATL 및 MFC 간의 선택에 대 한 권장 사항](../atl/recommendations-for-choosing-between-atl-and-mfc.md)합니다.
+- [ATL과 MFC 중 선택을 위한 권장 사항](../atl/recommendations-for-choosing-between-atl-and-mfc.md)
 
 ## <a name="see-also"></a>참고 항목
 
