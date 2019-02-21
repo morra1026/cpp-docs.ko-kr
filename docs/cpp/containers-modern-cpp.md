@@ -1,5 +1,5 @@
 ---
-title: 컨테이너(최신 C++)
+title: 컨테이너(모던 C++)
 ms.date: 1/18/2018
 ms.topic: conceptual
 ms.openlocfilehash: 2da57bfca8b04f50a223dddfb886835c69f746a4
@@ -9,7 +9,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220142"
 ---
-# <a name="containers-modern-c"></a>컨테이너(최신 C++)
+# <a name="containers-modern-c"></a>컨테이너(모던 C++)
 
 기본적으로 C++에서 기본 순차 컨테이너로서의 [vector](../standard-library/vector-class.md)를 사용합니다. 이것은 .NET 언어에서의 `List<T>`와 동일합니다.
 
@@ -40,6 +40,6 @@ C 스타일 배열을 사용 하지 마세요. 직접 데이터에 대 한 액�
 
 ## <a name="see-also"></a>참고 항목
 
-[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
