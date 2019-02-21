@@ -57,7 +57,7 @@ int main(int j) {
 
 템플릿 인수가 명시적으로 지정되면 함수 인수를 해당 함수 템플릿 매개 변수의 형식으로 변환하기 위해 표준 암시적 변환이 수행됩니다. 위의 예제에서 컴파일러는 `char j`를 **int** 형식으로 변환합니다.
 
-## <a name="see-also"></a>참고자료
+## <a name="see-also"></a>참고 항목
 
 [템플릿](../cpp/templates-cpp.md)<br/>
 [함수 템플릿 인스턴스화](../cpp/function-template-instantiation.md)<br/>

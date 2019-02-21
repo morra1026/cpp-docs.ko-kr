@@ -20,7 +20,7 @@ C++ 특성(attribute)은 기능별 그룹으로 다음과 같이 분류됩니다
 |특성|설명|
 |---------------|-----------------|
 |[COM 특성](com-attributes.md)|COM 및 .NET Framework 공용 언어 런타임 개발의 다양한 영역을 지원하는 코드를 삽입합니다.|
-|[IDL 특성](idl-attributes.md)|구조체의 기술 및 해당 파일의 구문은 않고 마법사를 사용 하지 않고 소스 코드 파일에서.idl 파일의 수정이 가능 합니다.|
+|[IDL 특성](idl-attributes.md)|마법사를 이용하지 않고 .idl 파일의 구조 및 문법을 알 필요 없이 소스코드 파일에서 .idl 수정이 가능합니다.|
 |[OLE DB 소비자 특성](ole-db-consumer-attributes.md)|[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-reference.md)을 기반으로 코드를 삽입하여 테이블 열기, 명령 실행 및 데이터 액세스와 같은 작업을 수행하는 작동 중인 OLE DB 소비자를 만듭니다.|
 |[컴파일러 특성](compiler-attributes.md)|Microsoft C++ 컴파일러에서 제공합니다.|
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: '방법: Shared_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/19/2018
@@ -33,7 +33,7 @@ ms.locfileid: "54220597"
 
 ## <a name="example-3"></a>예제 3
 
-`shared_ptr` 유용도 c + + 표준 라이브러리 컨테이너의 요소를 복사 하는 알고리즘을 사용 하는 경우입니다. `shared_ptr`에 요소를 래핑한 다음 내부 메모리가 필요할 때까지 유효하거나 더 이상 유효하지 않음을 인식하며 해당 요소를 다른 컨테이너에 복사할 수 있습니다. 다음 예제에서는 벡터의 `replace_copy_if` 인스턴스에서 `shared_ptr` 알고리즘을 사용하는 방법을 보여 줍니다.
+`shared_ptr` 유용도 C++ 표준 라이브러리 컨테이너의 요소를 복사 하는 알고리즘을 사용 하는 경우입니다. `shared_ptr`에 요소를 래핑한 다음 내부 메모리가 필요할 때까지 유효하거나 더 이상 유효하지 않음을 인식하며 해당 요소를 다른 컨테이너에 복사할 수 있습니다. 다음 예제에서는 벡터의 `replace_copy_if` 인스턴스에서 `shared_ptr` 알고리즘을 사용하는 방법을 보여 줍니다.
 
 [!code-cpp[stl_smart_pointers#4](../cpp/codesnippet/CPP/how-to-create-and-use-shared-ptr-instances_3.cpp)]
 
