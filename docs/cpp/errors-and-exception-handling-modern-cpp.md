@@ -1,4 +1,4 @@
----
+﻿---
 title: 오류 및 예외 처리(모던 C++)
 ms.date: 09/17/2018
 ms.topic: conceptual
@@ -60,7 +60,7 @@ int main()
 }
 ```
 
-C + +에서 예외를 사용 하면 C# 및 Java와 같은 언어에서 비슷합니다. 에 **시도** 예외인 경우 차단 *발생* 됩니다 *포착* 첫 번째 연결 **catch** 블록 형식이 일치는 예외입니다. 실행에서 이동 하는 즉, 합니다 **throw** 문을 합니다 **catch** 문입니다. 사용할 수 있는 catch 블록이 없는 있으면 `std::terminate` 호출 되 고 프로그램이 종료 합니다. C + +에서는 형식일 throw 될 수 있습니다. 하지만 직접 또는 간접적으로 파생 되는 형식을 throw 하는 권장 `std::exception`합니다. 이전 예제에서는 예외 유형 [invalid_argument](../standard-library/invalid-argument-class.md)에서 표준 라이브러리에 정의 된를 [ \<stdexcept >](../standard-library/stdexcept.md) 헤더 파일입니다. C + +는 제공 하지 않으며 필요 하지 않습니다는 **마지막** 블록 예외가 throw 되 면 모든 리소스가 해제 되도록 합니다. Resource는 초기화 (RAII) 관용구 스마트 포인터를 사용 하는 리소스 정리에 필요한 기능을 제공 합니다. 자세한 내용은 [방법: 예외 안전성을 위한 디자인](../cpp/how-to-design-for-exception-safety.md)합니다. C + + 스택 언 와인딩 메커니즘에 대 한 자세한 내용은 [예외 및 스택 해제](../cpp/exceptions-and-stack-unwinding-in-cpp.md)합니다.
+C++에서 예외를 사용 하면 C# 및 Java와 같은 언어에서 비슷합니다. 에 **시도** 예외인 경우 차단 *발생* 됩니다 *포착* 첫 번째 연결 **catch** 블록 형식이 일치는 예외입니다. 실행에서 이동 하는 즉, 합니다 **throw** 문을 합니다 **catch** 문입니다. 사용할 수 있는 catch 블록이 없는 있으면 `std::terminate` 호출 되 고 프로그램이 종료 합니다. C++에서는 형식일 throw 될 수 있습니다. 하지만 직접 또는 간접적으로 파생 되는 형식을 throw 하는 권장 `std::exception`합니다. 이전 예제에서는 예외 유형 [invalid_argument](../standard-library/invalid-argument-class.md)에서 표준 라이브러리에 정의 된를 [ \<stdexcept >](../standard-library/stdexcept.md) 헤더 파일입니다. C++는 제공 하지 않으며 필요 하지 않습니다는 **마지막** 블록 예외가 throw 되 면 모든 리소스가 해제 되도록 합니다. Resource는 초기화 (RAII) 관용구 스마트 포인터를 사용 하는 리소스 정리에 필요한 기능을 제공 합니다. 자세한 내용은 [방법: 예외 안전성을 위한 디자인](../cpp/how-to-design-for-exception-safety.md)합니다. C++ 스택 언 와인딩 메커니즘에 대 한 자세한 내용은 [예외 및 스택 해제](../cpp/exceptions-and-stack-unwinding-in-cpp.md)합니다.
 
 ## <a name="basic-guidelines"></a>기본 지침
 
@@ -92,7 +92,7 @@ C + +에서 예외를 사용 하면 C# 및 Java와 같은 언어에서 비슷합
 
 C 및 C++ 프로그램에는 구조적된 예외 처리 (SEH) 메커니즘이 Windows 운영 체제에서 사용할 수 있습니다. SEH의 개념 유사 C++ 예외를 제외 하 고 SEH를 사용 합니다 **__try**를 **__except**, 및 **__finally** 대신 생성 **시도** 하 고 **catch**합니다. Visual C++, C++ 예외는 SEH에 대해 구현 됩니다. 그러나 C++ 코드를 작성할 때 C++ 예외 구문을 사용 합니다.
 
-SEH에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리 (C/c + +)](../cpp/structured-exception-handling-c-cpp.md)합니다.
+SEH에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리 (C/C++)](../cpp/structured-exception-handling-c-cpp.md)합니다.
 
 ## <a name="exception-specifications-and-noexcept"></a>예외 사양 및 noexcept
 

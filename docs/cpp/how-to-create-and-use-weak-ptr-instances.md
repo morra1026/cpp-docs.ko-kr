@@ -1,5 +1,5 @@
----
-title: '방법: Weak_ptr 인스턴스 만들기 및 사용'
+﻿---
+title: '방법: weak_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 07/12/2018
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220324"
 ---
-# <a name="how-to-create-and-use-weakptr-instances"></a>방법: Weak_ptr 인스턴스 만들기 및 사용
+# <a name="how-to-create-and-use-weakptr-instances"></a>방법: weak_ptr 인스턴스 만들기 및 사용
 
 개체의 기본 개체에 액세스 하는 방법을 저장 해야 경우에 따라는 `shared_ptr` 참조 횟수를 증가 시킬 없이 합니다. 사이 순환 참조가 있는 경우 이러한 상황이 발생 하는 일반적으로 `shared_ptr` 인스턴스.
 
