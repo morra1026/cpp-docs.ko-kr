@@ -101,6 +101,6 @@ SEH에 대 한 자세한 내용은 참조 하세요. [구조적 예외 처리 (C
 ## <a name="see-also"></a>참고자료
 
 [방법: 예외 및 비 예외 코드 간 인터페이스](../cpp/how-to-interface-between-exceptional-and-non-exceptional-code.md)<br/>
-[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)

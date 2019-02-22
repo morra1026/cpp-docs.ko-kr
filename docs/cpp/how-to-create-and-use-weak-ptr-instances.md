@@ -1,4 +1,4 @@
-﻿---
+---
 title: '방법: Weak_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 07/12/2018
@@ -86,4 +86,4 @@ Press any key
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터(최신 C++)](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)

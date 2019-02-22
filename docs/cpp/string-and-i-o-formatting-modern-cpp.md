@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220506"
 ---
-# <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(최신 C++)
+# <a name="string-and-io-formatting-modern-c"></a>문자열 및 I/O 서식 지정(모던 C++)
 
 C++ [iostreams](../standard-library/iostream.md)는 서식 문자열 I/O를 지원합니다. 예를 들어 상태 서식은 cout에 전달되면 코드 한 줄 정도가 아니라 대규모로 변경될 때까지 해당 방식으로 유지됩니다. 다음 코드에서는 현재 상태를 저장하고 나중에 다시 설정하여 정수가 16진수로 출력되게 서식을 지정하도록 cout를 설정하는 방법을 보여 줍니다.
 
