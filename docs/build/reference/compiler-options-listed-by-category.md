@@ -4,18 +4,18 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: ef61ebbfad62e6a7bf764bad35204247e47d8ddb
-ms.sourcegitcommit: 6990f842fefc27b522b15cf352f3517b319d78da
+ms.openlocfilehash: 63b621bf99a1aeada10706badfe19cde417d7233
+ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248574"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56676502"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
 이 문서에는 컴파일러 옵션의 범주별 목록이 포함되어 있습니다. 사전순으로 나열된 목록을 보려면 [Compiler Options Listed Alphabetically](compiler-options-listed-alphabetically.md)을 참조하세요.
 
-### <a name="optimization"></a>최적화
+## <a name="optimization"></a>최적화
 
 |옵션|용도|
 |------------|-------------|
@@ -31,7 +31,7 @@ ms.locfileid: "53248574"
 |[/Oy](oy-frame-pointer-omission.md)|프레임 포인터를 생략합니다. (x86 전용)|
 |[/favor](favor-optimize-for-architecture-specifics.md)|지정된 아키텍처나 아키텍처 범주에 최적화된 코드를 생성합니다.|
 
-### <a name="code-generation"></a>코드 생성
+## <a name="code-generation"></a>코드 생성
 
 |옵션|용도|
 |------------|-------------|
@@ -72,7 +72,7 @@ ms.locfileid: "53248574"
 |[/RTC](rtc-run-time-error-checks.md)|런타임 오류 검사를 사용합니다.|
 |[/volatile](volatile-volatile-keyword-interpretation.md)|volatile 키워드가 해석되는 방식을 선택합니다.|
 
-### <a name="output-files"></a>출력 파일
+## <a name="output-files"></a>출력 파일
 
 |옵션|용도|
 |------------|-------------|
@@ -87,7 +87,7 @@ ms.locfileid: "53248574"
 |[/Fp](fp-name-dot-pch-file.md)|미리 컴파일된 헤더 파일 이름을 지정합니다.|
 |[/FR, /Fr](fr-fr-create-dot-sbr-file.md)|생성 된.sbr 브라우저 파일 이름을 지정 합니다.|
 
-### <a name="preprocessor"></a>전처리기
+## <a name="preprocessor"></a>전처리기
 
 |옵션|용도|
 |------------|-------------|
@@ -105,7 +105,7 @@ ms.locfileid: "53248574"
 |[/u](u-u-undefine-symbols.md)|미리 정의된 모든 매크로를 제거합니다.|
 |[/X](x-ignore-standard-include-paths.md)|표준 포함 디렉터리를 무시합니다.|
 
-### <a name="language"></a>언어
+## <a name="language"></a>언어
 
 |옵션|용도|
 |------------|-------------|
@@ -129,7 +129,7 @@ ms.locfileid: "53248574"
 |[/Zs](zs-syntax-check-only.md)|구문만 확인합니다.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행 하는 출력 파일을 생성 합니다.|
 
-### <a name="linking"></a>연결
+## <a name="linking"></a>연결
 
 |옵션|용도|
 |------------|-------------|
@@ -143,7 +143,7 @@ ms.locfileid: "53248574"
 |[/MT](md-mt-ld-use-run-time-library.md)|LIBCMT.lib를 사용하여 컴파일함으로써 다중 스레드 실행 파일을 만듭니다.|
 |[/MTd](md-mt-ld-use-run-time-library.md)|LIBCMTD.lib를 사용하여 컴파일함으로써 디버그 다중 스레드 실행 파일을 만듭니다.|
 
-### <a name="miscellaneous"></a>기타
+## <a name="miscellaneous"></a>기타
 
 |옵션|용도|
 |------------|-------------|
@@ -159,7 +159,7 @@ ms.locfileid: "53248574"
 |[/H](h-restrict-length-of-external-names.md)|더 이상 사용되지 않습니다. 외부 공개 이름의 길이를 제한합니다.|
 |[/HELP](help-compiler-command-line-help.md)|컴파일러 옵션을 나열합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
-|[/ JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
+|[/JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|컴파일러와 링커는 Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.|
 |[/MP](mp-build-with-multiple-processes.md)|여러 개의 소스 파일을 동시에 빌드합니다.|
 |[/nologo](nologo-suppress-startup-banner-c-cpp.md)|초기 화면 배너를 표시하지 않습니다.|
@@ -195,7 +195,7 @@ ms.locfileid: "53248574"
 |[/permissive-](permissive-standards-conformance.md)|표준 준수 모드를 설정 합니다.|
 |[/std](std-specify-language-standard-version.md)|C + + 표준 버전 호환성 선택기입니다.|
 
-### <a name="deprecated-and-removed-compiler-options"></a>사용 되지 않는 컴파일러 옵션
+## <a name="deprecated-and-removed-compiler-options"></a>사용 되지 않는 컴파일러 옵션
 
 |옵션|용도|
 |------------|-------------|
