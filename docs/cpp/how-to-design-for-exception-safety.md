@@ -1,4 +1,4 @@
-﻿---
+---
 title: '방법: 예외 안전성을 위한 디자인'
 ms.custom: how-to
 ms.date: 11/04/2016

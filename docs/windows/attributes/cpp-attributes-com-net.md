@@ -1,4 +1,4 @@
----
+﻿---
 title: COM 및.NET에 대한 C++ 특성
 ms.custom: index-page
 ms.date: 11/19/2018
@@ -98,7 +98,7 @@ class CMyReceiver
 
 ### <a name="invalid-attributes"></a>잘못 된 특성
 
-이 필드는 지정된 된 특성을 사용하여 호환 되지 않는 다른 특성을 나열 합니다. 특성을이 필드에 대 한 모든 항목에 대한 일반적인 것입니다.
+이 필드는 지정된 된 특성을 사용 하 여 호환 되지 않는 다른 특성을 나열 합니다. 특성에 이 필드에 대한 항목이 있는 것은 드뭅니다.
 
 ## <a name="in-this-section"></a>섹션 내용
 
