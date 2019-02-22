@@ -1,5 +1,5 @@
 ---
-title: 알고리즘(최신 C++)
+title: 알고리즘(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6f758d3c-a7c7-4a50-92bb-97b2f6d4ab27
@@ -10,9 +10,9 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220155"
 ---
-# <a name="algorithms-modern-c"></a>알고리즘(최신 C++)
+# <a name="algorithms-modern-c"></a>알고리즘(모던 C++)
 
-최신 c + + 프로그래밍에 대 한 것이 좋습니다에 알고리즘을 사용 하 여 [c + + 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)합니다. 몇 가지 중요 한 예는 다음과 같습니다.
+최신 C++ 프로그래밍에 대 한 것이 좋습니다에 알고리즘을 사용 하 여 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)합니다. 몇 가지 중요 한 예는 다음과 같습니다.
 
 - **for_each**은 기본 통과 알고리즘입니다. (또한 **변환** not-전체 의미 체계에 대 한 합니다.)
 
@@ -33,9 +33,9 @@ auto i = lower_bound( v.begin(), v.end(), comp );
 
 ## <a name="loops"></a>루프
 
-범위를 기준으로 사용 가능한 경우 **에 대 한** 루프 또는 알고리즘 호출 또는 둘 다를 직접 작성 한 루프 대신 합니다. **복사본**, **변환**를 **count_if**를 **remove_if**, 하는 의도 분명 때문에 손으로 작성 한 루프 보다 우수 하 고 있으며 쉽게 버그 없는 코드를 작성할 수 있도록 합니다. 또한 대부분의 c + + 표준 라이브러리 알고리즘 보다 효율적으로 만드는 구현 최적화가.
+범위를 기준으로 사용 가능한 경우 **에 대 한** 루프 또는 알고리즘 호출 또는 둘 다를 직접 작성 한 루프 대신 합니다. **복사본**, **변환**를 **count_if**를 **remove_if**, 하는 의도 분명 때문에 손으로 작성 한 루프 보다 우수 하 고 있으며 쉽게 버그 없는 코드를 작성할 수 있도록 합니다. 또한 대부분의 C++ 표준 라이브러리 알고리즘 보다 효율적으로 만드는 구현 최적화가.
 
-대신 다음과 같은 이전 c + +:
+대신 다음과 같은 이전 C++:
 
 ```cpp
 for ( auto i = strings.begin(); i != strings.end(); ++i ) {
@@ -49,7 +49,7 @@ for ( ; i != v.end(); ++i ) {
 }
 ```
 
-다음과 같은 최신 c + +를 사용 합니다.
+다음과 같은 최신 C++를 사용 합니다.
 
 ```cpp
 for_each( begin(strings), end(strings), [](string& s) {
@@ -61,7 +61,7 @@ auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 
 ### <a name="range-based-for-loops"></a>범위 기반 for 루프
 
-범위 기반 **에 대 한** 루프는 C + + 언어 기능, c + + 표준 라이브러리 알고리즘을 하지 않습니다. 하지만 루프에 대 한이 설명에서 언급할 가치가 있습니다. 범위 기반 **에 대 한** 루프의 확장은 합니다 **에 대 한** 키워드 및 값의 범위를 반복 하는 루프를 작성할 수 있는 편리 하 고 효율적인 방법을 제공 합니다. C + + 표준 라이브러리 컨테이너, 문자열 및 배열에 대 한 기본으로 제공 되는 범위 기반 **에 대 한** 루프입니다. 사용자 정의 형식에 대 한이 새로운 반복 구문의 사용 하려면 다음 지원을 추가 합니다.
+범위 기반 **에 대 한** 루프는 C++ 언어 기능, C++ 표준 라이브러리 알고리즘을 하지 않습니다. 하지만 루프에 대 한이 설명에서 언급할 가치가 있습니다. 범위 기반 **에 대 한** 루프의 확장은 합니다 **에 대 한** 키워드 및 값의 범위를 반복 하는 루프를 작성할 수 있는 편리 하 고 효율적인 방법을 제공 합니다. C++ 표준 라이브러리 컨테이너, 문자열 및 배열에 대 한 기본으로 제공 되는 범위 기반 **에 대 한** 루프입니다. 사용자 정의 형식에 대 한이 새로운 반복 구문의 사용 하려면 다음 지원을 추가 합니다.
 
 - A `begin` 구조체의 시작 부분에 반복기를 반환 하는 메서드 및 `end` 구조의 끝에 반복기를 반환 하는 메서드입니다.
 
@@ -75,6 +75,6 @@ auto i = find_if( begin(v), end(v),  [=](int i) { return i > x && i < y; } );
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)<br/>

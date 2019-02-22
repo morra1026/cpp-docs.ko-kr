@@ -1,4 +1,4 @@
-﻿---
+---
 title: '방법: CComPtr 및 CComQIPtr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/04/2016
@@ -39,4 +39,4 @@ COM(구성 요소 개체 모델) 개체를 인스턴스화할 때 소멸자에�
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터(최신 C++)](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)
