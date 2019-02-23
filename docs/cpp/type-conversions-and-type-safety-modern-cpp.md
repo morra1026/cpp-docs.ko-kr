@@ -1,5 +1,5 @@
 ---
-title: 형식 변환 및 형식 안전성(최신 C++)
+title: 형식 변환 및 형식 안전성(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b361a-2ce1-4700-8b5d-ab4f57b245d5
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220649"
 ---
-# <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(최신 C++)
+# <a name="type-conversions-and-type-safety-modern-c"></a>형식 변환 및 형식 안전성(모던 C++)
 
 이 문서에서는 공용 형식 변환 문제를 식별하고 C++ 코드에서 이 문제를 방지하는 방법에 대해 설명합니다.
 
@@ -179,6 +179,6 @@ C 스타일 캐스트 연산자는 호출 연산자 ()와 동일하므로 코드
 ## <a name="see-also"></a>참고자료
 
 [C++ 형식 시스템(최신 C++)](../cpp/cpp-type-system-modern-cpp.md)<br/>
-[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
