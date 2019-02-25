@@ -67,4 +67,4 @@ ms.locfileid: "54220597"
 
 ## <a name="see-also"></a>참고자료
 
-[스마트 포인터(최신 C++)](../cpp/smart-pointers-modern-cpp.md)
+[스마트 포인터(모던 C++)](../cpp/smart-pointers-modern-cpp.md)

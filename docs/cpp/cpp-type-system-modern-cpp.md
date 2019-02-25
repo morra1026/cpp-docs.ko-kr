@@ -1,5 +1,5 @@
 ---
-title: C++ 형식 시스템(최신 C++)
+title: C++ 형식 시스템(모던 C++)
 ms.date: 11/19/2018
 ms.topic: conceptual
 ms.assetid: 553c0ed6-77c4-43e9-87b1-c903eec53e80
@@ -10,7 +10,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220675"
 ---
-# <a name="c-type-system-modern-c"></a>C++ 형식 시스템(최신 C++)
+# <a name="c-type-system-modern-c"></a>C++ 형식 시스템(모던 C++)
 
 개념이 *형식* 는 C++에서 매우 중요 합니다. 모든 변수, 함수 인수 및 함수 반환 값은 형식이 있어야 컴파일할 수 있습니다. 또한 모든 식(리터럴 값 포함)은 확인 전 컴파일러가 암시적으로 형식을 지정합니다. 형식의 몇 가지 예로 **int** 정수 값을 저장할 **double** 부동 소수점 값을 저장 (라고도 *스칼라* 데이터 형식), 또는 표준 라이브러리 클래스 [std::basic_string](../standard-library/basic-string-class.md) 텍스트를 저장 합니다. 정의 하 여 고유한 형식을 만들 수 있습니다는 **클래스** 하거나 **구조체**합니다. 이 형식은 변수에 할당되는(또는 식 결과) 메모리 양, 해당 변수에 저장할 수 있는 값의 유형, 이러한 값(비트 패턴)의 해석 방법 및 여기에 대해 수행할 수 있는 작업을 지정합니다. 이 문서에는 C++ 형식 시스템의 주요 기능에 대한 비공식적 개요가 들어 있습니다.
 
@@ -170,6 +170,6 @@ C++ 형식 시스템에 대한 자세한 내용은 다음 항목을 참조하십
 
 ## <a name="see-also"></a>참고자료
 
-[C++의 진화(최신 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
+[C++의 진화(모던 C++)](../cpp/welcome-back-to-cpp-modern-cpp.md)<br/>
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)
