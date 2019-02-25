@@ -18,7 +18,7 @@
 ### [오류 및 예외 처리(모던 C++)](errors-and-exception-handling-modern-cpp.md)
 #### [방법: 예외 안전성을 위한 디자인](how-to-design-for-exception-safety.md)
 #### [방법: 예외 코드와 예외가 아닌 코드 간 인터페이스](how-to-interface-between-exceptional-and-non-exceptional-code.md)
-### [ABI 경계의 이식성( C++)](portability-at-abi-boundaries-modern-cpp.md)
+### [ABI 경계의 이식성(모던 C++)](portability-at-abi-boundaries-modern-cpp.md)
 ## [어휘 규칙](lexical-conventions.md)
 ### [파일 변환 개요](overview-of-file-translation.md)
 ### [문자 집합](character-sets.md)
