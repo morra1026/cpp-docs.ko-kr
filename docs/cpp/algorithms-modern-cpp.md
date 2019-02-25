@@ -14,13 +14,13 @@ ms.locfileid: "54220155"
 
 모던 C++ 프로그래밍 적용을 위해 [C++ 표준 라이브러리](../standard-library/cpp-standard-library-reference.md)의 알고리즘을 사용하는 것을 권장합니다. 다음은 몇가지 주요 예를 보여줍니다.
 
-- **for_each**는 기본 탐색 알고리즘입니다. (또한 **transform**도 고려할 수 있습니다.)
+- **for_each**는 기본 탐색 알고리즘입니다.(또한 **transform**도 고려할 수 있습니다.)
 
 - **find_if**은 기본 검색 알고리즘입니다.
 
 - **sort**, **lower_bound** 및 그 밖의 기본 정렬 및 검색 알고리즘.
 
-비교자를 만들기 위해 비교 연산자 **<** 를 사용하고 가능한 경우 *이름있는 람다(named lambdas)* 를 사용하세요.
+비교자를 만들기 위해 비교 연산자 **<**를 사용하고 가능한 경우 *이름있는 람다(named lambdas)*를 사용하세요.
 
 ```cpp
 auto comp = [](const widget& w1, const widget& w2)
