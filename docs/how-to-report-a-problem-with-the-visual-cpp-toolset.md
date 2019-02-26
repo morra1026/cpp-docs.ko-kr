@@ -1,16 +1,15 @@
 ---
 title: Visual C++ 도구 집합의 문제를 보고하는 방법
 ms.date: 06/21/2018
-ms.technology:
-- cpp-ide
+ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 34157063e9b19539fd22c24986193987cf41979b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7758905f6db537260ec9e8b6e516bfa409e97ad2
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586851"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809739"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
@@ -219,7 +218,7 @@ CONTEXT:
 
 #### <a name="bad-code-generation"></a>잘못된 코드 생성
 
-잘못된 코드 생성은 드물지만 컴파일러에서 실수로 잘못된 코드가 생성되고 응용 프로그램이 컴파일 시간에 이 문제를 검색하지 못하고 런타임에 충돌하는 경우에 발생합니다. 발생하는 문제로 인해 잘못된 코드가 생성된다고 의심하는 경우 보고서를 [백 엔드(코드 생성) 충돌](#backend-code-generation-crash)과 동일하게 처리하세요.
+잘못된 코드 생성은 드물지만 컴파일러에서 실수로 잘못된 코드가 생성되고 애플리케이션이 컴파일 시간에 이 문제를 검색하지 못하고 런타임에 충돌하는 경우에 발생합니다. 발생하는 문제로 인해 잘못된 코드가 생성된다고 의심하는 경우 보고서를 [백 엔드(코드 생성) 충돌](#backend-code-generation-crash)과 동일하게 처리하세요.
 
 이러한 종류의 충돌을 보고하려면 LTCG(링크 타임 코드 생성)를 사용하는 경우(cl.exe에 대한 **/GL** 명령줄 인수를 사용하여 설정) [링크 재현](#link-repros)을 제공해 주세요. 사용하지 않는 경우 [전처리 재현](#preprocessed-repros)을 제공해 주세요.
 
