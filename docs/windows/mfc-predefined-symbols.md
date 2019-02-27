@@ -9,12 +9,12 @@ helpviewer_keywords:
 - databases [C++], MFC programming model
 - Windows programming MFC symbols [C++]
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
-ms.openlocfilehash: 2f36f42ce24c2cdf1f3ac4c93248d430ec75f30a
-ms.sourcegitcommit: 470de1337035dd33682d935b4b6c6d8b1bdb0bbb
+ms.openlocfilehash: 329d56f4a8e0e9992cb78987c559f74c7349f681
+ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56320863"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954954"
 ---
 # <a name="mfc-predefined-symbols"></a>미리 정의된 MFC 기호
 
@@ -23,12 +23,12 @@ MFC 프로젝트는 항상 windows를 지 원하는 여러 헤더 파일을 포�
 ```cpp
 #include <afxwin.h>      //MFC core and standard components
 #include <afxext.h>      //MFC extensions
-#include <afxdisp.h      //MFC automation classes
+#include <afxdisp.h>      //MFC automation classes
 #include <afxdtctl.h>   //MFC support for Internet Explorer common controls
 #include <afxcmn.h>      //MFC support for Windows common controls.
 ```
 
-헤더 파일에 MFC 공통 값에 대 한 기호 ID 값을 포함 합니다. 이러한 기호는 MFC 프로젝트에서 작업 하는 경우에 사용할 수 있습니다. AFX_ 접두사 표준 기호 이름 접두사 뒤에 있습니다.
+헤더 파일에 MFC 공통 값에 대 한 기호 ID 값을 포함 합니다. 이러한 기호는 MFC 프로젝트에서 작업 하는 경우에 사용할 수 있습니다. `AFX_` 접두사 뒤에 표준 기호 이름 접두사입니다.
 
 |||
 |-|-|
@@ -211,7 +211,7 @@ MFC 프로젝트는 항상 windows를 지 원하는 여러 헤더 파일을 포�
 |AFX_IDS_UPDATING_ITEMS|AFX_IDS_USER_EXCEPTION|
 |AFX_IDS_VERB_EDIT|AFX_IDS_VERB_PROPERTIES|
 
-## <a name="mfc-database-programming-symbols"></a>MFC 데이터베이스 프로그래밍 기호
+## <a name="mfc-database-programming"></a>MFC 데이터베이스 프로그래밍
 
 이 표의 기호 데이터베이스 지원이 추가 되었습니다. 경우에 MFC 프로젝트에 나타납니다. SQL server 데이터베이스 프로그래밍에 대 한 MFC 연결과 지원합니다.
 
@@ -232,9 +232,11 @@ MFC 프로젝트는 항상 windows를 지 원하는 여러 헤더 파일을 포�
 |AFX_IDP_SQL_SNAPSHOT_ NOT_SUPPORTED|AFX_IDP_SQL_SQL_CONFORMANCE|
 |AFX_IDP_SQL_SQL_NO_TOTAL|AFX_IDP_SQL_UPDATE_DELETE_FAILED|
 
-## <a name="mfc-windows-programming-symbols"></a>MFC Windows 프로그래밍 기호
+## <a name="mfc-windows-programming"></a>MFC Windows 프로그래밍
 
-이러한 기호는 MFC 지원 파일의 일부 이기도 하지만 표준 Windows 응용 프로그램 기능 및 동작을 지원 합니다. 이러한 기호는 메뉴를 사용 하 여 사용 됩니다. 메뉴를 사용 하 여 작업할 때는 **메뉴 편집기**, 이러한 기호에 표시 됩니다는 **속성 창** 일반적인 메뉴 명령과 사용 하 여 연결 합니다. 예를 들어 응용 프로그램에 **파일** 메뉴를는 **종료** 명령, 명령이 기호 ID_APP_EXIT 연관 됩니다에 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
+이러한 기호는 MFC 지원 파일의 일부 이기도 하지만 표준 Windows 응용 프로그램 기능 및 동작을 지원 합니다. 이러한 기호는 메뉴를 사용 하 여 사용 됩니다.
+
+메뉴를 사용 하는 경우는 **메뉴 편집기**, 이러한 기호에 표시 됩니다는 **속성 창** 일반적인 메뉴 명령과 사용 하 여 연결 합니다. 예를 들어 응용 프로그램에 **파일** 메뉴를는 **종료** 명령, 명령이 기호 ID_APP_EXIT 연관 됩니다에 [속성 창](/visualstudio/ide/reference/properties-window)합니다.
 
 ||||
 |-|-|-|
