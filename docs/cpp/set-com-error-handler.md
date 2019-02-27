@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - _set_com_error_handler function
 ms.assetid: 49fe4fca-5e37-4d83-abaf-15be5ce37f94
-ms.openlocfilehash: 7c7c9d572dcb8e1323df003e15e44adc8491c058
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 864236e86b4aeb6ce7b3315df57af1b577693c26
+ms.sourcegitcommit: f127b08f114b8d6cab6b684febcb6f2ae0e055ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567793"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954941"
 ---
 # <a name="setcomerrorhandler"></a>_set_com_error_handler
 
@@ -90,7 +90,7 @@ Exception raised: Unable to establish the connection!
 
 **헤더:** \<comdef.h >
 
-**Lib:** 경우는 **wchar_t is Native Type** 컴파일러 옵션이 설정 되어 있는 경우 comsuppw.lib 또는 comsuppwd.lib를 사용 합니다. 하는 경우 **wchar_t is Native Type** 해제가 comsupp.lib를 사용 합니다. 자세한 내용은 [/Zc:wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조하세요.
+**Lib:** 경우는 **/zc: wchar_t** 컴파일러 옵션을 지정 (기본값), comsuppw.lib 또는 comsuppwd.lib를 사용 합니다. 경우는 **/zc: wchar_t-** 컴파일러 옵션을 지정한 경우 comsupp.lib를 사용 합니다. IDE에서이 옵션을 설정 하는 방법을 비롯 한 자세한 내용은 참조 하세요. [/zc: wchar_t (wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 
