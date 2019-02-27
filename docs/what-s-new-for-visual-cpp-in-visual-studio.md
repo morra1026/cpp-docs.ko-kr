@@ -1,17 +1,16 @@
 ---
-title: Visual Studio의 Visual C++용 새로운 기능
+title: Visual Studio의 Visual C++에 대한 새로운 기능
 ms.date: 11/15/2017
-ms.technology:
-- cpp-ide
+ms.technology: cpp-ide
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 5a9bbf86d6febfdec5ab5cbd9969cd5076672c52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 062052faf85b342629506a41c39b99a1b59502b9
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620144"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809791"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017의 Visual C++에 대한 새로운 기능
 
@@ -33,9 +32,9 @@ Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수�
 
 - [/permissive-](build/reference/permissive-standards-conformance.md): 모든 엄격한 표준 준수 컴파일러 옵션을 사용하고 대부분의 Microsoft 전용 컴파일러 확장(예: `__declspec(dllimport)` 제외)을 사용하지 않도록 설정합니다. 이 옵션은 Visual Studio 2017 버전 15.5에서 기본적으로 켜져 있습니다.  **/permissive-** conformance 모드에는 2단계 이름 조회에 대한 지원이 포함됩니다. 자세한 내용은 [Visual Studio 2017의 C++ 규칙 향상](cpp-conformance-improvements-2017.md)을 참조하세요.
 
-- [/diagnostics](build/reference/diagnostics-compiler-diagnostic-options.md): 줄 번호, 줄 번호 및 열 또는 줄 번호 및 열과 진단 오류 또는 경고가 발견된 코드 줄 아래의 캐럿 표시를 사용합니다.
+- [/diagnostics](build/reference/diagnostics-compiler-diagnostic-options.md): 줄 번호, 줄 번호 및 열 또는 줄 번호 및 열과 진단 오류 또는 경고가 발견된 코드 줄 아래의 캐럿을 표시할 수 있습니다.
 
-- [/debug:fastlink](build/reference/debug-generate-debug-info.md): 모든 디버그 정보를 PDB 파일에 복사하지 않음으로써 최대 30%까지 빠른 증분 연결 시간(Visual Studio 2015 대비)을 사용합니다. 대신, PDB 파일은 실행 파일을 만드는 데 사용된 개체 및 라이브러리 파일에 대한 디버그 정보를 가리킵니다. [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/)(/Debug:fastlink를 사용하는 VS "15"의 더 빠른 C++ 빌드 주기) 및 [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/)(Visual Studio에서 C++ 빌드 속도를 향상하기 위한 권장 사항)를 참조하세요.
+- [/debug:fastlink](build/reference/debug-generate-debug-info.md): 일부 디버그 정보를 PDB 파일에 복사하지 않음으로써 최대 30%까지 빠른 증분 연결 시간(Visual Studio 2015 대비)을 사용합니다. 대신, PDB 파일은 실행 파일을 만드는 데 사용된 개체 및 라이브러리 파일에 대한 디버그 정보를 가리킵니다. [Faster C++ build cycle in VS "15" with /Debug:fastlink](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/faster-c-build-cycle-in-vs-15-with-debugfastlink/)(/Debug:fastlink를 사용하는 VS "15"의 더 빠른 C++ 빌드 주기) 및 [Recommendations to speed C++ builds in Visual Studio](https://blogs.msdn.microsoft.com/vcblog/2016/10/26/recommendations-to-speed-c-builds-in-visual-studio/)(Visual Studio에서 C++ 빌드 속도를 향상하기 위한 권장 사항)를 참조하세요.
 
 - Visual Studio 2017에서는 [/sdl](build/reference/sdl-enable-additional-security-checks.md)과 함께 [/await](build/reference/await-enable-coroutine-support.md)를 사용할 수 있습니다. 코루틴에서 [/RTC](build/reference/rtc-run-time-error-checks.md) 제한이 제거되었습니다.
 
@@ -49,10 +48,10 @@ Visual Studio 2017에는 Visual C++ 환경에 대한 많은 업데이트와 수�
 
 이 릴리스에서는 최적화, 코드 생성, 도구 집합 버전 관리 및 진단의 몇 가지 기능이 향상되었습니다. 특히 주목할 만한 기능 향상은 다음과 같습니다.
 
-- 루프의 코드 생성 향상: 상수 정수 나누기의 자동 벡터화를 지원하며, memset 패턴 식별 기능이 향상되었습니다.
+- 루프의 향상된 코드 생성: 상수 정수 나누기의 자동 벡터화를 지원하며, memset 패턴 식별 기능이 향상되었습니다.
 - 코드 보안 개선: 버퍼 오버런 컴파일러 진단의 내보내기가 개선되었으며, 이제는 [/guard:cf](build/reference/guard-enable-control-flow-guard.md)가 점프 테이블을 생성하는 스위치 문을 보호합니다.
-- 버전 관리: 기본 제공 전처리기 매크로 **\_MSC\_VER**의 값이 이제 Visual C++ 도구 집합 업데이트 시마다 일정하게 업데이트됩니다. 자세한 내용은 [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/)(Visual C++ 컴파일러 버전)을 참조하세요.
-- 새 도구 집합 레이아웃: 개발 컴퓨터에서 컴파일러 및 관련된 빌드 도구의 위치 및 디렉터리 구조가 변경되었습니다. 새 레이아웃을 사용하면 여러 버전의 컴파일러를 병렬 설치할 수 있습니다. 자세한 내용은 [Compiler Tools Layout in Visual Studio "15"](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/)(Visual Studio "15"의 컴파일러 도구 레이아웃)를 참조하세요.
+- 버전 관리: 기본 제공 전처리기 매크로 **\_MSC\_VER**의 값이 이제 Visual C++ 도구 세트 업데이트 시마다 일정하게 업데이트됩니다. 자세한 내용은 [Visual C++ Compiler Version](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/visual-c-compiler-version/)(Visual C++ 컴파일러 버전)을 참조하세요.
+- 새 도구 세트 레이아웃: 개발 머신에서 컴파일러 및 관련된 빌드 도구의 위치 및 디렉터리 구조가 변경되었습니다. 새 레이아웃을 사용하면 여러 버전의 컴파일러를 병렬 설치할 수 있습니다. 자세한 내용은 [Compiler Tools Layout in Visual Studio "15"](https://blogs.msdn.microsoft.com/vcblog/2016/10/07/compiler-tools-layout-in-visual-studio-15/)(Visual Studio "15"의 컴파일러 도구 레이아웃)를 참조하세요.
 - 향상된 진단: 이제 출력 창에 오류가 발생하는 열이 표시됩니다. 자세한 내용은 [C++ compiler diagnostics improvements in VS "15" Preview 5](https://blogs.msdn.microsoft.com/vcblog/2016/10/05/c-compiler-diagnostics-improvements-in-vs-15-rc/)(VS "15" Preview 5의 C++ 컴파일러 진단 향상)를 참조하세요.
 - 코루틴을 사용하는 경우 실험적인 **yield**(**/await** 옵션 아래에서 사용 가능) 키워드가 제거되었습니다. 대신 `co_yield`를 사용하도록 코드를 업데이트해야 합니다. 자세한 내용은 [Visual C++ 팀 블로그](https://blogs.msdn.microsoft.com/vcblog/)를 참조하세요.
 
@@ -274,7 +273,7 @@ C++용 플랫폼 간 웹 API인 CPPRestSDK가 버전 2.9.0으로 업데이트되
 - 여러 가지 프로젝트 및 코드 마법사가 시그니처 대화 상자 스타일로 다시 작성되었습니다.
 - 이제 **클래스 추가**를 선택하면 [클래스 추가] 마법사가 직접 시작됩니다. 이전에 여기에 있던 다른 모든 항목은 이제 **추가 > 새 항목**에서 사용할 수 있습니다.
 - Win32 프로젝트는 이제 **새 프로젝트** 대화 상자의 **Windows 데스크톱** 범주 아래에 있습니다.
-- 이제 **Windows 콘솔** 및 **데스크톱 응용 프로그램** 템플릿은 마법사를 표시하지 않고 프로젝트를 만듭니다. 이전의 **Win32 콘솔 응용 프로그램** 마법사와 같은 옵션을 표시하는 동일한 범주 아래에는 새로운 **Windows 데스크톱 마법사**가 있습니다.
+- 이제 **Windows 콘솔** 및 **데스크톱 애플리케이션** 템플릿은 마법사를 표시하지 않고 프로젝트를 만듭니다. 이전의 **Win32 콘솔 애플리케이션** 마법사와 같은 옵션을 표시하는 동일한 범주 아래에는 새로운 **Windows 데스크톱 마법사**가 있습니다.
 
 **Visual Studio 2017 버전 15.5**:
 
@@ -339,11 +338,11 @@ Visual Studio 2017에서는 MSBuild 프로젝트 파일(.vcxproj)로 변환하�
 
   ![Cmake 폴더 열기](media/cmake_cpp.png "Cmake 폴더 열기")
 
-**Visual Studio 2017 버전 15.3**: CMake 닌자 생성기에 대한 지원이 추가되었습니다.
+**Visual Studio 2017 버전 15.3**: CMake Ninja 생성기에 대한 지원이 추가되었습니다.
 
 **Visual Studio 2017 버전 15.5**: 기존 CMake 캐시 가져오기에 대한 지원이 추가되었습니다.
 
-**Visual Studio 2017 버전 15.7**: CMake 3.11에 대한 지원, CMake 프로젝트의 코드 분석, 솔루션 탐색기에서 대상 보기, 캐시 생성 옵션 및 단일 파일 컴파일 기능이 추가되었습니다. 자세한 내용은 [Visual Studio의 CMake 지원](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 및 [Visual C++의 CMake 프로젝트](ide/cmake-tools-for-visual-cpp.md)를 참조하세요.
+**Visual Studio 2017 버전 15.7**: CMake 3.11, CMake 프로젝트의 코드 분석, 솔루션 탐색기의 대상 보기, 캐시 생성 옵션 및 단일 파일 컴파일에 대한 지원이 추가되었습니다. 자세한 내용은 [Visual Studio의 CMake 지원](https://blogs.msdn.microsoft.com/vcblog/2018/04/09/cmake-support-in-visual-studio-targets-view-single-file-compilation-and-cache-generation-settings/) 및 [Visual C++의 CMake 프로젝트](ide/cmake-tools-for-visual-cpp.md)를 참조하세요.
 
 ## <a name="windows-desktop-development-with-c"></a>C++를 사용한 Windows 데스크톱 개발
 
@@ -357,7 +356,7 @@ Visual C++ 빌드 도구(이전에 독립 실행형 제품으로 제공)가 이�
 
 ## <a name="linux-development-with-c"></a>C++를 사용한 Linux 개발
 
-일반적으로 사용되는 확장인 [Linux 개발용 Visual C++](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e)가 Visual Studio에 포함됩니다. 이 설치는 Linux 환경에서 실행되는 C++ 응용 프로그램을 개발 및 디버깅하는 데 필요한 모든 사항을 제공합니다.
+일반적으로 사용되는 확장인 [Linux 개발용 Visual C++](https://visualstudiogallery.msdn.microsoft.com/725025cf-7067-45c2-8d01-1e0fd359ae6e)가 Visual Studio에 포함됩니다. 이 설치는 Linux 환경에서 실행되는 C++ 애플리케이션을 개발 및 디버깅하는 데 필요한 모든 사항을 제공합니다.
 
 **Visual Studio 2017 버전 15.2**:
 
@@ -389,9 +388,9 @@ C++의 모든 기능을 사용하여 DirectX 또는 Cocos2d로 구동하는 전�
 C++는 유니버설 Windows 앱 워크로드에 대한 선택적 구성 요소로 제공됩니다.  현재 C++ 프로젝트를 업그레이드하려면 수동으로 해야 합니다. Visual Studio 2017에서 v140을 대상으로 한 UWP 프로젝트를 열 때 Visual Studio 2015를 설치하지 않은 경우 프로젝트 속성 페이지에서 v141 플랫폼 도구 집합을 선택해야 합니다.
 
 ## <a name="new-options-for-c-on-universal-windows-platform-uwp"></a>유니버설 Windows 플랫폼(UWP)의 C++에 대한 새로운 옵션
-이제 유니버설 Windows 플랫폼 및 Windows 스토어용 C++ 응용 프로그램을 작성하고 패키징하기 위한 새로운 옵션이 있습니다. 사이드로드를 통한 기존 채널 또는 Windows 스토어를 통해 배포하기 위해 데스크톱 브리지 인프라를 사용하여 기존 데스크톱 응용 프로그램 또는 COM 개체를 패키징할 수 있습니다. Windows 10의 새로운 기능을 사용하면 다양한 방법으로 데스크톱 응용 프로그램에 UWP 기능을 추가할 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
+이제 유니버설 Windows 플랫폼 및 Windows Store용 C++ 애플리케이션 작성 및 패키징에 대한 새 옵션이 제공됩니다. 사이드로드를 통한 기존 채널 또는 Windows 스토어를 통해 배포하기 위해 데스크톱 브리지 인프라를 사용하여 기존 데스크톱 애플리케이션 또는 COM 개체를 패키징할 수 있습니다. Windows 10의 새로운 기능을 사용하면 다양한 방법으로 데스크톱 애플리케이션에 UWP 기능을 추가할 수 있습니다. 자세한 내용은 [데스크톱 브리지](/windows/uwp/porting/desktop-to-uwp-root)를 참조하세요.
 
-**Visual Studio 2017 버전 15.5**: 데스크톱 브리지를 사용하여 데스크톱 응용 프로그램 패키징 작업을 많이 간소화하는 **Windows 응용 프로그램 패키징 프로젝트** 프로젝트 템플릿이 추가되었습니다. **파일 | 새로 만들기 | 프로젝트 | 설치됨 | Visual C++ | 유니버설 Windows 플랫폼**에서 볼 수 있습니다. 자세한 내용은 [Visual Studio(데스크톱 브리지)를 사용하여 앱 패키지](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 참조하세요.
+**Visual Studio 2017 버전 15.5**: 데스크톱 브리지를 사용하여 데스크톱 애플리케이션 패키징 작업을 많이 간소화하는 **Windows 애플리케이션 패키징 프로젝트** 프로젝트 템플릿이 추가되었습니다. **파일 | 새로 만들기 | 프로젝트 | 설치됨 | Visual C++ | 유니버설 Windows 플랫폼**에서 볼 수 있습니다. 자세한 내용은 [Visual Studio(데스크톱 브리지)를 사용하여 앱 패키지](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)를 참조하세요.
 
 이제 새 코드를 작성할 때 헤더 파일에서만 구현되는 Windows 런타임용 표준 C++ 언어 프로젝션인 C++/WinRT를 사용할 수 있습니다. C++/WinRT를 사용하면 모든 표준 규격 C++ 컴파일러를 통해 Windows 런타임 API를 작성하고 사용할 수 있습니다. C++/WinRT는 C++ 개발자에게 최신 Windows API에 대한 최고 수준의 액세스를 제공하도록 설계되었습니다. 자세한 내용은 [C++/WinRT Available on GitHub](https://moderncpp.com/)(GitHub에서 C++/WinRT를 사용할 수 있음)를 참조하세요.
 
@@ -422,7 +421,7 @@ Windows SDK Insider Preview의 빌드 17025부터 C++/WinRT가 Windows SDK에 �
 - 실행할 코드 분석 규칙을 지정할 수 있는 [/analyze:ruleset](build/reference/analyze-code-analysis.md)에 대한 지원이 추가되었습니다.
 - 추가 C++ Core Guidelines 규칙에 대한 지원이 추가되었습니다.  자세한 내용은 [C++ 핵심 지침 검사기 사용](/visualstudio/code-quality/using-the-cpp-core-guidelines-checkers)을 참조하세요.
 
-## <a name="unit-testing"></a>유닛 테스트
+## <a name="unit-testing"></a>단위 테스트
 
 **Visual Studio 2017 버전 15.5**:
 
@@ -451,7 +450,7 @@ Visual Studio 그래픽 진단은 Direct3D 앱의 렌더링 및 성능 문제를
 
   ![검색](media/search.png)
 
-- **리소스 기록:** 이 새로운 보기를 통해 캡처된 프레임 렌더링 시 사용된 리소스의 전체 수정 기록을 간단하게 확인할 수 있습니다. 리소스에 대한 기록을 호출하려면 리소스 하이퍼링크 옆에 있는 시계 아이콘을 클릭하면 됩니다.
+- **리소스 기록:** 이 새로운 보기는 캡처된 프레임 렌더링하는 동안 사용된 리소스의 전체 수정 기록을 간단하게 볼 수 있는 방법을 제공합니다. 리소스에 대한 기록을 호출하려면 리소스 하이퍼링크 옆에 있는 시계 아이콘을 클릭하면 됩니다.
 
   ![리소스 기록](media/resource-history.png)
 
@@ -473,7 +472,7 @@ Visual Studio 그래픽 진단은 Direct3D 앱의 렌더링 및 성능 문제를
 
   ![프레임 유효성 검사](media/frame-validation.png)
 
-- **D3D12에 대한 프레임 분석:** 프레임 분석을 사용하여 안내된 "가상 분석" 실험을 통해 그리기 호출 성능을 분석할 수 있습니다. 프레임 분석 탭으로 전환한 다음 분석을 실행하여 보고서를 표시합니다. 자세한 내용을 보려면 [GoingNative 25: Visual Studio Graphics Frame Analysis](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool)(GoingNative 25: Visual Studio 그래픽 프레임 분석) 동영상을 시청하세요.
+- **D3D12에 대한 프레임 분석:** 프레임 분석을 사용하여 안내된 "가상 분석" 실험을 통해 그리기 호출 성능을 분석할 수 있습니다. 프레임 분석 탭으로 전환한 다음 분석을 실행하여 보고서를 표시합니다. 자세한 내용은 [GoingNative 25: Visual Studio 그래픽 프레임 분석](https://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-25-Offline-Analysis-Graphics-Tool) 비디오를 시청하세요.
 
   ![프레임 분석](media/frame-analysis.png)
 

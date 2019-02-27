@@ -3,16 +3,15 @@ title: vcpkg-- Windows, Linux 및 MacOS용 C++ 패키지 관리자
 description: vcpkg는 Windows에서 오픈 소스 C++ 라이브러리 획득 및 설치를 크게 간소화하는 명령줄 패키지 관리자입니다.
 author: mikeblome
 ms.author: mblome
-ms.date: 05/14/2018
-ms.technology:
-- cpp-ide
+ms.date: 02/22/2019
+ms.technology: cpp-ide
 ms.assetid: f50d459a-e18f-4b4e-814b-913e444cedd6
-ms.openlocfilehash: 2f7dc6f1d9c78d894c5cf0e6ba20c8bdfc54e67a
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: dc07086f271c9789629b335b58758b88e8e3d4e8
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518686"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809713"
 ---
 # <a name="vcpkg-a-c-package-manager-for-windows-linux-and-macos"></a>vcpkg: Windows, Linux 및 MacOS용 C++ 패키지 관리자
 
@@ -24,7 +23,7 @@ vcpkg는 Windows, Linux 및 MacOS에서 타사 라이브러리 획득 및 설치
 
 ## <a name="sources-not-binaries"></a>소스는 이진 파일 아님
 
-Windows 카탈로그에 있는 라이브러리의 경우 vcpkg는 이진 파일[1] 대신 소스를 다운로드합니다. 이것은 Visual Studio 2017 또는 Visual Studio 2015(2017이 설치되지 않은 경우)를 사용하여 해당 소스를 컴파일합니다. C++에서는 사용하는 라이브러리가 연결된 응용 프로그램 코드와 동일한 컴파일러 및 컴파일러 버전을 사용하여 컴파일되어야 합니다. vcpkg를 사용하여 이진 파일 불일치 및 이로 인해 발생할 수 있는 문제를 제거하거나 적어도 크게 줄일 수 있습니다. 특정 버전의 컴파일러에서 표준화된 팀에서는 한 팀 구성원이 vcpkg를 사용하여 소스를 다운로드하고 이진 파일 집합을 컴파일한 다음, 내보내기 명령을 사용하여 이진 파일과 헤더를 압축하여 다른 팀 구성원에게 내보낼 수 있습니다. 자세한 내용은 아래의 [컴파일된 이진 파일 및 헤더 내보내기](#export_binaries_per_project)를 참조하세요.
+Windows 카탈로그에 있는 라이브러리의 경우 vcpkg는 이진 파일[1] 대신 소스를 다운로드합니다. 이것은 Visual Studio 2017 또는 Visual Studio 2015(2017이 설치되지 않은 경우)를 사용하여 해당 소스를 컴파일합니다. C++에서는 사용하는 라이브러리가 연결된 애플리케이션 코드와 동일한 컴파일러 및 컴파일러 버전을 사용하여 컴파일되어야 합니다. vcpkg를 사용하여 이진 파일 불일치 및 이로 인해 발생할 수 있는 문제를 제거하거나 적어도 크게 줄일 수 있습니다. 특정 버전의 컴파일러에서 표준화된 팀에서는 한 팀 구성원이 vcpkg를 사용하여 소스를 다운로드하고 이진 파일 집합을 컴파일한 다음, 내보내기 명령을 사용하여 이진 파일과 헤더를 압축하여 다른 팀 구성원에게 내보낼 수 있습니다. 자세한 내용은 아래의 [컴파일된 이진 파일 및 헤더 내보내기](#export_binaries_per_project)를 참조하세요.
 
 포트 컬렉션에 있는 개인 라이브러리로 vcpkg 클론을 만들면 미리 작성된 이진 파일 및 헤더를 다운로드 하는 포트를 추가하고 원하는 위치로 해당 파일을 간단히 복사하는 portfile.cmake 파일을 작성할 수 있습니다.
 
@@ -32,7 +31,7 @@ Windows 카탈로그에 있는 라이브러리의 경우 vcpkg는 이진 파일[
 
 ## <a name="installation"></a>설치
 
-GitHub에서 vcpkg 리포지토리를 복제합니다. https://github.com/Microsoft/vcpkg 원하는 폴더 위치에 다운로드할 수 있습니다.
+GitHub에서 vcpkg 리포지토리([https://github.com/Microsoft/vcpkg](https://github.com/Microsoft/vcpkg))를 복제합니다. 원하는 폴더 위치에 다운로드할 수 있습니다.
 
 다음과 같이 루트 폴더에서 부트스트래퍼를 실행합니다.
 
