@@ -1,17 +1,16 @@
 ---
 title: Visual C++ 언어 규칙
 ms.date: 11/15/2017
-ms.technology:
-- cpp-language
+ms.technology: cpp-language
 ms.assetid: 475da6e9-0d78-4b4e-bd23-f41c406c4efe
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 78c4be98ecc8e0a42e2cd0967f2bedece9dabc86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 604057753e67d08c12204f9d3b09bce0e1212966
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630414"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809765"
 ---
 # <a name="visual-c-language-conformance"></a>Visual C++ 언어 규칙
 
@@ -93,7 +92,7 @@ Visual Studio 2017의 규칙 향상 및 기타 변경 사항에 대한 자세한
 |__C++17 핵심 언어 기능(결함 보고서)__|__지원됨__|
 |&nbsp;&nbsp;[P0702R1 이니셜라이저 목록 작업자(initializer-list actors)에 대한 클래스 템플릿 인수 추론 문제 해결(영문)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0702r1.html)|VS 2017 15.7 <sup>[17](#note_17)</sup>|
 |&nbsp;&nbsp;[P0588R1 암시적 람다 캡처 단순화](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/p0588r1.html)|아니요|
-|&nbsp;&nbsp;[CWG 1581: constexpr 멤버 함수는 언제 정의됩니까?](https://wg21.cmeerw.net/cwg/issue1581)|아니요|
+|&nbsp;&nbsp;[CWG 1581: constexpr 멤버 함수는 언제 정의되나요?](https://wg21.cmeerw.net/cwg/issue1581)|아니요|
 |&nbsp;&nbsp;[P0962R1 구조화된 바인딩 사용자 지정 지점 찾기 규칙 완화](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0961r1.html)|아니요|
 |&nbsp;&nbsp;[P0962R2 range-for 루프 사용자 지정 지점 찾기 규칙 완화](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0962r1.html)|아니요|
 |&nbsp;&nbsp;[P0969R0 액세스할 수 있는 멤버에게 구조화된 바인딩 허용](http://open-std.org/JTC1/SC22/WG21/docs/papers/2018/p0969r0.pdf)|아니요|
@@ -260,7 +259,7 @@ __VS 2017 15.3__은 Visual Studio 2017 버전 15.3에서 지원되는 기능을 
 __VS 2017 15.5__는 Visual Studio 2017 버전 15.5에서 지원되는 기능을 나타냅니다.<br/>
 __VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 나타냅니다.<br/>
 
-### <a name="notes"></a>노트
+### <a name="notes"></a>참고 사항
 
 <a name="note_A"></a>__A__ In /std:c++14 모드에서는 동적 예외 사양이 구현되지 않은 상태로 남아 있으며 throw()는 여전히 \_\_declspec(nothrow)의 동의어로 처리됩니다. C++17에서 동적 예외 사양은 P0003R5에 의해 대부분 제거되었으므로 1개의 vestige: throw()가 더 이상 사용되지 않으며 noexcept의 동의어로 작동해야 합니다. In /std:c++17 모드에서 MSVC는 이제 noexcept, 즉 종료를 통한 적용과 동일한 동작을 throw()에게 제공하여 표준을 준수합니다.
 
@@ -296,7 +295,7 @@ __VS 2017 15.7__는 Visual Studio 2017 버전 15.7에서 지원되는 기능을 
 
 <a name="note_charconv"></a>__charconv__  from_chars() 및 to_chars()는 정수에 사용할 수 있습니다. 현재 부동 소수점 to_chars() 앞에 와야 할 부동 소수점 from_chars()에 대해 작업 중입니다.
 
-<a name ="note_parallel"></a> __parallel__  C++17의 병렬 알고리즘 라이브러리가 완료되었습니다. 이는 모든 경우에서 모든 알고리즘이 병렬 처리된다는 것을 의미하지는 않습니다. 가장 중요한 알고리즘이 병렬 처리되었으며 알고리즘이 병렬화되지 않은 경우에도 실행 정책 서명이 제공됩니다. STL 구현의 중앙 내부 헤더인 yvals.h에는 다음과 같은 "병렬 알고리즘 노트"가 있습니다. C++은 구현 시 직렬 알고리즘에 대한 호출로서 병렬 알고리즘을 구현할 수 있습니다.   이 구현은 몇 가지 일반적인 알고리즘 호출을 병렬 처리하지만 전부는 아닙니다.
+<a name ="note_parallel"></a> __parallel__  C++17의 병렬 알고리즘 라이브러리가 완료되었습니다. 이는 모든 경우에서 모든 알고리즘이 병렬 처리된다는 것을 의미하지는 않습니다. 가장 중요한 알고리즘이 병렬 처리되었으며 알고리즘이 병렬화되지 않은 경우에도 실행 정책 서명이 제공됩니다. STL 구현의 중앙 내부 헤더인 yvals.h에는 다음과 같은 “병렬 알고리즘 참고 사항”이 포함되어 있습니다. C++를 사용하면 구현 시 직렬 알고니즘 호출로 병렬 알고리즘을 구현할 수 있습니다.   이 구현은 몇 가지 일반적인 알고리즘 호출을 병렬 처리하지만 전부는 아닙니다.
 
 다음 알고리즘은 병렬 처리됩니다.
 
