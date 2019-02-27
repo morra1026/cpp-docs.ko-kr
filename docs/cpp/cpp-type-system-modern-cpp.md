@@ -1,4 +1,4 @@
----
+﻿---
 title: C++ 형식 시스템(모던 C++)
 ms.date: 11/19/2018
 ms.topic: conceptual

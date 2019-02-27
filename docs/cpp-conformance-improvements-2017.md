@@ -1,17 +1,16 @@
 ---
 title: C++ 규칙 향상
 ms.date: 10/31/2018
-ms.technology:
-- cpp-language
+ms.technology: cpp-language
 ms.assetid: 8801dbdb-ca0b-491f-9e33-01618bff5ae9
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: ad34e2721723e113417b45cf7c1da0da4575837f
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 855322f09c9c8f5292c6e299f946c3cec5d9949a
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694402"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809752"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158-159update159"></a>Visual Studio 2017 버전 15.0, [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15.8](#update_158), [15.9](#update_159)의 C++ 규칙 향상
 
@@ -790,7 +789,7 @@ void f()
 
 템플릿 클래스의 멤버 함수에 대한 확장 정의에는 기본 인수를 사용할 수 없습니다. 컴파일러에서 **/permissive** 아래에 경고를, **/permissive-** 아래에 하드 오류를 발생시킵니다.
 
-이전 버전의 Visual Studio에서는 다음과 같은 잘못된 코드로 인해 잠재적으로 런타임 크래시가 발생할 수 있었습니다. Visual Studio 2017 버전 15.3에서는 "C5034 경고: 'A\<T>::f': 클래스 템플릿 멤버의 확장 정의에는 기본 인수가 포함될 수 없습니다."를 생성합니다.
+이전 버전의 Visual Studio에서는 다음과 같은 잘못된 코드로 인해 잠재적으로 런타임 크래시가 발생할 수 있었습니다. Visual Studio 2017 버전 15.3은 경고 C5034를 생성합니다. 'A\<T>::f': 클래스 템플릿 멤버의 확장 정의에는 기본 인수가 포함될 수 없습니다.
 
 ```cpp
 template <typename T>
@@ -865,7 +864,7 @@ extern "C" __declspec(noinline) HRESULT __stdcall
 
 ### <a name="decltype-and-calls-to-deleted-destructors"></a>decltype 및 삭제된 소멸자 호출
 
-이전 버전의 Visual Studio에서 컴파일러는 삭제된 소멸자 호출이 ‘decltype’과 연결된 식의 컨텍스트에서 발생한 시점을 검색하지 않았습니다. Visual Studio 2017 버전 15.3에서 다음 코드는 "오류 C2280: 'A\<T>::~A(void)': 삭제된 함수를 참조하려고 합니다."를 생성합니다.
+이전 버전의 Visual Studio에서 컴파일러는 삭제된 소멸자 호출이 ‘decltype’과 연결된 식의 컨텍스트에서 발생한 시점을 검색하지 않았습니다. Visual Studio 2017 버전 15.3에서 다음 코드는 "오류 C2280: 'A\<T>::~A(void)': 삭제된 함수를 참조하려고 시도 중"을 생성합니다.
 
 ```cpp
 template<typename T>
@@ -888,7 +887,7 @@ void h()
 
 ### <a name="uninitialized-const-variables"></a>초기화되지 않은 const 변수
 
-Visual Studio 2017 RTW 릴리스에는 ‘const’ 변수가 초기화되지 않으면 C++ 컴파일러가 진단을 실행하지 않는 재발 문제가 있었습니다. 이 재발 문제는 Visual Studio 2017 버전 15.3에서 수정되었습니다. 다음 코드는 “경고 C4132: ‘Value’: const 개체를 초기화해야 합니다.”를 생성합니다.
+Visual Studio 2017 RTW 릴리스에는 ‘const’ 변수가 초기화되지 않으면 C++ 컴파일러가 진단을 실행하지 않는 재발 문제가 있었습니다. 이 재발 문제는 Visual Studio 2017 버전 15.3에서 수정되었습니다. 다음 코드는 이제 "경고 C4132: 'Value': const 개체를 초기화해야 합니다."를 생성합니다.
 
 ```cpp
 const int Value; //C4132
@@ -1532,7 +1531,7 @@ struct D : B<T*> {
 };
 ```
 
-Visual Studio 2017 버전 15.7의 **/std:c++17** 모드에서 D의 `using` 문에서 `typename` 키워드가 필요합니다. `typename` 없이 컴파일러는 경고 C4346: *'B<T\*>::type': 종속 이름이 형식이 아님* 및 오류 C2061: *구문 오류: 식별자 'type'* 을 발생시킵니다.
+**/std:c++17** 모드의 Visual Studio 2017 버전 15.7은 D의 `using` 문에 `typename` 키워드가 필요합니다. `typename`이 없으면 컴파일러가 경고 C4346: *'B<T\*>::type': 종속 이름은 type이 아님* 및 오류 C2061: *구문 오류: 식별자 'type'* 을 발생시킵니다.
 
 ```cpp
 template<typename T>
@@ -1563,7 +1562,7 @@ int main() {
 
 Visual Studio의 이전 버전에서는 템플릿 인수가 누락된 variadic 템플릿 생성자 기본 클래스 초기화 목록이 오류 없이 잘못 허용되었습니다. Visual Studio 2017 버전 15.7에서는 컴파일러 오류가 발생합니다.
 
-Visual Studio 2017 버전 15.7의 다음 코드 예에서는 *오류 C2614: D\<int>: 멤버 초기화가 잘못되었습니다. ‘B’이(가) 기본 또는 멤버가 아닙니다.* 가 발생합니다.
+Visual Studio 2017 버전 15.7의 다음 코드 예제에서는 *오류 C2614: D\<int>: 잘못된 멤버 초기화: 'B'는 기본 또는 멤버가 아님*이 발생합니다.
 
 ```cpp
 template<typename T>
@@ -1685,7 +1684,7 @@ C++ 표준에서는 사용자가 `std` 네임스페이스에 정방향 선언 �
 
 향후 Microsoft는 일부 STL 형식이 정의된 위치를 변경할 예정입니다. 이 경우 `std` 네임스페이스에 정방향 선언을 추가하는 기존 코드가 중단됩니다. 새로운 경고, C4643을 통해 이러한 소스 문제를 파악할 수 있습니다. 이 경고는 **/default** 모드에서 사용하도록 설정되며 기본적으로 해제되어 있습니다. 이것은 **/Wall** 또는 **/WX**로 컴파일되는 프로그램에 영향을 줍니다.
 
-이제 C4643: *C++ 표준에서는 std 네임스페이스에서 'vector' 정방향 선언이 허용되지 않습니다.* 코드가 발생합니다.
+이제 다음 코드는 C4643: *C++ 표준에서는 네임스페이스 std에서 'vector' 정방향 선언이 허용되지 않습니다*를 생성합니다.
 
 ```cpp
 namespace std {
@@ -1701,7 +1700,7 @@ namespace std {
 
 ### <a name="constructors-that-delegate-to-themselves"></a>자신을 위임하는 생성자
 
-C++ 표준은 위임하는 생성자가 자신을 위임할 때 컴파일러가 진단을 내보내야 한다고 제안합니다. [/std:c++17](build/reference/std-specify-language-standard-version.md) 및 [/std:c++latest](build/reference/std-specify-language-standard-version.md) 모드의 Microsoft C++는 C7535: *'X::X': 위임하는 생성자는 자신을 호출합니다.* 코드를 생성합니다.
+C++ 표준은 위임하는 생성자가 자신을 위임할 때 컴파일러가 진단을 내보내야 한다고 제안합니다. [/std:c++17](build/reference/std-specify-language-standard-version.md) 및 [/std:c++latest](build/reference/std-specify-language-standard-version.md) 모드의 Microsoft C++ 컴파일러는 이제 C7535: *'X::X': 위임하는 생성자는 자신을 호출합니다*를 생성합니다.
 
 이 오류가 없으면 다음 프로그램이 컴파일되지만 무한 루프가 생성됩니다.
 
@@ -1865,7 +1864,7 @@ cl /EHsc /std:c++17 m.ixx /experimental:module
 cl /experimental:module /module:reference m.ifc main.cpp /std:c++14
 ```
 
-이러한 모든 경우에 컴파일러는 C5050를 발생시킵니다. *C5050 경고: 모듈 'm'을 가져오는 동안 가능한 호환되지 않는 환경이 C++ 버전과 일치하지 않습니다.  현재 "201402" 모듈 버전 "201703"*
+컴파일러는 다음 두 경우 모두에 대해 C5050을 생성합니다. *경고 C5050: 'm' 모듈을 가져오는 동안 호환되지 않는 환경: C++ 버전이 일치하지 않습니다.  현재 "201402" 모듈 버전 "201703"*
 
 또한 .ifc 파일이 조작될 때마다 컴파일러는 C7536을 발생시킵니다. 모듈 인터페이스의 헤더에는 아래 내용의 SHA2 해시가 포함됩니다. 가져오기에서 .ifc 파일이 동일한 방식으로 해시된 다음, 헤더에서 제공된 해시에 대해 확인됩니다. 이러한 항목이 일치하지 않는 경우 오류 C7536이 발생합니다. *ifc가 무결성 검사에 실패했습니다.  예상된 SHA2: '66d5c8154df0c71d4cab7665bab4a125c7ce5cb9a401a4d8b461b706ddd771c6'*.
 

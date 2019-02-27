@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - Platform::Guid Struct
 ms.assetid: 25c0bfb2-7f93-44d8-bdf4-ef4fbac3424a
-ms.openlocfilehash: ad71ed4965a3dd4846c9ba5d8ed2627ed8f7e056
-ms.sourcegitcommit: 360b55e89e5954f494e52b1cf989fbaceda06f1c
+ms.openlocfilehash: bf7d73e1e50bb77a84267f3a5388c07a49c54c79
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54334653"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809700"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid 값 클래스
 
@@ -38,7 +38,7 @@ public value struct Guid
 
 ### <a name="remarks"></a>설명
 
-새로 생성 하는 방법의 예로 `Platform::Guid` Windows 함수를 사용 하 여 [CoCreateGuid](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateguid)를 참조 [WinRT 구성 요소: GUID를 생성 하는 방법](https://www.eternalcoding.com/?p=383)
+생성할 새 `Platform::Guid`를 사용 합니다 [Windows::Foundation::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid#Windows_Foundation_GuidHelper_CreateNewGuid) 정적 메서드.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -141,6 +141,10 @@ static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid
 ### <a name="return-value"></a>반환 값
 
 True 이면 두 `Platform::Guid` 인스턴스는 서로 같습니다.
+
+### <a name="remarks"></a>설명
+
+사용을 선호 합니다 `==` 연산자 대신 합니다 [Windows::Foundation::GuidHelper::Equals](/uwp/api/windows.foundation.guidhelper.equals) 정적 메서드.
 
 ## <a name="operator-inequality"></a> Guid::operator! = 연산자
 

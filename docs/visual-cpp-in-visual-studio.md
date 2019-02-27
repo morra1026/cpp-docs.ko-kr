@@ -2,18 +2,17 @@
 title: Visual Studio의 Visual C++
 description: Visual C++는 Visual Studio IDE에 있는 Microsoft C++ 컴파일러, 코드 편집기 및 관련 도구의 이름입니다. Visual C++를 사용하여 Windows, Linux, Android 및 iOS 프로그램을 개발합니다.
 ms.date: 09/26/2018
-ms.technology:
-- cpp-ide
+ms.technology: cpp-ide
 helpviewer_keywords:
 - Visual C++, home page
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: 0b5f263bb6716d4f66673257115d37cd17a59051
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 0dd7cc2aebb9ff0f95d11c839a104b94b3d37db6
+ms.sourcegitcommit: fbc05d8581913bca6eff664e5ecfcda8e471b8b1
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327189"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56809653"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio의 Visual C++
 
@@ -23,7 +22,7 @@ ms.locfileid: "51327189"
 > 프로그램을 실행할 수 있도록 Visual C++ 재배포 가능 패키지를 찾고 있다면 [Microsoft 다운로드 센터](http://www.microsoft.com/download/)로 이동하여 검색 상자에 **Visual C++** 를 입력합니다.
 
 
-일반적으로 Visual C++ 또는 MSVC라고 줄여부르는 Microsoft Visual C++는 C++, C 및 어셈블리 언어 개발 도구 및 Windows에서 Visual Studio의 일부로 사용할 수 있는 라이브러리의 이름입니다. 이러한 도구 및 라이브러리를 통해 UWP(유니버설 Windows 플랫폼) 앱, 네이티브 Windows 데스크톱 및 서버 응용 프로그램, Windows, Linux, Android 및 iOS에서 실행되는 플랫폼 간 라이브러리 및 앱뿐만 아니라 .NET Framework를 사용하는 관리 앱 및 라이브러리를 만들 수 있습니다. Visual C++를 사용하여 간단한 콘솔 앱 항목부터 Windows 데스크톱용 가장 정교하고 복잡한 앱, 디바이스 드라이버 및 운영 체제 구성 요소부터 모바일 디바이스용 플랫폼 간 게임, 가장 작은 IoT 디바이스부터 Azure 클라우드의 다중 서버 성능 컴퓨팅 기능을 작성할 수 있습니다.
+일반적으로 Visual C++ 또는 MSVC라고 줄여부르는 Microsoft Visual C++는 C++, C 및 어셈블리 언어 개발 도구 및 Windows에서 Visual Studio의 일부로 사용할 수 있는 라이브러리의 이름입니다. 이러한 도구 및 라이브러리를 통해 UWP(유니버설 Windows 플랫폼) 앱, 네이티브 Windows 데스크톱 및 서버 애플리케이션, Windows, Linux, Android 및 iOS에서 실행되는 플랫폼 간 라이브러리 및 앱뿐만 아니라 .NET Framework를 사용하는 관리 앱 및 라이브러리를 만들 수 있습니다. Visual C++를 사용하여 간단한 콘솔 앱 항목부터 Windows 데스크톱용 가장 정교하고 복잡한 앱, 디바이스 드라이버 및 운영 체제 구성 요소부터 모바일 디바이스용 플랫폼 간 게임, 가장 작은 IoT 디바이스부터 Azure 클라우드의 다중 서버 성능 컴퓨팅 기능을 작성할 수 있습니다.
 
 ## <a name="whats-new-and-conformance-history"></a>새로운 기능 및 규칙 기록
 
@@ -87,13 +86,13 @@ SAL 주석 또는 C++ Core Guidelines 검사 프로그램을 사용하여 정적
 [Visual Studio에서 C/C++에 대한 단위 테스트 작성](/visualstudio/test/writing-unit-tests-for-c-cpp)<br/>
 C++, Google Test, Boost.Test 또는 CTest에 대한 Microsoft 유닛 테스트 프레임워크를 사용하여 단위 테스트를 만듭니다.
 
-## <a name="write-applications-in-c"></a>C++에서 응용 프로그램 작성
+## <a name="write-applications-in-c"></a>C++에서 애플리케이션 작성
 
 [유니버설 Windows 앱](windows/universal-windows-apps-cpp.md)<br/>
 Windows 개발자 센터의 가이드 및 참조 내용을 알아봅니다. UWP 앱 개발에 대한 자세한 내용은 [유니버설 Windows 플랫폼 소개](/windows/uwp/get-started/universal-application-platform-guide) 및 [C++을 사용하여 첫 번째 UWP 앱 만들기](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)를 참조하세요.
 
-[데스크톱 응용 프로그램(C++)](windows/desktop-applications-visual-cpp.md)<br/>
-Windows용 기존 네이티브 C++ 데스크톱 응용 프로그램을 만드는 방법을 알아봅니다.
+[데스크톱 애플리케이션(C++)](windows/desktop-applications-visual-cpp.md)<br/>
+Windows용 기존 네이티브 C++ 데스크톱 애플리케이션을 만드는 방법을 알아봅니다.
 
 [C++/CLI를 사용한 .NET 프로그래밍](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>
 C# 또는 Visual Basic과 같은 언어로 작성된 네이티브 C++ 및 .NET 프로그램 간의 상호 운용성을 활성화하는 DLL을 만드는 방법을 알아봅니다.
@@ -108,7 +107,7 @@ Win32, ATL 및 MFC를 사용하여 Windows 데스크톱 DLL을 만드는 방법�
 병렬 패턴 라이브러리, C++ AMP, OpenMP 및 Windows에서의 다중 스레딩과 관련된 기타 기능을 사용하는 방법에 대해 알아봅니다.
 
 [보안 모범 사례](security/security-best-practices-for-cpp.md)<br/>
-악의적 코드나 무단 사용으로부터 응용 프로그램을 보호하는 방법에 대해 알아봅니다.
+악의적 코드나 무단 사용으로부터 애플리케이션을 보호하는 방법에 대해 알아봅니다.
 
 [클라우드 및 웹 프로그래밍](cloud/cloud-and-web-programming-in-visual-cpp.md)<br/>
 C++에는 웹 및 클라우드에 연결하기 위한 다양한 옵션이 있습니다.
@@ -125,7 +124,7 @@ ODBC 및 기타 데이터베이스 액세스 기술을 사용하여 데이터베
 
 [ 전처리기 참조](preprocessor/c-cpp-preprocessor-reference.md)
 
-[C# 언어 참조](c-language/c-language-reference.md)
+[C 언어 참조](c-language/c-language-reference.md)
 
 [컴파일러 내장 및 어셈블리 언어](intrinsics/compiler-intrinsics-and-assembly-language.md)
 
@@ -174,6 +173,6 @@ Visual Studio에 대한 도움말을 보고 버그를 제출하고 제안을 하
 
 ## <a name="see-also"></a>참고 항목
 
-- [C# 언어 참조](c-language/c-language-reference.md)
+- [C 언어 참조](c-language/c-language-reference.md)
 - [C 런타임 라이브러리 참조](c-runtime-library/c-run-time-library-reference.md)
 - [컴파일러 내장 및 어셈블리 언어](intrinsics/compiler-intrinsics-and-assembly-language.md)
