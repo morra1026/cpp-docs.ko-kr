@@ -1,5 +1,5 @@
 ---
-title: '방법: Unique_ptr 인스턴스 만들기 및 사용'
+title: '방법: unique_ptr 인스턴스 만들기 및 사용'
 ms.custom: how-to
 ms.date: 11/19/2018
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 01/11/2019
 ms.locfileid: "54220584"
 ---
-# <a name="how-to-create-and-use-uniqueptr-instances"></a>방법: Unique_ptr 인스턴스 만들기 및 사용
+# <a name="how-to-create-and-use-uniqueptr-instances"></a>방법: unique_ptr 인스턴스 만들기 및 사용
 
 A [unique_ptr](../standard-library/unique-ptr-class.md) 해당 포인터를 공유 하지 않습니다. 다른 위치로 복사할 수 없습니다 `unique_ptr`, 함수에 값으로 전달 또는 사본이 필요한 모든 C++ 표준 라이브러리 알고리즘에 사용 합니다. `unique_ptr`은 이동만 할 수 있습니다. 즉, 메모리 리소스의 소유권이 다른 `unique_ptr`로 이전되어 원래 `unique_ptr`이 더 이상 소유하지 않습니다. 소유권이 여러 개이면 프로그램 논리가 복잡해지기 때문에 개체를 하나의 소유자로 제한하는 것이 좋습니다. 따라서 일반 C++ 개체에 대 한 스마트 포인터를 할 때 사용 하 여 `unique_ptr`, 및 생성 하는 `unique_ptr`를 사용 하 여는 [make_unique](../standard-library/memory-functions.md#make_unique) 도우미 함수입니다.
 
