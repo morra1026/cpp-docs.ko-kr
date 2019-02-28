@@ -1,21 +1,21 @@
 ---
 title: binary_negate 클래스
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::binary_negate
+- functional/std::binary_negate
 helpviewer_keywords:
 - binary_negate class
 ms.assetid: 7b86f02c-af7e-4c7f-9df1-08addae4dd65
-ms.openlocfilehash: 6ac5ebc991174ca5f835d30571b4995bedb5dea2
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 5e00e398f1c43d0a8d762ca42c3f4f3ab51b9866
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329776"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006346"
 ---
 # <a name="binarynegate-class"></a>binary_negate 클래스
 
-지정된 이항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다.
+지정된 이항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다. C + + 17 위해에서 사용 되지 않음 [not_fn](functional-functions.md#not_fn)합니다.
 
 ## <a name="syntax"></a>구문
 

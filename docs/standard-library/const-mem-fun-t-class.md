@@ -1,21 +1,21 @@
 ---
 title: const_mem_fun_t 클래스
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::const_mem_fun_t
+- functional/std::const_mem_fun_t
 helpviewer_keywords:
 - const_mem_fun_t class
 ms.assetid: f169d381-019b-4a0e-a9a3-54da6d948270
-ms.openlocfilehash: 16169c094e74178f5a2dd67f70bf75c1f3ee8d87
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 10a39d4b7871e08a5bf3ec56f6d11df5ad8b646c
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50563594"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006463"
 ---
 # <a name="constmemfunt-class"></a>const_mem_fun_t 클래스
 
-참조 인수를 사용하여 초기화할 때 인수를 사용하지 않는 const 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다.
+참조 인수를 사용하여 초기화할 때 인수를 사용하지 않는 const 멤버 함수를 단항 함수 개체로 호출할 수 있도록 하는 어댑터 클래스입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ## <a name="syntax"></a>구문
 

@@ -1,21 +1,21 @@
 ---
 title: binder1st 클래스
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::binder1st
+- functional/std::binder1st
 helpviewer_keywords:
 - binder1st class
 ms.assetid: 6b8ee343-c82f-48f8-867d-06f9d1d324c0
-ms.openlocfilehash: a8e962e118d162e46e2edfca3ce11e7cbf322e10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f70a1a4a0903b66edf5f42e59788b9a2d97fc967
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439639"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006632"
 ---
 # <a name="binder1st-class"></a>binder1st 클래스
 
-이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다.
+이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 생성자를 제공하는 템플릿 클래스입니다. C + + 11 위해에서 사용 되지 않는 [바인딩](functional-functions.md#bind), c++17에서 제거 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -29,7 +29,7 @@ public:
     typedef typename Operation::argument_type argument_type;
     typedef typename Operation::result_type result_type;
     binder1st(
-        const Operation& Func,
+        const Operation& binary_fn,
         const typename Operation::first_argument_type& left);
 
     result_type operator()(const argument_type& right) const;
@@ -43,7 +43,7 @@ protected:
 
 ### <a name="parameters"></a>매개 변수
 
-*Func*<br/>
+*binary_fn*<br/>
 단항 함수 개체로 변환할 이항 함수 개체입니다.
 
 *left*<br/>
@@ -58,9 +58,9 @@ protected:
 
 ## <a name="remarks"></a>설명
 
-이항 함수 개체의 복사본을 저장 하는 템플릿 클래스 *Func* 에서 `op`, 및 사본을 *왼쪽* 에서 `value`합니다. 그리고 **op**( **value**, `right`)를 반환하도록 해당 멤버 함수 `operator()`를 정의합니다.
+이항 함수 개체의 복사본을 저장 하는 템플릿 클래스 *binary_fn* 에서 `op`, 및 사본을 *왼쪽* 에서 `value`합니다. 해당 멤버 함수 정의 `operator()` 반환 `op( value, right )`합니다.
 
-경우 *Func* 형식의 개체인 `Operation` 및 `c` 상수 이면 [bind1st](../standard-library/functional-functions.md#bind1st) ( `Func`를 `c` ) 해당 하는 `binder1st` 클래스 생성자 `binder1st` \< **작업이**> ( `Func`, `c` )이 고 더 편리 합니다.
+경우 *binary_fn* 형식의 개체인 `Operation` 하 고 `c` 상수 이면 `bind1st( binary_fn, c )` 더 편리 하 게 해당 하는 `binder1st<Operation>( binary_fn, c )`합니다. 자세한 내용은 [bind1st](../standard-library/functional-functions.md#bind1st)합니다.
 
 ## <a name="example"></a>예제
 
