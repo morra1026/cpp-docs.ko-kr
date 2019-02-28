@@ -1,4 +1,4 @@
----
+﻿---
 title: 개체 수명 및 리소스 관리(모던 C++)
 ms.date: 11/04/2016
 ms.topic: conceptual
