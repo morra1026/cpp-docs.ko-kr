@@ -1,21 +1,21 @@
 ---
 title: unary_negate 클래스
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::unary_negate
+- functional/std::unary_negate
 helpviewer_keywords:
 - unary_negate class
 ms.assetid: e3b86eec-3205-49b9-ab83-f55225af4e0c
-ms.openlocfilehash: b43db182d9274281020d7ce92cfa1b3efe724197
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 96d70a24b87a84275f17813e76473a82fbff90da
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326019"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006710"
 ---
 # <a name="unarynegate-class"></a>unary_negate 클래스
 
-지정된 단항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다.
+지정된 단항 함수의 반환 값을 부정하는 멤버 함수를 제공하는 템플릿 클래스입니다. C + + 17 위해에서 사용 되지 않음 [not_fn](functional-functions.md#not_fn)합니다.
 
 ## <a name="syntax"></a>구문
 

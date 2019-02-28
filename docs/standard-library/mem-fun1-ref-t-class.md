@@ -1,21 +1,21 @@
 ---
 title: mem_fun1_ref_t 클래스
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- xfunctional/std::mem_fun1_ref_t
+- functional/std::mem_fun1_ref_t
 helpviewer_keywords:
 - mem_fun1_ref_t class
 ms.assetid: 7d6742f6-19ba-4523-b3c8-0e5b8f11464f
-ms.openlocfilehash: 4169ac00cfeeb2bd9f38ef0e7eb30da819fbff5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4f0f2064ac6771e2c351b70097137fed12c8262
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488064"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006697"
 ---
 # <a name="memfun1reft-class"></a>mem_fun1_ref_t 클래스
 
-허용 하는 어댑터 클래스를 `non_const` 멤버 함수는 단일 인수를 참조 인수를 사용 하 여 초기화할 때 이항 함수 개체로 호출할 수 있습니다.
+허용 하는 어댑터 클래스를 `non_const` 멤버 함수는 단일 인수를 참조 인수를 사용 하 여 초기화할 때 이항 함수 개체로 호출할 수 있습니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ## <a name="syntax"></a>구문
 
