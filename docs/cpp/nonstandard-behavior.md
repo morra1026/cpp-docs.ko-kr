@@ -17,7 +17,7 @@ ms.locfileid: "50638206"
 
 다음 섹션은 Visual C++ 구현이 C++ 표준을 준수하지 않는 일부 알려진 장소를 나열합니다. 아래의 섹션 번호는 C++ 11 표준(ISO/IEC 14882:2011(E))의 섹션 번호를 나타냅니다.
 
-C++ 표준에 정의 된 것과 다른 컴파일러 한계 목록은에서 제공 됩니다 [컴파일러 한계](../cpp/compiler-limits.md)합니다.
+C++ 표준에 정의된 내용 및 다른 컴파일러의 한계 목록은 [컴파일러 한계](../cpp/compiler-limits.md)에서 제공됩니다.
 
 ## <a name="covariant-return-types"></a>공변 반환 형식
 
@@ -71,11 +71,11 @@ void f() throw(int); // parsed but not used
 void g() throw();    // parsed and used
 ```
 
-예외 사양에 대한 자세한 내용은 참조 하세요. [예외 사양](../cpp/exception-specifications-throw-cpp.md)합니다.
+예외 사양에 대한 자세한 내용은 [예외 사양](../cpp/exception-specifications-throw-cpp.md)을 참조하세요.
 
 ## <a name="chartraitseof"></a>char_traits::eof()
 
-C++ 표준에서는 [char_traits:: eof](../standard-library/char-traits-struct.md#eof) 유효한에 해당 하면 안 `char_type` 값입니다. Visual C++ 컴파일러는 형식에 대한이 제약 조건은 **char**, 형식이 아니라 **wchar_t**합니다. 이것은 C++ ISO 사양의 단원 12.1.1, 표 62의 요구 사항에 맞지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
+C++ 표준에는 [char_traits:: eof](../standard-library/char-traits-struct.md#eof)가 유효한 `char_type` 값에 해당하면 안된다고 기술되어 있습니다. Visual C++ 컴파일러에서는 이 제약 조건을 **char** 형식에는 적용하지만 **wchar_t** 형식에는 적용하지 않습니다. 이것은 C++ ISO 사양의 섹션 12.1.1, 표 62의 요구 사항에 맞지 않습니다. 아래 예제에서는 이 작업을 보여 줍니다.
 
 ```cpp
 #include <iostream>
