@@ -1,5 +1,5 @@
 ---
-title: 64 비트 x64 용 Visual c + + 구성 대상
+title: 64비트 및 x64를 위한 Visual C++ 설정
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 64-bit compiler [C++], options
@@ -15,7 +15,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/19/2018
 ms.locfileid: "53626710"
 ---
-# <a name="configure-visual-c-for-64-bit-x64-targets"></a>64 비트 x64 용 Visual c + + 구성 대상
+# <a name="configure-visual-c-for-64-bit-x64-targets"></a>64비트 및 x64를 위한 Visual C++ 설정
 
 이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
