@@ -1,5 +1,5 @@
 ---
-title: 64 비트 x64 용 Visual c + + 구성 대상
+title: 64 비트 x64 용 Visual C++ 구성 대상
 ms.date: 11/04/2016
 helpviewer_keywords:
 - 64-bit compiler [C++], options
@@ -15,15 +15,15 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 12/19/2018
 ms.locfileid: "53626710"
 ---
-# <a name="configure-visual-c-for-64-bit-x64-targets"></a>64 비트 x64 용 Visual c + + 구성 대상
+# <a name="configure-visual-c-for-64-bit-x64-targets"></a>64 비트 x64 용 Visual C++ 구성 대상
 
 이 단원에는 Visual C++ 빌드 도구를 사용하여 64비트 하드웨어를 대상으로 지정하는 방법에 대한 항목이 포함되어 있습니다.
 
 ## <a name="in-this-section"></a>단원 내용
 
-- [방법: X64을 64 비트 대상 Visual c + + 프로젝트 구성 플랫폼](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [방법: X64을 64 비트 대상 Visual C++ 프로젝트 구성 플랫폼](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64 비트 Visual C++ 도구를 사용 하도록 설정](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)
 
