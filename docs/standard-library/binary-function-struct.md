@@ -1,21 +1,21 @@
 ---
 title: binary_function 구조체
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
-- functional/std::binary
+- functional/std::binary_function
 helpviewer_keywords:
 - binary_function class
 ms.assetid: 79b6d53d-644c-4add-b0ba-3a5f40f69c60
-ms.openlocfilehash: 5a153d85f9f6dcb93a074725ee9582ccfc1a66ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a6735ab558480039a0d2fa0e83ee4c5de02c5f2
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466770"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006269"
 ---
 # <a name="binaryfunction-struct"></a>binary_function 구조체
 
-이항 함수 개체를 제공하는 파생 클래스에 상속될 수 있는 형식을 정의하는 빈 기본 구조체입니다.
+이항 함수 개체를 제공하는 파생 클래스에 상속될 수 있는 형식을 정의하는 빈 기본 구조체입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -31,7 +31,7 @@ struct binary_function {
 
 템플릿 구조체는 다음 형식의 멤버 함수를 정의하는 클래스의 기준으로 사용됩니다.
 
-> *result_type* * * operator () (const * * <em>first_argument_type</em>**&, const** <em>second_argument_type</em>**&) const**
+> *result_type* ** operator()( const** <em>first_argument_type</em>**&, const** <em>second_argument_type</em>**& ) const**
 
 이러한 모든 이항 함수는 첫 번째 인수 형식을 *first_argument_type*, 두 번째 인수 형식을 *second_argument_type*, 반환 형식을 *result_type*으로 참조할 수 있습니다.
 

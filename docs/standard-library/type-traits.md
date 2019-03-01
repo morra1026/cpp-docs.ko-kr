@@ -1,22 +1,22 @@
 ---
 title: '&lt;type_traits&gt;'
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
 - <type_traits>
 helpviewer_keywords:
 - typetrait header
 - type_traits
 ms.assetid: 2260b51f-8160-4c66-a82f-00b534cb60d4
-ms.openlocfilehash: f56334cbb25132d45dfabb68cbcd5b832096a87c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c80629fd8771206d193b53aa7c32073de0ba45dd
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514684"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006731"
 ---
 # <a name="lttypetraitsgt"></a>&lt;type_traits&gt;
 
-형식 인수의 속성에 대한 정보를 제공하거나 변환된 형식을 생성하는 컴파일 시간 상수를 제공하는 템플릿을 정의합니다.
+해당 형식 인수의 속성에 대 한 정보를 제공 하거나 변환 된 형식을 생성 하는 컴파일 시간 상수에 대 한 템플릿을 정의 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -26,29 +26,33 @@ ms.locfileid: "50514684"
 
 ## <a name="remarks"></a>설명
 
-클래스 및 템플릿은 \<type_traits > 형식 유추, 분류 및 변환을 컴파일 타임에 형식 관련 오류를 검색 하 고 일반 코드를 최적화할 수 있도록 지 원하는 데 사용 됩니다. 이러한 클래스와 템플릿에는 형식 속성을 설명하는 단항 형식 특성, 형식 간의 관계를 설명하는 이진 형식 특성, 그리고 형식 속성을 수정하는 변환 특성이 포함됩니다.
+클래스 및 템플릿은 \<type_traits > 형식 유추, 분류 및 컴파일 타임에 변환을 지 원하는 데 사용 됩니다. 또한 형식 관련 오류를 검색 하 고 제네릭 코드 최적화 하는 데 사용 됩니다. 형식의 속성을 설명 하는 단항 형식 특성, 형식 간의 관계를 설명 하는 이진 형식 특성 및 변환 특성 형식의 속성을 수정 합니다.
 
-형식 특성을 지원하려는 경우 `integral_constant` 도우미 클래스를 정의합니다. 이 클래스는 형식 조건자의 기본 클래스를 구성하는 템플릿 특수화 `true_type` 및 `false_type`을 포함합니다. *형식 조건자*는 형식 인수를 하나 이상 사용하는 템플릿입니다. 형식 조건자가 *true인 경우* 형식은 [true_type](../standard-library/type-traits-typedefs.md#true_type)에서 직접 또는 간접적으로 공개 파생됩니다. 형식 조건자가 *false인 경우* 형식은 [false_type](../standard-library/type-traits-typedefs.md#false_type)에서 직접 또는 간접적으로 공개 파생됩니다.
+도우미 클래스 `integral_constant` 및 해당 템플릿 특수화 `true_type` 고 `false_type` 형식 조건자의 기본 클래스를 구성 합니다. *형식 조건자*는 형식 인수를 하나 이상 사용하는 템플릿입니다. 형식 조건자 *마찬가지*를 직접 또는 간접적으로 파생 공개적으로 됩니다에서 [true_type](../standard-library/type-traits-typedefs.md#true_type)합니다. 형식 조건자 *false*를 직접 또는 간접적으로 파생 공개적으로 됩니다에서 [false_type](../standard-library/type-traits-typedefs.md#false_type)합니다.
 
 *형식 한정자* 또는 *변환 특성*은 템플릿 인수를 하나 이상 사용하며 수정된 형식과 동일한 의미인 단일 구성원(`type`)를 포함하는 템플릿입니다.
 
 ### <a name="alias-templates"></a>별칭 템플릿
 
-형식 특성을 간단하게 표현할 수 있도록 `typename some_trait<T>::type`용 [별칭 템플릿](../cpp/aliases-and-typedefs-cpp.md)이 제공됩니다. 여기서 "`some_trait`"는 템플릿 클래스 이름입니다. 예를 들어 [add_const](../standard-library/add-const-class.md)에는 다음과 같이 정의된 `add_const_t` 형식에 대한 별칭 템플릿이 있습니다.
+Type 특성 식 단순화 하기 위해 [별칭 템플릿](../cpp/aliases-and-typedefs-cpp.md) 에 대 한 `typename some_trait<T>::type` 제공 됩니다. 여기서 *some_trait* 는 템플릿 클래스 이름입니다. 예를 들어 [add_const](../standard-library/add-const-class.md)에는 다음과 같이 정의된 `add_const_t` 형식에 대한 별칭 템플릿이 있습니다.
 
 ```cpp
 template <class T>
 using add_const_t = typename add_const<T>::type;
 ```
 
-|||||
-|-|-|-|-|
-|add_const_t|aligned_storage_t|make_signed_t|remove_pointer_t|
-|add_cv_t|aligned_union_t|make_unsigned_t|remove_reference_t|
-|add_lvalue_reference_t|common_type_t|remove_all_extents_t|remove_volatile_t|
-|add_pointer_t|conditional_t|remove_const_t|result_of_t|
-|add_rvalue_reference_t|decay_t|remove_cv_t|underlying_type_t|
-|add_volatile_t|enable_if_t|remove_extent_t||
+제공 된 별칭에 대 한 가지는 `type` 멤버:
+
+||||
+|-|-|-|
+| add_const_t | add_cv_t | add_lvalue_reference_t |
+| add_pointer_t | add_rvalue_reference_t | add_volatile_t |
+| aligned_storage_t | aligned_union_t | common_type_t |
+| conditional_t | decay_t | enable_if_t |
+| invoke_result_t | make_signed_t | make_unsigned_t |
+| remove_all_extents_t | remove_const_t | remove_cv_t |
+| remove_extent_t | remove_pointer_t | remove_reference_t |
+| remove_volatile_t | result_of_t | underlying_type_t |
 
 ### <a name="classes"></a>클래스
 
@@ -133,6 +137,10 @@ using add_const_t = typename add_const<T>::type;
 |[is_nothrow_move_assignable](../standard-library/type-traits-functions.md#is_nothrow_move_assignable)|형식이 이동 할당 가능하며 할당이 throw되지 않는 것으로 확인되는지 테스트합니다.|
 |[is_nothrow_destructible](../standard-library/is-nothrow-destructible-class.md)|형식이 소멸 가능하며 소멸자가 throw되지 않는 것으로 확인되는지 테스트합니다.|
 |`has_virtual_destructor`|형식에 가상 소멸자가 있는지 테스트합니다.|
+| [is_invocable](is-invocable-classes.md) | 호출 가능 형식의 지정 된 인수 형식을 사용 하 여 호출할 수 있는지 테스트 합니다.<br/> C + + 17에 추가 합니다. |
+| [is_invocable_r](is-invocable-classes.md) | 지정된 된 형식으로 변환 될 지정 된 인수 형식 및 결과 사용 하 여 호출 가능 형식의 수 호출 여부를 테스트 합니다.<br/> C + + 17에 추가 합니다. |
+| [is_nothrow_invocable](is-invocable-classes.md) | 형식 및 예외를 throw 되지 않는 것 호출 가능 형식의 지정 된 인수를 사용 하 여 호출할 수 있는지 여부를 테스트 합니다.<br/> C + + 17에 추가 합니다. |
+| [is_nothrow_invocable_r](is-invocable-classes.md) | 테스트 형식 및 예외 및 결과 throw 하지 않는 것 호출 가능 형식의 지정 된 인수를 사용 하 여 호출할 수 있는지 여부 지정된 된 형식으로 변환할 수 있는 경우<br/> C + + 17에 추가 합니다. |
 
 형식 속성 쿼리
 
@@ -200,7 +208,8 @@ const-volatile 수정
 |[conditional](../standard-library/conditional-class.md)|조건이 true이면 지정된 첫 번째 형식을 생성하고 그렇지 않으면 지정된 두 번째 형식을 생성합니다.|
 |[decay](../standard-library/decay-class.md)|값으로 전달된 형식을 생성합니다. 비참조, 비상수, 비휘발성 형식 또는 형식에 대한 포인터를 만듭니다.|
 |[enable_if](../standard-library/enable-if-class.md)|조건이 true이면 지정된 형식을 생성하고 그렇지 않으면 형식을 생성하지 않습니다.|
-|[result_of](../standard-library/result-of-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다.|
+|[invoke_result](invoke-result-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C + + 17에 추가 합니다. |
+|[result_of](../standard-library/result-of-class.md)|지정된 인수 유형을 사용하는 호출 가능 형식의 반환 형식을 결정합니다. <br/>C++14, c++17에서 사용 되지 않는 추가 합니다. |
 |[underlying_type](../standard-library/underlying-type-class.md)|열거형 형식에 대한 내부 정수 계열 형식을 생성합니다.|
 
 ## <a name="see-also"></a>참고자료

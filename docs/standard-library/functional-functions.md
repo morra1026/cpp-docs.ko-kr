@@ -1,21 +1,22 @@
 ---
 title: '&lt;functional&gt; 함수'
-ms.date: 11/04/2016
+ms.date: 02/21/2019
 f1_keywords:
 - functional/std::bind
-- xfunctional/std::bind1st
-- xfunctional/std::bind2nd
-- xfunctional/std::bit_and
-- xfunctional/std::bit_not
-- xfunctional/std::bit_or
-- xfunctional/std::bit_xor
+- functional/std::bind1st
+- functional/std::bind2nd
+- functional/std::bit_and
+- functional/std::bit_not
+- functional/std::bit_or
+- functional/std::bit_xor
 - functional/std::cref
 - type_traits/std::cref
-- xfunctional/std::mem_fn
-- xfunctional/std::mem_fun_ref
-- xfunctional/std::not1
-- xfunctional/std::not2
-- xfunctional/std::ptr_fun
+- functional/std::mem_fn
+- functional/std::mem_fun_ref
+- functional/std::not1
+- functional/std::not2
+- functional/std::not_fn
+- functional/std::ptr_fun
 - functional/std::ref
 - functional/std::swap
 helpviewer_keywords:
@@ -28,25 +29,36 @@ helpviewer_keywords:
 - std::bit_xor [C++]
 - std::cref [C++]
 ms.assetid: c34d0b45-50a7-447a-9368-2210d06339a4
-ms.openlocfilehash: cd89386ff421c199705856b9cf5f6b58ff25f7f5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 559110361b9d3d8c66ff261860f8885ff56d44d5
+ms.sourcegitcommit: 4299caac2dc9e806c74ac833d856a3838b0f52a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519700"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "57006733"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;functional&gt; 함수
 
 ||||
 |-|-|-|
-|[bind](#bind)|[bind1st](#bind1st)|[bind2nd](#bind2nd)|
-|[bit_and](#bit_and)|[bit_not](#bit_not)|[bit_or](#bit_or)|
-|[bit_xor](#bit_xor)|[cref](#cref)|[mem_fn](#mem_fn)|
-|[mem_fun](#mem_fun)|[mem_fun_ref](#mem_fun_ref)|[not1](#not1)|
-|[not2](#not2)|[ptr_fun](#ptr_fun)|[ref](#ref)|
-|[swap](#swap)|
+| [bind](#bind) | [bit_and](#bit_and) | [bit_not](#bit_not) |
+| [bit_or](#bit_or) | [bit_xor](#bit_xor) | [cref](#cref) |
+| [invoke](#invoke) | [mem_fn](#mem_fn) | [not_fn](#not_fn) |
+| [ref](#ref) | [swap](#swap) | |
 
-## <a name="bind"></a>  bind
+이 함수는 c++11에서 사용 되지 않는 빠르며 c++17에서 제거 합니다.
+
+||||
+|-|-|-|
+| [bind1st](#bind1st) | [bind2nd](#bind2nd) | [mem_fun](#mem_fun) |
+| [mem_fun_ref](#mem_fun_ref) | [ptr_fun](#ptr_fun) | |
+
+이러한 함수는 c++17에서 사용 되지 않습니다.
+
+|||
+|-|-|
+| [not1](#not1) | [not2](#not2) |
+
+## <a name="bind"></a> 바인딩
 
 호출 가능 개체에 인수를 바인딩합니다.
 
@@ -69,14 +81,14 @@ N번째 인수의 형식입니다.
 *fn*<br/>
 호출할 개체입니다.
 
-*TN*<br/>
+*tN*<br/>
 N번째 호출 인수입니다.
 
 ### <a name="remarks"></a>설명
 
 `Fty, T1, T2, ..., TN` 형식은 복사를 통해 생성할 수 있어야 하고 `INVOKE(fn, t1, ..., tN)`은 일부 값 `w1, w2, ..., wN`에 대한 유효한 식이어야 합니다.
 
-첫 번째 템플릿 함수는 약한 결과 형식이 포함된 전달 호출 래퍼 `g`를 반환합니다. 미치는 `g(u1, u2, ..., uM)` 됩니다 `INVOKE(f, v1, v2, ..., vN, ` [result_of](../standard-library/result-of-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`여기서 `cv` 의 cv 한정자가 `g` 바인딩된 인수 형식 및 값 `v1, v2, ..., vN` 으로 결정 됩니다 아래에 지정 합니다. 이를 사용하여 인수를 호출 가능 개체에 바인딩하면 맞춤형 인수 목록이 포함된 호출 가능 개체가 생성됩니다.
+첫 번째 템플릿 함수는 약한 결과 형식이 포함된 전달 호출 래퍼 `g`를 반환합니다. 미치는 `g(u1, u2, ..., uM)` 됩니다 `INVOKE(f, v1, v2, ..., vN, ` [invoke_result](../standard-library/invoke-result-class.md)`<Fty cv (V1, V2, ..., VN)>::type)`여기서 `cv` 의 cv 한정자가 `g` 바인딩된 인수 형식 및 값 `v1, v2, ..., vN` 결정 아래 지정 된 대로 합니다. 이를 사용하여 인수를 호출 가능 개체에 바인딩하면 맞춤형 인수 목록이 포함된 호출 가능 개체가 생성됩니다.
 
 두 번째 템플릿 함수는 `Ret`의 동의어인 중첩된 형식 `result_type`이 포함된 전달 호출 래퍼 `g`를 반환합니다. `g(u1, u2, ..., uM)`의 결과는 `INVOKE(f, v1, v2, ..., vN, Ret)`입니다. 여기서 `cv`는 `g`의 cv 한정자이고 바인딩된 인수 `v1, v2, ..., vN`의 값과 형식은 아래 지정된 대로 결정됩니다. 이를 사용하여 인수를 호출 가능 개체에 바인딩하면 맞춤형 인수 목록 및 지정된 반환 형식이 포함된 호출 가능 개체가 생성됩니다.
 
@@ -147,9 +159,9 @@ int main()
 3^2 == 9
 ```
 
-## <a name="bind1st"></a>  bind1st
+## <a name="bind1st"></a> bind1st
 
-이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 어댑터를 만드는 도우미 템플릿 함수입니다.
+이항 함수의 첫 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 어댑터를 만드는 도우미 템플릿 함수입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ```cpp
 template <class Operation, class Type>
@@ -241,9 +253,9 @@ The number of elements in v1 greater than 5 is: 4.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bind2nd"></a>  bind2nd
+## <a name="bind2nd"></a> bind2nd
 
-이항 함수의 두 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 어댑터를 만드는 도우미 템플릿 함수입니다.
+이항 함수의 두 번째 인수를 지정된 값에 바인딩하여 이항 함수 개체를 단항 함수 개체로 변환하는 어댑터를 만드는 도우미 템플릿 함수입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ```cpp
 template <class Operation, class Type>
@@ -335,7 +347,7 @@ The number of elements in v1 greater than 15 is: 2.
 The number of elements in v1 less than 10 is: 2.
 ```
 
-## <a name="bit_and"></a>  bit_and
+## <a name="bit_and"></a> bit_and
 
 인수에 대해 비트 AND 연산(이항 `operator&`)을 수행하는 사전 정의된 함수 개체입니다.
 
@@ -375,9 +387,9 @@ struct bit_and<void>
 
 `bit_and` 함수는 기본 데이터 형식에 대한 필수 형식이나 이항 `operator&`를 구현하는 사용자 정의 형식으로 제한됩니다.
 
-## <a name="bit_not"></a>  bit_not
+## <a name="bit_not"></a> bit_not
 
-인수에 대해 비트 보수(NOT) 연산(이항 `operator~`)을 수행하는 사전 정의된 함수 개체입니다.
+인수에 대해 비트 보수(NOT) 연산(이항 `operator~`)을 수행하는 사전 정의된 함수 개체입니다. C + + 14에 추가 합니다.
 
 ```cpp
 template <class Type = void>
@@ -391,7 +403,7 @@ template <>
 struct bit_not<void>
 {
     template <class Type>
-    auto operator()(Type&& Right) const  ->  decltype(~std::forward<Type>(Right));
+    auto operator()(Type&& Right) const -> decltype(~std::forward<Type>(Right));
 };
 ```
 
@@ -411,7 +423,7 @@ struct bit_not<void>
 
 `bit_not` 함수는 기본 데이터 형식에 대한 필수 형식이나 이항 `operator~`를 구현하는 사용자 정의 형식으로 제한됩니다.
 
-## <a name="bit_or"></a>  bit_or
+## <a name="bit_or"></a> bit_or
 
 인수에 대해 비트 OR 연산(`operator|`)을 수행하는 사전 정의된 함수 개체입니다.
 
@@ -429,7 +441,7 @@ struct bit_or<void>
 {
     template <class T, class U>
     auto operator()(T&& Left, U&& Right) const
-        ->  decltype(std::forward<T>(Left) | std::forward<U>(Right));
+        -> decltype(std::forward<T>(Left) | std::forward<U>(Right));
 };
 ```
 
@@ -451,7 +463,7 @@ struct bit_or<void>
 
 `bit_or` 함수는 기본 데이터 형식에 대한 필수 형식이나 `operator|`를 구현하는 사용자 정의 형식으로 제한됩니다.
 
-## <a name="bit_xor"></a>  bit_xor
+## <a name="bit_xor"></a> bit_xor
 
 인수에 대해 비트 XOR 연산(이항 `operator^`)을 수행하는 사전 정의된 함수 개체입니다.
 
@@ -491,7 +503,7 @@ struct bit_xor<void>
 
 `bit_xor` 함수는 기본 데이터 형식에 대한 필수 형식이나 이항 `operator^`를 구현하는 사용자 정의 형식으로 제한됩니다.
 
-## <a name="cref"></a>  cref
+## <a name="cref"></a> cref
 
 인수에서 const `reference_wrapper`를 생성합니다.
 
@@ -547,7 +559,114 @@ cref(i) = 1
 cref(neg)(i) = -1
 ```
 
-## <a name="mem_fn"></a>  mem_fn
+## <a name="invoke"></a> invoke
+
+지정된 된 인수를 사용 하 여 호출 가능 개체를 호출합니다. C + + 17에 추가 합니다.
+
+```cpp
+template <class Callable, class... Args>
+invoke_result_t<Callable, Args...>
+    invoke(Callable&& fn, Args&&... args) noexcept(/* specification */);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*호출 가능*<br/>
+호출할 개체의 형식입니다.
+
+*Args*<br/>
+호출 인수 형식입니다.
+
+*fn*<br/>
+호출할 개체입니다.
+
+*args*<br/>
+호출 인수입니다.
+
+*specification*<br/>
+합니다 **noexcept** 사양 `std::is_nothrow_invocable_v<Callable, Args>)`합니다.
+
+### <a name="remarks"></a>설명
+
+호출 가능 개체를 호출 *fn* 매개 변수를 사용 하 여 *args*합니다. 효과적으로 `INVOKE(std::forward<Callable>(fn), std::forward<Args>(args)...)`여기서 의사 (pseudo) 함수의 `INVOKE(f, t1, t2, ..., tN)` 다음 중 하나를 의미 합니다.
+
+- `f`가 `T` 클래스의 멤버 함수에 대한 포인터이고, `t1`이 `T` 형식의 개체이거나 `T` 형식의 개체에 대한 참조 또는 `T`에서 파생된 형식의 개체에 대한 참조인 경우 `(t1.*f)(t2, ..., tN)`입니다. 즉, `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` 그렇습니다.
+
+- `(t1.get().*f)(t2, ..., tN)` 때 `f` 클래스의 멤버 함수에 대 한 포인터 `T` 하 고 `std::decay_t<decltype(t1)>` 의 특수화 인 `std::reference_wrapper`합니다.
+
+- `((*t1).*f)(t2, ..., tN)` 때 `f` 클래스의 멤버 함수에 대 한 포인터 `T` 고 `t1` 위 유형 중 하나가 아닙니다.
+
+- N == 1이며 `f`가 `T` 클래스의 멤버 데이터에 대한 포인터이고, `t1`이 `T` 형식의 개체이거나 `T` 형식의 개체에 대한 참조 또는 `T`에서 파생된 형식의 개체에 대한 참조인 경우 `t1.*f`입니다.  즉, `std::is_base_of<T, std::decay_t<decltype(t1)>>::value` 그렇습니다.
+
+- `t1.get().*f` 경우 N = = 1 및 `f` 클래스의 멤버 데이터에 대 한 포인터 `T` 하 고 `std::decay_t<decltype(t1)>` 의 특수화 인 `std::reference_wrapper`합니다.
+
+- `(*t1).*f` 경우 N = = 1 및 `f` 클래스의 멤버 데이터에 대 한 포인터 `T` 고 `t1` 위 유형 중 하나가 아닙니다.
+
+- 다른 모든 경우에서는 `f(t1, t2, ..., tN)`입니다.
+
+호출 가능 개체의 결과 형식에 대 한 내용은 참조 하세요 [invoke_result](invoke-result-class.md)합니다. 호출 가능 형식에 대 한 조건자를 참조 하세요 [is_invocable, is_invocable_r, is_nothrow_invocable, is_nothrow_invocable_r 클래스](is-invocable-classes.md)합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// functional_invoke.cpp
+// compile using: cl /EHsc /std:c++17 functional_invoke.cpp
+#include <functional>
+#include <iostream>
+
+struct Demo
+{
+    int n_;
+
+    Demo(int const n) : n_{n} {}
+
+    void operator()(int const i, int const j) const
+    {
+        std::cout << "Demo operator( " << i << ", "
+            << j << " ) is " << i * j << std::endl;
+    }
+
+    void difference(int const i) const 
+    {
+        std::cout << "Demo.difference( " << i << " ) is "
+            << n_ - i << std::endl;
+    }
+};
+
+void divisible_by_3(int const i)
+{
+    std::cout << i;
+    (i % 3) ? std::cout << " isn't divisible by 3."
+        : std::cout << " is divisible by 3.";
+    std::cout << std::endl;
+}
+
+int main()
+{
+    // Invoke a function object (call operator).
+    Demo d{ 42 };
+    std::invoke( d, 3, -7 );
+
+    // Invoke a member function.
+    std::invoke(&Demo::difference, d, 29);
+
+    // Invoke a data member.
+    std::cout << "n_: " << std::invoke(&Demo::n_, d) << '\n';
+
+    // Invoke a stand-alone (free) function.
+    std::invoke( divisible_by_3, 42 );
+
+    // Invoke a lambda.
+    std::invoke( [](int const i){
+        std::cout << i; 
+        (i % 7) ? std::cout << " isn't divisible by 7."
+            : std::cout << " is divisible by 7.";
+        std::cout << std::endl;
+    }, 42 );
+}
+```
+
+## <a name="mem_fn"></a> mem_fn
 
 단순 호출 래퍼를 생성합니다.
 
@@ -558,7 +677,7 @@ unspecified mem_fn(Ret Ty::*pm);
 
 ### <a name="parameters"></a>매개 변수
 
-*ret*<br/>
+*Ret*<br/>
 래핑된 함수의 반환 형식입니다.
 
 *Ty*<br/>
@@ -610,9 +729,9 @@ int main()
 3*2 == 6
 ```
 
-## <a name="mem_fun"></a>  mem_fun
+## <a name="mem_fun"></a> mem_fun
 
-포인터 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다.
+포인터 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다. 위해 C + + 11에서 지원 되지 않는 [mem_fn](#mem_fn) 하 고 [바인딩](#bind), c++17에서 제거 합니다.
 
 ```cpp
 template <class Result, class Type>
@@ -697,9 +816,9 @@ int main( )
 }
 ```
 
-## <a name="mem_fun_ref"></a>  mem_fun_ref
+## <a name="mem_fun_ref"></a> mem_fun_ref
 
-참조 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다.
+참조 인수를 사용하여 초기화할 때 멤버 함수에 대한 함수 개체 어댑터를 생성하는 데 사용되는 도우미 템플릿 함수입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ```cpp
 template <class Result, class Type>
@@ -802,9 +921,9 @@ The original values stored in v2 are: 1 2 3 4 5 6 7 8 9 10 11 12 13
 With the even numbers removed, the remaining values are: 1 3 5 7 9 11 13
 ```
 
-## <a name="not1"></a>  not1
+## <a name="not1"></a> not1
 
-단항 조건자의 보수를 반환합니다.
+단항 조건자의 보수를 반환합니다. 위해 사용 되지 않는 [not_fn](#not_fn) c++17에서.
 
 ```cpp
 template <class UnaryPredicate>
@@ -874,9 +993,9 @@ The number of elements in v1 greater than 10 is: 5.
 The number of elements in v1 not greater than 10 is: 3.
 ```
 
-## <a name="not2"></a>  not2
+## <a name="not2"></a> not2
 
-이항 조건자의 보수를 반환합니다.
+이항 조건자의 보수를 반환합니다. 위해 사용 되지 않는 [not_fn](#not_fn) c++17에서.
 
 ```cpp
 template <class BinaryPredicate>
@@ -950,9 +1069,109 @@ Sorted vector v1 = ( 41 6262 6262 6334 18467 19169 26500 )
 Resorted vector v1 = ( 26500 19169 18467 6334 6262 6262 41 )
 ```
 
-## <a name="ptr_fun"></a>  ptr_fun
+## <a name="not_fn"></a> not_fn
 
-단항 및 이항 함수 포인터를 각각 조정 가능한 단항 및 이항 함수로 변환하는 데 사용되는 도우미 템플릿 함수입니다.
+`not_fn` 함수 템플릿 호출 가능 개체를 받아서 호출 가능 개체를 반환 합니다. 나중에 일부 인수를 사용 하 여 반환된 된 호출 가능 개체를 호출 하면 원래 호출 가능 개체에 전달 하 고 논리적으로 결과 부정 합니다. 래핑된 호출 가능 개체의 const 한정자 및 값 범주 동작을 유지 합니다. `not_fn` c++17에서 새로운 기능과 사용 되지 않는 대체 `std::not1`, `std::not2`하십시오 `std::unary_negate` 및 `std::binary_negate`합니다.
+
+```cpp
+template <class Callable>
+/* unspecified */ not_fn(Callable&& func);
+```
+
+### <a name="parameters"></a>매개 변수
+
+*func*<br/>
+전달 호출을 생성 하는 데 사용 하는 호출 가능 개체 래퍼입니다.
+
+### <a name="remarks"></a>설명
+
+템플릿 함수에 해당 하는 호출 래퍼를 반환 `return call_wrapper(std::forward<Callable>(func))` 이 표시 전용 클래스를 기반으로 합니다.
+
+```cpp
+class call_wrapper
+{
+   using FD = decay_t<Callable>;
+   explicit call_wrapper(Callable&& func);
+
+public:
+   call_wrapper(call_wrapper&&) = default;
+   call_wrapper(call_wrapper const&) = default;
+
+   template<class... Args>
+     auto operator()(Args&&...) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+
+   template<class... Args>
+     auto operator()(Args&&...) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
+
+private:
+  FD fd;
+};
+```
+
+호출 가능 개체의 명시적 생성자 *func* 형식이 필요로 `std::decay_t<Callable>` 의 요구 사항을 충족할 `MoveConstructible`, 및 `is_constructible_v<FD, Callable>` true 여야 합니다. 래핑된 호출 가능 개체를 초기화 `fd` 에서 `std::forward<Callable>(func)`를 생성 하 여 throw 된 예외를 throw 하 고 `fd`입니다.
+
+Lvalue 또는 rvalue 참조 범주 및 const 한정 다음과 같이 구분 하는 호출 연산자를 노출 하는 래퍼
+
+```cpp
+template<class... Args> auto operator()(Args&&... args) & -> decltype(!declval<invoke_result_t<FD&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const& -> decltype(!declval<invoke_result_t<FD const&(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) && -> decltype(!declval<invoke_result_t<FD(Args...)>>());
+template<class... Args> auto operator()(Args&&... args) const&& -> decltype(!declval<invoke_result_t<FD const(Args...)>>());
+```
+
+처음 두 동일 `return !INVOKE(fd, std::forward<Args>(args)...)`을 두는 같음 및 `return !INVOKE(std::move(fd), std::forward<Args>(args)...)`합니다.
+
+### <a name="example"></a>예제
+
+```cpp
+// functional_not_fn_.cpp
+// compile with: /EHsc /std:c++17
+#include <vector>
+#include <algorithm>
+#include <functional>
+#include <iostream>
+
+int main()
+{
+    std::vector<int> v1 = { 99, 6264, 41, 18467, 6334, 26500, 19169 };
+    auto divisible_by_3 = [](int i){ return i % 3 == 0; };
+
+    std::cout << "Vector v1 = ( " ;
+    for (const auto& item : v1)
+    {
+        std::cout << item << " ";
+    }
+    std::cout << ")" << std::endl;
+
+    // Count the number of vector elements divisible by 3.
+    int divisible =
+        std::count_if(v1.begin(), v1.end(), divisible_by_3);
+    std::cout << "Elements divisible by three: "
+        << divisible << std::endl;
+
+    // Count the number of vector elements not divisible by 3.
+    int not_divisible =
+        std::count_if(v1.begin(), v1.end(), std::not_fn(divisible_by_3));
+    std::cout << "Elements not divisible by three: "
+        << not_divisible << std::endl;
+}
+```
+
+```Output
+Vector v1 = ( 99 6264 41 18467 6334 26500 19169 )
+Elements divisible by three: 2
+Elements not divisible by three: 5
+```
+
+## <a name="ptr_fun"></a> ptr_fun
+
+단항 및 이항 함수 포인터를 각각 조정 가능한 단항 및 이항 함수로 변환하는 데 사용되는 도우미 템플릿 함수입니다. C++17에서 제거 하는 C + + 11에서 사용 되지 않습니다.
 
 ```cpp
 template <class Arg, class Result>
@@ -981,7 +1200,7 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 [!code-cpp[functional_ptr_fun#1](../standard-library/codesnippet/CPP/functional-functions_1.cpp)]
 
-## <a name="ref"></a>  ref
+## <a name="ref"></a> ref
 
 인수에서 `reference_wrapper` 를 생성합니다.
 
@@ -1073,7 +1292,7 @@ tiger lion cougar
 tiger cougar
 ```
 
-## <a name="swap"></a>  swap
+## <a name="swap"></a> swap
 
 두 `function` 개체를 교환합니다.
 
@@ -1087,10 +1306,10 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 *Fty*<br/>
 함수 개체에서 제어되는 형식입니다.
 
-*F1*<br/>
+*f1*<br/>
 첫 번째 함수 개체입니다.
 
-*F2*<br/>
+*f2*<br/>
 두 번째 함수 개체입니다.
 
 ### <a name="remarks"></a>설명
