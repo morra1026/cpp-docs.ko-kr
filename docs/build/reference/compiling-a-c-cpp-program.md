@@ -14,7 +14,7 @@ ms.locfileid: "50502767"
 ---
 # <a name="compiling-a-cc-program"></a>C/C++ 프로그램 컴파일
 
-컴파일러를 사용 하 여에 대 한 내용은 다음 섹션을 참조 합니다.
+컴파일러를 사용하는 것에 대한 내용은 다음 섹션을 참조 합니다.
 
 - [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50502767"
 
 - [컴파일러 및 링커에서의 유니코드 지원](../../build/reference/unicode-support-in-the-compiler-and-linker.md)
 
-컴파일러 호스트 및 대상 아키텍처 선택에 대 한 내용은 참조 하세요 [구성 Visual c + + 64 비트 x64 대상](../../build/configuring-programs-for-64-bit-visual-cpp.md)합니다.
+컴파일러 호스트 및 대상 아키텍처 선택에 대한 내용은 참조 하세요 [64비트 및 x64를 위한 Visual C++ 설정](../../build/configuring-programs-for-64-bit-visual-cpp.md)합니다.
 
 ## <a name="see-also"></a>참고 항목
 
