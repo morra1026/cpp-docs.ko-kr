@@ -16,7 +16,7 @@ ms.locfileid: "50481733"
 ---
 # <a name="cc-building-reference"></a>C/C++ 빌드 참조
 
-Visual c + +는 C/c + + 프로그램을 구축 하는 두 가지를 제공 합니다. (가장 쉽고 일반적인) 하는 방법은 [Visual c + + 개발 환경 내에서 빌드](../../ide/building-cpp-projects-in-visual-studio.md)합니다. 다른 방법은 [명령줄 도구를 사용 하 여 명령 프롬프트에서 빌드](../../build/building-on-the-command-line.md)합니다. 두 경우 모두 Visual c + + 소스 편집기 또는 선택한 타사 편집기를 사용 하 여 원본 파일을 만들 수 있습니다.
+Visual C++는 C/C++ 프로그램을 구축 하는 두 가지를 제공 합니다. (가장 쉽고 일반적인) 하는 방법은 [Visual C++ 개발 환경 내에서 빌드](../../ide/building-cpp-projects-in-visual-studio.md)합니다. 다른 방법은 [명령줄 도구를 사용 하 여 명령 프롬프트에서 빌드](../../build/building-on-the-command-line.md)합니다. 두 경우 모두 Visual C++ 소스 편집기 또는 선택한 타사 편집기를 사용 하 여 원본 파일을 만들 수 있습니다.
 
 프로그램이.vcxproj 파일 보다는 메이크파일의 사용 하는 경우 빌드할 수 있습니다이 개발 환경에는 [외부 프로젝트](../../ide/building-external-projects.md)합니다.
 
@@ -48,7 +48,7 @@ Visual c + +는 C/c + + 프로그램을 구축 하는 두 가지를 제공 합�
 [사용자 지정 빌드 단계 및 빌드 이벤트 이해](../../ide/understanding-custom-build-steps-and-build-events.md)<br/>
 빌드 프로세스를 사용자 지정에 대해 설명 합니다.
 
-[C/c + + 프로그램 빌드](../../build/building-c-cpp-programs.md)<br/>
+[C/C++ 프로그램 빌드](../../build/building-c-cpp-programs.md)<br/>
 명령줄 또는 Visual Studio의 통합 개발 환경에서 프로그램 빌드를 설명하는 항목에 대한 링크를 제공합니다.
 
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
