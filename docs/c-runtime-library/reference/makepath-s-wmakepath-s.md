@@ -16,6 +16,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-filesystem-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - _wmakepath_s
@@ -29,12 +30,12 @@ helpviewer_keywords:
 - _wmakepath_s function
 - makepath_s function
 ms.assetid: 4405e43c-3d63-4697-bb80-9b8dcd21d027
-ms.openlocfilehash: 6914299dd7ede97c9004dcc95e01b1a35188f5c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3536569fd3e77a353003e1372d5dc4ee6e4ee3fb
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471918"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210655"
 ---
 # <a name="makepaths-wmakepaths"></a>_makepath_s, _wmakepath_s
 
@@ -88,7 +89,7 @@ errno_t _wmakepath_s(
 *sizeInBytes*<br/>
 버퍼의 크기(바이트)입니다.
 
-*드라이브*<br/>
+*drive*<br/>
 원하는 드라이브에 따른 문자(A, B 등) 및 후행 콜론(선택 사항)을 포함합니다. **_makepath_s** 없을 경우 복합 경로에 콜론을 자동으로 삽입 합니다. 하는 경우 *드라이브* 됩니다 **NULL** 복합 빈 문자열을 가리킵니다, 드라이브 문자 없이 표시 *경로* 문자열입니다.
 
 *dir*<br/>
