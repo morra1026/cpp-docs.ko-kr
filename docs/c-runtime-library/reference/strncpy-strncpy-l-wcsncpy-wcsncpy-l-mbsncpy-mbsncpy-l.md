@@ -21,6 +21,7 @@ apilocation:
 - ucrtbase.dll
 - api-ms-win-crt-multibyte-l1-1-0.dll
 - api-ms-win-crt-string-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - _fstrncpy
@@ -61,12 +62,12 @@ helpviewer_keywords:
 - tcsncpy function
 - _strncpy_l function
 ms.assetid: ac4345a1-a129-4f2f-bb8a-373ec58ab8b0
-ms.openlocfilehash: 5260d120fe1e5826bb4b9ebc8410a8bd1040ff3e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04ca1f0b689e68008b3b5a57d01e626ee92a60b9
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507737"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210434"
 ---
 # <a name="strncpy-strncpyl-wcsncpy-wcsncpyl-mbsncpy-mbsncpyl"></a>strncpy, _strncpy_l, wcsncpy, _wcsncpy_l, _mbsncpy, _mbsncpy_l
 
@@ -207,7 +208,7 @@ C++에서 이러한 함수는 보다 최신의 보안 대응 함수를 호출하
 
 ## <a name="example"></a>예제
 
-다음 예제에서는의 사용을 보여 줍니다 **strncpy** 및 어떻게 프로그램 버그 및 보안 문제를 악용할 수 있습니다. 각 호출에 대해 경고를 생성 하는 컴파일러 **strncpy** 비슷합니다 **crt_strncpy_x86.c(15): 경고 C4996: 'strncpy':이 함수 또는 변수 안전 하지 않을 합니다. strncpy_s를 대신 사용하세요. 사용 중단을 사용하지 않도록 설정하려면 _CRT_SECURE_NO_WARNINGS를 사용합니다. 자세한 내용은 온라인 도움말을 참조하세요.**
+다음 예제에서는의 사용을 보여 줍니다 **strncpy** 및 어떻게 프로그램 버그 및 보안 문제를 악용할 수 있습니다. 각 호출에 대해 경고를 생성 하는 컴파일러 **strncpy** 비슷합니다 **crt_strncpy_x86.c(15): 경고 C4996: 'strncpy': 이 함수 또는 변수는 안전하지 않을 수 있습니다. strncpy_s를 대신 사용하세요. 사용 중단을 사용하지 않도록 설정하려면 _CRT_SECURE_NO_WARNINGS를 사용합니다. 자세한 내용은 온라인 도움말을 참조하세요.**
 
 ```C
 // crt_strncpy_x86.c
