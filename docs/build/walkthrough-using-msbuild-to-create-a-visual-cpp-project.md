@@ -15,11 +15,11 @@ ms.locfileid: "50677217"
 ---
 # <a name="walkthrough-using-msbuild-to-create-a-visual-c-project"></a>연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기
 
-이 연습에서는 명령 프롬프트에서 Visual c + + 프로젝트를 빌드하려면 MSBuild를 사용 하는 방법에 설명 합니다. C + + 소스 파일 및 Visual c + + 콘솔 응용 프로그램에 대 한 XML 기반 프로젝트 파일을 만드는 방법을 알아봅니다. 프로젝트를 빌드한 후 빌드 프로세스를 사용자 지정 하는 방법을 배웁니다.
+이 연습에서는 명령 프롬프트에서 Visual C++ 프로젝트를 빌드하려면 MSBuild를 사용 하는 방법에 설명 합니다. C++ 소스 파일 및 Visual C++ 콘솔 응용 프로그램에 대 한 XML 기반 프로젝트 파일을 만드는 방법을 알아봅니다. 프로젝트를 빌드한 후 빌드 프로세스를 사용자 지정 하는 방법을 배웁니다.
 
 이 연습에서는 다음 작업을 수행합니다.
 
-- 프로젝트에 대 한 c + + 소스 파일을 만드는 중입니다.
+- 프로젝트에 대 한 C++ 소스 파일을 만드는 중입니다.
 
 - XML MSBuild 프로젝트 파일을 만드는 중입니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "50677217"
 
 이 연습을 진행하려면 먼저 다음 작업을 수행해야 합니다.
 
-- Visual Studio의 복사본을 **c + +를 사용한 데스크톱 개발** 워크 로드가 설치 합니다.
+- Visual Studio의 복사본을 **C++를 사용한 데스크톱 개발** 워크 로드가 설치 합니다.
 
 - MSBuild 시스템의 전체적으로 이해 합니다.
 
@@ -41,11 +41,11 @@ ms.locfileid: "50677217"
 > [!NOTE]
 > 대부분의 하위 수준 빌드 지침에 포함 된 합니다 **.targets** 하 고 **.props** 속성에 저장 VCTargets 디렉터리에 정의 된 파일을 `$(VCTargetsPath)`. Visual Studio 2017 Enterprise Edition에서 이러한 파일에 대 한 기본 경로 c:\\프로그램 파일 (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Common7\\IDE\\ VC\\VCTargets\\합니다.
 
-## <a name="creating-the-c-source-files"></a>C + + 소스 파일 만들기
+## <a name="creating-the-c-source-files"></a>C++ 소스 파일 만들기
 
-이 연습에서는 소스 파일 및 헤더 파일을 지정 된 프로젝트를 만들어야 합니다. 원본 파일 main.cpp에는 콘솔 응용 프로그램의 main 함수가 포함 되어 있습니다. 헤더 파일 main.h iostream 헤더 파일을 포함 하는 코드를 포함 합니다. 만들 수 있습니다 이러한 c + + 파일 Visual Studio 또는 텍스트를 사용 하 여 Visual Studio Code 같은 편집기.
+이 연습에서는 소스 파일 및 헤더 파일을 지정 된 프로젝트를 만들어야 합니다. 원본 파일 main.cpp에는 콘솔 응용 프로그램의 main 함수가 포함 되어 있습니다. 헤더 파일 main.h iostream 헤더 파일을 포함 하는 코드를 포함 합니다. 만들 수 있습니다 이러한 C++ 파일 Visual Studio 또는 텍스트를 사용 하 여 Visual Studio Code 같은 편집기.
 
-### <a name="to-create-the-c-source-files-for-your-project"></a>프로젝트에 대 한 c + + 소스 파일을 만들려면
+### <a name="to-create-the-c-source-files-for-your-project"></a>프로젝트에 대 한 C++ 소스 파일을 만들려면
 
 1. 프로젝트에 대 한 디렉터리를 만듭니다.
 
@@ -75,7 +75,7 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
 
 - 세 개의 항목 그룹 태그 (`<ItemGroup>`) 프로젝트 구성 및 플랫폼, 소스 파일 이름 및 헤더 파일 이름을 지정 하는 합니다.
 
-- 3 개의 가져오기 태그 (`<Import>`)는 Microsoft Visual c + + 설정의 위치를 지정 합니다.
+- 3 개의 가져오기 태그 (`<Import>`)는 Microsoft Visual C++ 설정의 위치를 지정 합니다.
 
 - 속성 그룹 태그 (`<PropertyGroup>`)는 프로젝트 설정을 지정 합니다.
 
@@ -103,7 +103,7 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
     </ItemGroup>
     ```
 
-1. 다음 추가 `<Import>` 이 프로젝트에 대 한 기본 c + + 설정의 경로 지정 하는 요소:
+1. 다음 추가 `<Import>` 이 프로젝트에 대 한 기본 C++ 설정의 경로 지정 하는 요소:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.default.props" />
@@ -118,13 +118,13 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
     </PropertyGroup>
     ```
 
-1. 다음 추가 `<Import>` 이 프로젝트에 대 한 현재 c + + 설정의 경로 지정 하는 요소:
+1. 다음 추가 `<Import>` 이 프로젝트에 대 한 현재 C++ 설정의 경로 지정 하는 요소:
 
     ```xml
     <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
     ```
 
-1. 다음을 추가 합니다 `<ClCompile>` 자식 요소는 `<ItemGroup>` 요소입니다. 자식 요소에는 컴파일할 C/c + + 소스 파일의 이름을 지정 합니다.
+1. 다음을 추가 합니다 `<ClCompile>` 자식 요소는 `<ItemGroup>` 요소입니다. 자식 요소에는 컴파일할 C/C++ 소스 파일의 이름을 지정 합니다.
 
     ```xml
     <ItemGroup>
@@ -135,7 +135,7 @@ MSBuild 프로젝트 파일은 프로젝트 루트 요소를 포함 하는 XML �
    > [!NOTE]
    > `<ClCompile>` *빌드 대상을* 에 정의 된를 **VCTargets** 디렉터리입니다.
 
-1. 다음을 추가 합니다 `<ClInclude>` 자식 요소는 `<ItemGroup>` 요소입니다. C/c + + 소스 파일에 대 한 헤더 파일의 이름을 지정 하는 자식 요소:
+1. 다음을 추가 합니다 `<ClInclude>` 자식 요소는 `<ItemGroup>` 요소입니다. C/C++ 소스 파일에 대 한 헤더 파일의 이름을 지정 하는 자식 요소:
 
     ```xml
     <ItemGroup>
@@ -235,7 +235,7 @@ A *빌드 대상을* 는 명명 된 집합 빌드하는 동안 실행 될 수 �
 
 ### <a name="using-msbuild-with-the-64-bit-compiler-and-tools"></a>64 비트 컴파일러 및 도구를 사용 하 여 MSBuild를 사용 하 여
 
-Visual c + + 64 비트 Windows에서 기본적으로를 설치한 경우 64 비트 x64 네이티브 및 cross tools 설치 됩니다. 64 비트 컴파일러 및 도구를 설정 하 여 응용 프로그램을 빌드하는 데 MSBuild를 구성할 수 있습니다는 `PreferredToolArchitecture` 속성입니다. 이 속성은 프로젝트 구성 또는 플랫폼 속성에 영향을 주지 않습니다. 도구의 32 비트 버전은 기본적으로 사용 됩니다. 64 비트 버전의 컴파일러 및 도구를 지정 하려면 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일에 추가 합니다 `Microsoft.Cpp.default.props` \<가져오기 / > 요소:
+Visual C++ 64 비트 Windows에서 기본적으로를 설치한 경우 64 비트 x64 네이티브 및 cross tools 설치 됩니다. 64 비트 컴파일러 및 도구를 설정 하 여 응용 프로그램을 빌드하는 데 MSBuild를 구성할 수 있습니다는 `PreferredToolArchitecture` 속성입니다. 이 속성은 프로젝트 구성 또는 플랫폼 속성에 영향을 주지 않습니다. 도구의 32 비트 버전은 기본적으로 사용 됩니다. 64 비트 버전의 컴파일러 및 도구를 지정 하려면 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일에 추가 합니다 `Microsoft.Cpp.default.props` \<가져오기 / > 요소:
 
 ```xml
 <PropertyGroup>
@@ -249,7 +249,7 @@ Visual c + + 64 비트 Windows에서 기본적으로를 설치한 경우 64 비�
 
 ### <a name="using-msbuild-with-a-different-toolset"></a>다른 도구 집합과 함께 MSBuild 사용
 
-도구 집합과 라이브러리가 다른 버전의 Visual c + + 설치 된 경우 MSBuild는 현재 Visual c + + 버전 또는 설치 된 다른 버전에 대 한 응용 프로그램을 빌드할 수 있습니다. 예를 들어, Windows XP 용 Visual c + + 11.0 도구 집합을 지정 하려면 Visual Studio 2012를 설치한 경우 추가한 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일을 `Microsoft.Cpp.props` \<가져오기 / > 요소:
+도구 집합과 라이브러리가 다른 버전의 Visual C++ 설치 된 경우 MSBuild는 현재 Visual C++ 버전 또는 설치 된 다른 버전에 대 한 응용 프로그램을 빌드할 수 있습니다. 예를 들어, Windows XP 용 Visual C++ 11.0 도구 집합을 지정 하려면 Visual Studio 2012를 설치한 경우 추가한 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일을 `Microsoft.Cpp.props` \<가져오기 / > 요소:
 
 ```xml
 <PropertyGroup>
@@ -257,7 +257,7 @@ Visual c + + 64 비트 Windows에서 기본적으로를 설치한 경우 64 비�
 </PropertyGroup>
 ```
 
-Visual c + + 11.0 Windows XP 도구 집합을 사용 하 여 프로젝트를 다시 작성 하려면 다음 명령을 입력 합니다.
+Visual C++ 11.0 Windows XP 도구 집합을 사용 하 여 프로젝트를 다시 작성 하려면 다음 명령을 입력 합니다.
 
 `msbuild myproject.vcxproj /p:PlatformToolset=v110_xp /t:rebuild`
 
