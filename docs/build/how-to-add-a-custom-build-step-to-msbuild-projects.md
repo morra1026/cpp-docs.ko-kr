@@ -27,7 +27,7 @@ ms.locfileid: "50610979"
 
 ### <a name="to-define-what-is-executed-by-the-custom-build-step"></a>사용자 지정 빌드 단계에서 실행 될 작업을 정의 하려면
 
-1. 프로젝트 파일에 속성 그룹을 추가 합니다. 이 속성 그룹의 다음 예제에서와 같이 명령, 해당 입력 및 출력 및 메시지를 지정 합니다. 이 예제에서 만든 main.cpp 파일에서.cab 파일을 만듭니다 [연습: Visual c + + 프로젝트를 만들려면 MSBuild를 사용 하 여](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)입니다.
+1. 프로젝트 파일에 속성 그룹을 추가 합니다. 이 속성 그룹의 다음 예제에서와 같이 명령, 해당 입력 및 출력 및 메시지를 지정 합니다. 이 예제에서 만든 main.cpp 파일에서.cab 파일을 만듭니다 [연습: Visual C++ 프로젝트를 만들려면 MSBuild를 사용 하 여](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)입니다.
 
     ```
     <ItemDefinitionGroup>
