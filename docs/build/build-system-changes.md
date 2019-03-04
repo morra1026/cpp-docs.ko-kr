@@ -25,7 +25,7 @@ MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다
 
 ## <a name="vcproj-is-now-vcxproj"></a>.vcproj.vcxproj 되었습니다.
 
-프로젝트 파일에는 더 이상.vcproj 파일 확장명을 사용합니다. Visual Studio는 자동으로 현재 시스템에서 사용 되는 형식으로 이전 버전의 Visual c + +에서 생성 된 프로젝트 파일을 변환 합니다. 수동으로 프로젝트를 업그레이드 하는 방법에 대 한 자세한 내용은 참조 하세요. [/Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe)합니다.
+프로젝트 파일에는 더 이상.vcproj 파일 확장명을 사용합니다. Visual Studio는 자동으로 현재 시스템에서 사용 되는 형식으로 이전 버전의 Visual C++에서 생성 된 프로젝트 파일을 변환 합니다. 수동으로 프로젝트를 업그레이드 하는 방법에 대 한 자세한 내용은 참조 하세요. [/Upgrade (devenv.exe)](/visualstudio/ide/reference/upgrade-devenv-exe)합니다.
 
 현재 릴리스에서 프로젝트 파일의 파일 이름 확장명은.vcxproj입니다.
 
@@ -37,9 +37,9 @@ MSBuild 시스템은 Visual C++ 프로젝트를 빌드하는 데 사용됩니다
 
 ## <a name="custom-build-rules-and-rules-files"></a>사용자 지정 빌드 규칙 및.rules 파일
 
-이전 릴리스에서 *규칙 파일* 는.rules 파일 이름 확장명을 가진 XML 기반 파일입니다. 규칙 파일을 사용 하 여 사용자 지정 빌드 규칙을 정의 하 고 Visual c + + 프로젝트의 빌드 프로세스로 통합할 수 있습니다. 자세한 내용은 출력 파일 또는 하나 이상의 파일 이름 확장명을 사용 하 여 연결할 수 있습니다, 사용자 지정 빌드 규칙을 입력된 파일 하나를 만드는 도구에 전달할 수 있습니다.
+이전 릴리스에서 *규칙 파일* 는.rules 파일 이름 확장명을 가진 XML 기반 파일입니다. 규칙 파일을 사용 하 여 사용자 지정 빌드 규칙을 정의 하 고 Visual C++ 프로젝트의 빌드 프로세스로 통합할 수 있습니다. 자세한 내용은 출력 파일 또는 하나 이상의 파일 이름 확장명을 사용 하 여 연결할 수 있습니다, 사용자 지정 빌드 규칙을 입력된 파일 하나를 만드는 도구에 전달할 수 있습니다.
 
-이 릴리스에서 사용자 지정 빌드 규칙은 세 가지 파일 형식,.xml,.props, 및.rules 파일 대신.targets로 표시 됩니다. 패키지가 마이그레이션되면 이전 버전의 Visual c + +를 사용 하 여 만든.rules 파일로 현재 버전에 해당 하는.xml,.props 및.targets 파일 생성 되 고 원래.rules 파일과 함께 프로젝트에 저장 합니다.
+이 릴리스에서 사용자 지정 빌드 규칙은 세 가지 파일 형식,.xml,.props, 및.rules 파일 대신.targets로 표시 됩니다. 패키지가 마이그레이션되면 이전 버전의 Visual C++를 사용 하 여 만든.rules 파일로 현재 버전에 해당 하는.xml,.props 및.targets 파일 생성 되 고 원래.rules 파일과 함께 프로젝트에 저장 합니다.
 
 > [!IMPORTANT]
 >  현재 릴리스에서 IDE는 새로운 규칙 생성을 지원 하지 않습니다. 따라서 이전 버전의 Visual C++를 사용해서 생성된 프로젝트의 규칙 파일을 사용하는 가장 쉬운 방법은 프로젝트를 현재 버전으로 마이그레이션하는 방법입니다.
@@ -64,13 +64,13 @@ Property=<value>;$(MyProperty)
 
 때 **솔루션 탐색기** 필터 파일을 프로젝트에 파일을 추가 하는 데 사용 됩니다 (. vcxproj.filters) 위치를 정의 합니다 **솔루션 탐색기** 트리 보기는 파일이 추가 되는 파일 이름 확장명에 따라 합니다.
 
-## <a name="vc-directories-settings"></a>VC + + 디렉터리 설정
+## <a name="vc-directories-settings"></a>VC++ 디렉터리 설정
 
-Visual c + + 디렉터리 설정에 지정 된 된 [VC + + Directories Property Page](../ide/vcpp-directories-property-page.md)합니다. Visual Studio의 이전 릴리스에서 디렉터리 설정 사용자 단위를 적용 하 고 sysincl.dat 파일에 제외 된 디렉터리 목록을 지정 합니다.
+Visual C++ 디렉터리 설정에 지정 된 된 [VC++ Directories Property Page](../ide/vcpp-directories-property-page.md)합니다. Visual Studio의 이전 릴리스에서 디렉터리 설정 사용자 단위를 적용 하 고 sysincl.dat 파일에 제외 된 디렉터리 목록을 지정 합니다.
 
-실행 하는 경우에 VC + + 디렉터리 설정을 변경할 수 없습니다 [devenv /resetsettings](/visualstudio/ide/reference/resetsettings-devenv-exe) 명령줄에서. 도 변경할 수 없습니다 설정을 열면를 **도구** 메뉴에서 클릭 **설정 가져오기 및 내보내기**를 선택한 후는 **모든 설정 다시 설정** 옵션입니다.
+실행 하는 경우에 VC++ 디렉터리 설정을 변경할 수 없습니다 [devenv /resetsettings](/visualstudio/ide/reference/resetsettings-devenv-exe) 명령줄에서. 도 변경할 수 없습니다 설정을 열면를 **도구** 메뉴에서 클릭 **설정 가져오기 및 내보내기**를 선택한 후는 **모든 설정 다시 설정** 옵션입니다.
 
-Visual c + +의 이전 버전에서 만든.vssettings 파일의 VC + + 디렉터리 설정을 마이그레이션하십시오. 엽니다는 **도구** 메뉴에서 클릭 **설정 가져오기 및 내보내기**를 선택 **선택한 환경 설정 가져오기**, 마법사의 지시에 따릅니다. 처음으로 Visual Studio을 시작 하는 경우 또는 합니다 **기본 환경 설정 선택** 대화 상자에서 **이전 버전에서 적합 한 설정을 마이그레이션한 및 기본 설정 외에도 적용 아래 선택한**합니다.
+Visual C++의 이전 버전에서 만든.vssettings 파일의 VC++ 디렉터리 설정을 마이그레이션하십시오. 엽니다는 **도구** 메뉴에서 클릭 **설정 가져오기 및 내보내기**를 선택 **선택한 환경 설정 가져오기**, 마법사의 지시에 따릅니다. 처음으로 Visual Studio을 시작 하는 경우 또는 합니다 **기본 환경 설정 선택** 대화 상자에서 **이전 버전에서 적합 한 설정을 마이그레이션한 및 기본 설정 외에도 적용 아래 선택한**합니다.
 
 ## <a name="see-also"></a>참고 항목
 
