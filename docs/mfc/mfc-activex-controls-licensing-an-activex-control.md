@@ -11,12 +11,12 @@ helpviewer_keywords:
 - GetLicenseKey method [MFC]
 - licensing ActiveX controls
 ms.assetid: cacd9e45-701a-4a1f-8f1f-b0b39f6ac303
-ms.openlocfilehash: 35ca5d410f642f2557d9ee797eda2d9529f7f4d1
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: eda2ea08c6bd3526befb71c704aa20eba6935b04
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176361"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304628"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스
 
@@ -25,7 +25,7 @@ ms.locfileid: "52176361"
 > [!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
 
-이 문서에서는 다음 내용을 다룹니다.
+이 문서에서는 다음 토픽을 설명합니다.
 
 - [ActiveX 컨트롤 라이선스 개요](#_core_overview_of_activex_control_licensing)
 
@@ -122,8 +122,7 @@ ActiveX 컨트롤 마법사 컨트롤 헤더 파일에 다음 코드를 배치�
 
 추가 내용은 라이선스 문제에 대 한 라이선스 문제를 참조 하세요. [기존 ActiveX 컨트롤 업그레이드](../mfc/upgrading-an-existing-activex-control.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤 마법사](../mfc/reference/mfc-activex-control-wizard.md)
-

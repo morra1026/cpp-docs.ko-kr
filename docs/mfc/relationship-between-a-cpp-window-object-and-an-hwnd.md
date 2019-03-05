@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CWnd class [MFC], HWND
 - HWND, window objects [MFC]
 ms.assetid: f2e76340-6691-4ee6-9424-0345634a9469
-ms.openlocfilehash: fcd885fbaf7e81d68bcd51edc4b74c553f70578b
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 8cf8856be7166768c507932184e257cf69b0eb35
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176863"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305200"
 ---
 # <a name="relationship-between-a-c-window-object-and-an-hwnd"></a>C++ 창 개체와 HWND 간 관계
 
@@ -24,6 +24,6 @@ ms.locfileid: "52176863"
 ![CWnd 창 개체 및 결과 창](../mfc/media/vc37fj1.gif "CWnd 창 개체 및 결과 창") <br/>
 창 개체 및 Windows 창
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 개체](../mfc/window-objects.md)

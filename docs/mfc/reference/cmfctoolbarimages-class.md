@@ -140,17 +140,17 @@ helpviewer_keywords:
 - CMFCToolBarImages [MFC], PreMultiplyAlpha
 - CMFCToolBarImages [MFC], m_bDisableTrueColorAlpha
 ms.assetid: d4e50518-9ffc-406f-9996-f79e5cd38155
-ms.openlocfilehash: 21a8e6ed28498756130e6ddb418e93b0e9ad86cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bbd2a2d301646b4d3897d9fe4990bdfd1e48325b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662776"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303347"
 ---
 # <a name="cmfctoolbarimages-class"></a>CMFCToolBarImages 클래스
 
 도구 모음에서 이미지입니다. `CMFCToolBarImages` 클래스 파일에서 응용 프로그램 리소스에서 로드 하는 도구 모음 이미지를 관리 합니다.
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 ## <a name="syntax"></a>구문
 
 ```
@@ -234,7 +234,7 @@ class CMFCToolBarImages : public CObject
 |[CMFCToolBarImages::SmoothResize](#smoothresize)|밑줄이 그어진된 이미지를 원활 하 게 크기가 조정 됩니다.|
 |[CMFCToolBarImages::UpdateImage](#updateimage)|비트맵에서 사용자 정의 도구 모음 이미지를 업데이트합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -295,7 +295,7 @@ int AddIcon(
 ### <a name="parameters"></a>매개 변수
 
 *hIcon*<br/>
-[in] 추가 될 아이콘에 대 한 핸들입니다.
+[in] 추가할 아이콘에 대한 핸들입니다.
 
 *bAlphaBlend*<br/>
 [in] TRUE 이면이 아이콘은 알파 혼합; 사용 그렇지 않으면 FALSE입니다.
@@ -326,7 +326,7 @@ int AddImage(
 *bSetBitPerPixel*<br/>
 [in] True는 `CMFCToolBarImages` 개체가 새 이미지의 색 농도 (픽셀당 비트)를 사용 합니다. 경우에는 FALSE를 `CMFCToolbarImages` 개체는 현재 색 농도 유지 합니다.
 
-*ImageList*<br/>
+*imageList*<br/>
 [in] 에 대 한 참조를 `CMFCToolbarImages` 추가할 이미지를 포함 하는 개체입니다.
 
 *nIndex*<br/>
@@ -402,7 +402,7 @@ BOOL CreateFromImageList(const CImageList& imageList);
 
 ### <a name="parameters"></a>매개 변수
 
-*ImageList*<br/>
+*imageList*<br/>
 [in] 도구 모음 이미지에 대 한 원본으로 사용할 이미지 목록입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -482,7 +482,7 @@ BOOL Draw(
 *bHilite*<br/>
 [in] 이미지; 강조 표시 하는 경우 TRUE 그렇지 않으면 FALSE입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 이미지를 사용할 수 없는 스타일에 그릴 경우 TRUE입니다. 그렇지 않으면 FALSE입니다.
 
 *bIndeterminate*<br/>
@@ -893,7 +893,7 @@ BOOL Load(
 *hinstRes*<br/>
 [in] 리소스 DLL의 인스턴스입니다.
 
-*추가*<br/>
+*bAdd*<br/>
 [in] 기존 비트맵 이미지의 이름을 바꾸려면 로드 비트맵 또는 FALSE로 기존 비트맵을 추가 하려면 TRUE입니다.
 
 *lpszBmpFileName*<br/>
@@ -923,7 +923,7 @@ BOOL LoadStr(
 
 [in] *lpszResourceName*<br/>
 [in] *hinstRes*<br/>
-[in] *추가*<br/>
+[in] *bAdd*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -939,7 +939,7 @@ static COLORREF __stdcall MapFromSysColor(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *색*<br/>
+[in] *color*<br/>
 [in] *bUseRGBQUAD*<br/>
 
 ### <a name="return-value"></a>반환 값
@@ -975,7 +975,7 @@ static COLORREF __stdcall MapToSysColor(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *색*<br/>
+[in] *color*<br/>
 [in] *bUseRGBQUAD*<br/>
 
 ### <a name="return-value"></a>반환 값
@@ -990,7 +990,7 @@ static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *색*<br/>
+[in] *color*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -1180,7 +1180,7 @@ static void SetDisabledImageAlpha(BYTE nValue);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 값*<br/>
+*nValue*<br/>
 [in] 알파 채널의 새 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1195,7 +1195,7 @@ static void __stdcall SetFadedImageAlpha(BYTE nValue);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *n 값*<br/>
+[in] *nValue*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1226,7 +1226,7 @@ void SetLightPercentage(int nValue);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *n 값*<br/>
+[in] *nValue*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1250,7 +1250,7 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *한*<br/>
+[in] *bAuto*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1381,7 +1381,7 @@ BOOL SmoothResize(double dblImageScale);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

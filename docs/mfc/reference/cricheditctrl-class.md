@@ -152,12 +152,12 @@ helpviewer_keywords:
 - CRichEditCtrl [MFC], StreamOut
 - CRichEditCtrl [MFC], Undo
 ms.assetid: 2be52788-822c-4c27-aafd-2471231e74eb
-ms.openlocfilehash: c42f7b77c04b2c94923908fa8b9542bea313b154
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: ca6185e7ee41726c7bf583056cb66eeb1be7021c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178995"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303436"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl 클래스
 
@@ -271,7 +271,7 @@ class CRichEditCtrl : public CWnd
 
 Rich edit 컨트롤을 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -635,7 +635,7 @@ DWORD FindWordBreak(
 *nCode*<br/>
 수행할 동작을 나타냅니다. 가능한 값 목록을 참조 매개 변수에 대 한 설명을 *코드* EM_FINDWORDBREAK Windows sdk에서에 있습니다.
 
-*n %n 시작*<br/>
+*nStart*<br/>
 시작할 0부터 시작 문자 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1204,7 +1204,7 @@ int GetTextRange(
 *nFirst*<br/>
 범위에서 첫 번째 문자 바로 앞에 문자 위치 인덱스입니다.
 
-*n 마지막*<br/>
+*nLast*<br/>
 범위에서 마지막 문자 바로 다음의 문자 위치입니다.
 
 *refString*<br/>
@@ -1343,7 +1343,7 @@ int LineIndex(int nLine = -1) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n 줄*<br/>
+*nLine*<br/>
 편집 컨트롤의 텍스트에서 원하는 줄의 인덱스 값을 포함 하거나-1을 포함 합니다. 하는 경우 *n 줄* 은-1, 캐럿을 포함 하는 줄, 현재 줄을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1370,7 +1370,7 @@ int LineLength(int nLine = -1) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n 줄*<br/>
+*nLine*<br/>
 줄 길이 검색할 문자의 문자 인덱스를 지정 합니다. 이 매개 변수가-1 인 경우 줄 내의 텍스트 선택의 길이 제외한, 현재 줄 (캐럿을 포함 하는 줄)의 길이가 반환 됩니다. 때 `LineLength` 라고 단일 줄 편집 컨트롤의 경우이 매개 변수가 무시 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1477,7 +1477,7 @@ CPoint PosFromChar(UINT nChar) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 문자의 0부터 시작 하는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2196,10 +2196,10 @@ BOOL Undo();
 
   예를 참조 하세요 [CanUndo](#canundo)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CRichEditView 클래스](../../mfc/reference/cricheditview-class.md)

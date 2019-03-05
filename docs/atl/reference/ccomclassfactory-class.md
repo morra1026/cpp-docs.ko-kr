@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactory class
 ms.assetid: e56dacf7-d5c4-4c42-aef4-a86d91981a1b
-ms.openlocfilehash: 61dd67a4a34be447807799537971c19c11d09e5e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85ef287a905abc7b3151628c0f5dc29b9050b187
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575229"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326565"
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory 클래스
 
@@ -92,7 +92,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 ### <a name="parameters"></a>매개 변수
 
-*떼*<br/>
+*fLock*<br/>
 [in] TRUE 인 경우 잠금 수가 증가 하 고, 그렇지 않으면, 잠금 수가 감소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -105,7 +105,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 호출 `LockServer` 클라이언트가 여러 개체를 신속 하 게 만들 수 있도록 클래스 팩터리를 점유 하는 데 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>

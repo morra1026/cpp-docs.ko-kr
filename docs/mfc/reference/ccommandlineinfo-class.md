@@ -28,16 +28,16 @@ helpviewer_keywords:
 - CCommandLineInfo [MFC], m_strPrinterName
 - CCommandLineInfo [MFC], m_strRestartIdentifier
 ms.assetid: 3e313ddb-0a82-4991-87ac-a27feff4668c
-ms.openlocfilehash: 60c0ae66234d5fb3be61d9249cf61ee77dff41ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e4b535da00fdcecf4ce52fad696cb5d2bc55efa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481473"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303029"
 ---
 # <a name="ccommandlineinfo-class"></a>CCommandLineInfo 클래스
 
-응용 프로그램을 시작할 때 명령줄을 구문 분석하는 데 유용합니다.
+애플리케이션을 시작할 때 명령줄을 구문 분석하는 데 유용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -82,14 +82,14 @@ MFC 응용 프로그램에서이 클래스의 로컬 인스턴스를 만듭니�
 |명령줄 인수|명령 실행|
 |----------------------------|----------------------|
 |*app*|새 파일입니다.|
-|*앱* 파일 이름|파일을 엽니다.|
-|*앱* `/p` 파일 이름|파일이 기본 프린터로 인쇄 됩니다.|
+|*app* filename|파일을 엽니다.|
+|*app* `/p` filename|파일이 기본 프린터로 인쇄 됩니다.|
 |*앱* `/pt` filename 프린터 드라이버 포트|파일을 지정 된 프린터로 인쇄 합니다.|
-|*앱* `/dde`|시작 되 고 await DDE 명령입니다.|
-|*앱* `/Automation`|OLE 자동화 서버를 시작 합니다.|
-|*앱* `/Embedding`|포함된 OLE 항목 편집을 시작 합니다.|
-|*앱* `/Register`<br /><br /> *앱* `/Regserver`|모든 등록 작업을 수행 하는 응용 프로그램을 알립니다.|
-|*앱* `/Unregister`<br /><br /> *앱* `/Unregserver`|등록 취소 작업을 수행 하려면 응용 프로그램을 알립니다.|
+|*app* `/dde`|시작 되 고 await DDE 명령입니다.|
+|*app* `/Automation`|OLE 자동화 서버를 시작 합니다.|
+|*app* `/Embedding`|포함된 OLE 항목 편집을 시작 합니다.|
+|*app* `/Register`<br /><br /> *app* `/Regserver`|모든 등록 작업을 수행 하는 응용 프로그램을 알립니다.|
+|*app* `/Unregister`<br /><br /> *app* `/Unregserver`|등록 취소 작업을 수행 하려면 응용 프로그램을 알립니다.|
 
 새 클래스를 파생 `CCommandLineInfo` 다른 플래그와 매개 변수 값을 처리 하도록 합니다. 재정의 [ParseParam](#parseparam) 새 플래그를 처리할 수 있습니다.
 
@@ -293,7 +293,7 @@ virtual void ParseParam(
 *bFlag*<br/>
 나타냅니다 여부 *pszParam* 매개 변수 또는 플래그입니다.
 
-*블 래 스 트*<br/>
+*bLast*<br/>
 마지막 매개 변수 또는 명령줄에서 플래그 인지 여부를 나타냅니다.
 
 ### <a name="remarks"></a>설명
@@ -305,14 +305,14 @@ virtual void ParseParam(
 |명령줄 인수|명령 실행|
 |----------------------------|----------------------|
 |*app*|새 파일입니다.|
-|*앱* 파일 이름|파일을 엽니다.|
-|*앱* `/p` 파일 이름|파일이 기본 프린터로 인쇄 됩니다.|
+|*app* filename|파일을 엽니다.|
+|*app* `/p` filename|파일이 기본 프린터로 인쇄 됩니다.|
 |*앱* `/pt` filename 프린터 드라이버 포트|파일을 지정 된 프린터로 인쇄 합니다.|
-|*앱* `/dde`|시작 되 고 await DDE 명령입니다.|
-|*앱* `/Automation`|OLE 자동화 서버를 시작 합니다.|
-|*앱* `/Embedding`|포함된 OLE 항목 편집을 시작 합니다.|
-|*앱* `/Register`<br /><br /> *앱* `/Regserver`|모든 등록 작업을 수행 하는 응용 프로그램을 알립니다.|
-|*앱* `/Unregister`<br /><br /> *앱* `/Unregserver`|등록 취소 작업을 수행 하려면 응용 프로그램을 알립니다.|
+|*app* `/dde`|시작 되 고 await DDE 명령입니다.|
+|*app* `/Automation`|OLE 자동화 서버를 시작 합니다.|
+|*app* `/Embedding`|포함된 OLE 항목 편집을 시작 합니다.|
+|*app* `/Register`<br /><br /> *app* `/Regserver`|모든 등록 작업을 수행 하는 응용 프로그램을 알립니다.|
+|*app* `/Unregister`<br /><br /> *app* `/Unregserver`|등록 취소 작업을 수행 하려면 응용 프로그램을 알립니다.|
 
 이 정보에 저장 됩니다 [m_bRunAutomated](#m_brunautomated)하십시오 [m_bRunEmbedded](#m_brunembedded), 및 [m_nShellCommand](#m_nshellcommand)합니다. 슬래시 플래그 중 하나에서 표시 된 ' **/**'또는 하이픈' **-**'.
 
@@ -322,10 +322,9 @@ virtual void ParseParam(
 
 다른 플래그와 매개 변수 값을 처리 하려면 파생된 클래스에서이 함수를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline)<br/>
 [CWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand)
-

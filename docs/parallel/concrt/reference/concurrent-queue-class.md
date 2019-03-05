@@ -16,16 +16,18 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_queue class
 ms.assetid: c2218996-d0ea-40e9-b002-e9a15b085f51
-ms.openlocfilehash: 36e4b5956e0739b44481fbabe6114c9648e7b229
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d5bbd361dc2dedc24c2a59050ffa680517186494
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477092"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304693"
 ---
 # <a name="concurrentqueue-class"></a>concurrent_queue 클래스
 
-`concurrent_queue` 클래스는 해당 요소에 대해 선입 선출 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. `push` 및 `try_pop`과 같은 동시성으로부터 안전한 작업의 제한된 집합을 사용할 수 있게 합니다.
+
+  `concurrent_queue` 클래스는 해당 요소에 대해 선입 선출 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. 
+  `push` 및 `try_pop`과 같은 동시성으로부터 안전한 작업의 제한된 집합을 사용할 수 있게 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -81,7 +83,7 @@ class concurrent_queue: public ::Concurrency::details::_Concurrent_queue_base_v4
 
 자세한 내용은 [병렬 컨테이너 및 개체](../../../parallel/concrt/parallel-containers-and-objects.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `concurrent_queue`
 
@@ -131,10 +133,10 @@ concurrent_queue(_InputIterator _Begin,
 *_OtherQ*<br/>
 요소를 복사해 오거나 이동해 올 소스 `concurrent_queue` 개체입니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -157,7 +159,7 @@ concurrent_queue(_InputIterator _Begin,
 ~concurrent_queue();
 ```
 
-##  <a name="empty"></a> 빈
+##  <a name="empty"></a> empty
 
 지금은 동시 큐가 비어 있는지 테스트가이 메서드가 호출 됩니다. 이 메서드는 동시성이 보장 합니다.
 
@@ -185,7 +187,7 @@ allocator_type get_allocator() const;
 
 동시 큐를 생성 하는 데 사용 되는 할당자 복사본입니다.
 
-##  <a name="push"></a> 푸시
+##  <a name="push"></a> push
 
 동시 큐의 끝부분에 있는 항목 큐에 넣습니다. 이 메서드는 동시성이 보장 합니다.
 
@@ -279,6 +281,6 @@ size_type unsafe_size() const;
 
 `unsafe_size` 동시성 으로부터 안전한 아니며 메서드 호출을 동시에 호출 하는 경우에 잘못 된 결과 생성할 수 있습니다 `push`하십시오 `try_pop`, 및 `empty`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

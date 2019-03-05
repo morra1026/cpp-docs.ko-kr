@@ -1,4 +1,4 @@
-﻿---
+---
 title: '방법: 다양 한 문자열 형식 간 변환'
 ms.custom: get-started-article
 ms.date: 11/04/2016
@@ -7,16 +7,16 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-ms.openlocfilehash: 549fd0409929beaefd24cceaa91370bb1df41aa0
-ms.sourcegitcommit: cce52b2232b94ce8fd8135155b86e2d38a4e4562
+ms.openlocfilehash: 83a652192d2d9055fddffdec96eb91a2ebdd68a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54031254"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304225"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>방법: 다양 한 문자열 형식 간 변환
 
-이 항목에서는 Visual C++에서의 다양한 문자열 형식을 다른 형식으로 변환하는 방법에 대해 설명하며 `char*`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md) 및 <xref:System.String?displayProperty=fullName> 문자열 형식 변환을 다룹니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
+이 항목에서는 다양 한 Visual c + + 문자열 형식을 다른 문자열로 변환 하는 방법에 설명 합니다. 적용 되는 문자열 형식 포함 `char *`, `wchar_t*`를 [_bstr_t](../cpp/bstr-t-class.md)를 [CComBSTR](../atl/reference/ccombstr-class.md)를 [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), 및 <xref:System.String?displayProperty=fullName>합니다. 모든 예제에서 새 형식으로 변환 시 문자열에 대한 복사본이 만들어집니다. 새 문자열의 변경 사항은 원래 문자열에서 영향을 주지 않고, 그 반대의 경우도 마찬가지입니다.
 
 ## <a name="converting-from-char-"></a>char\*에서 변환
 
@@ -24,7 +24,7 @@ ms.locfileid: "54031254"
 
 ### <a name="description"></a>설명
 
-이 예제에서는 `char*` 형식의 문자열을 위에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. C 스타일 문자열이라고 하는 `char*` 형식의 문자열은 null 문자를 사용하여 문자열의 끝을 나타냅니다. C 스타일 문자열은 대개 문자당 1바이트가 필요하지만 2바이트를 사용할 수도 있습니다. 아래 예에서는 `char*` 문자열이 유니코드 문자열에서 변환된 문자열 데이터로, 멀티바이트 문자열이 됩니다. `char*` 문자열은 싱글바이트 및 멀티바이트 문자(`MBCS`) 함수에서 사용할 수 있습니다.
+이 예제에서는 `char *` 형식의 문자열을 위에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. C 스타일 문자열이라고 하는 `char *` 형식의 문자열은 null 문자를 사용하여 문자열의 끝을 나타냅니다. C 스타일 문자열은 대개 문자당 1바이트가 필요하지만 2바이트를 사용할 수도 있습니다. 아래 예에서는 `char *` 문자열이 유니코드 문자열에서 변환된 문자열 데이터로, 멀티바이트 문자열이 됩니다. `char *` 문자열은 싱글바이트 및 멀티바이트 문자(`MBCS`) 함수에서 사용할 수 있습니다.
 
 ### <a name="code"></a>코드
 
@@ -125,7 +125,7 @@ Hello, World! (System::String)
 
 ### <a name="description"></a>설명
 
-이 예제에서는 `wchar_t*` 형식의 문자열을 위에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `wchar_t *`를 비롯한 일부 문자열 형식은 와이드 문자 형식을 구현합니다. 문자열을 멀티 바이트와 와이드 문자 형식 간 변환하려면 `mbstowcs_s`와 같은 단일 함수 호출이나 `CStringA`와 같은 클래스에 대한 생성자 호출을 사용할 수 있습니다.
+이 예제에서는 `wchar_t *` 형식의 문자열을 위에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. 여러 문자열을 비롯 한 형식 `wchar_t *`, 와이드 문자 형식을 구현 합니다. 멀티 바이트 및 와이드 문자 형식 간에 문자열을 변환 하려면 같은 단일 함수 호출을 사용할 수 있습니다 `mbstowcs_s` 클래스에 대 한 생성자 호출 하거나 `CStringA`합니다.
 
 ### <a name="code"></a>코드
 
@@ -152,8 +152,8 @@ int main()
     wcout << orig << _T(" (wchar_t *)") << endl;
 
     // Convert the wchar_t string to a char* string. Record
-    //.the length of the original string and add 1 to it to
-    //.account for the terminating null character.
+    // the length of the original string and add 1 to it to
+    // account for the terminating null character.
     size_t origsize = wcslen(orig) + 1;
     size_t convertedChars = 0;
 
@@ -198,7 +198,7 @@ int main()
         cout << printstr << endl;
         // The following line of code is an easier way to
         // display wide character strings:
-        // wcout << (LPCTSTR) ccombstr << endl;
+        wcout << (LPCTSTR) ccombstr << endl;
     }
 
     // Convert a wide wchar_t string to a multibyte CStringA,
@@ -349,7 +349,7 @@ Hello, World! (System::String)
 
 ### <a name="description"></a>설명
 
-이 예제에서는 `CComBSTR` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CComBSTR`은 `_bstr_t`와 같이 와이드 문자 기반 `BSTR` 문자열을 캡슐화합니다. `BSTR` 문자열은 길이 값을 가지고 있고, 문자열의 끝을 표현하는 데 null 문자를 사용하지는 않습니다. 따라서 변환될 문자열 형식은 문자열 끝 표현을 위한 null 문자 추가가 필요할 수 있습니다.
+이 예제에서는 `CComBSTR` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CComBSTR`은 _bstr_t 와 같이 와이드 문자 기반 BSTR 문자열을 캡슐화합니다. BSTR 문자열은 길이 값을 가지고 있고, 문자열의 끝을 표현하는 데 null 문자를 사용하지는 않습니다. 따라서 변환될 문자열 형식은 문자열 끝 표현을 위한 null 문자 추가가 필요할 수 있습니다.
 
 ### <a name="code"></a>코드
 
@@ -459,7 +459,7 @@ Hello, World! (System::String)
 
 ### <a name="description"></a>설명
 
-이 예제에서는 `CString` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CString`은 `_UNICODE` 기호의 정의 여부에 따라 형식이 달라지는 TCHAR 데이터 형식 기반의 문자열입니다. `TCHAR`는 `_UNICODE`가 정의되어 있지 않다면 `char`로 정의되어 `CString`에는 멀티바이트 문자열이 포함됩니다. `_UNICODE`가 정의되었다면 `TCHAR`는 `wchar_t`로 정의되며 `CString`은 와이드 문자열을 포함합니다.
+이 예제에서는 `CString` 형식의 문자열을 처음에 나열된 다른 문자열 형식으로 변환하는 방법을 보여줍니다. `CString`은 `_UNICODE` 기호의 정의 여부에 따라 형식이 달라지는 TCHAR 데이터 형식 기반의 문자열입니다. `TCHAR`는 `_UNICODE`가 정의되어 있지 않다면 char로 정의되어 `CString`에는 멀티바이트 문자열이 포함됩니다. `_UNICODE`가 정의되었다면 `TCHAR`는 `wchar_t`로 정의되며 `CString`은 와이드 문자열을 포함합니다.
 
 `CStringA`는 `CString`의 멀티바이트 기반 전용 문자열이며 `CStringW`는 와이드 기반 전용 문자열입니다. `CStringA`와 `CStringW`는 `_UNICODE`의 정의 여부에 따라 컴파일 시 기반 형식이 달라지지 않습니다. 이 예제에서 `CStringA`와 `CStringW`는, 버퍼 크기 할당이나 출력을 올바르게 처리하기 위한 사소한 차이점을 명확하게 하기 위해 사용됩니다.
 
@@ -525,7 +525,7 @@ int main()
     bstrt += _T(" (_bstr_t)");
     wcout << bstrt << endl;
 
-    // Convert to a wide character_bstr_t string from
+    // Convert to a wide character _bstr_t string from
     // a wide character CStringW string.
     bstr_t bstrtw(origw);
     bstrtw += " (_bstr_t)";
@@ -545,8 +545,8 @@ int main()
     // Convert to a wide character CComBSTR string from
     // a wide character CStringW string.
     CComBSTR ccombstrw(origw);
+    
     // Append the type of string to it, and display the result.
-
     if (ccombstrw.Append(_T(" (CComBSTR)")) == S_OK)
     {
         CW2A printstrw(ccombstrw);
@@ -628,7 +628,7 @@ int main()
     string orig("Hello, World!");
     cout << orig << " (basic_string)" << endl;
 
-    // Convert a wide char basic_string string to a multibyte char*
+    // Convert a wide character basic_string string to a multibyte char*
     // string. To be safe, we allocate two bytes for each character
     // in the original string, including the terminating null.
     const size_t newsize = (strlen(orig.c_str()) + 1)*2;
@@ -804,8 +804,8 @@ Hello, World! (basic_string)
 
 [ATL 및 MFC 문자열 변환 매크로](../atl/reference/string-conversion-macros.md)<br/>
 [C 스타일 문자열 관련 CString 작업](../atl-mfc-shared/cstring-operations-relating-to-c-style-strings.md)<br/>
-[방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
-[방법: System:: string을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
+[방법: 표준 문자열을 System::String으로 변환](../dotnet/how-to-convert-standard-string-to-system-string.md)<br/>
+[방법: System::String을 표준 문자열로 변환](../dotnet/how-to-convert-system-string-to-standard-string.md)<br/>
 [방법: 방법: System::String을 wchar_t* 또는 char*로\*](../dotnet/how-to-convert-system-string-to-wchar-t-star-or-char-star.md)<br/>
 [CComBSTR을 사용한 프로그래밍](../atl/programming-with-ccombstr-atl.md)<br/>
 [mbstowcs_s, _mbstowcs_s_l](../c-runtime-library/reference/mbstowcs-s-mbstowcs-s-l.md)<br/>

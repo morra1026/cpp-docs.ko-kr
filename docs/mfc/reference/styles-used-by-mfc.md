@@ -196,12 +196,12 @@ helpviewer_keywords:
 - WS_EX_TRANSPARENT constant [MFC]
 - WS_EX_WINDOWEDGE constant [MFC]
 ms.assetid: d3b9af37-31b5-4c97-a8ad-189fd724b04c
-ms.openlocfilehash: b47fa90fff6753b805d7fd0495050e45bc915d5d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: eb5123c347fdb847cade54f15764f175ee0ab799
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694779"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304901"
 ---
 # <a name="styles-used-by-mfc"></a>MFC에서 사용하는 스타일
 
@@ -217,11 +217,11 @@ ms.locfileid: "51694779"
 
 |형식|설명|
 |----------|-----------------|
-|BS_3STATE|세 가지 상태의 확인란 단추를 만듭니다: BST_CHECKED, BST_INDETERMINATE, 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 단추의 상태를 변경 하지 않습니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
-|BS_AUTO3STATE|세 가지 상태의 확인란 단추를 만듭니다: BST_CHECKED, BST_INDETERMINATE, 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내고 단추의 상태를 변경 합니다. 단추는 BST_CHECKED, BST_INDETERMINATE, 및 BST_UNCHECKED 순으로 주기를 알려 줍니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
-|BS_AUTOCHECKBOX|두 가지 상태의 확인란 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내고 단추의 상태를 변경 합니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
-|BS_AUTORADIOBUTTON|두 가지 상태의 라디오 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 라디오 단추는 일반적으로 각 그룹에 최대 한 번에 하나의 선택된 옵션을 사용 하 여 그룹에 사용 됩니다. 단추를 클릭 하 BN_CLICKED 알림을 소유자 창에 전송, BST_CHECKED에 라디오 단추의 상태를 설정 하 고 BST_UNCHECKED 단추 그룹의 다른 모든 라디오 단추의 상태를 설정 합니다. 기본적으로 관련된 텍스트가 라디오 단추 오른쪽에 표시 됩니다. 라디오 단추의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
-|BS_CHECKBOX|두 가지 상태의 확인란 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 단추의 상태를 변경 하지 않습니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
+|BS_3STATE|세 가지 상태를 사용 하 여 확인란 단추를 만듭니다. BST_CHECKED BST_INDETERMINATE, 하며 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 단추의 상태를 변경 하지 않습니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
+|BS_AUTO3STATE|세 가지 상태를 사용 하 여 확인란 단추를 만듭니다. BST_CHECKED BST_INDETERMINATE, 하며 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내고 단추의 상태를 변경 합니다. 단추는 BST_CHECKED, BST_INDETERMINATE, 및 BST_UNCHECKED 순으로 주기를 알려 줍니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
+|BS_AUTOCHECKBOX|두 가지 상태의 확인란 단추를 만듭니다. BST_CHECKED 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내고 단추의 상태를 변경 합니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
+|BS_AUTORADIOBUTTON|두 가지 상태의 라디오 단추를 만듭니다. BST_CHECKED 및 BST_UNCHECKED 합니다. 라디오 단추는 일반적으로 각 그룹에 최대 한 번에 하나의 선택된 옵션을 사용 하 여 그룹에 사용 됩니다. 단추를 클릭 하 BN_CLICKED 알림을 소유자 창에 전송, BST_CHECKED에 라디오 단추의 상태를 설정 하 고 BST_UNCHECKED 단추 그룹의 다른 모든 라디오 단추의 상태를 설정 합니다. 기본적으로 관련된 텍스트가 라디오 단추 오른쪽에 표시 됩니다. 라디오 단추의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
+|BS_CHECKBOX|두 가지 상태의 확인란 단추를 만듭니다. BST_CHECKED 및 BST_UNCHECKED 합니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 단추의 상태를 변경 하지 않습니다. 기본적으로 관련된 텍스트가 확인란 오른쪽에 표시 됩니다. 확인란의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
 |BS_COMMANDLINK|명령 링크 단추를 만듭니다. 명령 링크 단추에는 기본 텍스트와 고 메인 텍스트 아래 메모의 왼쪽에 녹색 화살표를 표시 하는 Windows Vista 관련 명령 단추가입니다. 사용 하 여 메모 텍스트를 설정할 수 있습니다 [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote)합니다.|
 |BS_DEFCOMMANDLINK|명령 링크 단추를 만듭니다. 명령 링크 단추에는 기본 텍스트와 고 메인 텍스트 아래 메모의 왼쪽에 녹색 화살표를 표시 하는 Windows Vista 관련 명령 단추가입니다. 사용 하 여 메모 텍스트를 설정할 수 있습니다 [CButton::SetNote](../../mfc/reference/cbutton-class.md#setnote)합니다. 대화 상자에 단추가 경우 ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자 단추에 입력된 포커스가 없는 경우에 합니다.|
 |BS_DEFPUSHBUTTON|두꺼운 검정 테두리가 있는 명령 단추를 만듭니다. 대화 상자에 단추가 경우 ENTER 키를 눌러 BN_CLICKED에 알림을 보냅니다 대화 상자 단추에 입력된 포커스가 없는 경우에 합니다.|
@@ -229,7 +229,7 @@ ms.locfileid: "51694779"
 |BS_GROUPBOX|다른 단추를 그룹화 할 수 있습니다 사각형을 만듭니다. 이 스타일과 관련 된 텍스트 사각형의 왼쪽 위 모퉁이에 표시 됩니다.|
 |BS_OWNERDRAW|소유자가 그린 단추를 만듭니다. 프레임 워크 호출을 `DrawItem` 메서드 버튼의 시각적 측면이 변경 되었습니다. 사용 하는 경우이 스타일을 설정 해야 합니다는 `CBitmapButton` 클래스입니다.|
 |BS_PUSHBUTTON|사용자 단추를 클릭할 때 BN_CLICKED 알림이 소유자 창에 보내는 명령 단추를 만듭니다.|
-|BS_RADIOBUTTON|두 가지 상태의 라디오 단추를 만듭니다: BST_CHECKED 및 BST_UNCHECKED 합니다. 라디오 단추는 일반적으로 각 그룹에 최대 한 번에 하나의 선택된 옵션을 사용 하 여 그룹에 사용 됩니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 그룹에 있는 단추의 상태가 자동으로 변경 되지 않습니다. 기본적으로 관련된 텍스트가 라디오 단추 오른쪽에 표시 됩니다. 라디오 단추의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
+|BS_RADIOBUTTON|두 가지 상태의 라디오 단추를 만듭니다. BST_CHECKED 및 BST_UNCHECKED 합니다. 라디오 단추는 일반적으로 각 그룹에 최대 한 번에 하나의 선택된 옵션을 사용 하 여 그룹에 사용 됩니다. 단추를 클릭 하면 소유자 창에 BN_CLICKED 알림을 보내지만 그룹에 있는 단추의 상태가 자동으로 변경 되지 않습니다. 기본적으로 관련된 텍스트가 라디오 단추 오른쪽에 표시 됩니다. 라디오 단추의 왼쪽에 텍스트를 표시 하려면 BS_LEFTTEXT 또는 BS_RIGHTBUTTON 스타일을 사용 합니다.|
 |BS_SPLITBUTTON|분할 단추를 만듭니다. 분할 단추에는 드롭다운 화살표 옆의 단추가 포함 된 Windows Vista 관련 명령 단추가입니다. 단추를 클릭 하면 기본 명령이 실행 됩니다. 드롭다운 화살표를 클릭 하면 추가 명령이 메뉴에 표시 됩니다.|
 |BS_USERBUTTON|사용 되지는 않지만, 16 비트 버전 Windows의 호환성을 제공 합니다. Win32 기반 응용 프로그램 BS_OWNERDRAW를 대신 사용 해야 합니다.|
 
@@ -286,10 +286,10 @@ ms.locfileid: "51694779"
 |CBS_DISABLENOSCROLL|목록 상자는 비활성화 된 세로 스크롤 막대가 목록 상자에 스크롤할 충분 한 항목이 없습니다 보여 줍니다. 이 스타일을 사용하지 않으면 목록 상자에 충분한 항목이 포함되지 않은 경우 스크롤 막대가 숨겨집니다.|
 |CBS_DROPDOWN|비슷합니다 CBS_SIMPLE를 제외 하 고 사용자가 편집 컨트롤 옆에 있는 아이콘을 선택 하지 않으면 목록 상자가 표시 되지 않습니다.|
 |CBS_DROPDOWNLIST|편집 컨트롤이 대체 한다는 점을 제외 하면 CBS_DROPDOWN, 유사한 정적 텍스트 항목으로 표시 하는 현재 선택 목록 상자입니다.|
-|CBS_HASSTRINGS|소유자 그리기 콤보 상자를 문자열로 구성 된 항목을 포함 합니다. 콤보 상자는 응용 프로그램에서 `GetText` 멤버 함수를 사용하여 특정 항목에 대한 텍스트를 검색할 수 있도록 문자열에 대한 포인터 및 메모리를 유지합니다.|
+|CBS_HASSTRINGS|소유자 그리기 콤보 상자를 문자열로 구성 된 항목을 포함 합니다. 콤보 상자는 애플리케이션에서 `GetText` 멤버 함수를 사용하여 특정 항목에 대한 텍스트를 검색할 수 있도록 문자열에 대한 포인터 및 메모리를 유지합니다.|
 |CBS_LOWERCASE|선택 필드와 목록의 모든 텍스트를 소문자로 변환.|
 |CBS_NOINTEGRALHEIGHT|콤보 상자의 크기가 콤보 상자를 만들 때 응용 프로그램에서 지정 된 크기를 정확 하 게 지정 합니다. 일반적으로 Windows에서는 콤보 상자에 특정 항목이 표시되지 않도록 콤보 상자의 크기를 지정합니다.|
-|CBS_OEMCONVERT|콤보 상자 편집 컨트롤에 입력 한 텍스트가 ANSI 문자 집합에서 OEM 문자 집합 및 다음 다시 ANSI로 변환 됩니다. 따라서 응용 프로그램이 콤보 상자의 ANSI 문자열을 OEM 문자로 변환하기 위해 `AnsiToOem` Windows 함수를 호출할 때 문자가 적절히 변환됩니다. 이 스타일 콤보 상자 파일 이름을 포함 하는 데 유용 하 고 CBS_SIMPLE 또는 CBS_DROPDOWN 스타일으로 만들어진 콤보 상자에만 적용 됩니다.|
+|CBS_OEMCONVERT|콤보 상자 편집 컨트롤에 입력 한 텍스트가 ANSI 문자 집합에서 OEM 문자 집합 및 다음 다시 ANSI로 변환 됩니다. 따라서 애플리케이션이 콤보 상자의 ANSI 문자열을 OEM 문자로 변환하기 위해 `AnsiToOem` Windows 함수를 호출할 때 문자가 적절히 변환됩니다. 이 스타일 콤보 상자 파일 이름을 포함 하는 데 유용 하 고 CBS_SIMPLE 또는 CBS_DROPDOWN 스타일으로 만들어진 콤보 상자에만 적용 됩니다.|
 |CBS_OWNERDRAWFIXED|목록 상자의 소유자가 해당 내용 그리기를 담당 목록 상자 항목은 높이가 모두 같습니다.|
 |CBS_OWNERDRAWVARIABLE|목록 상자의 소유자가 해당 내용 그리기를 담당 목록 상자의 항목은 높이가 가변적입니다.|
 |CBS_SIMPLE|목록 상자 항상 표시 됩니다. 목록 상자에서 현재 선택된 항목이 편집 컨트롤에 표시됩니다.|
@@ -360,12 +360,12 @@ ms.locfileid: "51694779"
 
 |스타일|설명|
 |-----------|-----------------|
-|MB_ABORTRETRYIGNORE|메시지 상자에 3 개의 누름: 무시 하 고 다시 시도 중단 합니다.|
-|MB_OK|메시지 상자에 하나의 pushbutton: 확인 합니다.|
-|MB_OKCANCEL|메시지 상자에 두 누름: 확인을 취소 합니다.|
-|MB_RETRYCANCEL|메시지 상자에 두 누름: 다시 시도 및 취소 합니다.|
-|MB_YESNO|메시지 상자에 두 누름: 예 및 아니요입니다.|
-|MB_YESNOCANCEL|메시지 상자에 3 개의 누름: 예, 아니요 및 취소 합니다.|
+|MB_ABORTRETRYIGNORE|메시지 상자에 3 개의 누름 단추: 중단 하 고 다시 시도 무시 합니다.|
+|MB_OK|메시지 상자 누름 단추 하나를 포함합니다. OK.|
+|MB_OKCANCEL|메시지 상자 누름 단추 두 개를 포함합니다. 확인 및 취소 합니다.|
+|MB_RETRYCANCEL|메시지 상자 누름 단추 두 개를 포함합니다. 다시 시도 및 취소 합니다.|
+|MB_YESNO|메시지 상자 누름 단추 두 개를 포함합니다. 그렇기도 하고 그렇지 않기도 하고.|
+|MB_YESNOCANCEL|메시지 상자에 3 개의 누름 단추: 예, 아니요 및 취소 합니다.|
 
 ### <a name="message-box-modality"></a>메시지 상자 형식
 
@@ -506,7 +506,7 @@ ms.locfileid: "51694779"
 |WS_EX_TRANSPARENT|이 스타일을 사용 하 여 만든 창이 투명 하 게 지정 합니다. 즉, 이 창 아래에 있는 모든 창은 이 창에 의해 가려지지 않습니다. 이 스타일으로 만들어진 창 아래에 있는 모든 형제 창이 업데이트 한 후에 WM_PAINT 메시지를 받습니다.|
 |WS_EX_WINDOWEDGE|창에 볼록한 테두리를 지정 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 클래스 개요](../../mfc/class-library-overview.md)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)<br/>

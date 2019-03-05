@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CFileException [MFC], m_lOsError
 - CFileException [MFC], m_strFileName
 ms.assetid: f6491bb9-bfbc-42fd-a952-b33f9b62323f
-ms.openlocfilehash: e6b1b25f9125701a212f379c925a80ff888d58f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3514c76d4136fe2bc0b096cc382e6f7f4dd3392
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485824"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305122"
 ---
 # <a name="cfileexception-class"></a>CFileException 클래스
 
@@ -73,7 +73,7 @@ class CFileException : public CException
 
 `CFileException` 개체를 생성 하 고 throw `CFile` 멤버 함수에 파생된 클래스의 멤버 함수입니다. 범위 내에서 이러한 개체에 액세스할 수 있습니다는 **CATCH** 식입니다. 이식성에 대 한 예외에 대 한 이유를 가져오려는 원인 코드만 사용 합니다. 예외에 대 한 자세한 내용은 문서 참조 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -177,7 +177,8 @@ virtual BOOL GetErrorMessage(
 
 ##  <a name="m_cause"></a>  CFileException::m_cause
 
-`CFileException` 열거형 형식으로 정의되는 값을 포함합니다.
+
+  `CFileException` 열거형 형식으로 정의되는 값을 포함합니다.
 
 ```
 int m_cause;
@@ -187,9 +188,9 @@ int m_cause;
 
 이 데이터 멤버는 형식의 공용 변수 **int**합니다. 아래에 열거자와 해당 의미가 나와 있습니다.
 
-- `CFileException::none` 0: 오류가 발생 하지 않았습니다.
+- `CFileException::none` 0: 오류가 발생 했습니다.
 
-- `CFileException::genericException` 1: 지정 되지 않은 오류가 발생 했습니다.
+- `CFileException::genericException` 1: 지정되지 않은 오류가 발생했습니다.
 
 - `CFileException::fileNotFound` 2: 파일을 찾을 수 없습니다.
 
@@ -199,19 +200,19 @@ int m_cause;
 
 - `CFileException::accessDenied` 5: 파일에 액세스할 수 없습니다.
 
-- `CFileException::invalidFile` 6: 잘못 된 파일 핸들을 사용 하려고 했습니다.
+- `CFileException::invalidFile` 6: 잘못 된 파일 핸들을 사용 하려고가 했습니다.
 
 - `CFileException::removeCurrentDir` 7: 현재 작업 디렉터리를 제거할 수 없습니다.
 
-- `CFileException::directoryFull` 8: 디렉터리 항목이 더 이상 가지 있습니다.
+- `CFileException::directoryFull` 8: 자세한 디렉터리 항목이 없습니다.
 
 - `CFileException::badSeek` 9: 파일 포인터를 설정 하는 동안 오류가 발생 했습니다.
 
-- `CFileException::hardIO` 10: 하드웨어 오류가 발생 했습니다.
+- `CFileException::hardIO` 10: 하드웨어 오류가 발생이 했습니다.
 
-- `CFileException::sharingViolation` 11: 공유 합니다. EXE가 로드 되지 또는 공유 영역이 잠겼습니다.
+- `CFileException::sharingViolation` 11: 공유. EXE가 로드 되지 또는 공유 영역이 잠겼습니다.
 
-- `CFileException::lockViolation` 12: 이미 잠긴 영역을 잠그려는 시도가 있었습니다.
+- `CFileException::lockViolation` 12: 이미 잠겨 있는 영역을 잠그려는 시도가 있었습니다.
 
 - `CFileException::diskFull` 14: 디스크가 꽉 찼습니다.
 
@@ -308,9 +309,8 @@ static void PASCAL ThrowOsError(LONG lOsError, LPCTSTR lpszFileName = NULL);
 
 [!code-cpp[NVC_MFCFiles#29](../../atl-mfc-shared/reference/codesnippet/cpp/cfileexception-class_6.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [예외 처리](../../mfc/reference/exception-processing.md)
-

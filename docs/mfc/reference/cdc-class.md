@@ -402,12 +402,12 @@ helpviewer_keywords:
 - CDC [MFC], m_hAttribDC
 - CDC [MFC], m_hDC
 ms.assetid: 715b3334-cb2b-4c9c-8067-02eb7c66c8b2
-ms.openlocfilehash: 0c8944846e249e4f752183b057bf8d2857022ab5
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: fc5d41221ab0f9679e7d38a399464efc1a38dd52
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179060"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305083"
 ---
 # <a name="cdc-class"></a>CDC 클래스
 
@@ -631,7 +631,7 @@ class CDC : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[HDC CDC::operator](#operator_hdc)|장치 컨텍스트의 핸들을 검색 합니다.|
+|[CDC::operator HDC](#operator_hdc)|장치 컨텍스트의 핸들을 검색 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -842,7 +842,7 @@ BOOL AngleArc(
 원의 중심의 논리적 y 좌표를 지정합니다.
 
 *nRadius*<br/>
-원의 반지름을 논리 단위로 지정합니다. 이 값은 양수여야 합니다.
+원의 반지름을 논리 단위로 지정합니다. 이 값은 양수 여야 합니다.
 
 *fStartAngle*<br/>
 시작 각도 x 축 기준으로 단위로 지정합니다.
@@ -1580,7 +1580,7 @@ BOOL DrawFrameControl(
 *lpRect*<br/>
 에 대 한 포인터를 `RECT` 사각형의 논리적 좌표를 포함 하는 구조입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 그릴 frame 컨트롤의 형식을 지정 합니다. 참조를 *uType* 에 매개 변수 [DrawFrameControl](/windows/desktop/api/winuser/nf-winuser-drawframecontrol) 이 매개 변수의 가능한 값 목록은 Windows sdk입니다.
 
 *nState*<br/>
@@ -3171,7 +3171,7 @@ DWORD GetGlyphOutline(
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 정보는 반환 될 문자를 지정 합니다.
 
 *nFormat*<br/>
@@ -6816,11 +6816,13 @@ BOOL StretchBlt(
 
 `StretchBlt` 함수는 경우 비트맵의 미러 이미지를 만드는의 기호를 *nSrcWidth* 및 *nWidth* 또는 *nSrcHeight* 및 *nHeight* 매개 변수가 다릅니다. 하는 경우 *nSrcWidth* 하 고 *nWidth* 부호가 다른 함수 x 축 따라 비트맵의 미러 이미지를 만듭니다. 하는 경우 *nSrcHeight* 하 고 *nHeight* 부호가 다른 함수 y 축 따라 비트맵의 미러 이미지를 만듭니다.
 
-`StretchBlt` 함수는 메모리에서 소스 비트맵을 늘이거나 줄인 다음 결과를 대상으로 복사합니다. 패턴을 결과와 병합해야 하는 경우 늘어난 소스 비트맵이 대상에 복사될 때까지 병합되지 않습니다. 브러시를 사용하는 경우 대상 장치 컨텍스트의 선택된 브러시입니다. 대상 좌표는 대상 장치 컨텍스트에 따라 변형됩니다. 소스 좌표는 소스 장치 컨텍스트에 따라 변형됩니다.
+
+  `StretchBlt` 함수는 메모리에서 소스 비트맵을 늘이거나 줄인 다음 결과를 대상으로 복사합니다. 패턴을 결과와 병합해야 하는 경우 늘어난 소스 비트맵이 대상에 복사될 때까지 병합되지 않습니다. 브러시를 사용하는 경우 대상 장치 컨텍스트의 선택된 브러시입니다. 대상 좌표는 대상 장치 컨텍스트에 따라 변환됩니다. 소스 좌표는 소스 장치 컨텍스트에 따라 변환됩니다.
 
 대상, 소스 및 패턴 비트맵의 색 형식이 다르면 `StretchBlt`는 소스와 패턴 비트맵을 대상 비트맵에 맞게 변환합니다. 대상 장치 컨텍스트의 전경 및 배경 색이 변환에 사용됩니다.
 
-`StretchBlt`가 단색 비트맵을 컬러로 변환해야 하는 경우 흰색 비트(1)를 배경색으로, 검정색 비트(0)를 전경색으로 설정합니다. 컬러를 단색으로 변환하기 위해 배경색과 일치하는 픽셀을 흰색(1)으로 설정하고 다른 모든 픽셀을 검정색(0)으로 설정합니다. 색이 있는 장치 컨텍스트의 전경 및 배경색이 사용됩니다.
+
+  `StretchBlt`가 단색 비트맵을 컬러로 변환해야 하는 경우 흰색 비트(1)를 배경색으로, 검정색 비트(0)를 전경색으로 설정합니다. 컬러를 단색으로 변환하기 위해 배경색과 일치하는 픽셀을 흰색(1)으로 설정하고 다른 모든 픽셀을 검정색(0)으로 설정합니다. 색이 있는 장치 컨텍스트의 전경 및 배경색이 사용됩니다.
 
 모든 장치가 `StretchBlt` 기능을 지원하지는 않습니다. 장치를 지원 하는지 여부를 결정할 `StretchBlt`를 호출 합니다 `GetDeviceCaps` 멤버 RASTERCAPS 인덱스를 사용 하 여 함수 및 RC_STRETCHBLT 플래그에 대 한 반환 값을 확인 합니다.
 
@@ -7057,7 +7059,7 @@ BOOL WidenPath();
 
 이 함수는 현재 펜 기하학적 펜의 두 번째 버전에서 만들어진 경우에 성공 `CreatePen` 멤버 함수 또는 펜의 첫 번째 버전을 사용 하 여 만들어지는 경우 `CreatePen` 에 폭이 1 보다 큰 장치 단위에서 및 합니다. 장치 컨텍스트는 닫힌된 경로 포함 해야 합니다. 경로에 모든 Bzier 곡선 직선 넓은 곡선 대표값으로 어림 잡습니다 시퀀스로 변환 됩니다. 뒤의 경로에 없는 Bzier 곡선을 유지 하는 이와 같이 `WidenPath` 라고 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

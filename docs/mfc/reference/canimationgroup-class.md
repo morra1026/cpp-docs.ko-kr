@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CAnimationGroup [MFC], m_nGroupID
 - CAnimationGroup [MFC], m_pParentController
 ms.assetid: 8bc18ceb-33a2-41d0-9731-71811adacab7
-ms.openlocfilehash: b05de00697aa019382014402f7701a8341da5198
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9be0a5b76f91ddf4dc3d1c4ff2816b7ffd5a1986
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512920"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304381"
 ---
 # <a name="canimationgroup-class"></a>CAnimationGroup 클래스
 
@@ -70,7 +70,7 @@ class CAnimationGroup;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationGroup::CAnimationGroup](#canimationgroup)|애니메이션 그룹을 생성합니다.|
-|[CAnimationGroup:: ~ CAnimationGroup](#canimationgroup__~canimationgroup)|소멸자입니다. 애니메이션 그룹 소멸 될 때 호출 됩니다.|
+|[CAnimationGroup::~CAnimationGroup](#canimationgroup__~canimationgroup)|소멸자입니다. 애니메이션 그룹 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -85,7 +85,7 @@ class CAnimationGroup;
 |[CAnimationGroup::Schedule](#schedule)|지정된 된 시간에 애니메이션을 예약합니다.|
 |[CAnimationGroup::SetAutodestroyTransitions](#setautodestroytransitions)|자동으로 그룹에 속하는 모든 애니메이션 개체 삭제 전환으로 보냅니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -115,7 +115,7 @@ class CAnimationGroup;
 
 애니메이션 그룹 CAnimationController::AddAnimationObject를 사용 하 여 애니메이션 개체를 추가 하면 애니메이션 컨트롤러 (CAnimationController)에서 자동으로 생성 됩니다. 애니메이션 그룹은 애니메이션 그룹을 조작 하는 매개 변수로 일반적으로 사용 되는 그룹 Id로 식별 됩니다. GroupID 새 애니메이션 그룹에 추가 되는 첫 번째 애니메이션 개체에서 가져옵니다. 캡슐화 된 애니메이션 스토리 보드를 CAnimationController::AnimateGroup를 호출 하 고 공용 멤버 m_pStoryboard를 통해 액세스할 수 후에 생성 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CAnimationGroup`
 
@@ -123,7 +123,7 @@ class CAnimationGroup;
 
 **헤더:** afxanimationcontroller.h
 
-##  <a name="_dtorcanimationgroup"></a>  CAnimationGroup:: ~ CAnimationGroup
+##  <a name="_dtorcanimationgroup"></a>  CAnimationGroup::~CAnimationGroup
 
 소멸자입니다. 애니메이션 그룹 소멸 될 때 호출 됩니다.
 
@@ -387,6 +387,6 @@ void SetAutodestroyTransitions(BOOL bAutoDestroy = TRUE);
 
 이 값을 전환 스택에 할당 하는 경우에 FALSE로 설정 합니다. 기본값은 TRUE, 따라서 것이 좋습니다 새 연산자를 사용 하 여 전환 개체를 할당 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAxWindow2 class
 ms.assetid: b87bc943-7991-4537-b902-2138d7f4d837
-ms.openlocfilehash: 3e28bfe15c55342cbdfb50b125243c170ba97698
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d5991dcbf79d1c2415594636a09908586d1dc2f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665435"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326519"
 ---
 # <a name="caxwindow2t-class"></a>CAxWindow2T 클래스
 
@@ -75,7 +75,7 @@ template <class TBase = CWindow>
 
 참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 이 클래스의 멤버를 사용 하는 샘플에 대 한 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `TBase`
 
@@ -220,7 +220,7 @@ CAxWindow2T<TBase>& operator= (HWND hWnd);
 *hWnd*<br/>
 기존 창 핸들입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [컨트롤 포함 FAQ](../../atl/atl-control-containment-faq.md)

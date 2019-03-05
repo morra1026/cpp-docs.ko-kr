@@ -7,12 +7,12 @@ helpviewer_keywords:
 - message handlers [MFC]
 - message handling [MFC], editing handlers
 ms.assetid: 7babb496-1f14-43b1-a14d-2e54402a92e2
-ms.openlocfilehash: c316b4cf138c21b697181bcf132fa3766128a7ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 851b07c46fbc173031da838211beac7ba2d76954
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632715"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304771"
 ---
 # <a name="editing-a-message-handler"></a>메시지 처리기 편집
 
@@ -22,7 +22,7 @@ ms.locfileid: "50632715"
 
 멤버 함수 정의로 이동할 [클래스 뷰](/visualstudio/ide/viewing-the-structure-of-code), 클래스 뷰에서 함수 이름을 두 번 클릭 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [함수에 메시지 매핑](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

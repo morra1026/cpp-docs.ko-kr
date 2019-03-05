@@ -7,12 +7,12 @@ helpviewer_keywords:
 - sockets classes [MFC]
 - Windows Sockets [MFC], classes
 ms.assetid: 58b9ab8d-9e44-4db3-8265-e04e713d2e9a
-ms.openlocfilehash: 18537c0de09185c8cd219e3d17ef8bb297e1d711
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4abdd8f8fbfc115b5014ffd0b3a37df357852b16
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50433607"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303822"
 ---
 # <a name="windows-sockets-classes"></a>Windows 소켓 클래스
 
@@ -27,7 +27,6 @@ Windows 소켓 API에서 씬 래퍼를 캡슐화합니다.
 [CSocketFile](../mfc/reference/csocketfile-class.md)<br/>
 제공 된 `CFile` Windows 소켓 인터페이스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

@@ -5,12 +5,12 @@ f1_keywords:
 - amp/Concurrency::access_type
 - amp/Concurrency::queuing_mode
 ms.assetid: 4c87457e-184f-4992-81ab-ca75e7d524ab
-ms.openlocfilehash: d78299a9ce47760e6b1340c69d8be699a5eed8a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: adfc1743d887f2a670111eff31cf4653d2df1bee
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50433572"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326077"
 ---
 # <a name="concurrency-namespace-enums-amp"></a>Concurrency 네임 스페이스 열거형 (AMP)
 
@@ -51,6 +51,6 @@ enum queuing_mode;
 |`queuing_mode_immediate`|예를 들어 큐 모드를 지정 하는 명령 [parallel_for_each 함수 (c + + AMP)](concurrency-namespace-functions-amp.md#parallel_for_each)를 호출자에 게 반환 되는 즉시 해당 가속기 장치로 보내집니다.|
 |`queuing_mode_automatic`|명령에 해당 하는 명령 큐에 대기 수를 지정 하는 큐 모드를 [accelerator_view](accelerator-view-class.md) 개체입니다. 명령을 장치로 전송 된 경우 [accelerator_view:: flush](accelerator-view-class.md#flush) 라고 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

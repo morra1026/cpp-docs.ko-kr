@@ -14,12 +14,12 @@ helpviewer_keywords:
 - COleDropSource [MFC], OnBeginDrag
 - COleDropSource [MFC], QueryContinueDrag
 ms.assetid: d3eecc5f-a70b-4a01-b705-7d2c098ebe17
-ms.openlocfilehash: 51d524054b67a5cecc5aa7791b0aeea0cc076813
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 587aa0730502d5e8f90c4fec57bb87886b79fb3f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457783"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304979"
 ---
 # <a name="coledropsource-class"></a>COleDropSource 클래스
 
@@ -57,7 +57,7 @@ OLE를 사용 하 여 끌어서 놓기 작업에 대 한 자세한 내용은 문
 
 자세한 내용은 [IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -147,7 +147,7 @@ virtual SCODE QueryContinueDrag(
 마지막으로 호출한 이후 ESC 키를 눌렀는지 여부를 나타내는 `COleDropSource::QueryContinueDrag`합니다.
 
 *dwKeyState*<br/>
-키보드의 한정자 키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+키보드의 한정자 키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -161,10 +161,9 @@ ESC 키 또는 오른쪽 단추를 누르면 되었거나 단추 왼쪽 DRAGDROP
 
 이 함수를 자주 호출 했으므로 최적화 해야 최대한 많이 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

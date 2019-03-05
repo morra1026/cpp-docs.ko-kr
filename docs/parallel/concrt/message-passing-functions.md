@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - message passing functions
 ms.assetid: 42477c9e-a8a6-4dc4-a98e-93c6dc8c4dd0
-ms.openlocfilehash: e258a73723e78090f61230555748e109c28cf01c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a1790a08403bcc1d016a39e27c7a121c288af4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476026"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303952"
 ---
 # <a name="message-passing-functions"></a>메시지 전달 함수
 
@@ -51,13 +51,13 @@ ms.locfileid: "50476026"
 
 - [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)
 
-- [방법: 다양한 공급자-소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)
+- [방법: 다양한 공급자/소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)
 
 - [방법: call 및 transformer 클래스에 작업 함수 제공](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)
 
 - [방법: 데이터 파이프라인에서 transformer 사용](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)
 
-- [방법: 완료된 작업 간 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)
+- [방법: 완료된 작업 중에서 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)
 
 - [방법: 정기적으로 메시지 보내기](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)
 
@@ -65,7 +65,7 @@ ms.locfileid: "50476026"
 
 [[맨 위로 이동](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
@@ -73,4 +73,3 @@ ms.locfileid: "50476026"
 [asend 함수](reference/concurrency-namespace-functions.md#asend)<br/>
 [receive 함수](reference/concurrency-namespace-functions.md#receive)<br/>
 [try_receive 함수](reference/concurrency-namespace-functions.md#try_receive)
-

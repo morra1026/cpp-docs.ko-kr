@@ -20,16 +20,17 @@ helpviewer_keywords:
 - CMFCPropertyGridColorProperty [MFC], SetColumnsNumber
 - CMFCPropertyGridColorProperty [MFC], SetOriginalValue
 ms.assetid: af37be93-a91e-40a2-9a65-0f3412c6f0f8
-ms.openlocfilehash: c284906a85ec93c5c5419acb783f6f46ebcf03e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 65c2c22c93dc3acb50fc4627c3710a3f0c86aeb0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575737"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303965"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty 클래스
 
-`CMFCPropertyGridColorProperty` 클래스는 색 선택 항목 대화 상자를 여는 속성 목록 컨트롤 항목을 지원합니다.
+
+  `CMFCPropertyGridColorProperty` 클래스는 색 선택 항목 대화 상자를 여는 속성 목록 컨트롤 항목을 지원합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -61,11 +62,12 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 |`CMFCPropertyGridColorProperty::OnUpdateValue`|편집 가능한 속성 값이 변경되었을 때 프레임워크에서 호출됩니다. (재정의 [cmfcpropertygridproperty:: Onupdatevalue](../../mfc/reference/cmfcpropertygridproperty-class.md#onupdatevalue).)|
 |[CMFCPropertyGridColorProperty::SetColor](#setcolor)|속성에 대한 새로운 색을 설정합니다.|
 |[CMFCPropertyGridColorProperty::SetColumnsNumber](#setcolumnsnumber)|현재 색 속성 표의 열 수를 지정합니다.|
-|[Cmfcpropertygridcolorproperty:: Setoriginalvalue](#setoriginalvalue)|편집 가능한 속성의 원래 값을 설정합니다.|
+|[CMFCPropertyGridColorProperty::SetOriginalValue](#setoriginalvalue)|편집 가능한 속성의 원래 값을 설정합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CMFCPropertyGridColorProperty` 클래스는 속성 목록 컨트롤에 추가할 수 있는 색 속성을 지원합니다. 자세한 내용은 참조는 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md)합니다.
+
+  `CMFCPropertyGridColorProperty` 클래스는 속성 목록 컨트롤에 추가할 수 있는 색 속성을 지원합니다. 자세한 내용은 참조는 [CMFCPropertyGridCtrl 클래스](../../mfc/reference/cmfcpropertygridctrl-class.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -73,7 +75,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 
 [!code-cpp[NVC_MFC_NewControls#13](../../mfc/reference/codesnippet/cpp/cmfcpropertygridcolorproperty-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -103,7 +105,7 @@ CMFCPropertyGridColorProperty(
 *strName*<br/>
 [in] 속성의 이름입니다.
 
-*색*<br/>
+*color*<br/>
 [in] 속성의 색 값입니다.
 
 *pPalette*<br/>
@@ -187,7 +189,7 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] RGB 색 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -209,7 +211,7 @@ void SetColumnsNumber(int nColumnsNumber);
 
 값을 설정 하는이 메서드는 `m_nColumnsNumber` 데이터 멤버를 보호 합니다.
 
-##  <a name="setoriginalvalue"></a>  Cmfcpropertygridcolorproperty:: Setoriginalvalue
+##  <a name="setoriginalvalue"></a>  CMFCPropertyGridColorProperty::SetOriginalValue
 
 편집 가능한 속성의 원래 값을 설정합니다.
 
@@ -226,7 +228,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 
 사용 된 [cmfcpropertygridproperty:: Resetoriginalvalue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) 편집된 된 속성의 원래 값을 다시 설정 하는 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

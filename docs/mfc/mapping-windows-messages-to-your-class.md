@@ -10,12 +10,12 @@ helpviewer_keywords:
 - message maps [MFC], mapping Windows messages to classes
 - messages to dialog class [MFC], mapping
 ms.assetid: a4c6fd1f-1d33-47c9-baa0-001755746d6d
-ms.openlocfilehash: 37c0f61f4d38e3e152d9dd508c9487782ebdf81a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e15f52e41d4ac91a839629342258128db86e2d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630462"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326675"
 ---
 # <a name="mapping-windows-messages-to-your-class"></a>클래스에 Windows 메시지 매핑
 
@@ -23,7 +23,7 @@ Windows 메시지를 처리 하 여 대화 상자에 필요한 경우 적절 한
 
 멤버 함수를 재정의할 수도 있습니다 [CDialog](../mfc/reference/cdialog-class.md) 와 해당 기본 클래스, 특히 [CWnd](../mfc/reference/cwnd-class.md)합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [메시지 처리 및 매핑](../mfc/message-handling-and-mapping.md)
 
@@ -31,8 +31,7 @@ Windows 메시지를 처리 하 여 대화 상자에 필요한 경우 적절 한
 
 - [일반적으로 추가 되는 멤버 함수](../mfc/commonly-added-member-functions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
-

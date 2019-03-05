@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - DoClick method [MFC]
 ms.assetid: bc4fad78-cabd-4cc0-a798-464b1a682f0b
-ms.openlocfilehash: 1e47e45efe27c9562cf8500f8941bcf0e259448a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29cb0d6f53d4e8fbbce12a83b2eecb8658c82697
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585031"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305213"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX 컨트롤: 스톡 메서드 추가
 
@@ -20,12 +20,12 @@ ms.locfileid: "50585031"
 >[!IMPORTANT]
 > ActiveX는 새로운 개발에 사용 되지 해야 하는 레거시 기술입니다. ActiveX를 대체 하는 최신 기술에 대 한 자세한 내용은 참조 하세요. [ActiveX 컨트롤](activex-controls.md)합니다.
 
-`COleControl` 주식 두 가지 방법을 지원: DoClick 및 새로 고침 합니다. 새로 고침을 즉시 컨트롤의 모양을;을 업데이트 하도록 컨트롤의 사용자가 호출할 컨트롤의 클릭 시키려면 DoClick가 호출 하는 이벤트입니다.
+`COleControl` 두 주식 방법을 지원합니다. DoClick 및 새로 고침 합니다. 새로 고침을 즉시 컨트롤의 모양을;을 업데이트 하도록 컨트롤의 사용자가 호출할 컨트롤의 클릭 시키려면 DoClick가 호출 하는 이벤트입니다.
 
 |메서드|디스패치 맵 항목|주석|
 |------------|------------------------|-------------|
-|`DoClick`|**DISP_STOCKPROP_DOCLICK)**|클릭 이벤트를 발생 시킵니다.|
-|`Refresh`|**DISP_STOCKPROP_REFRESH)**|컨트롤의 모양을 즉시 업데이트 됩니다.|
+|`DoClick`|**DISP_STOCKPROP_DOCLICK( )**|클릭 이벤트를 발생 시킵니다.|
+|`Refresh`|**DISP_STOCKPROP_REFRESH( )**|컨트롤의 모양을 즉시 업데이트 됩니다.|
 
 ##  <a name="_core_adding_a_stock_method_using_classwizard"></a> 추가 스톡 메서드가 수행 하는 메서드 추가 마법사
 
@@ -61,7 +61,6 @@ ms.locfileid: "50585031"
 
 이 줄 Refresh 메서드를 특정 ID 번호를 할당합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

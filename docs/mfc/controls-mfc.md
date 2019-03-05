@@ -6,12 +6,12 @@ helpviewer_keywords:
 - common controls [MFC]
 - controls [MFC]
 ms.assetid: b2842884-6435-4b8f-933b-21671bf8af95
-ms.openlocfilehash: fe427b2330441b5d9d38a8947ded85dedbb4e086
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0738128d20839046e0885e7489b494d84349e4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472711"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304537"
 ---
 # <a name="controls-mfc"></a>컨트롤(MFC)
 
@@ -31,7 +31,7 @@ Windows 운영 체제는 항상 많은 Windows 공용 컨트롤을 제공합니�
 
 ## <a name="activex-controls"></a>ActiveX 컨트롤
 
-이전에 OLE 컨트롤로 알려진 ActiveX 컨트롤은 Windows 응용 프로그램의 대화 상자 또는 World Wide Web의 HTML 페이지에서 사용할 수 있습니다. 자세한 내용은 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)을 참조하세요.
+이전에 OLE 컨트롤로 알려진 ActiveX 컨트롤은 Windows 애플리케이션의 대화 상자 또는 World Wide Web의 HTML 페이지에서 사용할 수 있습니다. 자세한 내용은 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)을 참조하세요.
 
 ## <a name="other-mfc-control-classes"></a>다른 MFC 컨트롤 클래스
 
@@ -104,8 +104,7 @@ Windows 운영 체제는 항상 많은 Windows 공용 컨트롤을 제공합니�
 
 Windows SDK의 Windows 공용 컨트롤에 대 한 정보를 참조 하세요 [공용 컨트롤](/windows/desktop/Controls/common-controls-intro)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [대화 상자 편집기](../windows/dialog-editor.md)
-

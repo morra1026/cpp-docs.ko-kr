@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE containers [MFC], user interface
 - user interface issues
 ms.assetid: c833c249-a633-4f1c-82d6-ec6b4892863a
-ms.openlocfilehash: 340d5b9345d66ea7e797480cffdb9f9c794b4320
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e35f831f3e1a0b2fede03de0bbd846525f3c41f8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605755"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304260"
 ---
 # <a name="containers-user-interface-issues"></a>컨테이너: 사용자 인터페이스 문제
 
@@ -24,9 +24,8 @@ ms.locfileid: "50605755"
 |그리기 연결 항목 또는 포함|[컨테이너 샘플](../visual-cpp-samples.md)|
 |컨테이너에 대 한 새 대화 상자|[OLE의 대화 상자](../mfc/dialog-boxes-in-ole.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [컨테이너: 고급 기능](../mfc/containers-advanced-features.md)<br/>
 [메뉴 및 리소스(OLE)](../mfc/menus-and-resources-ole.md)
-

@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CView [MFC], OnPrint
 - CView [MFC], OnUpdate
 ms.assetid: 9cff3c56-7564-416b-b9a4-71a9254ed755
-ms.openlocfilehash: 679cdc5b5a0a85ade09fe1999e8de40300a8ae8e
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: fe9b282fd248f8dd03a6a7f078c03866d1b14b2d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694389"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305018"
 ---
 # <a name="cview-class"></a>CView 클래스
 
@@ -90,7 +90,7 @@ class AFX_NOVTABLE CView : public CWnd
 |[CView::OnDragScroll](#ondragscroll)|커서를 창의 스크롤 영역으로 끄는 여부를 확인 하기 위해 호출 됩니다.|
 |[CView::OnDrop](#ondrop)|뷰를 기본 처리기의 끌어서 놓기 영역으로 항목 삭제 된 경우 호출 됩니다.|
 |[CView::OnDropEx](#ondropex)|뷰를 기본 처리기의 끌어서 놓기 영역으로 항목 삭제 된 경우 호출 됩니다.|
-|[Cview:: Oninitialupdate](#oninitialupdate)|문서에 뷰를 처음 연결 된 후 호출 됩니다.|
+|[CView::OnInitialUpdate](#oninitialupdate)|문서에 뷰를 처음 연결 된 후 호출 됩니다.|
 |[CView::OnPrepareDC](#onpreparedc)|전에 호출 합니다 `OnDraw` 화면 표시에 대 한 멤버 함수를 호출 또는 `OnPrint` 인쇄 또는 인쇄 미리 보기에 대 한 멤버 함수를 호출 합니다.|
 |[CView::OnScroll](#onscroll)|OLE 항목 보기의 경계를 벗어난 끌면 호출 됩니다.|
 |[CView::OnScrollBy](#onscrollby)|활성 전체 OLE 항목을 포함 하는 뷰가 스크롤될 때 호출 됩니다.|
@@ -102,7 +102,7 @@ class AFX_NOVTABLE CView : public CWnd
 |[CView::OnActivateFrame](#onactivateframe)|뷰를 포함 하는 프레임 창이 활성화 또는 비활성화 하는 경우 호출 됩니다.|
 |[CView::OnActivateView](#onactivateview)|보기 활성화 될 때 호출 됩니다.|
 |[CView::OnBeginPrinting](#onbeginprinting)|인쇄 작업을 시작; 호출 그래픽 장치 GDI (인터페이스) 리소스를 할당할 재정의 합니다.|
-|[Cview::](#ondraw)|문서의 화면 표시, 인쇄 또는 인쇄 미리 보기에 대 한 이미지를 렌더링 하기 위해 호출 됩니다. 필요한 구현입니다.|
+|[CView::OnDraw](#ondraw)|문서의 화면 표시, 인쇄 또는 인쇄 미리 보기에 대 한 이미지를 렌더링 하기 위해 호출 됩니다. 필요한 구현입니다.|
 |[CView::OnEndPrinting](#onendprinting)|인쇄 작업이 끝나면; 호출 GDI 리소스 할당을 취소 하려면 재정의 합니다.|
 |[CView::OnEndPrintPreview](#onendprintpreview)|미리 보기 모드 종료 될 때 호출 됩니다.|
 |[CView::OnPreparePrinting](#onprepareprinting)|문서가 인쇄 되거나; 미리 보기 전에 호출 인쇄 대화 상자를 초기화 하려면 재정의 합니다.|
@@ -334,9 +334,9 @@ virtual DROPEFFECT OnDragEnter(
 가리키는 합니다 [COleDataObject](../../mfc/reference/coledataobject-class.md) 뷰의 끌어 놓기 영역으로 끌고 있는 합니다.
 
 *dwKeyState*<br/>
-보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*지점*<br/>
+*point*<br/>
 마우스의 현재 위치 클라이언트 영역을 기준으로 보기.
 
 ### <a name="return-value"></a>반환 값
@@ -357,7 +357,7 @@ DROPEFFECT에서 값을 열거 drop 사용자이 위치에 있는 개체를 삭�
 
 기본 구현은 아무 작업도 수행 DROPEFFECT_NONE 반환 하는 것입니다.
 
-이 함수에 대 한 이후 호출에 대 한 준비를 재정의 합니다 [OnDragOver](#ondragover) 멤버 함수입니다. 이번에 나중에 사용에 대 한 데이터 개체에서 필요한 모든 데이터를 검색 합니다 `OnDragOver` 멤버 함수입니다. 뷰를 사용자에 게 시각적 피드백을 제공 하려면이 이번에도 업데이트 되어야 합니다. 자세한 내용은 문서 참조 [끌어서 놓기: 놓기 대상 구현](../../mfc/drag-and-drop-implementing-a-drop-target.md)합니다.
+이 함수에 대 한 이후 호출에 대 한 준비를 재정의 합니다 [OnDragOver](#ondragover) 멤버 함수입니다. 이번에 나중에 사용에 대 한 데이터 개체에서 필요한 모든 데이터를 검색 합니다 `OnDragOver` 멤버 함수입니다. 뷰를 사용자에 게 시각적 피드백을 제공 하려면이 이번에도 업데이트 되어야 합니다. 자세한 내용은 문서를 참조 하세요. [끌어다 놓습니다. 놓기 대상 구현](../../mfc/drag-and-drop-implementing-a-drop-target.md)합니다.
 
 ##  <a name="ondragleave"></a>  CView::OnDragLeave
 
@@ -388,9 +388,9 @@ virtual DROPEFFECT OnDragOver(
 가리키는 합니다 [COleDataObject](../../mfc/reference/coledataobject-class.md) 놓기 대상 위로 끄는 합니다.
 
 *dwKeyState*<br/>
-보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*지점*<br/>
+*point*<br/>
 뷰 클라이언트 영역을 기준으로 현재 마우스 위치를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -411,7 +411,7 @@ DROPEFFECT에서 값을 열거 drop 사용자이 위치에 있는 개체를 삭�
 
 기본 구현은 아무 작업도 수행 하 여 DROPEFFECT_NONE 반환 합니다.
 
-끌기 작업 중 사용자 시각적 피드백을 제공 하려면이 함수를 재정의 합니다. 이 함수를 지속적으로 호출 되므로 그 안에 포함 된 모든 코드 최적화 해야 최대한 많이 있습니다. 자세한 내용은 문서 참조 [끌어서 놓기: 놓기 대상 구현](../../mfc/drag-and-drop-implementing-a-drop-target.md)합니다.
+끌기 작업 중 사용자 시각적 피드백을 제공 하려면이 함수를 재정의 합니다. 이 함수를 지속적으로 호출 되므로 그 안에 포함 된 모든 코드 최적화 해야 최대한 많이 있습니다. 자세한 내용은 문서를 참조 하세요. [끌어다 놓습니다. 놓기 대상 구현](../../mfc/drag-and-drop-implementing-a-drop-target.md)합니다.
 
 ##  <a name="ondragscroll"></a>  CView::OnDragScroll
 
@@ -426,9 +426,9 @@ virtual DROPEFFECT OnDragScroll(
 ### <a name="parameters"></a>매개 변수
 
 *dwKeyState*<br/>
-보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -449,9 +449,9 @@ DROPEFFECT에서 값을 열거 drop 사용자이 위치에 있는 개체를 삭�
 
 ### <a name="remarks"></a>설명
 
-이 이벤트에 대 한 특별 한 동작을 제공 하려는 경우이 함수를 재정의 합니다. 기본 구현은 각 창의 테두리 내 기본 스크롤 영역에 커서를 끌 때 자동으로 windows를 스크롤합니다. 자세한 내용은 문서 참조 [끌어서 놓기: 놓기 대상 구현](../../mfc/drag-and-drop-implementing-a-drop-target.md)합니다.
+이 이벤트에 대 한 특별 한 동작을 제공 하려는 경우이 함수를 재정의 합니다. 기본 구현은 각 창의 테두리 내 기본 스크롤 영역에 커서를 끌 때 자동으로 windows를 스크롤합니다. 자세한 내용은 문서를 참조 하세요. [끌어다 놓습니다. 놓기 대상 구현](../../mfc/drag-and-drop-implementing-a-drop-target.md)합니다.
 
-##  <a name="ondraw"></a>  Cview::
+##  <a name="ondraw"></a>  CView::OnDraw
 
 문서의 이미지를 렌더링 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -496,7 +496,7 @@ virtual BOOL OnDrop(
 
 - DROPEFFECT_LINK은 데이터 개체와 해당 서버 간의 링크를 만듭니다.
 
-*지점*<br/>
+*point*<br/>
 뷰 클라이언트 영역을 기준으로 현재 마우스 위치를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -532,10 +532,10 @@ virtual DROPEFFECT OnDropEx(
 *dropDefault*<br/>
 현재 키 상태를 기반으로 기본 놓기 작업에 대 한 사용자가 선택 하는 효과입니다. DROPEFFECT_NONE 수도 있습니다. 끌어서 놓기 작업 결과 주의 섹션에 설명 합니다.
 
-*드롭다운 목록*<br/>
+*dropList*<br/>
 목록 놓기 소스가 지원 되는 놓기 효과입니다. 비트 OR를 사용 하 여 드롭 효과 값을 결합할 수 있습니다 ( **&#124;**) 작업입니다. 끌어서 놓기 작업 결과 주의 섹션에 설명 합니다.
 
-*지점*<br/>
+*point*<br/>
 뷰 클라이언트 영역을 기준으로 현재 마우스 위치를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -618,7 +618,7 @@ virtual void OnEndPrintPreview(
 *pInfo*<br/>
 현재 인쇄 작업을 설명하는 [CPrintInfo](../../mfc/reference/cprintinfo-structure.md) 구조체를 가리킵니다.
 
-*지점*<br/>
+*point*<br/>
 미리 보기 모드에서 마지막으로 표시 된 페이지에 지정 합니다.
 
 *pView*<br/>
@@ -630,7 +630,7 @@ virtual void OnEndPrintPreview(
 
 기본 클래스 버전을 항상 호출 `OnEndPrintPreview` 에서 함수의 끝에 일반적으로 재정의 합니다.
 
-##  <a name="oninitialupdate"></a>  Cview:: Oninitialupdate
+##  <a name="oninitialupdate"></a>  CView::OnInitialUpdate
 
 전에 호출 됩니다 프레임 워크에서 뷰를 먼저 문서에 연결한 후 뷰 처음에 표시 됩니다.
 
@@ -869,7 +869,7 @@ virtual void OnUpdate(
 
 하는 경우 *lHint* 은 0 및 *pHint* 가 null 인 경우 문서 일반 업데이트 알림을 보냈습니다. 뷰를 일반 업데이트 알림을 수신 하는 경우, 힌트를 디코딩할 수 없는 경우 전체 클라이언트 영역을 무효화 해야 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

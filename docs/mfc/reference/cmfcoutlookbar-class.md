@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CMFCOutlookBar [MFC], SetButtonsFont
 - CMFCOutlookBar [MFC], SetMode2003
 ms.assetid: 2b335f71-ce99-4efd-b103-e65ba43ffc36
-ms.openlocfilehash: fd865d888a4ebe4504f19282d3c98ce8d7514e2c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be11bcd4cdbcd8448cc54f688d7dab9b61f49a57
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622627"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304082"
 ---
 # <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar 클래스
 
@@ -89,13 +89,14 @@ class CMFCOutlookBar : public CBaseTabbedPane
 
 ## <a name="remarks"></a>설명
 
-Outlook 표시줄의 예제를 참조 합니다 [OutlookDemo 샘플: MFC OutlookDemo 응용 프로그램](../../visual-cpp-samples.md)합니다.
+Outlook 표시줄의 예 참조는 [OutlookDemo 샘플: MFC OutlookDemo 응용 프로그램](../../visual-cpp-samples.md)합니다.
 
 ## <a name="implementing-the-outlook-bar"></a>Outlook 표시줄 구현
 
 응용 프로그램에서 `CMFCOutlookBar` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
-1. `CMFCOutlookBar` 개체를 주 프레임 창 클래스에 포함합니다.
+1. 
+  `CMFCOutlookBar` 개체를 주 프레임 창 클래스에 포함합니다.
 
     ```cpp
     class CMainFrame : public CMDIFrameWnd
@@ -157,13 +158,13 @@ Outlook 표시줄의 예제를 참조 합니다 [OutlookDemo 샘플: MFC Outlook
 
 동적으로 추가 하거나 런타임에 새 페이지를 삭제 하려면 사용 [CMFCOutlookBar::CreateCustomPage](#createcustompage) 하 고 [CMFCOutlookBar::RemoveCustomPage](#removecustompage)합니다.
 
-## <a name="outlook-2003-mode"></a>Outlook 2003 모드
+## <a name="outlook-2003-mode"></a>Outlook 2003 Mode
 
 Outlook 2003 모드에서 탭 단추 Outlook 표시줄 창 맨 아래에 배치 됩니다. 단추를 표시 하려면 충분 한 공간이 없는 창의 아래쪽 도구 모음 같은 영역에 아이콘으로 표시 됩니다.
 
 사용 하 여 [CMFCOutlookBar::SetMode2003](#setmode2003) Outlook 2003 모드를 사용 하도록 설정 합니다. 사용 하 여 [CMFCOutlookBarTabCtrl::SetToolbarImageList](../../mfc/reference/cmfcoutlookbartabctrl-class.md#settoolbarimagelist) Outlook 표시줄의 맨 아래에 표시 되는 아이콘을 포함 하는 비트맵을 설정 합니다. 비트맵 아이콘 탭 인덱스 별로 정렬 되어야 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -458,7 +459,7 @@ virtual void OnAfterAnimation(int nPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*. n 페이지*<br/>
+*nPage*<br/>
 [in] 활성 이루어졌습니다 탭 페이지의 0부터 시작 하는 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -475,7 +476,7 @@ virtual BOOL OnBeforeAnimation(int nPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*. n 페이지*<br/>
+*nPage*<br/>
 [in] 활성 설정에 있는 탭 페이지의 0부터 시작 하는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -573,7 +574,7 @@ void SetMode2003(BOOL bMode2003=TRUE);
 > [!NOTE]
 >  이 함수를 호출 하기 전에 해야 [CMFCOutlookBar::Create](#create)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

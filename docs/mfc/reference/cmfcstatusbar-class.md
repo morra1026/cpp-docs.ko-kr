@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CMFCStatusBar [MFC], SetTipText
 - CMFCStatusBar [MFC], OnDrawPane
 ms.assetid: f2960d1d-f4ed-41e8-bd99-0382b2f8d88e
-ms.openlocfilehash: c4891c6bb66fe5e4b737ca9b128a01bcedcf39e7
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 94876dcf6549842a5fedbd96a93ef2cc760225ce
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176577"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326753"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar 클래스
 
@@ -130,7 +130,7 @@ class CMFCStatusBar : public CPane
 |[CMFCStatusBar::SetPaneWidth](#setpanewidth)|상태 표시줄의 지정 된 창의 픽셀 너비를 설정합니다.|
 |[CMFCStatusBar::SetTipText](#settiptext)|상태 표시줄의 지정 된 창에 대 한 도구 설명 텍스트를 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -166,7 +166,7 @@ class CMFCStatusBar : public CPane
 [!code-cpp[NVC_MFC_StatusBarDemo#4](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_8.cpp)]
 [!code-cpp[NVC_MFC_StatusBarDemo#5](../../mfc/reference/codesnippet/cpp/cmfcstatusbar-class_9.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -596,7 +596,7 @@ void SetPaneAnimation(
 *nFrameRate*<br/>
 [in] 애니메이션에 대 한 밀리초 프레임 속도 지정합니다.
 
-*b 업데이트*<br/>
+*bUpdate*<br/>
 [in] TRUE 이면 즉시 창 콘텐츠를 업데이트 합니다. 그렇지 않은 경우 창 콘텐츠 무효화 될 때 업데이트 됩니다.
 
 ### <a name="remarks"></a>설명
@@ -622,7 +622,7 @@ void SetPaneBackgroundColor(
 *clrBackground*<br/>
 [in] 새 배경색을 지정합니다.
 
-*b 업데이트*<br/>
+*bUpdate*<br/>
 [in] TRUE 이면 즉시 창 콘텐츠를 업데이트 합니다. 그렇지 않으면 창의 다른 메서드에 의해 무효화 될 때까지 창 콘텐츠를 업데이트 하지 마십시오.
 
 ##  <a name="setpaneicon"></a>  CMFCStatusBar::SetPaneIcon
@@ -650,7 +650,7 @@ void SetPaneIcon(
 *hIcon*<br/>
 [in] 창 이미지로 설정할 아이콘에 대 한 핸들을 지정 합니다.
 
-*b 업데이트*<br/>
+*bUpdate*<br/>
 [in] 창 콘텐츠를 즉시 업데이트할 것인지 지정 합니다.
 
 *hBmp*<br/>
@@ -703,7 +703,7 @@ void SetPaneProgress(
 *nCurr*<br/>
 [in] 진행률 표시기의 현재 값을 지정합니다.
 
-*b 업데이트*<br/>
+*bUpdate*<br/>
 [in] 창에 즉시 업데이트 해야 하는지 여부를 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -740,7 +740,7 @@ virtual BOOL SetPaneText(
 
 [in] *nIndex*<br/>
 [in] *lpszNewText*<br/>
-[in] *b 업데이트*<br/>
+[in] *bUpdate*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -765,7 +765,7 @@ void SetPaneTextColor(
 *clrText*<br/>
 [in] 텍스트 색을 지정 합니다.
 
-*b 업데이트*<br/>
+*bUpdate*<br/>
 [in] TRUE 이면 즉시 창 콘텐츠를 업데이트 합니다. 그렇지 않으면 창의 다른 메서드에 의해 무효화 될 때까지 창 콘텐츠를 업데이트 하지 마십시오.
 
 ##  <a name="setpanewidth"></a>  CMFCStatusBar::SetPaneWidth
@@ -804,9 +804,9 @@ void SetTipText(
 *pszTipText*<br/>
 [in] 새 도구 설명 텍스트입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CPane 클래스](../../mfc/reference/cpane-class.md)<br/>
+[CPane Class](../../mfc/reference/cpane-class.md)<br/>
 [CStatusBar 클래스](../../mfc/reference/cstatusbar-class.md)
