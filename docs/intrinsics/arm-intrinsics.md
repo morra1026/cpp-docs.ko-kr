@@ -1946,7 +1946,7 @@ Visual C++ 컴파일러에서 다음 내장 함수를 ARM 아키텍처에서 사
 
 ARM의 NEON 벡터 명령 집합 확장에서는 x86 및 x64 아키텍처 프로세서에 공통적인 MMX와 SSE 벡터 명령 집합의 기능과 비슷한 SIMD(Single Instruction Multiple Data) 기능이 제공됩니다.
 
-NEON 내장 함수는 `arm_neon.h` 헤더 파일에서 제공된 데로 지원됩니다. NEON 내장 함수에 대 한 Visual c + + 컴파일러 지원의 부록 G에 설명 되어 있는 ARM 컴파일러 유사 합니다 [ARM 컴파일러 도구 체인, 버전 4.1 컴파일러 참조](http://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Infocenter 웹 사이트에서 합니다.
+NEON 내장 함수는 `arm_neon.h` 헤더 파일에서 제공된 데로 지원됩니다. NEON 내장 함수에 대 한 Visual C++ 컴파일러 지원의 부록 G에 설명 되어 있는 ARM 컴파일러 유사 합니다 [ARM 컴파일러 도구 체인, 버전 4.1 컴파일러 참조](http://go.microsoft.com/fwlink/p/?LinkId=251083) ARM Infocenter 웹 사이트에서 합니다.
 
 Visual C++ 컴파일러와 ARM 컴파일러의 주요 차이점은 Visual C++ 컴파일러에서는 `_ex` 및 `vldX` 벡터 로드 및 저장 지침의 `vstX` 변형을 추가합니다. `_ex` 변형은 포인터 인수의 맞춤을 지정하는 추가 매개 변수를 사용하지만 그 외에는 `_ex`가 아닌 유형과 동일합니다.
 

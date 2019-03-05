@@ -16,7 +16,7 @@ ms.locfileid: "50523113"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임워크 및 플랫폼 도구 집합 수정
 
-다른 버전의.NET Framework를 대상으로 하는 다른 플랫폼 도구 집합을 사용 하 여 Visual c + + 프로젝트 설정을 변경할 수 있습니다. 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 프로젝트 속성을 수정하여 대상 플랫폼 도구 집합을 변경할 수 있습니다. 프로젝트 파일(.vcxproj)을 수정하여 대상 프레임워크를 변경할 수 있습니다. 각 컴파일 대상에 대해 별도의 코드베이스를 유지 관리할 필요는 없습니다.
+다른 버전의.NET Framework를 대상으로 하는 다른 플랫폼 도구 집합을 사용 하 여 Visual C++ 프로젝트 설정을 변경할 수 있습니다. 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 프로젝트 속성을 수정하여 대상 플랫폼 도구 집합을 변경할 수 있습니다. 프로젝트 파일(.vcxproj)을 수정하여 대상 프레임워크를 변경할 수 있습니다. 각 컴파일 대상에 대해 별도의 코드베이스를 유지 관리할 필요는 없습니다.
 
 > [!IMPORTANT]
 >  일부 버전에서는 수정된 대상 프레임워크 또는 플랫폼 도구 집합을 지원하지 않습니다. 호환성 정보를 참조 하세요 [포트, 마이그레이션 및 Visual Studio 프로젝트 업그레이드](/visualstudio/porting/port-migrate-and-upgrade-visual-studio-projects)합니다.

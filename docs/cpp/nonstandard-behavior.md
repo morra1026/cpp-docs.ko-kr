@@ -71,7 +71,7 @@ void f() throw(int); // parsed but not used
 void g() throw();    // parsed and used
 ```
 
-예외 사양에 대 한 자세한 내용은 참조 하세요. [예외 사양](../cpp/exception-specifications-throw-cpp.md)합니다.
+예외 사양에 대한 자세한 내용은 [예외 사양](../cpp/exception-specifications-throw-cpp.md)을 참조하세요. 
 
 ## <a name="chartraitseof"></a>char_traits::eof()
 

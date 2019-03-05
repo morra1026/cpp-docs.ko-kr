@@ -41,7 +41,7 @@ NMAKE를 사용하려면 개발자 명령 프롬프트 창에서 실행해야 �
 ## <a name="see-also"></a>참고 항목
 
 [명령줄에서 C/C++ 코드 빌드](../build/building-on-the-command-line.md)<br/>
-[ 빌드 도구](../build/reference/c-cpp-build-tools.md)<br/>
+[빌드 도구](../build/reference/c-cpp-build-tools.md)<br/>
 [Visual C++ 프로젝트 만들기 및 관리](../ide/creating-and-managing-visual-cpp-projects.md)<br/>
 [Visual Studio의 디버깅](/visualstudio/debugger/debugging-in-visual-studio)<br/>
 [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)
