@@ -21,9 +21,9 @@ ms.locfileid: "53626710"
 
 ## <a name="in-this-section"></a>단원 내용
 
-- [방법: X64을 64 비트 대상 Visual c + + 프로젝트 구성 플랫폼](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
+- [방법: X64을 64 비트 대상 Visual C++ 프로젝트 구성 플랫폼](../build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md)
 
-- [방법: 명령줄에서 64 비트 Visual c + + 도구를 사용 하도록 설정](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
+- [방법: 명령줄에서 64 비트 Visual C++ 도구를 사용 하도록 설정](../build/how-to-enable-a-64-bit-visual-cpp-toolset-on-the-command-line.md)
 
 - [일반적인 Visual C++ 64비트 마이그레이션 문제](../build/common-visual-cpp-64-bit-migration-issues.md)
 
