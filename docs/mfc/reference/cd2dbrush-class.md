@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CD2DBrush [MFC], m_pBrush
 - CD2DBrush [MFC], m_pBrushProperties
 ms.assetid: 0d2c0857-2261-48a8-8ee0-a88cbf08499a
-ms.openlocfilehash: 9e0be4b3b4f39d8fcf32f713bc8765d1f344babe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d079ec6c96f96919fde39b73297580ed2a0ac75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517886"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270984"
 ---
 # <a name="cd2dbrush-class"></a>CD2DBrush 클래스
 
@@ -54,7 +54,7 @@ class CD2DBrush : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DBrush::CD2DBrush](#cd2dbrush)|CD2DBrush 개체를 생성합니다.|
-|[CD2DBrush:: ~ CD2DBrush](#_dtorcd2dbrush)|소멸자입니다. D2D 브러시 개체 소멸 될 때 호출 됩니다.|
+|[CD2DBrush::~CD2DBrush](#_dtorcd2dbrush)|소멸자입니다. D2D 브러시 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -83,7 +83,7 @@ class CD2DBrush : public CD2DResource;
 |[CD2DBrush::m_pBrush](#m_pbrush)|ID2D1Brush 개체에 대 한 포인터를 저장합니다.|
 |[CD2DBrush::m_pBrushProperties](#m_pbrushproperties)|브러시 속성입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -95,7 +95,7 @@ class CD2DBrush : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dbrush"></a>  CD2DBrush:: ~ CD2DBrush
+##  <a name="_dtorcd2dbrush"></a>  CD2DBrush::~CD2DBrush
 
 소멸자입니다. D2D 브러시 개체 소멸 될 때 호출 됩니다.
 
@@ -223,7 +223,7 @@ ID2D1Brush* m_pBrush;
 CD2DBrushProperties* m_pBrushProperties;
 ```
 
-##  <a name="operator_id2d1brush_star"></a>  CD2DBrush::operator ID2D1Brush *
+##  <a name="operator_id2d1brush_star"></a>  CD2DBrush::operator ID2D1Brush*
 
 반환 ID2D1Brush 인터페이스
 
@@ -245,7 +245,7 @@ void SetOpacity(FLOAT opacity);
 
 ### <a name="parameters"></a>매개 변수
 
-*불투명도*<br/>
+*opacity*<br/>
 0에서 브러시의 불투명도 나타내는 1 사이의 값입니다. 이 값은 선형으로 브러시에 의해 채워진 모든 픽셀의 알파 값을 조정 하는 상수 승수입니다. 불투명 값을 함께 곱하기 전에 0 ~ 1 범위에 고정 됩니다.
 
 ##  <a name="settransform"></a>  CD2DBrush::SetTransform
@@ -261,6 +261,6 @@ void SetTransform(const D2D1_MATRIX_3X2_F* transform);
 *transform*<br/>
 렌더링 대상에 적용할 변환
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

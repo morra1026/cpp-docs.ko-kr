@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMFCAcceleratorKeyAssignCtrl [MFC], PreTranslateMessage
 - CMFCAcceleratorKeyAssignCtrl [MFC], ResetKey
 ms.assetid: 89fb8e62-596e-4e71-8c9a-32740347aaab
-ms.openlocfilehash: bd096657de56c0b6daa07004a927b92f1293ddf3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6ce8c75b1b764d1d2b66b86147035f069805d25
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454420"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298241"
 ---
 # <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl 클래스
 
@@ -47,7 +47,8 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel)|`CMFCAcceleratorKeyAssignCtrl` 개체에서 누른 바로 가기 키에 대한 `ACCEL` 구조체를 검색합니다.|
+|[CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel)|
+  `CMFCAcceleratorKeyAssignCtrl` 개체에서 누른 바로 가기 키에 대한 `ACCEL` 구조체를 검색합니다.|
 |[CMFCAcceleratorKeyAssignCtrl::IsFocused](#isfocused)||
 |[CMFCAcceleratorKeyAssignCtrl::IsKeyDefined](#iskeydefined)|바로 가기 키가 정의되었는지 여부를 확인합니다.|
 |[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|창 메시지가 [TranslateMessage](../../mfc/reference/cwinapp-class.md) 및 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) Windows 함수로 디스패치되기 전에 [CWinApp](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 클래스가 이 메시지를 해석하는 데 사용됩니다. ( [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage)를 재정의합니다.)|
@@ -65,7 +66,7 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
 
 [!code-cpp[NVC_MFC_RibbonApp#31](../../mfc/reference/codesnippet/cpp/cmfcacceleratorkeyassignctrl-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -107,7 +108,7 @@ ACCEL const* GetAccel() const;
 
 ##  <a name="isfocused"></a>  CMFCAcceleratorKeyAssignCtrl::IsFocused
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 BOOL IsFocused() const;
@@ -135,7 +136,7 @@ BOOL IsKeyDefined() const;
 
 ##  <a name="pretranslatemessage"></a>  CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -161,7 +162,7 @@ void ResetKey();
 
 함수 편집 컨트롤 텍스트를 지웁니다. 이 사용자가 누른 바로 가기 키를 포함 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

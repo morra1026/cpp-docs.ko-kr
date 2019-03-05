@@ -13,12 +13,12 @@ f1_keywords:
 - AMPRT/Concurrency::completion_future::wait_for
 - AMPRT/Concurrency::completion_future::wait_until
 ms.assetid: 1303c62e-546d-4b02-a578-251ed3fc0b6b
-ms.openlocfilehash: d121477cf63236ee40df826a63dd7c7c9880d142
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 663122c2d8cd430e921773e75dfd7975e4a41516
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535294"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272921"
 ---
 # <a name="completionfuture-class"></a>completion_future 클래스
 
@@ -55,10 +55,10 @@ class completion_future;
 
 |이름|설명|
 |----------|-----------------|
-|[operator std:: shared_future\<void >](#operator_shared_future)|암시적으로 변환 합니다 `completion_future` 개체는 `std::shared_future` 개체입니다.|
+|[operator std::shared_future\<void>](#operator_shared_future)|암시적으로 변환 합니다 `completion_future` 개체는 `std::shared_future` 개체입니다.|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `completion_future` 을 여기에 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `completion_future`
 
@@ -93,11 +93,12 @@ completion_future(
 
 |이름|설명|
 |----------|-----------------|
-|`completion_future();`|`completion_future` 클래스의 새 인스턴스를 초기화합니다.|
+|`completion_future();`|
+  `completion_future` 클래스의 새 인스턴스를 초기화합니다.|
 |`completion_future(const completion_future& _Other);`|생성자를 복사하여 `completion_future` 클래스의 새 인스턴스를 초기화합니다.|
 |`completion_future(completion_future&& _Other);`|생성자를 이동시켜 `completion_future` 클래스의 새 인스턴스를 초기화합니다.|
 
-## <a name="get"></a> 가져오기
+## <a name="get"></a> get
 
 연결된 된 비동기 작업이 완료 될 때까지 대기 합니다. 비동기 작업 중 하나가 발생한 경우 저장된 예외를 throw합니다.
 
@@ -121,7 +122,7 @@ operator std::shared_future<void>() const;
 
 `std::shared_future` 개체입니다.
 
-## <a name="operator_eq"></a> 연산자 =
+## <a name="operator_eq"></a> operator=
 
 지정 된 내용을 복사 `completion_future` 을 여기에 개체입니다.
 
@@ -287,6 +288,6 @@ std::future_status::future_status wait_until(
 ~completion_future();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

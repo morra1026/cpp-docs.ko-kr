@@ -6,12 +6,12 @@ helpviewer_keywords:
 - IPropertyPage class
 - property pages, implementing
 ms.assetid: 62f29440-33a7-40eb-a1ef-3634c95f640c
-ms.openlocfilehash: 415dae4a54b71a901a7976bda92361690c150e5d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e335c20464d8ea71fd75ce2e67f67ca14edacb0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543314"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299324"
 ---
 # <a name="implementing-property-pages"></a>속성 페이지 구현
 
@@ -45,7 +45,7 @@ ATL을 사용 하 여 속성 페이지를 만들려면:
 > [!NOTE]
 > 속성 페이지에서 ActiveX 컨트롤을 호스트 하려는 경우 마법사에서 생성 된 클래스의 파생을 변경 해야 합니다. 바꿉니다 **CDialogImpl\<CYourClass >** 사용 하 여 **CAxDialogImpl\<CYourClass >** 기본 클래스 목록에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[속성 페이지](../atl/atl-com-property-pages.md)<br/>
+[속성 페이지(Visual C++)](../atl/atl-com-property-pages.md)<br/>
 [ATLPages 샘플](../visual-cpp-samples.md)

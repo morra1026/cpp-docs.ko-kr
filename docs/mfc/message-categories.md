@@ -10,12 +10,12 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - message handling [MFC], message types
 ms.assetid: 68e1db75-9da6-4a4d-b2c2-dc4d59f8d87b
-ms.openlocfilehash: e8b7385a233c2074fe9bfc491d89de7629c730c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07d9e706e8ed01a81ee580e7c4e11fa1f1a7a8df
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619858"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326246"
 ---
 # <a name="message-categories"></a>메시지 범주
 
@@ -43,7 +43,6 @@ ms.locfileid: "50619858"
 
 범주 3 메시지-명령-다양 한 개체에서 처리할 수 있습니다: 문서, 문서 템플릿 및 창 및 뷰 외에도 응용 프로그램 개체 자체입니다. 명령에서 직접 몇 가지 특정 개체에 영향을 하면 개체가 명령을 처리 하는 것이 좋습니다. 파일 메뉴에서 열기 명령을 응용 프로그램과 함께 논리적으로 연결 되는 예를 들어: 응용 프로그램 명령의 받을 때 지정된 된 문서를 엽니다. 따라서 열려 있는 명령에 대 한 처리기는 응용 프로그램 클래스의 멤버 함수입니다. 명령 및 개체에 라우팅되는 방식을 대 한 자세한 내용은 참조 하세요 [프레임 워크가 처리기를 호출 하는 방법을](../mfc/how-the-framework-calls-a-handler.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)
-

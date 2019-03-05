@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CDaoTableDef [MFC], m_pDAOTableDef
 - CDaoTableDef [MFC], m_pDatabase
 ms.assetid: 7c5d2254-8475-43c4-8a6c-2d32ead194c9
-ms.openlocfilehash: b2f431b250da4b791c06a629315d59bbc7935802
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 485fe3533916e5e59bc87084f58acfb37368ac32
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579242"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270230"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef 클래스
 
@@ -179,7 +179,7 @@ DAO 데이터베이스 개체에 모든 저장 된 DAO 테이블 정의 개체�
 
 테이블 정의 사용 하 여를 완료 하면 호출 해당 [닫기](../../mfc/reference/cdaorecordset-class.md#close) 멤버 함수, 테이블 정의 개체를 삭제 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -315,7 +315,7 @@ void CreateField(CDaoFieldInfo& fieldinfo);
 *lpszName*<br/>
 이 필드의 이름을 지정 하는 문자열 식에 대 한 포인터입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 필드의 데이터 형식을 나타내는 값입니다. 설정에는 다음이 값 중 하나일 수 있습니다.
 
 |형식|크기(바이트)|설명|
@@ -582,9 +582,9 @@ void GetFieldInfo(
 
 - `AFX_DAO_PRIMARY_INFO` (기본값) 이름, 유형, 크기, 특성입니다. 가장 빠른 성능을 위해이 옵션을 사용 합니다.
 
-- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 필요한 서 수 위치 0 길이, 데이터 정렬 순서, 외부 이름, 원본 필드, 원본 테이블 허용
+- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 서 수 위치에 필요한 순서, 외부 이름, 원본 필드, 원본 테이블 데이터 정렬, 길이가 0 허용
 
-- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 plus: 유효성 검사 규칙 유효성 검사 텍스트 기본값
+- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 및: 유효성 검사 규칙 유효성 검사 텍스트 기본값
 
 *lpszName*<br/>
 이름별 조회에 대 한 필드 개체의 이름에 대 한 포인터입니다. 이름은 64 자까지를 사용 하 여 고유 필드의 이름을 지정 하는 문자열입니다.
@@ -644,9 +644,9 @@ void GetIndexInfo(
 
 - `AFX_DAO_PRIMARY_INFO` 이름 필드가 정보 필드입니다. 가장 빠른 성능을 위해이 옵션을 사용 합니다.
 
-- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 기본, 고유, 클러스터형, 무시 Null, 필요한 외부
+- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 기본, Unique, Null, 필요한 경우 외래 무시 클러스터링
 
-- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 plus: 고유 카운트
+- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 및: Distinct Count
 
 *lpszName*<br/>
 이름별 조회에 대 한 인덱스 개체의 이름에 대 한 포인터입니다.
@@ -863,21 +863,21 @@ ODBC 또는 설치할 수 있는 ISAM 드라이버에 전달할 추가 매개 �
 |데이터베이스 유형|지정자|Path|
 |-------------------|---------------|----------|
 |Jet 데이터베이스 엔진을 사용 하 여 데이터베이스|"[ `database`];"|" `drive`:\\\ *경로*\\\ *filename*합니다. MDB "|
-|dBASE III|"dBASE III;"|" `drive`:\\\ *경로*"|
-|dBASE IV|"dBASE IV;"|" `drive`:\\\ *경로*"|
-|dBASE 5|"dBASE 5.0;"|" `drive`:\\\ *경로*"|
-|Paradox 3.x|"Paradox 3.x;"|" `drive`:\\\ *경로*"|
-|Paradox 4.x|"Paradox 4.x;"|" `drive`:\\\ *경로*"|
-|Paradox 5.x|"Paradox 5.x;"|" `drive`:\\\ *경로*"|
+|dBASE III|"dBASE III;"|" `drive`:\\\ *path*"|
+|dBASE IV|"dBASE IV;"|" `drive`:\\\ *path*"|
+|dBASE 5|"dBASE 5.0;"|" `drive`:\\\ *path*"|
+|Paradox 3.x|"Paradox 3.x;"|" `drive`:\\\ *path*"|
+|Paradox 4.x|"Paradox 4.x;"|" `drive`:\\\ *path*"|
+|Paradox 5.x|"Paradox 5.x;"|" `drive`:\\\ *path*"|
 |Excel 3.0|"Excel 3.0;"|" `drive`:\\\ *경로*\\\ *filename*합니다. XLS "|
 |Excel 4.0|"Excel 4.0;"|" `drive`:\\\ *경로*\\\ *filename*합니다. XLS "|
 |5.0 Excel 또는 Excel 95|"Excel 5.0;"|" `drive`:\\\ *경로*\\\ *filename*합니다. XLS "|
 |Excel 97|"Excel 8.0;"|" `drive`:\\\ *경로*\ *filename*합니다. XLS "|
-|HTML 가져오기|"HTML 가져오기";|" `drive`:\\\ *경로*\ *filename*"|
-|HTML 내보내기|"HTML 내보내기;"|" `drive`:\\\ *경로*"|
-|텍스트|"텍스트"|"드라이브:\\\path"|
+|HTML 가져오기|"HTML 가져오기";|" `drive`:\\\ *path*\ *filename*"|
+|HTML Export|"HTML Export;"|" `drive`:\\\ *path*"|
+|텍스트|"텍스트"|"drive:\\\path"|
 |ODBC|"ODBC; 데이터베이스 = `database`; UID = *사용자*; PWD = *암호*; DSN = *datasourcename;* LOGINTIMEOUT = *; 초*" (이 모든 서버에 대 한 전체 연결 문자열로 아닐 수 있습니다; 하나의 예일 것입니다. 것이 매개 변수 사이 공백을 유지할 필요가 없으며 매우 중요 합니다.)|없음|
-|Exchange|"Exchange;<br /><br /> MAPILEVEL = *folderpath*;<br /><br /> [TABLETYPE = {0 &AMP;#124; 1};]<br /><br /> [프로필 = *프로필*;]<br /><br /> [PWD = *암호*;]<br /><br /> [DATABASE = `database`;] "|*"드라이브*:\\\ *경로*\\\ *filename*합니다. MDB "|
+|Exchange|"Exchange;<br /><br /> MAPILEVEL= *folderpath*;<br /><br /> [TABLETYPE={ 0 &#124; 1 };]<br /><br /> [PROFILE= *profile*;]<br /><br /> [PWD= *password*;]<br /><br /> [DATABASE= `database`;]"|*"drive*:\\\ *path*\\\ *filename*.MDB"|
 
 > [!NOTE]
 >  더 이상 Btrieve는 DAO 3.5부터 지원 됩니다.
@@ -972,7 +972,7 @@ void SetValidationText(LPCTSTR lpszValidationText);
 
 관련된 정보 DAO 도움말의 "유효성 검사 텍스트 속성" 항목을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

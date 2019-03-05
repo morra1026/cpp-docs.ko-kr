@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: c8c8971e467b2b8063bb5bb5d8e953fc48bcc42e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3fcdddd27437f57ba800a602873d9bb3ae26e82f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666104"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283607"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl 클래스
 
@@ -151,7 +151,7 @@ class CSliderCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CSliderCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CSliderCtrl 사용 하 여](../../mfc/using-csliderctrl.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -388,7 +388,7 @@ void GetRange(
 *nMin*<br/>
 최소 위치를 수신 하는 정수에 대 한 참조입니다.
 
-*최대*<br/>
+*nMax*<br/>
 최대 위치를 수신 하는 정수에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -434,7 +434,7 @@ void GetSelection(
 *nMin*<br/>
 현재 선택 영역의 시작 위치를 수신 하는 정수에 대 한 참조입니다.
 
-*최대*<br/>
+*nMax*<br/>
 현재 선택 영역의 끝 위치를 수신 하는 정수에 대 한 참조입니다.
 
 ##  <a name="getthumblength"></a>  CSliderCtrl::GetThumbLength
@@ -633,7 +633,7 @@ void SetRange(
 *nMin*<br/>
 최소 슬라이더 위치입니다.
 
-*최대*<br/>
+*nMax*<br/>
 최대 슬라이더 위치입니다.
 
 *bRedraw*<br/>
@@ -651,7 +651,7 @@ void SetRangeMax(
 
 ### <a name="parameters"></a>매개 변수
 
-*최대*<br/>
+*nMax*<br/>
 최대 슬라이더 위치입니다.
 
 *bRedraw*<br/>
@@ -690,7 +690,7 @@ void SetSelection(
 *nMin*<br/>
 슬라이더의 시작 위치입니다.
 
-*최대*<br/>
+*nMax*<br/>
 슬라이더에 대 한 끝 위치입니다.
 
 ##  <a name="setthumblength"></a>  CSliderCtrl::SetThumbLength
@@ -771,7 +771,7 @@ int SetTipSide(int nLocation);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 위치*<br/>
+*nLocation*<br/>
 도구 설명 컨트롤을 표시할 위치를 나타내는 값입니다. 가능한 값 목록을 Win32 메시지를 참조 하세요 [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside)Windows SDK에 설명 된 대로 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -799,7 +799,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 
 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips)Windows SDK에 설명 된 대로 합니다. 슬라이더 컨트롤을 TBS_TOOLTIPS 스타일을 사용 하 여 만들어질 때 슬라이더의 현재 위치를 표시, 슬라이더 옆에 표시 되는 기본 도구 설명 컨트롤을 만듭니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

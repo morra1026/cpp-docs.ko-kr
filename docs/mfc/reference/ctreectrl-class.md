@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: cc98a2e24fbb3eaff94e4c941986080d0bdbd7ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bc31cc9cff12146e6f5fe227e0e191d1c555063
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477950"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271400"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -283,7 +283,7 @@ class CTreeCtrl : public CWnd
 
 - [트리 뷰 컨트롤 참조](/windows/desktop/Controls/tree-view-control-reference) Windows SDK에에서 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1347,7 +1347,7 @@ HTREEITEM HitTest(TVHITTESTINFO* pHitTestInfo) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 테스트할 점의 좌표를 클라이언트입니다.
 
 *pFlags*<br/>
@@ -2339,7 +2339,7 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
 
 [!code-cpp[NVC_MFC_CTreeCtrl#39](../../mfc/reference/codesnippet/cpp/ctreectrl-class_47.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

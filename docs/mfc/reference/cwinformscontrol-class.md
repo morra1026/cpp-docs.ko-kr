@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsControl [MFC], GetControl
 - CWinFormsControl [MFC], GetControlHandle
 ms.assetid: 6406dd7b-fb89-4a18-ac3a-c010d6b6289a
-ms.openlocfilehash: e8728c876badcf6648740cc842a1f289789bf0f4
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 91691203f88f07f597aaad6a5db32b03e7ad11c4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178241"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289314"
 ---
 # <a name="cwinformscontrol-class"></a>CWinFormsControl 클래스
 
@@ -57,8 +57,8 @@ MFC 응용 프로그램에 표시 되는.NET Framework Windows Forms 컨트롤�
 
 |이름|설명|
 |----------|-----------------|
-|[CWinFormsControl::operator-&gt;](#operator_-_gt)|대체 [CWinFormsControl::GetControl](#getcontrol) 식에 있습니다.|
-|[CWinFormsControl::operator TManagedControl ^](#operator_tmanagedcontrol)|Windows Forms 컨트롤에 대 한 포인터로 형식을 캐스팅합니다.|
+|[CWinFormsControl::operator -&gt;](#operator_-_gt)|대체 [CWinFormsControl::GetControl](#getcontrol) 식에 있습니다.|
+|[CWinFormsControl::operator TManagedControl^](#operator_tmanagedcontrol)|Windows Forms 컨트롤에 대 한 포인터로 형식을 캐스팅합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -190,7 +190,7 @@ Windows Forms 컨트롤에 대 한 핸들을 반환합니다.
 
 `GetControlHandle` .NET Framework 컨트롤 속성에 저장 된 창 핸들을 반환 하는 도우미 메서드입니다. 창 핸들 값을를 복사할 [CWnd::m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) 호출 하는 동안 [CWnd::Attach](../../mfc/reference/cwnd-class.md#attach)합니다.
 
-##  <a name="operator_-_gt"></a>  CWinFormsControl::operator-&gt;
+##  <a name="operator_-_gt"></a>  CWinFormsControl::operator -&gt;
 
 대체 [CWinFormsControl::GetControl](#getcontrol) 식에 있습니다.
 
@@ -204,7 +204,7 @@ inline TManagedControl^  operator->() const;
 
 Windows Forms에 대 한 자세한 내용은 참조 하세요. [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
-##  <a name="operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl ^
+##  <a name="operator_tmanagedcontrol"></a>  CWinFormsControl::operator TManagedControl^
 
 Windows Forms 컨트롤에 대 한 포인터로 형식을 캐스팅합니다.
 
@@ -216,7 +216,7 @@ inline operator TManagedControl^() const;
 
 이 연산자가 전달 `CWinFormsControl<TManagedControl>` Windows Forms 컨트롤에 대 한 포인터를 받아들이는 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinFormsDialog 클래스](../../mfc/reference/cwinformsdialog-class.md)<br/>
 [CWinFormsView 클래스](../../mfc/reference/cwinformsview-class.md)

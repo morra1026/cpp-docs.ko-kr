@@ -12,12 +12,12 @@ helpviewer_keywords:
 - icons, using in status bars
 - CStatusBarCtrl class [MFC], declaring parts of
 ms.assetid: 60e8f285-d2d8-424a-a6ea-2fc548370303
-ms.openlocfilehash: c813ef53f94fb773b62f102a484eed2be859772e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f00aee03a74799bf14563653b50c487ff001d02
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662165"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264337"
 ---
 # <a name="initializing-the-parts-of-a-cstatusbarctrl-object"></a>CStatusBarCtrl 개체의 일부 초기화
 
@@ -31,8 +31,7 @@ ms.locfileid: "50662165"
 
 모드를 설정 하는 방법은 `CStatusBarCtrl` 간단한 참조 개체 [CStatusBarCtrl 개체의 모드 설정](../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

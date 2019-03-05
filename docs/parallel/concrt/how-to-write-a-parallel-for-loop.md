@@ -1,18 +1,18 @@
 ---
-title: '방법: parallel_for 루프 작성'
+title: '방법: Parallel_for 루프 작성'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - writing a parallel_for loop [Concurrency Runtime]
 - parallel_for function, example
 ms.assetid: adb4d64e-5514-4b70-8dcb-b9210e6b5a1c
-ms.openlocfilehash: 5caba385304e97bf2e1008a44724c792d56124f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d6ac30a5de0ff45adad1064aeab708e6a84f5e9f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592716"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283594"
 ---
-# <a name="how-to-write-a-parallelfor-loop"></a>방법: parallel_for 루프 작성
+# <a name="how-to-write-a-parallelfor-loop"></a>방법: Parallel_for 루프 작성
 
 이 예제에 사용 하는 방법을 보여 줍니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 두 행렬의 곱을 계산 합니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "50592716"
 
 [!code-cpp[concrt-parallel-matrix-multiply#3](../../parallel/concrt/codesnippet/cpp/how-to-write-a-parallel-for-loop_3.cpp)]
 
-프로세서가 4개인 컴퓨터의 샘플 출력은 다음과 같습니다.
+다음 샘플은 프로세서가 4개인 컴퓨터에 대한 출력입니다.
 
 ```Output
 serial: 3853
@@ -49,8 +49,7 @@ parallel: 1311
 
 **cl.exe /EHsc 병렬-행렬-multiply.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_for 함수](reference/concurrency-namespace-functions.md#parallel_for)
-

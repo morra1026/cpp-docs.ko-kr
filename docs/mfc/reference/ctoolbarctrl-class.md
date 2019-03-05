@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: 9e2df5117f6cbb96c69f54fe9e21f85b45218d6d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 61cbcbd2a64e8648c6467ebbc0d86d6f89953442
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178982"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302505"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -307,9 +307,11 @@ Windows 도구 모음 공용 컨트롤에는 하나 이상의 단추를 포함 �
 
 `CToolBarCtrl` 개체에 몇 가지 중요 한 내부 데이터 구조가 포함 될: 단추 이미지 비트맵의 목록을 또는 이미지 목록, 단추 레이블 문자열 목록이 및 목록은 `TBBUTTON` 이미지를 연결 하거나, 스타일, 위치를 사용 하 여 문자열는 구조, 상태 및 명령 ID 단추입니다. 각 이러한 데이터 구조의 요소의 0부터 시작 인덱스에 의해 참조 됩니다. 사용 하기 전에 `CToolBarCtrl` 개체를 이러한 데이터 구조를 설정 해야 합니다. 단추 레이블;에 대 한 문자열의 목록 에서만 사용할 수 있습니다. 도구 모음에서 문자열을 검색할 수 없습니다.
 
-`CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
 
-1. `CToolBarCtrl` 개체를 생성합니다.
+  `CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
+
+1. 
+  `CToolBarCtrl` 개체를 생성합니다.
 
 1. 호출 [Create](#create) Windows 도구 모음 공용 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다. 투명 한 도구 모음에 대 한 TBSTYLE_TRANSPARENT 등 TBSTYLE_DROPDOWN 스타일 드롭다운 단추를 지 원하는 도구 모음에 대 한 스타일을 사용 하 여 도구 모음의 스타일을 나타냅니다.
 
@@ -339,7 +341,7 @@ Internet Explorer 4.0 이상 버전에서에서 도입 된 기능을 지원 하�
 
 사용 하 여 대 한 자세한 내용은 `CToolBarCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CToolBarCtrl 사용 하 여](../../mfc/using-ctoolbarctrl.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -579,7 +581,7 @@ BOOL CheckButton(
 *nID*<br/>
 단추를 선택 하거나 선택 취소의 명령 식별자입니다.
 
-*확인*<br/>
+*bCheck*<br/>
 확인 단추를 선택 취소 하려면 FALSE true로 설정 하면.
 
 ### <a name="return-value"></a>반환 값
@@ -1266,7 +1268,7 @@ int GetString(
 
 ### <a name="parameters"></a>매개 변수
 
-*항목이*<br/>
+*nString*<br/>
 문자열의 인덱스입니다.
 
 *lpstrString*<br/>
@@ -2384,7 +2386,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 이 멤버 함수는의 기능을 에뮬레이션 합니다 [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) Windows SDK에 설명 된 대로 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>

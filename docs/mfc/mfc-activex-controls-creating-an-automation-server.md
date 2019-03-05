@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], Automation server
 - MFC ActiveX controls [MFC], Automation server
 ms.assetid: e0c24ed2-d61c-49ad-a4fa-4e1098d1d39b
-ms.openlocfilehash: 6861d8b0798ece957c84f52a15032052aa83b9c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01f0162e124c5c49d45ce4a90f5243c88b09b5a0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448128"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303731"
 ---
 # <a name="mfc-activex-controls-creating-an-automation-server"></a>MFC ActiveX 컨트롤: 자동화 서버 만들기
 
@@ -47,7 +47,6 @@ ms.locfileid: "50448128"
 
 응용 프로그램에서 사용 후 ActiveX 컨트롤에 메서드 추가 하는 경우 응용 프로그램에서 컨트롤의 최신 버전을 사용 하 여 형식 라이브러리를 가져올 때 생성 된 파일을 삭제 하 여 시작할 수 있습니다. 다음 형식 라이브러리를 다시 가져오십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

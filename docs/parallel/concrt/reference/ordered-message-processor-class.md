@@ -14,16 +14,17 @@ f1_keywords:
 helpviewer_keywords:
 - ordered_message_processor class
 ms.assetid: 787adfb7-7f79-4a70-864a-80e3b64088cd
-ms.openlocfilehash: c6e09ff862f0725cc508e3e390dbfa3cc12f7daa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b88544f399031a5f770fa39aa1f3300306158511
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545966"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270750"
 ---
 # <a name="orderedmessageprocessor-class"></a>ordered_message_processor 클래스
 
-`ordered_message_processor`는 메시지 블록이 수신된 순서대로 메시지를 처리할 수 있도록 하는 `message_processor`입니다.
+
+  `ordered_message_processor`는 메시지 블록이 수신된 순서대로 메시지를 처리할 수 있도록 하는 `message_processor`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -49,7 +50,8 @@ class ordered_message_processor : public message_processor<T>;
 
 |이름|설명|
 |----------|-----------------|
-|[ordered_message_processor](#ctor)|`ordered_message_processor` 개체를 생성합니다.|
+|[ordered_message_processor](#ctor)|
+  `ordered_message_processor` 개체를 생성합니다.|
 |[~ordered_message_processor Destructor](#dtor)|제거 된 `ordered_message_processor` 개체입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -62,13 +64,13 @@ class ordered_message_processor : public message_processor<T>;
 |[sync_send](#sync_send)|동기적으로 메시지를 큐에 대기 하 고 이미 수행 하지 않은 경우 처리 작업을를 시작 합니다. (재정의 [message_processor:: sync_send](message-processor-class.md#sync_send).)|
 |[wait](#wait)|모든 비동기 처리 작업 블록을 제거 하기 전에 시간이 있는지 확인 하려면 메시지 블록의 소멸자에 사용 되는 특정 프로세서 관련 스핀 대기 합니다. (재정의 [message_processor:: wait](message-processor-class.md#wait).)|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
 |[process_incoming_message](#process_incoming_message)|비동기적으로 호출 되는 처리 함수입니다. 메시지를 큐에서 제거 하 고 처리를 시작 합니다. (재정의 [message_processor:: process_incoming_message](message-processor-class.md#process_incoming_message).)|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [message_processor](message-processor-class.md)
 
@@ -135,7 +137,8 @@ virtual void initialize_batched_processing(
 
 ##  <a name="ctor"></a> ordered_message_processor
 
-`ordered_message_processor` 개체를 생성합니다.
+
+  `ordered_message_processor` 개체를 생성합니다.
 
 ```
 ordered_message_processor();
@@ -186,6 +189,6 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg);
 virtual void wait();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

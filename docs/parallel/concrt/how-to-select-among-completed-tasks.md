@@ -1,18 +1,18 @@
 ---
-title: '방법: 완료된 작업 중에서 선택'
+title: '방법: 완료 된 작업 간 선택'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - selecting among completed tasks [Concurrency Runtime]
 - completed tasks, selecting among [Concurrency Runtime]
 ms.assetid: c8ccc160-043f-4599-847b-32ed270bb257
-ms.openlocfilehash: c9137c3d1e354a5e3f50f0d281ecbbd247642597
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d31f9bd16aaa70cc773e60e4f1193e66ec520f0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551634"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278030"
 ---
-# <a name="how-to-select-among-completed-tasks"></a>방법: 완료된 작업 중에서 선택
+# <a name="how-to-select-among-completed-tasks"></a>방법: 완료 된 작업 간 선택
 
 사용 하는 방법을 보여 주는이 예제는 [concurrency:: choice](../../parallel/concrt/reference/choice-class.md) 하 고 [concurrency:: join](../../parallel/concrt/reference/join-class.md) 검색 알고리즘을 완료 하려면 첫 번째 작업을 선택 하는 클래스입니다.
 
@@ -47,11 +47,11 @@ No employee has id 899 or salary 31223.00.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `find-employee.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `find-employee.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc 찾기-employee.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

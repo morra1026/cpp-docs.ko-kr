@@ -156,12 +156,12 @@ helpviewer_keywords:
 - CMDIFrameWndEx [MFC], m_bCanCovertControlBarToMDIChild
 - CMDIFrameWndEx [MFC], m_bDisableSetRedraw
 ms.assetid: dbcafcb3-9a7a-4f11-9dfe-ba57565c81d0
-ms.openlocfilehash: 7ed2d1de2a91f90cd4e7efecac728e66f86d95a6
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 81d227c241adf0ce72ccd4a554134d7d858b4a6d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178632"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275430"
 ---
 # <a name="cmdiframewndex-class"></a>CMDIFrameWndEx 클래스
 
@@ -197,7 +197,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::EnableFullScreenMainMenu](#enablefullscreenmainmenu)|표시 하거나 전체 화면 모드에서 주 메뉴를 숨깁니다.|
 |[CMDIFrameWndEx::EnableFullScreenMode](#enablefullscreenmode)|프레임 창에 대 한 전체 화면 모드를 사용 합니다.|
 |[CMDIFrameWndEx::EnableLoadDockState](#enableloaddockstate)|사용 하거나 도킹 상태를 로드 하는 사용 하지 않도록 설정 합니다.|
-|[Cmdiframewndex:: Enablemditabbedgroups](#enablemditabbedgroups)|사용 하거나 MDI 탭 그룹 기능을 사용 하지 않도록 설정 합니다.|
+|[CMDIFrameWndEx::EnableMDITabbedGroups](#enablemditabbedgroups)|사용 하거나 MDI 탭 그룹 기능을 사용 하지 않도록 설정 합니다.|
 |[CMDIFrameWndEx::EnableMDITabs](#enablemditabs)|사용 하거나 MDI 탭 기능을 사용 하지 않도록 설정 합니다. 사용 하도록 설정 하면 각 MDI 자식 창에 대 한 탭 프레임 창에 표시 됩니다.|
 |[CMDIFrameWndEx::EnableMDITabsLastActiveActivation](#enablemditabslastactiveactivation)|사용자가 현재 탭을 닫을 때 마지막으로 활성 탭을 활성화할 수 있는지 여부를 지정 합니다.|
 |[CMDIFrameWndEx::EnablePaneMenu](#enablepanemenu)|사용 하거나 응용 프로그램 창 목록을 표시 하는 팝업 창 메뉴의 자동 생성 및 관리를 사용 하지 않도록 설정 합니다.  .|
@@ -221,7 +221,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::IsPointNearDockSite](#ispointneardocksite)|도킹 사이트 근처에 지정된 된 지점 인지 여부를 결정 합니다.|
 |[CMDIFrameWndEx::IsPrintPreview](#isprintpreview)|프레임 창을 인쇄 미리 보기 모드 인지 여부를 결정 합니다.|
 |[CMDIFrameWndEx::LoadFrame](#loadframe)|리소스 정보에서 프레임 창을 만듭니다. ( `CMDIFrameWnd::LoadFrame`을 재정의합니다.)|
-|[Cmdiframewndex:: Loadmdistate](#loadmdistate)|MDI 탭 그룹의 지정 된 레이아웃 및 이전에 열린된 문서의 목록을 로드합니다.|
+|[CMDIFrameWndEx::LoadMDIState](#loadmdistate)|MDI 탭 그룹의 지정 된 레이아웃 및 이전에 열린된 문서의 목록을 로드합니다.|
 |[CMDIFrameWndEx::MDITabMoveToNextGroup](#mditabmovetonextgroup)|다음 또는 이전 탭된 그룹에 현재 활성 탭된 창에서 활성 탭을 이동합니다.|
 |[CMDIFrameWndEx::MDITabNewGroup](#mditabnewgroup)|단일 창에는 새 탭된 그룹을 만듭니다.|
 |[CMDIFrameWndEx::NegotiateBorderSpace](#negotiateborderspace)|OLE 내부 활성화 동안 프레임 창의 테두리 공간을 협상합니다.|
@@ -255,7 +255,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::TabbedDocumentToControlBar](#tabbeddocumenttocontrolbar)|도킹 창에 지정된 된 탭된 문서를 변환합니다.|
 |[CMDIFrameWndEx::UpdateCaption](#updatecaption)|창 프레임 캡션을 업데이트 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CMDIFrameWndEx::UpdateMDITabbedBarsIcons](#updatemditabbedbarsicons)|각 MDI 탭된 창에 대 한 아이콘을 설정 합니다.|
-|[CMDIFrameWndEx::WinHelp](#winhelp)|WinHelp 응용 프로그램 또는 상황에 맞는 도움말을 시작하기 위해 프레임워크에서 호출됩니다. (재정의 [cwnd:: Winhelp](../../mfc/reference/cwnd-class.md#winhelp).)|
+|[CMDIFrameWndEx::WinHelp](#winhelp)|WinHelp 애플리케이션 또는 상황에 맞는 도움말을 시작하기 위해 프레임워크에서 호출됩니다. (재정의 [cwnd:: Winhelp](../../mfc/reference/cwnd-class.md#winhelp).)|
 
 ### <a name="data-members"></a>데이터 멤버
 
@@ -646,7 +646,7 @@ void EnableLoadDockState(BOOL bEnable = TRUE);
 
 ### <a name="remarks"></a>설명
 
-##  <a name="enablemditabbedgroups"></a>  Cmdiframewndex:: Enablemditabbedgroups
+##  <a name="enablemditabbedgroups"></a>  CMDIFrameWndEx::EnableMDITabbedGroups
 
 사용 하거나 프레임 창에 대해 MDI 탭된 그룹 기능을 사용 하지 않도록 설정 합니다.
 
@@ -1047,7 +1047,7 @@ BOOL InsertPane(
 *pTarget*<br/>
 [in] 창에 삽입할 전후 창에 대 한 포인터입니다.
 
-*후에는*<br/>
+*bAfter*<br/>
 [in] TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1193,7 +1193,7 @@ virtual BOOL LoadFrame(
 
 TRUE는 메서드가 성공 하면, 그렇지 않으면 FALSE입니다.
 
-##  <a name="loadmdistate"></a>  Cmdiframewndex:: Loadmdistate
+##  <a name="loadmdistate"></a>  CMDIFrameWndEx::LoadMDIState
 
 MDI 탭 그룹의 지정 된 레이아웃 및 이전에 열린된 문서의 목록을 로드합니다.
 
@@ -1238,7 +1238,7 @@ void MDITabMoveToNextGroup(BOOL bNext=TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*다음*<br/>
+*bNext*<br/>
 [in] TRUE 이면 다음 탭된 그룹으로 탭을 이동 합니다. FALSE 인 경우 이전 탭된 그룹으로 이동 합니다.
 
 ##  <a name="mditabnewgroup"></a>  CMDIFrameWndEx::MDITabNewGroup
@@ -1501,7 +1501,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 *pButton*<br/>
 [in] 도구 모음 단추입니다.
 
-*PTI*<br/>
+*pTI*<br/>
 [out] 에 대 한 포인터를 [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1888,7 +1888,7 @@ void SetupToolbarMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴*<br/>
+*menu*<br/>
 [in] 에 대 한 참조를 [CMenu 클래스](../../mfc/reference/cmenu-class.md) 개체를 수정할 수 있습니다.
 
 *uiViewUserToolbarCmdFirst*<br/>
@@ -2004,7 +2004,7 @@ void UpdateMDITabbedBarsIcons();
 
 ##  <a name="winhelp"></a>  CMDIFrameWndEx::WinHelp
 
-WinHelp 응용 프로그램 또는 상황에 맞는 도움말을 시작하기 위해 프레임워크에서 호출됩니다.
+WinHelp 애플리케이션 또는 상황에 맞는 도움말을 시작하기 위해 프레임워크에서 호출됩니다.
 
 ```
 virtual void WinHelp(
@@ -2024,7 +2024,7 @@ virtual void WinHelp(
 
 이 메서드는 [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp)를 재정의합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

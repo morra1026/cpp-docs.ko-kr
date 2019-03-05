@@ -11,12 +11,12 @@ helpviewer_keywords:
 - server applications [MFC], vs. client applications on Internet
 - client applications [MFC], vs. server applications on Internet
 ms.assetid: 9b96172c-b4d4-4c69-bfb2-226ce0de6d08
-ms.openlocfilehash: b9b794070d1c4ff4f05f33895a7af5532a524ad1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdb294e4ab808a7e4cbcec457f6e744eff9f12cb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602932"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302816"
 ---
 # <a name="application-design-choices"></a>응용 프로그램 디자인 선택
 
@@ -24,7 +24,7 @@ ms.locfileid: "50602932"
 
 이 문서에서 다루는 항목은 다음과 같습니다.
 
-- [인터넷 및 인트라넷](#_core_intranet_versus_internet)
+- [Intranet Versus Internet](#_core_intranet_versus_internet)
 
 - [클라이언트 또는 서버 응용 프로그램](#_core_client_or_server_application)
 
@@ -38,7 +38,7 @@ ms.locfileid: "50602932"
 
 이제 프로그램 작성을 시작, 참조에 준비가 되었으면 [MFC 응용 프로그램 작성](../mfc/writing-mfc-applications.md)합니다.
 
-##  <a name="_core_intranet_versus_internet"></a> 인터넷 및 인트라넷
+##  <a name="_core_intranet_versus_internet"></a> Intranet Versus Internet
 
 대부분의 응용 프로그램에는 인터넷에서 실행 되며 브라우저 및 인터넷 액세스를 가진 사람이 면 누구나 액세스할 수 있습니다. 기업 인트라넷 TCP/IP 프로토콜을 사용 하 여 회사 전체 네트워크가 있으며 웹 브라우저도 구현 합니다. 인트라넷 회사 수준 정보를 쉽게 업그레이드할 수 있도록 중앙 원본을 제공합니다. 소프트웨어를 업그레이드 하는 데, 제공 하 고 설문 조사를 불러와, 고객 지원에 대 한 및 정보를 사용할 수 있습니다. 다음 표에서 인터넷 및 인트라넷의 기능을 비교 합니다.
 
@@ -86,10 +86,9 @@ ActiveX 컨트롤 인터넷 사이트에서 문서와 페이지에 동적 콘텐
 |[WinInet](../mfc/win32-internet-extensions-wininet.md)|HTTP, FTP 및 gopher 인터넷 프로토콜입니다. 데이터는 동기적 또는 비동기적으로 전송 될 수 있습니다 하 고 시스템 캐시에 저장 됩니다.|[CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpFileFind](../mfc/reference/cftpfilefind-class.md)를 [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md), 등입니다.|
 |[WinSock](../mfc/windows-sockets-in-mfc.md)|최대 효율성 및 제어 합니다. 소켓 및 TCP/IP 프로토콜에 대 한 이해가 필요 합니다.|[CSocket](../mfc/reference/csocket-class.md), [CAsyncSocket](../mfc/reference/casyncsocket-class.md)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)<br/>
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [인터넷의 비동기 모니커](../mfc/asynchronous-monikers-on-the-internet.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤 사용'
+title: 'ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤을 사용 하 여'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Create method [MFC], ActiveX controls
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], non-dialog containers
 - ActiveX control containers [MFC], inserting controls
 ms.assetid: 46f195b0-b8ca-4409-8cca-fbfaf2c9ab9f
-ms.openlocfilehash: b31581b77743104a92236336c4db380f1693ea55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 70a67a6952d5361177b89e3ba514d7036b5799b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538790"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284244"
 ---
-# <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤 사용
+# <a name="activex-control-containers-using-controls-in-a-non-dialog-container"></a>ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤을 사용 하 여
 
 일부 SDI 등의 응용 프로그램 또는 MDI 응용 프로그램에서 응용 프로그램의 창에서 컨트롤을 포함 해야 합니다. 합니다 **만들기** Visual c + +에 의해 삽입 된 래퍼 클래스의 멤버 함수 인스턴스를 만들 수는 컨트롤의 동적으로 대화 상자에 대 한 필요 하지 않습니다.
 
@@ -61,7 +61,6 @@ SDI 응용 프로그램의 폼 보기에서이 함수를 사용 하 여 동적�
 
 1. 프로젝트를 다시 빌드합니다. 응용 프로그램의 뷰를 만들 때마다 Circ 컨트롤을 동적으로 생성 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)
-

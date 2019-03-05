@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CInterpolatorBase [MFC], SetDuration
 - CInterpolatorBase [MFC], SetInitialValueAndVelocity
 ms.assetid: bbc3dce7-8398-47f9-b97e-e4fd2d737232
-ms.openlocfilehash: e428478f2f437654ea2f0890993245afc53c01f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 379aa5607e459ad8acfd99c5899315afb84ac4a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541468"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302288"
 ---
 # <a name="cinterpolatorbase-class"></a>CInterpolatorBase 클래스
 
@@ -69,7 +69,7 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
 
 이 처리기가 생성 하 고 전달할 `IUIAnimationTransitionFactory::CreateTransition` 경우는 `CCustomTransition` 개체를 애니메이션 초기화 프로세스의 일부로 만들어지고 (에 의해 시작 `CAnimationController::AnimateGroup`). 일반적으로이 클래스를 직접 사용할 필요가 없습니다, 모든 이벤트를 라우트만 `CCustomInterpolator`-파생 클래스에서 해당 포인터의 생성자에 전달 됩니다 `CCustomTransition`합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CUIAnimationCallbackBase`
 
@@ -162,7 +162,7 @@ IFACEMETHOD(GetFinalValue)(__out DOUBLE* value);
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 출력입니다. 전환의 끝에 변수의 최종 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -184,7 +184,7 @@ IFACEMETHOD(InterpolateValue)(
 *offset*<br/>
 전환의 시작 오프셋입니다. 오프셋 보다 큰 또는 0 및 전환 기간 보다 작은 항상입니다. 전환 기간은 0 하는 경우에이 메서드가 호출 되지 않습니다.
 
-*값*<br/>
+*value*<br/>
 출력입니다. 보간된 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -206,7 +206,7 @@ IFACEMETHOD(InterpolateVelocity)(
 *offset*<br/>
 전환의 시작 오프셋입니다. 오프셋은 항상 0 보다 크거나 전환 기간 보다 작거나 같으면 합니다. 전환 기간은 0 하는 경우에이 메서드가 호출 되지 않습니다.
 
-*개발 속도*<br/>
+*velocity*<br/>
 출력입니다. 속도 변수의 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -255,7 +255,7 @@ IFACEMETHOD(SetInitialValueAndVelocity)(
 
 ### <a name="parameters"></a>매개 변수
 
-*초기 값*<br/>
+*initialValue*<br/>
 전환의 시작 부분에 있는 변수의 값입니다.
 
 *initialVelocity*<br/>
@@ -265,6 +265,6 @@ IFACEMETHOD(SetInitialValueAndVelocity)(
 
 메서드가 성공 하면 S_OK를 반환 합니다. CCustomInterpolator을 설정 하지 않으면 또는 사용자 지정 구현을 SetInitialValueAndVelocity 메서드에서 FALSE 반환 하는 경우에 E_FAIL을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

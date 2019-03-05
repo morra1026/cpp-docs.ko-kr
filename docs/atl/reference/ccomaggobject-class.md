@@ -17,12 +17,12 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComAggObject class
 ms.assetid: 7aa90d69-d399-477b-880d-e2cdf0ef7881
-ms.openlocfilehash: 3598e625351f80a1a183b3128bf46a72143a02f6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 52cdddb1d922ca21e24122422ca14d9c12d13a83
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626839"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301664"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject 클래스
 
@@ -38,7 +38,7 @@ class CComAggObject : public IUnknown,
 
 #### <a name="parameters"></a>매개 변수
 
-*포함 된*<br/>
+*contained*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -48,7 +48,7 @@ class CComAggObject : public IUnknown,
 |이름|설명|
 |----------|-----------------|
 |[CComAggObject::CComAggObject](#ccomaggobject)|생성자입니다.|
-|[CComAggObject:: ~ CComAggObject](#dtor)|소멸자입니다.|
+|[CComAggObject::~CComAggObject](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -73,7 +73,7 @@ class CComAggObject : public IUnknown,
 
 집계에 대 한 자세한 내용은 문서를 참조 하세요 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -118,7 +118,7 @@ CComAggObject(void* pv);
 
 소멸자 모듈 잠금 횟수를 줄입니다.
 
-##  <a name="dtor"></a>  CComAggObject:: ~ CComAggObject
+##  <a name="dtor"></a>  CComAggObject::~CComAggObject
 
 소멸자입니다.
 
@@ -185,7 +185,7 @@ CComContainedObject<contained> m_contained;
 
 ### <a name="parameters"></a>매개 변수
 
-*포함 된*<br/>
+*contained*<br/>
 [in] 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ### <a name="remarks"></a>설명
@@ -233,7 +233,7 @@ STDMETHOD_(ULONG, Release)();
 
 디버그 빌드에서 `Release` 진단용 유용 하거나 테스트 수 있는 값을 반환 합니다. 디버그가 아닌 빌드에서 `Release` 항상 0을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComObject 클래스](../../atl/reference/ccomobject-class.md)<br/>
 [CComPolyObject 클래스](../../atl/reference/ccompolyobject-class.md)<br/>

@@ -7,12 +7,12 @@ f1_keywords:
 - atlcom/ATL::SERVICE_ENTRY
 - atlcom/ATL::SERVICE_ENTRY_CHAIN
 ms.assetid: ca02a125-454a-4cf6-aac2-1c5585025ed4
-ms.openlocfilehash: 14e543946be50c39020d46ab00e702a4f2b7a815
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab130b2401dc9885f82fd5668a2d722a96dd289b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618181"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290536"
 ---
 # <a name="service-map-macros"></a>서비스 맵 매크로
 
@@ -150,6 +150,6 @@ STDMETHOD(QueryService)(
 
 SID_SMyService SID_SYourService, 등 두 개의 서비스에 둘 다 지정할 수 동일한 인터페이스를 사용 하지만 인터페이스 구현의 두 서비스 간에 공통 전혀 없을 수 있습니다. 이 작동 하기 때문에 대 한 호출 `QueryService` (SID_SMyService, IID_IDispatch)는 다른 개체를 반환할 수 있습니다 `QueryService` (SID_SYourService, IID_IDispatch). 개체 id는 다양 한 서비스 식별자를 지정 하는 경우에 간주 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

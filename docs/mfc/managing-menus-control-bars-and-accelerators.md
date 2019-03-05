@@ -12,12 +12,12 @@ helpviewer_keywords:
 - frame windows [MFC], updating
 - status bars [MFC], updating
 ms.assetid: 97ca1997-06df-4373-b023-4f7ecd81047b
-ms.openlocfilehash: 905a015de6a675de80c49991750f72eccf06afaa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a089829658265cd835a8c7344aa5bc45fbc109a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559632"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293812"
 ---
 # <a name="managing-menus-control-bars-and-accelerators"></a>메뉴, 컨트롤 막대 및 액셀러레이터 관리
 
@@ -41,7 +41,6 @@ MDI 프레임 창은 MDI 응용 프로그램에 대 한 메뉴와 캡션이 관�
 
 각 프레임 창에는 액셀러레이터 번역을 자동으로 키보드에 선택적 액셀러레이터 키 테이블 유지 관리 합니다. 이 메커니즘은 쉽게 메뉴 명령을 호출 하는 액셀러레이터 키 (바로 가기 키 라고도 함)을 정의할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창 사용](../mfc/using-frame-windows.md)
-

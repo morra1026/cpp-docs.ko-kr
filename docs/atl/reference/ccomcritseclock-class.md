@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCritSecLock class
 ms.assetid: 223152a1-86c3-4ef9-89a7-f455fe791b0e
-ms.openlocfilehash: e0f68f48867510c270c7c69e325a796f274198d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 045e64504707fa8978c8236b376037d9f57bf12c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607001"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261234"
 ---
 # <a name="ccomcritseclock-class"></a>CComCritSecLock 클래스
 
@@ -39,7 +39,7 @@ template<class TLock> class CComCritSecLock
 |이름|설명|
 |----------|-----------------|
 |[CComCritSecLock::CComCritSecLock](#ctor)|생성자입니다.|
-|[CComCritSecLock:: ~ CComCritSecLock](#dtor)|소멸자입니다.|
+|[CComCritSecLock::~CComCritSecLock](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -76,7 +76,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 
 임계 영역 개체를 초기화합니다.
 
-##  <a name="dtor"></a>  CComCritSecLock:: ~ CComCritSecLock
+##  <a name="dtor"></a>  CComCritSecLock::~CComCritSecLock
 
 소멸자입니다.
 
@@ -116,7 +116,7 @@ void Unlock() throw();
 
 개체 잠금 해제 된 경우 디버그 빌드에 어설션 오류가 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComCriticalSection 클래스](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [CComAutoCriticalSection 클래스](../../atl/reference/ccomautocriticalsection-class.md)

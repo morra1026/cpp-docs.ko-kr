@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CReversalTransition [MFC], Create
 - CReversalTransition [MFC], m_duration
 ms.assetid: e89516be-2d07-4885-95a8-fc278f46e3ad
-ms.openlocfilehash: c94c4085d822e397a8ffc5fed4648a40eec4d1da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bd60ca13ff4a162ddd674e271291a1a3f09a856
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554544"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299727"
 ---
 # <a name="creversaltransition-class"></a>CReversalTransition 클래스
 
@@ -53,7 +53,7 @@ class CReversalTransition : public CBaseTransition;
 
 역방향 전환을 원활 하 게 지정된 된 기간 동안 방향을 변경합니다. 최종 값을 초기 값과 동일 하 게 되며 최종 속도 초기 속도의 부정 됩니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -105,6 +105,6 @@ CReversalTransition(UI_ANIMATION_SECONDS duration);
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - status bar controls [MFC], creating
 - CStatusBarCtrl class [MFC], creating
 ms.assetid: 365c2b65-12de-49e6-9a2e-416c6ee10d60
-ms.openlocfilehash: 05baf212f53956095af89377c0877db79b6e25ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3242986d66de7d423b8ab744a691ca1904328de8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552765"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264211"
 ---
 # <a name="using-cstatusbarctrl-to-create-a-cstatusbarctrl-object"></a>CStatusBarCtrl을 사용하여 CStatusBarCtrl 개체 만들기
 
@@ -20,7 +20,8 @@ ms.locfileid: "50552765"
 
 ### <a name="to-use-a-status-bar-control-with-parts"></a>파트를 사용 하 여 상태 표시줄 컨트롤을 사용 하려면
 
-1. `CStatusBarCtrl` 개체를 생성합니다.
+1. 
+  `CStatusBarCtrl` 개체를 생성합니다.
 
 1. 호출 [SetMinHeight](../mfc/reference/cstatusbarctrl-class.md#setminheight) 의 그리기 영역 상태 표시줄 컨트롤의 최소 높이 설정 하려는 경우.
 
@@ -32,8 +33,7 @@ ms.locfileid: "50552765"
 
 일부 경우 상태 표시줄 텍스트의 줄에 표시할만 해야 합니다. 이 경우에 호출할 [SetSimple](../mfc/reference/cstatusbarctrl-class.md#setsimple)합니다. 이 상태 표시줄 컨트롤을 한 줄 텍스트를 표시 하는 "단순" 모드를 넣습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

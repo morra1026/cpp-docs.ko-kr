@@ -11,12 +11,12 @@ helpviewer_keywords:
 - document objects [MFC], life cycle of
 - initializing views [MFC]
 ms.assetid: 95d6f09b-a047-4079-856a-ae7d0548e9d2
-ms.openlocfilehash: 7bfc80e636a3018e52dec411f17bdf25073cf4c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59e86f4000e2da588749ca48887d34c3effdfc3a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584641"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286849"
 ---
 # <a name="initializing-and-cleaning-up-documents-and-views"></a>문서 및 뷰 초기화 및 정리
 
@@ -43,13 +43,12 @@ ms.locfileid: "50584641"
 
 SDI 응용 프로그램에서는 1 단계 문서를 처음 만들 때 한 번 수행 됩니다. 그런 다음 2 ~ 4 단계 반복 하 여 수행 새 문서를 열 때마다 합니다. 새 문서가 기존 문서 개체를 다시 사용합니다. 마지막으로, 응용 프로그램이 종료 되 면 5 단계를 수행 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서 및 뷰 초기화](../mfc/initializing-documents-and-views.md)
 
 - [문서 및 뷰 정리](../mfc/cleaning-up-documents-and-views.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

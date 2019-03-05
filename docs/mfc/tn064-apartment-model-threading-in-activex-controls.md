@@ -1,5 +1,5 @@
 ---
-title: 'TN064: ActiveX 컨트롤의 아파트 모델 스레딩'
+title: 'TN064: 아파트 모델 ActiveX 컨트롤의 스레딩'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.controls.activex
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - multithread container [MFC]
 - apartment model threading [MFC]
 ms.assetid: b2ab4c88-6954-48e2-9a74-01d4a60df073
-ms.openlocfilehash: 37f8af1e4bd0fedf0b1ab14a90afdda3916c5391
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d6f02b2106693226f6380e935a54e04e10d5b4f8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665561"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261169"
 ---
-# <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: ActiveX 컨트롤의 아파트 모델 스레딩
+# <a name="tn064-apartment-model-threading-in-activex-controls"></a>TN064: 아파트 모델 ActiveX 컨트롤의 스레딩
 
 > [!NOTE]
 >  다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
@@ -107,8 +107,7 @@ else
 
 컨트롤이 아파트 모델 스레딩에 대 한 규칙을 따르지 않으면을 전달 하면 안 *afxRegApartmentThreading* 이 매개 변수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

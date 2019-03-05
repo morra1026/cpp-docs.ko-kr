@@ -106,12 +106,12 @@ helpviewer_keywords:
 - CFrameWnd [MFC], m_bAutoMenuEnable
 - CFrameWnd [MFC], rectDefault
 ms.assetid: e2220aba-5bf4-4002-b960-fbcafcad01f1
-ms.openlocfilehash: 3259780d73004c9d1654c26434b55627923cfe23
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 7bdb681754a500ab86538f3397b4c07284b850d0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300892"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd 클래스
 
@@ -162,7 +162,7 @@ class CFrameWnd : public CWnd
 |[CFrameWnd::NegotiateBorderSpace](#negotiateborderspace)|프레임 창의 테두리 공간을 협상합니다.|
 |[CFrameWnd::OnBarCheck](#onbarcheck)|작업은 지정 된 컨트롤 막대에 수행 될 때마다 호출 됩니다.|
 |[CFrameWnd::OnContextHelp](#oncontexthelp)|전체 항목에 대해 SHIFT + F1 도움말을 처리합니다.|
-|[Cframewnd:: Onsetpreviewmode](#onsetpreviewmode)|응용 프로그램의 주 프레임 창에 인쇄 미리 보기 모드에 설정합니다.|
+|[CFrameWnd::OnSetPreviewMode](#onsetpreviewmode)|응용 프로그램의 주 프레임 창에 인쇄 미리 보기 모드에 설정합니다.|
 |[CFrameWnd::OnUpdateControlBarMenu](#onupdatecontrolbarmenu)|연결 된 메뉴 업데이트 될 때 프레임 워크에서 호출 됩니다.|
 |[CFrameWnd::RecalcLayout](#recalclayout)|컨트롤 막대 위치를 변경 합니다 `CFrameWnd` 개체입니다.|
 |[CFrameWnd::SaveBarState](#savebarstate)|컨트롤 막대 설정을 저장 하려면 호출 합니다.|
@@ -683,7 +683,7 @@ void InitialUpdateFrame(
 
 ### <a name="parameters"></a>매개 변수
 
-*입력*<br/>
+*pDoc*<br/>
 프레임 창와 연관 된 문서를 가리킵니다. NULL 일 수 있습니다.
 
 *bMakeVisible*<br/>
@@ -901,7 +901,7 @@ virtual BOOL OnCreateClient(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpc*<br/>
+*lpcs*<br/>
 Windows에 대 한 포인터 [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구조입니다.
 
 *pContext*<br/>
@@ -934,9 +934,9 @@ virtual void OnHideMenuBar();
 
 이 이벤트 처리기에는 응용을 프로그램이 시스템 메뉴 숨기기 되려고 할 때 사용자 지정 작업을 수행할 수 있습니다. 숨겨진에서 메뉴를 막을 수 없습니다 하지만 예를 들어 메뉴 스타일 또는 상태를 검색 하는 다른 메서드를 호출 하 수 있습니다.
 
-##  <a name="onsetpreviewmode"></a>  Cframewnd:: Onsetpreviewmode
+##  <a name="onsetpreviewmode"></a>  CFrameWnd::OnSetPreviewMode
 
-응용 프로그램의 주 프레임 창을 인쇄 미리 보기 모드 내부 및 외부로 설정하려면 이 멤버 함수를 호출합니다.
+애플리케이션의 주 프레임 창을 인쇄 미리 보기 모드 내부 및 외부로 설정하려면 이 멤버 함수를 호출합니다.
 
 ```
 virtual void OnSetPreviewMode(
@@ -1115,7 +1115,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*nStyle*|[in] 여부를 메뉴 기본적으로 숨겨져 있는 경우 또는 표시 이며 지정 포커스를가지고 있습니다. 합니다 *nStyle* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br />-AFX_MBV_KEEPVISIBLE (0X01)-<br />     메뉴 모든 시간에 표시 되 고 기본적으로는 포커스가 없습니다.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 ALT 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴를 숨기려면 alt 키 또는 ESC 키를 누릅니다.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (비트 조합 (OR))-메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 F10 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴 켜거나 포커스를 전환 하려면 F10 키를 누릅니다. 메뉴 숨기려면 alt 키 또는 ESC 키를 누를 때까지 표시 됩니다.|
+|*nStyle*|[in] 여부를 메뉴 기본적으로 숨겨져 있는 경우 또는 표시 이며 지정 포커스를가지고 있습니다. 합니다 *nStyle* 매개 변수에 다음 값을 사용할 수 있습니다.<br /><br />- AFX_MBV_KEEPVISIBLE (0x01) -<br />     메뉴 모든 시간에 표시 되 고 기본적으로는 포커스가 없습니다.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 ALT 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴를 숨기려면 alt 키 또는 ESC 키를 누릅니다.<br />- AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (비트 조합 (OR))-메뉴는 기본적으로 숨겨져 있습니다. 메뉴에 숨겨진 경우 메뉴 표시에 포커스를 F10 키를 누릅니다. 메뉴 표시 되지 않으면 메뉴 켜거나 포커스를 전환 하려면 F10 키를 누릅니다. 메뉴 숨기려면 alt 키 또는 ESC 키를 누를 때까지 표시 됩니다.|
 
 ### <a name="remarks"></a>설명
 
@@ -1273,7 +1273,7 @@ void ShowOwnedWindows(BOOL bShow);
 *bShow*<br/>
 소유 windows 표시 하거나 숨길 수 있는지 여부를 지정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

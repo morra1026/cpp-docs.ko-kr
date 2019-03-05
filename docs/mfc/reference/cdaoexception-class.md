@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CDaoException [MFC], m_pErrorInfo
 - CDaoException [MFC], m_scode
 ms.assetid: b2b01fa9-7ce2-42a1-842e-40f13dc50da4
-ms.openlocfilehash: 224ce79094b174d0bd011bd89afbcfe6fb7735d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d49291c51f66ee837f9b31a2ade390cec48c51a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585918"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289002"
 ---
 # <a name="cdaoexception-class"></a>CDaoException 클래스
 
@@ -71,9 +71,9 @@ MFC에서 모든 DAO 오류 예외 형식으로 표현 됩니다 `CDaoException`
 
 DAO 오류 코드에 대 한 DAOERR 파일을 참조 하십시오. 8. 관련된 정보 "트랩 가능한 DAO 도움말에서 Data Access Errors" 항목을 참조 하세요.
 
-일반적으로 되었거나 곧에서 예외 처리에 대 한 자세한 내용은 `CDaoException` 개체, 문서를 참조 하세요. [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 하 고 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다. 두 번째 기사는 DAO에서 예외 처리를 보여 주는 예제 코드를 포함 합니다.
+일반적으로 되었거나 곧에서 예외 처리에 대 한 자세한 내용은 `CDaoException` 문서를 참조 하는 개체를 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 및 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다. 두 번째 기사는 DAO에서 예외 처리를 보여 주는 예제 코드를 포함 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -113,7 +113,7 @@ CDaoException();
 
 1. 힙의 예외 개체를 생성 하는 경우 사용 하 여 삭제 합니다 **삭제** 완료 될 때 연산자입니다.
 
-MFC DAO 클래스에서 오류를 처리 하는 방법에 대 한 자세한 내용은 문서 참조 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다.
+MFC DAO 클래스에서 오류를 처리 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다.
 
 ##  <a name="geterrorcount"></a>  CDaoException::GetErrorCount
 
@@ -163,7 +163,7 @@ void GetErrorInfo(int nIndex);
 
 `GetErrorInfo` 예외 개체의 정보를 저장 `m_pErrorInfo` 데이터 멤버입니다. 반환 된 정보는 간략 한 설명을 참조 하세요 [m_pErrorInfo](#m_perrorinfo)합니다. 형식의 예외를 catch 하는 경우 `CDaoException` MFC throw를 `m_pErrorInfo` 멤버 이미 입력 되어 있습니다. 직접 DAO 호출 하려는 경우 예외 개체의 호출 해야 합니다 `GetErrorInfo` 멤버 함수에 맞게 직접 `m_pErrorInfo`입니다. 자세한 내용은 참조 하세요. 합니다 [CDaoErrorInfo](../../mfc/reference/cdaoerrorinfo-structure.md) 구조입니다.
 
-DAO 예외 및 예제 코드에 대 한 자세한 문서를 참조 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다.
+DAO 예외 및 예제 코드에 대 한 자세한 문서를 참고 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다.
 
 ##  <a name="m_nafxdaoerror"></a>  CDaoException::m_nAfxDaoError
 
@@ -211,7 +211,7 @@ OLE 코드입니다. 거의 모든 경우에 보다 구체적인 MFC 또는 DAO 
 
 SCODE에 대 한 자세한 내용은 [OLE 오류 코드 구조](/windows/desktop/com/structure-of-com-error-codes) Windows SDK에 있습니다. SCODE 데이터 형식은 HRESULT 데이터 형식에 매핑됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

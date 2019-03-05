@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCKeyMapDialog [MFC], PrintKeyMap
 - CMFCKeyMapDialog [MFC], SetColumnsWidth
 ms.assetid: 5feb4942-d636-462d-a162-0104dd320f4e
-ms.openlocfilehash: e1ed48c851243611b052c79d13721076d27dcf8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94c6968d2f534ed0b6d247420e67910ecf906b05
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452678"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294605"
 ---
 # <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog 클래스
 
@@ -76,7 +76,7 @@ class CMFCKeyMapDialog : public CDialogEx
 
 사용 하는 `CMFCKeyMapDialog` 응용 프로그램에서 클래스를 매개 변수로 주 프레임 창에 대 한 포인터에 전달 된 `CMFCKeyMapDialog` 생성자입니다. 그런 다음 호출을 `DoModal` 모달 대화 상자를 시작 하는 방법입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -210,7 +210,7 @@ virtual int OnPrintHeader(
 *dc*<br/>
 [in] 프린터 디바이스 컨텍스트입니다.
 
-*. n 페이지*<br/>
+*nPage*<br/>
 [in] 인쇄할 페이지 번호입니다.
 
 *cx*<br/>
@@ -298,7 +298,7 @@ virtual void SetColumnsWidth();
 
 이 메서드가 기본 너비를 내부 목록 컨트롤의 열으로 설정 합니다. 첫째, 바로 가기 키 열의 너비를 계산 됩니다. 그런 다음 1 / 3의 나머지 너비를 명령 열에 할당 하 고 나머지 2 / 3 설명 열에 할당 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -19,12 +19,12 @@ helpviewer_keywords:
 - SelectStockFont method [MFC]
 - fonts [MFC], ActiveX controls
 ms.assetid: 7c51d602-3f5a-481d-84d1-a5d8a3a71761
-ms.openlocfilehash: 9fb7668f65b04372b87059034c3ec6cd20abc48d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ce1e913bb3bd1c3b74db43dc02d9d360b9cfd00c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175823"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271309"
 ---
 # <a name="mfc-activex-controls-using-fonts"></a>MFC ActiveX 컨트롤: 글꼴 사용
 
@@ -233,9 +233,8 @@ DISP_PROPERTY_EX 매크로 연결 합니다 `HeadingFont` 속성을 해당 이�
 
 프로젝트에 이러한 변경 사항이 생겼는지, 프로젝트 다시 빌드 후 테스트 컨테이너를 사용 하 여 인터페이스를 테스트 합니다. 테스트 컨테이너에 액세스하는 방법은 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md) 를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
-[MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
-[MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)
-
+[MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용](../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)<br/>
+[MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)

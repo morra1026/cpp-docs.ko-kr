@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComAutoDeleteCriticalSection class
 ms.assetid: 2396dbea-1c60-4841-b50e-c4e18af311a3
-ms.openlocfilehash: 93b9a266bba59b80a7661cf63046dcfe63f3edb2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d479adce489e0329be3a93b55a70aa3e58a0e038
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431172"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265134"
 ---
 # <a name="ccomautodeletecriticalsection-class"></a>CComAutoDeleteCriticalSection 클래스
 
@@ -30,7 +30,7 @@ class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
 
 이 클래스는 기본 클래스를 통해 추가 메서드가 도입 되었습니다. 참조 [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) 하 고 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 임계 도우미 클래스에 대 한 자세한 내용은 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)
 
@@ -42,7 +42,7 @@ class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
 
 **헤더:** atlcore.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComSafeDeleteCriticalSection 클래스](../../atl/reference/ccomsafedeletecriticalsection-class.md)<br/>
 [CComCriticalSection 클래스](../../atl/reference/ccomcriticalsection-class.md)<br/>

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE, about OLE
 ms.assetid: 5f654eb5-66b1-40c9-9215-bb85356a67f8
-ms.openlocfilehash: 5006a648729e1fc561855fcb8cba1d658a9c82cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2501373c2ff5904343a6522e4fb18663f5de3843
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619052"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294423"
 ---
 # <a name="ole-background"></a>OLE 백그라운드
 
@@ -26,7 +26,7 @@ OLE 모두 작동 하는 응용 프로그램 간의 원활한 상호 작용의 �
 
 - Linking and Embedding
 
-   연결 및 포함 된 다른 응용 프로그램에서 만들어진 OLE 문서 내에서 만든 항목을 저장 하는 두 가지 방법 이며 둘 사이의 차이점에 대 한 일반적인 내용은 문서를 참조 하세요 [OLE 백그라운드: Linking and Embedding](../mfc/ole-background-linking-and-embedding.md)합니다. 자세한 내용은 문서를 참조 하세요 [컨테이너](../mfc/containers.md) 하 고 [서버](../mfc/servers.md)합니다.
+   연결 및 포함 된 다른 응용 프로그램에서 만들어진 OLE 문서 내에서 만든 항목을 저장 하는 두 가지 방법 이며 둘 사이의 차이점에 대 한 일반적인 내용은 문서를 참조 하세요. [OLE 백그라운드: Linking and Embedding](../mfc/ole-background-linking-and-embedding.md)합니다. 자세한 내용은 문서를 참조 하세요 [컨테이너](../mfc/containers.md) 하 고 [서버](../mfc/servers.md)합니다.
 
 - 내부 활성화 (비주얼 편집)
 
@@ -42,7 +42,7 @@ OLE 모두 작동 하는 응용 프로그램 간의 원활한 상호 작용의 �
 
 - 복합 파일
 
-   복합 파일에는 구조적 저장 OLE 응용 프로그램에 대 한 복합 문서를 간소화 하는 표준 파일 형식을 제공 합니다. 복합 파일 내에서 저장소 디렉터리의 여러 기능 있고 스트림 파일의 다양 한 기능입니다. 이 기술은 구조적된 저장소를 라고도 합니다. 복합 파일에 대 한 자세한 내용은 문서 참조 [컨테이너: 복합 파일](../mfc/containers-compound-files.md)합니다.
+   복합 파일에는 구조적 저장 OLE 응용 프로그램에 대 한 복합 문서를 간소화 하는 표준 파일 형식을 제공 합니다. 복합 파일 내에서 저장소 디렉터리의 여러 기능 있고 스트림 파일의 다양 한 기능입니다. 이 기술은 구조적된 저장소를 라고도 합니다. 복합 파일에 대 한 자세한 내용은 문서를 참조 하세요. [컨테이너: 복합 파일](../mfc/containers-compound-files.md)합니다.
 
 - 균일 한 데이터 전송
 
@@ -52,23 +52,22 @@ OLE 모두 작동 하는 응용 프로그램 간의 원활한 상호 작용의 �
 
    끌어서 놓기는 응용 프로그램을 windows 응용 프로그램 내에서 또는 응용 프로그램에 단일 창 내 에서도 데이터를 전송 하는 사용 하기 쉬운, 직접 조작 기술입니다. 전송할 데이터가 선택 되 고 필요한 대상에 놓을 합니다. 끌어서 놓기는 단일형 데이터 전송에 기반 합니다. 끌어서 놓기에 대 한 자세한 내용은 문서 참조 [끌어서 놓기](../mfc/drag-and-drop-ole.md)합니다.
 
-- 구성 요소 개체 모델
+- 구성 요소 개체 모델(Component Object Model)
 
    OLE 개체는 서로 통신할 때 사용 되는 인프라를 제공 하는 구성 요소 개체 모델 (COM). MFC OLE 클래스는 프로그래머에 대 한 COM을 간소화합니다. COM 부분 액티브 기술 이므로 COM 개체의 기반이 되 OLE와 액티브 기술 합니다. COM에 대 한 자세한 내용은 참조는 [액티브 템플릿 라이브러리 (ATL)](../atl/active-template-library-atl-concepts.md) 항목입니다.
 
 다음 문서에서는 일부 더 중요 한 OLE 항목을 다룹니다.
 
-- [OLE 백그라운드: 연결 및 포함](../mfc/ole-background-linking-and-embedding.md)
+- [OLE 백그라운드: Linking and Embedding](../mfc/ole-background-linking-and-embedding.md)
 
 - [OLE 백그라운드: 컨테이너 및 서버](../mfc/ole-background-containers-and-servers.md)
 
-- [OLE 백그라운드 구현 전략](../mfc/ole-background-implementation-strategies.md)
+- [OLE 백그라운드: 구현 전략](../mfc/ole-background-implementation-strategies.md)
 
 - [OLE 백그라운드: MFC 구현](../mfc/ole-background-mfc-implementation.md)
 
 일반 OLE 내용은 위의 문서에서 찾을 수 없습니다 OLE MSDN에서 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE](../mfc/ole-in-mfc.md)
-

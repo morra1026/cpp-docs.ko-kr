@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Relations collection
 - CDaoRelationFieldInfo structure [MFC]
 ms.assetid: 47cb89ca-dc80-47ce-96fd-cc4b88512558
-ms.openlocfilehash: 9a00d1cbaf58729863a85d4e9053c9241e9566ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85dd853a9aae41a87bbe7ef5c69e22846678cf8a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599409"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298427"
 ---
 # <a name="cdaorelationfieldinfo-structure"></a>CDaoRelationFieldInfo 구조체
 
@@ -48,7 +48,7 @@ DAO 관계 개체를 기본 테이블 및 관계를 정의 하는 필드에 있�
 
 **헤더:** afxdao.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoRelationInfo 구조체](../../mfc/reference/cdaorelationinfo-structure.md)

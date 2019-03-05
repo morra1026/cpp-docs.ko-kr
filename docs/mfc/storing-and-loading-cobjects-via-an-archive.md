@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CObject class [MFC], CArchive objects
 - CObjects [MFC]
 ms.assetid: a829b6dd-bc31-47e0-8108-fbb946722db9
-ms.openlocfilehash: 370e8202d1bd1cda04edbdbd12bd936bdf5ef7b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 591ce7032aa3d70b1e5a020cd9173ed4c9d0fa9b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493693"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299945"
 ---
 # <a name="storing-and-loading-cobjects-via-an-archive"></a>보관을 통해 CObject 저장 및 로드
 
@@ -38,7 +38,6 @@ ms.locfileid: "50493693"
 
 요약 하자면, serializable 클래스 정의 포함 하는 경우 `CObject` 해야를 멤버로 *하지* 사용 합니다 `CArchive` **< \<** 및 **>>** 해당 개체에 대 한 연산자 호출 해야 하지만 `Serialize` 함수를 대신 합니다. 또한 serializable 클래스에 대 한 포인터를 정의 하는 경우는 `CObject` (에서 파생 된 개체 또는 `CObject`) 멤버 하지만 구문 자체 생성자에서이 다른 개체도 호출 해야 `Serialize`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[Serialization: 개체 Serialize](../mfc/serialization-serializing-an-object.md)
-
+[Serialization: 개체를 직렬화 하는 작업](../mfc/serialization-serializing-an-object.md)

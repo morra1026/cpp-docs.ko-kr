@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoVectorPtr class
 ms.assetid: 0030362b-6bc4-4a47-9b5b-3c3899dceab4
-ms.openlocfilehash: 8485f13b91c72d12c2084d2714f2acfa6dda7f01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f614318125f3c6bce4003fee5fb4a945c7c88129
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478757"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259557"
 ---
 # <a name="cautovectorptr-class"></a>CAutoVectorPtr 클래스
 
@@ -46,7 +46,7 @@ class CAutoVectorPtr
 |이름|설명|
 |----------|-----------------|
 |[CAutoVectorPtr::CAutoVectorPtr](#cautovectorptr)|생성자입니다.|
-|[CAutoVectorPtr:: ~ CAutoVectorPtr](#dtor)|소멸자입니다.|
+|[CAutoVectorPtr::~CAutoVectorPtr](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -139,7 +139,7 @@ CAutoVectorPtr(CAutoVectorPtr<T>& p) throw();
 
 `CAutoVectorPtr` 포인터의 소유권 전송 하는 경우, 기존 포인터를 사용 하 여 개체를 만들 수 있습니다.
 
-##  <a name="dtor"></a>  CAutoVectorPtr:: ~ CAutoVectorPtr
+##  <a name="dtor"></a>  CAutoVectorPtr::~CAutoVectorPtr
 
 소멸자입니다.
 
@@ -224,7 +224,7 @@ operator T*() const throw();
 
 클래스 템플릿에 정의 된 개체 데이터 형식에 대 한 포인터를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAutoPtr 클래스](../../atl/reference/cautoptr-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

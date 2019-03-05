@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CInternetException [MFC], m_dwContext
 - CInternetException [MFC], m_dwError
 ms.assetid: 44fb3cbe-523e-4754-8843-a77909990b14
-ms.openlocfilehash: e89293d7b7803cf661bce7a91ea6df72b9a06122
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dedf8926f02dd36dc8d6ac8ab5ff4056b60dfc91
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531575"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270265"
 ---
 # <a name="cinternetexception-class"></a>CInternetException 클래스
 
@@ -50,7 +50,7 @@ class CInternetException : public CException
 
 인터넷 응용 프로그램에 대 한 컨텍스트 식별자에 대 한 자세한 내용은 문서를 참조 하세요 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -105,7 +105,7 @@ DWORD m_dwError;
 
 Win32 오류 코드 목록은 참조 하세요 [오류 코드](/windows/desktop/Debug/system-error-codes)합니다. 인터넷 관련 오류 메시지 목록을 참조 하세요. 두 항목은 Windows sdk에서입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

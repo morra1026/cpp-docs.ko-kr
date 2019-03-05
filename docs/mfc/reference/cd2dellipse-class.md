@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DEllipse [MFC], CD2DEllipse
 ms.assetid: e9f02f54-acf2-427e-b349-db50cd9a77df
-ms.openlocfilehash: aa280215aaac55e3aaa9542ca1ab2bd9d21655e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3abf0736884840be7bdcfcd55cb18a0bc8e69195
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642041"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270832"
 ---
 # <a name="cd2dellipse-class"></a>CD2DEllipse 클래스
 
@@ -33,7 +33,7 @@ class CD2DEllipse : public D2D1_ELLIPSE;
 |----------|-----------------|
 |[CD2DEllipse::CD2DEllipse](#cd2dellipse)|오버로드됨. 생성 된 `CD2DEllipse` 에서 개체 `D2D1_ELLIPSE` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_ELLIPSE`
 
@@ -62,7 +62,7 @@ CD2DEllipse(
 *rect*<br/>
 소스 사각형
 
-*타원*<br/>
+*ellipse*<br/>
 원본 타원
 
 *ptCenter*<br/>
@@ -71,6 +71,6 @@ CD2DEllipse(
 *sizeRadius*<br/>
 X 반지름 및 Y 반경을 타원의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

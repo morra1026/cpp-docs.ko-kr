@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 310a7edb-263c-4bd2-ac43-0bfbfddc5a33
-ms.openlocfilehash: 29865e7986e435a4cce1ac1abb2027bc8513231e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f31adc77f50191191ffbc4f7eac89cc8c9caf439
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499028"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263236"
 ---
 # <a name="cstringlist-class"></a>CStringList 클래스
 
@@ -127,7 +127,7 @@ class CStringList : public CObject
 
 사용 하 여 대 한 자세한 내용은 `CStringList`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -137,9 +137,8 @@ class CStringList : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

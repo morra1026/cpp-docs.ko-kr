@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CComSimpleThreadAllocator class
 - ATL threads, allocating
 ms.assetid: 66b2166a-8c50-49fd-b8e4-7f293470327d
-ms.openlocfilehash: 1644014048b27b7ab6076783c5025140527a7ff5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef1f86ca832674ba5710083b08b67f0a775a7a33
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637543"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261897"
 ---
 # <a name="ccomsimplethreadallocator-class"></a>CComSimpleThreadAllocator 클래스
 
@@ -70,7 +70,7 @@ EXE 모듈의 스레드의 최대 수입니다.
 
 `GetThread` 호출한 [CComAutoThreadModule::CreateInstance](../../atl/reference/ccomautothreadmodule-class.md#createinstance)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComApartment 클래스](../../atl/reference/ccomapartment-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

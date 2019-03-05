@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _ATL_MIN_CRT macro
 - distributing files with ATL components
 ms.assetid: 061d5f98-f669-440e-9380-42f017a0f9e8
-ms.openlocfilehash: c6fb81ad1a6a5233eb27f67fb7985e23b0c0f4b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f83e56e3e9b8468b71534d225080ff5874731b74
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443795"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268891"
 ---
 # <a name="creating-an-atl-project"></a>ATL 프로젝트 만들기
 
@@ -35,7 +35,7 @@ ATL 프로젝트를 만드는 가장 쉬운 방법은 ATL 프로젝트 마법사
 
 프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual c + + 프로젝트용으로 만들어지는 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)합니다. 새 ATL 프로젝트 및 변경 하는 방법에 대 한 구성에 대 한 자세한 내용은 참조 하세요. [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[속성 페이지](../../ide/property-pages-visual-cpp.md)
+[속성 페이지(Visual C++)](../../ide/property-pages-visual-cpp.md)

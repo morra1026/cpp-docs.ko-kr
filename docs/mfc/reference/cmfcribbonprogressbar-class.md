@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCRibbonProgressBar [MFC], SetPos
 - CMFCRibbonProgressBar [MFC], SetRange
 ms.assetid: de3d9f2e-ed59-480e-aa7d-08a33ab36c67
-ms.openlocfilehash: 13d73b09fc9fb88736242e7d0c04c33baa795914
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 626666a8f03a8312bd26fceca745f82ad1ab89b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608600"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285921"
 ---
 # <a name="cmfcribbonprogressbar-class"></a>CMFCRibbonProgressBar 클래스
 
@@ -75,7 +75,7 @@ class CMFCRibbonProgressBar : public CMFCRibbonBaseElement
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#11](../../mfc/reference/codesnippet/cpp/cmfcribbonprogressbar-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -155,7 +155,7 @@ int GetRangeMin() const;
 
 ##  <a name="getregularsize"></a>  CMFCRibbonProgressBar::GetRegularSize
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -187,7 +187,7 @@ BOOL IsInfiniteMode() const;
 
 ##  <a name="ondraw"></a>  CMFCRibbonProgressBar::OnDraw
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -253,14 +253,14 @@ void SetRange(
 *nMin*<br/>
 [in] 범위의 최소값을 지정 합니다.
 
-*최대*<br/>
+*nMax*<br/>
 [in] 범위의 최대값을 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
 최소값 및 최대값을 설정 하 여 진행률 표시줄의 범위를 정의 하려면이 메서드를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

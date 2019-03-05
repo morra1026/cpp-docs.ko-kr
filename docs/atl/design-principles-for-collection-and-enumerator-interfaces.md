@@ -5,12 +5,12 @@ helpviewer_keywords:
 - enumerator interfaces
 - collection interfaces
 ms.assetid: ea19a39e-6333-41a1-be62-5435c236640e
-ms.openlocfilehash: 8c7f782f52391b162a8b32a97961269178999ee0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f40c86d3bc8d9b4e4c752fe6657f6a5a14f19e0c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538205"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269935"
 ---
 # <a name="design-principles-for-collection-and-enumerator-interfaces"></a>컬렉션 및 열거자 인터페이스에 대 한 디자인 원칙
 
@@ -22,7 +22,6 @@ ms.locfileid: "50538205"
 
 인터페이스의 각 형식 컬렉션의 요소에 대 한 액세스를 제공 하는 다른 역할을 재생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션 및 열거자](../atl/atl-collections-and-enumerators.md)
-

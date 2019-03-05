@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlBaseModule class
 ms.assetid: 55ade80c-9b0c-4c51-933e-2158436c1096
-ms.openlocfilehash: b7cba94886fe8434797c39a0d7e5f4a42714a539
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d382d1fe7d50a2fdeefc9b477625580792de7d6f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451417"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284764"
 ---
 # <a name="catlbasemodule-class"></a>CAtlBaseModule 클래스
 
@@ -63,7 +63,7 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
 
 이 클래스는 사용 되지 않는 대체 [CComModule](../../atl/reference/ccommodule-class.md) ATL.의 이전 버전에서 사용 되는 클래스
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module)
 
@@ -189,7 +189,7 @@ HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 
 업데이트 된 리소스 인스턴스를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

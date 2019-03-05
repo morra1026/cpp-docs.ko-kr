@@ -10,16 +10,16 @@ helpviewer_keywords:
 - collection classes [MFC], helper functions
 - helper functions collection class [MFC]
 ms.assetid: bc3a2368-9edd-4748-9e6a-13cba79517ca
-ms.openlocfilehash: 639c4f7952abcf18c29aa3cb0d9fee45b50430af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3992e6c0cf25925e01858016e4bac93d5552fe8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567469"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266148"
 ---
 # <a name="collection-class-helpers"></a>컬렉션 클래스 도우미
 
-컬렉션 클래스 `CMap`, `CList`, 및 `CArray` 비교, 복사 및 요소를 직렬화 하는 작업으로 이러한 목적에 대 한 전역 템플릿 기반 도우미 함수를 사용 합니다. 기반으로 클래스 구현의 일부로 `CMap`, `CList`, 및 `CArray`, 맵, 목록 또는 배열에 저장 된 데이터의 형식에 맞게 조정 된 버전을 사용 하 여 필요에 따라 이러한 함수를 재정의 해야 합니다. 와 같은 도우미 함수를 재정의 하는 방법은 `SerializeElements`, 문서를 참조 하세요 [컬렉션: 형식이 안전한 컬렉션을 만드는 방법](../../mfc/how-to-make-a-type-safe-collection.md)합니다. 사실은 `ConstructElements` 고 `DestructElements` 사용 되지 않습니다.
+컬렉션 클래스 `CMap`, `CList`, 및 `CArray` 비교, 복사 및 요소를 직렬화 하는 작업으로 이러한 목적에 대 한 전역 템플릿 기반 도우미 함수를 사용 합니다. 기반으로 클래스 구현의 일부로 `CMap`, `CList`, 및 `CArray`, 맵, 목록 또는 배열에 저장 된 데이터의 형식에 맞게 조정 된 버전을 사용 하 여 필요에 따라 이러한 함수를 재정의 해야 합니다. 와 같은 도우미 함수를 재정의 하는 방법은 `SerializeElements`, 문서를 참조 [컬렉션: 형식이 안전한 컬렉션을 만드는 방법](../../mfc/how-to-make-a-type-safe-collection.md)합니다. 사실은 `ConstructElements` 고 `DestructElements` 사용 되지 않습니다.
 
 Microsoft Foundation Class 라이브러리는 afxtempl.h 컬렉션 클래스를 사용자 지정 하는 데에 다음 전역 함수를 제공 합니다.
 
@@ -47,7 +47,7 @@ CompareElements(
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 비교할 첫 번째 요소의 형식입니다.
 
 *pElement1*<br/>
@@ -89,7 +89,7 @@ void AFXAPI CopyElements(
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 복사할 요소의 형식을 지정 하는 템플릿 매개 변수
 
 *pDest*<br/>
@@ -105,7 +105,7 @@ void AFXAPI CopyElements(
 
 단순 할당 연산자를 사용 하 여 기본 구현 ( **=** ) 복사 작업을 수행 합니다. 복사할 형식에 오버 로드 된 연산자가 없는 경우 =를 기본 구현에서는 비트 복사를 수행 합니다.
 
-이 함수와 다른 도우미 함수를 구현에 대 한 내용은 문서를 참조 [컬렉션: 형식이 안전한 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)합니다.
+이 및 다른 도우미 함수를 구현에 대 한 자세한 내용은 문서를 참조 하세요. [컬렉션: 형식이 안전한 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -128,7 +128,7 @@ void  AFXAPI DumpElements(
 *dc*<br/>
 요소를 덤프 하는 것에 대 한 컨텍스트를 덤프 합니다.
 
-*형식*<br/>
+*TYPE*<br/>
 요소의 형식을 지정 하는 템플릿 매개 변수
 
 *pElements*<br/>
@@ -200,7 +200,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 요소의 형식을 지정 하는 템플릿 매개 변수
 
 *ar*<br/>
@@ -216,7 +216,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 
 기본 구현에서는 비트 읽기 또는 쓰기입니다.
 
-이 함수와 다른 도우미 함수를 구현에 대 한 내용은 문서를 참조 [컬렉션: 형식이 안전한 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)합니다.
+이 및 다른 도우미 함수를 구현에 대 한 자세한 내용은 문서를 참조 하세요. [컬렉션: 형식이 안전한 컬렉션을 만드는 방법](../how-to-make-a-type-safe-collection.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -226,7 +226,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 
   **헤더** afxtempl.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
 [CMap 클래스](cmap-class.md)<br/>

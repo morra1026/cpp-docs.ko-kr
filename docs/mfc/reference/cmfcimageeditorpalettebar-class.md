@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CMFCImageEditorPaletteBar [MFC], GetRowHeight
 - CMFCImageEditorPaletteBar [MFC], IsButtonExtraSizeAvailable
 ms.assetid: 3fb7ba8e-f254-4d56-b913-9941b4ed8138
-ms.openlocfilehash: 71fe8824e7a7d250d9e939afea99f73fcb4943dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6812f3f425186484ef892d7f5c626c0dfce0f863
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498024"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302985"
 ---
 # <a name="cmfcimageeditorpalettebar-class"></a>CMFCImageEditorPaletteBar 클래스
 
@@ -43,7 +43,7 @@ class CMFCImageEditorPaletteBar : public CMFCToolBar
 
 프레임 워크는이 클래스를 사용 하 여 이미지 편집기 대화 상자에 색상표 막대를 표시 합니다. 이미지 편집기 대화 상자에 대 한 자세한 내용은 참조 하세요. [CMFCImageEditorDialog 클래스](../../mfc/reference/cmfcimageeditordialog-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -89,7 +89,7 @@ virtual BOOL IsButtonExtraSizeAvailable() const;
 
 이 메서드는 FALSE를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

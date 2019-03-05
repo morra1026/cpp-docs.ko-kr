@@ -5,12 +5,12 @@ helpviewer_keywords:
 - tool tips [MFC], activating
 - CToolTipCtrl class [MFC], settings
 ms.assetid: ff8c5c46-2047-403a-bd98-ffec3d21ee3a
-ms.openlocfilehash: 99ad8b30599b4399e4574dea611991b4c8e1a8e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5cc72401da95e63520b544865ea509a8ad219bda
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532673"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271933"
 ---
 # <a name="settings-for-the-tool-tip-control"></a>도구 설명 컨트롤에 대한 설정
 
@@ -18,10 +18,9 @@ ms.locfileid: "50532673"
 
 도구 설명 컨트롤의 소유자 창이 TTS_ALWAYSTIP 스타일을 사용 하 여 활성 또는 비활성 인지 여부를 도구 위에 커서를 가져갈 때 도구 설명을 표시 하도록 활성 도구 설명을 설정할 수 있습니다. 이 스타일을 사용하지 않을 경우 도구의 소유자 창이 활성 상태이면 도구 설명 컨트롤이 나타나지만 비활성 상태이면 나타나지 않습니다.
 
-대부분의 응용 프로그램에는 메뉴 명령에 해당하는 도구를 포함하는 도구 모음이 있습니다. 이러한 도구의 경우 도구 설명 컨트롤이 해당 메뉴 항목과 동일한 텍스트를 표시하는 것이 편리합니다. 시스템이 자동으로 제거 앰퍼샌드 (&) 액셀러레이터 문자가 모든 문자열에서 도구 설명 컨트롤에 전달 된 컨트롤에 TTS_NOPREFIX 스타일입니다.
+대부분의 애플리케이션에는 메뉴 명령에 해당하는 도구를 포함하는 도구 모음이 있습니다. 이러한 도구의 경우 도구 설명 컨트롤이 해당 메뉴 항목과 동일한 텍스트를 표시하는 것이 편리합니다. 시스템이 자동으로 제거 앰퍼샌드 (&) 액셀러레이터 문자가 모든 문자열에서 도구 설명 컨트롤에 전달 된 컨트롤에 TTS_NOPREFIX 스타일입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CToolTipCtrl 사용](../mfc/using-ctooltipctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

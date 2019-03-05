@@ -13,12 +13,12 @@ helpviewer_keywords:
 - chaining message maps
 - CDynamicChain class
 ms.assetid: f084b2be-0e77-4836-973d-ae278a1e9da8
-ms.openlocfilehash: 57bbd009bbcbe0ea3352ab27c5d6fbb630b7d050
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b68198c17d7bd030b88bc78ad4de1367c914703
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668015"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299156"
 ---
 # <a name="cdynamicchain-class"></a>CDynamicChain 클래스
 
@@ -40,7 +40,7 @@ class CDynamicChain
 |이름|설명|
 |----------|-----------------|
 |[CDynamicChain::CDynamicChain](#cdynamicchain)|생성자입니다.|
-|[CDynamicChain:: ~ CDynamicChain](#dtor)|소멸자입니다.|
+|[CDynamicChain::~CDynamicChain](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -130,7 +130,7 @@ BOOL CallChain(
 CDynamicChain();
 ```
 
-##  <a name="dtor"></a>  CDynamicChain:: ~ CDynamicChain
+##  <a name="dtor"></a>  CDynamicChain::~CDynamicChain
 
 소멸자입니다.
 
@@ -189,7 +189,7 @@ BOOL SetChainEntry(
 
 경우는 *dwChainID* 값이 이미 컬렉션에 있는지, 해당 연결 된 개체 및 메시지 맵 바뀝니다 *pObject* 하 고 *dwMsgMapID*각각. 그렇지 않으면 새 항목이 추가 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

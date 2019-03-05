@@ -8,12 +8,12 @@ helpviewer_keywords:
 - scroll bars [MFC], messages
 - scrolling views [MFC]
 ms.assetid: f98a3421-c336-407e-97ee-dbb2ffd76fbd
-ms.openlocfilehash: acef79a89da88773da564fc965a607e2fd5b53f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2baa89f233eb6df93cde3adbde35ba1e6d35c093
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626105"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283711"
 ---
 # <a name="scrolling-and-scaling-views"></a>뷰 스크롤 및 크기 조정
 
@@ -21,7 +21,7 @@ MFC 표시 하는 프레임 창의 크기를 자동으로 확장 되는 스크�
 
 스크롤 및 크기 조정에 대 한 자세한 내용은 클래스를 참조 하세요 [CScrollView](../mfc/reference/cscrollview-class.md) 에 *MFC 참조*합니다. 스크롤 예제를 참조 합니다 [Scribble 샘플](../visual-cpp-samples.md)합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - 뷰 스크롤
 
@@ -47,7 +47,6 @@ MFC 표시 하는 프레임 창의 크기를 자동으로 확장 되는 스크�
 
 프레임 창의 크기를 자동으로 맞게 보기를 원하는 경우 사용할 수 있습니다 `CScrollView` 스크롤 대신 크기를 조정 합니다. 논리 뷰 늘어나거나 창의 클라이언트 영역에 맞게 정확 하 게 합니다. 확장 된 보기에 스크롤 막대가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [뷰 사용](../mfc/using-views.md)
-

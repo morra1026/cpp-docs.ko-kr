@@ -7,12 +7,12 @@ helpviewer_keywords:
 - optimization, ActiveX controls
 - optimizing performance, ActiveX controls
 ms.assetid: e821e19e-b9eb-49ab-b719-0743420ba80b
-ms.openlocfilehash: 6f0d888f49cf27505882e89e3cdbb469ea9e8684
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 294d9c43f5f767329c04932c574485d7dca704e9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472698"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261946"
 ---
 # <a name="optimizing-persistence-and-initialization"></a>지속성 및 초기화 최적화
 
@@ -44,7 +44,6 @@ ms.locfileid: "50472698"
 
 하지만 `Serialize` 하 고 `OnResetState` 재정의 된는 `DoPropExchange` 함수 유지할지 그대로-propertybag 형식으로 지 속성을 위해 사용 되 고 있으므로. 컨트롤 속성과 일관 되 게 관리 되도록 이러한 함수는 지 속성에 관계 없이 컨테이너 메커니즘 사용의 세 가지 모두를 유지 하는 것이 반드시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)
-

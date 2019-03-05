@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COlePropertiesDialog [MFC], m_psh
 - COlePropertiesDialog [MFC], m_vp
 ms.assetid: a54dbc89-1447-4329-bd01-00e98ec9e935
-ms.openlocfilehash: e40483781427e3135d89a9339a34f606d45db77c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 37197ee20b31564c589099b10e0f8d3f0d1f7e86
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547357"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263873"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog 클래스
 
@@ -74,7 +74,7 @@ class COlePropertiesDialog : public COleDialog
 
 OLE 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -259,7 +259,7 @@ virtual BOOL OnApplyScale(
 > [!NOTE]
 >  일반 OLE 개체 속성 대화 상자 표시 되기 전에 프레임 워크에 대 한 NULL 사용 하 여이 함수를 호출 하는 *pItem* 에 대 한-1 *nCurrentScale*합니다. 크기 조정 컨트롤을 사용 해야 하는지 확인 하려면 수행 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CIRC](../../visual-cpp-samples.md)<br/>
 [COleDialog 클래스](../../mfc/reference/coledialog-class.md)<br/>

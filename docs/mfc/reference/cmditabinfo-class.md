@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMDITabInfo [MFC], m_style
 - CMDITabInfo [MFC], m_tabLocation
 ms.assetid: 988ae1b7-4f7f-4239-b88f-7e28b3291c5e
-ms.openlocfilehash: b9b45142d0fb1d53ccecad31ace7ad1a6dd4ee40
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a42128d097c9d63d82243090e2e215a250ff432b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524711"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276340"
 ---
 # <a name="cmditabinfo-class"></a>CMDITabInfo 클래스
 
@@ -85,7 +85,7 @@ class CMDITabInfo
 
 [!code-cpp[NVC_MFC_MDITab#1](../../mfc/reference/codesnippet/cpp/cmditabinfo-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CMDITabInfo](../../mfc/reference/cmditabinfo-class.md)
 
@@ -213,7 +213,7 @@ CMFCTabCtrl::Style m_style
 |-|-|
 |STYLE_3D|3D 스타일입니다.  |
 |STYLE_3D_ONENOTE|Microsoft OneNote 스타일입니다.  |
-|STYLE_3D_VS2005|Microsoft Visual Studio 2005 스타일입니다.  |
+|STYLE_3D_VS2005|Microsoft Visual Studio 2005 style.  |
 |STYLE_3D_SCROLLED|사각형 탭 레이블로 3D 스타일입니다.  |
 |STYLE_FLAT_SHARED_HORZ_SCROLL|공유 가로 스크롤 막대를 사용 하 여 플랫 스타일입니다.  |
 |STYLE_3D_ROUNDED_SCROLL|Round 탭 레이블로 3D 스타일입니다.  |
@@ -247,7 +247,7 @@ void Serialize(CArchive& ar);
 *ar*<br/>
 [in] A [CArchive 클래스](../../mfc/reference/carchive-class.md) serialize 할 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CMDIFrameWndEx 클래스](../../mfc/reference/cmdiframewndex-class.md)<br/>
 [MDI 탭 그룹](../../mfc/mdi-tabbed-groups.md)<br/>

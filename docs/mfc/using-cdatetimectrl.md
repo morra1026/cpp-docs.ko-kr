@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - DateTimePicker control [MFC], CDateTimeCtrl class
 ms.assetid: cb2a8720-43f1-4c33-a3a4-def9a1622e00
-ms.openlocfilehash: b533cc1590b0c9c1b86407a8d55ae4995b10250a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 251528cafcbedb0352a1962d70452f8b8778f10b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542950"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303978"
 ---
 # <a name="using-cdatetimectrl"></a>CDateTimeCtrl 사용
 
@@ -20,7 +20,7 @@ ms.locfileid: "50542950"
 > [!NOTE]
 >  둘 다 사용 하 여 `CDateTimePicker` 및 `CMonthCalCtrl` 클래스 프로젝트에서 AFXDTCTL 포함 해야 합니다. H, 프로젝트의 STDAFX에서 일반적으로 합니다. H 파일입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [날짜 및 시간 선택 컨트롤 만들기](../mfc/creating-the-date-and-time-picker-control.md)
 
@@ -34,7 +34,6 @@ ms.locfileid: "50542950"
 
 - [날짜 및 시간 선택 컨트롤의 알림 메시지 처리](../mfc/processing-notification-messages-in-date-and-time-picker-controls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

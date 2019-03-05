@@ -1,18 +1,18 @@
 ---
-title: '방법: combinable을 사용하여 성능 개선'
+title: '방법: Combinable 성능 향상을 사용 하 여'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - combinable class, example
 - improving parallel performance with combinable [Concurrency Runtime]
 ms.assetid: fa730580-1c94-4b2d-8aec-57c91dc0497e
-ms.openlocfilehash: 5d68335046b08aa41028be11d833b334c1dc0055
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8f4c40be84b2204e5b5632fe6d3d5a5d22b8719
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455266"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258127"
 ---
-# <a name="how-to-use-combinable-to-improve-performance"></a>방법: combinable을 사용하여 성능 개선
+# <a name="how-to-use-combinable-to-improve-performance"></a>방법: Combinable 성능 향상을 사용 하 여
 
 사용 하는 방법을 보여 주는이 예제는 [concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) 클래스에 있는 숫자의 합계를 계산 하는 [std:: array](../../standard-library/array-class-stl.md) 는 개체입니다. `combinable` 클래스 공유 상태를 제거 하 여 성능이 향상 됩니다.
 
@@ -45,7 +45,7 @@ ms.locfileid: "50455266"
 
 [!code-cpp[concrt-parallel-sum-of-primes#4](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-improve-performance_4.cpp)]
 
-프로세서가 4개인 컴퓨터의 샘플 출력은 다음과 같습니다.
+다음 샘플은 프로세서가 4개인 컴퓨터에 대한 출력입니다.
 
 ```Output
 1709600813
@@ -59,13 +59,13 @@ parallel time: 1638 ms
 
 컴파일하려면 코드를 복사 하 고 다음 Visual Studio 프로젝트에 붙여 넣습니다와 라는 파일에 붙여 `parallel-sum-of-primes.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
 
-**cl.exe /EHsc 병렬-합계-의-primes.cpp**
+**cl.exe /EHsc parallel-sum-of-primes.cpp**
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
 
 사용 하 여 맵 및이 동일한 결과 생성 하는 작업 감소 하는 예제를 참조 하세요 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable 클래스](../../parallel/concrt/reference/combinable-class.md)<br/>

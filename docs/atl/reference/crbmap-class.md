@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CRBMap class
 ms.assetid: 658e94dc-e835-4356-aed1-1513e1f66969
-ms.openlocfilehash: fc702feacff5b2f2bbe53a9ea49f664a241d788c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5dedb26544bb2755bc74894cf36a622f5141f89
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677515"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301508"
 ---
 # <a name="crbmap-class"></a>CRBMap 클래스
 
@@ -53,7 +53,7 @@ Key 요소 형식입니다.
 |이름|설명|
 |----------|-----------------|
 |[CRBMap::CRBMap](#crbmap)|생성자입니다.|
-|[CRBMap:: ~ CRBMap](#dtor)|소멸자입니다.|
+|[CRBMap::~CRBMap](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -77,7 +77,7 @@ Key 요소 형식입니다.
 
 자세한 내용은 다양 한 컬렉션 클래스 및 해당 기능 및 성능 특성에 대 한 참조 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CRBTree](../../atl/reference/crbtree-class.md)
 
@@ -110,7 +110,7 @@ explicit CRBMap(size_t nBlockSize = 10) throw();
 
 [!code-cpp[NVC_ATL_Utilities#81](../../atl/codesnippet/cpp/crbmap-class_1.cpp)]
 
-##  <a name="dtor"></a>  CRBMap:: ~ CRBMap
+##  <a name="dtor"></a>  CRBMap::~CRBMap
 
 소멸자입니다.
 
@@ -139,7 +139,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 *key*<br/>
 조회 요소를 식별 하는 키를 지정 합니다.
 
-*값*<br/>
+*value*<br/>
 조회 값을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -194,7 +194,7 @@ POSITION SetAt(
 *key*<br/>
 추가할 키 값을 `CRBMap` 개체입니다.
 
-*값*<br/>
+*value*<br/>
 에 추가할 값을 `CRBMap` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -211,7 +211,7 @@ POSITION SetAt(
 
 [!code-cpp[NVC_ATL_Utilities#84](../../atl/codesnippet/cpp/crbmap-class_4.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRBTree 클래스](../../atl/reference/crbtree-class.md)<br/>
 [CAtlMap 클래스](../../atl/reference/catlmap-class.md)<br/>

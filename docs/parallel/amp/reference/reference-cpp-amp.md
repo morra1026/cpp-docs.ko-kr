@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, reference
 ms.assetid: 372a8aed-8a53-48c9-996f-9c3cf09c9fa8
-ms.openlocfilehash: 5e6905adee6e6cad0c0c49488352f4a039aa27eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a334c7873675183dc06abfc2fe51472190996bf3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630064"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257509"
 ---
 # <a name="reference-c-amp"></a>참조(C++ AMP)
 
@@ -20,7 +20,7 @@ ms.locfileid: "50630064"
 > [!NOTE]
 >  C++ 언어 표준에는 라이브러리와 같은 구현을 위해 밑줄(`_`) 문자로 시작하는 식별자의 사용이 예약되어 있습니다. 코드에 밑줄로 시작하는 이름을 사용하지 마세요. 해당 이름이 이 규칙을 따르는 코드 요소의 동작은 보장되지 않으며 이후 릴리스에서 변경될 수 있습니다. 이러한 이유로 이 설명서에서는 해당 코드 요소가 생략되었습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)<br/>
 클래스 및 c + + 코드 데이터 병렬 하드웨어 가속화 하는 함수를 제공 합니다.
@@ -41,4 +41,3 @@ D3D 상호 운용성을 지 원하는 함수를 제공 합니다. AMP 코드에�
 
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 C + + AMP는 개별 그래픽 카드의 그래픽 처리 장치 (GPU)로 일반적으로 존재 하는 데이터 병렬 하드웨어를 활용 하 여 c + + 코드의 실행을 가속화 합니다.
-

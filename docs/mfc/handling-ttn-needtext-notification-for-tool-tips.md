@@ -8,12 +8,12 @@ helpviewer_keywords:
 - notifications [MFC], tool tips
 - tool tips [MFC], notifications
 ms.assetid: d0370a65-21ba-4676-bcc5-8cf851bbb15c
-ms.openlocfilehash: 1dd73364b0b67e9ca3e7e47b172cc54db88aaba4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 97db98322cd7c0d14e46f54a055bbc646c90d785
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603634"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268995"
 ---
 # <a name="handling-ttnneedtext-notification-for-tool-tips"></a>도구 설명에 대한 TTN_NEEDTEXT 알림 처리
 
@@ -49,7 +49,6 @@ ms.locfileid: "50603634"
 
 [!code-cpp[NVC_MFCControlLadenDialog#55](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_4.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFrameWnd에서 파생되지 않은 창의 도구 설명](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
-

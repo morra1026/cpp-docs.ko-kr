@@ -31,12 +31,12 @@ helpviewer_keywords:
 - IPropertyPage ATL implementation
 - IPropertyPageImpl class
 ms.assetid: f9b7c8b1-7a04-4eab-aa63-63efddb740fa
-ms.openlocfilehash: bf97699917732f8ce94d1541b6a93e00325b28c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3b92e3d2f72ca48238eb22404947d2eafde0378
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605818"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297335"
 ---
 # <a name="ipropertypageimpl-class"></a>IPropertyPageImpl 클래스
 
@@ -102,7 +102,7 @@ class IPropertyPageImpl
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IPropertyPage`
 
@@ -356,7 +356,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 
 참조 [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IPropertyPage2Impl 클래스](../../atl/reference/ipropertypage2impl-class.md)<br/>
 [IPerPropertyBrowsingImpl 클래스](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>

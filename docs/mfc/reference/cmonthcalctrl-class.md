@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: 48b02843cc957994aa3f3109a82cb2188dd9acff
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 9807d45f12b5336ebbb80ea9718af77cf8d38188
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894200"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303672"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl 클래스
 
@@ -177,7 +177,7 @@ Month calendar 컨트롤에는 1 개월 이상 표시할 수 있으며 굵게 �
 
 Month calendar 컨트롤 사용에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 CMonthCalCtrl](../../mfc/using-cmonthcalctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -450,7 +450,7 @@ int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;
 
 |값|요일|
 |-----------|---------------------|
-|0|월요일|
+|0|Monday|
 |1|화요일|
 |2|수요일|
 |3|목요일|
@@ -1302,7 +1302,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 이 메서드는 전송 된 [MCM_SIZERECTTOMIN](/windows/desktop/Controls/mcm-sizerecttomin) Windows SDK에 설명 된 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

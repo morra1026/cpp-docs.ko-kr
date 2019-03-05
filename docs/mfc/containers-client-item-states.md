@@ -7,12 +7,12 @@ helpviewer_keywords:
 - lifetime, lifetime states and OLE container client items
 - client items and OLE containers
 ms.assetid: e7021caa-bd07-4adb-976e-f5f3d025bc53
-ms.openlocfilehash: 866aa6f2265abe671ce0028e3be5f1c8ee1762a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1453ba3f96e49cefc9014a93ebcfbcfe5c6bc905
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575346"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273676"
 ---
 # <a name="containers-client-item-states"></a>컨테이너: 클라이언트 항목 상태
 
@@ -38,7 +38,7 @@ ms.locfileid: "50575346"
 
 위치에 항목을 활성화 하는 경우 전달, 일반적으로 활성 상태를 통해 간단 하 게 합니다. UI 활성 상태가 고 해당 메뉴, 도구 모음 및 컨테이너를 사용 하 여 다른 사용자 인터페이스 구성 요소 서버 병합에 입력 합니다. 이러한 사용자 인터페이스 구성 요소가 있는지를 활성 상태에서 UI 활성 상태를 구분합니다. 그렇지 않으면 활성 상태로 UI 활성 상태와 유사합니다. 서버에서 실행 취소를 지 원하는 경우 서버는 로드 또는 열린 상태에 도달할 때까지 OLE 항목의 실행 취소 상태 정보를 유지 하는 일을 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [활성화](../mfc/activation-cpp.md)<br/>

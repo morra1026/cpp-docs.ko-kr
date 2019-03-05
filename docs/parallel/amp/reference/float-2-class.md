@@ -28,12 +28,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_2::y
 - amp_short_vectors/Concurrency::graphics::float_2::g
 ms.assetid: b3ebd48e-f8c8-4f00-a640-357f702f0cae
-ms.openlocfilehash: 61e9f46737e15bf4cb7a7d45b0560fd3e6dea1cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94a0936c1e5630ae53af9d9386d3c9248061ed71
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579155"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299892"
 ---
 # <a name="float2-class"></a>float_2 클래스
 
@@ -108,7 +108,7 @@ class float_2;
 |float_2::y||
 |float_2::yx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `float_2`
 
@@ -116,7 +116,7 @@ class float_2;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ##  <a name="ctor"></a> float_2
 
@@ -168,7 +168,7 @@ explicit inline float_2(
 *_V1*<br/>
 1 요소를 초기화할 값입니다.
 
-*(_V)*<br/>
+*_V*<br/>
 초기화에 대 한 값입니다.
 
 *_Other*<br/>
@@ -180,6 +180,6 @@ explicit inline float_2(
 static const int size = 2;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - child windows [MFC]
 - MDI [MFC], frame windows
 ms.assetid: 1828d96e-a561-48ae-a661-ba9701de6bee
-ms.openlocfilehash: d4b6ccf8a75cc7679f78fba48314073bc53b66a5
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: d4b4a4876f47452361b13837b0279f5bf98f8658
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176798"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283685"
 ---
 # <a name="managing-mdi-child-windows"></a>MDI 자식 창 관리
 
@@ -30,13 +30,12 @@ MDI 프레임 창 및 자식
 
 MDI 프레임 창은 또한 현재 MDI 자식 창(있는 경우)과 결합한 상태에서도 작동합니다. MDI 프레임 창은 명령 메시지를 직접 처리하려고 시도하기 전에 이를 먼저 MDI 자식에 위임합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서 프레임 창 만들기](../mfc/creating-document-frame-windows.md)
 
 - [프레임 창 스타일](../mfc/frame-window-styles-cpp.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창 사용](../mfc/using-frame-windows.md)
-

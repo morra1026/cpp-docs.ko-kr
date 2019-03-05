@@ -74,12 +74,12 @@ helpviewer_keywords:
 - COleServerItem [MFC], OnShow
 - COleServerItem [MFC], m_sizeExtent
 ms.assetid: 80256df6-3888-4256-944b-787d4b2e6b0d
-ms.openlocfilehash: e0d48d37d8262c4e82a8532333bbd12f193087b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f774a8db1121dd293db8e58f7cd92aaabaeabada
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604126"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270555"
 ---
 # <a name="coleserveritem-class"></a>COleServerItem 클래스
 
@@ -116,7 +116,7 @@ class COleServerItem : public CDocItem
 |[COleServerItem::IsLinkedItem](#islinkeditem)|항목에 연결 된 OLE 항목을 나타내는지 여부를 나타냅니다.|
 |[COleServerItem::NotifyChanged](#notifychanged)|자동 링크 업데이트를 사용 하 여 모든 컨테이너를 업데이트합니다.|
 |[COleServerItem::OnDoVerb](#ondoverb)|동사를 실행 하기 위해 호출 됩니다.|
-|[Coleserveritem:: Ondraw](#ondraw)|컨테이너; 항목을 그리도록 요청할 때 호출 필요한 구현입니다.|
+|[COleServerItem::OnDraw](#ondraw)|컨테이너; 항목을 그리도록 요청할 때 호출 필요한 구현입니다.|
 |[COleServerItem::OnDrawEx](#ondrawex)|특수 한 항목 그리기 호출 됩니다.|
 |[COleServerItem::OnGetClipboardData](#ongetclipboarddata)|클립보드에 복사 하는 데이터를 가져오기 위해 프레임 워크에서 호출 됩니다.|
 |[COleServerItem::OnGetExtent](#ongetextent)|OLE 항목의 크기를 검색 하기 위해 프레임 워크에서 호출 됩니다.|
@@ -132,7 +132,7 @@ class COleServerItem : public CDocItem
 |[COleServerItem::OnUpdateItems](#onupdateitems)|서버 문서의 모든 항목의 프레젠테이션 캐시를 업데이트 하기 위해 호출 됩니다.|
 |[COleServerItem::SetItemName](#setitemname)|항목의 이름을 설정합니다. 연결 된 항목에 사용 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -155,9 +155,9 @@ class COleServerItem : public CDocItem
 
 사용 하도록 `COleServerItem`클래스에서 파생 되 고 구현 합니다 [OnDraw](#ondraw) 및 [Serialize](../../mfc/reference/cobject-class.md#serialize) 멤버 함수입니다. `OnDraw` 함수 컨테이너 응용 프로그램을 복합 문서를 열 때 표시 될 수 있도록 항목의 메타 파일 표현을 제공 합니다. 합니다 `Serialize` 함수의 `CObject` 서버 및 컨테이너 응용 프로그램 간에 전송 해야 하는 포함 된 항목 허용 하는 항목의 네이티브 표현을 제공 합니다. [OnGetExtent](#ongetextent) 항목의 크기를 조정 하는 컨테이너를 사용 하도록 설정 하 고 컨테이너를 항목의 기본 크기를 제공 합니다.
 
-서버 및 관련된 항목에 대 한 자세한 내용은 문서를 참조 [서버: 서버 구현](../../mfc/servers-implementing-a-server.md) 하 고 "만들기는 컨테이너/서버 응용 프로그램" 문서의 [컨테이너: 고급 기능](../../mfc/containers-advanced-features.md)합니다.
+서버 및 관련된 항목에 대 한 자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md) 하 고 "만들기는 컨테이너/서버 응용 프로그램" 문서의 [컨테이너: 고급 기능](../../mfc/containers-advanced-features.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -527,7 +527,7 @@ Microsoft Foundation Class 라이브러리를 사용 하 여 컨테이너 응용
 
 자세한 내용은 [IOleObject::DoVerb](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK에 있습니다.
 
-##  <a name="ondraw"></a>  Coleserveritem:: Ondraw
+##  <a name="ondraw"></a>  COleServerItem::OnDraw
 
 OLE 항목을 메타 파일로 렌더링 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -995,9 +995,9 @@ void SetItemName(LPCTSTR lpszItemName);
 
 이름은 문서 내에서 고유 해야 합니다. 서버 응용 프로그램을 연결 된 항목을 편집 하려면 호출 되 면 응용 프로그램이이 이름을 사용 하 여 항목을 찾습니다. 포함 된 항목에 대 한이 함수를 호출할 필요가 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [CDocItem 클래스](../../mfc/reference/cdocitem-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleClientItem 클래스](../../mfc/reference/coleclientitem-class.md)<br/>

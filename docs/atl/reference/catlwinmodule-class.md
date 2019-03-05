@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlWinModule class
 ms.assetid: 7ec844af-0f68-4a34-b0c8-9de50a025df0
-ms.openlocfilehash: 3e38aebf3eadceafad3e70463d5bcf2d26fef96e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0bc98fa48f84e67ab38106dea3fe22d5ad1757d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561631"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269463"
 ---
 # <a name="catlwinmodule-class"></a>CAtlWinModule 클래스
 
@@ -37,7 +37,7 @@ class CAtlWinModule : public _ATL_WIN_MODULE
 |이름|설명|
 |----------|-----------------|
 |[CAtlWinModule::CAtlWinModule](#catlwinmodule)|생성자입니다.|
-|[CAtlWinModule:: ~ CAtlWinModule](#dtor)|소멸자입니다.|
+|[CAtlWinModule::~CAtlWinModule](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -50,7 +50,7 @@ class CAtlWinModule : public _ATL_WIN_MODULE
 
 이 클래스는 창 작업 기능을 필요로 하는 모든 ATL 클래스에 대 한 지원을 제공 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)
 
@@ -92,7 +92,7 @@ CAtlWinModule();
 
 초기화에 실패 하면를 **EXCEPTION_NONCONTINUABLE** 예외가 발생 합니다.
 
-##  <a name="dtor"></a>  CAtlWinModule:: ~ CAtlWinModule
+##  <a name="dtor"></a>  CAtlWinModule::~CAtlWinModule
 
 소멸자입니다.
 
@@ -116,7 +116,7 @@ void* ExtractCreateWndData();
 
 에 대 한 포인터를 반환 합니다 `_AtlCreateWndData` 구조를 사용 하 여 이전에 추가한 [CAtlWinModule::AddCreateWndData](#addcreatewnddata), 또는 개체가 사용할 수 없으면 NULL.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

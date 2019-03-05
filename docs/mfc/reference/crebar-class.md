@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CReBar [MFC], Create
 - CReBar [MFC], GetReBarCtrl
 ms.assetid: c1ad2720-1d33-4106-8e4e-80aa84f93559
-ms.openlocfilehash: 344886ca4af45d55b85cc7471c1e558d73cbebf6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 4216898e85ebbec748598e10ebb31ce5510f7908
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175888"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267786"
 ---
 # <a name="crebar-class"></a>CReBar 클래스
 
@@ -54,7 +54,7 @@ Rebar 개체는 다양 한 자식 창에 일반적으로 다른 컨트롤 편집
 > [!CAUTION]
 >  Rebar 및 rebar 컨트롤 개체에는 MFC 컨트롤 모음 고정을 지원 하지 않습니다. 경우 `CRebar::EnableDocking` 응용 프로그램에서 assert가 호출 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -173,9 +173,8 @@ Rebar에 사용자 지정 Windows rebar 공용 컨트롤의 기능을 활용 하
 
 [!code-cpp[NVC_MFC_CReBarCtrl#2](../../mfc/reference/codesnippet/cpp/crebar-class_2.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

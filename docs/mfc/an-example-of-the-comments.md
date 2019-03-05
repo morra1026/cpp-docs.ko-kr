@@ -7,12 +7,12 @@ helpviewer_keywords:
 - comments, MFC
 - examples [MFC], code comments
 ms.assetid: eb8ddea2-74de-4d5c-93d6-596f7c5e58a7
-ms.openlocfilehash: d7ee208ef143ef0022b0ea0aac286847403ddeeb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bcfa2f3e90981ba0bba6946cc6d5a7278288596
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529763"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301573"
 ---
 # <a name="an-example-of-the-comments"></a>주석 예
 
@@ -22,7 +22,7 @@ ms.locfileid: "50529763"
 
 이러한 주석은 비슷한 종류의 클래스 멤버를 포함 하는 클래스 선언의 섹션을 일관 되 게 표시 합니다. 이 MFC 규칙 염두에서에 둡니다, 그리고 규칙을 설정 하지.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
 [구현 주석](../mfc/decrement-implementation-comment.md)<br/>
@@ -30,4 +30,3 @@ ms.locfileid: "50529763"
 [특성 주석](../mfc/decrement-attributes-comment.md)<br/>
 [작업 주석](../mfc/decrement-operations-comment.md)<br/>
 [재정의 가능 주석](../mfc/decrement-overridables-comment.md)
-

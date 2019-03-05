@@ -11,16 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - message_processor class
 ms.assetid: 23afb052-daa7-44ed-bf24-d2513db748da
-ms.openlocfilehash: d6e45613e0b412b6b94dba3c4a435115e32c7d6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be6cb1c614a41919663a4cc063da66679556e498
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438222"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295242"
 ---
 # <a name="messageprocessor-class"></a>message_processor 클래스
 
-`message_processor` 클래스는 `message` 개체 처리를 위한 추상 기본 클래스입니다. 메시지 순서에 대한 보장은 없습니다.
+
+  `message_processor` 클래스는 `message` 개체 처리를 위한 추상 기본 클래스입니다. 메시지 순서에 대한 보장은 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -50,13 +51,13 @@ class message_processor;
 |[sync_send](#sync_send)|파생된 클래스에서 재정의 되 면 메시지를 동기적으로 된 블록에 넣습니다.|
 |[wait](#wait)|파생된 클래스에서 재정의 되 면 모든 비동기 작업이 완료 될 때까지 기다립니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
 |[process_incoming_message](#process_incoming_message)|파생된 클래스에서 재정의 되 면 블록으로 전달 메시지 처리를 수행 합니다. 새 메시지가 추가 되 고 큐가 비워 둘 수 때마다 한 번 호출 됩니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `message_processor`
 
@@ -124,7 +125,7 @@ virtual void wait() = 0;
 
 프로세서 구현에서는이 메서드를 재정의 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [ordered_message_processor 클래스](ordered-message-processor-class.md)

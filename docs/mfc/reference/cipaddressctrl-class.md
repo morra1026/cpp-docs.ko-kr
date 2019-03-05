@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: fe5503eb78954bf39a135cd0e4acda6c37fc5fa9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e569829c100a581e24b5ce05df2f90ac7088024b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568703"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266297"
 ---
 # <a name="cipaddressctrl-class"></a>CIPAddressCtrl 클래스
 
@@ -70,7 +70,7 @@ class CIPAddressCtrl : public CWnd
 
 IP 주소 컨트롤에 대 한 자세한 내용은 참조 하세요. [IP 주소 컨트롤](/windows/desktop/Controls/ip-address-controls) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -329,8 +329,7 @@ void SetFieldRange(
 
 이 멤버 함수는 Win32 메시지의 동작을 구현 [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange)Windows SDK에 설명 된 대로 합니다. 두 매개 변수를 사용 하 여 *nLower* 하 고 *nUpper*대신 필드의 아래쪽과 위쪽 한계를 나타내기 위해 합니다 *wRange* Win32 메시지를 사용 하는 매개 변수.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

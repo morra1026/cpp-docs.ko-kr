@@ -6,12 +6,12 @@ helpviewer_keywords:
 - composite controls
 - ATL Control Wizard
 ms.assetid: f10b1927-9fc6-40a7-ac29-efdac70584fe
-ms.openlocfilehash: c9e4f348f03800051a2eab518e5642f00ba59bee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89cadf3c966eebb1b96cbd378bb422cbcff48727
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448778"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275599"
 ---
 # <a name="inserting-a-composite-control"></a>복합 컨트롤 삽입
 
@@ -21,7 +21,6 @@ ms.locfileid: "50448778"
 
 기본 HTML 페이지 컨트롤을 보기 위해 만들어질 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [복합 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)
-

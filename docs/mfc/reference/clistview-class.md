@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CListView [MFC], GetListCtrl
 - CListView [MFC], RemoveImageList
 ms.assetid: 7626bdb2-a1b8-4eab-b631-6743710a8432
-ms.openlocfilehash: e7d542d253d0d4aa8d661effb7dd7147ea3c121b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4507c2a640296c2d2619b1da7a0ebae2bc6ef401
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592649"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291286"
 ---
 # <a name="clistview-class"></a>CListView 클래스
 
@@ -43,7 +43,7 @@ class CListView : public CCtrlView
 |----------|-----------------|
 |[CListView::GetListCtrl](#getlistctrl)|뷰와 연결 된 목록 컨트롤을 반환 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -53,7 +53,7 @@ class CListView : public CCtrlView
 
 이 아키텍처에 대 한 자세한 내용은 참조에 대 한 개요는 [CView](../../mfc/reference/cview-class.md) 클래스 및 있습니다 언급 상호 참조 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -108,7 +108,7 @@ void RemoveImageList(int nImageList);
 *nImageList*<br/>
 제거할 이미지의 0부터 시작 하는 인덱스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 ROWLIST](../../visual-cpp-samples.md)<br/>
 [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)<br/>

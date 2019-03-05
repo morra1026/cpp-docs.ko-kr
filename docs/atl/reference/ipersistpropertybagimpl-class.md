@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IPersistPropertyBagImpl class
 ms.assetid: 712af24d-99f8-40f2-9811-53b3ff6e5b19
-ms.openlocfilehash: 644f26ffbfb29003780eb2fc7acf3471d101ec57
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 800c38c15e4ec8028fba9188d75e49be7ca51146
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549073"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297179"
 ---
 # <a name="ipersistpropertybagimpl-class"></a>IPersistPropertyBagImpl 클래스
 
@@ -56,7 +56,7 @@ class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IPersistPropertyBag`
 
@@ -125,7 +125,7 @@ ATL 개체의 속성 맵에 사용 하 여이 정보를 저장 합니다. 기본
 
 참조 [IPersistPropertyBag::Save](https://msdn.microsoft.com/library/aa768207.aspx) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [BEGIN_PROP_MAP](property-map-macros.md#begin_prop_map)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

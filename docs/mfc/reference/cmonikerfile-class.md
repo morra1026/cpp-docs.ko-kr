@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMonikerFile [MFC], Open
 - CMonikerFile [MFC], CreateBindContext
 ms.assetid: 87be5966-f4f7-4235-bce2-1fa39e9417de
-ms.openlocfilehash: dc7c2615ff4de7370bee74c64c8bcddbd1f1fcd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ecffdb3a6f44f60004cf4f039bdab9c98e212ce1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541906"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302470"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile 클래스
 
@@ -52,7 +52,7 @@ class CMonikerFile : public COleStreamFile
 |[CMonikerFile::GetMoniker](#getmoniker)|현재 모니커를 반환합니다.|
 |[CMonikerFile::Open](#open)|한 스트림을 가져올 수 지정 된 파일을 엽니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -68,7 +68,7 @@ class CMonikerFile : public COleStreamFile
 
 모니커 및 스트림에 대 한 자세한 내용은 참조 하세요. [COleStreamFile](../../mfc/reference/colestreamfile-class.md) 에 *MFC 참조* 및 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 및 [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) 에 Windows SDK입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -189,7 +189,7 @@ URL 또는 열려는 파일의 이름입니다.
 
 합니다 *lpszURL* Macintosh에서 매개 변수를 사용할 수 없습니다. 만 *pMoniker* 형태의 `Open` Macintosh에서 사용할 수 있습니다.
 
-URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. 예를 들어:
+URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. 예를 들면,
 
 [!code-cpp[NVC_MFCWinInet#6](../../mfc/codesnippet/cpp/cmonikerfile-class_1.cpp)]
 
@@ -197,7 +197,7 @@ URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. �
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/cmonikerfile-class_2.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COleStreamFile 클래스](../../mfc/reference/colestreamfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

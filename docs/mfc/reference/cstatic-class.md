@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CStatic [MFC], SetEnhMetaFile
 - CStatic [MFC], SetIcon
 ms.assetid: e7c94cd9-5ebd-428a-aa30-b3e51f8efb95
-ms.openlocfilehash: ab25cad77ee0f11167661bb27b408dd5e92b51f9
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 02e2f20cc568e8846923f7189da3ea45478fc289
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178696"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284439"
 ---
 # <a name="cstatic-class"></a>CStatic 클래스
 
@@ -78,7 +78,7 @@ class CStatic : public CWnd
 
 만드는 경우는 `CStatic` 창 내에서 개체 삭제 해야 합니다. `CStatic` 스택에 창 내에서 만든 개체는 자동으로 제거 됩니다. 만드는 경우는 `CStatic` 를 사용 하 여 힙에 있는 개체에는 **새** 를 호출 해야 함수를 **삭제** 되어 완료 되 면 제거할 개체의 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -380,14 +380,14 @@ HICON SetIcon(HICON hIcon);
 
 [!code-cpp[NVC_MFC_CStatic#6](../../mfc/reference/codesnippet/cpp/cstatic-class_6.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [CButton 클래스](../../mfc/reference/cbutton-class.md)<br/>
 [CComboBox 클래스](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CListBox 클래스](../../mfc/reference/clistbox-class.md)<br/>
 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md)<br/>
 [CDialog 클래스](../../mfc/reference/cdialog-class.md)

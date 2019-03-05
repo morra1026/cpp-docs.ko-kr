@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CLocalHeap class
 ms.assetid: 1ffa87a5-5fc8-4f8d-8809-58e87e963bd2
-ms.openlocfilehash: 7f4fa6b6035b9f0dda35a8e989192505ccf126d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 53288bea8a50f62437eab4dd81d5d816abf78f44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515468"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283087"
 ---
 # <a name="clocalheap-class"></a>CLocalHeap 클래스
 
@@ -37,10 +37,10 @@ class CLocalHeap : public IAtlMemMgr
 
 |이름|설명|
 |----------|-----------------|
-|[Clocalheap:: Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
-|[Clocalheap::](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
+|[CLocalHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
+|[CLocalHeap::Free](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
 |[CLocalHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|
-|[Clocalheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
+|[CLocalHeap::Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -53,7 +53,7 @@ class CLocalHeap : public IAtlMemMgr
 
 예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlMemMgr`
 
@@ -63,7 +63,7 @@ class CLocalHeap : public IAtlMemMgr
 
 **헤더:** atlmem.h
 
-##  <a name="allocate"></a>  Clocalheap:: Allocate
+##  <a name="allocate"></a>  CLocalHeap::Allocate
 
 메모리 블록을 할당하려면 이 메서드를 호출합니다.
 
@@ -86,7 +86,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 사용 하 여 구현 [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc) LMEM_FIXED 플래그 매개 변수를 사용 하 여 합니다.
 
-##  <a name="free"></a>  Clocalheap::
+##  <a name="free"></a>  CLocalHeap::Free
 
 이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.
 
@@ -124,7 +124,7 @@ virtual size_t GetSize(void* p) throw();
 
 사용 하 여 구현 [LocalSize](/windows/desktop/api/winbase/nf-winbase-localsize)합니다.
 
-##  <a name="reallocate"></a>  Clocalheap:: Reallocate
+##  <a name="reallocate"></a>  CLocalHeap::Reallocate
 
 이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.
 
@@ -150,7 +150,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 사용 하 여 구현 [LocalReAlloc](/windows/desktop/api/winbase/nf-winbase-localrealloc)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CComHeap 클래스](../../atl/reference/ccomheap-class.md)<br/>

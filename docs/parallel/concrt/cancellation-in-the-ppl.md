@@ -9,19 +9,19 @@ helpviewer_keywords:
 - parallel work trees [Concurrency Runtime]
 - canceling parallel tasks [Concurrency Runtime]
 ms.assetid: baaef417-b2f9-470e-b8bd-9ed890725b35
-ms.openlocfilehash: 1cb5404ff8c18492b940f7396ab4c8f4154d69e6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: fae45e04d8b573cca29cc31403a39fc7ee53cc6a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177019"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271738"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL에서의 취소
 
 이 문서에서는 PPL(병렬 패턴 라이브러리)에서 취소의 역할, 병렬 작업을 취소하는 방법 및 병렬 작업이 취소될 경우를 확인하는 방법에 대해 설명합니다.
 
 > [!NOTE]
->  런타임에서는 예외 처리를 사용하여 취소를 구현합니다. 코드에서 이들 예외를 catch 또는 처리하지 마세요. 또한 작업에 대한 함수 본문에 예외로부터 안전한 코드를 작성하는 것이 좋습니다. 예를 들어 사용할 수 있습니다 합니다 *Resource Acquisition Is Initialization* (RAII) 패턴을 작업 본문에서 예외가 throw 될 때 리소스가 제대로 처리 되는지 확인 합니다. 취소 가능한 작업에서 리소스를 정리 하는 데 RAII 패턴을 사용 하는 전체 예제를 참조 하세요 [연습: 사용자 인터페이스 스레드에서 작업 제거](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)합니다.
+>  런타임에서는 예외 처리를 사용하여 취소를 구현합니다. 코드에서 이들 예외를 catch 또는 처리하지 마세요. 또한 작업에 대한 함수 본문에 예외로부터 안전한 코드를 작성하는 것이 좋습니다. 예를 들어 사용할 수 있습니다 합니다 *Resource Acquisition Is Initialization* (RAII) 패턴을 작업 본문에서 예외가 throw 될 때 리소스가 제대로 처리 되는지 확인 합니다. 취소 가능한 작업에서 리소스를 정리 하는 데 RAII 패턴을 사용 하는 전체 예제를 참조 하세요. [연습: 사용자 인터페이스 스레드에서 작업 제거](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md)합니다.
 
 ## <a name="key-points"></a>주요 사항
 
@@ -63,7 +63,8 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 [!code-cpp[concrt-task-tree#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_1.cpp)]
 
-사용할 수도 있습니다는 [concurrency:: task_group](reference/task-group-class.md) 비슷한 작업 트리를 만드는 클래스입니다. 합니다 [concurrency:: task](../../parallel/concrt/reference/task-class.md) 클래스 작업 트리 개념도 지원 합니다. 그러나 `task` 트리는 종속성 트리입니다. `task` 트리에서 미래 작업은 현재 작업 후에 완료됩니다. 작업 그룹 트리에서 내부 작업은 외부 작업 전에 완료됩니다. 작업 및 작업 그룹의 차이점에 대 한 자세한 내용은 참조 하세요. [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)합니다.
+사용할 수도 있습니다는 [concurrency:: task_group](reference/task-group-class.md) 비슷한 작업 트리를 만드는 클래스입니다. 합니다 [concurrency:: task](../../parallel/concrt/reference/task-class.md) 클래스 작업 트리 개념도 지원 합니다. 그러나 `task` 트리는 종속성 트리입니다. 
+  `task` 트리에서 미래 작업은 현재 작업 후에 완료됩니다. 작업 그룹 트리에서 내부 작업은 외부 작업 전에 완료됩니다. 작업 및 작업 그룹의 차이점에 대 한 자세한 내용은 참조 하세요. [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -71,11 +72,12 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 병렬 작업을 취소하는 방법은 여러 가지가 있습니다. 여러 방법 중에 취소 토큰을 사용하는 것이 좋습니다. 작업 그룹도 지원 합니다 [concurrency::task_group::cancel](reference/task-group-class.md#cancel) 메서드는 [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) 메서드. 마지막 방법은 작업 함수의 본문에서 예외를 throw하는 것입니다. 어떤 방법을 선택하더라도 취소는 즉시 발생하지 않습니다. 작업 또는 작업 그룹이 취소되면 새 작업이 시작되지 않지만 활성 작업에서는 취소가 있는지 확인하고 취소에 응답해야 합니다.
 
-병렬 작업을 취소 하는 더 많은 예제를 참조 하세요. [연습:를 사용 하 여 작업 연결 및 XML HTTP 요청](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md)를 [방법: 병렬 루프에서 중단을 사용 하 여 취소](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), 및 [방법: 사용 병렬 루프에서 중단을 처리 하는 예외](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)합니다.
+병렬 작업을 취소 하는 더 많은 예제를 참조 하세요. [연습: 작업 및 XML HTTP 요청을 사용 하 여 연결](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [방법: Break 취소를 사용 하 여 병렬 루프에서](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md), 및 [방법: 병렬 루프에서 중단을 처리 하는 예외를 사용 하 여](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)입니다.
 
 ###  <a name="tokens"></a> 병렬 작업을 취소할 취소 토큰을 사용 하 여
 
-`task`, `task_group` 및 `structured_task_group` 클래스는 취소 토큰을 사용하는 방법으로 취소 기능을 지원합니다. PPL이 정의 된 [concurrency:: cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) 하 고 [concurrency:: cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) 이 목적을 위해 클래스입니다. 취소 토큰을 사용하여 작업을 취소하면 런타임에서 해당 토큰을 구독하는 새 작업을 시작하지 않습니다. 이미 활성화 되어 있는 작업을 사용 하 여 수를 [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) 멤버 함수를 취소 토큰을 모니터링 하 고 가능 하면 중지 합니다.
+
+  `task`, `task_group` 및 `structured_task_group` 클래스는 취소 토큰을 사용하는 방법으로 취소 기능을 지원합니다. PPL이 정의 된 [concurrency:: cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) 하 고 [concurrency:: cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) 이 목적을 위해 클래스입니다. 취소 토큰을 사용하여 작업을 취소하면 런타임에서 해당 토큰을 구독하는 새 작업을 시작하지 않습니다. 이미 활성화 되어 있는 작업을 사용 하 여 수를 [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) 멤버 함수를 취소 토큰을 모니터링 하 고 가능 하면 중지 합니다.
 
 취소를 시작 하려면 호출을 [concurrency::cancellation_token_source::cancel](reference/cancellation-token-source-class.md#cancel) 메서드. 다음 방법으로 취소에 응답합니다.
 
@@ -87,12 +89,14 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 [!code-cpp[concrt-task-basic-cancellation#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_2.cpp)]
 
-`cancel_current_task` 함수가 throw하므로 현재 루프 또는 함수에서 명시적으로 반환할 필요가 없습니다.
+
+  `cancel_current_task` 함수가 throw하므로 현재 루프 또는 함수에서 명시적으로 반환할 필요가 없습니다.
 
 > [!TIP]
 > 호출할 수 있습니다 합니다 [concurrency:: interruption_point](reference/concurrency-namespace-functions.md#interruption_point) 함수 대신 `cancel_current_task`합니다.
 
-작업을 취소됨 상태로 전환하므로 취소에 응답할 때 `cancel_current_task`를 호출해야 합니다. `cancel_current_task`를 호출하지 않고 조기에 반환하는 경우 작업이 완료됨 상태로 전환되고 값 기반 연속이 실행됩니다.
+작업을 취소됨 상태로 전환하므로 취소에 응답할 때 `cancel_current_task`를 호출해야 합니다. 
+  `cancel_current_task`를 호출하지 않고 조기에 반환하는 경우 작업이 완료됨 상태로 전환되고 값 기반 연속이 실행됩니다.
 
 > [!CAUTION]
 > 코드에서 `task_canceled`를 throw하지 마세요. 대신 `cancel_current_task`를 호출하세요.
@@ -112,7 +116,8 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 [!code-cpp[concrt-task-cancellation-callback#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_5.cpp)]
 
-문서 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md) 값 및 작업 기반 연속 작업 간의 차이점을 설명 합니다. `cancellation_token` 개체를 연속 작업에 제공하지 않으면 연속은 다음 방법으로 선행 작업에서 취소 토큰을 상속합니다.
+문서 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md) 값 및 작업 기반 연속 작업 간의 차이점을 설명 합니다. 
+  `cancellation_token` 개체를 연속 작업에 제공하지 않으면 연속은 다음 방법으로 선행 작업에서 취소 토큰을 상속합니다.
 
 - 값 기반 연속은 항상 선행 작업의 취소 토큰을 상속합니다.
 
@@ -126,7 +131,8 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 > [!TIP]
 > 사용 하 여는 [concurrency:: cancellation_token:: none](reference/cancellation-token-class.md#none) 생성자 나 사용 하는 함수를 호출 하는 경우 메서드는 `cancellation_token` 개체 작업을 취소할 수 원하지 않는 합니다.
 
-`task_group` 또는 `structured_task_group` 개체의 생성자에 취소 토큰을 제공할 수도 있습니다. 이 방법의 중요한 측면은 자식 작업 그룹이 이 취소 토큰을 상속한다는 점입니다. 사용 하 여이 개념을 보여 주는 예제는 [run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) 함수 호출을 실행 하려면 `parallel_for`를 참조 [병렬 알고리즘 취소](#algorithms) 이 항목의 뒷부분에 나오는 문서입니다.
+
+  `task_group` 또는 `structured_task_group` 개체의 생성자에 취소 토큰을 제공할 수도 있습니다. 이 방법의 중요한 측면은 자식 작업 그룹이 이 취소 토큰을 상속한다는 점입니다. 사용 하 여이 개념을 보여 주는 예제는 [run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) 함수 호출을 실행 하려면 `parallel_for`를 참조 [병렬 알고리즘 취소](#algorithms) 이 항목의 뒷부분에 나오는 문서입니다.
 
 [[맨 위로 이동](#top)]
 
@@ -134,9 +140,12 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 합니다 [concurrency:: when_all](reference/concurrency-namespace-functions.md#when_all) 하 고 [concurrency:: when_any](reference/concurrency-namespace-functions.md#when_all) 함수 일반적인 패턴을 구현 하는 여러 태스크를 작성할 수 있습니다. 이 섹션에서는 이들 함수에서 취소 토큰을 사용하는 방법을 보여 줍니다.
 
-`when_all` 및 `when_any` 함수의 하나에 취소 토큰을 제공하면 취소 토큰이 취소되는 경우나 참가 작업의 하나가 취소됨 상태로 끝나거나 예외를 throw할 경우에만 해당 함수가 취소됩니다.
 
-`when_all` 함수는 취소 토큰을 제공하지 않을 경우 전체 작업을 구성하는 각 작업에서 취소 토큰을 상속합니다. `when_all`에서 반환되는 작업은 이들 토큰이 취소되고 참가 작업의 하나 이상이 아직 시작되지 않거나 실행 중인 경우 취소됩니다. -예외를 throw 작업 중 하나에서 반환 되는 작업 하는 경우 비슷한 동작이 발생 `when_all` 해당 예외와 함께 즉시 취소 됩니다.
+  `when_all` 및 `when_any` 함수의 하나에 취소 토큰을 제공하면 취소 토큰이 취소되는 경우나 참가 작업의 하나가 취소됨 상태로 끝나거나 예외를 throw할 경우에만 해당 함수가 취소됩니다.
+
+
+  `when_all` 함수는 취소 토큰을 제공하지 않을 경우 전체 작업을 구성하는 각 작업에서 취소 토큰을 상속합니다. 
+  `when_all`에서 반환되는 작업은 이들 토큰이 취소되고 참가 작업의 하나 이상이 아직 시작되지 않거나 실행 중인 경우 취소됩니다. -예외를 throw 작업 중 하나에서 반환 되는 작업 하는 경우 비슷한 동작이 발생 `when_all` 해당 예외와 함께 즉시 취소 됩니다.
 
 런타임에서는 해당 작업이 완료될 때 `when_any` 함수에서 반환되는 작업에 대한 취소 토큰을 선택합니다. 완료됨 상태로 종료된 참가 작업이 없거나 하나 이상의 작업이 예외를 throw하면 throw된 작업의 하나가 `when_any`를 완료하기 위해 선택되고 해당 토큰이 최종 작업의 토큰으로 선택됩니다. 완료됨 상태로 종료된 작업이 두 개 이상이면 `when_any` 작업에서 반환된 작업이 완료됨 상태로 끝납니다. 다른 실행 중인 작업이 나중에 완료되더라도 `when_any`에서 반환된 작업이 즉시 취소되지 않도록 런타임에서는 완료 시 토큰이 취소되지 않은 완료된 작업을 선택하려고 시도합니다.
 
@@ -144,11 +153,15 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 ###  <a name="cancel"></a> Cancel 메서드를 병렬 작업 취소를 사용 하 여
 
-[concurrency::task_group::cancel](reference/task-group-class.md#cancel) 하 고 [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) 메서드는 작업 그룹을 취소 된 상태로 설정 합니다. `cancel`이 호출되고 나면 작업 그룹이 미래 작업을 시작하지 않습니다. `cancel` 메서드는 여러 자식 작업을 통해 호출할 수 있습니다. 취소 된 작업을 수행 하면 합니다 [concurrency::task_group::wait](reference/task-group-class.md#wait) 하 고 [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#wait) 반환 하는 방법 [concurrency:: canceled](reference/concurrency-namespace-enums.md#task_group_status)합니다.
+[concurrency::task_group::cancel](reference/task-group-class.md#cancel) 하 고 [concurrency::structured_task_group::cancel](reference/structured-task-group-class.md#cancel) 메서드는 작업 그룹을 취소 된 상태로 설정 합니다. 
+  `cancel`이 호출되고 나면 작업 그룹이 미래 작업을 시작하지 않습니다. 
+  `cancel` 메서드는 여러 자식 작업을 통해 호출할 수 있습니다. 취소 된 작업을 수행 하면 합니다 [concurrency::task_group::wait](reference/task-group-class.md#wait) 하 고 [concurrency::structured_task_group::wait](reference/structured-task-group-class.md#wait) 반환 하는 방법 [concurrency:: canceled](reference/concurrency-namespace-enums.md#task_group_status)합니다.
 
 작업 그룹이 취소 되 면 각 자식 작업에서 런타임으로 호출을 트리거할 수는 *중단 지점*, 런타임에서 throw 하 고 활성 작업을 취소 한 내부 예외 형식을 catch 하면 됩니다. 동시성 런타임은 특정 중단 지점을 정의하지 않고 런타임에 대한 호출에서 발생할 수 없습니다. 런타임에서는 취소를 수행하기 위해 throw할 예외를 처리해야 합니다. 따라서 작업 본문에서 알 수 없는 예외를 처리하지 마세요.
 
-자식 작업은 시간이 오래 걸리는 작업을 수행하지만 런타임으로 호출하지 않을 경우 주기적으로 취소를 확인하고 시기적절하게 종료되어야 합니다. 다음 예제에서는 작업이 취소되는 시기를 결정하는 한 가지 방법을 보여 줍니다. `t4` 작업은 오류가 발생할 때 부모 작업 그룹을 취소합니다. `t5` 작업은 때때로 `structured_task_group::is_canceling` 메서드를 호출하여 취소가 있는지 확인합니다. 부모 작업 그룹이 취소되면 `t5` 작업은 메시지를 인쇄하고 종료됩니다.
+자식 작업은 시간이 오래 걸리는 작업을 수행하지만 런타임으로 호출하지 않을 경우 주기적으로 취소를 확인하고 시기적절하게 종료되어야 합니다. 다음 예제에서는 작업이 취소되는 시기를 결정하는 한 가지 방법을 보여 줍니다. 
+  `t4` 작업은 오류가 발생할 때 부모 작업 그룹을 취소합니다. 
+  `t5` 작업은 때때로 `structured_task_group::is_canceling` 메서드를 호출하여 취소가 있는지 확인합니다. 부모 작업 그룹이 취소되면 `t5` 작업은 메시지를 인쇄하고 종료됩니다.
 
 [!code-cpp[concrt-task-tree#6](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_6.cpp)]
 
@@ -156,11 +169,14 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 부모 작업 그룹 개체에 액세스할 수 없으면 호출 된 [concurrency:: is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) 부모 작업 그룹이 취소 되 고 있는지 여부를 결정 하는 함수입니다.
 
-`cancel` 메서드는 자식 작업에만 영향을 미칩니다. 예를 들어 병렬 작업 트리 그림에서 작업 그룹 `tg1`을 취소하면 트리의 모든 작업(`t1`, `t2`, `t3`, `t4` 및 `t5`)이 영향을 받습니다. 중첩된 작업 그룹 `tg2`를 취소하면 `t4` 및 `t5` 작업만 영향을 받습니다.
 
-`cancel` 메서드를 호출하면 모든 자식 작업 그룹도 취소됩니다. 그러나 취소는 병렬 작업 트리에 있는 작업 그룹의 모든 부모에 영향을 미치지 않습니다. 다음 예제에서는 병렬 작업 트리 그룹에서 빌드하는 방식으로 이를 보여 줍니다.
+  `cancel` 메서드는 자식 작업에만 영향을 미칩니다. 예를 들어 병렬 작업 트리 그림에서 작업 그룹 `tg1`을 취소하면 트리의 모든 작업(`t1`, `t2`, `t3`, `t4` 및 `t5`)이 영향을 받습니다. 중첩된 작업 그룹 `tg2`를 취소하면 `t4` 및 `t5` 작업만 영향을 받습니다.
 
-이들 예제의 첫 번째에서는 작업 그룹 `tg2`의 자식인 `t4` 작업에 대한 작업 함수를 만듭니다. 작업 함수는 루프에서 `work` 함수를 호출합니다. `work`에 대한 호출에 실패하면 작업에서 해당 부모 작업 그룹이 취소됩니다. 이로 인해 작업 그룹 `tg2`가 취소됨 상태로 전환되지만 작업 그룹 `tg1`은 취소되지 않습니다.
+
+  `cancel` 메서드를 호출하면 모든 자식 작업 그룹도 취소됩니다. 그러나 취소는 병렬 작업 트리에 있는 작업 그룹의 모든 부모에 영향을 미치지 않습니다. 다음 예제에서는 병렬 작업 트리 그룹에서 빌드하는 방식으로 이를 보여 줍니다.
+
+이들 예제의 첫 번째에서는 작업 그룹 `tg2`의 자식인 `t4` 작업에 대한 작업 함수를 만듭니다. 작업 함수는 루프에서 `work` 함수를 호출합니다. 
+  `work`에 대한 호출에 실패하면 작업에서 해당 부모 작업 그룹이 취소됩니다. 이로 인해 작업 그룹 `tg2`가 취소됨 상태로 전환되지만 작업 그룹 `tg1`은 취소되지 않습니다.
 
 [!code-cpp[concrt-task-tree#2](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_7.cpp)]
 
@@ -182,7 +198,8 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 > [!CAUTION]
 >  필요한 경우에만 예외를 사용하여 병렬 작업을 취소하는 것이 좋습니다. 취소 토큰 및 작업 그룹 `cancel` 메서드는 더 효율적이고 오류가 발생할 가능성이 감소합니다.
 
-작업 그룹에 전달하는 작업 함수의 본문에서 예외를 throw하면 런타임에서는 해당 예외를 저장하고 작업 그룹이 완료되기를 기다리는 컨텍스트에 해당 예외를 마샬링합니다. `cancel` 메서드처럼 런타임에서는 아직 시작되지 않은 모든 작업을 무시하고 새 작업을 수락하지 않습니다.
+작업 그룹에 전달하는 작업 함수의 본문에서 예외를 throw하면 런타임에서는 해당 예외를 저장하고 작업 그룹이 완료되기를 기다리는 컨텍스트에 해당 예외를 마샬링합니다. 
+  `cancel` 메서드처럼 런타임에서는 아직 시작되지 않은 모든 작업을 무시하고 새 작업을 수락하지 않습니다.
 
 이 세 번째 예제는 작업 `t4`가 예외를 throw하여 작업 그룹 `tg2`를 취소한다는 점을 제외하고 두 번째 예제와 비슷합니다. 사용 하 여이 예제는 `try` - `catch` 취소를 확인 하는 블록 때 작업 그룹 `tg2` 해당 자식 작업이 완료 될 때까지 기다립니다. 첫 번째 예제처럼 이로 인해 작업 그룹 `tg2`가 취소됨 상태로 전환되지만 작업 그룹 `tg1`은 취소되지 않습니다.
 
@@ -192,7 +209,8 @@ PPL에서는 작업 및 작업 그룹을 사용하여 세분화된 작업 및 �
 
 [!code-cpp[concrt-task-tree#5](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_10.cpp)]
 
-`task_group::wait` 및 `structured_task_group::wait` 메서드는 자식 작업이 예외를 throw할 때 throw하므로 이들 메서드에서 반환 값을 받을 수 없습니다.
+
+  `task_group::wait` 및 `structured_task_group::wait` 메서드는 자식 작업이 예외를 throw할 때 throw하므로 이들 메서드에서 반환 값을 받을 수 없습니다.
 
 [[맨 위로 이동](#top)]
 
@@ -202,11 +220,14 @@ PPL의 병렬 알고리즘(예: `parallel_for`)은 작업 그룹에 빌드됩니
 
 다음 예제에서는 병렬 알고리즘을 취소하는 여러 가지 방법을 보여 줍니다.
 
-다음 예제에서는 `run_with_cancellation_token` 함수를 사용하여 `parallel_for` 알고리즘을 호출합니다. `run_with_cancellation_token` 함수는 취소 토큰을 인수로 사용하고 제공된 작업 함수를 동기적으로 호출합니다. 병렬 알고리즘은 작업에 빌드되므로 부모 작업의 취소 토큰을 상속합니다. 따라서 `parallel_for`가 취소에 응답할 수 있습니다.
+다음 예제에서는 `run_with_cancellation_token` 함수를 사용하여 `parallel_for` 알고리즘을 호출합니다. 
+  `run_with_cancellation_token` 함수는 취소 토큰을 인수로 사용하고 제공된 작업 함수를 동기적으로 호출합니다. 병렬 알고리즘은 작업에 빌드되므로 부모 작업의 취소 토큰을 상속합니다. 따라서 `parallel_for`가 취소에 응답할 수 있습니다.
 
 [!code-cpp[concrt-cancel-parallel-for#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_11.cpp)]
 
-다음 예제에서는 합니다 [concurrency::structured_task_group::run_and_wait](reference/structured-task-group-class.md#run_and_wait) 메서드를 호출 하는 `parallel_for` 알고리즘입니다. `structured_task_group::run_and_wait` 메서드는 제공된 작업이 완료되기를 기다립니다. `structured_task_group` 개체를 사용하면 작업 함수가 작업을 취소할 수 있습니다.
+다음 예제에서는 합니다 [concurrency::structured_task_group::run_and_wait](reference/structured-task-group-class.md#run_and_wait) 메서드를 호출 하는 `parallel_for` 알고리즘입니다. 
+  `structured_task_group::run_and_wait` 메서드는 제공된 작업이 완료되기를 기다립니다. 
+  `structured_task_group` 개체를 사용하면 작업 함수가 작업을 취소할 수 있습니다.
 
 [!code-cpp[concrt-task-tree#7](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_12.cpp)]
 
@@ -245,7 +266,8 @@ Caught 50
 |제목|설명|
 |-----------|-----------------|
 |[방법: 취소를 사용하여 병렬 루프 중단](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)|취소를 사용하여 병렬 검색 알고리즘을 구현하는 방법을 보여 줍니다.|
-|[방법: 예외 처리를 사용하여 병렬 루프 중단](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|`task_group` 클래스를 사용하여 기본적인 트리 구조에 대한 검색 알고리즘을 작성하는 방법을 보여 줍니다.|
+|[방법: 예외 처리를 사용하여 병렬 루프 중단](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)|
+  `task_group` 클래스를 사용하여 기본적인 트리 구조에 대한 검색 알고리즘을 작성하는 방법을 보여 줍니다.|
 |[예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)|작업 그룹, 간단한 작업 및 비동기 에이전트에서 throw한 예외를 런타임에서 처리하는 방법 및 응용 프로그램에 예외에 응답하는 방법을 설명합니다.|
 |[작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)|작업이 작업 그룹과 관련되는 방식 및 응용 프로그램에서 구조화되지 않은 작업과 구조화된 작업을 사용하는 방법을 설명합니다.|
 |[병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)|데이터 컬렉션에 대한 작업을 동시에 수행하는 병렬 알고리즘을 설명합니다.|
@@ -264,4 +286,3 @@ Caught 50
 [structured_task_group 클래스](../../parallel/concrt/reference/structured-task-group-class.md)
 
 [parallel_for 함수](reference/concurrency-namespace-functions.md#parallel_for)
-

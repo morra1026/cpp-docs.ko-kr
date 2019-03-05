@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CGopherFile [MFC], CGopherFile
 ms.assetid: 3ca9898f-8cdb-4495-bbde-46d40100feda
-ms.openlocfilehash: 9e5fbdcd14c0f988e894718f357d40e4b238c7c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9bb242cb53593862cb51e0c193eb739625127adc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658200"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285193"
 ---
 # <a name="cgopherfile-class"></a>CGopherFile 클래스
 
@@ -42,7 +42,7 @@ Gopher 서비스에서는 사용자가이 서비스 정보를 찾기 위한 메�
 
 하는 방법에 자세히 알아보려면 `CGopherFile` 문서를 참조 하는 다른 인터넷 MFC 클래스와 함께 작동 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -105,7 +105,7 @@ Gopher 서버를 찾는 데 사용 하는 문자열에 대 한 포인터입니�
 
 되지 만들기는 `CGopherFile` 직접 개체입니다. 대신, 호출 [CGopherConnection::OpenFile](../../mfc/reference/cgopherconnection-class.md#openfile) gopher 서버에서 파일을 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CInternetFile 클래스](../../mfc/reference/cinternetfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

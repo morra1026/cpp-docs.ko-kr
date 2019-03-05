@@ -5,12 +5,12 @@ helpviewer_keywords:
 - OLE containers [MFC], client items
 - client items and OLE containers
 ms.assetid: 231528b5-0744-4f83-8897-083bf55ed087
-ms.openlocfilehash: e0d56d4a8f25828de954a78e9bafd8df150c7ff9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c7f4a63cb9a31b52be2d3574ddad29313df6a4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437013"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298284"
 ---
 # <a name="containers-client-items"></a>컨테이너: 클라이언트 항목
 
@@ -24,7 +24,7 @@ OLE 응용 프로그램에서 문서 클래스는 클래스에서 파생 된 [CO
 
 `CDocItem` 에 대 한 기본 클래스인 `COleClientItem` 고 `COleServerItem`입니다. 이러한 두에서 파생 된 클래스의 개체는 각각 OLE 항목 및 클라이언트와 서버 응용 프로그램 간의 중개자 역할입니다. 새 OLE 항목을 문서에 추가 될 때마다 MFC 프레임 워크의 클라이언트 응용 프로그램의 새 개체를 추가 합니다 `COleClientItem`-파생 클래스의 문서 컬렉션 `CDocItem` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [컨테이너: 복합 파일](../mfc/containers-compound-files.md)<br/>

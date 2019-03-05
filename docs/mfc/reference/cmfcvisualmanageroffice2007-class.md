@@ -230,18 +230,18 @@ helpviewer_keywords:
 - CMFCVisualManagerOffice2007 [MFC], OnUpdateSystemColors
 - CMFCVisualManagerOffice2007 [MFC], SetResourceHandle
 ms.assetid: fb687c74-6d08-4c72-8acf-27f75dda6d6b
-ms.openlocfilehash: f26aeb94bdb392040eee1ab4795e580cbce79e69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28e0c1f3ca593fed939b0cf3fa0fa3085d79d156
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660442"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282437"
 ---
 # <a name="cmfcvisualmanageroffice2007-class"></a>CMFCVisualManagerOffice2007 클래스
 
 `CMFCVisualManagerOffice2007` 응용 프로그램에 Microsoft Office 2007 모양을 제공 합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -380,7 +380,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#7](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2007-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -457,7 +457,7 @@ virtual COLORREF GetMenuItemTextColor(
 
 [in] *pButton*<br/>
 [in] *bHighlighted*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -547,7 +547,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -674,7 +674,7 @@ virtual COLORREF GetToolbarButtonTextColor(
 ### <a name="parameters"></a>매개 변수
 
 [in] *pButton*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -700,8 +700,8 @@ virtual BOOL GetToolTipInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *매개 변수*<br/>
-[in] *n 형식*<br/>
+[in] *params*<br/>
+[in] *nType*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -795,7 +795,7 @@ virtual void OnDrawButtonBorder(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -815,7 +815,7 @@ virtual void OnDrawButtonSeparator(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 [in] *bHorz*<br/>
 
 ### <a name="remarks"></a>설명
@@ -856,7 +856,7 @@ virtual void OnDrawCheckBoxEx(
 [in] *nState*<br/>
 [in] *bHighlighted*<br/>
 [in] *bPressed*<br/>
-[in] *b 사용*<br/>
+[in] *bEnabled*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -876,7 +876,7 @@ virtual void OnDrawComboBorder(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsDropped*<br/>
 [in] *bIsHighlighted*<br/>
 [in] *pButton*<br/>
@@ -899,7 +899,7 @@ virtual void OnDrawComboDropButton(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsDropped*<br/>
 [in] *bIsHighlighted*<br/>
 [in] *pButton*<br/>
@@ -942,7 +942,7 @@ virtual void OnDrawEditBorder(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsHighlighted*<br/>
 [in] *pButton*<br/>
 
@@ -1043,7 +1043,7 @@ virtual void OnDrawMenuItemButton(
 [in] *pButton*<br/>
 [in] *rectButton*<br/>
 [in] *bHighlight*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1783,7 +1783,7 @@ virtual void OnDrawShowAllMenuItems(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -2034,7 +2034,7 @@ virtual void OnFillButtonInterior(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -2387,7 +2387,7 @@ static void __stdcall SetResourceHandle(HINSTANCE hinstRes);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

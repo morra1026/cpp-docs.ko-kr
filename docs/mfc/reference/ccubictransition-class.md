@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CCubicTransition [MFC], m_dblFinalVelocity
 - CCubicTransition [MFC], m_duration
 ms.assetid: 4fc30e9c-160c-45e1-bdbe-51adf8fee9c5
-ms.openlocfilehash: d2064a94bb0524eb589f54e84c7bbe00ce89954b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4d5898172c0544064fad82856e404f4fb12b561
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520226"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294458"
 ---
 # <a name="ccubictransition-class"></a>CCubicTransition 클래스
 
@@ -59,7 +59,7 @@ class CCubicTransition : public CBaseTransition;
 
 입방 형 3 전환 중 애니메이션 변수의 변경 초기 값에서 지정 된 마지막 값 지정 된 속도로 종료 전환 기간 동안 됩니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -136,6 +136,6 @@ DOUBLE m_dblFinalVelocity;
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

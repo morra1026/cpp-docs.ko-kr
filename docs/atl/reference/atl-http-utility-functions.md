@@ -2,12 +2,12 @@
 title: ATL HTTP 유틸리티 함수
 ms.date: 11/04/2016
 ms.assetid: 4db57ef2-31fa-4696-bbeb-79a9035033ed
-ms.openlocfilehash: be38dc8b8547574ea47021f8b14f21060a0755f0
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: ed01253c579cb6bb529c65e65b7e5ce8686e0b27
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849650"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299818"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP 유틸리티 함수
 
@@ -281,7 +281,7 @@ HTTP 형식 문자열로 가져올 시스템 시간입니다.
 *strTime*<br/>
 RFC 2616에 정의 된 대로 HTTP 날짜 시간을 수신 하는 문자열 변수에 대 한 참조 ([http://www.ietf.org/rfc/rfc2616.txt](http://www.ietf.org/rfc/rfc2616.txt)) 및 RFC 1123 ([http://www.ietf.org/rfc/rfc1123.txt](http://www.ietf.org/rfc/rfc1123.txt)).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../active-template-library-atl-concepts.md)<br/>
 [ATL COM 데스크톱 구성 요소](../atl-com-desktop-components.md)<br/>

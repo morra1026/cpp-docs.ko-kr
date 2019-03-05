@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC, managing state data
 - state management [MFC], exported DLLs
 ms.assetid: 3268666e-d24b-44f2-80e8-7c80f73b93ca
-ms.openlocfilehash: 8b84209833fee42ec8ebdd1fdea7a9229decad9d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 129defe39a79fd38211a539a4a85d79d9a3c0998
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463326"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279525"
 ---
 # <a name="exported-dll-function-entry-points"></a>내보낸 DLL 함수 시작 지점
 
@@ -31,7 +31,6 @@ DLL의 내보내기 함수를 사용 합니다 [AFX_MANAGE_STATE](reference/exte
 
 `AFX_MANAGE_STATE` DLL의 모든 함수에 넣이 필요가 없습니다. 예를 들어 `InitInstance` MFC 코드 없는 응용 프로그램에서 호출할 수 있습니다 `AFX_MANAGE_STATE` MFC 모듈 상태 하기 전에 자동으로 이동 하기 때문에 `InitInstance` 한 후 다시 스위치 다음 `InitInstance` 반환 합니다. 모든 메시지 맵 처리기도 마찬가지입니다. 기본 MFC Dll에는 실제로 메시지를 라우팅하기 전에 모듈 상태를 자동으로 전환 하는 특수 마스터 창 프로시저 경우
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 모듈의 상태 데이터 관리](../mfc/managing-the-state-data-of-mfc-modules.md)
-

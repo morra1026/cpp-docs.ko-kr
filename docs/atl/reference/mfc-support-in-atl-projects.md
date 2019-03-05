@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL projects, MFC support
 ms.assetid: f90b4276-cb98-4c11-902c-9ebcfe6f954b
-ms.openlocfilehash: 21e3305ce2d2968a3809793eb487317e224351f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0aece6805f1de987b0164f405e50b99fd706fef4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489390"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297309"
 ---
 # <a name="mfc-support-in-atl-projects"></a>ATL 프로젝트의 MFC 지원입니다.
 
@@ -50,9 +50,8 @@ int CProjNameApp::ExitInstance()
 
 응용 프로그램 개체 클래스를 볼 수 있습니다 및 해당 `InitInstance` 고 `ExitInstance` 클래스 뷰에서 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
-

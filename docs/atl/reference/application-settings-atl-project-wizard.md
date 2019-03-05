@@ -1,19 +1,19 @@
 ---
-title: 응용 프로그램 설정, ATL 프로젝트 마법사
+title: 애플리케이션 설정, ATL 프로젝트 마법사
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.atl.com.appset
 helpviewer_keywords:
 - ATL Project Wizard, application settings
 ms.assetid: d48c9fc5-f439-49fd-884c-8bcfa7d52991
-ms.openlocfilehash: e026db8c1d2caacd9af15fb923d194750c9d8217
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd9d5c6ef1ccb86f2968b1e2d2706092b6db45e9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622133"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271816"
 ---
-# <a name="application-settings-atl-project-wizard"></a>응용 프로그램 설정, ATL 프로젝트 마법사
+# <a name="application-settings-atl-project-wizard"></a>애플리케이션 설정, ATL 프로젝트 마법사
 
 사용 된 **응용 프로그램 설정** 디자인 하 고 새 ATL 프로젝트에 기본 기능을 추가 하 여 ATL 프로젝트 마법사의 페이지입니다.
 
@@ -56,9 +56,8 @@ ms.locfileid: "50622133"
 
    ATL 프로젝트에 COM + 1.0 구성 요소에 대 한 지원에 있으면이 옵션을 설정할 수 있습니다. 구성 요소 관리자에는 COM + 1.0 개체를 구성 요소 목록을 가져오려면, 구성 요소를 등록 하거나 (개별적으로 또는 한 번에 모두) 구성 요소 등록을 취소할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
 [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)
-

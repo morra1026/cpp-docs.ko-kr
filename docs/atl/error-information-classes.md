@@ -9,12 +9,12 @@ helpviewer_keywords:
 - error handling, classes
 - error information, classes
 ms.assetid: ba40c8fb-81fd-4f61-8f47-fa2cb540e274
-ms.openlocfilehash: 31e14a0177251af891adc1319953be70b72648fe
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 72f119dbd1ce027f3e3bae3c3ce86f48e933c87f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519680"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266447"
 ---
 # <a name="error-information-classes"></a>오류 정보 클래스
 
@@ -22,7 +22,6 @@ ms.locfileid: "51519680"
 
 - [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) 개체를 지원 하는지 여부를 결정 합니다 [IErrorInfo](/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) 인터페이스입니다. `IErrorInfo` 오류 정보를를 클라이언트에 다시 전파할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)
-

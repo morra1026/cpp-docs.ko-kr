@@ -7,12 +7,12 @@ helpviewer_keywords:
 - classes [MFC], adding MFC
 - MFC, adding classes
 ms.assetid: 9a96b67f-40bf-43d4-8872-2f8dfc5404f1
-ms.openlocfilehash: f9bed3814c4489cf3850ccab97efb23caeb51730
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1cc3dc734917da46af99e67da40fe243941102e3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640806"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280669"
 ---
 # <a name="adding-an-mfc-class"></a>MFC 클래스 추가
 
@@ -31,9 +31,8 @@ ms.locfileid: "50640806"
 
 1. 클릭 **완료** 마법사를 닫고 클래스 뷰에서 새 클래스에 있습니다. 마법사에서 만든 파일을 볼 수도 있습니다 **솔루션 탐색기**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [클래스 개요](../../mfc/class-library-overview.md)
-

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - cache, ATL cached tear-off objects
 - CComCachedTearOffObject class
 ms.assetid: ae19507d-a1de-4dbc-a988-da9f75a50c95
-ms.openlocfilehash: 009bc1e20693a9e45490c58ea29ff9d28b6aa6ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb7821da03e1ca69c850fa1a295851faf4af4c5b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582730"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277536"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject 클래스
 
@@ -39,7 +39,7 @@ public CComObjectRootEx<contained
 
 #### <a name="parameters"></a>매개 변수
 
-*포함 된*<br/>
+*contained*<br/>
 분리 막대가 클래스에서 파생 된 `CComTearOffObjectBase` 고 인터페이스를 지원 하기 위해 분리 개체입니다.
 
 ## <a name="members"></a>멤버
@@ -49,7 +49,7 @@ public CComObjectRootEx<contained
 |이름|설명|
 |----------|-----------------|
 |[CComCachedTearOffObject::CComCachedTearOffObject](#ccomcachedtearoffobject)|생성자입니다.|
-|[CComCachedTearOffObject:: ~ CComCachedTearOffObject](#dtor)|소멸자입니다.|
+|[CComCachedTearOffObject::~CComCachedTearOffObject](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -75,7 +75,7 @@ public CComObjectRootEx<contained
 
 소유자 클래스를 구현 해야 합니다 `FinalRelease` 호출 `Release` 에서 캐시 된 `IUnknown` 에 대 한는 `CComCachedTearOffObject`는 참조 횟수를 감소 됩니다. 그러면 `CComCachedTearOffObject`의 `FinalRelease` 호출할 및 삭제를 분리 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -118,7 +118,7 @@ CComCachedTearOffObject(void* pv);
 
 초기화 된 `CComContainedObject` 멤버 [m_contained](#m_contained)합니다.
 
-##  <a name="dtor"></a>  CComCachedTearOffObject:: ~ CComCachedTearOffObject
+##  <a name="dtor"></a>  CComCachedTearOffObject::~CComCachedTearOffObject
 
 소멸자입니다.
 
@@ -160,7 +160,7 @@ CcomContainedObject <contained> m_contained;
 
 ### <a name="parameters"></a>매개 변수
 
-*포함 된*<br/>
+*contained*<br/>
 [in] 분리 막대가 클래스에서 파생 된 `CComTearOffObjectBase` 고 인터페이스를 지원 하기 위해 분리 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -203,7 +203,7 @@ STDMETHOD_(ULONG, Release)();
 
 디버그가 아닌 빌드에서 항상 0을 반환 합니다. 디버그 빌드에서 진단에 유용 하거나 테스트 수 있는 값을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComTearOffObject 클래스](../../atl/reference/ccomtearoffobject-class.md)<br/>
 [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>

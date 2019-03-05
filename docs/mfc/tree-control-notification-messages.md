@@ -8,12 +8,12 @@ helpviewer_keywords:
 - notifications [MFC], CTreeCtrl
 - tree controls [MFC], notification messages
 ms.assetid: ac7013b4-91dd-4668-bd75-439ca0680ef9
-ms.openlocfilehash: e187e08f894eeac37c8ad27aea45a1c8568c8a9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90e2e112d7862dfed7d8af31cfb72ff45633a2c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508179"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278403"
 ---
 # <a name="tree-control-notification-messages"></a>트리 컨트롤 알림 메시지
 
@@ -34,8 +34,7 @@ ms.locfileid: "50508179"
 |TVN_SELCHANGING|다른 항목에서 변경 될 선택 된 신호|
 |TVN_SETDISPINFO|항목에 대 한 유지 관리 정보를 업데이트 하려면 알림|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

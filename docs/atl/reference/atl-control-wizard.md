@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controls [ATL], adding to projects
 - ATL Control Wizard
 ms.assetid: 991f8e72-ffbc-4382-a4ce-e255acfba5b6
-ms.openlocfilehash: a7fd85263531968aeb4dd86534b4e67ddc553629
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 58c3ebe4c2a15aa3f0d59191c37a7f2422a63ab5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598824"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287906"
 ---
 # <a name="atl-control-wizard"></a>ATL 컨트롤 마법사
 
@@ -95,9 +95,8 @@ ATL 프로젝트 (또는 MFC 프로젝트에 ATL 지원)에 삽입 하는 ATL �
 
    컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다. 이 필드가 자동으로 채워지지 않습니다. 이 필드를 수동으로 채우지 마십시오 컨트롤 다른 도구를 하지 못할 수 있습니다. 예를 들어 없이 생성 되는 ActiveX 컨트롤을 `ProgID` 에서 사용할 수 없는 **ActiveX 컨트롤 삽입** 대화 상자. 대화 상자에 대한 자세한 내용은 [ActiveX 컨트롤 삽입 대화 상자](../../windows/insert-activex-control-dialog-box.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 컨트롤](../../atl/reference/adding-an-atl-control.md)<br/>
 [복합 컨트롤에 기능 추가](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)
-

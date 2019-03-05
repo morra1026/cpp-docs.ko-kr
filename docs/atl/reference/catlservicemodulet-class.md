@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlServiceModuleT class
 ms.assetid: 8fc753ce-4a50-402b-9b4a-0a4ce5dd496c
-ms.openlocfilehash: ad682980fbc885d79598b41a5dcc094bb65db8cf
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 2d4d5d4a5c4d8a52f792cc04a968974967c1e13a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893537"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270503"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT 클래스
 
@@ -115,7 +115,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 이 클래스는 사용 되지 않는 대체 [CComModule 클래스](../../atl/reference/ccommodule-class.md) ATL.의 이전 버전에서 사용 참조 [ATL 모듈 클래스](../../atl/atl-module-classes.md) 대 한 자세한 내용은 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -563,7 +563,7 @@ int WinMain(int nShowCmd) throw();
 
 이 메서드는 명령줄 처리 (사용 하 여 [CAtlServiceModuleT::ParseCommandLine](#parsecommandline)) 서비스 시작 (사용 하 여 [catlservicemodulet:: Start](#start)).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlExeModuleT 클래스](../../atl/reference/catlexemodulet-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

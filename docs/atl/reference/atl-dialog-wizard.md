@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding dialog resources
 - ATL Dialog Wizard
 ms.assetid: b0b9ace5-83c9-40d3-82c3-eb6293f10583
-ms.openlocfilehash: 7f868800bb8453ac47ec0f188d6a2970aee7a55f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 043c170021ce1ceb072dba3e5a450375f556753a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458056"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287923"
 ---
 # <a name="atl-dialog-wizard"></a>ATL 대화 상자 마법사
 
@@ -42,7 +42,6 @@ ms.locfileid: "50458056"
 
    마법사는 파일을 덮어쓰지 않습니다. 기존 파일의 이름을 선택하면 마법사에서 **마침**을 클릭할 때 클래스 구현을 파일의 내용에 추가해야 하는지 여부를 나타내는 메시지가 표시됩니다. **예**를 클릭하여 파일을 추가하거나, **아니요**를 클릭하여 마법사로 돌아가서 다른 파일 이름을 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 대화 상자](../../atl/reference/adding-an-atl-dialog-box.md)
-

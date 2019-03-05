@@ -11,16 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - SchedulerPolicy class
 ms.assetid: bcebf51a-65f8-45a3-809b-d1ff93527dc4
-ms.openlocfilehash: 0d1c28501abc86d09b683b0ed91f831fe8697306
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2eff40b11e4e9a5981ad85c37c8345abefb13fed
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462053"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265537"
 ---
 # <a name="schedulerpolicy-class"></a>SchedulerPolicy 클래스
 
-`SchedulerPolicy` 클래스에는 정책 요소마다 하나씩, 스케줄러 인스턴스의 동작을 제어하는 키/값 쌍 집합을 포함합니다.
+
+  `SchedulerPolicy` 클래스에는 정책 요소마다 하나씩, 스케줄러 인스턴스의 동작을 제어하는 키/값 쌍 집합을 포함합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -55,7 +56,7 @@ class SchedulerPolicy;
 
 사용 하 여 제어할 수 있는 정책에 대 한 자세한 내용은 합니다 `SchedulerPolicy` 클래스를 참조 하십시오 [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `SchedulerPolicy`
 
@@ -86,7 +87,7 @@ unsigned int GetPolicyValue(PolicyElementKey key) const;
 
 메서드가 시킵니다 [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) 잘못 된 정책 키입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 스케줄러 정책에서 스케줄러 정책을 할당 합니다.
 
@@ -185,7 +186,7 @@ unsigned int SetPolicyValue(
 *key*<br/>
 에 대 한 값을 설정 하려면 정책 키입니다.
 
-*값*<br/>
+*value*<br/>
 정책 키를 설정할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -200,11 +201,10 @@ unsigned int SetPolicyValue(
 
 이 메서드는 설정할 수 없습니다는 합니다 `MinConcurrency` 또는 `MaxConcurrency` 정책입니다. 이러한 값을 설정 하려면 사용 합니다 [SetConcurrencyLimits](#setconcurrencylimits) 메서드.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [CurrentScheduler 클래스](currentscheduler-class.md)<br/>
 [Scheduler 클래스](scheduler-class.md)<br/>
 [작업 스케줄러](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-
