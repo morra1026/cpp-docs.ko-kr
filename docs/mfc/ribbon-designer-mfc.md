@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Ribbon Designer (MFC)
 - MFC Ribbon Designer
 ms.assetid: 0806dfd6-7d11-471a-99e1-4072852231f9
-ms.openlocfilehash: 903adc96f4c9bc092ac23787781a76c0e7e3714c
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 0972cdfbb80129b0c87c96fa7daf6768d18aa0c4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175836"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288783"
 ---
 # <a name="ribbon-designer-mfc"></a>리본 디자이너(MFC)
 
@@ -56,9 +56,9 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 다음은 MFC 프로젝트에 리본 리소스를 추가하는 두 가지 방법입니다.
 
-- MFC 응용 프로그램을 만들고 MFC 프로젝트 마법사를 구성하여 리본을 만듭니다. 자세한 내용은 [연습: 리본 응용 프로그램에서 사용 하 여 MFC를 만드는](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md)합니다.
+- MFC 응용 프로그램을 만들고 MFC 프로젝트 마법사를 구성하여 리본을 만듭니다. 자세한 내용은 [연습: MFC를 사용 하 여 리본 응용 프로그램을 만드는](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md)합니다.
 
-- 기존 MFC 프로젝트에서 리본 리소스를 만들고 로드합니다. 자세한 내용은 [연습: MFC 자유 곡선 응용 프로그램 업데이트 (파트 1)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)합니다.
+- 기존 MFC 프로젝트에서 리본 리소스를 만들고 로드합니다. 자세한 내용은 [연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)합니다.
 
 프로젝트에 수동으로 코딩된 리본이 이미 있는 경우 MFC에서 기존 리본을 리본 리소스로 변환하는 데 사용할 수 있는 함수를 제공합니다. 자세한 내용은 [방법: 기존 MFC 리본을 리본 리소스로 변환](../mfc/how-to-convert-an-existing-mfc-ribbon-to-a-ribbon-resource.md)합니다.
 
@@ -75,13 +75,13 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 - **도구 상자:** 디자이너 화면으로 끌어 올 수 있는 컨트롤을 포함 합니다.
 
-- **디자이너 화면:** 리본 리소스의 시각적 표현을 포함 합니다.
+- **디자이너 화면:** 리본 리소스의 시각적 표현을 포함합니다.
 
 - **속성 창:** 디자이너 화면에서 선택한 항목의 특성을 나열 합니다.
 
 - **리소스 뷰 창:** 프로젝트에서 리본 리소스를 포함 하는 리소스를 표시 합니다.
 
-- **Ribbon 편집기 도구 모음:** 수 있도록 하는 명령을 포함 리본 메뉴를 미리 보고 시각적 테마를 변경 합니다.
+- **Ribbon 편집기 도구 모음:** 리본을 미리 보고 시각적 테마를 변경할 수 있도록 하는 명령을 포함 합니다.
 
 다음 항목에서는 리본 디자이너의 기능을 사용하는 방법에 대해 설명합니다.
 
@@ -97,9 +97,9 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 ![MFC 리본](../mfc/media/ribbon.png "MFC 리본")
 
-- **응용 프로그램 단추:** 리본 메뉴의 왼쪽 위 모서리에 나타나는 단추입니다. 응용 프로그램 단추는 파일 메뉴를 대체하고 리본이 최소화되는 경우에도 표시됩니다. 이 단추를 클릭하면 명령 목록이 있는 메뉴가 표시됩니다.
+- **응용 프로그램 단추:** 리본 메뉴의 왼쪽 위 모퉁이에 나타나는 단추입니다. 응용 프로그램 단추는 파일 메뉴를 대체하고 리본이 최소화되는 경우에도 표시됩니다. 이 단추를 클릭하면 명령 목록이 있는 메뉴가 표시됩니다.
 
-- **빠른 실행 도구 모음:** 자주 표시 하는 소규모의 사용자 지정 가능한 도구 모음 명령을 사용 합니다.
+- **빠른 실행 도구 모음:** 자주 표시 하는 소규모의 사용자 지정 가능한 도구 모음을 사용 하는 명령입니다.
 
 - **범주**: 리본 탭의 내용을 나타내는 논리적 그룹화입니다.
 
@@ -107,10 +107,9 @@ MFC 응용 프로그램에서 리본 리소스를 사용 하려면 호출 하 �
 
 - **패널:** 관련된 컨트롤 그룹을 표시 하는 리본 표시줄의 영역입니다. 모든 리본 범주에는 하나 이상의 리본 패널이 있습니다.
 
-- **리본 요소:** 패널에 있는 예를 들어, 단추, 콤보 상자 컨트롤입니다. 호스팅될 수 있는 다양 한 컨트롤을 리본에서 참조 하세요 [RibbonGadgets 샘플: 리본 가젯 응용 프로그램](../visual-cpp-samples.md)합니다.
+- **리본 요소:** 제어 패널에 있는 예를 들어, 단추, 콤보 상자입니다. 리본에서 호스팅될 수 있는 다양 한 컨트롤을 보려면 참조 [RibbonGadgets 샘플: 가젯 응용 프로그램을 리본](../visual-cpp-samples.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [리소스 파일 작업](../windows/working-with-resource-files.md)
-

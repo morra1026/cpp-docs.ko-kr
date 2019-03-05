@@ -11,12 +11,12 @@ helpviewer_keywords:
 - operations [MFC]
 - throwing exceptions [MFC], stopping user operations
 ms.assetid: 2156ba6d-2cce-415a-9000-6f02c26fcd7d
-ms.openlocfilehash: 80f64ac3f573bddc376e54f13f6c37f8c7ebc8d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 72d8537616792859a2b00a1a5cd880ce5eb452bf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584472"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304589"
 ---
 # <a name="cuserexception-class"></a>CUserException 클래스
 
@@ -40,7 +40,7 @@ A `CUserException` 전역 함수를 호출한 후 일반적으로 예외가 `Afx
 
 사용 하 여 대 한 자세한 내용은 `CUserException`, 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -54,7 +54,7 @@ A `CUserException` 전역 함수를 호출한 후 일반적으로 예외가 `Afx
 
 **헤더:** afxwin.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CException 클래스](../../mfc/reference/cexception-class.md)

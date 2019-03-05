@@ -6,12 +6,12 @@ helpviewer_keywords:
 - image lists [MFC], types of
 - CImageList class [MFC], types
 ms.assetid: bee5e7c3-78f5-4037-a136-9c50d67cdee5
-ms.openlocfilehash: 5f5843f25faed90c195f7f2c605027858f089fb6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 939aad78b7cf8cca9c940bae11892d23dbb659cb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498889"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304758"
 ---
 # <a name="types-of-image-lists"></a>이미지 목록 형식
 
@@ -21,8 +21,7 @@ ms.locfileid: "50498889"
 
 마스크 되지 않은 이미지를 그릴 때 단순히 대상 장치 컨텍스트를에 복사 됩니다. 즉, 장치 컨텍스트의 기존 배경색 위에 그려집니다. 마스크 된 이미지를 그릴 때 일반적으로 비트맵에서 투명 한 영역 생성을 통해 대상 장치 컨텍스트의 배경색을 표시 하는 위치를 마스크의 비트를 사용 하 여 이미지의 비트 결합 됩니다. 마스크 된 이미지를 그릴 때 여러 그리기 스타일을 지정할 수 있습니다. 예를 들어, 선택한 개체를 나타내기 위해 이미지가 디더링는 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CImageList 사용](../mfc/using-cimagelist.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

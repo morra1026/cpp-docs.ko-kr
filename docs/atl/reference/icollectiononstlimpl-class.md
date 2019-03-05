@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICollectionOnSTLImpl class
 ms.assetid: 683c88b0-0d97-4779-a762-e493334ba7f9
-ms.openlocfilehash: 1b76ec9840fbee53a9003ca3a6064021a0f8d751
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc1e4988237cb839cca9421b56dbcdd04067059d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452483"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266460"
 ---
 # <a name="icollectiononstlimpl-class"></a>ICollectionOnSTLImpl 클래스
 
@@ -81,7 +81,7 @@ A [CComEnumOnSTL](../../atl/reference/ccomenumonstl-class.md)-호환 열거자 �
 
 자세한 내용 및 예제를 참조 하세요 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `T`
 
@@ -161,7 +161,7 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 CollType m_coll;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATLCollections 샘플](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

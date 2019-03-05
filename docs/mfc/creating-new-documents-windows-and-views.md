@@ -24,12 +24,12 @@ helpviewer_keywords:
 - views [MFC], overriding default behavior
 - initializing views [MFC]
 ms.assetid: 88aa1f5f-2078-4603-b16b-a2b4c7b4a2a3
-ms.openlocfilehash: 57e558848ce76a7c74b5715529661ad24c9cbb8e
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3d4ca55a9bff6ec42643db745896a2cea96dcefb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175394"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297810"
 ---
 # <a name="creating-new-documents-windows-and-views"></a>새 문서, 창 및 뷰 만들기
 
@@ -54,10 +54,9 @@ ms.locfileid: "52175394"
 
 대부분의 경우에서 재정의 기본 클래스 버전을 호출 해야 합니다. 자세한 내용은 클래스의 명명 된 멤버 함수를 참조 하세요 [CDocument](../mfc/reference/cdocument-class.md)를 [CView](../mfc/reference/cview-class.md)를 [CFrameWnd](../mfc/reference/cframewnd-class.md), 및 [CWinApp](../mfc/reference/cwinapp-class.md) MFC에서 라이브러리 참조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 템플릿 및 문서/뷰 만들기 프로세스](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [문서 템플릿 만들기](../mfc/document-template-creation.md)<br/>
 [문서/뷰 만들기](../mfc/document-view-creation.md)<br/>
 [MFC 개체 간 관계](../mfc/relationships-among-mfc-objects.md)
-

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC, messages
 - messages [MFC], sending
 ms.assetid: 9ce189cb-b259-4c3b-b6f2-9cfbed18b98b
-ms.openlocfilehash: 95a54f3a518be19c7ae6f001e3096b825e64c0c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bda261f4141a7ceb4e678535d9012650818fabce
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447400"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274910"
 ---
 # <a name="message-sending-and-receiving"></a>메시지 보내기 및 받기
 
@@ -32,7 +32,6 @@ ms.locfileid: "50447400"
 
 명령 대상 개체를 메시지 또는 명령을 받으면 일치 하는 자신의 메시지 맵을 검색 합니다. 메시지에 대 한 처리기를 찾으면 해당 처리기를 호출 합니다. 메시지 맵을 검색 하는 방법에 대 한 자세한 내용은 참조 하십시오 [매핑하는 방법의 프레임 워크 검색 메시지](../mfc/how-the-framework-searches-message-maps.md)합니다. 그림을 다시 참조 [프레임 워크에서 명령을](../mfc/user-interface-objects-and-command-ids.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 처리기를 호출하는 방법](../mfc/how-the-framework-calls-a-handler.md)
-

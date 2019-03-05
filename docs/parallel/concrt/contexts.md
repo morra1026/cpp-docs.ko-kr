@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - contexts [Concurrency Runtime]
 ms.assetid: 10c1d861-8fbb-4ba0-b2ec-61876b11176e
-ms.openlocfilehash: b7d1a5bbc63781e865be8053cb4365d6a8590935
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d511f8fa751d61c3c490a184dae660096dd9f76f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529173"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285908"
 ---
 # <a name="contexts"></a>컨텍스트
 
@@ -26,7 +26,7 @@ ms.locfileid: "50529173"
 
 ### <a name="example"></a>예제
 
-사용 하는 예는 `wait` 현재 컨텍스트를 생성 하기 위해 함수를 실행 하 여 참조를 다른 컨텍스트에 대 한 허용 하므로 [방법: 실행의 영향을 순서를 사용 하 여 일정 그룹](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md).
+사용 하는 예는 `wait` 함수를 현재 컨텍스트를 생성 하 고 다른 컨텍스트 실행, 참조를 허용 하므로 [방법: 실행 순서를 영향을 주는 일정 그룹 사용](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)합니다.
 
 ## <a name="the-context-class"></a>Context 클래스
 
@@ -46,7 +46,7 @@ Concurrency::[컨텍스트 클래스](../../parallel/concrt/reference/context-cl
 
 #### <a name="example"></a>예제
 
-사용 하는 예는 `Context::Block`, `Context::Unblock`, 및 `Context::Yield` 공동 작업 세마포 클래스를 구현 하는 방법을 참조 하세요 [방법: 컨텍스트 클래스를 사용 하 여 공동 작업 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)합니다.
+사용 하는 예는 `Context::Block`, `Context::Unblock`, 및 `Context::Yield` 공동 작업 세마포 클래스를 구현 하는 방법을 참조 [하는 방법: 상황에 맞는 클래스를 사용 하 여 공동 작업 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)합니다.
 
 ##### <a name="oversubscription"></a>초과 구독
 
@@ -66,12 +66,11 @@ Concurrency::[컨텍스트 클래스](../../parallel/concrt/reference/context-cl
 
 ###### <a name="example"></a>예제
 
-초과 구독을 사용 하 여 네트워크 연결에서 데이터 읽기를 통해 발생 하는 대기 시간을 오프셋 하는 예제를 보려면 [방법: 대기 시간 오프셋을 사용 하 여 초과 구독](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)합니다.
+초과 구독을 사용 하 여 네트워크 연결에서 데이터 읽기를 통해 발생 하는 대기 시간을 오프셋 하는 예제를 참조 하세요. [방법: 초과 구독을 사용 하 여 대기 시간을 오프셋](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [방법: 실행 순서에 영향을 주는 일정 그룹 사용](../../parallel/concrt/how-to-use-schedule-groups-to-influence-order-of-execution.md)<br/>
 [방법: 컨텍스트 클래스를 사용하여 공동 작업 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)<br/>
 [방법: 초과 구독을 사용하여 대기 오프셋](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)
-

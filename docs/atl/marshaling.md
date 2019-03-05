@@ -6,12 +6,12 @@ helpviewer_keywords:
 - marshaling
 - COM interfaces, marshaling
 ms.assetid: 40644b0a-1106-4fc8-9dfb-9bee9915d825
-ms.openlocfilehash: a6129ba96cf3ac11339a8ab953e0838127f8fb3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0661a4cdde0a3a875cf27221e884f6c65b9fea55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569795"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269680"
 ---
 # <a name="marshaling"></a>마샬링
 
@@ -20,8 +20,7 @@ ms.locfileid: "50569795"
 > [!NOTE]
 >  마샬링 일반적으로 필요 없는 개체와 동일한 프로세스에서 개체에서 제공 하는 인터페이스를 사용 하는 경우입니다. 그러나 마샬링 스레드 간에 필요할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
 [마샬링 정보](/windows/desktop/com/marshaling-details)
-

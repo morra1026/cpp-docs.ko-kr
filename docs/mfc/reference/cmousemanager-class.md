@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMouseManager [MFC], SaveState
 - CMouseManager [MFC], SetCommandForDblClk
 ms.assetid: a4d05017-4e44-4a40-8b57-4ece0de20481
-ms.openlocfilehash: b3c5104038e6d715977a211af5a535cc9a5d916f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d58293b94eeaf499c48f750972b15256e9c19794
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498152"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293188"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager 클래스
 
@@ -60,7 +60,7 @@ class CMouseManager : public CObject
 
 만들어야 합니다를 `CMouseManager` 수동으로 개체입니다. 응용 프로그램의 프레임 워크에 의해 생성 됩니다. 사용자가 응용 프로그램을 종료할 때 자동으로 소멸도 됩니다. 응용 프로그램에 대 한 마우스 관리자에 대 한 포인터를 가져오려면, 호출 [CWinAppEx::GetMouseManager](../../mfc/reference/cwinappex-class.md#getmousemanager)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -267,10 +267,9 @@ void SetCommandForDblClk(
 
 하는 경우 *uiCmd* 설정할지를 0으로 지정 된 뷰를 더 이상 연결 되어 명령과 사용 하 여 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md)<br/>
 [키보드 및 마우스 사용자 지정](../../mfc/keyboard-and-mouse-customization.md)
-

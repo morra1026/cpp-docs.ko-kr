@@ -166,18 +166,18 @@ helpviewer_keywords:
 - CMFCPropertyGridProperty [MFC], m_strFormatLong
 - CMFCPropertyGridProperty [MFC], m_strFormatShort
 ms.assetid: 36f3fabe-0efe-468b-8a0b-5a7956db38a2
-ms.openlocfilehash: f7a8cca3da85e3ac0b7b7e63e83d394a0e8a9899
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 550f238ae66bcaf7d5afc245b709c42c78769949
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524733"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305070"
 ---
 # <a name="cmfcpropertygridproperty-class"></a>CMFCPropertyGridProperty 클래스
 
 `CMFCPropertyGridProperty` 개체 속성 목록 컨트롤에 목록 항목을 나타냅니다.
 
-   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+   더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -208,7 +208,7 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::Enable](#enable)|사용 하거나 속성을 사용 하지 않도록 설정 합니다.|
 |[CMFCPropertyGridProperty::EnableSpinControl](#enablespincontrol)|사용 하거나 속성 값을 수정 하는 데 사용 되는 스핀 단추 컨트롤을 사용 하지 않도록 설정 합니다.|
 |[CMFCPropertyGridProperty::Expand](#expand)|확장 하거나 축소 하는 하위 속성을 포함 하는 속성입니다.|
-|[Cmfcpropertygridproperty:: Formatproperty](#formatproperty)|속성 값의 텍스트 표현에 서식을 지정합니다.|
+|[CMFCPropertyGridProperty::FormatProperty](#formatproperty)|속성 값의 텍스트 표현에 서식을 지정합니다.|
 |[CMFCPropertyGridProperty::GetData](#getdata)|속성을 사용 하 여 연결 된 DWORD 값을 검색 합니다.|
 |[CMFCPropertyGridProperty::GetDescription](#getdescription)|속성 설명을 검색합니다.|
 |[CMFCPropertyGridProperty::GetExpandedSubItems](#getexpandedsubitems)|확장 된 하위 항목의 수를 검색합니다.|
@@ -235,7 +235,7 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::IsParentExpanded](#isparentexpanded)|현재 속성의 부모 확장 되어 있는지 여부를 나타냅니다.|
 |[CMFCPropertyGridProperty::IsSelected](#isselected)|현재 속성이 선택 되어 있는지 여부를 나타냅니다.|
 |[CMFCPropertyGridProperty::IsVisible](#isvisible)|현재 속성의 표시 여부를 나타냅니다.|
-|[Cmfcpropertygridproperty:: Onclickbutton](#onclickbutton)|사용자가 속성에 포함된 단추를 클릭하면 프레임워크에서 호출됩니다.|
+|[CMFCPropertyGridProperty::OnClickButton](#onclickbutton)|사용자가 속성에 포함된 단추를 클릭하면 프레임워크에서 호출됩니다.|
 |[CMFCPropertyGridProperty::OnClickName](#onclickname)|속성의 이름 필드를 클릭할 때 부모 속성 목록 컨트롤에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::OnClickValue](#onclickvalue)|속성의 값 필드를 클릭할 때 부모 속성 목록 컨트롤에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::OnCloseCombo](#onclosecombo)|속성에 포함 된 콤보 상자를 닫을 때 프레임 워크에서 호출 됩니다.|
@@ -244,8 +244,8 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::OnDrawDescription](#ondrawdescription)|속성 설명을 표시 하기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::OnDrawExpandBox](#ondrawexpandbox)|하위 속성을 포함 하는 속성 거의 확장 상자 컨트롤을 그리기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::OnDrawName](#ondrawname)|속성 이름을 표시 하기 위해 프레임 워크에서 호출 됩니다.|
-|[Cmfcpropertygridproperty:: Ondrawvalue](#ondrawvalue)|속성 값을 표시하기 위해 프레임워크에서 호출됩니다.|
-|[Cmfcpropertygridproperty:: Onedit](#onedit)|사용자가 속성 값을 수정하려고 할 때 프레임워크에서 호출됩니다.|
+|[CMFCPropertyGridProperty::OnDrawValue](#ondrawvalue)|속성 값을 표시하기 위해 프레임워크에서 호출됩니다.|
+|[CMFCPropertyGridProperty::OnEdit](#onedit)|사용자가 속성 값을 수정하려고 할 때 프레임워크에서 호출됩니다.|
 |[CMFCPropertyGridProperty::OnEndEdit](#onendedit)|사용자가 완료 될 때 프레임 워크에서 호출 속성 값을 수정 합니다.|
 |[CMFCPropertyGridProperty::OnKillSelection](#onkillselection)||
 |[CMFCPropertyGridProperty::OnPosSizeChanged](#onpossizechanged)||
@@ -254,12 +254,12 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::OnSelectCombo](#onselectcombo)|사용자가 편집할 수 있는 콤보 상자에서 항목을 선택할 때 프레임 워크에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::OnSetCursor](#onsetcursor)|속성 항목에 마우스 포인터를 움직이면 프레임 워크에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::OnSetSelection](#onsetselection)||
-|[Cmfcpropertygridproperty:: Onupdatevalue](#onupdatevalue)|편집 가능한 속성 값이 변경되었을 때 프레임워크에서 호출됩니다.|
+|[CMFCPropertyGridProperty::OnUpdateValue](#onupdatevalue)|편집 가능한 속성 값이 변경되었을 때 프레임워크에서 호출됩니다.|
 |[CMFCPropertyGridProperty::PushChar](#pushchar)|속성을 선택 하 고 사용자가 새 문자를 입력할 때 속성 목록 컨트롤에서 호출 됩니다.|
 |[CMFCPropertyGridProperty::Redraw](#redraw)|속성을 다시 그립니다.|
 |[CMFCPropertyGridProperty::RemoveAllOptions](#removealloptions)|속성에서 모든 옵션 (항목)를 제거합니다.|
 |[CMFCPropertyGridProperty::RemoveSubItem](#removesubitem)|지정된 된 하위 항목을 제거합니다.|
-|[Cmfcpropertygridproperty:: Resetoriginalvalue](#resetoriginalvalue)|편집된 된 속성의 원래 값을 복원합니다.|
+|[CMFCPropertyGridProperty::ResetOriginalValue](#resetoriginalvalue)|편집된 된 속성의 원래 값을 복원합니다.|
 |[CMFCPropertyGridProperty::SetData](#setdata)|DWORD 값을 속성을 사용 하 여 연결합니다.|
 |[CMFCPropertyGridProperty::SetDescription](#setdescription)|현재 속성을 설명 하는 텍스트를 지정 합니다.|
 |[CMFCPropertyGridProperty::SetName](#setname)|속성의 이름을 설정합니다.|
@@ -267,7 +267,7 @@ class CMFCPropertyGridProperty : public CObject
 |[CMFCPropertyGridProperty::SetValue](#setvalue)|속성 그리드 속성의 값을 설정 합니다.|
 |[CMFCPropertyGridProperty::Show](#show)|표시 하거나 속성을 숨깁니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -301,7 +301,7 @@ class CMFCPropertyGridProperty : public CObject
 
 [!code-cpp[NVC_MFC_NewControls#27](../../mfc/reference/codesnippet/cpp/cmfcpropertygridproperty-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -406,7 +406,7 @@ void AllowEdit(BOOL bAllow=TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*전파할*<br/>
+*bAllow*<br/>
 [in] 하려면 True이 고 속성을 편집할 수 있습니다. 읽기 전용 속성을 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.
 
 ### <a name="remarks"></a>설명
@@ -569,7 +569,7 @@ void EnableSpinControl(
 *nMin*<br/>
 [in] 스핀 단추 컨트롤의 최소값입니다. 기본값은 0입니다.
 
-*최대*<br/>
+*nMax*<br/>
 [in] 스핀 단추 컨트롤의 최대 값입니다. 기본값은 0입니다.
 
 ### <a name="remarks"></a>설명
@@ -593,7 +593,7 @@ void Expand(BOOL bExpand=TRUE);
 
 ### <a name="remarks"></a>설명
 
-##  <a name="formatproperty"></a>  Cmfcpropertygridproperty:: Formatproperty
+##  <a name="formatproperty"></a>  CMFCPropertyGridProperty::FormatProperty
 
 속성 값의 텍스트 표현에 서식을 지정합니다.
 
@@ -880,10 +880,10 @@ CMFCPropertyGridProperty* HitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 클라이언트 좌표로 테스트할 점입니다. 이 매개 변수는 일반적으로 현재 마우스 포인터 위치 합니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 [in] 클라이언트 좌표로 테스트할 점입니다.
 
 *pnArea*<br/>
@@ -1119,7 +1119,7 @@ static CString m_strFormatShort;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="onclickbutton"></a>  Cmfcpropertygridproperty:: Onclickbutton
+##  <a name="onclickbutton"></a>  CMFCPropertyGridProperty::OnClickButton
 
 사용자가 속성에 포함된 단추를 클릭하면 프레임워크에서 호출됩니다.
 
@@ -1129,12 +1129,12 @@ virtual void OnClickButton(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 ##  <a name="onclickname"></a>  CMFCPropertyGridProperty::OnClickName
 
@@ -1152,7 +1152,7 @@ virtual void OnClickName(CPoint C);
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 ##  <a name="onclickvalue"></a>  CMFCPropertyGridProperty::OnClickValue
 
@@ -1169,7 +1169,7 @@ virtual BOOL OnClickValue(
 *uiMsg*<br/>
 [in] 마우스 메시지입니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1224,7 +1224,7 @@ virtual BOOL OnDblClk(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지점에서 클라이언트 좌표로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1329,7 +1329,7 @@ virtual void OnDrawName(
 
 ### <a name="remarks"></a>설명
 
-##  <a name="ondrawvalue"></a>  Cmfcpropertygridproperty:: Ondrawvalue
+##  <a name="ondrawvalue"></a>  CMFCPropertyGridProperty::OnDrawValue
 
 속성 값을 표시하기 위해 프레임워크에서 호출됩니다.
 
@@ -1349,7 +1349,7 @@ virtual void OnDrawValue(
 
 ### <a name="remarks"></a>설명
 
-##  <a name="onedit"></a>  Cmfcpropertygridproperty:: Onedit
+##  <a name="onedit"></a>  CMFCPropertyGridProperty::OnEdit
 
 사용자가 속성 값을 수정하려고 할 때 프레임워크에서 호출됩니다.
 
@@ -1420,7 +1420,7 @@ virtual void OnKillSelection(CMFCPropertyGridProperty*);
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 ##  <a name="onpossizechanged"></a>  CMFCPropertyGridProperty::OnPosSizeChanged
 
@@ -1434,7 +1434,7 @@ virtual void OnPosSizeChanged(CRect);
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 ##  <a name="onrclickname"></a>  CMFCPropertyGridProperty::OnRClickName
 
@@ -1452,7 +1452,7 @@ virtual void OnRClickName(CPoint C);
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 ##  <a name="onrclickvalue"></a>  CMFCPropertyGridProperty::OnRClickValue
 
@@ -1469,7 +1469,7 @@ virtual void OnRClickValue(
 |매개 변수|설명|
 |---------------|-----------------|
 |*C*|[in] 지점에서 클라이언트 좌표로입니다.|
-|*B*|[in] 부울입니다.|
+|*B*|[in] A Boolean.|
 
 ### <a name="remarks"></a>설명
 
@@ -1501,7 +1501,7 @@ virtual BOOL OnSetCursor() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 variant 형식은 지원: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, 및 VT_BSTR 합니다.
+이 메서드는 variant 형식은 지원합니다. VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, and VT_BSTR.
 
 ##  <a name="onsetselection"></a>  CMFCPropertyGridProperty::OnSetSelection
 
@@ -1515,9 +1515,9 @@ virtual void OnSetSelection CMFCPropertyGridProperty*);
 
 ### <a name="remarks"></a>설명
 
-기본적으로이 메서드는 없습니다.
+기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
-##  <a name="onupdatevalue"></a>  Cmfcpropertygridproperty:: Onupdatevalue
+##  <a name="onupdatevalue"></a>  CMFCPropertyGridProperty::OnUpdateValue
 
 편집 가능한 속성 값이 변경되었을 때 프레임워크에서 호출됩니다.
 
@@ -1541,7 +1541,7 @@ virtual BOOL PushChar(UINT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 [in] 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1550,7 +1550,7 @@ TRUE 이면 편집 작업을 계속 합니다. 그렇지 않으면 FALSE입니�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 속성 값의 목록 또는 다음 variant 형식 중 하나를 지원 합니다: VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, 및 VT_BSTR 합니다.
+이 메서드는 속성을 값의 목록 또는 다음 variant 형식 중 하나를 지원 합니다. VT_INT, VT_I2, VT_I4, VT_UINT, VT_UI1, VT_UI2, VT_UI4, VT_R4, VT_R8, and VT_BSTR.
 
 ##  <a name="redraw"></a>  CMFCPropertyGridProperty::Redraw
 
@@ -1589,7 +1589,7 @@ BOOL RemoveSubItem(
 *pProp*<br/>
 [in] 속성 하위 항목에 대 한 포인터입니다.
 
-*b 삭제*<br/>
+*bDelete*<br/>
 [in] 지정 된 속성 개체를 삭제 하려면 true로 설정 합니다 *pProp* 매개 변수, 그렇지 않으면 FALSE입니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1598,7 +1598,7 @@ BOOL RemoveSubItem(
 
 에 대해 FALSE를 지정 합니다 *b 삭제* 매개 변수에 지정된 된 하위 항목 이동, 하위 항목을 제거 하 고 다른 곳에서 추가 하려는 경우.
 
-##  <a name="resetoriginalvalue"></a>  Cmfcpropertygridproperty:: Resetoriginalvalue
+##  <a name="resetoriginalvalue"></a>  CMFCPropertyGridProperty::ResetOriginalValue
 
 편집된 된 속성의 원래 값을 복원합니다.
 
@@ -1710,7 +1710,7 @@ void Show(
 *bAdjustLayout*<br/>
 [in] TRUE 레이블 및 속성의 값 그리고 다음 속성을 그리는 방법을 다시 계산 False 이면 속성을 그릴 기존 계산을 사용 합니다. 기본값은 TRUE입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

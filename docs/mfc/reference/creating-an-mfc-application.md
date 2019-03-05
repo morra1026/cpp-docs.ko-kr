@@ -1,19 +1,19 @@
 ---
-title: MFC 응용 프로그램 만들기
+title: MFC 애플리케이션 만들기
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC]
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: df1e49ffe9e4350d2023bc471d3687bec5defa04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 30fac6579d05eed276b60918b2417cd96044359a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434608"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292629"
 ---
-# <a name="creating-an-mfc-application"></a>MFC 응용 프로그램 만들기
+# <a name="creating-an-mfc-application"></a>MFC 애플리케이션 만들기
 
 MFC 응용 프로그램은 MFC(Microsoft Foundation Class) 라이브러리를 기반으로 하는 실행 가능한 Windows용 응용 프로그램입니다. MFC 응용 프로그램을 만드는 가장 쉬운 방법은 MFC 응용 프로그램 마법사를 사용하는 것입니다.
 
@@ -49,8 +49,7 @@ MFC 응용 프로그램 마법사에서는 선택하는 옵션에 따라 위의 
 
 프로젝트가 만들어진 후에 만들어진 파일을 볼 수 있습니다 **솔루션 탐색기**합니다. 마법사에서 프로젝트용으로 만드는 파일에 대한 자세한 내용은 프로젝트 생성 파일인 ReadMe.txt를 참조하세요. 파일 형식에 대 한 자세한 내용은 참조 하세요. [Visual c + + 프로젝트용으로 만들어지는 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[속성 페이지](../../ide/property-pages-visual-cpp.md)
-
+[속성 페이지(Visual C++)](../../ide/property-pages-visual-cpp.md)

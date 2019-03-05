@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CTreeCtrl class [MFC], parent and child items
 - tree controls [MFC], parent and child items
 ms.assetid: abcea1e4-fe9b-40d9-86dc-1db235f8f103
-ms.openlocfilehash: ca74f85228a7b428d277395dfdd1d7172f8247f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2961009e3f1b21c3caacec001c53f5e52740dd67
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544978"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304576"
 ---
 # <a name="tree-control-parent-and-child-items"></a>트리 컨트롤 부모 및 자식 항목
 
@@ -26,8 +26,7 @@ ms.locfileid: "50544978"
 
 자식 항목의 목록을 확장 되 면 부모 항목을 기준으로 들여씁니다. 사용 하 여 들여쓰기 정도 설정할 수 있습니다 합니다 [SetIndent](../mfc/reference/ctreectrl-class.md#setindent) 멤버 함수 또는 사용 하 여 현재 크기를 검색 합니다 [GetIndent](../mfc/reference/ctreectrl-class.md#getindent) 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

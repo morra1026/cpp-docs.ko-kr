@@ -13,12 +13,12 @@ f1_keywords:
 - AMP/Concurrency::tiled_extent::tile_dim2
 - AMP/Concurrency::tiled_extent::tile_extent
 ms.assetid: 671ecaf8-c7b0-4ac8-bbdc-e30bd92da7c0
-ms.openlocfilehash: 77d16eefa61fb30614cb6527792014cc8655abe0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51e7696b8103e81d42beec0987a49f26fe041643
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264326"
 ---
 # <a name="tiledextent-class"></a>tiled_extent 클래스
 
@@ -84,7 +84,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 |이름|설명|
 |----------|-----------------|
 |[tile_dim0 Constant](#tile_dim0)|최대 유효 치수의 길이 저장 합니다.|
-|[tile_dim1 상수](#tile_dim1)|다음 최대 유효 치수의 길이 저장 합니다.|
+|[tile_dim1 Constant](#tile_dim1)|다음 최대 유효 치수의 길이 저장 합니다.|
 |[tile_dim2 Constant](#tile_dim2)|최소 유효 치수의 길이 저장 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -93,7 +93,7 @@ class tiled_extent<_Dim0, 0, 0> : public Concurrency::extent<1>;
 |----------|-----------------|
 |[tile_extent](#tile_extent)|가져옵니다는 `extent` 의 값을 캡처하는 개체를 `tiled_extent` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `extent`
 
@@ -140,7 +140,7 @@ Concurrency::extent<rank> get_tile_extent() const restrict(amp,cpu);
 
 `extent` 개체의 크기를 캡처하는 `tiled_extent` 인스턴스.
 
-## <a name="pad"> </a>  패드
+## <a name="pad"> </a>  pad
 
 반환 된 새 `tiled_extent` 익스텐트를 사용 하 여 개체 타일 크기에 따라 균등 하 게 나눌 수를 조정 합니다.
 
@@ -226,6 +226,6 @@ static const int tile_dim2 = _Dim2;
 __declspec(property(get= get_tile_extent)) Concurrency::extent<rank> tile_extent;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

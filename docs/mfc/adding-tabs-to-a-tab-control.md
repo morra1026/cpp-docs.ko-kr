@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], adding tabs
 - tabs [MFC], adding to CTabCtrl class [MFC]
 ms.assetid: 7f3d9340-e3c7-4c71-9912-be57534ecc78
-ms.openlocfilehash: be622035355a68d1527a515bfdcb633a3af274d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f769de7bcf3e410cca717c17237d1e49ef8562c9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293591"
 ---
 # <a name="adding-tabs-to-a-tab-control"></a>탭 컨트롤에 탭 추가
 
@@ -28,8 +28,7 @@ ms.locfileid: "50618272"
 
 자세한 내용은 [하는 Tab 컨트롤을 만드는](/windows/desktop/Controls/tab-controls) Windows SDK의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTabCtrl 사용](../mfc/using-ctabctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

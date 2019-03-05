@@ -5,12 +5,12 @@ helpviewer_keywords:
 - aggregation [C++], creating aggregated objects
 - aggregate objects [C++], creating
 ms.assetid: fc29d7aa-fd53-4276-9c2f-37379f71b179
-ms.openlocfilehash: 5c655b8ced7738b30bf13d088cfadf11b5c65ef0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4be8d0e852da91b58125dc01d44eed4560b2b8d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449857"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277523"
 ---
 # <a name="creating-an-aggregated-object"></a>집계 개체 만들기
 
@@ -29,7 +29,6 @@ ms.locfileid: "50449857"
 > [!NOTE]
 > 사용 하 고 하는 동안 집계 된 개체의 인터페이스를 릴리스 하는 경우 `FinalConstruct`를 추가 해야 합니다 [DECLARE_PROTECT_FINAL_CONSTRUCT](reference/aggregation-and-class-factory-macros.md#declare_protect_final_construct) 클래스 개체의 정의에 매크로입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)
-

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - BNF notation
 - Backus Nauer Form (BNF) syntax
 ms.assetid: 994bbef0-9077-4aa8-bdfe-b7e830af9acc
-ms.openlocfilehash: b14e2a4f1c29860b9a624b09805959a9f6b550f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b48e0b4abc8601b5173c3c7d2748c726646fbc5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596731"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267110"
 ---
 # <a name="understanding-backus-nauer-form-bnf-syntax"></a>Backus Nauer BNF (Form) 구문 이해
 
@@ -20,7 +20,7 @@ ATL 등록자 사용 하는 스크립트는 다음 표에 나와 있는 표기�
 |------------------------|-------------|
 |::=|해당 항목|
 |&#124;|또는|
-|X +|하나 이상의 Xs 합니다.|
+|X+|하나 이상의 Xs 합니다.|
 |[X]|X는 선택 사항입니다. 선택적 구분 기호는  \[].|
 |모든 **굵은** 텍스트|문자열 리터럴입니다.|
 |모든 *기울임꼴* 텍스트|리터럴 문자열을 생성 하는 방법입니다.|
@@ -98,7 +98,6 @@ val 'testhex' = d '&H55'
 
 지정 하는 키 이름을 `testhex` DWORD 값은 16 진수 55 (10 진수 85)로 설정 합니다. 이 형식을 준수 하는 참고 합니다 **& H** 표기법으로 Visual Basic 사양에서 찾을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)
-

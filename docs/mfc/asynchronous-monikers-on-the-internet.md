@@ -10,12 +10,12 @@ helpviewer_keywords:
 - optimization [MFC], asynchronous downloading across Internet
 - Internet [MFC], asynchronous downloading
 ms.assetid: 418b0c64-0046-4dae-8118-c9c762b5822e
-ms.openlocfilehash: 63bdc8372223075804d8c710909909382167b2c2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e7a7ea51bca134e965747db8aac7f8a62822c9eb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591297"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305031"
 ---
 # <a name="asynchronous-monikers-on-the-internet"></a>인터넷의 비동기 모니커
 
@@ -63,8 +63,7 @@ MFC 클래스 `CDataPathProperty` 하 고 [CCachedDataPathProperty](../mfc/refer
 
 ActiveX 컨트롤에서 비동기적으로 다운로드 하는 방법에 대 한 내용은 [인터넷의 ActiveX 컨트롤](../mfc/activex-controls-on-the-internet.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)
-

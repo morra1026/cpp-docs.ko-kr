@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMDIChildWnd [MFC], MDIRestore
 - CMDIChildWnd [MFC], SetHandles
 ms.assetid: 6d07f5d4-9a3e-4723-9fa5-e65bb669fdd5
-ms.openlocfilehash: 50fb7da1a59d35d96f1f65428b3a361e3a226607
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: efcf5057481345c001cc48224f53c666623d0780
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694456"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304992"
 ---
 # <a name="cmdichildwnd-class"></a>CMDIChildWnd 클래스
 
@@ -285,7 +285,7 @@ void SetHandles(
 
 MDI 자식 창 개체에서 사용 하는 메뉴 및 바로 가기 리소스를 설정 하려면이 함수를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>

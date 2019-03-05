@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: b37cff8bd3eb3bd05bc7030c4cc12b9b84568b1f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 69a04b49cf82c2b30ece3a32f76fbb2bc9a65f01
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51333643"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295996"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 
@@ -222,7 +222,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::ExecFormsCommand](#execformscommand)|`IOleCommandTarget::Exec` 메서드를 사용하여 지정된 명령을 실행합니다.|
 |[CHtmlView::ExecWB](#execwb)|명령을 실행합니다.|
 |[CHtmlView::GetAddressBar](#getaddressbar)|Internet Explorer 개체의 주소 표시줄을 표시할지 여부를 결정합니다. WebBrowser 컨트롤은 무시됩니다. Internet Explorer에만 해당합니다.|
-|[CHtmlView::GetApplication](#getapplication)|Internet Explorer 응용 프로그램의 현재 인스턴스를 포함하는 응용 프로그램을 나타내는 응용 프로그램 개체를 검색합니다.|
+|[CHtmlView::GetApplication](#getapplication)|Internet Explorer 애플리케이션의 현재 인스턴스를 포함하는 애플리케이션을 나타내는 애플리케이션 개체를 검색합니다.|
 |[CHtmlView::GetBusy](#getbusy)|다운로드 또는 기타 작업이 계속 진행 중인지 여부를 나타내는 값을 검색합니다.|
 |[CHtmlView::GetContainer](#getcontainer)|WebBrowser 컨트롤의 컨테이너를 검색합니다.|
 |[CHtmlView::GetFullName](#getfullname)|웹 브라우저에 표시되는 리소스의 전체 이름(경로 포함)을 검색합니다. WebBrowser 컨트롤은 무시됩니다. Internet Explorer에만 해당합니다.|
@@ -257,10 +257,10 @@ class CHtmlView : public CFormView
 |[CHtmlView::Navigate](#navigate)|URL로 식별된 리소스로 이동합니다.|
 |[CHtmlView::Navigate2](#navigate2)|URL로 식별된 리소스 또는 전체 경로로 식별된 파일로 이동합니다.|
 |[CHtmlView::OnBeforeNavigate2](#onbeforenavigate2)|창 또는 프레임셋 요소에 지정된 WebBrowser에서 이동하기 전에 호출됩니다.|
-|[CHtmlView::OnCommandStateChange](#oncommandstatechange)|웹 브라우저 명령의 사용 상태가 변경되었음을 응용 프로그램에 알리기 위해 호출됩니다.|
+|[CHtmlView::OnCommandStateChange](#oncommandstatechange)|웹 브라우저 명령의 사용 상태가 변경되었음을 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnDocumentComplete](#ondocumentcomplete)|문서가 READYSTATE_COMPLETE 상태가 도달 하는 응용 프로그램에 알리기 위해 호출 됩니다.|
 |[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|[IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 컨테이너의 문서 창이 활성화 또는 비활성화될 경우 활성 현재 위치 개체에 알립니다.|
-|[CHtmlView::OnDownloadBegin](#ondownloadbegin)|이동 작업이 시작되었음을 응용 프로그램에 알리기 위해 호출됩니다.|
+|[CHtmlView::OnDownloadBegin](#ondownloadbegin)|이동 작업이 시작되었음을 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnDownloadComplete](#ondownloadcomplete)|이동 작업이 중단 또는 실패한 상태로 마치면 호출됩니다.|
 |[CHtmlView::OnEnableModeless](#onenablemodeless)|컨테이너가 모달 대화 상자를 만들거나 삭제할 때 모덜리스 대화 상자를 사용하거나 사용하지 않도록 설정하기 위해 호출됩니다.|
 |[CHtmlView::OnFilterDataObject](#onfilterdataobject)|호스트가 Internet Explorer 또는 MSHTML의 데이터 개체를 바꿀 수 있도록 하기 위해 Internet Explorer 또는 MSHTML에 의해 호스트에서 호출됩니다.|
@@ -275,16 +275,16 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnNavigateComplete2](#onnavigatecomplete2)|창 또는 프레임셋 요소의 하이퍼링크로 이동한 후에 호출됩니다.|
 |[CHtmlView::OnNavigateError](#onnavigateerror)|하이퍼링크로 이동이 실패할 경우 프레임워크에 의해 호출됩니다.|
 |[CHtmlView::OnNewWindow2](#onnewwindow2)|리소스를 표시하기 위해 새 창이 만들어지면 호출됩니다.|
-|[CHtmlView::OnProgressChange](#onprogresschange)|다운로드 작업 진행률이 업데이트되었음을 응용 프로그램에 알리기 위해 호출됩니다.|
+|[CHtmlView::OnProgressChange](#onprogresschange)|다운로드 작업 진행률이 업데이트되었음을 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnPropertyChange](#onpropertychange)|[PutProperty](#putproperty) 메서드가 속성 값을 변경했음을 응용 프로그램에 알리기 위해 호출됩니다.|
-|[CHtmlView::OnQuit](#onquit)|Internet Explorer 응용 프로그램을 끝낼 준비가 되었음을 응용 프로그램에 알리기 위해 호출됩니다. (Internet Explorer에만 적용됨)|
+|[CHtmlView::OnQuit](#onquit)|Internet Explorer 애플리케이션을 끝낼 준비가 되었음을 애플리케이션에 알리기 위해 호출됩니다. (Internet Explorer에만 적용됨)|
 |[CHtmlView::OnResizeBorder](#onresizeborder)|[IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)의 Internet Explorer 또는 MSHTML 구현에서 호출되며, 해당 테두리 공간 크기를 조정해야 함을 개체에 경고합니다.|
 |[CHtmlView::OnShowContextMenu](#onshowcontextmenu)|상황에 맞는 메뉴를 표시하려는 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnShowUI](#onshowui)|Internet Explorer 또는 MSHTML이 해당 메뉴 및 도구 모음을 표시하기 전에 호출됩니다.|
 |[CHtmlView::OnStatusBar](#onstatusbar)|StatusBar 속성이 변경되면 호출됩니다.|
-|[CHtmlView::OnStatusTextChange](#onstatustextchange)|응용 프로그램에 WebBrowser 컨트롤과 연결된 상태 표시줄의 텍스트가 변경되었음을 알리기 위해 호출됩니다.|
+|[CHtmlView::OnStatusTextChange](#onstatustextchange)|애플리케이션에 WebBrowser 컨트롤과 연결된 상태 표시줄의 텍스트가 변경되었음을 알리기 위해 호출됩니다.|
 |[CHtmlView::OnTheaterMode](#ontheatermode)|TheaterMode 속성이 변경되면 호출됩니다.|
-|[CHtmlView::OnTitleChange](#ontitlechange)|WebBrowser 컨트롤의 문서 제목을 사용할 수 있게 되거나 변경할 경우 응용 프로그램에 알리기 위해 호출됩니다.|
+|[CHtmlView::OnTitleChange](#ontitlechange)|WebBrowser 컨트롤의 문서 제목을 사용할 수 있게 되거나 변경할 경우 애플리케이션에 알리기 위해 호출됩니다.|
 |[CHtmlView::OnToolBar](#ontoolbar)|ToolBar 속성이 변경되면 호출됩니다.|
 |[CHtmlView::OnTranslateAccelerator](#ontranslateaccelerator)|컨테이너의 메시지 큐에서 메뉴 바로 가기 키 메시지를 처리하기 위해 [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 또는 [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 가 호출될 경우 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
 |[CHtmlView::OnTranslateUrl](#ontranslateurl)|호스트가 로드할 URL을 수정할 수 있도록 하기 위해 Internet Explorer 또는 MSHTML에 의해 호출됩니다.|
@@ -316,16 +316,16 @@ class CHtmlView : public CFormView
 
 WebBrowser 컨트롤은 사용자가 로컬 파일 시스템과 네트워크의 폴더뿐 아니라 World Wide Web에서 사이트를 찾을 수 있는 창입니다. WebBrowser 컨트롤은 하이퍼링크와 URL(Uniform Resource Locator) 탐색을 지원하고 기록 목록을 유지 관리합니다.
 
-## <a name="using-the-chtmlview-class-in-an-mfc-application"></a>MFC 응용 프로그램에서 CHtmlView 클래스 사용
+## <a name="using-the-chtmlview-class-in-an-mfc-application"></a>MFC 애플리케이션에서 CHtmlView 클래스 사용
 
-표준 MFC 프레임워크 응용 프로그램(SDI 또는 MDI 기반)에서 뷰 개체는 일반적으로 특수한 클래스 집합에서 파생됩니다. 이러한 클래스는 모두 `CView`에서 파생되며, `CView`에서 제공하는 것 이상의 특수 기능을 제공합니다.
+표준 MFC 프레임워크 애플리케이션(SDI 또는 MDI 기반)에서 뷰 개체는 일반적으로 특수한 클래스 집합에서 파생됩니다. 이러한 클래스는 모두 `CView`에서 파생되며, `CView`에서 제공하는 것 이상의 특수 기능을 제공합니다.
 
-응용 프로그램의 뷰 클래스가 `CHtmlView` 를 기반으로 하는 경우 뷰에 WebBrowser 컨트롤이 제공됩니다. 이렇게 하면 실제로 응용 프로그램이 웹 브라우저가 됩니다. 웹 브라우저 스타일 응용 프로그램을 만드는 기본 방법은 MFC 응용 프로그램 마법사를 사용하고 `CHtmlView` 를 뷰 클래스로 지정하는 것입니다. MFC 응용 프로그램 내에서 WebBrowser 컨트롤을 구현 및 사용하는 방법에 대한 자세한 내용은 [웹 브라우저 스타일 응용 프로그램 만들기](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)를 참조하세요.
+애플리케이션의 뷰 클래스가 `CHtmlView` 를 기반으로 하는 경우 뷰에 WebBrowser 컨트롤이 제공됩니다. 이렇게 하면 실제로 애플리케이션이 웹 브라우저가 됩니다. 웹 브라우저 스타일 애플리케이션을 만드는 기본 방법은 MFC 애플리케이션 마법사를 사용하고 `CHtmlView` 를 뷰 클래스로 지정하는 것입니다. MFC 애플리케이션 내에서 WebBrowser 컨트롤을 구현 및 사용하는 방법에 대한 자세한 내용은 [웹 브라우저 스타일 애플리케이션 만들기](../../mfc/reference/creating-a-web-browser-style-mfc-application.md)를 참조하세요.
 
 > [!NOTE]
 >  WebBrowser ActiveX 컨트롤(및 따라서 `CHtmlView`)은 Internet Explorer 4.0 이상이 설치된 Windows NT 버전 4.0 이상에서 실행되는 프로그램에서만 사용할 수 있습니다.
 
-`CHtmlView` 는 웹(및/또는 HTML 문서)에 액세스하는 응용 프로그램용으로 작성되었습니다. 다음 `CHtmlView` 멤버 함수는 Internet Explorer 응용 프로그램에만 적용됩니다. 해당 함수는 WebBrowser 컨트롤에서 성공하지만 아무런 가시적 효과가 없습니다.
+`CHtmlView` 는 웹(및/또는 HTML 문서)에 액세스하는 응용 프로그램용으로 작성되었습니다. 다음 `CHtmlView` 멤버 함수는 Internet Explorer 애플리케이션에만 적용됩니다. 해당 함수는 WebBrowser 컨트롤에서 성공하지만 아무런 가시적 효과가 없습니다.
 
 - [GetAddressBar](#getaddressbar)
 
@@ -1171,7 +1171,7 @@ virtual void OnCommandStateChange(
 
 ### <a name="parameters"></a>매개 변수
 
-*된 명령*<br/>
+*nCommand*<br/>
 활성화 상태가 변경 된 명령 식별자입니다.
 
 *bEnable*<br/>
@@ -1648,7 +1648,7 @@ virtual HRESULT OnShowUI(
 *pFrame*<br/>
 [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) 개체의 인터페이스입니다. 이 메뉴 및 도구 모음에 필요 합니다.
 
-*입력*<br/>
+*pDoc*<br/>
 [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) 개체에 대 한 인터페이스입니다. 이 도구 모음에 대 한 필요 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1867,7 +1867,7 @@ void PutProperty(
 *lpszValue*<br/>
 속성의 새 값을 포함 하는 문자열에 대 한 포인터입니다.
 
-*n 값*<br/>
+*nValue*<br/>
 속성의 새 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -2231,10 +2231,9 @@ void Stop();
 
 Internet Explorer 및 WebBrowser에 적용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>
 [CFormView 클래스](../../mfc/reference/cformview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx)
-

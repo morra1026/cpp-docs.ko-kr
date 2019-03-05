@@ -25,12 +25,12 @@ helpviewer_keywords:
 - property pages, ATL
 - CSnapInPropertyPageImpl class
 ms.assetid: 75bdce5a-985e-4166-bd44-493132e023c4
-ms.openlocfilehash: ea79a5624937b27fe69be2c15bac3a0c40592252
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4e363f7de46de6f875a28a62d4ecdf929decdc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575749"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272176"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>CSnapInPropertyPageImpl 클래스
 
@@ -81,7 +81,7 @@ CSnapInPropertyPageImpl : public CDialogImplBase
 
 `CSnapInPropertyPageImpl` 스냅인 속성 페이지 개체에 대 한 기본 구현을 제공합니다. 스냅인 속성 페이지의 기본 기능 몇 가지 다른 인터페이스를 사용 하 여 구현 됩니다 및 형식을 매핑합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CDialogImplBase`
 
@@ -347,6 +347,6 @@ void SetModified(BOOL bChanged = TRUE);
 
 속성 시트를 계속 추적 페이지에 "더티" 즉, 속성 페이지를 호출한 `SetModified( TRUE )`합니다. 합니다 **Apply Now** 단추 호출 하는 경우에 항상 사용할 수 `SetModified( TRUE )` 페이지 중 하나에 대 한 합니다. 합니다 **Apply Now** 를 호출 하면 단추가 비활성화 됩니다 `SetModified( FALSE )` 단 하는 경우 다른 페이지 없음 ". 더티" 페이지 중 하나에 대 한
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

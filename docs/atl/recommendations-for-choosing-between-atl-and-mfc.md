@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, vs. MFC
 ms.assetid: 269325bb-11a8-4330-ad2b-a14a2458679e
-ms.openlocfilehash: b3c01a54c1250ae97d5377cb0b1ff49a17c3f7c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4e51f81bbdc54ff09980acfba22037df77abac9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468252"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259778"
 ---
 # <a name="recommendations-for-choosing-between-atl-and-mfc"></a>ATL 및 MFC 간의 선택에 대 한 권장 사항
 
@@ -28,7 +28,6 @@ MFC를 사용 하면 전체 응용 프로그램, ActiveX 컨트롤 및 액티브
 
 기존 MFC 프로젝트에서 ATL을 사용 하 여 마법사를 실행 하 여에 대 한 지원을 추가할 수 있습니다. 자세한 내용은 참조 하세요 [MFC 프로젝트에 ATL 지원 추가](../mfc/reference/adding-atl-support-to-your-mfc-project.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 소개](../atl/introduction-to-atl.md)
-

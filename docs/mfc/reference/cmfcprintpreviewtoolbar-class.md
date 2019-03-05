@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CMFCPrintPreviewToolBar class [MFC]
 - CMFCPrintPreviewToolBar class [MFC], destructor
 ms.assetid: 7b9f641b-d402-4339-8815-e5247237e7e5
-ms.openlocfilehash: 7da2fac76cda3c0e31c93d5cc12ed2c064947fd3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac1fba453a539c6c311e672c1b26e34a3bf81ffd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439353"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285323"
 ---
 # <a name="cmfcprintpreviewtoolbar-class"></a>CMFCPrintPreviewToolBar 클래스
 
@@ -38,7 +38,7 @@ class CMFCPrintPreviewToolBar : public CMFCToolBar
 |이름|설명|
 |`CMFCPrintPreviewToolBar::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -60,7 +60,7 @@ class CMFCPrintPreviewToolBar : public CMFCToolBar
 
 **헤더:** afxpreviewviewex.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

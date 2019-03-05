@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CDaoRecordView [MFC], OnGetRecordset
 - CDaoRecordView [MFC], OnMove
 ms.assetid: 5aa7d0e2-bd05-413e-b216-80c404ce18ac
-ms.openlocfilehash: db1636bebd0cc29124018b5fad2c0535079706d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f63aa8ed17619a9eef36e36bcc9243a3b973889a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541208"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277776"
 ---
 # <a name="cdaorecordview-class"></a>CDaoRecordView 클래스
 
@@ -69,7 +69,7 @@ class AFX_NOVTABLE CDaoRecordView : public CFormView
 
 선언 하 고 레코드 보기 및 레코드 집합 클래스를 사용 하는 방법에 대 한 자세한 내용은 문서의 "디자인 및 만들기는 레코드 보기"를 참조 하세요 [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다. 레코드 작업을 보는 방법 및 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다. 위에서 언급 한 모든 문서를 둘 다에 적용 `CRecordView` 고 `CDaoRecordView`입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -173,7 +173,7 @@ virtual CDaoRecordset* OnGetRecordset() = 0;
 
 생성 또는 레코드 집합 개체를 가져오고,에 대 한 포인터를 반환 하려면이 멤버 함수를 재정의 해야 합니다. 클래스 마법사를 사용 하 여 레코드 뷰 클래스를 선언 하는 경우 마법사는 기본 재정의를 작성 합니다. 클래스 마법사의 기본 구현은 있을 경우 레코드 뷰에 저장 된 레코드 포인터를 반환 합니다. ClassWizard 및 호출을 사용 하 여 지정 된 형식의 레코드 집합 개체를 생성 하지 하는 경우 해당 `Open` 멤버 함수를 테이블 열 또는 쿼리를 실행 하 고 다음 개체에 대 한 포인터를 반환 합니다.
 
-자세한 내용 및 예제에 대 한 문서를 참조 [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
+자세한 내용 및 예제에 대 한 문서를 참조 하세요. [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
 
 ##  <a name="onmove"></a>  CDaoRecordView::OnMove
 
@@ -213,7 +213,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 > [!CAUTION]
 >  호출 `OnMove` 레코드 집합에 레코드가 없는 경우 예외를 throw 합니다. 적절 한 사용자 인터페이스 업데이트 처리기 함수를 호출 합니다.- `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, 또는 `OnUpdateRecordPrev` -해당 전에 레코드 집합에 레코드가 있는지 확인 하는 작업을 이동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFormView 클래스](../../mfc/reference/cformview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

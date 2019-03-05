@@ -11,18 +11,18 @@ helpviewer_keywords:
 - Windows Clipboard [MFC]
 - Clipboard [MFC], Windows Clipboard API
 ms.assetid: 24415b42-9301-4a70-b69a-44c97918319f
-ms.openlocfilehash: 67bc337af2cf55a4f39698f730ce14a3369ef742
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49111e4efd2a12264d61030fe038d80b974514c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460699"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264796"
 ---
 # <a name="clipboard-using-the-windows-clipboard"></a>클립보드: Windows 클립보드 사용
 
 이 항목에는 MFC 응용 프로그램 내에서 표준 Windows 클립보드 API를 사용 하는 방법을 설명 합니다.
 
-Windows에 대 한 대부분의 응용 프로그램에 잘라내기 또는 Windows 클립보드에 데이터를 복사 및 붙여넣기 클립보드의에서 데이터를 지원 합니다. 응용 프로그램 간에 클립보드 데이터 형식 달라 집니다. 프레임 워크 클래스 수가 제한에 대 한 제한 된 수의 클립보드 형식 지원합니다. 일반적으로 클립보드에 관련 된 명령 구현-잘라내기, 복사 및 붙여넣기-보기에 대 한 편집 메뉴. 이러한 명령에 대 한 명령 Id를 정의 하는 클래스 라이브러리: **ID_EDIT_CUT**를 **ID_EDIT_COPY**, 및 **ID_EDIT_PASTE**합니다. 해당 메시지 줄 프롬프트도 정의 합니다.
+Windows에 대 한 대부분의 응용 프로그램에 잘라내기 또는 Windows 클립보드에 데이터를 복사 및 붙여넣기 클립보드의에서 데이터를 지원 합니다. 응용 프로그램 간에 클립보드 데이터 형식 달라 집니다. 프레임 워크 클래스 수가 제한에 대 한 제한 된 수의 클립보드 형식 지원합니다. 일반적으로 클립보드에 관련 된 명령 구현-잘라내기, 복사 및 붙여넣기-보기에 대 한 편집 메뉴. 클래스 라이브러리는 이러한 명령에 대 한 명령 Id를 정의 합니다. **ID_EDIT_CUT**, **ID_EDIT_COPY**, and **ID_EDIT_PASTE**. 해당 메시지 줄 프롬프트도 정의 합니다.
 
 [프레임 워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md) 메뉴 명령 처리기 함수를 매핑하여 응용 프로그램에서 메뉴 명령을 처리 하는 방법에 설명 합니다. 응용 프로그램 편집 메뉴에서 클립보드 명령에 대 한 처리기 함수를 정의 하지 않습니다,으로 계속 사용 안 함. 잘라내기 및 복사 명령에 대 한 처리기 함수를 작성 하려면 응용 프로그램에서 선택 영역을 구현 합니다. Paste 명령에 대 한 처리기 함수를 작성 하려면 쿼리 클립보드 응용 프로그램에 응하기 서식의 데이터가 포함 되어 있는지 여부를 확인 합니다. 예를 들어 복사 명령을 사용 하려면 작성할 수 있습니다 처리기를 다음과 같이 합니다.
 
@@ -34,13 +34,12 @@ Microsoft Foundation Class 라이브러리는 텍스트를 사용한 편집에 �
 
 실행 취소 같은 메뉴 명령을 편집 다른 구현 (**ID_EDIT_UNDO**) 다시 실행 하 고 (**ID_EDIT_REDO**)에 그대로 있습니다. 응용 프로그램에 이러한 명령을 지원 하지 않습니다, 경우 쉽게 삭제할 수 있습니다 하에서 Visual c + + 리소스 편집기를 사용 하 여 리소스 파일입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [데이터 복사 및 붙여넣기](../mfc/clipboard-copying-and-pasting-data.md)
 
 - [OLE 클립보드 메커니즘 사용](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클립보드](../mfc/clipboard.md)
-

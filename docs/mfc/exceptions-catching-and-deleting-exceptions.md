@@ -1,5 +1,5 @@
 ---
-title: '예외: 예외 Catch 및 삭제'
+title: '예외: 예외 catch 및 삭제'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - exceptions [MFC], deleting
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - catch blocks [MFC], catching and deleting exceptions
 - execution [MFC], returns from within catch block
 ms.assetid: 7c233ff0-89de-4de0-a68a-9e9cdb164311
-ms.openlocfilehash: 370062d3e17127e711f2b4356cbb133a6c1d20b9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 511850c3c17a4eb70529202f4b0c2b36132fc8ff
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625912"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287206"
 ---
-# <a name="exceptions-catching-and-deleting-exceptions"></a>예외: 예외 Catch 및 삭제
+# <a name="exceptions-catching-and-deleting-exceptions"></a>예외: 예외 catch 및 삭제
 
 다음 지침 및 예제를 catch 하 고 예외를 삭제 하는 방법을 보여 줍니다. 대 한 자세한 내용은 합니다 **시도**, **catch**, 및 **throw** 키워드를 참조 하십시오 [c + + 예외 처리](../cpp/cpp-exception-handling.md).
 
@@ -49,9 +49,8 @@ ms.locfileid: "50625912"
 
    [!code-cpp[NVC_MFCExceptions#5](../mfc/codesnippet/cpp/exceptions-catching-and-deleting-exceptions_3.cpp)]
 
-자세한 내용은 [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)합니다.
+자세한 내용은 참조 하세요. [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)
-

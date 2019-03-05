@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CContextMenuManager [MFC], ShowPopupMenu
 - CContextMenuManager [MFC], TrackPopupMenu
 ms.assetid: 1de20640-243c-47e1-85de-1baa4153bc83
-ms.openlocfilehash: 49e9b1cd12bee562daaf4ffb40492c80d8549ec3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 594b78fd36dcb1ff92c63867688c38eac7520eba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639340"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304337"
 ---
 # <a name="ccontextmenumanager-class"></a>CContextMenuManager 클래스
 
@@ -85,7 +85,7 @@ class CContextMenuManager : public CObject
 
 [!code-cpp[NVC_MFC_CustomPages#4](../../mfc/reference/codesnippet/cpp/ccontextmenumanager-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -372,7 +372,7 @@ virtual UINT TrackPopupMenu(
 
 이 메서드는 바로 가기 메뉴를 표시할 모달 호출으로 작동 합니다. 사용자 또는 바로 가기 메뉴를 닫습니다가 명령을 선택할 때까지 응용 프로그램 코드에서 다음 줄으로 계속 되지 않습니다. 바로 가기 메뉴를 표시 하는 데 사용할 수 있는 대체 방법은 것 [CContextMenuManager::ShowPopupMenu](#showpopupmenu)합니다. 해당 메서드에 모달 호출 아니며 선택한 명령 ID를 반환 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

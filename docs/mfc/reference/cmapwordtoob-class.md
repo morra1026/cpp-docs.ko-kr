@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 9c9bcd76-456f-4cf9-b03c-dd28b49d5e4f
-ms.openlocfilehash: c449fd6e2d2dc1b8d912724d9888b432a2809427
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 42c41407b86705e46d43113326d15f1ef3271d1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657307"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300703"
 ---
 # <a name="cmapwordtoob-class"></a>CMapWordToOb 클래스
 
@@ -55,7 +55,7 @@ class CMapWordToOb : public CObject
 
 멤버 함수 `CMapWordToOb` 클래스의 멤버 함수와 비슷합니다 [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md)합니다. 이처럼 두 함수가 비슷하므로 `CMapStringToOb` 참조 설명서에서 멤버 함수 관련 사항을 확인할 수 있습니다. 표시 될 때마다를 `CString` 또는 **const** 에 대 한 포인터 **char** 함수 매개 변수 또는 반환 값의 경우 단어를 대체 합니다.
 
-`BOOL CMapStringToOb::Lookup( const char* <key>,` CObject* & <rValue> ) const;'
+`BOOL CMapStringToOb::Lookup( const char* <key>,` CObject*& <rValue> ) const;`
 
 예를 들어 위의 코드는
 
@@ -101,7 +101,7 @@ class CMapWordToOb : public CObject
 
 에 대 한 자세한 `CMapWordToOb`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -111,8 +111,7 @@ class CMapWordToOb : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

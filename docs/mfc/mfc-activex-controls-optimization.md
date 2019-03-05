@@ -14,12 +14,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], active/inactive state
 - optimizing performance, ActiveX controls
 ms.assetid: 8b11f26a-190d-469b-b594-5336094a0109
-ms.openlocfilehash: cc4d210abe0bca5ba8d3a442796173111f45f6e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08cbb5ab0ff9b8c165e549bc2b250daebc1ce177
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588567"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288627"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX 컨트롤: 최적화
 
@@ -42,7 +42,7 @@ Windows가 OLE 개체에 대 한 두 가지 주요 단점이: 개체에서 활�
 |-------------------------------------------------------|------------|----------------------|
 |**표시 되었을 때 활성화** 확인란|지우기|[해제를 활성화 하는 경우 표시 옵션](../mfc/turning-off-the-activate-when-visible-option.md)|
 |**창 없는 활성화** 확인란|선택|[창 없는 활성화 제공](../mfc/providing-windowless-activation.md)|
-|**잘리지 않는 장치 컨텍스트** 확인란|선택|[잘리지 않는 장치 컨텍스트 사용](../mfc/using-an-unclipped-device-context.md)|
+|**잘리지 않는 장치 컨텍스트** 확인란|선택|[잘리지 않는 디바이스 컨텍스트 사용](../mfc/using-an-unclipped-device-context.md)|
 |**깜빡임 없는 활성화** 확인란|선택|[깜빡임 없는 활성화 제공](../mfc/providing-flicker-free-activation.md)|
 |**마우스 포인터 알림 비활성 상태일 때** 확인란|선택|[비활성 상태 중 마우스 상호 작용 제공](../mfc/providing-mouse-interaction-while-inactive.md)|
 |**그리기 코드 최적화** 확인란|선택|[컨트롤 그리기 최적화](../mfc/optimizing-control-drawing.md)|
@@ -61,11 +61,10 @@ Windows가 OLE 개체에 대 한 두 가지 주요 단점이: 개체에서 활�
 
 - [깜빡임 없는 활성화 제공](../mfc/providing-flicker-free-activation.md)
 
-- [잘리지 않는 장치 컨텍스트 사용](../mfc/using-an-unclipped-device-context.md)
+- [잘리지 않는 디바이스 컨텍스트 사용](../mfc/using-an-unclipped-device-context.md)
 
 - [컨트롤 그리기 최적화](../mfc/optimizing-control-drawing.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

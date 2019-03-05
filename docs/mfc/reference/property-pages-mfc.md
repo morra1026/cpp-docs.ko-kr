@@ -7,12 +7,12 @@ helpviewer_keywords:
 - property page data transfer functions in MFC
 - property pages [MFC], global MFC functions
 ms.assetid: 734f88bc-c776-4136-9b0e-f45c761a45c1
-ms.openlocfilehash: 4f8e56ed4be6bf4c7a5283894493ee46c4ed2ff4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2f75044c7cfbc1f9d2af1d9bda5c108f9afa881
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620911"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269216"
 ---
 # <a name="property-pages-mfc"></a>속성 페이지(MFC)
 
@@ -35,7 +35,7 @@ ms.locfileid: "50620911"
 |[DDP_Radio](#ddp_radio)|컨트롤의 속성을 사용 하 여 컨트롤의 속성 페이지에서 라디오 단추 그룹을 연결 합니다.|
 |[DDP_Text](#ddp_text)|컨트롤의 속성을 사용 하 여 컨트롤의 속성 페이지에서 컨트롤을 연결합니다. 이 함수는 여러 가지 속성을 같은 처리 **이중**를 **짧은**, BSTR, 및 **긴**합니다.|
 
-에 대 한 자세한 내용은 합니다 `DoDataExchange` 함수 및 속성 페이지, 문서를 참조 하세요 [ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
+에 대 한 자세한 내용은 합니다 `DoDataExchange` 함수 및 속성 페이지, 문서를 참조 [ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
 
 다음은 만들고 OLE 컨트롤에 대 한 속성 페이지를 관리 하는 데 사용 되는 매크로 목록입니다.
 
@@ -300,7 +300,7 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 
 ### <a name="remarks"></a>설명
 
-모든 데이터 교환 함수 완료 된 후이 함수를 호출 해야 합니다. 예를 들어:
+모든 데이터 교환 함수 완료 된 후이 함수를 호출 해야 합니다. 예를 들면,
 
 [!code-cpp[NVC_MFCAxCtl#15](../../mfc/reference/codesnippet/cpp/property-pages-mfc_1.cpp)]
 
@@ -438,7 +438,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 
 클래스의 멤버 함수를 정의 하는 구현 (.cpp) 파일에서 시작 속성 페이지 목록 BEGIN_PROPPAGEIDS 매크로 사용 하 여 다음 속성 페이지에서 각각에 대해 매크로 항목을 추가 및 완료를 END_PROPPAGEIDS 사용 하 여 속성 페이지 목록 매크로입니다.
 
-속성 페이지에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
+속성 페이지에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
 
 ### <a name="requirements"></a>요구 사항
 
@@ -482,6 +482,6 @@ PROPPAGEID(clsid)
 
   **헤더** afxctl.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

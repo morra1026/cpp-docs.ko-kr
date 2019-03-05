@@ -5,12 +5,12 @@ helpviewer_keywords:
 - encoding
 - encoding, functions
 ms.assetid: 82d4fdf3-3c4a-4fe2-b297-8ffb4714406f
-ms.openlocfilehash: f23c6ee3354521d0edbd2772f9a2fdf3ec6a184c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fe0506980c22ad9a64bf69f6877b041b957a1a4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492718"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295723"
 ---
 # <a name="atl-encoding-reference"></a>ATL 인코딩 참조
 
@@ -42,8 +42,7 @@ ms.locfileid: "50492718"
 |[UUEncode](reference/atl-text-encoding-functions.md#uuencode)|일부 데이터를 uuencode하려면 이 함수를 호출합니다.|
 |[UUEncodeGetRequiredLength](reference/atl-text-encoding-functions.md#uuencodegetrequiredlength)|지정된 크기의 데이터에서 디코딩된 문자열을 포함할 수 있는 버퍼를 문자 크기로 가져오려면 이 함수를 호출합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM 데스크톱 구성 요소](../atl/atl-com-desktop-components.md)
-

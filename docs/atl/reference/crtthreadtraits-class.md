@@ -10,12 +10,12 @@ helpviewer_keywords:
 - threading [ATL], creation functions
 - threading [ATL], CRT threads
 ms.assetid: eb6e20b0-c2aa-4170-8e34-aaeeacc86343
-ms.openlocfilehash: 1e54b4db2605c3006697d0a26d34066de666f0fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5e13bad907e76968c4d4343e6617903e309e40f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641950"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282606"
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits 클래스
 
@@ -98,6 +98,6 @@ static HANDLE CreateThread(
 
 이 함수 호출 [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) 스레드를 만들려고 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

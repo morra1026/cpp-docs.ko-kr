@@ -15,12 +15,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - splitter windows [MFC], and frame windows
 ms.assetid: 40677339-8135-4f5e-aba6-3fced3078077
-ms.openlocfilehash: 76c2f303713644c5f78f20d2ea868bd67b9eae71
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 939230753f25db38e6ba2f26340f40ddf74d23bf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175377"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271140"
 ---
 # <a name="frame-windows"></a>프레임 창
 
@@ -37,7 +37,7 @@ MFC 프레임 워크는 프레임 창을 사용 하 여 보기가 포함 되어 
 
 다른 일반적인 정렬은 프레임 창을 여러 뷰를 사용 하 여 일반적으로 프레임을 [분할기 창](../mfc/multiple-document-types-views-and-frame-windows.md)합니다. 분할기 창에서 프레임 창의 클라이언트 영역 있으며 뷰가 창 이라고 하는 여러 자식 창에서 분할자 창에서 사용 중입니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 **프레임 창의 일반 항목**
 
@@ -83,7 +83,6 @@ MFC 프레임 워크는 프레임 창을 사용 하 여 보기가 포함 되어 
 
 - [컨트롤](../mfc/controls-mfc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Windows](../mfc/windows.md)
-

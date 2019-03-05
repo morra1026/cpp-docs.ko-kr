@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-ms.openlocfilehash: 3752e8b58560e522aecc3689e2a5c3be2649b1e1
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 2e4a9b585ed653927c87eaf82dfae8ce8f982dfc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694168"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290705"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 
@@ -42,7 +42,8 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 #### <a name="parameters"></a>매개 변수
 
 *T*<br/>
-`CWindowImpl`에서 파생된 새 클래스입니다.
+
+  `CWindowImpl`에서 파생된 새 클래스입니다.
 
 *TBase*<br/>
 클래스의 기본 클래스입니다. 기본 클래스는 기본적으로 [CWindow](../../atl/reference/cwindow-class.md)합니다.
@@ -86,14 +87,17 @@ A [traits 클래스](../../atl/understanding-window-traits.md) 창 스타일을 
 
 사용할 수 있습니다 `CWindowImpl` 창 또는 서브 클래스는 기존 창을 만들 수 있습니다. `CWindowImpl` 창 프로시저를 해당 처리기로 메시지를 보내는 메시지 맵을 사용 합니다.
 
-`CWindowImpl::Create` 관리 되는 창 클래스 정보를 기반으로 창을 만듭니다 [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)합니다. `CWindowImpl` 포함 된 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) 의미 하는 매크로 `CWndClassInfo` 새 창 클래스 등록 합니다. 슈퍼 기존 창 클래스를 파생 클래스에서 `CWindowImpl` 포함 된 [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) 매크로입니다. 이 경우 `CWndClassInfo`는 기존 클래스를 기반으로 하는 창 클래스 등록하지만 `CWindowImpl::WindowProc`를 사용합니다. 예를 들어:
+`CWindowImpl::Create` 관리 되는 창 클래스 정보를 기반으로 창을 만듭니다 [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)합니다. `CWindowImpl` 포함 된 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) 의미 하는 매크로 `CWndClassInfo` 새 창 클래스 등록 합니다. 슈퍼 기존 창 클래스를 파생 클래스에서 `CWindowImpl` 포함 된 [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) 매크로입니다. 이 경우 `CWndClassInfo`는 기존 클래스를 기반으로 하는 창 클래스 등록하지만 `CWindowImpl::WindowProc`를 사용합니다. 예를 들면,
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]
 
 > [!NOTE]
->  `CWndClassInfo`는 한 윈도우 클래스의 정보만 관리하기 때문에, `CWindowImpl`의 인스턴스를 통해 생성된 각 창은 동일한 창 클래스를 기반으로 합니다.
+>  
+  `CWndClassInfo`는 한 윈도우 클래스의 정보만 관리하기 때문에, `CWindowImpl`의 인스턴스를 통해 생성된 각 창은 동일한 창 클래스를 기반으로 합니다.
 
-`CWindowImpl`은 또한 창 서브클래싱도 지원합니다. `SubclassWindow` 메서드는 기존 창을 `CWindowImpl` 개체에 연결하고 창 프로시저를 `CWindowImpl::WindowProc`로 변경합니다. `CWindowImpl`의 각 인스턴스는 다른 창을 서브클래싱할 수 있습니다.
+`CWindowImpl`은 또한 창 서브클래싱도 지원합니다. 
+  `SubclassWindow` 메서드는 기존 창을 `CWindowImpl` 개체에 연결하고 창 프로시저를 `CWindowImpl::WindowProc`로 변경합니다. 
+  `CWindowImpl`의 각 인스턴스는 다른 창을 서브클래싱할 수 있습니다.
 
 > [!NOTE]
 >  지정 된 모든 `CWindowImpl` 개체 중 하나를 호출 `Create` 또는 `SubclassWindow`합니다. 동일한 개체에서 두 메서드를 모두 호출하지는 마십시오.
@@ -104,13 +108,13 @@ A [traits 클래스](../../atl/understanding-window-traits.md) 창 스타일을 
 
 `CWindowImpl` 파생 `CWindowImplBaseT`에서 파생 되는 `CWindowImplRoot`에서 파생 되는 `TBase` 하 고 [CMessageMap](../../atl/reference/cmessagemap-class.md)합니다.
 
-|추가 정보|보기|
+|추가 정보|참조|
 |--------------------------------|---------|
 |컨트롤 만들기|[ATL 자습서](../../atl/active-template-library-atl-tutorial.md)|
 |ATL에서 창 사용하기|[ATL 창 클래스](../../atl/atl-window-classes.md)|
 |ATL 프로젝트 마법사|[ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CMessageMap](../../atl/reference/cmessagemap-class.md)
 
@@ -375,7 +379,7 @@ static LRESULT CALLBACK WindowProc(
 
 재정의할 수 있습니다 `WindowProc` 메시지를 처리 하기 위한 다른 메커니즘을 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
 [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>

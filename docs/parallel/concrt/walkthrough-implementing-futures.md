@@ -1,18 +1,18 @@
 ---
-title: '연습: 미래 구현'
+title: '연습: Future 구현'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - implementing futures [Concurrency Runtime]
 - futures, implementing [Concurrency Runtime]
 ms.assetid: 82ea75cc-aaec-4452-b10d-8abce0a87e5b
-ms.openlocfilehash: 4c43719199ef4009433ec65d54fcc238d82ac305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7164919d649751ac11fefa5be3cb2e5b7798ee4f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525661"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262131"
 ---
-# <a name="walkthrough-implementing-futures"></a>연습: 미래 구현
+# <a name="walkthrough-implementing-futures"></a>연습: Future 구현
 
 이 항목에서는 응용 프로그램에 future를 구현 하는 방법을 보여 줍니다. 항목에는 기존 기능으로 결합 하는 동시성 런타임에서 항목 많은 기능을 수행 하는 방법을 보여 줍니다.
 
@@ -85,11 +85,11 @@ caught exception: error
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `futures.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `futures.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc futures.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임 연습](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>

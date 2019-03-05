@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC, windows
 - window objects [MFC], MFC Framework
 ms.assetid: dd92bf34-842e-40fe-8aea-3028b55314d5
-ms.openlocfilehash: 8d8ffccffdf5bb27497e9bc3831f26d33ec8454f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee5e6fef58b9ddfa2172b9024d414bdb03e93283
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547305"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326662"
 ---
 # <a name="windows"></a>Windows
 
@@ -22,7 +22,7 @@ ms.locfileid: "50547305"
 
 문서의 두 번째 그룹 설명 [프레임 창](../mfc/frame-windows.md)-콘텐츠에 대 한 프레임을 둔 windows-특히. 이 그룹에 대 한 MFC 프레임 워크의 프레임 창 및 컨트롤 막대 및 뷰를 포함 하 여 프레임의 내용을 관리 하는 방법에 대 한 정보를 참조 하십시오.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 *일반적으로 창 개체에 대 한 항목*
 
@@ -104,11 +104,10 @@ ms.locfileid: "50547305"
 
 - [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [도구 모음](../mfc/toolbars.md)<br/>
 [상태 표시줄](../mfc/status-bars.md)<br/>
 [대화 상자 모음](../mfc/dialog-bars.md)
-

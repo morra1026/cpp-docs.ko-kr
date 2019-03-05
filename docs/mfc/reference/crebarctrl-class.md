@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: 072fcec4944088ab087a6a39c7d8b916c3bc80e2
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: f1e9c6e4505c67b881d479817ec8b45e4ae5dc8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177032"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304558"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl 클래스
 
@@ -205,7 +205,7 @@ Rebar 컨트롤 지원:
 
 자세한 내용은 [를 사용 하 여 CReBarCtrl](../../mfc/using-crebarctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -388,7 +388,7 @@ void GetBandBorders(
 *uBand*<br/>
 테두리를 검색 하는 대역 외의 0부터 시작 인덱스입니다.
 
-*중국*<br/>
+*prc*<br/>
 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 대역 외 테두리 받을 구조입니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에이 구조의 각 멤버의 픽셀 대역 외에서의 해당 쪽에 테두리를 구성 하는 수를 받게 됩니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에 없는 경우이 구조체의 왼쪽된 멤버에만 유효한 정보를 받습니다. Rebar 컨트롤 스타일에 대 한 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
 
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount
@@ -493,7 +493,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpc*<br/>
+*lpcs*<br/>
 에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) Windows SDK에 설명 된 대로 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -583,7 +583,7 @@ BOOL GetRect(
 *uBand*<br/>
 Rebar 컨트롤에서 밴드의 0부터 시작 인덱스입니다.
 
-*중국*<br/>
+*prc*<br/>
 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조는 rebar 밴드의 경계를 받게 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -937,7 +937,7 @@ void SetColorScheme(const COLORSCHEME* lpcs);
 
 ### <a name="parameters"></a>매개 변수
 
-*lpc*<br/>
+*lpcs*<br/>
 에 대 한 포인터를 [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) Windows SDK에 설명 된 대로 구조체입니다.
 
 ### <a name="remarks"></a>설명
@@ -958,7 +958,7 @@ DWORD SetExtendedStyle(
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*dwMask*|[in] 에 플래그를 지정 하는 플래그의 비트 조합 (OR)는 *dwStyleEx* 매개 변수가 적용 됩니다. 다음 값 중 하나 이상을 사용 합니다.<br /><br /> RBS_EX_SPLITTER: 기본적으로 표시 분할자 아래에 가로 모드에서 및 오른쪽에 세로 모드에서.<br /><br /> RBS_EX_TRANSPARENT: 전달 된 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 부모 창에는 메시지입니다.|
+|*dwMask*|[in] 에 플래그를 지정 하는 플래그의 비트 조합 (OR)는 *dwStyleEx* 매개 변수가 적용 됩니다. 다음 값 중 하나 이상을 사용 합니다.<br /><br /> RBS_EX_SPLITTER: 기본적으로 표시 분할자 아래에 가로 모드에서 및 오른쪽에 세로 모드에서.<br /><br /> RBS_EX_TRANSPARENT: 앞으로 [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) 부모 창에는 메시지입니다.|
 |*dwStyleEx*|[in] 적용할 스타일을 지정 하는 플래그의 비트 조합 (OR)입니다. 스타일을 설정 하려면에서 사용 되는 동일한 플래그를 지정 합니다 *dwMask* 매개 변수입니다. 스타일을 재설정 하려면 이진 0을 지정 합니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -1133,8 +1133,7 @@ BOOL SizeToRect(CRect& rect);
 
 이 멤버 함수를 사용 하는 참고를 `CRect` 개체를 매개 변수로 대신 `RECT` 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

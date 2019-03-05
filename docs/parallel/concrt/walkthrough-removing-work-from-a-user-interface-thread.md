@@ -5,12 +5,12 @@ helpviewer_keywords:
 - user-interface threads, removing work from [Concurrency Runtime]
 - removing work from user-interface threads [Concurrency Runtime]
 ms.assetid: a4a65cc2-b3bc-4216-8fa8-90529491de02
-ms.openlocfilehash: 1230cf2b3fa510aeca8516e41cf30f9665987d05
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 1838ad0d6adb146adacb8b3a395f44f76e2a8d3f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176317"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304719"
 ---
 # <a name="walkthrough-removing-work-from-a-user-interface-thread"></a>연습: 사용자 인터페이스 스레드에서 작업 제거
 
@@ -222,7 +222,7 @@ Mandelbrot 응용 프로그램을 만듭니다 `Bitmap` 클라이언트 창의 �
 
 [[맨 위로 이동](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임 연습](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

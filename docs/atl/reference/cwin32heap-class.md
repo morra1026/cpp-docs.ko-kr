@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWin32Heap class
 ms.assetid: 69176022-ed98-4e3b-96d8-116b0c58ac95
-ms.openlocfilehash: 8ab0d7b8a0eda44adc900884ef5337b22e621806
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35c12a58adc846e0db6d7ee23f19984acbcfa861
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297257"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap 클래스
 
@@ -43,7 +43,7 @@ class CWin32Heap : public IAtlMemMgr
 |이름|설명|
 |----------|-----------------|
 |[CWin32Heap::CWin32Heap](#cwin32heap)|생성자입니다.|
-|[CWin32Heap:: ~ CWin32Heap](#dtor)|소멸자입니다.|
+|[CWin32Heap::~CWin32Heap](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -71,7 +71,7 @@ class CWin32Heap : public IAtlMemMgr
 
 예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlMemMgr`
 
@@ -157,7 +157,8 @@ CWin32Heap(
 
 [!code-cpp[NVC_ATL_Utilities#92](../../atl/codesnippet/cpp/cwin32heap-class_1.cpp)]
 
-또한 새 개체가 힙의 소유권을 계승하지 않는 경우 생성자에게 기존 힙 핸들을 제공할 수 있습니다. `CWin32Heap` 개체를 삭제해도 원래 힙 핸들은 계속해서 유효합니다.
+또한 새 개체가 힙의 소유권을 계승하지 않는 경우 생성자에게 기존 힙 핸들을 제공할 수 있습니다. 
+  `CWin32Heap` 개체를 삭제해도 원래 힙 핸들은 계속해서 유효합니다.
 
 기존 힙을 새 연결할 수 있습니다 개체를 사용 하 여 [CWin32Heap::Attach](#attach)합니다.
 
@@ -169,7 +170,7 @@ CWin32Heap(
 
 세 번째 매개 변수의 기본값이 0으로 지정되어, 필요에 따라 힙을 증가시킬 수 있습니다. 참조 [HeapCreate](/windows/desktop/api/heapapi/nf-heapapi-heapcreate) 메모리 크기 및 플래그에 대 한 설명은 합니다.
 
-##  <a name="dtor"></a>  CWin32Heap:: ~ CWin32Heap
+##  <a name="dtor"></a>  CWin32Heap::~CWin32Heap
 
 소멸자입니다.
 
@@ -267,7 +268,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 하는 경우 *p* 가 null 인 경우 메모리 블록이 아직 할당 되지 않은 것으로 가정 하 고 [CWin32Heap::Allocate](#allocate) 의 인수와 함께 호출 됩니다 *nBytes*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [IAtlMemMgr 클래스](../../atl/reference/iatlmemmgr-class.md)<br/>

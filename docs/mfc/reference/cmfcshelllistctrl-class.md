@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCShellListCtrl [MFC], Refresh
 - CMFCShellListCtrl [MFC], SetItemTypes
 ms.assetid: ad472958-5586-4c50-aadf-1844c30bf6e7
-ms.openlocfilehash: 4aa6da49f7d8235e0358f4fd042d3c720521eb0f
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: a08cfff3996d3dce617cf80293a96675083a39d1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694207"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302548"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl 클래스
 
@@ -98,7 +98,7 @@ A [CMFCShellTreeCtrl](../../mfc/reference/cmfcshelltreectrl-class.md) 개체와 
 [!code-cpp[NVC_MFC_Explorer#2](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_2.cpp)]
 [!code-cpp[NVC_MFC_Explorer#3](../../mfc/reference/codesnippet/cpp/cmfcshelllistctrl-class_3.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -177,7 +177,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -198,7 +198,7 @@ BOOL GetCurrentFolderName(CString& strName) const;
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -252,7 +252,7 @@ BOOL GetItemPath(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 FALSE이 고, 그렇지 합니다.
+성공하면 TRUE이고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -288,7 +288,7 @@ BOOL IsDesktop() const;
 
 ##  <a name="oncompareitems"></a>  CMFCShellListCtrl::OnCompareItems
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual int OnCompareItems(
@@ -456,7 +456,7 @@ void SetItemTypes(SHCONTF nTypes);
 
 항목 형식 목록에 대 한 자세한 내용은 참조 [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

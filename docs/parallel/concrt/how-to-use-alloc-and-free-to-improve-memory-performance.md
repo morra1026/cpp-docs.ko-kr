@@ -1,18 +1,18 @@
-﻿---
-title: '방법: Alloc 및 Free를 사용하여 메모리 성능 개선'
+---
+title: '방법: 할당을 사용 하 여 메모리 성능 향상을 위해 무료'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Alloc and Free, using [Concurrency Runtime]
 - Using Alloc and Free [Concurrency Runtime]
 ms.assetid: e1fab9e8-a97d-4104-bead-e95958db79f9
-ms.openlocfilehash: d91734859cd7d3499979566f427c10a0f026941b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f55bf360ac2b4c7162c1ed2b917ac6ce8c7cd11f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467823"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296126"
 ---
-# <a name="how-to-use-alloc-and-free-to-improve-memory-performance"></a>방법: Alloc 및 Free를 사용하여 메모리 성능 개선
+# <a name="how-to-use-alloc-and-free-to-improve-memory-performance"></a>방법: 할당을 사용 하 여 메모리 성능 향상을 위해 무료
 
 이 문서에서는 [concurrency::alloc](reference/concurrency-namespace-functions.md#alloc) 및 [concurrency::free](reference/concurrency-namespace-functions.md#free) 함수를 사용하여 메모리 성능을 향상시키는 방법을 보여 줍니다. 여기에서는 각각 `new` 및 `delete` 연산자를 지정하는 세 가지 다른 형식에 대해 병렬로 배열 요소의 순서를 바꾸는 데 필요한 시간을 비교합니다.
 
@@ -50,7 +50,7 @@ Took 1672 ms with malloc/free.
 Took 656 ms with Alloc/Free.
 ```
 
-'Alloc' 및 'Free' 함수는 여러 스레드에서 메모리 블록을 자주 할당하고 해제하기 위해 최적화되어 있으므로 이 예제에서는 Alloc 및 Free 함수를 사용하는 형식의 메모리 성능이 가장 좋습니다.
+`Alloc` 및 `Free` 함수는 여러 스레드에서 메모리 블록을 자주 할당하고 해제하기 위해 최적화되어 있으므로 이 예제에서는 `Alloc` 및 `Free` 함수를 사용하는 형식의 메모리 성능이 가장 좋습니다.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
@@ -58,9 +58,8 @@ Took 656 ms with Alloc/Free.
 
 **cl.exe /EHsc allocators.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메모리 관리 함수](../../parallel/concrt/memory-management-functions.md)<br/>
 [Alloc 함수](reference/concurrency-namespace-functions.md#alloc)<br/>
 [Free 함수](reference/concurrency-namespace-functions.md#free)
-

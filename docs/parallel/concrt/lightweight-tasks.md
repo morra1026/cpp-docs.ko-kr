@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - lightweight tasks
 ms.assetid: b6dcfc7a-9fa9-4144-96a6-2845ea272017
-ms.openlocfilehash: 7e155b82e963e7bf3f19fa44c66e4c22b8c602e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19918cf73c2b5b03db895c4751b22b1666ce01de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481434"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326688"
 ---
 # <a name="lightweight-tasks"></a>간단한 작업
 
@@ -26,10 +26,9 @@ ms.locfileid: "50481434"
 
 ## <a name="example"></a>예제
 
-간단한 작업을 사용 하도록 기존 코드를 조정 하는 방법을 보여 주는 예제를 참조 하세요 [연습: 간단한 작업을 사용 하도록 기존 코드 조정](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)합니다.
+간단한 작업을 사용 하도록 기존 코드를 조정 하는 방법을 보여 주는 예제를 참조 하세요. [연습: 간단한 작업을 사용 하도록 기존 코드 조정](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [연습: 간단한 작업을 사용하기 위해 기존 코드 조정](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md)
-

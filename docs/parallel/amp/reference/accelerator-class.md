@@ -40,12 +40,12 @@ f1_keywords:
 helpviewer_keywords:
 - accelerator class
 ms.assetid: 37eed593-cf87-4611-9cdc-e98df6c2377a
-ms.openlocfilehash: 2045d2d1c6a848378ac55114b61177d386b14fab
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 31008b398d17ac0c226f9359745067c4fefc08a9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523925"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326628"
 ---
 # <a name="accelerator-class"></a>accelerator 클래스
 
@@ -117,7 +117,7 @@ class accelerator;
 |[supports_limited_double_precision](#supports_limited_double_precision)|액셀러레이터 키 이중 정밀도 수치에 대 한 지원이 제한적 여부를 나타냅니다.|
 |[version](#version)|버전을 가져옵니다는 `accelerator`합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `accelerator`
 
@@ -133,7 +133,7 @@ class accelerator;
 
 **네임스페이스:** 동시성
 
-##  <a name="dtor"></a> </a> ~ accelerator
+##  <a name="dtor"></a> </a> ~accelerator
 
 제거 된 `accelerator` 개체입니다.
 
@@ -220,7 +220,7 @@ __declspec(property(get= get_default_cpu_access_type)) access_type default_cpu_a
 __declspec(property(get= get_default_view)) accelerator_view default_view;
 ```
 
-##  <a name="description"></a> 설명
+##  <a name="description"></a> description
 
 대 한 간단한 설명을 가져옵니다는 `accelerator` 장치입니다.
 
@@ -286,7 +286,8 @@ size_t get_dedicated_memory() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator`를 위해 전용된 메모리(킬로바이트)입니다.
+
+  `accelerator`를 위해 전용된 메모리(킬로바이트)입니다.
 
 ##  <a name="get_default_cpu_access_type"></a> get_default_cpu_access_type
 
@@ -310,7 +311,8 @@ accelerator_view get_default_view() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator_view`와 연결된 기본 `accelerator` 개체입니다.
+
+  `accelerator_view`와 연결된 기본 `accelerator` 개체입니다.
 
 ##  <a name="get_description"></a> get_description
 
@@ -322,7 +324,8 @@ std::wstring get_description() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator` 장치에 대한 간단한 설명입니다.
+
+  `accelerator` 장치에 대한 간단한 설명입니다.
 
 ##  <a name="get_device_path"></a> get_device_path
 
@@ -461,7 +464,7 @@ bool operator!= (const accelerator& _Other) const;
 
 **false** 하는 경우 두 `accelerator` 개체가 동일한 지 고, 그렇지 않으면 **true**합니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 지정 된 내용을 복사 `accelerator` 여기에 개체입니다.
 
@@ -478,7 +481,7 @@ accelerator& operator= (const accelerator& _Other);
 
 이에 대 한 참조 `accelerator` 개체입니다.
 
-##  <a name="operator_eq_eq"></a> 연산자 = =
+##  <a name="operator_eq_eq"></a> operator==
 
 비교 `accelerator` 다른 개체를 반환 합니다 **true** 같으면 경우 그렇지 않으면 반환 **false**합니다.
 
@@ -495,7 +498,7 @@ bool operator== (const accelerator& _Other) const;
 
 **true** 하는 경우 다른 `accelerator` 개체가이 동일 `accelerator` ; 개체이 고, 그렇지 **false**합니다.
 
-##  <a name="set_default"></a> 인지 나타냅니다
+##  <a name="set_default"></a> set_default
 
 암시적으로 기본 액셀러레이터를 사용 하는 모든 작업에 사용할 기본 액셀러레이터를 설정 합니다. 이 메서드는 런타임에서 선택한 기본 액셀러레이터가 기본 액셀러레이터를 암시적으로 사용 하는 작업에서 이미 사용 되지 않은 경우에 성공
 
@@ -505,7 +508,7 @@ static inline bool set_default(std::wstring _Path);
 
 ### <a name="parameters"></a>매개 변수
 
-*경로 (_p)*<br/>
+*_Path*<br/>
 액셀러레이터 키에 대 한 경로입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -604,7 +607,7 @@ concurrency::completion_future create_marker();
 
 지금이 전송 된 모든 명령의 완료를 추적 하는 미래 `accelerator_view` 개체입니다.
 
-##  <a name="flush"></a> 플러시
+##  <a name="flush"></a> flush
 
 모든 보류 중인 명령은 큐에 대기 중인 전송 합니다 [accelerator_view](accelerator-view-class.md) 실행에 대 한 액셀러레이터 키에는 개체입니다.
 
@@ -614,7 +617,7 @@ void flush();
 
 ### <a name="return-value"></a>반환 값
 
-`void`를 반환합니다.
+`void`을 반환합니다.
 
 ##  <a name="get_accelerator"></a> get_accelerator
 
@@ -650,7 +653,8 @@ bool get_is_debug() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
+
+  `accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
 
 ##  <a name="get_queuing_mode"></a> get_queuing_mode
 
@@ -662,7 +666,8 @@ queuing_mode get_queuing_mode() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator_view` 개체의 큐 모드입니다.
+
+  `accelerator_view` 개체의 큐 모드입니다.
 
 ##  <a name="get_version"></a> get_version
 
@@ -709,7 +714,7 @@ bool operator!= (const accelerator_view& _Other) const;
 
 **false** 두 개체가 동일 하면이 고, 그렇지 **true**합니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 지정 된 콘텐츠를 복사 [accelerator_view](accelerator-view-class.md) 을 여기에 개체입니다.
 
@@ -726,7 +731,7 @@ accelerator_view& operator= (const accelerator_view& _Other);
 
 수정된 `accelerator_view` 개체에 대한 참조입니다.
 
-##  <a name="operator_eq_eq"></a> 연산자 = =
+##  <a name="operator_eq_eq"></a> operator==
 
 비교 [accelerator_view](accelerator-view-class.md) 다른 개체를 반환 합니다 **true** 같으면 경우 그렇지 않으면 반환 **false**합니다.
 
@@ -769,8 +774,8 @@ void wait();
 
 ### <a name="return-value"></a>반환 값
 
-`void`를 반환합니다.
+`void`을 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

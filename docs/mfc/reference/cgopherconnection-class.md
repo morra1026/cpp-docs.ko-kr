@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CGopherConnection [MFC], GetAttribute
 - CGopherConnection [MFC], OpenFile
 ms.assetid: b5b96aea-ac99-430e-bd84-d1372b43f78f
-ms.openlocfilehash: f9c2a99c30213a28f4c20ba0f4a2eebea85bef76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d960d566a63531af211592a7a8ae8f1cb35c5958
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519667"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300724"
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection 클래스
 
@@ -54,13 +54,13 @@ class CGopherConnection : public CInternetConnection
 
 Gopher 서비스 MFC WinInet 클래스에서 인식 하는 세 가지 인터넷 서비스 중 하나입니다.
 
-클래스 `CGopherConnection` 생성자와 gopher를 관리 하는 세 가지 추가 멤버 함수를 포함 합니다. [OpenFile](#openfile)를 [CreateLocator](#createlocator), 및 [GetAttribute](#getattribute).
+클래스 `CGopherConnection` 생성자 및 gopher를 관리 하는 세 가지 추가 멤버 함수를 포함 합니다. [OpenFile](#openfile)하십시오 [CreateLocator](#createlocator), 및 [GetAttribute](#getattribute)합니다.
 
 Gopher 인터넷 서버와 통신 하려면 먼저 만들어야 인스턴스에 [CInternetSession](../../mfc/reference/cinternetsession-class.md), 다음 호출 [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)를 작성 하는 `CGopherConnection` 개체 및에 대 한 포인터를 반환 합니다. 되지 만들기는 `CGopherConnection` 직접 개체입니다.
 
 하는 방법에 자세히 알아보려면 `CGopherConnection` 문서를 참조 하는 다른 인터넷 MFC 클래스와 함께 작동 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다. 다른 두 개를 사용 하는 방법에 대 한 자세한 내용은 지원 인터넷 서비스에 대 한 FTP 및 HTTP 클래스를 참조 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 하 고 [CFtpConnection](../../mfc/reference/cftpconnection-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -233,9 +233,9 @@ INTERNET_FLAG_ 플래그의 모든 조합입니다. 참조 [CInternetSession::Op
 
 ### <a name="remarks"></a>설명
 
-재정의 된 *dwContext* 기본적으로 선택한 값으로 컨텍스트 식별자를 설정 합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CGopherConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+재정의 된 *dwContext* 기본적으로 선택한 값으로 컨텍스트 식별자를 설정 합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CGopherConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CInternetConnection 클래스](../../mfc/reference/cinternetconnection-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

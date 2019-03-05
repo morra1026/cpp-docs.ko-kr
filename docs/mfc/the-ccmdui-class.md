@@ -10,12 +10,12 @@ helpviewer_keywords:
 - update handlers [MFC]
 - toolbars [MFC], updating
 ms.assetid: 2f2bae62-8c29-45a4-bbce-490eb01907d5
-ms.openlocfilehash: 47ef359f71d9dd30f2ba1ff1c4cf504bccd33ffd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e0af0703924d6fae626d3753b8523efe0c56652
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667950"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326627"
 ---
 # <a name="the-ccmdui-class"></a>CCmdUI 클래스
 
@@ -25,7 +25,6 @@ ms.locfileid: "50667950"
 
 이 처리기를 호출 합니다 `Enable` 메뉴 항목에 대 한 액세스를 사용 하 여 개체의 멤버 함수입니다. `Enable` 사용 가능한 항목을 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [방법: 사용자 인터페이스 개체 업데이트](../mfc/how-to-update-user-interface-objects.md)
-

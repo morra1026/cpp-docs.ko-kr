@@ -118,18 +118,18 @@ helpviewer_keywords:
 - CWinAppEx [MFC], StoreWindowPlacement
 - CWinAppEx [MFC], m_bForceImageReset
 ms.assetid: a3d3e053-3e22-463f-9444-c73abb1bb9d7
-ms.openlocfilehash: 57c18ff00cd9e3a1d3156d8214ac78b49ca00c1f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c222567703d0e57480c00f6f2bf9e78f16979150
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544419"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288833"
 ---
 # <a name="cwinappex-class"></a>CWinAppEx 클래스
 
 `CWinAppEx` 응용 프로그램 상태를 처리, 상태를 레지스트리에 저장, 레지스트리에서 상태를 로드, 응용 프로그램 관리자를 초기화 및 이러한 동일한 응용 프로그램 관리자에 대 한 링크를 제공 합니다.
 
-   자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+   더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 ## <a name="syntax"></a>구문
 
 ```
@@ -176,7 +176,7 @@ class CWinAppEx : public CWinApp
 |[CWinAppEx::InitKeyboardManager](#initkeyboardmanager)|초기화는 `CKeyboardManager` 개체입니다.|
 |[CWinAppEx::InitMouseManager](#initmousemanager)|초기화는 `CMouseManager` 개체입니다.|
 |[CWinAppEx::InitShellManager](#initshellmanager)|초기화는 `CShellManager` 클래스|
-|[Cwinappex:: Inittooltipmanager](#inittooltipmanager)|초기화는 `CTooltipManager` 클래스입니다.|
+|[CWinAppEx::InitTooltipManager](#inittooltipmanager)|초기화는 `CTooltipManager` 클래스입니다.|
 |[CWinAppEx::IsResourceSmartUpdate](#isresourcesmartupdate)||
 |[CWinAppEx::IsStateExists](#isstateexists)|레지스트리에 지정된 된 키가 있는지 여부를 나타냅니다.|
 |[CWinAppEx::LoadState](#loadstate)|레지스트리에서 응용 프로그램 상태를 로드합니다.|
@@ -195,7 +195,7 @@ class CWinAppEx : public CWinApp
 |[CWinAppEx::WriteSectionString](#writesectionstring)|지정된 된 레지스트리 키의 값으로 문자열 데이터를 씁니다.|
 |[CWinAppEx::WriteString](#writestring)|지정 된 레지스트리 값으로 문자열 데이터를 씁니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -222,9 +222,9 @@ MFC 프레임 워크에서 제공 하는 기능에 크게 좌우 합니다 `CWin
 
 - 기본 응용 프로그램 클래스를 파생 `CWinAppEx`합니다.
 
-통합 후 `CWinAppEx` 응용 프로그램에 응용 프로그램 관리자 중 하나를 초기화할 수 있습니다. 응용 프로그램 관리자를 사용 하기 전에 적절 한 initialize 메서드를 호출 하 여 초기화 해야 합니다. 특정 관리자에 대 한 포인터를 얻으려면 관련된 get 메서드를 호출 합니다. `CWinAppEx` 클래스에 다음 응용 프로그램 관리자는 관리: [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md)를 [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md)합니다 [ CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md), 및 [CMenuTearOffManager 클래스](../../mfc/reference/cmenutearoffmanager-class.md)합니다.
+통합 후 `CWinAppEx` 응용 프로그램에 응용 프로그램 관리자 중 하나를 초기화할 수 있습니다. 응용 프로그램 관리자를 사용 하기 전에 적절 한 initialize 메서드를 호출 하 여 초기화 해야 합니다. 특정 관리자에 대 한 포인터를 얻으려면 관련된 get 메서드를 호출 합니다. `CWinAppEx` 클래스는 다음 응용 프로그램 관리자를 관리 합니다. [CMouseManager 클래스](../../mfc/reference/cmousemanager-class.md), [CContextMenuManager 클래스](../../mfc/reference/ccontextmenumanager-class.md), [CKeyboardManager 클래스](../../mfc/reference/ckeyboardmanager-class.md)하십시오 [CUserToolsManager 클래스](../../mfc/reference/cusertoolsmanager-class.md), 및 [ CMenuTearOffManager 클래스](../../mfc/reference/cmenutearoffmanager-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -405,7 +405,7 @@ BOOL GetBinary(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 FALSE이 고, 그렇지 합니다.
+성공하면 TRUE이고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -478,7 +478,7 @@ int GetInt(
 *lpszEntry*<br/>
 [in] 레지스트리 항목의 이름을 포함 하는 문자열입니다.
 
-*n 기본*<br/>
+*nDefault*<br/>
 [in] 지정 된 레지스트리 항목이 존재 하지 않는 경우 메서드가 반환 하는 기본값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -643,7 +643,7 @@ int GetSectionInt(
 *lpszEntry*<br/>
 [in] 읽은 값을 포함 하는 문자열입니다.
 
-*n 기본*<br/>
+*nDefault*<br/>
 [in] 지정된 된 값이 없는 경우 반환할 기본값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -868,7 +868,7 @@ BOOL InitShellManager();
 
 경우에 셸 관리자가 이미 응용 프로그램을 호출 하면 `InitShellManager`에서 발생 하는 [ASSERT](diagnostic-services.md#assert) 실패 합니다. 따라서 호출 하지 마세요 `InitShellManager` 만드는 경우는 `CShellManager` 직접 개체입니다. 사용자 지정을 사용 하지 않는 경우 `CShellManager`를 사용 하 여 `GetShellManager` 만들려는 `CShellManager` 개체입니다.
 
-##  <a name="inittooltipmanager"></a>  Cwinappex:: Inittooltipmanager
+##  <a name="inittooltipmanager"></a>  CWinAppEx::InitTooltipManager
 
 초기화 된 [CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) 개체입니다.
 
@@ -923,7 +923,7 @@ virtual void LoadCustomState();
 
 ### <a name="remarks"></a>설명
 
-레지스트리에서 상태를 로드 하는 응용 프로그램에 후 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로이 메서드는 없습니다.
+레지스트리에서 상태를 로드 하는 응용 프로그램에 후 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 레지스트리에서 사용자 지정 상태 정보를 로드 하기 위해 정보를 저장 해야 사용 하 여 [CWinAppEx::SaveCustomState](#savecustomstate)합니다.
 
@@ -962,7 +962,7 @@ virtual BOOL LoadState(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -996,7 +996,7 @@ virtual BOOL LoadWindowPlacement(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1031,7 +1031,7 @@ virtual void OnAppContextHelp(
 *pWndControl*<br/>
 [in] 사용자는에 대 한 상황에 맞는 도움말을 호출 하는 창 개체에 대 한 포인터입니다.
 
-*dwHelpIDArray]*<br/>
+*dwHelpIDArray[]*<br/>
 [in] 예약 된 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -1150,7 +1150,7 @@ virtual void SaveCustomState();
 
 ### <a name="remarks"></a>설명
 
-응용 프로그램 상태를 레지스트리에 저장 하는 후 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로이 메서드는 없습니다.
+응용 프로그램 상태를 레지스트리에 저장 하는 후 처리를 수행 하려는 경우이 메서드를 재정의 합니다. 기본적으로 이 메서드는 아무것도 수행하지 않습니다.
 
 ##  <a name="savestate"></a>  CWinAppEx::SaveState
 
@@ -1187,7 +1187,7 @@ BOOL SaveState(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 FALSE이 고, 그렇지 합니다.
+성공하면 TRUE이고, 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1232,7 +1232,7 @@ virtual BOOL ShowPopupMenu(
 *uiMenuResId*<br/>
 [in] 메뉴 리소스 id입니다.
 
-*지점*<br/>
+*point*<br/>
 [in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 화면 좌표에서 메뉴의 위치를 지정 하 합니다.
 
 *pWnd*<br/>
@@ -1272,7 +1272,7 @@ virtual BOOL StoreWindowPlacement(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1327,7 +1327,7 @@ BOOL WriteInt(
 *lpszEntry*<br/>
 [in] 레지스트리 키의 이름을 포함 하는 문자열입니다.
 
-*n 값*<br/>
+*nValue*<br/>
 [in] 데이터 저장소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1421,7 +1421,7 @@ BOOL WriteSectionInt(
 *lpszEntry*<br/>
 [in] 설정할 값을 포함 하는 문자열입니다.
 
-*n 값*<br/>
+*nValue*<br/>
 [in] 레지스트리에 쓸 데이터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1526,7 +1526,7 @@ BOOL WriteString(
 
 키를 지정 하면 *lspzEntry* 존재 하지 않는 것이 메서드는 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
