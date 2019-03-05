@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: cd3eed89753031de64d35a2b3602b1fb42356123
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c782d5761323129eccf7ee129d877128c400d93a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613540"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270724"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl 클래스
 
@@ -106,7 +106,7 @@ Pager 컨트롤에 포함 된 기간 보다 크고 선형 이며 포함 된 창�
 
 합니다 `CPagerCtrl` 에서 파생 된 클래스를 [CWnd](../../mfc/reference/cwnd-class.md) 클래스입니다. 자세한 내용 및 pager 컨트롤의 예시를 참조 하세요 [페이저 컨트롤](/windows/desktop/Controls/pager-controls)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -612,9 +612,8 @@ void SetScrollPos(int iPos);
 
 이 메서드는 전송 된 [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) Windows SDK에 설명 된 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CPagerCtrl 클래스](../../mfc/reference/cpagerctrl-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [페이저 컨트롤](/windows/desktop/Controls/pager-controls)
-

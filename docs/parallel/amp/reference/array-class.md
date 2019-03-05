@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - array class
 ms.assetid: 0832b6c1-40f0-421d-9104-6b1baa0c63a7
-ms.openlocfilehash: 93ef654bb71a342a6215ce5cd60786f36cadedf7
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 16d18d23c370a8a603ab6150fcee18455ae47c48
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657554"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259025"
 ---
 # <a name="array-class"></a>array 클래스
 
@@ -75,7 +75,7 @@ friend class array;
 
 |이름|설명|
 |----------|-----------------|
-|[operator std:: vector&lt;value_type&gt;](#operator_vec)|사용 하 여 `copy(*this, vector)` 변환할 암시적으로 배열 된 std::[벡터](../../../standard-library/vector-class.md) 개체입니다.|
+|[operator std::vector&lt;value_type&gt;](#operator_vec)|사용 하 여 `copy(*this, vector)` 변환할 암시적으로 배열 된 std::[벡터](../../../standard-library/vector-class.md) 개체입니다.|
 |[operator()](#operator_call)|매개 변수로 지정 된 요소 값을 반환 합니다.|
 |[operator\[\]](#operator_at)|지정된 된 인덱스에 있는 요소를 반환 합니다.|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `array` 을 여기에 개체입니다.|
@@ -113,7 +113,7 @@ friend class array;
 
 - 로 호스트-장치 복사 시에서 빠른 매개자 역할을 하는 스테이징 개체입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `array`
 
@@ -121,7 +121,7 @@ friend class array;
 
 **헤더:** amp.h
 
-**Namespace:** 동시성
+**네임스페이스:** 동시성
 
 ##  <a name="dtor"></a> ~array
 
@@ -543,7 +543,7 @@ Concurrency::extent<_Rank> get_extent() const restrict(amp,cpu);
 
 합니다 `extent` 의 개체는 `array`합니다.
 
-##  <a name="operator_vec"></a> operator std:: vector&lt;value_type&gt;
+##  <a name="operator_vec"></a> operator std::vector&lt;value_type&gt;
 
 사용 하 여 `copy(*this, vector)` 배열 std:: vector 개체를 암시적으로 변환할 합니다.
 
@@ -560,7 +560,7 @@ operator std::vector<value_type>() const restrict(cpu);
 
 형식의 개체 `vector<T>` 배열에 포함 된 데이터의 복사본이 포함 된 합니다.
 
-##  <a name="operator_call"></a> operator)
+##  <a name="operator_call"></a> operator()
 
 매개 변수로 지정 된 요소 값을 반환 합니다.
 
@@ -603,7 +603,7 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 
 매개 변수로 지정 된 요소 값입니다.
 
-##  <a name="operator_at"></a> operator]
+##  <a name="operator_at"></a> operator[]
 
 지정된 된 인덱스에 있는 요소를 반환 합니다.
 
@@ -630,7 +630,7 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 
 지정된 된 인덱스에 있는 요소입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 지정 된 내용을 복사 `array` 개체입니다.
 
@@ -835,6 +835,6 @@ array_view<const value_type,_New_rank> view_as(
 
 합니다 [array_view](array-view-class.md) 생성 된 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

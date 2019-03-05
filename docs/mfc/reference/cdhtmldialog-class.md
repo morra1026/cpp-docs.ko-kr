@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 08db42929fb3c6a7feb79abae5110bd88169f11b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9cf01f16fe21d0c5bea34bf168c6ea6bff04c195
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594963"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263613"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog 클래스
 
@@ -140,7 +140,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 |이름|설명|
 |----------|-----------------|
 |[CDHtmlDialog::CDHtmlDialog](#cdhtmldialog)|CDHtmlDialog 개체를 생성합니다.|
-|[CDHtmlDialog:: ~ CDHtmlDialog](#cdhtmldialog__~cdhtmldialog)|CDHtmlDialog 개체를 제거합니다.|
+|[CDHtmlDialog::~CDHtmlDialog](#cdhtmldialog__~cdhtmldialog)|CDHtmlDialog 개체를 제거합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -212,7 +212,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 
 `CDHtmlDialog` 또한 수행할 데이터 HTML 컨트롤을 사용 하 여 exchange를 단추 클릭 등 HTML 컨트롤의 이벤트를 처리 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -236,7 +236,7 @@ class CDHtmlDialog : public CDialog, public CDHtmlEventSink
 
 **헤더:** afxdhtml.h
 
-##  <a name="ddx_dhtml_helper_macros"></a>  DDX_DHtml 도우미 매크로
+##  <a name="ddx_dhtml_helper_macros"></a>  DDX_DHtml Helper Macros
 
 DDX_DHtml 도우미 매크로는 HTML 페이지에 있는 컨트롤의 자주 사용 되는 속성에 쉽게 액세스할 수 있도록 합니다.
 
@@ -304,7 +304,7 @@ HTML 리소스의 ID 번호를 포함합니다.
 
 생성자의 두 번째 형태는 템플릿 이름을 통해 대화 상자 리소스에 대 한 액세스를 제공합니다. 생성자의 세 번째 폼 리소스 템플릿의 ID 통해 대화 상자 리소스에 대 한 액세스를 제공합니다. ID로 시작 하는 일반적으로 **IDD_** 접두사입니다.
 
-##  <a name="_dtorcdhtmldialog"></a>  CDHtmlDialog:: ~ CDHtmlDialog
+##  <a name="_dtorcdhtmldialog"></a>  CDHtmlDialog::~CDHtmlDialog
 
 CDHtmlDialog 개체를 제거합니다.
 
@@ -402,7 +402,7 @@ void DDX_DHtml_CheckBox(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*값*<br/>
+*value*<br/>
 교환할 값입니다.
 
 ### <a name="example"></a>예제
@@ -468,7 +468,7 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 *dispid*<br/>
 데이터를 교환 하려는 HTML 요소의 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_radio"></a>  CDHtmlDialog::DDX_DHtml_Radio
@@ -490,7 +490,7 @@ void DDX_DHtml_Radio(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*값*<br/>
+*value*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_selectindex"></a>  CDHtmlDialog::DDX_DHtml_SelectIndex
@@ -512,7 +512,7 @@ void DDX_DHtml_SelectIndex(
 *szId*<br/>
 HTML 컨트롤의 id 매개 변수에 대해 지정 된 값입니다.
 
-*값*<br/>
+*value*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_selectstring"></a>  CDHtmlDialog::DDX_DHtml_SelectString
@@ -534,7 +534,7 @@ void DDX_DHtml_SelectString(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*값*<br/>
+*value*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_selectvalue"></a>  CDHtmlDialog::DDX_DHtml_SelectValue
@@ -556,7 +556,7 @@ void DDX_DHtml_SelectValue(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*값*<br/>
+*value*<br/>
 교환할 값입니다.
 
 ### <a name="example"></a>예제
@@ -1435,7 +1435,7 @@ STDMETHOD(ShowUI)(
 *pFrame*<br/>
 참조 *pFrame* 에서 `IDocHostUIHandler::ShowUI` Windows SDK에 있습니다.
 
-*입력*<br/>
+*pDoc*<br/>
 참조 *입력* 에서 `IDocHostUIHandler::ShowUI` Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1522,9 +1522,8 @@ E_NOTIMPL 반환.
 
 이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)Windows SDK에 설명 된 대로 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 DHtmlExplore](../../visual-cpp-samples.md)<br/>
 [DDX_DHtml 도우미 매크로](#ddx_dhtml_helper_macros)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

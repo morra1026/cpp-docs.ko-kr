@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CComAutoThreadModule class
 - apartment model modules
 ms.assetid: 13063ea5-a57e-4aac-97d3-227137262811
-ms.openlocfilehash: 805227144887b29d85b1948f62060ffe9eb2d0e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b0fa685bf9a7de94b158bd62b00161c1b58562d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435690"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271998"
 ---
 # <a name="ccomautothreadmodule-class"></a>CComAutoThreadModule 클래스
 
@@ -79,7 +79,7 @@ class CComAutoThreadModule : public CComModule
 
 [!code-cpp[NVC_ATL_AxHost#2](../../atl/codesnippet/cpp/ccomautothreadmodule-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -257,7 +257,7 @@ LONG Unlock();
 
 모듈 잠금 수가 0에 도달 하면 모듈을 언로드할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [모듈 클래스](../../atl/atl-module-classes.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CSmartDockingInfo [MFC], m_uiMarkerBmpResID
 - CSmartDockingInfo [MFC], m_uiMarkerLightBmpResID
 ms.assetid: cab04f38-4bc1-4378-9337-c56fc87fbd68
-ms.openlocfilehash: e8931af856bc75bd499d8237278998adfcdb02a6
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: d5f918b591e1db9ff67288a8761f7554698fa761
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176772"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273467"
 ---
 # <a name="csmartdockinginfo-class"></a>CSmartDockingInfo 클래스
 
@@ -95,7 +95,7 @@ class CSmartDockingInfo : public CObject
 
 ![스마트 도킹의 사용자 지정 마커](../../mfc/reference/media/nextsdmarkerscustom.png "스마트 도킹의 사용자 지정 마커")
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -244,7 +244,7 @@ params.m_uiMarkerLightBmpResID[3] = IDB_MARKER_BOTTOM_LIGHT;
 params.m_uiMarkerLightBmpResID[4] = IDB_MARKER_CENTER_LIGHT;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

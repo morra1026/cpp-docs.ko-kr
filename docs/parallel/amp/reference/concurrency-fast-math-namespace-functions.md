@@ -46,12 +46,12 @@ f1_keywords:
 - amp_math/Concurrency::fast_math::tanhf
 - amp_math/Concurrency::fast_math::trunc
 ms.assetid: f5763d62-795b-4de6-a7a5-c7115f158708
-ms.openlocfilehash: fa024c781804d404870a0362a027e1bc436902ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96178ee72073e5063fc009f17ab21565f3cf1ab5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667638"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259865"
 ---
 # <a name="concurrencyfastmath-namespace-functions"></a>Concurrency:: fast_math 네임 스페이스 함수
 
@@ -611,7 +611,7 @@ inline float frexp(
 *_X*<br/>
 부동 소수점 값
 
-*2^_exp*<br/>
+*_Exp*<br/>
 부동 소수점 값의 _X의 정수 지수를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -633,7 +633,7 @@ inline float frexpf(
 *_X*<br/>
 부동 소수점 값
 
-*2^_exp*<br/>
+*_Exp*<br/>
 부동 소수점 값의 _X의 정수 지수를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -706,12 +706,12 @@ inline float ldexp(
 *_X*<br/>
 부동 소수점 값, 가수
 
-*2^_exp*<br/>
+*_Exp*<br/>
 정수 지수
 
 ### <a name="return-value"></a>반환 값
 
-_X를 반환 합니다 \* 2 ^ 2^_exp
+Returns _X \* 2^_Exp
 
 ##  <a name="ldexpf"></a>  ldexpf
 
@@ -728,12 +728,12 @@ inline float ldexpf(
 *_X*<br/>
 부동 소수점 값, 가수
 
-*2^_exp*<br/>
+*_Exp*<br/>
 정수 지수
 
 ### <a name="return-value"></a>반환 값
 
-_X를 반환 합니다 \* 2 ^ 2^_exp
+Returns _X \* 2^_Exp
 
 ##  <a name="log"></a>  log
 
@@ -852,7 +852,7 @@ inline float modf(
 *_X*<br/>
 부동 소수점 값
 
-*(_I)*<br/>
+*_Ip*<br/>
 값의 정수 부분을 수신
 
 ### <a name="return-value"></a>반환 값
@@ -874,7 +874,7 @@ inline float modff(
 *_X*<br/>
 부동 소수점 값
 
-*(_I)*<br/>
+*_Ip*<br/>
 값의 정수 부분을 수신
 
 ### <a name="return-value"></a>반환 값
@@ -1275,8 +1275,8 @@ inline float truncf(float _X) restrict(amp);
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** amp_math.h **Namespace:** concurrency:: fast_math
+**헤더:** amp_math.h **Namespace:** Concurrency::fast_math
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::fast_math 네임스페이스](concurrency-fast-math-namespace.md)

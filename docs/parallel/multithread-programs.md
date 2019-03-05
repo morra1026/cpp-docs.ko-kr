@@ -1,16 +1,16 @@
-﻿---
+---
 title: 다중 스레드 프로그램
 ms.date: 11/04/2016
 helpviewer_keywords:
 - threading [C++], about threading
 - multithreading [C++], about threads
 ms.assetid: 02443596-f7e1-48d0-b3a4-39ee0e54e444
-ms.openlocfilehash: 0b79fe84fbf7d910d53cb5bc333668b7d99ab8ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd10893ecd33d39b531b9451dec708ea31c121d4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502046"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267318"
 ---
 # <a name="multithread-programs"></a>다중 스레드 프로그램
 
@@ -20,6 +20,6 @@ ms.locfileid: "50502046"
 
 한 프로세스에서 각 스레드는 독립적으로 작동합니다. 다른 스레드를 볼 수 있도록 설정하지 않으면 스레드는 개별적으로 실행되며 한 프로세스에서 다른 스레드를 인식하지 못합니다. 그러나 공용 리소스를 공유하는 스레드는 세마포 또는 기타 프로세스간 통신 방법을 사용하여 작업을 조정해야 합니다. 스레드 동기화에 대한 자세한 내용은 [다중 스레드 Win32 프로그램 작성](writing-a-multithreaded-win32-program.md)을 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)

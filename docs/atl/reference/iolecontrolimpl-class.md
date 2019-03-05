@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IOleControlImpl class
 ms.assetid: 5a4255ad-ede4-49ca-ba9a-07c2e919fa85
-ms.openlocfilehash: 8b84f982d06547dd162da530d326d4cdb92e254a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50119d21b041f37f03ca416a9a56ca9e29ae3344
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442161"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263535"
 ---
 # <a name="iolecontrolimpl-class"></a>IOleControlImpl 클래스
 
@@ -54,7 +54,7 @@ class IOleControlImpl
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IOleControl`
 
@@ -126,7 +126,7 @@ E_NOTIMPL 반환.
 
 참조 [IOleControl::OnMnemonic](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IOleObjectImpl 클래스](../../atl/reference/ioleobjectimpl-class.md)<br/>
 [ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>

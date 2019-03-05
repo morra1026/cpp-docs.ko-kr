@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Clipboard, copying data to
 - Clipboard, pasting
 ms.assetid: 580e10be-241f-4f9f-94cf-8302edc5beef
-ms.openlocfilehash: 7f22418b4006bcb9fac1d4430660c8721bc7e903
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da589743e98b2ac020e006aedb0ccc0415998f17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437040"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270737"
 ---
 # <a name="clipboard-copying-and-pasting-data"></a>클립보드: 데이터 복사 및 붙여넣기
 
@@ -57,7 +57,7 @@ ms.locfileid: "50437040"
 
 편집 메뉴에서 옵션을 선택 하 여 붙여넣기를 처리 하려면 항목을 참조 하세요 [OLE의 대화 상자](../mfc/dialog-boxes-in-ole.md)합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [기타 서식 추가](../mfc/clipboard-adding-other-formats.md)
 
@@ -67,7 +67,6 @@ ms.locfileid: "50437040"
 
 - [OLE](../mfc/ole-background.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클립보드: OLE 클립보드 메커니즘 사용](../mfc/clipboard-using-the-ole-clipboard-mechanism.md)
-

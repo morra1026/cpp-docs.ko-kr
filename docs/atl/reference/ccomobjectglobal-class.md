@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectGlobal class
 ms.assetid: 79bdee55-66e4-4536-b5b3-bdf09f78b9a6
-ms.openlocfilehash: ebaec439393a67331293cbf47abd08a5e7e416af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec3abd04ce72cce98dae72a1ed8cbb8d9fe72079
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485568"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267435"
 ---
 # <a name="ccomobjectglobal-class"></a>CComObjectGlobal 클래스
 
@@ -32,7 +32,7 @@ class CComObjectGlobal : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 모든 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -42,7 +42,7 @@ class CComObjectGlobal : public Base
 |이름|설명|
 |----------|-----------------|
 |[CComObjectGlobal::CComObjectGlobal](#ccomobjectglobal)|생성자입니다.|
-|[CComObjectGlobal:: ~ CComObjectGlobal](#dtor)|소멸자입니다.|
+|[CComObjectGlobal::~CComObjectGlobal](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -64,7 +64,7 @@ class CComObjectGlobal : public Base
 
 예를 들어,를 사용 하 여 `CComObjectGlobal`, 클래스 팩터리는 모든 클라이언트에 의해 공유 되는 일반적인 전역 개체를 포함할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Base`
 
@@ -102,7 +102,7 @@ CComObjectGlobal(void* = NULL));
 
 기본 클래스에서 파생 되지 않은 하는 경우 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md)를 직접 제공 해야 `FinalConstruct` 메서드. 이 소멸자는 `FinalRelease`을 호출합니다.
 
-##  <a name="dtor"></a>  CComObjectGlobal:: ~ CComObjectGlobal
+##  <a name="dtor"></a>  CComObjectGlobal::~CComObjectGlobal
 
 소멸자입니다.
 
@@ -162,7 +162,7 @@ STDMETHOD_(ULONG, Release)();
 
 기본적으로 `Release` 호출 `_Module::Unlock`, 여기서 `_Module` 의 인스턴스인 전역 [CComModule](../../atl/reference/ccommodule-class.md) 클래스에서 파생 된 또는 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComObjectStack 클래스](../../atl/reference/ccomobjectstack-class.md)<br/>
 [CComAggObject 클래스](../../atl/reference/ccomaggobject-class.md)<br/>

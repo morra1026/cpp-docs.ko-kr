@@ -13,16 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - call class
 ms.assetid: 1521970a-1e9c-4b0c-a681-d18e40976f49
-ms.openlocfilehash: 5164d2787c86e6c909418f353c15c876d1397afe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9651a74fdb07ad96d6f01edb6818ea48d697c37c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566103"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271959"
 ---
 # <a name="call-class"></a>call 클래스
 
-`call` 메시징 블록은 메시지를 받을 때 지정된 함수를 호출하는 순서가 지정된 다중 소스 `target_block`입니다.
+
+  `call` 메시징 블록은 메시지를 받을 때 지정된 함수를 호출하는 순서가 지정된 다중 소스 `target_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -48,7 +49,7 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |[call](#ctor)|오버로드됨. `call` 메시징 블록을 생성합니다.|
 |[~ call 소멸자](#dtor)|제거 된 `call` 메시징 블록입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -56,13 +57,14 @@ class call : public target_block<multi_link_registry<ISource<T>>>;
 |[process_message](#process_message)|이 허용 된 메시지를 처리 `call` 메시징 블록입니다.|
 |[propagate_message](#propagate_message)|메시지를 비동기적으로 전달 된 `ISource` 이 블록 `call` 메시징 블록입니다. 호출한는 `propagate` 메서드의 소스 블록에서 호출 하는 경우.|
 |[send_message](#send_message)|메시지를 동기적으로 전달 된 `ISource` 이 블록 `call` 메시징 블록입니다. 호출한는 `send` 메서드의 소스 블록에서 호출 하는 경우.|
-|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
+|[supports_anonymous_source](#supports_anonymous_source)|
+  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
 ## <a name="remarks"></a>설명
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ITarget](itarget-class.md)
 
@@ -112,7 +114,7 @@ call(
 *_Func*<br/>
 수락 된 각 메시지에 대 한 호출 되는 함수입니다.
 
-*필터 (_f)*<br/>
+*_Filter*<br/>
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
@@ -176,7 +178,8 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -198,7 +201,8 @@ virtual message_status send_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -209,7 +213,8 @@ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 �
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
+
+  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
 
 ```
 virtual bool supports_anonymous_source();
@@ -219,7 +224,7 @@ virtual bool supports_anonymous_source();
 
 **true** 블록은 연기 하지 때문에 메시지를 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [transformer 클래스](transformer-class.md)

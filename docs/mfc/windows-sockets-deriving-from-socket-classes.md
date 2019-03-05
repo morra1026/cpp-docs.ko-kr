@@ -1,23 +1,23 @@
 ---
-title: 'Windows 소켓: 소켓 클래스에서 파생시키기'
+title: 'Windows 소켓: 소켓 클래스에서 파생'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - derived classes [MFC], from socket classes
 - Windows Sockets [MFC], deriving from socket classes
 - sockets [MFC], deriving from socket classes
 ms.assetid: 3a26e67a-e323-433b-9b05-eca018799801
-ms.openlocfilehash: d860aacef164155f87db33355211b1a8e598c91b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12ab66cfd9212cd79752e2f6359b857194c6428c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648814"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270314"
 ---
-# <a name="windows-sockets-deriving-from-socket-classes"></a>Windows 소켓: 소켓 클래스에서 파생시키기
+# <a name="windows-sockets-deriving-from-socket-classes"></a>Windows 소켓: 소켓 클래스에서 파생
 
 이 문서에서는 소켓 클래스 중 하나에서 고유한 클래스를 파생 하 여 얻을 수 있는 기능 중 일부를 설명 합니다.
 
-고유한 소켓 클래스를 파생 시킬 수 있습니다 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 또는 [CSocket](../mfc/reference/csocket-class.md) 고유한 기능을 추가 합니다. 특히, 이러한 클래스는 다양 한 재정의할 수 있는 가상 멤버 함수를 제공 합니다. 이러한 함수를 포함 [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive)를 [OnSend](../mfc/reference/casyncsocket-class.md#onsend)를 [OnAccept](../mfc/reference/casyncsocket-class.md#onaccept)를 [OnConnect](../mfc/reference/casyncsocket-class.md#onconnect), 및 [OnClose](../mfc/reference/casyncsocket-class.md#onclose)합니다. 네트워크 이벤트가 발생할 때 제공 되는 알림 활용 하기 위해 파생된 소켓 클래스에서 함수를 재정의할 수 있습니다. 프레임 워크를 알리는 데이터 수신 등의 중요 한 소켓 이벤트 읽기를 시작할 수 있습니다 이러한 알림 콜백 함수를 호출 합니다. 알림 함수에 대 한 자세한 내용은 참조 하세요. [Windows 소켓: 소켓 알림](../mfc/windows-sockets-socket-notifications.md)합니다.
+고유한 소켓 클래스를 파생 시킬 수 있습니다 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 또는 [CSocket](../mfc/reference/csocket-class.md) 고유한 기능을 추가 합니다. 특히, 이러한 클래스는 다양 한 재정의할 수 있는 가상 멤버 함수를 제공 합니다. 이러한 함수를 포함 [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive)를 [OnSend](../mfc/reference/casyncsocket-class.md#onsend)를 [OnAccept](../mfc/reference/casyncsocket-class.md#onaccept)를 [OnConnect](../mfc/reference/casyncsocket-class.md#onconnect), 및 [OnClose](../mfc/reference/casyncsocket-class.md#onclose)합니다. 네트워크 이벤트가 발생할 때 제공 되는 알림 활용 하기 위해 파생된 소켓 클래스에서 함수를 재정의할 수 있습니다. 프레임 워크를 알리는 데이터 수신 등의 중요 한 소켓 이벤트 읽기를 시작할 수 있습니다 이러한 알림 콜백 함수를 호출 합니다. 알림 함수에 대 한 자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../mfc/windows-sockets-socket-notifications.md)합니다.
 
 또한 클래스 `CSocket` 제공 합니다 [OnMessagePending](../mfc/reference/csocket-class.md#onmessagepending) 멤버 함수 (고급 재정의 가능). MFC 소켓은 Windows 기반 메시지를 펌프 하는 동안이 함수를 호출 합니다. 재정의할 수 있습니다 `OnMessagePending` Windows에서 특정 메시지를 확인 하 여 응답할 수 있습니다.
 
@@ -27,9 +27,9 @@ ms.locfileid: "50648814"
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
 - [Windows 소켓: 차단](../mfc/windows-sockets-blocking.md)
 
@@ -37,7 +37,6 @@ ms.locfileid: "50648814"
 
 - [Windows 소켓: 문자열 변환](../mfc/windows-sockets-converting-strings.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)
-

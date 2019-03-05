@@ -17,12 +17,12 @@ f1_keywords:
 - AMP_GRAPHICS/concurrency::graphics::texture::depth_pitch
 - AMP_GRAPHICS/concurrency::graphics::texture::row_pitch
 ms.assetid: 16e85d4d-e80a-474a-995d-8bf63fbdf34c
-ms.openlocfilehash: 8e427206379f1e7d094362411f074ad9cafb43fd
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: cfcb65fa23fe4593e7dcf11da3b5da4b1785ce71
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657541"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279746"
 ---
 # <a name="texture-class"></a>texture 클래스
 
@@ -93,7 +93,7 @@ class texture;
 |[depth_pitch](#depth_pitch)|Cpu의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수를 가져옵니다.|
 |[row_pitch](#row_pitch)|스테이징 텍스처 CPU의 2D 또는 3D의 각 행 사이의 바이트 수를 가져옵니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_Texture_base`
 
@@ -103,9 +103,9 @@ class texture;
 
 **헤더:** amp_graphics.h
 
-**Namespace:** Concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
-##  <a name="dtor"></a> ~ 질감
+##  <a name="dtor"></a> ~texture
 
 제거 된 `texture` 개체입니다.
 
@@ -163,7 +163,7 @@ Cpu의 3D 스테이징 텍스처에서 각 깊이 조각 사이의 바이트 수
 __declspec(property(get= get_depth_pitch)) unsigned int depth_pitch;
 ```
 
-##  <a name="get"></a> 가져오기
+##  <a name="get"></a> get
 
 지정된 된 인덱스에 있는 요소의 값을 반환합니다.
 
@@ -216,7 +216,7 @@ unsigned int get_row_pitch() const restrict(cpu);
 
 2 차원 스테이징 질감에서 각 행 사이의 또는 3 차원 스테이징 질감에서 깊이 조각의 각 행 사이의 바이트 수입니다.
 
-##  <a name="operator_call"></a> operator)
+##  <a name="operator_call"></a> operator()
 
 매개 변수로 지정 된 요소 값을 반환 합니다.
 
@@ -258,7 +258,7 @@ const value_type operator() (
 
 매개 변수로 지정 된 요소 값입니다.
 
-##  <a name="operator_at"></a> operator]
+##  <a name="operator_at"></a> operator[]
 
 지정된 된 인덱스에 있는 요소를 반환 합니다.
 
@@ -280,7 +280,7 @@ const value_type operator[] (int _I0) const restrict(amp);
 
 지정된 된 인덱스에 있는 요소입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 지정 된 복사 [질감](texture-class.md) 여기에 개체입니다.
 
@@ -573,7 +573,7 @@ texture(
 *_Rank*<br/>
 범위의 차수입니다.
 
-*_Output*<br/>
+*_Source*<br/>
 호스트 버퍼에 대 한 포인터입니다.
 
 *_Src*<br/>
@@ -594,6 +594,6 @@ texture(
 *_Rank*<br/>
 섹션의 순위입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

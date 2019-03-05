@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CRecordView [MFC], OnMove
 - CRecordView [MFC], OnMove
 ms.assetid: 9b4b0897-bd50-4d48-a0b4-f3323f5ccc55
-ms.openlocfilehash: c7013fb53562fd76744bff19d1d37ce972a52d52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a91a9e320b4221b04bbcf996ffa60f1de4b35ec5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643869"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262469"
 ---
 # <a name="crecordview-class"></a>CRecordView 클래스
 
@@ -51,7 +51,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 |[CRecordView::OnGetRecordset](#ongetrecordset)|파생 된 클래스의 개체에 대 한 포인터를 반환 합니다. `CRecordset`합니다. 클래스 마법사를이 함수를 재정의 하 고 필요한 경우 레코드 집합을 만듭니다.|
 |[CRecordView::OnMove](#onmove)||
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -62,7 +62,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 뷰는 폼 보기에 직접 연결을 `CRecordset` 개체입니다. 보기 대화 상자 템플릿 리소스에서 생성 되 고 필드를 표시 합니다 `CRecordset` 대화 상자 템플릿의 컨트롤에는 개체입니다. `CRecordView` 개체 (DDX) 대화 상자 데이터 교환 및 레코드 필드 교환 (RFX)를 사용 하 여 폼에 컨트롤 및 레코드 집합의 필드 간 데이터 이동을 자동화할 수 있습니다. `CRecordView` 또한 이동에 대 한 기본 구현을 제공 하면 첫 번째 다음, 이전 또는 마지막 레코드 및 view에 현재 레코드를 업데이트 하기 위한 인터페이스입니다.
 
 > [!NOTE]
->  클래스를 사용 하 여 열린 데이터베이스 연결 (ODBC) 클래스가 아니라 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 대신 합니다. 자세한 내용은 문서 참조 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
+>  클래스를 사용 하 여 열린 데이터베이스 연결 (ODBC) 클래스가 아니라 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 대신 합니다. 자세한 내용은 문서를 참조 하세요. [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
 
 레코드 뷰를 작성 하는 가장 일반적인 방법은 응용 프로그램 마법사를 사용 하 여 됩니다. Tge 응용 프로그램 마법사에는 레코드 뷰 클래스와 기본 시작 응용 프로그램의 일부로 관련된 레코드 집합 클래스를 모두 만듭니다. 응용 프로그램 마법사를 사용 하 여 레코드 뷰 클래스를 만들지 않는 경우 클래스 마법사를 사용 하 여 나중에 만들 수 있습니다. 단일 폼 하기만 하면, 응용 프로그램 마법사 방법은 쉽습니다. 클래스 마법사를 사용 하면 개발 프로세스의 뒷부분에 나오는 레코드 뷰를 사용 하도록 결정할 수 있습니다. 레코드 집합 클래스에서 더 많은 제어를 제공 하므로 가장 유연한 접근은 클래스 마법사를 사용 하 여 레코드 집합 및 레코드 뷰를 개별적으로 만들고 연결 하 고 있습니다. H /입니다. CPP 파일입니다. 또한이 방법은 동일한 레코드 집합 클래스에서 여러 레코드 뷰를 포함할 수 있습니다.
 
@@ -74,7 +74,7 @@ class AFX_NOVTABLE CRecordView : public CFormView
 
 선언 하 고 레코드 보기 및 레코드 집합 클래스를 사용 하는 방법에 대 한 자세한 내용은 문서의 "디자인 및 만들기는 레코드 보기"를 참조 하세요 [레코드 뷰](../../data/record-views-mfc-data-access.md)합니다. 레코드 작업을 보는 방법 및 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -180,7 +180,7 @@ virtual CRecordset* OnGetRecordset() = 0;
 
 생성 또는 레코드 집합 개체를 가져오고,에 대 한 포인터를 반환 하려면이 멤버 함수를 재정의 해야 합니다. 클래스 마법사를 사용 하 여 레코드 뷰 클래스를 선언 하는 경우 마법사는 기본 재정의를 작성 합니다. 클래스 마법사의 기본 구현은 있을 경우 레코드 뷰에 저장 된 레코드 포인터를 반환 합니다. ClassWizard 및 호출을 사용 하 여 지정 된 형식의 레코드 집합 개체를 생성 하지 하는 경우 해당 `Open` 멤버 함수를 테이블 열 또는 쿼리를 실행 하 고 다음 개체에 대 한 포인터를 반환 합니다.
 
-자세한 내용 및 예제에 대 한 문서를 참조 [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
+자세한 내용 및 예제에 대 한 문서를 참조 하세요. [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
 
 ##  <a name="onmove"></a>  CRecordView::OnMove
 
@@ -220,7 +220,7 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 > [!CAUTION]
 >  호출 `OnMove` 레코드 집합에 레코드가 없는 경우 예외를 throw 합니다. 적절 한 사용자 인터페이스 업데이트 처리기 함수를 호출 합니다.- `OnUpdateRecordFirst`, `OnUpdateRecordLast`, `OnUpdateRecordNext`, 또는 `OnUpdateRecordPrev` -해당 전에 레코드 집합에 레코드가 있는지 확인 하는 작업을 이동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFormView 클래스](../../mfc/reference/cformview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

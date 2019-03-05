@@ -5,12 +5,12 @@ helpviewer_keywords:
 - rebar controls [MFC], working with bands in
 - bands, in rebar controls
 ms.assetid: b647e7a5-9ea7-48b1-8e5f-096d104748f0
-ms.openlocfilehash: aa20e44825ec57dba19dad0b2a11ca51f315743e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bb7b4aeab1478138aa2b52649f41ca943b5daa4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582054"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276063"
 ---
 # <a name="rebar-controls-and-bands"></a>Rebar 컨트롤 및 밴드
 
@@ -38,8 +38,7 @@ Rebar 컨트롤의 주 목적은 자식 창, 공용 대화 상자 컨트롤, 메
 
 [!code-cpp[NVC_MFCControlLadenDialog#27](../mfc/codesnippet/cpp/rebar-controls-and-bands_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CReBarCtrl 사용](../mfc/using-crebarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

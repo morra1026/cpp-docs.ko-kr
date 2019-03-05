@@ -33,12 +33,12 @@ helpviewer_keywords:
 - function calls [MFC], results
 - out-of-memory exceptions [MFC]
 ms.assetid: 0926627d-2ba7-44a6-babe-d851a4a2517c
-ms.openlocfilehash: 4b520072bd0c07e261f2cf4baf51d7ea3d14a5ab
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: cb11a74932e44f94f481a2fdc48b8d6ee359f9e8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694558"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260545"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC의 예외 처리
 
@@ -50,9 +50,9 @@ ms.locfileid: "51694558"
 
 MFC를 사용 하 여 새 응용 프로그램을 작성 하는 경우 c + + 메커니즘을 사용 해야 합니다. 기존 응용 프로그램이 이미이 메커니즘을 광범위 하 게 사용 하는 경우 매크로 기반 메커니즘을 사용할 수 있습니다.
 
-MFC 예외 매크로 대신 c + + 예외를 사용 하도록 기존 코드를 쉽게 변환할 수 있습니다. 코드 및 작업에 대 한 지침을 변환 하는 이점은 문서에 설명 되어 있습니다 [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)합니다.
+MFC 예외 매크로 대신 c + + 예외를 사용 하도록 기존 코드를 쉽게 변환할 수 있습니다. 코드 및 작업에 대 한 지침을 변환 하는 이점은 문서에 설명 되어 [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)합니다.
 
-MFC 예외 매크로 사용 하 여 응용 프로그램을 개발한 이미 있는 경우 기존 코드에서 이러한 매크로 사용 하 여 새 코드에서 c + + 예외를 사용 하는 동안 계속 수 있습니다. 이 문서 [예외: 버전 3.0의 예외 매크로 변경 사항](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) 이렇게 하는 것에 대 한 지침을 제공 합니다.
+MFC 예외 매크로 사용 하 여 응용 프로그램을 개발한 이미 있는 경우 기존 코드에서 이러한 매크로 사용 하 여 새 코드에서 c + + 예외를 사용 하는 동안 계속 수 있습니다. 문서 [예외: 버전 3.0의 예외 매크로 변경 사항](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) 이렇게 하는 것에 대 한 지침을 제공 합니다.
 
 > [!NOTE]
 >  C + +에서에서 예외 처리 코드를 사용 하려면 c + + 예외 처리 가능 프로젝트의 C/c + + 폴더에서 코드 생성 페이지에서 선택 [속성 페이지](../ide/property-pages-visual-cpp.md) 대화 상자 또는 사용 합니다 [/EHsc](../build/reference/eh-exception-handling-model.md) 컴파일러 옵션입니다.
@@ -109,13 +109,13 @@ C + + 예외를 직접 사용 하거나 MFC 예외 매크로 사용 하는 경�
 
 다음 문서에서는 MFC 라이브러리를 사용 하 여 예외 처리를 위해 설명 합니다.
 
-- [예외: 예외 Catch 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)
+- [예외: 예외 catch 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)
 
 - [예외: 예외 내용 검사](../mfc/exceptions-examining-exception-contents.md)
 
 - [예외: 예외의 개체 해제](../mfc/exceptions-freeing-objects-in-exceptions.md)
 
-- [예외: 자체 함수에서 예외 Throw](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md)
+- [예외: 자체 함수에서 예외를 throw합니다.](../mfc/exceptions-throwing-exceptions-from-your-own-functions.md)
 
 - [예외: 데이터베이스 예외](../mfc/exceptions-database-exceptions.md)
 
@@ -123,14 +123,13 @@ C + + 예외를 직접 사용 하거나 MFC 예외 매크로 사용 하는 경�
 
 다음 문서는 c + + 예외 키워드로 MFC 예외 매크로 비교 하 고 코드를 조정 하는 방법에 대해 설명 합니다.
 
-- [예외: 버전 3.0의 예외 매크로 변경 사항](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
+- [예외: 버전 3.0의에서 예외 매크로 변경 사항](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)
 
 - [예외: MFC 예외 매크로에서 변환](../mfc/exceptions-converting-from-mfc-exception-macros.md)
 
-- [예외: MFC 매크로 및 C++ 예외 사용](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
+- [예외: MFC 매크로 및 c + + 예외 사용](../mfc/exceptions-using-mfc-macros-and-cpp-exceptions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 예외 처리](../cpp/cpp-exception-handling.md)<br/>
-[I: 나만의 사용자 지정 예외 클래스를 만드는 방법](http://go.microsoft.com/fwlink/p/?linkid=128045)
-
+[어떻게 할까요 나만의 사용자 지정 예외 클래스 만들기](http://go.microsoft.com/fwlink/p/?linkid=128045)

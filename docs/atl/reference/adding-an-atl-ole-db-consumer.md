@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE DB, adding ATL OLE DB consumer to projects
 - ATL OLE DB consumers
 ms.assetid: f940a513-4e42-4148-b521-dd0d7dc89fa2
-ms.openlocfilehash: 467d83413de2666416cc6354bc75c114d178ffb7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d93bf715f8fd8a03c75b1d1bf2e44f12c1d1b9c0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676917"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277653"
 ---
 # <a name="adding-an-atl-ole-db-consumer"></a>ATL OLE DB 소비자 추가
 
@@ -30,8 +30,8 @@ ms.locfileid: "50676917"
 
 1. 에 설명 된 대로 설정을 정의할 [ATL OLE DB 소비자 마법사](../../atl/reference/atl-ole-db-consumer-wizard.md)합니다.
 
-1. 클릭 **완료** 마법사를 닫습니다. 새로 만든된 OLE DB 소비자 코드 프로젝트에 삽입 됩니다.
+1. **마침** 을 클릭하여 마법사를 닫습니다. 새로 만든된 OLE DB 소비자 코드 프로젝트에 삽입 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)

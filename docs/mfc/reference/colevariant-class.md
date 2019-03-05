@@ -20,12 +20,12 @@ helpviewer_keywords:
 - COleVariant [MFC], GetByteArrayFromVariantArray
 - COleVariant [MFC], SetString
 ms.assetid: e1b5cd4a-b066-4b9b-b48b-6215ed52d998
-ms.openlocfilehash: b37105cf1afdcf966176a2e2615f9c141022088d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2b2d0935380caed8ad9d6741b9107a5f879f7903
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520520"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268063"
 ---
 # <a name="colevariant-class"></a>COleVariant 클래스
 
@@ -63,8 +63,8 @@ class COleVariant : public tagVARIANT
 |[COleVariant::operator LPCVARIANT](#operator_lpcvariant)|변환 된 `COleVariant` 값에 `LPCVARIANT`.|
 |[COleVariant::operator LPVARIANT](#operator_lpvariant)|변환 된 `COleVariant` 개체를 `LPVARIANT`합니다.|
 |[COleVariant::operator =](#operator_eq)|복사본을 `COleVariant` 값입니다.|
-|[COleVariant::operator = =](#operator_eq_eq)|두 `COleVariant` 값입니다.|
-|[COleVariant::operator &lt; &lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|출력을 `COleVariant` 값을 `CArchive` 또는 `CDumpContext` 입력을 `COleVariant` 에서 개체 `CArchive`합니다.|
+|[COleVariant::operator ==](#operator_eq_eq)|두 `COleVariant` 값입니다.|
+|[COleVariant::operator &lt;&lt;, &gt;&gt;](#operator_lt_lt__gt_gt)|출력을 `COleVariant` 값을 `CArchive` 또는 `CDumpContext` 입력을 `COleVariant` 에서 개체 `CArchive`합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -79,7 +79,7 @@ MFC 클래스와 관련 된 두 [COleCurrency](../../mfc/reference/colecurrency-
 
 대 한 자세한 내용은 합니다 `COleVariant` 클래스 및 해당 OLE automation 사용 문서의 "전달 매개 변수에서 OLE Automation"을 참조 하세요. [Automation](../../mfc/automation.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagVARIANT`
 
@@ -200,7 +200,7 @@ A [CLongBinary](../../mfc/reference/clongbinary-class.md) 개체를 새 복사�
 
 - **COleVariant (** *dblSrc* **)** VT_R8 새 개체에는 64 비트 부동 소수점 값을 복사 합니다.
 
-- **COleVariant (** *timeSrc* **)** 복사본을 `COleDateTime` 새 개체로 VT_DATE 값입니다.
+- **COleVariant(** *timeSrc* **)** Copies a `COleDateTime` value into the new object, VT_DATE.
 
 - **COleVariant (** *arrSrc* **)** 복사본을 `CByteArray` VT_EMPTY 새 개체에는 개체입니다.
 
@@ -269,7 +269,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 
 ### <a name="parameters"></a>매개 변수
 
-*바이트*<br/>
+*bytes*<br/>
 기존에 대 한 참조가 [CByteArray](../../mfc/reference/cbytearray-class.md) 개체입니다.
 
 ##  <a name="operator_lpcvariant"></a>  COleVariant::operator LPCVARIANT
@@ -346,7 +346,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
 
 자세한 내용은 참조는 [VARIANT](/windows/desktop/api/oaidl/ns-oaidl-tagvariant) 및 [VARENUM](/windows/desktop/api/wtypes/ne-wtypes-varenum) Windows SDK에는 항목입니다.
 
-##  <a name="operator_eq_eq"></a>  COleVariant::operator = =
+##  <a name="operator_eq_eq"></a>  COleVariant::operator ==
 
 두 variant 값을 비교 하 고 같지 않은 경우 0이 아닌 값을 반환 하는이 연산자 그렇지 않으면 0입니다.
 
@@ -355,7 +355,7 @@ BOOL operator==(const VARIANT& varSrc) const;
 BOOL operator==(LPCVARIANT pSrc) const;
 ```
 
-##  <a name="operator_lt_lt__gt_gt"></a>  COleVariant::operator &lt; &lt;, &gt;&gt;
+##  <a name="operator_lt_lt__gt_gt"></a>  COleVariant::operator &lt;&lt;, &gt;&gt;
 
 출력을 `COleVariant` 값을 `CArchive` 또는 `CdumpContext` 입력을 `COleVariant` 에서 개체 `CArchive`합니다.
 
@@ -390,7 +390,7 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 *lpszSrc*<br/>
 복사할 새 null로 끝나는 문자열을 `COleVariant` 개체입니다.
 
-*vtSrc*<br/>
+*VtSrc*<br/>
 새 VARTYPE `COleVariant` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -399,6 +399,6 @@ void SetString(LPCTSTR lpszSrc, VARTYPE vtSrc);
 
 유니코드가 아닌 빌드에서 DAO 레코드 집합에는 ANSI 하는 문자열은 필요 합니다. 따라서 DAO 사용 하는 함수 `COleVariant` 를 사용 해야 개체를 유니코드 레코드 집합을 만들지 않는 경우에 **COleVariant::COleVariant (** *lpszSrc* **,** *vtSrc* **)** 사용 하 여 생성자 형태의 *vtSrc* VT_BSTRT (ANSI)를 설정 하거나 사용 하 여 `SetString` 사용 하 여 *vtSrc* VT로 설정 _BSTRT ANSI 문자열을 확인 합니다. 예를 들어 합니다 `CDaoRecordset` 함수 [CDaoRecordset::Seek](../../mfc/reference/cdaorecordset-class.md#seek) 하 고 [CDaoRecordset::SetFieldValue](../../mfc/reference/cdaorecordset-class.md#setfieldvalue) 사용 하 여 `COleVariant` 개체를 매개 변수로 합니다. 이러한 개체는 DAO 레코드 집합 유니코드가 아닌 경우 ANSI 이어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

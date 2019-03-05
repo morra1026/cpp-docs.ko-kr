@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CInternetConnection [MFC], GetServerName
 - CInternetConnection [MFC], GetSession
 ms.assetid: 62a5d1c3-8471-4e36-a064-48831829b2a7
-ms.openlocfilehash: da11f62cfb453e31d3cacc1d4bc5b8a26f5b3764
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f17c3ade53ec45ddde654e83c77fe1d817d8495
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564803"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275352"
 ---
 # <a name="cinternetconnection-class"></a>CInternetConnection 클래스
 
@@ -61,7 +61,7 @@ MFC 클래스에 대 한 기본 클래스 [CFtpConnection](../../mfc/reference/c
 
 WinInet 클래스가 작동 하는 방법에 대 한 자세한 문서를 참조 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -101,13 +101,13 @@ CInternetConnection(
 
 호출 하지 `CInternetConnection` 직접; 대신 호출 합니다 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 설정 하려는 연결의 유형에 대 한 멤버 함수:
 
-- [Cinternetsession:: Getftpconnection](../../mfc/reference/cinternetsession-class.md#getftpconnection)
+- [CInternetSession::GetFtpConnection](../../mfc/reference/cinternetsession-class.md#getftpconnection)
 
 - [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection)
 
 - [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection)
 
-에 대 한 기본값 *dwContext* MFC에서 전송한 합니다 `CInternetConnection`-파생 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 **InternetConnection**- 파생된 개체입니다. 기본값은 1로 설정 됩니다. 그러나에서 특정 컨텍스트 식별자를 명시적으로 할당할 수는 [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) 연결에 대 한 생성자입니다. 개체 및 수행 작업 컨텍스트 ID와 사용 하 여 연결 됩니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+에 대 한 기본값 *dwContext* MFC에서 전송한 합니다 `CInternetConnection`-파생 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 **InternetConnection**- 파생된 개체입니다. 기본값은 1로 설정 됩니다. 그러나에서 특정 컨텍스트 식별자를 명시적으로 할당할 수는 [CInternetSession](../../mfc/reference/cinternetsession-class.md#cinternetsession) 연결에 대 한 생성자입니다. 개체 및 수행 작업 컨텍스트 ID와 사용 하 여 연결 됩니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="getcontext"></a>  CInternetConnection::GetContext
 
@@ -159,8 +159,7 @@ CInternetSession* GetSession() const;
 operator HINTERNET() const;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

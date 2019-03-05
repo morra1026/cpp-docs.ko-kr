@@ -268,12 +268,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::float_4::get_z
 - amp_short_vectors/Concurrency::graphics::float_4::set_xyzw
 ms.assetid: 10f92170-e58c-4afc-8198-fc5778d56038
-ms.openlocfilehash: 97302504303a540eb691f7af15f7d346d0d50ce3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63dbc38fd4c5c6d668dda525416ec4ff2f05b50f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459776"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275209"
 ---
 # <a name="float4-class"></a>float_4 클래스
 
@@ -592,7 +592,7 @@ class float_4;
 |float_4::zyx||
 |float_4::zyxw||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `float_4`
 
@@ -600,7 +600,7 @@ class float_4;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ##  <a name="ctor"></a> float_4
 
@@ -660,7 +660,7 @@ explicit inline float_4(
 *_V3*<br/>
 3 요소를 초기화할 값입니다.
 
-*(_V)*<br/>
+*_V*<br/>
 초기화에 대 한 값입니다.
 
 *_Other*<br/>
@@ -672,6 +672,6 @@ explicit inline float_4(
 static const int size = 4;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

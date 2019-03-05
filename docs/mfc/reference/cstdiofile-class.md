@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CStdioFile [MFC], WriteString
 - CStdioFile [MFC], m_pStream
 ms.assetid: 88c2274c-4f0e-4327-882a-557ba4b3ae15
-ms.openlocfilehash: dd1a13e7cef066350f8409782b0efeba11b9d11e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd42934107591905a1bbc273ee9eec4b37e58ea7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456214"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258790"
 ---
 # <a name="cstdiofile-class"></a>CStdioFile 클래스
 
@@ -70,7 +70,7 @@ Stream 파일은 버퍼링 및 텍스트 모드 (기본값) 또는 이진 모드
 
 사용 하 여 대 한 자세한 내용은 `CStdioFile`, 문서를 참조 하세요 [MFC의 파일](../../mfc/files-in-mfc.md) 하 고 [파일 처리](../../c-runtime-library/file-handling.md) 에 *런타임 라이브러리 참조*.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -199,7 +199,7 @@ virtual BOOL ReadString(CString& rString);
 *lpsz*<br/>
 Null로 끝나는 문자열을 받는 사용자가 제공한 버퍼에 대 한 포인터를 지정 합니다.
 
-*최대*<br/>
+*nMax*<br/>
 제외 하 고 null 종결 문자를 읽을 문자의 최대 수를 지정 합니다.
 
 *rString*<br/>
@@ -291,7 +291,7 @@ Null 종결 문자 ( `\0`) 파일에 기록 되지 않습니다. 이 메서드�
 
 [!code-cpp[NVC_MFCFiles#40](../../atl-mfc-shared/reference/codesnippet/cpp/cstdiofile-class_4.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFile 클래스](../../mfc/reference/cfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

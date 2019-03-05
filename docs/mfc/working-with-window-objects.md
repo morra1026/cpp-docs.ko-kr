@@ -5,12 +5,12 @@ helpviewer_keywords:
 - child windows [MFC], working with
 - window objects [MFC], working with
 ms.assetid: f73aa254-90e3-46a9-8e9b-d78b7054a331
-ms.openlocfilehash: 66656fceec2005f7e789bf1cd68ffe52651aacc7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c696d880ffa69b0a0399c5282621546c5783ebe4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526544"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265641"
 ---
 # <a name="working-with-window-objects"></a>창 개체 작업
 
@@ -26,7 +26,7 @@ ms.locfileid: "50526544"
 
 어떤 경우 든, 그리기 장치 컨텍스트를 해야 합니다. 주식 펜, 브러시 및 창과 연결 된 장치 컨텍스트에 포함 된 기타 그래픽 개체를 사용할 수 있습니다. 또는 필요한 그리기 효과 가져오려면 이러한 개체를 수정할 수 있습니다. 원하는 만큼 설정 하면 장치 컨텍스트를 사용 하 여 멤버 함수를 호출할 클래스의 [CDC](../mfc/reference/cdc-class.md) (디바이스 컨텍스트 클래스) 선, 도형 및 텍스트를 그릴; 색;을 사용 하는 데는 좌표계를 사용 하 여 작업 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [메시지 처리 및 매핑](../mfc/message-handling-and-mapping.md)
 
@@ -36,7 +36,6 @@ ms.locfileid: "50526544"
 
 - [그래픽 개체](../mfc/graphic-objects.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 개체](../mfc/window-objects.md)
-

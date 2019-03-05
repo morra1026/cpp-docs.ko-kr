@@ -80,18 +80,18 @@ helpviewer_keywords:
 - CMultiPaneFrameWnd [MFC], StoreRecentDockSiteInfo
 - CMultiPaneFrameWnd [MFC], StoreRecentTabRelatedInfo
 ms.assetid: 989a548e-0d70-46b7-a513-8cf740e1be3e
-ms.openlocfilehash: edd7fcf24302de8ded4f3adda933c783c6997757
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb420021ec5b9839091c42b5eae6e1d5b9f7f977
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504353"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281241"
 ---
 # <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd 클래스
 
 합니다 `CMultiPaneFrameWnd` 클래스를 확장 [CPaneFrameWnd 클래스](../../mfc/reference/cpaneframewnd-class.md)합니다. 여러 창을 지원합니다. 컨트롤 막대에 포함 된 단일 핸들 대신 `CMultiPaneFrameWnd` 포함을 [CPaneContainerManager 클래스](../../mfc/reference/cpanecontainermanager-class.md) 하나를 도킹 하 사용할 수 있는 개체 `CMultiPaneFrameWnd` 간 및 동적으로 만드는 여러 부동, 탭 windows입니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -159,7 +159,7 @@ class CMultiPaneFrameWnd : public CPaneFrameWnd
 
 [!code-cpp[NVC_MFC_SetPaneSize#4](../../mfc/reference/codesnippet/cpp/cmultipaneframewnd-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -408,7 +408,7 @@ virtual BOOL InsertPane(
 
 [in] *pControlBar*<br/>
 [in] *pTarget*<br/>
-[in] *후에는*<br/>
+[in] *bAfter*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -489,7 +489,7 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *지점*<br/>
+[in] *point*<br/>
 [in] *nSensitivity*<br/>
 [in] *bCheckVisibility*<br/>
 
@@ -636,7 +636,7 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

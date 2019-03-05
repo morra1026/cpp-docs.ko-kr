@@ -8,12 +8,12 @@ helpviewer_keywords:
 - drag and drop [MFC], calling DoDragDrop
 - OLE drag and drop [MFC], customizing behavior
 ms.assetid: 03369d3e-46bf-4140-b58c-d0c9657cf38a
-ms.openlocfilehash: d97bebce3ec7935dba7a9eca02a21be749efbec7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4749f8d45c962f8b9217e4c6367538d3e6a3608
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494293"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262599"
 ---
 # <a name="drag-and-drop-customizing"></a>끌어서 놓기: 사용자 지정
 
@@ -27,11 +27,12 @@ ms.locfileid: "50494293"
 
 |재정의|사용자 지정|
 |--------------|------------------|
-|`OnBeginDrag`|`DoDragDrop` 호출 후 끌기 시작 방법.|
+|`OnBeginDrag`|
+  `DoDragDrop` 호출 후 끌기 시작 방법.|
 |`GiveFeedback`|여러 놓기 결과에 대한 시각적 피드백(예: 커서 모양).|
 |`QueryContinueDrag`|끌어 놓기 작업의 종료. 이 함수를 사용하면 놓기 작업 중 보조키 상태를 확인할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [끌어서 놓기(OLE)](../mfc/drag-and-drop-ole.md)<br/>
 [COleDropSource 클래스](../mfc/reference/coledropsource-class.md)<br/>

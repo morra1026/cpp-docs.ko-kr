@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Web browsers
 - Web applications [MFC], creating
 ms.assetid: 257f8c03-33c3-428c-832e-0b70aff6168d
-ms.openlocfilehash: 1fd61b3e6bcb2f429c43edcabb41e166bcec95c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 207a6e162da6bc14e27c575ac163b160ab8e1ac1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466159"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265595"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>웹 브라우저 스타일 MFC 응용 프로그램 만들기
 
@@ -67,11 +67,10 @@ void CWebView::OnInitialUpdate()
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MFCIE](https://github.com/Microsoft/VCSamples)<br/>
 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)<br/>
 [프로젝트 속성 사용](../../ide/working-with-project-properties.md)<br/>
-[속성 페이지](../../ide/property-pages-visual-cpp.md)<br/>
+[속성 페이지(Visual C++)](../../ide/property-pages-visual-cpp.md)<br/>
 [프로젝트 속성 사용](../../ide/working-with-project-properties.md)
-

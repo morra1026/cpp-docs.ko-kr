@@ -7,18 +7,18 @@ helpviewer_keywords:
 - rich edit controls [MFC], using
 - CRichEditCtrl class [MFC], using
 ms.assetid: e400c6ed-563e-4d4c-ab3b-a3f0aa20273b
-ms.openlocfilehash: 22255cc0072e6d25bc3ec70086be6ec99a59808a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d935cb5282af16a189d091ee6f40d128a906d392
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498165"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270571"
 ---
 # <a name="using-cricheditctrl"></a>CRichEditCtrl 사용
 
 Rich edit 컨트롤에는 사용자 입력 수 및 텍스트를 편집 하는 창입니다. 텍스트 문자와 단락 형식을 할당할 수 있으며 포함 된 OLE 개체를 포함할 수 있습니다. Rich edit 컨트롤에서 MFC에 표시 됩니다는 [CRichEditCtrl](../mfc/reference/cricheditctrl-class.md) 클래스입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [Rich Edit 컨트롤의 개요](../mfc/overview-of-the-rich-edit-control.md)
 
@@ -44,7 +44,6 @@ Rich edit 컨트롤에는 사용자 입력 수 및 텍스트를 편집 하는 �
 
 - [Rich Edit 컨트롤에서 보내는 알림](../mfc/notifications-from-a-rich-edit-control.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

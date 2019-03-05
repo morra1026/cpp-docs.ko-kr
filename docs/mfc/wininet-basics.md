@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WinInet classes [MFC], displaying progress
 - WinInet classes [MFC], about WinInet classes
 ms.assetid: 665de5ac-e80d-427d-8d91-2ae466885940
-ms.openlocfilehash: f56d2bb6e6a0b49b3d69dbcc0bf6346b72e9f7b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79ec102aa27440c64f03c6e22b9f2fe959cac6b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519186"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264458"
 ---
 # <a name="wininet-basics"></a>WinInet 기본 사항
 
@@ -63,8 +63,7 @@ WinInet 클래스를 사용 하는 경우 사용할 수 있습니다 합니다 [
 
 예를 들어 파일을 읽기 위해 FTP 서버를 사용 하 여 연결을 만들고 웹 페이지에 HTTP 서버에 연결 하는 응용 프로그램을 작성 하는 경우 해야는 `CInternetSession` 개체, 두 `CInternetConnection` 개체 (하나는 `CFtpSession` 다른 고 `CHttpSession`), 두 개의 `CInternetFile` 개체 (각 연결에 대해 하나). 기본값을 사용 하는 경우는 *dwContext* 매개 변수를 구분 하지 못할 수는 `OnStatusCallback` FTP 연결에 대 한 진행률을 나타내는 호출의 진행률을 나타내는 호출을 HTTP 연결입니다. 지정 하는 경우는 *dwContext* 나중에 대 한 테스트 수 있는 ID `OnStatusCallback`, 작업 생성 콜백을 배울 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)<br/>
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)
-

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - MDI [MFC], frame windows
 - classes [MFC], window
 ms.assetid: c27e43a7-8ad0-4759-b1b7-43f4725f4132
-ms.openlocfilehash: ffeb3339eedb9db7108a26ad4a5840e3921df5fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d42fa475fca7c92e4ba46b164a9beda9869231c4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668951"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279174"
 ---
 # <a name="frame-window-classes"></a>프레임 창 클래스
 
@@ -31,7 +31,7 @@ SDI 응용 프로그램은 하나의 프레임 창 클래스에서 파생 된 [C
 
 이러한 클래스는 대부분의 응용 프로그램에 필요한 프레임 창 기능을 제공 합니다. 정상적인 상황에서 제공 하는 모양과 기본 동작에 요구에 맞게 됩니다. 추가 기능을 할 경우 이러한 클래스에서 파생 됩니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [응용 프로그램 마법사로 만든 프레임 창 클래스](../mfc/frame-window-classes-created-by-the-application-wizard.md)
 
@@ -39,7 +39,6 @@ SDI 응용 프로그램은 하나의 프레임 창 클래스에서 파생 된 [C
 
 - [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창](../mfc/frame-windows.md)
-

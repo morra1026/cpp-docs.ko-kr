@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CD2DLinearGradientBrush [MFC], m_LinearGradientBrushProperties
 - CD2DLinearGradientBrush [MFC], m_pLinearGradientBrush
 ms.assetid: d4be9ff9-0ea8-45e6-9b8d-f3bc5673cbac
-ms.openlocfilehash: 03c370be5bcfc61e1dd398604f27313d3de15f8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d86235893d1f238f4cba9c927fad17f29060e591
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635827"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258729"
 ---
 # <a name="cd2dlineargradientbrush-class"></a>CD2DLinearGradientBrush 클래스
 
@@ -54,7 +54,7 @@ class CD2DLinearGradientBrush : public CD2DGradientBrush;
 |이름|설명|
 |----------|-----------------|
 |[CD2DLinearGradientBrush::CD2DLinearGradientBrush](#cd2dlineargradientbrush)|CD2DLinearGradientBrush 개체를 생성합니다.|
-|[CD2DLinearGradientBrush:: ~ CD2DLinearGradientBrush](#_dtorcd2dlineargradientbrush)|소멸자입니다. D2D 선형 그라데이션 브러시 개체 소멸 될 때 호출 됩니다.|
+|[CD2DLinearGradientBrush::~CD2DLinearGradientBrush](#_dtorcd2dlineargradientbrush)|소멸자입니다. D2D 선형 그라데이션 브러시 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -74,7 +74,7 @@ class CD2DLinearGradientBrush : public CD2DGradientBrush;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush *](#operator_id2d1lineargradientbrush_star)|반환 ID2D1LinearGradientBrush 인터페이스|
+|[CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush*](#operator_id2d1lineargradientbrush_star)|반환 ID2D1LinearGradientBrush 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -83,7 +83,7 @@ class CD2DLinearGradientBrush : public CD2DGradientBrush;
 |[CD2DLinearGradientBrush::m_LinearGradientBrushProperties](#m_lineargradientbrushproperties)|그라데이션의 시작점과 끝점이 고 시작 합니다.|
 |[CD2DLinearGradientBrush::m_pLinearGradientBrush](#m_plineargradientbrush)|ID2D1LinearGradientBrush 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -99,7 +99,7 @@ class CD2DLinearGradientBrush : public CD2DGradientBrush;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dlineargradientbrush"></a>  CD2DLinearGradientBrush:: ~ CD2DLinearGradientBrush
+##  <a name="_dtorcd2dlineargradientbrush"></a>  CD2DLinearGradientBrush::~CD2DLinearGradientBrush
 
 소멸자입니다. D2D 선형 그라데이션 브러시 개체 소멸 될 때 호출 됩니다.
 
@@ -251,7 +251,7 @@ ID2D1LinearGradientBrush 포인터입니다.
 ID2D1LinearGradientBrush* m_pLinearGradientBrush;
 ```
 
-##  <a name="operator_id2d1lineargradientbrush_star"></a>  CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush *
+##  <a name="operator_id2d1lineargradientbrush_star"></a>  CD2DLinearGradientBrush::operator ID2D1LinearGradientBrush*
 
 반환 ID2D1LinearGradientBrush 인터페이스
 
@@ -273,7 +273,7 @@ void SetEndPoint(CD2DPointF point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 브러시의 좌표 공간에서 선형 그라데이션의 끝 2 차원 좌표
 
 ##  <a name="setstartpoint"></a>  CD2DLinearGradientBrush::SetStartPoint
@@ -286,9 +286,9 @@ void SetStartPoint(CD2DPointF point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 브러시의 좌표 공간에서 선형 그라데이션의 시작 2 차원 좌표
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

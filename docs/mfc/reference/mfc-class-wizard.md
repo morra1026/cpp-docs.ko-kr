@@ -7,12 +7,12 @@ helpviewer_keywords:
 - wizards (MFC)
 - MFC Class Wizard
 ms.assetid: 8b0dd867-5d07-4214-99be-2a1c1995e6d9
-ms.openlocfilehash: d80dc10467b5180158fcb0f681bbc728ada60764
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59f0b39afe467267d61d7b851e654cc8bddc7b36
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471775"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265966"
 ---
 # <a name="mfc-class-wizard"></a>MFC 클래스 마법사
 
@@ -50,7 +50,7 @@ ms.locfileid: "50471775"
 
    합니다 **클래스 선언을** 상자에 있는 이름이 다른 경우에 표시 됩니다 **클래스 구현을**합니다.
 
-- **리소스**
+- **Resource**
 
    리소스 ID **클래스 이름**있는 경우. 이 고, 그렇지 합니다 **리소스** 상자가 비어 있습니다.
 
@@ -66,7 +66,7 @@ ms.locfileid: "50471775"
    |**상위 폴더 열기**|현재 클래스 구현 파일을 포함 하는 폴더를 엽니다.|
    |**클립보드로 전체 경로 복사**|현재 구현 파일의 경로 클립보드에 복사합니다.|
 
-- **명령**
+- **도구**
 
    추가, 삭제, 편집 또는 명령 및 해당 메시지 처리기를 검색할 수 있습니다.
 
@@ -104,6 +104,6 @@ ms.locfileid: "50471775"
 
    정의 표시 하려면에서 항목을 두 번 클릭 합니다 **메서드** 목록입니다. 항목을 선택 하거나 합니다 **메서드** 나열 하 고 클릭 합니다 **정의로 이동** 단추입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSCompletionList structure
 ms.assetid: 81b5250e-3065-492c-b20d-2cdabf12271a
-ms.openlocfilehash: ec3c38ee609dfa7aec8d688269f1183d307be5b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 567b8668934d81c49757660d1a60ca74eb033e68
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438209"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273918"
 ---
 # <a name="iumscompletionlist-structure"></a>IUMSCompletionList 구조체
 
@@ -37,7 +37,7 @@ struct IUMSCompletionList;
 
 스케줄러의 완성 목록에서 항목을 큐에서 제거 하려면이 인터페이스를 이용한 후 수행 되는 작업에 대 한 매우 주의 해야 합니다. 실행 가능한 컨텍스트에 스케줄러의 목록에 배치 해야 항목과 최대한 빨리 일반적으로 액세스할 수 있습니다. 것는 큐에서 제거 된 항목 중 하나에 지정 된 임의의 잠금 소유권 전적으로 가능 합니다. 스케줄러에 항목을 큐에서 제거에 대 한 호출 위치와 스케줄러 내에서 일반적으로 액세스할 수 있는 목록에서 해당 항목 간에 차단 될 수 있는 임의의 함수 호출이 없는 가능 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IUMSCompletionList`
 
@@ -63,7 +63,7 @@ virtual IUMSUnblockNotification *GetUnblockNotifications() = 0;
 
 실행 컨텍스트가 다시 예약 되 면 반환 된 알림을 유효 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [IUMSScheduler 구조체](iumsscheduler-structure.md)<br/>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - services, ATL
 - ATL services
 ms.assetid: 8c09d1a8-7548-4d2c-947c-9d795a81659b
-ms.openlocfilehash: 50a3eecf210cacc35cd80ad82da079b18c998c8b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3308e7fb38dfaab13c2570f216772e2af459a7f2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456110"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273662"
 ---
 # <a name="atl-services"></a>ATL 서비스
 
@@ -46,7 +46,6 @@ ATL COM 개체를 서비스로 작성 되 면 로컬 서버로 등록만 됩니�
 
 - [디버깅 팁](../atl/debugging-tips.md) ATL 서비스
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

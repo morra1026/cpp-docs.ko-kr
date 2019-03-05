@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2WEX class
 ms.assetid: 317d9ffb-e84f-47e8-beda-57e28fb19124
-ms.openlocfilehash: 96769c0012b1271263d2217fe9b5ea1a36ec8446
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7bfce54253ffcd217bb98345893724a509879abc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629946"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274460"
 ---
 # <a name="ca2wex-class"></a>CA2WEX 클래스
 
@@ -43,7 +43,7 @@ class CA2WEX
 |이름|설명|
 |----------|-----------------|
 |[CA2WEX::CA2WEX](#ca2wex)|생성자입니다.|
-|[CA2WEX:: ~ CA2WEX](#dtor)|소멸자입니다.|
+|[CA2WEX::~CA2WEX](#dtor)|소멸자입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
@@ -113,7 +113,7 @@ CA2WEX(LPCSTR psz) throw(...);
 
 변환 프로세스에서 사용 되는 버퍼를 할당 합니다.
 
-##  <a name="dtor"></a>  CA2WEX:: ~ CA2WEX
+##  <a name="dtor"></a>  CA2WEX::~CA2WEX
 
 소멸자입니다.
 
@@ -153,7 +153,7 @@ operator LPWSTR() const throw();
 
 LPWSTR 입력할 텍스트 문자열을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CA2AEX 클래스](../../atl/reference/ca2aex-class.md)<br/>
 [CA2CAEX 클래스](../../atl/reference/ca2caex-class.md)<br/>

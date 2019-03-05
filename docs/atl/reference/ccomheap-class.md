@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComHeap class
 ms.assetid: c74183ce-98ae-46fb-b186-93ea4cf0222b
-ms.openlocfilehash: ae076ee7e2b1e04a997d0b345a2d89b4cc59183d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f8966c215ed53279f1391ce00adfc783f34f2d1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496072"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276167"
 ---
 # <a name="ccomheap-class"></a>CComHeap 클래스
 
@@ -38,9 +38,9 @@ class CComHeap : public IAtlMemMgr
 |이름|설명|
 |----------|-----------------|
 |[CComHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
-|[Ccomheap::](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
+|[CComHeap::Free](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
 |[CComHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|
-|[Ccomheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
+|[CComHeap::Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -50,7 +50,7 @@ class CComHeap : public IAtlMemMgr
 
 예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlMemMgr`
 
@@ -83,7 +83,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 사용 하 여 구현 [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc)합니다.
 
-##  <a name="free"></a>  Ccomheap::
+##  <a name="free"></a>  CComHeap::Free
 
 이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.
 
@@ -121,7 +121,7 @@ virtual size_t GetSize(void* p) throw();
 
 사용 하 여 구현 [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize)합니다.
 
-##  <a name="reallocate"></a>  Ccomheap:: Reallocate
+##  <a name="reallocate"></a>  CComHeap::Reallocate
 
 이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.
 
@@ -147,7 +147,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 사용 하 여 구현 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DynamicConsumer 샘플](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

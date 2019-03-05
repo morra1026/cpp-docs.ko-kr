@@ -5,18 +5,18 @@ helpviewer_keywords:
 - Apply button in property sheet
 - property sheets, Apply button
 ms.assetid: 7e977015-59b8-406f-b545-aad0bfd8d55b
-ms.openlocfilehash: 7402f99148f20be4ce56c44b5ce7f66f0c24bd36
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb438351d273c872def8c98a67b7010cec0b4d76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591267"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279447"
 ---
 # <a name="handling-the-apply-button"></a>적용 단추 처리
 
-표준 대화 상자에는 하지 않는 기능이 속성 시트: 속성 시트를 닫기 전에 변경한 내용을 적용할 수 있도록 허용 합니다. 이 작업 수행 [적용] 단추를 사용 하 여 합니다. 이 문서에서는이 기능을 제대로 구현 하려면 사용할 수 있습니다 하는 방법을 설명 합니다.
+속성 시트 기능이 표준 대화 상자는 그렇지 않습니다. 속성 시트를 닫기 전에 변경한 내용을 적용 하려면 사용자를 수 있습니다. 이 작업 수행 [적용] 단추를 사용 하 여 합니다. 이 문서에서는이 기능을 제대로 구현 하려면 사용할 수 있습니다 하는 방법을 설명 합니다.
 
-일반적으로 모달 대화 상자 대화 상자를 닫으려면 확인을 두 번 클릭할 때 설정을 외부 개체에 게 적용 합니다. 속성 시트에 대 한 마찬가지: 속성 시트에 새 설정이 적용 하면 사용자가 확인을 클릭 합니다.
+일반적으로 모달 대화 상자 대화 상자를 닫으려면 확인을 두 번 클릭할 때 설정을 외부 개체에 게 적용 합니다. 속성 시트에 대 한 마찬가지입니다. 사용자가 확인을 클릭 하면 속성 시트에서 새 설정을 적용 합니다.
 
 그러나 다음 사용자가 속성 시트 대화 상자를 종료 하지 않고 설정을 저장 하도록 허용 하는 것이 좋습니다. 이것이 [적용] 단추의 기능입니다. [적용] 단추 외부 개체에 현재 페이지의 현재 설정을 적용 하는 대신 모든 속성 페이지의 현재 설정을 적용 합니다.
 
@@ -32,7 +32,6 @@ ms.locfileid: "50591267"
 
 이 프로세스는 예로, MFC 일반 샘플을 참조 하세요 [PROPDLG](../visual-cpp-samples.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [속성 시트](../mfc/property-sheets-mfc.md)
-

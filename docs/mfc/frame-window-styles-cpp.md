@@ -9,12 +9,12 @@ helpviewer_keywords:
 - MFC, frame windows
 - styles [MFC], windows
 ms.assetid: fc5058c1-eec8-48d8-9f76-3fc01cfa53f7
-ms.openlocfilehash: 01eb593e6a7c896b3c6e4acf9f753b73a346e3e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cade8e7e50779437feb73a94058dc62118c03c10
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510749"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274650"
 ---
 # <a name="frame-window-styles-c"></a>프레임 창 스타일(C++)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50510749"
 
 경우 창의 **FWS_ADDTOTITLE** 스타일 비트가 설정 되 면 (기본적으로 상태), 뷰 보기의 문서 이름을 기반으로 하는 창의 제목 표시줄에 표시할 제목을 프레임 창에 알립니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [MDI 자식 창 (MDICLIENT) 관리](../mfc/managing-mdi-child-windows.md), MDI 자식 창을 포함 하는 MDI 프레임 창의
 
@@ -32,7 +32,6 @@ ms.locfileid: "50510749"
 
 - [창 스타일](../mfc/reference/styles-used-by-mfc.md#window-styles)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창](../mfc/frame-windows.md)
-

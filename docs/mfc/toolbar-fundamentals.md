@@ -20,12 +20,12 @@ helpviewer_keywords:
 - frame window classes [MFC], toolbar embedded in
 - LoadToolBar method [MFC]
 ms.assetid: cc00aaff-8a56-433b-b0c0-b857d76b4ffd
-ms.openlocfilehash: 965842dd42033910366ec4686e7c0abf775f2d5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39e790e5152dd07ab40901140ecdd8f8791a446e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530795"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258400"
 ---
 # <a name="toolbar-fundamentals"></a>도구 모음 기본 사항
 
@@ -88,7 +88,7 @@ ms.locfileid: "50530795"
 
 - 적절 한 함수를 호출 하는 확인 `OnCreate` 도킹 하거나 부동 도구 모음, 해당 스타일을 설정 및 등입니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [MFC 도구 모음 구현 (도구 모음에 대 한 개요 정보)](../mfc/mfc-toolbar-implementation.md)
 
@@ -102,7 +102,6 @@ ms.locfileid: "50530795"
 
 - [이전 도구 모음 사용](../mfc/using-your-old-toolbars.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 도구 모음 구현](../mfc/mfc-toolbar-implementation.md)
-

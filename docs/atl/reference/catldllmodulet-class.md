@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlDllModuleT class
 ms.assetid: 351d5767-8257-4878-94be-45a85e31a72d
-ms.openlocfilehash: 37f57240322c6f69fe25416866cb1b356f3c9909
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be42915c6c2e941bc5fc1de78c5c7ac26ccca6e2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515871"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259219"
 ---
 # <a name="catldllmodulet-class"></a>CAtlDllModuleT 클래스
 
@@ -44,7 +44,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 |이름|설명|
 |----------|-----------------|
 |[CAtlDllModuleT::CAtlDllModuleT](#catldllmodulet)|생성자입니다.|
-|[CAtlDllModuleT:: ~ CAtlDllModuleT](#dtor)|소멸자입니다.|
+|[CAtlDllModuleT::~CAtlDllModuleT](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -63,7 +63,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 
 ATL에서 모듈에 대 한 자세한 내용은 참조 하세요. [ATL 모듈 클래스](../../atl/atl-module-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -85,7 +85,7 @@ ATL에서 모듈에 대 한 자세한 내용은 참조 하세요. [ATL 모듈 �
 CAtlDllModuleT() throw();
 ```
 
-##  <a name="dtor"></a>  CAtlDllModuleT:: ~ CAtlDllModuleT
+##  <a name="dtor"></a>  CAtlDllModuleT::~CAtlDllModuleT
 
 소멸자입니다.
 
@@ -219,7 +219,7 @@ HRESULT GetClassObject(
 
 이 메서드는 [CAtlDllModuleT::DllGetClassObject](#dllgetclassobject) 되며 이전 버전과 호환성을 위해 포함 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlModuleT 클래스](../../atl/reference/catlmodulet-class.md)<br/>
 [CAtlExeModuleT 클래스](../../atl/reference/catlexemodulet-class.md)<br/>

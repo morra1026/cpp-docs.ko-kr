@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComPtrBase class
 ms.assetid: 6dbe9543-dee8-4a97-b02f-dd3a25f4a1a0
-ms.openlocfilehash: 8d7c96ff047a6340511ee1d67f025db0ad7c5368
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5bb599b88671447e219421efacac7a2d8a5f7b06
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452691"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261702"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase 클래스
 
@@ -46,7 +46,7 @@ class CComPtrBase
 
 |이름|설명|
 |----------|-----------------|
-|[CComPtrBase:: ~ CComPtrBase](#dtor)|소멸자입니다.|
+|[CComPtrBase::~CComPtrBase](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -69,10 +69,11 @@ class CComPtrBase
 |[CComPtrBase::operator T *](#operator_t_star)|캐스트 연산자입니다.|
 |[CComPtrBase::operator!](#operator_not)|NOT 연산자입니다.|
 |[CComPtrBase::operator &](#operator_amp)|& 연산자입니다.|
-|[CComPtrBase::operator *](#operator_star)|\* 연산자|
+|[CComPtrBase::operator *](#operator_star)|
+  \* 연산자|
 |[CComPtrBase::operator <](#ccomptrbase__operator lt)|작음-than 연산자입니다.|
-|[CComPtrBase::operator = =](#operator_eq_eq)|같음 연산자입니다.|
-|[CComPtrBase::operator->](#operator_ptr)|멤버에 대 한 포인터 연산자입니다.|
+|[CComPtrBase::operator ==](#operator_eq_eq)|같음 연산자입니다.|
+|[CComPtrBase::operator ->](#operator_ptr)|멤버에 대 한 포인터 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -135,7 +136,7 @@ void Attach(T* p2) throw();
 
 `Attach` 호출 [CComPtrBase::Release](#release) 기존 [CComPtrBase::p](#p) 멤버 변수에 할당 한 다음 *p2* 에 `CComPtrBase::p`입니다. 경우는 `CComPtrBase` 개체에 대 한 포인터의 소유권을 자동으로 호출 `Release` 포인터 및 삭제 하는 포인터에 할당 된 데이터 개체의 참조 횟수가 0이 되는 경우.
 
-##  <a name="dtor"></a>  CComPtrBase:: ~ CComPtrBase
+##  <a name="dtor"></a>  CComPtrBase::~CComPtrBase
 
 소멸자입니다.
 
@@ -236,14 +237,14 @@ bool IsEqualObject(IUnknown* pOther) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*광폭 한*<br/>
+*pOther*<br/>
 비교할 `IUnknown *`입니다.
 
 ### <a name="return-value"></a>반환 값
 
 그렇지 않으면 개체는 동일한이 고, false true를 반환 합니다.
 
-##  <a name="operator_not"></a>  CComPtrBase::operator!
+##  <a name="operator_not"></a>  CComPtrBase::operator !
 
 NOT 연산자입니다.
 
@@ -269,7 +270,8 @@ T** operator&() throw();
 
 ##  <a name="operator_star"></a>  CComPtrBase::operator \*
 
-\* 연산자
+
+  \* 연산자
 
 ```
 T& operator*() const throw();
@@ -281,7 +283,7 @@ T& operator*() const throw();
 
 디버그 빌드의 경우 경우 어설션 오류가 발생 [CComPtrBase::p](#p) NULL와 같지 않습니다.
 
-##  <a name="operator_eq_eq"></a>  CComPtrBase::operator = =
+##  <a name="operator_eq_eq"></a>  CComPtrBase::operator ==
 
 같음 연산자입니다.
 
@@ -291,14 +293,14 @@ bool operator== (T* pT) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
 
 경우 true를 반환 `CComPtrBase` 하 고 *pT* 는 동일한 개체를 가리키기 위해 false이 고, 그렇지 합니다.
 
-##  <a name="operator_ptr"></a>  CComPtrBase::operator-&gt;
+##  <a name="operator_ptr"></a>  CComPtrBase::operator -&gt;
 
 멤버 포인터 연산자입니다.
 
@@ -324,7 +326,7 @@ bool operator<(T* pT) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -415,6 +417,6 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 이 메서드를 호출 [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: 71ae39cb62da7938880973dc48b65ed69b9c8b92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a5adc5ae6b1981d7f8260d684a33d8bd7918e40
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569734"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272843"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl 클래스
 
@@ -80,8 +80,8 @@ class CStatusBarCtrl : public CWnd
 |[CStatusBarCtrl::GetIcon](#geticon)|현재 상태 표시줄 컨트롤의 일부 (창)에 대 한 아이콘을 검색합니다.|
 |[CStatusBarCtrl::GetParts](#getparts)|상태 표시줄 컨트롤의 파트 수를 검색합니다.|
 |[CStatusBarCtrl::GetRect](#getrect)|상태 표시줄 컨트롤에 있는 파트의 경계 사각형을 검색 합니다.|
-|[Cstatusbarctrl:: Gettext](#gettext)|상태 표시줄 컨트롤의 특정된 부분에서 텍스트를 검색합니다.|
-|[Cstatusbarctrl:: Gettextlength](#gettextlength)|상태 표시줄 컨트롤의 특정된 부분에서 텍스트의 문자에서 길이 검색 합니다.|
+|[CStatusBarCtrl::GetText](#gettext)|상태 표시줄 컨트롤의 특정된 부분에서 텍스트를 검색합니다.|
+|[CStatusBarCtrl::GetTextLength](#gettextlength)|상태 표시줄 컨트롤의 특정된 부분에서 텍스트의 문자에서 길이 검색 합니다.|
 |[CStatusBarCtrl::GetTipText](#gettiptext)|상태 표시줄 창의 도구 설명 텍스트를 검색합니다.|
 |[CStatusBarCtrl::IsSimple](#issimple)|단순 모드에 있는지 확인 하려면 상태 창 컨트롤을 확인 합니다.|
 |[CStatusBarCtrl::SetBkColor](#setbkcolor)|상태 표시줄의 배경색을 설정 합니다.|
@@ -100,7 +100,7 @@ class CStatusBarCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CStatusBarCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 및 [사용 하 여 CStatusBarCtrl](../../mfc/using-cstatusbarctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -244,7 +244,7 @@ BOOL GetBorders(
 *nHorz*<br/>
 가로 테두리의 두께 수신 하는 정수에 대 한 참조입니다.
 
-*변환*<br/>
+*nVert*<br/>
 세로 테두리의 두께 수신 하는 정수에 대 한 참조입니다.
 
 *nSpacing*<br/>
@@ -354,7 +354,7 @@ BOOL GetRect(
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#4](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_6.cpp)]
 
-##  <a name="gettext"></a>  Cstatusbarctrl:: Gettext
+##  <a name="gettext"></a>  CStatusBarCtrl::GetText
 
 상태 표시줄 컨트롤의 특정된 부분에서 텍스트를 검색합니다.
 
@@ -396,7 +396,7 @@ int GetText(
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#5](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_7.cpp)]
 
-##  <a name="gettextlength"></a>  Cstatusbarctrl:: Gettextlength
+##  <a name="gettextlength"></a>  CStatusBarCtrl::GetTextLength
 
 상태 표시줄 컨트롤의 특정된 부분에서 텍스트의 문자에서 길이 검색합니다.
 
@@ -613,7 +613,7 @@ BOOL SetText(
 *nPane*<br/>
 설정할 부분의 0부터 시작하는 인덱스입니다. 이 값이 255인 경우에는 상태 표시줄 컨트롤이 하나의 부분만 있는 단일 컨트롤인 것으로 간주됩니다.
 
-*n 형식*<br/>
+*nType*<br/>
 그리기 작업의 형식입니다. 참조 [SB_SETTEXT 메시지](/windows/desktop/Controls/sb-settext) 가능한 값 목록은 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -654,7 +654,7 @@ void SetTipText(
 
 [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

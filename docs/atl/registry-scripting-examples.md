@@ -7,12 +7,12 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - registry, Registrar
 ms.assetid: b6df80e1-e08b-40ee-9243-9b381b172460
-ms.openlocfilehash: d15c2d9b6641f7d87f394327aa4be71e51afb613
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dffdd111d33d6fbd845e1534cdef1d5c8e1749d2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509359"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262937"
 ---
 # <a name="registry-scripting-examples"></a>레지스트리 스크립팅 예
 
@@ -110,7 +110,6 @@ HKEY_CURRENT_USER
 > [!NOTE]
 > 등록자 스크립트에서 4k 최대 토큰 크기입니다. (토큰 구문에서 인식할 수 있는 요소입니다.) 이전 스크립트 예제에서는 `HKCR`, `HKEY_CURRENT_USER`, `'MyVeryOwnKey'`, 및 `'HowGoesIt'` 는 모든 토큰을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)
-

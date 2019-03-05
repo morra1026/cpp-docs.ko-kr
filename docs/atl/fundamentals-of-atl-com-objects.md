@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL COM objects
 - COM objects, ATL
 ms.assetid: 0f9c9d98-cc28-45da-89ac-dc94cee422fe
-ms.openlocfilehash: 6af732b381ab0c6c507d1d651b096e3976ab2d4b
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: cba26ede01b69e4a077f1e842982adc8c2127331
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176499"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270048"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM 개체의 기본 사항
 
@@ -45,7 +45,7 @@ ATL COM 개체의 다른 측면은 다른 클래스에 의해 처리 됩니다.
 
 - [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) 구현 된 `ISupportErrorInfo` 오류 정보를 보장 하는 인터페이스 호출 체인을 올바르게 전파 될 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [CComObjectRootEx 구현](../atl/implementing-ccomobjectrootex.md)<br/>
 예제를 구현 하기 위한 COM 맵 엔트리 `CComObjectRootEx`합니다.
@@ -73,7 +73,6 @@ ATL COM 개체 만들기에 대 한 정보를 제공 합니다.
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

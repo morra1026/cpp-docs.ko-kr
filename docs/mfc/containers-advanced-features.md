@@ -12,12 +12,12 @@ helpviewer_keywords:
 - server/container applications [MFC]
 - containers [MFC], container applications
 ms.assetid: 221fd99c-b138-40fa-ad6a-974e3b3ad1f8
-ms.openlocfilehash: 95606818cf5673ef5d4a70361a8e79a9ed28d11b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d83ba601766f4b6fb84576571239a250169abb1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506082"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278706"
 ---
 # <a name="containers-advanced-features"></a>컨테이너: 고급 기능
 
@@ -31,7 +31,7 @@ ms.locfileid: "50506082"
 
 컨테이너/서버 응용 프로그램은 컨테이너 및 서버를 모두 사용 되는 응용 프로그램. Windows 용 Microsoft Word는이 예시입니다. 다른 응용 프로그램의 Windows에 대 한 Word 문서를 포함할 수 있습니다 하 고 Windows에 대 한 Word 문서에서 항목을 포함할 수도 있습니다. 컨테이너 응용 프로그램에 컨테이너와 전체 서버 (조합 컨테이너/미니 서버 응용 프로그램을 만들 수 없습니다)를 수정 하기 위한 프로세스는 전체 서버를 만드는 프로세스와 비슷합니다.
 
-이 문서 [서버: 서버 구현](../mfc/servers-implementing-a-server.md) 서버 응용 프로그램을 구현 하는 데 필요한 작업의 수를 나열 합니다. 컨테이너/서버 응용 프로그램에 컨테이너 응용 프로그램으로 변환 하면 다음 수행 해야 이러한 동일한 작업의 일부 코드 컨테이너를 추가 합니다. 다음은 고려해 야 할 중요 한 사항에 대 한 목록입니다.
+문서 [서버: 서버 구현](../mfc/servers-implementing-a-server.md) 서버 응용 프로그램을 구현 하는 데 필요한 작업의 수를 나열 합니다. 컨테이너/서버 응용 프로그램에 컨테이너 응용 프로그램으로 변환 하면 다음 수행 해야 이러한 동일한 작업의 일부 코드 컨테이너를 추가 합니다. 다음은 고려해 야 할 중요 한 사항에 대 한 목록입니다.
 
 - 이미 응용 프로그램 마법사에서 만든 컨테이너 코드 OLE 하위 시스템을 초기화 합니다. 지원 하기 위해 아무 것도 추가 하거나 변경 하려면 않아도 됩니다.
 
@@ -41,7 +41,7 @@ ms.locfileid: "50506082"
 
    예를 들어, MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 더 컨테이너/서버 응용 프로그램에서 만든 항목을 포함 합니다. OCLIENT 응용 프로그램을 열면 및 전체 컨테이너/서버 응용 프로그램에서 만든 항목을 편집 합니다. MFC OLE 샘플에서 만든 항목을 포함 하려는 하려는 응용 프로그램의 항목을 편집 하는 동안 [HIERSVR](../visual-cpp-samples.md)합니다. 이 위해 내부 활성화를 사용할 수 없습니다. 이 항목을 활성화 하는 HIERSVR 완전히 열어야 합니다. Microsoft Foundation Class 라이브러리는이 OLE 기능을 지원 하지 않으므로, 재정의 `COleClientItem::CanActivate` 이 이런 확인 하 고 응용 프로그램에서 가능한 런타임 오류를 방지할 수 있습니다.
 
-새 응용 프로그램을 만드는 경우 컨테이너/서버 응용 프로그램으로 작동 시키려면 응용 프로그램 마법사에서이 지원은 OLE 옵션 대화 상자에서 옵션 자동으로 만들 수는 선택 합니다. 자세한 내용은 문서 참조 [개요: ActiveX 컨트롤 컨테이너 만들기](../mfc/reference/creating-an-mfc-activex-control-container.md)합니다. MFC 샘플에 대 한 내용은 MFC 샘플을 참조 하세요.
+새 응용 프로그램을 만드는 경우 컨테이너/서버 응용 프로그램으로 작동 시키려면 응용 프로그램 마법사에서이 지원은 OLE 옵션 대화 상자에서 옵션 자동으로 만들 수는 선택 합니다. 자세한 내용은 문서를 참조 하세요. [개요: ActiveX 컨트롤 컨테이너 만들기](../mfc/reference/creating-an-mfc-activex-control-container.md)합니다. MFC 샘플에 대 한 내용은 MFC 샘플을 참조 하세요.
 
 참고 MDI 응용 프로그램 자체에 삽입할 수 있습니다. SDI 응용 프로그램 아닌 컨테이너/서버 응용 프로그램 자체에 삽입할 수 없습니다.
 
@@ -71,8 +71,7 @@ ms.locfileid: "50506082"
 
 MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 이 기능을 구현 합니다. 이렇게 하는 방법의 예제를 참조 하세요. 합니다 `InitInstance` 함수는 *OCLIENT 합니다. CPP* 이 샘플 응용 프로그램의 파일입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [서버](../mfc/servers.md)
-

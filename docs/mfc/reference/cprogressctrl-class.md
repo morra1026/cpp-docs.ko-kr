@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: ba97dd27fbf70c34461d45755fd008e6ad9099b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6d5d3becfd1c1ee4a032c74eb116ede82c42bc4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585902"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260272"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 
@@ -77,7 +77,7 @@ class CProgressCtrl : public CWnd
 |[CProgressCtrl::GetBkColor](#getbkcolor)|현재 진행률 표시줄의 배경색을 가져옵니다.|
 |[CProgressCtrl::GetPos](#getpos)|진행률 표시줄의 현재 위치를 가져옵니다.|
 |[CProgressCtrl::GetRange](#getrange)|진행률 표시줄 컨트롤의 범위는 한 및 상한 제한을 가져옵니다.|
-|[Cprogressctrl:: Getstate](#getstate)|현재 진행률 표시줄 컨트롤의 상태를 가져옵니다.|
+|[CProgressCtrl::GetState](#getstate)|현재 진행률 표시줄 컨트롤의 상태를 가져옵니다.|
 |[CProgressCtrl::GetStep](#getstep)|현재 진행률 표시줄 컨트롤의 진행률 표시줄에 대 한 단계 증가 검색합니다.|
 |[CProgressCtrl::OffsetPos](#offsetpos)|지정 된 증분만큼 진행률 표시줄 컨트롤의 현재 위치를 이동 하 고 새 위치를 반영 하도록 막대를 다시 그립니다.|
 |[CProgressCtrl::SetBarColor](#setbarcolor)|현재 진행률 표시줄 컨트롤에는 진행률 표시기의 색을 설정합니다.|
@@ -97,7 +97,7 @@ class CProgressCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CProgressCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CProgressCtrl 사용 하 여](../../mfc/using-cprogressctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -285,7 +285,7 @@ void GetRange(
 
 [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_4.cpp)]
 
-##  <a name="getstate"></a>  Cprogressctrl:: Getstate
+##  <a name="getstate"></a>  CProgressCtrl::GetState
 
 현재 진행률 표시줄 컨트롤의 상태를 가져옵니다.
 
@@ -297,7 +297,7 @@ int GetState() const;
 
 다음 값 중 하나는 현재 진행률 표시줄 컨트롤의 상태:
 
-|값|시스템 상태|
+|값|상태|
 |-----------|-----------|
 |PBST_NORMAL|진행 중|
 |PBST_ERROR|Error|
@@ -442,7 +442,7 @@ BOOL SetMarquee(
 |매개 변수|설명|
 |---------------|-----------------|
 |*fMarqueeMode*|[in] 설정 움직이는 텍스트 모드를 켜 짐 또는 움직이는 텍스트 모드를 해제 하려면 FALSE true로 설정 하면입니다.|
-|*n 간격*|[in] 움직이는 텍스트 애니메이션의 업데이트 간격 (밀리초) 시간입니다.|
+|*nInterval*|[in] 움직이는 텍스트 애니메이션의 업데이트 간격 (밀리초) 시간입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -602,9 +602,8 @@ int StepIt();
 
 [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

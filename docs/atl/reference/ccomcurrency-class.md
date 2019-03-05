@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCurrency class
 ms.assetid: a1c3d10a-bba6-40cc-8bcf-aed9023c8a9e
-ms.openlocfilehash: 5a619eef33a60dc1a34d31c3d51614de20fc8f28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b2c07bc9c0b1e96f34798b20207dc0eb0362e534
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451157"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277724"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency 클래스
 
@@ -38,38 +38,45 @@ class CComCurrency
 
 |이름|설명|
 |----------|-----------------|
-|[CComCurrency::CComCurrency](#ccomcurrency)|`CComCurrency` 개체에 대한 생성자입니다.|
+|[CComCurrency::CComCurrency](#ccomcurrency)|
+  `CComCurrency` 개체에 대한 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
 |이름|설명|
 |----------|-----------------|
-|[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|`m_currency` 데이터 멤버의 주소를 반환합니다.|
-|[Ccomcurrency:: Getfraction](#getfraction)|`CComCurrency` 개체의 소수 부분을 반환하려면 이 메서드를 호출합니다.|
-|[CComCurrency::GetInteger](#getinteger)|`CComCurrency` 개체의 정수 부분을 반환하려면 이 메서드를 호출합니다.|
-|[CComCurrency::Round](#round)|`CComCurrency` 개체를 가장 가까운 정수 값으로 반올림하려면 이 메서드를 호출합니다.|
-|[CComCurrency::SetFraction](#setfraction)|`CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.|
-|[CComCurrency::SetInteger](#setinteger)|`CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.|
+|[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|
+  `m_currency` 데이터 멤버의 주소를 반환합니다.|
+|[CComCurrency::GetFraction](#getfraction)|
+  `CComCurrency` 개체의 소수 부분을 반환하려면 이 메서드를 호출합니다.|
+|[CComCurrency::GetInteger](#getinteger)|
+  `CComCurrency` 개체의 정수 부분을 반환하려면 이 메서드를 호출합니다.|
+|[CComCurrency::Round](#round)|
+  `CComCurrency` 개체를 가장 가까운 정수 값으로 반올림하려면 이 메서드를 호출합니다.|
+|[CComCurrency::SetFraction](#setfraction)|
+  `CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.|
+|[CComCurrency::SetInteger](#setinteger)|
+  `CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
 |이름|설명|
 |----------|-----------------|
-|[CComCurrency::operator-](#operator_-)|이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하는 데 사용됩니다.|
-|[CComCurrency::operator! =](#operator_neq)|두 `CComCurrency` 개체가 다른지 비교합니다.|
+|[CComCurrency::operator -](#operator_-)|이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하는 데 사용됩니다.|
+|[CComCurrency::operator !=](#operator_neq)|두 `CComCurrency` 개체가 다른지 비교합니다.|
 |[CComCurrency::operator *](#operator_star)|이 연산자는 `CComCurrency` 개체에 대해 곱하기를 수행하는 데 사용됩니다.|
-|[CComCurrency::operator * =](#operator_star_eq)|이 연산자는 `CComCurrency` 개체에 대해 곱하기를 수행하고 결과를 할당하는 데 사용됩니다.|
+|[CComCurrency::operator *=](#operator_star_eq)|이 연산자는 `CComCurrency` 개체에 대해 곱하기를 수행하고 결과를 할당하는 데 사용됩니다.|
 |[CComCurrency::operator /](#operator_div)|이 연산자는 `CComCurrency` 개체에 대해 나누기를 수행하는 데 사용됩니다.|
-|[CComCurrency::operator / =](#operator_div_eq)|이 연산자는 `CComCurrency` 개체에 대해 나누기를 수행하고 결과를 할당하는 데 사용됩니다.|
+|[CComCurrency::operator /=](#operator_div_eq)|이 연산자는 `CComCurrency` 개체에 대해 나누기를 수행하고 결과를 할당하는 데 사용됩니다.|
 |[CComCurrency::operator +](#operator_add)|이 연산자는 `CComCurrency` 개체에 대해 더하기를 수행하는 데 사용됩니다.|
 |[CComCurrency::operator + =](#operator_add_eq)|이 연산자는 `CComCurrency` 개체에 대해 더하기를 수행하고 결과를 현재 개체에 할당하는 데 사용됩니다.|
 |[CComCurrency::operator <](#operator_lt)|이 연산자는 두 `CComCurrency` 개체를 비교하여 더 작은 값을 확인합니다.|
 |[CComCurrency::operator < =](#operator_lt_eq)|이 연산자는 두 `CComCurrency` 개체를 비교하여 더 작거나 같은 값을 확인합니다.|
 |[CComCurrency::operator =](#operator_eq)|다음 연산자는 `CComCurrency` 개체에 새 값을 할당합니다.|
-|[CComCurrency::operator =](#operator_-_eq)|이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하고 결과를 할당하는 데 사용됩니다.|
-|[CComCurrency::operator = =](#operator_eq_eq)|이 연산자는 두 `CComCurrency` 개체가 같은지 비교합니다.|
+|[CComCurrency::operator -=](#operator_-_eq)|이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하고 결과를 할당하는 데 사용됩니다.|
+|[CComCurrency::operator ==](#operator_eq_eq)|이 연산자는 두 `CComCurrency` 개체가 같은지 비교합니다.|
 |[CComCurrency::operator >](#operator_gt)|이 연산자는 두 `CComCurrency` 개체를 비교하여 더 큰 값을 확인합니다.|
-|[CComCurrency::operator > =](#operator_gt_eq)|이 연산자는 두 `CComCurrency` 개체를 비교하여 더 크거나 같은 값을 확인합니다.|
+|[CComCurrency::operator >=](#operator_gt_eq)|이 연산자는 두 `CComCurrency` 개체를 비교하여 더 크거나 같은 값을 확인합니다.|
 |[CComCurrency::operator 통화](#operator_currency)|통화 개체를 캐스팅합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -84,7 +91,8 @@ class CComCurrency
 
 `CComCurrency` 래퍼는이 고정 소수점 형식에 대 한 산술 연산, 할당 및 비교 작업을 구현 합니다. 지원되는 응용 프로그램은 고정 소수점 계산 시 발생할 수 있는 반올림 오류를 제어하도록 선택했습니다.
 
-`CComCurrency` 개체는 두 부분(소수점 기호 왼쪽 값을 저장하는 정수 부분과 소수점 기호 오른쪽 값을 저장하는 소수 부분)으로 된 소수점 기호의 한 쪽에 있는 숫자에 대한 액세스를 제공합니다. 소수 부분 (CY_MIN_FRACTION)-9999에서 + 9999 (CY_MAX_FRACTION) 사이의 정수 값으로 내부적으로 저장 됩니다. 메서드 [ccomcurrency:: Getfraction](#getfraction) 10000 (CY_SCALE)의 비율로 배율 조정 값을 반환 합니다.
+
+  `CComCurrency` 개체는 두 부분(소수점 기호 왼쪽 값을 저장하는 정수 부분과 소수점 기호 오른쪽 값을 저장하는 소수 부분)으로 된 소수점 기호의 한 쪽에 있는 숫자에 대한 액세스를 제공합니다. 소수 부분 (CY_MIN_FRACTION)-9999에서 + 9999 (CY_MAX_FRACTION) 사이의 정수 값으로 내부적으로 저장 됩니다. 메서드 [ccomcurrency:: Getfraction](#getfraction) 10000 (CY_SCALE)의 비율로 배율 조정 값을 반환 합니다.
 
 정수 및 소수 자릿수 구성 요소를 지정 하는 경우는 `CComCurrency` 개체, 소수 부분이 0에서 9999 범위의 숫자입니다. 이는 소수점 뒤 두 자리의 유효 숫자만 사용하여 금액을 표현하는 미국 달러와 같은 통화를 처리할 때 중요합니다. 마지막 두 자리가 표시되지 않는 경우에도 이를 고려해야 합니다.
 
@@ -131,7 +139,7 @@ explicit CComCurrency(LPCSTR szSrc);
 *cySrc*<br/>
 통화 형식의 변수입니다.
 
-*bSrc*, *dSrc*를 *fSrc*를 *lSrc*를 *sSrc*, *ulSrc, usSrc*<br/>
+*bSrc*, *dSrc*, *fSrc*, *lSrc*, *sSrc*, *ulSrc, usSrc*<br/>
 멤버 변수를 지정 된 초기 값 `m_currency`합니다.
 
 *cSrc*<br/>
@@ -159,7 +167,8 @@ VARIANT 형식의 변수입니다. 현재 스레드의 로캘은 변환 하는 �
 
 ##  <a name="getcurrencyptr"></a>  CComCurrency::GetCurrencyPtr
 
-`m_currency` 데이터 멤버의 주소를 반환합니다.
+
+  `m_currency` 데이터 멤버의 주소를 반환합니다.
 
 ```
 CURRENCY* GetCurrencyPtr() throw();
@@ -169,7 +178,7 @@ CURRENCY* GetCurrencyPtr() throw();
 
 주소를 반환 하는 `m_currency` 데이터 멤버
 
-##  <a name="getfraction"></a>  Ccomcurrency:: Getfraction
+##  <a name="getfraction"></a>  CComCurrency::GetFraction
 
 소수 부분을 반환 하려면이 메서드를 호출 합니다 `CComCurrency` 개체입니다.
 
@@ -217,7 +226,7 @@ CURRENCY m_currency;
 
 이 멤버에 액세스 하 고이 클래스의 메서드에 의해 조작 통화를 보유 합니다.
 
-##  <a name="operator_-"></a>  CComCurrency::operator-
+##  <a name="operator_-"></a>  CComCurrency::operator -
 
 이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하는 데 사용됩니다.
 
@@ -239,7 +248,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/cpp/ccomcurrency-class_3.cpp)]
 
-##  <a name="operator_neq"></a>  CComCurrency::operator! =
+##  <a name="operator_neq"></a>  CComCurrency::operator !=
 
 이 연산자는 두 개체가 같지 않은지 비교합니다.
 
@@ -331,7 +340,7 @@ CComCurrency operator/(long nOperand) const;
 
 [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/cpp/ccomcurrency-class_7.cpp)]
 
-##  <a name="operator_div_eq"></a>  CComCurrency::operator / =
+##  <a name="operator_div_eq"></a>  CComCurrency::operator /=
 
 이 연산자는 `CComCurrency` 개체에 대해 나누기를 수행하고 결과를 할당하는 데 사용됩니다.
 
@@ -373,7 +382,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/cpp/ccomcurrency-class_9.cpp)]
 
-##  <a name="operator_add_eq"></a>  CComCurrency::operator + =
+##  <a name="operator_add_eq"></a>  CComCurrency::operator +=
 
 이 연산자는 `CComCurrency` 개체에 대해 더하기를 수행하고 결과를 현재 개체에 할당하는 데 사용됩니다.
 
@@ -462,7 +471,7 @@ const CComCurrency& operator= (DECIMAL dSrc);
 *cySrc*<br/>
 통화 형식의 변수입니다.
 
-*sSrc*, *fSrc*를 *lSrc*를 *bSrc*를 *usSrc*를 *dSrc*, *cSrc* 하십시오 *ulSrc*, *dSrc*<br/>
+*sSrc*, *fSrc*, *lSrc*, *bSrc*, *usSrc*, *dSrc*, *cSrc*, *ulSrc*, *dSrc*<br/>
 숫자 값을 할당 하는 `CComCurrency` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -473,7 +482,7 @@ const CComCurrency& operator= (DECIMAL dSrc);
 
 [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/cpp/ccomcurrency-class_13.cpp)]
 
-##  <a name="operator_-_eq"></a>  CComCurrency::operator =
+##  <a name="operator_-_eq"></a>  CComCurrency::operator -=
 
 이 연산자는 `CComCurrency` 개체에 대해 빼기를 수행하고 결과를 할당하는 데 사용됩니다.
 
@@ -494,7 +503,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/cpp/ccomcurrency-class_14.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CComCurrency::operator = =
+##  <a name="operator_eq_eq"></a>  CComCurrency::operator ==
 
 이 연산자는 두 `CComCurrency` 개체가 같은지 비교합니다.
 
@@ -597,7 +606,8 @@ HRESULT Roundint nDecimals);
 
 ##  <a name="setfraction"></a>  CComCurrency::SetFraction
 
-`CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.
+
+  `CComCurrency` 개체의 소수 부분을 설정하려면 이 메서드를 호출합니다.
 
 ```
 HRESULT SetFraction(SHORT nFraction);
@@ -618,7 +628,8 @@ HRESULT SetFraction(SHORT nFraction);
 
 ##  <a name="setinteger"></a>  CComCurrency::SetInteger
 
-`CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.
+
+  `CComCurrency` 개체의 정수 부분을 설정하려면 이 메서드를 호출합니다.
 
 ```
 HRESULT SetInteger(LONGLONG nInteger);
@@ -639,8 +650,8 @@ HRESULT SetInteger(LONGLONG nInteger);
 
 [!code-cpp[NVC_ATL_Utilities#54](../../atl/codesnippet/cpp/ccomcurrency-class_21.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COleCurrency 클래스](../../mfc/reference/colecurrency-class.md)<br/>
-[통화](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
+[CURRENCY](/windows/desktop/api/wtypes/ns-wtypes-tagcy)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

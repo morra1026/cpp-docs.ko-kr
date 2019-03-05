@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArrayEqualHelperFalse class
 ms.assetid: 6918af6f-d23d-49eb-8482-c44272f5ffeb
-ms.openlocfilehash: 91987d369291a092b6dfb5f7db9ca8ba1434a7cc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35207fdcbffc0e0367d86682b5f731eef617d761
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594911"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269060"
 ---
 # <a name="csimplearrayequalhelperfalse-class"></a>CSimpleArrayEqualHelperFalse 클래스
 
@@ -63,7 +63,7 @@ false를 반환합니다.
 
 이 메서드는 항상 false를 반환 하며 호출 `ATLASSERT` 인수로 참조 하는 경우 false입니다. 목적은 `CSimpleArrayEqualHelperFalse::IsEqual` 메서드 비교를 사용 하 여 같음 테스트 적절 하 게 정의 하지 않은 경우에 잘 정의 된 방식으로 실패 하는 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSimpleArrayEqualHelper 클래스](../../atl/reference/csimplearrayequalhelper-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

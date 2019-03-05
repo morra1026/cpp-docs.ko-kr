@@ -7,12 +7,12 @@ helpviewer_keywords:
 - access keys [MFC], hot keys
 - global hot keys [MFC]
 ms.assetid: e0b95d14-c571-4c9a-9cd1-e7fc1f0e278d
-ms.openlocfilehash: 4cafee311f71d8165380b3fb7e192e7032b7941c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eedeb0547320c8b421fa72647f51b02f834af300
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529937"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273629"
 ---
 # <a name="global-hot-keys"></a>전역 바로 가기 키
 
@@ -22,8 +22,7 @@ ms.locfileid: "50529937"
 
 전역 바로 가기 키를 누를 때마다 지정 된 창의 수신 된 [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) 지정 하는 메시지 **SC_HOTKEY** 명령 형식으로 합니다. 이 메시지는 수신 하는 창도 활성화 합니다. 이 메시지는 정확한 키를 눌렀는지에 대 한 정보 포함 되어 있지 않으므로,이 메서드를 사용 하 여 없도록 동일한 창에 연결 될 수 있는 다양 한 바로 가기 키를 구별 합니다. 전송한 응용 프로그램 바로 가기 키까지 유효 **WM_SETHOTKEY** 종료 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHotKeyCtrl 사용](../mfc/using-chotkeyctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

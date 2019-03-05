@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSacl class
 ms.assetid: 8624889b-aebc-4183-9d29-a20f07837f05
-ms.openlocfilehash: da7b1310f80bfb03645d386b59632e1c2811a367
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f8820be3073c6ffaffdaa9d04a7338ad584d36ca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651141"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267294"
 ---
 # <a name="csacl-class"></a>CSacl 클래스
 
@@ -66,7 +66,7 @@ SACL이 도메인 컨트롤러의 보안 이벤트 로그에서 감사 레코드
 
 Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CAcl](../../atl/reference/cacl-class.md)
 
@@ -219,10 +219,10 @@ void RemoveAllAces() throw();
 
 제거 마다 `ACE` (있는 경우) 구조를 `CSacl` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAcl 클래스](../../atl/reference/cacl-class.md)<br/>
-[Acl](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[Ace](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[ACEs](/windows/desktop/SecAuthZ/access-control-entries)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

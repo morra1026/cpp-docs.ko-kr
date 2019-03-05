@@ -52,12 +52,12 @@ helpviewer_keywords:
 - COleDocument [MFC], OnUpdatePasteLinkMenu
 - COleDocument [MFC], OnUpdatePasteMenu
 ms.assetid: dc2ecb99-03e1-44c7-bb69-48056dd1b672
-ms.openlocfilehash: 2f28178240f7d17e124970d91ec7eb338ef110e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f36557a4a993e8abd3004dc59372cc5a089e044
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50452154"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259752"
 ---
 # <a name="coledocument-class"></a>COleDocument 클래스
 
@@ -95,7 +95,7 @@ class COleDocument : public CDocument
 |[COleDocument::RemoveItem](#removeitem)|문서에서 유지 관리 하는 항목의 목록에서 항목을 제거 합니다.|
 |[COleDocument::UpdateModifiedFlag](#updatemodifiedflag)|포함 OLE 항목을 수정한 경우 수정 된 문서를 표시 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -117,11 +117,11 @@ class COleDocument : public CDocument
 
 간단한 컨테이너 응용 프로그램을 작성 하는 경우 문서에서 파생 `COleDocument`합니다. 해당 문서에 포함 된 포함된 된 항목에 연결을 지 원하는 컨테이너 응용 프로그램을 작성 하는 경우 문서에서 파생 [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md)합니다. 를 작성 하는 서버 응용 프로그램 또는 조합 컨테이너/서버에서 문서 클래스 파생 [COleServerDoc](../../mfc/reference/coleserverdoc-class.md)합니다. `COleLinkingDoc` 및 `COleServerDoc` 에서 파생 됩니다 `COleDocument`이므로 이러한 클래스에서 사용 가능한 모든 서비스를 상속 `COleDocument` 고 `CDocument`입니다.
 
-사용할 `COleDocument`클래스에서 파생 되 고 응용 프로그램의 비 OLE 데이터 뿐만 아니라 포함 또는 연결 된 항목을 관리 하는 기능을 추가 합니다. 정의 하는 경우 `CDocItem`-응용 프로그램의 네이티브 데이터를 저장 하기 위해 파생 클래스에서 정의 된 기본 구현을 사용할 수 있습니다 `COleDocument` OLE와 비 OLE 데이터를 저장 합니다. 또한 OLE 항목에서 별도로 비 OLE 데이터 저장을 위한 고유한 데이터 구조를 디자인할 수 있습니다. 자세한 내용은 문서 참조 [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...
+사용할 `COleDocument`클래스에서 파생 되 고 응용 프로그램의 비 OLE 데이터 뿐만 아니라 포함 또는 연결 된 항목을 관리 하는 기능을 추가 합니다. 정의 하는 경우 `CDocItem`-응용 프로그램의 네이티브 데이터를 저장 하기 위해 파생 클래스에서 정의 된 기본 구현을 사용할 수 있습니다 `COleDocument` OLE와 비 OLE 데이터를 저장 합니다. 또한 OLE 항목에서 별도로 비 OLE 데이터 저장을 위한 고유한 데이터 구조를 디자인할 수 있습니다. 자세한 내용은 문서를 참조 하세요. [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...
 
 `CDocument` 메일 지원 (MAPI)이 있으면 메일을 통해 문서 전송을 지원 합니다. `COleDocument` 이 업데이트 [OnFileSendMail](#onfilesendmail) 복합 문서를 올바르게 처리 하도록 합니다. 자세한 내용은 문서를 참조 하세요 [MAPI](../../mfc/mapi.md) 하 고 [MFC의 MAPI 지원](../../mfc/mapi-support-in-mfc.md)...
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -206,7 +206,7 @@ void EnableCompoundFile(BOOL bEnable = TRUE);
 
 ### <a name="remarks"></a>설명
 
-구조적된 저장소를 라고 합니다. 일반적으로의 생성자에서이 함수를 호출 하면 `COleDocument`-클래스를 파생 합니다. 복합 문서에 대 한 자세한 내용은 문서를 참조 하세요 [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...
+구조적된 저장소를 라고 합니다. 일반적으로의 생성자에서이 함수를 호출 하면 `COleDocument`-클래스를 파생 합니다. 복합 문서에 대 한 자세한 내용은 문서를 참조 하세요. [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...
 
 이 멤버 함수를 호출 하지 않으면 문서 불러옵니다 ("평면") 파일 형식으로 저장 됩니다.
 
@@ -542,10 +542,9 @@ virtual void UpdateModifiedFlag();
 
 이렇게 하면 문서의 네이티브 데이터 수정 하지 않은 경우에 문서를 닫기 전에 저장 하 라는 메시지를 표시 하기 위해 프레임 워크.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 컨테이너](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 MFCBIND](../../visual-cpp-samples.md)<br/>
 [CDocument 클래스](../../mfc/reference/cdocument-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

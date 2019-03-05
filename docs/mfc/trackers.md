@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CRectTracker class [MFC], implementing trackers
 - OLE server applications [MFC], trackers
 ms.assetid: dcd09399-6637-4621-80e5-d12670429787
-ms.openlocfilehash: 74e70f989d3803b11f05150f9b55c6dfe79ed876
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6dffb5b4326d08daf59098e1888169c2353dafe2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481954"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262716"
 ---
 # <a name="trackers"></a>추적기
 
@@ -26,7 +26,7 @@ MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 추적기 및 컨테이너 �
 
 OLE 응용 프로그램에서 추적기 구현에 대 한 자세한 내용은 참조 하세요. [추적기: OLE 응용 프로그램에서 추적기 구현](../mfc/trackers-implementing-trackers-in-your-ole-application.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [COleClientItem 클래스](../mfc/reference/coleclientitem-class.md)

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CSimpleException [MFC], CSimpleException
 - CSimpleException [MFC], GetErrorMessage
 ms.assetid: be0eb8ef-e5b9-47d6-b0fb-efaff2d1e666
-ms.openlocfilehash: 8fb5f7e2133f1055cde05b2dc1358896c9ea0c20
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa36fc0ac0eed5ea760224f9e0a3af1c97e18895
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508297"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263301"
 ---
 # <a name="csimpleexception-class"></a>CSimpleException 클래스
 
@@ -57,7 +57,7 @@ class AFX_NOVTABLE CSimpleException : public CException
 
 자세한 내용은 참조는 [CException 클래스](../../mfc/reference/cexception-class.md) 항목 및 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -117,9 +117,8 @@ virtual BOOL GetErrorMessage(
 
 자세한 내용은 [CException::GetErrorMessage](../../mfc/reference/cfileexception-class.md#geterrormessage)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [예외 처리](../../mfc/exception-handling-in-mfc.md)
-

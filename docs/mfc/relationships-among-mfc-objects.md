@@ -7,12 +7,12 @@ helpviewer_keywords:
 - relationships, MFC objects
 - MFC object relationships
 ms.assetid: 6e8f3b51-e80f-4d88-94c8-4c1e4ee163ad
-ms.openlocfilehash: c02cf723ee7711ec1bfe00841c90bbde8c260ac1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb8d1fcd9737b33d52038746a26f4e1bd1043e95
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585512"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276976"
 ---
 # <a name="relationships-among-mfc-objects"></a>MFC 개체 간 관계
 
@@ -46,10 +46,9 @@ ms.locfileid: "50585512"
 > [!NOTE]
 >  주 프레임 창에 대 한 포인터에 저장 되는 [m_pMainWnd](../mfc/reference/cwinthread-class.md#m_pmainwnd) 응용 프로그램 개체의 멤버 변수입니다. 에 대 한 호출 `OnFileNew` 의 재정의 된 `InitInstance` 멤버 함수 `CWinApp` 설정 *m_pMainWnd* 를 합니다. 호출 하지 마십시오 `OnFileNew`, 변수의 값을 설정 해야 `InitInstance` 직접. (SDI COM 구성 요소 (서버) 응용 프로그램 설정할 없습니다 변수의 명령줄에서이 프로그램이 /Embedding.) 사실은 *m_pMainWnd* 클래스의 멤버는 이제 `CWinThread` 대신 `CWinApp`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 템플릿 및 문서/뷰 만들기 프로세스](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [문서 템플릿 만들기](../mfc/document-template-creation.md)<br/>
 [문서/뷰 만들기](../mfc/document-view-creation.md)<br/>
 [새 문서, 창 및 뷰 만들기](../mfc/creating-new-documents-windows-and-views.md)
-

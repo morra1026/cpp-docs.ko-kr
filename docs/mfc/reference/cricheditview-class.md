@@ -100,12 +100,12 @@ helpviewer_keywords:
 - CRichEditView [MFC], m_nBulletIndent
 - CRichEditView [MFC], m_nWordWrap
 ms.assetid: bd576b10-4cc0-4050-8f76-e1a0548411e4
-ms.openlocfilehash: 8cfaef2c8b064cb9faa8c0f6bf65a8868eed7cc7
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 9cedcfbfb662d7d4d635a02b82ea45828c54b958
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178742"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259518"
 ---
 # <a name="cricheditview-class"></a>CRichEditView 클래스
 
@@ -162,7 +162,7 @@ class CRichEditView : public CCtrlView
 |[CRichEditView::SetParaFormat](#setparaformat)|단락 서식 현재 선택 영역에 대 한 특성을 설정 합니다.|
 |[CRichEditView::TextNotFound](#textnotfound)|컨트롤의 내부 검색 상태를 다시 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -196,7 +196,7 @@ class CRichEditView : public CCtrlView
 
 MFC 응용 프로그램에서 풍부한 편집 뷰를 사용 하는 예제를 보려면 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -298,7 +298,7 @@ BOOL FindText(
 *bWord*<br/>
 검색 단어 단위로 단어의 일부가 아니라 일치 해야 하는 경우를 나타냅니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색 방향을 나타냅니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -336,7 +336,7 @@ BOOL FindTextSimple(
 *bWord*<br/>
 검색 단어 단위로 단어의 일부가 아니라 일치 해야 하는 경우를 나타냅니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색 방향을 나타냅니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -786,7 +786,7 @@ virtual void OnFindNext(
 *lpszFind*<br/>
 찾을 문자열입니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색 방향: TRUE 이면 중지 하도록 합니다. FALSE를 설정 합니다.
 
 *bCase*<br/>
@@ -932,7 +932,7 @@ virtual void OnReplaceSel(
 *lpszFind*<br/>
 바꿀 텍스트입니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색의 방향을 나타냅니다. TRUE가입니다. FALSE를 설정 합니다.
 
 *bCase*<br/>
@@ -1282,7 +1282,7 @@ virtual void WrapChanged();
 
 [!code-cpp[NVC_MFCDocView#163](../../mfc/codesnippet/cpp/cricheditview-class_13.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
 [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)<br/>

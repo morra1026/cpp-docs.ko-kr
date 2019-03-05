@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHwndRenderTarget [MFC], Resize
 - CHwndRenderTarget [MFC], m_pHwndRenderTarget
 ms.assetid: aa65b69f-7202-46ea-af81-ef325da0b840
-ms.openlocfilehash: 439ff0152ec69575f21faa332d8fac4bbe779a16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf446cdf1ea064943ff92d66ac89b0e4177e6910
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551868"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270330"
 ---
 # <a name="chwndrendertarget-class"></a>CHwndRenderTarget 클래스
 
@@ -68,7 +68,7 @@ class CHwndRenderTarget : public CRenderTarget;
 
 |이름|설명|
 |----------|-----------------|
-|[CHwndRenderTarget::operator ID2D1HwndRenderTarget *](#operator_id2d1hwndrendertarget_star)|ID2D1HwndRenderTarget 인터페이스를 반환 합니다.|
+|[CHwndRenderTarget::operator ID2D1HwndRenderTarget*](#operator_id2d1hwndrendertarget_star)|ID2D1HwndRenderTarget 인터페이스를 반환 합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -76,7 +76,7 @@ class CHwndRenderTarget : public CRenderTarget;
 |----------|-----------------|
 |[CHwndRenderTarget::m_pHwndRenderTarget](#m_phwndrendertarget)|ID2D1HwndRenderTarget 개체에 대 한 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -187,7 +187,7 @@ ID2D1HwndRenderTarget 개체에 대 한 포인터입니다.
 ID2D1HwndRenderTarget* m_pHwndRenderTarget;
 ```
 
-##  <a name="operator_id2d1hwndrendertarget_star"></a>  CHwndRenderTarget::operator ID2D1HwndRenderTarget *
+##  <a name="operator_id2d1hwndrendertarget_star"></a>  CHwndRenderTarget::operator ID2D1HwndRenderTarget*
 
 ID2D1HwndRenderTarget 인터페이스를 반환 합니다.
 
@@ -233,6 +233,6 @@ BOOL Resize(const CD2DSizeU& size);
 
 메서드가 성공 하면 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

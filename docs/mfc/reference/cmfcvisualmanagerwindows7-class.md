@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerWindows7 Class [MFC]
 ms.assetid: e8d87df1-0c09-4b58-8ade-4e911f796e42
-ms.openlocfilehash: b71cce32d364200e6f6a8684ffd696c4ea33f1d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 296ccc0accdf2937406d9965118c1807aeb2604c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591674"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269398"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 클래스
 
@@ -34,7 +34,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |이름|설명|
 |----------|-----------------|
 |[CMFCVisualManagerWindows7::CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7)|기본 생성자입니다.|
-|[CMFCVisualManagerWindows7:: ~ CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7__~cmfcvisualmanagerwindows7)|기본 소멸자입니다.|
+|[CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7](#cmfcvisualmanagerwindows7__~cmfcvisualmanagerwindows7)|기본 소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -47,8 +47,8 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::DrawSeparator`|에 구분 기호를 그립니다 합니다 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md)합니다.|
 |`CMFCVisualManagerWindows7::GetRibbonBar`|검색 된 [CMFCRibbonBar 클래스](../../mfc/reference/cmfcribbonbar-class.md) 사용자 인터페이스를 사용 하 여 연결 합니다.|
 |[CMFCVisualManagerWindows7::GetRibbonEditBackgroundColor](#getribboneditbackgroundcolor)|리본 편집 상자 배경 색을 가져옵니다.|
-|`CMFCVisualManagerWindows7::GetRibbonPopupBorderSize`|재정의 [CMFCVisualManager::GetRibbonPopupBorderSize](../../mfc/reference/cmfcvisualmanager-class.md#getribbonpopupbordersize)|
-|`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarChevronOffset`|재정의 [CMFCVisualManager::GetRibbonQuickAccessToolBarChevronOffset](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarchevronoffset)|
+|`CMFCVisualManagerWindows7::GetRibbonPopupBorderSize`|Overrides [CMFCVisualManager::GetRibbonPopupBorderSize](../../mfc/reference/cmfcvisualmanager-class.md#getribbonpopupbordersize)|
+|`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarChevronOffset`|Overrides [CMFCVisualManager::GetRibbonQuickAccessToolBarChevronOffset](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarchevronoffset)|
 |`CMFCVisualManagerWindows7::GetRibbonQuickAccessToolBarRightMargin`|재정의 [CMFCVisualManager::GetRibbonQuickAccessToolBarRightMargin](../../mfc/reference/cmfcvisualmanager-class.md#getribbonquickaccesstoolbarrightmargin)|
 |`CMFCVisualManagerWindows7::IsHighlightWholeMenuItem`|재정의 [CMFCVisualManagerWindows::IsHighlightWholeMenuItem](../../mfc/reference/cmfcvisualmanagerwindows-class.md#ishighlightwholemenuitem)|
 |`CMFCVisualManagerWindows7::IsOwnerDrawMenuCheck`|재정의 [CMFCVisualManager::IsOwnerDrawMenuCheck](../../mfc/reference/cmfcvisualmanager-class.md#isownerdrawmenucheck)|
@@ -74,7 +74,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::OnDrawRibbonPanel`|재정의 [CMFCVisualManager::OnDrawRibbonPanel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonpanel)|
 |`CMFCVisualManagerWindows7::OnDrawRibbonPanelCaption`|재정의 [CMFCVisualManager::OnDrawRibbonPanelCaption](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonpanelcaption)|
 |`CMFCVisualManagerWindows7::OnDrawRibbonProgressBar`|재정의 [CMFCVisualManager::OnDrawRibbonProgressBar](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonprogressbar)|
-|`CMFCVisualManagerWindows7::OnDrawRibbonRecentFilesFrame`|재정의 [CMFCVisualManager::OnDrawRibbonRecentFilesFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonrecentfilesframe)|
+|`CMFCVisualManagerWindows7::OnDrawRibbonRecentFilesFrame`|Overrides [CMFCVisualManager::OnDrawRibbonRecentFilesFrame](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonrecentfilesframe)|
 |`CMFCVisualManagerWindows7::OnDrawRibbonSliderChannel`|재정의 [CMFCVisualManager::OnDrawRibbonSliderChannel](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderchannel)|
 |`CMFCVisualManagerWindows7::OnDrawRibbonSliderThumb`|재정의 [CMFCVisualManager::OnDrawRibbonSliderThumb](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderthumb)|
 |`CMFCVisualManagerWindows7::OnDrawRibbonSliderZoomButton`|재정의 [CMFCVisualManager::OnDrawRibbonSliderZoomButton](../../mfc/reference/cmfcvisualmanager-class.md#ondrawribbonsliderzoombutton)|
@@ -99,7 +99,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 
 CMFCVisualManagerWindows7를 둘 다에서 여러 메서드를 상속 합니다 [CMFCVisualManagerWindows 클래스](../../mfc/reference/cmfcvisualmanagerwindows-class.md) 및 `CMFCVisualManager` 클래스입니다. 이전 섹션에 나열 된 메서드는 메서드를 처음 사용 하 여 `CMFCVisualManagerWindows7` 클래스입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -117,7 +117,7 @@ CMFCVisualManagerWindows7를 둘 다에서 여러 메서드를 상속 합니다 
 
 **헤더:** afxvisualmanagerwindows7.h
 
-##  <a name="_dtorcmfcvisualmanagerwindows7"></a>  CMFCVisualManagerWindows7:: ~ CMFCVisualManagerWindows7
+##  <a name="_dtorcmfcvisualmanagerwindows7"></a>  CMFCVisualManagerWindows7::~CMFCVisualManagerWindows7
 
 기본 소멸자입니다.
 
@@ -193,7 +193,7 @@ virtual void OnFillMenuImageRect(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

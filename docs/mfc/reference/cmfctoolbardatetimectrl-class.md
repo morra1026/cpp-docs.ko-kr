@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CMFCToolBarDateTimeCtrl [MFC], SetTime
 - CMFCToolBarDateTimeCtrl [MFC], SetTimeAll
 ms.assetid: a3853cb9-8ebc-444f-a1e4-9cf905e24c18
-ms.openlocfilehash: 1252f97a93e67348a00c9809e3f216d4ed63c4d8
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: c93d8a2a18518cad8b6fb7fe014828011f78a653
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893681"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280994"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl 클래스
 
@@ -112,7 +112,7 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 
 날짜 및 시간 선택 컨트롤을 사용 하는 방법의 예로, ToolbarDateTimePicker 샘플 프로젝트를 참조 하세요. 도구 모음 단추 컨트롤을 추가 하는 방법에 대 한 정보를 참조 하세요. [연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -611,10 +611,9 @@ static BOOL SetTimeAll(
 
 지정된 된 명령 ID 사용 하 여 도구 모음 단추를 찾아 호출 하 여 날짜 및 시간 선택 컨트롤에서 시간을 설정 [CMFCToolBarDateTimeCtrl::SetTime](#settime)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCToolBarButton 클래스](../../mfc/reference/cmfctoolbarbutton-class.md)<br/>
 [연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-

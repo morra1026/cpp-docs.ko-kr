@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE common dialog classes [MFC]
 - common dialog classes [MFC]
 ms.assetid: 706526ae-f94f-4909-a0f8-6b5fe954fd97
-ms.openlocfilehash: e11e072ad3133d5df9614afa8753178e11b2d025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d34c141fc9a2b53eab6a4c0b0ce1799ff5243d84
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614073"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263548"
 ---
 # <a name="ole-common-dialog-classes"></a>OLE 일반 대화 상자 클래스
 
@@ -50,7 +50,6 @@ Windows 공용 OLE 속성 대화 상자를 캡슐화합니다. 일반 OLE 속성
 [COleBusyDialog](../mfc/reference/colebusydialog-class.md)<br/>
 서버 작업 중이 고 서버가 응답 하지 대화 상자를 사용 중인 응용 프로그램에 대 한 호출을 처리 하기 위한 표준 사용자 인터페이스를 표시 합니다. 일반적으로 자동으로 표시 되는 `COleMessageFilter` 구현 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

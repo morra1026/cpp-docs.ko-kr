@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: ee44c05fa6417aaca367798d7a94a900d521b896
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 51198b44346785369771f63b80164c1a131f6950
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176240"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279690"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 
@@ -78,7 +78,7 @@ class CNetAddressCtrl : public CEdit
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#2](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_2.h)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -245,8 +245,8 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 이 메시지를 호출 하는 [NetAddr_SetAllowType](/windows/desktop/api/shellapi/nf-shellapi-netaddr_setallowtype) Windows SDK에 설명 된 매크로입니다. 매크로는 NCM_SETALLOWTYPE 메시지를 보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CNetAddressCtrl 클래스](../../mfc/reference/cnetaddressctrl-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)
+[CEdit Class](../../mfc/reference/cedit-class.md)

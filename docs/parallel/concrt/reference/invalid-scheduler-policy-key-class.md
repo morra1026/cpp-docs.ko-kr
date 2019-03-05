@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_scheduler_policy_key class
 ms.assetid: 6a7c42fe-9bc4-4a02-bebb-99fe9ef9817d
-ms.openlocfilehash: 775b98d2394dce04b362e92927db1a408b8e1656
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1bc2f1cffdeba5f81bd96932ecef23a563fac351
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677411"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274065"
 ---
 # <a name="invalidschedulerpolicykey-class"></a>invalid_scheduler_policy_key 클래스
 
@@ -31,9 +31,10 @@ class invalid_scheduler_policy_key : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[invalid_scheduler_policy_key](#ctor)|오버로드됨. `invalid_scheduler_policy_key` 개체를 생성합니다.|
+|[invalid_scheduler_policy_key](#ctor)|오버로드됨. 
+  `invalid_scheduler_policy_key` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,7 +48,8 @@ class invalid_scheduler_policy_key : public std::exception;
 
 ##  <a name="ctor"></a> invalid_scheduler_policy_key
 
-`invalid_scheduler_policy_key` 개체를 생성합니다.
+
+  `invalid_scheduler_policy_key` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP invalid_scheduler_policy_key(_In_z_ const char* _Message) throw();
@@ -57,10 +59,10 @@ invalid_scheduler_policy_key() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [SchedulerPolicy 클래스](schedulerpolicy-class.md)

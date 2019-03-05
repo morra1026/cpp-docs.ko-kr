@@ -1,5 +1,5 @@
 ---
-title: 'WM_ 메시지 처리기: A - C'
+title: 'WM_ 메시지 처리기: -C'
 ms.date: 11/04/2016
 f1_keywords:
 - ON_WM_CREATE
@@ -35,14 +35,14 @@ helpviewer_keywords:
 - ON_WM_ACTIVATEAPP [MFC]
 - ON_WM_CHANGECBCHAIN
 ms.assetid: 4e315896-d646-4b87-b0ab-41a4a753b045
-ms.openlocfilehash: 67ab1620d0ad815cc070935a2b314bbfa2ef1408
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08221e7569a8b4c4f4e8decba410bd1fe40f04d7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596835"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266031"
 ---
-# <a name="wm-message-handlers-a---c"></a>WM_ 메시지 처리기: A - C
+# <a name="wm-message-handlers-a---c"></a>WM_ 메시지 처리기: -C
 
 왼쪽에 있는 다음 맵 항목은 오른쪽에 있는 함수 프로토타입과 일치합니다.
 
@@ -60,15 +60,14 @@ ms.locfileid: "50596835"
 |ON_WM_CHILDACTIVATE()|afx_msg void [OnChildActivate](../../mfc/reference/cwnd-class.md#onchildactivate)();|
 |ON_WM_CLIPBOARDUPDATE()|afx_msg void [OnClipboardUpdate](../../mfc/reference/cwnd-class.md#onclipboardupdate)();|
 |ON_WM_CLOSE()|afx_msg void [OnClose](../../mfc/reference/cwnd-class.md#onclose)();|
-|ON_WM_COMPACTING()|afx_msg void [OnCompacting](../../mfc/reference/cwnd-class.md#oncompacting)(단위)입니다.|
+|ON_WM_COMPACTING()|afx_msg void [OnCompacting](../../mfc/reference/cwnd-class.md#oncompacting)(UINT);|
 |ON_WM_COMPAREITEM()|afx_msg int [OnCompareItem](../../mfc/reference/cwnd-class.md#oncompareitem)(LPCOMPAREITEMSTRUCT);|
 |ON_WM_CONTEXTMENU()|afx_msg void [OnContextMenu](../../mfc/reference/cwnd-class.md#oncontextmenu)(CWnd\*, CPoint);|
 |ON_WM_COPYDATA()|BOOL afx_msg [OnCopyData](../../mfc/reference/cwnd-class.md#oncopydata)(CWnd\* pWnd, COPYDATASTRUCT\* pCopyDataStruct);|
 |ON_WM_CREATE()|afx_msg int [OnCreate](../../mfc/reference/cwnd-class.md#oncreate)(LPCREATESTRUCT);|
-|ON_WM_CTLCOLOR()|HBRUSH afx_msg [OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)(CDC\*, CWnd\*, UINT);|
+|ON_WM_CTLCOLOR()|afx_msg HBRUSH [OnCtlColor](../../mfc/reference/cwnd-class.md#onctlcolor)(CDC\*, CWnd\*, UINT);|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메시지 맵](../../mfc/reference/message-maps-mfc.md)<br/>
 [WM_ 메시지 처리기](../../mfc/reference/handlers-for-wm-messages.md)
-

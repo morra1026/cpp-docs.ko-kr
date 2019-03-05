@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CPalette [MFC], ResizePalette
 - CPalette [MFC], SetPaletteEntries
 ms.assetid: 8cd95498-53ed-4852-85e1-70e522541114
-ms.openlocfilehash: 1022d05265fc7c2b349dec22e41984e7d41820b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8abd03ff2b133eb6040799eff6879a19a64783ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586058"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274663"
 ---
 # <a name="cpalette-class"></a>CPalette 클래스
 
@@ -55,7 +55,7 @@ class CPalette : public CGdiObject
 
 |이름|설명|
 |----------|-----------------|
-|[Cpalette:: Animatepalette](#animatepalette)|대체 항목으로 식별 논리 색상표에는 `CPalette` 개체입니다. 응용 프로그램 않아도 해당 클라이언트 영역을 업데이트 Windows 시스템 색상표에 새 항목을 즉시 매핑하기 때문입니다.|
+|[CPalette::AnimatePalette](#animatepalette)|대체 항목으로 식별 논리 색상표에는 `CPalette` 개체입니다. 응용 프로그램 않아도 해당 클라이언트 영역을 업데이트 Windows 시스템 색상표에 새 항목을 즉시 매핑하기 때문입니다.|
 |[CPalette::CreateHalftonePalette](#createhalftonepalette)|장치 컨텍스트에 대 한 하프톤 팔레트를 만들고 연결 하는 `CPalette` 개체입니다.|
 |[CPalette::CreatePalette](#createpalette)|Windows 색상표를 만들고 연결 하는 `CPalette` 개체입니다.|
 |[CPalette::FromHandle](#fromhandle)|에 대 한 포인터를 반환 합니다.는 `CPalette` Windows 색상표 개체에 대 한 핸들을 지정 하는 경우 개체입니다.|
@@ -91,7 +91,7 @@ class CPalette : public CGdiObject
 
 **헤더:** afxwin.h
 
-##  <a name="animatepalette"></a>  Cpalette:: Animatepalette
+##  <a name="animatepalette"></a>  CPalette::AnimatePalette
 
 항목에 연결 된 논리 색상표의 대체 된 `CPalette` 개체입니다.
 
@@ -251,7 +251,7 @@ UINT GetPaletteEntries(
 
 논리 색상표;에서 검색 된 항목의 수 함수가 실패 하는 경우 0입니다.
 
-##  <a name="operator_hpalette"></a>  HPALETTE CPalette::operator
+##  <a name="operator_hpalette"></a>  CPalette::operator HPALETTE
 
 이 연산자를 사용 하 여 연결 된 Windows GDI 핸들을 가져오려면는 `CPalette` 개체입니다.
 
@@ -324,11 +324,10 @@ UINT SetPaletteEntries(
 
 Windows 구조에 대 한 자세한 내용은 `PALETTEENTRY`를 참조 하세요 [PALETTEENTRY](https://msdn.microsoft.com/library/windows/desktop/dd162769) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 DIBLOOK](../../visual-cpp-samples.md)<br/>
 [CGdiObject 클래스](../../mfc/reference/cgdiobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CPalette::GetPaletteEntries](#getpaletteentries)<br/>
 [CPalette::SetPaletteEntries](#setpaletteentries)
-

@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-ms.openlocfilehash: ae3daff2582b9e58cc325304fac449423fb673a0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 62d42995a3d1b4a61dbd3ff38c48d9b300177798
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621431"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259544"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl 클래스
 
@@ -113,7 +113,7 @@ class CTabCtrl : public CWnd
 |[CTabCtrl::GetExtendedStyle](#getextendedstyle)|현재 탭 컨트롤에 사용 되는 확장된 스타일을 검색 합니다.|
 |[CTabCtrl::GetImageList](#getimagelist)|탭 컨트롤에 연결 된 이미지 목록을 검색 합니다.|
 |[CTabCtrl::GetItem](#getitem)|탭 컨트롤의 탭에 대 한 정보를 검색합니다.|
-|[CTabCtrl::GetItemCount](#getitemcount)|탭 컨트롤에서 탭의 개수를 검색합니다.|
+|[CTabCtrl::GetItemCount](#getitemcount)|탭 컨트롤에서 탭 수를 검색합니다.|
 |[CTabCtrl::GetItemRect](#getitemrect)|탭 컨트롤의 탭에 대 한 경계 사각형을 검색 합니다.|
 |[CTabCtrl::GetItemState](#getitemstate)|표시 된 탭 컨트롤 항목의 상태를 검색합니다.|
 |[CTabCtrl::GetRowCount](#getrowcount)|탭 컨트롤의 탭 행의 현재 수를 검색 합니다.|
@@ -136,7 +136,7 @@ class CTabCtrl : public CWnd
 
 ## <a name="remarks"></a>설명
 
-"탭 컨트롤"은 노트북의 구분선 또는 파일 캐비닛의 레이블을 비슷합니다. 응용 프로그램은 탭 컨트롤을 사용하여 창 또는 대화 상자의 동일한 영역에 대해 여러 페이지를 정의할 수 있습니다. 각 페이지의 정보 또는 사용자가 해당 탭을 선택 하면 응용 프로그램에서 표시 하는 컨트롤 그룹 집합으로 구성 됩니다. 특수 한 유형의 탭 컨트롤 단추 처럼 보이는 탭이 표시 됩니다. 단추를 클릭 하는 페이지를 표시 하는 대신 명령을 즉시 수행 해야 합니다.
+"탭 컨트롤"은 노트북의 구분선 또는 파일 캐비닛의 레이블을 비슷합니다. 애플리케이션은 탭 컨트롤을 사용하여 창 또는 대화 상자의 동일한 영역에 대해 여러 페이지를 정의할 수 있습니다. 각 페이지의 정보 또는 사용자가 해당 탭을 선택 하면 응용 프로그램에서 표시 하는 컨트롤 그룹 집합으로 구성 됩니다. 특수 한 유형의 탭 컨트롤 단추 처럼 보이는 탭이 표시 됩니다. 단추를 클릭 하는 페이지를 표시 하는 대신 명령을 즉시 수행 해야 합니다.
 
 이 컨트롤 (및 따라서는 `CTabCtrl` 클래스) 이상 Windows 95/98 및 Windows NT 버전 3.51에서 실행 중인 프로그램에만 사용할 수 있습니다.
 
@@ -457,7 +457,7 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
 
 ##  <a name="getitemcount"></a>  CTabCtrl::GetItemCount
 
-탭 컨트롤에서 탭의 개수를 검색합니다.
+탭 컨트롤에서 탭 수를 검색합니다.
 
 ```
 int GetItemCount() const;
@@ -922,7 +922,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 
   예를 참조 하세요 [CPropertySheet::GetTabControl](../../mfc/reference/cpropertysheet-class.md#gettabcontrol)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CComVariant class
 - VARIANT macro, ATL
 ms.assetid: 4d31149c-d005-44b5-a509-10f84afa2b61
-ms.openlocfilehash: 6a6ad49533028dbcb8c45b63c55a51090533137e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 6be05b52b96ada7871f955c687036a83b4e0b493
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522493"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281098"
 ---
 # <a name="ccomvariant-class"></a>CComVariant 클래스
 
@@ -44,7 +44,7 @@ class CComVariant : public tagVARIANT
 |이름|설명|
 |----------|-----------------|
 |[CComVariant::CComVariant](#ccomvariant)|생성자입니다.|
-|[CComVariant:: ~ CComVariant](#dtor)|소멸자입니다.|
+|[CComVariant::~CComVariant](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -67,7 +67,7 @@ class CComVariant : public tagVARIANT
 |-|-|
 |[CComVariant::operator <](#operator_lt)|나타냅니다 여부는 `CComVariant` 개체를 사용 하면 지정 된 변형 보다 작습니다.|
 |[CComVariant::operator >](#operator_gt)|나타냅니다 여부는 `CComVariant` 개체는 지정 된 변형 보다 큽니다.|
-|[연산자! =](#operator_neq)|나타냅니다 여부를 `CComVariant` 지정된 변형 개체와 같지 않습니다.|
+|[operator !=](#operator_neq)|나타냅니다 여부를 `CComVariant` 지정된 변형 개체와 같지 않습니다.|
 |[operator =](#operator_eq)|에 값을 할당 합니다 `CComVariant` 개체입니다.|
 |[operator ==](#operator_eq_eq)|나타냅니다 여부는 `CComVariant` 개체 같음 지정된 변형.|
 
@@ -77,7 +77,7 @@ class CComVariant : public tagVARIANT
 
 `CComVariant` VARIANT를 사용할 수 있습니다 어디서 나 사용할 수 있도록 VARIANT 형식에서 파생 됩니다. 예를 들어 V_VT 매크로 사용 하 여 유형을 추출 하 수는 `CComVariant` 하거나 액세스할 수 있습니다는 `vt` VARIANT를 사용 하면 마찬가지로 직접 멤버입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagVARIANT`
 
@@ -179,7 +179,7 @@ CComVariant(const CComBSTR& bstrSrc);
 
 호출 하 여 정리를 관리 하는 소멸자 [CComVariant::Clear](#clear)합니다.
 
-##  <a name="dtor"></a>  CComVariant:: ~ CComVariant
+##  <a name="dtor"></a>  CComVariant::~CComVariant
 
 소멸자입니다.
 
@@ -373,7 +373,7 @@ CComVariant& operator=(char cSrc) throw();
 *cSrc*<br/>
 [in] 할당할 문자는 `CComVariant` 개체입니다. 형식의 여 `CComVariant` 개체 VT_I1 됩니다.
 
-##  <a name="operator_eq_eq"></a>  CComVariant::operator = =
+##  <a name="operator_eq_eq"></a>  CComVariant::operator ==
 
 나타냅니다 여부는 `CComVariant` 개체 같음 지정된 변형.
 
@@ -387,7 +387,7 @@ bool operator==(const VARIANT& varSrc) const throw();
 
 연산자는 variant 형식의 값만을 비교합니다. 문자열, 정수 및 부동 소수점 하지만 하지 배열 또는 레코드를 비교합니다.
 
-##  <a name="operator_neq"></a>  CComVariant::operator! =
+##  <a name="operator_neq"></a>  CComVariant::operator !=
 
 나타냅니다 여부를 `CComVariant` 지정된 변형 개체와 같지 않습니다.
 
@@ -460,7 +460,7 @@ void SetByRef(T* pT) throw();
 *T*<br/>
 형식의 VARIANT BSTR, 예를 들어 **int**, 또는 **char**합니다.
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 초기화 하는 데 포인터는 `CComVariant` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -486,6 +486,6 @@ HRESULT WriteToStream(IStream* pStream);
 
 표준 HRESULT 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

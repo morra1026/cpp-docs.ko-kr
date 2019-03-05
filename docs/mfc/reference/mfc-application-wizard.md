@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC Application Wizard
 - executable files, creating
 ms.assetid: 227ac090-921d-4b2f-be0a-66a5f4cab0d4
-ms.openlocfilehash: a96fdac743531a47c7d2e586292e87e1bbf9e249
-ms.sourcegitcommit: fd15246715907f7c0415e3a0c3eb80f7303d1139
+ms.openlocfilehash: 3cdaba750060290fa25007d4097b6782d6f20fbf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52255712"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258634"
 ---
 # <a name="mfc-application-wizard"></a>MFC 응용 프로그램 마법사
 
@@ -25,7 +25,7 @@ ms.locfileid: "52255712"
 
 이 마법사 페이지에는 만들고 있는 MFC 응용 프로그램에 대 한 현재 응용 프로그램 설정을 설명 합니다. 기본적으로 마법사를 다음과 같이 프로젝트를 만듭니다.
 
-- [MFC 응용 프로그램 마법사, 응용 프로그램 종류](../../mfc/reference/application-type-mfc-application-wizard.md)
+- [MFC 애플리케이션 마법사, 애플리케이션 종류](../../mfc/reference/application-type-mfc-application-wizard.md)
 
    - 프로젝트 탭된 다중 문서 인터페이스 (MDI) 지원을 통해 만들어집니다. 자세한 내용은 [SDI 및 MDI](../../mfc/sdi-and-mdi.md)합니다.
 
@@ -37,11 +37,11 @@ ms.locfileid: "52255712"
 
    - 프로젝트 공유 DLL에서 MFC를 사용합니다. 자세한 내용은 [Visual C++의 DLL](../../build/dlls-in-visual-cpp.md)을 참조하세요.
 
-- [MFC 응용 프로그램 마법사, 복합 문서 지원](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
+- [MFC 애플리케이션 마법사, 복합 문서 지원](../../mfc/reference/compound-document-support-mfc-application-wizard.md)
 
    - 프로젝트는 복합 문서 지원 하지 않습니다.
 
-- [MFC 응용 프로그램 마법사, 문서 템플릿 문자열](../../mfc/reference/document-template-strings-mfc-application-wizard.md)
+- [MFC 애플리케이션 마법사, 문서 템플릿 문자열](../../mfc/reference/document-template-strings-mfc-application-wizard.md)
 
    - 프로젝트에는 기본 문서 템플릿 문자열에 대 한 프로젝트 이름을 사용 합니다.
 
@@ -49,7 +49,7 @@ ms.locfileid: "52255712"
 
    - 프로젝트는 데이터베이스를 지원 하지 않습니다.
 
-- [MFC 응용 프로그램 마법사, 사용자 인터페이스 기능](../../mfc/reference/user-interface-features-mfc-application-wizard.md)
+- [MFC 애플리케이션 마법사, 사용자 인터페이스 기능](../../mfc/reference/user-interface-features-mfc-application-wizard.md)
 
    - 표준 Windows 사용자 인터페이스는 시스템 메뉴, 상태 표시줄을 최대화 하 고 최소화 상자와 같은 기능을 구현 하는 프로젝트를 **에 대 한** 상자, 표준 메뉴 모음 및 도킹 도구 모음 및 자식 프레임입니다.
 
@@ -63,7 +63,7 @@ ms.locfileid: "52255712"
 
    - 프로젝트가 지는 **탐색기** 도킹 창은 **출력** 도킹 창 및 **속성** 도킹 창입니다.
 
-- [MFC 응용 프로그램 마법사, 생성된 클래스](../../mfc/reference/generated-classes-mfc-application-wizard.md)
+- [MFC 애플리케이션 마법사, 생성된 클래스](../../mfc/reference/generated-classes-mfc-application-wizard.md)
 
    - 프로젝트의 뷰 클래스에서 파생 된 [CView 클래스](../../mfc/reference/cview-class.md)합니다.
 
@@ -79,8 +79,8 @@ ms.locfileid: "52255712"
 
 Visual c + +를 사용 하 여 프로젝트에 개체 또는 컨트롤을 MFC 응용 프로그램 프로젝트를 만든 후 추가할 수 있습니다 [코드 마법사](../../ide/adding-functionality-with-code-wizards-cpp.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 응용 프로그램 만들기](../../mfc/reference/creating-an-mfc-application.md)<br/>
+[MFC 애플리케이션 만들기](../../mfc/reference/creating-an-mfc-application.md)<br/>
 [MFC 데스크톱 응용 프로그램](../../mfc/mfc-desktop-applications.md)<br/>
-[클래스를 사용하여 Windows 응용 프로그램 작성](../../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 애플리케이션 작성](../../mfc/using-the-classes-to-write-applications-for-windows.md)

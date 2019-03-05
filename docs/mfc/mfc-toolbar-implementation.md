@@ -17,12 +17,12 @@ helpviewer_keywords:
 - toolbars [MFC]
 - toolbars [MFC], implementing MFC toolbars
 ms.assetid: af3319ad-c430-4f90-8361-e6a2c06fd084
-ms.openlocfilehash: 93cf2f2a11c34b1bbe2d62e4e4cc6afab16e2fd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ce3b373bab67ba49a1f7aa41f2a9456ae7199028
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666793"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267812"
 ---
 # <a name="mfc-toolbar-implementation"></a>MFC 도구 모음 구현
 
@@ -90,7 +90,7 @@ MFC를 사용 하기 때문에이 재구현 결과 도구 모음에 대 한 MFC 
 
 생성 된를 `CToolBar` 개체 각 단추에 대 한 개의 이미지가 포함 된 단일 비트맵을 로드 하 여 도구 모음 이미지를 만듭니다. 응용 프로그램 마법사는 Visual c + +를 사용 하 여 사용자 지정할 수 있는 표준 도구 모음 비트맵을 만듭니다 [도구 모음 편집기](../windows/toolbar-editor.md)합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [도구 모음 기본 사항](../mfc/toolbar-fundamentals.md)
 
@@ -104,8 +104,7 @@ MFC를 사용 하기 때문에이 재구현 결과 도구 모음에 대 한 MFC 
 
 - 합니다 [CToolBar](../mfc/reference/ctoolbar-class.md) 하 고 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 클래스
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [도구 모음](../mfc/toolbars.md)<br/>
 [도구 모음 편집기](../windows/toolbar-editor.md)
-

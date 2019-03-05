@@ -8,12 +8,12 @@ helpviewer_keywords:
 - IPrint interface
 - printing [MFC]
 ms.assetid: 3db0945b-5e13-4be4-86a0-6aecdae565bd
-ms.openlocfilehash: d01dcd901425fb3957201dca754a01042e629ebb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb8804610832f91f4b24487fddfe9c24a3799117
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630661"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264003"
 ---
 # <a name="programmatic-printing"></a>프로그래밍 방식 인쇄
 
@@ -46,7 +46,7 @@ interface IPrint : IUnknown
 
 개체를 지 원하는 `IPrint` 레지스트리에 저장 된 개체의 CLSID "인쇄 가능" 키를 사용 하 여 표시 됩니다.
 
-HKEY_CLASSES_ROOT\CLSID\\{...} \Printable
+HKEY_CLASSES_ROOT\CLSID\\{...}\Printable
 
 `IPrint` 일반적으로 하나를 지 원하는 동일한 개체에서 구현 `IPersistFile` 또는 `IPersistStorage`합니다. 호출자에 게 "인쇄 가능" 키에 대 한 레지스트리에서 확인 하 여 일부 클래스의 영구 상태를 프로그래밍 방식으로 인쇄 하는 기능을 확인 합니다. 현재 "인쇄 가능" 나타냅니다 지원 적어도 `IPrint`; 다른 인터페이스 정의 될 수 있습니다 나중에 살펴볼 되어 `QueryInterface` 여기서 `IPrint` 단순히 기본 수준의 지원 나타냅니다.
 
@@ -69,7 +69,6 @@ interface IContinueCallback : IUnknown
 
 `FContinue`그러나은의 컨텍스트에서 사용 하지 `IPrint::Print`; 대신 사용 하 여 인쇄 `IContinueCallback::FContinuePrint`합니다. 인쇄 개체는 주기적으로 호출 `FContinuePrinting` 가 인쇄 된 페이지 수, 인쇄, 페이지 번호 및 클라이언트 (예: "페이지를 사용자에 게 표시 하도록 선택할 수 있는 인쇄 상태를 설명 하는 추가 문자열을 전달 합니다. 5의 19")입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [액티브 문서 컨테이너](../mfc/active-document-containers.md)
-

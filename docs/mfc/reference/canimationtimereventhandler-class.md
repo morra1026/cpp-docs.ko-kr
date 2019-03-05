@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAnimationTimerEventHandler [MFC], OnRenderingTooSlow
 - CAnimationTimerEventHandler [MFC], SetAnimationController
 ms.assetid: 188dea3b-4b5e-4f6b-8df9-09d993a21619
-ms.openlocfilehash: c94cb3849d4101365d137733c08135b86db23801
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5e6b0a22d438f9c26318129e2d04df96d386cda
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518666"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264432"
 ---
 # <a name="canimationtimereventhandler-class"></a>CAnimationTimerEventHandler 클래스
 
@@ -49,7 +49,7 @@ class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAn
 
 이 이벤트 처리기 생성 되어 IUIAnimationTimer::SetTimerEventHandler CAnimationController::EnableAnimationTimerEventHandler를 호출할 때 전달 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CUIAnimationCallbackBase`
 
@@ -135,6 +135,6 @@ void SetAnimationController(CAnimationController* pAnimationController);
 *pAnimationController*<br/>
 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

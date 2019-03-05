@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CTokenGroups class
 ms.assetid: 2ab08076-4b08-4487-bc70-ec6dee304190
-ms.openlocfilehash: 9bd5b5dd8f8c233ac324e4c50a6291347bb954e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 842ceab1630fc7bc08b5c27dc769a25d029886f3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496335"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274520"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups 클래스
 
@@ -271,7 +271,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 
 에 대 한 포인터에 값을 캐스팅 합니다 [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [보안 샘플](../../visual-cpp-samples.md)<br/>
 [CSid 클래스](../../atl/reference/csid-class.md)<br/>

@@ -59,12 +59,12 @@ helpviewer_keywords:
 - ID_FILE_NEW command [MFC]
 - ID_INDICATOR_NUM command
 ms.assetid: a7883b46-23f7-4870-ac3a-804aed9258b5
-ms.openlocfilehash: 0f79aaaf59f12e226220e51681f64d0bf1131303
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c066521ba2b5be9ac24a8abaece42e57b8ad85f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504340"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279366"
 ---
 # <a name="tn022-standard-commands-implementation"></a>TN022: 표준 명령 구현
 
@@ -468,30 +468,29 @@ MFC 표준 명령 0xE000에 0xEFFF 범위에 속합니다. 하세요 자제 이�
 
 여러 표준 명령 Id 상태 표시줄에서 표시기로 사용 됩니다. 이러한 동일한 업데이트 명령 UI를 사용 하 처리 메커니즘 응용 프로그램이 유휴 시간 동안 현재 시각적 상태를 표시 합니다. 사용자가 선택할 수 없습니다 때문 (즉, 푸시할 수 없습니다는 상태 표시줄 창)에 올 수 없습니다는 ON_COMMAND 처리기에 대 한 명령 Id를 사용 하는 것입니다.
 
-- ID_INDICATOR_CAPS: CAP 잠금 표시기입니다.
+- ID_INDICATOR_CAPS : CAP 잠금 표시기입니다.
 
-- ID_INDICATOR_NUM: NUM lock 표시기입니다.
+- ID_INDICATOR_NUM : NUM lock 표시기입니다.
 
-- ID_INDICATOR_SCRL: SCRL 잠금 표시기입니다.
+- ID_INDICATOR_SCRL : SCRL 잠금 표시기입니다.
 
-- ID_INDICATOR_KANA: 일본어가 나 구분 (일본어 시스템에만 해당) 표시기를 잠급니다.
+- ID_INDICATOR_KANA : 일본어가 나 구분 (일본어 시스템에만 해당) 표시기를 잠급니다.
 
 이러한 세 가지 모두에서 구현 되는 `CFrameWnd::OnUpdateKeyIndicator`, 적절 한 가상 키에 매핑할 명령 ID를 사용 하는 구현 도우미입니다. 일반적인 구현은 사용 하거나 사용 하지 않도록 설정 (사용 하지 않도록 설정 하는 상태 창에 대 한 텍스트가 없는 =)는 `CCmdUI` 적절 한 가상 키 현재 잠겨 있는지 여부에 따라 개체입니다.
 
 사용자 지정이 명령 처리기의 권장 되지 않습니다.
 
-- ID_INDICATOR_EXT: 확장된 선택 표시기입니다.
+- ID_INDICATOR_EXT : 확장된 선택 표시기입니다.
 
-- ID_INDICATOR_OVR: 겹쳐쓰기 표시기입니다.
+- ID_INDICATOR_OVR : 겹쳐쓰기 표시기입니다.
 
-- ID_INDICATOR_REC: 표시기를 기록합니다.
+- ID_INDICATOR_REC: 녹음/녹화 표시기입니다.
 
 현재 이러한 지표의 표준 구현 하지 않습니다.
 
 이러한 표시기를 구현 하려는 경우 이러한 표시기 Id 및 상태 표시줄에 표시기의 순서를 유지 관리를 사용 하는 것이 좋습니다 (즉,이 순서 대로: EXT, CAP, NUM, SCRL, 겹침, REC).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

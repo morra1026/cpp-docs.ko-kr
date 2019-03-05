@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComCriticalSection class
 ms.assetid: 44e1edd2-90be-4bfe-9739-58e8b419e7d1
-ms.openlocfilehash: ddd6c6a36c05d92d2f53bc4937826581942470dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3a4b50f8dd9bc460a209c47497e720529c40e58
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491769"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276093"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection 클래스
 
@@ -145,7 +145,7 @@ S_OK 반환 합니다.
 
 스레드 소유권을 가져오려면 먼저 호출 해야 합니다 [잠금](#lock) 메서드. 호출할 때마다 `Lock` 해당 호출을 `Unlock` 중요 섹션의 소유권을 해제 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComFakeCriticalSection 클래스](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

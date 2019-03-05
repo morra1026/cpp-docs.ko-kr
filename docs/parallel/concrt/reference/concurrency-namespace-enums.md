@@ -12,12 +12,12 @@ f1_keywords:
 - CONCRT/concurrency::join_type
 - CONCRT/concurrency::message_status Enumeration
 ms.assetid: a40e3b2d-ad21-4229-9880-2cfa84f7ab8f
-ms.openlocfilehash: 342655e290167315b7f10caba979804461e10658
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d3eb49cd1555f23cc83efb0d8d912998295b3c55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521078"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271192"
 ---
 # <a name="concurrency-namespace-enums"></a>concurrency 네임 스페이스 열거형
 
@@ -31,7 +31,8 @@ ms.locfileid: "51521078"
 
 ##  <a name="agent_status"></a>  agent_status 열거형
 
-`agent`에 유효한 상태입니다.
+
+  `agent`에 유효한 상태입니다.
 
 ```
 enum agent_status;
@@ -152,7 +153,8 @@ enum CriticalRegionType;
 
 ##  <a name="dynamicprogressfeedbacktype"></a>  DynamicProgressFeedbackType 열거형
 
-`DynamicProgressFeedback` 정책에서 스케줄러에 대한 리소스를 스케줄러에서 수집한 통계 정보에 따라 균형을 조정할지, 아니면 `IVirtualProcessorRoot` 인터페이스의 `Activate` 및 `Deactivate` 메서드 호출을 통해 유휴 상태로 들어오고 나가는 가상 프로세서를 기준으로만 균형을 조정할지를 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+
+  `DynamicProgressFeedback` 정책에서 스케줄러에 대한 리소스를 스케줄러에서 수집한 통계 정보에 따라 균형을 조정할지, 아니면 `IVirtualProcessorRoot` 인터페이스의 `Activate` 및 `Deactivate` 메서드 호출을 통해 유휴 상태로 들어오고 나가는 가상 프로세서를 기준으로만 균형을 조정할지를 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum DynamicProgressFeedbackType;
@@ -167,7 +169,8 @@ enum DynamicProgressFeedbackType;
 
 ##  <a name="join_type"></a>  join_type 열거형
 
-`join` 메시징 블록의 형식입니다.
+
+  `join` 메시징 블록의 형식입니다.
 
 ```
 enum join_type;
@@ -217,15 +220,15 @@ enum PolicyElementKey;
 
 |이름|설명|
 |----------|-----------------|
-|`ContextPriority`|각 스케줄러 컨텍스트 운영 체제 스레드 우선 순위입니다. 이 키 값으로 설정 된 경우 `INHERIT_THREAD_PRIORITY` 스케줄러에서 컨텍스트 스케줄러를 생성 하는 스레드의 우선 순위를 상속 합니다.<br /><br /> 유효한 값:는 Windows에 대 한 유효한 값 중 하나 `SetThreadPriority` 함수 및 특수 값 `INHERIT_THREAD_PRIORITY`<br /><br /> 기본값: `THREAD_PRIORITY_NORMAL`|
+|`ContextPriority`|각 스케줄러 컨텍스트 운영 체제 스레드 우선 순위입니다. 이 키 값으로 설정 된 경우 `INHERIT_THREAD_PRIORITY` 스케줄러에서 컨텍스트 스케줄러를 생성 하는 스레드의 우선 순위를 상속 합니다.<br /><br /> 유효한 값: Windows에 대 한 유효한 값 중 하나 `SetThreadPriority` 함수 및 특수 값 `INHERIT_THREAD_PRIORITY`<br /><br /> 기본값: `THREAD_PRIORITY_NORMAL`|
 |`ContextStackSize`|각 컨텍스트 (킬로바이트)에서 스케줄러에서 예약 된 스택 크기입니다.<br /><br /> 유효한 값: 양의 정수<br /><br /> 기본값: `0`, 사용할 스택 크기에 대 한 프로세스의 기본값을 나타내는입니다.|
-|`DynamicProgressFeedback`|스케줄러에 대 한 리소스를이 스케줄러에서 수집한 또는 기본 하드웨어 스레드 구독 수준에 따라서만 통계 정보에 따라 균형 조정 수 있는지 여부를 결정 합니다. 자세한 내용은 [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype)합니다.<br /><br /> 유효한 값: 소속은 `DynamicProgressFeedbackType` 열거를 `ProgressFeedbackEnabled` 또는 `ProgressFeedbackDisabled`<br /><br /> 기본값: `ProgressFeedbackEnabled`|
+|`DynamicProgressFeedback`|스케줄러에 대 한 리소스를이 스케줄러에서 수집한 또는 기본 하드웨어 스레드 구독 수준에 따라서만 통계 정보에 따라 균형 조정 수 있는지 여부를 결정 합니다. 자세한 내용은 [DynamicProgressFeedbackType](#dynamicprogressfeedbacktype)합니다.<br /><br /> 유효한 값: 멤버는 `DynamicProgressFeedbackType` 열거를 `ProgressFeedbackEnabled` 또는 `ProgressFeedbackDisabled`<br /><br /> 기본값: `ProgressFeedbackEnabled`|
 |`LocalContextCacheSize`|경우는 `SchedulingProtocol` 정책 키 값으로 설정 되어 `EnhanceScheduleGroupLocality`, 가상 프로세서 로컬 큐에 캐시 될 수는 실행 가능한 컨텍스트에의 최대 수를 지정 합니다. 이러한 컨텍스트는 일반적으로 실행 가능 하 게를 유발한 가상 프로세서에서 마지막의 선입 선출 (후입선출) 순서로 실행 됩니다. 이 정책 키 의미가 없습니다 경우에 `SchedulingProtocol` 키 값으로 설정 되어 `EnhanceForwardProgress`입니다.<br /><br /> 유효한 값: 음수가 아닌 정수<br /><br /> 기본값: `8`|
 |`MaxConcurrency`|최대 동시성 수준 스케줄러에서 필요한 합니다. 리소스 관리자는 처음에 많은 가상 프로세서를 할당 하려고 합니다. 특수 값 [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) 원하는 동시성 수준을 컴퓨터의 하드웨어 스레드 수가 동일 임을 나타냅니다. 값을 지정한 경우 `MinConcurrency` 컴퓨터의 하드웨어 스레드 수보다 큽니다 및 `MaxConcurrency` 로 지정 됩니다 `MaxExecutionResources`에 대 한 값 `MaxConcurrency` 에 대해 설정 하는 것에 맞게 발생 `MinConcurrency`합니다.<br /><br /> 유효한 값: 양의 정수 및 특수 값 `MaxExecutionResources`<br /><br /> 기본값: `MaxExecutionResources`|
 |`MaxPolicyElementKey`|최대 정책 요소 키입니다. 잘못 된 요소 키가 아니라 합니다.|
 |`MinConcurrency`|리소스 관리자에서 스케줄러에 제공 해야 하는 최소 동시성 수준입니다. 스케줄러에 할당할 가상 프로세서 수가 최소값 아래로 이동 하지 않습니다. 특수 값 [MaxExecutionResources](concurrency-namespace-constants1.md#maxexecutionresources) 최소 동시성 수준을 컴퓨터의 하드웨어 스레드 수가 동일 임을 나타냅니다. 값을 지정한 경우 `MaxConcurrency` 컴퓨터의 하드웨어 스레드 수보다 작습니다 및 `MinConcurrency` 로 지정 됩니다 `MaxExecutionResources`에 값 `MinConcurrency` 일치에 대 한 설정 된 것까지 낮춰 지 `MaxConcurrency`합니다.<br /><br /> 유효한 값: 음수가 아닌 정수 및 특수 값 `MaxExecutionResources`합니다. 동시성 런타임이 스케줄러의 생성에 사용되는 스케줄러 정책의 경우에는 값 `0`이 유효하지 않습니다.<br /><br /> 기본값: `1`|
-|`SchedulerKind`|스레드 스케줄러 기본 실행 컨텍스트에 활용 하는 형식입니다. 자세한 내용은 [SchedulerType](#schedulertype)합니다.<br /><br /> 유효한 값: `SchedulerType` 열거형의 멤버. 예: `ThreadScheduler`<br /><br /> 기본값: `ThreadScheduler`합니다. 이 모든 운영 체제에서 Win32 스레드를 변환 합니다.|
-|`SchedulingProtocol`|스케줄러에서 사용할 예약 알고리즘을 설명 합니다. 자세한 내용은 [SchedulingProtocolType](#schedulingprotocoltype)합니다.<br /><br /> 유효한 값: 소속은 `SchedulingProtocolType` 열거를 `EnhanceScheduleGroupLocality` 또는 `EnhanceForwardProgress`<br /><br /> 기본값: `EnhanceScheduleGroupLocality`|
+|`SchedulerKind`|스레드 스케줄러 기본 실행 컨텍스트에 활용 하는 형식입니다. 자세한 내용은 [SchedulerType](#schedulertype)합니다.<br /><br /> 유효한 값: 멤버는 `SchedulerType` 예를 들어 열거형 `ThreadScheduler`<br /><br /> 기본값: `ThreadScheduler`합니다. 이 모든 운영 체제에서 Win32 스레드를 변환 합니다.|
+|`SchedulingProtocol`|스케줄러에서 사용할 예약 알고리즘을 설명 합니다. 자세한 내용은 [SchedulingProtocolType](#schedulingprotocoltype)합니다.<br /><br /> 유효한 값: 멤버는 `SchedulingProtocolType` 열거를 `EnhanceScheduleGroupLocality` 또는 `EnhanceForwardProgress`<br /><br /> 기본값: `EnhanceScheduleGroupLocality`|
 |`TargetOversubscriptionFactor`|미정 하드웨어 스레드당 가상 프로세서 수입니다. 필요할 경우 시스템의 하드웨어 스레드로 `MaxConcurrency`를 만족시키기 위해 리소스 관리자에서 대상 초과 구독 비율을 증가시킬 수 있습니다.<br /><br /> 유효한 값: 양의 정수<br /><br /> 기본값: `1`|
 |`WinRTInitialization`||
 
@@ -235,7 +238,8 @@ enum PolicyElementKey;
 
 ##  <a name="schedulertype"></a>  SchedulerType 열거형
 
-`SchedulerKind` 정책에서 스케줄러가 기본 실행 컨텍스트에 활용해야 하는 스레드 형식을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+
+  `SchedulerKind` 정책에서 스케줄러가 기본 실행 컨텍스트에 활용해야 하는 스레드 형식을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum SchedulerType;
@@ -246,7 +250,8 @@ enum SchedulerType;
 |이름|설명|
 |----------|-----------------|
 |`ThreadScheduler`|일반 Win32 스레드를 명시적으로 요청을 나타냅니다.|
-|`UmsThreadDefault`|사용자 모드 예약 가능 (UMS) 스레드는 동시성 런타임에서 Visual Studio 2013에서 지원 되지 않습니다. `UmsThreadDefault`를 `SchedulerType` 정책의 값으로 사용하면 오류가 발생하지 않습니다. 그러나 해당 정책을 사용하여 만들어진 스케줄러는 기본적으로 Win32 스레드를 사용합니다.|
+|`UmsThreadDefault`|사용자 모드 예약 가능 (UMS) 스레드는 동시성 런타임에서 Visual Studio 2013에서 지원 되지 않습니다. 
+  `UmsThreadDefault`를 `SchedulerType` 정책의 값으로 사용하면 오류가 발생하지 않습니다. 그러나 해당 정책을 사용하여 만들어진 스케줄러는 기본적으로 Win32 스레드를 사용합니다.|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -254,7 +259,8 @@ enum SchedulerType;
 
 ##  <a name="schedulingprotocoltype"></a>  SchedulingProtocolType Enumeration
 
-`SchedulingProtocol` 정책에서 스케줄러에 활용되는 일정 알고리즘을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+
+  `SchedulingProtocol` 정책에서 스케줄러에 활용되는 일정 알고리즘을 설명하는 데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum SchedulingProtocolType;
@@ -295,7 +301,8 @@ enum SwitchingProxyState;
 
 ##  <a name="task_group_status"></a>  task_group_status 열거형
 
-`task_group` 또는 `structured_task_group` 개체의 실행 상태를 설명합니다. 이 형식의 값은 작업 그룹에 예약된 작업이 완료되기를 기다리는 수많은 메서드에 의해 반환됩니다.
+
+  `task_group` 또는 `structured_task_group` 개체의 실행 상태를 설명합니다. 이 형식의 값은 작업 그룹에 예약된 작업이 완료되기를 기다리는 수많은 메서드에 의해 반환됩니다.
 
 ```
 enum task_group_status;
@@ -305,9 +312,12 @@ enum task_group_status;
 
 |이름|설명|
 |----------|-----------------|
-|`canceled`|`task_group` 또는 `structured_task_group` 개체가 취소되었습니다. 하나 이상의 작업이 실행되지 않았을 수 있습니다.|
-|`completed`|`task_group` 또는 `structured_task_group` 개체의 큐에 대기 중인 작업이 성공적으로 완료되었습니다.|
-|`not_complete`|`task_group` 개체의 큐에 대기 중인 작업이 완료되지 않았습니다. 이 값은 현재 동시성 런타임에서 반환되지 않습니다.|
+|`canceled`|
+  `task_group` 또는 `structured_task_group` 개체가 취소되었습니다. 하나 이상의 작업이 실행되지 않았을 수 있습니다.|
+|`completed`|
+  `task_group` 또는 `structured_task_group` 개체의 큐에 대기 중인 작업이 성공적으로 완료되었습니다.|
+|`not_complete`|
+  `task_group` 개체의 큐에 대기 중인 작업이 완료되지 않았습니다. 이 값은 현재 동시성 런타임에서 반환되지 않습니다.|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -315,7 +325,8 @@ enum task_group_status;
 
 ##  <a name="winrtinitializationtype"></a>  WinRTInitializationType 열거형
 
-`WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 응용 프로그램에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
+
+  `WinRTInitialization` 정책에서 Windows 8 또는 그 이상 버전의 운영 체제에서 실행되는 응용 프로그램에 대한 스케줄러 스레드에서 Windows 런타임이 초기화될지 여부와 초기화되는 방법을 설명하는데 사용됩니다. 사용 가능한 스케줄러 정책에 대 한 자세한 내용은 참조 하세요. [PolicyElementKey](concurrency-namespace-enums.md)합니다.
 
 ```
 enum WinRTInitializationType;
@@ -332,6 +343,6 @@ enum WinRTInitializationType;
 
 **헤더:** concrt.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

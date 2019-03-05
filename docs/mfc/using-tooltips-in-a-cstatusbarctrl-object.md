@@ -8,12 +8,12 @@ helpviewer_keywords:
 - status bars [MFC], tool tips
 - CStatusBarCtrl class [MFC], tool tips
 ms.assetid: a77597a7-43ef-4b8f-87bc-a8ea1dc63dc3
-ms.openlocfilehash: a5ebefe3d5daab9917cdb1db7eface09c78b456a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f9a1fec7eb951fa76c542e09df751b4c58ddb16
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265091"
 ---
 # <a name="using-tooltips-in-a-cstatusbarctrl-object"></a>CStatusBarCtrl 개체에서 도구 설명 사용
 
@@ -26,8 +26,7 @@ ms.locfileid: "50438794"
 
 도구 설명에 설정 되 면 파트 내에서 모든 텍스트를 표시할 수 없는 경우 또는 부분에는 아이콘과 텍스트가 없는 경우에 표시 됩니다. 단순 모드에서 도구 설명은 지원 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

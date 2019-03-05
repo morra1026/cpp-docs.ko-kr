@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_operation class
 ms.assetid: 26ba07dc-fcdf-44cb-b748-a31d35205b52
-ms.openlocfilehash: 594c09ebedd2be55b288a7f31d55930244d80959
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b971a12ff83753546cfea7b90288d1bc43400c0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473972"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279689"
 ---
 # <a name="invalidoperation-class"></a>invalid_operation 클래스
 
@@ -31,13 +31,14 @@ class invalid_operation : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[invalid_operation](#ctor)|오버로드됨. `invalid_operation` 개체를 생성합니다.|
+|[invalid_operation](#ctor)|오버로드됨. 
+  `invalid_operation` 개체를 생성합니다.|
 
 ## <a name="remarks"></a>설명
 
 이 예외를 throw하는 다양한 메서드는 일반적으로 어떤 상황에서 이를 throw할지 문서화합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -51,7 +52,8 @@ class invalid_operation : public std::exception;
 
 ##  <a name="ctor"></a> invalid_operation
 
-`invalid_operation` 개체를 생성합니다.
+
+  `invalid_operation` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP invalid_operation(_In_z_ const char* _Message) throw();
@@ -61,9 +63,9 @@ invalid_operation() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

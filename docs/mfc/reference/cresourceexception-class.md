@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CResourceException [MFC], CResourceException
 ms.assetid: af6ae043-d124-4bfd-b35e-7bb0db67d289
-ms.openlocfilehash: aa7fd6e2caa15a256cec2eae5ede6c6e47cd1518
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b29112b4901a1fecac37aa7ae61496e874959370
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632688"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268111"
 ---
 # <a name="cresourceexception-class"></a>CResourceException 클래스
 
@@ -39,7 +39,7 @@ class CResourceException : public CSimpleException
 
 사용 하 여 대 한 자세한 내용은 `CResourceException`, 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -65,8 +65,7 @@ CResourceException();
 
 이 생성자를 직접 사용 하지 않고 대신 전역 함수를 호출 [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception)합니다. 예외에 대 한 자세한 내용은 문서 참조 [MFC의 예외 처리](../exception-handling-in-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](cexception-class.md)<br/>
 [계층 구조 차트](../hierarchy-chart.md)
-

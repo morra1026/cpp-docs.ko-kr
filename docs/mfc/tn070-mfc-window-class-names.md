@@ -7,12 +7,12 @@ helpviewer_keywords:
 - window class names [MFC]
 - TN070 [MFC]
 ms.assetid: 90617912-dd58-4a7c-9082-ced71736d7cd
-ms.openlocfilehash: 609cfade60b1b7b51fb2fd5597c4d491d3eb861c
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 8b06f7b3656284de18632185877fdbe382343f95
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692667"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260575"
 ---
 # <a name="tn070-mfc-window-class-names"></a>TN070: MFC 창 클래스 이름
 
@@ -42,9 +42,8 @@ Afx:%x:%x:%x:%x:%x
 
 첫 번째 형태 (`Afx:%x:%x`) 될 때 사용 됩니다 **hCursor**를 **hbrBackground**, 및 **hIcon** 는 모두 **NULL**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)<br/>
 [TN020: ID 명명 및 번호 매기기 규칙](../mfc/tn020-id-naming-and-numbering-conventions.md)
-

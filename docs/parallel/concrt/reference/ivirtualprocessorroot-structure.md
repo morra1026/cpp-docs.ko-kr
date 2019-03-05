@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IVirtualProcessorRoot structure
 ms.assetid: 5ef371b8-9e4f-4fef-bb0d-49099693dd2b
-ms.openlocfilehash: 6e3f874aa7c20494483172d7c7c3efee362cf6a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25ede76a81a77d489d0f2316bd3ae4cb7f84d704
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569873"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268618"
 ---
 # <a name="ivirtualprocessorroot-structure"></a>IVirtualProcessorRoot 구조체
 
@@ -45,7 +45,7 @@ struct IVirtualProcessorRoot : public IExecutionResource;
 
 Resource Manager 리소스에 대 한 요청에 응답 하는 스케줄러에 가상 프로세서 루트를 부여합니다. 스케줄러를 실행 컨텍스트를 사용 하 여 활성화 하 여 작업을 수행 하는 가상 프로세서 루트를 사용할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [IExecutionResource](iexecutionresource-structure.md)
 
@@ -152,6 +152,6 @@ virtual unsigned int GetId() const = 0;
 
 정수 식별자입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

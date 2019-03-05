@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CDocument class [MFC], space requirements
 - views [MFC], applications without
 ms.assetid: 2c22f352-a137-45ce-9971-c142173496fb
-ms.openlocfilehash: 7b4da7df691837b47daa35c4b474711062d4e5c7
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 98bb4de2f6d1a43fc1958a0fcbaafa1ac0af82a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523171"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282554"
 ---
 # <a name="alternatives-to-the-documentview-architecture"></a>문서/뷰 아키텍처의 대체
 
@@ -62,9 +62,8 @@ MFC에서 제공하는 문서/뷰 아키텍처는 응용 프로그램의 많은 
 
 - MFC 프레임워크의 문서 및 뷰 만들기를 완전히 제거하기 위해 문서 및 뷰 만들기 부분을 재정의합니다. 문서 작성 프로세스는 `CWinApp::AddDocTemplate`을 호출하여 시작합니다. 응용 프로그램 클래스의 `InitInstance` 멤버 함수에서 호출을 제거하고 대신 `InitInstance`에서 직접 프레임 창을 만듭니다. 프레임 창 클래스에 데이터 관리 코드를 넣습니다. 문서/뷰 만들기 프로세스를 보여 줍니다 [문서/뷰 만들기](../mfc/document-view-creation.md)합니다. 이 방법은 작업량이 많고 프레임워크에 대한 깊은 이해가 필요하지만 문서/뷰 오버헤드를 완전히 해제합니다.
 
-이 문서 [MFC: 문서 데이터베이스 클래스를 사용 하 여 뷰와](../data/mfc-using-database-classes-without-documents-and-views.md) 데이터베이스 응용 프로그램의 컨텍스트에서 문서/뷰 대안의 구체적인 예제를 제공 합니다.
+문서 [MFC: 데이터베이스 없이 문서 및 뷰 클래스를 사용 하 여](../data/mfc-using-database-classes-without-documents-and-views.md) 데이터베이스 응용 프로그램의 컨텍스트에서 문서/뷰 대안의 구체적인 예제를 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

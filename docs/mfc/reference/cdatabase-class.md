@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CDatabase [MFC], SetQueryTimeout
 - CDatabase [MFC], m_hdbc
 ms.assetid: bd0de70a-e3c3-4441-bcaa-bbf434426ca8
-ms.openlocfilehash: d152153ac4e379f4159c4ade5dfc044288f69720
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e523b2a145254cd9b7adf2b066605a679349f6c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541406"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273450"
 ---
 # <a name="cdatabase-class"></a>CDatabase 클래스
 
@@ -94,8 +94,8 @@ class CDatabase : public CObject
 |[CDatabase::GetDatabaseName](#getdatabasename)|현재 사용 중인 데이터베이스의 이름을 반환합니다.|
 |[CDatabase::IsOpen](#isopen)|0이 아닌 경우 반환 된 `CDatabase` 개체 데이터 소스에 현재 연결 되어 있습니다.|
 |[CDatabase::OnSetOptions](#onsetoptions)|표준 연결 옵션을 설정 하기 위해 프레임 워크에서 호출 됩니다. 기본 구현은 쿼리 제한 시간 값을 설정합니다. 호출 하 여 사전에 이러한 옵션을 설정할 수 있습니다 `SetQueryTimeout`합니다.|
-|[Cdatabase:: Open](#open)|(ODBC 드라이버)를 통해 데이터 원본에 연결합니다.|
-|[Cdatabase:: Openex](#openex)|(ODBC 드라이버)를 통해 데이터 원본에 연결합니다.|
+|[CDatabase::Open](#open)|(ODBC 드라이버)를 통해 데이터 원본에 연결합니다.|
+|[CDatabase::OpenEx](#openex)|(ODBC 드라이버)를 통해 데이터 원본에 연결합니다.|
 |[CDatabase::Rollback](#rollback)|현재 트랜잭션 중 변경 내용을 취소 합니다. 데이터 원본에 정의 된 대로를 이전 상태로 반환는 `BeginTrans` 변경 되지 않고 호출 합니다.|
 |[CDatabase::SetLoginTimeout](#setlogintimeout)|데이터 원본 연결 시도 시간 초과가 발생 하는 시간 (초) 수를 설정 합니다.|
 |[CDatabase::SetQueryTimeout](#setquerytimeout)|초 후 데이터베이스 쿼리 작업 집합에는 시간이 초과 됩니다. 이후의 모든 레코드 집합에 영향을 줍니다 `Open`, `AddNew`를 `Edit`, 및 `Delete` 호출 합니다.|
@@ -111,13 +111,13 @@ class CDatabase : public CObject
 데이터 소스는 일부 데이터베이스 관리 시스템 (DBMS)에서 호스트 되는 데이터의 특정 인스턴스입니다. Microsoft SQL Server, Microsoft Access, Borland dBASE 및 xBASE을 예로 들 수 있습니다. 하나 이상의 있습니다 `CDatabase` 응용 프로그램에서 한 번에 활성 개체입니다.
 
 > [!NOTE]
->  클래스를 사용 하 여 열린 데이터베이스 연결 (ODBC) 클래스가 아니라 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) 대신 합니다. 자세한 내용은 문서 참조 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
+>  클래스를 사용 하 여 열린 데이터베이스 연결 (ODBC) 클래스가 아니라 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoDatabase](../../mfc/reference/cdaodatabase-class.md) 대신 합니다. 자세한 내용은 문서를 참조 하세요. [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
 
 사용 하도록 `CDatabase`, 생성을 `CDatabase` 개체와 호출 해당 `OpenEx` 멤버 함수입니다. 이 연결을 엽니다. 그런 다음 생성 하는 경우 `CRecordset` 연결 된 데이터 원본에서 운영 하는 것에 대 한 개체 생성자에 전달 하십시오 레코드 집합에 대 한 포인터에 `CDatabase` 개체입니다. 과정을 마치면 연결을 사용 하 여 호출 합니다 `Close` 멤버 함수를 제거는 `CDatabase` 개체입니다. `Close` 이전에 닫지 않은 모든 레코드 집합을 닫습니다.
 
-에 대 한 자세한 내용은 `CDatabase`, 문서를 참조 하세요 [데이터 원본 (ODBC)](../../data/odbc/data-source-odbc.md) 하 고 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
+에 대 한 자세한 내용은 `CDatabase`, 문서를 참조 하세요 [데이터 원본 (ODBC)](../../data/odbc/data-source-odbc.md) 고 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -146,7 +146,7 @@ BOOL BeginTrans();
 > [!CAUTION]
 >  ODBC 드라이버에 따라 호출 하기 전에 레코드 집합 열기 `BeginTrans` 호출할 때 문제가 발생할 수 있습니다 `Rollback`합니다. 사용 하는 특정 드라이버를 확인 해야 합니다. 예를 들어 Microsoft ODBC Desktop Driver Pack 3.0에 포함 된 Microsoft Access 드라이버를 사용할 때 열린 커서에 있는 모든 데이터베이스에서 트랜잭션을 시작 하지 해야 하는 Jet 데이터베이스 엔진의 요구 사항에 대해 고려해 야 합니다. MFC 데이터베이스 클래스에서 열린 커서 의미 개방적이 고 `CRecordset` 개체입니다. 자세한 내용은 [기술 참고 68](../../mfc/tn068-performing-transactions-with-the-microsoft-access-7-odbc-driver.md)합니다.
 
-`BeginTrans` 요청 된 동시성 및 데이터 원본 기능에 따라 서버에서 데이터 레코드를 잠글 수도 있습니다. 잠금 데이터에 대 한 자세한 문서를 참조 [레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)합니다.
+`BeginTrans` 요청 된 동시성 및 데이터 원본 기능에 따라 서버에서 데이터 레코드를 잠글 수도 있습니다. 잠금 데이터에 대 한 자세한 문서를 참고 [레코드 집합: 레코드 잠금 (ODBC)](../../data/odbc/recordset-locking-records-odbc.md)합니다.
 
 사용자 정의 트랜잭션 문서에서 설명 됩니다 [트랜잭션 (ODBC)](../../data/odbc/transaction-odbc.md)합니다.
 
@@ -161,7 +161,7 @@ BOOL BeginTrans();
 
 ### <a name="example"></a>예제
 
-  문서를 참조 하세요 [트랜잭션: 트랜잭션 수행 레코드 집합 (ODBC)에서](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)합니다.
+  문서를 참조 [트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)합니다.
 
 ##  <a name="bindparameters"></a>  CDatabase::BindParameters
 
@@ -288,7 +288,7 @@ BOOL CommitTrans();
 
 ### <a name="example"></a>예제
 
-  문서를 참조 하세요 [트랜잭션: 트랜잭션 수행 레코드 집합 (ODBC)에서](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)합니다.
+  문서를 참조 [트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)합니다.
 
 ##  <a name="executesql"></a>  CDatabase::ExecuteSQL
 
@@ -341,7 +341,7 @@ DWORD GetBookmarkPersistence() const;
 |SQL_BP_UPDATE|다음 행에 대 한 책갈피가 유효는 `Update` 해당 행에 대 한 작업입니다.|
 |SQL_BP_OTHER_HSTMT|레코드 집합 개체 하나와 연결된 책갈피가 두 번째 레코드 집합에서도 유효합니다.|
 
-이 반환 값에 대 한 자세한 내용은 ODBC API 함수를 참조 하세요. `SQLGetInfo` Windows SDK에 있습니다. 책갈피에 대 한 자세한 내용은 문서 참조 [레코드 집합: 책갈피와 절대 위치 (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)합니다.
+이 반환 값에 대 한 자세한 내용은 ODBC API 함수를 참조 하세요. `SQLGetInfo` Windows SDK에 있습니다. 책갈피에 대 한 자세한 내용은 문서를 참조 하세요. [레코드 집합: 책갈피와 절대 위치 (ODBC)](../../data/odbc/recordset-bookmarks-and-absolute-positions-odbc.md)합니다.
 
 ##  <a name="getconnect"></a>  CDatabase::GetConnect
 
@@ -477,7 +477,7 @@ virtual void OnSetOptions(HSTMT hstmt);
 
 재정의 `OnSetOptions` 추가 옵션을 설정 하려는 경우. 재정의 기본 클래스를 호출 해야 `OnSetOptions` ODBC API 함수를 호출 전후 `SQLSetStmtOption`합니다. 프레임 워크의 기본 구현에서 설명 된 방법을 따라 `OnSetOptions`합니다.
 
-##  <a name="open"></a>  Cdatabase:: Open
+##  <a name="open"></a>  CDatabase::Open
 
 새로 생성 된 초기화 하려면이 멤버 함수를 호출 `CDatabase` 개체입니다.
 
@@ -530,7 +530,7 @@ ODBC 커서 라이브러리 DLL을 로드 하려면 TRUE로 지정 합니다. �
 
 [!code-cpp[NVC_MFCDatabase#14](../../mfc/codesnippet/cpp/cdatabase-class_6.cpp)]
 
-##  <a name="openex"></a>  Cdatabase:: Openex
+##  <a name="openex"></a>  CDatabase::OpenEx
 
 새로 생성 된 초기화 하려면이 멤버 함수를 호출 `CDatabase` 개체입니다.
 
@@ -600,7 +600,7 @@ BOOL Rollback();
 
 ### <a name="example"></a>예제
 
-  문서를 참조 하세요 [트랜잭션: 트랜잭션 수행 레코드 집합 (ODBC)에서](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)합니다.
+  문서를 참조 [트랜잭션: 레코드 집합 (ODBC)에서 트랜잭션 수행](../../data/odbc/transaction-performing-a-transaction-in-a-recordset-odbc.md)합니다.
 
 ##  <a name="setlogintimeout"></a>  CDatabase::SetLoginTimeout
 
@@ -640,7 +640,7 @@ void SetQueryTimeout(DWORD dwSeconds);
 
 쿼리 제한 시간에 대 한 기본값은 15 초입니다. 일부 데이터 원본 쿼리 제한 시간 값을 설정 하는 기능을 지원 합니다. 쿼리 제한 시간 값이 0으로 설정한 경우 시간 제한 없이 발생 합니다. 데이터 소스와의 통신에 응답을 중지할 수 있습니다. 이 동작은 개발 하는 동안 유용할 수 있습니다. 데이터 원본 제한 시간을 지원 하지 않으면 추적 출력을 만들지만 되지 않는 예외를 가져옵니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

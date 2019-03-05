@@ -5,18 +5,18 @@ helpviewer_keywords:
 - toolbars [MFC]
 - command bars [MFC], MFC toolbars
 ms.assetid: c22ecc5b-a84c-4979-8d1a-8e3e71d5ce33
-ms.openlocfilehash: 7516ee4fa942070aad47f0cd6b8e1a65ff41ec4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe294b42f6c149a32d3e96ee9e0e2dc18103fc5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467273"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260519"
 ---
 # <a name="toolbars"></a>도구 모음
 
 문서 도구 모음 제품군에는 MFC 도구 모음을 만들고 사용 하는 방법을 설명 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [MFC 도구 모음 구현](../mfc/mfc-toolbar-implementation.md)
 
@@ -28,7 +28,7 @@ ms.locfileid: "50467273"
 
 - [샘플](../mfc/toolbar-sample-list.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [도구 모음 편집기](../windows/toolbar-editor.md)

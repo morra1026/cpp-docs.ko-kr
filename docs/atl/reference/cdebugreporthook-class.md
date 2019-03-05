@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDebugReportHook class
 ms.assetid: 798076c3-6e63-4286-83b8-aa1bbcd0c20c
-ms.openlocfilehash: 370581effcd7233d0f1f474c80a273809be58551
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7c5993d1b96daaa73e7fc9509c93e66daed77f3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551491"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262456"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook 클래스
 
@@ -37,7 +37,7 @@ class CDebugReportHook
 |이름|설명|
 |----------|-----------------|
 |[CDebugReportHook::CDebugReportHook](#cdebugreporthook)|호출 [SetPipeName](#setpipename)하십시오 [SetTimeout](#settimeout), 및 [SetHook](#sethook)합니다.|
-|[CDebugReportHook:: ~ CDebugReportHook](#dtor)|호출 [CDebugReportHook::RemoveHook](#removehook)합니다.|
+|[CDebugReportHook::~CDebugReportHook](#dtor)|Calls [CDebugReportHook::RemoveHook](#removehook).|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -83,9 +83,9 @@ CDebugReportHook(
 *dwTimeout*<br/>
 이 클래스는 명명된 된 파이프를 사용할 수 있을 대기할 시간 (밀리초) 시간입니다.
 
-##  <a name="dtor"></a>  CDebugReportHook:: ~ CDebugReportHook
+##  <a name="dtor"></a>  CDebugReportHook::~CDebugReportHook
 
-호출 [CDebugReportHook::RemoveHook](#removehook)합니다.
+Calls [CDebugReportHook::RemoveHook](#removehook).
 
 ```
 ~CDebugReportHook() throw();
@@ -182,6 +182,6 @@ void SetTimeout(DWORD dwTimeout);
 *dwTimeout*<br/>
 이 클래스는 명명된 된 파이프를 사용할 수 있을 대기할 시간 (밀리초) 시간입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../atl/reference/atl-classes.md)

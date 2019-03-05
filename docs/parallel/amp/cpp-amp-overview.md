@@ -8,12 +8,12 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, overview
 - C++ Accelerated Massive Parallelism
 ms.assetid: 9e593b06-6e3c-43e9-8bae-6d89efdd39fc
-ms.openlocfilehash: 26f24e922769a565c88264032373662116eee290
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: da77e2ba93554cb65d4cc92353d05d54467b50d4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176993"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269645"
 ---
 # <a name="c-amp-overview"></a>C++ AMP 개요
 
@@ -54,11 +54,11 @@ void StandardMethod() {
 
 중요 한 부분 코드는 다음과 같습니다.
 
-- 데이터: 데이터 배열 세 개로 구성 됩니다. 모두 동일한 차수 (1) 및 길이 (5)가 있습니다.
+- 데이터: 데이터는 세 개의 배열로 구성 됩니다. 모두 동일한 차수 (1) 및 길이 (5)가 있습니다.
 
 - 반복: 첫 번째 `for` 루프는 배열의 요소를 통한 반복 메커니즘을 제공 합니다. 첫 번째에 포함 된 합계 계산을 위해 실행 하려는 코드 `for` 블록입니다.
 
-- 인덱스:는 `idx` 변수 배열의 개별 요소에 액세스 합니다.
+- 인덱스: `idx` 변수 배열의 개별 요소에 액세스 합니다.
 
 C + + AMP를 사용 하 여, 다음 코드를을 대신 작성할 수 있습니다.
 
@@ -98,11 +98,11 @@ void CppAmpMethod() {
 
 동일한 기본 요소는 있지만 c + + AMP 구문이 사용 됩니다.
 
-- 데이터: c + + 배열 구성에 사용 하 세 c + + AMP [array_view](../../parallel/amp/reference/array-view-class.md) 개체입니다. 생성 하는 네 가지 값을 제공 하는 `array_view` 개체: 데이터 값, 순위, 요소 형식 및 길이 `array_view` 각 차원에서 개체입니다. 차수 및 형식은 형식 매개 변수로 전달 됩니다. 데이터 및 길이 생성자 매개 변수로 전달 됩니다. 이 예제에서는 생성자에 전달 되는 c + + 배열이 1 차원입니다. 차수 및 길이 데이터의 사각형 모양을 생성 하는 데 사용 된 `array_view` 개체 및 데이터 값 배열을 채우는 데 사용 됩니다. 런타임 라이브러리도 포함 되어 있습니다 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)와 비슷한 인터페이스가 `array_view` 클래스 및이 문서의 뒷부분에서 설명 됩니다.
+- 데이터: C + + 배열을 사용 하 여 3 개 c + + AMP를 생성할 [array_view](../../parallel/amp/reference/array-view-class.md) 개체입니다. 생성 하는 네 가지 값을 제공 하는 `array_view` 개체: 데이터 값, 순위, 요소 형식 및 길이 `array_view` 각 차원에서 개체입니다. 차수 및 형식은 형식 매개 변수로 전달 됩니다. 데이터 및 길이 생성자 매개 변수로 전달 됩니다. 이 예제에서는 생성자에 전달 되는 c + + 배열이 1 차원입니다. 차수 및 길이 데이터의 사각형 모양을 생성 하는 데 사용 된 `array_view` 개체 및 데이터 값 배열을 채우는 데 사용 됩니다. 런타임 라이브러리도 포함 되어 있습니다 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)와 비슷한 인터페이스가 `array_view` 클래스 및이 문서의 뒷부분에서 설명 됩니다.
 
 - 반복: 합니다 [parallel_for_each 함수 (c + + AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) 데이터 요소를 통한 반복 메커니즘을 제공 하거나 *계산 도메인*합니다. 이 예제에서는 계산 도메인 된 `sum.extent`합니다. 람다 식에 포함 된 실행 하려는 코드 또는 *커널 함수가*합니다. `restrict(amp)` c + + AMP를 가속화할 수 있는 c + + 언어의 하위 집합만 사용 됨을 나타냅니다.
 
-- 인덱스: 합니다 [인덱스 클래스](../../parallel/amp/reference/index-class.md) 변수인 `idx`, 하나의 차수와 일치 하도록 차수를 사용 하 여 선언 된는 `array_view` 개체. 인덱스를 사용 하 여의 개별 요소에 액세스할 수 있습니다는 `array_view` 개체입니다.
+- 인덱스: [인덱스 클래스](../../parallel/amp/reference/index-class.md) 변수인 `idx`의 차수와 일치 하는 차수를 사용 하 여 선언 된는 `array_view` 개체입니다. 인덱스를 사용 하 여의 개별 요소에 액세스할 수 있습니다는 `array_view` 개체입니다.
 
 ## <a name="shaping-and-indexing-data-index-and-extent"></a>데이터 셰이핑 및 인덱싱: 인덱스 및 범위
 
@@ -459,17 +459,17 @@ C + + AMP에는 가속 된 그래픽 프로그래밍을 위해 설계 된 그래
 
 - [texture 클래스](../../parallel/amp/reference/texture-class.md): 메모리 또는 파일에서 질감을 만들려면 질감 클래스를 사용할 수 있습니다. 질감은 데이터를 포함 하 고 할당 및 복사본 생성에 대해 c + + 표준 라이브러리의 컨테이너 비슷합니다 때문에 배열 유사 합니다. 자세한 내용은 [C++ 표준 라이브러리 컨테이너](../../standard-library/stl-containers.md)를 참조하세요. 에 대 한 템플릿 매개 변수는 `texture` 클래스는 요소 형식과 차수입니다. 순위는 1, 2 또는 3 수 있습니다. 요소 형식은이 문서의 뒷부분에서 설명 하는 short 벡터 형식 중 하나일 수 있습니다.
 
-- [writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md): 모든 질감에 대 한 쓰기 전용 액세스를 제공 합니다.
+- [writeonly_texture_view 클래스](../../parallel/amp/reference/writeonly-texture-view-class.md): 모든 질감에 대 한 쓰기 전용 액세스를 제공합니다.
 
-- Short 벡터 라이브러리: 2, 3 및 4에 기반한 길이의 short 벡터 형식 집합을 정의 **int**, `uint`합니다 **float**를 **double**, [norm ](../../parallel/amp/reference/norm-class.md), 또는 [unorm](../../parallel/amp/reference/unorm-class.md)합니다.
+- Short 벡터 라이브러리: 2, 3 및 4에 기반한 길이의 short 벡터 형식 집합을 정의 **int**를 `uint`를 **float**를 **double**를 [norm](../../parallel/amp/reference/norm-class.md), 또는 [unorm](../../parallel/amp/reference/unorm-class.md)합니다.
 
-## <a name="universal-windows-platform-uwp-apps"></a>유니버설 Windows 플랫폼 (UWP) 앱
+## <a name="universal-windows-platform-uwp-apps"></a>UWP(유니버설 Windows 플랫폼) 앱
 
 다른 c + + 라이브러리와 같은 UWP 앱의 c + + AMP를 사용할 수 있습니다. 이러한 문서는 c + +, C#, Visual Basic 또는 JavaScript를 사용 하 여 만든 앱에서 c + + AMP 코드를 포함 하는 방법을 설명 합니다.
 
 - [UWP 앱에서 C++ AMP 사용](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)
 
-- [연습: c + + 및 JavaScript에서 호출 하는 기본적인 Windows 런타임 구성 요소 만들기](http://go.microsoft.com/fwlink/p/?linkid=249077)
+- [연습: C + +에서 기본 Windows 런타임 구성 요소를 만들고 JavaScript에서 호출](http://go.microsoft.com/fwlink/p/?linkid=249077)
 
 - [Bing Maps Trip Optimizer, JavaScript 및 c + + Windows 스토어 앱](http://go.microsoft.com/fwlink/p/?linkid=249078)
 
@@ -499,7 +499,7 @@ C + + AMP에는 가속 된 그래픽 프로그래밍을 위해 설계 된 그래
 
 모듈러스 및 나누기 부호 없는 정수의 나머지 연산과 나누기는 부호 있는 정수 보다 성능을 크게 향상에 있습니다. 가능 하면 부호 없는 정수를 사용 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [람다 식 구문](../../cpp/lambda-expression-syntax.md)<br/>

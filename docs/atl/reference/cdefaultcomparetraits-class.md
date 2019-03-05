@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultCompareTraits class
 ms.assetid: a17e2740-e7b4-48f2-aeb7-c80ce84b63f7
-ms.openlocfilehash: b7f51ccd266fce1b5d614dfe2c725e20fde6f297
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5f4ab3737838af11501c4a0f2037b57087939c9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50575307"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273597"
 ---
 # <a name="cdefaultcomparetraits-class"></a>CDefaultCompareTraits 클래스
 
@@ -64,7 +64,7 @@ static bool CompareElements(const T& element1, const T& element2);
 *element1*<br/>
 첫 번째 요소입니다.
 
-*element2 요소*<br/>
+*element2*<br/>
 두 번째 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -88,7 +88,7 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 *element1*<br/>
 첫 번째 요소입니다.
 
-*element2 요소*<br/>
+*element2*<br/>
 두 번째 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -97,14 +97,14 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 
 |조건|반환 값|
 |---------------|------------------|
-|*element1* < *element2 요소*|<0|
-|*element1* == *element2 요소*|0|
-|*element1* > *element2 요소*|>0|
+|*element1* < *element2*|<0|
+|*element1* == *element2*|0|
+|*element1* > *element2*|>0|
 
 ### <a name="remarks"></a>설명
 
 기본 구현은이 함수를 사용 합니다 **==** 를 **\<**, 및 **>** 연산자입니다. 단순 데이터 형식 이외의 개체에 대 한이 함수를 재정의할 수 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

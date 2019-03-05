@@ -6,12 +6,12 @@ f1_keywords:
 - AMPRT/scoped_d3d_access_lock
 - AMPRT/concurrency::direct3d::scoped_d3d_access_lock::scoped_d3d_access_lock
 ms.assetid: 0ad333e6-9839-4736-a722-16d95d70c4b1
-ms.openlocfilehash: 08b6edc415d08d6dfb863fb90ff27bac6ce0960a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e36c3c2cfa9d1b617e377a7e340f98875457bdf1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598447"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272466"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock 클래스
 
@@ -38,7 +38,7 @@ class scoped_d3d_access_lock;
 |----------|-----------------|
 |[operator=](#operator_eq)|다른 잠금 소유권 `scoped_d3d_access_lock`합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `scoped_d3d_access_lock`
 
@@ -91,7 +91,7 @@ scoped_d3d_access_lock(// [3] move constructor
 ~scoped_d3d_access_lock();
 ```
 
-## <a name="operator_eq"></a> 연산자 =
+## <a name="operator_eq"></a> operator=
 
 다른 D3D 액세스 잠금 소유권 `scoped_d3d_access_lock` 개체에서 이전 잠금을 해제 합니다.
 
@@ -108,6 +108,6 @@ D3D 액세스 잠금을 이동할 수 있는 accelerator_view입니다.
 
 이에 대 한 참조 `scoped_accelerator_view_lock`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::direct3d 네임스페이스](concurrency-direct3d-namespace.md)

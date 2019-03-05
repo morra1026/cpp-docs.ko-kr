@@ -5,12 +5,12 @@ helpviewer_keywords:
 - registry, ATL services entries
 - registry, application IDs
 ms.assetid: 881989b7-61bb-459a-a13e-3bfcb33e184e
-ms.openlocfilehash: b61aae9ba9316dded1dcb11353e52eb2fffd49a2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a89bc5d510d493f557b7ea74b8eabe5dfd87ac1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472880"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261942"
 ---
 # <a name="registry-entries"></a>레지스트리 항목
 
@@ -24,7 +24,6 @@ DCOM 레지스트리에서 중앙 집중화 된 위치에 하나 이상의 DCOM 
 
 DCOM 서비스에서 다른 키를 만들려면 해야 `HKEY_CLASSES_ROOT\AppID`합니다. 이 키가 exe 파일의 이름으로와 같고 AppID 항목 다시 가리키는 AppID 값을 포함 하는 대로 상호 참조를 역할도 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [서비스](../atl/atl-services.md)
-

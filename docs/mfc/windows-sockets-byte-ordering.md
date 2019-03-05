@@ -6,16 +6,16 @@ helpviewer_keywords:
 - sockets [MFC], byte order issues
 - Windows Sockets [MFC], byte order issues
 ms.assetid: 8a787a65-f9f4-4002-a02f-ac25a5dace5d
-ms.openlocfilehash: 74d3b53ae3ab476ef1224caed91f31929fcce1ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca572ad32a9a46756cacf0221d80b2953b710723
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453953"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278095"
 ---
 # <a name="windows-sockets-byte-ordering"></a>Windows 소켓: 바이트 순서 지정
 
-이 문서 및 두 개의 참조 문서에서는 Windows 소켓 프로그래밍의 몇 가지 문제를 설명합니다. 이 문서에서는 바이트 순서에 대해 설명 합니다. 다른 문제는 문서에 나와: [Windows 소켓: 차단](../mfc/windows-sockets-blocking.md) 하 고 [Windows 소켓: 문자열 변환](../mfc/windows-sockets-converting-strings.md)합니다.
+이 문서 및 두 개의 참조 문서에서는 Windows 소켓 프로그래밍의 몇 가지 문제를 설명합니다. 이 문서에서는 바이트 순서에 대해 설명 합니다. 다른 문제는 문서에 적용 됩니다. [Windows 소켓: 차단](../mfc/windows-sockets-blocking.md) 고 [Windows 소켓: 문자열 변환](../mfc/windows-sockets-converting-strings.md)합니다.
 
 사용 하거나 클래스에서 파생 되는 경우 [CAsyncSocket](../mfc/reference/casyncsocket-class.md), 이러한 문제를 직접 관리 해야 합니다. 사용 하거나 클래스에서 파생 되는 경우 [CSocket](../mfc/reference/csocket-class.md), MFC를 관리 합니다.
 
@@ -57,7 +57,7 @@ ms.locfileid: "50453953"
 통신의 양쪽을 작성 하는 경우 MFC 소켓을 사용 하기 위한 이상적인 사례: 양쪽 끝에서 MFC를 사용 합니다. Windows 소켓 변환 루틴 를사용하여와통신하는FTP서버와같은비MFC응용프로그램,바이트스왑직접보관개체에데이터를전달하기전에관리아마도해야하는응용프로그램을작성하는경우**ntohs**, **ntohl**하십시오 **htons**, 및 **htonl**. 비 MFC 응용 프로그램을 사용 하 여 통신에 사용 되는 이러한 함수의 예는이 문서의 뒷부분에 표시 됩니다.
 
 > [!NOTE]
->  MFC 응용 프로그램 통신의 한쪽 끝 없는 경우 또한 피해 야 할 c + + 개체에서 파생 된 스트리밍 `CObject` 보관에 수신자가 처리할 수 없기 때문입니다. 참고를 참조 하세요 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+>  MFC 응용 프로그램 통신의 한쪽 끝 없는 경우 또한 피해 야 할 c + + 개체에서 파생 된 스트리밍 `CObject` 보관에 수신자가 처리할 수 없기 때문입니다. 참고 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 바이트 순서에 대 한 자세한 내용은 Windows SDK에서 사용할 수 있는 Windows Sockets 사양을 참조 하세요.
 
@@ -98,15 +98,14 @@ C + +에는 **구조체** 클래스와 동일한 작업을 기본적으로 합�
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows 소켓: 백그라운드](../mfc/windows-sockets-background.md)
+- [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 
-- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)
-

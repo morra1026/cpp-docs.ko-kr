@@ -7,18 +7,18 @@ helpviewer_keywords:
 - _ATL_MIN_CRT macro
 - ATL, C Run-Time library (CRT)
 ms.assetid: 20f03b66-1eb7-4add-84a2-6047db0911eb
-ms.openlocfilehash: a14f8155545666df7ec64b15072258163f559266
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e44f2d944d64eb4eefc7bbd543eaaaa04c8a9de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466783"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267678"
 ---
 # <a name="programming-with-atl-and-c-run-time-code"></a>ATL 및 C 런타임 코드를 사용한 프로그래밍
 
 이 섹션에서는 정적 또는 동적 링크 (CRT (C 런타임 라이브러리)을 사용 하는 이점을 설명 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [CRT에 링크하는 데 사용되는 방법의 장단점](../atl/benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt.md)<br/>
 장점 및 단점 CRT에 정적으로 연결 하거나 동적으로 연결 하는 데 참여할된 요약 되어 있습니다.
@@ -37,7 +37,6 @@ VCRuntime 및 CRT 시작 코드의 작동 원리에 세부 정보를 제공 합�
 [C 런타임 라이브러리](../c-runtime-library/crt-library-features.md)<br/>
 C 런타임 라이브러리를 구성 하는 다양 한.lib 파일에 설명 하 고 해당 관련된 컴파일러 옵션과 전처리기 지시문을 나열 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

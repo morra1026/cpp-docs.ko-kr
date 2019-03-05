@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CSettingsStoreSP [MFC], Create
 - CSettingsStoreSP [MFC], SetRuntimeClass
 ms.assetid: bcd37f40-cfd4-4d17-a5ce-3bfabe995dcc
-ms.openlocfilehash: f6bcbce291aec1941359504518e26ca936edb9e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c7a992b983552340ebe21e59d2ee9a667841ec0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604479"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275196"
 ---
 # <a name="csettingsstoresp-class"></a>CSettingsStoreSP 클래스
 
@@ -53,7 +53,7 @@ class CSettingsStoreSP
 
 ## <a name="remarks"></a>설명
 
-사용할 수는 `CSettingsStoreSP` 클래스 모든 MFC 레지스트리 작업 XML 파일, 데이터베이스 등의 다른 위치로 리디렉션할 수 있습니다. 이렇게 하려면 다음 단계를 수행합니다.
+사용할 수는 `CSettingsStoreSP` 클래스 모든 MFC 레지스트리 작업 XML 파일, 데이터베이스 등의 다른 위치로 리디렉션할 수 있습니다. 이를 수행하려면 다음 단계를 따르십시오.
 
 1. 클래스를 만듭니다 (같은 `CMyStore`)에서 파생 `CSettingsStore`합니다.
 
@@ -145,8 +145,8 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 
 사용할 수는 [CSettingsStoreSP 클래스](../../mfc/reference/csettingsstoresp-class.md) 클래스에서 파생 시키는 `CSettingsStore`합니다. 메서드를 사용 하 여 `SetRuntimeClass` 에서 파생 되는 사용자 지정 클래스의 개체를 만들려는 경우 `CSettingsStore`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[CSettingsStore 클래스](../../mfc/reference/csettingsstore-class.md)
+[CSettingsStore Class](../../mfc/reference/csettingsstore-class.md)

@@ -114,12 +114,12 @@ helpviewer_keywords:
 - CRenderTarget [MFC], m_pRenderTarget
 - CRenderTarget [MFC], m_pTextFormatDefault
 ms.assetid: 30d1607d-68d3-4d14-ac36-fdbd0ef903a1
-ms.openlocfilehash: 3066f3308d0c7e5c9a04f7746585be9a9dd5bc9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 112bd4422a1fa6b9b97239228dc586a0555ddc96
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588645"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259882"
 ---
 # <a name="crendertarget-class"></a>CRenderTarget 클래스
 
@@ -138,7 +138,7 @@ class CRenderTarget : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CRenderTarget::CRenderTarget](#crendertarget)|CRenderTarget 개체를 생성합니다.|
-|[CRenderTarget:: ~ CRenderTarget](#crendertarget__~crendertarget)|소멸자입니다. 렌더링 대상 개체가 소멸 될 때 호출 됩니다.|
+|[CRenderTarget::~CRenderTarget](#crendertarget__~crendertarget)|소멸자입니다. 렌더링 대상 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -194,7 +194,7 @@ class CRenderTarget : public CObject;
 |[CRenderTarget::SetTextRenderingParams](#settextrenderingparams)|모든 후속 텍스트와 문자 모양 그리기 작업에 적용할 텍스트 렌더링 옵션을 지정 합니다.|
 |[CRenderTarget::SetTransform](#settransform)|오버로드됨. 기존 변환 대체 렌더링 대상으로 지정된 된 변환을 적용 합니다. 이후의 모든 그리기 작업은 변환 된 공간에서 발생 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -204,7 +204,7 @@ class CRenderTarget : public CObject;
 
 |이름|설명|
 |----------|-----------------|
-|[CRenderTarget::operator ID2D1RenderTarget *](#operator_id2d1rendertarget_star)|반환 ID2D1RenderTarget 인터페이스|
+|[CRenderTarget::operator ID2D1RenderTarget*](#operator_id2d1rendertarget_star)|반환 ID2D1RenderTarget 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -214,7 +214,7 @@ class CRenderTarget : public CObject;
 |[CRenderTarget::m_pRenderTarget](#m_prendertarget)|ID2D1RenderTarget 개체에 대 한 포인터입니다.|
 |[CRenderTarget::m_pTextFormatDefault](#m_ptextformatdefault)|기본 텍스트 형식으로 포함 된 CD2DTextFormat 개체에 대 한 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -224,7 +224,7 @@ class CRenderTarget : public CObject;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcrendertarget"></a>  CRenderTarget:: ~ CRenderTarget
+##  <a name="_dtorcrendertarget"></a>  CRenderTarget::~CRenderTarget
 
 소멸자입니다. 렌더링 대상 개체가 소멸 될 때 호출 됩니다.
 
@@ -263,7 +263,7 @@ void Clear(D2D1_COLOR_F color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 그리기 영역 지워집니다 색입니다.
 
 ##  <a name="colorref_to_d2dcolor"></a>  CRenderTarget::COLORREF_TO_D2DCOLOR
@@ -278,7 +278,7 @@ static D2D1_COLOR_F COLORREF_TO_D2DCOLOR(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 RGB 값입니다.
 
 *nAlpha*
@@ -402,7 +402,7 @@ void DrawEllipse(
 
 ### <a name="parameters"></a>매개 변수
 
-*타원*<br/>
+*ellipse*<br/>
 위치 및 장치 독립적 픽셀에서을 그리려면 타원의 반지름입니다.
 
 *pBrush*<br/>
@@ -573,7 +573,7 @@ void DrawText(
 *pForegroundBrush*<br/>
 텍스트를 그리는 데 사용 되는 브러시입니다.
 
-*TextFormat*<br/>
+*textFormat*<br/>
 그릴 텍스트의 글꼴, 글꼴 크기 및 방향 등의 세부 정보 형식을 설명 하는 개체입니다.
 
 *options*<br/>
@@ -632,7 +632,7 @@ void FillEllipse(
 
 ### <a name="parameters"></a>매개 변수
 
-*타원*<br/>
+*ellipse*<br/>
 위치 및 장치 독립적 픽셀을 그릴 타원의 반지름입니다.
 
 *pBrush*<br/>
@@ -756,10 +756,10 @@ void Flush(
 
 ### <a name="parameters"></a>매개 변수
 
-*태그 1*<br/>
+*tag1*<br/>
 그리기 오류가 있는 경우 0 또는 오류를 발생 시킨 작업에 대 한 태그를 포함 합니다. 이 매개 변수는 초기화되지 않은 상태로 전달됩니다.
 
-*태그 2*<br/>
+*tag2*<br/>
 그리기 오류가 있는 경우 0 또는 오류를 발생 시킨 작업에 대 한 태그를 포함 합니다. 이 매개 변수는 초기화되지 않은 상태로 전달됩니다.
 
 ##  <a name="getantialiasmode"></a>  CRenderTarget::GetAntialiasMode
@@ -858,10 +858,10 @@ void GetTags(
 
 ### <a name="parameters"></a>매개 변수
 
-*태그 1*<br/>
+*tag1*<br/>
 이후 그리기 작업에 대 한 첫 번째 레이블을 포함합니다. 이 매개 변수는 초기화되지 않은 상태로 전달됩니다. NULL을 지정 하는 경우이 매개 변수에 대 한 값이 없는 검색 됩니다.
 
-*태그 2*<br/>
+*tag2*<br/>
 이후 그리기 작업에 대 한 두 번째 레이블이 포함 되어 있습니다. 이 매개 변수는 초기화되지 않은 상태로 전달됩니다. NULL을 지정 하는 경우이 매개 변수에 대 한 값이 없는 검색 됩니다.
 
 ##  <a name="gettextantialiasmode"></a>  CRenderTarget::GetTextAntialiasMode
@@ -955,7 +955,7 @@ ID2D1RenderTarget* m_pRenderTarget;
 CD2DTextFormat* m_pTextFormatDefault;
 ```
 
-##  <a name="operator_id2d1rendertarget_star"></a>  CRenderTarget::operator ID2D1RenderTarget *
+##  <a name="operator_id2d1rendertarget_star"></a>  CRenderTarget::operator ID2D1RenderTarget*
 
 반환 ID2D1RenderTarget 인터페이스
 
@@ -1016,7 +1016,7 @@ void PushLayer(
 *layerParameters*<br/>
 콘텐츠 범위, 기하학적 마스크, 불투명도, 불투명 마스크와 계층의 앤티앨리어싱 옵션입니다.
 
-*계층*<br/>
+*layer*<br/>
 이후 그리기 작업을 수신 하는 레이어.
 
 ##  <a name="restoredrawingstate"></a>  CRenderTarget::RestoreDrawingState
@@ -1083,10 +1083,10 @@ void SetTags(
 
 ### <a name="parameters"></a>매개 변수
 
-*태그 1*<br/>
+*tag1*<br/>
 다음 그리기 작업에 적용 하는 레이블.
 
-*태그 2*<br/>
+*tag2*<br/>
 다음 그리기 작업에 적용 하는 레이블.
 
 ##  <a name="settextantialiasmode"></a>  CRenderTarget::SetTextAntialiasMode
@@ -1146,6 +1146,6 @@ CD2DResource 개체에 대 한 포인터입니다.
 
 TRUE 개체인 경우 올바르지 않습니다. 그렇지 않으면 FALSE입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

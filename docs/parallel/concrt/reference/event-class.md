@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - event class
 ms.assetid: fba35a53-6568-4bfa-9aaf-07c0928cf73d
-ms.openlocfilehash: 323b9a6e2c46bea8d82f0f589d1174041c1f0780
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa9d46b868c1a31729a9590db3b3f67179903881
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480108"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264669"
 ---
 # <a name="event-class"></a>event 클래스
 
@@ -56,7 +56,7 @@ class event;
 
 자세한 내용은 [동기화 데이터 구조](../../../parallel/concrt/synchronization-data-structures.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `event`
 
@@ -76,7 +76,7 @@ _CRTIMP event();
 
 ### <a name="remarks"></a>설명
 
-##  <a name="dtor"></a> ~ 이벤트
+##  <a name="dtor"></a> ~event
 
 이벤트를 제거합니다.
 
@@ -126,7 +126,7 @@ size_t wait(unsigned int _Timeout = COOPERATIVE_TIMEOUT_INFINITE);
 
 ### <a name="parameters"></a>매개 변수
 
-*시간 제한 _t*<br/>
+*_Timeout*<br/>
 대기 시간이 초과 되기까지의 시간 (밀리초)의 수를 나타냅니다. 값 `COOPERATIVE_TIMEOUT_INFINITE` 제한 시간이 없음을 임을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -159,7 +159,7 @@ static size_t __cdecl wait_for_multiple(
 *_FWaitAll*<br/>
 경우 값으로 설정 **true**, 매개 변수 배열 내에서 모든 이벤트에서 제공 하는 지정 된 `_PPEvents` 매개 변수는 대기를 만족 하려면 신호를 보내야 합니다. 경우 값으로 설정 **false**, 배열 내에서 모든 이벤트에 제공 하는 지정 된 `_PPEvents` 신호는 매개 변수는 대기를 만족 합니다.
 
-*시간 제한 _t*<br/>
+*_Timeout*<br/>
 대기 시간이 초과 되기까지의 시간 (밀리초)의 수를 나타냅니다. 값 `COOPERATIVE_TIMEOUT_INFINITE` 제한 시간이 없음을 임을 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -173,6 +173,6 @@ static size_t __cdecl wait_for_multiple(
 > [!IMPORTANT]
 > 유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait_for_multiple` ASTA에서 스레드와이 호출은 현재 스레드를 차단 하 고 응용 프로그램에서 응답 하지 않게 될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_feature class
 ms.assetid: 6b1ab917-df13-48c7-9648-7cb2465a0ff5
-ms.openlocfilehash: 155e96762d47b340ac078fad791f3078dba9a871
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a742c3fd1965882c3fa72cb1fab985cd4d981d1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497144"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272544"
 ---
 # <a name="unsupportedfeature-class"></a>unsupported_feature 클래스
 
@@ -33,7 +33,7 @@ class unsupported_feature : public runtime_exception;
 |----------|-----------------|
 |[unsupported_feature 생성자](#ctor)|새 인스턴스를 생성 합니다 `unsupported_feature` 예외입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -56,7 +56,7 @@ unsupported_feature() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류에 대한 설명입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -69,6 +69,6 @@ unsupported_feature() throw();
 
 **네임스페이스:** 동시성
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CD2DLayer [MFC], IsValid
 - CD2DLayer [MFC], m_pLayer
 ms.assetid: 2f96378e-66bb-40d1-9661-6afe324de3c1
-ms.openlocfilehash: cd4452eeb9e600aeabaec1b54fd40217514e02eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28ebe19b0f28692116a0b95721ff2e5490ad7e68
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531718"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270876"
 ---
 # <a name="cd2dlayer-class"></a>CD2DLayer 클래스
 
@@ -48,7 +48,7 @@ class CD2DLayer : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DLayer::CD2DLayer](#cd2dlayer)|CD2DLayer 개체를 생성합니다.|
-|[CD2DLayer:: ~ CD2DLayer](#_dtorcd2dlayer)|소멸자입니다. D2D 레이어 개체가 소멸 될 때 호출 됩니다.|
+|[CD2DLayer::~CD2DLayer](#_dtorcd2dlayer)|소멸자입니다. D2D 레이어 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -74,7 +74,7 @@ class CD2DLayer : public CD2DResource;
 |----------|-----------------|
 |[CD2DLayer::m_pLayer](#m_player)|ID2D1Layer 개체에 대 한 포인터를 저장합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -86,7 +86,7 @@ class CD2DLayer : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dlayer"></a>  CD2DLayer:: ~ CD2DLayer
+##  <a name="_dtorcd2dlayer"></a>  CD2DLayer::~CD2DLayer
 
 소멸자입니다. D2D 레이어 개체가 소멸 될 때 호출 됩니다.
 
@@ -206,7 +206,7 @@ ID2D1Layer 개체에 대 한 포인터를 저장합니다.
 ID2D1Layer* m_pLayer;
 ```
 
-##  <a name="operator_id2d1layer_star"></a>  CD2DLayer::operator ID2D1Layer *
+##  <a name="operator_id2d1layer_star"></a>  CD2DLayer::operator ID2D1Layer*
 
 반환 ID2D1Layer 인터페이스
 
@@ -218,6 +218,6 @@ operator ID2D1Layer* ();
 
 ID2D1Layer 인터페이스 또는 개체가 아직 초기화 되지 않은 경우 NULL 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

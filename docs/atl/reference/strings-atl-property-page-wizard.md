@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, strings
 ms.assetid: 00547db6-911f-49eb-92e1-2ba67079d4df
-ms.openlocfilehash: 3fc15da8cddfc74434210106d7d4c21ad84a66ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 199c6969535afdd668440ea31d004aecc507ba42
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446642"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265368"
 ---
 # <a name="strings-atl-property-page-wizard"></a>문자열, ATL 속성 페이지 마법사
 
@@ -29,8 +29,7 @@ ms.locfileid: "50446642"
 
    속성 페이지를 사용 하는 방법에 설명 하는 도움말 파일의 이름을 설정 합니다. 이 이름에는 경로가 포함 되지 않습니다. 사용자가 누르면 **도움말**, 프레임 속성 페이지 레지스트리 항목의 CLSID 아래에 있는 HelpDir 키 값에 명명 된 디렉터리에서 도움말 파일을 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 속성 페이지 마법사](../../atl/reference/atl-property-page-wizard.md)<br/>
 [옵션, ATL 속성 페이지 마법사](../../atl/reference/options-atl-property-page-wizard.md)
-

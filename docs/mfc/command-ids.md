@@ -5,12 +5,12 @@ helpviewer_keywords:
 - command IDs, MFC
 - command IDs
 ms.assetid: e0171a2b-45b9-41fa-945d-ec2f7602ded0
-ms.openlocfilehash: ecec4a7bd705dc74a3f45cc07da4abcdb168f43f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76071105e72f1ca4a851b9cdb76d5f1a96f44edb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445632"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274580"
 ---
 # <a name="command-ids"></a>명령 ID
 
@@ -20,7 +20,6 @@ ms.locfileid: "50445632"
 
 사용자 고유의 메뉴 Visual c + +에서 메뉴 편집기를 만들 때 표시 된 것 처럼 클래스 라이브러리를 수행 하는 것이 좋습니다의 명명 규칙 **ID_FILE_OPEN**합니다. [표준 명령](../mfc/standard-commands.md) 클래스 라이브러리에서 정의 하는 일반적인 명령에 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 개체 및 명령 ID](../mfc/user-interface-objects-and-command-ids.md)
-

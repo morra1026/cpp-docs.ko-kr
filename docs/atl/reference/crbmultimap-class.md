@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CRBMultiMap class
 ms.assetid: 94d3ec0c-3e30-4ab7-a101-d8da4fb8add3
-ms.openlocfilehash: f421848a87ea3cc38309e85eb39c9453530ce4fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 03a9639e8b0b3d11a414e5db0ce874d7ca8f2d45
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659097"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267487"
 ---
 # <a name="crbmultimap-class"></a>CRBMultiMap 클래스
 
@@ -55,7 +55,7 @@ Key 요소 형식입니다.
 |이름|설명|
 |----------|-----------------|
 |[CRBMultiMap::CRBMultiMap](#crbmultimap)|생성자입니다.|
-|[CRBMultiMap:: ~ CRBMultiMap](#dtor)|소멸자입니다.|
+|[CRBMultiMap::~CRBMultiMap](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -81,7 +81,7 @@ Key 요소 형식입니다.
 
 자세한 내용은 다양 한 컬렉션 클래스 및 해당 기능 및 성능 특성에 대 한 참조 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CRBTree](../../atl/reference/crbtree-class.md)
 
@@ -114,7 +114,7 @@ explicit CRBMultiMap(size_t nBlockSize = 10) throw();
 
 [!code-cpp[NVC_ATL_Utilities#85](../../atl/codesnippet/cpp/crbmultimap-class_1.cpp)]
 
-##  <a name="dtor"></a>  CRBMultiMap:: ~ CRBMultiMap
+##  <a name="dtor"></a>  CRBMultiMap::~CRBMultiMap
 
 소멸자입니다.
 
@@ -234,7 +234,7 @@ POSITION Insert(KINARGTYPE key, VINARGTYPE value) throw(...);
 *key*<br/>
 추가할 키 값을 `CRBMultiMap` 개체입니다.
 
-*값*<br/>
+*value*<br/>
 에 추가할 값을 `CRBMultiMap` 와 연결 된 개체 *키*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -276,7 +276,7 @@ size_t RemoveKey(KINARGTYPE key) throw();
 
 예를 참조 하세요 [CRBMultiMap::CRBMultiMap](#crbmultimap)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRBTree 클래스](../../atl/reference/crbtree-class.md)<br/>
 [CAtlMap 클래스](../../atl/reference/catlmap-class.md)<br/>

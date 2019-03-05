@@ -5,12 +5,12 @@ helpviewer_keywords:
 - views [MFC], advantages
 - document/view architecture [MFC], advantages of
 ms.assetid: 0bc27071-e120-4889-939c-ce1e61fb9cb3
-ms.openlocfilehash: ccb2e786eb2397efd2d8b34e118f0935fdb05283
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e250630bf3c9714fc01ff66b66fba3ac0d5b1cc1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655969"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265459"
 ---
 # <a name="advantages-of-the-documentview-architecture"></a>문서/뷰 아키텍처의 이점
 
@@ -24,7 +24,7 @@ MFC는 스프레드시트 보기 및 차트 보기는 CView에서 파생 된 다
 
 이 시나리오 하기 어려운 데이터 구분이 없는 코드 보기에서 뷰 데이터를 저장 하는 경우에 특히 것입니다. 문서/뷰를 사용 하 여 쉽습니다. 프레임 워크를 대부분의 조정 작업을 수행합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서/뷰 대안](../mfc/alternatives-to-the-document-view-architecture.md)
 
@@ -36,7 +36,6 @@ MFC는 스프레드시트 보기 및 차트 보기는 CView에서 파생 된 다
 
 - [CView::GetDocument](../mfc/reference/cview-class.md#getdocument)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

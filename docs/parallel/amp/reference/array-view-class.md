@@ -26,12 +26,12 @@ f1_keywords:
 helpviewer_keywords:
 - array_view class
 ms.assetid: 7e7ec9bc-05a2-4372-b05d-752b50006c5a
-ms.openlocfilehash: d33c54e82e9bc228b97bff4802c9231a98f51033
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: e73639ffd11e08edb2fdb03471f2c6c88730f02d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657489"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268474"
 ---
 # <a name="arrayview-class"></a>array_view 클래스
 
@@ -107,7 +107,8 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 |이름|설명|
 |----------|-----------------|
-|[extent](#extent)|`extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.|
+|[extent](#extent)|
+  `extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.|
 |[source_accelerator_view](#source_accelerator_view)|가져옵니다 합니다 [accelerator_view](accelerator-view-class.md) 여기서의 데이터 소스는 `array_view` 위치한|
 |[value_type](#value_type)|값 형식의 `array_view` 및 바인딩된 배열의 합니다.|
 
@@ -139,7 +140,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 두 동작 모두에 게 알리는 `array_view` 기본 네이티브 메모리가 변경 되었음을 액셀러레이터에 있는 모든 복사본은 오래 된는 개체입니다. 다음이 지침을 따르는 경우 포인터 기반 보기는 데이터 병렬 배열의 보기에 제공 된 동일 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_Array_view_shape`
 
@@ -151,7 +152,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 **헤더:** amp.h
 
-**Namespace:** 동시성
+**네임스페이스:** 동시성
 
 ##  <a name="dtor"></a> ~array_view
 
@@ -348,7 +349,7 @@ array_view(
 *_Other*<br/>
 형식의 개체 `array_view<T,N>` 새 초기화 하는 `array_view`합니다.
 
-*크기 _s*<br/>
+*_Size*<br/>
 데이터가 제공 되는 C 스타일 배열의 크기입니다.
 
 *_Src*<br/>
@@ -385,7 +386,8 @@ const value_type* data() const restrict(amp,
 
 ### <a name="return-value"></a>반환 값
 
-`array_view`의 원시 데이터에 대한 포인터입니다.
+
+  `array_view`의 원시 데이터에 대한 포인터입니다.
 
 ##  <a name="discard_data"></a> discard_data
 
@@ -397,7 +399,8 @@ void discard_data() const restrict(cpu);
 
 ##  <a name="extent"></a> 범위
 
-`extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.
+
+  `extent` 개체의 모양을 정의하는 `array_view` 개체를 가져옵니다.
 
 ```
 __declspec(property(get= get_extent)) Concurrency::extent<_Rank> extent;
@@ -413,7 +416,8 @@ Concurrency::extent<_Rank> get_extent() const restrict(cpu, amp);
 
 ### <a name="return-value"></a>반환 값
 
-`extent` 개체의 `array_view` 개체입니다.
+
+  `extent` 개체의 `array_view` 개체입니다.
 
 ##  <a name="get_ref"></a> get_ref
 
@@ -443,7 +447,7 @@ accelerator_view get_source_accelerator_view() const;
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_call"></a> operator)
+##  <a name="operator_call"></a> operator()
 
 매개 변수 또는 매개 변수에서 지정 된 요소의 값을 반환 합니다.
 
@@ -488,7 +492,7 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 
 매개 변수 또는 매개 변수에서 지정 된 요소의 값입니다.
 
-##  <a name="operator_at"></a> operator]
+##  <a name="operator_at"></a> operator[]
 
 매개 변수로 지정 된 요소를 반환 합니다.
 
@@ -512,7 +516,7 @@ value_type& operator[] (
 
 인덱스에 있는 요소의 값 또는 `array_view` 가장 중요 한 차원에 투영 합니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 지정 된 내용을 복사 `array_view` 여기에 개체입니다.
 
@@ -795,6 +799,6 @@ array_view<const value_type,_New_rank> view_as(
 
 `array_view` 생성 된 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

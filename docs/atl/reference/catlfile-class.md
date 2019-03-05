@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlFile class
 ms.assetid: 93ed160b-af2a-448c-9cbe-e5fa46c199bb
-ms.openlocfilehash: 60d645d8818a0d073e4f52f22d836b34da96694f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19e230f150803019d47e1ea710e7d713d1822a53
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524607"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270096"
 ---
 # <a name="catlfile-class"></a>CAtlFile 클래스
 
@@ -74,7 +74,7 @@ class CAtlFile : public CHandle
 
 파일 처리 요구는 비교적 간단 하지만 MFC 종속성을 포함 하지 않고 Windows API를 제공 하는 보다 자세한 추상화는 필요한 경우이 클래스를 사용 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CHandle](../../atl/reference/chandle-class.md)
 
@@ -447,7 +447,7 @@ Overlapped 구조체입니다. 참조 *lpOverlapped* 에 [WriteFile](/windows/de
 
 처음 세 개의 폼 호출 [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile), 마지막 호출 [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) 파일에 데이터를 쓰려고 합니다. 사용 하 여 [CAtlFile::Seek](#seek) 파일 포인터를 이동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [움직이는 텍스트 샘플](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

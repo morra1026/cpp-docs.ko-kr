@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CListCtrl class [MFC], styles
 - CListCtrl class [MFC], changing styles
 ms.assetid: be74a005-0795-417c-9056-f6342aa74b26
-ms.openlocfilehash: cfaae07d0bb96cbdf40de5afa701b73ae82485e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ba9ae81f7b1693be0df3565256a65e4e3561fd3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645148"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266876"
 ---
 # <a name="changing-list-control-styles"></a>목록 컨트롤 스타일 변경
 
@@ -30,8 +30,7 @@ ms.locfileid: "50645148"
 > [!NOTE]
 >  작동 하려면 가리키기 선택도 있어야 **LVS_EX_ONECLICKACTIVATE** 하거나 **LVS_EX_TWOCLICKACTIVATE** 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

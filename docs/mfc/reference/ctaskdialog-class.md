@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CTaskDialog [MFC], ShowDialog
 - CTaskDialog [MFC], TaskDialogCallback
 ms.assetid: 1991ec98-ae56-4483-958b-233809c8c559
-ms.openlocfilehash: 7b95252c830e27a0602f149f880258511ec24e64
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 04c8a60f546700be8eeb2ec8a948e0ea321d12f8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52177071"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265017"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog Class
 
@@ -149,7 +149,8 @@ class CTaskDialog : public CObject
 |[CTaskDialog::AddRadioButton](#addradiobutton)|라디오 단추를 추가 하 여 `CTaskDialog`입니다.|
 |[CTaskDialog::ClickCommandControl](#clickcommandcontrol)|프로그래밍 방식으로 명령 단추 컨트롤 또는 일반 단추를 클릭합니다.|
 |[CTaskDialog::ClickRadioButton](#clickradiobutton)|프로그래밍 방식으로 라디오 단추를 클릭합니다.|
-|[CTaskDialog::DoModal](#domodal)|`CTaskDialog`를 표시합니다.|
+|[CTaskDialog::DoModal](#domodal)|
+  `CTaskDialog`를 표시합니다.|
 |[CTaskDialog::GetCommonButtonCount](#getcommonbuttoncount)|사용할 수 있는 일반적인 단추의 수를 검색합니다.|
 |[CTaskDialog::GetCommonButtonFlag](#getcommonbuttonflag)|Windows 단추를 일반 단추 형식에 연결 된 표준 변환 된 `CTaskDialog` 클래스입니다.|
 |[CTaskDialog::GetCommonButtonId](#getcommonbuttonid)|와 관련 된 일반적인 단추 형식 중 하나를 변환 합니다 `CTaskDialog` 클래스는 표준 Windows 단추를 합니다.|
@@ -222,7 +223,7 @@ class CTaskDialog : public CObject
 |`m_nProgressRangeMin`|진행률 표시줄에 대 한 최소값입니다.|
 |`m_nProgressState`|진행률 표시줄의 상태입니다. 자세한 내용은 [CTaskDialog::SetProgressBarState](#setprogressbarstate)합니다.|
 |`m_nRadioId`|선택한 라디오 단추 컨트롤의 ID입니다.|
-|`m_nWidth`|너비는 `CTaskDialog` 픽셀에서입니다.|
+|`m_nWidth`|`CTaskDialog`의 너비(픽셀)입니다.|
 |`m_strCollapse`|문자열을 `CTaskDialog` 확장 된 정보는 숨겨져 확장 상자 오른쪽에 표시 됩니다.|
 |`m_strContent`|문자열 콘텐츠는 `CTaskDialog`합니다.|
 |`m_strExpand`|문자열을 `CTaskDialog` 확장 된 정보를 표시할 때 확장 상자 오른쪽에 표시 됩니다.|
@@ -271,7 +272,7 @@ void AddCommandControl(
 *strCaption*<br/>
 [in] 문자열을는 `CTaskDialog` 사용자에 게 표시 합니다. 명령의 용도 설명 하기에이 문자열을 사용 합니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 새 단추를 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
 
 *bRequiresElevation*<br/>
@@ -306,7 +307,7 @@ void CTaskDialog::AddRadioButton(
 *strCaption*<br/>
 [in] 문자열을는 `CTaskDialog` 라디오 단추 옆에 표시 됩니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 라디오 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
@@ -489,7 +490,7 @@ int GetCommonButtonId(int nFlag);
 
 ### <a name="parameters"></a>매개 변수
 
-*플래그*<br/>
+*nFlag*<br/>
 [in] 와 관련 된 일반적인 단추 종류를 `CTaskDialog` 클래스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -966,7 +967,7 @@ void SetCommandControlOptions(
 *nCommandControlID*<br/>
 [in] 업데이트 명령 컨트롤의 ID입니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 지정한 명령 단추 컨트롤이 사용 하도록 설정 되었거나 사용 하지 않도록 설정 하는 경우를 나타내는 부울 매개 변수입니다.
 
 *bRequiresElevation*<br/>
@@ -1320,7 +1321,7 @@ void SetProgressBarMarquee(
 
 ### <a name="parameters"></a>매개 변수
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 움직이는 텍스트 모음;를 사용 하도록 설정 움직이는 텍스트 모음을 사용 하지 않도록 설정 하 고에서 제거 하려는 경우 FALSE를 `CTaskDialog`입니다.
 
 *nMarqueeSpeed*<br/>
@@ -1435,7 +1436,7 @@ void SetRadioButtonOptions(
 *nRadioButtonID*<br/>
 [in] 라디오 단추 컨트롤의 ID입니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 라디오 단추를 사용 하도록 설정 라디오 단추를 사용 하지 않도록 설정 하려면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
@@ -1604,7 +1605,7 @@ HRESULT TaskDialogCallback(
 
 에 대 한 값 *wParam* 하 고 *lParam* 생성된 된 특정 메시지에 따라 달라 집니다. 이러한 값을 비워 둘 중 하나 또는 모두에 대 한 것 같습니다. 다음 표에서 지원 되는 기본 알림 및 값 *wParam* 하 고 *lParam* 나타냅니다. 파생된 클래스에서이 메서드를 재정의 하는 경우에 다음 표에 각 메시지에 대 한 콜백 코드를 구현 해야 합니다.
 
-|알림 메시지|*wParam* 값|*lParam* 값|
+|알림 메시지|*wParam* Value|*lParam* Value|
 |--------------------------|--------------------|--------------------|
 |TDN_CREATED|사용되지 않습니다.|사용되지 않습니다.|
 |TDN_NAVIGATED|사용되지 않습니다.|사용되지 않습니다.|
@@ -1618,7 +1619,7 @@ HRESULT TaskDialogCallback(
 |TDN_HELP|사용되지 않습니다.|사용되지 않습니다.|
 |TDN_EXPANDO_BUTTON_CLICKED|확장 영역 축소 되는 경우에 0 확장 텍스트가 표시 하는 경우에 0이 아닙니다.|사용되지 않습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>

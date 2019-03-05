@@ -6,12 +6,12 @@ helpviewer_keywords:
 - frame windows [MFC], tasks
 - MFC, frame windows
 ms.assetid: 1148a952-6786-4622-b5a8-68a2d7eae584
-ms.openlocfilehash: ea35b98e5234c10a10143bad1d35fdd1b4510ced
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 594700ef1cbe0030bbe452adaa40b29b4a72f4d0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508773"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271283"
 ---
 # <a name="what-frame-windows-do"></a>프레임 창의 기능
 
@@ -21,7 +21,7 @@ ms.locfileid: "50508773"
 
 프레임 창은 또한 명령을 해당 뷰로 전달하며, 컨트롤 창으로부터 알림 메시지에 응답할 수 있습니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [컨트롤 막대 (에 속하는 방법 프레임 창)](../mfc/control-bars.md)
 
@@ -35,7 +35,6 @@ ms.locfileid: "50508773"
 
 - [컨트롤](../mfc/controls-mfc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창](../mfc/frame-windows.md)
-

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - aggregation [C++]
 - aggregate objects [C++]
 ms.assetid: 7125bb8e-b269-4b50-9bba-295b467a54cc
-ms.openlocfilehash: d5a09dcd8c289447491ebc7111a77549166a7d00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2eec7a801f9fe16bc48fc888d10ce413ec7e79db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633415"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265433"
 ---
 # <a name="aggregation"></a>집계
 
@@ -20,8 +20,7 @@ ms.locfileid: "50633415"
 
 기본적으로, 모든 `IUnknown` 포함 된 개체에 대 한 메서드 호출을 포함 하는 개체를 위임 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
 [개체 다시 사용](/windows/desktop/com/reusing-objects)
-

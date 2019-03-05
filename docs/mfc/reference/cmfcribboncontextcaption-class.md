@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CMFCRibbonContextCaption [MFC], GetColor
 - CMFCRibbonContextCaption [MFC], GetRightTabX
 ms.assetid: cce2c0a2-8370-4266-997e-f8d0eeb3d616
-ms.openlocfilehash: 3e6d8dcd643a58b3df60488b50da08288a34bab9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26cc509db55bc95688123a7c6e673dcfc87c975b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628386"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262404"
 ---
 # <a name="cmfcribboncontextcaption-class"></a>CMFCRibbonContextCaption 클래스
 
@@ -44,7 +44,7 @@ class CMFCRibbonContextCaption : public CMFCRibbonButton
 
 리본 범주에 대 한 색을 설정 하려면 호출 [cmfcribboncategory:: Settabcolor](../../mfc/reference/cmfcribboncategory-class.md#settabcolor)합니다. 컨텍스트 범주에 대 한 색을 설정 하려면 호출 [cmfcribbonbar:: Addcontextcategory](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -104,7 +104,7 @@ int GetRightTabX() const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

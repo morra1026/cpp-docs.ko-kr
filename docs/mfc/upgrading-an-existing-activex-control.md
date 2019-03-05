@@ -12,12 +12,12 @@ helpviewer_keywords:
 - upgrading ActiveX controls
 - licensing ActiveX controls
 ms.assetid: 4d12ddfa-b491-4f9f-a0b7-b51458e05651
-ms.openlocfilehash: 18641c6e25aaccd6b5d0bcbbddbf8fc73b2a3c52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fc7313c862d3536326894c947fa371d833e8fab8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525803"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276987"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>기존 ActiveX 컨트롤 업그레이드
 
@@ -28,7 +28,7 @@ ms.locfileid: "50525803"
 
 웹 페이지에 컨트롤을 사용할 경우 추가 고려 사항이 있습니다. .Ocx 파일 및 모든 지원 파일 대상 컴퓨터에 있어야 또는 인터넷을 통해 다운로드할 수 있습니다. 이렇게 하면 코드 크기와 다운로드 시간이 중요 한 고려 합니다. 서명 된.cab 파일의 다운로드를 패키지할 수 있습니다. 스크립트 및 초기화에 안전으로 컨트롤을 표시할 수 있습니다.
 
-이 문서에서는 다음 내용을 다룹니다.
+이 문서에서는 다음 토픽을 설명합니다.
 
 - [다운로드 패키징 코드](#_core_packaging_code_for_downloading)
 
@@ -270,9 +270,8 @@ OCX 96 지침에 따르면 컨트롤 항상 백그라운드에서 팔레트가 �
 
 - 스크립팅 및 지 속성에는 경고 없이 발생합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)<br/>
 [MFC ActiveX 컨트롤: ActiveX 컨트롤 라이선스](../mfc/mfc-activex-controls-licensing-an-activex-control.md)
-

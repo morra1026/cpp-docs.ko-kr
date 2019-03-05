@@ -6,12 +6,12 @@ helpviewer_keywords:
 - testing controls
 - DHTML controls, testing
 ms.assetid: 42316118-9433-410f-9d8a-0efcc1eff824
-ms.openlocfilehash: 99f55807a7da647af0961f73c600ae0e31166cdc
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 55cdaba64ccb95ee5695c082a5e146b1e7dc2cf3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330972"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277238"
 ---
 # <a name="testing-the-modified-atl-dhtml-control"></a>수정 된 ATL DHTML 컨트롤 테스트
 
@@ -41,6 +41,6 @@ ms.locfileid: "51330972"
 
 다양 한 요소 및 ATL DHTML 컨트롤을 구성 하는 파일에 대 한 자세한 내용은 참조 하세요 [DHTML 컨트롤 프로젝트의 요소 식별](../atl/identifying-the-elements-of-the-dhtml-control-project.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DHTML 컨트롤에 대 한 지원](../atl/atl-support-for-dhtml-controls.md)

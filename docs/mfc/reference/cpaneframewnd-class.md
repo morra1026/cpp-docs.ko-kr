@@ -132,16 +132,16 @@ helpviewer_keywords:
 - CPaneFrameWnd [MFC], OnDrawBorder
 - CPaneFrameWnd [MFC], m_bUseSaveBits
 ms.assetid: ea3423a3-2763-482e-b763-817036ded10d
-ms.openlocfilehash: e31b390d9464b3cbe6babd744e987ce7222e58bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3172556b3b12141aaae45992dee36061aebf2a15
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450169"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278823"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd 클래스
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 하나의 창이 포함된 미니 프레임 창을 구현합니다. 창은 창의 클라이언트 영역을 채웁니다.
 
@@ -220,7 +220,7 @@ class CPaneFrameWnd : public CWnd
 |[CPaneFrameWnd::StoreRecentDockSiteInfo](#storerecentdocksiteinfo)||
 |[CPaneFrameWnd::StoreRecentTabRelatedInfo](#storerecenttabrelatedinfo)||
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -241,9 +241,10 @@ class CPaneFrameWnd : public CWnd
 
 미니 프레임 창에 포함된 창 스타일에 따라 캡션에 단추가 표시됩니다. 창을 닫을 수 있는 경우 ( [cbasepane:: Canbeclosed](../../mfc/reference/cbasepane-class.md#canbeclosed)), 닫기 단추를 표시 합니다. 창 스타일을 AFX_CBRS_AUTO_ROLLUP 있으면 핀이 표시 됩니다.
 
-`CPaneFrameWnd`에서 클래스를 파생하는 경우 프레임워크에 만드는 방법을 알려야 합니다. 재정의 하 여 클래스를 만들거나 [cpane:: Createdefaultminiframe](../../mfc/reference/cpane-class.md#createdefaultminiframe)를 설정 또는 `CPane::m_pMiniFrameRTC` 멤버는 클래스에 대 한 런타임 클래스 정보를 가리킵니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+  `CPaneFrameWnd`에서 클래스를 파생하는 경우 프레임워크에 만드는 방법을 알려야 합니다. 재정의 하 여 클래스를 만들거나 [cpane:: Createdefaultminiframe](../../mfc/reference/cpane-class.md#createdefaultminiframe)를 설정 또는 `CPane::m_pMiniFrameRTC` 멤버는 클래스에 대 한 런타임 클래스 정보를 가리킵니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -285,7 +286,7 @@ static BOOL __stdcall AddRemovePaneFromGlobalList(
 *pWnd*<br/>
 [in] 추가 하거나 제거 하려면 창입니다.
 
-*추가*<br/>
+*bAdd*<br/>
 [in] 0이 아닌 경우에 창에 추가 합니다. 0 인 경우 창을 제거 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -532,7 +533,7 @@ static CPaneFrameWnd* __stdcall FrameFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 [in] 화면 좌표 지점입니다.
 
 *nSensitivity*<br/>
@@ -731,8 +732,8 @@ virtual LRESULT HitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
-[in] 테스트할 점입니다.
+*point*<br/>
+[in] 테스트할 지점입니다.
 
 *bDetectCaption*<br/>
 [in] TRUE 이면 캡션에 대해 시점을 확인 합니다. FALSE 이면 캡션을 무시 합니다.
@@ -999,7 +1000,7 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지점을 화면 좌표에서 사용자를 클릭 합니다.
 
 *nSensitivity*<br/>
@@ -1273,7 +1274,7 @@ virtual void StoreRecentTabRelatedInfo(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

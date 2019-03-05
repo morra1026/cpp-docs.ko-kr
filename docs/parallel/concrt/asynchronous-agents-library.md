@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Agents Library
 - Asynchronous Agents Library
 ms.assetid: d2a72a31-8ba6-4220-ad7a-e403a6acaa42
-ms.openlocfilehash: 8b4e8e6489e98aadb6ea41d32d5a9ba14efe2668
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 39ae785b602b3928f0c32f9fc599527dab5558f5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175862"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268046"
 ---
 # <a name="asynchronous-agents-library"></a>비동기 에이전트 라이브러리
 
@@ -66,7 +66,7 @@ agent1: received '42'.
 [메시지 전달 함수](../../parallel/concrt/message-passing-functions.md)<br/>
 에이전트 라이브러리에서 제공 되는 다양 한 메시지 전달 루틴을 설명 합니다.
 
-[방법: 다양한 공급자-소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br/>
+[방법: 다양한 공급자/소비자 패턴 구현](../../parallel/concrt/how-to-implement-various-producer-consumer-patterns.md)<br/>
 응용 프로그램에서 생산자-소비자 패턴을 구현 하는 방법에 설명 합니다.
 
 [방법: call 및 transformer 클래스에 작업 함수 제공](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)<br/>
@@ -75,7 +75,7 @@ agent1: received '42'.
 [방법: 데이터 파이프라인에서 transformer 사용](../../parallel/concrt/how-to-use-transformer-in-a-data-pipeline.md)<br/>
 사용 하는 방법을 보여 줍니다 합니다 [concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) 데이터 파이프라인에 클래스입니다.
 
-[방법: 완료된 작업 간 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br/>
+[방법: 완료된 작업 중에서 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)<br/>
 사용 하는 방법을 보여 줍니다 합니다 [concurrency:: choice](../../parallel/concrt/reference/choice-class.md) 하 고 [concurrency:: join](../../parallel/concrt/reference/join-class.md) 검색 알고리즘을 완료 하려면 첫 번째 작업을 선택 하는 클래스입니다.
 
 [방법: 정기적으로 메시지 보내기](../../parallel/concrt/how-to-send-a-message-at-a-regular-interval.md)<br/>
@@ -89,4 +89,3 @@ agent1: received '42'.
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)<br/>
 병렬 프로그래밍을 간소화하는 동시성 런타임에 대해 설명하고 관련 항목의 링크를 제공합니다.
-

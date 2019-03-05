@@ -38,12 +38,12 @@ helpviewer_keywords:
 - COlePropertyPage [MFC], SetModifiedFlag
 - COlePropertyPage [MFC], SetPageName
 ms.assetid: e9972872-8e6b-4550-905e-d36a274d64dc
-ms.openlocfilehash: 905f92ef7875dac984b6c0d537e4687dcc779f49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55f4b7304d0b50004585b55142804e0bb4234c16
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605714"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271257"
 ---
 # <a name="colepropertypage-class"></a>COlePropertyPage 클래스
 
@@ -89,9 +89,9 @@ class AFX_NOVTABLE COlePropertyPage : public CDialog
 
 각 사용자 지정 또는 주식 컨트롤 속성에는 컨트롤의 사용자 현재 속성 값을 확인 하 고 필요한 경우 해당 값을 수정할 수 있는 대화 상자 컨트롤이 있을 수 있습니다.
 
-사용 하 여 대 한 자세한 내용은 `COlePropertyPage`, 문서를 참조 하세요 [ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
+사용 하 여 대 한 자세한 내용은 `COlePropertyPage`, 문서를 참고 [ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -383,7 +383,7 @@ void SetPageName(LPCTSTR lpszPageName);
 *lpszPageName*<br/>
 속성 페이지의 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CIRC3](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 TESTHELP](../../visual-cpp-samples.md)<br/>

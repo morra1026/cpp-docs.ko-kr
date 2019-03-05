@@ -16,12 +16,12 @@ helpviewer_keywords:
 - opening files [MFC]
 - exception handling [MFC], opening files
 ms.assetid: a991b8ec-b04a-4766-b47e-7485b5dd0b01
-ms.openlocfilehash: a29485b8258503682d59abb51dcfa72e383f0b8c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dab7a680d9b33a6e334da99a045b709fe00f215c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577713"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261156"
 ---
 # <a name="opening-files"></a>파일 열기
 
@@ -48,9 +48,8 @@ MFC에서 파일을 여는 가장 일반적인 방법은 2 단계 프로세스�
 > [!NOTE]
 >  이 예에서는 만들고 파일을 엽니다. 문제가 있는 경우는 `Open` 호출이 반환을 `CFileException` 다음과 같이 마지막 매개 변수인 개체입니다. TRACE 매크로 파일 이름 및 실패 이유를 나타내는 코드를 인쇄 합니다. 호출할 수 있습니다는 `AfxThrowFileException` 자세한 내용을 보려면 오류 보고 해야 하는 경우 작동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFile 클래스](../mfc/reference/cfile-class.md)<br/>
 [CFile::Open](../mfc/reference/cfile-class.md#open)<br/>
 [파일](../mfc/files-in-mfc.md)
-

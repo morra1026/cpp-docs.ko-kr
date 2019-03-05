@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - CMFCStandardColorsPropertyPage class [MFC]
 ms.assetid: b84b7cfb-bb24-4c65-804a-5b642cb64400
-ms.openlocfilehash: 7663f85b20ab88c999af7ba37b260237d0fd869e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91cfa609c31e83c02cce8b2a474a9b66ec3ba56f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520668"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260740"
 ---
 # <a name="cmfcstandardcolorspropertypage-class"></a>CMFCStandardColorsPropertyPage 클래스
 
@@ -42,7 +42,7 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 `CMFCColorDialog` 클래스는 표준 색 속성 페이지를 표시 하려면이 클래스를 사용 합니다. 에 대 한 자세한 내용은 `CMFCColorDialog`를 참조 하세요 [CMFCColorDialog 클래스](../../mfc/reference/cmfccolordialog-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -60,7 +60,7 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 **헤더:** afxstandardcolorspropertypage.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

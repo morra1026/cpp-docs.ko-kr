@@ -17,12 +17,12 @@ helpviewer_keywords:
 - server applications [MFC], OLE menus and resources
 - OLE initialization failure [MFC]
 ms.assetid: 56ce9e8d-8f41-4db8-8dee-e8b0702d057c
-ms.openlocfilehash: 8b4e7787029fc9401ece02860f09b8159f086afe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0cf5b495ca1e3f6e7b0ae434c09e014a29eadb00
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592593"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281954"
 ---
 # <a name="menus-and-resources-server-additions"></a>메뉴 및 리소스: 서버 추가
 
@@ -44,7 +44,7 @@ ms.locfileid: "50592593"
 
 서버 (구성 요소) 응용 프로그램에는 OLE 비주얼 편집을 지원 하기 위해 추가 메뉴 리소스가 있어야 합니다. 응용 프로그램은 독립 실행형 모드에서 실행 될 때 사용 하는 메뉴 변경할 필요는 없지만 응용 프로그램을 빌드하기 전에 두 가지 새 메뉴 리소스를 추가 해야 합니다: 내부 활성화와 완벽 하 게 열린 상태에서 서버를 지원 하도록 지원 하기 위해 하나입니다. 전체 및 미니 서버 응용 프로그램에서 메뉴 리소스가 모두 사용 됩니다.
 
-- 내부 활성화를 지원 하려면 독립 실행형 모드에서 실행할 때 사용 되는 메뉴 리소스를 매우 유사한 메뉴 리소스를 만들어야 합니다. 이 메뉴의 차이점은 파일 및 창 항목 (및 응용 프로그램 및 데이터를 처리 하는 다른 메뉴 항목과) 누락입니다. 컨테이너 응용 프로그램에서 이러한 새 메뉴 항목을 제공 합니다. 에 대 한 자세한 정보 및이 메뉴 병합 방법의 예제를 실행 하는 것에 대 한 문서를 참조 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
+- 내부 활성화를 지원 하려면 독립 실행형 모드에서 실행할 때 사용 되는 메뉴 리소스를 매우 유사한 메뉴 리소스를 만들어야 합니다. 이 메뉴의 차이점은 파일 및 창 항목 (및 응용 프로그램 및 데이터를 처리 하는 다른 메뉴 항목과) 누락입니다. 컨테이너 응용 프로그램에서 이러한 새 메뉴 항목을 제공 합니다. 에 대 한 자세한 정보 및이 메뉴 병합 방법의 예제를 실행 하는 것에 대 한 문서를 참조 하세요. [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)입니다.
 
 - 완전 개방 활성화를 지원 하려면 독립 실행형 모드에서 실행 하는 경우 메뉴 리소스 거의 동일 하지만 사용 되는 메뉴 리소스를 만들어야 합니다. 이 메뉴 리소스 수정만 일부 항목은 복합 문서에 포함 된 항목에 서버가 작동 하 고 있다는 사실을 반영 하도록 변경 하는입니다.
 
@@ -70,8 +70,7 @@ ms.locfileid: "50592593"
 
 동일한 추가 적용으로 위에 나열 된 미니 서버 전체에 대 한 합니다. 미니 서버는 독립 실행형 모드로 실행할 수 없으므로, 해당 주 메뉴는 훨씬 작습니다. 응용 프로그램 마법사에서 만든 주 메뉴에만 파일을 포함 하는 메뉴가 항목만 종료 및 약 합니다. 포함 및 전체 메뉴 및 액셀러레이터 미니 전체 서버와 동일합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메뉴 및 리소스(OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)
-

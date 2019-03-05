@@ -6,12 +6,12 @@ f1_keywords:
 - AMP_SHORT_VECTORS/short_vector
 - AMP_SHORT_VECTORS/Concurrency::graphics::short_vector::short_vector Constructor
 ms.assetid: e4f50b8f-1150-437d-b58c-79c5fb883708
-ms.openlocfilehash: 535aeee1ea52ae6b248220d9330cd1d2235a99a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 012a70ae628a896c8202e46a5624f37f58b0781b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594053"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276860"
 ---
 # <a name="shortvector-structure"></a>short_vector 구조체
 
@@ -79,7 +79,7 @@ struct short_vector<double, 4>;
 
 *_Scalar_type*<br/>
 
-*크기 _s*<br/>
+*_Size*<br/>
 
 ## <a name="members"></a>멤버
 
@@ -95,7 +95,7 @@ struct short_vector<double, 4>;
 |----------|-----------------|
 |[short_vector:: short_vector 생성자](#ctor)||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `short_vector`
 
@@ -103,7 +103,7 @@ struct short_vector<double, 4>;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ##  <a name="ctor"></a>  short_vector:: short_vector 생성자
 
@@ -111,6 +111,6 @@ struct short_vector<double, 4>;
 short_vector();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

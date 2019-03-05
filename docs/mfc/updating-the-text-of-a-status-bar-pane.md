@@ -11,12 +11,12 @@ helpviewer_keywords:
 - panes, status bar
 - status bars [MFC], updating
 ms.assetid: 4984a3f4-9905-4d8c-a927-dca19781053b
-ms.openlocfilehash: 0c6691f37a1b0754835aba5c09d251c4986c4fb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baf5013e34f262dd3bfed82941697ab9ca21e637
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592541"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280201"
 ---
 # <a name="updating-the-text-of-a-status-bar-pane"></a>상태 표시줄 창의 텍스트 업데이트
 
@@ -69,11 +69,11 @@ ms.locfileid: "50592541"
 
 값을 정의 하 고 나면 합니다 *m_nPage* 멤버 변수 (클래스의 `CMainFrame`),이 방법을 사용 하면 응용 프로그램 업데이트 다른 표시기는 동일한 방식으로 유휴 처리 하는 동안 창에 표시할 페이지 번호입니다. 하는 경우 *m_nPage* 변경, 다음 유휴 루프 중 변경 내용을 표시 합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [사용자 인터페이스 개체 업데이트 (프로그램의 조건 변화에 따라 도구 모음 단추 및 메뉴 항목을 업데이트 하는 방법)](../mfc/how-to-update-user-interface-objects.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 상태 표시줄 구현](../mfc/status-bar-implementation-in-mfc.md)<br/>
 [CStatusBar 클래스](../mfc/reference/cstatusbar-class.md)
