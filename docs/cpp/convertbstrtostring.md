@@ -32,7 +32,7 @@ BSTR 변수입니다.
 
 ## <a name="remarks"></a>설명
 
-**ConvertBSTRToString**이 할당하는 문자열은 개발자가 삭제해야 합니다.
+**ConvertBSTRToString**이 할당 문자열은 개발자가 삭제해야 합니다.
 
 ## <a name="example"></a>예제
 
@@ -64,9 +64,9 @@ char * text: Test
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** \<comutil.h>
+**헤더:** \<comutil.h >
 
-**Lib:** comsuppw.lib 또는 comsuppwd.lib (자세한 내용은 [/zc: wchar_t (wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)
+는 comsuppwd.lib (자세한 내용은 [/zc: wchar_t (wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)	**Lib:** comsuppw.lib 또는 comsuppwd.lib(자세한 내용은 [/zc: wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)
 
 ## <a name="see-also"></a>참고자료
 
