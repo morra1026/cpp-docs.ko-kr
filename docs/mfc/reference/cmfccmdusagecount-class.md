@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CMFCCmdUsageCount [MFC], Serialize
 - CMFCCmdUsageCount [MFC], SetOptions
 ms.assetid: 9c33b783-37c0-43ea-9f31-3c75e246c841
-ms.openlocfilehash: af48451bcba9bf0d5f07cd96da99be4c2a6ae99b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4ad9a60831feb6fa1147ea3f8bcfd5c6badd06c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275365"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount 클래스
 
@@ -76,7 +76,7 @@ class CMFCCmdUsageCount : public CObject
 
 유지할 수 있습니다 `CMFCCmdUsageCount` 프로그램의 실행 간의 데이터 클래스입니다. 사용 된 [CMFCCmdUsageCount::Serialize](#serialize) 클래스 멤버 데이터를 serialize 하는 방법 및 [CMFCCmdUsageCount::SetOptions](#setoptions) 공유 멤버 데이터를 설정 하는 방법입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -206,7 +206,7 @@ virtual void Serialize(CArchive& ar);
 
 이 메서드는 명령 개수 맵 구조를 serialize `m_CmdUsage`, 및 총 명령 사용법을 `m_nTotalUsage`, 카운터 또는 지정 된 보관 파일에.
 
-Serialization 예제를 보려면 [Serialization: 개체를 직렬화](../../mfc/serialization-serializing-an-object.md)합니다.
+Serialization 예제를 보려면 [직렬화 합니다. 개체를 직렬화](../../mfc/serialization-serializing-an-object.md)합니다.
 
 ##  <a name="setoptions"></a>  CMFCCmdUsageCount::SetOptions
 
@@ -236,7 +236,7 @@ static BOOL __stdcall SetOptions(
 
 디버그 빌드에서이 메서드를 어설션 실패로 경우 생성 된 *nMinUsagePercentage* 매개 변수는 100 보다 크거나 같은 경우입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - message class
 ms.assetid: 3e1f3505-6c0c-486c-8191-666d0880ec62
-ms.openlocfilehash: 6b0c37f61ef437662a4e624c3a81edb526e7464c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 83cfdb5807581f7092709691a1839052abdd657c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636862"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263080"
 ---
 # <a name="message-class"></a>message 클래스
 
@@ -68,7 +68,7 @@ class message : public ::Concurrency::details::_Runtime_object;
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `message`
 
@@ -114,7 +114,7 @@ message(
 *_P*<br/>
 이 메시지의 페이로드입니다.
 
-*Id (_i)*<br/>
+*_Id*<br/>
 이 메시지의 고유 ID입니다.
 
 *_Msg*<br/>
@@ -164,6 +164,6 @@ long remove_ref();
 
 참조 횟수의 새 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

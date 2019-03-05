@@ -6,12 +6,12 @@ helpviewer_keywords:
 - servers [MFC], active document
 - active document servers [MFC]
 ms.assetid: 131fec1e-02a0-4305-a7ab-903b911232a7
-ms.openlocfilehash: ad9b43444cfa18698371d93acb858c0d929c30bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7050b810bb5e1f0c240222cd9b8c4922ced4238a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657670"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270776"
 ---
 # <a name="active-document-servers"></a>액티브 문서 서버
 
@@ -27,9 +27,9 @@ MFC 액티브 문서를 지원 합니다 [CDocObjectServer](../mfc/reference/cdo
 
 일반적인 MFC 서버는 고유 `COleServerItem` 파생 클래스를 연결합니다. MFC 응용 프로그램 마법사를 선택 하는 경우이 클래스를 생성 합니다 **미니 서버** 또는 **전체 서버** 확인란 복합 문서 지원 응용 프로그램 서버를 제공 합니다. 또한 선택 하는 경우는 **액티브 문서 서버** 확인란을 MFC 응용 프로그램 마법사에서 파생 된 클래스를 생성 합니다 `CDocObjectServerItem` 대신 합니다.
 
-`COleDocObjectItem` 클래스는 OLE 컨테이너가 액티브 문서 컨테이너가 되도록 허용합니다. MFC 응용 프로그램 마법사를 사용 하 여 선택 하 여 액티브 문서 컨테이너를 만들어야 합니다 **액티브 문서 컨테이너** MFC 응용 프로그램 마법사의 복합 문서 지원 페이지에서 확인란을 선택 합니다. 자세한 내용은 [활성 문서 컨테이너 응용 프로그램을 만드는](../mfc/creating-an-active-document-container-application.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+  `COleDocObjectItem` 클래스는 OLE 컨테이너가 액티브 문서 컨테이너가 되도록 허용합니다. MFC 응용 프로그램 마법사를 사용 하 여 선택 하 여 액티브 문서 컨테이너를 만들어야 합니다 **액티브 문서 컨테이너** MFC 응용 프로그램 마법사의 복합 문서 지원 페이지에서 확인란을 선택 합니다. 자세한 내용은 [활성 문서 컨테이너 응용 프로그램을 만드는](../mfc/creating-an-active-document-container-application.md)합니다.
+
+## <a name="see-also"></a>참고자료
 
 [활성 문서 포함](../mfc/active-document-containment.md)
-

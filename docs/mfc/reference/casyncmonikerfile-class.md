@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 107f791505bc41b8dbf9c0374c5e3821abbc0fe3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48d7c3b5dd1b43c7a1639c6d5c56979b422d7017
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669068"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262625"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile 클래스
 
@@ -66,7 +66,7 @@ class CAsyncMonikerFile : public CMonikerFile
 |[CAsyncMonikerFile::GetFormatEtc](#getformatetc)|스트림의 데이터의 형식을 검색합니다.|
 |[CAsyncMonikerFile::Open](#open)|비동기적으로 파일을 엽니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -91,7 +91,7 @@ class CAsyncMonikerFile : public CMonikerFile
 
 - [인터넷 첫 번째 단계: ActiveX 컨트롤](../../mfc/activex-controls-on-the-internet.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -218,7 +218,7 @@ virtual LONG GetPriority() const;
 
 ### <a name="return-value"></a>반환 값
 
-우선 순위는 비동기 전송을 수행 됩니다. 표준 스레드 우선 순위 플래그 중 하나: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, 및 THREAD_PRIORITY_TIME_CRITICAL 합니다. Windows 함수를 참조 하십시오 [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) 이러한 값에 대 한 합니다.
+우선 순위는 비동기 전송을 수행 됩니다. 표준 스레드 우선 순위 플래그 중 하나입니다. THREAD_PRIORITY_ABOVE_NORMAL THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, 및 THREAD_PRIORITY_TIME_CRITICAL 합니다. Windows 함수를 참조 하십시오 [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) 이러한 값에 대 한 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -422,7 +422,7 @@ URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. �
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CMonikerFile 클래스](../../mfc/reference/cmonikerfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

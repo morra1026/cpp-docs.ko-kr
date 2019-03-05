@@ -4,12 +4,12 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - Internet applications [MFC], Active technology
 ms.assetid: 6f782aa1-5c2f-47a2-9e63-ddd0829d5a08
-ms.openlocfilehash: 04444ca1318eaf52f05c05a251baf120c16eec29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e9f09715f53247cc8a3abf0fbc63517e76d810c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453392"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296321"
 ---
 # <a name="active-technology-on-the-internet"></a>인터넷의 액티브 기술
 
@@ -24,7 +24,7 @@ ActiveX 컨트롤 (이전의 OLE 컨트롤)는 웹 페이지 또는 ActiveX 컨�
 
 ## <a name="internet-data-download-services"></a>인터넷 Data Services 다운로드
 
-일반적으로 프로토콜을 사용 하 여 인터넷을 통해 데이터를 다운로드할 수 있습니다: HTTP, FTP 및 gopher 합니다. MFC WinInet 클래스를 사용 하면 쉽게 HTTP, FTP 및 gopher 프로토콜을 사용 하 여 TCP/IP 및 WinSock 프로토콜을 추상화 하 여 데이터를 전송할 수 있습니다. Mfc 비동기 모니커를 차단 하지 않고 파일을 다운로드 하 고 큰 개체를 비동기적으로 렌더링 하는 방법을 제공 합니다. 자세한 내용은 [Win32 인터넷 확장명 (WinInet)](../mfc/win32-internet-extensions-wininet.md)합니다.
+일반적으로 프로토콜을 사용 하 여 인터넷을 통해 데이터를 다운로드할 수 있습니다. HTTP, FTP 및 gopher를 선택 합니다. MFC WinInet 클래스를 사용 하면 쉽게 HTTP, FTP 및 gopher 프로토콜을 사용 하 여 TCP/IP 및 WinSock 프로토콜을 추상화 하 여 데이터를 전송할 수 있습니다. Mfc 비동기 모니커를 차단 하지 않고 파일을 다운로드 하 고 큰 개체를 비동기적으로 렌더링 하는 방법을 제공 합니다. 자세한 내용은 [Win32 인터넷 확장명 (WinInet)](../mfc/win32-internet-extensions-wininet.md)합니다.
 
 ## <a name="active-scripts"></a>액티브 스크립트
 
@@ -34,9 +34,8 @@ VBScript 및 기타 스크립트 언어 컨트롤을 연결 하 고 웹 페이�
 
 Object 태그 등 HTML 확장 컨트롤 및 스크립팅을 지원 하기 위해 추가 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)<br/>
 [인터넷의 ActiveX 컨트롤](../mfc/activex-controls-on-the-internet.md)<br/>
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)
-

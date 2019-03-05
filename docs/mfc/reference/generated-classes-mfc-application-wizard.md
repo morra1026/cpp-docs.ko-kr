@@ -1,19 +1,19 @@
 ---
-title: MFC 응용 프로그램 마법사, 생성된 클래스
+title: MFC 애플리케이션 마법사, 생성된 클래스
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.classes
 helpviewer_keywords:
 - MFC Application Wizard, generated classes
 ms.assetid: 5f33209c-7f01-4f72-8c1c-6f02f507ba9f
-ms.openlocfilehash: 21b951b01b413a703bb28b76426da86a5996b99d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5926911a07edf6e4ce543b728a7b5c3984861948
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542287"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267422"
 ---
-# <a name="generated-classes-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 생성된 클래스
+# <a name="generated-classes-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 생성된 클래스
 
 이 항목에서는 프로젝트에서 생성 되는 기본 클래스 및 파일 이름을 나열 합니다. 기본적으로 이름에 지정 된 프로젝트 이름에 기반한 합니다 **새 프로젝트 대화 상자**합니다. 여기에 설명 된 대로 이러한 이름 중 대부분을 변경할 수 있습니다.
 
@@ -39,8 +39,7 @@ ms.locfileid: "50542287"
 
    선택한 클래스와 연결 된 소스 코드 파일의 이름입니다. 텍스트 상자의 활성 상태인 경우에 구현 파일의 이름을 변경할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사, 고급 기능](../../mfc/reference/advanced-features-mfc-application-wizard.md)<br/>
 [Visual C++ 프로젝트용 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)
-

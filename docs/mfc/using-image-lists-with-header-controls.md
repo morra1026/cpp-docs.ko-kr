@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], image lists
 - image lists [MFC], header controls
 ms.assetid: d5e9b310-6278-406c-909c-eefa09549a47
-ms.openlocfilehash: 5c623024ef64f49e3379ef02154cda72d445a197
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3d9a4a0c655fa46c15d8c4d9b2b4e90cd34c2937
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545251"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264289"
 ---
 # <a name="using-image-lists-with-header-controls"></a>이미지 목록과 헤더 컨트롤 함께 사용
 
@@ -42,7 +42,6 @@ ms.locfileid: "50545251"
 > [!NOTE]
 >  여러 컨트롤 같은 이미지 목록을 사용 하 여는 것이 가능 합니다. 예를 들어 표준 목록 뷰 컨트롤에 있을 수 있습니다 (16 x 16 픽셀 이미지)의 목록 뷰 컨트롤의 작은 아이콘 보기 및 목록 뷰 컨트롤의 헤더 항목에 사용 되는 이미지 목록입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeaderCtrl 사용](../mfc/using-cheaderctrl.md)
-

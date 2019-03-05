@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CLongBinary class [MFC]
 ms.assetid: f4320059-aeb4-4ee5-bc2b-25f19d898ef5
-ms.openlocfilehash: a7dbb7e38ec01743d994dafd6c7945e306de51ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed3a153ec89785a9c9da43037d20f7d88b5661ff
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656038"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260714"
 ---
 # <a name="clongbinary-class"></a>CLongBinary 클래스
 
@@ -53,9 +53,9 @@ class CLongBinary : public CObject
 
 레코드 집합에 포함된 된 경우 삭제할 `CLongBinary` 개체도 제거 하 고 해당 소멸자 할당을 취소 합니다 `HGLOBAL` 데이터 핸들입니다.
 
-큰 개체 및 사용에 대 한 자세한 내용은 `CLongBinary`, 문서를 참조 하세요 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md) 하 고 [레코드 집합: 대형 데이터 항목 (ODBC)을 사용 하 여 작업](../../data/odbc/recordset-working-with-large-data-items-odbc.md).
+큰 개체 및 사용에 대 한 자세한 내용은 `CLongBinary`, 문서를 참조 하세요 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md) 고 [레코드 집합: 대형 데이터 항목 (ODBC)를 사용 하 여 작업](../../data/odbc/recordset-working-with-large-data-items-odbc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -93,7 +93,7 @@ SQLULEN m_dwDataLength;
 HGLOBAL m_hData;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

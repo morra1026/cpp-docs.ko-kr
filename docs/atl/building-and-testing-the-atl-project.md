@@ -5,12 +5,12 @@ helpviewer_keywords:
 - composite controls, building and testing the project
 - composite controls, containers for
 ms.assetid: 5c1541f8-f6cb-4c22-bd22-c66bcfbaa077
-ms.openlocfilehash: 0a6363ca3c3cee7e23729121124457311e056a2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28d976aba48521df1429b27bb20b8277b72166ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483970"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295437"
 ---
 # <a name="building-and-testing-the-atl-project"></a>ATL 프로젝트 빌드 및 테스트
 
@@ -18,7 +18,6 @@ ms.locfileid: "50483970"
 
 또한 테스트 컨테이너 도구 또는 ActiveX 컨트롤을 호스트할 수 있는 다른 응용 프로그램을 사용 하 여 복합 컨트롤을 테스트할 수 있습니다. 테스트 컨테이너에 액세스하는 방법은 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md) 를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [복합 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)
-

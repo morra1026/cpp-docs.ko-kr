@@ -13,12 +13,12 @@ helpviewer_keywords:
 - data storage [MFC], CArchive class
 - CArchive class [MFC], constructor
 ms.assetid: aefa28ce-b55c-40dc-9e42-5f038030985d
-ms.openlocfilehash: a97223602e9994647a8af16cc68de5394494c1ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80e3e73840bce53691c3f5fdafb62c60bdb8f832
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659929"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273805"
 ---
 # <a name="two-ways-to-create-a-carchive-object"></a>CArchive 개체를 만드는 두 가지 방법
 
@@ -60,7 +60,7 @@ ms.locfileid: "50659929"
 
    두 번째 인수는 `CArchive` 생성자는 저장 또는 로드 하거나 데이터 파일에 대 한 보관 파일을 사용할지 여부를 지정 하는 열거형된 값입니다. 합니다 `Serialize` 개체의 함수를 호출 하 여이 상태를 확인 합니다 `IsStoring` 보관 개체에 대 한 함수입니다.
 
-마쳤으면 저장 하거나 데이터를 로드 하는 `CArchive` 개체를 닫아야 합니다. 하지만 합니다 `CArchive` (및 `CFile`) 개체는 자동으로 닫고 보관 파일 (파일), 명시적으로 쉽게 오류를 복구 하므로 이렇게 하는 것이 좋습니다. 오류 처리에 대 한 자세한 내용은 문서를 참조 하세요 [예외: 예외를 catch 하면 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
+마쳤으면 저장 하거나 데이터를 로드 하는 `CArchive` 개체를 닫아야 합니다. 하지만 합니다 `CArchive` (및 `CFile`) 개체는 자동으로 닫고 보관 파일 (파일), 명시적으로 쉽게 오류를 복구 하므로 이렇게 하는 것이 좋습니다. 오류 처리에 대 한 자세한 내용은 문서를 참조 하세요. [예외: 예외 catch 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
 
 #### <a name="to-close-the-carchive-object"></a>CArchive 개체
 
@@ -68,7 +68,6 @@ ms.locfileid: "50659929"
 
    [!code-cpp[NVC_MFCSerialization#6](../mfc/codesnippet/cpp/two-ways-to-create-a-carchive-object_2.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[Serialization: 개체 Serialize](../mfc/serialization-serializing-an-object.md)
-
+[Serialization: 개체를 직렬화 하는 작업](../mfc/serialization-serializing-an-object.md)

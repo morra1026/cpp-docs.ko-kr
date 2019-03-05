@@ -1,5 +1,5 @@
 ---
-title: '방법: 동시성 런타임을 사용하기 위해 OpenMP parallel for 루프 변환'
+title: '방법: OpenMP parallel for 루프 동시성 런타임을 사용 하 여 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, parallel for loops
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - parallel for loops, converting from OpenMP to the Concurrency Runtime
 - parallel loops, converting from OpenMP to the Concurrency Runtime
 ms.assetid: d8a7b656-f86c-456e-9c5d-a7d52f94646e
-ms.openlocfilehash: 9ab80df8bfe4c06ee36e0a60db4800be68576909
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc408465f34f0558e9f426ae35b83d4610898414
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50488561"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296139"
 ---
-# <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용하기 위해 OpenMP parallel for 루프 변환
+# <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>방법: OpenMP parallel for 루프 동시성 런타임을 사용 하 여 변환
 
 이 예제에는 OpenMP를 사용 하는 기본 루프를 변환 하는 방법을 보여 줍니다 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) 하 고 [에 대 한](../../parallel/openmp/reference/for-openmp.md) 동시성 런타임을 사용 하는 지시문 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘입니다.
 
@@ -47,13 +47,12 @@ found 107254 prime numbers.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `concrt-omp-count-primes.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `concrt-omp-count-primes.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc /openmp concrt-omp-수-primes.cpp**
+**cl.exe /EHsc /openmp concrt-omp-count-primes.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OpenMP에서 동시성 런타임으로 마이그레이션](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)
-

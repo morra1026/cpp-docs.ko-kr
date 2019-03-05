@@ -1,5 +1,5 @@
 ---
-title: '메모리 관리: 예'
+title: '메모리 관리: 예제'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - objects [MFC], memory allocation
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - memory allocation [MFC], data structures
 ms.assetid: f10240f8-b698-4c83-9288-97a54318930b
-ms.openlocfilehash: a236dbda9baca7bf7e165edf63a61ffb6eb92a2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ed50bfba03f29fdd16e6f615b193109656f3ce6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548124"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294345"
 ---
-# <a name="memory-management-examples"></a>메모리 관리: 예
+# <a name="memory-management-examples"></a>메모리 관리: 예제
 
 이 문서에서는 MFC는 세 가지 일반적인 유형의 메모리 할당의 각 프레임 할당과 힙 할당을 수행 하는 방법을 설명 합니다.
 
@@ -98,7 +98,6 @@ ms.locfileid: "50548124"
 
    [!code-cpp[NVC_MFC_Utilities#9](../mfc/codesnippet/cpp/memory-management-examples_9.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메모리 관리: 힙 할당](../mfc/memory-management-heap-allocation.md)
-

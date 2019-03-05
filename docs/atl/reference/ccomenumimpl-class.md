@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumImpl class
 ms.assetid: cc0d8e76-e608-46db-87cd-4c7161fe32d2
-ms.openlocfilehash: 2104d98cbc068eb5d8f1408cdda0898fd55c9473
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ccd083f3bfd9ae694c97e466fcb40b348fec0c27
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467147"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273779"
 ---
 # <a name="ccomenumimpl-class"></a>CComEnumImpl 클래스
 
@@ -39,7 +39,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
 *piid*<br/>
@@ -58,7 +58,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 |이름|설명|
 |----------|-----------------|
 |[CComEnumImpl::CComEnumImpl](#ccomenumimpl)|생성자입니다.|
-|[CComEnumImpl:: ~ CComEnumImpl](#dtor)|소멸자입니다.|
+|[CComEnumImpl::~CComEnumImpl](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -93,7 +93,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 
 자세한 내용은 [ATL 컬렉션 및 열거자](../../atl/atl-collections-and-enumerators.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Base`
 
@@ -111,7 +111,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 CComEnumImpl();
 ```
 
-##  <a name="dtor"></a>  CComEnumImpl:: ~ CComEnumImpl
+##  <a name="dtor"></a>  CComEnumImpl::~CComEnumImpl
 
 소멸자입니다.
 
@@ -292,7 +292,7 @@ STDMETHOD(Skip)(ULONG celt);
 
 E_INVALIDARG를 반환 *celt* 이 0 이면 보다 작으면 S_FALSE를 반환 합니다. *celt* 요소가 반환 됩니다 그렇지 않은 경우는 S_OK를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IEnumOnSTLImpl 클래스](../../atl/reference/ienumonstlimpl-class.md)<br/>
 [CComEnum 클래스](../../atl/reference/ccomenum-class.md)<br/>

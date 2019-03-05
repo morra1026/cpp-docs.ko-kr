@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDaoWorkspace [MFC], SetLoginTimeout
 - CDaoWorkspace [MFC], m_pDAOWorkspace
 ms.assetid: 64f60de6-4df1-4d4a-a65b-c489b5257d52
-ms.openlocfilehash: 92b2827d556583524b46f88f8bd9efeb57a5d83a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6aa404c5eb543db198043dba68d55a4b925739c8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472867"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263457"
 ---
 # <a name="cdaoworkspace-class"></a>CDaoWorkspace 클래스
 
@@ -183,7 +183,7 @@ MFC는 DAO의 기본 작업 영역에서 암시적으로 다음과 같은 상황
 
 직접 DAO 호출 및 DAO 보안에 대 한 정보를 참조 하세요 [기술 참고 54](../../mfc/tn054-calling-dao-directly-while-using-mfc-dao-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -327,7 +327,7 @@ static void PASCAL CompactDatabase(
 
 - `dbLangCyrillic` 러시아어
 
-- `dbLangCzech` 체코어
+- `dbLangCzech` Czech
 
 - `dbLangDutch` 네덜란드어
 
@@ -403,7 +403,7 @@ virtual void Create(
 작업 공간의 소유자의 사용자 이름입니다. 요구 사항에 대 한 참조를 *lpszDefaultUser* 매개 변수를 [SetDefaultUser](#setdefaultuser) 멤버 함수입니다. 관련된 내용은 DAO 도움말의 "사용자 이름 속성" 항목을 참조 합니다.
 
 *lpszPassword*<br/>
-새 작업 영역 개체에 대 한 암호입니다. 암호는 최대 14 자까지 가능 하며 ASCII 0 (null)를 제외한 모든 문자를 포함할 수 있습니다. 암호는 대/소문자 구분 합니다. 관련된 내용은 DAO 도움말에서 "암호 속성이" 항목을 참조 합니다.
+새 작업 영역 개체에 대 한 암호입니다. 암호는 최대 14 자까지 가능 하며 ASCII 0 (null)를 제외한 모든 문자를 포함할 수 있습니다. 암호는 대소문자를 구분합니다. 관련된 내용은 DAO 도움말에서 "암호 속성이" 항목을 참조 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -462,7 +462,7 @@ void GetDatabaseInfo(
 
 - AFX_DAO_PRIMARY_INFO (기본값) 이름, 업데이트 가능한 트랜잭션
 
-- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 버전, 데이터 정렬 순서, 쿼리 제한 시간
+- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 버전, 정렬 순서, 쿼리 제한 시간
 
 - AFX_DAO_ALL_INFO 기본 및 보조 데이터베이스 정보가 더하기: 연결
 
@@ -653,7 +653,7 @@ static void PASCAL Idle(int nAction = dbFreeLocks);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 작업*<br/>
+*nAction*<br/>
 유휴 처리 하는 동안 수행할 작업입니다. 유효한 작업은 현재 `dbFreeLocks`합니다.
 
 ### <a name="remarks"></a>설명
@@ -779,7 +779,7 @@ static void PASCAL SetDefaultPassword(LPCTSTR lpszPassword);
 ### <a name="parameters"></a>매개 변수
 
 *lpszPassword*<br/>
-기본 암호입니다. 암호는 최대 14 자까지 가능 하며 ASCII 0 (null)를 제외한 모든 문자를 포함할 수 있습니다. 암호는 대/소문자 구분 합니다.
+기본 암호입니다. 암호는 최대 14 자까지 가능 하며 ASCII 0 (null)를 제외한 모든 문자를 포함할 수 있습니다. 암호는 대소문자를 구분합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -888,7 +888,7 @@ ODBC 데이터베이스에 로그인 하려고 할 때 오류가 발생 하기 �
 
 관련된 내용은 DAO 도움말의 "LoginTimeout Property" 항목을 참조 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleDocObjectItem [MFC], QueryCommand
 - COleDocObjectItem [MFC], Release
 ms.assetid: d150d306-8fd3-4831-b06d-afbe71d8fc9b
-ms.openlocfilehash: d12ee07c9e36f52fc176066be0e91ce1a7307858
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: af6d866298309f5ddb8eb21a5caeb3d1526b166a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659071"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276288"
 ---
 # <a name="coledocobjectitem-class"></a>COleDocObjectItem 클래스
 
@@ -78,7 +78,7 @@ MFC에서 액티브 문서는 일반, 전체 편집할 수 포함 하는 다음�
 
 메뉴 병합 및 활성 문서 활성화에 대 한 자세한 내용은 개요를 참조 하세요 [액티브 문서 포함](../../mfc/active-document-containment.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -303,7 +303,7 @@ OLE 항목 로드 된 상태로 돌아오면 어떤 상황에서 저장을 지�
 
 클라이언트 항목을 제거 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MFCBIND](../../visual-cpp-samples.md)<br/>
 [COleClientItem 클래스](../../mfc/reference/coleclientitem-class.md)<br/>

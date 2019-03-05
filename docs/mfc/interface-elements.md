@@ -5,12 +5,12 @@ helpviewer_keywords:
 - architecture [MFC], MFC Feature Pack
 - MFC Feature Pack, architecture
 ms.assetid: eead6827-9602-40a3-8038-8986e8207385
-ms.openlocfilehash: 9cf38d3d469da181d15a10434525b3aca63969f0
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: fa6dc78c95717f9201e18346f1cbe573fa3c48d2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175901"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262885"
 ---
 # <a name="interface-elements"></a>인터페이스 요소
 
@@ -46,7 +46,7 @@ ms.locfileid: "52175901"
 
 ## <a name="mini-frame-windows"></a>미니 프레임 Windows
 
-부동 창 미니 프레임 창에 상주합니다. 미니 프레임 창을 두 클래스로 표현 됩니다. [CMDITabInfo 클래스](../mfc/reference/cmditabinfo-class.md) (창 하나만 포함할 수 있는) 및 [CMultiPaneFrameWnd 클래스](../mfc/reference/cmultipaneframewnd-class.md) (여러 개의 창이 포함할 수 있음). 코드에서 창을 float, 호출 [CBasePane::FloatPane](../mfc/reference/cbasepane-class.md#floatpane)합니다. 창을 부동 프레임 워크에는 자동으로 미니 프레임 창을 만듭니다 후 해당 미니 프레임 창이 부동 창의 부모 됩니다. 부동 창 도킹 프레임 워크에는 부모를 다시 설정 되 고 부동 창 (도구 모음)에 대 한 도킹 막대나 도킹 사이트 (예: 크기 조정 가능한 창) 됩니다.
+부동 창 미니 프레임 창에 상주합니다. 미니 프레임 창은 두 클래스로 표현 됩니다. [CMDITabInfo 클래스](../mfc/reference/cmditabinfo-class.md) (창 하나만 포함할 수 있는) 및 [CMultiPaneFrameWnd 클래스](../mfc/reference/cmultipaneframewnd-class.md) (여러 개의 창이 포함할 수 있음). 코드에서 창을 float, 호출 [CBasePane::FloatPane](../mfc/reference/cbasepane-class.md#floatpane)합니다. 창을 부동 프레임 워크에는 자동으로 미니 프레임 창을 만듭니다 후 해당 미니 프레임 창이 부동 창의 부모 됩니다. 부동 창 도킹 프레임 워크에는 부모를 다시 설정 되 고 부동 창 (도구 모음)에 대 한 도킹 막대나 도킹 사이트 (예: 크기 조정 가능한 창) 됩니다.
 
 ## <a name="pane-dividers"></a>창 구분선
 
@@ -66,7 +66,6 @@ ms.locfileid: "52175901"
 
 Outlook 표시줄 컨트롤은 또한 탭된 표시줄 기반으로 합니다. 합니다 [CMFCOutlookBar 클래스](../mfc/reference/cmfcoutlookbar-class.md) 에서 파생 된 `CBaseTabbedPane`합니다. Outlook 표시줄을 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [CMFCOutlookBar 클래스](../mfc/reference/cmfcoutlookbar-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../mfc/mfc-concepts.md)
-

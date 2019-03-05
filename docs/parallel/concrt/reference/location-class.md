@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - location class
 ms.assetid: c3289f51-5bf1-4dff-a18d-d0dab8e5d9c7
-ms.openlocfilehash: ffb469ec5f5542b5037d31bfdb5fd1eaab47ed38
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e90dd3b23b33f6699f2df4ce0df9178f95816b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596539"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273254"
 ---
 # <a name="location-class"></a>위치 클래스
 
@@ -51,7 +51,7 @@ class location;
 |[operator=](#operator_eq)|다른 `location` 개체의 내용을 여기에 할당합니다.|
 |[연산자==](#operator_eq_eq)|두 결정 `location` 개체는 동일한 위치를 나타냅니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `location`
 
@@ -61,7 +61,7 @@ class location;
 
 **네임스페이스:** 동시성
 
-##  <a name="dtor"></a> ~ 위치
+##  <a name="dtor"></a> ~location
 
 `location` 개체를 제거합니다.
 
@@ -69,7 +69,7 @@ class location;
 ~location();
 ```
 
-##  <a name="current"></a> 현재
+##  <a name="current"></a> current
 
 호출 스레드가 실행 중인 가장 구체적인 장소를 나타내는 `location` 개체를 반환합니다.
 
@@ -96,7 +96,8 @@ static location __cdecl from_numa_node(unsigned short _NumaNodeNumber);
 
 ### <a name="return-value"></a>반환 값
 
-`_NumaNodeNumber` 매개 변수로 지정된 NUMA 노드를 나타내는 위치입니다.
+
+  `_NumaNodeNumber` 매개 변수로 지정된 NUMA 노드를 나타내는 위치입니다.
 
 ##  <a name="ctor"></a> 위치
 
@@ -121,7 +122,7 @@ location(
 
 *_LocationType*<br/>
 
-*Id (_i)*<br/>
+*_Id*<br/>
 
 *_BindingId*<br/>
 
@@ -149,7 +150,7 @@ bool operator!= (const location& _Rhs) const;
 
 **true** 두 위치 다르면 **false** 그렇지 않은 경우.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 `location` 개체의 내용을 여기에 할당합니다.
 
@@ -164,7 +165,7 @@ location& operator= (const location& _Rhs);
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_eq_eq"></a> 연산자 = =
+##  <a name="operator_eq_eq"></a> operator==
 
 두 결정 `location` 개체는 동일한 위치를 나타냅니다.
 
@@ -181,6 +182,6 @@ bool operator== (const location& _Rhs) const;
 
 **true** 두 위치 동일 하 고 **false** 그렇지 않은 경우.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

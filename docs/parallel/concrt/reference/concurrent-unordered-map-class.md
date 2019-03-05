@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_map class
 ms.assetid: b2d879dd-87ef-4af9-a266-a5443fd538b8
-ms.openlocfilehash: 50868d020224e7bade9766f7307bfcc46ce4be47
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 43ad777b0dfb1285a82d662f37329c079410c78d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657593"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284348"
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map 클래스
 
@@ -247,10 +247,10 @@ concurrent_unordered_map(
 *_Allocator*<br/>
 순서가 지정되지 않은 이 맵에 대한 할당자입니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 *_Umap*<br/>
@@ -287,7 +287,7 @@ size_type count(const key_type& KVal) const;
 
 키 컨테이너에 나타나는 횟수 만큼 시간.
 
-##  <a name="empty"></a> 빈
+##  <a name="empty"></a> empty
 
 요소가 있는지 여부를 테스트합니다. 이 방법은 동시성 안전 합니다.
 
@@ -387,7 +387,7 @@ hasher hash_function() const;
 
 저장된 해시 함수 개체입니다.
 
-##  <a name="insert"></a> 삽입
+##  <a name="insert"></a> insert
 
 요소를 추가 하 여 `concurrent_unordered_map` 개체입니다.
 
@@ -509,7 +509,7 @@ size_type max_size() const;
 
 상한 값이는 실제로 컨테이너가 보유할 실제로 수 무엇 보다 클 수도 있습니다.
 
-##  <a name="operator_at"></a> operator]
+##  <a name="operator_at"></a> operator[]
 
 지정된 키가 있는 요소를 찾거나 삽입합니다. 이 메서드는 동시성이 보장 합니다.
 
@@ -538,7 +538,7 @@ mapped_type& operator[](key_type&& kval);
 
 `operator[]`를 사용하여 요소를 삽입하는 경우 반환된 참조는 삽입이 기존 요소를 변경하는지 또는 새 요소를 생성하는지 여부를 나타내지 않습니다. 멤버 함수 `find` 하 고 [삽입](#insert) 지정된 된 키를 사용 하 여 요소를 삽입 하기 전에 이미 있는지 확인할 수 있습니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 내용을 할당 `concurrent_unordered_map` 여기에 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -596,7 +596,7 @@ size_type size() const;
 
 동시 삽입이 있을 경우 이 함수를 호출한 직후, 반환 값을 읽기도 전에 동시 컨테이너의 요소 수가 변경될 수 있습니다.
 
-##  <a name="swap"></a> 교환
+##  <a name="swap"></a> swap
 
 두의 내용을 바꿉니다 `concurrent_unordered_map` 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -621,7 +621,7 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -667,7 +667,7 @@ size_type unsafe_bucket_size(size_type _Bucket);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 검색할 통 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -684,7 +684,7 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -701,7 +701,7 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -720,7 +720,7 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -748,10 +748,10 @@ size_type unsafe_erase(
 *_Where*<br/>
 지울 반복기 위치입니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 삭제할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 삭제할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 *KVal*<br/>
@@ -779,8 +779,7 @@ size_type unsafe_max_bucket_count() const;
 
 이 컨테이너의 버킷 최대 수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [병렬 컨테이너 및 개체](../../../parallel/concrt/parallel-containers-and-objects.md)
-

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - functions [MFC], handler
 - messages [MFC], Windows
 ms.assetid: 19412a8b-2c38-4502-81da-13c823c7e36c
-ms.openlocfilehash: 84e12a8f4ca0ce6384bc60b2fa01bfaf7824c864
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d60ae52225ddd993c1768d0b5ce1989ab0192e45
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585421"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275391"
 ---
 # <a name="handlers-for-standard-windows-messages"></a>표준 Windows 메시지에 대한 처리기
 
@@ -38,6 +38,6 @@ ms.locfileid: "50585421"
 
 일반적으로 이러한 처리기의 이름은 접두사 "On"으로 시작합니다. 이러한 처리기 중 일부는 인수를 사용하지 않으며, 다른 일부는 인수를 사용합니다. 일부도 반환 형식이 아닌 다른 **void**합니다. 모든 기본 처리기 **WM_** 메시지에 설명 된 합니다 *MFC 참조* 클래스의 멤버 함수로 `CWnd` 이름이 "On."로 시작 멤버 함수 선언에 `CWnd` 붙습니다 **afx_msg**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메시지 처리기 함수 선언](../mfc/declaring-message-handler-functions.md)

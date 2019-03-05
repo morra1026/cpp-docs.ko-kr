@@ -2,12 +2,12 @@
 title: DHTML 편집 명령 맵
 ms.date: 11/04/2016
 ms.assetid: c1b49876-039e-4a26-bb24-ea98ccf254a1
-ms.openlocfilehash: 6c03e8e4a7d84776c3657994c57a72a906046f37
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f84a56876f1108e9b02d44f6ef0dec50f065c57
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558459"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278264"
 ---
 # <a name="dhtml-editing-command-maps"></a>DHTML 편집 명령 맵
 
@@ -35,7 +35,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 클래스의 이름입니다.
 
 ### <a name="remarks"></a>설명
@@ -62,7 +62,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="parameters"></a>매개 변수
 
-*응용 프로그램 이름*<br/>
+*className*<br/>
 DHTML 편집 명령 맵을 포함 하는 클래스의 이름입니다. 이 클래스에 직접 또는 간접적으로에서 파생 되어야 [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) 등과 합니다 [DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap) 해당 클래스 정의 내에서 매크로입니다.
 
 ### <a name="remarks"></a>설명
@@ -203,6 +203,6 @@ HTML 편집 명령 *cmdID* (예: IDM_COPY) 매핑합니다.
 
   **헤더** afxhtml.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

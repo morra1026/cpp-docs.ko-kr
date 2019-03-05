@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModuleT class
 ms.assetid: ae1667c6-3fb8-47bc-b35d-9ea5e9896d7f
-ms.openlocfilehash: 8492127af8a1267da3beed678f8a66424ba26442
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63f1c8dbe3c752773fd64c6e339a9a3b67051d35
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279954"
 ---
 # <a name="catlautothreadmodulet-class"></a>CAtlAutoThreadModuleT 클래스
 
@@ -57,7 +57,7 @@ COM 서버 구현 하는 클래스입니다.
 > [!NOTE]
 >  이 클래스 해서는 안 DLL에서 기본값으로 *dwWait* 무한 값 DLL을 언로드할 때 교착 상태가 발생 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlAutoThreadModule`
 
@@ -83,7 +83,7 @@ EXE 모듈에서 생성 될 스레드의 수입니다.
 
 스레드 수를 계산 하기 위한 다른 메서드를 사용 하려는 경우이 메서드를 재정의 합니다. 기본적으로 스레드 수는 프로세서 수를 기반으로 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IAtlAutoThreadModule 클래스](../../atl/reference/iatlautothreadmodule-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

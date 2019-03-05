@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-ms.openlocfilehash: 05545051b145f3beb11e4b48e8f93fd7908a783a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: d7a39dd19a51bc5bab0f924d360d594bddf89b44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694246"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265940"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx 클래스
 
@@ -108,7 +108,7 @@ class CComboBoxEx : public CComboBox
 
 에 대 한 자세한 개념적 토론을 참조 하세요 [CComboBoxEx 사용 하 여](../../mfc/using-ccomboboxex.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -468,7 +468,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 이 멤버 함수는의 기능을 에뮬레이션 합니다 [CBEM_SETWINDOWTHEME](/windows/desktop/Controls/cbem-setwindowtheme) Windows SDK에 설명 된 대로 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>
 [CComboBox 클래스](../../mfc/reference/ccombobox-class.md)<br/>

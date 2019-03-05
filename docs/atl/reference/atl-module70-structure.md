@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ATL_MODULE70 structure
 - _ATL_MODULE70 structure
 ms.assetid: b059b2c8-dfd1-4ac9-b07d-39df638cc7b3
-ms.openlocfilehash: bf733a10a0be53eafb634c645dad6a4b58b8206d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d05683383fab64f027f198d49bfbf42aa593d582
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438846"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263431"
 ---
 # <a name="atlmodule70-structure"></a>_ATL_MODULE70 구조체
 
@@ -53,7 +53,6 @@ ATL 종료 될 때 호출할에 등록 된 추적 함수입니다.
 
 **헤더:** atlbase.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 및 구조체](../../atl/reference/atl-classes.md)
-

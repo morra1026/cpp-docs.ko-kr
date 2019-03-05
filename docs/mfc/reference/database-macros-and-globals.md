@@ -13,12 +13,12 @@ helpviewer_keywords:
 - global functions [MFC], database functions
 - macros [MFC], MFC database
 ms.assetid: 5b9b9e61-1cf9-4345-9f29-3807dd466488
-ms.openlocfilehash: a546c821690bcbe1afedd4909810317553e3b283
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 47a1bb434801c24ab8eee048d9ef8f93793101cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849755"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268722"
 ---
 # <a name="database-macros-and-globals"></a>데이터베이스 매크로 및 전역
 
@@ -101,7 +101,8 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 ### <a name="parameters"></a>매개 변수
 
 *prs*<br/>
-`CRecordset` 개체 또는 `CDatabase` 개체에 대한 포인터입니다. MFC 4.2부터는 이 매개 변수 값이 무시됩니다.
+
+  `CRecordset` 개체 또는 `CDatabase` 개체에 대한 포인터입니다. MFC 4.2부터는 이 매개 변수 값이 무시됩니다.
 
 *SQLFunc*<br/>
 ODBC API 함수입니다. ODBC API 함수에 대 한 자세한 내용은 Windows SDK를 참조 하세요.
@@ -164,6 +165,6 @@ MFC에서 사용 중인 ODBC 환경 핸들입니다. 일 수 있습니다 `SQL_H
 
   **헤더** afxdb.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

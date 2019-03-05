@@ -17,12 +17,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange), DHtml helper macros
 - macros [MFC], DDX_DHtml helpers
 ms.assetid: c46302d2-ea43-4fea-bfc2-6f590d99f267
-ms.openlocfilehash: e2deed5e3fb63f46d83cf4c6f0d3c13525e93a2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90c80dbc5c8b6788f3afad3cf77d796139fbd946
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592535"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326649"
 ---
 # <a name="ddxdhtml-helper-macros"></a>DDX_DHtml 도우미 매크로
 
@@ -257,6 +257,6 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
 이 매크로 호출 합니다 [CDHtmlDialog::DDX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) 는 DISPID_IHTMLIMGELEMENT_SRC를 사용 하 여 함수 디스패치 id입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDHtmlDialog 클래스](../../mfc/reference/cdhtmldialog-class.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ATL, windows
 - windows [C++], ATL
 ms.assetid: 750b14d5-d787-4d2b-9728-ac199ccad489
-ms.openlocfilehash: 9a33136c63c5bdc32dfc882e8c53ab2f5c27eb46
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e7e9e1f4fb94537cdd131e58ef3fc481ee1c012e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665415"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281033"
 ---
 # <a name="windows-support-classes"></a>Windows 지원 클래스
 
@@ -53,9 +53,8 @@ Windows에 대 한 지원을 제공 하는 다음 클래스:
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [메시지 맵 매크로](../atl/reference/message-map-macros-atl.md)<br/>
 [창 클래스 매크로](../atl/reference/window-class-macros.md)
-

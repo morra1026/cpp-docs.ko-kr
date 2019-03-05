@@ -1,18 +1,18 @@
 ---
-title: '방법: 정기적으로 메시지 보내기'
+title: '방법: 일정 한 간격으로 메시지 보내기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - timer class, example
 - sending messages at regular intervals [Concurrency Runtime]
 ms.assetid: 4b60ea6c-97c8-4d69-9f7b-ad79f3548026
-ms.openlocfilehash: 05777b0c00f587f588a50733d5113d9a7362d247
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bf5f93e2a570761874232a88a23289e59e58d94
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549619"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257620"
 ---
-# <a name="how-to-send-a-message-at-a-regular-interval"></a>방법: 정기적으로 메시지 보내기
+# <a name="how-to-send-a-message-at-a-regular-interval"></a>방법: 일정 한 간격으로 메시지 보내기
 
 이 예제에서는 concurrency::[timer 클래스](../../parallel/concrt/reference/timer-class.md)를 사용하여 일정한 간격으로 메시지를 보내려고 합니다.
 
@@ -34,7 +34,7 @@ Performing a lengthy operation..........done.
 
 **cl.exe /EHsc report-progress.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

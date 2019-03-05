@@ -8,12 +8,12 @@ helpviewer_keywords:
 - collection classes [MFC], arrays
 - classes [MFC], array
 ms.assetid: fdeabf95-2fe7-43a8-8f88-d954133caf52
-ms.openlocfilehash: 6c2b43dc2eee3c2df27c5879d74c8ca11e68b820
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 309567f897bf5ca941852b433cdee0e8e0d44b3c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677749"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284673"
 ---
 # <a name="ready-to-use-array-classes"></a>바로 사용할 수 있는 배열 클래스
 
@@ -40,7 +40,6 @@ ms.locfileid: "50677749"
 [CStringArray](../mfc/reference/cstringarray-class.md)<br/>
 저장소 `CString` 배열에 있는 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

@@ -2,12 +2,12 @@
 title: 그래픽(C++ AMP)
 ms.date: 11/04/2016
 ms.assetid: 190a98a4-5f7d-442e-866b-b374ca74c16f
-ms.openlocfilehash: fcc1f11ff716654aadef91d86137b97e93b0a80f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a40575d84c9a0efedcb3c7c9717fc310870b530
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570320"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260883"
 ---
 # <a name="graphics-c-amp"></a>그래픽(C++ AMP)
 
@@ -53,7 +53,8 @@ Short 벡터 라이브러리의 기능 중 일부를 제공 합니다 [벡터 �
 |복합 할당 연산자|모든 형식에 대해 유효함: + =,-=, \*=, / =<br /><br /> 정수 형식에 대해 유효함: % =, ^ =, &#124;=, & =, <\<=, >> =|
 |증가 및 감소 연산자|모든 형식에 대해 유효함: ++, --<br /><br /> 전위와 후위가 모두 유효해야 합니다.|
 |비트 NOT 연산자(~)|정수 형식에 대해 유효함|
-|단항 연산자|`unorm` 및 `uint`을 제외한 모든 형식에 대해 유효함|
+|단항 연산자|
+  `unorm` 및 `uint`을 제외한 모든 형식에 대해 유효함|
 
 ### <a name="swizzling-expressions"></a>재구성 식
 
@@ -67,7 +68,9 @@ short 벡터 라이브러리는 short 벡터의 구성 요소에 액세스할 �
 
 - 구성 요소가 두 개 또는 네 개인 short 벡터. 유일한 예외는 `double_4`이며 이 형식은 허용되지 않습니다.
 
-`texture` 개체의 차수는 1, 2 또는 3일 수 있습니다. `texture` 개체는 `parallel_for_each` 호출의 람다에 있는 참조를 통해서만 캡처될 수 있습니다. 텍스처는 Direct3D 텍스처 개체로 GPU에 저장됩니다. Direct3D의 텍스처 및 텍셀에 대 한 자세한 내용은 참조 하세요. [Direct3D 11의 텍스처 소개](http://go.microsoft.com/fwlink/p/?linkid=248502)합니다.
+
+  `texture` 개체의 차수는 1, 2 또는 3일 수 있습니다. 
+  `texture` 개체는 `parallel_for_each` 호출의 람다에 있는 참조를 통해서만 캡처될 수 있습니다. 텍스처는 Direct3D 텍스처 개체로 GPU에 저장됩니다. Direct3D의 텍스처 및 텍셀에 대 한 자세한 내용은 참조 하세요. [Direct3D 11의 텍스처 소개](http://go.microsoft.com/fwlink/p/?linkid=248502)합니다.
 
 사용하는 텍셀 형식은 그래픽 프로그래밍에 사용되는 다양한 텍스처 형식 중 하나일 수 있습니다. 예를 들어 RGBA 형식은 R, G, B, A 스칼라 요소 각각에 8비트씩 총 32비트를 사용할 수 있습니다. 그래픽 카드의 텍스처 하드웨어는 형식에 따라 개별 요소에 액세스할 수 있습니다. 예를 들어 RGBA 형식을 사용하는 경우 텍스처 하드웨어는 각 8비트 요소를 32비트 형식으로 추출할 수 있습니다. C++ AMP에서는 텍셀의 스칼라 요소당 비트 수를 설정하여 비트 시프트를 사용하지 않고 코드의 개별 스칼라 요소에 자동으로 액세스할 수 있습니다.
 
@@ -96,7 +99,8 @@ void declareTextures() {
 }
 ```
 
-생성자를 사용하여 `texture` 개체를 선언하고 초기화할 수도 있습니다. 다음 코드 예제에서는 `texture` 개체의 벡터에서 `float_4` 개체를 인스턴스화합니다. 스칼라 요소당 비트 수는 기본값으로 설정됩니다. `norm`, `unorm`이나 `norm` 및 `unorm`의 short 벡터에는 스칼라 요소당 기본 비트 수가 없기 때문에 이 생성자를 사용할 수 없습니다.
+생성자를 사용하여 `texture` 개체를 선언하고 초기화할 수도 있습니다. 다음 코드 예제에서는 `texture` 개체의 벡터에서 `float_4` 개체를 인스턴스화합니다. 스칼라 요소당 비트 수는 기본값으로 설정됩니다. 
+  `norm`, `unorm`이나 `norm` 및 `unorm`의 short 벡터에는 스칼라 요소당 기본 비트 수가 없기 때문에 이 생성자를 사용할 수 없습니다.
 
 ```cpp
 #include <amp.h>
@@ -129,7 +133,8 @@ void createTextureWithBPC() { // Create the source data.
 }
 ```
 
-이러한 예에 나오는 텍스처는 기본 액셀러레이터의 기본 보기에 만들어집니다. `accelerator_view` 개체를 지정하려는 경우 생성자의 다른 오버로드를 사용할 수 있습니다. CPU 액셀러레이터에는 텍스처 개체를 만들 수 없습니다.
+이러한 예에 나오는 텍스처는 기본 액셀러레이터의 기본 보기에 만들어집니다. 
+  `accelerator_view` 개체를 지정하려는 경우 생성자의 다른 오버로드를 사용할 수 있습니다. CPU 액셀러레이터에는 텍스처 개체를 만들 수 없습니다.
 
 다음 표에 표시된 것과 같이 `texture` 개체의 각 차원에는 크기 제한이 있습니다. 제한을 초과할 경우 런타임 오류가 생성됩니다.
 
@@ -216,9 +221,11 @@ void UseBitsPerScalarElement() { // Create the image data. // Each unsigned int 
 
 - T가 아닌 **이중**를 `norm`, 또는 `unorm`합니다.
 
-- `texture::bits_per_scalar_element` 속성이 32입니다.
+- 
+  `texture::bits_per_scalar_element` 속성이 32입니다.
 
-세 가지 조건이 모두 충족되지 않으면 `texture` 개체가 읽기 전용입니다. 처음 두 조건은 컴파일하는 동안 확인됩니다. `readonly` 텍스처 개체에 쓰기를 시도하는 코드가 있으면 컴파일 오류가 생성됩니다. 에 대 한 조건을 `texture::bits_per_scalar_element` 런타임에 검색 되는 런타임에 생성 하 고는 [unsupported_feature](../../parallel/amp/reference/unsupported-feature-class.md) 예외를 readonly로 작성 하려는 경우 `texture` 개체입니다.
+세 가지 조건이 모두 충족되지 않으면 `texture` 개체가 읽기 전용입니다. 처음 두 조건은 컴파일하는 동안 확인됩니다. 
+  `readonly` 텍스처 개체에 쓰기를 시도하는 코드가 있으면 컴파일 오류가 생성됩니다. 에 대 한 조건을 `texture::bits_per_scalar_element` 런타임에 검색 되는 런타임에 생성 하 고는 [unsupported_feature](../../parallel/amp/reference/unsupported-feature-class.md) 예외를 readonly로 작성 하려는 경우 `texture` 개체입니다.
 
 다음 코드 예제에서는 텍스처 개체에 값을 씁니다.
 
@@ -259,7 +266,8 @@ void copyHostArrayToTexture() { // Copy from source array to texture object by u
 }
 ```
 
-복사할 수도 있습니다 하나의 질감에서 다른을 사용 하 여 합니다 [texture:: copy_to](reference/texture-class.md#copy_to) 메서드. 두 텍스처가 서로 다른 액셀러레이터 보기에 있어도 됩니다. `writeonly_texture_view` 개체에 복사하는 경우 데이터가 내부 `texture` 개체에 복사됩니다. 소스 및 대상 `texture` 개체에서 스칼라 요소당 비트 수 및 범위가 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 런타임 예외가 throw됩니다.
+복사할 수도 있습니다 하나의 질감에서 다른을 사용 하 여 합니다 [texture:: copy_to](reference/texture-class.md#copy_to) 메서드. 두 텍스처가 서로 다른 액셀러레이터 보기에 있어도 됩니다. 
+  `writeonly_texture_view` 개체에 복사하는 경우 데이터가 내부 `texture` 개체에 복사됩니다. 소스 및 대상 `texture` 개체에서 스칼라 요소당 비트 수 및 범위가 동일해야 합니다. 이러한 요구 사항이 충족되지 않으면 런타임 예외가 throw됩니다.
 
 ## <a name="texture-view-classes"></a>텍스처 보기 클래스
 
@@ -271,7 +279,8 @@ C + + AMP 소개 합니다 [texture_view 클래스](../../parallel/amp/reference
 
 - 읽기-쓰기 액세스는 특수화되지 않은 템플릿 클래스 `texture_view<T, N>`을 통해 제공되고 텍스처와 마찬가지로 구성 요소가 하나뿐인 요소를 지원하며 보기가 인스턴스화될 때 결정되는 하나의 Mip 맵 수준에 액세스할 수 있습니다. 샘플링은 지원하지 않습니다.
 
-텍스처 보기는 배열 보기와 유사 하지만 제공 하지 않는 자동 데이터 관리 및 이동 기능을 하는 합니다 [array_view 클래스](../../parallel/amp/reference/array-view-class.md) 를 통해 제공 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)합니다. `texture_view`는 내부 텍스처 데이터가 있는 액셀러레이터 보기에서만 액세스할 수 있습니다.
+텍스처 보기는 배열 보기와 유사 하지만 제공 하지 않는 자동 데이터 관리 및 이동 기능을 하는 합니다 [array_view 클래스](../../parallel/amp/reference/array-view-class.md) 를 통해 제공 합니다 [array 클래스](../../parallel/amp/reference/array-class.md)합니다. 
+  `texture_view`는 내부 텍스처 데이터가 있는 액셀러레이터 보기에서만 액세스할 수 있습니다.
 
 ### <a name="writeonlytextureview-deprecated"></a>더 이상 사용되지 않는 writeonly_texture_view
 
@@ -340,7 +349,8 @@ void declareTextureViews()
 
 요소 형식이 non-const이고 구성 요소가 하나인 텍스처 보기는 읽기-쓰기이지만 요소 형식이 non-const이고 구성 요소가 둘 이상인 텍스처 보기는 쓰기 전용입니다. 요소 형식이 const인 텍스처 보기는 항상 읽기 전용이지만 요소 형식이 non-const인 경우에는 요소에 포함된 구성 요소 수에 따라 읽기-쓰기인지(구성 요소가 1개) 또는 쓰기 전용인지(구성 요소가 여러 개)가 결정됩니다.
 
-`texture_view`의 요소 형식 즉, 텍스처 보기의 상수성과 함께 텍스처 보기의 구성 요소 수는 보기에서 텍스처 샘플링을 지원하는지 여부 및 Mip 맵 수준에 액세스하는 방법을 결정하는 데도 영향을 줍니다.
+
+  `texture_view`의 요소 형식 즉, 텍스처 보기의 상수성과 함께 텍스처 보기의 구성 요소 수는 보기에서 텍스처 샘플링을 지원하는지 여부 및 Mip 맵 수준에 액세스하는 방법을 결정하는 데도 영향을 줍니다.
 
 |형식|구성 요소|읽기|Write|샘플링|Mip 맵 액세스|
 |----------|----------------|----------|-----------|--------------|-------------------|
@@ -406,7 +416,7 @@ parallel_for_each(w_view.extent, [=](index<2> idx) restrict(amp)
 
 C + + AMP 런타임 간의 상호 운용성을 지원 `texture<T,1>` 하며 [ID3D11Texture1D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=248503)사이의 `texture<T,2>` 하며 [ID3D11Texture2D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=255317), 사이`texture<T,3>`하며 [ID3D11Texture3D 인터페이스](http://go.microsoft.com/fwlink/p/?linkId=255377)합니다. 합니다 [get_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#get_texture) 메서드를 `texture` 개체를 반환 합니다는 `IUnknown` 인터페이스입니다. 합니다 [make_texture](reference/concurrency-graphics-direct3d-namespace-functions.md#make_texture) 메서드는 `IUnknown` 인터페이스와 `accelerator_view` 개체를 반환 합니다를 `texture` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [double_2 클래스](../../parallel/amp/reference/double-2-class.md)<br/>
 [double_3 클래스](../../parallel/amp/reference/double-3-class.md)<br/>

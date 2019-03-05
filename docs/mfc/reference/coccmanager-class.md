@@ -30,12 +30,12 @@ helpviewer_keywords:
 - COccManager [MFC], SetDefaultButton
 - COccManager [MFC], SplitDialogTemplate
 ms.assetid: 7d47aeed-d1ab-48e3-b4cf-d429718e370a
-ms.openlocfilehash: 804db7be4ba796a67042e6772ae4cb631c0c232b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a83f58b8de2411577d9fc025f7a8f8dc535ea8b3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440185"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276652"
 ---
 # <a name="coccmanager-class"></a>COccManager 클래스
 
@@ -70,7 +70,7 @@ class COccManager : public CNoTrackObject
 
 기본 클래스 `CNoTrackObject`는 문서화 되지 않은 기본 클래스 (AFXTLS에 있습니다. H)입니다. MFC 프레임 워크에서 사용 하기 위한에서 파생 된 클래스는 `CNoTrackObject` 클래스는 메모리 누수 검색에서 제외 됩니다. 직접 파생 되는 권장 되지 않습니다 `CNoTrackObject`합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CNoTrackObject`
 
@@ -355,7 +355,7 @@ static void AFX_CDECL SetDefaultButton(
 *pWnd*<br/>
 컨트롤이 포함 된 창에 대 한 포인터입니다.
 
-*슬라이더가*<br/>
+*bDefault*<br/>
 컨트롤이 기본 단추 수 있어야 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -400,7 +400,7 @@ virtual DLGTEMPLATE* SplitDialogTemplate(
 
 이 프로세스를 사용자 지정 하려면이 함수를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleControlSite 클래스](../../mfc/reference/colecontrolsite-class.md)<br/>

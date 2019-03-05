@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CWinFormsView [MFC], CWinFormsView
 - CWinFormsView [MFC], GetControl
 ms.assetid: d597e397-6529-469b-88f5-7f65a6b9e895
-ms.openlocfilehash: 766ce3e0db192cc416b17531864a75d721bfc4ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4a5e6b88527dad8606092ccebd4899bba5181f6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50597515"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289340"
 ---
 # <a name="cwinformsview-class"></a>CWinFormsView 클래스
 
@@ -100,7 +100,7 @@ System::Windows::Forms::Control^ GetControl() const;
 
 Windows Forms를 사용 하는 방법의 예제를 참조 하세요 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
-##  <a name="operator_control"></a>  CWinFormsView::operator 컨트롤 ^
+##  <a name="operator_control"></a>  CWinFormsView::operator Control^
 
 Windows Forms 컨트롤에 대 한 포인터로 형식을 캐스팅합니다.
 
@@ -116,7 +116,7 @@ operator System::Windows::Forms::Control^() const;
 
   참조 [CWinFormsView::GetControl](#getcontrol)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWinFormsControl 클래스](../../mfc/reference/cwinformscontrol-class.md)<br/>

@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtrElementTraits class
 ms.assetid: 910e0e06-3c8b-4242-bf00-b57eb74fbc77
-ms.openlocfilehash: 4e5d66c3e596383fecfcf730c81c4d41c08d5e2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e535afb3a49a5720c8394cc1ab9186c360527fea
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610145"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257285"
 ---
 # <a name="cheapptrelementtraits-class"></a>CHeapPtrElementTraits 클래스
 
@@ -36,7 +36,7 @@ class CHeapPtrElementTraits :
 *T*<br/>
 컬렉션 클래스에 저장할 개체 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 사용 하는 메모리 할당 클래스입니다. 기본값은 [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -54,7 +54,7 @@ class CHeapPtrElementTraits :
 
 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
 
@@ -86,7 +86,7 @@ typedef CHeapPtr<T, Allocator>& INARGTYPE;
 typedef T *& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)<br/>

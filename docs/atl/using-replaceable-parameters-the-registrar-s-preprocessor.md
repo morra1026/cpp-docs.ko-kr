@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - '%MODULE%'
 ms.assetid: 0b376994-84a6-4967-8d97-8c01dfc94efe
-ms.openlocfilehash: c820307ecb0e7fbfe5cce7cd579ff46eb1f3a0f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b45799c6be20c318d7a411e9e5a79c0df860f8b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588190"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287193"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>대체 가능 매개 변수를 사용 하 여 (등록 기관에&#39;s 전처리기)
 
@@ -47,7 +47,6 @@ ms.locfileid: "50588190"
 >
 >  DLL을 출력 하는 프로젝트를 빌드할 때 ATL는 추가 하지 인용 부호 된 경로 이름으로 경우 **% 모듈** 하거나 **묶지** 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)
-

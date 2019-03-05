@@ -15,12 +15,12 @@ helpviewer_keywords:
 - connection points [C++], managing
 - CComUnkArray class
 ms.assetid: 5fd4b378-a7b5-4cc1-8866-8ab72a73639e
-ms.openlocfilehash: 4577e77ac71bbb2e65c8c6168d0d28d5765d551f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a73158e407279b529f76484e4c32f0a8a7a63c2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550256"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259375"
 ---
 # <a name="ccomunkarray-class"></a>CComUnkArray 클래스
 
@@ -194,7 +194,7 @@ BOOL Remove(DWORD dwCookie);
 
 경우 포인터는 제거, FALSE 그렇지 않은 경우 TRUE를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComDynamicUnkArray 클래스](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], accessing toolbar
 - toolbar controls [MFC], accessing
 ms.assetid: b19409d5-3831-42c7-80ae-195c49dc9085
-ms.openlocfilehash: 856f45f4b9c78f5bd7d1a2e712f3fe9acd8004f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88c00bf60f2ce1fccecd757d13b2f814e3a18be4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652051"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260506"
 ---
 # <a name="working-with-the-toolbar-control"></a>ToolBar 컨트롤 사용
 
@@ -29,7 +29,7 @@ ms.locfileid: "50652051"
 > [!CAUTION]
 >  호출 하는 동안 `CToolBarCtrl` **가져올** 함수를 안전 하 게 호출 하는 경우 주의 해야 합니다 **설정** 함수입니다. 고급 항목입니다. 일반적으로 기본 도구 모음 컨트롤에 액세스할 필요가 없습니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [컨트롤 (Windows 공용 컨트롤)](../mfc/controls-mfc.md)
 
@@ -57,7 +57,6 @@ ms.locfileid: "50652051"
 
 Windows 공용 컨트롤을 사용 하는 방법에 대 한 일반적인 정보를 참조 하세요 [공용 컨트롤](/windows/desktop/Controls/common-controls-intro)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 도구 모음 구현](../mfc/mfc-toolbar-implementation.md)
-

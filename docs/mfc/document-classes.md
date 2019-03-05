@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - document classes [MFC]
 ms.assetid: 4bf19b02-0a4f-4319-b68e-cddcba2705cb
-ms.openlocfilehash: eee8cf874230874b519bbd2cb3ebb34c7d4c5c80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7034a99bfefe8f4c11cdf8f99dc4b0c31fac10a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484632"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289717"
 ---
 # <a name="document-classes"></a>문서 클래스
 
@@ -49,7 +49,6 @@ Rich edit 컨트롤에 있는 OLE 클라이언트 항목 목록을 유지 관리
 [CDocItem](../mfc/reference/cdocitem-class.md)<br/>
 기본 클래스의 추상 [COleClientItem](../mfc/reference/coleclientitem-class.md) 하 고 [COleServerItem](../mfc/reference/coleserveritem-class.md)합니다. 파생 된 클래스의 개체 `CDocItem` 문서 부분을 나타냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

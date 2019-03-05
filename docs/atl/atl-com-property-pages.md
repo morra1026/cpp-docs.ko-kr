@@ -9,12 +9,12 @@ helpviewer_keywords:
 - COM objects, ATL
 - ATL property pages
 ms.assetid: 663c7caa-2e5e-4b5c-b8ea-fd434ceb1654
-ms.openlocfilehash: 5bc17bfc415576d50c84e880bef955e49d926c86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90dafc411f3262dc458c5158df049740a9d7a683
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50595561"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266902"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM 속성 페이지
 
@@ -26,7 +26,7 @@ ms.locfileid: "50595561"
 
 자세한 내용은 [속성 시트 및 속성 페이지](/windows/desktop/com/property-sheets-and-property-pages) Windows SDK에 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [속성 페이지 지정](../atl/specifying-property-pages.md)<br/>
 제어에 대 한 속성 페이지를 지정 하는 단계를 나열 하 고 클래스 예제를 보여 줍니다.
@@ -42,7 +42,6 @@ ATLPages 샘플을 사용 하 여 속성 페이지를 구현 하는 샘플 추�
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

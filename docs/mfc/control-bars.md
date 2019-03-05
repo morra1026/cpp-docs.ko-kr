@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CToolBar class [MFC], control bars
 - CStatusBar class [MFC], control bars
 ms.assetid: 31831910-3d23-4d70-9e71-03cc02f01ec4
-ms.openlocfilehash: 13d457350a6a75357752556bb08a582e8a59f333
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b75d9a96f091d0424592f34bdb1ed7ce76c2372
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519709"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283581"
 ---
 # <a name="control-bars"></a>컨트롤 막대
 
@@ -66,6 +66,6 @@ ms.locfileid: "50519709"
 
 A [rebar](../mfc/using-crebarctrl.md) rebar 컨트롤에 대 한 도킹, 레이아웃, 상태 및 지 속성 정보를 제공 하는 컨트롤 막대입니다. Rebar 개체는 다양 한 자식 창에 일반적으로 다른 컨트롤 편집 상자, 도구 모음, 목록 상자 등을 포함할 수 있습니다. Rebar 개체는 지정 된 비트맵을 통해 해당 자식 창을 표시할 수 있습니다. 해당 자동 또는 수동으로 크기를 조정할 수 그리퍼 막대를 끌거나 클릭 합니다. 클래스를 참조 하세요 [CReBar](../mfc/reference/crebar-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

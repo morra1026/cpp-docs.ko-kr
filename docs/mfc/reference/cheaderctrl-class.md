@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 56c694283c5143174b0ce7370d98a244c056bc1e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a683c877b67f4eae1a7411f5916987c9789b6817
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496020"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261351"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 
@@ -142,7 +142,7 @@ Windows 95/Internet Explorer 4.0 공용 컨트롤에 대 한 추가 기능은 �
 
 사용에 대 한 자세한 내용은 `CHeaderCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CHeaderCtrl 사용 하 여](../../mfc/using-cheaderctrl.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -858,7 +858,7 @@ int SetHotDivider(int nIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 포인터의 위치입니다. 헤더 컨트롤에 대 한 포인터의 위치에 따라 적절 한 구분선 강조 표시 합니다.
 
 *nIndex*<br/>
@@ -957,7 +957,7 @@ BOOL SetOrderArray(
 
   예를 참조 하세요 [CHeaderCtrl::GetOrderArray](#getorderarray)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

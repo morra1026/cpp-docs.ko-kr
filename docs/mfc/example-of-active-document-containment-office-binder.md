@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Office Binder [MFC]
 - MFC COM, active document containment
 ms.assetid: 70dd8568-e8bc-44ac-bf5e-678767efe8e3
-ms.openlocfilehash: 032b2cb39d75c108239d882039f7c797a357a6bc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b06bc0f22ee71c8afbbc8feadca68895fc24a50b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616652"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279187"
 ---
 # <a name="example-of-active-document-containment-office-binder"></a>액티브 문서 포함의 예: Office Binder
 
@@ -28,7 +28,6 @@ Microsoft Office Binder는 액티브 문서 컨테이너의 예시입니다. Off
 
 가 물론, 기타 가능한 유형의 바인더 옆에 있는 컨테이너입니다. 파일 탐색기 왼쪽된 창 오른쪽 창의 현재 선택한 디렉터리에 포함 된 파일을 표시 하는 동안 드라이브 또는 네트워크 디렉터리의 계층적 목록을 표시할 트리 컨트롤을 사용 하는 일반적인 이중 창 인터페이스를 사용 합니다. 일반적으로 이중 창 인터페이스를 사용 하는 것이 아니라 컨테이너 (예: Microsoft Internet Explorer), 인터넷 브라우저 종류를 단일 프레임을가 하 게 되 고 하이퍼링크를 사용 하 여 탐색을 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [활성 문서 포함](../mfc/active-document-containment.md)
-

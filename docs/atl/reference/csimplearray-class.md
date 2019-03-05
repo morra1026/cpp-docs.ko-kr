@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleArray class
 ms.assetid: ee0c9f39-b61c-4c18-bc43-4eada21dca3a
-ms.openlocfilehash: 6395e324d5efdba208a7f77d86ca466fb7cdbb5a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c050002549fc6b7a18acb34f0e4f9a2f278db82
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460465"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263405"
 ---
 # <a name="csimplearray-class"></a>CSimpleArray 클래스
 
@@ -49,7 +49,7 @@ class CSimpleArray
 |이름|설명|
 |----------|-----------------|
 |[CSimpleArray::CSimpleArray](#csimplearray)|간단한 배열에 대 한 생성자입니다.|
-|[CSimpleArray:: ~ CSimpleArray](#dtor)|간단한 배열에 대 한 소멸자입니다.|
+|[CSimpleArray::~CSimpleArray](#dtor)|간단한 배열에 대 한 소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -126,7 +126,7 @@ CSimpleArray();
 
 데이터 멤버를 비어 있는 새 만들기 초기화 `CSimpleArray` 개체나 기존 복사본 `CSimpleArray` 개체입니다.
 
-##  <a name="dtor"></a>  CSimpleArray:: ~ CSimpleArray
+##  <a name="dtor"></a>  CSimpleArray::~CSimpleArray
 
 소멸자입니다.
 
@@ -307,6 +307,6 @@ BOOL SetAtIndex(
 
 경우 TRUE를 반환 성공적이 고 FALSE 인덱스가 잘못 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

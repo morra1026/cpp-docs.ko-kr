@@ -58,12 +58,12 @@ helpviewer_keywords:
 - CDaoDatabase [MFC], m_pDAODatabase
 - CDaoDatabase [MFC], m_pWorkspace
 ms.assetid: 8ff5b342-964d-449d-bef1-d0ff56aadf6d
-ms.openlocfilehash: 6bdabafc905b1ae5d6ed9a1fcd83ab1982871c3b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1e9db1ddebe05d42cbb8c4ba242938d6d86cc81
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439284"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272904"
 ---
 # <a name="cdaodatabase-class"></a>CDaoDatabase 클래스
 
@@ -154,7 +154,7 @@ ODBC 데이터 원본을 사용 하는 권장된 방법은 Microsoft Jet에 외�
 > [!NOTE]
 >  개체는 MFC 데이터베이스 개체에 있는 DAO의 경우에 저장 됩니다. MFC 개체 관계 아니라 테이블 정의 쿼리 및 레코드 집합 개체에 대 한 클래스를 제공합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -265,7 +265,7 @@ virtual void Create(
 
 - `dbLangCyrillic` 러시아어
 
-- `dbLangCzech` 체코어
+- `dbLangCzech` Czech
 
 - `dbLangDutch` 네덜란드어
 
@@ -587,9 +587,9 @@ void GetQueryDefInfo(
 
 - (기본값) AFX_DAO_PRIMARY_INFO 이름, 형식
 
-- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 만든 날짜, 마지막 업데이트 날짜, 레코드를 반환, 업데이트 가능
+- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 만든 날짜, 반환 레코드를 업데이트할 수 있는 마지막 업데이트 날짜
 
-- AFX_DAO_ALL_INFO 기본 및 보조 데이터베이스 정보가 더하기: Connect SQL ODBCTimeout
+- AFX_DAO_ALL_INFO 기본 및 보조 데이터베이스 정보가 더하기: SQL, Connect, ODBCTimeout
 
 *lpszName*<br/>
 이름별 조회에 대 한 데이터베이스에 정의 된 쿼리의 이름을 포함 하는 문자열입니다.
@@ -744,7 +744,7 @@ void GetTableDefInfo(
 
 - 업데이트할 수 (기본값) AFX_DAO_PRIMARY_INFO 이름 특성
 
-- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 만든 날짜, 마지막 업데이트 날짜 원본 테이블 이름, 연결
+- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 만든 날짜, 날짜, 마지막으로 업데이트 원본 테이블 이름, 연결
 
 - AFX_DAO_ALL_INFO 기본 및 보조 데이터베이스 정보가 더하기: 유효성 검사 규칙 유효성 검사 텍스트 레코드 수
 
@@ -893,7 +893,7 @@ void SetQueryTimeout(short nSeconds);
 
 관련된 정보 DAO 도움말의 "QueryTimeout 속성" 항목을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
