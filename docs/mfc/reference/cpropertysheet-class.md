@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CPropertySheet [MFC], SetWizardMode
 - CPropertySheet [MFC], m_psh
 ms.assetid: 8461ccff-d14f-46e0-a746-42ad642ef94e
-ms.openlocfilehash: 8ea466abe153bd31ef15c41b277b57f90cd2b50b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5fd3a682aa649091712a09a9131081c06d29ca6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450936"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300624"
 ---
 # <a name="cpropertysheet-class"></a>CPropertySheet 클래스
 
@@ -94,7 +94,7 @@ class CPropertySheet : public CWnd
 |[CPropertySheet::GetPageIndex](#getpageindex)|속성 시트의 지정된 된 페이지의 인덱스를 검색합니다.|
 |[CPropertySheet::GetTabControl](#gettabcontrol)|탭 컨트롤에 대 한 포인터를 검색합니다.|
 |[CPropertySheet::MapDialogRect](#mapdialogrect)|사각형의 대화 상자 단위 화면 단위로 변환합니다.|
-|[Cpropertysheet:: Oninitdialog](#oninitdialog)|속성 시트 초기화를 확대 하도록 재정의 합니다.|
+|[CPropertySheet::OnInitDialog](#oninitdialog)|속성 시트 초기화를 확대 하도록 재정의 합니다.|
 |[CPropertySheet::PressButton](#pressbutton)|시뮬레이션 속성 시트에서 지정 된 단추를 선택 합니다.|
 |[CPropertySheet::RemovePage](#removepage)|속성 시트에서 페이지를 제거 합니다.|
 |[CPropertySheet::SetActivePage](#setactivepage)|활성 페이지 개체를 프로그래밍 방식으로 설정합니다.|
@@ -117,7 +117,7 @@ class CPropertySheet : public CWnd
 
 속성 시트 개체에서 이러한 새 이미지를 자동으로 표시, 색상표 및 비트맵 이미지에 대 한 유효한 값에 대 한 호출에 전달 [CPropertySheet::Construct](#construct) 또는 [CPropertySheet::CPropertySheet](#cpropertysheet).
 
-경우에 `CPropertySheet` 에서 파생 되지 [CDialog](../../mfc/reference/cdialog-class.md)관리는 `CPropertySheet` 관리와 같은 개체가 `CDialog` 개체. 속성 시트 만들기 두 부분으로 구성 생성 해야 하는 예를 들어: 생성자를 호출 하 고 호출 [DoModal](#domodal) 모달 속성 시트 또는 [만들기](#create) 모덜리스 속성 시트에 대 한 합니다. `CPropertySheet` 생성자의 두 가지 형식: [CPropertySheet::Construct](#construct) 하 고 [CPropertySheet::CPropertySheet](#cpropertysheet)합니다.
+경우에 `CPropertySheet` 에서 파생 되지 [CDialog](../../mfc/reference/cdialog-class.md)관리는 `CPropertySheet` 관리와 같은 개체가 `CDialog` 개체. 속성 시트 만들기 두 부분으로 구성 생성 해야 하는 예를 들어: 생성자를 호출 하 고 호출 [DoModal](#domodal) 모달 속성 시트 또는 [만들기](#create) 모덜리스 속성 시트에 대 한 합니다. `CPropertySheet` 두 가지 유형의 생성자에 있습니다. [CPropertySheet::Construct](#construct) 하 고 [CPropertySheet::CPropertySheet](#cpropertysheet)합니다.
 
 생성 하는 경우는 `CPropertySheet` 개체를 일부 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 되려면 첫째 예외가 발생할 수 있습니다. 이 시트 만들어지기 전에 속성 시트의 스타일을 변경 하는 동안 시스템에서 발생 합니다. 이 예외를 방지 하려면 만들 때 다음과 같은 스타일을 설정 하는 프로그램 `CPropertySheet`:
 
@@ -147,7 +147,7 @@ class CPropertySheet : public CWnd
 
 사용 하는 방법에 대 한 자세한 내용은 `CPropertySheet` 문서를 참조 하는 개체를 [속성 시트 및 속성 페이지](../../mfc/property-sheets-and-property-pages-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -171,7 +171,7 @@ void AddPage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 속성 시트에 추가할 페이지를 가리킵니다. NULL일 수 없습니다.
 
 ### <a name="remarks"></a>설명
@@ -510,7 +510,7 @@ CPropertyPage* GetPage(int nPage) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*. n 페이지*<br/>
+*nPage*<br/>
 원하는 페이지를 인덱스 0부터 시작 합니다. 0과 1 포함 속성 시트의 페이지 수보다 작아야 사이 여야 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -547,7 +547,7 @@ int GetPageIndex(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 찾을 인덱스를 사용 하 여 페이지를 가리킵니다. NULL일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -617,7 +617,7 @@ void MapDialogRect(LPRECT lpRect) const;
 
 합니다 `MapDialogRect` 대화 상자 단위를 대체 하는 멤버 함수 *lpRect* 사용 하 여 사각형 상자 내에서 컨트롤을 배치 또는 만들기 대화 상자를 사용할 수 있도록 단위 (픽셀)를 화면.
 
-##  <a name="oninitdialog"></a>  Cpropertysheet:: Oninitdialog
+##  <a name="oninitdialog"></a>  CPropertySheet::OnInitDialog
 
 속성 시트 초기화 보강를 재정의 합니다.
 
@@ -647,7 +647,7 @@ void PressButton(int nButton);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 단추*<br/>
+*nButton*<br/>
 n 단추: 단추를 누른 것을 식별 합니다. 이 매개 변수는 다음 값 중 하나일 수 있습니다.
 
 - PSBTN_BACK 뒤로 단추를 선택합니다.
@@ -685,10 +685,10 @@ void RemovePage(int nPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 속성 시트에서 제거할 페이지를 가리킵니다. NULL일 수 없습니다.
 
-*. n 페이지*<br/>
+*nPage*<br/>
 제거할 페이지의 인덱스입니다. 0과 1 포함 속성 시트의 페이지 수보다 작아야 사이 여야 합니다.
 
 ### <a name="remarks"></a>설명
@@ -706,10 +706,10 @@ BOOL SetActivePage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*. n 페이지*<br/>
+*nPage*<br/>
 설정 페이지의 인덱스입니다. 0과 1 포함 속성 시트의 페이지 수보다 작아야 사이 여야 합니다.
 
-*물리 페이지*<br/>
+*pPage*<br/>
 속성 시트에서 설정 페이지를 가리킵니다. 두 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -828,7 +828,7 @@ void SetWizardMode();
 
 [!code-cpp[NVC_MFCDocView#142](../../mfc/codesnippet/cpp/cpropertysheet-class_15.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>

@@ -2,12 +2,12 @@
 title: 문서-뷰 샘플 목록
 ms.date: 11/04/2016
 ms.assetid: 6f087ce8-2f46-433c-b674-4c110743b289
-ms.openlocfilehash: 3abd57efdaa8d1ebc95347c19f83dd757c23d164
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41cb41bb6924bda5db3c19871e0379c2f8d6036d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602919"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300572"
 ---
 # <a name="documentview-sample-list"></a>문서/뷰 샘플 목록
 
@@ -35,7 +35,6 @@ MFC의 문서/뷰 아키텍처를 사용 하 여 흥미로운 방식으로 설�
 
 - [OCLIENT](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

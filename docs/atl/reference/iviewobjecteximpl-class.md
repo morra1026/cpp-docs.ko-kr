@@ -22,12 +22,12 @@ helpviewer_keywords:
 - advise sinks
 - IViewObjectExImpl class
 ms.assetid: ad6de760-1ee5-4883-b033-ae57beffc369
-ms.openlocfilehash: 0333f7e0e0d5b91665978082f112df6d16105dd1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ed7a7e4a6070ba52c54c4dace687111cf7d33d8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538517"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301937"
 ---
 # <a name="iviewobjecteximpl-class"></a>IViewObjectExImpl 클래스
 
@@ -72,7 +72,7 @@ class ATL_NO_VTABLE IViewObjectExImpl
 
 합니다 [IViewObject](/windows/desktop/api/oleidl/nn-oleidl-iviewobject)를 [IViewObject2](/windows/desktop/api/oleidl/nn-oleidl-iviewobject2), 및 [IViewObjectEx](/windows/desktop/api/ocidl/nn-ocidl-iviewobjectex) 인터페이스를 직접 표시 하 고을 알리기 위해 advise 싱크를 만들고 컨트롤을 사용 하도록 설정 합니다 컨테이너 컨트롤 디스플레이의 변경 내용입니다. `IViewObjectEx` 인터페이스 깜박임 그리기, 사각형이 아닌 투명 한 컨트롤 및 적중 테스트 (예를 들어, 얼마나 근접 마우스 클릭 해야 컨트롤에 간주 되기 위해)와 같은 확장 된 컨트롤 기능에 대 한 지원을 제공 합니다. 클래스 `IViewObjectExImpl` 이러한 인터페이스의 기본 구현을 제공 하 고 구현 `IUnknown` 장치에서 디버그 덤프에 정보를 전송 하 여 작성 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IViewObjectEx`
 
@@ -346,7 +346,7 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 [!code-cpp[NVC_ATL_Utilities#136](../../atl/codesnippet/cpp/iviewobjecteximpl-class_2.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>

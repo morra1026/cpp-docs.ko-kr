@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CToolBarCtrl class [MFC], object styles
 - toolbar controls [MFC], style
 ms.assetid: fd0a73db-7ad1-4fe4-889b-02c3980f49e8
-ms.openlocfilehash: ba1ff18d9b9a4d98b60cf7c30e21c56976325403
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8a0db3299ebb54d226edc1434dedbc6a04eb9b00
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565193"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302340"
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>도구 모음 컨트롤의 모양 사용자 지정
 
@@ -52,8 +52,7 @@ ms.locfileid: "50565193"
 
 Toolbar 스타일 및 확장된 스타일의 전체 목록은 참조 하세요. [도구 모음 컨트롤 및 단추 스타일](/windows/desktop/Controls/toolbar-control-and-button-styles) 하 고 [도구 모음 확장 스타일](/windows/desktop/Controls/toolbar-extended-styles) Windows SDK의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CToolBarCtrl 사용](../mfc/using-ctoolbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

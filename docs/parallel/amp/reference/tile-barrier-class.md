@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - tile_barrier class
 ms.assetid: b4ccdccb-0032-4e11-b7bd-dc9d43445dee
-ms.openlocfilehash: 7902ba2315fe348789527e755e124e7fc0ba965f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4336a4cc317344c881f60e5ed4c5bdf8328a34b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509056"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301170"
 ---
 # <a name="tilebarrier-class"></a>tile_barrier 클래스
 
@@ -46,7 +46,7 @@ class tile_barrier;
 |[wait_with_global_memory_fence](#wait_with_global_memory_fence)|타일에 있는 모든 스레드가이 호출에 도달한 모든 전역 메모리 액세스가 완료 될 때까지 타일에서 모든 스레드의 실행을 차단 합니다.|
 |[wait_with_tile_static_memory_fence](#wait_with_tile_static_memory_fence)|모든 타일에서 모든 스레드의 실행을 차단 `tile_static` 메모리 액세스가 완료 되 고 타일에 있는 모든 스레드가이 호출에 도달 했습니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tile_barrier`
 
@@ -112,6 +112,6 @@ void wait_with_global_memory_fence() const  restrict(amp);
 void wait_with_tile_static_memory_fence() const restrict(amp);
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

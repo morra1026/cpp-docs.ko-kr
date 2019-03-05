@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComAllocator class
 ms.assetid: 0cd706fd-0c7b-42d3-9054-febe2966fc8e
-ms.openlocfilehash: 83ea5cdbc2460d308edf89647dafba65cb327f03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f1c005262d25b1ff5e900377c229afe1573e6d3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658876"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296074"
 ---
 # <a name="ccomallocator-class"></a>CComAllocator 클래스
 
@@ -107,7 +107,7 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 할당된 메모리의 크기를 조정합니다. 참조 [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc) 대 한 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)<br/>
 [CCRTAllocator 클래스](../../atl/reference/ccrtallocator-class.md)<br/>

@@ -11,16 +11,16 @@ helpviewer_keywords:
 - throwing exceptions [MFC], after destroying
 - exception handling [MFC], destroying objects
 ms.assetid: 3b14b4ee-e789-4ed2-b8e3-984950441d97
-ms.openlocfilehash: 6e03d46a2600458f3107efa6e0b6b0d643c9b160
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 23fe85018d1bc2c41371afec2ad6931755e4e682
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442473"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298136"
 ---
 # <a name="exceptions-freeing-objects-in-exceptions"></a>예외: 예외의 개체 해제
 
-이 문서에 필요 하 고 예외가 발생 하면 개체를 해제 하는 방법을 설명 합니다. 다음과 같은 내용을 다룹니다.
+이 문서에 필요 하 고 예외가 발생 하면 개체를 해제 하는 방법을 설명 합니다. 다루는 주제는 다음과 같습니다.
 
 - [로컬에서 예외 처리](#_core_handling_the_exception_locally)
 
@@ -62,9 +62,8 @@ Throw 함수 수도 힙 개체의 할당을 취소 해야 합니다. 함수도 �
 
 예외를 throw 할 수 있는 함수를 호출 하는 경우 사용할 수 있습니다 **try/catch** 블록에는 예외를 catch 하 고 사용자가 만든 모든 개체 삭제를 확인 합니다. 특히, 많은 MFC 함수 예외를 throw 할 수 있습니다 주의 합니다.
 
-자세한 내용은 [예외: 예외를 catch 하면 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
+자세한 내용은 참조 하세요. [예외: 예외 catch 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)
-

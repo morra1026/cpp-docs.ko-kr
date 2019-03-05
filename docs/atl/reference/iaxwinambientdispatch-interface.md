@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatch interface
 ms.assetid: 55ba6f7b-7a3c-4792-ae47-c8a84b683ca9
-ms.openlocfilehash: f143b2c58159d1bb0812152c68d3c31153d4570d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b9557a76d133d81a07320f1a64482d17c955ef2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467433"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301596"
 ---
 # <a name="iaxwinambientdispatch-interface"></a>IAxWinAmbientDispatch 인터페이스
 
@@ -692,10 +692,9 @@ STDMETHOD(put_UserMode)(VARIANT_BOOL bUserMode);
 
 이 속성의 값을 기본값으로 VARIANT_TRUE를 사용 하는 ATL 호스트 개체 구현 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IAxWinAmbientDispatchEx 인터페이스](../../atl/reference/iaxwinambientdispatchex-interface.md)<br/>
 [IAxWinHostWindow 인터페이스](../../atl/reference/iaxwinhostwindow-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

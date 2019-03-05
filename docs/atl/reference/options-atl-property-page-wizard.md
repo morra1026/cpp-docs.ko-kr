@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Property Page Wizard, options
 ms.assetid: a7107779-b2ea-4f99-b84b-7f3e0c504bc8
-ms.openlocfilehash: e891bd9e37bbf2fbedcdd71649305cdc366065fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c92c7a3f03c3ddedbea02647e2317d77a7655609
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642012"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298986"
 ---
 # <a name="options-atl-property-page-wizard"></a>옵션, ATL 속성 페이지 마법사
 
@@ -26,7 +26,7 @@ ms.locfileid: "50642012"
    |옵션|설명|
    |------------|-----------------|
    |**Single**|속성 페이지를 기본 COM 스레드에서만에서 실행합니다.|
-   |**아파트**|모든 단일 스레드 아파트에서 속성 페이지를 만들 수 있습니다. 기본값입니다.|
+   |**Apartment**|모든 단일 스레드 아파트에서 속성 페이지를 만들 수 있습니다. 기본값입니다.|
 
 - **집계**
 
@@ -38,8 +38,7 @@ ms.locfileid: "50642012"
    |**No**|집계 될 수 없는 속성 페이지를 만듭니다.|
    |**만**|집계를 통해만 인스턴스화할 수 있는 속성 페이지를 만듭니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 속성 페이지 마법사](../../atl/reference/atl-property-page-wizard.md)<br/>
 [문자열, ATL 속성 페이지 마법사](../../atl/reference/strings-atl-property-page-wizard.md)
-

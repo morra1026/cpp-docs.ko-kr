@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 f1_keywords:
 - vc.codewiz.class.atl.control.stockprops
 ms.assetid: b27b0e60-08a6-43f4-ba6e-0a4e45147693
-ms.openlocfilehash: bb76eb5771e34f67a048f1b0b884b9c8eb2a9ff8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a737dcd6c3a738d51460b1a31f03f8d09001259
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528110"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297163"
 ---
 # <a name="stock-properties-atl-control-wizard"></a>스톡 속성, ATL 컨트롤 마법사
 
 마법사의이 페이지에는 컨트롤에 대해 지원 되는 스톡 속성 식별 합니다. 기본적으로 속성이 식별 됩니다.
 
-- **지원 되지 않음**
+- **지원되지 않음**
 
    컨트롤에 대 한 현재 지원 되지 않는 사용 가능한 속성을 나타냅니다.
 
@@ -30,7 +30,6 @@ ms.locfileid: "50528110"
 |**\<**|현재 선택 된 속성 이름을 제거 합니다 **지원 되는** 목록입니다.|
 |**\<\<**|에 현재 나열 된 모든 속성 이름을 제거 합니다 **지원 되는** 목록입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 컨트롤 마법사](../../atl/reference/atl-control-wizard.md)
-

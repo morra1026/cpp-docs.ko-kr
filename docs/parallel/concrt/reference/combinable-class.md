@@ -12,16 +12,17 @@ f1_keywords:
 helpviewer_keywords:
 - combinable class
 ms.assetid: fe0bfbf6-6250-47da-b8d0-f75369f0b5be
-ms.openlocfilehash: b392a46c3aafac9ab5f3ca2b626f5f78daebc85d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05256516c0a693a282b8d0de56d6c9e7465f2740
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630752"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299976"
 ---
 # <a name="combinable-class"></a>combinable 클래스
 
-`combinable<T>` 개체는 병렬 알고리즘 중에 잠금 없는 스레드 로컬 하위 계산을 수행하기 위해 데이터의 스레드 전용 복사본을 제공합니다. 병렬 작업이 끝나면 스레드 전용 하위 계산을 최종 결과에 병합할 수 있습니다. 이 클래스는 공유 변수 대신 사용될 수 있으며, 그렇지 않을 경우 해당 공유 변수에 대한 경합이 많으면 성능이 향상될 수 있습니다.
+
+  `combinable<T>` 개체는 병렬 알고리즘 중에 잠금 없는 스레드 로컬 하위 계산을 수행하기 위해 데이터의 스레드 전용 복사본을 제공합니다. 병렬 작업이 끝나면 스레드 전용 하위 계산을 최종 결과에 병합할 수 있습니다. 이 클래스는 공유 변수 대신 사용될 수 있으며, 그렇지 않을 경우 해당 공유 변수에 대한 경합이 많으면 성능이 향상될 수 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -63,7 +64,7 @@ class combinable;
 
 자세한 내용은 [병렬 컨테이너 및 개체](../../../parallel/concrt/parallel-containers-and-objects.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `combinable`
 
@@ -102,7 +103,7 @@ combinable(const combinable& _Copy);
 *_FnInitialize*<br/>
 형식의 각 새 스레드 전용 값을 초기화 하는 함수가 `T`합니다. 서명 사용 하 여 함수 호출 연산자를 지원 해야 `T ()`합니다.
 
-*복사 (_c)*<br/>
+*_Copy*<br/>
 기존 `combinable` 여기로 복사 대상 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -113,7 +114,7 @@ combinable(const combinable& _Copy);
 
 세 번째 생성자는 복사 생성자입니다.
 
-##  <a name="dtor"></a> ~ combinable
+##  <a name="dtor"></a> ~combinable
 
 `combinable` 개체를 제거합니다.
 
@@ -178,7 +179,7 @@ T& local(bool& _Exists);
 
 스레드 전용 하위 계산 참조입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 에 할당 된 `combinable` 개체에서 다른 `combinable` 개체입니다.
 
@@ -188,13 +189,13 @@ combinable& operator= (const combinable& _Copy);
 
 ### <a name="parameters"></a>매개 변수
 
-*복사 (_c)*<br/>
+*_Copy*<br/>
 기존 `combinable` 여기로 복사 대상 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
 이에 대 한 참조 `combinable` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

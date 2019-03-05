@@ -6,12 +6,12 @@ f1_keywords:
 - atlcom/ATL::OBJECT_ENTRY_AUTO
 - atlcom/ATL::OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO
 ms.assetid: 680087f4-9894-41dd-a79c-6f337e1f13c1
-ms.openlocfilehash: f750b9b21a2d44a160380acb11f10864a07782e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73dc924527bac8499adefab3d0d6b51afa500a5a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594417"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298609"
 ---
 # <a name="object-map-macros"></a>개체 맵 매크로
 
@@ -108,6 +108,6 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 
 OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO를 사용 하는 개체는 등록 하 고 초기화를 지정할 수 있습니다 (참조 [OBJECT_ENTRY_AUTO](#object_entry_auto) 자세한 내용은)를 통해 여야 하지만 `CoCreateInstance`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

@@ -17,12 +17,12 @@ helpviewer_keywords:
 - CAxDialogImpl class
 - ATL, dialog boxes
 ms.assetid: 817df483-3fa8-44e7-8487-72ba0881cd27
-ms.openlocfilehash: 852656b33eca1a8c87c6931b58cd49c0c41fe3dc
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: d6f08553a9eff421923ef348caee2022849674ac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893641"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301989"
 ---
 # <a name="caxdialogimpl-class"></a>CAxDialogImpl 클래스
 
@@ -85,7 +85,7 @@ class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 
 에 대 한 자세한 `CAxDialogImpl`를 참조 하세요 [ATL 컨트롤 포함 FAQ](../../atl/atl-control-containment-faq.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CMessageMap](../../atl/reference/cmessagemap-class.md)
 
@@ -273,7 +273,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 bool m_bModal;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDialogImpl 클래스](../../atl/reference/cdialogimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

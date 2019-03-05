@@ -5,16 +5,16 @@ helpviewer_keywords:
 - ATL projects, adding controls
 - controls [ATL], adding to projects
 ms.assetid: 10223e7e-fdb7-4163-80c6-44aeafa8e6ce
-ms.openlocfilehash: 26667c2ad3bb2cedb42767fe42ff0ad358fa6d66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 836b19cef38549bcdf6cddeeda5bbb7fee08a1c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487687"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298440"
 ---
 # <a name="adding-an-atl-control"></a>ATL 컨트롤 추가
 
-이 마법사를 사용 하 여 모든 잠재적인 컨테이너에 대 한 인터페이스를 지 원하는 프로젝트에 사용자 인터페이스 개체를 추가 합니다. 이러한 인터페이스를 지원 하기 위해 프로젝트는 ATL 응용 프로그램 또는 ATL 지원을 포함 하는 MFC 응용 프로그램으로 만들어야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 응용 프로그램을 만들거나 [MFC 응용 프로그램에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 응용 프로그램용 ATL 지원을 구현할 수 있습니다.
+이 마법사를 사용 하 여 모든 잠재적인 컨테이너에 대 한 인터페이스를 지 원하는 프로젝트에 사용자 인터페이스 개체를 추가 합니다. 이러한 인터페이스를 지원 하기 위해 프로젝트는 ATL 응용 프로그램 또는 ATL 지원을 포함 하는 MFC 응용 프로그램으로 만들어야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션용 ATL 지원을 구현할 수 있습니다.
 
 ## <a name="to-add-an-atl-control-to-your-project"></a>프로젝트에 ATL 컨트롤을 추가 하려면
 
@@ -34,7 +34,7 @@ ms.locfileid: "50487687"
 
 컨트롤의 크기를 줄일 선택 하 여 대부분의 컨테이너에서 사용 되지 않는 인터페이스를 제거 하는 또한 **최소 컨트롤** 에 **옵션** 마법사의 페이지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [복합 컨트롤에 기능 추가](../../atl/adding-functionality-to-the-composite-control.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)

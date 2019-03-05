@@ -16,12 +16,12 @@ helpviewer_keywords:
 - run-time class [MFC]
 - RUNTIME_CLASS macro, using
 ms.assetid: 3445a9af-0bd6-4496-95c3-aa59b964570b
-ms.openlocfilehash: 061cc04857b0d1763fb4ee975912bcca1b9d014f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e4f8685033fc7a8a2f49dafa7ef4e4e019d8989
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455278"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298830"
 ---
 # <a name="accessing-run-time-class-information"></a>런타임 클래스 정보 액세스
 
@@ -61,7 +61,6 @@ ms.locfileid: "50455278"
 
 Serialization에 대 한 정보 및 런타임 클래스 정보를 자세한 문서를 참조 하세요 [MFC의 파일](../mfc/files-in-mfc.md) 하 고 [Serialization](../mfc/serialization-in-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 사용](../mfc/using-cobject.md)
-

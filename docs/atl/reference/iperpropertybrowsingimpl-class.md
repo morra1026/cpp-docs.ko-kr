@@ -13,12 +13,12 @@ helpviewer_keywords:
 - property pages, accessing information
 - IPerPropertyBrowsing, ATL implementation
 ms.assetid: 0b1a9be3-d242-4767-be69-663a21e4b728
-ms.openlocfilehash: ce7c581d4378cb1f6e5556d488164a9b5fd9098a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 54c475e736425718e954b0e954ea2b327d938556
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585304"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299455"
 ---
 # <a name="iperpropertybrowsingimpl-class"></a>IPerPropertyBrowsingImpl 클래스
 
@@ -61,7 +61,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IPerPropertyBrowsing`
 
@@ -141,7 +141,7 @@ ATL 개체의 속성 맵에 사용 하 여이 정보를 가져옵니다.
 
 참조 [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IPropertyPageImpl 클래스](../../atl/reference/ipropertypageimpl-class.md)<br/>
 [ISpecifyPropertyPagesImpl 클래스](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>

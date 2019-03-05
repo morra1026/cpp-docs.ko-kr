@@ -18,16 +18,17 @@ f1_keywords:
 helpviewer_keywords:
 - transformer class
 ms.assetid: eea71925-7043-4a92-bfd4-dbc0ece5d081
-ms.openlocfilehash: cc35a4e2de2b29bb6d437dfcbf48ef361fefdfa3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c07017539bc0125e9e8c27e208480a50ccc7a719
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618285"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299181"
 ---
 # <a name="transformer-class"></a>transformer 클래스
 
-`transformer` 메시징 블록은 한 형식의 메시지를 수락하고 다른 형식의 메시지를 개수에 제한 없이 저장할 수 있는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
+
+  `transformer` 메시징 블록은 한 형식의 메시지를 수락하고 다른 형식의 메시지를 개수에 제한 없이 저장할 수 있는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -39,10 +40,10 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 
 #### <a name="parameters"></a>매개 변수
 
-*(_I)*<br/>
+*_Input*<br/>
 버퍼에서 허용 하는 메시지의 페이로드 유형입니다.
 
-*(_O)*<br/>
+*_Output*<br/>
 저장 및 버퍼에 의해 전파 메시지의 페이로드 유형입니다.
 
 ## <a name="members"></a>멤버
@@ -54,7 +55,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 |[transformer](#ctor)|오버로드됨. `transformer` 메시징 블록을 생성합니다.|
 |[~ transformer 소멸자](#dtor)|제거 된 `transformer` 메시징 블록입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -67,13 +68,14 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 |[reserve_message](#reserve_message)|이전에 제공한 메시지를 예약 `transformer` 메시징 블록입니다. (재정의 [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|예약을 해제 된 후에 전파를 다시 시작 합니다. (재정의 [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 |[send_message](#send_message)|메시지를 동기적으로 전달 된 `ISource` 이 블록 `transformer` 메시징 블록입니다. 호출한는 `send` 메서드의 소스 블록에서 호출 하는 경우.|
-|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
+|[supports_anonymous_source](#supports_anonymous_source)|
+  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
 ## <a name="remarks"></a>설명
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -150,7 +152,8 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -222,7 +225,8 @@ virtual message_status send_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -233,7 +237,8 @@ A [message_status](concurrency-namespace-enums.md) 메시지와 함께 수행 �
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
+
+  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
 
 ```
 virtual bool supports_anonymous_source();
@@ -243,7 +248,7 @@ virtual bool supports_anonymous_source();
 
 **true** 블록은 연기 하지 때문에 메시지를 제공 합니다.
 
-##  <a name="ctor"></a> 변환기
+##  <a name="ctor"></a> transformer
 
 `transformer` 메시징 블록을 생성합니다.
 
@@ -288,7 +293,7 @@ transformer(
 *_PTarget*<br/>
 변환기를 사용 하 여 연결할 대상 블록에 대 한 포인터입니다.
 
-*필터 (_f)*<br/>
+*_Filter*<br/>
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
@@ -313,7 +318,7 @@ transformer(
 ~transformer();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [call 클래스](call-class.md)

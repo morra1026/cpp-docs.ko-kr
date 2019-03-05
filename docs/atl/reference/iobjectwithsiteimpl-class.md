@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IObjectWithSiteImpl class
 ms.assetid: 4e1f774f-bc3d-45ee-9a1c-c3533a511588
-ms.openlocfilehash: 776f6f67c0490afb9d3ca975fcee7596d415ac12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad27c4288d7e16949fe38ea6b8a686e3d6916ee6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608899"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297022"
 ---
 # <a name="iobjectwithsiteimpl-class"></a>IObjectWithSiteImpl 클래스
 
@@ -59,7 +59,7 @@ template <class T>
 
 클래스를 파생 하는 일반적으로 `IObjectWithSiteImpl` 컨트롤이 아닌 만들 때 개체입니다. 컨트롤에서 클래스를 파생 [IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)를 제공 하는 사이트 대 한 포인터입니다. 클래스에서 파생 되지 않은 `IObjectWithSiteImpl` 고 `IOleObjectImpl`입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IObjectWithSite`
 
@@ -126,6 +126,6 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 
 참조 [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

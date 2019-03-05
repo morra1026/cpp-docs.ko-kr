@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleDropTarget [MFC], Register
 - COleDropTarget [MFC], Revoke
 ms.assetid: a58c9a48-6a93-4357-b078-4594df258311
-ms.openlocfilehash: f4294bbbf9563b55f2047f297eac1a33ca55141f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 127245385ebd89e51a1cc77d1efaa16729d73fe7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300126"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget 클래스
 
@@ -70,7 +70,7 @@ Drop 명령에 동의 하는 창을 가져오려면 먼저 만들어야의 개�
 
 OLE를 사용 하 여 끌어서 놓기 작업에 대 한 자세한 내용은 문서 참조 [끌어서 놓기 (OLE)](../../mfc/drag-and-drop-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -115,9 +115,9 @@ virtual DROPEFFECT OnDragEnter(
 삭제할 수 있는 데이터를 포함 하는 데이터 개체를 가리킵니다.
 
 *dwKeyState*<br/>
-보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*지점*<br/>
+*point*<br/>
 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -180,9 +180,9 @@ virtual DROPEFFECT OnDragOver(
 삭제 될 데이터가 포함 된 데이터 개체를 가리킵니다.
 
 *dwKeyState*<br/>
-보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*지점*<br/>
+*point*<br/>
 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -226,9 +226,9 @@ virtual DROPEFFECT OnDragScroll(
 커서를 현재 창 가리킵니다.
 
 *dwKeyState*<br/>
-보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
+보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -278,7 +278,7 @@ Drop 작업에 대 한 사용자가 선택 하는 효과입니다. 다음 중 �
 
 - DROPEFFECT_LINK 링크에서 끌어 놓은 데이터를 원본 데이터를 설정 됩니다.
 
-*지점*<br/>
+*point*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -317,10 +317,10 @@ virtual DROPEFFECT OnDropEx(
 *dropDefault*<br/>
 현재 키 상태를 기반으로 기본 놓기 작업에 대 한 사용자가 선택 하는 효과입니다. DROPEFFECT_NONE 수 있습니다. 끌어서 놓기 작업 결과 주의 섹션에 설명 합니다.
 
-*드롭다운 목록*<br/>
+*dropList*<br/>
 목록 놓기 소스가 지원 되는 놓기 효과입니다. 비트 OR를 사용 하 여 드롭 효과 값을 결합할 수 있습니다 (**&#124;**) 작업입니다. 끌어서 놓기 작업 결과 주의 섹션에 설명 합니다.
 
-*지점*<br/>
+*point*<br/>
 커서를 화면을 기준으로 픽셀의 위치를 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -384,9 +384,9 @@ virtual void Revoke();
 
 자세한 내용은 [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revokedragdrop) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

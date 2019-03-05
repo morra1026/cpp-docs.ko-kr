@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - window classes
 ms.assetid: 503efc2c-a269-495d-97cf-3fb300d52f3d
-ms.openlocfilehash: 987e2eab5fe4eec32d88b7c1528f1e3189fc925a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c3bc70b5edfb089a6276003625b876d8c553dcb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459802"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301651"
 ---
 # <a name="introduction-to-atl-window-classes"></a>ATL 창 클래스 소개
 
@@ -37,7 +37,6 @@ ATL 클래스는 구현 하 고 windows를 조작 하도록 설계 되었습니�
 
 - [CWinTraits](../atl/reference/cwintraits-class.md) 하 고 [CWinTraitsOR](../atl/reference/cwintraitsor-class.md) ATL 창 개체의 특성을 표준화 하는 간단한 방법을 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 클래스](../atl/atl-window-classes.md)
-

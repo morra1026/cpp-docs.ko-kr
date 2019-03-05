@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COleException [MFC], Process
 - COleException [MFC], m_sc
 ms.assetid: 2571e9fe-26cc-42f0-9ad9-8ad5b4311ec1
-ms.openlocfilehash: 243ea2028b30d60a2c19b22238914682966d3b69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b5dd2de2924b62dd76d7f16a494566849357de8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599344"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300364"
 ---
 # <a name="coleexception-class"></a>COleException 클래스
 
@@ -47,9 +47,9 @@ class COleException : public CException
 
 일반적으로 만들면 안을 `COleException` 개체 직접; 대신 호출 해야 [AfxThrowOleException](exception-processing.md#afxthrowoleexception)합니다.
 
-예외에 대 한 자세한 내용은 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 하 고 [예외: OLE 예외](../../mfc/exceptions-ole-exceptions.md)합니다.
+예외에 대 한 자세한 내용은 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 고 [예외: OLE 예외](../../mfc/exceptions-ole-exceptions.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -107,9 +107,8 @@ SCODE에 대 한 자세한 내용은 참조 하세요. [COM 오류 코드 구조
 
   [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch)에 대한 예제를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CALCDRIV MFC 샘플](../../visual-cpp-samples.md)<br/>
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

@@ -30,16 +30,16 @@ helpviewer_keywords:
 - CMFCRibbonSlider [MFC], SetZoomButtons
 - CMFCRibbonSlider [MFC], SetZoomIncrement
 ms.assetid: 9351ac34-f234-4e42-91e2-763f1989c8ff
-ms.openlocfilehash: 8db8165325c7bcd1e626b6707c35b69ebd211073
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85c646e2fa524268e4559b587f90c5e06971b765
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585109"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300329"
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider 클래스
 
-`CMFCRibbonSlider` 클래스는 리본 표시줄 또는 리본 상태 표시줄에 추가할 수 있는 슬라이더 컨트롤을 구현 합니다. 리본 슬라이더 컨트롤은 Office 2007 응용 프로그램의 확대/축소 슬라이더와 유사합니다.
+`CMFCRibbonSlider` 클래스는 리본 표시줄 또는 리본 상태 표시줄에 추가할 수 있는 슬라이더 컨트롤을 구현 합니다. 리본 슬라이더 컨트롤은 Office 2007 애플리케이션의 확대/축소 슬라이더와 유사합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -156,7 +156,7 @@ int GetRangeMin() const;
 
 ##  <a name="getregularsize"></a>  CMFCRibbonSlider::GetRegularSize
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -196,7 +196,7 @@ BOOL HasZoomButtons() const;
 
 ##  <a name="ondraw"></a>  CMFCRibbonSlider::OnDraw
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -241,7 +241,7 @@ void SetRange(
 *nMin*<br/>
 [in] 슬라이더 컨트롤의 최소값을 지정합니다.
 
-*최대*<br/>
+*nMax*<br/>
 [in] 슬라이더 컨트롤의 최대값을 지정합니다.
 
 ### <a name="remarks"></a>설명
@@ -273,7 +273,7 @@ void SetZoomIncrement(int nZoomIncrement);
 *nZoomIncrement*<br/>
 [in] 슬라이더 컨트롤의 확대/축소 증분을 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CSplitterWnd [MFC], OnDrawSplitter
 - CSplitterWnd [MFC], OnInvertTracker
 ms.assetid: fd0de258-6dbe-4552-9e47-a39de0471d51
-ms.openlocfilehash: 450699d001ee7246742fe23d9bf89d03c2d61cb8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42913ddea7818636dce8d630ed2d79d13c19ce81
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50600514"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302106"
 ---
 # <a name="csplitterwnd-class"></a>CSplitterWnd 클래스
 
@@ -131,7 +131,7 @@ class CSplitterWnd : public CWnd
 |[CSplitterWnd::SplitColumn](#splitcolumn)|프레임 창이 세로로 분할 하는 지점을 나타냅니다.|
 |[CSplitterWnd::SplitRow](#splitrow)|프레임 창이 가로로 분할 하는 지점을 나타냅니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -179,7 +179,7 @@ A `CSplitterWnd` 개체를 부모에 일반적으로 포함 되어 [CFrameWnd](.
 
 - MFC 샘플 [VIEWEX](../../visual-cpp-samples.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -388,7 +388,7 @@ virtual BOOL CreateView(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 새 보기를 배치 하는 분할자 창 행을 지정 합니다.
 
 *col*<br/>
@@ -456,7 +456,7 @@ virtual void DeleteRow(int rowDelete);
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*rowDelete*<br/>
 삭제할 행을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -475,7 +475,7 @@ virtual void DeleteView(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 보기를 삭제 하는 분할자 창 행을 지정 합니다.
 
 *col*<br/>
@@ -649,7 +649,7 @@ CWnd* GetPane(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 행을 지정합니다.
 
 *col*<br/>
@@ -684,7 +684,7 @@ void GetRowInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 행을 지정합니다.
 
 *cyCur*<br/>
@@ -727,7 +727,7 @@ int IdFromRowCol(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 분할기 창 행을 지정합니다.
 
 *col*<br/>
@@ -807,7 +807,7 @@ virtual void OnDrawSplitter(
 *pDC*<br/>
 그릴 장치 컨텍스트에 대 한 포인터입니다. 하는 경우 *pDC* NULL 이면 [CWnd::RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) 라고 창 프레임 워크 및 없습니다 분할 하 여 그려집니다.
 
-*n 형식*<br/>
+*nType*<br/>
 값은 `enum ESplitType`, 다음 중 하나일 수 있습니다.
 
     - `splitBox` 분할자 끌기 상자입니다.
@@ -877,7 +877,7 @@ virtual void SetActivePane(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 하는 경우 *pWnd* NULL 이면 활성화 됩니다 창에 행을 지정 합니다.
 
 *col*<br/>
@@ -937,7 +937,7 @@ void SetRowInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-*행*<br/>
+*row*<br/>
 분할기 창 행을 지정합니다.
 
 *cyIdeal*<br/>
@@ -1034,7 +1034,7 @@ virtual void OnDraw(CDC* pDC);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 VIEWEX](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - _endthreadex function
 ms.assetid: 39d0529c-c392-4c6f-94f5-105d1e8054e4
-ms.openlocfilehash: ea04e42730b0e7d1f0fafe5d3139d2b1a6aed970
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 392fc8e842d86a17013502ffc68c89eb65ba23db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572161"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299984"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>스레드 컨트롤을 위한 C 런타임 라이브러리 함수
 
@@ -43,6 +43,6 @@ ms.locfileid: "50572161"
 
 합니다 [_endthread](../c-runtime-library/reference/endthread-endthreadex.md) 함수에서 만든 스레드를 종료 `_beginthread` (및 마찬가지로 `_endthreadex` 에서 만든 스레드를 종료 `_beginthreadex`). 스레드는 끝나면 자동으로 종료 합니다. `_endthread` 및 `_endthreadex` 스레드 내에서 조건부 종료 하는 데 유용 합니다. 예를 들어 전용된 스레드를 처리 하는 통신 통신 포트를 제어할 수 없는 경우에 끝낼 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)

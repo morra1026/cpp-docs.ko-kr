@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ATL, connection points
 - connection points [C++], about connection points
 ms.assetid: 17d76165-5f83-4f95-b36d-483821c247a1
-ms.openlocfilehash: 520537f5d562450dc4ea2a5e5a0c68af513da509
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 4d94396ef8839516d9bfee15a2611cce66baa6bd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175058"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297829"
 ---
 # <a name="atl-connection-points"></a>ATL 연결 지점
 
@@ -21,7 +21,7 @@ ms.locfileid: "52175058"
 
 각 연결 지점은 지원 합니다 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint) 인터페이스입니다. 연결 가능 개체를 통해 클라이언트에 해당 연결 지점을 노출 합니다 [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer) 인터페이스입니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [ATL 연결 지점 클래스](../atl/atl-connection-point-classes.md)<br/>
 연결 지점을 지원하는 ATL 클래스에 대해 간략하게 설명합니다.
@@ -37,7 +37,6 @@ ms.locfileid: "52175058"
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

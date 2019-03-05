@@ -31,12 +31,12 @@ helpviewer_keywords:
 - CComModule class
 - DLL modules [C++], ATL
 ms.assetid: f5face2c-8fd8-40e6-9ec3-54ab74701769
-ms.openlocfilehash: 73d25f15aaeed15e3972c48e682c70f0b8c505c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6d95460902c44ff058a4c7b90c810ab44489d952
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589451"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298934"
 ---
 # <a name="ccommodule-class"></a>CComModule 클래스
 
@@ -58,9 +58,9 @@ class CComModule : public _ATL_MODULE
 |이름|설명|
 |----------|-----------------|
 |[CComModule::GetClassObject](#getclassobject)|지정 된 CLSID의 개체를 만듭니다. Dll에 해당 합니다.|
-|[CComModule::GetModuleInstance](#getmoduleinstance)|`m_hInst`를 반환합니다.|
-|[CComModule::GetResourceInstance](#getresourceinstance)|`m_hInstResource`를 반환합니다.|
-|[CComModule::GetTypeLibInstance](#gettypelibinstance)|`m_hInstTypeLib`를 반환합니다.|
+|[CComModule::GetModuleInstance](#getmoduleinstance)|`m_hInst`을 반환합니다.|
+|[CComModule::GetResourceInstance](#getresourceinstance)|`m_hInstResource`을 반환합니다.|
+|[CComModule::GetTypeLibInstance](#gettypelibinstance)|`m_hInstTypeLib`을 반환합니다.|
 |[CComModule::Init](#init)|데이터 멤버를 초기화합니다.|
 |[CComModule::RegisterClassHelper](#registerclasshelper)|시스템 레지스트리에 개체의 표준 클래스 등록을 입력합니다.|
 |[CComModule::RegisterClassObjects](#registerclassobjects)|클래스 개체를 등록합니다. 에 대 한 Exe에만 해당 합니다.|
@@ -107,7 +107,7 @@ ATL COM 응용 프로그램 마법사를 실행 하면 마법사를 자동으로
 
 외에 `CComModule`, ATL 제공 [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md), Exe 및 Windows 서비스에 대 한 아파트 모델 모듈을 구현 하는 합니다. 모듈을 파생 `CComAutoThreadModule` 여러 아파트에서 개체를 만들려는 경우입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -404,7 +404,7 @@ HRESULT RegisterServer(
 *bRegTypeLib*<br/>
 [in] 형식 라이브러리를 등록할 적이 있는지 여부를 나타냅니다. 기본값은 FALSE입니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 [in] 등록할 개체의 CLSID 가리킵니다. NULL (기본값), 개체 맵의 모든 개체를 등록할 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -519,7 +519,7 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 *bUnRegTypeLib*<br/>
 True 이면 형식 라이브러리는도 등록 합니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. 경우 NULL (기본값), 개체 맵의 모든 개체를 등록 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -576,7 +576,7 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
 *dwFlags*<br/>
 스레딩 모델 레지스트리에 입력을 지정 합니다. 가능한 값은 THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 개체를 등록할지 여부를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -617,7 +617,7 @@ virtual HRESULT UpdateRegistryFromResourceD(
 *nResID*<br/>
 [in] 리소스 id입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 [in] 개체를 등록할지 여부를 나타냅니다.
 
 *pMapEntries*<br/>
@@ -667,7 +667,7 @@ virtual HRESULT UpdateRegistryFromResourceS(
 *nResID*<br/>
 [in] 리소스 id입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 [in] 리소스 스크립트를 등록할지 여부를 나타냅니다.
 
 *pMapEntries*<br/>
@@ -688,6 +688,6 @@ virtual HRESULT UpdateRegistryFromResourceS(
 
 대체 가능 매개 변수 및 스크립팅 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

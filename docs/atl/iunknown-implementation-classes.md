@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUnknown implementation classes
 ms.assetid: 47b69bb5-69d8-4a9c-84a8-329bdde2bb3f
-ms.openlocfilehash: 0a15a256f961d35f5153c11da6690f6908e08a52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 97ca30c90cb8fa85685e30aa61d954008cf7cc54
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484125"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297569"
 ---
 # <a name="iunknown-implementation-classes"></a>IUnknown 구현 클래스
 
@@ -44,10 +44,9 @@ ms.locfileid: "50484125"
 
 [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [집계 및 클래스 팩터리 매크로](../atl/reference/aggregation-and-class-factory-macros.md)<br/>
 [COM 맵 매크로](../atl/reference/com-map-macros.md)<br/>
 [COM 맵 전역 함수](../atl/reference/com-map-global-functions.md)
-

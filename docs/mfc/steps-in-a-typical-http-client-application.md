@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Internet client applications [MFC], HTTP table
 - WinInet classes [MFC], HTTP
 ms.assetid: f86552e8-8acd-4b23-bdc5-0c3a247ebd74
-ms.openlocfilehash: a73d220f4ab7f58960ccfe4b09f98f0cd0956406
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59b585d3e6b8c9f13c585f5a712d33abd6123f67
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630791"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296477"
 ---
 # <a name="steps-in-a-typical-http-client-application"></a>일반적인 HTTP 클라이언트 응용 프로그램의 단계
 
@@ -30,8 +30,8 @@ ms.locfileid: "50630791"
 |예외 처리|사용 된 [CInternetException](../mfc/reference/cinternetexception-class.md) 클래스입니다.|모든 공용 인터넷 예외 형식을 처리합니다.|
 |HTTP 세션을 종료 합니다.|삭제 합니다 [CInternetSession](../mfc/reference/cinternetsession-class.md) 개체입니다.|열린 파일 핸들 및 연결을 자동으로 정리합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
 [인터넷 클라이언트 클래스의 필수 구성 요소](../mfc/prerequisites-for-internet-client-classes.md)<br/>
-[MFC WinInet 클래스를 사용하여 인터넷 클라이언트 응용 프로그램 작성](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[MFC WinInet 클래스를 사용하여 인터넷 클라이언트 애플리케이션 작성](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

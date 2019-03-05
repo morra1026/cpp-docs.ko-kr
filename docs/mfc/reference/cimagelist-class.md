@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 5bcf815fce4123ca1014e1679fd810c1ce321be4
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 3e8c524a95730282d0e35e5f791ebf229725e282
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178592"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298921"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 
@@ -156,7 +156,7 @@ class CImageList : public CObject
 
 사용 하 여 대 한 자세한 내용은 `CImageList`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CImageList를 사용 하 여](../../mfc/using-cimagelist.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1097,7 +1097,7 @@ BOOL SetDragCursorImage(
 
 ### <a name="parameters"></a>매개 변수
 
-*끌어 그리드*<br/>
+*nDrag*<br/>
 끌기 이미지와 함께 사용할 새 이미지의 인덱스입니다.
 
 *ptHotSpot*<br/>
@@ -1191,7 +1191,7 @@ BOOL Write(CArchive* pArchive);
 
 [!code-cpp[NVC_MFC_CImageList#17](../../mfc/reference/codesnippet/cpp/cimagelist-class_23.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

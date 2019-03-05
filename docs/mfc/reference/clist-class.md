@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CList [MFC], RemoveTail
 - CList [MFC], SetAt
 ms.assetid: 6f6273c3-c8f6-47f5-ac2a-0a950379ae5d
-ms.openlocfilehash: 10991745fb5ccdac145f4b1d589e7d59c6ed6f4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 722c38de100f2f1ff00e6589573a76bcdd9f3e84
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297387"
 ---
 # <a name="clist-class"></a>CList 클래스
 
@@ -104,7 +104,7 @@ class CList : public CObject
 
 #### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 목록에서 저장 된 개체의 형식입니다.
 
 *ARG_TYPE*<br/>
@@ -128,7 +128,7 @@ class CList : public CObject
 
 [!code-cpp[NVC_MFCCollections#35](../../mfc/codesnippet/cpp/clist-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -288,10 +288,10 @@ const TYPE& GetAt(POSITION position) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 개체의 형식을 지정 합니다.
 
-*위치*<br/>
+*position*<br/>
 목록에서 가져올 요소의 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -340,7 +340,7 @@ TYPE& GetHead();
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 개체의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -384,7 +384,7 @@ const TYPE& GetNext(POSITION& rPosition) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 요소의 형식을 지정 합니다.
 
 *rPosition*<br/>
@@ -419,7 +419,7 @@ const TYPE& GetPrev(POSITION& rPosition) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 요소의 형식을 지정 합니다.
 
 *rPosition*<br/>
@@ -474,7 +474,7 @@ const TYPE& GetTail() const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -515,7 +515,7 @@ POSITION InsertAfter(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 이전 반환한 위치 값 `GetNext`, `GetPrev`, 또는 `Find` 멤버 함수 호출 합니다.
 
 *ARG_TYPE*<br/>
@@ -542,7 +542,7 @@ POSITION InsertBefore(POSITION position, ARG_TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 이전 반환한 위치 값 `GetNext`, `GetPrev`, 또는 `Find` 멤버 함수 호출 합니다.
 
 *ARG_TYPE*<br/>
@@ -605,7 +605,7 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 목록에서 제거할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -626,7 +626,7 @@ TYPE RemoveHead();
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -651,7 +651,7 @@ TYPE RemoveTail();
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를 목록에서 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -695,7 +695,7 @@ void SetAt(POSITION pos, ARG_TYPE newElement);
 
 [!code-cpp[NVC_MFCCollections#55](../../mfc/codesnippet/cpp/clist-class_21.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>

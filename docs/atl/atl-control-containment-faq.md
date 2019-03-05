@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ActiveX controls [C++], hosting
 - controls [ATL]
 ms.assetid: d4bdfbe0-82ca-4f2f-bb95-cb89bdcc9b53
-ms.openlocfilehash: ef175ff83fd641852b27fea8408f1bb7de69f839
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42f9b41b99e13fcfe2fb003acb348c9464e0fd05
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630813"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296568"
 ---
 # <a name="atl-control-containment-faq"></a>ATL 컨트롤 포함 FAQ
 
@@ -101,11 +101,11 @@ ATL의 컨트롤 호스팅 API는 ActiveX 컨트롤 컨테이너 역할을 허�
 |5|자식 창|여러 단계|CreateControlLic|
 |6|주 창|여러 단계|AtlAxCreateControlLic|
 |7|자식 창|여러 단계|CreateControl|
-|9|주 창|여러 단계|AtlAxCreateControl|
+|8|주 창|여러 단계|AtlAxCreateControl|
 
 [!code-cpp[NVC_ATL_AxHost#1](../atl/codesnippet/cpp/hosting-activex-controls-using-atl-axhost_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤 포함 FAQ](../atl/atl-control-containment-faq.md)<br/>
 [AtlAxCreateControl](reference/composite-control-global-functions.md#atlaxcreatecontrol)<br/>

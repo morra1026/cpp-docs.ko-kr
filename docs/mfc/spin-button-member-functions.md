@@ -5,12 +5,12 @@ helpviewer_keywords:
 - spin button control, methods
 - CSpinButtonCtrl class [MFC], methods
 ms.assetid: a08a26fd-b803-4cbe-a509-395fa357d057
-ms.openlocfilehash: ffd07377d54fcfff93ab4ab3771515a90ccf2785
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ad6f529762e77e1cf1c00f41eea0add5d196fbb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542599"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298401"
 ---
 # <a name="spin-button-member-functions"></a>스핀 단추 멤버 함수
 
@@ -26,8 +26,7 @@ Spin 컨트롤에 사용할 수 있는 몇 가지 멤버 함수는 ([CSpinButton
 
 - **범위** 스핀 단추에 대 한 최대 및 최소 위치를 변경할 수 있습니다. 기본적으로 최대 0으로 설정 되어 및 최소 100으로 설정 됩니다. 기본 최대 기본 최소값 보다 작기 때문에 화살표 단추의 작업은 직관적이 지 합니다. 일반적으로 설정한 사용 하 여 범위를 [SetRange](../mfc/reference/cspinbuttonctrl-class.md#setrange) 멤버 함수입니다. 쿼리 범위를 사용 하려면 [GetRange](../mfc/reference/cspinbuttonctrl-class.md#getrange)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSpinButtonCtrl 사용](../mfc/using-cspinbuttonctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

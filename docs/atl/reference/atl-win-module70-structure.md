@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _ATL_WIN_MODULE70 structure
 - ATL_WIN_MODULE70 structure
 ms.assetid: a0aaf3ea-ca77-46ec-bd53-4dfb61dffbea
-ms.openlocfilehash: 4f1718c76d21f2e13b36c29db785fe989ff6108e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b636d328852daf821269230aae443cef084578b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482522"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299714"
 ---
 # <a name="atlwinmodule70-structure"></a>_ATL_WIN_MODULE70 구조체
 
@@ -53,7 +53,6 @@ struct _ATL_WIN_MODULE70 {
 
 **헤더:** atlbase.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 및 구조체](../../atl/reference/atl-classes.md)
-

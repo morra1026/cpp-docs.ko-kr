@@ -9,18 +9,18 @@ helpviewer_keywords:
 - message classes [MFC], MFC
 - structures, MFC
 ms.assetid: 27566602-7d84-4089-880c-8e90fb04fa56
-ms.openlocfilehash: 0f7251e93672df438e3b994a1fdad0bf0e926693
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ffa57be45ca3b5626d78f495ed5ab5f658b62fb9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572946"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301924"
 ---
 # <a name="structures-styles-callbacks-and-message-maps"></a>구조체, 스타일, 콜백 및 메시지 맵
 
 이 단원에서는 MFC 라이브러리와 MFC 메시지 맵에 사용되는 구조체, 스타일 및 콜백 함수를 설명합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [MFC에서 사용하는 구조체](../../mfc/reference/structures-used-by-mfc.md)<br/>
 다양한 멤버 함수에서 호출되는 구조체에 대한 링크를 제공합니다.
@@ -41,4 +41,3 @@ MFC 라이브러리에 나타나는 콜백 함수에 대한 링크를 제공합�
 
 [MFC 샘플](../../visual-cpp-samples.md)<br/>
 MFC 라이브러리를 사용하는 방법을 보여 주는 샘플에 대한 링크를 제공합니다.
-

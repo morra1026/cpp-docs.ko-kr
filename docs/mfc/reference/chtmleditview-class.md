@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CHtmlEditView [MFC], GetDHtmlDocument
 - CHtmlEditView [MFC], GetStartDocument
 ms.assetid: 166c8ba8-3fb5-4dd7-a9ea-5bca662d00f6
-ms.openlocfilehash: 9df4aa2b2418995f6e012c0baefb6dc8918eaee8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d1b28e2b3e279bc3b2e3ccb116ab24017c07cd2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559785"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301261"
 ---
 # <a name="chtmleditview-class"></a>CHtmlEditView 클래스
 
@@ -47,7 +47,7 @@ class CHtmlEditView : public CHtmlView, public CHtmlEditCtrlBase<CHtmlEditView>
 |[CHtmlEditView::GetDHtmlDocument](#getdhtmldocument)|반환 된 `IHTMLDocument2` 현재 문서에 대 한 인터페이스입니다.|
 |[CHtmlEditView::GetStartDocument](#getstartdocument)|이 보기에 대 한 기본 문서의 이름을 검색합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -142,8 +142,7 @@ BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;
 virtual LPCTSTR GetStartDocument();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [HTMLEdit 샘플](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

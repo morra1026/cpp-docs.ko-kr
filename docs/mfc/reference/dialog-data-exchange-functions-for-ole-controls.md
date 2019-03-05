@@ -18,12 +18,12 @@ helpviewer_keywords:
 - OLE controls [MFC], DDX functions
 - DDX (dialog data exchange), OLE support
 ms.assetid: 7ef1f288-ff65-40d4-aad2-5497bc00bb27
-ms.openlocfilehash: 5d330d8dd423927a3f4abbe6475a8d6219fa9af2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df96d44cefeb15d89653538c3006d109a97a21a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531250"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298258"
 ---
 # <a name="dialog-data-exchange-functions-for-ole-controls"></a>OLE 컨트롤에 대한 대화 상자 데이터 교환 함수
 
@@ -69,7 +69,7 @@ void AFXAPI DDX_OCBool(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -103,7 +103,7 @@ void AFXAPI DDX_OCBoolRO(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -137,7 +137,7 @@ void AFXAPI DDX_OCColor(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -171,7 +171,7 @@ void AFXAPI DDX_OCColorRO(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -211,7 +211,7 @@ void AFXAPI DDX_OCFloat(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -251,7 +251,7 @@ void AFXAPI DDX_OCFloatRO(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -291,7 +291,7 @@ void AFXAPI DDX_OCInt(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -331,7 +331,7 @@ void AFXAPI DDX_OCIntRO(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -365,7 +365,7 @@ void AFXAPI DDX_OCShort(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -399,7 +399,7 @@ void AFXAPI DDX_OCShortRO(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -433,7 +433,7 @@ void AFXAPI DDX_OCText(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -467,7 +467,7 @@ void AFXAPI DDX_OCTextRO(
 *dispid*<br/>
 컨트롤의 속성에 대한 디스패치 ID입니다.
 
-*값*<br/>
+*value*<br/>
 데이터를 교환할 대화 상자, 폼 뷰 또는 컨트롤 뷰 개체의 멤버 변수에 대한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -478,6 +478,6 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
   **헤더** afxdisp.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

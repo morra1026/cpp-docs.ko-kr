@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CDialogBar [MFC], CDialogBar
 - CDialogBar [MFC], Create
 ms.assetid: da2f7a30-970c-44e3-87f0-6094bd002cab
-ms.openlocfilehash: a1b631c093ea6997d89a738b4818aaf66f561836
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ae7c941b527a7cbaa01bf43ef4d41c9a4975dac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604422"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302405"
 ---
 # <a name="cdialogbar-class"></a>CDialogBar 클래스
 
@@ -52,7 +52,7 @@ class CDialogBar : public CControlBar
 > [!NOTE]
 >  현재 릴리스에서 `CDialogBar` 개체는 Windows Forms 컨트롤을 호스팅할 수 없습니다. Visual c + +에서 Windows Forms 컨트롤에 대 한 자세한 내용은 참조 하세요. [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -141,7 +141,7 @@ virtual BOOL Create(
 
 [!code-cpp[NVC_MFCMessageMaps#13](../../mfc/reference/codesnippet/cpp/cdialogbar-class_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CTRLBARS](../../visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>

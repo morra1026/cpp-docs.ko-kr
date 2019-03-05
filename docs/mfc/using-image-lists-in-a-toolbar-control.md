@@ -6,12 +6,12 @@ helpviewer_keywords:
 - image lists [MFC], toolbar controls
 - CToolBarCtrl class [MFC], image lists
 ms.assetid: ccbe8df4-4ed9-4b54-bb93-9a1dcb3b97eb
-ms.openlocfilehash: f8b19cd54a6fb2dca940c354ef23e7d06b35f0b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d027f7834c67ad0ed51d1b7fda5b2704972efe38
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584576"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300793"
 ---
 # <a name="using-image-lists-in-a-toolbar-control"></a>도구 모음 컨트롤에서 이미지 목록 사용
 
@@ -36,8 +36,7 @@ MFC는 기본적으로 다음을 사용 합니다.는 `CToolBar` MFC 응용 프�
 
 이미지 목록 연관 되 면를 `CToolBarCtrl` 개체, 프레임 워크는 적절 한 단추 이미지를 자동으로 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CToolBarCtrl 사용](../mfc/using-ctoolbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

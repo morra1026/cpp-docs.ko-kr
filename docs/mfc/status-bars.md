@@ -5,12 +5,12 @@ helpviewer_keywords:
 - status bars
 - control bars [MFC], status bar
 ms.assetid: fcbc5029-1aab-4e14-adf7-419038a4935e
-ms.openlocfilehash: 67a06f3c447d620999973ef42aff6122d01273f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 399beaf16eed2a3b488abfc14e255759e8dea779
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583237"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300026"
 ---
 # <a name="status-bars"></a>상태 표시줄
 
@@ -18,7 +18,7 @@ ms.locfileid: "50583237"
 
 상태 표시줄을 선택 하 여 프로그램에서 만들 합니다 **초기 상태 표시줄** MFC 응용 프로그램 마법사의 옵션입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [MFC의 상태 표시줄 구현](../mfc/status-bar-implementation-in-mfc.md)
 
@@ -30,6 +30,6 @@ ms.locfileid: "50583237"
 
 - [상태 표시줄에 명령 정보 표시](../mfc/how-to-display-command-information-in-the-status-bar.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)
