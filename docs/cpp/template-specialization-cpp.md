@@ -1,5 +1,5 @@
 ---
-title: 템플릿 특수화 (C++)
+title: 템플릿 특수화(C++)
 ms.date: 11/04/2016
 helpviewer_keywords:
 - partial specialization of class templates
@@ -11,7 +11,7 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 10/31/2018
 ms.locfileid: "50482916"
 ---
-# <a name="template-specialization-c"></a>템플릿 특수화 (C++)
+# <a name="template-specialization-c"></a>템플릿 특수화(C++)
 
 클래스 템플릿은 부분적으로 특수화될 수 있으며 결과 클래스는 여전히 템플릿입니다. 부분 특수화를 사용하면 다음과 같은 상황에서 특정 형식에 대해 템플릿 코드를 부분적으로 사용자 지정할 수 있습니다.
 
