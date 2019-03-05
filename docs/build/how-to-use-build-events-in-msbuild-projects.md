@@ -39,7 +39,7 @@ ms.locfileid: "50570276"
 
 ## <a name="example"></a>예제
 
-다음 예제에서 만든 myproject.vcxproj 파일의 프로젝트 요소 안에 추가할 수 있습니다 [연습: Visual c + + 프로젝트를 만들려면 MSBuild를 사용 하 여](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)입니다. A *빌드 전* 이벤트는 main.cpp 복사본에 있으며 *링크 전* main.obj; 복사본 및 이벤트는 *빌드 후* 이벤트 myproject.exe의 복사본을 만듭니다. 릴리스 구성을 사용 하 여 프로젝트를 빌드할 빌드 이벤트에 실행 됩니다. 프로젝트가 디버그 구성을 사용 하 여 빌드될, 빌드 이벤트는 실행 되지 않습니다.
+다음 예제에서 만든 myproject.vcxproj 파일의 프로젝트 요소 안에 추가할 수 있습니다 [연습: Visual C++ 프로젝트를 만들려면 MSBuild를 사용 하 여](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)입니다. A *빌드 전* 이벤트는 main.cpp 복사본에 있으며 *링크 전* main.obj; 복사본 및 이벤트는 *빌드 후* 이벤트 myproject.exe의 복사본을 만듭니다. 릴리스 구성을 사용 하 여 프로젝트를 빌드할 빌드 이벤트에 실행 됩니다. 프로젝트가 디버그 구성을 사용 하 여 빌드될, 빌드 이벤트는 실행 되지 않습니다.
 
 ```
 <ItemDefinitionGroup>
