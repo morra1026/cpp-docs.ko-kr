@@ -41,7 +41,7 @@ HRESULT 정보입니다.
 
 ## <a name="remarks"></a>설명
 
-기본적으로 [_com_raise_error](../cpp/com-raise-error.md)는 모든 COM 오류를 처리 합니다. **_set_com_error_handler**를 사용하여 사용자 고유의 오류 처리 함수를 호출하도록 변경할 수 있습니다.
+기본적으로 [_com_raise_error](../cpp/com-raise-error.md)는 모든 COM 오류를 처리합니다. **_set_com_error_handler**를 사용하여 사용자 고유의 오류 처리 함수를 호출하도록 변경할 수 있습니다.
 
 대체 함수에는 `_com_raise_error`와 동일한 시그니처가 있어야 합니다.
 
