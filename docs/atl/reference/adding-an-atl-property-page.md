@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - controls [ATL], property pages
 ms.assetid: ddf92b49-42a2-46d2-b6b8-d37baedebeca
-ms.openlocfilehash: ed715cd822aaf0f55b8898efc80b5514938ca8ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c61f666865d3e1db4cdcf2dc6d3e07c2113a79c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668073"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290016"
 ---
 # <a name="adding-an-atl-property-page"></a>ATL 속성 페이지 추가
 
@@ -32,8 +32,8 @@ ms.locfileid: "50668073"
 
 컨트롤의 속성 페이지를 만든 후에 제공 해야 합니다 [PROP_PAGE](property-map-macros.md#prop_page) 컨트롤의 속성 맵에 항목입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[속성 페이지](../../atl/atl-com-property-pages.md)<br/>
+[속성 페이지(Visual C++)](../../atl/atl-com-property-pages.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
-[예: 속성 페이지 구현](../../atl/example-implementing-a-property-page.md)
+[예제: 속성 페이지 구현](../../atl/example-implementing-a-property-page.md)

@@ -1,5 +1,5 @@
 ---
-title: '예외: 버전 3.0의 예외 매크로 변경 사항'
+title: '예외: 버전 3.0의에서 예외 매크로 변경 사항'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - C++ exception handling [MFC], upgrade considerations
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - exceptions [MFC], what's changed
 - THROW_LAST macro [MFC]
 ms.assetid: 3aa20d8c-229e-449c-995c-ab879eac84bc
-ms.openlocfilehash: 54826ee7a7ac129ae69715b45770a0a66596a2a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb51ad91e001f0ed153bf4fdb5aa598ab5ba5042
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607989"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291225"
 ---
-# <a name="exceptions-changes-to-exception-macros-in-version-30"></a>예외: 버전 3.0의 예외 매크로 변경 사항
+# <a name="exceptions-changes-to-exception-macros-in-version-30"></a>예외: 버전 3.0의에서 예외 매크로 변경 사항
 
 고급 항목입니다.
 
@@ -58,9 +58,8 @@ Catch 블록을 포착 하는 동일한 예외 포인터를 생성할 수 없습
 
 사용 하 여 **THROW** catch 블록 하면 포인터가 `e` 삭제 될 외부 catch 사이트에 잘못 된 포인터를 받을 수 있도록 합니다. 사용 하 여 **THROW_LAST** 를 다시 throw 할 `e`합니다.
 
-자세한 내용은 [예외: 예외를 catch 하면 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
+자세한 내용은 참조 하세요. [예외: 예외 catch 및 삭제](../mfc/exceptions-catching-and-deleting-exceptions.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)
-

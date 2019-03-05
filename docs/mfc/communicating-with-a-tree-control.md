@@ -7,12 +7,12 @@ helpviewer_keywords:
 - communications, tree controls
 - tree controls
 ms.assetid: 680ad9ee-b11f-452d-93fa-501ca7d7e069
-ms.openlocfilehash: a5749b76468a7ba30cd48dc3a9b61f2de7ac67b9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 920608724ebb362b91efdcb3eab50b80acd20474
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654186"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289882"
 ---
 # <a name="communicating-with-a-tree-control"></a>트리 컨트롤과 통신
 
@@ -24,8 +24,7 @@ ms.locfileid: "50654186"
 
 - 사용 중인 경우는 `CTreeView` 개체, 함수를 사용 하 여 [CTreeView::GetTreeCtrl](../mfc/reference/ctreeview-class.md#gettreectrl) 트리 컨트롤에 대 한 참조를 가져오려고 합니다. 이 값을 사용 하 여 다른 참조를 초기화 하거나에 대 한 참조의 주소를 할당할 수 있습니다는 `CTreeCtrl` 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

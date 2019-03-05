@@ -82,12 +82,12 @@ helpviewer_keywords:
 - COleServerDoc [MFC], OnSetItemRects
 - COleServerDoc [MFC], OnShowDocument
 ms.assetid: a9cdd96a-e0ac-43bb-9203-2c29237e965c
-ms.openlocfilehash: b9d339b11b3e1fa8452c845cfa8a8f41c5194f8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3069c5f53b37984cbeae8bee1379bb8b0c36ccc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604947"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285284"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc 클래스
 
@@ -168,9 +168,9 @@ class AFX_NOVTABLE COleServerDoc : public COleLinkingDoc
 
 필요한 `COleServerDoc`-각 서버 유형의 응용 프로그램에서 지원할 문서에 대 한 클래스를 파생 합니다. 예를 들어 서버 응용 프로그램에서 워크시트 및 차트를 지 원하는 경우 두 `COleServerDoc`-클래스를 파생 합니다.
 
-서버에 대 한 자세한 내용은 문서 참조 [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
+서버에 대 한 자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -941,9 +941,9 @@ void UpdateAllItems(
 
 이 함수를 호출 합니다 `OnUpdate` 각 항목, 전달 전송을 제외한 문서 항목에 대해 멤버 함수 *pHint*를 *lHint*, 및 *nDrawAspect*합니다. 이러한 매개 변수를 사용 하 여 문서에 대 한 수정에 대 한 항목 정보를 전달. 사용 하 여 정보를 인코딩할 수 있습니다 *lHint* 하거나 정의할 수 있습니다를 `CObject`-수정에 대 한 정보를 저장 하 고 사용 하 여 해당 클래스의 개체를 전달 하는 클래스를 파생 *pHint*합니다. 재정의 된 `OnUpdate` 멤버 함수에 `COleServerItem`-표시 변경 되었는지 여부에 따라 각 항목의 업데이트를 최적화 하는 클래스를 파생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [COleLinkingDoc 클래스](../../mfc/reference/colelinkingdoc-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleDocument 클래스](../../mfc/reference/coledocument-class.md)<br/>

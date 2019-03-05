@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCColorPopupMenu [MFC], GetMenuBar
 - CMFCColorPopupMenu [MFC], SetPropList
 ms.assetid: 0bf9efe8-aed5-4ab7-b23b-eb284b4668be
-ms.openlocfilehash: a3bb6f4d2926f07f61891656613c06e5690c9099
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c2fed4aa239faa96abf692a46a27102ce9820a1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491457"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283399"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu 클래스
 
@@ -65,7 +65,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 에 대 한 자세한 내용은 `CMFCColorBar`를 참조 하세요 [CMFCColorBar 클래스](../../mfc/reference/cmfccolorbar-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -127,10 +127,10 @@ CMFCColorPopupMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*colors*<br/>
 [in] 배열 프레임 워크 팝업 메뉴에 표시 되는 색입니다.
 
-*색*<br/>
+*color*<br/>
 [in] 기본 색을 선택 합니다.
 
 *lpszAutoColor*<br/>
@@ -240,7 +240,7 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 *pWndList*<br/>
 [in] 속성 표 컨트롤 개체에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - apartments in ATL EXE modules
 - CComApartment class
 ms.assetid: dbc177d7-7ee4-45f2-b563-d578a467ca93
-ms.openlocfilehash: 97b2f2f18687805f20999e9513977538390b0e37
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92db42a45a0863f8b43f7c46da9624e424d1e488
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543795"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290107"
 ---
 # <a name="ccomapartment-class"></a>CComApartment 클래스
 
@@ -169,6 +169,6 @@ LONG Unlock();
 
 스레드에서 잠금 수 통계 용도로 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

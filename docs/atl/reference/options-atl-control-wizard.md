@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, options
 ms.assetid: 4607c51a-992d-433e-9281-919c6f519a3d
-ms.openlocfilehash: e607e35b2b3970f329692ba8d2c612d7f6a6591b
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1dd136739162c72d8064deb9b1498794f1985e1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522313"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282983"
 ---
 # <a name="options-atl-control-wizard"></a>옵션, ATL 컨트롤 마법사
 
@@ -19,13 +19,13 @@ ms.locfileid: "51522313"
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
-### <a name="control-type"></a>컨트롤 형식
+### <a name="control-type"></a>컨트롤 종류
 
 만들려는 컨트롤의 종류입니다.
 
-- **표준 컨트롤**:는 ActiveX 컨트롤입니다.
+- **표준 컨트롤**: ActiveX 컨트롤입니다.
 
-- **복합 컨트롤**:는 ActiveX 컨트롤 (대화 상자와 유사)를 포함할 수 있는 다른 ActiveX 컨트롤 또는 Windows 컨트롤입니다. 복합 컨트롤에 다음이 포함 됩니다.
+- **복합 컨트롤**: ActiveX 컨트롤 (대화 상자와 유사)를 포함할 수 있는 다른 ActiveX 컨트롤 또는 Windows 컨트롤입니다. 복합 컨트롤에 다음이 포함 됩니다.
 
   - 복합 컨트롤을 구현 하는 대화 상자에 사용 되는 템플릿.
 
@@ -39,7 +39,7 @@ ms.locfileid: "51522313"
 
     기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다. 싱크 맵을 구현합니다. 자세한 내용은 [DHTML 컨트롤에 대 한 지원을](../../atl/atl-support-for-dhtml-controls.md)합니다.
 
-- **DHTML 컨트롤**:는 ATL DHTML 컨트롤에는 HTML을 사용 하 여 사용자 인터페이스를 지정 합니다. DHTML UI 클래스를 COM 맵을 포함합니다. 기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다.
+- **DHTML 컨트롤**: ATL DHTML 컨트롤에는 HTML을 사용 하 여 사용자 인터페이스를 지정 합니다. DHTML UI 클래스를 COM 맵을 포함합니다. 기본적으로이 제어는 다음과 같이 설정 됩니다. [CComControlBase::m_bWindowOnly](../../atl/reference/ccomcontrolbase-class.md#m_bwindowonly) 를 true로 창 있는 컨트롤 임을 나타냅니다.
 
    자세한 내용은 [DHTML 컨트롤 프로젝트의 요소 식별](../../atl/identifying-the-elements-of-the-dhtml-control-project.md)합니다.
 
@@ -53,9 +53,9 @@ ms.locfileid: "51522313"
 
 - **예**: 집계할 수 있는 컨트롤을 만듭니다.
 
-- **이상**: 집계할 수 없는 컨트롤을 만듭니다.
+- **이상**: 집계 될 수 없는 컨트롤을 만듭니다.
 
-- **만**: 집계를 통해 인스턴스화할 수 있는 컨트롤을 만듭니다.
+- **만**: 집계를 통해만 인스턴스화할 수 있는 컨트롤을 만듭니다.
 
 ### <a name="threading-model"></a>스레딩 모델
 
@@ -81,11 +81,10 @@ ms.locfileid: "51522313"
 
 컨트롤에 대 한 기타 지원 추가 설정합니다.
 
-- **연결점**: 사용자 개체의 클래스에서 파생 하 여 개체에 대 한 연결점을 사용 하도록 설정 [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) 원본 인터페이스를 노출 하도록 허용 합니다.
+- **연결점**: 개체의 클래스에서 파생 하 여 개체에 대 한 연결점을 사용 하도록 설정 [IConnectionPointContainerImpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) 원본 인터페이스를 노출 하도록 허용 합니다.
 
-- **사용이 허가**: 컨트롤에 대 한 지원이 추가 되었습니다 [라이선스](/windows/desktop/com/licensing)합니다. 사용이 허가 된 컨트롤 클라이언트 컴퓨터에 올바른 라이선스가 있는 경우에 호스팅할 수 있습니다.
+- **사용이 허가 된**: 컨트롤에 대 한 지원이 추가 되었습니다 [라이선스](/windows/desktop/com/licensing)합니다. 사용이 허가 된 컨트롤 클라이언트 컴퓨터에 올바른 라이선스가 있는 경우에 호스팅할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 컨트롤 마법사](../../atl/reference/atl-control-wizard.md)
-

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DateTimePicker control [MFC], display styles
 - DateTimePicker control [MFC]
 ms.assetid: 7d577f03-6ca0-4597-9093-50b78f304719
-ms.openlocfilehash: 2e3e980649264a6842abcc9491171e5105dbab17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8da5ecaf473d6d3c35ddc1b95ac856ce8c12f163
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557502"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286888"
 ---
 # <a name="using-custom-format-strings-in-a-date-and-time-picker-control"></a>날짜 및 시간 선택 컨트롤에서 사용자 지정 서식 문자열 사용
 
@@ -31,8 +31,7 @@ ms.locfileid: "50557502"
 
 사용자 지정 형식 문자열 외에도 날짜 및 시간 선택 컨트롤도 지원 [콜백 필드](../mfc/using-callback-fields-in-a-date-and-time-picker-control.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDateTimeCtrl 사용](../mfc/using-cdatetimectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventImpl class
 ms.assetid: a64b5288-35cb-4638-aad6-2d15b1c7cf7b
-ms.openlocfilehash: 75946005acc22874b17ee806cd89ec99095f9c35
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8de620cd6e2433375284f6493b5117c40a356603
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524302"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283204"
 ---
 # <a name="idispeventimpl-class"></a>IDispEventImpl 클래스
 
@@ -105,7 +105,7 @@ ActiveX 이벤트 싱크만 지 원하는 형식의 반환 값 HRESULT 또는 �
 
 자세한 내용은 [IDispEventImpl 지원](../../atl/supporting-idispeventimpl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_IDispEvent`
 
@@ -142,7 +142,7 @@ HRESULT GetFuncInfoFromId(
 *lcid*<br/>
 [in] 로캘 컨텍스트의 함수 id입니다.
 
-*정보*<br/>
+*info*<br/>
 [in] 함수를 호출 하는 방법을 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -203,7 +203,7 @@ VARTYPE GetUserDefinedType(
 
 ### <a name="parameters"></a>매개 변수
 
-*PTI*<br/>
+*pTI*<br/>
 [in] 에 대 한 포인터를 [ITypeInfo](/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) 사용자 정의 형식을 포함 하는 인터페이스입니다.
 
 *hrt*<br/>
@@ -237,7 +237,7 @@ typedef tihclass _tihclass;
 
 기본적으로 클래스는 `CComTypeInfoHolder`합니다. `CComTypeInfoHolder` 클래스에 대 한 형식 정보를 관리합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_ATL_FUNC_INFO 구조체](../../atl/reference/atl-func-info-structure.md)<br/>
 [IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)<br/>

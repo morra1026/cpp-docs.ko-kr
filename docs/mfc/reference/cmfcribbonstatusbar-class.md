@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CMFCRibbonStatusBar [MFC], SetInformation
 - CMFCRibbonStatusBar [MFC], OnDrawInformation
 ms.assetid: 921eb57f-3b40-49fa-a38c-3f2fb6dc2893
-ms.openlocfilehash: 068cff9ea3827e780bec886bc5d4b0e263c02e62
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b927012f241c30b1beec23ff7e0bbc9e8302d8da
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635346"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287645"
 ---
 # <a name="cmfcribbonstatusbar-class"></a>CMFCRibbonStatusBar 클래스
 
@@ -95,7 +95,7 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
 |[CMFCRibbonStatusBar::RemoveElement](#removeelement)|리본 메뉴 상태 표시줄에서 지정 된 명령 ID를 가진 요소를 제거 합니다.|
 |[CMFCRibbonStatusBar::SetInformation](#setinformation)|리본 메뉴 상태 표시줄에 대 한 정보 모드를 사용할지 설정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -116,7 +116,7 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
 [!code-cpp[NVC_MFC_RibbonApp#15](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbar-class_1.cpp)]
 [!code-cpp[NVC_MFC_RibbonApp#16](../../mfc/reference/codesnippet/cpp/cmfcribbonstatusbar-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -271,7 +271,7 @@ BOOL CreateEx(
 
 ##  <a name="findbyid"></a>  CMFCRibbonStatusBar::FindByID
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
@@ -367,7 +367,7 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 
 ##  <a name="getextendedarea"></a>  CMFCRibbonStatusBar::GetExtendedArea
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual BOOL GetExtendedArea(CRect& rect) const;
@@ -383,7 +383,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ##  <a name="getspace"></a>  CMFCRibbonStatusBar::GetSpace
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 int GetSpace() const;
@@ -395,7 +395,7 @@ int GetSpace() const;
 
 ##  <a name="isbottomframe"></a>  CMFCRibbonStatusBar::IsBottomFrame
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 BOOL IsBottomFrame() const;
@@ -407,7 +407,7 @@ BOOL IsBottomFrame() const;
 
 ##  <a name="isextendedelement"></a>  CMFCRibbonStatusBar::IsExtendedElement
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
@@ -465,7 +465,7 @@ virtual void OnDrawInformation(
 
 ##  <a name="recalclayout"></a>  CMFCRibbonStatusBar::RecalcLayout
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual void RecalcLayout();
@@ -517,7 +517,7 @@ void SetInformation(LPCTSTR lpszInfo);
 
 LpszInfo NULL 이면 상태 표시줄을 일반 모드로 되돌립니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

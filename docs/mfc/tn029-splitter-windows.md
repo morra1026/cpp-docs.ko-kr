@@ -7,12 +7,12 @@ helpviewer_keywords:
 - TN029
 - splitter windows [MFC], about splitter windows
 ms.assetid: 2c57ce99-2a3c-4eff-9cea-baccb13af075
-ms.openlocfilehash: 245ad33dd7bc7d3b6365463d4d2ae9538a12bfdc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c27545c6f425eda952e87c80ed1d37de9e1093a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501987"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294995"
 ---
 # <a name="tn029-splitter-windows"></a>TN029: 분할 창
 
@@ -56,13 +56,13 @@ MFC 샘플 프로그램의 대부분 직접 또는 간접적으로 분할자 창
 
 `CSplitterWnd`: 창 분할 컨트롤 및 모든 창 행 또는 열 간에 공유 되는 스크롤 막대를 제공 하는 창입니다. 0부터 시작 숫자를 사용 하 여 행 및 열을 지정 (첫 번째 창에 행이 = 0, 열 = 0).
 
-창:는 응용 프로그램별 창은는 `CSplitterWnd` 관리 합니다. 창에서 파생 된 개체는 일반적으로 [CView 클래스](../mfc/reference/cview-class.md), 모든 수 있지만 [CWnd](../mfc/reference/cwnd-class.md) 적절 한 자식 창 ID를 가진 개체를
+창: 응용 프로그램별 창 하는 `CSplitterWnd` 관리 합니다. 창에서 파생 된 개체는 일반적으로 [CView 클래스](../mfc/reference/cview-class.md), 모든 수 있지만 [CWnd](../mfc/reference/cwnd-class.md) 적절 한 자식 창 ID를 가진 개체를
 
 사용 하는 `CWnd`-파생 개체를 개체의 RUNTIME_CLASS 전달를 `CreateView` 함수를 사용한 경우 처럼를 `CView`-파생 클래스. 클래스는 프레임 워크 런타임 시 동적 생성을 사용 하기 때문에 DECLARE_DYNCREATE 및 IMPLEMENT_DYNCREATE 사용 해야 합니다. 코드를 많이 있지만 `CSplitterWnd` 에 고유 합니다 `CView` 클래스 [CObject::IsKindOf](../mfc/reference/cobject-class.md#iskindof) 이러한 작업을 수행 하기 전에 항상 사용 됩니다.
 
 분할 막대: 컨트롤 창의 행과 열 사이 배치 됩니다. 이 창의 열 또는 행의 크기를 조정 하려면 사용할 수 있습니다.
 
-분할자 상자: 컨트롤을 동적 `CSplitterWnd` 는 창의 새 행 또는 열을 만드는 데 사용할 수 있습니다. 세로 스크롤 막대 또는 가로 스크롤 막대의 왼쪽에 위쪽에 있는 경우
+분할자 상자: 동적 컨트롤을 `CSplitterWnd` 는 창의 새 행 또는 열을 만드는 데 사용할 수 있습니다. 세로 스크롤 막대 또는 가로 스크롤 막대의 왼쪽에 위쪽에 있는 경우
 
 분할자 교집합: 세로 분할 막대와 가로 분할 막대의 교집합입니다. 동시에 행 및 열 창의 크기를 조정 하려면 끌 수 있습니다.
 
@@ -136,8 +136,7 @@ MFC 샘플 프로그램의 대부분 직접 또는 간접적으로 분할자 창
 
    키보드 분할 명령을, 일반적으로 "창 분할"을 실행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

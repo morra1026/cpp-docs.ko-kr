@@ -5,12 +5,12 @@ helpviewer_keywords:
 - tree controls [MFC], item information
 - CTreeCtrl class [MFC], item information
 ms.assetid: 8dcab855-27de-49e9-95d8-f78ba963ea71
-ms.openlocfilehash: f33d9616b04abfe442471705b6d1a42333648a69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0eb8af4fbbb6f59c0dda75ec3705183ce916350
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506095"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288898"
 ---
 # <a name="tree-control-item-information"></a>트리 컨트롤 항목 정보
 
@@ -18,12 +18,11 @@ ms.locfileid: "50506095"
 
 합니다 [GetItemState](../mfc/reference/ctreectrl-class.md#getitemstate)를 [GetItemText](../mfc/reference/ctreectrl-class.md#getitemtext)를 [GetItemData](../mfc/reference/ctreectrl-class.md#getitemdata), 및 [GetItemImage](../mfc/reference/ctreectrl-class.md#getitemimage) 의 개별 특성을 검색 하는 멤버 함수는 항목입니다. 이러한 각 함수에는 해당 집합 함수는 항목의 특성을 설정 합니다.
 
-합니다 [GetNextItem](../mfc/reference/ctreectrl-class.md#getnextitem) 멤버 함수는 현재 항목에 지정된 된 관계를 갖는 트리 컨트롤 항목을 검색 합니다. 이 함수는 항목의 부모, 표시 되는 다음 또는 이전 항목, 첫 번째 자식 항목 및 등을 검색할 수 있습니다. 트리를 탐색 하는 멤버 함수는 또한: [GetRootItem](../mfc/reference/ctreectrl-class.md#getrootitem), [GetFirstVisibleItem](../mfc/reference/ctreectrl-class.md#getfirstvisibleitem)하십시오 [GetNextVisibleItem](../mfc/reference/ctreectrl-class.md#getnextvisibleitem), [GetPrevVisibleItem](../mfc/reference/ctreectrl-class.md#getprevvisibleitem), [GetChildItem](../mfc/reference/ctreectrl-class.md#getchilditem), [GetNextSiblingItem](../mfc/reference/ctreectrl-class.md#getnextsiblingitem)를 [GetPrevSiblingItem](../mfc/reference/ctreectrl-class.md#getprevsiblingitem)를 [GetParentItem](../mfc/reference/ctreectrl-class.md#getparentitem)합니다 [GetSelectedItem](../mfc/reference/ctreectrl-class.md#getselecteditem), 및 [GetDropHilightItem](../mfc/reference/ctreectrl-class.md#getdrophilightitem)합니다.
+합니다 [GetNextItem](../mfc/reference/ctreectrl-class.md#getnextitem) 멤버 함수는 현재 항목에 지정된 된 관계를 갖는 트리 컨트롤 항목을 검색 합니다. 이 함수는 항목의 부모, 표시 되는 다음 또는 이전 항목, 첫 번째 자식 항목 및 등을 검색할 수 있습니다. 멤버 함수는 트리를 트래버스할 수 있습니다. [GetRootItem](../mfc/reference/ctreectrl-class.md#getrootitem), [GetFirstVisibleItem](../mfc/reference/ctreectrl-class.md#getfirstvisibleitem)합니다 [GetNextVisibleItem](../mfc/reference/ctreectrl-class.md#getnextvisibleitem)를 [GetPrevVisibleItem](../mfc/reference/ctreectrl-class.md#getprevvisibleitem)를 [GetChildItem](../mfc/reference/ctreectrl-class.md#getchilditem), [GetNextSiblingItem](../mfc/reference/ctreectrl-class.md#getnextsiblingitem), [GetPrevSiblingItem](../mfc/reference/ctreectrl-class.md#getprevsiblingitem), [GetParentItem](../mfc/reference/ctreectrl-class.md#getparentitem)하십시오 [GetSelectedItem](../mfc/reference/ctreectrl-class.md#getselecteditem), 및 [ GetDropHilightItem](../mfc/reference/ctreectrl-class.md#getdrophilightitem)합니다.
 
 합니다 [GetItemRect](../mfc/reference/ctreectrl-class.md#getitemrect) 멤버 함수는 트리 컨트롤 항목에 대 한 경계 사각형을 검색 합니다. 합니다 [GetCount](../mfc/reference/ctreectrl-class.md#getcount) 하 고 [GetVisibleCount](../mfc/reference/ctreectrl-class.md#getvisiblecount) 멤버 함수 트리 컨트롤의 항목 수 및 현재 표시 된 트리 컨트롤의 창에서 각각 항목 수를 검색 합니다. 호출 하 여 특정 항목을 표시 되는지 확실히 합니다 [EnsureVisible](../mfc/reference/ctreectrl-class.md#ensurevisible) 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

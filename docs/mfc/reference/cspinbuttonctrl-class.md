@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: 8d77175b271d144983aecd1168eb0d66eb46d6ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c973d92550469804a5389b84f53005e4f2c154f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526414"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290432"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl 클래스
 
@@ -88,7 +88,7 @@ class CSpinButtonCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CSpinButtonCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CSpinButtonCtrl 사용 하 여](../../mfc/using-cspinbuttonctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -271,10 +271,10 @@ void GetRange32(
 
 ### <a name="parameters"></a>매개 변수
 
-*낮은*<br/>
+*lower*<br/>
 컨트롤에 대 한 하한값을 수신 하는 정수에 대 한 참조입니다.
 
-*위*<br/>
+*upper*<br/>
 컨트롤에 대 한 상한값을 수신 하는 정수에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -397,7 +397,7 @@ void SetRange32(
 > [!NOTE]
 >  스핀 단추에 대 한 기본 범위에 영 (0)으로 설정 된 최대값 및 최소값 100으로 있습니다. 최 댓 값이 최소값 보다 작은 이기 때문에 위치 줄어듭니다 위쪽 화살표를 클릭 하 고 아래쪽 화살표를 클릭 하 고 증가 합니다. 사용 하 여 `CSpinButtonCtrl::SetRange` 이러한 값을 조정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

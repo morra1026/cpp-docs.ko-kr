@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 11bfa8304b51ed25b934a97109db7da7bb39f49a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebc296c66ee818e5c72207e0ca7b436f386fb68d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590140"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293942"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase 클래스
 
@@ -362,7 +362,7 @@ template <class T> class CHtmlEditCtrlBase
 
 `CHtmlEditCtrlBase` 완결 없습니다. HTML 편집 WebBrowser의 기능을 노출 하는 파생된 클래스에 대 한 기본 클래스로 설계 되었습니다 (참조 [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) 하 고 [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CHtmlEditCtrlBase`
 
@@ -398,7 +398,7 @@ HRESULT AddToGlyphTable(
 태그 형식: 0만을 태그에 대 한 이미지를 의미 합니다. 1만 닫는 태그에 대 한 이미지를 의미 합니다. 2는 모두 태그와 닫는 태그에 대 한 이미지를 의미 합니다. Br 및 주석 등 단일 태그는 0으로 설정 태그 형식을 사용 하 여 추가 되어야 합니다.
 
 *nAlignment*<br/>
-맞춤 (사각형 요소에만 해당):이 매개 변수 맞춤 특성을 사용 하 여 요소에 대 한 이미지를 나타냅니다. 왼쪽 = 0, center = 1, 오른쪽 = 2, 및 undefined = 3. 왼쪽, 오른쪽 또는 가운데 특성 수 명시적으로 설정 해야 요소입니다.
+맞춤 (사각형 요소에만 해당): 이 매개 변수 맞춤 특성을 사용 하 여 요소에 대 한 이미지를 나타냅니다. 왼쪽 = 0, center = 1, 오른쪽 = 2, 및 undefined = 3. 왼쪽, 오른쪽 또는 가운데 특성 수 명시적으로 설정 해야 요소입니다.
 
 *nPosInfo*<br/>
 위치 정보입니다. 어떤 연계 스타일 시트 (CSS) 위치 값 정적 위치에 적용 되는 문자 모양 결정 위치 = 0, 절대 위치 = 1, 상대 위치 = 2, 및 모든 = 3. 이 필드를 사용 하면 하나의 문자 모양 위치 하지 않습니다 하는 경우 태그 및 태그에 위치할 때 앵커 지점을 표시할 다른 문자 모양 지정할 수 있습니다.
@@ -2562,8 +2562,7 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 
 이 메서드는 전송 된 [IDM UNORDERLIST 명령 ID](https://msdn.microsoft.com/library/aa769987.aspx) WebBrowser 컨트롤에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [HTMLEdit 샘플](../../visual-cpp-samples.md)
-

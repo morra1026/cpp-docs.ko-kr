@@ -23,12 +23,12 @@ helpviewer_keywords:
 - typedefs
 - ATL, typedefs
 ms.assetid: 7dd05baa-3efb-4e3b-af23-793c610f4560
-ms.openlocfilehash: c723d76f17ad1c74ab98e7348450cea3f03c4d78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3db32e85ea9cba1e946db6259c00c621650e969
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429317"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290562"
 ---
 # <a name="atl-typedefs"></a>ATL Typedef
 
@@ -175,7 +175,7 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
+S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 사용 하 여 `CComObjectThreadModel` 내의 단일 개체 클래스입니다. 사용 하 여 `CComGlobalsThreadModel` 여러 스레드에서 모듈 리소스를 보호 하려는 경우 또는 프로그램에 전역적으로 사용할 수 있는 개체입니다.
 
@@ -215,7 +215,7 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
+S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 사용 하 여 `CComObjectThreadModel` 내의 단일 개체 클래스입니다. 사용 하 여 `CComGlobalsThreadModel` 중 하나는 개체에 여러 스레드에서 모듈 리소스를 보호 하려는 경우 또는 프로그램에 전역적으로 사용할 수 있습니다.
 
@@ -337,7 +337,7 @@ typedef CUrl* LPURL;
 
 **헤더:** 와 atlutil.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
 [함수](../../atl/reference/atl-functions.md)<br/>

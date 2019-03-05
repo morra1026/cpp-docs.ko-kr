@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CCRTAllocator class
 ms.assetid: 3e1b8cb0-859a-41ab-8e93-6f0b5ceca49d
-ms.openlocfilehash: 5d9ab804478dbf72ec51265a851f62d025ebfba5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c08d594e1c0f4d532f46961e266bf6ced98c51b2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428069"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287364"
 ---
 # <a name="ccrtallocator-class"></a>CCRTAllocator 클래스
 
@@ -33,9 +33,9 @@ class ATL::CCRTAllocator
 
 |이름|설명|
 |----------|-----------------|
-|[Ccrtallocator:: Allocate](#allocate)|(정적) 메모리를 할당 하려면이 메서드를 호출 합니다.|
-|[Ccrtallocator:: Free](#free)|(정적) 메모리를 확보 하려면이 메서드를 호출 합니다.|
-|[Ccrtallocator:: Allocate](#reallocate)|(정적) 메모리를 다시 할당 하려면이 메서드를 호출 합니다.|
+|[CCRTAllocator::Allocate](#allocate)|(정적) 메모리를 할당 하려면이 메서드를 호출 합니다.|
+|[CCRTAllocator::Free](#free)|(정적) 메모리를 확보 하려면이 메서드를 호출 합니다.|
+|[CCRTAllocator::Reallocate](#reallocate)|(정적) 메모리를 다시 할당 하려면이 메서드를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -45,7 +45,7 @@ class ATL::CCRTAllocator
 
 **헤더:** atlcore.h
 
-##  <a name="allocate"></a>  Ccrtallocator:: Allocate
+##  <a name="allocate"></a>  CCRTAllocator::Allocate
 
 메모리를 할당하려면 이 정적 함수를 호출합니다.
 
@@ -66,7 +66,7 @@ static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 메모리를 할당합니다. 참조 [malloc](../../c-runtime-library/reference/malloc.md) 대 한 자세한 내용은 합니다.
 
-##  <a name="free"></a>  Ccrtallocator:: Free
+##  <a name="free"></a>  CCRTAllocator::Free
 
 메모리를 확보 하려면이 정적 함수를 호출 합니다.
 
@@ -83,7 +83,7 @@ static void Free(void* p) throw();
 
 할당된 된 메모리를 해제합니다. 참조 [무료](../../c-runtime-library/reference/free.md) 대 한 자세한 내용은 합니다.
 
-##  <a name="reallocate"></a>  Ccrtallocator:: Allocate
+##  <a name="reallocate"></a>  CCRTAllocator::Reallocate
 
 메모리를 다시 할당하려면 이 정적 함수를 호출합니다.
 
@@ -107,7 +107,7 @@ static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 할당된 메모리의 크기를 조정합니다. 참조 [realloc](../../c-runtime-library/reference/realloc.md) 대 한 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
 [CComAllocator 클래스](../../atl/reference/ccomallocator-class.md)<br/>

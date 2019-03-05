@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - unsupported_os class
 ms.assetid: 6fa57636-341b-4b51-84cc-261d283ff736
-ms.openlocfilehash: a776daf138b5fa2da0426afd38bdf7f67721c199
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8277827aa8713ef57731a3e0da0898829b9fa9fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448271"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289288"
 ---
 # <a name="unsupportedos-class"></a>unsupported_os 클래스
 
@@ -31,9 +31,10 @@ class unsupported_os : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[unsupported_os](#ctor)|오버로드됨. `unsupported_os` 개체를 생성합니다.|
+|[unsupported_os](#ctor)|오버로드됨. 
+  `unsupported_os` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,7 +48,8 @@ class unsupported_os : public std::exception;
 
 ##  <a name="ctor"></a> unsupported_os
 
-`unsupported_os` 개체를 생성합니다.
+
+  `unsupported_os` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP unsupported_os(_In_z_ const char* _Message) throw();
@@ -57,9 +59,9 @@ unsupported_os() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

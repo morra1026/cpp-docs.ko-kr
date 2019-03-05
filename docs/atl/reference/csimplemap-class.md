@@ -23,12 +23,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMap class
 ms.assetid: 61b06eb4-ae73-44b0-a305-0afb5a33e8b1
-ms.openlocfilehash: 1c1aa34d54f5754feee238fdf12fd6e55b8c32c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: afd9f017bb0fb9a95a0ed4fd135dcbd5ea4ddba2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666258"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284101"
 ---
 # <a name="csimplemap-class"></a>CSimpleMap 클래스
 
@@ -66,7 +66,7 @@ Key 요소 형식입니다.
 |이름|설명|
 |----------|-----------------|
 |[CSimpleMap::CSimpleMap](#csimplemap)|생성자입니다.|
-|[CSimpleMap:: ~ CSimpleMap](#dtor)|소멸자입니다.|
+|[CSimpleMap::~CSimpleMap](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -156,7 +156,7 @@ CSimpleMap();
 
 데이터 멤버를 초기화합니다.
 
-##  <a name="dtor"></a>  CSimpleMap:: ~ CSimpleMap
+##  <a name="dtor"></a>  CSimpleMap::~CSimpleMap
 
 소멸자입니다.
 
@@ -386,6 +386,6 @@ BOOL SetAtIndex(
 
 키와 가리키는 값을 업데이트 *nIndex*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

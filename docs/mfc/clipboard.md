@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Clipboard, programming
 - transferring data
 ms.assetid: a71b2824-1f14-4914-8816-54578d73ad4e
-ms.openlocfilehash: b17268c78fb5e82cbe75cbe0647b931d06934ef1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4fcf53f1d861a85d830d0fb4244e8af9c11af163
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440796"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293292"
 ---
 # <a name="clipboard"></a>클립보드
 
@@ -27,7 +27,7 @@ ms.locfileid: "50440796"
 
 클립보드는 전체 Windows 세션에서 공유 하는 핸들 또는 클래스 자체에 없기 때문에 시스템 서비스입니다. 클래스의 멤버 함수를 통해 클립보드를 관리할 [CWnd](../mfc/reference/cwnd-class.md)합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [각 클립보드 메커니즘을 사용 하는 경우](../mfc/clipboard-when-to-use-each-clipboard-mechanism.md)
 
@@ -43,6 +43,6 @@ ms.locfileid: "50440796"
 
 - [끌어서 놓기 (OLE)를 구현합니다.](../mfc/drag-and-drop-ole.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

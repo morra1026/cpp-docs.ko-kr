@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - context_unblock_unbalanced class
 ms.assetid: a76066c8-19dd-44fa-959a-6941ec1b0d2d
-ms.openlocfilehash: cc2ef970fa354da4abb7351cb4f1188451887552
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4f385cde2a27665afa5eb9869eb52bc42c70111
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525929"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283997"
 ---
 # <a name="contextunblockunbalanced-class"></a>context_unblock_unbalanced 클래스
 
@@ -37,7 +37,7 @@ class context_unblock_unbalanced : public std::exception;
 
 에 대 한 호출을 `Block` 및 `Unblock` 의 메서드를 `Context` 개체 항상 올바르게을 이루어야 합니다. 동시성 런타임에서 작업이 어떤 순서로 든 발생할 수 있습니다. 예를 들어 `Block` 호출 다음에 `Unblock` 호출이 오거나 그 반대가 될 수 있습니다. 예를 들어,를 두 번 호출 하는 경우이 예외가 throw 됩니다 합니다 `Unblock` 메서드는 행에 수행 되었습니다를 `Context` 차단 하지는 개체입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -61,9 +61,9 @@ context_unblock_unbalanced() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

@@ -42,12 +42,12 @@ helpviewer_keywords:
 - EVENT_STOCK_READYSTATECHANGE event
 - EVENT_STOCK_KEYPRESS event
 ms.assetid: 3eeadc67-4b3d-4444-8caa-53054073988a
-ms.openlocfilehash: d224bfada94878fcec69b0675bd0faa03575ed27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f6f3c63f0436296791df428c704bce96eca3ec0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540012"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291121"
 ---
 # <a name="mfc-activex-controls-adding-stock-events-to-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에 스톡 이벤트 추가
 
@@ -61,16 +61,16 @@ ms.locfileid: "50540012"
 
 |이벤트(event)|함수 실행|설명|
 |-----------|---------------------|--------------|
-|클릭|**void FireClick)**|마우스를 캡처하면 컨트롤에서 모든 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 메시지를 수신 하 고 단추를 컨트롤 위에 놓을 합니다. MouseDown 재고 및 MouseUp 이벤트를이 이벤트 전에 발생합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_CLICK)**|
-|매크로나|**void FireDblClick)**|클릭과 유사 하지만 때 발생 하는 **BUTTONDBLCLK** 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_DBLCLICK)**|
-|Error|**FireError void (SCODE***scode* **, LPCSTR** `lpszDescription` **, UINT**`nHelpID`**= 0)**|메서드 호출 또는 속성 액세스의 범위 외부에서 ActiveX 컨트롤 내에 오류가 있을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_ERROREVENT)**|
-|KeyDown|**FireKeyDown void (짧은** `nChar` **짧은**`nShiftState`**)**|때 발생 하는 `WM_SYSKEYDOWN` 또는 `WM_KEYDOWN` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYDOWN)**|
-|키 누름|**FireKeyPress void (짧은** <strong>\*</strong> `pnChar` **)**|때 발생 하는 `WM_CHAR` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYPRESS)**|
-|KeyUp|**FireKeyUp void (짧은** `nChar` **짧은**`nShiftState`**)**|때 발생 하는 `WM_SYSKEYUP` 또는 `WM_KEYUP` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYUP)**|
-|MouseDown|**FireMouseDown void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)**|있는 경우 발생 **BUTTONDOWN** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 마우스는이 이벤트가 발생 하기 직전에 캡처됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEDOWN)**|
-|MouseMove|**FireMouseMove void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)**|WM_MOUSEMOVE 메시지를 받을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEMOVE)**|
-|MouseUp|**FireMouseUp void (짧은** `nButton` **짧은** `nShiftState` **, float***x* **, float** *y***)**|있는 경우 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 이 이벤트가 발생 하기 전에 마우스 캡처가 해제 됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEUP)**|
-|ReadyStateChange|**void FireReadyStateChange)**|컨트롤이 받은 데이터의 양으로 인해 다음 준비 상태로 전환 하는 경우 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_READYSTATECHANGE)**|
+|클릭 대상|**void FireClick( )**|마우스를 캡처하면 컨트롤에서 모든 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 메시지를 수신 하 고 단추를 컨트롤 위에 놓을 합니다. MouseDown 재고 및 MouseUp 이벤트를이 이벤트 전에 발생합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_CLICK( )**|
+|DblClick|**void FireDblClick( )**|클릭과 유사 하지만 때 발생 하는 **BUTTONDBLCLK** 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_DBLCLICK( )**|
+|Error|**void FireError( SCODE**  *scode* **, LPCSTR**  `lpszDescription` **, UINT**  `nHelpID`  **= 0 )**|메서드 호출 또는 속성 액세스의 범위 외부에서 ActiveX 컨트롤 내에 오류가 있을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_ERROREVENT( )**|
+|KeyDown|**void FireKeyDown( short**  `nChar` **, short**  `nShiftState`  **)**|때 발생 하는 `WM_SYSKEYDOWN` 또는 `WM_KEYDOWN` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYDOWN( )**|
+|키 누름|**void FireKeyPress( short** <strong>\*</strong>  `pnChar`  **)**|때 발생 하는 `WM_CHAR` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYPRESS( )**|
+|KeyUp|**void FireKeyUp( short**  `nChar` **, short**  `nShiftState`  **)**|때 발생 하는 `WM_SYSKEYUP` 또는 `WM_KEYUP` 메시지를 수신 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_KEYUP( )**|
+|MouseDown|**void FireMouseDown( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|있는 경우 발생 **BUTTONDOWN** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 마우스는이 이벤트가 발생 하기 직전에 캡처됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEDOWN( )**|
+|MouseMove|**void FireMouseMove( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|WM_MOUSEMOVE 메시지를 받을 때 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEMOVE( )**|
+|MouseUp|**void FireMouseUp( short**  `nButton` **, short**  `nShiftState` **, float**  *x* **, float**  *y*  **)**|있는 경우 발생 **BUTTONUP** (왼쪽, 가운데 또는 오른쪽) 수신 합니다. 이 이벤트가 발생 하기 전에 마우스 캡처가 해제 됩니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_MOUSEUP( )**|
+|ReadyStateChange|**void FireReadyStateChange( )**|컨트롤이 받은 데이터의 양으로 인해 다음 준비 상태로 전환 하는 경우 발생 합니다.<br /><br /> 이벤트 맵 항목: **EVENT_STOCK_READYSTATECHANGE( )**|
 
 ##  <a name="_core_adding_a_stock_event_using_classwizard"></a> 사용 하 여 스톡 이벤트 추가 이벤트 추가 마법사
 
@@ -104,7 +104,7 @@ ms.locfileid: "50540012"
 
 이 줄은 표준 디스패치 ID를 사용 하 여 KeyPress 이벤트를 연결 하 고 KeyPress 이벤트를 예상할 컨테이너를 허용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 메서드](../mfc/mfc-activex-controls-methods.md)<br/>

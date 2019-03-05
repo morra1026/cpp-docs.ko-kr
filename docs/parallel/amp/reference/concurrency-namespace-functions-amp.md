@@ -13,12 +13,12 @@ f1_keywords:
 - amp/Concurrency::global_memory_fence
 - amp/Concurrency::tile_static_memory_fence
 ms.assetid: 2bef0985-cb90-4ece-90b9-66529aec73c9
-ms.openlocfilehash: 43be1fc3a5df52f6edcc05b501b1463bd5da7e6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7baae51480c273ca023856253af7963ac83d7c92
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481798"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284842"
 ---
 # <a name="concurrency-namespace-functions-amp"></a>Concurrency 네임 스페이스 함수 (AMP)
 
@@ -79,7 +79,7 @@ inline bool atomic_compare_exchange(
 *_Expected_value*<br/>
 비교할 두 번째 값 읽어올 위치입니다.
 
-*값*<br/>
+*value*<br/>
 에 지정 된 메모리 위치에 저장 되는 값 `_Dest` 하는 경우 `_Dest` 값과 같음 `_Expected_value`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -112,7 +112,7 @@ inline float atomic_exchange(
 *_Dest*<br/>
 대상 위치에 대한 포인터입니다.
 
-*값*<br/>
+*value*<br/>
 새 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -140,7 +140,7 @@ inline unsigned int atomic_fetch_add(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*값*<br/>
+*value*<br/>
 추가할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -168,7 +168,7 @@ inline unsigned int atomic_fetch_and(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*값*<br/>
+*value*<br/>
 비트 AND 계산에 사용할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -235,7 +235,7 @@ inline unsigned int atomic_fetch_max(
 *_Dest*<br/>
 비교할 값 중 하나가 있는 위치를 읽고 저장 되는 두 값의 최대값입니다.
 
-*값*<br/>
+*value*<br/>
 지정 된 위치의 값을 비교할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -263,7 +263,7 @@ inline unsigned int atomic_fetch_min(
 *_Dest*<br/>
 비교할 값 중 하나가 있는 위치를 읽고 저장 되는 두 값의 최소값입니다.
 
-*값*<br/>
+*value*<br/>
 지정 된 위치의 값을 비교할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -291,7 +291,7 @@ inline unsigned int atomic_fetch_or(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*값*<br/>
+*value*<br/>
 비트 OR 계산에 사용할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -319,7 +319,7 @@ inline unsigned int atomic_fetch_sub(
 *_Dest*<br/>
 대상 위치에 대한 포인터입니다.
 
-*값*<br/>
+*value*<br/>
 뺄 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -347,7 +347,7 @@ inline unsigned int atomic_fetch_xor(
 *_Dest*<br/>
 메모리 위치에 대한 포인터입니다.
 
-*값*<br/>
+*value*<br/>
 XOR 계산에 사용할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -546,7 +546,7 @@ concurrency::completion_future copy_async(
 
 ##  <a name="direct3d_abort"></a>  direct3d_abort
 
-`restrict(amp)` 제한 절이 있는 함수의 실행을 중단합니다. AMP 런타임이 호출을 감지하면 "Reference Rasterizer: Shader abort instruction hit" 오류 메시지로 [runtime_exception](runtime-exception-class.md) 예외를 발생시킵니다.
+`restrict(amp)` 제한 절이 있는 함수의 실행을 중단합니다. AMP 런타임이 호출을 감지 하는 경우 발생 한 [runtime_exception](runtime-exception-class.md) 오류 메시지를 사용 하 여 예외 "Reference Rasterizer: Shader abort instruction hit "입니다.
 
 ```
 void direct3d_abort() restrict(amp);
@@ -674,6 +674,6 @@ inline void tile_static_memory_fence(const tile_barrier& _Barrier) restrict(amp)
 *_Barrier*<br/>
 Tile_barrier 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

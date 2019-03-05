@@ -13,16 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - single_link_registry class
 ms.assetid: 09540a4e-c34e-4ff9-af49-21b8612b6ab3
-ms.openlocfilehash: 4f706b4551d71c77e136e4d65d2d6a3183293d8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 20032f393964c8919d2c1a49ec8545400cd9e392
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454498"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290133"
 ---
 # <a name="singlelinkregistry-class"></a>single_link_registry 클래스
 
-`single_link_registry` 개체는 단일 소스 또는 대상 블록만 관리하는 `network_link_registry`입니다.
+
+  `single_link_registry` 개체는 단일 소스 또는 대상 블록만 관리하는 `network_link_registry`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -51,11 +52,11 @@ class single_link_registry : public network_link_registry<_Block>;
 |----------|-----------------|
 |[add](#add)|에 대 한 링크를 추가 합니다 `single_link_registry` 개체입니다. (재정의 [network_link_registry:: add](network-link-registry-class.md#add).)|
 |[begin](#begin)|첫 번째 요소에 반복기를 반환 합니다 `single_link_registry` 개체입니다. (재정의 [network_link_registry:: begin](network-link-registry-class.md#begin).)|
-|[포함](#contains)|검색 된 `single_link_registry` 지정된 된 블록에 대 한 개체입니다. (재정의 [network_link_registry:: contains](network-link-registry-class.md#contains).)|
+|[contains](#contains)|검색 된 `single_link_registry` 지정된 된 블록에 대 한 개체입니다. (재정의 [network_link_registry:: contains](network-link-registry-class.md#contains).)|
 |[count](#count)|에 있는 항목의 개수는 `single_link_registry` 개체입니다. (재정의 [network_link_registry:: count](network-link-registry-class.md#count).)|
 |[remove](#remove)|링크를 제거 합니다 `single_link_registry` 개체입니다. (재정의 [network_link_registry:: remove](network-link-registry-class.md#remove).)|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [network_link_registry](network-link-registry-class.md)
 
@@ -77,7 +78,7 @@ virtual void add(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 추가할 블록에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -110,7 +111,7 @@ virtual bool contains(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 검색 하는 블록에 대 한 포인터를 `single_link_registry` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -139,7 +140,7 @@ virtual bool remove(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 제거 될 경우 블록에 대 한 포인터를 찾을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -166,7 +167,7 @@ virtual ~single_link_registry();
 
 메서드에서 throw를 [invalid_operation](invalid-operation-class.md) 링크를 제거 하기 전에 메서드를 호출 하는 예외입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [multi_link_registry 클래스](multi-link-registry-class.md)

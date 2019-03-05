@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CD2DTextLayout [MFC], SetLocaleName
 - CD2DTextLayout [MFC], m_pTextLayout
 ms.assetid: 724bd13c-f2ef-4e55-a775-8cb04b7b7908
-ms.openlocfilehash: 378c96622144a4acac27785cef844f0c1d21b98b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aa51b050543b6a027e354afa18b5e9c002c6bca1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630947"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283971"
 ---
 # <a name="cd2dtextlayout-class"></a>CD2DTextLayout 클래스
 
@@ -52,7 +52,7 @@ class CD2DTextLayout : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DTextLayout::CD2DTextLayout](#cd2dtextlayout)|CD2DTextLayout 개체를 생성합니다.|
-|[CD2DTextLayout:: ~ CD2DTextLayout](#cd2dtextlayout__~cd2dtextlayout)|소멸자입니다. D2D 텍스트 레이아웃 개체를 소멸 될 때 호출 됩니다.|
+|[CD2DTextLayout::~CD2DTextLayout](#cd2dtextlayout__~cd2dtextlayout)|소멸자입니다. D2D 텍스트 레이아웃 개체를 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -72,7 +72,7 @@ class CD2DTextLayout : public CD2DResource;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DTextLayout::operator IDWriteTextLayout *](#operator_idwritetextlayout_star)|반환 IDWriteTextLayout 인터페이스|
+|[CD2DTextLayout::operator IDWriteTextLayout*](#operator_idwritetextlayout_star)|반환 IDWriteTextLayout 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -80,7 +80,7 @@ class CD2DTextLayout : public CD2DResource;
 |----------|-----------------|
 |[CD2DTextLayout::m_pTextLayout](#m_ptextlayout)|IDWriteTextLayout 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -92,7 +92,7 @@ class CD2DTextLayout : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dtextlayout"></a>  CD2DTextLayout:: ~ CD2DTextLayout
+##  <a name="_dtorcd2dtextlayout"></a>  CD2DTextLayout::~CD2DTextLayout
 
 소멸자입니다. D2D 텍스트 레이아웃 개체를 소멸 될 때 호출 됩니다.
 
@@ -121,7 +121,7 @@ CD2DTextLayout(
 *strText*<br/>
 만든 새 CD2DTextLayout 개체를 만들 문자열을 포함 하는 CString 개체입니다.
 
-*TextFormat*<br/>
+*textFormat*<br/>
 문자열에 적용할 형식을 포함 하는 CString 개체입니다.
 
 *sizeMax*<br/>
@@ -174,10 +174,10 @@ CString GetFontFamilyName(
 
 ### <a name="parameters"></a>매개 변수
 
-*현재 위치*<br/>
+*currentPosition*<br/>
 검사할 텍스트의 위치입니다.
 
-*TextRange*<br/>
+*textRange*<br/>
 현재 위치에 지정 된 위치에서 텍스트와 같은 텍스트 범위 서식 지정. 이 글꼴 패밀리 이름으로 제한 되지 않음, 지정 된 위치와 동일한 서식을 것을 의미 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -196,10 +196,10 @@ CString GetLocaleName(
 
 ### <a name="parameters"></a>매개 변수
 
-*현재 위치*<br/>
+*currentPosition*<br/>
 위치를 검사 하는 텍스트입니다.
 
-*TextRange*<br/>
+*textRange*<br/>
 현재 위치에 지정 된 위치에서 텍스트와 같은 텍스트 범위 서식 지정. 이 실행 로캘 이름으로 제한 되지 않음, 지정 된 위치와 정확한 서식이 있는 것을 의미 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -226,7 +226,7 @@ IDWriteTextLayout 포인터입니다.
 IDWriteTextLayout* m_pTextLayout;
 ```
 
-##  <a name="operator_idwritetextlayout_star"></a>  CD2DTextLayout::operator IDWriteTextLayout *
+##  <a name="operator_idwritetextlayout_star"></a>  CD2DTextLayout::operator IDWriteTextLayout*
 
 반환 IDWriteTextLayout 인터페이스
 
@@ -265,7 +265,7 @@ BOOL SetFontFamilyName(
 *pwzFontFamilyName*<br/>
 TextRange에 지정한 범위 내에서 전체 텍스트 문자열에 적용 되는 글꼴 패밀리 이름
 
-*TextRange*<br/>
+*textRange*<br/>
 이 변경 적용 되는 텍스트 범위
 
 ### <a name="return-value"></a>반환 값
@@ -287,13 +287,13 @@ BOOL SetLocaleName(
 *pwzLocaleName*<br/>
 Null로 끝나는 로캘 이름 문자열을
 
-*TextRange*<br/>
+*textRange*<br/>
 이 변경 적용 되는 텍스트 범위
 
 ### <a name="return-value"></a>반환 값
 
 메서드가 성공 하면 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

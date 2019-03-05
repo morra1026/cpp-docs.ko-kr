@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CDragListBox [MFC], Dropped
 - CDragListBox [MFC], ItemFromPt
 ms.assetid: fee20b42-60ae-4aa9-83f9-5a3d9b96e33b
-ms.openlocfilehash: 739bf08139c56992af883b5cefa5c235bf08f551
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6574ffaf8c4b8c0414c00ef2f4a31f6ed74ebe9e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623654"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294943"
 ---
 # <a name="cdraglistbox-class"></a>CDragListBox 클래스
 
@@ -66,7 +66,7 @@ class CDragListBox : public CListBox
 
 컨트롤을 멤버 변수에 할당 하는 방법은 참조 하세요 [대화 상자 컨트롤에 대 한 멤버 변수 정의 대 한 바로 가기](../../windows/defining-member-variables-for-dialog-controls.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -92,7 +92,7 @@ virtual BOOL BeginDrag(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 끌고 있는 항목의 좌표를 포함 하는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -113,7 +113,7 @@ virtual void CancelDrag(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 끌고 있는 항목의 좌표를 포함 하는 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -138,7 +138,7 @@ virtual UINT Dragging(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) x 및 y를 포함 하는 개체는 커서의 좌표가 화면.
 
 ### <a name="return-value"></a>반환 값
@@ -187,7 +187,7 @@ virtual void Dropped(
 *nSrcIndex*<br/>
 삭제 된 문자열의 0부터 시작 인덱스를 지정합니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 놓기 사이트의 좌표가 포함 된 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -206,7 +206,7 @@ int ItemFromPt(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 목록 상자 내에서 한 점의 좌표를 포함 하는 개체입니다.
 
 *bAutoScroll*<br/>
@@ -216,7 +216,7 @@ A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 목록 상자 내에�
 
 끌어 목록 상자 항목의 0부터 시작 인덱스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 TSTCON](../../visual-cpp-samples.md)<br/>
 [CListBox 클래스](../../mfc/reference/clistbox-class.md)<br/>

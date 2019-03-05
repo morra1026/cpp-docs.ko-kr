@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - control containment classes
 ms.assetid: e0812aee-c078-4ced-b967-247976552b9a
-ms.openlocfilehash: 196171e27e9dd37efc80ca4045e9e44a65813d04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b08bf2ea4c0098a723e5864a59ed22855207208b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535254"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290120"
 ---
 # <a name="control-containment-classes"></a>컨트롤 포함 클래스
 
@@ -30,7 +30,6 @@ ms.locfileid: "50535254"
 
 [ATL 컨트롤 포함 FAQ](../atl/atl-control-containment-faq.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)
-

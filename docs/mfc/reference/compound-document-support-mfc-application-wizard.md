@@ -1,17 +1,17 @@
 ---
-title: MFC 응용 프로그램 마법사, 복합 문서 지원
+title: MFC 애플리케이션 마법사, 복합 문서 지원
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.compdoc
 ms.assetid: 42e1af83-12c4-438d-92eb-13835afdb148
-ms.openlocfilehash: 97443d4846141f4402e18bb19893fcac9b4f46da
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: b2ff4f312132b690223f124fd8790d0e2c172b7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524055"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289678"
 ---
-# <a name="compound-document-support-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 복합 문서 지원
+# <a name="compound-document-support-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 복합 문서 지원
 
 MFC 응용 프로그램 마법사의이 페이지에서 응용 프로그램에서 제공 하는 활성 및 복합 문서 지원 수준을 나타냅니다. 응용 프로그램에 복합 문서 및 문서 템플릿을 문서/뷰 아키텍처를 지원 해야 합니다.
 
@@ -21,7 +21,7 @@ MFC 응용 프로그램 마법사의이 페이지에서 응용 프로그램에�
 
   응용 프로그램 컨테이너 지원, server 지원, 또는 둘 다 제공 하는지 여부를 결정 합니다. 이 영역에 대 한 자세한 내용은 다음을 참조 하세요.
 
-  - [컨테이너: 컨테이너 구현](../../mfc/containers-implementing-a-container.md)
+  - [컨테이너: 컨테이너를 구현합니다.](../../mfc/containers-implementing-a-container.md)
 
   - [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)
 
@@ -43,7 +43,6 @@ MFC 응용 프로그램 마법사의이 페이지에서 응용 프로그램에�
   |**액티브 문서 컨테이너**|해당 프레임 내에서 활성 문서를 포함 하는 응용 프로그램 수를 나타냅니다. 예를 들어, Internet Explorer 문서 또는 Microsoft Word 파일 또는 Excel 스프레드시트와 같은 Office 문서 액티브 문서 포함 될 수 있습니다. 참조 [액티브 문서 포함](../../mfc/active-document-containment.md) 자세한 내용은 합니다.|
   |**복합 파일에 대 한 지원**|복합 파일 형식을 사용 하 여 컨테이너 응용 프로그램의 문서를 serialize 하지 않습니다. 이 옵션에는 메모리에 개체를 포함 하는 전체 파일이 로드가 되도록 합니다. 개별 개체에 증분 저장 제공 되지 않습니다. 한 개체가 변경 되 고 이후에 저장, 파일에서 개체를 모두 저장 됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)
-

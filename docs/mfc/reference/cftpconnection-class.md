@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CFtpConnection [MFC], Rename
 - CFtpConnection [MFC], SetCurrentDirectory
 ms.assetid: 5e3a0501-8893-49cf-a3d5-0628d8d6b936
-ms.openlocfilehash: 71e5c8629a1aa1c489cc51224f9d008c4cdd3397
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12ef4de16279c5c2033a95df5928a6dfb7a2a652
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504249"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295125"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection 클래스
 
@@ -61,15 +61,15 @@ class CFtpConnection : public CInternetConnection
 |----------|-----------------|
 |[CFtpConnection::Command](#command)|FTP 서버에 직접 명령을 보냅니다.|
 |[CFtpConnection::CreateDirectory](#createdirectory)|서버의 디렉터리를 만듭니다.|
-|[Cftpconnection:: Getcurrentdirectory](#getcurrentdirectory)|이 연결에 대 한 현재 디렉터리를 가져옵니다.|
-|[Cftpconnection:: Getcurrentdirectoryasurl](#getcurrentdirectoryasurl)|URL로이 연결에 대 한 현재 디렉터리를 가져옵니다.|
+|[CFtpConnection::GetCurrentDirectory](#getcurrentdirectory)|이 연결에 대 한 현재 디렉터리를 가져옵니다.|
+|[CFtpConnection::GetCurrentDirectoryAsURL](#getcurrentdirectoryasurl)|URL로이 연결에 대 한 현재 디렉터리를 가져옵니다.|
 |[CFtpConnection::GetFile](#getfile)|연결된 된 서버에서 파일을 가져옵니다.|
 |[CFtpConnection::OpenFile](#openfile)|연결된 된 서버에서 파일을 엽니다.|
 |[CFtpConnection::PutFile](#putfile)|서버에서 파일을 배치합니다.|
 |[CFtpConnection::Remove](#remove)|서버에서 파일을 제거 합니다.|
 |[CFtpConnection::RemoveDirectory](#removedirectory)|서버에서 지정된 된 디렉터리를 제거합니다.|
 |[CFtpConnection::Rename](#rename)|서버에서 파일을 이름을 바꿉니다.|
-|[:: Setcurrentdirectory](#setcurrentdirectory)|현재 FTP 디렉터리를 설정합니다.|
+|[CFtpConnection::SetCurrentDirectory](#setcurrentdirectory)|현재 FTP 디렉터리를 설정합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -83,7 +83,7 @@ FTP 인터넷 서버와 통신 하려면 먼저 만들어야의 인스턴스이�
 
   예제를 참조 합니다 [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) 클래스 개요입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -216,7 +216,7 @@ BOOL CreateDirectory(LPCTSTR pstrDirName);
 
 `pstrDirName` 수 매개 변수 중 하나를 부분적으로 또는 정규화 된 파일 이름을 현재 디렉터리에 상대적입니다. 백슬래시 (\\) 또는 이름 중 하나에 대 한 디렉터리 구분 기호로 슬래시 (/)를 사용할 수 있습니다. `CreateDirectory` 사용 하기 전에 디렉터리 이름을 구분 적합 한 문자로 변환 합니다.
 
-##  <a name="getcurrentdirectory"></a>  Cftpconnection:: Getcurrentdirectory
+##  <a name="getcurrentdirectory"></a>  CFtpConnection::GetCurrentDirectory
 
 현재 디렉터리의 이름을 가져오려면이 함수를 호출 합니다.
 
@@ -254,7 +254,7 @@ BOOL GetCurrentDirectory(
 
 매개 변수 *pstrDirName* 하거나 *strDirName* 정규화 된 또는 현재 디렉터리를 기준으로 하거나 부분적으로 정규화 된 파일 이름이 될 수 있습니다. 백슬래시 (\\) 또는 이름 중 하나에 대 한 디렉터리 구분 기호로 슬래시 (/)를 사용할 수 있습니다. `GetCurrentDirectory` 사용 하기 전에 디렉터리 이름을 구분 적합 한 문자로 변환 합니다.
 
-##  <a name="getcurrentdirectoryasurl"></a>  Cftpconnection:: Getcurrentdirectoryasurl
+##  <a name="getcurrentdirectoryasurl"></a>  CFtpConnection::GetCurrentDirectoryAsURL
 
 URL 형식으로 현재 디렉터리의 이름을 가져오려면이 함수를 호출 합니다.
 
@@ -354,7 +354,7 @@ FTP 서버에서 검색할 파일의 이름을 포함 하는 null로 끝나는 �
 
 둘 다 *pstrRemoteFile* 하 고 *pstrLocalFile* 정규화 된 또는 현재 디렉터리를 기준으로 하거나 부분적으로 정규화 된 파일 이름이 될 수 있습니다. 백슬래시 (\\) 또는 이름 중 하나에 대 한 디렉터리 구분 기호로 슬래시 (/)를 사용할 수 있습니다. `GetFile` 사용 하기 전에 디렉터리 이름을 구분 적합 한 문자로 변환 합니다.
 
-재정의 된 *dwContext* 기본적으로 선택한 값으로 컨텍스트 식별자를 설정 합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+재정의 된 *dwContext* 기본적으로 선택한 값으로 컨텍스트 식별자를 설정 합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="openfile"></a>  CFtpConnection::OpenFile
 
@@ -404,7 +404,7 @@ CInternetFile* OpenFile(
 
 합니다 *pstrFileName* 매개 변수 중 하나는 부분적으로 정규화 된 파일 이름을 현재 디렉터리에 상대적인 또는 정규화 된 수 있습니다. 백슬래시 (\\) 또는 이름 중 하나에 대 한 디렉터리 구분 기호로 슬래시 (/)를 사용할 수 있습니다. `OpenFile` 사용 하기 전에 디렉터리 이름을 구분 적합 한 문자로 변환 합니다.
 
-재정의 된 *dwContext* 기본적으로 선택한 값으로 컨텍스트 식별자를 설정 합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+재정의 된 *dwContext* 기본적으로 선택한 값으로 컨텍스트 식별자를 설정 합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="putfile"></a>  CFtpConnection::PutFile
 
@@ -440,7 +440,8 @@ FTP 서버에서 만들 파일의 이름을 포함 하는 문자열에 대 한 �
 
 `PutFile` 모든 FTP 서버의 파일을 저장 하는 연관 된 작업을 처리 하는 높은 수준의 루틴입니다. 만 데이터를 보내거나 파일 전송이 좀 더 자세히 제어 해야 하는 응용 프로그램을 사용할지 [OpenFile](#openfile) 하 고 [CInternetFile::Write](../../mfc/reference/cinternetfile-class.md#write)합니다.
 
-`dwContext` 기본값을 재정의하여 컨텍스트 식별자를 설정한 값으로 설정합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+
+  `dwContext` 기본값을 재정의하여 컨텍스트 식별자를 설정한 값으로 설정합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CFtpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ##  <a name="remove"></a>  CFtpConnection::Remove
 
@@ -512,7 +513,7 @@ BOOL Rename(
 
 합니다 *pstrExisting* 하 고 *pstrNew* 매개 변수 중 하나는 부분적으로 정규화 된 파일 이름을 현재 디렉터리에 상대적인 또는 정규화 된 수 있습니다. 백슬래시 (\\) 또는 이름 중 하나에 대 한 디렉터리 구분 기호로 슬래시 (/)를 사용할 수 있습니다. `Rename` 사용 하기 전에 디렉터리 이름을 구분 적합 한 문자로 변환 합니다.
 
-##  <a name="setcurrentdirectory"></a>  :: Setcurrentdirectory
+##  <a name="setcurrentdirectory"></a>  CFtpConnection::SetCurrentDirectory
 
 FTP 서버에서 다른 디렉터리를 변경 하려면이 멤버 함수를 호출 합니다.
 
@@ -535,7 +536,7 @@ BOOL SetCurrentDirectory(LPCTSTR pstrDirName);
 
 사용 하 여 [GetCurrentDirectory](#getcurrentdirectory) FTP 서버의 현재 작업 디렉터리를 확인 하려면. 원격 시스템에 연결 하면 루트 디렉터리에 가정 하지 마십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CInternetConnection 클래스](../../mfc/reference/cinternetconnection-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

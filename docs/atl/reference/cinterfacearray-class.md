@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CInterfaceArray class
 ms.assetid: 1f29cf66-a086-4a7b-b6a8-64f73da39f79
-ms.openlocfilehash: 64271cbdb634284a5abcdd17b2c14d23a496b3f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2e8714bf40e99a1014d7cd6de82cddb13cbbb9cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614254"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282827"
 ---
 # <a name="cinterfacearray-class"></a>CInterfaceArray 클래스
 
@@ -50,7 +50,7 @@ class CInterfaceArray :
 
 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CAtlArray`
 
@@ -72,7 +72,7 @@ CInterfaceArray() throw();
 
 스마트 포인터 배열을 초기화 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlArray 클래스](../../atl/reference/catlarray-class.md)<br/>
 [CComQIPtr 클래스](../../atl/reference/ccomqiptr-class.md)<br/>

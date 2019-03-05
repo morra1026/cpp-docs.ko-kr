@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CA2AEX class
 ms.assetid: 57dc65df-d9cf-4a84-99d3-6e031dde3664
-ms.openlocfilehash: 77bb49ab87c20b6df317282d8f5e6e228deb3a11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 712e663ab58e2c9de4e2f25090b84b35d0bced71
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639214"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293825"
 ---
 # <a name="ca2aex-class"></a>CA2AEX 클래스
 
@@ -43,7 +43,7 @@ class CA2AEX
 |이름|설명|
 |----------|-----------------|
 |[CA2AEX::CA2AEX](#ca2aex)|생성자입니다.|
-|[CA2AEX:: ~ CA2AEX](#dtor)|소멸자입니다.|
+|[CA2AEX::~CA2AEX](#dtor)|소멸자입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
@@ -109,7 +109,7 @@ CA2AEX(LPCSTR psz) throw(...);
 
 번역에 필요한 버퍼를 만듭니다.
 
-##  <a name="dtor"></a>  CA2AEX:: ~ CA2AEX
+##  <a name="dtor"></a>  CA2AEX::~CA2AEX
 
 소멸자입니다.
 
@@ -137,7 +137,7 @@ LPSTR m_psz;
 char m_szBuffer[ t_nBufferLength];
 ```
 
-##  <a name="operator_lpstr"></a>  LPSTR CA2AEX::operator
+##  <a name="operator_lpstr"></a>  CA2AEX::operator LPSTR
 
 변환 연산자입니다.
 
@@ -149,7 +149,7 @@ operator LPSTR() const throw();
 
 LPSTR 입력할 텍스트 문자열을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CA2CAEX 클래스](../../atl/reference/ca2caex-class.md)<br/>
 [CA2WEX 클래스](../../atl/reference/ca2wex-class.md)<br/>

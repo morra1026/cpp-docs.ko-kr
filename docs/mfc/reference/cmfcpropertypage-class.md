@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCPropertyPage [MFC], CMFCPropertyPage
 ms.assetid: d279d7f2-2d81-418d-9f23-6147d6e8df09
-ms.openlocfilehash: a55a1a8cd5d63a9e775038824a7bbbe91adbae01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 62e33da998f1e5332436d887c38d3fd65526561b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566740"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288521"
 ---
 # <a name="cmfcpropertypage-class"></a>CMFCPropertyPage 클래스
 
@@ -49,7 +49,7 @@ class CMFCPropertyPage : public CPropertyPage
 
 사용 된 `CMFCPropertyPage` 와 함께 클래스를 [CMFCPropertySheet](../../mfc/reference/cmfcpropertysheet-class.md) 클래스. 메뉴에서 속성 페이지를 사용 하려면 모든 일치 항목을 바꾸려면 합니다 `CPropertyPage` 클래스는 `CMFCPropertyPage` 클래스입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -98,7 +98,7 @@ CMFCPropertyPage(
 
 생성자 매개 변수에 대 한 자세한 내용은 참조 하세요. [CPropertyPage::CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

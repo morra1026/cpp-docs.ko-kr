@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 0b673c873f773844c13894d3f0448536f297dc53
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: f7887b1c9ddaf9d51da584df371acbed6726643b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894512"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291303"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl 클래스
 
@@ -71,7 +71,7 @@ class CHotKeyCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CHotKeyCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CHotKeyCtrl 사용 하 여](../../mfc/using-chotkeyctrl.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -319,8 +319,7 @@ void SetRules(
 
 에 지정 된 플래그를 통해 정의 된 대로 사용자가 잘못 된 키 조합을 입력 하는 경우 *wInvalidComb*, 시스템 OR 연산자를 사용 하 여 플래그를 지정 하 여 사용자가 입력 한 키를 결합 *wModifiers*. 결과 키 조합은 문자열로 변환 되 고 바로 가기 키 컨트롤에 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

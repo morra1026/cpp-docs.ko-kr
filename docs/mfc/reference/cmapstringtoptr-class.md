@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: 1ac11143-eb0a-4511-a662-2df0d1d9005b
-ms.openlocfilehash: 09b6a41c5dd2a60821d3ca25f565f31de4c30dca
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 80e4ec92376559933b4e5a6d271d772da02bca82
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657437"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291264"
 ---
 # <a name="cmapstringtoptr-class"></a>CMapStringToPtr 클래스
 
@@ -99,7 +99,7 @@ class CMapStringToPtr : public CObject
 
 경우는 `CMapStringToPtr` 개체를 삭제 하거나 해당 요소를 제거 하는 경우는 `CString` 주요 개체 및 단어 제거 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -109,8 +109,7 @@ class CMapStringToPtr : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

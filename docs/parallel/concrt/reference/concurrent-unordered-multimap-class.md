@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_unordered_multimap class
 ms.assetid: 4dada5d7-15df-4382-b9c9-348e75b2f3c1
-ms.openlocfilehash: e1a477e278de2e8ba0f1af43dfdb6081206d86e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 446060656a79380f85d3faac560bd48910bfb2db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450910"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294358"
 ---
 # <a name="concurrentunorderedmultimap-class"></a>concurrent_unordered_multimap 클래스
 
@@ -221,10 +221,10 @@ concurrent_unordered_multimap(
 *_Allocator*<br/>
 순서가 지정되지 않은 이 multimap에 대한 할당자입니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 *_Umap*<br/>
@@ -261,7 +261,7 @@ size_type count(const key_type& KVal) const;
 
 키 컨테이너에 나타나는 횟수 만큼 시간.
 
-##  <a name="empty"></a> 빈
+##  <a name="empty"></a> empty
 
 요소가 있는지 여부를 테스트합니다. 이 방법은 동시성 안전 합니다.
 
@@ -361,7 +361,7 @@ hasher hash_function() const;
 
 저장된 해시 함수 개체입니다.
 
-##  <a name="insert"></a> 삽입
+##  <a name="insert"></a> insert
 
 요소를 추가 하 여 `concurrent_unordered_multimap` 개체입니다.
 
@@ -397,7 +397,7 @@ typename std::enable_if<!std::is_same<const_iterator,
 *V*<br/>
 Map에 삽입 된 값의 형식입니다.
 
-*값*<br/>
+*value*<br/>
 삽입할 값입니다.
 
 *_Where*<br/>
@@ -481,7 +481,7 @@ size_type max_size() const;
 
 상한 값이는 실제로 컨테이너가 보유할 실제로 수 무엇 보다 클 수도 있습니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 내용을 할당 `concurrent_unordered_multimap` 여기에 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -539,7 +539,7 @@ size_type size() const;
 
 동시 삽입이 있을 경우 이 함수를 호출한 직후, 반환 값을 읽기도 전에 동시 컨테이너의 요소 수가 변경될 수 있습니다.
 
-##  <a name="swap"></a> 교환
+##  <a name="swap"></a> swap
 
 두의 내용을 바꿉니다 `concurrent_unordered_multimap` 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -564,7 +564,7 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -610,7 +610,7 @@ size_type unsafe_bucket_size(size_type _Bucket);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 검색할 통 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -627,7 +627,7 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -644,7 +644,7 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -663,7 +663,7 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_B)*<br/>
+*_Bucket*<br/>
 버킷 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -720,8 +720,7 @@ size_type unsafe_max_bucket_count() const;
 
 이 컨테이너의 버킷 최대 수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [병렬 컨테이너 및 개체](../../../parallel/concrt/parallel-containers-and-objects.md)
-

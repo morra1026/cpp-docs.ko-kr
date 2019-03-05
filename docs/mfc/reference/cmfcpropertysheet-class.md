@@ -40,16 +40,17 @@ helpviewer_keywords:
 - CMFCPropertySheet [MFC], SetIconsList
 - CMFCPropertySheet [MFC], SetLook
 ms.assetid: 01d93573-9698-440f-a6a4-5bebbee879dc
-ms.openlocfilehash: 1168375606ef86061269454aa361a076efa331a4
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 7e5b553e6a10bee0e5b05bb32b9af3069269ca91
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176408"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294566"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet 클래스
 
-`CMFCPropertySheet` 클래스는 각 속성 페이지가 페이지 탭, 도구 모음 단추, 트리 컨트롤 노드 또는 목록 항목으로 표시되는 속성 시트를 지원합니다.
+
+  `CMFCPropertySheet` 클래스는 각 속성 페이지가 페이지 탭, 도구 모음 단추, 트리 컨트롤 노드 또는 목록 항목으로 표시되는 속성 시트를 지원합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -70,13 +71,13 @@ class CMFCPropertySheet : public CPropertySheet
 
 |이름|설명|
 |----------|-----------------|
-|[Cmfcpropertysheet:: Addpage](#addpage)|속성 시트에 페이지를 추가합니다.|
+|[CMFCPropertySheet::AddPage](#addpage)|속성 시트에 페이지를 추가합니다.|
 |[CMFCPropertySheet::AddPageToTree](#addpagetotree)|트리 컨트롤에 새 속성 페이지를 추가합니다.|
 |[CMFCPropertySheet::AddTreeCategory](#addtreecategory)|트리 컨트롤에 새 노드를 추가합니다.|
 |[CMFCPropertySheet::EnablePageHeader](#enablepageheader)|각 페이지 위쪽에서 사용자 지정 머리글을 그릴 공간을 예약합니다.|
 |[CMFCPropertySheet::GetHeaderHeight](#getheaderheight)|현재 머리글의 높이를 검색합니다.|
 |[CMFCPropertySheet::GetLook](#getlook)|현재 속성 시트의 모양을 지정하는 열거형 값을 검색합니다.|
-|[Cmfcpropertysheet:: Getnavbarwidth](#getnavbarwidth)|탐색 모음의 너비(픽셀)를 검색합니다.|
+|[CMFCPropertySheet::GetNavBarWidth](#getnavbarwidth)|탐색 모음의 너비(픽셀)를 검색합니다.|
 |[CMFCPropertySheet::GetTab](#gettab)|현재 속성 시트 컨트롤을 지원하는 내부 탭 컨트롤 개체를 검색합니다.|
 |`CMFCPropertySheet::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 |[CMFCPropertySheet::InitNavigationControl](#initnavigationcontrol)|현재 속성 시트 컨트롤의 모양을 초기화합니다.|
@@ -88,15 +89,18 @@ class CMFCPropertySheet : public CPropertySheet
 |[CMFCPropertySheet::RemoveCategory](#removecategory)|트리 컨트롤에서 노드를 제거합니다.|
 |[CMFCPropertySheet::RemovePage](#removepage)|속성 시트에서 속성 페이지를 제거합니다.|
 |[CMFCPropertySheet::SetIconsList](#seticonslist)|Outlook 창의 탐색 컨트롤에서 사용되는 이미지 목록을 지정합니다.|
-|[Cmfcpropertysheet:: Setlook](#setlook)|속성 시트의 모양을 지정합니다.|
+|[CMFCPropertySheet::SetLook](#setlook)|속성 시트의 모양을 지정합니다.|
 
 ## <a name="remarks"></a>설명
 
-`CMFCPropertySheet` 클래스는 속성 시트(탭 대화 상자라고도 함)를 나타냅니다. `CMFCPropertySheet` 클래스는 다양한 방식으로 속성 페이지를 표시할 수 있습니다.
+
+  `CMFCPropertySheet` 클래스는 속성 시트(탭 대화 상자라고도 함)를 나타냅니다. 
+  `CMFCPropertySheet` 클래스는 다양한 방식으로 속성 페이지를 표시할 수 있습니다.
 
 응용 프로그램에서 `CMFCPropertySheet` 클래스를 사용하려면 다음 단계를 수행합니다.
 
-1. `CMFCPropertySheet` 클래스에서 클래스를 파생시키고 클래스 이름(예: CMyPropertySheet)을 지정합니다.
+1. 
+  `CMFCPropertySheet` 클래스에서 클래스를 파생시키고 클래스 이름(예: CMyPropertySheet)을 지정합니다.
 
 1. 생성 된 [CMFCPropertyPage](../../mfc/reference/cmfcpropertypage-class.md) 각 속성 페이지에 대 한 개체입니다.
 
@@ -106,7 +110,8 @@ class CMFCPropertySheet : public CPropertySheet
 
 1. 호출 된 [cmfcpropertysheet:: Addpage](#addpage) 메서드가 각 속성 페이지에 대 한 합니다.
 
-1. `CMFCPropertySheet` 컨트롤을 만들고 해당 `DoModal` 메서드를 호출합니다.
+1. 
+  `CMFCPropertySheet` 컨트롤을 만들고 해당 `DoModal` 메서드를 호출합니다.
 
 ## <a name="illustrations"></a>그림
 
@@ -122,7 +127,7 @@ class CMFCPropertySheet : public CPropertySheet
 
 ![속성 트리](../../mfc/reference/media/proptree.png "속성 트리")
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -138,7 +143,7 @@ class CMFCPropertySheet : public CPropertySheet
 
 **헤더:** afxpropertysheet.h
 
-##  <a name="addpage"></a>  Cmfcpropertysheet:: Addpage
+##  <a name="addpage"></a>  CMFCPropertySheet::AddPage
 
 속성 시트에 페이지를 추가합니다.
 
@@ -148,7 +153,7 @@ void AddPage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 [in] Page 개체에 대 한 포인터입니다. 이 매개 변수는 NULL 일 수 없습니다.
 
 ### <a name="remarks"></a>설명
@@ -174,7 +179,7 @@ void AddPageToTree(
 *pCategory*<br/>
 [in] 부모 트리 노드 또는 최상위 노드를 사용 하 여 지정된 된 페이지를 연결 하는 NULL 포인터입니다. 호출 된 [CMFCPropertySheet::AddTreeCategory](#addtreecategory) 이 포인터를 가져오는 방법입니다.
 
-*물리 페이지*<br/>
+*pPage*<br/>
 [in] 속성 페이지 개체에 대 한 포인터입니다.
 
 *nIconNum*<br/>
@@ -302,7 +307,7 @@ PropSheetLook GetLook() const;
 
 속성 시트의 모양을 지정 하는 열거형 값 중 하나입니다. 가능한 값 목록을 열거형에 대 한 표의의 설명 섹션을 참조 하세요. [cmfcpropertysheet:: Setlook](#setlook)합니다.
 
-##  <a name="getnavbarwidth"></a>  Cmfcpropertysheet:: Getnavbarwidth
+##  <a name="getnavbarwidth"></a>  CMFCPropertySheet::GetNavBarWidth
 
 탐색 모음의 너비를 가져옵니다.
 
@@ -360,7 +365,7 @@ virtual void OnActivatePage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 [in] Enabled 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -383,7 +388,7 @@ virtual void OnDrawPageHeader(
 *pDC*<br/>
 [in] 장치 컨텍스트에 대 한 포인터입니다.
 
-*. n 페이지*<br/>
+*nPage*<br/>
 [in] 0부터 시작 속성 페이지 번호입니다.
 
 *rectHeader*<br/>
@@ -403,7 +408,7 @@ virtual BOOL OnRemoveTreePage(CPropertyPage* pPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 [in] 제거할 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -438,10 +443,10 @@ void RemovePage(int nPage);
 
 ### <a name="parameters"></a>매개 변수
 
-*물리 페이지*<br/>
+*pPage*<br/>
 [in] 제거할 속성 페이지를 나타내는 속성 페이지 개체에 대 한 포인터입니다. NULL일 수 없습니다.
 
-*. n 페이지*<br/>
+*nPage*<br/>
 [in] 제거할 페이지의 0부터 시작 인덱스입니다.
 
 ### <a name="remarks"></a>설명
@@ -484,7 +489,7 @@ void SetIconsList(HIMAGELIST hIcons);
 
 이 메서드를 지 원하는 방법에 대 한 자세한 내용은 참조 하세요. [CImageList::Create](../../mfc/reference/cimagelist-class.md#create) 하 고 [CImageList::Add](../../mfc/reference/cimagelist-class.md#add)합니다. 속성 시트의 스타일을 설정 하는 방법에 대 한 자세한 내용은 참조 하세요. [cmfcpropertysheet:: Setlook](#setlook)합니다.
 
-##  <a name="setlook"></a>  Cmfcpropertysheet:: Setlook
+##  <a name="setlook"></a>  CMFCPropertySheet::SetLook
 
 속성 시트의 모양을 지정합니다.
 
@@ -496,7 +501,7 @@ void SetLook(
 
 ### <a name="parameters"></a>매개 변수
 
-*찾는 위치*<br/>
+*look*<br/>
 [in] 속성 시트의 모양을 지정 하는 열거형 값 중 하나입니다. 속성 시트에 대 한 기본 스타일은 `CMFCPropertySheet::PropSheetLook_Tabs`합니다. 자세한 내용은이 항목의 설명 섹션의 표를 참조 하세요.
 
 *nNavControlWidth*<br/>
@@ -516,7 +521,7 @@ void SetLook(
 |`CMFCPropertySheet::PropSheetLook_OneNoteTabs`|Microsoft OneNote의 각 속성 페이지의 스타일에서, 탭을 표시합니다. 프레임 워크 속성 시트의 맨 위에 있는 탭이 표시 됩니다 및 단일 행에 맞는 보다 더 많은 탭에 있는 경우 스크롤 화살표입니다.|
 |`CMFCPropertySheet::PropSheetLook_List`|속성 시트의 왼쪽에 있는 목록을 표시합니다. 각 목록 항목 속성 페이지에 해당합니다. 프레임 워크 목록의 표시 영역에 들어가는 것 보다 자세한 목록 항목이 있는 경우 스크롤 화살표를 표시 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

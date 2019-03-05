@@ -11,16 +11,16 @@ helpviewer_keywords:
 - databases [MFC], exception handling
 - error codes [MFC], database exception handling
 ms.assetid: 28daf260-f824-4be6-aecc-1f859e6dec26
-ms.openlocfilehash: 17a52787462301e839cb2e960fad8b480380ba49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f7f3bff9f28968361ecfa7374a235a727443004
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492799"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285557"
 ---
 # <a name="exceptions-database-exceptions"></a>예외: 데이터베이스 예외
 
-이 문서에서는 데이터베이스 예외를 처리 하는 방법에 설명 합니다. 이 문서의 대부분은 작업 하 든 MFC 클래스를 사용 하 여 열린 데이터베이스 연결 (ODBC) 또는 MFC 클래스에 대 한 데이터 액세스 개체 (DAO)에 대 한 적용 됩니다. 하나 또는 다른 모델에 특정 자료 명시적으로 표시 됩니다. 다음과 같은 내용을 다룹니다.
+이 문서에서는 데이터베이스 예외를 처리 하는 방법에 설명 합니다. 이 문서의 대부분은 작업 하 든 MFC 클래스를 사용 하 여 열린 데이터베이스 연결 (ODBC) 또는 MFC 클래스에 대 한 데이터 액세스 개체 (DAO)에 대 한 적용 됩니다. 하나 또는 다른 모델에 특정 자료 명시적으로 표시 됩니다. 다루는 주제는 다음과 같습니다.
 
 - [예외 처리 방법](#_core_approaches_to_exception_handling)
 
@@ -74,7 +74,6 @@ DAO 예제는 ODBC에 대 한 예제와 유사 하지만 일반적으로 더 많
 
 작업할 때 대부분의 경우에서 Microsoft Jet (.mdb) 데이터베이스와 ODBC를 사용 하 여 작업 하는 경우, 오류 개체를 하나만 됩니다. 드문 경우 이지만 ODBC 데이터 소스를 사용 하는 경우 여러 오류가 발생 하면 반복할 수 있습니다 DAO의 Errors 컬렉션에서 반환 되는 오류 수에 따라 [CDaoException::GetErrorCount](../mfc/reference/cdaoexception-class.md#geterrorcount)합니다. 루프를 실행할 때마다 호출 [CDaoException::GetErrorInfo](../mfc/reference/cdaoexception-class.md#geterrorinfo) 업데이트나는 `m_pErrorInfo` 데이터 멤버입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)
-

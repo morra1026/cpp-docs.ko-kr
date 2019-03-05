@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CInterfaceList class
 ms.assetid: 2077764d-25e5-4b3d-96c8-08a287bbcd25
-ms.openlocfilehash: 6187bd6ada44a0e967b02e0183aa34becf0750ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e740d891e279bb29eeef898de52698dc3f04fc67
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520434"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282463"
 ---
 # <a name="cinterfacelist-class"></a>CInterfaceList 클래스
 
@@ -50,7 +50,7 @@ class CInterfaceList
 
 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CAtlList](../../atl/reference/catllist-class.md)
 
@@ -77,7 +77,7 @@ CInterfaceList(UINT nBlockSize = 10) throw();
 
 블록 크기는 새 요소가 필요한 경우 할당 된 메모리의 크기를 측정 합니다. 블록 크기가 클수록 메모리 할당 루틴에 대 한 호출 줄어들지만 더 많은 리소스를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlList 클래스](../../atl/reference/catllist-class.md)<br/>
 [CComQIPtr 클래스](../../atl/reference/ccomqiptr-class.md)<br/>

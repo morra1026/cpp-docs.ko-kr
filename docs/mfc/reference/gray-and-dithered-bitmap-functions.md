@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - gray and dithered bitmap functions [MFC]
 ms.assetid: cb139a77-b85e-4504-9d93-24156ad77a41
-ms.openlocfilehash: 7e1d4bd0e851a14680a46d7d6ae79dcf4bd190e4
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: fb764dbd71d89ae3317816df3539c2881b9695b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176733"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290783"
 ---
 # <a name="gray-and-dithered-bitmap-functions"></a>회색 및 디더링된 비트맵 함수
 
@@ -151,7 +151,7 @@ void AFXAPI AfxDrawDitheredBitmap(
 *cr1*<br/>
 두 디더링 색상 중 하나로 일반적으로 흰색입니다.
 
-*인 cr2*<br/>
+*cr2*<br/>
 다른 디더링 색, 일반적으로 밝은 회색 (: COLOR_MENU)입니다.
 
 ### <a name="remarks"></a>설명
@@ -191,7 +191,7 @@ void AFXAPI AfxGetDitheredBitmap(
 *cr1*<br/>
 두 디더링 색상 중 하나로 일반적으로 흰색입니다.
 
-*인 cr2*<br/>
+*cr2*<br/>
 다른 디더링 색, 일반적으로 밝은 회색 (: COLOR_MENU)입니다.
 
 ### <a name="remarks"></a>설명
@@ -208,6 +208,6 @@ void AFXAPI AfxGetDitheredBitmap(
 
 **헤더:** afxwin.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

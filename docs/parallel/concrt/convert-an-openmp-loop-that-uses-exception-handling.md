@@ -5,12 +5,12 @@ helpviewer_keywords:
 - exception handling, converting from OpenMP to the Concurrency Runtime
 - converting from OpenMP to the Concurrency Runtime, exception handling
 ms.assetid: 03c28196-21ba-439e-8641-afab1c283e1a
-ms.openlocfilehash: 9fa5ff2bcdfa6680dde6e9316d143089bf586671
-ms.sourcegitcommit: ee0103752884425843556a19cf418a504dc3cd02
+ms.openlocfilehash: 118cf3e485fa78ae3eaa5efe34708924b89d6588
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740505"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285154"
 ---
 # <a name="how-to-convert-an-openmp-loop-that-uses-exception-handling-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용 하 여 예외 처리를 사용 하는 OpenMP 루프 변환
 
@@ -58,9 +58,8 @@ OpenMP를 사용 하는 버전 예외 발생 후 종료 되는, 필요한 경우
 
 **cl.exe /EHsc /openmp concrt-omp-exceptions.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OpenMP에서 동시성 런타임으로 마이그레이션](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
-[Visual C++에서 예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
+[예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)
-

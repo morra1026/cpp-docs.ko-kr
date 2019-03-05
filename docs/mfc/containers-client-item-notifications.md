@@ -6,12 +6,12 @@ helpviewer_keywords:
 - OLE containers [MFC], client-item notifications
 - client items and OLE containers
 ms.assetid: e1f1c427-01f5-45f2-b496-c5bce3d76340
-ms.openlocfilehash: b59ba84c27d9ed4c964bd308cf69f9f729eb3c39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 583c438820c002a4c192d15358ca98424d02889a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291056"
 ---
 # <a name="containers-client-item-notifications"></a>컨테이너: 클라이언트 항목 알림
 
@@ -46,9 +46,8 @@ ms.locfileid: "50528897"
 
 내부 편집 하는 동안 OLE 항목의 위치 또는 크기가 변경 되 면 항목의 위치 및 클리핑 사각형에 대 한 컨테이너의 정보를 업데이트 해야 하 고 서버 변경 내용에 대 한 정보를 받아야 합니다. 프레임 워크 호출 `COleClientItem::OnChangeItemPosition` 이 목적입니다. MFC 응용 프로그램 마법사는 기본 클래스의 함수를 호출 하는 재정의 제공 합니다. 응용 프로그램 마법사가 작성 하는 함수를 편집 해야 프로그램 `COleClientItem`-클라이언트 항목 개체에 의해 보존 된 모든 정보를 업데이트 하는 함수는 클래스를 파생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [컨테이너: 클라이언트 항목 상태](../mfc/containers-client-item-states.md)<br/>
 [COleClientItem::OnChangeItemPosition](../mfc/reference/coleclientitem-class.md#onchangeitemposition)
-

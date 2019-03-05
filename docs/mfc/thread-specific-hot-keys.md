@@ -7,12 +7,12 @@ helpviewer_keywords:
 - threading [MFC], hot keys in CHotKeyCtrl
 - access keys [MFC], hot keys
 ms.assetid: b6021274-1498-483f-bcbf-ba5723547cc8
-ms.openlocfilehash: 68c50ec5f29dab271f9af9abc50eb72ec15157e7
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: a54aa878b0160132157879127f8335c951e91785
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893329"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290991"
 ---
 # <a name="thread-specific-hot-keys"></a>스레드 관련 바로 가기 키
 
@@ -20,8 +20,7 @@ ms.locfileid: "54893329"
 
 에 대 한 호출에 사용 되는 이동 상태 플래그를 지정 하는 참고 `RegisterHotKey` 반환한 것과 동일 하지 않습니다 합니다 [GetHotKey](../mfc/reference/chotkeyctrl-class.md#gethotkey) 멤버 함수를 호출 하기 전에 이러한 플래그를 변환 해야 `RegisterHotKey`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHotKeyCtrl 사용](../mfc/using-chotkeyctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

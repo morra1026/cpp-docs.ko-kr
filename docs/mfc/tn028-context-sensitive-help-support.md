@@ -8,12 +8,12 @@ helpviewer_keywords:
 - TN028
 - resource identifiers, context-sensitive Help
 ms.assetid: 884f1c55-fa27-4d4c-984f-30907d477484
-ms.openlocfilehash: 580046810243593c17dbf7e1c3ca427b37bd14a8
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: e3ac2742f2c57c01c645c72c933234a96ece773a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520158"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288287"
 ---
 # <a name="tn028-context-sensitive-help-support"></a>TN028: 상황에 맞는 도움말 지원
 
@@ -132,7 +132,7 @@ HIWORD(lParam) y 축 좌표를 포함합니다.
 
 MFC 응용 프로그램 마법사 도움말 파일 (.cnt 및.hpj 파일)을 빌드하는 데 필요한 파일을 만듭니다. Microsoft 도움말 컴파일러에서 허용 되는 미리 빌드된.rtf 파일 수가 포함 됩니다. 대부분의 항목은 완료 되지만 일부 특정 응용 프로그램에 대 한 수정 해야 할 수 있습니다.
 
-"매핑 도움말" 파일의 자동 만들기가 MAKEHM 라는 유틸리티에서 지원 됩니다. MAKEHM 유틸리티 응용 프로그램의 리소스를 변환할 수 있습니다. H 파일 도움말 매핑 파일입니다. 예를 들어:
+"매핑 도움말" 파일의 자동 만들기가 MAKEHM 라는 유틸리티에서 지원 됩니다. MAKEHM 유틸리티 응용 프로그램의 리소스를 변환할 수 있습니다. H 파일 도움말 매핑 파일입니다. 예를 들면,
 
 ```
 #define IDD_MY_DIALOG   2000
@@ -176,8 +176,7 @@ int AFXAPI AfxMessageBox(UINT nIDPrompt,
 
 두 번째 경우에서 nIDHelp에 대 한 기본값은를 도움말 ID nIDPrompt와 같은지 여부를 나타내는-1입니다. 도움말 응용 프로그램은 도움말 사용 물론 경우에 작동 합니다). 메시지 상자가 있는 도움말 지원 되지 않습니다 하려는 경우 0 nIDHelp를 제공 해야 합니다. 메시지를 사용 하도록 설정 하는 도움이 될 nIDPrompt 보다는 서로 다른 도움말 ID를 원하는 하지만 단순히 nIDHelp nIDPrompt와 다른 양수 값을 제공 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

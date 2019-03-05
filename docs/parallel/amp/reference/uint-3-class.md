@@ -72,12 +72,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_3::set_xzy
 - amp_short_vectors/Concurrency::graphics::uint_3::operator-=
 ms.assetid: 5e22c277-9d4f-4a3a-b38c-a83d5fcab33c
-ms.openlocfilehash: 5faf2789c89e492d74851cb94d270b6fac2972c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4f3c7e299c998989de24a07db3d607d21c958cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553376"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283906"
 ---
 # <a name="uint3-class"></a>uint_3 클래스
 
@@ -204,7 +204,7 @@ class uint_3;
 |uint_3::zy||
 |uint_3::zyx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `uint_3`
 
@@ -212,7 +212,7 @@ class uint_3;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ##  <a name="ctor"></a> uint_3
 
@@ -268,7 +268,7 @@ explicit inline uint_3(
 *_V2*<br/>
 2 요소를 초기화할 값입니다.
 
-*(_V)*<br/>
+*_V*<br/>
 초기화에 대 한 값입니다.
 
 *_Other*<br/>
@@ -280,6 +280,6 @@ explicit inline uint_3(
 static const int size = 3;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

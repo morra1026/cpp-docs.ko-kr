@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Automation servers, object lifetime
 - servers, lifetime of Automation
 ms.assetid: 342baacf-4015-4a0e-be2f-321424f1cb43
-ms.openlocfilehash: 904c3023d7f27bd144c306d9d92810a91a48ecfa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f9dbc6e4f321ba10fdffa013c158d53b84331e30
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637647"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293579"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>자동화 서버: 개체 수명 문제
 
@@ -28,8 +28,7 @@ Microsoft Foundation Class 라이브러리는 외부 클라이언트 응용 프�
 
 Windows SDK에서 참조 하세요 `IUnknown::AddRef` 고 `IUnknown::Release`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자동화 서버](../mfc/automation-servers.md)<br/>
 [AfxOleCanExitApp](../mfc/reference/application-control.md#afxolecanexitapp)
-

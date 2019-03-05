@@ -8,12 +8,12 @@ helpviewer_keywords:
 - reference counts
 - references, counting
 ms.assetid: b1fd4514-6de6-429f-9e60-2777c0d07a3d
-ms.openlocfilehash: f77939c25de19d619d6b4eeb2d3d6a0f3f1e5178
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa160cb40af632321e1b14fd3ca88a4dd578b972
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473114"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293431"
 ---
 # <a name="reference-counting"></a>참조 계산
 
@@ -32,8 +32,7 @@ COM 사용 합니다 `IUnknown` 메서드를 [AddRef](/windows/desktop/api/unknw
 > [!NOTE]
 >  경우는 `CComObject`-파생된 개체가 사용 하 여 생성 되는 **새** 연산자는 참조 횟수가 0입니다. 따라서 호출 `AddRef` 성공적으로 만든 후 다시 만들어야 합니다 `CComObject`-파생 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
 [참조 횟수를 통해 개체 수명 관리](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
-

@@ -160,17 +160,17 @@ helpviewer_keywords:
 - CMFCPopupMenu [MFC], OnChangeHot
 - CMFCPopupMenu [MFC], OnChooseItem
 ms.assetid: 9555dca1-8c9c-44c9-af72-0659ddad128e
-ms.openlocfilehash: b52ae91b7ce0111725e5ba21a7f8ca8aaa6779e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b45ac09ff87c191e55e403951fdff18cae33256d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517678"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292278"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu 클래스
 
 Windows 팝업 메뉴 기능을 구현하고 분리 메뉴, 도구 설명 같은 기능을 추가하여 확장합니다.
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -264,7 +264,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
 |[CMFCPopupMenu::UpdateAllShadows](#updateallshadows)|모든 열린된 팝업 메뉴의 그림자를 업데이트합니다.|
 |[CMFCPopupMenu::UpdateShadow](#updateshadow)|팝업 메뉴의 그림자를 업데이트합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -282,7 +282,7 @@ class CMFCPopupMenu : public CMiniFrameWnd
 
 [!code-cpp[NVC_MFC_CustomPages#2](../../mfc/reference/codesnippet/cpp/cmfcpopupmenu-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -435,7 +435,7 @@ virtual BOOL Create(
 *hMenu*<br/>
 [in] 메뉴 리소스 핸들입니다.
 
-*차단*<br/>
+*bLocked*<br/>
 [in] 메뉴 사용자 지정 가능한 지 여부를 나타내는 부울 매개 변수입니다. FALSE 팝업 메뉴 사용자 지정 가능한 임을 나타냅니다.
 
 *bOwnMessage*<br/>
@@ -894,7 +894,7 @@ int InsertItem(
 
 ### <a name="parameters"></a>매개 변수
 
-*단추*<br/>
+*button*<br/>
 [in] 추가할 메뉴 항목에 대 한 참조입니다.
 
 *iInsertAt*<br/>
@@ -1095,7 +1095,7 @@ void MoveTo(const CPoint& pt);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *(태평양 표준시)*<br/>
+[in] *pt*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1369,7 +1369,7 @@ void SetQuickCustomizeType(QUICK_CUSTOMIZE_TYPE Type);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *형식*<br/>
+[in] *Type*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1469,7 +1469,7 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 
 그림자가 팝업 메뉴 애니메이션된 이미지와 중복 될 때이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

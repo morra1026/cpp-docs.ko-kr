@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CDaoFieldExchange [MFC], m_nOperation
 - CDaoFieldExchange [MFC], m_prs
 ms.assetid: 350a663e-92ff-44ab-ad53-d94efa2e5823
-ms.openlocfilehash: ef88486d14ade1d5871d614069dc1c202d6ad159
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d28739ced9aedd29106937cb717c87a241993036
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654222"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291030"
 ---
 # <a name="cdaofieldexchange-class"></a>CDaoFieldExchange 클래스
 
@@ -67,7 +67,7 @@ class CDaoFieldExchange
 
 합니다 [IsValidOperation](#isvalidoperation) 멤버 함수는 사용자 고유의 사용자 지정 DFX 루틴을 작성 하기 위한 제공 됩니다. 사용할지 [SetFieldType](#setfieldtype) 에 자주 하 [CDaoRecordset::DoFieldExchange](../../mfc/reference/cdaorecordset-class.md#dofieldexchange) 함수입니다. DFX 전역 함수에 대 한 자세한 내용은 참조 하세요 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md)합니다. 사용자 지정 데이터 형식에 대 한 사용자 지정 DFX 루틴을 작성 하는 방법에 대 한 내용은 [기술 참고 53](../../mfc/tn053-custom-dfx-routines-for-dao-database-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CDaoFieldExchange`
 
@@ -155,7 +155,7 @@ void SetFieldType(UINT nFieldType);
 
 일반적으로 필드 데이터 멤버 또는 매개 변수 데이터 멤버와 연결 된 DFX 함수 호출의 각 그룹 뒤에 야 호출 `SetFieldType`합니다. *nFieldType* 각각의 매개 변수 `SetFieldType` 호출에 따르는 DFX 함수 호출을 나타내는 데이터 멤버의 형식을 식별 하는 `SetFieldType` 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CDaoRecordset 클래스](../../mfc/reference/cdaorecordset-class.md)

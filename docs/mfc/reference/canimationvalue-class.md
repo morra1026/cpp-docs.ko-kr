@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CAnimationValue [MFC], GetAnimationVariableList
 - CAnimationValue [MFC], m_value
 ms.assetid: 78c5ae19-ede5-4f20-bfbe-68b467b603c2
-ms.openlocfilehash: 9a43536e3f9f90b70d5d68eb5ce5d277f9b42e00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86a2caa8946bcafeabf85687a24b2430ecefe790
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613800"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283542"
 ---
 # <a name="canimationvalue-class"></a>CAnimationValue 클래스
 
@@ -54,7 +54,7 @@ class CAnimationValue : public CAnimationBaseObject;
 |[CAnimationValue::GetVariable](#getvariable)|캡슐화 된 애니메이션 변수에 액세스할 수 있습니다.|
 |[CAnimationValue::SetDefaultValue](#setdefaultvalue)|기본값을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -66,7 +66,7 @@ class CAnimationValue : public CAnimationBaseObject;
 |----------|-----------------|
 |[CAnimationValue::operator DOUBLE](#operator_double)|CAnimationValue 및 DOUBLE 간의 변환을 제공합니다.|
 |[CAnimationValue::operator INT32](#operator_int32)|CAnimationValue INT32 사이의 변환을 제공합니다.|
-|[CAnimationValue::operator =](#operator_eq)|오버로드됨. CAnimationValue를 INT32 값을 할당합니다.|
+|[CAnimationValue::operator=](#operator_eq)|오버로드됨. CAnimationValue를 INT32 값을 할당합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -78,7 +78,7 @@ class CAnimationValue : public CAnimationBaseObject;
 
 CAnimationValue 클래스는 단일 CAnimationVariable 개체를 캡슐화 하 고 단일 애니메이션된 값을 응용 프로그램에 나타낼 수 있습니다. 애니메이션된 투명도 (페이드 효과) (개체를 회전 하려면)는 각도에 대 한이 클래스에 사용할 수는 예를 들어, 또는 단일 애니메이션된 값에 따라 애니메이션을 만드는 경우 모든 사례에 대 한 합니다. 응용 프로그램에서이 클래스를 사용 하려면 방금이 클래스의 개체를 인스턴스화하고, CAnimationController::AddAnimationObject를 사용 하 여 애니메이션 컨트롤러를 추가 및 값에 적용할 AddTransition 각 전환에 대 한 호출
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -168,7 +168,7 @@ BOOL GetValue(INT32& nValue);
 *dblValue*<br/>
 출력입니다. 함수는 반환 될 때 애니메이션 변수의 현재 값을 포함 합니다.
 
-*n 값*<br/>
+*nValue*<br/>
 출력입니다. 함수는 반환 될 때 애니메이션 변수의 현재 값을 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -235,7 +235,7 @@ operator INT32();
 
 CAnimationValue INT32 사이의 변환을 제공합니다. 이 메서드는 내부적으로 GetValue를 호출 하 고 오류를 확인 하지 않습니다. GetValue 실패 하면 반환 된 값을 생성자 또는 SetDefaultValue를 사용 하 여 이전에 설정한 기본값을 포함 됩니다.
 
-##  <a name="operator_eq"></a>  CAnimationValue::operator =
+##  <a name="operator_eq"></a>  CAnimationValue::operator=
 
 CAnimationValue DOUBLE 값을 할당 합니다.
 
@@ -273,6 +273,6 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
 
 기본값을 설정 하려면이 메서드를 사용 합니다. 기본 값을 애니메이션을 시작한 후 및/또는 기본 COM 개체를 만들어지지 않은 경우 응용 프로그램에 반환 됩니다. CAnimationVarible에 캡슐화 하는 기본 COM 개체를 이미 생성 된 경우이 메서드를 다시 만드는 것, 다시 EnableValueChanged/EnableIntegerValueChanged 메서드를 호출 해야 하므로 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

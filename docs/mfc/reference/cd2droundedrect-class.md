@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DRoundedRect [MFC], CD2DRoundedRect
 ms.assetid: 06207fb5-e92b-41c0-bceb-b45d8f466531
-ms.openlocfilehash: 6c1aa2bb9593cdf12aadc39ef8a85cc8ad14078a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51913a0d261a0bc91aef8f8504547a10c3e1cf36
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677476"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285843"
 ---
 # <a name="cd2droundedrect-class"></a>CD2DRoundedRect 클래스
 
@@ -33,7 +33,7 @@ class CD2DRoundedRect : public D2D1_ROUNDED_RECT;
 |----------|-----------------|
 |[CD2DRoundedRect::CD2DRoundedRect](#cd2droundedrect)|오버로드됨. 생성 된 `CD2DRoundedRect` 에서 개체 `D2D1_ROUNDED_RECT` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_ROUNDED_RECT`
 
@@ -64,6 +64,6 @@ CD2DRoundedRect(const D2D1_ROUNDED_RECT* rectIn);
 *sizeRadius*<br/>
 radius 크기
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

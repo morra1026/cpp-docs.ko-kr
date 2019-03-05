@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComQIPtrElementTraits class
 ms.assetid: 9df9250a-5413-4362-b133-332932a597c4
-ms.openlocfilehash: df1bbf5cb36e45b6b47acbd4263c34a7353fd6ae
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 42662a971f5d293cff404ca1eda161a3b87b13b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603738"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285128"
 ---
 # <a name="ccomqiptrelementtraits-class"></a>CComQIPtrElementTraits 클래스
 
@@ -49,7 +49,7 @@ class CComQIPtrElementTraits :
 
 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
 
@@ -73,7 +73,7 @@ class CComQIPtrElementTraits :
 typedef I* INARGTYPE;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

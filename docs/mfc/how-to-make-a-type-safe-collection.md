@@ -10,16 +10,16 @@ helpviewer_keywords:
 - serialization [MFC], collection classes
 - collection classes [MFC], deriving from nontemplate
 ms.assetid: 7230b2db-4283-4083-b098-eb231bf5b89e
-ms.openlocfilehash: 12ecec7562a9241fab30b859727a22e467e6eeb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4241a77184458f5253b6d8987c310604310683c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581794"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295190"
 ---
 # <a name="how-to-make-a-type-safe-collection"></a>방법: 형식이 안전한 컬렉션 만들기
 
-이 문서에서는 사용자 지정 데이터 형식에 대 한 형식이 안전한 컬렉션을 확인 하는 방법에 설명 합니다. 다음과 같은 내용을 다룹니다.
+이 문서에서는 사용자 지정 데이터 형식에 대 한 형식이 안전한 컬렉션을 확인 하는 방법에 설명 합니다. 다루는 주제는 다음과 같습니다.
 
 - [형식 안전성에 대 한 템플릿 기반 클래스를 사용 하 여](#_core_using_template.2d.based_classes_for_type_safety)
 
@@ -33,7 +33,7 @@ Microsoft Foundation Class 라이브러리를 c + + 템플릿을 기반으로 �
 
 #### <a name="to-use-template-based-classes"></a>템플릿 기반 클래스를 사용 하려면
 
-1. 컬렉션 클래스 형식의 변수를 선언 합니다. 예를 들어:
+1. 컬렉션 클래스 형식의 변수를 선언 합니다. 예를 들면,
 
    [!code-cpp[NVC_MFCCollections#7](../mfc/codesnippet/cpp/how-to-make-a-type-safe-collection_1.cpp)]
 
@@ -97,7 +97,6 @@ MFC는 또한 MFC 버전 1.0 사용 하 여 도입 된 컬렉션 클래스를 �
 
    형식이 안전한 래퍼에 기존 기능을 래핑하는 대신 컬렉션의 기능을 확장 하는 새 함수를 정의 하 여 새 기능을 추가할 수도 있습니다. 예를 들어,이 문서 [CObject 컬렉션의 모든 개체 삭제](../mfc/deleting-all-objects-in-a-cobject-collection.md) 목록에 포함 된 모든 개체를 삭제 하는 함수에 설명 합니다. 이 함수는 멤버 함수로 파생된 클래스에 추가할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션](../mfc/collections.md)
-

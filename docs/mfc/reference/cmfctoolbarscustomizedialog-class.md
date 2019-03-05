@@ -24,18 +24,18 @@ helpviewer_keywords:
 - CMFCToolBarsCustomizeDialog [MFC], OnInitDialog
 - CMFCToolBarsCustomizeDialog [MFC], PostNcDestroy
 ms.assetid: 78e2cddd-4f13-4097-afc3-1ad646a113f1
-ms.openlocfilehash: 026c7392c3eb93b37a712059939683e3e0ab852c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4aaede3eb2d5c922c196e2bdfbbe533c4e65e47
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628997"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295034"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog 클래스
 
 모덜리스 탭 대화 상자 ( [CPropertySheet 클래스](../../mfc/reference/cpropertysheet-class.md)) 사용자 도구 모음, 메뉴, 바로 가기 키, 사용자 정의 도구 및 응용 프로그램에서 비주얼 스타일을 지정할 수 있도록 합니다. 일반적으로 사용자가 **도구** 메뉴에서 **사용자 지정** 을 선택하여 이 대화 상자에 액세스합니다.
 
-**사용자 지정** 대화 상자에 6 개의 탭이 있습니다: **명령**를 **도구 모음**를 **도구**를 **키보드**,  **메뉴**, 및 **옵션**합니다.
+합니다 **사용자 지정** 대화 상자에 6 개의 탭이 있습니다. **명령을**, **도구 모음**를 **도구**를 **키보드**를 **메뉴**, 및 **옵션**합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -78,7 +78,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 |`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::ReplaceButton](#replacebutton)|명령 목록에 있는 단추에 대체 합니다 **명령** 새 도구 모음 단추 탭 합니다.|
 |`CMFCToolBarsCustomizeDialog::` [CMFCToolBarsCustomizeDialog::SetUserCategory](#setusercategory)|범주에 표시 되는 범주 목록에 추가 합니다 **명령** 탭 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -100,7 +100,7 @@ class CMFCToolBarsCustomizeDialog : public CPropertySheet
 
 [!code-cpp[NVC_MFC_IEDemo#4](../../mfc/reference/codesnippet/cpp/cmfctoolbarscustomizedialog-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -137,7 +137,7 @@ void AddButton(
 *uiCategoryId*<br/>
 [in] 단추를 삽입할 범주 ID를 지정 합니다.
 
-*단추*<br/>
+*button*<br/>
 [in] 삽입할 단추를 지정 합니다.
 
 *iInsertBefore*<br/>
@@ -586,7 +586,7 @@ virtual BOOL OnEditToolbarMenuImage(
 *pWndParent*<br/>
 [in] 부모 창에 대 한 포인터입니다.
 
-*비트맵*<br/>
+*bitmap*<br/>
 [in] 비트맵 개체를 편집할 수에 대 한 참조입니다.
 
 *nBitsPerPixel*<br/>
@@ -716,7 +716,7 @@ void ReplaceButton(
 *uiCmd*<br/>
 [in] 교체 하는 단추 명령을 지정 합니다.
 
-*단추*<br/>
+*button*<br/>
 [in] A **const** 이전 단추를 대체 하는 도구 모음 단추 개체에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -750,7 +750,7 @@ BOOL SetUserCategory(LPCTSTR lpszCategory);
 
 사용자 범주 설정 프레임 워크에서 현재 사용 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
