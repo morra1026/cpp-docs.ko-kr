@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - COM components, registration-free
 ms.assetid: 7e585d6a-0314-45b2-8f1b-cae9ac4df037
-ms.openlocfilehash: 4f4ebf121b761c37969fa3f9788bda52d913f340
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 503c3e4399359d793ce660f36844d2edc6602146
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463533"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416772"
 ---
 # <a name="how-to-build-registration-free-com-components"></a>방법: 등록이 필요 없는 COM 구성 요소 빌드
 
@@ -27,8 +27,8 @@ ms.locfileid: "50463533"
 
 1. 솔루션을 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [격리된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications)<br/>
 [Side-by-side 어셈블리](/windows/desktop/SbsCs/about-side-by-side-assemblies-)<br/>
-[방법: COM 구성 요소를 사용하는 격리된 응용 프로그램 빌드](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+[방법: COM 구성 요소를 사용하는 격리된 애플리케이션 빌드](../build/how-to-build-isolated-applications-to-consume-com-components.md)

@@ -22,16 +22,16 @@ helpviewer_keywords:
 - GetMoniker method
 - Open method
 ms.assetid: 25805f1b-26e3-402f-af83-1b5fe5ddebf7
-ms.openlocfilehash: bb44af102f08e05edddc2fb692d1e30dd7e31717
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 3333c624affd2afb61b8828250bf1c2c168c9207
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556680"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422093"
 ---
 # <a name="cenumerator-class"></a>CEnumerator 클래스
 
-노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms715969(v=vs.85)) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.
+노출 하는 OLE DB 열거자 개체를 사용 하는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) 모든 데이터 원본 및 열거자를 설명 하는 행 집합을 반환 하는 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -58,7 +58,7 @@ class CEnumerator :
 
 검색할 수 있습니다는 `ISourcesRowset` 이 클래스에서 간접적으로 데이터입니다.
 
-## <a name="find"></a> Cenumerator:: Find
+## <a name="find"></a> CEnumerator::Find
 
 사용 가능한 공급자 중에서 지정된 된 이름을 찾습니다.
 
@@ -79,9 +79,9 @@ bool Find(TCHAR* szSearchName) throw();
 
 ### <a name="remarks"></a>설명
 
-이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms715969(v=vs.85)) 인터페이스입니다.
+이 이름에 매핑되는 `SOURCES_NAME` 의 멤버는 [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) 인터페이스입니다.
 
-## <a name="getmoniker"></a> Cenumerator:: Getmoniker
+## <a name="getmoniker"></a> CEnumerator::GetMoniker
 
 모니커를 변환할 수는 문자열의 구성 요소를 추출 하려면 표시 이름을 구문 분석 합니다.
 
@@ -108,7 +108,7 @@ HRESULT GetMoniker(LPMONIKER* ppMoniker,
 
 ## <a name="open"></a> Cenumerator:: Open
 
-지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85))합니다.
+지정 된 경우 하나를 호출 하 여 행 집합 열거자에 대 한 검색 하는 경우 열거자에 대 한 모니커를 바인딩합니다 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85))합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -138,5 +138,5 @@ HRESULT Open(const CEnumerator& enumerator) throw();
 ## <a name="see-also"></a>참고 항목
 
 [DBViewer](../../visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

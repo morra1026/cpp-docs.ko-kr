@@ -9,12 +9,12 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: 0ae70b39-87c7-4181-8be9-e786e0db60b0
-ms.openlocfilehash: bc1b21bad1f7d4515774dbe76c2567280cdbf1f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f4b9dcf7358e8301562fb5e856b9a3fd1cb42cd
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620573"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419614"
 ---
 # <a name="importing-data-using-declspecdllimport"></a>__declspec(dllimport)을 사용하여 데이터 가져오기
 
@@ -56,6 +56,6 @@ DLL에서 데이터를 자동으로 내보내려면이 선언을 사용 합니�
 __declspec(dllexport) ULONG ulDataInDLL;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[응용 프로그램으로 가져오기](../build/importing-into-an-application.md)
+[애플리케이션으로 가져오기](../build/importing-into-an-application.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - defining NMAKE macros
 - NMAKE macros, defining
 ms.assetid: 45aae451-9d33-4a3d-8799-2e0cae17070d
-ms.openlocfilehash: 860a5766e0d766f7426cb6c1a7eaf5db02686aa4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6eb7c2f7759bda21f1424cef91b1dc814ba8d8ba
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498994"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424108"
 ---
 # <a name="defining-an-nmake-macro"></a>NMake 매크로 정의
 
@@ -38,6 +38,6 @@ macroname=string
 
 [매크로 정의의 우선 순위](../build/precedence-in-macro-definitions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로와 NMake](../build/macros-and-nmake.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - ERRORREPORT dumpbin option
 - /ERRORREPORT dumpbin option
 ms.assetid: 51178c43-4f95-4fda-8f97-50a257d1c948
-ms.openlocfilehash: 9f210685b7fc9d082d83ac9e2c9ed73c1c373023
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 85d1b03e65a0a8b367f1dee8376b3284f8179e64
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550451"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422717"
 ---
 # <a name="errorreport-dumpbinexe"></a>/ERRORREPORT(dumpbin.exe)
 
@@ -27,6 +27,6 @@ Dumpbin.exe 런타임에 실패 하는 경우 사용할 수 있습니다 **/ERRO
 
 에 대 한 자세한 내용은 **/ERRORREPORT**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

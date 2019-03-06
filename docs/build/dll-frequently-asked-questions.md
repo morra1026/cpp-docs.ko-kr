@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DLLs [C++], frequently asked questions
 - FAQs [C++], DLLs
 ms.assetid: 09dd068e-fc33-414e-82f7-289c70680256
-ms.openlocfilehash: 4d6490691583162fc95042601bd85566f693d049
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17acde51d3fa9a7fabf14de748fd60b126b8b8f3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629140"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418843"
 ---
 # <a name="dll-frequently-asked-questions"></a>DLL 관련 질문과 대답
 
@@ -67,6 +67,6 @@ DLL에 내보내기 함수가 많은 경우 함수를 내보내려면.def 파일
 
 한 가지 가능한 메모리 누수 원인은 MFC 메시지 처리기 함수 내에서 사용 되는 임시 개체를 만듭니다. MFC 응용 프로그램에서 이러한 임시 개체는 자동으로 정리에 `CWinApp::OnIdle()` 메시지를 처리 하는 사이 호출 되는 함수입니다. 그러나 MFC 동적 연결 라이브러리 (Dll)에 `OnIdle()` 함수 자동으로 호출 되지 않습니다. 결과적으로, 임시 개체는 자동으로 정리 되지 합니다. 명시적으로 호출 해야 DLL 임시 개체를 정리 하려면 `OnIdle(1)` 주기적으로 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

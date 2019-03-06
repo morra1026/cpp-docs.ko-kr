@@ -5,16 +5,16 @@ helpviewer_keywords:
 - OLE DB providers, properties
 - properties [C++], OLE DB provider
 ms.assetid: 26a8b493-7ec4-4686-96d0-9ad5d2bca5ac
-ms.openlocfilehash: 149e6f37de64a1133258f5bbc550896a4fb22a9f
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 04f6f046451a5347dbd2a911ce9fbd1a67e39bba
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556662"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414163"
 ---
 # <a name="setting-properties-in-your-provider"></a>공급자에 속성 설정
 
-원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](https://docs.microsoft.com/previous-versions/windows/desktop/ms722734(v=vs.85)) 에 **OLE DB Programmer's Reference**합니다.
+원하는 속성에 대 한 속성 그룹 및 속성 ID를 찾습니다. 자세한 내용은 [OLE DB 속성](/previous-versions/windows/desktop/ms722734(v=vs.85)) 에 **OLE DB Programmer's Reference**합니다.
 
 마법사에서 생성 된 공급자 코드에서 속성 그룹에 해당 하는 속성 맵을 찾습니다. 일반적으로 속성 그룹의 이름을 해당 개체의 이름을 합니다. 명령 또는 행 집합에서 명령 및 행 집합 속성을 찾을 수 있습니다. 데이터 원본 개체에서 데이터 원본 및 초기화 속성을 찾을 수 있습니다.
 
@@ -22,7 +22,7 @@ ms.locfileid: "51556662"
 
 - 속성에 해당 속성 ID입니다. 속성 이름의 앞에서 처음 7 자로 ("DBPROP_")를 제거 합니다. 예를 들어 추가 하려는 `DBPROP_MAXROWS`, 전달 `MAXROWS` 첫 번째 요소로 합니다. 사용자 지정 속성의 경우 전체 GUID 이름을 전달 (예를 들어 `DBMYPROP_MYPROPERTY`).
 
-- Variant 형식의 속성 (에서 [OLE DB 속성](https://docs.microsoft.com/previous-versions/windows/desktop/ms722734(v=vs.85)) 에 **OLE DB Programmer's Reference**). VT_ 형식 (예: VT_BOOL 또는 VT_I2) 해당 데이터 형식으로 입력 합니다.
+- Variant 형식의 속성 (에서 [OLE DB 속성](/previous-versions/windows/desktop/ms722734(v=vs.85)) 에 **OLE DB Programmer's Reference**). VT_ 형식 (예: VT_BOOL 또는 VT_I2) 해당 데이터 형식으로 입력 합니다.
 
 - 읽고 쓸 수 있는 속성 인지 및 속해 있는 그룹을 나타내는 플래그입니다. 예를 들어, 다음 코드는 행 집합 그룹에 속하는 읽기/쓰기 속성을 나타냅니다.
 

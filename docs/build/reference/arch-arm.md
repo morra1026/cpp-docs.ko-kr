@@ -2,12 +2,12 @@
 title: /arch(ARM)
 ms.date: 11/04/2016
 ms.assetid: 4f1406ff-f174-487c-a126-8ab06cf447c1
-ms.openlocfilehash: bf12abd140a56b1b914156083ecbbd3e61e7285a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7fd396f4ed9c02daff5363342d7c851d022919ac
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495573"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424992"
 ---
 # <a name="arch-arm"></a>/arch(ARM)
 
@@ -21,10 +21,10 @@ ARM에서 코드 생성 아키텍처를 지정합니다. 참고 항목 [(x86) /a
 
 ## <a name="arguments"></a>인수
 
-**arch:armv7ve**<br/>
-ARMv7VE 가상화 확장명 명령을 사용하도록 설정합니다.
+**/arch:ARMv7VE**<br/>
+ARMv7VE 가상화 확장 명령을 사용하도록 설정합니다.
 
-**/ arch:vfpv4**<br/>
+**/arch:VFPv4**<br/>
 ARM VFPv4 명령을 사용하도록 설정합니다. 이 옵션을 지정하지 않으면 VFPv3이 기본값입니다.
 
 ## <a name="remarks"></a>설명
@@ -47,7 +47,7 @@ ARM VFPv4 명령을 사용하도록 설정합니다. 이 옵션을 지정하지 
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/arch(최소 CPU 아키텍처)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

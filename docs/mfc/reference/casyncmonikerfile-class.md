@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 48d7c3b5dd1b43c7a1639c6d5c56979b422d7017
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: b86cba0c2e8f7991902a552d404355d6c1474138
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57262625"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425824"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile 클래스
 
@@ -158,7 +158,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
 
 [CAsyncMonikerFile::Open](#open) 호출 `CreateBindStatusCallback`합니다.
 
-비동기 모니커 및 비동기 바인딩에 대 한 자세한 내용은 참조는 [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) 인터페이스 및 [비동기 바인딩 방법 및 저장소](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work)합니다. 집계의 논의 참조 하세요 [집계](/windows/desktop/com/aggregation)합니다. Windows SDK의 모든 세 가지 항목은입니다.
+비동기 모니커 및 비동기 바인딩에 대 한 자세한 내용은 참조는 [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) 인터페이스 및 [비동기 바인딩 방법 및 저장소](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work)합니다. 집계의 논의 참조 하세요 [집계](/windows/desktop/com/aggregation)합니다. Windows SDK의 모든 세 가지 항목은입니다.
 
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
 

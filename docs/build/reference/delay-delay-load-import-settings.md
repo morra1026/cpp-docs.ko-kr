@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /DELAY linker option
 - -DELAY linker option
 ms.assetid: 9334b332-cc58-4dae-b10f-a4c75972d50c
-ms.openlocfilehash: edf15d17f0ae6f3bd04b6ed97095594eaebbf675
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56f019e99eb9a54b83f6b070d769efa2b94f5621
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565986"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426379"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY(가져오기 설정 로드 지연)
 
@@ -54,7 +54,7 @@ ms.locfileid: "50565986"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.DelayLoadDLLs%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

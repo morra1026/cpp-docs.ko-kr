@@ -7,18 +7,18 @@ helpviewer_keywords:
 - updating rowsets
 - rowsets
 ms.assetid: 39588758-5c72-4254-a10d-cc2b1f473357
-ms.openlocfilehash: d00b9036b216e3425615478d6bf92d239a3637d1
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: fb915a2f61c2adfedc41630e637f6b5beee30768
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556701"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424365"
 ---
 # <a name="updating-rowsets"></a>행 집합 업데이트
 
-기본 데이터베이스 작업은 업데이트 또는 데이터 저장소에 데이터를 작성 하는 것입니다. OLE DB에서 업데이트 메커니즘은 간단합니다. 소비자 응용 프로그램이 바인딩된 데이터 멤버의 값을 설정하고 행 집합에 해당 값을 쓴 다음 소비자가 공급자에게 데이터 저장소를 업데이트하도록 요청합니다.
+기본 데이터베이스 작업은 업데이트 또는 데이터 저장소에 데이터를 작성 하는 것입니다. OLE DB에서 업데이트 메커니즘은 간단합니다. 소비자 애플리케이션이 바인딩된 데이터 멤버의 값을 설정하고 행 집합에 해당 값을 쓴 다음 소비자가 공급자에게 데이터 저장소를 업데이트하도록 요청합니다.
 
-소비자는 다음과 같은 유형의 행 집합 데이터에서 업데이트를 완료할 수: 행 내의 열 값을 설정 하 고 행 삽입, 행을 삭제 합니다. OLE DB 템플릿 클래스는 이러한 작업을 완료 하려면 [CRowset](../../data/oledb/crowset-class.md) 구현 하는 [IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85)) 인터페이스 및 다음 인터페이스 메서드를 재정의 합니다.
+소비자는 다음과 같은 유형의 행 집합 데이터에서 업데이트를 완료할 수: 행 내의 열 값을 설정 하 고 행 삽입, 행을 삭제 합니다. OLE DB 템플릿 클래스는 이러한 작업을 완료 하려면 [CRowset](../../data/oledb/crowset-class.md) 구현 하는 [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)) 인터페이스 및 다음 인터페이스 메서드를 재정의 합니다.
 
 - [SetData](../../data/oledb/crowset-setdata.md) 변경 열 행 집합의 행에 값을 하며 SQL UPDATE 명령과 동일한 것으로 간주 합니다.
 
@@ -197,7 +197,7 @@ HRESULT hr = product.SetData();  // No changes made to row 101 yet
 product.Update();                 // Update row 101 now
 ```
 
-보류 중인 변경 내용이 전송 되도록 하려면를 호출 해야 `Update` 다른 행으로 이동 하기 전에 합니다. 그러나 이 작업이 길거나 비효율적인 경우(예: 응용 프로그램에서 수백 개의 행을 업데이트해야 하는 경우) `UpdateAll` 을 사용하여 한 번에 모든 행을 업데이트할 수 있습니다.
+보류 중인 변경 내용이 전송 되도록 하려면를 호출 해야 `Update` 다른 행으로 이동 하기 전에 합니다. 그러나 이 작업이 길거나 비효율적인 경우(예: 애플리케이션에서 수백 개의 행을 업데이트해야 하는 경우) `UpdateAll` 을 사용하여 한 번에 모든 행을 업데이트할 수 있습니다.
 
 예를 들어 경우 첫 번째 `Update` 호출을 위의 코드에서 누락 하면 100 행 상태로 유지 됩니다. 변경 되지 않지만 101 행은 변경 됩니다. 이후에 응용 프로그램 해야 호출할 `UpdateAll` 하거나 100 행 및 호출 돌아가 `Update` 업데이트할 행에 대 한 합니다.
 
@@ -207,4 +207,4 @@ product.Update();                 // Update row 101 now
 
 [OLE DB 소비자 템플릿 작업](../../data/oledb/working-with-ole-db-consumer-templates.md)<br/>
 [CRowset 클래스](../../data/oledb/crowset-class.md)<br/>
-[IRowsetChange](https://docs.microsoft.com/previous-versions/windows/desktop/ms715790(v=vs.85))<br/>
+[IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85))<br/>

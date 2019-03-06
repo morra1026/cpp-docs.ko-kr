@@ -194,12 +194,12 @@ helpviewer_keywords:
 - CHtmlView [MFC], SetWidth
 - CHtmlView [MFC], Stop
 ms.assetid: 904976af-73de-4aba-84ac-cfae8e2be09a
-ms.openlocfilehash: 69a04b49cf82c2b30ece3a32f76fbb2bc9a65f01
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 251a1f9f6773363955ac374aa8714bc616137a31
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57295996"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425005"
 ---
 # <a name="chtmlview-class"></a>CHtmlView 클래스
 
@@ -390,7 +390,7 @@ Windows 클래스의 이름을 지정 하는 null로 끝나는 문자열을 가�
 창 스타일 특성을 지정합니다. WS_VISIBLE 및 WS_CHILD Windows 스타일은 기본적으로 설정 됩니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 크기와 창의 위치를 지정 합니다. 합니다 *rectDefault* 값 크기와 새 창의 위치를 지정 하는 Windows를 허용 합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 크기와 창의 위치를 지정 합니다. 합니다 *rectDefault* 값 크기와 새 창의 위치를 지정 하는 Windows를 허용 합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -1045,7 +1045,7 @@ void Navigate(
 탐색할 URL을 포함 하는 호출자에 게 할당 된 문자열 또는 표시할 파일의 전체 경로입니다.
 
 *dwFlags*<br/>
-리소스 기록 목록에 추가할지 여부를, 여부에 대 한 읽기 또는 쓰기 캐시 및 리소스를 새 창에 표시할지 여부를 지정 하는 변수는 플래그입니다. 변수에서 정의 된 값의 조합 수를 [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) 열거형입니다.
+리소스 기록 목록에 추가할지 여부를, 여부에 대 한 읽기 또는 쓰기 캐시 및 리소스를 새 창에 표시할지 여부를 지정 하는 변수는 플래그입니다. 변수에서 정의 된 값의 조합 수를 [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) 열거형입니다.
 
 *lpszTargetFrameName*<br/>
 리소스를 표시 하는 프레임의 이름을 포함 하는 문자열에 대 한 포인터입니다.
@@ -1095,7 +1095,7 @@ void Navigate2(
 에 대 한 포인터를 [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) 구조입니다.
 
 *dwFlags*<br/>
-리소스 기록 목록에 추가할지 여부를, 여부에 대 한 읽기 또는 쓰기 캐시 및 리소스를 새 창에 표시할지 여부를 지정 하는 변수는 플래그입니다. 변수에서 정의 된 값의 조합 수를 [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) 열거형입니다.
+리소스 기록 목록에 추가할지 여부를, 여부에 대 한 읽기 또는 쓰기 캐시 및 리소스를 새 창에 표시할지 여부를 지정 하는 변수는 플래그입니다. 변수에서 정의 된 값의 조합 수를 [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) 열거형입니다.
 
 *lpszTargetFrameName*<br/>
 리소스를 표시 하는 프레임의 이름을 포함 하는 문자열에 대 한 포인터입니다.
@@ -1215,7 +1215,7 @@ virtual HRESULT OnDocWindowActivate(BOOL fActivate);
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnDocWindowActivate` 대응 하는 데는 `OnDocWindowActivate` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnDocWindowActivate` 대응 하는 데는 `OnDocWindowActivate` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="ondownloadbegin"></a>  CHtmlView::OnDownloadBegin
 
@@ -1256,7 +1256,7 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
 
 ### <a name="remarks"></a>설명
 
-사용 하거나 컨테이너를 만들거나 모달 대화 상자를 삭제할 때 모덜리스 대화 상자를 사용 하지 않도록 설정 합니다. 재정의 `OnEnableModeless` 대응 하는 데는 `EnableModeless` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) 자세한 내용은 Windows SDK에 있습니다.
+사용 하거나 컨테이너를 만들거나 모달 대화 상자를 삭제할 때 모덜리스 대화 상자를 사용 하지 않도록 설정 합니다. 재정의 `OnEnableModeless` 대응 하는 데는 `EnableModeless` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onfilterdataobject"></a>  CHtmlView::OnFilterDataObject
 
@@ -1282,7 +1282,7 @@ virtual HRESULT OnFilterDataObject(
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnFilterDataObject` 대응 하는 데는 `FilterDataObject` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnFilterDataObject` 대응 하는 데는 `FilterDataObject` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate
 
@@ -1303,7 +1303,7 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnFrameWindowActivate` 대응 하는 데는 `OnFrameWindowActivate` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnFrameWindowActivate` 대응 하는 데는 `OnFrameWindowActivate` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onfullscreen"></a>  CHtmlView::OnFullScreen
 
@@ -1338,11 +1338,11 @@ virtual HRESULT OnGetDropTarget(
 
 ### <a name="return-value"></a>반환 값
 
-참조 [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) 반환 코드의 목록은 Windows SDK에 있습니다.
+참조 [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) 반환 코드의 목록은 Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnGetDropTarget` 대응 하는 데는 `GetDropTarget` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnGetDropTarget` 대응 하는 데는 `GetDropTarget` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="ongetexternal"></a>  CHtmlView::OnGetExternal
 
@@ -1363,7 +1363,7 @@ virtual HRESULT OnGetExternal(LPDISPATCH* lppDispatch);
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnGetExternal` 대응 하는 데는 `GetExternal` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnGetExternal` 대응 하는 데는 `GetExternal` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="ongethostinfo"></a>  CHtmlView::OnGetHostInfo
 
@@ -1376,7 +1376,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 ### <a name="parameters"></a>매개 변수
 
 *pInfo*<br/>
-주소를 [DOCHOSTUIINFO](https://msdn.microsoft.com/library/aa770044.aspx) 호스트의 UI 기능을 수신 하는 구조입니다.
+주소를 [DOCHOSTUIINFO](/previous-versions/aa770044\(v=vs.85\)) 호스트의 UI 기능을 수신 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1384,7 +1384,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnGetHostInfo` 대응 하는 데는 `GetHostInfo` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnGetHostInfo` 대응 하는 데는 `GetHostInfo` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="ongetoptionkeypath"></a>  CHtmlView::OnGetOptionKeyPath
 
@@ -1410,7 +1410,7 @@ virtual HRESULT OnGetOptionKeyPath(
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnGetOptionKeyPath` 대응 하는 데는 `GetOptionKeyPath` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnGetOptionKeyPath` 대응 하는 데는 `GetOptionKeyPath` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onhideui"></a>  CHtmlView::OnHideUI
 
@@ -1426,7 +1426,7 @@ virtual HRESULT OnHideUI();
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnHideUI` 대응 하는 데는 `HideUI` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnHideUI` 대응 하는 데는 `HideUI` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onmenubar"></a>  CHtmlView::OnMenuBar
 
@@ -1585,7 +1585,7 @@ virtual HRESULT OnResizeBorder(
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnResizeBorder` 대응 하는 데는 `ResizeBorder` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnResizeBorder` 대응 하는 데는 `ResizeBorder` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onshowcontextmenu"></a>  CHtmlView::OnShowContextMenu
 
@@ -1615,11 +1615,11 @@ virtual HRESULT OnShowContextMenu(
 
 ### <a name="return-value"></a>반환 값
 
-참조 [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) 값의 목록을 Windows SDK에 있습니다.
+참조 [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) 값의 목록을 Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnShowContextMenu` 대응 하는 데는 `ShowContextMenu` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnShowContextMenu` 대응 하는 데는 `ShowContextMenu` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onshowui"></a>  CHtmlView::OnShowUI
 
@@ -1653,11 +1653,11 @@ virtual HRESULT OnShowUI(
 
 ### <a name="return-value"></a>반환 값
 
-참조 [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) 값의 목록을 Windows SDK에 있습니다.
+참조 [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) 값의 목록을 Windows SDK에 있습니다.
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnShowUI` 대응 하는 데는 `ShowUI` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnShowUI` 대응 하는 데는 `ShowUI` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onstatusbar"></a>  CHtmlView::OnStatusBar
 
@@ -1756,7 +1756,7 @@ virtual HRESULT OnTranslateAccelerator(
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnTranslateAccelerator` 대응 하는 데는 `TranslateAccelerator` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnTranslateAccelerator` 대응 하는 데는 `TranslateAccelerator` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="ontranslateurl"></a>  CHtmlView::OnTranslateUrl
 
@@ -1786,7 +1786,7 @@ Internet Explorer 또는 MSHTML 변환할 URL을 나타내는 의해 제공 된 
 
 ### <a name="remarks"></a>설명
 
-재정의 `OnTranslateUrl` 대응 하는 데는 `TranslateUrl` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) 자세한 내용은 Windows SDK에 있습니다.
+재정의 `OnTranslateUrl` 대응 하는 데는 `TranslateUrl` Microsoft 웹 브라우저 컨트롤에서 알림. 참조 [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) 자세한 내용은 Windows SDK에 있습니다.
 
 ##  <a name="onupdateui"></a>  CHtmlView::OnUpdateUI
 
@@ -2236,4 +2236,4 @@ Internet Explorer 및 WebBrowser에 적용됩니다.
 [MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>
 [CFormView 클래스](../../mfc/reference/cformview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx)
+[IWebBrowser2](/windows/desktop/api/exdisp/nn-exdisp-iwebbrowser2)

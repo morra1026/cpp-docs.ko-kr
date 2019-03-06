@@ -98,12 +98,12 @@ helpviewer_keywords:
 - CReBarCtrl [MFC], ShowBand
 - CReBarCtrl [MFC], SizeToRect
 ms.assetid: 154570d7-e48c-425d-8c7e-c64542bcb4cc
-ms.openlocfilehash: f1e9c6e4505c67b881d479817ec8b45e4ae5dc8b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: db72dbab14db69f14d7c3d813562ec661df4b424
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304558"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417660"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl 클래스
 
@@ -255,7 +255,7 @@ virtual BOOL Create(
 컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) 지원 되는 스타일의 목록은 Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) rebar 컨트롤의 크기와 위치는 구조입니다.
+에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) rebar 컨트롤의 크기와 위치는 구조입니다.
 
 *pParentWnd*<br/>
 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 rebar 컨트롤의 부모 창입니다. NULL이 아니어야 합니다.
@@ -303,7 +303,7 @@ virtual BOOL CreateEx(
 컨트롤에 적용 되는 rebar 컨트롤 스타일의 조합을 지정 합니다. 지원 되는 스타일의 목록은 참조 하세요 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -389,7 +389,7 @@ void GetBandBorders(
 테두리를 검색 하는 대역 외의 0부터 시작 인덱스입니다.
 
 *prc*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 대역 외 테두리 받을 구조입니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에이 구조의 각 멤버의 픽셀 대역 외에서의 해당 쪽에 테두리를 구성 하는 수를 받게 됩니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에 없는 경우이 구조체의 왼쪽된 멤버에만 유효한 정보를 받습니다. Rebar 컨트롤 스타일에 대 한 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 대역 외 테두리 받을 구조입니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에이 구조의 각 멤버의 픽셀 대역 외에서의 해당 쪽에 테두리를 구성 하는 수를 받게 됩니다. Rebar 컨트롤 RBS_BANDBORDERS 스타일에 없는 경우이 구조체의 왼쪽된 멤버에만 유효한 정보를 받습니다. Rebar 컨트롤 스타일에 대 한 참조 [Rebar 컨트롤 스타일](/windows/desktop/Controls/rebar-control-styles) Windows SDK에 있습니다.
 
 ##  <a name="getbandcount"></a>  CReBarCtrl::GetBandCount
 
@@ -584,7 +584,7 @@ BOOL GetRect(
 Rebar 컨트롤에서 밴드의 0부터 시작 인덱스입니다.
 
 *prc*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조는 rebar 밴드의 경계를 받게 됩니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조는 rebar 밴드의 경계를 받게 됩니다.
 
 ### <a name="return-value"></a>반환 값
 

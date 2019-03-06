@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 51198b44346785369771f63b80164c1a131f6950
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ec4d7aa6f2a1061e632b81a27a0233cf5fdd1c63
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279690"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423562"
 ---
 # <a name="cnetaddressctrl-class"></a>CNetAddressCtrl 클래스
 
@@ -127,7 +127,7 @@ virtual BOOL Create(
 |매개 변수|설명|
 |---------------|-----------------|
 |*dwStyle*|[in] 컨트롤에 적용 될 스타일의 비트 조합입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|
-|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
+|*rect*|[in] 에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
 |*pParentWnd*|[in] 에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|
 |*nID*|[in] 컨트롤의 ID입니다.|
 
@@ -154,7 +154,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] 컨트롤에 적용 될 확장된 스타일의 비트 조합 (OR)입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|
 |*dwStyle*|[in] 컨트롤에 적용 될 스타일의 비트 조합 (OR)입니다. 자세한 내용은 [스타일 편집](../../mfc/reference/styles-used-by-mfc.md#edit-styles)합니다.|
-|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
+|*rect*|[in] 에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
 |*pParentWnd*|[in] 에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|
 |*nID*|[in] 컨트롤의 ID입니다.|
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: DUMPBIN 옵션
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPBIN program, options
 ms.assetid: 563b696e-7599-4480-94b9-014776289ec8
-ms.openlocfilehash: 5c57c49a39ae135f88f1f1eca25e59a68c7ad1aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a836af74260c213289f3300500bf7e4de521d5a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434309"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420092"
 ---
 # <a name="dumpbin-options"></a>DUMPBIN 옵션
 
@@ -67,7 +67,7 @@ DUMPBIN에는 다음과 같은 옵션이 있습니다.
 
 - [/TLS](../../build/reference/tls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
 [DUMPBIN 참조](../../build/reference/dumpbin-reference.md)

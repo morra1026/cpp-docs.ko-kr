@@ -2,12 +2,12 @@
 title: /Qvec-report(자동 벡터화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 4778c9a3-0692-4085-9b05-1bfeadf4c74a
-ms.openlocfilehash: dc8c1d3bc65b0160fd489f1cdebe06e4fc9a0992
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6fc4e129a908b5347c85794d369856873dac9180
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590231"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417998"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report(자동 벡터화 도우미 보고 수준)
 
@@ -21,10 +21,10 @@ ms.locfileid: "50590231"
 
 ## <a name="remarks"></a>설명
 
-**/ Qvec-보고서: 1**<br/>
+**/Qvec-report:1**<br/>
 For 루프 벡터화 되는 정보 메시지를 출력 합니다.
 
-**/ Qvec-보고서: 2**<br/>
+**/Qvec-report:2**<br/>
 For 루프는 벡터화 되지 않은, 이유 코드와 함께 하는 for 루프 벡터화 되는 정보 메시지를 출력 합니다.
 
 이유 코드 및 메시지에 대 한 정보를 참조 하세요 [벡터화 도우미 및 평행 화 도우미 메시지](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)합니다.
@@ -39,9 +39,10 @@ For 루프는 벡터화 되지 않은, 이유 코드와 함께 하는 for 루프
 
 ### <a name="to-set-the-qvec-report-compiler-option-programmatically"></a>/Qvec-report 컴파일러 옵션을 프로그래밍 방식으로 설정 하려면
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
+- 
+  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

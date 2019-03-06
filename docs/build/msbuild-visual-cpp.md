@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MSBuild
 ms.assetid: 7a1be7ff-0312-4669-adf2-5f5bf507d560
-ms.openlocfilehash: 4e0a82602cdeb775569099c559eef5aed51b431f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6ca3ac46a4d84c9513ba4f7fd34a15f667cb6ed
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429434"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423224"
 ---
 # <a name="msbuild-visual-c"></a>MSBuild(Visual C++)
 
@@ -28,8 +28,8 @@ ms.locfileid: "50429434"
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 단계 추가](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)|빌드 순서에 사용자 정의 단계를 추가 하는 방법에 설명 합니다.|
 |[방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)|특정 파일을 사용 하 여 빌드 도구를 연결 하는 방법에 설명 합니다.|
 |[방법: 사용자 지정 도구를 프로젝트 속성에 통합](../build/how-to-integrate-custom-tools-into-the-project-properties.md)|프로젝트 속성에 사용자 지정 도구에 대 한 옵션을 추가 하는 방법에 설명 합니다.|
-|[방법: 대상 프레임워크 및 플랫폼 도구 집합 수정](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|여러 프레임 워크 또는 도구 집합에 대 한 프로젝트를 컴파일하는 방법을 보여 줍니다.|
+|[방법: 대상 프레임워크 및 플랫폼 도구 세트 수정](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|여러 프레임 워크 또는 도구 집합에 대 한 프로젝트를 컴파일하는 방법을 보여 줍니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [명령줄에서 C/C++ 코드 빌드](../build/building-on-the-command-line.md)

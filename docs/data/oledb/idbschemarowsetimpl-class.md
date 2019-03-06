@@ -36,12 +36,12 @@ helpviewer_keywords:
 - GetRowset method
 - GetSchemas method
 ms.assetid: bd7bf0d7-a1c6-4afa-88e3-cfdbdf560703
-ms.openlocfilehash: d9b0c5319c7eacbb2b5b4d40d5a936e680e82a89
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 080504dabccd89340d511aa6d3192cf711d3d6bf
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556935"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416862"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl 클래스
 
@@ -82,17 +82,17 @@ class ATL_NO_VTABLE IDBSchemaRowsetImpl : public IDBSchemaRowset
 
 ## <a name="remarks"></a>설명
 
-이 클래스는 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스 및 템플릿화된 작성자 함수 [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md)를 구현합니다.
+이 클래스는 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스 및 템플릿화된 작성자 함수 [CreateSchemaRowset](../../data/oledb/idbschemarowsetimpl-createschemarowset.md)를 구현합니다.
 
-OLE DB는 스키마 행 집합을 사용하여 공급자의 데이터에 대한 데이터를 반환합니다. 이러한 데이터를 흔히 "메타데이터"라고 합니다. 항상 지원 해야 공급자를 기본적으로 `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, 및 `DBSCHEMA_PROVIDER_TYPES`에 설명 된 대로 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다. 스키마 행 집합은 스키마 맵에 지정됩니다. 스키마 맵 항목에 대한 자세한 내용은 [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)를 참조하세요.
+OLE DB는 스키마 행 집합을 사용하여 공급자의 데이터에 대한 데이터를 반환합니다. 이러한 데이터를 흔히 "메타데이터"라고 합니다. 항상 지원 해야 공급자를 기본적으로 `DBSCHEMA_TABLES`, `DBSCHEMA_COLUMNS`, 및 `DBSCHEMA_PROVIDER_TYPES`에 설명 된 대로 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다. 스키마 행 집합은 스키마 맵에 지정됩니다. 스키마 맵 항목에 대한 자세한 내용은 [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)를 참조하세요.
 
 ATL 개체 마법사의 OLE DB 공급자 마법사는 프로젝트의 스키마 행 집합에 대한 코드를 자동으로 생성합니다. 기본적으로 마법사는 이전에 설명한 필수 스키마 행 집합을 지원합니다. ATL 개체 마법사를 사용하여 소비자를 만드는 경우 마법사는 스키마 행 집합을 사용하여 올바른 데이터를 공급자에 바인딩합니다. 올바른 메타데이터를 제공하는 스키마 행 집합을 구현하지 않은 경우 마법사는 올바른 데이터를 바인딩하지 않습니다.
 
 공급자의 스키마 행 집합을 지원하는 방법에 대한 자세한 내용은 [스키마 행 집합 지원](../../data/oledb/supporting-schema-rowsets.md)을 참조하세요.
 
-스키마 행 집합에 대한 자세한 내용은 [OLE DB 프로그래머 참조](https://docs.microsoft.com/previous-versions/windows/desktop/ms712921(v=vs.85)) 에서 *스키마 행 집합*을 참조하세요.
+스키마 행 집합에 대한 자세한 내용은 [OLE DB 프로그래머 참조](/previous-versions/windows/desktop/ms712921(v=vs.85)) 에서 *스키마 행 집합*을 참조하세요.
 
-## <a name="checkrestrictions"></a> Idbschemarowsetimpl:: Checkrestrictions
+## <a name="checkrestrictions"></a> IDBSchemaRowsetImpl::CheckRestrictions
 
 스키마 행 집합에 대해 제한의 유효성을 검사합니다.
 
@@ -120,9 +120,9 @@ HRESULT CheckRestrictions(REFGUID rguidSchema,
 
 `CheckRestrictions` 소비자가 호출 하는 경우 결정 [GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md) 올바른 제한 및 공급자가 지 원하는 올바른 제한 유형 (예를 들어 문자열 VT_BSTR)를 사용 하 여 합니다. 또한 올바른 개수의 제한이 지원되는지 확인합니다. 기본적으로 `CheckRestrictions` 는 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md) 호출을 통해 지정된 행 집합에서 지원되는 제한을 공급자에 요청합니다. 그런 다음 공급자가 지원하는 제한과 소비자의 제한을 비교하여 성공 또는 실패를 반환합니다.
 
-스키마 행 집합에 대 한 자세한 내용은 참조 하세요. [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에 있습니다.
+스키마 행 집합에 대 한 자세한 내용은 참조 하세요. [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에 있습니다.
 
-## <a name="createschemarowset"></a> Idbschemarowsetimpl:: Createschemarowset
+## <a name="createschemarowset"></a> IDBSchemaRowsetImpl::CreateSchemaRowset
 
 템플릿 매개 변수로 지정된 개체에 대한 COM 개체 작성자 함수를 구현합니다.
 
@@ -158,7 +158,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 [in] 설정할 속성 집합 수입니다.
 
 *rgPropertySets*<br/>
-[in] 설정할 속성을 지정하는 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열입니다.
+[in] 설정할 속성을 지정하는 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열입니다.
 
 *ppRowset*<br/>
 [out] 나가는 `IUnknown` 요청한 *riid*합니다. 이 `IUnknown` 은 스키마 행 집합 개체의 인터페이스입니다.
@@ -174,7 +174,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
 
 이 함수는 모든 형식의 스키마 행 집합에 대한 제네릭 작성자를 구현합니다. 일반적으로 사용자는 이 함수를 호출하지 않습니다. 스키마 맵 구현에 의해 호출됩니다.
 
-## <a name="setrestrictions"></a> Idbschemarowsetimpl:: Setrestrictions
+## <a name="setrestrictions"></a> IDBSchemaRowsetImpl::SetRestrictions
 
 특정 스키마 행 집합에서 지원되는 제한을 지정합니다.
 
@@ -195,7 +195,7 @@ void SetRestrictions(ULONG cRestrictions,
 [in] 제한을 페치할 스키마 행 집합의 GUID 배열입니다. 각 배열 요소는 스키마 행 집합 하나의 GUID를 포함합니다(예: `DBSCHEMA_TABLES`).
 
 *rgRestrictions*<br/>
-[in] 설정할 제한 값의 길이 *cRestrictions* 배열입니다. 각 요소는 GUID로 식별되는 스키마 행 집합에 대한 제한에 해당합니다. 공급자가 스키마 행 집합을 지원하지 않는 경우 요소는 0으로 설정됩니다. 그렇지 않은 경우에는 **ULONG** 값에 해당 스키마 행 집합에서 지원되는 제한을 나타내는 비트 마스크가 포함됩니다. 특정 스키마 행 집합으로 제한 해당 하는 자세한 내용은 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* 는 Windows에서 SDK입니다.
+[in] 설정할 제한 값의 길이 *cRestrictions* 배열입니다. 각 요소는 GUID로 식별되는 스키마 행 집합에 대한 제한에 해당합니다. 공급자가 스키마 행 집합을 지원하지 않는 경우 요소는 0으로 설정됩니다. 그렇지 않은 경우에는 **ULONG** 값에 해당 스키마 행 집합에서 지원되는 제한을 나타내는 비트 마스크가 포함됩니다. 특정 스키마 행 집합으로 제한 해당 하는 자세한 내용은 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* 는 Windows에서 SDK입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -207,9 +207,9 @@ void SetRestrictions(ULONG cRestrictions,
 
 스키마 행 집합을 지원하는 공급자에 대한 예제는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플을 참조하세요.
 
-스키마 행 집합에 대 한 자세한 내용은 참조 하세요. [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에 있습니다.
+스키마 행 집합에 대 한 자세한 내용은 참조 하세요. [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에 있습니다.
 
-## <a name="getrowset"></a> Idbschemarowsetimpl:: Getrowset
+## <a name="getrowset"></a> IDBSchemaRowsetImpl::GetRowset
 
 스키마 행 집합을 반환합니다.
 
@@ -247,7 +247,7 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 [in] 설정할 속성 집합 수입니다.
 
 *rgPropertySets*<br/>
-[in/out] 새로 만든 스키마 행 집합에 설정할 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열입니다.
+[in/out] 새로 만든 스키마 행 집합에 설정할 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조체의 배열입니다.
 
 *ppRowset*<br/>
 [out] 새로 만든 스키마 행 집합에서 요청된 인터페이스에 대한 포인터입니다.
@@ -256,9 +256,9 @@ STDMETHOD (GetRowset)(IUnknown *pUnkOuter,
 
 이 메서드를 사용하려면 사용자에게 세션 클래스의 스키마 맵이 있어야 합니다. 스키마 맵 정보를 사용 하 여 `GetRowset` 하는 경우 지정 된 행 집합 개체를 만듭니다 합니다 *rguidSchema* 맵 항목 Guid 중 하나로 매개 변수와 같습니다. 맵 항목에 대한 설명은 [SCHEMA_ENTRY](../../data/oledb/schema-entry.md) 를 참조하세요.
 
-참조 [idbschemarowset:: Getrowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms722634(v=vs.85)) Windows SDK에에서 있습니다.
+참조 [idbschemarowset:: Getrowset](/previous-versions/windows/desktop/ms722634(v=vs.85)) Windows SDK에에서 있습니다.
 
-## <a name="getschemas"></a> Idbschemarowsetimpl:: Getschemas
+## <a name="getschemas"></a> IDBSchemaRowsetImpl::GetSchemas
 
 [IDBSchemaRowsetImpl::GetRowset](../../data/oledb/idbschemarowsetimpl-getrowset.md)에서 액세스할 수 있는 스키마 행 집합 목록을 반환합니다.
 
@@ -283,7 +283,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 공급자가 지원하는 모든 스키마 행 집합의 배열을 반환합니다. 참조 [idbschemarowset:: Getschemas](https://docs.microsoft.com/previous-versions/windows/desktop/ms719605(v=vs.85)) Windows SDK에에서 있습니다.
+이 메서드는 공급자가 지원하는 모든 스키마 행 집합의 배열을 반환합니다. 참조 [idbschemarowset:: Getschemas](/previous-versions/windows/desktop/ms719605(v=vs.85)) Windows SDK에에서 있습니다.
 
 이 함수를 구현하려면 사용자에게 세션 클래스의 스키마 맵이 있어야 합니다. 스키마 맵 정보를 사용하는 경우 맵의 스키마에 대한 GUID 배열로 응답합니다. 이는 공급자가 지원하는 스키마를 나타냅니다.
 

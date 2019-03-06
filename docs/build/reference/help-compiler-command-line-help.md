@@ -12,12 +12,12 @@ helpviewer_keywords:
 - -? compiler option [C++]
 - cl.exe compiler, command-line syntax
 ms.assetid: 192533e7-86f2-48e0-a08f-b5e4e3a4e784
-ms.openlocfilehash: f12b7d35bb5621837c6eda3857f4e51eb2685ba3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 871bbd8fe69b390acb7c3ee29a7ae2d73200f648
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435466"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424186"
 ---
 # <a name="help-compiler-command-line-help"></a>/HELP(컴파일러 명령줄 도움말)
 
@@ -41,7 +41,7 @@ ms.locfileid: "50435466"
 
 - 이 컴파일러 옵션을 프로그래밍 방식으로 변경할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

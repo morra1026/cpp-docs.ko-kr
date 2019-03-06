@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CTabCtrl [MFC], SetPadding
 - CTabCtrl [MFC], SetToolTips
 ms.assetid: 42e4aff6-46ae-4b2c-beaa-d1dce8d82138
-ms.openlocfilehash: 62d42995a3d1b4a61dbd3ff38c48d9b300177798
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: ccf35c7a036a69487d5138baf8c017f9c5995bef
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259544"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425018"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl 클래스
 
@@ -170,7 +170,7 @@ void AdjustRect(BOOL bLarger,   LPRECT lpRect);
 어떤 작업을 수행할지를 나타냅니다. 이 매개 변수가 TRUE 이면 *lpRect* 표시 사각형을 지정 하 고 해당 창 사각형을 수신 합니다. 이 매개 변수가 FALSE 이면 *lpRect* 창 사각형을 지정 하 고 해당 표시 사각형을 수신 합니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 계산 된 사각형을 받고 지정 된 사각형을 지정 하는 구조입니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 계산 된 사각형을 받고 지정 된 사각형을 지정 하는 구조입니다.
 
 ### <a name="example"></a>예제
 
@@ -194,7 +194,7 @@ virtual BOOL Create(
 탭 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [컨트롤 스타일 탭](/windows/desktop/Controls/tab-control-styles)Windows SDK에서 설명 합니다. 참조 **주의** 목록은 창 스타일을 컨트롤에 적용할 수 있습니다.
 
 *rect*<br/>
-탭 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+탭 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 탭 컨트롤의 부모 창에 일반적으로 지정 된 `CDialog`합니다. NULL이 아니어야 합니다.
@@ -250,7 +250,7 @@ virtual BOOL CreateEx(
 탭 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [컨트롤 스타일 탭](/windows/desktop/Controls/tab-control-styles)Windows SDK에서 설명 합니다. 참조 **주의** 에 [만들기](#create) 목록은 창 스타일을 컨트롤에 적용할 수 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -485,7 +485,7 @@ BOOL GetItemRect(int nItem,   LPRECT lpRect) const;
 탭 항목의 0부터 시작 인덱스입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 탭의 경계 사각형을 수신 하는 구조입니다. 이러한 좌표는 뷰포트의 현재 매핑 모드를 사용합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 탭의 경계 사각형을 수신 하는 구조입니다. 이러한 좌표는 뷰포트의 현재 매핑 모드를 사용합니다.
 
 ### <a name="return-value"></a>반환 값
 

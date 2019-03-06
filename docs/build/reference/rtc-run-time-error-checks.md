@@ -25,12 +25,12 @@ helpviewer_keywords:
 - RTCc compiler option
 - -RTCc compiler option [C++]
 ms.assetid: 9702c558-412c-4004-acd5-80761f589368
-ms.openlocfilehash: 77dc97ee07499b7df37a115dafafddd71acb7bb1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ac70904332f5f05463b317f02a2ab8d3bfc7bb3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655003"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424615"
 ---
 # <a name="rtc-run-time-error-checks"></a>/RTC(런타임 오류 검사)
 
@@ -53,7 +53,7 @@ ms.locfileid: "50655003"
 **c**<br/>
 값에 보고서는 더 작은 데이터 형식 및 데이터 손실의 결과에 할당 됩니다. 예를 들어, 값 형식 `short 0x101` 형식의 변수에 할당 된 `char`합니다.
 
-이 옵션으로 경우 보고 있는 있습니다 예를 들어 truncate의 처음 8 비트를 하려는 경우는 `int` 로 반환 된 `char`합니다. 때문에 **/RTC** `c` 런타임 오류가 발생의 결과로 런타임 오류를 방지 하는 데 필요한 정보 가릴 수 정보가 할당으로 인해 손실 된 경우 **/RTC** `c`. 예를 들어:
+이 옵션으로 경우 보고 있는 있습니다 예를 들어 truncate의 처음 8 비트를 하려는 경우는 `int` 로 반환 된 `char`합니다. 때문에 **/RTC** `c` 런타임 오류가 발생의 결과로 런타임 오류를 방지 하는 데 필요한 정보 가릴 수 정보가 할당으로 인해 손실 된 경우 **/RTC** `c`. 예를 들면,
 
 ```
 #include <crtdbg.h>
@@ -95,7 +95,7 @@ c = a;  // No run-time error with /RTCu
 
 ## <a name="remarks"></a>설명
 
-런타임 오류 검사는 실행 중인 코드에서 문제를 발견 하는 방법 자세한 내용은 [방법: 사용 하 여 네이티브 런타임 검사](/visualstudio/debugger/how-to-use-native-run-time-checks)합니다.
+런타임 오류 검사는 실행 중인 코드에서 문제를 발견 하는 방법 자세한 내용은 참조 하세요. [방법: 네이티브 런타임 검사 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)합니다.
 
 프로그램 중 하나를 사용 하 여 명령줄에서 컴파일하는 경우는 **/RTC** 컴파일러 옵션, pragma [최적화](../../preprocessor/optimize.md) 코드의 지침에 자동으로 실패 합니다. 즉, 런타임 오류 검사 (최적화) 릴리스 빌드에서 사용할 수 없습니다.
 
@@ -111,14 +111,15 @@ __MSVC_RUNTIME_CHECKS 전처리기 지시문을 사용할 때 정의 됩니다 *
 
 1. 클릭 합니다 **코드 생성** 속성 페이지.
 
-1. 다음 속성 중 하나 또는 모두를 수정 합니다. **기본 런타임 검사** 하거나 **작은 형식 검사**합니다.
+1. 다음 속성 중 하나 또는 모두를 수정 합니다. **기본 런타임 검사** 나 **검사를 더 작은 입력**합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> 속성을 참조하십시오.
+- 
+  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BasicRuntimeChecks%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SmallerTypeCheck%2A> 속성을 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[방법: 네이티브 런타임 검사 기능 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)
+[방법: 네이티브 런타임 검사 사용](/visualstudio/debugger/how-to-use-native-run-time-checks)

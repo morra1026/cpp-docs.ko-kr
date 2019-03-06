@@ -1,5 +1,5 @@
 ---
-title: '방법: 대상 프레임워크 및 플랫폼 도구 집합 수정'
+title: '방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정'
 ms.custom: conceptual
 ms.date: 11/04/2016
 f1_keywords:
@@ -7,14 +7,14 @@ f1_keywords:
 helpviewer_keywords:
 - 'msbuild (c++), howto: modify target framework and platform toolset'
 ms.assetid: 031b1d54-e6e1-4da7-9868-3e75a87d9ffe
-ms.openlocfilehash: 7759cf13e95fab97ee5a7b77e22c690a69fde41a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12f4f67eee59137042ef36f6709e921287d5528e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523113"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424777"
 ---
-# <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임워크 및 플랫폼 도구 집합 수정
+# <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>방법: 대상 프레임 워크 및 플랫폼 도구 집합 수정
 
 다른 버전의.NET Framework를 대상으로 하는 다른 플랫폼 도구 집합을 사용 하 여 Visual C++ 프로젝트 설정을 변경할 수 있습니다. 기본적으로 프로젝트 시스템에는 프로젝트를 만드는 데 사용하는 Visual Studio 버전에 해당하는 .NET Framework 버전 및 도구 집합 버전이 사용됩니다. 프로젝트 속성을 수정하여 대상 플랫폼 도구 집합을 변경할 수 있습니다. 프로젝트 파일(.vcxproj)을 수정하여 대상 프레임워크를 변경할 수 있습니다. 각 컴파일 대상에 대해 별도의 코드베이스를 유지 관리할 필요는 없습니다.
 
@@ -59,6 +59,6 @@ ms.locfileid: "50523113"
 
 1. **확인** 단추를 선택합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSBuild(Visual C++)](../build/msbuild-visual-cpp.md)

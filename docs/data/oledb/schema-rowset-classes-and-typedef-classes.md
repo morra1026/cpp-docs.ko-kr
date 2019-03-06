@@ -1072,12 +1072,12 @@ helpviewer_keywords:
 - m_szTableCatalog
 - m_szTableName
 ms.assetid: 4bd881b3-26ca-4bdb-9226-d67560864f29
-ms.openlocfilehash: f6899f6edf87f2d81f31fac40ac78ba5798d8d8c
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 2ba593447b96f8fd5550a5e3ba64c20ca582afb8
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557104"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420650"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>스키마 행 집합 클래스 및 Typedef 클래스
 
@@ -1085,42 +1085,42 @@ ms.locfileid: "51557104"
 
 스키마 행 집합은 미리 정의 된 행 집합 메타 데이터를 나타내는입니다. 동적 프로그래밍에서 스키마 행 집합 일반적으로 사용 되므로 여기서 컴파일 시간에는 데이터베이스 구조 알려져 있지 않습니다. 런타임 시 데이터베이스에 대 한 정보를 가져오려면 이러한 스키마 행 집합을 사용할 수 있습니다.
 
-Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합니다. 해당 형식 정의와 스키마 행 집합 클래스는 다음과 같습니다. 호출 해야 합니다 [crestrictions:: Open](../../data/oledb/crestrictions-open.md) 스키마 행 집합의 인스턴스를 만든 후 합니다. 이 메서드는 지정한 제한에 따라 결과 집합을 반환 합니다. 참조 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 각 스키마 행 집합을 사용 하 여 연결 하는 제한 열에 대 한 정보에 대 한 합니다.
+Typedef 클래스를 사용 하 여 스키마 행 집합을 인스턴스화합니다. 해당 형식 정의와 스키마 행 집합 클래스는 다음과 같습니다. 호출 해야 합니다 [crestrictions:: Open](../../data/oledb/crestrictions-open.md) 스키마 행 집합의 인스턴스를 만든 후 합니다. 이 메서드는 지정한 제한에 따라 결과 집합을 반환 합니다. 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 각 스키마 행 집합을 사용 하 여 연결 하는 제한 열에 대 한 정보에 대 한 합니다.
 
 다음 표에 각 OLE DB 스키마 행 집합 및 해당 OLE DB 템플릿에서 typedef 클래스 및 info 클래스입니다.
 
 |OLE DB 스키마 행 집합|Typedef 클래스|Info 클래스입니다.|
 |--------------------------|-------------------|----------------|
-|[어설션](https://docs.microsoft.com/previous-versions/windows/desktop/ms719776(v=vs.85))|[CAssertions](#assertion)|[CAssertionInfo](#assertion)|
-|[카탈로그](https://docs.microsoft.com/previous-versions/windows/desktop/ms721241(v=vs.85))|[CCatalogs](#catalog)|[CCatalogInfo](#catalog)|
-|[CHARACTER_SETS](https://docs.microsoft.com/previous-versions/windows/desktop/ms722638(v=vs.85))|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|
-|[데이터 정렬](https://docs.microsoft.com/previous-versions/windows/desktop/ms715783(v=vs.85))|[CCollations](#collation)|[CCollationInfo](#collation)|
-|[COLUMN_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms715800(v=vs.85))|[CColumnPrivileges](#columnprivilege)|[CColumnPrivilegeInfo](#columnprivilege)|
-|[COLUMNS](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85))|[CColumns](#columns)|[CColumnsInfo](#columns)|
-|[CONSTRAINT_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85))|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|
-|[CONSTRAINT_TABLE_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms713710(v=vs.85))|[CConstraintTableUsage](#constrainttableusage)|[CConstraintTableUsageInfo](#constrainttableusage)|
-|[CHECK_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms712845(v=vs.85))|[CCheckConstraints](#checkconstraint)|[CCheckConstraintInfo](#checkconstraint)|
-|[COLUMN_DOMAIN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms711240(v=vs.85))|[CColumnDomainUsage](#columndomainusage)|[CColumnDomainUsageInfo](#columndomainusage)|
-|[FOREIGN_KEYS](https://docs.microsoft.com/previous-versions/windows/desktop/ms711276(v=vs.85))|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|
-|[INDEXES](https://docs.microsoft.com/previous-versions/windows/desktop/ms709712(v=vs.85))|[CIndexes](#index)|[CIndexInfo](#index)|
-|[KEY_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms712990(v=vs.85))|[CKeyColumn](#keycolumn)|[CKeyColumnInfo](#keycolumn)|
-|[PRIMARY_KEYS](https://docs.microsoft.com/previous-versions/windows/desktop/ms714362(v=vs.85))|[CPrimaryKeys](#primarykey)|[CPrimaryKeyInfo](#primarykey)|
-|[프로시저](https://docs.microsoft.com/previous-versions/windows/desktop/ms724021(v=vs.85))|[CProcedures](#procedure)|[CProcedureInfo](#procedure)|
-|[PROCEDURE_COLUMNS](https://docs.microsoft.com/previous-versions/windows/desktop/ms723092(v=vs.85))|[CProcedureColumns](#procedurecolumn)|[CProcedureColumnInfo](#procedurecolumn)|
-|[PROCEDURE_PARAMETERS](https://docs.microsoft.com/previous-versions/windows/desktop/ms713623(v=vs.85))|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|
-|[PROVIDER_TYPES](https://docs.microsoft.com/previous-versions/windows/desktop/ms709785(v=vs.85))|[CProviderTypes](#provider)|[CProviderInfo](#provider)|
-|[REFERENTIAL_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms719737(v=vs.85))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
-|[SCHEMATA](https://docs.microsoft.com/previous-versions/windows/desktop/ms716887(v=vs.85))|[CSchemata](#schemata)|[CSchemataInfo](#schemata)|
-|[SQL_LANGUAGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms714374(v=vs.85))|[CSQLLanguages](#sqllanguage)|[CSQLLanguageInfo](#sqllanguage)|
-|[STATISTICS](https://docs.microsoft.com/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[CStatisticInfo](#statistic)|
-|[TABLE_CONSTRAINTS](https://docs.microsoft.com/previous-versions/windows/desktop/ms715921(v=vs.85))|[CTableConstraints](#tableconstraint)|[CTableConstraintInfo](#tableconstraint)|
-|[TABLES](https://docs.microsoft.com/previous-versions/windows/desktop/ms716980(v=vs.85))|[CTables](#table)|[CTableInfo](#table)|
-|[TABLE_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms725428(v=vs.85))|[CTablePrivileges](#tableprivilege)|[CTablePrivilegeInfo](#tableprivilege)|
-|[번역](https://docs.microsoft.com/previous-versions/windows/desktop/ms725365(v=vs.85))|[CTranslations](#translation)|[CTranslationInfo](#translation)|
-|[USAGE_PRIVILEGES](https://docs.microsoft.com/previous-versions/windows/desktop/ms722743(v=vs.85))|[CUsagePrivileges](#usageprivilege)|[CUsagePrivilegeInfo](#usageprivilege)|
-|[VIEW_COLUMN_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms714896(v=vs.85))|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|
-|[VIEWS](https://docs.microsoft.com/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[CViewInfo](#view)|
-|[VIEW_TABLE_USAGE](https://docs.microsoft.com/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[CViewTableInfo](#viewtable)|
+|[어설션](/previous-versions/windows/desktop/ms719776(v=vs.85))|[CAssertions](#assertion)|[CAssertionInfo](#assertion)|
+|[CATALOGS](/previous-versions/windows/desktop/ms721241(v=vs.85))|[CCatalogs](#catalog)|[CCatalogInfo](#catalog)|
+|[CHARACTER_SETS](/previous-versions/windows/desktop/ms722638(v=vs.85))|[CCharacterSets](#characterset)|[CCharacterSetInfo](#characterset)|
+|[데이터 정렬](/previous-versions/windows/desktop/ms715783(v=vs.85))|[CCollations](#collation)|[CCollationInfo](#collation)|
+|[COLUMN_PRIVILEGES](/previous-versions/windows/desktop/ms715800(v=vs.85))|[CColumnPrivileges](#columnprivilege)|[CColumnPrivilegeInfo](#columnprivilege)|
+|[COLUMNS](/previous-versions/windows/desktop/ms723052(v=vs.85))|[CColumns](#columns)|[CColumnsInfo](#columns)|
+|[CONSTRAINT_COLUMN_USAGE](/previous-versions/windows/desktop/ms724522(v=vs.85))|[CConstraintColumnUsage](#constraintcolumnusage)|[CConstraintColumnUsageInfo](#constraintcolumnusage)|
+|[CONSTRAINT_TABLE_USAGE](/previous-versions/windows/desktop/ms713710(v=vs.85))|[CConstraintTableUsage](#constrainttableusage)|[CConstraintTableUsageInfo](#constrainttableusage)|
+|[CHECK_CONSTRAINTS](/previous-versions/windows/desktop/ms712845(v=vs.85))|[CCheckConstraints](#checkconstraint)|[CCheckConstraintInfo](#checkconstraint)|
+|[COLUMN_DOMAIN_USAGE](/previous-versions/windows/desktop/ms711240(v=vs.85))|[CColumnDomainUsage](#columndomainusage)|[CColumnDomainUsageInfo](#columndomainusage)|
+|[FOREIGN_KEYS](/previous-versions/windows/desktop/ms711276(v=vs.85))|[CForeignKeys](#foreignkeys)|[CForeignKeysInfo](#foreignkeys)|
+|[INDEXES](/previous-versions/windows/desktop/ms709712(v=vs.85))|[CIndexes](#index)|[CIndexInfo](#index)|
+|[KEY_COLUMN_USAGE](/previous-versions/windows/desktop/ms712990(v=vs.85))|[CKeyColumn](#keycolumn)|[CKeyColumnInfo](#keycolumn)|
+|[PRIMARY_KEYS](/previous-versions/windows/desktop/ms714362(v=vs.85))|[CPrimaryKeys](#primarykey)|[CPrimaryKeyInfo](#primarykey)|
+|[프로시저](/previous-versions/windows/desktop/ms724021(v=vs.85))|[CProcedures](#procedure)|[CProcedureInfo](#procedure)|
+|[PROCEDURE_COLUMNS](/previous-versions/windows/desktop/ms723092(v=vs.85))|[CProcedureColumns](#procedurecolumn)|[CProcedureColumnInfo](#procedurecolumn)|
+|[PROCEDURE_PARAMETERS](/previous-versions/windows/desktop/ms713623(v=vs.85))|[CProcedureParameters](#procedureparam)|[CProcedureParameterInfo](#procedureparam)|
+|[PROVIDER_TYPES](/previous-versions/windows/desktop/ms709785(v=vs.85))|[CProviderTypes](#provider)|[CProviderInfo](#provider)|
+|[REFERENTIAL_CONSTRAINTS](/previous-versions/windows/desktop/ms719737(v=vs.85))|[CReferentialConstraints](#referentialconstraint)|[CReferentialConstraintInfo](#referentialconstraint)|
+|[SCHEMATA](/previous-versions/windows/desktop/ms716887(v=vs.85))|[CSchemata](#schemata)|[CSchemataInfo](#schemata)|
+|[SQL_LANGUAGES](/previous-versions/windows/desktop/ms714374(v=vs.85))|[CSQLLanguages](#sqllanguage)|[CSQLLanguageInfo](#sqllanguage)|
+|[STATISTICS](/previous-versions/windows/desktop/ms715957(v=vs.85))|[CStatistics](#statistic)|[CStatisticInfo](#statistic)|
+|[TABLE_CONSTRAINTS](/previous-versions/windows/desktop/ms715921(v=vs.85))|[CTableConstraints](#tableconstraint)|[CTableConstraintInfo](#tableconstraint)|
+|[TABLES](/previous-versions/windows/desktop/ms716980(v=vs.85))|[CTables](#table)|[CTableInfo](#table)|
+|[TABLE_PRIVILEGES](/previous-versions/windows/desktop/ms725428(v=vs.85))|[CTablePrivileges](#tableprivilege)|[CTablePrivilegeInfo](#tableprivilege)|
+|[번역](/previous-versions/windows/desktop/ms725365(v=vs.85))|[CTranslations](#translation)|[CTranslationInfo](#translation)|
+|[USAGE_PRIVILEGES](/previous-versions/windows/desktop/ms722743(v=vs.85))|[CUsagePrivileges](#usageprivilege)|[CUsagePrivilegeInfo](#usageprivilege)|
+|[VIEW_COLUMN_USAGE](/previous-versions/windows/desktop/ms714896(v=vs.85))|[CViewColumnUsage](#viewcolumn)|[CViewColumnInfo](#viewcolumn)|
+|[VIEWS](/previous-versions/windows/desktop/ms723122(v=vs.85))|[CViews](#view)|[CViewInfo](#view)|
+|[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727(v=vs.85))|[CViewTableUsage](#viewtable)|[CViewTableInfo](#viewtable)|
 
 ## <a name="assertion"></a> CAssertions, CAssertionInfo
 
@@ -1132,7 +1132,7 @@ Typedef 클래스를 호출 `CAssertions` 해당 매개 변수 클래스를 구�
 
 이 클래스는 지정된 된 사용자가 소유 하는 카탈로그에 정의 된 어설션을 식별 합니다.
 
-다음 표에 클래스 데이터 멤버에 대 한 `CAssertionInfo` 및 해당 OLE DB 열입니다. 참조 [어설션을 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms719776(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에 클래스 데이터 멤버에 대 한 `CAssertionInfo` 및 해당 OLE DB 열입니다. 참조 [어설션을 행 집합](/previous-versions/windows/desktop/ms719776(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1153,7 +1153,7 @@ Typedef 클래스를 호출 `CCatalogs` 해당 매개 변수 클래스를 구현
 
 이 클래스는 DBMS에서 액세스 가능한 카탈로그와 연결 된 실제 특성을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [카탈로그 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms721241(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [카탈로그 행 집합](/previous-versions/windows/desktop/ms721241(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1170,7 +1170,7 @@ Typedef 클래스를 호출 `CCharacterSets` 해당 매개 변수 클래스를 �
 
 이 클래스는 지정된 사용자가 액세스할 수 있는 카탈로그에 정의된 문자 집합을 식별합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHARACTER_SETS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms722638(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHARACTER_SETS 행 집합](/previous-versions/windows/desktop/ms722638(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1193,7 +1193,7 @@ Typedef 클래스를 호출 `CCheckConstraints` 해당 매개 변수 클래스�
 
 이 클래스는 check 제약 조건 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다. Check 제약 조건 데이터 값 또는 테이블에 하나 이상의 열에서 사용할 수 있는 형식을 지정 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHECK_CONSTRAINTS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms712845(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CHECK_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms712845(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1213,7 +1213,7 @@ Typedef 클래스를 호출 `CCollations` 해당 매개 변수 클래스를 구�
 
 이 클래스는 문자 데이터 정렬을 카탈로그에 정의 된 지정된 된 사용자에 액세스할 수 있는 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [데이터 정렬은 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms715783(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [데이터 정렬은 행 집합](/previous-versions/windows/desktop/ms715783(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1235,7 +1235,7 @@ Typedef 클래스를 호출 `CColumnDomainUsage` 해당 매개 변수 클래스�
 
 이 클래스에는 열 카탈로그에 정의 된 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 도메인에 종속 된 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_DOMAIN_USAGE 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms711240(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_DOMAIN_USAGE 행 집합](/previous-versions/windows/desktop/ms711240(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1259,7 +1259,7 @@ Typedef 클래스를 호출 `CColumnPrivileges` 해당 매개 변수 클래스�
 
 이 클래스에는 카탈로그에 정의 사용할 수 있거나 지정된 된 사용자가 승인한 수 있는 테이블의 열에 대 한 권한을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_PRIVILEGES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms715800(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMN_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms715800(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1284,7 +1284,7 @@ Typedef 클래스를 호출 `CColumns` 해당 매개 변수 클래스를 구현 
 
 이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 테이블의 열을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMNS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms723052(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [COLUMNS 행 집합](/previous-versions/windows/desktop/ms723052(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1327,7 +1327,7 @@ Typedef 클래스를 호출 `CConstraintColumnUsage` 해당 매개 변수 클래
 
 이 클래스는 참조 제약 조건, unique 제약 조건, check 제약 조건 및 어설션을 사용 하 고 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 열을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_COLUMN_USAGE 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms724522(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1351,7 +1351,7 @@ Typedef 클래스를 호출 `CConstraintTableUsage` 해당 매개 변수 클래�
 
 이 클래스는 참조 제약 조건, unique 제약 조건, check 제약 조건 및 어설션을 사용 하 고 카탈로그에 정의 된 지정된 된 사용자가 소유 하 고 테이블을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_TABLE_USAGE 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms724522(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [CONSTRAINT_TABLE_USAGE 행 집합](/previous-versions/windows/desktop/ms724522(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1372,7 +1372,7 @@ Typedef 클래스를 호출 `CForeignKeys` 해당 매개 변수 클래스를 구
 
 이 클래스는 지정된 된 사용자가 카탈로그에 정의 된 외래 키 열을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [FOREIGN_KEYS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms711276(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [FOREIGN_KEYS 행 집합](/previous-versions/windows/desktop/ms711276(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1402,7 +1402,7 @@ Typedef 클래스를 호출 `CIndexes` 해당 매개 변수 클래스를 구현 
 
 이 클래스는 인덱스, 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [INDEXES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms709712(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [INDEXES 행 집합](/previous-versions/windows/desktop/ms709712(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1441,7 +1441,7 @@ Typedef 클래스를 호출 `CKeyColumns` 해당 매개 변수 클래스를 구�
 
 이 클래스에는 열 카탈로그에 정의 된 지정된 된 사용자가 키로 제한 되는 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [KEY_COLUMN_USAGE 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms712990(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [KEY_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms712990(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1466,7 +1466,7 @@ Typedef 클래스를 호출 `CPrimaryKeys` 해당 매개 변수 클래스를 구
 
 이 클래스는 지정된 된 사용자가 카탈로그에 정의 된 기본 키 열을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PRIMARY_KEYS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms714362(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PRIMARY_KEYS 행 집합](/previous-versions/windows/desktop/ms714362(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1488,7 +1488,7 @@ Typedef 클래스를 호출 `CProcedureColumns` 해당 매개 변수 클래스�
 
 이 클래스는 프로시저에서 반환 된 행 집합의 열에 대 한 정보를 반환 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_COLUMNS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms723092(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_COLUMNS 행 집합](/previous-versions/windows/desktop/ms723092(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1519,7 +1519,7 @@ Typedef 클래스를 호출 `CProcedureParameters` 해당 매개 변수 클래�
 
 이 클래스는 매개 변수와 프로시저 반환 코드에 대 한 정보를 반환합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_PARAMETERS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms713623(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROCEDURE_PARAMETERS 행 집합](/previous-versions/windows/desktop/ms713623(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1549,7 +1549,7 @@ Typedef 클래스를 호출 `CProcedures` 해당 매개 변수 클래스를 구�
 
 이 클래스에 정의 된 프로시저 카탈로그에 지정된 된 사용자가 소유한를 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [프로시저 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms724021(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [프로시저 행 집합](/previous-versions/windows/desktop/ms724021(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1570,7 +1570,7 @@ Typedef 클래스를 호출 `CProviderTypes` 해당 매개 변수 클래스를 �
 
 이 클래스는 데이터 공급자를 지 원하는 기본 데이터 유형을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROVIDER_TYPES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms709785(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [PROVIDER_TYPES 행 집합](/previous-versions/windows/desktop/ms709785(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1605,7 +1605,7 @@ Typedef 클래스를 호출 `CReferentialConstraints` 해당 매개 변수 클�
 
 이 클래스는 참조 제약 조건, 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [REFERENTIAL_CONSTRAINTS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms719737(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [REFERENTIAL_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms719737(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1630,7 +1630,7 @@ Typedef 클래스를 호출 `CSchemata` 해당 매개 변수 클래스를 구현
 
 이 클래스는 지정된 된 사용자가 소유한 스키마를 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [스키마 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms716887(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [스키마 행 집합](/previous-versions/windows/desktop/ms716887(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1651,7 +1651,7 @@ Typedef 클래스를 호출 `CSQLLanguages` 해당 매개 변수 클래스를 �
 
 이 클래스는 적합성 수준, 옵션 및 카탈로그에 정의 된 SQL 구현 처리 데이터에서 지 원하는 언어를 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [SQL_LANGUAGES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms714374(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [SQL_LANGUAGES 행 집합](/previous-versions/windows/desktop/ms714374(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1673,7 +1673,7 @@ Typedef 클래스를 호출 `CStatistics` 해당 매개 변수 클래스를 구�
 
 이 클래스에는 통계 카탈로그에 정의 된 지정된 된 사용자가 소유한 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [통계 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms715957(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [통계 행 집합](/previous-versions/windows/desktop/ms715957(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1692,7 +1692,7 @@ Typedef 클래스를 호출 `CTableConstraints` 해당 매개 변수 클래스�
 
 이 클래스는 테이블 제약 조건 카탈로그에 정의 된 지정된 된 사용자가 소유한를 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_CONSTRAINTS 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms715921(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_CONSTRAINTS 행 집합](/previous-versions/windows/desktop/ms715921(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1717,7 +1717,7 @@ Typedef 클래스를 호출 `CTablePrivileges` 해당 매개 변수 클래스를
 
 이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 테이블을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_PRIVILEGES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms725428(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLE_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms725428(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1739,7 +1739,7 @@ Typedef 클래스를 호출 `CTables` 해당 매개 변수 클래스를 구현 �
 
 이 클래스에는 카탈로그에 정의 된을 사용할 수 있거나 지정된 된 사용자가 부여 하는 테이블에 대 한 권한을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms716980(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [TABLES 행 집합](/previous-versions/windows/desktop/ms716980(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1760,7 +1760,7 @@ Typedef 클래스를 호출 `CTranslations` 해당 매개 변수 클래스를 �
 
 이 클래스는 지정된 된 사용자에 액세스할 수 있는 카탈로그에 정의 된 문자 변환을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [번역 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms725365(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [번역 행 집합](/previous-versions/windows/desktop/ms725365(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1784,7 +1784,7 @@ Typedef 클래스를 호출 `CUsagePrivileges` 해당 매개 변수 클래스를
 
 이 클래스를 사용할 수 있거나 지정된 된 사용자가 부여 하는 카탈로그에 정의 된 개체에 대 한 사용 권한을 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [USAGE_PRIVILEGES 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms722743(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [USAGE_PRIVILEGES 행 집합](/previous-versions/windows/desktop/ms722743(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1807,7 +1807,7 @@ Typedef 클래스를 호출 `CViewColumnUsage` 해당 매개 변수 클래스를
 
 이 클래스 열을 식별에 카탈로그에 정의 된 테이블을 보고 지정된 된 사용자가 소유한 다릅니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_COLUMN_USAGE 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms714896(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_COLUMN_USAGE 행 집합](/previous-versions/windows/desktop/ms714896(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1831,7 +1831,7 @@ Typedef 클래스를 호출 `CViews` 해당 매개 변수 클래스를 구현 �
 
 이 클래스 테이블을 식별에 카탈로그에 정의 된 테이블을 보고 지정된 된 사용자가 소유한 다릅니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [뷰 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms723122(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [뷰 행 집합](/previous-versions/windows/desktop/ms723122(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|
@@ -1853,7 +1853,7 @@ Typedef 클래스를 호출 `CViewTableUsage` 해당 매개 변수 클래스를 
 
 이 클래스에는 표시, 정의 된 테이블은 카탈로그에 지정된 된 사용자에 액세스할 수 있는 식별 합니다.
 
-다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_TABLE_USAGE 행 집합](https://docs.microsoft.com/previous-versions/windows/desktop/ms719727(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
+다음 표에는 클래스 데이터 멤버 및 해당 OLE DB 열이 나열됩니다. 참조 [VIEW_TABLE_USAGE 행 집합](/previous-versions/windows/desktop/ms719727(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 및 열에 대 한 자세한 내용은 합니다.
 
 |데이터 멤버|OLE DB 열|
 |------------------|--------------------|

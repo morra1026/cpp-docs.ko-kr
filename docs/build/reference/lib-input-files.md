@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - input files, LIB
 ms.assetid: e1236f0d-cd90-446b-b900-f311f456085c
-ms.openlocfilehash: 885d03e74c7acff54e527c2dbad38de055913b5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb0095bd9e8699fbc9a1a144833d12d2cf4a1f83
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503324"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423094"
 ---
 # <a name="lib-input-files"></a>LIB 입력 파일
 
@@ -26,6 +26,6 @@ LIB에서 예상한 입력된 파일 표에 표시 된 것 처럼가 사용 되 
 > [!NOTE]
 >  LIB 16 비트 버전에서 만들어진 OMF 라이브러리는 32 비트 버전의 LIB 입력으로 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LIB 개요](../../build/reference/overview-of-lib.md)

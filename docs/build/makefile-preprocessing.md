@@ -5,12 +5,12 @@ helpviewer_keywords:
 - preprocessing makefiles
 - makefiles, preprocessing
 ms.assetid: a9185139-97c9-4adb-b4a9-1ec395cce9f8
-ms.openlocfilehash: f603282c979147600889a3daab39bfa3d1702c78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 68e8cc9223968f545079d35b6f06ce7665c0f6fe
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646279"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420884"
 ---
 # <a name="makefile-preprocessing"></a>메이크파일 전처리
 
@@ -22,6 +22,6 @@ ms.locfileid: "50646279"
 
 [메이크파일 전처리 식](../build/expressions-in-makefile-preprocessing.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMAKE 참조](../build/nmake-reference.md)

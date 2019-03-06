@@ -37,12 +37,12 @@ helpviewer_keywords:
 - m_szName
 - m_szParseName
 ms.assetid: 21e8e7ea-3511-4afe-b33f-d520f4ff82bb
-ms.openlocfilehash: 2bcbf55c4bc6d546c8a2b4eca3ea2dbeafc613fa
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 1fa04d94e4e6785e5a9d0941ce44a4404b1e28da
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556350"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423393"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor 클래스
 
@@ -74,7 +74,7 @@ class CEnumeratorAccessor
 
 이 행 집합은 데이터 원본 및 현재 열거자에서 표시 되는 열거자 구성 됩니다.
 
-## <a name="bisparent"></a> Cenumeratoraccessor:: M_bisparent
+## <a name="bisparent"></a> CEnumeratorAccessor::m_bIsParent
 
 있는지 여부를 나타내는 열거자 부모 열거자의 경우 행이 열거자는 변수입니다.
 
@@ -86,9 +86,9 @@ VARIANT_BOOL m_bIsParent;
 
 ### <a name="remarks"></a>설명
 
-참조 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
-## <a name="ntype"></a> Cenumeratoraccessor:: M_ntype
+## <a name="ntype"></a> CEnumeratorAccessor::m_nType
 
 행이 데이터 원본 또는 열거자를 설명 하는지 여부를 나타내는 변수입니다.
 
@@ -100,9 +100,9 @@ USHORT m_nType;
 
 ### <a name="remarks"></a>설명
 
-참조 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
-## <a name="szdescription"></a> Cenumeratoraccessor:: M_szdescription
+## <a name="szdescription"></a> CEnumeratorAccessor::m_szDescription
 
 데이터 원본 또는 열거자의 설명입니다.
 
@@ -114,9 +114,9 @@ WCHAR m_szDescription[129];
 
 ### <a name="remarks"></a>설명
 
-참조 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
-## <a name="szname"></a> Cenumeratoraccessor:: M_szname
+## <a name="szname"></a> CEnumeratorAccessor::m_szName
 
 데이터 원본 또는 열거자의 이름입니다.
 
@@ -128,9 +128,9 @@ WCHAR m_szName[129];
 
 ### <a name="remarks"></a>설명
 
-참조 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
-## <a name="szparsename"></a> Cenumeratoraccessor:: M_szparsename
+## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
 
 에 전달할 문자열 [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) 데이터 원본 또는 열거자에 대 한 모니커를 가져오려고 합니다.
 
@@ -142,9 +142,9 @@ WCHAR m_szParseName[129];
 
 ### <a name="remarks"></a>설명
 
-참조 [ISourcesRowset::GetSourcesRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
+참조 [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) 에 *OLE DB Programmer's Reference* 자세한 내용은 합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

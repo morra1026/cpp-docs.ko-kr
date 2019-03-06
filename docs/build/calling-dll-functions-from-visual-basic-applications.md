@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __stdcall keyword [C++]
 - DLL functions [C++], calling
 ms.assetid: 282f7fbf-a0f2-4b9f-b277-1982710be56c
-ms.openlocfilehash: 504bb2fbb6dcdf624f7e6b380cd895e20580824b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88705b2a33e3eb82043d93c534477fce96849502
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521218"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417605"
 ---
 # <a name="calling-dll-functions-from-visual-basic-applications"></a>Visual Basic 응용 프로그램에서 DLL 함수 호출
 
@@ -68,8 +68,8 @@ Visual Basic로 작성 된 프로그램에서 호출할 Dll에 대 한이 항목
 
 - [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
 
-- [트 데코 레이 된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](../build/reference/decorated-names.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

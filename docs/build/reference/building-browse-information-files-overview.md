@@ -7,12 +7,12 @@ helpviewer_keywords:
 - browse information files (.bsc)
 - browse information files (.bsc), creating
 ms.assetid: b5c12832-51f6-4953-8044-4264dd0fb242
-ms.openlocfilehash: d620c7170ef5e84a05496af6e74d3a22f594749b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02f2107469e2fbbc4ea3591e1211e600d16fb9e9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469972"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413019"
 ---
 # <a name="building-browse-information-files-overview"></a>찾아보기 정보 파일 빌드: 개요
 
@@ -43,7 +43,7 @@ ms.locfileid: "50469972"
 
 1. 모든 프로젝트를 빌드한 후는 입력으로 모든.sbr 파일이 BSCMAKE를 실행 합니다. 와일드 카드가 허용 됩니다. 예를 들어 서.bsc 파일 하나에 모두 결합 하려면에서.sbr 파일을 사용 하 여 프로젝트 디렉터리 C:\X, C:\Y, 및 C:\Z을 설치한 경우 다음 사용 하 여 BSCMAKE C:\X\\\*.sbr C:\Y\\\*.sbr C:\Z\\ \*.sbr /o c:\whatever_directory\combined.bsc 결합된.bsc 파일을 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
 [BSCMAKE 참조](../../build/reference/bscmake-reference.md)

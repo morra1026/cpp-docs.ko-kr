@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -RAWDATA dumpbin option
 - /RAWDATA dumpbin option
 ms.assetid: 41cba845-5e1f-415e-9fe4-604a52235983
-ms.openlocfilehash: 91fa1e26ca159f23c848efc6bf46afdea2a8bc52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e884ba8bca7b3ccdf900c7da2c43dd741c03d12
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621483"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413370"
 ---
 # <a name="rawdata"></a>/RAWDATA
 
@@ -35,8 +35,8 @@ ms.locfileid: "50621483"
 |없음|원시 데이터 표시 되지 않습니다. 이 인수는 출력을 제어 하는 데 유용/모든 합니다.|
 |*숫자*|표시 된 줄의 너비를 설정 `number` 줄 값입니다.|
 
-만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+[/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

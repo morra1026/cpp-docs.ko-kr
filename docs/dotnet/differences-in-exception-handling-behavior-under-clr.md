@@ -5,12 +5,12 @@ helpviewer_keywords:
 - EXCEPTION_CONTINUE_EXECUTION macro
 - set_se_translator function
 ms.assetid: 2e7e8daf-d019-44b0-a51c-62d7aaa89104
-ms.openlocfilehash: 4898ff7893ec327495e757f2ffa0eb37ae051875
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fea928fc293ef916d560e51ecb27aee452b6a4c3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551335"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414631"
 ---
 # <a name="differences-in-exception-handling-behavior-under-clr"></a>/CLR을 지정하는 경우 예외 처리 동작의 차이점
 
@@ -97,7 +97,7 @@ We should execute this handler if compiled to native
 
 ##  <a name="vccondisassociatedrethrows"></a> 연결이 끊긴 다시 Throw
 
-**/clr** (연결이 끊긴된 rethrow로 알려짐) catch 처리기 외부에서 예외를 다시 throw 하는 것을 지원 하지 않습니다. 이 형식의 예외가 처리 되는 표준 c + + rethrow로 합니다. 연결이 끊긴된 rethrow 관리 되는 활성 예외가 있을 때 발생 하는 경우 예외는 c + + 예외로 래핑되고 다시 throw 합니다. 이 유형의 예외 형식의 예외로 낼 수 있습니다 [System::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx)합니다.
+**/clr** (연결이 끊긴된 rethrow로 알려짐) catch 처리기 외부에서 예외를 다시 throw 하는 것을 지원 하지 않습니다. 이 형식의 예외가 처리 되는 표준 c + + rethrow로 합니다. 연결이 끊긴된 rethrow 관리 되는 활성 예외가 있을 때 발생 하는 경우 예외는 c + + 예외로 래핑되고 다시 throw 합니다. 이 유형의 예외 형식의 예외로 낼 수 있습니다 <xref:System.Runtime.InteropServices.SEHException>합니다.
 
 다음 예제에서는 c + + 예외가 다시 throw 하는 관리 되는 예외를 보여 줍니다.
 
