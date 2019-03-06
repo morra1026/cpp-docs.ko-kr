@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CPtrList class [MFC]
 - generic lists
 ms.assetid: 4139a09c-4338-4f42-9eea-51336120b43c
-ms.openlocfilehash: dfd545e1758ea257a89606655bf735829dbe8840
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b88b0950b3b46f9738bd26080883c00d46f8555
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586396"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266239"
 ---
 # <a name="cptrlist-class"></a>CPtrList 클래스
 
@@ -41,11 +41,12 @@ class CPtrList : public CObject
 
 포인터 목록은 serialize할 수 없습니다.
 
-`CPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
+
+  `CPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
 
 사용 하 여 대 한 자세한 내용은 `CPtrList`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -55,7 +56,7 @@ class CPtrList : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

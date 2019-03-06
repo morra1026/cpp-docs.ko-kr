@@ -11,12 +11,12 @@ helpviewer_keywords:
 - servers [MFC], installing
 - OLE server applications [MFC], registering servers
 ms.assetid: 991d5684-72c1-4f9e-a09a-9184ed12bbb9
-ms.openlocfilehash: 1c8c0d32db202b8ba26afec708bcc8bab8e3282c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0bc606acfba26d27d0ab36045e4772593e760e98
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272172"
 ---
 # <a name="registration"></a>등록
 
@@ -46,7 +46,7 @@ RegEdit 등록 데이터베이스에.reg 텍스트 파일의 내용을 병합합
 
 응용 프로그램 마법사를 사용 하 여 서버 응용 프로그램을 만들 때 마법사 모든 작업을 완료할 초기화를 자동으로 합니다. 이 섹션에서는 수행 해야 수동으로 서버 응용 프로그램을 작성 하는 경우를 설명 합니다.
 
-서버 응용 프로그램 컨테이너 응용 프로그램에 의해 시작 되 면 OLE 시스템 Dll 서버의 명령줄에 "/ 포함" 옵션을 추가 합니다. 서버 응용 프로그램의 동작에 따라 여부 시작한 컨테이너에서 응용 프로그램 실행을 시작 하는 경우 수행 해야 할 것을 확인 하므로 달라는 "/ 포함" 또는 "-포함" 명령줄 옵션입니다. 이 스위치가 있으면 다른 어느 곳에서 활성으로 서버를 표시 하는 리소스 집합을 로드 또는 완전히 엽니다. 자세한 내용은 [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
+서버 응용 프로그램 컨테이너 응용 프로그램에 의해 시작 되 면 OLE 시스템 Dll 서버의 명령줄에 "/ 포함" 옵션을 추가 합니다. 서버 응용 프로그램의 동작에 따라 여부 시작한 컨테이너에서 응용 프로그램 실행을 시작 하는 경우 수행 해야 할 것을 확인 하므로 달라는 "/ 포함" 또는 "-포함" 명령줄 옵션입니다. 이 스위치가 있으면 다른 어느 곳에서 활성으로 서버를 표시 하는 리소스 집합을 로드 또는 완전히 엽니다. 자세한 내용은 참조 하세요. [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
 
 서버 응용 프로그램을 호출 해야 해당 `CWinApp::RunEmbedded` 명령줄을 구문 분석 하는 함수입니다. 0이 아닌 값을 반환 하는 경우 독립 실행형 응용 프로그램 아니라 컨테이너 응용 프로그램에서 실행 되므로 응용 프로그램의 창을 표시 되지 않아야 합니다. 이 함수 호출 시스템 등록 데이터베이스에 서버 항목을 업데이트 합니다 `RegisterAll` 멤버 함수 인스턴스 등록을 수행 합니다.
 
@@ -56,7 +56,7 @@ RegEdit 등록 데이터베이스에.reg 텍스트 파일의 내용을 병합합
 
 미니 서버를 작성 하는 경우 정의 의해 항상 시작 됩니다 컨테이너에서. 여전히 "/ 포함" 옵션을 확인 하려면 명령줄을 구문 분석 해야 있습니다. 명령줄에이 옵션이 없으면 사용자가 독립 실행형 응용 프로그램으로 미니 서버를 시작 하려고 했음을 의미 합니다. 이 경우 시스템 등록 데이터베이스를 사용 하 여 서버를 등록 하 고 응용 프로그램을 컨테이너에서 미니 서버를 시작 하려면 사용자에 게 알리는 메시지 상자를 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [서버](../mfc/servers.md)<br/>

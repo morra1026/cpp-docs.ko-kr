@@ -51,12 +51,12 @@ helpviewer_keywords:
 - CD2DBitmap [MFC], m_strPath
 - CD2DBitmap [MFC], m_uiResID
 ms.assetid: 2b3686f1-812c-462b-b449-9f0cb6949bf6
-ms.openlocfilehash: 869d8c9cffae1a257de04cf82446025be33ef7de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 288ba5e1503a4e3eefe83624cf9a489274a10823
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605870"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264718"
 ---
 # <a name="cd2dbitmap-class"></a>CD2DBitmap 클래스
 
@@ -75,7 +75,7 @@ class CD2DBitmap : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DBitmap::CD2DBitmap](#cd2dbitmap)|오버로드됨. HBITMAP CD2DBitmap 개체를 생성합니다.|
-|[CD2DBitmap:: ~ CD2DBitmap](#_dtorcd2dbitmap)|소멸자입니다. D2D 비트맵 개체 소멸 될 때 호출 됩니다.|
+|[CD2DBitmap::~CD2DBitmap](#_dtorcd2dbitmap)|소멸자입니다. D2D 비트맵 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="protected-constructors"></a>Protected 생성자
 
@@ -101,7 +101,7 @@ class CD2DBitmap : public CD2DResource;
 |[CD2DBitmap::GetSize](#getsize)|비트맵의 크기를 장치 독립적 픽셀 (Dip)를 반환합니다.|
 |[CD2DBitmap::IsValid](#isvalid)|리소스 유효성을 검사 (재정의 [CD2DResource::IsValid](../../mfc/reference/cd2dresource-class.md#isvalid).)|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -125,7 +125,7 @@ class CD2DBitmap : public CD2DResource;
 |[CD2DBitmap::m_strPath](#m_strpath)|Botmap 파일 경로입니다.|
 |[CD2DBitmap::m_uiResID](#m_uiresid)|비트맵 리소스 id입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -137,7 +137,7 @@ class CD2DBitmap : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dbitmap"></a>  CD2DBitmap:: ~ CD2DBitmap
+##  <a name="_dtorcd2dbitmap"></a>  CD2DBitmap::~CD2DBitmap
 
 소멸자입니다. D2D 비트맵 개체 소멸 될 때 호출 됩니다.
 
@@ -260,7 +260,7 @@ HRESULT CopyFromMemory(
 *srcData*<br/>
 복사할 데이터입니다.
 
-*피치*<br/>
+*pitch*<br/>
 SrcData에 저장 된 소스 비트맵의 피치 또는 진행 속도입니다. Stride는 스캐닝선 (메모리 내의 픽셀의 하나의 행)의 바이트 수 이며 다음 수식에서 stride를 계산할 수 있습니다: 픽셀 너비 \* 픽셀 + 메모리 안쪽 여백 당 바이트 수입니다.
 
 *destRect*<br/>
@@ -461,7 +461,7 @@ CString m_strPath;
 UINT m_uiResID;
 ```
 
-##  <a name="operator_id2d1bitmap_star"></a>  CD2DBitmap::operator ID2D1Bitmap *
+##  <a name="operator_id2d1bitmap_star"></a>  CD2DBitmap::operator ID2D1Bitmap*
 
 반환 ID2D1Bitmap 인터페이스
 
@@ -473,6 +473,6 @@ operator ID2D1Bitmap*();
 
 ID2D1Bitmap 인터페이스 또는 개체가 아직 초기화 되지 않은 경우 NULL 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

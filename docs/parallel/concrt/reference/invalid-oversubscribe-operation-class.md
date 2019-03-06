@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_oversubscribe_operation class
 ms.assetid: 0a9c5f08-d5e6-4ad0-90a9-517472b3ac28
-ms.openlocfilehash: 9e25095f70266e772d69f9b644f7def968157912
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 200743d41c1c45f2a957dba0716dd7aa07e3de76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572148"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266681"
 ---
 # <a name="invalidoversubscribeoperation-class"></a>invalid_oversubscribe_operation 클래스
 
@@ -31,9 +31,10 @@ class invalid_oversubscribe_operation : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[invalid_oversubscribe_operation](#ctor)|오버로드됨. `invalid_oversubscribe_operation` 개체를 생성합니다.|
+|[invalid_oversubscribe_operation](#ctor)|오버로드됨. 
+  `invalid_oversubscribe_operation` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,7 +48,8 @@ class invalid_oversubscribe_operation : public std::exception;
 
 ##  <a name="ctor"></a> invalid_oversubscribe_operation
 
-`invalid_oversubscribe_operation` 개체를 생성합니다.
+
+  `invalid_oversubscribe_operation` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP invalid_oversubscribe_operation(_In_z_ const char* _Message) throw();
@@ -57,9 +59,9 @@ invalid_oversubscribe_operation() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

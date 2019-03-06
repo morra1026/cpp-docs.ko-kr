@@ -6,12 +6,12 @@ helpviewer_keywords:
 - filename macros in NMAKE
 - NMAKE program, filename macros
 ms.assetid: 20afd6b3-5b6c-4e33-9d01-309ce98ef9db
-ms.openlocfilehash: 2e7552d77d753d4e93734f2fc9a35b3b68d8d55c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 38fe4408ebfbc2503fcb6be5b53c18d430067aa6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457696"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419685"
 ---
 # <a name="filename-macros"></a>파일 이름 매크로
 
@@ -35,6 +35,6 @@ ms.locfileid: "50457696"
 |**F**|기본 이름 및 확장|
 |**R**|드라이브와 디렉터리, 기본 이름|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [특수 NMake 매크로](../build/special-nmake-macros.md)

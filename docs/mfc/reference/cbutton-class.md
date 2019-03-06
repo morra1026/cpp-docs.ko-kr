@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CButton [MFC], SetState
 - CButton [MFC], SetTextMargin
 ms.assetid: cdc76d5b-31da-43c5-bc43-fde4cb39de5b
-ms.openlocfilehash: 26dcf50cc3dc48fec5d6e4957ffd1ef340ad1dbf
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: b1a02d995594f5e079359151167ac970a3d1ab37
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178645"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260142"
 ---
 # <a name="cbutton-class"></a>CButton 클래스
 
@@ -153,7 +153,7 @@ class CButton : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**ON\_**_알림_ **(** _id_하십시오 _memberFxn_ **)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
 여기서 *id* 알림을 전송 하는 컨트롤의 자식 창 ID를 지정 하 고 *memberFxn* 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
@@ -172,7 +172,7 @@ class CButton : public CWnd
 
 만드는 경우는 `CButton` 창 내에서 개체 삭제 해야 할 수 있습니다. 만드는 경우는 `CButton` 개체를 사용 하 여 힙에 **새** 를 호출 해야 함수 **삭제** button 컨트롤을 사용자의 Windows를 닫을 때 삭제 개체의 합니다. 만드는 경우는 `CButton` 스택의 또는 개체 부모 대화 상자 개체에 포함 된, 자동으로 제거 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1114,13 +1114,13 @@ BOOL SetTextMargin(RECT* pmargin);
 
 이 멤버 함수에 설명 된 대로 BCM_SETTEXTMARGIN 메시지의 기능을 에뮬레이션 합니다 [단추](/windows/desktop/controls/buttons) Windows SDK의 섹션입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [CComboBox 클래스](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CListBox 클래스](../../mfc/reference/clistbox-class.md)<br/>
 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md)<br/>
 [CStatic 클래스](../../mfc/reference/cstatic-class.md)<br/>

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - x64 coding conventions
 - Visual C++, x64 calling conventions
 ms.assetid: 750f3d97-1706-4840-b2fc-41a007329a08
-ms.openlocfilehash: 55be8f381b39ee566b389350ff70a9b0a3fe7694
-ms.sourcegitcommit: e98671a4f741b69d6277da02e6b4c9b1fd3c0ae5
+ms.openlocfilehash: 11d29b6c31ccecfe5b9c51c2f9311213bd4a6732
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55702070"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420273"
 ---
 # <a name="x64-software-conventions"></a>x64 소프트웨어 규칙
 
@@ -238,6 +238,6 @@ x64 컴파일러의 제약 조건 중 하나는 인라인 어셈블러를 지원
 
 X64 PE32 + 실행 가능 이미지 형식입니다. 실행 가능 이미지 (Dll과 Exe) 최대 크기가 2gb로 제한 되므로 정적 이미지 데이터를 사용할 수는 32 비트 치환을 사용 하 여 상대 주소를 지정 합니다. 이 데이터 가져오기 주소 테이블, 문자열 상수, 전역 정적 데이터 및 등을 포함합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [호출 규칙](../cpp/calling-conventions.md)

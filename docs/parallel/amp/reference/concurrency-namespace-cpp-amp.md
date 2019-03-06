@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - Concurrency namespace
 ms.assetid: b5aab265-3bac-42c5-8ead-f92ce05ef267
-ms.openlocfilehash: 5ddafe5dd821fb21eb6dd03d63122fa98a56af51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0870eb046f1cec091a72d49c94a2fea41484340
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635372"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278693"
 ---
 # <a name="concurrency-namespace-c-amp"></a>Concurrency 네임스페이스(C++ AMP)
 
@@ -111,7 +111,6 @@ namespace Concurrency;
 
 **헤더:** amp.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [참조(C++ AMP)](reference-cpp-amp.md)
-

@@ -6,12 +6,12 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d::make_sampler
 - amp_graphics/Concurrency::graphics::direct3d::make_texture
 ms.assetid: 11ee1d42-333e-4ae9-95ac-4cf68c06d13d
-ms.openlocfilehash: c19cc8697820c038875d55b41cde61120bda9df7
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 18fb409b033ea14c3a140ea6600fc43cf3a8d603
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518375"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326090"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace-functions"></a>Concurrency::graphics::direct3d 네임 스페이스 함수
 
@@ -150,10 +150,10 @@ inline uint4 msad4(
 
 ### <a name="parameters"></a>매개 변수
 
-*(_R)*<br/>
+*_Reference*<br/>
 하나의 uint 값 4 바이트의 배열
 
-*_Output*<br/>
+*_Source*<br/>
 소스 배열에서 두 개의 uint 값의 벡터는 8 바이트입니다.
 
 *_Accum*<br/>
@@ -167,8 +167,8 @@ inline uint4 msad4(
 
 **헤더:** amp_graphics.h
 
-**Namespace:** Concurrency::graphics::direct3d
+**네임스페이스:** Concurrency::graphics::direct3d
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics::direct3d 네임스페이스](concurrency-graphics-direct3d-namespace.md)

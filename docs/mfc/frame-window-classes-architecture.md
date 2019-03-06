@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - frame window classes [MFC], document/view architecture
 ms.assetid: 5da01fb4-f531-46cc-914f-e422e4f07f5d
-ms.openlocfilehash: d1022d9a49e12585a6588e7b3202155f533e4706
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: affa217f481cc6d9e125d526f1b97be9120e0990
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431709"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298011"
 ---
 # <a name="frame-window-classes-architecture"></a>프레임 창 클래스(아키텍처)
 
@@ -33,7 +33,6 @@ MDI 응용 프로그램의 문서 프레임 창에 대 한 기본 클래스입�
 [클래스에서 파생하는 대신](../mfc/reference/coleipframewnd-class.md)<br/>
 준비에서 서버 문서를 편집 하는 경우 프레임 창 보기를 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

@@ -7,16 +7,16 @@ helpviewer_keywords:
 - OLE DB providers, schema rowsets
 - OLE DB, schema rowsets
 ms.assetid: 71c5e14b-6e33-4502-a2d9-a1dc6d6e9ba0
-ms.openlocfilehash: 6046bcb1b99e446974a3b4fae11d0021778bf526
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: f8809754cc79d2a8c3d0f7bd32630ad9cab70a43
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556883"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423107"
 ---
 # <a name="supporting-schema-rowsets"></a>스키마 행 집합 지원
 
-스키마 행 집합에 소비자가 해당 기본 구조 또는 스키마를 알 필요 없이 데이터 저장소에 대 한 정보를 가져올 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, Visual c + + 마법사 사용 하 여 스키마 행 집합 소비자에 대 한 접근자를 생성 합니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스입니다. Visual c + + 응용 프로그램을 사용 하 여 합니다 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.
+스키마 행 집합에 소비자가 해당 기본 구조 또는 스키마를 알 필요 없이 데이터 저장소에 대 한 정보를 가져올 수 있습니다. 예를 들어, 데이터 저장소를 읽는 것 외에 스키마를 알 수 없기 때문에 사용자 정의 계층을 구성 하는 테이블이 있을 수 있습니다. (또 다른 예로, Visual c + + 마법사 사용 하 여 스키마 행 집합 소비자에 대 한 접근자를 생성 합니다.) 이 작업을 수행 하기 위해 소비자를 허용 하려면 공급자의 세션 개체에 메서드를 노출 합니다 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 인터페이스입니다. Visual c + + 응용 프로그램을 사용 하 여 합니다 [IDBSchemaRowsetImpl](../../data/oledb/idbschemarowsetimpl-class.md) 구현 하는 클래스 `IDBSchemaRowset`합니다.
 
 `IDBSchemaRowsetImpl` 다음 메서드를 지원합니다.
 
@@ -86,7 +86,7 @@ class CUpdateSessionTRSchemaRowset :
 
 `CUpdateSession` 상속 `IDBSchemaRowsetImpl`모든 제한 메서드를 처리 하므로, 합니다. 사용 하 여 `CSchemaRowsetImpl`합니다 (위의 스키마 구조의 나열 됨) 하는 세 개의 자식 클래스를 선언: `CUpdateSessionTRSchemaRowset`, `CUpdateSessionColSchemaRowset`, 및 `CUpdateSessionPTSchemaRowset`합니다. 각 자식 클래스에는 `Execute` 해당 집합이 제한 (검색 조건)를 처리 하는 메서드. 각 `Execute` 메서드 값을 비교 합니다 *cRestrictions* 하 고 *rgRestrictions* 매개 변수입니다. 이러한 매개 변수 설명을 참조 [SetRestrictions](../../data/oledb/idbschemarowsetimpl-setrestrictions.md)합니다.
 
-특정 스키마 행 집합으로 해당 제한 사항에 대 한 자세한 내용은의 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 **OLE DB Programmer's Reference** Windows sdk .
+특정 스키마 행 집합으로 해당 제한 사항에 대 한 자세한 내용은의 스키마 행 집합 Guid 표를 참조에서 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 **OLE DB Programmer's Reference** Windows sdk .
 
 예를 들어, TABLE_NAME 제한 DBSCHEMA_TABLES를 지원 하 하는 경우 있습니다 다음을 수행 합니다.
 
@@ -105,7 +105,7 @@ class CUpdateSessionTRSchemaRowset :
 
 ### <a name="example"></a>예제
 
-이 코드에서 수행 되는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다. `UpdatePv` 세 가지 필수 스키마 행 집합 지원: DBSCHEMA_TABLES 고 DBSCHEMA_COLUMNS, DBSCHEMA_PROVIDER_TYPES 합니다. 공급자에서 지 원하는 스키마를 구현 하는 방법의 예를 들어,이 항목에서는 안내 DBSCHEMA_TABLE 행 집합을 구현 합니다.
+이 코드에서 수행 되는 [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) 샘플입니다. `UpdatePv` 세 가지 필수 스키마 행 집합을 지원합니다. DBSCHEMA_TABLES DBSCHEMA_COLUMNS, 하며 DBSCHEMA_PROVIDER_TYPES 합니다. 공급자에서 지 원하는 스키마를 구현 하는 방법의 예를 들어,이 항목에서는 안내 DBSCHEMA_TABLE 행 집합을 구현 합니다.
 
 > [!NOTE]
 > 샘플 코드입니다; 여기에 표시 된 것과 다를 수 있습니다. 샘플 코드를 좀 더 최신 버전으로 간주 해야 합니다.
@@ -214,7 +214,7 @@ wcspy_s(trData.m_szDesc, OLESTR("The Directory Table"), 19);
 wcsncpy_s(trData.m_szTable, T2OLE(szFile), _TRUNCATE());
 ```
 
-`UpdatePV` 세 개의 열만 설정: TABLE_NAME, TABLE_TYPE, 및 설명 합니다. 구현 하는 경우이 정보가 필요 하므로 정보를 반환할 열의 기록해 `GetDBStatus`:
+`UpdatePV` 세 개의 열만 설정합니다. TABLE_NAME, TABLE_TYPE, 및 설명 합니다. 구현 하는 경우이 정보가 필요 하므로 정보를 반환할 열의 기록해 `GetDBStatus`:
 
 ```cpp
     _ATLTRY

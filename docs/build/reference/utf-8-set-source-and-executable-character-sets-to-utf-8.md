@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - /utf-8 compiler option
 ms.assetid: f0e1f3cb-6cae-46eb-9483-04ed13d9b504
-ms.openlocfilehash: efe37f66790832874f7ff2aa9623b07b5fba5371
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: cb683e9baddea455b72bb823676ba1e6adabfd4c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851637"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421560"
 ---
 # <a name="utf-8-set-source-and-executable-character-sets-to-utf-8"></a>/utf-8 (소스 및 실행 문자 집합을 u t F-8)
 
@@ -39,7 +39,7 @@ Visual Studio는 기본적으로 인지 하는 경우 소스 파일 인코딩된
 
 1. **확인**을 선택하여 변경 내용을 저장합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

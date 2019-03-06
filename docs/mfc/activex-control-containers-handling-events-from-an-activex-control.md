@@ -1,5 +1,5 @@
 ---
-title: 'ActiveX 컨트롤 컨테이너: ActiveX 컨트롤에서 보낸 이벤트 처리'
+title: 'ActiveX 컨트롤 컨테이너: ActiveX 컨트롤의 이벤트 처리'
 ms.date: 09/12/2018
 helpviewer_keywords:
 - event handlers [MFC], ActiveX controls
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - BEGIN_EVENTSINK_MAP macro
 ms.assetid: f9c106db-052f-4e32-82ad-750646aa760b
-ms.openlocfilehash: 5deff0a50de813cc5faa43a86e591d3003a3c03e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8087d84d2203e4f910200acdd1b00e58d14f920e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659630"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293565"
 ---
-# <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤에서 보낸 이벤트 처리
+# <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤의 이벤트 처리
 
 이 문서에서는 ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤에 대 한 이벤트 처리기를 설치 하려면 속성 창을 사용 하 여 설명 합니다. 이벤트 처리기는 특정 이벤트 (컨트롤)에서 알림을 수신 및 응답의 일부 작업을 수행 하려면 사용 됩니다. 이 알림 이벤트를 "시작" 이라고 합니다.
 
@@ -67,7 +67,6 @@ ms.locfileid: "50659630"
 
 1. 구현에서 이벤트 처리기 코드를 이동할 클래스 뷰에서 새 처리기 함수를 두 번 클릭 (합니다. Cpp)에 `CContainerDlg`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)
-

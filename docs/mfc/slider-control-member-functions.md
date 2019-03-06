@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CSliderCtrl class [MFC], methods
 - slider controls [MFC], member functions
 ms.assetid: dbde49ee-7306-4d14-a6ce-d09aa198178f
-ms.openlocfilehash: 25414b1d98c87c67c1dc8e13bb44bdc25869db94
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a88dd1a49eb928261393a4473ee7eb53628c607a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472649"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296906"
 ---
 # <a name="slider-control-member-functions"></a>슬라이더 컨트롤 멤버 함수
 
@@ -34,8 +34,7 @@ ms.locfileid: "50472649"
 
 슬라이더 컨트롤을 TBS_ENABLESELRANGE 스타일에 사용자를 연속 값의 범위를 선택할 수 있습니다. 동적으로 조정 되도록 선택 범위를 허용 하는 다양 한 멤버 함수입니다. 합니다 [SetSelection](../mfc/reference/csliderctrl-class.md#setselection) 시작 및 끝 위치 선택 된 멤버 함수를 설정 합니다. 응용 프로그램 설정을 사용 하 여 검색할 수 있습니다 사용자 선택 범위 설정 완료 되 면 합니다 [GetSelection](../mfc/reference/csliderctrl-class.md#getselection) 멤버 함수입니다. 사용자의 선택을 취소를 사용 합니다 [ClearSel](../mfc/reference/csliderctrl-class.md#clearsel) 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSliderCtrl 사용](../mfc/using-csliderctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

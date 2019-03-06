@@ -13,12 +13,12 @@ helpviewer_keywords:
 - explicit linking [C++]
 - DLLs [C++], unloading
 ms.assetid: 4a48d290-3971-43e9-8e97-ba656cd0c8f8
-ms.openlocfilehash: ce52eb43fa8f371b68d836f01163003f056f34c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51d14b86a92f3acb76dc54d1bade2d2cd0baa055
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530236"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419949"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary 및 AfxFreeLibrary
 
@@ -38,7 +38,7 @@ MFC 응용 프로그램에서 사용 하 여 [AfxFreeLibrary](../mfc/reference/a
 
 - [GetProcAddress](../build/getprocaddress.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
 [FreeLibrary](/windows/desktop/api/libloaderapi/nf-libloaderapi-freelibrary)

@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CMFCFilterChunkValueImpl [MFC], SetTextValue
 - CMFCFilterChunkValueImpl [MFC], SetChunk
 ms.assetid: 3c833f23-5b88-4d08-9e09-ca6a8aec88bf
-ms.openlocfilehash: a59cf087a52bd7b6a2eaa00d3091047e93e14d4d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b883d442342dd9fbbd074d9f8fcab76f81ef9864
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666845"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264445"
 ---
 # <a name="cmfcfilterchunkvalueimpl-class"></a>CMFCFilterChunkValueImpl 클래스
 
@@ -69,7 +69,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCFilterChunkValueImpl:: ~ CMFCFilterChunkValueImpl](#_dtorcmfcfilterchunkvalueimpl)|개체를 destructs입니다.|
+|[CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl](#_dtorcmfcfilterchunkvalueimpl)|개체를 destructs입니다.|
 |[CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl](#cmfcfilterchunkvalueimpl)|개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -95,7 +95,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 |[CMFCFilterChunkValueImpl::SetSystemTimeValue](#setsystemtimevalue)|속성을 SystemTime 키로 설정합니다.|
 |[CMFCFilterChunkValueImpl::SetTextValue](#settextvalue)|유니코드 문자열에 키로 속성을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -109,13 +109,13 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 
 CMFCFilterChunkValueImpl 청크;
 
-hr = 청크 합니다. SetBoolValue(PKEY_IsAttachment, true);
+hr = chunk.SetBoolValue(PKEY_IsAttachment, true);
 
 또는
 
-hr = 청크 합니다. SetFileTimeValue (PKEY_ItemDate, ftLastModified);
+hr = chunk.SetFileTimeValue(PKEY_ItemDate, ftLastModified);
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `ATL::IFilterChunkValue`
 
@@ -145,7 +145,7 @@ CMFCFilterChunkValueImpl();
 
 ### <a name="remarks"></a>설명
 
-##  <a name="_dtorcmfcfilterchunkvalueimpl"></a>  CMFCFilterChunkValueImpl:: ~ CMFCFilterChunkValueImpl
+##  <a name="_dtorcmfcfilterchunkvalueimpl"></a>  CMFCFilterChunkValueImpl::~CMFCFilterChunkValueImpl
 
 개체를 destructs입니다.
 
@@ -693,6 +693,6 @@ HRESULT SetTextValue(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - activation [MFC], embedded OLE items
 - OLE activation [MFC]
 ms.assetid: ed8357d9-e487-4aaa-aa6b-2edc4de25dfa
-ms.openlocfilehash: ba3c705227e6ca189527d29d4f3ae0f21c71eb72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6009e5209ce71c6eed28faff2f55792a64de408
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493511"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276951"
 ---
 # <a name="activation-c"></a>활성화(C++)
 
@@ -40,11 +40,10 @@ ms.locfileid: "50493511"
 
 MFC는 중첩 된 위치에서 활성화를 지원 하지 않습니다. 컨테이너/서버 응용 프로그램을 작성 하는 경우 및 다른 컨테이너 및 내부 활성화에 포함 된 컨테이너/서버를 해당 수 없습니다. 전체 그 안에 포함 된 개체를 활성화 합니다.
 
-사용자가 포함 된 항목에 발생 하는 작업은 항목에 대해 정의 된 동사에 따라 다릅니다. 정보를 참조 하세요 [활성화: 동사](../mfc/activation-verbs.md)합니다.
+사용자가 포함 된 항목에 발생 하는 작업은 항목에 대해 정의 된 동사에 따라 다릅니다. 내용은 [활성화 합니다. 동사](../mfc/activation-verbs.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE](../mfc/ole-in-mfc.md)<br/>
 [컨테이너](../mfc/containers.md)<br/>
 [서버](../mfc/servers.md)
-

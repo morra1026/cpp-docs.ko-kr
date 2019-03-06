@@ -37,16 +37,16 @@ helpviewer_keywords:
 - GetBindings method
 - ReleaseAccessor method
 ms.assetid: 768606da-8b71-417c-a62c-88069ce7730d
-ms.openlocfilehash: a01a090d4302983f7d53e051cf4d8a72bd739b4a
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: c410efbbd0ce51bcaca2ba43a835bf88e1cdbc54
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556740"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419179"
 ---
 # <a name="iaccessorimpl-class"></a>IAccessorImpl 클래스
 
-구현을 제공 합니다 [IAccessor](https://docs.microsoft.com/previous-versions/windows/desktop/ms719672(v=vs.85)) 인터페이스입니다.
+구현을 제공 합니다 [IAccessor](/previous-versions/windows/desktop/ms719672(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -91,9 +91,9 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 
 ## <a name="remarks"></a>설명
 
-이 행 집합 및 명령에 대해 필수입니다. OLE DB 공급자는 HACCESSOR 구현에 필요한 태그를 배열에는 [DBBINDING](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) 구조입니다. 제공한 HACCESSORs `IAccessorImpl` 의 주소는 `BindType` 구조입니다. 기본적으로 `BindType` 으로 정의 되는 `ATLBINDINGS` 에서 `IAccessorImpl`의 템플릿 정의 합니다. `BindType` 사용 하는 메커니즘을 제공 `IAccessorImpl` 의 요소 수를 추적 하는 `DBBINDING` 참조 개수 및 접근자 플래그 뿐만 아니라 배열입니다.
+이 행 집합 및 명령에 대해 필수입니다. OLE DB 공급자는 HACCESSOR 구현에 필요한 태그를 배열에는 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 구조입니다. 제공한 HACCESSORs `IAccessorImpl` 의 주소는 `BindType` 구조입니다. 기본적으로 `BindType` 으로 정의 되는 `ATLBINDINGS` 에서 `IAccessorImpl`의 템플릿 정의 합니다. `BindType` 사용 하는 메커니즘을 제공 `IAccessorImpl` 의 요소 수를 추적 하는 `DBBINDING` 참조 개수 및 접근자 플래그 뿐만 아니라 배열입니다.
 
-## <a name="iaccessorimpl"></a> Iaccessorimpl:: Iaccessorimpl
+## <a name="iaccessorimpl"></a> IAccessorImpl::IAccessorImpl
 
 생성자입니다.
 
@@ -103,7 +103,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 IAccessorImpl();
 ```
 
-## <a name="addrefaccessor"></a> Iaccessorimpl:: Addrefaccessor
+## <a name="addrefaccessor"></a> IAccessorImpl::AddRefAccessor
 
 기존 접근자에 대 한 참조 횟수를 추가합니다.
 
@@ -116,9 +116,9 @@ STDMETHOD(AddRefAccessor)(HACCESSOR hAccessor,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IAccessor::AddRefAccessor](https://docs.microsoft.com/previous-versions/windows/desktop/ms714978(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IAccessor::AddRefAccessor](/previous-versions/windows/desktop/ms714978(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="createaccessor"></a> Iaccessorimpl:: Createaccessor
+## <a name="createaccessor"></a> IAccessorImpl::CreateAccessor
 
 바인딩 집합에서 접근자를 만듭니다.
 
@@ -135,9 +135,9 @@ STDMETHOD(CreateAccessor)(DBACCESSORFLAGS dwAccessorFlags,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [iaccessor:: Createaccessor](https://docs.microsoft.com/previous-versions/windows/desktop/ms720969(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [iaccessor:: Createaccessor](/previous-versions/windows/desktop/ms720969(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="getbindings"></a> Iaccessorimpl:: Getbindings
+## <a name="getbindings"></a> IAccessorImpl::GetBindings
 
 접근자에서 소비자에서 기본 열 바인딩을 반환합니다.
 
@@ -152,9 +152,9 @@ STDMETHOD(GetBindings)(HACCESSOR hAccessor,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IAccessor::GetBindings](https://docs.microsoft.com/previous-versions/windows/desktop/ms721253(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IAccessor::GetBindings](/previous-versions/windows/desktop/ms721253(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="releaseaccessor"></a> Iaccessorimpl:: Releaseaccessor
+## <a name="releaseaccessor"></a> IAccessorImpl::ReleaseAccessor
 
 접근자를 해제합니다.
 
@@ -167,7 +167,7 @@ STDMETHOD(ReleaseAccessor)(HACCESSOR hAccessor,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [iaccessor:: Releaseaccessor](https://docs.microsoft.com/previous-versions/windows/desktop/ms719717(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [iaccessor:: Releaseaccessor](/previous-versions/windows/desktop/ms719717(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 

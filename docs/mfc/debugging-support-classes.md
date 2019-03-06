@@ -12,12 +12,12 @@ helpviewer_keywords:
 - debugging [MFC], memory leaks
 - memory leaks, MFC debug classes
 ms.assetid: d79e084a-8326-4251-8700-4efac07c511e
-ms.openlocfilehash: 6cabd2fb35a60f1b6b53d47d19e95fa65d92c620
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90a21b260185bb2202eed66b8e4144eb7183c157
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50521348"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301183"
 ---
 # <a name="debugging-support-classes"></a>디버깅 지원 클래스
 
@@ -29,7 +29,6 @@ MFC에 동적 메모리 할당 문제를 디버깅 하는 데 다음 클래스�
 [CMemoryState](../mfc/reference/cmemorystate-structure.md)<br/>
 메모리 사용에 대 한 스냅숏을 제공 하는 구조체입니다. 또한 이전 및 이후 메모리 스냅숏을 비교 하는 데 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - agility, C++/CX
 - C++/CX, threading issues
 ms.assetid: 83e9ca1d-5107-4194-ae6f-e01bd928c614
-ms.openlocfilehash: faf541a0705de3e0e3d1b795d1abbdc2e9707974
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ddf59e8df82b1ec98f4e1fabe9917027bdf0c75b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582639"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426760"
 ---
 # <a name="threading-and-marshaling-ccx"></a>스레딩 및 마샬링(C++/CX)
 
@@ -61,7 +61,7 @@ ref class MyOptions
 
 > `Warning 1 warning C4451: 'Platform::Agile<T>::_object' : Usage of ref class 'Windows::Security::Credentials::UI::CredentialPickerOptions' inside this context can lead to invalid marshaling of object across contexts. Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead`
 
-"Standard"의 마샬링 동작이 있는 개체에 멤버 범위 또는 전역 범위에서 참조를 추가하면 컴파일러가 `Platform::Agile<T>`: `Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead` 와 같이 형식을 래핑하라는 경고를 실행합니다. `Agile<T>`를 사용하면 클래스를 다른 모든 agile 클래스처럼 사용할 수 있습니다. `Platform::Agile<T>` 은 이러한 경우에 사용하세요.
+참조를 추가 하는 경우-멤버 범위 또는 전역 범위에서-"Standard"의 마샬링 동작이 있는 개체에 컴파일러가 형식을 래핑하 라는 경고 `Platform::Agile<T>`: `Consider using 'Platform::Agile<Windows::Security::Credentials::UI::CredentialPickerOptions>' instead` 사용 하는 경우 `Agile<T>`, 다른 모든 agile 클래스와 같이 클래스를 사용할 수 있습니다. `Platform::Agile<T>` 은 이러한 경우에 사용하세요.
 
 - agile이 아닌 변수가 전역 범위에 선언되었습니다.
 
@@ -91,7 +91,7 @@ ref class MyOptions
     };
 ```
 
-`Agile` 은 ref 클래스에 반환 값 또는 매개 변수로 전달할 수 없습니다. `Agile<T>::Get()` 메서드는 ABI(응용 프로그램 이진 인터페이스) 너머로 공용 메서드 또는 속성에 전달할 수 있는 개체 핸들(^)을 반환합니다.
+`Agile` 은 ref 클래스에 반환 값 또는 매개 변수로 전달할 수 없습니다. `Agile<T>::Get()` 메서드는 ABI(애플리케이션 이진 인터페이스) 너머로 공용 메서드 또는 속성에 전달할 수 있는 개체 핸들(^)을 반환합니다.
 
 Visual c + +에서 "None"의 마샬링 동작이 있는-in-proc Windows 런타임 클래스에 대 한 참조를 만들 때 컴파일러가 경고 C4451 있지만 사용을 고려해 야 제안 하지 않습니다 `Platform::Agile<T>`합니다.  컴파일러는 이러한 경고 이외에 다른 지원을 제공할 수 없으므로 클래스를 올바르게 사용하고 코드가 STA 구성 요소를 사용자 인터페이스 스레드에서만 호출하고, MTA 구성 요소를 백그라운드 스레드에서만 호출하도록 하는 것은 사용자의 책임입니다.
 
@@ -124,5 +124,5 @@ unsealed 클래스에는 컴파일러가 파생된 클래스의 이러한 특성
 
 ## <a name="see-also"></a>참고 항목
 
-[ThreadingModel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)<br/>
-[MarshallingBehavior](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)
+[ThreadingModel](/uwp/api/Windows.Foundation.Metadata.ThreadingModel)<br/>
+[MarshallingBehavior](/uwp/api/windows.foundation.metadata.marshalingbehaviorattribute)

@@ -13,16 +13,16 @@ helpviewer_keywords:
 - Afx naming convention
 - macros
 ms.assetid: add4e33f-0e62-4d27-be14-896cb8675d22
-ms.openlocfilehash: 2dfb2c1c5062f742b728ea651a292be84e33f6d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 27664d4e48c0c4e09439f9e970ded9f2a630d90d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566779"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268189"
 ---
 # <a name="mfc-macros-and-globals"></a>MFC 매크로 및 전역
 
-Microsoft Foundation Class 라이브러리는 두 가지 주요 섹션으로 나눌 수 있습니다. (1) MFC 클래스 및 (2) 매크로 및 전역입니다. 함수 또는 변수가 없는 경우 클래스의 멤버, 전역 함수 또는 변수는 합니다.
+Microsoft Foundation Class 라이브러리를 두 가지 주요 섹션으로 나눌 수 있습니다. (1) MFC 클래스 및 (2) 매크로 및 전역 함수 또는 변수가 없는 경우 클래스의 멤버, 전역 함수 또는 변수는 합니다.
 
 MFC 라이브러리와 액티브 템플릿 라이브러리 (ATL) 문자열 변환 매크로 공유합니다. 자세한 내용은 [문자열 변환 매크로](../../atl/reference/string-conversion-macros.md) ATL 설명서에서.
 
@@ -125,7 +125,6 @@ MFC는 호출 된 함수를 제공 하는 또한 [AfxEnableControlContainer](ole
 > [!NOTE]
 >  대부분의 전역 함수가 "Afx" 접두사로 시작 하지만이 규칙을 따르지 않는 일부 예를 들어 대화 상자 데이터 교환 (DDX) 함수 및 많은 데이터베이스 기능을 합니다. 모든 전역 변수 "afx" 접두사로 시작합니다. 매크로 특정 접두사로 시작 되지 않습니다 하지만 대문자로 쓰여집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../mfc/class-library-overview.md)
-

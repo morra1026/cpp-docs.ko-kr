@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CSliderCtrl [MFC], SetTipSide
 - CSliderCtrl [MFC], SetToolTips
 ms.assetid: dd12b084-4eda-4550-a810-8f3cfb06b871
-ms.openlocfilehash: c8c8971e467b2b8063bb5bb5d8e953fc48bcc42e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0179d69726f49f2df02979264da4966b35178434
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50666104"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422002"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl 클래스
 
@@ -151,7 +151,7 @@ class CSliderCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CSliderCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CSliderCtrl 사용 하 여](../../mfc/using-csliderctrl.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -209,7 +209,7 @@ virtual BOOL Create(
 슬라이더 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [슬라이더 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles)컨트롤에 Windows SDK에서 설명 합니다.
 
 *rect*<br/>
-슬라이더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+슬라이더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 일반적으로 슬라이더 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -251,7 +251,7 @@ virtual BOOL CreateEx(
 슬라이더 컨트롤의 스타일을 지정합니다. 어떤 조합도 적용할 [슬라이더 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles)컨트롤에 Windows SDK에서 설명 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -388,7 +388,7 @@ void GetRange(
 *nMin*<br/>
 최소 위치를 수신 하는 정수에 대 한 참조입니다.
 
-*최대*<br/>
+*nMax*<br/>
 최대 위치를 수신 하는 정수에 대 한 참조입니다.
 
 ### <a name="remarks"></a>설명
@@ -434,7 +434,7 @@ void GetSelection(
 *nMin*<br/>
 현재 선택 영역의 시작 위치를 수신 하는 정수에 대 한 참조입니다.
 
-*최대*<br/>
+*nMax*<br/>
 현재 선택 영역의 끝 위치를 수신 하는 정수에 대 한 참조입니다.
 
 ##  <a name="getthumblength"></a>  CSliderCtrl::GetThumbLength
@@ -633,7 +633,7 @@ void SetRange(
 *nMin*<br/>
 최소 슬라이더 위치입니다.
 
-*최대*<br/>
+*nMax*<br/>
 최대 슬라이더 위치입니다.
 
 *bRedraw*<br/>
@@ -651,7 +651,7 @@ void SetRangeMax(
 
 ### <a name="parameters"></a>매개 변수
 
-*최대*<br/>
+*nMax*<br/>
 최대 슬라이더 위치입니다.
 
 *bRedraw*<br/>
@@ -690,7 +690,7 @@ void SetSelection(
 *nMin*<br/>
 슬라이더의 시작 위치입니다.
 
-*최대*<br/>
+*nMax*<br/>
 슬라이더에 대 한 끝 위치입니다.
 
 ##  <a name="setthumblength"></a>  CSliderCtrl::SetThumbLength
@@ -771,7 +771,7 @@ int SetTipSide(int nLocation);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 위치*<br/>
+*nLocation*<br/>
 도구 설명 컨트롤을 표시할 위치를 나타내는 값입니다. 가능한 값 목록을 Win32 메시지를 참조 하세요 [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside)Windows SDK에 설명 된 대로 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -799,7 +799,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 
 이 멤버 함수는 Win32 메시지의 동작을 구현 [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips)Windows SDK에 설명 된 대로 합니다. 슬라이더 컨트롤을 TBS_TOOLTIPS 스타일을 사용 하 여 만들어질 때 슬라이더의 현재 위치를 표시, 슬라이더 옆에 표시 되는 기본 도구 설명 컨트롤을 만듭니다. 슬라이더 컨트롤 스타일에 대 한 참조 [Trackbar 컨트롤 스타일](/windows/desktop/Controls/trackbar-control-styles) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

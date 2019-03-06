@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.WINMDKeyFile
 ms.assetid: 65d88fdc-fff9-49ea-8cfc-b2f408741734
-ms.openlocfilehash: 076533278bb9b8ec2838cfb719bcb4df1784b258
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33481033267d6470db38f0b64e76f5be7b4cbe2f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436793"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425408"
 ---
 # <a name="winmdkeyfile-specify-winmd-key-file"></a>/WINMDKEYFILE(winmd 키 파일 지정)
 
@@ -33,7 +33,7 @@ Windows 런타임 메타데이터(.winmd) 파일을 서명하기 위한 키 또�
 
 1. 에 **Windows 메타 데이터 키 파일** 상자 파일 위치를 입력 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

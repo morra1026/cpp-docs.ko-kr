@@ -1,5 +1,5 @@
 ---
-title: 'OLE 백그라운드: 연결 및 포함'
+title: 'OLE 백그라운드: Linking and Embedding'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE embedded items [MFC]
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - embedded objects [MFC]
 - OLE items [MFC], types
 ms.assetid: 11107711-eb96-4099-8f5c-7910bb3ecb75
-ms.openlocfilehash: 7595d87ce54b0a34dd4e5f3489dd36e3918fd8a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02607df2a8fa086c5751f2b446e349a3efdbcd20
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465483"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280968"
 ---
-# <a name="ole-background-linking-and-embedding"></a>OLE 백그라운드: 연결 및 포함
+# <a name="ole-background-linking-and-embedding"></a>OLE 백그라운드: Linking and Embedding
 
 컨테이너 응용 프로그램에서 붙여넣기 명령을 사용하면 포함된 구성 요소 또는 포함된 항목을 만들 수 있습니다. 포함된 항목에 대한 소스 데이터는 이를 포함하는 OLE 문서의 일부로 저장됩니다. 이 방식으로 워드 프로세서 문서에 대한 문서 파일은 텍스트를 포함하고, 비트맵, 그래프, 공식 또는 다른 모든 종류의 데이터를 포함할 수도 있습니다.
 
@@ -27,10 +27,9 @@ OLE는 다른 응용 프로그램의 데이터를 포함할 수 있는 또 다�
 
 포함 또는 링크 여부에 관계없이 모든 OLE 항목은 해당 항목을 만든 응용 프로그램에 따라 연결된 형식을 갖습니다. 예를 들어 Microsoft 그림판 항목과 Microsoft Excel 항목은 각자 다른 한 가지 항목 형식입니다. 하지만 일부 응용 프로그램에서는 두 개 이상의 항목 형식을 만들 수 있습니다. 예를 들어 Microsoft Excel은 워크시트 항목, 차트 항목 및 매크로시트 항목을 만들 수 있습니다. 클래스 식별자를 사용 하 여 시스템에서 고유 하 게 식별할 수 이러한 각 항목 또는 **CLSID**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE 백그라운드](../mfc/ole-background.md)<br/>
 [OLE 백그라운드: 컨테이너 및 서버](../mfc/ole-background-containers-and-servers.md)<br/>
 [컨테이너: 클라이언트 항목](../mfc/containers-client-items.md)<br/>
 [서버: 서버 항목](../mfc/servers-server-items.md)
-

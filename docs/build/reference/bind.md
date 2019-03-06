@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /BIND editbin option
 - import address table
 ms.assetid: 3772b330-1868-4c90-857d-c31faa867982
-ms.openlocfilehash: 671a26268ab07db4a38ae241ae1e0867dd0eb43c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: eb364f951e97da6a3c4950290669d835e4c24be4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50470852"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418921"
 ---
 # <a name="bind"></a>/BIND
 
@@ -32,6 +32,6 @@ ms.locfileid: "50470852"
 
 기본적으로 프로그램 로더 프로그램을 로드할 때 진입점의 주소를 설정 합니다. 이 프로세스는 시간의 양을 Dll의 수 및 프로그램에서 참조 하는 진입점의 수에 따라 달라 집니다. 프로그램 /BIND, 되었고 실행 파일에 대 한 기본 주소 및 이미 로드 된 Dll을 사용 하 여 해당 Dll 충돌 하지 않는 경우에 운영 체제를 이러한 주소를 설정 하지 않아도 합니다. 여기서 파일은 올바르게 기반 하지 상황에서는 운영 체제에서 프로그램의 Dll을 재배치 및 프로그램의 로드 시간을 추가 하는 끝점 주소를 다시 계산 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EDITBIN 옵션](../../build/reference/editbin-options.md)

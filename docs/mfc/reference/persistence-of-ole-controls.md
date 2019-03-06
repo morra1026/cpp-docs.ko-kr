@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE controls [MFC], persistence
 - persistence, OLE controls
 ms.assetid: 64f8dc80-f110-41af-b3ea-14948f6bfdf7
-ms.openlocfilehash: e510cdb2ae64b5b3ed5f8b69bc8ad9c22800a167
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8bcba63c8e09873fe7f30e4fd07d652850be1f3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609421"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299649"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE 컨트롤의 지속성
 
@@ -111,7 +111,7 @@ BOOL PX_Bool(
 *bValue*<br/>
 속성이 저장 된 변수에 대 한 참조 (일반적으로 클래스의 멤버 변수).
 
-*슬라이더가*<br/>
+*bDefault*<br/>
 속성에 대 한 기본 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -294,7 +294,7 @@ BOOL PX_Font(
 *pszPropName*<br/>
 교환 되는 속성의 이름입니다.
 
-*글꼴*<br/>
+*font*<br/>
 에 대 한 참조를 `CFontHolder` 글꼴 속성을 포함 하는 개체입니다.
 
 *pFontDesc*<br/>
@@ -637,7 +637,7 @@ BOOL PX_VBXFontConvert(
 *pPX*<br/>
 에 대 한 포인터를 [CPropExchange](../../mfc/reference/cpropexchange-class.md) 개체 (일반적으로 매개 변수로 전달 `DoPropExchange`).
 
-*글꼴*<br/>
+*font*<br/>
 변환 된 VBX 글꼴 관련 속성에 있는 OLE 컨트롤의 글꼴 속성입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -653,6 +653,6 @@ Exchange에 성공 하면 0이 아닌 값 실패 한 경우 0입니다.
 [!code-cpp[NVC_MFCActiveXControl#14](../../mfc/codesnippet/cpp/persistence-of-ole-controls_1.cpp)]
 [!code-cpp[NVC_MFCActiveXControl#15](../../mfc/codesnippet/cpp/persistence-of-ole-controls_2.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

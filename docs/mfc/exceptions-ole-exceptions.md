@@ -8,12 +8,12 @@ helpviewer_keywords:
 - exception handling [MFC], OLE
 - OLE exceptions [MFC], classes for handling
 ms.assetid: 2f8e0161-b94f-48bb-a5a2-6f644b192527
-ms.openlocfilehash: 2732f571d305fda2b739be02661ab9558f8bc653
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e404005a88398ec909e3043cfa55c7e8fbe2f594
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515419"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297907"
 ---
 # <a name="exceptions-ole-exceptions"></a>예외: OLE 예외
 
@@ -39,9 +39,8 @@ ms.locfileid: "50515419"
 
 `COleDispatchException` Microsoft Visual Basic과 같은 제품을 사용 하 여 사용할 수 있도록 자세한 정보를 제공 합니다. 메시지 상자 또는 기타 알림은;에서 사용할 수 구두 오류 설명 도움말 정보를 사용자 예외를 발생 시킨 조건에 응답 하는 데 사용할 수 있습니다.
 
-두 개의 OLE 예외 클래스에 해당 하는 두 가지 전역 함수: [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) 하 고 [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception)합니다. 각각 일반 OLE 예외와 OLE 디스패치 예외를 throw 하려면 사용 합니다.
+두 가지 전역 함수는 두 OLE 예외 클래스에 해당 합니다. [AfxThrowOleException](../mfc/reference/exception-processing.md#afxthrowoleexception) 하 고 [AfxThrowOleDispatchException](../mfc/reference/exception-processing.md#afxthrowoledispatchexception)합니다. 각각 일반 OLE 예외와 OLE 디스패치 예외를 throw 하려면 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)
-

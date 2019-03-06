@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CPropertyPageDialog class [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 1506f87a-9fd6-4505-8380-0dbc9636230e
-ms.openlocfilehash: 7027a58960e07903c9d774e07379c8050bc489b8
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3fe092e412cf11f7bf8600e8d0d7d43abb0e11c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176460"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303900"
 ---
 # <a name="mfc-activex-controls-property-pages"></a>MFC ActiveX 컨트롤: 속성 페이지
 
@@ -47,7 +47,7 @@ ActiveX 컨트롤 속성 페이지는 두 가지 방법으로 표시 됩니다.
 
 - [MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가](../mfc/mfc-activex-controls-adding-another-custom-property-page.md)
 
-- [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 속성 시트를 사용 하 여 ActiveX 컨트롤 이외의 MFC 응용 프로그램에 대 한 내용은 참조 하세요 [속성 시트](../mfc/property-sheets-mfc.md)합니다.
 
@@ -115,7 +115,7 @@ ActiveX 컨트롤 마법사에서 파생 된 컨트롤에 대 한 기본 속성 
 |`DDP_Radio`|컨트롤 속성을 사용 하 여 라디오 단추입니다.|
 |`DDP_Text`|컨트롤 속성을 사용 하 여 텍스트입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [COlePropertyPage 클래스](../mfc/reference/colepropertypage-class.md)

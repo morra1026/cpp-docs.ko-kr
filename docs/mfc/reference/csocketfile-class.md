@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSocketFile [MFC], CSocketFile
 ms.assetid: 7924c098-5f72-40d6-989d-42800a47958f
-ms.openlocfilehash: f31bbda1bb6428b6bcca25d6eddce98156fac1d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3fa73320ae34283b0cdac559111a53a879c031c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588840"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274273"
 ---
 # <a name="csocketfile-class"></a>CSocketFile 클래스
 
@@ -50,9 +50,9 @@ class CSocketFile : public CFile
 
 [!code-cpp[NVC_MFCSocketThread#4](../../mfc/reference/codesnippet/cpp/csocketfile-class_1.cpp)]
 
-자세한 내용은 [MFC의 Windows 소켓](../../mfc/windows-sockets-in-mfc.md)를 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md), 뿐만 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.
+자세한 내용은 [MFC의 Windows 소켓](../../mfc/windows-sockets-in-mfc.md), [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md), 뿐만 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -93,9 +93,9 @@ explicit CSocketFile(
 
 그러나 사용 하 여 `CSocketFile`, 데이터를 기반으로 하는 메시지 버퍼에서 여러 메시지를 포함할 수, 있으므로 요청 된 바이트 수보다 적은 받는 파일의 끝을 의미 하지 않습니다. 사용 하 여 처럼이 경우 응용 프로그램 차단 하지 않습니다 `CFile`, 버퍼가 비어 때까지 버퍼에서 메시지 읽기를 계속할 수 있습니다. 합니다 [CArchive::IsBufferEmpty](../../mfc/reference/carchive-class.md#isbufferempty) 함수는 이러한 경우 보관 파일의 버퍼의 상태를 모니터링 하는 데 유용 합니다.
 
-사용에 대 한 자세한 내용은 `CSocketFile`, 문서를 참조 하세요 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md) 하 고 [Windows 소켓: 소켓을 사용 하 여 보관 파일 예제](../../mfc/windows-sockets-example-of-sockets-using-archives.md)합니다.
+사용에 대 한 자세한 내용은 `CSocketFile`, 문서를 참조 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md) 고 [Windows 소켓: 아카이브를 사용 하는 소켓의 예](../../mfc/windows-sockets-example-of-sockets-using-archives.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFile 클래스](../../mfc/reference/cfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

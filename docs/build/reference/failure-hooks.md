@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - delayed loading of DLLs, failure hooks
 ms.assetid: 12bb303b-ffe6-4471-bffe-9ef4f8bb2d30
-ms.openlocfilehash: 2bda1d34c85b1e88c7d278816e30e76537a7523b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2cd691ed4514ac4073f90691ed731670fbd22477
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463612"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417946"
 ---
 # <a name="failure-hooks"></a>오류 후크
 
@@ -37,6 +37,6 @@ PfnDliHook   __pfnDliFailureHook2;
 
 - 유효한 proc 주소 (가져오기 함수 주소), 오류 연결 하는 경우 주소에서 성공 했습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [오류 처리 및 알림](../../build/reference/error-handling-and-notification.md)

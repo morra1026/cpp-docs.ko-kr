@@ -80,12 +80,12 @@ helpviewer_keywords:
 - CMFCButton [MFC], m_nAlignStyle
 - CMFCButton [MFC], m_nFlatStyle
 ms.assetid: 4b32f57c-7a53-4734-afb9-d47e3359f62e
-ms.openlocfilehash: a82793ce29765bf01e8c52c94257bd3150187505
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 804c3219356d36f6a0a733937c5e354822a4be83
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178465"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269814"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton 클래스
 
@@ -141,7 +141,7 @@ class CMFCButton : public CButton
 |[CMFCButton::SetTooltip](#settooltip)|단추를 사용 하 여 도구 설명에 연결합니다.|
 |[CMFCButton::SizeToContent](#sizetocontent)|해당 단추 텍스트 및 이미지를 포함 하는 단추 크기가 조정 됩니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -187,7 +187,7 @@ class CMFCButton : public CButton
 [!code-cpp[NVC_MFC_NewControls#32](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_3.cpp)]
 [!code-cpp[NVC_MFC_NewControls#33](../../mfc/reference/codesnippet/cpp/cmfcbutton-class_4.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -511,7 +511,7 @@ AlignStyle m_nAlignStyle;
 
 `CMFCButton` 생성자 ALIGN_CENTER이이 멤버를 초기화 합니다.
 
-##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk) |
+##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk)|
 
 이벤트를 두 번 클릭 마지막 클릭 여부를 나타냅니다. |
 
@@ -998,7 +998,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 
 이 메서드는 기본적으로 10 픽셀의 여백을 가로 및 세로 여백이 5 픽셀의 포함 하는 새 크기를 계산 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

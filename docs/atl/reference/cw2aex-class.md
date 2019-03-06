@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CW2AEX class
 ms.assetid: 44dc2cf5-dd30-440b-a9b9-b21b43f49843
-ms.openlocfilehash: 5e9d72ddde6b885343c27ef7cdea44d4d61d20c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 97b398dd80bb38b1579458ae0b8b65f082458e23
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509437"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257919"
 ---
 # <a name="cw2aex-class"></a>CW2AEX 클래스
 
@@ -43,13 +43,13 @@ class CW2AEX
 |이름|설명|
 |----------|-----------------|
 |[CW2AEX::CW2AEX](#cw2aex)|생성자입니다.|
-|[CW2AEX:: ~ CW2AEX](#dtor)|소멸자입니다.|
+|[CW2AEX::~CW2AEX](#dtor)|소멸자입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
 |이름|설명|
 |----------|-----------------|
-|[LPSTR CW2AEX::operator](#operator_lpstr)|변환 연산자입니다.|
+|[CW2AEX::operator LPSTR](#operator_lpstr)|변환 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -113,7 +113,7 @@ CW2AEX(LPCWSTR psz) throw(...);
 
 변환 프로세스에서 사용 되는 버퍼를 할당 합니다.
 
-##  <a name="dtor"></a>  CW2AEX:: ~ CW2AEX
+##  <a name="dtor"></a>  CW2AEX::~CW2AEX
 
 소멸자입니다.
 
@@ -141,7 +141,7 @@ LPSTR m_psz;
 char m_szBuffer[t_nBufferLength];
 ```
 
-##  <a name="operator_lpstr"></a>  LPSTR CW2AEX::operator
+##  <a name="operator_lpstr"></a>  CW2AEX::operator LPSTR
 
 변환 연산자입니다.
 
@@ -153,7 +153,7 @@ operator LPSTR() const throw();
 
 LPSTR 입력할 텍스트 문자열을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CA2AEX 클래스](../../atl/reference/ca2aex-class.md)<br/>
 [CA2CAEX 클래스](../../atl/reference/ca2caex-class.md)<br/>

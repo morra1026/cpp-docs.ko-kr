@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - _ATL_MIN_CRT macro
 ms.assetid: 49b485f7-9487-49e4-b12a-0f710b620e2b
-ms.openlocfilehash: b4c91b7fe5182c8457d16de57792ba1b5ab7b3be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc322c704374374d6e7c075dbf466fc2b038b0ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496985"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283217"
 ---
 # <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>CRT에 링크 하는 데 사용 하는 방법의 장단점
 
@@ -22,9 +22,8 @@ ms.locfileid: "50496985"
 
 항목 [ATL 프로젝트에서 CRT에 연결할](../atl/linking-to-the-crt-in-your-atl-project.md) CRT에 연결 하는 방식을 선택 하는 방법에 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLL 및 Visual C++ 런타임 라이브러리 동작](../build/run-time-library-behavior.md)<br/>
 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)
-

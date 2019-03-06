@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -ASSEMBLYDEBUG linker option
 - ASSEMBLYDEBUG linker option
 ms.assetid: 94443af3-470c-41d7-83a0-7434563d7982
-ms.openlocfilehash: e9b39791e6537976be37b942292e1b1d42d5f700
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e0a2133549a72fa747c67b40f9de1f8f48362b7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478652"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426539"
 ---
 # <a name="assemblydebug-add-debuggableattribute"></a>/ASSEMBLYDEBUG(DebuggableAttribute 추가)
 
@@ -76,7 +76,7 @@ DebuggableAttribute 소스 코드에서 직접 어셈블리에도 추가할 수 
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AssemblyDebug%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

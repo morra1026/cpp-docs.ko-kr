@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC source files, Attributes comment
 - public attributes comment
 ms.assetid: 96388e11-42df-4994-aedf-decd152961a7
-ms.openlocfilehash: 33ee18400e03b55a26c4ad17e8d1ba6853ccda88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a74d0f9d6ffb0bd2d057cf46f7308d8b6a81f98c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486075"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303237"
 ---
 # <a name="-attributes-comment"></a>// 특성 주석
 
@@ -23,7 +23,7 @@ ms.locfileid: "50486075"
 > [!NOTE]
 >  와 같은 큰 클래스 `CDC` 및 `CWnd`, 단순히 하나의 그룹에 있는 모든 특성을 나열 하는 더 쉽게 구별할 수 있도록 추가 많은 멤버 있을 수 있습니다. 이러한 경우 클래스 라이브러리 멤버에 대 한 세부 다른 주석 머리글로 사용 합니다. 예를 들어 `CDC` 사용 하 여 `// Device-Context Functions`를 `// Drawing Tool Functions`, `// Drawing Attribute Functions`, 등입니다. 특성을 나타내는 그룹 위에 설명 된 일반적인 구문을 따릅니다. 여러 OLE 클래스 라는 구현 섹션에는 `// Interface Maps`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
 [주석 예](../mfc/an-example-of-the-comments.md)<br/>
@@ -31,4 +31,3 @@ ms.locfileid: "50486075"
 [생성자 주석](../mfc/decrement-constructors-comment.md)<br/>
 [작업 주석](../mfc/decrement-operations-comment.md)<br/>
 [재정의 가능 주석](../mfc/decrement-overridables-comment.md)
-

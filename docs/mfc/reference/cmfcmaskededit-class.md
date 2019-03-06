@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCMaskedEdit [MFC], SetWindowText
 - CMFCMaskedEdit [MFC], IsMaskedChar
 ms.assetid: 13b1a645-2d5d-4c37-8599-16d5003f23a5
-ms.openlocfilehash: c5625c60d6c3c5037c1ef63719c63371b0ff7934
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88a9c49b55dca9d98976924127efff67c479a96a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615074"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276973"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit 클래스
 
@@ -64,7 +64,7 @@ class CMFCMaskedEdit : public CEdit
 |[CMFCMaskedEdit::SetValidChars](#setvalidchars)|사용자가 입력할 수 있는 유효한 문자의 문자열을 지정 합니다.|
 |[CMFCMaskedEdit::SetWindowText](#setwindowtext)|마스킹된 편집 컨트롤에 프롬프트를 표시합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -93,7 +93,7 @@ class CMFCMaskedEdit : public CEdit
 [!code-cpp[NVC_MFC_NewControls#11](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#12](../../mfc/reference/codesnippet/cpp/cmfcmaskededit-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -173,7 +173,7 @@ void EnableMask(
 |마스크 문자|정의|
 |--------------------|----------------|
 |D|자리 수입니다.|
-|d|숫자 또는 공백이 있습니다.|
+|일|숫자 또는 공백이 있습니다.|
 |+|더하기 ('+ '), 빼기 ('-'), 또는 공간입니다.|
 |C|알파벳 문자입니다.|
 |c|알파벳 문자 또는 공백입니다.|
@@ -336,8 +336,8 @@ void SetWindowText(LPCTSTR lpszString);
 
 이 메서드를 재정의 [CWnd::SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)
+[CEdit Class](../../mfc/reference/cedit-class.md)

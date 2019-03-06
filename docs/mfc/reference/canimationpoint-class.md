@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CAnimationPoint [MFC], m_xValue
 - CAnimationPoint [MFC], m_yValue
 ms.assetid: 5dc4d46f-e695-4681-b15c-544b78b3e317
-ms.openlocfilehash: 15f18a43fcda76bb5531434de84d97a349cb7f39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15f06d2fa3478570d2f784879a13e7b68515e746
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497203"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271270"
 ---
 # <a name="canimationpoint-class"></a>CAnimationPoint 클래스
 
@@ -62,7 +62,7 @@ class CAnimationPoint : public CAnimationBaseObject;
 |[CAnimationPoint::GetY](#gety)|CAnimationVariable에 Y 좌표에 대 한 액세스를 제공합니다.|
 |[CAnimationPoint::SetDefaultValue](#setdefaultvalue)|기본값을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -73,7 +73,7 @@ class CAnimationPoint : public CAnimationBaseObject;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationPoint::operator CPoint](#operator_cpoint)|CAnimationPoint CPoint를 변환합니다.|
-|[CAnimationPoint::operator =](#operator_eq)|CAnimationPoint ptSrc 할당합니다.|
+|[CAnimationPoint::operator=](#operator_eq)|CAnimationPoint ptSrc 할당합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -86,7 +86,7 @@ class CAnimationPoint : public CAnimationBaseObject;
 
 CAnimationPoint 클래스는 두 CAnimationVariable 개체를 캡슐화 하 고 지점 응용 프로그램에 나타낼 수 있습니다. 예를 들어 모든 개체 (예: 텍스트 문자열, 원, 지점 등) 화면에서의 위치에 애니메이션 효과를이 클래스를 사용할 수 있습니다. 응용 프로그램에서이 클래스를 사용 하려면 방금이 클래스의 개체, CAnimationController::AddAnimationObject를 사용 하 여 애니메이션 컨트롤러에 추가 인스턴스화하고 호출에 적용할 각 전환에 대 한 AddTransition X 및 Y 좌표입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -266,7 +266,7 @@ CAnimationPoint CPoint으로의 현재 값입니다.
 
 이 함수는 GetValue 내부적으로 호출합니다. Getvalue가 어떤 이유로 실패 하는 경우 반환 되는 지점은 X에 대 한 기본 값이 포함 됩니다 및 Y 좌표입니다.
 
-##  <a name="operator_eq"></a>  CAnimationPoint::operator =
+##  <a name="operator_eq"></a>  CAnimationPoint::operator=
 
 CAnimationPoint ptSrc 할당합니다.
 
@@ -300,6 +300,6 @@ void SetDefaultValue(const POINT& ptDefault);
 
 이 함수를 사용 하 여 애니메이션 개체에 기본값을 설정 합니다. 이 메서드 할당 기본 값을 애니메이션 지점의 X 및 Y 좌표입니다. 이 또한 만들지 않은 경우 기본 COM 개체를 다시 합니다. 이 애니메이션 개체 (ValueChanged 또는 IntegerValueChanged) 이벤트를 구독 하는 경우 이러한 이벤트를 다시 사용 하도록 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

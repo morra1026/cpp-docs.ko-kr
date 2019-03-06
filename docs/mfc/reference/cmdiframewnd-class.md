@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CMDIFrameWnd [MFC], MDISetMenu
 - CMDIFrameWnd [MFC], MDITile
 ms.assetid: fa8736e6-511b-4c51-8b4d-eba78378aeb9
-ms.openlocfilehash: 9d9a2d33f61aa9033bb17c090989b4f08ee82bd7
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: d3fc71c3e294b26aea405b8800199cf88120fa08
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178384"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282450"
 ---
 # <a name="cmdiframewnd-class"></a>CMDIFrameWnd 클래스
 
@@ -194,7 +194,7 @@ CMDIChildWnd* CreateNewChild(
 *pClass*<br/>
 만들 자식 창의 런타임 클래스입니다.
 
-*리소스*<br/>
+*nResource*<br/>
 자식 창에 연결 된 공유 리소스의 ID입니다.
 
 *hMenu*<br/>
@@ -275,7 +275,7 @@ void MDICascade(int nType);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 형식*<br/>
+*nType*<br/>
 Cascade 플래그를 지정합니다. 다음 플래그를 지정할 수 있습니다. MDITILE_SKIPDISABLED 비활성화 된 MDI 자식 창을 연계 되 고 않도록 하는 합니다.
 
 ### <a name="remarks"></a>설명
@@ -440,7 +440,7 @@ void MDITile(int nType);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 형식*<br/>
+*nType*<br/>
 바둑판식 배열 플래그를 지정합니다. 이 매개 변수는 다음 플래그 중 하나일 수 있습니다.
 
 - MDITILE_HORIZONTAL 타일 MDI 자식 창 위의 다른 하나는 창 표시 되도록 합니다.
@@ -457,7 +457,7 @@ void MDITile(int nType);
 
 예를 참조 하세요 [CMDIFrameWnd::MDICascade](#mdicascade)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>

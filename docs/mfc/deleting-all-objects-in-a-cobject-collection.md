@@ -10,12 +10,12 @@ helpviewer_keywords:
 - objects in CObject collections
 - collection classes [MFC], shared objects
 ms.assetid: 81d2c1d5-a0a5-46e1-8ab9-82b45cf7afd2
-ms.openlocfilehash: 3e56c08f6165f6662c30e3ecbd6eda45c6696788
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 95d4cec61b230df5a019655617a25b1dc309cde4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542586"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257971"
 ---
 # <a name="deleting-all-objects-in-a-cobject-collection"></a>CObject 컬렉션의 모든 개체 삭제
 
@@ -78,7 +78,6 @@ ms.locfileid: "50542586"
 
 호출할 수 있습니다 `RemoveAll` 맵에서 모든 요소를 제거 하려면 또는 `RemoveKey` 지정된 된 키를 사용 하 여 개별 요소를 제거 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션의 모든 멤버에 액세스](../mfc/accessing-all-members-of-a-collection.md)
-

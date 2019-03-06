@@ -8,12 +8,12 @@ helpviewer_keywords:
 - menus [MFC], manipulating during execution
 - menus during execution
 ms.assetid: 722c7c00-4be2-4967-877d-f96aaa604396
-ms.openlocfilehash: b228e122243c3af7504ef1362ecab49b91ef5e1c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 00d045932a4b196e23a2853e87fe42f7722cfadd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443370"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259739"
 ---
 # <a name="manipulating-menus-during-program-execution"></a>프로그램 실행 중 메뉴 조작
 
@@ -21,7 +21,6 @@ ms.locfileid: "50443370"
 
 클래스에 대 한 개요를 참조 하십시오 [CMenu](../mfc/reference/cmenu-class.md) 세부 정보에 대 한 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메뉴](../mfc/menus-mfc.md)
-

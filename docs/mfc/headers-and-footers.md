@@ -11,12 +11,12 @@ helpviewer_keywords:
 - printing [MFC], headers and footers
 - page footers [MFC]
 ms.assetid: b0be9c53-5773-4955-a777-3c15da745128
-ms.openlocfilehash: 15c76dabb2512b5906ca631e0da5047fabddf848
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e2e57331ccbc7f0afd7b82dc035410af495abd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564504"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279460"
 ---
 # <a name="headers-and-footers"></a>머리글 및 바닥글
 
@@ -30,13 +30,12 @@ ms.locfileid: "50564504"
 
 헤더 또는 다른 모든 항목을 인쇄할 수 없습니다 [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc)하기 전에 호출 되므로는 `StartPage` 멤버 함수 [CDC](../mfc/reference/cdc-class.md) 가 호출 되었습니다. 이 시점에서 프린터 장치 컨텍스트는 페이지 경계에 간주 됩니다. 에서만 인쇄를 수행할 수 있습니다는 `OnPrint` 멤버 함수입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [다중 페이지 문서 인쇄](../mfc/multipage-documents.md)
 
 - [인쇄용 GDI 리소스 할당](../mfc/allocating-gdi-resources.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [인쇄](../mfc/printing.md)
-

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE controls [MFC], MFC
 - sequence [MFC]
 ms.assetid: 7d868c53-a0af-4ef6-a89c-e1c03c583a53
-ms.openlocfilehash: d9025c2a4192b5a2c08d1af9dc925378cff9f504
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fdfa2333681c988c0e7bceab01eab24b118f1a5a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632793"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275989"
 ---
 # <a name="sequence-of-operations-for-creating-activex-controls"></a>ActiveX 컨트롤을 만드는 작업 시퀀스
 
@@ -29,10 +29,9 @@ ms.locfileid: "50632793"
 |컨트롤의 속성 페이지 또는 페이지를 생성 합니다.|Visual c + + 리소스 편집기를 사용 하 여 시각적으로 컨트롤의 속성 페이지 인터페이스를 편집 하려면:<br /><br />-추가 속성 페이지를 만듭니다.<br />-만들기 및 비트맵, 아이콘 및 커서를 편집 합니다.<br /><br /> 또한 대화 상자 편집기의 속성 페이지를 테스트할 수 있습니다.|MFC 응용 프로그램 마법사로 만든 기본 리소스 파일에 필요한 리소스를 많이 제공 합니다. Visual c + +를 사용 하 여 기존 리소스를 편집 하 고 쉽고 시각적으로 새 리소스를 추가할 수 있습니다.|
 |컨트롤의 이벤트, 메서드 및 속성을 테스트 합니다.|컨트롤을 다시 빌드하고 테스트 컨테이너를 사용 하 여 처리기를 제대로 작동 하는지 테스트 합니다.|컨트롤의 메서드를 호출 하 고 테스트 컨테이너 또는 속성 페이지 인터페이스를 통해 해당 속성을 조작할 수 있습니다. 또한 컨트롤에서 발생 하는 추적 이벤트를 컨트롤의 컨테이너에서 받은 알림을 테스트 컨테이너를 사용 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크를 기반으로 구축](../mfc/building-on-the-framework.md)<br/>
-[MFC 응용 프로그램을 빌드하는 작업 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
-[OLE 응용 프로그램을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
-[데이터베이스 응용 프로그램을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)
-
+[MFC 애플리케이션을 빌드하는 작업 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
+[OLE 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
+[데이터베이스 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)

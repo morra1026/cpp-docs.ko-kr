@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - STUB .def file statement
 ms.assetid: 0a3b9643-19ed-47e9-8173-ee16bc8ed056
-ms.openlocfilehash: 95f8e1584bdd87f23e87c27418c0debca5c3181a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd2e7c4a3bd9fa09b88f4c3caa9b7d5b73c1ad98
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533720"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412941"
 ---
 # <a name="stub"></a>STUB
 
@@ -27,6 +27,6 @@ STUB:filename
 
 STUB은 VxD를 빌드할 때에 모듈 정의 파일에서 유효 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)

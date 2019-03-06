@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -diagnostics compiler diagnostic options [C++]
 - diagnostics compiler diagnostic options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: d9b485f749f4d4d9fce4e07d9bcd6d6de564fb58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8e9f2b6bc36d8a1dfdada00bca1c7a4dcf65256
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531798"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423263"
 ---
 # <a name="diagnostics-compiler-diagnostic-options"></a>/diagnostics (컴파일러 진단 옵션)
 
@@ -50,7 +50,7 @@ ms.locfileid: "50531798"
 
 1. 드롭다운 컨트롤을 사용 합니다 **진단 형식** 필드를 진단을 선택 옵션이 표시 됩니다. 선택 **확인** 하거나 **적용** 변경 내용을 저장 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

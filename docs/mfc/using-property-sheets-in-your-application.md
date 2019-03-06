@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Create method [MFC], property sheets
 - CPropertyPage class [MFC], styles
 ms.assetid: 240654d4-152b-4e3f-af7b-44234339206e
-ms.openlocfilehash: ac6315d1b450fa41158f1393471d723627ecec24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 76acbfa9625fe6cb9a575244b0ed6954eeaaf3f2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509388"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301690"
 ---
 # <a name="using-property-sheets-in-your-application"></a>응용 프로그램에서 속성 시트 사용
 
@@ -42,7 +42,7 @@ ms.locfileid: "50509388"
 
 1. 이 속성 페이지에 대 한 값을 보유 하는 변수 멤버를 만듭니다. 속성 페이지에 멤버 변수를 추가 하기 위한 프로세스 이므로 정확 하 게 대화 상자에서 멤버 변수 추가 동일 속성 페이지는 특수 한 대화 상자. 자세한 내용은 [대화 상자 컨트롤에 대 한 멤버 변수 정의](../windows/defining-member-variables-for-dialog-controls.md)합니다.
 
-1. 생성 된 [CPropertySheet](../mfc/reference/cpropertysheet-class.md) 소스 코드의 개체입니다. 생성 하는 일반적으로 `CPropertySheet` 속성 시트를 표시 하는 명령에 대 한 처리기에서 개체입니다. 이 개체는 전체 속성 시트를 나타냅니다. 모달 속성 시트를 만드는 경우 합니다 [DoModal](../mfc/reference/cpropertysheet-class.md#domodal) 기본적으로 세 명령 단추를 제공 하는 함수를 프레임 워크: 확인, Cancel 및 적용 합니다. 프레임 워크를 사용 하 여 만든 모덜리스 속성 시트에 대 한 명령 단추가 없습니다 만듭니다는 [만들기](../mfc/reference/cpropertysheet-class.md#create) 함수입니다. 클래스를 파생 해야 `CPropertySheet` 다른 컨트롤 (예: 미리 보기 창)을 추가 하거나 모덜리스 속성 시트를 표시 하려는 경우가 아니면 합니다. 이 단계 모덜리스 속성 시트에 대 한 필요한 이므로 속성 시트를 닫고를 사용할 수 있는 모든 기본 컨트롤을 포함 하지 않습니다.
+1. 생성 된 [CPropertySheet](../mfc/reference/cpropertysheet-class.md) 소스 코드의 개체입니다. 생성 하는 일반적으로 `CPropertySheet` 속성 시트를 표시 하는 명령에 대 한 처리기에서 개체입니다. 이 개체는 전체 속성 시트를 나타냅니다. 모달 속성 시트를 만드는 경우 합니다 [DoModal](../mfc/reference/cpropertysheet-class.md#domodal) 함수를 프레임 워크는 기본적으로 세 명령 단추를 제공 합니다. 확인을 취소 하 고 적용 합니다. 프레임 워크를 사용 하 여 만든 모덜리스 속성 시트에 대 한 명령 단추가 없습니다 만듭니다는 [만들기](../mfc/reference/cpropertysheet-class.md#create) 함수입니다. 클래스를 파생 해야 `CPropertySheet` 다른 컨트롤 (예: 미리 보기 창)을 추가 하거나 모덜리스 속성 시트를 표시 하려는 경우가 아니면 합니다. 이 단계 모덜리스 속성 시트에 대 한 필요한 이므로 속성 시트를 닫고를 사용할 수 있는 모든 기본 컨트롤을 포함 하지 않습니다.
 
 1. 속성 시트에 추가할 각 페이지에서 다음을 수행 합니다.
 
@@ -60,7 +60,6 @@ ms.locfileid: "50509388"
 
 속성 시트를 사용 하는 방법의 예 참조는 MFC 일반 샘플 [PROPDLG](../visual-cpp-samples.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [속성 시트](../mfc/property-sheets-mfc.md)
-

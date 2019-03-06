@@ -334,12 +334,12 @@ helpviewer_keywords:
 - COleControl [MFC], IsInvokeAllowed
 - COleControl [MFC], SetInitialDataFormats
 ms.assetid: 53e95299-38e8-447b-9c5f-a381d27f5123
-ms.openlocfilehash: ef44c917411efefeb6719af95185ddf7993fbab1
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 8587eb76f38c07d54234c810dfd6ab79f487e740
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179021"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283425"
 ---
 # <a name="colecontrol-class"></a>COleControl 클래스
 
@@ -523,7 +523,7 @@ class COleControl : public CWnd
 |[COleControl::WillAmbientsBeValidDuringLoad](#willambientsbevalidduringload)|앰비언트 속성 않을 것인지 여부를 사용할 수 있는 컨트롤이 로드 될 다음에 결정 합니다.|
 |[COleControl::WindowProc](#windowproc)|에 대 한 Windows 절차를 제공 된 `COleControl` 개체입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -558,7 +558,7 @@ OLE 컨트롤 개체 활성화 되기 있지만 비활성-활성 전환 하는 �
 
 OLE 컨트롤 프레임 워크를 개발에 대 한 자세한 내용은 문서를 참조 하세요 [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md) 고 [개요: MFC ActiveX 컨트롤 프로그램을 만드는](../../mfc/reference/mfc-activex-control-wizard.md)합니다. OLE 컨트롤, 창 및 깜박임 컨트롤을 포함 하 여 최적화에 대 한 정보를 참조 하세요. [MFC ActiveX 컨트롤: 최적화](../../mfc/mfc-activex-controls-optimization.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -598,7 +598,7 @@ CString AmbientDisplayName();
 
 ### <a name="return-value"></a>반환 값
 
-OLE 컨트롤의 이름입니다. 기본값은 길이가 0인 문자열입니다.
+OLE 컨트롤의 이름입니다. 기본값은 길이가 0 인 문자열입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -738,7 +738,7 @@ short AmbientTextAlign();
 |------------------|-------------|
 |0|일반 맞춤 (왼쪽, 오른쪽 텍스트 번호)입니다.|
 |1|왼쪽 맞춤|
-|2|가운데|
+|2|가운데 맞춤|
 |3|오른쪽 맞춤|
 
 ### <a name="remarks"></a>설명
@@ -1186,13 +1186,13 @@ void AFX_CDECL FireEvent(
 
 합니다 *pbParams* 인수는 공백으로 구분 된 목록을 **VTS_** 합니다. 공백(쉼표가 아님)으로 구분된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정합니다. 다음과 같은 값을 사용할 수 있습니다.
 
-|기호|매개 변수 형식|
+|기호|매개 변수 유형|
 |------------|--------------------|
 |VTS_COLOR|OLE_COLOR|
 |VTS_FONT|`IFontDisp*`|
 |VTS_HANDLE|HWND|
 |VTS_PICTURE|`IPictureDisp*`|
-|VTS_OPTEXCLUSIVE|OLE_OPTEXCLUSIVE *|
+|VTS_OPTEXCLUSIVE|OLE_OPTEXCLUSIVE*|
 |VTS_TRISTATE|OLE_TRISTATE|
 |VTS_XPOS_HIMETRIC|OLE_XPOS_HIMETRIC|
 |VTS_YPOS_HIMETRIC|OLE_YPOS_HIMETRIC|
@@ -1301,7 +1301,7 @@ void FireMouseDown(
 
 ### <a name="parameters"></a>매개 변수
 
-*n 단추*<br/>
+*nButton*<br/>
 숫자 값 마우스 단추를 눌렀습니다. 다음 값 중 하나일 수 있습니다.
 
 - 아래로 LEFT_BUTTON 마우스 왼쪽된 단추를 눌렀습니다.
@@ -1345,7 +1345,7 @@ void FireMouseMove(
 
 ### <a name="parameters"></a>매개 변수
 
-*n 단추*<br/>
+*nButton*<br/>
 숫자 값 마우스 단추를 눌렀습니다. 다음 값의 조합이 포함 되어 있습니다.
 
 - 작업 중 아래로 LEFT_BUTTON 마우스 왼쪽된 단추를 눌렀습니다.
@@ -1389,7 +1389,7 @@ void FireMouseUp(
 
 ### <a name="parameters"></a>매개 변수
 
-*n 단추*<br/>
+*nButton*<br/>
 마우스 단추를 놓았음을의 숫자 값입니다. 다음 값 중 하나일 수 있습니다.
 
 - 마우스 왼쪽된 단추 LEFT_BUTTON 출시 되었습니다.
@@ -1679,7 +1679,7 @@ enum ControlFlags {
 
 ### <a name="remarks"></a>설명
 
-기본적으로 `GetControlFlags`는 `fastBeginPaint | clipPaintDC`을 반환합니다.
+기본적으로 `GetControlFlags` 반환 `fastBeginPaint | clipPaintDC`합니다.
 
 |||
 |-|-|
@@ -1989,7 +1989,7 @@ virtual IDropTarget* GetWindowlessDropTarget();
 
 ### <a name="remarks"></a>설명
 
-일반적으로 이를 위해서는 컨트롤의 창이 놓기 대상으로 등록되어야 합니다. 하지만 컨트롤에는 고유의 창이 있으므로 컨테이너가 사용할 자체 창 놓기 대상으로 합니다. 컨트롤은 단순히의 구현을 제공 해야 합니다 `IDropTarget` 인터페이스는 컨테이너 호출을 위임할 수 적절 한 시간입니다. 예를 들어 다음과 같습니다.
+일반적으로 이를 위해서는 컨트롤의 창이 놓기 대상으로 등록되어야 합니다. 하지만 컨트롤에는 고유의 창이 있으므로 컨테이너가 사용할 자체 창 놓기 대상으로 합니다. 컨트롤은 단순히의 구현을 제공 해야 합니다 `IDropTarget` 인터페이스는 컨테이너 호출을 위임할 수 적절 한 시간입니다. 예를 들어:
 
 [!code-cpp[NVC_MFCAxCtl#2](../../mfc/reference/codesnippet/cpp/colecontrol-class_3.cpp)]
 
@@ -2224,7 +2224,7 @@ BOOL LockInPlaceActive(BOOL bLock);
 
 ### <a name="parameters"></a>매개 변수
 
-*블록*<br/>
+*bLock*<br/>
 TRUE 인 경우 컨트롤의 내부 활성 상태를 잠가야 하면를 잠금이 해제 되도록 이면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2448,7 +2448,7 @@ virtual BOOL OnEdit(
 
 이 컨트롤의 OLEIVERB_UIACTIVATE 동사를 호출 하는 것과 동일한 효과가 있습니다.
 
-이 함수는 대개 ON_OLEVERB 메시지 맵 항목에 대 한 처리기 함수로 사용 됩니다. 이렇게 하면 컨트롤의 "Object" 메뉴에서 사용할 수 있는 "편집" 동사가 있습니다. 예를 들어 다음과 같습니다.
+이 함수는 대개 ON_OLEVERB 메시지 맵 항목에 대 한 처리기 함수로 사용 됩니다. 이렇게 하면 컨트롤의 "Object" 메뉴에서 사용할 수 있는 "편집" 동사가 있습니다. 예를 들어:
 
 [!code-cpp[NVC_MFCAxCtl#5](../../mfc/reference/codesnippet/cpp/colecontrol-class_6.cpp)]
 
@@ -2936,7 +2936,7 @@ virtual void OnKeyDownEvent(
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 누른된 키의 가상 키 코드 값입니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.
 
 *nShiftState*<br/>
@@ -2962,7 +2962,7 @@ virtual void OnKeyPressEvent(USHORT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 누른 키의 가상 키 코드 값을 포함 합니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.
 
 ### <a name="remarks"></a>설명
@@ -2983,7 +2983,7 @@ virtual void OnKeyUpEvent(
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 누른된 키의 가상 키 코드 값입니다. 에서 표준 가상 키 코드 목록은 Winuser.h을 참조 하세요.
 
 *nShiftState*<br/>
@@ -3409,7 +3409,7 @@ virtual BOOL OnWindowlessMessage(
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지*<br/>
+*msg*<br/>
 Windows로 전달 된 메시지 식별자입니다.
 
 *wParam*<br/>
@@ -3899,7 +3899,7 @@ void SetEnabled(BOOL bEnabled);
 
 ### <a name="parameters"></a>매개 변수
 
-*b 사용*<br/>
+*bEnabled*<br/>
 컨트롤을 사용할; 이면 TRUE 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
@@ -4207,7 +4207,7 @@ virtual LRESULT WindowProc(
 
 컨트롤의 메시지 맵을 통해 특정 메시지를 발송 하는 데이 함수를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CIRC3](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 TESTHELP](../../visual-cpp-samples.md)<br/>

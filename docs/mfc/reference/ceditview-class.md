@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CEditView [MFC], OnTextNotFound
 - CEditView [MFC], dwStyleDefault
 ms.assetid: bf38255c-fcbe-450c-95b2-3c5e35f86c37
-ms.openlocfilehash: e853a770dd1f98b1e7f06afd814962f3b3805ceb
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: a2ce38dcd8879378f7d0e4ea3f074e461c51db75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177877"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269853"
 ---
 # <a name="ceditview-class"></a>CEditView 클래스
 
@@ -128,7 +128,7 @@ class CEditView : public CCtrlView
 
 에 대 한 자세한 `CEditView`를 참조 하세요 [파생 된 뷰 클래스에서에서 사용할 수 있는 MFC](../../mfc/derived-view-classes-available-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -186,7 +186,7 @@ BOOL FindText(
 *lpszFind*<br/>
 찾을 텍스트입니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색 방향을 지정합니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 *bCase*<br/>
@@ -296,7 +296,7 @@ virtual void OnFindNext(
 *lpszFind*<br/>
 찾을 텍스트입니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색 방향을 지정합니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 *bCase*<br/>
@@ -355,7 +355,7 @@ virtual void OnReplaceSel(
 *lpszFind*<br/>
 찾을 텍스트입니다.
 
-*다음*<br/>
+*bNext*<br/>
 검색 방향을 지정합니다. TRUE 이면 검색 방향을 버퍼의 끝에 다가가입니다. FALSE 이면 검색 방향을 버퍼의 시작 부분입니다.
 
 *bCase*<br/>
@@ -490,12 +490,12 @@ void UnlockBuffer() const;
 
 호출 `UnlockBuffer` 반환한 포인터를 사용 하 여 완료 한 후 [LockBuffer](#lockbuffer)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 SUPERPAD](../../visual-cpp-samples.md)<br/>
 [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CDocument 클래스](../../mfc/reference/cdocument-class.md)<br/>
 [CDocTemplate 클래스](../../mfc/reference/cdoctemplate-class.md)<br/>
 [CCtrlView 클래스](../../mfc/reference/cctrlview-class.md)<br/>

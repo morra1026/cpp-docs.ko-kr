@@ -9,12 +9,12 @@ helpviewer_keywords:
 - input files [C++]
 - object/library modules
 ms.assetid: e08fb487-0f2e-4f24-87db-232dbc8bd2e2
-ms.openlocfilehash: 5b885ad5c86bc59029fc6a3a60ccee385703ab2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61f4ee8d02cda5b2cd270d7ef789bf58060e7fdf
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508942"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423172"
 ---
 # <a name="setting-linker-options"></a>링커 옵션 설정
 
@@ -32,7 +32,7 @@ LINK를 실행하면 LINK 환경 변수에 지정된 옵션이 먼저 처리된 
 
 옵션은 전체 빌드에 적용되지만 특정 입력 파일에는 옵션이 적용되지 않을 수도 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

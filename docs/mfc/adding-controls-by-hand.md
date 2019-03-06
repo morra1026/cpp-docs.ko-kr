@@ -10,12 +10,12 @@ helpviewer_keywords:
 - controls [MFC], adding to dialog boxes
 - common controls [MFC], adding
 ms.assetid: bc843e59-0c51-4b5b-8bf2-343f716469d2
-ms.openlocfilehash: cf665247dd1ef24bb71d160097fa9514ff8be147
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c70539b49fcf2aa87f0bee375a87b38277b6ed42
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589394"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270763"
 ---
 # <a name="adding-controls-by-hand"></a>수동으로 컨트롤 추가
 
@@ -33,9 +33,8 @@ ms.locfileid: "50589394"
 
 편집 개체를 만든 후 하 여 설정할 수도 있습니다 입력된 포커스를 컨트롤에 호출 된 `SetFocus` 멤버 함수입니다. 0을 반환 하는 마지막으로, `OnInitDialog` 포커스를 설정 하면 표시 됩니다. 0이 아닌 값을 반환 하는 경우 대화 상자 관리자 대화 항목 목록에서 첫 번째 컨트롤 항목에 포커스를 설정 합니다. 대부분의 경우에서 대화 상자 편집기를 사용 하 여 사용자가 대화 상자에 컨트롤을 추가 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤 만들기 및 사용](../mfc/making-and-using-controls.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)<br/>
 [CDialog::OnInitDialog](../mfc/reference/cdialog-class.md#oninitdialog)
-

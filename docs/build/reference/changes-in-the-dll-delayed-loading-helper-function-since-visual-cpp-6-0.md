@@ -7,16 +7,16 @@ helpviewer_keywords:
 - __delayLoadHelper2 function
 - helper functions, what's changed
 ms.assetid: 99f0be69-105d-49ba-8dd5-3be7939c0c72
-ms.openlocfilehash: 8d50962bf66e07d6238be4a1a973c9d9ff06a556
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25c59d37b753c80014b566fd925363cae71798be
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613774"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426526"
 ---
 # <a name="changes-in-the-dll-delayed-loading-helper-function-since-visual-c-60"></a>Visual C++ 6.0 이후 DLL 지연 로드 도우미 함수의 변경 내용
 
-사용자 도우미 함수를 정의 하면 영향을 받을 수 또는 컴퓨터에 여러 버전의 Visual c + +를 있는 경우에 DLL에 대 한 변경 내용을 지연 로드 도우미 함수의 합니다. 예를 들어:
+사용자 도우미 함수를 정의 하면 영향을 받을 수 또는 컴퓨터에 여러 버전의 Visual c + +를 있는 경우에 DLL에 대 한 변경 내용을 지연 로드 도우미 함수의 합니다. 예를 들면,
 
 - **__delayLoadHelper** 이제 **__delayLoadHelper2**
 
@@ -47,12 +47,12 @@ ms.locfileid: "50613774"
 
 - 도우미 함수의 이름을 바꿀 **__delayLoadHelper2**합니다.
 
-- Rva (상대 주소) 모두 32 비트 및 64 비트 프로그램에서 예상 대로 작동 하도록 하려면 절대 주소 (VAs)에서 변경 된 지연 설명자 (delayimp.h에서 ImgDelayDescr)에 대 한 포인터, 이후이 다시 포인터로 변환 해야 합니다. 새 함수를 도입 되었습니다: PFromRva, delayhlp.cpp 있는 합니다. 두 32 비트 또는 64 비트 포인터 변환에 각각의 설명자에서 필드에이 함수를 사용할 수 있습니다. 기본 지연 로드 도우미 함수를 예로 사용 하 여 좋은 템플릿으로 여전히입니다.
+- Rva (상대 주소) 모두 32 비트 및 64 비트 프로그램에서 예상 대로 작동 하도록 하려면 절대 주소 (VAs)에서 변경 된 지연 설명자 (delayimp.h에서 ImgDelayDescr)에 대 한 포인터, 이후이 다시 포인터로 변환 해야 합니다. 새 함수를 도입 되었습니다. PFromRva delayhlp.cpp에서 찾을 수 있습니다. 두 32 비트 또는 64 비트 포인터 변환에 각각의 설명자에서 필드에이 함수를 사용할 수 있습니다. 기본 지연 로드 도우미 함수를 예로 사용 하 여 좋은 템플릿으로 여전히입니다.
 
 ## <a name="load-all-imports-for-a-delay-loaded-dll"></a>지연 로드 된 DLL에 대 한 모든 가져오기 로드
 
 링커 지연 로드로 지정 된 DLL에서 가져온 모든를 로드할 수 있습니다. 참조 [지연 로드 된 DLL에 대 한 모든 가져오기 로드](../../build/reference/loading-all-imports-for-a-delay-loaded-dll.md) 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [도우미 함수 이해](understanding-the-helper-function.md)

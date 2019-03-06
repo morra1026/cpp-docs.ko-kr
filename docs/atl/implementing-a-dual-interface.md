@@ -5,12 +5,12 @@ helpviewer_keywords:
 - IDispatchImpl class, implementing dual interfaces
 - dual interfaces, implementing
 ms.assetid: d1da3633-b445-4dcd-8a0a-3efdafada3ea
-ms.openlocfilehash: 3b5363bb74a0db5b3cc5dad9bb0c0c6cb05edf15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ecd6a0cc90ca4175c4ae898f2e9aa8bf00508a3e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441225"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287338"
 ---
 # <a name="implementing-a-dual-interface"></a>이중 인터페이스를 구현합니다.
 
@@ -46,7 +46,6 @@ ms.locfileid: "50441225"
 > [!NOTE]
 >  ATL 제공 합니다 [IDispEventImpl](../atl/reference/idispeventimpl-class.md) 및 [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) 클래스는 호환 되는 이중 인터페이스 정의가 포함 된 형식 라이브러리를 요구 하지 않고 dispinterface를 구현할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [이중 인터페이스 및 ATL](../atl/dual-interfaces-and-atl.md)
-

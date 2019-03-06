@@ -11,12 +11,12 @@ helpviewer_keywords:
 - dialog classes [MFC], common
 - common dialog boxes [MFC]
 ms.assetid: 5c4f6443-896c-4b05-a7df-8169fdadc71d
-ms.openlocfilehash: 9e0ee68970b9ee3255ae72699dc185fc5de5a0f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5efd885421d8c73c191e2a5603f37d1df85a5168
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577240"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303069"
 ---
 # <a name="common-dialog-classes"></a>일반 대화 상자 클래스
 
@@ -37,9 +37,8 @@ ms.locfileid: "50577240"
 
 MFC의 다른 세 가지 클래스 대화 상자와 비슷한 특징을 갖습니다. 클래스에 대 한 자세한 [CFormView](../mfc/reference/cformview-class.md), [CRecordView](../mfc/reference/crecordview-class.md), 및 [CDaoRecordView](../mfc/reference/cdaorecordview-class.md)의 클래스를 참조 합니다 *MFC 참조*합니다. 클래스에 대 한 자세한 [CDialogBar](../mfc/reference/cdialogbar-class.md)를 참조 하십시오 [대화 상자 모음](../mfc/dialog-bars.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [OLE의 대화 상자](../mfc/dialog-boxes-in-ole.md)
-

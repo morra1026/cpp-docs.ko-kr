@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX 컨트롤: Serialize'
+title: 'MFC ActiveX 컨트롤: 직렬화 하는 작업'
 ms.date: 09/12/2018
 f1_keywords:
 - _wVerMinor
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - versioning ActiveX controls
 - wVerMajor global constant
 ms.assetid: 9d57c290-dd8c-4853-b552-6f17f15ebedd
-ms.openlocfilehash: fddd09ad7a3dc7d9211480bb21ac434419a48758
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c1c845640be2dfaa6aeda2defb478afb650b83b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522215"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303350"
 ---
-# <a name="mfc-activex-controls-serializing"></a>MFC ActiveX 컨트롤: Serialize
+# <a name="mfc-activex-controls-serializing"></a>MFC ActiveX 컨트롤: 직렬화 하는 작업
 
 이 문서에서는 ActiveX 컨트롤을 serialize 하는 방법을 설명 합니다. Serialization은 프로세스에서 읽고 있는지 아니면 디스크 파일과 같은 영구적 저장소 매체에 쓸입니다. Microsoft Foundation 클래스 (MFC) 라이브러리 클래스의 serialization에 대 한 기본 제공 지원을 제공 `CObject`합니다. `COleControl` 속성 교환 메커니즘을 사용 하 여 ActiveX 컨트롤이 지원이 확장 되었습니다.
 
@@ -54,20 +54,20 @@ ActiveX 컨트롤에 대 한 serialization 재정의 하 여 구현 됩니다 [C
 
 |속성 교환 함수|용도|
 |---------------------------------|-------------|
-|**PX_Blob)**|큰 BLOB (Binary Object) 데이터 속성 형식을 serialize 합니다.|
-|**PX_Bool)**|형식을 부울 속성을 serialize 합니다.|
-|**PX_Color)**|유형 색 속성을 serialize합니다.|
-|**PX_Currency)**|형식을 serialize **CY** (currency) 속성입니다.|
-|**PX_Double)**|형식을 serialize **이중** 속성입니다.|
-|**PX_Font)**|글꼴 형식 속성을 serialize합니다.|
-|**PX_Float)**|형식을 serialize **float** 속성입니다.|
-|**PX_IUnknown)**|형식의 속성을 serialize `LPUNKNOWN`합니다.|
-|**PX_Long)**|형식을 serialize **긴** 속성입니다.|
-|**PX_Picture)**|그림 속성 형식을 serialize 합니다.|
-|**PX_Short)**|형식을 serialize **짧은** 속성입니다.|
-|**PXstring)**|형식을 serialize `CString` 속성입니다.|
-|**PX_ULong)**|형식을 serialize **ULONG** 속성입니다.|
-|**PX_UShort)**|형식을 serialize **USHORT** 속성입니다.|
+|**PX_Blob( )**|큰 BLOB (Binary Object) 데이터 속성 형식을 serialize 합니다.|
+|**PX_Bool( )**|형식을 부울 속성을 serialize 합니다.|
+|**PX_Color( )**|유형 색 속성을 serialize합니다.|
+|**PX_Currency( )**|형식을 serialize **CY** (currency) 속성입니다.|
+|**PX_Double( )**|형식을 serialize **이중** 속성입니다.|
+|**PX_Font( )**|글꼴 형식 속성을 serialize합니다.|
+|**PX_Float( )**|형식을 serialize **float** 속성입니다.|
+|**PX_IUnknown( )**|형식의 속성을 serialize `LPUNKNOWN`합니다.|
+|**PX_Long( )**|형식을 serialize **긴** 속성입니다.|
+|**PX_Picture( )**|그림 속성 형식을 serialize 합니다.|
+|**PX_Short( )**|형식을 serialize **짧은** 속성입니다.|
+|**PXstring( )**|형식을 serialize `CString` 속성입니다.|
+|**PX_ULong( )**|형식을 serialize **ULONG** 속성입니다.|
+|**PX_UShort( )**|형식을 serialize **USHORT** 속성입니다.|
 
 이러한 속성 exchange 함수에 대 한 자세한 내용은 참조 하세요. [지 속성의 OLE 컨트롤](../mfc/reference/persistence-of-ole-controls.md) 에 *MFC 참조*합니다.
 
@@ -93,7 +93,6 @@ ActiveX 컨트롤에 대 한 serialization 재정의 하 여 구현 됩니다 [C
 
 기본적으로 컨트롤을 "변환" 오래 된 데이터를 최신 형식입니다. 예를 들어, 버전 2는 컨트롤의 버전 1에서 저장 된 데이터를 로드 하는 경우 다시 저장 될 때 버전 2 형식으로 기록 합니다. 컨트롤 형식으로 마지막으로 읽은 데이터 저장을 원한다 면 전달 **FALSE** 호출 하는 경우 세 번째 매개 변수로 `ExchangeVersion`합니다. 이 세 번째 매개 변수는 선택적 이며 **TRUE** 기본적으로 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

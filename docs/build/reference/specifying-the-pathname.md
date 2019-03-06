@@ -6,12 +6,12 @@ helpviewer_keywords:
 - cl.exe compiler, output files
 - output files, specifying pathnames
 ms.assetid: 7a6595ce-3383-44ae-957a-466bfa29c343
-ms.openlocfilehash: f83adcb87994d13edd1c1579183377a365e2051e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07afcd102b2b1839b3925ad1e6905507ea316361
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638362"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423328"
 ---
 # <a name="specifying-the-pathname"></a>경로 이름 지정
 
@@ -21,7 +21,7 @@ ms.locfileid: "50638362"
 
 또는 합니다 *pathname* 인수 파일 이름 대신 장치 이름을 (AUX, CON, PRN, 또는 NUL) 될 수 있습니다. 옵션 및 장치 이름이 나 콜론과 사이 공백을 장치 이름의 일부로 사용 하지 마십시오.
 
-|장치 이름|내용|
+|장치 이름|표현|
 |-----------------|----------------|
 |AUX|보조 장치|
 |CON|콘솔|
@@ -36,7 +36,7 @@ ms.locfileid: "50638362"
 CL /FmPRN HELLO.CPP
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

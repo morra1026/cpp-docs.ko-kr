@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DDV (dialog data validation) [MFC]
 - data validation [MFC], message boxes
 ms.assetid: f070c309-2044-4ff2-8c92-1ec1ea84af58
-ms.openlocfilehash: 2283806d3fe7c4ff6bd3abc2ae6a86f5dd176d10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cef9941cccd49ca61f0a93472636656f7241a61e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483352"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289600"
 ---
 # <a name="dialog-data-validation"></a>대화 상자 데이터 유효성 검사
 
@@ -24,9 +24,8 @@ ms.locfileid: "50483352"
 
 합니다 [멤버 변수 추가 마법사](../ide/add-member-variable-wizard.md) DDX는 일부만 작성 및 DDV 데이터 구조의 대 한 호출 수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [대화 상자 데이터 교환](../mfc/dialog-data-exchange.md)
-

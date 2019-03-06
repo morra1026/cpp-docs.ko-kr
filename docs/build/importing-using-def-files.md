@@ -8,12 +8,12 @@ helpviewer_keywords:
 - dllimport attribute [C++], DEF files
 - DLLs [C++], DEF files
 ms.assetid: aefdbf50-f603-488a-b0d7-ed737bae311d
-ms.openlocfilehash: d393ce8b27a0f04527b912db5936534ebd9b2d5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6e553a85e6c17a3ea914365ad29ad5136e50629
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434375"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424780"
 ---
 # <a name="importing-using-def-files"></a>DEF 파일을 사용하여 가져오기
 
@@ -61,6 +61,6 @@ if (ulDataInDll == 0L)   /*sample code fragment*/
 
 이 경우를 고려 하는.def 파일에 상수를 발견 하는 경우 현재 Visual c + + 링커는 경고가 발생 합니다. 상수를 사용 하는 유일한 이유는 헤더 파일에 나열 되지 않은 일부 개체 파일을 다시 컴파일할 수 없는 경우 **__declspec (dllimport)** 프로토타입을에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[응용 프로그램으로 가져오기](../build/importing-into-an-application.md)
+[애플리케이션으로 가져오기](../build/importing-into-an-application.md)

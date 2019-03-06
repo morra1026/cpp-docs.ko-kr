@@ -1,18 +1,18 @@
 ---
-title: '방법: 동시성 런타임을 사용하기 위해 취소를 사용하는 OpenMP 루프 변환'
+title: '방법: 동시성 런타임을 사용 하 여 취소를 사용 하는 OpenMP 루프 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, cancellation
 - cancellation, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 4b0b3c33-bfa9-4e96-ae08-aef245a39cbb
-ms.openlocfilehash: f3a53113952a12b6b25839deb20548c56a9b7e1c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 618e93c18173bfe3e5f5b5f3058a8bb3d61e98ec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569574"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300676"
 ---
-# <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용하기 위해 취소를 사용하는 OpenMP 루프 변환
+# <a name="how-to-convert-an-openmp-loop-that-uses-cancellation-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용 하 여 취소를 사용 하는 OpenMP 루프 변환
 
 병렬 루프는 모든 반복 실행할 필요가 없습니다. 예를 들어, 값을 검색 하는 알고리즘은 값을 찾은 후 종료할 수 있습니다. OpenMP는 병렬 루프를 중단 하는 메커니즘을 제공 하지 않습니다. 그러나 솔루션을 찾았습니다를 나타내기 위해 루프의 반복을 사용 하도록 설정 하려면 부울 값 또는 플래그를 사용할 수 있습니다. 동시성 런타임에서 아직 시작 되지 않은 다른 작업을 취소 하는 하나 이상의 태스크를 사용 하도록 설정 하는 기능을 제공 합니다.
 
@@ -43,13 +43,12 @@ Using the Concurrency Runtime...
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `concrt-omp-parallel-any-of.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `concrt-omp-parallel-any-of.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc /openmp concrt-omp-병렬-any-of.cpp**
+**cl.exe /EHsc /openmp concrt-omp-parallel-any-of.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OpenMP에서 동시성 런타임으로 마이그레이션](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)
-

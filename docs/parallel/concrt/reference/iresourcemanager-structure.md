@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - IResourceManager structure
 ms.assetid: 3dd5ec2c-fe53-4121-ae77-1bc1d1167ff4
-ms.openlocfilehash: 7c6ed48c8896b54faa8418719f0ab7c7fa1df7c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f8f5992d9ce55100d193196a3c0f94b468ef892
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657202"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275277"
 ---
 # <a name="iresourcemanager-structure"></a>IResourceManager 구조체
 
@@ -54,7 +54,7 @@ struct IResourceManager;
 
 사용 된 [CreateResourceManager](concurrency-namespace-functions.md) 단일 Resource Manager 인스턴스에 대 한 인터페이스를 가져오려면 함수. 메서드는 Resource Manager에 대 한 참조 횟수를 증가 시키고 호출 해야 합니다 [iresourcemanager:: Release](#release) Resource Manager와 함께 완료 되 면 참조를 해제 하는 방법입니다. 일반적으로 직접 만든 각 스케줄러를 만드는 동안이 메서드를 호출 하 고 종료 후 Resource Manager에 대 한 참조를 해제 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IResourceManager`
 
@@ -96,7 +96,7 @@ virtual void CreateNodeTopology(
 
 [invalid_operation](invalid-operation-class.md) 다른 스케줄러 프로세스에 존재 하는 동안이 메서드를 호출 하면 throw 됩니다.
 
-##  <a name="getavailablenodecount"></a>  Iresourcemanager:: Getavailablenodecount 메서드
+##  <a name="getavailablenodecount"></a>  IResourceManager::GetAvailableNodeCount Method
 
 리소스 관리자에서 사용할 수 있는 노드의 수를 반환합니다.
 
@@ -180,7 +180,7 @@ virtual unsigned int Release() = 0;
 
 결과 참조 수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [ISchedulerProxy 구조체](ischedulerproxy-structure.md)<br/>

@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAcl class
 ms.assetid: 20bcb9af-dc1c-4737-b923-3864776680d6
-ms.openlocfilehash: a9653225f3057d6c5ba9fd49cf64487e766ca8d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05d9d5fe9cc344be3f903f247f34003056404c9d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491548"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258569"
 ---
 # <a name="cacl-class"></a>CAcl 클래스
 
@@ -57,7 +57,7 @@ class CAcl
 |이름|설명|
 |----------|-----------------|
 |[CAcl::CAcl](#cacl)|생성자입니다.|
-|[CAcl:: ~ CAcl](#dtor)|소멸자입니다.|
+|[CAcl::~CAcl](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -158,7 +158,7 @@ CAcl(const CAcl& rhs) throw(...);
 
 합니다 `CAcl` 개체가 생성 될 수 필요에 따라 기존 사용 하 여 `CAcl` 개체입니다.
 
-##  <a name="dtor"></a>  CAcl:: ~ CAcl
+##  <a name="dtor"></a>  CAcl::~CAcl
 
 소멸자입니다.
 
@@ -391,7 +391,7 @@ void SetNull() throw();
 
 `CAcl` 비어 있는 것으로 또는 NULL로 설정할 수 있습니다: 두 상태에는 서로 다릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

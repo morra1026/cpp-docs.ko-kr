@@ -10,12 +10,12 @@ helpviewer_keywords:
 - throwing exceptions, managed exceptions
 - Visual C++, handling managed exceptions
 ms.assetid: 40ce8931-1ecc-491a-815f-733b23fcba35
-ms.openlocfilehash: 45244ace414fc073956684088ac43eb9b92f1e5b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b4eb74fe3e485f12ac7f43b0a8a56800ef0535e7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588242"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423848"
 ---
 # <a name="basic-concepts-in-using-managed-exceptions"></a>관리되는 예외 사용의 기본 개념
 
@@ -29,7 +29,7 @@ ms.locfileid: "50588242"
 
 ## <a name="remarks"></a>설명
 
-로 컴파일하는 경우는 **/clr** 옵션을 표준 뿐만 아니라 CLR 예외를 처리할 수 있습니다 [c + + 예외 처리](../cpp/cpp-exception-handling.md) 하 고 [구조적 예외 처리](../cpp/structured-exception-handling-c-cpp.md) (SEH). CLR 예외는 관리 되는 형식에 의해 throw 된 예외입니다. 합니다 [system:: exception](https://msdn.microsoft.com/library/system.exception.aspx) 클래스 CLR 예외 처리를 위한 많은 유용한 메서드를 제공 하 고 사용자 정의 예외 클래스에 대 한 기본 클래스로 사용 하는 것이 좋습니다.
+로 컴파일하는 경우는 **/clr** 옵션을 표준 뿐만 아니라 CLR 예외를 처리할 수 있습니다 <xref:System.Exception> 클래스 CLR 예외 처리를 위한 많은 유용한 메서드를 제공 하 고 사용자 정의 예외에 대 한 기본 클래스로 사용 하는 것이 좋습니다. 클래스입니다.
 
 인터페이스에서 파생 된 예외 형식을 catch 할에서 지원 되지 않습니다 **/clr**합니다. 또한 공용 언어 런타임 허용 하지 않습니다 스택 오버플로 예외를 catch 합니다. 스택 오버플로 예외는 프로세스를 종료 합니다.
 
@@ -140,7 +140,7 @@ Throw 된 예외에 대 한 이벤트의 순서는 다음과 같습니다.
 
 ### <a name="catching-unmanaged-types"></a>관리 되지 않는 형식을 catch합니다.
 
-관리 되지 않는 개체 유형을 throw 되 면 형식의 예외를 사용 하 여 래핑됩니다 [System::Runtime.InteropServices::SEHException](https://msdn.microsoft.com/library/system.runtime.interopservices.sehexception.aspx)합니다. 적절 한 검색 하는 경우 **catch** 절을 두 가지 방법이 있습니다.
+형식의 예외를 사용 하 여 래핑되는 관리 되지 않는 개체 유형을 throw 되 면 <xref:System.Runtime.InteropServices.SEHException>합니다. 적절 한 검색 하는 경우 **catch** 절을 두 가지 방법이 있습니다.
 
 - 네이티브 c + + 형식 발생 하는 경우 예외 래핑이 해제 되 고 해당 형식과 비교 합니다. 이 비교에는 네이티브 c + + 형식을를 일반적인 방법으로 발견할 수 있습니다.
 
@@ -152,7 +152,7 @@ Throw 된 예외에 대 한 이벤트의 순서는 다음과 같습니다.
 catch(Object^)
 ```
 
-를 갖는
+및
 
 ```
 catch(...)

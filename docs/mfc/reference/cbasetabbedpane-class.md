@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CBaseTabbedPane [MFC], SetAutoHideMode
 - CBaseTabbedPane [MFC], ShowTab
 ms.assetid: f22c0080-5b29-4a0a-8f74-8f0a4cd2dbcf
-ms.openlocfilehash: 51344a8cd0e5671f81e608b74363ed06c9200324
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7ffaa7274a8ed12944cdbc5dcbbdcb8fd3fd2b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259297"
 ---
 # <a name="cbasetabbedpane-class"></a>CBaseTabbedPane 클래스
 
@@ -91,19 +91,19 @@ class CBaseTabbedPane : public CDockablePane
 
 |이름|설명|
 |----------|-----------------|
-|[Cbasetabbedpane:: Addtab](#addtab)|탭된 창에 새 탭을 추가합니다.|
+|[CBaseTabbedPane::AddTab](#addtab)|탭된 창에 새 탭을 추가합니다.|
 |[CBaseTabbedPane::AllowDestroyEmptyTabbedPane](#allowdestroyemptytabbedpane)|빈 탭된 창 소멸 될 수 있는지 여부를 지정 합니다.|
 |[CBaseTabbedPane::ApplyRestoredTabInfo](#applyrestoredtabinfo)|레지스트리에서 탭된 창에 로드 되는 탭 설정을 적용 합니다.|
 |[CBaseTabbedPane::CanFloat](#canfloat)|창 부동 상태로 있을 수 있는지 여부를 결정 합니다. (재정의 [CBasePane::CanFloat](../../mfc/reference/cbasepane-class.md#canfloat).)|
 |[CBaseTabbedPane::CanSetCaptionTextToTabName](#cansetcaptiontexttotabname)|탭된 창 캡션의 활성 탭으로 동일한 텍스트를 표시할 것인지 여부를 결정 합니다.|
 |[CBaseTabbedPane::ConvertToTabbedDocument](#converttotabbeddocument)|(재정의 [CDockablePane::ConvertToTabbedDocument](../../mfc/reference/cdockablepane-class.md#converttotabbeddocument).)|
-|[Cbasetabbedpane:: Detachpane](#detachpane)|하나 이상의 도킹 가능한 창을 MDI 탭 문서로 변환합니다.|
+|[CBaseTabbedPane::DetachPane](#detachpane)|하나 이상의 도킹 가능한 창을 MDI 탭 문서로 변환합니다.|
 |[CBaseTabbedPane::EnableSetCaptionTextToTabName](#enablesetcaptiontexttotabname)|사용 하거나 활성 탭에 레이블 텍스트를 사용 하 여 캡션 텍스트를 동기화 하는 탭 창 기능을 사용 하지 않도록 설정 합니다.|
 |[CBaseTabbedPane::FillDefaultTabsOrderArray](#filldefaulttabsorderarray)|내부 탭 순서를 기본 상태로 복원합니다.|
 |[CBaseTabbedPane::FindBarByTabNumber](#findbarbytabnumber)|탭의 0부터 시작 탭 인덱스에 의해 식별 되 면 탭에 있는 창에 반환 합니다.|
 |||
 |[CBaseTabbedPane::FindPaneByID](#findpanebyid)|창 ID로 식별 되는 창을 반환 합니다.|
-|[Cbasetabbedpane:: Floattab](#floattab)|창이 현재 분리 가능한 탭에 있는 경우에만 창을 부동합니다.|
+|[CBaseTabbedPane::FloatTab](#floattab)|창이 현재 분리 가능한 탭에 있는 경우에만 창을 부동합니다.|
 |[CBaseTabbedPane::GetDefaultTabsOrder](#getdefaulttabsorder)|창에서 탭의 기본 순서를 반환합니다.|
 |[CBaseTabbedPane::GetFirstVisibleTab](#getfirstvisibletab)|첫 번째 표시 탭에 대 한 포인터를 검색합니다.|
 |[CBaseTabbedPane::GetMinSize](#getminsize)|창의 크기에 허용 되는 최소값을 검색 합니다. (재정의 [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|
@@ -113,7 +113,7 @@ class CBaseTabbedPane : public CDockablePane
 |[CBaseTabbedPane::GetTabsNum](#gettabsnum)|탭 창에서 탭의 수를 반환 합니다.|
 |[CBaseTabbedPane::GetUnderlyingWindow](#getunderlyingwindow)|기본 (래핑된) 탭 창을 가져옵니다.|
 |[CBaseTabbedPane::GetVisibleTabsNum](#getvisibletabsnum)|표시 된 탭의 수를 반환 합니다.|
-|[Cbasetabbedpane:: Hasautohidemode](#hasautohidemode)|탭된 창 자동 숨기기 모드로 전환할 수 있는지 여부를 결정 합니다.|
+|[CBaseTabbedPane::HasAutoHideMode](#hasautohidemode)|탭된 창 자동 숨기기 모드로 전환할 수 있는지 여부를 결정 합니다.|
 |[CBaseTabbedPane::IsHideSingleTab](#ishidesingletab)|탭된 창 이상의 탭이 표시 되는지 숨겨져 있는지 여부를 결정 합니다.|
 |`CBaseTabbedPane::LoadSiblingPaneIDs`|직렬화 하는 동안 내부적으로 사용 합니다.|
 |[CBaseTabbedPane::RecalcLayout](#recalclayout)|창에 대 한 레이아웃 정보를 다시 계산합니다. (재정의 [cpane:: Recalclayout](../../mfc/reference/cpane-class.md#recalclayout).)|
@@ -129,13 +129,13 @@ class CBaseTabbedPane : public CDockablePane
 
 이 클래스는 추상 클래스 이며 인스턴스화할 수 없습니다. 모든 종류의 탭된 창에 공통 되는 서비스를 구현 합니다.
 
-라이브러리에서 두 개의 파생된 탭된 창 클래스를 포함 하는 현재: [CTabbedPane 클래스](../../mfc/reference/ctabbedpane-class.md) 하 고 [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)합니다.
+현재 라이브러리 두 탭된 창 파생된 클래스가 포함 되어 있습니다. [CTabbedPane 클래스](../../mfc/reference/ctabbedpane-class.md) 하 고 [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)합니다.
 
 A `CBaseTabbedPane` 개체에 대 한 포인터를 래핑하는 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md) 개체입니다. [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md) 탭 창의 자식 창이 됩니다.
 
 탭된 창을 만드는 방법에 대 한 자세한 내용은 참조 하세요 [CDockablePane Class](../../mfc/reference/cdockablepane-class.md)를 [CTabbedPane 클래스](../../mfc/reference/ctabbedpane-class.md), 및 [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -155,7 +155,7 @@ A `CBaseTabbedPane` 개체에 대 한 포인터를 래핑하는 [CMFCBaseTabCtrl
 
 **헤더:** afxBaseTabbedPane.h
 
-##  <a name="addtab"></a>  Cbasetabbedpane:: Addtab
+##  <a name="addtab"></a>  CBaseTabbedPane::AddTab
 
 탭된 창에 새 탭을 추가합니다.
 
@@ -263,7 +263,7 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 *bActiveTabOnly*<br/>
 [in] 탭된 창으로 변환 하면 활성 탭만 변환 하려면 TRUE를 지정 합니다. 창의 모든 탭 변환 하려면 FALSE를 지정 합니다.
 
-##  <a name="detachpane"></a>  Cbasetabbedpane:: Detachpane
+##  <a name="detachpane"></a>  CBaseTabbedPane::DetachPane
 
 탭된 창에서 창을 분리합니다.
 
@@ -361,7 +361,7 @@ virtual CWnd* FindBarByTabNumber(
 
 에 지정 된 탭에 있는 창을 검색 하려면이 메서드를 호출 합니다 *nTabNum* 매개 변수입니다.
 
-##  <a name="floattab"></a>  Cbasetabbedpane:: Floattab
+##  <a name="floattab"></a>  CBaseTabbedPane::FloatTab
 
 창이 현재 분리 가능한 탭에 있는 경우에만 창을 부동합니다.
 
@@ -544,7 +544,7 @@ virtual int GetVisibleTabsNum() const;
 
 탭된 창에 표시 탭의 개수를 확인 하려면이 메서드를 호출 합니다.
 
-##  <a name="hasautohidemode"></a>  Cbasetabbedpane:: Hasautohidemode
+##  <a name="hasautohidemode"></a>  CBaseTabbedPane::HasAutoHideMode
 
 탭 창을 자동 숨기기 모드로 전환할 수 있는지 여부를 결정합니다.
 
@@ -700,8 +700,8 @@ virtual CMFCAutoHideToolBar* SetAutoHideMode(
 
 프로그래밍 방식으로 탭된 창 자동 숨기기 모드로 전환 하려면이 메서드를 호출 합니다. 창 주 프레임 창으로 도킹 해야 합니다 ( [CDockablePane::GetDefaultPaneDivider](../../mfc/reference/cdockablepane-class.md#getdefaultpanedivider) 에 대 한 유효한 포인터를 반환 해야 합니다 [CPaneDivider](../../mfc/reference/cpanedivider-class.md)).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)

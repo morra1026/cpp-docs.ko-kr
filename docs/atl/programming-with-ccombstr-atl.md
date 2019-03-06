@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CComBSTR class, programming with
 - Unicode, using CComBSTR [ATL]
 ms.assetid: d3bd0851-d132-4be9-9c4c-6ccba17acb2b
-ms.openlocfilehash: 44689b45d567c524d6db1446cd65201c21499c91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 806d23730a0657fc1e0c154e20dc9abd62f7e8af
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633118"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259414"
 ---
 # <a name="programming-with-ccombstr-atl"></a>CComBSTR을 사용한 프로그래밍(ATL)
 
@@ -76,10 +76,9 @@ ATL 클래스 [CComBSTR](../atl/reference/ccombstr-class.md) BSTR 데이터 형�
 
 동일한 코드를 함수 매개 변수 되었으면 누수가 발생 하지는 유의 **[에서 out]** 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)<br/>
 [CStringT 클래스](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 [wstring](../standard-library/basic-string-class.md)<br/>
 [문자열 변환 매크로](../atl/reference/string-conversion-macros.md)
-

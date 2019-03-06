@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CProgressCtrl class [MFC], settings
 - progress controls [MFC], settings
 ms.assetid: f4616e91-74fa-4000-ba0d-d3ddc0ee075b
-ms.openlocfilehash: 444dc45c816e0dfc2fd45bad999ad90c2acacc01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1960b15c2f76d7cbfc9f249a77481b795e6a27ea
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481782"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290754"
 ---
 # <a name="settings-for-the-progress-control"></a>진행률 컨트롤에 대한 설정
 
@@ -22,8 +22,7 @@ ms.locfileid: "50481782"
 
 진행률 컨트롤의 현재 위치 단계를 사용 하 여 [StepIt](../mfc/reference/cprogressctrl-class.md#stepit)합니다. 각 단계의 크기를 설정 하려면 사용 하 여 [SetStep](../mfc/reference/cprogressctrl-class.md#setstep)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CProgressCtrl 사용](../mfc/using-cprogressctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

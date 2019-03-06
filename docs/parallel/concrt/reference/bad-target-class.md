@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - bad_target class
 ms.assetid: e6dcddbf-9217-4fac-ac7f-7b8b4781d2f5
-ms.openlocfilehash: 0440955718bee3b426f5e4625b5eb3fc559a5d28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04489151cedf1a47aeebd883e76b8d26b51031ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434485"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298622"
 ---
 # <a name="badtarget-class"></a>bad_target 클래스
 
@@ -37,7 +37,7 @@ class bad_target : public std::exception;
 
 이 예외는 일반적으로 다른 대상에 대 한 예약 된 메시지를 사용 하려고 하거나 보유 하지 않는 예약을 해제 하는 대상 등의 이유로 throw 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -61,11 +61,10 @@ bad_target() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)
-

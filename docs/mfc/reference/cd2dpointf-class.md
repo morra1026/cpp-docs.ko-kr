@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CD2DPointF [MFC], CD2DPointF
 ms.assetid: 30f72083-1c8a-4f50-adb2-72dbbe3522d4
-ms.openlocfilehash: 7b9f6634e4b5980d8318557a8822549d226910b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8fe808c3147fa52c5041e2988822ace0ba60896
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559109"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304043"
 ---
 # <a name="cd2dpointf-class"></a>CD2DPointF 클래스
 
@@ -39,7 +39,7 @@ class CD2DPointF : public D2D1_POINT_2F;
 |----------|-----------------|
 |[CD2DPointF::operator CPoint](#operator_cpoint)|변환 `CD2DPointF` 에 `CPoint` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_POINT_2F`
 
@@ -62,7 +62,7 @@ CD2DPointF(FLOAT fX = 0., FLOAT fY = 0.);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 원본 지점
 
 *fX*<br/>
@@ -83,6 +83,6 @@ operator CPoint();
 
 D2D 요소의 현재 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

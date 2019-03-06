@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Automation classes [MFC]
 - OLE Automation [MFC]
 ms.assetid: 96e5372b-ff8a-4da1-933b-4d9bbf4dceb3
-ms.openlocfilehash: 590a2846f4e732179331eba1b0c61d3b9d6c1a19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08e33e1fce3f792e76e2eec4ecb59601c99d9822
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505913"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326298"
 ---
 # <a name="ole-automation-classes"></a>OLE 자동화 클래스
 
@@ -27,7 +27,6 @@ ms.locfileid: "50505913"
 [COleDispatchException](../mfc/reference/coledispatchexception-class.md)<br/>
 OLE 자동화 하는 동안 오류에서 발생 하는 예외입니다. 자동화 예외는 자동화 서버에 의해 throw되고 자동화 클라이언트에 의해 catch됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

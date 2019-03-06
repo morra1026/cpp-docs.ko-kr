@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAxWindow class
 - ATL, hosting ActiveX controls
 ms.assetid: 85e79261-43e4-4770-bde0-1ff87f222b0f
-ms.openlocfilehash: f1a1e7fe00218efe7514fe59ea78ea30b33b878f
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 3cf1c773c96a2bf1bc6c67420d72052e68ee2a53
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329568"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297595"
 ---
 # <a name="caxwindow-class"></a>CAxWindow 클래스
 
@@ -222,7 +222,7 @@ HRESULT CreateControlEx(
 [out] 수신할 포인터의 주소는 `IUnknown` 컨트롤입니다. NULL 일 수 있습니다.
 
 *iidSink*<br/>
-[in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. IID_NULL 될 수 있습니다.
+[in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. Can be IID_NULL.
 
 *punkSink*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 으로 지정 된 포함된 된 개체의 연결 지점에 연결 되어 싱크 개체의 인터페이스가 *iidSink*합니다.
@@ -365,11 +365,10 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 
 외부 `IDocHostUIHandlerDispatch` 인터페이스에 대 한 호스트의 사이트를 쿼리 하는 컨트롤에서 사용 되는 `IDocHostUIHandlerDispatch` 인터페이스입니다. WebBrowser 컨트롤은이 작업을 수행 하는 하나의 컨트롤입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATLCON 샘플](../../visual-cpp-samples.md)<br/>
 [CWindow 클래스](../../atl/reference/cwindow-class.md)<br/>
 [복합 컨트롤 기본 사항](../../atl/atl-composite-control-fundamentals.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [컨트롤 포함 FAQ](../../atl/atl-control-containment-faq.md)
-

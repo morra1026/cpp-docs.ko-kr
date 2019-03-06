@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CClientDC [MFC], CClientDC
 - CClientDC [MFC], m_hWnd
 ms.assetid: 8a871d6b-06f8-496e-9fa3-9a5780848369
-ms.openlocfilehash: 5304fa322c62f67ed075be7912697f8c87b27392
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1c506e1fe3d36b9f356f8ef250e0310a10a917cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643835"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284114"
 ---
 # <a name="cclientdc-class"></a>CClientDC 클래스
 
@@ -98,7 +98,7 @@ HWND m_hWnd;
 
   예를 참조 하세요 [CClientDC::CClientDC](#cclientdc)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [CDC 클래스](../../mfc/reference/cdc-class.md)<br/>

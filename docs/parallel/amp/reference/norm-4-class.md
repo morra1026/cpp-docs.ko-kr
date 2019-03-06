@@ -268,12 +268,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::norm_4::set_zyx
 - amp_short_vectors/Concurrency::graphics::norm_4::wy
 ms.assetid: d628b2bf-2cdb-4dbb-95c6-cd778f5e991f
-ms.openlocfilehash: ec71019e64046d693aaf96adb81762bfd536ac2f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 06e08c24a92259e34be59a9f021ae13f38e974a5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677229"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297400"
 ---
 # <a name="norm4-class"></a>norm_4 클래스
 
@@ -592,7 +592,7 @@ class norm_4;
 |norm_4::zyx||
 |norm_4::zyxw||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `norm_4`
 
@@ -600,7 +600,7 @@ class norm_4;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ##  <a name="ctor"></a> norm_4
 
@@ -678,7 +678,7 @@ explicit inline norm_4(
 *_V3*<br/>
 3 요소를 초기화할 값입니다.
 
-*(_V)*<br/>
+*_V*<br/>
 초기화에 대 한 값입니다.
 
 *_Other*<br/>
@@ -690,6 +690,6 @@ explicit inline norm_4(
 static const int size = 4;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

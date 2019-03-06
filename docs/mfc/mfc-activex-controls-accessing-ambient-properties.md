@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], accessing ambient properties
 - properties [MFC], accessing ambient
 ms.assetid: fdc9db29-e6b0-45d2-a879-8bd60e2058a7
-ms.openlocfilehash: f6daff09969e82daa4e8f76c8b1eb4972ddd6eeb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 585ec8720a654bbcb728330d70ddb914f2543e41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585629"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305226"
 ---
 # <a name="mfc-activex-controls-accessing-ambient-properties"></a>MFC ActiveX 컨트롤: 앰비언트 속성 액세스
 
@@ -55,7 +55,6 @@ ms.locfileid: "50585629"
 
 (몇 가지 작업 컨테이너의)을 통해 앰비언트 속성의 값이 변경 된 `OnAmbientPropertyChanged` 컨트롤의 멤버 함수를 호출 합니다. 이러한 알림 메시지를 처리 하려면이 멤버 함수를 재정의 합니다. 매개 변수가 `OnAmbientPropertyChanged` 영향을 받는 앰비언트 속성의 디스패치 ID입니다. 이 디스패치 ID의 값 DISPID_UNKNOWN 하나 이상의 앰비언트 속성이 변경 되었음을 나타냅니다.에 될 수 있지만 영향을 받은 속성에 대 한 정보를 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

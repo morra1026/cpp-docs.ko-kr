@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CDiscreteTransition [MFC], m_delay
 - CDiscreteTransition [MFC], m_hold
 ms.assetid: b4d84fb3-ccaa-451c-a69b-6b50dcb9b9c8
-ms.openlocfilehash: 6092e805516d242daf6149615a8ef72df334dfd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc2311f7dae71f7c3848b7825b297ec5c9747859
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656705"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262833"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition 클래스
 
@@ -59,7 +59,7 @@ class CDiscreteTransition : public CBaseTransition;
 
 불연속 전환 하는 동안 애니메이션 변수의 값으로 유지 됩니다 초기 지정 된 지연 시간을 최종 값을 지정된 하 고 해당 값 유지에 즉시 스위치에 지정된 된 대기 시간에 대 한 합니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -84,13 +84,13 @@ CDiscreteTransition(
 
 ### <a name="parameters"></a>매개 변수
 
-*지연*<br/>
+*delay*<br/>
 최종 값으로 즉시 전환 지연에 사용 되는 시간의 양입니다.
 
 *dblFinalValue*<br/>
 전환의 끝에 있는 애니메이션 변수의 값입니다.
 
-*보류 중*<br/>
+*hold*<br/>
 최종 값에서 변수에 저장에 사용 되는 시간의 양입니다.
 
 ##  <a name="create"></a>  CDiscreteTransition::Create
@@ -134,6 +134,6 @@ UI_ANIMATION_SECONDS m_delay;
 UI_ANIMATION_SECONDS m_hold;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

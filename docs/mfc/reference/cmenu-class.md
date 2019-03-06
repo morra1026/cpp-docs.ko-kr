@@ -84,12 +84,12 @@ helpviewer_keywords:
 - CMenu [MFC], TrackPopupMenuEx
 - CMenu [MFC], m_hMenu
 ms.assetid: 40cacfdc-d45c-4ec7-bf28-991c72812499
-ms.openlocfilehash: 2834de457ce9e2a71537e706f0fdf84463b16a8d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: bdc5f2ebf20949f63b3892ee8e8c6eedf05e2838
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178926"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293864"
 ---
 # <a name="cmenu-class"></a>CMenu 클래스
 
@@ -155,8 +155,8 @@ class CMenu : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[HMENU CMenu::operator](#operator_hmenu)|메뉴 개체의 핸들을 검색 합니다.|
-|[CMenu::operator! =](#operator_neq)|두 개의 메뉴 개체가 같은지 여부를 결정 합니다.|
+|[CMenu::operator HMENU](#operator_hmenu)|메뉴 개체의 핸들을 검색 합니다.|
+|[CMenu::operator !=](#operator_neq)|두 개의 메뉴 개체가 같은지 여부를 결정 합니다.|
 |[CMenu::operator = =](#operator_eq_eq)|두 개의 메뉴 개체가 같은지 여부를 결정 합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -173,7 +173,7 @@ class CMenu : public CObject
 
 사용할 수는 [LoadMenuIndirect](#loadmenuindirect) 멤버 함수를 호출 하 여 리소스에서 생성 하는 메뉴 제외 하 고 메모리에 템플릿에서 메뉴를 만드는 [LoadMenu](#loadmenu) 더 쉽게 유지 관리 및 자체 메뉴 리소스 만들고 메뉴 편집기에서 수정할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -459,7 +459,7 @@ BOOL DeleteMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*찾기*<br/>
+*nPosition*<br/>
 기준으로 삭제할 수에 있는 메뉴 항목을 지정 *nFlags*합니다.
 
 *nFlags*<br/>
@@ -929,7 +929,7 @@ BOOL InsertMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*찾기*<br/>
+*nPosition*<br/>
 새 메뉴 항목을 삽입할 메뉴 항목 앞을 지정 합니다. 합니다 *nFlags* 매개 변수를 사용 하 여 해석할 수 있습니다 *찾기를* 다음과 같은 방법으로:
 
 |nFlags|찾기 해석|
@@ -1118,7 +1118,7 @@ BOOL ModifyMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*찾기*<br/>
+*nPosition*<br/>
 메뉴 항목을 변경할 수를 지정 합니다. 합니다 *nFlags* 매개 변수를 사용 하 여 해석할 수 있습니다 *찾기를* 다음과 같은 방법으로:
 
 |nFlags|찾기 해석|
@@ -1160,7 +1160,7 @@ BOOL ModifyMenu(
 
   예를 참조 하세요 [CMenu::InsertMenu](#insertmenu)합니다.
 
-##  <a name="operator_hmenu"></a>  HMENU CMenu::operator
+##  <a name="operator_hmenu"></a>  CMenu::operator HMENU
 
 이 연산자의 핸들을 검색 하는 데는 `CMenu` 개체입니다.
 
@@ -1176,7 +1176,7 @@ operator HMENU() const;
 
 Windows Api를 직접 호출 하는 핸들을 사용할 수 있습니다.
 
-##  <a name="operator_neq"></a>  CMenu::operator! =
+##  <a name="operator_neq"></a>  CMenu::operator !=
 
 이면 두 메뉴 다릅니다 논리적으로 결정 합니다.
 
@@ -1186,14 +1186,14 @@ BOOL operator!=(const CMenu& menu) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴*<br/>
+*menu*<br/>
 `CMenu` 비교할 개체입니다.
 
 ### <a name="remarks"></a>설명
 
 왼쪽 메뉴 개체를 오른쪽에 있는 메뉴 개체 같음 인지 테스트 합니다.
 
-##  <a name="operator_eq_eq"></a>  CMenu::operator = =
+##  <a name="operator_eq_eq"></a>  CMenu::operator ==
 
 두 개의 메뉴가 논리적으로 같은지 여부를 결정 합니다.
 
@@ -1203,7 +1203,7 @@ BOOL operator==(const CMenu& menu) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴*<br/>
+*menu*<br/>
 `CMenu` 비교할 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -1222,7 +1222,7 @@ BOOL RemoveMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*찾기*<br/>
+*nPosition*<br/>
 제거할 메뉴 항목을 지정 합니다. 합니다 *nFlags* 매개 변수를 사용 하 여 해석할 수 있습니다 *찾기를* 다음과 같은 방법으로:
 
 |nFlags|찾기 해석|
@@ -1337,7 +1337,7 @@ BOOL SetMenuItemBitmaps(
 
 ### <a name="parameters"></a>매개 변수
 
-*찾기*<br/>
+*nPosition*<br/>
 메뉴 항목을 변경할 수를 지정 합니다. 합니다 *nFlags* 매개 변수를 사용 하 여 해석할 수 있습니다 *찾기를* 다음과 같은 방법으로:
 
 |nFlags|찾기 해석|
@@ -1482,7 +1482,7 @@ TPM_RETURNCMD 지정 하지 않으면 경우는 *fuFlags* 매개 변수, 반환 
 
 부동 팝업 메뉴는 화면에서 아무 곳 이나 나타날 수 있습니다. 팝업 메뉴를 만들 때 오류를 처리 하는 방법은 참조 하세요 [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CTRLTEST](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 DYNAMENU](../../visual-cpp-samples.md)<br/>

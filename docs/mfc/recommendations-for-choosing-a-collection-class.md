@@ -16,16 +16,16 @@ helpviewer_keywords:
 - collection classes [MFC], duplicates allowed
 - collection classes [MFC], shapes
 ms.assetid: a82188cd-443f-40d8-a244-edf292a53db4
-ms.openlocfilehash: 2c8cb323feb44618909895a4ee536ad3b7832173
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c72a57385b0036d98629d1ee24111500b9d2f8ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446737"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288040"
 ---
 # <a name="recommendations-for-choosing-a-collection-class"></a>컬렉션 클래스 선택에 대한 권장 사항
 
-이 문서에서는 특정 응용 프로그램 요구 사항에 적합한 컬렉션을 선택하는 데 도움이 되는 자세한 정보를 제공합니다.
+이 문서에서는 특정 애플리케이션 요구 사항에 적합한 컬렉션을 선택하는 데 도움이 되는 자세한 정보를 제공합니다.
 
 어떤 컬렉션 클래스를 선택할 것인가는 다음과 같은 다양한 요인에 따라 달라집니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "50446737"
 
 - 2번 및 3번 열에서는 각 모양의 순서와 액세스 특성에 대해 설명합니다. 이 표에서 "정렬 여부"는 항목이 삽입되고 삭제되는 순서가 컬렉션의 순서에 따라 결정되는 것을 의미하며 항목이 내용에 따라 정렬된다는 것을 의미하지는 않습니다. "인덱스 여부"는 컬렉션의 항목을 일반 배열의 항목처럼 정수 인덱스로 검색할 수 있음을 의미합니다.
 
-- 4번 및 5번 열에서는 각 모양의 성능에 대해 설명합니다. 컬렉션에 항목을 많이 삽입해야 하는 응용 프로그램에서는 삽입 속도가 특히 중요합니다. 다른 응용 프로그램에서는 조회 속도가 더 중요할 수도 있습니다.
+- 4번 및 5번 열에서는 각 모양의 성능에 대해 설명합니다. 컬렉션에 항목을 많이 삽입해야 하는 애플리케이션에서는 삽입 속도가 특히 중요합니다. 다른 애플리케이션에서는 조회 속도가 더 중요할 수도 있습니다.
 
 - 6번 열에서는 각 모양에 요소가 중복될 수 있는지 여부에 대해 설명합니다.
 
@@ -91,10 +91,9 @@ ms.locfileid: "50446737"
 
 3. 이 열에서 예로 표시된 경우 원래의 목적대로 사용하면 비템플릿 컬렉션 클래스는 형식 안전 상태입니다. 예를 들어 바이트를 `CByteArray`에 저장하면 배열은 형식 안전 상태가 됩니다. 그러나 이 배열을 문자를 저장하는 데 사용하면 형식 안정성이 불확실해집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션](../mfc/collections.md)<br/>
 [템플릿 기반 클래스](../mfc/template-based-classes.md)<br/>
 [방법: 형식이 안전한 컬렉션 만들기](../mfc/how-to-make-a-type-safe-collection.md)<br/>
 [컬렉션의 모든 멤버에 액세스](../mfc/accessing-all-members-of-a-collection.md)
-

@@ -72,12 +72,12 @@ helpviewer_keywords:
 - CToolTipCtrl [MFC], Update
 - CToolTipCtrl [MFC], UpdateTipText
 ms.assetid: 8973f70c-b73a-46c7-908d-758f364b9a97
-ms.openlocfilehash: 177f6eeada942440c33f7dd0a0cbc6d9e59d867c
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 6055926e05f8a7f9fbecec113e859d08e6b6e636
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894148"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420845"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl Class
 
@@ -210,7 +210,7 @@ BOOL AddTool(
 도구에 대 한 텍스트를 포함 하는 문자열 리소스의 ID입니다.
 
 *lpRectTool*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 도구의 좌표가 포함 된 구조체의 경계 사각형입니다. 로 식별 되는 창의 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 좌표가 *pWnd*합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 도구의 좌표가 포함 된 구조체의 경계 사각형입니다. 로 식별 되는 창의 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 좌표가 *pWnd*합니다.
 
 *nIDTool*<br/>
 ID는 도구입니다.
@@ -248,7 +248,7 @@ BOOL AdjustRect(
 ### <a name="parameters"></a>매개 변수
 
 *lprc*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 도구 팁 창 사각형 또는 텍스트 표시 사각형을 보유 하는 구조입니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 도구 팁 창 사각형 또는 텍스트 표시 사각형을 보유 하는 구조입니다.
 
 *bLarger*<br/>
 TRUE 이면 *lprc* 텍스트 표시 사각형을 지정 하는 해당 창 사각형을 받습니다. FALSE 이면 *lprc* 창 사각형을 지정 하는 해당 텍스트 표시 사각형을 받습니다.
@@ -453,7 +453,7 @@ void GetMargin(LPRECT lprc) const;
 ### <a name="parameters"></a>매개 변수
 
 *lprc*<br/>
-주소는 `RECT` 여백 정보를 받는 구조체입니다. 멤버는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조는 경계 사각형을 정의 하지 않습니다. 이 메시지를 목적으로 구조체 멤버는 다음과 같이 해석 됩니다.
+주소는 `RECT` 여백 정보를 받는 구조체입니다. 멤버는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조는 경계 사각형을 정의 하지 않습니다. 이 메시지를 목적으로 구조체 멤버는 다음과 같이 해석 됩니다.
 
 |멤버|표현|
 |------------|--------------------|
@@ -867,7 +867,7 @@ void SetToolRect(
 ID는 도구입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 새 경계 사각형을 지정 합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 새 경계 사각형을 지정 합니다.
 
 ##  <a name="setwindowtheme"></a>  CToolTipCtrl::SetWindowTheme
 
@@ -928,7 +928,7 @@ ID는 도구입니다.
 *nIDText*<br/>
 도구에 대 한 텍스트를 포함 하는 문자열 리소스의 ID입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - class libraries, MFC
 - class libraries
 ms.assetid: 9b0e3152-ac39-4f52-91b4-f20aa3a674aa
-ms.openlocfilehash: 9e2bf534abcacbbb4997971376d3831705ab2310
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aec295ea93868ff1fe6e0d3d1d2370a344e47c73
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468623"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278767"
 ---
 # <a name="class-library-overview"></a>클래스 라이브러리 개요
 
@@ -25,9 +25,9 @@ ms.locfileid: "50468623"
 
 - [루트 클래스: CObject](../mfc/root-class-cobject.md)
 
-- [MFC 응용 프로그램 아키텍처 클래스](../mfc/mfc-application-architecture-classes.md)
+- [MFC 애플리케이션 아키텍처 클래스](../mfc/mfc-application-architecture-classes.md)
 
-   - [응용 프로그램 및 스레드 지원 클래스](../mfc/application-and-thread-support-classes.md)
+   - [애플리케이션 및 스레드 지원 클래스](../mfc/application-and-thread-support-classes.md)
 
    - [명령 라우팅 클래스](../mfc/command-routing-classes.md)
 
@@ -53,7 +53,7 @@ ms.locfileid: "50468623"
 
 - [클래스 그리기 및 인쇄](../mfc/drawing-and-printing-classes.md)
 
-   - [출력(장치 컨텍스트) 클래스](../mfc/output-device-context-classes.md)
+   - [출력(디바이스 컨텍스트) 클래스](../mfc/output-device-context-classes.md)
 
    - [그리기 도구 클래스](../mfc/drawing-tool-classes.md)
 
@@ -117,7 +117,6 @@ ms.locfileid: "50468623"
 
 이 개요에 나열 된 클래스 외에도 MFC 라이브러리는 다양 한 전역 함수, 전역 변수 및 매크로 포함 합니다. 개요 및 자세한 목록은 항목에서 이러한 방법이 [MFC 매크로 및 전역](../mfc/reference/mfc-macros-and-globals.md)에 MFC 클래스에 대 한 사전순 참조를 따릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 데스크톱 응용 프로그램](../mfc/mfc-desktop-applications.md)
-

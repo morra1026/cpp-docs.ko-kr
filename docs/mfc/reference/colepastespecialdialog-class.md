@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COlePasteSpecialDialog [MFC], GetSelectionType
 - COlePasteSpecialDialog [MFC], m_ps
 ms.assetid: 0e82ef9a-9bbe-457e-8240-42c86a0534f7
-ms.openlocfilehash: 247514c37ef62987baa31be83efc73e05735904a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d135a2a254f71a4123a8bd338e1d6e9f87b74c2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530028"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303316"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog 클래스
 
@@ -81,7 +81,7 @@ class COlePasteSpecialDialog : public COleDialog
 
 OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -137,7 +137,7 @@ void AddFormat(
 *cf*<br/>
 추가할 클립보드 형식입니다.
 
-*미디어 유형입니다.*<br/>
+*tymed*<br/>
 이 형식에서 사용할 수 있는 미디어의 형식입니다. 비트 조합 또는 형식 열거는 TYMED의 값입니다.
 
 *nFormatID*<br/>
@@ -146,12 +146,12 @@ void AddFormat(
 *bEnableIcon*<br/>
 목록 상자에서이 형식을 선택 하는 경우 아이콘으로 표시 확인란을 사용할 수 있는지 여부를 결정 하는 플래그입니다.
 
-*깜박임*<br/>
+*bLink*<br/>
 목록 상자에서이 형식을 선택 하는 경우 연결 하 여 붙여넣기 라디오 단추를 사용할 수 있는지 여부를 결정 하는 플래그입니다.
 
 ### <a name="remarks"></a>설명
 
-CF_TEXT 또는 CF_TIFF와 같은 표준 형식 또는 사용자 지정 형식 시스템을 사용 하 여 응용 프로그램 등록을 추가 하려면이 함수를 호출할 수 있습니다. 응용 프로그램에 데이터 개체를 붙여 넣는 방법에 대 한 자세한 내용은 문서 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+CF_TEXT 또는 CF_TIFF와 같은 표준 형식 또는 사용자 지정 형식 시스템을 사용 하 여 응용 프로그램 등록을 추가 하려면이 함수를 호출할 수 있습니다. 응용 프로그램에 데이터 개체를 붙여 넣는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 자세한 내용은 참조는 [TYMED](/windows/desktop/api/objidl/ne-objidl-tagtymed) 열거형 및 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK의 구조입니다.
 
@@ -381,7 +381,7 @@ OLEUIPASTESPECIAL m_ps;
 
 자세한 내용은 참조는 [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) Windows SDK에는 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDialog 클래스](../../mfc/reference/coledialog-class.md)<br/>

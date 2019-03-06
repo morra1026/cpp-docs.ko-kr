@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - OLE initialization
 ms.assetid: aa8a54a7-24c3-4344-b2c6-dbcf6084fa31
-ms.openlocfilehash: c935dbf88b3c70cdd9ec585685bf6231ded01dde
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3d49b37ffc2561fa9a51463a893ec2ba4f4fb725
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623329"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304030"
 ---
 # <a name="ole-initialization"></a>OLE 초기화
 
@@ -73,6 +73,6 @@ MFC 응용 프로그램에 대 한 OLE 지원 초기화 하려면이 함수를 �
 
 **헤더:** afxdisp.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

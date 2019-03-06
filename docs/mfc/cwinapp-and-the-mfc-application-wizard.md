@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], and MFC Application Wizard
 - MFC, wizards
 ms.assetid: f8ac0491-3302-4e46-981d-0790624eb8a2
-ms.openlocfilehash: c659387043accbd6cdad7d5e2b97ce8bf15c6e63
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb45c8ffae15628b0b99a1ebcd962d88d845f83b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437208"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266265"
 ---
 # <a name="cwinapp-and-the-mfc-application-wizard"></a>CWinApp 및 MFC 응용 프로그램 마법사
 
@@ -31,9 +31,8 @@ MFC 응용 프로그램 마법사에 응용 프로그램 클래스에서 파생 
 
 다양 한 용도로 제공 되는 메시지 맵을 확인 하 고 표준 구현 적합 하지만 필요에 따라 수정할 수 있습니다. 이러한 구현은 가장 흥미로 워 보이지는 `InitInstance` 멤버 함수입니다. 코드를 추가 하는 기본 구현에는 일반적으로 `InitInstance`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)<br/>
 [재정의 가능 CWinApp 멤버 함수](../mfc/overridable-cwinapp-member-functions.md)<br/>
 [특수 CWinApp 서비스](../mfc/special-cwinapp-services.md)
-

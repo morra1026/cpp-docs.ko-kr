@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CDialog class [MFC], MFC dialog boxes
 - MFC dialog boxes
 ms.assetid: e4feea1a-8360-4ccb-9b84-507f1ccd9ef3
-ms.openlocfilehash: 400107a7b61ae28ca1d3ec69ee3217d58f55d9e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9add6f003f0f6cd4ab85980e1e35370770da43aa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665077"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282060"
 ---
 # <a name="dialog-boxes"></a>대화 상자
 
@@ -31,9 +31,9 @@ Windows 용 응용 프로그램은 자주 대화 상자를 통해 사용자와 �
 
 [속성 시트](../mfc/property-sheets-mfc.md)탭 대화 상자 라고도 하며,은 고유한 대화 상자 컨트롤의 "페이지"를 포함 하는 대화 상자. 각 페이지 맨 위에 있는 "탭" 파일 폴더를 있습니다. 탭을 클릭 하면 대화 상자의 맨 앞으로 해당 페이지를 제공 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
-- [예: 메뉴 명령을 통해 대화 상자 표시](../mfc/example-displaying-a-dialog-box-via-a-menu-command.md)
+- [예제: 메뉴 명령을 통해 대화 상자를 표시합니다.](../mfc/example-displaying-a-dialog-box-via-a-menu-command.md)
 
 - [프레임 워크의 대화 상자 구성 요소](../mfc/dialog-box-components-in-the-framework.md)
 
@@ -65,6 +65,6 @@ Windows 용 응용 프로그램은 자주 대화 상자를 통해 사용자와 �
 
 - [샘플](../mfc/dialog-sample-list.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

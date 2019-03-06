@@ -49,12 +49,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPathT class
 ms.assetid: eba4137d-1fd2-4b44-a2e1-0944db64df3c
-ms.openlocfilehash: cf845d04c008e83d0e9851718c995036bc810b55
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 36d8710bd7bb055d8629dec57ec4d8c3602c8f79
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449350"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273025"
 ---
 # <a name="cpatht-class"></a>CPathT 클래스
 
@@ -140,7 +140,7 @@ class CPathT
 |[CPathT::operator const StringType &](#operator_const_stringtype_amp)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
 |[CPathT::operator CPathT::PCXSTR](#operator_cpatht__pcxstr)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
 |[CPathT::operator StringType &](#operator_stringtype)|이 연산자를 사용 하면 개체를 문자열로 처리 합니다.|
-|[CPathT::operator + =](#operator_add_eq)|이 연산자는 경로 문자열을 추가합니다.|
+|[CPathT::operator +=](#operator_add_eq)|이 연산자는 경로 문자열을 추가합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -284,7 +284,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 
 ### <a name="remarks"></a>설명
 
-접두사는 이러한 형식 중 하나: "c:\\\\",".","...","... \\\\". 자세한 내용은 [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa)합니다.
+접두사를 이러한 형식 중 하나입니다. "C:\\\\", ".", "..", "..\\\\". 자세한 내용은 [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa)합니다.
 
 ##  <a name="compactpath"></a>  CPathT::CompactPath
 
@@ -471,7 +471,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 ### <a name="parameters"></a>매개 변수
 
 *pszPrefix*<br/>
-검색할 접두사입니다. 접두사는 이러한 형식 중 하나: "c:\\\\",".","...","... \\\\".
+검색할 접두사입니다. 접두사를 이러한 형식 중 하나입니다. "C:\\\\", ".", "..", "..\\\\".
 
 ### <a name="return-value"></a>반환 값
 
@@ -631,7 +631,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 
 자세한 내용은 [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca)합니다.
 
-##  <a name="operator_add_eq"></a>  CPathT::operator + =
+##  <a name="operator_add_eq"></a>  CPathT::operator +=
 
 이 연산자는 경로 문자열을 추가합니다.
 
@@ -907,7 +907,7 @@ typedef StringType::XCHAR XCHAR;
 
 `StringType` 템플릿 매개 변수를 `CPathT`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../atl/reference/atl-classes.md)<br/>
 [CStringT 클래스](../../atl-mfc-shared/reference/cstringt-class.md)

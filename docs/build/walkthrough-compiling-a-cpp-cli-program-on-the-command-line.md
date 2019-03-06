@@ -11,22 +11,22 @@ ms.locfileid: "50451027"
 ---
 # <a name="walkthrough-compiling-a-ccli-program-on-the-command-line"></a>연습: 명령줄에서 C++/CLI 프로그램 컴파일
 
-CLR(공용 언어 런타임)을 대상으로 하는 Visual C++ 프로그램을 만들어 .NET Framework를 사용하여 명령줄에서 빌드할 수 있습니다. Visual C++은 .NET 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 C++/CLI 프로그래밍 언어를 지원합니다. C +에 대 한 일반 정보에 대 한 + CLI 언어 참조 [.NET 프로그래밍을 사용 하 여 C + + /cli (Visual c + +)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
+CLR(공용 언어 런타임)을 대상으로 하는 Visual C++ 프로그램을 만들어 .NET Framework를 사용하여 명령줄에서 빌드할 수 있습니다. Visual C++은 .NET 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 C++/CLI 프로그래밍 언어를 지원합니다. C +에 대 한 일반 정보에 대 한 + CLI 언어 참조 [.NET 프로그래밍을 사용 하 여 C++ /cli (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 
 이 연습에서는 텍스트 편집기를 사용하여 기본적인 C++/CLI 프로그램을 만든 다음 명령줄에서 컴파일합니다. 여기에 나와 있는 내용을 입력하는 대신 C++/CLI 프로그램을 직접 사용할 수도 있고 다른 도움말 문서의 C++/CLI 코드 샘플을 사용할 수도 있습니다. 이 방법은 구축 하 고 UI 요소가 없는 소형 모듈을 테스트 하는 데 유용 합니다.)
 
 > [!NOTE]
-> 또한 Visual Studio IDE를 사용하여 C++/CLI 프로그램을 컴파일할 수 있습니다. 자세한 내용은 [연습: Visual Studio에서 CLR을 대상으로 하는 c + + 프로그램 컴파일](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md)합니다.
+> 또한 Visual Studio IDE를 사용하여 C++/CLI 프로그램을 컴파일할 수 있습니다. 자세한 내용은 [연습: Visual Studio에서 CLR을 대상으로 하는 C++ 프로그램 컴파일](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md)합니다.
 
 ## <a name="prerequisites"></a>전제 조건
 
-C + + 언어의 기본적인 사항을 알고 있습니다.
+C++ 언어의 기본적인 사항을 알고 있습니다.
 
 ## <a name="compiling-a-ccli-program"></a>C++/CLI 프로그램 컴파일
 
 다음 단계는 .NET Framework 클래스를 사용하는 C++/CLI 콘솔 응용 프로그램을 컴파일하는 방법을 보여줍니다.
 
-컴파일하려면 C + + /cli를 사용 해야 CLI를 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션입니다. Visual C++ 컴파일러는 MSIL 코드를 포함하거나 MSIL 코드와 네이티브 코드가 혼합되어 있는 .exe 파일을 생성하여 필수 .NET Framework 라이브러리에 연결합니다.
+컴파일하려면 C++ /cli를 사용 해야 CLI를 [/clr](../build/reference/clr-common-language-runtime-compilation.md) 컴파일러 옵션입니다. Visual C++ 컴파일러는 MSIL 코드를 포함하거나 MSIL 코드와 네이티브 코드가 혼합되어 있는 .exe 파일을 생성하여 필수 .NET Framework 라이브러리에 연결합니다.
 
 ### <a name="to-compile-a-ccli-application-on-the-command-line"></a>명령줄에서 C++/CLI 응용 프로그램을 컴파일하려면
 
@@ -49,7 +49,7 @@ C + + 언어의 기본적인 사항을 알고 있습니다.
 
 1. 메뉴 모음에서 선택 **파일** > **저장**합니다.
 
-   .NET Framework 클래스를 사용 하는 Visual c + + 소스 파일을 만들었습니다 (<xref:System.Console>)에 <xref:System> 네임 스페이스입니다.
+   .NET Framework 클래스를 사용 하는 Visual C++ 소스 파일을 만들었습니다 (<xref:System.Console>)에 <xref:System> 네임 스페이스입니다.
 
 1. 명령 프롬프트에 `cl /clr basicclr.cpp`를 입력합니다. cl.exe 컴파일러는 이 소스 파일을 MSIL이 포함된 .obj 파일로 컴파일한 다음 링커를 실행하여 실행 프로그램인 basicclr.exe를 생성합니다.
 

@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CStringElementTraitsI class
 ms.assetid: c23f92b1-91e5-400f-96ed-258b02622b7a
-ms.openlocfilehash: 35215546268c4c48f913e7aef763768fffc76d59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 77357aa2be326ebebaaf5a8614faaf88a0c3c06b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551725"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276145"
 ---
 # <a name="cstringelementtraitsi-class"></a>CStringElementTraitsI 클래스
 
@@ -58,7 +58,7 @@ class CStringElementTraitsI : public CElementTraitsBase<T>
 
 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
 
@@ -149,7 +149,7 @@ typedef T::PCXSTR INARGTYPE;
 typedef T& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CElementTraitsBase 클래스](../../atl/reference/celementtraitsbase-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

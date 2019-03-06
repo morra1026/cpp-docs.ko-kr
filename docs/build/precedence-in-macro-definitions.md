@@ -5,12 +5,12 @@ helpviewer_keywords:
 - NMAKE program, precedence in macro definitions
 - macros, precedence
 ms.assetid: 0c13182d-83cb-4cbd-af2d-f4c916b62aeb
-ms.openlocfilehash: 8829b3cdbc7b2324ef3d118f8ca45dd2a1621e7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f847cd7cea736ff9b4360a050767d00bd6cf539
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619083"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421508"
 ---
 # <a name="precedence-in-macro-definitions"></a>매크로 정의의 우선 순위
 
@@ -28,6 +28,6 @@ NMAKE는 매크로 정의가 여러 개 있으면 우선 순위가 가장 높은
 
 /E 동일한 이름 가진 메이크파일 매크로 재정의 하도록 환경 변수에서 상속 하는 매크로를 사용 합니다. 사용 하 여 **! UNDEF** 명령줄을 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMake 매크로 정의](../build/defining-an-nmake-macro.md)

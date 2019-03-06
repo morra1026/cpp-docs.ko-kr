@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - agent class
 ms.assetid: 1b09e3d2-5e37-4966-b016-907ef1512456
-ms.openlocfilehash: ad096eea3467346d85ce4249e910915cbd73488d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 98ad5f817361d8410e5a60648fb23baec06c42d7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560253"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289145"
 ---
 # <a name="agent-class"></a>에이전트 클래스
 
@@ -55,18 +55,18 @@ class agent;
 |[wait_for_all](#wait_for_all)|모든 태스크를 완료 하려면 지정 된 에이전트에 대 한 대기 합니다.|
 |[wait_for_one](#wait_for_one)|해당 작업을 완료 하려면 지정 된 에이전트 중 하나가 될 때까지 기다립니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
-|[작업 수행](#done)|이동에 에이전트를 `agent_done` 에이전트가 완료 되었음을 나타내는 상태입니다.|
+|[done](#done)|이동에 에이전트를 `agent_done` 에이전트가 완료 되었음을 나타내는 상태입니다.|
 |[run](#run)|에이전트의 기본 태스크를 나타냅니다. `run` 파생된 클래스에서 재정의 하 고 에이전트가 수행할 동작 지정이 시작 된 후입니다.|
 
 ## <a name="remarks"></a>설명
 
 자세한 내용은 [비동기 에이전트](../../../parallel/concrt/asynchronous-agents.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `agent`
 
@@ -100,7 +100,7 @@ agent(ScheduleGroup& _PGroup);
 
 런타임은 `_PScheduler` 또는 `_PGroup` 매개 변수를 지정하지 않는 경우 기본 스케줄러를 사용합니다.
 
-##  <a name="dtor"></a> ~ 에이전트
+##  <a name="dtor"></a> ~agent
 
 에이전트를 제거합니다.
 
@@ -203,7 +203,7 @@ static agent_status __cdecl wait(
 *_PAgent*<br/>
 에이전트에 대 한 대기에 대 한 포인터입니다.
 
-*시간 제한 _t*<br/>
+*_Timeout*<br/>
 대기할 시간 (밀리초)는 최대 시간입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -239,7 +239,7 @@ static void __cdecl wait_for_all(
 *_PStatus*<br/>
 에이전트 상태 배열에 대 한 포인터입니다. 메서드는 반환 될 때 각 상태 값은 해당 에이전트의 상태를 나타냅니다.
 
-*시간 제한 _t*<br/>
+*_Timeout*<br/>
 대기할 시간 (밀리초)는 최대 시간입니다.
 
 ### <a name="remarks"></a>설명
@@ -269,13 +269,13 @@ static void __cdecl wait_for_one(
 *_PAgents*<br/>
 에이전트에 대 한 대기에 대 한 포인터의 배열입니다.
 
-*_Source*<br/>
+*_Status*<br/>
 에이전트 상태를 저장할 변수 참조입니다.
 
 *_Index*<br/>
 에이전트 인덱스 배치 될 위치는 변수에 대 한 참조입니다.
 
-*시간 제한 _t*<br/>
+*_Timeout*<br/>
 대기할 시간 (밀리초)는 최대 시간입니다.
 
 ### <a name="remarks"></a>설명
@@ -284,6 +284,6 @@ static void __cdecl wait_for_one(
 
 경우 매개 변수 `_Timeout` 상수가 아닌 값이 `COOPERATIVE_TIMEOUT_INFINITE`, 예외 [operation_timed_out](operation-timed-out-class.md) 지정된 기간 동안에는 에이전트에서 해당 작업이 완료 전에 만료 되 면 throw 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

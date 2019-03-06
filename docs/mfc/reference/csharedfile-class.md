@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CSharedFile [MFC], Detach
 - CSharedFile [MFC], SetHandle
 ms.assetid: 5d000422-9ede-4318-a8c9-f7412b674f39
-ms.openlocfilehash: 188330317a8d65060d0aad0e1617365723f4f928
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e86e64c1de232aba0c17a0fdfb3600e480567a57
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476494"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273077"
 ---
 # <a name="csharedfile-class"></a>CSharedFile 클래스
 
@@ -58,7 +58,7 @@ RAM 대신 디스크에 저장 되는 점을 제외 하 고 메모리 파일 디
 
 자세한 내용은 문서를 참조 [MFC의 파일](../../mfc/files-in-mfc.md) 및 [파일 처리](../../c-runtime-library/file-handling.md) 에 *런타임 라이브러리 참조*합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -128,7 +128,7 @@ void SetHandle(
 
 하는 경우 *bAllowGrow* 파일에서 메모리 블록에 할당 된 것 보다 더 많은 바이트를 쓸 0이 아닌 경우 메모리 블록의 크기 증가 필요할 경우, 예를 들어, 시도 하는 경우 수행 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CMemFile 클래스](../../mfc/reference/cmemfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], printing
 - CRichEditCtrl class [MFC], printing
 ms.assetid: dbda0e40-018f-424e-b5d8-7b489aaf27af
-ms.openlocfilehash: bf402f5495ad85eb0c5067d60fcedfe29e6350bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ddc52e43da2e409117ccc5169442002ac27a315
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641209"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263505"
 ---
 # <a name="printing-in-rich-edit-controls"></a>Rich Edit 컨트롤의 인쇄
 
@@ -23,8 +23,7 @@ Rich edit 컨트롤을 확인할 수 있습니다 ([CRichEditCtrl](../mfc/refere
 
 사용할 수는 [SetTargetDevice](../mfc/reference/cricheditctrl-class.md#settargetdevice) rich edit 컨트롤 대상 장치를 지정 하는 멤버 함수는 텍스트의 서식을 지정 합니다. (표시 된 내용이 얻게)이이 함수는 WYSIWYG에 대 한 유용한 서식 있는 응용 프로그램 화면의 대신 기본 프린터의 글꼴 메트릭을 사용 하 여 텍스트를 배치 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

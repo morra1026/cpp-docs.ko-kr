@@ -8,12 +8,12 @@ helpviewer_keywords:
 - dialog templates [MFC], MFC framework
 - MFC dialog boxes [MFC], dialog resource
 ms.assetid: 592db160-0a8a-49be-ac72-ead278aca53f
-ms.openlocfilehash: cf01e7b881b8f5c9c5ba9847ccf4e15dee3e18d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88027df7433267925e91db2d368b744cee8a9e75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518588"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262742"
 ---
 # <a name="dialog-box-components-in-the-framework"></a>프레임워크의 대화 상자 구성 요소
 
@@ -27,8 +27,7 @@ MFC 프레임 워크 대화 상자에는 두 가지 구성 요소:
 
    대화 상자는 창 및 표시 될 때 Windows 창을에 연결 됩니다. 대화 상자 창 만들어지면 대화 상자 템플릿 리소스 자식 대화 상자 창 컨트롤을 만들기 위한 템플릿으로 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
-

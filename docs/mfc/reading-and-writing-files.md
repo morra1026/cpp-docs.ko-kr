@@ -12,12 +12,12 @@ helpviewer_keywords:
 - reading files
 - writing to files [MFC]
 ms.assetid: cac0c826-ba56-495f-99b3-ce6336f65763
-ms.openlocfilehash: 14bd6d57f4b3fa9bacc46fb70cb2abd2958117c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab1ddc58ec6cc2b67e5843f46afbead3ead54eba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591187"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267677"
 ---
 # <a name="reading-and-writing-files"></a>파일 읽기 및 쓰기
 
@@ -38,7 +38,6 @@ C 런타임 라이브러리 파일 처리 함수를 사용한 경우에 MFC 읽�
 > [!NOTE]
 >  입/출력 작업 내에서 정상적으로 수행 해야 하는 **시도**/**catch** 예외 처리 블록입니다. 자세한 내용은 [예외 처리 (MFC)](../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [파일](../mfc/files-in-mfc.md)
-

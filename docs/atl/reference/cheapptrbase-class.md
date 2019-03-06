@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtrBase class
 ms.assetid: 501ac1b2-fb34-4c72-b7e6-a4f1fc8fda21
-ms.openlocfilehash: f183bb21d6a23b4e8ac4284894cfa2fcc7bb1dfd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 558c9bd78257a06e123d47a0110375e7f448f90d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538156"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290085"
 ---
 # <a name="cheapptrbase-class"></a>CHeapPtrBase 클래스
 
@@ -39,7 +39,7 @@ class CHeapPtrBase
 *T*<br/>
 힙에 저장 될 개체 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 사용 하는 메모리 할당 클래스입니다. 기본적으로 CRT 루틴은 할당 및 메모리를 확보를 위해 사용 됩니다.
 
 ## <a name="members"></a>멤버
@@ -48,7 +48,7 @@ class CHeapPtrBase
 
 |이름|설명|
 |----------|-----------------|
-|[CHeapPtrBase:: ~ CHeapPtrBase](#dtor)|소멸자입니다.|
+|[CHeapPtrBase::~CHeapPtrBase](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -64,9 +64,9 @@ class CHeapPtrBase
 
 |이름|설명|
 |----------|-----------------|
-|[CHeapPtrBase::operator T *](#operator_t_star)|캐스트 연산자입니다.|
+|[CHeapPtrBase::operator T*](#operator_t_star)|캐스트 연산자입니다.|
 |[CHeapPtrBase::operator &](#operator_amp)|& 연산자입니다.|
-|[CHeapPtrBase::operator->](#operator_ptr)|멤버 포인터 연산자입니다.|
+|[CHeapPtrBase::operator ->](#operator_ptr)|멤버 포인터 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -122,7 +122,7 @@ void Attach(T* pData) throw();
 
 디버그 빌드에서 어설션 오류가 발생 하는 경우는 [CHeapPtrBase::m_pData](#m_pdata) 멤버 변수는 현재 기존 값을 가리킵니다; null은, 합니다.
 
-##  <a name="dtor"></a>  CHeapPtrBase:: ~ CHeapPtrBase
+##  <a name="dtor"></a>  CHeapPtrBase::~CHeapPtrBase
 
 소멸자입니다.
 
@@ -186,7 +186,7 @@ T** operator&() throw();
 
 가리키는 개체의 주소를 반환 합니다 `CHeapPtrBase` 개체입니다.
 
-##  <a name="operator_ptr"></a>  CHeapPtrBase::operator-&gt;
+##  <a name="operator_ptr"></a>  CHeapPtrBase::operator -&gt;
 
 멤버 포인터 연산자입니다.
 
@@ -202,7 +202,7 @@ T* operator->() const throw();
 
 이 연산자가 가리키는 클래스의 메서드를 호출 하는 데는 `CHeapPtrBase` 개체입니다. 디버그 빌드에서 어설션 오류가 발생 하는 경우는 `CHeapPtrBase` NULL을 가리킵니다.
 
-##  <a name="operator_t_star"></a>  CHeapPtrBase::operator T *
+##  <a name="operator_t_star"></a>  CHeapPtrBase::operator T*
 
 캐스트 연산자입니다.
 
@@ -231,7 +231,7 @@ bool ReallocateBytes(size_t nBytes) throw();
 
 메모리 되 면 true를 반환 합니다 할당 false 그렇지 않은 경우.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
 [CComHeapPtr 클래스](../../atl/reference/ccomheapptr-class.md)<br/>

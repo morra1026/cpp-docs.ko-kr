@@ -20,12 +20,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - at sign symbol for base address
 ms.assetid: 00b9f6fe-0bd2-4772-a69c-7365eb199069
-ms.openlocfilehash: 49467b9c59d8f8861011f0f36009f4e3951871f9
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 87fdceea4ac71fe4bf0a53d7ae8e473bc97a01d7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329854"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416750"
 ---
 # <a name="base-base-address"></a>/BASE(기준 주소)
 
@@ -33,7 +33,7 @@ ms.locfileid: "51329854"
 
 ## <a name="syntax"></a>구문
 
-> **/ 자료:**{0}*주소*[**하십시오**<em>크기</em>] | **\@** <em>filename</em>**하십시오**<em>키</em>}
+> **/BASE:**{*address*[**,**<em>size</em>] | **\@**<em>filename</em>**,**<em>key</em>}
 
 ## <a name="remarks"></a>설명
 
@@ -46,7 +46,7 @@ ms.locfileid: "51329854"
 
 명령줄에서 기준 주소를 지정 하는 또 다른 방법은 기본 주소 응답 파일을 사용 하는 것입니다. 기본 주소 응답 파일을 텍스트 파일의 기본 주소 및 선택적 프로그램을 사용 하는 모든 Dll 및 각 기본 주소에 대 한 고유한 텍스트 키 크기를 포함 하는 경우 지시 파일을 사용 하 여 기본 주소를 지정 하려면 사용는 at 기호 (**\@**) 지시 파일의 이름을 차례로 입력 *filename*뒤에 쉼표, 그런 다음 *키*파일에서 사용 하는 기본 주소에 대 한 값입니다. 링커 찾습니다 *filename* 지정 된 경로에 LIB 환경 변수에서 지정한 디렉터리에 없는 경로 지정 하는 경우. 각 줄 *filename* 하나의 DLL을 나타내며에 다음 구문이 있습니다.
 
-> *키* *주소* [*크기*] **;** *주석*
+> *key* *address* [*size*] **;** *comment*
 
 합니다 *키* 영숫자 문자의 문자열이 며 대/소문자입니다. 일반적으로 DLL의 이름 이지만 같이 필요는 없습니다. 합니다 *키* 기본 뒤 *주소* C 언어, 16 진수 또는 10 진수에 선택적 최대 *크기*합니다. 3 개 인수가 모두 공백이 나 탭으로 구분 됩니다. 링커에서 경고가 지정 된 *크기* 프로그램에 필요한 가상 주소 공간 보다 작습니다. A *주석* 세미콜론으로 지정 됩니다 (**;**) 및 동일 하거나 별도 줄에 있을 수 있습니다. 링커 줄의 끝에 세미콜론에서 모든 텍스트를 무시합니다. 이 예제에서는 이러한 파일의 일부를 보여 줍니다.
 
@@ -76,7 +76,7 @@ link dlltwo.obj /dll /base:@dlls.txt,two
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.BaseAddress%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

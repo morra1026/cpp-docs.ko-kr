@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComHeapPtr class
 ms.assetid: bd08b53d-da2b-43ab-a79c-e7c8dbbc5994
-ms.openlocfilehash: eaa21700f63ae07565dba4b8b3b5dabac69e0168
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ace8dbb174bd6585e61bd941a60dad28296af72a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553736"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273255"
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr 클래스
 
@@ -43,7 +43,7 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 
 `CComHeapPtr` 파생 `CHeapPtr`, 같지만 [CComAllocator](../../atl/reference/ccomallocator-class.md) COM 루틴을 사용 하 여 메모리를 할당 합니다. 참조 [CHeapPtr](../../atl/reference/cheapptr-class.md) 하 고 [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) 사용할 수 있는 방법에 대 한 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)
 
@@ -73,7 +73,7 @@ explicit CComHeapPtr(T* pData) throw();
 
 기존 사용 하 여 힙 포인터를 만들 수 있습니다 `CComHeapPtr` 개체입니다. 그렇다면 새 `CComHeapPtr` 새 포인터 및 리소스 관리에 대 한 책임을 지지 하는 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
 [CHeapPtrBase 클래스](../../atl/reference/cheapptrbase-class.md)<br/>

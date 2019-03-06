@@ -6,12 +6,12 @@ helpviewer_keywords:
 - -CGTHREADS linker option
 - CGTHREADS linker option
 ms.assetid: 4b52cfdb-3702-470b-9580-fabeb1417488
-ms.openlocfilehash: 1c459604d90b23953bbf3f250708c393fa78277d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2e1a51dcff46601034ed18292e9c4dcf4bd7d5c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495110"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413942"
 ---
 # <a name="cgthreads-compiler-threads"></a>/CGTHREADS(컴파일러 스레드)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50495110"
 
 ## <a name="arguments"></a>인수
 
-*수*<br/>
+*number*<br/>
 사용할 cl.exe to의 최대 스레드 수(범위 1~8)
 
 ## <a name="remarks"></a>설명
@@ -48,7 +48,7 @@ ms.locfileid: "50495110"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션](../../build/reference/linker-options.md)<br/>
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)

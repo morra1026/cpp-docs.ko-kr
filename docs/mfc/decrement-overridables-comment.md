@@ -7,12 +7,12 @@ helpviewer_keywords:
 - overriding, Overridables comment in MFC source files
 - comments, MFC
 ms.assetid: 8968dea5-0d94-451f-bcb2-991580e65ba2
-ms.openlocfilehash: 9efba74676ba118659601522fc915bf25f607116
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90d6a585f62de589299147edce87332d96c6dbb8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554163"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282047"
 ---
 # <a name="-overridables-comment"></a>// 재정의 가능 주석
 
@@ -29,7 +29,7 @@ MFC에서 순수 가상 함수는 항상이 섹션에 배치 됩니다. C + +의
 > [!NOTE]
 >  이 문서에 설명 된 규칙을도 잘 일반적으로 자동화 (이전의 OLE Automation) 메서드 및 속성에 대 한 합니다. 자동화 메서드 MFC 작업 하는 것과 비슷합니다. 자동화 속성 MFC 특성과 비슷합니다. 자동화 이벤트 (이전의 OLE 컨트롤로 알려진 ActiveX 컨트롤에 대 한 지원 됨) MFC 재정의 가능한 멤버 함수와 비슷합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
 [주석 예](../mfc/an-example-of-the-comments.md)<br/>
@@ -37,4 +37,3 @@ MFC에서 순수 가상 함수는 항상이 섹션에 배치 됩니다. C + +의
 [생성자 주석](../mfc/decrement-constructors-comment.md)<br/>
 [특성 주석](../mfc/decrement-attributes-comment.md)<br/>
 [작업 주석](../mfc/decrement-operations-comment.md)
-

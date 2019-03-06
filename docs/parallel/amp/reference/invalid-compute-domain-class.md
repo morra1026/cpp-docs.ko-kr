@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_compute_domain class
 ms.assetid: ac7a7166-8bdb-4db1-8caf-ea129ab5117e
-ms.openlocfilehash: 264b93d11b82eb00ac85e92413ca1a7071e06879
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51fcd9e42bc4497131da5adb3dff72efb46537b3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582249"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296880"
 ---
 # <a name="invalidcomputedomain-class"></a>invalid_compute_domain 클래스
 
@@ -33,7 +33,7 @@ class invalid_compute_domain : public runtime_exception;
 |----------|-----------------|
 |[invalid_compute_domain 생성자](#ctor)|`invalid_compute_domain` 클래스의 새 인스턴스를 초기화합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -62,13 +62,13 @@ invalid_compute_domain() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류에 대한 설명입니다.
 
 ### <a name="return-value"></a>반환 값
 
 인스턴스는 `invalid_compute_domain` 클래스
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

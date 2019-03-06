@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - helper functions
 ms.assetid: a845429d-68b1-4e14-aa88-f3f5343bd490
-ms.openlocfilehash: 0bd0066cee875408056bd88895b0b5f449802c5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2601aff6b53e9ad3a970dbe1be008efdd7008ef8
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492014"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424433"
 ---
 # <a name="developing-your-own-helper-function"></a>사용자 도우미 함수 개발
 
@@ -23,6 +23,6 @@ ms.locfileid: "50492014"
 
 아마도 가장 dlistartprocessing 알림의 기본 도우미와 동일한 값을 수신 하는 사용자가 제공한 알림 후크 함수에 대 한 새 포인터를 제공 하기만 하면 됩니다. 이 시점에서 후크 함수 해질 수 있으며 기본적으로 새 도우미 함수를 기본 도우미의 모든 추가 처리가 기본 도우미 반환이 성공적 이면을 바이패스 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)

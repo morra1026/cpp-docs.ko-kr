@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CScrollBar [MFC], SetScrollRange
 - CScrollBar [MFC], ShowScrollBar
 ms.assetid: f3735ca5-73ea-46dc-918b-4d824c9fe47f
-ms.openlocfilehash: 3b8e7dc78ddfa22097c97fb4e97fff92f0984c07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d677d72b7e758fcdaa7df0e2918e9bbec3e18ee9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571264"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263115"
 ---
 # <a name="cscrollbar-class"></a>CScrollBar 클래스
 
@@ -85,7 +85,7 @@ class CScrollBar : public CWnd
 
 사용에 대 한 관련된 정보에 대 한 `CScrollBar`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -428,14 +428,14 @@ void ShowScrollBar(BOOL bShow = TRUE);
 
   예를 참조 하세요 [CScrollBar::Create](#create)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [CButton 클래스](../../mfc/reference/cbutton-class.md)<br/>
 [CComboBox 클래스](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CListBox 클래스](../../mfc/reference/clistbox-class.md)<br/>
 [CStatic 클래스](../../mfc/reference/cstatic-class.md)<br/>
 [CDialog 클래스](../../mfc/reference/cdialog-class.md)

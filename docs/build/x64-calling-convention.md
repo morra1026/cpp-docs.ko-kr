@@ -3,12 +3,12 @@ title: x64 호출 규칙
 description: ABI 기본 x64 호출 규칙의 세부 정보입니다.
 ms.date: 12/17/2018
 ms.assetid: 41ca3554-b2e3-4868-9a84-f1b46e6e21d9
-ms.openlocfilehash: f2a63df878d4eac727f9c697cc326bb1f2981d95
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 02bf4719766366049b600b148ad88fc238f4e54e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53636220"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415788"
 ---
 # <a name="x64-calling-convention"></a>x64 호출 규칙
 
@@ -42,7 +42,7 @@ ms.locfileid: "53636220"
 
 다음 표에서 매개 변수를 전달 하는 방법을 보여 줍니다.
 
-|매개 변수 형식|전달 하는 방법|
+|매개 변수 유형|전달 하는 방법|
 |--------------------|----------------|
 |부동 소수점|처음 4 개의 매개 변수-XMM3 통해 XMM0입니다. 다른 스택에 전달 됩니다.|
 |정수|처음 4 개의 매개 변수-RCX, RDX, R8 R9입니다. 다른 스택에 전달 됩니다.|
@@ -152,7 +152,7 @@ RBX, RBP, RDI, RSI, RSP, R12, R13, R14 및 R15 레지스터는 비volatile로 �
 
 ## <a name="floating-point-support-for-older-code"></a>이전 코드에 대 한 부동 소수점 지원
 
-MMX와 부동 소수점 스택 레지스터 (MM0-MM7/ST0-ST7) 컨텍스트 스위치 간에 유지 됩니다. 이러한 레지스터에 대 한 명시적 호출 규칙이 없는 경우 이러한 레지스터를 사용 하 여 커널 모드 코드에서 엄격 하 게 사용할 수 없습니다.
+MMX와 부동 소수점 스택 레지스터(MM0-MM7/ST0-ST7)는 컨텍스트를 전환해도 유지됩니다. 이러한 레지스터에 대한 명시적인 호출 규칙은 없습니다. 이러한 레지스터는 커널 모드 코드에서만 사용하도록 엄격하게 제한되어 있습니다.
 
 ## <a name="fpcsr"></a>FpCsr
 
@@ -165,7 +165,7 @@ MMX와 부동 소수점 스택 레지스터 (MM0-MM7/ST0-ST7) 컨텍스트 스�
 | FPCSR\[0:6] | 모든 1 (모든 예외 마스크)를 마스크 하는 예외 |
 | FPCSR\[7] | 예약 됨-0 |
 | FPCSR\[8:9] | 정밀도 제어-10B (전체 자릿수를 두 번) |
-| FPCSR\[10시 11분] | 반올림 제어-0 (round를 가장 가까운) |
+| FPCSR\[10:11] | 반올림 제어-0 (round를 가장 가까운) |
 | FPCSR\[12] | 무한대 제어-0 (사용 되지 않음) |
 
 FPCSR 내의 필드를 수정 하는 호출 수신자는 호출자에 게 반환 하기 전에 해당를 복원 해야 합니다. 또한이 이러한 필드 중 하나를 수정 하는 호출자가 해당 문자열을 계약에 의해 호출 수신자는 수정 된 값이 필요 하지 않으면 호출 수신자를 호출 하기 전에 다른 표준 값으로 복원 해야 합니다.
@@ -185,8 +185,8 @@ FPCSR 내의 필드를 수정 하는 호출 수신자는 호출자에 게 반환
 | 등록\[비트] | 설정 |
 |-|-|
 | MXCSR\[6] | Denormals 있는 0-0 |
-| MXCSR\[7시 12분] | 모든 1 (모든 예외 마스크)를 마스크 하는 예외 |
-| MXCSR\[13시 14분] | 반올림 제어-0 (round를 가장 가까운) |
+| MXCSR\[7:12] | 모든 1 (모든 예외 마스크)를 마스크 하는 예외 |
+| MXCSR\[13:14] | 반올림 제어-0 (round를 가장 가까운) |
 | MXCSR\[15] | 마스킹된 언더플로-0 (해제) 0으로 플러시 |
 
 MXCSR 내에서 비 volatile 필드를 수정 하는 호출 수신자는 호출자에 게 반환 하기 전에 해당를 복원 해야 합니다. 또한이 이러한 필드 중 하나를 수정 하는 호출자가 해당 문자열을 계약에 의해 호출 수신자는 수정 된 값이 필요 하지 않으면 호출 수신자를 호출 하기 전에 다른 표준 값으로 복원 해야 합니다.
@@ -199,12 +199,12 @@ MXCSR 내에서 비 volatile 필드를 수정 하는 호출 수신자는 호출�
 
 특히 함수의 설명서에 설명 된 경우가 아니면 함수 경계를 넘어 volatile 부분의 MXCSR 상태에 대 한 어떠한가 정도 하지를 만들 수 있습니다.
 
-## <a name="setjmplongjmp"></a>setjmp/longjmp 사용
+## <a name="setjmplongjmp"></a>setjmp/longjmp
 
 Setjmp.h 나 setjmpex.h를 포함 하는 경우 대 한 모든 호출은 [setjmp](../c-runtime-library/reference/setjmp.md) 하거나 [longjmp](../c-runtime-library/reference/longjmp.md) 소멸자를 호출 하는 해제 될 및 `__finally` 호출 합니다.  X86, 포함 하 여 setjmp.h 결과 위치에서이 반해 `__finally` 절 및 소멸자가 호출 되지 않습니다.
 
 `setjmp`에 대한 호출은 현재 스택 포인터, 비휘발성 레지스터 및 MxCsr 레지스터를 유지합니다.  `longjmp`에 대한 호출은 가장 최근의 `setjmp` 호출 사이트에 반환되고 스택 포인터, 비휘발성 레지스터 및 MxCsr 레지스터를 가장 최근의 `setjmp` 호출에서 유지한 상태로 다시 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [x64 소프트웨어 규칙](../build/x64-software-conventions.md)

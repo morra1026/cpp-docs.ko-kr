@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Internet applications [MFC], getting started
 - Internet applications [MFC], first steps
 ms.assetid: 6377e9b8-07c4-4380-b63b-05f5a9061313
-ms.openlocfilehash: ea7291a63fe9864f7254d4db8b68e4c9abf732c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b0a8696e25054099cdbf208dd5a1f713bfbe6d3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507992"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277831"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC 인터넷 프로그래밍 작업
 
@@ -32,9 +32,9 @@ ActiveX 컨트롤을 포함 하는 액티브 기술 (이전의 OLE 컨트롤) �
 
 시작 하기 위한 세부 정보에 대 한 다음 항목을 참조 합니다.
 
-- [응용 프로그램 디자인 선택](../mfc/application-design-choices.md)
+- [애플리케이션 디자인 선택](../mfc/application-design-choices.md)
 
-- [MFC 응용 프로그램 작성](../mfc/writing-mfc-applications.md)
+- [MFC 애플리케이션 작성](../mfc/writing-mfc-applications.md)
 
 - [인터넷의 ActiveX 컨트롤](../mfc/activex-controls-on-the-internet.md)
 
@@ -42,12 +42,11 @@ ActiveX 컨트롤을 포함 하는 액티브 기술 (이전의 OLE 컨트롤) �
 
 - [인터넷의 비동기 모니커](../mfc/asynchronous-monikers-on-the-internet.md)
 
-- [인터넷 응용 프로그램 테스트](../mfc/testing-internet-applications.md)
+- [인터넷 애플리케이션 테스트](../mfc/testing-internet-applications.md)
 
 - [인터넷 보안](../mfc/internet-security-cpp.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)<br/>
 [작업별 인터넷 정보](../mfc/internet-information-by-task.md)
-

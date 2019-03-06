@@ -16,12 +16,12 @@ helpviewer_keywords:
 - processing [MFC]
 - background processing [MFC]
 ms.assetid: 5c7c46c1-6107-4304-895f-480983bb1e44
-ms.openlocfilehash: 35078b944412142a07906791e74209fd5dab06d3
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 0d0e3fcba9ce447ec359958fc5ed59c6d596dd7a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693440"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287139"
 ---
 # <a name="idle-loop-processing"></a>유휴 루프 처리
 
@@ -56,7 +56,6 @@ MFC를 사용 하 여 개발한 응용 프로그램에서 주 메시지 루프�
 
 유휴 처리를 수행 하는 방법에 대 한 자세한 내용은 참조 하세요. [OnIdle](../mfc/reference/cwinthread-class.md#onidle) MFC 라이브러리 참조에서 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [일반 MFC 항목](../mfc/general-mfc-topics.md)
-

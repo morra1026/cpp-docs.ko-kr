@@ -13,12 +13,12 @@ helpviewer_keywords:
 - J compiler option [C++]
 - default char type is unsigned
 ms.assetid: 50973667-6638-491e-9c41-bff73acae19f
-ms.openlocfilehash: c709e991574cef481aa8357a789701bba9831d92
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 931253b0a50e8b8f96a385400b2afbb1894c9d47
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528091"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417699"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J(부호 없는 기본 문자 형식)
 
@@ -39,7 +39,8 @@ ms.locfileid: "50528091"
 ANSI C 및 c + +의 특정 구현 필요 하지 않습니다는 `char` 형식입니다. 이 옵션은 결국 영어 이외의 언어로 변환 될 문자 데이터로 작업할 때 유용 합니다.
 
 > [!NOTE]
->  ATL/MFC에 이 컴파일러 옵션을 사용하면 오류가 생성될 수 있습니다. `_ATL_ALLOW_CHAR_UNSIGNED`를 정의해서 이 오류를 비활성화할 수도 있지만 이 해결 방법은 지원되지 않으며, 항상 작동하지 않을 수도 있습니다.
+>  ATL/MFC에 이 컴파일러 옵션을 사용하면 오류가 생성될 수 있습니다. 
+  `_ATL_ALLOW_CHAR_UNSIGNED`를 정의해서 이 오류를 비활성화할 수도 있지만 이 해결 방법은 지원되지 않으며, 항상 작동하지 않을 수도 있습니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
@@ -53,7 +54,7 @@ ANSI C 및 c + +의 특정 구현 필요 하지 않습니다는 `char` 형식입
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

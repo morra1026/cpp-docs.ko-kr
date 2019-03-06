@@ -19,12 +19,12 @@ helpviewer_keywords:
 - UpdateData method [MFC]
 - retrieving dialog box data [MFC]
 ms.assetid: 4675f63b-41d2-45ed-b6c3-235ad8ab924b
-ms.openlocfilehash: f80d80dc9e212dbe0d87da65ac92943ad1f0edad
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 338630aef358d9490461179288d5c45a2d3b821c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175498"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302317"
 ---
 # <a name="dialog-data-exchange"></a>대화 상자 데이터 교환
 
@@ -49,9 +49,8 @@ MFC는 다양 한 종류의 exchange에 대 한 다양 한 DDX 함수를 제공�
 
 사용자가 모달 대화 상자를 취소 합니다 `OnCancel` 대화 상자를 종료 하는 멤버 함수 및 `DoModal` 값을 반환 합니다 **IDCANCEL**합니다. 이 경우 데이터가 없는 대화 상자 및 대화 상자 개체 간에 교환 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [대화 상자 데이터 유효성 검사](../mfc/dialog-data-validation.md)
-

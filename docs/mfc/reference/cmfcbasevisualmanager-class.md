@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CMFCBaseVisualManager [MFC], CleanUpThemes
 - CMFCBaseVisualManager [MFC], UpdateSystemColors
 ms.assetid: d56f3afc-cdea-4de1-825a-a08999c571e0
-ms.openlocfilehash: a9d3be75331004529ca1bd71a0d9422f45cac40b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0c26c0c9c9026f8312218b2ac15f83a50a67be79
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440198"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292213"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager 클래스
 
@@ -73,7 +73,7 @@ class CMFCBaseVisualManager: public CObject
 |[CMFCBaseVisualManager::FillReBarPane](#fillrebarpane)|현재 Windows 테마를 사용 하 여 rebar 컨트롤의 배경을 채웁니다.|
 |[CMFCBaseVisualManager::GetStandardWindowsTheme](#getstandardwindowstheme)|현재 Windows 테마를 가져옵니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |||
 |-|-|
@@ -87,7 +87,7 @@ class CMFCBaseVisualManager: public CObject
 
 호출 하기만 하면 모든 비주얼 관리자에 대 한 기본 클래스 이므로 [CMFCVisualManager::GetInstance](../../mfc/reference/cmfcvisualmanager-class.md#getinstance)대 한 포인터에는 현재 비주얼 관리자를 가져오고에 대 한 메서드에 액세스할 `CMFCBaseVisualManager` 해당 포인터를 사용 하 여 합니다. 그러나 현재 Windows 테마를 사용 하 여 컨트롤을 표시 해야 할 경우 것이 좋습니다 사용 하 여 `CMFCVisualManagerWindows` 인터페이스.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -149,7 +149,7 @@ virtual BOOL DrawCheckBox(
 
 보통의 혼합 2입니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 확인란 사용 되는지 여부를 지정 합니다.
 
 *bPressed*<br/>
@@ -190,7 +190,7 @@ virtual BOOL DrawComboBorder(
 *rect*<br/>
 [in] 콤보 상자 테두리의 경계 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 콤보 상자 테두리 비활성화 되었는지 여부를 지정 합니다.
 
 *bIsDropped*<br/>
@@ -222,7 +222,7 @@ virtual BOOL DrawComboDropButton(
 |---------------|-----------------|
 |*pDC*|[in] 장치 컨텍스트에 대 한 포인터입니다.|
 |*rect*|[in] 콤보 상자 드롭다운 단추의 경계 사각형입니다.|
-|*사용 안 함*|[in] 콤보 상자 드롭다운 단추를 사용할 수 있는지 여부를 지정 합니다.|
+|*bDisabled*|[in] 콤보 상자 드롭다운 단추를 사용할 수 있는지 여부를 지정 합니다.|
 |*bIsDropped*|[in] 콤보 상자 드롭다운 단추를 삭제할지 여부를 지정 합니다.|
 |*bIsHighlighted*|[in] 콤보 상자 드롭다운 단추를 강조 표시 되어 있는지 여부를 지정 합니다.|
 
@@ -254,7 +254,7 @@ virtual BOOL DrawPushButton(
 [in] 에 대 한 포인터를 [CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md) 그릴 개체입니다.
 
 *uiState*<br/>
-[in] 무시 됩니다. 상태를 가져옵니다 *pButton*합니다.
+[in] Ignored. 상태를 가져옵니다 *pButton*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -288,7 +288,7 @@ virtual BOOL DrawRadioButton(
 *bChecked*<br/>
 [in] 라디오 단추가 선택 되었는지 여부를 지정 합니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 라디오 단추를 사용할 수 있는지 여부를 지정 합니다.
 
 *bPressed*<br/>
@@ -408,7 +408,7 @@ void UpdateSystemColors();
 
 내부 전용입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDialog [MFC], OnCancel
 - CDialog [MFC], OnOK
 ms.assetid: ca64b77e-2cd2-47e3-8eff-c2645ad578f9
-ms.openlocfilehash: 9eac0f7efdacc6181d8aaa15398f4d7365c0edd3
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: d3c3bca7932b9e9c7e7723b286c83ca3694a9968
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178501"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305096"
 ---
 # <a name="cdialog-class"></a>CDialog 클래스
 
@@ -69,7 +69,7 @@ class CDialog : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[CDialog::Create](#create)|`CDialog` 개체를 초기화합니다. 모덜리스 대화 상자를 만들고 연결 하는 `CDialog` 개체입니다.|
+|[CDialog::Create](#create)|초기화는 `CDialog` 개체입니다. 모덜리스 대화 상자를 만들고 연결 하는 `CDialog` 개체입니다.|
 |[CDialog::CreateIndirect](#createindirect)|(리소스 기반 아님) 메모리의 대화 상자 템플릿에서 모덜리스 대화 상자를 만듭니다.|
 |[CDialog::DoModal](#domodal)|모달 대화 상자를 호출 하 고 수행 하는 경우를 반환 합니다.|
 |[CDialog::EndDialog](#enddialog)|모달 대화 상자를 닫습니다.|
@@ -84,7 +84,7 @@ class CDialog : public CWnd
 |[CDialog::SetDefID](#setdefid)|지정 된 누름에 대화 상자에 대 한 기본 누름 단추 컨트롤을 변경합니다.|
 |[CDialog::SetHelpID](#sethelpid)|대화 상자에 대 한 상황에 맞는 도움말 ID를 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -125,7 +125,7 @@ A `CDialog` 개체는 대화 상자 템플릿의 조합 및 `CDialog`-클래스�
 
 에 대 한 자세한 `CDialog`를 참조 하세요 [대화 상자](../../mfc/dialog-boxes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -301,7 +301,7 @@ void EndDialog(int nResult);
 
 ### <a name="parameters"></a>매개 변수
 
-*n 결과*<br/>
+*nResult*<br/>
 호출자에 게 대화 상자에서 반환 될 값이 들어 `DoModal`합니다.
 
 ### <a name="remarks"></a>설명
@@ -556,10 +556,9 @@ void SetHelpID(UINT nIDR);
 *nIDR*<br/>
 상황에 맞는 도움말 ID를 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 DLGTEMPL](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

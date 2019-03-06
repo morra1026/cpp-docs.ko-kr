@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - /execution-charset compiler option
 ms.assetid: d3c5bf7f-526d-4ee4-acc5-c1a02a4fc481
-ms.openlocfilehash: 2a204000be6e4e434b6ef4aabf6bbc0db1593fb0
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: ec5ac314f73c49b47f4132583d7651681b6b0545
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849719"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413058"
 ---
 # <a name="source-charset-set-source-character-set"></a>/source-charset (소스 문자 집합 설정)
 
@@ -52,7 +52,7 @@ Visual Studio는 기본적으로 인지 하는 경우 소스 파일 인코딩된
 
 1. **확인**을 선택하여 변경 내용을 저장합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

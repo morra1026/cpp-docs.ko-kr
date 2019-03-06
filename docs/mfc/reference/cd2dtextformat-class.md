@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CD2DTextFormat [MFC], ReCreate
 - CD2DTextFormat [MFC], m_pTextFormat
 ms.assetid: db194cec-9dae-4644-ab84-7c43b7164117
-ms.openlocfilehash: 092ffff91113b42cd106fe7079b06b9482400c63
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d796ac39ba29e6d286926f4975f8f6d2054e7ac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557159"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297894"
 ---
 # <a name="cd2dtextformat-class"></a>CD2DTextFormat 클래스
 
@@ -48,7 +48,7 @@ class CD2DTextFormat : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DTextFormat::CD2DTextFormat](#cd2dtextformat)|CD2DTextFormat 개체를 생성합니다.|
-|[CD2DTextFormat:: ~ CD2DTextFormat](#cd2dtextformat__~cd2dtextformat)|소멸자입니다. D2D 텍스트 형식으로 개체를 소멸 될 때 호출 됩니다.|
+|[CD2DTextFormat::~CD2DTextFormat](#cd2dtextformat__~cd2dtextformat)|소멸자입니다. D2D 텍스트 형식으로 개체를 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -66,7 +66,7 @@ class CD2DTextFormat : public CD2DResource;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DTextFormat::operator IDWriteTextFormat *](#operator_idwritetextformat_star)|반환 IDWriteTextFormat 인터페이스|
+|[CD2DTextFormat::operator IDWriteTextFormat*](#operator_idwritetextformat_star)|반환 IDWriteTextFormat 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -74,7 +74,7 @@ class CD2DTextFormat : public CD2DResource;
 |----------|-----------------|
 |[CD2DTextFormat::m_pTextFormat](#m_ptextformat)|IDWriteTextFormat 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -86,7 +86,7 @@ class CD2DTextFormat : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dtextformat"></a>  CD2DTextFormat:: ~ CD2DTextFormat
+##  <a name="_dtorcd2dtextformat"></a>  CD2DTextFormat::~CD2DTextFormat
 
 소멸자입니다. D2D 텍스트 형식으로 개체를 소멸 될 때 호출 됩니다.
 
@@ -216,7 +216,7 @@ IDWriteTextFormat 포인터입니다.
 IDWriteTextFormat* m_pTextFormat;
 ```
 
-##  <a name="operator_idwritetextformat_star"></a>  CD2DTextFormat::operator IDWriteTextFormat *
+##  <a name="operator_idwritetextformat_star"></a>  CD2DTextFormat::operator IDWriteTextFormat*
 
 반환 IDWriteTextFormat 인터페이스
 
@@ -240,6 +240,6 @@ virtual HRESULT ReCreate(CRenderTarget* */);
 
 메서드가 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

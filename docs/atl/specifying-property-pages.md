@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ISpecifyPropertyPages method
 - property pages, specifying
 ms.assetid: ee8678cf-c708-49ab-b0ad-fc2db31f1ac3
-ms.openlocfilehash: c78a48d369f25f5432158ee6f09ee4cda499e7c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d738759dfba50f26b788ee1b0761baf8bc4b00ab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642239"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287141"
 ---
 # <a name="specifying-property-pages"></a>속성 페이지를 지정합니다.
 
@@ -37,7 +37,7 @@ ActiveX 컨트롤을 만들 때 컨트롤의 속성을 설정 하려면 사용�
 
 [!code-cpp[NVC_ATL_Windowing#72](../atl/codesnippet/cpp/specifying-property-pages_1.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[속성 페이지](../atl/atl-com-property-pages.md)<br/>
+[속성 페이지(Visual C++)](../atl/atl-com-property-pages.md)<br/>
 [ATLPages 샘플](../visual-cpp-samples.md)

@@ -102,12 +102,12 @@ helpviewer_keywords:
 - ReleaseRows method
 - SetRows method
 ms.assetid: c6bde426-c543-4022-a98a-9519d9e2ae59
-ms.openlocfilehash: bb7f7ee0b4c190889daf661816a9e1c96575a052
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 776123baa0d53ac2a1777849b60d35cf0d93a172
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557091"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426227"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset 클래스
 
@@ -152,9 +152,9 @@ class CBulkRowset : public CRowset<TAccessor>
 
 [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]
 
-## <a name="addrefrows"></a> Cbulkrowset:: Addrefrows
+## <a name="addrefrows"></a> CBulkRowset::AddRefRows
 
-호출 [irowset:: Addrefrows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 수를 증가 합니다.
+호출 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619(v=vs.85)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 수를 증가 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -166,7 +166,7 @@ HRESULT AddRefRows() throw();
 
 표준 HRESULT입니다.
 
-## <a name="cbulkrowset"></a> Cbulkrowset:: Cbulkrowset
+## <a name="cbulkrowset"></a> CBulkRowset::CBulkRowset
 
 새 `CBulkRowset` 개체 및 기본 행 수를 10으로 설정 합니다.
 
@@ -176,7 +176,7 @@ HRESULT AddRefRows() throw();
 CBulkRowset();
 ```
 
-## <a name="movefirst"></a> Cbulkrowset:: Movefirst
+## <a name="movefirst"></a> CBulkRowset::MoveFirst
 
 첫 번째 데이터 행을 검색합니다.
 
@@ -190,7 +190,7 @@ HRESULT MoveFirst() throw();
 
 표준 HRESULT입니다.
 
-## <a name="movelast"></a> Cbulkrowset:: Movelast
+## <a name="movelast"></a> CBulkRowset::MoveLast
 
 마지막 행을 이동합니다.
 
@@ -204,7 +204,7 @@ HRESULT MoveLast() throw();
 
 표준 HRESULT입니다.
 
-## <a name="movenext"></a> Cbulkrowset:: Movenext
+## <a name="movenext"></a> CBulkRowset::MoveNext
 
 데이터의 다음 행을 검색합니다.
 
@@ -218,7 +218,7 @@ HRESULT MoveNext() throw();
 
 표준 HRESULT입니다. 행 집합의 끝에 도달 하는 경우에 DB_S_ENDOFROWSET 반환 합니다.
 
-## <a name="moveprev"></a> Cbulkrowset:: Moveprev
+## <a name="moveprev"></a> CBulkRowset::MovePrev
 
 이전 행으로 이동 합니다.
 
@@ -232,7 +232,7 @@ HRESULT MovePrev() throw();
 
 표준 HRESULT입니다.
 
-## <a name="movetobookmark"></a> Cbulkrowset:: Movetobookmark
+## <a name="movetobookmark"></a> CBulkRowset::MoveToBookmark
 
 책갈피 또는 지정 된 오프셋에 있는 행으로 표시 하는 행을 인출 (*lSkip*) 해당 책갈피에서.
 
@@ -245,7 +245,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 #### <a name="parameters"></a>매개 변수
 
-*책갈피*<br/>
+*bookmark*<br/>
 [in] 데이터를 인출 하려는 위치를 표시 하는 책갈피입니다.
 
 *lSkip*<br/>
@@ -253,9 +253,9 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 ### <a name="return-value"></a>반환 값
 
-참조 [irowset:: Getdata](https://docs.microsoft.com/previous-versions/windows/desktop/ms716988(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowset:: Getdata](/previous-versions/windows/desktop/ms716988(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="movetoratio"></a> Cbulkrowset:: Movetoratio
+## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
 
 행 집합의 소수 자릿수 위치에서 시작 하는 행을 인출 합니다.
 
@@ -284,11 +284,11 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 세부 정보를 참조 하세요 [irowsetscroll::](https://docs.microsoft.com/previous-versions/windows/desktop/ms709602(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 세부 정보를 참조 하세요 [irowsetscroll::](/previous-versions/windows/desktop/ms709602(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="releaserows"></a> Cbulkrowset:: Releaserows
+## <a name="releaserows"></a> CBulkRowset::ReleaseRows
 
-호출 [irowset:: Releaserows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 횟수를 줄여야 합니다.
+호출 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771(v=vs.85)) bulk 행 집합에서 현재 검색 된 모든 행에 대 한 참조 횟수를 줄여야 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -300,7 +300,7 @@ HRESULT ReleaseRows() throw();
 
 표준 HRESULT입니다.
 
-## <a name="setrows"></a> Cbulkrowset:: Setrows
+## <a name="setrows"></a> CBulkRowset::SetRows
 
 각 호출에 의해 검색 되는 행 핸들의 수를 설정 합니다.
 
@@ -321,5 +321,5 @@ void SetRows(DBROWCOUNT nRows) throw();
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], activate options
 - Activate When Visible option [MFC]
 ms.assetid: 8f7ddc5a-a7a6-4da8-bcb9-1b569f0ecb48
-ms.openlocfilehash: 42dbec7a55085235e43fa14ab6406bfb3526afdb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7afe9617aa356916fe184828d7684f228293e39
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464833"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304732"
 ---
 # <a name="turning-off-the-activate-when-visible-option"></a>표시되었을 때 활성화 옵션 해제
 
@@ -24,7 +24,6 @@ ms.locfileid: "50464833"
 
 **OLEMISC_ACTIVATEWHENVISIBLE** 플래그를 해제 하면 자동으로 생략 하면는 **활성화할 때 표시** 옵션을 [제어 설정을](../mfc/reference/control-settings-mfc-activex-control-wizard.md) MFC ActiveX 페이지 컨트롤을 만들 때 마법사를 제어 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)
-

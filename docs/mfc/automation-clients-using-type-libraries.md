@@ -1,5 +1,5 @@
 ---
-title: '자동화 클라이언트: 형식 라이브러리 사용'
+title: '자동화 클라이언트: 형식 라이브러리를 사용 하 여'
 ms.date: 11/04/2016
 f1_keywords:
 - MkTypLib
@@ -14,14 +14,14 @@ helpviewer_keywords:
 - MkTypLib tool
 - .odl files
 ms.assetid: d405bc47-118d-4786-b371-920d035b2047
-ms.openlocfilehash: bd11bd8f2666bb2c211f7abe93d473f466963bd6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 32179f3913b52ca46f9ea7314b9957f4f4970713
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437052"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282944"
 ---
-# <a name="automation-clients-using-type-libraries"></a>자동화 클라이언트: 형식 라이브러리 사용
+# <a name="automation-clients-using-type-libraries"></a>자동화 클라이언트: 형식 라이브러리를 사용 하 여
 
 자동화 클라이언트는 클라이언트에서 서버의 개체를 조작 하는 경우 서버 개체의 속성 및 메서드에 대 한 정보가 있어야 합니다. 속성에는 데이터 형식입니다. 메서드 반환 값을 매개 변수를 허용 합니다. 클라이언트는 서버 개체 형식에 정적으로 바인딩하려면 이러한 모든 내용의 데이터 형식에 대 한 정보를 필요 합니다.
 
@@ -58,7 +58,6 @@ Visual c + + 형식 라이브러리 파일을 읽고 수에서 파생 된 디스
 
    마법사는 다음 파일 이름을 확인 하 고 지정 된 클래스를 사용 하 여 디스패치 클래스에 대해 코드를 작성 하 고 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자동화 클라이언트](../mfc/automation-clients.md)
-

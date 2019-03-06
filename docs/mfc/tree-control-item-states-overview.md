@@ -6,12 +6,12 @@ helpviewer_keywords:
 - tree controls [MFC], item states overview
 - CTreeCtrl class [MFC], item states
 ms.assetid: 2db11ae0-0d87-499d-8c1f-5e0dbe9e94c8
-ms.openlocfilehash: 389c273f7c8727ecbb4ed5455987126e21e26a63
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57c6714073f4939ffb791a78454e9eac6342309b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467953"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264601"
 ---
 # <a name="tree-control-item-states-overview"></a>트리 컨트롤 항목 상태 개요
 
@@ -27,8 +27,7 @@ ms.locfileid: "50467953"
 
 항목의 상태 이미지를 설정 하려면 *nStateMask* 포함 해야 합니다는 `TVIS_STATEIMAGEMASK` 값 및 *nState* 사용 하 여 12 비트를 왼쪽으로 이동 하는 상태 이미지의에 1부터 시작 인덱스를 포함 해야 합니다는 [ INDEXTOSTATEIMAGEMASK](/windows/desktop/api/commctrl/nf-commctrl-indextostateimagemask) 매크로입니다. 인덱스 없음 상태 이미지를 지정 합니다. 0이 될 수 있습니다. 이미지 오버레이 및 상태에 대 한 자세한 내용은 참조 하세요. [트리 컨트롤 이미지 목록](../mfc/tree-control-image-lists.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

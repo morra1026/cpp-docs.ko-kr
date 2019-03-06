@@ -1,5 +1,5 @@
 ---
-title: IThreadPoolConfig 인터페이스
+title: IThreadPoolConfig Interface
 ms.date: 11/04/2016
 f1_keywords:
 - IThreadPoolConfig
@@ -11,14 +11,14 @@ f1_keywords:
 helpviewer_keywords:
 - IThreadPoolConfig interface
 ms.assetid: 69e642bf-6925-46e6-9a37-cce52231b1cc
-ms.openlocfilehash: a021ac833bfdb0dd0da1a585d141e477232fc645
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3757f0e90479962273a8295e055c91fb02260f4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505380"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284062"
 ---
-# <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig 인터페이스
+# <a name="ithreadpoolconfig-interface"></a>IThreadPoolConfig Interface
 
 이 인터페이스는 스레드 풀을 구성 하기 위한 메서드를 제공 합니다.
 
@@ -139,7 +139,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 
 참조 [IThreadPoolConfig::GetSize](#getsize)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../atl/reference/atl-classes.md)<br/>
 [CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)

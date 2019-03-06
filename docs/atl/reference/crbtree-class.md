@@ -27,12 +27,12 @@ f1_keywords:
 helpviewer_keywords:
 - CRBTree class
 ms.assetid: a1b1cb63-38e4-4fc2-bb28-f774d1721760
-ms.openlocfilehash: a0f66e888220fbc5a4a484ddd37a3f28dff66065
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59416000eecf4be25746d9dedd86ea2af116087a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583276"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281344"
 ---
 # <a name="crbtree-class"></a>CRBTree 클래스
 
@@ -83,7 +83,7 @@ Key 요소 형식입니다.
 
 |이름|설명|
 |----------|-----------------|
-|[CRBTree:: ~ CRBTree](#dtor)|소멸자입니다.|
+|[CRBTree::~CRBTree](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -137,7 +137,7 @@ class CPair : public __POSITION
 |`m_key`|키 요소에 저장 하는 데이터 멤버입니다.|
 |`m_value`|Value 요소 저장 데이터 멤버입니다.|
 
-##  <a name="dtor"></a>  CRBTree:: ~ CRBTree
+##  <a name="dtor"></a>  CRBTree::~CRBTree
 
 소멸자입니다.
 
@@ -188,7 +188,7 @@ void GetAt(POSITION pos, KOUTARGTYPE key, VOUTARGTYPE value) const;
 *key*<br/>
 키를 받는 변수입니다.
 
-*값*<br/>
+*value*<br/>
 변수 값을 받습니다.입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -291,7 +291,7 @@ void GetNextAssoc(
 *key*<br/>
 템플릿 매개 변수를 트리의 키의 형식을 지정 합니다.
 
-*값*<br/>
+*value*<br/>
 템플릿 매개 변수를 트리의 값의 형식을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -467,7 +467,7 @@ void SetValueAt(POSITION pos, VINARGTYPE value);
 *pos*<br/>
 위치 카운터를 같은 메서드에 대 한 이전 호출에서 반환한 [CRBTree::GetHeadPosition](#getheadposition) 하거나 [CRBTree::FindFirstKeyAfter](#findfirstkeyafter)합니다.
 
-*값*<br/>
+*value*<br/>
 에 추가할 값을 `CRBTree` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -490,6 +490,6 @@ typedef VTraits::INARGTYPE VINARGTYPE;
 typedef VTraits::OUTARGTYPE VOUTARGTYPE;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

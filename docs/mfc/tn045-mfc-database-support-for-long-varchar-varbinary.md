@@ -1,5 +1,5 @@
 ---
-title: 'TN045: Long Varchar-varbinary MFC 데이터베이스 지원'
+title: 'TN045: Long Varchar-varbinary에 대 한 MFC 데이터베이스 지원'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.data
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - Varbinary data type
 - Varchar data type
 ms.assetid: cf572c35-5275-45b5-83df-5f0e36114f40
-ms.openlocfilehash: 286ef403ec4bd51b035945f3ca268b59fee4d9d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d356f094759775f709838de149769b1671fdf9ba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567040"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260116"
 ---
-# <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Long Varchar/Varbinary에 대한 MFC/데이터베이스 지원
+# <a name="tn045-mfcdatabase-support-for-long-varcharvarbinary"></a>TN045: Long Varchar/Varbinary에 대 한 c/데이터베이스 지원
 
 > [!NOTE]
 >  다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
@@ -101,7 +101,7 @@ Classwizard 함께 바인딩합니다는 **SQL_LONGVARCHAR** 또는 **SQL_LONGVA
 
 업데이트 하는 경우는 `CLongBinary` 필드에 데이터베이스 클래스를 사용 하 여 ODBC의 **DATA_AT_EXEC** 메커니즘 (ODBC 설명서를 참조 `SQLSetPos`의 rgbValue 인수). 프레임 워크를 가리키는 대신 insert 또는 update 문을 준비 하는 경우는 `HGLOBAL` 데이터를 포함 하는 *주소* 의 합니다 `CLongBinary` 으로 설정 됩니다는 *값* 열 대신, 길이 표시기로 설정 하 고 **SQL_DATA_AT_EXEC**합니다. Update 문의 데이터 원본에 보내면 나중 `SQLExecDirect` 돌아갑니다 **SQL_NEED_DATA**합니다. 이 열에 대 한 매개 변수 값의 주소가 실제로 인지 프레임 워크가 경고는 `CLongBinary`합니다. 프레임 워크 호출 `SQLGetData` 번 작은 버퍼를 사용 하 여 데이터의 실제 길이 반환 하려면 드라이버가 필요 합니다. Binary large object (BLOB)의 실제 길이 반환 하는 드라이버, MFC 다시 BLOB을 인출 하는 데 필요한 만큼 공간을 할당 합니다. 데이터 원본 반환 **SQL_NO_TOTAL**, BLOB의 크기를 확인할 수 없음을 나타내는, MFC 만들어집니다 작은 블록입니다. 기본 초기 크기는 64k 및 후속 블록 크기를 두 배로 됩니다. 예를 들어, 두 번째 128k 됩니다, 그리고 세 번째는 256 K입니다. 초기 크기는 구성할 수 있습니다.
 
-## <a name="not-binding-retrievingsending-data-directly-from-odbc-with-sqlgetdata"></a>바인딩되지 않습니다: 검색/데이터 전송 SQLGetData 사용 하 여 ODBC에서 직접
+## <a name="not-binding-retrievingsending-data-directly-from-odbc-with-sqlgetdata"></a>바인딩되지 않습니다. SQLGetData 사용 하 여 ODBC에서 직접 데이터를 검색 하 고 전송
 
 이 메서드를 사용 하 여 완전히 데이터베이스 클래스를 사용 하지 않고 긴 데이터 열을 사용 하 여 처리 합니다.
 
@@ -118,8 +118,7 @@ Classwizard 함께 바인딩합니다는 **SQL_LONGVARCHAR** 또는 **SQL_LONGVA
 > [!NOTE]
 >  사용 하 여 변경 내용을 처리 되지 것입니다 프레임 워크에서 긴 데이터 열에 바인딩되지 않은, 때문에 `CRecordset::Update` 호출 합니다. 만들고 필요한 SQL 송신 해야 **삽입** 하 고 **업데이트** 문을 직접.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

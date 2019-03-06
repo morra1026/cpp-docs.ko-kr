@@ -188,18 +188,19 @@ helpviewer_keywords:
 - CMFCRibbonBar [MFC], ToggleMimimizeState
 - CMFCRibbonBar [MFC], TranslateChar
 ms.assetid: a65d06fa-1a28-4cc0-8971-bc9d7c9198fe
-ms.openlocfilehash: 78566eaa15eb695d892471925a9dadcad9655c5f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3656b6a135757a4658f2ef08b80a54efffe89012
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50640247"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288417"
 ---
 # <a name="cmfcribbonbar-class"></a>CMFCRibbonBar 클래스
 
-`CMFCRibbonBar` 클래스는 Office 2007에서 사용한 것과 비슷한 리본 표시줄을 구현합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+  `CMFCRibbonBar` 클래스는 Office 2007에서 사용한 것과 비슷한 리본 표시줄을 구현합니다.
+
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -221,7 +222,7 @@ class CMFCRibbonBar : public CPane
 |----------|-----------------|
 |[CMFCRibbonBar::ActivateContextCategory](#activatecontextcategory)|이미 표시된 컨텍스트 범주를 활성화합니다.|
 |[CMFCRibbonBar::AddCategory](#addcategory)|리본 메뉴에 새 리본 범주를 추가합니다.|
-|[Cmfcribbonbar:: Addcontextcategory](#addcontextcategory)|컨텍스트 범주를 추가합니다.|
+|[CMFCRibbonBar::AddContextCategory](#addcontextcategory)|컨텍스트 범주를 추가합니다.|
 |[CMFCRibbonBar::AddMainCategory](#addmaincategory)|새 기본 리본 범주를 추가합니다.|
 |[CMFCRibbonBar::AddPrintPreviewCategory](#addprintpreviewcategory)||
 |[CMFCRibbonBar::AddQATOnlyCategory](#addqatonlycategory)||
@@ -277,7 +278,7 @@ class CMFCRibbonBar : public CPane
 |[CMFCRibbonBar::IsToolTipEnabled](#istooltipenabled)|리본 표시줄에 대한 도구 설명을 사용하도록 설정할지 결정합니다.|
 |[CMFCRibbonBar::IsTransparentCaption](#istransparentcaption)||
 |[CMFCRibbonBar::IsWindows7Look](#iswindows7look)|리본 메뉴에 Windows 7 스타일 모양(작은 사각형 응용 프로그램 단추)이 있는지 여부를 나타냅니다.|
-|[Cmfcribbonbar:: Loadfromresource](#loadfromresource)|오버로드됨. 응용 프로그램 리소스에서 리본 표시줄을 로드합니다.|
+|[CMFCRibbonBar::LoadFromResource](#loadfromresource)|오버로드됨. 응용 프로그램 리소스에서 리본 표시줄을 로드합니다.|
 |[CMFCRibbonBar::OnClickButton](#onclickbutton)||
 |[CMFCRibbonBar::OnEditContextMenu](#oneditcontextmenu)||
 |[CMFCRibbonBar::OnRTLChanged](#onrtlchanged)|( `CPane::OnRTLChanged`을 재정의합니다.)|
@@ -317,11 +318,12 @@ Microsoft에서는 Microsoft Office 2007을 릴리스할 때 동시에 Office Fl
 
 리본 표시줄에 표시되는 요소가 사용 가능한 공간에 가장 적합한 크기로 확장 및 축소됩니다. 예를 들어 리본 패널에 해당 요소를 표시할 공간이 부족하면 리본 메뉴는 하위 항목을 팝업 메뉴에 표시하는 메뉴 단추가 됩니다. 리본 표시줄은 정적(부동화되지 않음) 컨트롤 막대로 동작하고 프레임의 위쪽에 도킹될 수 있습니다.
 
-`CMFCRibbonStatusBar` 클래스를 사용하여 Office 2007에서 사용된 것과 비슷한 상태 표시줄을 구현할 수 있습니다. 리본 범주를 포함 (및 표시)의 그룹 [리본 패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다. 파생 되는 하나 이상의 리본 요소를 포함 하는 각 리본 패널 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)합니다.
 
-기존 MFC 응용 프로그램에 리본 표시줄을 추가 하는 방법에 대 한 정보를 참조 하세요 [연습: MFC 자유 곡선 응용 프로그램 업데이트](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)합니다.
+  `CMFCRibbonStatusBar` 클래스를 사용하여 Office 2007에서 사용된 것과 비슷한 상태 표시줄을 구현할 수 있습니다. 리본 범주를 포함 (및 표시)의 그룹 [리본 패널](../../mfc/reference/cmfcribbonpanel-class.md)합니다. 파생 되는 하나 이상의 리본 요소를 포함 하는 각 리본 패널 [CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+기존 MFC 응용 프로그램에 리본 표시줄을 추가 하는 방법에 대 한 정보를 참조 하세요. [연습: MFC Scribble 응용 프로그램 업데이트](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)합니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -410,7 +412,7 @@ CMFCRibbonCategory* AddCategory(
 
 [!code-cpp[NVC_MFC_RibbonApp#5](../../mfc/reference/codesnippet/cpp/cmfcribbonbar-class_1.cpp)]
 
-##  <a name="addcontextcategory"></a>  Cmfcribbonbar:: Addcontextcategory
+##  <a name="addcontextcategory"></a>  CMFCRibbonBar::AddContextCategory
 
 만들고 리본 표시줄에 대 한 새 컨텍스트 범주를 초기화 합니다.
 
@@ -438,7 +440,7 @@ CMFCRibbonCategory* AddContextCategory(
 [in] 컨텍스트 범주 캡션의 이름입니다.
 
 *uiContextID*<br/>
-[in] 컨텍스트 id입니다.
+[in] Context ID.
 
 *clrContext*<br/>
 [in] 컨텍스트 범주 캡션의 색입니다.
@@ -1305,7 +1307,7 @@ virtual CMFCRibbonBaseElement* HitTest(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 리본 표시줄에서 점의 위치를 조정합니다.
 
 *bCheckActiveCategory*<br/>
@@ -1478,7 +1480,7 @@ virtual void OnClickButton(
 *pButton*<br/>
 [in] 클릭 된 단추에 대 한 포인터입니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -1494,7 +1496,7 @@ virtual void OnEditContextMenu(
 ### <a name="parameters"></a>매개 변수
 
 [in] *pEdit*<br/>
-[in] *지점*<br/>
+[in] *point*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -2014,7 +2016,7 @@ virtual BOOL TranslateChar(UINT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 [in] 사용자 키 입력 문자 코드입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2053,7 +2055,7 @@ TRUE 이면 리본 메뉴에 표시 합니다; Windows 7 그렇지 않으면 FAL
 
 ### <a name="remarks"></a>설명
 
-##  <a name="loadfromresource"></a>  Cmfcribbonbar:: Loadfromresource
+##  <a name="loadfromresource"></a>  CMFCRibbonBar::LoadFromResource
 
 오버로드됨. 응용 프로그램 리소스에서 리본 표시줄을 로드합니다.
 
@@ -2147,13 +2149,12 @@ TRUE는 리본 레이아웃을 다시 계산 FALSE이 고, 그렇지 합니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CPane 클래스](../../mfc/reference/cpane-class.md)<br/>
+[CPane Class](../../mfc/reference/cpane-class.md)<br/>
 [CMFCRibbonCategory 클래스](../../mfc/reference/cmfcribboncategory-class.md)<br/>
 [CMFCRibbonPanel 클래스](../../mfc/reference/cmfcribbonpanel-class.md)<br/>
 [CMFCRibbonBaseElement 클래스](../../mfc/reference/cmfcribbonbaseelement-class.md)<br/>
-[연습: MFC 자유 곡선 응용 프로그램 업데이트](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
-
+[연습: MFC Scribble 응용 프로그램 업데이트](../../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

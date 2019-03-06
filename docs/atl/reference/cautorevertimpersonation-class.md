@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoRevertImpersonation class
 ms.assetid: 43732849-1940-4bd4-9d52-7a5698bb8838
-ms.openlocfilehash: 799ec11fd8542a8b30ef3aa95f1a20700c5c9796
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8ab7fed8f1560054eb023cbd4e47c43c4c6f0cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444917"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299103"
 ---
 # <a name="cautorevertimpersonation-class"></a>CAutoRevertImpersonation 클래스
 
@@ -35,7 +35,7 @@ class CAutoRevertImpersonation
 |이름|설명|
 |----------|-----------------|
 |[CAutoRevertImpersonation::CAutoRevertImpersonation](#cautorevertimpersonation)|생성 된 `CAutoRevertImpersonation` 개체|
-|[CAutoRevertImpersonation:: ~ CAutoRevertImpersonation](#dtor)|개체를 제거 하 고 액세스 토큰 가장을 되돌립니다.|
+|[CAutoRevertImpersonation::~CAutoRevertImpersonation](#dtor)|개체를 제거 하 고 액세스 토큰 가장을 되돌립니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -67,7 +67,7 @@ void Attach(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*PAT*<br/>
+*pAT*<br/>
 주소를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체를 자동으로 되돌릴 수
 
 ### <a name="remarks"></a>설명
@@ -84,14 +84,14 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*PAT*<br/>
+*pAT*<br/>
 주소를 [CAccessToken](../../atl/reference/caccesstoken-class.md) 개체를 자동으로 되돌려집니다.
 
 ### <a name="remarks"></a>설명
 
 액세스 토큰의 실제 가장에서 가급적를 만들기 전에 별도로 수행할 수 해야는 `CAutoRevertImpersonation` 개체입니다. 이 가장 시기에 자동으로 되돌릴 수는 `CAutoRevertImpersonation` 범위를 벗어나면 합니다.
 
-##  <a name="dtor"></a>  CAutoRevertImpersonation:: ~ CAutoRevertImpersonation
+##  <a name="dtor"></a>  CAutoRevertImpersonation::~CAutoRevertImpersonation
 
 개체를 제거 하 고 액세스 토큰 가장을 되돌립니다.
 
@@ -135,7 +135,7 @@ const CAccessToken* GetAccessToken() throw();
 
 가장의 되돌리기가 포함 하는 용도로이 메서드를 호출 하면 합니다 `CAccessToken` 개체를 [분리](#detach) 메서드를 대신 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATLSecurity 샘플](../../visual-cpp-samples.md)<br/>
 [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)<br/>

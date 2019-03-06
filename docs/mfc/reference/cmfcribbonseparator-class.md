@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCRibbonSeparator [MFC], OnDraw
 - CMFCRibbonSeparator [MFC], OnDrawOnList
 ms.assetid: bedb1a53-cb07-4c3c-be12-698c5409e7cf
-ms.openlocfilehash: 05ac8b26cb6b6e7d8e622ecbaac1d4a81bfd35e1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4806582a226590459a104f64499ab6ae541570e7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565934"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302769"
 ---
 # <a name="cmfcribbonseparator-class"></a>CMFCRibbonSeparator 클래스
 
@@ -57,7 +57,7 @@ class CMFCRibbonSeparator : public CMFCRibbonBaseElement
 |`CMFCRibbonSeparator::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|
 |`CMFCRibbonSeparator::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |||
 |-|-|
@@ -85,7 +85,7 @@ pMainPanel->Add(new CMFCRibbonSeparator(TRUE));
 ```
 호출 [CMFCRibbonPanel::AddSeparator](../../mfc/reference/cmfcribbonpanel-class.md#addseparator) 리본 패널에 구분 기호를 추가 합니다. 구분 기호에 할당 되 고 내부적으로 추가 된 `AddSeparator` 메서드.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -113,7 +113,7 @@ virtual int AddToListBox(
 [in] 에 대 한 포인터를 **명령** 목록 구분 기호를 추가 하는 위치입니다.
 
 *bDeep*<br/>
-[in] 무시 됩니다.
+[in] Ignored.
 
 ### <a name="return-value"></a>반환 값
 
@@ -152,7 +152,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 
 ### <a name="parameters"></a>매개 변수
 
-*src*<br/>
+*Src*<br/>
 [in] 복사할 소스 리본 요소입니다.
 
 ##  <a name="getregularsize"></a>  CMFCRibbonSeparator::GetRegularSize
@@ -236,10 +236,10 @@ virtual void OnDrawOnList(
 |*strText*|[in] 목록에 표시할 텍스트입니다.|
 |*nTextOffset*|[in] 텍스트 및 경계 사각형의 왼쪽 사이의 간격입니다.|
 |*rect*|[in] 경계 사각형을 지정합니다.|
-|*bIsSelected*|[in] 무시 됩니다.|
-|*bHighlighted*|[in] 무시 됩니다.|
+|*bIsSelected*|[in] Ignored.|
+|*bHighlighted*|[in] Ignored.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

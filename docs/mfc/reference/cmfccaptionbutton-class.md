@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCCaptionButton [MFC], OnDraw
 - CMFCCaptionButton [MFC], SetMiniFrameButton
 ms.assetid: c5774b38-c0dd-414a-9ede-3b2f78f233ec
-ms.openlocfilehash: 4fa9d6a57cb2ee70e9da7853954241955d724a5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2020f6cb2f0feec28996f69791899c648600b600
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604298"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301053"
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton 클래스
 
@@ -78,7 +78,7 @@ CPaneFrameWnd.h 두 가지 유형의 캡션 단추에 대 한 명령 Id를 정�
 
 [!code-cpp[NVC_MFC_RibbonApp#43](../../mfc/reference/codesnippet/cpp/cmfccaptionbutton-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -267,7 +267,7 @@ virtual void OnDraw(
 *bMaximized*<br/>
 [in] 최대화 단추 이미지를 그릴 것인지 지정 합니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 사용된 단추 이미지를 그릴 것인지 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -287,9 +287,9 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 *bSet*<br/>
 [in] 미니 제목 막대 높이;에 대해 TRUE 기본 제목 막대 높이 대 한 FALSE입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CPaneFrameWnd 클래스](../../mfc/reference/cpaneframewnd-class.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)

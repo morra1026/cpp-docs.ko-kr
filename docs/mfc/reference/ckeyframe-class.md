@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CKeyFrame [MFC], m_pExistingKeyFrame
 - CKeyFrame [MFC], m_pTransition
 ms.assetid: d050a562-20f6-4c65-8ce5-ccb3aef1a20e
-ms.openlocfilehash: b6ebe5ba78a259014f62bdf04f30e856a57f1aba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2c6add30757e1d83b70001679b37a7a22b9d7d6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451079"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291352"
 ---
 # <a name="ckeyframe-class"></a>CKeyFrame 클래스
 
@@ -74,7 +74,7 @@ class CKeyFrame : public CBaseKeyFrame;
 
 이 클래스는 애니메이션 키 프레임을 구현합니다. 키 프레임을 스토리 보드 내에 순간을 나타내는 및 전환의 시작 및 종료 시간을 지정 하려면 사용할 수 있습니다. 키 프레임 다른 키 프레임에 기반 할 수 있습니다 및 오프셋 (초)에서 또는 전환에 따른 있고이 전환 종료 되는 시점을 나타냅니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -263,6 +263,6 @@ CBaseKeyFrame* m_pExistingKeyFrame;
 CBaseTransition* m_pTransition;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

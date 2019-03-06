@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CShellManager [MFC], GetParentItem
 - CShellManager [MFC], ItemFromPath
 ms.assetid: f15c4c1a-6fae-487d-9913-9b7369b33da0
-ms.openlocfilehash: 428f64dadb91887c4d076693e5dc939b6aff7680
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f58492c6adbb6c183d6498e4a58f3ce639d7d18
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571238"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269385"
 ---
 # <a name="cshellmanager-class"></a>CShellManager 클래스
 
@@ -74,7 +74,7 @@ class CShellManager : public CObject
 
 만들어야 합니다를 `CShellManager` 수동으로 개체입니다. 응용 프로그램의 프레임 워크에서 자동으로 만들 수 됩니다. 하지만 호출 해야 [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager) 응용 프로그램의 초기화 프로세스 동안. 응용 프로그램에 대 한 셸 관리자에 대 한 포인터를 가져오려면, 호출 [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -324,7 +324,7 @@ HRESULT ItemFromPath(
 
 성공할 경우 NOERROR 반환 OLE 정의 오류 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

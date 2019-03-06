@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: ba97dd27fbf70c34461d45755fd008e6ad9099b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 131bee5f9eae1e6e2be4d48941d148edbde68262
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585902"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418765"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 
@@ -77,7 +77,7 @@ class CProgressCtrl : public CWnd
 |[CProgressCtrl::GetBkColor](#getbkcolor)|현재 진행률 표시줄의 배경색을 가져옵니다.|
 |[CProgressCtrl::GetPos](#getpos)|진행률 표시줄의 현재 위치를 가져옵니다.|
 |[CProgressCtrl::GetRange](#getrange)|진행률 표시줄 컨트롤의 범위는 한 및 상한 제한을 가져옵니다.|
-|[Cprogressctrl:: Getstate](#getstate)|현재 진행률 표시줄 컨트롤의 상태를 가져옵니다.|
+|[CProgressCtrl::GetState](#getstate)|현재 진행률 표시줄 컨트롤의 상태를 가져옵니다.|
 |[CProgressCtrl::GetStep](#getstep)|현재 진행률 표시줄 컨트롤의 진행률 표시줄에 대 한 단계 증가 검색합니다.|
 |[CProgressCtrl::OffsetPos](#offsetpos)|지정 된 증분만큼 진행률 표시줄 컨트롤의 현재 위치를 이동 하 고 새 위치를 반영 하도록 막대를 다시 그립니다.|
 |[CProgressCtrl::SetBarColor](#setbarcolor)|현재 진행률 표시줄 컨트롤에는 진행률 표시기의 색을 설정합니다.|
@@ -97,7 +97,7 @@ class CProgressCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CProgressCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CProgressCtrl 사용 하 여](../../mfc/using-cprogressctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -149,7 +149,7 @@ virtual BOOL Create(
 - 진행률 표시줄 컨트롤에서 데이터를 입력할 부드러운 PBS_SMOOTH 표시 점진적입니다. 이 플래그가 없으면 블록을 사용 하 여 컨트롤을 채웁니다.
 
 *rect*<br/>
-진행률 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 클라이언트 영역을 기준으로 지정 된 좌표는 컨트롤을 자식 창와 있어야 하므로 합니다 *pParentWnd*합니다.
+진행률 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 클라이언트 영역을 기준으로 지정 된 좌표는 컨트롤을 자식 창와 있어야 하므로 합니다 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 일반적으로 진행률 표시줄 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -191,7 +191,7 @@ virtual BOOL CreateEx(
 진행률 표시줄 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일의 조합을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -285,7 +285,7 @@ void GetRange(
 
 [!code-cpp[NVC_MFC_CProgressCtrl#4](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_4.cpp)]
 
-##  <a name="getstate"></a>  Cprogressctrl:: Getstate
+##  <a name="getstate"></a>  CProgressCtrl::GetState
 
 현재 진행률 표시줄 컨트롤의 상태를 가져옵니다.
 
@@ -297,7 +297,7 @@ int GetState() const;
 
 다음 값 중 하나는 현재 진행률 표시줄 컨트롤의 상태:
 
-|값|시스템 상태|
+|값|상태|
 |-----------|-----------|
 |PBST_NORMAL|진행 중|
 |PBST_ERROR|Error|
@@ -442,7 +442,7 @@ BOOL SetMarquee(
 |매개 변수|설명|
 |---------------|-----------------|
 |*fMarqueeMode*|[in] 설정 움직이는 텍스트 모드를 켜 짐 또는 움직이는 텍스트 모드를 해제 하려면 FALSE true로 설정 하면입니다.|
-|*n 간격*|[in] 움직이는 텍스트 애니메이션의 업데이트 간격 (밀리초) 시간입니다.|
+|*nInterval*|[in] 움직이는 텍스트 애니메이션의 업데이트 간격 (밀리초) 시간입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -602,9 +602,8 @@ int StepIt();
 
 [!code-cpp[NVC_MFC_CProgressCtrl#10](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_16.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

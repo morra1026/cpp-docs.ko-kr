@@ -1,21 +1,21 @@
 ---
-title: 응용 프로그램 설정, MFC ActiveX 컨트롤 마법사
+title: 애플리케이션 설정, MFC ActiveX 컨트롤 마법사
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.ctl.appset
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, application settings
 ms.assetid: 48475194-cc63-467f-8499-f142269a4c1c
-ms.openlocfilehash: 17d8ad581640611a5b517edd15609aa8052ecae4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3201b5882a1de4064d924fbb28ee1c575ab8ccbe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677138"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281163"
 ---
-# <a name="application-settings-mfc-activex-control-wizard"></a>응용 프로그램 설정, MFC ActiveX 컨트롤 마법사
+# <a name="application-settings-mfc-activex-control-wizard"></a>애플리케이션 설정, MFC ActiveX 컨트롤 마법사
 
-MFC ActiveX 컨트롤 마법사의 이 페이지를 사용하여 기본 기능을 디자인하고 새 MFC ActiveX 프로젝트에 추가합니다. 이러한 설정은 컨트롤의 특정 기능이나 요소가 아닌 응용 프로그램 자체에 적용됩니다.
+MFC ActiveX 컨트롤 마법사의 이 페이지를 사용하여 기본 기능을 디자인하고 새 MFC ActiveX 프로젝트에 추가합니다. 이러한 설정은 컨트롤의 특정 기능이나 요소가 아닌 애플리케이션 자체에 적용됩니다.
 
 - **런타임 라이선스**
 
@@ -38,9 +38,8 @@ MFC ActiveX 컨트롤 마법사의 이 페이지를 사용하여 기본 기능�
 
    - 프로젝트에는 프로젝트 도움말 비트맵 파일 및 도움말 항목 파일(*projname*.rtf)을 포함하는 HLP 디렉터리가 있습니다. 이 도움말 항목 파일에는 많은 ActiveX 컨트롤에서 지원하는 공용 속성, 이벤트 및 메서드에 대한 표준 도움말 항목이 포함됩니다. .rtf 파일을 편집하여 특정 도움말 항목을 추가하거나 제거할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤 마법사](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤 마법사, 컨트롤 이름](../../mfc/reference/control-names-mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤 마법사, 컨트롤 설정](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)
-

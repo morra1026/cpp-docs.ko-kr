@@ -1,5 +1,5 @@
 ---
-title: ': MFC-OLE Tn040 크기 조정 및 확대/축소'
+title: 'TN040: MFC OLE 내부 크기 조정 및 확대/축소'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.mfc.ole
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - zooming and in-place activation
 - in-place activation, zooming and resizing
 ms.assetid: 4d7859bd-0b2e-4254-be62-2735cecf02c6
-ms.openlocfilehash: 072ebe0180bb44145cef694e2283e91a0cacf602
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2f6c6acfefaae877790fd2cc0926bc2474c79b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477209"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283763"
 ---
 # <a name="tn040-mfcole-in-place-resizing-and-zooming"></a>TN040: MFC/OLE 내부 크기 조정 및 확대/축소
 
@@ -84,8 +84,7 @@ MFC OLE 2 사양에 설명 된 대로 완벽 하 게 내부 크기 조정 인터
 
 사용자 지정 크기 조정 구현 하 고 제공한 사용자 인터페이스를 활용할 수 있습니다 `COleResizeBar` WM_SIZECHILD 메시지를 재정의 하 여 프로그램 `COleIPFrameWnd` 클래스입니다. WM_SIZECHILD의 세부 사항에 자세한 내용은 참조 [Technical Note 24](../mfc/tn024-mfc-defined-messages-and-resources.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

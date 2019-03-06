@@ -20,16 +20,17 @@ f1_keywords:
 helpviewer_keywords:
 - choice class
 ms.assetid: 4157a539-d5c2-4161-b1ab-536ce2888397
-ms.openlocfilehash: 60b09b674bec58a7d35a9a37d9a8f4c40d8cd522
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: aa4945bb5f9ef28937487ba504e23c461992b263
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522729"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267019"
 ---
 # <a name="choice-class"></a>choice 클래스
 
-`choice` 메시징 블록은 소스 집합과의 제어 흐름 상호 작용을 나타내는 다중 소스 단일 대상 블록입니다. 선택한 블록은 여러 소스 중 하나가 메시지를 생성할 때까지 대기하고 메시지를 생성한 소스의 인덱스를 전파합니다.
+
+  `choice` 메시징 블록은 소스 집합과의 제어 흐름 상호 작용을 나타내는 다중 소스 단일 대상 블록입니다. 선택한 블록은 여러 소스 중 하나가 메시지를 생성할 때까지 대기하고 메시지를 생성한 소스의 인덱스를 전파합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -75,7 +76,7 @@ class choice: public ISource<size_t>;
 |[reserve](#reserve)|이전에 제공한 메시지를 예약 `choice` 메시징 블록입니다.|
 |[unlink_target](#unlink_target)|이 대상 블록을 연결 해제 `choice` 메시징 블록입니다.|
 |[unlink_targets](#unlink_targets)|이 모든 대상의 연결을 해제 `choice` 메시징 블록입니다. (재정의 [isource:: Unlink_targets](isource-class.md#unlink_targets).)|
-|[값](#value)|인덱스를 포함 하 여 선택 된 메시지를 가져옵니다는 `choice` 메시징 블록입니다.|
+|[value](#value)|인덱스를 포함 하 여 선택 된 메시지를 가져옵니다는 `choice` 메시징 블록입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -83,7 +84,7 @@ class choice: public ISource<size_t>;
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -134,7 +135,7 @@ virtual void acquire_ref(_Inout_ ITarget<size_t>* _PTarget);
 
 이 메서드는 프로그램 `ITarget` 하는 동안이 원본에 연결 되는 개체는 `link_target` 메서드.
 
-##  <a name="ctor"></a> 선택
+##  <a name="ctor"></a> choice
 
 `choice` 메시징 블록을 생성합니다.
 
@@ -174,7 +175,7 @@ choice(
 
 잠금이 있는 경우 이동 생성은 수행되지 않습니다. 즉, 이동하는 중에 간단한 작업이 실행되고 있지 않은지 확인할 책임은 사용자에게 있습니다. 그러지 않으면 수많은 레이스가 발생하여 예외가 발생하거나 일관성 없는 상태가 될 수 있습니다.
 
-##  <a name="dtor"></a> ~ 선택
+##  <a name="dtor"></a> ~choice
 
 제거 된 `choice` 메시징 블록입니다.
 
@@ -182,7 +183,7 @@ choice(
 ~choice();
 ```
 
-##  <a name="consume"></a> 사용
+##  <a name="consume"></a> consume
 
 이전에 제공한 메시지를 생성 `choice` 메시징 블록이 고 호출자에 게 소유권을 전송 하 여 대상에 의해 성공적으로 예약 합니다.
 
@@ -220,7 +221,7 @@ bool has_value() const;
 
 **true 이면** 블록에 값을 받은 경우 **false** 그렇지 않은 경우.
 
-##  <a name="index"></a> 인덱스
+##  <a name="index"></a> index
 
 에 인덱스를 반환 합니다 `tuple` 에서 선택한 요소를 나타내는 `choice` 메시징 블록입니다.
 
@@ -357,9 +358,10 @@ _Payload_type const& value();
 
 ### <a name="remarks"></a>설명
 
-`choice` 메시징 블록은 페이로드 형식이 서로 다른 입력을 사용할 수 있기 때문에 검색 시 페이로드의 형식을 지정해야 합니다. 결과에 따라 형식을 확인할 수 있습니다는 `index` 메서드.
 
-## <a name="see-also"></a>참고 항목
+  `choice` 메시징 블록은 페이로드 형식이 서로 다른 입력을 사용할 수 있기 때문에 검색 시 페이로드의 형식을 지정해야 합니다. 결과에 따라 형식을 확인할 수 있습니다는 `index` 메서드.
+
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [join 클래스](join-class.md)<br/>

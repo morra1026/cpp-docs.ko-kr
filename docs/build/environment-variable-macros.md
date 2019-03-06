@@ -6,12 +6,12 @@ helpviewer_keywords:
 - environment variables, macros in NMAKE
 - macros, environment-variable
 ms.assetid: f8e96635-0906-47b0-9f56-12a6fdf5e347
-ms.openlocfilehash: 4691f89f1886b40637a0800ee8a6a94e4b4e06c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baca09fbf93679b767a1de5d0553eb7462f31e4f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594300"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417673"
 ---
 # <a name="environment-variable-macros"></a>환경 변수 매크로
 
@@ -19,7 +19,7 @@ NMAKE는 매크로 정의 세션을 시작 하기 전에 존재 하는 환경 �
 
 환경 변수 매크로 세션에서 다시 정의할 수 있습니다 하 고 해당 환경 변수를 변경 합니다. 또한 SET 명령 사용 하 여 환경 변수를 변경할 수 있습니다. 세션에서 환경 변수를 변경 하려면 SET 명령을 사용 하 여 변경 되지 않습니다 해당 매크로 있지만.
 
-예:
+예를 들어:
 
 ```
 PATH=$(PATH);\nonesuch
@@ -32,6 +32,6 @@ all:
 
 환경 변수는 메이크파일의 구문상 올바른 것 문자열로 정의 된 경우 매크로가 생성 되 고 경고가 생성 됩니다. 변수 값을 달러 기호 ($)를 포함 하는 경우 NMAKE 매크로 호출의 시작 부분으로 해석 합니다. 매크로 사용 하 여 예기치 않은 동작이 발생할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [특수 NMake 매크로](../build/special-nmake-macros.md)

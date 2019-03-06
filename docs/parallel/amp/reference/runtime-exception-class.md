@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - runtime_exception class
 ms.assetid: 8fe3ce2c-3d4c-4b9c-95e8-e592f37adefd
-ms.openlocfilehash: 627fc6788dd359779bf07da3da1901be4c3aeafd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5260d2f1d2e5a6a6498d501599037a90bc7bc9a0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630687"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289665"
 ---
 # <a name="runtimeexception-class"></a>runtime_exception 클래스
 
@@ -47,7 +47,7 @@ class runtime_exception : public std::exception;
 |----------|-----------------|
 |[operator=](#operator_eq)|지정 된 내용을 복사 `runtime_exception` 을 여기에 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -79,7 +79,7 @@ runtime_exception(
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 예외를 발생 시킨 오류의 설명입니다.
 
 *_Hresult*<br/>
@@ -134,6 +134,6 @@ runtime_exception & operator= (    const runtime_exception & _Other ) throw();
 
 이에 대 한 참조 `runtime_exception` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

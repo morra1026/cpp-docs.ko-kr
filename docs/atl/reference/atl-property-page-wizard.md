@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding property pages
 - ATL Property Page Wizard
 ms.assetid: 6113e325-facd-4f68-b491-144d75209922
-ms.openlocfilehash: 9b698616dbde06452e9ab08f37c646a2cedbc37c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 791901ab3181ad2c8ac862a970980250693d20f7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572772"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258283"
 ---
 # <a name="atl-property-page-wizard"></a>ATL 속성 페이지 마법사
 
@@ -64,9 +64,8 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
    컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [옵션, ATL 속성 페이지 마법사](../../atl/reference/options-atl-property-page-wizard.md)<br/>
 [문자열, ATL 속성 페이지 마법사](../../atl/reference/strings-atl-property-page-wizard.md)<br/>
-[예: 속성 페이지 구현](../../atl/example-implementing-a-property-page.md)
-
+[예제: 속성 페이지 구현](../../atl/example-implementing-a-property-page.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - serialization [MFC], MFC
 - serialization [MFC], bypassing
 ms.assetid: fb596a18-4522-47e0-96e0-192732d24c12
-ms.openlocfilehash: d439f5e13148d4359394739ec56048f00ceb35ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c7dec140635b6d83bdae936d1bb0cef144f825b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462766"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262144"
 ---
 # <a name="serialization-in-mfc"></a>MFC의 Serialization
 
@@ -27,7 +27,7 @@ Serialization의 기본 개념 된다는 개체는 일반적으로 영구 저장
 
 MFC의 개체를 사용 하는 `CArchive` serialize 될 개체 및 저장소 매체 간의 중개자로 클래스입니다. 이 개체는 항상 연결을 `CFile` 읽기 또는 쓰기 요청된 된 작업 인지 및 파일 이름을 포함 하는 serialization에 대 한 필요한 정보를 얻을 수 있는 개체입니다. Serialization 작업을 수행 하는 개체를 사용할 수는 `CArchive` 저장소 매체의 특성에 관계 없이 개체입니다.
 
-A `CArchive` 오버 로드 된 삽입을 사용 하 여 개체 (**<\<**) 및 추출 (**>>**) 쓰기 및 읽기 작업을 수행 하는 연산자입니다. 자세한 내용은 [저장 및 보관을 통해 Cobject 로드](../mfc/storing-and-loading-cobjects-via-an-archive.md) 문서의 Serialization: 개체를 직렬화 합니다.
+A `CArchive` 오버 로드 된 삽입을 사용 하 여 개체 (**<\<**) 및 추출 (**>>**) 쓰기 및 읽기 작업을 수행 하는 연산자입니다. 자세한 내용은 [저장 및 보관을 통해 Cobject 로드](../mfc/storing-and-loading-cobjects-via-an-archive.md) Serialization 문서에서: 개체를 직렬화 합니다.
 
 > [!NOTE]
 >  혼동 하지 마십시오는 `CArchive` 클래스는 범용 iostream 클래스를 사용 하 여 서식 있는 텍스트만 합니다. `CArchive` 클래스는 이진 형식의 serialize 된 개체입니다.
@@ -36,13 +36,13 @@ A `CArchive` 오버 로드 된 삽입을 사용 하 여 개체 (**<\<**) 및 추
 
 다음 문서를 직렬화 하는 데 필요한 두 가지 주요 작업을 설명 합니다.
 
-- [Serialization: Serialize 가능한 클래스 만들기](../mfc/serialization-making-a-serializable-class.md)
+- [Serialization: Serializable 클래스 만들기](../mfc/serialization-making-a-serializable-class.md)
 
-- [Serialization: 개체 Serialize](../mfc/serialization-serializing-an-object.md)
+- [Serialization: 개체를 직렬화 하는 작업](../mfc/serialization-serializing-an-object.md)
 
-문서 [Serialization: Serialization vs. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md) 경우 직렬화는 데이터베이스 응용 프로그램에 적절 한 입/출력 기술에 설명 합니다.
+문서 [직렬화 합니다. Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md) 경우 직렬화는 데이터베이스 응용 프로그램에 적절 한 입/출력 기술에 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../mfc/mfc-concepts.md)<br/>
 [일반 MFC 항목](../mfc/general-mfc-topics.md)<br/>

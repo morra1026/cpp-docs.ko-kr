@@ -12,12 +12,12 @@ helpviewer_keywords:
 - documents [MFC], MFC document/view model
 - document objects [MFC], document/view architecture
 ms.assetid: 6127768a-553f-462a-b01b-a5ee6068c81e
-ms.openlocfilehash: f0886f364637c8844aceb5d5d7b6b2ed7175225d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ec933d29474695c1b94b72e712d68a9b3a08bd4e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176851"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326584"
 ---
 # <a name="documentview-architecture"></a>문서/뷰 아키텍처
 
@@ -54,7 +54,7 @@ MFC 문서/뷰 아키텍처 쉽게 여러 뷰, 여러 문서 형식, 분할 창 
 
 문서, 연결 된 뷰, 및 보기의 프레임 창 문서 템플릿에 의해 생성 됩니다. 문서 템플릿에 하나의 문서 종류의 모든 문서 만들기 및 관리 하는 일을 담당 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서/뷰 아키텍처에 대 한 자세한 설명](../mfc/a-portrait-of-the-document-view-architecture.md)
 
@@ -82,7 +82,7 @@ MFC 문서/뷰 아키텍처 쉽게 여러 뷰, 여러 문서 형식, 분할 창 
 
 - [샘플](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [Windows](../mfc/windows.md)<br/>
@@ -90,4 +90,3 @@ MFC 문서/뷰 아키텍처 쉽게 여러 뷰, 여러 문서 형식, 분할 창 
 [문서 템플릿 및 문서/뷰 만들기 프로세스](../mfc/document-templates-and-the-document-view-creation-process.md)<br/>
 [문서/뷰 만들기](../mfc/document-view-creation.md)<br/>
 [새 문서, 창 및 뷰 만들기](../mfc/creating-new-documents-windows-and-views.md)
-

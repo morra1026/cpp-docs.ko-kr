@@ -11,12 +11,12 @@ helpviewer_keywords:
 - OLE [MFC], classes
 - containers [MFC], OLE container applications
 ms.assetid: 1e27e1ab-4c22-41eb-8547-6915c72668ae
-ms.openlocfilehash: 518ae4889a2c5d9dae10e5b5cba6845010ba883c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87db824e5ab4daec15870b245ea8341be7442109
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517145"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292557"
 ---
 # <a name="ole-container-classes"></a>OLE 컨테이너 클래스
 
@@ -48,7 +48,6 @@ Rich edit 컨트롤에 있는 OLE 클라이언트 항목 목록을 유지 관리
 [COleException](../mfc/reference/coleexception-class.md)<br/>
 OLE 처리 중 오류로 인해 발생하는 예외입니다. 이 클래스는 컨테이너 및 서버에서 모두 사용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCToolBarInfo [MFC], m_uiMenuDisabledResID
 - CMFCToolBarInfo [MFC], m_uiMenuResID
 ms.assetid: 6dc84482-eaaa-491f-aa5d-dd7a57886b46
-ms.openlocfilehash: e1e460fe3efb5401227e91f49d8f7c4f6689fa27
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b2f8af439a2534f24cdba9b0ccdb12b150db6d0a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651167"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292252"
 ---
 # <a name="cmfctoolbarinfo-class"></a>CMFCToolBarInfo 클래스
 
@@ -58,7 +58,7 @@ class CMFCToolBarInfo
 
 전체 도구 모음 비트맵을 고정된 된 크기의 작은 도구 모음 이미지 (단추)으로 구성 됩니다. 에 저장 된 각 리소스 ID를 `CMFCToolBarInfo` 개체는 단일 상태 (예:, 선택, 사용 안 함, 대규모, 또는 메뉴 이미지) 도구 모음 이미지의 전체 집합을 포함 하는 비트맵입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CMFCToolBarInfo](../../mfc/reference/cmfctoolbarinfo-class.md)
 
@@ -130,7 +130,7 @@ UINT m_uiMenuDisabledResID;
 UINT m_uiMenuResID;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

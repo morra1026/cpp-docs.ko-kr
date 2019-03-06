@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC source files, Implementation comment
 - comments, Implementation comments
 ms.assetid: 4d799c07-8e71-4a6b-90ab-8282d6ff48ce
-ms.openlocfilehash: ab69fa25cc8dece635097f17bae97f831f7ec87f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 377997b66c5b9c005d1e1bee24890b756621b672
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552895"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261052"
 ---
 # <a name="-implementation-comment"></a>// 구현 주석
 
@@ -25,7 +25,7 @@ ms.locfileid: "50552895"
 > [!NOTE]
 >  위 또는 아래 나머지 형식 주석을 사용할 수 있습니다는 `// Implementation` 주석입니다. 두 경우 모두이 개체는 아래에 선언 된 멤버의 종류를 설명 했습니다. 아래에 있는 경우는 `// Implementation` 주석에서 멤버가 변경 될 수 있음을 이후 버전의 MFC 가정해 야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
 [주석 예](../mfc/an-example-of-the-comments.md)<br/>
@@ -33,4 +33,3 @@ ms.locfileid: "50552895"
 [특성 주석](../mfc/decrement-attributes-comment.md)<br/>
 [작업 주석](../mfc/decrement-operations-comment.md)<br/>
 [재정의 가능 주석](../mfc/decrement-overridables-comment.md)
-

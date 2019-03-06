@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DLLs [C++], exporting from
 - __declspec(dllimport) keyword [C++]
 ms.assetid: 7c44c2aa-2117-4cec-9615-a65bfd3f8f7b
-ms.openlocfilehash: c7328f0e5f5d408ec93f31fa4cbea987594264ba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1aaf18003f831ca94ecd90dafb472ecb894b8a60
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492765"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424797"
 ---
 # <a name="importing-and-exporting"></a>가져오기 및 내보내기
 
@@ -45,6 +45,6 @@ Win32 이식 가능한 실행 파일 형식으로 가져오기를 수정 하기 
 
 - [DLL에서 내보내기](../build/exporting-from-a-dll.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

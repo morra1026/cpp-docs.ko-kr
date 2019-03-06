@@ -1,5 +1,5 @@
 ---
-title: 'Windows 소켓: 데이터그램 소켓'
+title: 'Windows 소켓: 데이터 그램 소켓'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sockets [MFC], datagram
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - Windows Sockets [MFC], datagram
 - sockets [MFC], bi-directional data flow
 ms.assetid: bec16a1c-74c0-4ff9-8c18-c2d87897d264
-ms.openlocfilehash: 886409d4072a77244cff415c6f0a6a3f533e42d4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 14d33ece66d902b5705e573e9863ea78fff9737f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462129"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266798"
 ---
-# <a name="windows-sockets-datagram-sockets"></a>Windows 소켓: 데이터그램 소켓
+# <a name="windows-sockets-datagram-sockets"></a>Windows 소켓: 데이터 그램 소켓
 
 이 문서에서는 데이터 그램 소켓을 사용할 수 있는 두 개의 Windows 소켓 유형 중 하나를 설명 합니다. (다른 유형은 합니다 [스트림 소켓](../mfc/windows-sockets-stream-sockets.md).)
 
@@ -27,8 +27,7 @@ ms.locfileid: "50462129"
 
 데이터 그램 소켓은 레코드 지향 데이터에 대 한 스트림 소켓 보다 효과적입니다. 데이터 그램 소켓에 대 한 자세한 내용은 Windows SDK에서 사용할 수 있는 Windows Sockets 사양을 참조 하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)<br/>
-[Windows 소켓: 백그라운드](../mfc/windows-sockets-background.md)
-
+[Windows 소켓: 배경](../mfc/windows-sockets-background.md)

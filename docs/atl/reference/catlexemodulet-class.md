@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlExeModuleT class
 ms.assetid: 82245f3d-91d4-44fa-aa86-7cc7fbd758d9
-ms.openlocfilehash: d31dd9ed1d30633b8f7078794dad06d51ec119f2
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 3891741cb6998ec8621795801ce409aa40ab6d1d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893441"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270386"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT 클래스
 
@@ -88,7 +88,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 
 ATL에서 모듈에 대 한 자세한 내용은 참조 하세요. [ATL 모듈 클래스](../../atl/atl-module-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -351,7 +351,7 @@ int WinMain(int nShowCmd) throw();
 
 이 메서드를 재정의할 수 있습니다. 재정의 하는 경우 [CAtlExeModuleT::PreMessageLoop](#premessageloop)하십시오 [CAtlExeModuleT::PostMessageLoop](#postmessageloop), 또는 [CAtlExeModuleT::RunMessageLoop](#runmessageloop) 충분 한 유연성을 제공 하지 않습니다 를 재정의할 수는 `WinMain` 이 메서드를 사용 하 여 작동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATLDuck 샘플](../../visual-cpp-samples.md)<br/>
 [CAtlModuleT 클래스](../../atl/reference/catlmodulet-class.md)<br/>

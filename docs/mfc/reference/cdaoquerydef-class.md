@@ -66,12 +66,12 @@ helpviewer_keywords:
 - CDaoQueryDef [MFC], m_pDAOQueryDef
 - CDaoQueryDef [MFC], m_pDatabase
 ms.assetid: 9676a4a3-c712-44d4-8c5d-d1cc78288d3a
-ms.openlocfilehash: 07c508dcf4bd57855d09be5a305847d0b2981305
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08fb2909a4fd2e5bda3dfc63d19224a515c7c699
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50664531"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283646"
 ---
 # <a name="cdaoquerydef-class"></a>CDaoQueryDef 클래스
 
@@ -137,7 +137,7 @@ class CDaoQueryDef : public CObject
 > [!NOTE]
 >  DAO 데이터베이스 클래스로 개방형 데이터베이스 연결 (ODBC)에 따라 MFC 데이터베이스 클래스와에서 다릅니다. 모든 DAO 데이터베이스 클래스 이름 "CDao" 접두사가 있습니다. 여전히 DAO 클래스를 사용 하 여 ODBC 데이터 원본 액세스 할 수 있습니다. 일반적으로 기반으로 DAO MFC 클래스는 ODBC를 기반으로 MFC 클래스 보다 더욱 강력한 DAO 기반 클래스를 통해 자신의 데이터베이스 엔진을 통해 ODBC 드라이버를 비롯 하 여 데이터를 액세스할 수 있습니다. DAO 기반 클래스는 또한 직접 DAO 호출 하지 않고도 클래스를 통해 테이블을 추가 하는 등의 데이터 정의 언어 (DDL) 작업을 지원 합니다.
 
-## <a name="usage"></a>용도
+## <a name="usage"></a>사용법
 
 개체를 사용 쿼리 정의 하거나 기존에 저장 된 쿼리를 사용 하거나 새 쿼리나 임시 쿼리를 저장 합니다.
 
@@ -181,7 +181,7 @@ Select, 작업, 크로스탭, 삭제, 업데이트를 포함 하 여 쿼리의 �
 
 관련된 정보에 대 한 "QueryDef Object", "QueryDefs 컬렉션" 및 "CdbDatabase 개체" DAO SDK에서 항목을 참조 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -435,9 +435,9 @@ void GetFieldInfo(
 
 - (기본값) AFX_DAO_PRIMARY_INFO 이름, 유형, 크기, 특성
 
-- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 서 수 위치에 필요한, 길이가 0 허용, 원본 필드, 외부 이름, 원본 테이블, 데이터 정렬 순서
+- 더하기 AFX_DAO_SECONDARY_INFO 기본 정보: 필요한 서 수 위치 0 길이, 원본 필드, 외부 이름, 원본 테이블에 정렬 순서를 허용 합니다.
 
-- AFX_DAO_ALL_INFO 기본 및 보조 데이터베이스 정보가 더하기: Default Value, 유효성 검사 텍스트 유효성 검사 규칙
+- AFX_DAO_ALL_INFO 기본 및 보조 데이터베이스 정보가 더하기: 기본 값, 유효성 검사 텍스트, 유효성 검사 규칙
 
 *lpszName*<br/>
 이름별 조회에 대 한 원하는 필드의 이름을 포함 하는 문자열입니다. 사용할 수는 [CString](../../atl-mfc-shared/reference/cstringt-class.md)합니다.
@@ -835,7 +835,7 @@ void SetSQL(LPCTSTR lpszSQL);
 
 일반적인 사용 `SetSQL` SQL 통과 쿼리에서 사용 하기 위해 쿼리 정의 설정 합니다. (대상 DBMS에서 SQL 통과 쿼리의 구문을 DBMS에 대 한 설명서 참조).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -192,16 +192,16 @@ helpviewer_keywords:
 - CWinApp [MFC], m_nAutosaveInterval
 - CWinApp [MFC], m_pDataRecoveryHandler
 ms.assetid: e426a3cd-0d15-40d6-bd55-beaa5feb2343
-ms.openlocfilehash: 3f9afdf18fcaff0d3613b4204d8690f915079e7d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 6366638ebfd5e78ad517a8913e4276d5cd820670
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178943"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264675"
 ---
 # <a name="cwinapp-class"></a>CWinApp 클래스
 
-Windows 응용 프로그램 개체를 파생하는 기본 클래스입니다.
+Windows 애플리케이션 개체를 파생하는 기본 클래스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -236,7 +236,7 @@ class CWinApp : public CWinThread
 |[CWinApp::GetApplicationRecoveryParameter](#getapplicationrecoveryparameter)|응용 프로그램 복구 방법에 대 한 입력된 매개 변수를 검색합니다.|
 |[CWinApp::GetApplicationRecoveryPingInterval](#getapplicationrecoverypinginterval)|다시 시작 관리자를 반환 하는 복구 콜백 함수에 대 한 대기 하는 시간의 길이 반환 합니다.|
 |[CWinApp::GetApplicationRestartFlags](#getapplicationrestartflags)|다시 시작 관리자에 대 한 플래그를 반환 합니다.|
-|[CWinApp::GetAppRegistryKey](#getappregistrykey)|HKEY_CURRENT_USER에 대 한 반환 키\\"소프트웨어" \RegistryKey\ProfileName 합니다.|
+|[CWinApp::GetAppRegistryKey](#getappregistrykey)|Returns key for HKEY_CURRENT_USER\\"Software"\RegistryKey\ProfileName.|
 |[CWinApp::GetDataRecoveryHandler](#getdatarecoveryhandler)|응용 프로그램의이 인스턴스에 대 한 데이터 복구 처리기를 가져옵니다.|
 |[CWinApp::GetFirstDocTemplatePosition](#getfirstdoctemplateposition)|첫 번째 문서 서식 파일의 위치를 검색 합니다.|
 |[CWinApp::GetHelpMode](#gethelpmode)|응용 프로그램에서 사용 하는 도움말의 형식을 검색 합니다.|
@@ -245,7 +245,7 @@ class CWinApp : public CWinThread
 |[CWinApp::GetProfileBinary](#getprofilebinary)|응용 프로그램의 진입점에서 이진 데이터를 검색합니다. INI 파일입니다.|
 |[CWinApp::GetProfileInt](#getprofileint)|응용 프로그램의 진입점에서 정수를 검색합니다. INI 파일입니다.|
 |[CWinApp::GetProfileString](#getprofilestring)|응용 프로그램의 진입점에서 문자열을 검색합니다. INI 파일입니다.|
-|[CWinApp::GetSectionKey](#getsectionkey)|HKEY_CURRENT_USER에 대 한 반환 키\\"소프트웨어" \RegistryKey\AppName\lpszSection 합니다.|
+|[CWinApp::GetSectionKey](#getsectionkey)|Returns key for HKEY_CURRENT_USER\\"Software"\RegistryKey\AppName\lpszSection.|
 |[CWinApp::HideApplication](#hideapplication)|모든 문서를 닫기 전에 응용 프로그램을 숨깁니다.|
 |[CWinApp::HtmlHelp](#htmlhelp)|호출 된 `HTMLHelp` Windows 함수입니다.|
 |[CWinApp::InitInstance](#initinstance)|창 개체 만들기와 같은 Windows 인스턴스 초기화를 수행 하도록 재정의 합니다.|
@@ -260,7 +260,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|응용 프로그램별 유휴 시간 처리를 수행 하려면 재정의 합니다.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|파일에서 문서를 열려고 프레임 워크에서 호출 됩니다.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|개별 매개 변수 및 명령줄에서 플래그를 구문 분석합니다.|
-|[경우](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)합니다.|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows 함수로 디스패치 되기 전에 메시지를 필터링 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage)합니다.|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|응용 프로그램에 도달 하기 전에 특정 메시지를 차단 합니다.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|명령줄 인수 및 플래그를 처리합니다.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|응용 프로그램의 메시지 및 명령 처리기에 의해 throw 되는 모든 처리 되지 않은 예외를 가로챕니다.|
@@ -269,7 +269,7 @@ class CWinApp : public CWinThread
 |[CWinApp::ReopenPreviousFilesAtRestart](#reopenpreviousfilesatrestart)|다시 시작 관리자가 응용 프로그램이 예기치 않게 종료 될 때 열려 있던 파일이 있는지 여부를 결정 합니다.|
 |[CWinApp::RestartInstance](#restartinstance)|다시 시작 관리자에서 시작 된 응용 프로그램이 다시 시작을 처리 합니다.|
 |[CWinApp::RestoreAutosavedFilesAtRestart](#restoreautosavedfilesatrestart)|응용 프로그램을 다시 시작 될 때 다시 시작 관리자 자동 저장 된 파일을 복원할지 여부를 결정 합니다.|
-|[Cwinapp:: Run](#run)|기본 메시지 루프를 실행합니다. 메시지 루프에 맞게 재정의 합니다.|
+|[CWinApp::Run](#run)|기본 메시지 루프를 실행합니다. 메시지 루프에 맞게 재정의 합니다.|
 |[CWinApp::RunAutomated](#runautomated)|응용 프로그램의 명령줄에 대 한 테스트를 **/Automation** 옵션입니다. 사용되지 않습니다. 값을 사용 하는 대신 [CCommandLineInfo::m_bRunAutomated](../../mfc/reference/ccommandlineinfo-class.md#m_brunautomated) 호출한 후 [ParseCommandLine](#parsecommandline)합니다.|
 |[CWinApp::RunEmbedded](#runembedded)|응용 프로그램의 명령줄에 대 한 테스트를 **포함/** 옵션입니다. 사용되지 않습니다. 값을 사용 하는 대신 [CCommandLineInfo::m_bRunEmbedded](../../mfc/reference/ccommandlineinfo-class.md#m_brunembedded) 호출한 후 [ParseCommandLine](#parsecommandline)합니다.|
 |[CWinApp::SaveAllModified](#saveallmodified)|모든 수정 된 문서를 저장 하 라는 메시지입니다.|
@@ -282,7 +282,7 @@ class CWinApp : public CWinThread
 |[CWinApp::Unregister](#unregister)|등록을 취소 하 여 등록에 알려진 모든 항목을 `CWinApp` 개체입니다.|
 |[CWinApp::WinHelp](#winhelp)|호출 된 `WinHelp` Windows 함수입니다.|
 |[CWinApp::WriteProfileBinary](#writeprofilebinary)|응용 프로그램의 진입점에 이진 데이터를 씁니다. INI 파일입니다.|
-|[Cwinapp:: Writeprofileint](#writeprofileint)|응용 프로그램의 항목에 정수를 씁니다. INI 파일입니다.|
+|[CWinApp::WriteProfileInt](#writeprofileint)|응용 프로그램의 항목에 정수를 씁니다. INI 파일입니다.|
 |[CWinApp::WriteProfileString](#writeprofilestring)|응용 프로그램의 항목에는 문자열을 씁니다. INI 파일입니다.|
 
 ### <a name="protected-methods"></a>보호된 메서드
@@ -315,7 +315,7 @@ class CWinApp : public CWinThread
 |[CWinApp::m_nCmdShow](#m_ncmdshow)|창이 처음 표시 될 방법을 지정 합니다.|
 |[CWinApp::m_pActiveWnd](#m_pactivewnd)|OLE 서버에 내부 활성화 되 면 컨테이너 응용 프로그램의 주 창에 대 한 포인터입니다.|
 |[CWinApp::m_pszAppID](#m_pszappid)|응용 프로그램 사용자 모델 id입니다.|
-|[CWinApp::m_pszAppName](#m_pszappname)|응용 프로그램의 이름을 지정합니다.|
+|[CWinApp::m_pszAppName](#m_pszappname)|애플리케이션의 이름을 지정합니다.|
 |[CWinApp::m_pszExeName](#m_pszexename)|응용 프로그램의 모듈 이름입니다.|
 |[CWinApp::m_pszHelpFilePath](#m_pszhelpfilepath)|응용 프로그램의 도움말 파일 경로입니다.|
 |[CWinApp::m_pszProfileName](#m_pszprofilename)|응용 프로그램입니다. INI 파일 이름입니다.|
@@ -549,7 +549,7 @@ virtual int DoMessageBox(
 *lpszPrompt*<br/>
 메시지 상자 텍스트의 주소입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 메시지 상자가 [스타일](../../mfc/reference/styles-used-by-mfc.md#message-box-styles)합니다.
 
 *nIDPrompt*<br/>
@@ -929,7 +929,7 @@ UINT GetProfileInt(
 *lpszEntry*<br/>
 값을 검색할 항목이 포함된 null로 끝나는 문자열을 가리킵니다.
 
-*n 기본*<br/>
+*nDefault*<br/>
 프레임워크에서 항목을 찾을 수 없는 경우 반환할 기본값을 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1307,15 +1307,15 @@ DWORD m_dwRestartManagerSupportFlags;
 |-|-|
 |플래그|설명|
 |AFX_RESTART_MANAGER_SUPPORT_RESTART|응용 프로그램은 사용 하 여 등록 [CWinApp::RegisterWithRestartManager](#registerwithrestartmanager)합니다. 다시 시작 관리자는 예기치 않게 종료 되 면 응용 프로그램을 다시 시작 하는 일을 담당 합니다.|
-|-AFX_RESTART_MANAGER_SUPPORT_RECOVERY|응용 프로그램은 다시 시작 관리자를 사용 하 여 등록 및 응용 프로그램을 다시 시작 될 때 다시 시작 관리자 복구 콜백 함수를 호출 합니다. 기본 복구 콜백 함수는 [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)합니다.|
-|-AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|자동 저장을 사용 하 고 다시 시작 관리자에서 응용 프로그램 다시 시작 될 때 모든 문서를 공개 합니다.|
-|-AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL|자동 저장을 사용 하 고 다시 시작 관리자에서 일정 한 간격으로 모든 열린 문서. 간격 정의한 [CWinApp::m_nAutosaveInterval](#m_nautosaveinterval)합니다.|
-|-AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES|다시 시작 관리자는 예기치 못한 종료에서 응용 프로그램을 다시 시작한 후 이전에 열려 있는 문서를 엽니다. 합니다 [CDataRecoveryHandler 클래스](../../mfc/reference/cdatarecoveryhandler-class.md) 열린 문서의 목록을 저장 및 복원에 처리 합니다.|
-|-AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES|응용 프로그램을 다시 시작한 후 자동 저장 된 파일을 복원 하 라는 메시지를 표시 하는 다시 시작 관리자입니다. `CDataRecoveryHandler` 클래스는 사용자를 쿼리 합니다.|
-|-AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_SUPPORT_RECOVER, 및 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES의 합집합입니다.|
-|-AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, 및 AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES의 합집합입니다.|
-|-AFX_RESTART_MANAGER_SUPPORT_RESTART_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES, 및 AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES의 합집합입니다.|
-|-AFX_RESTART_MANAGER_SUPPORT_RECOVERY_ASPECTS|Union ofAFX_RESTART_MANAGER_SUPPORT_RECOVERY, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES, 및 AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES 합니다.|
+|- AFX_RESTART_MANAGER_SUPPORT_RECOVERY|응용 프로그램은 다시 시작 관리자를 사용 하 여 등록 및 응용 프로그램을 다시 시작 될 때 다시 시작 관리자 복구 콜백 함수를 호출 합니다. 기본 복구 콜백 함수는 [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback)합니다.|
+|- AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART|자동 저장을 사용 하 고 다시 시작 관리자에서 응용 프로그램 다시 시작 될 때 모든 문서를 공개 합니다.|
+|- AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL|자동 저장을 사용 하 고 다시 시작 관리자에서 일정 한 간격으로 모든 열린 문서. 간격 정의한 [CWinApp::m_nAutosaveInterval](#m_nautosaveinterval)합니다.|
+|- AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES|다시 시작 관리자는 예기치 못한 종료에서 응용 프로그램을 다시 시작한 후 이전에 열려 있는 문서를 엽니다. 합니다 [CDataRecoveryHandler 클래스](../../mfc/reference/cdatarecoveryhandler-class.md) 열린 문서의 목록을 저장 및 복원에 처리 합니다.|
+|- AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES|응용 프로그램을 다시 시작한 후 자동 저장 된 파일을 복원 하 라는 메시지를 표시 하는 다시 시작 관리자입니다. `CDataRecoveryHandler` 클래스는 사용자를 쿼리 합니다.|
+|- AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_SUPPORT_RECOVER, 및 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES의 합집합입니다.|
+|- AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_NO_AUTOSAVE, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, 및 AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES의 합집합입니다.|
+|- AFX_RESTART_MANAGER_SUPPORT_RESTART_ASPECTS|AFX_RESTART_MANAGER_SUPPORT_RESTART, AFX_RESTART_MANAGER_AUTOSAVE_AT_RESTART, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES, 및 AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES의 합집합입니다.|
+|- AFX_RESTART_MANAGER_SUPPORT_RECOVERY_ASPECTS|Union ofAFX_RESTART_MANAGER_SUPPORT_RECOVERY, AFX_RESTART_MANAGER_AUTOSAVE_AT_INTERVAL, AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES, 및 AFX_RESTART_MANAGER_RESTORE_AUTOSAVED_FILES 합니다.|
 
 ##  <a name="m_ehelptype"></a>  CWinApp::m_eHelpType
 
@@ -1424,7 +1424,7 @@ CDataRecoveryHandler* m_pDataRecoveryHandler;
 
 ##  <a name="m_pszappname"></a>  CWinApp::m_pszAppName
 
-응용 프로그램의 이름을 지정합니다.
+애플리케이션의 이름을 지정합니다.
 
 ```
 LPCTSTR m_pszAppName;
@@ -1508,7 +1508,7 @@ LPCTSTR m_pszRegistryKey;
 
 일반적으로이 데이터 멤버는 읽기 전용으로 처리 됩니다.
 
-- 값은 레지스트리 키에 저장 됩니다. 응용 프로그램 프로필 설정에 대 한 이름은 다음 레지스트리 키에 추가 됩니다. HKEY_CURRENT_USER/소프트웨어/LocalAppWizard 생성 /입니다.
+- 값은 레지스트리 키에 저장 됩니다. 응용 프로그램 프로필 설정에 대 한 이름은 다음 레지스트리 키에 추가 됩니다. HKEY_CURRENT_USER/Software/LocalAppWizard-Generated/.
 
 값을 할당 하는 경우 `m_pszRegistryKey`, 힙에 동적으로 할당 해야 합니다. 합니다 `CWinApp` 소멸자 호출 **무료**이 포인터를 사용 하 여 (). 사용 하려면 여러는 `_tcsdup`()에서 런타임 라이브러리 함수를 할당 합니다. 또한 새 값을 할당 하기 전에 현재 포인터를 사용 하 여 연결 된 메모리를 확보 합니다. 예를 들어 다음과 같습니다.
 
@@ -1738,7 +1738,7 @@ virtual CDocument* OpenDocumentFile(
 *lpszFileName*<br/>
 [in] 열려는 파일의 이름입니다.
 
-*baddtomru*<br/>
+*bAddToMRU*<br/>
 [in] TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 문서가 아닌 최신 파일 중 하나를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1782,7 +1782,7 @@ void ParseCommandLine(CCommandLineInfo& rCmdInfo);
 
 명령줄 플래그에 대 한 참조 [CCommandLineInfo::m_nShellCommand](../../mfc/reference/ccommandlineinfo-class.md#m_nshellcommand)합니다.
 
-##  <a name="pretranslatemessage"></a>  경우
+##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
 창 메시지를 필터링 하려면이 함수를 재정의 하 여 Windows 함수로 디스패치 되기 전에 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) 액셀러레이터 키를 수행 하는 기본 구현 호출 해야 하므로 변환 된 `CWinApp::PreTranslateMessage` 재정의 된 버전에서 멤버 함수입니다.
 
@@ -2038,7 +2038,7 @@ virtual BOOL RestoreAutosavedFilesAtRestart() const;
 
 TRUE 이면 자동 저장 된 파일을 복원 하는 다시 시작 관리자 FALSE 이면 다시 시작 관리자 하지 않습니다.
 
-##  <a name="run"></a>  Cwinapp:: Run
+##  <a name="run"></a>  CWinApp::Run
 
 기본 메시지 루프를 제공합니다.
 
@@ -2310,7 +2310,7 @@ BOOL WriteProfileBinary(
 
 다른 예를 들어에 대 한 예제를 참조 하세요 [CWinApp::GetProfileBinary](#getprofilebinary)합니다.
 
-##  <a name="writeprofileint"></a>  Cwinapp:: Writeprofileint
+##  <a name="writeprofileint"></a>  CWinApp::WriteProfileInt
 
 응용 프로그램 레지스트리의 지정된 된 섹션에 지정된 된 값을 쓸이 멤버 함수 호출 또는 합니다. INI 파일입니다.
 
@@ -2329,7 +2329,7 @@ BOOL WriteProfileInt(
 *lpszEntry*<br/>
 값이 쓰여질 항목이 포함 된 null로 끝나는 문자열을 가리킵니다. 지정된 된 섹션에 항목이 없으면 자동으로 만들어집니다.
 
-*n 값*<br/>
+*nValue*<br/>
 쓸 값을 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2391,8 +2391,8 @@ void SetAppID(LPCTSTR lpcszAppID);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinThread 클래스](../../mfc/reference/cwinthread-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
-[어떻게: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)
+[방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)

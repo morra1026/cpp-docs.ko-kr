@@ -50,16 +50,16 @@ helpviewer_keywords:
 - CWinThread [MFC], m_pActiveWnd
 - CWinThread [MFC], m_pMainWnd
 ms.assetid: 10cdc294-4057-4e76-ac7c-a8967a89af0b
-ms.openlocfilehash: 9c2b393354f65195e0d0060a08b83e321e3d5b1d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 0e02f123580696519e59d828ec590456cbd2a81c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178423"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270134"
 ---
 # <a name="cwinthread-class"></a>CWinThread 클래스
 
-응용 프로그램 내의 실행 스레드를 나타냅니다.
+애플리케이션 내의 실행 스레드를 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -91,7 +91,7 @@ class CWinThread : public CCmdTarget
 |[CWinThread::ProcessMessageFilter](#processmessagefilter)|응용 프로그램에 도달 하기 전에 특정 메시지를 차단 합니다.|
 |[CWinThread::ProcessWndProcException](#processwndprocexception)|처리 되지 않은 모든 스레드의 메시지 및 명령 처리기에서 throw 된 예외를 가로챕니다.|
 |[CWinThread::PumpMessage](#pumpmessage)|스레드의 메시지 루프를 포함합니다.|
-|[Cwinthread:: Resumethread](#resumethread)|스레드의 감소 개수를 일시 중단합니다.|
+|[CWinThread::ResumeThread](#resumethread)|스레드의 감소 개수를 일시 중단합니다.|
 |[CWinThread::Run](#run)|메시지 펌프를 사용 하 여 스레드에 대 한 함수를 제어 합니다. 기본 메시지 루프를 사용자 지정을 재정의 합니다.|
 |[CWinThread::SetThreadPriority](#setthreadpriority)|현재 스레드의 우선 순위를 설정 합니다.|
 |[CWinThread::SuspendThread](#suspendthread)|스레드 a 증가 수 일시 중단합니다.|
@@ -398,7 +398,7 @@ virtual BOOL OnIdle(LONG lCount);
 
 응용 프로그램까지 메시지를 처리할 수 없습니다 때문에 `OnIdle` 이 함수에서 반환 되는 경우 시간이 오래 걸리는 작업을 수행 하지 않습니다.
 
-##  <a name="operator_handle"></a>  CWinThread::operator 핸들
+##  <a name="operator_handle"></a>  CWinThread::operator HANDLE
 
 핸들을 검색 합니다 `CWinThread` 개체입니다.
 
@@ -547,7 +547,7 @@ virtual BOOL PumpMessage();
 
 호출 `PumpMessage` 직접 고급 사용자 에게만 해당 기본 동작 재정의 것이 좋습니다.
 
-##  <a name="resumethread"></a>  Cwinthread:: Resumethread
+##  <a name="resumethread"></a>  CWinThread::ResumeThread
 
 호출 하 여 일시 중지 된 스레드의 실행을 다시 시작 합니다 [있는 경우 SuspendThread](#suspendthread) 멤버 함수 또는 CREATE_SUSPENDED 플래그를 사용 하 여 만든 스레드입니다.
 
@@ -636,7 +636,7 @@ DWORD SuspendThread();
 
 모든 스레드를 일시 중단 횟수가 0 이상에 있는 경우 해당 스레드는 실행 되지 않습니다. 스레드를 호출 하 여 다시 시작할 수 있습니다 합니다 [ResumeThread](#resumethread) 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - servers, server documents
 - server documents [MFC], implementing
 ms.assetid: cca1451a-ad09-47ed-b56e-bccd78fc86d1
-ms.openlocfilehash: 17c90eb6350a2bf3cd5b695a99dea954dd89a033
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 17ced1cdb0b40b13fbda68150030efde5735ba7b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436493"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261871"
 ---
 # <a name="servers-implementing-server-documents"></a>서버: 서버 문서 구현
 
@@ -34,10 +34,9 @@ ms.locfileid: "50436493"
 
 자세한 내용은 참조 하세요. [COleServerItem](../mfc/reference/coleserveritem-class.md) 하 고 [COleServerDoc](../mfc/reference/coleserverdoc-class.md) 에 *클래스 라이브러리 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [서버](../mfc/servers.md)<br/>
 [서버: 서버 항목](../mfc/servers-server-items.md)<br/>
 [서버: 서버 구현](../mfc/servers-implementing-a-server.md)<br/>
-[서버: 내부 프레임 창 구현](../mfc/servers-implementing-in-place-frame-windows.md)
-
+[서버: 내부 프레임 Windows 구현](../mfc/servers-implementing-in-place-frame-windows.md)

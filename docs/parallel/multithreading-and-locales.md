@@ -7,12 +7,12 @@ helpviewer_keywords:
 - threading [C++], locales
 - per-thread locale
 ms.assetid: d6fb159a-eaca-4130-a51a-f95d62f71485
-ms.openlocfilehash: dc3f43f67bbc744d550e2770096f0b6ae985175a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c12a3fa1922db7a1ec0a7bcd43ddf09000d97961
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561605"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293604"
 ---
 # <a name="multithreading-and-locales"></a>다중 스레딩 및 로캘
 
@@ -435,14 +435,14 @@ unsigned __stdcall RunThreadB(void *params)
 [Thread main] locale::global is set to "French_France.1252"
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[이전 코드를 위한 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
+[레거시 코드에서의 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)<br/>
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)<br/>
 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)<br/>
 [setlocale](../preprocessor/setlocale.md)<br/>
 [국제화](../c-runtime-library/internationalization.md)<br/>
 [로캘](../c-runtime-library/locale.md)<br/>
-[\<clocale >](../standard-library/clocale.md)<br/>
+[\<clocale>](../standard-library/clocale.md)<br/>
 [\<locale>](../standard-library/locale.md)<br/>
 [locale 클래스](../standard-library/locale-class.md)

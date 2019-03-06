@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -Qimprecise_fwaits compiler option (C++)
 - /Qimprecise_fwaits compiler option (C++)
 ms.assetid: b1501f21-7e08-4fea-95e8-176ec03a635b
-ms.openlocfilehash: eb01d39ccbbdac60d629f95b9eb821ca0f2f5731
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3f2a0e6bc28fb812e087a689716be6119640ffca
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662399"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422141"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits(Try 블록 내의 fwait 제거)
 
@@ -42,7 +42,7 @@ ms.locfileid: "50662399"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

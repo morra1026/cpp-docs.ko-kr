@@ -8,12 +8,12 @@ helpviewer_keywords:
 - windows [C++], ATL
 - ATL, message handlers
 ms.assetid: cdea38a1-0d9b-4f8d-bbd5-b4f063fb3eeb
-ms.openlocfilehash: 6d812c70e7cec4739ee9477d30ad9744b4fddc50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cc7631ac9e02891cee725b47133a273e756759d6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565501"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302457"
 ---
 # <a name="adding-an-atl-message-handler"></a>ATL 메시지 처리기 추가
 
@@ -27,7 +27,6 @@ ATL 메시지 처리기 추가에 다음 조건이 적용 됩니다.
 
 - 새 메시지 맵 항목은 기본 메시지 맵에 추가 됩니다. 대체 메시지 맵 및 연결에 마법사를 인식 하지 못합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 구현](../atl/implementing-a-window.md)
-

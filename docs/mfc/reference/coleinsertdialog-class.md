@@ -24,12 +24,12 @@ helpviewer_keywords:
 - COleInsertDialog [MFC], GetSelectionType
 - COleInsertDialog [MFC], m_io
 ms.assetid: a9ec610b-abde-431e-bd01-c40159a66dbb
-ms.openlocfilehash: c99344c71d3f9789905516d661749b3668b57d50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 750243ddf6494ecc4a6a28c0cb47b05ca7089c33
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546308"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260688"
 ---
 # <a name="coleinsertdialog-class"></a>COleInsertDialog 클래스
 
@@ -78,7 +78,7 @@ class COleInsertDialog : public COleDialog
 
 OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -302,7 +302,7 @@ OLEUIINSERTOBJECT m_io;
 
 자세한 내용은 참조는 [OLEUIINSERTOBJECT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiinsertobjecta) Windows SDK에는 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDialog 클래스](../../mfc/reference/coledialog-class.md)<br/>

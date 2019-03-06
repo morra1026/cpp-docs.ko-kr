@@ -12,16 +12,16 @@ helpviewer_keywords:
 - COleIPFrameWnd [MFC], OnCreateControlBars
 - COleIPFrameWnd [MFC], RepositionFrame
 ms.assetid: 24abb2cb-826c-4dda-a287-d8a8900a5763
-ms.openlocfilehash: 78b846a6b17fb18f533139e9ac6444babd4baac5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 307bf991853264fcf03dfc5b22eed8e91a3e7aa8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498847"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301404"
 ---
 # <a name="coleipframewnd-class"></a>COleIPFrameWnd 클래스
 
-응용 프로그램의 내부 편집 창의 기준입니다.
+애플리케이션의 내부 편집 창의 기준입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -130,9 +130,9 @@ virtual void RepositionFrame(
 
 컨테이너 창에서 컨트롤 막대의 레이아웃에서 다른 비 OLE 프레임 창에서 수행 합니다. 비 OLE 프레임 창은 컨트롤 막대 및 기타 개체에 대 한 호출에서와 같이 지정 된 프레임 창 크기를에서 위치를 계산 [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout)합니다. 클라이언트 영역에서 컨트롤 막대 및 기타 개체에 대 한 공간을 뺀 후 남은입니다. `COleIPFrameWnd` 창 반면에 지정 된 클라이언트 영역에 따라 도구 모음을 배치 합니다. 다시 말해 `CFrameWnd::RecalcLayout` 반면, 외부"에서" 작동 `COleIPFrameWnd::RepositionFrame` 작동 "안팎을 합니다."
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [CFrameWnd 클래스](../../mfc/reference/cframewnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CFrameWnd 클래스](../../mfc/reference/cframewnd-class.md)

@@ -1,18 +1,18 @@
 ---
-title: '방법: 다양한 공급자/소비자 패턴 구현'
+title: '방법: 다양 한 생산자-소비자 패턴 구현'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - producer-consumer patterns, implementing [Concurrency Runtime]
 - implementing producer-consumer patterns [Concurrency Runtime]
 ms.assetid: 75f2c7cc-5399-49ea-98eb-847fe6747169
-ms.openlocfilehash: 1c543e2c80ff9edea417fe8c1254bf9aa5aa37fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 113518e97b6715384b5e7b84b0d0eab63dfcfcc7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658291"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296282"
 ---
-# <a name="how-to-implement-various-producer-consumer-patterns"></a>방법: 다양한 공급자/소비자 패턴 구현
+# <a name="how-to-implement-various-producer-consumer-patterns"></a>방법: 다양 한 생산자-소비자 패턴 구현
 
 이 항목에서는 응용 프로그램에서 생산자-소비자 패턴을 구현 하는 방법을 설명 합니다. 이 패턴에서 *생산자*는 메시지 블록에 메시지를 보내고 *소비자*는 해당 블록에서 메시지를 읽습니다.
 
@@ -60,11 +60,11 @@ Current quote is 25.89.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `producer-consumer.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `producer-consumer.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc 생산자 consumer.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)<br/>

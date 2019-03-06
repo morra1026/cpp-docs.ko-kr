@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CPropertySheet class [MFC], property sheets and pages
 - property sheets, propert pages
 ms.assetid: de8fea12-6c35-4cef-8625-b8073a379446
-ms.openlocfilehash: 971b8cde1560e54f87269e8b85a41cdec55c091d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ff2851cc4ed04a64f1a49d68b6e3143b5edccd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445398"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278766"
 ---
 # <a name="property-sheets-and-property-pages-mfc"></a>속성 시트 및 속성 페이지(MFC)
 
@@ -25,7 +25,7 @@ MFC 버전 4.0부터 속성 시트 및 속성 페이지 구현 됩니다 Windows
 
 만들기 및 속성 시트를 사용 하 여 작업에 대 한 내용은 항목을 참조 하세요 [속성 시트](../mfc/property-sheets-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)<br/>
@@ -33,4 +33,3 @@ MFC 버전 4.0부터 속성 시트 및 속성 페이지 구현 됩니다 Windows
 [데이터 교환](../mfc/exchanging-data.md)<br/>
 [모덜리스 속성 시트 만들기](../mfc/creating-a-modeless-property-sheet.md)<br/>
 [적용 단추 처리](../mfc/handling-the-apply-button.md)
-

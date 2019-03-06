@@ -130,12 +130,12 @@ helpviewer_keywords:
 - CMFCRibbonCategory [MFC], SetName
 - CMFCRibbonCategory [MFC], SetTabColor
 ms.assetid: 99ba25b6-d060-4fdd-bfab-3c46c22981bb
-ms.openlocfilehash: 96a3351656807fa841661ec9f082bb4255d5136a
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 14ce057c141f22c14361bafd55fce3ccd345d4dd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176616"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279473"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonCategory 클래스
 
@@ -219,7 +219,7 @@ class CMFCRibbonCategory : public CObject
 |[CMFCRibbonCategory::SetData](#setdata)|리본 범주에 정의 된 사용자 데이터를 저장합니다.|
 |[CMFCRibbonCategory::SetKeys](#setkeys)|리본 범주에는 keytip을 할당합니다.|
 |[CMFCRibbonCategory::SetName](#setname)||
-|[Cmfcribboncategory:: Settabcolor](#settabcolor)|리본 범주의 색을 설정합니다.|
+|[CMFCRibbonCategory::SetTabColor](#settabcolor)|리본 범주의 색을 설정합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -246,7 +246,7 @@ CMFCRibbonPanel* pPanel = pCategory->AddPanel (
 
 ![RibbonApp 샘플 응용 프로그램의 홈 범주](../../mfc/reference/media/cmfcribboncategory.png "RibbonApp 샘플 응용 프로그램의 홈 범주")
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1161,7 +1161,7 @@ virtual BOOL OnKey(UINT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 사용자가 누른 키에 대 한 가상 키 코드입니다.
 
 ### <a name="remarks"></a>설명
@@ -1310,7 +1310,7 @@ BOOL RemovePanel(
 *nIndex*<br/>
 [in] 제거할 패널의 인덱스 번호입니다. 호출 하 여 가져올는 [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) 메서드.
 
-*b 삭제*<br/>
+*bDelete*<br/>
 [in] 메모리에서 패널 개체를 삭제 하려면 TRUE 삭제 하지 않고 패널 개체를 제거 하려면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1351,7 +1351,7 @@ void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 
 범주는 리본 패널을 축소 하려면 있다는 것을 감지 하면 지정된 된 목록에서 다음 요소를 찾습니다. 목록이 비어 또는 충분 한 요소를 지정 하지 않은 경우 범주 내부 알고리즘을 사용 합니다.
 
-예를 들어 범주 리본 패널 세 개 있으며 모든 패널 완전히 축소 된 상태로 될 때까지 여러 번 축소할 수 있습니다. 다음 축소 순서를 설정할 수 있습니다: 0, 0, 2, 2입니다. 이 경우 범주 패널 0을 두 번 축소 됩니다, 그리고 패널 2 2 배입니다. Uncollapsed 패널 1의 인덱스가 있는 상태로 유지 됩니다.
+예를 들어 범주 리본 패널 세 개 있으며 모든 패널 완전히 축소 된 상태로 될 때까지 여러 번 축소할 수 있습니다. 다음 축소 순서를 설정할 수 있습니다. 0, 0, 2, 2. 이 경우 범주 패널 0을 두 번 축소 됩니다, 그리고 패널 2 2 배입니다. Uncollapsed 패널 1의 인덱스가 있는 상태로 유지 됩니다.
 
 ### <a name="example"></a>예제
 
@@ -1406,7 +1406,7 @@ void SetName(LPCTSTR lpszName);
 
 리본 범주에 대 한 keytip을 설정 하려면 추가 keytip 문자를 뒤에 줄 바꿈 이스케이프 시퀀스 *lpszName*합니다.
 
-##  <a name="settabcolor"></a>  Cmfcribboncategory:: Settabcolor
+##  <a name="settabcolor"></a>  CMFCRibbonCategory::SetTabColor
 
 리본 범주의 색을 설정합니다.
 
@@ -1439,7 +1439,7 @@ void SetTabColor(AFX_RibbonCategoryColor color);
 
 - AFX_CategoryColor_Violet
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

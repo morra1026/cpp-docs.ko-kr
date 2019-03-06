@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DHTML controls
 - DHTML controls, modifying
 ms.assetid: c053f35f-8629-4600-9595-721f5956777a
-ms.openlocfilehash: 2a16ad50911185c27906eee27902cee9971932c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c8976c013d0114a3115d3b0bc38fa4bc6acb5b7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50493680"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275690"
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML 컨트롤 수정
 
@@ -71,6 +71,6 @@ ATL 컨트롤 마법사 빌드를 해당 컨트롤의 실행 및 메서드를 �
 
 이제 빌드할 수 있습니다 하 고 [수정 된 DHTML 컨트롤 테스트](../atl/testing-the-modified-atl-dhtml-control.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DHTML 컨트롤에 대 한 지원](../atl/atl-support-for-dhtml-controls.md)

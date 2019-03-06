@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CCustomInterpolator [MFC], m_initialValue
 - CCustomInterpolator [MFC], m_initialVelocity
 ms.assetid: 28d85595-989a-40a3-b003-e0e38437a94d
-ms.openlocfilehash: 49685d079e367449ee5973ab37f0bbc7ea44da14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d3f2ed95cfb9e7e885713252171c98834ae5c0a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431907"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303094"
 ---
 # <a name="ccustominterpolator-class"></a>CCustomInterpolator 클래스
 
@@ -89,7 +89,7 @@ class CCustomInterpolator;
 
 CCustomInterpolator에서 클래스를 파생 하 고 보간 사용자 지정 알고리즘을 구현 하기 위해 필요한 모든 메서드를 재정의 합니다. 이 클래스에 대 한 포인터 CCustomTransition를 매개 변수로 전달 되어야 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CCustomInterpolator`
 
@@ -173,7 +173,7 @@ virtual BOOL GetFinalValue(DOUBLE* value);
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 출력입니다. 전환의 끝에 변수의 최종 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -210,7 +210,7 @@ virtual BOOL InterpolateValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 출력입니다. 보간된 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -229,7 +229,7 @@ virtual BOOL InterpolateVelocity(
 
 ### <a name="parameters"></a>매개 변수
 
-*개발 속도*<br/>
+*velocity*<br/>
 출력입니다. 속도 변수의 오프셋입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -313,7 +313,7 @@ virtual BOOL SetInitialValueAndVelocity(
 
 ### <a name="parameters"></a>매개 변수
 
-*초기 값*<br/>
+*initialValue*<br/>
 전환의 시작 부분에 있는 변수의 값입니다.
 
 *initialVelocity*<br/>
@@ -323,6 +323,6 @@ virtual BOOL SetInitialValueAndVelocity(
 
 기본 구현에서는 항상 TRUE를 반환합니다. FALSE 반환 재정의 된 구현에서 이벤트를 실패 하도록 하려는 경우.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -3,12 +3,12 @@ title: enum 클래스 (C + + /cli 및 C + + /cli CX)
 ms.date: 10/12/2018
 ms.topic: reference
 ms.assetid: 8010fa8c-bad6-45b4-8214-b4db64d7ffe1
-ms.openlocfilehash: 5bc850831e961a500ae71ce90e3ca39b3aabd159
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aee3d4f44c18074ca536ff028565bbbd0e37d04c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50592519"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417426"
 ---
 # <a name="enum-class--ccli-and-ccx"></a>enum 클래스 (C + + /cli 및 C + + /cli CX)
 
@@ -55,7 +55,7 @@ accessenum structenumeration-identifier[:underlying-type] { enumerator-list } [v
 
 ### <a name="remarks"></a>설명
 
-자세한 내용과 예제는 [열거형](https://msdn.microsoft.com/%20library/windows/apps/hh755820.aspx)을 참조하세요.
+자세한 내용과 예제는 [열거형](../cppcx/enums-c-cx.md)을 참조하세요.
 
 컴파일러는 열거자의 값을 정의하는 상수 식을 *underlying-type*으로 표현할 수 없는 경우 오류 메시지를 내보냅니다.  그러나 컴파일러는 내부 형식에 적합하지 않은 값에 대해 오류를 보고하지 않습니다. 예를 들어:
 

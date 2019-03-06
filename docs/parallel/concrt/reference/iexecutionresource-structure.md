@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - IExecutionResource structure
 ms.assetid: 6b27042b-b98c-4f7f-b831-566950af84cd
-ms.openlocfilehash: 56042c799f22b0e35bbd0d03d96d649e508f6e51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f8f5c5629e9794ca8ee2cc6bedbc4ba6bfdb24d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578947"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264939"
 ---
 # <a name="iexecutionresource-structure"></a>IExecutionResource 구조체
 
@@ -43,7 +43,7 @@ struct IExecutionResource;
 
 실행 리소스 취득 가능 하거나 가상 프로세서 루트를 사용 하 여 연결 합니다. 독립 실행형 실행 리소스를 응용 프로그램의 스레드는 스레드 구독을 만들 때 생성 됩니다. 메서드 [ISchedulerProxy::SubscribeThread](ischedulerproxy-structure.md#subscribecurrentthread) 하 고 [ischedulerproxy:: Requestinitialvirtualprocessors](ischedulerproxy-structure.md#requestinitialvirtualprocessors) 스레드 구독을 만들고 반환을 `IExecutionResource` 인터페이스를 나타내는 구독입니다. 스레드 구독을 만드는 Resource Manager 스케줄러에 할당 된 가상 프로세서 루트와 함께 스케줄러에 큐에 대기 작업에 지정 된 스레드가 참가할 리소스 관리자를 알리는 방법입니다. 리소스 관리자를 사용 하드웨어 스레드의 초과 구독 하지 않으려면 수 있는 정보입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IExecutionResource`
 
@@ -134,7 +134,7 @@ virtual void Remove(_Inout_ IScheduler* pScheduler) = 0;
 
 `invalid_operation` 경우 발생 하는 매개 변수 `pScheduler` 현재 스레드의 스레드 구독을 만든 스레드가 아닌 다른 경우에이 실행 리소스가 만들어졌는지, 또는 독립 실행형 실행 리소스를 사용 하 여 스케줄러 다릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [IVirtualProcessorRoot 구조체](ivirtualprocessorroot-structure.md)

@@ -1,5 +1,5 @@
 ---
-title: 'TN035: Visual C++에서 여러 개의 리소스 파일 및 헤더 파일 사용'
+title: 'TN035: Visual c + +에서 여러 리소스 파일과 헤더 파일 사용'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.resources
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - resource files, multiple
 - TN035
 ms.assetid: 1f08ce5e-a912-44cc-ac56-7dd93ad73fb6
-ms.openlocfilehash: 6f89e10c2a05d1352dc2347af0aa0215079ea56c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d97e4536c2a43e7e224e9056aa39df5480daeca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567663"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279922"
 ---
-# <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual C++에서 여러 개의 리소스 파일 및 헤더 파일 사용
+# <a name="tn035-using-multiple-resource-files-and-header-files-with-visual-c"></a>TN035: Visual c + +에서 여러 리소스 파일과 헤더 파일 사용
 
 > [!NOTE]
 >  다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
@@ -111,7 +111,7 @@ AFXRES.H는 프레임워크와 특히 AFXRES.RC에서 사용되는 `ID_FILE_NEW`
 
 ## <a name="_mfcnotes_tn035_including"></a> 추가 헤더 파일 포함
 
-응용 프로그램 마법사에서 생성된 응용 프로그램에는 RESOURCE.H와 AFXRES.H라는 두 개 헤더 파일만 포함됩니다. RESOURCE.H는 응용 프로그램마다 다릅니다. 다음의 경우에는 추가 읽기 전용 헤더 파일만 포함하면 됩니다.
+응용 프로그램 마법사가 만든 응용 프로그램에는 두 개의 헤더 파일이 포함 됩니다. 리소스입니다. H와 AFXRES 합니다. 8. RESOURCE.H는 응용 프로그램마다 다릅니다. 다음의 경우에는 추가 읽기 전용 헤더 파일만 포함하면 됩니다.
 
 헤더 파일은 외부 소스에 의해 제공되거나, 여러 프로젝트 또는 동일 프로젝트의 여러 부분 간에 헤더 파일을 공유할 수 있습니다.
 
@@ -179,7 +179,7 @@ Visual C++ 및 리소스 컴파일러는 한 .RC 파일 안에 들어 있는 다
 
 - 사용자 정의 리소스를 다른 전문 데이터 편집기를 통해 해석할 수 있는 이진 또는 텍스트 형태로 유지해야 하는 경우 Visual C++에서 형식을 16진 데이터로 변경하지 않도록 이러한 리소스를 별도의 .RC 파일에 보관해야 합니다. 합니다. MFC 고급 개념 샘플 WAV (소리) 파일 리소스가 [SPEAKN](../visual-cpp-samples.md) 는 좋은 예입니다.
 
-Set Includes 대화 상자에서 컴파일 시간 지시문에 SECOND.RC를 #include로 지정할 수 있습니다.
+Set Includes 대화 상자에서 컴파일 타임 지시문에 SECOND.RC를 #include로 지정할 수 있습니다.
 
 ```
 #include "res\myapp.rc2"  // non-Visual C++ edited resources
@@ -300,7 +300,7 @@ Visual C++에서는 파일을 저장할 때 항상 //{{NO_DEPENDENCIES}} 주석 
 
 다음은 Visual C++에서 이러한 정보가 .RC 파일에서 어떻게 관리되는지 설명합니다. Visual C++를 사용하는 데는 이 정보가 필요하지 않지만, 이 정보에 대해 제대로 알고 있으면 Set Includes 기능을 좀더 자신 있게 사용할 수 있습니다.
 
-위의 각각의 세 가지 Set Includes 정보 유형은 .RC 파일에서 두 가지 형태, 즉 (1) #include 또는 리소스 컴파일러에 의해 해석될 수 있는 기타 지시문과, (2) Visual C++에 의해서만 해석될 수 있는 특수 TEXTINCLUDE 리소스로 저장됩니다.
+에 저장 된 각 위의 세 가지 Set Includes 정보 유형의 합니다. 두 가지 형태로 RC 파일: (1) #include 또는 다른 지시문 해석할 수 있는 리소스 컴파일러에 의해 및 (2) 특수 TEXTINCLUDE 리소스로 해석할 수 있는 Visual c + +에 의해서만 합니다.
 
 TEXTINCLUDE 리소스의 목적은 Visual c + +의 쉽게 표시할 수 있는 형태로 Set Include 정보를 안전 하 게 저장 하는 것 **Set Includes** 대화 상자. TEXTINCLUDE는 한 *리소스 종류* Visual c + +에서 정의 합니다. Visual C++에서는 리소스 ID 1, 2 및 3이 지정된 세 가지 특정 TEXTINCLUDE 리소스를 인식합니다.
 
@@ -308,7 +308,7 @@ TEXTINCLUDE 리소스의 목적은 Visual c + +의 쉽게 표시할 수 있는 �
 |-----------------------------|--------------------------------------|
 |1|기호 헤더 파일|
 |2|읽기 전용 기호 지시문|
-|3|컴파일 시간 지시문|
+|3|컴파일 타임 지시문|
 
 아래 설명된 바와 같이 각각의 세 가지 Set Includes 정보 유형이 응용 프로그램 마법사가 만든 기본 MYAPP.RC와 RESOURCE.H 파일을 통해 설명됩니다. BEGIN과 END 블록 사이에 있는 추가 \0과 "" 토큰은 RC 구문에서 각각의 0 종단 문자열과 큰따옴표 문자를 지정하는 데 필요합니다.
 
@@ -347,7 +347,7 @@ BEGIN
 END
 ```
 
-## <a name="compile-time-directives"></a>컴파일 시간 지시문
+## <a name="compile-time-directives"></a>컴파일 타임 지시문
 
 컴파일 타임 지시문은 리소스 컴파일러에 의해 해석할 수 있는 다음 형태로 MYAPP.RC 끝에 포함됩니다.
 
@@ -379,8 +379,7 @@ BEGIN
 END
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

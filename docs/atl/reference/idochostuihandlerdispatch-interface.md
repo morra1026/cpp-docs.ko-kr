@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDocHostUIHandlerDispatch interface
 ms.assetid: 6963a301-601a-4ac3-8bef-f7b252ea2fc6
-ms.openlocfilehash: 5bf405f66bdef54f354f9e6c230207d2933ee352
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ce3532e99dc1d0ff0151285766aa5d78c2b9e9d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483634"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421884"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>IDocHostUIHandlerDispatch 인터페이스
 
@@ -36,21 +36,21 @@ interface IDocHostUIHandlerDispatch : IDispatch
 
 |||
 |-|-|
-|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless)합니다. MSHTML 모달 UI를 표시 하는 경우 라고도 합니다.|
-|[FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)|호스트 MSHTML의 데이터 개체를 바꿀 수 있도록 MSHTML에 의해 호스트에서 호출 됩니다.|
-|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|대안을 제공 하는 호스트 수 있도록 놓기 대상으로 사용 되는 경우 MSHTML 호출한 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget)합니다.|
-|[GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)|호스트의 IDispatch 인터페이스를 가져올 MSHTML에 의해 호출 됩니다.|
-|[GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)|MSHTML 호스트의 UI 기능을 검색합니다.|
-|[GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)|MSHTML는 사용자 기본 설정을 저장 하는 레지스트리 키를 반환 합니다.|
-|[HideUI](https://msdn.microsoft.com/library/aa753259.aspx)|해당 메뉴 및 도구 모음 MSHTML 제거 하는 경우 호출 됩니다.|
-|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate)합니다.|
-|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|MSHTML 구현에서 호출 [ioleinplaceactiveobject:: Onframewindowactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate)합니다.|
-|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)합니다.|
-|[ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)|상황에 맞는 메뉴를 표시할 MSHTML에서 호출 됩니다.|
-|[ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)|호스트를 MSHTML 메뉴 및 도구 모음을 교체할 수 있습니다.|
-|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|MSHTML에 의해 호출 하면 [ioleinplaceactiveobject:: Translateaccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 하거나 [iolecontrolsite:: Translateaccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 라고 합니다.|
-|[TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)|호스트가 로드할 URL을 수정할 수 있도록 MSHTML에 의해 호출 됩니다.|
-|[UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)|명령 상태가 변경되었음을 호스트에 알립니다.|
+|[EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless)합니다. MSHTML 모달 UI를 표시 하는 경우 라고도 합니다.|
+|[FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))|호스트 MSHTML의 데이터 개체를 바꿀 수 있도록 MSHTML에 의해 호스트에서 호출 됩니다.|
+|[GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))|대안을 제공 하는 호스트 수 있도록 놓기 대상으로 사용 되는 경우 MSHTML 호출한 [IDropTarget](/windows/desktop/api/oleidl/nn-oleidl-idroptarget)합니다.|
+|[GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))|호스트의 IDispatch 인터페이스를 가져올 MSHTML에 의해 호출 됩니다.|
+|[GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))|MSHTML 호스트의 UI 기능을 검색합니다.|
+|[GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))|MSHTML는 사용자 기본 설정을 저장 하는 레지스트리 키를 반환 합니다.|
+|[HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))|해당 메뉴 및 도구 모음 MSHTML 제거 하는 경우 호출 됩니다.|
+|[OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate)합니다.|
+|[OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))|MSHTML 구현에서 호출 [ioleinplaceactiveobject:: Onframewindowactivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate)합니다.|
+|[ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\))|MSHTML 구현에서 호출 [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder)합니다.|
+|[ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))|상황에 맞는 메뉴를 표시할 MSHTML에서 호출 됩니다.|
+|[ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))|호스트를 MSHTML 메뉴 및 도구 모음을 교체할 수 있습니다.|
+|[TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))|MSHTML에 의해 호출 하면 [ioleinplaceactiveobject:: Translateaccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) 하거나 [iolecontrolsite:: Translateaccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) 라고 합니다.|
+|[TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))|호스트가 로드할 URL을 수정할 수 있도록 MSHTML에 의해 호출 됩니다.|
+|[UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))|명령 상태가 변경되었음을 호스트에 알립니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -65,7 +65,6 @@ interface IDocHostUIHandlerDispatch : IDispatch
 |IDL|ATLIFace.idl|
 |C++|ATLIFace.h (ATLBase.h에도 포함)|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx)
-

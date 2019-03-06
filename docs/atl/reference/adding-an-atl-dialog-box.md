@@ -6,16 +6,16 @@ helpviewer_keywords:
 - MFC dialog boxes, ATL dialogs
 - dialog boxes, ATL
 ms.assetid: 152a378f-7b24-4f66-aeba-c740973f03a6
-ms.openlocfilehash: ee6f6b1b83c625b30b601275084550309e0e7c68
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ebbb610debe5d480cd1161149f89c4d357f9cd02
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495370"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275803"
 ---
 # <a name="adding-an-atl-dialog-box"></a>ATL 대화 상자를 추가합니다.
 
-ATL 대화 상자에 프로젝트를 추가 하려면 프로젝트에 ATL 프로젝트 또는 ATL 지원을 포함 하는 MFC 프로젝트 중 하나 여야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 응용 프로그램을 만들거나 [MFC 응용 프로그램에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 응용 프로그램용 ATL 지원을 구현할 수 있습니다.
+ATL 대화 상자에 프로젝트를 추가 하려면 프로젝트에 ATL 프로젝트 또는 ATL 지원을 포함 하는 MFC 프로젝트 중 하나 여야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션용 ATL 지원을 구현할 수 있습니다.
 
 기본적으로 ATL 대화 상자 마법사에서 파생 된 대화 상자를 구현 [CAxDialogImpl](../../atl/reference/caxdialogimpl-class.md)합니다. 이 클래스에는 Windows 및 ActiveX 컨트롤을 호스팅하기 위한 지원이 포함 됩니다. ActiveX 컨트롤 지원이 오버 헤드는 마법사가 코드를 생성 하는 면에 하지 않을 수 있습니다, 경우 바꾸려면 `CAxDialogImpl` 중 하나를 사용 하 여 [CSimpleDialog](../../atl/reference/csimpledialog-class.md) 하거나 [CDialogImpl](../../atl/reference/cdialogimpl-class.md) 기본 클래스로 .
 
@@ -32,7 +32,7 @@ ATL 대화 상자에 프로젝트를 추가 하려면 프로젝트에 ATL 프로
 
 자세한 내용은 [대화 상자 구현](../../atl/implementing-a-dialog-box.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [창 클래스](../../atl/atl-window-classes.md)<br/>

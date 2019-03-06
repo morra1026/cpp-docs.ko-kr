@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CVSListBox [MFC], SetItemData
 - CVSListBox [MFC], GetListHwnd
 ms.assetid: c79be7b4-46ed-4af8-a41e-68962782d8ef
-ms.openlocfilehash: fb12f17aec43653931343e80926d59560d879c3a
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 618f4f386db477dd301ada862ebd2094a6c6651f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176214"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301521"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox 클래스
 
@@ -69,7 +69,7 @@ class CVSListBox : public CVSListBoxBase
 |[CVSListBox::SelectItem](#selectitem)|편집할 수 있는 목록 제어 문자열을 선택합니다. ( `CVSListBoxBase::SelectItem`을 재정의합니다.)|
 |[CVSListBox::SetItemData](#setitemdata)|응용 프로그램별 32 비트 값을 편집할 수 있는 목록 컨트롤 항목을 사용 하 여 연결합니다. ( `CVSListBoxBase::SetItemData`을 재정의합니다.)|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -89,7 +89,7 @@ class CVSListBox : public CVSListBoxBase
 
 자세한 내용은 참조는 샘플 디렉터리는 `New Controls` Page3.cpp 파일과 Page3.h 샘플입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -316,7 +316,7 @@ virtual void SetItemData(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

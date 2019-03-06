@@ -8,12 +8,12 @@ helpviewer_keywords:
 - initializing objects [MFC], document objects
 - initializing views [MFC]
 ms.assetid: 33cb8643-8a16-478c-bc26-eccc734e3661
-ms.openlocfilehash: 2fb557d55576678d8c1199bec20e1fa4c849e1b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0cf9faecbb7e0d74c2199a1a829aa68241e1c019
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612253"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264094"
 ---
 # <a name="initializing-documents-and-views"></a>문서 및 뷰 초기화
 
@@ -21,7 +21,6 @@ ms.locfileid: "50612253"
 
 뷰는 해당 문서를 만든 후에 생성 됩니다. 뷰를 초기화 하려면 가장 좋은 시간은 프레임 워크에서 문서, 프레임 창 및 뷰 만들기를 완료 한 후입니다. 재정의 하 여 보기를 초기화할 수 있습니다 합니다 [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) 멤버 함수 [CView](../mfc/reference/cview-class.md)합니다. 문서 변경 될 때마다 다시 초기화 하거나 아무 것도 조정 해야 할 경우, 재정의할 수 있습니다 [OnUpdate](../mfc/reference/cview-class.md#onupdate)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 및 뷰 초기화 및 정리](../mfc/initializing-and-cleaning-up-documents-and-views.md)
-

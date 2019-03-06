@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnum class
 ms.assetid: bff7dd7b-eb6e-4d6e-96ed-2706e66c8b3b
-ms.openlocfilehash: 8e0bf49b48c2c0f1a202231e67364637375f9342
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d83b06f37c132c0d2325304e2cc155ccb490690
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623537"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290367"
 ---
 # <a name="ccomenum-class"></a>CComEnum 클래스
 
@@ -31,7 +31,7 @@ public CComObjectRootEx<ThreadModel>
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
 *piid*<br/>
@@ -62,7 +62,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 
 - 클라이언트의 열거자 인터페이스를 반환 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -90,7 +90,7 @@ COM 열거자 인터페이스입니다. 참조 [IEnumString](/windows/desktop/ap
 
 이 코드를 만듭니다는 **typedef** 에 대 한 `CComEnum` 변형을 통해의 벡터를 노출 하는 `IEnumVariant` 인터페이스입니다. 합니다 `CVariantArrayCollection` 클래스를 전문적으로 간단히 `CreateEnumerator` 열거자 개체 유형 및 필요한 인수를 전달이 작동 하려면.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>

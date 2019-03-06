@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /ALLOWISOLATION editbin option
 - ALLOWISOLATION editbin option
 ms.assetid: 91430344-f64f-491a-a5a5-7ea3b21cbe68
-ms.openlocfilehash: ab07e3ac3f8c154ffa62a25ab8bad967b255e2e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac9d1f067259b092a261702b51f2355d4f908469
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604974"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417439"
 ---
 # <a name="allowisolation"></a>/ALLOWISOLATION
 
@@ -36,7 +36,7 @@ ms.locfileid: "50604974"
 
 실행 파일에 대해 격리가 비활성화되었으면 Windows 로더가 새로 생성되는 프로세스에 대해 응용 프로그램 매니페스트를 찾으려고 시도하지 않습니다. 실행 파일 자체에 매니페스트가 없거나 이름을 가진 경우 매니페스트가 있더라도 새 프로세스에는 기본 활성화 컨텍스트가 없는 *실행 파일 이름*. exe.manifest 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EDITBIN 옵션](../../build/reference/editbin-options.md)<br/>
 [/ALLOWISOLATION(매니페스트 조회)](../../build/reference/allowisolation-manifest-lookup.md)<br/>

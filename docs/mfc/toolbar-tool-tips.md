@@ -13,12 +13,12 @@ helpviewer_keywords:
 - status bars [MFC], tool tips
 - flyby status bar updates
 ms.assetid: d1696305-b604-4fad-9f09-638878371412
-ms.openlocfilehash: b7dbae03b23c26c96aa0db740b749ba728a353d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4582b03844e1be3d4cf70bcc3fff1c3b66119ae3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475610"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258361"
 ---
 # <a name="toolbar-tool-tips"></a>도구 모음 도구 설명
 
@@ -57,7 +57,7 @@ ms.locfileid: "50475610"
 
 도구 설명에 관련 된 기능은 "flyby" 상태 표시줄 업데이트 합니다. 기본적으로 상태 표시줄에 메시지가 단추가 활성화 되 면 특정 도구 모음 단추를 설명 합니다. 에 전달 하는 스타일 목록에서 CBRS_FLYBY를 포함 하 여 `CToolBar::Create`, 실제로 단추를 활성화 하지 않고 도구 모음 위로 마우스 커서를 이동할 때 업데이트 하는 이러한 메시지를 사용할 수 있습니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [MFC 도구 모음 구현 (도구 모음에 대 한 개요 정보)](../mfc/mfc-toolbar-implementation.md)
 
@@ -69,7 +69,6 @@ ms.locfileid: "50475610"
 
 - [이전 도구 모음 사용](../mfc/using-your-old-toolbars.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 도구 모음 구현](../mfc/mfc-toolbar-implementation.md)
-

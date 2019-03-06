@@ -1,5 +1,5 @@
 ---
-title: 'TN017: 창 개체 제거'
+title: 'TN017: 창 개체 소멸시키기'
 ms.date: 11/04/2016
 f1_keywords:
 - vc.objects
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - TN017
 - PostNcDestroy method [MFC]
 ms.assetid: 5bf208a5-5683-439b-92a1-547c5ded26cd
-ms.openlocfilehash: 06553677e67a4314116077e7942381bd847c64d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9e52112bed0f583a3f5652f9213bd5049d543a80
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502234"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294112"
 ---
-# <a name="tn017-destroying-window-objects"></a>TN017: 창 개체 제거
+# <a name="tn017-destroying-window-objects"></a>TN017: 창 개체 소멸시키기
 
 이 참고의 사용 방법을 설명 합니다 [CWnd::PostNcDestroy](../mfc/reference/cwnd-class.md#postncdestroy) 메서드. 사용자 지정 된 할당을 수행 하려는 경우이 메서드를 사용 하 여 `CWnd`-파생 개체입니다. 이 여기서도 사용 하는 이유에 설명 [CWnd::DestroyWindow](../mfc/reference/cwnd-class.md#destroywindow) 대신 c + + Windows 개체를 제거 하는 **삭제** 연산자입니다.
 
@@ -93,8 +93,7 @@ Warning: calling DestroyWindow in CWnd::~CWnd
 
 호출한 후 `DestroyWindow` 는 자동 정리 되지 않은 개체에 대해 c + + 개체 수, 하지만 *m_hWnd* NULL이 됩니다. 호출한 후 `DestroyWindow` 자동 정리 개체에서 c + + 개체 됩니다 사라지고의 자동 정리 구현에서 c + + delete 연산자가 해제 `PostNcDestroy`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

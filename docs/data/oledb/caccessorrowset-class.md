@@ -30,12 +30,12 @@ helpviewer_keywords:
 - FreeRecordMemory method
 - GetColumnInfo method
 ms.assetid: bd4f58ed-cebf-4d43-8985-1e5fcbf06953
-ms.openlocfilehash: 6f870cf6c079786c49846bcf7c3010998ccdbe00
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: dd7156575f551af1643dd3d1f8238ee1e3fe86f4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556491"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420156"
 ---
 # <a name="caccessorrowset-class"></a>CAccessorRowset 클래스
 
@@ -71,13 +71,13 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 |[CAccessorRowset](#caccessorrowset)|생성자입니다.|
 |[닫기](#close)|행 집합 및 모든 접근자를 닫습니다.|
 |[FreeRecordMemory](#freerecordmemory)|해제 해야 하는 현재 레코드의 모든 열을 해제 합니다.|
-|[GetColumnInfo](#getcolumninfo)|구현 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85))합니다.|
+|[GetColumnInfo](#getcolumninfo)|구현 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\))합니다.|
 
 ## <a name="remarks"></a>설명
 
 클래스 `TAccessor` 접근자를 관리 합니다. 클래스 *TRowset* 행 집합을 관리 합니다.
 
-## <a name="bind"></a> Caccessorrowset:: Bind
+## <a name="bind"></a> CAccessorRowset::Bind
 
 지정한 경우 바인딩을 만듭니다 `bBind` 으로 **false** 에서 [ccommand:: Open](../../data/oledb/ccommand-open.md)합니다.
 
@@ -91,7 +91,7 @@ HRESULT Bind();
 
 표준 HRESULT입니다.
 
-## <a name="caccessorrowset"></a> Caccessorrowset:: Caccessorrowset
+## <a name="caccessorrowset"></a> CAccessorRowset::CAccessorRowset
 
 초기화는 `CAccessorRowset` 개체입니다.
 
@@ -101,7 +101,7 @@ HRESULT Bind();
 CAccessorRowset();
 ```
 
-## <a name="close"></a> Caccessorrowset:: Close
+## <a name="close"></a> CAccessorRowset::Close
 
 모든 활성 접근자 및 행 집합을 해제합니다.
 
@@ -115,7 +115,7 @@ void Close();
 
 관련 된 모든 메모리를 해제합니다.
 
-## <a name="freerecordmemory"></a> Caccessorrowset:: Freerecordmemory
+## <a name="freerecordmemory"></a> CAccessorRowset::FreeRecordMemory
 
 해제 해야 하는 현재 레코드의 모든 열을 해제 합니다.
 
@@ -125,7 +125,7 @@ void Close();
 void FreeRecordMemory();
 ```
 
-## <a name="getcolumninfo"></a> Caccessorrowset:: Getcolumninfo
+## <a name="getcolumninfo"></a> CAccessorRowset::GetColumnInfo
 
 열린된 행 집합에서 열 정보를 가져옵니다.
 
@@ -142,7 +142,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -152,9 +152,9 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 사용자는 반환 된 열 정보와 문자열 버퍼를 해제 해야 합니다. 사용 하는 경우이 메서드의 두 번째 버전을 사용 하 여 [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) 바인딩을 재정의 해야 합니다.
 
-자세한 내용은 [icolumnsinfo:: Getcolumninfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms722704(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+자세한 내용은 [icolumnsinfo:: Getcolumninfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

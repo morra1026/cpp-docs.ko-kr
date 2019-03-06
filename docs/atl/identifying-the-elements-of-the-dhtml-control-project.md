@@ -5,12 +5,12 @@ helpviewer_keywords:
 - HTML controls, ATL support
 - DHTML controls, ATL support
 ms.assetid: b627547a-3768-4346-9900-4b7a21fb8e27
-ms.openlocfilehash: e38b94e200754ce9dd37df2bfb17dfaa32cafe49
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 32b1c00e3ad3ed15fa56f7718789fe1a2e3ecbab
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175709"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424381"
 ---
 # <a name="identifying-the-elements-of-the-dhtml-control-project"></a>DHTML 컨트롤 프로젝트의 요소를 식별합니다.
 
@@ -22,7 +22,7 @@ DHTML 컨트롤은 모든 ATL 컨트롤과 비슷하지만 제외:
 
 - UI 컨트롤에 대 한 HTML 리소스를 만듭니다.
 
-- 멤버 변수를 통해 DHTML 개체 모델에 대 한 액세스를 허용 `m_spBrowser`, 하는 형식의 스마트 포인터 [IWebBrowser2](https://msdn.microsoft.com/library/aa752127.aspx)합니다. 이 포인터를 사용 하 여 DHTML 개체 모델의 일부에 액세스 합니다.
+- 멤버 변수를 통해 DHTML 개체 모델에 대 한 액세스를 허용 `m_spBrowser`, 하는 형식의 스마트 포인터 [IWebBrowser2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752127\(v=vs.85\))합니다. 이 포인터를 사용 하 여 DHTML 개체 모델의 일부에 액세스 합니다.
 
 다음 그림에서는 DLL, DHTML 컨트롤, 웹 브라우저 및 HTML 리소스 간의 관계를 보여 줍니다.
 
@@ -51,7 +51,6 @@ ATL 컨트롤 마법사 HTML 리소스 및.cpp 파일에서 기본 코드를 사
 
 참조 [ATL DHTML 컨트롤 만들기](../atl/creating-an-atl-dhtml-control.md) 여 DHTML 컨트롤 빌드를 시작 합니다. 참조 [속성 및 이벤트 테스트 컨테이너를 사용 하 여 테스트](../mfc/testing-properties-and-events-with-test-container.md) 테스트 컨테이너에 액세스 하는 방법에 대 한 정보에 대 한 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DHTML 컨트롤에 대 한 지원](../atl/atl-support-for-dhtml-controls.md)
-

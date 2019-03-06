@@ -10,12 +10,12 @@ helpviewer_keywords:
 - scripts, Registrar scripts
 - registry, Registrar
 ms.assetid: 106752ae-4cfc-4030-8cb2-d36a1d635a2e
-ms.openlocfilehash: 70e3a5334730b75100cc4084344c46d73399f4f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c64d47be6df515a0bd4a8d2cfef51f8d56311f4a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258972"
 ---
 # <a name="atl-registry-component-registrar"></a>ATL 레지스트리 구성 요소(등록자)
 
@@ -24,7 +24,7 @@ ATL 등록자 시스템 레지스트리에 사용자 지정 인터페이스를 �
 > [!NOTE]
 >  Atlmfc\include\atliface.h에서 ATL 등록자에 대 한 소스 코드를 찾을 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)<br/>
 등록자 스크립트를 작성 하는 가이드입니다. BNF 구문, 구문 분석 트리, 레지스트리 스크립트 예제, 대체 가능 매개 변수를 사용 하 여 스크립트를 호출 하는 방식에 대 한 항목이 포함 되어 있습니다.
@@ -36,4 +36,3 @@ ATL 등록자 시스템 레지스트리에 사용자 지정 인터페이스를 �
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
-

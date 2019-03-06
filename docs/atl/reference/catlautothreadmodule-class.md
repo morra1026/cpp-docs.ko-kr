@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlAutoThreadModule class
 ms.assetid: 3be834aa-55ef-403e-94ae-41979691b15f
-ms.openlocfilehash: acd277160bc277e919a2802541310aa55446e00c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ec66bf77d8dd705cb2e1e93f70a885ab96420a6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619715"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280422"
 ---
 # <a name="catlautothreadmodule-class"></a>CAtlAutoThreadModule 클래스
 
@@ -31,14 +31,14 @@ class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 
 `CAtlAutoThreadModule` 파생 [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) 스레드 풀링, 아파트 모델 COM 서버를 구현 합니다. `CAtlAutoThreadModule` 사용 하 여 [CComApartment](../../atl/reference/ccomapartment-class.md) 모듈에서 각 스레드에 대 한 아파트를 관리 합니다.
 
-사용 해야 합니다는 [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) 지정 하 여 개체의 클래스 정의에서 매크로 [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) 클래스 팩터리로 합니다. 파생 된 클래스의 단일 인스턴스를 추가 해야 `CAtlAutoThreadModuleT` 와 같은 `CAtlAutoThreadModule`합니다. 예를 들어:
+사용 해야 합니다는 [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) 지정 하 여 개체의 클래스 정의에서 매크로 [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) 클래스 팩터리로 합니다. 파생 된 클래스의 단일 인스턴스를 추가 해야 `CAtlAutoThreadModuleT` 와 같은 `CAtlAutoThreadModule`합니다. 예를 들면,
 
 `CAtlAutoThreadModule _AtlAutoModule; // name is immaterial.`
 
 > [!NOTE]
 > 이 클래스는 사용 되지 않는 대체 [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) 클래스입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlAutoThreadModule`
 
@@ -50,7 +50,7 @@ class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 
 **헤더:** atlbase.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlAutoThreadModuleT 클래스](../../atl/reference/catlautothreadmodulet-class.md)<br/>
 [IAtlAutoThreadModule 클래스](../../atl/reference/iatlautothreadmodule-class.md)<br/>

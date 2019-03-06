@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE Clipboard, formats
 - formats [MFC], Clipboard for OLE
 ms.assetid: 229cc610-5bb1-435e-bd20-2c8b9964d1af
-ms.openlocfilehash: 3dadd2ae6774c684fe751e02fb3a80570accd30a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d8ef93b306c0968adf2c23c841c792d2f7af5de3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50661450"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262254"
 ---
 # <a name="clipboard-using-the-ole-clipboard-mechanism"></a>클립보드: OLE 클립보드 메커니즘 사용
 
@@ -31,7 +31,7 @@ Windows는 클립보드를 통한 데이터 전송에 사용할 수 있는 표�
 
 [!code-cpp[NVC_MFCListView#3](../atl/reference/codesnippet/cpp/clipboard-using-the-ole-clipboard-mechanism_1.cpp)]
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [데이터 복사 및 붙여넣기](../mfc/clipboard-copying-and-pasting-data.md)
 
@@ -43,7 +43,6 @@ Windows는 클립보드를 통한 데이터 전송에 사용할 수 있는 표�
 
 - [OLE 데이터 개체 및 데이터 원본 및 균일 한 데이터 전송](../mfc/data-objects-and-data-sources-ole.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클립보드](../mfc/clipboard.md)
-

@@ -54,12 +54,12 @@ helpviewer_keywords:
 - CImage class
 - transparent color
 ms.assetid: 52861e3d-bf7e-481f-a240-90e88f76c490
-ms.openlocfilehash: 0042fffb0eaa383909edd6647bcdb4375341d8dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a62919ebd6b2aba54aa8003743b0006571cdedf4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605857"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419673"
 ---
 # <a name="cimage-class"></a>CImage 클래스
 
@@ -130,7 +130,7 @@ class CImage
 
 |이름|설명|
 |----------|-----------------|
-|[HBITMAP CImage::operator](#operator_hbitmap)|에 연결 된 Windows 핸들을 반환 합니다 `CImage` 개체입니다.|
+|[CImage::operator HBITMAP](#operator_hbitmap)|에 연결 된 Windows 핸들을 반환 합니다 `CImage` 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -258,7 +258,7 @@ Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 전체 소스 비트맵 및 소스 비트맵에 대 한 형식 정보에 적용할 전역 알파 값을 원본 및 대상 비트맵에는 알파 혼합 함수입니다. 원본 및 대상 blend 함수는 현재 AC_SRC_OVER로 제한 합니다.
 
 *pointDest*<br/>
-에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
+에 대 한 참조를 [지점](/previous-versions/dd162805\(v=vs.85\)) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 *nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
@@ -279,7 +279,7 @@ Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 소스 사각형의 논리 단위에서 높이입니다.
 
 *rectDest*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조, 대상을 식별 합니다.
 
 *rectSrc*<br/>
 에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.
@@ -368,7 +368,7 @@ HDC 대상입니다.
 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.
 
 *pointDest*<br/>
-A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
+A [지점](/previous-versions/dd162805\(v=vs.85\)) 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 *nDestWidth*<br/>
 논리 단위를 대상 사각형의 너비입니다.
@@ -383,7 +383,7 @@ A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 대상 �
 소스 사각형의 왼쪽된 위 모퉁이의 논리적 y 좌표입니다.
 
 *rectDest*<br/>
-A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 대상 사각형을 나타내는 구조입니다.
+A [RECT](/previous-versions/dd162897\(v=vs.85\)) 대상 사각형을 나타내는 구조입니다.
 
 *pointSrc*<br/>
 `POINT` 소스 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
@@ -595,13 +595,13 @@ Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니�
 소스 사각형의 논리 단위에서 높이입니다.
 
 *rectDest*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조, 대상을 식별 합니다.
 
 *rectSrc*<br/>
 에 대 한 참조를 `RECT` 구조, 소스를 식별 합니다.
 
 *pointDest*<br/>
-에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
+에 대 한 참조를 [지점](/previous-versions/dd162805\(v=vs.85\)) 논리 단위에서 대상 사각형의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1008,7 +1008,7 @@ bool IsIndexed() const throw();
 
 ### <a name="return-value"></a>반환 값
 
-TRUE 이면 인덱싱된; 그렇지 않으면 FALSE입니다.
+TRUE if indexed; otherwise FALSE.
 
 ### <a name="remarks"></a>설명
 
@@ -1196,7 +1196,7 @@ Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 
 이 메서드는 Windows NT 4.0 이상만 해당 버전에 적용 됩니다.
 
-##  <a name="operator_hbitmap"></a>  HBITMAP CImage::operator
+##  <a name="operator_hbitmap"></a>  CImage::operator HBITMAP
 
 이 연산자를 사용 하 여 연결 된 Windows GDI 핸들을 가져오려면는 `CImage` 개체입니다. 이 연산자는 캐스팅 연산자를 HBITMAP 개체의 직접 사용을 지원 합니다.
 
@@ -1259,10 +1259,10 @@ Y 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니�
 흑백 비트맵의 왼쪽된 위 모퉁이의 y 좌표입니다.
 
 *rectSrc*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 소스 사각형의 좌표를 지정 합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 소스 사각형의 좌표를 지정 합니다.
 
 *pointMask*<br/>
-A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 마스크 비트맵의 왼쪽된 위 모퉁이 나타내는 구조입니다.
+A [지점](/previous-versions/dd162805\(v=vs.85\)) 마스크 비트맵의 왼쪽된 위 모퉁이 나타내는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1384,7 +1384,7 @@ void SetPixel(int x, int y, COLORREF color) throw();
 *y*<br/>
 설정할 픽셀의 세로 위치입니다.
 
-*색*<br/>
+*color*<br/>
 픽셀을 설정한 색입니다.
 
 ### <a name="remarks"></a>설명
@@ -1519,7 +1519,7 @@ Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 래스터 작업 수행 수입니다. 래스터 작업 코드를 대상 (현재 선택 된 브러시에 의해 정의 됨) 처럼 원본, 대상 및 패턴의 비트를 결합 하는 방법에 정확 하 게 정의 합니다. 참조 [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) 다른 래스터 연산은 코드와 해당 설명의 목록을 Windows SDK에 있습니다.
 
 *rectDest*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조, 대상을 식별 합니다.
 
 *xSrc*<br/>
 X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
@@ -1602,7 +1602,7 @@ Y 좌표, 대상 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.
 소스 비트맵을 투명 하 게 처리할 색입니다. 기본적으로 CLR_INVALID, 현재 이미지의 투명 한 색으로 설정 된 색상을 사용 해야 함을 나타내는입니다.
 
 *rectDest*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조, 대상을 식별 합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조, 대상을 식별 합니다.
 
 *xSrc*<br/>
 X 좌표를 소스 사각형의 왼쪽된 위 모퉁이의 논리 단위입니다.

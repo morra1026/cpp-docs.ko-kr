@@ -9,12 +9,12 @@ helpviewer_keywords:
 - COM components, classes [MFC]
 - component classes [MFC]
 ms.assetid: 8e9b67a2-c0ff-479c-a8d6-19b36c5e6fc6
-ms.openlocfilehash: 610a69204e5cb66f2129351ab2a04bb0915a1b4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99dd7f58b862fadc86ee2515bb8ef2008bc538fa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451690"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289583"
 ---
 # <a name="ole-server-classes"></a>OLE 서버 클래스
 
@@ -45,7 +45,6 @@ OLE 인터페이스를 나타내는 데 `COleServerDoc` 항목입니다. 일반�
 [COleException](../mfc/reference/coleexception-class.md)<br/>
 OLE 처리 중 오류로 인해 발생하는 예외입니다. 이 클래스는 컨테이너 및 서버에서 모두 사용됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

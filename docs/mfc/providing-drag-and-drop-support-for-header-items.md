@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CHeaderCtrl class [MFC], drag and drop support
 - HDN_ notifications [MFC]
 ms.assetid: 93a152ec-804f-488f-b260-b3a438d0dc0f
-ms.openlocfilehash: 21ff14982baac93fac1cf3ee441353c079f4f760
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f30ad029742a01280abda85cbd1a81104d01d8cd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50602971"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263722"
 ---
 # <a name="providing-drag-and-drop-support-for-header-items"></a>헤더 항목에 대한 끌어서 놓기 지원 제공
 
@@ -23,7 +23,6 @@ ms.locfileid: "50602971"
 > [!NOTE]
 >  목록 컨트롤에 포함 된 헤더 컨트롤의 끌어서 놓기 지원을 제공 하는 경우의 스타일 확장 섹션을 참조 합니다 [목록 컨트롤 스타일 변경](../mfc/changing-list-control-styles.md) 항목입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeaderCtrl 사용](../mfc/using-cheaderctrl.md)
-

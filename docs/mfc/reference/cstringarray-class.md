@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 6c637e06-bba8-4c08-b0fc-cf8cb067ce34
-ms.openlocfilehash: f96c9eee1ca1d0d89a4ce401c8705984efabfeaa
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 85422e5abd313aad4f87052748610e099363c1c6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657359"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276062"
 ---
 # <a name="cstringarray-class"></a>CStringArray 클래스
 
@@ -61,7 +61,8 @@ class CStringArray : public CObject
 
 ## <a name="members"></a>멤버
 
-멤버 함수 `CStringArray` 클래스의 멤버 함수와 비슷합니다 [CObArray](../../mfc/reference/cobarray-class.md)합니다. 이처럼 두 함수가 비슷하므로 `CObArray` 참조 설명서에서 멤버 함수 관련 사항을 확인할 수 있습니다. 표시 될 때마다를 `CObject` 포인터가 반환 값으로 대체를 [CString](../../atl-mfc-shared/using-cstring.md) 개체 (하지를 [CString](../../atl-mfc-shared/using-cstring.md) 포인터). `CObject` 포인터가 함수 매개 변수로 사용될 때마다 `LPCTSTR`을 대체합니다.
+멤버 함수 `CStringArray` 클래스의 멤버 함수와 비슷합니다 [CObArray](../../mfc/reference/cobarray-class.md)합니다. 이처럼 두 함수가 비슷하므로 `CObArray` 참조 설명서에서 멤버 함수 관련 사항을 확인할 수 있습니다. 표시 될 때마다를 `CObject` 포인터가 반환 값으로 대체를 [CString](../../atl-mfc-shared/using-cstring.md) 개체 (하지를 [CString](../../atl-mfc-shared/using-cstring.md) 포인터). 
+  `CObject` 포인터가 함수 매개 변수로 사용될 때마다 `LPCTSTR`을 대체합니다.
 
 `CObject* CObArray::GetAt( int <nIndex> ) const;`
 
@@ -120,11 +121,12 @@ class CStringArray : public CObject
 
 배열에 개별 문자열 요소의 덤프가 필요하면 덤프 컨텍스트의 수준을 1 이상으로 설정해야 합니다.
 
-`CString` 배열을 삭제하거나 해당 요소를 제거하면 문자열 메모리가 적절하게 해제됩니다.
+
+  `CString` 배열을 삭제하거나 해당 요소를 제거하면 문자열 메모리가 적절하게 해제됩니다.
 
 사용 하 여 대 한 자세한 내용은 `CStringArray`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -134,8 +136,7 @@ class CStringArray : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

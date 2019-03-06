@@ -8,12 +8,12 @@ helpviewer_keywords:
 - printing [MFC], print preview
 - print preview [MFC], modifications to MFC
 ms.assetid: 0efc87e6-ff8d-43c5-9d72-9b729a169115
-ms.openlocfilehash: 2a57b3c8ef6df46c2e2524cb44dd29d68751389b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea80b67b3f6bb6980e4e8f7f12a967cb7bb5b6c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569684"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261520"
 ---
 # <a name="print-preview-architecture"></a>인쇄 미리 보기 아키텍처
 
@@ -55,7 +55,7 @@ ms.locfileid: "50569684"
 
 합니다 `CPrintInfo` 구조는 또한 라는 멤버가 포함 *m_strPageDesc*에 단일 페이지 및 다중 페이지 모드 화면 맨 아래에 표시 된 문자열의 서식을 지정 하는 데 사용 됩니다. 기본적으로 폼의 이러한 문자열은 "페이지 *n*" 및 "페이지 *n* - *m*," 수정할 수 있지만 *m_strPageDesc* 에서 내 `OnPreparePrinting` 문자열을 설정 합니다. 참조 [CPrintInfo 구조체](../mfc/reference/cprintinfo-structure.md) 에 *MFC 참조* 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [인쇄 및 인쇄 미리 보기](../mfc/printing-and-print-preview.md)<br/>
 [인쇄](../mfc/printing.md)<br/>

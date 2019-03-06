@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandSource interface [MFC]
 ms.assetid: a4b1f698-c09f-4ba8-9b13-0e74a0a4967e
-ms.openlocfilehash: 4fca5a2ffef7e8da4f6dd79fcd99c72e92cfdf6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21c4f4544a6ccf2342580bc5859739fc1f50d0c2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538439"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296022"
 ---
 # <a name="icommandsource-interface"></a>ICommandSource 인터페이스
 
@@ -55,7 +55,7 @@ interface class ICommandSource
 
 MFC 보기에서 사용자 정의 컨트롤을 호스트 하는 경우 [CWinFormsView 클래스](../../mfc/reference/cwinformsview-class.md) 경로 명령과 업데이트 명령 UI 메시지를 사용자 정의 컨트롤에 기록 MFC 명령 (예: 프레임 메뉴 항목 및 도구 모음 단추)를 처리할 수 있도록 합니다. 구현 하 여 [ICommandTarget 인터페이스](../../mfc/reference/icommandtarget-interface.md), 사용자 정의 컨트롤에 대 한 참조를 제공 합니다 `ICommandSource` 개체입니다.
 
-참조 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `ICommandTarget`합니다.
+[방법: Windows Forms 컨트롤을 추가할 명령 라우팅](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `ICommandTarget`합니다.
 
 Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
@@ -82,7 +82,7 @@ void AddCommandHandler(
 ### <a name="remarks"></a>설명
 
 이 메서드는 명령 원본 개체에 명령 처리기 cmdHandler를 추가 하 고 처리기 cmdID에 매핑됩니다.
-참조 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler를 사용 하는 방법의 예입니다.
+[방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) AddCommandHandler를 사용 하는 방법의 예입니다.
 
 ## <a name="addcommandrangehandler"></a> ICommandSource::AddCommandRangeHandler
 
@@ -246,7 +246,7 @@ void SendCommand(unsigned int command);
 ### <a name="remarks"></a>설명
 
 이 메서드는 동기적으로 명령에 의해 지정 된 ID에 매핑된 메시지를 보냅니다. 창의 메시지 큐에 메시지를 저장 하는 CWnd::SendMessage를 호출 하 고 창 프로시저는 반환 하기 전에 메시지를 처리할 때까지 대기 합니다.
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)<br/>
 [ICommandTarget 인터페이스](../../mfc/reference/icommandtarget-interface.md)

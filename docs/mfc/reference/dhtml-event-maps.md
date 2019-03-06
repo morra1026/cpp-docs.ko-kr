@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DHTML events [MFC], event map
 - DHTML events [MFC]
 ms.assetid: 9a2c8ae7-7216-4a5e-bc60-6b98695be0c6
-ms.openlocfilehash: 306fb718e7c333e6ff603b7c6c88c10f03f567b5
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 5ae37acd3e0b0c2636e6a3e985490a2feab8fa34
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850339"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300546"
 ---
 # <a name="dhtml-event-maps"></a>DHTML 이벤트 맵
 
@@ -1148,6 +1148,6 @@ END_DHTML_EVENT_MAP_INLINE( )
 
 **헤더:** afxdhtml.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](mfc-macros-and-globals.md)

@@ -8,18 +8,18 @@ helpviewer_keywords:
 - controls [MFC], tool tips
 - buttons [MFC], tool tips
 ms.assetid: 7f0bba86-7c55-4bf6-8455-687a4dcb2be8
-ms.openlocfilehash: 43e4d9bad06ded35f377839b177c30f4dd634dc2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ec7795a524420d62b2307f26954bbf205d19dea9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549632"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263035"
 ---
 # <a name="tool-tips"></a>도구 설명
 
 MFC 클래스에서 파생 된 창에 포함 된 컨트롤에 도구 설명을 추가 절차는 distinct [CFrameWnd](../mfc/reference/cframewnd-class.md) 에서 파생 되지 않은 windows 및 `CFrameWnd`합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 창에서 컨트롤에 대 한 도구 설명:
 
@@ -27,6 +27,6 @@ MFC 클래스에서 파생 된 창에 포함 된 컨트롤에 도구 설명을 �
 
 - [CFrameWnd에서 파생 되지 않은 Windows에 도구 설명](../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

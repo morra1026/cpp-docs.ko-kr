@@ -18,16 +18,17 @@ f1_keywords:
 helpviewer_keywords:
 - timer class
 ms.assetid: 4f4dea51-de9f-40f9-93f5-dd724c567b49
-ms.openlocfilehash: beb374efe26c25fed490b7407e087e2cc46043c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e36441f53c9b53c9826ee92b2892142a522d7243
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659838"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298154"
 ---
 # <a name="timer-class"></a>timer 클래스
 
-`timer` 메시징 블록은 지정된 기간이 경과한 후 또는 특정 간격마다 대상에 메시지를 보낼 수 있는 단일 대상 `source_block`입니다.
+
+  `timer` 메시징 블록은 지정된 기간이 경과한 후 또는 특정 간격마다 대상에 메시지를 보낼 수 있는 단일 대상 `source_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -58,7 +59,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |[start](#start)|시작 된 `timer` 메시징 블록입니다. 지정 된 시간 (밀리초) 후이 수가 호출 되 면 지정 된 값이 전파 됩니다으로 다운스트림을 `message`입니다.|
 |[stop](#stop)|중지 된 `timer` 메시징 블록입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -74,7 +75,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -205,7 +206,7 @@ virtual void resume_propagation();
 void start();
 ```
 
-##  <a name="stop"></a> 중지
+##  <a name="stop"></a> stop
 
 중지 된 `timer` 메시징 블록입니다.
 
@@ -244,7 +245,7 @@ timer(
 *_Ms*<br/>
 다운스트림 전파 될 지정된 된 메시지에 대 한 시작 하는 호출 후 경과 해야 하는 시간 (밀리초)의 수입니다.
 
-*값*<br/>
+*value*<br/>
 타이머 경과 하면 다운스트림 전파 되어야 하는 값입니다.
 
 *_PTarget*<br/>
@@ -263,7 +264,7 @@ True 이면 타이머가 정기적으로 실행 됩니다 모든 `_Ms` 시간 (�
 
 런타임은 `_Scheduler` 또는 `_ScheduleGroup` 매개 변수를 지정하지 않는 경우 기본 스케줄러를 사용합니다.
 
-##  <a name="dtor"></a> ~ 타이머
+##  <a name="dtor"></a> ~timer
 
 제거를 `timer` 메시징 블록입니다.
 
@@ -271,6 +272,6 @@ True 이면 타이머가 정기적으로 실행 됩니다 모든 `_Ms` 시간 (�
 ~timer();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

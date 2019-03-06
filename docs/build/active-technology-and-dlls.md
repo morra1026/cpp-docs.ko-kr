@@ -8,12 +8,12 @@ helpviewer_keywords:
 - Active technology [C++]
 - MFC DLLs [C++], Active Technology
 ms.assetid: 3ed27f8d-164a-4562-ad61-9f2333404cc7
-ms.openlocfilehash: 270c64df9af792a73acf1ad408aca02e7fadc30f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 82e18efe66350349c8cbef7f47b7d1fb226674f1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50535813"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420169"
 ---
 # <a name="active-technology-and-dlls"></a>액티브 기술 및 DLL
 
@@ -25,6 +25,6 @@ ms.locfileid: "50535813"
 
 - [자동화 서버](../mfc/automation-servers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

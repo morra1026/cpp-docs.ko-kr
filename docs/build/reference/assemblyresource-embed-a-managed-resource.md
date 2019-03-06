@@ -11,12 +11,12 @@ helpviewer_keywords:
 - assemblies [C++], linking resource files
 - /ASSEMBLYRESOURCE linker option
 ms.assetid: 0ce6e1fb-921b-4b1b-a59c-d35388d789f2
-ms.openlocfilehash: 566a667ababaa67c7aff71861b111416abbbd878
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c18a014ca645cceb3196fb7efefd227e96f8e1fa
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486608"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416218"
 ---
 # <a name="assemblyresource-embed-a-managed-resource"></a>/ASSEMBLYRESOURCE(관리되는 리소스 포함)
 
@@ -40,7 +40,7 @@ ms.locfileid: "50486608"
 
 리소스는 링커를 사용 하 여 만든 어셈블리에서 public입니다. 링커가는 어셈블리의 리소스 이름을 바꿀 수 없도록 합니다.
 
-경우 *filename* 는, 예를 들어에서 만든.NET Framework 리소스 (.resources) 파일을 [리소스 파일 생성기 (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) 또는 개발 환경에서의 멤버를 사용 하 여 액세스할 수 있습니다는 **System.Resources** 네임 스페이스 (참조 [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx) 자세한). 다른 모든 리소스를 사용 합니다 **런타임에** \* 의 메서드 **System.Reflection.Assembly** 런타임에 리소스에 액세스 하는 클래스입니다.
+경우 *filename* 는, 예를 들어에서 만든.NET Framework 리소스 (.resources) 파일을 [리소스 파일 생성기 (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) 또는 개발 환경에서의 멤버를 사용 하 여 액세스할 수 있습니다는 **System.Resources** 네임 스페이스 (참조 [System.Resources.ResourceManager](/dotnet/api/system.resources.resourcemanager) 자세한). 다른 모든 리소스를 사용 합니다 **런타임에** \* 의 메서드 **System.Reflection.Assembly** 런타임에 리소스에 액세스 하는 클래스입니다.
 
 어셈블리 생성에 영향을 주는 링커 옵션도 있습니다.
 
@@ -72,7 +72,7 @@ ms.locfileid: "50486608"
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EmbedManagedResourceFile%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

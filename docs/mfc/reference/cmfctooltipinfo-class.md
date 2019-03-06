@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CMFCToolTipInfo [MFC], m_nGradientAngle
 - CMFCToolTipInfo [MFC], m_nMaxDescrWidth
 ms.assetid: f9d3d7f8-1f08-4342-a7b2-683860e5d2a5
-ms.openlocfilehash: 07f2882570e77d554230853dff87bc81df80e4cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b38c3a62cca376ef7a19a111fe3a34c923983d1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668626"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270217"
 ---
 # <a name="cmfctooltipinfo-class"></a>CMFCToolTipInfo 클래스
 
@@ -55,7 +55,7 @@ class CMFCToolTipInfo
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCToolTipInfo::operator =](#operator_eq)||
+|[CMFCToolTipInfo::operator=](#operator_eq)||
 
 ### <a name="data-members"></a>데이터 멤버
 
@@ -85,7 +85,7 @@ class CMFCToolTipInfo
 
 [!code-cpp[NVC_MFC_RibbonApp#42](../../mfc/reference/codesnippet/cpp/cmfctooltipinfo-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md)
 
@@ -239,9 +239,9 @@ BOOL m_bVislManagerTheme;
 
 하는 경우 `m_bVislManagerTheme` 가 TRUE 인 모든 도구 설명 새 요청 [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) 화면에 표시 하 고 모양을 결정 하는 개체의 값을 사용 하려면 먼저 응용 프로그램의 비주얼 관리자에서. 다른 멤버에 [CMFCToolTipInfo](../../mfc/reference/cmfctooltipinfo-class.md) 무시 됩니다.
 
-##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator =
+##  <a name="operator_eq"></a>  CMFCToolTipInfo::operator=
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
@@ -255,7 +255,7 @@ CMFCToolTipInfo& operator=(CMFCToolTipInfo& src);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

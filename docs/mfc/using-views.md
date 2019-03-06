@@ -13,12 +13,12 @@ helpviewer_keywords:
 - user input [MFC], interpreting through view class [MFC]
 - view classes [MFC], role in displaying application data
 ms.assetid: dc3de6ad-5c64-4317-8f10-8bdcc38cdbd5
-ms.openlocfilehash: 2038f2669d3aa8b5c4bf91b0ba0b38fbec9a1fc8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81668f7409f2b1a4480bde958dc06ce1156e03fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605701"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291173"
 ---
 # <a name="using-views"></a>뷰 사용
 
@@ -32,7 +32,7 @@ ms.locfileid: "50605701"
 
 다른 재정의 해야 하는 또한 `CView` 파생 된 뷰 클래스의 멤버 함수입니다. 재정의 하려는 특히 [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate) 뷰에 대 한 특별 한 초기화를 수행 하 고 [OnUpdate](../mfc/reference/cview-class.md#onupdate) 뷰 자신을 다시 그리면 직전 필요한 특별 한 처리 작업을 수행할. 다중 페이지 문서도 재정의 해야 합니다 [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting) 개수 인쇄할 페이지 및 기타 정보를 사용 하 여 인쇄 대화 상자를 초기화 합니다. 재정의 하는 방법은 `CView` 클래스를 참조 하는 멤버 함수 [CView](../mfc/reference/cview-class.md) 에 *MFC 참조*합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [MFC에서 사용할 수 있는 파생 된 뷰 클래스](../mfc/derived-view-classes-available-in-mfc.md)
 
@@ -46,10 +46,9 @@ ms.locfileid: "50605701"
 
 - [초기화 하 고 문서 및 뷰 정리](../mfc/initializing-and-cleaning-up-documents-and-views.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)<br/>
 [CFormView 클래스](../mfc/reference/cformview-class.md)<br/>
 [레코드 뷰(MFC Data Access)](../data/record-views-mfc-data-access.md)<br/>
 [Serialization 메커니즘 건너뛰기](../mfc/bypassing-the-serialization-mechanism.md)
-

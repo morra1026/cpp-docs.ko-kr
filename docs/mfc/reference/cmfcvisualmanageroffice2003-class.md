@@ -92,12 +92,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCVisualManagerOffice2003 Class [MFC]
 ms.assetid: 115482cd-e349-450a-8dc4-c6023d092aab
-ms.openlocfilehash: 1b811de23b4a049bd462ddbb3f9b96e80ae25be0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c3b0a031db8ff843bb43f7dfa69f046d6ae99a96
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558811"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273272"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 클래스
 
@@ -211,7 +211,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#6](../../mfc/reference/codesnippet/cpp/cmfcvisualmanageroffice2003-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -248,7 +248,7 @@ virtual BOOL DrawComboBorderWinXP(
 *rect*<br/>
 [in] 콤보 상자 테두리의 경계 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 콤보 상자 테두리 비활성화 되었는지 여부를 지정 합니다.
 
 *bIsDropped*<br/>
@@ -284,7 +284,7 @@ virtual BOOL DrawComboDropButtonWinXP(
 *rect*<br/>
 [in] 콤보 상자 드롭다운 단추의 경계 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 콤보 상자 드롭다운 단추를 사용할 수 있는지 여부를 지정 합니다.
 
 *bIsDropped*<br/>
@@ -359,7 +359,7 @@ virtual BOOL DrawPushButtonWinXP(
 [in] 에 대 한 포인터를 [CMFCButton 클래스](../../mfc/reference/cmfcbutton-class.md) 그릴 개체입니다.
 
 *uiState*<br/>
-[in] 무시 됩니다. 상태를 가져옵니다 *pButton*합니다.
+[in] Ignored. 상태를 가져옵니다 *pButton*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -586,7 +586,7 @@ virtual BOOL GetToolTipInfo(
 *params*<br/>
 [out] 에 대 한 참조를 [CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md) 이 메서드는 도구 설명 정보를 반환 하는 개체입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 [in] 반환 될 도구 설명 정보에 대 한 정보를 입력 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -780,7 +780,7 @@ virtual void OnDrawBarGripper(
 
 ##  <a name="ondrawbrowsebutton"></a>  CMFCVisualManagerOffice2003::OnDrawBrowseButton
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual BOOL OnDrawBrowseButton(
@@ -796,7 +796,7 @@ virtual BOOL OnDrawBrowseButton(
 [in] *pDC*<br/>
 [in] *rect*<br/>
 [in] *pEdit*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 [in] *clrText*<br/>
 
 ### <a name="return-value"></a>반환 값
@@ -892,7 +892,7 @@ virtual void OnDrawCheckBoxEx(
 [in] 확인란의 경계 사각형입니다.
 
 *nState*<br/>
-[in] 확인란의 상태: 선택 하지 않는 경우 0, 1 2 혼합을 선택 하는 경우 옵션을 선택 합니다.
+[in] 확인란의 상태: 검사 되지 않은 경우 0, 1 2 혼합 선택 하는 경우 옵션을 선택 하는 경우.
 
 *bHighlighted*<br/>
 [in] 확인란을 강조 표시 된, 또는 그렇지 않은 경우 FALSE 이면 TRUE입니다.
@@ -900,7 +900,7 @@ virtual void OnDrawCheckBoxEx(
 *bPressed*<br/>
 [in] 확인란 누름, 또는 그렇지 않은 경우 FALSE 이면 TRUE입니다.
 
-*b 사용*<br/>
+*bEnabled*<br/>
 [in] 확인란을 활성화 하거나 그렇지 않은 경우 FALSE 이면 TRUE입니다.
 
 ### <a name="remarks"></a>설명
@@ -927,7 +927,7 @@ virtual void OnDrawComboBorder(
 *rect*<br/>
 [in] 콤보 상자 단추 경계를 지정 하는 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 콤보 상자 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bIsDropped*<br/>
@@ -965,7 +965,7 @@ virtual void OnDrawComboDropButton(
 *rect*<br/>
 [in] 드롭 단추의 경계를 지정 하는 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 드롭 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bIsDropped*<br/>
@@ -2508,7 +2508,7 @@ static void SetUseGlobalTheme(BOOL bUseGlobalTheme = TRUE);
 
 경우는 `CMFCVisualManagerOffice2003` 개체는 전역 테마를 사용 하지 않습니다, GUI 요소를 사용 하 여 그릴 합니다 [CMFCVisualManagerOfficeXP 클래스](../../mfc/reference/cmfcvisualmanagerofficexp-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

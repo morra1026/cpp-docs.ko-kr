@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -ZW
 - Windows Runtime compiler option
 ms.assetid: 0fe362b0-9526-498b-96e0-00d7a965a248
-ms.openlocfilehash: 297697d215a78cbf1aefef30df53f6956c4e16b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 944d66de3c029d9731a225281b4e592c477806e9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629764"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417985"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW(Windows Runtime 컴파일)
 
@@ -50,7 +50,7 @@ Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데
 
 ## <a name="requirements"></a>요구 사항
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

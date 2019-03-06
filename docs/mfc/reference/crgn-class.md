@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CRgn [MFC], RectInRegion
 - CRgn [MFC], SetRectRgn
 ms.assetid: d904da84-76aa-481e-8780-b09485f49e64
-ms.openlocfilehash: 74ee046e81e0f55e5550220166c957317c2bf6cd
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 54018c3d59fe3d7e3d7a5062cda9b40da4f5d586
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178553"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279372"
 ---
 # <a name="crgn-class"></a>CRgn 클래스
 
@@ -730,7 +730,7 @@ x 좌표 *지점* 오른쪽 또는 왼쪽으로 이동할 단위의 수를 지�
 
   예를 참조 하세요 [CRgn::CreateEllipticRgn](#createellipticrgn)합니다.
 
-##  <a name="operator_hrgn"></a>  HRGN CRgn::operator
+##  <a name="operator_hrgn"></a>  CRgn::operator HRGN
 
 이 연산자를 사용 하 여 연결 된 Windows GDI 핸들을 가져오려면는 `CRgn` 개체입니다.
 
@@ -838,8 +838,7 @@ void SetRectRgn(LPCRECT lpRect);
 
 대신이 함수를 사용 합니다 `CreateRectRgn` 로컬 메모리 관리자에 대 한 호출을 방지 하려면 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

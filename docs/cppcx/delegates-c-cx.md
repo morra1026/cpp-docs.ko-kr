@@ -2,12 +2,12 @@
 title: 대리자(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-ms.openlocfilehash: 8153ac6ffc48b43fc218ee786cdb3f64504d825e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb23c5d1ae35a56a827bc2436dbdd81b53dd1224
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635242"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415281"
 ---
 # <a name="delegates-ccx"></a>대리자(C++/CX)
 
@@ -23,7 +23,7 @@ public delegate void PrimeFoundHandler(int result);
 event PrimeFoundHandler^ primeFoundEvent;
 ```
 
-Windows 런타임 응용 프로그램 이진 인터페이스에서 클라이언트에 노출 될 대리자를 선언, 사용 하 여 [Windows::Foundation::TypedEventHandler\<, TResult >](https://msdn.microsoft.com/library/windows/apps/br225997.aspx)합니다. 이 대리자에는 Javascript 클라이언트에서 대리자를 사용할 수 있게 하는 프록시 및 스텁 이진 파일이 미리 정의되어 있습니다.
+Windows 런타임 응용 프로그램 이진 인터페이스에서 클라이언트에 노출 될 대리자를 선언, 사용 하 여 [Windows::Foundation::TypedEventHandler\<, TResult >](/uwp/api/windows.foundation.typedeventhandler)합니다. 이 대리자에는 Javascript 클라이언트에서 대리자를 사용할 수 있게 하는 프록시 및 스텁 이진 파일이 미리 정의되어 있습니다.
 
 ## <a name="consuming-delegates"></a>대리자 사용
 

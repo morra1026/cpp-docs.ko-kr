@@ -10,12 +10,12 @@ helpviewer_keywords:
 - handlers, OnCmdMessage [MFC]
 - OnCmdMessage method [MFC]
 ms.assetid: 8df07024-506f-47e7-bba9-1c3bc5ad8ab6
-ms.openlocfilehash: 37b3d5ffa3e6492c8c00b8b22eba58d09fad51f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ed2e4c09e2fe413d29ad9953dbb8a03c106e86c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643172"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274598"
 ---
 # <a name="oncmdmsg-handler"></a>OnCmdMsg 처리기
 
@@ -25,7 +25,6 @@ ms.locfileid: "50643172"
 
 기본값 `CCmdTarget` 구현의 `OnCmdMsg` 명령 대상 클래스의 메시지 맵을 사용 하 여 수신한 각 명령 메시지에 대 한 처리기 함수에 대 한 검색-동일한 방식으로 표준 메시지 검색 됩니다. 일치 하는 항목을 찾으면 해당 처리기를 호출 합니다. 메시지 맵을 검색 방법은 [방법의 프레임 워크 검색 메시지 맵](../mfc/how-the-framework-searches-message-maps.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 처리기를 호출하는 방법](../mfc/how-the-framework-calls-a-handler.md)
-

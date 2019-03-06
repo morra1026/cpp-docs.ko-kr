@@ -1,5 +1,5 @@
 ---
-title: 'MFC에서 다중 스레딩: 작업자 스레드를 만들기'
+title: '다중 스레딩: MFC에서 작업자 스레드 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multithreading [C++], worker threads
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - threading [MFC], worker threads
 - threading [C++], user input not required
 ms.assetid: 670adbfe-041c-4450-a3ed-be14aab15234
-ms.openlocfilehash: 54bea7b42018637bf868dfdd923b94dd75aa2307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f36e02d1ba6074a7ec8203bea761b3528a120162
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559486"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293240"
 ---
-# <a name="multithreading-creating-worker-threads-in-mfc"></a>MFC에서 다중 스레딩: 작업자 스레드를 만들기
+# <a name="multithreading-creating-worker-threads-in-mfc"></a>다중 스레딩: MFC에서 작업자 스레드 만들기
 
-작업자 스레드가 사용자 응용 프로그램을 사용 하 여 계속 되도록 기다릴 필요가 없습니다 백그라운드 작업 처리에 주로 사용 됩니다. 다시 계산 또는 백그라운드 인쇄 등의 작업은 작업자 스레드의 좋은 예입니다. 이 항목에서는 작업자 스레드를 만드는 데 필요한 단계를 자세히 설명 합니다. 다음과 같은 내용을 다룹니다.
+작업자 스레드가 사용자 응용 프로그램을 사용 하 여 계속 되도록 기다릴 필요가 없습니다 백그라운드 작업 처리에 주로 사용 됩니다. 다시 계산 또는 백그라운드 인쇄 등의 작업은 작업자 스레드의 좋은 예입니다. 이 항목에서는 작업자 스레드를 만드는 데 필요한 단계를 자세히 설명 합니다. 다루는 주제는 다음과 같습니다.
 
 - [스레드 시작 하기](#_core_starting_the_thread)
 
@@ -94,6 +94,6 @@ AfxBeginThread(MyThreadProc, pNewObject);
 
 - [다중 스레딩: 사용자 인터페이스 스레드 만들기](multithreading-creating-user-interface-threads.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

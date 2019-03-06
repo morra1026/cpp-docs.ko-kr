@@ -15,16 +15,16 @@ helpviewer_keywords:
 - multiple frame windows [MFC]
 - splitter windows [MFC], static
 ms.assetid: c6b9e4e0-7c9c-45f1-a804-aeac39c9a128
-ms.openlocfilehash: c9c26413d45dfa03087bf9909bf8004064766a00
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: e64ea6701c5e3ec594c705e8995b5ba605ab0b79
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175795"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301196"
 ---
 # <a name="multiple-document-types-views-and-frame-windows"></a>여러 문서 형식, 뷰 및 프레임 창
 
-문서, 뷰 및 프레임 창의 기본 관계는 [문서/뷰 만들기](../mfc/document-view-creation.md)에서 설명합니다. 대부분의 응용 프로그램은 단일한 뷰와 문서당 하나의 프레임 창만 사용하는 단일한 문서 형식(그러나 해당 형식의 문서는 여러 개 열 수 있음)을 지원합니다. 그러나 일부 응용 프로그램에서는 이러한 기본 설정을 하나 이상 변경해야 할 수도 있습니다.
+문서, 뷰 및 프레임 창의 기본 관계는 [문서/뷰 만들기](../mfc/document-view-creation.md)에서 설명합니다. 대부분의 애플리케이션은 단일한 뷰와 문서당 하나의 프레임 창만 사용하는 단일한 문서 형식(그러나 해당 형식의 문서는 여러 개 열 수 있음)을 지원합니다. 그러나 일부 애플리케이션에서는 이러한 기본 설정을 하나 이상 변경해야 할 수도 있습니다.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
 
@@ -38,11 +38,11 @@ ms.locfileid: "52175795"
 
 ##  <a name="_core_multiple_document_types"></a> Multiple Document Types
 
-MFC 응용 프로그램 마법사는 기본적으로 하나의 문서 클래스를 만듭니다. 그러나 일부 경우 문서 형식을 하나 이상 지원해야 할 수도 있습니다. 예를 들어, 응용 프로그램에 워크시트와 차트 문서가 모두 필요할 수 있습니다. 각 문서 형식은 고유한 문서 클래스로 나타내며 가능하면 뷰 클래스로도 나타냅니다. 사용자가 파일 메뉴에서 새로 만들기 명령을 선택하면 프레임워크에서 지원 문서 형식이 나열된 대화 상자를 표시합니다. 그런 다음 사용자가 선택한 형식의 문서를 만듭니다. 각 문서 형식은 고유한 문서 템플릿 개체에서 관리합니다.
+MFC 애플리케이션 마법사는 기본적으로 하나의 문서 클래스를 만듭니다. 그러나 일부 경우 문서 형식을 하나 이상 지원해야 할 수도 있습니다. 예를 들어, 애플리케이션에 워크시트와 차트 문서가 모두 필요할 수 있습니다. 각 문서 형식은 고유한 문서 클래스로 나타내며 가능하면 뷰 클래스로도 나타냅니다. 사용자가 파일 메뉴에서 새로 만들기 명령을 선택하면 프레임워크에서 지원 문서 형식이 나열된 대화 상자를 표시합니다. 그런 다음 사용자가 선택한 형식의 문서를 만듭니다. 각 문서 형식은 고유한 문서 템플릿 개체에서 관리합니다.
 
 문서 클래스를 더 만들려면 [클래스 추가](../ide/adding-a-class-visual-cpp.md)를 참조하세요. 파생시킬 클래스 형식으로 [CDocument](../mfc/reference/cdocument-class.md) 를 선택하고 요청된 문서 정보를 제공합니다. 그런 다음 새 클래스의 데이터를 구현합니다.
 
-프레임워크에 추가 문서 클래스에 대한 정보를 알리려면 응용 프로그램 클래스의 [InitInstance](../mfc/reference/cwinapp-class.md#adddoctemplate) 재정의에 [AddDocTemplate](../mfc/reference/cwinapp-class.md#initinstance) 에 대한 두 번째 호출을 추가해야 합니다. 자세한 내용은 [문서 템플릿](../mfc/document-templates-and-the-document-view-creation-process.md)을 참조하세요.
+프레임워크에 추가 문서 클래스에 대한 정보를 알리려면 애플리케이션 클래스의 [InitInstance](../mfc/reference/cwinapp-class.md#adddoctemplate) 재정의에 [AddDocTemplate](../mfc/reference/cwinapp-class.md#initinstance) 에 대한 두 번째 호출을 추가해야 합니다. 자세한 내용은 [문서 템플릿](../mfc/document-templates-and-the-document-view-creation-process.md)을 참조하세요.
 
 ##  <a name="_core_multiple_views"></a> Multiple Views
 
@@ -52,7 +52,7 @@ MFC는 같은 문서에 대한 다중 뷰가 필요한 세 가지 공용 사용�
 
 - 각각 별도의 MDI 문서 프레임 창에 표시되는 같은 클래스의 뷰 개체
 
-   문서에 대한 두 번째 프레임 창 만들기를 지원할 수도 있습니다. 사용자는 새 창 명령을 선택하여 같은 문서의 뷰가 표시된 두 번째 프레임을 연 다음 두 개의 프레임을 사용하여 문서의 다른 부분을 동시에 볼 수 있습니다. 프레임워크는 초기 프레임 창과 문서에 연결된 뷰를 복제하여 MDI 응용 프로그램 창 메뉴의 새 창 명령을 지원합니다.
+   문서에 대한 두 번째 프레임 창 만들기를 지원할 수도 있습니다. 사용자는 새 창 명령을 선택하여 같은 문서의 뷰가 표시된 두 번째 프레임을 연 다음 두 개의 프레임을 사용하여 문서의 다른 부분을 동시에 볼 수 있습니다. 프레임워크는 초기 프레임 창과 문서에 연결된 뷰를 복제하여 MDI 애플리케이션 창 메뉴의 새 창 명령을 지원합니다.
 
 - 같은 문서 프레임 창에 있는 같은 클래스의 뷰 개체
 
@@ -73,7 +73,7 @@ MFC는 같은 문서에 대한 다중 뷰가 필요한 세 가지 공용 사용�
 
 ##  <a name="_core_multiple_frame_windows"></a> Multiple Frame Windows
 
-MDI 응용 프로그램 창 메뉴의 새 창 명령을 사용하면 같은 문서에 두 번째 프레임 창을 만들 수 있습니다. 자세한 내용은 그림 다중 뷰 사용자 인터페이스의에서 첫 번째 모델을 참조 하세요.
+MDI 애플리케이션 창 메뉴의 새 창 명령을 사용하면 같은 문서에 두 번째 프레임 창을 만들 수 있습니다. 자세한 내용은 그림 다중 뷰 사용자 인터페이스의에서 첫 번째 모델을 참조 하세요.
 
 ##  <a name="_core_splitter_windows"></a> Splitter Windows
 
@@ -85,7 +85,6 @@ MDI 응용 프로그램 창 메뉴의 새 창 명령을 사용하면 같은 문�
 
 자세한 내용은 [MFC 참조](../mfc/reference/csplitterwnd-class.md) 의 *CSplitterWnd* 클래스 및 [MFC 샘플](../visual-cpp-samples.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

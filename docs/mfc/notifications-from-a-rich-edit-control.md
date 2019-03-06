@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], notifications
 - notifications [MFC], from CRichEditCtrl
 ms.assetid: eb5304fe-f4f3-4557-9ebf-3095dea383c4
-ms.openlocfilehash: 87168b6e58264b4257b7adfb32207ec1dd40729e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fcb1dda1d915dc13e01effed9ba99070b825a15e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529209"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274533"
 ---
 # <a name="notifications-from-a-rich-edit-control"></a>Rich Edit 컨트롤에서 보내는 알림
 
@@ -30,8 +30,7 @@ Rich edit 컨트롤에 대 한 이벤트 마스크를 설정 하려면 사용 �
 
 - 응용 프로그램 EN_SELCHANGE EN_SELCHANGE 알림 메시지를 처리 하 여 현재 선택 영역이 변경 될 때 감지할 수 있습니다. 알림 메시지를 지정 된 [SELCHANGE](/windows/desktop/api/richedit/ns-richedit-_selchange) 새 선택 영역에 대 한 정보를 포함 하는 구조체.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

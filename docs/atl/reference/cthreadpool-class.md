@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CThreadPool class
 ms.assetid: 06683718-01b9-413c-9481-2dc1734ec70f
-ms.openlocfilehash: b1cf1dfc623edbb2b6e71aa6476a2fe0cccbc20b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d363de0d787ecc5015093005b39a379acd82e71
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677190"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262703"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool 클래스
 
@@ -40,7 +40,7 @@ class CThreadPool : public IThreadPoolConfig
 
 #### <a name="parameters"></a>매개 변수
 
-*작업자*<br/>
+*Worker*<br/>
 따르는 클래스를 [worker 원형](../../atl/reference/worker-archetype.md) 항목 스레드 풀의 큐에 대기 하는 작업을 처리 하는 데 사용 되는 코드를 제공 합니다.
 
 *ThreadTraits*<br/>
@@ -53,7 +53,7 @@ class CThreadPool : public IThreadPoolConfig
 |이름|설명|
 |----------|-----------------|
 |[CThreadPool::CThreadPool](#cthreadpool)|스레드 풀에 대 한 생성자입니다.|
-|[CThreadPool:: ~ CThreadPool](#dtor)|스레드 풀에 대 한 소멸자입니다.|
+|[CThreadPool::~CThreadPool](#dtor)|스레드 풀에 대 한 소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -84,7 +84,7 @@ class CThreadPool : public IThreadPoolConfig
 
 예는 *작업자* 클래스는 [CNonStatelessWorker 클래스](../../atl/reference/cnonstatelessworker-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IUnknown`
 
@@ -124,7 +124,7 @@ CThreadPool() throw();
 
 ATLS_DEFAULT_THREADPOOLSHUTDOWNTIMEOUT 시간 제한 값을 초기화합니다. 기본 시간은 36 초입니다. 필요한 경우와 atlutil.h 포함 하기 전에이 기호에 대 한 고유한 양의 정수 값을 정의할 수 있습니다.
 
-##  <a name="dtor"></a>  CThreadPool:: ~ CThreadPool
+##  <a name="dtor"></a>  CThreadPool::~CThreadPool
 
 스레드 풀에 대 한 소멸자입니다.
 
@@ -254,7 +254,7 @@ BOOL QueueRequest(Worker::RequestType request) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*요청*<br/>
+*request*<br/>
 요청 큐에 대기할 수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -346,7 +346,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
 
 이 메서드는 풀의 모든 스레드를 종료 요청을 게시합니다. 제한 시간이 만료 되 면이 메서드를 호출 합니다 [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) 스레드의 종료 되지 않았습니다. 이 메서드는 클래스의 소멸자에서 자동으로 호출 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)<br/>
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>

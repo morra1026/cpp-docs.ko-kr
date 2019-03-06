@@ -8,12 +8,12 @@ f1_keywords:
 - atlbase/ATL::AtlComModuleRevokeClassObjects
 - atlbase/ATL::AtlComModuleGetClassObject
 ms.assetid: c2f0a35d-857c-4538-a44d-c4ea0db63b06
-ms.openlocfilehash: f97a4ff0dc28077d42fe0f8ca4992946db4082f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2088bd938aeac70193165cdbd43bd10203ecc49e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441793"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275313"
 ---
 # <a name="server-registration-global-functions"></a>서버 등록 전역 함수
 
@@ -53,7 +53,7 @@ COM 모듈에 대 한 포인터입니다.
 *bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록할 개체의 CLSID 가리킵니다. NULL 인 경우 개체 맵의 모든 개체 등록 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -85,7 +85,7 @@ COM 모듈에 대 한 포인터입니다.
 *bUnRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. Null 인 경우 개체 맵의 모든 개체를 등록 취소할 수 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -183,6 +183,6 @@ COM 모듈에 대 한 포인터입니다.
 
 이 도우미 함수를 사용 하 여 [CComModule::GetClassObject](ccommodule-class.md#getclassobject) (ATL 7.0에서 사용 되지 않음) 및 [CAtlDllModuleT::GetClassObject](catldllmodulet-class.md#getclassobject)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [함수](../../atl/reference/atl-functions.md)

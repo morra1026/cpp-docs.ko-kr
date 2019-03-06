@@ -12,12 +12,12 @@ helpviewer_keywords:
 - '& operator, address-of operator'
 - CAdapt class
 ms.assetid: 0bb695a5-72fe-43d1-8f39-7e4da6e34765
-ms.openlocfilehash: ec42ab7a9dd36648b1405859cf02bc194f75a73c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39184e952475fa0f05a6fc25c433191ea22b5c16
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614736"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269827"
 ---
 # <a name="cadapt-class"></a>CAdapt 클래스
 
@@ -51,7 +51,7 @@ class CAdapt
 |[CAdapt::operator T &](#operator_t_amp)|`m_T`에 대한 참조를 반환합니다.|
 |[CAdapt::operator <](#operator_lt)|조정된 형식의 개체를 `m_T`와 비교합니다.|
 |[CAdapt::operator =](#operator_eq)|조정된 형식의 개체를 `m_T`에 할당합니다.|
-|[CAdapt::operator = =](#operator_eq_eq)|조정된 형식의 개체를 `m_T`와 비교합니다.|
+|[CAdapt::operator ==](#operator_eq_eq)|조정된 형식의 개체를 `m_T`와 비교합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -127,7 +127,7 @@ operator T&();
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 참조 `m_T`합니다.
+`m_T`에 대한 참조입니다.
 
 ##  <a name="operator_lt"></a>  CAdapt::operator &lt;
 
@@ -168,7 +168,7 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 현재 개체에 대 한 참조입니다.
 
-##  <a name="operator_eq_eq"></a>  CAdapt::operator = =
+##  <a name="operator_eq_eq"></a>  CAdapt::operator ==
 
 사용 하 여 조정 된 형식의 개체를 비교 [m_T](#m_t)합니다.
 
@@ -185,6 +185,6 @@ bool operator== (const T& rSrc) const;
 
 비교 결과인 *m_T* 하 고 *rSrc*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

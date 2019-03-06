@@ -1,28 +1,28 @@
 ---
-title: '방법: CLR 콘솔 응용 프로그램 만들기(C++/CLI)'
+title: '방법: CLR 콘솔 응용 프로그램 만들기 (C + + /cli CLI)'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - console applications, templates
 - CLR console applications, project template
 ms.assetid: e89bce3c-706f-4ae0-8a90-cb1a0f674e70
-ms.openlocfilehash: fa45578b1e773e954fe692bd1c49e311626c35de
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ce50266eeb17ad858891149489db85b03855aec
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525665"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426339"
 ---
-# <a name="how-to-create-clr-console-applications-ccli"></a>방법: CLR 콘솔 응용 프로그램 만들기(C++/CLI)
+# <a name="how-to-create-clr-console-applications-ccli"></a>방법: CLR 콘솔 응용 프로그램 만들기 (C + + /cli CLI)
 
-콘솔 응용 프로그램 템플릿을 사용하여 이미 필수 프로젝트 참조 및 파일이 있는 콘솔 응용 프로그램 프로젝트를 만들 수 있습니다.
+콘솔 애플리케이션 템플릿을 사용하여 이미 필수 프로젝트 참조 및 파일이 있는 콘솔 애플리케이션 프로젝트를 만들 수 있습니다.
 
 일반적으로 콘솔 응용 프로그램은 독립 실행형 실행 파일로 컴파일되지만 그래픽 사용자 인터페이스가 없습니다. 사용자가 명령 프롬프트에서 콘솔 응용 프로그램을 실행하고 명령 프롬프트를 사용하여 실행 중인 응용 프로그램에 지침을 적용합니다. 또한 명령 프롬프트에서 응용 프로그램이 출력 정보를 제공합니다. 콘솔 응용 프로그램의 즉각성은 사용자 인터페이스 구현에 관계없이 프로그래밍 기법을 배우는 것에 매우 유용합니다.
 
-콘솔 응용 프로그램 템플릿을 사용하여 프로젝트를 만들려면 이러한 참조 및 파일을 자동으로 추가합니다.
+콘솔 애플리케이션 템플릿을 사용하여 프로젝트를 만들려면 이러한 참조 및 파일을 자동으로 추가합니다.
 
 - 이러한.NET Framework 네임스페이스에 대한 참조:
 
-   - [System](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)- 일반적으로 사용되는 값과 참조 데이터 형식, 이벤트와 이벤트 처리기, 인터페이스, 특성 및 처리 예외 등을 정의하는 기본 클래스가 포함됩니다.
+   - <xref:System.AppDomainManager>-일반적으로 사용 되는 값 및 참조 데이터 형식, 이벤트 및 이벤트 처리기, 인터페이스, 특성 및 예외 처리를 정의 하는 기본 클래스가 포함 되어 있습니다.
 
    - mscorlib - .NET Framework 개발을 지원하는 DLL 어셈블리입니다.
 

@@ -42,12 +42,12 @@ helpviewer_keywords:
 - registry, writing to
 - registry, deleting keys
 ms.assetid: 3afce82b-ba2c-4c1a-8404-dc969e1af74b
-ms.openlocfilehash: cf2f97c1c3b389d0ee2b3d4bcdd2d9da2dbb3c8d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 56a3289d5546db21c42d22b5e8544913bdaa78cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694857"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283659"
 ---
 # <a name="cregkey-class"></a>CRegKey 클래스
 
@@ -69,7 +69,7 @@ class CRegKey
 |이름|설명|
 |----------|-----------------|
 |[CRegKey::CRegKey](#cregkey)|생성자입니다.|
-|[CRegKey:: ~ CRegKey](#dtor)|소멸자입니다.|
+|[CRegKey::~CRegKey](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -182,7 +182,7 @@ LONG Create(
 *hKeyParent*<br/>
 열린 키는의 핸들입니다.
 
-*lpszkeyname 만들기*<br/>
+*lpszKeyName*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
 
 *lpszClass*<br/>
@@ -234,7 +234,7 @@ CAtlTransactionManager 개체에 대한 포인터
 
 새 `CRegKey` 개체를 만듭니다. 기존 개체를 만들 수 있습니다 `CRegKey` 개체 또는 레지스트리 키에 대 한 핸들입니다.
 
-##  <a name="dtor"></a>  CRegKey:: ~ CRegKey
+##  <a name="dtor"></a>  CRegKey::~CRegKey
 
 소멸자입니다.
 
@@ -454,7 +454,7 @@ LONG Open(
 *hKeyParent*<br/>
 열린 키는의 핸들입니다.
 
-*lpszkeyname 만들기*<br/>
+*lpszKeyName*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
 
 *samDesired*<br/>
@@ -857,7 +857,7 @@ LONG SetKeyValue(
 
 ### <a name="parameters"></a>매개 변수
 
-*lpszkeyname 만들기*<br/>
+*lpszKeyName*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. [m_hKey](#m_hkey)합니다.
 
 *lpszValue*<br/>
@@ -1028,7 +1028,7 @@ ATL_DEPRECATED LONG SetValue(
 *hKeyParent*<br/>
 열린 키는의 핸들입니다.
 
-*lpszkeyname 만들기*<br/>
+*lpszKeyName*<br/>
 만들거나 열 수는 키의 이름을 지정 합니다. 이 이름은는 하위 키를 사용 해야 합니다. *hKeyParent*합니다.
 
 *lpszValue*<br/>
@@ -1056,7 +1056,7 @@ False 인 경우에 문자열 형식 REG_SZ 인지를 나타냅니다. True 이�
 
 세 번째 메서드 호출 [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DCOM 예제](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - status bar controls [MFC], settings
 - CStatusBarCtrl class [MFC], settings
 ms.assetid: adeba0c3-17f3-435c-b140-a57845e9ce49
-ms.openlocfilehash: a4806cdc81a536aac0b9472ca043d4d2de027495
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b41997fb9342a651260bc2196d212016dc0deb7e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676527"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285180"
 ---
 # <a name="settings-for-the-cstatusbarctrl"></a>CStatusBarCtrl에 대한 설정
 
@@ -31,8 +31,7 @@ ms.locfileid: "50676527"
 
 호출 하 여 상태 창 테두리의 너비를 검색할 [GetBorders](../mfc/reference/cstatusbarctrl-class.md#getborders)합니다. 이 멤버 함수는 가로 테두리, 세로 테두리 및 사각형 사이의 테두리의 너비를 수신 하는 요소가 3 개인 배열에 대 한 포인터를 포함 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStatusBarCtrl 사용](../mfc/using-cstatusbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

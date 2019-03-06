@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CPageSetupDialog [MFC], PreDrawPage
 - CPageSetupDialog [MFC], m_psd
 ms.assetid: 049c0ac8-f254-4854-9414-7a8271d1447a
-ms.openlocfilehash: d3fdcfa664de93f62b8b4dbcbc6184d08fdf591c
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 9a8940aa23b23281a6de6ce7e75bb1e43341b14a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178084"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277887"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog 클래스
 
@@ -89,7 +89,7 @@ class CPageSetupDialog : public CCommonDialog
 > [!NOTE]
 >  공용 OLE 페이지 설정 대화 상자는 해제 된 후 프레임 워크에서 사용자가 변경한 내용을 저장 되지 않습니다. 응용 프로그램의 문서 또는 응용 프로그램 클래스의 멤버와 같은 영구 위치,이 대화 상자에서 값을 저장 하려면 응용 프로그램 자체는 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -325,7 +325,7 @@ virtual UINT OnDrawPage(
 *pDC*<br/>
 프린터 장치 컨텍스트 포인터입니다.
 
-*n 메시지*<br/>
+*nMessage*<br/>
 그리고 현재 페이지의 영역을 나타내는 메시지를 지정 합니다. 다음 중 하나일 수 있습니다.
 
 - WM_PSD_FULLPAGERECT 전체 페이지 영역입니다.
@@ -373,7 +373,7 @@ virtual UINT PreDrawPage(
 *wPaper*<br/>
 용지 크기를 나타내는 값을 지정 합니다. 이 값 중 하나일 수 있습니다 합니다 **DMPAPER_** 의 설명에 나열 된 값을 [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) 구조입니다.
 
-*wflags에서*<br/>
+*wFlags*<br/>
 용지 또는 봉투의 방향을 나타냅니다 및 프린터 도트 또는 HPPCL (Hewlett Packard 프린터 컨트롤 Language) 장치를 인지 합니다. 이 매개 변수는 다음 값 중 하나를 가질 수 있습니다.
 
 - (도트 매트릭스) 가로 모드로 0x001 용지
@@ -403,9 +403,8 @@ virtual UINT PreDrawPage(
 
 이미지의 그리기를 사용자 지정 하려면이 함수를 재정의 합니다. 이 함수를 재정의 하 고 TRUE를 반환 하는 경우에 전체 이미지를 그릴 해야 합니다. 이 함수를 재정의 하 고 FALSE를 반환 하는 경우 전체 기본 이미지 프레임 워크에서 그려집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
 [CCommonDialog 클래스](../../mfc/reference/ccommondialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

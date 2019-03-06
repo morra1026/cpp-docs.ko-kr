@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArrayBound class
 ms.assetid: dd6299db-5f84-4630-bbf0-f5add5318437
-ms.openlocfilehash: 1997e56fb0b524ffd6cca5dc9d5983fda25a42e1
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: a79079c95536746cf5a4fa4b35caf39a55ca0f42
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518608"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269775"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound 클래스
 
@@ -133,7 +133,7 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*바인딩된*<br/>
+*bound*<br/>
 `CComSafeArrayBound` 개체입니다.
 
 *ulCount*<br/>
@@ -187,6 +187,6 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 상한 값은 요소 및 하한값 값의 수에 따라 달라 집니다. 예를 들어, 하 한은 0 이며 요소 수가 10에 상한 값은 9로 자동으로 설정 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

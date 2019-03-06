@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CD2DBitmapBrush [MFC], m_pBitmapBrush
 - CD2DBitmapBrush [MFC], m_pBitmapBrushProperties
 ms.assetid: 46ebbe34-66e0-44c8-af1d-d129e851de5e
-ms.openlocfilehash: 59c4e5f4e55947a4eab7a5258d8fe2b943bab3ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1569039db8c1f85d3091282b55d7eda253444deb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501571"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294410"
 ---
 # <a name="cd2dbitmapbrush-class"></a>CD2DBitmapBrush 클래스
 
@@ -66,7 +66,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 |이름|설명|
 |----------|-----------------|
 |[CD2DBitmapBrush::CD2DBitmapBrush](#cd2dbitmapbrush)|오버로드됨. 파일에서 CD2DBitmapBrush 개체를 생성합니다.|
-|[CD2DBitmapBrush:: ~ CD2DBitmapBrush](#dtor)|소멸자입니다. D2D 비트맵 brush 개체 소멸 될 때 호출 됩니다.|
+|[CD2DBitmapBrush::~CD2DBitmapBrush](#dtor)|소멸자입니다. D2D 비트맵 brush 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -86,7 +86,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 |[CD2DBitmapBrush::SetExtendModeY](#setextendmodey)|브러시가 비트맵을 지 나 확장 되는 영역을 세로로으로 바둑판식으로 표시 되는 방식을 지정 합니다.|
 |[CD2DBitmapBrush::SetInterpolationMode](#setinterpolationmode)|브러시 비트맵을 크기 조정 또는 회전 하는 경우 사용 되는 보간 모드를 지정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -96,7 +96,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DBitmapBrush::operator ID2D1BitmapBrush *](#operator_id2d1bitmapbrush_star)|반환 ID2D1BitmapBrush 인터페이스|
+|[CD2DBitmapBrush::operator ID2D1BitmapBrush*](#operator_id2d1bitmapbrush_star)|반환 ID2D1BitmapBrush 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -106,7 +106,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 |[CD2DBitmapBrush::m_pBitmapBrush](#m_pbitmapbrush)|ID2D1BitmapBrush 개체에 대 한 포인터를 저장합니다.|
 |[CD2DBitmapBrush::m_pBitmapBrushProperties](#m_pbitmapbrushproperties)|브러시 속성은 비트맵입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -120,7 +120,7 @@ class CD2DBitmapBrush : public CD2DBrush;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="dtor"></a>  CD2DBitmapBrush:: ~ CD2DBitmapBrush
+##  <a name="dtor"></a>  CD2DBitmapBrush::~CD2DBitmapBrush
 
 소멸자입니다. D2D 비트맵 brush 개체 소멸 될 때 호출 됩니다.
 
@@ -330,7 +330,7 @@ ID2D1BitmapBrush* m_pBitmapBrush;
 D2D1_BITMAP_BRUSH_PROPERTIES* m_pBitmapBrushProperties;
 ```
 
-##  <a name="operator_id2d1bitmapbrush_star"></a>  CD2DBitmapBrush::operator ID2D1BitmapBrush *
+##  <a name="operator_id2d1bitmapbrush_star"></a>  CD2DBitmapBrush::operator ID2D1BitmapBrush*
 
 반환 ID2D1BitmapBrush 인터페이스
 
@@ -394,6 +394,6 @@ void SetInterpolationMode(D2D1_BITMAP_INTERPOLATION_MODE interpolationMode);
 *interpolationMode*<br/>
 브러시 비트맵을 크기 조정 또는 회전 하는 경우 사용 되는 보간 모드
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

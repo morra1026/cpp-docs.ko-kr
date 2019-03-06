@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DSizeU [MFC], CD2DSizeU
 - CD2DSizeU [MFC], IsNull
 ms.assetid: 6e679ba8-2112-43c3-8275-70b660856f02
-ms.openlocfilehash: bad73a53eabe0a4c75483e9871a4fdc4a361449b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6b0bc12933100c6f2401f4f4cb9e1fae52dda65
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512478"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278654"
 ---
 # <a name="cd2dsizeu-class"></a>CD2DSizeU 클래스
 
@@ -47,7 +47,7 @@ class CD2DSizeU : public D2D1_SIZE_U;
 |----------|-----------------|
 |[CD2DSizeU::operator CSize](#operator_csize)|변환 `CD2DSizeU` 에 `CSize` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_SIZE_U`
 
@@ -106,6 +106,6 @@ operator CSize();
 
 D2D 크기의 현재 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

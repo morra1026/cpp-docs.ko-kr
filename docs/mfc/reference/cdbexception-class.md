@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CDBException [MFC], m_strError
 - CDBException [MFC], m_strStateNativeOrigin
 ms.assetid: eb9e1119-89f5-49a7-b9d4-b91cee1ccc82
-ms.openlocfilehash: 6ae0ebb94952408aa2576d4320ce4e00308c458f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8a5195d4d2a3662d79d515c28dc66d1b0a27b24
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549515"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295021"
 ---
 # <a name="cdbexception-class"></a>CDBException 클래스
 
@@ -44,15 +44,15 @@ class CDBException : public CException
 클래스는 예외를 발생 시킨을 확인 하거나 예외를 설명 하는 텍스트 메시지를 표시 하려면를 사용할 수 있는 두 공용 데이터 멤버를 포함 합니다. `CDBException` 개체 생성 되며 데이터베이스 클래스의 멤버 함수에 의해 throw 됩니다.
 
 > [!NOTE]
->  이 클래스는 MFC의 ODBC Open Database Connectivity () 클래스 중 하나입니다. 대신 최신 데이터 액세스 개체 (DAO) 클래스를 사용할 경우 사용 하 여 [CDaoException](../../mfc/reference/cdaoexception-class.md) 대신 합니다. 모든 DAO 클래스 이름에는 접두사로 "CDao"에 있습니다. 자세한 내용은 문서 참조 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
+>  이 클래스는 MFC의 ODBC Open Database Connectivity () 클래스 중 하나입니다. 대신 최신 데이터 액세스 개체 (DAO) 클래스를 사용할 경우 사용 하 여 [CDaoException](../../mfc/reference/cdaoexception-class.md) 대신 합니다. 모든 DAO 클래스 이름에는 접두사로 "CDao"에 있습니다. 자세한 내용은 문서를 참조 하세요. [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
 
 예외는 외부 데이터 원본 등의 프로그램의 컨트롤 상태와 관련 된 비정상적인 실행의 경우 또는 네트워크 I/O 오류입니다. 정상적인 프로그램 실행 중에 예상 하는 오류는 일반적으로 간주 되지 예외.
 
 범위 내에서 이러한 개체에 액세스할 수 있습니다는 **CATCH** 식입니다. Throw 할 수 있습니다 `CDBException` 사용 하 여 사용자 고유의 코드에서 개체를 `AfxThrowDBException` 전역 함수입니다.
 
-일반적으로 되었거나 곧에서 예외 처리에 대 한 자세한 내용은 `CDBException` 개체, 문서를 참조 하세요. [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 하 고 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다.
+일반적으로 되었거나 곧에서 예외 처리에 대 한 자세한 내용은 `CDBException` 문서를 참조 하는 개체를 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 및 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -132,9 +132,9 @@ SQL 맨 앞에 나오는 코드는 ODBC에서 정의 됩니다. AFX 맨 앞에 �
 
 문자열의 폼 "상태 %s, 네이티브 %ld, 원본 %s"를 순서 대로 형식 코드를 설명 하는 값으로 대체 됩니다 여기서 다음과 같습니다:::.
 
-- SQLSTATE, 5 문자 오류 코드가 포함 된 null로 끝나는 문자열을 반환 합니다 *szSqlState* ODBC 함수의 매개 변수가 `SQLError`합니다. 부록 A에서에서 SQLSTATE 값 나와 [ODBC 오류 코드](/previous-versions/windows/desktop/ms714687)를 *ODBC 프로그래머 참조*합니다. 예: "S0022"입니다.
+- SQLSTATE, 5 문자 오류 코드가 포함 된 null로 끝나는 문자열을 반환 합니다 *szSqlState* ODBC 함수의 매개 변수가 `SQLError`합니다. 부록 A에서에서 SQLSTATE 값 나와 [ODBC 오류 코드](/previous-versions/windows/desktop/ms714687)를 *ODBC 프로그래머 참조*합니다. 예제: "S0022".
 
-- 에 반환 된 원시 오류 코드, 데이터 원본에 특정 합니다 *pfNativeError* 의 매개 변수는 `SQLError` 함수입니다. 예제: 207 합니다.
+- 에 반환 된 원시 오류 코드, 데이터 원본에 특정 합니다 *pfNativeError* 의 매개 변수는 `SQLError` 함수입니다. 예제: 207.
 
 - 반환 된 오류 메시지 텍스트를 *szErrorMsg* 의 매개 변수는 `SQLError` 함수입니다. 이 메시지는 여러 개의 대괄호로 묶은 이름을 이루어져 있습니다. 오류가 사용자에 해당 원본에서 전달 되는, 각 ODBC 구성 요소 (데이터 원본, 드라이버, 드라이버 관리자)는 고유 이름을 추가 합니다. 이 정보는 오류의 출처를 정확 하 게 찾을 수 있습니다. 예: [Microsoft] [ODBC SQL Server Driver] [SQL Server]
 
@@ -144,13 +144,13 @@ SQL 맨 앞에 나오는 코드는 ODBC에서 정의 됩니다. AFX 맨 앞에 �
 
 ### <a name="example"></a>예제
 
-  ODBC:에서 "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server] 잘못 된 열 이름 'ColName'"
+  ODBC에서: "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server] 잘못 된 열 이름 'ColName'"
 
-`m_strStateNativeOrigin`: "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server]"
+`m_strStateNativeOrigin`의 경우 "상태: S0022, 네이티브: 207, 원본: [Microsoft] [ODBC SQL Server Driver] [SQL Server]"
 
-`m_strError`: "잘못 된 열 이름 'ColName'"
+`m_strError`의 경우 "잘못 된 열 이름 'ColName'"
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

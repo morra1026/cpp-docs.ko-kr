@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CAnimationStoryboardEventHandler [MFC], OnStoryboardUpdated
 - CAnimationStoryboardEventHandler [MFC], SetAnimationController
 ms.assetid: 10a7e86b-c02d-4124-9a2e-61ecf8ac62fc
-ms.openlocfilehash: b5dbe10f0fd80956b395ec385969750c3ee0c05b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d12f38491cf3aafca41756ce97e1cad44deb67d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632871"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296399"
 ---
 # <a name="canimationstoryboardeventhandler-class"></a>CAnimationStoryboardEventHandler 클래스
 
@@ -54,7 +54,7 @@ class CAnimationStoryboardEventHandler : public CUIAnimationStoryboardEventHandl
 
 이 이벤트 처리기 생성 되어 전달할 `IUIAnimationStoryboard::SetStoryboardEventHandler` 메서드를 호출할 때 `CAnimationController::EnableStoryboardEventHandler`합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CUIAnimationCallbackBase`
 
@@ -108,7 +108,7 @@ IFACEMETHOD(OnStoryboardStatusChanged) (
 
 ### <a name="parameters"></a>매개 변수
 
-*스토리 보드*<br/>
+*storyboard*<br/>
 상태 스토리 보드에 대 한 포인터 변경 되었습니다.
 
 *newStatus*<br/>
@@ -131,7 +131,7 @@ IFACEMETHOD(OnStoryboardUpdated) (__in IUIAnimationStoryboard* storyboard);
 
 ### <a name="parameters"></a>매개 변수
 
-*스토리 보드*<br/>
+*storyboard*<br/>
 업데이트 된 스토리 보드에 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -151,6 +151,6 @@ void SetAnimationController(CAnimationController* pAnimationController);
 *pAnimationController*<br/>
 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CNotSupportedException [MFC], CNotSupportedException
 ms.assetid: e517391b-eb94-4c39-ae32-87b45bf7d624
-ms.openlocfilehash: 0eb3bf0de51345ed4316d2a1c5c29b8ecb3e8bba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c3af508cd39e277ca4ae0a9aad5e639f66edc53b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456565"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294813"
 ---
 # <a name="cnotsupportedexception-class"></a>CNotSupportedException 클래스
 
@@ -39,7 +39,7 @@ class CNotSupportedException : public CSimpleException
 
 사용 하 여 대 한 자세한 내용은 `CNotSupportedException`, 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -65,8 +65,7 @@ CNotSupportedException();
 
 이 생성자를 직접 사용 하지 않고 대신 전역 함수를 호출 [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception)합니다. 예외 처리에 대 한 자세한 내용은 문서 참조 [MFC의 예외 처리](../exception-handling-in-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](cexception-class.md)<br/>
 [계층 구조 차트](../hierarchy-chart.md)
-

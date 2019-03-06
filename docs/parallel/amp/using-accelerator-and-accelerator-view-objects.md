@@ -2,12 +2,12 @@
 title: accelerator 및 accelerator_view 개체 사용
 ms.date: 11/04/2016
 ms.assetid: 18f0dc66-8236-4420-9f46-1a14f2c3fba1
-ms.openlocfilehash: 4144adf288ddefd7f7dd00ada91f97aea94e6bce
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05ca53d075867fefa43f7471bb795040d075274e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668600"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272903"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>accelerator 및 accelerator_view 개체 사용
 
@@ -168,9 +168,9 @@ bool pick_accelerator()
 
 세 가지 특수 액셀러레이터의 장치 경로 속성으로 사용할 수는 `accelerator` 클래스:
 
-- [accelerator::direct3d_ref 데이터 멤버](reference/accelerator-class.md#direct3d_ref):이 단일 스레드 가속기는 일반 그래픽 카드를 에뮬레이트 하려면 CPU에서 소프트웨어를 사용 합니다. 디버깅을 기본적으로 사용 되지만 하드웨어 액셀러레이터 보다 느리기 때문에 프로덕션 환경에서 유용 하지 않습니다. 또한 DirectX SDK 및 Windows SDK에만 사용할 수 있습니다 및 고객의 컴퓨터에 설치 될 가능성이 있습니다. 자세한 내용은 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)합니다.
+- [accelerator::direct3d_ref 데이터 멤버](reference/accelerator-class.md#direct3d_ref): 이 단일 스레드 가속기는 일반 그래픽 카드를 에뮬레이트 하려면 CPU에서 소프트웨어를 사용 합니다. 디버깅을 기본적으로 사용 되지만 하드웨어 액셀러레이터 보다 느리기 때문에 프로덕션 환경에서 유용 하지 않습니다. 또한 DirectX SDK 및 Windows SDK에만 사용할 수 있습니다 및 고객의 컴퓨터에 설치 될 가능성이 있습니다. 자세한 내용은 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)합니다.
 
-- [accelerator::direct3d_warp 데이터 멤버](reference/accelerator-class.md#direct3d_warp):이 가속기 (SSE) 사용 하는 다중 코어 Cpu에서 c + + AMP 코드를 실행 하는 것에 대 한 대체 (fallback) 솔루션을 제공 합니다.
+- [accelerator::direct3d_warp 데이터 멤버](reference/accelerator-class.md#direct3d_warp): 이 가속기 (SSE) 사용 하는 다중 코어 Cpu에서 c + + AMP 코드를 실행 하는 것에 대 한 대체 (fallback) 솔루션을 제공 합니다.
 
 - [accelerator:: cpu_accelerator 데이터 멤버](reference/accelerator-class.md#cpu_accelerator): 스테이징 배열을 설정에 대 한이 가속기를 사용할 수 있습니다. 이 c + + AMP 코드를 실행할 수 없습니다. 자세한 내용은 참조는 [Staging Arrays in c + + AMP](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/11/09/staging-arrays-in-c-amp/) Parallel Programming in Native Code 블로그의에 게시 합니다.
 
@@ -178,7 +178,7 @@ bool pick_accelerator()
 
 C + + AMP 런타임 간의 상호 운용성을 지원 합니다 `accelerator_view` 클래스와 Direct3D [ID3D11Device 인터페이스](/windows/desktop/api/d3d11/nn-d3d11-id3d11device)합니다. [create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) 메서드는 `IUnknown` 인터페이스와 반환을 `accelerator_view` 개체입니다. 합니다 [get_device](reference/concurrency-direct3d-namespace-functions-amp.md#get_device) 메서드는 `accelerator_view` 개체를 반환 합니다는 `IUnknown` 인터페이스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)<br/>

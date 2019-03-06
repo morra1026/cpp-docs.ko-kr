@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CBitmap [MFC], SetBitmapBits
 - CBitmap [MFC], SetBitmapDimension
 ms.assetid: 3980616a-c59d-495a-86e6-62bd3889c84c
-ms.openlocfilehash: 6722011bf343a391fcc7180558eead5c039afc59
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 97d4561da12492c158673c4cc79c2baefd973c75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178176"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296732"
 ---
 # <a name="cbitmap-class"></a>CBitmap 클래스
 
@@ -64,7 +64,7 @@ class CBitmap : public CGdiObject
 |이름|설명|
 |----------|-----------------|
 |[CBitmap::CreateBitmap](#createbitmap)|지정 된 너비, 높이 및 비트 패턴이 있는 장치 종속적 메모리 비트맵을 사용 하 여 개체를 초기화 합니다.|
-|[Cbitmap:: Createbitmapindirect](#createbitmapindirect)|에 지정 된 너비, 높이 및 비트 패턴 (하나는 지정 된 경우)를 사용 하 여 비트맵을 사용 하 여 개체 초기화는 `BITMAP` 구조입니다.|
+|[CBitmap::CreateBitmapIndirect](#createbitmapindirect)|에 지정 된 너비, 높이 및 비트 패턴 (하나는 지정 된 경우)를 사용 하 여 비트맵을 사용 하 여 개체 초기화는 `BITMAP` 구조입니다.|
 |[CBitmap::CreateCompatibleBitmap](#createcompatiblebitmap)|지정 된 장치와 호환 되도록 비트맵을 사용 하 여 개체를 초기화 합니다.|
 |[CBitmap::CreateDiscardableBitmap](#creatediscardablebitmap)|지정 된 장치와 호환 되는 삭제 가능한 비트맵을 사용 하 여 개체를 초기화 합니다.|
 |[CBitmap::FromHandle](#fromhandle)|에 대 한 포인터를 반환 합니다는 `CBitmap` 개체는 Windows 핸들을 지정한 경우 `HBITMAP` 비트맵입니다.|
@@ -157,7 +157,7 @@ BOOL CreateBitmap(
 
 자세한 내용은 참조에 대 한 설명을 `bmBits` 필드에 `BITMAP` 구조입니다. [BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap) 구조체는 [CBitmap::CreateBitmapIndirect](#createbitmapindirect) 멤버 함수에서 설명합니다.
 
-##  <a name="createbitmapindirect"></a>  Cbitmap:: Createbitmapindirect
+##  <a name="createbitmapindirect"></a>  CBitmap::CreateBitmapIndirect
 
 너비, 높이 및 비트 패턴 (하나는 지정 된 경우)로 가리키는 구조체에 지정 된 비트맵이 초기화 *lpBitmap*합니다.
 
@@ -453,7 +453,7 @@ OBM_OLD로 시작 하는 비트맵 이름 3.0 이전 Windows 버전에서 사용
 
 Note 상수 OEMRESOURCE는 WINDOWS를 포함 하기 전에 정의 되어야 합니다. 중 하나를 사용 하려면 H 합니다 **OBM_** 상수입니다.
 
-##  <a name="operator_hbitmap"></a>  HBITMAP CBitmap::operator
+##  <a name="operator_hbitmap"></a>  CBitmap::operator HBITMAP
 
 이 연산자를 사용 하 여 연결 된 Windows GDI 핸들을 가져오려면는 `CBitmap` 개체입니다.
 
@@ -519,9 +519,8 @@ CSize SetBitmapDimension(
 
 GDI 반환 하는 응용 프로그램을 호출 하는 경우를 제외 하 고 이러한 값을 사용 하지 않는 합니다 [GetBitmapDimension](#getbitmapdimension) 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [CGdiObject 클래스](../../mfc/reference/cgdiobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

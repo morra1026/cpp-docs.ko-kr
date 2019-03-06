@@ -1,18 +1,18 @@
 ---
-title: '방법: 예외 처리를 사용하여 병렬 루프 중단'
+title: '방법: 병렬 루프에서 중단을 처리 하는 예외 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - search algorithm, writing [Concurrency Runtime]
 - writing a search algorithm [Concurrency Runtime]
 ms.assetid: 16d7278c-2d10-4014-9f58-f1899e719ff9
-ms.openlocfilehash: a9557f2fc809647215dbb5fd928f5c638af6ed62
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19d732d98f24172471d96cd5e2962b2a99ab0203
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532888"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262313"
 ---
-# <a name="how-to-use-exception-handling-to-break-from-a-parallel-loop"></a>방법: 예외 처리를 사용하여 병렬 루프 중단
+# <a name="how-to-use-exception-handling-to-break-from-a-parallel-loop"></a>방법: 병렬 루프에서 중단을 처리 하는 예외 사용
 
 이 항목에서는 기본적인 트리 구조에 대 한 검색 알고리즘을 작성 하는 방법을 보여 줍니다.
 
@@ -64,11 +64,11 @@ Did not find node with value 17522.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `task-tree-search.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `task-tree-search.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc 작업-트리-search.cpp**
+**cl.exe /EHsc task-tree-search.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>
 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
@@ -77,4 +77,3 @@ Did not find node with value 17522.
 [task_group 클래스](reference/task-group-class.md)<br/>
 [structured_task_group 클래스](../../parallel/concrt/reference/structured-task-group-class.md)<br/>
 [parallel_for_each 함수](reference/concurrency-namespace-functions.md#parallel_for_each)
-

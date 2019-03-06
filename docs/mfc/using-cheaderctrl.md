@@ -7,12 +7,12 @@ helpviewer_keywords:
 - header controls [MFC], using
 - CHeaderCtrl class [MFC]
 ms.assetid: fb3e512b-9539-43c4-a7e7-3fafd6d0706e
-ms.openlocfilehash: 7fde3596ef244afd611f790d62570b1ee4ba6f7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf99aad508aee52bc8d345ca084ef96ef40f803b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540467"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288625"
 ---
 # <a name="using-cheaderctrl"></a>CHeaderCtrl 사용
 
@@ -23,7 +23,7 @@ ms.locfileid: "50540467"
 > [!NOTE]
 >  [CListCtrl](../mfc/reference/clistctrl-class.md) 포함 된 헤더 컨트롤을 제공 하 고 [CListView](../mfc/reference/clistview-class.md) 캡슐화 `CListCtrl` MFC 클래스에 있습니다. 일반적으로 사용 하 여 생각할 `CHeaderCtrl` 직접 그리는 하려는 레이블 목록.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [헤더 컨트롤 및 목록 컨트롤](../mfc/header-control-and-list-control.md)
 
@@ -49,7 +49,6 @@ ms.locfileid: "50540467"
 
 - [헤더 컨트롤 알림 처리](../mfc/processing-header-control-notifications.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

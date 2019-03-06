@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: fe5503eb78954bf39a135cd0e4acda6c37fc5fa9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5abcf838308d8965f3c55dc7d85dbac974825394
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568703"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426396"
 ---
 # <a name="cipaddressctrl-class"></a>CIPAddressCtrl 클래스
 
@@ -70,7 +70,7 @@ class CIPAddressCtrl : public CWnd
 
 IP 주소 컨트롤에 대 한 자세한 내용은 참조 하세요. [IP 주소 컨트롤](/windows/desktop/Controls/ip-address-controls) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -122,7 +122,7 @@ virtual BOOL Create(
 IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) windows 스타일의 목록은 Windows SDK에 있습니다.
 
 *rect*<br/>
-IP 주소 컨트롤의 크기와 위치에 대 한 참조입니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+IP 주소 컨트롤의 크기와 위치에 대 한 참조입니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 IP 주소 컨트롤의 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.
@@ -166,7 +166,7 @@ virtual BOOL CreateEx(
 IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) windows 스타일의 목록은 Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -329,8 +329,7 @@ void SetFieldRange(
 
 이 멤버 함수는 Win32 메시지의 동작을 구현 [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange)Windows SDK에 설명 된 대로 합니다. 두 매개 변수를 사용 하 여 *nLower* 하 고 *nUpper*대신 필드의 아래쪽과 위쪽 한계를 나타내기 위해 합니다 *wRange* Win32 메시지를 사용 하는 매개 변수.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

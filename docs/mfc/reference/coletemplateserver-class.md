@@ -14,16 +14,16 @@ helpviewer_keywords:
 - COleTemplateServer [MFC], Unregister
 - COleTemplateServer [MFC], UpdateRegistry
 ms.assetid: 47a2887d-8162-4993-a842-a784177c7f5c
-ms.openlocfilehash: f66936c597b8c595dc21ae6994d7af0477e8d2aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcc79f781be3a0292398e4f211ea55f5403b6b8f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528650"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302886"
 ---
 # <a name="coletemplateserver-class"></a>COleTemplateServer 클래스
 
-OLE 비주얼 편집 서버, 자동화 서버 및 링크 컨테이너(포함에 대한 링크를 지원하는 응용 프로그램)에 사용합니다.
+OLE 비주얼 편집 서버, 자동화 서버 및 링크 컨테이너(포함에 대한 링크를 지원하는 애플리케이션)에 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,9 +53,9 @@ class COleTemplateServer : public COleObjectFactory
 
 `COleTemplateServer` 재정의 된 `OnCreateInstance` 멤버 함수를 정의한 `COleObjectFactory`합니다. 이 멤버 함수는 적절 한 형식의 c + + 개체를 만드는 프레임 워크에서 호출 됩니다.
 
-서버에 대 한 자세한 내용은 문서 참조 [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
+서버에 대 한 자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -156,7 +156,7 @@ AFXDISP에 정의 되어 있는 OLE_APPTYPE 열거형의 값입니다. 8. 다음
 *rglpszOverwrite*<br/>
 위의 모든 항목의 존재 여부에 관계 없이 레지스트리에 기록 되는 목록 항목입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 등록할 클래스 인지 확인 합니다. 하는 경우 *b 등록 하십시오* 가 TRUE 인 클래스는 시스템 레지스트리를 사용 하 여 등록 됩니다. 그렇지 않으면 클래스 등록 취소합니다.
 
 ### <a name="remarks"></a>설명
@@ -169,9 +169,9 @@ AFXDISP에 정의 되어 있는 OLE_APPTYPE 열거형의 값입니다. 8. 다음
 
 자세한 내용은 [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface)을 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [COleObjectFactory 클래스](../../mfc/reference/coleobjectfactory-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleServerDoc 클래스](../../mfc/reference/coleserverdoc-class.md)<br/>

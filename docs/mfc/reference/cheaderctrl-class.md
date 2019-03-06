@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: 56c694283c5143174b0ce7370d98a244c056bc1e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51cdfb481892ba5057d4ca26ff4d6e51665557e5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496020"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415619"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 
@@ -142,7 +142,7 @@ Windows 95/Internet Explorer 4.0 공용 컨트롤에 대 한 추가 기능은 �
 
 사용에 대 한 자세한 내용은 `CHeaderCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CHeaderCtrl 사용 하 여](../../mfc/using-cheaderctrl.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -231,7 +231,7 @@ virtual BOOL Create(
 헤더 컨트롤의 스타일을 지정합니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-헤더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+헤더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 일반적으로 헤더 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -301,7 +301,7 @@ virtual BOOL CreateEx(
 헤더 컨트롤의 스타일입니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles) Windows SDK에 있습니다. 참조 [만들기](#create) 추가 스타일의 목록은 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -543,7 +543,7 @@ BOOL GetItemDropDownRect(
 |매개 변수|설명|
 |---------------|-----------------|
 |*iItem*|[in] 해당 스타일은 HDF_SPLITBUTTON 헤더 항목의 0부터 시작 인덱스입니다. 자세한 내용은 참조 하세요. 합니다 `fmt` 의 멤버는 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 구조입니다.|
-|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.|
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 경계 사각형 정보를 얻습니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -581,7 +581,7 @@ BOOL GetItemRect(
 헤더 컨트롤 항목의 0부터 시작 하는 인덱스입니다.
 
 *lpRect*<br/>
-주소에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.
+주소에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형 정보를 수신 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -633,7 +633,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.|
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형 정보를 수신 하는 구조입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -858,7 +858,7 @@ int SetHotDivider(int nIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 포인터의 위치입니다. 헤더 컨트롤에 대 한 포인터의 위치에 따라 적절 한 구분선 강조 표시 합니다.
 
 *nIndex*<br/>
@@ -957,7 +957,7 @@ BOOL SetOrderArray(
 
   예를 참조 하세요 [CHeaderCtrl::GetOrderArray](#getorderarray)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

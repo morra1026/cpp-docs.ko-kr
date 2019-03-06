@@ -8,12 +8,12 @@ helpviewer_keywords:
 - I/O [MFC], options
 - I/O [MFC], file-based options
 ms.assetid: d664b175-3b4a-40c3-b14b-39de6b12e419
-ms.openlocfilehash: 1144337df9657d63c53a13e03cf31eb487ce4068
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 760c213c3af7f9c75374f04e3dfc6b9499eade5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585460"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261969"
 ---
 # <a name="recommendations-for-handling-inputoutput"></a>입력/출력 처리에 대한 권장 사항
 
@@ -25,9 +25,9 @@ ms.locfileid: "50585460"
 
      **응용 프로그램 전체 파일을 메모리로 파일 열기에 읽기 및 쓰기 전체 파일을 다시 디스크에 파일 저장**
 
-   - 예: 기본 MFC 문서 사례입니다. 사용 하 여 `CDocument` 직렬화 합니다.
+   - 예: 이 경우 기본 MFC 문서. 사용 하 여 `CDocument` 직렬화 합니다.
 
-   - 아니요:이 경우 일반적으로 파일의 업데이트 트랜잭션 기반 합니다. 트랜잭션당 기준 파일을 업데이트 하 고 필요 하지 않습니다 `CDocument` 직렬화 합니다.
+   - 아니요: 이 경우 일반적으로 파일의 업데이트 트랜잭션 기반 합니다. 트랜잭션당 기준 파일을 업데이트 하 고 필요 하지 않습니다 `CDocument` 직렬화 합니다.
 
 - 아니요, 기본 데이터 디스크 파일에 상주 하지 않습니다.
 
@@ -47,6 +47,6 @@ ms.locfileid: "50585460"
 
 Serialization에 대 한 자세한 내용은 [Serialization](../mfc/serialization-in-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[Serialization: Serialization과 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)
+[Serialization: Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)

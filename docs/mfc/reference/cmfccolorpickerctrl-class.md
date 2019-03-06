@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCColorPickerCtrl [MFC], SetType
 - CMFCColorPickerCtrl [MFC], DrawCursor
 ms.assetid: b9bbd03c-beb0-4b55-9765-9985fd05e5dc
-ms.openlocfilehash: 38fe09b5fdde85dad485e126f6c094196fe68ff4
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 048430c78dfed4158f6fb84eacc07972b79d8a51
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176928"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276015"
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl 클래스
 
@@ -85,7 +85,7 @@ class CMFCColorPickerCtrl : public CButton
 |[CMFCColorPickerCtrl::SetSaturation](#setsaturation)|현재 선택한 색의 채도 구성 요소를 변경합니다.|
 |[CMFCColorPickerCtrl::SetType](#settype)|표시할 색 선택 컨트롤의 형식을 설정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -116,7 +116,7 @@ class CMFCColorPickerCtrl : public CButton
 [!code-cpp[NVC_MFC_NewControls#4](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#5](../../mfc/reference/codesnippet/cpp/cmfccolorpickerctrl-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -193,13 +193,13 @@ void GetHLS(
 
 ### <a name="parameters"></a>매개 변수
 
-*Hue*<br/>
+*hue*<br/>
 [out] Hue 정보를 수신 하는 double 형식의 변수에 대 한 포인터입니다.
 
-*광도*<br/>
+*luminance*<br/>
 [out] 광도 정보를 수신 하는 double 형식의 변수에 대 한 포인터입니다.
 
-*채도*<br/>
+*saturation*<br/>
 [out] 채도 정보를 수신 하는 double 형식의 변수에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -317,13 +317,13 @@ void SetHLS(
 
 ### <a name="parameters"></a>매개 변수
 
-*Hue*<br/>
+*hue*<br/>
 [in] 색상 값입니다.
 
-*광도*<br/>
+*luminance*<br/>
 [in] 광도 값입니다.
 
-*채도*<br/>
+*saturation*<br/>
 [in] 채도 값입니다.
 
 *bInvalidate*<br/>
@@ -446,7 +446,7 @@ void SetType(COLORTYPE colorType);
 
 색 선택 컨트롤 형식을 지정 하려면 Windows 컨트롤을 만들기 전에이 메서드를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -14,16 +14,16 @@ helpviewer_keywords:
 - COleCmdUI [MFC], SetCheck
 - COleCmdUI [MFC], SetText
 ms.assetid: a2d5ce08-6657-45d3-8673-2a9f32d50eec
-ms.openlocfilehash: 30caf7b42cf570a5dcd92d48817ef3743cf63811
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5dc4e9504805146a9eff0f5ab937868226e4516e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677437"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270864"
 ---
 # <a name="colecmdui-class"></a>COleCmdUI 클래스
 
-응용 프로그램의 `IOleCommandTarget`기반 기능과 관련된 사용자 인터페이스 개체의 상태를 업데이트하기 위한 MFC용 메서드를 구현합니다.
+애플리케이션의 `IOleCommandTarget`기반 기능과 관련된 사용자 인터페이스 개체의 상태를 업데이트하기 위한 MFC용 메서드를 구현합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -136,8 +136,7 @@ virtual void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 명령을 사용 하 여 사용할 텍스트 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdUI 클래스](../../mfc/reference/ccmdui-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

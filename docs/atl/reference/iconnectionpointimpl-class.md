@@ -14,12 +14,12 @@ helpviewer_keywords:
 - connection points [C++], implementing
 - IConnectionPointImpl class
 ms.assetid: 27992115-3b86-45dd-bc9e-54f32876c557
-ms.openlocfilehash: b850d9cfa9b2e2ea2a8b5e7f10e29e5cf26bc63e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 54231a4229db9a9afeecad878d695814565d776b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655236"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285778"
 ---
 # <a name="iconnectionpointimpl-class"></a>IConnectionPointImpl 클래스
 
@@ -69,7 +69,7 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 
 ATL 연결 지점 사용에 대 한 자세한 내용은 문서를 참조 [연결점](../../atl/atl-connection-points.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_ICPLocator`
 
@@ -155,7 +155,7 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 
 참조 [iconnectionpoint:: Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

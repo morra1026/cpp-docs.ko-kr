@@ -1,5 +1,5 @@
 ---
-title: '연습: MFC 자유 곡선 응용 프로그램 (파트 1) 업데이트'
+title: '연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - examples [MFC], update existing application
@@ -9,14 +9,14 @@ helpviewer_keywords:
 - MFC Feature Pack, update existing application
 - walkthroughs [MFC], update existing application
 ms.assetid: aa6330d3-6cfc-4c79-8fcb-0282263025f7
-ms.openlocfilehash: 85ff0c17f8ec523fc5cb52101fb44cfc37dd9b50
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 213bc8087b58eac232cc8fcfccc88e13785a807e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481850"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258764"
 ---
-# <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC 자유 곡선 응용 프로그램 (파트 1) 업데이트
+# <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트
 
 이 연습에서는 리본 메뉴 사용자 인터페이스를 사용하여 기존 MFC 응용 프로그램을 수정하는 방법을 보여 줍니다. Visual Studio는 Office 2007 리본과 Windows 7 Scenic 리본을 지원합니다. 리본 사용자 인터페이스에 대 한 자세한 내용은 참조 하세요. [리본](/windows/desktop/uxguide/cmd-ribbons)합니다.
 
@@ -24,7 +24,7 @@ ms.locfileid: "50481850"
 
 ## <a name="prerequisites"></a>전제 조건
 
-합니다 [Scribble 1.0 MFC 샘플](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 변환에 대 한 도움말을 참조 하세요 [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
+합니다 [Scribble 1.0 MFC 샘플](http://download.microsoft.com/download/4/0/9/40946FEC-EE5C-48C2-8750-B0F8DA1C99A8/MFC/general/Scribble.zip.exe)합니다. Visual Studio 2017에 변환에 대 한 도움말을 참조 하세요. [포팅 가이드: MFC Scribble](../porting/porting-guide-mfc-scribble.md)합니다.
 
 ##  <a name="top"></a> 섹션
 
@@ -87,11 +87,14 @@ ms.locfileid: "50481850"
 
 1. mainfrm.cpp 파일에서
 
-    1. `m_wndToolBar.SetBarStyle`를 `m_wndToolBar.SetPaneStyle`으로 대체합니다.
+    1. 
+  `m_wndToolBar.SetBarStyle`를 `m_wndToolBar.SetPaneStyle`으로 대체합니다.
 
-    1. `m_wndToolBar.GetBarStyle`를 `m_wndToolBar.GetPaneStyle`으로 대체합니다.
+    1. 
+  `m_wndToolBar.GetBarStyle`를 `m_wndToolBar.GetPaneStyle`으로 대체합니다.
 
-    1. `DockControlBar(&m_wndToolBar)`를 `DockPane(&m_wndToolBar)`으로 대체합니다.
+    1. 
+  `DockControlBar(&m_wndToolBar)`를 `DockPane(&m_wndToolBar)`으로 대체합니다.
 
 1. ipframe.cpp 파일에서 코드의 다음 세 줄을 주석으로 처리합니다.
 
@@ -113,7 +116,7 @@ ms.locfileid: "50481850"
 
 - 프로젝트의 다른 응용 프로그램에서 적절한 리소스 파일을 복사한 다음 해당 파일에서 비트맵을 가져옵니다.
 
-이 연습에서 만든 예제에서 리소스 파일을 복사 [연습: 리본 응용 프로그램에서 사용 하 여 MFC를 만드는](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md)합니다.
+이 연습에서 만든 예제에서 리소스 파일을 복사 [연습: MFC를 사용 하 여 리본 응용 프로그램을 만드는](../mfc/walkthrough-creating-a-ribbon-application-by-using-mfc.md)합니다.
 
 ### <a name="to-add-bitmaps-to-the-project"></a>프로젝트에 비트맵을 추가하려면
 
@@ -169,7 +172,7 @@ ms.locfileid: "50481850"
 
 1. 사용자 지정할 수 있습니다 합니다 **응용 프로그램** 해당 속성을 수정 하 여는 단추입니다. 이 코드에 사용되는 메시지 ID는 Scribble 1.0에 대한 메뉴에 이미 정의되어 있습니다.
 
-1. 디자인 뷰를 클릭 합니다 **응용 프로그램** 해당 속성을 표시 하는 단추입니다. 속성 값을 다음과 같이 변경: **이미지** 하 `IDB_RIBBON_MAIN`, **프롬프트** 에 `File`, **키** 에 `f`, **Large Images** 하 `IDB_RIBBON_FILELARGE`, 및 **Small Images** 에 `IDB_RIBBON_FILESMALL`합니다.
+1. 디자인 뷰를 클릭 합니다 **응용 프로그램** 해당 속성을 표시 하는 단추입니다. 속성 값을 다음과 같이 변경 합니다. **이미지** 하 `IDB_RIBBON_MAIN`, **프롬프트** 에 `File`, **키** 에 `f`, **큰 이미지** 에 `IDB_RIBBON_FILELARGE`, 및 **Small Images** 하려면 `IDB_RIBBON_FILESMALL`합니다.
 
 1. 클릭할 때 나타나는 메뉴를 만들려면 다음과 같이 수정 합니다 **응용 프로그램** 단추입니다. 줄임표 (**...** ) 옆에 **주 항목** 열려는 합니다 **항목 편집기**합니다.
 
@@ -238,7 +241,7 @@ ms.locfileid: "50481850"
 
 ### <a name="to-add-a-home-category-and-edit-panel"></a>홈 범주 및 편집 패널을 추가하려면
 
-1. Scribble 프로그램에서는 하나의 범주만 필요로 합니다. 디자인 뷰에서는 **도구 상자**를 두 번 클릭 **범주** 하나를 추가 하 고 해당 속성을 표시 합니다. 속성 값을 다음과 같이 변경: **캡션** 에 `&Home`, **Large Images** 를 `IDB_RIBBON_HOMELARGE`, **작은 이미지** 를 `IDB_RIBBON_HOMESMALL`입니다.
+1. Scribble 프로그램에서는 하나의 범주만 필요로 합니다. 디자인 뷰에서는 **도구 상자**를 두 번 클릭 **범주** 하나를 추가 하 고 해당 속성을 표시 합니다. 속성 값을 다음과 같이 변경 합니다. **캡션** 하 `&Home`, **큰 이미지** 에 `IDB_RIBBON_HOMELARGE`, **작은 이미지** 에 `IDB_RIBBON_HOMESMALL`입니다.
 
 1. 각 리본 범주는 명명된 패널로 구성되어 있습니다. 각 패널 컨트롤 집합이 완료 관련된 작업을 포함합니다. 이 범주에는 한 패널이 있습니다. 클릭 **패널**를 변경한 후 **캡션** 에 `Edit`입니다.
 
@@ -266,7 +269,7 @@ A *비주얼 관리자* 는 응용 프로그램에 대 한 모든 그리기를 �
 
 사용 하도록 클래식 Scribble 1.0 MFC 샘플을 수정 했을 **리본 디자이너**합니다. 이제 [2 부](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [연습](../mfc/walkthroughs-mfc.md)<br/>
-[연습: MFC 자유 곡선 응용 프로그램 업데이트(2부)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)
+[연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md)

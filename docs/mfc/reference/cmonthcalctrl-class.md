@@ -90,12 +90,12 @@ helpviewer_keywords:
 - CMonthCalCtrl [MFC], SizeMinReq
 - CMonthCalCtrl [MFC], SizeRectToMin
 ms.assetid: a42f6bd6-ab5c-4335-82f8-839982fc64a2
-ms.openlocfilehash: 48b02843cc957994aa3f3109a82cb2188dd9acff
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 440d158774a716db9fba351200f2760783925cc6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894200"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413929"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl 클래스
 
@@ -177,7 +177,7 @@ Month calendar 컨트롤에는 1 개월 이상 표시할 수 있으며 굵게 �
 
 Month calendar 컨트롤 사용에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 CMonthCalCtrl](../../mfc/using-cmonthcalctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -227,10 +227,10 @@ virtual BOOL Create(
 Month calendar 컨트롤에 적용 되는 Windows 스타일의 조합을 지정 합니다. 참조 [Month Calendar 컨트롤 스타일](/windows/desktop/Controls/month-calendar-control-styles) 스타일에 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. Month calendar 컨트롤의 크기와 위치를 포함합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. Month calendar 컨트롤의 크기와 위치를 포함합니다.
 
 *pt*<br/>
-에 대 한 참조를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) month calendar 컨트롤의 위치를 식별 하는 구조입니다.
+에 대 한 참조를 [지점](/previous-versions/dd162805\(v=vs.85\)) month calendar 컨트롤의 위치를 식별 하는 구조입니다.
 
 *pParentWnd*<br/>
 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 month calendar 컨트롤의 부모 창입니다. NULL이 아니어야 합니다.
@@ -450,7 +450,7 @@ int GetFirstDayOfWeek(BOOL* pbLocal = NULL) const;
 
 |값|요일|
 |-----------|---------------------|
-|0|월요일|
+|0|Monday|
 |1|화요일|
 |2|수요일|
 |3|목요일|
@@ -523,7 +523,7 @@ BOOL GetMinReqRect(RECT* pRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *pRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 받는 구조체입니다. 이 매개 변수는 유효한 주소 여야 하며 NULL 일 수 없습니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형 정보를 받는 구조체입니다. 이 매개 변수는 유효한 주소 여야 하며 NULL 일 수 없습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1290,11 +1290,11 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*lpRect*|[in] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 원하는 일정 수를 포함 하는 사각형을 정의 하는 구조입니다.|
+|*lpRect*|[in] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 원하는 일정 수를 포함 하는 사각형을 정의 하는 구조입니다.|
 
 ### <a name="return-value"></a>반환 값
 
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 보다 작거나 사각형에 크기가 사각형을 정의 하는 구조를 정의한 합니다 *lpRect* 매개 변수입니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 보다 작거나 사각형에 크기가 사각형을 정의 하는 구조를 정의한 합니다 *lpRect* 매개 변수입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -1302,7 +1302,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
 
 이 메서드는 전송 된 [MCM_SIZERECTTOMIN](/windows/desktop/Controls/mcm-sizerecttomin) Windows SDK에 설명 된 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

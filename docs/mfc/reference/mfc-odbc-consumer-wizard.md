@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ODBC Consumer Wizard
 - wizards [MFC]
 ms.assetid: f64a890b-a252-4887-88a1-782a7cd4ff3d
-ms.openlocfilehash: 8b2d554cb6b4eaeb7ee1ddd884aefb3ab6da0f2e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 75d62eb5ce3d24322d7af5030fb8d723ffa8fedb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523418"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259934"
 ---
 # <a name="mfc-odbc-consumer-wizard"></a>MFC ODBC 소비자 마법사
 
@@ -74,8 +74,7 @@ ms.locfileid: "51523418"
 
    선택한 테이블의 모든 열을 바인딩한 여부를 지정 합니다. 이 상자 (기본값)을 선택 하면 모든 열이 바인딩됩니다. 이 확인란을 선택 하면 열이 바인딩되지 및 레코드 집합 클래스에 수동으로 바인딩해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ODBC 소비](../../mfc/reference/adding-an-mfc-odbc-consumer.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)
-

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 응용 프로그램으로 가져오기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -6,12 +6,12 @@ helpviewer_keywords:
 - importing DLLs [C++], applications
 - applications [C++], importing into
 ms.assetid: 9d646466-e12e-4710-8ad9-c819c0375fcc
-ms.openlocfilehash: 96016a12b5164bcaca3f2c562671f5bf09a187f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41bd42ed51f1465db7487a120357fd27389f5b78
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442707"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415551"
 ---
 # <a name="importing-into-an-application"></a>응용 프로그램으로 가져오기
 
@@ -31,6 +31,6 @@ ms.locfileid: "50442707"
 
 - [DEF 파일을 사용하여 가져오기](../build/importing-using-def-files.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [가져오기 및 내보내기](../build/importing-and-exporting.md)

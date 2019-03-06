@@ -1,18 +1,18 @@
 ---
-title: '방법: combinable을 사용하여 집합 결합'
+title: '방법: Combinable 집합 결합을 사용 하 여'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - combinable class, example
 - combining sets with combinable [Concurrency Runtime]
 ms.assetid: 66ffe8e3-6bbb-4e9f-b790-b612922a68a7
-ms.openlocfilehash: c4d245688dd000ea61b538c4f3957246b9852ec5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf8a5bee65ea0ba1718c1d4d436b6af3e0b95961
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571810"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296100"
 ---
-# <a name="how-to-use-combinable-to-combine-sets"></a>방법: combinable을 사용하여 집합 결합
+# <a name="how-to-use-combinable-to-combine-sets"></a>방법: Combinable 집합 결합을 사용 하 여
 
 이 항목에서는 [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) 클래스를 사용하여 소수 집합을 계산하는 방법을 보여 줍니다.
 
@@ -38,9 +38,8 @@ parallel time: 78 ms
 
 **cl.exe /EHsc parallel-combine-primes.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [combinable 클래스](../../parallel/concrt/reference/combinable-class.md)<br/>
 [combinable::combine_each 메서드](reference/combinable-class.md#combine_each)
-

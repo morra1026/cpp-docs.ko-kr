@@ -5,12 +5,12 @@ f1_keywords:
 - atlbase/ATL::AtlWinModuleAddCreateWndData
 - atlbase/ATL::AtlWinModuleExtractCreateWndData
 ms.assetid: 8ce45a5b-26a7-491f-9096-c09ceca5f2c2
-ms.openlocfilehash: 7c46f4da53bcf1e8a64cc6baad9ca748d1edb310
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e7450ea2a42c0b35dc5a6d1b77dfb0f2acb9520
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578323"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265090"
 ---
 # <a name="winmodule-global-functions"></a>WinModule 전역 함수
 
@@ -75,6 +75,6 @@ ATLINLINE ATLAPI_(void*) AtlWinModuleExtractCreateWndData(_ATL_WIN_MODULE* pWinM
 
 이 함수는 기존 추출 `_AtlCreateWndData` 모듈의 참조 목록에서 구조 `_ATL_WIN_MODULE70` 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [함수](../../atl/reference/atl-functions.md)

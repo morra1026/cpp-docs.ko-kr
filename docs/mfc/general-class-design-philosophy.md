@@ -10,12 +10,12 @@ helpviewer_keywords:
 - classes [MFC], MFC class design
 - Windows API [MFC], and MFC
 ms.assetid: e6861ae0-1581-4d9c-9ddf-63f9afcdb913
-ms.openlocfilehash: f032a4e3dd1dbb5ebed0197e2ee613b948d0b94b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4dfa11c73703f5f2d3d17f8278610d32178af679
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618233"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295081"
 ---
 # <a name="general-class-design-philosophy"></a>일반 클래스 디자인 원칙
 
@@ -47,7 +47,6 @@ Microsoft Foundation Class 라이브러리는 다음과 같은 설계 목표를 
 
 - [C 언어 API와의 관계](../mfc/relationship-to-the-c-language-api.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

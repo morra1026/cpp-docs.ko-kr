@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, MFC projects
 ms.assetid: aa66bad0-008f-4886-94c1-2a0a0d04bce4
-ms.openlocfilehash: 5684e1f53e9df120feca89cbb6b2ba70bd38d439
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b849ffb585ef99512cc68e1c734dc5b3a87d507
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564777"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304927"
 ---
 # <a name="details-of-atl-support-added-by-the-atl-wizard"></a>ATL 마법사로 추가한 ATL 지원에 대한 세부 정보
 
@@ -28,7 +28,7 @@ ms.locfileid: "50564777"
 
 MFC DLL 프로젝트에 ATL 지원을 추가 하면 약간의 차이가 표시 됩니다. 코드를 추가 하는 `DLLRegisterServer` 및 `DLLUnregisterServer` 함수를 등록 하 고 DLL의 등록을 취소 합니다. 코드에도 추가 됩니다 [DllCanUnloadNow](../../atl/reference/catldllmodulet-class.md#dllcanunloadnow) 하 고 [DllGetClassObject](../../atl/reference/catldllmodulet-class.md#dllgetclassobject)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 프로젝트에 ATL 지원](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

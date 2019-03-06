@@ -7,12 +7,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], current selection in
 - selection, current in CRichEditCtrl
 ms.assetid: f6b2a2b6-5481-4ad3-9720-6dd772ea6fc8
-ms.openlocfilehash: 4b4b4d0b3419201cd1243bf6f846ab0e1b5ed686
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4516c4506419169ac3ab284e6c59cae71595be59
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636509"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286866"
 ---
 # <a name="current-selection-in-a-rich-edit-control"></a>Rich Edit 컨트롤의 현재 선택
 
@@ -26,8 +26,7 @@ Rich edit 컨트롤에서 선택한 텍스트를 사용 합니다 [GetSelText](.
 
 사용 하 여 rich edit 컨트롤의 문자열을 검색할 수 있습니다 합니다 [FindText](../mfc/reference/cricheditctrl-class.md#findtext) 멤버 함수는 [FINDTEXTEX](/windows/desktop/api/richedit/ns-richedit-_findtextexa) 이 함수를 사용 하 여 사용 되는 구조를 검색할 문자열과 검색 텍스트 범위를 지정 합니다. 또한 검색은 대/소문자 구분 여부와 같은 옵션을 지정할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding components
 - ATL COM+ 1.0 Component Wizard
 ms.assetid: 11670681-8671-4122-96a4-2e52f8dadce0
-ms.openlocfilehash: 227dda9518b67b410f52db8c6efb33bbc2c8f1b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df13c94eb0cc2aa7e2dea49aba6901f01fce0a15
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513778"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326428"
 ---
 # <a name="atl-com-10-component-wizard"></a>ATL COM+ 1.0 구성 요소 마법사
 
@@ -84,7 +84,6 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
    컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM + 1.0 구성 요소](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], using
 - tab controls [MFC], using
 ms.assetid: 6bda6798-0085-4c09-a5ea-fe0e97af5c95
-ms.openlocfilehash: e4a2169d3b11b36b747f13663fdcb40baf52cd8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 97844fea667edab5a4d1f1a49c3908454a203d1f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444684"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272076"
 ---
 # <a name="using-ctabctrl"></a>CTabCtrl 사용
 
@@ -20,7 +20,7 @@ ms.locfileid: "50444684"
 
 탭 컨트롤에 대 한 자세한 내용은 참조 하세요. [탭 컨트롤](/windows/desktop/Controls/tab-controls) Windows SDK에 있습니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [탭 컨트롤 및 속성 시트](../mfc/tab-controls-and-property-sheets.md)
 
@@ -36,7 +36,6 @@ ms.locfileid: "50444684"
 
 - [탭 컨트롤 알림 메시지 처리](../mfc/processing-tab-control-notification-messages.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

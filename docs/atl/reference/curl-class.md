@@ -35,12 +35,12 @@ f1_keywords:
 helpviewer_keywords:
 - CUrl class
 ms.assetid: b3894d34-47b9-4961-9719-4197153793da
-ms.openlocfilehash: ed42461af50fa83ca142127587d334cc7e75d914
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 913365e2b20015b22480dfd364d75b2be3c6355b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471515"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295658"
 ---
 # <a name="curl-class"></a>CUrl 클래스
 
@@ -62,7 +62,7 @@ class CUrl
 |이름|설명|
 |----------|-----------------|
 |[CUrl::CUrl](#curl)|생성자입니다.|
-|[CUrl:: ~ CUrl](#dtor)|소멸자입니다.|
+|[CUrl::~CUrl](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -106,7 +106,7 @@ class CUrl
 
 `CUrl` URL의 경로 또는 포트 번호 등의 필드를 조작할 수 있습니다. `CUrl` 다음 형식의 Url을 인식합니다.
 
-\<체계 >://\<사용자 이름 >:\<암호 >\@\<호스트 이름 >:\<포트 번호 > /\<UrlPath >\<ExtraInfo >
+\<Scheme>://\<UserName>:\<Password>\@\<HostName>:\<PortNumber>/\<UrlPath>\<ExtraInfo>
 
 (일부 필드는 선택 사항입니다.) 예를 들어,이 URL을 고려 합니다.
 
@@ -122,7 +122,7 @@ class CUrl
 
 - 호스트 이름: "`www.microsoft.com`"
 
-- PortNumber: 80
+- 포트 번호: 80
 
 - UrlPath: "visualc/stuff.htm"
 
@@ -147,17 +147,17 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 *dwFlags*<br/>
 정규화를 제어 하는 플래그입니다. 플래그가 없으므로 지정 된 경우 (*dwFlags* = 0), 메서드가 변환 하는 모든 안전 하지 않은 문자 및 메타 순서 (같은 \\., \..., 및 \\...) 이스케이프 시퀀스입니다. *dwFlags* 다음 값 중 하나일 수 있습니다.
 
-- ATL_URL_BROWSER_MODE: 인코딩 하지 않거나 "#" 뒤에 문자를 디코딩할 또는 "" 후 후행 공백을 제거 하지 않는 ""입니다. 이 값을 지정 하지 않으면 전체 URL 인코딩 되 고 후행 공백이 제거 됩니다.
+- ATL_URL_BROWSER_MODE: 인코딩 또는 "#" 뒤에 문자를 디코딩할지 않습니다 또는 "" 후 후행 공백을 제거 하지 않는 ""입니다. 이 값을 지정 하지 않으면 전체 URL 인코딩 되 고 후행 공백이 제거 됩니다.
 
 - ATL_URL _DECODE: 모든 %XX 시퀀스는 URL을 구문 분석 전에 이스케이프 시퀀스를 포함 하 여 문자를 변환 합니다.
 
 - ATL_URL _ENCODE_PERCENT: 발생 한 모든 백분율 기호를 인코딩합니다. 기본적으로 백분율 기호는 인코딩되지 않습니다.
 
-- ATL_URL _ENCODE_SPACES_ONLY: 공백만 인코딩합니다.
+- ATL_URL _ENCODE_SPACES_ONLY: 공백만을 인코딩합니다.
 
 - ATL_URL _NO_ENCODE: 안전 하지 않은 문자를 이스케이프 시퀀스로 변환 하지 않습니다.
 
-- ATL_URL _NO_META: meta 시퀀스를 제거 하지 않습니다 (같은 "."및"..") URL에서 합니다.
+- ATL_URL _NO_META: Meta 시퀀스를 제거 하지 않습니다 (같은 "."및"..") URL에서 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -225,7 +225,7 @@ inline BOOL CreateUrl(
 
 이 메서드는 다음 형식을 사용 하 여 전체 URL 문자열을 생성 하기 위해 개별 필드를 추가 합니다.
 
-**\<체계 >://\<사용자 >:\<전달 >\@\<도메인 >:\<포트 >\<경로 >\<추가 >**
+**\<scheme>://\<user>:\<pass>\@\<domain>:\<port>\<path>\<extra>**
 
 이 메서드를 호출 하는 경우는 *pdwMaxLength* 매개 변수에서 참조 하는 문자열 버퍼의 최대 길이 처음에 포함 해야 합니다 *lpszUrl* 매개 변수입니다. 값을 *pdwMaxLength* 매개 변수는 URL 문자열의 실제 길이 사용 하 여 업데이트 됩니다.
 
@@ -246,10 +246,10 @@ CUrl(const CUrl& urlThat) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*url에*<br/>
+*urlThat*<br/>
 `CUrl` URL을 만드는 데 복사할 개체입니다.
 
-##  <a name="dtor"></a>  CUrl:: ~ CUrl
+##  <a name="dtor"></a>  CUrl::~CUrl
 
 소멸자입니다.
 
@@ -447,7 +447,7 @@ CUrl& operator= (const CUrl& urlThat) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*url에*<br/>
+*urlThat*<br/>
 `CUrl` 개체를 현재 개체에 복사 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -598,6 +598,6 @@ inline BOOL SetUserName(LPCTSTR lpszUser) throw();
 
 성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../atl/reference/atl-classes.md)

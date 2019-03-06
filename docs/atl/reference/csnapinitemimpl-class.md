@@ -27,12 +27,12 @@ helpviewer_keywords:
 - CSnapInItemImpl class
 - snap-ins
 ms.assetid: 52caefbd-9eae-49b0-add2-d55524271aa7
-ms.openlocfilehash: ff7336d393ca4680b4d448b9c775888063125b86
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 27f3e8a17a9538a72a6592177a88a9b415b1a27c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893615"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297812"
 ---
 # <a name="csnapinitemimpl-class"></a>CSnapInItemImpl 클래스
 
@@ -94,7 +94,7 @@ TRUE 이면 개체는 스냅인 확장; 그렇지 않으면 FALSE입니다.
 
 `CSnapInItemImpl` 메뉴 항목 및 도구 모음을 추가 하 고 적절 한 처리기 함수에 스냅인에서 노드에 대 한 명령을 전달 등 스냅인 노드 개체에 대 한 기본 구현을 제공 합니다. 이러한 기능 몇 가지 다른 인터페이스를 사용 하 여 구현 됩니다 및 형식을 매핑합니다. 파생된 클래스의 올바른 인스턴스를 확인 하 고 다음 올바른 인스턴스로 메시지를 전달 하 여 노드 개체를 전송 하는 알림을 처리 하는 기본 구현 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CSnapInItem`
 
@@ -530,6 +530,6 @@ BOOL UpdateToolbarButton(UINT id, BYTE fsState);
 
 - 단추를 눌렀는지 BUTTONPRESSED 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

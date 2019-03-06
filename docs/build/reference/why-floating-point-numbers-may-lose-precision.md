@@ -6,12 +6,12 @@ helpviewer_keywords:
 - FLT_EPSILON constant
 - floating-point numbers, precision
 ms.assetid: 1acb1add-ac06-4134-a2fd-aff13d8c4c15
-ms.openlocfilehash: 6e6f758e7a683a28189123b03252223476ac732a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b001bff2f5327599fc5ad2ecae141976403ec58
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442668"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424069"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>부동 소수점 숫자의 정밀도가 떨어지는 이유
 
@@ -62,6 +62,6 @@ They are not equal! The value of c is  2.4679999352 or 2.468000
 
 EPSILON, FLT_EPSILON 1.192092896e로 float에 대 한 정의 된 상수를 사용할 수 있습니다-07F, 또는 2.2204460492503131e로 double에 대 한 정의 되어 있는 DBL_EPSILON-016 합니다. 이러한 상수에 대 한 float.h를 포함 해야 합니다. 이러한 상수 정의 된 가장 작은 양의으로 x 번호와 같이 x + 1.0과 같지 않은 1.0입니다. 아주 작은 숫자 이기 때문에 매우 큰 숫자를 포함 하는 계산에 대 한 사용자 정의 허용 오차를 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 최적화](../../build/reference/optimizing-your-code.md)

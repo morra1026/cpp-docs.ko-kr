@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, macros
 ms.assetid: c1bc5e79-2307-43d2-9d10-3a62ffadf473
-ms.openlocfilehash: c1a746487b799979cd83f2900a0f7a12d21a6837
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 69b823cbcd85ebaaeb05979283ea4f8fea80f4b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524841"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290692"
 ---
 # <a name="registry-data-exchange-macros"></a>레지스트리 데이터 교환 매크로
 
@@ -79,10 +79,10 @@ RDX_BINARY(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*<br/>
+*rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*<br/>
+*subkey*<br/>
 레지스트리 하위 키입니다.
 
 *valuename*<br/>
@@ -113,10 +113,10 @@ RDX_CSTRING_TEXT(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*<br/>
+*rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*<br/>
+*subkey*<br/>
 레지스트리 하위 키입니다.
 
 *valuename*<br/>
@@ -147,10 +147,10 @@ RDX_DWORD(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*<br/>
+*rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*<br/>
+*subkey*<br/>
 레지스트리 하위 키입니다.
 
 *valuename*<br/>
@@ -181,10 +181,10 @@ RDX_TEXT(
 
 ### <a name="parameters"></a>매개 변수
 
-*Rootkey*<br/>
+*rootkey*<br/>
 레지스트리 키 루트입니다.
 
-*하위 키*<br/>
+*subkey*<br/>
 레지스트리 하위 키입니다.
 
 *valuename*<br/>
@@ -200,8 +200,7 @@ RDX_TEXT(
 
 이 매크로 멤버 변수를 지정 된 레지스트리 항목을 연결할 BEGIN_RDX_MAP 및 END_RDX_MAP 매크로와 함께에서 사용 됩니다. 전역 함수인 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange), 또는 BEGIN_RDX_MAP 및 END_RDX_MAP 매크로로 만들어 동일한 이름의 멤버 함수는 시스템 레지스트리와 멤버 변수 간에 데이터를 교환 하는 데 사용 해야 RDX 구조의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)<br/>
 [RegistryDataExchange](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)
-

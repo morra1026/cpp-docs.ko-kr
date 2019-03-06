@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Concurrency Runtime, general best practices
 ms.assetid: ce5c784c-051e-44a6-be84-8b3e1139c18b
-ms.openlocfilehash: 445e985117929cae2ec9a26a1e148b3eff55c2a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e25011e2466d76c946cc55421ed228c8ea174161
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647698"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285609"
 ---
 # <a name="general-best-practices-in-the-concurrency-runtime"></a>동시성 런타임의 유용한 일반 정보
 
@@ -84,7 +84,7 @@ ms.locfileid: "50647698"
 
 [!code-cpp[concrt-download-oversubscription#4](../../parallel/concrt/codesnippet/cpp/general-best-practices-in-the-concurrency-runtime_3.cpp)]
 
-때문에 `GetHttpFile` 잠재적으로 잠재 연산을 수행 하는 함수, 초과 구독에는 다른 작업이 현재 작업과 데이터에 대 한 대기로 실행 되도록 설정할 수 있습니다. 이 예제의 전체 버전을 참조 하세요 [방법: 대기 시간 오프셋을 사용 하 여 초과](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)합니다.
+때문에 `GetHttpFile` 잠재적으로 잠재 연산을 수행 하는 함수, 초과 구독에는 다른 작업이 현재 작업과 데이터에 대 한 대기로 실행 되도록 설정할 수 있습니다. 이 예제의 전체 버전을 참조 하세요. [방법: 초과 구독을 사용 하 여 대기 시간을 오프셋](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -92,7 +92,7 @@ ms.locfileid: "50647698"
 
 메모리 관리 함수를 사용 하 여 [concurrency:: alloc](reference/concurrency-namespace-functions.md#alloc) 하 고 [concurrency:: free](reference/concurrency-namespace-functions.md#free)자주 수명이 비교적 짧은 작은 개체를 할당 하는 세분화 된 작업이 있는 경우. 동시성 런타임에서 실행 중인 각 스레드에 대해 별도 메모리 캐시를 보유합니다. 합니다 `Alloc` 및 `Free` 함수 할당 및 잠금이나 메모리 장벽을 사용 하지 않고 이러한 캐시 메모리를 확보 합니다.
 
-이러한 메모리 관리 기능에 대 한 자세한 내용은 참조 하세요. [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)합니다. 이러한 기능을 사용 하는 예제를 보려면 [방법: 사용 하 여 Alloc 및 Free 메모리 성능 개선](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)합니다.
+이러한 메모리 관리 기능에 대 한 자세한 내용은 참조 하세요. [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)합니다. 이러한 기능을 사용 하는 예제를 보려면 [방법: 할당을 사용 하 여 메모리 성능 향상을 위해 무료](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -124,7 +124,7 @@ Error details:
     negative balance: -76
 ```
 
-동시성 개체의 수명을 관리 하는 RAII 패턴을 사용 하는 추가 예제를 보려면 [연습: 사용자 인터페이스 스레드에서 작업 제거](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [방법: 컨텍스트 클래스를 사용 하 여 협조적 구현 세마포](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md), 및 [방법: 초과 구독을 사용 하 여 대기 시간을 오프셋](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)합니다.
+동시성 개체의 수명을 관리 하는 RAII 패턴을 사용 하는 추가 예제를 보려면 [연습: 사용자 인터페이스 스레드에서 작업 제거](../../parallel/concrt/walkthrough-removing-work-from-a-user-interface-thread.md), [방법: 상황에 맞는 클래스를 사용 하 여 공동 작업 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md), 및 [방법: 초과 구독을 사용 하 여 대기 시간을 오프셋](../../parallel/concrt/how-to-use-oversubscription-to-offset-latency.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -148,7 +148,7 @@ Error details:
 
 [[맨 위로 이동](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임 유용한 정보](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>

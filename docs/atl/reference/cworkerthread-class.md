@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWorkerThread class
 ms.assetid: be79a832-1345-4a36-a13e-a406cc65286f
-ms.openlocfilehash: 5ecde92cbd9fb9e028e79c9a0ce75859ce85790a
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: d4645f4a57ce70c3683972c22e0f99cbce87ca6b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893459"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287780"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread 클래스
 
@@ -273,7 +273,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 호출 `Shutdown` 간에 대 한 포인터를 사용 하 여 초기화 하는 개체에서 `CWorkerThread` 개체 영향을 주지 않으며 항상 S_OK를 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
 [클래스](../../atl/reference/atl-classes.md)<br/>

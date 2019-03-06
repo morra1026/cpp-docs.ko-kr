@@ -10,12 +10,12 @@ helpviewer_keywords:
 - document frame windows [MFC], creating
 - MFC, frame windows
 ms.assetid: 8671e239-b76f-4dea-afa8-7024e6e58ff5
-ms.openlocfilehash: 9c52cdbd940222b83de9c8e1e47e4e91ad424b44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 66a951994a75cbd99debeb2c6511739411cdd470
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611330"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266000"
 ---
 # <a name="creating-document-frame-windows"></a>문서 프레임 창 만들기
 
@@ -27,7 +27,7 @@ ms.locfileid: "50611330"
 
 결정 하는 데 주의 해야 [초기화 시점](../mfc/when-to-initialize-cwnd-objects.md) 여 `CWnd`-파생 개체입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [CObject (동적 생성 메커니즘 해당)에서 클래스 파생 시키기](../mfc/deriving-a-class-from-cobject.md)
 
@@ -35,7 +35,6 @@ ms.locfileid: "50611330"
 
 - [프레임 창 제거](../mfc/destroying-frame-windows.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창 사용](../mfc/using-frame-windows.md)
-

@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CGlobalHeap class
 ms.assetid: e348d838-3aa7-4bee-a1b3-cd000c99f834
-ms.openlocfilehash: a4bc8b18a1c29049e17576082a30de4a8704eaee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cba15421fd0329df7a66a35979ed54b863b7cca0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468954"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278303"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap 클래스
 
@@ -37,10 +37,10 @@ class CGlobalHeap : public IAtlMemMgr
 
 |이름|설명|
 |----------|-----------------|
-|[Cglobalheap:: Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
-|[Cglobalheap::](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
+|[CGlobalHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
+|[CGlobalHeap::Free](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
 |[CGlobalHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|
-|[Cglobalheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
+|[CGlobalHeap::Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -53,7 +53,7 @@ class CGlobalHeap : public IAtlMemMgr
 
 예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlMemMgr`
 
@@ -63,7 +63,7 @@ class CGlobalHeap : public IAtlMemMgr
 
 **헤더:** atlmem.h
 
-##  <a name="allocate"></a>  Cglobalheap:: Allocate
+##  <a name="allocate"></a>  CGlobalHeap::Allocate
 
 메모리 블록을 할당하려면 이 메서드를 호출합니다.
 
@@ -86,7 +86,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 사용 하 여 구현 [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) GMEM_FIXED 플래그 매개 변수를 사용 하 여 합니다.
 
-##  <a name="free"></a>  Cglobalheap::
+##  <a name="free"></a>  CGlobalHeap::Free
 
 이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.
 
@@ -124,7 +124,7 @@ virtual size_t GetSize(void* p) throw();
 
 사용 하 여 구현 [GlobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize)합니다.
 
-##  <a name="reallocate"></a>  Cglobalheap:: Reallocate
+##  <a name="reallocate"></a>  CGlobalHeap::Reallocate
 
 이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.
 
@@ -150,7 +150,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 사용 하 여 구현 [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CComHeap 클래스](../../atl/reference/ccomheap-class.md)<br/>

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - NMAKE program, inline files
 - text, inline file
 ms.assetid: b8a332ed-8244-4ff8-89e6-029d7f659725
-ms.openlocfilehash: 4989d0757e893a7bc4b0a0e8937afee18719aa4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e983ee009ce1f89633e22b01014de33676ca677
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523110"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425729"
 ---
 # <a name="creating-inline-file-text"></a>인라인 파일 텍스트 만들기
 
@@ -33,6 +33,6 @@ inlinetext
 
 임시 파일을 세션의 기간 존재 하며 다른 명령을 사용 하 여 다시 사용할 수 있습니다. 지정할 **유지** NMAKE 세션 후 파일을 유지 하려면 닫는 꺾쇠 괄호 뒤 명명 되지 않은 파일을 생성 된 파일 이름으로 디스크에 유지 됩니다. 지정할 **NOKEEP** 또는 임시 파일에 대 한 것입니다. **유지할** 하 고 **NOKEEP** 대/소문자 구분 없는 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메이크파일의 인라인 파일](../build/inline-files-in-a-makefile.md)

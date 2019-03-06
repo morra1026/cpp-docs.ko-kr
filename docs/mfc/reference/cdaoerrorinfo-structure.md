@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CDaoErrorInfo structure [MFC]
 - DAO (Data Access Objects), Errors collection
 ms.assetid: cd37ef71-b0b3-401d-bc2b-540c9147f532
-ms.openlocfilehash: 6afe6c711d3bd6a6bb6f277121b63c924d082057
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dd9610fce88c18ac42de81ed712492766ee705de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659529"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266013"
 ---
 # <a name="cdaoerrorinfo-structure"></a>CDaoErrorInfo 구조체
 
@@ -52,7 +52,7 @@ Microsoft Windows 도움말 파일에서 항목에 대 한 컨텍스트 ID입니
 
 MFC는 클래스에서 DAO 오류 개체를 캡슐화 하지 않습니다. 대신 합니다 [CDaoException](../../mfc/reference/cdaoexception-class.md) 클래스를 DAO 포함 된 오류 컬렉션에 액세스 하기 위한 인터페이스를 제공 합니다. `DBEngine` 개체에도 모든 작업 영역을 포함 하는 개체입니다. MFC DAO 작업이 throw 하는 경우는 `CDaoException` catch에 MFC 채우는 개체를 `CDaoErrorInfo` 구조체이 고 예외 개체에 저장 [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) 멤버입니다. (직접 DAO 호출 하려는 경우 예외 개체의 호출 해야 합니다 [GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수에 맞게 직접 `m_pErrorInfo`.)
 
-DAO 오류를 처리 하는 방법에 대 한 자세한 내용은 문서 참조 [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다. 관련된 내용은 DAO 도움말의 "오류 개체" 항목을 참조 합니다.
+DAO 오류를 처리 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [예외: 데이터베이스 예외](../../mfc/exceptions-database-exceptions.md)합니다. 관련된 내용은 DAO 도움말의 "오류 개체" 항목을 참조 합니다.
 
 검색 되는 정보는 [CDaoException::GetErrorInfo](../../mfc/reference/cdaoexception-class.md#geterrorinfo) 멤버 함수에 저장 되는 `CDaoErrorInfo` 구조입니다. 검사는 [m_pErrorInfo](../../mfc/reference/cdaoexception-class.md#m_perrorinfo) 에서 데이터 멤버는 `CDaoException` 호출 또는 예외 처리기에서 catch 하는 개체 `GetErrorInfo` 에서 `CDaoException` 있을 수 있는 오류를 확인 하기 위해 명시적으로 만든 개체는 DAO 인터페이스를 직접 호출 하는 동안 오류가 발생 했습니다. `CDaoErrorInfo` 또한 정의 `Dump` 디버그 멤버 함수를 만듭니다. 사용할 수 있습니다 `Dump` 의 내용을 덤프 하는 데는 `CDaoErrorInfo` 개체입니다.
 
@@ -60,7 +60,7 @@ DAO 오류를 처리 하는 방법에 대 한 자세한 내용은 문서 참조 
 
 **헤더:** afxdao.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoException 클래스](../../mfc/reference/cdaoexception-class.md)

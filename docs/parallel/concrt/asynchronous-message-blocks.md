@@ -6,12 +6,12 @@ helpviewer_keywords:
 - asynchronous message blocks
 - greedy join [Concurrency Runtime]
 ms.assetid: 79c456c0-1692-480c-bb67-98f2434c1252
-ms.openlocfilehash: b78b4db4dda33e0a94da3624ea1ffd8748a601f4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de6a433ab733207d5c56b46e693837056a0cd8b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586123"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274166"
 ---
 # <a name="asynchronous-message-blocks"></a>비동기 메시지 블록
 
@@ -97,9 +97,9 @@ ms.locfileid: "50586123"
 
 이러한 메시지 블록 형식을 다양 한 상황에 유용 하 게 하는 다른 특징을 갖습니다. 다음은 일부의 특성입니다.
 
-- *전파 형식*: 메시지 블록에서 데이터, 데이터의 수신기 또는 둘 다의 소스로 작동 하는 여부.
+- *전파 형식*: 여부 메시지 블록이 데이터, 데이터의 수신기 또는 둘 다의 원본으로 작동 합니다.
 
-- *메시지 순서*: 메시지 블록이 있는 메시지 발신 이나 수신이 원래 순서를 유지 하는 여부. 미리 정의 된 메시지 블록 유형별로는 보내거나 받는 메시지는 원래 순서를 유지 관리 합니다.
+- *메시지 순서*: 여부 메시지 블록이 있는 메시지 발신 이나 수신이 원래 순서를 유지 합니다. 미리 정의 된 메시지 블록 유형별로는 보내거나 받는 메시지는 원래 순서를 유지 관리 합니다.
 
 - *개수 원본*: 메시지 블록에서 읽을 수 있는 원본의 최대 수입니다.
 
@@ -125,7 +125,8 @@ ms.locfileid: "50586123"
 
 ##  <a name="unbounded_buffer"></a> unbounded_buffer 클래스
 
-합니다 [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 클래스는 일반적인 용도의 비동기 메시징 구조를 나타냅니다. 이 클래스는 여러 소스가 기록하거나 여러 대상이 읽을 수 있는 메시지의 FIFO(선입 선출) 큐를 저장합니다. 대상에서 메시지를 수신 하는 경우는 `unbounded_buffer` 개체를 해당 메시지가 메시지 큐에서 제거 됩니다. 따라서 있지만 `unbounded_buffer` 개체에는 여러 대상이 있을 수 있습니다, 하나의 대상만 각 메시지를 받게 됩니다. `unbounded_buffer` 클래스는 여러 메시지를 다른 구성 요소에 전달하려고 할 때 유용하고 해당 구성 요소는 각 메시지를 수신해야 합니다.
+합니다 [concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) 클래스는 일반적인 용도의 비동기 메시징 구조를 나타냅니다. 이 클래스는 여러 소스가 기록하거나 여러 대상이 읽을 수 있는 메시지의 FIFO(선입 선출) 큐를 저장합니다. 대상에서 메시지를 수신 하는 경우는 `unbounded_buffer` 개체를 해당 메시지가 메시지 큐에서 제거 됩니다. 따라서 있지만 `unbounded_buffer` 개체에는 여러 대상이 있을 수 있습니다, 하나의 대상만 각 메시지를 받게 됩니다. 
+  `unbounded_buffer` 클래스는 여러 메시지를 다른 구성 요소에 전달하려고 할 때 유용하고 해당 구성 요소는 각 메시지를 수신해야 합니다.
 
 ### <a name="example"></a>예제
 
@@ -167,7 +168,8 @@ ms.locfileid: "50586123"
 
 ##  <a name="single_assignment"></a> single_assignment 클래스
 
-[concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) 클래스와 유사 합니다 `overwrite_buffer` 점을 제외 하면 클래스를 `single_assignment` 개체를 한 번만 쓸 수 있습니다. `overwrite_buffer` 클래스처럼 대상이 `single_assignment` 개체에서 메시지를 수신할 때 해당 메시지는 해당 개체에서 제거되지 않습니다. 따라서 여러 대상이 하나의 메시지 복사본을 수신합니다. `single_assignment` 클래스는 여러 구성 요소에 하나의 메시지를 브로드캐스트 하려고 할 때 유용 합니다.
+[concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) 클래스와 유사 합니다 `overwrite_buffer` 점을 제외 하면 클래스를 `single_assignment` 개체를 한 번만 쓸 수 있습니다. 
+  `overwrite_buffer` 클래스처럼 대상이 `single_assignment` 개체에서 메시지를 수신할 때 해당 메시지는 해당 개체에서 제거되지 않습니다. 따라서 여러 대상이 하나의 메시지 복사본을 수신합니다. `single_assignment` 클래스는 여러 구성 요소에 하나의 메시지를 브로드캐스트 하려고 할 때 유용 합니다.
 
 ### <a name="example"></a>예제
 
@@ -181,7 +183,7 @@ ms.locfileid: "50586123"
 333333
 ```
 
-사용 하는 방법을 보여 주는 전체 예제는 `single_assignment` 클래스를 참조 하십시오 [연습: 미래 구현](../../parallel/concrt/walkthrough-implementing-futures.md)합니다.
+사용 하는 방법을 보여 주는 전체 예제는 `single_assignment` 클래스를 참조 하십시오 [연습: Future 구현](../../parallel/concrt/walkthrough-implementing-futures.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -201,7 +203,7 @@ ms.locfileid: "50586123"
 334455
 ```
 
-사용 하는 방법을 보여 주는 전체 예제는 `call` 클래스를 참조 하십시오 [방법: call 및 transformer 클래스에 작업 함수 제공](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)합니다.
+사용 하는 방법을 보여 주는 전체 예제는 `call` 클래스를 참조 하십시오 [방법: Call 및 transformer 클래스에 작업 함수 제공](../../parallel/concrt/how-to-provide-work-functions-to-the-call-and-transformer-classes.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -255,7 +257,7 @@ fib35 received its value first. Result = 9227465
 
 이 예제에서는 합니다 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 병렬로 피보나치 수를 계산 하는 알고리즘입니다. 에 대 한 자세한 내용은 `parallel_invoke`를 참조 하세요 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)합니다.
 
-사용 하는 방법을 보여 주는 전체 예제는 `choice` 클래스를 참조 하십시오 [방법: 완료 된 작업 중에서 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)합니다.
+사용 하는 방법을 보여 주는 전체 예제는 `choice` 클래스를 참조 하십시오 [방법: 완료 된 작업 간 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -287,7 +289,7 @@ fib35 = 9227465fib37 = 24157817half_of_fib42 = 1.33957e+008
 
 이 예제에서는 합니다 [concurrency:: parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) 병렬로 피보나치 수를 계산 하는 알고리즘입니다. 에 대 한 자세한 내용은 `parallel_invoke`를 참조 하세요 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)합니다.
 
-사용 하는 방법을 보여 주는 전체 예제는 `join` 클래스를 참조 하십시오 [방법: 완료 된 작업 중에서 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md) 및 [연습: join 교착 상태 방지를 사용 하 여](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md).
+사용 하는 방법을 보여 주는 전체 예제는 `join` 클래스를 참조 하십시오 [방법: 완료 된 작업 간 선택](../../parallel/concrt/how-to-select-among-completed-tasks.md) 고 [연습: 교착 상태 방지 조인을 사용 하 여](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)입니다.
 
 [[맨 위로 이동](#top)]
 
@@ -340,7 +342,7 @@ bool (T const &)
 
 데이터의 불필요 한 복사를 제거 하려면 집합체 형식 값으로 전파 되는 경우 두 번째 형태를 사용 합니다.
 
-메시지 필터링 지원 합니다 *데이터 흐름* 프로그래밍 모델, 데이터를 받을 때 구성 요소에 계산할 합니다. 메시지 전달 네트워크에서 데이터의 흐름을 제어 하려면 필터 함수를 사용 하는 예제를 보려면 [방법: 메시지 블록 필터 사용](../../parallel/concrt/how-to-use-a-message-block-filter.md)를 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md), 및 [ 연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)합니다.
+메시지 필터링 지원 합니다 *데이터 흐름* 프로그래밍 모델, 데이터를 받을 때 구성 요소에 계산할 합니다. 메시지 전달 네트워크에서 데이터의 흐름을 제어 하려면 필터 함수를 사용 하는 예제를 보려면 [방법: 메시지 블록 필터 사용](../../parallel/concrt/how-to-use-a-message-block-filter.md), [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md), 및 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -352,11 +354,10 @@ bool (T const &)
 
 또한 다양 한 원본에서에서 입력된 메시지를 읽는, greedy 조인, 각 원본에서 메시지를 수신 하기 위해 대기 하는 동안 추가 메시지를 읽으려면 메시지 예약을 사용 합니다. 예를 들어 greedy 조인 메시지 블록에서 메시지를 수신 하는 것이 좋습니다 `A` 고 `B`입니다. Greedy 조인 B에서 두 개의 메시지를 받지만 메시지를 받지 않은 경우 `A`, greedy 조인에서 두 번째 메시지에 대 한 고유한 메시지 식별자를 저장 `B`합니다. Greedy 조인에서 메시지를 받으면 `A` 전파 하 고 이러한 메시지를 사용 하 여 저장 된 메시지 식별자에서 두 번째 메시지를 참조 하세요. `B` 계속 사용할 수 있습니다.
 
-고유한 사용자 지정 메시지 블록 형식을 구현 하는 경우 메시지 예약을 사용할 수 있습니다. 사용자 지정 메시지 블록 형식을 만드는 방법에 대 한 예제를 보려면 [연습: 사용자 지정 메시지 블록 만들기](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md)합니다.
+고유한 사용자 지정 메시지 블록 형식을 구현 하는 경우 메시지 예약을 사용할 수 있습니다. 사용자 지정 메시지 블록 형식을 만드는 방법에 대 한 예제를 참조 하세요. [연습: 사용자 지정 메시지 블록 만들기](../../parallel/concrt/walkthrough-creating-a-custom-message-block.md)합니다.
 
 [[맨 위로 이동](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)
-

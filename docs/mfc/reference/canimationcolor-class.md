@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CAnimationColor [MFC], m_gValue
 - CAnimationColor [MFC], m_rValue
 ms.assetid: 88bfabd4-efeb-4652-87e8-304253d8e48c
-ms.openlocfilehash: 6037dd11ddef10500d9468bdf9fa188901aad739
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ee6003a22db78c2a510579c3d717fec887f8a6ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536691"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304338"
 ---
 # <a name="canimationcolor-class"></a>CAnimationColor 클래스
 
@@ -67,7 +67,7 @@ class CAnimationColor : public CAnimationBaseObject;
 |[CAnimationColor::GetValue](#getvalue)|현재 값을 반환합니다.|
 |[CAnimationColor::SetDefaultValue](#setdefaultvalue)|기본값을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -78,7 +78,7 @@ class CAnimationColor : public CAnimationBaseObject;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationColor::operator COLORREF](#operator_colorref)||
-|[CAnimationColor::operator =](#operator_eq)|CAnimationColor에 색을 할당합니다.|
+|[CAnimationColor::operator=](#operator_eq)|CAnimationColor에 색을 할당합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -92,7 +92,7 @@ class CAnimationColor : public CAnimationBaseObject;
 
 CAnimationColor 클래스는 세 가지 CAnimationVariable 개체를 캡슐화 하 고 색을 응용 프로그램에 나타낼 수 있습니다. 예를 들어, 화면의 모든 개체의 색에 애니메이션 효과를이 클래스를 사용할 수 있습니다 (같은 텍스트 색, 배경색 등). 응용 프로그램에서이 클래스를 사용 하려면 방금이 클래스의 개체를 인스턴스화할 CAnimationController::AddAnimationObject를 사용 하 여 애니메이션 컨트롤러를 추가 및 빨강, 녹색 및 파랑 구성 요소에 적용할 각 전환에 대 한 AddTransition 호출 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -146,7 +146,7 @@ CAnimationColor(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 기본 색을 지정합니다.
 
 *nGroupID*<br/>
@@ -249,7 +249,7 @@ BOOL GetValue(COLORREF& color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 출력입니다. 이 메서드가 반환 될 때 현재 값을 포함 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -292,7 +292,7 @@ operator COLORREF();
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_eq"></a>  CAnimationColor::operator =
+##  <a name="operator_eq"></a>  CAnimationColor::operator=
 
 CAnimationColor에 색을 할당합니다.
 
@@ -302,7 +302,7 @@ void operator=(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 새 애니메이션 색 값을 지정합니다.
 
 ### <a name="remarks"></a>설명
@@ -319,13 +319,13 @@ void SetDefaultValue(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 빨강, 녹색 및 파랑 구성 요소에 대 한 새 기본값을 지정합니다.
 
 ### <a name="remarks"></a>설명
 
 이 함수를 사용 하 여 애니메이션 개체에 기본값을 설정 합니다. 이 메서드는 애니메이션 색의 색상 구성 요소에 기본값을 할당 합니다. 이 또한 만들지 않은 경우 기본 COM 개체를 다시 합니다. 이 애니메이션 개체 (ValueChanged 또는 IntegerValueChanged) 이벤트를 구독 하는 경우 이러한 이벤트를 다시 사용 하도록 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

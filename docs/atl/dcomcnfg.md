@@ -7,20 +7,20 @@ helpviewer_keywords:
 - DCOMCNFG utility
 - DCOM, configuring in ATL
 ms.assetid: 5a8126e9-ef27-40fb-a66e-9dce8d1a7e80
-ms.openlocfilehash: 8bf85c32093051b124d007a04eed2bbf10a56039
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4845093d3343e899a18c707846145c2630d7ac1d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552648"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261494"
 ---
 # <a name="dcomcnfg"></a>DCOMCNFG
 
-DCOMCNFG는 레지스트리에서 다양 한 DCOM 관련 설정을 구성할 수 있도록 Windows NT 4.0 유틸리티. DCOMCNFG 창에 3 페이지: 기본 보안, 기본 속성 및 응용 프로그램입니다. Windows 2000에서 네 번째 페이지에서 기본 프로토콜, 없는 경우
+DCOMCNFG는 레지스트리에서 다양 한 DCOM 관련 설정을 구성할 수 있도록 Windows NT 4.0 유틸리티. DCOMCNFG 창에 3 개의 페이지가 있습니다. 기본 보안, 기본 속성 및 응용 프로그램입니다. Windows 2000에서 네 번째 페이지에서 기본 프로토콜, 없는 경우
 
 ## <a name="default-security-page"></a>기본 보안 페이지
 
-시스템 개체에 대 한 기본 사용 권한을 지정 하는 기본 보안 페이지를 사용할 수 있습니다. 기본 보안 페이지에는 세 가지 섹션이 있습니다: 액세스, 시작 및 구성 합니다. 섹션의 기본값을 변경 하려면 해당 **기본값 편집** 단추입니다. 이러한 기본 보안 설정은 레지스트리에 저장 됩니다 `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE`합니다.
+시스템 개체에 대 한 기본 사용 권한을 지정 하는 기본 보안 페이지를 사용할 수 있습니다. 기본 보안 페이지에 세 개의 섹션이 있습니다. 액세스, 시작 및 구성 합니다. 섹션의 기본값을 변경 하려면 해당 **기본값 편집** 단추입니다. 이러한 기본 보안 설정은 레지스트리에 저장 됩니다 `HKEY_LOCAL_MACHINE\Software\Microsoft\OLE`합니다.
 
 ## <a name="default-protocols-page"></a>기본 프로토콜 페이지
 
@@ -44,7 +44,6 @@ DCOMCNFG는 레지스트리에서 다양 한 DCOM 관련 설정을 구성할 수
 
 - 끝점 페이지에는 프로토콜 및 선택한 DCOM 서버의 클라이언트에서 사용할 수 있는 끝점의 집합을 나열합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [서비스](../atl/atl-services.md)
-

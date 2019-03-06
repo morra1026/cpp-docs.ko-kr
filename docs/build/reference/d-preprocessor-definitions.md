@@ -13,12 +13,12 @@ helpviewer_keywords:
 - -D compiler option [C++]
 - D compiler option [C++]
 ms.assetid: b53fdda7-8da1-474f-8811-ba7cdcc66dba
-ms.openlocfilehash: 21836d2842427581cc5019a42c563a78356d1ec2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 089f34f6daa606ed2869852a04ee76c6bda8fe25
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620508"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424680"
 ---
 # <a name="d-preprocessor-definitions"></a>/D(전처리기 정의)
 
@@ -42,11 +42,11 @@ ms.locfileid: "50620508"
 
 이 명령은 TEST.c에서 DEBUG 기호를 정의합니다.
 
-**CL /DDEBUG 테스트 합니다. C**
+**CL /DDEBUG  TEST.C**
 
 이 명령은 TEST.c에 있는 모든 `__far` 키워드를 제거합니다.
 
-**CL /D__far = 테스트 합니다. C**
+**CL /D__far=  TEST.C**
 
 합니다 **CL** 등호 기호를 포함 하는 문자열에 환경 변수를 설정할 수 없습니다. 사용 하도록 **/D** 함께 합니다 **CL** 환경 변수를 지정 해야 등호 대신 숫자 기호:
 
@@ -54,7 +54,7 @@ ms.locfileid: "50620508"
 SET CL=/DTEST#0
 ```
 
-명령 프롬프트에서 전처리 기호를 정의하면 컴파일러 구문 분석 규칙과 셸 구문 분석 규칙을 모두 수행하는 것이 좋습니다. 예를 들어 프로그램에서 백분율 기호 전처리 기호(%)를 정의하려면 명령 프롬프트에서 두 개의 백분율 기호 문자(%%)를 지정합니다. 문자를 하나만 지정하면 구문 분석 오류가 내보내집니다.
+명령 프롬프트에서 전처리 기호를 정의하면 컴파일러 구문 분석 규칙과 셸 구문 분석 규칙을 모두 수행하는 것이 좋습니다. 예를 들어, 백분율 기호 전처리 기호 (%)을 정의 하려면 프로그램에 두 개의 백분율 기호 문자 (%)를 지정 합니다. 명령 프롬프트: 하나만 지정 하면 구문 분석 오류가 내보내집니다.
 
 ```
 CL /DTEST=%% TEST.C
@@ -68,7 +68,7 @@ CL /DTEST=%% TEST.C
 
 1. 오른쪽 열에 있는 오른쪽 창에는 **전처리기 정의** 속성을 드롭다운 메뉴를 열고 선택 **편집**합니다.
 
-1. 에 **전처리기 정의** 대화 상자 (줄에 하나씩)를 추가, 수정 또는 하나 이상의 정의 삭제 합니다. 선택할 **확인** 변경 내용을 저장 합니다.
+1. 에 **전처리기 정의** 대화 상자 (줄에 하나씩)를 추가, 수정 또는 하나 이상의 정의 삭제 합니다. **확인**을 선택하여 변경 내용을 저장합니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
@@ -95,7 +95,7 @@ int main( )
 TEST defined 1
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

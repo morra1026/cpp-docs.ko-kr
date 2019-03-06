@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: 9e2df5117f6cbb96c69f54fe9e21f85b45218d6d
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 97854a554be729b75d50f09b0627ffc94b1b093f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178982"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424485"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -307,9 +307,11 @@ Windows 도구 모음 공용 컨트롤에는 하나 이상의 단추를 포함 �
 
 `CToolBarCtrl` 개체에 몇 가지 중요 한 내부 데이터 구조가 포함 될: 단추 이미지 비트맵의 목록을 또는 이미지 목록, 단추 레이블 문자열 목록이 및 목록은 `TBBUTTON` 이미지를 연결 하거나, 스타일, 위치를 사용 하 여 문자열는 구조, 상태 및 명령 ID 단추입니다. 각 이러한 데이터 구조의 요소의 0부터 시작 인덱스에 의해 참조 됩니다. 사용 하기 전에 `CToolBarCtrl` 개체를 이러한 데이터 구조를 설정 해야 합니다. 단추 레이블;에 대 한 문자열의 목록 에서만 사용할 수 있습니다. 도구 모음에서 문자열을 검색할 수 없습니다.
 
-`CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
 
-1. `CToolBarCtrl` 개체를 생성합니다.
+  `CToolBarCtrl` 개체를 사용하려면, 일반적으로 다음 단계를 수행해야 합니다.
+
+1. 
+  `CToolBarCtrl` 개체를 생성합니다.
 
 1. 호출 [Create](#create) Windows 도구 모음 공용 컨트롤을 만들고 연결 하는 `CToolBarCtrl` 개체입니다. 투명 한 도구 모음에 대 한 TBSTYLE_TRANSPARENT 등 TBSTYLE_DROPDOWN 스타일 드롭다운 단추를 지 원하는 도구 모음에 대 한 스타일을 사용 하 여 도구 모음의 스타일을 나타냅니다.
 
@@ -339,7 +341,7 @@ Internet Explorer 4.0 이상 버전에서에서 도입 된 기능을 지원 하�
 
 사용 하 여 대 한 자세한 내용은 `CToolBarCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CToolBarCtrl 사용 하 여](../../mfc/using-ctoolbarctrl.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -579,7 +581,7 @@ BOOL CheckButton(
 *nID*<br/>
 단추를 선택 하거나 선택 취소의 명령 식별자입니다.
 
-*확인*<br/>
+*bCheck*<br/>
 확인 단추를 선택 취소 하려면 FALSE true로 설정 하면.
 
 ### <a name="return-value"></a>반환 값
@@ -627,7 +629,7 @@ virtual BOOL Create(
 도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한 아래 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 **주의**합니다.
 
 *rect*<br/>
-필요에 따라 도구 모음 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+필요에 따라 도구 모음 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 도구 모음 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.
@@ -681,7 +683,7 @@ virtual BOOL CreateEx(
 도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한에 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 합니다 **주의** 부분 [만들기](#create)합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -1085,7 +1087,7 @@ BOOL GetItemRect(
 정보를 검색 하는 단추의 인덱스 0부터 시작 합니다.
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 경계 사각형의 좌표를 받는 개체입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 경계 사각형의 좌표를 받는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1202,7 +1204,7 @@ BOOL GetRect(
 단추 식별자입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 경계 사각형 정보를 얻습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1266,7 +1268,7 @@ int GetString(
 
 ### <a name="parameters"></a>매개 변수
 
-*항목이*<br/>
+*nString*<br/>
 문자열의 인덱스입니다.
 
 *lpstrString*<br/>
@@ -1325,7 +1327,7 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="parameters"></a>매개 변수
 
 *ppt*<br/>
-에 대 한 포인터를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 에서 적중 횟수 테스트의 x 좌표를 포함 하는 구조를 `x` 멤버와 y 좌표를 적중 횟수의 테스트는 `y` 멤버입니다. 좌표가 도구 모음에서의 클라이언트 영역을 기준으로 합니다.
+에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 에서 적중 횟수 테스트의 x 좌표를 포함 하는 구조를 `x` 멤버와 y 좌표를 적중 횟수의 테스트는 `y` 멤버입니다. 좌표가 도구 모음에서의 클라이언트 영역을 기준으로 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1428,7 +1430,7 @@ BOOL InsertMarkHitTest(
 ### <a name="parameters"></a>매개 변수
 
 *ppt*<br/>
-에 대 한 포인터를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 클라이언트 영역 도구 모음을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
+에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 클라이언트 영역 도구 모음을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
 
 *ptbim*<br/>
 에 대 한 포인터를 [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) 삽입 표시 정보를 수신 하는 구조입니다.
@@ -2295,7 +2297,7 @@ void SetRows(
 요청한 행의 개수를 도구 모음 크기를 조정할 수 없는 경우 행이 더 또는 적은 수의 행을 사용할지 여부를 알려 줍니다.
 
 *lpRect*<br/>
-가리키는 합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 도구 모음의 새 경계 사각형을 받을 구조입니다.
+가리키는 합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 도구 모음의 새 경계 사각형을 받을 구조입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2384,7 +2386,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 이 멤버 함수는의 기능을 에뮬레이션 합니다 [TB_SETWINDOWTHEME](/windows/desktop/Controls/tb-setwindowtheme) Windows SDK에 설명 된 대로 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 MFCIE](../../visual-cpp-samples.md)<br/>

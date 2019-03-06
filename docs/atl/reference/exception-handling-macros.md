@@ -9,12 +9,12 @@ helpviewer_keywords:
 - exception handling, macros
 - C++ exception handling, macros
 ms.assetid: a8385d34-3fb0-4006-a42a-de045cacf0f4
-ms.openlocfilehash: cf4b7ffb8c6b197dc1c4eea4b6c569e173bb188d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8afb2019e38f7548467e85d9a2c1c12c538cf744
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544406"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258608"
 ---
 # <a name="exception-handling-macros"></a>예외 처리 매크로
 
@@ -71,6 +71,6 @@ _ATLTRY
 
 와 함께 사용할 [_ATLCATCH](#_atlcatch) 하거나 [_ATLCATCHALL](#_atlcatchall)합니다. C + + 기호를 확인 [시도](../../cpp/try-throw-and-catch-statements-cpp.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

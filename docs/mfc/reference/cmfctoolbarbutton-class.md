@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CMFCToolBarButton [MFC], m_nStyle
 - CMFCToolBarButton [MFC], m_strText
 ms.assetid: 8a6ecffb-86b0-4f5c-8211-a9146b463efd
-ms.openlocfilehash: ec5b6692197dc224f503be050a537e6fa265f6d5
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 94d7ba14e01b2965a0fe788162726d1019e847de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694662"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275235"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton 클래스
 
@@ -292,7 +292,7 @@ class CMFCToolBarButton : public CObject
 [!code-cpp[NVC_MFC_TabControl#1](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_1.cpp)]
 [!code-cpp[NVC_MFC_TabControl#2](../../mfc/reference/codesnippet/cpp/cmfctoolbarbutton-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -390,7 +390,7 @@ CMFCToolBarButton(
 *bUserButton*<br/>
 [in] 단추 사용자 정의 인지 여부를 결정 하는 부울 값입니다. 이 매개 변수가 TRUE 인 경우 단추를 사용자 정의 됩니다. 그렇지 않으면 단추 이미지 리소스에서 로드 됩니다.
 
-*차단*<br/>
+*bLocked*<br/>
 [in] 단추를 사용자 지정할 수 있는지 여부를 결정 하는 부울 값입니다. 이 매개 변수가 TRUE 인 경우 단추를 사용자 지정할 수 없습니다. 그렇지 않은 경우 단추를 사용자 지정할 수 있습니다.
 
 ##  <a name="comparewith"></a>  CMFCToolBarButton::CompareWith
@@ -479,7 +479,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*MenuButton*<br/>
+*menuButton*<br/>
 [in] 대상 메뉴 단추에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1449,7 +1449,7 @@ virtual BOOL OnToolHitTest(
 *pWnd*<br/>
 [in] 단추의 부모 창입니다. NULL 일 수 있습니다.
 
-*PTI*<br/>
+*pTI*<br/>
 [in] `TOOLINFO` 도구 설명 컨트롤의 도구에 대 한 정보를 포함 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1582,7 +1582,7 @@ virtual void Serialize(CArchive& ar);
 
 이 메서드는 클립보드 또는 끌어서 놓기 작업 등의 데이터 전송 프로세스를 지원합니다. 읽거나 또는 제공 된 ID, 텍스트 레이블 및 이미지 ID 등의 단추 속성을 쓸 `CArchive` 개체입니다.
 
-Serialization 예제를 보려면 [Serialization: 개체를 직렬화](../../mfc/serialization-serializing-an-object.md)합니다.
+Serialization 예제를 보려면 [직렬화 합니다. 개체를 직렬화](../../mfc/serialization-serializing-an-object.md)합니다.
 
 ##  <a name="setaccdata"></a>  CMFCToolBarButton::SetACCData
 
@@ -1751,7 +1751,7 @@ void Show(BOOL bShow);
 
 이 메서드를 호출 합니다 [CMFCToolBarButton::OnShow](#onshow) 메서드 버튼의 표시 여부 상태를 업데이트 한 후입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -13,12 +13,12 @@ helpviewer_keywords:
 - CFrameWinTraits class
 - CControlWinTraits class
 ms.assetid: f78f486e-6d9c-42c6-8e86-371e05aa7e59
-ms.openlocfilehash: 9e60eb773573142d0a4498c42a98f6e9c4c49a7c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 840433ffb325a4f181848371306607b62373e75a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532602"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280469"
 ---
 # <a name="cwintraits-class"></a>CWinTraits 클래스
 
@@ -60,15 +60,15 @@ ATL 창 스타일의 자주 사용 되는 조합에 대 한이 서식 파일의 
 
 - `CControlWinTraits`
 
-   표준 컨트롤 창을 위한 것입니다. 다음 표준 스타일을 사용 합니다: WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 확장 된 스타일이 없는 경우
+   표준 컨트롤 창을 위한 것입니다. 다음과 같은 표준 스타일 사용 됩니다. WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 확장 된 스타일이 없는 경우
 
 - `CFrameWinTraits`
 
-   표준 프레임 창을 위한 것입니다. 사용 하는 표준 스타일 포함: WS_OVERLAPPEDWINDOW, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일을 포함 합니다: WS_EX_APPWINDOW 및 WS_EX_WINDOWEDGE 합니다.
+   표준 프레임 창을 위한 것입니다. 사용 하는 표준 스타일은 다음과 같습니다. WS_OVERLAPPEDWINDOW WS_CLIPCHILDREN, 하며 WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일은 다음과 같습니다. WS_EX_APPWINDOW 및 WS_EX_WINDOWEDGE 합니다.
 
 - `CMDIChildWinTraits`
 
-   표준 MDI 자식 창을 위한 것입니다. 사용 하는 표준 스타일 포함: WS_OVERLAPPEDWINDOW "," WS_CHILD "," WS_VISIBLE "," WS_CLIPCHILDREN, "및" WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일 포함: WS_EX_MDICHILD 합니다.
+   표준 MDI 자식 창을 위한 것입니다. 사용 하는 표준 스타일은 다음과 같습니다. WS_OVERLAPPEDWINDOW, WS_CHILD, WS_VISIBLE, WS_CLIPCHILDREN, 및 WS_CLIPSIBLINGS 합니다. 사용 된 확장된 스타일은 다음과 같습니다. WS_EX_MDICHILD.
 
 인스턴스별 별로 설정할 다른 스타일을 허용 하는 창 클래스의 모든 인스턴스 사용에 대 한 특정 스타일 설정 되어 있는지 확인 하려는 경우 [CWinTraitsOR](../../atl/reference/cwintraitsor-class.md) 대신 합니다.
 
@@ -110,7 +110,7 @@ static DWORD GetWndExStyle(DWORD dwExStyle);
 
 개체의 확장된 창 스타일입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [창 특성 이해](../../atl/understanding-window-traits.md)

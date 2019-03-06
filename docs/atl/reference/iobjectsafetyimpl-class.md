@@ -13,12 +13,12 @@ helpviewer_keywords:
 - IObjectSafety, ATL implementation
 - IObjectSafetyImpl class
 ms.assetid: 64e32082-d910-4a8a-a5bf-ebed9145359d
-ms.openlocfilehash: e9035a8573a917e732f3452aeb7fd07af160517f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e75c52b016fff5bf04fefc86d4289021efc4db8e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471788"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293279"
 ---
 # <a name="iobjectsafetyimpl-class"></a>IObjectSafetyImpl 클래스
 
@@ -69,7 +69,7 @@ class IObjectSafetyImpl
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IObjectSafety`
 
@@ -127,7 +127,7 @@ HRESULT SetInterfaceSafetyOptions(
 
 참조 [IObjectSafety::SetInterfaceSafetyOptions](https://msdn.microsoft.com/library/aa768225.aspx) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IObjectSafety 인터페이스](https://msdn.microsoft.com/library/aa768224.aspx)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

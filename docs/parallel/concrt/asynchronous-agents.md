@@ -5,12 +5,12 @@ helpviewer_keywords:
 - asynchronous agents
 - agents [Concurrency Runtime]
 ms.assetid: 6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a
-ms.openlocfilehash: a99400e4df49e36e1cddda7068f315485b976cde
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: ff6fa851519066c3c399a28557fd8f103d0e94be
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176538"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268943"
 ---
 # <a name="asynchronous-agents"></a>비동기 에이전트
 
@@ -46,7 +46,7 @@ ms.locfileid: "52176538"
 |------------|-----------------|
 |[start](reference/agent-class.md#start)|일정 합니다 `agent` 실행에 대 한 개체를 설정 하 고는 `agent_runnable` 상태.|
 |[run](reference/agent-class.md#run)|수행할 수 있는 작업을 실행 합니다 `agent` 개체입니다.|
-|[작업 수행](reference/agent-class.md#done)|에이전트를 이동 합니다 `agent_done` 상태입니다.|
+|[done](reference/agent-class.md#done)|에이전트를 이동 합니다 `agent_done` 상태입니다.|
 |[cancel](../../parallel/concrt/cancellation-in-the-ppl.md#cancel)|에이전트가 시작 되지 않은 경우이 메서드는 에이전트의 실행을 취소 하 고로 설정 합니다는 `agent_canceled` 상태입니다.|
 |[status](reference/agent-class.md#status)|현재 상태를 검색 합니다 `agent` 개체입니다.|
 |[wait](reference/agent-class.md#wait)|될 때까지 대기 합니다 `agent` 입력 개체를 `agent_done` 또는 `agent_canceled` 상태입니다.|
@@ -59,9 +59,8 @@ ms.locfileid: "52176538"
 
 ## <a name="example"></a>예제
 
-기본 에이전트 기반 응용 프로그램을 만드는 방법을 보여 주는 예제를 보려면 [연습: 에이전트 기반 응용 프로그램을 만드는](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)합니다.
+기본 에이전트 기반 응용 프로그램을 만드는 방법을 보여 주는 예제를 참조 하세요. [연습: 에이전트 기반 응용 프로그램을 만드는](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)
-

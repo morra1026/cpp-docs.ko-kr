@@ -8,12 +8,12 @@ helpviewer_keywords:
 - command routing [MFC], technical note TN021
 - Windows messages [MFC], routing
 ms.assetid: b5952c8b-123e-406c-a36d-a6ac7c6df307
-ms.openlocfilehash: 4a0774234e6314ff6811bbeafa11403f19cf568e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ce8aa2013c8f2f351ca1028f0d6103135ba5ecd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635710"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294397"
 ---
 # <a name="tn021-command-and-message-routing"></a>TN021: 명령 및 메시지 라우팅
 
@@ -165,7 +165,7 @@ void CMyApp::OnUpdateNewChart(CCmdUI* pCmdUI)
 
 - **WM_CTLCOLOR**
 
-- **창에 WM_PARENTNOTIFY**
+- **WM_PARENTNOTIFY**
 
 알 수 있습니다 합니다 **OnChildNotify** 후크 자체 그리기 메시지로 소유자 그리기 메시지를 변경할 때 사용 합니다.
 
@@ -203,7 +203,7 @@ MFC 확장을 자식 또는 형제 스크롤되는 창의 스크롤 막대 컨�
 
 에 대 한 **CSplitterWnd** 분할 영역에 대 한 특별 한 공유 스크롤 막대에 스크롤 막대 스타일을 적용 합니다. 정적 분할 창은 대 한 일반적으로 두 스크롤 막대 스타일을 설정 합니다. 동적 분할 창은 일반적으로 해야 스크롤 막대를 분할 즉, 방향에 대 한 스타일 모음 **WS_HSCROLL** 행을 분할할 수 하는 경우 **WS_VSCROLL** 경우 열을 분할할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)

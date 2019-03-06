@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ICollectionOnSTLImpl interface
 ms.assetid: 6d49f819-1957-4813-b074-3f12c494d8ca
-ms.openlocfilehash: b82599bd95abb473a361a962566669ed1ef7a35b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90583f34c9e9fb500bb48fdbd3c1a17d343d865f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530483"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292924"
 ---
 # <a name="implementing-a-c-standard-library-based-collection"></a>C + + 표준 라이브러리 기반 컬렉션 구현
 
@@ -99,7 +99,7 @@ ATL은 제공 된 `ICollectionOnSTLImpl` 신속 하 게 개체에 c + + 표준 �
 
 이제 사용자가 선택한 클라이언트를 사용 하 여 코드를 테스트할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션 및 열거자](../atl/atl-collections-and-enumerators.md)<br/>
 [ATLCollections 샘플](../visual-cpp-samples.md)<br/>

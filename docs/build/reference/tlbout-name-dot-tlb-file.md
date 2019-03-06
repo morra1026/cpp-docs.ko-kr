@@ -11,12 +11,12 @@ helpviewer_keywords:
 - .tlb files, renaming
 - -TLBOUT linker option
 ms.assetid: 0df6d078-2e48-46c9-a1a5-02674d85dce8
-ms.openlocfilehash: 97659341d4566cd34fe705b89758929f0c1e995d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3eaf4305c58ca70619e032f80e661b9c768f7813
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613813"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425525"
 ---
 # <a name="tlbout-name-tlb-file"></a>/TLBOUT(.TLB 파일 이름 지정)
 
@@ -54,7 +54,7 @@ MIDL 컴파일러가 있는 프로젝트를 연결 하는 경우 Visual c + + �
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TypeLibraryFile%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - menus [MFC], manipulating during execution
 - menus [MFC]
 ms.assetid: 6a181495-47a9-4356-83fc-b89152d6cb4c
-ms.openlocfilehash: b0eae559fd15b7b19867cef9f785f7c70f782c30
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 202a8c791f3ecaa6180eb91134b28a86572f6e19
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50621782"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326038"
 ---
 # <a name="menus-mfc"></a>메뉴(MFC)
 
@@ -24,7 +24,7 @@ MFC 메뉴를 사용 하 여 사용할 수 있도록 두 요소를 제공 합니
 
 Visual c + +에서는 [메뉴 편집기](../windows/menu-editor.md) 만들고 프로그램의 메뉴 리소스를 편집 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [프로그램 실행 중 메뉴 개체 조작](../mfc/manipulating-menus-during-program-execution.md)
 
@@ -32,6 +32,6 @@ Visual c + +에서는 [메뉴 편집기](../windows/menu-editor.md) 만들고 �
 
 - [샘플](../mfc/menu-sample-list.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

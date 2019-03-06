@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetFile [MFC], WriteString
 - CInternetFile [MFC], m_hFile
 ms.assetid: 96935681-ee71-4a8d-9783-5abc7b3e6f10
-ms.openlocfilehash: 309d4210f72f7ecd83ed6a8eb79874a1c8170d59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 65bc36856e253d086cc430a600daa9255e21ea75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586877"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279980"
 ---
 # <a name="cinternetfile-class"></a>CInternetFile 클래스
 
@@ -65,7 +65,7 @@ class CInternetFile : public CStdioFile
 |[CInternetFile::Close](#close)|닫습니다는 `CInternetFile` 하 고 해당 리소스를 해제 합니다.|
 |[CInternetFile::Flush](#flush)|쓰기 버퍼의 내용을 플러시합니다 고 메모리의 데이터를 대상 컴퓨터에 기록 됩니다.|
 |[CInternetFile::GetLength](#getlength)|파일의 크기를 반환합니다.|
-|[Cinternetfile:: Read](#read)|지정 된 바이트 수를 읽습니다.|
+|[CInternetFile::Read](#read)|지정 된 바이트 수를 읽습니다.|
 |[CInternetFile::ReadString](#readstring)|문자 스트림을 읽습니다.|
 |[CInternetFile::Seek](#seek)|열려 있는 파일에서 포인터 위치를 변경 합니다.|
 |[CInternetFile::SetReadBufferSize](#setreadbuffersize)|데이터를 읽을 버퍼의 크기를 설정 합니다.|
@@ -93,7 +93,7 @@ class CInternetFile : public CStdioFile
 
 하는 방법에 자세히 알아보려면 `CInternetFile` 문서를 참조 하는 다른 인터넷 MFC 클래스와 함께 작동 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -216,7 +216,7 @@ HINTERNET m_hFile;
 operator HINTERNET() const;
 ```
 
-##  <a name="read"></a>  Cinternetfile:: Read
+##  <a name="read"></a>  CInternetFile::Read
 
 부터 지정 된 메모리로 읽어이 멤버 함수 호출 *lpvBuf*는 바이트 수를 지정 *nCount*합니다.
 
@@ -261,7 +261,7 @@ virtual LPTSTR ReadString(
 *pstr*<br/>
 읽는 중인 줄을 수신 하는 문자열에 대 한 포인터입니다.
 
-*최대*<br/>
+*nMax*<br/>
 읽을 문자의 최대 수입니다.
 
 *rString*<br/>
@@ -409,7 +409,7 @@ virtual void WriteString(LPCTSTR pstr);
 
 이 함수가 throw 하는 데이터를 쓰는 동안 오류가 발생 하는 경우는 [CInternetException](../../mfc/reference/cinternetexception-class.md) 오류를 설명 하는 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CStdioFile 클래스](../../mfc/reference/cstdiofile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

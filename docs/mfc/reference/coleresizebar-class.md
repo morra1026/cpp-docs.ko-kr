@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COleResizeBar [MFC], COleResizeBar
 - COleResizeBar [MFC], Create
 ms.assetid: 56a708d9-28c5-4eb0-9404-77b688d91c63
-ms.openlocfilehash: c4b7ce80762cdb49b6007eac7f6b26019b108795
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 631276a065652ec991c4c1b5264e87b7244fb7b9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445112"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275950"
 ---
 # <a name="coleresizebar-class"></a>COleResizeBar 클래스
 
@@ -49,7 +49,7 @@ class COleResizeBar : public CControlBar
 
 자세한 내용은 문서 참조 [활성화](../../mfc/activation-cpp.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -103,7 +103,7 @@ virtual BOOL Create(
 
 크기 조정 막대 만들어진 경우 0이 아닌 값 그렇지 않으면 0입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 SUPERPAD](../../visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>

@@ -103,12 +103,12 @@ helpviewer_keywords:
 - CAnimationController [MFC], m_pTransitionFactory
 - CAnimationController [MFC], m_pTransitionLibrary
 ms.assetid: ed294c98-695e-40a6-b940-33ef1d40aa6b
-ms.openlocfilehash: 93189c5c9301e513cfbdf110cf7753e211420fef
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 114b6bffdc63ecadc951965f8f199b229f0f7672
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894135"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270282"
 ---
 # <a name="canimationcontroller-class"></a>CAnimationController 클래스
 
@@ -196,7 +196,7 @@ class CAnimationController : public CObject;
 
 CAnimationController 클래스에는 애니메이션을 관리 하는 키 클래스가입니다. 수 애니메이션 컨트롤러의 하나 이상의 인스턴스 응용 프로그램에서를 만들고 필요에 따라 CAnimationController::SetRelatedWnd를 사용 하 여 CWnd 개체에 애니메이션 컨트롤러의 인스턴스를 연결 합니다. 이 연결 WM_PAINT 메시지 관련된 창에 자동으로 보내도록 애니메이션 관리자 상태 변경 되었거나 애니메이션 타이머 업데이트 된 경우 필요 합니다. 이 관계를 사용 하지 않는 경우에 애니메이션을 수동으로 표시 하는 창을 그려야 합니다. 이 목적을 위해 CAnimationController에서 클래스를 파생 하 고 OnAnimationManagerStatusChanged 및/또는 OnAnimationTimerPostUpdate 재정의 필요한 경우 하나 이상의 창을 무효화 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1129,6 +1129,6 @@ virtual void UpdateAnimationManager();
 
 이 메서드는 현재 애니메이션 관리자를 이동 하는 호출, 필요에 따라 스토리 보드의 상태를 변경 하 고 적절 한 애니메이션 변수를 업데이트 하는 중 값 보간됩니다. 내부적으로 IUIAnimationTimer::GetTime(timeNow) 및 IUIAnimationManager::Update(timeNow)이이 메서드를 호출 합니다. 이 동작을 사용자 지정 파생된 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

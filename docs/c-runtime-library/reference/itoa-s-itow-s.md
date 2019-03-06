@@ -24,6 +24,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - _itoa_s
@@ -75,12 +76,12 @@ helpviewer_keywords:
 - _ui64tot_s function
 - _i64toa_s function
 ms.assetid: eb746581-bff3-48b5-a973-bfc0a4478ecf
-ms.openlocfilehash: 47eb030790359f25a7df5275a247c071fb3d599f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e534a9010f3f39c517b7b0f2bf50041190caf7d8
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441707"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210356"
 ---
 # <a name="itoas-ltoas-ultoas-i64toas-ui64toas-itows--ltows--ultows-i64tows-ui64tows"></a>_itoa_s, _ltoa_s, _ultoa_s, _i64toa_s, _ui64toa_s, _itow_s,  _ltow_s,  _ultow_s, _i64tow_s, _ui64tow_s
 
@@ -131,7 +132,7 @@ errno_t _ultow_s( unsigned long value, wchar_t (&buffer)[size], int radix );
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*value*<br/>
 변환할 숫자입니다.
 
 *buffer*<br/>
@@ -184,8 +185,8 @@ CRT는 null 종결자를 포함 하 여 각 정수 형식에 가능한 가장 �
 
 |루틴에서 반환된 값|필수 헤더|
 |-------------|---------------------|
-|**_itoa_s**, **_ltoa_s**를 **_ultoa_s**하십시오 **_i64toa_s**, **_ui64toa_s**|\<stdlib.h>|
-|**_itow_s**, **_ltow_s**를 **_ultow_s**하십시오 **_i64tow_s**, **_ui64tow_s**|\<stdlib.h> 또는 \<wchar.h>|
+|**_itoa_s**, **_ltoa_s**, **_ultoa_s**, **_i64toa_s**, **_ui64toa_s**|\<stdlib.h>|
+|**_itow_s**, **_ltow_s**, **_ultow_s**, **_i64tow_s**, **_ui64tow_s**|\<stdlib.h> 또는 \<wchar.h>|
 
 이러한 함수는 Microsoft 전용입니다. 호환성에 대한 자세한 내용은 [호환성](../../c-runtime-library/compatibility.md)을 참조하세요.
 

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DSizeF [MFC], CD2DSizeF
 - CD2DSizeF [MFC], IsNull
 ms.assetid: f486a1e1-997d-4286-8cb9-26369dc82055
-ms.openlocfilehash: e9c8d77a9f84abe9a483a0f100e1f52b8768202b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 09ccd8c4ba6bb0c345adb32bcf22686c485d1184
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557471"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296594"
 ---
 # <a name="cd2dsizef-class"></a>CD2DSizeF 클래스
 
@@ -47,7 +47,7 @@ class CD2DSizeF : public D2D1_SIZE_F;
 |----------|-----------------|
 |[CD2DSizeF::operator CSize](#operator_csize)|변환 `CD2DSizeF` 에 `CSize` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_SIZE_F`
 
@@ -106,6 +106,6 @@ operator CSize();
 
 D2D 크기의 현재 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

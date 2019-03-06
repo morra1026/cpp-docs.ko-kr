@@ -1,5 +1,5 @@
 ---
-title: '다중 스레딩: 동기화 Mfc를 사용 하는 경우'
+title: '다중 스레딩: MFC 동기화 클래스를 사용 하는 경우'
 ms.date: 08/27/2018
 helpviewer_keywords:
 - threading [MFC], synchronization classes
@@ -11,14 +11,14 @@ helpviewer_keywords:
 - threading [C++], synchronization
 - multithreading [C++], synchronization classes
 ms.assetid: 4914f54e-68ac-438f-93c9-c013455a657e
-ms.openlocfilehash: 63555236ec41ce0a28d82aa676318b53a24169c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 72cf5310704c1ae959cc012146a03dd32cff4068
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502845"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284374"
 ---
-# <a name="multithreading-when-to-use-the-mfc-synchronization-classes"></a>다중 스레딩: 동기화 Mfc를 사용 하는 경우
+# <a name="multithreading-when-to-use-the-mfc-synchronization-classes"></a>다중 스레딩: MFC 동기화 클래스를 사용 하는 경우
 
 MFC와 함께 제공 되는 다중 스레드 클래스 두 가지 범주로 나뉩니다: 동기화 개체 ([CSyncObject](../mfc/reference/csyncobject-class.md)를 [CSemaphore](../mfc/reference/csemaphore-class.md)를 [CMutex](../mfc/reference/cmutex-class.md), [ CCriticalSection](../mfc/reference/ccriticalsection-class.md), 및 [CEvent](../mfc/reference/cevent-class.md)) 및 동기화 액세스 개체 ([CMultiLock](../mfc/reference/cmultilock-class.md) 하 고 [CSingleLock](../mfc/reference/csinglelock-class.md)).
 
@@ -48,12 +48,12 @@ MFC와 함께 제공 되는 다중 스레드 클래스 두 가지 범주로 나�
 
 이 예제 응용 프로그램에는 세 가지 유형의 동기화 클래스를 모두 사용합니다. 사용 하 여 최대 3 개의 계정을 한 번에 검사할 수 있으므로, `CSemaphore` 3 개의 뷰 개체에 대 한 액세스를 제한 합니다. 보려는 시도가 네 번째 계정 발생 하면 처음 세 창 중 하나가 종료 되거나 실패할 때까지 기다리거나 응용 프로그램입니다. 응용 프로그램에 사용 하 여 계정을 업데이트 되 면 `CCriticalSection` 를 한 번에 하나의 계정만 업데이트 되도록 합니다. 업데이트에 성공한 후 신호를 보냅니다. `CEvent`, 신호를 받을 이벤트를 기다리는 스레드를 해제 합니다. 이 스레드는 데이터 보관 파일에는 새 데이터를 보냅니다.
 
-## <a name="example-2-using-synchronization-access-classes"></a>예제 2: 동기화 액세스 클래스 사용
+## <a name="example-2-using-synchronization-access-classes"></a>예제 2: 동기화 액세스 클래스를 사용 하 여
 
 훨씬 간단한 동기화 액세스 클래스를 사용 하 여 선택 합니다. 응용 프로그램 제어 된 단일 리소스에만 액세스와 관련 된 경우 사용 하 여 `CSingleLock`입니다. 사용 하 여 다양 한 제어 된 리소스 중 하나에 대 한 액세스를 해야 하는 경우 `CMultiLock`합니다. 예제 1에서는 `CSingleLock` 사용 되었을, 각각의 경우에서 하나의 리소스에만 특정 시간에 필요 하므로 합니다.
 
 동기화 클래스를 사용 하는 방법에 대 한 자세한 내용은 [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md)합니다. 동기화에 대 한 자세한 내용은 [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다. MFC에서 다중 스레딩 지원에 대 한 자세한 내용은 [c + + 및 MFC 다중 스레딩](multithreading-with-cpp-and-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

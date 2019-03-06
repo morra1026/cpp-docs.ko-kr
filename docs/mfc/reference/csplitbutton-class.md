@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSplitButton [MFC], SetDropDownMenu
 - CSplitButton [MFC], OnDropDown
 ms.assetid: 6844d0a9-6408-4e44-9b5f-57628ed8bad6
-ms.openlocfilehash: 56c006eaa9b0c9860a973727602fd29a33d7ec43
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 70bba379f33be2d4df05f6b96eac14bf248cf356
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176630"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414650"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton 클래스
 
@@ -46,7 +46,7 @@ class CSplitButton : public CButton
 |[CSplitButton::Create](#create)|지정 된 스타일을 사용 하 여 분할 단추 컨트롤을 만들고 현재 연결 `CSplitButton` 개체입니다.|
 |[CSplitButton::SetDropDownMenu](#setdropdownmenu)|현재 분할 단추 컨트롤의 드롭다운 화살표를 클릭할 때 표시 되는 드롭다운 메뉴를 설정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -60,7 +60,7 @@ class CSplitButton : public CButton
 
 ![Splitbutton 및 pager 컨트롤이 있는 대화 상자. ](../../mfc/reference/media/splitbutton_pager.png "Splitbutton 및 pager 컨트롤이 있는 대화 상자.")
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -97,7 +97,7 @@ virtual BOOL Create(
 |매개 변수|설명|
 |---------------|-----------------|
 |*dwStyle*|[in] 컨트롤에 적용 될 스타일의 비트 조합 (OR)입니다. 자세한 내용은 [단추 스타일](../../mfc/reference/styles-used-by-mfc.md#button-styles)합니다.|
-|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
+|*rect*|[in] 에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
 |*pParentWnd*|[in] 에 대 한 null이 아닌 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다.|
 |*nID*|[in] 컨트롤의 ID입니다.|
 
@@ -196,7 +196,7 @@ void SetDropDownMenu(CMenu* pMenu);
 
 [!code-cpp[NVC_MFC_CSplitButton_s2#1](../../mfc/reference/codesnippet/cpp/csplitbutton-class_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSplitButton 클래스](../../mfc/reference/csplitbutton-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

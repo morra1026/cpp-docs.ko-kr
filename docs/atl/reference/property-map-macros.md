@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - property maps
 ms.assetid: 128bc742-2b98-4b97-a243-684dbb83db77
-ms.openlocfilehash: 7422c38bd21a458dccafa6d34fd4d6522f96132a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e2e7235dd924467d9d5e0613a704fedf8340ae4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513820"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264900"
 ---
 # <a name="property-map-macros"></a>속성 맵 매크로
 
@@ -204,6 +204,6 @@ ATL 프로젝트 마법사를 사용 하 여 개체를 만들 때 만들어집�
 
 예를 참조 하세요 [BEGIN_PROP_MAP](#begin_prop_map)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - single document interface (SDI) [MFC], applications
 - MDI [MFC], vs. SDI
 ms.assetid: bb7239d9-4759-4f63-bfff-44a04b48c067
-ms.openlocfilehash: 75ff46a829bd129c7f73bf11a303a67ab1526969
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 725249e5a71e8ee097c641e5972e3cc8bb0e3e33
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641118"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284153"
 ---
 # <a name="sdi-and-mdi"></a>SDI 및 MDI
 
@@ -26,6 +26,6 @@ SDI 응용 프로그램에는 한 번에 하나만 열려 있는 문서 프레�
 
 자세한 내용은 [문서, 뷰 및 프레임 워크](../mfc/documents-views-and-the-framework.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스를 사용하여 Windows 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

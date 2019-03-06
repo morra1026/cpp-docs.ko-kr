@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - task_canceled class
 ms.assetid: c3f0b234-2cc1-435f-a48e-995f45b190be
-ms.openlocfilehash: b17050deacd1dee0c1b08ffbc4056e957884cd3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: caef1c62ff09ffb76f74d4a1453e9d59dcb7d45b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617453"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265498"
 ---
 # <a name="taskcanceled-class"></a>task_canceled 클래스
 
@@ -33,7 +33,7 @@ class task_canceled : public std::exception;
 |----------|-----------------|
 |[task_canceled](#ctor)|오버로드됨. `task_canceled` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -57,9 +57,9 @@ task_canceled() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CTypedPtrMap [MFC], RemoveKey
 - CTypedPtrMap [MFC], SetAt
 ms.assetid: 9f377385-c6e9-4471-8b40-8fe220c50164
-ms.openlocfilehash: 4c6d20279792788c1013df8540080b2715ade1f2
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 05689001f8c385191057a8dc824a508189a43f05
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657385"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266058"
 ---
 # <a name="ctypedptrmap-class"></a>CTypedPtrMap 클래스
 
@@ -40,7 +40,7 @@ class CTypedPtrMap : public BASE_CLASS
 *KEY*<br/>
 지도 키로 사용 되는 개체의 클래스입니다.
 
-*값*<br/>
+*VALUE*<br/>
 Map에 저장 된 개체의 클래스입니다.
 
 ## <a name="members"></a>멤버
@@ -68,7 +68,7 @@ Map에 저장 된 개체의 클래스입니다.
 
 사용 하 여 대 한 자세한 내용은 `CTypedPtrMap`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md) 하 고 [템플릿 기반 클래스](../../mfc/template-based-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `BASE_CLASS`
 
@@ -100,7 +100,7 @@ void GetNextAssoc(
 *rKey*<br/>
 검색 된 요소는 반환 된 키를 지정합니다.
 
-*값*<br/>
+*VALUE*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 *rValue*<br/>
@@ -130,7 +130,7 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 *key*<br/>
 키 조회 요소입니다.
 
-*값*<br/>
+*VALUE*<br/>
 템플릿 매개 변수를이 맵에 저장 된 값의 형식을 지정 합니다.
 
 *rValue*<br/>
@@ -144,7 +144,7 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 
 이 인라인 함수 호출 `BASE_CLASS` **:: Lookup**합니다.
 
-##  <a name="operator_at"></a>  CTypedPtrMap::operator]
+##  <a name="operator_at"></a>  CTypedPtrMap::operator [ ]
 
 이 연산자 좌 변의 대입문 (l-value) 에서만 사용할 수 있습니다.
 
@@ -154,7 +154,7 @@ VALUE& operator[ ](base_class ::base_arg_key key);
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*VALUE*<br/>
 템플릿 매개 변수를이 맵에 저장 된 값의 형식을 지정 합니다.
 
 *BASE_CLASS*<br/>
@@ -214,7 +214,7 @@ void SetAt(KEY key, VALUE newValue);
 
 설명, 자세한 [CMapStringToOb::SetAt](../../mfc/reference/cmapstringtoob-class.md#setat)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

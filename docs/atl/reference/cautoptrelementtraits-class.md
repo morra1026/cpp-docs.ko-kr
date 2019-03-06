@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrElementTraits class
 ms.assetid: 777c1b14-6ab7-491f-b9a5-be149e71d4a2
-ms.openlocfilehash: 4d13ca8e3de00a49e15e5acbc35c6301b9d7eae2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d217441048403b0ff5361f8049b76367174812f1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476523"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299464"
 ---
 # <a name="cautoptrelementtraits-class"></a>CAutoPtrElementTraits 클래스
 
@@ -49,7 +49,7 @@ class CAutoPtrElementTraits
 
 이 클래스는 스마트 포인터를 포함 하는 컬렉션 클래스 개체를 만드는 데에 대 한 메서드, 정적 함수 및 형식 정의 제공 합니다. 클래스 [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) 하 고 [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) 에서 파생 `CAutoPtrElementTraits`합니다. 벡터 new 및 delete 연산자에 필요한는 스마트 포인터의 컬렉션을 작성 하는 경우 사용 하 여 [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) 대신 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
 
@@ -81,7 +81,7 @@ typedef CAutoPtr<T>& INARGTYPE;
 typedef T *& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

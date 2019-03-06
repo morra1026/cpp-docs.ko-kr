@@ -7,12 +7,12 @@ helpviewer_keywords:
 - styles [MFC], spin button control
 - spin button control, styles
 ms.assetid: fb4a7f6f-9182-47be-bccf-0728fdc5332f
-ms.openlocfilehash: 73042dbbdc28819ecc736c282599189ee074ce77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d955ba1d76ee4d5648613ddaf6c5f6a652f3d3af
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457111"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304871"
 ---
 # <a name="spin-button-styles"></a>스핀 단추 스타일
 
@@ -35,8 +35,7 @@ ms.locfileid: "50457111"
 
 - **화살표 키** 스핀 단추가 위쪽 화살표 및 아래쪽 화살표 키를 누를 때 위치를 늘이거나 합니다. UDS_ARROWKEYS 스타일을 사용 하 여 연결 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSpinButtonCtrl 사용](../mfc/using-cspinbuttonctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

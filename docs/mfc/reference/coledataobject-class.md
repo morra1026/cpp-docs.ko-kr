@@ -28,12 +28,12 @@ helpviewer_keywords:
 - COleDataObject [MFC], IsDataAvailable
 - COleDataObject [MFC], Release
 ms.assetid: d1cc84be-2e1c-4bb3-a8a0-565eb08aaa34
-ms.openlocfilehash: 40c7d87e2dafa3c9b40e8ebda60b15a7b32709eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 95a19b20e0acc4ae45a953eee5a1c4d2bfb3e9da
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540285"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326727"
 ---
 # <a name="coledataobject-class"></a>COleDataObject 클래스
 
@@ -80,7 +80,7 @@ class COleDataObject
 
 응용 프로그램에서 데이터 개체를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [데이터 개체 및 데이터 소스 (OLE)](../../mfc/data-objects-and-data-sources-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `COleDataObject`
 
@@ -336,9 +336,9 @@ void Release();
 
 합니다 `IDataObject` 연관 된 합니다 `COleDataObject` 를 호출 하 여 `Attach` 또는 `AttachClipboard` 명시적으로 또는 프레임 워크에서. 경우는 *bAutoRelease* 의 매개 변수 `Attach` 은 FALSE를 `IDataObject` 개체 해제 되지 것입니다. 이 경우 호출자가 해제 하는 일을 담당 합니다 `IDataObject` 를 호출 하 여 [iunknown:: Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleDataSource 클래스](../../mfc/reference/coledatasource-class.md)<br/>

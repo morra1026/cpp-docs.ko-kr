@@ -7,12 +7,12 @@ helpviewer_keywords:
 - application wizards [MFC], document/view classes created
 - view classes [MFC], created by application wizards
 ms.assetid: 70c34a60-2701-4981-acea-c08a5787d8e6
-ms.openlocfilehash: 0ef0da4ea738d02518fb68085afc194e219103cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 95b50e34d612c3b8f5dea2f8b469bd6c65182d41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464585"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271452"
 ---
 # <a name="document-and-view-classes-created-by-the-mfc-application-wizard"></a>MFC 응용 프로그램 마법사에서 만든 문서 및 뷰 클래스
 
@@ -22,7 +22,6 @@ MFC 응용 프로그램 마법사를 사용 하면 시작할 프로그램 개발
 
 둘 이상의 문서 클래스, 클래스 보기 또는 frame-window 클래스 일부 응용 프로그램은 필요할 수 있습니다. 자세한 내용은 [여러 문서 형식, 뷰 및 프레임 Windows](../mfc/multiple-document-types-views-and-frame-windows.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

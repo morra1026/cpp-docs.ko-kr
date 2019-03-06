@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleConvertDialog [MFC], GetSelectionType
 - COleConvertDialog [MFC], m_cv
 ms.assetid: a7c57714-31e8-4b78-834d-8ddd1b856a1c
-ms.openlocfilehash: e1e13f96eb90c81127723afcacf463478b75a894
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d0d2f83a6340224cf0fd6318e470fcfae103d72b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569756"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267734"
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog 클래스
 
@@ -71,7 +71,7 @@ class COleConvertDialog : public COleDialog
 
 OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -276,7 +276,7 @@ OLEUICONVERT m_cv;
 
 자세한 내용은 참조는 [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK에는 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COleDialog 클래스](../../mfc/reference/coledialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

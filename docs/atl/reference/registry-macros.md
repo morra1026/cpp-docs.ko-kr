@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - registry, ATL macros
 ms.assetid: 3ee041da-c63b-42a4-89cf-2a4b2a6f81ae
-ms.openlocfilehash: bced900cd7bac666daf415d91a4540828c769025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e05d6a47ea67138e8d1d456077526dd3178cc44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660384"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292919"
 ---
 # <a name="registry-macros"></a>레지스트리 매크로
 
@@ -108,7 +108,7 @@ DECLARE_REGISTRY(
 [in] UINT 프로그램 설명으로 사용 하도록 레지스트리를의 리소스 문자열의 인덱스입니다.
 
 *flags*<br/>
-[in] 레지스트리에서 프로그램의 스레딩 모델을 포함 하는 DWORD. 다음 값 중 하나 여야 합니다: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG 합니다.
+[in] 레지스트리에서 프로그램의 스레딩 모델을 포함 하는 DWORD. 다음 값 중 하나 여야 합니다. THREADFLAGS_APARTMENT, THREADFLAGS_BOTH, 또는 AUTPRXFLAG 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -192,6 +192,6 @@ ATL 레지스트리 구성 요소 (등록자)에 최적화 된 레지스트리 �
 
 대체 가능 매개 변수 및 스크립팅 하는 방법에 대 한 자세한 내용은 문서 참조 [ATL 레지스트리 구성 요소 (등록자)](../../atl/atl-registry-component-registrar.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - DHTML, calling C++ code from
 ms.assetid: 37329acd-4c22-40ca-a85a-b7480748f75f
-ms.openlocfilehash: 0fa4f51f4488be61edb0f01d9fddc956cd7a45b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb63f8671770f57972a4c789d983bdf9658d5ecb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555196"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270178"
 ---
 # <a name="calling-c-code-from-dhtml"></a>DHTML에서 c + + 코드 호출
 
@@ -41,7 +41,6 @@ HTML 파일의 메서드 중 하나를 검사 합니다.
 
 참조 [ATL DHTML 컨트롤 수정](../atl/modifying-the-atl-dhtml-control.md) 사용자 고유의 메서드를 제공 하는 방법에 대 한 자세한 내용은 합니다. 참조 [DHTML 컨트롤 프로젝트의 요소 식별](../atl/identifying-the-elements-of-the-dhtml-control-project.md) HTML 파일에 대 한 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DHTML 컨트롤에 대 한 지원](../atl/atl-support-for-dhtml-controls.md)
-

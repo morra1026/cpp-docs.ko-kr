@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon resource [MFC], loading
 ms.assetid: 1c76bb8f-6345-414a-9f3f-128815ceadc5
-ms.openlocfilehash: 14ba37952d6f8849c51b36901a6bc17404f938e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b7691d4168101209b0e2d2500012a2b4a8e47788
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515156"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289559"
 ---
 # <a name="how-to-load-a-ribbon-resource-from-an-mfc-application"></a>방법: MFC 응용 프로그램에서 리본 리소스 로드
 
@@ -17,13 +17,15 @@ ms.locfileid: "50515156"
 
 ### <a name="to-load-a-ribbon-resource"></a>리본 리소스를 로드하려면
 
-1. `Ribbon Control` 클래스에서 `CMainFrame` 개체를 선언합니다.
+1. 
+  `Ribbon Control` 클래스에서 `CMainFrame` 개체를 선언합니다.
 
 ```
     CMFCRibbonBar m_wndRibbonBar;
 ```
 
-1. `CMainFrame::OnCreate`에서 리본 컨트롤을 만들고 초기화합니다.
+1. 
+  `CMainFrame::OnCreate`에서 리본 컨트롤을 만들고 초기화합니다.
 
 ```
     if (!m_wndRibbonBar.Create (this))
@@ -37,7 +39,6 @@ ms.locfileid: "50515156"
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리본 디자이너(MFC)](../mfc/ribbon-designer-mfc.md)
-

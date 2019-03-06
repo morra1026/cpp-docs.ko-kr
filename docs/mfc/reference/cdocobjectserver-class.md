@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CDocObjectServer [MFC], OnApplyViewState
 - CDocObjectServer [MFC], OnSaveViewState
 ms.assetid: 18cd0dff-0616-4472-b8d9-66c081bc383a
-ms.openlocfilehash: 704d3290df89c327bcf10b9afe7acb8621165863
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4b1a352a9fa62dfcb46d1c1cb0784661e66e5b4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509528"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289899"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer 클래스
 
@@ -47,7 +47,7 @@ class CDocObjectServer : public CCmdTarget
 |----------|-----------------|
 |[CDocObjectServer::ActivateDocObject](#activatedocobject)|문서 개체 서버를 활성화 하지만 표시 되지 않습니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -65,7 +65,7 @@ DocObject 서버를 사용자 지정 하려면에서 사용자 고유의 클래�
 
 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServerItem](../../mfc/reference/cdocobjectserveritem-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -167,7 +167,7 @@ virtual void OnSaveViewState(CArchive& ar);
 
 사용할 수 있습니다 `OnSaveViewState` 보기의 상태를 영구 정보를 저장 합니다. 재정의 하는 경우 `OnSaveViewState` 정보를 저장 하는 재정의 하려는 `OnApplyViewState` 해당 정보를 읽고 새로 활성화 될 때이 보기에 적용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

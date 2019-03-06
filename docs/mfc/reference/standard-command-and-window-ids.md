@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - standard command and Window IDs
 ms.assetid: 0424805c-fff8-4531-8f0c-15cfb13aa612
-ms.openlocfilehash: 28279931c5d644ef333c03fd799c5f2fbf68ec52
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5f6955407f565d5cc06ef57e9bd273f6c0f7712
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647982"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267253"
 ---
 # <a name="standard-command-and-window-ids"></a>표준 명령 및 창 ID
 
@@ -30,6 +30,6 @@ ID는 이 참조 설명서에서 개별적으로 설명하지 않습니다. 기�
 
 [!code-cpp[NVC_MFC_Utilities#47](../../mfc/codesnippet/cpp/standard-command-and-window-ids_1.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

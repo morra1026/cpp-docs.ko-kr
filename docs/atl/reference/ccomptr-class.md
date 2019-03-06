@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComPtr class
 ms.assetid: 22d9ea8d-ed66-4c34-940f-141db11e83bd
-ms.openlocfilehash: 612deccdf4697f366c2d40b1f4a329c015ddded9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e3e510291daa50ddcf5d63451edef0428d66ed1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432840"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280470"
 ---
 # <a name="ccomptr-class"></a>CComPtr 클래스
 
@@ -57,7 +57,7 @@ ATL 사용 `CComPtr` 하 고 [CComQIPtr](../../atl/reference/ccomqiptr-class.md)
 
 디버그 빌드에서 atlsd.lib 코드 추적에 대 한 연결 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CComPtrBase](../../atl/reference/ccomptrbase-class.md)
 
@@ -102,7 +102,7 @@ T* operator= (const CComPtr<T>& lp) throw ();
 
 이 작업 AddRefs 새 개체 및 릴리스 기존 개체를 하나 존재 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComPtr::CComPtr](#ccomptr)<br/>
 [CComQIPtr::CComQIPtr](../../atl/reference/ccomqiptr-class.md#ccomqiptr)<br/>

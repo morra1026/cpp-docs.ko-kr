@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC Add Class Wizard
 - wizards [MFC]
 ms.assetid: ad3b0989-d307-43b2-9417-3f9a78889024
-ms.openlocfilehash: 245963d4222188f16fd334d6950e04584ac1e978
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fa9b947ae6fc0e48aaecde61e35a5f4152c85f27
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520844"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304095"
 ---
 # <a name="mfc-add-class-wizard"></a>MFC 클래스 추가 마법사
 
@@ -109,7 +109,7 @@ ms.locfileid: "51520844"
 
 - **유형 ID**
 
-  클래스의 형식 ID를 설정 합니다. 합니다 **유형 ID** 상자 프로젝트 이름 및 새 클래스 이름을 연결 같이: *MFCProj.MFCClass*합니다. 이 ID를 선택한 경우에 변경할 수는 **Automation** 옵션 **Creatable 형식 ID로**합니다.
+  클래스의 형식 ID를 설정 합니다. **유형 ID** 상자 프로젝트 이름 및 새 클래스 이름을 연결 다음과 같습니다. *MFCProj.MFCClass*. 이 ID를 선택한 경우에 변경할 수는 **Automation** 옵션 **Creatable 형식 ID로**합니다.
 
 - **DocTemplate 리소스를 생성 합니다.**
 
@@ -117,7 +117,7 @@ ms.locfileid: "51520844"
 
   참조 [문서 템플릿 및 문서/뷰 만들기 프로세스](../../mfc/document-templates-and-the-document-view-creation-process.md) 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)

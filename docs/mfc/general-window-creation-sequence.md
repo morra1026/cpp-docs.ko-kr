@@ -7,12 +7,12 @@ helpviewer_keywords:
 - windows [MFC], creating
 - sequence [MFC]
 ms.assetid: 9cd8c7ea-5e24-429e-b6d9-d7b6041d8ba6
-ms.openlocfilehash: f69d32ea846e93974bc71340777b23750da73ba7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 949cf72910654b502ca4b57be72bedc2db63c315
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446789"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269229"
 ---
 # <a name="general-window-creation-sequence"></a>일반 창 만들기 시퀀스
 
@@ -27,7 +27,7 @@ MFC 사용에서 제공 하는 모든 창 클래스 [2 단계 생성](../mfc/one
 > [!NOTE]
 >  프로그램 아이콘, 액셀러레이터 키 테이블 및 메뉴 리소스 ID가 있어야 일반적인 리소스와 같은 **IDR_MAINFRAME**, LoadFrame에 로드할 수 있도록 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [창 개체](../mfc/window-objects.md)
 
@@ -37,7 +37,6 @@ MFC 사용에서 제공 하는 모든 창 클래스 [2 단계 생성](../mfc/one
 
 - [문서 프레임 창 만들기](../mfc/creating-document-frame-windows.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 만들기](../mfc/creating-windows.md)
-

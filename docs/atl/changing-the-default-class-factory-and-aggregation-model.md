@@ -12,12 +12,12 @@ helpviewer_keywords:
 - default class factory, ATL
 - defaults [C++], class factory
 ms.assetid: 6e040e95-0f38-4839-8a8b-c9800dd47e8c
-ms.openlocfilehash: 34e838eea201f96acd7dcc647c4410fb244c8424
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94f9ecd85e09cb3916b518d71b904961042142e8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485547"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277380"
 ---
 # <a name="changing-the-default-class-factory-and-aggregation-model"></a>기본 클래스 팩터리 및 집계 모델 변경
 
@@ -35,8 +35,7 @@ ATL 사용 [CComCoClass](../atl/reference/ccomcoclass-class.md) 개체에 대 �
 
 ATL 사용 합니다 **typedef** 기본 동작을 구현 하는 메커니즘입니다. 예를 들어 DECLARE_AGGREGATABLE 매크로 사용 하 여 **typedef** 라는 형식을 정의 하려면 `_CreatorClass`, ATL. 전체에서 참조 되는 파생된 클래스에서를 **typedef** 기본 클래스의 동일한 이름을 사용 하 여 **typedef** ATL 프로그램 정의 사용 하 고 기본 동작 재정의에서 발생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [집계 및 클래스 팩터리 매크로](../atl/reference/aggregation-and-class-factory-macros.md)
-

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CBitmapRenderTarget [MFC], GetBitmapRenderTarget
 - CBitmapRenderTarget [MFC], m_pBitmapRenderTarget
 ms.assetid: c89a4437-812e-4943-acb2-b429a04cc4d2
-ms.openlocfilehash: ffead8d1f4a903fba79e4b22eefbf0a2955f56fd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c110ec8f7c232180bf054e8e4ba90a18f1902c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562242"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283555"
 ---
 # <a name="cbitmaprendertarget-class"></a>CBitmapRenderTarget 클래스
 
@@ -56,7 +56,7 @@ class CBitmapRenderTarget : public CRenderTarget;
 
 |이름|설명|
 |----------|-----------------|
-|[CBitmapRenderTarget::operator ID2D1BitmapRenderTarget *](#operator_id2d1bitmaprendertarget_star)|반환 ID2D1BitmapRenderTarget 인터페이스|
+|[CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*](#operator_id2d1bitmaprendertarget_star)|반환 ID2D1BitmapRenderTarget 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -64,7 +64,7 @@ class CBitmapRenderTarget : public CRenderTarget;
 |----------|-----------------|
 |[CBitmapRenderTarget::m_pBitmapRenderTarget](#m_pbitmaprendertarget)|ID2D1BitmapRenderTarget 개체에 대 한 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -119,7 +119,7 @@ BOOL GetBitmap(CD2DBitmap& bitmap);
 
 ### <a name="parameters"></a>매개 변수
 
-*비트맵*<br/>
+*bitmap*<br/>
 이 메서드는 반환 될 때이 렌더링 대상에 대 한 올바른 비트맵이 포함 되어 있습니다. 이 비트맵 그리기 작업에 사용할 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -146,7 +146,7 @@ ID2D1BitmapRenderTarget 개체에 대 한 포인터입니다.
 ID2D1BitmapRenderTarget* m_pBitmapRenderTarget;
 ```
 
-##  <a name="operator_id2d1bitmaprendertarget_star"></a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget *
+##  <a name="operator_id2d1bitmaprendertarget_star"></a>  CBitmapRenderTarget::operator ID2D1BitmapRenderTarget*
 
 반환 ID2D1BitmapRenderTarget 인터페이스
 
@@ -158,6 +158,6 @@ operator ID2D1BitmapRenderTarget*();
 
 ID2D1BitmapRenderTarget 인터페이스 또는 개체가 아직 초기화 되지 않은 경우 NULL 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

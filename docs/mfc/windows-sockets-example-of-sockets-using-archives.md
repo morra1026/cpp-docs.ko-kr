@@ -1,19 +1,19 @@
 ---
-title: 'Windows 소켓: 아카이브를 사용하는 소켓의 예'
+title: 'Windows 소켓: 아카이브를 사용 하는 소켓의 예'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - sockets [MFC], with archives
 - examples [MFC], Windows Sockets
 - Windows Sockets [MFC], with archives
 ms.assetid: 2e3c9bb2-7e7b-4f28-8dc5-6cb7a484edac
-ms.openlocfilehash: 285053c79b13ebea23aedc7dae52eabe85f55a12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ea1e2911b156066360da09993fa7302db79f12b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295262"
 ---
-# <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows 소켓: 아카이브를 사용하는 소켓의 예
+# <a name="windows-sockets-example-of-sockets-using-archives"></a>Windows 소켓: 아카이브를 사용 하는 소켓의 예
 
 이 문서에서는 클래스를 사용 하는 예제를 보여 줍니다 [CSocket](../mfc/reference/csocket-class.md)합니다. 이 예제에서는 사용 하 여 `CArchive` 소켓을 통해 데이터를 serialize 할 개체입니다. 문서 serialization 파일에서 아님을 note 합니다.
 
@@ -47,18 +47,17 @@ ms.locfileid: "50436272"
 
 자세한 내용은 Windows Sockets 사양을 참조: **htonl**를 **htons**를 **ntohl**를 **ntohs**합니다. 또한 자세한 내용은 다음을 참조 합니다.
 
-- [Windows 소켓: 소켓 클래스에서 파생시키기](../mfc/windows-sockets-deriving-from-socket-classes.md)
+- [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows 소켓: 보관이 포함 된 소켓의 작동 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
-- [Windows 소켓: 백그라운드](../mfc/windows-sockets-background.md)
+- [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)<br/>
 [CArchive::IsStoring](../mfc/reference/carchive-class.md#isstoring)<br/>
 [CArchive::operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
 [CArchive::operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
 [CArchive::Flush](../mfc/reference/carchive-class.md#flush)<br/>
-[Cobject:: Serialize](../mfc/reference/cobject-class.md#serialize)
-
+[CObject::Serialize](../mfc/reference/cobject-class.md#serialize)

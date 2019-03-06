@@ -8,16 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - task_handle class
 ms.assetid: 74a34b15-708b-4231-a509-947874292b13
-ms.openlocfilehash: 060be8614fc3a0a93d446c747b65de82b863ab3c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 4193c2d1e08c1b5a43dc728edd24efd19be87268
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518882"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298089"
 ---
 # <a name="taskhandle-class"></a>task_handle 클래스
 
-`task_handle` 클래스는 개별 병렬 작업 항목을 나타냅니다. 작업을 실행하는 데 필요한 지침 및 데이터를 캡슐화합니다.
+
+  `task_handle` 클래스는 개별 병렬 작업 항목을 나타냅니다. 작업을 실행하는 데 필요한 지침 및 데이터를 캡슐화합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -58,7 +59,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 
 런타임에서 작업 함수에 전달 하는 복사본을 만듭니다는 `task_handle` 개체입니다. 따라서 함수에서 발생 하는 모든 상태 변경 내용을 개체에 전달 해야 하는 `task_handle` 개체는 함수 개체의 복사본에 나타나지 것입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `task_handle`
 
@@ -68,7 +69,7 @@ class task_handle : public ::Concurrency::details::_UnrealizedChore;
 
 **네임스페이스:** 동시성
 
-##  <a name="task_handle__operator_call"></a> operator)
+##  <a name="task_handle__operator_call"></a> operator()
 
 작업 핸들의 작업을 수행 하는 런타임 호출 하는 함수 호출 연산자입니다.
 
@@ -101,7 +102,7 @@ task_handle(const _Function& _Func);
 ~task_handle();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [task_group 클래스](task-group-class.md)<br/>

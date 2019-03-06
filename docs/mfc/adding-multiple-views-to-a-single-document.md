@@ -7,12 +7,12 @@ helpviewer_keywords:
 - single document interface (SDI), adding views
 - views [MFC], SDI applications
 ms.assetid: 86d0c134-01d5-429c-b672-36cfb956dc01
-ms.openlocfilehash: d76f5796bb8588cae26b17c4f6cf7aae90b354ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b665f090fc680221be70f170452d756dd5f68dc5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579376"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284283"
 ---
 # <a name="adding-multiple-views-to-a-single-document"></a>단일 문서에 뷰 여러 개 추가
 
@@ -97,7 +97,6 @@ Windows 메시지를 정의 하는 새 헤더 파일을 포함 하 여 응용 �
 
 새 메뉴 항목 및 명령 처리기 함수를 추가 하는 방법은 참조 하세요 [명령 및 컨트롤 알림에 대 한 처리기](../mfc/handlers-for-commands-and-control-notifications.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

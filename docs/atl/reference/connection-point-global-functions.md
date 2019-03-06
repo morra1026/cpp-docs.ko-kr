@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - connection points [C++], global functions
 ms.assetid: bcb4bf50-2155-4e20-b8bb-f2908b03a6e7
-ms.openlocfilehash: 200300eaea2bc98f1d87e2c1859610df8d0cb03b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0313e93ee82bb96f3bfe08e45f70ccfee30dbee6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628932"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263886"
 ---
 # <a name="connection-point-global-functions"></a>연결 지점 전역 함수
 
@@ -119,7 +119,7 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 [in] 싱크 맵이 포함 된 개체에 대 한 포인터입니다.
 
 *bAdvise*<br/>
@@ -133,7 +133,7 @@ HRESULT AtlAdviseSinkMap(T* pT, bool bAdvise);
 
 [!code-cpp[NVC_ATL_Windowing#92](../../atl/codesnippet/cpp/connection-point-global-functions_3.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [함수](../../atl/reference/atl-functions.md)<br/>
 [연결 지점 매크로](../../atl/reference/connection-point-macros.md)

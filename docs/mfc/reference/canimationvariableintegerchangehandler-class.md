@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CAnimationVariableIntegerChangeHandler [MFC], OnIntegerValueChanged
 - CAnimationVariableIntegerChangeHandler [MFC], SetAnimationController
 ms.assetid: 6ac8e91b-e514-4ff6-babd-33f77c4b2b61
-ms.openlocfilehash: 66d740d7042ed2e19b6fe3a87345d7abb096f12c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1c3dc080c23ba4ac05539674047a66059ce52d0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449636"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296581"
 ---
 # <a name="canimationvariableintegerchangehandler-class"></a>CAnimationVariableIntegerChangeHandler 클래스
 
@@ -51,7 +51,7 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
 
 이 이벤트 처리기 생성 되어 CAnimationVariable::EnableIntegerValueChangedEvent 또는 (그러면 CAnimationBaseObject::EnableIntegerValueChangedEvent을 호출할 때 IUIAnimationVariable::SetVariableIntegerChangeHandler 메서드에 전달 이 이벤트는 애니메이션 개체에 캡슐화 하는 모든 애니메이션 변수에 대 한).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [MFC 클래스](../../mfc/reference/mfc-classes.md)
 
@@ -108,7 +108,7 @@ IFACEMETHOD(OnIntegerValueChanged) (
 
 ### <a name="parameters"></a>매개 변수
 
-*스토리 보드*<br/>
+*storyboard*<br/>
 변수의 애니메이션을 적용 하는 스토리 보드입니다.
 
 *variable*<br/>
@@ -137,6 +137,6 @@ void SetAnimationController(CAnimationController* pAnimationController);
 *pAnimationController*<br/>
 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

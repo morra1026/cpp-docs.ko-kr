@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC, ATL support
 - ATL, MFC projects
 ms.assetid: b5fe15d6-7752-4818-b9f9-62482ad35c95
-ms.openlocfilehash: 9f8861e3b6aa0fee95aa84b989cf1057ae0f76b6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2870bf70492dc09d1a0af3664d1a819aec354b92
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448601"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261676"
 ---
 # <a name="adding-atl-support-to-your-mfc-project"></a>MFC 프로젝트에 ATL 지원 추가
 
@@ -28,7 +28,7 @@ MFC 기반 응용 프로그램을 이미 만든 경우 다음 지원을 추가�
 
 1. 솔루션 탐색기에서 ATL 지원 추가 하려는 프로젝트를 마우스 오른쪽 단추로 클릭 합니다.
 
-1. 바로 가기 메뉴에서 클릭 **추가**를 클릭 하 고 **클래스 추가**합니다.
+1. 바로 가기 메뉴에서 **추가**를 클릭한 다음 **클래스 추가**를 클릭합니다.
 
 1. 선택 된 **MFC 프로젝트에 ATL 지원 추가** 아이콘입니다.
 
@@ -39,7 +39,7 @@ MFC 기반 응용 프로그램을 이미 만든 경우 다음 지원을 추가�
 
 ATL 지원 추가 하 여 MFC 프로젝트의 코드를 변경 하는 방법에 대 한 자세한 내용은 참조 하세요. [세부 정보의 ATL 지원 마법사로 추가한 ATL](../../mfc/reference/details-of-atl-support-added-by-the-atl-wizard.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

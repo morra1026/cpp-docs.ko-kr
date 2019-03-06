@@ -6,12 +6,12 @@ helpviewer_keywords:
 - delayed loading of DLLs, constraints
 - DLLs [C++], constraints
 ms.assetid: 0097ff65-550f-4a4e-8ac3-39bf6404f926
-ms.openlocfilehash: 75446752948c1c1601a1eec4fa038aa830f2804e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0be2c9e0681018bb61f433f77df8fdd77ba741a5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483592"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420494"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL 지연 로드의 제약 조건
 
@@ -23,7 +23,8 @@ ms.locfileid: "50483592"
 
 - [바인딩](../../build/reference/binding-imports.md) 항목의 전달 된 지원 되지 않습니다.
 
-- 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)를 포함 하는 경우도 [__declspec (thread)](../../cpp/thread.md)를 통해 DLL이 로드 될 때 처리 되지 않은 `LoadLibrary`합니다. `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
+- 지연 로드된 DLL의 진입점에서 프로세스별 초기화가 발생하는 경우 DLL 지연 로드로 인해 동일한 동작의 프로세스가 발생하지 않을 수 있습니다. 사용 하 여 선언 된 정적 TLS (스레드 로컬 저장소)를 포함 하는 경우도 [__declspec (thread)](../../cpp/thread.md)를 통해 DLL이 로드 될 때 처리 되지 않은 `LoadLibrary`합니다. 
+  `TlsAlloc`, `TlsFree`, `TlsGetValue` 및 `TlsSetValue`를 사용하는 동적 TLS는 정적 또는 지연 로드된 DLL에 계속해서 사용할 수 있습니다.
 
 - 정적(전역) 함수 포인터는 첫 번째 함수 호출 후 가져온 함수로 다시 초기화해야 합니다. 이는 함수 포인터의 첫 번째 사용이 썽크를 가리키기 때문입니다.
 
@@ -31,7 +32,7 @@ ms.locfileid: "50483592"
 
 - 사용자 지정 호출 규칙(예: x86 아키텍처에 조건 코드 사용)은 지원되지 않습니다. 또한 어떤 플랫폼에서도 부동 소수점 레지스터는 저장되지 않습니다. 사용자 지정 도우미 루틴 또는 후크 루틴이 부동 소수점 형식을 사용하는 경우 이러한 루틴은 부동 소수점 매개 변수와 함께 레지스터 호출 규칙을 사용하여 컴퓨터에서 부동 소수점 상태를 완벽하게 저장 및 복원해야 합니다. 도움말 함수의 NDP(수치 데이터 프로세서) 스택에 부동 소수점 매개 변수를 사용하는 CRT 함수를 호출하는 경우 CRT DLL 지연 로드에 주의하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커의 지연 로드된 DLL 지원](../../build/reference/linker-support-for-delay-loaded-dlls.md)<br/>
 [LoadLibrary 함수](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya)<br/>

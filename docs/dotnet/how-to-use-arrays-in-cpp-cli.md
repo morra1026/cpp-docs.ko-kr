@@ -1,17 +1,17 @@
 ---
-title: '방법: C++/CLI에서 배열 사용'
+title: '방법: 배열을 사용 하 여 C + + /cli CLI'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - arrays [C++], single-dimension
 ms.assetid: 301cfb3e-199f-42c8-8151-629dce9e87f3
-ms.openlocfilehash: e38e15cffbf623f629f57243923ddae273801bfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b0a13441bc3532884dbbd32f28d57c15e352c3ef
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596250"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414605"
 ---
-# <a name="how-to-use-arrays-in-ccli"></a>방법: C++/CLI에서 배열 사용
+# <a name="how-to-use-arrays-in-ccli"></a>방법: 배열을 사용 하 여 C + + /cli CLI
 
 이 문서에서는 배열을 사용 하 여 C + + /cli CLI입니다.
 
@@ -503,7 +503,7 @@ int main() {
 
 표준 c + + 배열과 달리, 관리 되는 배열 있는 일반 동작의 상속 하는 배열의 기본 클래스에서 암시적으로 파생 됩니다. 예로 `Sort` 배열에서 항목을 주문 하는 메서드.
 
-기본 내장 형식을 포함 하는 배열에 대해 호출할 수 있습니다는 `Sort` 메서드. 정렬 기준을 재정의 하 고 하는 것은 필요한 복합 형식의 배열에 대 한 정렬 하려고 할 때 키를 누릅니다. 이 경우 배열 요소 형식은 구현 해야 합니다 [IComparable::CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) 메서드.
+기본 내장 형식을 포함 하는 배열에 대해 호출할 수 있습니다는 `Sort` 메서드. 정렬 기준을 재정의 하 고 하는 것은 필요한 복합 형식의 배열에 대 한 정렬 하려고 할 때 키를 누릅니다. 이 경우 배열 요소 형식은 구현 해야 합니다는 <xref:System.IComparable.CompareTo%2A> 메서드.
 
 ```cpp
 // array_sort.cpp
@@ -520,7 +520,7 @@ int main() {
 
 ## <a name="sorting-arrays-by-using-custom-criteria"></a>사용자 지정 조건을 사용 하 여 배열 정렬
 
-기본 내장 형식을 포함 하는 배열을 정렬 하려면 호출을 `Array::Sort` 메서드. 그러나 복잡 한 형식을 포함 하거나 기본 정렬 조건을 재정의 하려면 재정의 하는 정렬 배열에 합니다 [IComparable::CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) 메서드.
+기본 내장 형식을 포함 하는 배열을 정렬 하려면 호출을 `Array::Sort` 메서드. 그러나 복잡 한 형식을 포함 하거나 기본 정렬 조건을 재정의 하려면 재정의 하는 정렬 배열에는 <xref:System.IComparable.CompareTo%2A> 메서드.
 
 다음 예제에서는 구조체 이름이 `Element` 에서 파생 됩니다 <xref:System.IComparable>, 하 게 작성 하 고는 <xref:System.IComparable.CompareTo%2A> 정렬 기준으로 두 정수의 평균을 사용 하는 메서드.
 

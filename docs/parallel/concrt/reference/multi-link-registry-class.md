@@ -14,16 +14,17 @@ f1_keywords:
 helpviewer_keywords:
 - multi_link_registry class
 ms.assetid: b2aa73a8-e8a6-4255-b117-d07530c328b2
-ms.openlocfilehash: 6f4e6db693a5839fd3add503bfb9697679a98dd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 388cc0082f69041368d1a444179855451d552ce6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50635409"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264766"
 ---
 # <a name="multilinkregistry-class"></a>multi_link_registry 클래스
 
-`multi_link_registry` 개체는 여러 소스 블록 또는 여러 대상 블록을 관리하는 `network_link_registry`입니다.
+
+  `multi_link_registry` 개체는 여러 소스 블록 또는 여러 대상 블록을 관리하는 `network_link_registry`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,12 +53,12 @@ class multi_link_registry : public network_link_registry<_Block>;
 |----------|-----------------|
 |[add](#add)|에 대 한 링크를 추가 합니다 `multi_link_registry` 개체입니다. (재정의 [network_link_registry:: add](network-link-registry-class.md#add).)|
 |[begin](#begin)|첫 번째 요소에 반복기를 반환 합니다 `multi_link_registry` 개체입니다. (재정의 [network_link_registry:: begin](network-link-registry-class.md#begin).)|
-|[포함](#contains)|검색 된 `multi_link_registry` 지정된 된 블록에 대 한 개체입니다. (재정의 [network_link_registry:: contains](network-link-registry-class.md#contains).)|
+|[contains](#contains)|검색 된 `multi_link_registry` 지정된 된 블록에 대 한 개체입니다. (재정의 [network_link_registry:: contains](network-link-registry-class.md#contains).)|
 |[count](#count)|에 있는 항목의 개수는 `multi_link_registry` 개체입니다. (재정의 [network_link_registry:: count](network-link-registry-class.md#count).)|
 |[remove](#remove)|링크를 제거 합니다 `multi_link_registry` 개체입니다. (재정의 [network_link_registry:: remove](network-link-registry-class.md#remove).)|
 |[set_bound](#set_bound)|링크의 수에 상한값을 설정 합니다 `multi_link_registry` 개체가 보유할 수 있습니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [network_link_registry](network-link-registry-class.md)
 
@@ -79,7 +80,7 @@ virtual void add(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 추가할 블록에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -112,7 +113,7 @@ virtual bool contains(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 검색 하는 블록에 대 한 포인터를 `multi_link_registry` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -161,7 +162,7 @@ virtual bool remove(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 제거 될 경우 블록에 대 한 포인터를 찾을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -185,7 +186,7 @@ void set_bound(size_t _MaxLinks);
 
 한도가 설정된 후 항목의 연결을 해제하면 `multi_link_registry` 개체가 변경 불가능한 상태로 전환됩니다. 이 상태에서 `add`를 추가로 호출하면 `invalid_link_target` 예외가 throw됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [single_link_registry 클래스](single-link-registry-class.md)

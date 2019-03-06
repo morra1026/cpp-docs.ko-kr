@@ -62,12 +62,12 @@ helpviewer_keywords:
 - CDataRecoveryHandler [MFC], SetShutdownByRestartManager
 - CDataRecoveryHandler [MFC], UpdateDocumentInfo
 ms.assetid: 7794802c-e583-4eba-90b9-2fed1a161f9c
-ms.openlocfilehash: 10107d7b815f8a3c479a28de8ff07439b5da2fda
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88cc4a433c774dc7767efaaa62edc71ce8b904d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456045"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273038"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler 클래스
 
@@ -105,7 +105,7 @@ class CDataRecoveryHandler : public CObject
 |[CDataRecoveryHandler::GetRestartIdentifier](#getrestartidentifier)|응용 프로그램에 대 한 다시 시작 고유 식별자를 검색합니다.|
 |[CDataRecoveryHandler::GetSaveDocumentInfoOnIdle](#getsavedocumentinfoonidle)|나타냅니다 여부는 `CDataRecoveryHandler` 현재 유휴 상태 루프에는 자동 저장을 수행 합니다.|
 |[CDataRecoveryHandler::GetShutdownByRestartManager](#getshutdownbyrestartmanager)|다시 시작 관리자 응용 프로그램이 종료 되도록 발생 하는지 여부를 나타냅니다.|
-|[CDataRecoveryHandler::Initialize](#initialize)|`CDataRecoveryHandler` 을(를) 초기화합니다.|
+|[CDataRecoveryHandler::Initialize](#initialize)|`CDataRecoveryHandler`을 초기화합니다.|
 |[CDataRecoveryHandler::QueryRestoreAutosavedDocuments](#queryrestoreautosaveddocuments)|각 문서에 대 한 사용자에 게 대화 상자를 표시 합니다 `CDataRecoveryHandler` 자동 저장 합니다. 대화 상자 자동 저장 된 문서를 복원 하려면 사용자가 있는지 여부를 결정 합니다.|
 |[CDataRecoveryHandler::ReadOpenDocumentList](#readopendocumentlist)|열린 문서 목록 레지스트리에서 로드합니다.|
 |[CDataRecoveryHandler::RemoveDocumentInfo](#removedocumentinfo)|열린 문서 목록에서 제공된 된 문서를 제거합니다.|
@@ -146,7 +146,7 @@ class CDataRecoveryHandler : public CObject
 
 사용 하기 전에 `CDataRecoveryHandler` 개체를 호출 해야 합니다 [CDataRecoveryHandler::Initialize](#initialize)합니다.
 
-때문에 합니다 `CDataRecoveryHandler` 클래스를 다시 시작 관리자 밀접 하 게 연결할 `CDataRecoveryHandler` 전역 매개 변수에 따라 달라 집니다 `m_dwRestartManagerSupportFlags`합니다. 이 매개 변수는 다시 시작 관리자에 어떤 사용 권한 및 응용 프로그램과 함께 작용 하는 방법을 결정 합니다. 기존 응용 프로그램으로 다시 시작 관리자에 통합 하려면 할당 해야 `m_dwRestartManagerSupportFlags` 주 응용 프로그램의 생성자에서 적절 한 값입니다. 다시 시작 관리자를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)합니다.
+때문에 합니다 `CDataRecoveryHandler` 클래스를 다시 시작 관리자 밀접 하 게 연결할 `CDataRecoveryHandler` 전역 매개 변수에 따라 달라 집니다 `m_dwRestartManagerSupportFlags`합니다. 이 매개 변수는 다시 시작 관리자에 어떤 사용 권한 및 응용 프로그램과 함께 작용 하는 방법을 결정 합니다. 기존 응용 프로그램으로 다시 시작 관리자에 통합 하려면 할당 해야 `m_dwRestartManagerSupportFlags` 주 응용 프로그램의 생성자에서 적절 한 값입니다. 다시 시작 관리자를 사용 하는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)를 참조하세요.
 
 ## <a name="requirements"></a>요구 사항
 
@@ -441,7 +441,7 @@ TRUE 이면 인해 종료; 응용 프로그램이 다시 시작 관리자 FALSE 
 
 ##  <a name="initialize"></a>  CDataRecoveryHandler::Initialize
 
-`CDataRecoveryHandler` 을(를) 초기화합니다.
+`CDataRecoveryHandler`을 초기화합니다.
 
 ```
 virtual BOOL Initialize();
@@ -684,10 +684,9 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 
 이 메서드를 사용 하려면 AFX_RESTART_MANAGER_REOPEN_PREVIOUS_FILES에서 설정 해야 합니다 *m_dwRestartManagerSupportFlags*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [방법: 다시 시작 관리자 지원 추가](../../mfc/how-to-add-restart-manager-support.md)
-

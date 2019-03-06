@@ -6,12 +6,12 @@ helpviewer_keywords:
 - import libraries, using
 - export files
 ms.assetid: 2634256a-8aa5-4495-8c9e-6cde10e4ed76
-ms.openlocfilehash: e23b729bdca102ec24c4426e9784e3aab267bff2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75a93d97478050718b3f6c32fa83d7320a38954b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484962"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412980"
 ---
 # <a name="using-an-import-library-and-export-file"></a>가져오기 라이브러리 및 내보내기 파일 사용
 
@@ -27,6 +27,6 @@ ms.locfileid: "50484962"
 
 마지막으로 작업을 시작한 프로그램을 연결 합니다. 링크 명령에서 개체 및 프로그램의 경우 프로그램 및 가져오기 라이브러리에 대 한 생성 LIB.exp 파일을 라이브러리 또는 프로그램이 사용 하는 내보내기에 대 한 라이브러리를 지정 합니다. 예제를 계속 하려면 ONE.dll 링크 명령을 ONE.exp TWO.lib, 뿐만 아니라 개체 및 ONE.dll에 포함 된 라이브러리를 포함 합니다. LINK 명령;.def 파일 또는 /EXPORT 사양을 지정 하지 않으면 여기에 필요 하지 내보내기 정의 사용 하는.exp 파일에 포함 되어 있으므로. .Exp 파일을 사용 하 여 연결 하면 링크 가져오기 라이브러리를 만들지 않으므로, 가정 때문에 사용 하는.exp 파일을 만들 때 생성 되었습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [가져오기 라이브러리 및 내보내기 파일을 사용한 작업](../../build/reference/working-with-import-libraries-and-export-files.md)

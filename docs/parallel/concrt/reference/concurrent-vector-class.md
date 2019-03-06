@@ -33,16 +33,17 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_vector class
 ms.assetid: a217b4ac-af2b-4d41-94eb-09a75ee28622
-ms.openlocfilehash: e8036b0942600e5d47254583e2675c525010a5c1
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 7c2ca35239dfb3ce4c0f710259f54005ff9f3c94
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657567"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283178"
 ---
 # <a name="concurrentvector-class"></a>concurrent_vector 클래스
 
-`concurrent_vector` 클래스는 모든 요소에 대해 임의 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. 동시성으로부터 안전한 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업을 사용할 수 있게 합니다.
+
+  `concurrent_vector` 클래스는 모든 요소에 대해 임의 액세스를 허용하는 시퀀스 컨테이너 클래스입니다. 동시성으로부터 안전한 추가, 요소 액세스, 반복기 액세스 및 반복기 통과 작업을 사용할 수 있게 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -142,7 +143,7 @@ private details::_Concurrent_vector_base_v4;
 
 **네임스페이스:** 동시성
 
-##  <a name="assign"></a> 할당
+##  <a name="assign"></a> assign
 
 동시 벡터의 요소를 삭제 하 고을 할당 `_N` 복사본 `_Item`, 또는 반복기 범위 지정 된 값 [ `_Begin`, `_End`). 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -161,16 +162,16 @@ void assign(_InputIterator _Begin,
 *_InputIterator*<br/>
 지정 된 반복기의 형식입니다.
 
-*별칭과*<br/>
+*_N*<br/>
 동시 벡터에 복사할 항목의 수입니다.
 
-*(_I)*<br/>
+*_Item*<br/>
 동시 벡터를 채우는 데 사용 되는 값에 대 한 참조입니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 소스 범위의 첫 번째 요소는 반복기입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 소스 범위의 마지막 요소 하나 다음에 반복기입니다.
 
 ### <a name="remarks"></a>설명
@@ -330,16 +331,17 @@ concurrent_vector(_InputIterator _Begin,
 *_Vector*<br/>
 요소를 복사해 오거나 이동해 올 소스 `concurrent_vector` 개체입니다.
 
-*별칭과*<br/>
-`concurrent_vector` 개체의 초기 용량입니다.
+*_N*<br/>
 
-*(_I)*<br/>
+  `concurrent_vector` 개체의 초기 용량입니다.
+
+*_Item*<br/>
 생성된 된 개체의 요소 값입니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 복사할 요소의 범위를 벗어난 첫 번째 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -390,7 +392,7 @@ const_reverse_iterator crend() const;
 
 반복기 형식의 `const_reverse_iterator` 동시 벡터의 끝에 있습니다.
 
-##  <a name="empty"></a> 빈
+##  <a name="empty"></a> empty
 
 테스트 시 동시 벡터가 비어 있으면이 메서드가 호출 됩니다. 이 메서드는 동시성이 보장 합니다.
 
@@ -460,7 +462,7 @@ iterator grow_by(
 *_Delta*<br/>
 개체에 추가할 요소의 수입니다.
 
-*(_I)*<br/>
+*_Item*<br/>
 새 요소를 초기화할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -481,7 +483,7 @@ iterator grow_to_at_least(size_type _N);
 
 ### <a name="parameters"></a>매개 변수
 
-*별칭과*<br/>
+*_N*<br/>
 에 대 한 새 최소 크기는 `concurrent_vector` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -500,7 +502,7 @@ size_type max_size() const;
 
 요소의 최대 개수는 `concurrent_vector` 개체가 보유할 수 있습니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 내용을 할당 `concurrent_vector` 여기에 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -528,7 +530,7 @@ concurrent_vector& operator= (
 
 이에 대 한 참조 `concurrent_vector` 개체입니다.
 
-##  <a name="operator_at"></a> operator]
+##  <a name="operator_at"></a> operator[]
 
 동시 벡터의 지정된 된 인덱스에 있는 요소에 대 한 액세스를 제공합니다. 이 메서드는 동시성이 읽기 작업에 대 한 및 보장 하는 값으로 벡터를 증가 하는 동안 `_Index` 동시 벡터 크기 보다 작습니다.
 
@@ -565,7 +567,7 @@ iterator push_back(T&& _Item);
 
 ### <a name="parameters"></a>매개 변수
 
-*(_I)*<br/>
+*_Item*<br/>
 추가할 값입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -610,7 +612,7 @@ void reserve(size_type _N);
 
 ### <a name="parameters"></a>매개 변수
 
-*별칭과*<br/>
+*_N*<br/>
 에 대 한 공간을 예약 요소의 수입니다.
 
 ### <a name="remarks"></a>설명
@@ -632,7 +634,7 @@ void resize(
 
 ### <a name="parameters"></a>매개 변수
 
-*별칭과*<br/>
+*_N*<br/>
 동시 벡터의 새 크기입니다.
 
 *val*<br/>
@@ -672,7 +674,7 @@ size_type size() const;
 
 반환 되는 크기는 함수를 호출 하 여 추가 된 모든 요소를 포함 하도록 보장 됩니다 `push_back`, 또는이 메서드를 호출 하기 전에 완료 된 작업을 확장 합니다. 그러나 할당 되는 요소를 포함할 수도 있습니다 하지만 여전히 증가 방법 중 하나에 대 한 동시 호출 하 여 생성 합니다.
 
-##  <a name="swap"></a> 교환
+##  <a name="swap"></a> swap
 
 두 개의 동시 벡터의 내용을 바꿉니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -685,8 +687,7 @@ void swap(concurrent_vector& _Vector);
 *_Vector*<br/>
 `concurrent_vector` 개체를 사용 하 여 콘텐츠를 교환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [병렬 컨테이너 및 개체](../../../parallel/concrt/parallel-containers-and-objects.md)
-

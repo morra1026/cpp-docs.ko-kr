@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - reader_writer_lock class
 ms.assetid: 91a59cd2-ca05-4b74-8398-d826d9f86736
-ms.openlocfilehash: 1c2696695992cac9d51d547913c41234beaecf57
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 111d48b9c4a575078f2342bfaa944871bbd628f5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585993"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268657"
 ---
 # <a name="readerwriterlock-class"></a>reader_writer_lock 클래스
 
@@ -62,7 +62,7 @@ class reader_writer_lock;
 
 자세한 내용은 [동기화 데이터 구조](../../../parallel/concrt/synchronization-data-structures.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `reader_writer_lock`
 
@@ -208,7 +208,7 @@ bool try_lock_read();
 
 잠금을 획득 하는 경우 값 **true**이 고, 그렇지 않으면 값 **false**합니다.
 
-##  <a name="unlock"></a> 잠금 해제
+##  <a name="unlock"></a> unlock
 
 판독기 또는 작성기 잠근 사용자 기반 판독기 / 기록기 잠금 잠금을 해제 합니다.
 
@@ -220,7 +220,7 @@ void unlock();
 
 기록기 잠금을 기다리는 경우를 잠금 해제 항상 FIFO 순서에 따라 다음 쓰기도 이동 합니다. 이 잠금은 작성기 중심 및 기록기의 연속 부하 상태에서 판독기를 사용할 수 없게 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [critical_section 클래스](critical-section-class.md)

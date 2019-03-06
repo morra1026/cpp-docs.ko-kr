@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CCreateContext structure [MFC]
 ms.assetid: 337a0e44-d910-49a8-afc0-c7207666a9dc
-ms.openlocfilehash: dd5659e7f91e3a2a1d653b61f12323ed1ae5a9b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f84c0da7530a774ebe2b33aea0bddc5b0bf0fe17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326350"
 ---
 # <a name="ccreatecontext-structure"></a>CCreateContext 구조체
 
@@ -62,7 +62,7 @@ struct CCreateContext
 
 **헤더:** afxext.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CFrameWnd::Create](../../mfc/reference/cframewnd-class.md#create)<br/>
@@ -71,4 +71,3 @@ struct CCreateContext
 [CSplitterWnd::Create](../../mfc/reference/csplitterwnd-class.md#create)<br/>
 [CSplitterWnd::CreateView](../../mfc/reference/csplitterwnd-class.md#createview)<br/>
 [CWnd::Create](../../mfc/reference/cwnd-class.md#create)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - status bars [MFC], message area
 - status bars [MFC], displaying command information
 ms.assetid: de895cbe-61ee-46bf-9787-76b247527d6d
-ms.openlocfilehash: 6da45edf611d70920340d8f9a9c2fd8de5cc0307
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c93787b3799306d6008299e7c1be6e429bc4c2d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654105"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282320"
 ---
 # <a name="how-to-display-command-information-in-the-status-bar"></a>방법: 상태 표시줄에 명령 정보 표시
 
@@ -22,7 +22,6 @@ ms.locfileid: "50654105"
 
 기본적으로 응용 프로그램 마법사를 추가 **AFX_IDS_IDLEMESSAGE**, 프로그램은 새 메시지를 대기 하는 경우 표시 되는 표준 "준비" 메시지의 ID입니다. 메시지 "도움이 필요한 경우 F1 키를 누르십시오."으로 변경 된 응용 프로그램 마법사에서 상황에 맞는 도움말 옵션을 지정 하는 경우
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메시지 처리 및 매핑](../mfc/message-handling-and-mapping.md)
-

@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX 컨트롤: 메서드에서 오류 코드 반환'
+title: 'MFC ActiveX 컨트롤: 메서드에서 오류 코드를 반환합니다.'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], error codes
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - SCODE, MFC ActiveX controls
 - ThrowError method [MFC]
 ms.assetid: 771fb9c9-2413-4dcc-b386-7bc4c4adeafd
-ms.openlocfilehash: 8c5fe88cf952337a7d070eae7a5da149a8e905bd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0800c1827c636dd81e2928e33c0ee2afde4c94ac
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676488"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259141"
 ---
-# <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>MFC ActiveX 컨트롤: 메서드에서 오류 코드 반환
+# <a name="mfc-activex-controls-returning-error-codes-from-a-method"></a>MFC ActiveX 컨트롤: 메서드에서 오류 코드를 반환합니다.
 
 이 문서에서는 ActiveX 컨트롤 메서드에서 오류 코드를 반환 하는 방법을 설명 합니다.
 
@@ -28,11 +28,10 @@ ms.locfileid: "50676488"
 
 도우미 함수는 가장 일반적인 같은 미리 정의 된 SCODEs에 대 한 존재 [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported)하십시오 [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), 및 [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).
 
-목록을 미리 정의 된 SCODEs 및 사용자 지정 SCODEs 정의 대 한 지침 섹션을 참조 하세요. [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX 컨트롤에서: 고급 항목입니다.
+목록을 미리 정의 된 SCODEs 및 사용자 지정 SCODEs 정의 대 한 지침 섹션을 참조 하세요 [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX 컨트롤에서: 고급 항목입니다.
 
-코드의 다른 영역에서 예외를 보고에 대 한 자세한 내용은 참조 하세요. [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) 및 섹션 [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX 컨트롤에서: 고급 항목입니다.
+코드의 다른 영역에서 예외를 보고 하는 방법은 참조 하세요 [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) 및 섹션 [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) ActiveX 컨트롤에서: 고급 항목입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

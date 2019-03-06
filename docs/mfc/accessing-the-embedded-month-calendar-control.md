@@ -9,12 +9,12 @@ helpviewer_keywords:
 - month calendar controls [MFC], changing the font
 - DateTimePicker control [MFC]
 ms.assetid: 355e97ed-cf81-4df3-a2f8-9ddbbde93227
-ms.openlocfilehash: 56a735f9e79ca4f5423201139adc740878afb279
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dfe6fa220e19deebd86e7c8b7bd25dab60165f73
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652538"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292137"
 ---
 # <a name="accessing-the-embedded-month-calendar-control"></a>포함된 MonthCalendar 컨트롤 액세스
 
@@ -37,8 +37,7 @@ ms.locfileid: "50652538"
 
 호출 하 여 글꼴 변경 되 면 `CDateTimeCtrl::SetMonthCalFont`, 새 글꼴에 저장 되 고 다음 번 월별 달력을 표시할 수를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDateTimeCtrl 사용](../mfc/using-cdatetimectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

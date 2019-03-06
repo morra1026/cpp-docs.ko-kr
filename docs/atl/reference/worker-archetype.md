@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Worker archetype
 ms.assetid: 834145cd-09d3-4149-bc99-620e1871cbfb
-ms.openlocfilehash: bbfe75ad996841cd4ea78adab56c7cf91ac55f3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 790cf064fcffe1f0cd3c191c28ed0a0614062406
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565557"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283451"
 ---
 # <a name="worker-archetype"></a>Worker 원형
 
@@ -47,8 +47,8 @@ ms.locfileid: "50565557"
 
 |매개 변수 이름|사용 주체|
 |--------------------|-------------|
-|*작업자*|[CThreadPool](../../atl/reference/cthreadpool-class.md)|
-|*작업자*|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|
+|*Worker*|[CThreadPool](../../atl/reference/cthreadpool-class.md)|
+|*Worker*|[CNonStatelessWorker](../../atl/reference/cnonstatelessworker-class.md)|
 
 ### <a name="requirements"></a>요구 사항
 
@@ -67,7 +67,7 @@ void Execute(
 
 #### <a name="parameters"></a>매개 변수
 
-*요청*<br/>
+*request*<br/>
 작업 항목을 처리할 수입니다. 동일한 형식의 작업 항목은 `RequestType`합니다.
 
 *pvWorkerParam*<br/>
@@ -117,8 +117,7 @@ void Terminate(void* pvParam) throw();
 *pvParam*<br/>
 작업자 클래스에 의해 인식 사용자 지정 매개 변수입니다. 또한 전달 `WorkerArchetype::Initialize` 고 `WorkerArchetype::Execute`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../../atl/active-template-library-atl-concepts.md)<br/>
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)
-

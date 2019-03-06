@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC, Common Controls library
 ms.assetid: 7471e6f0-49b0-47f7-86e7-8d6bc3541694
-ms.openlocfilehash: fd47854c7073565fbe0c15ca6be7a9843af5f387
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94700f850be62404f22974a1d5e76acad711555c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583614"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278745"
 ---
 # <a name="isolation-of-the-mfc-common-controls-library"></a>MFC 공용 컨트롤 라이브러리 격리
 
@@ -22,4 +22,3 @@ MFC 응용 프로그램 (또는 MFC를 호출한 사용자 코드) 호출로 래
 래퍼 클래스를 통해 공용 컨트롤 라이브러리 Api에 대 한 호출을 수행한 기술적으로 `CComCtlWrapper` (되었으므로 afxcomctl32.h에 정의 됨). `CComCtlWrapper` 로드 및 언로드 comctl32.dll 담당 이기도 합니다. 인스턴스에 대 한 포인터를 포함 하는 MFC 모듈 상태 `CComCtlWrapper`합니다. 사용 하 여 래퍼 클래스에 액세스할 수 있습니다는 `afxComCtlWrapper` 매크로입니다.
 
 호출 공통 컨트롤 API를 직접 (MFC 래퍼 함수를 사용 하지 않음)는 MFC에서 응용 프로그램 또는 사용자 DLL에서에서 작동 대부분의 경우, 사용자 DLL MFC 응용 프로그램 매니페스트에서 요청한 공용 컨트롤 라이브러리에 바인딩되기 때문에). 그러나 MFC 코드 자체는 래퍼를 사용 하 여 다른 공용 컨트롤 라이브러리 버전을 사용 하 여 사용자 Dll에서 MFC 코드를 호출할 수 있으므로 합니다.
-

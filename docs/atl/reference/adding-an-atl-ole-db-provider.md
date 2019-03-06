@@ -6,12 +6,12 @@ helpviewer_keywords:
 - ATL projects, adding ATL OLE DB providers
 - ATL OLE DB providers
 ms.assetid: 26fba1e3-880f-4bc6-90e5-2096a48a3a6c
-ms.openlocfilehash: 8251d30f6cef898138dfb2c08619f68e17a1cd83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01a5ed4ac09c466cefe195cea83f73ba270c21bb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439171"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275820"
 ---
 # <a name="adding-an-atl-ole-db-provider"></a>ATL OLE DB 공급자를 추가합니다.
 
@@ -29,6 +29,6 @@ ms.locfileid: "50439171"
 
 1. 클릭 **완료** 는 프로젝트에서 새로 만든된 OLE DB 공급자 코드를 삽입 하는 마법사를 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)

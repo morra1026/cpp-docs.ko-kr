@@ -11,12 +11,12 @@ helpviewer_keywords:
 - NOASSEMBLY linker option
 - assemblies [C++], not creating an assembly
 ms.assetid: 3cea4e70-f451-4395-a626-1930b1b127fe
-ms.openlocfilehash: c1508de88b9678898990f0e5b946ad4ced8d6d24
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67f031f90b263e8edec42efc6a3995cca419fe99
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582041"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413682"
 ---
 # <a name="noassembly-create-a-msil-module"></a>/NOASSEMBLY(MSIL 모듈 만들기)
 
@@ -60,7 +60,7 @@ ms.locfileid: "50582041"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TurnOffAssemblyGeneration%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

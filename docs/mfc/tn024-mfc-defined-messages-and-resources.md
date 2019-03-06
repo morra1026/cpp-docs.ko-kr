@@ -9,12 +9,12 @@ helpviewer_keywords:
 - messages [MFC], MFC
 - TN024
 ms.assetid: c65353ce-8096-454b-ad22-1a7a1dd9a788
-ms.openlocfilehash: 26f6effbafd8136661f0b1dc9a6b22138a23e547
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 029177821d37d5d26abe0b39ea1581e8a5ad602b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639636"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278134"
 ---
 # <a name="tn024-mfc-defined-messages-and-resources"></a>TN024: MFC에서 정의한 메시지 및 리소스
 
@@ -162,7 +162,7 @@ MFC 개인 리소스 유형은 0xF0 범위의 0xFF-> 합니다.
 
 ## <a name="mfc-private-resource-formats"></a>MFC 개인 리소스 형식
 
-MFC 두 개인 리소스 형식을 정의 하는 현재: RT_TOOLBAR 및 RT_DLGINIT 합니다.
+현재 MFC 두 개인 리소스 형식을 정의합니다. RT_TOOLBAR 및 RT_DLGINIT 합니다.
 
 ## <a name="rttoolbar-resource-format"></a>RT_TOOLBAR 리소스 형식
 
@@ -197,10 +197,9 @@ RT_DLGINIT 리소스의 기본 구조는 다음과 같습니다.
 SendDlgItemMessage(<Control ID>, <Message #>, 0, &<Data>);
 ```
 
-모든 Windows 메시지 및 데이터 콘텐츠는 매우 일반적인 형식입니다. Visual c + + 리소스 편집기와 MFC만 지 원하는 Windows 메시지의 제한 된 하위: CB_ADDSTRING 콤보 상자 (데이터는 텍스트 문자열)에 대 한 초기 목록을 선택 합니다.
+모든 Windows 메시지 및 데이터 콘텐츠는 매우 일반적인 형식입니다. Visual c + + 리소스 편집기와 MFC만 Windows 메시지의 제한 된 하위 집합을 지원합니다. CB_ADDSTRING 콤보 상자 (데이터는 텍스트 문자열)에 대 한 초기 목록을 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - combo boxes [MFC], CComboBoxEx class
 - CComboBox class [MFC], extended
 ms.assetid: c23cbfe8-75d2-4f98-a753-c942416eda52
-ms.openlocfilehash: 18350a5f4ac8056676eeb275f9fc95478b3a8e10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e119b41bbca42a1cbc0dbb5e721947c5bd7f1bc8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596640"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288495"
 ---
 # <a name="using-ccomboboxex"></a>CComboBoxEx 사용
 
@@ -22,7 +22,7 @@ ms.locfileid: "50596640"
 
 수동으로 항목 그래픽을 그릴 필요가 없는 콤보 상자의 기능을 제공 하려면이 컨트롤을 사용 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [확장된 콤보 상자 컨트롤 만들기](../mfc/creating-an-extended-combo-box-control.md)
 
@@ -32,7 +32,6 @@ ms.locfileid: "50596640"
 
 - [확장된 콤보 상자 컨트롤에서 알림 메시지 처리](../mfc/processing-notification-messages-in-extended-combo-box-controls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

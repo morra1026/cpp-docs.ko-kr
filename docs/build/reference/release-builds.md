@@ -6,12 +6,12 @@ helpviewer_keywords:
 - release builds
 - debug builds, converting to release build
 ms.assetid: fa9a78fa-f4b5-4722-baf4-aec655c4ff0f
-ms.openlocfilehash: 77e02b424b10b5e9606cc49152c2e21d7eeed9cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 346beace1979871cfd9bf4ee0d487e7f85a26eaa
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667456"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426097"
 ---
 # <a name="release-builds"></a>릴리스 빌드
 
@@ -33,7 +33,7 @@ ms.locfileid: "50667456"
 
    - [메모리 덮어쓰기 확인](../../build/reference/checking-for-memory-overwrites.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio에서 C++ 프로젝트 빌드](../../ide/building-cpp-projects-in-visual-studio.md)<br/>
 [C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)

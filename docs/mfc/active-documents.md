@@ -9,12 +9,12 @@ helpviewer_keywords:
 - views [MFC], active documents
 - active documents [MFC], views
 ms.assetid: 1378f18e-aaa6-420b-8501-4b974905baa0
-ms.openlocfilehash: e6f8161432cc951b5e224ec28142429efbdf0726
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 519dd51ab9b46adf862999104e97c6e478ccd86b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639662"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269242"
 ---
 # <a name="active-documents"></a>액티브 문서
 
@@ -49,7 +49,8 @@ interface IOleDocument : IUnknown
 
 액티브 문서 컨테이너에 표시할 수 있는 액티브 문서의 요구 사항은 다음과 같습니다.
 
-- `IPersistStorage`를 구현하여 OLE의 복합 파일을 저장 메커니즘으로 사용해야 합니다.
+- 
+  `IPersistStorage`를 구현하여 OLE의 복합 파일을 저장 메커니즘으로 사용해야 합니다.
 
 - OLE 포함 한 문서의 기본 포함 기능을 지 원하는 **파일에서 만들기**합니다. 이를 위해서는 `IPersistFile`, `IOleObject` 및 `IDataObject` 인터페이스가 필요합니다.
 
@@ -98,7 +99,6 @@ interface IOleDocumentView : IUnknown
 
 또한 보기 개체는 명령 대상일 수 있습니다. 구현 하 여 `IOleCommandTarget` 뷰는 컨테이너의 사용자 인터페이스에서 발생 하는 명령을 받을 수 있습니다 (같은 **새로 만들기**, **열기**, **이름으로 저장**,  **인쇄** 에 **파일** 메뉴 및 **복사**를 **붙여넣기**, **취소** 에 **편집** 메뉴). 자세한 내용은 [메시지 처리 및 명령 대상](../mfc/message-handling-and-command-targets.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [활성 문서 포함](../mfc/active-document-containment.md)
-

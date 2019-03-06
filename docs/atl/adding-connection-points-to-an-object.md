@@ -5,12 +5,12 @@ helpviewer_keywords:
 - connection points [C++], adding to ATL objects
 - Implement Connection Point ATL wizard
 ms.assetid: 843531be-4a36-4db0-9d54-e029b1a72a8b
-ms.openlocfilehash: bf3819f96821b8794b6bd120d63798b902eb2b9e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39943c1bb071efba4fc3f2b42b227a4516e3856c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473803"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299919"
 ---
 # <a name="adding-connection-points-to-an-object"></a>개체에 연결 지점 추가
 
@@ -60,7 +60,6 @@ ms.locfileid: "50473803"
 
    - 사용 된 **importlib** 해당 형식 라이브러리에서 명령입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [연결 지점](../atl/atl-connection-points.md)
-

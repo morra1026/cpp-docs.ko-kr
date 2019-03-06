@@ -1,18 +1,18 @@
 ---
-title: '방법: 동시성 런타임을 사용하기 위해 환산 변수를 사용하는 OpenMP 루프 변환'
+title: '방법: 동시성 런타임을 사용 하기 위해 환산 변수를 사용 하는 OpenMP 루프 변환'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - converting from OpenMP to the Concurrency Runtime, reduction variables
 - reduction variables, converting from OpenMP to the Concurrency Runtime
 ms.assetid: 96623f36-5e57-4d3f-8c13-669e6cd535b1
-ms.openlocfilehash: b58f6025c41091b39375c566d2c1d4b4798437b2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d75e115bdb1d13c9e8f45ed67d0f3993eac1b387
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633079"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257321"
 ---
-# <a name="how-to-convert-an-openmp-loop-that-uses-a-reduction-variable-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용하기 위해 환산 변수를 사용하는 OpenMP 루프 변환
+# <a name="how-to-convert-an-openmp-loop-that-uses-a-reduction-variable-to-use-the-concurrency-runtime"></a>방법: 동시성 런타임을 사용 하기 위해 환산 변수를 사용 하는 OpenMP 루프 변환
 
 이 예제에는 OpenMP를 변환 하는 방법을 보여 줍니다 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 사용 하는 루프를 [감소](../../parallel/openmp/reference/reduction.md) 동시성 런타임을 사용 하는 절.
 
@@ -39,12 +39,11 @@ The sum of the first 35 Fibonacci numbers is 14930351.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `concrt-omp-fibonacci-reduction.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `concrt-omp-fibonacci-reduction.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc /openmp concrt-omp-피보나치-reduction.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OpenMP에서 동시성 런타임으로 마이그레이션](../../parallel/concrt/migrating-from-openmp-to-the-concurrency-runtime.md)<br/>
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)
-

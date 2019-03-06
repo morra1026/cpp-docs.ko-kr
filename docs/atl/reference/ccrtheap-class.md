@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CCRTHeap class
 ms.assetid: 321bd6c5-1856-4ff7-8590-95044a1209f7
-ms.openlocfilehash: b761fc3d9d9874e676fad8c74a82f1f08d714d61
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c5030b9cfbfd636a783d27bcc8f9469f8348acb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647319"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276275"
 ---
 # <a name="ccrtheap-class"></a>CCRTHeap 클래스
 
@@ -34,10 +34,10 @@ class CCRTHeap : public IAtlMemMgr
 
 |이름|설명|
 |----------|-----------------|
-|[Ccrtheap:: Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
-|[Ccrtheap::](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
+|[CCRTHeap::Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
+|[CCRTHeap::Free](#free)|이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
 |[CCRTHeap::GetSize](#getsize)|이 메모리 관리자에 의해 할당 된 메모리 블록의 할당 된 크기를 가져오려면이 메서드를 호출 합니다.|
-|[Ccrtheap:: Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
+|[CCRTHeap::Reallocate](#reallocate)|이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -47,7 +47,7 @@ class CCRTHeap : public IAtlMemMgr
 
 예를 참조 하세요 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IAtlMemMgr`
 
@@ -57,7 +57,7 @@ class CCRTHeap : public IAtlMemMgr
 
 **헤더:** atlmem.h
 
-##  <a name="allocate"></a>  Ccrtheap:: Allocate
+##  <a name="allocate"></a>  CCRTHeap::Allocate
 
 메모리 블록을 할당하려면 이 메서드를 호출합니다.
 
@@ -80,7 +80,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 사용 하 여 구현 [malloc](../../c-runtime-library/reference/malloc.md)합니다.
 
-##  <a name="free"></a>  Ccrtheap::
+##  <a name="free"></a>  CCRTHeap::Free
 
 이 메모리 관리자에 의해 할당 된 메모리 블록을 해제 하려면이 메서드를 호출 합니다.
 
@@ -118,7 +118,7 @@ virtual size_t GetSize(void* p) throw();
 
 사용 하 여 구현 [_msize](../../c-runtime-library/reference/msize.md)합니다.
 
-##  <a name="reallocate"></a>  Ccrtheap:: Reallocate
+##  <a name="reallocate"></a>  CCRTHeap::Reallocate
 
 이 메모리 관리자에 의해 할당된 메모리를 다시 할당하려면 이 메서드를 호출합니다.
 
@@ -142,7 +142,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 호출 [ccrtheap::](#free) 이 메서드에 의해 할당 된 메모리를 해제 합니다. 사용 하 여 구현 [realloc](../../c-runtime-library/reference/realloc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CComHeap 클래스](../../atl/reference/ccomheap-class.md)<br/>

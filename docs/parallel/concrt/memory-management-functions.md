@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - memory management functions [Concurrency Runtime]
 ms.assetid: d303dd2a-dfa4-4d90-a508-f6aa290bb9ea
-ms.openlocfilehash: d8dfc8bbb200258818c38e931e978cc3be292525
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9a7810267c3eaa11ad7592774440365620e7e8f4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454083"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276938"
 ---
 # <a name="memory-management-functions"></a>메모리 관리 함수
 
@@ -30,10 +30,9 @@ ms.locfileid: "50454083"
 
 ## <a name="example"></a>예제
 
-사용 하는 예는 `Alloc` 및 `Free` 메모리 성능을 향상 시키기 위해 함수를 참조 하세요 [방법: 사용 Alloc 및 Free 메모리 성능 향상을](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md).
+사용 하는 예는 `Alloc` 및 `Free` 메모리 성능을 향상 시키기 위해 함수 참조 [방법: 할당을 사용 하 여 메모리 성능 향상을 위해 무료](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [방법: Alloc 및 Free를 사용하여 메모리 성능 개선](../../parallel/concrt/how-to-use-alloc-and-free-to-improve-memory-performance.md)
-

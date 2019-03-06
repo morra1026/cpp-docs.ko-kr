@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DHTML controls
 - DHTML controls, creating
 ms.assetid: 1d8f0ede-7d8b-4959-976e-b4d0e2a87f5a
-ms.openlocfilehash: ca6641587512926c74349cc3acd91109a6174509
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bd83909144526080ff10de0c75cc975089e88f91
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480082"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273398"
 ---
 # <a name="creating-an-atl-dhtml-control"></a>ATL DHTML 컨트롤 만들기
 
@@ -25,6 +25,6 @@ ATL 컨트롤 마법사 DHTML 컨트롤 만들기 프로세스를 자동화 합�
 
 이제 [기본 컨트롤을 테스트](../atl/testing-the-atl-dhtml-control.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DHTML 컨트롤에 대 한 지원](../atl/atl-support-for-dhtml-controls.md)

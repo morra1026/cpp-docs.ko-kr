@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Internet applications [MFC], client applications
 - MFC, Internet applications
 ms.assetid: a2c4a40c-a94e-4b3e-9dbf-f8a8dc8e5428
-ms.openlocfilehash: 041fa90b030edd9b5324c183b0153a8a062735da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e32210217321e4eb59d7d3e666a4f5494eb3642
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494967"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287702"
 ---
 # <a name="writing-an-internet-client-application-using-mfc-wininet-classes"></a>MFC WinInet 클래스를 사용하여 인터넷 클라이언트 응용 프로그램 작성
 
@@ -38,7 +38,7 @@ ms.locfileid: "50494967"
 
 인터넷 클라이언트 응용 프로그램을 구현 하는 단계에 따라 일반 인터넷 클라이언트를 만드는 지 여부에 따라 달라 집니다 `OpenURL` 중 하나를 사용 하는 프로토콜별 클라이언트는 `GetConnection` 함수입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [FTP, HTTP 및 gopher를 사용 하 여 일반적으로 작동 하는 인터넷 클라이언트 응용 프로그램을 작성 하는 방법](../mfc/steps-in-a-typical-internet-client-application.md)
 
@@ -50,8 +50,8 @@ ms.locfileid: "50494967"
 
 - [HTTP 클라이언트 응용 프로그램을 작성 하는 방법](../mfc/steps-in-a-typical-http-client-application.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[인터넷 클라이언트 응용 프로그램을 만들기 위한 MFC 클래스](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
+[인터넷 클라이언트 애플리케이션을 만들기 위한 MFC 클래스](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
 [인터넷 클라이언트 클래스의 필수 구성 요소](../mfc/prerequisites-for-internet-client-classes.md)

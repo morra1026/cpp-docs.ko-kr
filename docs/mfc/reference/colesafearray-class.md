@@ -60,12 +60,12 @@ helpviewer_keywords:
 - COleSafeArray [MFC], UnaccessData
 - COleSafeArray [MFC], Unlock
 ms.assetid: f45a5224-5f48-40ec-9ddd-287ef9740150
-ms.openlocfilehash: 07e507f0546849a64625ccd67a0f7463cd510841
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 0833dca9311689063c2ebeadd3942d9f5ce376e2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525407"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267162"
 ---
 # <a name="colesafearray-class"></a>COleSafeArray 클래스
 
@@ -103,7 +103,7 @@ class COleSafeArray : public tagVARIANT
 |[COleSafeArray::Detach](#detach)|VARIANT 배열에서 분리 된 `COleSafeArray` 개체 (데이터 해제 되지 것입니다).|
 |[COleSafeArray::GetByteArray](#getbytearray)|안전 배열의 내용을 복사 합니다는 [CByteArray](../../mfc/reference/cbytearray-class.md)합니다.|
 |[COleSafeArray::GetDim](#getdim)|배열의 차원 수를 반환합니다.|
-|[Colesafearray:: Getelement](#getelement)|안전 배열의 단일 요소를 검색 합니다.|
+|[COleSafeArray::GetElement](#getelement)|안전 배열의 단일 요소를 검색 합니다.|
 |[COleSafeArray::GetElemSize](#getelemsize)|안전 배열에 하나의 요소를 바이트 단위로 크기를 반환 합니다.|
 |[COleSafeArray::GetLBound](#getlbound)|안전 배열의 모든 차원에 대 한 하한값을 반환합니다.|
 |[COleSafeArray::GetOneDimSize](#getonedimsize)|1 차원에서 요소의 수를 반환 합니다. `COleSafeArray` 개체입니다.|
@@ -123,14 +123,14 @@ class COleSafeArray : public tagVARIANT
 |[COleSafeArray::operator LPCVARIANT](#operator_lpcvariant)|기본 액세스 `VARIANT` 구조는 `COleSafeArray` 개체입니다.|
 |[COleSafeArray::operator LPVARIANT](#operator_lpvariant)|기본 액세스 `VARIANT` 구조는 `COleSafeArray` 개체입니다.|
 |[COleSafeArray::operator =](#operator_eq)|값을 복사를 `COleSafeArray` 개체 (`SAFEARRAY`를 `VARIANT`를 `COleVariant`, 또는 `COleSafeArray` 배열)입니다.|
-|[COleSafeArray::operator = =](#operator_eq_eq)|Variant 두 배열을 비교 (`SAFEARRAY`, `VARIANT`를 `COleVariant`, 또는 `COleSafeArray` 배열)입니다.|
+|[COleSafeArray::operator ==](#operator_eq_eq)|Variant 두 배열을 비교 (`SAFEARRAY`, `VARIANT`를 `COleVariant`, 또는 `COleSafeArray` 배열)입니다.|
 |[COleSafeArray::operator &lt;&lt;](#operator_lt_lt)|내용을 출력 한 `COleSafeArray` 덤프 컨텍스트 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
 `COleSafeArray` 파생 된 ole에서 `VARIANT` 구조입니다. OLE `SAFEARRAY` 멤버 함수를 통해 사용할 수 있는 `COleSafeArray`뿐만 아니라 1 차원 바이트 배열을 위해 특별히 설계 된 멤버 함수 집합으로 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagVARIANT`
 
@@ -426,7 +426,7 @@ void GetByteArray(CByteArray& bytes);
 
 ### <a name="parameters"></a>매개 변수
 
-*바이트*<br/>
+*bytes*<br/>
 에 대 한 참조를 [CByteArray](../../mfc/reference/cbytearray-class.md) 개체입니다.
 
 ##  <a name="getdim"></a>  COleSafeArray::GetDim
@@ -445,7 +445,7 @@ DWORD GetDim();
 
 [!code-cpp[NVC_MFCOleContainer#27](../../mfc/codesnippet/cpp/colesafearray-class_2.cpp)]
 
-##  <a name="getelement"></a>  Colesafearray:: Getelement
+##  <a name="getelement"></a>  COleSafeArray::GetElement
 
 안전 배열의 단일 요소를 검색 합니다.
 
@@ -610,7 +610,7 @@ COleSafeArray& operator=(const COleVariant& varSrc);
 
 - **연산자 = (** *pSrc* **)** 복사본을 `VARIANT` 액세스 하는 배열 개체 *pSrc* 이 개체로 합니다.
 
-##  <a name="operator_eq_eq"></a>  COleSafeArray::operator = =
+##  <a name="operator_eq_eq"></a>  COleSafeArray::operator ==
 
 이 연산자는 두 배열을 비교 (`SAFEARRAY`, `VARIANT`를 `COleVariant`, 또는 `COleSafeArray` 배열) 같으면 0이 고 그렇지 않은 경우 0이 아닌 값을 반환 합니다.
 
@@ -750,7 +750,7 @@ void Unlock();
 
 이 함수는 배열에 있는 데이터에 대 한 액세스 완료 된 후 호출 됩니다. 오류 시 throw 된 [COleException](../../mfc/reference/coleexception-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleVariant 클래스](../../mfc/reference/colevariant-class.md)<br/>

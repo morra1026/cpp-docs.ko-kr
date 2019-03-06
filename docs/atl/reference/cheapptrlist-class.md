@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtrList class
 ms.assetid: cc70e585-362a-4007-81db-c705eb181226
-ms.openlocfilehash: ef0224ccb9e2592daecb94204db5e1a8c785c7b7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 84b4241dcad8d54321aea37c7055c6669ff3ca87
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676982"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292383"
 ---
 # <a name="cheapptrlist-class"></a>CHeapPtrList 클래스
 
@@ -36,7 +36,7 @@ class CHeapPtrList
 *E*<br/>
 컬렉션 클래스에 저장할 개체 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 사용 하는 메모리 할당 클래스입니다. 기본값은 [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -51,7 +51,7 @@ class CHeapPtrList
 
 이 클래스는 생성자를 제공 하 고 메서드에서 파생 [CAtlList](../../atl/reference/catllist-class.md) 하 고 [CHeapPtrElementTraits](../../atl/reference/cheapptrelementtraits-class.md) 힙 포인터를 저장 하는 컬렉션 클래스 개체의 생성을 지원 하기 위해.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CAtlList](../../atl/reference/catllist-class.md)
 
@@ -78,7 +78,7 @@ CHeapPtrList(UINT nBlockSize = 10) throw();
 
 블록 크기는 새 요소가 필요한 경우 할당 된 메모리의 크기를 측정 합니다. 블록 크기가 클수록 메모리 할당 루틴에 대 한 호출 줄어들지만 더 많은 리소스를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlList 클래스](../../atl/reference/catllist-class.md)<br/>
 [CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>

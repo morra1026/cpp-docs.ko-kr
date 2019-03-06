@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSimpleMapEqualHelperFalse class
 ms.assetid: a873eea3-e130-45cc-a476-61ee79511c3b
-ms.openlocfilehash: 7ccfe59e6741c267aded8f59828947a1d98bfbc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9c4241049ad323047f06c0b29f946521f2c02167
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50572694"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268904"
 ---
 # <a name="csimplemapequalhelperfalse-class"></a>CSimpleMapEqualHelperFalse 클래스
 
@@ -86,7 +86,7 @@ false를 반환합니다.
 
 이 메서드는 항상 false를 반환 하며 호출 `ATLASSERT` 참조 적이 없으면 false의 인수와 함께 합니다. 목적은 `CSimpleMapEqualHelperFalse::IsEqualValue` 메서드 비교를 사용 하 여 같음 테스트 적절 하 게 정의 하지 않은 경우에 잘 정의 된 방식으로 실패 하는 것입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSimpleMapEqualHelper 클래스](../../atl/reference/csimplemapequalhelper-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - ScheduleGroup class
 ms.assetid: 86d380ff-f2e8-411c-b1a8-22bd3079824a
-ms.openlocfilehash: 6132ec6623a009c09a37b7d704ce683a58956a04
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ce7734a1330f2d6e495565338879764482439d09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518718"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283854"
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup 클래스
 
@@ -45,7 +45,7 @@ class ScheduleGroup;
 |[릴리스](#release)|일정 그룹 참조 횟수를 감소시킵니다.|
 |[ScheduleTask](#scheduletask)|일정 그룹 내에서 간단한 작업을 예약합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `ScheduleGroup`
 
@@ -117,7 +117,8 @@ virtual unsigned int Release() = 0;
 
 ### <a name="remarks"></a>설명
 
-이 구성에 대 한 일정 그룹의 수명을 관리 하려면 일반적으로 사용 됩니다. 일정 그룹 참조 수가 0으로 감소 하는 경우 런타임에 의해 일정 그룹 삭제 됩니다. `Release` 메서드를 사용하여 배치된 추가 참조와 생성 참조 횟수를 제거하기 위해 `Reference` 메서드를 특정 횟수 만큼 호출한 후에는 더 이상 일정 그룹을 이용할 수 없습니다. 이렇게 정의 되지 않은 동작이 발생 합니다.
+이 구성에 대 한 일정 그룹의 수명을 관리 하려면 일반적으로 사용 됩니다. 일정 그룹 참조 수가 0으로 감소 하는 경우 런타임에 의해 일정 그룹 삭제 됩니다. 
+  `Release` 메서드를 사용하여 배치된 추가 참조와 생성 참조 횟수를 제거하기 위해 `Reference` 메서드를 특정 횟수 만큼 호출한 후에는 더 이상 일정 그룹을 이용할 수 없습니다. 이렇게 정의 되지 않은 동작이 발생 합니다.
 
 일정 그룹은 특정 스케줄러 인스턴스를 사용 하 여 연결 합니다. 스케줄러에 대한 모든 참조는 스케줄러에서 소멸될 수 있기 때문에 스케줄러에 대한 모든 참조가 해제되기 전에 일정 그룹에 대한 모든 참조가 해제되었는지 확인해야 합니다. 그렇지 않으면 결과가 정의 되지 않은 동작을 수행합니다.
 
@@ -142,17 +143,16 @@ virtual void ScheduleTask(
 *_Proc*<br/>
 간단한 작업의 본문을 수행 하기 위해 실행할 함수에 대 한 포인터입니다.
 
-*(_D)*<br/>
+*_Data*<br/>
 작업의 본문에 매개 변수로 전달 되는 데이터에 대 한 void 포인터입니다.
 
 ### <a name="remarks"></a>설명
 
 호출 된 `ScheduleTask` 메서드는 암시적으로 참조 횟수를 런타임에서 작업을 실행 한 후 적절 한 시간에 제거 되는 일정 그룹에 배치 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [CurrentScheduler 클래스](currentscheduler-class.md)<br/>
 [Scheduler 클래스](scheduler-class.md)<br/>
 [작업 스케줄러](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

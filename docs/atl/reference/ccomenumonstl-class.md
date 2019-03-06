@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComEnumOnSTL class
 ms.assetid: befe1a44-7a00-4f28-9a2e-cc0fa526643c
-ms.openlocfilehash: 7b1efb3bd574edde59f6d8845d73a51dfabea433
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56d0de1131791def3ea536c6e5a7f5ce0bef9617
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626618"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290510"
 ---
 # <a name="ccomenumonstl-class"></a>CComEnumOnSTL 클래스
 
@@ -32,7 +32,7 @@ CollType>,
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
 *piid*<br/>
@@ -71,7 +71,7 @@ C + + 표준 라이브러리 컨테이너 클래스입니다.
 
 - 클라이언트의 열거자 인터페이스를 반환 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -99,10 +99,10 @@ C + + 표준 라이브러리 컨테이너 클래스입니다.
 
 이 코드를 만듭니다는 **typedef** 에 대 한 `CComEnumOnSTL` 의 벡터를 노출 하는 `CComVariant`이용 하 여 s는 `IEnumVariant` 인터페이스입니다. `CVariantCollection` 클래스를 전문적으로 간단히 `CreateSTLEnumerator` 이 형식의 열거자 개체를 사용 하 여 작동 하도록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IEnumOnSTLImpl](../../atl/reference/ienumonstlimpl-class.md)<br/>
-[ATLCollections 샘플: ICollectionOnSTLImpl, CComEnumOnSTL 및 사용자 지정 복사 정책 클래스](../../visual-cpp-samples.md)<br/>
+[ATLCollections 샘플: ICollectionOnSTLImpl, CComEnumOnSTL 및 사용자 지정 복사 정책 클래스를 보여 줍니다.](../../visual-cpp-samples.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>

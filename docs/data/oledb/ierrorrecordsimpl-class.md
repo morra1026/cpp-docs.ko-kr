@@ -65,16 +65,16 @@ helpviewer_keywords:
 - GetRecordCount method
 - m_rgErrors
 ms.assetid: dea8e938-c5d8-45ab-86de-eb8fbf534ffb
-ms.openlocfilehash: 8a864e0da8b5e6c93a1cdccde93fcec4cd3b3e6c
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 24c64c489f52cb4746e3e2b6ebb52bb81870cffd
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556909"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420195"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl 클래스
 
-OLE DB 구현 [IErrorRecords](https://docs.microsoft.com/previous-versions/windows/desktop/ms718112(v=vs.85)) 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 하는 인터페이스를 ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) 형식의 **CAtlArray <** `RecordClass`**>**.
+OLE DB 구현 [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) 레코드를 추가 하 고 데이터 멤버에서 레코드를 검색 하는 인터페이스를 ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) 형식의 **CAtlArray <** `RecordClass`**>**.
 
 ## <a name="syntax"></a>구문
 
@@ -114,7 +114,7 @@ OLE DB 오류 개체를 나타내는 클래스입니다.
 |[AddErrorRecord](#adderrorrecord)|OLE DB 오류 개체에 레코드를 추가합니다.|
 |[GetBasicErrorInfo](#getbasicerrorinfo)|반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.|
 |[GetCustomErrorObject](#getcustomerrorobject)|인터페이스를 사용자 지정 오류 개체에 대 한 포인터를 반환합니다.|
-|[GetErrorInfo](#geterrorinfo)|반환 된 [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms718112(v=vs.85)) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.|
+|[GetErrorInfo](#geterrorinfo)|반환 된 [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.|
 |[GetErrorParameters](#geterrorparameters)|오류 매개 변수를 반환합니다.|
 |[GetRecordCount](#getrecordcount)|OLE DB 레코드 개체의 레코드 수를 반환 합니다.|
 
@@ -124,7 +124,7 @@ OLE DB 오류 개체를 나타내는 클래스입니다.
 |-|-|
 |[m_rgErrors](#rgerrors)|오류 레코드의 배열입니다.|
 
-## <a name="geterrordescriptionstring"></a> Ierrorrecordsimpl:: Geterrordescriptionstring
+## <a name="geterrordescriptionstring"></a> IErrorRecordsImpl::GetErrorDescriptionString
 
 오류 레코드에서 오류 설명 문자열을 가져옵니다.
 
@@ -143,7 +143,7 @@ LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);
 
 오류를 설명 하는 문자열에 대 한 포인터입니다.
 
-## <a name="geterrorguid"></a> Ierrorrecordsimpl:: Geterrorguid
+## <a name="geterrorguid"></a> IErrorRecordsImpl::GetErrorGUID
 
 오류 레코드에서 오류를 GUID를 가져옵니다.
 
@@ -162,7 +162,7 @@ REFGUID GetErrorGUID(ERRORINFO& rCurError);
 
 오류에 대 한 GUID에 대 한 참조입니다.
 
-## <a name="geterrorhelpcontext"></a> Ierrorrecordsimpl:: Geterrorhelpcontext
+## <a name="geterrorhelpcontext"></a> IErrorRecordsImpl::GetErrorHelpContext
 
 오류 레코드에서 도움말 컨텍스트 ID를 가져옵니다.
 
@@ -181,7 +181,7 @@ DWORD GetErrorHelpContext(ERRORINFO& rCurError);
 
 오류에 대 한 도움말 컨텍스트 ID입니다.
 
-## <a name="geterrorhelpfile"></a> Ierrorrecordsimpl:: Geterrorhelpfile
+## <a name="geterrorhelpfile"></a> IErrorRecordsImpl::GetErrorHelpFile
 
 오류 레코드에서 도움말 파일의 경로 이름을 가져옵니다.
 
@@ -200,7 +200,7 @@ LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);
 
 오류에 대 한 도움말 파일의 경로 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
-## <a name="geterrorsource"></a> Ierrorrecordsimpl:: Geterrorsource
+## <a name="geterrorsource"></a> IErrorRecordsImpl::GetErrorSource
 
 오류 레코드에서 오류를 발생 시킨 소스 코드를 가져옵니다.
 
@@ -219,7 +219,7 @@ LPOLESTR GetErrorSource(ERRORINFO& rCurError);
 
 오류에 대 한 소스 코드를 포함 하는 문자열에 대 한 포인터입니다.
 
-## <a name="adderrorrecord"></a> Ierrorrecordsimpl:: Adderrorrecord
+## <a name="adderrorrecord"></a> IErrorRecordsImpl::AddErrorRecord
 
 OLE DB 오류 개체에 레코드를 추가합니다.
 
@@ -235,9 +235,9 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::AddErrorRecord](https://docs.microsoft.com/previous-versions/windows/desktop/ms725362(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="getbasicerrorinfo"></a> Ierrorrecordsimpl:: Getbasicerrorinfo
+## <a name="getbasicerrorinfo"></a> IErrorRecordsImpl::GetBasicErrorInfo
 
 반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.
 
@@ -250,9 +250,9 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetBasicErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms723907(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="getcustomerrorobject"></a> Ierrorrecordsimpl:: Getcustomerrorobject
+## <a name="getcustomerrorobject"></a> IErrorRecordsImpl::GetCustomErrorObject
 
 인터페이스를 사용자 지정 오류 개체에 대 한 포인터를 반환합니다.
 
@@ -266,11 +266,11 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetCustomErrorObject](https://docs.microsoft.com/previous-versions/windows/desktop/ms725417(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="geterrorinfo"></a> Ierrorrecordsimpl:: Geterrorinfo
+## <a name="geterrorinfo"></a> IErrorRecordsImpl::GetErrorInfo
 
-반환 된 [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms718112(v=vs.85)) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.
+반환 된 [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -282,9 +282,9 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms711230(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="geterrorparameters"></a> Ierrorrecordsimpl:: Geterrorparameters
+## <a name="geterrorparameters"></a> IErrorRecordsImpl::GetErrorParameters
 
 오류 매개 변수를 반환합니다.
 
@@ -297,9 +297,9 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetErrorParameters](https://docs.microsoft.com/previous-versions/windows/desktop/ms715793(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="getrecordcount"></a> Ierrorrecordsimpl:: Getrecordcount
+## <a name="getrecordcount"></a> IErrorRecordsImpl::GetRecordCount
 
 OLE DB 레코드 개체의 레코드 수를 반환 합니다.
 
@@ -311,9 +311,9 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetRecordCount](https://docs.microsoft.com/previous-versions/windows/desktop/ms722724(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="rgerrors"></a> Ierrorrecordsimpl:: M_rgerrors
+## <a name="rgerrors"></a> IErrorRecordsImpl::m_rgErrors
 
 오류 레코드의 배열입니다.
 

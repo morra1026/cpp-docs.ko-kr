@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - side-by-side applications [C++]
 ms.assetid: 7fa20b16-3737-4f76-a0b5-1dacea19a1e8
-ms.openlocfilehash: b904dd3e9c10470151bdb8e01435aaf6359179b8
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 6875c4178a405f887166b0606af329614d27907f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693667"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413877"
 ---
 # <a name="building-cc-side-by-side-assemblies"></a>C/C++ side-by-side 어셈블리 빌드
 
@@ -29,7 +29,7 @@ Visual c + + 응용 프로그램을 응용 프로그램의 다른 부분에 하�
 
 이 변경으로 해당 Dll의 배포를 허용할 수 있습니다는 [전용 어셈블리](/windows/desktop/Msi/private-assemblies) 또는 응용 프로그램 로컬 폴더에는 [어셈블리를 공유](/windows/desktop/Msi/shared-assemblies) WinSxS 어셈블리 캐시에 있습니다. 몇 가지 단계를이 새 어셈블리의 정확한 런타임 동작을 달성 하기 위해 수행 해야 합니다. 에 설명 되어 [Creating side-by-side-어셈블리에 대 한 지침](/windows/desktop/SbsCs/guidelines-for-creating-side-by-side-assemblies)합니다. 어셈블리를 올바르게 작성 후 중 하나는 공유 또는 전용 어셈블리에 종속 된 응용 프로그램과 함께 배포 수 있습니다. 중 하나에 설명 된 지침에 따라 공유 어셈블리로 side-by-side-어셈블리를 설치할 때 할 [Windows XP에서 Side-by-side-공유에 대 한 Win32 어셈블리 설치](/windows/desktop/Msi/installing-win32-assemblies-for-side-by-side-sharing-on-windows-xp) 사용할지 [병합 모듈](/windows/desktop/msi/merge-modules). Side-by-side-어셈블리를 전용 어셈블리로 설치할 때 있습니다 복사 하기만 설치 프로세스의 일부로 해당 DLL, 리소스 및 어셈블리 매니페스트를 대상 컴퓨터의 응용 프로그램 로컬 폴더에이 어셈블리 수 있음을 보장 합니다. 런타임 시 로더가 찾을 (참조 [어셈블리 검색 시퀀스](/windows/desktop/SbsCs/assembly-searching-sequence)). 또 다른 방법은 사용 하는 것 [Windows Installer](/windows/desktop/Msi/windows-installer-portal) 에 설명 된 지침을 따릅니다 [Windows XP에서 응용 프로그램의 개인 용도로 Win32 어셈블리 설치](/windows/desktop/Msi/installing-win32-assemblies-for-the-private-use-of-an-application-on-windows-xp)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [배포 예제](../ide/deployment-examples.md)<br/>
 [ 격리된 응용 프로그램 빌드](../build/building-c-cpp-isolated-applications.md)<br/>

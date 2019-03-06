@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [MFC], linking
 - MFC DLLs [MFC], linking regular MFC DLLs to MFC
 ms.assetid: 76753e9c-59dc-40f6-b6a7-f6bb9a7c4190
-ms.openlocfilehash: f1c98056d5a5e2565e57044b1fb551db4f354f34
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 63e97c3b9260465259d76cf6996d1d389f65ee41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51326207"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326454"
 ---
 # <a name="tn011-using-mfc-as-part-of-a-dll"></a>TN011: DLL의 일부로 MFC 사용
 
@@ -63,7 +63,7 @@ C 및 c + + 파일에서 포함 될 수 있는 별도 헤더에 Api를 배치 �
 
 `AFX_MANAGE_STATE(AfxGetStaticModuleState( ))`
 
-## <a name="winmain---dllmain"></a>WinMain DllMain->
+## <a name="winmain---dllmain"></a>WinMain -> DllMain
 
 MFC 라이브러리는 표준 Win32 정의 `DllMain` 초기화 하는 진입점 하 [CWinApp](../mfc/reference/cwinapp-class.md) 같이 일반적인 MFC 응용 프로그램 개체를 파생 합니다. 배치에서 모든 DLL 별 초기화 된 [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) 일반적인 MFC 응용 프로그램 에서처럼 메서드.
 
@@ -111,8 +111,7 @@ BOOL PromptTraceFlags(TracerData FAR* lpData);
 
 API 사용 되는 구조는 MFC 클래스에서 파생 되지 않은 및 API 헤더에 정의 됩니다. 이 응용 프로그램과 DLL 간의 인터페이스의 복잡성이 줄어들고 C 프로그램에서 DLL을 사용할 수 있도록 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

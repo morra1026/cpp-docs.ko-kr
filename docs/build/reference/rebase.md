@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], base address
 - /REBASE editbin option [C++]
 ms.assetid: 3f89d874-af5c-485b-974b-fd205f6e1a4b
-ms.openlocfilehash: de8b648c6bca02c71a9cfedd92bfbe7e6ca56b70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0b581dfc116e25228a9aa9133c4de027e194799
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463650"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422041"
 ---
 # <a name="rebase"></a>/다시 지정
 
@@ -32,10 +32,10 @@ ms.locfileid: "50463650"
 
 |한정자|작업|
 |--------------|------------|
-|**기본 =**<em>주소</em>|파일에 기본 주소 재할당에 대 한 시작 주소를 제공 합니다. 지정할 *주소* 10 진수 또는 C 언어 표기법으로 나타냅니다. BASE를 지정 하지 않은 경우 기본적으로 시작 하는 기본 주소는 0x400000입니다. DOWN이 사용 되는, 기본 지정 해야 하 고 *주소* 기본 주소 범위의 끝을 설정 합니다.|
+|**BASE=**<em>address</em>|파일에 기본 주소 재할당에 대 한 시작 주소를 제공 합니다. 지정할 *주소* 10 진수 또는 C 언어 표기법으로 나타냅니다. BASE를 지정 하지 않은 경우 기본적으로 시작 하는 기본 주소는 0x400000입니다. DOWN이 사용 되는, 기본 지정 해야 하 고 *주소* 기본 주소 범위의 끝을 설정 합니다.|
 |**BASEFILE**|COFFBASE 라는 파일을 만듭니다. TXT에 필요한 형식으로 링크의 텍스트 파일/기본 옵션입니다.|
-|**아래로**|끝 주소에서 아래쪽으로 기본 주소를 할당할 EDITBIN 알려 줍니다. 아래 주소 범위의 가장 높은 가능한 주소에 있는 첫 번째 파일을 사용 하 여 지정 된 순서로 파일을 다시 할당 됩니다. 파일의 기준 주소 공간이 충분 하도록 아래쪽에 있는 BASE는 사용 해야 합니다. 지정된 된 파일에 필요한 주소 공간을 확인 하려면 EDITBIN /REBASE를 사용 하 여 파일을 실행 하 고 표시 된 전체 크기를 64KB를 추가 합니다.|
+|**DOWN**|끝 주소에서 아래쪽으로 기본 주소를 할당할 EDITBIN 알려 줍니다. 아래 주소 범위의 가장 높은 가능한 주소에 있는 첫 번째 파일을 사용 하 여 지정 된 순서로 파일을 다시 할당 됩니다. 파일의 기준 주소 공간이 충분 하도록 아래쪽에 있는 BASE는 사용 해야 합니다. 지정된 된 파일에 필요한 주소 공간을 확인 하려면 EDITBIN /REBASE를 사용 하 여 파일을 실행 하 고 표시 된 전체 크기를 64KB를 추가 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EDITBIN 옵션](../../build/reference/editbin-options.md)

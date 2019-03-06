@@ -5,12 +5,12 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging and exceptions classes
 ms.assetid: d42d7649-9721-4a1a-8b38-d983a649fdb9
-ms.openlocfilehash: 8b27c62acb098a2e5c02c52165a2948e5c440dd3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6e242b883689152f55c93a9e29f4e93e9f88737
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529092"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261689"
 ---
 # <a name="debugging-and-exceptions-classes"></a>디버깅 및 예외 클래스
 
@@ -20,9 +20,8 @@ ms.locfileid: "50529092"
 
 - [CAtlException](../atl/reference/catlexception-class.md) 이 클래스는 ATL 예외를 정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [디버깅 및 오류 보고 전역 함수](../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
 [디버깅 및 오류 보고 매크로](../atl/reference/debugging-and-error-reporting-macros.md)
-

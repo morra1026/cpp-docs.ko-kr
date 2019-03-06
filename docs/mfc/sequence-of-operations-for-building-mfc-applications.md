@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [MFC], developing
 ms.assetid: 6973c714-fe20-48c6-926b-de88356b3a3d
-ms.openlocfilehash: b99a6b0e9f9728d74057d05f7ad9082017e31005
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e3c165a0bf495da4e6cda05c7e109b338b0a364f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623550"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278680"
 ---
 # <a name="sequence-of-operations-for-building-mfc-applications"></a>MFC 응용 프로그램을 빌드하는 작업 시퀀스
 
@@ -41,10 +41,9 @@ ms.locfileid: "50623550"
 |분할자 창을 추가 합니다.|창을 분할을 지원 하려는 경우 추가 [CSplitterWnd](../mfc/reference/csplitterwnd-class.md) SDI 프레임 창 또는 MDI 자식 창에 개체 및 창에 후크 [OnCreateClient](../mfc/reference/cframewnd-class.md#oncreateclient) 멤버 함수입니다.|프레임 워크는 스크롤 막대 옆에 있는 분할 상자 컨트롤을 제공 하 고 여러 개의 창으로 보기 분할을 관리 합니다. 사용자가 창을 분할을 하는 경우 프레임 워크를 만들고 문서에 추가 뷰 개체를 연결 합니다.|
 |빌드, 테스트 및 응용 프로그램을 디버그 합니다.|빌드, 테스트 및 응용 프로그램을 디버깅 하려면 Visual c + +의 기능을 사용 합니다.|Visual c + +를 사용 하면 컴파일, 링크 및 기타 옵션을 조정할 수 있습니다. 또한 소스 코드와 클래스 구조를 탐색할 수 있습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[OLE 응용 프로그램을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
+[OLE 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
 [ActiveX 컨트롤을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
-[데이터베이스 응용 프로그램을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)<br/>
+[데이터베이스 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)<br/>
 [프레임워크를 기반으로 구축](../mfc/building-on-the-framework.md)
-

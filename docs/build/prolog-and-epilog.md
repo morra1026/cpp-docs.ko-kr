@@ -2,12 +2,12 @@
 title: x64 프롤로그 및 에필로그
 ms.date: 12/17/2018
 ms.assetid: 0453ed1a-3ff1-4bee-9cc2-d6d3d6384984
-ms.openlocfilehash: b808703e9c89b8e455e9df2b5959a2f0dd10b939
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: be6a344b75fdc0cbc1876a250d0cc326bae43ccc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627230"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418596"
 ---
 # <a name="x64-prolog-and-epilog"></a>x64 프롤로그 및 에필로그
 
@@ -55,7 +55,7 @@ ms.locfileid: "53627230"
 
 에필로그 코드에서 예외 및 인터럽트를 통해 안정적으로 해제 하려면 엄격한 해제 코드에 대 한 규칙 집합을 따라야 합니다. 이러한 규칙의 양을 줄일 추가 데이터가 없습니다. 각 에필로그를 설명 하기 위해 필요 하므로 필요한 데이터를 해제 합니다. 대신 해제 코드는 에필로그 에필로그를 식별 하는 코드 스트림을 통해 앞으로 검색 하 여 실행 될 것임을 확인할 수 있습니다.
 
-프레임 포인터가 사용 되는 경우 함수를 다음 에필로그 먼저 할당을 취소 해야 고정된 부분의 스택의 비휘발성 레지스터를 팝 및 컨트롤이 호출 함수로 반환 됩니다. 예를 들어 개체에 적용된
+프레임 포인터가 사용 되는 경우 함수를 다음 에필로그 먼저 할당을 취소 해야 고정된 부분의 스택의 비휘발성 레지스터를 팝 및 컨트롤이 호출 함수로 반환 됩니다. 예를 들면 다음과 같습니다.
 
 ```MASM
     add      RSP, fixed-allocation-size
@@ -93,6 +93,6 @@ ms.locfileid: "53627230"
 
 다음 규칙 해제 코드를 에필로그는 현재 실행 되 고 있음을 확인 하 고 실행 호출 함수의 컨텍스트를 다시 만들 수 있도록 에필로그의 나머지 부분을 시뮬레이션할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [x64 소프트웨어 규칙](../build/x64-software-conventions.md)

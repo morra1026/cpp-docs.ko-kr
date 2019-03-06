@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CObList [MFC], RemoveTail
 - CObList [MFC], SetAt
 ms.assetid: 80699c93-33d8-4f8b-b8cf-7b58aeab64ca
-ms.openlocfilehash: 66cc4d28e20ced498e4a434efbe41c3f5db59370
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2fc3a3643c675394de555f1411030e278bcee775
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50605207"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293734"
 ---
 # <a name="coblist-class"></a>CObList 클래스
 
@@ -122,7 +122,7 @@ class CObList : public CObject
 
 사용 하 여 대 한 자세한 내용은 `CObList`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -157,8 +157,8 @@ void AddHead(CObList* pNewList);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**위치 AddHead (void** <strong>\*</strong> `newElement` **);**<br /><br /> **AddHead void (CPtrList** <strong>\*</strong> `pNewList` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**위치 AddHead (const CString &** `newElement` **).**<br /><br /> **위치 AddHead (LPCTSTR** `newElement` **).**<br /><br /> **AddHead void (CStringList** <strong>\*</strong> `pNewList` **).**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**위치 AddHead (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddHead( CPtrList** <strong>\*</strong> `pNewList` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**POSITION AddHead(const CString&** `newElement` **);**<br /><br /> **POSITION AddHead(LPCTSTR** `newElement` **);**<br /><br /> **void AddHead(CStringList** <strong>\*</strong> `pNewList` **);**|
 
 ### <a name="remarks"></a>설명
 
@@ -207,8 +207,8 @@ void AddTail(CObList* pNewList);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**위치 AddTail (void** <strong>\*</strong> `newElement` **);**<br /><br /> **AddTail void (CPtrList** <strong>\*</strong> `pNewList` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**위치 AddTail (const CString &** `newElement` **);**<br /><br /> **위치 AddTail (LPCTSTR** `newElement` **);**<br /><br /> **AddTail void (CStringList** <strong>\*</strong> `pNewList` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**위치 AddTail (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddTail( CPtrList** <strong>\*</strong> `pNewList` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**위치 AddTail (const CString &** `newElement` **);**<br /><br /> **위치 AddTail (LPCTSTR** `newElement` **);**<br /><br /> **void AddTail( CStringList** <strong>\*</strong> `pNewList` **);**|
 
 ### <a name="example"></a>예제
 
@@ -245,8 +245,8 @@ CObList(INT_PTR nBlockSize = 10);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**CPtrList (INT_PTR** `nBlockSize` **= 10).**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**CStringList (INT_PTR** `nBlockSize` **= 10).**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**CPtrList( INT_PTR** `nBlockSize` **= 10 );**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**CStringList( INT_PTR** `nBlockSize` **= 10 );**|
 
 ### <a name="example"></a>예제
 
@@ -342,7 +342,7 @@ const CObject*& GetAt(POSITION position) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 이전 반환한 위치 값 `GetHeadPosition` 또는 `Find` 멤버 함수 호출 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -359,8 +359,8 @@ const CObject*& GetAt(POSITION position) const;
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetAt (위치** *위치* **) const;**<br /><br /> **void\*& GetAt (위치** *위치* **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetAt (위치** *위치* **) const;**<br /><br /> **CString & GetAt (위치** *위치* **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetAt( POSITION** *position* **) const;**<br /><br /> **void\*& GetAt( POSITION** *position* **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetAt (위치** *위치* **) const;**<br /><br /> **CString& GetAt( POSITION** *position* **);**|
 
 ### <a name="example"></a>예제
 
@@ -414,8 +414,8 @@ const CObject*& GetHead() const;
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetHead () const; void\*& GetHead ();**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetHead () const; CString & GetHead ();**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetHead( ) const; void\*& GetHead( );**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString& GetHead( ) const; CString& GetHead( );**|
 
 ### <a name="example"></a>예제
 
@@ -600,8 +600,8 @@ const CObject*& GetTail() const;
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetTail () const; void\*& GetTail ();**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString & GetTail () const; CString & GetTail ();**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**const void\*& GetTail( ) const; void\*& GetTail( );**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**const CString& GetTail( ) const; CString& GetTail( );**|
 
 ### <a name="example"></a>예제
 
@@ -646,7 +646,7 @@ POSITION InsertAfter(
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 이전 반환한 위치 값 `GetNext`, `GetPrev`, 또는 `Find` 멤버 함수 호출 합니다.
 
 *newElement*<br/>
@@ -656,8 +656,8 @@ POSITION InsertAfter(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**위치 InsertAfter (위치** *위치* **, void** <strong>\*</strong> `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**위치 InsertAfter (위치** *위치* **, const CString &** `newElement` **);**<br /><br /> **위치 InsertAfter (위치** *위치* **, LPCTSTR** `newElement` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**POSITION InsertAfter( POSITION** *position* **, void** <strong>\*</strong> `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**POSITION InsertAfter( POSITION** *position* **, const CString&** `newElement` **);**<br /><br /> **POSITION InsertAfter( POSITION** *position* **, LPCTSTR** `newElement` **);**|
 
 ### <a name="return-value"></a>반환 값
 
@@ -690,7 +690,7 @@ POSITION InsertBefore(
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 이전 반환한 위치 값 `GetNext`, `GetPrev`, 또는 `Find` 멤버 함수 호출 합니다.
 
 *newElement*<br/>
@@ -704,8 +704,8 @@ POSITION InsertBefore(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**위치 InsertBefore (위치** *위치* **, void** <strong>\*</strong> `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**위치 InsertBefore (위치** *위치* **, const CString &** `newElement` **);**<br /><br /> **위치 InsertBefore (위치** *위치* **, LPCTSTR** `newElement` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**POSITION InsertBefore( POSITION** *position* **, void** <strong>\*</strong> `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**위치 InsertBefore (위치** *위치* **, const CString &** `newElement` **);**<br /><br /> **POSITION InsertBefore( POSITION** *position* **, LPCTSTR** `newElement` **);**|
 
 ### <a name="example"></a>예제
 
@@ -782,7 +782,7 @@ void RemoveAt(POSITION position);
 
 ### <a name="parameters"></a>매개 변수
 
-*위치*<br/>
+*position*<br/>
 목록에서 제거할 요소의 위치입니다.
 
 ### <a name="remarks"></a>설명
@@ -795,8 +795,8 @@ void RemoveAt(POSITION position);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**RemoveAt void (위치** *위치* **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**RemoveAt void (위치** *위치* **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void RemoveAt( POSITION** *position* **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**void RemoveAt( POSITION** *position* **);**|
 
 ### <a name="example"></a>예제
 
@@ -834,8 +834,8 @@ CObject* RemoveHead();
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void\* RemoveHead ();**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveHead ();**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void\* RemoveHead( );**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveHead( );**|
 
 ### <a name="example"></a>예제
 
@@ -863,8 +863,8 @@ CObject* RemoveTail();
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void\* RemoveTail ();**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveTail ();**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void\* RemoveTail( );**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**CString RemoveTail( );**|
 
 ### <a name="example"></a>예제
 
@@ -900,8 +900,8 @@ void SetAt(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**SetAt void (위치** `pos` **, const CString &** `newElement` **);**|
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**SetAt void (위치** `pos` **, LPCTSTR** `newElement` **);**|
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**void SetAt( POSITION** `pos` **, const CString&** `newElement` **);**|
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**void SetAt( POSITION** `pos` **, LPCTSTR** `newElement` **);**|
 
 ### <a name="example"></a>예제
 
@@ -917,7 +917,7 @@ a CAge at $4D98 40
 a CAge at $4DB8 65
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

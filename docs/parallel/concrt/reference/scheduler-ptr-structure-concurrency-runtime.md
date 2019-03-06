@@ -8,12 +8,12 @@ f1_keywords:
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::get
 - PPLINTERFACE/concurrency::scheduler_ptr::scheduler_ptr::operator bool
 ms.assetid: e88c84af-c306-476d-aef1-f42a0fa0a80f
-ms.openlocfilehash: 0da45fa18d12b3f1c93df6b8c8736ed1bfb58ade
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 2373fe3bc8cac501d1b6b32ca66996eff47ba6f3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525006"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295047"
 ---
 # <a name="schedulerptr-structure"></a>scheduler_ptr 구조체
 
@@ -46,7 +46,7 @@ struct scheduler_ptr;
 |[scheduler_ptr::operator bool](#operator_bool)|스케줄러 포인터가 null이 아닌지 여부를 테스트합니다.|
 |[scheduler_ptr::operator-&gt;](#operator_ptr)|포인터처럼 작동합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `scheduler_ptr`
 
@@ -56,7 +56,7 @@ struct scheduler_ptr;
 
 **네임스페이스:** 동시성
 
-##  <a name="get"></a>  scheduler_ptr:: get 메서드
+##  <a name="get"></a>  scheduler_ptr::get Method
 
 스케줄러에 원시 포인터를 반환합니다.
 
@@ -74,7 +74,7 @@ scheduler_interface* get() const;
 operator bool() const;
 ```
 
-##  <a name="operator_ptr"></a>  scheduler_ptr:: operator-&gt;
+##  <a name="operator_ptr"></a>  scheduler_ptr::operator-&gt;
 
 에 대 한 포인터 처럼 동작합니다.
 
@@ -101,6 +101,6 @@ explicit scheduler_ptr(_In_opt_ scheduler_interface* pScheduler);
 *pScheduler*<br/>
 변환할 스케줄러 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

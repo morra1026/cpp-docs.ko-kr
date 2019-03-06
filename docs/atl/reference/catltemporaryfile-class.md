@@ -22,12 +22,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTemporaryFile class
 ms.assetid: 05f0f2a5-94f6-4594-8dae-b114292ff5f9
-ms.openlocfilehash: f440476db3618c24f0fd1cfbfe028c959517a607
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c1da5037deb0143c6d05009baccc8c1553616028
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642274"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288192"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile 클래스
 
@@ -49,7 +49,7 @@ class CAtlTemporaryFile
 |이름|설명|
 |----------|-----------------|
 |[CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)|생성자입니다.|
-|[CAtlTemporaryFile:: ~ CAtlTemporaryFile](#dtor)|소멸자입니다.|
+|[CAtlTemporaryFile::~CAtlTemporaryFile](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -104,7 +104,7 @@ CAtlTemporaryFile() throw();
 
 [!code-cpp[NVC_ATL_Utilities#73](../../atl/codesnippet/cpp/catltemporaryfile-class_1.cpp)]
 
-##  <a name="dtor"></a>  CAtlTemporaryFile:: ~ CAtlTemporaryFile
+##  <a name="dtor"></a>  CAtlTemporaryFile::~CAtlTemporaryFile
 
 소멸자입니다.
 
@@ -275,7 +275,7 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 파일의 바이트를 잠그면 다른 프로세스에서 해당 바이트에 액세스할 수 없습니다. 파일의 둘 이상의 영역을 잠글 수 있습니다 하지만 없습니다 겹치는 영역을 사용할 수는 있습니다. 성공적으로 잠금 해제는 영역을 사용 하 여 [CAtlTemporaryFile::UnlockRange](#unlockrange), 이전에 잠근 지역으로 정확 하 게 해당 바이트 범위를 확인 합니다. `LockRange` 인접 한 지역을 선택 합니다; 병합 하지 않습니다. 잠긴된 두 영역이 인접 한 경우 잠금을 해제 해야 각각 개별적으로 합니다.
 
-##  <a name="operator_handle"></a>  CAtlTemporaryFile::operator 핸들
+##  <a name="operator_handle"></a>  CAtlTemporaryFile::operator HANDLE
 
 임시 파일에 대 한 핸들을 반환합니다.
 
@@ -440,7 +440,7 @@ HRESULT Write(
 
 예를 참조 하세요 [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [CAtlFile 클래스](../../atl/reference/catlfile-class.md)

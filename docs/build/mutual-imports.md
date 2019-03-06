@@ -14,12 +14,12 @@ helpviewer_keywords:
 - extension DLLs [C++], mutual imports
 - exporting DLLs [C++], mutual imports
 ms.assetid: 2cc29537-92ee-4d92-af39-8b8b3afd808f
-ms.openlocfilehash: 38f2e08139566ce6c70755cd367edf93677ef9af
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2d34c54491bb4b85311be3ba1ebdaed87437246
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614411"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420689"
 ---
 # <a name="mutual-imports"></a>상호 가져오기
 
@@ -111,22 +111,22 @@ class CExampleA : public CObject
 
 - [DLL에서 내보내기](../build/exporting-from-a-dll.md)
 
-- [사용 하 여 DLL에서 내보내기. DEF 파일](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS를 사용 하 여 가져오기 및 내보내기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
 
-- [C 언어 실행 파일에서 사용 하기 위해 c + + 함수 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
 
 - [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
 
-- [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
 - [LIB 공익 사업 및 /DEF 옵션](../build/reference/lib-reference.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [가져오기 및 내보내기](../build/importing-and-exporting.md)

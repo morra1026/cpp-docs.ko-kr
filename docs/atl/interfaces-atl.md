@@ -6,12 +6,12 @@ helpviewer_keywords:
 - COM interfaces
 - interfaces, COM
 ms.assetid: de6c8b12-6230-4fdc-af66-a28b91d5ee55
-ms.openlocfilehash: 3f6e8978c01d6689118a3a004c48e75a40151490
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5416fb8a99420f0f6c84318753ee3399ccf5db2a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594742"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287377"
 ---
 # <a name="interfaces-atl"></a>인터페이스 (ATL)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50594742"
 > [!NOTE]
 >  표준 COM 및 OLE 인터페이스에 대한 IID는 미리 정의됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
 [COM 개체 및 인터페이스](/windows/desktop/com/com-objects-and-interfaces)

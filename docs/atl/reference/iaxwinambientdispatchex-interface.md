@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: 5b4afabe2c12dff048bc6a6fb904a82b3cea4d01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 638152d8c49bd20742a586bc665efcdb662b6f3a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539440"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413890"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx 인터페이스
 
@@ -38,11 +38,11 @@ MIDL_INTERFACE("B2D0778B - AC99 - 4c58 - A5C8 - E7724E5316B5") IAxWinAmbientDisp
 
 ## <a name="remarks"></a>설명
 
-ATL 및 호스트 ActiveX 컨트롤, 특히 앰비언트 속성을 갖는 ActiveX 컨트롤에 정적으로 연결 된 ATL 응용 프로그램에이 인터페이스를 포함 합니다. 이 인터페이스를 포함 하지 않고이 어설션이 생성 됩니다: "했는지 LIBID CComModule::Init 전달할"
+ATL 및 호스트 ActiveX 컨트롤, 특히 앰비언트 속성을 갖는 ActiveX 컨트롤에 정적으로 연결 된 ATL 응용 프로그램에이 인터페이스를 포함 합니다. 이 인터페이스를 포함 하지 않고이 어설션이 생성 됩니다. "했는지 LIBID CComModule::Init 전달할"
 
 이 인터페이스는 개체를 호스트 하는 ATL의 ActiveX 컨트롤에 의해 노출 됩니다. 파생 된 [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md), `IAxWinAmbientDispatchEx` 자신만의 하나를 사용 하 여 ATL 제공한 앰비언트 속성 인터페이스를 보완할 수 있습니다 하는 메서드를 추가 합니다.
 
-[AXHost](https://msdn.microsoft.com/library/system.windows.forms.axhost.aspx) 에 대 한 형식 정보를 로드 하려고 `IAxWinAmbientDispatch` 고 `IAxWinAmbientDispatchEx` 코드가 포함 된 형식 라이브러리에서.
+<xref:System.Windows.Forms.AxHost> 에 대 한 형식 정보를 로드 하려고 `IAxWinAmbientDispatch` 고 `IAxWinAmbientDispatchEx` 코드가 포함 된 형식 라이브러리에서.
 
 ATL90.dll를 연결할 경우 **AXHost** DLL의 형식 라이브러리에서 형식 정보를 로드 합니다.
 
@@ -79,6 +79,6 @@ virtual HRESULT STDMETHODCALLTYPE SetAmbientDispatch(IDispatch* pDispatch) = 0;
 
 때 `SetAmbientDispatch` 호출 되는 새 인터페이스에 대 한 포인터를 사용 하 여이 새 인터페이스 하는 데 사용할 속성 또는 해당 속성에서 이미 제공 하지 않는 경우 호스트 된 컨트롤에 의해 요청 메서드를 호출 [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IAxWinAmbientDispatch 인터페이스](../../atl/reference/iaxwinambientdispatch-interface.md)

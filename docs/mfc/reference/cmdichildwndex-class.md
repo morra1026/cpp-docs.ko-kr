@@ -112,18 +112,18 @@ helpviewer_keywords:
 - CMDIChildWndEx [MFC], UnregisterTaskbarTab
 - CMDIChildWndEx [MFC], UpdateTaskbarTabIcon
 ms.assetid: d39fec06-0bd6-4271-917d-35aae3b24d8e
-ms.openlocfilehash: 9b92c9689749dca1ab4eebcade1c4f7e71d25a76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 625104ecddd9e14ac77aa05ac54cb578c4d62f85
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541546"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293426"
 ---
 # <a name="cmdichildwndex-class"></a>CMDIChildWndEx 클래스
 
-`CMDIChildWndEx` 클래스 여러 문서 MDI (인터페이스) 자식 창은 Windows의 기능을 제공 합니다. 기능을 확장 [CMDIChildWnd 클래스](../../mfc/reference/cmdichildwnd-class.md)합니다. MDI 응용 프로그램에서 특정 MFC 클래스를 사용하면 프레임워크에 이 클래스가 필요합니다.
+`CMDIChildWndEx` 클래스 여러 문서 MDI (인터페이스) 자식 창은 Windows의 기능을 제공 합니다. 기능을 확장 [CMDIChildWnd 클래스](../../mfc/reference/cmdichildwnd-class.md)합니다. MDI 애플리케이션에서 특정 MFC 클래스를 사용하면 프레임워크에 이 클래스가 필요합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -189,7 +189,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 |[CMDIChildWndEx::SetRelatedTabGroup](#setrelatedtabgroup)||
 |[CMDIChildWndEx::SetTaskbarTabActive](#settaskbartabactive)|해당 Windows 7 작업 표시줄 탭을 활성화 합니다.|
 |[CMDIChildWndEx::SetTaskbarTabOrder](#settaskbartaborder)|Windows 7 작업 표시줄 탭에 지정 된 기간 전에 MDI 자식을 삽입합니다.|
-|[Cmdichildwndex:: Settaskbartabproperties](#settaskbartabproperties)|Windows 7 작업 표시줄 탭에 대한 속성을 설정합니다.|
+|[CMDIChildWndEx::SetTaskbarTabProperties](#settaskbartabproperties)|Windows 7 작업 표시줄 탭에 대한 속성을 설정합니다.|
 |[CMDIChildWndEx::SetTaskbarThumbnailClipRect](#settaskbarthumbnailcliprect)|작업 표시줄에서 해당 창의 축소판 그림으로 표시 하려면 창의 클라이언트 영역의 일부를 선택 하려면 클리핑 사각형을 설정 하기 위해 프레임 워크에서 내부적으로 호출 됩니다.|
 |[CMDIChildWndEx::ShowPane](#showpane)||
 |[CMDIChildWndEx::UnregisterTaskbarTab](#unregistertaskbartab)|Windows 7 작업 표시줄 탭에서 MDI 자식을 제거합니다.|
@@ -201,11 +201,11 @@ MDI 응용 프로그램에서 도킹 확장된 기능을 사용 하려면 응용
 
 ## <a name="example"></a>예제
 
-다음 예제에서는 파생 클래스에서 `CMDIChildWndEx`합니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 파생 클래스에서 `CMDIChildWndEx`합니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#3](../../mfc/codesnippet/cpp/cmdichildwndex-class_1.h)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -431,7 +431,7 @@ virtual LPCTSTR GetDocumentName(CObject** pObj);
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 `GetDocumentName` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 `GetDocumentName` 메서드를 사용하는 방법을 보여 줍니다. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#17](../../mfc/codesnippet/cpp/cmdichildwndex-class_2.cpp)]
 
@@ -547,7 +547,7 @@ BOOL InsertPane(
 *pTarget*<br/>
 [in] 인접 한 창에 대 한 포인터입니다.
 
-*후에는*<br/>
+*bAfter*<br/>
 [in] TRUE 이면 *pControlBar* 뒤에 삽입 됩니다 *pTarget*합니다. FALSE 이면 *pControlBar* 앞에 삽입 됩니다 *pTarget*합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -567,7 +567,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지정 된 지점입니다.
 
 *dwBarAlignment*<br/>
@@ -602,7 +602,7 @@ TRUE 이면 문서가 읽기 전용입니다. 그렇지 않으면 FALSE입니다
 
 ### <a name="example"></a>예제
 
-다음 예제에서는 재정의 `IsReadOnly` 메서드. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: MFC Visual Studio 응용 프로그램](../../visual-cpp-samples.md)합니다.
+다음 예제에서는 재정의 `IsReadOnly` 메서드. 이 코드 조각에서 제공 되는 [VisualStudioDemo 샘플: Visual Studio 응용 프로그램 MFC](../../visual-cpp-samples.md)합니다.
 
 [!code-cpp[NVC_MFC_VisualStudioDemo#2](../../mfc/codesnippet/cpp/cmdichildwndex-class_3.cpp)]
 
@@ -686,7 +686,7 @@ CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 확인 화면 좌표에서 지점에 지정 합니다.
 
 *nSensitivity*<br/>
@@ -837,7 +837,7 @@ virtual BOOL SetTaskbarThumbnailClipRect(CRect rect);
 
 ### <a name="remarks"></a>설명
 
-##  <a name="settaskbartabproperties"></a>  Cmdichildwndex:: Settaskbartabproperties
+##  <a name="settaskbartabproperties"></a>  CMDIChildWndEx::SetTaskbarTabProperties
 
 Windows 7 작업 표시줄 탭에 대한 속성을 설정합니다.
 
@@ -1183,7 +1183,7 @@ virtual void ActivateTopLevelFrame();
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

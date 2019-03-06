@@ -10,12 +10,12 @@ helpviewer_keywords:
 - common dialog classes [MFC]
 - tab dialog boxes
 ms.assetid: db75da23-4eff-4c6c-beae-79cf046fbce9
-ms.openlocfilehash: 3533a548f009a65462ce0d821d782db0ada9aa4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5747e4450816b803f97ad5ff6338b9e01ad41bca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490007"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264042"
 ---
 # <a name="dialog-box-classes"></a>대화 상자 클래스
 
@@ -129,7 +129,6 @@ Windows 공용 OLE 속성 대화 상자를 캡슐화합니다. 일반 OLE 속성
 [CPrintInfo](../mfc/reference/cprintinfo-structure.md)<br/>
 인쇄 또는 인쇄 미리 보기 작업에 대 한 정보를 포함 하는 구조체입니다. 인쇄 아키텍처를 사용한 [CView](../mfc/reference/cview-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

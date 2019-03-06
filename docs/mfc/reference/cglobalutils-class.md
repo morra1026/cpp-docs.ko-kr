@@ -38,16 +38,16 @@ helpviewer_keywords:
 - CGlobalUtils [MFC], StringFromCy
 - CGlobalUtils [MFC], StringFromDecimal
 ms.assetid: 2c5bd1a6-f80c-4e79-a476-b4ceebabfb2f
-ms.openlocfilehash: bd382a7f0143d1dce75815430741ef58cee0f8c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c92d3d74bac5e14ed791c6d77cca21eb66a4735
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643315"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271660"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils 클래스
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -80,7 +80,7 @@ class CGlobalUtils
 
 ## <a name="remarks"></a>설명
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CGlobalUtils](../../mfc/reference/cglobalutils-class.md)
 
@@ -175,7 +175,7 @@ BOOL CheckAlignment(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *지점*<br/>
+[in] *point*<br/>
 
 [in] *pBar*<br/>
 
@@ -223,7 +223,7 @@ BOOL DecimalFromString(
 
 ### <a name="parameters"></a>매개 변수
 
-[out] *10 진수*<br/>
+[out] *decimal*<br/>
 
 [in] *psz*<br/>
 
@@ -257,7 +257,7 @@ void ForceAdjustLayout(
 
 ### <a name="parameters"></a>매개 변수
 
-[out에서] *pDockManager*<br/>
+[in, out] *pDockManager*<br/>
 
 [in] *bForce*<br/>
 
@@ -309,7 +309,7 @@ BOOL GetPaneAndAlignFromPoint(
 
 [in] *barContainerManager*<br/>
 
-[in] *(태평양 표준시)*<br/>
+[in] *pt*<br/>
 
 [out] *ppTargetControlBar*<br/>
 
@@ -386,13 +386,13 @@ BOOL StringFromDecimal(
 
 [out] *str*<br/>
 
-[in] *10 진수*<br/>
+[in] *decimal*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

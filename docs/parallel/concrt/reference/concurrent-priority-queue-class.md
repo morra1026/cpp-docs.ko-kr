@@ -15,16 +15,17 @@ f1_keywords:
 helpviewer_keywords:
 - concurrent_priority_queue class
 ms.assetid: 3e740381-0f4e-41fc-8b66-ad0bb55f17a3
-ms.openlocfilehash: a75d413874056d57f0d474f44e514cf93f273626
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5804675ffdaf6de2e73327103398316566b41627
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492297"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304784"
 ---
 # <a name="concurrentpriorityqueue-class"></a>concurrent_priority_queue 클래스
 
-`concurrent_priority_queue` 클래스는 여러 스레드에서 동시에 항목을 푸시 및 팝할 수 있도록 허용하는 컨테이너입니다. 항목은 우선순위에 따라 팝되고, 우선순위는 템플릿 인수로 제공된 함수에 의해 결정됩니다.
+
+  `concurrent_priority_queue` 클래스는 여러 스레드에서 동시에 항목을 푸시 및 팝할 수 있도록 허용하는 컨테이너입니다. 항목은 우선순위에 따라 팝되고, 우선순위는 템플릿 인수로 제공된 함수에 의해 결정됩니다.
 
 ## <a name="syntax"></a>구문
 
@@ -150,12 +151,13 @@ concurrent_priority_queue(
 이 개체에 사용할 할당자 클래스입니다.
 
 *_Init_capacity*<br/>
-`concurrent_priority_queue` 개체의 초기 용량입니다.
 
-*시작 (_b)*<br/>
+  `concurrent_priority_queue` 개체의 초기 용량입니다.
+
+*_Begin*<br/>
 복사할 요소의 범위에서 첫 번째 요소의 위치입니다.
 
-*(_E)*<br/>
+*_End*<br/>
 복사할 요소의 범위를 벗어나는 첫 번째 요소의 위치입니다.
 
 *_Src*<br/>
@@ -175,7 +177,7 @@ concurrent_priority_queue(
 
 여섯 번째와 일곱 번째 생성자는 우선 순위 큐의 이동을 지정 `_Src`합니다.
 
-##  <a name="empty"></a> 빈
+##  <a name="empty"></a> empty
 
 이 메서드가 호출될 때 동시 우선 순위 큐가 비어 있는지를 테스트합니다. 이 메서드는 동시성이 보장 합니다.
 
@@ -199,7 +201,7 @@ allocator_type get_allocator() const;
 
 생성 하는 데 사용 되는 할당자 복사본을 `concurrent_priority_queue` 개체입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 다른 내용을 할당 `concurrent_priority_queue` 여기에 개체입니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -218,7 +220,7 @@ concurrent_priority_queue& operator= (concurrent_priority_queue&& _Src);
 
 이에 대 한 참조 `concurrent_priority_queue` 개체입니다.
 
-##  <a name="push"></a> 푸시
+##  <a name="push"></a> push
 
 동시 우선 순위 큐에 요소를 추가 합니다. 이 메서드는 동시성이 보장 합니다.
 
@@ -249,7 +251,7 @@ size_type size() const;
 
 반환 되는 크기는 함수를 호출 하 여 추가 된 모든 요소를 포함 하도록 보장 됩니다 `push`합니다. 그러나 보류 중인 동시 작업의 결과 반영 하지 않을 수 있습니다.
 
-##  <a name="swap"></a> 교환
+##  <a name="swap"></a> swap
 
 두 개의 동시 우선 순위 큐의 내용을 바꿉니다. 이 메서드는 동시성이 보장 되지 않습니다.
 
@@ -259,7 +261,7 @@ void swap(concurrent_priority_queue& _Queue);
 
 ### <a name="parameters"></a>매개 변수
 
-*_Fronty*<br/>
+*_Queue*<br/>
 `concurrent_priority_queue` 개체를 사용 하 여 콘텐츠를 교환 합니다.
 
 ##  <a name="try_pop"></a> try_pop
@@ -279,8 +281,7 @@ bool try_pop(reference _Elem);
 
 **true 이면** 값을 팝 하는 경우 **false** 그렇지 않은 경우.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [병렬 컨테이너 및 개체](../../../parallel/concrt/parallel-containers-and-objects.md)
-

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - MFC object relationships
 - thread objects [MFC]
 ms.assetid: 409ddd9b-66ad-4625-84f7-bf55a41d697b
-ms.openlocfilehash: e59e8b69dcdf0bf3b22d4286ba4692558a11e096
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 799035976ea55988a635f7dc9b667e87c48d8f7e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175758"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273506"
 ---
 # <a name="documents-views-and-the-framework"></a>문서, 뷰 및 프레임워크
 
@@ -64,6 +64,6 @@ MFC 프레임 워크의 핵심은 문서 및 뷰 개념입니다. 문서에 있�
 
 프레임 워크 도구, MFC 응용 프로그램 마법사 및 리소스 편집기에서 이러한 개체를 만들 방법, 함께 작동 방식 및 사용 하는 방법으로 프로그래밍의 문서이에서는의 나머지 부분에 설명 합니다. 문서, 뷰 및 프레임 창에 자세히 설명 [창 개체](../mfc/window-objects.md) 하 고 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스를 사용하여 Windows 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

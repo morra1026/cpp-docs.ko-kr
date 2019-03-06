@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CDocItem [MFC], GetDocument
 - CDocItem [MFC], IsBlank
 ms.assetid: 84fb8610-a4c8-4211-adc0-e70e8d002c11
-ms.openlocfilehash: cf854bbc99ebeee55ae130b747c77fd7fe52f8d8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c1c1da14d732b6aff6ae07f86ae7b9c1b690b84
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437104"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291316"
 ---
 # <a name="cdocitem-class"></a>CDocItem 클래스
 
@@ -40,9 +40,9 @@ class CDocItem : public CCmdTarget
 
 `CDocItem` 개체는 클라이언트와 서버 문서의 OLE 항목을 나타내는 데 사용 됩니다.
 
-자세한 내용은 문서 참조 [컨테이너: 컨테이너 구현](../../mfc/containers-implementing-a-container.md)합니다.
+자세한 내용은 문서를 참조 하세요. [컨테이너: 컨테이너 구현](../../mfc/containers-implementing-a-container.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -88,7 +88,7 @@ virtual BOOL IsBlank() const;
 
 직렬화 하는 동안 다른 작업을 구현 하려는 경우이 함수를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 4bc50a8a77a4964cf92d003ed1e06213398f401c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: fdfc0888e7d6213fb7c04a5257358da8f5dae138
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525550"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425096"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 
@@ -446,9 +446,9 @@ class CListCtrl : public CWnd
 
 - 보고서 보기
 
-   각 항목이 오른쪽에 열으로 정렬 하는 추가 정보를 사용 하 여 자체 줄에 나타납니다. 맨 왼쪽 열의 작은 아이콘 및 레이블 포함 하 고 후속 열 응용 프로그램에서 지정 된 대로 하위 항목을 포함 합니다. 포함 된 헤더 컨트롤 (클래스 [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) 이러한 열을 구현 합니다. 헤더 컨트롤 및 보고서 보기의 열에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 CListCtrl: 컨트롤 (보고서 뷰)에 열 추가](../../mfc/adding-columns-to-the-control-report-view.md)합니다.
+   각 항목이 오른쪽에 열으로 정렬 하는 추가 정보를 사용 하 여 자체 줄에 나타납니다. 맨 왼쪽 열의 작은 아이콘 및 레이블 포함 하 고 후속 열 응용 프로그램에서 지정 된 대로 하위 항목을 포함 합니다. 포함 된 헤더 컨트롤 (클래스 [CHeaderCtrl](../../mfc/reference/cheaderctrl-class.md)) 이러한 열을 구현 합니다. 헤더 컨트롤 및 보고서 보기의 열에 대 한 자세한 내용은 참조 하세요. [CListCtrl 사용 하 여: 컨트롤 (보고서 뷰)에 열 추가](../../mfc/adding-columns-to-the-control-report-view.md)합니다.
 
-컨트롤의 현재 목록 보기의 스타일을 현재 보기를 확인합니다. 이러한 스타일 및 해당 사용법에 대 한 자세한 내용은 참조 하세요. [를 사용 하 여 CListCtrl: 목록 컨트롤 스타일 변경](../../mfc/changing-list-control-styles.md)합니다.
+컨트롤의 현재 목록 보기의 스타일을 현재 보기를 확인합니다. 이러한 스타일 및 해당 사용법에 대 한 자세한 내용은 참조 하세요. [CListCtrl 사용 하 여: 목록 컨트롤 스타일 변경](../../mfc/changing-list-control-styles.md)합니다.
 
 ## <a name="extended-styles"></a>확장된 스타일
 
@@ -460,7 +460,7 @@ class CListCtrl : public CWnd
 
 - 가상 목록 보기
 
-   설정을 사용 하면 사용자가 컨트롤을 최대 DWORD 항목을 지원 합니다. 이것이 가능한 것은 응용 프로그램의 항목 데이터를 관리 하는 오버 헤드를 배치 하 여입니다. 항목 선택 및 포커스가 정보를 제외 하 고 모든 항목 정보는 응용 프로그램에 의해 관리 되어야 합니다. 자세한 내용은 [를 사용 하 여 CListCtrl: 가상 목록 컨트롤](../../mfc/virtual-list-controls.md)합니다.
+   설정을 사용 하면 사용자가 컨트롤을 최대 DWORD 항목을 지원 합니다. 이것이 가능한 것은 응용 프로그램의 항목 데이터를 관리 하는 오버 헤드를 배치 하 여입니다. 항목 선택 및 포커스가 정보를 제외 하 고 모든 항목 정보는 응용 프로그램에 의해 관리 되어야 합니다. 자세한 내용은 참조 하세요. [CListCtrl 사용 하 여: 가상 목록 컨트롤](../../mfc/virtual-list-controls.md)합니다.
 
 - 하나 및 두 번 클릭 활성화
 
@@ -470,7 +470,7 @@ class CListCtrl : public CWnd
 
    설정을 사용 하면 끌어서 놓기 목록 뷰 컨트롤에서 열 다시 정렬 합니다. 보고서 뷰에서 사용할 수 있습니다.
 
-이러한 새 사용 하는 방법은 확장 스타일을 참조 하세요 [를 사용 하 여 CListCtrl: 목록 컨트롤 스타일 변경](../../mfc/changing-list-control-styles.md)합니다.
+이러한 새 사용 하는 방법은 확장 스타일, 참조 [CListCtrl 사용 하 여: 목록 컨트롤 스타일 변경](../../mfc/changing-list-control-styles.md)합니다.
 
 ## <a name="items-and-subitems"></a>항목과 하위 항목
 
@@ -478,7 +478,7 @@ class CListCtrl : public CWnd
 
 클래스 `CListCtrl` 삽입, 삭제, 찾기 및 이러한 항목의 수정에 대 한 여러 기능을 제공 합니다. 자세한 내용은 [CListCtrl::GetItem](#getitem)를 [CListCtrl::InsertItem](#insertitem), 및 [CListCtrl::FindItem](#finditem), [컨트롤에항목추가](../adding-items-to-the-control.md), 및 [스크롤, 정렬, 정렬 및 목록 컨트롤에서 찾기](../scrolling-arranging-sorting-and-finding-in-list-controls.md)합니다.
 
-기본적으로 목록 뷰 컨트롤은 항목의 아이콘 및 텍스트 특성을 저장 하는 일을 담당 합니다. 그러나 이러한 항목 형식 외에도 클래스 `CListCtrl` "콜백 항목입니다."를 지원 합니다. "콜백 항목" 되는 목록 보기 항목을 응용 프로그램-컨트롤 대신-텍스트, 아이콘 또는 둘 모두를 저장 합니다. 콜백 마스크는 응용 프로그램에서 제공 하는 항목 특성 (텍스트 및/또는 아이콘)을 지정 하는 데 사용 됩니다. 콜백 항목을 사용 하는 응용 프로그램에는 필요에 따라 텍스트 및/또는 아이콘 특성을 제공할 수 여야 합니다. 콜백 항목 응용 프로그램이 이미이 정보 중 일부를 유지 관리할 때 유용 합니다. 자세한 내용은 [를 사용 하 여 CListCtrl: 콜백 항목 및 콜백 마스크](../callback-items-and-the-callback-mask.md)합니다.
+기본적으로 목록 뷰 컨트롤은 항목의 아이콘 및 텍스트 특성을 저장 하는 일을 담당 합니다. 그러나 이러한 항목 형식 외에도 클래스 `CListCtrl` "콜백 항목입니다."를 지원 합니다. "콜백 항목" 되는 목록 보기 항목을 응용 프로그램-컨트롤 대신-텍스트, 아이콘 또는 둘 모두를 저장 합니다. 콜백 마스크는 응용 프로그램에서 제공 하는 항목 특성 (텍스트 및/또는 아이콘)을 지정 하는 데 사용 됩니다. 콜백 항목을 사용 하는 응용 프로그램에는 필요에 따라 텍스트 및/또는 아이콘 특성을 제공할 수 여야 합니다. 콜백 항목 응용 프로그램이 이미이 정보 중 일부를 유지 관리할 때 유용 합니다. 자세한 내용은 참조 하세요. [CListCtrl 사용 하 여: 콜백 항목 및 콜백 마스크](../callback-items-and-the-callback-mask.md)합니다.
 
 ## <a name="image-lists"></a>이미지 목록
 
@@ -500,9 +500,9 @@ class CListCtrl : public CWnd
 
    각 헤더 컨트롤 항목에 표시 되는 작은 이미지에 대 한 보고서 보기에서 사용 합니다.
 
-기본적으로 목록 뷰 컨트롤을 소멸; 소멸 될 때 할당 된 이미지 목록 그러나 개발자 응용 프로그램을 기준으로 더 이상 사용 하는 경우 각 이미지 목록을 제거 하 여이 동작을 사용자 지정할 수 없습니다. 자세한 내용은 [CListCtrl 사용 하 여: 목록 항목 및 이미지 목록](../list-items-and-image-lists.md)합니다.
+기본적으로 목록 뷰 컨트롤을 소멸; 소멸 될 때 할당 된 이미지 목록 그러나 개발자 응용 프로그램을 기준으로 더 이상 사용 하는 경우 각 이미지 목록을 제거 하 여이 동작을 사용자 지정할 수 없습니다. 자세한 내용은 참조 하세요. [CListCtrl 사용 하 여: 목록 항목 및 이미지 목록](../list-items-and-image-lists.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](cobject-class.md)
 
@@ -619,7 +619,7 @@ virtual BOOL Create(
 목록 컨트롤의 스타일을 지정합니다. 목록 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 참조 [목록 보기 창 스타일](/windows/desktop/Controls/list-view-window-styles) 이러한 스타일의 전체 목록은 Windows SDK에 있습니다. 스타일을 사용 하 여 컨트롤에 특정 확장 집합 [SetExtendedStyle](#setextendedstyle)합니다.
 
 *rect*<br/>
-목록 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 `CRect` 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+목록 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 `CRect` 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 일반적으로 목록 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -667,7 +667,7 @@ virtual BOOL CreateEx(
 목록 컨트롤의 스타일을 지정합니다. 목록 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 이러한 스타일의 전체 목록은 참조 하세요 [목록 보기 창 스타일](/windows/desktop/Controls/list-view-window-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -701,7 +701,7 @@ CImageList* CreateDragImage(
 끌기 이미지 목록을 가진 만들 항목의 인덱스입니다.
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 이미지의 왼쪽 위 모퉁이의 초기 위치를 수신 하는 구조 보기를 조정 합니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 이미지의 왼쪽 위 모퉁이의 초기 위치를 수신 하는 구조 보기를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -930,7 +930,7 @@ int FindItem(
 *pFindInfo*<br/>
 에 대 한 포인터를 [LVFINDINFO](/windows/desktop/api/commctrl/ns-commctrl-taglvfindinfoa) 검색할 항목에 대 한 정보가 포함 된 구조입니다.
 
-*n %n 시작*<br/>
+*nStart*<br/>
 를 사용 하 여 검색을 시작할 항목 또는-1부터에서 시작 하는 인덱스입니다. 에 있는 항목 *같을* 경우에 검색에서 제외 됩니다 *같을* -1과 같지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1442,7 +1442,7 @@ BOOL GetGroupRect(
 |매개 변수|설명|
 |---------------|-----------------|
 |*iGroupId*|[in] 그룹을 지정합니다.|
-|*lpRect*|[out에서] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 그룹의 사각형 좌표 수신이 메서드가 성공적 이면 *iGroupId*합니다.|
+|*lpRect*|[out에서] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 구조에 지정 된 그룹의 사각형 좌표 수신이 메서드가 성공적 이면 *iGroupId*합니다.|
 |*iCoords*|[in] 검색할 사각형 좌표를 지정 합니다. 이러한 값 중 하나를 사용 합니다.<br /><br /> -LVGGR_GROUP-전체 확장 된 그룹의 (기본값) 좌표입니다.<br />-LVGGR_HEADER-헤더 (축소 된 그룹)만의 좌표입니다.<br />-LVGGR_SUBSETLINK-하위 집합 링크 (태그 하위 집합)만 조정합니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -1451,7 +1451,7 @@ BOOL GetGroupRect(
 
 ### <a name="remarks"></a>설명
 
-호출자가 할당 하는 일을 담당 합니다 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 가리키는 구조를 *pRect* 매개 변수입니다.
+호출자가 할당 하는 일을 담당 합니다 [RECT](/previous-versions/dd162897\(v=vs.85\)) 가리키는 구조를 *pRect* 매개 변수입니다.
 
 이 메서드는 전송 된 [LVM_GETGROUPRECT](/windows/desktop/Controls/lvm-getgrouprect) Windows SDK에 설명 된 메시지입니다.
 
@@ -1790,7 +1790,7 @@ BOOL GetItemIndexRect(
 |*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 하위 항목의 부모 항목에 대 한 구조입니다.<br /><br /> 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 |*iColumn*|[in] 컨트롤에 있는 열의 0부터 시작 인덱스입니다.|
 |*rectType*|[in] 경계 사각형을 검색 되는 목록 뷰 하위 항목의 부분입니다. 다음 값 중 하나를 지정합니다.<br /><br /> LVIR_BOUNDS-아이콘 및 레이블 포함 한 전체 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_ICON-아이콘 또는 작은 아이콘의 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_LABEL-하위 항목 텍스트의 경계 사각형을 반환 합니다.|
-|*pRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
+|*pRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1844,7 +1844,7 @@ BOOL GetItemPosition(
 해당 위치를 검색할 항목의 인덱스입니다.
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 항목의 왼쪽 위 모퉁이 위치를 수신 하는 구조 보기를 조정 합니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 항목의 왼쪽 위 모퉁이 위치를 수신 하는 구조 보기를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1883,7 +1883,7 @@ BOOL GetItemRect(
 해당 위치를 검색할 항목의 인덱스입니다.
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형을 수신 하는 구조입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형을 수신 하는 구조입니다.
 
 *nCode*<br/>
 경계 사각형을 검색할 목록 보기 항목의 부분입니다. 다음이 값 중 하나일 수 있습니다.
@@ -2220,7 +2220,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 구조체 뷰 원점입니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 구조체 뷰 원점입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2531,7 +2531,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2556,7 +2556,7 @@ void GetWorkAreas(
 *nWorkAreas*<br/>
 수가 `RECT` 구조에 포함 된 *중국* 배열.
 
-*중국*<br/>
+*prc*<br/>
 배열에 대 한 포인터 `RECT` 구조 (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체) 작업 영역 목록 뷰 컨트롤을 수신 합니다. 이러한 구조체의 값은 클라이언트 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -2605,7 +2605,7 @@ int HitTest(
 *pHitTestInfo*<br/>
 주소는 `LVHITTESTINFO` 적중 테스트 위치를 포함 하는 구조는 적중된 테스트의 결과 대 한 정보를 받습니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 테스트할 점입니다.
 
 *pFlags*<br/>
@@ -2672,7 +2672,7 @@ int InsertColumn(
 열 머리글을 포함 하는 문자열의 주소입니다.
 
 *nFormat*<br/>
-열의 맞춤을 지정 하는 정수입니다. 다음이 값 중 하나일 수 있습니다: LVCFMT_LEFT, LVCFMT_RIGHT, 또는 LVCFMT_CENTER 합니다.
+열의 맞춤을 지정 하는 정수입니다. 다음이 값 중 하나일 수 있습니다. LVCFMT_LEFT, LVCFMT_RIGHT, 또는 LVCFMT_CENTER 합니다.
 
 *nWidth*<br/>
 픽셀 단위로 열 너비입니다. 이 매개 변수가-1 인 경우 열 너비가 설정 되지 않았습니다.
@@ -2834,7 +2834,7 @@ int InsertMarkHitTest(
 ### <a name="parameters"></a>매개 변수
 
 *pPoint*<br/>
-에 대 한 포인터를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 목록 컨트롤의 클라이언트 영역을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
+에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 목록 컨트롤의 클라이언트 영역을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
 
 *lvim*<br/>
 에 대 한 포인터를 [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) 지점 매개 변수에 의해 정의 된 좌표에 가장 가까운 삽입 지점을 지정 하는 구조입니다.
@@ -3043,7 +3043,7 @@ BOOL RedrawItems(
 *nFirst*<br/>
 그려야 하는 첫 번째 항목의 인덱스입니다.
 
-*n 마지막*<br/>
+*nLast*<br/>
 다시 그려져 야 마지막 항목의 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -3598,7 +3598,7 @@ COLORREF SetInsertMarkColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 A [COLORREF](/windows/desktop/gdi/colorref) 삽입 지점을 설정할 색을 지정 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -3853,8 +3853,8 @@ BOOL SetItemPosition(
 *nItem*<br/>
 위치가 설정할 항목의 인덱스입니다.
 
-*(태평양 표준시)*<br/>
-A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 항목의 왼쪽 위 모퉁이의 보기에서 새 위치를 지정 하는 구조를 조정 합니다.
+*pt*<br/>
+A [지점](/previous-versions/dd162805\(v=vs.85\)) 항목의 왼쪽 위 모퉁이의 보기에서 새 위치를 지정 하는 구조를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -3955,7 +3955,7 @@ COLORREF SetOutlineColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 새 [COLORREF](/windows/desktop/gdi/colorref) 윤곽선 색을 포함 하는 구조체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -4420,10 +4420,9 @@ BOOL Update(int nItem);
 
   예를 참조 하세요 [CListCtrl::GetSelectedCount](#getselectedcount)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 ROWLIST](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](cwnd-class.md)<br/>
 [계층 구조 차트](../hierarchy-chart.md)<br/>
 [CImageList 클래스](cimagelist-class.md)
-

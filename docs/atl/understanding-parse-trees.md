@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - parse trees
 ms.assetid: 668ce2dd-a1c3-4ca0-8135-b25267cb6a85
-ms.openlocfilehash: 11625ebda2e84d4a738a2d54e849e3406a5c4f70
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1aea573e78e6f6a9a86bc4e3987ee448815f329
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510879"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273324"
 ---
 # <a name="understanding-parse-trees"></a>구문 분석 트리 이해
 
@@ -57,7 +57,6 @@ HKEY_CLASSES_ROOT
 
 등록 기관은 처음 여기서 열립니다 (만듭니다) `HKEY_CLASSES_ROOT\MyVeryOwnKey`합니다. 그런 다음 발견 하는 `MyVeryOwnKey` 하위 키가 있습니다. 키를 닫을 것이 아니라 `MyVeryOwnKey`, 등록 기관에 핸들을 유지 하 고 엽니다 (만듭니다) `HasASubKey` 이 부모 핸들을 사용 하 여 합니다. (시스템 레지스트리에 낮아질 수 있습니다 부모 핸들이 열릴 때.) 를 열 `HKEY_CLASSES_ROOT\MyVeryOwnKey` 를 연 다음 `HasASubKey` 사용 하 여 `MyVeryOwnKey` 부모 여 보다 빠르게 그대로 `MyVeryOwnKey`, 닫는 `MyVeryOwnKey`을 연 다음 `MyVeryOwnKey\HasASubKey`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [등록자 스크립트 만들기](../atl/creating-registrar-scripts.md)
-

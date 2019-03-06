@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCRibbonCustomizeDialog [MFC], CMFCRibbonCustomizeDialog
 ms.assetid: ce67de7f-5eaa-4c75-9b94-f290f36df073
-ms.openlocfilehash: 2931bdc06f98f7031692a0e00fa9cbfb4136a657
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d73fd05a775ac26f5d289a5233341102f40e9af3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542261"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259999"
 ---
 # <a name="cmfcribboncustomizedialog-class"></a>CMFCRibbonCustomizeDialog 클래스
 
@@ -48,7 +48,7 @@ MFC는 메시지 처리기에서 0을 반환 하는 경우 또는 AFX_WM_ON_RIBB
 
 이 클래스에서 파생 되기 때문에 [CMFCPropertySheet 클래스](../../mfc/reference/cmfcpropertysheet-class.md)를 사용 하 여 사용자 지정 페이지를 추가할 수 있습니다는 `CMFCPropertySheet` API.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -94,7 +94,7 @@ CMFCRibbonCustomizeDialog(
 
 생성자를 인스턴스화하는 [CMFCRibbonCustomizePropertyPage 클래스](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) 개체 및 속성 시트 페이지 컬렉션에 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

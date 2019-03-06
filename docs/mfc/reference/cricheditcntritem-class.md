@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CRichEditCntrItem [MFC], CRichEditCntrItem
 - CRichEditCntrItem [MFC], SyncToRichEditObject
 ms.assetid: 6c0b4efe-0fb8-4621-b5e1-fdcb8ec48c3b
-ms.openlocfilehash: 4683e0ea4a56e6766c039b2fcb858a54e28d14ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f71607147b353c5071830bdce481f1e5e5d4717
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443344"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268488"
 ---
 # <a name="cricheditcntritem-class"></a>CRichEditCntrItem 클래스
 
@@ -51,7 +51,7 @@ class CRichEditCntrItem : public COleClientItem
 
 서식 있는 편집 컨테이너 항목을 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -108,7 +108,7 @@ void SyncToRichEditObject(REOBJECT& reo);
 
 자세한 내용은 [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
 [COleClientItem 클래스](../../mfc/reference/coleclientitem-class.md)<br/>

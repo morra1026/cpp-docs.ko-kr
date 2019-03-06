@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - document templates [MFC], classes
 ms.assetid: 901749e9-8048-44a0-b5e2-361554650a73
-ms.openlocfilehash: b15263005f8bd6a8fdc9f9f29ea268fe8a6b95a3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2589bc8f04e791f73529af91ffb148c2c717cd08
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448076"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294579"
 ---
 # <a name="document-template-classes"></a>문서 템플릿 클래스
 
@@ -31,7 +31,6 @@ ms.locfileid: "50448076"
 [CCreateContext](../mfc/reference/ccreatecontext-structure.md)<br/>
 구조를 문서 템플릿에 문서, 뷰 및 프레임 창 개체의 생성을 조정 하 창 생성 함수에 전달 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

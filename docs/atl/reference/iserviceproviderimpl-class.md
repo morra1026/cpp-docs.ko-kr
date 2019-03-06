@@ -9,12 +9,12 @@ helpviewer_keywords:
 - IServiceProviderImpl class
 - IServiceProvider interface, ATL implementation
 ms.assetid: 251254d3-c4ce-40d7-aee0-3d676d1d72f2
-ms.openlocfilehash: 231c65d92ff287e35d5475109e70d21f5a047baa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e52c28d528e187713d2d0925fed23bd8cd4493d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609887"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298674"
 ---
 # <a name="iserviceproviderimpl-class"></a>IServiceProviderImpl 클래스
 
@@ -44,13 +44,13 @@ class ATL_NO_VTABLE IServiceProviderImpl : public IServiceProvider
 
 `IServiceProvider` 인터페이스 해당 GUID로 지정 된 서비스를 찾고 서비스에서 요청된 된 인터페이스에 대 한 인터페이스 포인터를 반환 합니다. 클래스 `IServiceProviderImpl` 이 인터페이스의 기본 구현을 제공 합니다.
 
-`IServiceProviderImpl` 하나의 메서드를 지정 합니다. [QueryService](#queryservice), 생성 되 나 지정된 된 서비스에 액세스 하 고 서비스에 대해 지정된 된 인터페이스에 인터페이스 포인터를 반환 합니다.
+`IServiceProviderImpl` 하나의 메서드를 지정합니다. [QueryService](#queryservice), 생성 되 나 지정된 된 서비스에 액세스 하 고 서비스에 대해 지정된 된 인터페이스에 인터페이스 포인터를 반환 합니다.
 
 `IServiceProviderImpl` 부터, 서비스 맵을 사용 하 여 [BEGIN_SERVICE_MAP](service-map-macros.md#begin_service_map) 끝나는 [END_SERVICE_MAP](service-map-macros.md#end_service_map)합니다.
 
-두 항목을 포함 하는 서비스 맵: [SERVICE_ENTRY](service-map-macros.md#service_entry), 개체에 의해 지원 되는 지정 된 서비스 id (SID)를 나타내는 및 [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain)를 호출 하는 `QueryService` 다른 연결 개체입니다.
+서비스 맵은 두 개의 항목이 포함 됩니다. [SERVICE_ENTRY](service-map-macros.md#service_entry), 개체에 의해 지원 되는 지정 된 서비스 id (SID)를 나타내는 및 [SERVICE_ENTRY_CHAIN](service-map-macros.md#service_entry_chain)를 호출 하는 `QueryService` 다른 개체에 대 한 체인을 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IServiceProvider`
 
@@ -110,6 +110,6 @@ STDMETHOD(QueryService)(
 
 SID_SMyService SID_SYourService, 등 두 개의 서비스에 둘 다 지정할 수 동일한 인터페이스를 사용 하지만 인터페이스 구현의 두 서비스 간에 공통 전혀 없을 수 있습니다. 이 작동 하기 때문에 대 한 호출 `QueryService` (SID_SMyService, IID_IDispatch)는 다른 개체를 반환할 수 있습니다 `QueryService` (SID_SYourService, IID_IDispatch). 개체 id는 다양 한 서비스 식별자를 지정 하는 경우에 간주 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

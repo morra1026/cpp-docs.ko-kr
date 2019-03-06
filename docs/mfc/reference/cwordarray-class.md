@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 2ba2c194-2c6c-40ff-9db4-e9dbe57e1f57
-ms.openlocfilehash: 7c8915b8d82f96ed0bd1fad11e1a4f0687b40493
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c21f89215e08523188eb32490d7b1d5506299fb5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530171"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259453"
 ---
 # <a name="cwordarray-class"></a>CWordArray 클래스
 
@@ -114,7 +114,7 @@ class CWordArray : public CObject
 
 사용 하 여 대 한 자세한 내용은 `CWordArray`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -136,7 +136,7 @@ interface class ICommandSource
 
 MFC 보기에서 사용자 정의 컨트롤을 호스트 하는 경우 [CWinFormsView 클래스](../../mfc/reference/cwinformsview-class.md) 경로 명령과 업데이트 명령 UI 메시지를 사용자 정의 컨트롤에 기록 MFC 명령 (예: 프레임 메뉴 항목 및 도구 모음 단추)를 처리할 수 있도록 합니다. 를 구현 하 여 여러분이 사용자 정의 컨트롤에 대 한 참조를 `ICommandSource` 개체입니다.
 
-참조 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `ICommandTarget`합니다.
+[방법: Windows Forms 컨트롤을 추가할 명령 라우팅](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `ICommandTarget`합니다.
 
 Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
@@ -162,7 +162,7 @@ void AddCommandHandler(
 
 이 메서드는 명령 처리기를 추가 *cmdHandler* 명령 원본 개체에 처리기 매핑됩니다 *cmdID*합니다.
 
-참조 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `AddCommandHandler`합니다.
+[방법: Windows Forms 컨트롤을 추가할 명령 라우팅](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `AddCommandHandler`합니다.
 
 ##  <a name="addcommandrangehandler"></a>  ICommandSource::AddCommandRangeHandler
 
@@ -362,7 +362,7 @@ interface class ICommandTarget
 
 MFC 보기에서 사용자 정의 컨트롤을 호스트 하는 경우 [CWinFormsView](../../mfc/reference/cwinformsview-class.md) 경로 명령과 업데이트 명령 UI 메시지를 사용자 정의 컨트롤에 기록 MFC 명령 (예: 프레임 메뉴 항목 및 도구 모음 단추)를 처리할 수 있도록 합니다. 구현 하 여 `ICommandTarget`, 사용자 정의 컨트롤 개체에 대 한 참조를 제공 합니다.
 
-참조 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `ICommandTarget`합니다.
+[방법: Windows Forms 컨트롤을 추가할 명령 라우팅](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `ICommandTarget`합니다.
 
 Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
@@ -383,7 +383,7 @@ void Initialize(ICommandSource^ cmdSource);
 
 MFC 보기에서 사용자 정의 컨트롤을 호스트 하는 경우 [CWinFormsView](../../mfc/reference/cwinformsview-class.md) 경로 명령과 업데이트 명령 UI 메시지 MFC 명령을 처리할 수 있도록 사용자 정의 컨트롤입니다.
 
-이 메서드는 명령 대상 개체를 초기화 하 고 지정 된 명령 소스 개체를 사용 하 여 연결 *cmdSource*합니다. 사용자 컨트롤 클래스 구현에서 호출 해야 합니다. 초기화 시 등록 해야 명령 처리기 명령 원본 개체를 사용 하 여 호출 하 여 [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) 에 `Initialize` 구현 합니다. 참조 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `Initialize` 이 작업을 수행 하 합니다.
+이 메서드는 명령 대상 개체를 초기화 하 고 지정 된 명령 소스 개체를 사용 하 여 연결 *cmdSource*합니다. 사용자 컨트롤 클래스 구현에서 호출 해야 합니다. 초기화 시 등록 해야 명령 처리기 명령 원본 개체를 사용 하 여 호출 하 여 [ICommandSource::AddCommandHandler](../../mfc/reference/icommandsource-interface.md) 에 `Initialize` 구현 합니다. [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md) 사용 하는 방법의 예 `Initialize` 에이 작업을 수행 합니다.
 
 ##  <a name="icommandui_interface"></a>  ICommandUI 인터페이스
 
@@ -399,7 +399,7 @@ interface class ICommandUI
 
 `ICommandUI` 내에서 사용 되는 `ON_UPDATE_COMMAND_UI` 처리기-파생된 클래스에서. (선택 또는 클릭)을 활성화 하는 응용 프로그램의 사용자 사용 하도록 설정한 각 메뉴 항목 메뉴가 표시 됩니다 또는 사용 하지 않도록 설정 합니다. 구현 하 여이 정보를 제공 하는 각 메뉴 명령 대상은 `ON_UPDATE_COMMAND_UI` 처리기입니다. 각 응용 프로그램에서 명령 사용자 인터페이스 개체에 대 한 속성 창을 메시지 맵 항목을 만들고 각 처리기에 대 한 함수 프로토타입을 사용 합니다.
 
-방법에 대 한 자세한 내용은 `ICommandUI` 인터페이스는 명령 라우팅에 사용을 참조 하십시오 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)합니다.
+방법에 대 한 자세한 내용은 `ICommandUI` 명령 라우팅의 인터페이스를 사용 하는 내용은 [방법: 추가 명령 라우팅에 Windows Forms 컨트롤](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)합니다.
 
 Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
@@ -433,7 +433,7 @@ void ContinueRouting();
 
 ### <a name="remarks"></a>설명
 
-이와 함께에서 사용 해야 하는 고급 멤버 함수는 [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) FALSE를 반환 하는 처리기. 자세한 내용은 기술 참고 참조 [TN006: 메시지 맵](../../mfc/tn006-message-maps.md)합니다.
+이와 함께에서 사용 해야 하는 고급 멤버 함수는 [ON_COMMAND_EX](message-map-macros-mfc.md#on_command_ex) FALSE를 반환 하는 처리기. 자세한 내용은 기술 참고를 참조 하세요. [TN006: 메시지 맵](../../mfc/tn006-message-maps.md)합니다.
 
 ##  <a name="enabled"></a>  ICommandUI::Enabled
 
@@ -521,7 +521,7 @@ void OnActivateView(bool activate);
 
 ### <a name="parameters"></a>매개 변수
 
-*활성화*<br/>
+*activate*<br/>
 보기를 새로 여부를 나타내는 활성화 또는 비활성화 합니다.
 
 ##  <a name="oninitialupdate"></a>  IView::OnInitialUpdate
@@ -544,9 +544,8 @@ void OnUpdate();
 
 이 함수는 수정 내용을 반영 하도록 해당 디스플레이를 업데이트 보기를 허용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

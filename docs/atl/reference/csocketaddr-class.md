@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSocketAddr class
 ms.assetid: 2fb2d8a7-899e-4a36-a342-cc9f4fcdd68c
-ms.openlocfilehash: cc0c5f0abc125138c5068682c828a3438dec5102
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: e94d92b11a7f200edb1815a0b384d0fc0428001f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893355"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280331"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr 클래스
 
@@ -222,6 +222,6 @@ addrinfo* const GetAddrInfoList() const;
 
 하나 이상의 연결 된 목록에 대 한 포인터 `addrinfo` 호스트에 대 한 응답 정보를 포함 하는 구조체입니다. 자세한 내용은 [addrinfo 구조](/windows/desktop/api/ws2def/ns-ws2def-addrinfoa)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

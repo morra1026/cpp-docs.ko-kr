@@ -8,12 +8,12 @@ helpviewer_keywords:
 - resource identifiers, naming and numbering
 - resource identifiers
 ms.assetid: aecbd2cf-68b3-47f6-ae21-b1f507917245
-ms.openlocfilehash: 9e575ee99b78b8efa75096cac4559eb9aea7fd21
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: f1cd44ed448cc4c0fc60d490a613f0ad91071376
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518673"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267396"
 ---
 # <a name="tn020-id-naming-and-numbering-conventions"></a>TN020: ID 명명 및 번호 매기기 규칙
 
@@ -35,7 +35,7 @@ ms.locfileid: "51518673"
 
 MFC "IDR_" 접두사를 사용 하 여 여러 리소스 유형에 적용 되는 리소스 ID를 나타냅니다. 예를 들어, 지정 된 프레임 창에 대 한 MFC를 사용 하 여 동일한 "IDR_" 접두사 메뉴, 액셀러레이터 키, 문자열 및 아이콘 리소스를 나타냅니다. 다음 표에서 다양 한 접두사 및 용도 보여 줍니다.
 
-|접두사|기능|
+|접두사|사용|
 |------------|---------|
 |IDR_|여러 리소스 종류를 (리본 메뉴, 액셀러레이터에 주로 사용).|
 |IDD_|대화 상자 템플릿 리소스 (예를 들어 IDD_DIALOG1).|
@@ -76,8 +76,8 @@ MFC는 또한 문자열 ("형식이 사용") 하는 대신 특수 형식으로 "
 |------------|-------------------|-----------------|
 |IDR_|여러 가지|1 ~ 0x6FFF|
 |IDD_|대화 상자 템플릿|1 ~ 0x6FFF|
-|IDC_, IDI_, IDB_|비트맵, 아이콘, 커서|1 ~ 0x6FFF|
-|형식이 사용, IDP_|일반 문자열|1 ~ 0x7FFF|
+|IDC_,IDI_,IDB_|비트맵, 아이콘, 커서|1 ~ 0x6FFF|
+|IDS_, IDP_|일반 문자열|1 ~ 0x7FFF|
 |ID_|명령|0xdfff 0x8000|
 |IDC_|컨트롤|8 ~ 0xDFFF|
 
@@ -103,8 +103,7 @@ MFC는 또한 문자열 ("형식이 사용") 하는 대신 특수 형식으로 "
 
 - 명령에 대 한 메뉴 프롬프트 문자열에 대 한 0xffff 0x8000 범위의 예약 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

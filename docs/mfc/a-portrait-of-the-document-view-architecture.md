@@ -14,12 +14,12 @@ helpviewer_keywords:
 - document/view architecture [MFC], about document/view architecture
 - views [MFC], accessing document data from
 ms.assetid: 4e7f65dc-b166-45d8-bcd5-9bb0d399b946
-ms.openlocfilehash: a4d89189b5389685be6b69c8502ffedb8aa731e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 51f963acf5aacdfe4050a076d3bb0e651a92d021
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567104"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298869"
 ---
 # <a name="a-portrait-of-the-documentview-architecture"></a>문서/뷰 아키텍처에 대한 자세한 설명
 
@@ -39,13 +39,12 @@ ms.locfileid: "50567104"
 
 동일한 문서의 여러 뷰를 사용 하 여 응용 프로그램에서-같은 텍스트 편집기에서 분할자 창-보기 먼저 문서에 새 데이터를 전달 합니다. 문서를 호출 하는 것 [UpdateAllViews](../mfc/reference/cdocument-class.md#updateallviews) 문서 자체에 새 데이터를 반영 합니다. 업데이트를 모든 보기를 지시 하는 멤버 함수입니다. 이 뷰를 동기화합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서/뷰 아키텍처의 이점](../mfc/advantages-of-the-document-view-architecture.md)
 
 - [문서/뷰 아키텍처의 대체](../mfc/alternatives-to-the-document-view-architecture.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

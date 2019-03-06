@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /MANIFEST linker option
 - MANIFEST linker option
 ms.assetid: 98c52e1e-712c-4f49-b149-4d0a3501b600
-ms.openlocfilehash: 226deb9e8f7273e122e1b9074d2afca8970fc366
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 685d98d166a94f2c17feae7bfafbd64b77786e8d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508059"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418778"
 ---
 # <a name="manifest-create-side-by-side-assembly-manifest"></a>/MANIFEST(side-by-side 어셈블리 매니페스트 만들기)
 
@@ -27,7 +27,8 @@ ms.locfileid: "50508059"
 
 기본값은 /MANIFEST 합니다.
 
-/MANIFEST:EMBED 옵션은 링커가 이미지의 매니페스트 파일을 RT_MANIFEST 유형의 리소스로 포함하도록 지정합니다. 선택적인 `ID` 매개 변수는 매니페스트에 사용할 리소스 ID입니다. 실행 파일의 경우 값 1을 사용합니다. DLL의 경우에는 개인 종속성을 지정하기 위해 값 2를 사용합니다. `ID` 매개 변수가 지정되지 않은 경우에는 /DLL 옵션이 설정된 경우 기본값이 2이고, 그렇지 않으면 기본값이 1입니다.
+/MANIFEST:EMBED 옵션은 링커가 이미지의 매니페스트 파일을 RT_MANIFEST 유형의 리소스로 포함하도록 지정합니다. 선택적인 `ID` 매개 변수는 매니페스트에 사용할 리소스 ID입니다. 실행 파일의 경우 값 1을 사용합니다. DLL의 경우에는 개인 종속성을 지정하기 위해 값 2를 사용합니다. 
+  `ID` 매개 변수가 지정되지 않은 경우에는 /DLL 옵션이 설정된 경우 기본값이 2이고, 그렇지 않으면 기본값이 1입니다.
 
 실행 파일에 대 한 매니페스트 파일 Visual Studio 2008부터, 사용자 계정 컨트롤 (UAC) 정보를 지정 하는 섹션을 포함 합니다. /MANIFEST을 지정 하지만 둘 다 지정 하는 경우 [/MANIFESTUAC](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md) 도 [/DLL](../../build/reference/dll-build-a-dll.md)를 UAC 수준 설정 된 기본 UAC 조각이 *asInvoker* 매니페스트에 삽입 됩니다. UAC 수준에 대 한 자세한 내용은 참조 하세요. [/MANIFESTUAC (매니페스트에 UAC 포함 정보)](../../build/reference/manifestuac-embeds-uac-information-in-manifest.md)합니다.
 
@@ -57,7 +58,7 @@ UAC에 대해 기본 동작을 변경하려면 다음 중 하나를 수행합니
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.GenerateManifest%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

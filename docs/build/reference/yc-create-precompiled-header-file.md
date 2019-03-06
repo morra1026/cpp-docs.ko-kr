@@ -15,12 +15,12 @@ helpviewer_keywords:
 - /Yc compiler option [C++]
 - Yc compiler option [C++]
 ms.assetid: 47c2e555-b4f5-46e6-906e-ab5cf21f0678
-ms.openlocfilehash: bda384152962bc59ab37b1aae138091aa6f4514c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35b8bfb30a49efa35a3af3d3b76e75f8dede9fd7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536842"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418973"
 ---
 # <a name="yc-create-precompiled-header-file"></a>/Yc(미리 컴파일된 헤더 파일 만들기)
 
@@ -29,7 +29,7 @@ ms.locfileid: "50536842"
 ## <a name="syntax"></a>구문
 
 > __/Yc__<br/>
-> __/Yc__*파일 이름*
+> __/Yc__*filename*
 
 ## <a name="arguments"></a>인수
 
@@ -83,7 +83,7 @@ ms.locfileid: "50536842"
 
 명령을 사용 하 여이 코드를 컴파일할 때 `CL /YcMYAPP.H PROG.CPP`, 컴파일러 AFXWIN.h, RESOURCE.h에 대 한 모든 전처리를 저장 하 고 미리 컴파일된 헤더 파일에 MYAPP.h MYAPP.pch를 호출 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

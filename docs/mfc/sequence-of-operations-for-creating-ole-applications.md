@@ -7,12 +7,12 @@ helpviewer_keywords:
 - applications [OLE], creating
 - applications [OLE]
 ms.assetid: 84b0f606-36c1-4253-9cea-44427f0074b9
-ms.openlocfilehash: b281cbeb4670af0efd232152010fdc90795af103
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b7fa989d1a3b799cf6b427e27142d4479be900bf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437351"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263574"
 ---
 # <a name="sequence-of-operations-for-creating-ole-applications"></a>OLE 응용 프로그램을 만드는 작업 시퀀스
 
@@ -26,10 +26,9 @@ ms.locfileid: "50437351"
 |컨테이너 응용 프로그램을 처음부터 새로 만듭니다.|MFC 응용 프로그램 마법사를 실행 합니다. 선택할 **컨테이너** 에 **복합 문서 지원** 탭 합니다. 클래스 뷰를 사용 하는 소스 코드 편집기로 이동 합니다. COM 처리기 함수에 대 한 코드를 입력 합니다.|프레임 워크에는 COM 구성 요소 (서버) 응용 프로그램에서 생성 된 COM 개체를 삽입할 수 있는 기본 응용 프로그램을 생성 합니다.|
 |부터 자동화를 지 원하는 응용 프로그램을 만듭니다.|MFC 응용 프로그램 마법사를 실행 합니다. 선택할 **Automation** 에서 합니다 **고급 기능** 탭 합니다. 클래스 뷰를 사용 하 여 자동화에 대 한 응용 프로그램의 메서드와 속성을 표시 합니다.|프레임 워크를 활성화 하 고 다른 응용 프로그램에서 자동화할 수 있는 기본 응용 프로그램을 생성 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크를 기반으로 구축](../mfc/building-on-the-framework.md)<br/>
-[MFC 응용 프로그램을 빌드하는 작업 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
+[MFC 애플리케이션을 빌드하는 작업 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
 [ActiveX 컨트롤을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-activex-controls.md)<br/>
-[데이터베이스 응용 프로그램을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)
-
+[데이터베이스 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-database-applications.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CAnimationSize [MFC], m_cxValue
 - CAnimationSize [MFC], m_cyValue
 ms.assetid: ea06d1b5-502c-44a3-82ca-8bd6ba6a9364
-ms.openlocfilehash: ad7200ca53aa99104270209ca253b93d2393d8a8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f52016afe39da900dca4847d29beccb97d829b60
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448648"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258257"
 ---
 # <a name="canimationsize-class"></a>CAnimationSize 클래스
 
@@ -62,7 +62,7 @@ class CAnimationSize : public CAnimationBaseObject;
 |[CAnimationSize::GetValue](#getvalue)|현재 값을 반환합니다.|
 |[CAnimationSize::SetDefaultValue](#setdefaultvalue)|기본값을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -73,7 +73,7 @@ class CAnimationSize : public CAnimationBaseObject;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationSize::operator CSize](#operator_csize)|CAnimationSize CSize를 변환합니다.|
-|[CAnimationSize::operator =](#operator_eq)|CAnimationSize szSrc 할당합니다.|
+|[CAnimationSize::operator=](#operator_eq)|CAnimationSize szSrc 할당합니다.|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -86,7 +86,7 @@ class CAnimationSize : public CAnimationBaseObject;
 
 CAnimationSize 클래스는 두 CAnimationVariable 개체를 캡슐화 하 고 크기를 응용 프로그램에 나타낼 수 있습니다. 예를 들어,이 클래스의 두 크기에 애니메이션 효과를 사용할 수 있습니다 화면의 차원 개체 (사각형와 같은 컨트롤 등). 응용 프로그램에서이 클래스를 사용 하려면 방금이 클래스의 개체를 인스턴스화하고, CAnimationController::AddAnimationObject를 사용 하 여 애니메이션 컨트롤러를 추가 및 너비 및/또는 높이에 적용할 AddTransition 각 전환에 대 한 호출
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -268,7 +268,7 @@ CSize 크기 애니메이션의 현재 값입니다.
 
 이 함수는 GetValue 내부적으로 호출합니다. Getvalue가 어떤 이유로 실패 하는 경우 반환 되는 크기 너비와 높이 대 한 기본 값이 포함 됩니다.
 
-##  <a name="operator_eq"></a>  CAnimationSize::operator =
+##  <a name="operator_eq"></a>  CAnimationSize::operator=
 
 CAnimationSize szSrc 할당합니다.
 
@@ -302,6 +302,6 @@ void SetDefaultValue(const CSize& szDefault);
 
 이 함수를 사용 하 여 애니메이션 개체에 기본값을 설정 합니다. 이 메서드는 애니메이션 크기의 너비와 높이에 기본값을 할당 합니다. 이 또한 만들지 않은 경우 기본 COM 개체를 다시 합니다. 이 애니메이션 개체 (ValueChanged 또는 IntegerValueChanged) 이벤트를 구독 하는 경우 이러한 이벤트를 다시 사용 하도록 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

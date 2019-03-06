@@ -8,16 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - auto_partitioner class
 ms.assetid: 7cc08e5d-20b4-47a4-b4b5-c214a78f5a9e
-ms.openlocfilehash: 9e4701c39512613bd7525c2cc0e3d24a57e7689d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2d8bbb8e8af17dd19953487c47e5fd40343fe349
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644927"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264822"
 ---
 # <a name="autopartitioner-class"></a>auto_partitioner 클래스
 
-`auto_partitioner` 클래스는 `parallel_for`, `parallel_for_each` 및 `parallel_transform`이 반복하는 범위를 분할하는 데 사용하는 기본 방법을 나타냅니다. 이 분할 방법은 부하 분산을 위한 범위 가로채기 및 반복별 취소를 사용합니다.
+
+  `auto_partitioner` 클래스는 `parallel_for`, `parallel_for_each` 및 `parallel_transform`이 반복하는 범위를 분할하는 데 사용하는 기본 방법을 나타냅니다. 이 분할 방법은 부하 분산을 위한 범위 가로채기 및 반복별 취소를 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -34,7 +35,7 @@ class auto_partitioner;
 |[auto_partitioner](#ctor)|`auto_partitioner` 개체를 생성합니다.|
 |[~ auto_partitioner 소멸자](#dtor)|`auto_partitioner` 개체를 제거합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `auto_partitioner`
 
@@ -60,6 +61,6 @@ class auto_partitioner;
 auto_partitioner();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

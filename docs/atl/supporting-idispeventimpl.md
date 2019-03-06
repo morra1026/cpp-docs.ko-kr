@@ -12,12 +12,12 @@ helpviewer_keywords:
 - BEGIN_SINK_MAP macro
 - IDispEventImpl class, declaring
 ms.assetid: b957f930-6a5b-4598-8e4d-8027759957e7
-ms.openlocfilehash: 909f62c88908d7dabf4141fa8ea42be7ea1facb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fcc3be5d905bf3f5680902e2f480472c6251aa7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517808"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273818"
 ---
 # <a name="supporting-idispeventimpl"></a>IDispEventImpl 지원
 
@@ -81,7 +81,6 @@ END_SINK_MAP()
 
 COM 개체의 고유한 특성,으로 인해이 절차의 세부 정보 및 구현 간에 실행 하 고 달라 집니다. 이러한 세부 정보는이 항목의 범위를 벗어나는 및 다루지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)
-

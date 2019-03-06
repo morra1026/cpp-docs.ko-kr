@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CInternetSession [MFC], SetCookie
 - CInternetSession [MFC], SetOption
 ms.assetid: ef54feb4-9d0f-4e65-a45d-7a4cf6c40e51
-ms.openlocfilehash: 216f3bf0ce62eb6e69ad0650289c4c2d91f95159
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 5ad1a1a0dde32358828d58a8f237337c4f62f3e5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178163"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261299"
 ---
 # <a name="cinternetsession-class"></a>CInternetSession 클래스
 
@@ -66,10 +66,10 @@ class CInternetSession : public CObject
 |[CInternetSession::GetContext](#getcontext)|인터넷 세션이 종료 될 때 인터넷 연결을 닫습니다.|
 |[CInternetSession::GetCookie](#getcookie)|Url 지정된 된 URL 및 모든 부모에 대 한 쿠키를 반환합니다.|
 |[CInternetSession::GetCookieLength](#getcookielength)|버퍼에 저장 하는 쿠키의 길이 지정 하는 변수를 검색 합니다.|
-|[Cinternetsession:: Getftpconnection](#getftpconnection)|서버와 FTP 세션을 엽니다. 사용자를 로그온합니다.|
+|[CInternetSession::GetFtpConnection](#getftpconnection)|서버와 FTP 세션을 엽니다. 사용자를 로그온합니다.|
 |[CInternetSession::GetGopherConnection](#getgopherconnection)|Gopher 서버 연결을 시도 하는 응용 프로그램을 엽니다.|
 |[CInternetSession::GetHttpConnection](#gethttpconnection)|연결을 시도 하는 응용 프로그램에 대 한 HTTP 서버를 엽니다.|
-|[Cinternetsession:: Onstatuscallback](#onstatuscallback)|상태 콜백이 활성화 된 경우 작업의 상태를 업데이트 합니다.|
+|[CInternetSession::OnStatusCallback](#onstatuscallback)|상태 콜백이 활성화 된 경우 작업의 상태를 업데이트 합니다.|
 |[CInternetSession::OpenURL](#openurl)|구문 분석 하 고 URL을 엽니다.|
 |[CInternetSession::SetCookie](#setcookie)|지정된 된 URL에 대 한 쿠키를 설정합니다.|
 |[CInternetSession::SetOption](#setoption)|인터넷 세션에 대 한 옵션을 설정합니다.|
@@ -98,12 +98,12 @@ class CInternetSession : public CObject
 
 `CInternetSession` 멤버 함수 [SetCookie](#setcookie)를 [GetCookie](#getcookie), 및 [GetCookieLength](#getcookielength) 는 서버 및 스크립트 유지 Win32 쿠키 데이터베이스를 관리 하는 방법을 제공 합니다. 클라이언트 워크스테이션에 대 한 상태 정보입니다.
 
-기본 인터넷 프로그래밍 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다. MFC WinInet 클래스를 사용 하는 방법에 대 한 일반 정보에 대 한 문서를 참조 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
+기본 인터넷 프로그래밍 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md). MFC WinInet 클래스를 사용 하는 방법에 대 한 일반 정보에 대 한 문서를 참조 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
 > [!NOTE]
 > `CInternetSession` throw를 [AfxThrowNotSupportedException](exception-processing.md#afxthrownotsupportedexception) 지원 되지 않는 서비스 형식에 대 한 합니다. 다음 서비스 유형에 현재 지원 됩니다. FTP, HTTP, gopher를 및 파일입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;`CInternetSession`
@@ -223,7 +223,7 @@ DWORD_PTR GetContext() const;
 
 [OnStatusCallback](#onstatuscallback) 에서 반환 된 컨텍스트 ID를 사용 하 여 `GetContext` 특정 응용 프로그램의 상태를 보고 합니다. 예를 들어, 사용자 상태 정보 반환을 포함 하는 인터넷 요청을 활성화할 때 상태 콜백이 특정 요청에 상태 보고에 컨텍스트 ID를 사용 합니다. 사용자가 두 개의 별도 활성화 하는 경우 인터넷 요청 상태 정보를 반환 합니다. 둘 다 포함 `OnStatusCallback` 컨텍스트 식별자를 사용 하 여 해당 요청에 대 한 상태를 반환 합니다. 따라서 모든 상태 콜백 작업에 대 한 컨텍스트 식별자가 사용 되며 세션이 종료 될 때까지 세션에 연결 됩니다.
 
-비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
+비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md).
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
@@ -294,7 +294,7 @@ URL이 포함 된 문자열에 대 한 포인터
 
 이 값은 사용 [GetCookie](#getcookie)합니다.
 
-## <a name="getftpconnection"></a>  Cinternetsession:: Getftpconnection
+## <a name="getftpconnection"></a>  CInternetSession::GetFtpConnection
 
 FTP 연결을 설정 및 가져오기에 대 한 포인터를이 멤버 함수 호출을 `CFtpConnection` 개체입니다.
 
@@ -421,7 +421,7 @@ HTTP 서버 이름을 포함 하는 문자열에 대 한 포인터입니다.
 
 `GetHttpConnection` HTTP 서버에 연결 하 고 만들고에 대 한 포인터를 반환 합니다.는 `CHttpConnection` 개체입니다. 서버에서 특정 작업을 수행 하지는 않습니다. HTTP 헤더를 쿼리 하려는 경우 별도 단계로이 작업을 수행 해야 예를 들어 있습니다. 클래스를 참조 하세요 [CHttpConnection](../../mfc/reference/chttpconnection-class.md) 하 고 [CHttpFile](../../mfc/reference/chttpfile-class.md) HTTP 서버에 연결을 사용 하 여 수행할 수 있는 작업에 대 한 정보에 대 한 합니다. HTTP 사이트를 탐색 하는 방법에 대 한 정보를 멤버 함수를 참조 [OpenURL](#openurl)합니다. 문서를 참조 하세요 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md) 단계에서 일반적인 HTTP 연결 작업을 수행 합니다.
 
-## <a name="onstatuscallback"></a>  Cinternetsession:: Onstatuscallback
+## <a name="onstatuscallback"></a>  CInternetSession::OnStatusCallback
 
 이 멤버 함수는 상태 콜백을 사용 하는 작업이 보류 중인 경우 상태를 업데이트 하기 위해 프레임 워크에서 호출 됩니다.
 
@@ -475,7 +475,7 @@ virtual void OnStatusCallback(
 
 [!code-cpp[NVC_MFCHtmlHttp#8](../../mfc/reference/codesnippet/cpp/cinternetsession-class_1.cpp)]
 
-비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md)합니다.
+비동기 작업에 대 한 자세한 내용은 문서를 참조 하세요. [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md).
 
 ## <a name="openurl"></a>  CInternetSession::OpenURL
 
@@ -532,7 +532,7 @@ FTP, GOPHER, HTTP 및 파일 형식 인터넷 서비스에 대 한 파일 핸들
 |file://|`CStdioFile*`|
 |http://|`CHttpFile*`|
 |gopher://|`CGopherFile*`|
-|ftp: / /|`CInternetFile*`|
+|ftp://|`CInternetFile*`|
 
 ### <a name="remarks"></a>설명
 
@@ -622,7 +622,7 @@ BOOL SetOption(
 
 작업에 성공 하면 TRUE 값이 반환 됩니다. 오류가 발생 하는 경우 FALSE 값이 반환 됩니다. Win32 함수 호출이 실패 한 경우 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 오류의 원인을 확인 하려면 호출 될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

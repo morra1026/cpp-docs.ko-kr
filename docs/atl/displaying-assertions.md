@@ -7,12 +7,12 @@ helpviewer_keywords:
 - debugging assertions
 - assertions, debugging
 ms.assetid: fa353fe8-4656-4384-a5d2-8866bc977f06
-ms.openlocfilehash: e183f782d488c2e5b92f61cfd63627f056e1f588
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb06b8f124180ed566ecf2c761deb359444fb019
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616462"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289990"
 ---
 # <a name="displaying-assertions"></a>어설션 표시
 
@@ -20,7 +20,6 @@ ms.locfileid: "50616462"
 
 설정 하려는 경우 서비스를 볼 수 없습니다 메시지 상자를 표시 하 고 있는지를 확인 합니다 **데스크톱과 상호 작용 하도록 허용 서비스** 옵션 서비스를 다시 사용 하기 전에 합니다. 이 옵션은 데스크톱에 표시 하기 위해 서비스에서 표시 되는 모든 메시지 상자를 허용 하는 시작 매개 변수입니다. 이 옵션을 설정 하려면 서비스 제어판 응용 프로그램을 열고, 서비스를 선택, 클릭 **시작**를 선택한 후 합니다 **데스크톱과 상호 작용 하도록 허용 서비스** 옵션입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [디버깅 팁](../atl/debugging-tips.md)
-

@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMemFile [MFC], Memcpy
 - CMemFile [MFC], Realloc
 ms.assetid: 20e86515-e465-4f73-b2ea-e49789d63165
-ms.openlocfilehash: a7bc54d30df80ec8d56b6a403582ebe4c48858f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a57f4e245ca1e93ec0edd454a7f407aeda5beca4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50634891"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304942"
 ---
 # <a name="cmemfile-class"></a>CMemFile 클래스
 
@@ -54,7 +54,7 @@ class CMemFile : public CFile
 |[CMemFile::Attach](#attach)|메모리 블록을 연결 `CMemFile`합니다.|
 |[CMemFile::Detach](#detach)|메모리 블록에 분리 `CMemFile` 분리 하는 메모리 블록에 대 한 포인터를 반환 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -82,7 +82,7 @@ class CMemFile : public CFile
 
 에 대 한 자세한 `CMemFile`, 문서를 참조 하세요 [MFC의 파일](../../mfc/files-in-mfc.md) 및 [메모리 관리 (MFC)](../../mfc/memory-management.md) 내용과 [파일 처리](../../c-runtime-library/file-handling.md) 에 *런타임 라이브러리 참조*합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -288,8 +288,7 @@ virtual BYTE* Realloc(
 
 사용자 지정 메모리 재할당을 구현 하려면이 함수를 재정의 합니다. 이 함수를 재정의 하는 경우에 재정의 하려는 아마도 [Alloc](#alloc) 하 고 [무료](#free) 도 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFile 클래스](../../mfc/reference/cfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

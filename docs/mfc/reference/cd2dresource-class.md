@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CD2DResource [MFC], m_bIsAutoDestroy
 - CD2DResource [MFC], m_pParentTarget
 ms.assetid: 34e3ee18-aab6-4c39-9294-de869e1f7820
-ms.openlocfilehash: a4846fb8ea34a3d6a83ae892eabee74f4a48cd6a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04d1fa57e34528f96f505fa20abb9b1131f80689
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586379"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284868"
 ---
 # <a name="cd2dresource-class"></a>CD2DResource 클래스
 
@@ -46,7 +46,7 @@ class CD2DResource : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CD2DResource::CD2DResource](#cd2dresource)|CD2DResource 개체를 생성합니다.|
-|[CD2DResource:: ~ CD2DResource](#cd2dresource__~cd2dresource)|소멸자입니다. D2D 리소스 개체를 소멸 될 때 호출 됩니다.|
+|[CD2DResource::~CD2DResource](#cd2dresource__~cd2dresource)|소멸자입니다. D2D 리소스 개체를 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -56,7 +56,7 @@ class CD2DResource : public CObject;
 |[CD2DResource::Destroy](#destroy)|CD2DResource 개체를 제거합니다.|
 |[CD2DResource::IsValid](#isvalid)|리소스 유효성 검사|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -70,7 +70,7 @@ class CD2DResource : public CObject;
 |[CD2DResource::m_bIsAutoDestroy](#m_bisautodestroy)|리소스 소유자 (CRenderTarget) 파괴 됩니다.|
 |[CD2DResource::m_pParentTarget](#m_pparenttarget)|CRenderTarget 부모에 대 한 포인터)|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -80,7 +80,7 @@ class CD2DResource : public CObject;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dresource"></a>  CD2DResource:: ~ CD2DResource
+##  <a name="_dtorcd2dresource"></a>  CD2DResource::~CD2DResource
 
 소멸자입니다. D2D 리소스 개체를 소멸 될 때 호출 됩니다.
 
@@ -188,6 +188,6 @@ virtual HRESULT ReCreate(CRenderTarget* pRenderTarget);
 
 메서드가 성공 하면 S_OK를 반환 합니다. 그렇지 않으면 HRESULT 오류 코드를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

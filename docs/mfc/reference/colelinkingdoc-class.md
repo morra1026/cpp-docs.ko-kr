@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleLinkingDoc [MFC], OnFindEmbeddedItem
 - COleLinkingDoc [MFC], OnGetLinkedItem
 ms.assetid: 9f547f35-2f95-427f-b9c0-85c31940198b
-ms.openlocfilehash: ed96d0a88755827bff27255326db8262698fcfb0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 275119b2343c4d13b6a32f939fc8c3b2b5d5890c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544315"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300411"
 ---
 # <a name="colelinkingdoc-class"></a>COleLinkingDoc 클래스
 
@@ -48,7 +48,7 @@ class COleLinkingDoc : public COleDocument
 |[COleLinkingDoc::Register](#register)|OLE 시스템 Dll 사용 하 여 문서를 등록합니다.|
 |[COleLinkingDoc::Revoke](#revoke)|문서의 등록을 취소합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -77,9 +77,9 @@ class COleLinkingDoc : public COleDocument
 
 샘플 `CWinApp`-파생 클래스 정의 및 `InitInstance` 함수 OCLIENT를 참조 하세요. H와 OCLIENT 합니다. MFC 샘플에서 CPP [OCLIENT](../../visual-cpp-samples.md)합니다.
 
-사용 하 여 대 한 자세한 내용은 `COleLinkingDoc`, 문서를 참조 하세요 [컨테이너: 컨테이너 구현](../../mfc/containers-implementing-a-container.md) 하 고 [컨테이너: 고급 기능](../../mfc/containers-advanced-features.md)합니다.
+사용 하 여 대 한 자세한 내용은 `COleLinkingDoc`, 문서를 참조 [컨테이너: 컨테이너를 구현](../../mfc/containers-implementing-a-container.md) 고 [컨테이너: 고급 기능](../../mfc/containers-advanced-features.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -191,7 +191,7 @@ OLE 시스템 Dll 사용 하 여 문서의 등록을 취소 하려면이 함수�
 
 명명된 된 파일을 닫을 때이 함수를 호출 해야 하지만 일반적으로 필요가 없습니다 직접 호출할 수 있습니다. `Revoke` 자동으로 호출 됩니다 `COleLinkingDoc`의 구현의 `OnCloseDocument`, `OnNewDocument`합니다 `OnOpenDocument`, 및 `OnSaveDocument`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleDocument 클래스](../../mfc/reference/coledocument-class.md)<br/>

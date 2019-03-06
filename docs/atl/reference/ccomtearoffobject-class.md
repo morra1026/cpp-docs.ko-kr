@@ -15,12 +15,12 @@ helpviewer_keywords:
 - tear-off interfaces
 - CComTearOffObject class
 ms.assetid: d974b598-c6b2-42b1-8360-9190d9d0fbf3
-ms.openlocfilehash: 78e9bda9c21ce53fa5b775b83be5c978c3fa1431
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fd35b1e9e69c97402dd1ec357fd25fa1dcd5dd49
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555261"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274611"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject 클래스
 
@@ -35,7 +35,7 @@ class CComTearOffObject : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 분리 막대가 클래스에서 파생 된 `CComTearOffObjectBase` 고 인터페이스를 지원 하기 위해 분리 개체입니다.
 
 ATL 두 단계로 분리 인터페이스를 구현-는 `CComTearOffObjectBase` 메서드는 참조 횟수를 처리 하 고 `QueryInterface`, 하는 동안 `CComTearOffObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown)합니다.
@@ -47,7 +47,7 @@ ATL 두 단계로 분리 인터페이스를 구현-는 `CComTearOffObjectBase` �
 |이름|설명|
 |----------|-----------------|
 |[CComTearOffObject::CComTearOffObject](#ccomtearoffobject)|생성자입니다.|
-|[CComTearOffObject:: ~ CComTearOffObject](#dtor)|소멸자입니다.|
+|[CComTearOffObject::~CComTearOffObject](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -81,7 +81,7 @@ ATL 두 단계로 분리 인터페이스를 구현-는 `CComTearOffObjectBase` �
 
 [!code-cpp[NVC_ATL_COM#43](../../atl/codesnippet/cpp/ccomtearoffobject-class_1.h)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Base`
 
@@ -120,7 +120,7 @@ CComTearOffObject(void* pv);
 
 소유자의 참조 개수를 1 씩 증가 시킵니다.
 
-##  <a name="dtor"></a>  CComTearOffObject:: ~ CComTearOffObject
+##  <a name="dtor"></a>  CComTearOffObject::~CComTearOffObject
 
 소멸자입니다.
 
@@ -197,7 +197,7 @@ STDMETHOD_ULONG Release();
 
 디버그가 아닌 빌드에서 항상 0을 반환합니다. 디버그 빌드에서 진단에 유용 하거나 테스트 수 있는 값을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComCachedTearOffObject 클래스](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -90,12 +90,12 @@ f1_keywords:
 - amp_math/Concurrency::precise_math::trunc
 - amp_math/Concurrency::precise_math::truncf
 ms.assetid: fae53ab4-d1c5-45bb-a6a0-a74258e9aea3
-ms.openlocfilehash: ccbb9bdda3132626a6bf76161104c9716a9b5c89
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7690c0629e7035d0130f0a7dbdcabf3e959ae7b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469357"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297348"
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>Concurrency:: precise_math 네임 스페이스 함수
 
@@ -641,7 +641,7 @@ Pi의 코사인 값을 반환 합니다. \* _X
 
 ##  <a name="erf"></a>  erf
 
-_X의 오류 함수 계산
+_X의 오류 함수를 계산합니다.
 
 ```
 inline float erf(float _X) restrict(amp);
@@ -696,7 +696,7 @@ _X의 상보 오류 함수를 반환합니다.
 
 ##  <a name="erfcinv"></a>  erfcinv
 
-_X의 역 상보 오류 함수 계산
+_X의 역 상보 오류 함수를 계산합니다.
 
 ```
 inline float erfcinv(float _X) restrict(amp);
@@ -715,7 +715,7 @@ _X의 역 상보 오류 함수를 반환합니다.
 
 ##  <a name="erfcinvf"></a>  erfcinvf
 
-_X의 역 상보 오류 함수 계산
+_X의 역 상보 오류 함수를 계산합니다.
 
 ```
 inline float erfcinvf(float _X) restrict(amp);
@@ -732,7 +732,7 @@ _X의 역 상보 오류 함수를 반환합니다.
 
 ##  <a name="erff"></a>  erff
 
-_X의 오류 함수 계산
+_X의 오류 함수를 계산합니다.
 
 ```
 inline float erff(float _X) restrict(amp);
@@ -749,7 +749,7 @@ _X의 오류 함수를 반환합니다.
 
 ##  <a name="erfinv"></a>  erfinv
 
-_X의 역 오류 함수 계산
+_X의 역 오류 함수를 계산합니다.
 
 ```
 inline float erfinv(float _X) restrict(amp);
@@ -768,7 +768,7 @@ _X의 역 오류 함수를 반환합니다.
 
 ##  <a name="erfinvf"></a>  erfinvf
 
-_X의 역 오류 함수 계산
+_X의 역 오류 함수를 계산합니다.
 
 ```
 inline float erfinvf(float _X) restrict(amp);
@@ -831,7 +831,7 @@ inline double expm1(double exponent) restrict(amp);
 
 ### <a name="parameters"></a>매개 변수
 
-*지 수*<br/>
+*exponent*<br/>
 지 수 항 *n* 수학 식의 `e` <sup>n</sup>여기서 `e` 는 자연 로그의 밑수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -848,7 +848,7 @@ inline float expm1f(float exponent) restrict(amp);
 
 ### <a name="parameters"></a>매개 변수
 
-*지 수*<br/>
+*exponent*<br/>
 지 수 항 *n* 수학 식의 `e` <sup>n</sup>여기서 `e` 는 자연 로그의 밑수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1279,7 +1279,7 @@ inline double frexp(
 *_X*<br/>
 부동 소수점 값
 
-*2^_exp*<br/>
+*_Exp*<br/>
 부동 소수점 값의 _X의 정수 지수를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1301,7 +1301,7 @@ inline float frexpf(
 *_X*<br/>
 부동 소수점 값
 
-*2^_exp*<br/>
+*_Exp*<br/>
 부동 소수점 값의 _X의 정수 지수를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1487,12 +1487,12 @@ inline double ldexp(
 *_X*<br/>
 부동 소수점 값가 수
 
-*2^_exp*<br/>
+*_Exp*<br/>
 정수 값, 지 수
 
 ### <a name="return-value"></a>반환 값
 
-_X를 반환 합니다 \* 2 ^ 2^_exp
+Returns _X \* 2^_Exp
 
 ##  <a name="ldexpf"></a>  ldexpf
 
@@ -1509,12 +1509,12 @@ inline float ldexpf(
 *_X*<br/>
 부동 소수점 값가 수
 
-*2^_exp*<br/>
+*_Exp*<br/>
 정수 값, 지 수
 
 ### <a name="return-value"></a>반환 값
 
-_X를 반환 합니다 \* 2 ^ 2^_exp
+Returns _X \* 2^_Exp
 
 ##  <a name="lgamma"></a>  lgamma
 
@@ -1535,7 +1535,7 @@ inline double lgamma(
 *_X*<br/>
 부동 소수점 값
 
-*(_S)*<br/>
+*_Sign*<br/>
 부호를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1557,7 +1557,7 @@ inline float lgammaf(
 *_X*<br/>
 부동 소수점 값
 
-*(_S)*<br/>
+*_Sign*<br/>
 부호를 반환합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2064,7 +2064,7 @@ inline float rcbrtf(float _X) restrict(amp);
 
 ##  <a name="remainder"></a>  remainder
 
-나머지 계산: _X REM _Y
+나머지 _X REM _Y를 계산합니다.
 
 ```
 inline float remainder(
@@ -2090,7 +2090,7 @@ _X REM _Y를 반환합니다.
 
 ##  <a name="remainderf"></a>  remainderf
 
-나머지 계산: _X REM _Y
+나머지 _X REM _Y를 계산합니다.
 
 ```
 inline float remainderf(
@@ -2134,7 +2134,7 @@ inline double remquo(
 *_Y*<br/>
 두 번째 부동 소수점 인수입니다.
 
-*대*<br/>
+*_Quo*<br/>
 [out] 소수 비트의 지 수를 반환 하는 데 사용 되는 정수의 주소 `_X` 의 소수 비트로 나눈 `_Y`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2160,7 +2160,7 @@ inline float remquof(
 *_Y*<br/>
 두 번째 부동 소수점 인수입니다.
 
-*대*<br/>
+*_Quo*<br/>
 [out] 소수 비트의 지 수를 반환 하는 데 사용 되는 정수의 주소 `_X` 의 소수 비트로 나눈 `_Y`합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -2744,6 +2744,6 @@ inline float truncf(float _X) restrict(amp);
 
 인수의 정수 구성 요소를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::precise_math 네임스페이스](concurrency-precise-math-namespace.md)

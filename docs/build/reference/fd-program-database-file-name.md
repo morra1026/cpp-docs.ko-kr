@@ -14,12 +14,12 @@ helpviewer_keywords:
 - .pdb files, creating
 - FD compiler option [C++]
 ms.assetid: 3977a9ed-f0ac-45df-bf06-01cedd2ba85a
-ms.openlocfilehash: 449b0a2be44f438c35feeb446df6d7c47f270c35
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2c64a4ec0d7799d7bad698808e959d11e87cdc85
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494319"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422444"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd(프로그램 데이터베이스 파일 이름)
 
@@ -63,7 +63,7 @@ ms.locfileid: "50494319"
 CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

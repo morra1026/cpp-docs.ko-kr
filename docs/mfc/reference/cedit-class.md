@@ -94,12 +94,12 @@ helpviewer_keywords:
 - CEdit [MFC], ShowBalloonTip
 - CEdit [MFC], Undo
 ms.assetid: b1533c30-7f10-4663-88d3-8b7f2c9f7024
-ms.openlocfilehash: f18866dca3610db275c629bbb2ac885c21cbdcb8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6af054ea27233de2cc3b551bbec69c0ab3b4be9e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455811"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289964"
 ---
 # <a name="cedit-class"></a>CEdit Class
 
@@ -181,13 +181,13 @@ class CEdit : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-  **ON_**_NOTIFICATION_**(** _id_**하십시오** _memberFxn_ **)**
+  **ON_**_NOTIFICATION_**(** _id_**,** _memberFxn_ **)**
 
 여기서 `id` 알림을 전송 하는 편집 컨트롤의 자식 창 ID를 지정 하 고 `memberFxn` 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
 부모의 함수 프로토타입에 다음과 같습니다.
 
-**afx_msg** void memberFxn **();**
+**afx_msg** void memberFxn **( );**
 
 다음은 잠재적인 메시지 맵 항목 및 부모로 전송 되는 있는 경우에 대 한 설명을의 목록.
 
@@ -277,7 +277,7 @@ int CharFromPos(CPoint pt) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 이 클라이언트 영역에 있는 지점의 좌표 `CEdit` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -800,7 +800,7 @@ void LimitText(int nChars = 0);
 ### <a name="parameters"></a>매개 변수
 
 *nChars*<br/>
-사용자가 입력할 수 있는 텍스트의 길이 바이트 단위로 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 UINT_MAX 바이트로 설정 됩니다. 이것은 기본적인 동작입니다.
+사용자가 입력할 수 있는 텍스트의 길이 바이트 단위로 지정 합니다. 이 매개 변수가 0 이면 텍스트 길이가 UINT_MAX 바이트로 설정 됩니다. 이는 기본 동작입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -854,7 +854,7 @@ int LineIndex(int nLine = -1) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n 줄*<br/>
+*nLine*<br/>
 편집 컨트롤의 텍스트에서 원하는 줄의 인덱스 값을 포함 하거나-1을 포함 합니다. 하는 경우 *n 줄* 은-1, 캐럿을 포함 하는 줄, 현재 줄을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -883,7 +883,7 @@ int LineLength(int nLine = -1) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*n 줄*<br/>
+*nLine*<br/>
 줄 길이 검색할 문자의 0부터 시작 하는 인덱스입니다. 기본값은 -1입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -966,7 +966,7 @@ CPoint PosFromChar(UINT nChar) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 지정 된 문자의 0부터 시작 하는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1117,7 +1117,7 @@ void SetLimitText(UINT nMax);
 
 ### <a name="parameters"></a>매개 변수
 
-*최대*<br/>
+*nMax*<br/>
 새 텍스트 제한, 문자입니다.
 
 ### <a name="remarks"></a>설명
@@ -1447,7 +1447,7 @@ BOOL Undo();
 
 [!code-cpp[NVC_MFC_CEdit#25](../../mfc/reference/codesnippet/cpp/cedit-class_27.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CALCDRIV MFC 샘플](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>

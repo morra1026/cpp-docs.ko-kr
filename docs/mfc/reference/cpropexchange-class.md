@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CPropExchange [MFC], IsAsynchronous
 - CPropExchange [MFC], IsLoading
 ms.assetid: ed872180-e770-4942-892a-92139d501fab
-ms.openlocfilehash: 772388d069bdec274bd396b776d404711b694771
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4210399e32c2bb39008afa75b787c19e3338a7d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560375"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276354"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange 클래스
 
@@ -68,9 +68,9 @@ class AFX_NOVTABLE CPropExchange
 
 `CPropExchange` 컨트롤의 속성을 serialize 하거나 부하 또는 컨트롤 생성 시 컨트롤의 속성을 초기화 데 사용할 수 있습니다. 합니다 `ExchangeProp` 하 고 `ExchangeFontProp` 의 멤버 함수 `CPropExchange` 속성을 저장 하 고 다양 한 미디어에서 로드 합니다.
 
-사용 하 여 대 한 자세한 내용은 `CPropExchange`, 문서를 참조 하세요 [MFC ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
+사용 하 여 대 한 자세한 내용은 `CPropExchange`, 문서를 참고 [MFC ActiveX 컨트롤: 속성 페이지](../../mfc/mfc-activex-controls-property-pages.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CPropExchange`
 
@@ -127,7 +127,7 @@ virtual BOOL ExchangeFontProp(
 *pszPropName*<br/>
 교환 되는 속성의 이름입니다.
 
-*글꼴*<br/>
+*font*<br/>
 에 대 한 참조를 [CFontHolder](../../mfc/reference/cfontholder-class.md) 글꼴 속성을 포함 하는 개체입니다.
 
 *pFontDesc*<br/>
@@ -290,8 +290,7 @@ BOOL IsLoading();
 
 속성; 로드 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleControl::DoPropExchange](../../mfc/reference/colecontrol-class.md#dopropexchange)
-

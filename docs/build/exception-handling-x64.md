@@ -5,12 +5,12 @@ helpviewer_keywords:
 - C++ exception handling, x64
 - exception handling, x64
 ms.assetid: 41fecd2d-3717-4643-b21c-65dcd2f18c93
-ms.openlocfilehash: 33206dfb885239839c3a64436b6b540fc7d4e6e5
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 7dab7f3b6593bf4eaed1b8c804deb915677ccf5b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53627542"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422977"
 ---
 # <a name="x64-exception-handling"></a>x64 예외 처리
 
@@ -182,21 +182,21 @@ Opcode에 대 한 `UWOP_SAVE_XMM128` 고 `UWOP_SAVE_XMM128_FAR`, 오프셋 항�
 
   |||
   |-|-|
-  |RSP + 32|SS|
-  |RSP + 24|이전 RSP|
-  |RSP + 16|EFLAGS|
-  |RSP + 8|CS|
+  |RSP+32|SS|
+  |RSP+24|이전 RSP|
+  |RSP+16|EFLAGS|
+  |RSP+8|CS|
   |RSP|RIP|
 
   작업 정보가 1 인 경우 다음 이러한 프레임 중 푸시 되었습니다.
 
   |||
   |-|-|
-  |RSP + 40|SS|
-  |RSP + 32|이전 RSP|
-  |RSP + 24|EFLAGS|
-  |RSP + 16|CS|
-  |RSP + 8|RIP|
+  |RSP+40|SS|
+  |RSP+32|이전 RSP|
+  |RSP+24|EFLAGS|
+  |RSP+16|CS|
+  |RSP+8|RIP|
   |RSP|오류 코드|
 
   이 해제 코드는 다르지만 대신는 인터럽트 루틴의 실제 진입점 보다 먼저 나타납니다 및 컴퓨터 프레임의 푸시 시뮬레이션 하는 위치를 제공 하기 위해서만 존재 더미 프롤로그에 항상 표시 됩니다. `UWOP_PUSH_MACHFRAME` 컴퓨터에이 작업을 수행할 개념적으로 나타내는 해당 시뮬레이션을 기록 합니다.
@@ -331,10 +331,10 @@ typedef struct _DISPATCHER_CONTEXT {
 |-|-|
 |PROC 프레임 \[:*ehandler*]|함수를 생성 하는 MASM 원인.pdata에 항목을 테이블 및 함수의 구조적에 대 한.xdata에서 정보를 해제 예외 처리 동작을 해제 합니다.  하는 경우 *ehandler* 가 있는 경우이 프로시저는.xdata 언어별 처리기로 입력 합니다.<br /><br /> 프레임 특성을 사용 하는 경우 그 뒤에 야를 합니다. 프롤로그 끝 지시문입니다.  함수는 리프 함수 이면 (에 정의 된 대로 [함수 형식을](../build/stack-usage.md#function-types)) 프레임 특성으로 이러한 의사 (pseudo)이 작업의 나머지 부분에는 필요 하지 않습니다.|
 |. PUSHREG *등록*|현재 프롤로그의 오프셋을 사용 하 여 지정 된 레지스터 번호가 UWOP_PUSH_NONVOL 해제 코드 항목을 생성 합니다.<br /><br /> 이 정수 비휘발성 레지스터를 사용 하 여 사용 해야 합니다.  휘발성 레지스터의 푸시를 사용 하 여를 합니다. ALLOCSTACK 8 대신|
-|. SETFRAME *등록할*, *오프셋*|지정 된 등록 및 오프셋을 사용 하 여 해제 정보에서 필드 및 오프셋을 등록 하는 프레임을 채웁니다. 오프셋은 16의 배수 여야 합니다. 240 보다 작거나 같음. 또한이 지시문은 현재 프롤로그 오프셋을 사용 하 여 지정된 된 레지스터의 uwop_set_fpreg 해제 코드를 생성 합니다.|
+|.SETFRAME *register*, *offset*|지정 된 등록 및 오프셋을 사용 하 여 해제 정보에서 필드 및 오프셋을 등록 하는 프레임을 채웁니다. 오프셋은 16의 배수 여야 합니다. 240 보다 작거나 같음. 또한이 지시문은 현재 프롤로그 오프셋을 사용 하 여 지정된 된 레지스터의 uwop_set_fpreg 해제 코드를 생성 합니다.|
 |. ALLOCSTACK *크기*|프롤로그에는 UWOP_ALLOC_SMALL 또는 현재 오프셋에 대 한 지정된 된 크기를 사용 하 여 UWOP_ALLOC_LARGE를 생성합니다.<br /><br /> 합니다 *크기* 피연산자를 8의 배수 여야 합니다.|
-|. SAVEREG *등록할*, *오프셋*|UWOP_SAVE_NONVOL 또는 지정 된 등록 및 현재 프롤로그 오프셋을 사용 하 여 오프셋 UWOP_SAVE_NONVOL_FAR 해제 코드 항목을 생성 합니다. MASM 가장 효율적인 인코딩 선택합니다.<br /><br /> *오프셋* 양수와 8의 배수 여야 합니다. *오프셋* 하단에 일반적으로 RSP 프로시저의 프레임을 기준으로 또는 소수 자릿수가 없는 프레임 포인터 프레임 포인터를 사용 하는 경우.|
-|. SAVEXMM128 *등록할*, *오프셋*|UWOP_SAVE_XMM128 또는 지정 된 XMM 레지스터 및 현재 프롤로그 오프셋을 사용 하 여 오프셋 UWOP_SAVE_XMM128_FAR 해제 코드 항목을 생성 합니다. MASM 가장 효율적인 인코딩 선택합니다.<br /><br /> *오프셋* 양수와 16의 배수 여야 합니다.  *오프셋* 하단에 일반적으로 RSP 프로시저의 프레임을 기준으로 또는 소수 자릿수가 없는 프레임 포인터 프레임 포인터를 사용 하는 경우.|
+|.SAVEREG *register*, *offset*|UWOP_SAVE_NONVOL 또는 지정 된 등록 및 현재 프롤로그 오프셋을 사용 하 여 오프셋 UWOP_SAVE_NONVOL_FAR 해제 코드 항목을 생성 합니다. MASM 가장 효율적인 인코딩 선택합니다.<br /><br /> *오프셋* 양수와 8의 배수 여야 합니다. *오프셋* 하단에 일반적으로 RSP 프로시저의 프레임을 기준으로 또는 소수 자릿수가 없는 프레임 포인터 프레임 포인터를 사용 하는 경우.|
+|.SAVEXMM128 *register*, *offset*|UWOP_SAVE_XMM128 또는 지정 된 XMM 레지스터 및 현재 프롤로그 오프셋을 사용 하 여 오프셋 UWOP_SAVE_XMM128_FAR 해제 코드 항목을 생성 합니다. MASM 가장 효율적인 인코딩 선택합니다.<br /><br /> *오프셋* 양수와 16의 배수 여야 합니다.  *오프셋* 하단에 일반적으로 RSP 프로시저의 프레임을 기준으로 또는 소수 자릿수가 없는 프레임 포인터 프레임 포인터를 사용 하는 경우.|
 |. PUSHFRAME \[ *코드*]|UWOP_PUSH_MACHFRAME 해제 코드 항목을 생성합니다. 경우 선택적 *코드* 지정 된 경우 해제 코드 항목 1의 한정자를 지정 합니다. 그렇지 않은 경우 한정자는 0입니다.|
 |.ENDPROLOG|프롤로그 선언의 끝 신호를 보냅니다.  함수의 첫 번째 255 바이트에서 수행 되어야 합니다.|
 
@@ -398,7 +398,7 @@ sample ENDP
 |push_reg *reg*|비휘발성 레지스터를 푸시 *reg* 스택에 내보내고 적절 한 정보를 해제 합니다. 생성 합니다.|
 |rex_push_reg *reg*|2 바이트 푸시를 사용 하 여 스택에 비휘발성 레지스터를 저장 하 고 내보내는 적절 한 해제 정보 생성 합니다. 푸시는 함수에서 첫 번째 명령을 핫 패치 가능한 함수 인지 확인 하는 경우 사용 해야 합니다.|
 |save_xmm128 *reg*, *loc*|비휘발성 XMM 레지스터를 저장 *reg* RSP 스택에 오프셋 *loc*를 내보내고 적절 한 정보 (. savexmm128 reg, loc) 해제|
-|set_frame *reg*, *오프셋*|프레임 등록 설정 *reg* 는 RSP 되도록 + *오프셋* (사용 하 여를 `mov`, 또는 `lea`)를 내보내고 적절 한 정보 (.set_frame reg, 오프셋)를 해제|
+|set_frame *reg*, *offset*|프레임 등록 설정 *reg* 는 RSP 되도록 + *오프셋* (사용 하 여를 `mov`, 또는 `lea`)를 내보내고 적절 한 정보 (.set_frame reg, 오프셋)를 해제|
 |push_eflags|사용 하 여 eflags 푸시를 `pushfq` 명령 내보내고 적절 한 해제 정보 (.alloc_stack 8)|
 
 적절 한 매크로 사용 하 여 샘플 함수 프롤로그는 다음과 같습니다.
@@ -502,6 +502,6 @@ typedef struct _RUNTIME_FUNCTION {
     ((PVOID)((PULONG)GetLanguageSpecificData(info) + 1)
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [x64 소프트웨어 규칙](../build/x64-software-conventions.md)

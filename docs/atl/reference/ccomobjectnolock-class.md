@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComObjectNoLock class
 ms.assetid: 288c6506-7da8-4127-8d58-7f4bd779539a
-ms.openlocfilehash: 85a5a71e330b8171a8e0e239d9afab43a6df1512
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50dc4505c1da8df9efc0c9d0028461ef49c0840e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467367"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301963"
 ---
 # <a name="ccomobjectnolock-class"></a>CComObjectNoLock 클래스
 
@@ -31,7 +31,7 @@ class CComObjectNoLock : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 모든 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -57,7 +57,7 @@ class CComObjectNoLock : public Base
 
 ATL 사용 `CComObjectNoLock` 클래스 팩터리를 내부적으로 합니다. 일반적으로이 클래스를 직접 넣지 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Base`
 
@@ -136,6 +136,6 @@ STDMETHOD_(ULONG, Release)();
 
 디버그 빌드에서 `Release` 진단용 유용 하거나 테스트 수 있는 값을 반환 합니다. 디버그가 아닌 빌드에서 `Release` 항상 0을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

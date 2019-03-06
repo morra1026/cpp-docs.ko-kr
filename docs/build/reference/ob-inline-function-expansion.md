@@ -24,12 +24,12 @@ helpviewer_keywords:
 - Ob0 compiler option [C++]
 - inline expansion, compiler option
 ms.assetid: f134e6df-e939-4980-a01d-47425dbc562a
-ms.openlocfilehash: a53069c44e72d0d873ccb0b600c48480527d111f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6406b604ab74d29d8bc6c9bc0920fd0cf0bd055b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582666"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426149"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob(인라인 함수 확장)
 
@@ -37,7 +37,7 @@ ms.locfileid: "50582666"
 
 ## <a name="syntax"></a>구문
 
-> /Ob {0 | 1 | 2}
+> /Ob{0|1|2}
 
 ## <a name="arguments"></a>인수
 
@@ -48,7 +48,8 @@ ms.locfileid: "50582666"
 표시 된 확장 [인라인](../../cpp/inline-functions-cpp.md)를 `__inline`, 또는 `__forceinline`, 또는 클래스 선언에 정의 된 c + + 멤버 함수입니다.
 
 **2**<br/>
-기본값입니다. `inline`, `__inline` 또는 `__forceinline`으로 표시된 함수와 컴파일러에서 선택한 기타 함수를 확장합니다.
+기본값입니다. 
+  `inline`, `__inline` 또는 `__forceinline`으로 표시된 함수와 컴파일러에서 선택한 기타 함수를 확장합니다.
 
 **/ Ob2** 때 적용 됩니다 [/o1, / o2 (크기 최소화, 속도 최대화)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) 하거나 [/Ox (사용 가장 속도 최적화)](../../build/reference/ox-full-optimization.md) 사용 됩니다.
 
@@ -75,7 +76,7 @@ ms.locfileid: "50582666"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.InlineFunctionExpansion%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

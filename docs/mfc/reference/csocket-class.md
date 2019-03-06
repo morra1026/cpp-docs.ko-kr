@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CSocket [MFC], IsBlocking
 - CSocket [MFC], OnMessagePending
 ms.assetid: 7f23c081-d24d-42e3-b511-8053ca53d729
-ms.openlocfilehash: 3c5340a8c65f804747fd8d3c8bd31fb20f80c6ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a861e557b7368d13d615aaf796faded93c72b040
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487295"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266564"
 ---
 # <a name="csocket-class"></a>CSocket 클래스
 
@@ -49,13 +49,13 @@ class CSocket : public CAsyncSocket
 
 |이름|설명|
 |----------|-----------------|
-|[Csocket:: Attach](#attach)|연결에 대 한 소켓 핸들을 `CSocket` 개체입니다.|
+|[CSocket::Attach](#attach)|연결에 대 한 소켓 핸들을 `CSocket` 개체입니다.|
 |[CSocket::CancelBlockingCall](#cancelblockingcall)|현재 진행 중인 차단 호출을 취소 합니다.|
 |[CSocket::Create](#create)|소켓을 만듭니다.|
 |[CSocket::FromHandle](#fromhandle)|에 대 한 포인터를 반환 합니다.는 `CSocket` 소켓 핸들을 지정 된 개체입니다.|
 |[CSocket::IsBlocking](#isblocking)|차단 호출 진행에서 중인지 여부를 결정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -67,7 +67,7 @@ class CSocket : public CAsyncSocket
 
 A `CSocket` 개체가 제공 차단의 동기 작업 하는 데 필수적인 `CArchive`합니다. 와 같은 함수를 차단 `Receive`, `Send`, `ReceiveFrom`, `SendTo`, 및 `Accept` (에서 상속 되는 모든 `CAsyncSocket`)를 반환 하지는 `WSAEWOULDBLOCK` 에 오류가 있습니다. `CSocket`. 대신 이러한 함수는 작업이 완료 될 때까지 기다립니다. 경우 원래 호출은 WSAEINTR 오류로 종료 됩니다는 또한 `CancelBlockingCall` 이러한 함수 중 하나를 차단 하는 동안 호출 됩니다.
 
-사용 하는 `CSocket` 개체를 생성자 호출 호출 `Create` (형식 소켓)의 기본 소켓 핸들을 만드는 합니다. 기본 매개 변수 `Create` 스트림 소켓, 만들기와 소켓을 사용 하지 않는 경우에 `CArchive` 개체 대신 데이터 그램 소켓 만들거나 서버 소켓 만들기에 특정 포트에 바인딩 매개 변수를 지정할 수 있습니다. 사용 하 여 클라이언트 소켓을 연결할 `Connect` 클라이언트 쪽 및 `Accept` 서버 쪽에서 합니다. 만든를 `CSocketFile` 개체와 연결 합니다 `CSocket` 개체는 `CSocketFile` 생성자입니다. 다음으로 만듭니다는 `CArchive` 필요에 따라 데이터를 수신 하는 것에 대 한 전송에 대 한 개체와 연결 하 여 사용 하 여 합니다 `CSocketFile` 개체는 `CArchive` 생성자입니다. 통신 완료 되 면 제거 합니다 `CArchive`, `CSocketFile`, 및 `CSocket` 개체입니다. 문서에 설명 되어 소켓 데이터 형식을 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md)합니다.
+사용 하는 `CSocket` 개체를 생성자 호출 호출 `Create` (형식 소켓)의 기본 소켓 핸들을 만드는 합니다. 기본 매개 변수 `Create` 스트림 소켓, 만들기와 소켓을 사용 하지 않는 경우에 `CArchive` 개체 대신 데이터 그램 소켓 만들거나 서버 소켓 만들기에 특정 포트에 바인딩 매개 변수를 지정할 수 있습니다. 사용 하 여 클라이언트 소켓을 연결할 `Connect` 클라이언트 쪽 및 `Accept` 서버 쪽에서 합니다. 만든를 `CSocketFile` 개체와 연결 합니다 `CSocket` 개체는 `CSocketFile` 생성자입니다. 다음으로 만듭니다는 `CArchive` 필요에 따라 데이터를 수신 하는 것에 대 한 전송에 대 한 개체와 연결 하 여 사용 하 여 합니다 `CSocketFile` 개체는 `CArchive` 생성자입니다. 통신 완료 되 면 제거 합니다 `CArchive`, `CSocketFile`, 및 `CSocket` 개체입니다. 소켓 데이터 형식은 문서에 설명 되어 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md)합니다.
 
 사용 하는 경우 `CArchive` 사용 하 여 `CSocketFile` 및 `CSocket`, 상황이 발생할 수 있는 `CSocket::Receive` 루프로 실행 (여 `PumpMessages(FD_READ)`) 바이트 요청한 금액에 대 한 대기 합니다. 이 작업할 알림 당 하나만 recv 호출을 허용 하는 Windows 소켓 않으므로 하지만 `CSocketFile` 및 `CSocket` 작업할 당 여러 recv 호출을 허용 합니다. 읽을 데이터가 없는 경우에 작업할을 받게 되 면 응용 프로그램이 중단 됩니다. 얻지 다른 작업할 경우 응용 프로그램이 소켓을 통해 통신을 중지 합니다.
 
@@ -80,9 +80,9 @@ A `CSocket` 개체가 제공 차단의 동기 작업 하는 데 필수적인 `CA
 > [!NOTE]
 >  정적으로 연결 된 MFC 응용 프로그램에서 보조 스레드에서 MFC 소켓을 사용 하는 경우 호출 해야 `AfxSocketInit` 소켓을 사용 하 여 소켓 라이브러리를 초기화 하는 각 스레드에서 합니다. 기본적으로 `AfxSocketInit` 기본 스레드에서만에서 호출 됩니다.
 
-자세한 내용은 [MFC의 Windows 소켓](../../mfc/windows-sockets-in-mfc.md), [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)를 [Windows 소켓: 보관 작업을 사용 하 여 소켓 어떻게](../../mfc/windows-sockets-how-sockets-with-archives-work.md), [Windows 소켓: 작업 순서](../../mfc/windows-sockets-sequence-of-operations.md), [Windows 소켓: 아카이브를 사용 하는 소켓의 예](../../mfc/windows-sockets-example-of-sockets-using-archives.md)합니다.
+자세한 내용은 [MFC의 Windows 소켓](../../mfc/windows-sockets-in-mfc.md), [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md), [Windows 소켓: 보관이 포함 된 소켓의 작동 방식을](../../mfc/windows-sockets-how-sockets-with-archives-work.md), [Windows 소켓: 작업 시퀀스](../../mfc/windows-sockets-sequence-of-operations.md), [Windows 소켓: 아카이브를 사용 하는 소켓의 예](../../mfc/windows-sockets-example-of-sockets-using-archives.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -94,7 +94,7 @@ A `CSocket` 개체가 제공 차단의 동기 작업 하는 데 필수적인 `CA
 
 **헤더:** afxsock.h
 
-##  <a name="attach"></a>  Csocket:: Attach
+##  <a name="attach"></a>  CSocket::Attach
 
 연결 하려면이 멤버 함수를 호출 합니다 `hSocket` 에 대 한 핸들을 `CSocket` 개체입니다.
 
@@ -115,7 +115,7 @@ BOOL Attach(SOCKET hSocket);
 
 SOCKET 핸들 개체에 저장 됩니다 [m_hSocket](../../mfc/reference/casyncsocket-class.md#m_hsocket) 데이터 멤버입니다.
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ### <a name="example"></a>예제
 
@@ -141,7 +141,7 @@ void CancelBlockingCall();
 
 이외의 다른 모든 작업을 취소 `Accept` 확정 되지 않은 상태에서 소켓을 그대로 둘 수 있습니다. 소켓에서 차단 작업을 취소 하는 응용 프로그램, 응용 프로그램 소켓에서 수행할 수 있으므로 신뢰할 수 있는 유일한 작업 인지에 대 한 호출 `Close`이지만 다른 작업은 일부 Windows 소켓 구현에서 작동 될 수 있습니다. 응용 프로그램에 대 한 최대 이식성을 원하는 경우에 작업을 취소 한 후 종속 하지 않도록 주의 해야 합니다.
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ##  <a name="create"></a>  CSocket::Create
 
@@ -180,7 +180,7 @@ SOCK_STREAM 또는 SOCK_DGRAM 합니다.
     > [!NOTE]
     >  합니다 `Accept` 멤버 함수는 비어 있는 새에 대 한 참조 `CSocket` 매개 변수로 개체입니다. 호출 하기 전에이 개체를 생성 해야 `Accept`합니다. 염두에이 소켓 개체가 범위를 연결 닫기 이동 하는 경우. 호출 하지 마십시오 `Create` 이 새 소켓 개체에 대 한 합니다.
 
-스트림 및 데이터 그램 소켓에 대 한 자세한 내용은 문서를 참조 하세요 [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md)를 [Windows 소켓: 포트 및 소켓 주소](../../mfc/windows-sockets-ports-and-socket-addresses.md), 및 [Windows 소켓:를 사용 하 여 아카이브가 포함 된 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+스트림 및 데이터 그램 소켓에 대 한 자세한 내용은 문서를 참조 하세요. [Windows 소켓: 백그라운드](../../mfc/windows-sockets-background.md), [Windows 소켓: 포트 및 소켓 주소](../../mfc/windows-sockets-ports-and-socket-addresses.md), 및 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ##  <a name="csocket"></a>  CSocket::CSocket
 
@@ -194,7 +194,7 @@ CSocket();
 
 생성 후에 호출 해야 합니다는 `Create` 멤버 함수입니다.
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ##  <a name="fromhandle"></a>  CSocket::FromHandle
 
@@ -217,7 +217,7 @@ static CSocket* PASCAL FromHandle(SOCKET hSocket);
 
 경우 소켓 핸들을 지정 하는 경우는 `CSocket` 개체가 핸들에 연결 되지 않은, 멤버 함수는 NULL을 반환 하 고 임시 개체를 만들지 않습니다.
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ##  <a name="isblocking"></a>  CSocket::IsBlocking
 
@@ -233,7 +233,7 @@ BOOL IsBlocking();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ##  <a name="onmessagepending"></a>  CSocket::OnMessagePending
 
@@ -251,11 +251,11 @@ virtual BOOL OnMessagePending();
 
 이 고급 재정의할 수 있습니다.
 
-프레임 워크 호출 `OnMessagePending` 소켓은 응용 프로그램에 관심 있는 메시지를 처리 하는 기회를 제공 하려면 Windows 메시지를 펌프 하는 동안. 사용 하는 방법의 예제를 보려면 `OnMessagePending`, 문서를 참조 하세요 [Windows 소켓: 소켓 클래스에서 파생](../../mfc/windows-sockets-deriving-from-socket-classes.md)합니다.
+프레임 워크 호출 `OnMessagePending` 소켓은 응용 프로그램에 관심 있는 메시지를 처리 하는 기회를 제공 하려면 Windows 메시지를 펌프 하는 동안. 사용 하는 방법의 예제를 보려면 `OnMessagePending`, 문서를 참고 [Windows 소켓: 소켓 클래스에서 파생](../../mfc/windows-sockets-deriving-from-socket-classes.md)합니다.
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAsyncSocket 클래스](../../mfc/reference/casyncsocket-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

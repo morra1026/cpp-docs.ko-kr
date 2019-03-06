@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MCN_GETDAYSTATE notification [MFC]
 - month calendar controls [MFC], day state info
 ms.assetid: 435d1b11-ec0e-4121-9e25-aaa6af812a3c
-ms.openlocfilehash: a07808819e1cb049de7438c9e7964436e8c83802
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c75b560509738e071accdc3dba31dfdea35a14aa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464768"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262367"
 ---
 # <a name="setting-the-day-state-of-a-month-calendar-control"></a>MonthCalendar 컨트롤의 일 상태 설정
 
@@ -45,8 +45,7 @@ MCN_GETDAYSTATE 메시지 표시 개월 내 날짜를 표시 하는 방법을 �
 
    로 변환 합니다 *pNMHDR* 적절 한 형식에 대 한 포인터는 다음 몇 달의 정보를 요청 하는 결정 (`pDayState->cDayState`). 매월 현재 비트 필드 (`pDayState->prgDayState[i]`) 0과 다음 필요한 인스턴스화될 날짜 (이 예제의 경우 각 월의 15 일)에 설정 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CMonthCalCtrl 사용](../mfc/using-cmonthcalctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

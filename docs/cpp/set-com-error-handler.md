@@ -31,7 +31,7 @@ void __stdcall _set_com_error_handler(
 #### <a name="parameters"></a>매개 변수
 
 *pHandler*<br/>
-대체 함수에 대한 포인터입니다.
+대체 함수의 함수 포인터입니다.
 
 *hr*<br/>
 HRESULT 정보입니다.
@@ -41,9 +41,9 @@ HRESULT 정보입니다.
 
 ## <a name="remarks"></a>설명
 
-기본적으로 [_com_raise_error](../cpp/com-raise-error.md) 모든 COM 오류를 처리 합니다. 사용 하 여이 동작을 변경할 수 있습니다 **_set_com_error_handler** 사용자 고유의 오류 처리 함수를 호출 합니다.
+기본적으로 [_com_raise_error](../cpp/com-raise-error.md)는 모든 COM 오류를 처리합니다. **_set_com_error_handler**를 사용하여 사용자 고유의 오류 처리 함수를 호출하도록 변경할 수 있습니다.
 
-대체 함수에는 `_com_raise_error`의 시그니처에 해당하는 시그니처가 있어야 합니다.
+대체 함수에는 `_com_raise_error`와 동일한 시그니처가 있어야 합니다.
 
 ## <a name="example"></a>예제
 

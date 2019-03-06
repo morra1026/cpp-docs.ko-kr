@@ -1,5 +1,5 @@
 ---
-title: '예: 메뉴 명령을 통해 대화 상자 표시'
+title: '예제: 메뉴 명령을 통해 대화 상자를 표시합니다.'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC dialog boxes [MFC], examples
@@ -10,14 +10,14 @@ helpviewer_keywords:
 - examples [MFC], dialog boxes
 - menu items [MFC], examples
 ms.assetid: e8692549-acd7-478f-9c5e-ba310ce8cccd
-ms.openlocfilehash: 830ba27945ce8da2abd52c7f29d786d098113151
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c60469747c24b4c295348a14cb569c4118c76d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50483488"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260480"
 ---
-# <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>예: 메뉴 명령을 통해 대화 상자 표시
+# <a name="example-displaying-a-dialog-box-via-a-menu-command"></a>예제: 메뉴 명령을 통해 대화 상자를 표시합니다.
 
 이 항목에서는 프로시저를 포함 합니다.
 
@@ -31,7 +31,7 @@ ms.locfileid: "50483488"
 
 |항목|이름 또는 값|
 |----------|-------------------|
-|응용 프로그램|DisplayDialog|
+|애플리케이션|DisplayDialog|
 |메뉴 명령|보기 메뉴에서 명령을 테스트 합니다. 명령 ID ID_VIEW_TEST =|
 |대화 상자|테스트 대화 상자 클래스 CTestDialog; = 헤더 파일 TestDialog.h; = 변수 testdlg, ptestdlg =|
 |명령 처리기|OnViewTest|
@@ -88,7 +88,7 @@ ms.locfileid: "50483488"
 
          [!code-cpp[NVC_MFCControlLadenDialog#48](../mfc/codesnippet/cpp/example-displaying-a-dialog-box-via-a-menu-command_7.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [모달 및 모덜리스 대화 상자](../mfc/modal-and-modeless-dialog-boxes.md)

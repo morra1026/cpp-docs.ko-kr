@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CRichEditDoc [MFC], GetView
 - CRichEditDoc [MFC], m_bRTF
 ms.assetid: c936ec18-d516-49d4-b7fb-c9aa0229eddc
-ms.openlocfilehash: 8e97b17a3620d75660a5ac2109bc440f8ad27b16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4c2021128dcc06a76cf3b68c0ec49b72a5860046
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453459"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295138"
 ---
 # <a name="cricheditdoc-class"></a>CRichEditDoc 클래스
 
@@ -45,7 +45,7 @@ class CRichEditDoc : public COleServerDoc
 
 |이름|설명|
 |----------|-----------------|
-|[M_brtf](#m_brtf)|스트림 I/O 서식 지정이 포함 되는지 여부를 나타냅니다.|
+|[CRichEditDoc::m_bRTF](#m_brtf)|스트림 I/O 서식 지정이 포함 되는지 여부를 나타냅니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -57,7 +57,7 @@ class CRichEditDoc : public COleServerDoc
 
 서식 있는 편집 문서를 사용 하 여 MFC 응용 프로그램에서 예제를 참조 합니다 [워드 패드](../../visual-cpp-samples.md) 샘플 응용 프로그램입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -136,7 +136,7 @@ virtual CRichEditView* GetView() const;
 
 내에 포함 된 텍스트 및 서식 지정 정보를 `CRichEditView` 개체입니다. `CRichEditDoc` 개체 serialization에 대 한 OLE 항목을 유지 합니다. 하나만 있어야 `CRichEditView` 각각에 대해 `CRichEditDoc`합니다.
 
-##  <a name="m_brtf"></a>  M_brtf
+##  <a name="m_brtf"></a>  CRichEditDoc::m_bRTF
 
 TRUE 인 경우 나타냅니다 [CRichEditCtrl::StreamIn](../../mfc/reference/cricheditctrl-class.md#streamin) 하 고 [CRichEditCtrl::StreamOut](../../mfc/reference/cricheditctrl-class.md#streamout) 단락 및 문자 형식을 특성에 저장 해야 합니다.
 
@@ -144,7 +144,7 @@ TRUE 인 경우 나타냅니다 [CRichEditCtrl::StreamIn](../../mfc/reference/cr
 BOOL m_bRTF;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 워드 패드](../../visual-cpp-samples.md)<br/>
 [COleServerDoc 클래스](../../mfc/reference/coleserverdoc-class.md)<br/>

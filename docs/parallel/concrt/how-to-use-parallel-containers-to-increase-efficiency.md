@@ -1,19 +1,19 @@
 ---
-title: '방법: 병렬 컨테이너를 사용하여 효율성 향상'
+title: '방법: 효율성을 높이기 위해 병렬 컨테이너를 사용 합니다.'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - increasing efficiency with parallel containers [Concurrency Runtime]
 - concurrent_queue class, examples
 - concurrent_vector class, examples
 ms.assetid: bd00046d-e9b6-4ae1-b661-3995f671b867
-ms.openlocfilehash: a9c428ee54853fbd8106901434823e69b402eace
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2479915b167ee3dbc2ce43d9c2733efc74818bbe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439184"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300637"
 ---
-# <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>방법: 병렬 컨테이너를 사용하여 효율성 향상
+# <a name="how-to-use-parallel-containers-to-increase-efficiency"></a>방법: 효율성을 높이기 위해 병렬 컨테이너를 사용 합니다.
 
 이 항목에서는 병렬 컨테이너를 사용 하 여 효율적으로 저장 하 고 병렬로 데이터를 액세스 하는 방법을 보여 줍니다.
 
@@ -65,11 +65,11 @@ Prime factors of 1050985 are: 5 13 19 23 37.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `carmichael-primes.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `carmichael-primes.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc 카마이클 primes.cpp**
+**cl.exe /EHsc carmichael-primes.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)<br/>
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>

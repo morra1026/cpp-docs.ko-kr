@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CRecentDockSiteInfo [MFC], SetInfo
 - CRecentDockSiteInfo [MFC], StoreDockInfo
 ms.assetid: 2dd14f95-d5a2-4461-a7a5-2c6c36a3a165
-ms.openlocfilehash: aee66ea9893325921c62bfaef9cd501ef40e817a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a522d4dc88e7d1937ffa5b859aec32615939f21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615282"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275248"
 ---
 # <a name="crecentdocksiteinfo-class"></a>CRecentDockSiteInfo 클래스
 
@@ -75,11 +75,13 @@ class CRecentDockSiteInfo : public CObject
 
 ## <a name="remarks"></a>설명
 
-`CRecentDockSiteInfo` 클래스는 데이터 관리 클래스입니다. 이 클래스는 도킹과 부동 간에 전환될 때 `CPane`의 마지막 상태를 추적합니다. 사용자가 도킹 가능한 부동 창을 두 번 클릭하면 도킹됩니다. 도킹된 창을 두 번 클릭하면 이전 위치, 크기 및 상태로 돌아갑니다. 마찬가지로 창이 다시 도킹되면 이전 도킹 위치로 돌아갑니다. 이 데이터 클래스를 통해 이 작업을 수행할 수 있습니다. 이 클래스의 멤버는 도킹된 창에 대한 상태 정보를 저장하므로 응용 프로그램에서 직접 수정할 수 없습니다.
 
-`CRecentDockSiteInfo` 개체는 창을 만들 때마다 생성됩니다. 각 `CPane` 개체에는 멤버 변수 [M_recentdockinfo](../../mfc/reference/cpane-class.md#m_recentdockinfo),이 정보를 저장 합니다.
+  `CRecentDockSiteInfo` 클래스는 데이터 관리 클래스입니다. 이 클래스는 도킹과 부동 간에 전환될 때 `CPane`의 마지막 상태를 추적합니다. 사용자가 도킹 가능한 부동 창을 두 번 클릭하면 도킹됩니다. 도킹된 창을 두 번 클릭하면 이전 위치, 크기 및 상태로 돌아갑니다. 마찬가지로 창이 다시 도킹되면 이전 도킹 위치로 돌아갑니다. 이 데이터 클래스를 통해 이 작업을 수행할 수 있습니다. 이 클래스의 멤버는 도킹된 창에 대한 상태 정보를 저장하므로 응용 프로그램에서 직접 수정할 수 없습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+
+  `CRecentDockSiteInfo` 개체는 창을 만들 때마다 생성됩니다. 각 `CPane` 개체에는 멤버 변수 [M_recentdockinfo](../../mfc/reference/cpane-class.md#m_recentdockinfo),이 정보를 저장 합니다.
+
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -235,7 +237,7 @@ void SaveListOfRecentPanes(CList<HWND,
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *CList < HWND*<br/>
+[in] *CList<HWND*<br/>
 [in] *lstOrg*<br/>
 [in] *bForSlider*<br/>
 
@@ -271,8 +273,8 @@ virtual void StoreDockInfo(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockSite 클래스](../../mfc/reference/cdocksite-class.md)
+[CDockSite Class](../../mfc/reference/cdocksite-class.md)

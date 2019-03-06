@@ -10,12 +10,12 @@ helpviewer_keywords:
 - data transfer [MFC], OLE
 - data transfer classes [MFC]
 ms.assetid: c8ab2825-ed69-4b88-8ae6-f368b94726b8
-ms.openlocfilehash: 7520881314da9568f6130f5fe2ccf0a3e0e88e2a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e30a358da55b29f9519bc1ab8ee5c93ada308d98
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475186"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284426"
 ---
 # <a name="ole-drag-and-drop-and-data-transfer-classes"></a>OLE 끌어서 놓기 및 데이터 전송 클래스
 
@@ -33,7 +33,6 @@ ms.locfileid: "50475186"
 [COleDataObject](../mfc/reference/coledataobject-class.md)<br/>
 수신자 쪽으로 사용할 `COleDataSource`합니다. `COleDataObject` 저장 된 데이터에 대 한 액세스를 제공 하는 개체를 `COleDataSource` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

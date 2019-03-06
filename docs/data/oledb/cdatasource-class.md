@@ -57,12 +57,12 @@ helpviewer_keywords:
 - OpenWithPromptFileName method
 - OpenWithServiceComponents method
 ms.assetid: 99bf862c-9d5c-4117-9501-aa0e2672085c
-ms.openlocfilehash: 53e9305dd308e77afbd8d53754614c1cfb559f94
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: ed2c0b11dfdc6882352c87166b74b2fab327fcd3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557078"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418609"
 ---
 # <a name="cdatasource-class"></a>CDataSource 클래스
 
@@ -100,7 +100,7 @@ class CDataSource
 
 사용 하는 방법의 예 `CDataSource`를 참조 합니다 [CatDB](../../visual-cpp-samples.md) 샘플입니다.
 
-## <a name="close"></a> Cdatasource:: Close
+## <a name="close"></a> CDataSource::Close
 
 해제 하 여 연결을 닫습니다는 `m_spInit` 포인터입니다.
 
@@ -110,7 +110,7 @@ class CDataSource
 void Close() throw();
 ```
 
-## <a name="getinitializationstring"></a> Cdatasource:: Getinitializationstring
+## <a name="getinitializationstring"></a> CDataSource::GetInitializationString
 
 현재 열려 있는 데이터 원본 초기화 문자열을 검색 합니다.
 
@@ -137,7 +137,7 @@ HRESULT GetInitializationString(BSTR* pInitializationString,
 
 나중에이 데이터 원본 연결을 다시 초기화 문자열 결과 사용할 수 있습니다.
 
-## <a name="getproperties"></a> Cdatasource:: Getproperties
+## <a name="getproperties"></a> CDataSource::GetProperties
 
 연결 된 데이터 원본 개체에 대해 요청 된 속성 정보를 반환 합니다.
 
@@ -152,7 +152,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [idbproperties:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms714344(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
+참조 [idbproperties:: Getproperties](/previous-versions/windows/desktop/ms714344(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -162,7 +162,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 
 단일 속성을 사용 [GetProperty](../../data/oledb/cdatasource-getproperty.md)합니다.
 
-## <a name="getproperty"></a> Cdatasource:: Getproperty
+## <a name="getproperty"></a> CDataSource::GetProperty
 
 연결 된 데이터 원본 개체에 대해 지정된 된 속성의 값을 반환 합니다.
 
@@ -193,7 +193,7 @@ HRESULT GetProperty(const GUID& guid,
 
 여러 속성을 사용 [GetProperties](../../data/oledb/cdatasource-getproperties.md)합니다.
 
-## <a name="open"></a> Cdatasource:: Open
+## <a name="open"></a> CDataSource::Open
 
 사용 하 여 데이터 원본에 연결을 엽니다는 `CLSID`, `ProgID`, 또는 `CEnumerator` 모니커 또는 로케이터 대화 상자를 사용 하 여 사용자 프롬프트입니다.
 
@@ -244,10 +244,10 @@ HRESULT Open(LPCSTR szProgID,
 [in] `CLSID` 데이터 공급자입니다.
 
 *pPropSet*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
 
 *nPropertySets*<br/>
-[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
+[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
 
 *pName*<br/>
 [in] 연결할 데이터베이스의 이름입니다.
@@ -259,7 +259,7 @@ HRESULT Open(LPCSTR szProgID,
 [in] 사용자의 암호입니다.
 
 *nInitMode*<br/>
-[in] 데이터베이스 초기화 모드입니다. 참조 [초기화 속성](https://docs.microsoft.com/previous-versions/windows/desktop/ms723127(v=vs.85))에 *OLE DB Programmer's Reference* 올바른 초기화 모드 목록을 Windows sdk입니다. 하는 경우 *nInitMode* 0, 아니요 초기화가 모드는 연결을 여는데 사용 되는 속성 집합에 포함 됩니다.
+[in] 데이터베이스 초기화 모드입니다. 참조 [초기화 속성](/previous-versions/windows/desktop/ms723127(v=vs.85))에 *OLE DB Programmer's Reference* 올바른 초기화 모드 목록을 Windows sdk입니다. 하는 경우 *nInitMode* 0, 아니요 초기화가 모드는 연결을 여는데 사용 되는 속성 집합에 포함 됩니다.
 
 *szProgID*<br/>
 [in] 프로그램 식별자입니다.
@@ -289,7 +289,7 @@ HRESULT Open(LPCSTR szProgID,
 
 [!code-cpp[NVC_OLEDB_Consumer#7](../../data/oledb/codesnippet/cpp/cdatasource-open_1.cpp)]
 
-## <a name="openfromfilename"></a> Cdatasource:: Openfromfilename
+## <a name="openfromfilename"></a> CDataSource::OpenFromFileName
 
 사용자가 제공한 파일 이름으로 지정된 파일에서 데이터 소스를 엽니다.
 
@@ -304,7 +304,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 *szFileName*<br/>
 [in] 일반적으로 데이터 소스 연결(.UDL) 파일의 이름입니다.
 
-데이터 연결 파일 (.udl 파일)에 대 한 자세한 내용은 참조 하세요. [데이터 링크 API 개요](https://docs.microsoft.com/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK에 있습니다.
+데이터 연결 파일 (.udl 파일)에 대 한 자세한 내용은 참조 하세요. [데이터 링크 API 개요](/previous-versions/windows/desktop/ms718102(v=vs.85)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -314,7 +314,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 
 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.
 
-## <a name="openfrominitializationstring"></a> Cdatasource:: Openfrominitializationstring
+## <a name="openfrominitializationstring"></a> CDataSource::OpenFromInitializationString
 
 사용자가 제공한 초기화 문자열에 지정 된 데이터 소스를 엽니다.
 
@@ -343,7 +343,7 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
 
 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다.
 
-## <a name="openwithpromptfilename"></a> Cdatasource:: Openwithpromptfilename
+## <a name="openwithpromptfilename"></a> CDataSource::OpenWithPromptFileName
 
 이 메서드는 사용자에게 대화 상자를 표시한 다음 사용자가 지정한 파일을 사용하여 데이터 원본을 엽니다.
 
@@ -374,7 +374,7 @@ HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
 
 이 메서드는 oledb32.dll에 있는 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다. 이 DLL에는 리소스 풀링, 자동 트랜잭션 참여 등과 같은 서비스 구성 요소 기능의 구현이 들어 있습니다. 자세한 내용은 "OLE DB 서비스"의 OLE DB 프로그래머 참조에서 참조 하세요 [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true)합니다.
 
-## <a name="openwithservicecomponents"></a> Cdatasource:: Openwithservicecomponents
+## <a name="openwithservicecomponents"></a> CDataSource::OpenWithServiceComponents
 
 oledb32.dll에서 서비스 구성 요소를 사용하여 데이터 원본 개체를 엽니다.
 
@@ -399,10 +399,10 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 [in] 데이터 공급자의 프로그램 ID입니다.
 
 *pPropset*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. 동일한 속성에 두 번 이상 지정 된 경우 *pPropset*, 다음 사용 되는 값은 공급자별으로 다릅니다. 하는 경우 *ulPropSets* 가 0 이면이 매개 변수가 무시 됩니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 데이터 원본 개체가 초기화되면 속성은 데이터 원본 속성 그룹에 속해야 합니다. 동일한 속성에 두 번 이상 지정 된 경우 *pPropset*, 다음 사용 되는 값은 공급자별으로 다릅니다. 하는 경우 *ulPropSets* 가 0 이면이 매개 변수가 무시 됩니다.
 
 *ulPropSets*<br/>
-[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다. 이 값이 0 이면 공급자 무시 *pPropset*합니다.
+[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다. 이 값이 0 이면 공급자 무시 *pPropset*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -414,5 +414,5 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

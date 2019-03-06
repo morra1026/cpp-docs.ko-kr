@@ -9,12 +9,12 @@ helpviewer_keywords:
 - stream operations in CRichEditCtrl
 - stream storage and CRichEditCtrl
 ms.assetid: 110b4684-1e76-4ca6-9ef0-5bc8b2d93c78
-ms.openlocfilehash: 099b29a3a3ff1337c71d14d1ae7bfa0a182a6903
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 04cf0b06773937bf66defccbb0e5e880c06e8d88
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584409"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267981"
 ---
 # <a name="stream-operations-in-rich-edit-controls"></a>Rich Edit 컨트롤의 스트림 작업
 
@@ -24,8 +24,7 @@ Rich edit 컨트롤 안팎으로 데이터를 전송 스트림을 사용할 수 
 
 저장 하는 다양 한 내용을 편집 컨트롤 (즉, 데이터 스트림 아웃)을 사용할 수는 [StreamOut](../mfc/reference/cricheditctrl-class.md#streamout) 멤버 함수입니다. 컨트롤이 버퍼에 쓰기를 반복한 후 응용 프로그램에서 정의된 콜백 함수를 호출합니다. 각 호출마다 콜백 함수는 버퍼 내용을 저장합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

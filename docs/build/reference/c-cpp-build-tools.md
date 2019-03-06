@@ -7,12 +7,12 @@ helpviewer_keywords:
 - builds [C++], C/C++ tools
 - tools [C++], build
 ms.assetid: 48d9daf4-6bbf-473a-8ce2-bf2923b69f80
-ms.openlocfilehash: dd698aafca3c9bc489405e0ab9cb4dcec98a26ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8240ee91d0318b969ba36cedac9dbc3f645d2ed8
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510086"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416766"
 ---
 # <a name="cc-build-tools"></a>C/C++ 빌드 도구
 
@@ -30,7 +30,7 @@ Visual c + +는 보거나 빌드 출력을 조작 하기 위한 다음과 같은
 
 - [ERRLOOK](../../build/reference/value-edit-control.md), 시스템 오류 메시지 또는 모듈 오류 메시지를 입력 한 값을 기반으로 오류 조회 유틸리티를 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
 [데코레이팅된 이름](../../build/reference/decorated-names.md)<br/>

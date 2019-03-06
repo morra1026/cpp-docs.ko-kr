@@ -33,16 +33,17 @@ f1_keywords:
 helpviewer_keywords:
 - source_block class
 ms.assetid: fbdd4146-e8d0-42e8-b714-fe633f69ffbf
-ms.openlocfilehash: 609c7d78bdf2f16be4d82add454ef9546ea22588
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ddfd5e139171c7097a793f12ac82767b8773107
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468694"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277367"
 ---
 # <a name="sourceblock-class"></a>source_block 클래스
 
-`source_block` 클래스는 소스 전용 블록에 대한 추상 기본 클래스입니다. 이 클래스는 기본 링크 관리 기능 및 일반적인 오류 검사를 제공합니다.
+
+  `source_block` 클래스는 소스 전용 블록에 대한 추상 기본 클래스입니다. 이 클래스는 기본 링크 관리 기능 및 일반적인 오류 검사를 제공합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -88,7 +89,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 |[unlink_target](#unlink_target)|이 대상 블록을 연결 해제 `source_block` 개체입니다.|
 |[unlink_targets](#unlink_targets)|이 모든 대상 블록의 연결을 해제 `source_block` 개체입니다. (재정의 [isource:: Unlink_targets](isource-class.md#unlink_targets).)|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -113,7 +114,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 
 메시지 블록 연결 관리와이 클래스에서 제공 하는 동기화를 활용 하기 위해이 블록에서 파생 되어야 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -199,7 +200,7 @@ virtual void async_send(_Inout_opt_ message<_Target_type>* _Msg);
 *_Msg*<br/>
 에 대 한 포인터를 `message` 비동기적으로 보낼 개체입니다.
 
-##  <a name="consume"></a> 사용
+##  <a name="consume"></a> consume
 
 이전에 제공한 메시지를 생성 `source_block` 개체와 호출자에 게 소유권을 전송 하 여 대상에 의해 예약 되었습니다.
 
@@ -529,7 +530,7 @@ virtual void unlink_targets();
 void wait_for_outstanding_async_sends();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [ISource 클래스](isource-class.md)

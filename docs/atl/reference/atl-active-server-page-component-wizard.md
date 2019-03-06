@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ASP components, creating in ATL
 - ATL Active Server Page Component Wizard
 ms.assetid: 5a5cb904-dbbf-44ea-ad3d-2ddd14c1d3c5
-ms.openlocfilehash: 80d7eefaa4b12d5aab8970f4b3c81fc644226e07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f020ed9b58f631bfff09fe54c70e36146eb03368
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510866"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288092"
 ---
 # <a name="atl-active-server-page-component-wizard"></a>ATL Active Server Page 구성 요소 마법사
 
@@ -87,6 +87,6 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
    컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL Active Server Page 구성 요소](../../atl/reference/adding-an-atl-active-server-page-component.md)

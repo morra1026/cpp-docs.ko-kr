@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MFC COM, active document containment
 - applications [MFC], active document container
 ms.assetid: 14e2d022-a6c5-4249-8712-706b0f4433f7
-ms.openlocfilehash: 5cdd3de8f4efcc23f89b81cb61302b5950938800
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 965778fd5d17aa416b198c101edc3a445a39580b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51520415"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257296"
 ---
 # <a name="creating-an-active-document-container-application"></a>액티브 문서 컨테이너 응용 프로그램 만들기
 
@@ -43,7 +43,8 @@ ms.locfileid: "51520415"
 
 1. *MyProjview.cpp*를 다음과 같이 변경 합니다.
 
-   - `CMyProjView::OnPreparePrinting`에서 함수 내용을 다음 코드로 바꿉니다.
+   - 
+  `CMyProjView::OnPreparePrinting`에서 함수 내용을 다음 코드로 바꿉니다.
 
      [!code-cpp[NVC_MFCDocView#56](../mfc/codesnippet/cpp/creating-an-active-document-container-application_1.cpp)]
 
@@ -61,7 +62,6 @@ ms.locfileid: "51520415"
 
 1. 사용자의 고유 구현을 추가하고 응용 프로그램을 빌드합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [활성 문서 포함](../mfc/active-document-containment.md)
-

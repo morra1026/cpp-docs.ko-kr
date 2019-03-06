@@ -9,12 +9,12 @@ helpviewer_keywords:
 - control views [MFC]
 - view classes [MFC], architecture
 ms.assetid: 8894579a-1436-441e-b985-83711061e495
-ms.openlocfilehash: 7855f152e340b488d64f01dbf290034e1bdbc9b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15b120f0354c483480351b8d3abf995334779411
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647302"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299415"
 ---
 # <a name="view-classes-architecture"></a>뷰 클래스(아키텍처)
 
@@ -68,7 +68,6 @@ Windows 목록 컨트롤을 포함 하는 뷰입니다 (참조 [CListCtrl](../mf
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 Windows 트리 컨트롤을 포함 하는 뷰입니다 (참조 [CTreeCtrl](../mfc/reference/ctreectrl-class.md)). 트리 컨트롤 아이콘 및 파일 탐색기의 왼쪽된 창에 비슷한 방식으로 계층의 정렬 된 문자열을 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

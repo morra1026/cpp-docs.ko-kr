@@ -13,12 +13,12 @@ helpviewer_keywords:
 - memory, managing
 - memory, memory manager
 ms.assetid: 18b2c569-25fe-4464-bdb6-3b1abef7154a
-ms.openlocfilehash: ed1dfd1dc8767b4f198ec6cc8dd626a04800bffd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b9b6ac6dc265378f617e053bc48ac6030425cef4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596770"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297920"
 ---
 # <a name="iatlmemmgr-class"></a>IAtlMemMgr 클래스
 
@@ -36,10 +36,10 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
 
 |||
 |-|-|
-|[할당](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
+|[Allocate](#allocate)|메모리 블록을 할당하려면 이 메서드를 호출합니다.|
 |[무료](#free)|메모리 블록을 해제 하려면이 메서드를 호출 합니다.|
 |[GetSize](#getsize)|할당된 된 메모리 블록의 크기를 검색 하려면이 메서드를 호출 합니다.|
-|[다시 할당](#reallocate)|메모리 블록 다시 할당 하려면이 메서드를 호출 합니다.|
+|[Reallocate](#reallocate)|메모리 블록 다시 할당 하려면이 메서드를 호출 합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -839,7 +839,7 @@ STDMETHOD(CreateControlEx)(
 [out] 수신할 포인터의 주소는 `IUnknown` 만든된 컨트롤의 인터페이스입니다. NULL 일 수 있습니다.
 
 *riidAdvise*<br/>
-[in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. IID_NULL 될 수 있습니다.
+[in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. Can be IID_NULL.
 
 *punkAdvise*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 으로 지정 된 포함된 된 개체의 연결 지점에 연결 되어 싱크 개체의 인터페이스가 `iidSink`합니다.
@@ -967,6 +967,6 @@ STDMETHOD(CreateControlLicEx)(
 
 참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 사용 하는 샘플에 대 한 `IAxWinHostWindowLic::CreateControlLicEx`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

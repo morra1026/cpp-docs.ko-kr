@@ -133,12 +133,12 @@ f1_keywords:
 - AMP_MATH/Concurrency::trunc
 - AMP_MATH/Concurrency::truncf
 ms.assetid: ba653308-dc28-4384-b2fd-6cd718a72f91
-ms.openlocfilehash: 6d4f05595f1501fb55938d6875f21b9a9079d043
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc023d1cc27601b7da0a87aee7c3c1ac66479a7c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462337"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288328"
 ---
 # <a name="concurrencyprecisemath-namespace"></a>Concurrency::precise_math 네임스페이스
 
@@ -184,14 +184,14 @@ namespace precise_math;
 |[coshf](concurrency-precise-math-namespace-functions.md#coshf)|인수의 쌍 곡 코사인 값을 계산합니다.|
 |[cospi](concurrency-precise-math-namespace-functions.md#cospi)|오버로드됨. Pi의 코사인 값을 계산 \* _X|
 |[cospif](concurrency-precise-math-namespace-functions.md#cospif)|Pi의 코사인 값을 계산 \* _X|
-|[erf](concurrency-precise-math-namespace-functions.md#erf)|오버로드됨. _X의 오류 함수 계산|
+|[erf](concurrency-precise-math-namespace-functions.md#erf)|오버로드됨. _X의 오류 함수를 계산합니다.|
 |[erfc](concurrency-precise-math-namespace-functions.md#erfc)|오버로드됨. _X의 상보 오류 함수 계산|
 |[erfcf](concurrency-precise-math-namespace-functions.md#erfcf)|_X의 상보 오류 함수 계산|
-|[erfcinv](concurrency-precise-math-namespace-functions.md#erfcinv)|오버로드됨. _X의 역 상보 오류 함수 계산|
-|[erfcinvf](concurrency-precise-math-namespace-functions.md#erfcinvf)|_X의 역 상보 오류 함수 계산|
-|[erff](concurrency-precise-math-namespace-functions.md#erff)|_X의 오류 함수 계산|
-|[erfinv](concurrency-precise-math-namespace-functions.md#erfinv)|오버로드됨. _X의 역 오류 함수 계산|
-|[erfinvf](concurrency-precise-math-namespace-functions.md#erfinvf)|_X의 역 오류 함수 계산|
+|[erfcinv](concurrency-precise-math-namespace-functions.md#erfcinv)|오버로드됨. _X의 역 상보 오류 함수를 계산합니다.|
+|[erfcinvf](concurrency-precise-math-namespace-functions.md#erfcinvf)|_X의 역 상보 오류 함수를 계산합니다.|
+|[erff](concurrency-precise-math-namespace-functions.md#erff)|_X의 오류 함수를 계산합니다.|
+|[erfinv](concurrency-precise-math-namespace-functions.md#erfinv)|오버로드됨. _X의 역 오류 함수를 계산합니다.|
+|[erfinvf](concurrency-precise-math-namespace-functions.md#erfinvf)|_X의 역 오류 함수를 계산합니다.|
 |[exp](concurrency-precise-math-namespace-functions.md#exp)|오버로드됨. 밑이 e 인수를 계산합니다.|
 |[exp10](concurrency-precise-math-namespace-functions.md#exp10)|오버로드됨. 밑이 10 인 인수의 지 수를 계산합니다.|
 |[exp10f](concurrency-precise-math-namespace-functions.md#exp10f)|밑이 10 인 인수의 지 수를 계산합니다.|
@@ -255,8 +255,8 @@ namespace precise_math;
 |[probitf](concurrency-precise-math-namespace-functions.md#probitf)|인수의 역 누적 분포 함수를 반환합니다.|
 |[rcbrt](concurrency-precise-math-namespace-functions.md#rcbrt)|오버로드됨. 인수의 제곱근의 역 수를 반환합니다.|
 |[rcbrtf](concurrency-precise-math-namespace-functions.md#rcbrtf)|인수의 제곱근의 역 수를 반환합니다.|
-|[remainder](concurrency-precise-math-namespace-functions.md#remainder)|오버로드됨. 나머지 계산: _X REM _Y|
-|[remainderf](concurrency-precise-math-namespace-functions.md#remainderf)|나머지 계산: _X REM _Y|
+|[remainder](concurrency-precise-math-namespace-functions.md#remainder)|오버로드됨. 나머지 _X REM _Y를 계산합니다.|
+|[remainderf](concurrency-precise-math-namespace-functions.md#remainderf)|나머지 _X REM _Y를 계산합니다.|
 |[remquo](concurrency-precise-math-namespace-functions.md#remquo)|오버로드됨. _X REM _Y와 같은 나머지를 계산 합니다. 또한 정수 몫 _X/_Y의 낮은 23 비트를 계산 하 고 같은 _X/_Y 부호 값을 제공 합니다. 이 부호 있는 값의 대가 가리키는 정수에에서 저장 합니다.|
 |[remquof](concurrency-precise-math-namespace-functions.md#remquof)|_X REM _Y와 같은 나머지를 계산 합니다. 또한 정수 몫 _X/_Y의 낮은 23 비트를 계산 하 고 같은 _X/_Y 부호 값을 제공 합니다. 이 부호 있는 값의 대가 가리키는 정수에에서 저장 합니다.|
 |[round](concurrency-precise-math-namespace-functions.md#round)|오버로드됨. _X를 가장 가까운 정수로 반올림 합니다.|
@@ -296,6 +296,6 @@ namespace precise_math;
 
 **네임스페이스:** 동시성
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

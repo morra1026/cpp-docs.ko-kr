@@ -18,6 +18,7 @@ apilocation:
 - msvcr120_clr0400.dll
 - ucrtbase.dll
 - api-ms-win-crt-convert-l1-1-0.dll
+- ntoskrnl.exe
 apitype: DLLExport
 f1_keywords:
 - _tstoi
@@ -40,12 +41,12 @@ helpviewer_keywords:
 - atoi function
 - wtoi function
 ms.assetid: ad7fda30-28ab-421f-aaad-ef0b8868663a
-ms.openlocfilehash: 5c03f2766701f7e360ad0bf4f0fc701d2a7e983c
-ms.sourcegitcommit: b401a05c5c0f5cc4b32893d7382c05a51e4ab783
+ms.openlocfilehash: b6a1f52e6c83f53230c736db3a506aed4b52e434
+ms.sourcegitcommit: e06648107065f3dea35f40c1ae5999391087b80b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "50999988"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57210694"
 ---
 # <a name="atoi-atoil-wtoi-wtoil"></a>atoi, _atoi_l, _wtoi, _wtoi_l
 
@@ -90,7 +91,7 @@ int _wtoi_l(
 
 합니다 *str* 인수 **atoi** 하 고 **_wtoi** 형식은:
 
-> [*공백을*] [*sign*] [*자릿수*]]
+> [*whitespace*] [*sign*] [*digits*]]
 
 A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인* 는 더하기 (+) 또는 빼기 (-) 이며 및 *숫자* 하나 이상의 숫자가 됩니다.
 
@@ -108,7 +109,7 @@ A *공백* 무시 되는 공백 또는 탭 문자로 구성 됩니다 *로그인
 |루틴|필수 헤더|
 |--------------|---------------------|
 |**atoi**|\<stdlib.h>|
-|**_atoi_l**하십시오 **_wtoi**, **_wtoi_l**|\<stdlib.h> 또는 \<wchar.h>|
+|**_atoi_l**, **_wtoi**, **_wtoi_l**|\<stdlib.h> 또는 \<wchar.h>|
 
 ## <a name="example"></a>예제
 

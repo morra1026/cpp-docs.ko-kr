@@ -36,12 +36,12 @@ helpviewer_keywords:
 - COleObjectFactory [MFC], VerifyLicenseKey
 - COleObjectFactory [MFC], VerifyUserLicense
 ms.assetid: ab179c1e-4af2-44aa-a576-37c48149b427
-ms.openlocfilehash: 4aa6d688de59884c7279b441d12dda9dcdf2ff6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 25dce92f49ba9de08fcf33d54db8e97d520f5ea4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476013"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266382"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory 클래스
 
@@ -74,9 +74,9 @@ class COleObjectFactory : public CCmdTarget
 |[COleObjectFactory::RevokeAll](#revokeall)|OLE 시스템 Dll 사용 하 여 응용 프로그램의 개체 팩터리 등록을 취소합니다.|
 |[COleObjectFactory::UnregisterAll](#unregisterall)|모든 응용 프로그램의 개체 팩터리를 등록 취소합니다.|
 |[COleObjectFactory::UpdateRegistry](#updateregistry)|OLE 시스템 레지스트리를 사용 하 여이 개체 팩터리를 등록합니다.|
-|[등록 됩니다](#updateregistryall)|OLE 시스템 레지스트리를 사용 하 여 모든 응용 프로그램의 개체 팩터리를 등록합니다.|
+|[COleObjectFactory::UpdateRegistryAll](#updateregistryall)|OLE 시스템 레지스트리를 사용 하 여 모든 응용 프로그램의 개체 팩터리를 등록합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -97,9 +97,9 @@ class COleObjectFactory : public CCmdTarget
 
 - OLE 시스템 레지스트리를 사용 하 여 컨트롤 개체 팩터리를 등록 합니다.
 
-개체 만들기에 대 한 자세한 내용은 문서를 참조 하세요 [데이터 개체 및 데이터 소스 (OLE)](../../mfc/data-objects-and-data-sources-ole.md) 하 고 [데이터 개체 및 데이터 소스: 생성 및 소멸](../../mfc/data-objects-and-data-sources-creation-and-destruction.md)합니다. 등록에 대 한 자세한 문서를 참조 [등록](../../mfc/registration.md)합니다.
+개체 만들기에 대 한 자세한 내용은 문서를 참조 하세요 [데이터 개체 및 데이터 소스 (OLE)](../../mfc/data-objects-and-data-sources-ole.md) 고 [데이터 개체 및 데이터 소스: 생성 및 소멸](../../mfc/data-objects-and-data-sources-creation-and-destruction.md)합니다. 등록에 대 한 자세한 문서를 참조 [등록](../../mfc/registration.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -327,7 +327,7 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 *lpszProgID*<br/>
 "Excel.Document.5."와 같은 사람이 읽을 수 있는 프로그램 식별자를 포함 하는 문자열에 대 한 포인터
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 컨트롤 클래스의 개체 팩터리 등록할 수 있는지 여부를 결정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -340,7 +340,7 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 
    MFC ActiveX 컨트롤을 사용 하 여 프로젝트를 만드는 경우 컨트롤은이 순수 가상 함수 재정의 제공 합니다.
 
-##  <a name="updateregistryall"></a>  등록 됩니다
+##  <a name="updateregistryall"></a>  COleObjectFactory::UpdateRegistryAll
 
 OLE 시스템 레지스트리를 사용 하 여 모든 응용 프로그램의 개체 팩터리를 등록합니다.
 
@@ -350,7 +350,7 @@ static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 컨트롤 클래스의 개체 팩터리 등록할 수 있는지 여부를 결정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -398,7 +398,7 @@ virtual BOOL VerifyUserLicense();
 
 디자인 타임 라이선스를 잘못 되었습니다. 0이 아닌 그렇지 않으면 0입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

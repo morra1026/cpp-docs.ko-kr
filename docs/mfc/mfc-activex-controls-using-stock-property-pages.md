@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX 컨트롤: 스톡 속성 페이지 사용'
+title: 'MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여'
 ms.date: 09/12/2018
 f1_keywords:
 - CLSID_CPicturePropPage
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - CLSID_CPicturePropPage [MFC]
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: 22638d86-ff3e-4124-933e-54b7c2a25968
-ms.openlocfilehash: f31bf245e35231b6cc62497e7bbc57ff7f0e6af1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b73a027422cfe9cbf03afece400c1b513cace151
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545394"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304706"
 ---
-# <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX 컨트롤: 스톡 속성 페이지 사용
+# <a name="mfc-activex-controls-using-stock-property-pages"></a>MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여
 
 이 문서에서는 ActiveX 컨트롤 및 사용 하는 방법에 대해 사용할 수 있는 스톡 속성 페이지를 설명 합니다.
 
@@ -51,8 +51,7 @@ BEGIN_PROPPAGEIDS 매크로에서 속성 페이지의 수는 4는 참고 합니�
 > [!TIP]
 >  스톡 속성 페이지에 표시 되지 않는 경우 (위의 참고 사항 참조)는 DLL에 대 한 전체 경로 이름 사용 하 여 명령줄에서 RegSvr32.exe를 실행 하 여 DLL을 등록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 스톡 속성 추가](../mfc/mfc-activex-controls-adding-stock-properties.md)
-

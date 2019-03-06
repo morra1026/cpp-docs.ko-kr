@@ -7,12 +7,12 @@ helpviewer_keywords:
 - documents [MFC], view and frame creation
 - TN025
 ms.assetid: 09254d72-6e1d-43db-80e9-693887dbeda2
-ms.openlocfilehash: aa8bc305848ce95e0b5bfef1ac6785b18bc84015
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4958e7c4ca2c3cf9eed6420d72d0399fa112098d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50634761"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284686"
 ---
 # <a name="tn025-document-view-and-frame-creation"></a>TN025: 문서, 뷰 및 프레임 만들기
 
@@ -25,7 +25,7 @@ ms.locfileid: "50634761"
 
 시스템에는 하나의 `CWinApp` 개체가 있습니다.
 
-이 개체는 프레임워크의 내부 `WinMain` 구현에 의해 정적으로 생성되고 초기화됩니다. 파생 되어야 합니다 `CWinApp` 유용한 작업을 수행 하려면 (예외: MFC 확장명 Dll 없어야를 `CWinApp` 인스턴스-초기화 수행 됩니다 `DllMain` 대신).
+이 개체는 프레임워크의 내부 `WinMain` 구현에 의해 정적으로 생성되고 초기화됩니다. 파생 되어야 합니다 `CWinApp` 유용한 작업을 수행 하려면 (예외: MFC 확장명 Dll 사용 해야 합니다는 `CWinApp` 인스턴스-초기화 이루어집니다 `DllMain` 대신).
 
 하나의 `CWinApp` 개체는 문서 템플릿 목록을 소유합니다(`CPtrList`). 응용 프로그램당 하나 이상의 문서 템플릿이 있습니다. DocTemplates는 일반적으로 `CWinApp::InitInstance`에 있는 리소스 파일(즉, 문자열 배열)에서 로드됩니다.
 
@@ -39,7 +39,8 @@ AddDocTemplate(pTemplate);
 
 ## <a name="doctemplates"></a>DocTemplates
 
-`CDocTemplate`는 문서의 생성자 및 관리자입니다. 이 템플릿은 생성되는 문서를 소유합니다. 응용 프로그램에 아래에 설명된 리소스 기반 접근 방법이 사용될 경우 `CDocTemplate`에서 파생될 필요가 없습니다.
+
+  `CDocTemplate`는 문서의 생성자 및 관리자입니다. 이 템플릿은 생성되는 문서를 소유합니다. 응용 프로그램에 아래에 설명된 리소스 기반 접근 방법이 사용될 경우 `CDocTemplate`에서 파생될 필요가 없습니다.
 
 SDI 응용 프로그램의 경우 `CSingleDocTemplate` 클래스는 하나의 열린 문서를 추적합니다. MDI 응용 프로그램의 경우 `CMultiDocTemplate` 클래스는 해당 템플릿으로부터 생성된 모든 현재 열린 문서의 목록(`CPtrList`)을 유지합니다. `CDocTemplate::AddDocument` 및 `CDocTemplate::RemoveDocument`는 템플릿에서 문서를 추가 또는 제거하기 위한 가상 멤버 함수를 제공합니다. `CDocTemplate` 이의 friend `CDocument` 보호를 설정할 수 있습니다 `CDocument::m_pDocTemplate` 문서를 생성 한 doc 템플릿을 다시 가리키도록 후방 포인터입니다.
 
@@ -57,18 +58,21 @@ A `CDocument` 가 소유 하는 `CDocTemplate`합니다.
 
 문서는 뷰를 생성/제거하지 않지만 생성된 후 서로 연결됩니다. 문서를 닫으면(파일/닫기 사용) 연결된 모든 뷰가 닫힙니다. 문서의 마지막 뷰가 닫히면(창/닫기) 문서가 닫힙니다.
 
-`CDocument::AddView`, `RemoveView` 인터페이스는 뷰 목록을 유지 관리하는 데 사용됩니다. `CDocument` 이의 friend `CView` 설정할 수 있습니다는 `CView::m_pDocument` 후방 포인터입니다.
+
+  `CDocument::AddView`, `RemoveView` 인터페이스는 뷰 목록을 유지 관리하는 데 사용됩니다. `CDocument` 이의 friend `CView` 설정할 수 있습니다는 `CView::m_pDocument` 후방 포인터입니다.
 
 ## <a name="cframewnd"></a>CFrameWnd
 
-`CFrameWnd`(프레임이라고도 부름)는 MFC 1.0에서 동일한 역할을 수행하지만 이제 `CFrameWnd` 클래스는 새 클래스를 파생하지 않는 여러 경우에 사용되도록 설계되었습니다. 파생된 클래스 `CMDIFrameWnd` 및 `CMDIChildWnd`도 향상되어 많은 표준 명령이 이미 구현되어 있습니다.
 
-`CFrameWnd`는 프레임의 클라이언트 영역에서 창 만들기 작업을 수행합니다. 일반적으로 프레임의 클라이언트 영역을 채우는 하나의 기본 창이 있습니다.
+  `CFrameWnd`(프레임이라고도 부름)는 MFC 1.0에서 동일한 역할을 수행하지만 이제 `CFrameWnd` 클래스는 새 클래스를 파생하지 않는 여러 경우에 사용되도록 설계되었습니다. 파생된 클래스 `CMDIFrameWnd` 및 `CMDIChildWnd`도 향상되어 많은 표준 명령이 이미 구현되어 있습니다.
 
-MDI 프레임 창의 경우 클라이언트 영역은 모든 MDI 자식 프레임 창의 부모가 되는 MDICLIENT 컨트롤로 채워집니다. SDI 프레임 창 또는 MDI 자식 프레임 창의 경우에는 클라이언트 영역이 일반적으로 `CView` 파생 창 개체로 채워집니다. `CSplitterWnd`의 경우, 뷰의 클라이언트 영역은 `CSplitterWnd` 창 개체로 채워지며, `CView` 파생 창 개체(분할 창당 하나)는 `CSplitterWnd`의 자식 창으로 생성됩니다.
 
-## <a name="see-also"></a>참고 항목
+  `CFrameWnd`는 프레임의 클라이언트 영역에서 창 만들기 작업을 수행합니다. 일반적으로 프레임의 클라이언트 영역을 채우는 하나의 기본 창이 있습니다.
+
+MDI 프레임 창의 경우 클라이언트 영역은 모든 MDI 자식 프레임 창의 부모가 되는 MDICLIENT 컨트롤로 채워집니다. SDI 프레임 창 또는 MDI 자식 프레임 창의 경우에는 클라이언트 영역이 일반적으로 `CView` 파생 창 개체로 채워집니다. 
+  `CSplitterWnd`의 경우, 뷰의 클라이언트 영역은 `CSplitterWnd` 창 개체로 채워지며, `CView` 파생 창 개체(분할 창당 하나)는 `CSplitterWnd`의 자식 창으로 생성됩니다.
+
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

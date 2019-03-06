@@ -10,12 +10,12 @@ helpviewer_keywords:
 - PDBPATH dumpbin option
 - PDB files, path
 ms.assetid: ccf67dcd-0b23-4250-ad47-06c48acbe82b
-ms.openlocfilehash: d77ab2eb056326ba372a60cc79688d26b252ac44
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e59f36905bcb9eb379e2bc17c9041b81fd98a535
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527220"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420039"
 ---
 # <a name="pdbpath"></a>/PDBPATH
 
@@ -28,7 +28,7 @@ ms.locfileid: "50527220"
 *filename*<br/>
 일치 하는.pdb 파일을 찾을 하려는.dll 또는.exe 파일의 이름입니다.
 
-**: 자세한 정보**<br/>
+**:VERBOSE**<br/>
 (선택 사항) 여기서 했습니다.pdb 파일을 찾으려고 하는 모든 디렉터리를 보고 합니다.
 
 ## <a name="remarks"></a>설명
@@ -49,7 +49,7 @@ Visual Studio 디버거를 사용 하는 경우 디버거는 디버깅 하는 �
 
 - Windows 디렉터리에서 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)<br/>
 [/PDBALTPATH(대체 PDB 경로 사용)](../../build/reference/pdbaltpath-use-alternate-pdb-path.md)

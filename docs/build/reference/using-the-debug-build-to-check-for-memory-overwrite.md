@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - memory, overwrites
 ms.assetid: 1345eb4d-24ba-4595-b1cc-2da66986311e
-ms.openlocfilehash: 4983d64f7d783c5f23643a046780fb5fa4ba4565
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75f4d5aeddc617173aa33d96f8ff934fb8c1b320
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623732"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413838"
 ---
 # <a name="using-the-debug-build-to-check-for-memory-overwrite"></a>디버그 빌드를 사용한 메모리 덮어쓰기 확인
 
@@ -39,6 +39,6 @@ ASSERT(AfxCheckMemory());
 
 응용 프로그램의 특성에 따라 있을 수도 있습니다. `afxMemDF` 프로그램이 테스트할 너무 느리게 실행 합니다. 합니다 `afxMemDF` 변수 하면 `AfxCheckMemory` new에 대 한 모든 호출에 대 한 호출을 삭제 합니다. 호출을 분산형 해야 하는 경우 `AfxCheckMemory`위에 표시 된 것 처럼 ()와 메모리 덮어쓰기를 이렇게 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [릴리스 빌드 문제 해결](../../build/reference/fixing-release-build-problems.md)

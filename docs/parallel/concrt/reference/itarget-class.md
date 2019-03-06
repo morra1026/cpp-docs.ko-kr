@@ -13,16 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - ITarget class
 ms.assetid: 5678db25-112a-4f72-be13-42e16b67c48b
-ms.openlocfilehash: fed6f6c9b93869602eb43dabfef4743fbce3a3d1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 59a0f66a0ba3b10c3307a835ff6ccaa216596538
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430006"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295327"
 ---
 # <a name="itarget-class"></a>ITarget 클래스
 
-`ITarget` 클래스는 모든 대상 블록에 대한 인터페이스입니다. 대상 블록은 `ISource` 블록에서 제공한 메시지를 사용합니다.
+
+  `ITarget` 클래스는 모든 대상 블록에 대한 인터페이스입니다. 대상 블록은 `ISource` 블록에서 제공한 메시지를 사용합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -59,7 +60,7 @@ class ITarget;
 |[send](#send)|파생된 클래스에서 재정의 되 면 대상 블록에 동기적으로 메시지를 전달 합니다.|
 |[supports_anonymous_source](#supports_anonymous_source)|파생 클래스에서 재정의된 경우, 연결되지 않은 소스에서 제공하는 메시지를 메시지 블록이 수락할지 여부에 따라 true 또는 false를 반환합니다. 재정의 된 메서드가 반환 하는 경우 **true**, 나중에 연기 된 메시지 소비를 소스 링크 레지스트리에서 해당 식별 해야 원본의 요구에 따라 대상 제공된 된 메시지를 연기할 수 없습니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -71,7 +72,7 @@ class ITarget;
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `ITarget`
 
@@ -81,7 +82,7 @@ class ITarget;
 
 **네임스페이스:** 동시성
 
-##  <a name="dtor"></a> ~ ITarget
+##  <a name="dtor"></a> ~ITarget
 
 제거 된 `ITarget` 개체입니다.
 
@@ -106,7 +107,7 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 
 이 함수는 직접 호출 해야는 `ITarget` 블록입니다. 요소는 함께 사용 하 여 연결 되어야 합니다는 `link_target` 메서드를 `ISource` 블록을 호출 하는 `link_source` 해당 대상에는 메서드.
 
-##  <a name="propagate"></a> 전파
+##  <a name="propagate"></a> propagate
 
 파생된 클래스에서 재정의 되 면 비동기적으로 메시지를 소스 블록에서이 대상 블록 전달 합니다.
 
@@ -119,7 +120,8 @@ virtual message_status propagate(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -145,7 +147,8 @@ virtual message_status send(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -199,7 +202,7 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 virtual void unlink_sources() = 0;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [ISource 클래스](isource-class.md)

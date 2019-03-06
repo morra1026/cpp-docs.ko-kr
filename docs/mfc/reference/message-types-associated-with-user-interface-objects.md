@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - message types and user interface objects [MFC]
 ms.assetid: 681ee1a7-f6e6-4ea0-9fc6-1fb53a35516e
-ms.openlocfilehash: 42584a6514a48e7c02d98e1b619c06a11a8f277b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1676edf487d536d75ccd7901c5bdfa827cc143fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50641690"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326324"
 ---
 # <a name="message-types-associated-with-user-interface-objects"></a>사용자 인터페이스 개체와 관련된 메시지 형식
 
@@ -25,7 +25,7 @@ ms.locfileid: "50641690"
 |메뉴 또는 액셀러레이터 키 식별자|명령 메시지 (프로그램 함수를 실행).<br />-UPDATE_COMMAND_UI 메시지 (메뉴 항목을 동적으로 업데이트 함).|
 |컨트롤 식별자|선택한 컨트롤 형식에 대 한 알림 메시지를 제어 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [함수에 메시지 매핑](../../mfc/reference/mapping-messages-to-functions.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

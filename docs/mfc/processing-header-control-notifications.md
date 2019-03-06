@@ -8,12 +8,12 @@ helpviewer_keywords:
 - header controls [MFC], processing notifications
 - header control notifications
 ms.assetid: e6c6af7c-d458-4d33-85aa-48014ccde5f6
-ms.openlocfilehash: 42113b43249b87a351047ab451cb1798aec1f022
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 3c5d147741123f97a53b18a854db9204738d0a2f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693349"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287689"
 ---
 # <a name="processing-header-control-notifications"></a>헤더 컨트롤 알림 처리
 
@@ -21,8 +21,7 @@ ms.locfileid: "51693349"
 
 헤더 컨트롤에 연결 된 알림 메시지에 나열 됩니다 [헤더 컨트롤 참조](/windows/desktop/controls/header-control-reference) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeaderCtrl 사용](../mfc/using-cheaderctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

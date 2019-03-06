@@ -9,12 +9,12 @@ helpviewer_keywords:
 - handlers [MFC], command
 - handlers [MFC], message
 ms.assetid: 51bc4e76-dbe3-4cc2-b026-3199d56b2fa9
-ms.openlocfilehash: 1d775fc98fc97236cd63caf1e4422d32a9245410
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d3ed6239b638a0e161cd7e3580f4fe6e1b4a7e7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588658"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304870"
 ---
 # <a name="message-handlers"></a>메시지 처리기
 
@@ -26,7 +26,6 @@ Mfc에서 전용 *처리기* 함수는 각 메시지를 처리 합니다. 메시
 
 처리기를 작성 하의 모든 Microsoft Visual c + + 및 MFC 기능을 사용할 수 있습니다. 모든 클래스의 목록을 참조 하세요 [클래스 라이브러리 개요](../mfc/class-library-overview.md) 에 *MFC 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)
-

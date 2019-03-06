@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - Map Class (C++/Cx)
 ms.assetid: 2b8cf968-1167-4898-a149-1195b32c1785
-ms.openlocfilehash: c6edd8cdd089e24011df41db09f3c1bb5d6465f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a41f2012b4ee5441bcb9aa7d99cd0d0e97b6acc7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481460"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423705"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections::Map 클래스
 
@@ -95,7 +95,7 @@ Map은 기본적으로 [std::map](../standard-library/map-class.md)에 대한 �
 |이름|설명|
 |[Map::MapChanged](#mapchanged-event.md) `event`|Map이 변경될 때 발생합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Map`
 
@@ -246,7 +246,7 @@ Map(
 *last*<br/>
 현재 Map를 초기화하는 데 사용되는 요소 범위 다음의 첫 번째 요소의 입력 반복기입니다.
 
-## <a name="mapchanged"></a>  Map:: mapchanged 이벤트
+## <a name="mapchanged"></a>  Map::MapChanged Event
 
 맵에서 항목이 삽입되거나 제거될 때 발생합니다.
 
@@ -258,7 +258,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) 하 고 [CollectionChange 열거형](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) 하 고 [CollectionChange 열거형](/uwp/api/windows.foundation.collections.collectionchange)합니다.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값
 
@@ -281,7 +281,7 @@ virtual void Remove(K key);
 
 ## <a name="size"></a>  Map:: size 메서드
 
-개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) Map의 요소입니다.
+개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) Map의 요소입니다.
 
 ### <a name="syntax"></a>구문
 

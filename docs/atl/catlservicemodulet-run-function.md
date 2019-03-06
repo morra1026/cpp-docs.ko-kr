@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL services, security
 ms.assetid: 42c010f0-e60e-459c-a63b-a53a24cda93b
-ms.openlocfilehash: 91b6465dd975a1e3227d1416f2b78a8abbd441ad
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 448a955f2e72e8c523bbf74d6ee7e122828915ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694325"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264419"
 ---
 # <a name="catlservicemoduletrun-function"></a>Catlservicemodulet:: Run 함수
 
@@ -25,11 +25,10 @@ ms.locfileid: "51694325"
 
 보안 지정 되 면 개체는 새 클라이언트 프로그램에 연결할 수 있도록 COM에 등록 됩니다. 마지막으로 프로그램 실행을 프로그램 메시지 루프를 입력 합니다. 서비스 제어 관리자 (SCM)을 지시 합니다. 서비스 종료 시 종료 메시지를 게시 될 때까지 프로그램이 계속 실행 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [서비스](../atl/atl-services.md)<br/>
 [CSecurityDesc 클래스](../atl/reference/csecuritydesc-class.md)<br/>
 [CSid 클래스](../atl/reference/csid-class.md)<br/>
 [CDacl 클래스](../atl/reference/cdacl-class.md)<br/>
-[Catlservicemodulet:: Run](../atl/reference/catlservicemodulet-class.md#run)
-
+[CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)

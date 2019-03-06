@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CHtmlEditDoc [MFC], IsModified
 - CHtmlEditDoc [MFC], OpenURL
 ms.assetid: b2cca61f-e5d6-4099-b0d1-46bf85f0bd64
-ms.openlocfilehash: 1398f71abaa01569c8361bf3ee72f6dc13e9d711
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f468de46cf6d8a8bfcd60521df8b1076a98f0735
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516196"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285336"
 ---
 # <a name="chtmleditdoc-class"></a>CHtmlEditDoc 클래스
 
@@ -47,7 +47,7 @@ class AFX_NOVTABLE CHtmlEditDoc : public CDocument
 |[CHtmlEditDoc::IsModified](#ismodified)|사용자가 수정 된 문서 관련된 보기의 WebBrowser 컨트롤에 포함 되는지 여부를 반환 합니다.|
 |[CHtmlEditDoc::OpenURL](#openurl)|URL을 엽니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -106,8 +106,7 @@ virtual BOOL OpenURL(LPCTSTR lpszURL);
 
 성공 하면 TRUE를 반환 합니다. 실패 한 경우 FALSE입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [HTMLEdit 샘플](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

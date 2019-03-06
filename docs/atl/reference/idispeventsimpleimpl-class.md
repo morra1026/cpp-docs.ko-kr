@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - IDispEventSimpleImpl class
 ms.assetid: 971d82b7-a921-47fa-a4d8-909bed377ab0
-ms.openlocfilehash: b78edf44a200f31a6455c0783e90fb65f5d9af38
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1578518b8918f59b1da54f474e82cf899f3c76f6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51525329"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285544"
 ---
 # <a name="idispeventsimpleimpl-class"></a>IDispEventSimpleImpl 클래스
 
@@ -87,7 +87,7 @@ ActiveX 이벤트 싱크만 지 원하는 형식의 반환 값 HRESULT 또는 �
 
 자세한 내용은 [IDispEventImpl 지원](../../atl/supporting-idispeventimpl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_IDispEvent`
 
@@ -275,7 +275,7 @@ S_OK 또는 모든 오류 HRESULT 값입니다.
 
 `Unavise` 기준으로 개체의 기본 이벤트 소스의 IID를 가져옵니다 해당 기본 이벤트 소스를 사용 하 여 연결 나누기 [AtlGetObjectSourceInterface](composite-control-global-functions.md#atlgetobjectsourceinterface)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_ATL_FUNC_INFO 구조체](../../atl/reference/atl-func-info-structure.md)<br/>
 [IDispatchImpl 클래스](../../atl/reference/idispatchimpl-class.md)<br/>

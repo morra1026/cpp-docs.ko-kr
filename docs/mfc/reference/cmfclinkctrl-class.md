@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCLinkCtrl [MFC], SizeToContent
 - CMFCLinkCtrl [MFC], OnDrawFocusRect
 ms.assetid: 80f3874d-7cc8-410e-9ff1-62a225f5034b
-ms.openlocfilehash: bc43dcaf077bc97e3ff589a12bee6a8eac6aeed1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a4324fad7668907600cbaebeb5c9de4ad0e7c1e4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608587"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302723"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl 클래스
 
@@ -41,7 +41,7 @@ class CMFCLinkCtrl : public CMFCButton
 |[CMFCLinkCtrl::SetURLPrefix](#seturlprefix)|암시적 프로토콜을 설정 합니다 (예를 들어, "http:")의 URL입니다.|
 |[CMFCLinkCtrl::SizeToContent](#sizetocontent)|단추 텍스트나 비트맵 단추의 크기를 조정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -58,7 +58,7 @@ class CMFCLinkCtrl : public CMFCButton
 [!code-cpp[NVC_MFC_NewControls#9](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#10](../../mfc/reference/codesnippet/cpp/cmfclinkctrl-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -154,7 +154,7 @@ A [CSize](../../atl-mfc-shared/reference/csize-class.md) 링크 컨트롤의 새
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -36,16 +36,16 @@ helpviewer_keywords:
 - COleDataSource [MFC], OnSetData
 - COleDataSource [MFC], SetClipboard
 ms.assetid: 02c8ee7d-8e10-4463-8613-bb2a0305ca69
-ms.openlocfilehash: 539f3f1611d4d9d83d37754b66986c6b4f59549c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc3d9f089dc6289331c79c6a1e18eccbc9ff4993
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614203"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296977"
 ---
 # <a name="coledatasource-class"></a>COleDataSource 클래스
 
-응용 프로그램이 데이터를 넣어 두었다 클립보드 또는 끌어 놓기 작업과 같은 데이터 전송 작업에서 해당 데이터를 제공하는 캐시의 역할을 합니다.
+애플리케이션이 데이터를 넣어 두었다 클립보드 또는 끌어 놓기 작업과 같은 데이터 전송 작업에서 해당 데이터를 제공하는 캐시의 역할을 합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -70,7 +70,7 @@ class COleDataSource : public CCmdTarget
 |[COleDataSource::DelayRenderData](#delayrenderdata)|지연 된 렌더링을 사용 하 여 지정 된 형식으로 데이터를 제공 합니다.|
 |[COleDataSource::DelayRenderFileData](#delayrenderfiledata)|지정 된 형식으로 데이터를 제공 된 `CFile` 포인터입니다.|
 |[COleDataSource::DelaySetData](#delaysetdata)|지원 되는 모든 형식에 대 한 호출 `OnSetData`합니다.|
-|[Coledatasource:: Dodragdrop](#dodragdrop)|데이터 소스를 사용 하 여 끌어서 놓기 작업을 수행합니다.|
+|[COleDataSource::DoDragDrop](#dodragdrop)|데이터 소스를 사용 하 여 끌어서 놓기 작업을 수행합니다.|
 |[COleDataSource::Empty](#empty)|비우고는 `COleDataSource` 개체 데이터입니다.|
 |[COleDataSource::FlushClipboard](#flushclipboard)|모든 데이터를 클립보드에 렌더링합니다.|
 |[COleDataSource::GetClipboardOwner](#getclipboardowner)|클립보드에 데이터를 여전히 인지 확인 합니다.|
@@ -130,7 +130,7 @@ void CacheData(
 
 호출한 후 `CacheData` 를 `ptd` 소속 `lpFormatEtc` 의 내용과 *lpStgMedium* 호출자가 아니라 데이터 개체에 의해 소유 됩니다.
 
-지연 된 렌더링을 사용 하려면 호출을 [DelayRenderData](#delayrenderdata) 하거나 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+지연 된 렌더링을 사용 하려면 호출을 [DelayRenderData](#delayrenderdata) 하거나 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 자세한 내용은 참조는 [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) 및 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.
 
@@ -162,7 +162,7 @@ void CacheGlobalData(
 
 이 함수를 사용 하 여 즉시 렌더링; 함수를 호출할 때 데이터를 제공 해야 하므로 데이터를 제공 합니다. 데이터는 필요할 때까지 캐시 됩니다. 사용 된 `CacheData` 멤버 함수는 많은 양의 데이터 또는 구조화 된 저장소 매체 필요한 경우 제공 하는 경우.
 
-지연 된 렌더링을 사용 하려면 호출을 [DelayRenderData](#delayrenderdata) 하거나 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+지연 된 렌더링을 사용 하려면 호출을 [DelayRenderData](#delayrenderdata) 하거나 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK에는 구조입니다.
 
@@ -198,7 +198,7 @@ void DelayRenderData(
 
 이 함수를 사용 하 여 지연 된 렌더링 데이터를 즉시 제공 되지 않은 데이터를 제공 합니다. 합니다 [OnRenderData](#onrenderdata) 하거나 [OnRenderGlobalData](#onrenderglobaldata) 멤버 함수가 호출 되어 데이터를 요청 합니다.
 
-통해 데이터를 제공 하려는 경우이 함수를 사용 하 여를 `CFile` 개체입니다. 통해 데이터를 제공 하려는 경우는 `CFile` 개체를 호출 합니다 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+통해 데이터를 제공 하려는 경우이 함수를 사용 하 여를 `CFile` 개체입니다. 통해 데이터를 제공 하려는 경우는 `CFile` 개체를 호출 합니다 [DelayRenderFileData](#delayrenderfiledata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 즉시 렌더링을 사용 하려면 호출을 [CacheData](#cachedata) 하거나 [CacheGlobalData](#cacheglobaldata) 멤버 함수입니다.
 
@@ -228,7 +228,7 @@ void DelayRenderFileData(
 
 이 함수를 사용 하 여 지연 된 렌더링 데이터를 즉시 제공 되지 않은 데이터를 제공 합니다. 합니다 [OnRenderFileData](#onrenderfiledata) 멤버 함수가 호출 되어 데이터를 요청 합니다.
 
-사용 하려는 경우이 함수를 사용 하 여를 `CFile` 개체 데이터를 제공 합니다. 사용 하지 않을 경우는 `CFile` 개체를 호출 합니다 [DelayRenderData](#delayrenderdata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+사용 하려는 경우이 함수를 사용 하 여를 `CFile` 개체 데이터를 제공 합니다. 사용 하지 않을 경우는 `CFile` 개체를 호출 합니다 [DelayRenderData](#delayrenderdata) 멤버 함수입니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 즉시 렌더링을 사용 하려면 호출을 [CacheData](#cachedata) 하거나 [CacheGlobalData](#cacheglobaldata) 멤버 함수입니다.
 
@@ -262,7 +262,7 @@ void DelaySetData(
 
 자세한 내용은 [됩니다](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Windows SDK에 있습니다.
 
-##  <a name="dodragdrop"></a>  Coledatasource:: Dodragdrop
+##  <a name="dodragdrop"></a>  COleDataSource::DoDragDrop
 
 호출 된 `DoDragDrop` 멤버 함수에서 일반적으로이 데이터 원본에 대 한 끌어서 놓기 작업을 수행 하는 [CWnd::OnLButtonDown](../../mfc/reference/cwnd-class.md#onlbuttondown) 처리기입니다.
 
@@ -310,7 +310,7 @@ DROPEFFECT DoDragDrop(
 
 지연 정보 중 하나는 레지스트리에 저장 된 방법에 대 한 자세한 내용은 끌어에 대 한 또는 합니다. INI 파일을 참조 하세요 [WriteProfileString](/windows/desktop/api/winbase/nf-winbase-writeprofilestringa) Windows SDK에 있습니다.
 
-자세한 내용은 문서 참조 [끌어서 놓기: 놓기 소스 구현](../../mfc/drag-and-drop-implementing-a-drop-source.md)합니다.
+자세한 내용은 문서를 참조 하세요. [끌어다 놓습니다. 놓기 소스 구현](../../mfc/drag-and-drop-implementing-a-drop-source.md)합니다.
 
 ##  <a name="empty"></a>  COleDataSource::Empty
 
@@ -374,7 +374,7 @@ virtual BOOL OnRenderData(
 
 ### <a name="remarks"></a>설명
 
-지정 된 형식은 이전에 하나를 `COleDataSource` 를 사용 하 여 개체를 [DelayRenderData](#delayrenderdata) 또는 [DelayRenderFileData](#delayrenderfiledata) 지연 된 렌더링에 대 한 멤버 함수입니다. 이 함수의 기본 구현이 호출 됩니다 [OnRenderFileData](#onrenderfiledata) 하거나 [OnRenderGlobalData](#onrenderglobaldata) 경우 제공 되는 저장소 미디어 파일 또는 메모리, 각각. 이러한 형식은 모두 제공 그런 다음 기본 구현에서는 0을 반환 하 고 아무 작업도 수행 됩니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+지정 된 형식은 이전에 하나를 `COleDataSource` 를 사용 하 여 개체를 [DelayRenderData](#delayrenderdata) 또는 [DelayRenderFileData](#delayrenderfiledata) 지연 된 렌더링에 대 한 멤버 함수입니다. 이 함수의 기본 구현이 호출 됩니다 [OnRenderFileData](#onrenderfiledata) 하거나 [OnRenderGlobalData](#onrenderglobaldata) 경우 제공 되는 저장소 미디어 파일 또는 메모리, 각각. 이러한 형식은 모두 제공 그런 다음 기본 구현에서는 0을 반환 하 고 아무 작업도 수행 됩니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 경우 *lpStgMedium*-> *tymed* TYMED_NULL, 되는 `STGMEDIUM` 할당 되 고 지정 된 대로 입력 해야 *lpFormatEtc tymed->* 합니다. TYMED_NULL, 없는 경우는 `STGMEDIUM` 데이터를 채워야 합니다.
 
@@ -408,7 +408,7 @@ virtual BOOL OnRenderFileData(
 
 지정 된 형식은 이전에 하나를 `COleDataSource` 를 사용 하 여 개체를 [DelayRenderData](#delayrenderdata) 지연 된 렌더링에 대 한 멤버 함수입니다. 이 함수의 기본 구현은 단순히 FALSE를 반환합니다.
 
-이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 `OnRenderFileData`합니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 `OnRenderFileData`합니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 및 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK의 합니다.
 
@@ -440,7 +440,7 @@ virtual BOOL OnRenderGlobalData(
 
 하는 경우 *phGlobal* 가 NULL 이면 새 HGLOBAL 할당 되 고 반환 해야 *phGlobal*합니다. 여는 HGLOBAL 지정 하는 고, 그렇지 *phGlobal* 데이터로 채워야 합니다. HGLOBAL에 배치 하는 데이터의 양이 메모리 블록의 현재 크기를 초과할 수 없습니다. 또한 더 큰 크기로 블록 다시 할당할 수 없습니다.
 
-이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 [OnRenderFileData](#onrenderfiledata)합니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
+이 고급 재정의할 수 있습니다. 요청 된 형식 및 미디어 데이터를 제공 하려면이 함수를 재정의 합니다. 데이터에 따라 대신이 함수의 다른 버전 중 하나를 재정의 하는 것이 좋습니다. 여러 저장소 미디어를 처리 하려는 경우 재정의할 [OnRenderData](#onrenderdata)합니다. 데이터 파일에는 가변 크기의 경우 재정의 [OnRenderFileData](#onrenderfiledata)합니다. 자세한 내용은 지연 된 렌더링 MFC에서 처리 된 것으로 문서를 참조 하세요. [데이터 개체 및 데이터 소스: 조작](../../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
 자세한 내용은 참조는 [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) 구조 및 [있음](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) Windows SDK의 합니다.
 
@@ -480,15 +480,15 @@ virtual BOOL OnSetData(
 
 ##  <a name="setclipboard"></a>  COleDataSource::SetClipboard
 
-포함 된 데이터를 저장 합니다 `COleDataSource` 개체는 다음 함수 중 하나를 호출한 후 클립보드에: [CacheData](#cachedata)를 [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), 또는 [DelayRenderFileData](#delayrenderfiledata)합니다.
+에 포함 된 데이터는 `COleDataSource` 다음 함수 중 하나를 호출한 후 클립보드에 개체: [CacheData](#cachedata)하십시오 [CacheGlobalData](#cacheglobaldata), [DelayRenderData](#delayrenderdata), 또는 [DelayRenderFileData](#delayrenderfiledata)합니다.
 
 ```
 void SetClipboard();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler policies
 ms.assetid: 58fb68bd-4a57-40a8-807b-6edb6f083cd9
-ms.openlocfilehash: df045f7df9d0640b96ae1227c65c65aa7e432350
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2acfc199e7ad9edf3965dc8ccb4103eb615a66b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668743"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298137"
 ---
 # <a name="scheduler-policies"></a>Scheduler 정책
 
@@ -49,11 +49,10 @@ ms.locfileid: "50668743"
 
 ## <a name="example"></a>예제
 
-특정 스케줄러 정책을 사용 하 여 스케줄러의 동작을 제어 하는 예제를 보려면을 참조 하세요 [방법: 특정 스케줄러 정책 지정](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md) 및 [방법: 에이전트는 사용 하 여 특정 스케줄러 정책 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md).
+특정 스케줄러 정책을 사용 하 여 스케줄러의 동작을 제어 하는 예제를 검사 하려면 참조 [방법: 특정 스케줄러 정책 지정](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md) 고 [방법: 특정 스케줄러 정책을 사용 하는 에이전트 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [방법: 특정 스케줄러 정책 지정](../../parallel/concrt/how-to-specify-specific-scheduler-policies.md)<br/>
 [방법: 특정 스케줄러 정책을 사용하는 에이전트 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
-

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CArchive class [MFC], about CArchive class [MFC]
 - buffering, serializable objects
 ms.assetid: 843f1825-288d-4d89-a1fa-70e1f92d9b8b
-ms.openlocfilehash: 08260d1a1b21658e879410ff5201e5f455535332
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bae451168449ce3e120ba9d172a615864ac2157
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519342"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270399"
 ---
 # <a name="what-is-a-carchive-object"></a>CArchive 개체
 
@@ -27,7 +27,6 @@ A `CArchive` 쓰거나를 직렬화 가능 개체를 읽기에 대 한 형식이
 
 데이터는 보관으로 serialize 하는 대로 해당 버퍼가 가득 찰 때까지 보관 데이터를 누적 합니다. 다음, 해당 버퍼를 보관 파일에 작성 합니다 `CFile` 가리키는 개체는 `CArchive` 개체입니다. 마찬가지로, 보관 파일에서 데이터를 읽고 나면 데이터를 읽는 버퍼에 파일에서 다음 버퍼 deserialize 된 개체입니다. 이 버퍼링 되므로 응용 프로그램의 성능이 향상 하드 디스크를 읽을 실제로 횟수를 줄입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[Serialization: 개체 Serialize](../mfc/serialization-serializing-an-object.md)
-
+[Serialization: 개체를 직렬화 하는 작업](../mfc/serialization-serializing-an-object.md)

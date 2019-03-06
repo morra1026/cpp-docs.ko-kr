@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CBaseKeyFrame [MFC], m_bIsKeyframeAtOffset
 - CBaseKeyFrame [MFC], m_keyframe
 ms.assetid: 285a2eff-e7c4-43be-b5aa-737727e6866d
-ms.openlocfilehash: 850ce46f524d9069609c1e5809c091c18bd58ee4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d36c924d30bd728fcd54b6cdf6805ade25e20b5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618246"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296607"
 ---
 # <a name="cbasekeyframe-class"></a>CBaseKeyFrame 클래스
 
@@ -68,7 +68,7 @@ class CBaseKeyFrame : public CObject;
 
 UI_ANIMATION_KEYFRAME 변수를 캡슐화합니다. 키프레임 구현 위한 기본 클래스로 사용 됩니다. 키 프레임을 스토리 보드 내에 순간을 나타내는 및 전환의 시작 및 종료 시간을 지정 하려면 사용할 수 있습니다. 키 프레임-(시간) 내에 지정된 된 오프셋에서 스토리 보드에 추가 하는 키 프레임 또는 지정 된 전환 후 추가 하는 키 프레임의는 다음과 같은 두 종류가 있습니다. 애니메이션 시작 되기 전에 전환의 기간을 알 수 없으므로 때문에 일부 키 프레임의 실제 값만 런타임에 결정 됩니다. 키 프레임의 해당 키 프레임에 종속 되는 전환에 따라 달라질 수 있습니다 이므로 키 프레임 체인을 빌드할 때 무한 재귀를 방지 해야 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -184,6 +184,6 @@ Windows 애니메이션 API 키 프레임을 나타냅니다. 키 프레임 초�
 UI_ANIMATION_KEYFRAME m_keyframe;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMemoryException [MFC], CMemoryException
 ms.assetid: 9af0ed57-d12a-45ca-82b5-c910a60f7edf
-ms.openlocfilehash: e4a399ffb4c0d2161479ed7c84e66eb58a9260ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 11be0eba080085c507ed718ea23219ca1c93aeba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552843"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294748"
 ---
 # <a name="cmemoryexception-class"></a>CMemoryException 클래스
 
@@ -39,7 +39,7 @@ class CMemoryException : public CSimpleException
 
 에 대 한 자세한 `CMemoryException`, 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -65,8 +65,7 @@ CMemoryException();
 
 이 생성자를 직접 사용 하지 않고 대신 전역 함수를 호출 [AfxThrowMemoryException](exception-processing.md#afxthrowmemoryexception)합니다. 이 전역 함수는 이전에 할당 된 메모리에 있는 예외 개체를 생성 하기 때문에 메모리 부족 상황에서 성공할 수 있습니다. 예외 처리에 대 한 자세한 내용은 문서 참조 [예외](../exception-handling-in-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](cexception-class.md)<br/>
 [계층 구조 차트](../hierarchy-chart.md)
-

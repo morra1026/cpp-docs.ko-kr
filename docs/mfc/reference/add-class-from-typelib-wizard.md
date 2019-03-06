@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add Class from TypeLib Wizard [MFC]
 - COM interfaces, adding classes
 ms.assetid: 96152afd-9374-4649-a6ab-b0fa2a5592a3
-ms.openlocfilehash: c0423ac06aa46b65c1fb0ffb3935d4bb54821ee9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a2c291e1c9e78d288bdb2d15f224520d764dfa1b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654339"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273883"
 ---
 # <a name="add-class-from-typelib-wizard"></a>Typelib에서 클래스 추가 마법사
 
@@ -34,7 +34,7 @@ ms.locfileid: "50654339"
 
    시스템에 현재 등록 된 형식 라이브러리를 나열 합니다. 형식 라이브러리에서 해당 인터페이스를 표시 하려면이 목록에서 선택 합니다 **인터페이스** 목록입니다.
 
-   "내 Distributed COM:: 형식 라이브러리 및 언어 통합" 형식 라이브러리를 등록 하는 방법에 대 한 자세한 내용은 MSDN 라이브러리의를 참조 하세요.
+   참조 "내부 Distributed COM: 형식 라이브러리 및 언어 통합 "형식 라이브러리를 등록 하는 방법에 대 한 자세한 내용은 MSDN 라이브러리에서.
 
 - **위치**
 
@@ -67,8 +67,7 @@ ms.locfileid: "50654339"
 
    마법사는 파일을 덮어쓰지 않습니다. 기존 파일의 이름을 선택하면 마법사에서 **마침**을 클릭할 때 클래스 선언을 파일의 내용에 추가해야 하는지 여부를 나타내는 메시지가 표시됩니다. **예**를 클릭하여 파일을 추가하거나, **아니요**를 클릭하여 마법사로 돌아가서 다른 파일 이름을 지정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [형식 라이브러리에서 MFC 클래스](../../mfc/reference/adding-an-mfc-class-from-a-type-library.md)<br/>
-[자동화 클라이언트: 형식 라이브러리 사용](../../mfc/automation-clients-using-type-libraries.md)
-
+[자동화 클라이언트: 형식 라이브러리를 사용 하 여](../../mfc/automation-clients-using-type-libraries.md)

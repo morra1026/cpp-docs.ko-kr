@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CAsyncMonikerFile [MFC], OnStartBinding
 - CAsyncMonikerFile [MFC], OnStopBinding
 ms.assetid: 17378b66-a49a-4b67-88e3-7756ad26a2fc
-ms.openlocfilehash: 107f791505bc41b8dbf9c0374c5e3821abbc0fe3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b86cba0c2e8f7991902a552d404355d6c1474138
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50669068"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425824"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile 클래스
 
@@ -66,7 +66,7 @@ class CAsyncMonikerFile : public CMonikerFile
 |[CAsyncMonikerFile::GetFormatEtc](#getformatetc)|스트림의 데이터의 형식을 검색합니다.|
 |[CAsyncMonikerFile::Open](#open)|비동기적으로 파일을 엽니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -91,7 +91,7 @@ class CAsyncMonikerFile : public CMonikerFile
 
 - [인터넷 첫 번째 단계: ActiveX 컨트롤](../../mfc/activex-controls-on-the-internet.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -158,7 +158,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
 
 [CAsyncMonikerFile::Open](#open) 호출 `CreateBindStatusCallback`합니다.
 
-비동기 모니커 및 비동기 바인딩에 대 한 자세한 내용은 참조는 [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) 인터페이스 및 [비동기 바인딩 방법 및 저장소](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work)합니다. 집계의 논의 참조 하세요 [집계](/windows/desktop/com/aggregation)합니다. Windows SDK의 모든 세 가지 항목은입니다.
+비동기 모니커 및 비동기 바인딩에 대 한 자세한 내용은 참조는 [IBindStatusCallback](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775060\(v=vs.85\)) 인터페이스 및 [비동기 바인딩 방법 및 저장소](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work)합니다. 집계의 논의 참조 하세요 [집계](/windows/desktop/com/aggregation)합니다. Windows SDK의 모든 세 가지 항목은입니다.
 
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo
 
@@ -218,7 +218,7 @@ virtual LONG GetPriority() const;
 
 ### <a name="return-value"></a>반환 값
 
-우선 순위는 비동기 전송을 수행 됩니다. 표준 스레드 우선 순위 플래그 중 하나: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, 및 THREAD_PRIORITY_TIME_CRITICAL 합니다. Windows 함수를 참조 하십시오 [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) 이러한 값에 대 한 합니다.
+우선 순위는 비동기 전송을 수행 됩니다. 표준 스레드 우선 순위 플래그 중 하나입니다. THREAD_PRIORITY_ABOVE_NORMAL THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL, 및 THREAD_PRIORITY_TIME_CRITICAL 합니다. Windows 함수를 참조 하십시오 [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) 이러한 값에 대 한 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -422,7 +422,7 @@ URL 또는 파일 이름을 사용할 수는 *lpszURL* 매개 변수입니다. �
 
 [!code-cpp[NVC_MFCWinInet#7](../../mfc/codesnippet/cpp/casyncmonikerfile-class_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CMonikerFile 클래스](../../mfc/reference/cmonikerfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CSinusoidalTransitionFromRange [MFC], m_period
 - CSinusoidalTransitionFromRange [MFC], m_slope
 ms.assetid: 8b66a729-5f10-431a-b055-e3600d0065da
-ms.openlocfilehash: 20e910dfa34e90af2c8a2765947ad85a2465c596
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: df360493413e850f4c0fcee41c925cd256c16dad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477586"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283815"
 ---
 # <a name="csinusoidaltransitionfromrange-class"></a>CSinusoidalTransitionFromRange 클래스
 
@@ -65,7 +65,7 @@ class CSinusoidalTransitionFromRange : public CBaseTransition;
 
 애니메이션 변수 값은 사인 곡선 범위 전환의 전체 기간 동안 지정된 된 최소 및 최대 값을 번갈아합니다. 기울기 매개 변수는 다른 매개 변수로 지정 된 두 개의 가능한 사인 파형 사이의 모호함 없애기 위해 사용 됩니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -120,10 +120,10 @@ CSinusoidalTransitionFromRange(
 *dblMaximumValue*<br/>
 사인 곡선 웨이브의 피크 애니메이션 변수의 값입니다.
 
-*기간*<br/>
+*period*<br/>
 기간 (초)에서의 사인 곡선 wave 진동입니다.
 
-*기울기*<br/>
+*slope*<br/>
 전환의 시작 부분에 기울기입니다.
 
 ##  <a name="m_dblmaximumvalue"></a>  CSinusoidalTransitionFromRange::m_dblMaximumValue
@@ -166,6 +166,6 @@ UI_ANIMATION_SECONDS m_period;
 UI_ANIMATION_SLOPE m_slope;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

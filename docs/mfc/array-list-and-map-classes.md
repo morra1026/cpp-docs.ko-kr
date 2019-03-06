@@ -10,12 +10,12 @@ helpviewer_keywords:
 - map classes [MFC]
 - collection classes [MFC], lists
 ms.assetid: 81a13a7f-0c2c-4efd-b6bb-b4e624a0743d
-ms.openlocfilehash: 0856a9de06d07b3851dc748644e84ba9c4b56c4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b89b99abb79fe689274f9e0b89a85bb33643d324
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601047"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274377"
 ---
 # <a name="array-list-and-map-classes"></a>배열, 목록 및 맵 클래스
 
@@ -27,7 +27,6 @@ ms.locfileid: "50601047"
 
 지도는 데이터 값에 키 값을 연결합니다. 예를 들어 맵의 키 문자열 및 데이터를 목록에 대 한 포인터를 수 있습니다. 연결 된 특정 문자열 포인터를 제공 하는 맵을 주시기 합니다. 지도 키 조회에 대 한 해시 테이블을 사용 하기 때문에 지도 조회 속도가 빠릅니다. 항목 추가 및 삭제 빠른 이기도 합니다. Maps 보조 인덱스로 기타 데이터 구조를 사용 하 여 자주 사용 됩니다. MFC는 특수 한 유형의 지도 호출을 사용 하는 [메시지 맵을](../mfc/mapping-messages.md) Windows 메시지는 메시지에 대 한 처리기 함수에 대 한 포인터를 매핑할 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

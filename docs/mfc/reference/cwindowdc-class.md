@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CWindowDC [MFC], CWindowDC
 - CWindowDC [MFC], m_hWnd
 ms.assetid: 876a3641-4cde-471c-b0d1-fe58b32af79c
-ms.openlocfilehash: eccea1893979c4491f7080d0d3dc980adaf19025
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 55a9ccfc496c95c9e7410cbd5645135ee555ff26
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50553051"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289353"
 ---
 # <a name="cwindowdc-class"></a>CWindowDC 클래스
 
@@ -47,7 +47,7 @@ Windows 함수 호출 [GetWindowDC](/windows/desktop/api/winuser/nf-winuser-getw
 
 사용 하 여 대 한 자세한 내용은 `CWindowDC`를 참조 하세요 [장치 컨텍스트](../../mfc/device-contexts.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -98,7 +98,7 @@ HWND m_hWnd;
 
   예를 참조 하세요 [CWindowDC::CWindowDC](#cwindowdc)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDC 클래스](../../mfc/reference/cdc-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

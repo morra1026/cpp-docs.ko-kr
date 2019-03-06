@@ -43,12 +43,12 @@ helpviewer_keywords:
 - registry, writing to
 - Visual C++, writing to Windows Registry
 ms.assetid: b9a75cb4-0589-4d5b-92cb-5e8be42b4ac0
-ms.openlocfilehash: d23eef1d48674751a725e076d1b652b304ad40a6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1075c70b10ca8c59272e9a9de8a9a3fd7aa248e6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508396"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415086"
 ---
 # <a name="windows-operations-ccli"></a>Windows 작업(C++/CLI)
 
@@ -144,7 +144,7 @@ int main( )
 
 합니다 <xref:Microsoft.Win32.Registry> 클래스는 정적 인스턴스의 컨테이너 단순히 <xref:Microsoft.Win32.RegistryKey>합니다. 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스가 <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>합니다 <xref:Microsoft.Win32.Registry.LocalMachine>, 및 <xref:Microsoft.Win32.Registry.Users>합니다.
 
-또한으로 정적 내의 개체는 <xref:Microsoft.Win32.Registry> 클래스는 읽기 전용입니다. 또한 인스턴스의 <xref:Microsoft.Win32.RegistryKey> 레지스트리의 내용에 액세스 하기 위해 만든 클래스 개체도 읽기 전용입니다. 이 동작을 재정의 하는 방법의 예제를 참조 하세요 [방법: Windows 레지스트리에 데이터 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md)합니다.
+또한으로 정적 내의 개체는 <xref:Microsoft.Win32.Registry> 클래스는 읽기 전용입니다. 또한 인스턴스의 <xref:Microsoft.Win32.RegistryKey> 레지스트리의 내용에 액세스 하기 위해 만든 클래스 개체도 읽기 전용입니다. 이 동작을 재정의 하는 방법의 예제를 참조 하세요. [방법: Windows 레지스트리에 데이터 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-data-to-the-windows-registry-cpp-cli.md)합니다.
 
 두 가지 추가 개체에는 <xref:Microsoft.Win32.Registry> 클래스: <xref:Microsoft.Win32.Registry.DynData> 고 <xref:Microsoft.Win32.Registry.PerformanceData>입니다. 둘 다의 인스턴스는 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. <xref:Microsoft.Win32.Registry.DynData> Windows 98 및 me. Windows 에서만 지원 되는 동적 레지스트리 정보를 포함 하는 개체 <xref:Microsoft.Win32.Registry.PerformanceData> Windows 성능 모니터링 시스템을 사용 하는 응용 프로그램에 대 한 성능 카운터 정보에 액세스 하려면 개체를 사용할 수 있습니다. <xref:Microsoft.Win32.Registry.PerformanceData> 노드는 실제로 레지스트리에 저장 되지 않으며 따라서 볼 수 없습니다 Regedit.exe를 사용 하는 정보를 나타냅니다.
 
@@ -503,7 +503,7 @@ int main()
 
 ### <a name="remarks"></a>설명
 
-.NET Framework를 사용 하 여 사용 하 여 레지스트리에 액세스 하는 <xref:Microsoft.Win32.Registry> 및 [RegistryKey](https://msdn.microsoft.com/library/microsoft.win32.registrykey.aspx) 에 정의 된 클래스 모두는 <xref:Microsoft.Win32> 네임 스페이스입니다. 합니다 **레지스트리** 클래스의 정적 인스턴스에 대 한 컨테이너인는 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스가 <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>합니다 <xref:Microsoft.Win32.Registry.LocalMachine>, 및 <xref:Microsoft.Win32.Registry.Users>합니다.
+.NET Framework를 사용 하 여 사용 하 여 레지스트리에 액세스 하는 <xref:Microsoft.Win32.Registry> 및 <xref:Microsoft.Win32.RegistryKey> 둘 다를 수 있는 클래스에 정의 <xref:Microsoft.Win32> 네임 스페이스입니다. 합니다 **레지스트리** 클래스의 정적 인스턴스에 대 한 컨테이너인는 <xref:Microsoft.Win32.RegistryKey> 클래스입니다. 각 인스턴스는 루트 레지스트리 노드를 나타냅니다. 인스턴스가 <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>합니다 <xref:Microsoft.Win32.Registry.LocalMachine>, 및 <xref:Microsoft.Win32.Registry.Users>합니다.
 
 ## <a name="related-sections"></a>관련 단원
 

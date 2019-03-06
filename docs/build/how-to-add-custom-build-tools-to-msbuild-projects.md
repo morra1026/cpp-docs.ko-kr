@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - 'msbuild (c++), howto: add custom build tools'
 ms.assetid: de03899a-371d-4396-9bf9-34f45a65e909
-ms.openlocfilehash: 48923c997c881e8786a8c20b00077161cf470195
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d07c8de3405791e94193368e921c0f594845a418
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50543470"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413851"
 ---
 # <a name="how-to-add-custom-build-tools-to-msbuild-projects"></a>방법: MSBuild 프로젝트에 사용자 지정 빌드 도구 추가
 
@@ -19,7 +19,7 @@ ms.locfileid: "50543470"
 
 특정 파일을 실행 하려면 프로젝트 파일 (.vcxproj) 명령줄, 모든 추가 입력 또는 출력 파일 및 표시할 메시지를 지정 합니다. 하는 경우 **MSBuild** 출력 파일이 입력된 파일 보다 이전 버전임을 메시지를 표시 하 고 실행 명령줄 도구를 결정 합니다.
 
-사용자 지정 빌드 도구를 실행 하는 경우를 지정 하려면 중 하나 또는 모두를 사용 합니다 `CustomBuildBeforeTargets` 고 `CustomBuildAfterTargets` 프로젝트 파일에서 XML 요소입니다. 예를 들어, 사용자 지정 빌드 도구 실행 MIDL 컴파일러와 C/c + + 컴파일러는 지정할 수 있습니다. 지정 된 `CustomBuildBeforeTargets` 특정 대상을 실행 하기 전에 도구를 실행 하는 요소는 `CustomBuildAfterTargets` 특정 대상; 후 도구를 실행 하는 요소 또는 두 요소 모두 두 대상 실행 간에 도구를 실행 하 합니다. 기본 위치를 앞에 사용자 지정 빌드 도구 실행 하지 않고 지정 된 경우는 **MIDL** 대상입니다.
+사용자 지정 빌드 도구를 실행 하는 경우를 지정 하려면 중 하나 또는 모두를 사용 합니다 `CustomBuildBeforeTargets` 고 `CustomBuildAfterTargets` 프로젝트 파일에서 XML 요소입니다. 예를 들어, 사용자 지정 빌드 도구 실행 MIDL 컴파일러와 C/C++ 컴파일러는 지정할 수 있습니다. 지정 된 `CustomBuildBeforeTargets` 특정 대상을 실행 하기 전에 도구를 실행 하는 요소는 `CustomBuildAfterTargets` 특정 대상; 후 도구를 실행 하는 요소 또는 두 요소 모두 두 대상 실행 간에 도구를 실행 하 합니다. 기본 위치를 앞에 사용자 지정 빌드 도구 실행 하지 않고 지정 된 경우는 **MIDL** 대상입니다.
 
 사용자 지정 빌드 단계 및 사용자 지정 빌드 도구에 지정 된 정보를 공유 합니다 `CustomBuildBeforeTargets` 고 `CustomBuildAfterTargets` XML 요소입니다. 프로젝트 파일에서 해당 대상으로 한 번만 지정 합니다.
 
@@ -48,7 +48,7 @@ ms.locfileid: "50543470"
     </PropertyGroup>
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [연습: MSBuild를 사용하여 Visual C++ 프로젝트 만들기](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)<br/>
 [방법: MSBuild 프로젝트에서 빌드 이벤트 사용](../build/how-to-use-build-events-in-msbuild-projects.md)<br/>

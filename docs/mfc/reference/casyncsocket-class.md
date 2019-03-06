@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CAsyncSocket [MFC], OnSend
 - CAsyncSocket [MFC], m_hSocket
 ms.assetid: cca4d5a1-aa0f-48bd-843e-ef0e2d7fc00b
-ms.openlocfilehash: b138c4f84a10823d9c340218baefd530c016027a
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: ef486e653eaf78914ea25663e0c1ab744ab30cd4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179034"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260012"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket 클래스
 
@@ -130,7 +130,7 @@ class CAsyncSocket : public CObject
 |[CAsyncSocket::ShutDown](#shutdown)|사용 하지 않도록 설정 `Send` 및/또는 `Receive` 소켓에서 호출 합니다.|
 |[CASyncSocket::Socket](#socket)|소켓 핸들을 할당합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -146,7 +146,7 @@ class CAsyncSocket : public CObject
 |이름|설명|
 |----------|-----------------|
 |[CAsyncSocket::operator =](#operator_eq)|새 값을 할당 한 `CAsyncSocket` 개체입니다.|
-|[CAsyncSocket::operator 소켓](#operator_socket)|이 연산자의 소켓 핸들을 검색 하는 데는 `CAsyncSocket` 개체입니다.|
+|[CAsyncSocket::operator SOCKET](#operator_socket)|이 연산자의 소켓 핸들을 검색 하는 데는 `CAsyncSocket` 개체입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -167,7 +167,7 @@ class CAsyncSocket : public CObject
 
 자세한 내용은 참조 하세요. [Windows 소켓: Casyncsocket 클래스 사용](../../mfc/windows-sockets-using-class-casyncsocket.md) 관련 문서. 뿐만 [Windows 소켓 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -872,7 +872,7 @@ BOOL IOCtl(
 
 ### <a name="remarks"></a>설명
 
-모든 상태에서 모든 소켓에서이 루틴을 사용할 수 있습니다. 가져오기 또는 연결 된 소켓, 프로토콜 및 통신 하위 시스템의 독립적인 운영 매개 변수를 검색 하는 것이 됩니다. 다음 명령은 지원 됩니다.
+모든 상태에서 모든 소켓에서이 루틴을 사용할 수 있습니다. 가져오기 또는 연결 된 소켓, 프로토콜 및 통신 하위 시스템의 독립적인 운영 매개 변수를 검색 하는 것이 됩니다. 다음 명령이 지원됩니다.
 
 - FIONBIO 사용 하거나 소켓에서 비차단 모드를 사용 하지 않도록 설정 합니다. 합니다 *lpArgument* 매개 변수를 가리키는 `DWORD`는 비차단 모드를 사용 하도록 설정 하려면 0이 아닌 이며 사용할 수 없게 하는 경우 0입니다. 하는 경우 `AsyncSelect` 실행 된 소켓을 사용 하려는 모든 시도 `IOCtl` WSAEINVAL를 사용 하 여 블로킹 모드 다시 실패 소켓을 설정 합니다. 소켓이 블로킹 모드 다시 설정 하 고 WSAEINVAL 오류 방지, 응용 프로그램 해제 해야 합니다 `AsyncSelect` 를 호출 하 여 `AsyncSelect` 사용 하 여 합니다 *lEvent* 매개 변수를 0으로 호출 `IOCtl`합니다.
 
@@ -1125,7 +1125,7 @@ void operator=(const CAsyncSocket& rSrc);
 
 기존 복사 하려면이 함수를 호출 `CAsyncSocket` 개체를 다른 `CAsyncSocket` 개체입니다.
 
-##  <a name="operator_socket"></a>  CAsyncSocket::operator 소켓
+##  <a name="operator_socket"></a>  CAsyncSocket::operator SOCKET
 
 이 연산자의 소켓 핸들을 검색 하는 데는 `CAsyncSocket` 개체입니다.
 
@@ -1755,11 +1755,11 @@ BOOL ShutDown(int nHow = sends);
 *nHow*<br/>
 작업의 종류를 설명 하는 플래그는 더 이상 허용은 다음 열거형된 값을 사용 하 여:
 
-- **수신 = 0**
+- **receives = 0**
 
-- **전송 = 1**
+- **sends = 1**
 
-- **모두 = 2**
+- **both = 2**
 
 ### <a name="return-value"></a>반환 값
 
@@ -1835,7 +1835,7 @@ BOOL Socket(
 
 이 메서드는 소켓 핸들을 할당합니다. 호출 하지 않습니다 [CAsyncSocket::Bind](#bind) 소켓을 바인딩하지 지정된 된 주소에 호출 해야 하므로 `Bind` 나중에 바인딩할 소켓 주소를 지정된 합니다. 사용할 수 있습니다 [CAsyncSocket::SetSockOpt](#setsockopt) 연결 되기 전에 소켓 옵션을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

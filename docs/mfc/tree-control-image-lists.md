@@ -6,12 +6,12 @@ helpviewer_keywords:
 - tree controls [MFC], image lists
 - CTreeCtrl class [MFC], image lists
 ms.assetid: f560c4f2-20d2-4d28-ac33-4017e65fb0a6
-ms.openlocfilehash: e42e601fbf803f8ccfe359a10664149ac8f11086
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: f4dc4f0d7b2cfb78b07b23802054f119da9cbbc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693247"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290679"
 ---
 # <a name="tree-control-image-lists"></a>트리 컨트롤 이미지 목록
 
@@ -27,8 +27,7 @@ ms.locfileid: "51693247"
 
 합니다 [GetImageList](../mfc/reference/ctreectrl-class.md#getimagelist) 멤버 함수는 트리 컨트롤 이미지 목록의 핸들을 검색 합니다. 이 함수는 목록에 이미지를 추가 해야 할 경우에 유용 합니다. 이미지 목록에 대 한 자세한 내용은 참조 하세요. [CImageList를 사용 하 여](../mfc/using-cimagelist.md)를 [CImageList](../mfc/reference/cimagelist-class.md) 에 *MFC 참조*, 및 [이미지 나열](/windows/desktop/controls/image-lists) 에 Windows SDK입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

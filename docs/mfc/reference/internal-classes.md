@@ -307,25 +307,25 @@ helpviewer_keywords:
 - CMenuImages class [MFC]
 - CleanUp method [MFC]
 ms.assetid: 3e2276aa-b02a-4781-97ba-ea074045e9e2
-ms.openlocfilehash: 706ba4cdd1a8f9d77857c52898058aa62fcca8c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae35aefefe548990eeb7fbe637839e475036c2bc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435492"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300091"
 ---
 # <a name="internal-classes"></a>내부 클래스
 
 다음 클래스는 MFC에서 내부적으로 사용 됩니다. 완벽을 기하기 위해 이 단원에서는 이러한 내부 클래스에 대해 설명하지만 이러한 내부 클래스는 코드에서 직접 사용할 수 없습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 |클래스|설명|
 |-----------|-----------------|
 |`CCommandManager Class`|`CCommandManager` 명령 및 이미지와 연결 하 여 클래스를 관리 합니다.|
 |`CDialogImpl Class (MFC)`|와 같은 구현 세부 정보 대화 상자 기반 클래스를 제공 `CDialogEx`합니다.|
 |`CDocumentAdapter Class`|검색 및 구성 처리기에 필요한 IDocument 인터페이스를 구현 합니다.|
-|`CFrameImpl Class`|합니다 `CFrameImpl` 클래스에는 다음 프레임 창 클래스에 대 한 도구 모음 사용자 지정 처리: [CFrameWndEx 클래스](../../mfc/reference/cframewndex-class.md), [CMDIFrameWndEx 클래스](../../mfc/reference/cmdiframewndex-class.md), 및 [COleIPFrameWndEx클래스](../../mfc/reference/coleipframewndex-class.md).|
+|`CFrameImpl Class`|`CFrameImpl` 클래스는 다음 프레임 창 클래스에 대 한 도구 모음 사용자 지정을 처리 합니다. [CFrameWndEx 클래스](../../mfc/reference/cframewndex-class.md)하십시오 [CMDIFrameWndEx 클래스](../../mfc/reference/cmdiframewndex-class.md), 및 [COleIPFrameWndEx 클래스](../../mfc/reference/coleipframewndex-class.md)합니다.|
 |`CFullScreenImpl Class`|전체 화면 기능을 구현 SDI 및 MDI 응용 프로그램에 공통적으로 적용 합니다.|
 |`CMDIClientAreaWnd Class`|`CMDIClientAreaWnd` 클래스는 MDI 탭 및 MDI 탭 그룹의 구현을 간소화 하는 도우미 클래스입니다.|
 |`CMemDC Class`|메모리 장치 컨텍스트에 대 한 도우미 클래스입니다. 메모리 장치 컨텍스트는 오프 스크린 그리기를 지원합니다.|
@@ -409,7 +409,6 @@ ms.locfileid: "50435492"
 |`CVSListBoxEditCtrl Class`|대화 상자를 여는 작은 단추를 표시 하 여 표준 목록 상자 편집 컨트롤을 확장 합니다.|
 |`CVSToolsListBox Class`|표준 목록 상자 컨트롤을 추가, 삭제 및 목록 상자에서 항목을 이동 하기 위한 추가 단추를 제공 하 여 확장 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 데스크톱 응용 프로그램](../../mfc/mfc-desktop-applications.md)
-

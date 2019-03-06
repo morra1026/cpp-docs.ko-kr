@@ -8,12 +8,12 @@ helpviewer_keywords:
 - export files
 - import libraries, creating
 ms.assetid: d8175596-9773-4c2f-959d-b05b065a5161
-ms.openlocfilehash: 71162d896ee76d99f5d47dfa670b62d456243837
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa759482d6949b27f5076643d83e92cddc1d8fac
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445684"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416568"
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>가져오기 라이브러리 및 내보내기 파일을 사용한 작업
 
@@ -25,6 +25,6 @@ Note는.dll을 만들기 전에 예비 단계에서 가져오기 라이브러리
 
 그러나 DLL로 가져오기도 수행 하는 프로그램을 내보내면 때 여부 직접 또는 간접적으로 사용 해야 LIB 가져오기 라이브러리 중 하나를 만들려면. LIB 가져오기 라이브러리를 만들 때 또한 내보내기 파일을 만듭니다. Dll 중 하나를 연결 하는 경우에 내보내기 파일을 사용 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LIB 참조](../../build/reference/lib-reference.md)

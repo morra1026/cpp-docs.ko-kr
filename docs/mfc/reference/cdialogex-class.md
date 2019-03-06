@@ -12,16 +12,17 @@ helpviewer_keywords:
 - CDialogEx [MFC], SetBackgroundColor
 - CDialogEx [MFC], SetBackgroundImage
 ms.assetid: a6ed3b1f-aef8-4b66-ac78-2160faf63c13
-ms.openlocfilehash: e3040c9a91357ce9b3968729e0bf83d664c511d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f92058d1aa0dabccf6623d20a248fed8eb99ab26
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448570"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266317"
 ---
 # <a name="cdialogex-class"></a>CDialogEx 클래스
 
-`CDialogEx` 클래스는 대화 상자의 배경 색과 배경 이미지를 지정합니다.
+
+  `CDialogEx` 클래스는 대화 상자의 배경 색과 배경 이미지를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -47,13 +48,15 @@ class CDialogEx : public CDialog
 
 ## <a name="remarks"></a>설명
 
-`CDialogEx` 클래스를 사용하려면 `CDialogEx` 클래스 대신 `CDialog` 클래스에서 대화 상자 클래스를 파생합니다.
 
-대화 상자 이미지는 리소스 파일에 저장됩니다. 프레임워크는 리소스 파일에서 로드되는 모든 이미지를 자동으로 삭제합니다. 현재 배경 이미지를 프로그래밍 방식으로 삭제 하려면 다음을 호출 합니다 [CDialogEx::SetBackgroundImage](#setbackgroundimage) 메서드 또는 구현은 `OnDestroy` 이벤트 처리기입니다. 호출 하는 경우는 [CDialogEx::SetBackgroundImage](#setbackgroundimage) 메서드를는 `HBITMAP` 매개 변수를 이미지 핸들로 합니다. `CDialogEx` 개체가 이미지의 소유권을 갖게 되며 `m_bAutoDestroyBmp` 플래그가 `TRUE`이면 삭제합니다.
+  `CDialogEx` 클래스를 사용하려면 `CDialogEx` 클래스 대신 `CDialog` 클래스에서 대화 상자 클래스를 파생합니다.
+
+대화 상자 이미지는 리소스 파일에 저장됩니다. 프레임워크는 리소스 파일에서 로드되는 모든 이미지를 자동으로 삭제합니다. 현재 배경 이미지를 프로그래밍 방식으로 삭제 하려면 다음을 호출 합니다 [CDialogEx::SetBackgroundImage](#setbackgroundimage) 메서드 또는 구현은 `OnDestroy` 이벤트 처리기입니다. 호출 하는 경우는 [CDialogEx::SetBackgroundImage](#setbackgroundimage) 메서드를는 `HBITMAP` 매개 변수를 이미지 핸들로 합니다. 
+  `CDialogEx` 개체가 이미지의 소유권을 갖게 되며 `m_bAutoDestroyBmp` 플래그가 `TRUE`이면 삭제합니다.
 
 A `CDialogEx` 개체의 부모가 될 수는 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체입니다. [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 호출 개체를 `CDialogEx::SetActiveMenu` 메서드 때 합니다 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 열립니다 개체. 나중에 `CDialogEx` 될 때까지 모든 메뉴 이벤트를 처리 하는 개체를 [CMFCPopupMenu 클래스](../../mfc/reference/cmfcpopupmenu-class.md) 개체가 닫혀 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -113,7 +116,7 @@ void SetBackgroundColor(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] RGB 색 값입니다.
 
 *bRepaint*<br/>
@@ -163,7 +166,7 @@ BOOL SetBackgroundImage(
 
 대화 상자의 클라이언트 영역에 맞게 지정 하는 이미지를 채우도록 확장 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

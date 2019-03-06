@@ -5,12 +5,12 @@ helpviewer_keywords:
 - .pdb files, as linker input
 - PDB files, as linker input
 ms.assetid: c1071478-2369-4b03-9df8-71761cf82f3b
-ms.openlocfilehash: 23974a9e20f8259c3a38af15664d328ded7ff7d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a29f01e5e5b30be4f7a983652d476a4512d2bec0
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50628896"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426427"
 ---
 # <a name="pdb-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Pdb 파일
 
@@ -18,7 +18,7 @@ ms.locfileid: "50628896"
 
 또한 링크.exe 파일이 나.dll 파일에 대 한 디버깅 정보를 저장 하는 PDB를 사용 합니다. 프로그램을 다시 구성 하는 경우 링크 PDB를 업데이트 하기 때문에 프로그램의 PDB는 출력 파일과 입력된 파일입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

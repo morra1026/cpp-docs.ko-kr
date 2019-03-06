@@ -6,12 +6,12 @@ helpviewer_keywords:
 - macros, NMAKE
 - NMAKE program, defining macros
 ms.assetid: 0fc59ec5-5f58-4644-b7da-7b021f7001af
-ms.openlocfilehash: 130863f8c5640a0c4915734732d93fc00d3d6479
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a5e853627f5d337e3f0587cb41fdc77e7eeb4f5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656250"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417920"
 ---
 # <a name="where-to-define-macros"></a>매크로를 정의할 위치
 
@@ -21,6 +21,6 @@ ms.locfileid: "50656250"
 
 명령줄 또는 명령 파일에서 공백 및 탭 인수를 구분 하 고 등호를 묶을 수 없습니다. 경우 `string` 공백이 나 탭에 포함 된 큰따옴표를 문자열 자체 또는 매크로 전체를 묶습니다 ("").
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMake 매크로 정의](../build/defining-an-nmake-macro.md)

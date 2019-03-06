@@ -1,5 +1,5 @@
 ---
-title: '연습: C++ AMP 응용 프로그램 디버깅'
+title: '연습: C + + AMP 응용 프로그램 디버깅'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - debugging, C++ Accelerated Massive Parallelism
@@ -7,14 +7,14 @@ helpviewer_keywords:
 - C++ Accelerated Massive Parallelism, debugging
 - debugging, C++ AMP
 ms.assetid: 40e92ecc-f6ba-411c-960c-b3047b854fb5
-ms.openlocfilehash: 610cf317982204715d55d12ece510cb477543f4d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 5312ba7354c28286cafb092711d66d56a920581a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176694"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286915"
 ---
-# <a name="walkthrough-debugging-a-c-amp-application"></a>연습: C++ AMP 응용 프로그램 디버깅
+# <a name="walkthrough-debugging-a-c-amp-application"></a>연습: C + + AMP 응용 프로그램 디버깅
 
 이 항목에서는 c + + Accelerated Massive Parallelism (c + + AMP)를 사용 하 여 그래픽 처리 유닛 (GPU)를 활용 하는 응용 프로그램을 디버그 하는 방법에 설명 합니다. 큰 정수 배열을 합산 하는 병렬 감소 프로그램을 사용 합니다. 이 연습에서는 다음 작업을 수행합니다.
 
@@ -220,7 +220,7 @@ ms.locfileid: "52176694"
 
 2. 에 **속성 페이지** 대화 상자의 **구성 속성**, 선택 **디버깅**합니다.
 
-3. 에 **실행할 디버거** 목록에서 **로컬 Windows 디버거**합니다.
+3. **실행할 디버거** 목록에서 **로컬 Windows 디버거**를 선택합니다.
 
 4. 에 **디버거 형식** 나열 되었는지 확인 합니다 **자동** 을 선택 합니다.
 
@@ -335,7 +335,7 @@ ms.locfileid: "52176694"
 
 ## <a name="freezing-and-thawing-gpu-threads"></a>GPU 스레드 중지 및 재개
 
-고정할 수 있습니다 (일시 중단) 및 재개 (다시 시작) GPU 스레드 중 하나는 **GPU 스레드** 창 또는 **병렬 조사식** 창입니다. Freeze를 동일한 방식으로; CPU 스레드 재개 정보를 참조 하세요 [방법: 스레드 창 사용](/visualstudio/debugger/how-to-use-the-threads-window)합니다.
+고정할 수 있습니다 (일시 중단) 및 재개 (다시 시작) GPU 스레드 중 하나는 **GPU 스레드** 창 또는 **병렬 조사식** 창입니다. Freeze를 동일한 방식으로; CPU 스레드 재개 내용은 [방법: 스레드 창 사용](/visualstudio/debugger/how-to-use-the-threads-window)합니다.
 
 ### <a name="to-freeze-and-thaw-gpu-threads"></a>고정 및 GPU 스레드 재개
 
@@ -383,7 +383,7 @@ ms.locfileid: "52176694"
 
    21 번째 줄에서 장애물에 이전에 차단 된 24 스레드가 32 줄으로 진행 되었습니다. 이 확인할 합니다 **GPU 스레드** 창입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ AMP 개요](../../parallel/amp/cpp-amp-overview.md)<br/>
 [GPU 코드 디버그](/visualstudio/debugger/debugging-gpu-code)<br/>

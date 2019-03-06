@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CHttpFile [MFC], SendRequest
 - CHttpFile [MFC], SendRequestEx
 ms.assetid: 399e7c68-bbce-4374-8c55-206e9c7baac6
-ms.openlocfilehash: 3ee92a6cb627cee701b9b98a8a32666a0877f62c
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 3c701f933d622adc5f3d8b1eb2371406e5b45e6f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893654"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283737"
 ---
 # <a name="chttpfile-class"></a>CHttpFile 클래스
 
@@ -71,7 +71,7 @@ class CHttpFile : public CInternetFile
 
 하는 방법에 자세히 알아보려면 `CHttpFile` 문서를 참조 하는 다른 인터넷 MFC 클래스와 함께 작동 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -204,7 +204,8 @@ BOOL EndRequest(
 초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.
 
 *dwContext*<br/>
-`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
+
+  `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
 
 ### <a name="return-value"></a>반환 값
 
@@ -488,7 +489,8 @@ BOOL SendRequestEx(
 작업을 설명 하는 플래그입니다. 적절 한 플래그 목록은 참조 하세요 [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) Windows SDK에 있습니다.
 
 *dwContext*<br/>
-`CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
+
+  `CHttpFile` 작업에 대한 컨텍스트 식별자입니다. 이 매개 변수에 대 한 자세한 내용은 설명을 참조 하십시오.
 
 *lpBuffIn*<br/>
 초기화에 대 한 포인터 [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) 하는 작업에 사용 되는 입력된 버퍼에 설명 합니다.
@@ -514,7 +516,7 @@ BOOL SendRequestEx(
 
 [!code-cpp[NVC_MFCWinInet#9](../../mfc/codesnippet/cpp/chttpfile-class_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CInternetFile 클래스](../../mfc/reference/cinternetfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling, implementing
 ms.assetid: e8b47ef0-0bdc-47ff-9dd6-34df11dde9a2
-ms.openlocfilehash: e2b17e7b6849163ee0e8e12696df25169e2773cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0e3a47719e3160170ed1bfa64b315415ddc7a1c8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654872"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265355"
 ---
 # <a name="atl-event-handling-summary"></a>ATL 이벤트 처리 요약
 
@@ -45,8 +45,7 @@ ms.locfileid: "50654872"
 |[CComCompositeControl::AdviseSinkMap(TRUE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|[CComCompositeControl::AdviseSinkMap(FALSE)](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)|복합 컨트롤의 ActiveX 컨트롤|아니요|`CComCompositeControl::AdviseSinkMap` 모든 항목에는 이벤트 맵 싱크 권고 합니다. 동일한 함수 unadvises 항목입니다. 이 메서드는 자동으로 호출 된 `CComCompositeControl` 클래스입니다.|
 |[CAxDialogImpl::AdviseSinkMap(TRUE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|[CAxDialogImpl::AdviseSinkMap(FALSE)](../atl/reference/caxdialogimpl-class.md#advisesinkmap)|대화 상자에서 ActiveX 컨트롤|아니요|`CAxDialogImpl::AdviseSinkMap` 조언 하 고 대화 상자 리소스에서 모든 ActiveX 컨트롤 unadvises 합니다. 이를 자동으로 수행 됩니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [이벤트 처리](../atl/event-handling-and-atl.md)<br/>
 [IDispEventImpl 지원](../atl/supporting-idispeventimpl.md)
-

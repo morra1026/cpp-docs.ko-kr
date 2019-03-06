@@ -4,12 +4,12 @@ ms.date: 11/19/2018
 helpviewer_keywords:
 - quick access toolbar [MFC], customization
 ms.assetid: 2554099b-0c89-4605-9249-31bf9cbcefe0
-ms.openlocfilehash: aced2e732b68f838c679518ef67b1d6bdd361964
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: c53e405eafe310c0bfc03a916ab85181ae67a34b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176330"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300723"
 ---
 # <a name="how-to-customize-the-quick-access-toolbar"></a>방법: 빠른 실행 도구 모음 사용자 지정
 
@@ -52,6 +52,6 @@ QAT(빠른 실행 도구 모음)는 응용 프로그램 단추 옆 또는 범주
 
 - 에 **Ribbon 편집기 도구 모음**, 클릭 **Ribbon 테스트**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리본 디자이너(MFC)](../mfc/ribbon-designer-mfc.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - ServiceMain method
 ms.assetid: f21408c1-1919-4dec-88d8-bf5b39ac9808
-ms.openlocfilehash: 3aad67d58ccd4d1d35572542d899c17e0f42902b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 32bdea1eb39c91ddb58def72bd16acc2f16ab936
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471216"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295424"
 ---
 # <a name="catlservicemoduletservicemain-function"></a>Catlservicemodulet:: Servicemain 함수
 
@@ -27,8 +27,7 @@ ms.locfileid: "50471216"
 
 이제 `CAtlServiceModuleT::Run` 서비스의 기본 작업을 수행 하기 위해 호출 됩니다. `Run` 서비스가 중지 될 때까지 실행을 계속 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [서비스](../atl/atl-services.md)<br/>
-[Catlservicemodulet:: Servicemain](../atl/reference/catlservicemodulet-class.md#servicemain)
-
+[CAtlServiceModuleT::ServiceMain](../atl/reference/catlservicemodulet-class.md#servicemain)

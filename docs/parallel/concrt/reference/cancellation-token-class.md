@@ -13,16 +13,17 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token class
 ms.assetid: 2787df2b-e9d3-440e-bfd0-841a46a9835f
-ms.openlocfilehash: 60028ce439dc344696bb3814efb74e0daa21f6ff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 23821c91cd4158f6ec3989cdf537a5d8067e8225
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522202"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282294"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token 클래스
 
-`cancellation_token` 클래스는 일부 작업을 취소하도록 요청되었는지 여부를 확인하는 기능을 나타냅니다. 지정된 토큰을 `task_group`, `structured_task_group` 또는 `task`와 연결하여 암시적 취소를 제공할 수 있습니다. 연결된 `cancellation_token_source`가 취소된 경우 취소를 폴링하거나 콜백을 등록할 수도 있습니다.
+
+  `cancellation_token` 클래스는 일부 작업을 취소하도록 요청되었는지 여부를 확인하는 기능을 나타냅니다. 지정된 토큰을 `task_group`, `structured_task_group` 또는 `task`와 연결하여 암시적 취소를 제공할 수 있습니다. 연결된 `cancellation_token_source`가 취소된 경우 취소를 폴링하거나 콜백을 등록할 수도 있습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -57,7 +58,7 @@ class cancellation_token;
 |[operator=](#operator_eq)||
 |[연산자==](#operator_eq_eq)||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `cancellation_token`
 
@@ -97,7 +98,9 @@ void deregister_callback(const cancellation_token_registration& _Registration) c
 ### <a name="parameters"></a>매개 변수
 
 *_Registration*<br/>
-`cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.
+
+  `cancellation_token_registration` 개체는 등록을 취소할 콜백에 해당합니다. 
+  `register` 메서드에 대한 호출에서 이 토큰이 이전에 반환됐어야 합니다.
 
 ##  <a name="is_cancelable"></a> is_cancelable
 
@@ -148,7 +151,7 @@ bool operator!= (const cancellation_token& _Src) const;
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 ```
 cancellation_token& operator= (const cancellation_token& _Src);
@@ -163,7 +166,7 @@ cancellation_token& operator= (cancellation_token&& _Src);
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_eq_eq"></a> 연산자 = =
+##  <a name="operator_eq_eq"></a> operator==
 
 ```
 bool operator== (const cancellation_token& _Src) const;
@@ -197,6 +200,6 @@ template<typename _Function>
 
 이전에 등록된 콜백의 등록을 해제하고 콜백이 이루어지지 않도록 하기 위해 `cancellation_token_registration` 메서드에서 이용할 수 있는 `deregister` 개체입니다. 메서드에 throw 합니다는 [invalid_operation](invalid-operation-class.md) 에서 호출 되 면 예외를 `cancellation_token` 사용 하 여 만든 개체를 [cancellation_token:: none](#none) 메서드.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

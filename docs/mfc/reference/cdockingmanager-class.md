@@ -160,12 +160,12 @@ helpviewer_keywords:
 - CDockingManager [MFC], m_nTimeOutBeforeDockingBarDock
 - CDockingManager [MFC], m_nTimeOutBeforeToolBarDock
 ms.assetid: 98e69c43-55d8-4f43-b861-4fda80ec1e32
-ms.openlocfilehash: e1cc4a4a0d6841523aaafcc1865173ba5402948c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 268a46e1bdecc1ea468c152fd0ed480873c36591
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519986"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260389"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager 클래스
 
@@ -318,7 +318,7 @@ BOOL AddDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*정보*<br/>
+*info*<br/>
 [in] 포함 된 정보 구조에 대 한 참조를 도킹 창 맞춤 합니다.
 
 *ppDockBar*<br/>
@@ -521,7 +521,7 @@ void BuildPanesMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴*<br/>
+*menu*<br/>
 [in] 도킹 창 및 도구 모음을 이름을 추가 하려면 메뉴입니다.
 
 *bToolbarsOnly*<br/>
@@ -594,7 +594,7 @@ virtual AFX_CS_STATUS DeterminePaneAndStatus(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 [in] 검사할 창의 위치입니다.
 
 *nSensitivity*<br/>
@@ -620,7 +620,7 @@ virtual AFX_CS_STATUS DeterminePaneAndStatus(
 
 도킹 상태는 다음 값 중 하나일 수 있습니다.
 
-|AFX_CS_STATUS 값|의미|
+|AFX_CS_STATUS value|의미|
 |---------------------------|-------------|
 |CS_NOTHING|포인터는 도킹 사이트를 통해 없습니다. 따라서 창 유지할 부동 합니다.|
 |CS_DOCK_IMMEDIATELY|포인터가 직접 실행 모드에서 도킹 사이트에 있는 (DT_IMMEDIATE 스타일 사용), 있도록 창에 즉시 도킹 해야 합니다.|
@@ -637,7 +637,7 @@ void DisableRestoreDockState(BOOL bDisable = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*사용 안 함 설정*<br/>
+*bDisable*<br/>
 [in] 레지스트리에서; 도킹 레이아웃을 사용 하지 않도록 설정 로드 하려면 true로 설정 그렇지 않으면 FALSE입니다.
 
 ### <a name="remarks"></a>설명
@@ -863,7 +863,7 @@ virtual CPaneFrameWnd* FrameFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 [in] 확인 화면 좌표에서 지점에 지정 합니다.
 
 *pFrameToExclude*<br/>
@@ -1070,7 +1070,7 @@ BOOL InsertDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*정보*<br/>
+*info*<br/>
 [in] 도킹 창에 대 한 맞춤 정보를 포함 하는 구조체입니다.
 
 *dwAlignToInsertAfter*<br/>
@@ -1102,7 +1102,7 @@ BOOL InsertPane(
 *pTarget*<br/>
 [in] 대상 창에 대 한 포인터입니다.
 
-*후에는*<br/>
+*bAfter*<br/>
 [in] True 이면 삽입의 대상 창; 위치 후 창 FALSE이 고, 그렇지 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1170,7 +1170,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 지정 된 지점입니다.
 
 *dwBarAlignment*<br/>
@@ -1227,7 +1227,7 @@ void LockUpdate(BOOL bLock);
 
 ### <a name="parameters"></a>매개 변수
 
-*블록*<br/>
+*bLock*<br/>
 [in] 창 잠 겼으 면 TRUE FALSE이 고, 그렇지 합니다.
 
 ### <a name="remarks"></a>설명
@@ -1346,7 +1346,7 @@ void OnPaneContextMenu(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 메뉴의 위치를 지정 합니다.
 
 ##  <a name="panefrompoint"></a>  CDockingManager::PaneFromPoint
@@ -1372,7 +1372,7 @@ virtual CBasePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 확인 화면 좌표에서 지점에 지정 합니다.
 
 *nSensitivity*<br/>
@@ -1640,7 +1640,7 @@ static void SetDockingMode(
 새 도킹 모드를 지정합니다. 자세한 내용은 설명 섹션을 참조하세요.
 
 *테마*<br/>
-스마트 도킹 표식에 사용 되는 테마를 지정 합니다. 다음 열거형된 값 중 하나일 수 있습니다: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008 합니다.
+스마트 도킹 표식에 사용 되는 테마를 지정 합니다. 다음 열거형된 값 중 하나일 수 있습니다. AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
 ### <a name="remarks"></a>설명
 
@@ -1760,15 +1760,15 @@ static AFX_SMARTDOCK_THEME __stdcall GetSmartDockingTheme();
 
 ### <a name="return-value"></a>반환 값
 
-다음 열거형된 값 중 하나를 반환 합니다: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008 합니다.
+다음 열거형된 값 중 하나를 반환합니다. AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [CFrameWndEx 클래스](../../mfc/reference/cframewndex-class.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)<br/>
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CPaneFrameWnd 클래스](../../mfc/reference/cpaneframewnd-class.md)

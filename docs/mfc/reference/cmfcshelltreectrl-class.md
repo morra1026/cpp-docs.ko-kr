@@ -28,18 +28,18 @@ helpviewer_keywords:
 - CMFCShellTreeCtrl [MFC], SetFlags
 - CMFCShellTreeCtrl [MFC], SetRelatedList
 ms.assetid: 3d1da715-9554-4ed7-968c-055c48146267
-ms.openlocfilehash: cf7e5f9c9b44524491737b27098bc91bb472cb32
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 3fa829c5333a87d908d36438fe8ffcd253f9fb5a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694287"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279993"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl 클래스
 
 합니다 `CMFCShellTreeCtrl` 클래스를 확장 [CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md) 셸 항목의 계층 구조를 표시 하 여 기능 합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 ## <a name="syntax"></a>구문
 
 ```
@@ -68,7 +68,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 
 이 클래스는 확장 된 `CTreeCtrl` 트리에서 Windows 셸 항목을 포함 하도록 프로그램을 사용 하 여 클래스입니다. 이 클래스와 연결 될 수는 `CMFCShellListCtrl` 전체 탐색기 창을 만드는 개체입니다. 그런 다음 트리에서 항목을 선택 하면 관련된 된 목록에서 Windows 셸 항목의 목록이 표시 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -140,7 +140,7 @@ BOOL GetItemPath(
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 0이 아닌 값 그렇지 않으면 0입니다.
+성공하는 경우 0이 아닌 값입니다. 그렇지 않은 경우 0입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -176,7 +176,7 @@ virtual BOOL OnChildNotify(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *메시지*<br/>
+[in] *message*<br/>
 [in] *wParam*<br/>
 [in] *lParam*<br/>
 [in] *pLResult*<br/>
@@ -290,9 +290,9 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 
 메서드를 사용 [CMFCShellTreeCtrl::GetRelatedList](#getrelatedlist) 검색 하는 `CMFCShellListCtrl` 연관는 `CMFCShellTreeCtrl`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CTreeCtrl 클래스](../../mfc/reference/ctreectrl-class.md)<br/>
+[CTreeCtrl Class](../../mfc/reference/ctreectrl-class.md)<br/>
 [CMFCShellListCtrl 클래스](../../mfc/reference/cmfcshelllistctrl-class.md)

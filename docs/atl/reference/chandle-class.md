@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHandle class
 ms.assetid: 883e9db5-40ec-4e29-9c74-4dd2ddd2e35d
-ms.openlocfilehash: 64c2cb1531d9330e075a06c65ff022115d0fb6b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19e761ea8eb133db55b4d24600f2a1fd01ac3e34
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499920"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292902"
 ---
 # <a name="chandle-class"></a>CHandle 클래스
 
@@ -36,7 +36,7 @@ class CHandle
 |이름|설명|
 |----------|-----------------|
 |[CHandle::CHandle](#chandle)|생성자입니다.|
-|[CHandle:: ~ CHandle](#dtor)|소멸자입니다.|
+|[CHandle::~CHandle](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -106,7 +106,7 @@ explicit CHandle(HANDLE h) throw();
 
 새로 만듭니다 `CHandle` 필요에 따라 기존 핸들을 사용 하 여 개체 또는 `CHandle` 개체입니다.
 
-##  <a name="dtor"></a>  CHandle:: ~ CHandle
+##  <a name="dtor"></a>  CHandle::~CHandle
 
 소멸자입니다.
 
@@ -187,6 +187,6 @@ operator HANDLE() const throw();
 
 에 저장 된 값 반환 [CHandle::m_h](#m_h)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

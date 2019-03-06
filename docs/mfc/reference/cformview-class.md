@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CFormView [MFC], CFormView
 - CFormView [MFC], IsInitDlgCompleted
 ms.assetid: a99ec313-36f0-4f28-9d2b-de11de14ac19
-ms.openlocfilehash: 37ae7ca2efeb579cba388e22cf0fe450a068e721
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d1f6a19e0fb2ddb88602600e02aec45936ce599
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305109"
 ---
 # <a name="cformview-class"></a>CFormView 클래스
 
@@ -39,7 +39,7 @@ class CFormView : public CScrollView
 
 |이름|설명|
 |----------|-----------------|
-|[Cformview:: Isinitdlgcompleted](#isinitdlgcompleted)|초기화하는 동안 동기화에 사용됩니다.|
+|[CFormView::IsInitDlgCompleted](#isinitdlgcompleted)|초기화하는 동안 동기화에 사용됩니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -51,7 +51,7 @@ class CFormView : public CScrollView
 
 폼 기반 응용 프로그램을 만들 때는 MFC 응용 프로그램 마법사 및 클래스 추가 명령을 사용하는 것이 좋습니다. 이러한 메서드를 사용 하지 않고 폼 기반 응용 프로그램 만들기, 참조 하는 경우 [폼 기반 응용 프로그램을 만드는](../../mfc/reference/creating-a-forms-based-mfc-application.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -101,7 +101,7 @@ CFormView(UINT nIDTemplate);
 
 [!code-cpp[NVC_MFCDocView#91](../../mfc/codesnippet/cpp/cformview-class_2.cpp)]
 
-##  <a name="isinitdlgcompleted"></a>  Cformview:: Isinitdlgcompleted
+##  <a name="isinitdlgcompleted"></a>  CFormView::IsInitDlgCompleted
 
 MFC에서 다른 작업을 수행하기 전에 초기화가 완료되었는지 확인하는 데 사용됩니다.
 
@@ -113,7 +113,7 @@ BOOL IsInitDlgCompleted() const;
 
 이 대화 상자에 대한 초기화 함수가 완료된 경우 true입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 SNAPVW](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 VIEWEX](../../visual-cpp-samples.md)<br/>

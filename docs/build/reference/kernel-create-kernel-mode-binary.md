@@ -5,12 +5,12 @@ f1_keywords:
 - /kernel
 - /kernel-
 ms.assetid: 6d7fdff0-c3d1-4b78-9367-4da588ce8b05
-ms.openlocfilehash: 0df133922af90a91d5c1ae1ad3caebe11d854b8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 33a0f4019d8ad278f5850c499ee552ee72279455
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509659"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414757"
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel(커널 모드 이진 만들기)
 
@@ -40,7 +40,7 @@ Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.
 
 다음 표에서 컴파일러 동작의 변경 내용은 때 **/kernel** 지정 됩니다.
 
-|동작 유형|**/kernel** 동작|
+|동작 유형|**/kernel** Behavior|
 |-------------------|---------------------------|
 |C++ 예외 처리|사용 안 함 모든 인스턴스를 `throw` 하 고 `try` 키워드는 컴파일러 오류를 내보냅니다 (예외 사양을 제외 하 고 `throw()`). 더 **/EH** 옵션은 호환 **/kernel**를 제외한 **/EH-** 합니다.|
 |RTTI|사용 안 함 모든 인스턴스를 `dynamic_cast` 하 고 `typeid` 키워드 하지 않으면 컴파일러 오류를 내보냅니다 `dynamic_cast` 정적으로 사용 됩니다.|
@@ -79,8 +79,8 @@ class NONPAGESECTION MyNonPagedClass
 
    ||**/kernel** obj|**/kernel-** obj, MASM obj, 또는 cvtresed|믹스 **/kernel** 하 고 **/kernel-** obj|
    |-|----------------------|-----------------------------------------------|-------------------------------------------------|
-   |**링크 /kernel**|예|예|경고 LNK4257 예|
-   |**링크**|예|예|예|
+   |**link /kernel**|예|예|경고 LNK4257 예|
+   |**link**|예|예|예|
 
    **/KERNEL;를 사용 하 여 컴파일되지 LNK4257 연결 개체 이미지를 실행할 수 없습니다.**
 
@@ -96,7 +96,7 @@ class NONPAGESECTION MyNonPagedClass
 
 1. 에 **추가 옵션** 상자에서 추가 `/kernel` 또는 `/kernel-`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

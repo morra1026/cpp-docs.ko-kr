@@ -10,12 +10,12 @@ helpviewer_keywords:
 - external names
 - -H compiler option [C++]
 ms.assetid: de701dd3-ed04-4c88-8195-960d2520ec2e
-ms.openlocfilehash: 194f8d2c87eb6aa307f417ff022e7975edf2ccc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb7821587d6c0bbe06eb6baa02227955582eb76d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489832"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420416"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H(외부 이름 길이 제한)
 
@@ -23,11 +23,11 @@ ms.locfileid: "50489832"
 
 ## <a name="syntax"></a>구문
 
-> **/H**<em>수</em>
+> **/H**<em>number</em>
 
 ## <a name="arguments"></a>인수
 
-*수*<br/>
+*number*<br/>
 프로그램에서 허용 하는 외부 이름의 최대 길이 지정 합니다.
 
 ## <a name="remarks"></a>설명
@@ -84,7 +84,7 @@ void func2(void) {}
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

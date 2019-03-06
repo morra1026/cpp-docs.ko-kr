@@ -5,12 +5,12 @@ helpviewer_keywords:
 - message-block filters, using [Concurrency Runtime]
 - using message-block filters [Concurrency Runtime]
 ms.assetid: db6b99fb-288d-4477-96dc-b9751772ebb2
-ms.openlocfilehash: 512dda6503d5980dbdcc20a55ca0ee836d4d08e3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1bfa11953d27dc7e013e715b3f58111f124caeaf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50660137"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284296"
 ---
 # <a name="how-to-use-a-message-block-filter"></a>방법: 메시지 블록 필터 사용
 
@@ -20,7 +20,7 @@ ms.locfileid: "50660137"
 
 필터 함수는 메시지 블록을 연결할 수 있도록 하므로 중요 *데이터 흐름 네트워크*합니다. 데이터 흐름 네트워크에서 메시지 블록 특정 조건을 충족 하는 메시지만 처리 하 여 데이터의 흐름을 제어 합니다. 조건문, 루프와 같은 제어 구조를 사용 하 여 데이터 흐름을 규제 되는 제어 흐름 모델과 비교 등에입니다.
 
-이 문서에서는 메시지 필터를 사용 하는 방법의 기본적인 예를 제공 합니다. 메시지 필터 및 데이터 흐름 모델을 사용 하 여 메시지 블록을 연결 하는 추가 예제를 보려면 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) 하 고 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md) .
+이 문서에서는 메시지 필터를 사용 하는 방법의 기본적인 예를 제공 합니다. 메시지 필터 및 데이터 흐름 모델을 사용 하 여 메시지 블록을 연결 하는 추가 예제를 보려면 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md) 고 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -48,7 +48,7 @@ ms.locfileid: "50660137"
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `primes-filter.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `primes-filter.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc prime filter.cpp**
 
@@ -63,7 +63,7 @@ bool (T const &)
 
 데이터의 불필요 한 복사를 제거 하려면 집합체 형식 값으로 전송 되는 경우 두 번째 형태를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>

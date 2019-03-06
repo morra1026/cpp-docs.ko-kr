@@ -17,12 +17,12 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComPolyObject class
 ms.assetid: eaf67c18-e855-48ca-9b15-f1df3106121b
-ms.openlocfilehash: 9f84c022ac1dee34b6dca2931abb349eefb7d690
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a8dbbc06d35d2606cc76e89cc555ba7f8577daa9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495890"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277934"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject 클래스
 
@@ -38,7 +38,7 @@ class CComPolyObject : public IUnknown,
 
 #### <a name="parameters"></a>매개 변수
 
-*포함 된*<br/>
+*contained*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ## <a name="members"></a>멤버
@@ -48,7 +48,7 @@ class CComPolyObject : public IUnknown,
 |이름|설명|
 |----------|-----------------|
 |[CComPolyObject::CComPolyObject](#ccompolyobject)|생성자입니다.|
-|[Ccompolyobject 구현:: ~ ccompolyobject 구현](#dtor)|소멸자입니다.|
+|[CComPolyObject::~CComPolyObject](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -81,7 +81,7 @@ DECLARE_POLY_AGGREGATABLE 매크로 개체의 클래스 정의에 지정 된 경
 
 집계에 대 한 자세한 내용은 문서를 참조 하세요 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -126,7 +126,7 @@ CComPolyObject(void* pv);
 
 소멸자 모듈 잠금 횟수를 줄입니다.
 
-##  <a name="dtor"></a>  Ccompolyobject 구현:: ~ ccompolyobject 구현
+##  <a name="dtor"></a>  CComPolyObject::~CComPolyObject
 
 소멸자입니다.
 
@@ -193,7 +193,7 @@ CComContainedObject<contained> m_contained;
 
 ### <a name="parameters"></a>매개 변수
 
-*포함 된*<br/>
+*contained*<br/>
 [in] 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)처럼 개체에서 지원 하려는 다른 인터페이스 에서도 잘 합니다.
 
 ### <a name="remarks"></a>설명
@@ -244,7 +244,7 @@ STDMETHOD_(ULONG, Release)();
 
 디버그 빌드에서 `Release` 진단용 유용 하거나 테스트 수 있는 값을 반환 합니다. 비디버그 빌드에서 `Release` 항상 0을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComObjectRootEx 클래스](../../atl/reference/ccomobjectrootex-class.md)<br/>
 [DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)<br/>

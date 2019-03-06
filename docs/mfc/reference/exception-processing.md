@@ -13,12 +13,12 @@ helpviewer_keywords:
 - MFC, exceptions
 - exceptions [MFC], MFC throwing functions
 ms.assetid: 26d4457c-8350-48f5-916e-78f919787c30
-ms.openlocfilehash: 8b40afbfcc453a4908b434dc53b7b86959673453
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 3db919f40caf4e5dbf42b4e10c549b165c0a9fe4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851684"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293747"
 ---
 # <a name="exception-processing"></a>예외 처리
 
@@ -158,7 +158,8 @@ CATCH_ALL(exception_object_pointer_name)
 
 ### <a name="remarks"></a>설명
 
-예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. `THROW_LAST` 매크로를 호출하여 다음 외부 예외 프레임으로 처리를 이동합니다. 사용 하는 경우 **CATCH_ALL**를 종료 합니다 **시도** END_CATCH_ALL 매크로 사용 하 여 블록입니다.
+예외 처리 코드는 필요한 경우 예외 개체를 확인하여 예외의 특정 원인에 대한 추가 정보를 가져올 수 있습니다. 
+  `THROW_LAST` 매크로를 호출하여 다음 외부 예외 프레임으로 처리를 이동합니다. 사용 하는 경우 **CATCH_ALL**를 종료 합니다 **시도** END_CATCH_ALL 매크로 사용 하 여 블록입니다.
 
 > [!NOTE]
 >  합니다 **CATCH_ALL** 블록은 중괄호로 구분 된 c + + 범위로 정의 됩니다. 이 범위에서 변수를 선언하면 해당 범위 내에서만 액세스할 수 있습니다.
@@ -579,7 +580,7 @@ void  AfxAbort();
 
   **헤더** afx.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
 [CException 클래스](cexception-class.md)<br/>

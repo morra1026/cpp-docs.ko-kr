@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMFCSpinButtonCtrl [MFC], OnDraw
 ms.assetid: 8773f259-4d3f-4bca-a71c-09e0c71bc843
-ms.openlocfilehash: ecc8a010b534515850752f7d83c9a9976f14ddfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60808359c11604368493031e1b6f4573b3b2026f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50567520"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292144"
 ---
 # <a name="cmfcspinbuttonctrl-class"></a>CMFCSpinButtonCtrl 클래스
 
@@ -50,7 +50,7 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 
 [!code-cpp[NVC_MFC_RibbonApp#25](../../mfc/reference/codesnippet/cpp/cmfcspinbuttonctrl-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -83,7 +83,7 @@ virtual void OnDraw(CDC* pDC);
 
 프레임 워크 호출을 `CMFCSpinButtonCtrl::OnPaint` 처리 하는 메서드를 [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) 메시지 및 메서드가 다시 호출 하는이 `CMFCSpinButtonCtrl::OnDraw` 메서드. 프레임 워크 spin button 컨트롤을 그리는 방법을 사용자 지정 하려면이 메서드를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

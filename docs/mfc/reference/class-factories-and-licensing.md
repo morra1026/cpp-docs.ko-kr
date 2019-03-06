@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - class factories [MFC], and licensing
 ms.assetid: 53c4856a-4062-46db-9f69-dd4339f746b3
-ms.openlocfilehash: bfe4957312a3e1f5c08768af6fe96eb0c2e8b1f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3788d904bf903481d57dd73a28bf6eafadd5f019
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514402"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289580"
 ---
 # <a name="class-factories-and-licensing"></a>클래스 팩터리 및 라이선스
 
 OLE 컨트롤의 인스턴스를 만들려면 컨테이너 응용 프로그램을 컨트롤의 클래스 팩터리의 멤버 함수를 호출 합니다. 컨트롤의 실제 OLE 개체 이기 때문에 클래스 팩토리는 컨트롤의 인스턴스를 만드는 하는 일을 담당 합니다. 모든 OLE 컨트롤 클래스는 클래스 팩터리를 가져야 합니다.
 
-OLE 컨트롤의 또 다른 중요 한 기능 라이선스를 적용 하는 기능은 해당 합니다. 컨트롤을 사용 하면 컨트롤 프로젝트를 만드는 동안 라이선스를 통합할 수 있습니다. 컨트롤 라이선스에 대 한 자세한 내용은 문서 참조 [ActiveX 컨트롤: ActiveX 컨트롤 라이선스](../../mfc/mfc-activex-controls-licensing-an-activex-control.md)합니다.
+OLE 컨트롤의 또 다른 중요 한 기능 라이선스를 적용 하는 기능은 해당 합니다. 컨트롤을 사용 하면 컨트롤 프로젝트를 만드는 동안 라이선스를 통합할 수 있습니다. 컨트롤 라이선스에 대 한 자세한 내용은 문서를 참조 하세요. [ActiveX 컨트롤: ActiveX 컨트롤 라이선스](../../mfc/mfc-activex-controls-licensing-an-activex-control.md)합니다.
 
 다음 표에서 몇 가지 매크로 및 함수를 선언 하 고 컨트롤의 클래스 팩터리를 구현 하는 데 사용 하는 컨트롤의 라이선스.
 
@@ -85,7 +85,7 @@ IMPLEMENT_OLECREATE_EX(
 *external_name*<br/>
 응용 프로그램에 노출 하는 개체 이름입니다.
 
-*l, w1, w2, b1, b2, b 3, b 4, b5, b6, b7, b 8*<br/>
+*l, w1, w2, b1, b2, b3, b4, b5, b6, b7, b8*<br/>
 클래스의 CLSID의 구성 요소입니다. 이러한 매개 변수에 대 한 자세한 내용은 설명 부분을 참조 하세요 [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate)합니다.
 
 ### <a name="remarks"></a>설명
@@ -174,6 +174,6 @@ BOOL AFXAPI AfxVerifyLicFile(
 
   **헤더** afxctl.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - tree controls [MFC], item position
 - position, CTreeCtrl items
 ms.assetid: cd264344-2cf9-4d90-9ea8-c6900b6f60e7
-ms.openlocfilehash: d39e48cf940f3e5e903fc8a1c82952d5c2550c05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 238cb40319d28a53592a594a72947f400720f935
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501207"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278381"
 ---
 # <a name="tree-control-item-position"></a>트리 컨트롤 항목 위치
 
@@ -24,8 +24,7 @@ ms.locfileid: "50501207"
 
 합니다 [SortChildrenCB](../mfc/reference/ctreectrl-class.md#sortchildrencb) 멤버 함수를 사용 하면 사용자가 정의한 기준에 따라 자식 항목을 정렬할 수 있습니다. 이 함수를 호출 하는 경우 트리 컨트롤은 두 자식 항목의 상대 순서를 결정 해야 할 때마다 호출할 수 있는 응용 프로그램에서 정의 된 콜백 함수를 지정 합니다. 비교 되는 항목에 대 한 두 개의 32 비트 응용 프로그램 정의 값 및 호출 하는 경우를 지정 하는 세 번째 32 비트 값을 수신 하는 콜백 함수 `SortChildrenCB`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

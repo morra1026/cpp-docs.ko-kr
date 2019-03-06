@@ -12,12 +12,12 @@ helpviewer_keywords:
 - IView class [MFC]
 - views [MFC], classes
 ms.assetid: 9321f299-486e-4551-bee9-d2c4a7b91548
-ms.openlocfilehash: 7684ef034acd247355b3f572c86fcb80cb126b0c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22e08a70ff4cc742406a1489899c0ba1df7eb664
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594352"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267825"
 ---
 # <a name="iview-interface"></a>IView 인터페이스
 
@@ -60,7 +60,7 @@ void OnActivateView(bool activate);
 
 ## <a name="parameters"></a>매개 변수
 
-*활성화*<br/>
+*activate*<br/>
 보기를 새로 여부를 나타내는 활성화 또는 비활성화 합니다.
 
 ## <a name="oninitialupdate"></a> IView::OnInitialUpdate
@@ -81,7 +81,7 @@ void OnUpdate();
 
 이 함수는 수정 내용을 반영 하도록 해당 디스플레이를 업데이트 보기를 허용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinFormsView 클래스](../../mfc/reference/cwinformsview-class.md)<br/>
 [CView 클래스](../../mfc/reference/cview-class.md)

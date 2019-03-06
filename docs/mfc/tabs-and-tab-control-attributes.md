@@ -8,12 +8,12 @@ helpviewer_keywords:
 - tabs [MFC], attributes
 - CTabCtrl class [MFC], tab control attributes
 ms.assetid: ecf190cb-f323-4751-bfdb-766dbe6bb553
-ms.openlocfilehash: ba63fdca32af28d0763dd4cf2da3465a99ddeb1f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca9f89565770e60a59007d609d132fae15eacae6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571992"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304797"
 ---
 # <a name="tabs-and-tab-control-attributes"></a>탭 및 탭 컨트롤 특성
 
@@ -27,8 +27,7 @@ ms.locfileid: "50571992"
 
 탭 특성에 대 한 자세한 내용은 참조 하세요. [탭 및 탭 특성](/windows/desktop/Controls/tab-controls) Windows SDK에 있습니다. 탭 컨트롤에 탭을 추가 하는 방법에 대 한 자세한 내용은 참조 하세요. [탭 컨트롤에 탭 추가](../mfc/adding-tabs-to-a-tab-control.md) 이 항목의에서 뒷부분에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTabCtrl 사용](../mfc/using-ctabctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

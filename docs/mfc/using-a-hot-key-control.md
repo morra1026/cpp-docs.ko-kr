@@ -5,12 +5,12 @@ helpviewer_keywords:
 - CHotKeyCtrl class [MFC], using
 - hot key controls
 ms.assetid: cdd6524b-cc43-447f-b151-164273559685
-ms.openlocfilehash: 335489011076b1e30a9c36720a3bf2e94c7918b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d9178fe989e476111a3da55861642e9aa6311872
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50542196"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260580"
 ---
 # <a name="using-a-hot-key-control"></a>바로 가기 키 컨트롤 사용
 
@@ -26,10 +26,9 @@ ms.locfileid: "50542196"
 
 - 사용자가 선택한 키를 알고에 설명 된 방법 중 하나를 사용 하 여 바로 가기 키를 설정할 수 있습니다 [바로 가기 키 설정](../mfc/setting-a-hot-key.md)합니다.
 
-- Hot key 컨트롤 대화 상자에 있으면이 고 `CHotKeyCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CHotKeyCtrl` 개체가 모두 제대로 제거되었는지 확인해야 합니다.
+- Hot key 컨트롤 대화 상자에 있으면이 고 `CHotKeyCtrl` 개체는 자동으로 소멸 됩니다. 그렇지 않은 경우 컨트롤 및 `CHotKeyCtrl` 개체가 모두 제대로 소멸되었는지 확인해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHotKeyCtrl 사용](../mfc/using-chotkeyctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

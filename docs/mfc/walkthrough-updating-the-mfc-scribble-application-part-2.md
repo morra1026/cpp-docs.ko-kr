@@ -1,17 +1,17 @@
 ---
-title: '연습: MFC 자유 곡선 응용 프로그램 업데이트(파트 2)'
+title: '연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중'
 ms.date: 09/20/2018
 helpviewer_keywords:
 - walkthroughs [MFC]
 ms.assetid: 602df5c2-17d4-4cd9-8cf6-dff652c4cae5
-ms.openlocfilehash: 6a52486658307f001001e91772dad1167730def2
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: c4c4ecce92bce3fbd2cb37f69b9aa02a9af4d7c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519271"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291433"
 ---
-# <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 업데이트(파트 2)
+# <a name="walkthrough-updating-the-mfc-scribble-application-part-2"></a>연습: MFC 자유 곡선 응용 프로그램 (2 부)를 업데이트 하는 중
 
 [1 부](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md) 자유 곡선 응용 프로그램의이 연습에서는 클래식 Office Fluent 리본을 추가 하는 방법에 설명 했습니다. 이 부분에는 리본 패널 및 사용자가 메뉴 및 명령을 대신 사용할 수 있는 컨트롤을 추가 하는 방법을 보여 줍니다.
 
@@ -335,7 +335,7 @@ ms.locfileid: "51519271"
 
 MFC 자유 곡선 응용 프로그램을 업데이트 했습니다. 기존 응용 프로그램을 수정 하는 경우이 연습 가이드로 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [연습](../mfc/walkthroughs-mfc.md)<br/>
-[연습: MFC 자유 곡선 응용 프로그램 업데이트(1부)](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)
+[연습: MFC Scribble 응용 프로그램 (파트 1) 업데이트](../mfc/walkthrough-updating-the-mfc-scribble-application-part-1.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - debugging [MFC], Web applications
 - Internet debugging and testing
 ms.assetid: ac4c74e3-d4ad-4e19-8f6c-e270de067f01
-ms.openlocfilehash: 934d336f8c7544bafa412a7b52404a657e8dc9ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e582fd006a49e672fb21c86b054b8d35f489698f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439366"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290944"
 ---
 # <a name="testing-internet-applications"></a>인터넷 응용 프로그램 테스트
 
@@ -23,8 +23,7 @@ ms.locfileid: "50439366"
 
 인터넷 프로그래밍의 과제 중 하나는 가시성 합니다. 사이트에 여러 액세스 서버 느려질 수 있습니다. 정상적으로 저하 될 서버를 배치할 수 있습니다. 응용 프로그램 (예: 레지스트리에 쓰는 동안 또는 클라이언트에서 쿠키를 작성 하는 동안 데이터 손상) 하지 못하면 사용자의 컴퓨터에 안전 하지 않은 수 있는 모든 것을 방지 하려고 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)
-

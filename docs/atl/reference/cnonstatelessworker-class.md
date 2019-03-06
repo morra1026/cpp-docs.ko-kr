@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CNonStatelessWorker class
 ms.assetid: d00936c6-9e7d-49fb-b87d-417b963367d1
-ms.openlocfilehash: 7aaae3728113cfd91c0655d2eac445cdd4b34246
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: abfd3e585c843fcc4ed4ad273c8ed217eaaccb7d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619627"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283153"
 ---
 # <a name="cnonstatelessworker-class"></a>CNonStatelessWorker 클래스
 
@@ -34,7 +34,7 @@ class CNonStatelessWorker
 
 #### <a name="parameters"></a>매개 변수
 
-*작업자*<br/>
+*Worker*<br/>
 준수 하는 작업자 스레드 클래스를 [worker 원형](../../atl/reference/worker-archetype.md) 큐에 대기 요청 처리에 대 한 적절 한 [CThreadPool](../../atl/reference/cthreadpool-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -118,7 +118,7 @@ void Terminate(void* /* pvParam */) throw();
 
 이 클래스 정리를 수행 하지 않습니다 `Terminate`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)<br/>
 [Worker 원형](../../atl/reference/worker-archetype.md)<br/>

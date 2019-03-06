@@ -5,12 +5,12 @@ helpviewer_keywords:
 - asynchronous agents, creating
 - agent class, example
 ms.assetid: 730f42ce-6d58-4753-b948-fd9c9ef2ce6c
-ms.openlocfilehash: 1d5e7ed085481b714423760cebf2984084626645
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d55c9879a3dd90bb4a40b61a3bf958dbe960bc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509346"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290094"
 ---
 # <a name="walkthrough-creating-an-agent-based-application"></a>연습: 에이전트 기반 응용 프로그램 만들기
 
@@ -180,13 +180,12 @@ Adler-32 sum is fefb0d75
 
 ## <a name="next-steps"></a>다음 단계
 
-에이전트 기반 응용 프로그램의 다른 예제를 보려면 [연습: 조인을 사용 교착 상태 방지 하 여](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)입니다.
+에이전트 기반 응용 프로그램의 다른 예제를 보려면 [연습: 교착 상태 방지 조인을 사용 하 여](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br/>
 [메시지 전달 함수](../../parallel/concrt/message-passing-functions.md)<br/>
 [동기화 데이터 구조](../../parallel/concrt/synchronization-data-structures.md)<br/>
 [연습: 조인을 사용하여 교착 상태 방지](../../parallel/concrt/walkthrough-using-join-to-prevent-deadlock.md)
-

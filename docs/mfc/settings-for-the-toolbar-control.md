@@ -5,12 +5,12 @@ helpviewer_keywords:
 - toolbar controls [MFC], about toolbar controls
 - CToolBarCtrl class [MFC], settings
 ms.assetid: 025ba920-b3ee-4d82-9367-e652cd7875b9
-ms.openlocfilehash: 5b5a91b4b78737866a0718865ae45fc62d1ca71a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baccc2f486bb49a52f1297c01941a90e9ee01b7a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50489078"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297088"
 ---
 # <a name="settings-for-the-toolbar-control"></a>Toolbar 컨트롤에 대한 설정
 
@@ -18,8 +18,7 @@ ms.locfileid: "50489078"
 
 도구 모음은 사용자가 도구 모음 단추를 삽입, 삭제 또는 다시 정렬할 수 있게 해주는 시스템에서 정의된 사용자 지정 대화 상자를 포함해서 기본 제공되는 사용자 지정 기능을 포함할 수 있습니다. 응용 프로그램은 사용자에게 이러한 사용자 지정 기능을 제공할 수 있는지 여부를 결정하고, 사용자가 도구 모음을 사용자 지정할 수 있는 정도를 제어합니다. 도구 모음 사용자 지정 하는 방법에 대 한 자세한 내용은 클래스를 참조 하세요 [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) 에 *MFC 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CToolBarCtrl 사용](../mfc/using-ctoolbarctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

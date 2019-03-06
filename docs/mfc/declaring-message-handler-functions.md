@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - declaring functions, message handler functions [MFC]
 ms.assetid: f8d3dbc1-4500-4f1e-a18d-7371edf36386
-ms.openlocfilehash: 3a1fdebf9842c4074e29de07d55d06f9b97dc018
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 24960abd54e2085ba643dc6438d8c1aa5220adc5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50652246"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268605"
 ---
 # <a name="declaring-message-handler-functions"></a>메시지 처리기 함수 선언
 
@@ -23,7 +23,6 @@ ms.locfileid: "50652246"
 
 - [리플렉션된 메시지 처리](../mfc/handling-reflected-messages.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메시지 처리 및 매핑](../mfc/message-handling-and-mapping.md)
-

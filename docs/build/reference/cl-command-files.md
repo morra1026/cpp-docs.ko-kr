@@ -8,12 +8,12 @@ helpviewer_keywords:
 - command files
 - command files, CL compiler
 ms.assetid: ec3cea06-2af0-4fe9-a94c-119c9d31b3a9
-ms.openlocfilehash: 43bac2c1bd5cc3588c52e6ff7af234df56a0b25d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dae3238f24fc1ac4898aee0b23c3f1899f2e25fc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642483"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420078"
 ---
 # <a name="cl-command-files"></a>CL 명령 파일
 
@@ -45,7 +45,7 @@ CL /Ob2 /Og MYAPP.C /link LIBC.LIB
 
 Note 명령줄 명령과 명령 파일 관리자에 게는 효과적으로 결합 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)

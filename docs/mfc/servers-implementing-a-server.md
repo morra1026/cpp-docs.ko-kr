@@ -5,12 +5,12 @@ helpviewer_keywords:
 - servers, implementing
 - OLE server applications [MFC], implementing OLE servers
 ms.assetid: 5bd57e8e-3b23-4f23-9597-496fac2d24b5
-ms.openlocfilehash: a5c89ff1256d557ef417b9e53ce76bbf1b5d6196
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 953d157f4bbad0b460947740a2622074dfc90f4f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518964"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267565"
 ---
 # <a name="servers-implementing-a-server"></a>서버: 서버 구현
 
@@ -28,11 +28,11 @@ ms.locfileid: "51518964"
 
   이러한 리소스에 대 한 자세한 내용은 참조 하세요. [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)합니다.
 
-- 항목 클래스 정의에서 파생 된 `COleServerItem`합니다. 서버 항목에 자세한 내용은 참조 하세요 [서버: 서버 항목](../mfc/servers-server-items.md)합니다.
+- 항목 클래스 정의에서 파생 된 `COleServerItem`합니다. 서버 항목에 자세한 내용은 참조 하세요. [서버: 서버 항목](../mfc/servers-server-items.md)합니다.
 
-- 문서 클래스의 기본 클래스를 변경 `COleServerDoc`합니다. 자세한 내용은 참조 하세요 [서버: 서버 문서 구현](../mfc/servers-implementing-server-documents.md)합니다.
+- 문서 클래스의 기본 클래스를 변경 `COleServerDoc`합니다. 자세한 내용은 참조 하세요. [서버: 서버 문서 구현](../mfc/servers-implementing-server-documents.md)합니다.
 
-- 프레임 창 클래스 정의에서 파생 된 `COleIPFrameWnd`합니다. 자세한 내용은 참조 하세요 [서버: 내부 프레임 Windows 구현](../mfc/servers-implementing-in-place-frame-windows.md)합니다.
+- 프레임 창 클래스 정의에서 파생 된 `COleIPFrameWnd`합니다. 자세한 내용은 참조 하세요. [서버: 내부 프레임 Windows 구현](../mfc/servers-implementing-in-place-frame-windows.md)합니다.
 
 - Windows 등록 데이터베이스의 서버 응용 프로그램에 대 한 항목을 만들고 OLE 시스템을 사용 하 여 서버의 새 인스턴스를 등록 합니다. 이 항목에 대 한 자세한 내용은 [등록](../mfc/registration.md)합니다.
 
@@ -40,10 +40,9 @@ ms.locfileid: "51518964"
 
 자세한 내용은 [COleServerItem](../mfc/reference/coleserveritem-class.md), [COleServerDoc](../mfc/reference/coleserverdoc-class.md), 및 [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md) 에 *클래스 라이브러리 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [서버](../mfc/servers.md)<br/>
 [컨테이너](../mfc/containers.md)<br/>
 [메뉴 및 리소스(OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [등록](../mfc/registration.md)
-

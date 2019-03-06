@@ -19,12 +19,12 @@ f1_keywords:
 helpviewer_keywords:
 - tiled_index class
 ms.assetid: 0ce2ae26-f1bb-4436-b473-a9e1b619bb38
-ms.openlocfilehash: 11faec19160ccc6028bdb294f37a51d7fe26dc15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cea1ac1d500a9cf3bcbdc1f5dde33a0002cbd363
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619832"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257906"
 ---
 # <a name="tiledindex-class"></a>tiled_index 클래스
 
@@ -88,9 +88,9 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |[rank 상수](#tiled_index__rank)|차수를 저장 합니다 `tiled_index` 개체입니다.|
 |[tile 상수](#tiled_index__tile)|저장소를 `index` 차수 1, 2 또는 3의 현재 타일의 좌표를 나타내는 개체를 `tiled_extent` 개체입니다.|
 |[tile_dim0 Constant](#tiled_index__tile_dim0)|최대 유효 치수의 길이 저장 합니다.|
-|[tile_dim1 상수](#tiled_index__tile_dim1)|다음 최대 유효 치수의 길이 저장 합니다.|
+|[tile_dim1 Constant](#tiled_index__tile_dim1)|다음 최대 유효 치수의 길이 저장 합니다.|
 |[tile_dim2 Constant](#tiled_index__tile_dim2)|최소 유효 치수의 길이 저장 합니다.|
-|[tile_origin 상수](#tiled_index__tile_origin)|저장소를 `index` 개체의 현재 타일의 원점의 전역를 나타내는 차수 1, 2 또는 3 좌표는 `tiled_extent` 개체입니다.|
+|[tile_origin Constant](#tiled_index__tile_origin)|저장소를 `index` 개체의 현재 타일의 원점의 전역를 나타내는 차수 1, 2 또는 3 좌표는 `tiled_extent` 개체입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -98,7 +98,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |----------|-----------------|
 |[tile_extent](#tile_extent)|가져옵니다는 [익스텐트](extent-class.md) 의 값을 가진 개체를 `tiled_index` 템플릿 인수 `tiled_index` 템플릿 인수 `_Dim0`, `_Dim1`, 및 `_Dim2`합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_Tiled_index_base`
 
@@ -133,7 +133,7 @@ tiled_index(
 *_Global*<br/>
 전역 [인덱스](index-class.md) 생성 된 `tiled_index`합니다.
 
-*(_L)*<br/>
+*_Local*<br/>
 로컬 [인덱스](index-class.md) 생성 된 `tiled_index`
 
 *_Tile*<br/>
@@ -168,7 +168,8 @@ extent<rank> get_tile_extent()restrict(amp,cpu);
 
 ## <a name="return-value"></a>반환 값
 
-`extent` 템플릿 인수 `tiled_index`, `_Dim0` 및 `_Dim1`의 값을 가진 `_Dim2` 개체입니다.
+
+  `extent` 템플릿 인수 `tiled_index`, `_Dim0` 및 `_Dim1`의 값을 가진 `_Dim2` 개체입니다.
 
 ## <a name="tiled_index__barrier"></a>  barrier
 
@@ -210,7 +211,7 @@ const index<rank> local;
 static const int rank = _Rank;
 ```
 
-## <a name="tiled_index__tile"></a>  타일
+## <a name="tiled_index__tile"></a>  tile
 
 저장소를 [인덱스](index-class.md) 차수 1, 2 또는 3의 현재 타일의 좌표를 나타내는 개체를 [tiled_extent](tiled-extent-class.md) 개체입니다.
 
@@ -269,6 +270,6 @@ const index<rank> tile_origin
 __declspec(property(get= get_tile_extent)) extent<rank> tile_extent;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

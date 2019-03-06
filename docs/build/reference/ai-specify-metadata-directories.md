@@ -11,24 +11,25 @@ helpviewer_keywords:
 - AI compiler option [C++]
 - -AI compiler option [C++]
 ms.assetid: fb9c1846-504c-4a3b-bb39-c8696de32f6f
-ms.openlocfilehash: a9e752f68ed53c7a94fec1914bc42c39a17648b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a2d87039e2195c96e4209c7b5098473a6f52c486
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50471528"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424446"
 ---
 # <a name="ai-specify-metadata-directories"></a>/AI(메타데이터 디렉터리 지정)
 
-`#using` 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.
+
+  `#using` 지시문에 전달된 파일 참조를 확인하기 위해 컴파일러가 검색할 디렉터리를 지정합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/AI**_디렉터리_
+> **/AI**_directory_
 
 ## <a name="arguments"></a>인수
 
-*디렉터리*<br/>
+*directory*<br/>
 검색할 컴파일러의 디렉터리나 경로
 
 ## <a name="remarks"></a>설명
@@ -47,7 +48,7 @@ ms.locfileid: "50471528"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalUsingDirectories%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

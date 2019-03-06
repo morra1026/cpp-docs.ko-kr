@@ -18,12 +18,12 @@ f1_keywords:
 helpviewer_keywords:
 - COM interfaces, COM interface entry macros
 ms.assetid: 19dcb768-2e1f-4b8d-a618-453a01a4bd00
-ms.openlocfilehash: 8341061ba6365beb97f4413aab8bfbbfdc25e035
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: ed2b8445a0f13b82338d2904d43fd17688d05b9e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693922"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276379"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY 매크로
 
@@ -397,4 +397,3 @@ COM_INTERFACE_ENTRY_NOINTERFACE(x)
 특정 사례에서 사용 되는 인터페이스를 방지 하기 위해이 매크로 사용할 수 있습니다. 예를 들어 인터페이스에 대 한 쿼리를 알 수 없는 내부 집계의 전달 하지 못하도록 COM_INTERFACE_ENTRY_AGGREGATE_BLIND 직전에 COM 맵에이 매크로 삽입할 수 있습니다.
 
 인터페이스 IID를 추가 하 여 만들어집니다 *x* 에 `IID_`입니다. 예를 들어 경우 *x* 됩니다 `IPersistStorage`, IID 됩니다 `IID_IPersistStorage`합니다.
-

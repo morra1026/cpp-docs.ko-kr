@@ -166,12 +166,12 @@ helpviewer_keywords:
 - CDaoRecordset [MFC], m_strFilter
 - CDaoRecordset [MFC], m_strSort
 ms.assetid: 2322067f-1027-4662-a5d7-aa2fc7488630
-ms.openlocfilehash: 6b3e3fac575d6a1308a9f61b3bf827d76785e94d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 96118645aa656e97fcb93a0fd223045208ab03a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50639328"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273896"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset 클래스
 
@@ -250,7 +250,7 @@ class CDaoRecordset : public CObject
 |[CDaoRecordset::MoveLast](#movelast)|레코드 집합의 마지막 레코드를 현재 레코드를 배치합니다.|
 |[CDaoRecordset::MoveNext](#movenext)|레코드 집합에서 다음 레코드를 현재 레코드를 배치합니다.|
 |[CDaoRecordset::MovePrev](#moveprev)|레코드 집합에서 이전 레코드를 현재 레코드를 배치합니다.|
-|[Cdaorecordset:: Open](#open)|테이블, 다이너셋, 또는 스냅숏에서 새 레코드 집합을 만듭니다.|
+|[CDaoRecordset::Open](#open)|테이블, 다이너셋, 또는 스냅숏에서 새 레코드 집합을 만듭니다.|
 |[CDaoRecordset::Requery](#requery)|레코드 집합의 쿼리를 선택한 레코드를 새로 고치려면 다시 실행 합니다.|
 |[CDaoRecordset::Seek](#seek)|현재 인덱스를 사용 하면 현재 레코드를 기록 하는 지정 된 조건을 충족 하는 인덱싱된 테이블 형식 레코드 집합 개체에서 레코드를 찾습니다.|
 |[CDaoRecordset::SetAbsolutePosition](#setabsoluteposition)|레코드 집합 개체의 현재 레코드의 레코드 번호를 설정합니다.|
@@ -272,7 +272,7 @@ class CDaoRecordset : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[Cdaorecordset:: M_bcheckcachefordirtyfields](#m_bcheckcachefordirtyfields)|변경 된 것으로 필드는 자동으로 표시 여부를 나타내는 플래그를 포함 합니다.|
+|[CDaoRecordset::m_bCheckCacheForDirtyFields](#m_bcheckcachefordirtyfields)|변경 된 것으로 필드는 자동으로 표시 여부를 나타내는 플래그를 포함 합니다.|
 |[CDaoRecordset::m_nFields](#m_nfields)|레코드 집합 클래스의 필드 데이터 멤버의 수 및 데이터 원본에서 레코드 집합에서 선택한 열 수가 포함 됩니다.|
 |[CDaoRecordset::m_nParams](#m_nparams)|레코드 집합 클래스에서 매개 변수 데이터 멤버 수가 포함-레코드 집합의 쿼리와 함께 전달 되는 매개 변수 개수|
 |[CDaoRecordset::m_pDAORecordset](#m_pdaorecordset)|레코드 집합 개체를 기본 DAO 인터페이스에 대 한 포인터입니다.|
@@ -319,7 +319,7 @@ class CDaoRecordset : public CObject
 
 관련된 내용은 DAO 도움말에서 "레코드 집합 개체" 항목을 참조 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1130,9 +1130,9 @@ void GetFieldInfo(
 
 - `AFX_DAO_PRIMARY_INFO` (기본값) 이름, 유형, 크기, 특성
 
-- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 필요한 서 수 위치 0 길이, 데이터 정렬 순서, 외부 이름, 원본 필드, 원본 테이블 허용
+- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 서 수 위치에 필요한 순서, 외부 이름, 원본 필드, 원본 테이블 데이터 정렬, 길이가 0 허용
 
-- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 plus: Default Value, 유효성 검사 규칙 유효성 검사 텍스트
+- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 및: 기본 값, 유효성 검사 규칙 유효성 검사 텍스트
 
 *lpszName*<br/>
 @FSHO2@필드의 이름입니다.
@@ -1237,9 +1237,9 @@ void GetIndexInfo(
 
 - `AFX_DAO_PRIMARY_INFO` (기본값) 이름, 필드 정보 필드
 
-- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 기본, 고유, 클러스터형, IgnoreNulls, 필요한 외부
+- `AFX_DAO_SECONDARY_INFO` 기본 정보, plus: 기본, 고유, 클러스터형 IgnoreNulls, 필요한 경우 외부
 
-- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 plus: 고유 카운트
+- `AFX_DAO_ALL_INFO` 기본 및 보조 정보 및: Distinct Count
 
 *lpszName*<br/>
 이름별 조회에 대 한 인덱스 개체의 이름에 대 한 포인터입니다.
@@ -1500,8 +1500,8 @@ BOOL IsBOF() const;
 
 ||MoveFirst, MoveLast|MovePrev,<br /><br /> Move < 0|0 이동|MoveNext<br /><br /> > 0 이동|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
-|`IsBOF`= 0이 아닌 경우<br /><br /> `IsEOF`=0|Allowed|예외|예외|Allowed|
-|`IsBOF`=0,<br /><br /> `IsEOF`0이 아닌 값 =|Allowed|Allowed|예외|예외|
+|`IsBOF`=nonzero,<br /><br /> `IsEOF`=0|Allowed|예외|예외|Allowed|
+|`IsBOF`=0,<br /><br /> `IsEOF`=nonzero|Allowed|Allowed|예외|예외|
 |둘 다 0이 아닌 값|예외|예외|예외|예외|
 |둘 다 0|Allowed|Allowed|Allowed|Allowed|
 
@@ -1513,8 +1513,8 @@ BOOL IsBOF() const;
 |------|-----------|-----------|
 |`MoveFirst`, `MoveLast`|0이 아닌 값|0이 아닌 값|
 |`Move` 0|변경 안 함|변경 안 함|
-|`MovePrev``Move` < 0|0이 아닌 값|변경 안 함|
-|`MoveNext``Move` > 0|변경 안 함|0이 아닌 값|
+|`MovePrev`, `Move` < 0|0이 아닌 값|변경 안 함|
+|`MoveNext`, `Move` > 0|변경 안 함|0이 아닌 값|
 
 관련된 내용은 항목을 참조 하십시오. "BOF, EOF 속성" DAO 도움말입니다.
 
@@ -1573,8 +1573,8 @@ BOOL IsEOF() const;
 
 ||MoveFirst, MoveLast|MovePrev,<br /><br /> Move < 0|0 이동|MoveNext<br /><br /> > 0 이동|
 |------|-------------------------|-----------------------------|------------|-----------------------------|
-|`IsBOF`= 0이 아닌 경우<br /><br /> `IsEOF`=0|Allowed|예외|예외|Allowed|
-|`IsBOF`=0,<br /><br /> `IsEOF`0이 아닌 값 =|Allowed|Allowed|예외|예외|
+|`IsBOF`=nonzero,<br /><br /> `IsEOF`=0|Allowed|예외|예외|Allowed|
+|`IsBOF`=0,<br /><br /> `IsEOF`=nonzero|Allowed|Allowed|예외|예외|
 |둘 다 0이 아닌 값|예외|예외|예외|예외|
 |둘 다 0|Allowed|Allowed|Allowed|Allowed|
 
@@ -1586,8 +1586,8 @@ BOOL IsEOF() const;
 |------|-----------|-----------|
 |`MoveFirst`, `MoveLast`|0이 아닌 값|0이 아닌 값|
 |`Move` 0|변경 안 함|변경 안 함|
-|`MovePrev``Move` < 0|0이 아닌 값|변경 안 함|
-|`MoveNext``Move` > 0|변경 안 함|0이 아닌 값|
+|`MovePrev`, `Move` < 0|0이 아닌 값|변경 안 함|
+|`MoveNext`, `Move` > 0|변경 안 함|0이 아닌 값|
 
 관련된 내용은 항목을 참조 하십시오. "BOF, EOF 속성" DAO 도움말입니다.
 
@@ -1678,7 +1678,7 @@ BOOL IsOpen() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="m_bcheckcachefordirtyfields"></a>  Cdaorecordset:: M_bcheckcachefordirtyfields
+##  <a name="m_bcheckcachefordirtyfields"></a>  CDaoRecordset::m_bCheckCacheForDirtyFields
 
 여부를 캐시 된 필드는 자동으로 표시 더티 (변경)를 나타내는 플래그를 포함 및 Null입니다.
 
@@ -1908,7 +1908,7 @@ void MovePrev();
 
 관련된 정보에 대 한 "Move 메서드" 항목을 참조 하 고 "MoveFirst, MoveLast, MoveNext, MovePrevious 메서드" DAO 도움말입니다.
 
-##  <a name="open"></a>  Cdaorecordset:: Open
+##  <a name="open"></a>  CDaoRecordset::Open
 
 레코드 집합에 대 한 레코드를 검색 하려면이 멤버 함수를 호출 해야 합니다.
 
@@ -2006,7 +2006,8 @@ virtual void Open(
 
 첫 번째 버전의 `Open` 를 사용 하는 `lpszSQL` 매개 변수를 레코드는 다음 표에 표시 된 선택된 기준에 따라 합니다.
 
-|`lpszSQL` 매개 변수의 값|선택한 레코드에 따라 결정 됩니다.|예제|
+|
+  `lpszSQL` 매개 변수의 값|선택한 레코드에 따라 결정 됩니다.|예제|
 |--------------------------------------|----------------------------------------|-------------|
 |NULL|반환한 문자열 `GetDefaultSQL`합니다.||
 |하나 이상의 테이블 정의 및/또는 쿼리 정의 이름을 포함 하는 쉼표로 구분 된 목록입니다.|모든 열에 표시 된 `DoFieldExchange`합니다.|`"Customer"`|
@@ -2084,7 +2085,7 @@ BOOL Seek(
 다음 문자열 식 중 하나: "<","\<=", "=" "> =", 또는 ">"입니다.
 
 *pKey1*<br/>
-에 대 한 포인터를 [COleVariant](../../mfc/reference/colevariant-class.md) 인덱스의 첫 번째 필드에 해당 하는 값입니다. 필수.
+에 대 한 포인터를 [COleVariant](../../mfc/reference/colevariant-class.md) 인덱스의 첫 번째 필드에 해당 하는 값입니다. 필수 요소.
 
 *pKey2*<br/>
 에 대 한 포인터를 `COleVariant` 있으면 해당 값은 인덱스의 두 번째 필드에 해당 합니다. 기본값은 NULL입니다.
@@ -2525,7 +2526,7 @@ virtual void Update();
 
 관련된 정보에 대 한 "AddNew 메서드", "CancelUpdate 메서드", "Delete 메서드", "LastModified Property", "업데이트 방법" 및 DAO 도움말의 "EditMode 속성" 항목을 참조 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

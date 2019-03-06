@@ -17,16 +17,17 @@ f1_keywords:
 helpviewer_keywords:
 - multitype_join class
 ms.assetid: 236e87a0-4867-49fd-869a-bef4010e49a7
-ms.openlocfilehash: 2fd94ef072fcab9af076fcdfa1b5c094d77f89c8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a0c68c2c017eedfa23548bee1d17177e8eaaa1e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547401"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289028"
 ---
 # <a name="multitypejoin-class"></a>multitype_join 클래스
 
-`multitype_join` 메시징 블록은 각 소스에서 다양한 형식의 메시지를 결합하고 결합된 메시지의 튜플을 대상에 제공하는 다중 소스, 단일 대상 메시징 블록입니다.
+
+  `multitype_join` 메시징 블록은 각 소스에서 다양한 형식의 메시지를 결합하고 결합된 메시지의 튜플을 대상에 제공하는 다중 소스, 단일 대상 메시징 블록입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -79,7 +80,7 @@ class multitype_join: public ISource<typename _Unwrap<T>::type>;
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -130,7 +131,7 @@ virtual void acquire_ref(_Inout_ ITarget<_Destination_type>* _PTarget);
 
 이 메서드는 프로그램 `ITarget` 하는 동안이 원본에 연결 되는 개체는 `link_target` 메서드.
 
-##  <a name="consume"></a> 사용
+##  <a name="consume"></a> consume
 
 이전에 제공 하는 메시지를 생성 합니다 `multitype_join` 메시징 블록이 고 호출자에 게 소유권을 전송 하 여 대상에 의해 성공적으로 예약 합니다.
 
@@ -200,7 +201,7 @@ multitype_join(
 *_PScheduleGroup*<br/>
 `ScheduleGroup` 메시징 블록의 전파 작업이 예약되는 `multitype_join` 개체입니다. 사용된 `Scheduler` 개체는 일정 그룹에서 암시됩니다.
 
-*연결 (_j)*<br/>
+*_Join*<br/>
 복사할 `multitype_join` 메시징 블록입니다. 원래 개체는 고아로 표시되어 생성자가 이동하도록 합니다.
 
 ### <a name="remarks"></a>설명
@@ -299,7 +300,7 @@ virtual void unlink_target(_Inout_ ITarget<_Destination_type>* _PTarget);
 virtual void unlink_targets();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [choice 클래스](choice-class.md)<br/>

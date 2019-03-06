@@ -8,12 +8,12 @@ helpviewer_keywords:
 - classes [MFC], map
 - map classes [MFC]
 ms.assetid: 3f0b1c05-2243-4d4d-98d4-429fc3310c9f
-ms.openlocfilehash: 4a538e469521d8fdae6d2b74b155794bf559d6dd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6136557bd436fb9964498384f277d48e8525a027
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496410"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262183"
 ---
 # <a name="ready-to-use-map-classes"></a>바로 사용할 수 있는 맵 클래스
 
@@ -40,7 +40,6 @@ ms.locfileid: "50496410"
 [CMapWordToPtr](../mfc/reference/cmapwordtoptr-class.md)<br/>
 형식의 데이터를 사용 하 여 **WORD** 찾으려고 **void** 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

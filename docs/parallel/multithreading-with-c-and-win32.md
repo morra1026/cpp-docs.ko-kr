@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Win32 [C++], multithreading
 - threading [C]
 ms.assetid: 67cdc99e-1ad9-452b-a042-ed246b70040e
-ms.openlocfilehash: a544586cb3f78aed83d50ef10c083a4edbba5cb9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b961671850acfc74cb72bc1c08aef74fdc7a64f8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460192"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264224"
 ---
 # <a name="multithreading-with-c-and-win32"></a>C 및 Wind32를 사용한 다중 스레딩
 
@@ -45,6 +45,6 @@ Visual C++에서는 다중 스레드를 사용하여 프로그래밍할 수 있�
 
 - [스레드 로컬 저장소 (TLS)](thread-local-storage-tls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[이전 코드를 위한 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)
+[레거시 코드에서의 다중 스레드 지원(Visual C++)](multithreading-support-for-older-code-visual-cpp.md)

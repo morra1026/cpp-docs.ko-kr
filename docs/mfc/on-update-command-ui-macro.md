@@ -9,12 +9,12 @@ helpviewer_keywords:
 - command-handler macros
 - updating user-interface objects [MFC]
 ms.assetid: 3e72b50f-4119-4c82-81cf-6e09b132de05
-ms.openlocfilehash: d0487f6a69d144e46adab496f3fd21696b5b434b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 986bc4f12223048a20f88da5d164b24dc1c08ace
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594108"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261182"
 ---
 # <a name="onupdatecommandui-macro"></a>ON_UPDATE_COMMAND_UI 매크로
 
@@ -26,7 +26,6 @@ ms.locfileid: "50594108"
 
 모든 처리기 함수에 나와 있는 같은 합니다 **afx_msg** 키워드입니다. 모든 업데이트 처리기와 같은 해당 인수 하나에 대 한 포인터를 `CCmdUI` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [방법: 사용자 인터페이스 개체 업데이트](../mfc/how-to-update-user-interface-objects.md)
-

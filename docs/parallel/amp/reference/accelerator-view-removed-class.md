@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - AMPRT/Concurrency::accelerator_view_removed:accelerator_view_removed Class
 ms.assetid: 262446de-311c-454e-a5ed-e2aaced0d88a
-ms.openlocfilehash: c51d05b098c395a498bc67d14061185c5d84ebb4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9b803b205ea925ed8cc07e36342a1646d576d7d4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462701"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263756"
 ---
 # <a name="acceleratorviewremoved-class"></a>accelerator_view_removed 클래스
 
@@ -38,9 +38,10 @@ class accelerator_view_removed : public runtime_exception;
 
 |이름|설명|
 |----------|-----------------|
-|[get_view_removed_reason](#get_view_removed_reason)|`accelerator_view` 개체 제거의 원인을 나타내는 HRESULT 오류 코드를 반환합니다.|
+|[get_view_removed_reason](#get_view_removed_reason)|
+  `accelerator_view` 개체 제거의 원인을 나타내는 HRESULT 오류 코드를 반환합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -71,11 +72,12 @@ explicit accelerator_view_removed(
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류에 대한 설명입니다.
 
 *_View_removed_reason*<br/>
-`accelerator_view` 개체 제거의 원인을 나타내는 HRESULT 오류 코드입니다.
+
+  `accelerator_view` 개체 제거의 원인을 나타내는 HRESULT 오류 코드입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -83,7 +85,8 @@ Accelerator_view_removed 클래스의 새 인스턴스입니다.
 
 ## <a name="get_view_removed_reason_method"></a> get_view_removed_reason
 
-`accelerator_view` 개체 제거의 원인을 나타내는 HRESULT 오류 코드를 반환합니다.
+
+  `accelerator_view` 개체 제거의 원인을 나타내는 HRESULT 오류 코드를 반환합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -91,6 +94,6 @@ Accelerator_view_removed 클래스의 새 인스턴스입니다.
 HRESULT get_view_removed_reason() const throw();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

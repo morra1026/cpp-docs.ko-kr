@@ -9,12 +9,12 @@ helpviewer_keywords:
 - interfaces, availability
 - QueryInterface method
 ms.assetid: 62fce95e-aafa-4187-b50b-e6611b74c3b3
-ms.openlocfilehash: 552d0a0f5cbc93bd0d8fc6eb4a77eecee851add6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3ec3c6e0d2b534c3af49000202461a43a65dae9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477937"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261465"
 ---
 # <a name="queryinterface"></a>QueryInterface
 
@@ -24,8 +24,7 @@ ms.locfileid: "50477937"
 
 준수 해야 하는 참고 [참조 카운팅](../atl/reference-counting.md) 항상 규칙입니다. 호출 하는 경우 `Release` 에 참조 횟수를 0으로 감소 하는 인터페이스 포인터를 사용 하지 않아야 포인터 다시 합니다. 개체에 대 한 약한 참조 해야 하는 경우에 따라 (즉, 하려는 참조 횟수를 증가 하지 않고 해당 인터페이스 중 하나에 대 한 포인터를 가져올)를 호출 하 여이 작업을 수행 하려면 허용 되지 않지만 `QueryInterface` 뒤에 `Release`입니다. 이러한 방식으로 얻은 포인터를 잘못 되었으며 사용할 수 없습니다. 이 더 쉽게 드러납니다 시기 [_ATL_DEBUG_INTERFACES](reference/debugging-and-error-reporting-macros.md#_atl_debug_interfaces) 정의이 매크로 정의 하므로 찾기 참조 버그를 계산 하는 데 도움이 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 소개](../atl/introduction-to-com.md)<br/>
-[개체에서 QueryInterface: 탐색](/windows/desktop/com/queryinterface--navigating-in-an-object)
-
+[QueryInterface: 개체에서 탐색](/windows/desktop/com/queryinterface--navigating-in-an-object)

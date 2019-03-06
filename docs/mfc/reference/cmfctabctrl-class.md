@@ -104,12 +104,12 @@ helpviewer_keywords:
 - CMFCTabCtrl [MFC], SynchronizeScrollBar
 - CMFCTabCtrl [MFC], m_bEnableActivate
 ms.assetid: d441385d-2c72-4203-96fa-deae2273da35
-ms.openlocfilehash: 8388a79bf7c85f3d603bd4ef234947e872534cba
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8dc8c51cc1847d29b76e2017db4c1368b35b9a9f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505123"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281683"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl Class
 
@@ -149,7 +149,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::GetResizeMode](#getresizemode)|현재 탭 컨트롤 크기를 조정할 수 하는 방법을 지정 하는 값을 검색 합니다.|
 |[CMFCTabCtrl::GetScrollBar](#getscrollbar)|탭 컨트롤을 사용 하 여 연결 된 스크롤 막대 개체에 대 한 포인터를 검색 합니다.|
 |[CMFCTabCtrl::GetTabArea](#gettabarea)|위쪽 또는 아래쪽 탭 컨트롤의 탭 레이블 영역의 경계 사각형을 검색 합니다. (재정의 [CMFCBaseTabCtrl::GetTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#gettabarea).)|
-|`CMFCTabCtrl::GetTabFromPoint`|지정된 된 점이 포함 된 탭을 검색 합니다. (재정의 [CMFCBaseTabCtrl::GetTabFromPoint](../../mfc/reference/cmfcbasetabctrl-class.md#gettabfrompoint).)|
+|`CMFCTabCtrl::GetTabFromPoint`|지정된 지점이 포함된 탭을 검색합니다. (재정의 [CMFCBaseTabCtrl::GetTabFromPoint](../../mfc/reference/cmfcbasetabctrl-class.md#gettabfrompoint).)|
 |[CMFCTabCtrl::GetTabMaxWidth](#gettabmaxwidth)|탭의 최대 너비를 검색합니다.|
 |[CMFCTabCtrl::GetTabsHeight](#gettabsheight)|현재 탭 컨트롤의 탭 영역의 높이 검색합니다.|
 |[CMFCTabCtrl::GetTabsRect](#gettabsrect)|현재 탭 컨트롤의 탭 영역을 제한 하는 사각형을 검색 합니다. (재정의 [CMFCBaseTabCtrl::GetTabsRect](../../mfc/reference/cmfcbasetabctrl-class.md#gettabsrect).)|
@@ -168,7 +168,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::IsLeftRightRounded](#isleftrightrounded)|현재 탭 컨트롤에서 탭의 왼쪽 및 오른쪽의 모양을 반올림 됩니다 있는지 여부를 나타냅니다.|
 |[CMFCTabCtrl::IsMDITabGroup](#ismditabgroup)|현재 탭 컨트롤 다중 문서 인터페이스 창의 클라이언트 영역에 포함 되는지 여부를 나타냅니다.|
 |[CMFCTabCtrl::IsOneNoteStyle](#isonenotestyle)|Microsoft OneNote의 스타일에서 현재 탭 컨트롤을 표시할지 여부를 나타냅니다.|
-|`CMFCTabCtrl::IsPtInTabArea`|꼭 짓 점이 탭 영역 내에서 결정 합니다. (재정의 [CMFCBaseTabCtrl::IsPtInTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
+|`CMFCTabCtrl::IsPtInTabArea`|지점이 탭 영역 내에 있는지 여부를 확인합니다. (재정의 [CMFCBaseTabCtrl::IsPtInTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
 |[CMFCTabCtrl::IsSharedScroll](#issharedscroll)|현재 탭 컨트롤이 탭 그룹으로 스크롤할 수 있는 스크롤 막대에 있는지 여부를 나타냅니다.|
 |[CMFCTabCtrl::IsTabDocumentsMenu](#istabdocumentsmenu)|탭 컨트롤에서 스크롤 단추 또는 탭 창 메뉴를 표시 하는 단추를 표시할지 여부를 나타냅니다.|
 |[CMFCTabCtrl::IsVS2005Style](#isvs2005style)|Visual Studio.NET 2005 스타일의 탭 표시 되는지 여부를 나타냅니다.|
@@ -178,7 +178,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragOver](#ondragover)|놓기 대상 창 위로 마우스를 이동 하는 경우 프레임 워크에서 끌기 작업 중 호출 합니다. (재정의 [CMFCBaseTabCtrl::OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|사용자 탭을 선택 하 고 선택한 탭 활성 탭으로 설정 될 때까지 대기, 탭된 창이 팝업 메뉴를 표시 합니다.|
 |`CMFCTabCtrl::PreTranslateMessage`|디스패치 되기 전에 창 메시지를 변환 합니다 [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) 하 고 [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows 함수입니다. (재정의 [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|
-|`CMFCTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산 됩니다. (재정의 [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
+|`CMFCTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산합니다. (재정의 [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|탭 컨트롤의 현재 탭 다중 문서 인터페이스 탭 그룹에 활성 탭으로 설정합니다.|
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|탭을 활성화합니다. (재정의 [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|
 |[CMFCTabCtrl::SetActiveTabBoldFont](#setactivetabboldfont)|사용 하거나 활성 탭의 굵은 글꼴 사용 하지 않도록 설정 합니다.|
@@ -229,7 +229,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 
 탭된 창으로 도킹 컨트롤 막대를 만드는 방법의 예제를 참조 하세요 [CTabbedPane 클래스](../../mfc/reference/ctabbedpane-class.md)합니다. 사용 하도록 `CMFCTabCtrl` 도킹 되지 않은 컨트롤을 만드는 것을 `CMFCTabCtrl` 개체를 호출 [CMFCTabCtrl::Create](#create).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -267,7 +267,7 @@ void ActivateMDITab(int nTab = -1);
 
 ##  <a name="allowdestroyemptytabbedpane"></a>  CMFCTabCtrl::AllowDestroyEmptyTabbedPane
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual BOOL AllowDestroyEmptyTabbedPane() const;
@@ -433,7 +433,7 @@ virtual BOOL EnsureVisible(int iTab);
 ### <a name="parameters"></a>매개 변수
 
 *iTab*<br/>
-[in] 탭의 0부터 시작 하는 인덱스입니다.
+[in] 탭의 0부터 시작하는 인덱스입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -876,7 +876,7 @@ virtual DROPEFFECT OnDragEnter(
 *dwKeyState*<br/>
 [in] 보조키의 상태를 포함합니다. 이 매개 변수는 다음 값의 비트 조합 (OR): MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다. 자세한 내용은 참조는 **메시지 매개 변수** 부분 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 클라이언트 좌표에서 커서의 현재 위치를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -908,7 +908,7 @@ virtual DROPEFFECT OnDragOver(
 *dwKeyState*<br/>
 [in] MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON의 비트 조합 (OR)는 보조 키의 상태입니다. 자세한 내용은 "메시지 Parameters"를 참조 [마우스 입력에 대 한](/windows/desktop/inputdev/about-mouse-input)합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 현재 마우스 위치입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -929,7 +929,7 @@ virtual void OnShowTabDocumentsMenu(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 팝업 메뉴를 표시할 위치의 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -1049,7 +1049,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 [in] 투명 이미지 색입니다. 이 색 되어 있는 이미지의 파트를 투명 하 게 됩니다. 기본값은 색 자홍, RGB(255,0,255) 합니다.
 
 *hImageList*<br/>
-[in] 미리 로드 된 이미지 목록에 대 한 핸들입니다.
+[in] 사전 로드된 이미지 목록에 대한 핸들입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1111,7 +1111,7 @@ void StopResize(BOOL bCancel);
 
 ### <a name="parameters"></a>매개 변수
 
-*b 취소*<br/>
+*bCancel*<br/>
 [in] 현재 크기 조정 작업을 중단 하려면 TRUE 현재 조정 작업을 완료 하려는 경우 FALSE. 두 경우 모두 프레임 워크는 크기 조정 사각형을 그리기를 중지 합니다.
 
 ##  <a name="synchronizescrollbar"></a>  CMFCTabCtrl::SynchronizeScrollBar
@@ -1135,10 +1135,10 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
 
 이 메서드는 tab 컨트롤을 플랫 탭이 표시 되는 영향을 줍니다. 스크롤 막대를 동시에 모든 탭을 영향을 줍니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)<br/>
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CMFCBaseTabCtrl 클래스](../../mfc/reference/cmfcbasetabctrl-class.md)

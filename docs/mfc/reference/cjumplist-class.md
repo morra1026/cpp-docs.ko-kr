@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CJumpList [MFC], InitializeList
 - CJumpList [MFC], SetAppID
 ms.assetid: d364d27e-f512-4b12-9872-c2a17c78ab1f
-ms.openlocfilehash: 7248c86f71780ef1867a1ce7edf871f27fc67643
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b72ea6f3715be1e4a11d457dbdeaba7a622ef8b6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642184"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259076"
 ---
 # <a name="cjumplist-class"></a>CJumpList 클래스
 
@@ -60,7 +60,7 @@ class CJumpList;
 |이름|설명|
 |----------|-----------------|
 |[CJumpList::CJumpList](#cjumplist)|`CJumpList` 개체를 생성합니다.|
-|[CJumpList:: ~ CJumpList](#cjumplist__~cjumplist)|`CJumpList` 개체를 제거합니다.|
+|[CJumpList::~CJumpList](#cjumplist__~cjumplist)|`CJumpList` 개체를 제거합니다.|
 
 |이름|설명|
 |----------|-----------------|
@@ -79,7 +79,7 @@ class CJumpList;
 |[CJumpList::InitializeList](#initializelist)|목록 작성 트랜잭션을 시작합니다.|
 |[CJumpList::SetAppID](#setappid)|빌드되는 목록에 대 한 응용 프로그램 사용자 모델 ID를 설정 합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CJumpList](../../mfc/reference/cjumplist-class.md)
 
@@ -87,7 +87,7 @@ class CJumpList;
 
 **헤더:** afxadv.h
 
-##  <a name="_dtorcjumplist"></a>  CJumpList:: ~ CJumpList
+##  <a name="_dtorcjumplist"></a>  CJumpList::~CJumpList
 
 `CJumpList` 개체를 제거합니다.
 
@@ -359,6 +359,6 @@ void SetAppID(LPCTSTR strAppID);
 *strAppID*<br/>
 응용 프로그램 사용자 모델 ID를 지정 하는 문자열
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - TN047
 ms.assetid: f93c51cf-a8c0-43d0-aa47-7bcb8333d693
-ms.openlocfilehash: d609576c5ffda1a3ba8021e6a459943092c40e98
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 968420658a90c983d8e6c3eaf1e0c61603fc5441
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658837"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276808"
 ---
 # <a name="tn047-relaxing-database-transaction-requirements"></a>TN047: 데이터베이스 트랜잭션 요구 사항 완화
 
@@ -19,8 +19,7 @@ MFC ODBC 데이터베이스 클래스의 트랜잭션 요구 사항을 설명 �
 
 데이터베이스 클래스는 MFC 4.2 부터는 커서 보존 요구 하는 제한을 완화가입니다. 드라이버를 지 원하는 경우 트랜잭션이 사용 됩니다. 그러나 미치는 이제 확인 해야 합니다는 **CommitTrans** 또는 **롤백** 열기 레코드 집합에 대 한 작업입니다. 멤버 함수를 참조 하세요 [CDatabase::GetCursorCommitBehavior](../mfc/reference/cdatabase-class.md#getcursorcommitbehavior) 하 고 [CDatabase::GetCursorRollbackBehavior](../mfc/reference/cdatabase-class.md#getcursorrollbackbehavior) 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

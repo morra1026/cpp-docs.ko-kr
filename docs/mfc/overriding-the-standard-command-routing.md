@@ -7,12 +7,12 @@ helpviewer_keywords:
 - command handling [MFC], routing commands
 - overriding, standard command routing
 ms.assetid: 872b698a-7432-40c4-9008-68721e8effa5
-ms.openlocfilehash: 132831939c05f7e8f84c306f5d08bba9cd5e8ea4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5383c1053894d44e23baf51b19ac3df4e60158e5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648446"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277952"
 ---
 # <a name="overriding-the-standard-command-routing"></a>표준 명령 라우팅 재정의
 
@@ -24,7 +24,6 @@ ms.locfileid: "50648446"
 
 라우팅에 일부 새 개체를 삽입 하면 해당 클래스는 명령 대상 클래스 여야 합니다. 재정의 버전에서 `OnCmdMsg`를 재정의 하는 버전을 호출 해야 합니다. 참조를 [OnCmdMsg](../mfc/reference/ccmdtarget-class.md#oncmdmsg) 클래스의 멤버 함수 `CCmdTarget` 에 *MFC 참조* 와 같은 클래스의 버전 `CView` 및 `CDocument` 예제에 대 한 제공 된 소스 코드에서.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 처리기를 호출하는 방법](../mfc/how-the-framework-calls-a-handler.md)
-

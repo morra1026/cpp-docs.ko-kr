@@ -3,12 +3,12 @@ title: 이벤트 추가(ATL 자습서, 5부)
 ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: 2de12022-3148-4ce3-8606-8a9d4274f0e9
-ms.openlocfilehash: 4576af12f73e907fa8826ad71185a42ed9b9308e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 57fc2adaadcca52cfc25736b5f9010fcb65a2ff0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643042"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278641"
 ---
 # <a name="adding-an-event-atl-tutorial-part-5"></a>이벤트 추가(ATL 자습서, 5부)
 
@@ -156,6 +156,6 @@ ms.locfileid: "50643042"
 
 [4 단계를 다시](../atl/changing-the-drawing-code-atl-tutorial-part-4.md) &#124; [6 단계로 이동 합니다.](../atl/adding-a-property-page-atl-tutorial-part-6.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자습서](../atl/active-template-library-atl-tutorial.md)

@@ -1,4 +1,4 @@
-﻿---
+---
 title: 이름 대신 서수를 사용하여 DLL에서 함수 내보내기
 ms.date: 11/04/2016
 f1_keywords:
@@ -9,12 +9,12 @@ helpviewer_keywords:
 - exporting DLLs [C++], ordinal values
 - NONAME attribute
 ms.assetid: 679719fd-d965-4df3-9f7a-7d86ad831702
-ms.openlocfilehash: 6a5ac13fdc85b3cb1626aefa28b92866a8c856c1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe34ec90aa775e7435d4a02b9d77a9cb9c8fdd65
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50503419"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423302"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>이름 대신 서수를 사용하여 DLL에서 함수 내보내기
 
@@ -29,6 +29,6 @@ DLL에서 함수를 내보내는 가장 간단한 방법은 이름을 사용하�
 
 - [__declspec(dllexport) 사용](../build/exporting-from-a-dll-using-declspec-dllexport.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DLL에서 내보내기](../build/exporting-from-a-dll.md)

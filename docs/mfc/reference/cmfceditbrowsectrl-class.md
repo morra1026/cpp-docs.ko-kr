@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CMFCEditBrowseCtrl [MFC], OnIllegalFileName
 - CMFCEditBrowseCtrl [MFC], SetBrowseButtonImage
 ms.assetid: 69cfd886-3d35-4bee-8901-7c88fcf9520f
-ms.openlocfilehash: a16d7508f273fc444be65c1e6cc176911fd28e03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d1f603f8439815c92360af40ccb807446d0e84a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643302"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273285"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl 클래스
 
@@ -88,7 +88,7 @@ class CMFCEditBrowseCtrl : public CEdit
 
    사용자가 찾아보기 단추를 클릭 하면 표준 폴더 선택 대화 상자가 표시 됩니다.
 
-## <a name="how-to-specify-an-edit-browse-control"></a>편집 찾아보기 컨트롤을 지정 하는 방법.
+## <a name="how-to-specify-an-edit-browse-control"></a>방법: 편집 찾아보기 컨트롤을 지정 합니다.
 
 응용 프로그램에서 편집 찾아보기 컨트롤을 통합 하려면 다음 단계를 수행 합니다.
 
@@ -106,7 +106,7 @@ class CMFCEditBrowseCtrl : public CEdit
 
 1. 편집 찾아보기 컨트롤에서 찾아보기 단추를 제거 하려면 다음을 호출 합니다 [EnableBrowseButton](#enablebrowsebutton) 메서드를 *bEnable* 매개 변수가 FALSE로 설정 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -271,7 +271,7 @@ virtual void OnDrawBrowseButton(
 *pDC*<br/>
 장치 컨텍스트에 대한 포인터입니다.
 
-*rect*<br/>
+*사각형*<br/>
 찾아보기 단추의 경계 사각형입니다.
 
 *bIsButtonPressed*<br/>
@@ -337,7 +337,7 @@ virtual BOOL OnIllegalFileName(CString& strFileName);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

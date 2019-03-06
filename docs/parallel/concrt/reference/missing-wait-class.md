@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - missing_wait class
 ms.assetid: ff981875-bd43-47e3-806f-b03c9f418b18
-ms.openlocfilehash: 7e515a33bfa827bba5329182cd3b79764495d728
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 68d24d710eec4fd602e64cc3cbde810db2b1a495
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50531120"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297643"
 ---
 # <a name="missingwait-class"></a>missing_wait 클래스
 
@@ -37,7 +37,7 @@ class missing_wait : public std::exception;
 
 예외 흐름 없는 담당 하는 호출을 `wait` 또는 `run_and_wait` 메서드를 `task_group` 또는 `structured_task_group` 소멸 시킬 개체를 허용 하기 전에 개체. 런타임 호출을 잊은 확인 하기 위해이 예외를 throw 합니다 `wait` 또는 `run_and_wait` 메서드.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -61,10 +61,10 @@ missing_wait() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [task_group 클래스](task-group-class.md)<br/>

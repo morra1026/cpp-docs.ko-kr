@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Concurrency Runtime, migrating from OpenMP
 - OpenMP, migrating to the Concurrency Runtime
 ms.assetid: 9bab7bb1-e45d-44b2-8509-3b226be2c93b
-ms.openlocfilehash: 78fa83c30bc55d82ffa5d2ba1e7d65472643f86b
-ms.sourcegitcommit: ee0103752884425843556a19cf418a504dc3cd02
+ms.openlocfilehash: 16b0f175867e18e127997749098cce998674b3d2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737626"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259505"
 ---
 # <a name="migrating-from-openmp-to-the-concurrency-runtime"></a>OpenMP에서 동시성 런타임으로 마이그레이션
 
@@ -48,23 +48,22 @@ OpenMP는 병렬 처리 수준이 미리 결정되어 있고 시스템에서 사
 
 ## <a name="related-topics"></a>관련 항목
 
-[방법: OpenMP parallel for 루프 동시성 런타임을 사용 하 여 변환](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
+[방법: 동시성 런타임을 사용하기 위해 OpenMP parallel for 루프 변환](../../parallel/concrt/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime.md)
 
 OpenMP를 사용 하는 기본 루프가 지정 된 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) 하 고 [에 대 한](../../parallel/openmp/reference/for-openmp.md) 지시문을 동시성 런타임을 사용 하도록 변환 하는 방법을 보여 줍니다 [concurrency:: parallel_for](reference/concurrency-namespace-functions.md#parallel_for) 알고리즘입니다.
 
-[방법: 동시성 런타임을 사용 하 여 취소를 사용 하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
+[방법: 동시성 런타임을 사용하기 위해 취소를 사용하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-cancellation.md)<br/>
 OpenMP 주어진 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 루프를 실행 하려면 모든 반복 하지 않아도 되는 동시성 런타임에서 취소 메커니즘을 사용 하도록 변환 하는 방법에 설명 합니다.
 
-[방법: 동시성 런타임을 사용 하 여 예외 처리를 사용 하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md)<br/>
+[방법: 동시성 런타임을 사용하기 위해 예외 처리를 사용하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-exception-handling.md)<br/>
 지정 OpenMP [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 예외 처리를 수행 하는 루프에는 동시성 런타임에서 예외 처리 메커니즘을 사용 하도록 변환 하는 방법을 보여 줍니다.
 
-[방법: 동시성 런타임을 사용 하기 위해 환산 변수를 사용 하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
+[방법: 동시성 런타임을 사용하기 위해 환산 변수를 사용하는 OpenMP 루프 변환](../../parallel/concrt/convert-an-openmp-loop-that-uses-a-reduction-variable.md)<br/>
 OpenMP 지정 [병렬](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel)[에 대 한](../../parallel/openmp/reference/for-openmp.md) 사용 하는 루프를 [감소](../../parallel/openmp/reference/reduction.md) 절에는 동시성 런타임을 사용 하도록 변환 하는 방법을 보여 줍니다. 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)<br/>
 [OpenMP](../../parallel/concrt/comparing-the-concurrency-runtime-to-other-concurrency-models.md#openmp)<br/>
 [PPL(병렬 패턴 라이브러리)](../../parallel/concrt/parallel-patterns-library-ppl.md)<br/>
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)
-

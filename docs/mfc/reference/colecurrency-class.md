@@ -22,12 +22,12 @@ helpviewer_keywords:
 - COleCurrency [MFC], m_cur
 - COleCurrency [MFC], m_status
 ms.assetid: 3a36e345-303f-46fb-a57c-858274378a8d
-ms.openlocfilehash: e3b0a369071571fb343d1b5030eebbf7c471bc81
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 64f2b00c8a5aefe8a39c24d26af2a97625225059
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51519193"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273181"
 ---
 # <a name="colecurrency-class"></a>COleCurrency 클래스
 
@@ -62,14 +62,14 @@ class COleCurrency
 |이름|설명|
 |----------|-----------------|
 |[operator =](#operator_eq)|복사본을 `COleCurrency` 값입니다.|
-|[연산자 +,-](#operator_plus_minus)|추가 빼고의 부호를 변경 `COleCurrency` 값입니다.|
-|[operator + =, =](#operator_plus_minus_eq)|더하고 빼는 `COleCurrency` 값이 `COleCurrency` 개체입니다.|
-|[연산자 * /](#operator_star)|눈금을 `COleCurrency` 정수 값입니다.|
-|[연산자 * =, / =](#operator_star_div_eq)|이 확장 `COleCurrency` 정수 값입니다.|
+|[operator +, -](#operator_plus_minus)|추가 빼고의 부호를 변경 `COleCurrency` 값입니다.|
+|[operator +=, -=](#operator_plus_minus_eq)|더하고 빼는 `COleCurrency` 값이 `COleCurrency` 개체입니다.|
+|[operator */](#operator_star)|눈금을 `COleCurrency` 정수 값입니다.|
+|[operator *=, /=](#operator_star_div_eq)|이 확장 `COleCurrency` 정수 값입니다.|
 |[연산자 <<](#operator_stream)|출력을 `COleCurrency` 값을 `CArchive` 또는 `CDumpContext`합니다.|
-|[연산자 >>](#operator_stream)|입력 한 `COleCurrency` 에서 개체 `CArchive`합니다.|
+|[operator >>](#operator_stream)|입력 한 `COleCurrency` 에서 개체 `CArchive`합니다.|
 |[통화 연산자](#operator_currency)|변환 된 `COleCurrency` 을 통화 값입니다.|
-|[연산자 = =, <, < = 등입니다.](#colecurrency_relational_operators)|두 `COleCurrency` 값입니다.|
+|[operator ==, <, <=, etc.](#colecurrency_relational_operators)|두 `COleCurrency` 값입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -86,7 +86,7 @@ class COleCurrency
 
 `COleCurrency` 또한이 고정 소수점 형식에 대 한 일부 기본 산술 연산을 구현합니다. 고정 소수점 계산 시 발생 하는 반올림 오류를 제어 하도록 선택 했습니다. 지원 되는 작업입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `COleCurrency`
 
@@ -222,13 +222,13 @@ enum CurrencyStatus {
 
 - [operator =](#operator_eq)
 
-- [연산자 +-](#operator_plus_minus)
+- [operator + -](#operator_plus_minus)
 
 - [operator + = 및 =](#operator_plus_minus_eq)
 
-- [연산자 * /](#operator_star)
+- [operator * /](#operator_star)
 
-- [연산자 * = 및 = /](#operator_star_div_eq)
+- [operator *= and /=](#operator_star_div_eq)
 
 ### <a name="example"></a>예제
 
@@ -283,13 +283,13 @@ enum CurrencyStatus{
 
 - [operator =](#operator_eq)
 
-- [연산자 +,-](#operator_plus_minus)
+- [operator +, -](#operator_plus_minus)
 
-- [operator + =, =](#operator_plus_minus_eq)
+- [operator +=, -=](#operator_plus_minus_eq)
 
-- [연산자 * /](#operator_star)
+- [operator */](#operator_star)
 
-- [연산자 * =, / =](#operator_star_div_eq)
+- [operator *=, /=](#operator_star_div_eq)
 
 > [!CAUTION]
 >  이 데이터 멤버는 고급 프로그래밍 시나리오입니다. 인라인 멤버 함수를 사용 해야 [GetStatus](#getstatus) 하 고 [SetStatus](#setstatus)합니다. 참조 `SetStatus` 이 데이터 멤버를 명시적으로 설정 하는 것에 대 한 추가 주의 사항에 대 한 합니다.
@@ -320,7 +320,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
 
 [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]
 
-##  <a name="operator_plus_minus"></a>  COleCurrency::operator +,-
+##  <a name="operator_plus_minus"></a>  COleCurrency::operator +, -
 
 이러한 연산자를 사용 하면 추가 하 고 두 빼는 `COleCurrency` 값을 서로 부호를 변경 하는 `COleCurrency` 값입니다.
 
@@ -344,7 +344,7 @@ Null이 고, 결과의 상태를 피연산자 중 하나 이면 `COleCurrency` �
 
 [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]
 
-##  <a name="operator_plus_minus_eq"></a>  COleCurrency::operator + =, =
+##  <a name="operator_plus_minus_eq"></a>  COleCurrency::operator +=, -=
 
 더하기 및 빼기를 사용 하면 한 `COleCurrency` 값을이 `COleCurrency` 개체입니다.
 
@@ -390,7 +390,7 @@ COleCurrency operator/(long nOperand) const;
 
 [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]
 
-##  <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, / =
+##  <a name="operator_star_div_eq"></a>  COleCurrency::operator \*=, /=
 
 이 확장 하도록 허용 `COleCurrency` 정수 값입니다.
 
@@ -413,7 +413,7 @@ const COleCurrency& operator/=(long nOperand);
 
 [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]
 
-##  <a name="operator_stream"></a>  COleCurrency::operator &lt; &lt;, &gt;&gt;
+##  <a name="operator_stream"></a>  COleCurrency::operator &lt;&lt;, &gt;&gt;
 
 진단 덤프 및 보관에 저장을 지원 합니다.
 
@@ -574,7 +574,7 @@ enum CurrencyStatus {
 > [!CAUTION]
 >  이 기능은 고급 프로그래밍 시나리오에 대 한 합니다. 이 함수는이 개체의 데이터를 변경 하지 않습니다. null 또는 잘못 된 상태를 설정 하려면 가장 자주 사용 됩니다. 대입 연산자 ( [연산자 =](#operator_eq)) 및 [SetCurrency](#setcurrency) 원본 값에 따라 개체의 상태를 설정 하려면.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [COleVariant 클래스](../../mfc/reference/colevariant-class.md)

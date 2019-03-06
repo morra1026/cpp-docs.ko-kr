@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComAutoCriticalSection class
 ms.assetid: 491a9d90-3398-4f90-88f5-fd2172a46b30
-ms.openlocfilehash: 1da9aeb0ff285893ed4f81277f379ad8bffcc65b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 613440eceb71f0277f4cc5de2af89fe263772797
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590907"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301612"
 ---
 # <a name="ccomautocriticalsection-class"></a>CComAutoCriticalSection 클래스
 
@@ -32,7 +32,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 |이름|설명|
 |----------|-----------------|
 |[CComAutoCriticalSection::CComAutoCriticalSection](#ccomautocriticalsection)|생성자입니다.|
-|[CComAutoCriticalSection:: ~ CComAutoCriticalSection](#dtor)|소멸자입니다.|
+|[CComAutoCriticalSection::~CComAutoCriticalSection](#dtor)|소멸자입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -42,7 +42,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 합니다 `Init` 하 고 `Term` 메서드에서 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 이 클래스를 사용 하는 경우에 사용할 수 없습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)
 
@@ -64,7 +64,7 @@ CComAutoCriticalSection();
 
 Win32 함수 호출 [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection)는 임계 영역 개체를 초기화 합니다.
 
-##  <a name="dtor"></a>  CComAutoCriticalSection:: ~ CComAutoCriticalSection
+##  <a name="dtor"></a>  CComAutoCriticalSection::~CComAutoCriticalSection
 
 소멸자입니다.
 
@@ -76,7 +76,7 @@ Win32 함수 호출 [InitializeCriticalSection](/windows/desktop/api/synchapi/nf
 
 소멸자 호출 [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), 임계 영역 개체에서 사용 하는 모든 시스템 리소스를 해제 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComFakeCriticalSection 클래스](../../atl/reference/ccomfakecriticalsection-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

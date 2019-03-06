@@ -16,12 +16,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - IsSubclassed method [MFC]
 ms.assetid: 3236d4de-401f-49b7-918d-c84559ecc426
-ms.openlocfilehash: 24284af7766f0fd968ca08724440509bc171fba6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 08cdb90537dd50855a5bf223fbe54d58dfd6c365
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50576646"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277055"
 ---
 # <a name="mfc-activex-controls-subclassing-a-windows-control"></a>MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱
 
@@ -95,7 +95,6 @@ ActiveX 컨트롤 컨테이너의 필요성 해소 자체 메시지 리플렉션
 
 메시지 처리 반영 하는 방법의 예제에 대 한 MFC ActiveX 컨트롤 샘플을 참조 하세요 [단추](../visual-cpp-samples.md)합니다. 보여 줍니다는 `OnOcmCommand` BN_CLICKED 알림 코드를 감지 하 고 (송신) 하 여 대응 하는 처리기는 `Click` 이벤트입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

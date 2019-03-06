@@ -2,12 +2,12 @@
 title: /arch(x64)
 ms.date: 11/04/2016
 ms.assetid: ecda22bf-5bed-43f4-99fb-88aedd83d9d8
-ms.openlocfilehash: d1ee086eff73b0538390764ef26b051919d65bcf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac34a18efbf31787889cc4fe31ebd3d8473df0eb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456799"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421862"
 ---
 # <a name="arch-x64"></a>/arch(x64)
 
@@ -21,10 +21,10 @@ x64에서 코드 생성 아키텍처를 지정합니다. 도 참조 하세요 [(
 
 ## <a name="arguments"></a>인수
 
-**/arch: avx**<br/>
+**/arch:AVX**<br/>
 Intel Advanced Vector Extensions 명령을 사용하도록 설정합니다.
 
-**/ arch:avx2**<br/>
+**/arch:AVX2**<br/>
 Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 
 ## <a name="remarks"></a>설명
@@ -47,7 +47,7 @@ Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/arch(최소 CPU 아키텍처)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

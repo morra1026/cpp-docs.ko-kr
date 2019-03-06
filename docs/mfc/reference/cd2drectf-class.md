@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CD2DRectF [MFC], CD2DRectF
 - CD2DRectF [MFC], IsNull
 ms.assetid: 87c12d87-9d18-4a19-ba14-0f51d6b6835a
-ms.openlocfilehash: fad906510a111a2132d590d7c221d2484645f044
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e5c22fe15ce0d930f81dd16673927d5299bf630
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591206"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290835"
 ---
 # <a name="cd2drectf-class"></a>CD2DRectF 클래스
 
@@ -47,7 +47,7 @@ class CD2DRectF : public D2D1_RECT_F;
 |----------|-----------------|
 |[CD2DRectF::operator CRect](#operator_crect)|변환 `CD2DRectF` 에 `CRect` 개체입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `D2D1_RECT_F`
 
@@ -114,6 +114,6 @@ operator CRect();
 
 D2D 사각형의 현재 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

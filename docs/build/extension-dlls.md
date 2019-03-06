@@ -15,12 +15,12 @@ helpviewer_keywords:
 - extension DLLs [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: f69ac3d4-e474-4b1c-87a1-6738843a135c
-ms.openlocfilehash: 2d9b23871cedd93c4145c79d2c22240b9ae2e775
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28954ff1c77b7dcc530392fce095ed9df5c29cbf
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429242"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414566"
 ---
 # <a name="mfc-extension-dlls"></a>MFC 확장명 Dll
 
@@ -130,6 +130,6 @@ MFCxx.dll은 대개 마지막 리소스 및 클래스 목록에 있습니다. MF
 
 - [기본 MFC DLL에서 데이터베이스, OLE 및 소켓 MFC 확장명 DLL 사용](../build/using-database-ole-and-sockets-extension-dlls-in-regular-dlls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - message_not_found class
 ms.assetid: a96b9995-5ad7-4600-83c8-c15e329ff10e
-ms.openlocfilehash: 7b6bd33e69d24e452414b2537ad70bf31e6b722f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: da0a44b90346959756c1ef7c685bef234fe6e46a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458476"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296685"
 ---
 # <a name="messagenotfound-class"></a>message_not_found 클래스
 
@@ -33,7 +33,7 @@ class message_not_found : public std::exception;
 |----------|-----------------|
 |[message_not_found](#ctor)|오버로드됨. `message_not_found` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -57,11 +57,10 @@ message_not_found() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)
-

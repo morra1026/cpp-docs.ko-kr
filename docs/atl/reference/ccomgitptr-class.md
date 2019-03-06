@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComGITPtr class
 ms.assetid: af895acb-525a-4555-bb67-b241b7df515b
-ms.openlocfilehash: 36ef105b79da51348a61767117b637992e1f8c47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf509d027833610e4251c009d4e444dad3fdd5ce
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557172"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296035"
 ---
 # <a name="ccomgitptr-class"></a>CComGITPtr 클래스
 
@@ -44,7 +44,7 @@ GIT에 저장 될 인터페이스 포인터의 형식입니다.
 |이름|설명|
 |----------|-----------------|
 |[CComGITPtr::CComGITPtr](#ccomgitptr)|생성자입니다.|
-|[CComGITPtr:: ~ CComGITPtr](#dtor)|소멸자입니다.|
+|[CComGITPtr::~CComGITPtr](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -123,7 +123,7 @@ CComGITPtr(CComGITPtr&& rv);
 *p*<br/>
 [in] (GIT) 전역 인터페이스 테이블에 저장 하는 인터페이스 포인터입니다.
 
-*Git*<br/>
+*git*<br/>
 [in] 기존에 대 한 참조 `CComGITPtr` 개체입니다.
 
 *dwCookie*<br/>
@@ -138,7 +138,7 @@ CComGITPtr(CComGITPtr&& rv);
 
 사용 하 여 생성자 *rv* 이동 생성자입니다. 원본에서 데이터를 이동할 *rv*를 차례로 *rv* 지워집니다.
 
-##  <a name="dtor"></a>  CComGITPtr:: ~ CComGITPtr
+##  <a name="dtor"></a>  CComGITPtr::~CComGITPtr
 
 소멸자입니다.
 
@@ -231,8 +231,8 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 *p*<br/>
 [in] 인터페이스 포인터입니다.
 
-*Git*<br/>
-[in] 에 대 한 참조를 `CComGITPtr` 개체입니다.
+*git*<br/>
+[in] `CComGITPtr` 개체에 대한 참조입니다.
 
 *dwCookie*<br/>
 [in] 인터페이스 포인터를 식별 하는 데 사용 되는 쿠키입니다.
@@ -276,7 +276,7 @@ HRESULT Revoke() throw();
 
 GIT에서 인터페이스를 제거합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자유 스레드된 마샬러](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
 [아파트 간 인터페이스 액세스](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>

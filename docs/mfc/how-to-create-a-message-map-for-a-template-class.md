@@ -1,18 +1,18 @@
 ---
-title: '방법: 템플릿 클래스에 대한 메시지 맵 만들기'
+title: '방법: 템플릿 클래스에 대 한 메시지 맵 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - template classes [MFC], creating message maps
 - message maps [MFC], template classes
 ms.assetid: 4e7e24f8-06df-4b46-82aa-7435c8650de3
-ms.openlocfilehash: 437fdf59ae9c9d3428654fc412fd78bf1348a701
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 676e698a899327eee8305731b5d609b5b95ece76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50586240"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296776"
 ---
-# <a name="how-to-create-a-message-map-for-a-template-class"></a>방법: 템플릿 클래스에 대한 메시지 맵 만들기
+# <a name="how-to-create-a-message-map-for-a-template-class"></a>방법: 템플릿 클래스에 대 한 메시지 맵 만들기
 
 MFC의 메시지 매핑 적절 한 c + + 개체 인스턴스를 Windows 메시지를 전송 하는 효율적인 방법을 제공 합니다. MFC 메시지 맵에 대상의 예로 응용 프로그램 클래스, 문서 및 뷰 클래스, 컨트롤 클래스 및 등이 있습니다.
 
@@ -60,8 +60,7 @@ END_MESSAGE_MAP()
 
 [!code-cpp[NVC_MFC_CListBox#48](../mfc/codesnippet/cpp/how-to-create-a-message-map-for-a-template-class_7.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [BEGIN_TEMPLATE_MESSAGE_MAP](reference/message-map-macros-mfc.md#begin_template_message_map)<br/>
 [메시지 처리 및 매핑](../mfc/message-handling-and-mapping.md)
-

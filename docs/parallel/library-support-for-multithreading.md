@@ -1,16 +1,16 @@
-﻿---
+---
 title: 다중 스레딩을 위한 라이브러리 지원
 ms.date: 11/04/2016
 helpviewer_keywords:
 - multithreading [C++], library support
 - threading [C++], library support
 ms.assetid: 54cf10d5-b800-481b-a149-b0ee373f41a1
-ms.openlocfilehash: 737dc0893a631b3303624efe15138c9014e6869a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d304a9e0ec3268e34932d6f666975622d956d75d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562268"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269372"
 ---
 # <a name="library-support-for-multithreading"></a>다중 스레딩을 위한 라이브러리 지원
 
@@ -18,6 +18,6 @@ ms.locfileid: "50562268"
 
 CRT 버전에 대한 자세한 내용은 [CRT 라이브러리 기능](../c-runtime-library/crt-library-features.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)

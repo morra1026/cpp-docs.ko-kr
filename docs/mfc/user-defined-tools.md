@@ -4,12 +4,12 @@ ms.date: 11/19/2018
 helpviewer_keywords:
 - user-defined tools (MFC Extensions)
 ms.assetid: cb887421-78ce-4652-bc67-96a53984ccaa
-ms.openlocfilehash: df8ba98fa1986052bae82b2afbdf40725298bef7
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 785e37c63653dde91176bedd0321fc58ac122c7e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175732"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269710"
 ---
 # <a name="user-defined-tools"></a>사용자 정의 형식
 
@@ -52,7 +52,7 @@ MFC는 사용자 정의 도구를 지원합니다. 사용자 정의 도구에는
 
 1. 각 도구에 대 한 텍스트 레이블을 설정 하 여 설정할 `CUserTool::m_strLabel` 해당 명령을 호출 하 여 설정 및 `CUserTool::SetCommand`합니다. 기본 구현의 [CUserTool 클래스](../mfc/reference/cusertool-class.md) 에 대 한 호출에 지정 된 프로그램에서 사용 가능한 아이콘을 자동으로 검색 `SetCommand`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC에 대한 사용자 지정](../mfc/customization-for-mfc.md)<br/>
 [CUserTool 클래스](../mfc/reference/cusertool-class.md)<br/>

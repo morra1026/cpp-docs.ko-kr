@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Internet applications [MFC], security
 - Web application security [MFC], Internet security approaches
 ms.assetid: bf0da697-81bc-41f0-83fa-d7f82ed83df8
-ms.openlocfilehash: e7892793a82f2b030a99465a712e33e1b9ef4673
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 184c8edf3e4a81be1f8b2a282a0db9758a75253f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486101"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259531"
 ---
 # <a name="internet-security-c"></a>인터넷 보안(C++)
 
@@ -28,8 +28,7 @@ ms.locfileid: "50486101"
 
 첫 번째 경우, 응용 프로그램에 나쁜 영향을 미치지 수행 하지 것입니다 하 고 응용 프로그램의 출처를 신뢰할 신뢰 합니다. 두 번째는 디지털 서명에 신뢰성 확인을 위해 사용 됩니다. 디지털 서명은 식별 하 고 코드의 게시자에 대 한 세부 정보를 제공 하는 데 사용 하는 산업 표준입니다. 해당 기술 RSA 등 X.509 표준을 기반으로 합니다. 브라우저는 일반적으로 다운로드 하 고 출처를 알 수 없는 코드의 실행을 선택할 수가 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)
-

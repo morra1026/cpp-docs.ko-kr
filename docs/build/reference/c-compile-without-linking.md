@@ -10,12 +10,12 @@ helpviewer_keywords:
 - c compiler option [C++]
 - /c compiler option [C++]
 ms.assetid: 8017fc3d-e5dd-4668-a1f7-3120daa95d20
-ms.openlocfilehash: 6be3b15efb56e97d658edb5890c3bdce4f64fbd8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cdce86f9ba74b2541529d922c580d6393a93f775
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625149"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416464"
 ---
 # <a name="c-compile-without-linking"></a>/c(링크 없이 컴파일)
 
@@ -55,7 +55,7 @@ CL /c FIRST.C SECOND.C THIRD.OBJ
 LINK firsti.obj second.obj third.obj /OUT:filename.exe
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

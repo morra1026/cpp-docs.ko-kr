@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMutex [MFC], CMutex
 ms.assetid: 6330c050-4f01-4195-a099-2029b92f8cf1
-ms.openlocfilehash: 823f38a6292152774f72c97963b9add5d429d2f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f85e562af9d048503be20d1ab5d219fe8d2d039f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508786"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273298"
 ---
 # <a name="cmutex-class"></a>CMutex 클래스
 
@@ -45,7 +45,7 @@ class CMutex : public CSyncObject
 
 사용 하 여 대 한 자세한 내용은 `CMutex` 문서를 참조 하는 개체를 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -74,7 +74,8 @@ CMutex(
 지정 하는 경우 스레드 만들기는 `CMutex` 개체 처음 뮤텍스에 의해 제어 되는 리소스에 액세스할 수 있습니다.
 
 *lpszName*<br/>
-`CMutex` 개체의 이름입니다. 동일한 이름의 다른 뮤텍스 있으면 *lpszName* 프로세스 경계를 넘어 개체를 사용할 경우 제공 해야 합니다. 하는 경우 **NULL**, 뮤텍스 명명 되지 것입니다. 생성자는 새 빌드를 기존 뮤텍스 이름 일치 하는 경우 `CMutex` 해당 이름의 뮤텍스를 참조 하는 개체입니다. 이름이 일치 뮤텍스 없는 기존 동기화 개체를 생성 하지 못합니다.
+
+  `CMutex` 개체의 이름입니다. 동일한 이름의 다른 뮤텍스 있으면 *lpszName* 프로세스 경계를 넘어 개체를 사용할 경우 제공 해야 합니다. 하는 경우 **NULL**, 뮤텍스 명명 되지 것입니다. 생성자는 새 빌드를 기존 뮤텍스 이름 일치 하는 경우 `CMutex` 해당 이름의 뮤텍스를 참조 하는 개체입니다. 이름이 일치 뮤텍스 없는 기존 동기화 개체를 생성 하지 못합니다.
 
 *lpsaAttribute*<br/>
 뮤텍스 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.
@@ -86,8 +87,7 @@ CMutex(
 > [!IMPORTANT]
 >  만든 후 합니다 `CMutex` 개체를 사용 하 여 [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) 뮤텍스 이미 존재 하지 않으면 되도록 합니다. 뮤텍스 예기치 않게가 불량 프로세스 무단 점유 이며 뮤텍스를 악의적으로 사용 하려는 수 수를 나타낼 수 있습니다. 이 경우 권장 되는 보안에 민감한 프로시저 핸들을 닫고 개체를 만드는 오류가 발생 하는 경우에 따라 계속입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSyncObject 클래스](../../mfc/reference/csyncobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

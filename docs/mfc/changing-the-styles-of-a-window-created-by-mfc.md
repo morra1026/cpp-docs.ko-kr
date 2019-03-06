@@ -21,12 +21,12 @@ helpviewer_keywords:
 - CMainFrame class [MFC]
 - styles [MFC], windows
 ms.assetid: 77fa4f03-96b4-4687-9ade-41e46f7e4b0a
-ms.openlocfilehash: 19ff4e41f3b8c73e7ae62fbf264ea955b42bbc1a
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: c8a3a5d9b8b007887dfb31f7459c0269377b38fd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177911"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294163"
 ---
 # <a name="changing-the-styles-of-a-window-created-by-mfc"></a>MFC에서 만든 창 스타일 변경
 
@@ -56,7 +56,7 @@ Visual c + + 2.0 이상을 사용 하는 경우 응용 프로그램을 만들 �
 
 ##  <a name="_core_the_sdi_case"></a> SDI 경우
 
-단일 문서 인터페이스 (SDI) 응용 프로그램 프레임 워크의 기본 창 스타일의 조합을 합니다 **WS_OVERLAPPEDWINDOW** 하 고 **FWS_ADDTOTITLE** 스타일입니다. **FWS_ADDTOTITLE** 은 창의 캡션 문서 제목을 추가 하기 위해 프레임 워크에 지시 하는 MFC 관련 스타일입니다. SDI 응용 프로그램에서 창 특성 변경 하려면 재정의 `PreCreateWindow` 에서 파생 된 클래스에서 함수 `CFrameWnd` (하는 응용 프로그램 마법사 이름을 `CMainFrame`). 예를 들어 다음과 같습니다.
+단일 문서 인터페이스 (SDI) 응용 프로그램 프레임 워크의 기본 창 스타일의 조합을 합니다 **WS_OVERLAPPEDWINDOW** 하 고 **FWS_ADDTOTITLE** 스타일입니다. **FWS_ADDTOTITLE** 은 창의 캡션 문서 제목을 추가 하기 위해 프레임 워크에 지시 하는 MFC 관련 스타일입니다. SDI 응용 프로그램에서 창 특성 변경 하려면 재정의 `PreCreateWindow` 에서 파생 된 클래스에서 함수 `CFrameWnd` (하는 응용 프로그램 마법사 이름을 `CMainFrame`). 예를 들어:
 
 [!code-cpp[NVC_MFCDocViewSDI#11](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_2.cpp)]
 
@@ -66,13 +66,13 @@ Visual c + + 2.0 이상을 사용 하는 경우 응용 프로그램을 만들 �
 
 좀 더 많은 작업은 여러 문서 MDI (인터페이스) 응용 프로그램에서 자식 창의 창 스타일을 변경 해야 합니다. 기본적으로 응용 프로그램 마법사를 사용 하 여 만든 MDI 응용 프로그램에서는 기본 [CMDIChildWnd](../mfc/reference/cmdichildwnd-class.md) MFC에 정의 된 클래스입니다. MDI 자식 창에 창 스타일을 변경 하려면 새 클래스에서 파생 시켜야 `CMDIChildWnd` 에 대 한 모든 참조를 바꾸고 `CMDIChildWnd` 새 클래스에 대 한 참조를 사용 하 여 프로젝트에서. 대부분의 경우에 대 한 유일한 참조가 `CMDIChildWnd` 응용 프로그램에 위치한 응용 프로그램의 `InitInstance` 멤버 함수입니다.
 
-MDI 응용 프로그램에 사용 되는 기본 창 스타일의 조합을는 **WS_CHILD**를 **WS_OVERLAPPEDWINDOW**, 및 **FWS_ADDTOTITLE** 스타일입니다. MDI 응용 프로그램의 자식 창의 창 특성 변경 하려면 재정의 [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) 에서 파생 된 클래스에서 함수 `CMDIChildWnd`합니다. 예를 들어 다음과 같습니다.
+MDI 응용 프로그램에 사용 되는 기본 창 스타일의 조합을는 **WS_CHILD**를 **WS_OVERLAPPEDWINDOW**, 및 **FWS_ADDTOTITLE** 스타일입니다. MDI 응용 프로그램의 자식 창의 창 특성 변경 하려면 재정의 [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow) 에서 파생 된 클래스에서 함수 `CMDIChildWnd`합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCDocView#16](../mfc/codesnippet/cpp/changing-the-styles-of-a-window-created-by-mfc_3.cpp)]
 
 이 코드는 최대화 단추 없이 windows MDI 자식을 만듭니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [Windows 스타일](../mfc/reference/styles-used-by-mfc.md#window-styles)
 
@@ -80,7 +80,6 @@ MDI 응용 프로그램에 사용 되는 기본 창 스타일의 조합을는 **
 
 - [창 스타일](/windows/desktop/winmsg/window-styles)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창 스타일](../mfc/frame-window-styles-cpp.md)
-

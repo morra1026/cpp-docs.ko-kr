@@ -28,16 +28,16 @@ helpviewer_keywords:
 - COleMessageFilter [MFC], SetMessagePendingDelay
 - COleMessageFilter [MFC], SetRetryReply
 ms.assetid: b1fd1639-fac4-4fd0-bf17-15172deba13c
-ms.openlocfilehash: 4e12b4dc41c0e384025a2af567cb118d066aaa72
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a06891f9413979895175808e109cc4abb7d75e09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50478249"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259102"
 ---
 # <a name="colemessagefilter-class"></a>COleMessageFilter 클래스
 
-OLE 응용 프로그램의 상호 작용으로 요구되는 동시성을 관리합니다.
+OLE 애플리케이션의 상호 작용으로 요구되는 동시성을 관리합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -78,9 +78,9 @@ class COleMessageFilter : public CCmdTarget
 
 이 클래스는 고급 클래스; 거의 직접 사용 해야 합니다.
 
-자세한 내용은 문서 참조 [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
+자세한 내용은 문서를 참조 하세요. [서버: 서버 구현](../../mfc/servers-implementing-a-server.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -284,7 +284,7 @@ void SetRetryReply(DWORD nRetryReply = 0);
 
 대화 상자를 사용 하지 않는 경우에 현재 "재시도 회신"는 항상 사용 중인 응용 프로그램에 대 한 호출에 대 한 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

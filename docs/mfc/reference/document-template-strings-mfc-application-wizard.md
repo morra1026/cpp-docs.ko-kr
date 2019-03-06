@@ -1,19 +1,19 @@
 ---
-title: MFC 응용 프로그램 마법사, 문서 템플릿 문자열
+title: MFC 애플리케이션 마법사, 문서 템플릿 문자열
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.doctemp
 helpviewer_keywords:
 - MFC Application Wizard, document template strings
 ms.assetid: 8109f662-3182-4682-977a-2503321c678a
-ms.openlocfilehash: 24a5fcaea272924e20c55b8c1f5d58111e4eba13
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 563cdf51c8104035fe29cb2e11d6c2bc8155d97b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622240"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297465"
 ---
-# <a name="document-template-strings-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 문서 템플릿 문자열
+# <a name="document-template-strings-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 문서 템플릿 문자열
 
 MFC 응용 프로그램 마법사의이 페이지에서 제공 또는 문서 관리 및 지역화에 도움이 되도록 다음 옵션을 구체화 합니다. 문서 템플릿 문자열은 포함 된 응용 프로그램에 대 한 사용 가능한 **문서/뷰 아키텍처 지원** 에 [응용 프로그램 유형을](../../mfc/reference/application-type-mfc-application-wizard.md)합니다. 대화 상자에 대해 사용할 수 없는 합니다. 대부분의 문서 템플릿 문자열에 표시 되 고 응용 프로그램의 사용자가 사용 되므로로 지역화 됩니다는 **리소스 언어** 에 표시 된를 **응용 프로그램 유형을** 마법사의 페이지입니다.
 
@@ -39,7 +39,6 @@ MFC 응용 프로그램 마법사의이 페이지에서 제공 또는 문서 관
    |**파일의 새 약식 이름**|표준 Windows에 표시 이름을 설정 합니다 **새로 만들기** 대화 상자에서 둘 이상의 새 문서 템플릿이 없는 경우. 응용 프로그램을 [자동화 서버](../../mfc/automation-servers.md), 자동화 개체의 짧은 이름으로이 이름이 사용 됩니다. 기본적으로 프로젝트 이름입니다.|
    |**파일 형식의 긴 이름**|시스템 레지스트리에 파일 형식 이름을 설정합니다. 자동화 서버 응용 프로그램을 사용 하는 경우이 이름은 자동화 개체의 긴 이름으로 사용 됩니다. 기본적으로 프로젝트 이름 및입니다. 문서입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)
-

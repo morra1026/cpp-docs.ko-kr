@@ -7,12 +7,12 @@ helpviewer_keywords:
 - user interfaces, OLE
 - applications [OLE], user interface
 ms.assetid: 61cb5d3e-1108-4e9b-b301-a8d8fcc586cb
-ms.openlocfilehash: 69418136f87ecacf571aec2b5ff2989cff9cf120
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b37b1439462e36787baee6a77413de3d56f2cca5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467224"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296178"
 ---
 # <a name="ole-mfc"></a>OLE(MFC)
 
@@ -34,6 +34,6 @@ ms.locfileid: "50467224"
 
 - [추적기](../mfc/trackers.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

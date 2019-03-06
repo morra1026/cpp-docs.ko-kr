@@ -5,12 +5,12 @@ helpviewer_keywords:
 - header controls [MFC], working with
 - header controls
 ms.assetid: af3afb5c-bf97-451b-8fee-3adcb8257210
-ms.openlocfilehash: be76a33be713ee8c58df082fee507a2ed9223c33
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: db8f9d40bad116d7873bfd8ea9682c711d44e91f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50677632"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269320"
 ---
 # <a name="working-with-a-header-control"></a>헤더 컨트롤 사용
 
@@ -26,8 +26,7 @@ ms.locfileid: "50677632"
 
 헤더 컨트롤 개체를 부모 뷰 또는 대화 상자 클래스에 포함 되어 있는 경우 컨트롤은 부모 소멸 될 때 소멸 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeaderCtrl 사용](../mfc/using-cheaderctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

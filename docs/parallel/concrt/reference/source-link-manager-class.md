@@ -17,16 +17,17 @@ f1_keywords:
 helpviewer_keywords:
 - source_link_manager class
 ms.assetid: 287487cf-e0fe-4c35-aa3c-24f081d1ddae
-ms.openlocfilehash: 881b4f15c7238e69a91def08e5d20ad8955ec4e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d4979eaf9065183be646be72cfdd5a94500edf55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545992"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295203"
 ---
 # <a name="sourcelinkmanager-class"></a>source_link_manager 클래스
 
-`source_link_manager` 개체는 `ISource` 블록에 대한 메시징 블록 네트워크 연결을 관리합니다.
+
+  `source_link_manager` 개체는 `ISource` 블록에 대한 메시징 블록 네트워크 연결을 관리합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -64,7 +65,7 @@ class source_link_manager;
 |----------|-----------------|
 |[add](#add)|소스 링크를 추가 합니다 `source_link_manager` 개체입니다.|
 |[begin](#begin)|첫 번째 요소에 반복기를 반환 합니다 `source_link_manager` 개체입니다.|
-|[포함](#contains)|검색 된 `network_link_registry` 이 `source_link_manager` 지정된 된 블록에 대 한 개체입니다.|
+|[contains](#contains)|검색 된 `network_link_registry` 이 `source_link_manager` 지정된 된 블록에 대 한 개체입니다.|
 |[count](#count)|연결 된 블록의 개수는 `source_link_manager` 개체입니다.|
 |[reference](#reference)|에 대 한 참조를 가져옵니다는 `source_link_manager` 개체입니다.|
 |[register_target_block](#register_target_block)|이 보유 하는 대상 블록을 등록 `source_link_manager` 개체입니다.|
@@ -76,7 +77,7 @@ class source_link_manager;
 
 현재 소스 블록은 참조를 계산 합니다. 이 래퍼를 `network_link_registry` 링크에 대 한 동시 액세스를 허용 하 고 콜백을 통해 링크를 참조 하는 기능을 제공 하는 개체입니다. 메시지 블록 ( `target_block`s 또는 `propagator_block`s)가 소스 링크에 대 한이 클래스를 사용 해야 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `source_link_manager`
 
@@ -96,7 +97,7 @@ void add(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 추가할 블록에 대 한 포인터입니다.
 
 ##  <a name="begin"></a> 시작
@@ -125,7 +126,7 @@ bool contains(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 검색 하는 블록에 대 한 포인터를 `source_link_manager` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -183,7 +184,7 @@ bool remove(_EType _Link);
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 제거 될 경우 블록에 대 한 포인터를 찾을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -219,7 +220,7 @@ source_link_manager();
 ~source_link_manager();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [single_link_registry 클래스](single-link-registry-class.md)<br/>

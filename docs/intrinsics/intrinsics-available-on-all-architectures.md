@@ -13,7 +13,7 @@ ms.locfileid: "50473283"
 ---
 # <a name="intrinsics-available-on-all-architectures"></a>모든 아키텍처에서 사용할 수 있는 내장 함수
 
-Microsoft C/c + + 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT) 일부 내장 함수에서 사용할 수 있도록 모든 아키텍처입니다.
+Microsoft C/C++ 컴파일러 및 유니버설 C 런타임 라이브러리 (UCRT) 일부 내장 함수에서 사용할 수 있도록 모든 아키텍처입니다.
 
 ## <a name="compiler-intrinsics"></a>컴파일러 내장 함수
 

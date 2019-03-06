@@ -6,12 +6,12 @@ helpviewer_keywords:
 - properties [MFC], ActiveX controls
 - MFC ActiveX controls [MFC], properties
 ms.assetid: ec2e6759-5a8e-41d8-a275-99af8ff6f32e
-ms.openlocfilehash: d26dbcb1c18c3c939214051d9010cb5b6db90929
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 438c95c56961cc587b64e494678ade191f18ab6b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568027"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266967"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX 컨트롤: 고급 속성 구현
 
@@ -54,7 +54,7 @@ ms.locfileid: "50568027"
 
 읽기 전용 이거나 쓰기 전용 이어야 하는 기존 속성을 변경 하려는 경우 디스패치 맵 수동으로 편집한 control 클래스에서 불필요 한 Set 또는 Get 함수를 제거 합니다.
 
-정상적으로 Set 또는 Get 함수를 제공 하 고 호출 수는 속성을 조건에 따라 읽기 전용 또는 쓰기 전용 (예: 컨트롤 특정 모드에서 작동 하는 경우에)를 사용 하도록 하려는 경우는 `SetNotSupported` 또는 `GetNotSupported` 적절 한 작동 합니다. 예를 들어:
+정상적으로 Set 또는 Get 함수를 제공 하 고 호출 수는 속성을 조건에 따라 읽기 전용 또는 쓰기 전용 (예: 컨트롤 특정 모드에서 작동 하는 경우에)를 사용 하도록 하려는 경우는 `SetNotSupported` 또는 `GetNotSupported` 적절 한 작동 합니다. 예를 들면,
 
 [!code-cpp[NVC_MFC_AxUI#29](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-property-implementation_1.cpp)]
 
@@ -62,7 +62,7 @@ ms.locfileid: "50568027"
 
 ##  <a name="_core_returning_error_codes_from_a_property"></a> 속성에서 오류 코드를 반환합니다.
 
-Get 또는 속성을 설정 하는 동안 오류가 발생 했음을 알리는 사용 하 여는 `COleControl::ThrowError` 매개 변수로 SCODE (상태 코드)를 사용 하는 함수입니다. 미리 정의 된 SCODE를 사용 하거나 자신만 정의 수 있습니다. 목록을 미리 정의 된 SCODEs 및 사용자 지정 SCODEs 정의 대 한 지침을 참조 하세요. [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) 문서 ActiveX 컨트롤에서: 고급 항목입니다.
+Get 또는 속성을 설정 하는 동안 오류가 발생 했음을 알리는 사용 하 여는 `COleControl::ThrowError` 매개 변수로 SCODE (상태 코드)를 사용 하는 함수입니다. 미리 정의 된 SCODE를 사용 하거나 자신만 정의 수 있습니다. 목록을 미리 정의 된 SCODEs 및 사용자 지정 SCODEs 정의 대 한 지침을 참조 하세요 [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) 문서 ActiveX 컨트롤에서: 고급 항목입니다.
 
 도우미 함수는 가장 일반적인 같은 미리 정의 된 SCODEs에 대 한 존재 [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported)하십시오 [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), 및 [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).
 
@@ -71,7 +71,7 @@ Get 또는 속성을 설정 하는 동안 오류가 발생 했음을 알리는 �
 
 코드의 다른 영역에서 예외를 보고 하는 방법은 참조 하세요 [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) 및 섹션 [Your ActiveX 컨트롤의 오류 처리](../mfc/mfc-activex-controls-advanced-topics.md) 문서의 ActiveX 컨트롤: 고급 항목입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)<br/>

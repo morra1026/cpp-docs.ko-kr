@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, creating
 - ATL Project Wizard
 ms.assetid: 564d2aaf-5b8e-4c2a-a925-ca40a283ea34
-ms.openlocfilehash: 7a53b33892b23d414a877721eca514931f82080e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9d69b6ca8cf1cff45098f0d63b452238db7ddfe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259765"
 ---
 # <a name="atl-project-wizard"></a>ATL 프로젝트 마법사
 
@@ -46,12 +46,11 @@ ms.locfileid: "50476702"
 
 프로젝트 속성을 지정할 수 있습니다 (예를 들어 [CRT에 정적으로 링크 것인지](../../atl/programming-with-atl-and-c-run-time-code.md))에 [프로젝트 속성](../../ide/general-property-page-project.md) 페이지를 설정할 수 있습니다 [빌드 구성](/visualstudio/ide/understanding-build-configurations) 에 대 한는 ATL 프로젝트입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++ 프로젝트 만들기 및 관리](../../ide/creating-and-managing-visual-cpp-projects.md)<br/>
 [Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[애플리케이션 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [자습서](../../atl/active-template-library-atl-tutorial.md)
-

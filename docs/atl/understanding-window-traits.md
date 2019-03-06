@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - window traits
 ms.assetid: c90cf850-9e91-49da-9cf3-ad4efb30347d
-ms.openlocfilehash: 0ab1a3c8f20a8e81304cdae68731bc70fbfc05c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29549e54051405fc3dd4d5d7ae70a382ad7a62ea
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647046"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280942"
 ---
 # <a name="understanding-window-traits"></a>창 특성 이해
 
@@ -36,7 +36,6 @@ ATL에서 제공 하는 템플릿 중 하나는 특수화 드문 경우에서 �
 
 새 스타일 값을 생성 하는 데 사용할 수 있는 런타임 시 일부 스타일 값 전달 됩니다 이러한 각 함수. 이 정적 함수에 전달 된 스타일 값을 스타일 인수로 전달 되는 항목 수 창 특성 클래스는 ATL 창 클래스의 템플릿 인수로 사용 중인 경우 [만들기](../atl/reference/cwindowimpl-class.md#create)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 클래스](../atl/atl-window-classes.md)
-

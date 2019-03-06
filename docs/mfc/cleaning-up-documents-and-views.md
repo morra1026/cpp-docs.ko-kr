@@ -6,12 +6,12 @@ helpviewer_keywords:
 - documents [MFC], cleaning up
 - documents [MFC], closing
 ms.assetid: 0c454db2-3644-434d-9e53-8108a7aedfe1
-ms.openlocfilehash: 1357a02379a848af23a6f78dee29e5b6adc1efcc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 940c768823d26950d9710fb1d1a52e6a1955fead
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258816"
 ---
 # <a name="cleaning-up-documents-and-views"></a>문서 및 뷰 정리
 
@@ -22,7 +22,6 @@ ms.locfileid: "50653897"
 
 힙에 할당한 메모리를 할당 해제하도록 뷰의 소멸자를 재정의할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 및 뷰 초기화 및 정리](../mfc/initializing-and-cleaning-up-documents-and-views.md)
-

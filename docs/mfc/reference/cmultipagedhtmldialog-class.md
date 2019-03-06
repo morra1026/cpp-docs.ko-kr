@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMultiPageDHtmlDialog [MFC], CMultiPageDHtmlDialog
 ms.assetid: 971accc1-824d-4df4-b4c1-b1a20e0f7e4f
-ms.openlocfilehash: 680c485241b7a377d1c6f0ec2785dbbade01ed3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 66ab996a810c7409d689d600758828130d4237f1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443553"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283750"
 ---
 # <a name="cmultipagedhtmldialog-class"></a>CMultiPageDHtmlDialog 클래스
 
@@ -32,7 +32,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 |이름|설명|
 |----------|-----------------|
 |[CMultiPageDHtmlDialog::CMultiPageDHtmlDialog](#cmultipagedhtmldialog)|(마법사 스타일) 다중 페이지 DHTML 대화 상자 개체를 생성합니다.|
-|[CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|다중 페이지 DHTML 대화 상자 개체를 제거합니다.|
+|[CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog](#cmultipagedhtmldialog__~cmultipagedhtmldialog)|다중 페이지 DHTML 대화 상자 개체를 제거합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -50,7 +50,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 
 [!code-cpp[NVC_MFCDocView#182](../../mfc/codesnippet/cpp/cmultipagedhtmldialog-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -111,7 +111,7 @@ HTML 리소스의 이름을 나타내는 null로 끝나는 문자열입니다.
 *nHtmlResID*<br/>
 HTML 리소스의 ID 번호를 포함합니다.
 
-##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog:: ~ CMultiPageDHtmlDialog
+##  <a name="_dtorcmultipagedhtmldialog"></a>  CMultiPageDHtmlDialog::~CMultiPageDHtmlDialog
 
 다중 페이지 DHTML 대화 상자 개체를 제거합니다.
 
@@ -119,6 +119,6 @@ HTML 리소스의 ID 번호를 포함합니다.
 virtual ~CMultiPageDHtmlDialog();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDHtmlDialog 클래스](../../mfc/reference/cdhtmldialog-class.md)

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CColorDialog [MFC], OnColorOK
 - CColorDialog [MFC], m_cc
 ms.assetid: d013dc25-9290-4b5d-a97e-95ad7208e13b
-ms.openlocfilehash: 8b9c452dc3dcb157b20558a1f7cb31103dc01f84
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39868ed27a0dfb8756b4829ea7c378c798bd2ff3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561267"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304212"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog 클래스
 
@@ -54,7 +54,7 @@ class CColorDialog : public CCommonDialog
 |[CColorDialog::GetSavedCustomColors](#getsavedcustomcolors)|사용자가 만든 사용자 지정 색을 검색 합니다.|
 |[CColorDialog::SetCurrentColor](#setcurrentcolor)|지정된 된 색에 현재 색 선택 영역을 강제로 수행합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -91,7 +91,7 @@ Windows를 사용할 수 있습니다 [CommDlgExtendedError](/windows/desktop/ap
 
 사용 하 여 대 한 자세한 내용은 `CColorDialog`를 참조 하세요 [일반 대화 상자 클래스](../../mfc/common-dialog-classes.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -266,10 +266,9 @@ RGB 색 값입니다.
 
   예를 참조 하세요 [CColorDialog::OnColorOK](#oncolorok)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 DRAWCLI](../../visual-cpp-samples.md)<br/>
 [CCommonDialog 클래스](../../mfc/reference/ccommondialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - toolbars [MFC], wrapping
 - floating palettes
 ms.assetid: b7f9f9d4-f629-47d2-a3c4-2b33fa6b51e4
-ms.openlocfilehash: 5688af1aa20589b88e2baa2f764c65fe7a417631
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 93d1e067777b1c6f4430fe9cc44ae531559b6962
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599279"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294673"
 ---
 # <a name="docking-and-floating-toolbars"></a>도구 모음 고정 및 고정 해제
 
@@ -106,7 +106,7 @@ Visual c + + 버전 4.0부터 있습니다 수 수 있도록 동적으로 부동
 
 MFC 일반 샘플 [DOCKTOOL](../visual-cpp-samples.md) 클래스의 멤버 함수를 사용 하는 방법을 보여 줍니다 [CControlBar](../mfc/reference/ccontrolbar-class.md) 하 고 [CToolBar](../mfc/reference/ctoolbar-class.md) 동적 레이아웃 도구 모음을 관리할 수 있습니다. EDITBAR 파일을 참조 하십시오. CPP 파일을 참조 합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [도구 모음 기본 사항](../mfc/toolbar-fundamentals.md)
 
@@ -114,7 +114,6 @@ MFC 일반 샘플 [DOCKTOOL](../visual-cpp-samples.md) 클래스의 멤버 함�
 
 - [이전 도구 모음 사용](../mfc/using-your-old-toolbars.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 도구 모음 구현](../mfc/mfc-toolbar-implementation.md)
-

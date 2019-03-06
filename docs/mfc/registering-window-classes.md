@@ -14,12 +14,12 @@ helpviewer_keywords:
 - WinMain method [MFC]
 - registering window classes [MFC]
 ms.assetid: 30994bc4-a362-43da-bcc5-1bf67a3fc929
-ms.openlocfilehash: c1fc6628b2b5e8e6fa657f4cf99be2256377a5b1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c459b909a60fff2b7aeded9ea8d79a39ced24e4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540584"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258426"
 ---
 # <a name="registering-window-classes"></a>창 클래스 등록
 
@@ -35,7 +35,6 @@ MFC 없이 Windows에 대 한 기존 프로그램에서 자체 "창 프로시저
 
 자세한 내용은 [기술 참고 1](../mfc/tn001-window-class-registration.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 만들기](../mfc/creating-windows.md)
-

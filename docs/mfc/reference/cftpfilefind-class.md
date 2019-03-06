@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CFtpFileFind [MFC], FindNextFile
 - CFtpFileFind [MFC], GetFileURL
 ms.assetid: 9667cf01-657f-4b11-b9db-f11e5a7b4e4c
-ms.openlocfilehash: 72d1eb147f8d7387a04f25cc008cc4d4638ba691
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5da739cac1ab852ce64526b24ee2b4f66d40d570
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548228"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284829"
 ---
 # <a name="cftpfilefind-class"></a>CFtpFileFind 클래스
 
@@ -43,8 +43,8 @@ class CFtpFileFind : public CFileFind
 
 |이름|설명|
 |----------|-----------------|
-|[:: Findfile](#findfile)|FTP 서버의 파일을 찾습니다.|
-|[:: Findnextfile](#findnextfile)|파일 검색에 대 한 이전 호출에서 계속 [FindFile](#findfile)합니다.|
+|[CFtpFileFind::FindFile](#findfile)|FTP 서버의 파일을 찾습니다.|
+|[CFtpFileFind::FindNextFile](#findnextfile)|파일 검색에 대 한 이전 호출에서 계속 [FindFile](#findfile)합니다.|
 |[CFtpFileFind::GetFileURL](#getfileurl)|찾은 파일의 경로 포함 하 여 URL을 가져옵니다.|
 
 ## <a name="remarks"></a>설명
@@ -61,7 +61,7 @@ class CFtpFileFind : public CFileFind
 
 [!code-cpp[NVC_MFCWinInet#8](../../mfc/codesnippet/cpp/cftpfilefind-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -93,13 +93,13 @@ explicit CFtpFileFind(
 
 ### <a name="remarks"></a>설명
 
-기본값 *dwContext* MFC에서 전송한 합니다 `CFtpFileFind` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CFtpFileFind` 개체입니다. 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+기본값 *dwContext* MFC에서 전송한 합니다 `CFtpFileFind` 에서 개체를 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 만든 개체를 `CFtpFileFind` 개체입니다. 원하는 값으로 컨텍스트 식별자를 설정 하려면 기본값을 재정의할 수 있습니다. 컨텍스트 식별자에 반환 됩니다 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 개체의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 ### <a name="example"></a>예제
 
   이 항목의 앞부분에 있는 클래스 개요의 예제를 참조 하세요.
 
-##  <a name="findfile"></a>  :: Findfile
+##  <a name="findfile"></a>  CFtpFileFind::FindFile
 
 FTP 파일을 확인 하려면이 멤버 함수를 호출 합니다.
 
@@ -139,7 +139,7 @@ virtual BOOL FindFile(
 
   이 항목의 이전 예제를 참조 하세요.
 
-##  <a name="findnextfile"></a>  :: Findnextfile
+##  <a name="findnextfile"></a>  CFtpFileFind::FindNextFile
 
 에 대 한 호출으로 시작 하는 파일 검색을 계속 하려면이 멤버 함수를 호출 합니다 [FindFile](#findfile) 멤버 함수입니다.
 
@@ -177,7 +177,7 @@ Universal Resource Locator (URL)의 경로 파일입니다.
 
 `GetFileURL` 멤버 함수에 비슷합니다 [CFileFind::GetFilePath](../../mfc/reference/cfilefind-class.md#getfilepath)형태로 URL을 반환 하는 점을 제외 하 고, `ftp://moose/dir/file.txt`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFileFind 클래스](../../mfc/reference/cfilefind-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

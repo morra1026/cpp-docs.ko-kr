@@ -4,20 +4,20 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - Parallel Diagnostic Tools [Concurrency Runtime]
 ms.assetid: b1a3f1d2-f5df-4f29-852e-906b3d8341fc
-ms.openlocfilehash: a9d6823a5f82e3d52f82f568d3e3c00b68236fef
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 2af1898312a4f448d618fcfc4e43ea93f5f0bc76
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51329217"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302782"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>병렬 진단 도구(동시성 런타임)
 
-Visual Studio는 다중 스레드 응용 프로그램 디버깅 및 프로파일링에 대한 광범위한 지원을 제공합니다.
+Visual Studio는 다중 스레드 애플리케이션 디버깅 및 프로파일링에 대한 광범위한 지원을 제공합니다.
 
 ## <a name="debugging"></a>디버깅
 
-Visual Studio 디버거를 포함 합니다 **병렬 스택** 창 **병렬 태스크** 창 및 **병렬 조사식** 창입니다. 자세한 내용은 참조 하세요. [연습: 병렬 응용 프로그램 디버깅](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) 하 고 [방법: 병렬 조사식 창을 사용 하 여](/visualstudio/debugger/how-to-use-the-parallel-watch-window).
+Visual Studio 디버거를 포함 합니다 **병렬 스택** 창 **병렬 태스크** 창 및 **병렬 조사식** 창입니다. 자세한 내용은 [연습: 병렬 응용 프로그램 디버깅](/visualstudio/debugger/walkthrough-debugging-a-parallel-application) 고 [방법: 병렬 조사식 창을 사용 하 여](/visualstudio/debugger/how-to-use-the-parallel-watch-window)입니다.
 
 ## <a name="profiling"></a>프로파일링
 
@@ -63,7 +63,6 @@ Visual Studio 디버거를 포함 합니다 **병렬 스택** 창 **병렬 태�
 
 호출 하는 횟수를 추적 하는 런타임 `EnableTracing` 고 `DisableTracing`입니다. 따라서 호출 하는 경우 `EnableTracing` 를 호출 해야 여러 번 `DisableTracing` 추적을 해제 하기 위해 동일한 횟수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)
-

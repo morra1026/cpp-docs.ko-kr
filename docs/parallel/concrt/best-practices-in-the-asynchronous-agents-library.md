@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Asynchronous Agents Library, practices to avoid
 - practices to avoid, Asynchronous Agents Library
 ms.assetid: 85f52354-41eb-4b0d-98c5-f7344ee8a8cf
-ms.openlocfilehash: 70c979be0d37817cf199af0b6a3cbf114fced265
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c61393957a63895a9ecbdaaae8d83a5fbd710de3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494586"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266421"
 ---
 # <a name="best-practices-in-the-asynchronous-agents-library"></a>비동기 에이전트 라이브러리의 모범 사례
 
@@ -42,7 +42,7 @@ ms.locfileid: "50494586"
 
 [!code-cpp[concrt-simple-agent#1](../../parallel/concrt/codesnippet/cpp/best-practices-in-the-asynchronous-agents-library_1.cpp)]
 
-정의 및 에이전트를 사용 하는 방법에 대 한 전체 예제를 참조 하세요 [연습: 에이전트 기반 응용 프로그램을 만드는](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md) 하 고 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)합니다.
+정의 및 에이전트를 사용 하는 방법에 대 한 전체 예제를 참조 하세요. [연습: 에이전트 기반 응용 프로그램을 만드는](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md) 고 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -58,7 +58,7 @@ ms.locfileid: "50494586"
 
 이 예제에서 생산자는 소비자에 게 비교적 적은 메시지를 보냅니다. 따라서이 예제에서는 잠재적인 메모리 부족 또는 메모리 부족 조건을 보여 주지 않습니다. 그러나이 메커니즘은 데이터 파이프라인을 상대적으로 많은 수의 메시지를 포함 하는 경우 유용 합니다.
 
-이 예제에서 사용 되는 세마포 클래스를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 컨텍스트 클래스를 사용 하 여 공동 작업 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)합니다.
+이 예제에서 사용 되는 세마포 클래스를 만드는 방법에 대 한 자세한 내용은 참조 하세요. [방법: 상황에 맞는 클래스를 사용 하 여 공동 작업 세마포 구현](../../parallel/concrt/how-to-use-the-context-class-to-implement-a-cooperative-semaphore.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -66,7 +66,7 @@ ms.locfileid: "50494586"
 
 에이전트 라이브러리 데이터 파이프라인에서 수행 되는 작업은 매우 정교 하지 않은 경우에 가장 유용 합니다. 예를 들어, 하나의 응용 프로그램 구성 요소 파일 또는 네트워크 연결에서 데이터 읽기 및 다른 구성 요소에 해당 데이터를 가끔씩 보낼 수 있습니다. 에이전트 라이브러리 메시지를 전파 하는 데 사용 하는 프로토콜에서 제공 하는 태스크 병렬 구문 보다 오버 헤드가 많이 발생 하는 메시지 전달 메커니즘을 발생 합니다 [병렬 패턴 라이브러리](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL). 따라서 데이터 파이프라인에서 수행 되는 작업을이 오버 헤드를 오프셋 하기에 충분히 길지 인지 해야 합니다.
 
-데이터 파이프라인을 있지만 가장 효과적인 태스크가 정교 하지 않은 경우 데이터 파이프라인의 각 단계 더 세분화 된 작업을 수행 하려면 PPL 구문 예: 작업 그룹 및 병렬 알고리즘을 사용할 수 있습니다. 각 처리 단계에서 세부적인 병렬 처리를 사용 하는 정교 하지 않은 데이터 네트워크의 예제를 보려면 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)합니다.
+데이터 파이프라인을 있지만 가장 효과적인 태스크가 정교 하지 않은 경우 데이터 파이프라인의 각 단계 더 세분화 된 작업을 수행 하려면 PPL 구문 예: 작업 그룹 및 병렬 알고리즘을 사용할 수 있습니다. 각 처리 단계에서 세부적인 병렬 처리를 사용 하는 정교 하지 않은 데이터 네트워크의 예제를 참조 하세요. [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -114,13 +114,12 @@ receiver2: received resource 64
 Destroying resource 64...
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임 유용한 정보](../../parallel/concrt/concurrency-runtime-best-practices.md)<br/>
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
-[연습: 에이전트 기반 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
+[연습: 에이전트 기반 애플리케이션 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)<br/>
 [연습: 데이터 흐름 에이전트 만들기](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)<br/>
 [연습: 이미지 처리 네트워크 만들기](../../parallel/concrt/walkthrough-creating-an-image-processing-network.md)<br/>
 [병렬 패턴 라이브러리의 유용한 정보](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md)<br/>
 [동시성 런타임의 유용한 일반 정보](../../parallel/concrt/general-best-practices-in-the-concurrency-runtime.md)
-

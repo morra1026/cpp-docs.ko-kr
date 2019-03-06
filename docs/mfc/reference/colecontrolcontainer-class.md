@@ -72,12 +72,12 @@ helpviewer_keywords:
 - COleControlContainer [MFC], m_pWnd
 - COleControlContainer [MFC], m_siteMap
 ms.assetid: f7ce9246-0fb7-4f07-a83a-6c2390d0fdf8
-ms.openlocfilehash: e89096b553814285f61093af81e31b294e3ad2bb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e97f7ceafb92098d701cba64b4ec01d26d3991a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603011"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274988"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer 클래스
 
@@ -145,7 +145,7 @@ class COleControlContainer : public CCmdTarget
 
 이 클래스와 함께 사용 되는 일반적으로 `COccManager` 및 `COleControlSite` 하나 이상의 ActiveX 컨트롤에 대 한 사용자 지정 사이트를 사용 하 여 사용자 지정 ActiveX 컨트롤 컨테이너를 구현 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -785,7 +785,7 @@ virtual void SetDlgItemInt(
 *nID*<br/>
 컨트롤의 식별자입니다.
 
-*n 값*<br/>
+*nValue*<br/>
 표시할 정수 값입니다.
 
 *bSigned*<br/>
@@ -809,7 +809,7 @@ virtual void SetDlgItemText(
 *lpszString*<br/>
 컨트롤의 텍스트에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
