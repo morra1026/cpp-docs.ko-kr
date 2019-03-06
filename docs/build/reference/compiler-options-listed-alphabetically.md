@@ -79,7 +79,7 @@ ms.locfileid: "57415879"
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
 |[/I](i-additional-include-directories.md)|포함 파일의 디렉터리를 검색합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
-|[/JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
+|[/JMC](jmc.md)|네이티브 C++ 내 코드만 디버깅 옵션을 지원합니다.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|컴파일러와 링커는 Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.|
 |[/LD](md-mt-ld-use-run-time-library.md)|DLL(동적 연결 라이브러리)을 만듭니다.|
 |[/LDd](md-mt-ld-use-run-time-library.md)|디버그 DLL(동적 연결 라이브러리)을 만듭니다.|
@@ -114,11 +114,11 @@ ms.locfileid: "57415879"
 |[/sdl](sdl-enable-additional-security-checks.md)|추가 보안 기능 및 경고를 사용하도록 설정합니다.|
 |[/showIncludes](showincludes-list-include-files.md)|컴파일을 하는 동안 포함 파일 목록을 표시합니다.|
 |[/source-charset](source-charset-set-source-character-set.md)|소스 문자 집합입니다.|
-|[/std](std-specify-language-standard-version.md)|C + + 표준 버전 호환성 선택기입니다.|
+|[/std](std-specify-language-standard-version.md)|C++ 표준 버전 호환성 선택기입니다.|
 |[/Tc](tc-tp-tc-tp-specify-source-file-type.md)|C 소스 파일을 지정합니다.|
 |[/TC](tc-tp-tc-tp-specify-source-file-type.md)|3. 모든 원본 파일 지정|
 |[/Tp](tc-tp-tc-tp-specify-source-file-type.md)|C++ 소스 파일을 지정합니다.|
-|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 c + +를 지정 합니다.|
+|[/TP](tc-tp-tc-tp-specify-source-file-type.md)|모든 원본 파일은 C++를 지정 합니다.|
 |[/U](u-u-undefine-symbols.md)|미리 정의된 매크로를 제거합니다.|
 |[/u](u-u-undefine-symbols.md)|미리 정의된 모든 매크로를 제거합니다.|
 |[/utf-8](utf-8-set-source-and-executable-character-sets-to-utf-8.md)|소스 및 실행 문자 집합을 u t F-8로 설정합니다.|
