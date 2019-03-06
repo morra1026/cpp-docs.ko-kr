@@ -264,12 +264,12 @@ helpviewer_keywords:
 - CListCtrl [MFC], SubItemHitTest
 - CListCtrl [MFC], Update
 ms.assetid: fe08a1ca-4b05-4ff7-a12a-ee4c765a2197
-ms.openlocfilehash: 850c16420606452414cbe284c5f9f25031859c93
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: fdfc0888e7d6213fb7c04a5257358da8f5dae138
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57304524"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425096"
 ---
 # <a name="clistctrl-class"></a>CListCtrl 클래스
 
@@ -619,7 +619,7 @@ virtual BOOL Create(
 목록 컨트롤의 스타일을 지정합니다. 목록 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 참조 [목록 보기 창 스타일](/windows/desktop/Controls/list-view-window-styles) 이러한 스타일의 전체 목록은 Windows SDK에 있습니다. 스타일을 사용 하 여 컨트롤에 특정 확장 집합 [SetExtendedStyle](#setextendedstyle)합니다.
 
 *rect*<br/>
-목록 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 `CRect` 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+목록 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 `CRect` 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 일반적으로 목록 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -667,7 +667,7 @@ virtual BOOL CreateEx(
 목록 컨트롤의 스타일을 지정합니다. 목록 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 이러한 스타일의 전체 목록은 참조 하세요 [목록 보기 창 스타일](/windows/desktop/Controls/list-view-window-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -701,7 +701,7 @@ CImageList* CreateDragImage(
 끌기 이미지 목록을 가진 만들 항목의 인덱스입니다.
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 이미지의 왼쪽 위 모퉁이의 초기 위치를 수신 하는 구조 보기를 조정 합니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 이미지의 왼쪽 위 모퉁이의 초기 위치를 수신 하는 구조 보기를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -709,7 +709,7 @@ CImageList* CreateDragImage(
 
 ### <a name="remarks"></a>설명
 
-`CImageList` 개체가 영구적으로 적용 되 고 완료 하는 경우 삭제 해야 합니다. 예를 들면,
+`CImageList` 개체가 영구적으로 적용 되 고 완료 하는 경우 삭제 해야 합니다. 예를 들어:
 
 ```cpp
         CImageList* pImageList = m_myListCtrl.CreateDragImage(nItem, &point);
@@ -1442,7 +1442,7 @@ BOOL GetGroupRect(
 |매개 변수|설명|
 |---------------|-----------------|
 |*iGroupId*|[in] 그룹을 지정합니다.|
-|*lpRect*|[out에서] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 그룹의 사각형 좌표 수신이 메서드가 성공적 이면 *iGroupId*합니다.|
+|*lpRect*|[out에서] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 구조에 지정 된 그룹의 사각형 좌표 수신이 메서드가 성공적 이면 *iGroupId*합니다.|
 |*iCoords*|[in] 검색할 사각형 좌표를 지정 합니다. 이러한 값 중 하나를 사용 합니다.<br /><br /> -LVGGR_GROUP-전체 확장 된 그룹의 (기본값) 좌표입니다.<br />-LVGGR_HEADER-헤더 (축소 된 그룹)만의 좌표입니다.<br />-LVGGR_SUBSETLINK-하위 집합 링크 (태그 하위 집합)만 조정합니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -1451,7 +1451,7 @@ BOOL GetGroupRect(
 
 ### <a name="remarks"></a>설명
 
-호출자가 할당 하는 일을 담당 합니다 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 가리키는 구조를 *pRect* 매개 변수입니다.
+호출자가 할당 하는 일을 담당 합니다 [RECT](/previous-versions/dd162897\(v=vs.85\)) 가리키는 구조를 *pRect* 매개 변수입니다.
 
 이 메서드는 전송 된 [LVM_GETGROUPRECT](/windows/desktop/Controls/lvm-getgrouprect) Windows SDK에 설명 된 메시지입니다.
 
@@ -1790,7 +1790,7 @@ BOOL GetItemIndexRect(
 |*pItemIndex*|[in] 에 대 한 포인터를 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 하위 항목의 부모 항목에 대 한 구조입니다.<br /><br /> 호출자가 할당 하 고 멤버를 설정 하는 일을 담당 합니다 [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 |*iColumn*|[in] 컨트롤에 있는 열의 0부터 시작 인덱스입니다.|
 |*rectType*|[in] 경계 사각형을 검색 되는 목록 뷰 하위 항목의 부분입니다. 다음 값 중 하나를 지정합니다.<br /><br /> LVIR_BOUNDS-아이콘 및 레이블 포함 한 전체 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_ICON-아이콘 또는 작은 아이콘의 하위 항목의 경계 사각형을 반환 합니다.<br /><br /> LVIR_LABEL-하위 항목 텍스트의 경계 사각형을 반환 합니다.|
-|*pRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
+|*pRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 하위 항목의 경계 사각형에 대 한 정보를 수신 하는 구조입니다.<br /><br /> 호출자가 할당 하는 일을 담당 합니다 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -1844,7 +1844,7 @@ BOOL GetItemPosition(
 해당 위치를 검색할 항목의 인덱스입니다.
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 항목의 왼쪽 위 모퉁이 위치를 수신 하는 구조 보기를 조정 합니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 항목의 왼쪽 위 모퉁이 위치를 수신 하는 구조 보기를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1883,7 +1883,7 @@ BOOL GetItemRect(
 해당 위치를 검색할 항목의 인덱스입니다.
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형을 수신 하는 구조입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형을 수신 하는 구조입니다.
 
 *nCode*<br/>
 경계 사각형을 검색할 목록 보기 항목의 부분입니다. 다음이 값 중 하나일 수 있습니다.
@@ -2220,7 +2220,7 @@ BOOL GetOrigin(LPPOINT lpPoint) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 구조체 뷰 원점입니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 구조체 뷰 원점입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2531,7 +2531,7 @@ BOOL GetViewRect(LPRECT lpRect) const;
 ### <a name="parameters"></a>매개 변수
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -2834,7 +2834,7 @@ int InsertMarkHitTest(
 ### <a name="parameters"></a>매개 변수
 
 *pPoint*<br/>
-에 대 한 포인터를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 목록 컨트롤의 클라이언트 영역을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
+에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 목록 컨트롤의 클라이언트 영역을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
 
 *lvim*<br/>
 에 대 한 포인터를 [LVINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-lvinsertmark) 지점 매개 변수에 의해 정의 된 좌표에 가장 가까운 삽입 지점을 지정 하는 구조입니다.
@@ -3854,7 +3854,7 @@ BOOL SetItemPosition(
 위치가 설정할 항목의 인덱스입니다.
 
 *pt*<br/>
-A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 항목의 왼쪽 위 모퉁이의 보기에서 새 위치를 지정 하는 구조를 조정 합니다.
+A [지점](/previous-versions/dd162805\(v=vs.85\)) 항목의 왼쪽 위 모퉁이의 보기에서 새 위치를 지정 하는 구조를 조정 합니다.
 
 ### <a name="return-value"></a>반환 값
 

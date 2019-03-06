@@ -182,12 +182,12 @@ helpviewer_keywords:
 - CToolBarCtrl [MFC], SetToolTips
 - CToolBarCtrl [MFC], SetWindowTheme
 ms.assetid: 8f2f8ad2-05d7-4975-8715-3f2eed795248
-ms.openlocfilehash: 61cbcbd2a64e8648c6467ebbc0d86d6f89953442
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 97854a554be729b75d50f09b0627ffc94b1b093f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302505"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424485"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl 클래스
 
@@ -629,7 +629,7 @@ virtual BOOL Create(
 도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한 아래 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 **주의**합니다.
 
 *rect*<br/>
-필요에 따라 도구 모음 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+필요에 따라 도구 모음 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 도구 모음 컨트롤의 부모 창을 지정합니다. NULL이 아니어야 합니다.
@@ -683,7 +683,7 @@ virtual BOOL CreateEx(
 도구 모음 컨트롤의 스타일을 지정합니다. 도구 모음 WS_CHILD 스타일 항상 있어야 합니다. 또한에 설명 된 대로 toolbar 스타일 및 창 스타일의 조합을 지정할 수 있습니다 합니다 **주의** 부분 [만들기](#create)합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -1087,7 +1087,7 @@ BOOL GetItemRect(
 정보를 검색 하는 단추의 인덱스 0부터 시작 합니다.
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 경계 사각형의 좌표를 받는 개체입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 경계 사각형의 좌표를 받는 개체입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1204,7 +1204,7 @@ BOOL GetRect(
 단추 식별자입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 경계 사각형 정보를 얻습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1327,7 +1327,7 @@ int HitTest(LPPOINT ppt) const;
 ### <a name="parameters"></a>매개 변수
 
 *ppt*<br/>
-에 대 한 포인터를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 에서 적중 횟수 테스트의 x 좌표를 포함 하는 구조를 `x` 멤버와 y 좌표를 적중 횟수의 테스트는 `y` 멤버입니다. 좌표가 도구 모음에서의 클라이언트 영역을 기준으로 합니다.
+에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 에서 적중 횟수 테스트의 x 좌표를 포함 하는 구조를 `x` 멤버와 y 좌표를 적중 횟수의 테스트는 `y` 멤버입니다. 좌표가 도구 모음에서의 클라이언트 영역을 기준으로 합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1430,7 +1430,7 @@ BOOL InsertMarkHitTest(
 ### <a name="parameters"></a>매개 변수
 
 *ppt*<br/>
-에 대 한 포인터를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 클라이언트 영역 도구 모음을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
+에 대 한 포인터를 [지점](/previous-versions/dd162805\(v=vs.85\)) 클라이언트 영역 도구 모음을 기준으로 적중 횟수 테스트를 포함 하는 구조를 조정 합니다.
 
 *ptbim*<br/>
 에 대 한 포인터를 [TBINSERTMARK](/windows/desktop/api/commctrl/ns-commctrl-tbinsertmark) 삽입 표시 정보를 수신 하는 구조입니다.
@@ -2297,7 +2297,7 @@ void SetRows(
 요청한 행의 개수를 도구 모음 크기를 조정할 수 없는 경우 행이 더 또는 적은 수의 행을 사용할지 여부를 알려 줍니다.
 
 *lpRect*<br/>
-가리키는 합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 도구 모음의 새 경계 사각형을 받을 구조입니다.
+가리키는 합니다 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 도구 모음의 새 경계 사각형을 받을 구조입니다.
 
 ### <a name="remarks"></a>설명
 

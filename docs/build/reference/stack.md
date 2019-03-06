@@ -9,12 +9,12 @@ helpviewer_keywords:
 - stack, setting size
 - /STACK editbin option
 ms.assetid: a39bcff0-c945-4355-80cc-8e4f24a5f142
-ms.openlocfilehash: 89591a9d0a7f19422275b6bce6f4c5a7a723e800
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d583a7259e1aecef0a638743fb0b6271ff09330
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647709"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417751"
 ---
 # <a name="stack"></a>/STACK
 
@@ -30,6 +30,6 @@ ms.locfileid: "50647709"
 
 선택적 `commit` 인수가 운영 체제에 의해 해석 될 수 있습니다. Windows NT, Windows 95 및 Windows 98 `commit` 한 번에 할당할 실제 메모리 양을 지정 합니다. 커밋된 가상 메모리 페이징 파일에 예약 될 공간을 하면 됩니다. 더 높은 `commit` 값 시간 응용 프로그램의 스택 공간이 더 필요할 경우 있지만 메모리 요구량과 시작 시간을 절약할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EDITBIN 옵션](../../build/reference/editbin-options.md)

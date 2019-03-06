@@ -12,12 +12,12 @@ helpviewer_keywords:
 - symbols, add to symbol table
 - -INCLUDE linker option
 ms.assetid: 4a039677-360a-480f-bd0b-448e239b449c
-ms.openlocfilehash: 418b66cb16954f23036eaa65e07a4abf80fdba79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 389bd16829c2466b02cb879c8bc8d43c9efa6fb4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439340"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421222"
 ---
 # <a name="include-force-symbol-references"></a>/INCLUDE(강제 기호 참조)
 
@@ -27,7 +27,7 @@ ms.locfileid: "50439340"
 
 ## <a name="parameters"></a>매개 변수
 
-*기호*<br/>
+*symbol*<br/>
 기호를 기호 테이블을 추가할 수를 지정 합니다.
 
 ## <a name="remarks"></a>설명
@@ -54,7 +54,7 @@ ms.locfileid: "50439340"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ForceSymbolReferences%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CStatusBarCtrl [MFC], SetText
 - CStatusBarCtrl [MFC], SetTipText
 ms.assetid: 8504ad38-7b91-4746-aede-ac98886eb47b
-ms.openlocfilehash: 5a5adc5ae6b1981d7f8260d684a33d8bd7918e40
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8db2be9b14f9d60f2103ce0b63b772962b079bbe
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57272843"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426136"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl 클래스
 
@@ -132,7 +132,7 @@ virtual BOOL Create(
 상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.
 
 *rect*<br/>
-상태 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+상태 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 상태 표시줄 컨트롤의 부모 창에 일반적으로 지정 된 `CDialog`합니다. NULL이 아니어야 합니다.
@@ -178,7 +178,7 @@ virtual BOOL CreateEx(
 상태 표시줄 컨트롤의 스타일을 지정합니다. 상태 표시줄 컨트롤 스타일에 나열 된 어떤 조합도 적용할 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK에 있습니다. 이 매개 변수는 WS_CHILD 스타일을 포함 해야 합니다. WS_VISIBLE 스타일도 포함 됩니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -344,7 +344,7 @@ BOOL GetRect(
 해당 경계 사각형을 검색 해야 하는 파트의 0부터 시작 인덱스입니다.
 
 *lpRect*<br/>
-주소를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형을 수신 하는 구조입니다.
+주소를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형을 수신 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 

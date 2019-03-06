@@ -64,12 +64,12 @@ helpviewer_keywords:
 - CHeaderCtrl [MFC], SetItem
 - CHeaderCtrl [MFC], SetOrderArray
 ms.assetid: b847ac90-5fae-4a87-88e0-ca45f77b8b3b
-ms.openlocfilehash: a683c877b67f4eae1a7411f5916987c9789b6817
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 51cdfb481892ba5057d4ca26ff4d6e51665557e5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261351"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415619"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl 클래스
 
@@ -231,7 +231,7 @@ virtual BOOL Create(
 헤더 컨트롤의 스타일을 지정합니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-헤더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+헤더 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 일반적으로 헤더 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -301,7 +301,7 @@ virtual BOOL CreateEx(
 헤더 컨트롤의 스타일입니다. 헤더 컨트롤 스타일에 대 한 참조 [헤더 컨트롤 스타일](/windows/desktop/Controls/header-control-styles) Windows SDK에 있습니다. 참조 [만들기](#create) 추가 스타일의 목록은 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -543,7 +543,7 @@ BOOL GetItemDropDownRect(
 |매개 변수|설명|
 |---------------|-----------------|
 |*iItem*|[in] 해당 스타일은 HDF_SPLITBUTTON 헤더 항목의 0부터 시작 인덱스입니다. 자세한 내용은 참조 하세요. 합니다 `fmt` 의 멤버는 [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) 구조입니다.|
-|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 경계 사각형 정보를 얻습니다.|
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 경계 사각형 정보를 얻습니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -581,7 +581,7 @@ BOOL GetItemRect(
 헤더 컨트롤 항목의 0부터 시작 하는 인덱스입니다.
 
 *lpRect*<br/>
-주소에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.
+주소에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형 정보를 수신 하는 구조입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -633,7 +633,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
 
 |매개 변수|설명|
 |---------------|-----------------|
-|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형 정보를 수신 하는 구조입니다.|
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형 정보를 수신 하는 구조입니다.|
 
 ### <a name="return-value"></a>반환 값
 

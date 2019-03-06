@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -link compiler option [C++]
 - cl.exe compiler [C++], passing options to linker
 ms.assetid: 16902a94-c094-4328-841f-3ac94ca04848
-ms.openlocfilehash: dfa39988782a0c5bd121b6e18402d3f6b67a13e9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5e57a19f337653cdab6f66404b9458e1e7fed0d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50574930"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412837"
 ---
 # <a name="link-pass-options-to-linker"></a>/link(옵션을 링커로 전달)
 
@@ -51,7 +51,7 @@ ms.locfileid: "50574930"
 
 - 이 컴파일러 옵션을 프로그래밍 방식으로 변경할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

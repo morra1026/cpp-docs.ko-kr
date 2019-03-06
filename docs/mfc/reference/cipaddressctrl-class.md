@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CIPAddressCtrl [MFC], SetFieldFocus
 - CIPAddressCtrl [MFC], SetFieldRange
 ms.assetid: 9764d2f4-cb14-4ba8-b799-7f57a55a47c6
-ms.openlocfilehash: e569829c100a581e24b5ce05df2f90ac7088024b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5abcf838308d8965f3c55dc7d85dbac974825394
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57266297"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426396"
 ---
 # <a name="cipaddressctrl-class"></a>CIPAddressCtrl 클래스
 
@@ -122,7 +122,7 @@ virtual BOOL Create(
 IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) windows 스타일의 목록은 Windows SDK에 있습니다.
 
 *rect*<br/>
-IP 주소 컨트롤의 크기와 위치에 대 한 참조입니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+IP 주소 컨트롤의 크기와 위치에 대 한 참조입니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 IP 주소 컨트롤의 부모 창에 대 한 포인터입니다. NULL이 아니어야 합니다.
@@ -166,7 +166,7 @@ virtual BOOL CreateEx(
 IP 주소 컨트롤의 스타일입니다. 창 스타일의 조합을 적용 됩니다. 컨트롤을 자식 창에 있어야 하므로 WS_CHILD 스타일을 포함 해야 합니다. 참조 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) windows 스타일의 목록은 Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.

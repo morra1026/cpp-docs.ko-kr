@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMap
 ms.assetid: dc84f261-b13c-4c0a-9b57-30dcb9e3065e
-ms.openlocfilehash: d3e6069f4bf7b0c23d5db5844821524ee80589da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7790b363ef3f30b0ad0602568190ab443a2c1401
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648333"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423614"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap 클래스
 
@@ -84,7 +84,7 @@ ref class Map sealed;
 |이름|설명|
 |[Map:: mapchanged](#mapchanged) 이벤트|Map이 변경될 때 발생합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `UnorderedMap`
 
@@ -106,7 +106,7 @@ virtual void Clear();
 
 ## <a name="first"></a>  Unorderedmap:: First 메서드
 
-첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.
+첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) unordered map의 요소입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -217,7 +217,7 @@ event Windows::Foundation::Collections::MapChangedEventHandler<K,V>^ MapChanged;
 
 ### <a name="property-valuereturn-value"></a>속성 값/반환 값
 
-A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](https://msdn.microsoft.com/library/windows/apps/br226034.aspx) 하 고 [CollectionChange 열거형](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx)합니다.
+A [MapChangedEventHandler\<K, V >](/uwp/api/windows.foundation.collections.mapchangedeventhandler) 발생 한 변경 내용 유형의 이벤트를 발생 시킨 개체에 대 한 정보를 포함 하는 합니다. 참고 항목 [IMapChangedEventArgs\<K >](/uwp/api/Windows.Foundation.Collections.IMapChangedEventArgs_K_) 하 고 [CollectionChange 열거형](/uwp/api/windows.foundation.collections.collectionchange)합니다.
 
 ## <a name="net-framework-equivalent"></a>.NET Framework의 해당 값
 
@@ -241,7 +241,7 @@ virtual void Remove(
 
 ## <a name="size"></a>  Unorderedmap:: Size 메서드
 
-개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMap에 있는 요소입니다.
+개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) UnorderedMap에 있는 요소입니다.
 
 ### <a name="syntax"></a>구문
 

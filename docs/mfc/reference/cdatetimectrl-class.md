@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CDateTimeCtrl [MFC], SetRange
 - CDateTimeCtrl [MFC], SetTime
 ms.assetid: 7113993b-5d37-4148-939f-500a190c5bdc
-ms.openlocfilehash: bf8ced746b70f64b83733152d845aa0291f07310
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: a68f3570f0e8c3315e8b0716cddcd37563894e76
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302511"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422496"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl 클래스
 
@@ -158,7 +158,7 @@ virtual BOOL Create(
 날짜 시간 컨트롤 스타일의 조합을 지정합니다. 참조 [날짜 및 시간 선택 컨트롤 스타일](/windows/desktop/Controls/date-and-time-picker-control-styles) 날짜 및 시간 선택 스타일에 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조는 위치와 날짜 및 시간 선택 컨트롤의 크기입니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조는 위치와 날짜 및 시간 선택 컨트롤의 크기입니다.
 
 *pParentWnd*<br/>
 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체의 날짜 및 시간 선택 컨트롤의 부모 창입니다. NULL이 아니어야 합니다.

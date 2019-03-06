@@ -13,12 +13,12 @@ helpviewer_keywords:
 - Gm compiler option [C++]
 - -Gm compiler option [C++]
 ms.assetid: d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59
-ms.openlocfilehash: 7552da4764f009c0848f1d8f420f112be2d1120a
-ms.sourcegitcommit: 99437d7da4528ce72cabe6b6a65a9be5dfd090f8
+ms.openlocfilehash: e83c7ed142b85e0d8369545ae8085bfce85bd162
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51598810"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426734"
 ---
 # <a name="gm-enable-minimal-rebuild"></a>/Gm(최소 다시 빌드 사용)
 
@@ -53,7 +53,7 @@ Incremental linker를 사용 하 여.obj 파일에 포함 된 Windows 메타 데
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.MinimalRebuild%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

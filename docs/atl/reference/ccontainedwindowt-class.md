@@ -22,12 +22,12 @@ helpviewer_keywords:
 - contained windows
 - CContainedWindowT class
 ms.assetid: cde0ca36-9347-4068-995a-d294dae57ca9
-ms.openlocfilehash: 7fd9a941210407edc3424454b3375040717a05a2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 660c6c047bb700e531fd941ac8ed19d638866070
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57261663"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421573"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT 클래스
 
@@ -216,7 +216,7 @@ HWND Create(
 [in] 부모 또는 소유자 창에 대 한 핸들입니다.
 
 *rect*<br/>
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.
 
 *szWindowName*<br/>
 [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.

@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: 8c8a6d3e83534cd5670e43a9009b8919a2e57f92
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 867bec619dc633b7b1fbf9785e14132ba8c493ba
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57281375"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417192"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl 클래스
 
@@ -206,7 +206,7 @@ virtual BOOL CreateEx(
 애니메이션 컨트롤의 스타일을 지정합니다. 에 설명 된 애니메이션 컨트롤 스타일 및 창의 어떤 조합도 적용할 [애니메이션 컨트롤 스타일](/windows/desktop/Controls/animation-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.

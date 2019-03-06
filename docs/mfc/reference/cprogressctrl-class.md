@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CProgressCtrl [MFC], SetStep
 - CProgressCtrl [MFC], StepIt
 ms.assetid: 222630f4-1598-4026-8198-51649b1192ab
-ms.openlocfilehash: a6d5d3becfd1c1ee4a032c74eb116ede82c42bc4
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 131bee5f9eae1e6e2be4d48941d148edbde68262
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57260272"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418765"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl 클래스
 
@@ -149,7 +149,7 @@ virtual BOOL Create(
 - 진행률 표시줄 컨트롤에서 데이터를 입력할 부드러운 PBS_SMOOTH 표시 점진적입니다. 이 플래그가 없으면 블록을 사용 하 여 컨트롤을 채웁니다.
 
 *rect*<br/>
-진행률 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 클라이언트 영역을 기준으로 지정 된 좌표는 컨트롤을 자식 창와 있어야 하므로 합니다 *pParentWnd*합니다.
+진행률 표시줄 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 클라이언트 영역을 기준으로 지정 된 좌표는 컨트롤을 자식 창와 있어야 하므로 합니다 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 일반적으로 진행률 표시줄 컨트롤의 부모 창 지정을 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -191,7 +191,7 @@ virtual BOOL CreateEx(
 진행률 표시줄 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일의 조합을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.

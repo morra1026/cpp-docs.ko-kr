@@ -9,12 +9,12 @@ helpviewer_keywords:
 - response files
 - command files
 ms.assetid: abdffeea-35c7-4f2d-8c17-7d0d80bac314
-ms.openlocfilehash: 6be6dae2ef3dd729819a5eccba5e86df479ab5ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 43f5a886dd41941a0675e31bc8c9d3f23c607023
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50587309"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426240"
 ---
 # <a name="bscmake-command-file-response-file"></a>BSCMAKE 명령 파일(지시 파일)
 
@@ -43,6 +43,6 @@ verdate.h c:\src\inc\screen.h
 file1.sbr file2.sbr file3.sbr file4.sbr
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [BSCMAKE 참조](../../build/reference/bscmake-reference.md)

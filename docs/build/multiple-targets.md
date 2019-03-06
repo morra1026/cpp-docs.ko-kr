@@ -7,12 +7,12 @@ helpviewer_keywords:
 - targets, multiple in NMAKE
 - NMAKE program, targets
 ms.assetid: b609a179-0b9f-4b08-9930-998047588ae0
-ms.openlocfilehash: 2762e458781e3a95f478ea3477fc8ef02f9196fb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 28ac69a6e724b4e7c6fe838e0de3703cbdf0cfaa
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645063"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421431"
 ---
 # <a name="multiple-targets"></a>대상이 여러 개인 경우
 
@@ -34,6 +34,6 @@ leap.exe : jump.obj
    echo Building...
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대상](../build/targets.md)

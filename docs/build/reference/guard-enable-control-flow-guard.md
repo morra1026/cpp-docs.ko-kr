@@ -5,12 +5,12 @@ f1_keywords:
 - /guard
 - VC.Project.VCCLCompilerTool.ControlFlowGuard
 ms.assetid: be495323-f59f-4cf3-a6b6-8ee69e6a19dd
-ms.openlocfilehash: 8b15318ab7ae4233d6cf02a505ffe901bbe1d689
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d79f4b20499d964d407af61fa498b4579b6794d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516075"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424082"
 ---
 # <a name="guard-enable-control-flow-guard"></a>/guard(제어 흐름 보호 사용)
 
@@ -26,11 +26,11 @@ ms.locfileid: "50516075"
 
 **/guard:cf** 옵션은 컴파일러가 컴파일 시간에 간접 호출 대상에 대한 제어 흐름을 분석한 다음 런타임에 대상을 확인하는 코드를 삽입하게 합니다. 기본적으로, **/guard:cf** 는 해제되어 있으며, 명시적으로 설정해야 합니다. 이 옵션을 명시적으로 사용하지 않도록 설정하려면 **/guard:cf-** 를 사용합니다.
 
-**Visual Studio 2017 이상**:이 옵션에 대 한 보호를 추가 **전환** 문을 생성 하는 테이블을 이동 합니다.
+**Visual Studio 2017 이상**: 이 옵션에 대 한 보호를 추가 **전환** 문을 생성 하는 테이블을 이동 합니다.
 
 **/guard:cf** CFG(제어 흐름 보호) 옵션이 지정된 경우 컴파일러 및 링커는 추가 런타임 보안 검사를 삽입하여 코드를 손상시키려는 시도를 감지합니다. 컴파일 및 연결 중에 코드의 모든 간접 호출이 분석되어 코드를 올바르게 실행할 경우 코드가 도달할 수 있는 모든 위치를 찾습니다. 이 정보는 이진 파일의 헤더에 추가 구조로 저장됩니다. 또한 컴파일러는 코드의 모든 간접 호출 앞에 대상이 검증된 위치 중 하나인지 확인하는 검사를 삽입합니다. CFG 인식 운영 체제에서 런타임에 검사가 실패하면 운영 체제에서 프로그램을 닫습니다.
 
-소프트웨어에 대한 일반적인 공격은 극단적인 입력이나 예기치 않은 입력 처리의 버그를 이용합니다. 정교하게 작성된 응용 프로그램 입력은 실행 코드에 대한 포인터를 포함하는 위치를 덮어쓸 수 있습니다. 이 입력을 사용하여 제어 흐름을 공격자가 제어하는 코드로 리디렉션할 수 있습니다. CFG 런타임 검사는 실행 파일의 데이터 손상 버그를 수정하지 않습니다. 대신 공격자가 버그를 사용하여 임의 코드를 실행하기 어렵게 만듭니다. CFG는 코드에서 함수 진입점 이외의 위치에 대한 호출을 방지하는 완화 도구입니다. DEP(데이터 실행 방지),  [/GS](../../build/reference/gs-buffer-security-check.md) 스택 검사, [/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) 및 [/HIGHENTROPYVA](../../build/reference/highentropyva-support-64-bit-aslr.md) ASLR(주소 공간 레이아웃 불규칙화)에서 코드가 익스플로잇 벡터가 될 가능성을 줄이는 방법과 유사합니다.
+소프트웨어에 대한 일반적인 공격은 극단적인 입력이나 예기치 않은 입력 처리의 버그를 이용합니다. 정교하게 작성된 애플리케이션 입력은 실행 코드에 대한 포인터를 포함하는 위치를 덮어쓸 수 있습니다. 이 입력을 사용하여 제어 흐름을 공격자가 제어하는 코드로 리디렉션할 수 있습니다. CFG 런타임 검사는 실행 파일의 데이터 손상 버그를 수정하지 않습니다. 대신 공격자가 버그를 사용하여 임의 코드를 실행하기 어렵게 만듭니다. CFG는 코드에서 함수 진입점 이외의 위치에 대한 호출을 방지하는 완화 도구입니다. DEP(데이터 실행 방지),  [/GS](../../build/reference/gs-buffer-security-check.md) 스택 검사, [/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) 및 [/HIGHENTROPYVA](../../build/reference/highentropyva-support-64-bit-aslr.md) ASLR(주소 공간 레이아웃 불규칙화)에서 코드가 익스플로잇 벡터가 될 가능성을 줄이는 방법과 유사합니다.
 
 CFG 익스플로잇 완화 방법을 사용하는 코드를 빌드하려면 **/guard:cf** 옵션을 컴파일러와 링커 둘 다에 전달해야 합니다. 단일 `cl` 명령을 사용하여 이진 파일이 빌드된 경우 컴파일러는 옵션을 링커에 전달합니다. 컴파일 및 연결을 별도로 수행하는 경우 컴파일러 및 링커 명령 둘 다에 옵션을 설정해야 합니다. /DYNAMICBASE 링커 옵션도 필요합니다. 이진 파일에 CFG 데이터가 있는지 확인하려면 `dumpbin /headers /loadconfig` 명령을 사용합니다. CFG 사용 이진 파일의 EXE 또는 DLL 특징 목록에 `Guard` 가 있고 가드 플래그에 `CF Instrumented` 및 `FID table present`를 사용합니다.
 
@@ -48,7 +48,7 @@ CFG 익스플로잇 완화 방법을 사용하는 코드를 빌드하려면 **/g
 
 1. 드롭다운 컨트롤에서 **예** 를 선택하여 제어 흐름 보호를 사용하도록 설정하거나, **아니요** 를 선택하여 사용하지 않도록 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

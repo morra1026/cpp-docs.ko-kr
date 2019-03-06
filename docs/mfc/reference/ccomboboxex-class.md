@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CComboBoxEx [MFC], SetItem
 - CComboBoxEx [MFC], SetWindowTheme
 ms.assetid: 33ca960a-2409-478c-84a4-a2ee8ecfe8f7
-ms.openlocfilehash: d7a39dd19a51bc5bab0f924d360d594bddf89b44
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 44943803fdb422ccbf77302e7c81f23c34cc7433
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57265940"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420763"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx 클래스
 
@@ -150,7 +150,7 @@ virtual BOOL Create(
 콤보 상자에 적용 되는 콤보 상자 스타일의 조합을 지정 합니다. 참조 **주의** 아래 스타일에 대 한 자세한 내용은 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 콤보 상자의 크기와 위치는 구조입니다.
+에 대 한 참조를 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 콤보 상자의 크기와 위치는 구조입니다.
 
 *pParentWnd*<br/>
 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 콤보 상자의 부모 창 개체 (일반적으로 `CDialog`). NULL이 아니어야 합니다.
@@ -210,7 +210,7 @@ virtual BOOL CreateEx(
 콤보 상자 컨트롤의 스타일입니다. 참조 [만들기](#create) 스타일의 목록은 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.

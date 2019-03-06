@@ -8,12 +8,12 @@ helpviewer_keywords:
 - /IMPORTS dumpbin option
 - -IMPORTS dumpbin option
 ms.assetid: 6a296216-2b1b-40f8-8736-cd4553a22456
-ms.openlocfilehash: 9367457a8e7f6be1f372244f8288a994eb777071
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 94009670329887a0b8a35e7b8b36996a84c7faa6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613787"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417504"
 ---
 # <a name="imports-dumpbin"></a>/IMPORTS(DUMPBIN)
 
@@ -33,8 +33,8 @@ dumpbin /IMPORTS:msvcrt.dll
 
 이 옵션으로 표시 되는 출력은 비슷합니다는 [내보냅니다/](../../build/reference/dash-exports.md) 출력 합니다.
 
-만 [/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션을 사용 하 여 생성 된 파일에 사용할 수 있습니다 합니다 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션입니다.
+[/HEADERS](../../build/reference/headers.md) DUMPBIN 옵션은 [/GL](../../build/reference/gl-whole-program-optimization.md) 컴파일러 옵션으로 만든 파일에만 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - '@ compiler option'
 - cl.exe compiler, specifying response files
 ms.assetid: 400fffee-909d-4f60-bf76-45833e822685
-ms.openlocfilehash: 90dcadbb47cdc7eb4fa1ff039f5074a3141eac83
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc61477da9547204acfce93bbedcd077787162c2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491314"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416958"
 ---
 # <a name="-specify-a-compiler-response-file"></a>@(컴파일러 지시 파일 지정)
 
@@ -44,7 +44,7 @@ ms.locfileid: "50491314"
 
 - 이 컴파일러 옵션을 프로그래밍 방식으로 변경할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
