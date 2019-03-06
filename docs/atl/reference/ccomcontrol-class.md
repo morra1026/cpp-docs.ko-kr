@@ -19,12 +19,12 @@ helpviewer_keywords:
 - ambient properties
 - controls [ATL], properties
 ms.assetid: 55368c27-bd16-45a7-b701-edb36157c8e8
-ms.openlocfilehash: 3fe01128fc5f0a9d3058df2d6f95a6c038b28062
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 29eeb31c0823a0614fa1404cf7efc1c281bab3a4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644199"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261585"
 ---
 # <a name="ccomcontrol-class"></a>CComControl 클래스
 
@@ -75,7 +75,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 
 데모를 보려면 `CComControl` 메서드 및 데이터 멤버를 참조 합니다 [CIRC](../../visual-cpp-samples.md) 샘플입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `WinBase`
 
@@ -220,7 +220,7 @@ int MessageBox(
 *lpszCaption*<br/>
 대화 상자 제목입니다. 경우 NULL (기본값), "Error"는 제목입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 내용 및 대화 상자의 동작을 지정합니다. 참조 된 [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) 목록 사용할 수 있는 다양 한 메시지 상자는 Windows SDK 설명서의 항목입니다. 기본 제공 단순 **확인** 단추입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -231,7 +231,7 @@ int MessageBox(
 
 `MessageBox` 사용자에 게 오류 또는 경고 메시지를 표시 하는 쉬운 방법을 개발 중에 유용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWindowImpl 클래스](../../atl/reference/cwindowimpl-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

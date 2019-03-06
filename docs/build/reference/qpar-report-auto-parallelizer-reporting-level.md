@@ -2,12 +2,12 @@
 title: /Qpar-report(자동 병렬화 도우미 보고 수준)
 ms.date: 11/04/2016
 ms.assetid: 562673b9-02da-4bf8-bb64-70bc25ef4651
-ms.openlocfilehash: 4f3f496deb9f87d4f33f5e36832bd46405a482b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ab14f890d888664b2847f3e3d4b193d7c77da1a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550035"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419909"
 ---
 # <a name="qpar-report-auto-parallelizer-reporting-level"></a>/Qpar-report(자동 병렬화 도우미 보고 수준)
 
@@ -21,10 +21,10 @@ ms.locfileid: "50550035"
 
 ## <a name="remarks"></a>설명
 
-**/Qpar-보고서: 1**<br/>
+**/Qpar-report:1**<br/>
 평행화되는 루프에 대해 정보 메시지를 출력합니다.
 
-**/Qpar-보고서: 2**<br/>
+**/Qpar-report:2**<br/>
 평행화되는 루프와 평행화되지 않는 루프 둘 다에 대해 정보 메시지와 이유 코드를 출력합니다.
 
 메시지는 stdout에 보고됩니다. 정보 메시지가 보고되지 않는 경우에는 코드에 루프가 없거나 평행화되지 않은 루프를 보고하도록 보고 수준을 설정하지 않은 것입니다. 이유 코드 및 메시지에 대 한 자세한 내용은 참조 하세요. [벡터화 도우미 및 평행 화 도우미 메시지](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md)합니다.
@@ -39,9 +39,10 @@ ms.locfileid: "50550035"
 
 ### <a name="to-set-the-qpar-report-compiler-option-programmatically"></a>프로그래밍 방식으로 /Qpar-report 컴파일러 옵션을 설정하려면
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
+- 
+  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

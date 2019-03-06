@@ -8,12 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - dynamically linked DLLs [C++]
 ms.assetid: b4f7ab92-8723-42a5-890e-214f4e29dcd0
-ms.openlocfilehash: 550391d51560ff0beca8252ffb6193dd1e4d89b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 548fbde379937ab4d915f08a43a8b865e071d688
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632390"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413175"
 ---
 # <a name="regular-mfc-dlls-dynamically-linked-to-mfc"></a>동적으로 MFC에 링크 된 기본 MFC Dll
 
@@ -33,7 +33,7 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 - 정적으로 연결 된 기본 MFC DLL 달리 이러한 종류의 DLL MFC DLL (라고도: 공유 MFC DLL)을 동적으로 연결 됩니다.
 
-- 이 유형의 DLL에 연결 된 MFC 가져오기 라이브러리는 MFC 확장명 Dll 또는 MFC DLL을 사용 하 여 응용 프로그램에 사용 되는 것과 동일한:.lib MFCxx (D).
+- 이 유형의 DLL에 연결 된 MFC 가져오기 라이브러리는 MFC 확장명 Dll 또는 MFC DLL을 사용 하 여 응용 프로그램에 사용 되는 것과 동일한: MFCxx(D).lib.
 
 일반 MFC DLL을 동적으로 MFC에 링크 요구 사항은:
 
@@ -95,6 +95,6 @@ AFX_MANAGE_STATE(AfxGetStaticModuleState( ))
 
 - [DLL의 일부로 MFC 사용](../mfc/tn011-using-mfc-as-part-of-a-dll.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DLL의 종류](../build/kinds-of-dlls.md)

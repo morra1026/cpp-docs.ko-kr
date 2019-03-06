@@ -18,12 +18,12 @@ helpviewer_keywords:
 - frame allocation [MFC]
 - frame variables [MFC]
 ms.assetid: 945a211a-6f4f-4679-bb6a-b0f2a0d4a6c1
-ms.openlocfilehash: 45b0242ec8acafa2345482893d14decb02c4a3f9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bcd691f8e99b558fcadfc1cf51990b673c5b760c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447998"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262209"
 ---
 # <a name="memory-management-frame-allocation"></a>메모리 관리: 프레임 할당
 
@@ -39,7 +39,6 @@ ms.locfileid: "50447998"
 
 자동으로 삭제는 하는 프레임에서 개체를 할당 하는 이점이 있습니다. 프레임에서 개체를 할당 하면 메모리 누수를 일으키는 잊어버린된 개체에 걱정할 필요가 없습니다. (메모리 누수에 대 한 내용은 문서 참조 [MFC의 메모리 누수 탐지](/previous-versions/visualstudio/visual-studio-2010/c99kz476).) 프레임 할당의 단점은 범위 밖 프레임 변수를 사용할 수 없습니다. 프레임 할당과 힙 할당을 선택 하는 다른 요소 있다는 것 큰 구조와 개체에 대 한 자주 스택 공간이 제한 된 경우가 있으므로 저장소에 대 한 힙의 스택 대신 사용 하 여 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메모리 관리](../mfc/memory-management.md)
-

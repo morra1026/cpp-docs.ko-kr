@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CMFCColorButton [MFC], UpdateColor
 - CMFCColorButton [MFC], m_bEnabledInCustomizeMode
 ms.assetid: 9fdf34ae-4cc5-4c5e-9d89-1c50e8a73699
-ms.openlocfilehash: 97012e1d8cdc36f080245243c5f099b340225fc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 05a4ad17feea20c67069e65c5c5df43d543e2377
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533863"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293487"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton 클래스
 
@@ -84,7 +84,7 @@ class CMFCColorButton : public CMFCButton
 |[CMFCColorButton::SetPalette](#setpalette)|표준 디스플레이 색 색상표를 지정 합니다.|
 |[CMFCColorButton::SizeToContent](#sizetocontent)|해당 텍스트와 이미지 크기에 따라 단추 컨트롤의 크기를 변경 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -355,7 +355,7 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] RGB 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -372,7 +372,7 @@ static void SetColorName(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 색의 RGB 값입니다.
 
 *strName*<br/>
@@ -465,14 +465,14 @@ virtual void UpdateColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 사용자가 선택한 색입니다.
 
 ### <a name="remarks"></a>설명
 
 `UpdateColor` 함수 현재 선택한 단추의 색을 변경 하 고 BN_CLICKED 표준 알림이 WM_COMMAND 메시지를 보내 해당 부모에 알립니다. 사용 된 [CMFCColorButton::GetColor](#getcolor) 선택한 색을 검색 하는 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

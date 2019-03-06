@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CLinearTransition [MFC], m_dblFinalValue
 - CLinearTransition [MFC], m_duration
 ms.assetid: 7fcb2dba-beb8-4933-9f5d-3b7fb1585ef0
-ms.openlocfilehash: b671057d0abc01f31d5625d5be0e9678207d8abe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4aa2d9955d2bbf98d2d7829806c4bcbd76340847
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50432749"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270802"
 ---
 # <a name="clineartransition-class"></a>CLinearTransition 클래스
 
@@ -56,7 +56,7 @@ class CLinearTransition : public CBaseTransition;
 
 선형 전환 하는 동안 애니메이션 변수의 값 선형적으로 전환 초기 값에서 지정 된 마지막 값입니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -121,6 +121,6 @@ DOUBLE m_dblFinalValue;
 UI_ANIMATION_SECONDS m_duration;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

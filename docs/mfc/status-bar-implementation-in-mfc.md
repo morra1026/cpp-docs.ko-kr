@@ -16,12 +16,12 @@ helpviewer_keywords:
 - status indicators
 - status bars [MFC], Windows 95 implementation
 ms.assetid: be5cd876-38e3-4d5c-b8cb-16d57a16a142
-ms.openlocfilehash: 521b24646b673159d14e89bd57ea698a7ba73381
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: abd16ecb5e6a492bc42c747f60ec0859e1bc05cb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175371"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270074"
 ---
 # <a name="status-bar-implementation-in-mfc"></a>MFC의 상태 표시줄 구현
 
@@ -38,7 +38,7 @@ A [CStatusBar](../mfc/reference/cstatusbar-class.md) 개체의 텍스트 출력 
 
 도구 모음과 같은 상태 표시줄 개체 부모 프레임 창에 포함 된 및 프레임 창 생성 될 때 자동으로 생성 됩니다. 모든 컨트롤 막대와 같은 상태 표시줄을 자동으로 제거도 부모 프레임 소멸 될 때입니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [상태 표시줄 창의 텍스트 업데이트](../mfc/updating-the-text-of-a-status-bar-pane.md)
 
@@ -50,7 +50,6 @@ A [CStatusBar](../mfc/reference/cstatusbar-class.md) 개체의 텍스트 출력 
 
 - [도구 모음 (MFC 도구 모음 구현)](../mfc/mfc-toolbar-implementation.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [상태 표시줄](../mfc/status-bars.md)
-

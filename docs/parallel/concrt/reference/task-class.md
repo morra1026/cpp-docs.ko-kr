@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - task class
 ms.assetid: cdc3a8c0-5cbe-45a0-b5d5-e9f81d94df1a
-ms.openlocfilehash: c2ac1df322a2778356ce8acca90392fc9f6a17f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c1dc146f03b4ed5c0d9d82736959df3097f41199
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482080"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289301"
 ---
 # <a name="task-class-concurrency-runtime"></a>작업 클래스(동시성 런타임)
 
@@ -83,7 +83,7 @@ class task;
 
 자세한 내용은 [작업 병렬 처리](../../../parallel/concrt/task-parallelism-concurrency-runtime.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `task`
 
@@ -93,7 +93,7 @@ class task;
 
 **네임스페이스:** 동시성
 
-##  <a name="get"></a> 가져오기
+##  <a name="get"></a> get
 
 이 작업으로 생성된 결과를 반환합니다. 작업이 종료 상태가 아닐 경우 `get`에 대한 호출은 작업이 끝날 때까지 대기합니다. 이 메서드는 `result_type`의 `void`을 사용하는 작업에서 호출될 때는 값을 반환하지 않습니다.
 
@@ -161,7 +161,7 @@ bool operator!= (const task<void>& _Rhs) const;
 
 **true** 서로 다른 기본 작업 개체가 참조 하는 경우 및 **false** 그렇지 않은 경우.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 하나의 `task` 개체 콘텐츠를 다른 개체 콘텐츠로 바꿉니다.
 
@@ -180,9 +180,10 @@ task& operator= (task&& _Other);
 
 ### <a name="remarks"></a>설명
 
-`task`가 스마트 포인터와 같이 작동할 경우, 복사 할당 후 이 `task` 개체는 `_Other`와 동일한 실제 작업을 나타냅니다.
 
-##  <a name="operator_eq_eq"></a> 연산자 = =
+  `task`가 스마트 포인터와 같이 작동할 경우, 복사 할당 후 이 `task` 개체는 `_Other`와 동일한 실제 작업을 나타냅니다.
+
+##  <a name="operator_eq_eq"></a> operator==
 
 두 `task` 개체가 동일한 내부 작업을 나타내는지 여부를 확인합니다.
 
@@ -240,7 +241,7 @@ task(
 *T*<br/>
 작업이 생성되는 매개 변수 형식입니다.
 
-*되므로*<br/>
+*_Param*<br/>
 작업이 생성되는 매개 변수입니다. 람다, 함수 개체 수를 `task_completion_event<result_type>` 개체 또는 Windows 런타임 앱에서 작업을 사용 하는 경우 Windows::Foundation::IAsyncInfo 합니다. 람다 또는 함수 개체는 동일한 형식 이어야 합니다 `std::function<X(void)>`여기서 X 형식 변수의 수, `result_type`, `task<result_type>`, 또는 Windows 런타임 앱에서 Windows::Foundation::IAsyncInfo 합니다.
 
 *_TaskOptions*<br/>
@@ -251,13 +252,16 @@ task(
 
 ### <a name="remarks"></a>설명
 
-`task`에 대한 기본 생성자는 컨테이너 내에서 사용할 수 있는 작업을 허용하기 위해서만 존재합니다. 유효한 작업을 할당할 때까지 기본 생성 작업을 사용할 수 없습니다. 와 같은 메서드 `get`, `wait` 또는 `then` 시킵니다를 [invalid_argument](../../../standard-library/invalid-argument-class.md) 는 기본 생성 작업에서 호출 하는 동안 예외가 발생 합니다.
 
-`task_completion_event`에서 만든 작업은 작업 완료 이벤트가 설정되면 완료됩니다(연속 실행되도록 예약되어 있음).
+  `task`에 대한 기본 생성자는 컨테이너 내에서 사용할 수 있는 작업을 허용하기 위해서만 존재합니다. 유효한 작업을 할당할 때까지 기본 생성 작업을 사용할 수 없습니다. 와 같은 메서드 `get`, `wait` 또는 `then` 시킵니다를 [invalid_argument](../../../standard-library/invalid-argument-class.md) 는 기본 생성 작업에서 호출 하는 동안 예외가 발생 합니다.
+
+
+  `task_completion_event`에서 만든 작업은 작업 완료 이벤트가 설정되면 완료됩니다(연속 실행되도록 예약되어 있음).
 
 취소 토큰을 사용하는 생성자의 버전은 이 토큰을 가져온 `cancellation_token_source`를 사용하여 취소할 수 있는 작업을 만듭니다. 취소 토큰 없이 만든 작업은 취소할 수 없습니다.
 
-`Windows::Foundation::IAsyncInfo` 인터페이스에서 생성되었거나 `IAsyncInfo` 인터페이스를 반환하는 람다에서 생성된 작업은 포함된 Windows 런타임 비동기 작업 또는 동작이 완료될 때 종료 상태에 도달합니다. 마찬가지로 `task<result_type>`을 반환하는 람다에서 생성된 작업은 내부 작업이 종료 상태에 도달하고 람다가 반환되지 않을 때 종료 상태에 도달합니다.
+
+  `Windows::Foundation::IAsyncInfo` 인터페이스에서 생성되었거나 `IAsyncInfo` 인터페이스를 반환하는 람다에서 생성된 작업은 포함된 Windows 런타임 비동기 작업 또는 동작이 완료될 때 종료 상태에 도달합니다. 마찬가지로 `task<result_type>`을 반환하는 람다에서 생성된 작업은 내부 작업이 종료 상태에 도달하고 람다가 반환되지 않을 때 종료 상태에 도달합니다.
 
 `task`는 스마트 포인터처럼 작동하고 값으로 안전하게 전달됩니다. 또한 잠글 필요 없이 여러 스레드에서 액세스할 수 있습니다.
 
@@ -331,7 +335,8 @@ __declspec(
 
 ##  <a name="wait"></a> 대기
 
-이 작업이 종료 상태에 도달할 때까지 기다립니다. `wait`은 작업 종속성을 모두 만족하며 백그라운드 작업자에 의해 이미 선택되지 않은 경우 작업을 인라인 실행할 수 있습니다.
+이 작업이 종료 상태에 도달할 때까지 기다립니다. 
+  `wait`은 작업 종속성을 모두 만족하며 백그라운드 작업자에 의해 이미 선택되지 않은 경우 작업을 인라인 실행할 수 있습니다.
 
 ```
 task_status wait() const;
@@ -339,13 +344,14 @@ task_status wait() const;
 
 ### <a name="return-value"></a>반환 값
 
-`task_status` 또는 `completed`가 될 수 있는 `canceled` 값입니다. 작업 실행 중에 예외가 발생하거나 예외가 선행 작업에서 전파된 경우 `wait`은 해당 예외를 throw합니다.
+
+  `task_status` 또는 `completed`가 될 수 있는 `canceled` 값입니다. 작업 실행 중에 예외가 발생하거나 예외가 선행 작업에서 전파된 경우 `wait`은 해당 예외를 throw합니다.
 
 ### <a name="remarks"></a>설명
 
 > [!IMPORTANT]
 >  유니버설 Windows 플랫폼 (UWP) 앱에서 호출 하지 마십시오 `wait` STA에서 실행 되는 코드에서 호출하는 경우 이 메서드가 현재 스레드를 차단하고 앱이 응답하지 않게 만들 수 있기 때문에 런타임에서 [concurrency::invalid_operation](invalid-operation-class.md) 을 throw합니다. 그러나 [concurrency::task::get](#get) 메서드를 호출하여 작업 기반 연속에서 선행 작업의 결과를 받을 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

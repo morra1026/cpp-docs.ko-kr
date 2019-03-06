@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CDocTemplate [MFC], SetPreviewInfo
 - CDocTemplate [MFC], SetServerInfo
 ms.assetid: 14b41a1f-bf9d-4eac-b6a8-4c54ffcc77f6
-ms.openlocfilehash: 8044af41a3176d58c09f2c91c52497fa7f59de05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3b2d84af9be8e5c606cde8794b51e12207dcdec9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658590"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289626"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate 클래스
 
@@ -119,7 +119,7 @@ OLE 컨테이너 및/또는 서버 응용 프로그램이 경우 문서 템플�
 
 에 대 한 자세한 `CDocTemplate`를 참조 하세요 [문서 템플릿 및 문서/뷰 만들기 프로세스](../../mfc/document-templates-and-the-document-view-creation-process.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -141,7 +141,7 @@ virtual void AddDocument(CDocument* pDoc);
 
 ### <a name="parameters"></a>매개 변수
 
-*입력*<br/>
+*pDoc*<br/>
 추가 문서에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -233,10 +233,10 @@ virtual CFrameWnd* CreateNewFrame(
 
 ### <a name="parameters"></a>매개 변수
 
-*입력*<br/>
+*pDoc*<br/>
 새로운 프레임 창을 나타내야 할 문서입니다. NULL 일 수 있습니다.
 
-*광폭 한*<br/>
+*pOther*<br/>
 새로운 프레임 창을 기반으로 하는 프레임 창입니다. NULL 일 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -265,7 +265,7 @@ CFrameWnd* CreateOleFrame(
 *pParentWnd*<br/>
 프레임의 부모 창에 대 한 포인터입니다.
 
-*입력*<br/>
+*pDoc*<br/>
 새 OLE 프레임 창 참조 해야 하는 문서에 대 한 포인터입니다.
 
 *bCreateView*<br/>
@@ -353,7 +353,7 @@ virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*Rpo*<br/>
+*rPos*<br/>
 에 대 한 이전 호출에서 반환 된 위치 값에 대 한 참조가 [GetFirstDocPosition](#getfirstdocposition) 또는 `GetNextDoc`합니다.
 
 ### <a name="remarks"></a>설명
@@ -380,7 +380,7 @@ virtual void InitialUpdateFrame(
 *pFrame*<br/>
 초기 업데이트 해야 하는 프레임 창입니다.
 
-*입력*<br/>
+*pDoc*<br/>
 프레임와 연관 된 문서입니다. NULL 일 수 있습니다.
 
 *bMakeVisible*<br/>
@@ -467,7 +467,7 @@ virtual CDocument* OpenDocumentFile(
 *lpszPathName*<br/>
 [in] 문서를 열 수를 포함 하는 파일의 경로에 대 한 포인터입니다.
 
-*baddtomru*<br/>
+*bAddToMRU*<br/>
 [in] TRUE 이면 문서를 사용 하면 가장 최근의 파일 중 하나인 FALSE 문서가 아닌 최신 파일 중 하나를 나타냅니다.
 
 ### <a name="return-value"></a>반환 값
@@ -488,7 +488,7 @@ virtual void RemoveDocument(CDocument* pDoc);
 
 ### <a name="parameters"></a>매개 변수
 
-*입력*<br/>
+*pDoc*<br/>
 제거할 문서에 대 한 포인터입니다.
 
 ### <a name="remarks"></a>설명
@@ -590,7 +590,7 @@ CFrameWnd* CreatePreviewFrame(
 *pParentWnd*<br/>
 부모 창 (일반적으로 셸에서 제공)에 대 한 포인터입니다.
 
-*입력*<br/>
+*pDoc*<br/>
 해당 콘텐츠를 미리 볼 수는 문서 개체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -623,7 +623,7 @@ void SetPreviewInfo(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

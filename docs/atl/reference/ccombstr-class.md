@@ -29,12 +29,12 @@ helpviewer_keywords:
 - CComBSTR class
 - CComBSTR
 ms.assetid: 8fea1879-a05e-47a5-a803-8dec60eaa534
-ms.openlocfilehash: 52e8472e315932978af38d405c753b0a62fcbe45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48447b9e6a211927d8e729dd761d2e14ecd89615
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50475649"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282359"
 ---
 # <a name="ccombstr-class"></a>CComBSTR 클래스
 
@@ -53,7 +53,7 @@ class CComBSTR
 |이름|설명|
 |----------|-----------------|
 |[CComBSTR::CComBSTR](#ccombstr)|생성자입니다.|
-|[CComBSTR:: ~ CComBSTR](#dtor)|소멸자입니다.|
+|[CComBSTR::~CComBSTR](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -89,7 +89,7 @@ class CComBSTR
 |[CComBSTR::operator + =](#operator_add_eq)|추가 된 `CComBSTR` 개체입니다.|
 |[CComBSTR::operator <](#operator_lt)|비교는 `CComBSTR` 문자열입니다.|
 |[CComBSTR::operator =](#operator_eq)|에 값을 할당 `m_str`합니다.|
-|[CComBSTR::operator = =](#operator_eq_eq)|비교는 `CComBSTR` 문자열입니다.|
+|[CComBSTR::operator ==](#operator_eq_eq)|비교는 `CComBSTR` 문자열입니다.|
 |[CComBSTR::operator >](#operator_gt)|비교는 `CComBSTR` 문자열입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -346,7 +346,7 @@ CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 
 [!code-cpp[NVC_ATL_Utilities#37](../../atl/codesnippet/cpp/ccombstr-class_6.cpp)]
 
-##  <a name="dtor"></a>  CComBSTR:: ~ CComBSTR
+##  <a name="dtor"></a>  CComBSTR::~CComBSTR
 
 소멸자입니다.
 
@@ -485,7 +485,7 @@ BSTR m_str;
 
 [!code-cpp[NVC_ATL_Utilities#49](../../atl/codesnippet/cpp/ccombstr-class_13.cpp)]
 
-##  <a name="operator_bstr"></a>  BSTR CComBSTR::operator
+##  <a name="operator_bstr"></a>  CComBSTR::operator BSTR
 
 캐스트는 `CComBSTR` bstr 개체입니다.
 
@@ -501,7 +501,7 @@ operator BSTR() const throw();
 
 예를 참조 하세요 [CComBSTR::m_str](#m_str)합니다.
 
-##  <a name="operator_not"></a>  CComBSTR::operator!
+##  <a name="operator_not"></a>  CComBSTR::operator !
 
 BSTR 문자열 NULL 인지 여부를 확인 합니다.
 
@@ -521,7 +521,7 @@ bool operator!() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#35](../../atl/codesnippet/cpp/ccombstr-class_4.cpp)]
 
-##  <a name="operator_neq"></a>  CComBSTR::operator! =
+##  <a name="operator_neq"></a>  CComBSTR::operator !=
 
 논리적 반대를 반환 [연산자 = =](#operator_eq_eq)합니다.
 
@@ -571,7 +571,7 @@ BSTR* operator&() throw();
 
 [!code-cpp[NVC_ATL_Utilities#47](../../atl/codesnippet/cpp/ccombstr-class_15.cpp)]
 
-##  <a name="operator_add_eq"></a>  CComBSTR::operator + =
+##  <a name="operator_add_eq"></a>  CComBSTR::operator +=
 
 문자열을 추가 합니다 `CComBSTR` 개체입니다.
 
@@ -633,7 +633,7 @@ CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 
 예를 참조 하세요 [CComBSTR::Copy](#copy)합니다.
 
-##  <a name="operator_eq_eq"></a>  CComBSTR::operator = =
+##  <a name="operator_eq_eq"></a>  CComBSTR::operator ==
 
 비교는 `CComBSTR` 문자열입니다. `CComBSTR`사용자의 기본 로캘이의 컨텍스트에서 s 텍스트 방식으로 비교 됩니다.
 
@@ -761,7 +761,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
 
 [!code-cpp[NVC_ATL_Utilities#45](../../atl/codesnippet/cpp/ccombstr-class_18.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [ATL 및 MFC 문자열 변환 매크로](string-conversion-macros.md)

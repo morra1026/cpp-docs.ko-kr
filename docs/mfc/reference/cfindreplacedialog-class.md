@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CFindReplaceDialog [MFC], SearchDown
 - CFindReplaceDialog [MFC], m_fr
 ms.assetid: 610f0b5d-b398-4ef6-8c05-e9d6641e50a8
-ms.openlocfilehash: abf230f8c9e68365f8d1db8b654174ad3e152862
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: de48d8f495802bdf1c5f69e7a4edc41153c9599f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894408"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264627"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog 클래스
 
@@ -101,7 +101,7 @@ class CFindReplaceDialog : public CCommonDialog
 
 사용 하 여 대 한 자세한 내용은 `CFindReplaceDialog`를 참조 하세요 [일반 대화 상자 클래스](../../mfc/common-dialog-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -358,7 +358,7 @@ BOOL SearchDown() const;
 
 사용자 검색 아래쪽 방향;에서 계속을 읽으려는 경우 0이 아닌 값 사용자가 위쪽 방향에서 계속 검색 하는 경우 0입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCommonDialog 클래스](../../mfc/reference/ccommondialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)

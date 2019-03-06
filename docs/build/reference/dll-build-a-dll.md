@@ -10,12 +10,12 @@ helpviewer_keywords:
 - DLLs [C++], building
 - DLL linker option [C++]
 ms.assetid: c7685aec-31d0-490f-9503-fb5171a23609
-ms.openlocfilehash: 71696e4ffae91ed1fa8a13e69e75523ce66e8361
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: edad85b2890679e4247c7d34b4e19534e871f4dd
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546344"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420065"
 ---
 # <a name="dll-build-a-dll"></a>/DLL(DLL 빌드)
 
@@ -55,7 +55,7 @@ Note는.dll을 만들기 전에 예비 단계에서 가져오기 라이브러리
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

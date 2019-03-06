@@ -16,12 +16,12 @@ helpviewer_keywords:
 - prerequisites, Internet client classes [MFC]
 - Gopher client applications [MFC]
 ms.assetid: c51d1dfe-260c-4228-8100-e4efd90e9599
-ms.openlocfilehash: b6be476e4b9f7d1aaa09a588e1c06e72032f48c0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6246db7dfb2837f5d94fa51f8433b46722c43663
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629881"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267747"
 ---
 # <a name="prerequisites-for-internet-client-classes"></a>인터넷 클라이언트 클래스의 필수 구성 요소
 
@@ -69,8 +69,8 @@ ms.locfileid: "50629881"
 |Gopher 파일을 엽니다.|Gopher 연결 합니다. 사용 하 여 gopher 로케이터가 [CGopherConnection::CreateLocator](../mfc/reference/cgopherconnection-class.md#createlocator) 로케이터를 사용 하 여 찾거나 [CGopherFileFind::GetLocator](../mfc/reference/cgopherfilefind-class.md#getlocator)합니다. 호출 [CGopherConnection::OpenFile](../mfc/reference/cgopherconnection-class.md#openfile)합니다.|
 |Gopher 파일을 읽습니다.|Gopher 파일을 엽니다. 사용 하 여 [CGopherFile](../mfc/reference/cgopherfile-class.md)합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[인터넷 클라이언트 응용 프로그램을 만들기 위한 MFC 클래스](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
-[MFC WinInet 클래스를 사용하여 인터넷 클라이언트 응용 프로그램 작성](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)
+[인터넷 클라이언트 애플리케이션을 만들기 위한 MFC 클래스](../mfc/mfc-classes-for-creating-internet-client-applications.md)<br/>
+[MFC WinInet 클래스를 사용하여 인터넷 클라이언트 애플리케이션 작성](../mfc/writing-an-internet-client-application-using-mfc-wininet-classes.md)

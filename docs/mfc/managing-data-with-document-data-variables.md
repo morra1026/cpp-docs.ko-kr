@@ -11,12 +11,12 @@ helpviewer_keywords:
 - document data [MFC]
 - member variables [MFC], document class [MFC]
 ms.assetid: e70b87f4-8c30-49e5-8986-521c2ff91704
-ms.openlocfilehash: 756f0a3870f4b211cbc7bb40449733cf70610247
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dc21bd4b3dbe7609a33af4b4f93f15a3f5c9a64e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630025"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259973"
 ---
 # <a name="managing-data-with-document-data-variables"></a>문서 데이터 변수로 데이터 관리
 
@@ -30,7 +30,6 @@ ms.locfileid: "50630025"
 
 자주 데이터를 전송 하려면 직접 액세스 또는 문서 클래스의 public이 아닌 멤버를 사용 하려는 경우에 friend (c + + 용어인) 문서 클래스의 클래스 뷰를 확인 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 사용](../mfc/using-documents.md)
-

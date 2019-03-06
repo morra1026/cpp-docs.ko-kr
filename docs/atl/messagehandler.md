@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - MessageHandler function
 ms.assetid: 8a0acf97-1b0d-4226-91b9-75446634a03c
-ms.openlocfilehash: 5d7b1af3f96f34be91c9e4616e0ac3a084689b2a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: deb217e2f889d30ab5c4caa7d9812d5e612dcb62
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693154"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299350"
 ---
 # <a name="messagehandler"></a>MessageHandler
 
@@ -50,7 +50,7 @@ LRESULT MessageHandler(
 
 메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 구현](../atl/implementing-a-window.md)<br/>
 [메시지 맵](../atl/message-maps-atl.md)<br/>

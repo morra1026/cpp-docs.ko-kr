@@ -56,12 +56,12 @@ helpviewer_keywords:
 - CDrawingManager [MFC], SetPixel
 - CDrawingManager [MFC], SmartMixColors
 ms.assetid: 9e4775ca-101b-4aa9-a85a-4d047c701215
-ms.openlocfilehash: c7295d8003b364b36a84fcb5b2c5921ae9899b51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a729c8d32c851c4401a0af7dd7323912a476530f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465990"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293448"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager 클래스
 
@@ -116,7 +116,7 @@ class CDrawingManager : public CObject
 
 `CDrawingManager` 클래스 그림자, 색 그라데이션 및 강조 표시 된 사각형을 그리기 위한 함수를 제공 합니다. 또한 알파 혼합 수행합니다. 직접 응용 프로그램의 UI를 변경 하려면이 클래스를 사용할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)<br/>
 `CDrawingManager`
@@ -159,7 +159,7 @@ static HBITMAP __stdcall CreateBitmap_32(
 |매개 변수|설명|
 |*size*|[in] A [CSize](../../atl-mfc-shared/reference/csize-class.md) 비트맵의 크기를 나타내는 매개 변수입니다.|
 |*pBits*|[out] DIB의 위치를 수신 하는 데이터 포인터에 비트 값입니다.|
-|*비트맵*|원래 비트맵에 대 한 핸들|
+|*bitmap*|원래 비트맵에 대 한 핸들|
 |*clrTransparent*|원래 비트맵의 투명 한 색을 지정 하는 RGB 값입니다.|
 
 ### <a name="return-value"></a>반환 값
@@ -781,7 +781,7 @@ static COLORREF __stdcall PixelAlpha(
 *srcPixel*<br/>
 [in] 픽셀의 초기 색입니다.
 
-*%*<br/>
+*percent*<br/>
 [in] 투명도의 백분율을 나타내는 0과 100 사이의 숫자입니다. 값이 100 초기 색이 완전히 투명 하 게 나타냅니다.
 
 *percentR*<br/>
@@ -930,7 +930,7 @@ static void __stdcall SetAlphaPixel(
 *y*<br/>
 [in] 색 픽셀에 세로 좌표입니다.
 
-*%*<br/>
+*percent*<br/>
 [in] 백분율 투명도입니다.
 
 *iShadowSize*<br/>
@@ -972,7 +972,7 @@ static void __stdcall SetPixel(
 |*cy*|[in] 비트맵의 전체 높이입니다.|
 |*x*|[in] 변경 비트맵의 픽셀의 x 좌표입니다.|
 |*y*|[in] 변경 비트맵의 픽셀의 y 좌표입니다.|
-|*색*|[in] 제공 된 좌표에서 식별 된 픽셀에 대 한 새 색입니다.|
+|*color*|[in] 제공 된 좌표에서 식별 된 픽셀에 대 한 새 색입니다.|
 
 ##  <a name="smartmixcolors"></a>  CDrawingManager::SmartMixColors
 
@@ -1032,7 +1032,7 @@ TRUE 이면 + 90도 회전 합니다. FALSE-90도 회전을 나타냅니다.
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

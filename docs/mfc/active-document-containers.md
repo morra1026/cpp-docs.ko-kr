@@ -7,12 +7,12 @@ helpviewer_keywords:
 - containers [MFC], active document
 - MFC COM, active document containment
 ms.assetid: ba20183a-8b4c-440f-9031-e5fcc41d391b
-ms.openlocfilehash: bfd4018496f1516f8016bb56da2406f2e4b04c08
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 6e4defaf347f0d539ef023ee9c0e1e85dd2390db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176785"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288963"
 ---
 # <a name="active-document-containers"></a>액티브 문서 컨테이너
 
@@ -83,7 +83,6 @@ interface IOleDocumentSite : IUnknown
 
 액티브 문서 컨테이너를 추가 하 여 프레임을 보강할 수 `IOleCommandTarget`입니다. 이 인터페이스는 동일한 명령을 보내는 데 컨테이너를 허용할 수 같은 방법으로 활성 문서의 사용자 인터페이스에서 생성 된 명령을 받을 수 있도록 (같은 **새 파일**를 **오픈**를  **다른 이름으로 저장**하십시오 **인쇄**; **복사본 편집**, **붙여넣기**, **취소**, 등)는 현재 문서에 합니다. 자세한 내용은 [명령 대상](../mfc/message-handling-and-command-targets.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [활성 문서 포함](../mfc/active-document-containment.md)
-

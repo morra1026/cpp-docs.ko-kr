@@ -9,12 +9,12 @@ helpviewer_keywords:
 - performance, cle.exe compiler
 - cl.exe compiler, performance
 ms.assetid: 77997af9-5555-4b3d-aa57-6615b27d4d5d
-ms.openlocfilehash: f4e2bf8b848654f7b87c59e7a54994448ee62d51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d884da19936949f2feeb96cb1fb88057d5dcd948
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481330"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419701"
 ---
 # <a name="o-options-optimize-code"></a>/O 옵션(코드 최적화)
 
@@ -44,7 +44,7 @@ ms.locfileid: "50481330"
 
 여러 결합할 수 있습니다 **/O** 단일 옵션 문으로 옵션입니다. 예를 들어 **/Odi** 와 같습니다 **/Od /Oi**합니다. 특정 옵션은 상호 배타적 이므로 함께 사용할 경우 컴파일러 오류가 발생 합니다. 개별 참조 **/O** 옵션을 참조 하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

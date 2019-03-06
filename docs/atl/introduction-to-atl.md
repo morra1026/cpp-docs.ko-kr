@@ -6,12 +6,12 @@ helpviewer_keywords:
 - COM objects, creating in ATL
 - ATL
 ms.assetid: 77f565e8-c4ec-4a80-af4b-7278fcfe5c98
-ms.openlocfilehash: 50cbf5496569485b32eb1b3e9df932c4e8096d0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c2dcab962cd9863acf0f8e7070727f3b18117d5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444774"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299259"
 ---
 # <a name="introduction-to-atl"></a>ATL 소개
 
@@ -27,6 +27,6 @@ ATL 코드는 단일 스레드 개체로, 아파트 모델 개체, 자유 스레
 
 - [ATL과 MFC 중 선택을 위한 권장 사항](../atl/recommendations-for-choosing-between-atl-and-mfc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COM 및 ATL 소개](../atl/introduction-to-com-and-atl.md)

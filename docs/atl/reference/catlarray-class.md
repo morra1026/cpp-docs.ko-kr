@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlArray class
 ms.assetid: 0b503aa8-2357-40af-a326-6654bf1da098
-ms.openlocfilehash: c6a4d522a05885468a0dfec3889fb950b16b847f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca4b0f4c8ffc3382984660caec7ae04107c8797a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442681"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301856"
 ---
 # <a name="catlarray-class"></a>CAtlArray 클래스
 
@@ -61,7 +61,7 @@ class CAtlArray
 |[추가](#append)|한 배열의 내용을 다른 끝에 추가 하려면이 메서드를 호출 합니다.|
 |[AssertValid](#assertvalid)|배열 개체에 유효한 지 확인 하려면이 메서드를 호출 합니다.|
 |[CAtlArray](#catlarray)|생성자입니다.|
-|[~ CAtlArray](#dtor)|소멸자입니다.|
+|[~CAtlArray](#dtor)|소멸자입니다.|
 |[복사](#copy)|다른 한 배열의 요소를 복사 하려면이 메서드를 호출 합니다.|
 |[FreeExtra](#freeextra)|배열에서 빈 요소를 제거 하려면이 메서드를 호출 합니다.|
 |[GetAt](#getat)|배열 개체의 단일 요소를 검색 하려면이 메서드를 호출 합니다.|
@@ -114,7 +114,7 @@ size_t Add();
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*<br/>
+*element*<br/>
 배열에 추가할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -190,7 +190,7 @@ CAtlArray() throw();
 
 [!code-cpp[NVC_ATL_Utilities#4](../../atl/codesnippet/cpp/catlarray-class_4.cpp)]
 
-##  <a name="dtor"></a>  CAtlArray:: ~ CAtlArray
+##  <a name="dtor"></a>  CAtlArray::~CAtlArray
 
 소멸자입니다.
 
@@ -357,7 +357,7 @@ void InsertAt(size_t iElement, INARGTYPE element, size_t nCount = 1);
 *iElement*<br/>
 요소 또는 요소를 삽입 하는 인덱스입니다.
 
-*요소*<br/>
+*element*<br/>
 값을 삽입할 요소입니다.
 
 *nCount*<br/>
@@ -393,7 +393,7 @@ bool IsEmpty() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#10](../../atl/codesnippet/cpp/catlarray-class_10.cpp)]
 
-##  <a name="operator_at"></a>  CAtlArray::operator]
+##  <a name="operator_at"></a>  CAtlArray::operator []
 
 배열의 요소에 대 한 참조를 반환 하도록이 연산자를 호출 합니다.
 
@@ -482,7 +482,7 @@ void SetAt(size_t iElement, INARGTYPE element);
 *iElement*<br/>
 설정할 배열 요소를 가리키는 인덱스입니다.
 
-*요소*<br/>
+*element*<br/>
 지정 된 요소의 새 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -536,7 +536,7 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 *iElement*<br/>
 설정할 배열 요소를 가리키는 인덱스입니다.
 
-*요소*<br/>
+*element*<br/>
 지정 된 요소의 새 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -547,7 +547,7 @@ void SetAtGrow(size_t iElement, INARGTYPE element);
 
 [!code-cpp[NVC_ATL_Utilities#12](../../atl/codesnippet/cpp/catlarray-class_12.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MMXSwarm 샘플](../../visual-cpp-samples.md)<br/>
 [DynamicConsumer 샘플](../../visual-cpp-samples.md)<br/>

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /Fi compiler option (C++)
 - preprocessing output files, file name
 ms.assetid: 6d0ba983-a8b7-41ec-84f5-b4688ef8efee
-ms.openlocfilehash: d4de722ad33a9c9e5e7c37176bbe5d7031b68a39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 02d2a27f0a3d6b6aee6c2cd6f7161c9de718446d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450182"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414029"
 ---
 # <a name="fi-preprocess-output-file-name"></a>/Fi (출력 파일 이름 전처리)
 
@@ -46,7 +46,7 @@ ms.locfileid: "50450182"
 CL /P /FiMYPROCESS.I PROGRAM.CPP
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [/P(파일로 전처리)](../../build/reference/p-preprocess-to-a-file.md)<br/>

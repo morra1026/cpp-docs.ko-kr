@@ -26,12 +26,12 @@ helpviewer_keywords:
 - COleDispatchDriver [MFC], m_bAutoRelease
 - COleDispatchDriver [MFC], m_lpDispatch
 ms.assetid: 3ed98daf-cdc7-4374-8a0c-cf695a8d3657
-ms.openlocfilehash: 9d0ffba2e8b682a33dc435b0968c59844a858c72
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 22ba71bc0abaefd20cb68d82d4fefe06ab7fa929
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524939"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274581"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver 클래스
 
@@ -56,10 +56,10 @@ class COleDispatchDriver
 |이름|설명|
 |----------|-----------------|
 |[COleDispatchDriver::AttachDispatch](#attachdispatch)|연결 프로그램 `IDispatch` 연결할을 `COleDispatchDriver` 개체입니다.|
-|[Coledispatchdriver:: Createdispatch](#createdispatch)|만듭니다는 `IDispatch` 연결에 연결 하 고는 `COleDispatchDriver` 개체입니다.|
+|[COleDispatchDriver::CreateDispatch](#createdispatch)|만듭니다는 `IDispatch` 연결에 연결 하 고는 `COleDispatchDriver` 개체입니다.|
 |[COleDispatchDriver::DetachDispatch](#detachdispatch)|분리는 `IDispatch` 해제 하지 않고 연결 합니다.|
 |[COleDispatchDriver::GetProperty](#getproperty)|자동화 속성을 가져옵니다.|
-|[Coledispatchdriver:: Invokehelper](#invokehelper)|자동화 메서드를 호출 하기 위한 도우미입니다.|
+|[COleDispatchDriver::InvokeHelper](#invokehelper)|자동화 메서드를 호출 하기 위한 도우미입니다.|
 |[COleDispatchDriver::ReleaseDispatch](#releasedispatch)|릴리스는 `IDispatch` 연결 합니다.|
 |[COleDispatchDriver::SetProperty](#setproperty)|자동화 속성을 설정합니다.|
 
@@ -91,7 +91,7 @@ OLE 디스패치 인터페이스 개체의 메서드 및 속성에 대 한 액�
 
 - [자동화 서버](../../mfc/automation-servers.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `COleDispatchDriver`
 
@@ -158,7 +158,7 @@ COleDispatchDriver(const COleDispatchDriver& dispatchSrc);
 
   [COleDispatchDriver::CreateDispatch](#createdispatch)에 대한 예제를 참조하세요.
 
-##  <a name="createdispatch"></a>  Coledispatchdriver:: Createdispatch
+##  <a name="createdispatch"></a>  COleDispatchDriver::CreateDispatch
 
 [IDispatch](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface) 인터페이스 개체를 만들고 `COleDispatchDriver` 개체에 연결합니다.
 
@@ -239,7 +239,7 @@ void GetProperty(
 
 [!code-cpp[NVC_MFCOleContainer#6](../../mfc/codesnippet/cpp/coledispatchdriver-class_4.cpp)]
 
-##  <a name="invokehelper"></a>  Coledispatchdriver:: Invokehelper
+##  <a name="invokehelper"></a>  COleDispatchDriver::InvokeHelper
 
 개체 메서드 또는 속성으로 지정 된 호출 *dwDispID*, 지정 된 컨텍스트에서 *wFlags*합니다.
 
@@ -257,7 +257,7 @@ void AFX_CDECL InvokeHelper(
 *dwDispID*<br/>
 호출할 메서드 또는 속성을 식별합니다.
 
-*wflags에서*<br/>
+*wFlags*<br/>
 에 대 한 호출의 컨텍스트를 설명 하는 플래그 `IDispatch::Invoke`합니다. . 가능한 값 목록을 참조 하세요. 합니다 *wFlags* 에 매개 변수 [idispatch:: Invoke](/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) Windows SDK의 합니다.
 
 *vtRet*<br/>
@@ -406,7 +406,7 @@ void AFX_CDECL SetProperty(
 
 [!code-cpp[NVC_MFCOleContainer#7](../../mfc/codesnippet/cpp/coledispatchdriver-class_7.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CALCDRIV MFC 샘플](../../visual-cpp-samples.md)<br/>
 [ACDUAL MFC 샘플](../../visual-cpp-samples.md)<br/>

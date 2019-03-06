@@ -1,4 +1,4 @@
-﻿---
+---
 title: 인라인 함수 가져오기 및 내보내기
 ms.date: 11/04/2016
 helpviewer_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - functions [C++], importing
 - functions [C++], exporting
 ms.assetid: 89f488f8-b078-40fe-afd7-80bd7840057b
-ms.openlocfilehash: 407ca39aa53cf622b531fa0ca7818682c82c561f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb117ce6c6088b9fdca57f7d4fd7d0193e1813c2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50439106"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425551"
 ---
 # <a name="importing-and-exporting-inline-functions"></a>인라인 함수 가져오기 및 내보내기
 
@@ -44,6 +44,6 @@ ms.locfileid: "50439106"
 
 - [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [가져오기 및 내보내기](../build/importing-and-exporting.md)

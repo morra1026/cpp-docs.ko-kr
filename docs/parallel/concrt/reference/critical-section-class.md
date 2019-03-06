@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - critical_section class
 ms.assetid: fa3c89d6-be5d-4d1b-bddb-8232814e6cf6
-ms.openlocfilehash: a08cb5049d742a9740361595bd931a2f7a48bd16
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f334b159ae39f48006a135c6e36d413b737a7344
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498766"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260948"
 ---
 # <a name="criticalsection-class"></a>critical_section 클래스
 
@@ -66,7 +66,7 @@ class critical_section;
 
 자세한 내용은 [동기화 데이터 구조](../../../parallel/concrt/synchronization-data-structures.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `critical_section`
 
@@ -177,14 +177,14 @@ bool try_lock_for(unsigned int _Timeout);
 
 ### <a name="parameters"></a>매개 변수
 
-*시간 제한 _t*<br/>
+*_Timeout*<br/>
 시간이 초과되기 전에 대기하는 기간(밀리초)입니다.
 
 ### <a name="return-value"></a>반환 값
 
 잠금을 획득 하는 경우 값 **true**이 고, 그렇지 않으면 값 **false**합니다.
 
-##  <a name="unlock"></a> 잠금 해제
+##  <a name="unlock"></a> unlock
 
 중요 섹션을 잠금 해제합니다.
 
@@ -192,7 +192,7 @@ bool try_lock_for(unsigned int _Timeout);
 void unlock();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [reader_writer_lock 클래스](reader-writer-lock-class.md)

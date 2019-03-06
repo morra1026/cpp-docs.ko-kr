@@ -9,18 +9,18 @@ helpviewer_keywords:
 - foreground colors, ActiveX controls
 - foreground colors [MFC]
 ms.assetid: 8b98c8c5-5b69-4366-87bf-0e61e6668ecb
-ms.openlocfilehash: b27979b5492ed03b93aa0d8990c9c0b699242c86
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 940f61c9ce6ccb57843333582455e61c1f7ac73b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607833"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289691"
 ---
 # <a name="mfc-activex-controls-adding-stock-properties"></a>MFC ActiveX 컨트롤: 스톡 속성 추가
 
 클래스에 의해 이미 구현 되어에 사용자 지정 속성에서 스톡 속성 다 `COleControl`합니다. `COleControl` 컨트롤에 대 한 공용 속성을 지 원하는 미리 정의 된 멤버 함수를 포함 합니다. 몇 가지 일반적인 속성 컨트롤의 캡션 및 전경색 및 배경색을 포함 합니다. 다른 스톡 속성에 대 한 내용은 참조 하세요 [스톡 속성 추가 마법사 지 속성](#_core_stock_properties_supported_by_classwizard) 이 문서의 뒷부분에 나오는. 속성에는 항상 DISP_STOCKPROP 접두사로 재고에 대 한 디스패치 맵 항목입니다.
 
-이 문서에서는 속성 추가 마법사를 사용 하 여 ActiveX 컨트롤에 있는 스톡 속성 (이 예제의 경우 캡션)에 추가 하는 방법 및 결과 코드 수정 내용을 설명 합니다. 다음과 같은 내용을 다룹니다.
+이 문서에서는 속성 추가 마법사를 사용 하 여 ActiveX 컨트롤에 있는 스톡 속성 (이 예제의 경우 캡션)에 추가 하는 방법 및 결과 코드 수정 내용을 설명 합니다. 다루는 주제는 다음과 같습니다.
 
 - [속성 추가 마법사를 사용 하 여 스톡 속성을 추가 하려면](#_core_using_classwizard_to_add_a_stock_property)
 
@@ -75,15 +75,15 @@ ms.locfileid: "50607833"
 
 |속성|디스패치 맵 항목|값에 액세스 하는 방법|
 |--------------|------------------------|-------------------------|
-|`Appearance`|DISP_STOCKPROP_APPEARANCE)|값 만큼 액세스 가능 `m_sAppearance`합니다.|
-|`BackColor`|DISP_STOCKPROP_BACKCOLOR)|호출 하 여 액세스할 수 있는 값 `GetBackColor`합니다.|
-|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE)|값 만큼 액세스 가능 `m_sBorderStyle`합니다.|
-|`Caption`|DISP_STOCKPROP_CAPTION)|호출 하 여 액세스할 수 있는 값 `InternalGetText`합니다.|
-|`Enabled`|DISP_STOCKPROP_ENABLED)|값 만큼 액세스 가능 `m_bEnabled`합니다.|
-|`Font`|DISP_STOCKPROP_FONT)|문서를 참조 하세요 [MFC ActiveX 컨트롤: 글꼴 사용](../mfc/mfc-activex-controls-using-fonts.md) 사용량에 대 한 합니다.|
-|`ForeColor`|DISP_STOCKPROP_FORECOLOR)|호출 하 여 액세스할 수 있는 값 `GetForeColor`합니다.|
-|`hWnd`|DISP_STOCKPROP_HWND)|값 만큼 액세스 가능 `m_hWnd`합니다.|
-|`Text`|DISP_STOCKPROP_TEXT)|호출 하 여 액세스할 수 있는 값 `InternalGetText`합니다. 이 속성은 동일 `Caption`에 속성 이름을 제외 하 고 있습니다.|
+|`Appearance`|DISP_STOCKPROP_APPEARANCE( )|값 만큼 액세스 가능 `m_sAppearance`합니다.|
+|`BackColor`|DISP_STOCKPROP_BACKCOLOR( )|호출 하 여 액세스할 수 있는 값 `GetBackColor`합니다.|
+|`BorderStyle`|DISP_STOCKPROP_BORDERSTYLE( )|값 만큼 액세스 가능 `m_sBorderStyle`합니다.|
+|`Caption`|DISP_STOCKPROP_CAPTION( )|호출 하 여 액세스할 수 있는 값 `InternalGetText`합니다.|
+|`Enabled`|DISP_STOCKPROP_ENABLED( )|값 만큼 액세스 가능 `m_bEnabled`합니다.|
+|`Font`|DISP_STOCKPROP_FONT( )|문서를 참조 [MFC ActiveX 컨트롤: 글꼴을 사용 하 여](../mfc/mfc-activex-controls-using-fonts.md) 사용량에 대 한 합니다.|
+|`ForeColor`|DISP_STOCKPROP_FORECOLOR( )|호출 하 여 액세스할 수 있는 값 `GetForeColor`합니다.|
+|`hWnd`|DISP_STOCKPROP_HWND( )|값 만큼 액세스 가능 `m_hWnd`합니다.|
+|`Text`|DISP_STOCKPROP_TEXT( )|호출 하 여 액세스할 수 있는 값 `InternalGetText`합니다. 이 속성은 동일 `Caption`에 속성 이름을 제외 하 고 있습니다.|
 |`ReadyState`|DISP_STOCKPROP_READYSTATE()|값 만큼 액세스 가능 `m_lReadyState` 또는 `GetReadyState`|
 
 ##  <a name="_core_stock_properties_and_notification"></a> 스톡 속성 및 알림
@@ -100,7 +100,7 @@ ms.locfileid: "50607833"
 
 [!code-cpp[NVC_MFC_AxUI#24](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-properties_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)<br/>

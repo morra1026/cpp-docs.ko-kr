@@ -6,12 +6,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC]
 ms.assetid: b678a53c-0d9e-476f-8aa0-23b80baaba46
-ms.openlocfilehash: 3b8d9f32246270a570b09f599f8b05f2a58ecfc6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e01854e7ae7acdc33275351d0d26a76dfeabc9b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648463"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326415"
 ---
 # <a name="mfc-activex-controls-properties"></a>MFC ActiveX 컨트롤: 속성
 
@@ -19,9 +19,9 @@ ActiveX 컨트롤을 해당 컨트롤 컨테이너와 통신 하는 이벤트를
 
 속성은 특성이 라고도 합니다.
 
-ActiveX 컨트롤 메서드에 대 한 자세한 내용은 문서 참조 [MFC ActiveX 컨트롤: 메서드](../mfc/mfc-activex-controls-methods.md)합니다.
+ActiveX 컨트롤 메서드에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 메서드](../mfc/mfc-activex-controls-methods.md)합니다.
 
-ActiveX 컨트롤에는 재고와 사용자 지정 메서드 및 속성을 모두 구현할 수 있습니다. 클래스 `COleControl` 스톡 속성에 대 한 구현을 제공 합니다. (스톡 속성 목록을 전체 문서를 참조 하세요 [MFC ActiveX 컨트롤: 스톡 속성 추가](../mfc/mfc-activex-controls-adding-stock-properties.md).) 개발자가 정의한 사용자 지정 속성을 ActiveX 컨트롤에 특수화 된 기능을 추가 합니다. 자세한 내용은 [MFC ActiveX 컨트롤: 사용자 지정 속성 추가](../mfc/mfc-activex-controls-adding-custom-properties.md)합니다.
+ActiveX 컨트롤에는 재고와 사용자 지정 메서드 및 속성을 모두 구현할 수 있습니다. 클래스 `COleControl` 스톡 속성에 대 한 구현을 제공 합니다. (스톡 속성 목록을 전체 문서를 참조 하세요. [MFC ActiveX 컨트롤: 스톡 속성 추가](../mfc/mfc-activex-controls-adding-stock-properties.md).) 개발자가 정의한 사용자 지정 속성을 ActiveX 컨트롤에 특수화 된 기능을 추가 합니다. 자세한 내용은 참조 하세요. [MFC ActiveX 컨트롤: 사용자 지정 속성 추가](../mfc/mfc-activex-controls-adding-custom-properties.md)합니다.
 
 메서드와 마찬가지로 사용자 지정 및 스톡 속성, 속성 및 메서드와의 기존 멤버 함수를 처리 하는 디스패치 맵은 구성 된 메커니즘을 지는 `COleControl` 클래스입니다. 또한 이러한 속성에는 컨트롤에 추가 정보를 전달 하는 데 사용 하는 개발자는 매개 변수가 있을 수 있습니다.
 
@@ -35,7 +35,6 @@ ActiveX 컨트롤에는 재고와 사용자 지정 메서드 및 속성을 모�
 
 - [MFC ActiveX 컨트롤: 앰비언트 속성 액세스](../mfc/mfc-activex-controls-accessing-ambient-properties.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

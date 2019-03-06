@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CHttpConnection [MFC], CHttpConnection
 - CHttpConnection [MFC], OpenRequest
 ms.assetid: a402b662-c445-4988-800d-c8278551babe
-ms.openlocfilehash: 7d11420ca48bfcecbd2534123a36364314b9651c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f7a91454b9a8619cda155f33391e5d02ae7653b5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50611005"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273610"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection 클래스
 
@@ -51,7 +51,7 @@ HTTP 서버와 통신 하려면 먼저 만들어야의 인스턴스이고 [CInte
 
 하는 방법에 자세히 알아보려면 `CHttpConnection` 문서를 참조 하는 다른 인터넷 MFC 클래스와 함께 작동 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다. 다른 두 가지를 사용 하 여 서버에 연결 하는 방법에 대 한 자세한 내용은 인터넷 프로토콜, gopher 및 FTP 지원 클래스를 참조 하세요 [CGopherConnection](../../mfc/reference/cgopherconnection-class.md) 하 고 [CFtpConnection](../../mfc/reference/cftpconnection-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -165,7 +165,8 @@ CHttpFile* OpenRequest(
 문서의 주소 (URL)을 지정 하는 문자열에 대 한 포인터는 요청의 URL ( *pstrObjectName*) 가져온 합니다. NULL 인 경우 HTTP 헤더 없음이 지정 됩니다.
 
 *dwContext*<br/>
-`OpenRequest` 작업에 대한 컨텍스트 식별자입니다. 에 대 한 자세한 내용은 설명 섹션을 참조 하세요 *dwContext*합니다.
+
+  `OpenRequest` 작업에 대한 컨텍스트 식별자입니다. 에 대 한 자세한 내용은 설명 섹션을 참조 하세요 *dwContext*합니다.
 
 *ppstrAcceptTypes*<br/>
 클라이언트에서 받아들일 콘텐츠 형식을 나타내는 문자열에 대 한 LPCTSTR 포인터의 null로 끝나는 배열에 대 한 포인터입니다. 하는 경우 *ppstrAcceptTypes* 가 null 인 경우 서버는 클라이언트에만 문서 형식의 허용 해석 "텍스트 / *" (즉, 텍스트 문서만 및 없습니다 사진 또는 기타 이진 파일). 콘텐츠 형식 첨부 HTTP POST 및 PUT 등 첨부된 정보가 있는 쿼리에 대한 데이터의 형식을 식별하는 CGI 변수 CONTENT_TYPE과 같습니다.
@@ -179,7 +180,7 @@ INTERNET_ * FLAG_ 플래그의 조합입니다. 가능한 설명은 설명 섹�
 *nVerb*<br/>
 HTTP 요청 형식과 관련된 숫자입니다. 다음 중 하나일 수 있습니다.
 
-|HTTP 요청 형식|*nVerb* 값|
+|HTTP 요청 형식|*nVerb* value|
 |-----------------------|-------------------|
 |HTTP_VERB_POST|0|
 |HTTP_VERB_GET|1|
@@ -205,11 +206,12 @@ HTTP 요청 형식과 관련된 숫자입니다. 다음 중 하나일 수 있습
 |INTERNET_FLAG_SECURE|보안 트랜잭션 의미 체계를 사용합니다. SSL/PCT 사용으로 변환되며 HTTP 요청에서 의미를 갖습니다.|
 |INTERNET_FLAG_NO_AUTO_REDIRECT|HTTP만 사용는 리디렉션 해야 자동으로 처리를 지정 하 고, [chttpfile:: Sendrequest](../../mfc/reference/chttpfile-class.md#sendrequest)합니다.|
 
-`dwContext` 기본값을 재정의하여 컨텍스트 식별자를 설정한 값으로 설정합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CHttpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 하세요 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
+
+  `dwContext` 기본값을 재정의하여 컨텍스트 식별자를 설정한 값으로 설정합니다. 컨텍스트 식별자의이 특정 작업과 연결 되어는 `CHttpConnection` 개체에서 만든 해당 [CInternetSession](../../mfc/reference/cinternetsession-class.md) 개체입니다. 값이 반환 [cinternetsession:: Onstatuscallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) 식별 되는 작업의 상태를 제공 합니다. 문서를 참조 [인터넷 첫 번째 단계: WinInet](../../mfc/wininet-basics.md) 컨텍스트 식별자에 대 한 자세한 내용은 합니다.
 
 이 함수를 사용할 경우 예외가 throw될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CInternetConnection 클래스](../../mfc/reference/cinternetconnection-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

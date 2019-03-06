@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CTypedPtrList [MFC], RemoveTail
 - CTypedPtrList [MFC], SetAt
 ms.assetid: c273096e-1756-4340-864b-4a08b674a65e
-ms.openlocfilehash: 485550fbd4d3fc483303cd6ba73d74e29cc7a006
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 756ef5043468f614c6ab3ac64598d62b29b2dc41
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555882"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286025"
 ---
 # <a name="ctypedptrlist-class"></a>CTypedPtrList 클래스
 
@@ -49,7 +49,7 @@ class CTypedPtrList : public BASE_CLASS
 *BASE_CLASS*<br/>
 형식화 된 포인터 목록 클래스의 기본 클래스 에 대 한 포인터 목록 클래스 여야 합니다 ( `CObList` 또는 `CPtrList`).
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 목록에 저장 된 요소의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -79,7 +79,8 @@ class CTypedPtrList : public BASE_CLASS
 
 목록에서 파생 `CObList` 를 serialize 할 수 있지만 파생 된 `CPtrList` 수 없습니다.
 
-`CTypedPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
+
+  `CTypedPtrList` 개체를 삭제하거나 해당 요소를 제거할 경우 참조하는 엔터티가 아니라 포인터만 제거됩니다.
 
 사용 하 여 대 한 자세한 내용은 `CTypedPtrList`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md) 하 고 [템플릿 기반 클래스](../../mfc/template-based-classes.md)합니다.
 
@@ -91,7 +92,7 @@ class CTypedPtrList : public BASE_CLASS
 
 [!code-cpp[NVC_MFCCollections#111](../../mfc/codesnippet/cpp/ctypedptrlist-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `BASE_CLASS`
 
@@ -114,7 +115,7 @@ void AddHead(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 목록에 저장 된 요소의 형식입니다.
 
 *newElement*<br/>
@@ -145,7 +146,7 @@ void AddTail(CTypedPtrList<BASE_CLASS, TYPE>* pNewList);
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 목록에 저장 된 요소의 형식입니다.
 
 *newElement*<br/>
@@ -176,10 +177,10 @@ TYPE GetAt(POSITION position) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 목록에 저장 된 요소의 형식을 지정 합니다.
 
-*위치*<br/>
+*position*<br/>
 이전 반환한 위치 값 `GetHeadPosition` 또는 `Find` 멤버 함수 호출 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -207,7 +208,7 @@ TYPE GetHead() const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 목록에 저장 된 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -231,7 +232,7 @@ TYPE GetNext(POSITION& rPosition) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를이 목록에 포함 된 요소의 형식을 지정 합니다.
 
 *rPosition*<br/>
@@ -264,7 +265,7 @@ TYPE GetPrev(POSITION& rPosition) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를이 목록에 포함 된 요소의 형식을 지정 합니다.
 
 *rPosition*<br/>
@@ -295,7 +296,7 @@ TYPE GetTail() const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 목록에 저장 된 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -318,7 +319,7 @@ TYPE RemoveHead();
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 목록에 저장 된 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -339,7 +340,7 @@ TYPE RemoveTail();
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 목록에 저장 된 요소의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -363,7 +364,7 @@ void SetAt(POSITION pos, TYPE newElement);
 *pos*<br/>
 설정할 요소의 위치입니다.
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 목록에 저장 된 요소의 형식입니다.
 
 *newElement*<br/>
@@ -377,7 +378,7 @@ void SetAt(POSITION pos, TYPE newElement);
 
 설명, 자세한 [CObList::SetAt](../../mfc/reference/coblist-class.md#setat)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

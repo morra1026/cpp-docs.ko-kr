@@ -11,12 +11,12 @@ helpviewer_keywords:
 - subclassing ATL window classes
 - superclassing, ATL
 ms.assetid: 3fc40550-f1d6-4702-8b7c-4cf682b6a855
-ms.openlocfilehash: f9286598184cfb12c415de637fccc07011369fd5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b1528e331a1431decb3916a06e67f0095615c2d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501961"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295853"
 ---
 # <a name="implementing-a-window-with-cwindowimpl"></a>CWindowImpl 사용 하 여 창 구현
 
@@ -66,7 +66,6 @@ DECLARE_WND_SUPERCLASS를 사용 하는 경우 새 Windows 클래스 등록 됩�
 
 호출 하는 대신 `Create`, 호출 `SubclassWindow` 서브 클래스를 기존 창에 핸들을 전달 합니다. 창을 서브클래싱 되 면 사용할 `CWindowImpl::WindowProc` (또는이 메서드를 재정의 하는 함수)을 메시지 맵에 메시지를 보내기 위해. 개체에서 서브클래싱된 창을 분리 하려면 호출 `UnsubclassWindow`합니다. 창의 원본 창 프로시저는 다음 복원 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 구현](../atl/implementing-a-window.md)
-

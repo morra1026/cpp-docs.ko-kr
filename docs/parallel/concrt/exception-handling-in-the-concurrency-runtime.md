@@ -8,12 +8,12 @@ helpviewer_keywords:
 - agents, exception handling [Concurrency Runtime]
 - task groups, exception handling [Concurrency Runtime]
 ms.assetid: 4d1494fb-3089-4f4b-8cfb-712aa67d7a7a
-ms.openlocfilehash: 7611e9d3f0bbf961784c9fed23117750a101486f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8239913c369605503134a9ea4c99789528911868
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437871"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272635"
 ---
 # <a name="exception-handling-in-the-concurrency-runtime"></a>동시성 런타임에서 예외 처리
 
@@ -102,7 +102,7 @@ ms.locfileid: "50437871"
 X = 15, Y = 30Caught exception: point is NULL.
 ```
 
-작업 그룹의 예외 처리를 사용 하는 전체 예제를 참조 하세요 [방법: 병렬 루프에서 중단을 사용 하 여 예외 처리](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)합니다.
+작업 그룹의 예외 처리를 사용 하는 전체 예제를 참조 하세요. [방법: 병렬 루프에서 중단을 처리 하는 예외를 사용 하 여](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md)입니다.
 
 [[맨 위로 이동](#top)]
 
@@ -185,7 +185,7 @@ the status of the agent is: done
 
 [[맨 위로 이동](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)<br/>
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -193,4 +193,3 @@ the status of the agent is: done
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)
-

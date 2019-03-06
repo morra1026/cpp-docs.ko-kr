@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CMap [MFC], RemoveKey
 - CMap [MFC], SetAt
 ms.assetid: 640a45ab-0993-4def-97ec-42cc78eb10b9
-ms.openlocfilehash: 88ca218d4cb4e70dcc46ba04bbdfb7a9d12eb808
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 81b52d6876b0691c09db0e9dcf7fa7d491f999ca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657580"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305174"
 ---
 # <a name="cmap-class"></a>CMap 클래스
 
@@ -63,7 +63,7 @@ template<class KEY, class ARG_KEY, class VALUE, class ARG_VALUE>class CMap : pub
 *ARG_KEY*<br/>
 에 사용 되는 데이터 형식 *키* 인수에 대 한 참조, 대개 *키*합니다.
 
-*값*<br/>
+*VALUE*<br/>
 Map에 저장 된 개체의 클래스입니다.
 
 *ARG_VALUE*<br/>
@@ -124,7 +124,7 @@ Map에는 키-값 쌍 (요소)가 삽입 되 면 효율적으로 검색 하거�
 
 Map 클래스를 파생 목록 파생 하는 것과 비슷합니다. 문서를 참조 하세요 [컬렉션](../../mfc/collections.md) 예시의 특수 한 용도의 목록 클래스를 파생 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -229,7 +229,7 @@ void GetNextAssoc(
 *rKey*<br/>
 검색 된 요소는 반환 된 키를 지정합니다.
 
-*값*<br/>
+*VALUE*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 *rValue*<br/>
@@ -341,7 +341,7 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
 *key*<br/>
 조회 요소를 식별 하는 키를 지정 합니다.
 
-*값*<br/>
+*VALUE*<br/>
 조회할 수 값의 형식을 지정 합니다.
 
 *rValue*<br/>
@@ -359,7 +359,7 @@ BOOL Lookup(ARG_KEY key, VALUE& rValue) const;
 
 [!code-cpp[NVC_MFCCollections#58](../../mfc/codesnippet/cpp/cmap-class_3.cpp)]
 
-##  <a name="operator_at"></a>  CMap::operator]
+##  <a name="operator_at"></a>  CMap::operator [ ]
 
 대체 하는 편리한는 `SetAt` 멤버 함수입니다.
 
@@ -369,7 +369,7 @@ VALUE& operator[](arg_key key);
 
 ### <a name="parameters"></a>매개 변수
 
-*값*<br/>
+*VALUE*<br/>
 템플릿 매개 변수를 지도 값의 형식을 지정 합니다.
 
 *ARG_KEY*<br/>
@@ -536,7 +536,7 @@ void SetAt(ARG_KEY key, ARG_VALUE newValue);
 
 [!code-cpp[NVC_MFCCollections#62](../../mfc/codesnippet/cpp/cmap-class_7.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>

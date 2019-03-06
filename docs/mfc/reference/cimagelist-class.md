@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CImageList [MFC], Write
 - CImageList [MFC], m_hImageList
 ms.assetid: b6d1a704-1c82-4548-8a8f-77972adc98a5
-ms.openlocfilehash: 5bcf815fce4123ca1014e1679fd810c1ce321be4
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 2fc92858f84826e2b953fcbc9de020741e97b007
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178592"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416009"
 ---
 # <a name="cimagelist-class"></a>CImageList 클래스
 
@@ -156,7 +156,7 @@ class CImageList : public CObject
 
 사용 하 여 대 한 자세한 내용은 `CImageList`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CImageList를 사용 하 여](../../mfc/using-cimagelist.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -691,13 +691,13 @@ BOOL DrawIndirect(
 그릴 이미지의 0부터 시작 하는 인덱스입니다.
 
 *pt*<br/>
-A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 의 x 좌표와 y-이미지를 그릴 위치를 포함 하는 구조체.
+A [지점](/previous-versions/dd162805\(v=vs.85\)) 의 x 좌표와 y-이미지를 그릴 위치를 포함 하는 구조체.
 
 *sz*<br/>
 A [크기](/windows/desktop/api/windef/ns-windef-tagsize) 그릴 이미지의 크기를 나타내는 구조입니다.
 
 *ptOrigin*<br/>
-A [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 포함 된 x 및 y 좌표 이미지 자체와 관련 하 여 그리기 작업의 왼쪽된 위 모퉁이 지정 하는 구조입니다. 이미지의 픽셀에 대 한 x-좌표 이상에 대 한 y-좌표는 왼쪽에 그려집니다.
+A [지점](/previous-versions/dd162805\(v=vs.85\)) 포함 된 x 및 y 좌표 이미지 자체와 관련 하 여 그리기 작업의 왼쪽된 위 모퉁이 지정 하는 구조입니다. 이미지의 픽셀에 대 한 x-좌표 이상에 대 한 y-좌표는 왼쪽에 그려집니다.
 
 *fStyle*<br/>
 그리기 스타일을 필요에 따라 오버레이 이미지를 지정 하는 플래그입니다. 오버레이 이미지에 자세한 내용은 설명 섹션을 참조 합니다. MFC 기본 구현에서는 ILD_NORMAL, 이미지 목록에 대 한 배경색을 사용 하 여 이미지를 그립니다. 배경색 CLR_NONE 값 이면 이미지 투명 하 게 사용 되는 마스크를 사용 하 여 그려집니다.
@@ -874,7 +874,7 @@ static CImageList* PASCAL GetDragImage(
 ### <a name="parameters"></a>매개 변수
 
 *lpPoint*<br/>
-주소를 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 끌어 위치를 현재 수신 하는 구조입니다.
+주소를 [지점](/previous-versions/dd162805\(v=vs.85\)) 끌어 위치를 현재 수신 하는 구조입니다.
 
 *lpPointHotSpot*<br/>
 주소는 `POINT` 구조체 끌어서 위치를 기준으로 끌어 이미지의 오프셋입니다.
@@ -1097,7 +1097,7 @@ BOOL SetDragCursorImage(
 
 ### <a name="parameters"></a>매개 변수
 
-*끌어 그리드*<br/>
+*nDrag*<br/>
 끌기 이미지와 함께 사용할 새 이미지의 인덱스입니다.
 
 *ptHotSpot*<br/>
@@ -1191,7 +1191,7 @@ BOOL Write(CArchive* pArchive);
 
 [!code-cpp[NVC_MFC_CImageList#17](../../mfc/reference/codesnippet/cpp/cimagelist-class_23.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

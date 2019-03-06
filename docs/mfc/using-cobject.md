@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MFC, base class
 - CObject class [MFC]
 ms.assetid: d0cd19bb-2856-4b41-abbc-620fd64cb223
-ms.openlocfilehash: 443a381c33458e61ba49eb10724d31614831f422
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15b5bebb8e75d24b769cd29971d08b3fbf92fcf8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564829"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302132"
 ---
 # <a name="using-cobject"></a>CObject 사용
 
@@ -39,11 +39,10 @@ ms.locfileid: "50564829"
 
 - 목록을 보려면 [Frequently Asked Questions CObject](../mfc/cobject-class-frequently-asked-questions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../mfc/mfc-concepts.md)<br/>
 [일반 MFC 항목](../mfc/general-mfc-topics.md)<br/>
 [CRuntimeClass 구조체](../mfc/reference/cruntimeclass-structure.md)<br/>
 [파일](../mfc/files-in-mfc.md)<br/>
 [serialization](../mfc/serialization-in-mfc.md)
-

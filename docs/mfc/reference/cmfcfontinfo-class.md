@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CMFCFontInfo [MFC], m_strName
 - CMFCFontInfo [MFC], m_strScript
 ms.assetid: f88329b2-d74e-4921-9441-a3bb6536a049
-ms.openlocfilehash: 606d70176e93de6f5526c30f182cee6f8c05499f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2377b7f6afdf78a0e8b7c8ac97a36a4920c06bb8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522371"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281189"
 ---
 # <a name="cmfcfontinfo-class"></a>CMFCFontInfo 클래스
 
@@ -102,7 +102,7 @@ CMFCFontInfo(const CMFCFontInfo& src);
 *nPitchAndFamily*<br/>
 [in] 피치 및 글꼴의 제품군을 지정 하는 값입니다. 자세한 내용은 참조 하세요. 합니다 `lfPitchAndFamily` 의 멤버는 [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) 구조입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 [in] 글꼴 종류를 지정 하는 값입니다. 이 매개 변수는 DEVICE_FONTTYPE, RASTER_FONTTYPE, TRUETYPE_FONTTYPE의 비트 조합 (OR) 수 있습니다.
 
 *src*<br/>
@@ -190,7 +190,7 @@ const CString m_strScript;
 
 자세한 내용은 참조는 *lpszScript* 의 매개 변수를 [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) 생성자입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

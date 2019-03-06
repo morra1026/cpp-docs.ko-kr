@@ -14,12 +14,12 @@ helpviewer_keywords:
 - set include directories
 - include directories, compiler option [C++]
 ms.assetid: 3e9add2a-5ed8-4d15-ad79-5b411e313a49
-ms.openlocfilehash: 0dc1769924880d8cb1b5dc173dd614e87584cac9
-ms.sourcegitcommit: 45835842604602a011813d0cd70abc5df91b89ed
+ms.openlocfilehash: 72f871b99602c63e3edaea719faf5de6d4451515
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50750394"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412850"
 ---
 # <a name="i-additional-include-directories"></a>/I (추가 포함 디렉터리)
 
@@ -27,11 +27,11 @@ ms.locfileid: "50750394"
 
 ## <a name="syntax"></a>구문
 
-> **/I***디렉터리*
+> **/I**[ ]*directory*
 
 ### <a name="arguments"></a>인수
 
-*디렉터리*<br/>
+*directory*<br/>
 디렉터리 목록에 추가할 디렉터리는 include 파일 검색 합니다.
 
 ## <a name="remarks"></a>설명
@@ -62,13 +62,13 @@ ms.locfileid: "50750394"
 
 ## <a name="example"></a>예제
 
-명령을 다음 순서 대로 MAIN.c 요청한 포함 파일을 찾습니다: 첫째, 큰따옴표를 사용 하 여 지정 하는 경우 로컬 파일을 검색 합니다. 다음으로, 검색 \INCLUDE 디렉터리에서 다음 \MY\INCLUDE 디렉터리에서 계속 되며 마지막 디렉터리에서 INCLUDE 환경 변수에 할당 됩니다.
+다음 명령은 다음과 같은 순서로 MAIN.c 요청한 포함 파일을 찾습니다. 첫째, 큰따옴표를 사용 하 여 지정 된, 로컬 파일 검색 됩니다. 다음으로, 검색 \INCLUDE 디렉터리에서 다음 \MY\INCLUDE 디렉터리에서 계속 되며 마지막 디렉터리에서 INCLUDE 환경 변수에 할당 됩니다.
 
 ```
 CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

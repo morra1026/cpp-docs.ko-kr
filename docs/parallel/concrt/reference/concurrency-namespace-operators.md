@@ -5,12 +5,12 @@ f1_keywords:
 - concrt/concurrency::operator!=
 - concrt/concurrency:[operator&amp;&amp
 ms.assetid: 8e373f23-fc8e-49f7-82e6-ba0c57b822f8
-ms.openlocfilehash: 5982ae0ec3baff38b43b0ce504a47d512559390d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: d790833e7dcecb5776d2adecd5e6bc1f681db1cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521611"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258803"
 ---
 # <a name="concurrency-namespace-operators"></a>concurrency 네임 스페이스 연산자
 
@@ -341,6 +341,6 @@ inline bool operator>= (
 
 이 메서드는 동시 벡터를 수정할 수 있는 다른 방법에 대해 동시성 으로부터 안전한 아닙니다 `_A` 또는 `_B`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

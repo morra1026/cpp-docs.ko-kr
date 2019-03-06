@@ -1,22 +1,22 @@
 ---
-title: '방법: 특정 Scheduler 정책 지정'
+title: '방법: 특정 스케줄러 정책 지정'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - specifying scheduler policies [Concurrency Runtime]
 - scheduler policies, specifying [Concurrency Runtime]
 ms.assetid: 9c5149f9-ac34-4ff3-9e79-0bad103e4e6b
-ms.openlocfilehash: 1334b8dcf8b6615120d4be8db8530af60df9d668
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3c03ef6661ebefe0bfe9fab62938ce9987a4bca1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50520031"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277861"
 ---
-# <a name="how-to-specify-specific-scheduler-policies"></a>방법: 특정 Scheduler 정책 지정
+# <a name="how-to-specify-specific-scheduler-policies"></a>방법: 특정 스케줄러 정책 지정
 
 스케줄러 정책을 스케줄러가 작업을 관리할 때 사용 하는 전략을 제어할 수 있습니다. 이 항목에서는 콘솔에 진행률 표시기를 출력 하는 작업의 스레드 우선 순위를 높이기 위해 스케줄러 정책을 사용 하는 방법을 보여 줍니다.
 
-비동기 에이전트와 함께 사용자 지정 스케줄러 정책을 사용 하는 예제를 보려면 [방법: 에이전트를 사용 하 여 특정 스케줄러 정책을 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)합니다.
+비동기 에이전트와 함께 사용자 지정 스케줄러 정책을 사용 하는 예제를 보려면 [방법: 특정 스케줄러 정책을 사용 하는 에이전트 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -45,13 +45,12 @@ Scheduler that has a custom policy:
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `scheduler-policy.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `scheduler-policy.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc 스케줄러-policy.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [스케줄러 정책](../../parallel/concrt/scheduler-policies.md)<br/>
 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [방법: 특정 스케줄러 정책을 사용하는 에이전트 만들기](../../parallel/concrt/how-to-create-agents-that-use-specific-scheduler-policies.md)
-

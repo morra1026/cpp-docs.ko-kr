@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CDBVariant [MFC], m_pstringA
 - CDBVariant [MFC], m_pstringW
 ms.assetid: de23609c-c560-4b24-bd6b-9d8903fd5b49
-ms.openlocfilehash: 2a600aa893ae86abebb4146eda4864e69da3c35c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41ea20bcddc53142773d474af41021e9c71af1aa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485308"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289861"
 ---
 # <a name="cdbvariant-class"></a>CDBVariant 클래스
 
@@ -69,7 +69,7 @@ class CDBVariant
 
 |이름|설명|
 |----------|-----------------|
-|[CDBVariant::m_dwType](#m_dwtype)|현재 저장 된 값의 데이터 형식을 포함합니다. `DWORD`를 입력합니다.|
+|[CDBVariant::m_dwType](#m_dwtype)|현재 저장 된 값의 데이터 형식을 포함합니다. `DWORD`을 입력합니다.|
 
 ### <a name="public-union-members"></a>공용 공용 구조체 멤버
 
@@ -95,7 +95,7 @@ class CDBVariant
 
 클래스 [CRecordset](../../mfc/reference/crecordset-class.md) 활용 `CDBVariant` 의 세 멤버 함수가 개체: `GetFieldValue`를 `GetBookmark`, 및 `SetBookmark`합니다. 예를 들어 `GetFieldValue` 동적으로 열에 데이터를 가져올 수 있습니다. 열의 데이터 형식을 런타임에 확인할 수 없는 때문 `GetFieldValue` 사용을 `CDBVariant` 열의 데이터를 저장 하는 개체입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CDBVariant`
 
@@ -242,7 +242,7 @@ ASCII에 대 한 포인터를 저장 [CString](../../atl-mfc-shared/reference/cs
 
 `m_pstringW` 데이터 멤버는 공용 구조체에 속합니다. 에 액세스 하기 전에 `m_pstringW`, 먼저 값을 확인 [CDBVariant::m_dwType](#m_dwtype)합니다. 하는 경우 `m_dwType` 다음 DBVT_WSTRING로 `m_pstringW` 대 한 유효한 포인터를 포함에 액세스 하 고, 그렇지 않으면 `m_pstringW` 신뢰할 수 없는 결과가 생성 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)

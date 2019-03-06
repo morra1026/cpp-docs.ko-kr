@@ -1,18 +1,18 @@
 ---
-title: '연습: MFC를 사용하여 리본 응용 프로그램 만들기'
+title: '연습: MFC를 사용 하 여 리본 응용 프로그램 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ribbon application, creating (MFC)
 - creating a ribbon aplication (MFC)
 ms.assetid: e61393e2-1d6b-4594-a7ce-157d3d1b0d9f
-ms.openlocfilehash: 16413b6027a36ec550ae2bf3e04604b32a8454c9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a74e8863c32199d1c0309f70bceae867993ce721
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557500"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271335"
 ---
-# <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용하여 리본 응용 프로그램 만들기
+# <a name="walkthrough-creating-a-ribbon-application-by-using-mfc"></a>연습: MFC를 사용 하 여 리본 응용 프로그램 만들기
 
 이 연습에서는 사용 하는 **MFC 응용 프로그램 마법사** 기본적으로 리본 메뉴가 있는 응용 프로그램을 만들려면. 추가 하 여 리본 메뉴를 확장 한 다음 수를 **사용자 지정** 된 리본 범주를 **즐겨찾기** 리본 패널 및 자주 사용 되는 일부 패널에 명령을 추가 합니다.
 
@@ -89,7 +89,7 @@ ms.locfileid: "50557500"
 
 종단 간 샘플을 보려면 [샘플 (MFC 기능 팩)](../visual-cpp-samples.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [연습](../mfc/walkthroughs-mfc.md)<br/>
 [샘플 (MFC 기능 팩)](../visual-cpp-samples.md)

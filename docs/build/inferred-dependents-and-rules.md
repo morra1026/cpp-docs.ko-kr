@@ -7,12 +7,12 @@ helpviewer_keywords:
 - inferred rules in NMAKE
 - dependents, inferred
 ms.assetid: 9381e74a-53d9-445c-836d-0ff7ef6112d9
-ms.openlocfilehash: 6d2f439a0e936b06012045c62d55b6ad76e5817d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 125d64c47fb8ac9cd86269bedf246a131eda57e7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548904"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414843"
 ---
 # <a name="inferred-dependents-and-rules"></a>유추된 종속 파일과 규칙
 
@@ -28,6 +28,6 @@ NMAKE 유추 해당 규칙이 있는 경우 대상에 대해 유추 된 종속�
 
 유추 된 종속 예기치 않은 부작용을 일으킬 수 있습니다. NMAKE의 대상의 설명 블록 명령이 포함 된 경우 규칙에 명령 대신 명령을 실행 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유추 규칙](../build/inference-rules.md)

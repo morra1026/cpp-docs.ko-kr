@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Internet applications [MFC], ActiveX controls
 - networks [MFC], downloading with ActiveX controls
 ms.assetid: 7ab943c8-2022-41df-9065-d629b616eeec
-ms.openlocfilehash: 7becf4d4f579fa4b9b954935f55a06b2fed78593
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c019c922a5690d4ead861c40bed3c0c1c76cea28
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603712"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283009"
 ---
 # <a name="activex-controls-on-the-internet"></a>인터넷의 ActiveX 컨트롤
 
@@ -127,7 +127,8 @@ ActiveX 컨트롤 인터넷에 제한 되지 않습니다. ActiveX 컨트롤 데
 
    [!code-cpp[NVC_MFCActiveXControl#3](../mfc/codesnippet/cpp/activex-controls-on-the-internet_3.h)]
 
-1. `Get/Set` 메서드를 구현합니다. 에 대 한 `Get`, 문자열을 반환 합니다. 에 대 한 `Set`, 속성 및 호출 로드 `SetModifiedFlag`합니다.
+1. 
+  `Get/Set` 메서드를 구현합니다. 에 대 한 `Get`, 문자열을 반환 합니다. 에 대 한 `Set`, 속성 및 호출 로드 `SetModifiedFlag`합니다.
 
    [!code-cpp[NVC_MFCActiveXControl#4](../mfc/codesnippet/cpp/activex-controls-on-the-internet_4.cpp)]
 
@@ -183,7 +184,7 @@ Object 태그 및 웹 페이지에 컨트롤을 삽입 하는 것에 대 한 특
 
 ## <a name="updating-an-existing-ole-control-to-use-new-activex-control-features"></a>ActiveX 컨트롤의 새로운 기능을 사용 하 여 기존 OLE 컨트롤을 업데이트 합니다.
 
-OLE 컨트롤 4.2 이전 버전의 Visual c + +를 사용 하 여 생성 된 경우에 성능 향상을 위한 기능을 향상을 수행할 수 있는 단계가 있습니다. 이러한 변경 내용의 자세한 내용은 참조 하세요 [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
+OLE 컨트롤 4.2 이전 버전의 Visual c + +를 사용 하 여 생성 된 경우에 성능 향상을 위한 기능을 향상을 수행할 수 있는 단계가 있습니다. 이러한 변경 내용의 자세한 내용은 참조 하세요. [ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)합니다.
 
 준비 상태 속성을 추가 해야 기존 컨트롤에 비동기 속성 지원을 추가 하는 경우 및 `ReadyStateChange` 이벤트 직접. 컨트롤에 대 한 생성자에서 다음을 추가 합니다.
 
@@ -191,8 +192,7 @@ OLE 컨트롤 4.2 이전 버전의 Visual c + +를 사용 하 여 생성 된 경
 
 코드를 호출 하 여 다운로드는 준비 상태가 업데이트 됩니다 [COleControl::InternalSetReadyState](../mfc/reference/colecontrol-class.md#internalsetreadystate)합니다. 곳에 호출할 수 있습니다 `InternalSetReadyState` 에서는 `OnProgress` 재정의 `CDataPathProperty`-클래스를 파생 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)<br/>
 [MFC 인터넷 프로그래밍 기본 사항](../mfc/mfc-internet-programming-basics.md)
-

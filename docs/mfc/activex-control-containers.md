@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ActiveX control containers [MFC]
 - OLE controls [MFC], containers
 ms.assetid: 0eb1a713-e607-4c79-a0c7-67c5f1fd5fab
-ms.openlocfilehash: 3356c5d94eaf4cef0b44c509144d0de4a5d42abf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8340acafc81447052fcb8d90df8997e81dc4117
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549115"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296503"
 ---
 # <a name="activex-control-containers"></a>ActiveX 컨트롤 컨테이너
 
@@ -39,19 +39,18 @@ ActiveX 컨트롤 컨테이너를 통해 컨트롤과 상호 작용 노출 [메�
 
 - [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤을 멤버 변수에 연결](../mfc/activex-control-containers-connecting-an-activex-control-to-a-member-variable.md)
 
-- [ActiveX 컨트롤 컨테이너: ActiveX에서 이벤트 처리 제어](../mfc/activex-control-containers-handling-events-from-an-activex-control.md)
+- [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤의 이벤트 처리](../mfc/activex-control-containers-handling-events-from-an-activex-control.md)
 
 - [ActiveX 컨트롤 컨테이너: 컨트롤 속성 보기 및 수정](../mfc/activex-control-containers-viewing-and-modifying-control-properties.md)
 
 - [ActiveX 컨트롤 컨테이너: ActiveX 컨트롤 컨테이너에서 ActiveX 컨트롤 프로그래밍](../mfc/programming-activex-controls-in-a-activex-control-container.md)
 
-- [ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤 사용](../mfc/activex-control-containers-using-controls-in-a-non-dialog-container.md)
+- [ActiveX 컨트롤 컨테이너: 대화 상자가 아닌 컨테이너에서 컨트롤을 사용 하 여](../mfc/activex-control-containers-using-controls-in-a-non-dialog-container.md)
 
 대화 상자에서 ActiveX 컨트롤을 사용 하는 방법에 대 한 자세한 내용은 참조는 [대화 상자 편집기](../windows/dialog-editor.md) 항목입니다.
 
 Visual c + + 및 MFC ActiveX 컨트롤 클래스를 사용 하 여 ActiveX 컨트롤 개발의 세부 정보를 설명 하는 문서 목록을 참조 하세요 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)합니다. 이러한 문서는 기능적 범주에 따라 그룹화되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

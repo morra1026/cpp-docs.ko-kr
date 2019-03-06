@@ -108,12 +108,12 @@ helpviewer_keywords:
 - CComboBox [MFC], SetTopIndex
 - CComboBox [MFC], ShowDropDown
 ms.assetid: 4e73b5df-0d2e-4658-9706-38133fb10513
-ms.openlocfilehash: e7472b808d8b5d743d884d9e3806df7ffe499836
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 847927a36bac8540dd95307ae3c0259d0adba12a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178781"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304472"
 ---
 # <a name="ccombobox-class"></a>CComboBox 클래스
 
@@ -147,7 +147,7 @@ class CComboBox : public CWnd
 |[CComboBox::DeleteString](#deletestring)|콤보 상자의 목록 상자에서 문자열을 삭제합니다.|
 |[CComboBox::Dir](#dir)|콤보 상자의 목록 상자에 파일 이름 목록을 추가합니다.|
 |[CComboBox::DrawItem](#drawitem)|소유자가 그린 콤보 상자 변경 시각적 측면이 때 프레임 워크에서 호출 됩니다.|
-|[Ccombobox:: Findstring](#findstring)|콤보 상자의 목록 상자에서 지정된 된 접두사를 포함 하는 첫 번째 문자열을 찾습니다.|
+|[CComboBox::FindString](#findstring)|콤보 상자의 목록 상자에서 지정된 된 접두사를 포함 하는 첫 번째 문자열을 찾습니다.|
 |[CComboBox::FindStringExact](#findstringexact)|지정 된 문자열과 일치 하는 콤보 상자) (에서 첫 번째 목록 상자 문자열을 찾습니다.|
 |[CComboBox::GetComboBoxInfo](#getcomboboxinfo)|에 대 한 정보를 검색 합니다 `CComboBox` 개체입니다.|
 |[CComboBox::GetCount](#getcount)|콤보 상자의 목록 상자에서 항목을 검색합니다.|
@@ -208,13 +208,13 @@ class CComboBox : public CWnd
 
 각 메시지 맵 항목은 다음 형식을 사용 합니다.
 
-**ON\_**_알림_ **(** _id_하십시오 _memberFxn_ **)**
+**ON\_**_Notification_ **(** _id_, _memberFxn_ **)**
 
 여기서 `id` 알림을 전송 하는 콤보 상자 컨트롤의 자식 창 ID를 지정 하 고 `memberFxn` 알림을 처리 하는 것이 기록한 부모 멤버 함수의 이름입니다.
 
 부모의 함수 프로토타입에 다음과 같습니다.
 
-**afx_msg** `void` `memberFxn` **();**
+**afx_msg** `void` `memberFxn` **( );**
 
 특정 알림을 받게 되는 순서를 예측할 수 없습니다. 특히 앞 이나 뒤 CBN_CLOSEUP 알림을 CBN_SELCHANGE 알림이 발생할 수 있습니다.
 
@@ -248,7 +248,7 @@ class CComboBox : public CWnd
 
 **참고** WM_KEYDOWN과 WM_CHAR 메시지를 처리 하려는 경우 하위 클래스입니다 콤보 상자의 편집 하 고 목록 상자 컨트롤에서 클래스를 파생할 `CEdit` 및 `CListBox`, 파생된 클래스에 해당 메시지에 대 한 처리기를 추가 합니다. 자세한 내용은 [CWnd::SubclassWindow](../../mfc/reference/cwnd-class.md#subclasswindow)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -262,7 +262,7 @@ class CComboBox : public CWnd
 
 **헤더:** afxwin.h
 
-##  <a name="addstring"></a>  Ccombobox:: Addstring
+##  <a name="addstring"></a>  CComboBox::AddString
 
 콤보 상자의 목록 상자에 문자열을 추가 합니다.
 
@@ -554,7 +554,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 
 [!code-cpp[NVC_MFC_CComboBox#11](../../mfc/reference/codesnippet/cpp/ccombobox-class_11.cpp)]
 
-##  <a name="findstring"></a>  Ccombobox:: Findstring
+##  <a name="findstring"></a>  CComboBox::FindString
 
 을 찾았지만 선택 하지 않을 콤보 상자의 목록 상자에서 지정된 된 접두사를 포함 하는 첫 번째 문자열입니다.
 
@@ -645,7 +645,7 @@ int GetCount() const;
 
 ### <a name="return-value"></a>반환 값
 
-항목 수입니다. 반환 된 수 (인덱스는 0부터 시작) 마지막 항목의 인덱스 값을 보다 하나 더 큰 경우 오류가 발생 하는 경우 CB_ERR입니다.
+항목의 수입니다. 반환 된 수 (인덱스는 0부터 시작) 마지막 항목의 인덱스 값을 보다 하나 더 큰 경우 오류가 발생 하는 경우 CB_ERR입니다.
 
 ### <a name="example"></a>예제
 
@@ -911,7 +911,7 @@ void GetLBText(
 문자열을 수신 하는 버퍼를 가리킵니다. 버퍼에 문자열 및 null 종결 문자에 대 한 충분 한 공간이 있어야 합니다.
 
 *rString*<br/>
-`CString`에 대한 참조입니다.
+에 대 한 참조를 `CString`입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1227,7 +1227,7 @@ int SetCurSel(int nSelect);
 
 ### <a name="parameters"></a>매개 변수
 
-*선택*<br/>
+*nSelect*<br/>
 선택 된 문자열의 0부터 시작 인덱스를 지정 합니다. -1 이면 목록 상자에서 현재 선택한 제거 되 고 편집 컨트롤의 선택이 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1555,14 +1555,14 @@ void ShowDropDown(BOOL bShowIt = TRUE);
 
   예를 참조 하세요 [CComboBox::GetDroppedState](#getdroppedstate)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CTRLBARS](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [CButton 클래스](../../mfc/reference/cbutton-class.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CListBox 클래스](../../mfc/reference/clistbox-class.md)<br/>
 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md)<br/>
 [CStatic 클래스](../../mfc/reference/cstatic-class.md)<br/>

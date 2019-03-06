@@ -5,12 +5,12 @@ helpviewer_keywords:
 - resource-only DLLs [C++], creating
 - DLLs [C++], creating
 ms.assetid: e6b1d4da-7275-467f-a58c-a0a8a5835199
-ms.openlocfilehash: 9a31d4197e71fb6cf20a0ecfce778552357d7e06
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2854c9ca993e9f1f27cab60cdd09e28ce2985f1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50612916"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412651"
 ---
 # <a name="creating-a-resource-only-dll"></a>리소스 전용 DLL 만들기
 
@@ -46,7 +46,7 @@ ms.locfileid: "50612916"
 
 응용 프로그램을 호출 해야 `FreeLibrary` 완료 되 면 리소스를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리소스 파일 작업](../windows/working-with-resource-files.md)<br/>
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

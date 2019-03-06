@@ -106,17 +106,17 @@ helpviewer_keywords:
 - CPaneContainerManager [MFC], SetResizeMode
 - CPaneContainerManager [MFC], StoreRecentDockSiteInfo
 ms.assetid: 3d974c15-a62f-4648-bb5b-cc31ab7950af
-ms.openlocfilehash: 598ad7fd3573928d1915d01d889910c13d9cb00c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7e0c55981b895540d490e2e38f43eb68abf48e32
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530015"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294657"
 ---
 # <a name="cpanecontainermanager-class"></a>CPaneContainerManager 클래스
 
 `CPaneContainerManager` 클래스는 저장 하 고 현재 도킹 레이아웃의 표시를 관리 합니다.
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -193,7 +193,7 @@ class CPaneContainerManager : public CObject
 
 [!code-cpp[NVC_MFC_SetPaneSize#5](../../mfc/reference/codesnippet/cpp/cpanecontainermanager-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -235,7 +235,7 @@ virtual BOOL AddPaneContainerManager(
 [in] *bOuterEdge*<br/>
 [in] *pTargetControlBar*<br/>
 [in] *dwAlignment*<br/>
-[in] *복사*<br/>
+[in] *bCopy*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -361,7 +361,7 @@ virtual BOOL CheckForMiniFrameAndCaption(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *지점*<br/>
+[in] *point*<br/>
 [in] *ppTargetControlBar*<br/>
 
 ### <a name="return-value"></a>반환 값
@@ -529,7 +529,7 @@ virtual void GetMinSize(CSize& size);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *크기*<br/>
+[in] *size*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -715,7 +715,7 @@ virtual CDockablePane* PaneFromPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *지점*<br/>
+[in] *point*<br/>
 [in] *nSensitivity*<br/>
 [in] *bExactBar*<br/>
 [in] *bIsTabArea*<br/>
@@ -876,7 +876,7 @@ virtual void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

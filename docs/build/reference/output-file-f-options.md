@@ -8,12 +8,12 @@ helpviewer_keywords:
 - output files, compiler options [C++]
 - cl.exe compiler, output files
 ms.assetid: f6367f30-2710-4178-b43a-639eed824acb
-ms.openlocfilehash: e815eff674fbf56806b6c9fc33edd9df41aad3f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c1fcc7066c04b347f0d8106ac4bf2088e83de6bc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590257"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415516"
 ---
 # <a name="output-file-f-options"></a>출력 파일(/F) 옵션
 
@@ -33,7 +33,7 @@ ms.locfileid: "50590257"
 
 - [/Fo (개체 파일 이름)](../../build/reference/fo-object-file-name.md)
 
-- [/Fp (.pch 파일 이름)](../../build/reference/fp-name-dot-pch-file.md)
+- [/Fp (Name .pch File)](../../build/reference/fp-name-dot-pch-file.md)
 
 - [/FR, /Fr (.sbr 파일 만들기)](../../build/reference/fr-fr-create-dot-sbr-file.md)
 
@@ -41,7 +41,7 @@ ms.locfileid: "50590257"
 
 - [/Fx(삽입된 코드 병합)](../../build/reference/fx-merge-injected-code.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

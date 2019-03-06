@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CSliderCtrl class [MFC], using
 - slider controls [MFC], using
 ms.assetid: 242c7bcd-126e-4b9b-8f76-8082ad06fe73
-ms.openlocfilehash: 40e941afc6560447a22017712e24ef861e2ddc17
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f133d25ddab76f42b4bf7b133bb988def9f0f01a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50428551"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257685"
 ---
 # <a name="using-csliderctrl"></a>CSliderCtrl 사용
 
@@ -22,7 +22,7 @@ ms.locfileid: "50428551"
 
 슬라이더 컨트롤에 있는 슬라이더는 만들 때 지정 하는 단위로 이동 합니다. 예를 들어, 슬라이더 컨트롤 5 개 범위 있어야 함을 지정 하는 경우 슬라이더 수만 자리를 차지 6: 슬라이더 컨트롤을 범위에서 각 증가값에 대해 하나의 위치 왼쪽 위치입니다. 일반적으로 이러한 각 위치는 눈금으로 식별 됩니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [슬라이더 컨트롤 사용](../mfc/using-slider-controls.md)
 
@@ -32,7 +32,6 @@ ms.locfileid: "50428551"
 
 - [슬라이더 알림 메시지](../mfc/slider-notification-messages.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

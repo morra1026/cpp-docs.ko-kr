@@ -7,12 +7,12 @@ helpviewer_keywords:
 - enumerators, ATL classes
 - collection interfaces
 ms.assetid: b2d37119-3ab2-4e0a-b65b-f377f07e4098
-ms.openlocfilehash: 4949e8cff59a40b25c2015bf776d0844d29116a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 690fc023b72b2606efc190aceb7c266a35a4ebb4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50617286"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283050"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL 컬렉션 및 열거자
 
@@ -24,7 +24,7 @@ ms.locfileid: "50617286"
 
 와 같은 참조 하 여 열거자 인터페이스에 대 한 자세한 참조 콘텐츠에 대해 알아볼 수 있습니다 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 인터페이스입니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [ATL 컬렉션 및 열거자 클래스](../atl/atl-collection-and-enumerator-classes.md)<br/>
 간략하게 설명 하 고 컬렉션 및 열거자를 구현 하는 도움이 되는 ATL 클래스에 대 한 링크를 제공 합니다.
@@ -43,7 +43,6 @@ C + + 표준 라이브러리 기반 컬렉션의 구현을 통해 안내 하는 
 [ATLCollections 샘플](../visual-cpp-samples.md)<br/>
 샘플의 사용법을 보여 주는 `ICollectionOnSTLImpl` 및 `CComEnumOnSTL`, 및 사용자 지정 복사 정책 클래스의 구현입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

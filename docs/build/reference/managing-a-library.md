@@ -40,12 +40,12 @@ helpviewer_keywords:
 - LIST library manager option
 - /CONVERT library manager option
 ms.assetid: f56a8b85-fbdc-4c09-8d8e-00f0ffe1da53
-ms.openlocfilehash: 69cd03e029d014b9b74a8688f155dfb1f023b55c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb06fdf0298d627f289448930b490fb0660e381d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477066"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419615"
 ---
 # <a name="managing-a-library"></a>라이브러리 관리
 
@@ -66,16 +66,16 @@ LIB 기본적으로 첫 번째 개체 또는 라이브러리 파일 및 확장�
 **/LIBPATH:** *dir*<br/>
 환경 라이브러리 경로를 재정의합니다. 자세한 내용은 링크에 대 한 설명을 참조 하세요 [/LIBPATH](../../build/reference/libpath-additional-libpath.md) 옵션입니다.
 
-**/ 목록**<br/>
+**/LIST**<br/>
 표준 출력으로 출력 라이브러리에 대 한 정보를 표시합니다. 출력을 파일로 리디렉션할 수 있습니다. /LIST을 사용 하 여 수정 하지 않고 기존 라이브러리의 콘텐츠를 결정할 수 있습니다.
 
-**/ 이름:** *파일 이름*<br/>
+**/NAME:** *filename*<br/>
 가져오기 라이브러리를 빌드할 때 작성 중인 가져오기 라이브러리 DLL의 이름을 지정 합니다.
 
 **/NODEFAULTLIB**<br/>
 외부 참조를 확인할 때 검색 하는 라이브러리 목록에서 하나 이상의 기본 라이브러리를 제거 합니다. 참조 [/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md) 자세한 내용은 합니다.
 
-**/ OUT:** *파일 이름*<br/>
+**/OUT:** *filename*<br/>
 기본 출력 파일 이름을 재정의합니다. 기본적으로 출력 라이브러리, 명령줄 및 확장에서 첫 번째 라이브러리 또는 개체 파일의 기본 이름 사용 하 여 현재 디렉터리에 만들어집니다. lib 합니다.
 
 **/ 제거:** *개체*<br/>
@@ -99,6 +99,6 @@ LIB 옵션이 명령줄에서 지정 된 대/소문자 구분 하지 않습니�
 > [!NOTE]
 >  멤버 삭제와 같은 단계에서 파일로 추출할 수 없습니다. 먼저 /EXTRACT을 사용 하는 멤버 개체를 추출 하 다음 LIB /REMOVE를 사용 하 여 다시 실행 해야 합니다. 이 동작은 다른 Microsoft 제품에 제공 된 (OMF 라이브러리)에 대 한 16 비트 LIB의 다릅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LIB 참조](../../build/reference/lib-reference.md)

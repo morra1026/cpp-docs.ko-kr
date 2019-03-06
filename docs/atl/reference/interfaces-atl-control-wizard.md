@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, interfaces
 ms.assetid: 971eadcd-6a1e-46f2-b8fe-ee6b53dfe3ea
-ms.openlocfilehash: 5d3afda0f31cf4cc8d02af0363ba1b40414ec8b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f19df1723a4e115ca7f8e314bd5ea423082417e1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528052"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266980"
 ---
 # <a name="interfaces-atl-control-wizard"></a>인터페이스, ATL 컨트롤 마법사
 
@@ -20,7 +20,7 @@ ms.locfileid: "50528052"
 > [!NOTE]
 > 선택한 경우 **최소 컨트롤** 에 [옵션](../../atl/reference/options-atl-control-wizard.md) 탭에 기본적으로 표시 된 인터페이스가 없는 합니다 **지원 되는** 목록 상자입니다.
 
-- **지원 되지 않음**
+- **지원되지 않음**
 
    컨트롤에 대 한 현재 지원 되지 않는 사용 가능한 인터페이스를 나타냅니다.
 
@@ -35,7 +35,6 @@ ms.locfileid: "50528052"
    |**\<**|현재 선택한 인터페이스 이름을 제거 합니다 **지원 되는** 목록입니다.|
    |**\<\<**|인터페이스에 나열 된 현재 이름을 모두 제거 합니다 **지원 되는** 목록입니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 컨트롤 마법사](../../atl/reference/atl-control-wizard.md)
-

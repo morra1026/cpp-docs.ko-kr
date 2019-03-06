@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - Context class
 ms.assetid: c0d553f3-961d-4ecd-9a29-4fa4351673b8
-ms.openlocfilehash: c6b219eabd008114f40401c64465e44607c2ee9b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9074dad572a3a74a5b456e9790dc359ddf8b7c60
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50555079"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293955"
 ---
 # <a name="context-class"></a>Context 클래스
 
@@ -71,7 +71,7 @@ class Context;
 
 스케줄러는 본질적으로 협조적를 대기 상태로 전환 하려는 경우 실행 컨텍스트를 언제 든 지 다른 컨텍스트로 가상 프로세서 생성 수 없습니다. 해당 대기가 충족 하는 경우 스케줄러에서 사용 가능한 가상 프로세서는 실행을 시작할 때까지 다시 시작할 수 없습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Context`
 
@@ -81,7 +81,7 @@ class Context;
 
 **네임스페이스:** 동시성
 
-##  <a name="block"></a> 블록
+##  <a name="block"></a> Block
 
 현재 컨텍스트를 차단 합니다.
 
@@ -303,9 +303,8 @@ static void __cdecl YieldExecution();
 
 이 함수는 Visual Studio 2015의 새로운와 동일 합니다 [Yield](#yield) 작동 하지만 Windows.h의 Yield 매크로와 충돌 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [Scheduler 클래스](scheduler-class.md)<br/>
 [작업 스케줄러](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

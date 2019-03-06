@@ -9,12 +9,12 @@ helpviewer_keywords:
 - -JMC compiler option [C++]
 - User code, debugging
 - JMC compiler option [C++]
-ms.openlocfilehash: a81292b590d96ef93446f9bb59af305c7eda2ef9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1950ff4a973ddbd23ff902ba4afb0d45dacb0e5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516859"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417764"
 ---
 # <a name="jmc-just-my-code-debugging"></a>/ JMC (내 코드만 디버깅)
 
@@ -22,7 +22,7 @@ ms.locfileid: "50516859"
 
 ## <a name="syntax"></a>구문
 
-> **/ JMC**\[**-**]
+> **/JMC**\[**-**]
 
 ## <a name="remarks"></a>설명
 
@@ -46,7 +46,7 @@ Visual Studio [Just My Code](/visualstudio/debugger/just-my-code) 설정은 시�
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

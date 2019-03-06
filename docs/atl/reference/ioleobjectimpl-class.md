@@ -49,12 +49,12 @@ helpviewer_keywords:
 - IOleObject, ATL implementation
 - IOleObjectImpl class
 ms.assetid: 59750b2d-1633-4a51-a4c2-6455b6b90c45
-ms.openlocfilehash: e0ea787f0998a26f67418957584e9d12152aa618
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c228d5030c3577af22feda6a0d03769867b1c5c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614580"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268463"
 ---
 # <a name="ioleobjectimpl-class"></a>IOleObjectImpl 클래스
 
@@ -128,7 +128,7 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IOleObject`
 
@@ -186,7 +186,7 @@ STDMETHOD(DoVerb)(
 
 값에 따라 `iVerb`, ATL 중 `DoVerb` 도우미 함수는 다음과 같이 호출 됩니다.
 
-|*iVerb* 값|DoVerb 도우미 함수 호출|
+|*iVerb* Value|DoVerb 도우미 함수 호출|
 |-------------------|-----------------------------------|
 |OLEIVERB_DISCARDUNDOSTATE|[DoVerbDiscardUndo](#doverbdiscardundo)|
 |OLEIVERB_HIDE|[DoVerbHide](#doverbhide)|
@@ -821,7 +821,7 @@ S_OK 반환 합니다.
 
 참조 [IOleObject::Update](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-update) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [ActiveX 컨트롤 인터페이스](/windows/desktop/com/activex-controls-interfaces)<br/>

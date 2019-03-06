@@ -9,12 +9,12 @@ helpviewer_keywords:
 - messages [MFC], Windows
 - MFC, messages
 ms.assetid: 3f9855e4-9d7d-4b64-8f3f-a19ea3cf79ba
-ms.openlocfilehash: dda989318d6c6915ef8bc4e668fd238e8167de08
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91b7f21d92b2f899895b008b3fab8b541aec9963
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599188"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300104"
 ---
 # <a name="message-maps-mfc"></a>메시지 맵(MFC)
 
@@ -64,7 +64,6 @@ Microsoft Foundation Class 라이브러리는 메시지 기반 프로그래밍�
 
 그러나 메시지 맵 Microsoft Foundation Class 라이브러리의 중요 한 부분이 됩니다. 용도 이해 해야 하 고 설명서에 제공 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

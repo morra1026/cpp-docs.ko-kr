@@ -1,19 +1,19 @@
 ---
-title: '방법: call 및 transformer 클래스에 작업 함수 제공'
+title: '방법: Call 및 transformer 클래스에 작업 함수 제공'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - call class, example
 - using the transformer class [Concurrency Runtime]
 - using the call class [Concurrency Runtime]
 ms.assetid: df715ce4-8507-41ca-b204-636d11707a73
-ms.openlocfilehash: d9d472ddd8d5c7baf3cb16e1df33a2bdb74c5381
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c41c29dae277105f268171503e662e2a02e3857e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501002"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277693"
 ---
-# <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>방법: call 및 transformer 클래스에 작업 함수 제공
+# <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>방법: Call 및 transformer 클래스에 작업 함수 제공
 
 이 항목에서는 여러 가지 방법으로 작업 함수를 제공 하는 [concurrency:: call](../../parallel/concrt/reference/call-class.md) 하 고 [concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) 클래스.
 
@@ -53,11 +53,11 @@ ms.locfileid: "50501002"
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `call.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `call.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc call.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>
 [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)<br/>

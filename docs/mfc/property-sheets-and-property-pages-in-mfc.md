@@ -7,12 +7,12 @@ helpviewer_keywords:
 - property sheets, MFC
 - tab dialog boxes
 ms.assetid: e1bede2b-0285-4b88-a052-0f8a372807a2
-ms.openlocfilehash: fa5e48459b4d53ff6e5a80e7b315826f266de29f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fa8ee3518ad2b32e0eace77f0961eb86ccde1822
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654391"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261195"
 ---
 # <a name="property-sheets-and-property-pages-in-mfc"></a>MFC의 속성 시트 및 속성 페이지
 
@@ -27,7 +27,6 @@ ms.locfileid: "50654391"
 > [!NOTE]
 >  속성 시트를 사용 하 여 표시 하려는 경우 `CPropertySheet::DoModal`, 시스템에서 첫째 예외를 생성할 수 있습니다. 시스템 변경 하 려 하기 때문에이 예외가 발생 합니다 [창 스타일](../mfc/reference/styles-used-by-mfc.md#window-styles) 개체 생성 되기 전에 개체의 합니다. 이 예외 및 방지 하거나 처리 하는 방법에 대 한 자세한 내용은 참조 하세요. [CPropertySheet::DoModal](../mfc/reference/cpropertysheet-class.md#domodal)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [속성 시트](../mfc/property-sheets-mfc.md)
-

@@ -6,18 +6,18 @@ helpviewer_keywords:
 - frame windows [MFC], using
 - MFC, frame windows
 ms.assetid: 4d773238-11f6-4ccf-8114-57310c5aaa2d
-ms.openlocfilehash: 1ce23633310482c52f60a591452e3d20ac10c706
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba304bce5bd0d91f4db8372b087c42c98b9c103d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676384"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259661"
 ---
 # <a name="using-frame-windows"></a>프레임 창 사용
 
 MFC 프레임 워크 만듭니다 문서 프레임 창-보기 및 문서-새로운 기능 및 파일 메뉴에서 열기 명령을 해당 구현의 일부로 합니다. 프레임 워크를 대부분의 프레임 창 작업 않으므로 만들기, 사용 및 제거 해당 창에서 작은 역할만을 재생 합니다. 만들 수 있습니다, 있지만 명시적으로 고유한 프레임 창 및 자식 창의 특수 목적을 위해.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서 프레임 창 만들기](../mfc/creating-document-frame-windows.md)
 
@@ -41,7 +41,6 @@ MFC 프레임 워크 만듭니다 문서 프레임 창-보기 및 문서-새로�
 
 - [인쇄 및 인쇄 미리 보기에서 프레임 창은 역할](../mfc/orchestrating-other-window-actions.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창](../mfc/frame-windows.md)
-

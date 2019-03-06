@@ -2,12 +2,12 @@
 title: Concurrency 네임 스페이스 연산자 (AMP)
 ms.date: 11/04/2016
 ms.assetid: 77f1ae17-1eb2-480d-8fe5-66d4c24bb91e
-ms.openlocfilehash: cd40f771cbab5651b2f33f0ed2e84ea1412855bd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2957aa84ffbf420dcf2672359a442b754866649
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50598044"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283347"
 ---
 # <a name="concurrency-namespace-operators-amp"></a>Concurrency 네임 스페이스 연산자 (AMP)
 
@@ -276,6 +276,6 @@ _Tuple_type<_Rank>   operator%(
 
 결과 첫 번째 지정 된 인수 모듈러스는 두 번째 지정 된 인수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Namespace 동시성 ](concurrency-namespace-cpp-amp.md)

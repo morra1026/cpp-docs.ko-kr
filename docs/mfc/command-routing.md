@@ -8,12 +8,12 @@ helpviewer_keywords:
 - handlers, command [MFC]
 - command routing
 ms.assetid: 9393a956-bdd4-47c5-9013-dbd680433f93
-ms.openlocfilehash: add047984f5a32e505e8a739922daa137b5e671d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ae9741a66e944b60dc38c1366353e43977e1ee7a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541702"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278402"
 ---
 # <a name="command-routing"></a>명령 라우팅
 
@@ -43,7 +43,6 @@ ms.locfileid: "50541702"
 
 선행하는 테이블의 두 번째 열에 있는 번호가 매겨진 항목에서 다른 개체(예: 문서)를 지정한 경우 첫 번째 열에서 해당 항목을 참조합니다. 예를 들어, 두 번째 열에 뷰가 명령을 해당 문서에 전달하는 것으로 지정된 경우 이후의 라우팅을 확인하려면 첫 번째 열에 있는 "문서" 항목을 참조합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 처리기를 호출하는 방법](../mfc/how-the-framework-calls-a-handler.md)
-

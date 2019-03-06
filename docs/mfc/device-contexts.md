@@ -32,12 +32,12 @@ helpviewer_keywords:
 - drawing [MFC], directly into windows
 - painting and device context
 ms.assetid: d0cd51f1-f778-4c7e-bf50-d738d10433c7
-ms.openlocfilehash: 105e438a9ed3e8f7de7edc813fec516c0e99700a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 7893b446c224dd84514ab63dc97cae467792750c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694688"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280006"
 ---
 # <a name="device-contexts"></a>장치 컨텍스트
 
@@ -55,7 +55,7 @@ ms.locfileid: "51694688"
 
 이러한 경우에 사용할 수는 [CClientDC](../mfc/reference/cclientdc-class.md) 뷰로 직접 그릴 디바이스 컨텍스트 개체입니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [장치 컨텍스트 (정의)](/windows/desktop/gdi/device-contexts)
 
@@ -73,7 +73,6 @@ ms.locfileid: "51694688"
 
 - [좌표 공간 및 변환](/windows/desktop/gdi/coordinate-spaces-and-transformations)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 개체](../mfc/window-objects.md)
-

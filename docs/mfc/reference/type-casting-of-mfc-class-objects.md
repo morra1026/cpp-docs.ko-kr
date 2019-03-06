@@ -10,12 +10,12 @@ helpviewer_keywords:
 - casting types [MFC]
 - macros [MFC], casting pointers
 ms.assetid: e138465e-c35f-4e84-b788-bd200ccf2f0e
-ms.openlocfilehash: 42b668287905fc5f6e05a09949d53acc51c79026
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3107b860747bc2434ae9afca39b517d8dcc9eb01
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584147"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299363"
 ---
 # <a name="type-casting-of-mfc-class-objects"></a>MFC 클래스 개체의 형식 캐스팅
 
@@ -72,7 +72,7 @@ STATIC_DOWNCAST(class_name, pobject)
 
 *pobject* NULL 이거나 직접 파생 된 클래스 또는 간접적으로 개체를 가리키므로 *class_name*합니다. 빌드에서 _DEBUG 전처리기 기호 정의 사용 하 여 응용 프로그램의 경우 매크로 ASSERT는 *pobject* 가 NULL이 아닌 개체를 가리키는 경우 또는 "일종의"에 지정 된 클래스를 *class_name*매개 변수 (참조 [CObject::IsKindOf](../../mfc/reference/cobject-class.md#iskindof)). 이외에 **_DEBUG** 매크로 빌드 형식 검사 없이 캐스팅을 수행 합니다.
 
-에 지정 된 클래스는 *class_name* 매개 변수에서 파생 되어야 합니다 `CObject` 는 DECLARE_DYNAMIC IMPLEMENT_DYNAMIC는 DECLARE_DYNCREATE 및 IMPLEMENT_DYNCREATE, 또는 DECLARE_SERIAL 및 IMPLEMENT_ 사용 해야 합니다 문서에 설명 된 직렬 매크로 [CObject 클래스: CObject에서 클래스 파생 시키기](../../mfc/deriving-a-class-from-cobject.md)합니다.
+에 지정 된 클래스는 *class_name* 매개 변수에서 파생 되어야 합니다 `CObject` 는 DECLARE_DYNAMIC IMPLEMENT_DYNAMIC는 DECLARE_DYNCREATE 및 IMPLEMENT_DYNCREATE, 또는 DECLARE_SERIAL 및 IMPLEMENT_ 사용 해야 합니다 이 문서에 설명 된 직렬 매크로로 [CObject 클래스: CObject에서 클래스 파생 시키기](../../mfc/deriving-a-class-from-cobject.md)합니다.
 
 예를 들어,에 대 한 포인터를 캐스팅할 수 있습니다 `CMyDoc`라는 `pMyDoc`에 대 한 포인터로 `CDocument` 이 식을 사용 하 여:
 
@@ -80,6 +80,6 @@ STATIC_DOWNCAST(class_name, pobject)
 
 하는 경우 `pMyDoc` 에서 직접 또는 간접적으로 파생 된 개체를 가리키지 않습니다 `CDocument`, 매크로 어설션 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

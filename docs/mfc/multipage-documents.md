@@ -25,12 +25,12 @@ helpviewer_keywords:
 - printing [MFC], pagination
 - documents [MFC], paginating
 ms.assetid: 69626b86-73ac-4b74-b126-9955034835ef
-ms.openlocfilehash: b4ec9f456443b9cd180f1558946829281bc10a36
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 81e03657977d31827c5c7c3d3272e3d4255a4a8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176382"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295008"
 ---
 # <a name="multipage-documents"></a>다중 페이지 문서
 
@@ -99,7 +99,7 @@ ms.locfileid: "52176382"
 
 합니다 [OnPrint](../mfc/reference/cview-class.md#onprint) 멤버 함수는 페이지의 실제 인쇄를 수행 합니다. 이 문서 [기본 인쇄 수행 되는 방법](../mfc/how-default-printing-is-done.md) 프레임 워크를 호출 하는 방법을 보여 줍니다 [OnDraw](../mfc/reference/cview-class.md#ondraw) 인쇄를 수행 하는 프린터 장치 컨텍스트를 사용 하 여 합니다. 프레임 워크 호출 보다 정확 하 게 `OnPrint` 사용 하 여는 `CPrintInfo` 구조 및 장치 컨텍스트, 및 `OnPrint` 장치 컨텍스트를 전달 `OnDraw`합니다. 재정의 `OnPrint` 화면 표시 하지 않고에 인쇄 하는 동안에 수행 해야 하는 모든 렌더링을 수행 합니다. 예를 들어, 헤더 또는 바닥글을 인쇄 하려면 (문서를 참조 하세요 [머리글 및 바닥글](../mfc/headers-and-footers.md) 자세한). 그런 다음 호출 `OnDraw` 재정의에서 `OnPrint` 모두 화면 표시에 공통적으로 적용 렌더링과 인쇄 작업을 수행 하 합니다.
 
-팩트는 `OnDraw` 모두 화면 표시 및 인쇄 응용 프로그램 WYSIWYG 임을 의미에 대 한 렌더링을 수행 합니다. "어떤 you see is what you get." 그러나 wysiwyg (위지윅) 응용 프로그램을 작성 하지는 것으로 가정 합니다. 예를 들어 텍스트 편집기 인쇄에 대 한 굵은 글꼴을 사용 하는 화면에서 굵은 텍스트를 나타내는 컨트롤 코드를 표시 합니다. 이러한 상황에서는 사용 하 여 `OnDraw` 화면 표시를 위해 엄격 하 게 합니다. 재정의 하는 경우 `OnPrint`에 대 한 호출을 대체 `OnDraw` 별도 그리기 함수를 호출 하 여 합니다. 해당 함수는 화면에 표시 하지 않는 특성을 사용 하는 문서에 표시 되는 문서를 그립니다.
+팩트는 `OnDraw` 모두 화면 표시 및 인쇄 응용 프로그램 WYSIWYG 임을 의미에 대 한 렌더링을 수행 합니다. "표시 얻게 됩니다." 그러나 wysiwyg (위지윅) 응용 프로그램을 작성 하지는 것으로 가정 합니다. 예를 들어 텍스트 편집기 인쇄에 대 한 굵은 글꼴을 사용 하는 화면에서 굵은 텍스트를 나타내는 컨트롤 코드를 표시 합니다. 이러한 상황에서는 사용 하 여 `OnDraw` 화면 표시를 위해 엄격 하 게 합니다. 재정의 하는 경우 `OnPrint`에 대 한 호출을 대체 `OnDraw` 별도 그리기 함수를 호출 하 여 합니다. 해당 함수는 화면에 표시 하지 않는 특성을 사용 하는 문서에 표시 되는 문서를 그립니다.
 
 ##  <a name="_core_printer_pages_vs.._document_pages"></a> 프린터 페이지 vs입니다. 문서 페이지
 
@@ -117,13 +117,13 @@ ms.locfileid: "52176382"
 
 기본 구현의 `OnPrepareDC` 설정 *m_bContinuePrinting* 하려면 **FALSE** 현재 페이지 1 보다 큰 경우. 이 문서 길이 지정 하지 않으면 프레임 워크를 가정 문서 길이 한 페이지로 것을 의미 합니다. 이 기본 클래스 버전을 호출 하는 경우 주의 해야 하는 `OnPrepareDC`합니다. 이라고 단정 하지 마십시오 *m_bContinuePrinting* 됩니다 **TRUE** 기본 클래스 버전을 호출한 후입니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [머리글 및 바닥글](../mfc/headers-and-footers.md)
 
 - [GDI 리소스 할당](../mfc/allocating-gdi-resources.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [인쇄](../mfc/printing.md)<br/>
 [CView 클래스](../mfc/reference/cview-class.md)<br/>

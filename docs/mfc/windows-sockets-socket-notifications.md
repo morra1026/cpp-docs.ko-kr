@@ -6,26 +6,26 @@ helpviewer_keywords:
 - notifications [MFC], socket
 - sockets [MFC], notifications
 ms.assetid: 87d5bf70-6e77-49a9-9a64-aaadee2ad018
-ms.openlocfilehash: e49001e9693872d23162284df49f128097e68784
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c08305b8aeeca00eaf41e4f1c24b51a46a8c4254
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476481"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289912"
 ---
 # <a name="windows-sockets-socket-notifications"></a>Windows 소켓: 소켓 알림
 
 이 문서에서는 소켓 클래스에서 알림 함수를 설명 합니다. 이러한 멤버 함수는 중요 한 이벤트의 소켓 개체에 알리기 위해 프레임 워크를 호출 하는 콜백 함수입니다. 알림 기능은 다음과 같습니다.
 
-- [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive): 호출 하 여 검색 하려면이 버퍼의 데이터는이 소켓에 게 알리는 [수신](../mfc/reference/casyncsocket-class.md#receive)합니다.
+- [OnReceive](../mfc/reference/casyncsocket-class.md#onreceive): 호출 하 여 검색 하려면이 버퍼의 데이터는이 소켓에 게 알립니다 [수신](../mfc/reference/casyncsocket-class.md#receive)합니다.
 
-- [OnSend](../mfc/reference/casyncsocket-class.md#onsend): 데이터를 호출 하 여 이제 보낼 수 있습니다는이 소켓에 알립니다 [보낼](../mfc/reference/casyncsocket-class.md#send)합니다.
+- [OnSend](../mfc/reference/casyncsocket-class.md#onsend): 호출 하 여 데이터 보내기 이제 수 있습니다이 소켓에 게 알립니다 [보낼](../mfc/reference/casyncsocket-class.md#send)합니다.
 
 - [OnAccept](../mfc/reference/casyncsocket-class.md#onaccept): 호출 하 여 보류 중인 연결 요청 받을 수 있는이 수신 대기 소켓 알립니다 [Accept](../mfc/reference/casyncsocket-class.md#accept)합니다.
 
-- [OnConnect](../mfc/reference/casyncsocket-class.md#onconnect): 연결 시도 완료 하는이 연결 소켓을 알립니다: 또는 아마도 성공적으로 오류가 발생 합니다.
+- [OnConnect](../mfc/reference/casyncsocket-class.md#onconnect): 이 소켓에 연결 하는 연결 시도가 완료를 알립니다: 또는 아마도 성공적으로 오류가 발생 합니다.
 
-- [OnClose](../mfc/reference/casyncsocket-class.md#onclose):이 소켓에 연결 된 소켓 닫을 알립니다.
+- [OnClose](../mfc/reference/casyncsocket-class.md#onclose): 이 소켓을에 연결 된 소켓 닫을 알립니다.
 
     > [!NOTE]
     >  추가 알림 기능은 [OnOutOfBandData](../mfc/reference/casyncsocket-class.md#onoutofbanddata)합니다. 이 알림을 보내는 소켓에 보낼 "대역" 데이터가 수신 소켓을 알려 줍니다. 대역의 데이터에 연결 된 스트림 소켓의 각 쌍과 연결 된 논리적으로 독립 채널이 있습니다. 대역의 채널은 "긴급" 데이터를 보내는 데 일반적으로 합니다. MFC 대역의 데이터를 지원합니다. 고급 사용자 클래스를 사용 하 여 작업 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 대역의 채널 하지만 클래스의 사용자를 사용 해야 [CSocket](../mfc/reference/csocket-class.md) 않는 정보를 사용할 것이 좋습니다. 더 쉬운 방법은 해당 데이터를 전달 하는 데는 두 번째 소켓을 만드는 것입니다. 대역의 데이터에 대 한 자세한 내용은 Windows SDK에서 사용할 수 있는 Windows Sockets 사양을 참조 하세요.
@@ -47,11 +47,11 @@ MFC는 알림을 받을 때 소켓의 동작을 사용자 지정할 수 있도�
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows 소켓: 소켓 클래스에서 파생시키기](../mfc/windows-sockets-deriving-from-socket-classes.md)
+- [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)
 
-- [Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows 소켓: 보관이 포함 된 소켓의 작동 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
 - [Windows 소켓: 차단](../mfc/windows-sockets-blocking.md)
 
@@ -59,7 +59,6 @@ MFC는 알림을 받을 때 소켓의 동작을 사용자 지정할 수 있도�
 
 - [Windows 소켓: 문자열 변환](../mfc/windows-sockets-converting-strings.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)
-

@@ -1,19 +1,19 @@
 ---
-title: MFC 응용 프로그램 마법사, 고급 기능
+title: MFC 애플리케이션 마법사, 고급 기능
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.advanced
 helpviewer_keywords:
 - MFC Application Wizard, advanced features
 ms.assetid: 8a6681c5-6576-4b12-841a-6862beee76fa
-ms.openlocfilehash: 1af16f7009ceb97ea86d641f47cf56ea5a398c26
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 5643e1e9f4f558163c1c2a3b65070f90afdc7dba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694298"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278225"
 ---
-# <a name="advanced-features-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 고급 기능
+# <a name="advanced-features-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 고급 기능
 
 이 항목에서는 도움말, 인쇄 지원 등과 같은 응용 프로그램을 위한 추가 기능을 설정할 수 있는 옵션에 대해 설명합니다. 각 섹션에서 이 고급 기능에 추가 지원을 지정하세요.
 
@@ -57,7 +57,7 @@ ms.locfileid: "51694298"
 
 - **다시 시작 관리자 지원**
 
-   에 대 한 지원을 추가 합니다 [Windows 다시 시작 관리자](/windows/desktop/RstMgr/using-restart-manager)합니다. 이 비디오에서는 MFC에서 다시 시작 관리자를 사용 하는 방법을 보여 줍니다. [i: 새로운 다시 시작 관리자 사용](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100))합니다.
+   에 대 한 지원을 추가 합니다 [Windows 다시 시작 관리자](/windows/desktop/RstMgr/using-restart-manager)합니다. 이 비디오에는 MFC에서 다시 시작 관리자를 사용 하는 방법을 보여 줍니다. [어떻게 할까요 새로운 다시 시작 관리자를 사용 하 여](/previous-versions/visualstudio/visual-studio-2010/dd831853(v%3dvs.100))입니다.
 
 - **고급 프레임 창**
 
@@ -73,7 +73,6 @@ ms.locfileid: "51694298"
 
    가장 최근에 사용된 파일 목록에 나열될 파일 수를 지정합니다. 기본값은 4입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)
-

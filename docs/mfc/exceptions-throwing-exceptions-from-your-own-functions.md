@@ -1,19 +1,19 @@
 ---
-title: '예외: 자체 함수에서 예외 Throw'
+title: '예외: 자체 함수에서 예외를 throw합니다.'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - throwing exceptions [MFC], from functions
 - functions [MFC], throwing exceptions
 - exceptions [MFC], throwing
 ms.assetid: 492976e8-8804-4234-8e8f-30dffd0501be
-ms.openlocfilehash: 4d0961bff706ccf86eb09d2dcbe695a13bfa8702
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 030bf3db9ff305f35cbfb0b518c8704114ce083d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558993"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297946"
 ---
-# <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>예외: 자체 함수에서 예외 Throw
+# <a name="exceptions-throwing-exceptions-from-your-own-functions"></a>예외: 자체 함수에서 예외를 throw합니다.
 
 MFC 또는 다른 라이브러리의 함수에서 throw 된 예외를 catch 하기 위한 용도로 MFC 예외 처리 패러다임을 사용 하는 것이 가능 합니다. 라이브러리 코드에서 throw 된 예외를 catch 하는 것 외에도 예외 조건에서 발생할 수 있는 함수를 작성 하는 경우 사용자 고유의 코드에서 예외 throw 할 수 있습니다.
 
@@ -40,7 +40,6 @@ MFC 또는 다른 라이브러리의 함수에서 throw 된 예외를 catch 하�
 > [!NOTE]
 >  MFC의 기본 처리 하는 예외에 대 한 포인터에만 적용 됩니다 `CException` 개체 (및 개체의 `CException`-파생 클래스). 위의 예제는 MFC의 예외 메커니즘을 무시합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [예외 처리](../mfc/exception-handling-in-mfc.md)
-

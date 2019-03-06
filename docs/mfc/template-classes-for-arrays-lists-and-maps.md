@@ -10,12 +10,12 @@ helpviewer_keywords:
 - map classes [MFC]
 - template classes [MFC]
 ms.assetid: a8331c4b-068a-48f8-a629-b8449601e121
-ms.openlocfilehash: 93104c978ead80598a540da1469065643cb27442
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be5639802f6f4a11a29326efd71d9634797c9f5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466055"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267006"
 ---
 # <a name="template-classes-for-arrays-lists-and-maps"></a>배열, 목록 및 맵에 대한 템플릿 클래스
 
@@ -41,7 +41,6 @@ ms.locfileid: "50466055"
 [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md)<br/>
 포인터를 사용 하 여 형식이 안전한 지도 대 한 템플릿 클래스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

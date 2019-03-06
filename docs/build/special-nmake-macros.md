@@ -6,12 +6,12 @@ helpviewer_keywords:
 - macros, NMAKE
 - NMAKE macros, special
 ms.assetid: d772e8ea-1e9f-4ad8-beec-663af76f2dd9
-ms.openlocfilehash: 09589f576815dddf4fc8bec45252a53e2bb39d1a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e68cab7e87641d3ad5f37c60466bf917c2779152
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645733"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422067"
 ---
 # <a name="special-nmake-macros"></a>특수 NMake 매크로
 
@@ -25,6 +25,6 @@ NMAKE는 다양 한 파일 이름과 명령을 나타내는 몇 가지 특수 �
 
 - [환경 변수 매크로](../build/environment-variable-macros.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로와 NMake](../build/macros-and-nmake.md)

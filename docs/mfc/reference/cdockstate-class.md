@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CDockState [MFC], SaveState
 - CDockState [MFC], m_arrBarInfo
 ms.assetid: 09e7c10b-3abd-4cb2-ad36-42420fe6bc36
-ms.openlocfilehash: 56be735aa99cfebe4ec64ff76f53d28cc9b9779e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b8c4b80d7182795d8919adb64491d506325976ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443604"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262690"
 ---
 # <a name="cdockstate-class"></a>CDockState 클래스
 
@@ -58,9 +58,9 @@ class CDockState : public CObject
 
 [CFrameWnd::GetDockState](../../mfc/reference/cframewnd-class.md#getdockstate) 프레임 창의 모든 상태 정보를 검색 합니다 `CControlBar` 개체를 가져와 `CDockState` 개체입니다. 내용을 작성할 수 있습니다 합니다 `CDockState` 개체를 사용 하 여 storage [Serialize](../../mfc/reference/cobject-class.md#serialize) 또는 [CDockState::SaveState](#savestate)합니다. 나중에 프레임 창에서 컨트롤 막대의 상태를 복원 하려면 사용 하 여 상태를 로드할 수 있습니다 `Serialize` 나 [CDockState::LoadState](#loadstate)를 사용 하 여 [CFrameWnd::SetDockState](../../mfc/reference/cframewnd-class.md#setdockstate) 저장을 적용할 상태 프레임 창의 컨트롤 막대입니다.
 
-도킹 컨트롤 막대에 대 한 자세한 내용은 문서를 참조 하세요 [컨트롤 막대](../../mfc/control-bars.md)를 [도구 모음: 고정 및 고정](../../mfc/docking-and-floating-toolbars.md), 및 [프레임 Windows](../../mfc/frame-windows.md)합니다.
+도킹 컨트롤 막대에 대 한 자세한 내용은 문서를 참조 하세요 [컨트롤 막대](../../mfc/control-bars.md), [도구 모음: 도킹 및 부동](../../mfc/docking-and-floating-toolbars.md), 및 [Windows 프레임](../../mfc/frame-windows.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -140,8 +140,7 @@ void SaveState(LPCTSTR lpszProfileName);
 
 프로필 이름에는 해당 응용 프로그램의 섹션입니다. 포함 된 INI 파일 또는 레지스트리 컨트롤 막대의 상태 정보입니다. `SaveState` 또한 현재 화면 크기를 저장합니다. 레지스트리에서 컨트롤 모음 정보를 검색할 수 있습니다 또는 합니다. INI 파일 `LoadState`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

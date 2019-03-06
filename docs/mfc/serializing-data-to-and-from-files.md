@@ -12,12 +12,12 @@ helpviewer_keywords:
 - data [MFC], serializing
 - document data [MFC]
 ms.assetid: b42a0c68-4bc4-4012-9938-5433a26d2c24
-ms.openlocfilehash: 87e216f1959a7c169673822ffa7041ed511817d3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: af3cde9445ae4b128e7e54a5f154db01b2eecd3b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473621"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279265"
 ---
 # <a name="serializing-data-to-and-from-files"></a>파일로/파일에서 데이터 Serialize
 
@@ -27,7 +27,7 @@ ms.locfileid: "50473621"
 
 MFC 응용 프로그램 마법사의 기본 재정의 저장 합니다 `CDocument` 멤버 함수 `Serialize` 문서 클래스를 만듭니다. 응용 프로그램의 멤버 변수를 구현한 후 채울 수 있습니다 프로그램 `Serialize` "보관 개체" 파일에 연결 된 데이터를 전송 하는 코드를 사용 하 여 재정의 합니다. [CArchive](../mfc/reference/carchive-class.md) 개체는 합니다 **cin** 하 고 **cout** c + + iostream 라이브러리의 개체에 대 한 입/출력 합니다. 그러나 `CArchive` 이진 형식으로 포맷된 되지 않은 텍스트를 읽고 씁니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [serialization](../mfc/serialization-in-mfc.md)
 
@@ -45,7 +45,6 @@ MFC 응용 프로그램 마법사의 기본 재정의 저장 합니다 `CDocumen
 
 일반적으로 클래스 형식의 데이터 자체를 serialize 할 수 있어야 합니다. 즉, 보관 파일에 개체를 전달 하면 개체 자체 보관 파일에 작성 하는 방법 및 보관 파일에서 읽는 방법을 알고 있어야 합니다. MFC는 클래스를 이러한 방식으로 직렬화 하기 위한 지원을 제공 합니다. Serialization에 대 한 데이터 형식을 정의 하는 클래스를 디자인할 경우 해당 형식의 데이터를 직렬화 하려는 디자인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 사용](../mfc/using-documents.md)
-

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - CComAggObject class
 - CComObject class, implementing
 ms.assetid: 5aabe938-104d-492e-9c41-9f7fb1c62098
-ms.openlocfilehash: 6e9e1a22ebe23f9fec6e553713a5701315cdac96
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b9aa3cc489260aecfa529dff5f7ed7eb19cf3151
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508981"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295216"
 ---
 # <a name="implementing-ccomobject-ccomaggobject-and-ccompolyobject"></a>CComObject, CComAggObject 및 CComPolyObject 구현
 
@@ -35,8 +35,7 @@ ms.locfileid: "50508981"
 
 사용 하는 이점은 `CComPolyObject` 는 둘 다 필요 하지 않는 `CComAggObject` 및 `CComObject` 집계 및 집계 경우를 처리 하 여 모듈에서. 단일 `CComPolyObject` 두 경우를 처리 하는 개체입니다. 즉, 모듈에서 vtable의 복사본이 하나만 및 함수의 복사본 하나 존재 합니다. Vtable 큰 경우 현재 모듈 크기가 상당히 줄어들 수 있습니다이 합니다. Vtable이 작은 경우 사용 하는 반면 `CComPolyObject` 집계 또는 집계 개체에 대해 최적화 되어 있지 않으므로 약간 더 큰 모듈 크기를 발생할 수 있습니다는 `CComAggObject` 및 `CComObject`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 개체 기본 사항](../atl/fundamentals-of-atl-com-objects.md)<br/>
 [집계 및 클래스 팩터리 매크로](../atl/reference/aggregation-and-class-factory-macros.md)
-

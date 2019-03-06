@@ -8,12 +8,12 @@ helpviewer_keywords:
 - WNDCLASS [MFC]
 - AfxRegisterClass function
 ms.assetid: 1abf678e-f220-4606-85e0-03df32f64c54
-ms.openlocfilehash: 4ae94d1c9c57f6c315ae482e44576ae25194c00f
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 68c851ae6a6b1b8578df90e2618f257122797aa5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894265"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294150"
 ---
 # <a name="tn001-window-class-registration"></a>TN001: 창 클래스 등록
 
@@ -106,8 +106,7 @@ pWnd->Create(strWndClass, ...);
 
 사용 하는 것이 반드시 `AfxRegisterClass` (또는 `AfxRegisterWndClass`)에서 Win32 DLL에 있습니다. Win32는 자동으로 등록을 취소할 DLL 종료 될 때 클래스를 등록 취소 명시적으로 해야 하므로 DLL을 등록 하는 클래스입니다. 사용 하 여 `AfxRegisterClass` 대신 `RegisterClass` 이를 자동으로 처리 됩니다. `AfxRegisterClass` 고유 클래스 목록을 DLL에서 등록 하 고는 자동으로 등록을 취소 하는 DLL 종료 될 때 유지 관리 합니다. 사용 하는 경우 `RegisterClass` DLL을 확인 해야 합니다 DLL 종료 될 때 모두 클래스 등록이 취소 됩니다 (에서 하 [DllMain](/windows/desktop/Dlls/dllmain) 함수). 이렇게 하지 않으면 발생할 수 있습니다 `RegisterClass` 다른 클라이언트 응용 프로그램 DLL을 사용 하려고 할 때 예기치 않게 실패할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

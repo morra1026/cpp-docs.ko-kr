@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlList class
 ms.assetid: 09e98053-64b2-4efa-99ab-d0542caaf981
-ms.openlocfilehash: 9e657bbf375a8babf1c03cc7254310956131d62b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: faed99197eb14da8ea095bef81d0d1a9845b18ad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449372"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285505"
 ---
 # <a name="catllist-class"></a>CAtlList 클래스
 
@@ -76,7 +76,7 @@ class CAtlList
 |이름|설명|
 |----------|-----------------|
 |[CAtlList::CAtlList](#catllist)|생성자입니다.|
-|[CAtlList:: ~ CAtlList](#dtor)|소멸자입니다.|
+|[CAtlList::~CAtlList](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -134,7 +134,7 @@ POSITION AddHead(INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*<br/>
+*element*<br/>
 새 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -181,7 +181,7 @@ POSITION AddTail(INARGTYPE element);
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*<br/>
+*element*<br/>
 추가할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -254,7 +254,7 @@ CAtlList(UINT nBlockSize = 10) throw();
 
 [!code-cpp[NVC_ATL_Utilities#18](../../atl/codesnippet/cpp/catllist-class_6.cpp)]
 
-##  <a name="dtor"></a>  CAtlList:: ~ CAtlList
+##  <a name="dtor"></a>  CAtlList::~CAtlList
 
 소멸자입니다.
 
@@ -278,7 +278,7 @@ POSITION Find(INARGTYPE element, POSITION posStartAfter = NULL) const throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*<br/>
+*element*<br/>
 목록에서 찾을 요소입니다.
 
 *posStartAfter*<br/>
@@ -536,7 +536,7 @@ POSITION InsertAfter(POSITION pos, INARGTYPE element);
 *pos*<br/>
 새 요소가 삽입 되는 위치 값입니다.
 
-*요소*<br/>
+*element*<br/>
 삽입할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -564,7 +564,7 @@ POSITION InsertBefore(POSITION pos, INARGTYPE element);
 *pos*<br/>
 위치 값이 앞의 목록에 새 요소 삽입 됩니다.
 
-*요소*<br/>
+*element*<br/>
 삽입할 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -761,7 +761,7 @@ void SetAt(POSITION pos, INARGTYPE element);
 *pos*<br/>
 변경 하려면 요소에 해당 하는 위치 값입니다.
 
-*요소*<br/>
+*element*<br/>
 새 요소의 값입니다.
 
 ### <a name="remarks"></a>설명
@@ -796,7 +796,7 @@ void SwapElements(POSITION pos1, POSITION pos2) throw();
 
 [!code-cpp[NVC_ATL_Utilities#31](../../atl/codesnippet/cpp/catllist-class_19.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CList 클래스](../../mfc/reference/clist-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

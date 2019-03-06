@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CDataExchange [MFC], m_bSaveAndValidate
 - CDataExchange [MFC], m_pDlgWnd
 ms.assetid: 84ed6113-325d-493e-a75d-223f03a992b8
-ms.openlocfilehash: 7d0a804294fa5da619bdab4184adf3e28c420506
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 630bc41ee20aa7cf6f62cd320b15b8dca0d3fedf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509294"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268397"
 ---
 # <a name="cdataexchange-class"></a>CDataExchange 클래스
 
@@ -69,7 +69,7 @@ class CDataExchange
 
 `CDataExchange` DDX 및 DDV 되려면 배치 하는 데 필요한 컨텍스트 정보를 제공 하는 개체입니다. 플래그 *m_bSaveAndValidate* DDX는 데이터 멤버에서 대화 상자 컨트롤의 초기 값을 채우는 데 사용 되는 경우는 FALSE입니다. 플래그 *m_bSaveAndValidate* DDX는 데이터 멤버 및 DDV 데이터 값의 유효성 검사에 사용 되는 경우 대화 상자 컨트롤의 현재 값을 설정 하는 데 사용 되는 TRUE입니다. DDV 유효성 검사에 실패할 경우 DDV 프로시저에 입력된 오류를 설명 하는 메시지 상자가 표시 됩니다. DDV 프로시저 호출 다음 `Fail` 에 잘못 된 컨트롤에 포커스를 다시 설정 하 고 유효성 검사 프로세스를 중지 하려면 예외를 throw 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CDataExchange`
 
@@ -228,10 +228,9 @@ OLE 컨트롤 사이트에 대 한 포인터입니다.
 
 사용자 고유의 DDX 및 DDV 루틴을 작성에 대 한 자세한 내용은 참조 하세요. [기술 참고 26](../../mfc/tn026-ddx-and-ddv-routines.md)합니다. DDX 및 DDV 개요를 참조 하세요 [대화 상자 데이터 교환 및 유효성 검사](../../mfc/dialog-data-exchange-and-validation.md) 하 고 [대화 상자 항목](../../mfc/dialog-boxes.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 VIEWEX](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd::DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange)<br/>
 [CWnd::UpdateData](../../mfc/reference/cwnd-class.md#updatedata)
-

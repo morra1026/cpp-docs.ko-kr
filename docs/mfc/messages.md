@@ -5,12 +5,12 @@ helpviewer_keywords:
 - messages, MFC
 - messages [MFC]
 ms.assetid: b1476310-a135-42ca-817c-444fb3675491
-ms.openlocfilehash: 033edfd289ea075b89e9d44111da94b987177470
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8e1bfd1baa8ffef76ba31912fc619c4217696683
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434543"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300078"
 ---
 # <a name="messages"></a>메시지
 
@@ -18,7 +18,6 @@ ms.locfileid: "50434543"
 
 메시지의 중요 한 범주에 설명 되어 있습니다 [메시지 범주](../mfc/message-categories.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)
-

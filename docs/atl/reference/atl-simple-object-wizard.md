@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL projects, adding objects
 - ATL Simple Object Wizard
 ms.assetid: f7f85741-9aad-4543-a917-a29b996364da
-ms.openlocfilehash: 7b1d83e74c08f8cb0109c6e5db19ba0e4ebeda6e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e18c1848c55208b02026aba7684db928e0d6fc0a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522488"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258517"
 ---
 # <a name="atl-simple-object-wizard"></a>ATL 단순 개체 마법사
 
@@ -88,7 +88,6 @@ Visual Studio 2008부터,이 마법사에서 생성 된 등록 스크립트 등�
 
    컨테이너 개체의 CLSID 대신 사용할 수 있는 이름을 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 단순 개체](../../atl/reference/adding-an-atl-simple-object.md)
-

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - application-specific events [MFC]
 - command routing [MFC], MFC
 ms.assetid: 39e68189-a580-40d0-9e35-bf5cd24a8ecf
-ms.openlocfilehash: fd9dbc58c4887a1ad62d5690ec38ed96cf77feac
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81b0749167391a841badff5494023a2ca5d3147e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50444540"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279707"
 ---
 # <a name="how-the-framework-calls-your-code"></a>프레임워크가 코드를 호출하는 방법
 
@@ -29,9 +29,8 @@ ms.locfileid: "50444540"
 
 관련된 항목에서 어떤 프레임 워크를 초기화 되는 응용 프로그램을 실행 및 정리 응용 프로그램이 종료 설명 합니다. 작성 하는 코드 적합 한 위치를 이해할 수 있습니다.
 
-자세한 내용은 [클래스 CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md) 하 고 [문서 템플릿 및 문서/뷰 만들기 프로세스](../mfc/document-templates-and-the-document-view-creation-process.md)합니다.
+자세한 내용은 참조 하세요. [클래스 CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md) 하 고 [문서 템플릿 및 문서/뷰 만들기 프로세스](../mfc/document-templates-and-the-document-view-creation-process.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크를 기반으로 구축](../mfc/building-on-the-framework.md)
-

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - connection points [C++], managing
 - CComDynamicUnkArray class
 ms.assetid: 202470d7-9a1b-498f-b96d-659d681acd65
-ms.openlocfilehash: c18f28cac89288096b812635e77194bfb5dd224b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39f137f199db1d7519801c19375baea6cd08db93
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50448687"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274157"
 ---
 # <a name="ccomdynamicunkarray-class"></a>CComDynamicUnkArray 클래스
 
@@ -42,7 +42,7 @@ class CComDynamicUnkArray
 |이름|설명|
 |----------|-----------------|
 |[CComDynamicUnkArray::CComDynamicUnkArray](#ccomdynamicunkarray)|생성자입니다. 컬렉션 값을 NULL 및 컬렉션 크기를 0으로 초기화합니다.|
-|[CComDynamicUnkArray:: ~ CComDynamicUnkArray](#dtor)|소멸자입니다.|
+|[CComDynamicUnkArray::~CComDynamicUnkArray](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -129,7 +129,7 @@ CComDynamicUnkArray();
 
 컬렉션 크기를 0으로 설정 하 고 NULL 값을 초기화 합니다. 소멸자는 필요한 경우 컬렉션을 해제 합니다.
 
-##  <a name="dtor"></a>  CComDynamicUnkArray:: ~ CComDynamicUnkArray
+##  <a name="dtor"></a>  CComDynamicUnkArray::~CComDynamicUnkArray
 
 소멸자입니다.
 
@@ -238,7 +238,7 @@ BOOL Remove(DWORD dwCookie);
 
 포인터는 제거 하는 경우 TRUE를 반환합니다 그렇지 않으면 FALSE입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComUnkArray 클래스](../../atl/reference/ccomunkarray-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

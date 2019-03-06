@@ -11,12 +11,12 @@ helpviewer_keywords:
 - dialog boxes, modal
 - modal dialog boxes, ATL
 ms.assetid: 2ae65cc9-4f32-4168-aecd-200b4a480fdf
-ms.openlocfilehash: 8662a1bc17f84c8a2513a1126b28d676d0939b31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b0790d9c29b50b1ac454815cd2189e0efb31b9ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474076"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293540"
 ---
 # <a name="csimpledialog-class"></a>CSimpleDialog 클래스
 
@@ -54,7 +54,7 @@ class CSimpleDialog : public CDialogImplBase
 
 참조 [대화 상자 구현](../../atl/implementing-a-dialog-box.md) 자세한 내용은 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CDialogImplBase`
 
@@ -87,6 +87,6 @@ INT_PTR DoModal(HWND hWndParent = ::GetActiveWindow());
 
 이 메서드는 대화 상자가 활성화 되는 동안 모든 사용자 상호 작용을 처리 합니다. 이 대화 상자 모달; 사용 즉, 사용자가 대화 상자를 닫을 때까지 다른 windows 상호 작용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

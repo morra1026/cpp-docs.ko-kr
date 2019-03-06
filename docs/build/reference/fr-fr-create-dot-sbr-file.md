@@ -13,12 +13,12 @@ helpviewer_keywords:
 - FR compiler option [C++]
 - symbolic browser information
 ms.assetid: 3fd8f88b-3924-4feb-9393-287036a28896
-ms.openlocfilehash: 1eeca5d5ddbb40e0439a1774392f3c3b53c3c90e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 41b415889465441b0c53f12ec7f4aa412a636562
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656237"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418089"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr(.Sbr 파일 만들기)
 
@@ -58,7 +58,7 @@ ms.locfileid: "50656237"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>을 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

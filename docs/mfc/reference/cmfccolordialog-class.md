@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCColorDialog [MFC], SetPageOne
 - CMFCColorDialog [MFC], SetPageTwo
 ms.assetid: 235bbbbc-a3b1-46e0-801b-fb55093ec579
-ms.openlocfilehash: a786579797b9ffacca5b338e4cfd6991965704e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d94c223ed1e0b236ae8565d13a9f2c9652b6eb84
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490368"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270312"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog 클래스
 
@@ -84,7 +84,7 @@ class CMFCColorDialog : public CDialogEx
 
 생성할 수 있습니다는 `CMFCColorDialog` 스택의 개체를 호출 `DoModal`, 초기 색에 대 한 매개 변수로 전달 합니다 `CMFCColorDialog` 생성자. 색 선택 대화 상자는 다음 몇 가지 만듭니다 [CMFCColorPickerCtrl 클래스](../../mfc/reference/cmfccolorpickerctrl-class.md) 각 색상표를 처리 하는 개체입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -256,7 +256,7 @@ void SetPageTwo(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

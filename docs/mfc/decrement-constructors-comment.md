@@ -11,12 +11,12 @@ helpviewer_keywords:
 - constructors [MFC], declaring
 - instance constructors, code comments
 ms.assetid: f400774e-ba85-49ed-85b7-70ef2f7dcb2b
-ms.openlocfilehash: ee36ad991f2a19211b494010d6ff0a5338b80557
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0d02af016a0c7bfb0869b7cdd30fe0db2975102
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480706"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265810"
 ---
 # <a name="-constructors-comment"></a>// 생성자 주석
 
@@ -24,11 +24,10 @@ ms.locfileid: "50480706"
 
 예를 들어, 클래스 `CStdioFile` 아래 목록에 표시 된 것 중 하나는 세 가지 생성자가 [주석의 예제](../mfc/an-example-of-the-comments.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 소스 파일 사용](../mfc/using-the-mfc-source-files.md)<br/>
 [구현 주석](../mfc/decrement-implementation-comment.md)<br/>
 [특성 주석](../mfc/decrement-attributes-comment.md)<br/>
 [작업 주석](../mfc/decrement-operations-comment.md)<br/>
 [재정의 가능 주석](../mfc/decrement-overridables-comment.md)
-

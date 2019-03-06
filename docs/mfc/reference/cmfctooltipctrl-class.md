@@ -32,18 +32,18 @@ helpviewer_keywords:
 - CMFCToolTipCtrl [MFC], SetLocation
 - CMFCToolTipCtrl [MFC], SetParams
 ms.assetid: 9fbfcfb1-a8ab-417f-ae29-9a9ca85ee58f
-ms.openlocfilehash: e8ab9485cb2613e88ef136b3c470af9915bf7725
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aaf9d9570906b7886d8ec78575c39db5d62099f7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564869"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293201"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl 클래스
 
 [CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md)를 기반으로 하는 확장된 도구 설명 구현입니다. `CMFCToolTipCtrl` 클래스 기반의 도구 설명은 아이콘, 레이블 및 설명을 표시할 수 있습니다. 그라데이션 채우기, 사용자 지정 텍스트와 테두리 색, 굵은 텍스트, 둥근 모서리 또는 풍선 스타일을 사용하여 시각적인 모양을 사용자 지정할 수 있습니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -75,7 +75,8 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 |[CMFCToolTipCtrl::SetFixedWidth](#setfixedwidth)||
 |[CMFCToolTipCtrl::SetHotRibbonButton](#sethotribbonbutton)||
 |[CMFCToolTipCtrl::SetLocation](#setlocation)||
-|[CMFCToolTipCtrl::SetParams](#setparams)|`CMFCToolTipInfo` 개체를 사용하여 도구 설명의 시각적 모양을 지정합니다.|
+|[CMFCToolTipCtrl::SetParams](#setparams)|
+  `CMFCToolTipInfo` 개체를 사용하여 도구 설명의 시각적 모양을 지정합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -85,7 +86,8 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 
 1. 사용 된 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md) 응용 프로그램에서 도구 설명 관리자를 초기화 하는 방법입니다.
 
-2. `CMFCToolTipInfo` 구조체를 만들어 원하는 시각적 스타일을 지정합니다.
+2. 
+  `CMFCToolTipInfo` 구조체를 만들어 원하는 시각적 스타일을 지정합니다.
 
 ```
 CMFCToolTipInfo params;
@@ -120,7 +122,8 @@ CMFCToolTipInfo params;
 theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
     RUNTIME_CLASS (CMFCToolTipCtrl), &params);
 ```
-`CMFCToolTipCtrl`에서 새 클래스를 파생시켜 도구 설명 동작과 렌더링을 제어할 수도 있습니다. 새 도구 설명 컨트롤 클래스를 지정하려면 `CTooltipManager::SetTooltipParams` 메서드를 사용합니다.
+
+  `CMFCToolTipCtrl`에서 새 클래스를 파생시켜 도구 설명 동작과 렌더링을 제어할 수도 있습니다. 새 도구 설명 컨트롤 클래스를 지정하려면 `CTooltipManager::SetTooltipParams` 메서드를 사용합니다.
 
 ```
 myApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
@@ -140,7 +143,7 @@ theApp.GetTooltipManager ()->SetTooltipParams (AFX_TOOLTIP_TYPE_ALL,
 
 [!code-cpp[NVC_MFC_RibbonApp#41](../../mfc/reference/codesnippet/cpp/cmfctooltipctrl-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -409,7 +412,7 @@ void SetLocation(CPoint pt);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *(태평양 표준시)*<br/>
+[in] *pt*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -430,11 +433,11 @@ void SetParams(CMFCToolTipInfo* pParams);
 
 도구 설명이 표시 됩니다, 색을 사용 하 여 그리기는 비주얼 스타일을 때마다 *pParams* 지정 합니다. 변수의 *pParams* 보호 된 멤버에 저장 됩니다 `m_Params`를 재정의 하는 파생된 클래스에서 액세스할 수 있는 [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl: : OnDrawIcon](#ondrawicon)하십시오 [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel)를 [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), 또는 [CMFCToolTipCtrl::OnFillBackground](#onfillbackground)지정 된 모양을 유지할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CToolTipCtrl 클래스](../../mfc/reference/ctooltipctrl-class.md)<br/>
+[CToolTipCtrl Class](../../mfc/reference/ctooltipctrl-class.md)<br/>
 [CTooltipManager 클래스](../../mfc/reference/ctooltipmanager-class.md)<br/>
 [CMFCToolTipInfo 클래스](../../mfc/reference/cmfctooltipinfo-class.md)<br/>
 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md)

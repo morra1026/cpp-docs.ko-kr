@@ -15,12 +15,12 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumOnSTLImpl class
 ms.assetid: 1789e77b-88b8-447d-a490-806b918912ce
-ms.openlocfilehash: 0ec505871f057d90f6580e547c23a0879af4c3f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8ff29522351b542d0b674bc173040d4468d00f1c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638752"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277451"
 ---
 # <a name="ienumonstlimpl-class"></a>IEnumOnSTLImpl 클래스
 
@@ -36,7 +36,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 COM 열거자입니다. 참조 [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) 예입니다.
 
 *piid*<br/>
@@ -82,7 +82,7 @@ C + + 표준 라이브러리 컨테이너 클래스입니다.
 
 그러나 (예를 들어 하나 열거자 인터페이스 외에 인터페이스를 노출 하는) 사용자 지정 열거자를 제공 해야 수행 하는 경우이 클래스에서 파생할 수 있습니다. 이런에서 것을 재정의 해야 합니다 [복제](#clone) 고유한 구현을 제공 하는 방법입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Base`
 
@@ -224,6 +224,6 @@ STDMETHOD(Skip)(ULONG celt);
 
 표준 HRESULT 값입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

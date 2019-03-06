@@ -1,18 +1,18 @@
 ---
-title: MFC 데이터베이스 응용 프로그램의 파일 메뉴
+title: MFC 데이터베이스 애플리케이션의 파일 메뉴
 ms.date: 11/04/2016
 helpviewer_keywords:
 - File menu
 - database applications [MFC], File menu commands
 ms.assetid: 92dafb75-c1b3-4860-80a0-87a83bfc36f2
-ms.openlocfilehash: ce56dd5f04312ae9e7b7f747ce81cb704f3d085d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c9a195a81423417809b65b5edce32027071ad2e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629205"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279122"
 ---
-# <a name="file-menu-in-an-mfc-database-application"></a>MFC 데이터베이스 응용 프로그램의 파일 메뉴
+# <a name="file-menu-in-an-mfc-database-application"></a>MFC 데이터베이스 애플리케이션의 파일 메뉴
 
 어떻게 해야 하면 Open, Close 해석, 저장 및 다른 이름으로 저장 명령을 파일 메뉴 MFC 데이터베이스 응용 프로그램을 만들고 직렬화를 사용 하지 않는 경우 다음은 몇 가지 제안 사항이이 질문에 대 한 스타일 지침은 없습니다 있기는 합니다.
 
@@ -32,7 +32,6 @@ MFC 응용 프로그램 마법사 없는 문서 관련 파일 메뉴 명령을 �
 
 - 저장을 제거할 단단히 싶을 일반적으로 데이터베이스 응용 프로그램 전체 문서를 저장 하지 않습니다, 때문에 serialize 된 문서를 사용 하 여 프로필 정보를 저장 하지 않는 한 구현으로 저장 합니다. 그렇지 않은 경우, 예를 들어, "트랜잭션을 커밋할." Save 명령을 구현할 수 있습니다. 참조 [Technical Note 22](../mfc/tn022-standard-commands-implementation.md) 이러한 명령을 재정의 하는 방법에 대 한 자세한 내용은 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[Serialization: Serialization과 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)
-
+[Serialization: Serialization vs입니다. 입/출력 데이터베이스](../mfc/serialization-serialization-vs-database-input-output.md)

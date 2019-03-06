@@ -5,12 +5,12 @@ f1_keywords:
 - amp_graphics/Concurrency::graphics::direct3d
 - amp_short_vectors/Concurrency::graphics::direct3d
 ms.assetid: be283331-07cf-46e4-91a1-e8aa85d4ec8e
-ms.openlocfilehash: 2a07aeab410750e38684f564df4cb89c1846b95e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fb03edd63c612fd070e50e2f5d229cd8e207812
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626826"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280799"
 ---
 # <a name="concurrencygraphicsdirect3d-namespace"></a>Concurrency::graphics::direct3d 네임스페이스
 
@@ -38,8 +38,8 @@ namespace direct3d;
 
 **헤더:** amp_graphics.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

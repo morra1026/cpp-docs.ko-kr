@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CCtrlView [MFC], m_dwDefaultStyle
 - CCtrlView [MFC], m_strClass
 ms.assetid: ff488596-1e71-451f-8fec-b0831a7b44e0
-ms.openlocfilehash: bc202afa357dcb9d75a0dd73a3128b7b3f0cc14e
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 5cb68ab46e2cac8b2f1dcc13989077e32480a2c7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693401"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259570"
 ---
 # <a name="cctrlview-class"></a>CCtrlView 클래스
 
@@ -59,7 +59,7 @@ class CCtrlView : public CView
 
 클래스 `CCtrlView` 및 해당 파생 항목 [CEditView](../../mfc/reference/ceditview-class.md), [CListView](../../mfc/reference/clistview-class.md), [CTreeView](../../mfc/reference/ctreeview-class.md), 및 [CRichEditView](../../mfc/reference/cricheditview-class.md)를 조정 합니다 새 공용 컨트롤을 문서 뷰 아키텍처 지원 Windows 95/98 및 Windows NT 버전 3.51 이상. 문서-뷰 아키텍처에 대 한 자세한 내용은 참조 하세요. [문서/뷰 아키텍처](../../mfc/document-view-architecture.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -161,7 +161,7 @@ A [CREATESTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcreatestructa) 구�
 
 창 스타일 변경에 대 한 자세한 내용은 참조는 [MFC에서 만든 창 스타일 변경](../../mfc/changing-the-styles-of-a-window-created-by-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CView 클래스](../../mfc/reference/cview-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

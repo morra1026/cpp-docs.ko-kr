@@ -8,16 +8,16 @@ helpviewer_keywords:
 - objects [ATL]
 - ATL, simple objects
 ms.assetid: 9c57d2ef-0447-4c84-8982-3304b8e49847
-ms.openlocfilehash: df835b35bb036086382fc6adb4beed142f99be76
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 95a93268ca76516c1b3f736c106518ae6d94cc27
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508303"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326818"
 ---
 # <a name="adding-an-atl-simple-object"></a>ATL 단순 개체 추가
 
-프로젝트에 ATL (액티브 템플릿 라이브러리) 개체를 추가할 프로젝트는 ATL 응용 프로그램 또는 ATL 지원을 포함 하는 MFC 응용 프로그램으로 만들어야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 응용 프로그램을 만들거나 [MFC 응용 프로그램에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 응용 프로그램용 ATL 지원을 구현할 수 있습니다.
+프로젝트에 ATL (액티브 템플릿 라이브러리) 개체를 추가할 프로젝트는 ATL 응용 프로그램 또는 ATL 지원을 포함 하는 MFC 응용 프로그램으로 만들어야 합니다. [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)를 사용하여 ATL 애플리케이션을 만들거나 [MFC 애플리케이션에 ATL 개체를 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)하여 MFC 애플리케이션용 ATL 지원을 구현할 수 있습니다.
 
 먼저를 만들거나 사용 하 여 나중에 추가할 때 새 ATL 개체에 대 한 COM 인터페이스를 정의할 수 있습니다는 [인터페이스 구현](../../ide/implement-interface-wizard.md) 에서 명령을 합니다 **클래스 뷰** 바로 가기 메뉴.
 
@@ -33,7 +33,7 @@ ms.locfileid: "50508303"
 
 1. 클릭 **완료** 프로젝트에 개체를 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL 프로젝트에 새 인터페이스 추가](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>

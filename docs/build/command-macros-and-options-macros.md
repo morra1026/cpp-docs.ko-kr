@@ -7,12 +7,12 @@ helpviewer_keywords:
 - macros, options macros
 - macros, command macros
 ms.assetid: 50dff03c-0dc3-4a8a-9a17-57e0e4ea9bac
-ms.openlocfilehash: f18cfd6ada235485a5fe47bdc94b49631b9abbbe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: daf8c243f95f7cc12a3d3b1c5cf16f5a384c9671
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50601307"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418301"
 ---
 # <a name="command-macros-and-options-macros"></a>명령 매크로와 옵션 매크로
 
@@ -20,13 +20,13 @@ ms.locfileid: "50601307"
 
 |Microsoft 제품|명령 매크로|로 정의|옵션 매크로|
 |-----------------------|-------------------|----------------|-------------------|
-|매크로 어셈블러|**마찬가지로**|ml|**AFLAGS**|
+|매크로 어셈블러|**AS**|ml|**AFLAGS**|
 |기본 컴파일러|**BC**|bc|**BFLAGS**|
 |C 컴파일러|**CC**|cl|**CFLAGS**|
 |C++ 컴파일러|**CPP**|cl|**CPPFLAGS**|
 |C++ 컴파일러|**CXX**|cl|**CXXFLAGS**|
 |리소스 컴파일러|**RC**|rc|**RFLAGS**|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [특수 NMake 매크로](../build/special-nmake-macros.md)

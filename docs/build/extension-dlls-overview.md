@@ -1,5 +1,5 @@
 ---
-title: '확장명 DLL: 개요'
+title: '확장명 Dll: 개요'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - AFXDLL library
@@ -8,12 +8,12 @@ helpviewer_keywords:
 - shared DLL versions [C++]
 - extension DLLs [C++], about MFC extension DLLs
 ms.assetid: eb5e10b7-d615-4bc7-908d-e3e99b7b1d5f
-ms.openlocfilehash: 1967370f587b0b78c4e68ebff14804b20f158bd0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ad5c82d72a3cd9b4801274aefd40d96afdbcdd1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498204"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425057"
 ---
 # <a name="mfc-extension-dlls-overview"></a>MFC 확장명 Dll: 개요
 
@@ -43,6 +43,6 @@ AFXDLL 용어 Visual c + + 설명서에 더 이상 사용 되는 참고 합니�
 
 - [MFC DLL 만들기](../mfc/reference/mfc-dll-wizard.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DLL의 종류](../build/kinds-of-dlls.md)

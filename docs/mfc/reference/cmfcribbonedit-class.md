@@ -73,12 +73,12 @@ helpviewer_keywords:
 - CMFCRibbonEdit [MFC], SetTextAlign
 - CMFCRibbonEdit [MFC], SetWidth
 ms.assetid: 9b85f1f2-446b-454e-9af9-104fdad8a897
-ms.openlocfilehash: 094b91bb730f125ee3a159c80626a8724c10f93e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e1a8f601c9f5798494ee34d3c3987222c14ecfa7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578908"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292193"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit 클래스
 
@@ -286,7 +286,7 @@ void EnableSpinButtons(
 *nMin*<br/>
 [in] 최소 값 스핀 단추입니다.
 
-*최대*<br/>
+*nMax*<br/>
 [in] 최대 값 스핀 단추입니다.
 
 ### <a name="remarks"></a>설명
@@ -604,7 +604,7 @@ virtual void OnLButtonDown(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -619,7 +619,7 @@ virtual void OnLButtonUp(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -750,7 +750,7 @@ void SetWidth(
 
 `CMFCRibbonEdit` 컨트롤에는 디스플레이 모드에 따라 두 너비: 모드와 일반 모드를 부동 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

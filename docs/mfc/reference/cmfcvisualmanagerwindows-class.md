@@ -1,5 +1,5 @@
 ---
-title: CMFCVisualManagerWindows 클래스
+title: CMFCVisualManagerWindows Class
 ms.date: 11/04/2016
 f1_keywords:
 - CMFCVisualManagerWindows
@@ -140,18 +140,18 @@ helpviewer_keywords:
 - CMFCVisualManagerWindows [MFC], SetOfficeStyleMenus
 - CMFCVisualManagerWindows [MFC], m_b3DTabsXPTheme
 ms.assetid: 568b6e9e-8e67-4477-9a3d-2981cbd09861
-ms.openlocfilehash: e9f083f37c2e92172b05b907d733f9dbdb27ce45
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3219de7f90d76e18b52efab8d8601b848427fca7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559746"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275963"
 ---
-# <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows 클래스
+# <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows Class
 
 `CMFCVisualManagerWindows` Windows XP 또는 Vista 테마를 선택 하면 Microsoft Windows XP 또는 Microsoft Vista의 모양을 모방 합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -256,7 +256,7 @@ class CMFCVisualManagerWindows : public CMFCVisualManagerOfficeXP
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#10](../../mfc/reference/codesnippet/cpp/cmfcvisualmanagerwindows-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -309,7 +309,7 @@ virtual BOOL DrawComboBorderWinXP(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsDropped*<br/>
 [in] *bIsHighlighted*<br/>
 
@@ -332,7 +332,7 @@ virtual BOOL DrawComboDropButtonWinXP(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsDropped*<br/>
 [in] *bIsHighlighted*<br/>
 
@@ -426,7 +426,7 @@ virtual COLORREF GetToolbarButtonTextColor(
 ### <a name="parameters"></a>매개 변수
 
 [in] *pButton*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -549,7 +549,7 @@ virtual BOOL OnDrawBrowseButton(
 [in] *pDC*<br/>
 [in] *rect*<br/>
 [in] *pEdit*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 [in] *clrText*<br/>
 
 ### <a name="return-value"></a>반환 값
@@ -571,7 +571,7 @@ virtual void OnDrawButtonBorder(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -591,7 +591,7 @@ virtual void OnDrawButtonSeparator(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 [in] *bHorz*<br/>
 
 ### <a name="remarks"></a>설명
@@ -616,7 +616,7 @@ virtual void OnDrawCaptionButton(
 [in] *bActive*<br/>
 [in] *bHorz*<br/>
 [in] *bMaximized*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *nImageID*<br/>
 
 ### <a name="remarks"></a>설명
@@ -639,7 +639,7 @@ virtual void OnDrawCaptionButtonIcon(
 [in] *pButton*<br/>
 [in] *id*<br/>
 [in] *bActive*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *ptImage*<br/>
 
 ### <a name="remarks"></a>설명
@@ -663,7 +663,7 @@ virtual void OnDrawCheckBoxEx(
 [in] *nState*<br/>
 [in] *bHighlighted*<br/>
 [in] *bPressed*<br/>
-[in] *b 사용*<br/>
+[in] *bEnabled*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -683,7 +683,7 @@ virtual void OnDrawComboBorder(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsDropped*<br/>
 [in] *bIsHighlighted*<br/>
 [in] *pButton*<br/>
@@ -706,7 +706,7 @@ virtual void OnDrawComboDropButton(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsDropped*<br/>
 [in] *bIsHighlighted*<br/>
 [in] *pButton*<br/>
@@ -740,7 +740,7 @@ virtual void OnDrawEditBorder(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 [in] *bIsHighlighted*<br/>
 [in] *pButton*<br/>
 
@@ -1336,7 +1336,7 @@ virtual void OnFillButtonInterior(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -1487,7 +1487,7 @@ void SetOfficeStyleMenus(BOOL bOn = TRUE);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

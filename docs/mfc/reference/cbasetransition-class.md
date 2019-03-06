@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CBaseTransition [MFC], m_transition
 - CBaseTransition [MFC], m_type
 ms.assetid: dfe84007-bbc5-43b7-b5b8-fae9145573bf
-ms.openlocfilehash: b4c15be574700730e847bce06aaa4a6f82aed4b0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f9bc3708974511506741a35c11676df2b0be592
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539128"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258374"
 ---
 # <a name="cbasetransition-class"></a>CBaseTransition 클래스
 
@@ -74,7 +74,7 @@ class CBaseTransition : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CBaseTransition::CBaseTransition](#cbasetransition)|기본 전환 개체를 생성합니다.|
-|[CBaseTransition:: ~ CBaseTransition](#cbasetransition__~cbasetransition)|소멸자입니다. 전환 개체가 소멸 될 때 호출 됩니다.|
+|[CBaseTransition::~CBaseTransition](#cbasetransition__~cbasetransition)|소멸자입니다. 전환 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -108,7 +108,7 @@ class CBaseTransition : public CObject;
 
 이 클래스는 IUIAnimationTransition 인터페이스를 캡슐화 하 고 모든 전환에 대 한 기본 클래스로 사용 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -118,7 +118,7 @@ class CBaseTransition : public CObject;
 
 **헤더:** afxanimationcontroller.h
 
-##  <a name="_dtorcbasetransition"></a>  CBaseTransition:: ~ CBaseTransition
+##  <a name="_dtorcbasetransition"></a>  CBaseTransition::~CBaseTransition
 
 소멸자입니다. 전환 개체가 소멸 될 때 호출 됩니다.
 
@@ -385,7 +385,7 @@ void SetKeyframes(
 *pStart*<br/>
 전환의 시작 부분을 지정 하는 키 프레임입니다.
 
-*보류*<br/>
+*pEnd*<br/>
 전환의 끝을 지정 하는 키 프레임입니다.
 
 ### <a name="remarks"></a>설명
@@ -421,6 +421,6 @@ enum TRANSITION_TYPE;
 
 전환 형식이 특정 전환의 생성자에서 설정 됩니다. 예를 들어 CSinusoidalTransitionFromRange SINUSOIDAL_FROM_RANGE 해당 유형을 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

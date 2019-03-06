@@ -16,16 +16,17 @@ f1_keywords:
 helpviewer_keywords:
 - ISource class
 ms.assetid: c7b73463-42f6-4dcc-801a-81379b12d35a
-ms.openlocfilehash: 4e96dc11455015a83af9be545ba15c96b5e2f779
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b0704f3d666eca08bafb33f9236709478d347d8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50620521"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288768"
 ---
 # <a name="isource-class"></a>ISource 클래스
 
-`ISource` 클래스는 모든 소스 블록에 대한 인터페이스입니다. 소스 블록은 `ITarget` 블록에 메시지를 전파합니다.
+
+  `ISource` 클래스는 모든 소스 블록에 대한 인터페이스입니다. 소스 블록은 `ITarget` 블록에 메시지를 전파합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -71,7 +72,7 @@ class ISource;
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `ISource`
 
@@ -124,7 +125,7 @@ virtual void acquire_ref(_Inout_ ITarget<T>* _PTarget) = 0;
 
 이 메서드는 프로그램 `ITarget` 하는 동안이 원본에 연결 되는 개체는 `link_target` 메서드.
 
-##  <a name="consume"></a> 사용
+##  <a name="consume"></a> consume
 
 파생된 클래스에서 재정의 되 면 이전에 제공한 메시지를 생성 `ISource` 차단 하 고 호출자에 게 소유권을 전송 하 여 대상에 의해 성공적으로 예약 합니다.
 
@@ -150,7 +151,7 @@ virtual message<T>* consume(
 
 `consume` 메서드와 비슷합니다 `accept`를 항상 호출을 통해 야 하지만 `reserve` 반환 **true**합니다.
 
-##  <a name="dtor"></a> ~ ISource
+##  <a name="dtor"></a> ~ISource
 
 제거 된 `ISource` 개체입니다.
 
@@ -253,7 +254,7 @@ virtual void unlink_target(_Inout_ ITarget<T>* _PTarget) = 0;
 virtual void unlink_targets() = 0;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [ITarget 클래스](itarget-class.md)

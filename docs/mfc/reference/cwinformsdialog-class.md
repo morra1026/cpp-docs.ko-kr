@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CWinFormsDialog [MFC], GetControlHandle
 - CWinFormsDialog [MFC], OnInitDialog
 ms.assetid: e3cec000-a578-448e-b06a-8af256312f61
-ms.openlocfilehash: 3baa9f99a5a1ecefc0ad9bc9f0c56f0f67dc2e80
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d0731e40a622f0d360cabc03b68b0fe74c1ebc9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573500"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277120"
 ---
 # <a name="cwinformsdialog-class"></a>CWinFormsDialog 클래스
 
@@ -58,8 +58,8 @@ class CWinFormsDialog :
 
 |이름||
 |----------|-|
-|[CWinFormsDialog::operator-&gt;](#operator_-_gt)|대체 [CWinFormsDialog::GetControl](#getcontrol) 식에 있습니다.|
-|[CWinFormsDialog::operator TManagedControl ^](#operator_tmanagedcontrol)|Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.|
+|[CWinFormsDialog::operator -&gt;](#operator_-_gt)|대체 [CWinFormsDialog::GetControl](#getcontrol) 식에 있습니다.|
+|[CWinFormsDialog::operator TManagedControl^](#operator_tmanagedcontrol)|Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -126,7 +126,7 @@ MFC 대화 상자를 만들면 (사용 하는 [만들기](../../mfc/reference/cd
 
 대화 상자 초기화 될 때 특수 한 처리를 수행 해야 하는 경우이 멤버 함수를 재정의 합니다. 이 메서드를 사용 하 여 자세한 내용은 [CDialog::OnInitDialog](../../mfc/reference/cdialog-class.md#oninitdialog)합니다.
 
-##  <a name="operator_-_gt"></a>  CWinFormsDialog::operator-&gt;
+##  <a name="operator_-_gt"></a>  CWinFormsDialog::operator -&gt;
 
 대체 [CWinFormsDialog::GetControl](#getcontrol) 식에 있습니다.
 
@@ -140,7 +140,7 @@ inline TManagedControl^  operator->() const throw();
 
 Windows Forms를 사용 하 여 정보를 참조 하세요 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
-##  <a name="operator_tmanagedcontrol_xor"></a>  CWinFormsDialog::operator TManagedControl ^
+##  <a name="operator_tmanagedcontrol_xor"></a>  CWinFormsDialog::operator TManagedControl^
 
 Windows Forms 사용자 정의 컨트롤에 대 한 참조로 형식을 캐스팅합니다.
 
@@ -152,7 +152,7 @@ inline operator TManagedControl^() const throw();
 
 이 연산자는 Windows Forms 컨트롤에 대 한 참조로 형식을 캐스팅합니다. 전달 되는 `CWinFormsDialog<TManagedControl>` 대화 상자는 Windows Forms 사용자 컨트롤 개체에 대 한 포인터를 허용 하는 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [CWinFormsView 클래스](../../mfc/reference/cwinformsview-class.md)<br/>

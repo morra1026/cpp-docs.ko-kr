@@ -20,12 +20,12 @@ helpviewer_keywords:
 - COleStreamFile [MFC], GetStream
 - COleStreamFile [MFC], OpenStream
 ms.assetid: e4f93698-e17c-4a18-a7c0-4b4df8eb4d93
-ms.openlocfilehash: 25d3da4ac9092fe53e84e446e93ff7aa030e6709
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2bc943c74f456302b13db77bf28b6e4b21a5524b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577543"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258734"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile 클래스
 
@@ -62,7 +62,7 @@ class COleStreamFile : public CFile
 
 `COleStreamFile` 개체와 똑같이 조작 [CFile](../../mfc/reference/cfile-class.md) 개체입니다.
 
-스트림 및 저장소를 조작 하는 방법에 대 한 자세한 내용은 문서 참조 [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...
+스트림 및 저장소를 조작 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [컨테이너: 복합 파일](../../mfc/containers-compound-files.md)...
 
 자세한 내용은 [IStream](/windows/desktop/api/objidl/nn-objidl-istream) 하 고 [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) Windows SDK의 합니다.
 
@@ -241,8 +241,7 @@ BOOL OpenStream(
 
 자세한 내용은 [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFile 클래스](../../mfc/reference/cfile-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

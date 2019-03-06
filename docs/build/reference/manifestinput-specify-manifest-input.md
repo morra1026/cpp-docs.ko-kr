@@ -2,12 +2,12 @@
 title: /MANIFESTINPUT(매니페스트 입력 지정)
 ms.date: 11/04/2016
 ms.assetid: a0b0c21e-1f9b-4d8c-bb3f-178f57fa7f1b
-ms.openlocfilehash: 30e0d4b71943dec8e0efe9112caf7cdf57f66809
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0b60b1f9ebff4547017fcfac586f00625311937
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442694"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418813"
 ---
 # <a name="manifestinput-specify-manifest-input"></a>/MANIFESTINPUT(매니페스트 입력 지정)
 
@@ -30,7 +30,7 @@ ms.locfileid: "50442694"
 
 이 옵션은 Visual Studio에서 직접 설정할 수 없습니다. 대신 사용 합니다 **추가 매니페스트 파일** 포함할 추가 매니페스트 파일을 지정 하려면 프로젝트의 속성입니다. 자세한 내용은 [입력 및 출력, 매니페스트 도구, 구성 속성 \<프로젝트 이름 > 속성 페이지 대화 상자](../../ide/input-and-output-manifest-tool.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

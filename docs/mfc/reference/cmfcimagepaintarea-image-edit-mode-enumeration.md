@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - IMAGE_EDIT_MODE Enumeration method [MFC]
 ms.assetid: e51db66a-fa1c-4766-9dac-a25b595f871a
-ms.openlocfilehash: 6460a83d63a0dd08d8607061bf1deca471fad3c5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 372a1df6500f4d7219c89d8f82425246c2236514
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50658044"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272141"
 ---
 # <a name="cmfcimagepaintareaimageeditmode-enumeration"></a>CMFCImagePaintArea::IMAGE_EDIT_MODE 열거형
 
@@ -53,7 +53,7 @@ IMAGE_EDIT_MODE_COLOR 그리기 모드를 사용 하 여 이미지에서 색을 
 
 **헤더:** afximagepaintarea.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], features that affect linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: e4c03896-c99c-4599-8502-e0f4bebe69d0
-ms.openlocfilehash: 21d0baccaf74fc08bb110b0ae9f8b7dc108abd6b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3fed75b18ead80b8367eb1254793d632629efeff
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561579"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426708"
 ---
 # <a name="compiler-controlled-link-options"></a>Compiler-Controlled LINK Options
 
@@ -25,10 +25,10 @@ ms.locfileid: "50561579"
 |----------------------|---------------------------------|
 |.C,.cxx,.cpp 또는.def 이외의 모든 파일 이름 확장명|링크에 대 한 입력으로 파일 이름을 전달합니다.|
 |*filename*.def|/DEF 전달:*filename*.def|
-|/F*수*|/STACK 패스:*수*|
-|/Fd*파일 이름*|/PDB 전달:*파일 이름*|
-|/Fe*파일 이름*|전달/출력:*파일 이름*|
-|/Fm*파일 이름*|패스 /MAP:*파일 이름*|
+|/F*number*|/STACK 패스:*수*|
+|/Fd*filename*|/PDB 전달:*파일 이름*|
+|/Fe*filename*|전달/출력:*파일 이름*|
+|/Fm*filename*|패스 /MAP:*파일 이름*|
 |/Gy|패키지 함수 (Comdat);를 만듭니다. 함수 수준 링크 사용|
 |/LD|/DLL 전달|
 |/LDd|/DLL 전달|
@@ -42,7 +42,7 @@ ms.locfileid: "50561579"
 
 자세한 내용은 [컴파일러 옵션](../../build/reference/compiler-options.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

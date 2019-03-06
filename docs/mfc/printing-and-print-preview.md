@@ -8,12 +8,12 @@ helpviewer_keywords:
 - print preview
 - printing [MFC], print preview
 ms.assetid: d15059cd-32de-4450-95f7-e73aece238f6
-ms.openlocfilehash: 73aae3391f07ba5ba2fe54e2c45179fe4b347a0b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ca6663aefce219fad4d2e3be74215d2a78206a8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629296"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263665"
 ---
 # <a name="printing-and-print-preview"></a>인쇄 및 인쇄 미리 보기
 
@@ -23,7 +23,7 @@ MFC 클래스를 통해 프로그램의 문서에 대 한 인쇄 및 인쇄 미�
 
 다음이의 문서 인쇄가 Microsoft Foundation 클래스 라이브러리 (MFC)에서 구현 되는 방법 및 프레임 워크에 이미 기본 제공 인쇄 아키텍처를 활용 하는 방법을 설명 합니다. 문서는 또한 MFC 인쇄 미리 보기 기능을 쉽게 구현에서 지 원하는 방법 및 사용 하 여 해당 기능을 수정 하는 방법에 설명 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [인쇄](../mfc/printing.md)
 
@@ -31,6 +31,6 @@ MFC 클래스를 통해 프로그램의 문서에 대 한 인쇄 및 인쇄 미�
 
 - [샘플](../visual-cpp-samples.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

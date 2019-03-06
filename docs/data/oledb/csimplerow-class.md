@@ -35,12 +35,12 @@ helpviewer_keywords:
 - m_dwRef
 - m_iRowset
 ms.assetid: 06d9621d-60cc-4508-8b0c-528d1b1a809b
-ms.openlocfilehash: dba86b310dcd9b89026d95732f9ca542e6995146
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: b7284ace73d80eff6337e1d71cafef26094455f0
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556636"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414028"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow 클래스
 
@@ -78,7 +78,7 @@ class CSimpleRow
 
 행 핸들은 논리적으로 결과 행에 대 한 고유 태그입니다. `IRowsetImpl` 새로 만듭니다 `CSimpleRow` 에서 요청 된 모든 행에 대 한 [irowsetimpl:: Getnextrows](../../data/oledb/irowsetimpl-getnextrows.md)합니다. `CSimpleRow` 기본 템플릿 인수를 그대로의 행 핸들을 사용자 고유의 구현으로 대체할 수 있습니다 `IRowsetImpl`합니다. 이 클래스를 대체 한 유일한 요구 사항은 형식의 단일 매개 변수를 받아들이는 생성자를 제공 하는 대체 클래스는 **긴**합니다.
 
-## <a name="addrefrow"></a> Csimplerow:: Addrefrow
+## <a name="addrefrow"></a> CSimpleRow::AddRefRow
 
 스레드로부터 안전한 방식으로 기존 행 핸들에 대 한 참조 횟수를 추가합니다.
 
@@ -88,7 +88,7 @@ class CSimpleRow
 DWORD AddRefRow();
 ```
 
-## <a name="compare"></a> Csimplerow:: Compare
+## <a name="compare"></a> CSimpleRow::Compare
 
 동일한 행 인스턴스를 참조 하는지에 두 개의 행을 비교 합니다.
 
@@ -105,9 +105,9 @@ HRESULT Compare(CSimpleRow* pRow);
 
 ### <a name="return-value"></a>반환 값
 
-일반적으로 S_OK HRESULT 값을 두 행이 동일한 행 인스턴스를 나타내거나 S_FALSE를 두 개 행을 나타내는 다릅니다. 참조 [IRowsetIdentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) 에 *OLE DB Programmer's Reference* 다른 가능한 반환 값입니다.
+일반적으로 S_OK HRESULT 값을 두 행이 동일한 행 인스턴스를 나타내거나 S_FALSE를 두 개 행을 나타내는 다릅니다. 참조 [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) 에 *OLE DB Programmer's Reference* 다른 가능한 반환 값입니다.
 
-## <a name="csimplerow"></a> Csimplerow:: Csimplerow
+## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
 
 생성자입니다.
 
@@ -126,7 +126,7 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 
 집합 [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) 하 *iRowsetCur*합니다.
 
-## <a name="releaserow"></a> Csimplerow:: Releaserow
+## <a name="releaserow"></a> CSimpleRow::ReleaseRow
 
 스레드로부터 안전한 방식으로 행을 해제합니다.
 
@@ -136,7 +136,7 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 DWORD ReleaseRow();
 ```
 
-## <a name="dwref"></a> Csimplerow:: M_dwref
+## <a name="dwref"></a> CSimpleRow::m_dwRef
 
 기존 행 핸들에 대 한 참조 수입니다.
 
@@ -146,7 +146,7 @@ DWORD ReleaseRow();
 DWORD m_dwRef;
 ```
 
-## <a name="irowset"></a> Csimplerow:: M_irowset
+## <a name="irowset"></a> CSimpleRow::m_iRowset
 
 커서를 나타내는 행 집합에 인덱스입니다.
 

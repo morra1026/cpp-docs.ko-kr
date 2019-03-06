@@ -5,24 +5,24 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], properties
 - properties [MFC], custom
 ms.assetid: 85af5167-74c7-427b-b8f3-e0d7b73942e5
-ms.openlocfilehash: 2cc9cfa1886c6ba8e714736e0192b56bf3b154f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e02d5523b894f89aa93c8d2765a128920afa2353
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496424"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284205"
 ---
 # <a name="mfc-activex-controls-adding-custom-properties"></a>MFC ActiveX 컨트롤: 사용자 지정 속성 추가
 
 사용자 지정 속성에서 아직 구현 하지 않는 스톡 속성에서 사용자 지정 속성 다는 `COleControl` 클래스입니다. 사용자 지정 속성을 특정 상태 또는 컨트롤을 사용 하 여 프로그래머에 ActiveX 컨트롤의 모양 표시 됩니다.
 
-이 문서에서는 ActiveX 컨트롤 속성 추가 마법사를 사용 하 여 사용자 지정 속성을 추가 하는 방법 및 결과 코드 수정 내용을 설명 합니다. 다음과 같은 내용을 다룹니다.
+이 문서에서는 ActiveX 컨트롤 속성 추가 마법사를 사용 하 여 사용자 지정 속성을 추가 하는 방법 및 결과 코드 수정 내용을 설명 합니다. 다루는 주제는 다음과 같습니다.
 
 - [속성 추가 마법사를 사용 하 여 사용자 지정 속성을 추가 하려면](#_core_using_classwizard_to_add_a_custom_property)
 
 - [추가 사용자 지정 속성에 대 한 속성 마법사 변경](#_core_classwizard_changes_for_custom_properties)
 
-사용자 지정 속성 구현의 네 가지가 제공: 멤버 변수, 알림, Get/Set 메서드 및 매개 변수화 된 멤버 변수입니다.
+사용자 지정 속성 구현의 네 가지가 제공 합니다. 멤버 변수, 알림, Get/Set 메서드를 사용 하 여 멤버 변수 및 매개 변수가 있는 합니다.
 
 - 멤버 변수 구현
 
@@ -92,7 +92,7 @@ CircleOffset 사용자 지정 속성에 추가 하면 속성 추가 마법사 �
 
 속성 추가 마법사 자동으로 추가 호출을 하 [SetModifiedFlag](../mfc/reference/colecontrol-class.md#setmodifiedflag), Set 함수 본문입니다. 수정 된 것으로 컨트롤을 표시이 함수를 호출 합니다. 컨트롤을 수정 하는 경우 컨테이너를 저장할 때 새 상태로 저장 됩니다. 컨트롤의 영구 상태의 일부로 저장 하는 속성 값이 변경 될 때마다이 함수를 호출 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)<br/>

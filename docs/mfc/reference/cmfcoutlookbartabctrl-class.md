@@ -44,17 +44,17 @@ helpviewer_keywords:
 - CMFCOutlookBarTabCtrl [MFC], SetToolbarImageList
 - CMFCOutlookBarTabCtrl [MFC], SetVisiblePageButtons
 ms.assetid: b1f2b3f7-cc59-49a3-99d8-7ff9b37c044b
-ms.openlocfilehash: e858d5a481add0f3c6e61175a96a5b27133bf125
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 01effb8cb1142db0bcae6f9c456e4a3b3abd69e8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50559720"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269944"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl Class
 
 Microsoft Outlook의 **탐색 창** 과 시각적으로 유사한 탭 컨트롤입니다.
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 ## <a name="syntax"></a>구문
 
 ```
@@ -83,20 +83,20 @@ class CMFCOutlookBarTabCtrl : public CMFCBaseTabCtrl
 |[CMFCOutlookBarTabCtrl::EnableAnimation](#enableanimation)|활성 탭 간에 전환 하는 동안 발생 하는 애니메이션 사용 되는지 여부를 지정 합니다.|
 |[CMFCOutlookBarTabCtrl::EnableInPlaceEdit](#enableinplaceedit)|사용자가 Outlook 표시줄의 탭 단추에 텍스트 레이블을 수정할 수 있는지 여부를 지정 합니다. (재정의 [CMFCBaseTabCtrl::EnableInPlaceEdit](../../mfc/reference/cmfcbasetabctrl-class.md#enableinplaceedit).)|
 |[CMFCOutlookBarTabCtrl::EnableScrollButtons](#enablescrollbuttons)|사용자가 Outlook 표시줄 창에 단추를 통해 스크롤할 수 있는 단추를 사용 하도록 설정 하기 위해 프레임 워크에서 호출 됩니다.|
-|`CMFCOutlookBarTabCtrl::FindTargetWnd`|지정된 된 점이 포함 된 창을 식별 합니다. (재정의 [CMFCBaseTabCtrl::FindTargetWnd](../../mfc/reference/cmfcbasetabctrl-class.md#findtargetwnd).)|
+|`CMFCOutlookBarTabCtrl::FindTargetWnd`|지정된 지점에 포함된 창을 확인합니다. (재정의 [CMFCBaseTabCtrl::FindTargetWnd](../../mfc/reference/cmfcbasetabctrl-class.md#findtargetwnd).)|
 |[CMFCOutlookBarTabCtrl::GetBorderSize](#getbordersize)|Outlook 탭 컨트롤의 테두리 크기를 반환합니다.|
-|`CMFCOutlookBarTabCtrl::GetTabArea`|탭 컨트롤의 탭 영역의 위치와 크기를 검색합니다. (재정의 [CMFCBaseTabCtrl::GetTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#gettabarea).)|
+|`CMFCOutlookBarTabCtrl::GetTabArea`|탭 컨트롤의 탭 영역 크기 및 위치를 검색합니다. (재정의 [CMFCBaseTabCtrl::GetTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#gettabarea).)|
 |`CMFCOutlookBarTabCtrl::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 |[CMFCOutlookBarTabCtrl::GetVisiblePageButtons](#getvisiblepagebuttons)||
 |[CMFCOutlookBarTabCtrl::IsAnimation](#isanimation)|활성 탭 간에 전환 하는 동안 발생 하는 애니메이션 사용 되는지 여부를 결정 합니다.|
 |[CMFCOutlookBarTabCtrl::IsMode2003](#ismode2003)|Microsoft Outlook 2003을 에뮬레이트하는 모드로 Outlook 표시줄 탭 컨트롤 인지 여부를 확인 합니다.|
-|`CMFCOutlookBarTabCtrl::IsPtInTabArea`|꼭 짓 점이 탭 영역 내에서 결정 합니다. (재정의 [CMFCBaseTabCtrl::IsPtInTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
-|`CMFCOutlookBarTabCtrl::IsTabDetachable`|탭 분리식 인지 확인 합니다. (재정의 [CMFCBaseTabCtrl::IsTabDetachable](../../mfc/reference/cmfcbasetabctrl-class.md#istabdetachable).)|
+|`CMFCOutlookBarTabCtrl::IsPtInTabArea`|지점이 탭 영역 내에 있는지 여부를 확인합니다. (재정의 [CMFCBaseTabCtrl::IsPtInTabArea](../../mfc/reference/cmfcbasetabctrl-class.md#isptintabarea).)|
+|`CMFCOutlookBarTabCtrl::IsTabDetachable`|탭이 분리 가능한지 여부를 나타냅니다. (재정의 [CMFCBaseTabCtrl::IsTabDetachable](../../mfc/reference/cmfcbasetabctrl-class.md#istabdetachable).)|
 |`CMFCOutlookBarTabCtrl::OnChangeTabs`|탭 삽입 되거나 제거 되 면 프레임 워크에서 호출 됩니다. ( `CMFCBaseTabCtrl::OnChangeTabs`을 재정의합니다.)|
 |[CMFCOutlookBarTabCtrl::OnShowFewerPageButtons](#onshowfewerpagebuttons)|표시 된 탭 페이지 단추의 수를 줄이려면 프레임 워크에서 호출 됩니다.|
 |[CMFCOutlookBarTabCtrl::OnShowMorePageButtons](#onshowmorepagebuttons)|표시 된 탭 페이지 단추의 수를 늘리려면 프레임 워크에서 호출 됩니다.|
 |[CMFCOutlookBarTabCtrl::OnShowOptions](#onshowoptions)|표시 된 **탐색 창 옵션** 대화 합니다.|
-|`CMFCOutlookBarTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산 됩니다. (재정의 [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
+|`CMFCOutlookBarTabCtrl::RecalcLayout`|탭 컨트롤의 내부 레이아웃을 다시 계산합니다. (재정의 [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|
 |[CMFCOutlookBarTabCtrl::SetActiveTab](#setactivetab)|활성 탭을 설정합니다. (재정의 [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|
 |[CMFCOutlookBarTabCtrl::SetBorderSize](#setbordersize)|Outlook 탭 컨트롤의 테두리 크기를 설정합니다.|
 |[CMFCOutlookBarTabCtrl::SetPageButtonTextAlign](#setpagebuttontextalign)|Outlook 표시줄의 탭 단추에 텍스트 레이블의 맞춤을 설정합니다.|
@@ -114,7 +114,7 @@ class CMFCOutlookBarTabCtrl : public CMFCBaseTabCtrl
 [!code-cpp[NVC_MFC_OutlookDemo#1](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_1.cpp)]
 [!code-cpp[NVC_MFC_OutlookDemo#2](../../mfc/reference/codesnippet/cpp/cmfcoutlookbartabctrl-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -504,7 +504,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

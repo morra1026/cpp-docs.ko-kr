@@ -5,12 +5,12 @@ helpviewer_keywords:
 - security, MFC Feature Pack
 - MFC Feature Pack, security
 ms.assetid: 9be96b12-be38-43bd-a133-5d671265f7a1
-ms.openlocfilehash: cdb8e0d39a76f749011ca3c680e25b86212b6519
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9164983a6634e069195f3498bea56b595a2a2381
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434427"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267448"
 ---
 # <a name="security-implications-of-customization"></a>사용자 지정의 보안 의미
 
@@ -32,7 +32,6 @@ MFC를 사용 하면 예를 들어, 단추 및 아이콘 모양 응용 프로그
 
 - 또한 응용 프로그램에서 사용자 지정을 비활성화할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC에 대한 사용자 지정](../mfc/customization-for-mfc.md)
-

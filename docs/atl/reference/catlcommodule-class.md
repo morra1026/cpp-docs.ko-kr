@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlComModule class
 ms.assetid: af5dd71a-a0d1-4a2e-9a24-154a03381c75
-ms.openlocfilehash: 270e6ca4dcb5c7701281cc2ac6c04e1d60093db3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 09adcb33ca9e6f8524063130d6aedca044d6ecb5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499806"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275872"
 ---
 # <a name="catlcommodule-class"></a>CAtlComModule 클래스
 
@@ -36,7 +36,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 |이름|설명|
 |----------|-----------------|
 |[CAtlComModule::CAtlComModule](#catlcommodule)|생성자입니다.|
-|[CAtlComModule:: ~ CAtlComModule](#dtor)|소멸자입니다.|
+|[CAtlComModule::~CAtlComModule](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -53,7 +53,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 
 이 클래스는 사용 되지 않는 대체 [CComModule](../../atl/reference/ccommodule-class.md) ATL.의 이전 버전에서 사용 되는 클래스 참조 [ATL 모듈 클래스](../../atl/atl-module-classes.md) 대 한 자세한 내용은 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)
 
@@ -75,7 +75,7 @@ CAtlComModule() throw();
 
 모듈을 초기화 합니다.
 
-##  <a name="dtor"></a>  CAtlComModule:: ~ CAtlComModule
+##  <a name="dtor"></a>  CAtlComModule::~CAtlComModule
 
 소멸자입니다.
 
@@ -100,7 +100,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 *bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다. 기본값은 FALSE입니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록할 개체의 CLSID 가리킵니다. NULL (기본값), 개체 맵의 모든 개체를 등록할 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -148,7 +148,7 @@ HRESULT UnregisterServer(
 *bRegTypeLib*<br/>
 형식 라이브러리 등록을 취소할 이면 TRUE입니다. 기본값은 FALSE입니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. 경우 NULL (기본값), 개체 맵의 모든 개체를 등록 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -181,7 +181,7 @@ HRESULT UnRegisterTypeLib();
 
 성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

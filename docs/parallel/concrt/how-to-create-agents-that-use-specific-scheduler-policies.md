@@ -1,18 +1,18 @@
 ---
-title: '방법: 특정 스케줄러 정책을 사용하는 에이전트 만들기'
+title: '방법: 특정 스케줄러 정책을 사용 하는 에이전트 만들기'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler policies, agents [Concurrency Runtime]
 - creating agents that use specific policies [Concurrency Runtime]
 ms.assetid: 46a3e265-0777-4ec3-a142-967bafc49d67
-ms.openlocfilehash: 955b1043800c8c10a24abff71a7764d0878b89d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5aac86801015549b5552b51c06a30f8398346a06
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50663374"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257373"
 ---
-# <a name="how-to-create-agents-that-use-specific-scheduler-policies"></a>방법: 특정 스케줄러 정책을 사용하는 에이전트 만들기
+# <a name="how-to-create-agents-that-use-specific-scheduler-policies"></a>방법: 특정 스케줄러 정책을 사용 하는 에이전트 만들기
 
 에이전트는 대규모 컴퓨팅 작업을 해결 하기 위해 다른 구성 요소를 사용 하 여 비동기적으로 작동 하는 응용 프로그램 구성 요소입니다. 에이전트는 일반적으로 수명 주기가 설정 하 고 상태를 유지 합니다.
 
@@ -26,7 +26,7 @@ ms.locfileid: "50663374"
 
 다음 예제에서 파생 되는 두 개의 클래스를 정의 [concurrency:: agent](../../parallel/concrt/reference/agent-class.md): `permutor` 고 `printer`입니다. `permutor` 클래스는 지정 된 입력된 문자열의 모든 순열을 계산 합니다. `printer` 클래스 진행률 메시지를 콘솔에 출력 합니다. `permutor` 클래스 계산이 많은 작업을 수행 하면 모든 사용 가능한 컴퓨팅 리소스를 사용할 수도 있습니다. 유용 하 게 여 `printer` 클래스 적시에 각 진행률 메시지를 인쇄 해야 합니다.
 
-제공 하는 `printer` 컴퓨팅 리소스 클래스 공정 액세스,이 예제에 설명 된 단계를 사용 하 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md) 사용자 지정 정책이 적용 된 스케줄러 인스턴스를 만들려고 합니다. 사용자 지정 정책에 가장 높은 우선 순위 클래스를 스레드 우선 순위를 지정 합니다.
+제공 하는 `printer` 공정 액세스 컴퓨팅 리소스에 클래스를이 예제에서는 단계에 설명 된 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md) 사용자 지정 정책이 적용 된 스케줄러 인스턴스를 만들려고 합니다. 사용자 지정 정책에 가장 높은 우선 순위 클래스를 스레드 우선 순위를 지정 합니다.
 
 사용자 지정 정책이 적용 된 스케줄러를 사용 하는 이점은 보여 주기 위해이 예제에서는 두 번 전체 작업을 수행 합니다. 이 예제에서는 먼저 기본 스케줄러를 사용 하 여 두 작업을 예약 합니다. 예제를 사용 하 여 기본 스케줄러를 예약 합니다 `permutor` 개체 및 일정을 사용자 지정 정책이 적용 된 스케줄러를 `printer` 개체입니다.
 
@@ -48,12 +48,11 @@ Computing all permutations of 'Grapefruit'...
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `permute-strings.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `permute-strings.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc permute strings.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [스케줄러 정책](../../parallel/concrt/scheduler-policies.md)<br/>
 [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)
-

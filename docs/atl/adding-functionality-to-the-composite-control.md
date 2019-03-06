@@ -6,12 +6,12 @@ helpviewer_keywords:
 - composite controls, handling events
 - ActiveX controls [C++], events
 ms.assetid: 98f85681-9564-480d-af38-03f9733fe58b
-ms.openlocfilehash: 1f0759c9182ad2a7e572bacee7707963d9b6ae2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ad7ef3d80579804ac614fbefac1a042a9cf2fba
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532666"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299766"
 ---
 # <a name="adding-functionality-to-the-composite-control"></a>복합 컨트롤에 기능 추가
 
@@ -30,7 +30,6 @@ ActiveX 컨트롤을 대화 상자 리소스에서를 삽입 한 후 컨트롤�
 
 복합 컨트롤의 ActiveX 컨트롤에 대 한 연결 지점을 자동으로 연결 되 고 호출을 통해 연결 끊김 [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [복합 컨트롤 기본 사항](../atl/atl-composite-control-fundamentals.md)
-

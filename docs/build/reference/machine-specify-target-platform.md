@@ -11,12 +11,12 @@ helpviewer_keywords:
 - /MACHINE linker option
 - MACHINE linker option
 ms.assetid: 8d41bf4b-7e53-4ab9-9085-d852b08d31c2
-ms.openlocfilehash: 872370269e9ab8acaaa8cafe7fb47b1121bcbb97
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 713cff8a787b6eb97ad5d9bea32b6fd77fa64f17
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546443"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426578"
 ---
 # <a name="machine-specify-target-platform"></a>/MACHINE(대상 플랫폼 지정)
 
@@ -44,7 +44,7 @@ ms.locfileid: "50546443"
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

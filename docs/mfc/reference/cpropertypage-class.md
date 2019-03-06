@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CPropertyPage [MFC], SetModified
 - CPropertyPage [MFC], m_psp
 ms.assetid: d9000a21-aa81-4530-85d9-f43432afb4dc
-ms.openlocfilehash: 1816e6ee2dc0f358cb2da4c8bab572daa33a29c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef46001e230813afb0abb857b7aee39bf5fba05d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561241"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260753"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage 클래스
 
@@ -99,7 +99,7 @@ class CPropertyPage : public CDialog
 
 속성 시트를 설정 하는 마법사에 대 한 자세한 내용은 참조 하세요. [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode)합니다. 사용 하 여 대 한 자세한 내용은 `CPropertyPage` 문서를 참조 하는 개체를 [속성 시트 및 속성 페이지](../../mfc/property-sheets-and-property-pages-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -572,7 +572,7 @@ void SetModified(BOOL bChanged = TRUE);
 
 [!code-cpp[NVC_MFCDocView#127](../../mfc/codesnippet/cpp/cpropertypage-class_17.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>

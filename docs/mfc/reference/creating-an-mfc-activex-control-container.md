@@ -9,12 +9,12 @@ helpviewer_keywords:
 - containers [MFC], creating
 - OLE controls [MFC], containers
 ms.assetid: ec70e137-7c14-4940-bd0e-fd4edcc63ea5
-ms.openlocfilehash: 04c271db18bc8d8ba273f16f7493bbbb1da96421
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0d5fe419375535ab8c52378b9005df88634e99a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544991"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275898"
 ---
 # <a name="creating-an-mfc-activex-control-container"></a>MFC ActiveX 컨트롤 컨테이너 만들기
 
@@ -27,7 +27,7 @@ MFC 프로그램 사용 하 여 컨테이너를 만드는 합니다 [MFC 응용 
 
 - **새 MFC 응용 프로그램**합니다. 자동화를 포함 하는 새 MFC 프로그램을 만들려면 비주얼 편집 복합 파일 또는 지원을 제어, MFC 응용 프로그램 마법사를 사용 하 여 및 적절 한 자동화 옵션을 선택 합니다.
 
-- **기존 MFC 응용 프로그램**합니다. 컨트롤 포함 하면 기존 MFC 응용 프로그램에 추가 하는 경우 참조 [OLE 컨트롤 컨테이너: OLE 컨트롤 포함 기능 수동으로 활성화](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md)합니다.
+- **기존 MFC 응용 프로그램**합니다. 기존 MFC 응용 프로그램 컨트롤 포함을 추가 하는 경우 참조 [OLE 컨트롤 컨테이너: OLE 컨트롤 포함 수동 설정](../../mfc/activex-control-containers-manually-enabling-activex-control-containment.md)합니다.
 
 ### <a name="to-create-an-activex-container-for-any-of-the-following-types-of-applications"></a>다음 유형의 응용 프로그램에 대 한 ActiveX 컨테이너를 만들려면
 
@@ -37,7 +37,6 @@ MFC 프로그램 사용 하 여 컨테이너를 만드는 합니다 [MFC 응용 
 
 1. [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)
-

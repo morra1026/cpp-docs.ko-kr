@@ -7,12 +7,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], creating
 - ActiveX controls [MFC], creating
 ms.assetid: 8bd5a93c-d04d-414e-bb28-163fdc1c0dd5
-ms.openlocfilehash: be0b4639fd42461a19db10f88ced336cd1129fb3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 031c8596e568f01cdecd7139d959a77923c341eb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633517"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294956"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX 컨트롤 만들기
 
@@ -40,8 +40,7 @@ MFC ActiveX 컨트롤을 만드는 가장 쉬운 방법은 사용 하는 것은 
 
 프로젝트를 만든 후 추가할 코드 마법사를 사용할 수 있습니다 [함수](../../ide/add-member-function-wizard.md), [변수](../../ide/add-member-variable-wizard.md), [이벤트](../../ide/add-event-wizard.md)하십시오 [속성](../../ide/names-add-property-wizard.md), 및 [메서드](../../ide/add-method-wizard.md)합니다. ActiveX 컨트롤을 사용자 지정 하는 방법에 대 한 자세한 내용은 참조 하세요. [MFC ActiveX 컨트롤](../../mfc/mfc-activex-controls.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
-[속성 페이지](../../ide/property-pages-visual-cpp.md)
-
+[속성 페이지(Visual C++)](../../ide/property-pages-visual-cpp.md)

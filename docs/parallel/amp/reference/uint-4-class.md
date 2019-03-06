@@ -268,12 +268,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::uint_4::rba
 - amp_short_vectors/Concurrency::graphics::uint_4::set_yzx
 ms.assetid: 1cda9e2c-5970-4ced-ae54-d7ff3c6746f4
-ms.openlocfilehash: e763c2654f0edaa02ceaa5294eb33ef02e69ee9a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5c0482854a08973593e9c67f2f51d5706304831
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50579038"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266811"
 ---
 # <a name="uint4-class"></a>uint_4 클래스
 
@@ -592,7 +592,7 @@ class uint_4;
 |uint_4::zyx||
 |uint_4::zyxw||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `uint_4`
 
@@ -600,7 +600,7 @@ class uint_4;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ## <a name="uint_4__ctor"></a> uint_4
 
@@ -653,7 +653,7 @@ explicit inline uint_4(
 *_V3*<br/>
 3 요소를 초기화할 값입니다.
 
-*(_V)*<br/>
+*_V*<br/>
 초기화에 대 한 값입니다.
 
 *_Other*<br/>
@@ -667,6 +667,6 @@ explicit inline uint_4(
 static const int size = 4;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

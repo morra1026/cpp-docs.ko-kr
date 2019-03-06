@@ -8,12 +8,12 @@ helpviewer_keywords:
 - derived classes [MFC], functions often overridden
 - document classes [MFC], functions often overridden
 ms.assetid: e6a198e0-9799-43c0-83c5-04174d8b532c
-ms.openlocfilehash: 042ba7adc8d36e57a714e03ec67c1c0f22b4da78
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5998d5707eb741be0e8ac270f6ac5ce77a9ff8d8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496124"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272063"
 ---
 # <a name="deriving-a-document-class-from-cdocument"></a>CDocument에서 문서 클래스 파생시키기
 
@@ -29,7 +29,6 @@ ms.locfileid: "50496124"
 
 다른 재정의 하려면 `CDocument` 멤버 함수입니다. 특히 재정의 해야 경우가 많습니다 [OnNewDocument](../mfc/reference/cdocument-class.md#onnewdocument) 및 [OnOpenDocument](../mfc/reference/cdocument-class.md#onopendocument) 문서의 데이터 멤버를 초기화 하 고 [DeleteContents](../mfc/reference/cdocument-class.md#deletecontents) 삭제 하려면 동적으로 할당 된 데이터입니다. 재정의 가능한 멤버에 대 한 내용은 클래스를 참조 하세요 [CDocument](../mfc/reference/cdocument-class.md) 에 *MFC 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 사용](../mfc/using-documents.md)
-

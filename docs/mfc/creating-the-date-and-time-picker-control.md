@@ -5,12 +5,12 @@ helpviewer_keywords:
 - DateTimePicker control [MFC], creating
 - CDateTimeCtrl class [MFC], creating
 ms.assetid: 764ec2fb-98cd-478b-a5f2-d63f0bb12279
-ms.openlocfilehash: 27a3a654a73300b7dd667d422fe84c73de524f3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3dd04d917667ff04001a455263d2a2f4af9bf9c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456126"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282073"
 ---
 # <a name="creating-the-date-and-time-picker-control"></a>날짜 및 시간 선택 컨트롤 만들기
 
@@ -34,8 +34,7 @@ ms.locfileid: "50456126"
 
 1. 컨트롤의 호출 [Create](../mfc/reference/ctabctrl-class.md#create) 멤버 함수를 [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), 부모 창의 만큼 [OnCreate](../mfc/reference/cwnd-class.md#oncreate) 처리기 함수 (있는 경우 컨트롤 서브클래싱). 컨트롤의 스타일을 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDateTimeCtrl 사용](../mfc/using-cdatetimectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

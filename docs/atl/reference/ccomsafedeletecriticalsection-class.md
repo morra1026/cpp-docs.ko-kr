@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeDeleteCriticalSection class
 ms.assetid: 4d2932c4-ba8f-48ec-8664-1db8bed01314
-ms.openlocfilehash: c6d7965b0f5801ed956333950e11e6b9b3eb5a0c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0269079db97e2ff91767c9c0c74a9336fce81ade
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429954"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284634"
 ---
 # <a name="ccomsafedeletecriticalsection-class"></a>CComSafeDeleteCriticalSection 클래스
 
@@ -36,7 +36,7 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
 |이름|설명|
 |----------|-----------------|
 |[CComSafeDeleteCriticalSection::CComSafeDeleteCriticalSection](#ccomsafedeletecriticalsection)|생성자입니다.|
-|[CComSafeDeleteCriticalSection:: ~ CComSafeDeleteCriticalSection](#dtor)|소멸자입니다.|
+|[CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -60,7 +60,7 @@ class CComSafeDeleteCriticalSection : public CComCriticalSection
 
 참조 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) 임계 도우미 클래스에 대 한 자세한 내용은 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)
 
@@ -82,7 +82,7 @@ CComSafeDeleteCriticalSection();
 
 설정 된 [m_bInitialized](#m_binitialized) FALSE 데이터 멤버입니다.
 
-##  <a name="dtor"></a>  CComSafeDeleteCriticalSection:: ~ CComSafeDeleteCriticalSection
+##  <a name="dtor"></a>  CComSafeDeleteCriticalSection::~CComSafeDeleteCriticalSection
 
 소멸자입니다.
 
@@ -152,7 +152,7 @@ HRESULT Term() throw();
 
 내부 경우에도이 메서드를 호출 하지 않아도 안전 합니다 `CRITICAL_SECTION` 개체가 잘못 되었습니다. 이 클래스의 소멸자는 경우이 메서드를 호출 합니다 [m_bInitialized](#m_binitialized) 데이터 멤버를 TRUE로 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComCriticalSection 클래스](../../atl/reference/ccomcriticalsection-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - structures
 - structures, MFC
 ms.assetid: 2168fcc6-e800-4814-aabf-0bca86ff790d
-ms.openlocfilehash: 7e531937fc61898a6d2d432f74cb5608ea94fbc9
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: d91daeded9933abd73612a6a66a19a159bf36006
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893472"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277827"
 ---
 # <a name="structures-used-by-mfc"></a>MFC에서 사용하는 구조체
 
@@ -46,7 +46,6 @@ ms.locfileid: "54893472"
 |[DRAWITEMSTRUCT 구조체](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct)||
 |[FILETIME 구조체](/windows/desktop/api/minwinbase/ns-minwinbase-filetime)||
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)
-

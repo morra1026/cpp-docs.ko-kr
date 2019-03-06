@@ -8,12 +8,12 @@ helpviewer_keywords:
 - list views [MFC]
 - list controls [MFC], List view
 ms.assetid: 7aee1c48-b158-4399-be0b-be366993665e
-ms.openlocfilehash: 9d57e1a3370b1b868178ac9e7e40ea97bce6e3c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5c9612a22eab27d568c0dbb86d29ba031fe5985e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440458"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275924"
 ---
 # <a name="list-control-and-list-view"></a>목록 컨트롤 및 목록 뷰
 
@@ -37,8 +37,7 @@ A `CListView` 개체에서 상속 [CCtrlView](../mfc/reference/cctrlview-class.m
 
 목록 컨트롤을 사용 하는 두 방법을 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

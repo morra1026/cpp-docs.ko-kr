@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows messages [MFC], adding message handlers
 - message maps [MFC], mapping messages to functions
 ms.assetid: a7727a62-f638-4b20-b7f5-131f47200d6a
-ms.openlocfilehash: 0393475143b9448091d4a886c43ce1206c655b25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ed2b66ffe382cc8683b811362fb014597168037
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629192"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297686"
 ---
 # <a name="mapping-messages-to-functions"></a>함수에 메시지 매핑
 
@@ -42,7 +42,7 @@ ms.locfileid: "50629192"
 
 메시지 처리기를 제거 하려면 오른쪽 열에 대 한 처리기를 두 번 클릭 하 고 선택 \<삭제 >*HandlerName*합니다. 함수의 코드는 주석으로 처리됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 메시지 처리기](../../mfc/reference/adding-an-mfc-message-handler.md)<br/>
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>

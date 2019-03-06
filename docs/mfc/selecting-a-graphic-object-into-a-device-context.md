@@ -9,12 +9,12 @@ helpviewer_keywords:
 - device contexts, selecting graphic objects into
 - device contexts, graphic objects [MFC]
 ms.assetid: cf54a330-63ef-421f-83eb-90ec7bd82eef
-ms.openlocfilehash: c879369d445a9330139eff89be4ad8153252bfa1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7fb1507c1200da4cdf44627557ff6993e927d51e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438826"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304810"
 ---
 # <a name="selecting-a-graphic-object-into-a-device-context"></a>그래픽 개체를 선택하여 장치 컨텍스트로 넣기
 
@@ -26,7 +26,7 @@ ms.locfileid: "50438826"
 
 그래픽 개체를 반환한 [SelectObject](../mfc/reference/cdc-class.md#selectobject) 됩니다 "." 까지 삭제 될 예정 이므로 합니다 [OnIdle](../mfc/reference/cwinapp-class.md#onidle) 클래스의 멤버 함수 `CWinApp` 다음에 프로그램이 가져옵니다 유휴 시간입니다. 반환 된 개체를 사용으로 `SelectObject` 아무런 문제가 주 메시지 루프에 컨트롤을 반환 하지 않고 단일 함수에서 해야 합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [그래픽 개체](../mfc/graphic-objects.md)
 
@@ -36,7 +36,6 @@ ms.locfileid: "50438826"
 
 - [뷰에 그리기](../mfc/drawing-in-a-view.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [그래픽 개체](../mfc/graphic-objects.md)
-

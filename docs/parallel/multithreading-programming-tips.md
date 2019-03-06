@@ -16,12 +16,12 @@ helpviewer_keywords:
 - troubleshooting [C++], multithreading
 - Windows handle maps [C++]
 ms.assetid: ad14cc70-c91c-4c24-942f-13a75e58bf8a
-ms.openlocfilehash: 0fbee2e836c2e898488da348e4dec9ea00ac4370
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e89d0d534638f7216f142bc3f86633a59b8b0ff7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494280"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290804"
 ---
 # <a name="multithreading-mfc-programming-tips"></a>다중 스레딩: MFC 프로그래밍 팁
 
@@ -57,8 +57,8 @@ ms.locfileid: "50494280"
 
 ##  <a name="_core_communicating_between_threads"></a> 스레드 간 통신
 
-MFC에는 여러 스레드 보안을 유지 하는 개체에 대 한 액세스를 동기화 하는 스레드를 허용 하는 클래스를 제공 합니다. 이러한 클래스의 사용에 설명 되어 [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md) 하 고 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다. 이러한 개체에 대 한 자세한 내용은 참조 하세요. [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다.
+MFC에는 여러 스레드 보안을 유지 하는 개체에 대 한 액세스를 동기화 하는 스레드를 허용 하는 클래스를 제공 합니다. 이러한 클래스의 사용에 설명 된 [다중 스레딩: 동기화 클래스 사용 방법](multithreading-how-to-use-the-synchronization-classes.md) 고 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다. 이러한 개체에 대 한 자세한 내용은 참조 하세요. [동기화](/windows/desktop/Sync/synchronization) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

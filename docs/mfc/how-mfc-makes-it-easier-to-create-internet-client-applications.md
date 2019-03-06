@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Internet applications [MFC], MFC
 - MFC, Internet applications
 ms.assetid: 94437b3f-f15c-437d-b5fd-264a2efec9ab
-ms.openlocfilehash: b288db54a020b0074766ee69debdb9f397d3bd03
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ffeed3a844fb86acf1bf8c5181c59529824c27f9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573440"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300745"
 ---
 # <a name="how-mfc-makes-it-easier-to-create-internet-client-applications"></a>MFC를 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
 
@@ -31,8 +31,7 @@ MFC WinInet 클래스와 동일한 기능을 제공 `CStdioFile` 인터넷을 �
 
 - 열린 핸들 및 연결의 자동 정리
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)
-
+[WinInet을 사용하여 인터넷 클라이언트 애플리케이션을 손쉽게 만드는 방법](../mfc/how-wininet-makes-it-easier-to-create-internet-client-applications.md)

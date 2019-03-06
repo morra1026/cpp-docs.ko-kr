@@ -37,12 +37,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlMap class
 ms.assetid: 5e2fe028-8e6d-4686-93df-1433d2080ec3
-ms.openlocfilehash: 83ac810538bf189d026c0cb9b2a76ded49fdd86c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 80975047b300f270c0ac58c8b8abfc59ff2b17ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50499679"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293786"
 ---
 # <a name="catlmap-class"></a>CAtlMap 클래스
 
@@ -101,7 +101,7 @@ Key 요소 형식입니다.
 |이름|설명|
 |----------|-----------------|
 |[CAtlMap::CAtlMap](#catlmap)|생성자입니다.|
-|[CAtlMap:: ~ CAtlMap](#dtor)|소멸자입니다.|
+|[CAtlMap::~CAtlMap](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -221,7 +221,7 @@ CAtlMap(
 
 [!code-cpp[NVC_ATL_Utilities#72](../../atl/codesnippet/cpp/catlmap-class_1.cpp)]
 
-##  <a name="dtor"></a>  CAtlMap:: ~ CAtlMap
+##  <a name="dtor"></a>  CAtlMap::~CAtlMap
 
 소멸자입니다.
 
@@ -294,7 +294,7 @@ CPair* GetAt(POSITION& pos) throw();
 *key*<br/>
 템플릿 매개 변수 맵의 키의 형식을 지정 합니다.
 
-*값*<br/>
+*value*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -391,7 +391,7 @@ void GetNextAssoc(
 *key*<br/>
 템플릿 매개 변수 맵의 키의 형식을 지정 합니다.
 
-*값*<br/>
+*value*<br/>
 템플릿 매개 변수 맵의 값의 형식을 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -561,7 +561,7 @@ CPair* Lookup(KINARGTYPE key) throw();
 *key*<br/>
 조회 요소를 식별 하는 키를 지정 합니다.
 
-*값*<br/>
+*value*<br/>
 조회 값을 수신 하는 변수입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -675,7 +675,7 @@ POSITION SetAt(
 *key*<br/>
 추가할 키 값을 `CAtlMap` 개체입니다.
 
-*값*<br/>
+*value*<br/>
 에 추가할 값을 `CAtlMap` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -731,7 +731,7 @@ void SetValueAt(
 *pos*<br/>
 에 대 한 이전 호출에서 반환 되는 위치 카운터 [CAtlMap::GetNextAssoc](#getnextassoc) 하거나 [CAtlMap::GetStartPosition](#getstartposition)합니다.
 
-*값*<br/>
+*value*<br/>
 에 추가할 값을 `CAtlMap` 개체입니다.
 
 ### <a name="remarks"></a>설명
@@ -780,7 +780,7 @@ V  m_value;
 *V*<br/>
 값 요소 형식입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [움직이는 텍스트 샘플](../../visual-cpp-samples.md)<br/>
 [UpdatePV 샘플](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV)<br/>

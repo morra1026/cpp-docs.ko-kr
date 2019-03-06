@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSmoothStopTransition [MFC], m_dblFinalValue
 - CSmoothStopTransition [MFC], m_maximumDuration
 ms.assetid: e1a4b476-6f96-43dd-90db-870a64406b85
-ms.openlocfilehash: 41ff87f82b695ba07723c1dac8cd2d5148f6f162
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 89496c1b867d6fbb498f56271de7b45afef7edc3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578427"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290406"
 ---
 # <a name="csmoothstoptransition-class"></a>CSmoothStopTransition 클래스
 
@@ -56,7 +56,7 @@ class CSmoothStopTransition : public CBaseTransition;
 
 부드러운 중지 전환을 최종 값을 지정된 방법과 속도 0에 도달 하는 대로 느려집니다. 전환 기간 초기 속도, 초기 및 최종 값 및 지정 된 최대 시간 차이 의해 결정 됩니다. 포물선 원호 한 개로 구성 된 솔루션이 없는 경우이 메서드는 3 차원 전환을 만듭니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -121,6 +121,6 @@ DOUBLE m_dblFinalValue;
 UI_ANIMATION_SECONDS m_maximumDuration;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

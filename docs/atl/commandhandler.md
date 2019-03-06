@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - CommandHandler function
 ms.assetid: 662bc7bf-4a10-42b3-986d-d8bae4f63551
-ms.openlocfilehash: 8259dfe8ead608876b3637d1dca9c3e808bb419d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: c8ae2ae3b68b01c00ce1c6441fa9a3150d4c334b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694636"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285063"
 ---
 # <a name="commandhandler"></a>CommandHandler
 
@@ -50,9 +50,8 @@ LRESULT CommandHandler(
 
 메시지 맵에서이 메시지 처리기를 사용 하 여 예제를 참조 하세요 [COMMAND_HANDLER](reference/message-map-macros-atl.md#command_handler)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 구현](../atl/implementing-a-window.md)<br/>
 [메시지 맵](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](/windows/desktop/controls/wm-notify)
-

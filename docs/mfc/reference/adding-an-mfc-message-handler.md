@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - message handling [MFC], adding handlers
 ms.assetid: 4251cfce-76ca-443d-bd2f-6303afa6d942
-ms.openlocfilehash: edb48b510be1de73abe3361f9bd409a8fed929d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4b0a4507df7f352355fc95354e1e83aa7b6d0a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50593546"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292402"
 ---
 # <a name="adding-an-mfc-message-handler"></a>MFC 메시지 처리기 추가
 
@@ -22,7 +22,7 @@ ms.locfileid: "50593546"
 > [!NOTE]
 >  속성 창;를 사용 하 여 ATL 클래스에 메시지 처리기를 추가할 수 있습니다. 그러나 일부 결과가 달라질 수 있습니다. 자세한 내용은 ATL 항목을 참조 하세요 [ATL 메시지 처리기 추가](../../atl/adding-an-atl-message-handler.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
@@ -31,4 +31,3 @@ ms.locfileid: "50593546"
 [가상 함수 재정의](../../ide/overriding-a-virtual-function-visual-cpp.md)<br/>
 [클래스 구조 탐색](../../ide/navigating-the-class-structure-visual-cpp.md)<br/>
 [대화 상자 편집기](../../windows/dialog-editor.md)
-

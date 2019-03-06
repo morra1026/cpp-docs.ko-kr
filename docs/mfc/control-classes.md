@@ -14,12 +14,12 @@ helpviewer_keywords:
 - text, controls for input [MFC]
 - user input [MFC], MFC control classes
 ms.assetid: f9876606-9f5b-44cb-9135-213298d1df8f
-ms.openlocfilehash: 880ef783316f710943fde323bc89a49d19b0a1fa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79a71a4660cd49f85726d730c9fad0b2f10f83bb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509009"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300429"
 ---
 # <a name="control-classes"></a>컨트롤 클래스
 
@@ -145,7 +145,6 @@ Windows 목록 컨트롤을 포함 하는 뷰.
 [CTreeView](../mfc/reference/ctreeview-class.md)<br/>
 Windows 트리 컨트롤을 포함 하는 뷰.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

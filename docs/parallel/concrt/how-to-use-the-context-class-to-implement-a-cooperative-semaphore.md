@@ -1,18 +1,18 @@
 ---
-title: '방법: 컨텍스트 클래스를 사용하여 공동 작업 세마포 구현'
+title: '방법: 상황에 맞는 클래스를 사용 하 여 공동 작업 세마포 구현'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - cooperative semaphore implementing
 - context class
 ms.assetid: 22f4b9c0-ca22-4a68-90ba-39e99ea76696
-ms.openlocfilehash: 460a1de03f34cb8ef9753e761aaef37470cd6d0e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92f77fade972bff1528bc9a22416670354c70f34
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467765"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300767"
 ---
-# <a name="how-to-use-the-context-class-to-implement-a-cooperative-semaphore"></a>방법: 컨텍스트 클래스를 사용하여 공동 작업 세마포 구현
+# <a name="how-to-use-the-context-class-to-implement-a-cooperative-semaphore"></a>방법: 상황에 맞는 클래스를 사용 하 여 공동 작업 세마포 구현
 
 이 항목에는 concurrency:: context 클래스를 사용 하 여 공동 작업 세마포 클래스를 구현 하는 방법을 보여 줍니다.
 
@@ -71,9 +71,9 @@ In loop iteration 4...
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `cooperative-semaphore.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `cooperative-semaphore.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
-**cl.exe /EHsc 협조적 semaphore.cpp**
+**cl.exe /EHsc cooperative-semaphore.cpp**
 
 ## <a name="robust-programming"></a>강력한 프로그래밍
 
@@ -86,8 +86,7 @@ In loop iteration 4...
 
 [!code-cpp[concrt-cooperative-semaphore#8](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_8.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨텍스트](../../parallel/concrt/contexts.md)<br/>
 [병렬 컨테이너 및 개체](../../parallel/concrt/parallel-containers-and-objects.md)
-

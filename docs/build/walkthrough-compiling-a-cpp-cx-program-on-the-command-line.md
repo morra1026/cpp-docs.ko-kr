@@ -1,15 +1,15 @@
 ---
-title: '연습: 명령줄에서 C++/CX 프로그램 컴파일'
+title: '연습: 컴파일 C + + /CX 프로그램 명령줄에서'
 ms.date: 09/24/2018
 ms.assetid: 626f5544-69ed-4736-83a9-f11389b371b2
-ms.openlocfilehash: 6acfa707ac64a647e838fd1dbcd5564c79faa1a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f6716b379a11f88adb5c75643e325a9b2856eac
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50515143"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413799"
 ---
-# <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>연습: 명령줄에서 C++/CX 프로그램 컴파일
+# <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>연습: 컴파일 C + + /CX 프로그램 명령줄에서
 
 Windows 런타임을 대상으로 하는 Visual C++ 프로그램을 만들어 명령줄에서 빌드할 수 있습니다. Visual C++는 Windows 런타임 프로그래밍 모델을 대상으로 하는 추가 형식 및 연산자가 있는 Visual C++ 구성 요소 확장명(C++/CX)을 지원합니다. 에서는 C++ 유니버설 Windows 플랫폼 (UWP), Windows Phone 8.1 및 Windows 데스크톱 앱을 빌드할 CX 합니다. 자세한 내용은 [는 C+ 둘러보기 + CX](https://msdn.microsoft.com/magazine/dn166929.aspx) 하 고 [런타임 플랫폼용 구성 요소 확장](../windows/component-extensions-for-runtime-platforms.md)합니다.
 
@@ -61,7 +61,7 @@ C++ 언어의 기본적인 사항을 알고 있습니다.
     This is a C++/CX program.
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
 [C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>

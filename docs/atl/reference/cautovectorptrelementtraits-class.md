@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoVectorPtrElementTraits class
 ms.assetid: 16b81a56-55fb-46ca-b376-66a1884231a6
-ms.openlocfilehash: b71ac4163c1c34fbbe686cdff05319347db521cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 168670709470d7b7fdd77edb3c29d5a9f4049ca3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459009"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280734"
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits 클래스
 
@@ -49,7 +49,7 @@ class CAutoVectorPtrElementTraits :
 
 이 클래스는 스마트 포인터를 포함 하는 컬렉션 클래스 개체를 만드는 데에 대 한 메서드, 정적 함수 및 형식 정의 제공 합니다. 와 달리 [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md)이 클래스는 벡터 new 및 delete 연산자입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
 
@@ -81,7 +81,7 @@ typedef CAutoVectorPtr<T>& INARGTYPE;
 typedef T*& OUTARGTYPE;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDefaultElementTraits 클래스](../../atl/reference/cdefaultelementtraits-class.md)<br/>
 [CAutoVectorPtr 클래스](../../atl/reference/cautovectorptr-class.md)<br/>

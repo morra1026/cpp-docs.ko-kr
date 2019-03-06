@@ -7,18 +7,18 @@ helpviewer_keywords:
 - ActiveX controls [MFC], property pages
 - MFC ActiveX controls [MFC], property pages
 ms.assetid: fcf7e119-9f29-41a9-908d-e9b1607e08af
-ms.openlocfilehash: ac72258e881d10723a02b5103c602ac5cec6a1f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 87b71fdddc5b52f66c34cdbcdb234c83616d0850
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465314"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289549"
 ---
 # <a name="mfc-activex-controls-adding-another-custom-property-page"></a>MFC ActiveX 컨트롤: 다른 사용자 지정 속성 페이지 추가
 
 경우에 따라 ActiveX 컨트롤 합당 한 속성 페이지에 들어가는 개수 보다 더 많은 속성을 가집니다. 이 경우 이러한 속성을 표시 하려면 ActiveX 컨트롤에 속성 페이지를 추가할 수 있습니다.
 
-하나 이상의 속성 페이지에 이미 있는 ActiveX 컨트롤에 새 속성 페이지를 추가 하는 것이 논의 합니다. 스톡 속성 추가 대 한 자세한 내용은 (글꼴, 그림 또는 색) 페이지는 문서를 참조 [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)입니다.
+하나 이상의 속성 페이지에 이미 있는 ActiveX 컨트롤에 새 속성 페이지를 추가 하는 것이 논의 합니다. 스톡 속성을 추가 하는 방법은 페이지 (글꼴, 그림 또는 색) 문서를 참고 [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)입니다.
 
 다음 절차는 ActiveX 컨트롤 마법사에서 만든 샘플 ActiveX 컨트롤 프레임 워크를 사용 합니다. 따라서 클래스 이름 및 식별자는이 예제에 고유 합니다.
 
@@ -26,7 +26,7 @@ ms.locfileid: "50465314"
 
 - [MFC ActiveX 컨트롤: 속성 페이지](../mfc/mfc-activex-controls-property-pages.md)
 
-- [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)
+- [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
     > [!NOTE]
     >  페이지 크기 ActiveX 컨트롤 속성 페이지에 대 한 표준 준수 하는 새 속성이 가장 좋습니다. 사진 및 색 스톡 속성 페이지 250 x 62 측정값 대화 상자 단위 (DLU). 표준 글꼴 속성 페이지는 250 x 110 Dlu입니다. ActiveX 컨트롤 마법사에서 만든 기본 속성 페이지는 250 x 62 DLU standard를 사용 합니다.
@@ -107,7 +107,6 @@ BEGIN_PROPPAGEIDS 매크로 (속성 페이지 수) 1에서 2의 두 번째 매�
 
 후 필요한 수정 프로젝트를 다시 작성 및 테스트 컨테이너를 사용 하 여 새 속성 페이지를 테스트 합니다. 테스트 컨테이너에 액세스하는 방법은 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md) 를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

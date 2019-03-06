@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - functions [C++], without parentheses
 ms.assetid: edf4a177-a160-44aa-8436-e077b5b27809
-ms.openlocfilehash: 3f68d2ab39ceacce5a74b033c061203b2b014284
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50053244787d1ceafe4e60083e7e7353e337dbbe
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534812"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424901"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>함수 이름을 () 없이 사용하면 코드가 생성되지 않음
 
@@ -39,6 +39,6 @@ void funcn() {
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 최적화](../../build/reference/optimizing-your-code.md)

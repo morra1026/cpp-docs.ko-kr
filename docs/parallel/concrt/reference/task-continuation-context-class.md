@@ -12,16 +12,17 @@ f1_keywords:
 helpviewer_keywords:
 - task_continuation_context class
 ms.assetid: 1fb5a76a-3682-45c2-a615-8b6b527741f0
-ms.openlocfilehash: 5f358dbc61fc39928e877dbc3673a8b9f51917eb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5d7d92fcd1bb00513b9e05030afa56726e87183b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582515"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280294"
 ---
 # <a name="taskcontinuationcontext-class"></a>task_continuation_context 클래스
 
-`task_continuation_context` 클래스를 사용하면 연속 실행 위치를 지정할 수 있습니다. 만 Windows 런타임 앱에서이 클래스를 사용 하는 것이 유용 합니다. 비-Windows 런타임 앱에 대 한 작업 연속의 실행 컨텍스트는 런타임에 의해 결정 및 구성할 수 없습니다.
+
+  `task_continuation_context` 클래스를 사용하면 연속 실행 위치를 지정할 수 있습니다. 만 Windows 런타임 앱에서이 클래스를 사용 하는 것이 유용 합니다. 비-Windows 런타임 앱에 대 한 작업 연속의 실행 컨텍스트는 런타임에 의해 결정 및 구성할 수 없습니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,7 +42,7 @@ class task_continuation_context : public details::_ContextCallback;
 |[use_default](#use_default)|기본 작업 연속 컨텍스트를 만듭니다.|
 |[use_synchronous_execution](#use_synchronous_execution)|동기 실행 컨텍스트를 나타내는 작업 연속 컨텍스트 개체를 반환 합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_ContextCallback`
 
@@ -155,6 +156,6 @@ static task_continuation_context use_synchronous_execution();
 
 선행 작업이 이미 완료 연속 연결 될 때 연속 작업 연속을 연결 하는 컨텍스트에서 동기적으로 실행 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

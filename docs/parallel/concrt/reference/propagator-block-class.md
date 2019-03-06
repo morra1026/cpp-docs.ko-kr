@@ -20,16 +20,18 @@ f1_keywords:
 helpviewer_keywords:
 - propagator_block class
 ms.assetid: 86aa75fd-eda5-42aa-aadf-25c0c1c9742d
-ms.openlocfilehash: 38b7c920f8ffcab6d709d9484f308a56cd6b8425
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f466ad8f474ddb73d2235d9999c3dbeae627672
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613280"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272947"
 ---
 # <a name="propagatorblock-class"></a>propagator_block 클래스
 
-`propagator_block` 클래스는 소스인 동시에 대상인 메시지 블록에 대한 추상 기본 클래스입니다. `source_block` 및 `target_block` 클래스의 기능을 결합합니다.
+
+  `propagator_block` 클래스는 소스인 동시에 대상인 메시지 블록에 대한 추상 기본 클래스입니다. 
+  `source_block` 및 `target_block` 클래스의 기능을 결합합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -73,7 +75,7 @@ public ITarget<typename _SourceLinkRegistry::type::source_type>;
 |[propagate](#propagate)|소스 블록에서이 대상 블록에 메시지를 비동기적으로 전달 합니다.|
 |[send](#send)|이 블록에 메시지를 동기적으로 시작합니다. 호출한는 `ISource` 블록입니다. 이 함수에는 다음이 완료 되 면 메시지 블록에 이미 전파 됩니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -92,7 +94,7 @@ public ITarget<typename _SourceLinkRegistry::type::source_type>;
 
 다중 상속 하지 않으려면 합니다 `propagator_block` 클래스에서 상속 합니다 `source_block` 클래스 및 `ITarget` 추상 클래스입니다. 대부분의 기능을 `target_block` 클래스 여기에 복제 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -164,7 +166,7 @@ virtual void process_input_messages(_Inout_ message<_Target_type>* _PMessage);
 *_PMessage*<br/>
 처리 된 메시지에 대 한 포인터입니다.
 
-##  <a name="propagate"></a> 전파
+##  <a name="propagate"></a> propagate
 
 소스 블록에서이 대상 블록에 메시지를 비동기적으로 전달 합니다.
 
@@ -177,7 +179,8 @@ virtual message_status propagate(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -205,7 +208,8 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -240,7 +244,7 @@ void register_filter(filter_method const& _Filter);
 
 ### <a name="parameters"></a>매개 변수
 
-*필터 (_f)*<br/>
+*_Filter*<br/>
 필터 메서드입니다.
 
 ##  <a name="remove_network_links"></a> remove_network_links
@@ -264,7 +268,8 @@ virtual message_status send(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -316,7 +321,7 @@ virtual void unlink_source(_Inout_ ISource<_Source_type>* _PSource);
 virtual void unlink_sources();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [source_block 클래스](source-block-class.md)<br/>

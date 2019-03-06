@@ -10,12 +10,12 @@ helpviewer_keywords:
 - sockets [MFC], addresses
 - sockets [MFC], ports
 ms.assetid: e050261a-9285-4f31-a1c5-6c8033af5b4a
-ms.openlocfilehash: d132001cb792877e3d476508a6a5bb456dfb5987
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c33ec1376c1898272cf80e8d77c5cc273e16f9de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631363"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277779"
 ---
 # <a name="windows-sockets-ports-and-socket-addresses"></a>Windows 소켓: 포트 및 소켓 주소
 
@@ -40,17 +40,16 @@ FTP와 같은 공통 서비스의 특정 포트 예약 되어 있습니다. 해�
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: 소켓과 아카이브를 함께 사용하는 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
+- [Windows 소켓: 보관이 포함 된 소켓의 작동 방법](../mfc/windows-sockets-how-sockets-with-archives-work.md)
 
-- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)
-

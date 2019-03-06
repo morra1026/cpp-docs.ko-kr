@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CObject [MFC], IsSerializable
 - CObject [MFC], Serialize
 ms.assetid: 95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a
-ms.openlocfilehash: eb0580f6fef39df29d66e15cfd051a0460cb8d56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 515c4e90ee6ab77a6c7c1ae108393ea1aafb7c17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584017"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304069"
 ---
 # <a name="cobject-class"></a>CObject 클래스
 
@@ -54,7 +54,7 @@ class AFX_NOVTABLE CObject
 |[CObject::GetRuntimeClass](#getruntimeclass)|반환 된 `CRuntimeClass` 이 개체의이 클래스에 해당 하는 구조입니다.|
 |[CObject::IsKindOf](#iskindof)|주어진된 클래스에이 개체의이 관계를 테스트합니다.|
 |[CObject::IsSerializable](#isserializable)|이 개체를 serialize 할지 여부를 확인 하려면 테스트 합니다.|
-|[Cobject:: Serialize](#serialize)|로드 또는 보관에서 /로 개체를 저장 합니다.|
+|[CObject::Serialize](#serialize)|로드 또는 보관에서 /로 개체를 저장 합니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
@@ -85,7 +85,7 @@ class AFX_NOVTABLE CObject
 
 일반적으로 Microsoft Foundation 클래스 및 c + + 클래스 파생 및 사용에 대 한 자세한 `CObject`를 참조 하세요 [를 사용 하 여 CObject](../../mfc/using-cobject.md) 및 [Serialization](../../mfc/serialization-in-mfc.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CObject`
 
@@ -271,7 +271,7 @@ BOOL IsSerializable() const;
 
 [!code-cpp[NVC_MFCCObjectSample#12](../../mfc/codesnippet/cpp/cobject-class_6.cpp)]
 
-##  <a name="operator_delete"></a>  CObject::operator 삭제
+##  <a name="operator_delete"></a>  CObject::operator delete
 
 라이브러리의 릴리스 버전에 대 한 연산자 **삭제할** 연산자가 할당 된 메모리를 해제 **새**합니다.
 
@@ -343,7 +343,7 @@ void* PASCAL operator new(
 
 [!code-cpp[NVC_MFCCObjectSample#16](../../mfc/codesnippet/cpp/cobject-class_9.h)]
 
-##  <a name="serialize"></a>  Cobject:: Serialize
+##  <a name="serialize"></a>  CObject::Serialize
 
 이 개체를 보관 저장소에서 읽어오거나 보관 저장소에 씁니다.
 
@@ -366,7 +366,7 @@ virtual void Serialize(CArchive& ar);
 
 `Serialize` 호출한 [CArchive::ReadObject](../../mfc/reference/carchive-class.md#readobject) 하 고 [CArchive::WriteObject](../../mfc/reference/carchive-class.md#writeobject)합니다. 이러한 함수는 연관 된 `CArchive` 삽입 연산자 ( **< \<**) 및 추출 연산자 ( **>>**).
 
-Serialization 예를 들어 문서를 참조 [Serialization: 개체 직렬화](../../mfc/serialization-serializing-an-object.md)합니다.
+Serialization 예를 들어 문서를 참고 [직렬화 합니다. 개체를 직렬화](../../mfc/serialization-serializing-an-object.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -374,7 +374,6 @@ Serialization 예를 들어 문서를 참조 [Serialization: 개체 직렬화](.
 
 [!code-cpp[NVC_MFCCObjectSample#13](../../mfc/codesnippet/cpp/cobject-class_10.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - serialization [MFC], role of framework
 - serialization [MFC], overriding
 ms.assetid: 48d4a279-b51c-4ba5-81cd-ed043312b582
-ms.openlocfilehash: 4c76be874752a577aaeb4c3641818f8a2850b465
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1937098de30884be327c67a698dbb0023be248bb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556600"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276119"
 ---
 # <a name="bypassing-the-serialization-mechanism"></a>Serialization 메커니즘 건너뛰기
 
@@ -29,7 +29,6 @@ ms.locfileid: "50556600"
 
 이 시나리오에서는 프로그램 `Serialize` 재정의 하지 하려는 경우가 아니면, 예를 들어 문서를 닫을 때 최신 상태로 유지 하는 파일 헤더를 읽고 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서 사용](../mfc/using-documents.md)
-

@@ -4,12 +4,12 @@ ms.date: 11/19/2018
 helpviewer_keywords:
 - application button [MFC], customizing
 ms.assetid: ebb11180-ab20-43df-a234-801feca9eb38
-ms.openlocfilehash: ba29e9ad65e0bb1d2163e4051c7c7b53664d8817
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: d45ceaf1cce21f77871e966e0e8f525f95cb4c37
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175329"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269537"
 ---
 # <a name="how-to-customize-the-application-button"></a>방법: 응용 프로그램 단추 사용자 지정
 
@@ -54,6 +54,6 @@ ms.locfileid: "52175329"
 
 - 에 **Ribbon 편집기 도구 모음**, 클릭 **Ribbon 테스트**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [리본 디자이너(MFC)](../mfc/ribbon-designer-mfc.md)

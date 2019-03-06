@@ -8,12 +8,12 @@ helpviewer_keywords:
 - forms-based applications [MFC]
 - forms [MFC], adding to applications
 ms.assetid: efbe73c1-4ca4-4613-aac2-30d916e92c0e
-ms.openlocfilehash: d5bb61aaad767b1322c12f57ec16ae59cb75148c
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: f93f65e949c18ddb1ad5dba859ba8c4832abac8f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51331544"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289275"
 ---
 # <a name="form-views-mfc"></a>폼 뷰(MFC)
 
@@ -32,13 +32,13 @@ SDI 응용 프로그램에 사용자가 합니다 **새로 만들기** 명령, �
 
    기존 대화 상자 리소스를 선택 하면 대화 상자에 대 한 속성 페이지를 사용 하 여 이러한 스타일을 설정 해야 합니다. 대화 상자에 대 한 스타일을 포함 해야 합니다.
 
-     **WS_CHILD**= On
+     **WS_CHILD**=On
 
-     **WS_BORDER**= Off
+     **WS_BORDER**=Off
 
-     **WS_VISIBLE**= Off
+     **WS_VISIBLE**=Off
 
-     **WS_CAPTION**= Off
+     **WS_CAPTION**=Off
 
 문서/뷰 아키텍처를 기반으로 하는 응용 프로그램에 대 한 합니다 **새 폼** 명령 (클래스 뷰에서 마우스 오른쪽 단추로 클릭)도:
 
@@ -62,6 +62,6 @@ SDI 응용 프로그램에 사용자가 합니다 **새로 만들기** 명령, �
 
 - [프로젝트에 폼 삽입](../mfc/inserting-a-form-into-a-project.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)

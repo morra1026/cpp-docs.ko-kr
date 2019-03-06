@@ -6,12 +6,12 @@ helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 9e100400-65c7-4a85-8857-4e6cb6dd7340
-ms.openlocfilehash: 92d0b4887127e1803d1d3209a6a1dd51e9a98d15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1b8b3fcb2f10f975ebdf68a285c7d5e364b9e1b4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496111"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292577"
 ---
 # <a name="message-maps-atl"></a>메시지 맵 (ATL)
 
@@ -31,7 +31,6 @@ ATL 지원 동적 체인는 연결할 수 있도록 다른 개체의 메시지 �
 
 마지막으로, ATL 지원 대체 메시지 maps를 사용 하 여 선언 된 [ALT_MSG_MAP](reference/message-map-macros-atl.md#alt_msg_map) 매크로입니다. 각 대체 메시지 맵에 ALT_MSG_MAP에 전달 하는 고유 번호로 식별 됩니다. 대체 메시지를 사용 하 여 맵, 맵 하나에서 여러 windows 메시지를 처리할 수 있습니다. 기본적으로 사실은 `CWindowImpl` 대체 메시지 맵을 사용 하지 않습니다. 재정의이 지원을 추가 하려면 합니다 `WindowProc` 에서 메서드 하 `CWindowImpl`-파생 클래스 및 호출 `ProcessWindowMessage` 메시지 맵 식별자를 사용 하 여 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 구현](../atl/implementing-a-window.md)
-

@@ -12,16 +12,16 @@ helpviewer_keywords:
 - delayed rendering [MFC]
 - OLE [MFC], data sources
 ms.assetid: f7f27e77-bb5d-4131-b819-d71bf929ebaf
-ms.openlocfilehash: ee5cb320cb07a656675bd6735d6761cb69573d0f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 81dfe911866c4d1ba1720ee2c9854076c499f0a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636152"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286753"
 ---
 # <a name="data-objects-and-data-sources-manipulation"></a>데이터 개체 및 데이터 소스: 조작
 
-데이터 개체 또는 데이터 원본을 만든 후에, 다양 한 데이터를 삽입 하 고 데이터에 형식을 열거 하는 데이터를 제거 하는 등의 일반적인 작업을 수행할 수 있습니다. 이 문서에는 가장 일반적인 작업을 완료 하는 데 필요한 기술을 설명 합니다. 다음과 같은 내용을 다룹니다.
+데이터 개체 또는 데이터 원본을 만든 후에, 다양 한 데이터를 삽입 하 고 데이터에 형식을 열거 하는 데이터를 제거 하는 등의 일반적인 작업을 수행할 수 있습니다. 이 문서에는 가장 일반적인 작업을 완료 하는 데 필요한 기술을 설명 합니다. 다루는 주제는 다음과 같습니다.
 
 - [데이터 원본에 데이터 삽입](#_core_inserting_data_into_a_data_source)
 
@@ -85,13 +85,13 @@ ms.locfileid: "50636152"
 
 사용자는 동일한 형식의 다른 모든 데이터에 대 한 문서에 데이터 삽입 마찬가지로 이제 수 있습니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [끌어서 놓기](../mfc/drag-and-drop-ole.md)
 
 - [클립보드](../mfc/clipboard.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 개체 및 데이터 소스(OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
 [COleDataObject 클래스](../mfc/reference/coledataobject-class.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - application class [MFC]
 - CWinApp class [MFC], overridables
 ms.assetid: 07183d5e-734b-45d9-a8b6-9dde4adac0b4
-ms.openlocfilehash: 9f1098e305606df9463e308466b7864b019d5a00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35db009f86a0cb984f70a349a3ecdd93bfefb0f0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459282"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261247"
 ---
 # <a name="overridable-cwinapp-member-functions"></a>재정의 가능 CWinApp 멤버 함수
 
@@ -29,6 +29,6 @@ ms.locfileid: "50459282"
 
 재정의해야 하는 유일한 `CWinApp` 멤버 함수는 `InitInstance`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CMFCPreviewCtrlImpl [MFC], m_font
 - CMFCPreviewCtrlImpl [MFC], m_pDocument
 ms.assetid: 06257fa0-54c9-478d-9d68-c9698c3f93ed
-ms.openlocfilehash: 3ec1acd1872bc0e51117602ef723116170458afd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f66ed8478023bd42e185da4f21740d1de2536140
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636737"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295749"
 ---
 # <a name="cmfcpreviewctrlimpl-class"></a>CMFCPreviewCtrlImpl 클래스
 
@@ -59,7 +59,7 @@ class CMFCPreviewCtrlImpl : public CWnd;
 
 |이름|설명|
 |----------|-----------------|
-|[CMFCPreviewCtrlImpl:: ~ CMFCPreviewCtrlImpl](#dtor)|미리 보기 컨트롤 개체를 destructs 합니다.|
+|[CMFCPreviewCtrlImpl::~CMFCPreviewCtrlImpl](#dtor)|미리 보기 컨트롤 개체를 destructs 합니다.|
 |[CMFCPreviewCtrlImpl::CMFCPreviewCtrlImpl](#cmfcpreviewctrlimpl)|미리 보기 컨트롤 개체를 생성합니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -76,7 +76,7 @@ class CMFCPreviewCtrlImpl : public CWnd;
 |[CMFCPreviewCtrlImpl::SetPreviewVisuals](#setpreviewvisuals)|호출한 풍부한 미리 보기 처리기 풍부한 미리 보기의 시각적 개체를 설정 해야 할 경우 콘텐츠입니다.|
 |[CMFCPreviewCtrlImpl::SetRect](#setrect)|이 컨트롤에 대 한 새로운 경계 사각형을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -95,7 +95,7 @@ class CMFCPreviewCtrlImpl : public CWnd;
 
 **헤더:** afxwin.h
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -136,7 +136,7 @@ virtual BOOL Create(
 *hWndParent*<br/>
 셸에서에서 제공 하는 다양 한 미리 보기에 대 한 호스트 창 핸들입니다.
 
-*중국*<br/>
+*prc*<br/>
 초기 크기와 창의 위치를 지정 합니다.
 
 *pContext*<br/>
@@ -319,7 +319,7 @@ virtual void SetRect(
 
 ### <a name="parameters"></a>매개 변수
 
-*중국*<br/>
+*prc*<br/>
 새 크기와 미리 보기 컨트롤의 위치를 지정 합니다.
 
 *bRedraw*<br/>
@@ -329,7 +329,7 @@ virtual void SetRect(
 
 일반적으로 호스트 컨트롤의 크기를 조정할 때 새 경계 사각형에 설정 됩니다.
 
-## <a name="dtor"></a> CMFCPreviewCtrlImpl:: ~ CMFCPreviewCtrlImpl
+## <a name="dtor"></a> CMFCPreviewCtrlImpl::~CMFCPreviewCtrlImpl
 
 미리 보기 컨트롤 개체를 destructs 합니다.
 
@@ -338,4 +338,3 @@ virtual void SetRect(
 ```
 virtual ~CMFCPreviewCtrlImpl();
 ```
-

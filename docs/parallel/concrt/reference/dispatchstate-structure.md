@@ -11,16 +11,18 @@ f1_keywords:
 helpviewer_keywords:
 - DispatchState structure
 ms.assetid: 8c52546e-1650-48a0-985f-7e4a0fc26a90
-ms.openlocfilehash: 4c15fc0ba9c78d8b6416cd88480c8ada6e3febf1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c755675a69ce86bc03a3fdb59fa7d43a20676495
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603566"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265056"
 ---
 # <a name="dispatchstate-structure"></a>DispatchState 구조체
 
-`DispatchState` 구조체는 `IExecutionContext::Dispatch` 메서드에 상태를 전송하는 데 사용됩니다. `IExecutionContext` 인터페이스에 대해 `Dispatch` 메서드가 호출되는 상황을 설명합니다.
+
+  `DispatchState` 구조체는 `IExecutionContext::Dispatch` 메서드에 상태를 전송하는 데 사용됩니다. 
+  `IExecutionContext` 인터페이스에 대해 `Dispatch` 메서드가 호출되는 상황을 설명합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -44,7 +46,7 @@ struct DispatchState;
 |[DispatchState::m_fIsPreviousContextAsynchronouslyBlocked](#m_fispreviouscontextasynchronouslyblocked)|이 컨텍스트에서 시작 했는지 여부를 알려 줍니다는 `Dispatch` 메서드 이전 컨텍스트로 비동기적으로 차단 합니다. UMS 일정 컨텍스트에서만 사용 되 고 값으로 설정 되어이 `0` 다른 모든 실행 컨텍스트에 대 한 합니다.|
 |[DispatchState::m_reserved](#m_reserved)|향후 정보 전달에 대 한 예약 된 비트입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `DispatchState`
 
@@ -86,6 +88,6 @@ unsigned int m_fIsPreviousContextAsynchronouslyBlocked : 1;
 unsigned int m_reserved : 31;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

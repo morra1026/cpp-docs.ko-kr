@@ -7,12 +7,12 @@ helpviewer_keywords:
 - PBS_VERTICAL style
 - CProgressCtrl class [MFC], styles
 ms.assetid: 39eb8081-bc20-4552-91b9-e7cdd1b7d8ae
-ms.openlocfilehash: 5d33e9306c1d70bb58ad628297360bc6e34e6ce2
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 3adbd32456b1375bd2dc8574220e083ca3d83ee9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52174956"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296334"
 ---
 # <a name="styles-for-the-progress-control"></a>진행률 컨트롤 스타일
 
@@ -42,7 +42,6 @@ PBS_SMOOTH 및 PBS_VERTICAL 스타일를 사용 하 여:
 
 자세한 내용은 [창 스타일](../mfc/reference/styles-used-by-mfc.md#frame-window-styles-mfc) 에 *MFC 참조*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CProgressCtrl 사용](../mfc/using-cprogressctrl.md)
-

@@ -16,12 +16,12 @@ helpviewer_keywords:
 - Internet content [MFC]
 - WinInet classes [MFC]
 ms.assetid: 6df2dfd0-6e3f-4587-9d01-2a32f00f8a6f
-ms.openlocfilehash: 5bb6a1d379ed754ed96637dfe5b3e4da983edb9f
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 37fe5486d6d41ad182779a3a15b0aca3af51d04b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175589"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288443"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC 인터넷 프로그래밍 기본 사항
 
@@ -34,7 +34,7 @@ Microsoft는 클라이언트와 서버 응용 프로그램 프로그래밍에 �
 
 MFC는 인터넷 프로그래밍을 지 원하는 클래스를 제공 합니다. 사용할 수 있습니다 [COleControl](../mfc/reference/colecontrol-class.md) 하 고 [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) 및 관련 MFC ActiveX 컨트롤 및 액티브 문서를 작성 하는 클래스입니다. 와 같은 MFC 클래스를 사용할 수 있습니다 [CInternetSession](../mfc/reference/cinternetsession-class.md)를 [CFtpConnection](../mfc/reference/cftpconnection-class.md), 및 [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) 파일 및 FTP와 같은 인터넷 프로토콜을 사용 하 여 정보를 검색 하려면 HTTP 및 gopher 합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 - [인터넷 관련 MFC 클래스](../mfc/internet-related-mfc-classes.md)
 
@@ -58,11 +58,11 @@ MFC는 인터넷 프로그래밍을 지 원하는 클래스를 제공 합니다.
 
 - [MFC 인터넷 프로그래밍 작업](../mfc/mfc-internet-programming-tasks.md)
 
-- [응용 프로그램 디자인 선택](../mfc/application-design-choices.md)
+- [애플리케이션 디자인 선택](../mfc/application-design-choices.md)
 
-- [MFC 응용 프로그램 작성](../mfc/writing-mfc-applications.md)
+- [MFC 애플리케이션 작성](../mfc/writing-mfc-applications.md)
 
-- [인터넷 응용 프로그램 테스트](../mfc/testing-internet-applications.md)
+- [인터넷 애플리케이션 테스트](../mfc/testing-internet-applications.md)
 
 - [인터넷 보안](../mfc/internet-security-cpp.md)
 
@@ -80,5 +80,4 @@ Microsoft 인터넷 기술에 대 한 자세한 내용은 참조는 [Microsoft �
 
 Windows SDK의 OLE 섹션 OLE 프로그래밍에 대 한 추가 정보를 포함합니다. 이 정보를 직접 보다는 MFC 클래스를 통해 Win32 WinInet 함수를 사용 하는 방법에 대 한 세부 정보를 제공 합니다. 또한 인터넷 기술에 대 한 개요 정보를 포함 합니다.
 
-## <a name="see-also"></a>참고 항목
-
+## <a name="see-also"></a>참고자료

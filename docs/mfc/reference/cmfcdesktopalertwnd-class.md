@@ -44,18 +44,18 @@ helpviewer_keywords:
 - CMFCDesktopAlertWnd [MFC], SetSmallCaption
 - CMFCDesktopAlertWnd [MFC], SetTransparency
 ms.assetid: 73a2dd7b-ea84-4ae2-9830-7cf6e8dd2425
-ms.openlocfilehash: 759f4cdb66c1e16f022731e9d3183ad1192e0975
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b7d72b048d9f44233f96a3af859315ea20e9747
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50585135"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291641"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd Class
 
 `CMFCDesktopAlertWnd` 클래스는 이벤트에 대 한 사용자에 게 화면에 나타나는 모덜리스 대화 상자 기능을 구현 합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 ## <a name="syntax"></a>구문
 
 ```
@@ -68,7 +68,7 @@ class CMFCDesktopAlertWnd : public CWnd
 
 |이름|설명|
 |----------|-----------------|
-|[Cmfcdesktopalertwnd:: Create](#create)|만들고 바탕 화면 경고 창이 초기화 합니다.|
+|[CMFCDesktopAlertWnd::Create](#create)|만들고 바탕 화면 경고 창이 초기화 합니다.|
 |[CMFCDesktopAlertWnd::GetAnimationSpeed](#getanimationspeed)|애니메이션 속도 반환합니다.|
 |[CMFCDesktopAlertWnd::GetAnimationType](#getanimationtype)|애니메이션 형식을 반환합니다.|
 |[CMFCDesktopAlertWnd::GetAutoCloseTime](#getautoclosetime)|자동 닫기 제한 시간을 반환합니다.|
@@ -100,7 +100,8 @@ class CMFCDesktopAlertWnd : public CWnd
 
 팝업 창에서 사용자 지정 대화 상자를 표시 하려면 다음이 단계를 수행 합니다.
 
-1. `CMFCDesktopAlertDialog`에서 클래스를 파생합니다.
+1. 
+  `CMFCDesktopAlertDialog`에서 클래스를 파생합니다.
 
 1. 리소스에서 자식 대화 상자 템플릿을 만듭니다.
 
@@ -124,7 +125,7 @@ class CMFCDesktopAlertWnd : public CWnd
 
 [!code-cpp[NVC_MFC_DesktopAlertDemo#1](../../mfc/reference/codesnippet/cpp/cmfcdesktopalertwnd-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -138,7 +139,7 @@ class CMFCDesktopAlertWnd : public CWnd
 
 **헤더:** afxDesktopAlertWnd.h
 
-##  <a name="create"></a>  Cmfcdesktopalertwnd:: Create
+##  <a name="create"></a>  CMFCDesktopAlertWnd::Create
 
 만들고 바탕 화면 경고 창이 초기화 합니다.
 
@@ -315,7 +316,7 @@ virtual BOOL OnBeforeShow(CPoint&);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *CPoint &*<br/>
+[in] *CPoint&*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -440,7 +441,7 @@ void SetAutoCloseTime(int nTime);
 
 ### <a name="parameters"></a>매개 변수
 
-*않았습니다*<br/>
+*nTime*<br/>
 [in] 시간 밀리초에서는 경과할 때까지 경고 창이 자동으로 닫힙니다.
 
 ### <a name="remarks"></a>설명
@@ -491,7 +492,7 @@ virtual CSize GetDialogSize();
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - databases [MFC], ODBC
 - TN042
 ms.assetid: ecc6b5d9-f480-4582-9e22-8309fe561dad
-ms.openlocfilehash: 2140261c2e90eaee7930d4be3282ec31bda29759
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 462f8229d995add79f48f34b7f81257710b4a8b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502048"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276613"
 ---
 # <a name="tn042-odbc-driver-developer-recommendations"></a>TN042: ODBC 드라이버 개발자 권장 사항
 
@@ -116,8 +116,7 @@ MFC 데이터베이스 클래스는 대부분의 경우에서 대부분의 수�
 
 또한 비관적 잠금을 요청 하는 경우에 대 한 호출 `SQLSetPos` irow 1, FALSE fRefresh 및 떼 **SQL_LCK_EXCLUSIVE** 만들어집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - user interface threads [C++]
 - threading [MFC], user interface threads
 ms.assetid: 446925c1-db59-46ea-ae5b-d5ae5d5b91d8
-ms.openlocfilehash: e618f11e3c574e5f53dff150beeb313d26fd4a6c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ac22fad95041b07e132d31a2d246e58c3b40d30c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566831"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293318"
 ---
 # <a name="multithreading-creating-mfc-user-interface-threads"></a>다중 스레딩: MFC 사용자 인터페이스 스레드 만들기
 
@@ -57,6 +57,6 @@ MFC는 매개 변수 오버로드를 통해 `AfxBeginThread`의 두 가지 버�
 
 - [프로세스 및 스레드](/windows/desktop/ProcThread/processes-and-threads)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ 및 MFC에서 다중 스레딩](multithreading-with-cpp-and-mfc.md)

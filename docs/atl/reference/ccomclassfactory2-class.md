@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComClassFactory2 class
 ms.assetid: 19b66fd6-b9ed-47a0-822c-8132184f5a3e
-ms.openlocfilehash: ba5bda2e73964e7195c4955806e897f9496c244a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b3b14fa59765aa72a1142e0eef41aa84abea35de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50460205"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301853"
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 클래스
 
@@ -34,7 +34,7 @@ class CComClassFactory2 : public IClassFactory2,
 
 #### <a name="parameters"></a>매개 변수
 
-*라이선스*<br/>
+*license*<br/>
 다음 정적 함수를 구현 하는 클래스:
 
 - `static BOOL VerifyLicenseKey( BSTR bstr );`
@@ -69,7 +69,7 @@ ATL 개체에서 파생 하 여 일반적으로 클래스 팩터리를 획득 [C
 
 `CComClassFactory2` 둘 다에서 파생 `CComClassFactory2Base` 하 고 *라이선스*합니다. `CComClassFactory2Base`에서 파생 차례로 `IClassFactory2` 및 `CComObjectRootEx< CComGlobalsThreadModel >`합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -132,7 +132,7 @@ STDMETHOD(CreateInstanceLic)(
 [in] 개체를 만드는 경우 집계의 일부로 다음 *pUnkOuter* 알 수 없는 외부 이어야 합니다. 그렇지 않으면 *pUnkOuter* NULL 이어야 합니다.
 
 *pUnkReserved*<br/>
-[in] 사용 되지 않습니다. NULL 이어야 합니다.
+[in] 사용 되지 않습니다. Null이어야 합니다.
 
 *riid*<br/>
 [in] 요청된 된 인터페이스의 IID입니다. 하는 경우 *pUnkOuter* 가 NULL이 아닌 *riid* 있어야 `IID_IUnknown`합니다.
@@ -182,7 +182,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 ### <a name="parameters"></a>매개 변수
 
-*떼*<br/>
+*fLock*<br/>
 [in] TRUE 인 경우 잠금 수가 증가 하 고, 그렇지 않으면, 잠금 수가 감소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -221,7 +221,7 @@ STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);
 
 호출 [만들도록](#getlicinfo) 의 값을 검색할 `fRuntimeKeyAvail`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComClassFactoryAutoThread 클래스](../../atl/reference/ccomclassfactoryautothread-class.md)<br/>
 [CComClassFactorySingleton 클래스](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>

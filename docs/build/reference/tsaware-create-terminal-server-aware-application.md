@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -TSAWARE linker option
 - TSAWARE linker option
 ms.assetid: fe1c1846-de5b-4839-b562-93fbfe36cd29
-ms.openlocfilehash: 4b6cebfd30c6572c2ea7d9a0e59625ac8fd66de1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe31763c5da21a724f0c9242e6eb8429a2379ecd
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50566597"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421496"
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE(터미널 서버 인식 응용 프로그램 만들기)
 
@@ -26,7 +26,7 @@ ms.locfileid: "50566597"
 
 ## <a name="remarks"></a>설명
 
-/TSAWARE 옵션은 프로그램 이미지 선택적 헤더의 IMAGE_OPTIONAL_HEADER DllCharacteristics 필드에서 플래그를 설정합니다. 이 플래그를 설정하면 터미널 서버가 응용 프로그램에서 특정 변경 작업을 수행할 수 없습니다.
+/TSAWARE 옵션은 프로그램 이미지 선택적 헤더의 IMAGE_OPTIONAL_HEADER DllCharacteristics 필드에서 플래그를 설정합니다. 이 플래그를 설정하면 터미널 서버가 애플리케이션에서 특정 변경 작업을 수행할 수 없습니다.
 
 터미널 서버 인식 (레거시 응용 프로그램이 라고도 함) 응용 프로그램이 없는 경우 터미널 서버에서는 레거시 응용 프로그램이 다중 사용자 환경에서 제대로 작동 하도록 특정 사항을 수정 합니다. 예를 들어 터미널 서버는 각 사용자가 시스템의 Windows 디렉터리를 가져오는 대신 Windows 폴더에는 가상 Windows 폴더에 만들어집니다. 그러면 사용자가 액세스할 자신의 INI 파일에 있습니다. 또한 터미널 서버에는 레거시 응용 프로그램에 대 한 레지스트리를 일부 조정을 합니다. 이러한 수정 사항을 느린 터미널 서버에서 레거시 응용 프로그램을 로드 합니다.
 
@@ -54,7 +54,7 @@ ms.locfileid: "50566597"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TerminalServerAware%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)<br/>

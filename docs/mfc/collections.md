@@ -17,12 +17,12 @@ helpviewer_keywords:
 - collection classes [MFC], lists
 - collection classes [MFC], shapes
 ms.assetid: 02586e4c-851d-41d0-a722-feb11c17c74c
-ms.openlocfilehash: f7ded70431b80257433058cc9af89bcb137c4247
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5b74ee8a779ad2fffa801749d9818f985bc8c352
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490859"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273311"
 ---
 # <a name="collections"></a>컬렉션
 
@@ -114,8 +114,7 @@ MFC 컬렉션 클래스의 특징 테이블 [컬렉션 클래스 선택에 대 �
 
 - [CObject 컬렉션의 모든 개체 삭제](../mfc/deleting-all-objects-in-a-cobject-collection.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../mfc/mfc-concepts.md)<br/>
 [일반 MFC 항목](../mfc/general-mfc-topics.md)
-

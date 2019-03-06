@@ -6,12 +6,12 @@ helpviewer_keywords:
 - rich edit controls [MFC], bottomless
 - CRichEditCtrl class [MFC], bottomless
 ms.assetid: 2877dd32-1e9a-4fd1-98c0-66dcbbeef1de
-ms.openlocfilehash: 1c5578181b580ddb07b69f5fd2e91aea4b85a72b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f078680777dcf80a4349ea34e4520cb56031f44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624867"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270646"
 ---
 # <a name="bottomless-rich-edit-controls"></a>바닥 없는 Rich Edit 컨트롤
 
@@ -23,8 +23,7 @@ ms.locfileid: "50624867"
 
 받을 **EN_REQUESTRESIZE** 알림 메시지를 사용 하 여 알림을 활성화 해야 합니다는 `SetEventMask` 멤버 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

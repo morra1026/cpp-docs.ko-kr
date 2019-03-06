@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CTabCtrl class [MFC], creating
 - TCS_EX_FLATSEPARATORS extended style
 ms.assetid: 3a9c2d64-f5f4-41ea-84ab-fceb73c3dbdc
-ms.openlocfilehash: c444c938c88c2e8bf079f0f3eba80776c54af5ca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4627009e2e07d1c5692d83d8d6262a9fcd37977e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573409"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304914"
 ---
 # <a name="creating-the-tab-control"></a>탭 컨트롤 만들기
 
@@ -58,8 +58,7 @@ ms.locfileid: "50573409"
 
 단추 사이 표시 되는 구분 기호가 제거 됩니다 프로그램 `CTabCtrl` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTabCtrl 사용](../mfc/using-ctabctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

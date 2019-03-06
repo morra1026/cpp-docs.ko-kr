@@ -9,12 +9,12 @@ helpviewer_keywords:
 - ASSEMBLYLINKRESOURCE linker option
 - /ASSEMBLYLINKRESOURCE linker option
 ms.assetid: 8b6ad184-1b33-47a4-8513-4803cf915b64
-ms.openlocfilehash: 7c1d78758e43bf8e0c2c281c495c81e9f62b36e7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2970f4e6d94cfa2e6315eeff85eb71a30dc032a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50473907"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422431"
 ---
 # <a name="assemblylinkresource-link-to-net-framework-resource"></a>/ASSEMBLYLINKRESOURCE(.NET Framework 리소스에 대한 링크)
 
@@ -35,7 +35,7 @@ ms.locfileid: "50473907"
 
 /ASSEMBLYLINKRESOURCE 컴파일에 포함 해야 [/clr](../../build/reference/clr-common-language-runtime-compilation.md); [/LN](../../build/reference/ln-create-msil-module.md) 하거나 [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) /ASSEMBLYLINKRESOURCE 허용 되지 않습니다.
 
-경우 *filename* .NET Framework 리소스 파일인, 예를 들어에서 만든 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) 개발 환경에서의 멤버를 사용 하 여 액세스할 수 있습니다 또는 **System.Resources** 네임 스페이스입니다. 자세한 내용은 [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx)합니다. 다른 모든 리소스를 사용 하 여 합니다 **런타임에** \* 의 메서드를 **System.Reflection.Assembly** 런타임에 리소스에 액세스 하는 클래스입니다.
+경우 *filename* .NET Framework 리소스 파일인, 예를 들어에서 만든 [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) 개발 환경에서의 멤버를 사용 하 여 액세스할 수 있습니다 또는 **System.Resources** 네임 스페이스입니다. 자세한 내용은 [System.Resources.ResourceManager](/dotnet/api/system.resources.resourcemanager)합니다. 다른 모든 리소스를 사용 하 여 합니다 **런타임에** \* 의 메서드를 **System.Reflection.Assembly** 런타임에 리소스에 액세스 하는 클래스입니다.
 
 *filename* 모든 파일 형식이 될 수 있습니다. 예를 들어, 다음 전역 어셈블리 캐시에 설치 및 어셈블리의 관리 되는 코드에서 액세스할 수 있도록 하는 어셈블리의 네이티브 DLL 부분을 확인 하는 것이 좋습니다.
 
@@ -69,7 +69,7 @@ ms.locfileid: "50473907"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

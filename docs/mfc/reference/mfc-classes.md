@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC, classes
 - classes [MFC], MFC
 ms.assetid: 7b6db805-a572-43fd-9046-0fa6e3663e63
-ms.openlocfilehash: ee64ca259f2466bb02f7dd650a10dc18f8d8f8a1
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: e31e7d68676a40da51f214496a13072d0d4d2b28
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178956"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288649"
 ---
 # <a name="mfc-classes"></a>MFC 클래스
 
@@ -24,7 +24,7 @@ ms.locfileid: "53178956"
 
 ## <a name="in-this-section"></a>섹션 내용
 
-[Cacceleratedeceleratetransition 클래스 클래스](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
+[CAccelerateDecelerateTransition 클래스](../../mfc/reference/cacceleratedeceleratetransition-class.md)<br/>
 가속-감속 전환을 구현합니다.
 
 [CAnimateCtrl 클래스](../../mfc/reference/canimatectrl-class.md)<br/>
@@ -1306,4 +1306,3 @@ MFC 라이브러리의 모든 Window 클래스의 기본적인 기능을 제공�
 
 [MFC 데스크톱 응용 프로그램](../../mfc/mfc-desktop-applications.md)<br/>
 클래스, 전역 함수, 전역 변수 및 MFC 라이브러리를 구성하는 매크로에 대한 항목을 볼 수 있는 링크를 포함합니다.
-

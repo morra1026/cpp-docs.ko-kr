@@ -178,12 +178,12 @@ helpviewer_keywords:
 - CFrameWndEx [MFC], UpdateCaption
 - CFrameWndEx [MFC], WinHelp
 ms.assetid: 5830aca8-4a21-4f31-91f1-dd5477ffcc8d
-ms.openlocfilehash: a0e6861ecf3a6704ddb31c39f7bb2c44cb75ccd8
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 6ba0c2b5449cb0058c1b274d9d9c0d7ae33bcd7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179008"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302986"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx 클래스
 
@@ -715,7 +715,7 @@ BOOL InsertPane(
 *pTarget*<br/>
 앞이나 뒤에 창을 삽입할 컨트롤 막대에 대한 포인터입니다.
 
-*후에는*<br/>
+*bAfter*<br/>
 삽입 하려는 경우 TRUE *pControlBar* 후 *pTarget*FALSE, 그렇지 않으면입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1280,7 +1280,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 *pButton*<br/>
 [in] 도구 모음 단추에 대 한 포인터입니다.
 
-*PTI*<br/>
+*pTI*<br/>
 [out] 도구 정보 구조체에 대 한 포인터입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1304,7 +1304,7 @@ afx_msg LRESULT OnMenuChar(
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 [in] 누른된 키의 문자 코드입니다.
 
 *nFlags*<br/>
@@ -1677,7 +1677,7 @@ afx_msg void OnSize(
 
 ### <a name="parameters"></a>매개 변수
 
-*n 형식*<br/>
+*nType*<br/>
 [in] 크기 조정의 형식입니다. 가능한 값 매개 변수를 참조 하세요 *wParam* 에 [WM_SIZE 알림을](/windows/desktop/winmsg/wm-size)합니다.
 
 *cx*<br/>
@@ -2036,7 +2036,7 @@ void SetupToolbarMenu(
 
 ### <a name="parameters"></a>매개 변수
 
-*메뉴*<br/>
+*menu*<br/>
 [in] `CMenu` 개체를 수정할 수 있습니다.
 
 *uiViewUserToolbarCmdFirst*<br/>
@@ -2113,7 +2113,7 @@ Help 명령입니다. 가능한 값 목록을 참조 하세요 [WinHelp](/window
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

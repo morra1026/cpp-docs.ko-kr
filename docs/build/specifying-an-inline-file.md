@@ -6,12 +6,12 @@ helpviewer_keywords:
 - inline files [C++], specifying NMAKE
 - files [C++], inline
 ms.assetid: 393eccfb-3fc9-4bac-a30c-8ac8d221cca3
-ms.openlocfilehash: 8f8868ce3755bd47f779576a7e44125f53314606
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e1eff292afeab1ec9f42708d94bf78afca4776e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648699"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413214"
 ---
 # <a name="specifying-an-inline-file"></a>인라인 파일 지정
 
@@ -27,6 +27,6 @@ ms.locfileid: "50648699"
 
 꺾쇠 괄호 안의 명령이 실행 되 면으로 바뀝니다 *filename*지정 하는 경우, 고유한 NMAKE에서 생성 된 이름으로 합니다. 를 지정 하는 경우 *filename* 공백 또는 탭 하지 않고 꺾쇠 괄호를 따라야 합니다. 경로 허용 됩니다. 확장명이 필요 하지 않거나 것으로 간주 합니다. 경우 *filename* 현재에서 파일을 만들 지정 하지 않거나 지정한 디렉터리 해당 이름으로 파일 기존 덮어쓰지;이 고, 그렇지 TMP 디렉터리에 만들어집니다 (또는 현재 디렉터리 경우 TMP 환경 변수 정의 되지 않았습니다). 이전 하는 경우 *filename* 는 다시 NMAKE 이전 파일을 대체 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메이크파일의 인라인 파일](../build/inline-files-in-a-makefile.md)

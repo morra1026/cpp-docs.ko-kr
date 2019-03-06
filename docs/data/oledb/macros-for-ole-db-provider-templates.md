@@ -51,12 +51,12 @@ helpviewer_keywords:
 - END_SCHEMA_MAP macro
 - SCHEMA_ENTRY macro
 ms.assetid: 909482c5-64ab-4e52-84a9-1c07091db183
-ms.openlocfilehash: a2a5bf14da1a39439db67a4fb062fd06763754fc
-ms.sourcegitcommit: f4be868c0d1d78e550fba105d4d3c993743a1f4b
+ms.openlocfilehash: f5cf5e8ebadcc48dbd040225496f0a437b92555c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56151119"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415190"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB 공급자 템플릿에 대한 매크로
 
@@ -158,11 +158,11 @@ BEGIN_PROPSET_MAP(Class)
 *클래스*<br/>
 [in] 이 속성이 설정 된 클래스입니다. 다음 OLE DB 개체의 속성 집합을 지정할 수 있습니다.
 
-- [데이터 원본 개체](https://docs.microsoft.com/previous-versions/windows/desktop/ms721278(v=vs.85))
+- [데이터 원본 개체](/previous-versions/windows/desktop/ms721278(v=vs.85))
 
-- [세션 개체](https://docs.microsoft.com/previous-versions/windows/desktop/ms711572(v=vs.85))
+- [세션 개체](/previous-versions/windows/desktop/ms711572(v=vs.85))
 
-- [도구](https://docs.microsoft.com/previous-versions/windows/desktop/ms724608(v=vs.85))
+- [도구](/previous-versions/windows/desktop/ms724608(v=vs.85))
 
 #### <a name="example"></a>예제
 
@@ -238,11 +238,11 @@ PROPERTY_INFO_ENTRY(dwPropID)
 #### <a name="parameters"></a>매개 변수
 
 *dwPropID*<br/>
-[in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](https://docs.microsoft.com/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
+[in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
 
 #### <a name="remarks"></a>설명
 
-이 매크로는 `DWORD` 형식의 속성 값을 ATLDB.H에 정의된 기본값으로 설정합니다. 속성을 선택한 값으로 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다. 설정 하는 `VARTYPE` 하 고 [DBPROPFLAGS](https://docs.microsoft.com/previous-versions/windows/desktop/ms724342(v=vs.85)) 동시 속성에 대 한 사용 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.
+이 매크로는 `DWORD` 형식의 속성 값을 ATLDB.H에 정의된 기본값으로 설정합니다. 속성을 선택한 값으로 설정하려면 [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md)를 사용합니다. 설정 하는 `VARTYPE` 하 고 [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) 동시 속성에 대 한 사용 [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md)합니다.
 
 #### <a name="example"></a>예제
 
@@ -261,13 +261,13 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
 #### <a name="parameters"></a>매개 변수
 
 *dwPropID*<br/>
-[in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](https://docs.microsoft.com/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
+[in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
 
 *vt*<br/>
 [in] 이 속성 항목의 `VARTYPE`입니다. (Wtypes.h에 정의 됨)
 
 *dwFlags*<br/>
-[in] 이 속성 항목을 설명하는 [DBPROPFLAGS](https://docs.microsoft.com/previous-versions/windows/desktop/ms724342(v=vs.85)) 값입니다.
+[in] 이 속성 항목을 설명하는 [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342(v=vs.85)) 값입니다.
 
 *값*<br/>
 [in] `DWORD`형식의 속성 값입니다.
@@ -296,9 +296,9 @@ PROPERTY_INFO_ENTRY_VALUE(dwPropID, value)
 #### <a name="parameters"></a>매개 변수
 
 *dwPropID*<br/>
-[in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](https://docs.microsoft.com/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
+[in] 속성 집합 GUID와 함께 사용하여 속성을 식별할 수 있는 [DBPROPID](/previous-versions/windows/desktop/ms723882(v=vs.85)) 값입니다.
 
-*value*<br/>
+*값*<br/>
 [in] `DWORD`형식의 속성 값입니다.
 
 #### <a name="remarks"></a>설명
@@ -384,7 +384,7 @@ PROVIDER_COLUMN_ENTRY_FIXED(name, ordinal, dbtype, member)
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *dbtype*<br/>
-[in] 데이터 형식이 [DBTYPE](https://docs.microsoft.com/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
+[in] 데이터 형식이 [DBTYPE](/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
 
 *member*<br/>
 [in] 멤버 변수 `dataClass` 데이터를 저장 하는 합니다.
@@ -416,22 +416,22 @@ PROVIDER_COLUMN_ENTRY_GN (name, ordinal, flags, colSize, dbtype, precision, scal
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *flags*<br/>
-[in] 데이터 반환 되는 방법을 지정 합니다. 참조를 `dwFlags` 설명을 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
+[in] 데이터 반환 되는 방법을 지정 합니다. 참조를 `dwFlags` 설명을 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
 
 *colSize*<br/>
 [in] 열 크기입니다.
 
 *dbtype*<br/>
-[in] 데이터 형식을 값을 나타냅니다. 참조를 `wType` 설명을 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
+[in] 데이터 형식을 값을 나타냅니다. 참조를 `wType` 설명을 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
 
 *precision*<br/>
-[in] 경우에 데이터를 가져올 때 사용할 전체 자릿수를 나타내는 *dbType* DBTYPE_NUMERIC 인지 DBTYPE_DECIMAL 합니다. 참조를 `bPrecision` 설명을 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
+[in] 경우에 데이터를 가져올 때 사용할 전체 자릿수를 나타내는 *dbType* DBTYPE_NUMERIC 인지 DBTYPE_DECIMAL 합니다. 참조를 `bPrecision` 설명을 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
 
 *scale*<br/>
-[in] DbType DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL 이면 데이터를 가져올 때 사용할 소수 자릿수를 나타냅니다. 참조를 `bScale` 설명을 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
+[in] DbType DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL 이면 데이터를 가져올 때 사용할 소수 자릿수를 나타냅니다. 참조를 `bScale` 설명을 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85))합니다.
 
 *guid*<br/>
-스키마 행 집합 GUID입니다. 참조 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 행 집합 목록과 해당 Guid에 대 한 합니다.
+스키마 행 집합 GUID입니다. 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 행 집합 목록과 해당 Guid에 대 한 합니다.
 
 #### <a name="remarks"></a>설명
 
@@ -492,7 +492,7 @@ PROVIDER_COLUMN_ENTRY_STR(name, ordinal, member)
 
 #### <a name="remarks"></a>설명
 
-열 데이터는 것으로 간주 되는 경우이 매크로 사용 하 여 [DBTYPE_STR](https://docs.microsoft.com/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
+열 데이터는 것으로 간주 되는 경우이 매크로 사용 하 여 [DBTYPE_STR](/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
 
 #### <a name="example"></a>예제
 
@@ -517,7 +517,7 @@ PROVIDER_COLUMN_ENTRY_TYPE_LENGTH(name, ordinal, dbtype, size, member)
 [in] 열 번호입니다. 열 책갈피 열이 아닌 열 번호를 0 아니어야 합니다.
 
 *dbtype*<br/>
-[in] 데이터 형식이 [DBTYPE](https://docs.microsoft.com/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
+[in] 데이터 형식이 [DBTYPE](/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
 
 *size*<br/>
 [in] 열 크기 (바이트)입니다.
@@ -552,7 +552,7 @@ PROVIDER_COLUMN_ENTRY_WSTR(name, ordinal, member)
 
 #### <a name="remarks"></a>설명
 
-열 데이터가 null 종료 유니코드 문자열 하는 경우이 매크로 사용 하 여 [DBTYPE_WSTR](https://docs.microsoft.com/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
+열 데이터가 null 종료 유니코드 문자열 하는 경우이 매크로 사용 하 여 [DBTYPE_WSTR](/previous-versions/windows/desktop/ms711251(v=vs.85))합니다.
 
 ### <a name="begin_schema_map"></a> BEGIN_SCHEMA_MAP
 
@@ -571,7 +571,7 @@ BEGIN_SCHEMA_MAP(SchemaClass);
 
 #### <a name="remarks"></a>설명
 
-참조 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 스키마 행 집합에 대 한 자세한 내용은 Windows SDK에 있습니다.
+참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 스키마 행 집합에 대 한 자세한 내용은 Windows SDK에 있습니다.
 
 ### <a name="end_schema_map"></a> END_SCHEMA_MAP
 
@@ -601,7 +601,7 @@ SCHEMA_ENTRY(guid,
 #### <a name="parameters"></a>매개 변수
 
 *guid*<br/>
-스키마 행 집합 GUID입니다. 참조 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 행 집합 목록과 해당 Guid에 대 한 합니다.
+스키마 행 집합 GUID입니다. 참조 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference* 스키마 행 집합 목록과 해당 Guid에 대 한 합니다.
 
 *rowsetClass*<br/>
 스키마 행 집합을 나타내는 데 생성 되는 클래스입니다.
@@ -616,7 +616,7 @@ HRESULT Execute (LONG* pcRowsAffected,
     const VARIANT* rgRestrictions);
 ```
 
-이 `Execute` 함수 행 집합의 데이터를 채웁니다. 에 설명 된 대로 ATL 프로젝트 마법사를 만듭니다 [IDBSchemaRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference*, 프로젝트에서 스키마 행 집합의 각 세 가지 필수 OLE DB 스키마에 대 한 초기 3:
+이 `Execute` 함수 행 집합의 데이터를 채웁니다. 에 설명 된 대로 ATL 프로젝트 마법사를 만듭니다 [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686(v=vs.85)) 에 *OLE DB Programmer's Reference*, 프로젝트에서 스키마 행 집합의 각 세 가지 필수 OLE DB 스키마에 대 한 초기 3:
 
 - DBSCHEMA_TABLES
 

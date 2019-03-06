@@ -16,16 +16,16 @@ helpviewer_keywords:
 - GetProperties method
 - SetProperties method
 ms.assetid: b3cf6aea-527e-4f0d-96e0-669178b021a2
-ms.openlocfilehash: c6736eac040b2186ddb1b1dc1c5c3a5b6b957d20
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: b9d6c9aab2b12859462abfa2a842754128e72306
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556155"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416659"
 ---
 # <a name="icommandpropertiesimpl-class"></a>ICommandPropertiesImpl 클래스
 
-구현을 제공 합니다 [ICommandProperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723044(v=vs.85)) 인터페이스입니다.
+구현을 제공 합니다 [ICommandProperties](/previous-versions/windows/desktop/ms723044(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -60,7 +60,7 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 
 이 명령에 필수입니다. 구현이 정의 된 정적 함수에서 제공 되는 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) 매크로입니다.
 
-## <a name="getproperties"></a> Icommandpropertiesimpl:: Getproperties
+## <a name="getproperties"></a> ICommandPropertiesImpl::GetProperties
 
 명령의 속성 맵을 사용 하 여 모든 요청 된 속성 집합을 반환 합니다.
 
@@ -75,13 +75,13 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandproperties:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms723119(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandproperties:: Getproperties](/previous-versions/windows/desktop/ms723119(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 
 [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md)을 참조하세요.
 
-## <a name="setproperties"></a> Icommandpropertiesimpl:: Setproperties
+## <a name="setproperties"></a> ICommandPropertiesImpl::SetProperties
 
 명령 개체에 대 한 속성을 설정합니다.
 
@@ -94,7 +94,7 @@ STDMETHOD(SetProperties)(ULONG cPropertySets,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommandproperties:: Setproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms711497(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommandproperties:: Setproperties](/previous-versions/windows/desktop/ms711497(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - database classes [MFC], DAO
 - DAO [MFC], classes
 ms.assetid: b15d0cd6-328b-4288-9c19-d037a795db57
-ms.openlocfilehash: cce9831cb317b468bfc51777eedbde261e798108
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 238aab0a1948f16a85b8ea16719b75b49f5e69c8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538947"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287494"
 ---
 # <a name="dao-classes"></a>DAO 클래스
 
@@ -61,7 +61,6 @@ OLE 자동화 형식에 대 한 래퍼 **날짜**합니다. 날짜 및 시간 �
 [COleVariant](../mfc/reference/colevariant-class.md)<br/>
 OLE 자동화 형식에 대 한 래퍼 **VARIANT**합니다. 데이터 **VARIANT**다양 한 형식의 저장할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

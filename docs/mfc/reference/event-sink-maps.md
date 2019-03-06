@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - event sink maps [MFC]
 ms.assetid: a9757eb2-5f4a-45ec-a2cd-ce5eec85b16f
-ms.openlocfilehash: 3e75f1d880ce767b6fdbb61b4877f0748ba779f4
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 8e33636253b269692f87f99980b9da0cd60867ee
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518933"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285583"
 ---
 # <a name="event-sink-maps"></a>이벤트 싱크 맵
 
@@ -243,7 +243,7 @@ OLE 컨트롤의 컨트롤 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-*vtsParams* 인수는 공백으로 구분 된 목록에서 값을 **VTS_** 상수입니다. 공백 (쉼표가 아님)으로 구분 된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정 합니다. 예를 들어:
+*vtsParams* 인수는 공백으로 구분 된 목록에서 값을 **VTS_** 상수입니다. 공백 (쉼표가 아님)으로 구분 된 이러한 값 중 하나 이상이 함수의 매개 변수 목록을 지정 합니다. 예를 들면,
 
 [!code-cpp[NVC_MFCAutomation#11](../../mfc/codesnippet/cpp/event-sink-maps_1.cpp)]
 
@@ -311,6 +311,6 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
 
   **헤더** afxdisp.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로 및 전역](../../mfc/reference/mfc-macros-and-globals.md)

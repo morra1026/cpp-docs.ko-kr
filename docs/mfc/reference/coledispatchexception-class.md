@@ -16,12 +16,12 @@ helpviewer_keywords:
 - COleDispatchException [MFC], m_strSource
 - COleDispatchException [MFC], m_wCode
 ms.assetid: 0e95c8be-e21a-490c-99ec-181c6a9a26d0
-ms.openlocfilehash: 06f8d8abd8ea337369ceed62a9944e867d355768
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f6440ef202d0eafc4730b1e63ca4627d5dab61bc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456240"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299961"
 ---
 # <a name="coledispatchexception-class"></a>COleDispatchException 클래스
 
@@ -51,9 +51,9 @@ class COleDispatchException : public CException
 
 일반적으로 호출 해야 [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) 만들고 throw 하는 `COleDispatchException` 개체입니다.
 
-예외에 대 한 자세한 내용은 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 하 고 [예외: OLE 예외](../../mfc/exceptions-ole-exceptions.md)합니다.
+예외에 대 한 자세한 내용은 문서를 참조 하세요 [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md) 고 [예외: OLE 예외](../../mfc/exceptions-ole-exceptions.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -129,7 +129,7 @@ WORD m_wCode;
 
 이 멤버 함수에 의해 설정 됩니다 [AfxThrowOleDispatchException](exception-processing.md#afxthrowoledispatchexception) 때 예외가 throw 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CALCDRIV MFC 샘플](../../visual-cpp-samples.md)<br/>
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>

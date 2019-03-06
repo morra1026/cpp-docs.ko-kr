@@ -114,18 +114,19 @@ helpviewer_keywords:
 - CMFCRibbonButton [MFC], SetText
 - CMFCRibbonButton [MFC], OnClick
 ms.assetid: 732e941c-9504-4b83-a691-d18075965d53
-ms.openlocfilehash: 743390955c583a130b53b9e80acd2b01d9742e1e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d0d16062f6808cbeb2d3e73fac9f4bbdfd7e69c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550383"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278160"
 ---
 # <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton 클래스
 
-`CMFCRibbonButton` 클래스는 패널, 빠른 실행 도구 모음 및 팝업 메뉴와 같은 리본 막대 요소에 배치할 수 있는 단추를 구현합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+  `CMFCRibbonButton` 클래스는 패널, 빠른 실행 도구 모음 및 팝업 메뉴와 같은 리본 막대 요소에 배치할 수 있는 단추를 구현합니다.
+
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -154,17 +155,17 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 |[CMFCRibbonButton::DrawRibbonText](#drawribbontext)||
 |[CMFCRibbonButton::FindSubItemIndexByID](#findsubitemindexbyid)|지정된 명령 ID와 연결된 팝업 메뉴 항목의 인덱스를 반환합니다.|
 |[CMFCRibbonButton::GetCommandRect](#getcommandrect)||
-|[Cmfcribbonbutton:: Getcompactsize](#getcompactsize)|리본 요소의 압축 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getcompactsize](../../mfc/reference/cmfcribbonbaseelement-class.md#getcompactsize).)|
+|[CMFCRibbonButton::GetCompactSize](#getcompactsize)|리본 요소의 압축 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getcompactsize](../../mfc/reference/cmfcribbonbaseelement-class.md#getcompactsize).)|
 |[CMFCRibbonButton::GetIcon](#geticon)||
 |[CMFCRibbonButton::GetImageIndex](#getimageindex)|단추와 연결된 이미지의 인덱스를 반환합니다.|
 |[CMFCRibbonButton::GetImageSize](#getimagesize)|리본 요소의 이미지 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getimagesize](../../mfc/reference/cmfcribbonbaseelement-class.md#getimagesize).)|
-|[Cmfcribbonbutton:: Getintermediatesize](#getintermediatesize)|중간 상태인 리본 요소의 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getintermediatesize](../../mfc/reference/cmfcribbonbaseelement-class.md#getintermediatesize).)|
+|[CMFCRibbonButton::GetIntermediateSize](#getintermediatesize)|중간 상태인 리본 요소의 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getintermediatesize](../../mfc/reference/cmfcribbonbaseelement-class.md#getintermediatesize).)|
 |[CMFCRibbonButton::GetMenu](#getmenu)|리본 단추에 할당된 Windows 메뉴에 대한 핸들을 반환합니다.|
 |[CMFCRibbonButton::GetMenuRect](#getmenurect)||
-|[Cmfcribbonbutton:: Getregularsize](#getregularsize)|리본 요소의 보통 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getregularsize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
+|[CMFCRibbonButton::GetRegularSize](#getregularsize)|리본 요소의 보통 크기를 반환합니다. (재정의 [cmfcribbonbaseelement:: Getregularsize](../../mfc/reference/cmfcribbonbaseelement-class.md#getregularsize).)|
 |[CMFCRibbonButton::GetSubItems](#getsubitems)||
 |[CMFCRibbonButton::GetTextRowHeight](#gettextrowheight)||
-|[Cmfcribbonbutton:: Gettooltiptext](#gettooltiptext)|리본 요소의 도구 설명 텍스트를 반환합니다. (재정의 [cmfcribbonbaseelement:: Gettooltiptext](../../mfc/reference/cmfcribbonbaseelement-class.md#gettooltiptext).)|
+|[CMFCRibbonButton::GetToolTipText](#gettooltiptext)|리본 요소의 도구 설명 텍스트를 반환합니다. (재정의 [cmfcribbonbaseelement:: Gettooltiptext](../../mfc/reference/cmfcribbonbaseelement-class.md#gettooltiptext).)|
 |[CMFCRibbonButton::HasCompactMode](#hascompactmode)|리본 요소에 압축 모드가 있는지 여부를 지정합니다. (재정의 [cmfcribbonbaseelement:: Hascompactmode](../../mfc/reference/cmfcribbonbaseelement-class.md#hascompactmode).)|
 |[CMFCRibbonButton::HasIntermediateMode](#hasintermediatemode)|리본 요소에 중간 모드가 있는지 여부를 지정합니다. (재정의 [cmfcribbonbaseelement:: Hasintermediatemode](../../mfc/reference/cmfcribbonbaseelement-class.md#hasintermediatemode).)|
 |[CMFCRibbonButton::HasLargeMode](#haslargemode)|리본 요소에 큰 모드가 있는지 여부를 결정합니다. (재정의 [cmfcribbonbaseelement:: Haslargemode](../../mfc/reference/cmfcribbonbaseelement-class.md#haslargemode).)|
@@ -184,11 +185,11 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 |[CMFCRibbonButton::IsSingleLineText](#issinglelinetext)||
 |[CMFCRibbonButton::OnCalcTextSize](#oncalctextsize)|(재정의 [cmfcribbonbaseelement:: Oncalctextsize](../../mfc/reference/cmfcribbonbaseelement-class.md#oncalctextsize).)|
 |[CMFCRibbonButton::OnDrawBorder](#ondrawborder)||
-|[Cmfcribbonbutton:: Ondraw](#ondraw)|리본 요소를 그리기 위해 프레임워크에서 호출됩니다. (재정의 [cmfcribbonbaseelement:: Ondraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|
+|[CMFCRibbonButton::OnDraw](#ondraw)|리본 요소를 그리기 위해 프레임워크에서 호출됩니다. (재정의 [cmfcribbonbaseelement:: Ondraw](../../mfc/reference/cmfcribbonbaseelement-class.md#ondraw).)|
 |[CMFCRibbonButton::OnFillBackground](#onfillbackground)||
 |[CMFCRibbonButton::RemoveAllSubItems](#removeallsubitems)|팝업 메뉴에서 모든 메뉴 항목을 제거합니다.|
 |[CMFCRibbonButton::RemoveSubItem](#removesubitem)|팝업 메뉴에서 메뉴 항목을 제거합니다.|
-|[Cmfcribbonbutton:: Setaccdata](#setaccdata)|(재정의 [cmfcribbonbaseelement:: Setaccdata](../../mfc/reference/cmfcribbonbaseelement-class.md#setaccdata).)|
+|[CMFCRibbonButton::SetACCData](#setaccdata)|(재정의 [cmfcribbonbaseelement:: Setaccdata](../../mfc/reference/cmfcribbonbaseelement-class.md#setaccdata).)|
 |[CMFCRibbonButton::SetAlwaysLargeImage](#setalwayslargeimage)|사용자가 단추를 축소하면 단추가 큰 이미지나 작은 이미지 중 어느 것을 표시하는지를 지정합니다.|
 |[CMFCRibbonButton::SetDefaultCommand](#setdefaultcommand)|리본 단추에 대한 기본 명령을 사용하도록 설정합니다.|
 |[CMFCRibbonButton::SetDescription](#setdescription)|리본 요소에 대한 설명을 설정합니다. (재정의 [cmfcribbonbaseelement:: Setdescription](../../mfc/reference/cmfcribbonbaseelement-class.md#setdescription).)|
@@ -198,7 +199,7 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 |[CMFCRibbonButton::SetRightAlignMenu](#setrightalignmenu)|팝업 메뉴를 단추 오른쪽에 맞춥니다.|
 |[CMFCRibbonButton::SetText](#settext)|리본 요소의 텍스트를 설정합니다. (재정의 [cmfcribbonbaseelement:: Settext](../../mfc/reference/cmfcribbonbaseelement-class.md#settext).)|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -234,7 +235,7 @@ pPanel->Add (new CMFCRibbonButton (ID_EDIT_COPY, _T("Copy"), 2));
 pPanel->Add (new CMFCRibbonButton (ID_EDIT_PAINT, _T("Paint"), 9));
 ```
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -364,7 +365,7 @@ virtual void DrawImage(
 ### <a name="parameters"></a>매개 변수
 
 [in] *pDC*<br/>
-[in] *형식*<br/>
+[in] *type*<br/>
 [in] *rectImage*<br/>
 
 ### <a name="remarks"></a>설명
@@ -419,7 +420,7 @@ CRect GetCommandRect() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="getcompactsize"></a>  Cmfcribbonbutton:: Getcompactsize
+##  <a name="getcompactsize"></a>  CMFCRibbonButton::GetCompactSize
 
 ```
 virtual CSize GetCompactSize(CDC* pDC);
@@ -472,13 +473,13 @@ virtual CSize GetImageSize(RibbonImageType type) const;
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *형식*<br/>
+[in] *type*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-##  <a name="getintermediatesize"></a>  Cmfcribbonbutton:: Getintermediatesize
+##  <a name="getintermediatesize"></a>  CMFCRibbonButton::GetIntermediateSize
 
 ```
 virtual CSize GetIntermediateSize(CDC* pDC);
@@ -514,7 +515,7 @@ CRect GetMenuRect() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="getregularsize"></a>  Cmfcribbonbutton:: Getregularsize
+##  <a name="getregularsize"></a>  CMFCRibbonButton::GetRegularSize
 
 ```
 virtual CSize GetRegularSize(CDC* pDC);
@@ -548,7 +549,7 @@ int GetTextRowHeight() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="gettooltiptext"></a>  Cmfcribbonbutton:: Gettooltiptext
+##  <a name="gettooltiptext"></a>  CMFCRibbonButton::GetToolTipText
 
 ```
 virtual CString GetToolTipText() const;
@@ -754,14 +755,14 @@ virtual void OnClick(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 마우스 클릭의 위치를 지정 합니다.
 
 ### <a name="remarks"></a>설명
 
 이 이벤트를 처리 하려는 경우에 파생된 클래스에서이 메서드를 재정의 합니다.
 
-##  <a name="ondraw"></a>  Cmfcribbonbutton:: Ondraw
+##  <a name="ondraw"></a>  CMFCRibbonButton::OnDraw
 
 ```
 virtual void OnDraw(CDC* pDC);
@@ -824,7 +825,7 @@ BOOL RemoveSubItem(int nIndex);
 
 지정된 된 항목이 성공적으로 제거 되었으면 TRUE 그렇지 않으면 FALSE 이면 *nIndex* 가 음수 이거나 팝업 메뉴에서 메뉴 항목의 수를 초과 합니다.
 
-##  <a name="setaccdata"></a>  Cmfcribbonbutton:: Setaccdata
+##  <a name="setaccdata"></a>  CMFCRibbonButton::SetACCData
 
 리본 단추에 대한 내게 필요한 옵션 데이터를 설정합니다.
 
@@ -979,7 +980,7 @@ virtual void SetText(LPCTSTR lpszText);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - standard dialog, data exchange routines
 ms.assetid: c6adb7f3-f9af-4cc5-a9ea-315c5b60ad1a
-ms.openlocfilehash: 374618aba297fb2c055ce02f93d0c7c93b38dc06
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 05eaa86133bb55cfbf62ec68f81e7ca7d9ab169b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850179"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274932"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>표준 대화 상자 데이터 교환 루틴
 
@@ -649,7 +649,7 @@ DDX에 대한 자세한 내용은 [대화 상자 데이터 교환 및 유효성 
 
   **헤더** afxdd_.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [표준 대화 상자 데이터 유효성 검사 루틴](standard-dialog-data-validation-routines.md)<br/>
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>

@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - operation_timed_out class
 ms.assetid: 963efe1d-a6e0-477c-9a70-d93d8412c897
-ms.openlocfilehash: 8b25a35ac359fe052f9ae3c1cb15363acfbe93e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2511be4669bc4abf75d5188e3aeabd7863f42dd7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561176"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276106"
 ---
 # <a name="operationtimedout-class"></a>operation_timed_out 클래스
 
@@ -31,9 +31,10 @@ class operation_timed_out : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[operation_timed_out](#ctor)|오버로드됨. `operation_timed_out` 개체를 생성합니다.|
+|[operation_timed_out](#ctor)|오버로드됨. 
+  `operation_timed_out` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,7 +48,8 @@ class operation_timed_out : public std::exception;
 
 ##  <a name="ctor"></a> operation_timed_out
 
-`operation_timed_out` 개체를 생성합니다.
+
+  `operation_timed_out` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP operation_timed_out(_In_z_ const char* _Message) throw();
@@ -57,9 +59,9 @@ operation_timed_out() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

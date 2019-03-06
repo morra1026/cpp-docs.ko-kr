@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ODBC consumers
 ms.assetid: 2dc97909-1f7e-43ee-9d47-99e612727058
-ms.openlocfilehash: 89c4bba3b0df71b5ea49f4f0a975e73669fd852b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2086401bea24cdf3a7b57eb9b5b1e72560f6c9e4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544211"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280721"
 ---
 # <a name="adding-an-mfc-odbc-consumer"></a>MFC ODBC 소비자 추가
 
@@ -27,7 +27,6 @@ MFC ODBC 소비자 데이터 원본에 액세스 하는 데 필요한 ODBC 레�
 
 1. 클릭 **완료** 는 프로젝트에서 새로 만든된 ODBC 소비자 코드를 삽입 하는 마법사를 닫습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 마법사로 기능 추가](../../ide/adding-functionality-with-code-wizards-cpp.md)
-

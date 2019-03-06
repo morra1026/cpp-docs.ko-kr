@@ -11,12 +11,12 @@ helpviewer_keywords:
 - objects [C++], adding to ATL projects
 - ATL Control Wizard
 ms.assetid: c0adcbd0-07fe-4c55-a8fd-8c2c65ecdaad
-ms.openlocfilehash: 0577788e4ab28139943da4b3bd14914799341213
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b442db405ed04c4ebf697089adf3529cd590753a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50506134"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57325999"
 ---
 # <a name="adding-objects-and-controls-to-an-atl-project"></a>ATL 프로젝트에 개체 및 컨트롤 추가
 
@@ -37,18 +37,18 @@ ATL 또는 MFC 기반 프로젝트에 개체 또는 컨트롤을 추가 하려�
 
    합니다 [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자가 나타납니다.
 
-1. 사용 하 여는 **ATL** 에서 선택한 폴더를 **범주** 창에서 삽입할 개체를 선택 합니다 **템플릿** 창. 클릭 **열려**합니다. 선택한 개체에 대 한 코드 마법사가 나타납니다.
+1. 사용 하 여는 **ATL** 에서 선택한 폴더를 **범주** 창에서 삽입할 개체를 선택 합니다 **템플릿** 창. **열기**를 클릭합니다. 선택한 개체에 대 한 코드 마법사가 나타납니다.
 
    > [!NOTE]
    > MFC 프로젝트에 ATL 개체를 추가 하려는 경우 기존 프로젝트에 ATL 지원을 추가 해야 합니다. 지침에 따라 이렇게 [MFC 프로젝트에 ATL 지원 추가](../../mfc/reference/adding-atl-support-to-your-mfc-project.md)합니다.
 
    또는 이전에 ATL 지원 추가 하지 않고 MFC 프로젝트에 ATL 개체를 추가 하려는 경우 Visual Studio 프로젝트에 추가한 ATL 지원 여부를 지정할 것인지 묻습니다. 클릭 **예** 프로젝트에 ATL 지원 추가 선택된 하는 ATL 마법사를 엽니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 프로젝트 마법사](../../atl/reference/atl-project-wizard.md)<br/>
 [Visual C++ 프로젝트 형식](../../ide/visual-cpp-project-types.md)<br/>
-[응용 프로그램 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[애플리케이션 마법사를 사용하여 데스크톱 프로젝트 만들기](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
 [ATL COM 개체 기본 사항](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [기본 ATL 프로젝트 구성](../../atl/reference/default-atl-project-configurations.md)

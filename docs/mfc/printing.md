@@ -7,12 +7,12 @@ helpviewer_keywords:
 - printing [MFC], from framework
 - printing [MFC]
 ms.assetid: be465e8d-b0c9-4fc5-9fa8-d10486064f76
-ms.openlocfilehash: 88b89ee54ec6270b01859d0f0baeea0efebd9ad6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0cd2d6d85cb9820b23495a003068994b13f9c85
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589395"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278082"
 ---
 # <a name="printing"></a>인쇄
 
@@ -44,7 +44,7 @@ Microsoft Windows 장치에 관계 없이 표시를 구현합니다. MFC에서 �
 
 다음 문서를 프레임 워크에서 인쇄 및 인쇄 미리 보기를 지원 하는 방법을 설명 합니다.
 
-### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+### <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [기본 인쇄가 수행 되는 방법](../mfc/how-default-printing-is-done.md)
 
@@ -56,7 +56,6 @@ Microsoft Windows 장치에 관계 없이 표시를 구현합니다. MFC에서 �
 
 - [인쇄 미리 보기](../mfc/print-preview-architecture.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [인쇄 및 인쇄 미리 보기](../mfc/printing-and-print-preview.md)
-

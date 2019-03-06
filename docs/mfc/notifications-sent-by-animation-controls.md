@@ -7,12 +7,12 @@ helpviewer_keywords:
 - controls [MFC], animation
 - animation controls [MFC], notifications
 ms.assetid: 584f5824-446b-4a1a-85f7-ef61842c8186
-ms.openlocfilehash: 8c437e6950435b49c280c4f1bb9225002545d6f2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2a736e4315091b1b26daceb4fe0ce9672ab33ff6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50449298"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281267"
 ---
 # <a name="notifications-sent-by-animation-controls"></a>애니메이션 컨트롤이 보내는 알림
 
@@ -20,8 +20,7 @@ ms.locfileid: "50449298"
 
 합니다 [ACN_START](/windows/desktop/Controls/acn-start) 애니메이션 컨트롤 클립을 재생 시작 되었을 때 전송 됩니다. 합니다 [ACN_STOP](/windows/desktop/Controls/acn-stop) 애니메이션 컨트롤 완료 했거나 클립을 재생을 중지 하는 경우 전송 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAnimateCtrl 사용](../mfc/using-canimatectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

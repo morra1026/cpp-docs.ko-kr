@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CDumpContext [MFC], HexDump
 - CDumpContext [MFC], SetDepth
 ms.assetid: 98c52b2d-14b5-48ed-b423-479a4d1c60fa
-ms.openlocfilehash: 391804d05800e3979add7bee6342308de4253602
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5b53ced4e20c920aab8e7ebcda3e3f6f8798ba5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668821"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258621"
 ---
 # <a name="cdumpcontext-class"></a>CDumpContext 클래스
 
@@ -83,7 +83,7 @@ Windows 환경에서 미리 정의 된 출력에서 `afxDump` 개념적으로 �
 
 **#define _DEBUG**
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CDumpContext`
 
@@ -269,7 +269,7 @@ void SetDepth(int nNewDepth);
 
 [!code-cpp[NVC_MFC_Utilities#16](../../mfc/codesnippet/cpp/cdumpcontext-class_6.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CFile 클래스](../../mfc/reference/cfile-class.md)<br/>

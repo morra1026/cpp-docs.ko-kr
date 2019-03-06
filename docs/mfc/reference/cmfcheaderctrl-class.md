@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CMFCHeaderCtrl [MFC], OnDrawSortArrow
 - CMFCHeaderCtrl [MFC], OnFillBackground
 ms.assetid: 2f5fbf7b-5c75-42db-9216-640b1628f777
-ms.openlocfilehash: 10d7dda39223e1d6206d2ede96874d9d546c8776
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86674e086da482e59b2711f5ba9154848ff05a6f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538504"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269437"
 ---
 # <a name="cmfcheaderctrl-class"></a>CMFCHeaderCtrl Class
 
@@ -70,7 +70,7 @@ class CMFCHeaderCtrl : public CHeaderCtrl
 |[CMFCHeaderCtrl::RemoveSortColumn](#removesortcolumn)|정렬 열의 목록에서 지정된 된 열을 제거합니다.|
 |[CMFCHeaderCtrl::SetSortColumn](#setsortcolumn)|헤더 컨트롤의 지정 된 열의 정렬 순서를 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -88,7 +88,7 @@ class CMFCHeaderCtrl : public CHeaderCtrl
 
 `CMFCHeaderCtrl` 클래스를 나타내는 열이 정렬 헤더 컨트롤 열에 정렬 화살표를 그립니다. 사용 하 여 *여러 열 정렬을* 모드 경우 부모 목록 컨트롤에서 열 집합 ( [CMFCListCtrl 클래스](../../mfc/reference/cmfclistctrl-class.md)) 동시에 정렬할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -118,11 +118,11 @@ CMFCHeaderCtrl::CMFCHeaderCtrl()
 
 |멤버 변수|값|
 |---------------------|-----------|
-|`m_bIsMousePressed`|false|
+|`m_bIsMousePressed`|FALSE|
 |`m_bMultipleSort`|false|
-|`m_bAscending`|true|
+|`m_bAscending`|TRUE|
 |`m_nHighlightedItem`|-1|
-|`m_bTracked`|false|
+|`m_bTracked`|FALSE|
 |`m_bIsDlgControl`|FALSE|
 |`m_hFont`|NULL|
 
@@ -323,7 +323,7 @@ void SetSortColumn(
 *bAscending*<br/>
 [in] 열의 정렬 순서를 지정 하는 *iColumn* 매개 변수를 지정 합니다. 오름차순 키; 설정 내림차순을 설정 하려면 FALSE입니다. 기본값은 TRUE입니다.
 
-*추가*<br/>
+*bAdd*<br/>
 [in] 이면 true는 열의 정렬 순서를 설정 합니다 *iColumn* 매개 변수를 지정 합니다.
 
 현재 헤더 컨트롤에 있으면 *여러 열 정렬* 모드에서는이 메서드가 정렬 열 목록에 지정 된 열을 추가 합니다. 사용 하 여 [CMFCHeaderCtrl::EnableMultipleSort](#enablemultiplesort) 여러 열 정렬 모드를 설정 합니다.
@@ -336,7 +336,7 @@ FALSE로 첫 번째 정렬 열 목록에서 모든 열을 제거 하 고 목록�
 
 이 메서드를 사용 하 여 열의 정렬 순서를 설정 합니다. 필요한 경우이 메서드는 정렬 열 목록에 열을 추가 합니다. 헤더 컨트롤 위로 또는 아래로 가리키는 정렬 화살표를 그리는 정렬 순서를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

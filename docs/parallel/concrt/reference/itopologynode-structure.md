@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - ITopologyNode structure
 ms.assetid: 92e7e032-04f6-4c7c-be36-8f9a35fc4734
-ms.openlocfilehash: 4f880e3c44cd9f301aa65d45500ed7f1d1725bc9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 867e0543d1b9f2810a3fe761f038947c4d88da4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636659"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268631"
 ---
 # <a name="itopologynode-structure"></a>ITopologyNode 구조체
 
@@ -45,7 +45,7 @@ struct ITopologyNode;
 
 이 인터페이스는 일반적으로 리소스 관리자에서 관찰 된 시스템의 토폴로지를 설명 하는 데 사용 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `ITopologyNode`
 
@@ -125,6 +125,6 @@ Windows이 Resource Manager 노드가 속한 NUMA 노드 번호를 할당 합니
 
 이 노드에 속하는 가상 프로세서 루트에서 실행 되는 스레드 프록시에 대 한 선호도를 적어도 해야 합니다.이 메서드에서 반환 된 NUMA 노드에 대 한 NUMA 노드 수준입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

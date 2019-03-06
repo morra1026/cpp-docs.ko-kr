@@ -3,12 +3,12 @@ title: 컨트롤에 속성 추가(ATL 자습서, 3부)
 ms.custom: get-started-article
 ms.date: 09/26/2018
 ms.assetid: f775fe34-103b-4f07-9999-400e987ee030
-ms.openlocfilehash: 9b8744e964274acb35c32a1ace02f71d0fed5c2d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5f9f9c8fde44dd67a9a05aeae0f91fb7b5f2f4d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466861"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281020"
 ---
 # <a name="adding-a-property-to-the-control-atl-tutorial-part-3"></a>컨트롤에 속성 추가(ATL 자습서, 3부)
 
@@ -64,6 +64,6 @@ ms.locfileid: "50466861"
 
 [2 단계를 다시](../atl/adding-a-control-atl-tutorial-part-2.md) &#124; [4 단계로 이동 합니다.](../atl/changing-the-drawing-code-atl-tutorial-part-4.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자습서](../atl/active-template-library-atl-tutorial.md)

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - IOleCommandTarget interface [MFC]
 - command routing [MFC], command targets
 ms.assetid: e45ce14c-e6b6-4262-8f3b-4e891e0ec2a3
-ms.openlocfilehash: f9212e32605a1fed179c931d4f63833e17870b5c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 702cb96da13d6109c17a28e58c08a30af3f77fd4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50442538"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302743"
 ---
 # <a name="message-handling-and-command-targets"></a>메시지 처리 및 명령 대상
 
@@ -49,7 +49,6 @@ interface IOleCommandTarget : IUnknown
 
 `QueryStatus` 메서드를 다음 명령 집합이 특정 집합을 사용 하 여 식별 되 고 있는지 테스트 하는 **GUID**, 지원 됩니다. 이 호출의 배열을 채웁니다 **OLECMD** 값 (구조체) 지원 되는 목록과 명령과 명령 및/또는 상태 정보의 이름을 설명 하는 텍스트를 반환 합니다. 명령을 호출 하려면 호출자에 게 때, 명령을 전달할 수 있습니다 (집합과 **GUID**)를 `Exec` 옵션 및 인수를 함께 다시 반환 값 가져오기.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [액티브 문서 컨테이너](../mfc/active-document-containers.md)
-

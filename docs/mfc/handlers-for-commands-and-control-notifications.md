@@ -10,12 +10,12 @@ helpviewer_keywords:
 - notifications [MFC], handlers for control
 - handlers [MFC], command
 ms.assetid: 20f57f4a-f577-4c09-80a2-43faf32a1c2e
-ms.openlocfilehash: 28bed2937409cd1df5ee8d295e466609232e0e91
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c92660c67fa91c27bb094111cebfef57904cdc7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622055"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296698"
 ---
 # <a name="handlers-for-commands-and-control-notifications"></a>명령 및 컨트롤 알림에 대한 처리기
 
@@ -35,6 +35,6 @@ ms.locfileid: "50622055"
 
 메시지의 두 범주 인수를 가져오지 않고 및 아무 값도 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메시지 처리기 함수 선언](../mfc/declaring-message-handler-functions.md)

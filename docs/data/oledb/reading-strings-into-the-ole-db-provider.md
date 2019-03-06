@@ -4,16 +4,16 @@ ms.date: 10/13/2018
 helpviewer_keywords:
 - OLE DB providers, reading strings into
 ms.assetid: 517f322c-f37e-4eed-bf5e-dd9a412c2f98
-ms.openlocfilehash: 6d8558cce3fc4818d3e6fc8d64a4c682f5ce5b26
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 19fc7b16695ebeff35462aaa2c451ff6459bb7b6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556168"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425226"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>OLE DB 공급자로 문자열 읽어들이기
 
-`CCustomRowset::Execute` 함수 파일을 열고 문자열을 읽습니다. 소비자를 호출 하 여 공급자에 게 파일 이름을 전달 [icommandtext:: Setcommandtext](https://docs.microsoft.com/previous-versions/windows/desktop/ms709757(v=vs.85))합니다. 공급자 파일 이름을 받고 멤버 변수에 저장 `m_strCommandText`합니다. `Execute` 파일 이름을 읽고 `m_strCommandText`합니다. 파일 이름이 잘못 되었거나 파일을 사용할 수 없는 경우 `Execute` 오류를 반환 합니다. 을 열고 파일 및 호출 `fgets` 문자열을 검색 합니다. 각 설정 문자열의 읽기에 대 한 `Execute` 사용자 레코드의 인스턴스를 만듭니다 (수정 `CCustomWindowsFile` 에서 [OLE DB 공급자에 문자열 저장](../../data/oledb/storing-strings-in-the-ole-db-provider.md)) 배열에 넣습니다.
+`CCustomRowset::Execute` 함수 파일을 열고 문자열을 읽습니다. 소비자를 호출 하 여 공급자에 게 파일 이름을 전달 [icommandtext:: Setcommandtext](/previous-versions/windows/desktop/ms709757(v=vs.85))합니다. 공급자 파일 이름을 받고 멤버 변수에 저장 `m_strCommandText`합니다. `Execute` 파일 이름을 읽고 `m_strCommandText`합니다. 파일 이름이 잘못 되었거나 파일을 사용할 수 없는 경우 `Execute` 오류를 반환 합니다. 을 열고 파일 및 호출 `fgets` 문자열을 검색 합니다. 각 설정 문자열의 읽기에 대 한 `Execute` 사용자 레코드의 인스턴스를 만듭니다 (수정 `CCustomWindowsFile` 에서 [OLE DB 공급자에 문자열 저장](../../data/oledb/storing-strings-in-the-ole-db-provider.md)) 배열에 넣습니다.
 
 파일을 열 수 없는 경우 `Execute` DB_E_NOTABLE 반환 해야 합니다. E_FAIL을 대신 반환 하는 경우 공급자를 많은 소비자와 함께 작동 하지 않습니다 하 고 OLE DB를 전달 하지 않습니다 [적합성 테스트](../../data/oledb/testing-your-provider.md)합니다.
 

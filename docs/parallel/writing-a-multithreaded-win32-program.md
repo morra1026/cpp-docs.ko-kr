@@ -14,12 +14,12 @@ helpviewer_keywords:
 - mutex [C++]
 - threading [C++], thread stacks
 ms.assetid: 1415f47d-417f-4f42-949b-946fb28aab0e
-ms.openlocfilehash: c7d9790cfee39fbddd9ab545d48fa375d56f3a05
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c8536505882ca9a87aec385ca1c42d652ea84ff7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561332"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326541"
 ---
 # <a name="writing-a-multithreaded-win32-program"></a>다중 스레드 Win32 프로그램 작성
 
@@ -28,7 +28,7 @@ ms.locfileid: "50561332"
 ##  <a name="_core_sharing_common_resources_between_threads"></a> 스레드 간에 공용 리소스 공유
 
 > [!NOTE]
->  MFC의 관점에서 유사한 내용은 참조 하세요. [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md) 하 고 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다.
+>  MFC의 관점에서 유사한 내용은 참조 하세요. [다중 스레딩: 프로그래밍 팁](multithreading-programming-tips.md) 고 [다중 스레딩: 동기화 클래스를 사용 하는 경우](multithreading-when-to-use-the-synchronization-classes.md)합니다.
 
 각 스레드가 자체 스택 및 CPU의 자체 복사본을 등록 합니다. 힙 메모리, 파일 및 정적 데이터 등의 다른 리소스는 프로세스의 모든 스레드에 의해 공유 됩니다. 이러한 공용 리소스를 사용 하 여 스레드를 동기화 되어야 합니다. Win32는 세마포, 중요 섹션, 이벤트 및 뮤텍스를 비롯 한 리소스를 동기화 하는 여러 방법을 제공 합니다.
 
@@ -61,6 +61,6 @@ C 런타임 라이브러리와 Win32 API를 호출 하는 스레드 라이브러
 
 또한 Win32 스레드 로컬 저장소 (TLS) 스레드별 데이터 저장을 제공 합니다. 자세한 내용은 [스레드 로컬 저장소 (TLS)](thread-local-storage-tls.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)

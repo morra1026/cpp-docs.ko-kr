@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /arch compiler option [C++]
 - arch compiler option [C++]
 ms.assetid: cc17da15-47bd-4e74-b905-4e73c3bdb8a0
-ms.openlocfilehash: 42d1db398cb4ab1391b6b54ddf70b69ef519b63c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d110a48cded49df92fbbc48eb96cee6fb2f8882e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496993"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420988"
 ---
 # <a name="arch-minimum-cpu-architecture"></a>/arch(최소 CPU 아키텍처)
 
@@ -26,7 +26,7 @@ ms.locfileid: "50496993"
 
 - [-arch(ARM)](../../build/reference/arch-arm.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

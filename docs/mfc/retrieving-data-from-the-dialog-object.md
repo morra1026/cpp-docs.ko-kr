@@ -21,12 +21,12 @@ helpviewer_keywords:
 - DDX (dialog data exchange) [MFC], retrieving data from Dialog object
 - GetWindowText method [MFC]
 ms.assetid: bdca2b61-6b53-4c2e-b426-8712c7a38ec0
-ms.openlocfilehash: 345a2894693eace5aa464ca3940c785b2da08784
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b376edc3ee7d8abbca43da6d823e71abad99bc5d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615132"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279031"
 ---
 # <a name="retrieving-data-from-the-dialog-object"></a>대화 상자 개체에서 데이터 검색
 
@@ -40,7 +40,6 @@ DDX 및 DDV에서 자세히 설명 되어 [대화 상자 데이터 교환 및 �
 
 모달 대화 상자에 대해 사용자가 입력 한 경우 모든 데이터를 검색할 수 있습니다 `DoModal` IDOK 반환 하지만 개체는 제거 전에 대화 상자. 모덜리스 대화 상자를 검색할 수 있습니다 데이터 대화 상자 개체에서 언제 든 지 호출 하 여 `UpdateData` 인수를 사용 하 여 **TRUE** 및 다음 대화 상자 클래스 멤버 변수를 액세스 합니다. 이 주제에 자세히 설명 되어 [대화 상자 데이터 교환 및 유효성 검사](../mfc/dialog-data-exchange-and-validation.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
-

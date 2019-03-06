@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CCustomTransition [MFC], m_initialVelocity
 - CCustomTransition [MFC], m_pInterpolator
 ms.assetid: 5bd3f492-940f-4290-a38b-fa68eb8f8401
-ms.openlocfilehash: af600704f82a0cad402948286fa0d4b11dca0c71
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e0e5250b27ce6b902939ebcbfa03bf022a202788
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50578375"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304017"
 ---
 # <a name="ccustomtransition-class"></a>CCustomTransition 클래스
 
@@ -71,7 +71,7 @@ class CCustomTransition : public CBaseTransition;
 
 CCustomTransitions 클래스 사용자 지정 전환을 구현 하는 개발자를 수 있습니다. 가 만들고 표준 전환으로 사용 하지만 해당 생성자는 사용자 지정 보간에 대 한 포인터를 매개 변수로 허용 합니다. 사용자 지정 전환을 사용 하려면 다음 단계를 수행 합니다. 1. CCustomInterpolator에서 클래스를 파생 하 고 최소 구현 InterpolateValue 메서드. 2. 사용자 지정 보간 개체의 수명이 되도록 애니메이션의 기간 보다 오래 사용 되는 위치를 확인 합니다. 3. (새 연산자 사용) CCustomTransition 개체를 인스턴스화하고 생성자에서 사용자 지정 보간에 대 한 포인터를 전달 합니다. 4. 이러한 매개 변수는 사용자 지정 보간에 필요한 경우 CCustomTransition::SetInitialValue 및 CCustomTransition::SetInitialVelocity를 호출 합니다. 5. 값을 갖는 애니메이션 효과 적용할 사용자 지정 알고리즘을 사용 하 여 애니메이션 개체의 사용자 지정 AddTransition 메서드 전환에 대 한 포인터를 전달 합니다. 6. 애니메이션 개체의 값을 변경 해야 하는 경우 Windows 애니메이션 API CCustomInterpolator에 InterpolateValue (및 다른 관련 메서드) 호출 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -167,7 +167,7 @@ void SetInitialValue(DOUBLE initialValue);
 
 ### <a name="parameters"></a>매개 변수
 
-*초기 값*
+*initialValue*
 
 ##  <a name="setinitialvelocity"></a>  CCustomTransition::SetInitialVelocity
 
@@ -181,6 +181,6 @@ void SetInitialVelocity(DOUBLE initialVelocity);
 
 *initialVelocity*
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

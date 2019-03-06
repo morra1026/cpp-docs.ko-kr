@@ -1,5 +1,5 @@
 ---
-title: '연습: join을 사용하여 교착 상태 방지'
+title: '연습: 교착 상태 방지 조인을 사용 하 여'
 ms.date: 11/19/2018
 helpviewer_keywords:
 - preventing deadlock with joins [Concurrency Runtime]
@@ -7,16 +7,16 @@ helpviewer_keywords:
 - non-greedy joins, example
 - join class, example
 ms.assetid: d791f697-bb93-463e-84bd-5df1651b7446
-ms.openlocfilehash: b62f4007a79faaff479e4e8ff998a8b48e4d5dd1
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 2f9e0f50866ed0635fbaa4b700dbf522f09458d9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175917"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303055"
 ---
-# <a name="walkthrough-using-join-to-prevent-deadlock"></a>연습: join을 사용하여 교착 상태 방지
+# <a name="walkthrough-using-join-to-prevent-deadlock"></a>연습: 교착 상태 방지 조인을 사용 하 여
 
-이 항목에서는 사용 하는 방법을 보여 주기 위해 철학자 만찬 문제를 사용 합니다 [concurrency:: join](../../parallel/concrt/reference/join-class.md) 응용 프로그램에서 교착 상태를 방지 하는 클래스입니다. 소프트웨어 응용 프로그램에서 *교착 상태*는 두 개 이상의 프로세스가 각각 리소스를 보유하고 함께 다른 프로세스가 다른 리소스를 해제할 때까지 대기하는 경우 발생합니다.
+이 항목에서는 사용 하는 방법을 보여 주기 위해 철학자 만찬 문제를 사용 합니다 [concurrency:: join](../../parallel/concrt/reference/join-class.md) 응용 프로그램에서 교착 상태를 방지 하는 클래스입니다. 소프트웨어 애플리케이션에서 *교착 상태*는 두 개 이상의 프로세스가 각각 리소스를 보유하고 함께 다른 프로세스가 다른 리소스를 해제할 때까지 대기하는 경우 발생합니다.
 
 식당 철학자 문제는 일반 리소스 집합을 여러 개의 동시 프로세스 간에 공유 되는 경우 발생할 수 있는 문제 집합의 특정 예제.
 
@@ -26,7 +26,7 @@ ms.locfileid: "52175917"
 
 - [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)
 
-- [연습: 에이전트 기반 응용 프로그램 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
+- [연습: 에이전트 기반 애플리케이션 만들기](../../parallel/concrt/walkthrough-creating-an-agent-based-application.md)
 
 - [비동기 메시지 블록](../../parallel/concrt/asynchronous-message-blocks.md)
 
@@ -74,7 +74,7 @@ A `philosopher` 개체를 모두 잠급니다 `critical_section` 젓가락 전�
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `philosophers-deadlock.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `philosophers-deadlock.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc philosophers-deadlock.cpp**
 
@@ -146,13 +146,13 @@ plato ate 50 times.
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `philosophers-join.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `philosophers-join.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc philosophers-join.cpp**
 
 [[맨 위로 이동](#top)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임 연습](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [비동기 에이전트 라이브러리](../../parallel/concrt/asynchronous-agents-library.md)<br/>

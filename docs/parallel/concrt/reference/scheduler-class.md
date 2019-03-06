@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - Scheduler class
 ms.assetid: 34cf7961-048d-4852-8a5c-a32f823e3506
-ms.openlocfilehash: 1b2b4de2a0aa844f9450af9d853b11ea6f485274
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f27dace61b0764962a78695c2a4c6b180b09d7a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638271"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287904"
 ---
 # <a name="scheduler-class"></a>Scheduler 클래스
 
@@ -62,7 +62,8 @@ class Scheduler;
 |[RegisterShutdownEvent](#registershutdownevent)|Windows 이벤트 핸들을 전달 하면은 `_Event` 매개 변수를 스케줄러를 종료 하 고 자체를 제거 하는 경우 신호를 보낼 수 있습니다. 이벤트 신호를 받는 경우 스케줄러에 예약한는 모든 작업이 완료 됩니다. 이 메서드를 통해 여러 종료 이벤트를 등록할 수 있습니다.|
 |[릴리스](#release)|스케줄러 참조 횟수를 감소시킵니다.|
 |[ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|기본 스케줄러 정책의 런타임 기본값으로 다시 설정합니다. 기본 스케줄러를 만든 다음에 런타임 기본 정책 설정이 사용 됩니다.|
-|[ScheduleTask](#scheduletask)|오버로드됨. 스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.|
+|[ScheduleTask](#scheduletask)|오버로드됨. 스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. 
+  `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.|
 |[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|사용자 정의 정책을 기본 스케줄러를 만드는 데 사용할 수 있습니다. 프로세스 내에서 기본 스케줄러가 없는 경우에이 메서드를 호출할 수 있습니다. 다음 유효한 호출 일까 지 적용 됩니다는 기본 정책을 설정한 후 합니다 `SetDefaultSchedulerPolicy` 또는 [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) 메서드.|
 
 ## <a name="remarks"></a>설명
@@ -71,7 +72,7 @@ class Scheduler;
 
 동시성 런타임의 병렬 작업 실행 프로세스 마다 기본 스케줄러를 만듭니다. 또한 사용자 고유의 스케줄러 인스턴스를 만들 하 고이 클래스를 사용 하 여 조작할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Scheduler`
 
@@ -81,7 +82,7 @@ class Scheduler;
 
 **네임스페이스:** 동시성
 
-##  <a name="attach"></a> 연결
+##  <a name="attach"></a> Attach
 
 스케줄러를 호출 컨텍스트에 연결 합니다. 이 메서드에서 반환 된 후 스케줄러가 현재 스케줄러와 호출 컨텍스트에 scheduler에 의해 관리 됩니다.
 
@@ -109,7 +110,7 @@ static Scheduler* __cdecl Create(const SchedulerPolicy& _Policy);
 
 ### <a name="parameters"></a>매개 변수
 
-*정책 (_p)*<br/>
+*_Policy*<br/>
 새로 만든된 스케줄러의 동작을 설명 하는 scheduler 정책입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -136,7 +137,7 @@ virtual ScheduleGroup* CreateScheduleGroup(location& _Placement) = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*있음 (_p)*<br/>
+*_Placement*<br/>
 일정 그룹 내에서 작업 실행 편향가 있는 위치 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -195,7 +196,7 @@ virtual bool IsAvailableLocation(const location& _Placement) const = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*있음 (_p)*<br/>
+*_Placement*<br/>
 에 대 한 스케줄러를 쿼리 하는 위치에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -234,7 +235,7 @@ virtual void RegisterShutdownEvent(HANDLE _Event) = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*(_E)*<br/>
+*_Event*<br/>
 스케줄러를 종료 하 고 자체를 제거 하는 경우 런타임에서 신호는 Windows 이벤트 개체에 대 한 핸들입니다.
 
 ##  <a name="release"></a> 릴리스
@@ -279,7 +280,7 @@ Scheduler();
 
 스케줄러를 통해 명시적으로 만들 수도 있습니다는 `CurrentScheduler::Create` 메서드 또는 `Scheduler::Create` 메서드.
 
-##  <a name="dtor"></a> ~ Scheduler
+##  <a name="dtor"></a> ~Scheduler
 
 개체는 `Scheduler` 클래스는 모든 외부 참조가 존재를 중단 하는 경우에 명시적으로 소멸 됩니다.
 
@@ -289,7 +290,8 @@ virtual ~Scheduler();
 
 ##  <a name="scheduletask"></a> ScheduleTask
 
-스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.
+스케줄러 내에서 간단한 작업을 예약합니다. 간단한 작업은 런타임에 의해 결정되는 일정 그룹에 배치됩니다. 
+  `_Placement` 매개 변수를 사용하는 버전은 작업이 지정된 위치에서 실행되도록 합니다.
 
 ```
 virtual void ScheduleTask(
@@ -307,10 +309,10 @@ virtual void ScheduleTask(
 *_Proc*<br/>
 간단한 작업의 본문을 수행 하기 위해 실행할 함수에 대 한 포인터입니다.
 
-*(_D)*<br/>
+*_Data*<br/>
 작업의 본문에 매개 변수로 전달 되는 데이터에 대 한 void 포인터입니다.
 
-*있음 (_p)*<br/>
+*_Placement*<br/>
 간단한 작업이 실행될 수 있는 위치에 대한 참조입니다.
 
 ##  <a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy
@@ -323,17 +325,16 @@ static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);
 
 ### <a name="parameters"></a>매개 변수
 
-*정책 (_p)*<br/>
+*_Policy*<br/>
 정책 기본 스케줄러 정책으로 설정입니다.
 
 ### <a name="remarks"></a>설명
 
 경우는 `SetDefaultSchedulerPolicy` 프로세스 내에서 기본 스케줄러를 이미 있는 경우 메서드가 호출 되 면 런타임에서 throw를 [default_scheduler_exists](default-scheduler-exists-class.md) 예외입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [Scheduler 클래스](scheduler-class.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [작업 스케줄러](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

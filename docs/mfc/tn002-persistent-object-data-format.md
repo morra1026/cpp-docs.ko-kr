@@ -10,12 +10,12 @@ helpviewer_keywords:
 - persistent C++ objects [MFC]
 - TN002
 ms.assetid: 553fe01d-c587-4c8d-a181-3244a15c2be9
-ms.openlocfilehash: 5f5bde68d9fd4175ed97a7b61d807887d07e9e12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6d64799dc17b4b3ddc5c455333b10282e4748b09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474388"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282009"
 ---
 # <a name="tn002-persistent-object-data-format"></a>TN002: 영구 개체 데이터 형식
 
@@ -107,8 +107,7 @@ NULL에 대 한는 검사가 수행 됩니다 (일반적으로 전역 삽입 연
 
 버전 인코드 해야 하며 클래스 정보 직접 호출 하는 경우 앞에서 설명한 대로 `Serialize` 직접 오래 된 파일을 사용 하 여 이전 버전과 호환성을 유지 하면서 형식을 나중에 변경할 수 있도록 합니다. `CArchive::SerializeClass` 함수 직접 개체를 직렬화 또는 기본 클래스를 호출 하기 전에 명시적으로 호출할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

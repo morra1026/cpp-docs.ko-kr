@@ -12,12 +12,12 @@ helpviewer_keywords:
 - SetOrderArray method [MFC]
 - header controls [MFC], ordering items
 ms.assetid: 5aaef872-75b5-49c5-8fed-6f9a81fca812
-ms.openlocfilehash: 5c4fef821efa697d41bf02ef1891efcf0fa21d4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bae351d921c25993d6b7029f9052e1938179673b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583511"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282023"
 ---
 # <a name="ordering-items-in-the-header-control"></a>헤더 컨트롤에서 항목 순서 지정
 
@@ -27,13 +27,12 @@ ms.locfileid: "50583511"
 
    검색 하 고 헤더 항목의 왼쪽에서 오른쪽 순서를 설정 합니다.
 
-- [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#ordertoindex)합니다.
+- [CHeaderCtrl::OrderToIndex](../mfc/reference/cheaderctrl-class.md#ordertoindex).
 
    특정 헤더 항목에 대 한 인덱스 값을 검색합니다.
 
 멤버 함수는 이전 하는 것 외에도 HDS_DRAGDROP 스타일에는 헤더 컨트롤 내의 머리글 항목을 끌어다 사용자 수 있습니다. 자세한 내용은 [헤더 항목에 대 한 끌어서 놓기 지원 제공](../mfc/providing-drag-and-drop-support-for-header-items.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeaderCtrl 사용](../mfc/using-cheaderctrl.md)
-

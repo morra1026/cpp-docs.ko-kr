@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - IScheduler structure
 ms.assetid: 471de85a-2b1a-4b6d-ab81-2eff2737161e
-ms.openlocfilehash: dd280884ab106bcf878b06c94e2ea3d0d99be2e8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 54db5d664a48f95a952eb1b409839d8ac3421e30
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50603218"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274078"
 ---
 # <a name="ischeduler-structure"></a>IScheduler 구조체
 
@@ -43,13 +43,13 @@ struct IScheduler;
 |[IScheduler::NotifyResourcesExternallyBusy](#notifyresourcesexternallybusy)|하드웨어 스레드 배열에 있는 가상 프로세서 루트의 집합을 나타내는이 스케줄러에 알립니다 `ppVirtualProcessorRoots` 다른 스케줄러에 의해 현재 사용 되 고 있습니다.|
 |[IScheduler::NotifyResourcesExternallyIdle](#notifyresourcesexternallyidle)|하드웨어 스레드 배열에 있는 가상 프로세서 루트의 집합을 나타내는이 스케줄러에 알립니다 `ppVirtualProcessorRoots` 다른 스케줄러에 의해 사용 되지 않습니다.|
 |[IScheduler::RemoveVirtualProcessors](#removevirtualprocessors)|이 스케줄러에 이전에 할당 된 가상 프로세서 루트의 제거를 시작 합니다.|
-|[Ischeduler:: Statistics](#statistics)|작업 도착 및 완료 비율 및 스케줄러에 대 한 변경의 큐 길이 관련 된 정보를 제공 합니다.|
+|[IScheduler::Statistics](#statistics)|작업 도착 및 완료 비율 및 스케줄러에 대 한 변경의 큐 길이 관련 된 정보를 제공 합니다.|
 
 ## <a name="remarks"></a>설명
 
 리소스 관리자와 통신 하는 사용자 지정 스케줄러를 구현 하는 경우의 구현을 제공 해야 합니다 `IScheduler` 인터페이스입니다. 이 인터페이스에는 양방향 스케줄러와 리소스 관리자 간의 통신 채널의 한쪽 끝입니다. 반대쪽은 표현 합니다 `IResourceManager` 및 `ISchedulerProxy` Resource Manager에서 구현 되는 인터페이스입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IScheduler`
 
@@ -167,7 +167,7 @@ virtual void NotifyResourcesExternallyIdle(
 
 알림에 대 한 정하는 스케줄러는 집합을 가져옵니다 초기 알림를 만들 때만 할당 된 리소스는 외부에서 사용 중 또는 유휴 상태 여부를 알립니다.
 
-##  <a name="removevirtualprocessors"></a>  Ischeduler:: Removevirtualprocessors 메서드
+##  <a name="removevirtualprocessors"></a>  IScheduler::RemoveVirtualProcessors Method
 
 이 스케줄러에 이전에 할당 된 가상 프로세서 루트의 제거를 시작 합니다.
 
@@ -221,7 +221,7 @@ virtual void Statistics(
 
 통계 정보가 없는 경우, Resource Manager에서는 하드웨어 스레드 구독 수준 리소스 할당 및 마이그레이션 결정을 내릴 수 사용 합니다. 구독 수준에 대 한 자세한 내용은 참조 하세요. [iexecutionresource:: Currentsubscriptionlevel](iexecutionresource-structure.md#currentsubscriptionlevel)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>

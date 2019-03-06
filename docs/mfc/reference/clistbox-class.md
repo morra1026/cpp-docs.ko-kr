@@ -102,12 +102,12 @@ helpviewer_keywords:
 - CListBox [MFC], SetTopIndex
 - CListBox [MFC], VKeyToItem
 ms.assetid: 7ba3c699-c286-4cd9-9066-532c41ec05d1
-ms.openlocfilehash: ad9f945a91a96c40afe614240a847a028ba5b5d9
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 17ff89fde3ef893c2cfcd8beeb8482722af60358
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178618"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280318"
 ---
 # <a name="clistbox-class"></a>CListBox 클래스
 
@@ -139,7 +139,7 @@ class CListBox : public CWnd
 |[CListBox::DeleteString](#deletestring)|목록 상자에서 문자열을 삭제합니다.|
 |[CListBox::Dir](#dir)|목록 상자에 파일 이름, 드라이브 또는 현재 디렉터리에서 둘 다를 추가합니다.|
 |[CListBox::DrawItem](#drawitem)|소유자 그리기 목록 상자 변경 시각적 측면이 때 프레임 워크에서 호출 됩니다.|
-|[Clistbox:: Findstring](#findstring)|목록 상자에 문자열을 검색 합니다.|
+|[CListBox::FindString](#findstring)|목록 상자에 문자열을 검색 합니다.|
 |[CListBox::FindStringExact](#findstringexact)|지정 된 문자열과 일치 하는 첫 번째 목록 상자 문자열을 찾습니다.|
 |[CListBox::GetAnchorIndex](#getanchorindex)|목록 상자에서 현재 앵커 항목의 0부터 시작 인덱스를 가져옵니다.|
 |[CListBox::GetCaretIndex](#getcaretindex)|포커스 영역을 다중 선택 목록 상자에 있는 항목의 인덱스를 결정 합니다.|
@@ -225,7 +225,7 @@ class CListBox : public CWnd
 
 메모리를 할당 하는 경우는 `CListBox` 개체를 재정의 `CListBox` 소멸자는 할당을 삭제 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -525,7 +525,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 
 [!code-cpp[NVC_MFC_CListBox#9](../../mfc/codesnippet/cpp/clistbox-class_9.cpp)]
 
-##  <a name="findstring"></a>  Clistbox:: Findstring
+##  <a name="findstring"></a>  CListBox::FindString
 
 목록 상자 선택 항목을 변경 하지 않고 지정된 된 접두사를 포함 하는 목록 상자에서 첫 번째 문자열을 찾습니다.
 
@@ -1143,7 +1143,7 @@ int SelItemRange(
 
 ### <a name="parameters"></a>매개 변수
 
-*선택 하십시오*<br/>
+*bSelect*<br/>
 선택 영역을 설정 하는 방법을 지정 합니다. 하는 경우 *선택 하십시오* 가 TRUE 이면 FALSE 인 경우 강조 표시를 제거 되 고 문자열 옵션을 선택 하지 않으면 문자열 선택 되 고 강조 표시 합니다.
 
 *nFirstItem*<br/>
@@ -1242,7 +1242,7 @@ int SetCurSel(int nSelect);
 
 ### <a name="parameters"></a>매개 변수
 
-*선택*<br/>
+*nSelect*<br/>
 선택 된 문자열의 0부터 시작 인덱스를 지정 합니다. 경우 *선택* 가-1 이면 목록 상자 선택 영역이 없는 설정 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1412,7 +1412,7 @@ int SetSel(
 *nIndex*<br/>
 설정할 문자열의 0부터 시작 하는 인덱스를 포함 합니다. 경우-1로, 선택 영역에 추가 하거나 값에 따라 모든 문자열에서 제거 *선택 하십시오*합니다.
 
-*선택 하십시오*<br/>
+*bSelect*<br/>
 선택 영역을 설정 하는 방법을 지정 합니다. 하는 경우 *선택 하십시오* 가 TRUE 이면 FALSE 인 경우 강조 표시를 제거 되 고 문자열 옵션을 선택 하지 않으면 문자열 선택 되 고 강조 표시 합니다. 지정된 된 문자열 선택 하 고 기본적으로 강조 표시 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1536,7 +1536,7 @@ virtual int VKeyToItem(
 
 [!code-cpp[NVC_MFC_CListBox#41](../../mfc/codesnippet/cpp/clistbox-class_41.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CTRLTEST](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
@@ -1544,6 +1544,6 @@ virtual int VKeyToItem(
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [CButton 클래스](../../mfc/reference/cbutton-class.md)<br/>
 [CComboBox 클래스](../../mfc/reference/ccombobox-class.md)<br/>
-[CEdit 클래스](../../mfc/reference/cedit-class.md)<br/>
+[CEdit Class](../../mfc/reference/cedit-class.md)<br/>
 [CScrollBar 클래스](../../mfc/reference/cscrollbar-class.md)<br/>
 [CStatic 클래스](../../mfc/reference/cstatic-class.md)

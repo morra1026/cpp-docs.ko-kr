@@ -2,12 +2,12 @@
 title: /arch(x86)
 ms.date: 11/04/2016
 ms.assetid: 9dd5a75d-06e4-4674-aade-33228486078d
-ms.openlocfilehash: fb115d564ca24ff29e120e0d8c25e0dbe28024cb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2aba6dc18db621710b5293f9f970fa5f453b8a9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50549710"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421809"
 ---
 # <a name="arch-x86"></a>/arch(x86)
 
@@ -21,19 +21,19 @@ x86에서 코드 생성 아키텍처를 지정합니다. 도 참조 하세요 [(
 
 ## <a name="arguments"></a>인수
 
-**/ arch:ia32**<br/>
+**/arch:IA32**<br/>
 고급 명령을 지정하지 않는 반면 부동 소수점 계산을 위해 x87도 지정합니다.
 
 **/arch:SSE**<br/>
 SSE 명령을 사용하도록 설정합니다.
 
-**/ arch:sse2**<br/>
+**/arch:SSE2**<br/>
 SSE2 명령을 사용하도록 설정합니다. 이 x86에서의 기본 명령 없으면 플랫폼 **/arch** 옵션을 지정 합니다.
 
-**/arch: avx**<br/>
+**/arch:AVX**<br/>
 Intel Advanced Vector Extensions 명령을 사용하도록 설정합니다.
 
-**/ arch:avx2**<br/>
+**/arch:AVX2**<br/>
 Intel 고급 벡터 확장명 2 명령을 사용하도록 설정합니다.
 
 ## <a name="remarks"></a>설명
@@ -78,7 +78,7 @@ r = t + d;     // This should produce the same overall result
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/arch(최소 CPU 아키텍처)](../../build/reference/arch-minimum-cpu-architecture.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

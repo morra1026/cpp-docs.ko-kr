@@ -10,12 +10,12 @@ helpviewer_keywords:
 - ActiveX controls [MFC], testing
 - properties [MFC], testing
 ms.assetid: 626867cf-fe53-4c30-8973-55bb93ef3917
-ms.openlocfilehash: cf36514c6ce2cd25a49901165fcf919cffd5da7a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2b1d023488e8d547217dafffd224ab9fc05bd876
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50633366"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267903"
 ---
 # <a name="testing-properties-and-events-with-test-container"></a>테스트 컨테이너로 속성 및 이벤트 테스트
 
@@ -23,7 +23,7 @@ ms.locfileid: "50633366"
 
 ### <a name="to-access-the-activex-control-test-container"></a>ActiveX 컨트롤 테스트 컨테이너에 액세스 하려면
 
-1. 빌드를 [TSTCON 샘플: ActiveX Control Test Container](../visual-cpp-samples.md)합니다.
+1. 빌드는 [TSTCON 샘플: ActiveX Control Test Container](../visual-cpp-samples.md)합니다.
 
 ### <a name="to-test-your-activex-control"></a>ActiveX 컨트롤을 테스트 하려면
 
@@ -54,8 +54,7 @@ ms.locfileid: "50633366"
 
 1. 대상 이벤트 정보를 지정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [방법: ActiveX 컨트롤 디버그](/visualstudio/debugger/how-to-debug-an-activex-control)
-

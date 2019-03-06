@@ -9,12 +9,12 @@ helpviewer_keywords:
 - local symbols in browse information
 - symbols
 ms.assetid: bdb4b93c-a88a-441a-84fd-01087d03be25
-ms.openlocfilehash: 63f007e567f3c1db556ba6a7f0c1a354c449f31b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 54cf19a7024f6f0a1db33e1f1ccde15cde95301b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50501008"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418531"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr 파일 만들기
 
@@ -28,6 +28,6 @@ BSCMAKE에 대 한 입력된 파일은.sbr 파일입니다. 컴파일러는.sbr 
 
 빌드 프로세스.sbr 파일을 참조 하지 않는 정의 제거 하려면 먼저 압축 되는 경우 더 효율적일 수 있습니다. 컴파일러는 자동으로.sbr 파일을 압축합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [.Bsc 파일 빌드](../../build/reference/building-a-dot-bsc-file.md)

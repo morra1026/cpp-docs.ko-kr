@@ -6,12 +6,12 @@ helpviewer_keywords:
 - access keys [MFC], hot keys
 - CHotKeyCtrl class [MFC], setting hot key
 ms.assetid: 6f3bc141-e346-4dce-9ca7-3e6b2c453f3f
-ms.openlocfilehash: ebaddb4a64a4d9d47b82fd36f118c74527554e53
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: a77aad4881acd04c6dabb6dce90acc01be2cfbc8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54893226"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281280"
 ---
 # <a name="setting-a-hot-key"></a>바로 가기 키 설정
 
@@ -21,8 +21,7 @@ ms.locfileid: "54893226"
 
 - Windows 함수를 호출 하 여 스레드 관련 바로 가기 키를 설정 [RegisterHotKey](/windows/desktop/api/winuser/nf-winuser-registerhotkey)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHotKeyCtrl 사용](../mfc/using-chotkeyctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

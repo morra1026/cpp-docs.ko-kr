@@ -9,12 +9,12 @@ helpviewer_keywords:
 - member variables [MFC], ActiveX controls in project
 - ActiveX control containers [MFC], ActiveX controls as member variables
 ms.assetid: 7898a336-440d-4a60-be43-cb062b807aee
-ms.openlocfilehash: 2234647e933e37ff82845c4b40dc93cefeb55575
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6bc063875f2a31c582c9de32e24e7dfbc7826c9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446464"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279941"
 ---
 # <a name="activex-control-containers-connecting-an-activex-control-to-a-member-variable"></a>ActiveX 컨트롤 컨테이너: ActiveX 컨트롤을 멤버 변수에 연결
 
@@ -39,7 +39,6 @@ ActiveX 컨트롤에서 해당 컨트롤 컨테이너 응용 프로그램 내에
 
 1. 클릭 **완료** 하 여 변경 내용을 적용 하 고 멤버 변수 추가 마법사를 종료 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)
-

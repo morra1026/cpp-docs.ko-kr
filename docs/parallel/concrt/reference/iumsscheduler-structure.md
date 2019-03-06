@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSScheduler structure
 ms.assetid: 3a500225-4e02-4849-bb56-d744865f5870
-ms.openlocfilehash: 0fd1ed90ca30c9c9e6815bb05b516f24b4f9a164
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f377d6079017266630434ce71602a7e70e58ae21
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50513791"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57282307"
 ---
 # <a name="iumsscheduler-structure"></a>IUMSScheduler 구조체
 
@@ -41,7 +41,7 @@ Resource Manager는 UMS 기능을 운영 체제에만 UMS 스레드를 전달할
 
 `IUMSScheduler` 인터페이스 양방향 스케줄러와 리소스 관리자 간의 통신 채널의 한쪽 끝입니다. 다른 쪽 end에 표시 됩니다는 `IResourceManager` 및 `ISchedulerProxy` Resource Manager에서 구현 되는 인터페이스입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [IScheduler](ischeduler-structure.md)
 
@@ -70,7 +70,7 @@ virtual void SetCompletionList(_Inout_ IUMSCompletionList* pCompletionList) = 0;
 
 Resource Manager는 UMS 스레드 스케줄러 리소스 할당을 초기 요청한 후가 지정 하는 스케줄러에서이 메서드를 호출 합니다. 스케줄러를 사용할 수는 `IUMSCompletionList` UMS 스레드 프록시 차단이 해제 시기를 결정 하는 인터페이스입니다. UMS 스케줄러에 할당할 가상 프로세서 루트에서 실행 되는 스레드 프록시에서이 인터페이스에 액세스 하는 것만 유효 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [PolicyElementKey](concurrency-namespace-enums.md)<br/>

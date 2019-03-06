@@ -8,12 +8,12 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - importing DLLs [C++], __declspec(dllimport)
 ms.assetid: edb4da4e-f83a-44cf-a668-9239d49dbe42
-ms.openlocfilehash: 925cd588c1851c6fb135fffbb83e9cfd680bea28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef01c2905dea215a1a52333ae5611ec58c5f5af4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610474"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419220"
 ---
 # <a name="importing-into-an-application-using-declspecdllimport"></a>__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기
 
@@ -53,6 +53,6 @@ class CLASS_DECLSPEC CExampleA : public CObject
 
 - [상호 가져오기](../build/mutual-imports.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[응용 프로그램으로 가져오기](../build/importing-into-an-application.md)
+[애플리케이션으로 가져오기](../build/importing-into-an-application.md)

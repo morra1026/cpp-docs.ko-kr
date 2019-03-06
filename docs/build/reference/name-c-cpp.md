@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - NAME .def file statement
 ms.assetid: 5c9b6bd8-9275-46a5-afba-f17a5936dc26
-ms.openlocfilehash: c05e82409d6b6e48390d54160e8ff23ada788d41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4888b8f9b6dba4b826f2ee7dda7529a4bdf1586
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646201"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414501"
 ---
 # <a name="name-cc"></a>NAME(C/C++)
 
@@ -27,6 +27,6 @@ NAME [application][BASE=address]
 
 DLL을 빌드하는 경우 이름을 DLL 이름에만 적용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)

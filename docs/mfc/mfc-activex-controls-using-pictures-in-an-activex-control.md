@@ -1,5 +1,5 @@
 ---
-title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기'
+title: 'MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용'
 ms.date: 11/04/2016
 f1_keywords:
 - LPPICTUREDISP
@@ -10,16 +10,16 @@ helpviewer_keywords:
 - OnResetState method [MFC]
 - CLSID_CPicturePropPage [MFC]
 ms.assetid: 2e49735c-21b9-4442-bb3d-c82ef258eec9
-ms.openlocfilehash: fe239f864f4b7730d28372ee3fc9d298131d28d9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 86e9bd220d06e714030f7d44888b210ba35fd345
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462103"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264562"
 ---
-# <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용하기
+# <a name="mfc-activex-controls-using-pictures-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림 사용
 
-이 문서에서는 일반적인 그림 유형 및 ActiveX 컨트롤에서 구현하는 방법을 설명합니다. 다음과 같은 내용을 다룹니다.
+이 문서에서는 일반적인 그림 유형 및 ActiveX 컨트롤에서 구현하는 방법을 설명합니다. 다루는 주제는 다음과 같습니다.
 
 - [사용자 지정 그림 속성 개요](#_core_overview_of_custom_picture_properties)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50462103"
 
 그림 형식은 일부 ActiveX 컨트롤에 공통적으로 적용되는 형식 그룹 중 하나입니다. 그림 형식은 메타 파일, 비트맵 또는 아이콘을 처리하며 사용자가 ActiveX 컨트롤에 표시할 그림을 지정할 수 있게 합니다. 사용자 지정 그림 속성은 그림 개체 및 컨트롤 사용자가 그림 속성에 액세스할 수 있게 하는 Get/Set 함수를 사용하여 구현됩니다. 컨트롤 사용자는 스톡 그림 속성 페이지를 사용하여 사용자 지정 그림 속성에 액세스합니다.
 
-표준 그림 형식뿐 아니라 글꼴 및 색 형식도 사용할 수 있습니다. ActiveX 컨트롤에서 표준 글꼴 형식을 사용하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 글꼴 사용](../mfc/mfc-activex-controls-using-fonts.md)문서를 참조하세요.
+표준 그림 형식뿐 아니라 글꼴 및 색 형식도 사용할 수 있습니다. ActiveX 컨트롤에서 표준 글꼴 형식을 사용에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 글꼴을 사용 하 여](../mfc/mfc-activex-controls-using-fonts.md)입니다.
 
 ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는 데 사용할 수 있는 여러 구성 요소를 제공합니다. 이러한 구성 요소는 다음과 같습니다.
 
@@ -41,11 +41,11 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 - Get/Set 함수로 구현된 **LPPICTUREDISP**형식의 속성 지원.
 
-   클래스 뷰를 사용하여 그림 형식을 지원하는 사용자 지정 속성을 빠르게 추가할 수 있습니다. 클래스 뷰를 사용하여 ActiveX 컨트롤 속성을 추가하는 방법에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)문서를 참조하세요.
+   클래스 뷰를 사용하여 그림 형식을 지원하는 사용자 지정 속성을 빠르게 추가할 수 있습니다. 클래스 뷰를 사용 하 여 ActiveX 컨트롤 속성을 추가 하는 방법은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 속성](../mfc/mfc-activex-controls-properties.md)합니다.
 
 - 컨트롤의 그림 속성을 조작하는 속성 페이지.
 
-   이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대한 자세한 내용은 [MFC ActiveX 컨트롤: 스톡 속성 페이지 사용](../mfc/mfc-activex-controls-using-stock-property-pages.md)을 참조하세요.
+   이 속성 페이지는 ActiveX 컨트롤에서 사용할 수 있는 스톡 속성 페이지 그룹의 일부입니다. ActiveX 컨트롤 속성 페이지에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: 스톡 속성 페이지를 사용 하 여](../mfc/mfc-activex-controls-using-stock-property-pages.md)
 
 ##  <a name="_core_implementing_a_custom_picture_property_in_your_activex_control"></a> ActiveX 컨트롤에서 사용자 지정 그림 속성 구현
 
@@ -147,9 +147,8 @@ ActiveX 컨트롤 클래스는 컨트롤 내에서 그림 속성을 구현하는
 
 수정 작업을 완료한 후 프로젝트를 다시 빌드하여 사용자 지정 그림 속성의 새 기능을 통합하고 테스트 컨테이너를 사용하여 새 속성을 테스트합니다. 테스트 컨테이너에 액세스하는 방법은 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md) 를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 글꼴 사용](../mfc/mfc-activex-controls-using-fonts.md)<br/>
 [MFC ActiveX 컨트롤: 속성 페이지](../mfc/mfc-activex-controls-property-pages.md)
-

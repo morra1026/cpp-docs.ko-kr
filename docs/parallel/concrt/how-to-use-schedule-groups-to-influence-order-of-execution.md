@@ -1,18 +1,18 @@
 ---
-title: '방법: 실행 순서에 영향을 주는 일정 그룹 사용'
+title: '방법: 실행 순서를 영향을 주는 일정 그룹 사용'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - schedule groups, using [Concurrency Runtime]
 - using schedule groups [Concurrency Runtime]
 ms.assetid: 73124194-fc3a-491e-a23f-fbd7b5a4455c
-ms.openlocfilehash: 1117e0d24aae023fbb4dec4fbb9721e6da2ad768
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 99e0383fc8d16f3eeb6e43e59424ab0984ee5c14
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642304"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284361"
 ---
-# <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>방법: 실행 순서에 영향을 주는 일정 그룹 사용
+# <a name="how-to-use-schedule-groups-to-influence-order-of-execution"></a>방법: 실행 순서를 영향을 주는 일정 그룹 사용
 
 동시성 런타임에서 작업 예정인 순서 명확 하지 않습니다. 그러나 작업이 실행 되는 순서에 영향을 줍니다 일정 예약 정책을 사용할 수 있습니다. 이 항목에서는 함께 일정 그룹을 사용 하는 방법을 보여 줍니다.는 [concurrency::SchedulingProtocol](reference/concurrency-namespace-enums.md#policyelementkey) 스케줄러 정책 작업이 실행 되는 순서에 영향을 줍니다.
 
@@ -104,12 +104,11 @@ group 1,
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `scheduling-protocol.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `scheduling-protocol.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc 예약 protocol.cpp**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [일정 그룹](../../parallel/concrt/schedule-groups.md)<br/>
 [비동기 에이전트](../../parallel/concrt/asynchronous-agents.md)
-

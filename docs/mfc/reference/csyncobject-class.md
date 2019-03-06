@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSyncObject [MFC], Unlock
 - CSyncObject [MFC], m_hObject
 ms.assetid: c62ea6eb-a17b-4e01-aed4-321fc435a5f4
-ms.openlocfilehash: d72d167be874d0776ce8da02784c2e0c267c9175
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 842ff5f98f05425fbbb511d112ae3e4fd65ff076
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547435"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263712"
 ---
 # <a name="csyncobject-class"></a>CSyncObject 클래스
 
@@ -62,9 +62,9 @@ class CSyncObject : public CObject
 
 파생 된 여러 클래스를 제공 하는 Microsoft Foundation Class 라이브러리를 `CSyncObject`입니다. 이들은 [CEvent](../../mfc/reference/cevent-class.md)를 [CMutex](../../mfc/reference/cmutex-class.md)합니다 [CCriticalSection](../../mfc/reference/ccriticalsection-class.md), 및 [CSemaphore](../../mfc/reference/csemaphore-class.md)합니다.
 
-동기화 개체를 사용 하는 방법에 대 한 자세한 내용은 문서 참조 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
+동기화 개체를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -117,7 +117,7 @@ virtual BOOL Lock(DWORD dwTimeout = INFINITE);
 HANDLE m_hObject;
 ```
 
-##  <a name="operator_handle"></a>  CSyncObject::operator 핸들
+##  <a name="operator_handle"></a>  CSyncObject::operator HANDLE
 
 이 연산자를 사용 하 여의 핸들을 가져올 수는 `CSyncObject` 개체입니다.
 
@@ -159,8 +159,7 @@ virtual BOOL Unlock() = 0; virtual BOOL Unlock(
 
 기본적으로 항상 두 개의 매개 변수를 사용 하 여 선언 TRUE를 반환합니다. 이 함수는 호출 스레드에서 소유 된 동기화 개체에 대 한 액세스를 해제 하려면 호출 됩니다. 두 번째 선언 같은 제어 된 리소스의 둘 이상의 액세스할 수 있는 세마포 동기화 개체에 대 한 제공 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

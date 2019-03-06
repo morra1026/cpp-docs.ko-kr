@@ -19,12 +19,12 @@ helpviewer_keywords:
 - TVS_HASBUTTONS [MFC]
 - tree controls [MFC], styles
 ms.assetid: f43faebd-a355-479e-888a-bf0673d5e1b4
-ms.openlocfilehash: 59cbed32d9be8fac84284b621bd4d1e17d5d92cf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d03961c1c905689af5894897a59262c8f00e73fa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50453471"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290768"
 ---
 # <a name="tree-control-styles"></a>트리 컨트롤 스타일
 
@@ -40,8 +40,7 @@ Tree 컨트롤 ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) 스타일 트�
 
 합니다 **TVS_NOTOOLTIPS** 스타일 트리 뷰 컨트롤의 자동 도구 팁 기능을 사용 하지 않도록 설정 합니다. 이 기능에는 자동으로 전체 제목 현재 표시 되지 않으면 마우스 커서 아래에 있는 항목의 제목을 포함 하는 도구 설명이 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

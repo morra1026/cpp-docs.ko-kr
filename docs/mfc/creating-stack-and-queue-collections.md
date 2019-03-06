@@ -11,12 +11,12 @@ helpviewer_keywords:
 - stack collections
 - collections, queue
 ms.assetid: 3c7bc198-35f0-4fc3-aaed-6005a0f22638
-ms.openlocfilehash: 082308acaeddcb173a0d873c0f50e2e40fd8fe12
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ed0ad9b98a69e56df4e66b25bc6ca08cdaaad413
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50569228"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301469"
 ---
 # <a name="creating-stack-and-queue-collections"></a>스택 및 큐 컬렉션 만들기
 
@@ -48,7 +48,6 @@ ms.locfileid: "50569228"
 
    [!code-cpp[NVC_MFCCollections#21](../mfc/codesnippet/cpp/creating-stack-and-queue-collections_2.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션](../mfc/collections.md)
-

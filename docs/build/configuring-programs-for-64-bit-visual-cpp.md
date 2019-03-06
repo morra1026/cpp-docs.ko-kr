@@ -8,12 +8,12 @@ helpviewer_keywords:
 - programming [C++], 64-bit
 - Visual C++, 64-bit hardware
 ms.assetid: cb99f72b-8c74-48f4-846a-8921b37b97e9
-ms.openlocfilehash: 85bfa6cb82b4b1825ae9b9a9a0f3a9f06e579499
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: c0c3620f4e5fea864fda1fd3d6b046fa3f485085
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626710"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417543"
 ---
 # <a name="configure-visual-c-for-64-bit-x64-targets"></a>64비트 및 x64를 위한 Visual C++ 설정
 
@@ -45,6 +45,6 @@ ms.locfileid: "53626710"
 
 [x64(amd64) 내장 목록](../intrinsics/x64-amd64-intrinsics-list.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 프로그램 빌드](building-c-cpp-programs.md)

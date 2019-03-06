@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory [MFC], managing
 - memory allocation [MFC], MFC
 ms.assetid: 934ac81b-d630-4232-88e5-ea74f7187987
-ms.openlocfilehash: 22c5c2c835872a189fe342093a737d7887538256
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 1c7f901009d5e1e7f0af20d493bb748b46b18480
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51692752"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281293"
 ---
 # <a name="memory-management"></a>메모리 관리
 
@@ -39,8 +39,7 @@ MFC를 사용하지 않는 Windows용 프로그램의 메모리 관리에 대한
 
 - [크기 조정 가능한 메모리 블록](../mfc/memory-management-resizable-memory-blocks.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../mfc/mfc-concepts.md)<br/>
 [일반 MFC 항목](../mfc/general-mfc-topics.md)
-

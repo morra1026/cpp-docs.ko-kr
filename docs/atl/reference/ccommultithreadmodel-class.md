@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CComMultiThreadModel class
 - threading [ATL]
 ms.assetid: db8f1662-2f7a-44b3-b341-ffbfb6e422a3
-ms.openlocfilehash: ae341763ef40125057b815d2071abbebdcf08f2e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b77efffca127c79c665cb8dedb916b0874de038
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508903"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290731"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel 클래스
 
@@ -57,7 +57,7 @@ class CComMultiThreadModel
 |`CComObjectThreadModel`|S|S|M|
 |`CComGlobalsThreadModel`|S|M|M|
 
-S = `CComSingleThreadModel`; M = `CComMultiThreadModel`
+S= `CComSingleThreadModel`; M= `CComMultiThreadModel`
 
 `CComMultiThreadModel` 세 가지 정의 자체 **typedef** 이름입니다. `AutoCriticalSection` 및 `CriticalSection` 가져오기을 중요 섹션의 소유권을 해제 하기 위한 메서드를 제공 하는 클래스를 참조 합니다. `ThreadModelNoCS` 참조 클래스 [CComMultiThreadModelNoCS(ccommultithreadmodelnocs-class.md) 합니다.
 
@@ -117,14 +117,14 @@ private:
 
 다음 표에서 결과 표시 합니다 `InternalAddRef` 및 `Lock` 에 따라 메서드는 `ThreadModel` 템플릿 매개 변수 및 응용 프로그램에서 사용 되는 스레딩 모델:
 
-### <a name="threadmodel--ccomobjectthreadmodel"></a>ThreadModel CComObjectThreadModel =
+### <a name="threadmodel--ccomobjectthreadmodel"></a>ThreadModel = CComObjectThreadModel
 
 |메서드|단일 또는 아파트 스레딩|자유 스레딩|
 |------------|-----------------------------------|--------------------|
 |`InternalAddRef`|증가값 스레드로부터 안전한 아닙니다.|증가값은 스레드로부터 안전 합니다.|
 |`Lock`|없습니다. 잠금에 중요 한 섹션이 있습니다.|중요 섹션 잠겨 있습니다.|
 
-### <a name="threadmodel--ccomobjectthreadmodelthreadmodelnocs"></a>ThreadModel CComObjectThreadModel::ThreadModelNoCS =
+### <a name="threadmodel--ccomobjectthreadmodelthreadmodelnocs"></a>ThreadModel = CComObjectThreadModel::ThreadModelNoCS
 
 |메서드|단일 또는 아파트 스레딩|자유 스레딩|
 |------------|-----------------------------------|--------------------|
@@ -221,7 +221,7 @@ typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 
 참조 [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComSingleThreadModel 클래스](ccomsinglethreadmodel-class.md)<br/>
 [CComAutoCriticalSection 클래스](ccomautocriticalsection-class.md)<br/>

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CScrollView [MFC], SetScaleToFitSize
 - CScrollView [MFC], SetScrollSizes
 ms.assetid: 4ba16dac-1acb-4be0-bb55-5fb695b6948d
-ms.openlocfilehash: 9ec6177b1f2cb071a6aa284c2936f3af4dbe4634
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ea95de2bceab290f94bb7c0e7bbc94a90048ee13
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50468278"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259258"
 ---
 # <a name="cscrollview-class"></a>CScrollView 클래스
 
@@ -104,7 +104,7 @@ class CScrollView : public CView
 
 사용 하 여 대 한 자세한 내용은 `CScrollView`를 참조 하세요 [문서/뷰 아키텍처](../../mfc/document-view-architecture.md) 하 고 [파생 된 뷰 클래스에서에서 사용할 수 있는 MFC](../../mfc/derived-view-classes-available-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -285,7 +285,7 @@ void ScrollToPosition(POINT pt);
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 논리 단위에서를 스크롤하여 가리킵니다. `x` 멤버 (보다 크거나 0으로 보기의 총 크기까지) 양수 값 이어야 합니다. 같은 기준이 `y` 매핑 모드가 MM_TEXT 일 때 멤버입니다. `y` 멤버의 매핑 모드가 MM_TEXT 이외의 음수입니다.
 
 ### <a name="remarks"></a>설명
@@ -374,7 +374,7 @@ MM_ISOTROPIC 또는 MM_ANISOTROPIC를 제외한 Windows 매핑 모드 중 하나
 
 [!code-cpp[NVC_MFCDocView#169](../../mfc/codesnippet/cpp/cscrollview-class_6.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 DIBLOOK](../../visual-cpp-samples.md)<br/>
 [CView 클래스](../../mfc/reference/cview-class.md)<br/>

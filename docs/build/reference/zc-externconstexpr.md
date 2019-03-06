@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -Zc:externConstexpr compiler option (C++)
 - extern constexpr variables (C++)
 ms.assetid: 4da5e33a-2e4d-4ed2-8616-bd8f43265c27
-ms.openlocfilehash: a9efa2fa191cbdda99e057ac9329d79bc598743c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b0af9fa0cc61b82853e64808897b30aaf2fa887d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510697"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415164"
 ---
 # <a name="zcexternconstexpr-enable-extern-constexpr-variables"></a>/Zc: externconstexpr (extern constexpr 변수 사용)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50510697"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/zc: externconstexpr** 컴파일러 옵션을 사용 하면 외부 링크를 사용 하 여 선언 된 변수를 적용할 컴파일러 `extern constexpr`합니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:externConstexpr-** 지정 된 경우 Visual Studio 내부 링크에 적용 됩니다 `constexpr` 경우에도 변수는 `extern` 키워드를 사용 합니다. 합니다 **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6부터 사용할 수 있습니다. 기본적으로 꺼져 있습니다. [/ permissive-](permissive-standards-conformance.md) 옵션이 사용 되지 않습니다 **/zc: externconstexpr**합니다.
+합니다 **/zc: externconstexpr** 컴파일러 옵션을 사용 하면 외부 링크를 사용 하 여 선언 된 변수를 적용할 컴파일러 `extern constexpr`합니다. 이전 버전의 Visual Studio 및 기본적으로 이거나 **/Zc:externConstexpr-** 지정 된 경우 Visual Studio 내부 링크에 적용 됩니다 `constexpr` 경우에도 변수는 `extern` 키워드를 사용 합니다. **/zc: externconstexpr** 옵션은 Visual Studio 2017 업데이트 15.6 부터 사용할 수 있으며 기본적으로는 꺼져 있습니다. [/ permissive-](permissive-standards-conformance.md) 옵션이 사용 되지 않습니다 **/zc: externconstexpr**합니다.
 
 헤더 파일에 선언 된 변수에 포함 되어 있으면 `extern constexpr`를 표시 해야 [__declspec (selectany)](../../cpp/selectany.md) 중복 선언과 연결 된 이진 파일의 단일 인스턴스를 병합 하기 위해. 그렇지 않으면 단일 정의 규칙의 위반에 대 한 LNK2005 예를 들어, 링커 오류가 발생할 수 있습니다.
 
@@ -36,7 +36,7 @@ ms.locfileid: "50510697"
 
 1. 추가 **/zc: externconstexpr** 하거나 **/Zc:externConstexpr-** 하는 **추가 옵션:** 창.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/Zc(규칙)](../../build/reference/zc-conformance.md)<br/>
 [auto 키워드](../../cpp/auto-keyword.md)

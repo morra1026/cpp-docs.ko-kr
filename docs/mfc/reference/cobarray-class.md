@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 27894efd-2370-4776-9ed9-24a98492af17
-ms.openlocfilehash: 031f163a5a4b5663b296dc6615712fe7dd5dbc56
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 78d736b53a2febe4f4a026e3aaf9db14dd7f9c0b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657606"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300412"
 ---
 # <a name="cobarray-class"></a>CObArray 클래스
 
@@ -119,7 +119,7 @@ Win32에서의 크기는 `CObArray` 개체가 사용 가능한 메모리에만 �
 > [!NOTE]
 >  배열을 serialize 하려는 경우 파생된 클래스의 구현에서 IMPLEMENT_SERIAL 매크로 사용 해야 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -154,12 +154,12 @@ INT_PTR Add(CObject* newElement);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR 추가 (BYTE** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR 추가 (DWORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR 추가 (void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR 추가 (LPCTSTR** `newElement` **); throw (CMemoryException\* );**<br /><br /> **INT_PTR Add(const CString&** `newElement` **);**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR 추가 (UINT** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR 추가 (단어** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR Add( BYTE** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR Add( DWORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR 추가 (void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR Add( LPCTSTR** `newElement` **); throw( CMemoryException\* );**<br /><br /> **INT_PTR Add(const CString&** `newElement` **);**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR Add( UINT** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR Add( WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
 
 ### <a name="example"></a>예제
 
@@ -203,11 +203,11 @@ INT_PTR Append(const CObArray& src);
 |클래스|멤버 함수|
 |-----------|---------------------|
 |[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR 추가 (const CByteArray &** *src* **);**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR 추가 (const CDWordArray &** *src* **);**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR 추가 (const CPtrArray &** *src* **);**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR Append( const CDWordArray&** *src* **);**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR Append( const CPtrArray&** *src* **);**|
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR 추가 (const CStringArray &** *src* **);**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR 추가 (const CUIntArray &** *src* **);**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR 추가 (const CWordArray &** *src* **);**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR Append( const CUIntArray&** *src* **);**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR Append( const CWordArray&** *src* **);**|
 
 ### <a name="example"></a>예제
 
@@ -236,12 +236,12 @@ void Copy(const CObArray& src);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**복사를 void (const CByteArray &** *src* **);**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**복사를 void (const CDWordArray &** *src* **);**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**복사를 void (const CPtrArray &** *src* **);**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**복사를 void (const CStringArray &** *src* **);**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**복사를 void (const CUIntArray &** *src* **);**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**복사를 void (const CWordArray &** *src* **);**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void Copy( const CByteArray&** *src* **);**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void Copy( const CDWordArray&** *src* **);**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void Copy( const CPtrArray&** *src* **);**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void Copy( const CStringArray&** *src* **);**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void Copy( const CUIntArray&** *src* **);**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void Copy( const CWordArray&** *src* **);**|
 
 ### <a name="example"></a>예제
 
@@ -265,12 +265,12 @@ CObArray();
 
 |클래스|생성자|
 |-----------|-----------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**CByteArray ();**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**CDWordArray ();**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**CPtrArray ();**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CStringArray ();**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**CUIntArray ();**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**CWordArray ();**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**CByteArray( );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**CDWordArray( );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**CPtrArray( );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CStringArray( );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**CUIntArray( );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**CWordArray( );**|
 
 ### <a name="example"></a>예제
 
@@ -301,12 +301,12 @@ CObject*& ElementAt(INT_PTR nIndex);
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**바이트 및 ElementAt (INT_PTR** `nIndex` **);**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD & ElementAt (INT_PTR** `nIndex` **);**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& ElementAt (INT_PTR** `nIndex` **);**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString & ElementAt (INT_PTR** `nIndex` **);**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT & ElementAt (INT_PTR** `nIndex` **);**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD 및 ElementAt (INT_PTR** `nIndex` **);**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BYTE& ElementAt( INT_PTR** `nIndex` **);**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD& ElementAt( INT_PTR** `nIndex` **);**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& ElementAt( INT_PTR** `nIndex` **);**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString& ElementAt( INT_PTR** `nIndex` **);**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT& ElementAt( INT_PTR** `nIndex` **);**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**WORD& ElementAt( INT_PTR** `nIndex` **);**|
 
 ### <a name="example"></a>예제
 
@@ -328,12 +328,12 @@ void FreeExtra();
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void FreeExtra ();**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void FreeExtra ();**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void FreeExtra ();**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void FreeExtra ();**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void FreeExtra ();**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void FreeExtra ();**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void FreeExtra( );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void FreeExtra( );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void FreeExtra( );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void FreeExtra( );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void FreeExtra( );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void FreeExtra( );**|
 
 ### <a name="example"></a>예제
 
@@ -365,7 +365,7 @@ CObject* GetAt(INT_PTR nIndex) const;
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**바이트 GetAt (INT_PTR** `nIndex` **) const;**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BYTE GetAt( INT_PTR** `nIndex` **) const;**|
 |[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD GetAt (INT_PTR** `nIndex` **) const;**|
 |[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\* GetAt (INT_PTR** `nIndex` **) const;**|
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString GetAt (INT_PTR** `nIndex` **) const;**|
@@ -435,12 +435,12 @@ CObject** GetData();
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**const 바이트\* const; GetData) 바이트\* GetData ();**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**const DWORD\* GetData () const; DWORD\* GetData ();**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**const void\* \* GetData () const; void\* \* GetData ();**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**const CString\* const; GetData) CString\* GetData ();**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**const UINT\* const; GetData) UINT\* GetData ();**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**const WORD\* const; GetData) WORD\* GetData ();**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**const BYTE\* GetData( ) const;BYTE\* GetData( );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**const DWORD\* GetData( ) const;DWORD\* GetData( );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**const void\*\* GetData( ) const;void\*\* GetData( );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**const CString\* GetData( ) const;CString\* GetData( );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**const UINT\* GetData( ) const;UINT\* GetData( );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**const WORD\* GetData( ) const;WORD\* GetData( );**|
 
 ### <a name="example"></a>예제
 
@@ -499,12 +499,12 @@ INT_PTR GetUpperBound() const;
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**Const; INT_PTR GetUpperBound)**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**Const; INT_PTR GetUpperBound)**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**Const; INT_PTR GetUpperBound)**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**Const; INT_PTR GetUpperBound)**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**Const; INT_PTR GetUpperBound)**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**Const; INT_PTR GetUpperBound)**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**INT_PTR GetUpperBound( ) const;**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**INT_PTR GetUpperBound( ) const;**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**INT_PTR GetUpperBound( ) const;**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**INT_PTR GetUpperBound( ) const;**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**INT_PTR GetUpperBound( ) const;**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**INT_PTR GetUpperBound( ) const;**|
 
 ### <a name="example"></a>예제
 
@@ -556,12 +556,12 @@ void InsertAt(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**InsertAt void (INT_PTR** `nIndex` **, 바이트** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **InsertAt void (INT_PTR** `nStartIndex` **, CByteArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**InsertAt void (INT_PTR** `nIndex` **, DWORD** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **InsertAt void (INT_PTR** `nStartIndex` **, CDWordArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**InsertAt void (INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **InsertAt void (INT_PTR** `nStartIndex` **, CPtrArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**InsertAt void (INT_PTR** `nIndex` **, LPCTSTR** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **InsertAt void (INT_PTR** `nStartIndex` **, CStringArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**InsertAt void (INT_PTR** `nIndex` **, UINT** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **InsertAt void (INT_PTR** `nStartIndex` **, CUIntArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**InsertAt void (INT_PTR** `nIndex` **, WORD** `newElement` **, int** `nCount` **= 1);**<br /><br /> **throw (CMemoryException\* );**<br /><br /> **InsertAt void (INT_PTR** `nStartIndex` **, CWordArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw (CMemoryException\* );**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, BYTE** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CByteArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, DWORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CDWordArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CPtrArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CStringArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, UINT** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CUIntArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void InsertAt( INT_PTR** `nIndex` **, WORD** `newElement` **, int** `nCount` **= 1 );**<br /><br /> **throw( CMemoryException\* );**<br /><br /> **void InsertAt( INT_PTR** `nStartIndex` **, CWordArray** <strong>\*</strong> `pNewArray` **);**<br /><br /> **throw( CMemoryException\* );**|
 
 ### <a name="example"></a>예제
 
@@ -590,7 +590,7 @@ BOOL IsEmpty() const;
 
 배열이 비어 있으면 0이 아닌 값 그렇지 않으면 0입니다.
 
-##  <a name="operator_at"></a>  CObArray::operator]
+##  <a name="operator_at"></a>  CObArray::operator [ ]
 
 이러한 아래 첨자 연산자는 편리한 대체 합니다 `SetAt` 및 `GetAt` 함수입니다.
 
@@ -609,12 +609,12 @@ CObject* operator[](int_ptr nindex) const;
 
 |클래스|연산자|
 |-----------|--------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**바이트 & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **연산자 byte (int_ptr** `nindex`  **\) const;**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **DWORD 연산자 (int_ptr** `nindex`  **\) const;**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **void\* operator (int_ptr** `nindex`  **\) const;**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**BYTE& operator [](int_ptr** `nindex` **\);**<br /><br /> **BYTE operator [](int_ptr** `nindex` **\) const;**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**DWORD & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **DWORD operator [](int_ptr** `nindex` **\) const;**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void\*& operator [](int_ptr** `nindex` **\);**<br /><br /> **void\* operator [](int_ptr** `nindex` **\) const;**|
 |[CStringArray](../../mfc/reference/cstringarray-class.md)|**CString & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **CString operator (int_ptr** `nindex`  **\) const;**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **UINT operator (int_ptr** `nindex`  **\) const;**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**단어 & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **WORD operator (int_ptr** `nindex`  **\) const;**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**UINT & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **UINT operator [](int_ptr** `nindex` **\) const;**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**단어 & 연산자 (int_ptr** `nindex`  **\);**<br /><br /> **WORD operator [](int_ptr** `nindex` **\) const;**|
 
 ### <a name="example"></a>예제
 
@@ -683,12 +683,12 @@ void RemoveAt(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**RemoveAt void (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**RemoveAt void (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**RemoveAt void (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**RemoveAt void (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**RemoveAt void (INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1);**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**RemoveAt void (INT_PTR** `nIndex` **, INT_PTR** *nCount* **= 1);**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1 );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1 );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1 );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1 );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** `nCount` **= 1 );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void RemoveAt( INT_PTR** `nIndex` **, INT_PTR** *nCount* **= 1 );**|
 
 ### <a name="example"></a>예제
 
@@ -731,12 +731,12 @@ void SetAt(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**SetAt void (INT_PTR** `nIndex` **, 바이트** `newElement` **);**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**SetAt void (INT_PTR** `nIndex` **, DWORD** `newElement` **);**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**SetAt void (INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**SetAt void (INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**SetAt void (INT_PTR** `nIndex` **, UINT** `newElement` **);**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**SetAt void (INT_PTR** `nIndex` **, WORD** `newElement` **);**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAt( INT_PTR** `nIndex` **, BYTE** `newElement` **);**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, DWORD** `newElement` **);**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, UINT** `newElement` **);**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAt( INT_PTR** `nIndex` **, WORD** `newElement` **);**|
 
 ### <a name="example"></a>예제
 
@@ -778,12 +778,12 @@ void SetAtGrow(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**SetAtGrow void (INT_PTR** `nIndex` **, 바이트** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**SetAtGrow void (INT_PTR** `nIndex` **, DWORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**SetAtGrow void (INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**SetAtGrow void (INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**SetAtGrow void (INT_PTR** `nIndex` **, UINT** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**SetAtGrow void (INT_PTR** `nIndex` **, WORD** `newElement` **);**<br /><br /> **throw (CMemoryException\* );**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, BYTE** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, DWORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, void** <strong>\*</strong> `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, LPCTSTR** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, UINT** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetAtGrow( INT_PTR** `nIndex` **, WORD** `newElement` **);**<br /><br /> **throw( CMemoryException\* );**|
 
 ### <a name="example"></a>예제
 
@@ -814,7 +814,7 @@ void SetSize(
 ### <a name="parameters"></a>매개 변수
 
 *nNewSize*<br/>
-새 배열 크기 (요소 수)입니다. 0보다 크거나 같아야 합니다.
+새 배열 크기 (요소 수)입니다. 0 보다 크거나 이어야 합니다.
 
 *nGrowBy*<br/>
 크기 증가 필요한 경우 할당할 요소 슬롯의 최소 수입니다.
@@ -831,18 +831,18 @@ void SetSize(
 
 |클래스|멤버 함수|
 |-----------|---------------------|
-|[CByteArray](../../mfc/reference/cbytearray-class.md)|**SetSize void (INT_PTR** `nNewSize` **, int** `nGrowBy` **=-1);**<br /><br /> **throw (CMemoryException\* );**|
-|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**SetSize void (INT_PTR** `nNewSize` **, int** `nGrowBy` **=-1);**<br /><br /> **throw (CMemoryException\* );**|
-|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**SetSize void (INT_PTR** `nNewSize` **, int** `nGrowBy` **=-1);**<br /><br /> **throw (CMemoryException\* );**|
-|[CStringArray](../../mfc/reference/cstringarray-class.md)|**SetSize void (INT_PTR** `nNewSize` **, int** `nGrowBy` **=-1);**<br /><br /> **throw (CMemoryException\* );**|
-|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**SetSize void (INT_PTR** `nNewSize` **, int** `nGrowBy` **=-1);**<br /><br /> **throw (CMemoryException\* );**|
-|[CWordArray](../../mfc/reference/cwordarray-class.md)|**SetSize void (INT_PTR** `nNewSize` **, int** `nGrowBy` **=-1);**<br /><br /> **throw (CMemoryException\* );**|
+|[CByteArray](../../mfc/reference/cbytearray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|
+|[CDWordArray](../../mfc/reference/cdwordarray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|
+|[CPtrArray](../../mfc/reference/cptrarray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|
+|[CStringArray](../../mfc/reference/cstringarray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|
+|[CUIntArray](../../mfc/reference/cuintarray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|
+|[CWordArray](../../mfc/reference/cwordarray-class.md)|**void SetSize( INT_PTR** `nNewSize` **, int** `nGrowBy` **= -1 );**<br /><br /> **throw( CMemoryException\* );**|
 
 ### <a name="example"></a>예제
 
   예를 참조 하세요 [CObArray::GetData](#getdata)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - frame window classes [MFC], created by application wizards
 - CMainFrame class [MFC]
 ms.assetid: 9947df73-4470-49a0-ac61-7b6ee401a74e
-ms.openlocfilehash: 581ceb25e675da6506d06bca3798fb22ca8fd389
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0610ae901b817a1c8f7707d9ba87c15d634e134
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629257"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298063"
 ---
 # <a name="frame-window-classes-created-by-the-application-wizard"></a>응용 프로그램 마법사로 만든 프레임 창 클래스
 
@@ -33,8 +33,7 @@ ms.locfileid: "50629257"
 
 이러한 프레임 창 클래스 생성 하는 대로 작동 하지만 해당 기능을 강화 하려면 멤버 변수 및 멤버 함수를 추가 해야 합니다. 다른 Windows 메시지를 처리 하 여 창 클래스를 할 수도 있습니다. 자세한 내용은 [MFC에서 만든 창 스타일 변경](../mfc/changing-the-styles-of-a-window-created-by-mfc.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창 클래스](../mfc/frame-window-classes.md)<br/>
 [MFC 프로그램 또는 컨트롤 소스 및 헤더 파일](../ide/mfc-program-or-control-source-and-header-files.md)
-

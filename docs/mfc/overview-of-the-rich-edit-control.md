@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - rich edit controls [MFC]
 ms.assetid: ad589b9f-a3fd-4820-bf1f-6b1965997e68
-ms.openlocfilehash: 7f307674645ad68455123b801fef8e4ae24b5b41
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c45cb638ec860bb803c7de32065606dc3cc176b2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548280"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287715"
 ---
 # <a name="overview-of-the-rich-edit-control"></a>Rich Edit 컨트롤의 개요
 
@@ -24,8 +24,7 @@ Rich edit 컨트롤 ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) �
 
 알림에 대 한 자세한 내용은 참조 하세요. [서식 있는 편집 컨트롤에서 알림](../mfc/notifications-from-a-rich-edit-control.md) 이 항목의에서 뒷부분에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CRichEditCtrl 사용](../mfc/using-cricheditctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

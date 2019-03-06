@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Concurrency Runtime, use with COM
 - COM, use with the Concurrency Runtime
 ms.assetid: a7c798b8-0fc8-4bee-972f-22ef158f7f48
-ms.openlocfilehash: 227d06c74826b8936909b774d1a7e3a222ac8023
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d306377be4a000c54fb5556b15263a15b2d4618
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554936"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278199"
 ---
 # <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>연습: COM 사용 응용 프로그램에서 동시성 런타임 사용
 
@@ -149,11 +149,11 @@ fib(12) = 144
 
 ## <a name="compiling-the-code"></a>코드 컴파일
 
-예제 코드를 복사 하 고 Visual Studio 프로젝트에 붙여 넣습니다 또는 라는 파일에 붙여 `parallel-scripts.cpp` Visual Studio 명령 프롬프트 창에서 다음 명령을 실행 합니다.
+예제 코드를 복사하여 Visual Studio 프로젝트 또는 `parallel-scripts.cpp` 파일에 붙여넣고 Visual Studio 명령 프롬프트 창에서 다음 명령을 실행합니다.
 
 **cl.exe /EHsc 병렬 scripts.cpp /link ole32.lib**
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [동시성 런타임 연습](../../parallel/concrt/concurrency-runtime-walkthroughs.md)<br/>
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
@@ -162,4 +162,3 @@ fib(12) = 144
 [예외 처리](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)<br/>
 [PPL에서의 취소](cancellation-in-the-ppl.md)<br/>
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)
-

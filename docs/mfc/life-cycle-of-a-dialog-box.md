@@ -8,12 +8,12 @@ helpviewer_keywords:
 - MFC dialog boxes [MFC], life cycle
 - life cycle of dialog boxes [MFC]
 ms.assetid: e16fd78e-238d-4f31-8c9d-8564f3953bd9
-ms.openlocfilehash: e92489499a3a5aaaf2fb97e8908cb30d5e168240
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a3772a180e35a57c997446fcf2268d84bec2daa5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50577621"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291108"
 ---
 # <a name="life-cycle-of-a-dialog-box"></a>대화 상자의 수명 주기
 
@@ -23,7 +23,7 @@ ms.locfileid: "50577621"
 
 모덜리스 대화 상자에 대 한 하면 데이터를 추출할 수도 대화 상자 개체에서 대화 상자는 계속 표시 합니다. 어느 시점에서 대화 개체는 소멸 됩니다. 이 경우 코드에 따라 달라 집니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [만들기 및 대화 상자를 표시 합니다.](../mfc/creating-and-displaying-dialog-boxes.md)
 
@@ -49,7 +49,6 @@ ms.locfileid: "50577621"
 
 - [속성 시트 대화 상자](../mfc/property-sheets-and-property-pages-mfc.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)
-

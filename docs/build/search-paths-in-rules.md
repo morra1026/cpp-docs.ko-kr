@@ -6,12 +6,12 @@ helpviewer_keywords:
 - inference rules in NMAKE
 - rules, inference
 ms.assetid: 38feded6-536d-425d-bf40-fff3173a5506
-ms.openlocfilehash: 26b02fa76920f0d0ff380dacd5aa76cfe8e92c79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f45562c74db22dd1cfc493f86a4de5c96c48831
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649971"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415918"
 ---
 # <a name="search-paths-in-rules"></a>규칙에서 경로 검색
 
@@ -57,6 +57,6 @@ ms.locfileid: "50649971"
         $(CC) $(CFLAGS) $<
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [규칙 정의](../build/defining-a-rule.md)

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CGopherFileFind [MFC], GetScreenName
 - CGopherFileFind [MFC], IsDots
 ms.assetid: 8465a979-6323-496d-ab4b-e81383fb999d
-ms.openlocfilehash: dafa313d9d2c7aae13e83a891c79d437ac276e08
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: c1157b3583e266a09840f710b46766ffc4f31b5e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894499"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269697"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind 클래스
 
@@ -91,7 +91,7 @@ class CGopherFileFind : public CFileFind
 
 사용 하는 방법에 대 한 자세한 내용은 `CGopherFileFind` 문서를 참조 하는 다른 WinInet 클래스 및 [WinInet을 사용 하 여 인터넷 프로그래밍](../../mfc/win32-internet-extensions-wininet.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -326,7 +326,7 @@ virtual BOOL IsDots() const;
 
 호출 해야 합니다 [FindNextFile](#findnextfile) 호출 하기 전에 한 번 이상 `IsDots`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CFileFind 클래스](../../mfc/reference/cfilefind-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

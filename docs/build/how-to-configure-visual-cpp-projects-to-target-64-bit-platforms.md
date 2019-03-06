@@ -1,23 +1,23 @@
 ---
-title: '방법: Visual c + + 대상 프로젝트를 64 비트 x64 구성 플랫폼'
+title: '방법: X64을 64 비트 대상 Visual c + + 프로젝트 구성 플랫폼'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - platforms [C++], 64-bit
 - 64-bit programming [C++], configuring projects
 - project configurations [C++]
 ms.assetid: 2b9ae001-df36-4750-83b2-982145d632ad
-ms.openlocfilehash: c0c734648b084c3f58577cb56984e3ea003a6a8e
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 17255a5671880063f030ed0087c1fa839c5a14ef
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523939"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421378"
 ---
-# <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>방법: Visual c + + 대상 프로젝트를 64 비트 x64 구성 플랫폼
+# <a name="how-to-configure-visual-c-projects-to-target-64-bit-x64-platforms"></a>방법: X64을 64 비트 대상 Visual c + + 프로젝트 구성 플랫폼
 
 C + + 대상 응용 프로그램을 64 비트, x64 플랫폼 설정 하려면 Visual Studio IDE에서 프로젝트 구성을 사용할 수 있습니다. 또한 Win32 프로젝트 설정을 64비트 프로젝트 구성에 마이그레이션할 수 있습니다.
 
-### <a name="to-set-up-c-applications-to-target-64-bit-platforms"></a>64비트 플랫폼을 대상으로 하도록 C++ 응용 프로그램을 설정하려면
+### <a name="to-set-up-c-applications-to-target-64-bit-platforms"></a>64비트 플랫폼을 대상으로 하도록 C++ 애플리케이션을 설정하려면
 
 1. 구성하려는 C++ 프로젝트를 엽니다.
 
@@ -47,17 +47,17 @@ C + + 대상 응용 프로그램을 64 비트, x64 플랫폼 설정 하려면 Vi
 
   - **출력 등록** 이 꺼집니다. 자세한 내용은 [Linker Property Pages](../ide/linker-property-pages.md)을 참조하세요.
 
-  - **대상 환경** 이 **/env x64**로 설정됩니다. 자세한 내용은 [MIDL Property Pages: General](../ide/midl-property-pages-general.md)을 참조하세요.
+  - **대상 환경** 이 **/env x64**로 설정됩니다. 자세한 내용은 참조 하세요. [MIDL Property Pages: 일반](../ide/midl-property-pages-general.md)합니다.
 
-  - **매개 변수 유효성 검사** 가 초기화되어 기본값으로 다시 설정됩니다. 자세한 내용은 [MIDL Property Pages: Advanced](../ide/midl-property-pages-advanced.md)을 참조하세요.
+  - **매개 변수 유효성 검사** 가 초기화되어 기본값으로 다시 설정됩니다. 자세한 내용은 참조 하세요. [MIDL Property Pages: 고급](../ide/midl-property-pages-advanced.md)합니다.
 
   - **디버그 정보 형식** 이 Win32 프로젝트 구성에서 **/ZI** 로 설정되면 64비트 프로젝트 구성에서는 **/Zi** 로 설정됩니다. 자세한 내용은 [/Z7, /Zi, /ZI(디버그 정보 형식)](../build/reference/z7-zi-zi-debug-information-format.md)를 참조하세요.
 
   > [!NOTE]
   > 이러한 프로젝트 속성이 파일 수준에서 재정의된 경우에는 어떠한 속성도 변경되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[.NET framework에 대 한 64 비트 응용 프로그램](/dotnet/framework/64-bit-apps)<br/>
+[.NET framework에 대한 64비트 응용 프로그램](/dotnet/framework/64-bit-apps)<br/>
 [64비트, x64 대상을 위한 Visual C++ 구성](../build/configuring-programs-for-64-bit-visual-cpp.md)<br/>
 [64비트 응용 프로그램 디버그](/visualstudio/debugger/debug-64-bit-applications)

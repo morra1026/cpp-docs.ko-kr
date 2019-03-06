@@ -14,12 +14,12 @@ helpviewer_keywords:
 - printing [MFC], documents
 - writing to files [MFC]
 ms.assetid: f390d6d8-d0e1-4497-9b6a-435f7ce0776c
-ms.openlocfilehash: 1fcdd365bd3744e1a09b768f56c1044696686c73
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb35d1731912b2e322bc61621f7900e0d98e1e72
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589733"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294683"
 ---
 # <a name="using-documents"></a>문서 사용
 
@@ -37,7 +37,7 @@ ms.locfileid: "50589733"
 
 특히 데이터 관리와 관련 된 문서가 있습니다. 문서 클래스 멤버 변수에서 일반적으로 데이터를 저장 합니다. 보기 표시에 대 한 데이터를 액세스 하 고 업데이트할 이러한 변수를 사용 합니다. 문서의 기본 serialization 메커니즘에는 데이터 읽기 및 쓰기를 파일로 / 파일에서 관리 합니다. 명령 (하지만 WM_COMMAND 이외의 Windows 메시지가 없는) 문서를 처리할 수도 있습니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [CDocument에서 문서 클래스 파생 시키기](../mfc/deriving-a-document-class-from-cdocument.md)
 
@@ -53,7 +53,6 @@ ms.locfileid: "50589733"
 
 - [DeleteContents 멤버 함수](../mfc/reference/cdocument-class.md#deletecontents)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [문서/뷰 아키텍처](../mfc/document-view-architecture.md)
-

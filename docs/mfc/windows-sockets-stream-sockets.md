@@ -1,19 +1,19 @@
 ---
-title: 'Windows 소켓: 스트림 소켓'
+title: 'Windows 소켓: Stream 소켓'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - Windows Sockets [MFC], stream sockets
 - sockets [MFC], stream sockets
 - stream sockets [MFC]
 ms.assetid: 31faaa34-a995-493f-a30b-b8115293d619
-ms.openlocfilehash: 298428bd5e81d11eb62907dfbac39acda24524f0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 91f06c4a36e76638708edf085987e51418913fd6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560227"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271296"
 ---
-# <a name="windows-sockets-stream-sockets"></a>Windows 소켓: 스트림 소켓
+# <a name="windows-sockets-stream-sockets"></a>Windows 소켓: Stream 소켓
 
 이 문서에서는 스트림 소켓을 사용할 수 있는 두 개의 Windows 소켓 유형 중 하나를 설명 합니다. (다른 유형은 합니다 [데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md).)
 
@@ -40,8 +40,7 @@ ms.locfileid: "50560227"
     > [!NOTE]
     >  클래스를 사용 하는 경우 `CSocket`, 스트림을 사용 해야 합니다. 으로 소켓 형식을 지정 하면 MFC 어설션이 실패 **SOCK_DGRAM**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)<br/>
-[Windows 소켓: 백그라운드](../mfc/windows-sockets-background.md)
-
+[Windows 소켓: 배경](../mfc/windows-sockets-background.md)

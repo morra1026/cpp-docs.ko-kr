@@ -1,19 +1,19 @@
 ---
-title: OLE 백그라운드 구현 전략
+title: 'OLE 백그라운드: Implementation Strategies'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - OLE [MFC], development strategy
 - OLE applications [MFC], implementing OLE
 - applications [OLE], implementing OLE
 ms.assetid: 0875ddae-99df-488c-82c6-164074a81058
-ms.openlocfilehash: a9bcbc16b08f16953df92efe5a83db39f9a33cc5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40c74d48b76921f770740602a39d28804a7e3c09
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624395"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284816"
 ---
-# <a name="ole-background-implementation-strategies"></a>OLE 백그라운드 구현 전략
+# <a name="ole-background-implementation-strategies"></a>OLE 백그라운드: Implementation Strategies
 
 응용 프로그램에 따라 OLE 지원 추가를 위해서는 다음 네 가지 구현 전략을 사용할 수 있습니다.
 
@@ -35,10 +35,9 @@ ms.locfileid: "50624395"
 
 읽거나 전략 했으면 해야 합니다 [컨테이너](../mfc/containers.md) 또는 [서버](../mfc/servers.md) (형식에 따라 응용 프로그램을 작성 하는) 문서 또는 샘플 프로그램 중 하나 또는 둘 다 검사 합니다. MFC OLE 샘플 [OCLIENT](../visual-cpp-samples.md) 하 고 [HIERSVR](../visual-cpp-samples.md) 각각 컨테이너 및 서버를 다양 한 측면을 구현 하는 방법을 보여 줍니다. 이러한 문서 전체의 여러 지점에서는 설명 중인 기술의 예제로 이러한 샘플에 포함된 일부 함수가 참조될 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE 백그라운드](../mfc/ole-background.md)<br/>
-[컨테이너: 컨테이너 구현](../mfc/containers-implementing-a-container.md)<br/>
+[컨테이너: 컨테이너를 구현합니다.](../mfc/containers-implementing-a-container.md)<br/>
 [서버: 서버 구현](../mfc/servers-implementing-a-server.md)<br/>
 [MFC 응용 프로그램 마법사](../mfc/reference/mfc-application-wizard.md)
-

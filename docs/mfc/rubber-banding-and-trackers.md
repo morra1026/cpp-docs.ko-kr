@@ -8,12 +8,12 @@ helpviewer_keywords:
 - rubber banding [MFC]
 - WM_LBUTTONDOWN [MFC]
 ms.assetid: 0d0fa64c-6418-4baf-ab7f-2d16ca039230
-ms.openlocfilehash: f15256f99a744273b3487925bf273ad563c32aff
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6a9c9848e21129d4e6a8ce300e8750b4a0c6126
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450806"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281046"
 ---
 # <a name="rubber-banding-and-trackers"></a>고무 밴드 및 추적기
 
@@ -29,7 +29,7 @@ ms.locfileid: "50450806"
 
 자세한 내용은 [컨테이너 클라이언트 항목](../mfc/containers-client-items.md) 하 고 [끌어서 놓기 사용자 지정](../mfc/drag-and-drop-customizing.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [추적기: OLE 응용 프로그램에서 추적기 구현](../mfc/trackers-implementing-trackers-in-your-ole-application.md)<br/>
 [CRectTracker 클래스](../mfc/reference/crecttracker-class.md)

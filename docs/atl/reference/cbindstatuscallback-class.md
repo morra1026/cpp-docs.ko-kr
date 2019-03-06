@@ -29,12 +29,12 @@ helpviewer_keywords:
 - data transfer [C++], asynchronous
 - CBindStatusCallback class
 ms.assetid: 0f5da276-6031-4418-b2a9-a4750ef29e77
-ms.openlocfilehash: 16e97b994ad30fdd4c255dac45e8b56fd04f663a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e8c8d3f170803a792ca2ea8c7a37a18fd2cebd48
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583315"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259206"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback 클래스
 
@@ -67,7 +67,7 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx <T ::_ThreadMo
 |이름|설명|
 |----------|-----------------|
 |[CBindStatusCallback::CBindStatusCallback](#cbindstatuscallback)|생성자입니다.|
-|[CBindStatusCallback:: ~ CBindStatusCallback](#dtor)|소멸자입니다.|
+|[CBindStatusCallback::~CBindStatusCallback](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -107,7 +107,7 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx <T ::_ThreadMo
 
 콜백 함수를 사용 하 여 비동기 모니커 `OnData` 데이터가 있는 경우 응용 프로그램을 호출 합니다. 비동기 모니커 시스템에서 제공 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CComObjectRootBase`
 
@@ -135,7 +135,7 @@ CBindStatusCallback();
 
 또한 생성자 [m_pT](#m_pt) 하 고 [m_pFunc](#m_pfunc) NULL로 합니다.
 
-##  <a name="dtor"></a>  CBindStatusCallback:: ~ CBindStatusCallback
+##  <a name="dtor"></a>  CBindStatusCallback::~CBindStatusCallback
 
 소멸자입니다.
 
@@ -162,7 +162,7 @@ static HRESULT Download(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 [in] 비동기 데이터 전송 요청 하는 개체에 대 한 포인터입니다. `CBindStatusCallback` 개체는이 개체의이 클래스에 템플릿 화 됩니다.
 
 *pFunc*<br/>
@@ -357,7 +357,7 @@ STDMETHOD(
 ### <a name="parameters"></a>매개 변수
 
 *grfBSCF*<br/>
-[in] BSCF 열거형 값입니다. 다음 중 하나 이상의: BSCF_FIRSTDATANOTIFICATION, BSCF_INTERMEDIARYDATANOTIFICATION, 또는 BSCF_LASTDATANOTIFICATION 합니다.
+[in] BSCF 열거형 값입니다. 하나 이상의 중: BSCF_FIRSTDATANOTIFICATION, BSCF_INTERMEDIARYDATANOTIFICATION, 또는 BSCF_LASTDATANOTIFICATION 합니다.
 
 *dwSize*<br/>
 [in] 바인딩의 사용할 수 있는 데이터의 누적 양 (메가바이트)입니다. 데이터의 양을 관련 되지 않거나 특정 양이 없는 나왔을 있는지를 나타내는 0이 될 수 있습니다.
@@ -494,7 +494,7 @@ HRESULT StartAsyncDownload(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 [in] 비동기 데이터 전송 요청 하는 개체에 대 한 포인터입니다. `CBindStatusCallback` 개체는이 개체의이 클래스에 템플릿 화 됩니다.
 
 *pFunc*<br/>
@@ -534,6 +534,6 @@ void Function_Name(
 
 [!code-cpp[NVC_ATL_Windowing#87](../../atl/codesnippet/cpp/cbindstatuscallback-class_2.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

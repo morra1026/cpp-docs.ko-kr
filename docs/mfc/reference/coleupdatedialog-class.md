@@ -10,12 +10,12 @@ helpviewer_keywords:
 - COleUpdateDialog [MFC], COleUpdateDialog
 - COleUpdateDialog [MFC], DoModal
 ms.assetid: 699ca980-52b1-4cf8-9ab1-ac6767ad5b0e
-ms.openlocfilehash: 454d6686a389b1578bb777e8573e9281b2a5e6c7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74607a2a145025533c660ae68f20ffb8e59d3fad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281735"
 ---
 # <a name="coleupdatedialog-class"></a>COleUpdateDialog 클래스
 
@@ -45,7 +45,7 @@ class COleUpdateDialog : public COleLinksDialog
 
 OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -81,7 +81,7 @@ explicit COleUpdateDialog(
 
 ### <a name="parameters"></a>매개 변수
 
-*입력*<br/>
+*pDoc*<br/>
 업데이트 하는 데 필요할 수 있는 링크를 포함 하는 문서를 가리킵니다.
 
 *bUpdateLinks*<br/>
@@ -119,7 +119,7 @@ virtual INT_PTR DoModal();
 
 사용자가 취소 단추를 선택 하지 않는 한 모든 링크 및/또는 포함 업데이트 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>
 [COleLinksDialog 클래스](../../mfc/reference/colelinksdialog-class.md)<br/>

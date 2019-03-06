@@ -6,12 +6,12 @@ helpviewer_keywords:
 - filename-parts syntax in NMAKE
 - NMAKE program, syntax
 ms.assetid: 48fe38e0-3f3b-40e6-894c-330ee775a656
-ms.openlocfilehash: 89869ccaea2a9a5c3d16762fe49b72efc462e0ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 159558081fd9884f969ddc66833d927b8569a79b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552050"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417478"
 ---
 # <a name="filename-parts-syntax"></a>파일 이름 부분 구문
 
@@ -39,6 +39,6 @@ ms.locfileid: "50552050"
 
 - %&#124;eF exe 됩니다
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메이크파일의 명령](../build/commands-in-a-makefile.md)

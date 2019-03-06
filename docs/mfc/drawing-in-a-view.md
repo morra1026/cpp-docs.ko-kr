@@ -11,12 +11,12 @@ helpviewer_keywords:
 - paint messages in view class [MFC]
 - device contexts, screen drawings
 ms.assetid: e3761db6-0f19-4482-a4cd-ac38ef7c4d3a
-ms.openlocfilehash: da1729834076ebc62eee9e482934f9410c03e78c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 77844ebd31f624229870d27c72b08a987b7533bd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651849"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280773"
 ---
 # <a name="drawing-in-a-view"></a>뷰에 그리기
 
@@ -44,7 +44,6 @@ A [디바이스 컨텍스트](../mfc/device-contexts.md) 디스플레이 또는 
 
 작성 하는 방법의 예 `OnDraw`를 참조 합니다 [MFC 샘플](../visual-cpp-samples.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [뷰 사용](../mfc/using-views.md)
-

@@ -39,16 +39,16 @@ helpviewer_keywords:
 - m_dwStatus
 - m_pCUtlPropInfo
 ms.assetid: e4182f81-0443-44f5-a0d3-e7e075d6f883
-ms.openlocfilehash: 4d9499262d0b4167d7c3941113f49bfa23e0467b
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 18145f3dc9545f79b08d9d92cacdafad0520c992
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556766"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418746"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl 클래스
 
-에 대 한 구현을 제공 합니다 [IDBInitialize](https://docs.microsoft.com/previous-versions/windows/desktop/ms713706(v=vs.85)) 인터페이스입니다.
+에 대 한 구현을 제공 합니다 [IDBInitialize](/previous-versions/windows/desktop/ms713706(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -92,7 +92,7 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 
 데이터 원본 개체에서 열거자의 선택적 인터페이스에는 필수 인터페이스입니다.
 
-## <a name="idbinitializeimpl"></a> Idbinitializeimpl:: Idbinitializeimpl
+## <a name="idbinitializeimpl"></a> IDBInitializeImpl::IDBInitializeImpl
 
 생성자입니다.
 
@@ -106,7 +106,7 @@ IDBInitializeImpl();
 
 모든 데이터 멤버를 초기화합니다.
 
-## <a name="initialize"></a> Idbinitializeimpl:: Initialize
+## <a name="initialize"></a> IDBInitializeImpl::Initialize
 
 속성 지원을 준비하여 데이터 소스 개체를 초기화합니다.
 
@@ -118,9 +118,9 @@ STDMETHOD(Initialize)(void);
 
 ### <a name="remarks"></a>설명
 
-참조 [idbinitialize:: Initialize](https://docs.microsoft.com/previous-versions/windows/desktop/ms718026(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [idbinitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="uninitialize"></a> Idbinitializeimpl:: Uninitialize
+## <a name="uninitialize"></a> IDBInitializeImpl::Uninitialize
 
 위치 데이터 원본 속성 지원과 같은 내부 리소스를 해제 하 여 초기화 되지 않은 상태로 개체입니다.
 
@@ -132,9 +132,9 @@ STDMETHOD(Uninitialize)(void);
 
 ### <a name="remarks"></a>설명
 
-참조 [idbinitialize:: Uninitialize](https://docs.microsoft.com/previous-versions/windows/desktop/ms719648(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [idbinitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="dwstatus"></a> Idbinitializeimpl:: M_dwstatus
+## <a name="dwstatus"></a> IDBInitializeImpl::m_dwStatus
 
 데이터 원본 플래그입니다.
 
@@ -162,7 +162,7 @@ enum DATASOURCE_FLAGS {
 |`DSF_PERSIST_DIRTY`|데이터 원본 개체 (즉, 경우 변경 내용이 있었는지) 지 속성을 요구 하는 경우 설정 합니다.|
 |`DSF_INITIALIZED`|데이터 원본이 초기화 하는 경우 설정 합니다.|
 
-## <a name="pcutlpropinfo"></a> Idbinitializeimpl:: M_pcutlpropinfo
+## <a name="pcutlpropinfo"></a> IDBInitializeImpl::m_pCUtlPropInfo
 
 DB 속성 정보에 대 한 구현 개체에 대 한 포인터입니다.
 

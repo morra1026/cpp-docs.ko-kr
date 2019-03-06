@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CWindow class, about CWindow class
 - windows [C++], ATL
 ms.assetid: b3b9cc8e-4287-486b-b080-38852bc2943a
-ms.openlocfilehash: 7446196e9eec4b9d9236d4ab55afd9fcf859254b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3a1843bfedc30e7d3b47c2916af08c8b53aaa965
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568660"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268866"
 ---
 # <a name="using-a-window"></a>창을 사용 하 여
 
@@ -19,9 +19,8 @@ ms.locfileid: "50568660"
 
 때문에 `CWindow` 에 두 데이터 멤버 (창 핸들 및 기본 크기) 코드에 오버 헤드가 적용 하지 않습니다. 또한 많은 `CWindow` 메서드 단순히 해당 Win32 API 함수를 래핑합니다. 사용 하 여 `CWindow`, HWND 멤버는 자동으로 Win32 함수에 전달 됩니다.
 
-사용 하는 것 외에도 `CWindow` 직접를 파생할 수도 있습니다를 클래스에 데이터 또는 코드를 추가할 수 있습니다. 세 가지 클래스를 파생 하는 자체 ATL `CWindow`: [CWindowImpl](../atl/implementing-a-window.md)를 [CDialogImpl](../atl/implementing-a-dialog-box.md), 및 [CContainedWindowT](../atl/using-contained-windows.md)합니다.
+사용 하는 것 외에도 `CWindow` 직접를 파생할 수도 있습니다를 클래스에 데이터 또는 코드를 추가할 수 있습니다. ATL 자체에서 세 가지 클래스를 파생 `CWindow`: [CWindowImpl](../atl/implementing-a-window.md)하십시오 [CDialogImpl](../atl/implementing-a-dialog-box.md), 및 [CContainedWindowT](../atl/using-contained-windows.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 클래스](../atl/atl-window-classes.md)
-

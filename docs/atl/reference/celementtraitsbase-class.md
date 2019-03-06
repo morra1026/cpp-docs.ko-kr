@@ -11,12 +11,12 @@ f1_keywords:
 helpviewer_keywords:
 - CElementTraitsBase class
 ms.assetid: 75284caf-347e-4355-a7d8-efc708dd514a
-ms.openlocfilehash: 769fa5abff223ad570847b8bf68378ce85df664e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 207207d26a2c43367a00b382f80761429159a7b4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509020"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263678"
 ---
 # <a name="celementtraitsbase-class"></a>CElementTraitsBase 클래스
 
@@ -128,6 +128,6 @@ static void RelocateElements(
 
 이 메서드를 호출 [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), 대부분의 데이터 형식에 대 한 충분 한 합니다. 해당 멤버에 대 한 포인터를 포함 하는 이동 하는 개체, 경우이 메서드를 재정의할 수 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

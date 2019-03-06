@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CMFCBaseToolBar [MFC], GetMinSize
 - CMFCBaseToolBar [MFC], OnAfterChangeParent
 ms.assetid: 5d79206d-55e4-46f8-b1b8-042e34d7f9da
-ms.openlocfilehash: 84756eb177fcec1981f3f2ed018d57eb27df9823
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7a6ccdaf3d78b9973505dd4e90ca76f671fce889
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523706"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265381"
 ---
 # <a name="cmfcbasetoolbar-class"></a>CMFCBaseToolBar 클래스
 
@@ -47,7 +47,7 @@ class CMFCBaseToolBar : public CPane
 |[CMFCBaseToolBar::GetMinSize](#getminsize)|도구 모음의 최소 크기를 반환합니다. (재정의 [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|
 |[CMFCBaseToolBar::OnAfterChangeParent](#onafterchangeparent)|창의 부모 변경 된 후 프레임 워크에서 호출 됩니다. (재정의 [CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#onafterchangeparent).)|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -103,7 +103,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 *pWndOldParent*<br/>
 [in] 이전 부모 창에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

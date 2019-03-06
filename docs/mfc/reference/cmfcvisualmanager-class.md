@@ -344,18 +344,18 @@ helpviewer_keywords:
 - CMFCVisualManager [MFC], SetMenuShadowDepth
 - CMFCVisualManager [MFC], SetShadowHighlightedImage
 ms.assetid: beed80f7-36a2-4d64-9f09-e807cfefc3fe
-ms.openlocfilehash: 000f5229c14699c80e2ce18e4125d0c2ac6e382b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 594e727a091cbb7b2999e540ae8da7ddec2a7a14
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653052"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294332"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager 클래스
 
-응용 프로그램의 모양을 전역 수준에서 변경하는 기능을 지원합니다. `CMFCVisualManager` 클래스는 일관된 스타일을 사용하여 응용 프로그램의 GUI 컨트롤을 그리는 명령을 제공하는 클래스와 함께 작동합니다. 이러한 다른 클래스를 비주얼 관리자라고 하며 `CMFCBaseVisualManager`에서 상속됩니다.
+애플리케이션의 모양을 전역 수준에서 변경하는 기능을 지원합니다. `CMFCVisualManager` 클래스는 일관된 스타일을 사용하여 응용 프로그램의 GUI 컨트롤을 그리는 명령을 제공하는 클래스와 함께 작동합니다. 이러한 다른 클래스를 비주얼 관리자라고 하며 `CMFCBaseVisualManager`에서 상속됩니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -538,7 +538,7 @@ class CMFCVisualManager : public CMFCBaseVisualManager
 |[CMFCVisualManager::OnUpdateSystemColors](#onupdatesystemcolors)|시스템 색 설정이 변경 되 면 프레임 워크에서 호출 됩니다.|
 |[CMFCVisualManager::RedrawAll](#redrawall)|응용 프로그램에서 모든 컨트롤 막대를 다시 그립니다.|
 |[CMFCVisualManager::RibbonCategoryColorToRGB](#ribboncategorycolortorgb)||
-|[Cmfcvisualmanager:: Setdefaultmanager](#setdefaultmanager)|기본 비주얼 관리자를 설정합니다.|
+|[CMFCVisualManager::SetDefaultManager](#setdefaultmanager)|기본 비주얼 관리자를 설정합니다.|
 |[CMFCVisualManager::SetEmbossDisabledImage](#setembossdisabledimage)|사용 하거나 사용 안 함된 도구 모음 이미지에 대 한 볼록된 모드를 사용 하지 않도록 설정 합니다.|
 |[CMFCVisualManager::SetFadeInactiveImage](#setfadeinactiveimage)|메뉴 또는 도구 모음에서 비활성 이미지에 대 한 조명 효과 사용할지 설정 합니다.|
 |[CMFCVisualManager::SetMenuFlatLook](#setmenuflatlook)|응용 프로그램 메뉴 단추 모양이 일반 여부를 나타내는 플래그를 설정 합니다.|
@@ -643,7 +643,7 @@ CMFCVisualManager(BOOL bTemporary = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *b 임시*<br/>
+[in] *bTemporary*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -940,7 +940,7 @@ virtual COLORREF GetMenuItemTextColor(
 
 [in] *pButton*<br/>
 [in] *bHighlighted*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -1107,7 +1107,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -1202,7 +1202,7 @@ virtual AFX_SMARTDOCK_THEME GetSmartDockingTheme();
 
 ### <a name="return-value"></a>반환 값
 
-다음 열거형된 값 중 하나를 반환 합니다: AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008 합니다.
+다음 열거형된 값 중 하나를 반환합니다. AFX_SDT_DEFAULT, AFX_SDT_VS2005, AFX_SDT_VS2008.
 
 ### <a name="remarks"></a>설명
 
@@ -1480,8 +1480,8 @@ virtual BOOL GetToolTipInfo(
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *매개 변수*<br/>
-[in] *n 형식*<br/>
+[in] *params*<br/>
+[in] *nType*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -1884,7 +1884,7 @@ virtual void OnDrawButtonSeparator(
 [in] *pDC*<br/>
 [in] *pButton*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 [in] *bHorz*<br/>
 
 ### <a name="remarks"></a>설명
@@ -1999,7 +1999,7 @@ virtual void OnDrawCaptionButton (
 *bMaximized*<br/>
 [in] 부모 창 최대화 되었는지 여부를 지정 하는 부울 매개 변수입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 캡션 단추를 사용할 수 있는지 여부를 지정 하는 부울 매개 변수입니다.
 
 *nImageID*<br/>
@@ -2028,7 +2028,7 @@ virtual void OnDrawCheckBox(
 [in] *rect*<br/>
 [in] *bHighlighted*<br/>
 [in] *bChecked*<br/>
-[in] *b 사용*<br/>
+[in] *bEnabled*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -2051,7 +2051,7 @@ virtual void OnDrawCheckBoxEx(
 [in] *nState*<br/>
 [in] *bHighlighted*<br/>
 [in] *bPressed*<br/>
-[in] *b 사용*<br/>
+[in] *bEnabled*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -2077,7 +2077,7 @@ virtual void OnDrawComboBorder(
 *rect*<br/>
 [in] 콤보 상자 단추 경계를 지정 하는 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 콤보 상자 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bIsDropped*<br/>
@@ -2115,7 +2115,7 @@ virtual void OnDrawComboDropButton(
 *rect*<br/>
 [in] 드롭 단추의 경계를 지정 하는 사각형입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 드롭 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bIsDropped*<br/>
@@ -2198,7 +2198,7 @@ virtual void OnDrawEditBorder(
 *rect*<br/>
 [in] 경계를 지정 하는 사각형을 `CMFCToolBarEditBoxButton` 개체입니다.
 
-*사용 안 함*<br/>
+*bDisabled*<br/>
 [in] 단추를 사용할 수 있는지 여부를 나타내는 부울 매개 변수입니다.
 
 *bIsHighlighted*<br/>
@@ -2409,7 +2409,7 @@ virtual void OnDrawMenuItemButton(
 [in] *pButton*<br/>
 [in] *rectButton*<br/>
 [in] *bHighlight*<br/>
-[in] *사용 안 함*<br/>
+[in] *bDisabled*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -3022,7 +3022,7 @@ virtual void OnDrawRibbonColorPaletteBox(
 [in] *pDC*<br/>
 [in] *pColorButton*<br/>
 [in] *pIcon*<br/>
-[in] *색*<br/>
+[in] *color*<br/>
 [in] *rect*<br/>
 [in] *bDrawTopEdge*<br/>
 [in] *bDrawBottomEdge*<br/>
@@ -3610,7 +3610,7 @@ virtual void OnDrawShowAllMenuItems(
 
 [in] *pDC*<br/>
 [in] *rect*<br/>
-[in] *상태*<br/>
+[in] *state*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -3919,7 +3919,7 @@ virtual void OnDrawTabContent(
 [in] 탭 내부 경계를 지정 하는 사각형입니다.
 
 *iTab*<br/>
-[in] 탭의 0부터 시작 하는 인덱스입니다. 프레임 워크는이 탭의 내부를 그립니다.
+[in] 탭의 0부터 시작하는 인덱스입니다. 프레임 워크는이 탭의 내부를 그립니다.
 
 *bIsActive*<br/>
 [in] 탭이 활성화 되어 있는지 여부를 나타내는 부울 매개 변수입니다.
@@ -4982,13 +4982,13 @@ virtual COLORREF RibbonCategoryColorToRGB(AFX_RibbonCategoryColor color);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *색*<br/>
+[in] *color*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-##  <a name="setdefaultmanager"></a>  Cmfcvisualmanager:: Setdefaultmanager
+##  <a name="setdefaultmanager"></a>  CMFCVisualManager::SetDefaultManager
 
 기본 관리자를 설정합니다.
 
@@ -5092,10 +5092,9 @@ void SetShadowHighlightedImage(BOOL bShadow = TRUE);
 
 기본적으로이 기능을 사용 하는 사용할 수 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCVisualManager::GetInstance](#getinstance)<br/>
 [시각화 관리자](../../mfc/visualization-manager.md)
-

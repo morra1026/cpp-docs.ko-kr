@@ -232,12 +232,12 @@ helpviewer_keywords:
 - CMFCRibbonBaseElement [MFC], OnProcessKey
 - CMFCRibbonBaseElement [MFC], OnSetFocus
 ms.assetid: 419ea91b-5062-44cc-b0a3-f87d29566f62
-ms.openlocfilehash: dee5d8c57bfff99e1b558f09c8df53c73e844f3c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4fe7c84981d116d5915013cb466c3e91119f20e1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50514363"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289977"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement 클래스
 
@@ -265,18 +265,18 @@ class CMFCRibbonBaseElement : public CObject
 |[CMFCRibbonBaseElement::AddToListBox](#addtolistbox)|지정 된 리본 명령 목록 상자에 리본 요소를 추가합니다.|
 |[CMFCRibbonBaseElement::CanBeAddedToQuickAccessToolBar](#canbeaddedtoquickaccesstoolbar)|빠른 실행 도구 모음 리본 요소를 추가할 수 있는지 여부를 나타냅니다.|
 |[CMFCRibbonBaseElement::CanBeCompacted](#canbecompacted)|리본 요소의 크기 compact 수 있는지 여부를 나타냅니다.|
-|[Cmfcribbonbaseelement:: Canbestretched](#canbestretched)|리본 요소의 높이 리본 행의 높이를 세로 방향으로 늘어날 수 있는지 여부를 나타냅니다.|
+|[CMFCRibbonBaseElement::CanBeStretched](#canbestretched)|리본 요소의 높이 리본 행의 높이를 세로 방향으로 늘어날 수 있는지 여부를 나타냅니다.|
 |[CMFCRibbonBaseElement::CanBeStretchedHorizontally](#canbestretchedhorizontally)|리본 요소의 너비를 변경할 수 있는지 여부를 나타냅니다.|
-|[Cmfcribbonbaseelement:: Cleanupsizes](#cleanupsizes)|리본 요소에 대 한 차원 설정을 정리합니다.|
-|[Cmfcribbonbaseelement:: Closepopupmenu](#closepopupmenu)|리본 요소에 대 한 팝업 메뉴를 닫습니다.|
+|[CMFCRibbonBaseElement::CleanUpSizes](#cleanupsizes)|리본 요소에 대 한 차원 설정을 정리합니다.|
+|[CMFCRibbonBaseElement::ClosePopupMenu](#closepopupmenu)|리본 요소에 대 한 팝업 메뉴를 닫습니다.|
 |[CMFCRibbonBaseElement::CopyFrom](#copyfrom)|지정된 된 상태의 복사 `CMFCRibbonBaseElement` 현재 개체입니다.|
 |[CMFCRibbonBaseElement::DestroyCtrl](#destroyctrl)|리본 요소를 제거합니다.|
-|[Cmfcribbonbaseelement:: Drawimage](#drawimage)|리본 요소에 대 한 이미지를 그립니다.|
+|[CMFCRibbonBaseElement::DrawImage](#drawimage)|리본 요소에 대 한 이미지를 그립니다.|
 |[CMFCRibbonBaseElement::Find](#find)|현재 개체를 가리키는 경우에 리본 요소에 지정된 된 포인터를 반환 합니다.|
 |[CMFCRibbonBaseElement::FindByData](#findbydata)|지정 된 데이터를 포함 하는 경우에 리본 요소에 대 한 포인터를 검색 합니다.|
 |[CMFCRibbonBaseElement::FindByID](#findbyid)|해당 요소는 지정한 명령 ID로 식별 되 면 리본 요소에 대 한 포인터를 검색 합니다.|
 |[CMFCRibbonBaseElement::FindByOriginal](#findbyoriginal)|해당 원래 리본 요소에 지정 된 리본 요소와 일치 하는 경우에 리본 요소에 대 한 포인터를 검색 합니다.|
-|[Cmfcribbonbaseelement:: Getcompactsize](#getcompactsize)|리본 요소의 압축 크기를 반환합니다.|
+|[CMFCRibbonBaseElement::GetCompactSize](#getcompactsize)|리본 요소의 압축 크기를 반환합니다.|
 |[CMFCRibbonBaseElement::GetData](#getdata)|리본 요소에 연결 된 사용자 정의 데이터를 검색 합니다.|
 |[CMFCRibbonBaseElement::GetDescription](#getdescription)|리본 요소의 설명을 반환합니다.|
 |[CMFCRibbonBaseElement::GetDroppedDown](#getdroppeddown)|해당 팝업 메뉴 삭제 되 면 리본 요소에 대 한 포인터를 검색 합니다.|
@@ -284,8 +284,8 @@ class CMFCRibbonBaseElement : public CObject
 |[CMFCRibbonBaseElement::GetElementsByID](#getelementsbyid)|현재 리본 요소에 지정 된 명령 id입니다. 포함 된 경우 지정된 된 배열에 현재 리본 요소를 추가|
 |[CMFCRibbonBaseElement::GetHighlighted](#gethighlighted)|강조 표시 하는 경우에 리본 요소에 대 한 포인터를 검색 합니다.|
 |[CMFCRibbonBaseElement::GetID](#getid)|리본 요소의 명령 ID를 반환합니다.|
-|[Cmfcribbonbaseelement:: Getimagesize](#getimagesize)|리본 요소의 이미지 크기를 반환합니다.|
-|[Cmfcribbonbaseelement:: Getintermediatesize](#getintermediatesize)|중간 상태인 리본 요소의 크기를 반환합니다.|
+|[CMFCRibbonBaseElement::GetImageSize](#getimagesize)|리본 요소의 이미지 크기를 반환합니다.|
+|[CMFCRibbonBaseElement::GetIntermediateSize](#getintermediatesize)|중간 상태인 리본 요소의 크기를 반환합니다.|
 |[CMFCRibbonBaseElement::GetKeys](#getkeys)|리본 요소에 연결 된 keytip을 반환 합니다.|
 |[CMFCRibbonBaseElement::GetKeyTipRect](#getkeytiprect)|리본 요소에 대 한 keytip 경계 사각형을 검색합니다.|
 |[CMFCRibbonBaseElement::GetKeyTipSize](#getkeytipsize)|Keytip 텍스트의 크기를 검색합니다.|
@@ -300,19 +300,19 @@ class CMFCRibbonBaseElement : public CObject
 |[CMFCRibbonBaseElement::GetPressed](#getpressed)|사용자가 현재 누를 경우에 리본 요소에 대 한 포인터를 검색 합니다.|
 |[CMFCRibbonBaseElement::GetQuickAccessToolBarID](#getquickaccesstoolbarid)|빠른 실행 도구 모음에 있는 경우에 리본 요소의 명령 ID를 검색 합니다.|
 |[CMFCRibbonBaseElement::GetRect](#getrect)|리본 요소의 경계 사각형을 반환 합니다.|
-|[Cmfcribbonbaseelement:: Getregularsize](#getregularsize)|리본 요소의 보통 크기를 반환합니다.|
+|[CMFCRibbonBaseElement::GetRegularSize](#getregularsize)|리본 요소의 보통 크기를 반환합니다.|
 |[CMFCRibbonBaseElement::GetSize](#getsize)|리본 요소의 현재 크기를 반환합니다.|
 |[CMFCRibbonBaseElement::GetText](#gettext)|리본 요소에 연결 된 텍스트를 반환 합니다.|
-|[Cmfcribbonbaseelement:: Gettooltiptext](#gettooltiptext)|리본 요소의 도구 설명 텍스트를 반환합니다.|
+|[CMFCRibbonBaseElement::GetToolTipText](#gettooltiptext)|리본 요소의 도구 설명 텍스트를 반환합니다.|
 |[CMFCRibbonBaseElement::GetTopLevelRibbonBar](#gettoplevelribbonbar)|리본 요소에 대 한 상위 수준 리본 표시줄을 검색합니다.|
-|[Cmfcribbonbaseelement:: Hascompactmode](#hascompactmode)|리본 요소에 압축 모드가 있는지 여부를 지정합니다.|
+|[CMFCRibbonBaseElement::HasCompactMode](#hascompactmode)|리본 요소에 압축 모드가 있는지 여부를 지정합니다.|
 |[CMFCRibbonBaseElement::HasFocus](#hasfocus)|부모 요소에 키보드 포커스가 있는지 여부를 나타냅니다.|
-|[Cmfcribbonbaseelement:: Hasintermediatemode](#hasintermediatemode)|리본 요소에 중간 모드가 있는지 여부를 지정합니다.|
-|[Cmfcribbonbaseelement:: Haslargemode](#haslargemode)|리본 요소에 큰 모드가 있는지 여부를 지정 합니다.|
-|[Cmfcribbonbaseelement:: Hasmenu](#hasmenu)|리본 요소를 메뉴에 있는지 여부를 나타냅니다.|
+|[CMFCRibbonBaseElement::HasIntermediateMode](#hasintermediatemode)|리본 요소에 중간 모드가 있는지 여부를 지정합니다.|
+|[CMFCRibbonBaseElement::HasLargeMode](#haslargemode)|리본 요소에 큰 모드가 있는지 여부를 지정 합니다.|
+|[CMFCRibbonBaseElement::HasMenu](#hasmenu)|리본 요소를 메뉴에 있는지 여부를 나타냅니다.|
 |[CMFCRibbonBaseElement::HitTest](#hittest)|지정된 된 지점에 있는 경우에 리본 요소에 대 한 포인터를 검색 합니다.|
 |[CMFCRibbonBaseElement::IsAlignByColumn](#isalignbycolumn)|리본 요소 다른 리본 요소를 사용 하 여 세로로 정렬 되는지 여부를 나타냅니다.|
-|[Cmfcribbonbaseelement:: Isalwayslargeimage](#isalwayslargeimage)|리본 요소의 이미지 크기는 항상 큰 여부를 나타냅니다.|
+|[CMFCRibbonBaseElement::IsAlwaysLargeImage](#isalwayslargeimage)|리본 요소의 이미지 크기는 항상 큰 여부를 나타냅니다.|
 |[CMFCRibbonBaseElement::IsAutoRepeatMode](#isautorepeatmode)|리본 요소 자동 반복 모드 인지 여부를 나타냅니다.|
 |[CMFCRibbonBaseElement::IsChecked](#ischecked)|리본 요소를 검사할지 여부를 지정 합니다.|
 |[CMFCRibbonBaseElement::IsCompactMode](#iscompactmode)|리본 요소 압축 모드가 있는지 여부를 지정 합니다.|
@@ -339,11 +339,11 @@ class CMFCRibbonBaseElement : public CObject
 |[CMFCRibbonBaseElement::OnAddToQAToolbar](#onaddtoqatoolbar)|지정 된 빠른 실행 도구 모음 리본 요소를 추가합니다.|
 |[CMFCRibbonBaseElement::OnAfterChangeRect](#onafterchangerect)|리본 요소에 대 한 도구 설명을 업데이트합니다.|
 |[CMFCRibbonBaseElement::OnAutoRepeat](#onautorepeat)|지속적인된 사용자 입력에 대 한 응답으로 리본 요소를 업데이트합니다.|
-|[Cmfcribbonbaseelement:: Oncalctextsize](#oncalctextsize)|리본 요소에 대 한 텍스트의 크기를 계산 합니다.|
+|[CMFCRibbonBaseElement::OnCalcTextSize](#oncalctextsize)|리본 요소에 대 한 텍스트의 크기를 계산 합니다.|
 |[CMFCRibbonBaseElement::OnChangeMenuHighlight](#onchangemenuhighlight)|메뉴에 있는 리본 요소에 대 한 강조 표시를 변경 하는 경우 프레임 워크에서 호출 됩니다.|
-|[Cmfcribbonbaseelement:: Ondraw](#ondraw)|리본 요소를 그리기 위해 프레임워크에서 호출됩니다.|
+|[CMFCRibbonBaseElement::OnDraw](#ondraw)|리본 요소를 그리기 위해 프레임워크에서 호출됩니다.|
 |[CMFCRibbonBaseElement::OnDrawKeyTip](#ondrawkeytip)|리본 요소에 대 한 keytip을 그리기 위해 프레임 워크에서 호출 됩니다.|
-|[Cmfcribbonbaseelement:: Ondrawmenuimage](#ondrawmenuimage)|리본 요소에 대 한 메뉴 이미지를 그릴 때 프레임 워크에서 호출 됩니다.|
+|[CMFCRibbonBaseElement::OnDrawMenuImage](#ondrawmenuimage)|리본 요소에 대 한 메뉴 이미지를 그릴 때 프레임 워크에서 호출 됩니다.|
 |[CMFCRibbonBaseElement::OnDrawOnList](#ondrawonlist)|명령 목록 상자에서 리본 요소를 그리기 위해 프레임 워크에서 호출 됩니다.|
 |[CMFCRibbonBaseElement::OnKey](#onkey)|사용자는 keytip 리본 요소에 포커스가 때 프레임 워크에서 호출 됩니다.|
 |[CMFCRibbonBaseElement::OnMenuKey](#onmenukey)||
@@ -352,20 +352,20 @@ class CMFCRibbonBaseElement : public CObject
 |[CMFCRibbonBaseElement::OnShowPopupMenu](#onshowpopupmenu)|리본 요소 팝업 메뉴를 표시할 때 프레임 워크에서 호출 합니다.|
 |[CMFCRibbonBaseElement::PostMenuCommand](#postmenucommand)||
 |[CMFCRibbonBaseElement::Redraw](#redraw)|리본 요소에 대 한 표시를 업데이트합니다.|
-|[Cmfcribbonbaseelement:: Setaccdata](#setaccdata)|리본 요소에 대한 내게 필요한 옵션 데이터를 설정합니다.|
+|[CMFCRibbonBaseElement::SetACCData](#setaccdata)|리본 요소에 대한 내게 필요한 옵션 데이터를 설정합니다.|
 |[CMFCRibbonBaseElement::SetCompactMode](#setcompactmode)|리본 요소에 대 한 표시 크기를 설정합니다.|
 |[CMFCRibbonBaseElement::SetData](#setdata)|리본 요소를 사용 하 여 데이터 항목을 연결합니다.|
 |[CMFCRibbonBaseElement::SetDefaultMenuLook](#setdefaultmenulook)||
-|[Cmfcribbonbaseelement:: Setdescription](#setdescription)|리본 요소에 대한 설명을 설정합니다.|
+|[CMFCRibbonBaseElement::SetDescription](#setdescription)|리본 요소에 대한 설명을 설정합니다.|
 |[CMFCRibbonBaseElement::SetID](#setid)|리본 요소의 명령 ID를 설정합니다.|
 |[CMFCRibbonBaseElement::SetInitialMode](#setinitialmode)|리본 요소에 대 한 초기 표시 크기를 설정합니다.|
 |[CMFCRibbonBaseElement::SetKeys](#setkeys)|리본 요소에 대 한 keytip을 설정합니다.|
 |[CMFCRibbonBaseElement::SetOriginal](#setoriginal)|리본 요소에 대 한 원래 리본 요소를 설정합니다.|
-|[Cmfcribbonbaseelement:: Setparentcategory](#setparentcategory)|리본 요소에 대 한 부모 범주를 설정합니다.|
+|[CMFCRibbonBaseElement::SetParentCategory](#setparentcategory)|리본 요소에 대 한 부모 범주를 설정합니다.|
 |[CMFCRibbonBaseElement::SetParentMenu](#setparentmenu)|리본 요소에 대 한 메뉴 컨테이너 부모를 설정합니다.|
 |[CMFCRibbonBaseElement::SetParentRibbonBar](#setparentribbonbar)|리본 요소에 대 한 부모 리본 표시줄을 설정합니다.|
 |[CMFCRibbonBaseElement::SetRect](#setrect)|리본 요소에 대 한 사각형을 표시 그 차원 용을 설정 합니다.|
-|[Cmfcribbonbaseelement:: Settext](#settext)|리본 요소의 텍스트를 설정합니다.|
+|[CMFCRibbonBaseElement::SetText](#settext)|리본 요소의 텍스트를 설정합니다.|
 |[CMFCRibbonBaseElement::SetTextAlwaysOnRight](#settextalwaysonright)|오른쪽에 표시할 리본 요소에 대 한 텍스트를 설정 합니다.|
 |[CMFCRibbonBaseElement::SetToolTipText](#settooltiptext)|리본 요소에 대 한 도구 설명 텍스트를 설정합니다.|
 |[CMFCRibbonBaseElement::SetVisible](#setvisible)|리본 요소의 표시 여부 상태를 설정합니다.|
@@ -373,7 +373,7 @@ class CMFCRibbonBaseElement : public CObject
 |[CMFCRibbonBaseElement::StretchToWholeRow](#stretchtowholerow)|지정 된 행 높이를 리본 요소의 표시 높이 변경합니다.|
 |[CMFCRibbonBaseElement::UpdateTooltipInfo](#updatetooltipinfo)|리본 요소에 대 한 명령은 리소스를 사용 하 여 도구 설명 텍스트를 업데이트 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -483,7 +483,7 @@ virtual BOOL CanBeCompacted() const;
 
 리본 요소의 크기는 compact, 중급, 또는 대형 수 있습니다.
 
-##  <a name="canbestretched"></a>  Cmfcribbonbaseelement:: Canbestretched
+##  <a name="canbestretched"></a>  CMFCRibbonBaseElement::CanBeStretched
 
 리본 요소의 높이 리본 행의 높이를 세로 방향으로 늘어날 수 있는지 여부를 나타냅니다.
 
@@ -515,7 +515,7 @@ virtual BOOL CanBeStretchedHorizontally();
 
 기본적으로이 메서드는 항상 FALSE를 반환합니다. 리본 요소의 너비를 변경할 수 있는지 여부를 나타내기 위해이 메서드를 재정의 합니다.
 
-##  <a name="cleanupsizes"></a>  Cmfcribbonbaseelement:: Cleanupsizes
+##  <a name="cleanupsizes"></a>  CMFCRibbonBaseElement::CleanUpSizes
 
 리본 요소에 대 한 차원 설정을 정리합니다.
 
@@ -527,7 +527,7 @@ virtual void CleanUpSizes();
 
 기본적으로이 메서드는 없습니다. 리본 요소에 대 한 차원 설정을 다시 설정 하는 파생된 클래스에서이 메서드를 재정의 합니다.
 
-##  <a name="closepopupmenu"></a>  Cmfcribbonbaseelement:: Closepopupmenu
+##  <a name="closepopupmenu"></a>  CMFCRibbonBaseElement::ClosePopupMenu
 
 리본 요소에 대 한 팝업 메뉴를 닫습니다.
 
@@ -564,7 +564,7 @@ virtual void DestroyCtrl();
 
 기본적으로이 메서드는 없습니다. 리본 요소를 삭제 하려면 파생된 클래스에서이 메서드를 재정의 합니다.
 
-##  <a name="drawimage"></a>  Cmfcribbonbaseelement:: Drawimage
+##  <a name="drawimage"></a>  CMFCRibbonBaseElement::DrawImage
 
 리본 요소에 대 한 이미지를 그립니다.
 
@@ -675,7 +675,7 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 
 다른 컨테이너에 복사 되는 리본 요소에는 원래 리본 요소에 대 한 포인터를 유지 합니다.
 
-##  <a name="getcompactsize"></a>  Cmfcribbonbaseelement:: Getcompactsize
+##  <a name="getcompactsize"></a>  CMFCRibbonBaseElement::GetCompactSize
 
 리본 요소의 압축 크기를 반환합니다.
 
@@ -795,7 +795,7 @@ UINT GetID() const;
 
 리본 요소의 명령 ID입니다.
 
-##  <a name="getimagesize"></a>  Cmfcribbonbaseelement:: Getimagesize
+##  <a name="getimagesize"></a>  CMFCRibbonBaseElement::GetImageSize
 
 리본 요소의 이미지 크기를 반환합니다.
 
@@ -807,7 +807,7 @@ virtual CSize GetImageSize(RibbonImageType R) const;
 
 리본 요소의 이미지 크기입니다.
 
-##  <a name="getintermediatesize"></a>  Cmfcribbonbaseelement:: Getintermediatesize
+##  <a name="getintermediatesize"></a>  CMFCRibbonBaseElement::GetIntermediateSize
 
 중간 상태인 리본 요소의 크기를 반환합니다.
 
@@ -1049,7 +1049,7 @@ CRect GetRect() const;
 
 리본 요소의 경계 사각형입니다. 리본 컨트롤 부모의 좌표에 사각형의 위치가입니다.
 
-##  <a name="getregularsize"></a>  Cmfcribbonbaseelement:: Getregularsize
+##  <a name="getregularsize"></a>  CMFCRibbonBaseElement::GetRegularSize
 
 리본 요소의 보통 크기를 반환합니다.
 
@@ -1100,7 +1100,7 @@ LPCTSTR GetText() const;
 
 리본 요소에 연결 된 텍스트입니다.
 
-##  <a name="gettooltiptext"></a>  Cmfcribbonbaseelement:: Gettooltiptext
+##  <a name="gettooltiptext"></a>  CMFCRibbonBaseElement::GetToolTipText
 
 리본 요소의 도구 설명 텍스트를 반환합니다.
 
@@ -1126,7 +1126,7 @@ CMFCRibbonBar* GetTopLevelRibbonBar() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="hascompactmode"></a>  Cmfcribbonbaseelement:: Hascompactmode
+##  <a name="hascompactmode"></a>  CMFCRibbonBaseElement::HasCompactMode
 
 리본 요소에 압축 모드가 있는지 여부를 지정합니다.
 
@@ -1143,7 +1143,7 @@ virtual BOOL HasCompactMode() const;
 > [!NOTE]
 >  축소 모드에서는 요소에 작은 이미지가 표시 됩니다.
 
-##  <a name="hasintermediatemode"></a>  Cmfcribbonbaseelement:: Hasintermediatemode
+##  <a name="hasintermediatemode"></a>  CMFCRibbonBaseElement::HasIntermediateMode
 
 리본 요소에 중간 모드가 있는지 여부를 지정합니다.
 
@@ -1157,7 +1157,7 @@ virtual BOOL HasIntermediateMode() const;
 
 ### <a name="remarks"></a>설명
 
-##  <a name="haslargemode"></a>  Cmfcribbonbaseelement:: Haslargemode
+##  <a name="haslargemode"></a>  CMFCRibbonBaseElement::HasLargeMode
 
 리본 요소에 큰 모드가 있는지 여부를 결정합니다.
 
@@ -1173,7 +1173,7 @@ virtual BOOL HasLargeMode() const;
 
 큰 모드에서 요소는 부모 패널의 전체 높이 사용할 수 있습니다.
 
-##  <a name="hasmenu"></a>  Cmfcribbonbaseelement:: Hasmenu
+##  <a name="hasmenu"></a>  CMFCRibbonBaseElement::HasMenu
 
 리본 요소를 메뉴에 있는지 여부를 나타냅니다.
 
@@ -1199,7 +1199,7 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1226,7 +1226,7 @@ virtual BOOL IsAlignByColumn() const;
 
 기본적으로이 메서드는 항상 TRUE를 반환 합니다. 기타 리본 요소를 사용 하 여 파생된 리본 요소 세로로 정렬 되는지 여부를 나타내기 위해 파생된 클래스에서이 메서드를 재정의 합니다.
 
-##  <a name="isalwayslargeimage"></a>  Cmfcribbonbaseelement:: Isalwayslargeimage
+##  <a name="isalwayslargeimage"></a>  CMFCRibbonBaseElement::IsAlwaysLargeImage
 
 리본 요소의 이미지 크기는 항상 큰 여부를 나타냅니다.
 
@@ -1629,7 +1629,7 @@ virtual BOOL OnAutoRepeat();
 
 기본적으로이 메서드는 항상 FALSE를 반환 합니다. 지속적인된 사용자 입력을 처리 하려면이 메서드를 재정의 합니다.
 
-##  <a name="oncalctextsize"></a>  Cmfcribbonbaseelement:: Oncalctextsize
+##  <a name="oncalctextsize"></a>  CMFCRibbonBaseElement::OnCalcTextSize
 
 리본 요소에 대 한 텍스트의 크기를 계산 합니다.
 
@@ -1667,7 +1667,7 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 
 기본적으로이 메서드는 없습니다. 강조 표시를 변경 하는 경우 메뉴에 있는 리본 요소를 업데이트 하려면이 메서드를 재정의 합니다.
 
-##  <a name="ondraw"></a>  Cmfcribbonbaseelement:: Ondraw
+##  <a name="ondraw"></a>  CMFCRibbonBaseElement::OnDraw
 
 리본 요소를 그리기 위해 프레임워크에서 호출됩니다.
 
@@ -1708,7 +1708,7 @@ virtual void OnDrawKeyTip(
 
 ### <a name="remarks"></a>설명
 
-##  <a name="ondrawmenuimage"></a>  Cmfcribbonbaseelement:: Ondrawmenuimage
+##  <a name="ondrawmenuimage"></a>  CMFCRibbonBaseElement::OnDrawMenuImage
 
 리본 요소에 대 한 메뉴 이미지를 그릴 때 프레임 워크에서 호출 됩니다.
 
@@ -1820,7 +1820,7 @@ virtual BOOL OnProcessKey(UINT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 [in] 이 매개 변수 사용 되지 않습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1918,7 +1918,7 @@ virtual void Redraw();
 
 이 메서드를 호출 하 여 리본 요소에 대 한 표시 사각형을 다시 그리면 [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) RDW_INVALIDATE, RDW_ERASE, 및 RDW_UPDATENOW 플래그를 사용 하 여 설정 합니다.
 
-##  <a name="setaccdata"></a>  Cmfcribbonbaseelement:: Setaccdata
+##  <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData
 
 리본 요소에 대한 내게 필요한 옵션 데이터를 설정합니다.
 
@@ -1963,10 +1963,10 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 
 |*bCompactMode*|현재 리본 요소 크기|새 리본 요소 크기|
 |--------------------|---------------------------------|-----------------------------|
-|true|Compact|변경 되지 않았습니다.|
-|true|중간|가능한 경우 압축 합니다.|
-|true|큰|가능 하다 면 중간입니다.|
-|false|Compact|중간 이것이 가능 합니다. 그렇지 않은 경우 큰 합니다.|
+|TRUE|Compact|변경 되지 않았습니다.|
+|TRUE|중간|가능한 경우 압축 합니다.|
+|TRUE|큰|가능 하다 면 중간입니다.|
+|FALSE|Compact|중간 이것이 가능 합니다. 그렇지 않은 경우 큰 합니다.|
 
 ##  <a name="setdata"></a>  CMFCRibbonBaseElement::SetData
 
@@ -1996,7 +1996,7 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 
 ### <a name="remarks"></a>설명
 
-##  <a name="setdescription"></a>  Cmfcribbonbaseelement:: Setdescription
+##  <a name="setdescription"></a>  CMFCRibbonBaseElement::SetDescription
 
 리본 요소에 대한 설명을 설정합니다.
 
@@ -2078,7 +2078,7 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 
 다른 컨테이너에 복사 되는 리본 요소에는 원래 리본 요소에 대 한 포인터를 유지 합니다.
 
-##  <a name="setparentcategory"></a>  Cmfcribbonbaseelement:: Setparentcategory
+##  <a name="setparentcategory"></a>  CMFCRibbonBaseElement::SetParentCategory
 
 리본 요소에 대 한 부모 범주를 설정합니다.
 
@@ -2140,7 +2140,7 @@ void SetRect(CRect rect);
 
 ### <a name="remarks"></a>설명
 
-##  <a name="settext"></a>  Cmfcribbonbaseelement:: Settext
+##  <a name="settext"></a>  CMFCRibbonBaseElement::SetText
 
 텍스트 및 리본 요소에 대 한 keytip을 설정합니다.
 
@@ -2273,7 +2273,7 @@ virtual BOOL HasFocus() const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

@@ -16,16 +16,17 @@ f1_keywords:
 helpviewer_keywords:
 - join class
 ms.assetid: d2217119-70a1-40b6-809f-c1c13a571c3f
-ms.openlocfilehash: 23fc005a0c679576507c3a39ae37ce6c4545036b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d04ef90750c609d77fc8bf963bb996a90444f079
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668258"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281592"
 ---
 # <a name="join-class"></a>join 클래스
 
-`join` 메시징 블록은 각 소스에서 `T` 형식의 메시지를 결합하는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
+
+  `join` 메시징 블록은 각 소스에서 `T` 형식의 메시지를 결합하는 순서가 지정된 단일 대상 다중 소스 `propagator_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,7 +54,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |[join](#ctor)|오버로드됨. `join` 메시징 블록을 생성합니다.|
 |[~ join 소멸자](#dtor)|제거 된 `join` 블록입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -70,7 +71,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 
 자세한 내용은 [비동기 메시지 블록](../../../parallel/concrt/asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -126,7 +127,7 @@ virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 
 비슷합니다 `accept`를 호출 하 여 항상 선행 `reserve`합니다.
 
-##  <a name="ctor"></a> 조인
+##  <a name="ctor"></a> join
 
 `join` 메시징 블록을 생성합니다.
 
@@ -162,7 +163,7 @@ join(
 *_NumInputs*<br/>
 이 수가 입력 `join` 블록 수입니다.
 
-*필터 (_f)*<br/>
+*_Filter*<br/>
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
@@ -177,7 +178,7 @@ join(
 
 형식 `filter_method` 서명 사용 하 여 함수는 `bool (T const &)` 이 호출 되는 `join` 메시징 블록에 제공된 된 메시지를 수락 해야 하는지 여부를 결정 합니다.
 
-##  <a name="dtor"></a> ~ 조인
+##  <a name="dtor"></a> ~join
 
 제거 된 `join` 블록입니다.
 
@@ -206,7 +207,8 @@ message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -265,7 +267,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 virtual void resume_propagation();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [choice 클래스](choice-class.md)<br/>

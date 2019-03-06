@@ -6,12 +6,12 @@ helpviewer_keywords:
 - troubleshooting isolated applications
 - troubleshooting Visual C++
 ms.assetid: 3257257a-1f0b-4ede-8564-9277a7113a35
-ms.openlocfilehash: 58d8453cc50c28527c1f777db1b47ea23299d38f
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 74c57ee8e79da039796f28b9517e1ef41007cef0
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693947"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413734"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 문제 해결
 
@@ -100,7 +100,7 @@ Side-by-side-어셈블리를 사용할 수도 [게시자 구성 파일](/windows
 
 로더에서 종속 어셈블리를 검색 하는 방법에 대 한 자세한 내용은 참조 하세요. [어셈블리 검색 시퀀스](/windows/desktop/SbsCs/assembly-searching-sequence)합니다. 로더에서 종속 어셈블리를 전용 어셈블리로 찾지 못하면 로드에 실패하고 "시스템이 지정된 프로그램을 실행할 수 없습니다."라는 메시지가 표시됩니다. 이 오류를 해결하려면 종속 어셈블리 및 해당 어셈블리의 일부인 DLL이 전용 또는 공유 어셈블리로 컴퓨터에 설치되어 있는지 확인하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [격리된 응용 프로그램 및 side-by-side 어셈블리 개념](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)<br/>
 [C/C++ 격리된 응용 프로그램 및 side-by-side 어셈블리 빌드](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CAnimationRect [MFC], m_szInitial
 - CAnimationRect [MFC], m_topValue
 ms.assetid: 0294156d-241e-4a57-92b2-31234fe557d6
-ms.openlocfilehash: 4e782a9325360b69e33dfaf6a3b0649d9368b32b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 84c4cf92894a9ece2021417445c9d7ab94ee6bdf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540181"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259492"
 ---
 # <a name="canimationrect-class"></a>CAnimationRect 클래스
 
@@ -76,7 +76,7 @@ class CAnimationRect : public CAnimationBaseObject;
 |[CAnimationRect::GetValue](#getvalue)|현재 값을 반환합니다.|
 |[CAnimationRect::SetDefaultValue](#setdefaultvalue)|기본값을 설정합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -87,7 +87,7 @@ class CAnimationRect : public CAnimationBaseObject;
 |이름|설명|
 |----------|-----------------|
 |[RECT CAnimationRect::operator](#operator_rect)|사각형을 CAnimationRect 변환|
-|[CAnimationRect::operator =](#operator_eq)|CAnimationRect에 영역을 할당합니다.|
+|[CAnimationRect::operator=](#operator_eq)|CAnimationRect에 영역을 할당합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -109,7 +109,7 @@ class CAnimationRect : public CAnimationBaseObject;
 
 CAnimationRect 클래스는 4 개의 CAnimationVariable 개체를 캡슐화 하 고 사각형 응용 프로그램에 나타낼 수 있습니다. 응용 프로그램에서이 클래스를 사용 하려면 방금이 클래스의 개체를 인스턴스화할 CAnimationController::AddAnimationObject를 사용 하 여 애니메이션 컨트롤러를 추가 및 왼쪽, 오른쪽 위쪽 및 아래쪽 좌표에 적용할 각 전환에 대 한 AddTransition 호출 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -195,7 +195,7 @@ CAnimationRect(
 *dwUserData*<br/>
 사용자 정의 데이터를 지정합니다.
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 왼쪽 위 모퉁이의 좌표입니다.
 
 *sz*<br/>
@@ -385,7 +385,7 @@ CSize m_szInitial;
 CAnimationVariable m_topValue;
 ```
 
-##  <a name="operator_rect"></a>  RECT CAnimationRect::operator
+##  <a name="operator_rect"></a>  CAnimationRect::operator RECT
 
 사각형을 CAnimationRect 변환
 
@@ -401,7 +401,7 @@ operator RECT();
 
 이 함수는 GetValue 내부적으로 호출합니다. Getvalue가 어떤 이유로 실패 하는 경우 반환 되는 RECT 모든 사각형 좌표에 대 한 기본 값이 포함 됩니다.
 
-##  <a name="operator_eq"></a>  CAnimationRect::operator =
+##  <a name="operator_eq"></a>  CAnimationRect::operator=
 
 CAnimationRect에 영역을 할당합니다.
 
@@ -435,6 +435,6 @@ void SetDefaultValue(const CRect& rect);
 
 이 함수를 사용 하 여 애니메이션 개체에 기본값을 설정 합니다. 이 메서드는 사각형의 경계에 기본값을 할당 합니다. 이 또한 만들지 않은 경우 기본 COM 개체를 다시 합니다. 이 애니메이션 개체 (ValueChanged 또는 IntegerValueChanged) 이벤트를 구독 하는 경우 이러한 이벤트를 다시 사용 하도록 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

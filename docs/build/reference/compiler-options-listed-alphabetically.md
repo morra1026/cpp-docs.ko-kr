@@ -3,12 +3,12 @@ title: 컴파일러 옵션 사전순 목록
 ms.date: 08/20/2018
 helpviewer_keywords:
 - compiler options, C++
-ms.openlocfilehash: fa5ae089e112c147fb5e18b13af2ef5b95a7fda3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73236485026b82895426a2651b48a83fc35ce8b7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646734"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415879"
 ---
 # <a name="compiler-options-listed-alphabetically"></a>컴파일러 옵션 사전순 목록
 
@@ -79,7 +79,7 @@ ms.locfileid: "50646734"
 |[/hotpatch](hotpatch-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
 |[/I](i-additional-include-directories.md)|포함 파일의 디렉터리를 검색합니다.|
 |[/J](j-default-char-type-is-unsigned.md)|기본 `char` 형식을 변경합니다.|
-|[/ JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
+|[/JMC](jmc.md)|네이티브 c + + 내 코드만 디버깅 옵션을 지원합니다.|
 |[/kernel](kernel-create-kernel-mode-binary.md)|컴파일러와 링커는 Windows 커널에서 실행할 수 있는 이진 파일을 만듭니다.|
 |[/LD](md-mt-ld-use-run-time-library.md)|DLL(동적 연결 라이브러리)을 만듭니다.|
 |[/LDd](md-mt-ld-use-run-time-library.md)|디버그 DLL(동적 연결 라이브러리)을 만듭니다.|
@@ -162,7 +162,7 @@ ms.locfileid: "50646734"
 |[/Zs](zs-syntax-check-only.md)|구문만 확인합니다.|
 |[/ZW](zw-windows-runtime-compilation.md)|Windows 런타임에서 실행 하는 출력 파일을 생성 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
 [컴파일러 옵션](compiler-options.md)<br/>

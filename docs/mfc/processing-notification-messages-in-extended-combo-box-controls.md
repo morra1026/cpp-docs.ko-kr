@@ -5,12 +5,12 @@ helpviewer_keywords:
 - extended combo boxes [MFC], notifications
 - notifications [MFC], extended combo box controls
 ms.assetid: 4e442758-d054-4746-bb1a-6ff84accb127
-ms.openlocfilehash: 6a007af9bf92868049edba99943e080d509a40da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1890267f26ef43fd1dbf8fdea28f02e3d882d475
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430997"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280747"
 ---
 # <a name="processing-notification-messages-in-extended-combo-box-controls"></a>확장된 콤보 상자 컨트롤에서 알림 메시지 처리
 
@@ -32,8 +32,7 @@ ms.locfileid: "50430997"
 
 - CBEN_INSERTITEM 컨트롤에 새 항목이 삽입 된 경우 전송 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComboBoxEx 사용](../mfc/using-ccomboboxex.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

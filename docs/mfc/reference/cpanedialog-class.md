@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CPaneDialog [MFC], HandleInitDialog
 - CPaneDialog [MFC], SetOccDialogInfo
 ms.assetid: 48a6bb91-4b92-40f5-8907-b3270b146cf6
-ms.openlocfilehash: 95fc66ba55734c415cb41151cdc9b83d1b154898
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 16aa707792cc1289ced380e54abef3f15289e7cf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431931"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274559"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog 클래스
 
@@ -57,7 +57,7 @@ class CPaneDialog : public CDockablePane
 
 생성 된 `CPaneDialog` 두 단계로 개체입니다. 먼저 코드에서 개체를 생성 합니다. 둘째, 호출 [CPaneDialog::Create](#create)합니다. 올바른 리소스 템플릿 이름 또는 템플릿 ID를 지정 하 고 부모 창에 대 한 포인터를 전달 해야 합니다. 그렇지 않은 경우 만들기 프로세스가 실패합니다. 대화 상자 WS_CHILD과 WS_VISIBLE 스타일을 지정 해야 합니다. WS_CLIPCHILDREN 및 WS_CLIPSIBLINGS 스타일을 지정 하는 것이 좋습니다. 자세한 내용은 [창 스타일](styles-used-by-mfc.md#window-styles)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -202,10 +202,9 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 이 메서드를 지원 합니다 [COccManager](../../mfc/reference/coccmanager-class.md) OLE 컨트롤 사이트 및 ActiveX 컨트롤을 관리 하는 클래스입니다. _AFX_OCC_DIALOG_INFO 구조 afxocc.h 헤더 파일에 정의 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)<br/>
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles)
-

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - MFC ActiveX controls [MFC], methods
 - PtInCircle custom method [MFC]
 ms.assetid: 8f8dc344-44a0-4021-8db5-4cdd3d700e18
-ms.openlocfilehash: bd67e5f248f389755b1bf25854867322af60878e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4f5a7dc844d80ae94df8af7c0b2eea141376f9e9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554559"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278849"
 ---
 # <a name="mfc-activex-controls-adding-custom-methods"></a>MFC ActiveX 컨트롤: 사용자 지정 메서드 추가
 
@@ -26,7 +26,7 @@ ActiveX 컨트롤 사용자 컨트롤 관련 작업을 수행 하려면 언제 �
 다음 절차는 ActiveX 컨트롤의 기본 코드에 PtInCircle 사용자 지정 메서드를 추가 하는 방법을 보여 줍니다. PtInCircle 내부 또는 외부 원 컨트롤에 전달 하는 좌표 되는지 여부를 결정 합니다. 이 절차는 다른 사용자 지정 메서드를 추가 하려면 데도 사용할 수 있습니다. 사용자 지정 메서드 이름 및 PtInCircle 메서드 이름과 매개 변수를 해당 매개 변수를 대체 합니다.
 
 > [!NOTE]
->  이 예제에서는 `InCircle` 이벤트 아티클에서 함수입니다. 이 함수에 대 한 자세한 내용은 문서 참조 [MFC ActiveX 컨트롤: ActiveX 컨트롤에 사용자 지정 이벤트 추가](../mfc/mfc-activex-controls-adding-custom-events.md)합니다.
+>  이 예제에서는 `InCircle` 이벤트 아티클에서 함수입니다. 이 함수에 대 한 자세한 내용은 문서를 참조 하세요. [MFC ActiveX 컨트롤: ActiveX 컨트롤에 사용자 지정 이벤트 추가](../mfc/mfc-activex-controls-adding-custom-events.md)합니다.
 
 #### <a name="to-add-the-ptincircle-custom-method-using-the-add-method-wizard"></a>메서드 추가 마법사를 사용 하 여 PtInCircle 사용자 지정 메서드를 추가 하려면
 
@@ -76,8 +76,7 @@ DISP_FUNCTION 매크로 메서드에 매핑합니다 `PtInCircle` 컨트롤의 �
 
 [!code-cpp[NVC_MFC_AxUI#21](../mfc/codesnippet/cpp/mfc-activex-controls-adding-custom-methods_4.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [클래스 뷰 및 개체 브라우저 아이콘](/visualstudio/ide/class-view-and-object-browser-icons)
-

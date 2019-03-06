@@ -25,12 +25,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlTransactionManager class
 ms.assetid: b01732dc-1d16-4b42-bfac-b137fca2b740
-ms.openlocfilehash: e69ea2b7446e784bb643050bd122c93ea53a0676
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 031d72903d72af77f6929072e4605d32d81585a3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50463780"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270204"
 ---
 # <a name="catltransactionmanager-class"></a>CAtlTransactionManager 클래스
 
@@ -51,7 +51,7 @@ class CAtlTransactionManager;
 
 |이름|설명|
 |----------|-----------------|
-|[~ CAtlTransactionManager](#dtor)|CAtlTransactionManager 소멸자입니다.|
+|[~CAtlTransactionManager](#dtor)|CAtlTransactionManager 소멸자입니다.|
 |[CAtlTransactionManager](#catltransactionmanager)|CAtlTransactionManager 생성자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
@@ -84,7 +84,7 @@ class CAtlTransactionManager;
 
 ## <a name="remarks"></a>설명
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ATL::CAtlTransactionManager](../../atl/reference/catltransactionmanager-class.md)
 
@@ -92,7 +92,7 @@ class CAtlTransactionManager;
 
 **헤더:** atltransactionmanager.h
 
-##  <a name="dtor"></a>  ~ CAtlTransactionManager
+##  <a name="dtor"></a>  ~CAtlTransactionManager
 
 CAtlTransactionManager 소멸자입니다.
 
@@ -138,7 +138,7 @@ inline BOOL Close();
 
 이 래퍼를 호출 합니다 `CloseHandle` 함수입니다. 메서드는 소멸자에서 자동으로 호출 됩니다.
 
-##  <a name="commit"></a>  커밋
+##  <a name="commit"></a>  Commit
 
 트랜잭션을 커밋할 수를 요청 합니다.
 
@@ -191,16 +191,16 @@ inline HANDLE CreateFile(
 이름 개체를 만들거나 열 수입니다.
 
 *dwDesiredAccess*<br/>
-읽기, 쓰기, 둘 다 또는 둘 (영)으로 요약할 수 있습니다 하는 개체에 대 한 액세스. 가장 일반적으로 사용 되는 값은 GENERIC_READ, GENERIC_WRITE, 또는 둘 다: GENERIC_READ &#124; GENERIC_WRITE 합니다.
+읽기, 쓰기, 둘 다 또는 둘 (영)으로 요약할 수 있습니다 하는 개체에 대 한 액세스. 가장 일반적으로 사용 되는 값은 GENERIC_READ, GENERIC_WRITE, 또는 둘 다: GENERIC_READ &#124; GENERIC_WRITE.
 
 *dwShareMode*<br/>
-읽기, 쓰기, 둘 다를 수 있습니다, 삭제, none 또는 이러한 모든 개체의 공유 모드: FILE_SHARE_DELETE, FILE_SHARE_READ FILE_SHARE_WRITE 0입니다.
+공유 모드는 개체 수 읽기, 쓰기, 둘 다를 수, 삭제, 이러한 모든 또는 none입니다. 0, FILE_SHARE_DELETE, FILE_SHARE_READ, FILE_SHARE_WRITE.
 
 *lpSecurityAttributes*<br/>
 선택적 보안 설명자를 포함 하 고 반환된 된 핸들이 자식 프로세스로 상속 될 수 있는지 여부를 결정 하는 SECURITY_ATTRIBUTES 구조체에 대 한 포인터입니다. 매개 변수는 NULL 일 수 있습니다.
 
 *dwCreationDisposition*<br/>
-수행할 동작을 파일에 존재 하 고 존재 하지 않습니다. 이 매개 변수는 함께 사용할 수 없습니다는 다음 값 중 하나 여야 합니다: CREATE_ALWAYS, CREATE_NEW, OPEN_ALWAYS, OPEN_EXISTING, 또는 TRUNCATE_EXISTING 합니다.
+수행할 동작을 파일에 존재 하 고 존재 하지 않습니다. 이 매개 변수는 함께 사용할 수 없습니다는 다음 값 중 하나 여야 합니다. CREATE_ALWAYS, CREATE_NEW, OPEN_ALWAYS, OPEN_EXISTING, 또는 TRUNCATE_EXISTING 합니다.
 
 *dwFlagsAndAttributes*<br/>
 파일 특성 및 플래그입니다. 이 매개 변수는 사용 가능한 파일 특성 (FILE_ATTRIBUTE_ *)의 조합을 포함할 수 있습니다. 기타 모든 파일 특성 FILE_ATTRIBUTE_NORMAL를 재정의합니다. 이 매개 변수 플래그의 조합을 포함할 수도 있습니다 (FILE_FLAG_\*)의 버퍼링 동작은 컨트롤에 대 한 액세스 모드 및 기타 특수 플래그입니다. 이러한 모든 FILE_ATTRIBUTE_ 결합할\* 값입니다.
@@ -402,7 +402,7 @@ inline LSTATUS RegCreateKeyEx(
 이 키의 사용자 정의 클래스입니다. 이 매개 변수는 무시 될 수 있습니다. 이 매개 변수는 NULL 일 수 있습니다.
 
 *dwOptions*<br/>
-이 매개 변수는 다음 값 중 하나일 수 있습니다: REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE, 또는 REG_OPTION_VOLATILE 합니다.
+이 매개 변수는 다음 값 중 하나일 수 있습니다. REG_OPTION_BACKUP_RESTORE, REG_OPTION_NON_VOLATILE, 또는 REG_OPTION_VOLATILE 합니다.
 
 *samDesired*<br/>
 키에 대 한 액세스 권한을 지정 하는 마스크입니다.
@@ -485,7 +485,7 @@ inline LSTATUS RegOpenKeyEx(
 
 이 래퍼를 호출 합니다 `RegOpenKeyTransacted` 함수입니다.
 
-##  <a name="rollback"></a>  롤백
+##  <a name="rollback"></a>  Rollback
 
 트랜잭션을 롤백할 수 있는 요청 합니다.
 
@@ -521,6 +521,6 @@ inline BOOL SetFileAttributes(LPCTSTR lpFileName, DWORD dwAttributes);
 
 이 래퍼를 호출 합니다 `SetFileAttributesTransacted` 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)

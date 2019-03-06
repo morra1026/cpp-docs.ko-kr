@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtrList class
 ms.assetid: 11de4aca-28b0-4ff2-a74a-cb602312ffbd
-ms.openlocfilehash: a7e5c2db31100da8901deaae61527c65655faa7e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2558c522f7903e8d59363cd77d1a86027f6a7511
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551413"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285414"
 ---
 # <a name="cautoptrlist-class"></a>CAutoPtrList 클래스
 
@@ -49,7 +49,7 @@ class CAutoPtrList :
 
 자세한 내용은 [ATL 컬렉션 클래스](../../atl/atl-collection-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CAtlList](../../atl/reference/catllist-class.md)
 
@@ -76,7 +76,7 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 
 블록 크기는 새 요소가 필요한 경우 할당 된 메모리의 크기를 측정 합니다. 블록 크기가 클수록 메모리 할당 루틴에 대 한 호출 줄어들지만 더 많은 리소스를 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlList 클래스](../../atl/reference/catllist-class.md)<br/>
 [CAutoPtrElementTraits 클래스](../../atl/reference/cautoptrelementtraits-class.md)<br/>

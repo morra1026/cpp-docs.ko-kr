@@ -44,12 +44,12 @@ helpviewer_keywords:
 - CToolBar [MFC], SetHeight
 - CToolBar [MFC], SetSizes
 ms.assetid: e868da26-5e07-4607-9651-e2f863ad9059
-ms.openlocfilehash: 938df6599ca3bfec3e08e77d7a60106133f54324
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: ee1820601f80ed270221b3186188793f7fdcbe08
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178540"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301456"
 ---
 # <a name="ctoolbar-class"></a>CToolBar 클래스
 
@@ -102,7 +102,8 @@ Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니
 
 1. 도구 모음 리소스를 만듭니다.
 
-1. `CToolBar` 개체를 생성합니다.
+1. 
+  `CToolBar` 개체를 생성합니다.
 
 1. 호출 된 [만들기](#create) (또는 [CreateEx](#createex)) Windows 도구 모음을 만들고 연결 하는 함수는 `CToolBar` 개체입니다.
 
@@ -110,7 +111,8 @@ Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니
 
 그렇지 않은 경우 다음이 단계를 따르세요.
 
-1. `CToolBar` 개체를 생성합니다.
+1. 
+  `CToolBar` 개체를 생성합니다.
 
 1. 호출 된 [만들기](#create) (또는 [CreateEx](#createex)) Windows 도구 모음을 만들고 연결 하는 함수는 `CToolBar` 개체입니다.
 
@@ -143,7 +145,7 @@ Visual c + + 도구 모음을 만들려면 두 가지 방법으로 제공 합니
 
 사용 하 여 대 한 자세한 내용은 `CToolBar`, 문서를 참조 하세요 [MFC 도구 모음 구현](../../mfc/mfc-toolbar-implementation.md) 고 [Technical Note 31: 컨트롤 막대](../../mfc/tn031-control-bars.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -715,10 +717,10 @@ void SetSizes(
 
 [!code-cpp[NVC_MFCListView#8](../../atl/reference/codesnippet/cpp/ctoolbar-class_4.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 DOCKTOOL](../../visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

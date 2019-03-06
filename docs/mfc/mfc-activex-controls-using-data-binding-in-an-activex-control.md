@@ -14,12 +14,12 @@ helpviewer_keywords:
 - controls [MFC], data binding
 - bound controls [MFC], MFC ActiveX
 ms.assetid: 476b590a-bf2a-498a-81b7-dd476bd346f1
-ms.openlocfilehash: a5cb73496cd6678e3f45500d9d53c2127b0fb17c
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: e21a31b71e681cdffed555c10079c2598967543f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175810"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265953"
 ---
 # <a name="mfc-activex-controls-using-data-binding-in-an-activex-control"></a>MFC ActiveX 컨트롤: ActiveX 컨트롤에서 데이터 바인딩 사용
 
@@ -133,7 +133,6 @@ ActiveX 컨트롤을 사용 하는 더 강력한 중 하나는 데이터베이�
 
 이제 컨트롤을 등록 하는 프로젝트를 빌드할 수 있습니다. 대화 상자에 컨트롤을 삽입할 때 합니다 **데이터 필드** 하 고 **데이터 원본** 속성은 추가 했 고 이제 데이터 원본 및 컨트롤에 표시할 필드를 선택할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
-

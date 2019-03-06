@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMFCDropDownToolbarButton [MFC], SetDefaultCommand
 - CMFCDropDownToolbarButton [MFC], m_uiShowBarDelay
 ms.assetid: bc9d69e6-bd3e-4c15-9368-e80a504a0ba7
-ms.openlocfilehash: 3544bbd65b5e0c754552f93b45263f768b73fe69
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b33e50328fd3c8997774515f248780edda6bcc75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625318"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275495"
 ---
 # <a name="cmfcdropdowntoolbarbutton-class"></a>CMFCDropDownToolbarButton 클래스
 
@@ -106,7 +106,7 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
 
 `CMFCDropDownToolBarButton` 개체를 내보낼 수는 [CMFCToolBarMenuButton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md) 개체 및 팝업 메뉴를 사용 하 여 메뉴 단추를 표시 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -202,7 +202,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*MenuButton*<br/>
+*menuButton*<br/>
 [in] 대상 메뉴 단추에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -538,12 +538,11 @@ void SetDefaultCommand(UINT uiCmd);
 
 프레임 워크 단추를 클릭할 때 실행 되는 기본 명령을 지정 하려면이 메서드를 호출 합니다. 지정 된 명령 ID 가진 항목이 *uiCmd* 부모 드롭다운 도구 모음에 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CMFCDropDownToolBar 클래스](../../mfc/reference/cmfcdropdowntoolbar-class.md)<br/>
 [CMFCToolBar 클래스](../../mfc/reference/cmfctoolbar-class.md)<br/>
 [CMFCToolBarMenuButton 클래스](../../mfc/reference/cmfctoolbarmenubutton-class.md)<br/>
-[연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+[연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)

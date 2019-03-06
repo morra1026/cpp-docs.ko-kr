@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC Add Class Wizard, document control strings
 ms.assetid: 14e1c834-5e79-4dbd-811f-ec8f0a9cdcb2
-ms.openlocfilehash: a5664a539af351051f9ae3642c089e51b54bc8cd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: de0b483b6b3d242ee05680c47ae29ed675d54a36
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50662425"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57285271"
 ---
 # <a name="document-template-strings-mfc-add-class-wizard"></a>MFC 클래스 추가 마법사, 문서 템플릿 문자열
 
@@ -71,7 +71,7 @@ ms.locfileid: "50662425"
 
    프로젝트의 문서 클래스를 나타냅니다. 기본적으로이 클래스는 기본 응용 프로그램의 문서 클래스에 나열 된는 [클래스를 생성 하는 검토](../../mfc/reference/generated-classes-mfc-application-wizard.md) MFC 응용 프로그램 마법사의 페이지입니다. 프로젝트의 다른 문서 클래스를 추가한 경우 목록에서 다른 문서 클래스를 선택할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 클래스 추가 마법사](../../mfc/reference/mfc-add-class-wizard.md)<br/>
 [MFC 클래스](../../mfc/reference/adding-an-mfc-class.md)<br/>

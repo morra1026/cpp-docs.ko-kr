@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CPrintInfo structure [MFC]
 ms.assetid: 0b3de849-d050-4386-9a14-f4c1a25684f7
-ms.openlocfilehash: 259dfd6808a5e975fb22d11d0a8c569237733eae
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: e08885fc9893d175e819c0acbf571d96d425a2c4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524523"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273363"
 ---
 # <a name="cprintinfo-structure"></a>CPrintInfo 구조체
 
@@ -67,9 +67,9 @@ struct CPrintInfo
 
 또 다른 예로는 문서의 길이가 알려지지 않은 인쇄할 때까지 경우입니다. 이 이런 경우 뷰 클래스 페이지 인쇄 될 때마다 문서 끝 테스트 합니다. 뷰 클래스를 설정 하는 끝에 도달 하면 합니다 `m_bContinuePrinting` 소속 `CPrintInfo` 을 FALSE로 인쇄 루프를 중지 하기 위해 프레임 워크에 알립니다.
 
-`CPrintInfo` 멤버 함수를 사용해 `CView` 나열 아래에 있는 "참고 하십시오." Microsoft Foundation Class 라이브러리에서 제공 하는 인쇄 아키텍처에 대 한 자세한 내용은 참조 하세요. [프레임 Windows](../../mfc/frame-windows.md) 하 고 [문서/뷰 아키텍처](../../mfc/document-view-architecture.md) 문서 [ 인쇄](../../mfc/printing.md) 하 고 [인쇄: 다중 페이지 문서](../../mfc/multipage-documents.md)합니다.
+`CPrintInfo` 멤버 함수를 사용해 `CView` 나열 아래에 있는 "참고 하십시오." Microsoft Foundation Class 라이브러리에서 제공 하는 인쇄 아키텍처에 대 한 자세한 내용은 참조 하세요. [프레임 Windows](../../mfc/frame-windows.md) 하 고 [문서/뷰 아키텍처](../../mfc/document-view-architecture.md) 문서 [ 인쇄](../../mfc/printing.md) 고 [인쇄 합니다. 다중 페이지 문서](../../mfc/multipage-documents.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CPrintInfo`
 
@@ -315,7 +315,7 @@ void SetMinPage(UINT nMinPage);
 
 일반적으로 페이지 번호는 1부터 시작 합니다. 이 값은 `CPrintDialog` 개체에서 참조 하는 `m_pPD` 멤버입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 DIBLOOK](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
@@ -325,4 +325,3 @@ void SetMinPage(UINT nMinPage);
 [CView::OnPrepareDC](../../mfc/reference/cview-class.md#onpreparedc)<br/>
 [CView::OnPreparePrinting](../../mfc/reference/cview-class.md#onprepareprinting)<br/>
 [CView::OnPrint](../../mfc/reference/cview-class.md#onprint)
-

@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CMFCRibbonLabel [MFC], CMFCRibbonLabel
 - CMFCRibbonLabel [MFC], SetACCData
 ms.assetid: 0346c891-83bf-4f20-b8a1-c84cf2aadced
-ms.openlocfilehash: ae185a81267dce68cda6bc27c5e327b3335a1018
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b79d6191d2deb0a295e81da1150cc7b38fd81232
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50436401"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283464"
 ---
 # <a name="cmfcribbonlabel-class"></a>CMFCRibbonLabel 클래스
 
@@ -50,7 +50,7 @@ class CMFCRibbonLabel : public CMFCRibbonButton
 
 빠른 실행 도구 모음 리본 레이블을 추가할 수 없습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -104,7 +104,7 @@ virtual BOOL SetACCData(
 
 TRUE 이면 합니다 *데이터* FALSE 매개 변수를 성공적으로 현재 리본 레이블의 내게 필요한 옵션 데이터를 사용 하 여 채워진 고, 그렇지 않으면입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

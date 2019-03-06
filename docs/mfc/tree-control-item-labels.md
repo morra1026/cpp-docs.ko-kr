@@ -8,12 +8,12 @@ helpviewer_keywords:
 - item labels, tree controls
 - item labels
 ms.assetid: fe834107-1a25-4280-aced-774c11565805
-ms.openlocfilehash: 0abfeee170dbc9cbb4639e896e7a22d7184b35a1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c945556ff9236db1ca61b15f1072efdc2f49541f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438196"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278888"
 ---
 # <a name="tree-control-item-labels"></a>트리 컨트롤 항목 레이블
 
@@ -23,8 +23,7 @@ ms.locfileid: "50438196"
 
 트리 컨트롤 트리 컨트롤을 만드는 프로세스의 힙에서 할당 된 메모리를 사용 합니다. 트리 컨트롤에서 항목의 최대 수는 힙에서 사용 가능한 메모리 양을 기반으로 합니다. 각 항목에는 64 바이트를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

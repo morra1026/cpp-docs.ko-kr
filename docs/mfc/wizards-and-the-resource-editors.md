@@ -12,12 +12,12 @@ helpviewer_keywords:
 - MFC, wizards
 - Class View tool, managing Windows messages
 ms.assetid: f5dd4d13-9dc1-4a49-b6bf-5b3cb45fa8ba
-ms.openlocfilehash: fe55336d38393787988eac3a6f57394f3923260e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5316899b7eb8828847af6d7db95edf3d8ba3822a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50472750"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265524"
 ---
 # <a name="wizards-and-the-resource-editors"></a>마법사 및 리소스 편집기
 
@@ -50,6 +50,6 @@ Visual c + + [리소스 편집기](../windows/resource-editors.md) 만들고 메
 
 MFC 응용 프로그램 마법사, Visual c + + 마법사, 리소스 편집기 및 MFC 프레임 워크를 많은 작업을 수행 및 프로그램 코드를 훨씬 쉽게 관리할 수 있도록 합니다. 응용 프로그램별 코드 대량의 문서 및 뷰 클래스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스를 사용하여 Windows 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CSecurityAttributes class
 ms.assetid: a094880c-52e1-4a28-97ff-752d5869908e
-ms.openlocfilehash: 0b39109bd97e2bb83b7a51fdd6e626b63c4c8798
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ef0756ee1dd0aa7d82caf218aa2c417df0c2778c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604987"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269256"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes 클래스
 
@@ -41,7 +41,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 |이름|설명|
 |----------|-----------------|
-|[Csecurityattributes:: Set](#set)|특성을 설정 하려면이 메서드는 `CSecurityAttributes` 개체입니다.|
+|[CSecurityAttributes::Set](#set)|특성을 설정 하려면이 메서드는 `CSecurityAttributes` 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -49,7 +49,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 
 Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `SECURITY_ATTRIBUTES`
 
@@ -76,7 +76,7 @@ explicit CSecurityAttributes(const CSecurityDesc& rSecurityDescriptor, bool bInh
 *bInheritsHandle*<br/>
 새 프로세스가 만들어질 때 반환된 핸들의 상속 여부를 지정합니다. 이 멤버가 true이면 새 프로세스가 핸들을 상속합니다.
 
-##  <a name="set"></a>  Csecurityattributes:: Set
+##  <a name="set"></a>  CSecurityAttributes::Set
 
 특성을 설정 하려면이 메서드는 `CSecurityAttributes` 개체입니다.
 
@@ -96,7 +96,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 
 이 메서드는 생성자가 초기화 된 `CSecurityAttributes` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [보안 샘플](../../visual-cpp-samples.md)<br/>
 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)<br/>

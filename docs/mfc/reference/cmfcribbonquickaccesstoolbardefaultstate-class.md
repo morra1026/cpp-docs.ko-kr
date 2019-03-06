@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], CopyFrom
 - CMFCRibbonQuickAccessToolBarDefaultState [MFC], RemoveAll
 ms.assetid: eca99200-b87b-47ba-b2e8-2f3f2444b176
-ms.openlocfilehash: 07af26c78cc3316dbfcd33a5b28e5230a82a2e10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ea9ec8de0b657fa4e7c601f9c3e676f550defa9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445099"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302483"
 ---
 # <a name="cmfcribbonquickaccesstoolbardefaultstate-class"></a>CMFCRibbonQuickAccessToolBarDefaultState 클래스
 
@@ -51,7 +51,7 @@ class CMFCRibbonQuickAccessToolBarDefaultState
 
 응용 프로그램에서 빠른 실행 도구 모음을 만든 후 호출 하 여 기본 상태로 설정 하는 것이 좋습니다 [CMFCRibbonBar::SetQuickAccessDefaultState](../../mfc/reference/cmfcribbonbar-class.md#setquickaccessdefaultstate)합니다. 클릭할 때이 기본 상태가 복원 되는 **재설정** 단추를 **사용자 지정** 응용 프로그램의 페이지 **옵션** 대화 상자.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CMFCRibbonQuickAccessToolBarDefaultState](../../mfc/reference/cmfcribbonquickaccesstoolbardefaultstate-class.md)
 
@@ -128,7 +128,7 @@ void RemoveAll();
 
 이 함수는 모든 명령을이 인스턴스에서 제거 하는에 대 한 이전 호출 [CMFCRibbonQuickAccessToolBarDefaultState::AddCommand](#addcommand) 추가 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

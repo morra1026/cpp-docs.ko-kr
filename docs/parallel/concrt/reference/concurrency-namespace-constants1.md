@@ -15,12 +15,12 @@ f1_keywords:
 - concrt/concurrency::ScheduleGroupEventGuid
 - concrt/concurrency::VirtualProcessorEventGuid
 ms.assetid: 6f81fc4c-b10c-479e-8717-9c292360d5a0
-ms.openlocfilehash: 7474acf65058df009fcedc0d4d192af6441ddff9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ddad8e4bc20be902332e1fd277d26b8d24b2ffd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550620"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326259"
 ---
 # <a name="concurrency-namespace-constants"></a>concurrency 네임 스페이스 상수
 
@@ -43,7 +43,7 @@ const __declspec(selectany) GUID AgentEventGuid = {0xb9b5b78c, 0x713, 0x4898, { 
 
 ##  <a name="choreeventguid"></a>  ChoreEventGuid
 
-작업 또는 작업와 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+작업 또는 태스크와 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID ChoreEventGuid =
@@ -140,7 +140,8 @@ const unsigned int MaxExecutionResources = 0xFFFFFFFF;
 
 ##  <a name="pplparallelforeventguid"></a>  PPLParallelForEventGuid
 
-`parallel_for` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+
+  `parallel_for` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID PPLParallelForEventGuid =
@@ -149,7 +150,8 @@ const __declspec(selectany) GUID PPLParallelForEventGuid =
 
 ##  <a name="pplparallelforeacheventguid"></a>  PPLParallelForeachEventGuid
 
-`parallel_for_each` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+
+  `parallel_for_each` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID PPLParallelForeachEventGuid =
@@ -158,7 +160,8 @@ const __declspec(selectany) GUID PPLParallelForeachEventGuid =
 
 ##  <a name="pplparallelinvokeeventguid"></a>  PPLParallelInvokeEventGuid
 
-`parallel_invoke` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
+
+  `parallel_invoke` 함수 사용과 직접 관련된, 동시성 런타임에서 발생하는 ETW 이벤트를 설명하는 범주 GUID입니다.
 
 ```
 const __declspec(selectany) GUID PPLParallelInvokeEventGuid =
@@ -209,6 +212,6 @@ const __declspec(selectany) GUID VirtualProcessorEventGuid =
     { 0x2f27805f, 0x1676, 0x4ecc, { 0x96, 0xfa, 0x7e, 0xb0, 0x9d, 0x44, 0x30, 0x2f } };
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

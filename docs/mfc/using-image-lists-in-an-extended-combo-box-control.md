@@ -6,12 +6,12 @@ helpviewer_keywords:
 - extended combo boxes [MFC], images
 - images [MFC], combo box items
 ms.assetid: dfff25fe-af70-47a2-8032-3901d1e6842d
-ms.openlocfilehash: 38f51205eea7220f0efbc2d8821fcb2b423e0add
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e4d983d53e49fc8d9c80c206f1a23078eb82f61
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50504601"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266993"
 ---
 # <a name="using-image-lists-in-an-extended-combo-box-control"></a>확장 콤보 상자 컨트롤에서 이미지 목록 사용
 
@@ -35,8 +35,7 @@ ms.locfileid: "50504601"
 
 이미지 목록 컨트롤을 사용 하 여 연결 되 면 각 항목의 세 가지 가능한 상태에 사용할 이미지를 개별적으로 지정할 수 있습니다. 자세한 내용은 [개별 항목에 대 한 이미지 설정](../mfc/setting-the-images-for-an-individual-item.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComboBoxEx 사용](../mfc/using-ccomboboxex.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

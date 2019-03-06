@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CArchiveException [MFC], m_cause
 - CArchiveException [MFC], m_strFileName
 ms.assetid: da31a127-e86c-41d1-b0b6-bed0865b1b49
-ms.openlocfilehash: 6fe475ebd90ff13fec6a2835b6fdd4cf3d6034a4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 731735bccf9225e67d82b1fe90336c92a630b368
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476883"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283568"
 ---
 # <a name="carchiveexception-class"></a>CArchiveException 클래스
 
@@ -50,7 +50,7 @@ class CArchiveException : public CException
 
 `CArchiveException` 개체를 생성 하 고 내부에서 throw [CArchive](../../mfc/reference/carchive-class.md) 멤버 함수입니다. 범위 내에서 이러한 개체에 액세스할 수 있습니다는 **CATCH** 식입니다. 이유 코드 운영 체제와 무관 합니다. 예외 처리에 대 한 자세한 내용은 참조 하세요. [예외 처리 (MFC)](../../mfc/exception-handling-in-mfc.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -128,11 +128,10 @@ int m_cause;
 CString m_strFileName;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CException 클래스](../../mfc/reference/cexception-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CArchive 클래스](../../mfc/reference/carchive-class.md)<br/>
 [AfxThrowArchiveException](../../mfc/reference/exception-processing.md#afxthrowarchiveexception)<br/>
 [예외 처리](../../mfc/reference/exception-processing.md)
-

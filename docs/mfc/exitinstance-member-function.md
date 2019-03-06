@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], ExitInstance
 - ExitInstance method [MFC]
 ms.assetid: 5bb597bd-8dab-4d49-8bcf-9c45aa8be4a2
-ms.openlocfilehash: b1c5b3a20f25f909188023ab1650bc41316d7a9f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c76f588b22ad8ffd1d3dae954c5113feffb62a3f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637738"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279434"
 ---
 # <a name="exitinstance-member-function"></a>ExitInstance 멤버 함수
 
@@ -20,6 +20,6 @@ ms.locfileid: "50637738"
 
 재정의 `ExitInstance` 그래픽 장치 GDI (인터페이스) 리소스를 해제 또는 프로그램 실행 중에 사용 되는 메모리 할당 해제와 같은 특별 한 정리 처리 해야 합니다. 그러나 문서 및 뷰과 같은 표준 항목의 정리는 해당 개체에 특정 특별 한 정리를 수행 하기 위한 다른 재정의 가능 함수를 사용 하 여 framework에서 제공 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

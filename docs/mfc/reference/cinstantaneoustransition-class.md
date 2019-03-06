@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CInstantaneousTransition [MFC], Create
 - CInstantaneousTransition [MFC], m_dblFinalValue
 ms.assetid: c3d5121f-2c6b-4221-9e57-10e082a31120
-ms.openlocfilehash: 5195677f741f69517a7f33b8f53ae4efd22919b3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6e28c7d51fd80771d0348ab42021d196f81d3474
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486053"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275123"
 ---
 # <a name="cinstantaneoustransition-class"></a>CInstantaneousTransition 클래스
 
@@ -53,7 +53,7 @@ class CInstantaneousTransition : public CBaseTransition;
 
 순간 전환 하는 동안 애니메이션 변수 값 변경 즉시 현재 값에서 지정 된 마지막 값입니다. 이 전환 기간은 항상 0입니다. 모든 전환을 자동으로 취소 하므로 것이 좋습니다에 할당 된 새 연산자를 사용 합니다. 캡슐화 된 IUIAnimationTransition COM 개체는 NULL까지 CAnimationController::AnimateGroup에서 생성 됩니다. 이 COM 개체의 생성에 영향을 주지 않습니다 후 멤버 변수를 변경 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -105,6 +105,6 @@ virtual BOOL Create(
 DOUBLE m_dblFinalValue;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

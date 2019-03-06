@@ -3,12 +3,12 @@ title: 웹 페이지에 컨트롤 배치(ATL 자습서, 7부)
 ms.custom: get-started-article
 ms.date: 09/27/2018
 ms.assetid: 50dc4c95-c95b-4006-b88a-9826f7bdb222
-ms.openlocfilehash: 77d608fddfc63862c81ce7c7d259510fb4784910
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: baf0ca56ae7512ac76f64b29e3060e0749c083c1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659202"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297452"
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>웹 페이지에 컨트롤 배치(ATL 자습서, 7부)
 
@@ -77,7 +77,7 @@ ms.locfileid: "50659202"
 Internet Explorer에서 컨트롤을 사용 하 여 웹 페이지를 볼 수 있습니다 또는 더 편리 하 게 사용 하 여 Visual c + +에 내장 된 웹 브라우저 보기. 웹 브라우저 보기에서 컨트롤을 보려면 PolyCtl.htm을 마우스 오른쪽 단추로 클릭 하 고 클릭 **브라우저에서 보기**합니다.
 
 > [!NOTE]
-> 컨트롤이 표시 되지 않는 경우 일부 브라우저에 ActiveX 컨트롤을 실행할 설정을 조정 해야는 알고 있습니다. ActiveX 컨트롤을 사용 하는 방법에 대 한 브라우저 설명서를 참조 하십시오.
+> 컨트롤이 표시되지 않는 경우 일부 브라우저에 ActiveX 컨트롤을 실행할 설정을 조정해야 합니다. ActiveX 컨트롤을 사용하는 방법에 대한 브라우저 설명서를 참조하십시오.
 
 현재 Internet Explorer 보안 설정에 따라 표시 될 수 있습니다 보안 경고 피해 대화 상자 알리는 컨트롤 스크립트에 안전 하지 않을 가능성이 있습니다. 예를 들어, 파일을 표시 하지만 또한 컨트롤을 설치한 경우는 `Delete` 파일을 삭제 하는 메서드를 안전 하 게 되 면 될 수만 페이지에서 볼 수 있습니다. 것은 스크립트에 안전 하므로 사용자가 호출할 수는 `Delete` 메서드.
 
@@ -106,6 +106,6 @@ Internet Explorer에서 컨트롤을 사용 하 여 웹 페이지를 볼 수 있
 
 이것으로 ATL 자습서를 마칩니다. ATL에 대 한 자세한 정보 링크에 대 한 참조를 [ATL 시작 페이지](../atl/active-template-library-atl-concepts.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자습서](../atl/active-template-library-atl-tutorial.md)

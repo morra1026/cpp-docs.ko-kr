@@ -8,12 +8,12 @@ helpviewer_keywords:
 - persistence classes
 - persistence, classes
 ms.assetid: a6a2b6b2-52bc-471c-b78a-de58363128bb
-ms.openlocfilehash: 4376b04bfe59f7bb0c6e344dadb7a2f2a522fc3a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4dfc33d14fe11ec24bb22edf5d5d987bf507c7f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534123"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261481"
 ---
 # <a name="persistence-classes"></a>지 속성 클래스
 
@@ -29,8 +29,7 @@ ms.locfileid: "50534123"
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [속성 맵 매크로](../atl/reference/property-map-macros.md)
-

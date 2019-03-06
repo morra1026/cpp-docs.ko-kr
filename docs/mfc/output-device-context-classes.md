@@ -11,12 +11,12 @@ helpviewer_keywords:
 - painting classes [MFC]
 - output classes [MFC]
 ms.assetid: 35fd6435-a38e-42c6-a3fa-cd6f39370fc3
-ms.openlocfilehash: 6bddebb17663e8d22a4bf784d2a9d08a2f912e59
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d76570e7bfd4ce587b3803235394ec5406d30b2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651830"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266655"
 ---
 # <a name="output-device-context-classes"></a>출력(장치 컨텍스트) 클래스
 
@@ -65,7 +65,6 @@ Windows 메타 파일에 대 한 디바이스 컨텍스트입니다. Windows 메
 [CPrintDialog](../mfc/reference/cprintdialog-class.md)<br/>
 파일 인쇄를 위한 표준 대화 상자를 제공 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

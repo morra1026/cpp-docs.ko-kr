@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CDockablePaneAdapter [MFC], SaveState
 - CDockablePaneAdapter [MFC], SetWrappedWnd
 ms.assetid: 6ed6cf82-f39c-4d0c-bf7c-8641495cf8f3
-ms.openlocfilehash: 6088d7ed9f4d8f54bfe5ea7f7b77cdabfd11768f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f184bab564b4867138608b735c67b328e1a21cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50522956"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278979"
 ---
 # <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter 클래스
 
@@ -48,7 +48,7 @@ class CDockablePaneAdapter : public CDockablePane
 
 사용자 지정 하려는 경우는 `CDockablePaneAdapter` 동작을 방금에서 새 클래스를 파생 하 고 런타임 클래스 정보를 사용 하 여 탭된 창에 설정할 [cmfcbasetabctrl:: Setdockingbarwrapperrtc](../../mfc/reference/cmfcbasetabctrl-class.md#setdockingbarwrapperrtc)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)
 
@@ -145,8 +145,8 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - Active technology [MFC]
 - COM [MFC], MFC support
 ms.assetid: 7646bdcb-3a06-4ed5-9386-9b00f3979dcb
-ms.openlocfilehash: a3da9e437dc9ca20aa2a02977b1c8653d68930f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 67c7ea3e93b3158abc552c552c450c31c109be80
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645161"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257828"
 ---
 # <a name="mfc-com"></a>MFC COM
 
@@ -48,7 +48,7 @@ ms.locfileid: "50645161"
 
 OLE 액티브 기술 이라고 이제와 여전히 이라고의 내용은 항목을 참조 [OLE](../mfc/ole-in-mfc.md)합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [활성 문서 포함](../mfc/active-document-containment.md)
 
@@ -58,7 +58,6 @@ OLE 액티브 기술 이라고 이제와 여전히 이라고의 내용은 항목
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../mfc/mfc-concepts.md)
-

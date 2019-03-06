@@ -12,12 +12,12 @@ helpviewer_keywords:
 - merging injected code
 - /Fx compiler option [C++]
 ms.assetid: 14f0e301-3bab-45a3-bbdf-e7ce66f20560
-ms.openlocfilehash: 3a8bb0a6607542b325cdfeb0909bcea4a01fa0f3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 674dc9d09aec0cb8d6b127c11185693534359b31
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646318"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416620"
 ---
 # <a name="fx-merge-injected-code"></a>/Fx(삽입된 코드 병합)
 
@@ -74,7 +74,7 @@ ms.locfileid: "50646318"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ExpandAttributedSource%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - IPersistStreamInitImpl class
 - streams, ATL
 ms.assetid: ef217c3c-020f-4cf8-871e-ef68e57865b8
-ms.openlocfilehash: 472b01e169788ce3cf10f8ed9f2198c44cdeb88a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b5ab433ed08b150e6c344d65657a910542856e77
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645668"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290041"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>IPersistStreamInitImpl 클래스
 
@@ -61,7 +61,7 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 
 **관련 문서** [ATL 자습서](../../atl/active-template-library-atl-tutorial.md), [ATL 프로젝트 만들기](../../atl/reference/creating-an-atl-project.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IPersistStreamInit`
 
@@ -151,7 +151,7 @@ ATL 개체의 속성 맵에 사용 하 여이 정보를 저장 합니다.
 
 참조 [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-save) Windows SDK에에서 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [저장소 및 스트림](/windows/desktop/Stg/storages-and-streams)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

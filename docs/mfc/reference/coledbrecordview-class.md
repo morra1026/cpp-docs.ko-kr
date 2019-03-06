@@ -12,12 +12,12 @@ helpviewer_keywords:
 - COleDBRecordView [MFC], OnGetRowset
 - COleDBRecordView [MFC], OnMove
 ms.assetid: 98612427-c4c9-4760-b7e1-85b17448add9
-ms.openlocfilehash: fbbaaae72c7b58f898735d768c019a02cdb7d7e5
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 1b09599479010f87e396e6f576c9524651923f9f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51518582"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280373"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView 클래스
 
@@ -48,16 +48,16 @@ class COleDBRecordView : public CFormView
 
 뷰는 폼 보기에 직접 연결을 `CRowset` 개체입니다. 보기 대화 상자 템플릿 리소스에서 생성 되 고 필드를 표시 합니다 `CRowset` 대화 상자 템플릿의 컨트롤에는 개체입니다. 합니다 `COleDBRecordView` 대화 상자 데이터 교환 (DDX)을 사용 하 여 개체 및 탐색 기능에 기본 제공 `CRowset`를 폼에 컨트롤 및 행 집합의 필드 간의 데이터 이동을 자동화할 합니다. `COleDBRecordView` 또한 이동에 대 한 기본 구현을 제공 하면 첫 번째 다음, 이전 또는 마지막 레코드 및 view에 현재 레코드를 업데이트 하기 위한 인터페이스입니다.
 
-DDX 함수를 사용할 수 있습니다 `COleDbRecordView` 데이터베이스 레코드 집합에서 직접 데이터 가져오기 및 대화 상자 컨트롤에 표시 합니다. 사용 해야 합니다 `DDX_*` 메서드 (같은 `DDX_Text`) 아니라를 `DDX_Field*` 함수 (같은 `DDX_FieldText`) 사용 하 여 `COleDbRecordView`합니다. `DDX_FieldText` 작동 하지 것입니다 `COleDbRecordView` 하므로 `DDX_FieldText` 형식의 추가 인수 `CRecordset*` (에 대 한 `CRecordView`) 또는 `CDaoRecordset*` (에 대 한 `CDaoRecordView`).
+DDX 함수를 `COleDbRecordView`와 사용하여 데이터베이스 레코드 집합의 데이터를 직접 가져와서 대화 상자 컨트롤에 표시할 수 있습니다. 사용 해야 합니다 `DDX_*` 메서드 (같은 `DDX_Text`) 아니라를 `DDX_Field*` 함수 (같은 `DDX_FieldText`) 사용 하 여 `COleDbRecordView`합니다. `DDX_FieldText` 작동 하지 것입니다 `COleDbRecordView` 하므로 `DDX_FieldText` 형식의 추가 인수 `CRecordset*` (에 대 한 `CRecordView`) 또는 `CDaoRecordset*` (에 대 한 `CDaoRecordView`).
 
 > [!NOTE]
->  클래스를 사용 하 여 OLE DB 소비자 템플릿 클래스 보다는 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 대신 합니다. 자세한 내용은 문서 참조 [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
+>  클래스를 사용 하 여 OLE DB 소비자 템플릿 클래스 보다는 데이터 액세스 개체 (DAO) 클래스를 사용 하 여 작업 하는 경우 [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) 대신 합니다. 자세한 내용은 문서를 참조 하세요. [개요: 데이터베이스 프로그래밍](../../data/data-access-programming-mfc-atl.md)합니다.
 
 `COleDBRecordView` 레코드 뷰의 사용자 인터페이스를 업데이트할 수 있도록 사용자의 위치를 행 집합에는 추적 합니다. 레코드 뷰의 사용자 인터페이스 개체 사용 하지 않도록 설정 하거나 행 집합 끝에 사용자를 움직이면-메뉴 항목 또는 도구 모음 단추와 같은-이동 같은 방향으로 추가 합니다.
 
 행 집합 클래스에 대 한 자세한 내용은 참조는 [를 사용 하 여 OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md) 문서.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -124,7 +124,7 @@ virtual CRowset<>* OnGetRowset() = 0;
 
 [!code-cpp[NVC_MFCDatabase#38](../../mfc/codesnippet/cpp/coledbrecordview-class_1.cpp)]
 
-자세한 내용 및 예제에 대 한 문서를 참조 [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
+자세한 내용 및 예제에 대 한 문서를 참조 하세요. [레코드 뷰: 레코드 뷰를 사용 하 여](../../data/using-a-record-view-mfc-data-access.md)입니다.
 
 ##  <a name="onmove"></a>  COleDBRecordView::OnMove
 
@@ -161,7 +161,6 @@ virtual BOOL OnMove(UINT nIDMoveCommand);
 
 레코드 집합의 마지막 레코드를 지 나 이동 하면 레코드 뷰 계속 마지막 레코드를 표시 합니다. 첫 번째 레코드를 지난 뒤로 이동 하는 경우 레코드 뷰 계속 첫 번째 레코드를 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

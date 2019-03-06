@@ -5,12 +5,12 @@ helpviewer_keywords:
 - controls [MFC], adding to property sheets
 - property sheets, adding controls
 ms.assetid: 24ad4c0b-c1db-4850-b9f0-34aae8d74571
-ms.openlocfilehash: 141339bd146fec20f02e73e24bb9dae387f4e3ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 07b384b2db36ae59d4de8b99d9c07396ce793979
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502780"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296308"
 ---
 # <a name="adding-controls-to-a-property-sheet"></a>속성 시트에 컨트롤 추가
 
@@ -18,7 +18,7 @@ ms.locfileid: "50502780"
 
 속성 시트 대화 상자에서 컨트롤을 추가할 수 있습니다는 `OnCreate` 처리기입니다. 추가 컨트롤을 일반적으로 수용 속성 시트 대화 상자의 크기를 확장 해야 합니다. 기본 클래스를 호출한 후 **CPropertySheet::OnCreate**를 호출 [GetWindowRect](../mfc/reference/cwnd-class.md#getwindowrect) 확장 사각형의 너비를 가져오고 현재 할당 된 속성 시트 창의 높이, 차원 및 호출 [MoveWindow](../mfc/reference/cwnd-class.md#movewindow) 속성 시트 창의 크기를 변경 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [속성 시트](../mfc/property-sheets-mfc.md)<br/>
 [CPropertyPage 클래스](../mfc/reference/cpropertypage-class.md)<br/>

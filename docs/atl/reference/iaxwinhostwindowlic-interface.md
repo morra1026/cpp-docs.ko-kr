@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindowLic interface
 ms.assetid: 750f1520-6bce-428c-aca0-fccbe3f063c7
-ms.openlocfilehash: 791f0e4387a54448ffcf6573cf716c5ba122bcaa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: aca3970d13db53ffa04fe9582bbe9b8db78e820d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511308"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257958"
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>IAxWinHostWindowLic 인터페이스
 
@@ -104,4 +104,3 @@ STDMETHOD(CreateControlLicEx)(
 ### <a name="example"></a>예제
 
 참조 [ActiveX 컨트롤 ATL 사용 하 여 AXHost 호스팅](../../atl/hosting-activex-controls-using-atl-axhost.md) 사용 하는 샘플에 대 한 `IAxWinHostWindowLic::CreateControlLicEx`합니다.
-

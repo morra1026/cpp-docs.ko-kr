@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controls [ATL]
 - general support classes
 ms.assetid: cf73f1d2-7542-48e3-b8c8-9d3abf29f85b
-ms.openlocfilehash: 49b7ff751db33ce2647ea7d4865ebea93949813b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bf5c1b9e2f4fb7414cc34d457bc0d8b1e27dcd91
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551439"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263002"
 ---
 # <a name="controls-general-support-classes"></a>컨트롤: 일반 지원 클래스
 
@@ -37,7 +37,6 @@ ATL 컨트롤에 대 한 일반 지원을 제공 하는 다음 클래스:
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)
-

@@ -9,12 +9,12 @@ helpviewer_keywords:
 - Conformance compiler options
 - Zc compiler options [C++]
 ms.assetid: db1cc175-6e93-4a2e-9396-c3725d2d8f71
-ms.openlocfilehash: b1f612040eea0078b0f27cf72327db94fe9e2939
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 50f3e7a79b80514b6c28bd9aee86c720d6e20cf6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665437"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413916"
 ---
 # <a name="zc-conformance"></a>/Zc(규칙)
 
@@ -22,7 +22,7 @@ ms.locfileid: "50665437"
 
 ## <a name="syntax"></a>구문
 
-> **/ Zc:**_옵션_{합니다_옵션_}
+> **/Zc:**_option_{,_option_}
 
 ## <a name="remarks"></a>설명
 
@@ -47,13 +47,13 @@ Visual Studio에서 C 또는 c + + 표준 호환 되지 않는 확장 구현에 
 |[ternary\[-\]](zc-ternary.md)|피연산자 형식에 대 한 조건부 연산자 규칙 적용 (기본적으로 꺼져 있음).|
 |[threadSafeInit\[-\]](zc-threadsafeinit-thread-safe-local-static-initialization.md)|스레드로부터 안전한 로컬 정적 초기화를 사용 하도록 설정 (에서 기본적으로).|
 |[throwingNew\[-\]](zc-throwingnew-assume-operator-new-throws.md)|가정 `operator new` 실패 시 throw (기본적으로 꺼져 있음).|
-|[삼중 자\[-\]](zc-trigraphs-trigraphs-substitution.md)|삼중 자 (사용 되지 않는 해제 기본적으로)을 사용 하도록 설정 합니다.|
+|[trigraphs\[-\]](zc-trigraphs-trigraphs-substitution.md)|삼중 자 (사용 되지 않는 해제 기본적으로)을 사용 하도록 설정 합니다.|
 |[twoPhase-](zc-twophase.md)|비준수 템플릿 구문 분석 동작 (기본적으로 준수)를 사용 합니다.|
 |[wchar_t\[-\]](zc-wchar-t-wchar-t-is-native-type.md)|`wchar_t` 네이티브 형식, 형식 정의가 아닙니다. (에서 기본적으로).|
 
 Visual C++의 규칙과 관련된 문제에 대한 자세한 내용은 [Nonstandard Behavior](../../cpp/nonstandard-behavior.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](compiler-options.md)<br/>
 [컴파일러 옵션 설정](setting-compiler-options.md)

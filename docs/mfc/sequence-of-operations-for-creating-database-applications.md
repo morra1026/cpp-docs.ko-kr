@@ -7,12 +7,12 @@ helpviewer_keywords:
 - database applications [MFC], creating
 - MFC, database applications
 ms.assetid: 9371da59-8536-43cd-8314-706ad320e2ec
-ms.openlocfilehash: 0f512408b54d6aa9cc5c2b44dbd359e31e8bc57f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: efd6b12b186ce0ef1c0caf57f313f6aa50425fec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624903"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283672"
 ---
 # <a name="sequence-of-operations-for-creating-database-applications"></a>데이터베이스 응용 프로그램을 만드는 작업 시퀀스
 
@@ -31,11 +31,11 @@ ms.locfileid: "50624903"
 |필요에 따라 추가 레코드 보기 및 레코드 집합 클래스를 만듭니다.|클래스 및 대화 상자 편집기 디자인 뷰를 만들려면 클래스 뷰를 사용 합니다.|클래스 뷰 새 클래스에 대해 추가 파일을 만듭니다.|
 |코드에서 필요에 따라 레코드 집합 개체를 만듭니다. 각 레코드 집합을 사용 하 여 레코드를 조작 하는 중...|레코드 집합에서 파생 된 클래스에 기반한 [CRecordset](../mfc/reference/crecordset-class.md) 마법사를 사용 하 여 합니다.|ODBC 레코드 필드 교환 (RFX)를 사용 하 여 데이터베이스 레코드 집합의 필드 데이터 멤버와 데이터를 교환 하 합니다. 레코드 뷰를 사용 하는 경우 대화 상자 데이터 교환 (DDX) 레코드 집합 및 레코드 뷰 컨트롤 간에 데이터를 교환 합니다.|
 |... 또는 만드는 명시적인 [CDatabase](../mfc/reference/cdatabase-class.md) 열려는 각 데이터베이스에 대 한 코드에서.|데이터베이스 개체에 대해 레코드 집합 개체를 기반 합니다.|데이터베이스 개체는 데이터 원본에 대 한 인터페이스를 제공합니다.|
-|데이터 열을 레코드 집합을 동적으로 바인딩하십시오.|Odbc에서 바인딩을 관리 하려면 레코드 집합 파생된 클래스에 코드를 추가 합니다. 문서를 참조 하세요 [레코드 집합: 데이터 열 동적 바인딩 (ODBC)](../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)합니다.||
+|데이터 열을 레코드 집합을 동적으로 바인딩하십시오.|Odbc에서 바인딩을 관리 하려면 레코드 집합 파생된 클래스에 코드를 추가 합니다. 문서를 참조 [레코드 집합: (ODBC) 데이터 열 동적 바인딩](../data/odbc/recordset-dynamically-binding-data-columns-odbc.md)합니다.||
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크를 기반으로 구축](../mfc/building-on-the-framework.md)<br/>
-[MFC 응용 프로그램을 빌드하는 작업 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
-[OLE 응용 프로그램을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
+[MFC 애플리케이션을 빌드하는 작업 시퀀스](../mfc/sequence-of-operations-for-building-mfc-applications.md)<br/>
+[OLE 애플리케이션을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-ole-applications.md)<br/>
 [ActiveX 컨트롤을 만드는 작업 시퀀스](../mfc/sequence-of-operations-for-creating-activex-controls.md)

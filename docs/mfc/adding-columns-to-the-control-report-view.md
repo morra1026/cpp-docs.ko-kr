@@ -8,12 +8,12 @@ helpviewer_keywords:
 - columns [MFC], adding to CListCtrl
 - CListCtrl class [MFC], report view
 ms.assetid: 7392c0d7-f8a5-4e7b-9ae7-b53dc9dd80ae
-ms.openlocfilehash: e40a923c755f8b32ca3a6ed1884eb7f7a1d6abfb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d414c5f597628576916c5091fa63a4bf673c8c44
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50529340"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292547"
 ---
 # <a name="adding-columns-to-the-control-report-view"></a>컨트롤에 열 추가(보고서 뷰)
 
@@ -31,8 +31,7 @@ ms.locfileid: "50529340"
 > [!NOTE]
 >  목록 컨트롤을 사용 하 여 만들어지는 경우 합니다 **LVS_NOCOLUMNHEADER** 스타일 열을 삽입 하려는 시도 무시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

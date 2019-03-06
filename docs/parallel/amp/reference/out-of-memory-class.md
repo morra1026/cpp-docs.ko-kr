@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - out_of_memory class
 ms.assetid: 3aa7e682-8f13-4ae6-9188-31fb423956e4
-ms.openlocfilehash: 2d5d028739bdf1b1ac31fafe3719b7f3a98fbb07
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ab498935039fad584220a84c388e337ee090c57d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50591897"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275677"
 ---
 # <a name="outofmemory-class"></a>out_of_memory 클래스
 
@@ -33,7 +33,7 @@ class out_of_memory : public runtime_exception;
 |----------|-----------------|
 |[out_of_memory 생성자](#ctor)|`out_of_memory` 클래스의 새 인스턴스를 초기화합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -61,13 +61,13 @@ out_of_memory () throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류에 대한 설명입니다.
 
 ### <a name="return-value"></a>반환 값
 
 `out_of_memory` 클래스의 새 인스턴스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

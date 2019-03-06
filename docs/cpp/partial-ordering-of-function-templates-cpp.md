@@ -1,4 +1,4 @@
----
+﻿---
 title: 함수 템플릿의 부분 순서 지정 (C++)
 ms.date: 11/04/2016
 helpviewer_keywords:

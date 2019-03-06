@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CKeyboardManager [MFC], TranslateCharToUpper
 - CKeyboardManager [MFC], UpdateAccelTable
 ms.assetid: 4809ece6-89df-4479-8b53-9bf476ee107b
-ms.openlocfilehash: d144731d05e861f4b462c4d58022b5155fdeb79b
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: c953958b3e0112997423376d42b62953b936049a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303609"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager 클래스
 
@@ -85,7 +85,7 @@ class CKeyboardManager : public CObject
 
 [!code-cpp[NVC_MFC_CustomPages#5](../../mfc/reference/codesnippet/cpp/ckeyboardmanager-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -139,7 +139,7 @@ static BOOL FindDefaultAccelerator(
 [in] 명령 id입니다.
 
 *str*<br/>
-[out] 에 대 한 참조를 `CString` 개체입니다.
+[out] `CString` 개체에 대한 참조입니다.
 
 *pWndFrame*<br/>
 [in] 프레임 창에 대 한 포인터입니다.
@@ -198,7 +198,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 |||
 |-|-|
 |매개 변수|설명|
-|*NChar*|[in] 이 메서드를 확인 하는 문자입니다.|
+|*nChar*|[in] 이 메서드를 확인 하는 문자입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -326,7 +326,7 @@ static UINT TranslateCharToUpper(const UINT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 [in] 변환할 문자입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -375,11 +375,10 @@ BOOL UpdateAccelTable(
 
 이 함수를 사용 하 여 여러 프레임 창 개체에 대 한 새로운 바로 가기 키를 사용 하 여 기존 바로 가기 테이블을 바꿀 수 있습니다. 함수는 지정 된 서식 파일에 연결 된 모든 프레임 창 개체에 대 한 액세스를 얻으려면 매개 변수로 문서 서식 파일을 받습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CWinAppEx 클래스](../../mfc/reference/cwinappex-class.md)<br/>
 [CWinAppEx::InitKeyboardManager](../../mfc/reference/cwinappex-class.md#initkeyboardmanager)<br/>
 [키보드 및 마우스 사용자 지정](../../mfc/keyboard-and-mouse-customization.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ODBC [MFC], data source information
 - CODBCFieldInfo structure [MFC]
 ms.assetid: 92598b4f-facc-4108-b282-63a179ff79ab
-ms.openlocfilehash: 5ad7d8f710c763b25771e3d1fa8839b5b64802ad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc2ad0c8319a60b773211dbd6b52b57bb2dbcafb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50655275"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272765"
 ---
 # <a name="codbcfieldinfo-structure"></a>CODBCFieldInfo 구조체
 
@@ -46,7 +46,7 @@ struct CODBCFieldInfo
 필드의 소수 자릿수입니다. 자세한 내용은 Windows SDK의 "정밀도, 배율, 길이 및 표시 크기"를 참조 합니다.
 
 *m_nNullability*<br/>
-여부를 필드에 Null 값을 허용 합니다. 두 값 중 하나일 수 있습니다: SQL_NULLABLE SQL_NO_NULLS 필드를 허용 하지 않는 경우 Null 값 또는 필드에 Null 값을 허용 하는 경우.
+여부를 필드에 Null 값을 허용 합니다. 두 값 중 하나일 수 있습니다. SQL_NULLABLE SQL_NO_NULLS 필드를 허용 하지 않는 경우 Null 값 또는 필드에 Null 값을 허용 하는 경우.
 
 ## <a name="remarks"></a>설명
 
@@ -56,9 +56,8 @@ struct CODBCFieldInfo
 
 **헤더:** afxdb.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CRecordset::GetODBCFieldInfo](../../mfc/reference/crecordset-class.md#getodbcfieldinfo)<br/>
 [CRecordset::GetFieldValue](../../mfc/reference/crecordset-class.md#getfieldvalue)
-

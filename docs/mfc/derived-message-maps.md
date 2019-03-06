@@ -7,12 +7,12 @@ helpviewer_keywords:
 - message maps [MFC], derived
 - derived message maps
 ms.assetid: 21829556-6e64-40c3-8279-fed85d99de77
-ms.openlocfilehash: 2ae536a53a43472a4fb81d30e685fbc3faaa603f
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: fcdff67c57e932e414a2b61b28cd0498ab997c60
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175604"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304238"
 ---
 # <a name="derived-message-maps"></a>파생된 메시지 맵
 
@@ -35,7 +35,6 @@ ms.locfileid: "52175604"
 
 메시지 맵 일치 하는 속도 프레임 워크는 받습니다 동일한 메시지가 다시 가능성에 최근의 일치 항목을 캐시 합니다. 이는 프레임 워크 프로세스 메시지를 매우 효율적으로 처리 됩니다. 메시지 맵 공간-보다 더 효율적 가상 함수를 사용 하는 구현 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 메시지 맵을 검색하는 방법](../mfc/how-the-framework-searches-message-maps.md)
-

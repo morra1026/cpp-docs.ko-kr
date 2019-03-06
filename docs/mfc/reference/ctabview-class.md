@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CTabView [MFC], IsScrollBar
 - CTabView [MFC], OnActivateView
 ms.assetid: 8e6ecd9d-d28d-432b-8ec8-0446f0204d52
-ms.openlocfilehash: 38c56cd5d6f464cd560c6671f4ebf0a9c118d020
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ac62d04c38dbddda90d2f33a9c14c9c131fcd9c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50443789"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326597"
 ---
 # <a name="ctabview-class"></a>CTabView 클래스
 
@@ -52,7 +52,7 @@ class CTabbedView : public CView
 |[CTabView::RemoveView](#removeview)|탭 컨트롤에서 뷰를 제거합니다.|
 |[CTabView::SetActiveView](#setactiveview)|뷰를 활성 상태로 만듭니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -65,7 +65,7 @@ class CTabbedView : public CView
 
 예를 들어, 다른 방법으로 나타낼 수 있는 문서를 포함할 수 있습니다: 스프레드시트, 차트, 편집 가능한 폼 및 등입니다. 삽입, 필요에 따라 데이터를 그리기 개별 보기를 만들 수 있습니다 프로그램 `CTabView`-개체를 파생 하 고 추가 코딩 없이 탭 합니다.
 
-[TabbedView 샘플: MFC 탭 View Application](../../visual-cpp-samples.md) 의 사용법을 보여 줍니다 `CTabView`합니다.
+[TabbedView 샘플: MFC 탭 보기 응용 프로그램](../../visual-cpp-samples.md) 의 사용법을 보여 줍니다 `CTabView`합니다.
 
 ## <a name="example"></a>예제
 
@@ -233,7 +233,7 @@ BOOL SetActiveView(int iTabNum);
 
 자세한 내용은 참조 [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

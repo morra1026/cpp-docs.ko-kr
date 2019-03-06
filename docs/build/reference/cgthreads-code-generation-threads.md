@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cgthreads compiler option (C++)
 - cgthreads
 ms.assetid: 64bc768c-6caa-4baf-9dea-7cfa1ffb01c2
-ms.openlocfilehash: b06a800fca529a86b393ca00dcffce30ac7a21fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6c3d3b51691247ddef5614cae113ffa9ded576e9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50606468"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425239"
 ---
 # <a name="cgthreads-code-generation-threads"></a>/cgthreads(코드 생성 스레드)
 
@@ -28,7 +28,7 @@ ms.locfileid: "50606468"
 
 ## <a name="arguments"></a>인수
 
-*수*<br/>
+*number*<br/>
 사용할 cl.exe to의 최대 스레드 수(범위 1~8)
 
 ## <a name="remarks"></a>설명
@@ -51,7 +51,7 @@ ms.locfileid: "50606468"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

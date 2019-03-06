@@ -6,12 +6,12 @@ helpviewer_keywords:
 - dialog box controls [MFC], common controls
 - Windows common controls [MFC], in dialog boxes
 ms.assetid: 17713caf-09f8-484a-bf54-5f48bf09cce9
-ms.openlocfilehash: a17dac622ce1527a11d02888d6c4ce7905fcf669
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ade1b464d3851fb9294a1ba7180b48771f0468cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50458654"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259193"
 ---
 # <a name="using-common-controls-in-a-dialog-box"></a>대화 상자에서 공용 컨트롤 사용
 
@@ -58,8 +58,7 @@ Windows 공용 컨트롤에서 사용할 수 있습니다 [대화 상자](../mfc
 
 - [대화 상자 데이터 교환 (DDX)를 사용 합니다.](../mfc/dialog-data-exchange-and-validation.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤 만들기 및 사용](../mfc/making-and-using-controls.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

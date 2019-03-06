@@ -1,18 +1,18 @@
 ---
-title: '방법: 초과 구독을 사용하여 대기 오프셋'
+title: '방법: 초과 구독을 사용 하 여 대기 시간 오프셋'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - oversubscription, using [Concurrency Runtime]
 - using oversubscription [Concurrency Runtime]
 ms.assetid: a1011329-2f0a-4afb-b599-dd4043009a10
-ms.openlocfilehash: fc16fa5cfeddf82b9fcb0164796fb7f4c90aef15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d74a081f71f044cab90a8e6fdc64530eaaf87ed8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653078"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257945"
 ---
-# <a name="how-to-use-oversubscription-to-offset-latency"></a>방법: 초과 구독을 사용하여 대기 오프셋
+# <a name="how-to-use-oversubscription-to-offset-latency"></a>방법: 초과 구독을 사용 하 여 대기 시간 오프셋
 
 초과 구독을 대기 시간이 있는 작업을 포함 하는 일부 응용 프로그램의 전반적인 효율성을 개선할 수 있습니다. 이 항목에서는 초과 구독을 사용 하 여 네트워크 연결에서 데이터 읽기를 통해 발생 하는 대기 시간을 오프셋 하는 방법을 보여 줍니다.
 
@@ -78,8 +78,7 @@ Downloaded 1801040 bytes in 3276 ms.
 
 [!code-cpp[concrt-download-oversubscription#3](../../parallel/concrt/codesnippet/cpp/how-to-use-oversubscription-to-offset-latency_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨텍스트](../../parallel/concrt/contexts.md)<br/>
 [Context:: oversubscribe 메서드](reference/context-class.md#oversubscribe)
-

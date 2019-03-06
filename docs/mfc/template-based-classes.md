@@ -22,12 +22,12 @@ helpviewer_keywords:
 - template-based collection classes [MFC]
 - simple list collection classes [MFC]
 ms.assetid: c69fc95b-c8f6-4a99-abed-517c9898ef0c
-ms.openlocfilehash: 8bd64e1c5efd1f80f43cb3460719326f30d5416c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 40633c8b2b09d27e97443364ed3ce711ee217e18
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50557861"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284660"
 ---
 # <a name="template-based-classes"></a>템플릿 기반 클래스
 
@@ -53,7 +53,7 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿을
 
 ###  <a name="_core_simple_array_and_list_usage"></a> 간단한 배열 및 목록 사용
 
-간단한 배열 및 목록 클래스 [CArray](../mfc/reference/carray-class.md) 하 고 [CList](../mfc/reference/clist-class.md)를 두 개의 매개 변수: *형식* 및 `ARG_TYPE`합니다. 이러한 클래스에서 지정 하는 모든 데이터 형식에 저장할 수는 *형식* 매개 변수:
+간단한 배열 및 목록 클래스 [CArray](../mfc/reference/carray-class.md) 하 고 [CList](../mfc/reference/clist-class.md), 두 개의 매개 변수: *형식* 고 `ARG_TYPE`입니다. 이러한 클래스에서 지정 하는 모든 데이터 형식에 저장할 수는 *형식* 매개 변수:
 
 - 와 같은 기본 c + + 데이터 형식 **int**하십시오 **char**, 및 **float**
 
@@ -61,7 +61,7 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿을
 
 - 정의 하는 다른 형식
 
-편의성 및 효율성을 사용할 수 있습니다 합니다 *ARG_TYPE* 함수 인수의 형식을 지정 하려면 매개 변수입니다. 일반적으로 지정할 *ARG_TYPE* 에 명명 된 형식에 대 한 참조를 *형식* 매개 변수입니다. 예를 들어:
+편의성 및 효율성을 사용할 수 있습니다 합니다 *ARG_TYPE* 함수 인수의 형식을 지정 하려면 매개 변수입니다. 일반적으로 지정할 *ARG_TYPE* 에 명명 된 형식에 대 한 참조를 *형식* 매개 변수입니다. 예를 들면,
 
 [!code-cpp[NVC_MFCCollections#1](../mfc/codesnippet/cpp/template-based-classes_1.cpp)]
 
@@ -71,13 +71,13 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿을
 
 ###  <a name="_core_simple_map_usage"></a> 단순 맵 사용
 
-단순 맵 클래스 [CMap](../mfc/reference/cmap-class.md), 4 개의 매개 변수를 사용 합니다. *키*, *ARG_KEY*, *값*, 및 *ARG_VALUE*. Array와 list 클래스와 마찬가지로 맵 클래스에는 모든 데이터 형식을 저장할 수 있습니다. 배열 및 인덱스를 저장 하는 데이터를 정렬 하는 목록과 달리 맵은 키와 값: 값의 연결 된 키를 지정 하 여 map에 저장 된 값에 액세스할 수 있습니다. 합니다 *키* 매개 변수는 맵에 저장 된 데이터에 액세스 하는 데 사용 하는 키의 데이터 형식을 지정 합니다. 경우 유형의 *키* 구조체 또는 클래스는 *ARG_KEY* 매개 변수는 일반적으로 지정 된 형식에 대 한 참조가 *키*합니다. 합니다 *값* 매개 변수는 맵에 저장 된 항목의 형식을 지정 합니다. 경우 유형의 *ARG_VALUE* 구조체 또는 클래스는 *ARG_VALUE* 매개 변수는 일반적으로 지정 된 형식에 대 한 참조가 *값*합니다. 예를 들어:
+단순 맵 클래스 [CMap](../mfc/reference/cmap-class.md), 4 개의 매개 변수를 사용 합니다. *키*, *ARG_KEY*합니다 *값*, 및 *ARG_VALUE*합니다. Array와 list 클래스와 마찬가지로 맵 클래스에는 모든 데이터 형식을 저장할 수 있습니다. 배열 및 인덱스를 저장 하는 데이터를 정렬 하는 목록과 달리 맵은 키와 값: 값의 연결 된 키를 지정 하 여 지도에 저장 된 값에 액세스할 수 있습니다. 합니다 *키* 매개 변수는 맵에 저장 된 데이터에 액세스 하는 데 사용 하는 키의 데이터 형식을 지정 합니다. 경우 유형의 *키* 구조체 또는 클래스는 *ARG_KEY* 매개 변수는 일반적으로 지정 된 형식에 대 한 참조가 *키*합니다. 합니다 *값* 매개 변수는 맵에 저장 된 항목의 형식을 지정 합니다. 경우 유형의 *ARG_VALUE* 구조체 또는 클래스는 *ARG_VALUE* 매개 변수는 일반적으로 지정 된 형식에 대 한 참조가 *값*합니다. 예를 들어:
 
 [!code-cpp[NVC_MFCCollections#3](../mfc/codesnippet/cpp/template-based-classes_3.cpp)]
 
 첫 번째 예제에서는 저장소 `MY_STRUCT` 값, 액세스 하 여 이들 **int** 키 및 액세스 하는 반환 `MY_STRUCT` 참조 항목입니다. 두 번째 예제에서는 저장소 `CPerson` 값, 액세스 하 여 `CString` 키 및 액세스 한 항목에 대 한 참조를 반환 합니다. 이 예제를 보면 사람을 성을 기준으로 간단한 주소록을 나타낼 수 있습니다.
 
-때문에 합니다 *키* 매개 변수는 형식 `CString` 하며 *KEY_TYPE* 매개 변수는 형식 `LPCSTR`, 키 항목 유형으로 map에 저장 됩니다 `CString` 되지만에서 참조 됩니다 와 같은 함수 `SetAt` 형식의 포인터를 통해 `LPCSTR`합니다. 예를 들어:
+때문에 합니다 *키* 매개 변수는 형식 `CString` 하며 *KEY_TYPE* 매개 변수는 형식 `LPCSTR`, 키 항목 유형으로 map에 저장 됩니다 `CString` 되지만에서 참조 됩니다 와 같은 함수 `SetAt` 형식의 포인터를 통해 `LPCSTR`합니다. 예를 들면,
 
 [!code-cpp[NVC_MFCCollections#4](../mfc/codesnippet/cpp/template-based-classes_4.cpp)]
 
@@ -87,7 +87,7 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿을
 
 ###  <a name="_core_typed.2d.pointer_array_and_list_usage"></a> 형식화 된 포인터 배열 및 목록 사용
 
-형식화 된 포인터 배열 및 목록 클래스 [CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md) 하 고 [CTypedPtrList](../mfc/reference/ctypedptrlist-class.md)를 두 개의 매개 변수: *BASE_CLASS* 및 *형식*합니다. 이러한 클래스에서 지정 하는 모든 데이터 형식에 저장할 수는 *형식* 매개 변수입니다. 포인터를 저장 하는 비템플릿 컬렉션 클래스 중 하나에서 파생 되므로 이 기본 클래스를 지정할 *BASE_CLASS*합니다. 배열에 대 한 중 하나를 사용 `CObArray` 또는 `CPtrArray`합니다. 목록에 대 한 중 하나를 사용 `CObList` 또는 `CPtrList`합니다.
+형식화 된 포인터 배열 및 목록 클래스 [CTypedPtrArray](../mfc/reference/ctypedptrarray-class.md) 하 고 [CTypedPtrList](../mfc/reference/ctypedptrlist-class.md), 두 개의 매개 변수: *BASE_CLASS* 하 고 *형식*합니다. 이러한 클래스에서 지정 하는 모든 데이터 형식에 저장할 수는 *형식* 매개 변수입니다. 포인터를 저장 하는 비템플릿 컬렉션 클래스 중 하나에서 파생 되므로 이 기본 클래스를 지정할 *BASE_CLASS*합니다. 배열에 대 한 중 하나를 사용 `CObArray` 또는 `CPtrArray`합니다. 목록에 대 한 중 하나를 사용 `CObList` 또는 `CPtrList`합니다.
 
 기반으로 하는 컬렉션을 선언 하는 경우 가정해 실제로 `CObList`, 새 클래스 뿐 아니라, 기본 클래스의 멤버를 상속 하지만 함수 및 연산자를 캡슐화 하 여 형식 안전성을 제공 하는 데 도움이 되는 다양 한 추가 형식이 안전한 멤버 선언 기본 클래스 멤버를 호출 합니다. 모든 필요한 형식 변환을 관리 하는 이러한 캡슐화 합니다. 예를 들어:
 
@@ -99,7 +99,7 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿을
 
 ###  <a name="_core_typed.2d.pointer_map_usage"></a> 형식화 된 포인터 맵 사용
 
-형식화 된 포인터 map 클래스 [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md), 3 개의 매개 변수: *BASE_CLASS*를 *키*, 및 *값*합니다. *BASE_CLASS* 새 클래스를 파생할 클래스를 지정 하는 매개 변수: `CMapPtrToWord`, `CMapPtrToPtr`를 `CMapStringToPtr`를 `CMapWordToPtr`, `CMapStringToOb`등. *키* 비슷합니다 *키* 에서 `CMap`: 조회에 사용 된 키의 형식을 지정 합니다. *값* 비슷합니다 *값* 에서 `CMap`: 맵에 저장 된 개체의 형식을 지정 합니다. 예를 들어:
+형식화 된 포인터 map 클래스 [CTypedPtrMap](../mfc/reference/ctypedptrmap-class.md), 세 개의 매개 변수를 사용 합니다. *BASE_CLASS*하십시오 *키*, 및 *값*합니다. *BASE_CLASS* 새 클래스를 파생할 클래스를 지정 하는 매개 변수: `CMapPtrToWord`, `CMapPtrToPtr`를 `CMapStringToPtr`를 `CMapWordToPtr`, `CMapStringToOb`등. *키* 비슷합니다 *키* 에서 `CMap`: 조회에 사용 된 키의 형식을 지정 합니다. *값* 비슷합니다 *값* 에서 `CMap`: Map에 저장 하는 개체의 형식을 지정 합니다. 예를 들면,
 
 [!code-cpp[NVC_MFCCollections#6](../mfc/codesnippet/cpp/template-based-classes_6.cpp)]
 
@@ -112,7 +112,6 @@ C + + 템플릿에 대 한 자세한 내용은 참조 하십시오 [템플릿을
 
 자세한 내용은 [형식이 안전한 컬렉션을 만드는 방법](../mfc/how-to-make-a-type-safe-collection.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컬렉션](../mfc/collections.md)
-

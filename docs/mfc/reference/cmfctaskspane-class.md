@@ -194,18 +194,19 @@ helpviewer_keywords:
 - CMFCTasksPane [MFC], Update
 - CMFCTasksPane [MFC], OnActivateTasksPanePage
 ms.assetid: b456328e-2525-4642-b78b-9edd1a1a7d3f
-ms.openlocfilehash: aaf0e68391dd1273c3f973315ac58fe0d6bd1c24
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 137f30262ce01ad82c075302b6e85bf67ae7b9be
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176811"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293773"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane 클래스
 
 더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
-`CMFCTasksPane` 클래스는 클릭할 수 있는 항목(작업) 목록을 구현합니다.
+
+  `CMFCTasksPane` 클래스는 클릭할 수 있는 항목(작업) 목록을 구현합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -225,19 +226,19 @@ class CMFCTasksPane : public CDockablePane
 
 |이름|설명|
 |----------|-----------------|
-|[Cmfctaskspane:: Addgroup](#addgroup)|작업 창 컨트롤에 새 작업 그룹을 추가합니다.|
-|[Cmfctaskspane:: Addlabel](#addlabel)|지정된 작업 그룹에 새 정적 레이블을 추가합니다.|
-|[Cmfctaskspane:: Addmrufileslist](#addmrufileslist)|MRU(가장 최근에 사용됨) 파일 목록으로 지정된 작업일 그룹에 추가합니다.|
+|[CMFCTasksPane::AddGroup](#addgroup)|작업 창 컨트롤에 새 작업 그룹을 추가합니다.|
+|[CMFCTasksPane::AddLabel](#addlabel)|지정된 작업 그룹에 새 정적 레이블을 추가합니다.|
+|[CMFCTasksPane::AddMRUFilesList](#addmrufileslist)|MRU(가장 최근에 사용됨) 파일 목록으로 지정된 작업일 그룹에 추가합니다.|
 |[CMFCTasksPane::AddPage](#addpage)|작업 창에 새 페이지를 추가합니다.|
 |[CMFCTasksPane::AddSeparator](#addseparator)||
-|[Cmfctaskspane:: Addtask](#addtask)|지정된 작업 그룹에 새 작업을 추가합니다.|
+|[CMFCTasksPane::AddTask](#addtask)|지정된 작업 그룹에 새 작업을 추가합니다.|
 |[CMFCTasksPane::AddWindow](#addwindow)|작업 창에 자식 창을 추가합니다.|
 |[CMFCTasksPane::CollapseAllGroups](#collapseallgroups)||
 |[CMFCTasksPane::CollapseGroup](#collapsegroup)|프로그래밍 방식으로 그룹을 축소합니다.|
 |[CMFCTasksPane::CreateDefaultMiniframe](#createdefaultminiframe)|(재정의 [cpane:: Createdefaultminiframe](../../mfc/reference/cpane-class.md#createdefaultminiframe).)|
 |[CMFCTasksPane::CreateMenu](#createmenu)|에 대 한 메뉴를 만드는 프레임 워크에서 호출 된 **다른 작업 창** 메뉴 단추입니다.|
 |[CMFCTasksPane::EnableAnimation](#enableanimation)|작업 그룹을 축소 또는 확장하는 동안 애니메이션을 사용하거나 사용하지 않도록 설정합니다.|
-|[Cmfctaskspane:: Enablegroupcollapse](#enablegroupcollapse)|작업 그룹을 축소할 수 있는지를 지정합니다.|
+|[CMFCTasksPane::EnableGroupCollapse](#enablegroupcollapse)|작업 그룹을 축소할 수 있는지를 지정합니다.|
 |[CMFCTasksPane::EnableHistoryMenuButtons](#enablehistorymenubuttons)|드롭다운 메뉴에서을 사용할지 **다음** 하 고 **이전** 탐색 단추입니다.|
 |[CMFCTasksPane::EnableNavigationToolbar](#enablenavigationtoolbar)|탐색 도구 모음을 사용하거나 사용하지 않도록 설정합니다.|
 |[CMFCTasksPane::EnableOffsetCustomControls](#enableoffsetcustomcontrols)||
@@ -326,7 +327,8 @@ class CMFCTasksPane : public CDockablePane
 
 ## <a name="remarks"></a>설명
 
-`CMFCTasksPane` 클래스는 다음 기능을 구현합니다.
+
+  `CMFCTasksPane` 클래스는 다음 기능을 구현합니다.
 
 - 항목을 그룹화할 수 있고 각 항목 그룹에는 연결된 캡션이 포함될 수 있습니다.
 
@@ -338,7 +340,8 @@ class CMFCTasksPane : public CDockablePane
 
 응용 프로그램에서 `CMFCTasksPane` 컨트롤을 사용하려면 다음 단계를 수행합니다.
 
-1. `CMFCTasksPane` 개체를 주 프레임 창 클래스에 포함합니다.
+1. 
+  `CMFCTasksPane` 개체를 주 프레임 창 클래스에 포함합니다.
 
 1. WM_CREATE 메시지를 처리 하는 경우 호출 된 `Create` 메서드. 일반을 사용할 수 있습니다 [CControlBar](../../mfc/reference/ccontrolbar-class.md) 스타일입니다. 자세한 내용은 `CControlBar::Create`을 참조하세요.
 
@@ -362,7 +365,7 @@ class CMFCTasksPane : public CDockablePane
 
 [!code-cpp[NVC_MFC_RibbonApp#28](../../mfc/reference/codesnippet/cpp/cmfctaskspane-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md) [CCmdTarget](../../mfc/reference/ccmdtarget-class.md) [CWnd](../../mfc/reference/cwnd-class.md)
 
@@ -374,7 +377,7 @@ class CMFCTasksPane : public CDockablePane
 
 **헤더:** afxTasksPane.h
 
-##  <a name="addgroup"></a>  Cmfctaskspane:: Addgroup
+##  <a name="addgroup"></a>  CMFCTasksPane::AddGroup
 
 작업 창 컨트롤에 새 작업 그룹을 추가합니다.
 
@@ -420,7 +423,7 @@ int AddGroup(
 
 프레임 워크 작업 창 컨트롤의 맨 위나 맨 아래에서 작업 그룹을 표시합니다. 프레임 워크 아래쪽; 그룹이 하나만 표시할 수 있습니다. 이 그룹은 마지막으로 추가 되어야 합니다.
 
-##  <a name="addlabel"></a>  Cmfctaskspane:: Addlabel
+##  <a name="addlabel"></a>  CMFCTasksPane::AddLabel
 
 지정된 된 작업 그룹에 레이블을 추가합니다.
 
@@ -434,7 +437,7 @@ int AddLabel(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 레이블을 추가 됩니다 여기서 그룹의 인덱스를 지정 합니다.
 
 *lpszLabelName*<br/>
@@ -454,7 +457,7 @@ int AddLabel(
 
 프레임 워크 작업 및 레이블을 다르게 처리합니다. 사용자가 태스크를 클릭 하면 프레임 워크는 명령을 실행 합니다. 사용자가 레이블을 클릭 하면 명령이 실행 됩니다. 자세한 내용은 [cmfctaskspane:: Addtask](#addtask)합니다.
 
-##  <a name="addmrufileslist"></a>  Cmfctaskspane:: Addmrufileslist
+##  <a name="addmrufileslist"></a>  CMFCTasksPane::AddMRUFilesList
 
 Mru (가장 최근에 사용 됨) 파일 목록의 그룹에 저장 된 각 파일에 대 한 작업을 추가 합니다.
 
@@ -466,7 +469,7 @@ int AddMRUFilesList(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 그룹의 인덱스를 지정 합니다. 이 메서드는 최근에 사용한 파일 목록에서이 매개 변수에서 지정한 그룹에 추가 합니다.
 
 *nMaxFiles*<br/>
@@ -501,13 +504,13 @@ int AddSeparator(int nGroup);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *해제*<br/>
+[in] *nGroup*<br/>
 
 ### <a name="return-value"></a>반환 값
 
 ### <a name="remarks"></a>설명
 
-##  <a name="addtask"></a>  Cmfctaskspane:: Addtask
+##  <a name="addtask"></a>  CMFCTasksPane::AddTask
 
 지정된 된 작업 그룹에 작업을 추가 합니다.
 
@@ -522,7 +525,7 @@ int AddTask(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 작업 항목이 있는 그룹 인덱스를 지정 합니다.
 
 *lpszTaskName*<br/>
@@ -556,7 +559,7 @@ int AddWindow(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 창 추가 됩니다 여기서 그룹 인덱스를 지정 합니다.
 
 *hwndTask*<br/>
@@ -626,7 +629,7 @@ BOOL CollapseGroup(
 *bCollapse*<br/>
 [in] 그룹을 축소 FALSE를 사용 하 여 그룹을 확장 합니다.
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 내부 목록의 그룹을 축소 하는 그룹의 인덱스를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -686,7 +689,7 @@ void EnableAnimation(BOOL bEnable = TRUE);
 
 작업 그룹을 확장 하거나 축소 하는 경우 발생 하는 애니메이션은 기본적으로 사용 됩니다.
 
-##  <a name="enablegroupcollapse"></a>  Cmfctaskspane:: Enablegroupcollapse
+##  <a name="enablegroupcollapse"></a>  CMFCTasksPane::EnableGroupCollapse
 
 사용자 작업 그룹을 축소할 수 있는지 여부를 지정 합니다.
 
@@ -898,7 +901,7 @@ BOOL GetGroupLocation(
 *pGroup*<br/>
 [in] 위치가 검색 되는 작업 그룹을 지정 합니다.
 
-*해제*<br/>
+*nGroup*<br/>
 [out] 작업 그룹의 인덱스를 포함합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -957,10 +960,10 @@ BOOL GetPageByGroup(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 작업 그룹의 인덱스를 지정합니다.
 
-*. n 페이지*<br/>
+*nPage*<br/>
 [out] 지정된 된 그룹에 대 한 페이지 인덱스를 포함합니다. 작업 그룹의 기본 페이지가 있으면 반환 되는 값은 0입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1017,7 +1020,7 @@ CMFCTasksPaneTask* GetTask(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 태스크가 포함 된 그룹의 인덱스를 지정 합니다.
 
 *nTask*<br/>
@@ -1037,7 +1040,7 @@ int GetTaskCount(int nGroup) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 작업 그룹의 인덱스를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1054,7 +1057,7 @@ CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 검색할 그룹의 인덱스를 지정 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1087,7 +1090,7 @@ BOOL GetTaskLocation(
 *uiCommandID*<br/>
 [in] 검색할 작업의 명령 ID를 지정 합니다.
 
-*해제*<br/>
+*nGroup*<br/>
 [out] 작업 그룹 인덱스를 포함합니다.
 
 *nTask*<br/>
@@ -1511,7 +1514,7 @@ void RemoveAllTasks(int nGroup);
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 그룹의 인덱스를 지정합니다.
 
 ##  <a name="removegroup"></a>  CMFCTasksPane::RemoveGroup
@@ -1524,7 +1527,7 @@ void RemoveGroup(int nGroup);
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 제거할 그룹의 인덱스를 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -1559,7 +1562,7 @@ BOOL RemoveTask(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 제거할 작업을 포함 하는 작업 그룹의 인덱스를 지정 합니다.
 
 *nTask*<br/>
@@ -1694,7 +1697,7 @@ BOOL SetGroupName(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 그룹의 인덱스를 지정합니다.
 
 *lpszGroupName*<br/>
@@ -1717,7 +1720,7 @@ BOOL SetGroupTextColor(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 그룹의 인덱스를 지정합니다.
 
 *color*<br/>
@@ -1836,7 +1839,7 @@ BOOL SetTaskName(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 작업 그룹의 인덱스를 지정합니다.
 
 *nTask*<br/>
@@ -1908,7 +1911,7 @@ BOOL SetTaskTextColor(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 태스크가 포함 된 작업 그룹의 인덱스를 지정 합니다.
 
 *nTask*<br/>
@@ -1960,7 +1963,7 @@ BOOL SetWindowHeight(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 창 컨트롤을 포함 하는 그룹의 인덱스를 지정 합니다.
 
 *hwndTask*<br/>
@@ -2003,7 +2006,7 @@ BOOL ShowTask(
 
 ### <a name="parameters"></a>매개 변수
 
-*해제*<br/>
+*nGroup*<br/>
 [in] 그룹의 인덱스를 지정합니다.
 
 *nTask*<br/>
@@ -2067,7 +2070,7 @@ virtual void Update();
 
 프레임 워크 작업 창 새로 고치는 경우 사용자 지정 코드를 실행 하려면 파생된 클래스에서이 메서드를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

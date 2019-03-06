@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CD2DGeometry [MFC], Widen
 - CD2DGeometry [MFC], m_pGeometry
 ms.assetid: 3f95054b-fdb8-4e87-87f2-9fc3df7279ec
-ms.openlocfilehash: 929926129ddee0efdee4f1b02494b503755811d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4549b2e7981d5f8493ddf9f24477e75a94ddde8b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610693"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271231"
 ---
 # <a name="cd2dgeometry-class"></a>CD2DGeometry 클래스
 
@@ -70,7 +70,7 @@ class CD2DGeometry : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DGeometry::CD2DGeometry](#cd2dgeometry)|CD2DGeometry 개체를 생성합니다.|
-|[CD2DGeometry:: ~ CD2DGeometry](#_dtorcd2dgeometry)|소멸자입니다. D2D 기 하 도형 개체가 소멸 될 때 호출 됩니다.|
+|[CD2DGeometry::~CD2DGeometry](#_dtorcd2dgeometry)|소멸자입니다. D2D 기 하 도형 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -107,7 +107,7 @@ class CD2DGeometry : public CD2DResource;
 |----------|-----------------|
 |[CD2DGeometry::m_pGeometry](#m_pgeometry)|ID2D1Geometry 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -119,7 +119,7 @@ class CD2DGeometry : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dgeometry"></a>  CD2DGeometry:: ~ CD2DGeometry
+##  <a name="_dtorcd2dgeometry"></a>  CD2DGeometry::~CD2DGeometry
 
 소멸자입니다. D2D 기 하 도형 개체가 소멸 될 때 호출 됩니다.
 
@@ -234,7 +234,7 @@ BOOL ComputeArea(
 *worldTransform*<br/>
 면적을 계산 하기 전에이 기 하이 도형에 적용할 변환입니다.
 
-*영역*<br/>
+*area*<br/>
 이 메서드는 반환 될 때이 기 하 도형의 결합된의 변환 된 버전의 영역에 대 한 포인터를 포함 합니다. 이 매개 변수에 대 한 저장소를 할당 해야 합니다.
 
 *flatteningTolerance*<br/>
@@ -291,7 +291,7 @@ BOOL ComputePointAtLength(
 *worldTransform*<br/>
 지정 된 지점 및 탄젠트를 계산 하기 전에 기 하 도형에 적용할 변환입니다.
 
-*지점*<br/>
+*point*<br/>
 기 하 도형에 따라 지정 된 거리에 위치 합니다. 기 하 도형 비어 있는 경우이 여기서 포함 NaN x 및 y 값입니다.
 
 *unitTangentVector*<br/>
@@ -338,13 +338,13 @@ BOOL FillContainsPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 테스트할 점입니다.
 
 *worldTransform*<br/>
 포함을 테스트 하기 전에 기 하 도형에 적용할 변환입니다.
 
-*포함*<br/>
+*contains*<br/>
 이 메서드는 반환 될 때이 TRUE 이면 기 하 여 채운 영역; 요소는 bool 값을 포함 합니다. 그렇지 않으면 FALSE입니다. 이 매개 변수에 대 한 저장소를 할당 해야 합니다.
 
 *flatteningTolerance*<br/>
@@ -377,7 +377,7 @@ CD2DRectF& bounds) const;
 ### <a name="parameters"></a>매개 변수
 
 *worldTransform*<br/>
-*범위*
+*bounds*
 
 ### <a name="return-value"></a>반환 값
 
@@ -405,7 +405,7 @@ BOOL GetWidenedBounds(
 *worldTransform*<br/>
 기 하 도형 변환 되 고 기 하 도형에 스트로크 후 기 하 도형에 적용할 변환입니다.
 
-*범위*<br/>
+*bounds*<br/>
 이 메서드는 반환 될 때 확장 된 기의 범위를 포함 합니다. 이 매개 변수에 대 한 저장소를 할당 해야 합니다.
 
 *flatteningTolerance*<br/>
@@ -435,7 +435,7 @@ ID2D1Geometry 포인터입니다.
 ID2D1Geometry* m_pGeometry;
 ```
 
-##  <a name="operator_id2d1geometry_star"></a>  CD2DGeometry::operator ID2D1Geometry *
+##  <a name="operator_id2d1geometry_star"></a>  CD2DGeometry::operator ID2D1Geometry*
 
 반환 ID2D1Geometry 인터페이스
 
@@ -519,7 +519,7 @@ BOOL StrokeContainsPoint(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 포함 여부를 테스트할 점입니다.
 
 *strokeWidth*<br/>
@@ -531,7 +531,7 @@ BOOL StrokeContainsPoint(
 *worldTransform*<br/>
 스트로크 기 하 도형에 적용할 변환입니다.
 
-*포함*<br/>
+*contains*<br/>
 이 메서드가 반환 하는 경우 기 하 도형의 스트로크에 지정된 된 지점이 포함 된 경우 TRUE로 설정 하는 부울 값을 포함 합니다. 그렇지 않으면 FALSE입니다. 이 매개 변수에 대 한 저장소를 할당 해야 합니다.
 
 *flatteningTolerance*<br/>
@@ -601,6 +601,6 @@ ID2D1SimplifiedGeometrySink는 확장 된 기 추가 됩니다.
 
 메서드가 성공 하면 TRUE를 반환 합니다. 그렇지 않으면 FALSE를 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

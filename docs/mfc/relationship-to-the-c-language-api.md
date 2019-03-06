@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Visual C, Windows API calls
 - Windows API [MFC], and MFC
 ms.assetid: 334e8efc-f3cc-4018-bc2e-02908b2a39fe
-ms.openlocfilehash: 8f58a33d3accb8eb81299877df1b0c8a4ebe0576
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fe83af2d05af8e3b9da8d0c62f6974b0a5410bfc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525699"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278953"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C 언어 API와의 관계
 
@@ -26,6 +26,6 @@ Windows에 대 한 다른 클래스 라이브러리 외에도 Microsoft Foundati
 > [!NOTE]
 >  MFC 라이브러리 프레임 워크의 작동 방식 개요를 참조 하세요 [클래스를 사용 하 여 Windows에 대 한 응용 프로그램 작성을](../mfc/using-the-classes-to-write-applications-for-windows.md)입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [일반 클래스 디자인 원칙](../mfc/general-class-design-philosophy.md)

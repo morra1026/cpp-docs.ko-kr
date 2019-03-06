@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, class wizards
 ms.assetid: 51cf002a-83bc-41ba-aeb8-364ea2331375
-ms.openlocfilehash: 2bab97fbcde7ea9febbd898a37bd38b9ed93b93c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1eea4e86d453939f5ba1bdda47906768c8012ba6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632078"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275885"
 ---
 # <a name="atl-wizards-and-dialog-boxes"></a>ATL 마법사 및 대화 상자
 
@@ -29,4 +29,3 @@ ms.locfileid: "50632078"
 |[ATL COM + 1.0 구성 요소](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)|기본 ATL COM + 1.0 구성 요소를 만들으십시오|
 |[ATL Active Server Page 구성 요소](../../atl/reference/adding-an-atl-active-server-page-component.md)|기본 ATL Active Server Page 구성 요소를 만듭니다.|
 |[ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)|ATL 설명서 링크를 제공 합니다.|
-

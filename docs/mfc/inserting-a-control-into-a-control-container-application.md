@@ -5,12 +5,12 @@ helpviewer_keywords:
 - ActiveX control containers [MFC], inserting controls
 - ActiveX controls [MFC], adding to projects
 ms.assetid: bbb617ff-872f-43d8-b4d6-c49adb16b148
-ms.openlocfilehash: 2ca503119df955e8b76f6f8c131421f3e2d85652
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f2b964d337ee882bff8acd904ad2fcf64879f88
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541377"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283633"
 ---
 # <a name="activex-control-containers-inserting-a-control-into-a-control-container-application"></a>ActiveX 컨트롤 컨테이너: 컨트롤 컨테이너 응용 프로그램에 컨트롤 삽입
 
@@ -22,7 +22,6 @@ ActiveX 컨트롤에 ActiveX 컨트롤 컨테이너 프로젝트를 추가 하�
 
 추가한 후 래퍼 클래스 라고 멤버 변수 클래스를 자동으로 생성 되어 프로젝트에 추가 합니다. 이 클래스는 컨트롤 컨테이너와 포함 된 컨트롤 간의 인터페이스로 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CDaoParameterInfo structure [MFC]
 - DAO (Data Access Objects), Parameters collection
 ms.assetid: 45fd53cd-cb84-4e12-b48d-7f2979f898ad
-ms.openlocfilehash: 29248f04833662750d99b112fe2386c6ff4d97fe
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 62addd44f8aa8fceafef6a27244994a2ec6b766b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545914"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273948"
 ---
 # <a name="cdaoparameterinfo-structure"></a>CDaoParameterInfo 구조체
 
@@ -57,7 +57,7 @@ MFC는 클래스에서 DAO 매개 변수 개체를 캡슐화 하지 않습니다
 
 **헤더:** afxdao.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoQueryDef 클래스](../../mfc/reference/cdaoquerydef-class.md)

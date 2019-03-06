@@ -38,18 +38,18 @@ helpviewer_keywords:
 - CMFCAutoHideBar [MFC], UpdateVisibleState
 - CMFCAutoHideBar [MFC], m_nShowAHWndDelay
 ms.assetid: 54c8d84f-de64-4efd-8a47-3ea0ade40a70
-ms.openlocfilehash: 8592a5485afedab075a21215e1ffa140a8c66e28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b40e4d48e8204824375630f7517ff3f5aa5108d3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50619455"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57291420"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar 클래스
 
 `CMFCAutoHideBar` 클래스는 자동 숨기기 기능을 구현하는 특수 도구 모음 클래스입니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -227,7 +227,7 @@ virtual BOOL Create(
 
 ## <a name="getfirstahwindow"></a>  CMFCAutoHideBar::GetFirstAHWindow
 
-응용 프로그램의 첫 번째 자동 숨기기 창에 대한 포인터를 반환합니다.
+애플리케이션의 첫 번째 자동 숨기기 창에 대한 포인터를 반환합니다.
 
 ```
 CDockablePane* GetFirstAHWindow();
@@ -235,7 +235,7 @@ CDockablePane* GetFirstAHWindow();
 
 ### <a name="return-value"></a>반환 값
 
-응용 프로그램의 첫 번째 자동 숨기기 창이거나, 없는 경우 NULL입니다.
+애플리케이션의 첫 번째 자동 숨기기 창이거나, 없는 경우 NULL입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -404,7 +404,7 @@ void UpdateVisibleState();
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

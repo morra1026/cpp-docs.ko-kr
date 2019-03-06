@@ -13,20 +13,20 @@ helpviewer_keywords:
 - Managed Extensions for C++, compiling
 - common language runtime, /clr compiler option
 ms.assetid: fec5a8c0-40ec-484c-a213-8dec918c1d6c
-ms.openlocfilehash: 9e9867e5cea8d45aefa0901798b86557b05693f5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5a908fc49776eaca68d9a79fb679b759155853d9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50528039"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418856"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr(공용 언어 런타임 컴파일)
 
-응용 프로그램 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.
+애플리케이션 및 구성 요소가 CLR(공용 언어 런타임)의 기능을 사용할 수 있게 합니다.
 
 ## <a name="syntax"></a>구문
 
-> **/clr**[**:**_옵션_]
+> **/clr**[**:**_options_]
 
 ## <a name="arguments"></a>인수
 
@@ -35,9 +35,9 @@ ms.locfileid: "50528039"
 
 - 없음
 
-   옵션 없이 **/clr** 응용 프로그램에 대 한 메타 데이터를 만듭니다. 메타데이터는 다른 CLR 응용 프로그램에서 사용될 수 있으며 응용 프로그램이 다른 CLR 구성 요소의 메타데이터에 있는 형식과 데이터를 사용할 수 있게 합니다. 자세한 내용은 [혼합형 (네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md)합니다.
+   옵션 없이 **/clr** 응용 프로그램에 대 한 메타 데이터를 만듭니다. 메타데이터는 다른 CLR 애플리케이션에서 사용될 수 있으며 애플리케이션이 다른 CLR 구성 요소의 메타데이터에 있는 형식과 데이터를 사용할 수 있게 합니다. 자세한 내용은 [혼합형 (네이티브 및 관리) 어셈블리](../../dotnet/mixed-native-and-managed-assemblies.md)합니다.
 
-- **순수**
+- **pure**
 
    **/clr: pure 되지**합니다. 옵션은 Visual Studio 2017에서 제거 됩니다. C#에 대한 순수형 MSIL이어야 하는 코드를 포팅하는 것이 좋습니다.
 
@@ -67,7 +67,7 @@ ms.locfileid: "50528039"
 
 관리 코드는 CLR에서 검사 및 관리할 수 있는 코드입니다. 관리 코드는 관리되는 개체에 액세스할 수 있습니다. 자세한 내용은 [/clr Restrictions](../../build/reference/clr-restrictions.md)을 참조하십시오.
 
-관리되는 형식을 정의 및 사용하는 응용 프로그램을 개발하는 방법에 대한 자세한 내용은 [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
+관리되는 형식을 정의 및 사용하는 애플리케이션을 개발하는 방법에 대한 자세한 내용은 [Component Extensions for Runtime Platforms](../../windows/component-extensions-for-runtime-platforms.md).
 
 **/clr** 을 사용하여 컴파일된 응용 프로그램은 관리되는 데이터를 포함할 수도 있고, 포함하지 않을 수도 있습니다.
 
@@ -103,7 +103,7 @@ class {} x;
 
 메타데이터를 보려면 Ildasm.exe를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

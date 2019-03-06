@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CAutoHideDockSite [MFC], UnSetAutoHideMode
 - CAutoHideDockSite [MFC], m_nExtraSpace
 ms.assetid: 2a0f6bec-c369-4ab7-977d-564e7946ebad
-ms.openlocfilehash: 5bfff575861d92eaaef07a1f2f21b79d89cb52b4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f24827e2dc1f4d1131f5b63aebeb0e2b09bc2281
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653633"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302964"
 ---
 # <a name="cautohidedocksite-class"></a>CAutoHideDockSite 클래스
 
@@ -76,7 +76,7 @@ class CAutoHideDockSite : public CDockSite
 
 도킹 모음의 도킹 창 왼쪽의 왼쪽 사이의 격차를 [CMFCAutoHideButton 클래스](../../mfc/reference/cmfcautohidebutton-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -250,8 +250,8 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 
 이 메서드를 포함 하는 행에 대 한 검색 *pAutoHideToolbar*합니다. 호출한 `CMFCAutoHideBar.UnSetAutoHideMode` 모든는 `CMFCAutoHideBar` 해당 행에 있는 개체입니다. 경우 *pAutoHideToolbar* 찾을 수 없습니다 또는 NULL 이면이 메서드를 호출 `CMFCAutoHideBar.UnSetAutoHideMode` 모든는 `CMFCAutoHideBar` 에서 개체를 `CAutoHideDockSite`입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockSite 클래스](../../mfc/reference/cdocksite-class.md)
+[CDockSite Class](../../mfc/reference/cdocksite-class.md)

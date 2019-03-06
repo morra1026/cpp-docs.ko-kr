@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComQIPtr class
 ms.assetid: 969cacb5-05b6-4af4-b683-24911d70242d
-ms.openlocfilehash: c231d4d83a3030ea63e781e6f3d185270a483ccc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 64716d945ffbc6802ec23fb47523464246065192
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624928"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298817"
 ---
 # <a name="ccomqiptr-class"></a>CComQIPtr 클래스
 
@@ -52,7 +52,7 @@ class CComQIPtr: public CComPtr<T>
 
 다음을 사용 하 여 ATL `CComQIPtr` 하 고 [CComPtr](../../atl/reference/ccomptr-class.md) COM 인터페이스 포인터를 관리 하려면 둘 다에서 파생 되 [CComPtrBase](../../atl/reference/ccomptrbase-class.md)합니다. 두 클래스 모두 자동 참조에 대 한 호출을 통해 계산을 수행할 `AddRef` 고 `Release`입니다. 오버 로드 된 연산자는 포인터 연산을 처리합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CComPtrBase](../../atl/reference/ccomptrbase-class.md)
 
@@ -111,7 +111,7 @@ COM 인터페이스입니다.
 
 업데이트에 대 한 포인터를 반환 합니다 `CComQIPtr` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComPtr::CComPtr](../../atl/reference/ccomptr-class.md#ccomptr)<br/>
 [CComQIPtr::CComQIPtr](#ccomqiptr)<br/>

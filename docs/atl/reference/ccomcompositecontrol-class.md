@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CComCompositeControl class
 - composite controls, CComCompositeControl class
 ms.assetid: 1304b931-27e8-4fbc-be8e-bb226ad887fb
-ms.openlocfilehash: 370f0bb2fc76e1377dce6ae4616861085ad44562
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f1a9a2d0628b3683f047ce9858d809040438db03
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429044"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302002"
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl 클래스
 
@@ -49,7 +49,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 |이름|설명|
 |----------|-----------------|
 |[CComCompositeControl::CComCompositeControl](#ccomcompositecontrol)|생성자입니다.|
-|[CComCompositeControl:: ~ CComCompositeControl](#dtor)|소멸자입니다.|
+|[CComCompositeControl::~CComCompositeControl](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -88,7 +88,7 @@ class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 
 [!code-cpp[NVC_ATL_COM#14](../../atl/codesnippet/cpp/ccomcompositecontrol-class_2.h)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `WinBase`
 
@@ -193,7 +193,7 @@ CComCompositeControl();
 
 초기화 된 [CComCompositeControl::m_hbrBackground](#m_hbrbackground) 및 [CComCompositeControl::m_hWndFocus](#m_hwndfocus) NULL로 데이터 멤버입니다.
 
-##  <a name="dtor"></a>  CComCompositeControl:: ~ CComCompositeControl
+##  <a name="dtor"></a>  CComCompositeControl::~CComCompositeControl
 
 소멸자입니다.
 
@@ -259,7 +259,7 @@ HRESULT SetBackgroundColorFromAmbient();
 
 성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [복합 컨트롤 기본 사항](../../atl/atl-composite-control-fundamentals.md)<br/>

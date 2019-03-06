@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CSpinButtonCtrl [MFC], SetPos
 - CSpinButtonCtrl [MFC], SetRange
 ms.assetid: 509bfd76-1c5a-4af6-973f-e133c0b87734
-ms.openlocfilehash: 8d77175b271d144983aecd1168eb0d66eb46d6ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ff61fb4f918e25d430fc31ae55c3ad8794ce39f1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50526414"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425031"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl 클래스
 
@@ -88,7 +88,7 @@ class CSpinButtonCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CSpinButtonCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CSpinButtonCtrl 사용 하 여](../../mfc/using-cspinbuttonctrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -120,7 +120,7 @@ virtual BOOL Create(
 스핀 단추 컨트롤의 스타일을 지정합니다. 스핀 단추 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 이러한 스타일에 설명 되어 있습니다 [Up-down 컨트롤 스타일](/windows/desktop/Controls/up-down-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-스핀 단추 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조
+스핀 단추 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조
 
 *pParentWnd*<br/>
 스핀 단추 컨트롤의 부모 창에 일반적으로 포인터를 `CDialog`입니다. NULL이 아니어야 합니다.
@@ -160,7 +160,7 @@ virtual BOOL CreateEx(
 스핀 단추 컨트롤의 스타일을 지정합니다. 스핀 단추 컨트롤 스타일의 조합을 컨트롤에 적용 됩니다. 이러한 스타일에 설명 되어 있습니다 [Up-down 컨트롤 스타일](/windows/desktop/Controls/up-down-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -271,10 +271,10 @@ void GetRange32(
 
 ### <a name="parameters"></a>매개 변수
 
-*낮은*<br/>
+*lower*<br/>
 컨트롤에 대 한 하한값을 수신 하는 정수에 대 한 참조입니다.
 
-*위*<br/>
+*upper*<br/>
 컨트롤에 대 한 상한값을 수신 하는 정수에 대 한 참조입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -397,7 +397,7 @@ void SetRange32(
 > [!NOTE]
 >  스핀 단추에 대 한 기본 범위에 영 (0)으로 설정 된 최대값 및 최소값 100으로 있습니다. 최 댓 값이 최소값 보다 작은 이기 때문에 위치 줄어듭니다 위쪽 화살표를 클릭 하 고 아래쪽 화살표를 클릭 하 고 증가 합니다. 사용 하 여 `CSpinButtonCtrl::SetRange` 이러한 값을 조정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL2](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

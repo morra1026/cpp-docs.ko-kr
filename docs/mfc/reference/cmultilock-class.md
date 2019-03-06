@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CMultiLock [MFC], Lock
 - CMultiLock [MFC], Unlock
 ms.assetid: c5b7c78b-1f81-4387-b7dd-2c813c5b6b61
-ms.openlocfilehash: 27c0eb396ac1384b691f51bf7089f6820157cf8a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 107ed227c5515cbf2fcb08e957a64a4a17d8287a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50613423"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288668"
 ---
 # <a name="cmultilock-class"></a>CMultiLock 클래스
 
@@ -59,7 +59,7 @@ class CMultiLock
 
 사용 하는 방법에 대 한 자세한 내용은 `CMultiLock` 문서를 참조 하는 개체를 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CMultiLock`
 
@@ -188,7 +188,6 @@ BOOL Unlock(
 
 첫 번째 형태 `Unlock` 에서 관리 하는 동기화 개체의 잠금을 해제 하려고 `CMultiLock`합니다. 두 번째 형태 `Unlock` 잠금을 해제 하려고 합니다 `CSemaphore` 소유한 개체 `CMultiLock`합니다. 하는 경우 `CMultiLock` 소유 하지 않는 잠긴 `CSemaphore` 개체 함수가 FALSE를 반환 합니다; 그리고 그렇지 않으면 TRUE를 반환 합니다. *lCount* 하 고 *lpPrevCount* 동일 매개 변수로 [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock)합니다. 두 번째 형식의 `Unlock` 거의 multilock 상황에 적용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - DAO (Data Access Objects), Fields collection
 - CDaoFieldInfo structure [MFC]
 ms.assetid: 91b13e3f-bdb8-440c-86fc-ba4181ea0182
-ms.openlocfilehash: 80a541028a6ba7daf60a8d1afbd6cf7ba3557202
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5c4013a323c85ad19a3fade20f76852e053362a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50629426"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275144"
 ---
 # <a name="cdaofieldinfo-structure"></a>CDaoFieldInfo 구조체
 
@@ -50,7 +50,7 @@ struct CDaoFieldInfo
 
 - `dbBoolean` 예/아니요, TRUE/FALSE와 동일
 
-- `dbByte` 바이트
+- `dbByte` Byte
 
 - `dbInteger` 짧은
 
@@ -144,7 +144,7 @@ DAO 필드 개체의 기본 값입니다. 새 레코드가 만들어지면 Defau
 
 기본, 보조 및 위의 모든에 대 한 참조 정보에서 반환 되는 방법을 나타내는 합니다 `GetFieldInfo` 클래스의 멤버 함수 [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo), 및 [ CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)합니다.
 
-필드 개체는 MFC 클래스에 의해 표시 되지 않습니다. MFC 개체 클래스의 기본 DAO 개체 필드 개체의 컬렉션을 포함 하는 대신: [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md)를 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), 및 [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md)합니다. 이러한 클래스의 필드 정보를 일부 개별 항목에 액세스 하는 멤버 함수를 제공 하거나 사용 하 여 한 번에 모두 액세스할 수 있습니다는 `CDaoFieldInfo` 를 호출 하 여 개체를 `GetFieldInfo` 포함 하는 개체의 멤버 함수입니다.
+필드 개체는 MFC 클래스에 의해 표시 되지 않습니다. 대신 MFC 개체 클래스의 기본 DAO 개체는 필드 개체의 컬렉션을 포함 합니다. [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md)하십시오 [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md), 및 [CDaoQueryDef](../../mfc/reference/cdaoquerydef-class.md)합니다. 이러한 클래스의 필드 정보를 일부 개별 항목에 액세스 하는 멤버 함수를 제공 하거나 사용 하 여 한 번에 모두 액세스할 수 있습니다는 `CDaoFieldInfo` 를 호출 하 여 개체를 `GetFieldInfo` 포함 하는 개체의 멤버 함수입니다.
 
 개체 속성을 검사 하기 위한 용도 외에 사용할 수 있습니다 `CDaoFieldInfo` 테이블 정의에서 새 필드 만들기에 대 한 입력된 매개 변수를 생성 합니다. 간단한 옵션은이 작업을 수행할 수 있지만 보다 세부적으로 제어를 원하는 경우에 버전을 사용할 수 있습니다 [CDaoTableDef::CreateField](../../mfc/reference/cdaotabledef-class.md#createfield) 를 사용 하는 한 `CDaoFieldInfo` 매개 변수입니다.
 
@@ -154,10 +154,9 @@ DAO 필드 개체의 기본 값입니다. 새 레코드가 만들어지면 Defau
 
 **헤더:** afxdao.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [구조체, 스타일, 콜백 및 메시지 맵](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)<br/>
 [CDaoTableDef::GetFieldInfo](../../mfc/reference/cdaotabledef-class.md#getfieldinfo)<br/>
 [CDaoRecordset::GetFieldInfo](../../mfc/reference/cdaorecordset-class.md#getfieldinfo)<br/>
 [CDaoQueryDef::GetFieldInfo](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo)
-

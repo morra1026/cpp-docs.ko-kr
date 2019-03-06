@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CImageList class [MFC], using
 - image lists [MFC]
 ms.assetid: e0aed188-a1e6-400e-9f51-033d61c5541f
-ms.openlocfilehash: fb0636d29d5bf72007eb440f763de0d5e1f4b581
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb95de134939e1b06e2a8b827424c986f8c48ef3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50581248"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293877"
 ---
 # <a name="using-an-image-list"></a>이미지 목록 사용
 
@@ -28,8 +28,7 @@ ms.locfileid: "50581248"
 > [!NOTE]
 >  이미지 목록을 사용 하 여 만든 경우는 **새** 파기 해야 합니다 연산자는 `CImageList` 되어 완료 되 면 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CImageList 사용](../mfc/using-cimagelist.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

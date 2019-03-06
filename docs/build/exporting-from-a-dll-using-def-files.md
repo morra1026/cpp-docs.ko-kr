@@ -6,12 +6,12 @@ helpviewer_keywords:
 - .def files [C++], exporting from DLLs
 - exporting DLLs [C++], DEF files
 ms.assetid: 9d31eda2-184e-47de-a2ee-a93ebd603f8e
-ms.openlocfilehash: 0f485353d344b17dabbf0f56a4c7ded2cbccce76
-ms.sourcegitcommit: a1fad0a266b20b313364a74b16c9ac45d089b1e9
+ms.openlocfilehash: bed47c2c69b154c6bab996299eaeb4173c8298f3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54220714"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416555"
 ---
 # <a name="exporting-from-a-dll-using-def-files"></a>DEF 파일을 사용하여 DLL에서 내보내기
 
@@ -82,6 +82,6 @@ MFC 자체 DEF 파일을 사용 하 여 함수 및 클래스를 MFCx0.dll에서 
 
 - [상호 가져오기](../build/mutual-imports.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DLL에서 내보내기](../build/exporting-from-a-dll.md)

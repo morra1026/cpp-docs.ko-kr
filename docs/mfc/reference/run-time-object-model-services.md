@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - run-time object model services macros
 ms.assetid: 4a3e79df-2ee3-43a4-8193-20298828de85
-ms.openlocfilehash: fce6fb938b501da7bc9251de51c71714e4613fd5
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 45ad85e5b85674be957320ef6fdb7f5a81db6503
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850287"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304680"
 ---
 # <a name="run-time-object-model-services"></a>런타임 개체 모델 서비스
 
@@ -522,4 +522,3 @@ OLE 클래스 ID가 고유 128 비트 식별자 개체입니다. 하나 이루�
 [매크로 및 전역](mfc-macros-and-globals.md)<br/>
 [MFC 공용 컨트롤 라이브러리 격리](../isolation-of-the-mfc-common-controls-library.md)<br/>
 [CLSID 키](/windows/desktop/com/clsid-key-hklm)
-

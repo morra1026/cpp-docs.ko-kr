@@ -7,12 +7,12 @@ helpviewer_keywords:
 - label editing in CTreeCtrl class [MFC]
 - tree controls [MFC], label editing
 ms.assetid: 6cde2ac3-43ee-468f-bac2-cf1a228ad32d
-ms.openlocfilehash: 80d4f37ef8b67c2902e5d34cb4ec8aa4cf35a616
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 446db94ec49859e2213f00d205df57e332c85af2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50647995"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264146"
 ---
 # <a name="tree-control-label-editing"></a>트리 컨트롤 레이블 편집
 
@@ -24,8 +24,7 @@ ms.locfileid: "50647995"
 
 레이블 편집 중 일반적으로 응답 하는 [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) 알림 메시지를 사용 하 여 레이블 편집에 사용 되는 편집 컨트롤에 대 한 포인터를 가져올 수 있습니다 합니다 [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) 멤버 함수입니다. 편집 컨트롤을 호출할 수 있습니다 [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) 멤버 함수를 입력할 수 있는 텍스트 또는 서브 클래스를 가로채 고 잘못 된 문자가 삭제 편집 컨트롤의 양을 제한 합니다. 단, 편집 컨트롤만 표시 됩니다 *한 후* **TVN_BEGINLABELEDIT** 보내집니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CTreeCtrl 사용](../mfc/using-ctreectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

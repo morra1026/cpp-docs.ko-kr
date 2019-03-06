@@ -1,18 +1,18 @@
 ---
-title: '컨테이너: 컨테이너 구현'
+title: '컨테이너: 컨테이너를 구현합니다.'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - applications [OLE], OLE container
 - OLE containers [MFC], implementing
 ms.assetid: af1e2079-619a-4eac-9327-985ad875823a
-ms.openlocfilehash: 89bb8b483dba6e635eef5d9857bb558eca8e8fec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0ab91316c9ee07296fbc46f9f17b3c46c71ee96f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546707"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271426"
 ---
-# <a name="containers-implementing-a-container"></a>컨테이너: 컨테이너 구현
+# <a name="containers-implementing-a-container"></a>컨테이너: 컨테이너를 구현합니다.
 
 이 문서는 컨테이너를 구현 하는 절차를 요약 하 고 자세한 내용을 보려면 컨테이너를 구현 하는 방법에 대 한 설명을 제공 하는 다른 문서를 안내 합니다. 또한 일부 선택적 OLE 구현 하려는 기능과 이러한 기능을 설명 하는 문서를 나열 합니다.
 
@@ -60,10 +60,9 @@ ms.locfileid: "50546707"
 
 - 포함 된 개체 또는 조합 컨테이너/서버 응용 프로그램에 연결 합니다.
 
-   자세한 내용은 [컨테이너: 고급 기능](../mfc/containers-advanced-features.md)합니다.
+   자세한 내용은 참조 하세요. [컨테이너: 고급 기능](../mfc/containers-advanced-features.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [컨테이너: 클라이언트 항목](../mfc/containers-client-items.md)
-

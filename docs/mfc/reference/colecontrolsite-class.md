@@ -106,12 +106,12 @@ helpviewer_keywords:
 - COleControlSite [MFC], m_pWndCtrl
 - COleControlSite [MFC], m_rect
 ms.assetid: 43970644-5eab-434a-8ba6-56d144ff1e3f
-ms.openlocfilehash: 26d0f5e875c4f3982705a2cf571b15cd5bfac985
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 31502f2ecda1c14cb68c83da98cf2b764baba461
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178925"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264133"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite 클래스
 
@@ -168,7 +168,7 @@ class COleControlSite : public CCmdTarget
 |[COleControlSite::SetWindowText](#setwindowtext)|호스팅된 컨트롤의 텍스트를 설정합니다.|
 |[COleControlSite::ShowWindow](#showwindow)|표시 하거나 컨트롤 사이트를 숨깁니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -201,7 +201,7 @@ class COleControlSite : public CCmdTarget
 
 ActiveX 컨트롤 사이트를 사용 하 여 만들려는 `COleControlSite`에서 클래스를 파생 `COleControlSite`합니다. 사용자 `CWnd`-컨테이너 (예를 들어 대화 상자)에 대 한 파생된 클래스에서 재정의 된 `CWnd::CreateControlSite` 함수입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -622,7 +622,7 @@ virtual void AFX_CDECL InvokeHelper(
 *dwDispID*<br/>
 속성 또는 메서드를 찾을 컨트롤의 디스패치 ID를 식별 `IDispatch` 인터페이스를 호출 합니다.
 
-*wflags에서*<br/>
+*wFlags*<br/>
 Idispatch:: Invoke 호출의 컨텍스트를 설명 하는 플래그입니다. 가능한 *wFlags* 값을 참조 하세요. `IDispatch::Invoke` Windows SDK에 있습니다.
 
 *vtRet*<br/>
@@ -662,7 +662,7 @@ virtual void InvokeHelperV(
 *dwDispID*<br/>
 속성 또는 메서드를 찾을 컨트롤의 디스패치 ID를 식별 `IDispatch` 인터페이스를 호출 합니다.
 
-*wflags에서*<br/>
+*wFlags*<br/>
 Idispatch:: Invoke 호출의 컨텍스트를 설명 하는 플래그입니다.
 
 *vtRet*<br/>
@@ -1023,7 +1023,7 @@ void SetDefaultButton(BOOL bDefault);
 
 ### <a name="parameters"></a>매개 변수
 
-*슬라이더가*<br/>
+*bDefault*<br/>
 컨트롤이 기본 단추 수 있어야 하는 경우 0이 아닌 값 그렇지 않으면 0입니다.
 
 ### <a name="remarks"></a>설명
@@ -1215,7 +1215,7 @@ virtual BOOL ShowWindow(int nCmdShow);
 
 창을 이전에 표시 되었으면 0이 아닌 값 창이 숨겨진 이전 된 경우 0입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

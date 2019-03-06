@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDacl class
 ms.assetid: 2dc76616-6362-4967-b6cf-e2d39ca37ddd
-ms.openlocfilehash: 63eaa9fe21b9d920aa3615f76be5822194d19b66
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: edfa7a47fa94e659d6529706d04021dfc800c269
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50462896"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280123"
 ---
 # <a name="cdacl-class"></a>CDacl 클래스
 
@@ -68,7 +68,7 @@ class CDacl : public CAcl
 
 Windows의 액세스 제어 모델에 대 한 소개를 참조 하세요 [Access Control](/windows/desktop/SecAuthZ/access-control) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CAcl](../../atl/reference/cacl-class.md)
 
@@ -260,11 +260,11 @@ void RemoveAllAces() throw();
 
 제거 마다 `ACE` (액세스 제어 항목) 구조 (있는 경우)에 `CDacl` 개체입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [보안 샘플](../../visual-cpp-samples.md)<br/>
 [CAcl 클래스](../../atl/reference/cacl-class.md)<br/>
-[Acl](/windows/desktop/SecAuthZ/access-control-lists)<br/>
-[Ace](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[ACLs](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[ACEs](/windows/desktop/SecAuthZ/access-control-entries)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>
 [보안 전역 함수](../../atl/reference/security-global-functions.md)

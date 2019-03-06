@@ -2,12 +2,12 @@
 title: Array 및 WriteOnlyArray(C++/CX)
 ms.date: 01/22/2017
 ms.assetid: ef7cc5f9-cae6-4636-8220-f789e5b6aea4
-ms.openlocfilehash: b957e7d34486aced4796a029ebfdfa710dc71fcc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 44dc57d834272a1d78b0825ac5208d3b251aef6b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50530197"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420702"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Array 및 WriteOnlyArray(C++/CX)
 
@@ -79,13 +79,13 @@ Windows 런타임 형식 시스템에서는 가변 배열의 개념이 지원되
 
 데이터가 ABI 전반에서 [Platform::Array](../cppcx/platform-array-class.md)로 전달되고 효율성을 위해 C 스타일 배열에서 해당 데이터를 처리하려는 시나리오에서는 [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) 를 사용하여 추가 복사 작업을 방지할 수 있습니다. [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) 를 `Platform::Array`를 사용하는 매개 변수에 대한 인수로 전달하는 경우 `ArrayReference` 는 지정된 C 스타일 배열에 직접 데이터를 저장합니다. `ArrayReference` 에는 소스 데이터에 대한 잠금이 없으므로 호출이 완료되기 전에 다른 스레드에서 해당 데이터가 수정되거나 삭제되는 경우 결과가 정의되지 않습니다.
 
-다음 코드 조각은 [DataReader](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) 작업의 결과를 `Platform::Array` (일반 패턴)에 복사한 다음 `ArrayReference` 를 대신 사용하여 C 스타일 배열에 직접 데이터를 복사하는 방법을 보여 줍니다.
+다음 코드 조각은 [DataReader](/uwp/api/Windows.Storage.Streams.DataReader) 작업의 결과를 `Platform::Array` (일반 패턴)에 복사한 다음 `ArrayReference` 를 대신 사용하여 C 스타일 배열에 직접 데이터를 복사하는 방법을 보여 줍니다.
 
 [!code-cpp[cx_arrays#07](../cppcx/codesnippet/CPP/js-array/class1.h#07)]
 
 ## <a name="avoid-exposing-an-array-as-a-property"></a>속성으로 배열 노출 방지
 
-일반적으로 ref 클래스에서는 `Platform::Array` 형식을 속성으로 노출하지 않아야 합니다. 클라이언트 코드가 단일 요소에만 액세스하려고 하는 경우에도 전체 배열이 반환되기 때문입니다. public ref 클래스에서 시퀀스 컨테이너를 속성으로 노출해야 하는 경우 [Windows::Foundation::IVector](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) 를 선택하는 것이 더 낫습니다. 메타데이터에 게시되지 않는 전용 또는 내부 API에서는 [std::vector](../standard-library/vector-class.md)와 같은 표준 C++ 컨테이너를 사용하는 것이 좋습니다.
+일반적으로 ref 클래스에서는 `Platform::Array` 형식을 속성으로 노출하지 않아야 합니다. 클라이언트 코드가 단일 요소에만 액세스하려고 하는 경우에도 전체 배열이 반환되기 때문입니다. public ref 클래스에서 시퀀스 컨테이너를 속성으로 노출해야 하는 경우 [Windows::Foundation::IVector](/uwp/api/Windows.Foundation.Collections.IVector_T_) 를 선택하는 것이 더 낫습니다. 메타데이터에 게시되지 않는 전용 또는 내부 API에서는 [std::vector](../standard-library/vector-class.md)와 같은 표준 C++ 컨테이너를 사용하는 것이 좋습니다.
 
 ## <a name="see-also"></a>참고 항목
 

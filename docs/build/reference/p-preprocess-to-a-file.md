@@ -12,12 +12,12 @@ helpviewer_keywords:
 - output files, preprocessor
 - preprocessing output files
 ms.assetid: 123ee54f-8219-4a6f-9876-4227023d83fc
-ms.openlocfilehash: 9b3d84d94ed75acd68011b895afbc4f190019673
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5e1280b404668cebb64afa5a810d769a97bdbf85
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50622242"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418063"
 ---
 # <a name="p-preprocess-to-a-file"></a>/P(파일 전처리)
 
@@ -59,7 +59,7 @@ C 및 c + + 소스 파일을 전처리 하 고 전처리 된 출력 파일을 �
 CL /P /C ADD.C
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

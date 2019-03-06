@@ -30,16 +30,16 @@ helpviewer_keywords:
 - CUserTool [MFC], m_strInitialDirectory
 - CUserTool [MFC], m_strLabel
 ms.assetid: 7c287d3e-d012-488d-b4e1-aa0f83f294bb
-ms.openlocfilehash: 6c439ace92a407c8de3a200dedd61428b9bdbc28
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ca9035ecfcde0c2e82628c5509a16557a487b8cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437373"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290458"
 ---
 # <a name="cusertool-class"></a>CUserTool 클래스
 
-사용자 도구는 외부 응용 프로그램을 실행하는 메뉴 항목입니다. 합니다 **도구** 탭의 **사용자 지정** 대화 상자 ( [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) 사용자가 사용자 도구를 추가 하 고 이름, 명령, 인수를 지정할 수 있도록 및 각 사용자 도구에 대 한 초기 디렉터리입니다.
+사용자 도구는 외부 애플리케이션을 실행하는 메뉴 항목입니다. 합니다 **도구** 탭의 **사용자 지정** 대화 상자 ( [CMFCToolBarsCustomizeDialog 클래스](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) 사용자가 사용자 도구를 추가 하 고 이름, 명령, 인수를 지정할 수 있도록 및 각 사용자 도구에 대 한 초기 디렉터리입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -98,7 +98,7 @@ class CUserTool : public CObject
 
 ##  <a name="copyicontoclipboard"></a>  CUserTool::CopyIconToClipboard
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 BOOL CopyIconToClipboard();
@@ -218,7 +218,7 @@ CString m_strLabel;
 
 ##  <a name="serialize"></a>  CUserTool::Serialize
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 virtual void Serialize(CArchive& ar);
@@ -263,7 +263,7 @@ virtual HICON SetToolIcon();
 
 메뉴 항목에 표시할 아이콘을 로드 하려면이 메서드를 호출 합니다. 이 메서드는 도구를 사용 하는 실행 파일에서 아이콘을 검색 합니다. 아이콘에서 제공 하는 기본 아이콘이 없는 경우 [CUserTool::LoadDefaultIcon](#loaddefaulticon) 대신 사용 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

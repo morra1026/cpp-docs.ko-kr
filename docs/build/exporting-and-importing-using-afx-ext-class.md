@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], importing classes
 - exporting DLLs [C++], AFX_EXT_CLASS macro
 ms.assetid: 6b72cb2b-e92e-4ecd-bcab-c335e1d1cfde
-ms.openlocfilehash: 521fa0e0f786111e4e273685d2db6f6d011c72c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1451b452c5e2dc62e83e5b8f473248fa7c231877
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482578"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421196"
 ---
 # <a name="exporting-and-importing-using-afxextclass"></a>AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기
 
@@ -46,7 +46,7 @@ class AFX_EXT_CLASS CMyClass : public CDocument
 ```
 
 > [!CAUTION]
->  인라인 함수를 내보낼 때는 주의 때문일 버전 충돌 가능성을 만들 수 있습니다. 응용 프로그램 코드에 인라인 함수 확장을 가져옵니다. 따라서 함수를 나중에 다시 작성할 때이 업데이트 되지 않습니다 않으면 자체 응용 프로그램이 다시 컴파일됩니다. 일반적으로 DLL 함수를 사용 하는 응용 프로그램을 다시 작성 하지 않고 업데이트할 수 있습니다.
+>  인라인 함수를 내보낼 때는 주의 때문일 버전 충돌 가능성을 만들 수 있습니다. 인라인 함수는 응용 프로그램 코드로 확장됩니다. 따라서 나중에 이 함수를 다시 쓰는 경우 해당 응용 프로그램을 다시 컴파일해야만 함수가 업데이트됩니다. 일반적으로 DLL 함수를 사용 하는 응용 프로그램을 다시 작성 하지 않고 업데이트할 수 있습니다.
 
 ## <a name="exporting-individual-members-in-a-class"></a>클래스의 개별 멤버 내보내기
 
@@ -104,28 +104,28 @@ MFC에서 항상 사용 하기 때문에 `AFX_DATA` 기호 내의 해당 매크�
 
 ### <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [.Def 파일을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [C 언어 실행 파일에서 사용 하기 위해 c + + 함수 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C 또는 c + + 언어 실행 파일에서 사용 하기 위해 내보내기 C 함수](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
 - [사용할 내보내기 방법 결정](../build/determining-which-exporting-method-to-use.md)
 
-- [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
-- [트 데코 레이 된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](../build/reference/decorated-names.md)
 
 - [인라인 함수 가져오기 및 내보내기](../build/importing-and-exporting-inline-functions.md)
 
 - [상호 가져오기](../build/mutual-imports.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DLL에서 내보내기](../build/exporting-from-a-dll.md)

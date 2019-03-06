@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CEvent [MFC], SetEvent
 - CEvent [MFC], Unlock
 ms.assetid: df676042-ce27-4702-800a-e73ff4f44395
-ms.openlocfilehash: 883f3065c9d15ad793e6c0d548b911f10d166c0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d7731c87c6d6b0ebdec9a0c72c24b04334aa0662
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667900"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300273"
 ---
 # <a name="cevent-class"></a>CEvent 클래스
 
@@ -66,7 +66,7 @@ class CEvent : public CSyncObject
 
 의해 제어 되는 리소스에 액세스 하는 `CEvent` 이 방식으로 개체를 먼저 두 가지 형식의 변수를 만듭니다 [CSingleLock](../../mfc/reference/csinglelock-class.md) 또는 형식 [CMultiLock](../../mfc/reference/cmultilock-class.md) 리소스의 액세스 방법에 있습니다. 그런 다음 호출을 `Lock` 잠금 개체의 메서드 (예를 들어 [CMultiLock::Lock](../../mfc/reference/cmultilock-class.md#lock)). 이 시점에서 스레드 중 하나 리소스, 리소스를 해제 하 고 액세스를 얻기 또는 출시 될 리소스에 대 한 대기에 대 한 대기 시간 초과에 대 한 액세스를 확보 되며 리소스에 액세스 하지 못했습니다. 어떤 경우 든, 스레드로부터 안전한 방식으로 리소스에 액세스 합니다. 리소스를 해제 하려면 호출 `SetEvent` 신호 이벤트 개체를 사용 하 여는 `Unlock` 잠금 개체의 메서드 (예를 들어 [CMultiLock::Unlock](../../mfc/reference/cmultilock-class.md#unlock)), 또는 범위 하지 않는 잠금 개체입니다.
 
-사용 하는 방법에 대 한 자세한 내용은 `CEvent` 개체를 참조 하세요 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
+사용 하는 방법에 대 한 자세한 내용은 `CEvent` 개체를 참조 하세요. [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
 ## <a name="example"></a>예제
 
@@ -74,7 +74,7 @@ class CEvent : public CSyncObject
 
 [!code-cpp[NVC_MFC_Utilities#46](../../mfc/codesnippet/cpp/cevent-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -107,7 +107,8 @@ TRUE 인 경우에 대 한 스레드는 `CMultilock` 또는 `CSingleLock` 개체
 TRUE 이면 이벤트 개체는 수동 이벤트에 이벤트 개체는 자동 이벤트 그렇지 않은 경우를 지정 합니다.
 
 *lpszName*<br/>
-`CEvent` 개체의 이름입니다. 프로세스 경계를 넘어 개체를 사용할 경우에 제공 되어야 합니다. 생성자 빌드 새 이름이 기존 이벤트와 일치 하는 경우 `CEvent` 해당 이름의 이벤트를 참조 하는 개체입니다. 이름이 일치 이벤트를 발생 하지 않은 기존 동기화 개체를 생성 하지 못합니다. NULL 인 경우 이름이 null이 됩니다.
+
+  `CEvent` 개체의 이름입니다. 프로세스 경계를 넘어 개체를 사용할 경우에 제공 되어야 합니다. 생성자 빌드 새 이름이 기존 이벤트와 일치 하는 경우 `CEvent` 해당 이름의 이벤트를 참조 하는 개체입니다. 이름이 일치 이벤트를 발생 하지 않은 기존 동기화 개체를 생성 하지 못합니다. NULL 인 경우 이름이 null이 됩니다.
 
 *lpsaAttribute*<br/>
 이벤트 개체에 대 한 보안 특성입니다. 에 대 한 전체 설명은이 구조를 참조 하세요 [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK에 있습니다.
@@ -191,8 +192,7 @@ BOOL Unlock();
 
 이 멤버 함수는 현재 해당 잠금 개체를 다시 사용할 경우 작업이 완료 되 면 해제는 자동 이벤트를 소유한 스레드에 의해 호출 됩니다. 잠금 개체를 다시 사용 하지 않는 경우이 함수에서 잠금 개체의 소멸자가 호출 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSyncObject 클래스](../../mfc/reference/csyncobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

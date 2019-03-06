@@ -30,12 +30,12 @@ helpviewer_keywords:
 - CGdiObject [MFC], UnrealizeObject
 - CGdiObject [MFC], m_hObject
 ms.assetid: 1cba3ba5-3d49-4e43-8293-209299f2f6f4
-ms.openlocfilehash: 87545d67addb6a1f0931007d8912989968f7a74a
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 1b2b87173bf504455ba314fdd89ffae298cae6a8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177851"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301222"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject 클래스
 
@@ -74,8 +74,8 @@ class CGdiObject : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[CGdiObject::operator! =](#operator_neq)|하는 경우 두 GDI 개체가 논리적으로 같지 않은지 확인 합니다.|
-|[CGdiObject::operator = =](#operator_eq_eq)|두 GDI 개체가 논리적으로 동일한 지 확인 합니다.|
+|[CGdiObject::operator !=](#operator_neq)|하는 경우 두 GDI 개체가 논리적으로 같지 않은지 확인 합니다.|
+|[CGdiObject::operator ==](#operator_eq_eq)|두 GDI 개체가 논리적으로 동일한 지 확인 합니다.|
 |[CGdiObject::operator HGDIOBJ](#operator_hgdiobj)|연결된 된 Windows GDI 개체에 대 한 핸들을 검색합니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -250,7 +250,7 @@ int GetObject(
 |`CPen`|[LOGPEN](/windows/desktop/api/Wingdi/ns-wingdi-taglogpen)|
 |`CBrush`|[LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush)|
 |`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|
-|`CBitmap`|[비트맵](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|
+|`CBitmap`|[BITMAP](/windows/desktop/api/wingdi/ns-wingdi-tagbitmap)|
 |`CPalette`|WORD|
 |`CRgn`|지원 안 함|
 
@@ -270,11 +270,11 @@ UINT GetObjectType() const;
 
 성공할 경우 개체의 형식 그렇지 않으면 0입니다. 값은 다음 중 하나일 수 있습니다.
 
-- OBJ_BITMAP 비트맵
+- OBJ_BITMAP Bitmap
 
 - OBJ_BRUSH 브러시
 
-- OBJ_FONT 글꼴
+- OBJ_FONT Font
 
 - OBJ_PAL 색상표
 
@@ -324,7 +324,7 @@ HBITMAP, HRGN, HBRUSH, HPEN, HPALETTE, 또는 HFONT 포함 된 핸들을이 개�
 HGDIOBJ m_hObject;
 ```
 
-##  <a name="operator_neq"></a>  CGdiObject::operator! =
+##  <a name="operator_neq"></a>  CGdiObject::operator !=
 
 하는 경우 두 GDI 개체가 논리적으로 같지 않은지 확인 합니다.
 
@@ -341,7 +341,7 @@ BOOL operator!=(const CGdiObject& obj) const;
 
 GDI 개체를 왼쪽에서 오른쪽에는 GDI 개체 같음 인지 확인 합니다.
 
-##  <a name="operator_eq_eq"></a>  CGdiObject::operator = =
+##  <a name="operator_eq_eq"></a>  CGdiObject::operator ==
 
 두 GDI 개체가 논리적으로 동일한 지 확인 합니다.
 
@@ -386,7 +386,7 @@ BOOL UnrealizeObject();
 
 `UnrealizeObject` 주식 개체를 사용 하 여 함수를 사용 하지 해야 합니다. 합니다 `UnrealizeObject` 새 브러시 origin 설정 될 때마다 함수를 호출 해야 합니다 (이용 하 여 합니다 [CDC::SetBrushOrg](../../mfc/reference/cdc-class.md#setbrushorg) 함수). `UnrealizeObject` 현재 선택 된 색상표의 모든 디스플레이 컨텍스트를 현재 선택 된 브러시에 대 한 함수를 호출할 수 있어야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CBitmap 클래스](../../mfc/reference/cbitmap-class.md)<br/>

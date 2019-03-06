@@ -7,12 +7,12 @@ helpviewer_keywords:
 - program execution [C++]
 - NMAKE program
 ms.assetid: 24fab6e3-7e43-4da4-957a-88afbbcf8661
-ms.openlocfilehash: 1607624af56379e1c86088e0ff4553421dbd5488
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a8adb9255f8e56926a3d7b14af85735f1b1ce1e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539427"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414836"
 ---
 # <a name="nmake-reference"></a>NMAKE 참조
 
@@ -38,7 +38,7 @@ NMAKE를 사용하려면 개발자 명령 프롬프트 창에서 실행해야 �
 
 [메이크파일 전처리](../build/makefile-preprocessing.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [명령줄에서 C/C++ 코드 빌드](../build/building-on-the-command-line.md)<br/>
 [빌드 도구](../build/reference/c-cpp-build-tools.md)<br/>

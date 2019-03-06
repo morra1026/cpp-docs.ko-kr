@@ -6,12 +6,12 @@ helpviewer_keywords:
 - parallel map and reduce, example
 - parallel_reduce function, example
 ms.assetid: 9d19fac0-4ab6-4380-a375-3b18eeb87720
-ms.openlocfilehash: b73e46e63fc1b320a84322bf2b0efd7adf244ccb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba3ffb5cdae7dcc6f108f005fab33f9a1fee6a6f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50651856"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258660"
 ---
 # <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>방법: 매핑 수행 및 병렬 작업 줄이기
 
@@ -39,7 +39,7 @@ A *지도* 작업 시퀀스의 각 값에 함수를 적용 합니다. A *줄일*
 
 일반적으로 외부 또는 내부 루프만 평행화합니다. 비교적 적은 파일이 있고 각 파일이 많은 단어를 포함하는 경우 내부 루프를 평행화합니다. 비교적 많은 파일이 있고 각 파일이 적은 단어를 포함하는 경우 외부 루프를 평행화합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [병렬 알고리즘](../../parallel/concrt/parallel-algorithms.md)<br/>
 [parallel_transform 함수](reference/concurrency-namespace-functions.md#parallel_transform)<br/>

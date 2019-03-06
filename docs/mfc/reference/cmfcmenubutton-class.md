@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CMFCMenuButton [MFC], m_hMenu
 - CMFCMenuButton [MFC], m_nMenuResult
 ms.assetid: 53d3d459-1e5a-47c5-8b7f-2e61f6af5187
-ms.openlocfilehash: 4e29fd64540b52a8e6b70ee4d520b14a5a7d712b
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: bacd8726fd4c833f956f763cca81a88d41d1f167
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178319"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298206"
 ---
 # <a name="cmfcmenubutton-class"></a>CMFCMenuButton 클래스
 
@@ -77,7 +77,7 @@ class CMFCMenuButton : public CMFCButton
 [!code-cpp[NVC_MFC_NewControls#38](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#39](../../mfc/reference/codesnippet/cpp/cmfcmenubutton-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -207,7 +207,7 @@ A [CSize](../../atl-mfc-shared/reference/csize-class.md) 단추에 대 한 새 �
 
 버튼의 새 크기 단추 텍스트, 이미지 및 화살표에 맞게 계산 됩니다. 프레임 워크는 또한 가로 지 10 픽셀 및 세로 가장자리에 대 한 5 픽셀의 미리 정의 된 여백에 추가합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

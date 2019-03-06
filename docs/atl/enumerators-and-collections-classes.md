@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - enumerators, ATL classes
 ms.assetid: fcd093b2-98bf-444d-94ab-9a55520a5051
-ms.openlocfilehash: 28c741ec40b6d350dd5c5b1e777bd05ec083ad47
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 537dd14a02de6686a8db1e3a0d88983b8bb3cc34
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50538028"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263504"
 ---
 # <a name="enumerators-and-collections-classes"></a>열거자 및 컬렉션 클래스
 
@@ -32,7 +32,6 @@ ms.locfileid: "50538028"
 
 [ATL 컬렉션 및 열거자](../atl/atl-collections-and-enumerators.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)
-

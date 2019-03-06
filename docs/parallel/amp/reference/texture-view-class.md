@@ -14,12 +14,12 @@ f1_keywords:
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::set
 - AMP_GRAPHICS/Concurrency::graphics::texture_view::value_type
 ms.assetid: 6ec2e289-1626-4727-9592-07981cf1d27d
-ms.openlocfilehash: c76f1f9b00ea6e44f69f98286b83d4a84f12cac1
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 0f2b627afa216f03592fe913afece1a80f5bd5a6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657502"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275664"
 ---
 # <a name="textureview-class"></a>texture_view 클래스
 
@@ -91,7 +91,7 @@ class texture_view<const value_type, _Rank>
 |----------|-----------------|
 |[value_type](#value_type)|값 형식의 요소는 `texture_view`합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `_Texture_base`
 
@@ -103,7 +103,7 @@ class texture_view<const value_type, _Rank>
 
 **Namespace:** concurrency:: graphics
 
-##  <a name="dtor"></a> ~ texture_view
+##  <a name="dtor"></a> ~texture_view
 
 제거 된 `texture_view` 인스턴스.
 
@@ -288,7 +288,7 @@ const gather_return_type gather_alpha(
 
 4 차원 짧은 벡터 알파 (w) 구성 요소 4의 샘플링 텍셀 값을 포함 합니다.
 
-##  <a name="get"></a> 가져오기
+##  <a name="get"></a> get
 
 지정된 된 인덱스에 요소 값을 가져옵니다.
 
@@ -313,7 +313,7 @@ value_type get(
 
 요소의 값입니다.
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 지정 된와 동일한 텍스처의 뷰를 할당 `texture_view` 이 `texture_view` 인스턴스.
 
@@ -339,7 +339,7 @@ texture_view<const value_type, _Rank>& operator= (// [3] copy constructor
 
 이에 대 한 참조 `texture_view` 인스턴스.
 
-##  <a name="operator_at"></a> operator]
+##  <a name="operator_at"></a> operator[]
 
 인덱스 별로 요소 값을 반환합니다.
 
@@ -365,7 +365,7 @@ value_type operator[] (int _I0) const restrict(amp);
 
 요소 값으로 인덱싱된 `_Index`합니다.
 
-##  <a name="operator_call"></a> operator)
+##  <a name="operator_call"></a> operator()
 
 인덱스 별로 요소 값을 반환합니다.
 
@@ -484,6 +484,6 @@ Texture_view의 요소 값 형식입니다.
 typedef typename const value_type value_type;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

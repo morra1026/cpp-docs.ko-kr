@@ -15,12 +15,12 @@ helpviewer_keywords:
 - OnClose method [MFC]
 - PostNcDestroy method [MFC]
 ms.assetid: 5affca77-1999-4507-a2b2-9aa226611b4b
-ms.openlocfilehash: f3b3e022f869a3019f80ba5ee082ce5a959853a9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b64298bd2b0f14c30c824d78947a17628adec8b5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645404"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258205"
 ---
 # <a name="destroying-frame-windows"></a>프레임 창 제거
 
@@ -30,11 +30,10 @@ Framework에서 사용자가 창의 기본 프레임 창을 닫으면 [OnClose](
 
 주 창의 닫을 때 응용 프로그램을 종료 합니다. 저장 되지 않은 문서 수정 되 면 프레임 워크 문서를 저장 해야 하는 경우 요청 메시지 상자를 표시 하 고 필요한 경우 적절 한 문서를 저장 된다는 보장 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [문서 프레임 창 만들기](../mfc/creating-document-frame-windows.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임 창 사용](../mfc/using-frame-windows.md)
-

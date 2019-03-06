@@ -7,12 +7,12 @@ helpviewer_keywords:
 - derived classes [MFC], view classes
 - view classes [MFC], derived
 ms.assetid: dba42178-7459-4ccc-b025-f3d9b8a4b737
-ms.openlocfilehash: 9972586bd0cc4059e81d81be954a8cf0cada1f0d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61b38f6147a8bde4f6eb42cd144f9f64dac8dbd8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594499"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269294"
 ---
 # <a name="derived-view-classes-available-in-mfc"></a>MFC에서 사용할 수 있는 파생된 뷰 클래스
 
@@ -40,7 +40,6 @@ ms.locfileid: "50594499"
 
 응용 프로그램에서 이러한 클래스를 사용 하려면 응용 프로그램의 뷰 클래스를 파생 합니다. 관련 정보를 참조 하세요 [스크롤 및 크기 조정 뷰](../mfc/scrolling-and-scaling-views.md)합니다. 데이터베이스 클래스에 대 한 자세한 내용은 참조 하세요. [개요: 데이터베이스 프로그래밍](../data/data-access-programming-mfc-atl.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [뷰 사용](../mfc/using-views.md)
-

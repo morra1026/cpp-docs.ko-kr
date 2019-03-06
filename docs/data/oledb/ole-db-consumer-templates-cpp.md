@@ -7,12 +7,12 @@ helpviewer_keywords:
 - OLE DB consumer templates [C++]
 - databases [C++], consumers
 ms.assetid: d3e42612-0bc0-4d65-9c32-0e8a7b219e82
-ms.openlocfilehash: 6bda050efd7d2d4ac6df196e42ffe6be43ab1a65
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: f3b247660e65975630b9434685d0a12caf0fc257
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556610"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419176"
 ---
 # <a name="ole-db-consumer-templates-c"></a>OLE DB 소비자 템플릿(C++)
 
@@ -24,7 +24,7 @@ OLE DB 소비자 템플릿은 OLE DB 버전 2.6 사양을 지원합니다. (OLE 
 
 - OLE DB 프로그래밍을 위한 네이티브 C/C++ 데이터 형식을 제공합니다.
 
-OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [OLE DB Programmer's Reference](https://docs.microsoft.com/previous-versions/windows/desktop/ms718124(v=vs.85))합니다.
+OLE DB 템플릿을 사용하려면 C++ 템플릿, COM 및 OLE DB 인터페이스에 대해 잘 알고 있어야 합니다. OLE DB에 익숙하지 참조 [OLE DB Programmer's Reference](/previous-versions/windows/desktop/ms718124(v=vs.85))합니다.
 
 OLE DB 템플릿은 새로운 개체 모델을 추가하는 대신 기존 OLE DB 개체 모델을 지원합니다. OLE DB 소비자 템플릿의 최상위 계층 클래스는 OLE DB 사양에 정의된 구성 요소와 유사합니다. OLE DB 소비자 템플릿의 디자인에는 행 집합의 여러 접근자와 같은 고급 기능이 포함됩니다. 템플릿과 다중 상속을 사용하면 라이브러리가 작고 유연해집니다.
 
@@ -46,7 +46,7 @@ OLE DB 템플릿은 새로운 개체 모델을 추가하는 대신 기존 OLE DB
 
 세션에서는 행 집합 및 명령 개체를 만듭니다. [명령 개체](../../data/oledb/commands-and-tables.md) 를 통해 사용자는 데이터베이스와 상호 작용(예: SQL 명령 사용)할 수 있습니다. [행 집합 개체](../../data/oledb/accessors-and-rowsets.md) 는 탐색할 수 있고 [행을 업데이트, 삭제 및 삽입](../../data/oledb/updating-rowsets.md)할 수 있는 데이터 집합입니다.
 
-OLE DB 소비자는 지역 변수로 데이터베이스 테이블의 열을 바인딩합니다. 이렇게 하기 위해 [접근자](../../data/oledb/accessors-and-rowsets.md)를 사용하며, 여기에는 소비자 내에서 데이터가 저장되는 방법에 대한 지도가 들어 있습니다. 이 지도는 소비자 응용 프로그램에서 테이블 열과 로컬 버퍼(변수)간의 바인딩 집합으로 구성됩니다.
+OLE DB 소비자는 지역 변수로 데이터베이스 테이블의 열을 바인딩합니다. 이렇게 하기 위해 [접근자](../../data/oledb/accessors-and-rowsets.md)를 사용하며, 여기에는 소비자 내에서 데이터가 저장되는 방법에 대한 지도가 들어 있습니다. 이 지도는 소비자 애플리케이션에서 테이블 열과 로컬 버퍼(변수)간의 바인딩 집합으로 구성됩니다.
 
 소비자를 사용할 때 중요한 한 가지 개념은 소비자에서 [명령(또는 테이블) 클래스](../../data/oledb/commands-and-tables.md) 및 [사용자 레코드 클래스](../../data/oledb/user-records.md)의 두 가지 클래스를 선언한다는 것입니다. 접근자 클래스와 행 집합 클래스 둘 다에서 상속되는 명령(또는 테이블) 클래스를 통해 행 집합에 액세스합니다. 사용자 레코드 클래스에는 앞에서 설명한 행 집합 바인딩 지도가 포함됩니다.
 
@@ -60,5 +60,5 @@ OLE DB 소비자는 지역 변수로 데이터베이스 테이블의 열을 바�
 
 [OLE DB 프로그래밍](../../data/oledb/ole-db-programming.md)<br/>
 [데이터 액세스](../data-access-in-cpp.md)<br/>
-[OLE DB SDK 설명서](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
+[OLE DB SDK 설명서](/previous-versions/windows/desktop/ms722784(v=vs.85))<br/>
 [OLE DB 프로그래머 참조](/sql/connect/oledb/ole-db/oledb-driver-for-sql-server-programming)

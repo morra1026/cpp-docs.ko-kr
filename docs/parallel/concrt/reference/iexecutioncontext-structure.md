@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - IExecutionContext structure
 ms.assetid: f3108089-ecda-4b07-86db-3efae60c31e0
-ms.openlocfilehash: 3d546c7fb11877fbd8cd71d698869ff384b84186
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8c49df5a8c7f214b574b4f6118d182b63fec5dca
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50457751"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264965"
 ---
 # <a name="iexecutioncontext-structure"></a>IExecutionContext 구조체
 
@@ -45,7 +45,7 @@ struct IExecutionContext;
 
 동시성 런타임의 리소스 관리자와 인터페이스 하는 사용자 지정 스케줄러를 구현 하는 경우 구현 해야 합니다는 `IExecutionContext` 인터페이스입니다. 리소스 관리자가 만든 스레드를 실행 하 여 스케줄러를 대신 하 여 작업을 수행 합니다 `IExecutionContext::Dispatch` 메서드.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `IExecutionContext`
 
@@ -68,7 +68,7 @@ virtual void Dispatch(_Inout_ DispatchState* pDispatchState) = 0;
 *pDispatchState*<br/>
 이 실행 컨텍스트를 디스패치 하는 상태에 대 한 포인터입니다. 디스패치 상태에 대 한 자세한 내용은 참조 하세요. [DispatchState](dispatchstate-structure.md)합니다.
 
-##  <a name="getid"></a>  Iexecutioncontext:: Getid 메서드
+##  <a name="getid"></a>  IExecutionContext::GetId Method
 
 실행 컨텍스트에 대 한 고유 식별자를 반환합니다.
 
@@ -135,7 +135,7 @@ virtual void SetProxy(_Inout_ IThreadProxy* pThreadProxy) = 0;
 
 매개 변수를 저장 해야 하는 `pThreadProxy` 에 대 한 호출에서 반환 된 `GetProxy` 메서드. 리소스 관리자는 실행 컨텍스트를 사용 하 여 연결 된 스레드 프록시 스레드 프록시가 실행 되는 동안 변경 되지 것입니다는 `Dispatch` 메서드.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [IScheduler 구조체](ischeduler-structure.md)<br/>

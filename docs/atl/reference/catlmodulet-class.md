@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModuleT class
 ms.assetid: 9b74d02f-9117-47b1-a05e-c5945f83dd2b
-ms.openlocfilehash: 0d7673d634bad2d20dae63e4293f12e5530c4acd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2cd207038a92b944bf95575f0e0c820b8f09d615
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534903"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272050"
 ---
 # <a name="catlmodulet-class"></a>CAtlModuleT 클래스
 
@@ -62,7 +62,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 
 `CAtlModuleT` 초기화, 등록 및 모듈의 등록 취소에 대 한 지원을 제공 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -125,7 +125,7 @@ HRESULT RegisterServer(
 *bRegTypeLib*<br/>
 TRUE 이면 형식 라이브러리 등록 됩니다. 기본값은 FALSE입니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록할 개체의 CLSID 가리킵니다. NULL (기본값), 개체 맵의 모든 개체를 등록할 경우.
 
 ### <a name="return-value"></a>반환 값
@@ -159,7 +159,7 @@ HRESULT UnregisterServer(
 *bUnRegTypeLib*<br/>
 형식 라이브러리 등록을 취소할 수도 이면 TRUE입니다.
 
-*하면*<br/>
+*pCLSID*<br/>
 등록을 취소할 개체의 CLSID 가리킵니다. 경우 NULL (기본값), 개체 맵의 모든 개체를 등록 취소 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -176,14 +176,14 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 예약됨.
 
 ### <a name="return-value"></a>반환 값
 
 성공 하면 s_ok이 고, 또는 실패 시 오류 HRESULT 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CAtlModule 클래스](../../atl/reference/catlmodule-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

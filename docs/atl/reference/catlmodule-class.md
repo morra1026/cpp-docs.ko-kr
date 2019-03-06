@@ -20,12 +20,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAtlModule class
 ms.assetid: 63fe02f1-4c4b-4e7c-ae97-7ad7b4252415
-ms.openlocfilehash: 4d1c8dbfc7606efda50637ba17790ecafc80a976
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f01734d4ec9de323325dc793756f421388542ef2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50456825"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302015"
 ---
 # <a name="catlmodule-class"></a>CAtlModule 클래스
 
@@ -44,7 +44,7 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 |이름|설명|
 |----------|-----------------|
 |[CAtlModule::CAtlModule](#catlmodule)|생성자입니다.|
-|[CAtlModule:: ~ CAtlModule](#dtor)|소멸자입니다.|
+|[CAtlModule::~CAtlModule](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -76,7 +76,7 @@ ATL에서 모듈에 대 한 자세한 내용은 참조 하세요. [ATL 모듈 �
 
 이 클래스는 사용 되지 않는 대체 [CComModule 클래스](../../atl/reference/ccommodule-class.md) ATL.의 이전 버전에서 사용
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)
 
@@ -141,7 +141,7 @@ CAtlModule() throw();
 
 데이터 멤버를 초기화 하 고 모듈의 스레드 관련 중요 섹션을 시작 합니다.
 
-##  <a name="dtor"></a>  CAtlModule:: ~ CAtlModule
+##  <a name="dtor"></a>  CAtlModule::~CAtlModule
 
 소멸자입니다.
 
@@ -266,7 +266,7 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 *nResID*<br/>
 리소스 id입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 TRUE 이면 개체를 등록 해야 합니다. FALSE이 고, 그렇지 합니다.
 
 *pMapEntries*<br/>
@@ -300,7 +300,7 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 *lpszRes*<br/>
 리소스 이름입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 개체를 등록할지 여부를 나타냅니다.
 
 *pMapEntries*<br/>
@@ -338,7 +338,7 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 *lpszRes*<br/>
 리소스 이름입니다.
 
-*b 등록 하십시오*<br/>
+*bRegister*<br/>
 리소스 스크립트를 등록할지 여부를 나타냅니다.
 
 *pMapEntries*<br/>
@@ -352,7 +352,7 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 
 비슷합니다 [CAtlModule::UpdateRegistryFromResourceD](#updateregistryfromresourced) 제외한 `CAtlModule::UpdateRegistryFromResourceS` ATL 레지스트리 구성 요소 (등록자)에 정적 링크를 만듭니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)<br/>

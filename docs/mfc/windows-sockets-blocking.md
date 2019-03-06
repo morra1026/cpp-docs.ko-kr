@@ -8,16 +8,16 @@ helpviewer_keywords:
 - sockets [MFC], behavior on different Windows platforms
 - blocking mode sockets
 ms.assetid: 10aca9b1-bfba-41a8-9c55-ea8082181e63
-ms.openlocfilehash: 7b41f034e08570e418bf24d9d720795eafc37932
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 26a361bc63da5f6e75144cc91fe837498a7f656b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50610576"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272349"
 ---
 # <a name="windows-sockets-blocking"></a>Windows 소켓: 차단
 
-이 문서 및 두 개의 참조 문서에서는 Windows 소켓 프로그래밍의 몇 가지 문제를 설명합니다. 이 문서는 차단에 대해 설명합니다. 다른 문제는 문서에 나와: [Windows 소켓: 바이트 순서](../mfc/windows-sockets-byte-ordering.md) 하 고 [Windows 소켓: 문자열 변환](../mfc/windows-sockets-converting-strings.md)합니다.
+이 문서 및 두 개의 참조 문서에서는 Windows 소켓 프로그래밍의 몇 가지 문제를 설명합니다. 이 문서는 차단에 대해 설명합니다. 다른 문제는 문서에 적용 됩니다. [Windows 소켓: 바이트 순서](../mfc/windows-sockets-byte-ordering.md) 고 [Windows 소켓: 문자열 변환](../mfc/windows-sockets-converting-strings.md)합니다.
 
 사용 하거나 클래스에서 파생 되는 경우 [CAsyncSocket](../mfc/reference/casyncsocket-class.md), 이러한 문제를 직접 관리 해야 합니다. 사용 하거나 클래스에서 파생 되는 경우 [CSocket](../mfc/reference/csocket-class.md), MFC를 관리 합니다.
 
@@ -36,22 +36,21 @@ ms.locfileid: "50610576"
 
 Windows에서 차단 호출은 좋지 않은 방법으로 고려됩니다. 기본적으로 [CAsyncSocket](../mfc/reference/casyncsocket-class.md) 고 지 원하는 비동기 호출, 콜백 알림을 사용해 직접 차단을 관리 해야 합니다. 클래스 [CSocket](../mfc/reference/csocket-class.md), 다른 한편으로 동기적입니다. 이 클래스는 사용자를 위해 Windows 메시지를 제공하고 차단을 관리합니다.
 
-차단에 대한 자세한 내용은 Windows Sockets 사양을 참조하십시오. "On" 함수에 대 한 자세한 내용은 참조 하세요 [Windows 소켓: 소켓 알림](../mfc/windows-sockets-socket-notifications.md) 하 고 [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)합니다.
+차단에 대한 자세한 내용은 Windows Sockets 사양을 참조하십시오. "On" 함수에 대 한 자세한 내용은 참조 하세요. [Windows 소켓: 알림 소켓](../mfc/windows-sockets-socket-notifications.md) 고 [Windows 소켓: 소켓 클래스에서 파생](../mfc/windows-sockets-deriving-from-socket-classes.md)합니다.
 
 자세한 내용은 다음을 참조하세요.
 
-- [Windows 소켓: CAsyncSocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
+- [Windows 소켓: Casyncsocket 클래스 사용](../mfc/windows-sockets-using-class-casyncsocket.md)
 
-- [Windows 소켓: 소켓과 아카이브 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
+- [Windows 소켓: 소켓을 사용 하 여 아카이브를 함께 사용](../mfc/windows-sockets-using-sockets-with-archives.md)
 
-- [Windows 소켓: 백그라운드](../mfc/windows-sockets-background.md)
+- [Windows 소켓: 배경](../mfc/windows-sockets-background.md)
 
-- [Windows 소켓: 스트림 소켓](../mfc/windows-sockets-stream-sockets.md)
+- [Windows 소켓: Stream 소켓](../mfc/windows-sockets-stream-sockets.md)
 
-- [Windows 소켓: 데이터그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
+- [Windows 소켓: 데이터 그램 소켓](../mfc/windows-sockets-datagram-sockets.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC의 Windows 소켓](../mfc/windows-sockets-in-mfc.md)<br/>
 [CAsyncSocket::OnSend](../mfc/reference/casyncsocket-class.md#onsend)
-

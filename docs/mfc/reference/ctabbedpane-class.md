@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CTabbedPane [MFC], m_bTabsAlwaysTop
 - CTabbedPane [MFC], m_pTabWndRTC
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-ms.openlocfilehash: d345d7a5aef53ac7975564a580f1353157a01376
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: af9c65e51f7230b0fc6a59d0eed42eca08d24837
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645720"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263353"
 ---
 # <a name="ctabbedpane-class"></a>CTabbedPane 클래스
 
@@ -82,7 +82,7 @@ class CTabbedPane : public CBaseTabbedPane
 
 Outlook 스타일 탭 대신 일반 탭을 지정 하려면 AFX_CBRS_REGULAR_TABS 스타일을 전달 합니다 [cdockablepane:: Createex](../../mfc/reference/cdockablepane-class.md#createex) 메서드.
 
-분리 가능한 탭을 포함하는 탭 창을 만드는 경우 프레임워크에서 자동으로 창을 제거할 수 있으므로 포인터를 저장하면 안 됩니다. 탭 창에 대한 포인터를 가져오려면 `CBasePane::GetParentTabbedPane` 메서드를 호출합니다.
+분리 가능한 탭을 포함하는 탭 창을 만드는 경우 프레임워크에서 자동으로 창을 삭제할 수 있으므로 포인터를 저장하면 안 됩니다. 탭 창에 대한 포인터를 가져오려면 `CBasePane::GetParentTabbedPane` 메서드를 호출합니다.
 
 ## <a name="example"></a>예제
 
@@ -141,7 +141,7 @@ pTabbedBar->GetUnderlyingWindow ()->EnableTabDetach (1,
     FALSE);
 ```
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -340,10 +340,10 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 
 사용 하 여 [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) 사용 하도록 설정 하거나 자동 색 기능이 사용 하지 않도록 설정 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane 클래스](../../mfc/reference/cdockablepane-class.md)<br/>
+[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
 [CBaseTabbedPane 클래스](../../mfc/reference/cbasetabbedpane-class.md)<br/>
 [CMFCOutlookBar 클래스](../../mfc/reference/cmfcoutlookbar-class.md)

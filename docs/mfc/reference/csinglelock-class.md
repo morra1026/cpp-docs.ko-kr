@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CSingleLock [MFC], Lock
 - CSingleLock [MFC], Unlock
 ms.assetid: 7dae7288-8066-4a3e-85e0-78d28bfc6bc8
-ms.openlocfilehash: 2d65af79971aab88884efe1f92d1090194b737d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31bd43f7f7a6fbccd4680db013ac5c654123061e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459568"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259895"
 ---
 # <a name="csinglelock-class"></a>CSingleLock 클래스
 
@@ -57,7 +57,7 @@ class CSingleLock
 
 `CSingleLock` 개체에서 파생 된 개체의 있어야 [CSyncObject](../../mfc/reference/csyncobject-class.md)합니다. 이것이 일반적으로 제어 된 리소스 클래스의 데이터 멤버입니다. 사용 하는 방법에 대 한 자세한 내용은 `CSingleLock` 문서를 참조 하는 개체를 [다중 스레딩: 동기화 클래스 사용 방법](../../parallel/multithreading-how-to-use-the-synchronization-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CSingleLock`
 
@@ -166,7 +166,7 @@ BOOL Unlock(
 
 [!code-cpp[NVC_MFC_Utilities#21](../../mfc/codesnippet/cpp/csinglelock-class_3.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CMultiLock 클래스](../../mfc/reference/cmultilock-class.md)

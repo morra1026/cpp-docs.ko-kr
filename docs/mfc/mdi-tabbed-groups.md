@@ -5,12 +5,12 @@ helpviewer_keywords:
 - mdi [MFC], tabbed groups
 - tabbed grous [MFC]
 ms.assetid: 0a464f36-39b7-4e68-8b67-ec175de28377
-ms.openlocfilehash: cefd97b377c2755b158830d8e649ac40f90fee11
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6b68d1bc06a6827ca94b05fa2760206f424d40fe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50544493"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289522"
 ---
 # <a name="mdi-tabbed-groups"></a>MDI 탭 그룹
 
@@ -42,7 +42,8 @@ ms.locfileid: "50544493"
 
 다음은 MDI 탭 그룹에서 일반적으로 수행되는 작업입니다.
 
-- 주 프레임 창에 대해 MDI 탭 그룹을 사용 하도록 설정 하려면 호출 [cmdiframewndex:: Enablemditabbedgroups](../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups)합니다. 이 메서드의 두 번째 매개 변수는 `CMDITabInfo` 클래스의 인스턴스입니다. `CMDIFrameWndEx::EnableMDITabbedGroups`를 호출하기 전에 기본 매개 변수를 사용하거나 이를 수정할 수 있습니다.
+- 주 프레임 창에 대해 MDI 탭 그룹을 사용 하도록 설정 하려면 호출 [cmdiframewndex:: Enablemditabbedgroups](../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups)합니다. 이 메서드의 두 번째 매개 변수는 `CMDITabInfo` 클래스의 인스턴스입니다. 
+  `CMDIFrameWndEx::EnableMDITabbedGroups`를 호출하기 전에 기본 매개 변수를 사용하거나 이를 수정할 수 있습니다.
 
 - 런타임에 MDI 탭 그룹의 속성을 수정하려면 `CMDITabInfo` 개체를 만들거나 수정하고 `CMDIFrameWndEx::EnableMDITabbedGroups`를 다시 호출합니다.
 
@@ -60,7 +61,7 @@ ms.locfileid: "50544493"
 
 - 응용 프로그램에서 MDI 탭 그룹의 레이아웃을 저장하려면 `CMDIFrameWndEx::SaveMDIState`를 호출합니다. 이전에 저장된 MDI 탭 그룹 프로필을 로드하려면 `CMDIFrameWndEx::LoadMDIState`를 호출합니다. 또한 이러한 메서드를 호출해서 열려 있는 문서의 목록을 MDI 응용 프로그램에서 로드하거나 저장할 수 있습니다. 저장 하 고 MDI 상태를 로드 하는 방법에 대 한 자세한 내용은 참조 하세요. [cmdiframewndex:: Loadmdistate](../mfc/reference/cmdiframewndex-class.md#loadmdistate)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 요소](../mfc/user-interface-elements-mfc.md)<br/>
 [CMDIFrameWndEx 클래스](../mfc/reference/cmdiframewndex-class.md)<br/>

@@ -11,16 +11,17 @@ f1_keywords:
 helpviewer_keywords:
 - cancellation_token_source class
 ms.assetid: 3548b1a0-12b0-4334-95db-4bf57141c066
-ms.openlocfilehash: e0b636d22eede9eb6a9d9268241f912bb80fcbf9
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 330473db1011af661e2cfa2c5861987bce786e40
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446750"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296789"
 ---
 # <a name="cancellationtokensource-class"></a>cancellation_token_source 클래스
 
-`cancellation_token_source` 클래스는 일부 취소 가능한 작업을 취소하는 기능을 나타냅니다.
+
+  `cancellation_token_source` 클래스는 일부 취소 가능한 작업을 취소하는 기능을 나타냅니다.
 
 ## <a name="syntax"></a>구문
 
@@ -53,7 +54,7 @@ class cancellation_token_source;
 |[operator=](#operator_eq)||
 |[연산자==](#operator_eq_eq)||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `cancellation_token_source`
 
@@ -114,15 +115,16 @@ static cancellation_token_source create_linked_source(_Iter _Begin, _Iter _End);
 *_Src*<br/>
 취소 시 반환된 토큰 소스가 취소되는 토큰입니다. 반환된 토큰 소스 역시 이 매개 변수에 포함된 소스와 별도로 취소될 수 있습니다.
 
-*시작 (_b)*<br/>
+*_Begin*<br/>
 해당 되는 c + + 표준 라이브러리 반복기 토큰 범위의 시작 부분에 취소에 대 한 수신 대기 하도록 합니다.
 
-*(_E)*<br/>
+*_End*<br/>
 해당 되는 c + + 표준 라이브러리 반복기 토큰 범위의 끝에 취소에 대 한 수신 대기 하도록 합니다.
 
 ### <a name="return-value"></a>반환 값
 
-`cancellation_token_source` 매개 변수에서 제공된 토큰이 취소된 경우 취소되는 `_Src`입니다.
+
+  `cancellation_token_source` 매개 변수에서 제공된 토큰이 취소된 경우 취소되는 `_Src`입니다.
 
 ##  <a name="get_token"></a> get_token
 
@@ -149,7 +151,7 @@ bool operator!= (const cancellation_token_source& _Src) const;
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_eq"></a> 연산자 =
+##  <a name="operator_eq"></a> operator=
 
 ```
 cancellation_token_source& operator= (const cancellation_token_source& _Src);
@@ -164,7 +166,7 @@ cancellation_token_source& operator= (cancellation_token_source&& _Src);
 
 ### <a name="return-value"></a>반환 값
 
-##  <a name="operator_eq_eq"></a> 연산자 = =
+##  <a name="operator_eq_eq"></a> operator==
 
 ```
 bool operator== (const cancellation_token_source& _Src) const;
@@ -177,6 +179,6 @@ bool operator== (const cancellation_token_source& _Src) const;
 
 ### <a name="return-value"></a>반환 값
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

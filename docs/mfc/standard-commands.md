@@ -15,18 +15,18 @@ helpviewer_keywords:
 - Help [MFC], menus
 - programmer-defined IDs [MFC]
 ms.assetid: 88cf3ab4-79b3-4ac6-9365-8ac561036fbf
-ms.openlocfilehash: fa98a250e6f9de3005cf4978fe66689363865879
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 987023322e38584d10901c1ab1fe20ac46926bd2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50485698"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272089"
 ---
 # <a name="standard-commands"></a>표준 명령
 
 프레임 워크는 많은 표준 명령 메시지를 정의합니다. 이러한 명령에 대 한 Id는 일반적으로 폼을 수행합니다.
 
-**ID_** *소스*_*항목*
+**ID_** *Source*_*Item*
 
 여기서 *소스* 는 일반적으로 메뉴 이름 및 *항목* 는 메뉴 항목입니다. 예를 들어, 파일 메뉴에서 새 명령에 대 한 명령 ID ID_FILE_NEW입니다. 표준 명령 Id 설명서에서 굵게에서 표시 됩니다. 프로그래머 정의 Id는 주변 텍스트 다른 글꼴로 표시 됩니다.
 
@@ -54,7 +54,6 @@ ms.locfileid: "50485698"
 
 지원 되는 명령에 대 한 자세한 내용은 및 제공 하는 구현 수준의 [Technical Note 22](../mfc/tn022-standard-commands-implementation.md)합니다. 표준 명령 AFXRES 파일에 정의 됩니다. 8.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [사용자 인터페이스 개체 및 명령 ID](../mfc/user-interface-objects-and-command-ids.md)
-

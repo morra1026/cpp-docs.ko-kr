@@ -10,12 +10,12 @@ helpviewer_keywords:
 - message maps, ATL
 - ATL, message handlers
 ms.assetid: 1f97bc16-a8a0-4cf0-b90f-1778813a5c8e
-ms.openlocfilehash: 325851b75cef340fe5dcc762df54c40ded1ed704
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 617b7b4592c96625b44fbe5c2b93da971a423128
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534084"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293175"
 ---
 # <a name="cmessagemap-class"></a>CMessageMap 클래스
 
@@ -96,7 +96,7 @@ TRUE 이면 메시지 처리. 그렇지 않으면 FALSE입니다.
 
 창 프로시저에 의해 호출 된 [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) 개체 또는 개체는 동적으로 연결을 메시지 맵에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDynamicChain 클래스](../../atl/reference/cdynamicchain-class.md)<br/>
 [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>

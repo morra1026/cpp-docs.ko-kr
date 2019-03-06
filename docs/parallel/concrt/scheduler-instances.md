@@ -1,17 +1,17 @@
 ---
-title: Scheduler 인스턴스
+title: 스케줄러 인스턴스
 ms.date: 11/04/2016
 helpviewer_keywords:
 - scheduler instances
 ms.assetid: 4819365f-ef99-49cc-963e-50a2a35a8d6b
-ms.openlocfilehash: 370f8a3a8fdcc8e1daaee2d3424f939fb719a449
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 19bd871857dcef6aaef153798388c0272239fa1f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50570172"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301300"
 ---
-# <a name="scheduler-instances"></a>Scheduler 인스턴스
+# <a name="scheduler-instances"></a>스케줄러 인스턴스
 
 이 문서에서는 동시성 런타임을 사용 하는 방법에 대 한 스케줄러 인스턴스의 역할을 설명 합니다 [concurrency:: scheduler](../../parallel/concrt/reference/scheduler-class.md) 하 고 [concurrency:: currentscheduler](../../parallel/concrt/reference/currentscheduler-class.md) 클래스를 만들고 관리 스케줄러 인스턴스입니다. 스케줄러 인스턴스는 특정 유형의 워크 로드를 사용 하 여 명시적 일정 예약 정책을 연결 하려는 경우에 유용 합니다. 예를 들어 높은 스레드 우선 순위로 일부 작업을 실행하기 위한 스케줄러 인스턴스를 하나 만들고, 기본 스케줄러를 사용하여 보통 스레드 우선 순위로 다른 작업을 실행할 수 있습니다.
 
@@ -38,7 +38,7 @@ ms.locfileid: "50570172"
 
 일반적으로 `CurrentScheduler` 클래스 현재 스케줄러에 액세스 하는 데 사용 됩니다. `Scheduler` 클래스는 현재 없는 스케줄러를 관리 해야 하는 경우에 유용 합니다.
 
-다음 섹션에서는 만들고 스케줄러 인스턴스 관리 방법에 설명 합니다. 이러한 작업을 보여 주는 전체 예제를 참조 하세요 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)합니다.
+다음 섹션에서는 만들고 스케줄러 인스턴스 관리 방법에 설명 합니다. 이러한 작업을 보여 주는 전체 예제를 참조 하세요. [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)합니다.
 
 [[맨 위로 이동](#top)]
 
@@ -120,12 +120,11 @@ ms.locfileid: "50570172"
 
 ##  <a name="example"></a> 예제
 
-만들기 및 스케줄러 인스턴스를 관리 하는 방법의 기본 예제를 참조 하세요 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)합니다.
+만들기 및 스케줄러 인스턴스를 관리 하는 방법의 기본 예제를 참조 하세요. [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [작업 스케줄러](../../parallel/concrt/task-scheduler-concurrency-runtime.md)<br/>
 [방법: 스케줄러 인스턴스 관리](../../parallel/concrt/how-to-manage-a-scheduler-instance.md)<br/>
 [스케줄러 정책](../../parallel/concrt/scheduler-policies.md)<br/>
 [일정 그룹](../../parallel/concrt/schedule-groups.md)
-

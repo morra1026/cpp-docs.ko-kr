@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CException [MFC], Delete
 - CException [MFC], ReportError
 ms.assetid: cfacf14d-bfe4-4666-a5c7-38b800512920
-ms.openlocfilehash: 53dac18b2ee0176eba0a869a0af254ff2978cffd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 689afa2ffbc27feec6f9e1704a6b295d5eabfaee
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562229"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270425"
 ---
 # <a name="cexception-class"></a>CException 클래스
 
@@ -74,7 +74,7 @@ class AFX_NOVTABLE CException : public CObject
 
 매크로, 중 하나에서 예외가 포착 되는 경우는 `CException` 삭제 하지 않을 직접; 개체는 자동으로 삭제 됩니다. 사용 하 여 예외가 포착 되는 경우는 **catch** 키워드를 자동으로 삭제 되지 않습니다. 문서를 참조 하세요 [예외 처리 (MFC)](../exception-handling-in-mfc.md) 예외 개체를 삭제 하는 경우에 대 한 자세한 내용은 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](cobject-class.md)
 
@@ -180,7 +180,7 @@ virtual int ReportError(
 
 ### <a name="parameters"></a>매개 변수
 
-*n 형식*<br/>
+*nType*<br/>
 메시지 상자의 스타일을 지정합니다. 어떤 조합도 적용할 합니다 [메시지 상자 스타일](styles-used-by-mfc.md#message-box-styles) 상자로 합니다. 이 매개 변수를 지정 하지 않으면 기본값은 MB_OK 합니다.
 
 *nMessageID*<br/>
@@ -226,10 +226,9 @@ else
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](cobject-class.md)<br/>
 [계층 구조 차트](../hierarchy-chart.md)<br/>
 [예외 처리](exception-processing.md)<br/>
-[I: 나만의 사용자 지정 예외 클래스를 만드는 방법](http://go.microsoft.com/fwlink/p/?linkid=128045)
-
+[어떻게 할까요 나만의 사용자 지정 예외 클래스 만들기](http://go.microsoft.com/fwlink/p/?linkid=128045)

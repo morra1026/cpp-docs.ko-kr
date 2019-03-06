@@ -10,12 +10,12 @@ helpviewer_keywords:
 - NMAKE program, running
 - command files, NMAKE
 ms.assetid: 0421104d-8b7b-4bf3-86c1-928d9b7c1a8c
-ms.openlocfilehash: 81f38792893955b476dfc7eda91ed00603924a8f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1d3555dc66ba9939ce346a692df9d0151fcf87d2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646214"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423081"
 ---
 # <a name="running-nmake"></a>NMAKE 실행
 
@@ -37,6 +37,6 @@ NMAKE 빌드만 지정할 *대상* 또는 지정 되지 않은 경우 첫 번째
 
 [NMAKE의 종료 코드](../build/exit-codes-from-nmake.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMAKE 참조](../build/nmake-reference.md)

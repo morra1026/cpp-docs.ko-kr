@@ -133,12 +133,12 @@ helpviewer_keywords:
 - CPane [MFC], m_bHandleMinSize
 - CPane [MFC], m_recentDockInfo
 ms.assetid: 5c651a64-3c79-4d94-9676-45f6402a6bc5
-ms.openlocfilehash: 1c485d1b6f2b0557243973774bf9dfb382c2595b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b660d181aada8abeb61b397fb30b097897e74f65
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50550438"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326779"
 ---
 # <a name="cpane-class"></a>CPane Class
 
@@ -173,9 +173,9 @@ class CPane : public CBasePane
 |[CPane::CanBeTabbedDocument](#canbetabbeddocument)|창에는 탭된 문서가 변환할 수 있는지 여부를 결정 합니다.|
 |[CPane::ConvertToTabbedDocument](#converttotabbeddocument)|도킹 가능한 창을 탭 된 문서로 변환합니다.|
 |[CPane::CopyState](#copystate)|창의 상태를 복사합니다. (재정의 [CBasePane::CopyState](../../mfc/reference/cbasepane-class.md#copystate).)|
-|[Cpane:: Create](#create)|컨트롤 막대를 만들고 연결 하는 `CPane` 개체입니다.|
-|[Cpane:: Createdefaultminiframe](#createdefaultminiframe)|부동 창에 대 한 미니 프레임 창을 만듭니다.|
-|[Cpane:: Createex](#createex)|컨트롤 막대를 만들고 연결 하는 `CPane` 개체입니다.|
+|[CPane::Create](#create)|컨트롤 막대를 만들고 연결 하는 `CPane` 개체입니다.|
+|[CPane::CreateDefaultMiniframe](#createdefaultminiframe)|부동 창에 대 한 미니 프레임 창을 만듭니다.|
+|[CPane::CreateEx](#createex)|컨트롤 막대를 만들고 연결 하는 `CPane` 개체입니다.|
 |`CPane::CreateObject`|프레임워크에서 이 클래스 형식의 동적 인스턴스를 만드는 데 사용합니다.|
 |[CPane::DockByMouse](#dockbymouse)|메서드를 도킹 마우스를 사용 하 여 창을 도킹 합니다.|
 |[CPane::DockPane](#dockpane)|부동 창의 기본 창으로 도킹합니다.|
@@ -192,7 +192,7 @@ class CPane : public CBasePane
 |[CPane::GetHotSpot](#gethotspot)|내부에 저장 된 핫 스폿 반환 `CMFCDragFrameImpl` 개체입니다.|
 |[CPane::GetMinSize](#getminsize)|창의 크기에 허용 되는 최소값을 검색 합니다.|
 |[CPane::GetPaneName](#getpanename)|창의 제목을 검색합니다.|
-|`CPane::GetResizeStep`|내부적으로 사용 합니다.|
+|`CPane::GetResizeStep`|내부적으로 사용됩니다.|
 |`CPane::GetThisClass`|에 대 한 포인터를 가져오는 데 프레임 워크에 의해 합니다 [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) 이 클래스 형식과 연결 된 개체입니다.|
 |[CPane::GetVirtualRect](#getvirtualrect)|검색 된 *가상 사각형* 창입니다.|
 |[CPane::IsChangeState](#ischangestate)|창에는이 메서드는 다른 창 기준으로 창의 위치를 분석 이동 하는 행 및 미니 프레임 창을 도킹 하 고 적절 한 AFX_CS_STATUS 값을 반환 합니다.|
@@ -207,13 +207,13 @@ class CPane : public CBasePane
 |[CPane::OnAfterChangeParent](#onafterchangeparent)|창의 부모 변경 되었을 때 프레임 워크에서 호출 됩니다.|
 |[CPane::OnBeforeChangeParent](#onbeforechangeparent)|창의 부모 변경 되려고 할 때 프레임 워크에서 호출 됩니다.|
 |[CPane::OnPressCloseButton](#onpressclosebutton)|사용자가 창의 캡션을 닫기 단추를 선택 하는 경우 프레임 워크에서 호출 됩니다.|
-|`CPane::OnProcessDblClk`|내부적으로 사용 합니다.|
-|[Cpane:: Onshowcontrolbarmenu](#onshowcontrolbarmenu)|특수 창 메뉴를 표시하려고 할 때 프레임워크에서 호출됩니다.|
-|[Cpane:: Onshowcontrolbarmenu](#onshowcontrolbarmenu)|특수 창 메뉴를 표시하려고 할 때 프레임워크에서 호출됩니다.|
-|`CPane::PrepareToDock`|내부적으로 사용 합니다.|
-|[Cpane:: Recalclayout](#recalclayout)|창에 대 한 레이아웃 정보를 다시 계산합니다. (재정의 [CBasePane::RecalcLayout](../../mfc/reference/cbasepane-class.md#recalclayout).)|
+|`CPane::OnProcessDblClk`|내부적으로 사용됩니다.|
+|[CPane::OnShowControlBarMenu](#onshowcontrolbarmenu)|특수 창 메뉴를 표시하려고 할 때 프레임워크에서 호출됩니다.|
+|[CPane::OnShowControlBarMenu](#onshowcontrolbarmenu)|특수 창 메뉴를 표시하려고 할 때 프레임워크에서 호출됩니다.|
+|`CPane::PrepareToDock`|내부적으로 사용됩니다.|
+|[CPane::RecalcLayout](#recalclayout)|창에 대 한 레이아웃 정보를 다시 계산합니다. (재정의 [CBasePane::RecalcLayout](../../mfc/reference/cbasepane-class.md#recalclayout).)|
 |[CPane::SaveState](#savestate)|레지스트리에 창의 상태를 저장합니다. (재정의 [CBasePane::SaveState](../../mfc/reference/cbasepane-class.md#savestate).)|
-|[Cpane:: Setactiveingroup](#setactiveingroup)|창이 활성으로 플래그 지정합니다.|
+|[CPane::SetActiveInGroup](#setactiveingroup)|창이 활성으로 플래그 지정합니다.|
 |[CPane::SetBorders](#setborders)|창의 테두리 값을 설정 합니다.|
 |[CPane::SetClientHotSpot](#setclienthotspot)|창에 대 한 핫 스폿 설정합니다.|
 |[CPane::SetDockState](#setdockstate)|도킹 된 창에 대 한 상태 정보를 복원 합니다.|
@@ -226,7 +226,7 @@ class CPane : public CBasePane
 |[CPane::UndockPane](#undockpane)|창 도킹 사이트, 기본 슬라이더 또는 미니 프레임 창의 현재 도킹 될 위치에서 제거 합니다. (재정의 [CBasePane::UndockPane](../../mfc/reference/cbasepane-class.md#undockpane).)|
 |[CPane::UpdateVirtualRect](#updatevirtualrect)|가상 사각형을 업데이트 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -240,7 +240,7 @@ class CPane : public CBasePane
 |이름|설명|
 |----------|-----------------|
 |[CPane::m_bHandleMinSize](#m_bhandleminsize)|창에 대 한 최소 크기의 일관 된 처리할 수 있습니다.|
-|[M_recentdockinfo](#m_recentdockinfo)|최근 도킹 정보가 들어 있습니다.|
+|[CPane::m_recentDockInfo](#m_recentdockinfo)|최근 도킹 정보가 들어 있습니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -248,7 +248,7 @@ class CPane : public CBasePane
 
 클래스를 파생 하는 경우 `CPane`에서 도킹 될 수는 [CDockSite](../../mfc/reference/cdocksite-class.md) 에서 놓을지 수 및는 [CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -464,7 +464,7 @@ virtual void CopyState(CPane* pOrgBar);
 
 이 메서드는 상태를 복사 *pOrgBar* 현재 창에 있습니다.
 
-##  <a name="create"></a>  Cpane:: Create
+##  <a name="create"></a>  CPane::Create
 
 컨트롤 막대를 만들고에 연결 합니다 [CPane](../../mfc/reference/cpane-class.md) 개체입니다.
 
@@ -512,7 +512,7 @@ virtual BOOL Create(
 
 명시적으로 초기화 되지 않은 경우 [M_recentdockinfo](#m_recentdockinfo) 를 호출 하기 전에 `Create`, 매개 변수 *rect* 사각형 부동 때나 도킹 된 창으로 사용 됩니다.
 
-##  <a name="createdefaultminiframe"></a>  Cpane:: Createdefaultminiframe
+##  <a name="createdefaultminiframe"></a>  CPane::CreateDefaultMiniframe
 
 부동 창에 대 한 미니 프레임 창을 만듭니다.
 
@@ -535,7 +535,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 
 미니 프레임 창에 대 한 런타임 클래스 정보에 저장 되는 `CPane::m_pMiniFrameRTC` 멤버입니다. 사용자 지정 된 미니 프레임 창 만들기로 결정 하는 경우이 멤버를 설정 하는 파생된 클래스를 사용할 수 있습니다.
 
-##  <a name="createex"></a>  Cpane:: Createex
+##  <a name="createex"></a>  CPane::CreateEx
 
 컨트롤 막대를 만들고에 연결 합니다 [CPane](../../mfc/reference/cpane-class.md) 개체입니다.
 
@@ -629,7 +629,7 @@ virtual BOOL DockPane(
 |옵션|설명|
 |------------|-----------------|
 |DM_UNKNOWN|프레임 워크는 도킹 메서드를 알 수 없는 경우이 옵션을 사용 합니다. 창 부동 가장 최근 위치를 저장 하지 않습니다. 또한 최근 부동 위치를 저장 해야 하는 경우 창을 프로그래밍 방식으로 고정 하려면이 옵션을 사용할 수 있습니다.|
-|DM_MOUSE|내부적으로 사용 합니다.|
+|DM_MOUSE|내부적으로 사용됩니다.|
 |DM_DBL_CLICK|이 옵션은 위치 조정 막대를 두 번 클릭할 때 사용 합니다. 가장 최근의 도킹 위치에 있는 창 위치가 변경 되 면 합니다. 창에는 두 번 클릭 하 여 도킹 해제, 가장 최근의 부동 위치에 있는 창 위치가 변경 되 면 합니다.|
 |DM_SHOW|이 옵션은 프로그래밍 방식으로 창 도킹에 사용할 수 있습니다. 창 부동 가장 최근 위치를 저장합니다.|
 |DM_RECT|창이 도킹 되어 있는 지정 된 지역의 *lpRect*합니다.|
@@ -687,13 +687,13 @@ virtual BOOL DockToFrameWindow(
 [in] 지정 된 크기입니다.
 
 *dwDockFlags*<br/>
-[in] 무시 됩니다.
+[in] Ignored.
 
 *pRelativeBar*<br/>
-[in] 무시 됩니다.
+[in] Ignored.
 
 *nRelativeIndex*<br/>
-[in] 무시 됩니다.
+[in] Ignored.
 
 *bOuterEdge*<br/>
 [in] 그리고 TRUE로 지정 되는 쪽에 도킹 가능 창을 다른 경우 *dwAlignment*, 창이 도킹 되어 있는 다른 창 외부 부모 프레임의 가장자리에 가깝게 됩니다. FALSE 이면 창 클라이언트 영역의 가운데에 더 가깝게 도킹 됩니다.
@@ -1070,7 +1070,7 @@ AFX_IMPORT_DATA static BOOL m_bHandleMinSize;
 
 이 값을 TRUE로 설정 하는 경우 크기가 최소 크기 아래 줄여야 하는 모든 창 클리핑됩니다 채우도록 확장 되지 않습니다. 프레임 워크 창 영역 창 크기 조정에 대 한 목적을 사용 하므로이 값은 TRUE로 설정 되어 있으면 창이 도킹 창 영역의 크기를 변경 하지 마세요.
 
-##  <a name="m_recentdockinfo"></a>  M_recentdockinfo
+##  <a name="m_recentdockinfo"></a>  CPane::m_recentDockInfo
 
 최근 도킹 정보가 들어 있습니다.
 
@@ -1289,7 +1289,7 @@ virtual void OnPressCloseButton();
 
 이 메서드는 프레임 워크를 누를 때 합니다 **닫기** 창의 캡션 단추입니다. 에 대 한 알림을 받도록 합니다 **닫기** 이벤트 파생된 클래스에서이 메서드를 재정의할 수 있습니다.
 
-##  <a name="onshowcontrolbarmenu"></a>  Cpane:: Onshowcontrolbarmenu
+##  <a name="onshowcontrolbarmenu"></a>  CPane::OnShowControlBarMenu
 
 특수 창 메뉴를 표시하려고 할 때 프레임워크에서 호출됩니다.
 
@@ -1299,7 +1299,7 @@ virtual BOOL OnShowControlBarMenu(CPoint point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 메뉴 위치를 지정합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1308,9 +1308,9 @@ TRUE 이면 메뉴를 표시할 수 있습니다. 그렇지 않으면 FALSE입�
 
 ### <a name="remarks"></a>설명
 
-메뉴에 몇 가지 항목 즉 창의 동작을 지정할 수 있도록: **부동**를 **도킹**를 **AutoHide**, 및 **숨기기**. 모든 창에 대 한이 메뉴를 호출 하 여 설정할 수 있습니다 [CDockingManager::EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu)합니다.
+메뉴에 동작을 지정 하는 창, 즉 수 있도록 하는 여러 항목이 포함 됩니다. **부동**, **도킹**를 **AutoHide**, 및 **숨기기**합니다. 모든 창에 대 한이 메뉴를 호출 하 여 설정할 수 있습니다 [CDockingManager::EnableDockSiteMenu](../../mfc/reference/cdockingmanager-class.md#enabledocksitemenu)합니다.
 
-##  <a name="recalclayout"></a>  Cpane:: Recalclayout
+##  <a name="recalclayout"></a>  CPane::RecalcLayout
 
 창에 대 한 레이아웃 정보를 다시 계산합니다.
 
@@ -1356,7 +1356,7 @@ TRUE 이면 상태 저장 했습니다. 그렇지 않으면 FALSE입니다.
 
 또한이 메서드를 재정의 하는 경우 기본 메서드를 호출 하 고 기본 메서드가 FALSE를 반환 하는 경우 FALSE를 반환 합니다.
 
-##  <a name="setactiveingroup"></a>  Cpane:: Setactiveingroup
+##  <a name="setactiveingroup"></a>  CPane::SetActiveInGroup
 
 창이 활성으로 플래그 지정합니다.
 
@@ -1604,7 +1604,7 @@ void UpdateVirtualRect(CPoint ptOffset);
 
 창 고에 지정 된 크기의 현재 위치를 사용 하 여 가상 사각형을 설정 하는 세 번째 오버 로드 *sizeNew*합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

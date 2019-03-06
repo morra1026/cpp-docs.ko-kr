@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 4e93f167b9cb28a83c42220fa58b17d5c4845a75
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 5e4de39b0352f33ad59950754df7c0815d6038c3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894291"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417907"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -86,7 +86,7 @@ class CCmdTarget : public CObject
 |[CCmdTarget::GetDispatchIID](#getdispatchiid)|기본 디스패치 인터페이스 ID를 가져옵니다.|
 |[CCmdTarget::GetIDispatch](#getidispatch)|에 대 한 포인터를 반환 합니다 `IDispatch` 연관 된 개체는 `CCmdTarget` 개체입니다.|
 |[CCmdTarget::GetTypeInfoCount](#gettypeinfocount)|개체를 제공 하는 형식 정보 인터페이스의 수를 검색 합니다.|
-|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|지정된 GUID에 해당하는 형식 설명을 검색합니다.|
+|[CCmdTarget::GetTypeInfoOfGuid](#gettypeinfoofguid)|지정된 된 GUID에 해당 하는 형식 설명을 검색 합니다.|
 |[CCmdTarget::GetTypeLib](#gettypelib)|형식 라이브러리에 대 한 포인터를 가져옵니다.|
 |[CCmdTarget::GetTypeLibCache](#gettypelibcache)|형식 라이브러리 캐시를 가져옵니다.|
 |[CCmdTarget::IsInvokeAllowed](#isinvokeallowed)|자동화 메서드 호출을 사용 하도록 설정 합니다.|
@@ -107,7 +107,7 @@ class CCmdTarget : public CObject
 
 디스패치 맵, 메시지 맵 비슷합니다, OLE 자동화를 노출 하는 데 사용 됩니다 `IDispatch` 기능입니다. 이 인터페이스를 노출 시 킴으로써 다른 응용 프로그램 (예: Visual Basic) 응용 프로그램에 호출할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -169,7 +169,7 @@ BOOL DoOleVerb(
 개체가 포함된 문서 창의 핸들입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 개체를 정의 하는 픽셀 단위의 좌표가 포함 된 구조체의 경계 사각형 *hwndParent*합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 개체를 정의 하는 픽셀 단위의 좌표가 포함 된 구조체의 경계 사각형 *hwndParent*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -335,7 +335,7 @@ virtual UINT GetTypeInfoCount();
 
 ##  <a name="gettypeinfoofguid"></a>  CCmdTarget::GetTypeInfoOfGuid
 
-지정된 GUID에 해당하는 형식 설명을 검색합니다.
+지정된 된 GUID에 해당 하는 형식 설명을 검색 합니다.
 
 ```
 HRESULT GetTypeInfoOfGuid(
@@ -522,7 +522,7 @@ void RestoreWaitCursor();
 
 [!code-cpp[NVC_MFCDocView#43](../../mfc/codesnippet/cpp/ccmdtarget-class_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ACDUAL MFC 샘플](../../visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>

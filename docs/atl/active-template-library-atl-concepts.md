@@ -1,15 +1,15 @@
-﻿---
+---
 title: ATL(액티브 템플릿 라이브러리) 개념
 ms.date: 11/04/2016
 helpviewer_keywords:
 - ATL, about ATL
 ms.assetid: a3960991-4d76-4da5-9568-3fa7fde53ff4
-ms.openlocfilehash: 9b8c293bc92071509607e8496a5601d0c6ef2018
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 90fd096f15f185feebc6f6ae8b73b010fe3c1813
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523742"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265342"
 ---
 # <a name="active-template-library-atl-concepts"></a>ATL(액티브 템플릿 라이브러리) 개념
 
@@ -17,7 +17,7 @@ ms.locfileid: "50523742"
 
 다수의 ATL 프로그래밍을 수행하기 위해 특성이나 COM 프로그래밍 간소화를 위해 설계된 Visual C++.NET의 새로운 기능에 대한 학습이 필요할 수도 있습니다. 자세한 내용은 [특성 사용 프로그래밍](../windows/attributed-programming-concepts.md)을 참조합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [ATL 자습서](../atl/active-template-library-atl-tutorial.md)<br/>
 컨트롤 생성을 안내하고 프로세스에서 일부 ATL 기초를 보여줍니다.
@@ -100,5 +100,4 @@ ATL 프로젝트 마법사에 대 한 정보를 포함합니다.
 특성을 사용하여 COM 프로그래밍을 단순화하는 방법에 대한 개요와 자세한 내용에 대한 목록을 제공합니다.
 
 [ATL 클래스 개요](../atl/atl-class-overview.md)<br/>
-ATL 클래스에 대 한 링크 및 참조 정보를 제공합니다.
-
+ATL 클래스에 대한 참조 정보와 링크를 제공합니다.

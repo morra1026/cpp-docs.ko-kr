@@ -17,12 +17,12 @@ helpviewer_keywords:
 - Os compiler option [C++]
 - -Os compiler option [C++]
 ms.assetid: 9a340806-fa15-4308-892c-355d83cac0f2
-ms.openlocfilehash: aa404641a42b0209e8436ca206e59a3b5f425133
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c2abf23c15e6550a6d115f2e2b41a9c59de5fa3a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565960"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424641"
 ---
 # <a name="os-ot-favor-small-code-favor-fast-code"></a>/Os, /OT(크기 우선 코드, 속도 우선 코드)
 
@@ -98,7 +98,7 @@ sub    eax, ecx
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.FavorSizeOrSpeed%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

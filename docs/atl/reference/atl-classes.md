@@ -5,12 +5,12 @@ helpviewer_keywords:
 - classes [C++], ATL
 - ATL, classes
 ms.assetid: 7da42e2d-ac84-4506-92bd-502a86d68bdc
-ms.openlocfilehash: 937edb799729005619325cda15f5a720264e9bfc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 561d6cb41ca066f5a2435b4eb1e8710ccaa99ea1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50512543"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265572"
 ---
 # <a name="atl-classes-and-structs"></a>ATL 클래스 및 구조체
 
@@ -114,7 +114,7 @@ ms.locfileid: "50512543"
 |[CCRTAllocator](../../atl/reference/ccrtallocator-class.md)|이 클래스는 CRT 메모리 루틴을 사용 하 여 메모리를 관리 하기 위한 메서드를 제공 합니다.|atlcore.h|
 |[CCRTHeap](../../atl/reference/ccrtheap-class.md)|이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) CRT 힙 함수를 사용 하 여 합니다.|atlmem.h|
 |[CDacl](../../atl/reference/cdacl-class.md)|이 클래스는 DACL (임의 액세스 제어 목록) 구조에 대 한 래퍼입니다.|atlsecurity.h|
-|[CDebugReportHook 클래스](../../atl/reference/cdebugreporthook-class.md)|이 클래스를 사용 하 여 명명 된 파이프 디버그 보고서를 보내도록 합니다.|와 atlutil.h|
+|[CDebugReportHook 클래스](../../atl/reference/cdebugreporthook-class.md)|이 클래스를 사용 하 여 명명 된 파이프 디버그 보고서를 보내도록 합니다.|atlutil.h|
 |[CDefaultCharTraits](../../atl/reference/cdefaultchartraits-class.md)|이 클래스는 대 문자와 소문자 사이 문자를 변환 하기 위한 두 개의 정적 함수를 제공 합니다.|atlcoll.h|
 |[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)|이 클래스는 기본 요소 비교 함수를 제공 합니다.|atlcoll.h|
 |[CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)|이 클래스는 컬렉션 클래스에 대 한 기본 메서드 및 함수를 제공 합니다.|atlcoll.h|
@@ -135,8 +135,8 @@ ms.locfileid: "50512543"
 |[CInterfaceList](../../atl/reference/cinterfacelist-class.md)|이 클래스는 COM 인터페이스 포인터의 목록을 구성할 때 유용한 메서드를 제공 합니다.|atlcoll.h|
 |[CLocalHeap](../../atl/reference/clocalheap-class.md)|이 클래스는 구현 [IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md) Win32 로컬 힙 함수를 사용 합니다.|atlmem.h|
 |[CMessageMap](../../atl/reference/cmessagemap-class.md)|이 클래스는 개체의 메시지 맵에 다른 개체에 액세스할 수 있도록 허용 합니다.|atlwin.h|
-|[CNonStatelessWorker 클래스](../../atl/reference/cnonstatelessworker-class.md)|스레드 풀에서 요청을 받고 각 요청에 대해 생성 되 고 제거 하는 작업자 개체에 전달 합니다.|와 atlutil.h|
-|[CNoWorkerThread 클래스](../../atl/reference/cnoworkerthread-class.md)|이 클래스에 대 한 인수로 사용 된 `MonitorClass` 동적 캐시 유지 관리를 사용 하지 않도록 설정 하려는 경우 템플릿 매개 변수 캐시 클래스입니다.|와 atlutil.h|
+|[CNonStatelessWorker 클래스](../../atl/reference/cnonstatelessworker-class.md)|스레드 풀에서 요청을 받고 각 요청에 대해 생성 되 고 제거 하는 작업자 개체에 전달 합니다.|atlutil.h|
+|[CNoWorkerThread 클래스](../../atl/reference/cnoworkerthread-class.md)|이 클래스에 대 한 인수로 사용 된 `MonitorClass` 동적 캐시 유지 관리를 사용 하지 않도록 설정 하려는 경우 템플릿 매개 변수 캐시 클래스입니다.|atlutil.h|
 |[CPathT 클래스](../../atl/reference/cpatht-class.md)|이 클래스는 경로 나타냅니다.|atlpath.h|
 |[CPrimitiveElementTraits](../../atl/reference/cprimitiveelementtraits-class.md)|이 클래스는 기본 메서드를 제공 하 고 함수 컬렉션 클래스에 대 한 기본 데이터 유형으로 구성 합니다.|atlcoll.h|
 |[CPrivateObjectSecurityDesc](../../atl/reference/cprivateobjectsecuritydesc-class.md)|이 클래스는 private 개체 보안 설명자 개체를 나타냅니다.|atlsecurity.h|
@@ -162,10 +162,10 @@ ms.locfileid: "50512543"
 |[CStringElementTraits](../../atl/reference/cstringelementtraits-class.md)|이 클래스는 저장 하는 컬렉션 클래스에 의해 사용 되는 정적 함수를 제공 `CString` 개체입니다.|cstringt.h|
 |[CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md)|이 클래스는 컬렉션 클래스 개체에 저장 된 문자열에 관련 된 정적 함수를 제공 합니다. 비슷합니다 [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), 하지만 대/소문자 구분 비교를 수행 합니다.|atlcoll.h|
 |[CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md)|이 클래스는 컬렉션 클래스 개체에 저장 된 문자열에 관련 된 정적 함수를 제공 합니다. 문자열 개체 참조로 처리 됩니다.|atlcoll.h|
-|[CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)|이 클래스는 작업 항목의 큐를 처리 하는 작업자 스레드 풀을 제공 합니다.|와 atlutil.h|
+|[CThreadPool 클래스](../../atl/reference/cthreadpool-class.md)|이 클래스는 작업 항목의 큐를 처리 하는 작업자 스레드 풀을 제공 합니다.|atlutil.h|
 |[CTokenGroups](../../atl/reference/ctokengroups-class.md)|이 클래스는에 대 한 래퍼를 `TOKEN_GROUPS` 구조입니다.|atlsecurity.h|
 |[CTokenPrivileges](../../atl/reference/ctokenprivileges-class.md)|이 클래스는에 대 한 래퍼를 `TOKEN_PRIVILEGES` 구조입니다.|atlsecurity.h|
-|[CUrl 클래스](../../atl/reference/curl-class.md)|이 클래스는 URL을 나타냅니다. 기존 URL을 구문 분석 하는지 여부를 다른 독립적으로 URL의 각 요소를 조작할 수 있습니다 문자열 또는 문자열 처음부터 작성 합니다.|와 atlutil.h|
+|[CUrl 클래스](../../atl/reference/curl-class.md)|이 클래스는 URL을 나타냅니다. 기존 URL을 구문 분석 하는지 여부를 다른 독립적으로 URL의 각 요소를 조작할 수 있습니다 문자열 또는 문자열 처음부터 작성 합니다.|atlutil.h|
 |[CW2AEX](../../atl/reference/cw2aex-class.md)|이 클래스는 문자열 변환 매크로 CT2AEX, CW2TEX, CW2CTEX, 및 CT2CAEX와 CW2A typedef에서 사용 됩니다.|atlconv.h|
 |[CW2CWEX](../../atl/reference/cw2cwex-class.md)|이 클래스는 문자열 변환 매크로 CW2CTEX CT2CWEX, 및 CW2CW typedef에서 사용 됩니다.|atlconv.h|
 |[CW2WEX](../../atl/reference/cw2wex-class.md)|이 클래스는 문자열 변환 매크로 CW2TEX CT2WEX, 및 CW2W typedef에서 사용 됩니다.|atlconv.h|
@@ -175,7 +175,7 @@ ms.locfileid: "50512543"
 |[CWinTraits](../../atl/reference/cwintraits-class.md)|이 클래스는 창 개체를 만들 때 사용 되는 스타일을 표준화 하는 방법을 제공 합니다.|atlwin.h|
 |[CWinTraitsOR](../../atl/reference/cwintraitsor-class.md)|이 클래스는 창 개체를 만들 때 사용 되는 스타일을 표준화 하는 방법을 제공 합니다.|atlwin.h|
 |[CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)|이 클래스는 창 클래스에 대 한 정보를 등록 하기 위한 메서드를 제공 합니다.|atlwin.h|
-|[CWorkerThread 클래스](../../atl/reference/cworkerthread-class.md)|이 클래스 작업자 스레드를 만듭니다 또는 기존 항목을 사용 하 여, 하나 이상의 커널 개체 핸들에서 대기 및 핸들 중 하나에 신호가 전달 될 때 지정 된 클라이언트 함수를 실행 합니다.|와 atlutil.h|
+|[CWorkerThread 클래스](../../atl/reference/cworkerthread-class.md)|이 클래스 작업자 스레드를 만듭니다 또는 기존 항목을 사용 하 여, 하나 이상의 커널 개체 핸들에서 대기 및 핸들 중 하나에 신호가 전달 될 때 지정 된 클라이언트 함수를 실행 합니다.|atlutil.h|
 |[IAtlAutoThreadModule](../../atl/reference/iatlautothreadmodule-class.md)|이 클래스에 대 한 인터페이스를 나타냅니다.는 `CreateInstance` 메서드.|atlbase.h|
 |[IAtlMemMgr](../../atl/reference/iatlmemmgr-class.md)|이 클래스는 메모리 관리자 인터페이스를 나타냅니다.|atlmem.h|
 |[IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md)|이 인터페이스는 호스트 된 컨트롤의 컨테이너 특성을 지정 하는 메서드를 제공 합니다.|atlbase.h, ATLIFace.h|
@@ -211,19 +211,18 @@ ms.locfileid: "50512543"
 |[IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md)|이 클래스의 기본 구현을 제공 합니다 `IServiceProvider` 인터페이스입니다.|atlcom.h|
 |[ISpecifyPropertyPagesImpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 합니다 [ISpecifyPropertyPages](/windows/desktop/api/ocidl/nn-ocidl-ispecifypropertypages) 인터페이스입니다.|atlcom.h|
 |[ISupportErrorInfoImpl](../../atl/reference/isupporterrorinfoimpl-class.md)|이 클래스의 기본 구현을 제공 합니다 `ISupportErrorInfo Interface` 인터페이스 및 단일 인터페이스만 개체에서 오류를 생성 하는 경우 사용할 수 있습니다.|atlcom.h|
-|[IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)|이 인터페이스는 스레드 풀을 구성 하기 위한 메서드를 제공 합니다.|와 atlutil.h|
+|[IThreadPoolConfig 인터페이스](../../atl/reference/ithreadpoolconfig-interface.md)|이 인터페이스는 스레드 풀을 구성 하기 위한 메서드를 제공 합니다.|atlutil.h|
 |[IViewObjectExImpl](../../atl/reference/iviewobjecteximpl-class.md)|이 클래스는 구현 `IUnknown` 의 기본 구현을 제공 하 고는 [IViewObject](/windows/desktop/api/oleidl/nn-oleidl-iviewobject)를 [IViewObject2](/windows/desktop/api/oleidl/nn-oleidl-iviewobject2), 및 [IViewObjectEx](/windows/desktop/api/ocidl/nn-ocidl-iviewobjectex) 인터페이스입니다.|atlctl.h|
-|[IWorkerThreadClient 인터페이스](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient` 클라이언트에서 구현 된 인터페이스를 [CWorkerThread](../../atl/reference/cworkerthread-class.md) 클래스입니다.|와 atlutil.h|
+|[IWorkerThreadClient 인터페이스](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient` 클라이언트에서 구현 된 인터페이스를 [CWorkerThread](../../atl/reference/cworkerthread-class.md) 클래스입니다.|atlutil.h|
 |[_U_MENUorID](../../atl/reference/u-menuorid-class.md)|이 클래스에 대 한 래퍼를 제공 `CreateWindow` 고 `CreateWindowEx`입니다.|atlwin.h|
 |[_U_RECT](../../atl/reference/u-rect-class.md)|이 인수 어댑터 클래스를 사용 하거나 `RECT` 포인터 또는 참조 포인터 측면에서 구현 되는 함수에 전달할 수 있습니다.|atlwin.h|
 |[_U_STRINGorID](../../atl/reference/u-stringorid-class.md)|이 인수 어댑터 클래스에는 리소스 이름 (LPCTSTRs) 또는 리소스 Id (UINTs) 호출자 ID MAKEINTRESOURCE 매크로 사용 하 여 문자열로 변환할 필요 없이 함수에 전달할 수 있습니다.|atlwin.h|
 |[Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md)|이 클래스는 Windows 스레드 생성 함수를 제공합니다. 스레드 CRT 함수를 사용 하지 않는 경우이 클래스를 사용 합니다.|atlbase.h|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
 [함수](../../atl/reference/atl-functions.md)<br/>
 [전역 변수](../../atl/reference/atl-global-variables.md)<br/>
 [Typedefs](../../atl/reference/atl-typedefs.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)
-

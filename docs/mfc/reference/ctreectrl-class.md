@@ -162,12 +162,12 @@ helpviewer_keywords:
 - CTreeCtrl [MFC], SortChildren
 - CTreeCtrl [MFC], SortChildrenCB
 ms.assetid: 96e20031-6161-4143-8c12-8d1816c66d90
-ms.openlocfilehash: cc98a2e24fbb3eaff94e4c941986080d0bdbd7ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92666e10d82d96b76ad43b652ed90e0e41b8f853
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50477950"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418934"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl Class
 
@@ -283,7 +283,7 @@ class CTreeCtrl : public CWnd
 
 - [트리 뷰 컨트롤 참조](/windows/desktop/Controls/tree-view-control-reference) Windows SDK에에서 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -315,7 +315,7 @@ virtual BOOL Create(
 트리 뷰 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)와 원하는 조합의 [트리 뷰 컨트롤 스타일](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK에 설명 된 대로 합니다.
 
 *rect*<br/>
-트리 뷰 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+트리 뷰 컨트롤의 크기와 위치를 지정합니다. 수 있습니다는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 개체 또는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 *pParentWnd*<br/>
 트리 뷰 컨트롤의 부모 창에 일반적으로 지정 된 `CDialog`합니다. NULL이 아니어야 합니다.
@@ -361,7 +361,7 @@ virtual BOOL CreateEx(
 트리 뷰 컨트롤의 스타일을 지정합니다. 에 설명 된 창 스타일을 적용 [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)와 원하는 조합의 [트리 뷰 컨트롤 스타일](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK에 설명 된 대로 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -398,7 +398,7 @@ CImageList* CreateDragImage(HTREEITEM hItem);
 
 응용 프로그램 항목을 끌 때 이미지를 표시 하려면 이미지 목록 함수를 사용 합니다.
 
-`CImageList` 개체가 영구적으로 적용 되 고 완료 하는 경우 삭제 해야 합니다. 예를 들어:
+`CImageList` 개체가 영구적으로 적용 되 고 완료 하는 경우 삭제 해야 합니다. 예를 들면,
 
 [!code-cpp[NVC_MFC_CTreeCtrl#2](../../mfc/reference/codesnippet/cpp/ctreectrl-class_2.cpp)]
 
@@ -887,7 +887,7 @@ BOOL GetItemPartRect(
 |---------------|-----------------|
 |*hItem*|[in] 트리 뷰 컨트롤 항목에 대 한 핸들입니다.|
 |*nPart*|[in] 파트에 대 한 식별자입니다. TVGIPR_BUTTON로 설정 되어야 합니다.|
-|*lpRect*|[out] 에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다. 구조에 지정 된 파트의 사각형 좌표 수신이 메서드가 성공적 이면 *hItem* 하 고 *nPart*합니다.|
+|*lpRect*|[out] 에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다. 구조에 지정 된 파트의 사각형 좌표 수신이 메서드가 성공적 이면 *hItem* 하 고 *nPart*합니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -928,7 +928,7 @@ BOOL GetItemRect(
 트리 뷰 컨트롤 항목의 핸들입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 경계 사각형을 수신 하는 구조입니다. 좌표가 트리 뷰 컨트롤의 왼쪽 위 모퉁이 기준으로 합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 경계 사각형을 수신 하는 구조입니다. 좌표가 트리 뷰 컨트롤의 왼쪽 위 모퉁이 기준으로 합니다.
 
 *bTextOnly*<br/>
 이 매개 변수가 0이 아닌 값 이면 항목의 텍스트만 경계 사각형에 포함 됩니다. 그렇지 않으면 트리 뷰 컨트롤에서 항목 차지 하는 전체 줄을 포함 합니다.
@@ -1347,7 +1347,7 @@ HTREEITEM HitTest(TVHITTESTINFO* pHitTestInfo) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pt*<br/>
 테스트할 점의 좌표를 클라이언트입니다.
 
 *pFlags*<br/>
@@ -2339,7 +2339,7 @@ BOOL SortChildrenCB(LPTVSORTCB pSort);
 
 [!code-cpp[NVC_MFC_CTreeCtrl#39](../../mfc/reference/codesnippet/cpp/ctreectrl-class_47.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CMNCTRL1](../../visual-cpp-samples.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>

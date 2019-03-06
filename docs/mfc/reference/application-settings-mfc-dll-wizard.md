@@ -1,19 +1,19 @@
 ---
-title: MFC DLL 마법사, 응용 프로그램 설정
+title: MFC DLL 마법사, 애플리케이션 설정
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.dll.appset
 helpviewer_keywords:
 - MFC DLL Wizard, application settings
 ms.assetid: 0a96b94f-ae36-4975-951b-c9ffb3def21c
-ms.openlocfilehash: 66e7b907e3ed50c97e5cc864d51c621713cbf992
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f021f2023af839413306c1e3d56dc741749cf216
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50455954"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276600"
 ---
-# <a name="application-settings-mfc-dll-wizard"></a>MFC DLL 마법사, 응용 프로그램 설정
+# <a name="application-settings-mfc-dll-wizard"></a>MFC DLL 마법사, 애플리케이션 설정
 
 MFC DLL 마법사의이 페이지를 사용 하 여 디자인 하 고 새 MFC DLL 프로젝트에 기본 기능을 추가 합니다.
 
@@ -47,8 +47,7 @@ MFC DLL 자동화를 지원 해야 하는지 여부를 및 Windows 소켓을 지
 
    Windows 사용 하 여 MFC DLL 소켓 지원 만들어집니다 [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) 초기화 소켓에 대 한 지원 및 MFC 헤더 파일 StdAfx.h AfxSock.h 포함 되어 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC DLL 마법사](../../mfc/reference/mfc-dll-wizard.md)<br/>
 [MFC DLL 프로젝트 만들기](../../mfc/reference/creating-an-mfc-dll-project.md)
-

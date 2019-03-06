@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - invalid_multiple_scheduling class
 ms.assetid: e9a47cb7-a778-4df7-92b0-3752119fd4c7
-ms.openlocfilehash: aa22c9b218b88a8834e8ba474c2aa2c203ea89dc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7c8ce0aefc12097a71e79933d34a116997c8105f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50517119"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276365"
 ---
 # <a name="invalidmultiplescheduling-class"></a>invalid_multiple_scheduling 클래스
 
@@ -31,9 +31,10 @@ class invalid_multiple_scheduling : public std::exception;
 
 |이름|설명|
 |----------|-----------------|
-|[invalid_multiple_scheduling](#ctor)|오버로드됨. `invalid_multiple_scheduling` 개체를 생성합니다.|
+|[invalid_multiple_scheduling](#ctor)|오버로드됨. 
+  `invalid_multiple_scheduling` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -47,7 +48,8 @@ class invalid_multiple_scheduling : public std::exception;
 
 ##  <a name="ctor"></a> invalid_multiple_scheduling
 
-`invalid_multiple_scheduling` 개체를 생성합니다.
+
+  `invalid_multiple_scheduling` 개체를 생성합니다.
 
 ```
 explicit _CRTIMP invalid_multiple_scheduling(_In_z_ const char* _Message) throw();
@@ -57,10 +59,10 @@ invalid_multiple_scheduling() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [task_handle 클래스](task-handle-class.md)<br/>

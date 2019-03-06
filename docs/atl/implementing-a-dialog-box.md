@@ -7,12 +7,12 @@ helpviewer_keywords:
 - CAxDialogImpl class, implementing dialog boxes in ATL
 - ATL, dialog boxes
 ms.assetid: 478525f2-aa6a-435a-b162-68fc8aa98a8e
-ms.openlocfilehash: 680ca7a162d8fbedc793ff097663d942843887d6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a3084d4655e173234d3bb6e8d411b28e8968377
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645421"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263697"
 ---
 # <a name="implementing-a-dialog-box"></a>대화 상자 구현
 
@@ -46,7 +46,6 @@ ATL 프로젝트 대화 상자를 추가 하는 방법은 두 가지: ATL 대화
 
 [!code-cpp[NVC_ATL_Windowing#66](../atl/codesnippet/cpp/implementing-a-dialog-box_1.h)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [창 클래스](../atl/atl-window-classes.md)
-

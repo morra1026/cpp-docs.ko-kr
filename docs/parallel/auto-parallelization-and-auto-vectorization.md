@@ -2,12 +2,12 @@
 title: 자동 병렬화 및 자동 벡터화
 ms.date: 11/04/2016
 ms.assetid: ec71583a-287b-4599-8767-1d255e080fe3
-ms.openlocfilehash: 06ab255e7769bfa56d5a8d22cdbe19d415ce6b31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 018289bc9499aee8d1739ebeed0c1cb847769a08
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618346"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276626"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>자동 병렬화 및 자동 벡터화
 
@@ -109,7 +109,7 @@ for (int i = 0; i < 1000; ++i)
 
 실제로 벡터화 도우미가 작동 하는 방법을 보여 주는 예제를 참조 하세요. [프로젝트 오스틴 6의 2 부: 페이지 컬링](http://blogs.msdn.com/b/vcblog/archive/2012/09/27/10348494.aspx)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [loop](../preprocessor/loop.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](http://go.microsoft.com/fwlink/p/?linkid=263662)<br/>

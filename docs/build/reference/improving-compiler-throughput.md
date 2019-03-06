@@ -7,12 +7,12 @@ helpviewer_keywords:
 - performance, compiler
 - cl.exe compiler, throughput
 ms.assetid: ba5f884e-9037-4a92-b10e-fc2a3836c5bf
-ms.openlocfilehash: b9e8b20e7191dad970dc154a545445b3f54b78da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 88ac09739e89cc3443fb81532b578b711cc9b6da
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496566"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424342"
 ---
 # <a name="improving-compiler-throughput"></a>컴파일러 처리량 향상
 
@@ -22,6 +22,6 @@ ms.locfileid: "50496566"
 
 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../../build/reference/creating-precompiled-header-files.md)를 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [코드 최적화](../../build/reference/optimizing-your-code.md)

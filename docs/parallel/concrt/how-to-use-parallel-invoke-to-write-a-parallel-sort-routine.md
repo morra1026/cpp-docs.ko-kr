@@ -1,5 +1,5 @@
 ---
-title: '방법: parallel_invoke를 사용하여 병렬 정렬 루틴 작성'
+title: '방법: Parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - task_handle class, example
@@ -8,14 +8,14 @@ helpviewer_keywords:
 - structured_task_group class, example
 - improving parallel performance with task groups [Concurrency Runtime]
 ms.assetid: 53979a2a-525d-4437-8952-f1ff85b37673
-ms.openlocfilehash: e72d99cb1b9168e3de1e109d93c163e21cb7fad7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 329cf275f283ba7b57276d06e909905c9a900697
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50440159"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284179"
 ---
-# <a name="how-to-use-parallelinvoke-to-write-a-parallel-sort-routine"></a>방법: parallel_invoke를 사용하여 병렬 정렬 루틴 작성
+# <a name="how-to-use-parallelinvoke-to-write-a-parallel-sort-routine"></a>방법: Parallel_invoke를 사용 하 여 병렬 정렬 루틴 작성
 
 이 문서를 사용 하는 방법에 설명 합니다 [parallel_invoke](../../parallel/concrt/parallel-algorithms.md#parallel_invoke) 바 이토 닉 정렬 알고리즘의 성능을 향상 하는 알고리즘입니다. 바 이토 닉 정렬 알고리즘 재귀적으로 입력된 시퀀스를 정렬 된 파티션을 보다 작은 나눕니다. 바 이토 닉 정렬 알고리즘은 각 파티션 작업이 다른 모든 작업과 독립적 이므로 병렬로 실행할 수 있습니다.
 
@@ -76,7 +76,7 @@ ms.locfileid: "50440159"
 
 [!code-cpp[concrt-parallel-bitonic-sort#8](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_8.cpp)]
 
-프로세서가 4개인 컴퓨터의 샘플 출력은 다음과 같습니다.
+다음 샘플은 프로세서가 4개인 컴퓨터에 대한 출력입니다.
 
 ```Output
 serial time: 4353
@@ -101,8 +101,7 @@ parallel time: 1248
 
 모든 병렬 알고리즘에서와 마찬가지로 프로 파일링 하 고 적절 하 게 코드를 조정 하는 것이 좋습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [작업 병렬 처리](../../parallel/concrt/task-parallelism-concurrency-runtime.md)<br/>
 [parallel_invoke 함수](reference/concurrency-namespace-functions.md#parallel_invoke)
-

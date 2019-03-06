@@ -10,12 +10,12 @@ helpviewer_keywords:
 - FU compiler option [C++]
 - /FU compiler option [C++]
 ms.assetid: 698f8603-457f-435a-baff-5ac9243d6ca1
-ms.openlocfilehash: ecd9290336cfd6efd183bdd701f1d447b7ddaf2b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1a035be2080d9fe407799122f804668e0fc3ce76
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492094"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413162"
 ---
 # <a name="fu-name-forced-using-file"></a>/FU(강제 #using 파일 이름 지정)
 
@@ -23,7 +23,7 @@ ms.locfileid: "50492094"
 
 ## <a name="syntax"></a>구문
 
-> **/FU** *파일*
+> **/FU** *file*
 
 ## <a name="arguments"></a>인수
 
@@ -34,7 +34,8 @@ ms.locfileid: "50492094"
 
 /FU 스위치는 파일 이름을 하나만 사용합니다. 여러 파일을 지정하려면 각 항목에 대해 /FU를 사용합니다.
 
-사용할 C + + CLI 및 메타 데이터를 사용 하 여 참조 되는 [Friend 어셈블리](../../dotnet/friend-assemblies-cpp.md) 기능을 사용할 수 없습니다 **/FU**합니다. `#using` 특성과 함께 `[as friend]`을 사용해서 코드에서 메타데이터를 참조해야 합니다. Friend 어셈블리는 Visual c + + 구성 요소 확장의 C +에서 지원 되지 않는 + CX 합니다.
+사용할 C + + CLI 및 메타 데이터를 사용 하 여 참조 되는 [Friend 어셈블리](../../dotnet/friend-assemblies-cpp.md) 기능을 사용할 수 없습니다 **/FU**합니다. 
+  `#using` 특성과 함께 `[as friend]`을 사용해서 코드에서 메타데이터를 참조해야 합니다. Friend 어셈블리는 Visual c + + 구성 요소 확장의 C +에서 지원 되지 않는 + CX 합니다.
 
 어셈블리 또는 CLR (공용 언어 런타임)에 대 한 모듈을 만드는 방법에 대 한 정보를 참조 하세요 [/clr (공용 언어 런타임 컴파일)](../../build/reference/clr-common-language-runtime-compilation.md)합니다. C + 빌드하는 방법에 대 한 자세한 + /CX를 참조 하세요 [앱 및 라이브러리 빌드](../../cppcx/building-apps-and-libraries-c-cx.md)합니다.
 
@@ -50,7 +51,7 @@ ms.locfileid: "50492094"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedUsingFiles%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

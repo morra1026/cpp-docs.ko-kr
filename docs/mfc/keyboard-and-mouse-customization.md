@@ -5,12 +5,12 @@ helpviewer_keywords:
 - customizations [MFC], keyboard and mouse (MFC Extensions)
 - keyboard and mouse customizations (MFC Extensions)
 ms.assetid: 1f789f1b-5f2e-4b11-b974-e3e2a2e49d82
-ms.openlocfilehash: 0ccbe83185c48439273024a97c881f1c32a2ddc7
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 55eaac9d800730f3a01dcdb2eef943eb48d147b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175683"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289184"
 ---
 # <a name="keyboard-and-mouse-customization"></a>키보드 및 마우스 사용자 지정
 
@@ -66,10 +66,9 @@ MFC 응용 프로그램 키보드 및 마우스 입력을 처리 하는 방법�
 
 이러한 종류의 공격 으로부터 보호를 실행 하기 전에 명령을 유효한 지 확인 하려면 응용 프로그램 명령 처리기에 코드를 추가 합니다. 응용 프로그램에 전송 되지 명령을 방지 하기 위해 사용자 인터페이스에 종속 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC에 대한 사용자 지정](../mfc/customization-for-mfc.md)<br/>
 [CKeyboardManager 클래스](../mfc/reference/ckeyboardmanager-class.md)<br/>
 [CMouseManager 클래스](../mfc/reference/cmousemanager-class.md)<br/>
 [사용자 지정의 보안 의미](../mfc/security-implications-of-customization.md)
-

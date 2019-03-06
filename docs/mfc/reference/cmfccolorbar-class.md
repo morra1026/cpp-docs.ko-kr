@@ -74,12 +74,12 @@ helpviewer_keywords:
 - CMFCColorBar [MFC], SetPropList
 - CMFCColorBar [MFC], ShowCommandMessageString
 ms.assetid: 4756ee40-25a5-4cee-af7f-acab7993d1c7
-ms.openlocfilehash: 6e6ce3f48e2b0a7b0aa8396047eb4a52015f364d
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: f1f7610fc315da65145798058fdcf9752e7873d0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694844"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283256"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar 클래스
 
@@ -121,7 +121,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |[CMFCColorBar::SetHorzMargin](#sethorzmargin)|가로 여백에는 클라이언트 영역 경계 왼쪽 또는 오른쪽 색 셀 사이의 공간을 설정 합니다.|
 |[CMFCColorBar::SetVertMargin](#setvertmargin)|클라이언트 영역 경계 위쪽 또는 아래쪽 색 셀 사이의 공간에는 세로 여백을 설정 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -207,7 +207,7 @@ class CMFCColorBar : public CMFCPopupMenuBar
 [!code-cpp[NVC_MFC_NewControls#1](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_1.h)]
 [!code-cpp[NVC_MFC_NewControls#2](../../mfc/reference/codesnippet/cpp/cmfccolorbar-class_2.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -330,10 +330,10 @@ CMFCColorBar(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*colors*<br/>
 [in] 배열 프레임 워크 색 막대 컨트롤에 표시 되는 색입니다.
 
-*색*<br/>
+*color*<br/>
 [in] 처음에 선택한 색입니다.
 
 *lpszAutoColor*<br/>
@@ -494,7 +494,7 @@ static BOOL CreatePalette(
 |매개 변수|설명|
 |---------------|-----------------|
 |*arColors*|[in] 배열 색입니다.|
-|*색상표*|[in] 색의 색상표입니다.|
+|*palette*|[in] 색의 색상표입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -701,7 +701,7 @@ virtual BOOL OnKey(UINT nChar);
 
 ### <a name="parameters"></a>매개 변수
 
-*NChar*<br/>
+*nChar*<br/>
 [in] 사용자가 누른 키에 대 한 가상 키 코드입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -808,7 +808,7 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] RGB 색 값입니다.
 
 ##  <a name="setcolorname"></a>  CMFCColorBar::SetColorName
@@ -823,7 +823,7 @@ static void SetColorName(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 색의 RGB 값입니다.
 
 *strName*<br/>
@@ -941,7 +941,7 @@ virtual void ShowCommandMessageString(UINT uiCmdId);
 
 이 메서드는 색 막대 컨트롤의 소유자에 게 WM_SETMESSAGESTRING 메시지를 보냅니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)

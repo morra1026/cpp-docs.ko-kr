@@ -32,12 +32,12 @@ helpviewer_keywords:
 - CreateAccessor method
 - CreateParameterAccessor method
 ms.assetid: a0088074-7135-465c-b228-69097a50b8cc
-ms.openlocfilehash: b3d4a1a6f4680579adafec7c1fcf5f4372f9918e
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 98689fc3262cd8fc3bcb29e0bda59b1f40761141
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556714"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422791"
 ---
 # <a name="cmanualaccessor-class"></a>CManualAccessor 클래스
 
@@ -68,7 +68,7 @@ class CManualAccessor : public CAccessorBase
 
 사용 하 여 `CManualAccessor`, 런타임 함수 호출에 의해 출력 되는 열 바인딩 및 매개 변수를 지정할 수 있습니다.
 
-## <a name="addbindentry"></a> Cmanualaccessor:: Addbindentry
+## <a name="addbindentry"></a> CManualAccessor::AddBindEntry
 
 출력 열에 바인딩 항목을 추가합니다.
 
@@ -84,7 +84,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [DBBINDING](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *nOrdinal*<br/>
 [in] 열 번호입니다.
@@ -98,7 +98,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 *pData*<br/>
 [in] 버퍼에 저장 된 열 데이터에 대 한 포인터입니다.
 
-*두*<br/>
+*pLength*<br/>
 [in] 필요한 경우 필드 길이에 대 한 포인터입니다.
 
 *pStatus*<br/>
@@ -108,7 +108,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 
 이 함수를 사용 하려면 먼저 불러와야 [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md)합니다. 에 지정 된 열의 수보다 더 많은 항목을 추가할 수 없습니다 `CreateAccessor`합니다.
 
-## <a name="addparameterentry"></a> Cmanualaccessor:: Addparameterentry
+## <a name="addparameterentry"></a> CManualAccessor::AddParameterEntry
 
 매개 변수 입력 구조에 매개 변수 항목을 추가합니다.
 
@@ -125,7 +125,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [DBBINDING](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *nOrdinal*<br/>
 [in] 매개 변수 수입니다.
@@ -139,7 +139,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 *pData*<br/>
 [in] 버퍼에 저장 된 열 데이터에 대 한 포인터입니다.
 
-*두*<br/>
+*pLength*<br/>
 [in] 필요한 경우 필드 길이에 대 한 포인터입니다.
 
 *pStatus*<br/>
@@ -217,7 +217,7 @@ HRESULT 값 중 하나입니다.
 ## <a name="see-also"></a>참고 항목
 
 [DBViewer](../../visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)<br/>
 [CAccessor 클래스](../../data/oledb/caccessor-class.md)<br/>
 [CDynamicAccessor 클래스](../../data/oledb/cdynamicaccessor-class.md)<br/>

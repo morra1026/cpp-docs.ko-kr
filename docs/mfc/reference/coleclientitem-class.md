@@ -164,12 +164,12 @@ helpviewer_keywords:
 - COleClientItem [MFC], OnScrollBy
 - COleClientItem [MFC], OnShowItem
 ms.assetid: 7f571b7c-2758-4839-847a-0cf1ef643128
-ms.openlocfilehash: 80d28aa6a71adb72b8a3e0f5cd997577d61d0a52
-ms.sourcegitcommit: d441305fb19131afbd7fc259d8cda63ea26f2343
+ms.openlocfilehash: ec3048e7bd033e5c296b558dd2083c648bc377e7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51678589"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295359"
 ---
 # <a name="coleclientitem-class"></a>COleClientItem 클래스
 
@@ -287,12 +287,12 @@ OLE 항목을 포함 또는 연결 수 수 있습니다. 포함 된 경우 해�
 
 `COleClientItem` 사용 하 여 사용할 수는 [COleDocument](../../mfc/reference/coledocument-class.md)를 [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), 또는 [COleServerDoc](../../mfc/reference/coleserverdoc-class.md) 클래스입니다. 사용 하도록 `COleClientItem`클래스에서 파생 되 고 구현 합니다 [OnChange](#onchange) 컨테이너 항목에 대 한 변경에 반응 하는 방법을 정의 하는 멤버 함수. 내부 활성화를 지원 하려면 재정의 [OnGetItemPosition](#ongetitemposition) 멤버 함수입니다. 이 함수는 해당 OLE 항목의 표시 된 위치에 대 한 정보를 제공합니다.
 
-컨테이너 인터페이스를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요 [컨테이너: 컨테이너 구현](../../mfc/containers-implementing-a-container.md) 하 고 [활성화](../../mfc/activation-cpp.md)합니다.
+컨테이너 인터페이스를 사용 하는 방법에 대 한 자세한 내용은 문서를 참조 하세요. [컨테이너: 컨테이너를 구현](../../mfc/containers-implementing-a-container.md) 하 고 [활성화](../../mfc/activation-cpp.md)합니다.
 
 > [!NOTE]
 >  Windows SDK "개체"로 포함 및 연결 된 항목을 참조 하 고 "classes"를 선택 합니다. 항목의 형식 이 참조는 해당 c + + 개체와 "type" c + + 클래스에서 OLE 범주를 구분 하기 위해 OLE 엔터티 구분 하기 위해 "item" 이라는 용어를 사용 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -627,7 +627,7 @@ BOOL CreateFromClipboard(
 
 ### <a name="parameters"></a>매개 변수
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -663,7 +663,7 @@ BOOL CreateFromData(
 *pDataObject*<br/>
 에 대 한 포인터를 [COleDataObject](../../mfc/reference/coledataobject-class.md) OLE 항목을 만들려는 개체입니다.
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -703,7 +703,7 @@ OLE 항목을 만들려는 파일의 이름에 대 한 포인터입니다.
 *clsid*<br/>
 나중에 사용하기 위해 예약되어 있습니다.
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -735,7 +735,7 @@ BOOL CreateLinkFromClipboard(
 
 ### <a name="parameters"></a>매개 변수
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -771,7 +771,7 @@ BOOL CreateLinkFromData(
 *pDataObject*<br/>
 에 대 한 포인터를 [COleDataObject](../../mfc/reference/coledataobject-class.md) OLE 항목을 만들려는 개체입니다.
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -807,7 +807,7 @@ BOOL CreateLinkFromFile(
 *lpszFileName*<br/>
 OLE 항목을 만들려는 파일의 이름에 대 한 포인터입니다.
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -843,7 +843,7 @@ BOOL CreateNewItem(
 *clsid*<br/>
 만들 OLE 항목의 형식을 고유 하 게 식별 하는 ID입니다.
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -875,7 +875,7 @@ BOOL CreateStaticFromClipboard(
 
 ### <a name="parameters"></a>매개 변수
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -911,7 +911,7 @@ BOOL CreateStaticFromData(
 *pDataObject*<br/>
 에 대 한 포인터를 [COleDataObject](../../mfc/reference/coledataobject-class.md) OLE 항목을 만들려는 개체입니다.
 
-*렌더링*<br/>
+*render*<br/>
 서버에서 OLE 항목을 렌더링 되는 방식을 지정 하는 플래그입니다. 가능한 값을 참조 하세요 [OLERENDER](/windows/desktop/api/oleidl/ne-oleidl-tagolerender) Windows SDK에 있습니다.
 
 *cfFormat*<br/>
@@ -1328,13 +1328,13 @@ UINT GetItemState() const;
 
 ### <a name="return-value"></a>반환 값
 
-A `COleClientItem::ItemState` 열거형 값 중 하나일 수 있습니다: `emptyState`를 `loadedState`, `openState`를 `activeState`, `activeUIState`합니다. 이러한 상태에 대 한 자세한 문서를 참조 [컨테이너: 클라이언트 항목 상태](../../mfc/containers-client-item-states.md)합니다.
+A `COleClientItem::ItemState` 열거형 값 중 하나일 수 있습니다: `emptyState`를 `loadedState`, `openState`를 `activeState`, `activeUIState`합니다. 이러한 상태에 대 한 자세한 문서를 참고 [컨테이너: 클라이언트 항목 상태](../../mfc/containers-client-item-states.md)합니다.
 
 ### <a name="remarks"></a>설명
 
 OLE 항목의 상태가 변경 될 때 알림을 받으려면를 사용 합니다 [OnChange](#onchange) 멤버 함수입니다.
 
-자세한 내용은 문서 참조 [컨테이너: 클라이언트 항목 상태](../../mfc/containers-client-item-states.md)합니다.
+자세한 내용은 문서를 참조 하세요. [컨테이너: 클라이언트 항목 상태](../../mfc/containers-client-item-states.md)합니다.
 
 ##  <a name="getlaststatus"></a>  COleClientItem::GetLastStatus
 
@@ -1780,7 +1780,7 @@ virtual void OnInsertMenus(
 빈 메뉴를 가리킵니다.
 
 *lpMenuWidths*<br/>
-다음 메뉴 그룹의 각 메뉴의 수를 나타내는 6 시간 값의 배열을 가리키는: 파일, 편집, 컨테이너, 개체, 창 도움말입니다. 컨테이너 응용 프로그램은 파일, 컨테이너 및 창 메뉴 그룹의 경우 0, 2 및 4이 배열의 요소에 해당 합니다.
+다음 메뉴 그룹의 각 메뉴의 수를 나타내는 6 긴 값의 배열 가리킵니다. 파일, 편집, 컨테이너, 개체, 창 도움말입니다. 컨테이너 응용 프로그램은 파일, 컨테이너 및 창 메뉴 그룹의 경우 0, 2 및 4이 배열의 요소에 해당 합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -2185,7 +2185,7 @@ BOOL UpdateLink();
 
 자세한 내용은 [IOleLink::Update](/windows/desktop/api/oleidl/nf-oleidl-iolelink-update) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MFCBIND](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 OCLIENT](../../visual-cpp-samples.md)<br/>

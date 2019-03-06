@@ -14,12 +14,12 @@ helpviewer_keywords:
 - DTN_FORMAT notification [MFC]
 - DateTimePicker control [MFC]
 ms.assetid: ffbe29ab-ff80-4609-89f7-260b404439c4
-ms.openlocfilehash: 6a88e257fa44d16563d090df4f989286dbda0a51
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ce84863744629d30248f94b94448d776177f9841
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607352"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292889"
 ---
 # <a name="processing-notification-messages-in-date-and-time-picker-controls"></a>날짜 및 시간 선택 컨트롤의 알림 메시지 처리
 
@@ -43,8 +43,7 @@ ms.locfileid: "50607352"
 
 - 사용자 콜백 필드에 입력 되므로 DTN_WMKEYDOWN 부모를 알립니다. 날짜 및 시간 선택 컨트롤에서 콜백이 아닌 필드에 대 한 지원 같은 키보드 응답을 에뮬레이트 하려면이 알림을 처리 합니다. 이 알림에 대 한 자세한 내용은 참조 하세요. [DTP 컨트롤에서 콜백 필드를 지 원하는](/windows/desktop/Controls/date-and-time-picker-controls) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CDateTimeCtrl 사용](../mfc/using-cdatetimectrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

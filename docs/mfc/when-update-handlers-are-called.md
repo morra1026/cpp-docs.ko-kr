@@ -16,12 +16,12 @@ helpviewer_keywords:
 - command routing [MFC], update handlers
 - update handlers, calling
 ms.assetid: 7359f6b1-4669-477d-bd99-690affed08d9
-ms.openlocfilehash: 036476ecc7a0528692e6fd3e3d69a2efeef6fd4b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a52c147d1abf02b7c5e89abf868f87a07ab32cc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50454849"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277588"
 ---
 # <a name="when-update-handlers-are-called"></a>업데이트 처리기가 호출되는 시점
 
@@ -35,7 +35,6 @@ ms.locfileid: "50454849"
 
 메뉴 초기화가 자동 framework에서 응용 프로그램 WM_INITMENUPOPUP 메시지를 받을 때 발생 합니다. 유휴 루프 중 프레임 워크가 명령 라우팅을 업데이트 단추 처리기에 대 한 거의 동일한 방식 메뉴에 대해서와 마찬가지로 검색 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [방법: 사용자 인터페이스 개체 업데이트](../mfc/how-to-update-user-interface-objects.md)
-

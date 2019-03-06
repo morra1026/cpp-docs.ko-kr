@@ -13,12 +13,12 @@ helpviewer_keywords:
 - CTable class
 - Open method
 ms.assetid: f13fdaa3-e198-4557-977d-54b0bbc3454d
-ms.openlocfilehash: 7605d78a140a0f5353a16b9e22d5d618d29ff327
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: ff2a139c16b6678bedf38c64a16dce28fa53c5fe
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556688"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425200"
 ---
 # <a name="ctable-class"></a>CTable 클래스
 
@@ -82,7 +82,7 @@ HRESULT Open(const CSession& session,
 
 #### <a name="parameters"></a>매개 변수
 
-*세션*<br/>
+*session*<br/>
 [in] 테이블 열려 있는 세션입니다.
 
 *wszTableName*<br/>
@@ -95,10 +95,10 @@ HRESULT Open(const CSession& session,
 [in] `DBID` 열려는 테이블입니다.
 
 *pPropSet*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 기본값은 NULL 없는 속성을 지정합니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다. 기본값은 NULL 없는 속성을 지정합니다.
 
 *ulPropSets*<br/>
-[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
+[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -106,9 +106,9 @@ HRESULT Open(const CSession& session,
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 참조 하세요. [iopenrowset:: Openrowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+자세한 내용은 참조 하세요. [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

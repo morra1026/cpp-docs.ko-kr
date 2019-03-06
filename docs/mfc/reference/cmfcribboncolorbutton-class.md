@@ -40,12 +40,12 @@ helpviewer_keywords:
 - CMFCRibbonColorButton [MFC], SetPalette
 - CMFCRibbonColorButton [MFC], UpdateColor
 ms.assetid: 6b4b4ee3-8cc0-41b4-a4eb-93e8847008e1
-ms.openlocfilehash: f0a55fa9cb431900a0454d481a77efc4e63372ed
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a7901619110652423a2ab00d8088d6b9213fe202
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50644836"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266278"
 ---
 # <a name="cmfcribboncolorbutton-class"></a>CMFCRibbonColorButton 클래스
 
@@ -171,7 +171,7 @@ CMFCRibbonColorButton(
 *nSmallImageIndex*<br/>
 [in] 단추에 표시할 작은 이미지의 0부터 시작 하는 인덱스입니다.
 
-*색*<br/>
+*color*<br/>
 [in] 색 단추 (기본값은 검정)입니다.
 
 *bSimpleButtonLook*<br/>
@@ -324,7 +324,7 @@ void SetColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 색을 설정 합니다.
 
 ##  <a name="setcolorboxsize"></a>  CMFCRibbonColorButton::SetColorBoxSize
@@ -352,7 +352,7 @@ static void __stdcall SetColorName(
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 색의 RGB 값입니다.
 
 *strName*<br/>
@@ -420,14 +420,14 @@ void UpdateColor(COLORREF color);
 
 ### <a name="parameters"></a>매개 변수
 
-*색*<br/>
+*color*<br/>
 [in] 사용자가 선택한 색입니다.
 
 ### <a name="remarks"></a>설명
 
 `CMFCRibbonColorButton::UpdateColor` 메서드 현재 선택한 단추의 색을 변경 하 고 BN_CLICKED 표준 알림이 WM_COMMAND 메시지를 보내 해당 부모에 알립니다. 사용 된 [CMFCRibbonColorButton::GetColor](#getcolor) 선택한 색을 검색 하는 방법입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

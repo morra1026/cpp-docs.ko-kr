@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CD2DGeometrySink [MFC], SetSegmentFlags
 - CD2DGeometrySink [MFC], m_pSink
 ms.assetid: e5e07f41-0343-4ab1-9d6b-8c62ed33c04a
-ms.openlocfilehash: ff68cc737f28763e5545b0ccaf2c0122e78cb051
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 48c88f0b837b2e49e4c87f07a9aa28c16a66c1e3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50654682"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271205"
 ---
 # <a name="cd2dgeometrysink-class"></a>CD2DGeometrySink 클래스
 
@@ -62,7 +62,7 @@ class CD2DGeometrySink;
 |이름|설명|
 |----------|-----------------|
 |[CD2DGeometrySink::CD2DGeometrySink](#cd2dgeometrysink)|CD2DPathGeometry 개체에서 CD2DGeometrySink 개체를 생성합니다.|
-|[CD2DGeometrySink:: ~ CD2DGeometrySink](#_dtorcd2dgeometrysink)|소멸자입니다. D2D geometry 싱크 개체가 소멸 될 때 호출 됩니다.|
+|[CD2DGeometrySink::~CD2DGeometrySink](#_dtorcd2dgeometrysink)|소멸자입니다. D2D geometry 싱크 개체가 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -87,7 +87,7 @@ class CD2DGeometrySink;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DGeometrySink::operator ID2D1GeometrySink *](#operator_id2d1geometrysink_star)|반환 ID2D1GeometrySink 인터페이스|
+|[CD2DGeometrySink::operator ID2D1GeometrySink*](#operator_id2d1geometrysink_star)|반환 ID2D1GeometrySink 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -95,7 +95,7 @@ class CD2DGeometrySink;
 |----------|-----------------|
 |[CD2DGeometrySink::m_pSink](#m_psink)|ID2D1GeometrySink 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CD2DGeometrySink`
 
@@ -103,7 +103,7 @@ class CD2DGeometrySink;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink:: ~ CD2DGeometrySink
+##  <a name="_dtorcd2dgeometrysink"></a>  CD2DGeometrySink::~CD2DGeometrySink
 
 소멸자입니다. D2D geometry 싱크 개체가 소멸 될 때 호출 됩니다.
 
@@ -121,7 +121,7 @@ void AddArc(const D2D1_ARC_SEGMENT& arc);
 
 ### <a name="parameters"></a>매개 변수
 
-*호*<br/>
+*arc*<br/>
 원호 세그먼트를 그림 추가입니다.
 
 ##  <a name="addbezier"></a>  CD2DGeometrySink::AddBezier
@@ -134,7 +134,7 @@ void AddBezier(const D2D1_BEZIER_SEGMENT& bezier);
 
 ### <a name="parameters"></a>매개 변수
 
-*베 지 어*<br/>
+*bezier*<br/>
 제어점과 추가할 베 지 어 곡선의 끝점을 설명 하는 구조체입니다.
 
 ##  <a name="addbeziers"></a>  CD2DGeometrySink::AddBeziers
@@ -149,7 +149,7 @@ void AddBeziers(
 
 ### <a name="parameters"></a>매개 변수
 
-*여러 베 지 어*<br/>
+*beziers*<br/>
 만들려는 베 지 어 곡선을 설명 하는 3 차원 곡선 세그먼트의 배열입니다. 곡선을 기 하 도형 싱크의 현재 지점 (BeginFigure로 지정 된 위치 또는 마지막으로 그린 세그먼트의 끝점)에서 배열에 첫 번째 베 지 어 세그먼트의 끝점으로 그려집니다. 추가 3 차원 곡선 세그먼트를 포함 하는 경우 각 후속 베 지 어 세그먼트는 시작 지점으로 위의 3 차원 곡선 세그먼트의 끝점을 사용 합니다.
 
 ##  <a name="addline"></a>  CD2DGeometrySink::AddLine
@@ -162,7 +162,7 @@ void AddLine(CD2DPointF point);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 그릴 선의 끝점입니다.
 
 ##  <a name="addlines"></a>  CD2DGeometrySink::AddLines
@@ -177,7 +177,7 @@ void AddLines(
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*points*<br/>
 그릴 선을 설명 하는 하나 이상의 지점 배열입니다. 배열에서 첫 번째 요소에 기 하 도형 싱크의 현재 지점 (BeginFigure로 지정 된 위치 또는 마지막으로 그린 세그먼트의 끝점)에서 선이 그려집니다. 배열에 요소가 추가 하 고 세 번째 데이터 요소, 두 번째 지점에서 배열의 두 번째 지점에 첫 번째 요소에서 선이 그려집니다. 배열 그릴 선의 시작점과 끝점의 시퀀스입니다.
 
 ##  <a name="addquadraticbezier"></a>  CD2DGeometrySink::AddQuadraticBezier
@@ -190,7 +190,7 @@ void AddQuadraticBezier(const D2D1_QUADRATIC_BEZIER_SEGMENT& bezier);
 
 ### <a name="parameters"></a>매개 변수
 
-*베 지 어*<br/>
+*bezier*<br/>
 제어점 및 추가할 정방형 베 지 어 곡선의 끝점을 설명 하는 구조체입니다.
 
 ##  <a name="addquadraticbeziers"></a>  CD2DGeometrySink::AddQuadraticBeziers
@@ -205,7 +205,7 @@ void AddQuadraticBeziers(
 
 ### <a name="parameters"></a>매개 변수
 
-*여러 베 지 어*<br/>
+*beziers*<br/>
 배열 정방형 3 차원 곡선 세그먼트의 시퀀스입니다.
 
 ##  <a name="beginfigure"></a>  CD2DGeometrySink::BeginFigure
@@ -296,7 +296,7 @@ ID2D1GeometrySink 포인터입니다.
 ID2D1GeometrySink* m_pSink;
 ```
 
-##  <a name="operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink *
+##  <a name="operator_id2d1geometrysink_star"></a>  CD2DGeometrySink::operator ID2D1GeometrySink*
 
 반환 ID2D1GeometrySink 인터페이스
 
@@ -334,6 +334,6 @@ void SetSegmentFlags(D2D1_PATH_SEGMENT vertexFlags);
 *vertexFlags*<br/>
 기 하 도형에 추가 된 새 세그먼트에 적용할 스트로크 및 조인 옵션 싱크입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

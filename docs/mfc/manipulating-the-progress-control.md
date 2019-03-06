@@ -8,12 +8,12 @@ helpviewer_keywords:
 - controlling progress controls [MFC]
 - CProgressCtrl class [MFC], using
 ms.assetid: 9af561d1-980b-4003-a6da-ff79be15bf23
-ms.openlocfilehash: c7c602dcdd70a3539f9137589d31820ee5470e49
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c9da6f8048adf1c7da184570ff7f94deee7441e5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461583"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289158"
 ---
 # <a name="manipulating-the-progress-control"></a>진행률 컨트롤 조작
 
@@ -47,8 +47,7 @@ ms.locfileid: "50461583"
 
 일반적으로 진행률 컨트롤 출력에만 사용 됩니다. 새 값을 지정 하지 않고 현재 위치를 가져오려면 [GetPos](../mfc/reference/cprogressctrl-class.md#getpos)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CProgressCtrl 사용](../mfc/using-cprogressctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

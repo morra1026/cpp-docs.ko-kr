@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CMapStringToOb [MFC], RemoveKey
 - CMapStringToOb [MFC], SetAt
 ms.assetid: b45794c2-fe6b-4edb-a8ca-faa03b57b4a8
-ms.openlocfilehash: 754232ea57a77b4eb37a72ff98a3150419d0a248
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: d18cad73f9cf42ffd04ecbcde840d50f6167743a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657372"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266226"
 ---
 # <a name="cmapstringtostring-class"></a>CMapStringToString 클래스
 
@@ -118,7 +118,7 @@ class CMapStringToString : public CObject
 
 에 대 한 자세한 `CMapStringToString`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -224,9 +224,8 @@ CPair* PLookup(LPCTSTR key);
 
 [!code-cpp[NVC_MFCCollections#74](../../mfc/codesnippet/cpp/cmapstringtostring-class_2.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

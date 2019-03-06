@@ -11,12 +11,12 @@ helpviewer_keywords:
 - MIDL linker option
 - MIDL, command line options
 ms.assetid: 22dc259e-b34c-4ed3-a380-4beb734482c1
-ms.openlocfilehash: 273e4ea5776c0de5af16eba235c5775d6f4c4b54
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1e1025f4ce5bfd7dfff40a53472ad71870c694e6
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50525570"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412954"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL(MIDL 명령줄 옵션 지정)
 
@@ -24,7 +24,7 @@ MIDL 명령줄 옵션에 대 한 지시 파일 지정
 
 ## <a name="syntax"></a>구문
 
-> **/MIDL:\@**<em>파일</em>
+> **/MIDL:\@**<em>file</em>
 
 ## <a name="arguments"></a>인수
 
@@ -49,7 +49,7 @@ IDL 파일을 TLB 파일로 변환에 대 한 모든 옵션 지정 해야 합니
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MidlCommandFile%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)<br/>

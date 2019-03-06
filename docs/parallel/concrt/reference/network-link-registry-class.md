@@ -12,16 +12,17 @@ f1_keywords:
 helpviewer_keywords:
 - network_link_registry class
 ms.assetid: 3e7b4097-09f1-4252-964e-b15b8f7f7fc6
-ms.openlocfilehash: 1d0aa8b3b5409659dee08b4e4365beac1a3a92be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2537ed857651b5210b104a270b3d827246b8339a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492268"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273350"
 ---
 # <a name="networklinkregistry-class"></a>network_link_registry 클래스
 
-`network_link_registry` 추상 기본 클래스는 소스 및 대상 블록 간의 연결을 관리합니다.
+
+  `network_link_registry` 추상 기본 클래스는 소스 및 대상 블록 간의 연결을 관리합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -52,7 +53,7 @@ class network_link_registry;
 |----------|-----------------|
 |[add](#add)|파생된 클래스에서 재정의 되 면 추가에 대 한 링크는 `network_link_registry` 개체입니다.|
 |[begin](#begin)|파생된 클래스에서 재정의 되 면 첫 번째 요소에 반복기를 반환 합니다 `network_link_registry` 개체입니다.|
-|[포함](#contains)|파생된 클래스에서 재정의 되 면 검색 된 `network_link_registry` 지정된 된 블록에 대 한 개체입니다.|
+|[contains](#contains)|파생된 클래스에서 재정의 되 면 검색 된 `network_link_registry` 지정된 된 블록에 대 한 개체입니다.|
 |[count](#count)|파생된 클래스에서 재정의 되 면에 있는 항목의 수를 반환 합니다 `network_link_registry` 개체입니다.|
 |[remove](#remove)|파생된 클래스에서 재정의 되 면에서 지정된 된 블록을 제거 합니다 `network_link_registry` 개체입니다.|
 
@@ -60,7 +61,7 @@ class network_link_registry;
 
 `network link registry` 동시 액세스에 대 한 안전 하지 않습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `network_link_registry`
 
@@ -80,7 +81,7 @@ virtual void add(_EType _Link) = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 추가할 블록에 대 한 포인터입니다.
 
 ##  <a name="begin"></a> 시작
@@ -109,7 +110,7 @@ virtual bool contains(_EType _Link) = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 검색 되는 블록에 대 한 포인터를 `network_link_registry` 개체입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -138,14 +139,14 @@ virtual bool remove(_EType _Link) = 0;
 
 ### <a name="parameters"></a>매개 변수
 
-*연결 (_l)*<br/>
+*_Link*<br/>
 제거 될 경우 블록에 대 한 포인터를 찾을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
 **true** 링크를을 찾아 제거 했으면 **false** 그렇지 않은 경우.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [single_link_registry 클래스](single-link-registry-class.md)<br/>

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - OLE classes [MFC]
 - OLE [MFC], classes
 ms.assetid: 2135cf54-1d9d-4e0e-91b4-943b3440effa
-ms.openlocfilehash: 2c3aa5ea4e720b14c5fdc4cb3285cd812eb550e2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7d58072d133b9348558804b848ecfda4497931e1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584654"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263769"
 ---
 # <a name="ole-related-classes"></a>OLE 관련 클래스
 
@@ -31,7 +31,6 @@ COM을 사용 하 여 `IStream` 인터페이스를 `CFile` 복합 파일에 대 
 [CRectTracker](../mfc/reference/crecttracker-class.md)<br/>
 이동, 크기 조정 및 방향 전체 항목을 허용 하는 데 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

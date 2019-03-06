@@ -8,12 +8,12 @@ helpviewer_keywords:
 - CView class [MFC], interpreting user input
 - user input [MFC], interpreting through view class [MFC]
 ms.assetid: f0302a70-661f-4781-8fe7-78f082bef2a5
-ms.openlocfilehash: fe64f7c499b4a7c93f628fa0dff0855c379cbd58
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3ef23ad74e1ff53d947453faa5682c5ecc1f4e43
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552570"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304451"
 ---
 # <a name="interpreting-user-input-through-a-view"></a>뷰를 통해 사용자 입력 해석
 
@@ -39,7 +39,6 @@ Windows 메시지 뷰에서 처리 응용 프로그램의 필요에 따라 달�
 
 보기는 잘라내기, 복사, 붙여넣기 또는 클립보드를 사용 하 여 선택한 데이터를 삭제 하려면 편집 메뉴에서 같은 특정 메뉴 명령을 처리할 수도 수 있습니다. 이러한 처리기는 함수를 호출할 클립보드와 관련 된 멤버의 일부 클래스의 `CWnd` 하거나 클립보드에서 선택한 데이터 항목을 전송 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [뷰 사용](../mfc/using-views.md)
-

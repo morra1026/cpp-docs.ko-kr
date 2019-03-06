@@ -9,12 +9,12 @@ helpviewer_keywords:
 - runtime [MFC], class information
 - run-time class [MFC], CRuntimeClass structure
 ms.assetid: de62b6ef-90d4-420f-8c70-f58b36976a2b
-ms.openlocfilehash: 83c10d5a87c7d5782505fcd93e46c678a97b8b5d
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 92979a10c18d9759e0ecc9f0785e56a97c0f0642
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521960"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57274299"
 ---
 # <a name="cruntimeclass-structure"></a>CRuntimeClass 구조체
 
@@ -57,7 +57,7 @@ struct CRuntimeClass
 
 사용 하 여 대 한 자세한 내용은 `CRuntimeClass`, 문서를 참조 하세요 [런타임 클래스 정보 액세스](../../mfc/accessing-run-time-class-information.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CRuntimeClass`
 
@@ -88,7 +88,7 @@ static CObject* PASCAL CreateObject(LPCWSTR lpszClassName);
 
 ### <a name="remarks"></a>설명
 
-클래스에서 파생 된 `CObject` 런타임에 지정된 된 클래스의 개체를 만들 수 있는 동적 생성을 지원할 수 있습니다. 문서, 뷰 및 프레임 클래스, 예를 들어 해야 동적 생성을 지원 합니다. 동적 만들기에 대 한 자세한 내용은 및 `CreateObject` 멤버를 참조 하세요 [CObject 클래스](../../mfc/using-cobject.md) 및 [CObject 클래스: 기능 수준 지정](../../mfc/specifying-levels-of-functionality.md)합니다.
+클래스에서 파생 된 `CObject` 런타임에 지정된 된 클래스의 개체를 만들 수 있는 동적 생성을 지원할 수 있습니다. 문서, 뷰 및 프레임 클래스, 예를 들어 해야 동적 생성을 지원 합니다. 동적 만들기에 대 한 자세한 내용은 및 `CreateObject` 멤버를 참조 하세요 [CObject 클래스](../../mfc/using-cobject.md) 고 [CObject 클래스: 기능 수준 지정](../../mfc/specifying-levels-of-functionality.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -141,7 +141,7 @@ TRUE 이면 클래스 호출 `IsDerivedFrom` 기본에서 파생 된 클래스 `
 > [!NOTE]
 >  사용 하 여 `CRuntimeClass` 구조 런타임 개체 정보를 검색 하려는 클래스의 구현에서 IMPLEMENT_DYNAMIC, IMPLEMENT_DYNCREATE, 또는 IMPLEMENT_SERIAL 매크로 포함 해야 합니다.
 
-사용 하 여 대 한 자세한 내용은 `CRuntimeClass`, 문서를 참조 하세요 [CObject 클래스: 런타임 클래스 정보 액세스](../../mfc/accessing-run-time-class-information.md)합니다.
+사용 하 여 대 한 자세한 내용은 `CRuntimeClass`, 문서를 참고 [CObject 클래스: 런타임 클래스 정보 액세스](../../mfc/accessing-run-time-class-information.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -215,7 +215,7 @@ ASCII 클래스 이름을 포함 하는 null 종료 문자열입니다.
 
   예를 참조 하세요 [IsDerivedFrom](#isderivedfrom)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CObject::GetRuntimeClass](../../mfc/reference/cobject-class.md#getruntimeclass)<br/>
@@ -224,4 +224,3 @@ ASCII 클래스 이름을 포함 하는 null 종료 문자열입니다.
 [IMPLEMENT_DYNAMIC](run-time-object-model-services.md#implement_dynamic)<br/>
 [IMPLEMENT_DYNCREATE](run-time-object-model-services.md#implement_dyncreate)<br/>
 [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial)
-

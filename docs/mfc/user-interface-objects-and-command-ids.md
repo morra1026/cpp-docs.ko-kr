@@ -11,12 +11,12 @@ helpviewer_keywords:
 - command routing [MFC], MFC
 - command handling [MFC], user-interface objects
 ms.assetid: 4ea19e9b-ed1e-452e-bd33-7f509107a45b
-ms.openlocfilehash: 75bd3a8fb562b45289107c8eb01ee3745045462d
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 54372facc51062add122c1db2e01e3081127512e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176837"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57278420"
 ---
 # <a name="user-interface-objects-and-command-ids"></a>사용자 인터페이스 개체 및 명령 ID
 
@@ -30,6 +30,6 @@ ms.locfileid: "52176837"
 ![프레임 워크 업데이트 명령](../mfc/media/vc385p2.png "프레임 워크 업데이트 명령") <br/>
 Framework의 명령 업데이트
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크의 메시지 및 명령](../mfc/messages-and-commands-in-the-framework.md)

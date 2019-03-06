@@ -5,12 +5,12 @@ helpviewer_keywords:
 - statically linking to ATL Registrar code
 - linking [C++], to ATL Registrar code
 ms.assetid: 835f5885-87a6-48fa-91e6-60988ee65538
-ms.openlocfilehash: 11600b47abbbd247d099d871fce5e9d5d17d3cf4
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: b95bd17abca3237710956f3a1bf1b1d6fa9df51e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51327891"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265329"
 ---
 # <a name="setting-up-a-static-link-to-the-registrar-code-c-only"></a>등록자 코드 (c + + 전용)에 대 한 정적 링크 설정
 
@@ -24,6 +24,6 @@ C + + 클라이언트 등록자 코드에 정적 링크를 만들 수 있습니�
 
 1. 다시 컴파일하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [레지스트리 구성 요소 (등록자)](../atl/atl-registry-component-registrar.md)

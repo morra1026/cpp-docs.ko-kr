@@ -10,12 +10,12 @@ helpviewer_keywords:
 - Fm compiler option [C++]
 - /Fm compiler option [C++]
 ms.assetid: 8154448a-93a7-4546-8e4c-5c44d0aff45d
-ms.openlocfilehash: 49a3d20aee54b06bae2670be139d748fd2aaca6d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f6290d3dfa4aaadfc9247fd8453d378851328a1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50469854"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418737"
 ---
 # <a name="fm-name-mapfile"></a>/Fm(맵 파일 이름 지정)
 
@@ -51,7 +51,7 @@ ms.locfileid: "50469854"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

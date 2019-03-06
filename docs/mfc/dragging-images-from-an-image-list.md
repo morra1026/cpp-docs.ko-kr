@@ -7,12 +7,12 @@ helpviewer_keywords:
 - image lists [MFC], dragging images from
 - images [MFC], dragging from image lists
 ms.assetid: af691db8-e4f0-4046-b7b9-9acc68d3713d
-ms.openlocfilehash: 9d42e9cdd8e2711fc6ed6aa0d08a19b8bc55d5f1
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ba56a38cfc5ccf808c7d95f24666fff0313ecc43
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50562203"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294514"
 ---
 # <a name="dragging-images-from-an-image-list"></a>이미지 목록에서 이미지 끌기
 
@@ -30,8 +30,7 @@ ms.locfileid: "50562203"
 
 응용 프로그램을 호출 하면 `BeginDrag`시스템 내부 임시 이미지 목록을 만들고 복사본이 지정된 된 내부 목록에 이미지를 끌어옵니다. 사용 하 여 임시 끌기 이미지 목록에 대 한 포인터를 검색할 수 있습니다 합니다 [GetDragImage](../mfc/reference/cimagelist-class.md#getdragimage) 멤버 함수입니다. 함수는 또한 끌어서 위치를 기준으로 끌기 이미지의 오프셋과 현재 끌어서 위치를 검색합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CImageList 사용](../mfc/using-cimagelist.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

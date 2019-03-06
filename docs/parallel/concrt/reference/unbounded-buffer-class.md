@@ -19,16 +19,17 @@ f1_keywords:
 - AGENTS/concurrency::unbounded_buffer::send_message
 - AGENTS/concurrency::unbounded_buffer::supports_anonymous_source
 ms.assetid: 6b1a939a-1819-4385-b1d8-708f83d4ec47
-ms.openlocfilehash: b4a54e80067c5bc4cea9cd0dac0e24a66e1858e0
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 1474381a2d1c0947b2428ab4cf0b4683198eef84
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51694753"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288146"
 ---
 # <a name="unboundedbuffer-class"></a>unbounded_buffer 클래스
 
-`unbounded_buffer` 메시징 블록은 메시지를 개수에 제한 없이 저장할 수 있는, 순서가 지정된 다중 대상 다중 소스 `propagator_block`입니다.
+
+  `unbounded_buffer` 메시징 블록은 메시지를 개수에 제한 없이 저장할 수 있는, 순서가 지정된 다중 대상 다중 소스 `propagator_block`입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -41,7 +42,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 
 #### <a name="parameters"></a>매개 변수
 
-*형식 (_t)*<br/>
+*_Type*<br/>
 저장 하 고 버퍼에 의해 전파 되는 메시지의 페이로드 유형입니다.
 
 ## <a name="members"></a>멤버
@@ -60,7 +61,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 |[dequeue](#dequeue)|항목을 제거 합니다 `unbounded_buffer` 메시징 블록입니다.|
 |[enqueue](#enqueue)|항목을 추가 합니다 `unbounded_buffer` 메시징 블록입니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -74,11 +75,12 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 |[reserve_message](#reserve_message)|이전에 제공한 메시지를 예약 `unbounded_buffer` 메시징 블록입니다. (재정의 [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|예약을 해제 된 후에 전파를 다시 시작 합니다. (재정의 [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 |[send_message](#send_message)|메시지를 동기적으로 전달 된 `ISource` 이 블록 `unbounded_buffer` 메시징 블록입니다. 호출한는 `send` 메서드의 소스 블록에서 호출 하는 경우.|
-|[supports_anonymous_source](#supports_anonymous_source)|`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
+|[supports_anonymous_source](#supports_anonymous_source)|
+  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다. (재정의 [itarget:: Supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
 자세한 내용은 [비동기 메시지 블록](../asynchronous-message-blocks.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [ISource](isource-class.md)
 
@@ -138,7 +140,7 @@ virtual message<_Type> * consume_message(
 
 비슷합니다 `accept`를 호출 하 여 항상 선행 `reserve`합니다.
 
-##  <a name="dequeue"></a> 큐에서 제거
+##  <a name="dequeue"></a> dequeue
 
 항목을 제거 합니다 `unbounded_buffer` 메시징 블록입니다.
 
@@ -150,7 +152,7 @@ _Type dequeue();
 
 제거할 메시지의 페이로드에 `unbounded_buffer`합니다.
 
-##  <a name="enqueue"></a> 큐에 넣기
+##  <a name="enqueue"></a> enqueue
 
 항목을 추가 합니다 `unbounded_buffer` 메시징 블록입니다.
 
@@ -162,7 +164,7 @@ bool enqueue(
 
 ### <a name="parameters"></a>매개 변수
 
-*(_I)*<br/>
+*_Item*<br/>
 추가할 항목입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -198,7 +200,8 @@ virtual message_status propagate_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -294,7 +297,8 @@ virtual message_status send_message(
 ### <a name="parameters"></a>매개 변수
 
 *_PMessage*<br/>
-`message` 개체에 대한 포인터입니다.
+
+  `message` 개체에 대한 포인터입니다.
 
 *_PSource*<br/>
 메시지를 제공 하는 소스 블록에 대 한 포인터입니다.
@@ -305,7 +309,8 @@ A [message_status](concurrency-namespace-enums.md#message_status) 메시지와 �
 
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source
 
-`supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
+
+  `supports_anonymous_source` 메서드를 재정의하여 이 블록이 연결되지 않은 소스에서 제공하는 메시지를 수락할 수 있음을 나타냅니다.
 
 ```
 virtual bool supports_anonymous_source();
@@ -347,7 +352,7 @@ unbounded_buffer(
 
 ### <a name="parameters"></a>매개 변수
 
-*필터 (_f)*<br/>
+*_Filter*<br/>
 제공 된 메시지를 허용 해야 하는지 여부를 결정 하는 필터 함수입니다.
 
 *_PScheduler*<br/>
@@ -370,9 +375,8 @@ unbounded_buffer(
 ~unbounded_buffer();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [overwrite_buffer 클래스](overwrite-buffer-class.md)<br/>
 [single_assignment 클래스](single-assignment-class.md)
-

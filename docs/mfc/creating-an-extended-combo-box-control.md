@@ -6,12 +6,12 @@ helpviewer_keywords:
 - CComboBoxEx class [MFC], creating extended combo box controls
 - extended combo boxes [MFC], creating
 ms.assetid: a964267e-97b6-4e77-9f89-55bb5c68913f
-ms.openlocfilehash: d1e81664403f45a0a35cd24ceea16e1425b03403
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bfc201fbb10c3caa3eaabd0e81206b9493ff7196
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668769"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281618"
 ---
 # <a name="creating-an-extended-combo-box-control"></a>확장된 콤보 상자 컨트롤 만들기
 
@@ -35,8 +35,7 @@ ms.locfileid: "50668769"
 
 1. 컨트롤의 호출 [Create](../mfc/reference/ctabctrl-class.md#create) 멤버 함수를 [OnInitialUpdate](../mfc/reference/cview-class.md#oninitialupdate), 부모 창의 만큼 [OnCreate](../mfc/reference/cwnd-class.md#oncreate) 처리기 함수입니다. 컨트롤의 스타일을 설정합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComboBoxEx 사용](../mfc/using-ccomboboxex.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

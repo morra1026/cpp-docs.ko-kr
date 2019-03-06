@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CFont [MFC], FromHandle
 - CFont [MFC], GetLogFont
 ms.assetid: 3fad6bfe-d6ce-4ab9-967a-5ce0aa102800
-ms.openlocfilehash: f925940f0813e1912be9f2382b676e80db8240c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 60a717136f69b29df48dd8f449ddaffe5c15ccbf
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50607899"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57271868"
 ---
 # <a name="cfont-class"></a>CFont 클래스
 
@@ -357,9 +357,8 @@ Windows GDI 글꼴 개체의 핸들에 연결 된 `CFont` 성공 하면 NULL입�
 
 [!code-cpp[NVC_MFCDocView#77](../../mfc/codesnippet/cpp/cfont-class_8.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[MFC 샘플 HIERSVR](../../visual-cpp-samples.md)<br/>
+[MFC Sample HIERSVR](../../visual-cpp-samples.md)<br/>
 [CGdiObject 클래스](../../mfc/reference/cgdiobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

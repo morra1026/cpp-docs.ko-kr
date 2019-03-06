@@ -14,12 +14,12 @@ helpviewer_keywords:
 - OLE IMoniker interface
 - OLE IUnknown
 ms.assetid: 2b67016a-d78e-4d60-925f-c28ec8fb6180
-ms.openlocfilehash: 6372f28c78be99af9e329ff83ef531d18ad2480f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f793c7d7303a49057e46c32eb658ea7eea8e9ccc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476676"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267279"
 ---
 # <a name="ole-background-mfc-implementation"></a>OLE 백그라운드: MFC 구현
 
@@ -35,7 +35,7 @@ IMoniker 인터페이스의 `IMoniker` 인터페이스는 클래스 라이브러
 
 IUnknown 및 IMarshal 인터페이스는 `IUnknown` 인터페이스는 클래스 라이브러리에서 구현 되지만 프로그래머에 게 노출 되지 않습니다. `IMarshal` 인터페이스는 클래스 라이브러리에서 구현 되지 않지만 내부적으로 사용 됩니다. 클래스 라이브러리를 사용하여 빌드된 자동화 서버는 이미 마샬링 기능이 내장되어 있습니다.
 
-Docfiles (복합 파일) 복합 파일은 클래스 라이브러리에서 부분적으로 지원 됩니다. 만드는 것 이상으로 직접 복합 파일을 조작하는 함수는 지원하지 않습니다. MFC 클래스를 사용 하 여 `COleFileStream` 표준 파일 함수와 스트림 조작을 지원 하기 위해. 자세한 내용은 문서 참조 [컨테이너: 복합 파일](../mfc/containers-compound-files.md)합니다.
+Docfiles (복합 파일) 복합 파일은 클래스 라이브러리에서 부분적으로 지원 됩니다. 만드는 것 이상으로 직접 복합 파일을 조작하는 함수는 지원하지 않습니다. MFC 클래스를 사용 하 여 `COleFileStream` 표준 파일 함수와 스트림 조작을 지원 하기 위해. 자세한 내용은 문서를 참조 하세요. [컨테이너: 복합 파일](../mfc/containers-compound-files.md)합니다.
 
 In-process 서버와 개체 처리기 in-process 서버와 개체 처리기 구현의 시각적 데이터 편집 또는 동적 연결 라이브러리 (DLL)의 전체 구성 요소 개체 모델 (COM) 개체를 허용합니다. 이렇게 하려면 OLE API를 직접 호출하여 DLL을 구현할 수 있습니다. 그러나 사용자 인터페이스가 없는 자동화 서버를 작성하는 경우에는 AppWizard를 사용하여 해당 서버를 In-process 서버로 만든 다음 DLL에 완전히 포함시킬 수 있습니다. 이러한 항목에 대 한 자세한 내용은 참조 하세요. [자동화 서버](../mfc/automation-servers.md)합니다.
 
@@ -44,8 +44,7 @@ In-process 서버와 개체 처리기 in-process 서버와 개체 처리기 구�
 
 Microsoft Foundation OLE 클래스가 OLE 인터페이스를 구현 하는 방법에 대 한 자세한 내용은 MFC Technical Note를 참조 하세요. [38](../mfc/tn038-mfc-ole-iunknown-implementation.md)하십시오 [39](../mfc/tn039-mfc-ole-automation-implementation.md), 및 [40](../mfc/tn040-mfc-ole-in-place-resizing-and-zooming.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE 백그라운드](../mfc/ole-background.md)<br/>
-[OLE 백그라운드 구현 전략](../mfc/ole-background-implementation-strategies.md)
-
+[OLE 백그라운드: 구현 전략](../mfc/ole-background-implementation-strategies.md)

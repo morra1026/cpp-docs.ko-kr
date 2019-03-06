@@ -7,12 +7,12 @@ helpviewer_keywords:
 - image list control
 - CImageList class [MFC], using
 ms.assetid: 3d2a909e-d641-46b7-aada-81cab1a29b41
-ms.openlocfilehash: 92d639468e7465415b3553558090ca2d6811de9c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c3e4cec75ce23beb2a617d672170f86c608ca0a2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502676"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294592"
 ---
 # <a name="using-cimagelist"></a>CImageList 사용
 
@@ -20,7 +20,7 @@ ms.locfileid: "50502676"
 
 모든 이미지는 이미지 목록에서 형식으로 화면 장치에서 단일, 와이드 비트맵에 포함 됩니다. 이미지 목록에 마스크를 투명 하 게 이미지를 그리는 데 사용 (아이콘 스타일)를 포함 하는 단색 비트맵을 포함할 수도 있습니다. `CImageList` 이미지를 그릴, 만들기 및 이미지 목록 삭제, 추가 및 이미지를 제거, 이미지를 대체, 이미지를 병합 및 이미지를 끌어 수 있도록 하는 멤버 함수를 제공 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [이미지 목록 형식](../mfc/types-of-image-lists.md)
 
@@ -36,7 +36,6 @@ ms.locfileid: "50502676"
 
 - [이미지 목록의 이미지 정보](../mfc/image-information-in-image-lists.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

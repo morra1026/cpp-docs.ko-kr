@@ -5,12 +5,12 @@ helpviewer_keywords:
 - callback items in CListCtrl class [MFC]
 - CListCtrl class [MFC], callback item and callback mask
 ms.assetid: 67c1f76f-6144-453e-9376-6712f89430ae
-ms.openlocfilehash: b48f203ae2f0ac0089e30c77e529c6a5eec8822b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 35967f128c6cc59bc9cea90da559b32c51fb38d1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50659656"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261078"
 ---
 # <a name="callback-items-and-the-callback-mask"></a>콜백 항목 및 콜백 마스크
 
@@ -34,8 +34,7 @@ ms.locfileid: "50659656"
 
 이 마스크를 설정 및 검색에 자세한 내용은 참조 [CListCtrl::GetCallbackMask](../mfc/reference/clistctrl-class.md#getcallbackmask) 하 고 [CListCtrl::SetCallbackMask](../mfc/reference/clistctrl-class.md#setcallbackmask)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

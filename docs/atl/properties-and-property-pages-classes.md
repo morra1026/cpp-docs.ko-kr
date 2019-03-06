@@ -9,12 +9,12 @@ helpviewer_keywords:
 - properties [ATL], classes
 - properties [ATL]
 ms.assetid: 31616f98-69f8-48b2-8d58-b8e7d1c2b2d8
-ms.openlocfilehash: 9c56638c72328a59223f3323d55f4dcc6ced2609
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f5d318cecc527d0c41124ccf14326ea308007b1d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50474063"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290471"
 ---
 # <a name="properties-and-property-pages-classes"></a>속성 및 속성 페이지 클래스
 
@@ -40,8 +40,7 @@ ms.locfileid: "50474063"
 
 [ATL COM 속성 페이지](../atl/atl-com-property-pages.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [속성 맵 매크로](../atl/reference/property-map-macros.md)
-

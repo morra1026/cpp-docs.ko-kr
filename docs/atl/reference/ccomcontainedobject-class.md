@@ -14,12 +14,12 @@ helpviewer_keywords:
 - aggregation [C++], ATL objects
 - CComContainedObject class
 ms.assetid: e8616b41-c200-47b8-bf2c-fb9f713ebdad
-ms.openlocfilehash: 289174fbfc61b0bbca65233fe24d93537627e17d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 15ea9be2a3576081901c9e744d89d33688fe838a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50492575"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57273584"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject 클래스
 
@@ -37,7 +37,7 @@ class CComContainedObject : public Base
 
 #### <a name="parameters"></a>매개 변수
 
-*자료*<br/>
+*Base*<br/>
 파생 된 클래스 [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) 하거나 [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)합니다.
 
 ## <a name="members"></a>멤버
@@ -47,7 +47,7 @@ class CComContainedObject : public Base
 |이름|설명|
 |----------|-----------------|
 |[CComContainedObject::CComContainedObject](#ccomcontainedobject)|생성자입니다. 멤버에 대 한 포인터로 소유자 개체의 초기화 `IUnknown`합니다.|
-|[CComContainedObject:: ~ CComContainedObject](#dtor)|소멸자입니다.|
+|[CComContainedObject::~CComContainedObject](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -62,7 +62,7 @@ class CComContainedObject : public Base
 
 ATL 사용 `CComContainedObject` 클래스의 [CComAggObject](../../atl/reference/ccomaggobject-class.md)를 [CComPolyObject](../../atl/reference/ccompolyobject-class.md), 및 [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)합니다. `CComContainedObject` 구현 [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) 소유자 개체에 위임 하 여 `IUnknown`입니다. (소유자 개체 또는 집계의 외부 개체는 분리 인터페이스는 생성 되는 개체입니다.) `CComContainedObject` 호출 `CComObjectRootEx`의 `OuterQueryInterface`를 `OuterAddRef`, 및 `OuterRelease`를 통해 상속 된 모든, `Base`합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Base`
 
@@ -101,7 +101,7 @@ CComContainedObject(void* pv);
 
 집합의 `m_pOuterUnknown` 멤버 포인터 (통해 상속 합니다 `Base` 클래스)를 *pv*.
 
-##  <a name="dtor"></a>  CComContainedObject:: ~ CComContainedObject
+##  <a name="dtor"></a>  CComContainedObject::~CComContainedObject
 
 소멸자입니다.
 
@@ -166,6 +166,6 @@ STDMETHOD_(ULONG, Release)();
 
 디버그 빌드에서 `Release` 진단용 유용 하거나 테스트 수 있는 값을 반환 합니다. 디버그가 아닌 빌드에서 `Release` 항상 0을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

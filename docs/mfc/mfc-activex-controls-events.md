@@ -13,12 +13,12 @@ helpviewer_keywords:
 - events [MFC], ActiveX controls
 - OLE events [MFC]
 ms.assetid: e1e57e0c-206b-4923-a0b5-682c26564f74
-ms.openlocfilehash: 76557e64b5b53c32a7d7f63134085e86bf0138df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0d8a881d07a3e48673c6dc3298816d165273be0d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540675"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57276769"
 ---
 # <a name="mfc-activex-controls-events"></a>MFC ActiveX 컨트롤: 이벤트
 
@@ -26,7 +26,7 @@ Activex는 컨트롤에 발생 하는 컨테이너에 알리기 위해 이벤트
 
 이벤트 메시지 라고도 합니다.
 
-MFC에서는 두 가지 유형의 이벤트: 스톡 및 사용자 지정 합니다. 스톡 이벤트는 클래스는 해당 이벤트 [COleControl](../mfc/reference/colecontrol-class.md) 자동으로 처리 합니다. 스톡 이벤트의 전체 목록은, 문서를 참조 하세요 [MFC ActiveX 컨트롤: 스톡 이벤트 추가](../mfc/mfc-activex-controls-adding-stock-events-to-an-activex-control.md)합니다. 사용자 지정 이벤트를 제어 하는 특정 작업 발생 하는 경우 컨테이너를 알리는 기능을 제어를 허용 합니다. 몇 가지 예제를 변경 하는 컨트롤의 내부 상태 또는 특정 창 메시지를 받을 것입니다.
+MFC에서는 두 가지 유형의 이벤트: 스톡 및 사용자 지정 합니다. 스톡 이벤트는 클래스는 해당 이벤트 [COleControl](../mfc/reference/colecontrol-class.md) 자동으로 처리 합니다. 스톡 이벤트의 전체 목록은, 문서를 참조 하세요. [MFC ActiveX 컨트롤: 스톡 이벤트 추가](../mfc/mfc-activex-controls-adding-stock-events-to-an-activex-control.md)합니다. 사용자 지정 이벤트를 제어 하는 특정 작업 발생 하는 경우 컨테이너를 알리는 기능을 제어를 허용 합니다. 몇 가지 예제를 변경 하는 컨트롤의 내부 상태 또는 특정 창 메시지를 받을 것입니다.
 
 이벤트를 올바르게 실행 하려면 컨트롤에 대 한 사용자 컨트롤 클래스 관련된 이벤트가 발생할 때 호출 해야 하는 멤버 함수에 컨트롤의 각 이벤트를 매핑해야 합니다. 이 매핑 메커니즘 (맵이라고 이벤트) 이벤트에 대 한 정보를 중앙 집중화 하 고 쉽게 액세스 하 고 컨트롤의 이벤트를 조작 하는 Visual Studio를 허용 합니다. 이 이벤트 맵 헤더에 있는 다음 매크로 사용 하 여 선언 (합니다. H) 컨트롤 클래스 선언의 파일:
 
@@ -47,7 +47,7 @@ MFC ActiveX 컨트롤 마법사를 사용 하 여 프로젝트를 만드는 경�
 
 - [MFC ActiveX 컨트롤: 사용자 지정 이벤트 추가](../mfc/mfc-activex-controls-adding-custom-events.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤](../mfc/mfc-activex-controls.md)<br/>
 [MFC ActiveX 컨트롤: 메서드](../mfc/mfc-activex-controls-methods.md)<br/>

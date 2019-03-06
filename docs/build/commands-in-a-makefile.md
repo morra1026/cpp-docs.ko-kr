@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - commands, makefiles
 ms.assetid: 8085517e-42f4-493b-b8f8-44311fc08c64
-ms.openlocfilehash: 8b640e8a7a1773e69792453de6cb70bcb09c988f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1fbaddef535ee1066c0723b5709ce2d55e67682e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50668236"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419664"
 ---
 # <a name="commands-in-a-makefile"></a>메이크파일의 명령
 
@@ -33,6 +33,6 @@ project.obj : project.c project.h ; cl /c project.c
 
 [메이크파일의 인라인 파일](../build/inline-files-in-a-makefile.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMAKE 참조](../build/nmake-reference.md)

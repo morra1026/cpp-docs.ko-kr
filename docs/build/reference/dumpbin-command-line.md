@@ -1,4 +1,4 @@
-﻿---
+---
 title: DUMPBIN 명령줄
 ms.date: 11/04/2016
 f1_keywords:
@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPBIN program, command line
 ms.assetid: e6ad17d3-965d-41aa-9dfd-75bb073718d4
-ms.openlocfilehash: 72b907abbbb52a881feb415e47a768e61a9819ec
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4a1ce9f3b6ce3db6687820a4244da54efe38b4ab
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50539284"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423926"
 ---
 # <a name="dumpbin-command-line"></a>DUMPBIN 명령줄
 
@@ -27,7 +27,7 @@ DUMPBIN [options] files...
 
 다른 명령줄 입력 없이 `dumpbin` 명령을 입력할 경우 옵션을 요약한 DUMPBIN의 사용법 문이 표시됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[C/C++ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
 [DUMPBIN 참조](../../build/reference/dumpbin-reference.md)

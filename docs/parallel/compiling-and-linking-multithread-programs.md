@@ -10,12 +10,12 @@ helpviewer_keywords:
 - compiling source code [C++], multithread programs
 - linking [C++], multithread programs
 ms.assetid: 27589afc-daf2-4f26-b868-a99de5c9dfec
-ms.openlocfilehash: 3d98f5341de1374c9119e2a4303c94fcfb005e29
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bc56c71c4c3c1367d35dd5995054b1d7371ae9de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50558888"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283490"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>다중 스레드 프로그램 컴파일 및 링크
 
@@ -43,6 +43,6 @@ Bounce.c 프로그램은 [샘플 다중 스레드 C 프로그램](sample-multith
     CL BOUNCE.C
     ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C 및 Win32를 사용한 다중 스레딩](multithreading-with-c-and-win32.md)

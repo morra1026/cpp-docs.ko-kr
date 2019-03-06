@@ -34,12 +34,12 @@ helpviewer_keywords:
 - CLinkCtrl [MFC], SetItemState
 - CLinkCtrl [MFC], SetItemUrl
 ms.assetid: d1cd876a-ecca-42db-8ac4-9cd327df0cd4
-ms.openlocfilehash: b24b92006b73dff2ae9f091256ef8401efc64fe9
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 38f529f46623bc7095879b29fba09427626073ec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178047"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260403"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl 클래스
 
@@ -85,7 +85,7 @@ class CLinkCtrl : public CWnd
 
 자세한 내용은 [SysLink 컨트롤](/windows/desktop/Controls/syslink-overview) Windows SDK에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -298,7 +298,7 @@ BOOL GetItemID(
 *iLink*<br/>
 링크 컨트롤 항목의 인덱스입니다.
 
-*로*<br/>
+*strID*<br/>
 A [CStringT](../../atl-mfc-shared/reference/cstringt-class.md) 지정된 된 항목의 ID를 포함 하는 개체입니다.
 
 *szID*<br/>
@@ -512,7 +512,7 @@ BOOL SetItemUrl(
 
 지정 된 링크 컨트롤 항목을 나타내는 URL을 설정 합니다. 자세한 내용은 Win32 메시지를 참조 하세요 [LM_SETITEM](/windows/desktop/Controls/lm-setitem) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)

@@ -18,12 +18,12 @@ helpviewer_keywords:
 - troubleshooting release builds
 - memory [C++], overwrites
 ms.assetid: 73cbc1f9-3e33-472d-9880-39a8e9977b95
-ms.openlocfilehash: a19eabc7b3e334f4a2a6d967d2bfc81b080c0054
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bb5098ab4c92a408ae5895b5c59c7ecd36585bdb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546561"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415658"
 ---
 # <a name="common-problems-when-creating-a-release-build"></a>릴리스 빌드를 만들 때의 일반적인 문제
 
@@ -63,7 +63,7 @@ ms.locfileid: "50546561"
 
 코드의 특정 세그먼트의 성격에 따라 최적화 컴파일러는 예기치 않은 코드를 생성할 수 있습니다. 릴리스 빌드 문제에 대 한 가능성이 가장 낮은 원인 이지만 경우에 따라 발생지 않습니다. 솔루션을 참조 하세요 [코드 최적화](../../build/reference/optimizing-your-code.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [릴리스 빌드](../../build/reference/release-builds.md)<br/>
 [릴리스 빌드 문제 해결](../../build/reference/fixing-release-build-problems.md)

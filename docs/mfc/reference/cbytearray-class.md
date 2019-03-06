@@ -42,12 +42,12 @@ helpviewer_keywords:
 - CObArray [MFC], SetAtGrow
 - CObArray [MFC], SetSize
 ms.assetid: 53d4a512-657c-4187-9609-e3f5339a78e0
-ms.openlocfilehash: e8cff11f745c3407218a828565232e5b115fc687
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: b1c48e087052308dfb6b27275c5b4997ed9cca7b
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657320"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259713"
 ---
 # <a name="cbytearray-class"></a>CByteArray 클래스
 
@@ -114,7 +114,7 @@ class CByteArray : public CObject
 
 사용 하 여 대 한 자세한 내용은 `CByteArray`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -124,7 +124,7 @@ class CByteArray : public CObject
 
 **헤더:** afxcoll.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

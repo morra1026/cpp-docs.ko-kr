@@ -11,12 +11,12 @@ helpviewer_keywords:
 - dimensions
 - CSize class
 ms.assetid: fb2cf85a-0bc1-46f8-892b-309c108b52ae
-ms.openlocfilehash: 9bbd23fe793946dc0f081f4d19b9f6e26fcfda82
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 36da88a49e7d0e648d44b0798e108a60abb935d9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178371"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415151"
 ---
 # <a name="csize-class"></a>CSize 클래스
 
@@ -40,12 +40,12 @@ class CSize : public tagSIZE
 
 |이름|설명|
 |----------|-----------------|
-|[CSize::operator-](#operator_-)|두 가지 크기를 뺍니다.|
-|[CSize::operator! =](#operator_neq)|이 다른 지 확인 `CSize` 및 크기입니다.|
+|[CSize::operator -](#operator_-)|두 가지 크기를 뺍니다.|
+|[CSize::operator !=](#operator_neq)|이 다른 지 확인 `CSize` 및 크기입니다.|
 |[CSize::operator +](#operator_add)|두 가지 크기를 추가합니다.|
-|[CSize::operator + =](#operator_add_eq)|추가 크기 `CSize`합니다.|
-|[CSize::operator =](#operator_-_eq)|크기를 뺍니다 `CSize`합니다.|
-|[CSize::operator = =](#operator_eq_eq)|같은지 확인 `CSize` 및 크기입니다.|
+|[CSize::operator +=](#operator_add_eq)|추가 크기 `CSize`합니다.|
+|[CSize::operator -=](#operator_-_eq)|크기를 뺍니다 `CSize`합니다.|
+|[CSize::operator ==](#operator_eq_eq)|같은지 확인 `CSize` 및 크기입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -56,7 +56,7 @@ class CSize : public tagSIZE
 > [!NOTE]
 > 공유 유틸리티 클래스에 대 한 자세한 (같은 `CSize`)를 참조 하세요 [공유 클래스](../../atl-mfc-shared/atl-mfc-shared-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `tagSIZE`
 
@@ -103,7 +103,7 @@ DWORD 초기화 하는 데 `CSize`합니다. 하위 단어를 `cx` 멤버 이며
 
 [!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]
 
-##  <a name="operator_eq_eq"></a>  CSize::operator = =
+##  <a name="operator_eq_eq"></a>  CSize::operator ==
 
 두 크기가 같은지 확인 합니다.
 
@@ -119,7 +119,7 @@ BOOL operator==(SIZE size) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#98](../../atl-mfc-shared/codesnippet/cpp/csize-class_2.cpp)]
 
-##  <a name="operator_neq"></a>  CSize::operator! =
+##  <a name="operator_neq"></a>  CSize::operator !=
 
 두 크기가 같지 확인 합니다.
 
@@ -135,7 +135,7 @@ BOOL operator!=(SIZE size) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#99](../../atl-mfc-shared/codesnippet/cpp/csize-class_3.cpp)]
 
-##  <a name="operator_add_eq"></a>  CSize::operator + =
+##  <a name="operator_add_eq"></a>  CSize::operator +=
 
 이 크기를 추가 `CSize`합니다.
 
@@ -147,7 +147,7 @@ void operator+=(SIZE size) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#100](../../atl-mfc-shared/codesnippet/cpp/csize-class_4.cpp)]
 
-##  <a name="operator_-_eq"></a>  CSize::operator =
+##  <a name="operator_-_eq"></a>  CSize::operator -=
 
 이 크기를 뺍니다 `CSize`합니다.
 
@@ -173,23 +173,23 @@ CRect operator+(const RECT* lpRect) const throw();
 
 개별 연산자의 다음 설명을 참조 하세요.
 
-- **operator + (** *크기* **)**
+- **operator +(** *size* **)**
 
   이 작업은 두 개의 추가 `CSize` 값입니다.
 
-- **operator + (** *가리킨* **)**
+- **operator +(** *point* **)**
 
-  이 작업 (이동) 오프셋을 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) (또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) 값이 `CSize` 값입니다. `cx` 및 `cy` 이 멤버인 `CSize` 값에 추가 됩니다는 `x` 및 `y` 의 데이터 멤버는 `POINT` 값. 버전의 유사 [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+  이 작업 (이동) 오프셋을 [지점](/previous-versions/dd162805\(v=vs.85\)) (또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) 값이 `CSize` 값입니다. `cx` 및 `cy` 이 멤버인 `CSize` 값에 추가 됩니다는 `x` 및 `y` 의 데이터 멤버는 `POINT` 값. 버전의 유사 [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
 
-- **operator + (** *lpRect* **)**
+- **operator +(** *lpRect* **)**
 
-   이 작업 (이동) 오프셋을 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md)) 값이 `CSize` 값입니다. `cx` 및 `cy` 이 멤버 `CSize` 값에 추가 됩니다는 `left`, `top`, `right`, 및 `bottom` 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+   이 작업 (이동) 오프셋을 [RECT](/previous-versions/dd162897\(v=vs.85\)) (또는 [CRect](../../atl-mfc-shared/reference/crect-class.md)) 값이 `CSize` 값입니다. `cx` 및 `cy` 이 멤버 `CSize` 값에 추가 됩니다는 `left`, `top`, `right`, 및 `bottom` 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
 
 ### <a name="example"></a>예제
 
 [!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]
 
-##  <a name="operator_-"></a>  CSize::operator-
+##  <a name="operator_-"></a>  CSize::operator -
 
 이러한 연산자의 처음 3 개를 뺄이 `CSize` 매개 변수의 값입니다.
 
@@ -204,19 +204,19 @@ CSize operator-() const throw();
 
 부호를 변경 하는 단항 빼기, 네 번째 연산자는 `CSize` 값입니다. 개별 연산자의 다음 설명을 참조 하세요.
 
-- **연산자-(** *크기* **)**
+- **operator -(** *size* **)**
 
   이 작업을 뺍니다 두 `CSize` 값입니다.
 
-- **연산자-(** *가리킨* **)**
+- **operator -(** *point* **)**
 
-  이 작업 (이동) 오프셋을 [지점](https://msdn.microsoft.com/library/windows/desktop/dd162805) 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 값이 덧셈 역으로 `CSize` 값입니다. `cx` 및 `cy` 이 `CSize` 값에서 뺀 합니다 `x` 및 `y` 의 데이터 멤버는 `POINT` 값. 버전의 유사 [CPoint::operator-](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+  이 작업 (이동) 오프셋을 [지점](/previous-versions/dd162805\(v=vs.85\)) 또는 [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) 값이 덧셈 역으로 `CSize` 값입니다. `cx` 및 `cy` 이 `CSize` 값에서 뺀 합니다 `x` 및 `y` 의 데이터 멤버는 `POINT` 값. 버전의 유사 [CPoint::operator-](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
 
-- **연산자-(** *lpRect* **)**
+- **operator -(** *lpRect* **)**
 
-  이 작업 (이동) 오프셋을 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 값이 덧셈 역으로 `CSize` 값입니다. `cx` 및 `cy` 이 멤버 `CSize` 값에서 뺀를 `left`, `top`, `right`, 및 `bottom` 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator-](../../atl-mfc-shared/reference/crect-class.md#operator_-) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
+  이 작업 (이동) 오프셋을 [RECT](/previous-versions/dd162897\(v=vs.85\)) 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 값이 덧셈 역으로 `CSize` 값입니다. `cx` 및 `cy` 이 멤버 `CSize` 값에서 뺀를 `left`, `top`, `right`, 및 `bottom` 의 데이터 멤버는 `RECT` 값입니다. 버전의 유사 [CRect::operator-](../../atl-mfc-shared/reference/crect-class.md#operator_-) 를 사용 하는 한 [크기](/windows/desktop/api/windef/ns-windef-tagsize) 매개 변수입니다.
 
-- **연산자-)**
+- **operator -()**
 
   이 작업의 덧셈 역 원을 반환 `CSize` 값입니다.
 

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - ATL, ASP components
 - ATL ASP components
 ms.assetid: 7be2204c-6e58-4099-8892-001b848c8987
-ms.openlocfilehash: 7cbe52d4f6bcc82d17880d6eaa6a38f76809952d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2f7ad08cb514e33224c877bcbf1c5e8128e26185
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50630596"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269840"
 ---
 # <a name="adding-an-atl-active-server-page-component"></a>ATL Active Server Page 구성 요소를 추가합니다.
 
@@ -34,7 +34,7 @@ Active Server Pages 구성 요소를 사용 하면 다음과 같은 고급 웹 �
 
 1. 에 [클래스 추가](../../ide/add-class-dialog-box.md) 대화 상자의 합니다 **템플릿** 창 클릭 **ATL Active Server Page 구성 요소**, 클릭 하 고 **열기** 표시할는 [ATL Active Server Page 구성 요소 마법사](../../atl/reference/atl-active-server-page-component-wizard.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 추가](../../ide/adding-a-class-visual-cpp.md)<br/>
 [ATL 프로젝트에 새 인터페이스 추가](../../atl/reference/adding-a-new-interface-in-an-atl-project.md)<br/>

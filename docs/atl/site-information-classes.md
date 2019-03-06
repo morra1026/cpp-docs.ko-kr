@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - site information classes
 ms.assetid: 102eae20-7953-4efb-b27b-409885c9c064
-ms.openlocfilehash: 0e6430d5b45c94ec9fb031d89b1af57df23233b5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1f4483c9f35e2a9380bc52f60fc2fe78a28047db
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50594976"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280396"
 ---
 # <a name="site-information-classes"></a>사이트 정보 클래스
 
@@ -22,7 +22,6 @@ ms.locfileid: "50594976"
 
 - [IOleObjectImpl](../atl/reference/ioleobjectimpl-class.md) 검색 개체의 사이트에 대 한 포인터를 가져오거나 설정 합니다. 컨트롤에 사용 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)
-

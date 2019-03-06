@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CWinApp class [MFC], OnIdle method [MFC]
 - message handling [MFC], OnIdle method [MFC]
 ms.assetid: 51adc874-0075-4f76-be1c-79283f46c10b
-ms.openlocfilehash: 7b3f2fbeac6ae356003abf12b5df4c54c8bb327a
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: c7cdd5cd2327be1b90e7fdb3694353acf8adcafe
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52175135"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304446"
 ---
 # <a name="onidle-member-function"></a>OnIdle 멤버 함수
 
@@ -28,6 +28,6 @@ Windows 메시지가 처리 되는 경우 프레임 워크에서 호출 된 [CWi
 
 유휴 루프에서 수행할 수 있는 작업에 대 한 자세한 내용은 참조 하세요. [유휴 루프 처리](../mfc/idle-loop-processing.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

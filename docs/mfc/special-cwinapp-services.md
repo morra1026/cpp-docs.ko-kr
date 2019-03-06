@@ -30,12 +30,12 @@ helpviewer_keywords:
 - MFC, file operations
 - registration [MFC], shell
 ms.assetid: 0480cd01-f629-4249-b221-93432d95b431
-ms.openlocfilehash: 8dd69538cc322fe8518a33444b71171a936a02aa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 910660253c9d306b13294a710021a6bbd36c1952
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50487531"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258088"
 ---
 # <a name="special-cwinapp-services"></a>특수 CWinApp 서비스
 
@@ -49,7 +49,8 @@ ms.locfileid: "50487531"
 
 `EnableShellOpen`은 파일 탐색기 또는 파일 관리자에서 DDE 명령을 수신하도록 허용하여 프로세스를 완료하고 사용자가 선택한 파일을 엽니다.
 
-`CWinApp`의 이러한 자동 등록 지원 덕분에 응용 프로그램에 .reg 파일을 포함하거나 특별한 설치 작업을 수행할 필요가 없습니다.
+
+  `CWinApp`의 이러한 자동 등록 지원 덕분에 응용 프로그램에 .reg 파일을 포함하거나 특별한 설치 작업을 수행할 필요가 없습니다.
 
 응용 프로그램에 대 한 GDI + 초기화 하려는 경우 (호출 하 여 [GdiplusStartup](/windows/desktop/api/gdiplusinit/nf-gdiplusinit-gdiplusstartup) 에서 [InitInstance](../mfc/reference/cwinapp-class.md#initinstance) 함수), GDI + 백그라운드 스레드를 표시 해야 합니다.
 
@@ -80,6 +81,6 @@ ms.locfileid: "50487531"
 
 - Windows 95 이상에서 값은 WIN.INI 의 캐시된 버전에 저장됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWinApp: 응용 프로그램 클래스](../mfc/cwinapp-the-application-class.md)

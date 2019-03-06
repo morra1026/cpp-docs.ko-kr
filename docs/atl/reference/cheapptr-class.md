@@ -10,12 +10,12 @@ f1_keywords:
 helpviewer_keywords:
 - CHeapPtr class
 ms.assetid: e5c5bfd4-9bf1-4164-8a83-8155fe253454
-ms.openlocfilehash: 8373d7ee0fc32b89891281e0fbd4b685ce40f0e6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8cb35139e707d81a53edb762a2b7fc2ab41ff247
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50632377"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296061"
 ---
 # <a name="cheapptr-class"></a>CHeapPtr 클래스
 
@@ -36,7 +36,7 @@ class CHeapPtr : public CHeapPtrBase<T, Allocator>
 *T*<br/>
 힙에 저장 될 개체 형식입니다.
 
-*할당자*<br/>
+*Allocator*<br/>
 사용 하는 메모리 할당 클래스입니다.
 
 ## <a name="members"></a>멤버
@@ -64,7 +64,7 @@ class CHeapPtr : public CHeapPtrBase<T, Allocator>
 
 `CHeapPtr` 파생 됩니다 [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) 기본적으로 CRT 루틴을 사용 하 고 (에 [CCRTAllocator](../../atl/reference/ccrtallocator-class.md)) 할당 및 메모리를 해제 합니다. 클래스 [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) 힙 포인터 목록을 만드는 데 사용할 수 있습니다. 참고 항목 [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), COM 메모리 할당 루틴을 사용 합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md)
 
@@ -165,7 +165,7 @@ True를 반환 했습니다. 메모리가 할당 실패 하면 false를 합니�
 
 [!code-cpp[NVC_ATL_Utilities#79](../../atl/codesnippet/cpp/cheapptr-class_4.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeapPtrBase 클래스](../../atl/reference/cheapptrbase-class.md)<br/>
 [CCRTAllocator 클래스](../../atl/reference/ccrtallocator-class.md)<br/>

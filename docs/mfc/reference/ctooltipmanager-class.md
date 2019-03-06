@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CTooltipManager [MFC], SetTooltipText
 - CTooltipManager [MFC], UpdateTooltips
 ms.assetid: c71779d7-8b6e-47ef-8500-d4552731fe86
-ms.openlocfilehash: 79589cb631635f4ed8b85f4399a86e8fadf61dda
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ca0c657872bb2a3c56c9406a88f8c674cb46938
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431660"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260636"
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager 클래스
 
@@ -41,7 +41,7 @@ class CTooltipManager : public CObject
 |----------|-----------------|
 |[CTooltipManager::CreateToolTip](#createtooltip)|지정된 Windows 컨트롤 형식에 대한 도구 설명 컨트롤을 만듭니다.|
 |[CTooltipManager::DeleteToolTip](#deletetooltip)|도구 설명 컨트롤을 삭제합니다.|
-|[Ctooltipmanager:: Settooltipparams](#settooltipparams)|지정된 Windows 컨트롤 형식에 대한 도구 설명 컨트롤의 시각적 모양을 사용자 지정합니다.|
+|[CTooltipManager::SetTooltipParams](#settooltipparams)|지정된 Windows 컨트롤 형식에 대한 도구 설명 컨트롤의 시각적 모양을 사용자 지정합니다.|
 |[CTooltipManager::SetTooltipText](#settooltiptext)|도구 설명 컨트롤에 대한 텍스트 및 설명을 설정합니다.|
 |[CTooltipManager::UpdateTooltips](#updatetooltips)||
 
@@ -49,7 +49,7 @@ class CTooltipManager : public CObject
 
 사용 하 여 [CMFCToolTipCtrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md)하십시오 `CMFCToolTipInfo`, 및 `CTooltipManager` 응용 프로그램에서 사용자 지정된 도구 설명을 구현 하 합니다. 이러한 도구 설명 클래스를 사용 하는 방법의 예제를 참조 합니다 [CMFCToolTipCtrl 클래스](../../mfc/reference/cmfctooltipctrl-class.md) 항목입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -78,7 +78,7 @@ static BOOL CreateToolTip(
 *pWndParent*<br/>
 [in] 도구 설명의 부모입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 [in] 도구 설명의 형식입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -124,7 +124,7 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 
 각각에 대해이 메서드를 호출 [CToolTipCtrl 클래스](../../mfc/reference/ctooltipctrl-class.md) 하 여 만들어진 [CTooltipManager::CreateToolTip](#createtooltip)합니다. 부모 컨트롤에서이 메서드를 호출 해야 해당 `OnDestroy` 처리기입니다. 이 프레임 워크에서 도구 설명을 제대로 제거 해야 합니다. 이 메서드를 설정 *pToolTip* 반환 하기 전에 NULL로 합니다.
 
-##  <a name="settooltipparams"></a>  Ctooltipmanager:: Settooltipparams
+##  <a name="settooltipparams"></a>  CTooltipManager::SetTooltipParams
 
 지정된 된 Windows 컨트롤 형식에 대 한 도구 설명 컨트롤의 모양을 사용자 지정합니다.
 
@@ -175,13 +175,13 @@ static void SetTooltipText(
 
 ### <a name="parameters"></a>매개 변수
 
-*PTI*<br/>
+*pTI*<br/>
 [in] TOOLINFO 개체에 대 한 포인터입니다.
 
 *pToolTip*<br/>
 [out에서] 텍스트 및 설명을 설정 하는 도구 설명 컨트롤에 대 한 포인터입니다.
 
-*n 형식*<br/>
+*nType*<br/>
 [in] 이 도구 설명과 연결 된 컨트롤의 형식을 지정 합니다.
 
 *strText*<br/>
@@ -196,7 +196,7 @@ static void SetTooltipText(
 
 ##  <a name="updatetooltips"></a>  CTooltipManager::UpdateTooltips
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ```
 void UpdateTooltips();
@@ -204,7 +204,7 @@ void UpdateTooltips();
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

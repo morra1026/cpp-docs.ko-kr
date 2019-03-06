@@ -72,12 +72,12 @@ f1_keywords:
 - amp_short_vectors/Concurrency::graphics::double_3::rbg
 - amp_short_vectors/Concurrency::graphics::double_3::get_yxz
 ms.assetid: baeb3ff0-2862-4c81-857e-b1a4c085be25
-ms.openlocfilehash: 169c9ecb0fe68436a05c6c59a75a80a0d02f411c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6423220d8203b0d0fba73a4888f967e159db26de
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50508916"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326740"
 ---
 # <a name="double3-class"></a>double_3 클래스
 
@@ -198,7 +198,7 @@ class double_3;
 |double_3::zy||
 |double_3::zyx||
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `double_3`
 
@@ -206,7 +206,7 @@ class double_3;
 
 **헤더:** amp_short_vectors.h
 
-**Namespace:** concurrency:: graphics
+**네임스페이스:** Concurrency:: graphics
 
 ##  <a name="ctor"></a> double_3
 
@@ -262,7 +262,7 @@ explicit inline double_3(
 *_V2*<br/>
 2 요소를 초기화할 값입니다.
 
-*(_V)*<br/>
+*_V*<br/>
 초기화에 대 한 값입니다.
 
 *_Other*<br/>
@@ -274,6 +274,6 @@ explicit inline double_3(
 static const int size = 3;
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency::graphics 네임스페이스](concurrency-graphics-namespace.md)

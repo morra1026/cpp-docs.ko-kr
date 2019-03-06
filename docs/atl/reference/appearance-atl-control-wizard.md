@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - ATL Control Wizard, appearance
 ms.assetid: cc16d7ff-74d7-4c15-9ebd-4b19201ff457
-ms.openlocfilehash: 34c72fa8a2c5108a20065041c5cb7ea461e501a8
-ms.sourcegitcommit: 1819bd2ff79fba7ec172504b9a34455c70c73f10
+ms.openlocfilehash: 4d3b0519951636fad4175dc35261ba35b3694ffa
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51330595"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280409"
 ---
 # <a name="appearance-atl-control-wizard"></a>모양, ATL 컨트롤 마법사
 
@@ -75,9 +75,9 @@ ms.locfileid: "51330595"
 
    - **런타임에 보이지 않는**: 런타임 시 표시 되지 않도록 하려면 컨트롤을 설정 합니다. 시간 제한 간격 이벤트를 발생 시키고 같은 백그라운드에서 작업을 수행할 보이지 않는 컨트롤을 사용할 수 있습니다.
 
-   - **단추 처럼 작동**: 비트 OLEMISC_ACTSLIKEBUTTON를 설정 합니다 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) 열거형 컨트롤 역할을 사용 하도록 설정 하려면 같은 단추. 컨테이너가 기본 단추 컨트롤의 클라이언트 사이트에 표시 하는 경우이 옵션을 선택 하면 두꺼운 프레임 그려지고 기본 단추로 표시 되도록 단추 컨트롤이 사용 하도록 설정 합니다. 참조 [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) 자세한 내용은 합니다.
+   - **단추와 같은 역할**: 비트 OLEMISC_ACTSLIKEBUTTON를 설정 합니다 [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) 열거형 컨트롤 역할을 사용 하도록 설정 하려면 같은 단추입니다. 컨테이너가 기본 단추 컨트롤의 클라이언트 사이트에 표시 하는 경우이 옵션을 선택 하면 두꺼운 프레임 그려지고 기본 단추로 표시 되도록 단추 컨트롤이 사용 하도록 설정 합니다. 참조 [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) 자세한 내용은 합니다.
 
-   - **레이블 처럼 작동**: 컨트롤 컨테이너의 기본 레이블을 바꿀 수 있도록 OLEMISC_ACTSLIKELABEL OLEMISC 열거형에서 비트를 설정 합니다. 컨테이너 경우 아무 것도이 플래그를 사용 하 여 수행할 작업을 결정 합니다.
+   - **레이블 처럼 작동**: 컨테이너의 기본 레이블을 바꿀 컨트롤을 사용 하도록 설정 하려면 OLEMISC_ACTSLIKELABEL OLEMISC 열거형에서 비트를 설정 합니다. 컨테이너 경우 아무 것도이 플래그를 사용 하 여 수행할 작업을 결정 합니다.
 
 - **기타**
 
@@ -85,12 +85,11 @@ ms.locfileid: "51330595"
 
    - **DC 정규화**: 정규화 된 장치 컨텍스트를 자신을 그리는 호출 될 때 만들 컨트롤을 설정 합니다. 이 작업은 컨트롤의 모양 표준화 되지만 그리기 덜 효율적입니다.
 
-   - **창 에서만**: 컨트롤이 창 없는 수 없음을 지정 합니다. 이 옵션을 선택 하지 않으면 컨트롤은 창 없는 개체를 지 원하는 컨테이너의 자동 창 및 컨테이너 창 없는 개체를 지원 하지 않는 것입니다. 이 옵션을 선택 하면 창 없는 개체를 지 원하는 컨테이너에도 기간 이동 되는 컨트롤을 강제로 수행 합니다.
+   - **창 에서만**: 컨트롤이 창 없는 일 수 없음을 지정 합니다. 이 옵션을 선택 하지 않으면 컨트롤은 창 없는 개체를 지 원하는 컨테이너의 자동 창 및 컨테이너 창 없는 개체를 지원 하지 않는 것입니다. 이 옵션을 선택 하면 창 없는 개체를 지 원하는 컨테이너에도 기간 이동 되는 컨트롤을 강제로 수행 합니다.
 
-   - **삽입 가능**: 컨트롤에 표시 하려면이 옵션을 선택 합니다 **개체 삽입** Word 및 Excel 같은 응용 프로그램의 대화 상자. 그런 다음이 대화 상자를 통해 포함 된 개체를 지 원하는 응용 프로그램에서 컨트롤을 삽입할 수 있습니다.
+   - **삽입**: 컨트롤에 표시 하려면이 옵션을 선택 합니다 **개체 삽입** Word 및 Excel 같은 응용 프로그램의 대화 상자. 그런 다음이 대화 상자를 통해 포함 된 개체를 지 원하는 응용 프로그램에서 컨트롤을 삽입할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 컨트롤 마법사](../../atl/reference/atl-control-wizard.md)<br/>
-[샘플: SUBEDIT 슈퍼 클래스는 표준 Windows 컨트롤](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)
-
+[샘플 SUBEDIT: 표준 Windows 컨트롤의 슈퍼 클래스](https://github.com/Microsoft/VCSamples/tree/master/VC2008Samples/ATL/Controls/SubEdit)

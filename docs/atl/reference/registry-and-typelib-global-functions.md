@@ -17,12 +17,12 @@ f1_keywords:
 helpviewer_keywords:
 - RegistryDataExchange function, global functions
 ms.assetid: d58b8a4e-975c-4417-8b34-d3c847f679b3
-ms.openlocfilehash: 85af8504fffa980d495cef59729ff5fcb145e318
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f94dd1770ff194e47e2e38cc3a9b5cf0cbaebe58
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50486591"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301833"
 ---
 # <a name="registry-and-typelib-global-functions"></a>레지스트리 및 TypeLib 전역 함수
 
@@ -408,7 +408,7 @@ HRESULT RegistryDataExchange(
 
 ### <a name="parameters"></a>매개 변수
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 현재 개체에 대 한 포인터입니다.
 
 *rdxOp*<br/>
@@ -437,7 +437,7 @@ HRESULT RegistryDataExchange(
 
 **헤더:** atlbase.h
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [함수](atl-functions.md)<br/>
 [레지스트리 데이터 교환 매크로](registry-data-exchange-macros.md)

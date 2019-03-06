@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CAnimateCtrl [MFC], Seek
 - CAnimateCtrl [MFC], Stop
 ms.assetid: 5e8eb1bd-96b7-47b8-8de2-6bcbb3cc299b
-ms.openlocfilehash: 6a22c88e1a19cd1aef1bbfacd7f255adc2b19d0e
-ms.sourcegitcommit: 975098222db3e8b297607cecaa1f504570a11799
+ms.openlocfilehash: 867bec619dc633b7b1fbf9785e14132ba8c493ba
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53178263"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417192"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl 클래스
 
@@ -88,7 +88,7 @@ AVI 클립 AVI 리소스로 응용 프로그램에 추가 하거나 응용 프�
 
 사용 하 여 대 한 자세한 내용은 `CAnimateCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CAnimateCtrl 사용 하 여](../../mfc/using-canimatectrl.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -206,7 +206,7 @@ virtual BOOL CreateEx(
 애니메이션 컨트롤의 스타일을 지정합니다. 에 설명 된 애니메이션 컨트롤 스타일 및 창의 어떤 조합도 적용할 [애니메이션 컨트롤 스타일](/windows/desktop/Controls/animation-control-styles) Windows SDK에 있습니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -291,7 +291,7 @@ BOOL Play(
 *nFrom*<br/>
 재생 시작 되는 프레임의 인덱스 0부터 시작 합니다. 값 보다 작거나 65,536 여야 합니다. 값이 0 AVI 클립의 첫 번째 프레임을 시작으로 의미 합니다.
 
-*이지만*<br/>
+*nTo*<br/>
 프레임의 0부터 시작 인덱스는 종료를 재생 합니다. 값 보다 작거나 65,536 여야 합니다. 값이-1 이면 AVI 클립에서 마지막 프레임을 사용 하 여 종료 합니다.
 
 *nRep*<br/>
@@ -319,7 +319,7 @@ BOOL Seek(UINT nTo);
 
 ### <a name="parameters"></a>매개 변수
 
-*이지만*<br/>
+*nTo*<br/>
 표시할 프레임의 인덱스 0부터 시작 합니다. 값 보다 작거나 65,536 여야 합니다. 값이 0 AVI 클립의 첫 번째 프레임을 표시 하는 것을 의미 합니다. 값이-1 의미 AVI 클립에서 마지막 프레임을 표시 합니다.
 
 ### <a name="return-value"></a>반환 값
@@ -350,10 +350,9 @@ BOOL Stop();
 
   예를 참조 하세요 [CAnimateCtrl::CAnimateCtrl](#canimatectrl)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CAnimateCtrl::Create](#create)<br/>
 [ON_CONTROL](message-map-macros-mfc.md#on_control)
-

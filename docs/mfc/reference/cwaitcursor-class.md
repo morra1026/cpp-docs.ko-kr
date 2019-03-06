@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CWaitCursor [MFC], CWaitCursor
 - CWaitCursor [MFC], Restore
 ms.assetid: 5dfae2ff-d7b6-4383-b0ad-91e0868c67b3
-ms.openlocfilehash: 10daa8c5af84b17d70cc18c9407686d4698e98a5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7ce81e62ec6498ad84349108b4c4a07090b17de5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50533629"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287142"
 ---
 # <a name="cwaitcursor-class"></a>CWaitCursor 클래스
 
@@ -61,7 +61,7 @@ class CWaitCursor
 > [!NOTE]
 >  MFC 설정 하 고 사용 하 여 커서를 복원 합니다 [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor) 가상 함수입니다. 사용자 지정 동작을 제공 하려면이 함수를 재정의할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CWaitCursor`
 
@@ -114,12 +114,11 @@ void Restore();
 
 [!code-cpp[NVC_MFCWindowing#64](../../mfc/reference/codesnippet/cpp/cwaitcursor-class_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CCmdTarget::BeginWaitCursor](../../mfc/reference/ccmdtarget-class.md#beginwaitcursor)<br/>
 [CCmdTarget::EndWaitCursor](../../mfc/reference/ccmdtarget-class.md#endwaitcursor)<br/>
 [CCmdTarget::RestoreWaitCursor](../../mfc/reference/ccmdtarget-class.md#restorewaitcursor)<br/>
 [CWinApp::DoWaitCursor](../../mfc/reference/cwinapp-class.md#dowaitcursor)<br/>
-[I: Microsoft Foundation 클래스 응용 프로그램에서 마우스 커서를 변경 하는 방법은 무엇입니까](http://go.microsoft.com/fwlink/p/?linkid=128044)
-
+[어떻게 할까요 Microsoft Foundation 클래스 응용 프로그램에서 마우스 커서를 변경 합니다.](http://go.microsoft.com/fwlink/p/?linkid=128044)

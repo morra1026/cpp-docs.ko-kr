@@ -14,12 +14,12 @@ f1_keywords:
 helpviewer_keywords:
 - ICommandUI interface [MFC]
 ms.assetid: 134afe8d-dcdf-47ca-857a-a166a6b665dd
-ms.openlocfilehash: dd5f79b8ecd65428ce1231777fa6632777859a00
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31157ba2445a432af274650011b839fb3df9b3c2
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50467101"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268176"
 ---
 # <a name="icommandui-interface"></a>ICommandUI 인터페이스
 
@@ -51,7 +51,7 @@ interface class ICommandUI
 
 `ICommandUI` ON_UPDATE_COMMAND_UI 처리기 내에서 사용 되는 [ICommandTarget](../../mfc/reference/icommandtarget-interface.md)-클래스를 파생 합니다. (선택 또는 클릭)을 활성화 하는 응용 프로그램의 사용자 사용 하도록 설정한 각 메뉴 항목 메뉴가 표시 됩니다 또는 사용 하지 않도록 설정 합니다. ON_UPDATE_COMMAND_UI 처리기를 구현 하 여이 정보를 제공 하는 각 메뉴 명령 대상입니다. 각 응용 프로그램에서 명령 사용자 인터페이스 개체에 대 한 속성 창을 메시지 맵 항목을 만들고 각 처리기에 대 한 함수 프로토타입을 사용 합니다.
 
-방법에 대 한 자세한 내용은 `ICommandUI` 인터페이스는 명령 라우팅에 사용을 참조 하십시오 [방법: Windows Forms 컨트롤에 명령 라우팅 추가](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)합니다.
+방법에 대 한 자세한 내용은 `ICommandUI` 명령 라우팅의 인터페이스를 사용 하는 내용은 [방법: 추가 명령 라우팅에 Windows Forms 컨트롤](../../dotnet/how-to-add-command-routing-to-the-windows-forms-control.md)합니다.
 
 Windows Forms를 사용 하 여 자세한 내용은 [MFC에서 Windows Form 사용자 정의 컨트롤을 사용 하 여](../../dotnet/using-a-windows-form-user-control-in-mfc.md)입니다.
 
@@ -80,7 +80,7 @@ void ContinueRouting();
 
 ## <a name="remarks"></a>설명
 
-이 FALSE를 반환 하는 ON_COMMAND_EX 처리기와 함께에서 사용 해야 하는 고급 멤버 함수입니다. 자세한 내용은 기술 참고 TN006 참조: 메시지 맵.
+이 FALSE를 반환 하는 ON_COMMAND_EX 처리기와 함께에서 사용 해야 하는 고급 멤버 함수입니다. 자세한 내용은 기술 참고 TN006를 참조 하세요. 메시지 맵입니다.
 
 ## <a name="enabled"></a> ICommandUI::Enabled
 
@@ -141,6 +141,6 @@ property String^ Text;
 
 **헤더:** afxwinforms.h (atlmfc\lib\mfcmifc80.dll 어셈블리에에서 정의 됨)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdUI 클래스](../../mfc/reference/ccmdui-class.md)

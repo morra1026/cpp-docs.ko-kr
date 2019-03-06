@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LIBRARY .def file statement
 ms.assetid: 1d7ccc92-e088-4ef7-9ef0-25c3862cc051
-ms.openlocfilehash: f8e5fbc50551b0a44b91787f99999301a8245069
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 73609be698719da05fff357ba80200c49f598add
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50582469"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422670"
 ---
 # <a name="library"></a>LIBRARY
 
@@ -29,6 +29,6 @@ LIBRARY [library][BASE=address]
 
 사용 해야 합니다 [/DLL](../../build/reference/dll-build-a-dll.md) DLL을 빌드할 때 링커 옵션입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [모듈 정의 문의 규칙](../../build/reference/rules-for-module-definition-statements.md)

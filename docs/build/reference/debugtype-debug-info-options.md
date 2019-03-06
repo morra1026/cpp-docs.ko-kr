@@ -8,12 +8,12 @@ helpviewer_keywords:
 - DEBUGTYPE linker option
 - -DEBUGTYPE linker option
 ms.assetid: 1ddcb718-7fec-4f92-a319-3f70f04fe742
-ms.openlocfilehash: f730e485b7dc29cb8fe98bdcc7ea50f5e8c622d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c4a24d79295c1f7dbbe645c4a6e52f58b4a08807
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50676995"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423500"
 ---
 # <a name="debugtype-debug-info-options"></a>/DEBUGTYPE(디버그 정보 옵션)
 
@@ -31,7 +31,7 @@ ms.locfileid: "50676995"
 **PDATA**<br/>
 PDB 파일의 디버그 스트림 정보에 .pdata 및 .xdata 항목을 추가하도록 링커에 지시합니다. 기본적으로이 옵션은 때 모두를 **디버그** 하 고 **/DRIVER** 옵션을 지정 합니다. 하는 경우 **/DEBUGTYPE:PDATA** 자체적으로 지정 된 링커는 PDB 파일에 디버깅 기호 자동으로 포함 합니다. 하는 경우 **/DEBUGTYPE:PDATA, 픽스업** 지정 된 경우 링커는 PDB 파일에 디버깅 기호를 포함 하지 않습니다.
 
-**픽스업**<br/>
+**FIXUP**<br/>
 PDB 파일의 디버그 스트림 정보에 재배치 테이블 항목을 추가하도록 링커에 지시합니다. 기본적으로이 옵션은 때 모두를 **디버그** 하 고 **/프로필** 옵션을 지정 합니다. 하는 경우 **/DEBUGTYPE:FIXUP** 하거나 **/DEBUGTYPE:FIXUP, PDATA** 지정 된 경우 링커는 PDB 파일에 디버깅 기호를 포함 하지 않습니다.
 
 에 대 한 인수 **/DEBUGTYPE** 쉼표로 구분 하 여 원하는 순서 대로 결합할 수 있습니다. 합니다 **/DEBUGTYPE** 옵션 및 해당 인수는 대/소문자 구분 하지 않습니다.
@@ -42,7 +42,7 @@ PDB 파일의 디버그 스트림 정보에 재배치 테이블 항목을 추가
 
 응용 프로그램에 대 한 일반적인는 사용자 모드에서 코드를 디버그 합니다 **/DEBUGTYPE** 옵션이 필요 하지 않습니다. 기본적으로 디버깅을 지정 하는 컴파일러 스위치는 다음과 같이 출력 됩니다. ([/z7, /Zi, /ZI](../../build/reference/z7-zi-zi-debug-information-format.md)) 모든 정보는 데 필요한 Visual Studio에서 디버거를 내보냅니다. 사용 하 여 **/DEBUGTYPE:PDATA** 하거나 **, fixup PDATA** 장치 드라이버용 구성 앱과 같은 사용자 모드 및 커널 모드 구성 요소를 결합 하는 코드를 디버그 합니다. 커널 모드 디버거에 대 한 자세한 내용은 참조 하세요. [디버깅 도구에 대 한 Windows (WinDbg, KD, CDB, NTSD)](/windows-hardware/drivers/debugger/index)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/DEBUG(디버깅 정보 생성)](../../build/reference/debug-generate-debug-info.md)<br/>
 [/DRIVER(Windows NT 커널 모드 드라이버)](../../build/reference/driver-windows-nt-kernel-mode-driver.md)<br/>

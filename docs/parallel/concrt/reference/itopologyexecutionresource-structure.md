@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - ITopologyExecutionResource structure
 ms.assetid: e36756f7-4cd9-4fa6-ba60-23fea58ef2bf
-ms.openlocfilehash: fa4d8978cbdb5cab36367138ffb607a722b6b91a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bfb614d5ffd6a399fae33d38a50cee62f17c208
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631077"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57272856"
 ---
 # <a name="itopologyexecutionresource-structure"></a>ITopologyExecutionResource 구조체
 
@@ -39,7 +39,7 @@ struct ITopologyExecutionResource;
 
 이 인터페이스는 일반적으로 리소스 관리자에서 관찰 된 시스템의 토폴로지를 설명 하는 데 사용 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `ITopologyExecutionResource`
 
@@ -73,6 +73,6 @@ virtual ITopologyExecutionResource *GetNext() const = 0;
 
 열거 순서에서 다음 실행 리소스에 대한 인터페이스입니다. 이 실행 리소스가 속한 노드의 열거 순서에 노드가 더 이상 없을 경우 이 메서드는 `NULL` 값을 반환합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)

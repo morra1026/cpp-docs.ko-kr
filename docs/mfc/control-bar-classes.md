@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - control bars [MFC], classes
 ms.assetid: 11009103-cad8-4309-85ce-3d2e858e1818
-ms.openlocfilehash: 3584b24f9cc83c79ce382f02eaee4670490e608a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 3426d84eab888a6fe78b663945776fff2fe708dd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50653884"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302249"
 ---
 # <a name="control-bar-classes"></a>컨트롤 막대 클래스
 
@@ -57,7 +57,6 @@ Windows의 도구 모음 공용 컨트롤의 기능을 제공합니다.
 [CDockState](../mfc/reference/cdockstate-class.md)<br/>
 도킹 컨트롤 막대에 대 한 상태 데이터의 영구 저장소를 처리 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

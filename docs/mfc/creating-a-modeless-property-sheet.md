@@ -6,12 +6,12 @@ helpviewer_keywords:
 - property sheets, modeless
 - Create method [MFC], property sheets
 ms.assetid: eafd8a92-cc67-4a69-a5fb-742c920d1ae8
-ms.openlocfilehash: 9012700ef145079cf01ee1eac1cee58449ab5b79
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 39285927b67091f5b8762dab56009712d806d259
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50524902"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302262"
 ---
 # <a name="creating-a-modeless-property-sheet"></a>모덜리스 속성 시트 만들기
 
@@ -27,9 +27,8 @@ ms.locfileid: "50524902"
 
 모덜리스 속성 시트의 설정의 외부 개체에 적용 해야 하는 경우를 결정 하기 위한 사용자 인터페이스 다른 방법도 많습니다 있습니다. 한 가지 대안은 사용자 값이 변경 될 때마다 현재 속성 페이지의 설정을 적용 하는 것입니다. 또 다른 방법은 외부 개체에 커밋하기 전에 속성 페이지에서 변경 내용을 누적 할 수 있는 적용 단추를 제공 하는 것입니다. [적용] 단추를 처리 하는 방법에 대 한 내용은 문서 참조 [적용 단추 처리](../mfc/handling-the-apply-button.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [속성 시트](../mfc/property-sheets-mfc.md)<br/>
 [데이터 교환](../mfc/exchanging-data.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)
-

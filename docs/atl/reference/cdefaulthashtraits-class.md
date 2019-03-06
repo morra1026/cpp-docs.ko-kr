@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - CDefaultHashTraits class
 ms.assetid: d8ec4b37-6d58-447b-a0c1-8580c5b1ab85
-ms.openlocfilehash: c8896ce27afc40ad095e02a2453628ffc05900da
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a51b4460d7fcdf778fce24b6e404b75190f598f6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50466146"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257302"
 ---
 # <a name="cdefaulthashtraits-class"></a>CDefaultHashTraits 클래스
 
@@ -59,7 +59,7 @@ static ULONG Hash(const T& element) throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*요소*<br/>
+*element*<br/>
 요소입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -70,6 +70,6 @@ static ULONG Hash(const T& element) throw();
 
 기본 해싱 알고리즘은 매우 간단 합니다: 반환 값 요소입니다. 더 복잡 한 알고리즘을 필요한 경우이 함수를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../../atl/atl-class-overview.md)

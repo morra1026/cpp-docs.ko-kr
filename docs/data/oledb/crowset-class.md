@@ -238,12 +238,12 @@ helpviewer_keywords:
 - Update method
 - UpdateAll method
 ms.assetid: b0228a90-b8dd-47cc-b397-8d4c15c1e7f4
-ms.openlocfilehash: fb2f66474f9700ed7bfdc2e1063865734e4e991a
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: cb79bfe7cf0a30e0ff4ed2a4a6860bc3042983ee
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51557013"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416543"
 ---
 # <a name="crowset-class"></a>CRowset 클래스
 
@@ -273,16 +273,16 @@ class CRowset
 |-|-|
 |[AddRefRows](#addrefrows)|현재 행과 연결 된 참조 횟수를 증가.|
 |[닫기](#close)|행 및 현재 릴리스 `IRowset` 인터페이스입니다.|
-|[Compare](#compare)|사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](https://docs.microsoft.com/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.|
+|[Compare](#compare)|사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.|
 |[CRowset](#crowset)|새로 만듭니다 `CRowset` 개체를 사용 하 여 연결 (선택 사항)는 `IRowset` 인터페이스 매개 변수로 제공 합니다.|
-|[삭제](#delete)|사용 하 여 행 집합에서 행을 삭제 [IRowsetChange:DeleteRows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85))합니다.|
+|[삭제](#delete)|사용 하 여 행 집합에서 행을 삭제 [IRowsetChange:DeleteRows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85))합니다.|
 |[FindNextRow](#findnextrow)|지정한 책갈피를 다음에 나오는 다음 일치 하는 행을 찾습니다.|
 |[GetApproximatePosition](#getapproximateposition)|책갈피에 해당 하는 행의 대략적인 위치를 반환 합니다.|
 |[GetData](#getdata)|행 집합의 행 복사본에서 데이터를 검색합니다.|
 |[GetDataHere](#getdatahere)|지정된 된 버퍼에서 데이터를 검색합니다.|
 |[GetOriginalData](#getoriginaldata)|가장 최근에 풀에서 반입 되거나 보류 중인 변경 내용을 무시 하 고, 데이터 원본에 전송 된 데이터를 검색 합니다.|
 |[GetRowStatus](#getrowstatus)|모든 행의 상태를 반환 합니다.|
-|[삽입](#insert)|만들고 사용 하 여 새 행 삽입 [IRowsetChange:InsertRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms716921(v=vs.85))합니다.|
+|[삽입](#insert)|만들고 사용 하 여 새 행 삽입 [IRowsetChange:InsertRow](/previous-versions/windows/desktop/ms716921(v=vs.85))합니다.|
 |[IsSameRow](#issamerow)|현재 행과 지정된 된 행을 비교합니다.|
 |[MoveFirst](#movefirst)|다음 인출 위치를 처음 위치로 다시 설정합니다.|
 |[MoveLast](#movelast)|마지막 레코드로 이동합니다.|
@@ -290,8 +290,8 @@ class CRowset
 |[MovePrev](#moveprev)|이전 레코드로 이동 합니다.|
 |[MoveToBookmark](#movetobookmark)|책갈피에서 책갈피로 표시 행 이나 지정된 된 오프셋에서 행을 인출 합니다.|
 |[MoveToRatio](#movetoratio)|행 집합의 소수 자릿수 위치에서 시작 하는 행을 인출 합니다.|
-|[ReleaseRows](#releaserows)|호출 [irowset:: Releaserows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) 현재 행 핸들을 릴리스해야 합니다.|
-|[SetData](#setdata)|사용 하 여 행의 하나 이상의 열에 데이터 값을 설정 [IRowsetChange:SetData](https://docs.microsoft.com/previous-versions/windows/desktop/ms721232(v=vs.85))합니다.|
+|[ReleaseRows](#releaserows)|호출 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771(v=vs.85)) 현재 행 핸들을 릴리스해야 합니다.|
+|[SetData](#setdata)|사용 하 여 행의 하나 이상의 열에 데이터 값을 설정 [IRowsetChange:SetData](/previous-versions/windows/desktop/ms721232(v=vs.85))합니다.|
 |[실행 취소](#undo)|마지막 fetch를 이후 행에 대 한 모든 변경 내용을 실행 취소 하거나 [업데이트](../../data/oledb/crowset-update.md)합니다.|
 |[업데이트](#update)|보류 중인 마지막 페치 또는 업데이트 이후 현재 행에 대 한 변경 내용을 전송 합니다.|
 |[UpdateAll](#updateall)|보류 중인 마지막 페치 또는 업데이트 이후 모든 행에 대 한 변경 내용을 전송 합니다.|
@@ -302,9 +302,9 @@ OLE DB 행 집합 개체는 프로그램을 설정 하 고 데이터를 검색�
 
 이 클래스 수 인 스턴 화 되었지만 대신 템플릿 매개 변수로 전달 하기 위한 것 `CTable` 나 `CCommand` (`CRowset` 기본값).
 
-## <a name="addrefrows"></a> Crowset:: Addrefrows
+## <a name="addrefrows"></a> CRowset::AddRefRows
 
-호출 [irowset:: Addrefrows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719619(v=vs.85)) 현재 행 핸들을 사용 하 여 연결 된 참조 횟수를 1) (씩 증가 합니다.
+호출 [irowset:: Addrefrows](/previous-versions/windows/desktop/ms719619(v=vs.85)) 현재 행 핸들을 사용 하 여 연결 된 참조 횟수를 1) (씩 증가 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -320,9 +320,9 @@ HRESULT AddRefRows() throw();
 
 이 메서드는 현재 행 핸들에 대 한 참조 수를 늘립니다. 호출 [ReleaseRows](../../data/oledb/crowset-releaserows.md) 수 감소 합니다. 이동 방법을 사용 하 여 반환 되는 행의 참조 횟수를 경우
 
-## <a name="close"></a> Crowset:: Close
+## <a name="close"></a> CRowset::Close
 
-행 및 현재 릴리스 [IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) 인터페이스입니다.
+행 및 현재 릴리스 [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) 인터페이스입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -334,9 +334,9 @@ void Close() throw();
 
 이 메서드는 현재 행 집합의에서 모든 행을 해제합니다.
 
-## <a name="compare"></a> Crowset:: Compare
+## <a name="compare"></a> CRowset::Compare
 
-사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](https://docs.microsoft.com/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.
+사용 하 여 책갈피 비교 하 여 두 [IRowsetLocate::Compare](/previous-versions/windows/desktop/ms709539(v=vs.85))합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -367,9 +367,9 @@ HRESULT Compare(const CBookmarkBase& bookmark1,
 
 소비자에 책갈피를 사용 하는 방법에 대 한 내용은 [책갈피를 사용 하 여](../../data/oledb/using-bookmarks.md)입니다.
 
-## <a name="crowset"></a> Crowset:: Crowset
+## <a name="crowset"></a> CRowset::CRowset
 
-새로 만듭니다 `CRowset` 개체를 사용 하 여 연결 (선택 사항)는 [IRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms720986(v=vs.85)) 인터페이스 매개 변수로 제공 합니다.
+새로 만듭니다 `CRowset` 개체를 사용 하 여 연결 (선택 사항)는 [IRowset](/previous-versions/windows/desktop/ms720986(v=vs.85)) 인터페이스 매개 변수로 제공 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -384,9 +384,9 @@ CRowset(IRowset* pRowset);
 *pRowset*<br/>
 [in] 이 클래스와 연결된 `IRowset` 인터페이스에 대한 포인터입니다.
 
-## <a name="delete"></a> Crowset:: Delete
+## <a name="delete"></a> CRowset::Delete
 
-호출 [irowsetchange:: Deleterows](https://docs.microsoft.com/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) 행 집합에서 현재 행을 삭제 하려고 합니다.
+호출 [irowsetchange:: Deleterows](/previous-versions/windows/desktop/ms724362(v=vs.85)(v%3dvs.85)) 행 집합에서 현재 행을 삭제 하려고 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -398,7 +398,7 @@ HRESULT Delete() const throw();
 
 표준 HRESULT입니다.
 
-## <a name="findnextrow"></a> Crowset:: Findnextrow
+## <a name="findnextrow"></a> CRowset::FindNextRow
 
 지정한 책갈피를 다음에 나오는 다음 일치 하는 행을 찾습니다.
 
@@ -418,22 +418,22 @@ HRESULT FindNextRow(DBCOMPAREOP op,
 #### <a name="parameters"></a>매개 변수
 
 *op*<br/>
-[in] 행 값 비교에 사용할 작업입니다. 값을 참조 하세요 [irowsetfind:: Findnextrow](https://docs.microsoft.com/previous-versions/windows/desktop/ms723091(v=vs.85))합니다.
+[in] 행 값 비교에 사용할 작업입니다. 값을 참조 하세요 [irowsetfind:: Findnextrow](/previous-versions/windows/desktop/ms723091(v=vs.85))합니다.
 
 *pData*<br/>
 [in] 일치 시킬 값에 대 한 포인터입니다.
 
 *wType*<br/>
-[in] 버퍼의 값 부분 형식을 데이터를 나타냅니다. 유형 표시기에 대 한 정보를 참조 하세요. [데이터 형식](https://docs.microsoft.com/previous-versions/windows/desktop/ms723969(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK의 합니다.
+[in] 버퍼의 값 부분 형식을 데이터를 나타냅니다. 유형 표시기에 대 한 정보를 참조 하세요. [데이터 형식](/previous-versions/windows/desktop/ms723969(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK의 합니다.
 
 *nLength*<br/>
-[in] 데이터 값에 할당 된 소비자 데이터 구조의 길이 (바이트) 합니다. 세부 정보에 대 한 설명을 참조 하세요 `cbMaxLen` 에 [DBBINDING 구조체](https://docs.microsoft.com/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
+[in] 데이터 값에 할당 된 소비자 데이터 구조의 길이 (바이트) 합니다. 세부 정보에 대 한 설명을 참조 하세요 `cbMaxLen` 에 [DBBINDING 구조체](/previous-versions/windows/desktop/ms716845(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
 
 *bPrecision*<br/>
-[in] 데이터를 가져올 때 사용 되는 최대 전체 자릿수입니다. 사용 되는 경우에만 *wType* DBTYPE_NUMERIC 됩니다. 자세한 내용은 참조 하세요. [DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL를 포함 하는 변환은](https://docs.microsoft.com/previous-versions/windows/desktop/ms719714(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+[in] 데이터를 가져올 때 사용 되는 최대 전체 자릿수입니다. 사용 되는 경우에만 *wType* DBTYPE_NUMERIC 됩니다. 자세한 내용은 참조 하세요. [DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL를 포함 하는 변환은](/previous-versions/windows/desktop/ms719714(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *bScale*<br/>
-[in] 데이터를 가져올 때 사용할 소수 자릿수입니다. 사용 되는 경우에만 *wType* DBTYPE_NUMERIC 인지 DBTYPE_DECIMAL 합니다. 자세한 내용은 참조 하세요. [DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL를 포함 하는 변환은](https://docs.microsoft.com/previous-versions/windows/desktop/ms719714(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+[in] 데이터를 가져올 때 사용할 소수 자릿수입니다. 사용 되는 경우에만 *wType* DBTYPE_NUMERIC 인지 DBTYPE_DECIMAL 합니다. 자세한 내용은 참조 하세요. [DBTYPE_NUMERIC 또는 DBTYPE_DECIMAL를 포함 하는 변환은](/previous-versions/windows/desktop/ms719714(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 *bSkipCurrent*<br/>
 [in] 검색을 시작 하는 책갈피에서 행의 수입니다.
@@ -451,7 +451,7 @@ HRESULT FindNextRow(DBCOMPAREOP op,
 
 소비자에 책갈피를 사용 하는 방법에 대 한 내용은 [책갈피를 사용 하 여](../../data/oledb/using-bookmarks.md)입니다.
 
-## <a name="getapproximateposition"></a> Crowset:: Getapproximateposition
+## <a name="getapproximateposition"></a> CRowset::GetApproximatePosition
 
 책갈피에 해당 하는 행의 대략적인 위치를 반환 합니다.
 
@@ -484,7 +484,7 @@ HRESULT GetApproximatePosition(const CBookmarkBase* pBookmark,
 
 소비자에 책갈피를 사용 하는 방법에 대 한 내용은 [책갈피를 사용 하 여](../../data/oledb/using-bookmarks.md)입니다.
 
-## <a name="getdata"></a> Crowset:: Getdata
+## <a name="getdata"></a> CRowset::GetData
 
 행 집합의 행 복사본에서 데이터를 검색합니다.
 
@@ -509,7 +509,7 @@ HRESULT GetData(int nAccessor) throw();
 
 자동 없는 접근자를 지정 하는 경우 [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md),이 메서드를 사용 하 여 명시적으로 접근자 수를 전달 하 여 데이터를 가져옵니다.
 
-## <a name="getdatahere"></a> Crowset:: Getdatahere
+## <a name="getdatahere"></a> CRowset::GetDataHere
 
 현재 행에서 데이터를 검색 하 고 지정된 된 버퍼에 배치 합니다.
 
@@ -536,7 +536,7 @@ HRESULT GetDataHere(int nAccessor,
 
 이 함수를 사용 하는 방법의 예제를 참조 합니다 [MultiRead 샘플](../../visual-cpp-samples.md)합니다.
 
-## <a name="getoriginaldata"></a> Crowset:: Getoriginaldata
+## <a name="getoriginaldata"></a> CRowset::GetOriginalData
 
 호출 `IRowsetUpdate::GetOriginalData` 최근에 풀에서 반입 되거나 데이터 원본에 전송 된 데이터를 검색 합니다.
 
@@ -556,7 +556,7 @@ HRESULT GetOriginalData() throw();
 
 이 메서드에 필요한 선택적 인터페이스 `IRowsetUpdate`는 지원 되지 않는 모든 공급자입니다;이 경우, 메서드가 E_NOINTERFACE가 반환 됩니다. 설정 해야 `DBPROP_IRowsetUpdate` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다.
 
-## <a name="getrowstatus"></a> Crowset:: Getrowstatus
+## <a name="getrowstatus"></a> CRowset::GetRowStatus
 
 모든 행의 상태를 반환 합니다.
 
@@ -579,7 +579,7 @@ HRESULT GetRowStatus(DBPENDINGSTATUS* pStatus) const throw();
 
 이 메서드에 필요한 선택적 인터페이스 `IRowsetUpdate`는 지원 되지 않는 모든 공급자입니다;이 경우, 메서드가 E_NOINTERFACE가 반환 됩니다. 설정 해야 `DBPROP_IRowsetUpdate` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다.
 
-## <a name="insert"></a> Crowset:: Insert
+## <a name="insert"></a> CRowset::Insert
 
 만들고 접근자에서 데이터를 사용 하 여 새 행을 초기화 합니다.
 
@@ -616,7 +616,7 @@ HRESULT Insert(int nAccessor = 0,
 
 [!code-cpp[NVC_OLEDB_Consumer#10](../../data/oledb/codesnippet/cpp/crowset-insert_1.cpp)]
 
-## <a name="issamerow"></a> Crowset:: Issamerow
+## <a name="issamerow"></a> CRowset::IsSameRow
 
 현재 행과 지정된 된 행을 비교합니다.
 
@@ -633,9 +633,9 @@ HRESULT IsSameRow(HROW hRow) const throw();
 
 ### <a name="return-value"></a>반환 값
 
-표준 HRESULT입니다. S_ok이 고, 행이 동일한 것을 나타냅니다. 다른 값을 참조 하세요 [IRowsetIndentity::IsSameRow](https://docs.microsoft.com/previous-versions/windows/desktop/ms719629(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK의 합니다.
+표준 HRESULT입니다. S_ok이 고, 행이 동일한 것을 나타냅니다. 다른 값을 참조 하세요 [IRowsetIndentity::IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK의 합니다.
 
-## <a name="movefirst"></a> Crowset:: Movefirst
+## <a name="movefirst"></a> CRowset::MoveFirst
 
 초기 위치에 커서를 이동 하 고 초기 행을 검색 합니다.
 
@@ -651,9 +651,9 @@ HRESULT MoveFirst() throw();
 
 ### <a name="remarks"></a>설명
 
-호출 [irowset:: Restartposition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) 위치는 초기 위치 (행 집합을 만든 다음 페치 위치에는 위치)를 다음 인출 위치를 변경 하 고 초기 행을 검색 합니다.
+호출 [irowset:: Restartposition](/previous-versions/windows/desktop/ms712877(v=vs.85)) 위치는 초기 위치 (행 집합을 만든 다음 페치 위치에는 위치)를 다음 인출 위치를 변경 하 고 초기 행을 검색 합니다.
 
-## <a name="movelast"></a> Crowset:: Movelast
+## <a name="movelast"></a> CRowset::MoveLast
 
 커서가 마지막 행으로 이동합니다.
 
@@ -669,11 +669,11 @@ HRESULT MoveLast() throw();
 
 ### <a name="remarks"></a>설명
 
-호출 [irowset:: Restartposition](https://docs.microsoft.com/previous-versions/windows/desktop/ms712877(v=vs.85)) 다음 인출 위치를 마지막 위치에 배치 하 고 마지막 행을 검색 합니다.
+호출 [irowset:: Restartposition](/previous-versions/windows/desktop/ms712877(v=vs.85)) 다음 인출 위치를 마지막 위치에 배치 하 고 마지막 행을 검색 합니다.
 
 이 메서드는 설정 해야 `DBPROP_CANSCROLLBACKWARDS` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다. (성능 향상을 위해 속성도 설정할 수 있습니다 `DBPROP_QUICKRESTART` 를 variant_true로 설정 합니다.)
 
-## <a name="movenext"></a> Crowset:: Movenext
+## <a name="movenext"></a> CRowset::MoveNext
 
 커서를 다음 레코드로 이동합니다.
 
@@ -710,7 +710,7 @@ HRESULT MoveNext(LONG lSkip,
 
 그렇지 않은 경우 (하는 경우 *lSkip* > = 0 및 *bForward* = true), 추가 속성을 설정할 필요가 없습니다.
 
-## <a name="moveprev"></a> Crowset:: Moveprev
+## <a name="moveprev"></a> CRowset::MovePrev
 
 커서가 이전 레코드로 이동합니다.
 
@@ -728,7 +728,7 @@ HRESULT MovePrev() throw();
 
 이 메서드 중 하나를 설정 하는 필요한 `DBPROP_CANFETCHBACKWARDS` 또는 `DBPROP_CANSCROLLBACKWARDS` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다.
 
-## <a name="movetobookmark"></a> Crowset:: Movetobookmark
+## <a name="movetobookmark"></a> CRowset::MoveToBookmark
 
 책갈피 또는 지정 된 오프셋에 있는 행으로 표시 하는 행을 인출 (*lSkip*) 해당 책갈피에서.
 
@@ -741,7 +741,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 #### <a name="parameters"></a>매개 변수
 
-*책갈피*<br/>
+*bookmark*<br/>
 [in] 데이터를 인출 하려는 위치를 표시 하는 책갈피입니다.
 
 *lSkip*<br/>
@@ -757,7 +757,7 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 
 소비자에 책갈피를 사용 하는 방법에 대 한 내용은 [책갈피를 사용 하 여](../../data/oledb/using-bookmarks.md)입니다.
 
-## <a name="movetoratio"></a> Crowset:: Movetoratio
+## <a name="movetoratio"></a> CRowset::MoveToRatio
 
 행 집합의 소수 자릿수 위치에서 시작 하는 행을 인출 합니다.
 
@@ -789,13 +789,13 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 `(nNumerator *  RowsetSize ) / nDenominator`
 
-여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 자세한 내용은 참조 하세요 [irowsetscroll::](https://docs.microsoft.com/previous-versions/windows/desktop/ms709602(v=vs.85))합니다.
+여기서 `RowsetSize` 행 단위로 측정 되는 행 집합의 크기입니다. 이 수식의 정확도 특정 공급자에 따라 달라 집니다. 자세한 내용은 참조 하세요 [irowsetscroll::](/previous-versions/windows/desktop/ms709602(v=vs.85))합니다.
 
 이 메서드에 필요한 선택적 인터페이스 `IRowsetScroll`는 지원 되지 않는 모든 공급자입니다;이 경우, 메서드가 E_NOINTERFACE가 반환 됩니다. 설정 해야 `DBPROP_IRowsetScroll` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다.
 
-## <a name="releaserows"></a> Crowset:: Releaserows
+## <a name="releaserows"></a> CRowset::ReleaseRows
 
-호출 [irowset:: Releaserows](https://docs.microsoft.com/previous-versions/windows/desktop/ms719771(v=vs.85)) 현재 행 핸들을 릴리스해야 합니다.
+호출 [irowset:: Releaserows](/previous-versions/windows/desktop/ms719771(v=vs.85)) 현재 행 핸들을 릴리스해야 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -807,7 +807,7 @@ HRESULT ReleaseRows() throw();
 
 표준 HRESULT입니다.
 
-## <a name="setdata"></a> Crowset:: Setdata
+## <a name="setdata"></a> CRowset::SetData
 
 행의 하나 이상의 열에 데이터 값을 설정 합니다.
 
@@ -836,7 +836,7 @@ HRESULT SetData(int nAccessor) const throw();
 
 설정 작업을 하나 이상의 열에 쓸 수 없는 경우에 실패할 수 있습니다. 이 문제를 해결하려면 커서 맵을 수정합니다.
 
-## <a name="undo"></a> Crowset:: Undo
+## <a name="undo"></a> CRowset::Undo
 
 마지막 fetch를 이후 행에 대 한 모든 변경 내용을 실행 취소 하거나 [업데이트](../../data/oledb/crowset-update.md)합니다.
 
@@ -867,7 +867,7 @@ HRESULT Undo(DBCOUNTITEM* pcRows = NULL,
 
 이 메서드에 필요한 선택적 인터페이스 `IRowsetUpdate`는 지원 되지 않는 모든 공급자입니다;이 경우, 메서드가 E_NOINTERFACE가 반환 됩니다. 설정 해야 `DBPROP_IRowsetUpdate` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다.
 
-## <a name="update"></a> Crowset:: Update
+## <a name="update"></a> CRowset::Update
 
 보류 중인 변경 내용이 마지막 fetch를 이후 현재 행에 대 한 전송 또는 `Update` 를 호출 합니다.
 
@@ -900,7 +900,7 @@ HRESULT Update(DBCOUNTITEM* pcRows = NULL,
 
 이 메서드에 필요한 선택적 인터페이스 `IRowsetUpdate`는 지원 되지 않는 모든 공급자입니다;이 경우, 메서드가 E_NOINTERFACE가 반환 됩니다. 설정 해야 `DBPROP_IRowsetUpdate` 를 호출 하기 전에 variant_true로 `Open` 테이블이 나 행 집합을 포함 하는 명령입니다.
 
-## <a name="updateall"></a> Crowset:: Updateall
+## <a name="updateall"></a> CRowset::UpdateAll
 
 보류 중인 변경 내용이 마지막 fetch를 이후 모든 행에 대 한 전송 또는 `Update` 를 호출 합니다.
 
@@ -940,5 +940,5 @@ HRESULT UpdateAll(DBCOUNTITEM* pcRows = NULL,
 [DBViewer 샘플](../../visual-cpp-samples.md)<br/>
 [MultiRead 샘플](../../visual-cpp-samples.md)<br/>
 [MultiRead 특성 샘플](../../visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

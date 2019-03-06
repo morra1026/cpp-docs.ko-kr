@@ -10,12 +10,12 @@ helpviewer_keywords:
 - dialog boxes [MFC], OLE
 - Insert object
 ms.assetid: 73c41eb8-738a-4d02-9212-d3395bb09a3a
-ms.openlocfilehash: 53e802e973ca78619252fcc4100a7cc50009f2ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1081a831cc2b9fc0ab22e2c80a4f657466534d86
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50618509"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270893"
 ---
 # <a name="dialog-boxes-in-ole"></a>OLE의 대화 상자
 
@@ -39,9 +39,8 @@ ms.locfileid: "50618509"
 *서버 작업 중 또는 서버가 응답 하지 않음*<br/>
 서버 작업 중 대화 상자는 사용자가 항목을 활성화 하려고 하 고 서버를 현재 요청을 처리, 일반적으로 서버가 이므로 다른 사용자에 의해 사용 또는 작업 수 없는 경우에 표시 됩니다. 서버 정품 인증 요청에 전혀 응답 하지 않으면 서버가 응답 하지 대화 상자가 표시 됩니다. 이러한 대화 상자를 통해 표시 됩니다 `COleMessageFilter`OLE 인터페이스의 구현에 따라 `IMessageFilter`, 사용자를 활성화 요청을 다시 시도할지 여부를 결정할 수 있습니다. 사용 된 [COleBusyDialog](../mfc/reference/colebusydialog-class.md) 이 대화 상자를 표시 하는 클래스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대화 상자](../mfc/dialog-boxes.md)<br/>
 [대화 상자의 수명 주기](../mfc/life-cycle-of-a-dialog-box.md)<br/>
 [OLE](../mfc/ole-in-mfc.md)
-

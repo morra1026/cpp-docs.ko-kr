@@ -10,12 +10,12 @@ helpviewer_keywords:
 - /PDBALTPATH dumpbin option
 - PDB files, path
 ms.assetid: 72e200aa-e2c3-4ad8-b687-25528da1aaaf
-ms.openlocfilehash: dd7bdc8d161e92eedf4856fcd28d9f9f1ac781b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 22bc53858aca3b037655829bd7449049971ca79f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50551101"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419191"
 ---
 # <a name="pdbaltpath-use-alternate-pdb-path"></a>/PDBALTPATH(대체 PDB 경로 사용)
 
@@ -34,7 +34,7 @@ ms.locfileid: "50551101"
 
 변수의 *pdb_file_name* 임의 문자열, 환경 변수 또는 **_PDB %** 합니다. 링커는 환경 변수를 같은 확장 **% SystemRoot %**, 해당 값입니다. 환경 변수를 정의 하는 링커 **% _PDB** 하 고 **_EXT %** 합니다. **% _PDB** 경로 정보가 없는 실제.pdb 파일의 파일 이름으로 확장 하 고 **_EXT %** 는 생성된 된 실행 파일의 확장명입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)<br/>
 [/PDBPATH](../../build/reference/pdbpath.md)

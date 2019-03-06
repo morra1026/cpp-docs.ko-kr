@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control settings
 ms.assetid: 2ccaa4fc-0d52-413e-afa3-ecd474c3f6f0
-ms.openlocfilehash: 3eedf24fa4b0bb527b374dbc9f538408f20de953
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34cc49fff88399a6c3cf5f7db71410c88e5c9bab
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50548241"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57289639"
 ---
 # <a name="control-settings-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사, 컨트롤 설정
 
@@ -23,15 +23,15 @@ ms.locfileid: "50548241"
 
 - **기반으로 하는 컨트롤 만들기**
 
-   이 목록에 컨트롤이 상속 해야 하는 컨트롤의 종류를 선택할 수 있습니다. 목록에 사용할 수 있는 컨트롤 클래스의 하위 집합인 `CreateWindowEx` 및 commctrl.h에 지정 된 공용 컨트롤을 추가 합니다. 선택 영역에서 컨트롤의 스타일을 결정 합니다 `PreCreateWindow` 함수는 *ProjName*Ctrl.cpp 파일입니다. 자세한 내용은 [MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
+   이 목록에 컨트롤이 상속 해야 하는 컨트롤의 종류를 선택할 수 있습니다. 목록에 사용할 수 있는 컨트롤 클래스의 하위 집합인 `CreateWindowEx` 및 commctrl.h에 지정 된 공용 컨트롤을 추가 합니다. 선택 영역에서 컨트롤의 스타일을 결정 합니다 `PreCreateWindow` 함수는 *ProjName*Ctrl.cpp 파일입니다. 자세한 내용은 참조 하세요. [MFC ActiveX 컨트롤: Windows 컨트롤 서브클래싱](../../mfc/mfc-activex-controls-subclassing-a-windows-control.md)합니다.
 
    |Control|설명|
    |-------------|-----------------|
-   |**단추**|Windows 단추 컨트롤|
-   |**콤보 상자**|Windows 콤보 상자 컨트롤|
-   |**편집**|Windows 편집 상자 컨트롤|
-   |**목록 상자**|Windows 목록 상자 컨트롤|
-   |**스크롤 막대**|Windows 스크롤 막대 컨트롤|
+   |**BUTTON**|Windows 단추 컨트롤|
+   |**COMBOBOX**|Windows 콤보 상자 컨트롤|
+   |**EDIT**|Windows 편집 상자 컨트롤|
+   |**LISTBOX**|Windows 목록 상자 컨트롤|
+   |**SCROLLBAR**|Windows 스크롤 막대 컨트롤|
    |**STATIC**|Windows 정적 컨트롤|
    |**msctls_hotkey32**|일반적인 바로 가기 키 컨트롤|
    |**msctls_progress32**|진행률 표시줄 공용 컨트롤|
@@ -93,9 +93,8 @@ ms.locfileid: "50548241"
 
    이전 비동기 데이터를 다시 설정 하 고 컨트롤의 비동기 속성의 새 부하를 시작 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤 마법사](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[응용 프로그램 설정, MFC ActiveX 컨트롤 마법사](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
+[애플리케이션 설정, MFC ActiveX 컨트롤 마법사](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤 마법사, 컨트롤 이름](../../mfc/reference/control-names-mfc-activex-control-wizard.md)
-

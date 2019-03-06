@@ -52,12 +52,12 @@ helpviewer_keywords:
 - CArchive [MFC], WriteString
 - CArchive [MFC], m_pDocument
 ms.assetid: 9e950d23-b874-456e-ae4b-fe00781a7699
-ms.openlocfilehash: f1e5701e95ec080845f3d2422da5d6ce4b9c906b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8f169964c6a313f37b5ea50a5105af29af7b59b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50465613"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57266330"
 ---
 # <a name="carchive-class"></a>CArchive 클래스
 
@@ -132,9 +132,9 @@ class CArchive
 
 `CArchive` 또한 MFC Windows 소켓 클래스를 사용 하 여 프로그래밍을 지원 [CSocket](../../mfc/reference/csocket-class.md) 하 고 [CSocketFile](../../mfc/reference/csocketfile-class.md)합니다. 합니다 [IsBufferEmpty](#isbufferempty) 멤버 함수는 해당 사용을 지원 합니다.
 
-에 대 한 자세한 `CArchive`, 문서를 참조 하세요 [Serialization](../../mfc/serialization-in-mfc.md) 하 고 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+에 대 한 자세한 `CArchive`, 문서를 참조 하세요 [Serialization](../../mfc/serialization-in-mfc.md) 고 [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CArchive`
 
@@ -298,7 +298,7 @@ BOOL IsBufferEmpty() const;
 
 사용 하는 이유 `IsBufferEmpty` 와 연결 된 보관 파일을 사용 하 여를 `CSocketFile` 개체는 둘 이상의 메시지 또는 레코드 보관 파일의 버퍼 포함 될 수 있습니다. 하나의 메시지를 받은 후 사용할지 `IsBufferEmpty` 버퍼가 비어 될 때까지 데이터 수신을 계속 하는 루프를 제어 합니다. 자세한 내용은 참조 하세요. 합니다 [수신](../../mfc/reference/casyncsocket-class.md#receive) 클래스의 멤버 함수 `CAsyncSocket`를 사용 하는 방법을 보여 주는 `IsBufferEmpty`합니다.
 
-자세한 내용은 [Windows 소켓: 소켓과 아카이브 함께 사용 하 여 소켓](../../mfc/windows-sockets-using-sockets-with-archives.md)합니다.
+자세한 내용은 참조 하세요. [Windows 소켓: 보관 파일을 사용 하 여 소켓을 사용 하 여](../../mfc/windows-sockets-using-sockets-with-archives.md)입니다.
 
 ##  <a name="isloading"></a>  CArchive::IsLoading
 
@@ -552,7 +552,7 @@ UINT Read(void* lpBuf, UINT nMax);
 *lpBuf*<br/>
 보관 파일에서 읽은 데이터를 수신 하는 사용자가 제공한 버퍼에 대 한 포인터입니다.
 
-*최대*<br/>
+*nMax*<br/>
 부호 없는 정수로 바이트 수가 지정 보관 파일에서 읽을 수 있습니다.
 
 ### <a name="return-value"></a>반환 값
@@ -653,7 +653,7 @@ LPTSTR ReadString(LPTSTR lpsz, UINT nMax);
 *lpsz*<br/>
 Null로 끝나는 문자열을 받는 사용자가 제공한 버퍼에 대 한 포인터를 지정 합니다.
 
-*최대*<br/>
+*nMax*<br/>
 읽을 문자의 최대 수를 지정 합니다. 하나 여야 합니다의 크기 보다 작아야 합니다 *lpsz* 버퍼입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -784,7 +784,7 @@ void Write(const void* lpBuf, INT nMax);
 *lpBuf*<br/>
 보관 파일에 쓸 데이터가 포함 된 사용자가 제공한 버퍼에 대 한 포인터입니다.
 
-*최대*<br/>
+*nMax*<br/>
 보관 파일에 쓸 바이트 수를 지정 하는 정수입니다.
 
 ### <a name="remarks"></a>설명
@@ -879,7 +879,7 @@ Null 종결 문자 ('\0') 파일에 기록 되지 않습니다. 또는 줄 바�
 
 [!code-cpp[NVC_MFCSerialization#30](../../mfc/codesnippet/cpp/carchive-class_23.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CFile 클래스](../../mfc/reference/cfile-class.md)<br/>

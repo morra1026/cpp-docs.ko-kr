@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CMFCDropDownToolBar [MFC], OnSendCommand
 - CMFCDropDownToolBar [MFC], OnUpdateCmdUI
 ms.assetid: 78818ec5-83ce-42fa-a0d4-2d9d5ecc8770
-ms.openlocfilehash: 9c5115d2453f21d83eda39950ac45a0290e9bfa8
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 704d48cc546943d818ae8b898060fe0f7e203c53
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176941"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303555"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar 클래스
 
@@ -72,7 +72,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 
 3. 사용 하 여 더미 단추 바꾸기 합니다 `CMFCDropDownToolBarButton` 개체를 사용 하 여 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)합니다.
 
-도구 모음 단추에 대 한 자세한 내용은 참조 하세요. [연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)합니다. 드롭다운 도구 모음의 예로, VisualStudioDemo 샘플 프로젝트를 참조 하세요.
+도구 모음 단추에 대 한 자세한 내용은 참조 하세요. [연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)합니다. 드롭다운 도구 모음의 예로, VisualStudioDemo 샘플 프로젝트를 참조 하세요.
 
 ## <a name="example"></a>예제
 
@@ -115,7 +115,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ##  <a name="loadbitmap"></a>  CMFCDropDownToolBar::LoadBitmap
 
-응용 프로그램 리소스에서 도구 모음 이미지를 로드합니다.
+애플리케이션 리소스에서 도구 모음 이미지를 로드합니다.
 
 ```
 virtual BOOL LoadBitmap(
@@ -138,7 +138,7 @@ virtual BOOL LoadBitmap(
 *uiMenuResID*<br/>
 [in] 일반 메뉴 이미지를 참조 하는 비트맵의 리소스 ID입니다.
 
-*차단*<br/>
+*bLocked*<br/>
 [in] 도구 모음을 잠그려면 그렇지 않으면 FALSE입니다.
 
 *uiDisabledResID*<br/>
@@ -202,7 +202,7 @@ afx_msg void OnLButtonUp(
 
 [in] *nFlags*<br/>
 
-[in] *지점*<br/>
+[in] *point*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -218,7 +218,7 @@ afx_msg void OnMouseMove(
 
 [in] *nFlags*<br/>
 
-[in] *지점*<br/>
+[in] *point*<br/>
 
 ### <a name="remarks"></a>설명
 
@@ -252,7 +252,7 @@ virtual void OnUpdateCmdUI(
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
@@ -260,5 +260,4 @@ virtual void OnUpdateCmdUI(
 [CMFCToolBar::Create](../../mfc/reference/cmfctoolbar-class.md#create)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
 [CMFCDropDownToolbarButton 클래스](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)<br/>
-[연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+[연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)

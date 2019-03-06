@@ -120,12 +120,12 @@ helpviewer_keywords:
 - CDocument [MFC], m_clrRichPreviewTextColor
 - CDocument [MFC], m_lfRichPreviewFont
 ms.assetid: e5a2891d-e1e1-4599-8c7e-afa9b4945446
-ms.openlocfilehash: e84ceb11ad789ef3bd6933292030ef2af6f1d817
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b7358c2206c15660b9ffb283802283ee71e57f03
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50609315"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57299077"
 ---
 # <a name="cdocument-class"></a>CDocument 클래스
 
@@ -198,7 +198,7 @@ class CDocument : public CCmdTarget
 |[CDocument::SetTitle](#settitle)|문서 제목을 설정합니다.|
 |[CDocument::UpdateAllViews](#updateallviews)|수정 된 문서는 모든 보기에 알립니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -244,7 +244,7 @@ class CDocument : public CCmdTarget
 
 에 대 한 자세한 `CDocument`를 참조 하세요 [Serialization](../../mfc/serialization-in-mfc.md)를 [문서/뷰 아키텍처 항목](../../mfc/document-view-architecture.md), 및 [문서/뷰 만들기](../../mfc/document-view-creation.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -1073,7 +1073,7 @@ virtual void RemoveChunk(
 *Guid*<br/>
 제거할 청크의 GUID를 지정 합니다.
 
-*pid*<br/>
+*Pid*<br/>
 제거할 청크의 PID를 지정 합니다.
 
 ### <a name="remarks"></a>설명
@@ -1196,7 +1196,7 @@ virtual void SetPathName(
 *lpszPathName*<br/>
 문서에 대 한 경로로 사용할 문자열을 가리킵니다.
 
-*baddtomru*<br/>
+*bAddToMRU*<br/>
 가장 최근에 (사용한 MRU) 파일 목록의 사용한 파일 이름에 추가 됩니다 있는지 여부를 결정 합니다. True 이면 파일 이름이 추가 됩니다. FALSE 인 경우 추가 되지 않습니다.
 
 ### <a name="remarks"></a>설명
@@ -1252,7 +1252,7 @@ void UpdateAllViews(
 
 [!code-cpp[NVC_MFCDocView#64](../../mfc/codesnippet/cpp/cdocument-class_9.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDIDOCVW](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 SNAPVW](../../visual-cpp-samples.md)<br/>

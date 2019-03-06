@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - MFC ActiveX Control Wizard, control names
 ms.assetid: 9b8b81d2-36df-48ed-b58a-a771a0e269ee
-ms.openlocfilehash: ceb92181fcf1fcb17033ac9524c0b113cbc710fc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a143c8b08c73676af0d37cd2b67667e8270dc2b1
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50552713"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259860"
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>MFC ActiveX 컨트롤 마법사, 컨트롤 이름
 
@@ -59,7 +59,7 @@ ms.locfileid: "50552713"
 
    기본적으로 페이지 헤더 속성 파일의 이름을에 따라 짧은 이름을 사용 하 여는 `PropPage` 접미사로 및 `.h` 파일 확장명으로 합니다. 예를 들어, 컨트롤의 약식 이름인 `Price`, 속성 페이지 헤더 파일 이름이 `PricePropPage.h`합니다. 이 이름은 클래스 이름과 일치 해야 합니다.
 
-- **속성 페이지.cpp 파일**
+- **PropPage .cpp file**
 
    기본적으로 속성 페이지 구현 파일의 이름을에 따라 짧은 이름을 사용 하 여는 `PropPage` 접미사로 및 `.cpp` 파일 확장명으로 합니다. 예를 들어, 컨트롤의 약식 이름인 `Price`, 속성 페이지 헤더 파일 이름이 `PricePropPage.cpp`합니다. 이 이름에는 헤더 파일 이름을 일치 해야 합니다.
 
@@ -81,10 +81,9 @@ ms.locfileid: "50552713"
 
    *ProjectName.NewShortName*PropPage.1
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤 마법사](../../mfc/reference/mfc-activex-control-wizard.md)<br/>
-[응용 프로그램 설정, MFC ActiveX 컨트롤 마법사](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
+[애플리케이션 설정, MFC ActiveX 컨트롤 마법사](../../mfc/reference/application-settings-mfc-activex-control-wizard.md)<br/>
 [MFC ActiveX 컨트롤 마법사, 컨트롤 설정](../../mfc/reference/control-settings-mfc-activex-control-wizard.md)<br/>
 [Visual C++ 프로젝트용 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)
-

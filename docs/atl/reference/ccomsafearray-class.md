@@ -28,12 +28,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComSafeArray class
 ms.assetid: ee349aef-33db-4c85-bd08-5d86a3c9d53a
-ms.openlocfilehash: 861fdefe19a0c5b78a7874be3386873d6c253a3c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 0262764c950b01acdb610873a995a9a6fd912997
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51521416"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280682"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray 클래스
 
@@ -58,7 +58,7 @@ class CComSafeArray
 |이름|설명|
 |----------|-----------------|
 |[CComSafeArray::CComSafeArray](#ccomsafearray)|생성자입니다.|
-|[CComSafeArray:: ~ CComSafeArray](#dtor)|소멸자입니다.|
+|[CComSafeArray::~CComSafeArray](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -104,7 +104,7 @@ class CComSafeArray
 
 `CComSafeArray` 는 프로세스 간의 배열 전달을 간소화할 뿐만 아니라 상한과 하한에 대해 배열 인덱스 값을 확인하여 추가 보안을 제공합니다.
 
-`CComSafeArray`의 하한은 모든 사용자 정의 값에서 시작할 수 있지만 C++를 통해 액세스하는 배열에서는 0을 하한으로 사용해야 합니다. Visual Basic과 같은 다른 언어에서는 다른 경계 값(예: -10~10)을 사용할 수 있습니다.
+`CComSafeArray` 의 하한은 모든 사용자 정의 값에서 시작할 수 있지만 C++를 통해 액세스하는 배열에서는 0을 하한으로 사용해야 합니다. Visual Basic과 같은 다른 언어에서는 다른 경계 값(예: -10~10)을 사용할 수 있습니다.
 
 [개체를 만들려면](#create) CComSafeArray::Create `CComSafeArray` 를 사용하고, 제거하려면 [CComSafeArray::Destroy](#destroy) 를 사용합니다.
 
@@ -154,13 +154,13 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 *ulCount*<br/>
 배열에 추가할 개체의 수입니다.
 
-*(태평양 표준시)*<br/>
+*pT*<br/>
 배열에 추가할 하나 이상의 개체에 대 한 포인터입니다.
 
 *t*<br/>
 배열에 추가할 개체 참조입니다.
 
-*복사*<br/>
+*bCopy*<br/>
 데이터의 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -210,7 +210,7 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>매개 변수
 
-*바인딩된*<br/>
+*bound*<br/>
 `SAFEARRAYBOUND` 구조입니다.
 
 *ulCount*<br/>
@@ -235,7 +235,7 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 `CComSafeArray` 개체를 만듭니다.
 
-##  <a name="dtor"></a>  CComSafeArray:: ~ CComSafeArray
+##  <a name="dtor"></a>  CComSafeArray::~CComSafeArray
 
 소멸자입니다.
 
@@ -362,7 +362,7 @@ T& GetAt(LONG lIndex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*색인입니다.*<br/>
+*lIndex*<br/>
 반환할 배열의 값의 인덱스 번호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -561,7 +561,7 @@ T& operator[]int nindex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*nIndex 색인입니다.*<br/>
+*lIndex, nIndex*<br/>
 배열에 필요한 요소의 인덱스 번호입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -643,13 +643,13 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 ### <a name="parameters"></a>매개 변수
 
-*색인입니다.*<br/>
+*lIndex*<br/>
 설정할 수 있는 배열 요소의 인덱스 번호입니다.
 
 *t*<br/>
 지정 된 요소의 새 값입니다.
 
-*복사*<br/>
+*bCopy*<br/>
 데이터의 복사본을 만들어야 하는지 여부를 나타냅니다. 기본값은 TRUE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -660,7 +660,7 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 합니다 *복사* 플래그는 때 고려할 요소 BSTR 또는 VARIANT 형식의 배열에 추가 됩니다. 기본값은 TRUE 배열 요소를 추가할 때 새 복사본을 데이터의 되는지를 확인 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [SAFEARRAY 데이터 형식](/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
 [개체를 만들려면](#create)<br/>

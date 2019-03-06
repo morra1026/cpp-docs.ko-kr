@@ -10,12 +10,12 @@ helpviewer_keywords:
 - IDispatchImpl class, multiple dual interfaces
 - COM_INTERFACE_ENTRY_IID macro
 ms.assetid: 7fea86e6-247f-4063-be6e-85588a9e3719
-ms.openlocfilehash: c2ec6c89ab6f54dbcd7433a0f7fedcebd7962b6e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 2ed0e9e8c74e02917e852b8f95ebff1b048afaef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50434738"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257360"
 ---
 # <a name="multiple-dual-interfaces"></a>여러 개의 이중 인터페이스
 
@@ -37,7 +37,6 @@ ATL은 여러 개의 이중 인터페이스의 단일 구현이 결합에 대 �
 
 이러한 접근 방식은 문제가 네임 스페이스 충돌 가능성이 뿐만 아니라 코드 복잡성 및 유지 관리 합니다. 여러 개의 이중 인터페이스를 만드는 권장 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [이중 인터페이스 및 ATL](../atl/dual-interfaces-and-atl.md)
-

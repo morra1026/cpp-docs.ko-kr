@@ -26,12 +26,12 @@ helpviewer_keywords:
 - CCmdUI [MFC], m_pOther
 - CCmdUI [MFC], m_pSubMenu
 ms.assetid: 04eaaaf5-f510-48ab-b425-94665ba24766
-ms.openlocfilehash: 7d550268fb417301116b5168d4c0ff76fdc35716
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 12d9ead736a84d89b04f7b68ed76da8ccea22d0c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50571147"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57302874"
 ---
 # <a name="ccmdui-class"></a>CCmdUI 클래스
 
@@ -87,7 +87,7 @@ class CCmdUI
 
 이 클래스를 사용 하는 방법은 참조 하세요 [사용자 인터페이스 개체 업데이트 하는 방법](../../mfc/how-to-update-user-interface-objects.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CCmdUI`
 
@@ -229,7 +229,7 @@ virtual void SetText(LPCTSTR lpszText);
 
 [!code-cpp[NVC_MFCDocView#48](../../mfc/codesnippet/cpp/ccmdui-class_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 MDI](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

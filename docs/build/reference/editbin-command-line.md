@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - EDITBIN program, command line
 ms.assetid: 28ff7f92-6c4e-4e7f-86d8-80d5b2f91662
-ms.openlocfilehash: c19b2f2018caf380c7ac3a09c65955c924fed3e0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0397372d630dcb23059ce9c20416f72d81cf1645
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50665831"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426669"
 ---
 # <a name="editbin-command-line"></a>EDITBIN 명령줄
 
@@ -25,7 +25,7 @@ EDITBIN [options] files...
 
 명령을 입력 하면 `editbin` 입력 하지 않고 다른 명령줄에서 EDITBIN는 옵션을 요약 usage 문을 표시 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
 [EDITBIN 참조](../../build/reference/editbin-reference.md)

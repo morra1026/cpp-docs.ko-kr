@@ -15,12 +15,12 @@ helpviewer_keywords:
 - destruction [MFC], data objects
 - data sources [MFC], creating
 ms.assetid: ac216d54-3ca5-4ce7-850d-cd1f6a90d4f1
-ms.openlocfilehash: a46cc15a101618699b9e7fa988155517de673fdb
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 74119d7ea33eef68f0cb4a67c8419514cbb73c10
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50614970"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304441"
 ---
 # <a name="data-objects-and-data-sources-creation-and-destruction"></a>데이터 개체 및 데이터 소스: 생성 및 소멸
 
@@ -38,7 +38,7 @@ ms.locfileid: "50614970"
 
 데이터 개체는 대상 응용 프로그램인 클라이언트 또는 서버에서 사용됩니다. 대상 응용 프로그램의 데이터 개체는 소스 응용 프로그램과 대상 응용 프로그램 간 연결의 한쪽 끝입니다. 대상 응용 프로그램의 데이터 개체는 데이터 소스의 데이터에 액세스하고 데이터와 상호 작용하는 데 사용됩니다.
 
-데이터 개체를 필요한 두 가지 일반적인 경우가 있습니다. 첫 번째 상황은 끌어서 놓기를 사용하여 응용 프로그램에서 데이터를 삭제하는 경우입니다. 두 번째 상황은 편집 메뉴에서 붙여넣기 또는 선택하여 붙여넣기를 선택하는 경우입니다.
+데이터 개체를 필요한 두 가지 일반적인 경우가 있습니다. 첫 번째 상황은 끌어서 놓기를 사용하여 응용 프로그램에서 데이터를 드롭하는 경우입니다. 두 번째 상황은 편집 메뉴에서 붙여넣기 또는 선택하여 붙여넣기를 선택하는 경우입니다.
 
 끌어서 놓기 상황에서는 데이터 개체를 만들 필요가 없습니다. 기존 데이터 개체에 대한 포인터는 `OnDrop` 함수에 전달됩니다. 이 데이터 개체는 프레임워크를 통해 끌어서 놓기 작업 일부로 만들어지고 프레임워크를 통해 제거됩니다. 다른 메서드에서 붙여넣기가 수행될 때 항상 이 경우에 해당하는 것은 아닙니다. 자세한 내용은 [데이터 개체 제거](#_core_destroying_data_objects)합니다.
 
@@ -68,13 +68,15 @@ ms.locfileid: "50614970"
 
 1. 이 경우는 **잘라내기** 작업 또는 `DoDragDrop` 반환 **DROPEFFECT_MOVE**, 1 단계에서 선택한 데이터가 문서에서 삭제 됩니다.
 
-이 시나리오는 MFC OLE 샘플 구현 [OCLIENT](../visual-cpp-samples.md) 하 고 [HIERSVR](../visual-cpp-samples.md)합니다. `GetClipboardData` 및 `OnGetClipboardData` 함수 외에 모든 함수에 대한 각 응용 프로그램의 `CView` 파생 클래스 소스를 살펴봅니다. 이들 두 함수는 `COleClientItem` 또는 `COleServerItem` 파생 클래스 구현이 포함됩니다. 이들 샘플 프로그램에서는 이러한 개념을 구현하는 방법의 좋은 예를 제공합니다.
+이 시나리오는 MFC OLE 샘플 구현 [OCLIENT](../visual-cpp-samples.md) 하 고 [HIERSVR](../visual-cpp-samples.md)합니다. 
+  `GetClipboardData` 및 `OnGetClipboardData` 함수 외에 모든 함수에 대한 각 응용 프로그램의 `CView` 파생 클래스 소스를 살펴봅니다. 이들 두 함수는 `COleClientItem` 또는 `COleServerItem` 파생 클래스 구현이 포함됩니다. 이들 샘플 프로그램에서는 이러한 개념을 구현하는 방법의 좋은 예를 제공합니다.
 
-`COleDataSource` 개체를 만들어야 할 한 가지 다른 상황은 끌어서 놓기 작업의 기본 동작을 수정할 경우 발생합니다. 자세한 내용은 참조는 [끌어서 놓기: 사용자 지정](../mfc/drag-and-drop-customizing.md) 문서.
+
+  `COleDataSource` 개체를 만들어야 할 한 가지 다른 상황은 끌어서 놓기 작업의 기본 동작을 수정할 경우 발생합니다. 자세한 내용은 참조는 [끌어서 놓기: 사용자 지정](../mfc/drag-and-drop-customizing.md) 문서.
 
 ##  <a name="_core_destroying_data_sources"></a> 데이터 소스 제거
 
-데이터 소스는 현재 데이터 소스를 처리해야 하는 응용 프로그램을 통해 제거되어야 합니다. 데이터 원본 OLE에 전달 되는 있는 경우에서와 같은 호출 [coledatasource:: Dodragdrop](../mfc/reference/coledatasource-class.md#dodragdrop)를 호출 해야 `pDataSrc->InternalRelease`합니다. 예를 들어:
+데이터 소스는 현재 데이터 소스를 처리해야 하는 응용 프로그램을 통해 제거되어야 합니다. 데이터 원본 OLE에 전달 되는 있는 경우에서와 같은 호출 [coledatasource:: Dodragdrop](../mfc/reference/coledatasource-class.md#dodragdrop)를 호출 해야 `pDataSrc->InternalRelease`합니다. 예를 들면,
 
 [!code-cpp[NVC_MFCListView#1](../atl/reference/codesnippet/cpp/data-objects-and-data-sources-creation-and-destruction_1.cpp)]
 
@@ -82,7 +84,7 @@ ms.locfileid: "50614970"
 
 자세한 내용은 [끌어서 놓기](../mfc/drag-and-drop-ole.md), [클립보드](../mfc/clipboard.md), 및 [조작 데이터 개체 및 데이터 소스](../mfc/data-objects-and-data-sources-manipulation.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [데이터 개체 및 데이터 소스(OLE)](../mfc/data-objects-and-data-sources-ole.md)<br/>
 [COleDataObject 클래스](../mfc/reference/coledataobject-class.md)<br/>

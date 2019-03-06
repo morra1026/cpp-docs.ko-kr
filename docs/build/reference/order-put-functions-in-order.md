@@ -12,12 +12,12 @@ helpviewer_keywords:
 - LINK tool [C++], swap tuning
 - paging, optimizing
 ms.assetid: ecf5eb3e-e404-4e86-9a91-4e5ec157261a
-ms.openlocfilehash: dd854b6ea19ee08bf1a375a42466ad7abd13b1ee
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5429876d9bfae7d8b317d52d69f0b21c720b002a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480199"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418077"
 ---
 # <a name="order-put-functions-in-order"></a>/ORDER(함수에 순서 지정)
 
@@ -25,7 +25,7 @@ ms.locfileid: "50480199"
 
 ## <a name="syntax"></a>구문
 
-> **/ 순서:\@**<em>파일 이름</em>
+> **/ORDER:\@**<em>filename</em>
 
 ### <a name="parameters"></a>매개 변수
 
@@ -71,7 +71,7 @@ COMDAT 순서를 지정 하려면 만들기를 *응답 파일*를 이름별로 �
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.FunctionOrder%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

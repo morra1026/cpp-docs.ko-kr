@@ -13,14 +13,14 @@ helpviewer_keywords:
 - macros [MFC], MBCS conversion macros
 - TN059
 ms.assetid: a2aab748-94d0-4e2f-8447-3bd07112a705
-ms.openlocfilehash: e806cea54fcb1559b7d70b2e7672973501fc0adf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 130b459dc87f36325d0f253181a196bea868856f
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50476442"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262816"
 ---
-# <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC MBCS/유니코드 변환 매크로 사용
+# <a name="tn059-using-mfc-mbcsunicode-conversion-macros"></a>TN059: MFC/유니코드 변환 매크로 사용
 
 > [!NOTE]
 >  다음 기술 노트는 온라인 설명서에 먼저 포함되어 있었으므로 업데이트되지 않았습니다. 따라서 일부 절차 및 항목은 만료되거나 올바르지 않을 수 있습니다. 최신 정보를 보려면 온라인 설명서 색인에서 관심 있는 항목을 검색하는 것이 좋습니다.
@@ -140,7 +140,7 @@ void MuchBetterIterateCode(LPCTSTR lpsz)
 }
 ```
 
-문자열 상수 없는 경우 다음 함수에는 메서드를 캡슐화 합니다. 이렇게 하면 변환 버퍼 때마다를 해제할 수 있습니다. 예를 들어:
+문자열 상수 없는 경우 다음 함수에는 메서드를 캡슐화 합니다. 이렇게 하면 변환 버퍼 때마다를 해제할 수 있습니다. 예를 들면,
 
 ```
 void CallSomeMethod(int ii, LPCTSTR lpsz)
@@ -194,8 +194,7 @@ return lpszT; // CString makes copy
 
 매크로 쉽고 사용 하기 쉬운 코드를 삽입 하는 위의 주의에서 알 수 있듯이, 사용 하는 경우 주의 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [번호별 기술 참고 사항](../mfc/technical-notes-by-number.md)<br/>
 [범주별 기술 참고 사항](../mfc/technical-notes-by-category.md)
-

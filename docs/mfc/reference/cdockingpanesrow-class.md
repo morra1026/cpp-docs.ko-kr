@@ -90,18 +90,18 @@ helpviewer_keywords:
 - CDockingPanesRow [MFC], ShowPane
 - CDockingPanesRow [MFC], UpdateVisibleState
 ms.assetid: e7a17832-0ebb-4bce-b799-cec9b60f76fe
-ms.openlocfilehash: a2d9c7894327a66c24fae3890856dbb95a6d10e4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e5720fa2ff8e85092b246002b7961ce3830ee7e3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450130"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277991"
 ---
 # <a name="cdockingpanesrow-class"></a>CDockingPanesRow 클래스
 
 도크 사이트의 동일한 수평 또는 수직 행(열)에 위치한 창 목록을 관리합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -174,7 +174,7 @@ class CDockingPanesRow : public CObject
 
 [!code-cpp[NVC_MFC_RibbonApp#26](../../mfc/reference/codesnippet/cpp/cdockingpanesrow-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -182,7 +182,7 @@ class CDockingPanesRow : public CObject
 
 ## <a name="requirements"></a>요구 사항
 
-**헤더:** afxDockingPanesRow.h
+**Header:** afxDockingPanesRow.h
 
 ##  <a name="addpane"></a>  CDockingPanesRow::AddPane
 
@@ -699,7 +699,7 @@ virtual int ResizeByPaneDivider(int /*ignored*/);
 
 ### <a name="parameters"></a>매개 변수
 
-[in] *무시*<br/>
+[in] *ignored*<br/>
 
 ### <a name="return-value"></a>반환 값
 
@@ -782,10 +782,10 @@ virtual void UpdateVisibleState(BOOL bDelay);
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [CObject 클래스](../../mfc/reference/cobject-class.md)<br/>
-[CDockSite 클래스](../../mfc/reference/cdocksite-class.md)<br/>
-[CPane 클래스](../../mfc/reference/cpane-class.md)
+[CDockSite Class](../../mfc/reference/cdocksite-class.md)<br/>
+[CPane Class](../../mfc/reference/cpane-class.md)

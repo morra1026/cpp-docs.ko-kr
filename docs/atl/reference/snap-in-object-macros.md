@@ -11,12 +11,12 @@ f1_keywords:
 - atlsnap/ATL::SNAPINMENUID
 - atlsnap/ATL::SNAPINTOOLBARID_ENTRY
 ms.assetid: 4e9850c0-e395-4929-86c9-584a81828053
-ms.openlocfilehash: e3eec62e2bea92f1f308b149046b83be1b9085b8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b75dd04bed4895d722939d1bf9c0a6dfff2126e0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656939"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57292605"
 ---
 # <a name="snap-in-object-macros"></a>스냅인 개체 매크로
 
@@ -68,7 +68,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 
 ### <a name="parameters"></a>매개 변수
 
-*(_c)*<br/>
+*_class*<br/>
 [in] 스냅인 개체 클래스를 지정 합니다.
 
 ### <a name="example"></a>예제
@@ -101,7 +101,7 @@ END_SNAPINTOOLBARID_MAP( _class )
 
 ### <a name="parameters"></a>매개 변수
 
-*(_c)*<br/>
+*_class*<br/>
 [in] 스냅인 개체 클래스를 지정 합니다.
 
 ### <a name="example"></a>예제
@@ -184,6 +184,6 @@ SNAPINTOOLBARID_ENTRY( id )
 
 예를 참조 하세요 [BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

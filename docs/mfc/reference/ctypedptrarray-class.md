@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CTypedPtrArray [MFC], SetAt
 - CTypedPtrArray [MFC], SetAtGrow
 ms.assetid: e3ecdf1a-a889-4156-92dd-ddbd36ccd919
-ms.openlocfilehash: 767d4782ec637a0404051e6871d584f73cefdcd2
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 8a6fc0786a169f9c1e73eb8acadfc51d063334c9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657476"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275339"
 ---
 # <a name="ctypedptrarray-class"></a>CTypedPtrArray 클래스
 
@@ -45,7 +45,7 @@ class CTypedPtrArray : public BASE_CLASS
 *BASE_CLASS*<br/>
 형식화 된 포인터 배열 클래스의 기본 클래스 배열 클래스 여야 합니다 ( `CObArray` 또는 `CPtrArray`).
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 배열에 저장 된 요소의 형식입니다.
 
 ## <a name="members"></a>멤버
@@ -79,7 +79,7 @@ class CTypedPtrArray : public BASE_CLASS
 
 사용 하 여 대 한 자세한 내용은 `CTypedPtrArray`, 문서를 참조 하세요 [컬렉션](../../mfc/collections.md) 하 고 [템플릿 기반 클래스](../../mfc/template-based-classes.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `BASE_CLASS`
 
@@ -99,7 +99,7 @@ INT_PTR Add(TYPE newElement);
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 배열에 추가할 요소의 형식을 지정 합니다.
 
 *newElement*<br/>
@@ -126,7 +126,7 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 *BASE_CLASS*<br/>
 형식화 된 포인터 배열 클래스의 기본 클래스 배열 클래스 여야 합니다 ( [CObArray](../../mfc/reference/cobarray-class.md) 하거나 [CPtrArray](../../mfc/reference/cptrarray-class.md)).
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 배열에 저장 된 요소의 형식입니다.
 
 *src*<br/>
@@ -153,7 +153,7 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 *BASE_CLASS*<br/>
 형식화 된 포인터 배열 클래스의 기본 클래스 배열 클래스 여야 합니다 ( [CObArray](../../mfc/reference/cobarray-class.md) 하거나 [CPtrArray](../../mfc/reference/cptrarray-class.md)).
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 배열에 저장 된 요소의 형식입니다.
 
 *src*<br/>
@@ -173,7 +173,7 @@ TYPE& ElementAt(INT_PTR nIndex);
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수를이 배열에 저장 된 요소의 형식을 지정 합니다.
 
 *nIndex*<br/>
@@ -197,7 +197,7 @@ TYPE GetAt(INT_PTR nIndex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 배열에 저장 된 요소의 형식을 지정 합니다.
 
 *nIndex*<br/>
@@ -231,7 +231,7 @@ void InsertAt(
 *nIndex*<br/>
 반환 된 값 보다 클 수 있습니다 하는 정수 인덱스 [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)합니다.
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 배열에 저장 된 요소의 형식입니다.
 
 *newElement*<br/>
@@ -253,7 +253,7 @@ void InsertAt(
 
 설명, 자세한 [CObArray::InsertAt](../../mfc/reference/cobarray-class.md#insertat)합니다.
 
-##  <a name="operator_at"></a>  CTypedPtrArray::operator]
+##  <a name="operator_at"></a>  CTypedPtrArray::operator [ ]
 
 이러한 인라인 연산자 호출 `BASE_CLASS` **:: operator**합니다.
 
@@ -264,7 +264,7 @@ TYPE operator[ ](int_ptr nindex) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*형식*<br/>
+*TYPE*<br/>
 템플릿 매개 변수 배열에 저장 된 요소의 형식을 지정 합니다.
 
 *nIndex*<br/>
@@ -291,7 +291,7 @@ void SetAt(
 *nIndex*<br/>
 0 보다 크거나 같은 경우에 정수 인덱스에서 반환 된 값 보다 작거나 [CObArray::GetUpperBound](../../mfc/reference/cobarray-class.md#getupperbound)합니다.
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 배열에 저장 된 요소의 형식입니다.
 
 *ptr*<br/>
@@ -316,7 +316,7 @@ void SetAtGrow(
 *nIndex*<br/>
 정수 인덱스는 0 보다 크거나 같은 경우입니다.
 
-*형식*<br/>
+*TYPE*<br/>
 기본 클래스 배열에 저장 된 요소의 형식입니다.
 
 *newElement*<br/>
@@ -326,7 +326,7 @@ void SetAtGrow(
 
 설명, 자세한 [CObArray::SetAtGrow](../../mfc/reference/cobarray-class.md#setatgrow)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 수집](../../visual-cpp-samples.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

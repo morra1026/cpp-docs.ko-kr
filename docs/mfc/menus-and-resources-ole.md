@@ -18,12 +18,12 @@ helpviewer_keywords:
 - containers [MFC], OLE container applications
 - OLE menus and resources [MFC]
 ms.assetid: 52bfa086-7d3d-466f-94c7-c7061f3bdb3a
-ms.openlocfilehash: 8b8e278564c2c293cabfcd56ab9ce2cdb4807e19
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e8f8c7fa8e24349a741b99822f13d5473373e17
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50511737"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57268527"
 ---
 # <a name="menus-and-resources-ole"></a>메뉴 및 리소스(OLE)
 
@@ -39,16 +39,16 @@ OLE 비주얼 편집으로 인해 추가 요구 사항 메뉴에 다양 한 모�
 
 이 응용 프로그램의 각 모드에 대해 하나씩 세 개의 별도 메뉴 레이아웃에 필요합니다. 액셀러레이터 키 테이블은 각 새 모드에 필요한도 합니다. 컨테이너 응용 프로그램을 수 있습니다 또는 내부 활성화를 지원 하지 않을 수합니다 있습니다. 이 경우 새 메뉴 구조 하며 액셀러레이터 키 테이블을 연결 합니다.
 
-내부 활성화는 컨테이너 및 서버 응용 프로그램을 메뉴, 도구 모음 및 상태 표시줄 영역에 대 한 협상 해야 필요 합니다. 모든 리소스에에서이 사용 하 여 디자인 되어야 합니다. 이 문서 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md) 이 항목에에서 설명 합니다.
+내부 활성화는 컨테이너 및 서버 응용 프로그램을 메뉴, 도구 모음 및 상태 표시줄 영역에 대 한 협상 해야 필요 합니다. 모든 리소스에에서이 사용 하 여 디자인 되어야 합니다. 문서 [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md) 이 항목에에서 설명 합니다.
 
 이러한 문제 때문에 최대 4 개의 별도 메뉴 및 액셀러레이터 키 테이블 리소스 응용 프로그램 마법사를 사용 하 여 만든 OLE 문서 응용 프로그램이 있을 수 있습니다. 이러한 작업은 다음과 같은 이유로 사용 됩니다.
 
 |리소스 이름|사용|
 |-------------------|---------|
 |IDR_MAINFRAME|열려 있는 파일에 관계 없이 SDI 응용 프로그램 또는 파일이 열려 있으면 MDI 응용 프로그램에 사용 합니다. 이것이 비 OLE 응용 프로그램에 사용 되는 표준 메뉴입니다.|
-|IDR_\<프로젝트 > 형식|파일이 열려 있으면 MDI 응용 프로그램에서 사용 합니다. 응용 프로그램은 독립 실행형 실행 중일 때 사용 합니다. 이것이 비 OLE 응용 프로그램에 사용 되는 표준 메뉴입니다.|
-|IDR_\<프로젝트 > TYPE_SRVR_IP|현재 위치에서 개체를 열 때 서버 또는 컨테이너를 사용 합니다.|
-|IDR_\<프로젝트 > TYPE_SRVR_EMB|내부 활성화를 사용 하지 않고 개체를 열 경우 서버 응용 프로그램에 사용 합니다.|
+|IDR_\<project>TYPE|파일이 열려 있으면 MDI 응용 프로그램에서 사용 합니다. 응용 프로그램은 독립 실행형 실행 중일 때 사용 합니다. 이것이 비 OLE 응용 프로그램에 사용 되는 표준 메뉴입니다.|
+|IDR_\<project>TYPE_SRVR_IP|현재 위치에서 개체를 열 때 서버 또는 컨테이너를 사용 합니다.|
+|IDR_\<project>TYPE_SRVR_EMB|내부 활성화를 사용 하지 않고 개체를 열 경우 서버 응용 프로그램에 사용 합니다.|
 
 각 이러한 리소스 이름에는 메뉴 및 액셀러레이터 키 테이블 일반적으로 나타냅니다. 응용 프로그램 마법사를 사용 하 여 생성 되지 않은 MFC 응용 프로그램에서와 유사한 체계를 사용 해야 합니다.
 
@@ -60,7 +60,6 @@ OLE 비주얼 편집으로 인해 추가 요구 사항 메뉴에 다양 한 모�
 
 - [메뉴 및 리소스: 메뉴 병합](../mfc/menus-and-resources-menu-merging.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [OLE](../mfc/ole-in-mfc.md)
-

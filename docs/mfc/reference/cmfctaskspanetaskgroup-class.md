@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CMFCTasksPaneTaskGroup [MFC], m_rectGroup
 - CMFCTasksPaneTaskGroup [MFC], m_strName
 ms.assetid: 2111640b-a46e-4b27-b033-29e88632b86a
-ms.openlocfilehash: 2ed50950bc62a0c2f382e42782c58a0d7354116f
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: a28f00fb732727ec1334946a9e752679307cd3a0
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176590"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295229"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup 클래스
 
@@ -86,7 +86,7 @@ class CMFCTasksPaneTaskGroup : public CObject
 
 ![특수 작업 그룹](../../mfc/reference/media/nexttaskgrpspecial.png "특별 한 작업 그룹")
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -124,7 +124,7 @@ CMFCTasksPaneTaskGroup(
 *bIsCollapsed*<br/>
 그룹 축소 되는지 여부를 지정 합니다.
 
-*물리 페이지*<br/>
+*pPage*<br/>
 이 작업 그룹에 속하는 속성 페이지를 지정 합니다.
 
 *hIcon*<br/>
@@ -238,7 +238,7 @@ virtual BOOL SetACCData(
 
 TRUE 이면 합니다 *데이터* FALSE 매개 변수를 성공적으로 현재 작업 그룹의 내게 필요한 옵션 데이터를 사용 하 여 채워진 고, 그렇지 않으면입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

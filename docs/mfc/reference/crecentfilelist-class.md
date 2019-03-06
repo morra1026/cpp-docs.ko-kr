@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CRecentFileList [MFC], UpdateMenu
 - CRecentFileList [MFC], WriteList
 ms.assetid: a77f0524-7584-4582-849a-7e97b76d186e
-ms.openlocfilehash: e38f63090e3de2a73c60618a36d25a397d595dac
-ms.sourcegitcommit: 53f75afaf3c0b3ed481c5503357ed2b7b87aac6d
+ms.openlocfilehash: 30536d91d057de4e551b5a28200dd903e12713b3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657424"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304836"
 ---
 # <a name="crecentfilelist-class"></a>CRecentFileList 클래스
 
@@ -69,7 +69,7 @@ class CRecentFileList
 
 파일에 추가 하거나 최근에 사용한 파일 목록에서 삭제할 수, 파일 목록에서 읽거나 수 레지스트리에 기록 된 또는 합니다. INI 파일 및 최근에 사용한 파일 목록을 표시 하 고 메뉴를 업데이트할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CRecentFileList`
 
@@ -137,7 +137,7 @@ CRecentFileList(
 
 ### <a name="parameters"></a>매개 변수
 
-*n %n 시작*<br/>
+*nStart*<br/>
 MRU (가장 최근에 사용한) 파일 목록 메뉴 표시에 번호 매기기에 대 한 오프셋입니다.
 
 *lpszSection*<br/>
@@ -206,7 +206,7 @@ int GetSize() const;
 
 현재에서 파일 수에는 가장 최근에 (사용한 MRU) 파일 목록 사용.
 
-##  <a name="operator_at"></a>  CRecentFileList::operator]
+##  <a name="operator_at"></a>  CRecentFileList::operator [ ]
 
 오버 로드 된 첨자 (`[]`) 연산자는 단일 반환 `CString` 의 0부터 시작 하는 인덱스로 지정 된 *nIndex*합니다.
 
@@ -261,7 +261,6 @@ virtual void UpdateMenu(CCmdUI* pCmdUI);
 virtual void WriteList();
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

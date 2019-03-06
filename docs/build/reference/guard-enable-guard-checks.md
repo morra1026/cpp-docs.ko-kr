@@ -2,12 +2,12 @@
 title: /GUARD(보호 검사 사용)
 ms.date: 11/04/2016
 ms.assetid: 72758e23-70ac-4616-94d7-d767477406d1
-ms.openlocfilehash: 730e26477f4684ca6339a25a945ae04ff5a823c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d68b1d9df25874759ada7105ed6cad41168723bc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50565908"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418492"
 ---
 # <a name="guard-enable-guard-checks"></a>/GUARD(보호 검사 사용)
 
@@ -35,7 +35,7 @@ CFG 사용 실행 가능 이미지를 만들려면 컴파일러와 링커 둘 �
 
 1. **추가 옵션**, 입력 `/GUARD:CF`합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/guard(제어 흐름 보호 사용)](../../build/reference/guard-enable-control-flow-guard.md)<br/>
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>

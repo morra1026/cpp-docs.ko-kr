@@ -1,15 +1,15 @@
 ---
-title: '연습: 매트릭스 곱'
+title: '연습: 행렬 곱'
 ms.date: 11/19/2018
 ms.assetid: 61172e8b-da71-4200-a462-ff3a908ab0cf
-ms.openlocfilehash: ae86ff5a111348404616c8bb4fecd3bf22afc90c
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 597ba0f47c7b081f62c82bf8e1ca01c286d35140
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176161"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57300975"
 ---
-# <a name="walkthrough-matrix-multiplication"></a>연습: 매트릭스 곱
+# <a name="walkthrough-matrix-multiplication"></a>연습: 행렬 곱
 
 이 단계별 연습에는 행렬 곱셈의 실행을 가속화 하 c + + AMP를 사용 하는 방법을 보여 줍니다. 바둑판식 배열을 사용 하 여 여러 개 있는 바둑판식 배열 없이 한 두 가지 알고리즘 표시 됩니다.
 
@@ -293,7 +293,7 @@ void main() {
 
 4. 선택 된 **공간** 모음 응용 프로그램을 종료 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C++ AMP(C++ Accelerated Massive Parallelism)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
-[연습: C++ AMP 응용 프로그램 디버깅](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)
+[연습: C + + AMP 응용 프로그램 디버깅](../../parallel/amp/walkthrough-debugging-a-cpp-amp-application.md)

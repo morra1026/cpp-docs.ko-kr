@@ -5,12 +5,12 @@ ms.date: 09/26/2018
 helpviewer_keywords:
 - _ATL_MIN_CRT macro
 ms.assetid: 08ff14e8-aa49-4139-a110-5d071939cf1e
-ms.openlocfilehash: ce6492eb2e4da04b261c7a88154674d036bb578a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6ea7a0ae0c0a9be87fe507e6b934bd046c9ffe4e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50481421"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295866"
 ---
 # <a name="changing-the-drawing-code-atl-tutorial-part-4"></a>그리기 코드 변경(ATL 자습서, 4부)
 
@@ -106,7 +106,7 @@ ms.locfileid: "50481421"
 
 ### <a name="to-use-the-activex-control-test-container"></a>ActiveX Control Test Container를 사용 하려면
 
-1. 빌드 및 ActiveX Control Test Container를 시작 합니다. 합니다 [TSTCON 샘플: ActiveX Control Test Container](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/ole/TstCon) GitHub에서 확인할 수 있습니다.
+1. 빌드 및 ActiveX Control Test Container를 시작 합니다. [TSTCON 샘플: ActiveX Control Test Container](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/MFC/ole/TstCon) GitHub에서 확인할 수 있습니다.
 
     > [!NOTE]
     > 관련 된 오류에 대 한 `ATL::CW2AEX`, Script.Cpp, 줄 바꿉니다 `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` 사용 하 여 `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`, 및 줄 `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` 사용 하 여 `TRACE( "Source Text: %s\n", bstrSourceLineText );`입니다.<br/>
@@ -156,7 +156,7 @@ ms.locfileid: "50481421"
 
 [3 단계로](../atl/adding-a-property-to-the-control-atl-tutorial-part-3.md) &#124; [5 단계로 이동 합니다.](../atl/adding-an-event-atl-tutorial-part-5.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [자습서](../atl/active-template-library-atl-tutorial.md)<br/>
 [테스트 컨테이너로 속성 및 이벤트 테스트](../mfc/testing-properties-and-events-with-test-container.md)

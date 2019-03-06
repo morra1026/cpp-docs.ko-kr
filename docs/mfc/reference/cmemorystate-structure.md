@@ -8,12 +8,12 @@ helpviewer_keywords:
 - memory leaks [MFC], detecting
 - detecting memory leaks [MFC]
 ms.assetid: 229d9de7-a6f3-4cc6-805b-5a9d9b1bfe1d
-ms.openlocfilehash: 5aee7bc2f44e4c2e7851baea554d3069c928088c
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: a110e1345cb970c117de125bd8105e1bc86eaf94
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51523431"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288131"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState 구조체
 
@@ -37,10 +37,10 @@ struct CMemoryState
 
 |이름|설명|
 |----------|-----------------|
-|[Cmemorystate:: Checkpoint](#checkpoint)|현재 메모리 상태의 스냅숏으로 (검사점)을 가져옵니다.|
-|[Cmemorystate:: Difference](#difference)|형식의 두 개체 간의 차이 계산 `CMemoryState`합니다.|
-|[Cmemorystate:: Dumpallobjectssince](#dumpallobjectssince)|이전 검사점 이후의 모든 현재 할당 된 개체의 요약을 덤프합니다.|
-|[Cmemorystate:: Dumpstatistics](#dumpstatistics)|에 대 한 메모리 할당 통계 출력을 `CMemoryState` 개체입니다.|
+|[CMemoryState::Checkpoint](#checkpoint)|현재 메모리 상태의 스냅숏으로 (검사점)을 가져옵니다.|
+|[CMemoryState::Difference](#difference)|형식의 두 개체 간의 차이 계산 `CMemoryState`합니다.|
+|[CMemoryState::DumpAllObjectsSince](#dumpallobjectssince)|이전 검사점 이후의 모든 현재 할당 된 개체의 요약을 덤프합니다.|
+|[CMemoryState::DumpStatistics](#dumpstatistics)|에 대 한 메모리 할당 통계 출력을 `CMemoryState` 개체입니다.|
 
 ## <a name="remarks"></a>설명
 
@@ -67,7 +67,7 @@ struct CMemoryState
 > [!NOTE]
 >  형식 개체의 선언을 `CMemoryState` 멤버 함수를 호출 하 여 대괄호로 묶어야 합니다 및 `#if defined(_DEBUG)/#endif` 지시문입니다. 그러면 메모리 진단 프로그램의 빌드를 디버깅에 사용할 수 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CMemoryState`
 
@@ -75,7 +75,7 @@ struct CMemoryState
 
 **헤더:** afx.h
 
-##  <a name="checkpoint"></a>  Cmemorystate:: Checkpoint
+##  <a name="checkpoint"></a>  CMemoryState::Checkpoint
 
 스냅숏을 메모리 요약 하 고이 저장 `CMemoryState` 개체입니다.
 
@@ -103,7 +103,7 @@ CMemoryState();
 
 [!code-cpp[NVC_MFC_Utilities#18](../../mfc/codesnippet/cpp/cmemorystate-structure_1.cpp)]
 
-##  <a name="difference"></a>  Cmemorystate:: Difference
+##  <a name="difference"></a>  CMemoryState::Difference
 
 두 `CMemoryState` 개체를이 차이 저장 합니다 `CMemoryState` 개체입니다.
 
@@ -133,7 +133,7 @@ BOOL Difference(
 
   예제를 참조 합니다 [CMemoryState](#cmemorystate) 생성자입니다.
 
-##  <a name="dumpallobjectssince"></a>  Cmemorystate:: Dumpallobjectssince
+##  <a name="dumpallobjectssince"></a>  CMemoryState::DumpAllObjectsSince
 
 호출 된 `Dump` 클래스에서 파생 된 형식의 모든 개체에 대 한 함수 `CObject` 는 할당 된와 여전히 할당 된 마지막 [검사점](#checkpoint) 이 호출 `CMemoryState` 개체입니다.
 
@@ -149,7 +149,7 @@ void DumpAllObjectsSince() const;
 
   예제를 참조 합니다 [CMemoryState](#cmemorystate) 생성자입니다.
 
-##  <a name="dumpstatistics"></a>  Cmemorystate:: Dumpstatistics
+##  <a name="dumpstatistics"></a>  CMemoryState::DumpStatistics
 
 간결한 메모리 통계 보고서를 인쇄를 `CMemoryState` 개체에서 채워진 합니다 [차이](#difference) 멤버 함수입니다.
 
@@ -195,7 +195,6 @@ Free 블록은 해당 할당 취소 하는 경우 지연 된 블록 수가 `afxM
 
 이제 프로그램의 출력을 확인 하려면 디버그 모드에서 실행할 수 있습니다는 `DumpStatistics` 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

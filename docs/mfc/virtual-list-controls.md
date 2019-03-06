@@ -7,12 +7,12 @@ helpviewer_keywords:
 - list controls [MFC], List view
 - virtual list controls
 ms.assetid: 319f841f-e426-423a-8276-d93f965b0b45
-ms.openlocfilehash: b9da918017d300d7af61b1fd3ab27869e136bb8d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7372aca9e24a554e01f7a61f43d6170e99fe34c5
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573679"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57288716"
 ---
 # <a name="virtual-list-controls"></a>가상 목록 컨트롤
 
@@ -63,8 +63,7 @@ LVN_ODFINDITEM 알림 메시지는 특정 목록 컨트롤 항목을 찾을 수 
 
 목록 뷰 컨트롤에서 제공한 정보와 일치 하는 항목을 검색할 수 있도록 준비 해야 합니다. 일치 하는 항목이 있으면 성공한 경우 항목의 인덱스를 반환 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CListCtrl 사용](../mfc/using-clistctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

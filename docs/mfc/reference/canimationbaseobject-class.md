@@ -50,12 +50,12 @@ helpviewer_keywords:
 - CAnimationBaseObject [MFC], m_nObjectID
 - CAnimationBaseObject [MFC], m_pParentController
 ms.assetid: 76b25917-940e-4eba-940f-31d270702603
-ms.openlocfilehash: 6527abf5c91cf440bbbe76d0d5fe49ce2c5dbef7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 18b2319ea3c51edf79b6a90095b8363db830d66c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50430448"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258920"
 ---
 # <a name="canimationbaseobject-class"></a>CAnimationBaseObject 클래스
 
@@ -74,7 +74,7 @@ class CAnimationBaseObject : public CObject;
 |이름|설명|
 |----------|-----------------|
 |[CAnimationBaseObject::CAnimationBaseObject](#canimationbaseobject)|오버로드됨. 애니메이션 개체를 생성 합니다.|
-|[CAnimationBaseObject:: ~ CAnimationBaseObject](#canimationbaseobject__~canimationbaseobject)|소멸자입니다. 애니메이션 개체 소멸 될 때 호출 됩니다.|
+|[CAnimationBaseObject::~CAnimationBaseObject](#canimationbaseobject__~canimationbaseobject)|소멸자입니다. 애니메이션 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -116,7 +116,7 @@ class CAnimationBaseObject : public CObject;
 
 이 클래스는 모든 애니메이션 개체에 대 한 기본 메서드를 구현합니다. 애니메이션 개체 값, 포인트, 크기, 사각형을 나타내는 하거나 모든 사용자 지정 엔터티를 비롯 하 여 응용 프로그램에 색 수 있습니다. 애니메이션 개체 애니메이션 그룹 (CAnimationGroup 참조)에 저장 됩니다. 각 그룹 별도로 애니메이션을 적용할 수 있으며 스토리 보드와 유사 하 게 처리할 수 있습니다. 애니메이션 개체에는 하나 이상의 애니메이션 변수 (CAnimationVariable 참조), 논리적 표현에 따라 캡슐화 합니다. 예를 들어 CAnimationRect 네 가지 애니메이션 변수-사각형의 각 측면에 대해 하나의 변수를 포함합니다. 각 애니메이션 개체 클래스에는 전환을 캡슐화 된 애니메이션 변수를 적용할 사용 해야 하는 오버 로드 된 AddTransition 메서드를 노출 합니다. 애니메이션 개체 식별할 수 있습니다 개체 ID (선택 사항) 및 그룹 id입니다. 그룹 ID가 올바른 그룹을 애니메이션 개체를 배치 하는 데 필요한 있지만 그룹 ID를 지정 하지 않으면 하는 경우 개체 ID가 0 인 기본 그룹에 놓입니다. 다른 그룹 Id 사용 하 여 SetID를 호출 하는 경우 애니메이션 개체 (새 그룹을 필요한 경우에 생성 됩니다)는 다른 그룹으로 이동 됩니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -126,7 +126,7 @@ class CAnimationBaseObject : public CObject;
 
 **헤더:** afxanimationcontroller.h
 
-##  <a name="_dtorcanimationbaseobject"></a>  CAnimationBaseObject:: ~ CAnimationBaseObject
+##  <a name="_dtorcanimationbaseobject"></a>  CAnimationBaseObject::~CAnimationBaseObject
 
 소멸자입니다. 애니메이션 개체 소멸 될 때 호출 됩니다.
 
@@ -315,7 +315,7 @@ virtual void GetAnimationVariableList(
 
 ### <a name="remarks"></a>설명
 
-이는 순수 가상 메서드가 파생된 클래스에서 재정의 해야 합니다. 애니메이션 개체의 형식에 따라 하나 이상의 애니메이션 변수를 포함합니다. 예를 들어 CAnimationPoint X 및 Y 좌표를 각각에 대 한 두 개의 변수를 포함 합니다. 애니메이션 변수 목록에서 작동 하는 일부 제네릭 메서드를 구현 하는 기본 클래스 CAnimationBaseObject: ApplyTransitions, ClearTransitions, EnableValueChangedEvent EnableIntegerValueChangedEvent 합니다. 이러한 메서드 GetAnimationVariableList 채워지는 파생된 클래스에서 특정 애니메이션 개체에 포함 하는 실제 애니메이션 변수, 호출 되어 목록 반복 하 고 필요한 작업을 수행 합니다. 사용자 지정 애니메이션 개체를 만든 경우 해당 개체에 포함 된 모든 애니메이션 변수에 lst에 추가 해야 있습니다.
+이는 순수 가상 메서드가 파생된 클래스에서 재정의 해야 합니다. 애니메이션 개체의 형식에 따라 하나 이상의 애니메이션 변수를 포함합니다. 예를 들어 CAnimationPoint X 및 Y 좌표를 각각에 대 한 두 개의 변수를 포함 합니다. 기본 클래스 CAnimationBaseObject 애니메이션 변수 목록에서 작동 하는 일부 제네릭 메서드를 구현 합니다. ApplyTransitions, ClearTransitions, EnableValueChangedEvent, EnableIntegerValueChangedEvent. 이러한 메서드 GetAnimationVariableList 채워지는 파생된 클래스에서 특정 애니메이션 개체에 포함 하는 실제 애니메이션 변수, 호출 되어 목록 반복 하 고 필요한 작업을 수행 합니다. 사용자 지정 애니메이션 개체를 만든 경우 해당 개체에 포함 된 모든 애니메이션 변수에 lst에 추가 해야 있습니다.
 
 ##  <a name="getautodestroytransitions"></a>  CAnimationBaseObject::GetAutodestroyTransitions
 
@@ -489,6 +489,6 @@ void SetUserData (DWORD dwUserData);
 
 애니메이션 개체를 사용 하 여 사용자 지정 데이터를 연결 하려면이 메서드를 사용 합니다. 이 데이터 GetUserData 하 여 런타임 시 나중에 검색할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

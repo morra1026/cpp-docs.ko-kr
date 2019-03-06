@@ -4,12 +4,12 @@ ms.date: 09/12/2018
 helpviewer_keywords:
 - ActiveX control containers [MFC], application support
 ms.assetid: 5ff0bf37-07f4-49aa-ad9c-c63d3756243a
-ms.openlocfilehash: 3b0ec605fd6e30033e303ff61872734136cfb73b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 23cd9e41ee704327728322f869e67d1a2d0c6cd9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441914"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279824"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX 컨트롤에 대한 컨테이너
 
@@ -53,7 +53,6 @@ ActiveX 컨트롤 포함을 지 원하는 응용 프로그램에는 다음이 �
 
 - NCompass Netscape Navigator에 대 한 플러그 인
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ActiveX 컨트롤 컨테이너](../mfc/activex-control-containers.md)
-

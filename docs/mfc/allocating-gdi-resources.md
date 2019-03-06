@@ -6,12 +6,12 @@ helpviewer_keywords:
 - GDI objects [MFC], allocating during printing
 - printing [MFC], allocating GDI resources
 ms.assetid: cef7e94d-5a27-4aea-a9ee-8369fc895d3a
-ms.openlocfilehash: d637d524d37dc466e15aed3b571cccf24c18216d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5f5f6c6585217393a6008fafa875a83e67ab8016
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505731"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305005"
 ---
 # <a name="allocating-gdi-resources"></a>GDI 리소스 할당
 
@@ -28,8 +28,7 @@ ms.locfileid: "50505731"
 
 이러한 GDI 개체 할당을 취소 하려면 재정의 [OnEndPrinting](../mfc/reference/cview-class.md#onendprinting) 멤버 함수입니다. 각 인쇄 작업이 끝날 때 프레임워크에서 이 함수를 호출하여, 응용 프로그램이 다른 작업에 반환되기 전에 인쇄와 관련된 GDI 개체 할당을 취소할 수 있는 기회를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [인쇄](../mfc/printing.md)<br/>
 [기본 인쇄가 수행되는 방법](../mfc/how-default-printing-is-done.md)
-

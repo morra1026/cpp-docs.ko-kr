@@ -1,19 +1,19 @@
 ---
-title: MFC 응용 프로그램 마법사, 응용 프로그램 종류
+title: MFC 애플리케이션 마법사, 애플리케이션 종류
 ms.date: 11/04/2016
 f1_keywords:
 - vc.appwiz.mfc.exe.apptype
 helpviewer_keywords:
 - static libraries, MFC
 ms.assetid: c3f62b0e-3f13-42c5-9859-d3890d0c3e1d
-ms.openlocfilehash: 79f620766e8d0888e606fcb45a0fd02c9de58fc9
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: de23c59fdb59f6f40e256589c5450a8118bb8e5c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51522598"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57281254"
 ---
-# <a name="application-type-mfc-application-wizard"></a>MFC 응용 프로그램 마법사, 응용 프로그램 종류
+# <a name="application-type-mfc-application-wizard"></a>MFC 애플리케이션 마법사, 애플리케이션 종류
 
 이 페이지를 사용 합니다 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md) 디자인 하 고 새 MFC 응용 프로그램에 기본 기능을 추가 합니다.
 
@@ -98,7 +98,7 @@ ms.locfileid: "51522598"
   |**공유 DLL에서 MFC 사용**|MFC 라이브러리를 공유 DLL로 응용 프로그램에 연결합니다. 응용 프로그램에서는 런타임에 MFC 라이브러리를 호출 합니다. 이 옵션에는 MFC 라이브러리를 사용 하는 여러 실행 파일의 구성 된 응용 프로그램의 디스크 및 메모리 요구 사항이 줄어듭니다. MFC 및 Win32 응용 프로그램 (기본값) DLL의 함수를 호출할 수 있습니다.|
   |**정적 라이브러리에서 MFC 사용**|빌드 시 정적 MFC 라이브러리에 응용 프로그램을 연결합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 응용 프로그램 마법사](../../mfc/reference/mfc-application-wizard.md)<br/>
 [Visual C++ 프로젝트용 파일 형식](../../ide/file-types-created-for-visual-cpp-projects.md)

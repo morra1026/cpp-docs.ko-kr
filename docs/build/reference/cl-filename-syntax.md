@@ -11,12 +11,12 @@ helpviewer_keywords:
 - file names [C++], CL compiler
 - file names [C++]
 ms.assetid: 3ca72586-75be-4477-b323-a1be232e80d4
-ms.openlocfilehash: 929096ed169a33e0876c3afb68f3594757d61e4e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d2dd51370fd346c4cd7dad7bb97bfa76a9f759d9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50438937"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420728"
 ---
 # <a name="cl-filename-syntax"></a>CL 파일 이름 구문
 
@@ -24,6 +24,6 @@ CL은 FAT, HPFS 또는 NTFS 명명 규칙을 따르는 이름이 지정된 파�
 
 파일 이름 확장명에 따라 파일 처리 방법이 결정됩니다. 확장명이 .c, .cxx 또는 .cpp인 C 파일 및 C++ 파일은 컴파일됩니다. .obj 파일, 라이브러리(.lib) 및 모듈 정의(.def) 파일은 처리되지 않고 링커로 전달됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 명령줄 구문](../../build/reference/compiler-command-line-syntax.md)

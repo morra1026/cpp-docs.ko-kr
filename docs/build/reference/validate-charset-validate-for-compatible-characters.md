@@ -7,12 +7,12 @@ f1_keywords:
 helpviewer_keywords:
 - /validate-charset compiler option
 ms.assetid: 50360fd0-4d32-4a4f-95d0-53d38c12ad4c
-ms.openlocfilehash: 69b43b603ef4711e1acc0bd612e0e1c949722dc9
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: ca7724922fa579087cf4c6c1790819dc539112a5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850080"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423939"
 ---
 # <a name="validate-charset-validate-for-compatible-characters"></a>/validate-charset (호환 문자에 대 한 유효성 검사)
 
@@ -42,7 +42,7 @@ Visual Studio는 소스 문자 집합과 실행 문자 집합 변환 시 내부 
 
 1. **확인**을 선택하여 변경 내용을 저장합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>

@@ -14,12 +14,12 @@ helpviewer_keywords:
 - defaults [C++], libraries
 - .lib files
 ms.assetid: dc5d2b1c-2487-41fa-aa71-ad1e0647958b
-ms.openlocfilehash: 0bf791d682b66d9d0da968fb0bfd5229e912e84c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f3b2ae0d82e682cc89243b7b527ee6e0b51d4c3d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505351"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426773"
 ---
 # <a name="lib-files-as-linker-input"></a>링커 입력 파일로 사용하는 .Lib 파일
 
@@ -37,7 +37,7 @@ ms.locfileid: "50505351"
 
 ## <a name="to-programmatically-add-lib-files-as-linker-input"></a>프로그래밍 방식으로 링커 입력 파일로.lib 파일을 추가 하려면
 
-- 참조 [AdditionalDependencies](https://msdn.microsoft.com/library/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies.aspx)합니다.
+- 참조 [AdditionalDependencies](/dotnet/api/microsoft.visualstudio.vcprojectengine.vclinkertool.additionaldependencies)합니다.
 
 ## <a name="example"></a>예제
 
@@ -67,7 +67,7 @@ int main() {
 213
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LINK 입력 파일](../../build/reference/link-input-files.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

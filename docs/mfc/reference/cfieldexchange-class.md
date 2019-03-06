@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CFieldExchange [MFC], IsFieldType
 - CFieldExchange [MFC], SetFieldType
 ms.assetid: 24c5c0b3-06a6-430e-9b6f-005a2c65e29f
-ms.openlocfilehash: e039a2deaf3372af5daac8fddd8f3a0672719f88
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e66b3ed16d4f21d46567c37bfaf7929d32f63b8e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588229"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294982"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange 클래스
 
@@ -55,9 +55,9 @@ class CFieldExchange
 
 - `CFieldExchange::inoutParam` 입/출력 매개 변수 데이터 멤버에 있습니다.
 
-대부분의 클래스 멤버 함수 및 데이터 멤버는 사용자 고유의 사용자 지정 RFX 루틴을 작성 하기 위한 제공 됩니다. 사용 하 여 `SetFieldType` 경우가 많습니다. 자세한 내용은 문서를 참조 하세요 [Exchange RFX (레코드 필드)](../../data/odbc/record-field-exchange-rfx.md) 하 고 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)합니다. 대량 행 페치에 대 한 자세한 내용은 문서 참조 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다. RFX 및 대량 RFX 전역 함수에 대 한 자세한 내용은 참조 하세요 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md) 이 참조의 MFC 매크로 및 전역 섹션에 있습니다.
+대부분의 클래스 멤버 함수 및 데이터 멤버는 사용자 고유의 사용자 지정 RFX 루틴을 작성 하기 위한 제공 됩니다. 사용 하 여 `SetFieldType` 경우가 많습니다. 자세한 내용은 문서를 참조 하세요 [Exchange RFX (레코드 필드)](../../data/odbc/record-field-exchange-rfx.md) 하 고 [레코드 집합 (ODBC)](../../data/odbc/recordset-odbc.md)합니다. 대량 행 페치에 대 한 자세한 내용은 문서를 참조 하세요. [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다. RFX 및 대량 RFX 전역 함수에 대 한 자세한 내용은 참조 하세요 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md) 이 참조의 MFC 매크로 및 전역 섹션에 있습니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CFieldExchange`
 
@@ -124,7 +124,7 @@ void SetFieldType(UINT nFieldType);
 
 일반적으로 필드 데이터 멤버 또는 매개 변수 데이터 멤버와 연결 된 RFX 함수 호출의 각 그룹 뒤에 야 호출 `SetFieldType`합니다. *nFieldType* 각각의 매개 변수 `SetFieldType` 호출에 따르는 RFX 함수 호출을 나타내는 데이터 멤버의 형식을 식별 하는 `SetFieldType` 호출 합니다.
 
-출력 및 입/출력 매개 변수를 처리 하는 방법에 대 한 자세한 내용은 참조는 `CRecordset` 멤버 함수 [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset)합니다. RFX 및 대량 RFX 함수에 대 한 자세한 내용은 항목을 참조 하세요 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md)합니다. 대량 행 페치에 대 한 관련된 정보에 대 한 문서를 참조 [레코드 집합: 레코드 페치 대량 (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
+출력 및 입/출력 매개 변수를 처리 하는 방법에 대 한 자세한 내용은 참조는 `CRecordset` 멤버 함수 [FlushResultSet](../../mfc/reference/crecordset-class.md#flushresultset)합니다. RFX 및 대량 RFX 함수에 대 한 자세한 내용은 항목을 참조 하세요 [레코드 필드 교환 함수](../../mfc/reference/record-field-exchange-functions.md)합니다. 대량 행 페치에 대 한 관련된 정보에 대 한 문서를 참고 [레코드 집합: (ODBC) 대량 레코드 페치](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -132,7 +132,7 @@ void SetFieldType(UINT nFieldType);
 
 [!code-cpp[NVC_MFCDatabase#33](../../mfc/codesnippet/cpp/cfieldexchange-class_1.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CRecordset 클래스](../../mfc/reference/crecordset-class.md)

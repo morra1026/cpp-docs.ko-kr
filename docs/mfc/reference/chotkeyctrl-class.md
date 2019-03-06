@@ -22,12 +22,12 @@ helpviewer_keywords:
 - CHotKeyCtrl [MFC], SetHotKey
 - CHotKeyCtrl [MFC], SetRules
 ms.assetid: 896f9766-0718-4f58-aab2-20325e118ca6
-ms.openlocfilehash: 0b673c873f773844c13894d3f0448536f297dc53
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 66edc7d4a1b4c78480da7d11cf30f7feeecefe2c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894512"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417387"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl 클래스
 
@@ -71,7 +71,7 @@ class CHotKeyCtrl : public CWnd
 
 사용 하 여 대 한 자세한 내용은 `CHotKeyCtrl`를 참조 하세요 [컨트롤](../../mfc/controls-mfc.md) 하 고 [CHotKeyCtrl 사용 하 여](../../mfc/using-chotkeyctrl.md).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -151,7 +151,7 @@ virtual BOOL CreateEx(
 바로 가기 키 컨트롤의 스타일을 지정합니다. 컨트롤 스타일의 조합을 적용 됩니다. 자세한 내용은 [공용 컨트롤 스타일](/windows/desktop/Controls/common-control-styles) Windows SDK의 합니다.
 
 *rect*<br/>
-에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
+에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 크기와의 클라이언트 좌표에서 만든 창의 위치를 설명 하는 구조 *pParentWnd*합니다.
 
 *pParentWnd*<br/>
 컨트롤의 부모 창에 대 한 포인터입니다.
@@ -319,8 +319,7 @@ void SetRules(
 
 에 지정 된 플래그를 통해 정의 된 대로 사용자가 잘못 된 키 조합을 입력 하는 경우 *wInvalidComb*, 시스템 OR 연산자를 사용 하 여 플래그를 지정 하 여 사용자가 입력 한 키를 결합 *wModifiers*. 결과 키 조합은 문자열로 변환 되 고 바로 가기 키 컨트롤에 표시 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CWnd 클래스](../../mfc/reference/cwnd-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)
-

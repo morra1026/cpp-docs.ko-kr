@@ -6,12 +6,12 @@ helpviewer_keywords:
 - NMAKE program, dependents
 - dependents, NMAKE
 ms.assetid: 0a7b4499-ac6e-4c99-a304-027dd3818ab2
-ms.openlocfilehash: d3a009af72168403a8066866484f79d94395772e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9d2397783797e55e5a301ae3a16d7dcf65109b93
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50561293"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420533"
 ---
 # <a name="dependents"></a>종속 파일
 
@@ -23,6 +23,6 @@ ms.locfileid: "50561293"
 
 [종속 항목에 대 한 검색 경로](../build/search-paths-for-dependents.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [설명 블록](../build/description-blocks.md)

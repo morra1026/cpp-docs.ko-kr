@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Windows API [C++], attaching MS-DOS stub program
 - -STUB linker option
 ms.assetid: 65221ffe-4f9a-4a14-ac69-3cfb79b40b5f
-ms.openlocfilehash: 289812ce8c6167a82204946c0a362ccad6896a39
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d349151654d9699bcf00aa3848798acb5104ba53
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50642639"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57421547"
 ---
 # <a name="stub-ms-dos-stub-file-name"></a>/STUB(MS-DOS 스텁 파일 이름)
 
@@ -60,7 +60,7 @@ This program cannot be run in MS-DOS mode.
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

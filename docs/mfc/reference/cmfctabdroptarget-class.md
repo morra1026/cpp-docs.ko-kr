@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMFCTabDropTarget [MFC], OnDropEx
 - CMFCTabDropTarget [MFC], Register
 ms.assetid: 9777b7b6-10da-4c4b-b1d1-7ea795b0f1cb
-ms.openlocfilehash: bd68179be21fec85c0ebb901c2a8c9a4491ff401
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8b24d7679edfaab4d4eeb6d59770f30cd4253580
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50534830"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57303939"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget 클래스
 
@@ -98,8 +98,8 @@ virtual DROPEFFECT OnDragEnter(
 |매개 변수|설명|
 |*pWnd*|[in] 사용 되지 않습니다.|
 |*pDataObject*|[in] 끌 개체에 대 한 포인터입니다.|
-|*dwKeyState*|[in] 보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.|
-|*지점*|[in] 클라이언트 좌표에서 커서의 위치입니다.|
+|*dwKeyState*|[in] 보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.|
+|*point*|[in] 클라이언트 좌표에서 커서의 위치입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -159,8 +159,8 @@ virtual DROPEFFECT OnDragOver(
 |매개 변수|설명|
 |*pWnd*|[in] 사용 되지 않습니다.|
 |*pDataObject*|[in] 끌 개체에 대 한 포인터입니다.|
-|*dwKeyState*|[in] 보조키의 상태를 포함합니다. 이 임의 개수의 다음의 조합: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.|
-|*지점*|[in] 클라이언트 좌표로 나타낸에서 마우스 포인터의 위치입니다.|
+|*dwKeyState*|[in] 보조키의 상태를 포함합니다. 다음은 개수에 관계 없이 다음의 조합입니다. MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON, 및 MK_RBUTTON 합니다.|
+|*point*|[in] 클라이언트 좌표로 나타낸에서 마우스 포인터의 위치입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -203,8 +203,8 @@ virtual DROPEFFECT OnDropEx(
 |*pWnd*|[in] 사용 되지 않습니다.|
 |*pDataObject*|[in] 끌 개체에 대 한 포인터입니다.|
 |*dropEffect*|[in] 기본 삭제 작업입니다.|
-|*드롭다운 목록*|[in] 사용 되지 않습니다.|
-|*지점*|[in] 클라이언트 좌표로 나타낸에서 마우스 포인터의 위치입니다.|
+|*dropList*|[in] 사용 되지 않습니다.|
+|*point*|[in] 클라이언트 좌표로 나타낸에서 마우스 포인터의 위치입니다.|
 
 ### <a name="return-value"></a>반환 값
 
@@ -249,9 +249,8 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 
 이 메서드를 호출 [COleDropTarget::Register](../../mfc/reference/coledroptarget-class.md#register) 끌어서 놓기 작업에 대 한 컨트롤을 등록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
 [끌어서 놓기(OLE)](../../mfc/drag-and-drop-ole.md)
-

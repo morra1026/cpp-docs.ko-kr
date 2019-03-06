@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CreateRowset method
 - OpenRowset method
 ms.assetid: d259cedc-1db4-41cf-bc9f-5030907ab486
-ms.openlocfilehash: 437f78636d1fa75f5bb8e4304a347dc3b554c34d
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 3d4f778f560b55f22c1c54185bea79af07949ceb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556265"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422760"
 ---
 # <a name="iopenrowsetimpl-class"></a>IOpenRowsetImpl 클래스
 
@@ -52,11 +52,11 @@ class IOpenRowsetImpl : public IOpenRowset
 
 ## <a name="remarks"></a>설명
 
-합니다 [IOpenRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms716946(v=vs.85)) 인터페이스는 세션 개체에 대 한 필수입니다. 열고 단일 기본 테이블 또는 인덱스에서 모든 행이 포함 된 행 집합을 반환 합니다.
+합니다 [IOpenRowset](/previous-versions/windows/desktop/ms716946(v=vs.85)) 인터페이스는 세션 개체에 대 한 필수입니다. 열고 단일 기본 테이블 또는 인덱스에서 모든 행이 포함 된 행 집합을 반환 합니다.
 
-## <a name="createrowset"></a> Iopenrowsetimpl:: Createrowset
+## <a name="createrowset"></a> IOpenRowsetImpl::CreateRowset
 
-행 집합 개체를 만듭니다. 사용자가 직접 호출 되지 않습니다. 참조 [iopenrowset:: Openrowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
+행 집합 개체를 만듭니다. 사용자가 직접 호출 되지 않습니다. 참조 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
 
 ### <a name="syntax"></a>구문
 
@@ -80,9 +80,9 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 *pRowsetObj*<br/>
 [out] 행 집합 개체에 대 한 포인터입니다. 일반적으로이 매개 변수는 사용 되지 않지만 COM 개체를 전달 하기 전에 행 집합에서 더 많은 작업을 수행 해야 하는 경우 사용할 수 있습니다. 수명을 *pRowsetObj* 바인딩된 *ppRowset*합니다.
 
-다른 매개 변수를 참조 하세요 [iopenrowset:: Openrowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
+다른 매개 변수를 참조 하세요 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
 
-## <a name="openrowset"></a> Iopenrowsetimpl:: Openrowset
+## <a name="openrowset"></a> IOpenRowsetImpl::OpenRowset
 
 페이지를 열고 단일 기본 테이블 또는 인덱스에서 모든 행이 포함 된 행 집합을 반환 합니다.
 
@@ -100,7 +100,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [iopenrowset:: Openrowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [iopenrowset:: Openrowset](/previous-versions/windows/desktop/ms716724(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 

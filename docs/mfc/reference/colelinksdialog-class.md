@@ -12,12 +12,12 @@ helpviewer_keywords:
 - COleLinksDialog [MFC], DoModal
 - COleLinksDialog [MFC], m_el
 ms.assetid: fb2eb638-2809-46db-ac74-392a732affc7
-ms.openlocfilehash: fa32236dfdaef0966dca0e2f131e6adace747f10
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c5069bc63d61016e6f3c2f983de23901b9f35814
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50502966"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301417"
 ---
 # <a name="colelinksdialog-class"></a>COleLinksDialog 클래스
 
@@ -60,7 +60,7 @@ class COleLinksDialog : public COleDialog
 
 OLE 관련 대화 상자에 대 한 자세한 내용은 문서 참조 [OLE의 대화 상자](../../mfc/dialog-boxes-in-ole.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -116,7 +116,7 @@ COleLinksDialog (
 
 ### <a name="parameters"></a>매개 변수
 
-*입력*<br/>
+*pDoc*<br/>
 편집 링크를 포함 하는 OLE 문서를 가리킵니다.
 
 *pView*<br/>
@@ -146,7 +146,7 @@ OLEUIEDITLINKS m_el;
 
 자세한 내용은 참조는 [OLEUIEDITLINKS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuieditlinksa) Windows SDK에는 구조입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COleDialog 클래스](../../mfc/reference/coledialog-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

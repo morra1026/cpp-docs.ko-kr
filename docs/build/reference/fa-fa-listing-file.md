@@ -16,12 +16,12 @@ helpviewer_keywords:
 - listing file type
 - assembly-only listing
 ms.assetid: c7507d0e-c69d-44f9-b8e2-d2c398697402
-ms.openlocfilehash: 6bb5e18c5a174c9e48b253031daad195e6132375
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 610c94646b82783a49ca6de6bc443e99a3c137bc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50507304"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420910"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa(목록 파일)
 
@@ -29,7 +29,7 @@ ms.locfileid: "50507304"
 
 ## <a name="syntax"></a>구문
 
-> **/FA**[**c**\][**s**\][**u**] **/Fa**_경로 이름_
+> **/FA**[**c**\][**s**\][**u**] **/Fa**_pathname_
 
 ## <a name="remarks"></a>설명
 
@@ -64,13 +64,13 @@ ms.locfileid: "50507304"
 *filename.extension*<br/>
 목록 파일인 *filename.extension* 현재 디렉터리에 배치 됩니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
-*디렉터리*__\\__<br/>
+*directory*__\\__<br/>
 하나의 *source_file*.asm 파일을 만들고 지정 된 배치 *directory* 컴파일할 때 각 소스 코드 파일에 대 한 합니다. 필요한 후행 백슬래시를 note 합니다. 현재 디스크에 대 한 경로만 허용 됩니다.
 
-*디렉터리*__\\__*파일 이름*<br/>
+*directory*__\\__*filename*<br/>
 목록 파일 이름이 *filename*.asm 위치한 지정 된 *디렉터리*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
-*디렉터리*__\\__*filename.extension*<br/>
+*directory*__\\__*filename.extension*<br/>
 목록 파일 이름이 *filename.extension* 위치한 지정 된 *directory*합니다. 이 단일 소스 코드 파일을 컴파일할 때에 유효 합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
@@ -85,7 +85,8 @@ ms.locfileid: "50507304"
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>을 참조하십시오. 지정할 **하려면 /FAu**를 참조 하세요 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>합니다.
+- 
+  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> 또는 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>을 참조하십시오. 지정할 **하려면 /FAu**를 참조 하세요 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>합니다.
 
 ## <a name="example"></a>예제
 
@@ -95,7 +96,7 @@ ms.locfileid: "50507304"
 CL /FAcs HELLO.CPP
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [출력 파일(/F) 옵션](../../build/reference/output-file-f-options.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>

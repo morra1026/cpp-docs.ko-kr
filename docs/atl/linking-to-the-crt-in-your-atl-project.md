@@ -12,12 +12,12 @@ helpviewer_keywords:
 - wWinMainCRTStartup method
 - ATL, C Run-Time library (CRT)
 ms.assetid: 650957ae-362c-4ecf-8b03-5d49138e8b5b
-ms.openlocfilehash: fc8c3c591b04d62c6dd7cf72bedde7a668e9f146
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b117165c82e51a59fe691b90f8ef92d0ba802cbc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50516459"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57287949"
 ---
 # <a name="linking-to-the-crt-in-your-atl-project"></a>ATL 프로젝트에서 CRT에 연결
 
@@ -35,8 +35,7 @@ ms.locfileid: "50516459"
 
 / Opt:nowin98 링커 옵션을 사용 하 여 더 줄일 수 있습니다을 10k 기본 ATL 컨트롤 복제할지 Windows 98 시스템으로 로드 증가 합니다. 연결 옵션에 대 한 자세한 내용은 참조 하세요. [/OPT (최적화)](../build/reference/opt-optimizations.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL 및 C 런타임 코드를 사용한 프로그래밍](../atl/programming-with-atl-and-c-run-time-code.md)<br/>
 [DLL 및 Visual C++ 런타임 라이브러리 동작](../build/run-time-library-behavior.md)
-

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - image lists [MFC], drawing images from
 - images [MFC], drawing
 ms.assetid: 2f6063fb-1c28-45f8-a333-008c064db11c
-ms.openlocfilehash: 2ed309ec4a6e58fbc4a900bc541a80004d6be3d0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e2058c727620c9aae4ccd9a3fbeaae02c78ce8c6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490560"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57260532"
 ---
 # <a name="drawing-images-from-an-image-list"></a>이미지 목록에서 이미지 그리기
 
@@ -30,8 +30,7 @@ ms.locfileid: "50490560"
 
 멤버 함수 Draw에 다른 함수 외에도 [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect), 이미지를 렌더링 하는 기능을 확장 합니다. `DrawIndirect` 매개 변수로 사용 된 [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) 구조입니다. 래스터 연산 (ROP) 코드의 사용을 포함 하 여 현재 이미지의 렌더링을 사용자 지정이 구조를 사용할 수 있습니다. ROP 코드에 대 한 자세한 내용은 참조 하세요. [래스터 연산 코드](/windows/desktop/gdi/raster-operation-codes) 하 고 [브러시로 비트맵](/windows/desktop/gdi/bitmaps-as-brushes) Windows SDK에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CImageList 사용](../mfc/using-cimagelist.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

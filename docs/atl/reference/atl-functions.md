@@ -5,12 +5,12 @@ helpviewer_keywords:
 - functions [ATL]
 - ATL, global functions
 ms.assetid: 69db0cb2-de1d-445b-b692-020d6e8c2173
-ms.openlocfilehash: 5cf56d21be605094c3ae812bd7aa39b573d2b733
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9f0c6ccaa049290d3e183ae682c19ab7e497c2b8
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50564920"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57261741"
 ---
 # <a name="atl-functions"></a>ATL 함수
 
@@ -31,7 +31,7 @@ COM 맵에 대 한 지원을 제공 `IUnknown` 구현 합니다.
 [디버깅 및 오류 보고 전역 함수](../../atl/reference/debugging-and-error-reporting-global-functions.md)<br/>
 유용한 디버깅 및 추적 기능을 제공 합니다.
 
-[장치 컨텍스트 전역 함수](../../atl/reference/device-context-global-functions.md)<br/>
+[디바이스 컨텍스트 전역 함수](../../atl/reference/device-context-global-functions.md)<br/>
 지정된 된 장치에 대 한 장치 컨텍스트를 만듭니다.
 
 [이벤트 처리 전역 함수](../../atl/reference/event-handling-global-functions.md)<br/>
@@ -58,7 +58,7 @@ SID 및 ACL 개체를 수정 하기 위한 지원을 제공 합니다.
 [WinModule 전역 함수](../../atl/reference/winmodule-global-functions.md)<br/>
 에 대 한 지원 `_AtlCreateWndData` 작업을 구성 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATL COM 데스크톱 구성 요소](../../atl/atl-com-desktop-components.md)<br/>
 [매크로](../../atl/reference/atl-macros.md)<br/>

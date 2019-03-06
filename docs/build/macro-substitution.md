@@ -6,12 +6,12 @@ helpviewer_keywords:
 - macros, NMAKE
 - substitution macros in NMAKE
 ms.assetid: 47465cfe-fd92-49db-aebe-7c2d7ecceb73
-ms.openlocfilehash: 8daaa55418839fa969cf3a31efa092fcf21487e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d82aed5a34b7cafad0e40146470972dc6ff02424
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50616088"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414683"
 ---
 # <a name="macro-substitution"></a>매크로 대체
 
@@ -29,6 +29,6 @@ $(macroname:string1=string2)
 
 공백 또는 탭 앞에 콜론; 콜론 after 리터럴로 해석 됩니다. 하는 경우 *string2* 가 null 인 모든 *string1* 매크로 정의 문자열에서 삭제 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMAKE 매크로 사용](../build/using-an-nmake-macro.md)

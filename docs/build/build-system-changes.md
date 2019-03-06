@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Build system changes, $(Inherit)
 - Build system changes, $(NoInherit)
 ms.assetid: e564d95f-a6cc-4d97-b57e-1a71daf66f4a
-ms.openlocfilehash: a7a98c864a1d0bf617ebf4ededea5e1a59a1af31
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 742b018ae96ff706336a81b49e1d8e5fb954d9b7
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50437156"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425447"
 ---
 # <a name="build-system-changes"></a>빌드 시스템 변경 사항
 
@@ -60,7 +60,7 @@ Property=<value>;$(MyProperty)
 
 사용자 파일 (. vcxproj.user) 예제, 디버깅 및 배포 설정에 대 한 사용자별 속성을 저장 합니다. Vcxproj.user 파일 특정 사용자에 대해 모든 프로젝트에 적용 됩니다.
 
-## <a name="vcxprojfilters-file"></a>. vcxproj.filters 파일
+## <a name="vcxprojfilters-file"></a>.vcxproj.filters File
 
 때 **솔루션 탐색기** 필터 파일을 프로젝트에 파일을 추가 하는 데 사용 됩니다 (. vcxproj.filters) 위치를 정의 합니다 **솔루션 탐색기** 트리 보기는 파일이 추가 되는 파일 이름 확장명에 따라 합니다.
 
@@ -72,6 +72,6 @@ Visual C++ 디렉터리 설정에 지정 된 된 [VC++ Directories Property Page
 
 Visual C++의 이전 버전에서 만든.vssettings 파일의 VC++ 디렉터리 설정을 마이그레이션하십시오. 엽니다는 **도구** 메뉴에서 클릭 **설정 가져오기 및 내보내기**를 선택 **선택한 환경 설정 가져오기**, 마법사의 지시에 따릅니다. 처음으로 Visual Studio을 시작 하는 경우 또는 합니다 **기본 환경 설정 선택** 대화 상자에서 **이전 버전에서 적합 한 설정을 마이그레이션한 및 기본 설정 외에도 적용 아래 선택한**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSBuild(Visual C++)](../build/msbuild-visual-cpp.md)

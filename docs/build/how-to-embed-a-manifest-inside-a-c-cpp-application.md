@@ -1,19 +1,19 @@
 ---
-title: '방법: C/C++ 응용 프로그램에 매니페스트 포함'
+title: '방법: C/c + + 응용 프로그램에 매니페스트 포함'
 ms.date: 11/04/2016
 helpviewer_keywords:
 - manifests [C++]
 - embedding manifests
 - makefiles, updating to embed manifest
 ms.assetid: ec0bac69-2fdc-466c-ab0d-710a22974e5d
-ms.openlocfilehash: c3557d22f51207687c6c0adde80b4cd5b3293afd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: b1bff23c91b465d697cc52a2b893ece5be3764b1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624868"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412902"
 ---
-# <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>방법: C/C++ 응용 프로그램에 매니페스트 포함
+# <a name="how-to-embed-a-manifest-inside-a-cc-application"></a>방법: C/c + + 응용 프로그램에 매니페스트 포함
 
 C/c + + 응용 프로그램 (또는 라이브러리)이 대부분의 시나리오에서 올바른 런타임 동작을 보장 하므로 최종 이진 포함 된 매니페스트는 것이 좋습니다. 기본적으로 Visual Studio 소스 파일에서 프로젝트를 빌드할 때 매니페스트를 포함 하려고 참조 [Visual Studio에서 매니페스트 생성](../build/manifest-generation-in-visual-studio.md) 자세한 내용은 합니다. 그러나를 nmake를 사용 하 여 응용 프로그램을 빌드하는 경우 일부 기존 메이크파일으로 변경이 필요 합니다. 이 섹션에서는 자동으로 최종 이진에는 매니페스트를 포함 하도록 기존 메이크파일을 변경 하는 방법에 설명 합니다.
 
@@ -23,11 +23,11 @@ C/c + + 응용 프로그램 (또는 라이브러리)이 대부분의 시나리�
 
 - 증분 빌드를 수행 하지 않습니다 하는 경우 빌드 후 단계로 다음과 같은 명령줄을 사용 하 여 매니페스트를 직접 포함할 수 있습니다.
 
-   **mt.exe-MyApp.exe.manifest 매니페스트-outputresource:MyApp.exe;1**
+   **mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1**
 
    또는
 
-   **mt.exe-MyLibrary.dll.manifest 매니페스트-outputresource:MyLibrary.dll;2**
+   **mt.exe -manifest MyLibrary.dll.manifest -outputresource:MyLibrary.dll;2**
 
    (exe, DLL에 대 한 2 1.)
 
@@ -253,6 +253,6 @@ $(_VC_MANIFEST_BASENAME).auto.manifest :
 # end of makefile.targ.inc
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ 프로그램의 매니페스트 생성 이해](../build/understanding-manifest-generation-for-c-cpp-programs.md)

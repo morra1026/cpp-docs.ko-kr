@@ -6,18 +6,18 @@ helpviewer_keywords:
 - Windows common controls [MFC], about common controls
 - common controls [MFC], about common controls
 ms.assetid: a252acad-3cc0-440e-bbc6-43eaaf8cb7bb
-ms.openlocfilehash: 7a526c56c15d3e61f63b0def6d462d22b3560169
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6a31c783e19603eadb90fd0e6be99ff55f4eaeb7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498356"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57293513"
 ---
 # <a name="making-and-using-controls"></a>컨트롤 만들기 및 사용
 
 Visual c + +에서 대화 상자에 대 한 대부분의 컨트롤을 만들 [대화 상자 편집기](../windows/dialog-editor.md)합니다. 하지만 모든 대화 상자 또는 창에서 컨트롤을 만들 수도 있습니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [대화 상자에서 공용 컨트롤 사용](../mfc/using-common-controls-in-a-dialog-box.md)
 
@@ -41,7 +41,6 @@ Visual c + +에서 대화 상자에 대 한 대부분의 컨트롤을 만들 [�
 
 - [대화 상자 모음](../mfc/dialog-bars.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

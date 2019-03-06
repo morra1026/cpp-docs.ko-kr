@@ -24,12 +24,12 @@ helpviewer_keywords:
 - CD2DMesh [MFC], Open
 - CD2DMesh [MFC], m_pMesh
 ms.assetid: 11a2c78a-1367-40e8-a34f-44aa0509a4c9
-ms.openlocfilehash: 1cc1769f66b54f2a9a23ef9ad94298687fe4d925
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f4ad6fd054eeb8576c2fdb2dc924f70034b3abad
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50445645"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275122"
 ---
 # <a name="cd2dmesh-class"></a>CD2DMesh 클래스
 
@@ -48,7 +48,7 @@ class CD2DMesh : public CD2DResource;
 |이름|설명|
 |----------|-----------------|
 |[CD2DMesh::CD2DMesh](#cd2dmesh)|CD2DMesh 개체를 생성합니다.|
-|[CD2DMesh:: ~ CD2DMesh](#_dtorcd2dmesh)|소멸자입니다. D2D 메시 개체 소멸 될 때 호출 됩니다.|
+|[CD2DMesh::~CD2DMesh](#_dtorcd2dmesh)|소멸자입니다. D2D 메시 개체 소멸 될 때 호출 됩니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -66,7 +66,7 @@ class CD2DMesh : public CD2DResource;
 
 |이름|설명|
 |----------|-----------------|
-|[CD2DMesh::operator ID2D1Mesh *](#operator_id2d1mesh_star)|반환 ID2D1Mesh 인터페이스|
+|[CD2DMesh::operator ID2D1Mesh*](#operator_id2d1mesh_star)|반환 ID2D1Mesh 인터페이스|
 
 ### <a name="protected-data-members"></a>보호된 데이터 멤버
 
@@ -74,7 +74,7 @@ class CD2DMesh : public CD2DResource;
 |----------|-----------------|
 |[CD2DMesh::m_pMesh](#m_pmesh)|ID2D1Mesh 포인터입니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -86,7 +86,7 @@ class CD2DMesh : public CD2DResource;
 
 **헤더:** afxrendertarget.h
 
-##  <a name="_dtorcd2dmesh"></a>  CD2DMesh:: ~ CD2DMesh
+##  <a name="_dtorcd2dmesh"></a>  CD2DMesh::~CD2DMesh
 
 소멸자입니다. D2D 메시 개체 소멸 될 때 호출 됩니다.
 
@@ -206,7 +206,7 @@ ID2D1TessellationSink* Open();
 
 ID2D1TessellationSink 메시를 채우는 데 사용 되는 포인터입니다.
 
-##  <a name="operator_id2d1mesh_star"></a>  CD2DMesh::operator ID2D1Mesh *
+##  <a name="operator_id2d1mesh_star"></a>  CD2DMesh::operator ID2D1Mesh*
 
 반환 ID2D1Mesh 인터페이스
 
@@ -218,6 +218,6 @@ operator ID2D1Mesh*();
 
 ID2D1Mesh 인터페이스 또는 개체가 아직 초기화 되지 않은 경우 NULL 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

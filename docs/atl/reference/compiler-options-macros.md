@@ -16,12 +16,12 @@ f1_keywords:
 helpviewer_keywords:
 - compiler options, macros
 ms.assetid: a869adc6-b3de-4299-b040-9ae20b45f82c
-ms.openlocfilehash: d0da6ebcb178735fc25c656241fe23497d941ab6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 79b1cabc0304e905012db5f6dd73ed71073c0c1e
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50631155"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57258478"
 ---
 # <a name="compiler-options-macros"></a>컴파일러 옵션 매크로
 
@@ -220,6 +220,6 @@ _ATL_SINGLE_THREADED
 
 개체가 기본 COM 스레드에서만에서 항상 실행 되도록 지정 합니다. 참조 [프로젝트의 스레딩 모델 지정](../../atl/specifying-the-threading-model-for-a-project-atl.md) 다른 옵션, 스레딩 및 [옵션, ATL 단순 개체 마법사](../../atl/reference/options-atl-simple-object-wizard.md) 는 스레딩의 설명에 대 한 ATL 개체를 사용할 수 있는 모델입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로](../../atl/reference/atl-macros.md)

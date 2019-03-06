@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CDocObjectServerItem [MFC], OnHide
 - CDocObjectServerItem [MFC], OnShow
 ms.assetid: 530f7156-50c8-4806-9328-602c9133f622
-ms.openlocfilehash: cecbab366b64c85b39131a13233598abec83d5ab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f11c202e85453897f6ebf04d8dc165d2b733a406
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50536528"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57275276"
 ---
 # <a name="cdocobjectserveritem-class"></a>CDocObjectServerItem 클래스
 
@@ -45,7 +45,7 @@ class CDocObjectServerItem : public COleServerItem
 |----------|-----------------|
 |[CDocObjectServerItem::GetDocument](#getdocument)|항목을 포함 하는 문서에 대 한 포인터를 검색 합니다.|
 
-### <a name="protected-methods"></a>보호된 메서드
+### <a name="protected-methods"></a>Protected 메서드
 
 |이름|설명|
 |----------|-----------------|
@@ -55,13 +55,13 @@ class CDocObjectServerItem : public COleServerItem
 
 ## <a name="remarks"></a>설명
 
-`CDocObjectServerItem` 재정의 가능한 멤버 함수를 정의 합니다. [OnHide](#onhide)를 [OnDoVerb](#ondoverb), 및 [은 OnShow](#onshow)합니다.
+`CDocObjectServerItem` 재정의 가능한 멤버 함수를 정의합니다. [OnHide](#onhide)하십시오 [OnDoVerb](#ondoverb), 및 [은 OnShow](#onshow)합니다.
 
 사용 하도록 `CDocObjectServerItem`, 속하는 합니다 [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) 에서 재정의 `COleServerDoc`-파생된 클래스는 새 반환 `CDocObjectServerItem` 개체. 항목의 모든 기능을 변경 해야 하는 경우 자신만의 새 인스턴스를 만들 수 있습니다 `CDocObjectServerItem`-클래스를 파생 합니다.
 
 참조에 대 한 자세한 내용은 DocObjects [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) 및 [COleCmdUI](../../mfc/reference/colecmdui-class.md) 에 *MFC 참조*합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -133,7 +133,7 @@ virtual void OnShow();
 
 기본 구현을 호출 하는 항목 DocObject 없으면 [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onopen)합니다. 수행 하려는 특수 DocObject 항목을 열 때 처리 하는 경우이 함수를 재정의 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [COleServerItem 클래스](../../mfc/reference/coleserveritem-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

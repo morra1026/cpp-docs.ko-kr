@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MFC ActiveX controls [MFC], unclipped device context
 ms.assetid: 9c020063-73da-4803-bf7b-2e1fd950c9ed
-ms.openlocfilehash: 222a3fb60d07176b1ba8e586e142865164bc215f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0f129c0bfa5bd76df4ba34b117e7ed8aa08c2ecb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50596517"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57270672"
 ---
 # <a name="using-an-unclipped-device-context"></a>잘리지 않는 장치 컨텍스트 사용
 
@@ -23,7 +23,6 @@ ms.locfileid: "50596517"
 
 창 없는 활성화를 사용 하는 경우이 최적화에 영향을 주지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC ActiveX 컨트롤: 최적화](../mfc/mfc-activex-controls-optimization.md)
-

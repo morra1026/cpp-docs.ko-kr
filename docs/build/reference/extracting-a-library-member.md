@@ -11,12 +11,12 @@ helpviewer_keywords:
 - extracting library members
 - /EXTRACT library manager option
 ms.assetid: a2c5c2a1-9b7e-489a-a9a4-1dec694e1fc5
-ms.openlocfilehash: 2975ef584b0244a16b556232b6939308d2e1bd14
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4d7629707d99130551401fdda39a972ab2447480
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447036"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412889"
 ---
 # <a name="extracting-a-library-member"></a>라이브러리 멤버 추출
 
@@ -28,6 +28,6 @@ LIB library /EXTRACT:member /OUT:objectfile
 
 이 명령은 호출.obj 파일을 만듭니다 *objectfile* 의 복사본을 포함 하는 `member` 의 *라이브러리*합니다. `member` 이름은 대/소문자 구분 합니다. 단일 명령으로 한 멤버를 추출할 수 있습니다. /OUT 옵션을 지정 해야 합니다. 기본 출력 이름이 없습니다. 파일을 호출 하면 *objectfile* 지정된 된 디렉터리에 이미 있습니다 (또는 현재 디렉터리에 디렉터리가 지정 된 경우 *objectfile*)를 추출한 *objectfile*기존 파일을 대체 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LIB 참조](../../build/reference/lib-reference.md)

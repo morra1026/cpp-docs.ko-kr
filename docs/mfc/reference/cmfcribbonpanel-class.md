@@ -114,18 +114,18 @@ helpviewer_keywords:
 - CMFCRibbonPanel [MFC], SetKeys
 - CMFCRibbonPanel [MFC], ShowPopup
 ms.assetid: 51d70749-1140-4386-b103-f14082049ba6
-ms.openlocfilehash: a679ca48b054a545752483ff5349442e7c4a0ddd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 438fc753e91092502c84acfc491ec64c15133023
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505393"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57305057"
 ---
 # <a name="cmfcribbonpanel-class"></a>CMFCRibbonPanel 클래스
 
 리본 요소 집합이 포함된 패널을 구현합니다. 패널을 그리면 지정된 패널 크기에 가능한 한 많은 요소를 표시합니다.
 
-자세한 세부 정보에 대 한 참조에 있는 소스 코드를 **VC\\atlmfc\\src\\mfc** Visual Studio 설치의 폴더입니다.
+더 자세한 내용은 Visual Studio 설치의 **VC\\atlmfc\\src\\mfc** 폴더에 있는 소스 코드를 참조하세요.
 
 ## <a name="syntax"></a>구문
 
@@ -145,7 +145,7 @@ class CMFCRibbonPanel : public CObject
 
 |이름|설명|
 |----------|-----------------|
-|[Cmfcribbonpanel:: Add](#add)|패널에 리본 요소를 추가합니다.|
+|[CMFCRibbonPanel::Add](#add)|패널에 리본 요소를 추가합니다.|
 |[CMFCRibbonPanel::AddSeparator](#addseparator)|리본 패널로 구분 기호를 추가 합니다.|
 |[CMFCRibbonPanel::AddToolBar](#addtoolbar)|도구 모음 리본 패널에 추가합니다.|
 |[CMFCRibbonPanel::FindByData](#findbydata)||
@@ -211,7 +211,7 @@ class CMFCRibbonPanel : public CObject
 
 [!code-cpp[NVC_MFC_MSOffice2007Demo#10](../../mfc/reference/codesnippet/cpp/cmfcribbonpanel-class_1.cpp)]
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -221,7 +221,7 @@ class CMFCRibbonPanel : public CObject
 
 **헤더:** afxRibbonPanel.h
 
-##  <a name="add"></a>  Cmfcribbonpanel:: Add
+##  <a name="add"></a>  CMFCRibbonPanel::Add
 
 리본 패널에 포함 된 리본 요소의 배열에 지정 된 리본 요소를 추가 합니다.
 
@@ -642,7 +642,7 @@ CPoint point);
 *bHighlight*<br/>
 [in] True 이면 리본 패널에 강조 표시 리본 패널 unhighlight를 FALSE로 설정 합니다.
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 ### <a name="remarks"></a>설명
@@ -659,7 +659,7 @@ BOOL bCheckPanelCaption = FALSE);
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 *bCheckPanelCaption*<br/>
@@ -683,7 +683,7 @@ virtual int HitTestEx(CPoint point) const;
 
 ### <a name="parameters"></a>매개 변수
 
-*지점*<br/>
+*point*<br/>
 [in] 창의 왼쪽 위 모퉁이 기준으로 포인터의 x 및 y 좌표입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -876,7 +876,7 @@ BOOL bDelete = TRUE);
 *nIndex*<br/>
 [in] 리본 패널에서 제거 된 요소의 인덱스를 지정 합니다.
 
-*b 삭제*<br/>
+*bDelete*<br/>
 [in] 제거할; 요소를 삭제. 그렇지 않으면 FALSE입니다.
 
 ### <a name="return-value"></a>반환 값
@@ -1248,7 +1248,7 @@ CMFCRibbonBaseElement* GetFocused() const;
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

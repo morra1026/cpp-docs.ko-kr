@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - CMonthCalCtrl class [MFC], about CMonthCalCtrl class
 ms.assetid: 2be0e8c2-ed03-4853-aea1-4461eba18611
-ms.openlocfilehash: 4a7747b74058ab1d566108c0f834a01d71ab1fa5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f97941bfd8d0a27f640757343cd360a1bec3050c
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50461676"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57280815"
 ---
 # <a name="using-cmonthcalctrl"></a>CMonthCalCtrl 사용
 
@@ -20,7 +20,7 @@ Month calendar 컨트롤 ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.m
 > [!NOTE]
 >  프로젝트에서 `CMonthCalCtrl` 클래스를 사용하려면 일반적으로 STDAFX.H에 있는 AFXDTCTL.H를 포함해야 합니다.
 
-## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아보려는 항목
+## <a name="what-do-you-want-to-know-more-about"></a>자세히 알아볼 항목
 
 - [Month Calendar 컨트롤 만들기](../mfc/creating-the-month-calendar-control.md)
 
@@ -30,7 +30,6 @@ Month calendar 컨트롤 ([CMonthCalCtrl](../mfc/reference/cmonthcalctrl-class.m
 
 - [Month Calendar 컨트롤의 일 상태 설정](../mfc/setting-the-day-state-of-a-month-calendar-control.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨트롤](../mfc/controls-mfc.md)
-

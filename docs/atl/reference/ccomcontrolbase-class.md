@@ -80,12 +80,12 @@ f1_keywords:
 helpviewer_keywords:
 - CComControlBase class
 ms.assetid: 3d1bf022-acf2-4092-8283-ff8cee6332f3
-ms.openlocfilehash: 67d2be23aa6209c36b1a72eca3322efd1e977447
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 698912100244189bdec99fa3726a063eb2e907a7
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894434"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57298219"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase 클래스
 
@@ -1518,7 +1518,7 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
 모양 또는 컨트롤의 뷰입니다.
 
 *lindex*<br/>
-변경된 뷰 부분입니다. 1만 유효합니다.
+변경 된 보기의 일부입니다. 1만 유효합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1566,7 +1566,7 @@ void SetDirty(BOOL bDirty);
 
 `SetDirty(TRUE)` 컨트롤 변경 되었기 때문입니다 마지막으로 저장 된 플래그를 설정 하려면 호출 되어야 합니다. 변수의 `m_bRequiresSave` 사용 하 여 검색 [CComControlBase::GetDirty](#getdirty)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CComControl 클래스](../../atl/reference/ccomcontrol-class.md)<br/>
 [클래스 개요](../../atl/atl-class-overview.md)

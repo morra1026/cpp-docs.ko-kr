@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CMFCRibbonMainPanel [MFC], AddToRight
 - CMFCRibbonMainPanel [MFC], GetCommandsFrame
 ms.assetid: 1af78798-5e75-4365-9c81-a54aa5679602
-ms.openlocfilehash: 101c718d25a2e06461156045deea5f42d85e2f4d
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e4bd1ab8cffc87d5079518cf9a1d6e430ca40fd9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50638219"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57294447"
 ---
 # <a name="cmfcribbonmainpanel-class"></a>CMFCRibbonMainPanel 클래스
 
@@ -64,7 +64,7 @@ class CMFCRibbonMainPanel : public CMFCRibbonPanel
 
 - 아래쪽 창에 응용 프로그램의 설정을 변경 하 고 프로그램을 종료할 수 있도록 하는 단추가 있습니다. 이 창에 항목 추가 호출 [CMFCRibbonMainPanel::AddToBottom](#addtobottom)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -162,7 +162,7 @@ CRect GetCommandsFrame() const;
 
 리본의 주 패널의 영역을 나타내는 사각형입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>

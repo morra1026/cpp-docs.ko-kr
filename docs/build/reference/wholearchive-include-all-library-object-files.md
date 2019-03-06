@@ -2,12 +2,12 @@
 title: /WHOLEARCHIVE (모든 라이브러리 개체 파일 포함)
 ms.date: 11/04/2016
 ms.assetid: ee92d12f-18af-4602-9683-d6223be62ac9
-ms.openlocfilehash: 26bd720a2ecd07bccb1317e1540cb071e7027078
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cc260f139a9312bbac7fed34471481401db770d4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494226"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412915"
 ---
 # <a name="wholearchive-include-all-library-object-files"></a>/WHOLEARCHIVE (모든 라이브러리 개체 파일 포함)
 
@@ -15,7 +15,7 @@ ms.locfileid: "50494226"
 
 ## <a name="syntax"></a>구문
 
-> /WHOLEARCHIVE [:*라이브러리*]
+> /WHOLEARCHIVE[:*library*]
 
 ## <a name="remarks"></a>설명
 
@@ -33,7 +33,7 @@ ms.locfileid: "50494226"
 
 1. /WHOLEARCHIVE 옵션을 추가 합니다 **추가 옵션** 입력란입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

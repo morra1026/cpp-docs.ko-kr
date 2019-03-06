@@ -6,12 +6,12 @@ helpviewer_keywords:
 - command handling [MFC], routing commands
 - command routing [MFC], OnCmdMsg handler
 ms.assetid: 4b7b4741-565f-4878-b076-fd85c670f87f
-ms.openlocfilehash: 3bc7c33762ab1868b29732d17e1a2e9700d11cf7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 56d131151f2284f12a3b46a9acd3cfbd3c8b0f47
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50584563"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57304641"
 ---
 # <a name="command-routing-illustration"></a>명령 라우팅 설명
 
@@ -29,7 +29,6 @@ ms.locfileid: "50584563"
 
 문서에 처리기를이 없는 경우 해당 서식 파일에 명령을 라우팅합니다 다음 것입니다. 다음 명령은 보기와 프레임 창에 반환 됩니다. 마지막으로, 프레임 창에는 자신의 메시지 맵을 확인 합니다. 주 MDI 프레임 창으로 다시 및 응용 프로그램 개체에 다음 명령을 확인도 실패 한 경우 라우트됩니다-최종 대상을 처리 되지 않은 명령입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 처리기를 호출하는 방법](../mfc/how-the-framework-calls-a-handler.md)
-

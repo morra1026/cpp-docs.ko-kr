@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - event handling, about event handling
 ms.assetid: e4812b0d-6fdd-4e8c-bdb8-378a25c7bde2
-ms.openlocfilehash: 8634765bcfdc483e014b8552c67a57a11236f426
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e939c693f3f474cce9d2ca118bc86d163d6146dc
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50667729"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57277471"
 ---
 # <a name="event-handling-and-atl"></a>이벤트 처리 및 ATL
 
@@ -17,7 +17,7 @@ ms.locfileid: "50667729"
 
 이벤트를 발생 시키는 연결 지점을 구현 하는 방법에 대 한 자세한 내용은 [ATL 연결 지점](../atl/atl-connection-points.md)합니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [이벤트 처리 원리](../atl/event-handling-principles.md)<br/>
 모든 이벤트 처리 하는 일반적인 단계를 설명합니다.
@@ -39,7 +39,6 @@ ms.locfileid: "50667729"
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [개념](../atl/active-template-library-atl-concepts.md)
-

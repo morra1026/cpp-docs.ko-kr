@@ -6,18 +6,18 @@ f1_keywords:
 helpviewer_keywords:
 - EDITBIN program, options
 ms.assetid: 2da9f88e-cbab-4d64-bb66-ef700535230f
-ms.openlocfilehash: 263cfb79897ae60daff64521928db865f1dcb874
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 409c40986068475299c95f1be0dff5f15d022520
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50540545"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424329"
 ---
 # <a name="editbin-options"></a>EDITBIN 옵션
 
 개체 파일, 실행 파일 및 동적 연결 라이브러리 (Dll)를 수정 하려면 EDITBIN를 사용할 수 있습니다. 옵션에 따라 EDITBIN이 수행하는 변경 사항이 지정됩니다.
 
-대시 (-) 또는 슬래시 (/) 옵션의 이름 뒤에 옵션 지정자를 사용 하는 옵션으로 구성 됩니다. 옵션 이름은 간략 한 형태로 사용할 수 없습니다. 일부 옵션에는 콜론(:) 다음에 지정된 인수가 사용됩니다. 공백 또는 탭 옵션 사양에 허용 됩니다. 명령줄에서 옵션 사양 구분 하려면 하나 이상의 공백이 나 탭을 사용 합니다. 옵션 이름 및 해당 키워드 인수 또는 파일 이름 인수는 대/소문자를 구분하지 않습니다. 예를 들어 -bind 및 /BIND는 동일한 항목을 의미합니다.
+대시 (-) 또는 슬래시 (/) 옵션의 이름 뒤에 옵션 지정자를 사용 하는 옵션으로 구성 됩니다. 옵션 이름은 약식으로 표기할 수 없습니다. 일부 옵션에는 콜론(:) 다음에 지정된 인수가 사용됩니다. 옵션 사양에는 공백이나 탭을 사용할 수 없습니다. 한 개 이상의 공백 또는 탭을 사용하여 명령줄에서 옵션 사양을 구분합니다. 옵션 이름 및 해당 키워드 인수 또는 파일 이름 인수는 대/소문자를 구분하지 않습니다. 예를 들어 -bind 및 /BIND는 동일한 항목을 의미합니다.
 
 EDITBIN 다음 옵션이 있습니다.
 
@@ -34,17 +34,17 @@ EDITBIN 다음 옵션이 있습니다.
 |[/INTEGRITYCHECK](../../build/reference/integritycheck.md)|로드 시 디지털 서명을 확인할지 여부를 지정합니다.|
 |[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware.md)|개체에서 2GB보다 큰 주소가 지원되는지 여부를 지정합니다.|
 |[/NOLOGO](../../build/reference/nologo-editbin.md)|EDITBIN 시작 배너를 표시하지 않습니다.|
-|[/NXCOMPAT](../../build/reference/nxcompat.md)|실행 가능 이미지가 Windows 데이터 실행 방지와 호환되는지 여부를 지정합니다.|
+|[/NXCOMPAT](../../build/reference/nxcompat.md)|실행 가능한 이미지가 Windows 데이터 실행 방지와 호환되는지 여부를 지정합니다.|
 |[/REBASE](../../build/reference/rebase.md)|지정된 개체에 대한 기준 주소를 설정합니다.|
 |[/RELEASE](../../build/reference/release.md)|헤더에 체크섬을 설정합니다.|
 |[/SECTION](../../build/reference/section-editbin.md)|섹션의 특성을 재정의합니다.|
-|[/STACK](../../build/reference/stack.md)|실행 가능 이미지의 스택 크기(바이트)를 설정합니다.|
+|[/STACK](../../build/reference/stack.md)|실행 가능한 이미지의 스택 크기(바이트)를 설정합니다.|
 |[/SUBSYSTEM](../../build/reference/subsystem.md)|실행 환경을 지정합니다.|
-|[/SWAPRUN](../../build/reference/swaprun.md)|실행 가능 이미지를 스왑 파일에 복사한 후 여기에서 실행해야 하도록 지정합니다.|
+|[/SWAPRUN](../../build/reference/swaprun.md)|실행 가능한 이미지를 스왑 파일에 복사한 후 여기에서 실행해야 하도록 지정합니다.|
 |[/TSAWARE](../../build/reference/tsaware.md)|다중 사용자 환경에서 실행할 수 있도록 응용 프로그램이 설계되도록 지정합니다.|
 |[/VERSION](../../build/reference/version.md)|헤더에서 버전 번호를 설정합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
+[빌드 도구](../../build/reference/c-cpp-build-tools.md)<br/>
 [EDITBIN 참조](../../build/reference/editbin-reference.md)

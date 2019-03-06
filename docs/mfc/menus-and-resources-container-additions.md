@@ -16,12 +16,12 @@ helpviewer_keywords:
 - CONTAIN tutorial [MFC]
 - Links menu item [MFC]
 ms.assetid: 425448be-8ca0-412e-909a-a3a9ce845288
-ms.openlocfilehash: ea4159f8eb60f43f60eacd5831ce148c81aeb572
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad3431f78d3637bcdfdb0266c8abdb43047ca28d
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546616"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57279341"
 ---
 # <a name="menus-and-resources-container-additions"></a>메뉴 및 리소스: 컨테이너 추가
 
@@ -48,7 +48,7 @@ ms.locfileid: "50546616"
 |**새 개체를 삽입 합니다.**|문서에 연결 되거나 포함 된 항목을 삽입 하려면 OLE 개체 삽입 대화 상자를 엽니다.|
 |**연결 하 여 붙여넣기**|문서에 항목에 대 한 링크를 클립보드에 붙여 넣습니다.|
 |**OLE 동사**|선택한 항목의 기본 동사를 호출합니다. 텍스트 선택된 된 항목의 기본 동사를 반영 하도록이 메뉴 항목 변경 내용입니다.|
-|**Links**|기존 연결 된 항목을 변경 하려면 OLE 링크 편집 대화 상자를 엽니다.|
+|**링크**|기존 연결 된 항목을 변경 하려면 OLE 링크 편집 대화 상자를 엽니다.|
 
 이 문서에 나열 된 변경 내용을 외에도 소스 파일 AFXOLECL 포함 해야 합니다. RC는 Microsoft Foundation Class 라이브러리 구현에 필요 합니다. 새 개체 삽입만 필요한 메뉴 추가 하는 것입니다. 다른 항목을 추가할 수 있습니다, 되지만 여기에 나열 된 가장 일반적입니다.
 
@@ -71,7 +71,7 @@ ms.locfileid: "50546616"
 |ID_FILE_SAVE|Ctrl+S|**VIRTKEY**|
 |ID_FILE_PRINT|Ctrl+P|**VIRTKEY**|
 |ID_NEXT_PANE|VK_F6|**VIRTKEY**|
-|ID_PREV_PANE|SHIFT + VK_F6|**VIRTKEY**|
+|ID_PREV_PANE|SHIFT+VK_F6|**VIRTKEY**|
 |ID_CANCEL_EDIT_CNTR|VK_ESCAPE|**VIRTKEY**|
 
 ##  <a name="_core_string_table_additions_for_container_applications"></a> 컨테이너 응용 프로그램에 대 한 문자열 테이블 추가
@@ -83,8 +83,7 @@ ms.locfileid: "50546616"
 |IDP_OLE_INIT_FAILED|OLE 초기화 하지 못했습니다. OLE 라이브러리 버전이 올바른지 확인 합니다.|
 |IDP_FAILED_TO_CREATE|개체를 만들지 못했습니다. 개체가 시스템 레지스트리에 입력 되어 있는지 있는지 확인 합니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [메뉴 및 리소스(OLE)](../mfc/menus-and-resources-ole.md)<br/>
 [메뉴 및 리소스: 서버 추가](../mfc/menus-and-resources-server-additions.md)
-

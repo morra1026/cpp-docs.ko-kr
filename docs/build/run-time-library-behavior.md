@@ -15,12 +15,12 @@ helpviewer_keywords:
 - run-time [C++], DLL startup sequence
 - DLLs [C++], startup sequence
 ms.assetid: e06f24ab-6ca5-44ef-9857-aed0c6f049f2
-ms.openlocfilehash: 8293e2e05193b34802aba0af722dd06155fdcd81
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 084741a3a408fe79e27c3fab81e1f5c4c9f06c4e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429057"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414592"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>Dll 및 Visual c + + 런타임 라이브러리 동작
 
@@ -178,7 +178,7 @@ Afxdllx.h 헤더 파일에 대 한 정의 같은 MFC 확장명 Dll에서 사용 
 
 다중 스레딩을 처리에 포함 된 샘플 초기화 함수 [를 사용 하 여 스레드 로컬 저장소에는 동적 링크 라이브러리](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) Windows SDK에 있습니다. 이 샘플 이라는 진입점 함수를 포함 하는 참고 `LibMain`,이 함수 이름을 지정 해야 하지만 `DllMain` MFC 및 C 런타임 라이브러리와 함께 작동 하도록 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)<br/>
 [DllMain 진입점](/windows/desktop/Dlls/dllmain)<br/>

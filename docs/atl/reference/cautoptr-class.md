@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAutoPtr class
 ms.assetid: 08988d53-4fb0-4711-bdfc-8ac29c63f410
-ms.openlocfilehash: b328d58116d3b26645a2b3a3981c11fa705878ea
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7f4f446aa97f2bf3843b830bd7fb4c4a5d74ffdb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615256"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259791"
 ---
 # <a name="cautoptr-class"></a>CAutoPtr 클래스
 
@@ -45,7 +45,7 @@ class CAutoPtr
 |이름|설명|
 |----------|-----------------|
 |[CAutoPtr::CAutoPtr](#cautoptr)|생성자입니다.|
-|[CAutoPtr:: ~ CAutoPtr](#dtor)|소멸자입니다.|
+|[CAutoPtr::~CAutoPtr](#dtor)|소멸자입니다.|
 
 ### <a name="public-methods"></a>Public 메서드
 
@@ -59,9 +59,9 @@ class CAutoPtr
 
 |이름|설명|
 |----------|-----------------|
-|[CAutoPtr::operator T *](#operator_t_star)|캐스트 연산자입니다.|
+|[CAutoPtr::operator T*](#operator_t_star)|캐스트 연산자입니다.|
 |[CAutoPtr::operator =](#operator_eq)|대입 연산자입니다.|
-|[CAutoPtr::operator->](#operator_ptr)|멤버 포인터 연산자입니다.|
+|[CAutoPtr::operator ->](#operator_ptr)|멤버 포인터 연산자입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -143,7 +143,7 @@ CAutoPtr(CAutoPtr<T>& p) throw();
 
 예제를 참조 합니다 [CAutoPtr 개요](../../atl/reference/cautoptr-class.md)합니다.
 
-##  <a name="dtor"></a>  CAutoPtr:: ~ CAutoPtr
+##  <a name="dtor"></a>  CAutoPtr::~CAutoPtr
 
 소멸자입니다.
 
@@ -231,7 +231,7 @@ CAutoPtr<T>& operator= (CAutoPtr<TSrc>& p);
 
 예제를 참조 합니다 [CAutoPtr 개요](../../atl/reference/cautoptr-class.md)합니다.
 
-##  <a name="operator_ptr"></a>  CAutoPtr::operator-&gt;
+##  <a name="operator_ptr"></a>  CAutoPtr::operator -&gt;
 
 멤버 포인터 연산자입니다.
 
@@ -251,7 +251,7 @@ T* operator->() const throw();
 
 예제를 참조 합니다 [CAutoPtr 개요](../../atl/reference/cautoptr-class.md)합니다.
 
-##  <a name="operator_t_star"></a>  CAutoPtr::operator T *
+##  <a name="operator_t_star"></a>  CAutoPtr::operator T*
 
 캐스트 연산자입니다.
 
@@ -267,7 +267,7 @@ operator T* () const throw();
 
 예제를 참조 합니다 [CAutoPtr 개요](../../atl/reference/cautoptr-class.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CHeapPtr 클래스](../../atl/reference/cheapptr-class.md)<br/>
 [CAutoVectorPtr 클래스](../../atl/reference/cautovectorptr-class.md)<br/>

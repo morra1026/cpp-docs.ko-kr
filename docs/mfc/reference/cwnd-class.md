@@ -818,12 +818,12 @@ helpviewer_keywords:
 - CWnd [MFC], WindowProc
 - CWnd [MFC], m_hWnd
 ms.assetid: 49a832ee-bc34-4126-88b3-bc1d9974f6c4
-ms.openlocfilehash: ebb0d0abcff069deca4597ffb5a3a2d4e67cab9c
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: 493fe04f34f615d9113196e3db8bc744f420d4a2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894538"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426266"
 ---
 # <a name="cwnd-class"></a>CWnd 클래스
 
@@ -2685,10 +2685,10 @@ BOOL DrawAnimatedRects(
 애니메이션의 종류를 지정합니다. 창 캡션에 지정 된 위치에서 애니메이션 효과 IDANI_CAPTION를 지정 하는 경우 *lprcFrom* 로 지정 된 위치로 *lprcTo*합니다. 효과 최소화 또는 최대화 된 창 비슷합니다.
 
 *lprcFrom*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 아이콘 또는 최소화 된 창의 크기와 위치를 지정 합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 아이콘 또는 최소화 된 창의 크기와 위치를 지정 합니다.
 
 *lprcTo*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 복원 된 창의 크기와 위치를 지정 하는 구조체
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 복원 된 창의 크기와 위치를 지정 하는 구조체
 
 ### <a name="return-value"></a>반환 값
 
@@ -12438,7 +12438,7 @@ virtual void ResizeDynamicLayout();
 
 ### <a name="remarks"></a>설명
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CCmdTarget 클래스](../../mfc/reference/ccmdtarget-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - database classes [MFC], ODBC
 - ODBC classes [MFC]
 ms.assetid: 6c40fca8-3033-4873-9abe-7f51725de0e0
-ms.openlocfilehash: f0ff337a7193093456ab4f5de2f6087d88ca12df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 75e022ea3e5de4a57f0ef2b1e3f312654c2889ec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518523"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57267136"
 ---
 # <a name="odbc-classes"></a>ODBC 클래스
 
@@ -43,7 +43,6 @@ ODBC 데이터베이스를 사용 하는 프로그램 해야 적어도 `CDatabas
 [CDBVariant](../mfc/reference/cdbvariant-class.md)<br/>
 값의 데이터 형식에 대 한 걱정 없이 값을 저장할 수 있습니다. `CDBVariant` 데이터 형식의 공용 구조체에 저장 된 현재 값을 추적 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../mfc/class-library-overview.md)
-

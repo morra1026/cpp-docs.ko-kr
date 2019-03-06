@@ -14,12 +14,12 @@ helpviewer_keywords:
 - OLE containers [MFC], compound files
 - access modes for files [MFC]
 ms.assetid: 8b83cb3e-76c8-4bbe-ba16-737092b36f49
-ms.openlocfilehash: 5a8ba0821d92ab41a4b95fb7b2a26da63c1df285
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8ae701af3dbf45a1b48ef223f421d17f6abee213
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50643272"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57326626"
 ---
 # <a name="containers-compound-files"></a>컨테이너: 복합 파일
 
@@ -82,7 +82,7 @@ OLE 복합 파일 구현의 세 가지 개체 유형이 사용: 스트림 개체
 
 에 *OLE 프로그래머 참조*를 참조 하세요 [IStream](/windows/desktop/api/objidl/nn-objidl-istream), [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage), 및 [ILockBytes](/windows/desktop/api/objidl/nn-objidl-ilockbytes).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컨테이너](../mfc/containers.md)<br/>
 [컨테이너: 사용자 인터페이스 문제](../mfc/containers-user-interface-issues.md)<br/>

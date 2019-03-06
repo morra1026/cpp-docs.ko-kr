@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - synchronization data structures
 ms.assetid: d612757d-e4b7-4019-a627-f853af085b8b
-ms.openlocfilehash: 8c91de87bb5d579916743051d06c15f6df6921bf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f9b949e7782c4b9ca302e9e623ce5f09061c39ef
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50495929"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57301885"
 ---
 # <a name="synchronization-data-structures"></a>동기화 데이터 구조
 
@@ -115,4 +115,3 @@ Windows API에서 제공 하는 동기화 데이터 구조체의 동작을 비�
 
 [동시성 런타임](../../parallel/concrt/concurrency-runtime.md)<br/>
 병렬 프로그래밍을 간소화하는 동시성 런타임에 대해 설명하고 관련 항목의 링크를 제공합니다.
-

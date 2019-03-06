@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - scheduler_not_attached class
 ms.assetid: 26001970-b400-463b-be3d-8623359c399a
-ms.openlocfilehash: 159202445f95e8fbac93902dec43fc0f99180e8e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: be8a04c7cf6ef5aa4d6070e92df14e643395ef00
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560669"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262267"
 ---
 # <a name="schedulernotattached-class"></a>scheduler_not_attached 클래스
 
@@ -33,7 +33,7 @@ class scheduler_not_attached : public std::exception;
 |----------|-----------------|
 |[scheduler_not_attached](#ctor)|오버로드됨. `scheduler_not_attached` 개체를 생성합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `exception`
 
@@ -57,10 +57,10 @@ scheduler_not_attached() throw();
 
 ### <a name="parameters"></a>매개 변수
 
-*메시지 (_m)*<br/>
+*_Message*<br/>
 오류 설명 메시지입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [Scheduler 클래스](scheduler-class.md)

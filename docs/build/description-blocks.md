@@ -6,12 +6,12 @@ helpviewer_keywords:
 - NMAKE program, description blocks
 - blocks, description
 ms.assetid: 1321f228-d389-40ac-b0cd-4f6e9293602b
-ms.openlocfilehash: 214963b5c3f633e8d029cee0500d4bd5fab6ed53
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c7469a59c88e9dfb44cf1bf32926aa336b6e46c9
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50490608"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420468"
 ---
 # <a name="description-blocks"></a>설명 블록
 
@@ -30,6 +30,6 @@ targets... : dependents...
 
 [종속 파일](../build/dependents.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [NMAKE 참조](../build/nmake-reference.md)

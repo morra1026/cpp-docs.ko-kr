@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - IUMSThreadProxy structure
 ms.assetid: 61c69b7e-5c37-4048-bcb4-e75c536afd86
-ms.openlocfilehash: 9a0fca40f353f64799c4df9001952cb668cd0678
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 258f249aa178b73da2080cca888409dc07f63dbb
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657131"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57263037"
 ---
 # <a name="iumsthreadproxy-structure"></a>IUMSThreadProxy 구조체
 
@@ -41,7 +41,7 @@ struct IUMSThreadProxy : public IThreadProxy;
 |[IUMSThreadProxy::ExitHyperCriticalRegion](#exithypercriticalregion)|매우 중요 한 영역을 종료 하기 위해 호출 됩니다.|
 |[IUMSThreadProxy::GetCriticalRegionType](#getcriticalregiontype)|어떤 유형의 스레드 프록시가 중요 영역을 반환 합니다. 때문에 매우 중요 한 영역 중요 한 영역을 상위 집합 코드는 중요 한 영역 및 매우 중요 한 지역을 않았으면 `InsideHyperCriticalRegion` 반환 됩니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [IThreadProxy](ithreadproxy-structure.md)
 
@@ -117,7 +117,7 @@ virtual CriticalRegionType GetCriticalRegionType() const = 0;
 
 스레드 프록시가 위험 영역의 형식입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [concurrency 네임스페이스](concurrency-namespace.md)<br/>
 [IUMSScheduler 구조체](iumsscheduler-structure.md)

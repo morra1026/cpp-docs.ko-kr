@@ -28,12 +28,12 @@ helpviewer_keywords:
 - CPictureHolder [MFC], SetPictureDispatch
 - CPictureHolder [MFC], m_pPict
 ms.assetid: a4f59775-704a-41dd-b5bd-2e531c95127a
-ms.openlocfilehash: 14ffcbc043d80bfd296bcf52d125d288039f0501
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5386240114550826e4bf557b63310a91590afb55
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509578"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57284218"
 ---
 # <a name="cpictureholder-class"></a>CPictureHolder 클래스
 
@@ -64,7 +64,7 @@ class CPictureHolder
 |[CPictureHolder::GetDisplayString](#getdisplaystring)|컨트롤 컨테이너의 속성 브라우저에 표시 되는 문자열을 검색 합니다.|
 |[CPictureHolder::GetPictureDispatch](#getpicturedispatch)|반환 된 `CPictureHolder` 개체의 `IDispatch` 인터페이스입니다.|
 |[CPictureHolder::GetType](#gettype)|지시 여부는 `CPictureHolder` 개체가 메타 파일, 비트맵, 아이콘입니다.|
-|[Cpictureholder:: Render](#render)|그림을 렌더링합니다.|
+|[CPictureHolder::Render](#render)|그림을 렌더링합니다.|
 |[CPictureHolder::SetPictureDispatch](#setpicturedispatch)|설정 된 `CPictureHolder` 개체의 `IDispatch` 인터페이스입니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
@@ -79,9 +79,9 @@ class CPictureHolder
 
 스톡 그림 속성에 비트맵, 아이콘 또는 메타 파일 표시에 대 한 개발자 지정할 수 있습니다.
 
-사용자 지정 그림 속성 만들기에 대 한 내용은 문서 참조 [MFC ActiveX 컨트롤: ActiveX 컨트롤에서 사용 하 여 사진을](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)합니다.
+사용자 지정 그림 속성 만들기에 대 한 내용은 문서를 참고 [MFC ActiveX 컨트롤: ActiveX 컨트롤에서 그림을 사용 하 여](../../mfc/mfc-activex-controls-using-pictures-in-an-activex-control.md)입니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CPictureHolder`
 
@@ -283,7 +283,7 @@ short GetType();
 LPPICTURE m_pPict;
 ```
 
-##  <a name="render"></a>  Cpictureholder:: Render
+##  <a name="render"></a>  CPictureHolder::Render
 
 참조 하는 사각형을 그림 렌더링 *rcRender*합니다.
 
@@ -318,7 +318,7 @@ void SetPictureDispatch(LPPICTUREDISP pDisp);
 *pDisp*<br/>
 새 포인터 `IPictureDisp` 인터페이스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CFontHolder 클래스](../../mfc/reference/cfontholder-class.md)

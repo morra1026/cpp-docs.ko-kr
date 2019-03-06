@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-ms.openlocfilehash: 70d700197e3d249812e8b09a2cba744a0fbc9803
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: cb52f1138ba7ff01c6fbf2f7ec13d5f39e9422d8
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649282"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413396"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar 클래스
 
@@ -92,7 +92,8 @@ class CStatusBar : public CControlBar
 
 상태 표시줄을 만들려면 다음이 단계를 수행 합니다.
 
-1. `CStatusBar` 개체를 생성합니다.
+1. 
+  `CStatusBar` 개체를 생성합니다.
 
 1. 호출 된 [만들기](#create) (또는 [CreateEx](#createex)) 상태 표시줄 창을 만들고에 연결 하는 함수는 `CStatusBar` 개체입니다.
 
@@ -108,9 +109,9 @@ class CStatusBar : public CControlBar
 
 호출 [SetPaneStyle](#setpanestyle) 상태 표시줄 창의 스타일을 업데이트 합니다.
 
-사용 하 여 대 한 자세한 내용은 `CStatusBar`, 문서를 참조 하세요 [MFC의 상태 표시줄 구현](../../mfc/status-bar-implementation-in-mfc.md) 하 고 [Technical Note 31: 컨트롤 막대](../../mfc/tn031-control-bars.md)합니다.
+사용 하 여 대 한 자세한 내용은 `CStatusBar`, 문서를 참조 하세요 [MFC의 상태 표시줄 구현](../../mfc/status-bar-implementation-in-mfc.md) 고 [Technical Note 31: 컨트롤 막대](../../mfc/tn031-control-bars.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -283,7 +284,7 @@ void GetItemRect(
 검색할 인 사각형 좌표는 표시기의 인덱스입니다.
 
 *lpRect*<br/>
-가리키는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 표시기에서 지정 된 좌표를 받게 될 개체 *nIndex*합니다.
+가리키는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 표시기에서 지정 된 좌표를 받게 될 개체 *nIndex*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -485,7 +486,7 @@ BOOL SetPaneText(
 *lpszNewText*<br/>
 새 창 텍스트에 대 한 포인터입니다.
 
-*b 업데이트*<br/>
+*bUpdate*<br/>
 True 이면 텍스트를 설정한 후 창에 무효화 됩니다.
 
 ### <a name="return-value"></a>반환 값
@@ -504,10 +505,10 @@ True 이면 텍스트를 설정한 후 창에 무효화 됩니다.
 
 [!code-cpp[NVC_MFCDocView#178](../../mfc/codesnippet/cpp/cstatusbar-class_3.cpp)]
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 CTRLBARS](../../visual-cpp-samples.md)<br/>
-[MFC 샘플 DLGCBR32](../../visual-cpp-samples.md)<br/>
+[MFC Sample DLGCBR32](../../visual-cpp-samples.md)<br/>
 [CControlBar 클래스](../../mfc/reference/ccontrolbar-class.md)<br/>
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [CStatusBarCtrl 클래스](../../mfc/reference/cstatusbarctrl-class.md)<br/>

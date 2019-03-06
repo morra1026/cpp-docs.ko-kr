@@ -6,12 +6,12 @@ helpviewer_keywords:
 - string conversion, ATL
 - string classes [ATL]
 ms.assetid: aa0cdc41-c953-4b17-82b6-59b908545571
-ms.openlocfilehash: 5fc4203c3d1c9ee975618b3df799a5dc6bde1c82
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f694cbf9dc806cbb6ef3e5e649e91c9ad5bfa75
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50657784"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295264"
 ---
 # <a name="string-and-text-classes"></a>문자열 및 텍스트 클래스
 
@@ -33,8 +33,7 @@ ms.locfileid: "50657784"
 
 - [_U_STRINGorID](../atl/reference/u-stringorid-class.md) 이 인수 어댑터 클래스 리소스 이름 중 하나를 사용 하면 (`LPCTSTR`s) 또는 리소스 Id는 호출자 ID MAKEINTRESOURCE 매크로 사용 하 여 문자열로 변환할 필요 없이 함수에 전달할 (UINTs).
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스 개요](../atl/atl-class-overview.md)<br/>
 [ATL 및 MFC 문자열 변환 매크로](reference/string-conversion-macros.md)
-

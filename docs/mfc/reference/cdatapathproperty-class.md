@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CDataPathProperty [MFC], SetControl
 - CDataPathProperty [MFC], SetPath
 ms.assetid: 1f96efdb-54e4-460b-862c-eba5d4103488
-ms.openlocfilehash: 1d17b121854623e9919f434a44b6ab40c2db2691
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61c8dfa85363509ee09eaaccdb6d45d70390c344
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50608186"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57262768"
 ---
 # <a name="cdatapathproperty-class"></a>CDataPathProperty 클래스
 
@@ -68,7 +68,7 @@ class CDataPathProperty : public CAsyncMonikerFile
 
 - [인터넷 첫 번째 단계: 비동기 모니커](../../mfc/asynchronous-monikers-on-the-internet.md)
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -215,7 +215,7 @@ void SetPath(LPCTSTR lpszPath);
 *lpszPath*<br/>
 경로 절대 또는 상대 비동기적으로 로드 되는 속성 일 수 있습니다. `CDataPathProperty` 하지 파일 이름, Url을 사용합니다. 하려는 경우는 `CDataPathProperty` 파일에 대 한 개체, 앞 `file://` 경로에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 이미지](../../visual-cpp-samples.md)<br/>
 [CAsyncMonikerFile 클래스](../../mfc/reference/casyncmonikerfile-class.md)<br/>

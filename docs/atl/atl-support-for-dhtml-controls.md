@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DHTML controls, ATL support
 - DHTML controls
 ms.assetid: 4ba98098-da5d-4362-96ad-8372f816c307
-ms.openlocfilehash: e0aa7c7d997ba00495f0ed05ad5e0dfc4b5773a3
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: dd8ac616d127c3307c1c432c0b3c9bc2ef1d6181
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849409"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265264"
 ---
 # <a name="atl-support-for-dhtml-controls"></a>DHTML 컨트롤에 대한 ATL 지원
 
@@ -29,7 +29,7 @@ DHTML 컨트롤 DHTML 컨트롤에 추가 디스패치 인터페이스가 포함
 
 웹 브라우저 또는 ActiveX Control Test Container와 같은 다른 컨테이너에서 ATL DHTML 컨트롤을 볼 수 있습니다.
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [DHTML 컨트롤 프로젝트의 요소 식별](../atl/identifying-the-elements-of-the-dhtml-control-project.md)<br/>
 DHTML 컨트롤 프로젝트의 요소를 설명합니다.
@@ -53,4 +53,3 @@ DHTML 컨트롤을 만드는 단계를 나열 합니다.
 
 [ATL](../atl/active-template-library-atl-concepts.md)<br/>
 액티브 템플릿 라이브러리를 사용하여 프로그래밍하는 방법에 대한 개념 항목의 링크를 제공합니다.
-

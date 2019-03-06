@@ -38,12 +38,12 @@ helpviewer_keywords:
 - CRectTracker [MFC], m_rect
 - CRectTracker [MFC], m_sizeMin
 ms.assetid: 99caa7f2-3c0d-4a42-bbee-e5d1d342d4ee
-ms.openlocfilehash: c82b06903f0705a79a15b263b1dbdfc6aee4c8ca
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 1834c378246835314002cdf05fe9a294b609c4e4
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176512"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57259583"
 ---
 # <a name="crecttracker-class"></a>CRectTracker 클래스
 
@@ -77,7 +77,7 @@ class CRectTracker
 |[CRectTracker::OnChangedRect](#onchangedrect)|사각형 크기를 조정 되거나 이동 된 경우 호출 됩니다.|
 |[CRectTracker::SetCursor](#setcursor)|사각형을 통해 해당 위치에 따라 커서를 설정합니다.|
 |[CRectTracker::Track](#track)|사각형을 조작할 수 있습니다.|
-|[:: Trackrubberband](#trackrubberband)|사용자 "고무 밴드"를 선택할 수 있습니다.|
+|[CRectTracker::TrackRubberBand](#trackrubberband)|사용자 "고무 밴드"를 선택할 수 있습니다.|
 
 ### <a name="public-data-members"></a>공용 데이터 멤버
 
@@ -100,7 +100,7 @@ class CRectTracker
 
 사용 하 여 대 한 자세한 내용은 `CRectTracker`, 문서를 참조 하세요 [추적기](../../mfc/trackers.md)합니다.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CRectTracker`
 
@@ -152,7 +152,7 @@ CRectTracker(
 사각형 개체의 좌표를 지정 합니다.
 
 *nStyle*<br/>
-스타일을 지정 합니다 `CRectTracker` 개체입니다. 다음과 같은 스타일 지원 됩니다.
+스타일을 지정 합니다 `CRectTracker` 개체입니다. 지원되는 스타일은 다음과 같습니다.
 
 - `CRectTracker::solidLine` 사각형 테두리에 실선이 표시를 사용 합니다.
 
@@ -445,7 +445,7 @@ ESC 키를 누르는 경우 추적 프로세스는 중지, 추적기에서 저�
 
 하는 경우 *bAllowInvert* 가 TRUE 이면 추적 사각형 x 축 또는 y 축에서 반전 시킬 수 있습니다.
 
-##  <a name="trackrubberband"></a>  :: Trackrubberband
+##  <a name="trackrubberband"></a>  CRectTracker::TrackRubberBand
 
 고무 밴드 선택 하려면이 함수를 호출 합니다.
 
@@ -479,7 +479,7 @@ TRUE 인 경우 x 축 또는 y 축; 사각형을 반전 시킬 수 있습니다.
 
 추적 된 오른쪽 아래 핸들에서 고무 밴드 형식 선택 하 여 수행 됩니다. 반전 허용 되는 경우 사각형 크기를 조정할 수 중 하나를 왼쪽 또는 아래쪽 및 오른쪽을 끌어서 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MFC 샘플 추적기](../../visual-cpp-samples.md)<br/>
 [MFC 샘플 DRAWCLI](../../visual-cpp-samples.md)<br/>

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - CMFCToolBarFontComboBox [MFC], GetFontDesc
 - CMFCToolBarFontComboBox [MFC], SetFont
 ms.assetid: 25f8e08c-aadd-4cb5-9581-a99d49d444b1
-ms.openlocfilehash: 28b2b77ed28453f148786ba7109743a0b7baf598
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4ab4eece67406b1c5a52669beafc9bfd8acd32e6
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50429265"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57283724"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox 클래스
 
@@ -65,7 +65,7 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
 
 Win32 함수를 호출 하는 글꼴 콤보 상자 단추 [EnumFontFamiliesEx](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesexa) 시스템에 사용할 수 있는 화면 및 프린터 글꼴을 확인 하려면.
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 [CObject](../../mfc/reference/cobject-class.md)
 
@@ -205,7 +205,7 @@ BOOL SetFont(
 
 하는 경우 *bExact* 가 TRUE 이면이 메서드는 정확 하 게으로 지정 된 이름과 일치 하는 글꼴 선택 *lpszName*합니다. 하는 경우 *bExact* 은 FALSE로 지정 된 텍스트를 사용 하 여 시작 하는 글꼴을이 메서드가 선택 *lpszName* 으로 지정 된 문자 집합을 사용 하 여 *nCharSet*합니다. 하는 경우 *nCharSet* 설정할지 DEFAULT_CHARSET, 문자 집합 됩니다 무시 되며 *lpszName* 글꼴을 선택 하는 데 사용할 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [클래스](../../mfc/reference/mfc-classes.md)<br/>
@@ -214,5 +214,4 @@ BOOL SetFont(
 [CMFCToolBarComboBoxButton 클래스](../../mfc/reference/cmfctoolbarcomboboxbutton-class.md)<br/>
 [CMFCFontInfo 클래스](../../mfc/reference/cmfcfontinfo-class.md)<br/>
 [CMFCToolBar::ReplaceButton](../../mfc/reference/cmfctoolbar-class.md#replacebutton)<br/>
-[연습: 도구 모음에 컨트롤 배치](../../mfc/walkthrough-putting-controls-on-toolbars.md)
-
+[연습: 도구 모음에 컨트롤 넣기](../../mfc/walkthrough-putting-controls-on-toolbars.md)

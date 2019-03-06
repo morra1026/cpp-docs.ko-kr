@@ -7,12 +7,12 @@ helpviewer_keywords:
 - styles [MFC], CSliderCtrl
 - styles [MFC], slider controls
 ms.assetid: 64c491fc-5af1-4f97-ae30-854071b3dc02
-ms.openlocfilehash: 7b143d0d27bcb8ee975d4056cf0a307db7b330c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c6765445552826b71cca278c1fbbc66e500cb75a
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588736"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57296851"
 ---
 # <a name="slider-control-styles"></a>슬라이더 컨트롤 스타일
 
@@ -28,8 +28,7 @@ TBS_AUTOTICKS 스타일 늘어날 때마다 눈금 값의 범위에 있는 슬�
 
 기본적으로 슬라이더 컨트롤을 슬라이더의 길이 선택 범위 변경에 따라 달라 집니다. 슬라이더 컨트롤 TBS_FIXEDLENGTH 스타일 있으면 슬라이더의 길이 동일 선택 범위를 변경 하는 경우에 합니다. TBS_NOTHUMB 스타일에 있는 슬라이더 컨트롤에서 슬라이더를 포함 하지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CSliderCtrl 사용](../mfc/using-csliderctrl.md)<br/>
 [컨트롤](../mfc/controls-mfc.md)
-

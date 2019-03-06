@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Windows API [MFC], encapsulation by MFC
 - encapsulated Win32 API [MFC]
 ms.assetid: 3be0fec8-9843-4119-ae42-ece993ef500b
-ms.openlocfilehash: ff29a867a8351a51ad7f09a5ca31d871fc67bab8
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 933fcf97c24ed0903395e2c718f8c89d42473494
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589308"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57269021"
 ---
 # <a name="framework-mfc"></a>프레임워크(MFC)
 
@@ -27,7 +27,7 @@ Microsoft Foundation 클래스 (MFC) 라이브러리 프레임 워크를 사용 
 
 캡슐화 된 c + + 클래스를 제공 하는 의미 `CWnd`, 예를 들어, 형식의 멤버 변수를 포함 `HWND`를 사용 하는 Win32 함수에 대 한 호출을 캡슐화 하는 클래스의 멤버 함수 및는 `HWND` 매개 변수로. 클래스 멤버 함수에는 일반적으로 캡슐화 하 여 Win32 함수 이름이 같은 경우
 
-## <a name="in-this-section"></a>섹션 내용
+## <a name="in-this-section"></a>단원 내용
 
 [SDI 및 MDI](../mfc/sdi-and-mdi.md)
 
@@ -49,6 +49,6 @@ Microsoft Foundation 클래스 (MFC) 라이브러리 프레임 워크를 사용 
 
 [창 개체](../mfc/window-objects.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[클래스를 사용하여 Windows 응용 프로그램 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)
+[클래스를 사용하여 Windows 애플리케이션 작성](../mfc/using-the-classes-to-write-applications-for-windows.md)

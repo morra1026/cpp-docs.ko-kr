@@ -6,12 +6,12 @@ helpviewer_keywords:
 - WinInet classes [MFC], vs. WinSock
 - WinInet classes [MFC], Internet client applications
 ms.assetid: dc0f9f47-3184-4e7a-8074-2c63e0359885
-ms.openlocfilehash: 2bca338aa2a1b18e8c9ab41a887678767cf6c8c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6da2ef1595e525bcfd407d67c806aa80cf90f1c3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50636863"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57286766"
 ---
 # <a name="how-wininet-makes-it-easier-to-create-internet-client-applications"></a>WinInet을 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법
 
@@ -45,8 +45,7 @@ Visual c + +는 두 가지 방법으로 WinInet을 사용 하 여 제공 합니�
 
 인터넷 상의 다른 컴퓨터에 클라이언트 컴퓨터에서 수행할 수 있는 많은 작업에는 시간이 오래 걸릴 수 있습니다. 이러한 작업의 속도 일반적으로 네트워크 연결 속도 따라 제한 하지만 다른 네트워크 트래픽 및 복잡 한 작업으로도 적용 될 수 있습니다. 예를 들어 원격 FTP 서버에 연결할 필요 컴퓨터 먼저 해당 주소를 찾으려면 해당 서버 이름을 찾습니다. 해당 주소에서 서버에 연결할 응용 프로그램 시도 됩니다. 연결이 열리면 컴퓨터와 원격 서버는 파일 전송 프로토콜을 사용 하 여 대화 전에 시작 파일을 검색 하는 연결을 실제로 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Win32 인터넷 확장(WinInet)](../mfc/win32-internet-extensions-wininet.md)<br/>
-[MFC를 사용하여 인터넷 클라이언트 응용 프로그램을 손쉽게 만드는 방법](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)
-
+[MFC를 사용하여 인터넷 클라이언트 애플리케이션을 손쉽게 만드는 방법](../mfc/how-mfc-makes-it-easier-to-create-internet-client-applications.md)

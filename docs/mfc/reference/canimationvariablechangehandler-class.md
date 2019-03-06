@@ -10,12 +10,12 @@ helpviewer_keywords:
 - CAnimationVariableChangeHandler [MFC], OnValueChanged
 - CAnimationVariableChangeHandler [MFC], SetAnimationController
 ms.assetid: 2ea4996d-5c04-4dfc-be79-d42d55050795
-ms.openlocfilehash: 589691f8bb2bc14eba46245082ff972ca6b97fcc
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 92189ce5ea76811496d4462aa4254bbd03ebb219
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50604384"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57257607"
 ---
 # <a name="canimationvariablechangehandler-class"></a>CAnimationVariableChangeHandler 클래스
 
@@ -47,7 +47,7 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 
 이 이벤트 처리기 생성 되어 전달할 `IUIAnimationVariable::SetVariableChangeHandler` 메서드를 호출할 때 `CAnimationVariable::EnableValueChangedEvent` 또는 `CAnimationBaseObject::EnableValueChangedEvent` (그러면 애니메이션 개체에 캡슐화 하는 모든 애니메이션 변수에 대 한이 이벤트).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CUIAnimationCallbackBase`
 
@@ -73,7 +73,7 @@ IFACEMETHOD(OnValueChanged) (
 
 ### <a name="parameters"></a>매개 변수
 
-*스토리 보드*<br/>
+*storyboard*<br/>
 변수의 애니메이션을 적용 하는 스토리 보드입니다.
 
 *variable*<br/>
@@ -102,6 +102,6 @@ void SetAnimationController(CAnimationController* pAnimationController);
 *pAnimationController*<br/>
 이벤트를 수신 하는 애니메이션 컨트롤러에 대 한 포인터입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [클래스](../../mfc/reference/mfc-classes.md)

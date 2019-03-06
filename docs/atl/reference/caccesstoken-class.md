@@ -52,12 +52,12 @@ f1_keywords:
 helpviewer_keywords:
 - CAccessToken class
 ms.assetid: bb5c5945-56a5-4083-b442-76573cee83ab
-ms.openlocfilehash: e53160860211ba09114f2d4d101a2eaaf7de941f
-ms.sourcegitcommit: c85c8a1226d8fbbaa29f4691ed719f8e6cc6575c
+ms.openlocfilehash: eb49ee135dce4ee0d5e37acd2382a34e1d99b083
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54894245"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57265485"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken 클래스
 
@@ -1179,7 +1179,7 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
 
 기본 그룹에는이 액세스 토큰이 적용 되는 동안 생성 된 새 개체에 대 한 기본 그룹이입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [ATLSecurity 샘플](../../visual-cpp-samples.md)<br/>
 [액세스 토큰](/windows/desktop/SecAuthZ/access-tokens)<br/>

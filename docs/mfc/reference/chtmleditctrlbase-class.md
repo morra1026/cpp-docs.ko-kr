@@ -220,12 +220,12 @@ helpviewer_keywords:
 - CHtmlEditCtrlBase [MFC], Unlink
 - CHtmlEditCtrlBase [MFC], UnorderList
 ms.assetid: e0cc74b4-8320-4570-b673-16c03d2ae266
-ms.openlocfilehash: 11bfa8304b51ed25b934a97109db7da7bb39f49a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 09d4c4f1fde563d82fa007a96723f078eb31dc1b
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50590140"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423237"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase 클래스
 
@@ -362,7 +362,7 @@ template <class T> class CHtmlEditCtrlBase
 
 `CHtmlEditCtrlBase` 완결 없습니다. HTML 편집 WebBrowser의 기능을 노출 하는 파생된 클래스에 대 한 기본 클래스로 설계 되었습니다 (참조 [CHtmlEditCtrl](../../mfc/reference/chtmleditctrl-class.md) 하 고 [CHtmlEditView](../../mfc/reference/chtmleditview-class.md)).
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `CHtmlEditCtrlBase`
 
@@ -398,7 +398,7 @@ HRESULT AddToGlyphTable(
 태그 형식: 0만을 태그에 대 한 이미지를 의미 합니다. 1만 닫는 태그에 대 한 이미지를 의미 합니다. 2는 모두 태그와 닫는 태그에 대 한 이미지를 의미 합니다. Br 및 주석 등 단일 태그는 0으로 설정 태그 형식을 사용 하 여 추가 되어야 합니다.
 
 *nAlignment*<br/>
-맞춤 (사각형 요소에만 해당):이 매개 변수 맞춤 특성을 사용 하 여 요소에 대 한 이미지를 나타냅니다. 왼쪽 = 0, center = 1, 오른쪽 = 2, 및 undefined = 3. 왼쪽, 오른쪽 또는 가운데 특성 수 명시적으로 설정 해야 요소입니다.
+맞춤 (사각형 요소에만 해당): 이 매개 변수 맞춤 특성을 사용 하 여 요소에 대 한 이미지를 나타냅니다. 왼쪽 = 0, center = 1, 오른쪽 = 2, 및 undefined = 3. 왼쪽, 오른쪽 또는 가운데 특성 수 명시적으로 설정 해야 요소입니다.
 
 *nPosInfo*<br/>
 위치 정보입니다. 어떤 연계 스타일 시트 (CSS) 위치 값 정적 위치에 적용 되는 문자 모양 결정 위치 = 0, 절대 위치 = 1, 상대 위치 = 2, 및 모든 = 3. 이 필드를 사용 하면 하나의 문자 모양 위치 하지 않습니다 하는 경우 태그 및 태그에 위치할 때 앵커 지점을 표시할 다른 문자 모양 지정할 수 있습니다.
@@ -418,9 +418,9 @@ HRESULT AddToGlyphTable(
 
 ### <a name="remarks"></a>설명
 
-매개 변수에 대 한 자세한 내용은 "문자 모양 테이블 문자열 형식으로"를 참조 하세요 [편집 문자 모양을 사용 하 여](https://msdn.microsoft.com/library/aa969614.aspx)입니다.
+매개 변수에 대 한 자세한 내용은 "문자 모양 테이블 문자열 형식으로"를 참조 하세요 [편집 문자 모양을 사용 하 여](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa969614\(v=vs.85\))입니다.
 
-이 메서드는 전송 된 [IDM_ADDTOGLYPHTABLE 명령 ID](https://msdn.microsoft.com/library/aa769891.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_ADDTOGLYPHTABLE 명령 ID](/previous-versions/aa769891\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="bold"></a>  CHtmlEditCtrlBase::Bold
 
@@ -436,7 +436,7 @@ HRESULT Bold() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BOLD 명령 ID](https://msdn.microsoft.com/library/aa769861.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BOLD 명령 ID](/previous-versions/aa769861\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="button"></a>  CHtmlEditCtrlBase::Button
 
@@ -457,7 +457,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BUTTON 명령 ID](https://msdn.microsoft.com/library/aa769966.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BUTTON 명령 ID](/previous-versions/aa769966\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="checkbox"></a>  CHtmlEditCtrlBase::CheckBox
 
@@ -478,7 +478,7 @@ Check box 컨트롤의 ID입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_CHECKBOX 명령 ID](https://msdn.microsoft.com/library/aa769972.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_CHECKBOX 명령 ID](/previous-versions/aa769972\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="clearselection"></a>  CHtmlEditCtrlBase::ClearSelection
 
@@ -494,7 +494,7 @@ HRESULT ClearSelection() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_CLEARSELECTION 명령 ID](https://msdn.microsoft.com/library/aa770038.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_CLEARSELECTION 명령 ID](/previous-versions/aa770038\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="copy"></a>  CHtmlEditCtrlBase::Copy
 
@@ -510,7 +510,7 @@ HRESULT Copy() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_COPY 명령 ID](https://msdn.microsoft.com/library/aa769872.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_COPY 명령 ID](/previous-versions/aa769872\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="cut"></a>  CHtmlEditCtrlBase::Cut
 
@@ -526,7 +526,7 @@ HRESULT Cut() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_CUT 명령 ID](https://msdn.microsoft.com/library/aa769875.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_CUT 명령 ID](/previous-versions/aa769875\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="delete"></a>  CHtmlEditCtrlBase::Delete
 
@@ -542,7 +542,7 @@ HRESULT Delete() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_DELETE 명령 ID](https://msdn.microsoft.com/library/aa769876.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_DELETE 명령 ID](/previous-versions/aa769876\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="dropdownbox"></a>  CHtmlEditCtrlBase::DropDownBox
 
@@ -563,7 +563,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_DROPDOWNBOX 명령 ID](https://msdn.microsoft.com/library/aa769984.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_DROPDOWNBOX 명령 ID](/previous-versions/aa769984\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="emptyglyphtable"></a>  CHtmlEditCtrlBase::EmptyGlyphTable
 
@@ -579,7 +579,7 @@ HRESULT EmptyGlyphTable() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_EMPTYGLYPHTABLE 명령 ID](https://msdn.microsoft.com/library/aa769907.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_EMPTYGLYPHTABLE 명령 ID](/previous-versions/aa769907\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="execcommand"></a>  CHtmlEditCtrlBase::ExecCommand
 
@@ -603,7 +603,7 @@ HRESULT ExecCommand(
 ### <a name="parameters"></a>매개 변수
 
 *cmdID*<br/>
-실행할 명령 ID입니다. 목록에 대해서 [MSHTML 명령 식별자](https://msdn.microsoft.com/library/aa741315.aspx)합니다.
+실행할 명령 ID입니다. 목록에 대해서 [MSHTML 명령 식별자](/previous-versions/aa741315\(v=vs.85\))합니다.
 
 *cmdExecOpt*<br/>
 가져온 값을 [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) 개체 명령을 실행 해야 하는 방법을 설명 하는 열거형입니다.
@@ -639,7 +639,7 @@ HRESULT Font() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_FONT 명령 ID](https://msdn.microsoft.com/library/aa769913.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_FONT 명령 ID](/previous-versions/aa769913\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getabsoluteposition"></a>  CHtmlEditCtrlBase::GetAbsolutePosition
 
@@ -660,7 +660,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_ABSOLUTE_POSITION 명령 ID](https://msdn.microsoft.com/library/aa769889.aspx)합니다.
+자세한 내용은 [IDM_ABSOLUTE_POSITION 명령 ID](/previous-versions/aa769889\(v=vs.85\))합니다.
 
 ##  <a name="getbackcolor"></a>  CHtmlEditCtrlBase::GetBackColor
 
@@ -681,7 +681,7 @@ HRESULT GetBackColor(int& nColor) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BACKCOLOR 명령 ID](https://msdn.microsoft.com/library/aa769858.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BACKCOLOR 명령 ID](/previous-versions/aa769858\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getblockformat"></a>  CHtmlEditCtrlBase::GetBlockFormat
 
@@ -702,7 +702,7 @@ HRESULT GetBlockFormat(CString& strFormat) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BLOCKFMT 명령 ID](https://msdn.microsoft.com/library/aa769883.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BLOCKFMT 명령 ID](/previous-versions/aa769883\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getblockformatnames"></a>  CHtmlEditCtrlBase::GetBlockFormatNames
 
@@ -723,7 +723,7 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_GETBLOCKFMTS 명령 ID](https://msdn.microsoft.com/library/aa769884.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_GETBLOCKFMTS 명령 ID](/previous-versions/aa769884\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getbookmark"></a>  CHtmlEditCtrlBase::GetBookMark
 
@@ -744,7 +744,7 @@ HRESULT GetBookMark(CString& strAnchor) const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_BOOKMARK 명령 ID](https://msdn.microsoft.com/library/aa769873.aspx)합니다.
+자세한 내용은 [IDM_BOOKMARK 명령 ID](/previous-versions/aa769873\(v=vs.85\))합니다.
 
 ##  <a name="getdocument"></a>  CHtmlEditCtrlBase::GetDocument
 
@@ -852,7 +852,7 @@ HRESULT GetFontFace(CString& strFace) const;
 
 현재 선택 영역을 둘 이상의 글꼴을 사용 하는 경우 *strFace* 빈 문자열입니다.
 
-이 메서드는 전송 된 [IDM_FONTNAME 명령 ID](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_FONTNAME 명령 ID](/previous-versions/aa769880\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getfontsize"></a>  CHtmlEditCtrlBase::GetFontSize
 
@@ -873,7 +873,7 @@ HTML 글꼴 크기 (1-7)을 반환합니다. 선택한 여러 글꼴 크기를 �
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_FONTSIZE 명령 ID](https://msdn.microsoft.com/library/aa769881.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_FONTSIZE 명령 ID](/previous-versions/aa769881\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getforecolor"></a>  CHtmlEditCtrlBase::GetForeColor
 
@@ -894,7 +894,7 @@ HRESULT GetForeColor(int& nColor);
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_FORECOLOR 명령 ID](https://msdn.microsoft.com/library/aa769882.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_FORECOLOR 명령 ID](/previous-versions/aa769882\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getframezone"></a>  CHtmlEditCtrlBase::GetFrameZone
 
@@ -915,7 +915,7 @@ HRESULT GetFrameZone(short& nZone) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_GETFRAMEZONE 명령 ID](https://msdn.microsoft.com/library/aa769916.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_GETFRAMEZONE 명령 ID](/previous-versions/aa769916\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="getisdirty"></a>  CHtmlEditCtrlBase::GetIsDirty
 
@@ -948,7 +948,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWALIGNEDSITETAGS 명령 ID](https://msdn.microsoft.com/library/aa769947.aspx)합니다.
+자세한 내용은 [IDM_SHOWALIGNEDSITETAGS 명령 ID](/previous-versions/aa769947\(v=vs.85\))합니다.
 
 ##  <a name="getshowalltags"></a>  CHtmlEditCtrlBase::GetShowAllTags
 
@@ -969,7 +969,7 @@ WebBrowser; 문서의 모든 태그의 위치를 표시할 문자 모양으로 �
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWALLTAGS 명령 ID](https://msdn.microsoft.com/library/aa769948.aspx)합니다.
+자세한 내용은 [IDM_SHOWALLTAGS 명령 ID](/previous-versions/aa769948\(v=vs.85\))합니다.
 
 ##  <a name="getshowareatags"></a>  CHtmlEditCtrlBase::GetShowAreaTags
 
@@ -990,7 +990,7 @@ TRUE 이면 WebBrowser 표시 영역 태그에 대 한 문자 모양을 false를
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWAREATAGS 명령 ID](https://msdn.microsoft.com/library/aa769949.aspx)합니다.
+자세한 내용은 [IDM_SHOWAREATAGS 명령 ID](/previous-versions/aa769949\(v=vs.85\))합니다.
 
 ##  <a name="getshowbrtags"></a>  CHtmlEditCtrlBase::GetShowBRTags
 
@@ -1011,7 +1011,7 @@ WebBrowser 표시 br 태그에 대 한 문자 모양을 FALSE 없으면 TRUE입�
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWWBRTAGS 명령 ID](https://msdn.microsoft.com/library/aa769956.aspx)합니다.
+자세한 내용은 [IDM_SHOWWBRTAGS 명령 ID](/previous-versions/aa769956\(v=vs.85\))합니다.
 
 ##  <a name="getshowcommenttags"></a>  CHtmlEditCtrlBase::GetShowCommentTags
 
@@ -1032,7 +1032,7 @@ WebBrowser 표시 주석 태그 문자 모양을 FALSE 없으면 TRUE입니다.
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWCOMMENTTAGS 명령 ID](https://msdn.microsoft.com/library/aa769950.aspx)합니다.
+자세한 내용은 [IDM_SHOWCOMMENTTAGS 명령 ID](/previous-versions/aa769950\(v=vs.85\))합니다.
 
 ##  <a name="getshowmisctags"></a>  CHtmlEditCtrlBase::GetShowMiscTags
 
@@ -1053,7 +1053,7 @@ WebBrowser Microsoft Internet Explorer 4.0에 없으면 FALSE에 표시 된 모�
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWMISCTAGS 명령 ID](https://msdn.microsoft.com/library/aa769952.aspx)합니다.
+자세한 내용은 [IDM_SHOWMISCTAGS 명령 ID](/previous-versions/aa769952\(v=vs.85\))합니다.
 
 ##  <a name="getshowscripttags"></a>  CHtmlEditCtrlBase::GetShowScriptTags
 
@@ -1074,7 +1074,7 @@ TRUE 이면 WebBrowser 표시는 모든 스크립트 태그 문자 모양을 fal
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWSCRIPTTAGS 명령 ID](https://msdn.microsoft.com/library/aa769953.aspx)합니다.
+자세한 내용은 [IDM_SHOWSCRIPTTAGS 명령 ID](/previous-versions/aa769953\(v=vs.85\))합니다.
 
 ##  <a name="getshowstyletags"></a>  CHtmlEditCtrlBase::GetShowStyleTags
 
@@ -1095,7 +1095,7 @@ TRUE 이면 WebBrowser 표시는 모든 스타일 태그 문자 모양을 false�
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWSTYLETAGS 명령 ID](https://msdn.microsoft.com/library/aa769954.aspx)합니다.
+자세한 내용은 [IDM_SHOWSTYLETAGS 명령 ID](/previous-versions/aa769954\(v=vs.85\))합니다.
 
 ##  <a name="getshowunknowntags"></a>  CHtmlEditCtrlBase::GetShowUnknownTags
 
@@ -1116,7 +1116,7 @@ TRUE 이면 WebBrowser 표시 모든 알 수 없는 태그 문자 모양을 fals
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [IDM_SHOWUNKNOWNTAGS 명령 ID](https://msdn.microsoft.com/library/aa769955.aspx)합니다.
+자세한 내용은 [IDM_SHOWUNKNOWNTAGS 명령 ID](/previous-versions/aa769955\(v=vs.85\))합니다.
 
 ##  <a name="horizontalline"></a>  CHtmlEditCtrlBase::HorizontalLine
 
@@ -1137,7 +1137,7 @@ HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_HORIZONTALLINE 명령 ID](https://msdn.microsoft.com/library/aa769968.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_HORIZONTALLINE 명령 ID](/previous-versions/aa769968\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="hyperlink"></a>  CHtmlEditCtrlBase::HyperLink
 
@@ -1158,7 +1158,7 @@ HRESULT HyperLink(LPCTSTR szUrl = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_HYPERLINK 명령 ID](https://msdn.microsoft.com/library/aa769874.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_HYPERLINK 명령 ID](/previous-versions/aa769874\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="ie50paste"></a>  CHtmlEditCtrlBase::IE50Paste
 
@@ -1179,7 +1179,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_IE50_PASTE 명령 ID](https://msdn.microsoft.com/library/aa769922.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_IE50_PASTE 명령 ID](/previous-versions/aa769922\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="iframe"></a>  CHtmlEditCtrlBase::Iframe
 
@@ -1200,7 +1200,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_IFRAME 명령 ID](https://msdn.microsoft.com/library/aa769969.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_IFRAME 명령 ID](/previous-versions/aa769969\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="image"></a>  CHtmlEditCtrlBase::Image
 
@@ -1221,7 +1221,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_IMAGE 명령 ID](https://msdn.microsoft.com/library/aa769970.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_IMAGE 명령 ID](/previous-versions/aa769970\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="indent"></a>  CHtmlEditCtrlBase::Indent
 
@@ -1237,7 +1237,7 @@ HRESULT Indent() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INDENT 명령 ID](https://msdn.microsoft.com/library/aa769963.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INDENT 명령 ID](/previous-versions/aa769963\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insfieldset"></a>  CHtmlEditCtrlBase::InsFieldSet
 
@@ -1258,7 +1258,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSFIELDSET 명령 ID](https://msdn.microsoft.com/library/aa769967.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSFIELDSET 명령 ID](/previous-versions/aa769967\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputbutton"></a>  CHtmlEditCtrlBase::InsInputButton
 
@@ -1279,7 +1279,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTBUTTON 명령 ID](https://msdn.microsoft.com/library/aa769971.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTBUTTON 명령 ID](/previous-versions/aa769971\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputhidden"></a>  CHtmlEditCtrlBase::InsInputHidden
 
@@ -1300,7 +1300,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTHIDDEN 명령 ID](https://msdn.microsoft.com/library/aa769974.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTHIDDEN 명령 ID](/previous-versions/aa769974\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputimage"></a>  CHtmlEditCtrlBase::InsInputImage
 
@@ -1321,7 +1321,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTIMAGE 명령 ID](https://msdn.microsoft.com/library/aa769975.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTIMAGE 명령 ID](/previous-versions/aa769975\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputpassword"></a>  CHtmlEditCtrlBase::InsInputPassword
 
@@ -1342,7 +1342,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTPASSWORD 명령 ID](https://msdn.microsoft.com/library/aa769976.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTPASSWORD 명령 ID](/previous-versions/aa769976\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputreset"></a>  CHtmlEditCtrlBase::InsInputReset
 
@@ -1363,7 +1363,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTRESET 명령 ID](https://msdn.microsoft.com/library/aa769978.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTRESET 명령 ID](/previous-versions/aa769978\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputsubmit"></a>  CHtmlEditCtrlBase::InsInputSubmit
 
@@ -1384,7 +1384,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTSUBMIT 명령 ID](https://msdn.microsoft.com/library/aa769979.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTSUBMIT 명령 ID](/previous-versions/aa769979\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="insinputupload"></a>  CHtmlEditCtrlBase::InsInputUpload
 
@@ -1405,7 +1405,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_INSINPUTUPLOAD 명령 ID](https://msdn.microsoft.com/library/aa769973.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_INSINPUTUPLOAD 명령 ID](/previous-versions/aa769973\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="is1delement"></a>  CHtmlEditCtrlBase::Is1DElement
 
@@ -1426,7 +1426,7 @@ HRESULT Is1DElement(bool& bValue) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_1D_ELEMENT 명령 ID](https://msdn.microsoft.com/library/aa769885.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_1D_ELEMENT 명령 ID](/previous-versions/aa769885\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="is2delement"></a>  CHtmlEditCtrlBase::Is2DElement
 
@@ -1447,7 +1447,7 @@ HRESULT Is2DElement(bool& bValue) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_2D_ELEMENT 명령 ID](https://msdn.microsoft.com/library/aa769886.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_2D_ELEMENT 명령 ID](/previous-versions/aa769886\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="italic"></a>  CHtmlEditCtrlBase::Italic
 
@@ -1463,7 +1463,7 @@ HRESULT Italic() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_ITALIC 명령 ID](https://msdn.microsoft.com/library/aa769988.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_ITALIC 명령 ID](/previous-versions/aa769988\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="justifycenter"></a>  CHtmlEditCtrlBase::JustifyCenter
 
@@ -1479,7 +1479,7 @@ HRESULT JustifyCenter() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_JUSTIFYCENTER 명령 ID](https://msdn.microsoft.com/library/aa769989.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_JUSTIFYCENTER 명령 ID](/previous-versions/aa769989\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="justifyleft"></a>  CHtmlEditCtrlBase::JustifyLeft
 
@@ -1495,7 +1495,7 @@ HRESULT JustifyLeft() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_JUSTIFYLEFT 명령 ID](https://msdn.microsoft.com/library/aa770011.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_JUSTIFYLEFT 명령 ID](/previous-versions/aa770011\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="justifyright"></a>  CHtmlEditCtrlBase::JustifyRight
 
@@ -1511,7 +1511,7 @@ HRESULT JustifyRight() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_JUSTIFYRIGHT 명령 ID](https://msdn.microsoft.com/library/aa770013.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_JUSTIFYRIGHT 명령 ID](/previous-versions/aa770013\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="listbox"></a>  CHtmlEditCtrlBase::ListBox
 
@@ -1532,7 +1532,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_LISTBOX 명령 ID](https://msdn.microsoft.com/library/aa769985.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_LISTBOX 명령 ID](/previous-versions/aa769985\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="marquee"></a>  CHtmlEditCtrlBase::Marquee
 
@@ -1553,7 +1553,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_MARQUEE 명령 ID](https://msdn.microsoft.com/library/aa769981.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_MARQUEE 명령 ID](/previous-versions/aa769981\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="newdocument"></a>  CHtmlEditCtrlBase::NewDocument
 
@@ -1586,7 +1586,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_ORDERLIST 명령 ID](https://msdn.microsoft.com/library/aa769982.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_ORDERLIST 명령 ID](/previous-versions/aa769982\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="outdent"></a>  CHtmlEditCtrlBase::Outdent
 
@@ -1602,7 +1602,7 @@ HRESULT Outdent() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_OUTDENT 명령 ID](https://msdn.microsoft.com/library/aa770015.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_OUTDENT 명령 ID](/previous-versions/aa770015\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="paragraph"></a>  CHtmlEditCtrlBase::Paragraph
 
@@ -1623,7 +1623,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_PARAGRAPH 명령 ID](https://msdn.microsoft.com/library/aa769983.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_PARAGRAPH 명령 ID](/previous-versions/aa769983\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="paste"></a>  CHtmlEditCtrlBase::Paste
 
@@ -1639,7 +1639,7 @@ HRESULT Paste() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_PASTE 명령 ID](https://msdn.microsoft.com/library/aa770017.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_PASTE 명령 ID](/previous-versions/aa770017\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="printdocument"></a>  CHtmlEditCtrlBase::PrintDocument
 
@@ -1665,7 +1665,7 @@ TRUE 이면 인쇄 대화 상자를 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_PRINT 명령 ID](https://msdn.microsoft.com/library/aa769937.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_PRINT 명령 ID](/previous-versions/aa769937\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="printpreview"></a>  CHtmlEditCtrlBase::PrintPreview
 
@@ -1687,7 +1687,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_PRINTPREVIEW 명령 ID](https://msdn.microsoft.com/library/aa769938.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_PRINTPREVIEW 명령 ID](/previous-versions/aa769938\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="querystatus"></a>  CHtmlEditCtrlBase::QueryStatus
 
@@ -1725,7 +1725,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_RADIOBUTTON 명령 ID](https://msdn.microsoft.com/library/aa769977.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_RADIOBUTTON 명령 ID](/previous-versions/aa769977\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="refreshdocument"></a>  CHtmlEditCtrlBase::RefreshDocument
 
@@ -1741,7 +1741,7 @@ HRESULT RefreshDocument() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_REFRESH 명령 ID](https://msdn.microsoft.com/library/aa770020.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_REFRESH 명령 ID](/previous-versions/aa770020\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="removeformat"></a>  CHtmlEditCtrlBase::RemoveFormat
 
@@ -1757,7 +1757,7 @@ HRESULT RemoveFormat() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_REMOVEFORMAT 명령 ID](https://msdn.microsoft.com/library/aa770021.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_REMOVEFORMAT 명령 ID](/previous-versions/aa770021\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="saveas"></a>  CHtmlEditCtrlBase::SaveAs
 
@@ -1778,7 +1778,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_SAVEAS 명령 ID](https://msdn.microsoft.com/library/aa770024.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_SAVEAS 명령 ID](/previous-versions/aa770024\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="selectall"></a>  CHtmlEditCtrlBase::SelectAll
 
@@ -1794,7 +1794,7 @@ HRESULT SelectAll() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_SELECTALL 명령 ID](https://msdn.microsoft.com/library/aa770025.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_SELECTALL 명령 ID](/previous-versions/aa770025\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="set2dposition"></a>  CHtmlEditCtrlBase::Set2DPosition
 
@@ -1815,7 +1815,7 @@ TRUE 이면 절대적으로 배치 된 요소를 끌어 이동할 수 있습니�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_2D_POSITION 명령 ID](https://msdn.microsoft.com/library/aa769887.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_2D_POSITION 명령 ID](/previous-versions/aa769887\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setabsoluteposition"></a>  CHtmlEditCtrlBase::SetAbsolutePosition
 
@@ -1836,7 +1836,7 @@ True 이면 요소의 위치 속성은 "absolute"; FALSE 인 경우 "정적"입�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_ABSOLUTE_POSITION 명령 ID](https://msdn.microsoft.com/library/aa769889.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_ABSOLUTE_POSITION 명령 ID](/previous-versions/aa769889\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setatomicselection"></a>  CHtmlEditCtrlBase::SetAtomicSelection
 
@@ -1857,7 +1857,7 @@ TRUE 이면 ATOMICSELECTION 특성이 TRUE로 설정 하는 모든 요소가 하
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_ATOMICSELECTION 명령 ID](https://msdn.microsoft.com/library/aa769892.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_ATOMICSELECTION 명령 ID](/previous-versions/aa769892\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setautourldetectmode"></a>  CHtmlEditCtrlBase::SetAutoURLDetectMode
 
@@ -1878,7 +1878,7 @@ TRUE 이면 자동 URL 검색이 사용 됩니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_AUTOURLDETECT_MODE 명령 ID](https://msdn.microsoft.com/library/aa769893.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_AUTOURLDETECT_MODE 명령 ID](/previous-versions/aa769893\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setbackcolor"></a>  CHtmlEditCtrlBase::SetBackColor
 
@@ -1892,10 +1892,10 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 ### <a name="parameters"></a>매개 변수
 
 *nColor*<br/>
-색입니다. 참조 *pvaIn* 에 [IDM_BACKCOLOR 명령 ID](https://msdn.microsoft.com/library/aa769858.aspx)합니다.
+색입니다. 참조 *pvaIn* 에 [IDM_BACKCOLOR 명령 ID](/previous-versions/aa769858\(v=vs.85\))합니다.
 
 *szColor*<br/>
-색입니다. 참조 *pvaIn* 에 [IDM_BACKCOLOR 명령 ID](https://msdn.microsoft.com/library/aa769858.aspx)합니다.
+색입니다. 참조 *pvaIn* 에 [IDM_BACKCOLOR 명령 ID](/previous-versions/aa769858\(v=vs.85\))합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1903,7 +1903,7 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BACKCOLOR_ 명령 ID](https://msdn.microsoft.com/library/aa769858.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BACKCOLOR_ 명령 ID](/previous-versions/aa769858\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setblockformat"></a>  CHtmlEditCtrlBase::SetBlockFormat
 
@@ -1924,7 +1924,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BLOCKFMT_command ID](https://msdn.microsoft.com/library/aa769883.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BLOCKFMT_command ID](/previous-versions/aa769883\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setbookmark"></a>  CHtmlEditCtrlBase::SetBookMark
 
@@ -1945,7 +1945,7 @@ HRESULT SetBookMark(LPCTSTR szAnchorName) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_BOOKMARK 명령 ID](https://msdn.microsoft.com/library/aa769873.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_BOOKMARK 명령 ID](/previous-versions/aa769873\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setcsseditinglevel"></a>  CHtmlEditCtrlBase::SetCSSEditingLevel
 
@@ -1966,7 +1966,7 @@ CSS 수준입니다. CSS 지원 하지 않을 경우 0을 전달 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_CSSEDITING_LEVEL 명령 ID](https://msdn.microsoft.com/library/aa769903.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_CSSEDITING_LEVEL 명령 ID](/previous-versions/aa769903\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setdefaultcomposesettings"></a>  CHtmlEditCtrlBase::SetDefaultComposeSettings
 
@@ -2012,7 +2012,7 @@ HRESULT SetDefaultComposeSettings(
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_COMPOSESETTINGS 명령 ID](https://msdn.microsoft.com/library/aa769901.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_COMPOSESETTINGS 명령 ID](/previous-versions/aa769901\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setdesignmode"></a>  CHtmlEditCtrlBase::SetDesignMode
 
@@ -2050,7 +2050,7 @@ TRUE 이면 사용 하지 않도록 설정 해치 테두리와 사이트 선택�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM_DISABLE_EDITFOCUS_UI 명령 ID](https://msdn.microsoft.com/library/aa769905.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM_DISABLE_EDITFOCUS_UI 명령 ID](/previous-versions/aa769905\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setdocumenthtml"></a>  CHtmlEditCtrlBase::SetDocumentHTML
 
@@ -2088,7 +2088,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM FONTNAME 명령 ID](https://msdn.microsoft.com/library/aa769880.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM FONTNAME 명령 ID](/previous-versions/aa769880\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setfontsize"></a>  CHtmlEditCtrlBase::SetFontSize
 
@@ -2109,7 +2109,7 @@ HTML 글꼴 크기 (1-7). 글꼴 크기를 1로 설정 하는 값이 0입니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM FONTSIZE 명령 ID](https://msdn.microsoft.com/library/aa769881.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM FONTSIZE 명령 ID](/previous-versions/aa769881\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setforecolor"></a>  CHtmlEditCtrlBase::SetForeColor
 
@@ -2134,7 +2134,7 @@ HRESULT SetForeColor(int nColor) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM FORECOLOR 명령 ID](https://msdn.microsoft.com/library/aa769882.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM FORECOLOR 명령 ID](/previous-versions/aa769882\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setie5pastemode"></a>  CHtmlEditCtrlBase::SetIE5PasteMode
 
@@ -2155,7 +2155,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM IE50_PASTE_MODE 명령 ID](https://msdn.microsoft.com/library/aa769923.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM IE50_PASTE_MODE 명령 ID](/previous-versions/aa769923\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setliveresize"></a>  CHtmlEditCtrlBase::SetLiveResize
 
@@ -2176,7 +2176,7 @@ TRUE 이면 하면 요소의 모양을 한 크기 조정 또는 이동 작업 �
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM LIVERESIZE 명령 ID](https://msdn.microsoft.com/library/aa769928.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM LIVERESIZE 명령 ID](/previous-versions/aa769928\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setmultiselect"></a>  CHtmlEditCtrlBase::SetMultiSelect
 
@@ -2197,7 +2197,7 @@ True 이면 SHIFT 또는 CTRL 키를 누르고 있는 경우 한 번에 둘 이�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM MULTIPLESELECTION 명령 ID](https://msdn.microsoft.com/library/aa769929.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM MULTIPLESELECTION 명령 ID](/previous-versions/aa769929\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setoverridecursor"></a>  CHtmlEditCtrlBase::SetOverrideCursor
 
@@ -2218,7 +2218,7 @@ True 이면 WebBrowser 마우스 포인터를 변경 되지 않습니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM OVERRIDE_CURSOR 명령 ID](https://msdn.microsoft.com/library/aa769932.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM OVERRIDE_CURSOR 명령 ID](/previous-versions/aa769932\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setoverwritemode"></a>  CHtmlEditCtrlBase::SetOverwriteMode
 
@@ -2239,7 +2239,7 @@ TRUE 이면 텍스트 입력 모드가 덮어쓰기; FALSE 이면 텍스트 입�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM 덮어쓸 명령 ID](https://msdn.microsoft.com/library/aa770016.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM 덮어쓸 명령 ID](/previous-versions/aa770016\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setrespectvisindesign"></a>  CHtmlEditCtrlBase::SetRespectVisInDesign
 
@@ -2260,7 +2260,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM RESPECTVISIBILITY_INDESIGN 명령 ID](https://msdn.microsoft.com/library/aa770023.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM RESPECTVISIBILITY_INDESIGN 명령 ID](/previous-versions/aa770023\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowalignedsitetags"></a>  CHtmlEditCtrlBase::SetShowAlignedSiteTags
 
@@ -2281,7 +2281,7 @@ TRUE 이면에 있는 모든 요소에 대 한 문자 모양을 표시는 `style
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWALIGNEDSITETAGS 명령 ID](https://msdn.microsoft.com/library/aa769947.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWALIGNEDSITETAGS 명령 ID](/previous-versions/aa769947\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowalltags"></a>  CHtmlEditCtrlBase::SetShowAllTags
 
@@ -2302,7 +2302,7 @@ TRUE 인 경우 문서에서 모든 태그의 위치를 표시할 문자 모양�
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWALLTAGS 명령 ID](https://msdn.microsoft.com/library/aa769948.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWALLTAGS 명령 ID](/previous-versions/aa769948\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowareatags"></a>  CHtmlEditCtrlBase::SetShowAreaTags
 
@@ -2323,7 +2323,7 @@ TRUE 이면 모든 영역 태그 문자 모양을 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWAREATAGS 명령 ID](https://msdn.microsoft.com/library/aa769949.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWAREATAGS 명령 ID](/previous-versions/aa769949\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowbrtags"></a>  CHtmlEditCtrlBase::SetShowBRTags
 
@@ -2344,7 +2344,7 @@ TRUE 이면 모든 br 태그 문자 모양을 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWWBRTAGS 명령 ID](https://msdn.microsoft.com/library/aa769956.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWWBRTAGS 명령 ID](/previous-versions/aa769956\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowcommenttags"></a>  CHtmlEditCtrlBase::SetShowCommentTags
 
@@ -2365,7 +2365,7 @@ TRUE 이면 모든 주석 태그 문자 모양을 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWCOMMENTTAGS 명령 ID](https://msdn.microsoft.com/library/aa769950.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWCOMMENTTAGS 명령 ID](/previous-versions/aa769950\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowmisctags"></a>  CHtmlEditCtrlBase::SetShowMiscTags
 
@@ -2386,7 +2386,7 @@ True 인 경우, Microsoft Internet Explorer 4.0에 표시 된 모든 태그를 
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWMISCTAGS 명령 ID](https://msdn.microsoft.com/library/aa769952.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWMISCTAGS 명령 ID](/previous-versions/aa769952\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowscripttags"></a>  CHtmlEditCtrlBase::SetShowScriptTags
 
@@ -2407,7 +2407,7 @@ TRUE 이면 모든 스크립트 태그 문자 모양을 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWSCRIPTTAGS 명령 ID](https://msdn.microsoft.com/library/aa769953.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWSCRIPTTAGS 명령 ID](/previous-versions/aa769953\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowstyletags"></a>  CHtmlEditCtrlBase::SetShowStyleTags
 
@@ -2428,7 +2428,7 @@ TRUE 이면 모든 스타일 태그 문자 모양을 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWSTYLETAGS 명령 ID](https://msdn.microsoft.com/library/aa769954.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWSTYLETAGS 명령 ID](/previous-versions/aa769954\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="setshowunknowntags"></a>  CHtmlEditCtrlBase::SetShowUnknownTags
 
@@ -2449,7 +2449,7 @@ TRUE 이면 모든 알 수 없는 태그 문자 모양을 표시 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM SHOWUNKNOWNTAGS 명령 ID](https://msdn.microsoft.com/library/aa769955.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM SHOWUNKNOWNTAGS 명령 ID](/previous-versions/aa769955\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="textarea"></a>  CHtmlEditCtrlBase::TextArea
 
@@ -2470,7 +2470,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM TEXTAREA 명령 ID](https://msdn.microsoft.com/library/aa769986.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM TEXTAREA 명령 ID](/previous-versions/aa769986\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="textbox"></a>  CHtmlEditCtrlBase::TextBox
 
@@ -2491,7 +2491,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM 텍스트 상자 명령 ID](https://msdn.microsoft.com/library/aa769980.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM 텍스트 상자 명령 ID](/previous-versions/aa769980\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="unbookmark"></a>  CHtmlEditCtrlBase::UnBookmark
 
@@ -2507,7 +2507,7 @@ HRESULT UnBookmark() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM UNBOOKMARK 명령 ID](https://msdn.microsoft.com/library/aa770034.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM UNBOOKMARK 명령 ID](/previous-versions/aa770034\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="underline"></a>  CHtmlEditCtrlBase::Underline
 
@@ -2523,7 +2523,7 @@ HRESULT Underline() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM UNDERLINE 명령 ID](https://msdn.microsoft.com/library/aa770035.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM UNDERLINE 명령 ID](/previous-versions/aa770035\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="unlink"></a>  CHtmlEditCtrlBase::Unlink
 
@@ -2539,7 +2539,7 @@ HRESULT Unlink() const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 합니다 [IDM 연결 해제 명령 ID](https://msdn.microsoft.com/library/aa770037.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 합니다 [IDM 연결 해제 명령 ID](/previous-versions/aa770037\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
 ##  <a name="unorderlist"></a>  CHtmlEditCtrlBase::UnorderList
 
@@ -2560,10 +2560,9 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 
 ### <a name="remarks"></a>설명
 
-이 메서드는 전송 된 [IDM UNORDERLIST 명령 ID](https://msdn.microsoft.com/library/aa769987.aspx) WebBrowser 컨트롤에 있습니다.
+이 메서드는 전송 된 [IDM UNORDERLIST 명령 ID](/previous-versions/aa769987\(v=vs.85\)) WebBrowser 컨트롤에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [계층 구조 차트](../../mfc/hierarchy-chart.md)<br/>
 [HTMLEdit 샘플](../../visual-cpp-samples.md)
-

@@ -44,16 +44,16 @@ helpviewer_keywords:
 - GetErrorParameters method
 - GetErrorRecords method
 ms.assetid: 9a5c18a2-ee3e-40f5-ab4c-581288d7f737
-ms.openlocfilehash: 4249fb7c6ac05a925ace34ade30aa50ffe3503e7
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: e523f299831ee67d994a693e5357de96eba968aa
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556831"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413903"
 ---
 # <a name="cdberrorinfo-class"></a>CDBErrorInfo 클래스
 
-OLE DB를 사용 하 여 OLE DB 오류 처리에 대 한 지원 제공 [IErrorRecords](https://docs.microsoft.com/previous-versions/windows/desktop/ms718112(v=vs.85)) 인터페이스입니다.
+OLE DB를 사용 하 여 OLE DB 오류 처리에 대 한 지원 제공 [IErrorRecords](/previous-versions/windows/desktop/ms718112(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,17 +72,17 @@ class CDBErrorInfo
 |||
 |-|-|
 |[GetAllErrorInfo](#getallerrorinfo)|오류 레코드에 포함 된 모든 오류 정보를 반환 합니다.|
-|[GetBasicErrorInfo](#getbasicerrorinfo)|호출 [IErrorRecords::GetBasicErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms723907(v=vs.85)) 지정된 된 오류에 대 한 기본 정보를 반환 합니다.|
-|[GetCustomErrorObject](#getcustomerrorobject)|호출 [IErrorRecords::GetCustomErrorObject](https://docs.microsoft.com/previous-versions/windows/desktop/ms725417(v=vs.85)) 를 사용자 지정 오류 개체 인터페이스 포인터를 반환 합니다.|
-|[GetErrorInfo](#geterrorinfo)|호출 [IErrorRecords::GetErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms711230(v=vs.85)) 반환할는 `IErrorInfo` 지정된 된 레코드에 대 한 인터페이스 포인터입니다.|
-|[GetErrorParameters](#geterrorparameters)|호출 [IErrorRecords::GetErrorParameters](https://docs.microsoft.com/previous-versions/windows/desktop/ms715793(v=vs.85)) 오류 매개 변수를 반환 합니다.|
+|[GetBasicErrorInfo](#getbasicerrorinfo)|호출 [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) 지정된 된 오류에 대 한 기본 정보를 반환 합니다.|
+|[GetCustomErrorObject](#getcustomerrorobject)|호출 [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) 를 사용자 지정 오류 개체 인터페이스 포인터를 반환 합니다.|
+|[GetErrorInfo](#geterrorinfo)|호출 [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 반환할는 `IErrorInfo` 지정된 된 레코드에 대 한 인터페이스 포인터입니다.|
+|[GetErrorParameters](#geterrorparameters)|호출 [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) 오류 매개 변수를 반환 합니다.|
 |[GetErrorRecords](#geterrorrecords)|지정된 된 개체에 대 한 오류 레코드를 가져옵니다.|
 
 ## <a name="remarks"></a>설명
 
 이 인터페이스는 사용자에 게 하나 이상의 오류 레코드를 반환합니다. 호출 [cdberrorinfo:: Geterrorrecords](../../data/oledb/cdberrorinfo-geterrorrecords.md) 첫 번째 오류 레코드 수를 가져옵니다. 다음 중 한 액세스와 같은 함수를 호출 [cdberrorinfo:: Getallerrorinfo](../../data/oledb/cdberrorinfo-getallerrorinfo.md), 각 레코드에 대 한 오류 정보를 검색 합니다.
 
-## <a name="getallerrorinfo"></a> Cdberrorinfo:: Getallerrorinfo
+## <a name="getallerrorinfo"></a> CDBErrorInfo::GetAllErrorInfo
 
 모든 유형의 오류 레코드에 포함 된 오류 정보를 반환 합니다.
 
@@ -122,7 +122,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 
 ### <a name="return-value"></a>반환 값
 
-성공 하면 S_OK입니다. 참조 [IErrorRecords::GetErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms711230(v=vs.85)) 에 *OLE DB Programmer's Reference* 다른 반환 값입니다.
+성공 하면 S_OK입니다. 참조 [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 에 *OLE DB Programmer's Reference* 다른 반환 값입니다.
 
 ### <a name="remarks"></a>설명
 
@@ -132,9 +132,9 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 
 1. 변수의 *lcid* 는 GetUserDefaultLCID 반환한 값과는 같지 않은 합니다.
 
-## <a name="getbasicerrorinfo"></a> Cdberrorinfo:: Getbasicerrorinfo
+## <a name="getbasicerrorinfo"></a> CDBErrorInfo::GetBasicErrorInfo
 
-호출 [IErrorRecords::GetBasicErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms723907(v=vs.85)) 반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.
+호출 [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) 반환 코드 및 공급자 특정 오류 번호와 같은 오류에 대 한 기본 정보를 반환 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -145,15 +145,15 @@ HRESULT GetBasicErrorInfo(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetBasicErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms723907(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
 표준 HRESULT입니다.
 
-## <a name="getcustomerrorobject"></a> Cdberrorinfo:: Getcustomerrorobject
+## <a name="getcustomerrorobject"></a> CDBErrorInfo::GetCustomErrorObject
 
-호출 [IErrorRecords::GetCustomErrorObject](https://docs.microsoft.com/previous-versions/windows/desktop/ms725417(v=vs.85)) 를 사용자 지정 오류 개체 인터페이스 포인터를 반환 합니다.
+호출 [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) 를 사용자 지정 오류 개체 인터페이스 포인터를 반환 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -164,15 +164,15 @@ HRESULT GetCustomErrorObject(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetCustomErrorObject](https://docs.microsoft.com/previous-versions/windows/desktop/ms725417(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
 표준 HRESULT입니다.
 
-## <a name="geterrorinfo"></a> Cdberrorinfo:: Geterrorinfo
+## <a name="geterrorinfo"></a> CDBErrorInfo::GetErrorInfo
 
-호출 [IErrorRecords::GetErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms711230(v=vs.85)) 반환 하는 [IErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms718112(v=vs.85)) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.
+호출 [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 반환 하는 [IErrorInfo](/previous-versions/windows/desktop/ms718112(v=vs.85)) 지정된 된 레코드에 대 한 인터페이스 포인터입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -183,15 +183,15 @@ HRESULT GetErrorInfo(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetErrorInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms711230(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
 표준 HRESULT입니다.
 
-## <a name="geterrorparameters"></a> Cdberrorinfo:: Geterrorparameters
+## <a name="geterrorparameters"></a> CDBErrorInfo::GetErrorParameters
 
-호출 [IErrorRecords::GetErrorParameters](https://docs.microsoft.com/previous-versions/windows/desktop/ms715793(v=vs.85)) 오류 매개 변수를 반환 합니다.
+호출 [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) 오류 매개 변수를 반환 합니다.
 
 ### <a name="syntax"></a>구문
 
@@ -202,13 +202,13 @@ HRESULT GetErrorParameters(ULONG ulRecordNum,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IErrorRecords::GetErrorParameters](https://docs.microsoft.com/previous-versions/windows/desktop/ms715793(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
 표준 HRESULT입니다.
 
-## <a name="geterrorrecords"></a> Cdberrorinfo:: Geterrorrecords
+## <a name="geterrorrecords"></a> CDBErrorInfo::GetErrorRecords
 
 지정된 된 개체에 대 한 오류 레코드를 가져옵니다.
 
@@ -244,5 +244,5 @@ HRESULT GetErrorRecords(ULONG* pcRecords) throw();
 ## <a name="see-also"></a>참고 항목
 
 [DBViewer](../../visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

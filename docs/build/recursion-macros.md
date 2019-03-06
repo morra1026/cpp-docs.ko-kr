@@ -6,12 +6,12 @@ helpviewer_keywords:
 - recursion macros
 - macros, recursion
 ms.assetid: c53e5ae7-619e-46b1-bdc2-86d8c7798b1d
-ms.openlocfilehash: 0005a4be0422ed83816eabc7b55932a81441ae25
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c04b23d4c8116fdf898c2f732b63c5e02adf5661
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451261"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416412"
 ---
 # <a name="recursion-macros"></a>재귀 매크로
 
@@ -19,10 +19,10 @@ ms.locfileid: "50451261"
 
 |매크로|정의|
 |-----------|----------------|
-|**확인**|원래 NMAKE를 호출 하는 데 사용 하는 명령입니다.<br /><br /> $(MAKE) 매크로 nmake.exe에 전체 경로 제공합니다.|
+|**MAKE**|원래 NMAKE를 호출 하는 데 사용 하는 명령입니다.<br /><br /> $(MAKE) 매크로 nmake.exe에 전체 경로 제공합니다.|
 |**MAKEDIR**|NMAKE를 호출한 경우 현재 디렉터리입니다.|
 |**MAKEFLAGS**|현재에서 옵션입니다. 사용 하 여 `/$(MAKEFLAGS)`입니다.  /F 포함 되지 않습니다.|
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [특수 NMake 매크로](../build/special-nmake-macros.md)

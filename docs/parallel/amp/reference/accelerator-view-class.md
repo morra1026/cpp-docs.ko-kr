@@ -21,12 +21,12 @@ f1_keywords:
 helpviewer_keywords:
 - accelerator_view class
 ms.assetid: 9f298c21-bf62-46e0-88b8-01c5c78ef144
-ms.openlocfilehash: e17284ef8652e5d08b2305dc07d27f080ec64239
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6f95efb17b95dc55cb6f6977439760fa7ea1afe9
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50568050"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57264849"
 ---
 # <a name="acceleratorview-class"></a>accelerator_view 클래스
 
@@ -72,13 +72,13 @@ class accelerator_view;
 
 |이름|설명|
 |----------|-----------------|
-|[accelerator](#accelerator)|`accelerator` 개체에 대한 `accelerator_view` 개체를 가져옵니다.|
+|[accelerator](#accelerator)|`accelerator_view` 개체에 대한 `accelerator` 개체를 가져옵니다.|
 |[is_auto_selection](#is_auto_selection)|런타임에서 적절 한 액셀러레이터를 자동으로 선택 됩니다 있는지 여부를 나타내는 부울 값을 가져옵니다 때 합니다 `accelerator_view` 개체를 전달 하는 [parallel_for_each](concurrency-namespace-functions-amp.md#parallel_for_each)합니다.|
 |[is_debug](#is_debug)|나타내는 부울 값을 가져옵니다 여부는 `accelerator_view` 개체를 위해 DEBUG 레이어가 활성화 폭넓은 오류 보고에 합니다.|
 |[queuing_mode](#queuing_mode)|큐 모드를 가져옵니다는 `accelerator_view` 개체입니다.|
 |[version](#version)|액셀러레이터 키의 버전을 가져옵니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `accelerator_view`
 
@@ -135,7 +135,7 @@ concurrency::completion_future create_marker();
 
 지금이 전송 된 모든 명령의 완료를 추적 하는 미래 `accelerator_view` 개체입니다.
 
-## <a name="flush"></a> 플러시
+## <a name="flush"></a> flush
 
 Accelerator_view 개체 실행의 액셀러레이터에 대기 중인 모든 보류 중인 명령을 제출 합니다.
 
@@ -147,7 +147,7 @@ void flush();
 
 ### <a name="return-value"></a>반환 값
 
-`void`를 반환합니다.
+`void`을 반환합니다.
 
 ## <a name="accelerator_view__get_accelerator"></a> get_accelerator
 
@@ -188,7 +188,8 @@ bool get_is_debug() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
+
+  `accelerator_view` 개체에 확장 오류 보고를 위해 DEBUG 레이어가 활성화되었는지 여부를 나타내는 부울 값입니다.
 
 ## <a name="accelerator_view__get_queuing_mode"></a> get_queuing_mode
 
@@ -202,7 +203,8 @@ queuing_mode get_queuing_mode() const;
 
 ### <a name="return-value"></a>반환 값
 
-`accelerator_view` 개체의 큐 모드입니다.
+
+  `accelerator_view` 개체의 큐 모드입니다.
 
 ## <a name="accelerator_view__get_version"></a> get_version
 
@@ -257,7 +259,7 @@ bool operator!= (    const accelerator_view & _Other ) const;
 
 **false** 두 개체가 동일 하면이 고, 그렇지 **true**합니다.
 
-## <a name="accelerator_view__operator_eq"></a> 연산자 =
+## <a name="accelerator_view__operator_eq"></a> operator=
 
 지정 된 accelerator_view 개체의 내용을 여기로 복사합니다.
 
@@ -276,7 +278,7 @@ accelerator_view & operator= (    const accelerator_view & _Other );
 
 수정된 `accelerator_view` 개체에 대한 참조입니다.
 
-## <a name="accelerator_view__operator_eq_eq"></a> 연산자 = =
+## <a name="accelerator_view__operator_eq_eq"></a> operator==
 
 다른이 accelerator_view 개체를 비교 하 고 반환 **true** 같으면 경우 반환이 고, 그렇지 **false**합니다.
 
@@ -327,7 +329,7 @@ void wait();
 
 #### <a name="return-value"></a>반환 값
 
-`void`를 반환합니다.
+`void`을 반환합니다.
 
 #### <a name="remarks"></a>설명
 
@@ -345,6 +347,6 @@ Accelerator_view 개체를 제거합니다.
 
 ### <a name="return-value"></a>반환 값
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Concurrency 네임스페이스(C++ AMP)](concurrency-namespace-cpp-amp.md)

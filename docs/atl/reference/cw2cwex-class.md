@@ -9,12 +9,12 @@ f1_keywords:
 helpviewer_keywords:
 - CW2CWEX class
 ms.assetid: d654b22b-05a6-410f-a0ec-9a2cbbb4cca7
-ms.openlocfilehash: 22b031ee83e6c0e01401f6d5ed19d83532443b64
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d1f960f8ec94b8e573490d4e708d4240b894b5ec
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50556941"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57297155"
 ---
 # <a name="cw2cwex-class"></a>CW2CWEX 클래스
 
@@ -42,7 +42,7 @@ class CW2CWEX
 |이름|설명|
 |----------|-----------------|
 |[CW2CWEX::CW2CWEX](#cw2cwex)|생성자입니다.|
-|[CW2CWEX:: ~ CW2CWEX](#dtor)|소멸자입니다.|
+|[CW2CWEX::~CW2CWEX](#dtor)|소멸자입니다.|
 
 ### <a name="public-operators"></a>Public 연산자
 
@@ -103,7 +103,7 @@ CW2CWEX(LPCWSTR psz) throw(...);
 
 변환 프로세스에서 사용 되는 버퍼를 할당 합니다.
 
-##  <a name="dtor"></a>  CW2CWEX:: ~ CW2CWEX
+##  <a name="dtor"></a>  CW2CWEX::~CW2CWEX
 
 소멸자입니다.
 
@@ -135,7 +135,7 @@ operator LPCWSTR() const throw();
 
 LPCWSTR 입력할 텍스트 문자열을 반환 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [CA2AEX 클래스](../../atl/reference/ca2aex-class.md)<br/>
 [CA2CAEX 클래스](../../atl/reference/ca2caex-class.md)<br/>

@@ -26,12 +26,12 @@ helpviewer_keywords:
 - semicolon, command files
 - / command files
 ms.assetid: d54f5c81-7147-4b2c-a8db-68ce6eb1eabd
-ms.openlocfilehash: 73a259faa57d74fbe535bfa329dfc2a39cb6bbad
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8fdfeb16d41f51262cbd3a3814699a7b8dbc5fe4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656978"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413331"
 ---
 # <a name="running-lib"></a>LIB 실행
 
@@ -48,7 +48,7 @@ LIB를 실행 하려면 명령을 입력 하 여 `lib` 옵션 및 작업에 대 
 
 다음 구문을 사용 하 여 명령 파일의 lib 명령줄 인수를 전달할 수 있습니다.
 
-> **LIB \@**  <em>commandfile</em>
+> **LIB \@**<em>commandfile</em>
 
 파일 *commandfile* 텍스트 파일입니다. 없는 공백 또는 탭 간 허용 되는 at 기호 (**\@**) 및 파일 이름입니다. 기본 확장명이 없습니다. 모든 확장을 포함 하 여 전체 파일 이름을 지정 해야 합니다. 와일드 카드를 사용할 수 없습니다. 파일 이름의 절대 또는 상대 경로 지정할 수 있습니다.
 
@@ -58,11 +58,11 @@ LIB를 실행 하려면 명령을 입력 하 여 `lib` 옵션 및 작업에 대 
 
 ## <a name="using-lib-options"></a>LIB 옵션을 사용 하 여
 
-옵션 중 하나에 대시 옵션 지정자 구성 됩니다 (**-**) 또는 슬래시 (**/**), 옵션의 이름입니다. 옵션 이름은 간략 한 형태로 사용할 수 없습니다. 콜론 뒤에 지정 된 인수를 사용 하는 몇 가지 옵션 (**:**). 공백 또는 탭 옵션 사양에 허용 됩니다. 명령줄에서 옵션 사양 구분 하려면 하나 이상의 공백이 나 탭을 사용 합니다. 옵션 이름 및 해당 키워드 또는 파일 이름 인수는 대 소문자를 구분 하지 않지만 인수로 사용 되는 식별자는 대/소문자 구분. LIB 옵션이 명령줄에서 지정 된 순서에 명령 파일을 처리 합니다. 옵션은 서로 다른 인수를 사용 하 여 반복 되는 경우 처리할 개가 우선적으로 적용 합니다.
+옵션 중 하나에 대시 옵션 지정자 구성 됩니다 (**-**) 또는 슬래시 (**/**), 옵션의 이름입니다. 옵션 이름은 약식으로 표기할 수 없습니다. 콜론 뒤에 지정 된 인수를 사용 하는 몇 가지 옵션 (**:**). 옵션 사양에는 공백이나 탭을 사용할 수 없습니다. 한 개 이상의 공백 또는 탭을 사용하여 명령줄에서 옵션 사양을 구분합니다. 옵션 이름 및 해당 키워드 또는 파일 이름 인수는 대 소문자를 구분 하지 않지만 인수로 사용 되는 식별자는 대/소문자 구분. LIB 옵션이 명령줄에서 지정 된 순서에 명령 파일을 처리 합니다. 옵션은 서로 다른 인수를 사용 하 여 반복 되는 경우 처리할 개가 우선적으로 적용 합니다.
 
 다음 옵션은 LIB의 모든 모드에 적용 합니다.
 
-> **/ERRORREPORT** [**NONE** &AMP;#124; **프롬프트** &AMP;#124; **큐** &AMP;#124; **보냅니다**]
+> **/ERRORREPORT** [**NONE** &#124; **PROMPT** &#124; **QUEUE** &#124; **SEND**]
 
 런타임에 lib.exe 실패 하는 경우 사용할 수 있습니다 **/ERRORREPORT** 이러한 내부 오류에 대 한 Microsoft로 정보를 보내도록 합니다.
 
@@ -88,12 +88,12 @@ LIB 저작권 메시지 및 버전 번호를 표시 하지 않습니다 하 고 
 
 추가 하려는.obj 파일의 이름을 비롯 하 여 세션의 진행률에 대 한 세부 정보를 표시 합니다. 이 정보는 표준 출력으로 보내지며 파일로 리디렉션될 수 있습니다.
 
-> **/WX**[**: NO**]
+> **/WX**[**:NO**]
 
 경고를 오류로 처리 합니다. 참조 [/WX (링커 경고를 오류로 처리)](../../build/reference/wx-treat-linker-warnings-as-errors.md) 자세한 내용은 합니다.
 
 다른 옵션은 LIB의 특정 모드에만 적용 됩니다. 이러한 옵션은 각 모드를 설명 하는 섹션에서 설명 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [LIB 참조](../../build/reference/lib-reference.md)

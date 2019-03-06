@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Windows messages [MFC], routing
 - message handling [MFC], noncommand messages
 ms.assetid: e7df8aef-9fae-41f4-9c11-881d8465f602
-ms.openlocfilehash: f64eb97315b41a314c791e1a4c5bc7721b329fca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4b9fb0a72b330380f0207db9968199a7e4c3d9b3
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50545459"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57295060"
 ---
 # <a name="how-noncommand-messages-reach-their-handlers"></a>명령이 아닌 메시지가 해당 처리기에 도달하는 방법
 
@@ -20,7 +20,6 @@ ms.locfileid: "50545459"
 
 런타임 시 각 Windows에 연결 되는 창 개체 (에서 직접 또는 간접적으로 파생 `CWnd`) 자체 연결 된 메시지 맵 및 처리기 함수가 포함 합니다. 프레임 워크가 메시지 맵을 사용해-명령을와-들어오는 메시지 처리기를 매핑할 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [프레임워크가 처리기를 호출하는 방법](../mfc/how-the-framework-calls-a-handler.md)
-

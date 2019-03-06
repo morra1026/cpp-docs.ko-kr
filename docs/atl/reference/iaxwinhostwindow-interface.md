@@ -13,12 +13,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinHostWindow interface
 ms.assetid: 9821c035-cd52-4c46-b58a-9278064f09b4
-ms.openlocfilehash: 1e389dc253f24eed2fee7e1d552be931a23f5e3f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4bdfdf76b48c1e9f2c06213ee25cd15a113525dd
+ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50637322"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57290159"
 ---
 # <a name="iaxwinhostwindow-interface"></a>IAxWinHostWindow 인터페이스
 
@@ -142,7 +142,7 @@ STDMETHOD(CreateControlEx)(
 [out] 수신할 포인터의 주소는 `IUnknown` 만든된 컨트롤의 인터페이스입니다. NULL 일 수 있습니다.
 
 *riidAdvise*<br/>
-[in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. IID_NULL 될 수 있습니다.
+[in] 포함된 된 개체에는 송신 인터페이스의 인터페이스 식별자입니다. Can be IID_NULL.
 
 *punkAdvise*<br/>
 [in] 에 대 한 포인터를 `IUnknown` 으로 지정 된 포함된 된 개체의 연결 지점에 연결 되어 싱크 개체의 인터페이스가 `iidSink`합니다.
@@ -217,9 +217,8 @@ STDMETHOD(SetExternalUIHandler)(IDocHostUIHandlerDispatch* pDisp);
 
 이 함수에 대 한 호스트의 사이트를 쿼리 하는 (예: 웹 브라우저 컨트롤) 컨트롤에서 사용 되는 `IDocHostUIHandlerDispatch` 인터페이스입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [IAxWinAmbientDispatch 인터페이스](../../atl/reference/iaxwinambientdispatch-interface.md)<br/>
 [CAxWindow::QueryHost](../../atl/reference/caxwindow-class.md#queryhost)<br/>
 [AtlAxGetHost](composite-control-global-functions.md#atlaxgethost)
-

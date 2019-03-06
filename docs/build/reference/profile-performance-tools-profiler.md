@@ -7,12 +7,12 @@ helpviewer_keywords:
 - -PROFILE linker option
 - /PROFILE linker option
 ms.assetid: e676baa1-5063-47a3-a357-ba0d1f0d1699
-ms.openlocfilehash: 26f4ba4efc20f5fee70b2937cdb943689c948888
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a0fda47497ffc247dd9678ece7aac76291aed1ff
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50519919"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419155"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE(성능 도구 프로파일러)
 
@@ -28,13 +28,13 @@ ms.locfileid: "50519919"
 
 / 프로필 의미 링커 옵션은 다음과 같습니다.
 
-- [/OPT: REF](../../build/reference/opt-optimizations.md)
+- [/OPT:REF](../../build/reference/opt-optimizations.md)
 
 - /OPT: NOICF
 
-- [/INCREMENTAL: NO](../../build/reference/incremental-link-incrementally.md)
+- [/INCREMENTAL:NO](../../build/reference/incremental-link-incrementally.md)
 
-- [/FIXED: NO](../../build/reference/fixed-fixed-base-address.md)
+- [/FIXED:NO](../../build/reference/fixed-fixed-base-address.md)
 
 / 프로필 사용 하면 링커가 프로그램 이미지에서 재배치 섹션 생성 합니다.  재배치 섹션 프로파일러를 프로필 데이터를 가져올 프로그램 이미지를 변환할 수 있습니다.
 
@@ -56,7 +56,7 @@ ms.locfileid: "50519919"
 
 1. <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)
