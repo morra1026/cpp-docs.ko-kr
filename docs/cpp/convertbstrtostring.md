@@ -1,4 +1,4 @@
----
+﻿---
 title: ConvertBSTRToString
 ms.date: 11/04/2016
 f1_keywords:
@@ -66,7 +66,7 @@ char * text: Test
 
 **헤더:** \<comutil.h >
 
-**Lib:** comsuppw.lib 또는 comsuppwd.lib(자세한 내용은 [/zc: wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)
+는 comsuppwd.lib (자세한 내용은 [/zc: wchar_t (wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)	**Lib:** comsuppw.lib 또는 comsuppwd.lib(자세한 내용은 [/zc: wchar_t(wchar_t는 네이티브 형식임)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)를 참조)
 
 ## <a name="see-also"></a>참고자료
 

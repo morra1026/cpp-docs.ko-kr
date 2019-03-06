@@ -16,7 +16,7 @@ ms.locfileid: "57414836"
 ---
 # <a name="nmake-reference"></a>NMAKE 참조
 
-Microsoft Program Maintenance Utility (NMAKE. EXE)는 설명 파일에 포함 된 명령을 기반으로 하는 프로젝트를 작성 하는 Visual Studio에 포함 된 명령줄 도구입니다.
+Microsoft Program Maintenance Utility (NMAKE. EXE)는 설명 파일에 포함된 명령을 기반으로 하는 Visual Studio에 포함된 프로젝트 작성을 위한 명령줄 도구입니다.
 
 NMAKE를 사용하려면 개발자 명령 프롬프트 창에서 실행해야 합니다. 개발자 명령 프롬프트 창에는 명령줄에서 빌드하는데 필요한 도구, 라이브러리 및 포함 파일 경로에 대한 환경 변수 집합이 설정되어 있습니다. 개발자 명령 프롬프트 창을 여는 방법에 대한 자세한 내용은 [명령줄에서 C/C++ 코드 빌드](../build/building-on-the-command-line.md)를 참조합니다.
 
