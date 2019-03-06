@@ -17,10 +17,10 @@ ms.locfileid: "50583887"
 ---
 # <a name="compiler-options"></a>컴파일러 옵션
 
-cl.exe는 Microsoft Visual c + + (MSVC) C 및 c + + 컴파일러 및 링커를 제어 하는 도구입니다. cl.exe는 Microsoft Visual Studio에 대 한 Windows를 지 원하는 운영 체제 에서만 실행할 수 있습니다.
+cl.exe는 Microsoft Visual C++ (MSVC) C 및 C++ 컴파일러 및 링커를 제어 하는 도구입니다. cl.exe는 Microsoft Visual Studio에 대 한 Windows를 지 원하는 운영 체제 에서만 실행할 수 있습니다.
 
 > [!NOTE]
-> Visual Studio 개발자 명령 프롬프트 에서만에서이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다. 자세한 내용은 [명령줄에서 빌드 C/c + + 코드](../building-on-the-command-line.md)합니다.
+> Visual Studio 개발자 명령 프롬프트 에서만에서이 도구를 시작할 수 있습니다. 시스템 명령 프롬프트 또는 파일 탐색기에서는 시작할 수 없습니다. 자세한 내용은 [명령줄에서 빌드 C/C++ 코드](../building-on-the-command-line.md)합니다.
 
 컴파일러는 COFF 공용 개체 파일 형식 () 개체 (.obj) 파일을 생성합니다. 링커는 실행 파일 (.exe) 또는 동적 연결 라이브러리 (Dll)를 생성 합니다.
 
