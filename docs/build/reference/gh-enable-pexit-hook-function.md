@@ -9,12 +9,12 @@ helpviewer_keywords:
 - _pexit function
 - -Gh compiler option [C++]
 ms.assetid: 93181453-2676-42e5-bf63-3b19e07299b6
-ms.openlocfilehash: 9be8573f5f9c344d2675bd7c9fc7d8beb3c8cffd
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 21649838ba81f3affdda3f3833de23e4d9e33746
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50527649"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422532"
 ---
 # <a name="gh-enable-pexit-hook-function"></a>/GH(_pexit 후크 함수 사용)
 
@@ -52,7 +52,7 @@ void __declspec(naked) __cdecl _pexit( void );
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

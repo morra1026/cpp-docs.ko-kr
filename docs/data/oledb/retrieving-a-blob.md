@@ -6,16 +6,16 @@ helpviewer_keywords:
 - BLOB (binary large object), retrieving
 - OLE DB, BLOBs (binary large objects)
 ms.assetid: 2893eb0a-5c05-4016-8914-1e40ccbaf0b3
-ms.openlocfilehash: 30551af0e74759d21cecae54714ca6eca1a37768
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 42b7b95f2da4313bdfcb1d9d8a064ca5be563e40
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556545"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423250"
 ---
 # <a name="retrieving-a-blob"></a>BLOB 검색
 
-여러 방법으로 BLOB(이진 대형 개체)를 검색할 수 있습니다. `DBTYPE_BYTES`를 사용하여 BLOB를 바이트의 시퀀스로 검색하거나 `ISequentialStream` 같은 인터페이스를 사용할 수 있습니다. 자세한 내용은 **OLE DB Programmer's Reference**에서 [BLOBS and OLE Objects](https://docs.microsoft.com/previous-versions/windows/desktop/ms711511(v=vs.85))를 참조하십시오.
+여러 방법으로 BLOB(이진 대형 개체)를 검색할 수 있습니다. `DBTYPE_BYTES`를 사용하여 BLOB를 바이트의 시퀀스로 검색하거나 `ISequentialStream` 같은 인터페이스를 사용할 수 있습니다. 자세한 내용은 **OLE DB Programmer's Reference**에서 [BLOBS and OLE Objects](/previous-versions/windows/desktop/ms711511(v=vs.85))를 참조하십시오.
 
 다음 코드는 `ISequentialStream`을 사용하여 BLOB를 검색하는 방법에 대해 보여 줍니다. 매크로 [BLOB_ENTRY](../../data/oledb/blob-entry.md)를 사용하면 인터페이스와 인터페이스에 사용되는 플래그를 지정할 수 있습니다. 테이블을 연 후 코드는 `ISequentialStream`에서 `Read`를 반복 호출하여 BLOB의 바이트를 읽습니다. 코드는 다음 레코드를 구하는 `MoveNext`를 호출하기 전에 `Release`를 호출하여 인터페이스 포인터를 삭제합니다.
 

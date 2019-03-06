@@ -9,12 +9,12 @@ helpviewer_keywords:
 - cl.exe compiler, precompiling code
 - .pch files, creating
 ms.assetid: e2cdb404-a517-4189-9771-c869c660cb1b
-ms.openlocfilehash: b570b76328ee9824610aac495d97cede19189cf9
-ms.sourcegitcommit: 9e891eb17b73d98f9086d9d4bfe9ca50415d9a37
+ms.openlocfilehash: 75ebc466b55cdc2221783531024eefece2e976bb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52176434"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413773"
 ---
 # <a name="creating-precompiled-header-files"></a>미리 컴파일된 헤더 파일 만들기
 
@@ -323,7 +323,7 @@ int main( void )
 }
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)

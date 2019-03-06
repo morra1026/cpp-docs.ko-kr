@@ -9,12 +9,12 @@ helpviewer_keywords:
 - /Zo compiler option [C++]
 - -Zo compiler option [C++]
 ms.assetid: eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f
-ms.openlocfilehash: 7524a8a8c509470030a1850c3995e5997b61caca
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dfc9a0311714d0680316d2d375c92d7902432fcb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50497502"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422028"
 ---
 # <a name="zo-enhance-optimized-debugging"></a>/Zo(최적화된 디버깅 향상)
 
@@ -46,7 +46,7 @@ ms.locfileid: "50497502"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/O 옵션(코드 최적화)](../../build/reference/o-options-optimize-code.md)<br/>
 [/Z7, /Zi, /ZI(디버깅 정보 형식)](../../build/reference/z7-zi-zi-debug-information-format.md)<br/>

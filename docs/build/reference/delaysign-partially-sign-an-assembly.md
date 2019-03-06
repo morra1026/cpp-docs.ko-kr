@@ -9,12 +9,12 @@ helpviewer_keywords:
 - DELAYSIGN linker option
 - -DELAYSIGN linker option
 ms.assetid: 15244d30-3ecb-492f-a408-ffe81f38de20
-ms.openlocfilehash: 233a41a3e55ff2726712541b0af9db1f5e55eb56
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 753c4d2a2a81803c3b52759b560248d0f4dbe2eb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50435622"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425681"
 ---
 # <a name="delaysign-partially-sign-an-assembly"></a>/DELAYSIGN(어셈블리에 부분적으로 서명)
 
@@ -24,7 +24,7 @@ ms.locfileid: "50435622"
 
 ## <a name="arguments"></a>인수
 
-**아니요**<br/>
+**NO**<br/>
 어셈블리가 부분적으로 서명 되지 해야 지정 합니다.
 
 ## <a name="remarks"></a>설명
@@ -65,7 +65,7 @@ ms.locfileid: "50435622"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

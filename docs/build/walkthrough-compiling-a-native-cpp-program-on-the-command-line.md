@@ -59,7 +59,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
    > [!NOTE]
    > "'C l' is not recognized as는 내부 또는 외부 명령, 실행할 수 있는 프로그램 또는 배치 파일"와 같은 오류가 발생할 경우 오류 C1034 또는 오류 LNK1104 실행할 때 합니다 **cl** 하거나 개발자 명령 프롬프트를 사용 하지 않는 명령을 또는 Visual C++ 설치를 사용 하 여 문제가 발생 했습니다. 계속 하기 전에이 문제를 수정 해야 합니다.
 
-   개발자 명령 프롬프트 바로 가기를 찾을 수 없으면 또는 입력 하면 오류 메시지를 받게 되 면 `cl`, 다음 Visual c + + 설치에 문제가 있을 수 있습니다. Visual Studio에서 Visual c + + 구성 요소를 다시 설치 하거나 Microsoft Visual c + + Build Tools를 다시 설치 하십시오. 작동 될 때까지 다음 섹션으로 하지 마십시오. 설치 및 Visual c + + 문제 해결에 대 한 자세한 내용은 참조 하세요. [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다.
+   개발자 명령 프롬프트 바로 가기를 찾을 수 없으면 또는 입력 하면 오류 메시지를 받게 되 면 `cl`, 다음 Visual C++ 설치에 문제가 있을 수 있습니다. Visual Studio에서 Visual C++ 구성 요소를 다시 설치 하거나 Microsoft Visual C++ Build Tools를 다시 설치 하십시오. 작동 될 때까지 다음 섹션으로 하지 마십시오. 설치 및 Visual C++ 문제 해결에 대 한 자세한 내용은 참조 하세요. [Visual Studio 설치](/visualstudio/install/install-visual-studio)합니다.
 
    > [!NOTE]
    > 개발자 명령 프롬프트 바로 가기에 대 한 바로 가기 메뉴를 열고 선택한 후 마우스 오른쪽 단추로 클릭 해야 컴퓨터 시스템 보안 구성에서 Windows의 버전에 따라 **관리자 권한으로 실행** 를 성공적으로 작성 하 고이 연습을 수행 하 여 만든 프로그램을 실행 합니다.
@@ -161,7 +161,7 @@ Visual Studio는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집기
 
 `cl /W4 /EHsc file1.cpp file2.cpp file3.cpp /link /out:program1.exe`
 
-컴파일러에서 cl.exe에 더 많은 옵션을 빌드, 최적화, 디버그, 적용 하 고 코드를 분석할 수 있습니다. 빠른 목록을 입력 `cl /?` 개발자 명령 프롬프트에서. 또한 컴파일 및 연결할 수 별도로 있으며 더 복잡 한 빌드 시나리오에서 링커 옵션을 적용 합니다. 컴파일러 및 링커 옵션 및 사용에 대 한 자세한 내용은 참조 하세요. [C/c + + 빌드 참조](../build/reference/c-cpp-building-reference.md)합니다.
+컴파일러에서 cl.exe에 더 많은 옵션을 빌드, 최적화, 디버그, 적용 하 고 코드를 분석할 수 있습니다. 빠른 목록을 입력 `cl /?` 개발자 명령 프롬프트에서. 또한 컴파일 및 연결할 수 별도로 있으며 더 복잡 한 빌드 시나리오에서 링커 옵션을 적용 합니다. 컴파일러 및 링커 옵션 및 사용에 대 한 자세한 내용은 참조 하세요. [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)합니다.
 
 구성 하 고 명령줄에서 보다 복잡 한 프로젝트를 빌드할 NMAKE 메이크파일, 있고 MSBuild 및 프로젝트 파일을 사용할 수 있습니다. 이러한 도구 사용에 대 한 자세한 내용은 참조 하세요. [NMAKE 참조](../build/nmake-reference.md) 하 고 [MSBuild](../build/msbuild-visual-cpp.md)합니다.
 

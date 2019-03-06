@@ -8,12 +8,12 @@ helpviewer_keywords:
 - timestamps, makefile pseudotargets
 - NMAKE program, targets
 ms.assetid: c8c479dc-0129-4186-8366-bc6251f2b494
-ms.openlocfilehash: bf0f1e2feb91611222ade366a7644e89cbe22600
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 34b2b2f0d54a6e11bdfd6e818eb08d01721d80e2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50541078"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414844"
 ---
 # <a name="pseudotargets"></a>의사 대상
 
@@ -21,6 +21,6 @@ ms.locfileid: "50541078"
 
 의사 대상 이름은 대상에 대 한 파일 이름 구문 규칙을 따릅니다. 그러나 이름에서 확장 되지 않은 경우 (즉, 포함 되지 않은 기간), 파일 이름에 대 한 8 자 제한을 초과할 수 있습니다 하 고 최대 256 자까지 사용할 수 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [대상](../build/targets.md)

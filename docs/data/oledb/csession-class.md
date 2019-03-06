@@ -40,12 +40,12 @@ helpviewer_keywords:
 - Open method
 - StartTransaction method
 ms.assetid: 83cd798f-b45d-4f11-a23c-29183390450c
-ms.openlocfilehash: f3b77823608376fdfc12beacf7cab5dd810c415e
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 86ac5984f5d21e0077c15027ac7a8d8daab08945
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556792"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414007"
 ---
 # <a name="csession-class"></a>CSession 클래스
 
@@ -78,7 +78,7 @@ class CSession
 
 하나 이상의 세션으로 표현 되는 각 공급자 연결 (데이터 원본)를 사용 하 여 연결할 수는 [CDataSource](../../data/oledb/cdatasource-class.md) 개체입니다. 새로 만들 `CSession` 에 대 한는 `CDataSource`를 호출 [csession:: Open](../../data/oledb/csession-open.md)합니다. 데이터베이스 트랜잭션을 시작 하기 `CSession` 제공 된 `StartTransaction` 메서드. 트랜잭션이 시작 되 면 사용 하 여 커밋할 수 있습니다 합니다 `Commit` 메서드를 사용 하 여 취소 또는 `Abort` 메서드.
 
-## <a name="abort"></a> Csession:: Abort
+## <a name="abort"></a> CSession::Abort
 
 트랜잭션을 종료합니다.
 
@@ -92,13 +92,13 @@ HRESULT Abort(BOID* pboidReason = NULL,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [itransaction:: Abort](https://docs.microsoft.com/previous-versions/windows/desktop/ms709833(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [itransaction:: Abort](/previous-versions/windows/desktop/ms709833(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
 표준 HRESULT입니다.
 
-## <a name="close"></a> Csession:: Close
+## <a name="close"></a> CSession::Close
 
 열려 있는 세션을 닫습니다 [csession:: Open](../../data/oledb/csession-open.md)합니다.
 
@@ -112,7 +112,7 @@ void Close() throw();
 
 릴리스는 `m_spOpenRowset` 포인터입니다.
 
-## <a name="commit"></a> Csession:: 커밋
+## <a name="commit"></a> CSession::Commit
 
 트랜잭션을 커밋합니다.
 
@@ -126,7 +126,7 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [itransaction:: Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [itransaction:: Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -134,9 +134,9 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [itransaction:: Commit](https://docs.microsoft.com/previous-versions/windows/desktop/ms713008(v=vs.85))합니다.
+자세한 내용은 [itransaction:: Commit](/previous-versions/windows/desktop/ms713008(v=vs.85))합니다.
 
-## <a name="gettransactioninfo"></a> Csession:: Gettransactioninfo
+## <a name="gettransactioninfo"></a> CSession::GetTransactionInfo
 
 트랜잭션에 대 한 정보를 반환합니다.
 
@@ -148,7 +148,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [ITransaction::GetTransactionInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms714975(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -156,9 +156,9 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [ITransaction::GetTransactionInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms714975(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+자세한 내용은 [ITransaction::GetTransactionInfo](/previous-versions/windows/desktop/ms714975(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="open"></a> Csession:: Open
+## <a name="open"></a> CSession::Open
 
 데이터 원본 개체에 대 한 새 세션을 엽니다.
 
@@ -176,10 +176,10 @@ HRESULT Open(const CDataSource& ds,
 [in] 데이터 소스 세션을 열 수입니다.
 
 *pPropSet*<br/>
-[in] 배열에 대 한 포인터 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](https://docs.microsoft.com/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
+[in] 배열에 대 한 포인터 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 속성 및 값을 설정할 수를 포함 하는 구조체. 참조 [속성 집합 및 속성 그룹](/previous-versions/windows/desktop/ms713696(v=vs.85)) 에 *OLE DB Programmer's Reference* Windows SDK에에서 있습니다.
 
 *ulPropSets*<br/>
-[in] 수가 [DBPROPSET](https://docs.microsoft.com/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
+[in] 수가 [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) 구조에 전달 합니다 *pPropSet* 인수입니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -189,7 +189,7 @@ HRESULT Open(const CDataSource& ds,
 
 사용 하 여 데이터 원본 개체를 열어야 [cdatasource:: Open](../../data/oledb/cdatasource-open.md) 전달 하기 전에 `CSession::Open`입니다.
 
-## <a name="starttransaction"></a> Csession:: Starttransaction
+## <a name="starttransaction"></a> CSession::StartTransaction
 
 이 세션에 대 한 새 트랜잭션을 시작합니다.
 
@@ -204,7 +204,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [itransactionlocal:: Starttransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [itransactionlocal:: Starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -212,10 +212,10 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 ### <a name="remarks"></a>설명
 
-자세한 내용은 [itransactionlocal:: Starttransaction](https://docs.microsoft.com/previous-versions/windows/desktop/ms709786(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+자세한 내용은 [itransactionlocal:: Starttransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="see-also"></a>참고 항목
 
 [CatDB](../../visual-cpp-samples.md)<br/>
-[OLE DB 소비자 템플릿](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB 소비자 템플릿(C++)](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
 [OLE DB 소비자 템플릿 참조](../../data/oledb/ole-db-consumer-templates-reference.md)

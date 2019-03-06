@@ -5,12 +5,12 @@ helpviewer_keywords:
 - macros, NMAKE
 - NMAKE macros, using
 ms.assetid: 95c87fbc-76e6-48c0-8536-9bfe179f328e
-ms.openlocfilehash: 9d8ff76e1e730b65db363749797ef9ae2062adab
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5f0fb9b13c5d5647b8f4ee382951df6282e8d68
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50645083"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415645"
 ---
 # <a name="using-an-nmake-macro"></a>NMAKE 매크로 사용
 
@@ -30,6 +30,6 @@ $(macroname)
 
 [매크로 대체](../build/macro-substitution.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [매크로와 NMake](../build/macros-and-nmake.md)

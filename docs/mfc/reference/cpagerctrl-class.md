@@ -48,12 +48,12 @@ helpviewer_keywords:
 - CPagerCtrl [MFC], SetChild
 - CPagerCtrl [MFC], SetScrollPos
 ms.assetid: 65ac58dd-4f5e-4b7e-b15c-e0d435a7e884
-ms.openlocfilehash: c782d5761323129eccf7ee129d877128c400d93a
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 648bc17f0f130b831aa619b90ed13ba6be35b4d4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57270724"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417599"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl 클래스
 
@@ -149,7 +149,7 @@ virtual BOOL Create(
 |매개 변수|설명|
 |---------------|-----------------|
 |*dwStyle*|[in] 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|
-|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
+|*rect*|[in] 에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
 |*pParentWnd*|[in] 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 |*nID*|[in] 컨트롤의 ID입니다.|
 
@@ -186,7 +186,7 @@ virtual BOOL CreateEx(
 |---------------|-----------------|
 |*dwExStyle*|[in] 컨트롤에 적용 될 확장된 스타일의 비트 조합입니다. 자세한 내용은 참조는 *dwExStyle* 의 매개 변수를 [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) 함수입니다.|
 |*dwStyle*|[in] 비트 조합 (OR) [창 스타일](../../mfc/reference/styles-used-by-mfc.md#window-styles) 하 고 [페이저 컨트롤 스타일](/windows/desktop/Controls/pager-control-styles) 컨트롤을 적용할 수 있습니다.|
-|*rect*|[in] 에 대 한 참조를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
+|*rect*|[in] 에 대 한 참조를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 클라이언트 좌표로 나타낸에서 컨트롤의 크기와 위치를 포함 하는 구조입니다.|
 |*pParentWnd*|[in] 에 대 한 포인터를 [CWnd](../../mfc/reference/cwnd-class.md) 개체 컨트롤의 부모 창입니다. 이 매개 변수는 NULL 일 수 없습니다.|
 |*nID*|[in] 컨트롤의 ID입니다.|
 

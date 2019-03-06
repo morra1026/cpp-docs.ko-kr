@@ -10,12 +10,12 @@ helpviewer_keywords:
 - MANIFESTUAC linker option
 - -MANIFESTUAC linker option
 ms.assetid: 2d243c39-fa13-493c-b56f-d0d972a1603a
-ms.openlocfilehash: 702dae41f873218dab0d3fb24e46dacd710bc20f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8ae9d18bb0fe2172886ef24250d53cf76851bbba
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50625094"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420429"
 ---
 # <a name="manifestuac-embeds-uac-information-in-manifest"></a>/MANIFESTUAC(매니페스트에 UAC 정보 포함)
 
@@ -33,10 +33,10 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 
 ### <a name="parameters"></a>매개 변수
 
-*조각*<br/>
+*fragment*<br/>
 포함 된 문자열을 `level` 및 `uiAccess` 값입니다. 자세한 내용은이 항목의 뒷부분에 나오는 주의 섹션을 참조 하세요.
 
-*수준 (_l)*<br/>
+*_level*<br/>
 중 하나 *asInvoker*하십시오 *highestAvailable*, 또는 *requireAdministrator*합니다. AsInvoker 기본값은입니다. 자세한 내용은이 항목의 뒷부분에 나오는 주의 섹션을 참조 하세요.
 
 *_uiAccess*<br/>
@@ -50,9 +50,9 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 
 - `asInvoker`: 응용 프로그램을 시작한 프로세스와 동일한 권한으로 실행 됩니다. 응용 프로그램을 선택 하 여 높은 권한 수준으로 승격할 수도 있습니다 **관리자 권한으로 실행**합니다.
 
-- highestAvailable: 응용 프로그램 수는 가장 높은 권한 수준으로 실행 됩니다. 응용 프로그램을 시작한 사용자가 Administrators 그룹의 멤버인 경우이 옵션은 requireAdministrator 동일 합니다. 가장 높은 사용 가능한 사용 권한 수준이 열기 프로세스의 수준 보다 높은 경우 시스템 자격 증명을 묻는 됩니다.
+- highestAvailable: 응용 프로그램은 가능한 가장 높은 권한 수준을 사용 하 여 실행 됩니다. 응용 프로그램을 시작한 사용자가 Administrators 그룹의 멤버인 경우이 옵션은 requireAdministrator 동일 합니다. 가장 높은 사용 가능한 사용 권한 수준이 열기 프로세스의 수준 보다 높은 경우 시스템 자격 증명을 묻는 됩니다.
 
-- requireAdministrator: 응용 프로그램 관리자 권한으로 실행 됩니다. 응용 프로그램을 시작 하는 사용자는 Administrators 그룹의 구성원 이어야 합니다. 열기 프로세스를 관리자 권한으로 실행 하지 않는 경우 시스템 자격 증명을 묻는 됩니다.
+- requireAdministrator: 응용 프로그램은 관리자 권한으로 실행 됩니다. 응용 프로그램을 시작 하는 사용자는 Administrators 그룹의 구성원 이어야 합니다. 열기 프로세스를 관리자 권한으로 실행 하지 않는 경우 시스템 자격 증명을 묻는 됩니다.
 
 /MANIFESTUAC:fragment 옵션을 사용 하 여 한 번에 수준 및 uiAccess 값을 지정할 수 있습니다. 조각 다음 형식 이어야 합니다.
 
@@ -76,7 +76,7 @@ UAC(사용자 계정 컨트롤) 정보를 program 매니페스트에 포함할�
 
 1. See <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.EnableUAC%2A>, <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACExecutionLevel%2A> 및 <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.UACUIAccess%2A>을 참조하십시오.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

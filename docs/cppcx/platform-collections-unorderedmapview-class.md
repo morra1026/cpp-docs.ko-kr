@@ -5,12 +5,12 @@ ms.topic: reference
 f1_keywords:
 - collection/Platform::Collections::UnorderedMapView
 ms.assetid: 545a3725-2efd-4cc1-b590-4a7cd2351f61
-ms.openlocfilehash: 9564904fa77ae6a7355119e83bdfa3ac65a4050c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a60d962d79684cb16d8d5a5139b9b65df8148052
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50560838"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414410"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView 클래스
 
@@ -59,7 +59,7 @@ UnorderedMapView의 구체적인 c + + 구현입니다 합니다 [Windows::Found
 |[UnorderedMapView::Size](#size)|현재 UnorderedMapView 개체의 요소 수를 반환합니다.|
 |[UnorderedMapView::Split](#split)|원래 UnorderedMapView 개체를 두 개의 UnorderedMapView 개체로 분할합니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `UnorderedMapView`
 
@@ -71,7 +71,7 @@ UnorderedMapView의 구체적인 c + + 구현입니다 합니다 [Windows::Found
 
 ## <a name="first"></a>  UnorderedMapView::First 메서드
 
-첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) unordered map의 요소입니다.
+첫 번째를 지정 하는 반복기를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) unordered map의 요소입니다.
 
 ### <a name="syntax"></a>구문
 
@@ -125,11 +125,12 @@ UnorderedMapView에서 요소를 찾는 데 사용되는 키입니다. 유형의
 
 ### <a name="return-value"></a>반환 값
 
-`key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.
+
+  `key`와 쌍을 이루는 값입니다. 반환 값의 형식은 typename *V*합니다.
 
 ## <a name="size"></a>  UnorderedMapView::Size 메서드
 
-개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView에 있는 요소입니다.
+개수를 반환 [Windows::Foundation::Collections::IKeyValuePair\<K, V >](/uwp/api/Windows.Foundation.Collections.IKeyValuePair_K_V_) UnorderedMapView에 있는 요소입니다.
 
 ### <a name="syntax"></a>구문
 

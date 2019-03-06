@@ -11,12 +11,12 @@ helpviewer_keywords:
 - -SUBSYSTEM linker option
 - subsystem specifications
 ms.assetid: d7b133cf-cf22-4da8-ab46-6552702c0b9b
-ms.openlocfilehash: 3d808f86a9ea3b34da0dccae18ecc000ca364f0a
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b6a8a841cefcd519cbeeae9f3355d72e1bbf286
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50518393"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417010"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM(하위 시스템 지정)
 
@@ -32,7 +32,7 @@ ms.locfileid: "50518393"
 **BOOT_APPLICATION**<br/>
 Windows 부팅 환경에서 실행되는 응용 프로그램입니다. 부팅 응용 프로그램에 대 한 자세한 내용은 참조 하세요. [에 대 한 BCD](/previous-versions/windows/desktop/bcd/about-bcd)합니다.
 
-**콘솔**<br/>
+**CONSOLE**<br/>
 Win32 문자 모드 응용 프로그램입니다. 운영 체제는 콘솔 응용 프로그램에 콘솔을 제공합니다. 하는 경우 `main` 또는 `wmain` 네이티브 코드에 대해 정의 된 `int main(array<String ^> ^)` 관리 코드에 대해 정의 된 사용 하 여 완전히 응용 프로그램을 빌드 또는 `/clr:safe`, CONSOLE이 기본값입니다.
 
 **EFI_APPLICATION**<br/>
@@ -85,7 +85,7 @@ Windows NT의 POSIX 하위 시스템으로 실행 되는 응용 프로그램입�
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.SubSystem%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

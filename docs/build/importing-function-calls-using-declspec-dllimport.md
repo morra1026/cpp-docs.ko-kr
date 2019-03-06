@@ -10,12 +10,12 @@ helpviewer_keywords:
 - __declspec(dllimport) keyword [C++]
 - function calls [C++], importing
 ms.assetid: 6b53c616-0c6d-419a-8e2a-d2fff20510b3
-ms.openlocfilehash: 513e6bd7b1120dd710852ab61aa7603bba74907e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 055edf4efc066695abb60a09b84cb1b13302af9c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50498230"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423965"
 ---
 # <a name="importing-function-calls-using-declspecdllimport"></a>__declspec(dllimport)을 사용하여 함수 호출 가져오기
 
@@ -72,6 +72,6 @@ call DWORD PTR __imp_func1
 
 반면에 DLL 내에서 함수 호출에 대 한 원하지 않는 간접 호출 해야 합니다. 함수의 주소를 알고 있습니다. 시간과 공간을 로드 하 고 간접 호출 전에 함수의 주소를 저장할 필요 하므로 빠르고 작은 직접 호출은 항상 됩니다. 사용 하려는 **__declspec (dllimport)** 자체 DLL 외부에서 DLL 함수를 호출할 때. 사용 하지 마세요 **__declspec (dllimport)** 해당 DLL을 빌드할 때 DLL 내부 함수입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[응용 프로그램으로 가져오기](../build/importing-into-an-application.md)
+[애플리케이션으로 가져오기](../build/importing-into-an-application.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - executable files [C++], linking to DLLs
 - loading DLLs [C++]
 ms.assetid: 7592e276-dd6e-4a74-90c8-e1ee35598ea3
-ms.openlocfilehash: 24912c13d3528377ab849a4205ef072eb26490d2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 998ec23d2d0f16069783529aebafc8b91bb15834
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50648775"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57418812"
 ---
 # <a name="link-an-executable-to-a-dll"></a>DLL에 실행 파일 링크
 
@@ -143,6 +143,6 @@ HRESULT LoadAndCallSomeFunction(DWORD dwParam1, UINT * puParam2)
 
 - [동적 연결 라이브러리 순서](/windows/desktop/Dlls/dynamic-link-library-search-order)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

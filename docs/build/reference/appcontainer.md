@@ -8,12 +8,12 @@ helpviewer_keywords:
 - -APPCONTAINER editbin option
 - /APPCONTAINER editbin option
 ms.assetid: 0ca4f1ec-c8de-4a37-b3e2-deda7af0bb88
-ms.openlocfilehash: 0805393990070a10caed8208138e31ab9084bdf0
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: ad451f5900841abe3f0fe10ae99fa0183e14e5c5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50482555"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412596"
 ---
 # <a name="appcontainer"></a>/APPCONTAINER
 
@@ -28,7 +28,7 @@ ms.locfileid: "50482555"
 
 **/APPCONTAINER** 옵션이 설정된 실행 파일은 Windows 8에서 도입된 프로세스 격리 환경인 앱 컨테이너에서만 실행할 수 있습니다. Microsoft Store 및 범용 Windows 앱에 대해이 옵션을 설정 해야 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EDITBIN 옵션](../../build/reference/editbin-options.md)<br/>
 [유니버설 Windows 앱이란?](/windows/uwp/get-started/universal-application-platform-guide)

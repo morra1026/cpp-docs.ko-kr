@@ -10,16 +10,16 @@ helpviewer_keywords:
 - -NATVIS linker option
 - Add Natvis file to PDB
 ms.assetid: 8747fc0c-701a-4796-bb4d-818ab4465cca
-ms.openlocfilehash: 475eb377fd55d6118c109f4e03ea1cf624a563f7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 983cbe4c4bd4164d81b83a23fe19569318d5193c
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50446022"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424979"
 ---
 # <a name="natvis-add-natvis-to-pdb"></a>/ NATVIS (PDB에 Natvis 추가)
 
-> / NATVIS:*파일 이름*
+> /NATVIS:*filename*
 
 ## <a name="parameters"></a>매개 변수
 
@@ -44,7 +44,7 @@ PDB 파일을 사용 하 여 만들어지지 않은 경우 링크 무시 /NATVIS
 
 - 이 옵션에 프로그래밍 방식으로 해당 하는 없습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual Studio 디버거에서 네이티브 개체의 사용자 지정 뷰 만들기](/visualstudio/debugger/create-custom-views-of-native-objects)<br/>
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>

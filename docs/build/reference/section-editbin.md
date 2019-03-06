@@ -9,12 +9,12 @@ helpviewer_keywords:
 - alignment characters in sections
 - /SECTION editbin option
 ms.assetid: 4680ab4e-c984-4251-8241-93440cad7615
-ms.openlocfilehash: 23a7ab9efc96ec10f4ad14547b0c0a20f13ac014
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 5ec58e2501176413991e6ad270940406f50b870d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523307"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413149"
 ---
 # <a name="section-editbin"></a>/SECTION(EDITBIN)
 
@@ -33,15 +33,15 @@ ms.locfileid: "50523307"
 |특성|설정|
 |---------------|-------------|
 |c|코드|
-|d|무시할 수|
+|일|무시할 수|
 |e|executable|
 |i|초기화 된 데이터|
 |k|캐시 된 가상 메모리|
 |분|링크 제거|
 |o|링크 정보|
 |p|가상 메모리 페이징된|
-|r|read|
-|s|공유|
+|r|읽기|
+|초|공유|
 |u|초기화 되지 않은 데이터|
 |주|쓰기|
 
@@ -60,6 +60,6 @@ ms.locfileid: "50523307"
 
 지정 된 `attributes` 및 *맞춤* 문자 공백이 없는 문자열입니다. 문자는 대/소문자 구분 되지 않습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [EDITBIN 옵션](../../build/reference/editbin-options.md)

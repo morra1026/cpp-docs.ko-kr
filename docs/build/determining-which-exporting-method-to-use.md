@@ -7,12 +7,12 @@ helpviewer_keywords:
 - def files [C++], exporting from DLLs
 - .def files [C++], exporting from DLLs
 ms.assetid: 66d773ed-935c-45c2-ad03-1a060874b34d
-ms.openlocfilehash: 75cd03e2ebb8dab4069024469b2b8b5c45665704
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 38006acfae90c3b216677684e9776f3ed5d7c1b1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50615135"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422761"
 ---
 # <a name="determining-which-exporting-method-to-use"></a>사용할 내보내기 방법 결정
 
@@ -38,17 +38,17 @@ ms.locfileid: "50615135"
 
 ### <a name="what-do-you-want-to-do"></a>원하는 작업을 선택하세요.
 
-- [사용 하 여 DLL에서 내보내기. DEF 파일](../build/exporting-from-a-dll-using-def-files.md)
+- [.def 파일을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-def-files.md)
 
-- [__Declspec (dllexport)을 사용 하 여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+- [__declspec(dllexport)을 사용하여 DLL에서 내보내기](../build/exporting-from-a-dll-using-declspec-dllexport.md)
 
-- [AFX_EXT_CLASS를 사용 하 여 가져오기 및 내보내기](../build/exporting-and-importing-using-afx-ext-class.md)
+- [AFX_EXT_CLASS를 사용하여 내보내기 및 가져오기](../build/exporting-and-importing-using-afx-ext-class.md)
 
-- [C 언어 실행 파일에서 사용 하기 위해 c + + 함수 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+- [C++ 함수를 C 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
 
-- [C 또는 c + + 언어 실행 파일에서 사용 하기 위해 내보내기 C 함수](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+- [C 함수를 C 또는 C++ 언어 실행 파일에서 사용할 수 있도록 내보내기](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
 
-- [__Declspec (dllimport)을 사용 하 여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
+- [__declspec(dllimport)을 사용하여 응용 프로그램으로 가져오기](../build/importing-into-an-application-using-declspec-dllimport.md)
 
 - [DLL 초기화](../build/run-time-library-behavior.md#initializing-a-dll)
 
@@ -58,8 +58,8 @@ ms.locfileid: "50615135"
 
 - [상호 가져오기](../build/mutual-imports.md)
 
-- [트 데코 레이 된 이름](../build/reference/decorated-names.md)
+- [데코레이팅된 이름](../build/reference/decorated-names.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DLL에서 내보내기](../build/exporting-from-a-dll.md)

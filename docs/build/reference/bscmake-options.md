@@ -29,12 +29,12 @@ helpviewer_keywords:
 - /Es BSCMAKE option
 - Ei BSCMAKE option
 ms.assetid: fa2f1e06-c684-41cf-80dd-6a554835ebd2
-ms.openlocfilehash: 669f1fc3ef151ee76ab6b057798f33f5b3cc1287
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7727f433ae68f26075645b35ff5edad43159ec67
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50464911"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415411"
 ---
 # <a name="bscmake-options"></a>BSCMAKE 옵션
 
@@ -48,16 +48,16 @@ ms.locfileid: "50464911"
 **/El**<br/>
 로컬 기호를 제외합니다. 기본 로컬 기호를 포함 하는 것입니다. 로컬 기호에 대 한 자세한 내용은 참조 하세요. [.sbr 파일 만들기](../../build/reference/creating-an-dot-sbr-file.md)합니다.
 
-**/ E m**<br/>
+**/Em**<br/>
 매크로 본문의 기호를 제외합니다. 사용 하 여 **/e m** 찾아보기 정보 파일에 매크로 이름만 포함 합니다. 기본은 매크로 이름 및 매크로 확장의 결과 포함 하는 것입니다.
 
-**/Er (** *기호*... **)**<br/>
+**/Er (** *symbol*...**)**<br/>
 찾아보기 정보 파일에서 지정된 된 기호를 제외합니다. 기호 이름을 여러 개를 지정 하려면 공백을 사용 하 여 이름을 구분 하 고 목록을 괄호로 묶습니다. 괄호가 하나만 지정 하는 경우에 필요 하지 않습니다 *기호*합니다.
 
 **/Es**<br/>
 절대 경로 사용 하 여 지정 된 또는 INCLUDE 환경 변수에 지정 된 절대 경로 있는 모든 include 파일 찾아보기 정보 파일에서 제외 합니다. (일반적으로이 시스템 찾아보기 정보 파일에 필요 하지 않을 수 있는 정보가 많이 포함 된 파일을 포함 합니다.) 이 옵션에는 상대 경로 또는 INCLUDE에 상대 경로에 있는 파일 또는 경로 없이 지정 된 파일 제외 되지 않은 합니다. 사용할 수는 **/Ei** 옵션과 함께 **/Es** 파일을 제외할 **/Es** 제외 하지 않습니다. 파일 중 일부만 제외 하려는 경우는 **/Es** 제외 하 고, 사용 하 여 **/Ei** 대신 **/Es** 및 제외 하려는 파일을 나열 합니다.
 
-**/errorreport:**[**none** &#124; **프롬프트** &#124; **큐** &#124; **보냅니다**]<br/>
+**/errorreport:**[**none** &#124; **prompt** &#124; **queue** &#124; **send**]<br/>
 Bscmake.exe의 내부 오류에 대 한 Microsoft로 정보를 보낼 수 있습니다.
 
 에 대 한 자세한 **/errorreport**를 참조 하십시오 [/errorReport (내부 컴파일러 오류 보고)](../../build/reference/errorreport-report-internal-compiler-errors.md)합니다.
@@ -74,7 +74,7 @@ BSCMAKE 명령줄 구문 요약 정보를 표시 합니다.
 **/NOLOGO**<br/>
 BSCMAKE 저작권 메시지를 표시 하지 않습니다.
 
-**/o** *파일 이름*<br/>
+**/o** *filename*<br/>
 찾아보기 정보 파일의 이름을 지정합니다. 기본적으로 BSCMAKE 첫 번째.sbr 파일 및.bsc 확장의 기본 이름 찾아보기 정보 파일을 제공합니다.
 
 **/S (** *filename*... **)**<br/>
@@ -92,6 +92,6 @@ BSCMAKE 명령줄 구문의 간단한 요약을 표시합니다.
 BSCMAKE /n /S toolbox.h /o main.bsc file1.sbr file2.sbr file3.sbr
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [BSCMAKE 참조](../../build/reference/bscmake-reference.md)

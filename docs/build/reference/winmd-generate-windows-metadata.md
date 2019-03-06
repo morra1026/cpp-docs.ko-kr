@@ -4,18 +4,18 @@ ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCLinkerTool.GenerateWindowsMetadata
 ms.assetid: bcfb4901-411e-4c9e-9f78-23028b6e5fcc
-ms.openlocfilehash: 3a59dd770d9429f23a4f401c6e1f5b13b9f743ef
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 83d22a0114b26f53fa9df9d2470c71cd80465d64
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50656107"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426690"
 ---
 # <a name="winmd-generate-windows-metadata"></a>/WINMD(Windows 메타데이터 생성)
 
 Windows 런타임 메타데이터(.winmd) 파일을 생성할 수 있게 해줍니다.
 
-> **/ WINMD**\[**:**{0}**아니요**\|**만**}]
+> **/WINMD**\[**:**{**NO**\|**ONLY**}]
 
 ## <a name="arguments"></a>인수
 
@@ -25,7 +25,7 @@ Windows 런타임 메타데이터(.winmd) 파일을 생성할 수 있게 해줍�
 **/WINMD:NO**<br/>
 링커가 바이너리 실행 파일만 생성하고 .winmd 파일은 생성하지 않습니다.
 
-**/ WINMD:만**<br/>
+**/WINMD:ONLY**<br/>
 링커가 .winmd 파일만 생성하고 바이너리 실행 파일은 생성하지 않습니다.
 
 ## <a name="remarks"></a>설명
@@ -42,7 +42,7 @@ Windows 런타임 메타데이터(.winmd) 파일을 생성할 수 있게 해줍�
 
 1. 에 **Windows 메타 데이터 생성** 드롭다운 목록 상자에서 원하는 옵션을 선택 합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [연습: 간단한 Windows 런타임 구성 요소를 만들고 JavaScript에서 호출](/windows/uwp/winrt-components/walkthrough-creating-a-simple-windows-runtime-component-and-calling-it-from-javascript)<br/>
 [Microsoft Interface Definition Language 3.0 소개](/uwp/midl-3/intro)<br/>

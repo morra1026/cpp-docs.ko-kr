@@ -5,12 +5,12 @@ helpviewer_keywords:
 - NMAKE program, inference rules
 - defining inference rules
 ms.assetid: 071cd092-3f2e-4065-b0fb-36a9d393cfa8
-ms.openlocfilehash: 0e8356f57b85d503328bb282e2f9f785ac20fa4c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7031f56d82fcaf557388c7600d493ebda48add1a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431168"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416932"
 ---
 # <a name="defining-a-rule"></a>규칙 정의
 
@@ -29,6 +29,6 @@ ms.locfileid: "50431168"
 
 [규칙에서 경로 검색](../build/search-paths-in-rules.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [유추 규칙](../build/inference-rules.md)

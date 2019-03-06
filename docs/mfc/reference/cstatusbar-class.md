@@ -36,12 +36,12 @@ helpviewer_keywords:
 - CStatusBar [MFC], SetPaneStyle
 - CStatusBar [MFC], SetPaneText
 ms.assetid: a3bde3db-e71c-4881-a3ca-1d5481c345ba
-ms.openlocfilehash: e7aa577d237c1800ca9df3f0af4c44acdaae9ae2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: cb52f1138ba7ff01c6fbf2f7ec13d5f39e9422d8
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57279499"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413396"
 ---
 # <a name="cstatusbar-class"></a>CStatusBar 클래스
 
@@ -284,7 +284,7 @@ void GetItemRect(
 검색할 인 사각형 좌표는 표시기의 인덱스입니다.
 
 *lpRect*<br/>
-가리키는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 표시기에서 지정 된 좌표를 받게 될 개체 *nIndex*합니다.
+가리키는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 또는 [CRect](../../atl-mfc-shared/reference/crect-class.md) 표시기에서 지정 된 좌표를 받게 될 개체 *nIndex*합니다.
 
 ### <a name="remarks"></a>설명
 

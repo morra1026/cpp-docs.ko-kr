@@ -9,12 +9,12 @@ helpviewer_keywords:
 - libraries [C++], linking to COFF
 - LINK tool [C++], linker options
 ms.assetid: c1d51b8a-bd23-416d-81e4-900e02b2c129
-ms.openlocfilehash: 22ac88ede7cc015efd12f1a996ffdf361b43f041
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 63cfa784242af1f737c116629a29be5ad77af31d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50510115"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415203"
 ---
 # <a name="linker-options"></a>링커 옵션
 
@@ -58,14 +58,14 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/DELAY](../../build/reference/delay-delay-load-import-settings.md)|DLL의 지연 로드를 제어합니다.|
 |[/DELAYLOAD](../../build/reference/delayload-delay-load-import.md)|지정한 DLL의 지연 로드를 일으킵니다.|
 |[/DELAYSIGN](../../build/reference/delaysign-partially-sign-an-assembly.md)|어셈블리에 부분적으로 서명합니다.|
-|[/ DEPENDENTLOADFLAG](dependentloadflag.md)|종속 DLL 로드에 기본 플래그를 설정합니다.|
+|[/DEPENDENTLOADFLAG](dependentloadflag.md)|종속 DLL 로드에 기본 플래그를 설정합니다.|
 |[/DLL](../../build/reference/dll-build-a-dll.md)|DLL을 빌드합니다.|
 |[/DRIVER](../../build/reference/driver-windows-nt-kernel-mode-driver.md)|커널 모드 드라이버를 만듭니다.|
 |[/DYNAMICBASE](../../build/reference/dynamicbase-use-address-space-layout-randomization.md)|ASLR(Address Space Layout Randomization) 기능을 사용하여 로드할 때 무작위로 기준 주소를 다시 지정할 수 있는 실행 가능 이미지를 생성할지 여부를 지정합니다.|
 |[/ENTRY](../../build/reference/entry-entry-point-symbol.md)|시작 주소를 설정합니다.|
 |[/errorReport](../../build/reference/errorreport-report-internal-linker-errors.md)|Microsoft에 내부 링커 오류를 보고합니다.|
 |[/EXPORT](../../build/reference/export-exports-a-function.md)|함수를 내보냅니다.|
-|[/ FILEALIGN](../../build/reference/filealign.md)|지정된 된 값의 배수에서 출력 파일 내의 섹션을 맞춥니다.|
+|[/FILEALIGN](../../build/reference/filealign.md)|지정된 된 값의 배수에서 출력 파일 내의 섹션을 맞춥니다.|
 |[/FIXED](../../build/reference/fixed-fixed-base-address.md)|기본 설정 기준 주소에서만 로드할 수 있는 프로그램을 만듭니다.|
 |[/FORCE](../../build/reference/force-force-file-output.md)|확인되지 않은 기호 또는 두 번 이상 정의된 기호를 사용해도 링크가 강제로 완료되도록 합니다.|
 |[/FUNCTIONPADMIN](../../build/reference/functionpadmin-create-hotpatchable-image.md)|핫 패치할 수 있는 이미지를 만듭니다.|
@@ -82,7 +82,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/INTEGRITYCHECK](../../build/reference/integritycheck-require-signature-check.md)|로드할 때 모듈에 서명 확인이 필요한지 지정합니다.|
 |[/KEYCONTAINER](../../build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly.md)|어셈블리에 서명할 키 컨테이너를 지정합니다.|
 |[/KEYFILE](../../build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly.md)|어셈블리에 서명할 키 또는 키 쌍을 지정합니다.|
-|[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware-handle-large-addresses.md)|컴파일러에 응용 프로그램이 2GB를 넘는 주소를 지원한다고 알립니다.|
+|[/LARGEADDRESSAWARE](../../build/reference/largeaddressaware-handle-large-addresses.md)|컴파일러에 애플리케이션이 2GB를 넘는 주소를 지원한다고 알립니다.|
 |[/LIBPATH](../../build/reference/libpath-additional-libpath.md)|환경 라이브러리 경로 앞을 검색할 경로를 지정합니다.|
 |[/LTCG](../../build/reference/ltcg-link-time-code-generation.md)|링크 타임 코드 생성을 지정합니다.|
 |[/MACHINE](../../build/reference/machine-specify-target-platform.md)|대상 플랫폼을 지정합니다.|
@@ -95,7 +95,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/MAPINFO](../../build/reference/mapinfo-include-information-in-mapfile.md)|맵 파일에 지정된 정보를 포함합니다.|
 |[/MERGE](../../build/reference/merge-combine-sections.md)|섹션을 결합합니다.|
 |[/MIDL](../../build/reference/midl-specify-midl-command-line-options.md)|MIDL 명령줄 옵션을 지정합니다.|
-|[/ NATVIS](../../build/reference/natvis-add-natvis-to-pdb.md)|PDB에 Natvis 파일에서 디버거 시각화 도우미를 추가합니다.|
+|[/NATVIS](../../build/reference/natvis-add-natvis-to-pdb.md)|PDB에 Natvis 파일에서 디버거 시각화 도우미를 추가합니다.|
 |[/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md)|.NET Framework 어셈블리의 생성을 억제합니다.|
 |[/NODEFAULTLIB](../../build/reference/nodefaultlib-ignore-libraries.md)|외부 참조가 확인되면 모든 (또는 지정한) 기본 라이브러리를 무시합니다.|
 |[/NOENTRY](../../build/reference/noentry-no-entry-point.md)|리소스 전용 DLL을 만듭니다.|
@@ -113,14 +113,14 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 |[/RELEASE](../../build/reference/release-set-the-checksum.md)|.exe 헤더의 체크섬을 설정합니다.|
 |[/SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md)|이미지에 안전한 예외 처리기 테이블을 포함하도록 지정합니다.|
 |[/SECTION](../../build/reference/section-specify-section-attributes.md)|섹션의 특성을 재정의합니다.|
-|[/ SOURCELINK](../../build/reference/sourcelink.md)|PDB에 추가할 SourceLink 파일을 지정 합니다.|
+|[/SOURCELINK](../../build/reference/sourcelink.md)|PDB에 추가할 SourceLink 파일을 지정 합니다.|
 |[/STACK](../../build/reference/stack-stack-allocations.md)|스택 크기를 바이트 단위로 설정합니다.|
 |[/STUB](../../build/reference/stub-ms-dos-stub-file-name.md)|MS-DOS 스텁 프로그램을 Win32 프로그램에 첨부합니다.|
 |[/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md)|운영 체제에 .exe 파일을 실행하는 방법을 알립니다.|
 |[/SWAPRUN](../../build/reference/swaprun-load-linker-output-to-swap-file.md)|스왑 파일을 실행하기 전에 스왑 파일에 링커 옵션을 복사하도록 운영 체제에 지시합니다.|
 |[/TLBID](../../build/reference/tlbid-specify-resource-id-for-typelib.md)|링커 생성 형식 라이브러리의 리소스 ID를 지정합니다.|
 |[/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md)|.tlb 파일과 기타 MIDL 출력 파일의 이름을 지정합니다.|
-|[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|터미널 서버에서 실행되는 특별히 디자인된 응용 프로그램을 만듭니다.|
+|[/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md)|터미널 서버에서 실행되는 특별히 디자인된 애플리케이션을 만듭니다.|
 |[/USEPROFILE](../../build/reference/useprofile.md)|최적화 학습 데이터를 사용 하 여 프로필 기반 최적화 된 이미지를 만듭니다.|
 |[/VERBOSE](../../build/reference/verbose-print-progress-messages.md)|링커 진행 메시지를 출력합니다.|
 |[/VERSION](../../build/reference/version-version-information.md)|버전 번호를 할당합니다.|
@@ -134,7 +134,7 @@ LINK.exe는 COFF(Common Object File Format) 개체 파일과 라이브러리를 
 
 자세한 내용은 [Compiler-Controlled LINK Options](../../build/reference/compiler-controlled-link-options.md)을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](../../build/reference/c-cpp-building-reference.md)<br/>
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)

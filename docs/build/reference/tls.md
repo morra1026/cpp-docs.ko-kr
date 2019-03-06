@@ -7,12 +7,12 @@ helpviewer_keywords:
 - /TLS dumpbin option
 - -TLS dumpbin option
 ms.assetid: 2b3f48f9-cac4-4351-b15c-2833b43bc709
-ms.openlocfilehash: c125a6439e6cda2159a8bde2317528e667eaf310
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1760e94046a950f67d3c3fd7ef13aa40ca7de47a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50532638"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417790"
 ---
 # <a name="tls"></a>/TLS
 
@@ -26,6 +26,6 @@ ms.locfileid: "50532638"
 
 IMAGE_TLS_DIRECTORY는 winnt.h에 정의 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [DUMPBIN 옵션](../../build/reference/dumpbin-options.md)

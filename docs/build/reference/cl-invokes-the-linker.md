@@ -10,12 +10,12 @@ helpviewer_keywords:
 - cl.exe compiler [C++], compiling without linking
 - cl.exe compiler [C++], controlling linker
 ms.assetid: eae47ef7-09eb-40c9-b318-7c714cd452fc
-ms.openlocfilehash: e071209bd09fea17082379bf3f2486866b52c548
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 4e65801fcddef739f3fabe88b2b940602fde965a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50447205"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412733"
 ---
 # <a name="cl-invokes-the-linker"></a>CL에서의 링커 호출
 
@@ -24,7 +24,7 @@ ms.locfileid: "50447205"
 |옵션|설명|
 |------------|-----------------|
 |/c|연결 하지 않고 컴파일하면|
-|/ E, /EP /P|링크 하지 않고 전처리|
+|/E, /EP, /P|링크 하지 않고 전처리|
 |/Zg|함수 프로토타입 생성|
 |/Zs|구문 검사|
 
@@ -32,7 +32,7 @@ ms.locfileid: "50447205"
 
 ## <a name="example"></a>예제
 
-세 가지 C 소스 파일을 컴파일한다고 가정: MAIN.c 고 MOD1.c MOD2.c 합니다. 각 파일에 다른 파일에 정의 된 함수에 대 한 호출에 포함 됩니다.
+세 가지 C 소스 파일을 컴파일한다고 가정 합니다. MAIN.c MOD1.c 하며 MOD2.c 합니다. 각 파일에 다른 파일에 정의 된 함수에 대 한 호출에 포함 됩니다.
 
 - 함수를 호출 하는 MAIN.c `func1` MOD1.c 함수에 `func2` MOD2.c에서.
 
@@ -56,7 +56,7 @@ CL 링커 합니다, 이름과 함께.obj 파일의 이름을 전달합니다. �
 
 1. MOD2.obj에 대 한 참조에서에서 `myline` 고 `mycircle` 합니다의 정의 사용 하 여 확인 됩니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

@@ -52,16 +52,16 @@ helpviewer_keywords:
 - m_bCancelWhenExecuting
 - m_bIsExecuting
 ms.assetid: ef285fef-0d66-45e6-a762-b03357098e3b
-ms.openlocfilehash: c5e599b437f7660801a1eb40618eb49bee84a918
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: e1f461cc850a2122af7902babfad8f1e14ac3e33
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556818"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424849"
 ---
 # <a name="icommandimpl-class"></a>ICommandImpl 클래스
 
-에 대 한 구현을 제공 합니다 [ICommand](https://docs.microsoft.com/previous-versions/windows/desktop/ms709737(v=vs.85)) 인터페이스입니다.
+에 대 한 구현을 제공 합니다 [ICommand](/previous-versions/windows/desktop/ms709737(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -119,7 +119,7 @@ STDMETHOD(Cancel)();
 
 ### <a name="remarks"></a>설명
 
-참조 [ICommand::Cancel](https://docs.microsoft.com/previous-versions/windows/desktop/ms714402(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [ICommand::Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ## <a name="cancelexecution"></a> Icommandimpl:: Cancelexecution
 
@@ -131,7 +131,7 @@ STDMETHOD(Cancel)();
 HRESULT CancelExecution();
 ```
 
-## <a name="createrowset"></a> Icommandimpl:: Createrowset
+## <a name="createrowset"></a> ICommandImpl::CreateRowset
 
 호출한 [Execute](../../data/oledb/icommandimpl-execute.md) 단일 행 집합을 만들려고 합니다.
 
@@ -178,7 +178,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 
 둘 이상의 행 집합을 만들고, 다른 행 집합 만들기에 대 한 사용자 고유의 조건을 제공 하는 다양 한 호출을 배치 `CreateRowset` 내에서 `Execute`합니다.
 
-참조 [icommand:: Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
+참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) 에 *OLE DB 프로그래머 참조입니다.*
 
 ## <a name="execute"></a> Icommandimpl:: Execute
 
@@ -196,7 +196,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [icommand:: Execute](https://docs.microsoft.com/previous-versions/windows/desktop/ms718095(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [icommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 
@@ -204,7 +204,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 `Execute` 호출 [CreateRowset](../../data/oledb/icommandimpl-createrowset.md)합니다. 서로 다른 행 집합을 만들기 위한 사용자 고유의 조건을 제공 하거나 둘 이상의 행 집합을 만들려면 기본 구현을 재정의 합니다.
 
-## <a name="getdbsession"></a> Icommandimpl:: Getdbsession
+## <a name="getdbsession"></a> ICommandImpl::GetDBSession
 
 명령을 만든 세션에 대 한 인터페이스 포인터를 반환 합니다.
 
@@ -217,7 +217,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [ICommand::GetDBSession](https://docs.microsoft.com/previous-versions/windows/desktop/ms719622(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [ICommand::GetDBSession](/previous-versions/windows/desktop/ms719622(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 

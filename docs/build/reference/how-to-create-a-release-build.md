@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Win32, release build
 - release builds, creating
 ms.assetid: 6a4c89b1-48f0-44d2-8703-ca0a4b0351bf
-ms.openlocfilehash: 73b9b5bd288d881138d7f8909387b77fcfc85ee2
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d20cfed8bfb252adf5f6435be73b22a3deccc17f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50427913"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57419246"
 ---
 # <a name="how-to-create-a-release-build"></a>방법: 릴리스 빌드 만들기
 
@@ -20,6 +20,6 @@ ms.locfileid: "50427913"
 
 1. **빌드** 메뉴에서 **빌드**를 클릭합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [릴리스 빌드](../../build/reference/release-builds.md)

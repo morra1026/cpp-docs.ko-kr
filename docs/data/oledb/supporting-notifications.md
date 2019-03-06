@@ -9,12 +9,12 @@ helpviewer_keywords:
 - OLE DB provider templates, notifications
 - OLE DB providers, notifications
 ms.assetid: 76e875fd-2bfd-4e4e-9f43-dbe5a3fa7382
-ms.openlocfilehash: 77344150f5c0d969c1636ac146138242d96ee39f
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: 25af1656295606658c62c2c85c1c037a54181527
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556558"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425629"
 ---
 # <a name="supporting-notifications"></a>알림 지원
 
@@ -22,7 +22,7 @@ ms.locfileid: "51556558"
 
 알림을 구현 하는 공급자 클래스에서 상속 해야 합니다 [IRowsetNotifyCP](../../data/oledb/irowsetnotifycp-class.md) 하 고 [IConnectionPointContainer](../../atl/reference/iconnectionpointcontainerimpl-class.md)합니다.
 
-`IRowsetNotifyCP` 연결 지점 인터페이스에 대 한 공급자 사이트 구현 [IRowsetNotify](https://docs.microsoft.com/previous-versions/windows/desktop/ms712959(v=vs.85))합니다. `IRowsetNotifyCP` 구현 브로드캐스트 수신기 연결 지점에 advise 할 함수 `IID_IRowsetNotify` 행 집합의 내용 변경 합니다.
+`IRowsetNotifyCP` 연결 지점 인터페이스에 대 한 공급자 사이트 구현 [IRowsetNotify](/previous-versions/windows/desktop/ms712959(v=vs.85))합니다. `IRowsetNotifyCP` 구현 브로드캐스트 수신기 연결 지점에 advise 할 함수 `IID_IRowsetNotify` 행 집합의 내용 변경 합니다.
 
 또한 구현 하 고 등록 해야 합니다 `IRowsetNotify` 를 사용 하 여 소비자 (싱크 라고도 함)에 [IRowsetNotifyImpl](../../data/oledb/irowsetnotifyimpl-class.md) 소비자 알림을 처리할 수 있도록 합니다. 소비자의 연결 지점 인터페이스를 구현 하는 방법에 대 한 내용은 [알림 수신](../../data/oledb/receiving-notifications.md)합니다.
 

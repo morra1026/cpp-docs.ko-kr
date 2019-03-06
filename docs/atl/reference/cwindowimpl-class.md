@@ -18,12 +18,12 @@ helpviewer_keywords:
 - CWindowImpl class
 - subclassing windows, ATL
 ms.assetid: 02eefd45-a0a6-4d1b-99f6-dbf627e2cc2f
-ms.openlocfilehash: 2e4a9b585ed653927c87eaf82dfae8ce8f982dfc
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 96807debc7a3af5eca5d7a0c17a7728431733325
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57290705"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417933"
 ---
 # <a name="cwindowimpl-class"></a>CWindowImpl 클래스
 
@@ -87,7 +87,7 @@ A [traits 클래스](../../atl/understanding-window-traits.md) 창 스타일을 
 
 사용할 수 있습니다 `CWindowImpl` 창 또는 서브 클래스는 기존 창을 만들 수 있습니다. `CWindowImpl` 창 프로시저를 해당 처리기로 메시지를 보내는 메시지 맵을 사용 합니다.
 
-`CWindowImpl::Create` 관리 되는 창 클래스 정보를 기반으로 창을 만듭니다 [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)합니다. `CWindowImpl` 포함 된 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) 의미 하는 매크로 `CWndClassInfo` 새 창 클래스 등록 합니다. 슈퍼 기존 창 클래스를 파생 클래스에서 `CWindowImpl` 포함 된 [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) 매크로입니다. 이 경우 `CWndClassInfo`는 기존 클래스를 기반으로 하는 창 클래스 등록하지만 `CWindowImpl::WindowProc`를 사용합니다. 예를 들면,
+`CWindowImpl::Create` 관리 되는 창 클래스 정보를 기반으로 창을 만듭니다 [CWndClassInfo](../../atl/reference/cwndclassinfo-class.md)합니다. `CWindowImpl` 포함 된 [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) 의미 하는 매크로 `CWndClassInfo` 새 창 클래스 등록 합니다. 슈퍼 기존 창 클래스를 파생 클래스에서 `CWindowImpl` 포함 된 [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) 매크로입니다. 이 경우 `CWndClassInfo`는 기존 클래스를 기반으로 하는 창 클래스 등록하지만 `CWindowImpl::WindowProc`를 사용합니다. 예를 들어:
 
 [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwindowimpl-class_1.h)]
 
@@ -151,7 +151,7 @@ HWND Create(
 [in] 부모 또는 소유자 창에 대 한 핸들입니다.
 
 *rect*<br/>
-[in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.
+[in] A [RECT](/previous-versions/dd162897\(v=vs.85\)) 창의 위치를 지정 하는 구조입니다. `RECT` 포인터 또는 참조로 전달할 수 있습니다.
 
 *szWindowName*<br/>
 [in] 창의 이름을 지정합니다. 기본값은 NULL입니다.

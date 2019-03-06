@@ -116,12 +116,12 @@ helpviewer_keywords:
 - CDHtmlDialog [MFC], m_strCurrentUrl
 - CDHtmlDialog [MFC], m_szHtmlResID
 ms.assetid: 3f941c85-87e1-4f0f-9cc5-ffee8498b312
-ms.openlocfilehash: 9cf01f16fe21d0c5bea34bf168c6ea6bff04c195
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5b3e34987b5d6b63ee302ba53e456c448ac3c3d2
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263613"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413955"
 ---
 # <a name="cdhtmldialog-class"></a>CDHtmlDialog 클래스
 
@@ -402,7 +402,7 @@ void DDX_DHtml_CheckBox(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값입니다.
 
 ### <a name="example"></a>예제
@@ -468,7 +468,7 @@ HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 *dispid*<br/>
 데이터를 교환 하려는 HTML 요소의 디스패치 ID입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_radio"></a>  CDHtmlDialog::DDX_DHtml_Radio
@@ -490,7 +490,7 @@ void DDX_DHtml_Radio(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_selectindex"></a>  CDHtmlDialog::DDX_DHtml_SelectIndex
@@ -512,7 +512,7 @@ void DDX_DHtml_SelectIndex(
 *szId*<br/>
 HTML 컨트롤의 id 매개 변수에 대해 지정 된 값입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_selectstring"></a>  CDHtmlDialog::DDX_DHtml_SelectString
@@ -534,7 +534,7 @@ void DDX_DHtml_SelectString(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값입니다.
 
 ##  <a name="ddx_dhtml_selectvalue"></a>  CDHtmlDialog::DDX_DHtml_SelectValue
@@ -556,7 +556,7 @@ void DDX_DHtml_SelectValue(
 *szId*<br/>
 HTML 컨트롤의 ID 매개 변수에 대해 지정 된 값입니다.
 
-*value*<br/>
+*값*<br/>
 교환할 값입니다.
 
 ### <a name="example"></a>예제
@@ -582,7 +582,7 @@ STDMETHOD(EnableModeless)(BOOL fEnable);
 ### <a name="parameters"></a>매개 변수
 
 *fEnable*<br/>
-참조 *fEnable* 에 [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx) Windows SDK에 있습니다.
+참조 *fEnable* 에 [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -590,7 +590,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="filterdataobject"></a>  CDHtmlDialog::FilterDataObject
 
@@ -605,7 +605,7 @@ STDMETHOD(FilterDataObject)(
 ### <a name="parameters"></a>매개 변수
 
 *pDO*<br/>
-참조 *pDO* 에 [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) Windows SDK에 있습니다.
+참조 *pDO* 에 [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) Windows SDK에 있습니다.
 
 *ppDORet*<br/>
 참조 *ppDORet* 에서 `IDocHostUIHandler::FilterDataObject` Windows SDK에 있습니다.
@@ -616,7 +616,7 @@ S_FALSE 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="getcontroldispatch"></a>  CDHtmlDialog::GetControlDispatch
 
@@ -695,7 +695,7 @@ A [CString](../../atl-mfc-shared/reference/cstringt-class.md) 검색 하는 URL�
 
 ##  <a name="getdhtmldocument"></a>  CDHtmlDialog::GetDHtmlDocument
 
-검색 된 [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) 현재 로드 된 HTML 문서에 대 한 인터페이스입니다.
+검색 된 [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) 현재 로드 된 HTML 문서에 대 한 인터페이스입니다.
 
 ```
 HRESULT GetDHtmlDocument(IHTMLDocument2 **pphtmlDoc);
@@ -722,7 +722,7 @@ STDMETHOD(GetDropTarget)(
 ### <a name="parameters"></a>매개 변수
 
 *pDropTarget*<br/>
-참조 *pDropTarget* 에 [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx) Windows SDK에 있습니다.
+참조 *pDropTarget* 에 [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) Windows SDK에 있습니다.
 
 *ppDropTarget*<br/>
 참조 *ppDropTarget* 에서 `IDocHostUIHandler::GetDropTarget` Windows SDK에 있습니다.
@@ -733,7 +733,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="getelement"></a>  CDHtmlDialog::GetElement
 
@@ -896,7 +896,7 @@ STDMETHOD(GetExternal)(IDispatch** ppDispatch);
 ### <a name="parameters"></a>매개 변수
 
 *ppDispatch*<br/>
-참조 *ppDispatch* 에 [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx) Windows SDK에 있습니다.
+참조 *ppDispatch* 에 [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -904,7 +904,7 @@ E_NOTIMPL이 성공 또는 실패 시 S_OK를 반환합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="gethostinfo"></a>  CDHtmlDialog::GetHostInfo
 
@@ -917,7 +917,7 @@ STDMETHOD(GetHostInfo)(DOCHOSTUIINFO* pInfo);
 ### <a name="parameters"></a>매개 변수
 
 *pInfo*<br/>
-참조 *pInfo* 에 [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx) Windows SDK에 있습니다.
+참조 *pInfo* 에 [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -925,7 +925,7 @@ S_OK 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="getoptionkeypath"></a>  CDHtmlDialog::GetOptionKeyPath
 
@@ -940,7 +940,7 @@ STDMETHOD(GetOptionKeyPath)(
 ### <a name="parameters"></a>매개 변수
 
 *pchKey*<br/>
-참조 *pchKey* 에 [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx) Windows SDK에 있습니다.
+참조 *pchKey* 에 [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) Windows SDK에 있습니다.
 
 *dw*<br/>
 참조 *dw* 에서 `IDocHostUIHandler::GetOptionKeyPath` Windows SDK에에서 있습니다.
@@ -951,7 +951,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="hideui"></a>  CDHtmlDialog::HideUI
 
@@ -967,7 +967,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::HideUI](https://msdn.microsoft.com/library/aa753259.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="isexternaldispatchsafe"></a>  CDHtmlDialog::IsExternalDispatchSafe
 
@@ -1082,7 +1082,7 @@ void Navigate(
 대상 URL이 포함 된 문자열에 대 한 포인터입니다.
 
 *dwFlags*<br/>
-리소스 기록 목록에 추가할지 여부를, 캐시에 읽기 또는 쓰기 캐시에서 것인지 및 리소스를 새 창에 표시할지 여부를 지정 하는 변수는 플래그입니다. 변수에서 정의 된 값의 조합 수를 [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) 열거형입니다.
+리소스 기록 목록에 추가할지 여부를, 캐시에 읽기 또는 쓰기 캐시에서 것인지 및 리소스를 새 창에 표시할지 여부를 지정 하는 변수는 플래그입니다. 변수에서 정의 된 값의 조합 수를 [BrowserNavConstants](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768360\(v=vs.85\)) 열거형입니다.
 
 *lpszTargetFrameName*<br/>
 리소스를 표시 하는 프레임의 이름을 포함 하는 문자열에 대 한 포인터입니다.
@@ -1143,7 +1143,7 @@ STDMETHOD(OnDocWindowActivate)(BOOL fActivate);
 ### <a name="parameters"></a>매개 변수
 
 *fActivate*<br/>
-참조 *fActivate* 에 [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx) Windows SDK에 있습니다.
+참조 *fActivate* 에 [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1151,7 +1151,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현을 [IDocHostUIHandler::OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현을 [IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="onframewindowactivate"></a>  CDHtmlDialog::OnFrameWindowActivate
 
@@ -1164,7 +1164,7 @@ STDMETHOD(OnFrameWindowActivate)(BOOL fActivate);
 ### <a name="parameters"></a>매개 변수
 
 *fActivate*<br/>
-참조 *fActivate* 에 [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx) Windows SDK에 있습니다.
+참조 *fActivate* 에 [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) Windows SDK에 있습니다.
 
 ### <a name="return-value"></a>반환 값
 
@@ -1172,7 +1172,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="oninitdialog"></a>  CDHtmlDialog::OnInitDialog
 
@@ -1226,7 +1226,7 @@ STDMETHOD(ResizeBorder)(
 ### <a name="parameters"></a>매개 변수
 
 *prcBorder*<br/>
-참조 *prcBorder* 에 [IDocHostUIHandler::ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx) Windows SDK에 있습니다.
+참조 *prcBorder* 에 [IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) Windows SDK에 있습니다.
 
 *pUIWindow*<br/>
 참조 *pUIWindow* 에서 `IDocHostUIHandler::ResizeBorder` Windows SDK에 있습니다.
@@ -1372,7 +1372,7 @@ void SetHostFlags(DWORD dwFlags);
 ### <a name="parameters"></a>매개 변수
 
 *dwFlags*<br/>
-가능한 값을 참조 하세요 [DOCHOSTUIFLAG](https://msdn.microsoft.com/library/aa753277.aspx) Windows SDK에 있습니다.
+가능한 값을 참조 하세요 [DOCHOSTUIFLAG](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753277\(v=vs.85\)) Windows SDK에 있습니다.
 
 ##  <a name="showcontextmenu"></a>  CDHtmlDialog::ShowContextMenu
 
@@ -1389,7 +1389,7 @@ STDMETHOD(ShowContextMenu)(
 ### <a name="parameters"></a>매개 변수
 
 *dwID*<br/>
-참조 *dwID* 에 [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx) Windows SDK에 있습니다.
+참조 *dwID* 에 [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) Windows SDK에 있습니다.
 
 *ppt*<br/>
 참조 *ppt* 에서 `IDocHostUIHandler::ShowContextMenu` Windows SDK에에서 있습니다.
@@ -1406,7 +1406,7 @@ S_FALSE 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="showui"></a>  CDHtmlDialog::ShowUI
 
@@ -1424,7 +1424,7 @@ STDMETHOD(ShowUI)(
 ### <a name="parameters"></a>매개 변수
 
 *dwID*<br/>
-참조 *dwID* 에 [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) Windows SDK에 있습니다.
+참조 *dwID* 에 [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) Windows SDK에 있습니다.
 
 *pActiveObject*<br/>
 참조 *d pActiveObject* 에서 `IDocHostUIHandler::ShowUI` Windows SDK에 있습니다.
@@ -1444,7 +1444,7 @@ S_FALSE 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="translateaccelerator"></a>  CDHtmlDialog::TranslateAccelerator
 
@@ -1460,7 +1460,7 @@ STDMETHOD(TranslateAccelerator)(
 ### <a name="parameters"></a>매개 변수
 
 *lpMsg*<br/>
-참조 *lpMsg* 에 [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx) Windows SDK에 있습니다.
+참조 *lpMsg* 에 [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) Windows SDK에 있습니다.
 
 *pguidCmdGroup*<br/>
 참조 *pguidCmdGroup* 에서 `IDocHostUIHandler::TranslateAccelerator` Windows SDK에 있습니다.
@@ -1474,7 +1474,7 @@ S_FALSE 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="translateurl"></a>  CDHtmlDialog::TranslateUrl
 
@@ -1490,7 +1490,7 @@ STDMETHOD(TranslateUrl)(
 ### <a name="parameters"></a>매개 변수
 
 *dwTranslate*<br/>
-참조 *dwTranslate* 에 [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx) Windows SDK에 있습니다.
+참조 *dwTranslate* 에 [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) Windows SDK에 있습니다.
 
 *pchURLIn*<br/>
 참조 *pchURLIn* 에서 `IDocHostUIHandler::TranslateUrl` Windows SDK에 있습니다.
@@ -1504,7 +1504,7 @@ S_FALSE 반환 합니다.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ##  <a name="updateui"></a>  CDHtmlDialog::UpdateUI
 
@@ -1520,7 +1520,7 @@ E_NOTIMPL 반환.
 
 ### <a name="remarks"></a>설명
 
-이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)Windows SDK에 설명 된 대로 합니다.
+이 멤버 함수는 CDHtmlDialog의 구현의 [IDocHostUIHandler::UpdateUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))Windows SDK에 설명 된 대로 합니다.
 
 ## <a name="see-also"></a>참고자료
 

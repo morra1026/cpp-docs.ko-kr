@@ -24,12 +24,12 @@ helpviewer_keywords:
 - files [C++], text
 - text files, writing in C++
 ms.assetid: 3296fd59-a83a-40d4-bd4a-6096cc13101b
-ms.openlocfilehash: 8f60ece05443393456693aba3bc674f52822432a
-ms.sourcegitcommit: b032daf81cb5fdb1f5a988277ee30201441c4945
+ms.openlocfilehash: 332e1d6d292e32dcf129b37c8c4a7857f0b5985f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51693479"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424316"
 ---
 # <a name="file-handling-and-io-ccli"></a>파일 처리 및 I/O(C++/CLI)
 
@@ -136,7 +136,7 @@ int main()
 
 다음 코드 예제에서 두 개의 클래스를 사용 하 여 파일에서 이진 데이터를 읽는 방법을 합니다 <xref:System.IO?displayProperty=fullName> 네임 스페이스: <xref:System.IO.FileStream> 고 <xref:System.IO.BinaryReader>입니다. <xref:System.IO.FileStream> 실제 파일을 나타냅니다. <xref:System.IO.BinaryReader> 스트림에 이진 액세스를 허용 하는 인터페이스를 제공 합니다.
 
-코드 예제에서는 이름이 data.bin이 고 이진 형식의 정수를에서 포함 하는 파일을 읽습니다. 이런이 종류의 파일에 대 한 정보를 참조 하세요 [방법: 이진 파일 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md)합니다.
+코드 예제에서는 이름이 data.bin이 고 이진 형식의 정수를에서 포함 하는 파일을 읽습니다. 이런이 종류의 파일에 대 한 정보를 참조 하세요. [방법: 이진 파일 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-a-binary-file-cpp-cli.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -177,7 +177,7 @@ int main()
 
 다음 코드 예제에서는 열고 사용 하 여 한 번에 텍스트 파일을 한 줄씩 읽는 방법을 보여 줍니다.는 <xref:System.IO.StreamReader> 에 정의 된 클래스는 <xref:System.IO?displayProperty=fullName> 네임 스페이스입니다. 이 클래스 인스턴스의 텍스트 파일을 여는 고 된 <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=fullName> 메서드 사용은 각 줄.
 
-이 코드 예제에서는 텍스트가 포함 된 textfile.txt 라는 파일을 읽습니다. 이런이 종류의 파일에 대 한 정보를 참조 하세요 [방법: 텍스트 파일 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md)합니다.
+이 코드 예제에서는 텍스트가 포함 된 textfile.txt 라는 파일을 읽습니다. 이런이 종류의 파일에 대 한 정보를 참조 하세요. [방법: 텍스트 파일 쓰기 (C + + /cli CLI)](../dotnet/how-to-write-a-text-file-cpp-cli.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -261,7 +261,7 @@ int main()
 
 다음 코드 예제에서는 이진 데이터를 파일로 작성 하는 방법을 보여 줍니다. 두 개의 클래스를 <xref:System.IO> 되는 네임 스페이스: <xref:System.IO.FileStream> 및 <xref:System.IO.BinaryWriter>합니다. <xref:System.IO.FileStream> 실제 파일을 나타내는 동안 <xref:System.IO.BinaryWriter> 스트림에 이진 액세스를 허용 하는 인터페이스를 제공 합니다.
 
-다음 코드 예제에서는 이진 형식의 정수를에서 포함 하는 파일을 씁니다. 코드를 사용 하 여이 파일을 읽을 수 있습니다 [방법: 이진 파일 읽기 (C + + /cli CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md)합니다.
+다음 코드 예제에서는 이진 형식의 정수를에서 포함 하는 파일을 씁니다. 이 파일의 코드를 읽을 수 있는 [방법: 이진 파일 읽기 (C + + /cli CLI)](../dotnet/how-to-read-a-binary-file-cpp-cli.md)합니다.
 
 ### <a name="example"></a>예제
 
@@ -338,4 +338,4 @@ int main()
 
 [파일 및 스트림 I/O](/dotnet/standard/io/index)
 
-[System.IO 네임 스페이스](https://msdn.microsoft.com/library/system.io.aspx)
+<xref:System.IO>

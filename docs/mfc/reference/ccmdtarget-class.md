@@ -46,12 +46,12 @@ helpviewer_keywords:
 - CCmdTarget [MFC], OnFinalRelease
 - CCmdTarget [MFC], RestoreWaitCursor
 ms.assetid: 8883b132-2057-4ce0-a5f2-88979f8f2b13
-ms.openlocfilehash: 0416d7387fe4250c7a42dca5a0d6d56d7857aed2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 5e4de39b0352f33ad59950754df7c0815d6038c3
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57259115"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57417907"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget 클래스
 
@@ -169,7 +169,7 @@ BOOL DoOleVerb(
 개체가 포함된 문서 창의 핸들입니다.
 
 *lpRect*<br/>
-에 대 한 포인터를 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 개체를 정의 하는 픽셀 단위의 좌표가 포함 된 구조체의 경계 사각형 *hwndParent*합니다.
+에 대 한 포인터를 [RECT](/previous-versions/dd162897\(v=vs.85\)) 개체를 정의 하는 픽셀 단위의 좌표가 포함 된 구조체의 경계 사각형 *hwndParent*합니다.
 
 ### <a name="return-value"></a>반환 값
 

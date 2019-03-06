@@ -150,13 +150,13 @@ Visual Studio에는 다양 한 언어 및 플랫폼에 대 한 완전 한 편집
 
 `cl /W4 file1.c file2.c file3.c /link /out:program1.exe`
 
-컴파일러에서 cl.exe에 더 많은 옵션을 빌드, 최적화, 디버그, 적용 하 고 코드를 분석할 수 있습니다. 빠른 목록을 입력 `cl /?` 개발자 명령 프롬프트에서. 또한 컴파일 및 연결할 수 별도로 있으며 더 복잡 한 빌드 시나리오에서 링커 옵션을 적용 합니다. 컴파일러 및 링커 옵션 및 사용에 대 한 자세한 내용은 참조 하세요. [C/c + + 빌드 참조](../build/reference/c-cpp-building-reference.md)합니다.
+컴파일러에서 cl.exe에 더 많은 옵션을 빌드, 최적화, 디버그, 적용 하 고 코드를 분석할 수 있습니다. 빠른 목록을 입력 `cl /?` 개발자 명령 프롬프트에서. 또한 컴파일 및 연결할 수 별도로 있으며 더 복잡 한 빌드 시나리오에서 링커 옵션을 적용 합니다. 컴파일러 및 링커 옵션 및 사용에 대 한 자세한 내용은 참조 하세요. [C/C++ 빌드 참조](../build/reference/c-cpp-building-reference.md)합니다.
 
 구성 하 고 명령줄에서 보다 복잡 한 프로젝트를 빌드할 NMAKE 메이크파일, 있고 MSBuild 및 프로젝트 파일을 사용할 수 있습니다. 이러한 도구 사용에 대 한 자세한 내용은 참조 하세요. [NMAKE 참조](../build/nmake-reference.md) 하 고 [MSBuild](../build/msbuild-visual-cpp.md)합니다.
 
 C 및 C++ 언어는 유사 하지만 동일 하지는 않습니다. Visual C++ 컴파일러 코드를 컴파일할 때 사용할 언어를 결정 하는 간단한 규칙을 사용 합니다. 기본적으로 Visual C++ 컴파일러는 .c로 끝나는 파일은 모두 C 소스 코드로, .cpp로 끝나는 파일은 모두 C++ 소스 코드로 취급합니다. 모든 파일 C 종속 되지 않는 파일 이름 확장명으로 취급 하도록 컴파일러를 강제 적용 하려면 사용 합니다 [/Tc](../build/reference/tc-tp-tc-tp-specify-source-file-type.md) 컴파일러 옵션입니다.
 
-Visual c + + C 컴파일러는 ISO C99 표준을 호환 되지만 엄격 하 게 준수 하지 않는 경우 대부분의 경우에서 이식 가능한 C 코드 컴파일 및 예상 대로 실행 합니다. Visual c + + ISO C11의 변경 사항 중 대부분을 지원 하지 않습니다. 특정 라이브러리 함수 및 POSIX 함수 이름을 Visual c + + 컴파일러에서 사용 되지 않습니다. 함수는 지원 되지만 기본 이름이 변경 되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 하 고 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다.
+Visual C++ C 컴파일러는 ISO C99 표준을 호환 되지만 엄격 하 게 준수 하지 않는 경우 대부분의 경우에서 이식 가능한 C 코드 컴파일 및 예상 대로 실행 합니다. Visual C++ ISO C11의 변경 사항 중 대부분을 지원 하지 않습니다. 특정 라이브러리 함수 및 POSIX 함수 이름을 Visual C++ 컴파일러에서 사용 되지 않습니다. 함수는 지원 되지만 기본 이름이 변경 되었습니다. 자세한 내용은 [CRT의 보안 기능](../c-runtime-library/security-features-in-the-crt.md) 하 고 [컴파일러 경고 (수준 3) C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md)합니다.
 
 ## <a name="see-also"></a>참고자료
 

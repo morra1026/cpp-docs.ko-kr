@@ -153,12 +153,12 @@ f1_keywords:
 helpviewer_keywords:
 - CWindow class
 ms.assetid: fefa00c8-f053-4bcf-87bc-dc84f5386683
-ms.openlocfilehash: b27d6bb01b9e94ebe38be5455ffcc870806ac33b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 2767770e354c81e5a34a0d6e9105a27ecb361ddc
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57298349"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57425070"
 ---
 # <a name="cwindow-class"></a>CWindow 클래스
 
@@ -536,7 +536,7 @@ BOOL ClientToScreen(LPRECT lpRect) const throw();
 
 참조 [ClientToScreen](/windows/desktop/api/winuser/nf-winuser-clienttoscreen) Windows SDK에에서 있습니다.
 
-이 메서드의 두 번째 버전을 사용 하면의 좌표를 변환 하는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+이 메서드의 두 번째 버전을 사용 하면의 좌표를 변환 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 ##  <a name="create"></a>  CWindow::Create
 
@@ -1789,7 +1789,7 @@ int MapWindowPoints(
 
 참조 [MapWindowPoints](/windows/desktop/api/winuser/nf-winuser-mapwindowpoints) Windows SDK에에서 있습니다.
 
-이 메서드의 두 번째 버전을 사용 하면의 좌표를 변환 하는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+이 메서드의 두 번째 버전을 사용 하면의 좌표를 변환 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 ##  <a name="messagebox"></a>  CWindow::MessageBox
 
@@ -1923,7 +1923,7 @@ BOOL MoveWindow(
 
 최상위 창 개체, x 및 y 매개 변수는 화면의 왼쪽 위 모퉁이 기준으로 합니다. 자식 창 개체를 부모 창의 클라이언트 영역의 왼쪽 위 모퉁이 기준으로 합니다.
 
-이 메서드의 두 번째 버전을 사용 하는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조를 창의 새 위치, 너비 및 높이 확인 합니다.
+이 메서드의 두 번째 버전을 사용 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조를 창의 새 위치, 너비 및 높이 확인 합니다.
 
 ##  <a name="nextdlgctrl"></a>  CWindow::NextDlgCtrl
 
@@ -2134,7 +2134,7 @@ BOOL ScreenToClient(LPRECT lpRect) const throw();
 
 참조 [ScreenToClient](/windows/desktop/api/winuser/nf-winuser-screentoclient) Windows SDK에에서 있습니다.
 
-이 메서드의 두 번째 버전을 사용 하면의 좌표를 변환 하는 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조입니다.
+이 메서드의 두 번째 버전을 사용 하면의 좌표를 변환 하는 [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조입니다.
 
 ##  <a name="scrollwindow"></a>  CWindow::ScrollWindow
 
@@ -2605,7 +2605,7 @@ BOOL SetWindowPos(
 
 참조 [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK에에서 있습니다.
 
-이 메서드의 두 번째 버전에서 사용 된 [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 창의 새 위치, 너비 및 높이 설정 하는 구조입니다.
+이 메서드의 두 번째 버전에서 사용 된 [RECT](/previous-versions/dd162897\(v=vs.85\)) 창의 새 위치, 너비 및 높이 설정 하는 구조입니다.
 
 ##  <a name="setwindowrgn"></a>  CWindow::SetWindowRgn
 

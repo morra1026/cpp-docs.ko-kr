@@ -6,12 +6,12 @@ helpviewer_keywords:
 - DLLs [C++], types
 - DLLs [C++], MFC
 ms.assetid: f6a30db9-6138-4b2c-90cc-a17855e499a6
-ms.openlocfilehash: daf042f742a9c4b7757813fc73eeb4b6d1a87413
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: fb63814161fb72121a34d2857b6fada3866e505a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50441121"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424810"
 ---
 # <a name="kinds-of-dlls"></a>DLL 종류
 
@@ -55,7 +55,7 @@ DLL을 MFC 실행 파일만 사용 하는 경우 기본 MFC DLL 또는 MFC 확�
 
 DLL 동적으로 MFC에 링크 하는 경우 DLL을 사용 하 여 MFC Dll은 재배포할 수 있습니다. 이 아키텍처는 디스크 공간을 절약 하 고 메모리 사용량을 최소화 하는 여러 실행 파일 간에 클래스 라이브러리를 공유 하는 데 특히 유용 합니다.
 
-이전 버전 4.0, Visual c + +만 지원 되는 두 종류의 MFC를 사용 하는 Dll: Usrdll 및 Afxdll 합니다. 정적으로 MFC에 링크 된 기본 MFC Dll은 이전의 usrdll과 같은 특징을 갖습니다. MFC 확장명 Dll은 이전의 afxdll과 같은 특징을 갖습니다.
+4.0 버전 이전 Visual c + +는 두 종류의 MFC를 사용 하는 Dll만 지원 합니다. Usrdll 및 Afxdll 합니다. 정적으로 MFC에 링크 된 기본 MFC Dll은 이전의 usrdll과 같은 특징을 갖습니다. MFC 확장명 Dll은 이전의 afxdll과 같은 특징을 갖습니다.
 
 ### <a name="what-do-you-want-to-know-more-about"></a>추가 정보
 
@@ -67,6 +67,6 @@ DLL 동적으로 MFC에 링크 하는 경우 DLL을 사용 하 여 MFC Dll은 �
 
 - [MFC 확장명 DLL: 개요](../build/extension-dlls-overview.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [Visual C++의 DLL](../build/dlls-in-visual-cpp.md)

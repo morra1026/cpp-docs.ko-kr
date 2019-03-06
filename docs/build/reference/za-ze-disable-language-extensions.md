@@ -18,12 +18,12 @@ helpviewer_keywords:
 - Disable Language Extensions compiler option
 - Ze compiler option [C++]
 ms.assetid: 65e49258-7161-4289-a176-7c5c0656b1a2
-ms.openlocfilehash: d24affdf92222ac50ffe72b3a1606d3f7030de60
-ms.sourcegitcommit: e540706f4e2675e7f597cfc5b4f8dde648b007bb
+ms.openlocfilehash: 71718aed7853e7d09b15734bad6a350f9a19fd5e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56676476"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422834"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze(언어 확장명 사용 안 함)
 
@@ -61,7 +61,7 @@ Visual c + +를 사용 하 여 규칙과 관련 된 문제에 대 한 자세한 
 
 <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DisableLanguageExtensions%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](compiler-options.md)<br/>
 [컴파일러 옵션 설정](setting-compiler-options.md)<br/>

@@ -7,7 +7,6 @@ f1_keywords:
 - C2125
 - C2126
 - C2127
-- C2131
 - C2136
 - C2176
 - C2187
@@ -24,12 +23,12 @@ helpviewer_keywords:
 - C2187
 - C2189
 ms.assetid: 1ccab076-0954-4386-b959-d3112a6793ae
-ms.openlocfilehash: 98e804b7c53eddf239e752f120854439cc3a0b01
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 31974bb830364b2ef41a7da17cb0ad95d931f771
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546562"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57423536"
 ---
 # <a name="compiler-errors-c2100-through-c2199"></a>컴파일러 오류s C2100 through C2199
 
@@ -72,7 +71,7 @@ ms.locfileid: "50546562"
 |[컴파일러 오류 C2128](compiler-error-c2128.md)|'*함수*': alloc_text/same_seg는 C 링크가 있는 함수에만 적용|
 |[컴파일러 오류 C2129](compiler-error-c2129.md)|정적 함수 '*식별자*' 선언 되었지만 정의 되지 않았습니다|
 |[컴파일러 오류 C2130](compiler-error-c2130.md)|#line 예상에 파일 이름을 포함 하는 문자열 '*토큰*'|
-|컴파일러 오류 C2131|식이 상수로 계산 되지 않았습니다.|
+|[컴파일러 오류 C2131](compiler-error-c2131.md)|식이 상수로 계산 되지 않았습니다.|
 |[컴파일러 오류 C2132](compiler-error-c2132.md)|구문 오류: 예기치 않은 식별자|
 |[컴파일러 오류 C2133](compiler-error-c2133.md)|'*식별자*': 알 수 없는 크기|
 |[컴파일러 오류 C2134](compiler-error-c2134.md)|'*함수*': 상수 식에서는 호출 되지 않습니다|

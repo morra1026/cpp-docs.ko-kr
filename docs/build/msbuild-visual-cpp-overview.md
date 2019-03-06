@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - MSBuild overview
 ms.assetid: dd258f6f-ab51-48d9-b274-f7ba911d05ca
-ms.openlocfilehash: 0eac756824b3da6352c60ec69e9d6e679732522c
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 072bc15cc931c2fd50cf8a2a1ff0c9145da8b7be
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50484801"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414696"
 ---
 # <a name="msbuild-visual-c-overview"></a>MSBuild(Visual C++) 개요
 
@@ -27,13 +27,13 @@ MSBuild에 대 한 다음 문서를 참조 합니다.
 
 - [명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference) 명령줄 인수 및 msbuild.exe와 함께 사용할 수 있는 옵션을 설명 합니다.
 
-- [작업 참조](/visualstudio/msbuild/msbuild-task-reference) 에 대해 설명 하는 MSBuild 작업입니다. 특히 Visual c + +와 관련이 있는 이러한 작업을 확인 합니다. [BscMake 작업](/visualstudio/msbuild/bscmake-task), [CL 작업](/visualstudio/msbuild/cl-task), [CPPClean 작업](/visualstudio/msbuild/cppclean-task), [LIB 작업](/visualstudio/msbuild/lib-task)를 [링크 작업](/visualstudio/msbuild/link-task), [MIDL 작업](/visualstudio/msbuild/midl-task)를 [MT 작업](/visualstudio/msbuild/mt-task)를 [RC 태스크](/visualstudio/msbuild/rc-task), [SetEnv 작업](/visualstudio/msbuild/setenv-task), [ VCMessage 작업](/visualstudio/msbuild/vcmessage-task)하십시오 [XDCMake 작업](/visualstudio/msbuild/xdcmake-task)합니다 [XSD 작업](/visualstudio/msbuild/xsd-task)합니다.
+- [작업 참조](/visualstudio/msbuild/msbuild-task-reference) 에 대해 설명 하는 MSBuild 작업입니다. 특히 Visual c + + 관련 된 이러한 작업을 note: [BscMake 작업](/visualstudio/msbuild/bscmake-task), [CL 작업](/visualstudio/msbuild/cl-task)를 [CPPClean 작업](/visualstudio/msbuild/cppclean-task)를 [LIB 작업](/visualstudio/msbuild/lib-task)를 [링크 작업](/visualstudio/msbuild/link-task), [MIDL 작업](/visualstudio/msbuild/midl-task), [MT 작업](/visualstudio/msbuild/mt-task)합니다 [RC 작업](/visualstudio/msbuild/rc-task), [SetEnv 작업](/visualstudio/msbuild/setenv-task)를 [VCMessage 작업](/visualstudio/msbuild/vcmessage-task), [XDCMake 작업](/visualstudio/msbuild/xdcmake-task)하십시오 [XSD 작업](/visualstudio/msbuild/xsd-task)합니다.
 
 ## <a name="msbuild-on-the-command-line"></a>명령줄에서 MSBuild
 
 다음 문에서 [MSBuild 명령줄 참조](/visualstudio/msbuild/msbuild-command-line-reference) msbuild.exe 도구가 암시적 또는 명시적는 방법을 보여 줍니다 *project_file* 인수 (Visual C++ 프로젝트의.vcxproj 파일) 과 0 개 이상의 명령줄 *옵션* 인수입니다.
 
-> **msbuild.exe** [ *project_file* ] [ *옵션* ]
+> **msbuild.exe** [ *project_file* ] [ *options* ]
 
 사용 된 **/대상** (또는 **/t**) 및 **/property** (또는 **/p**) 명령줄 옵션을 특정 속성 및 된 대상 재정의 프로젝트 파일에 지정 합니다.
 
@@ -65,9 +65,9 @@ IDE에서 프로젝트 속성을 설정 하 고 다음 프로젝트를 저장 �
 
 |디렉터리|설명|
 |---------------|-----------------|
-|*드라이브*: \Program Files *(x86)* \Microsoft Visual Studio\\*연도*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*드라이브*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp (x86) \v4.0\\*버전*\ |기본 대상 파일 (.targets)를 포함 하 고 대상에서 사용 되는 속성 파일 (.props). 기본적으로 $ (vctargetspath) 매크로이 디렉터리를 참조합니다.|
-|*드라이브*: \Program Files *(x86)* \Microsoft Visual Studio\\*연도*\\*edition*\Common7\IDE\VC\VCTargets\ 플랫폼\\*플랫폼*\ <br /><br />*드라이브*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*버전*\Platforms\\*플랫폼*\ |부모 디렉터리의 대상과 속성을 재정의 하는 플랫폼별 대상 및 속성 파일을 포함 합니다. 이 디렉터리는이 디렉터리에 있는 대상에서 사용 되는 작업을 정의 하는 DLL도 포함 됩니다.<br /><br /> 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다.|
-|*드라이브*: \Program Files *(x86)* \Microsoft Visual Studio\\*연도*\\*edition*\Common7\IDE\VC\VCTargets\ 플랫폼\\*플랫폼*\PlatformToolsets\\*도구 집합*\ <br /><br />*드라이브*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*버전*\Platforms\\*플랫폼*\ PlatformToolsets\\*도구 집합*\ <br /><br />*드라이브*: \Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*플랫폼*\PlatformToolsets\\*도구 집합*\ |Visual C++ 응용 프로그램을 생성 된를 사용 하 여 빌드를 사용 하도록 설정 하는 디렉터리를 포함 *도구 집합*합니다.<br /><br /> *연도* 하 고 *edition* Visual Studio 2017 및 이후 버전에서 사용 하는 자리 표시자입니다. 합니다 *버전* 자리 표시자는 Visual Studio 2013의 경우 V120 또는 Visual Studio 2015의 경우 V140, Visual Studio 2012 용 V110 합니다. 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v120_xp를 v110_wp80를 Visual Studio 2013 도구를 사용 하 여 Windows XP에 대 한 빌드에 Visual Studio 2015 도구 집합을 사용 하 여 Windows 앱을 빌드하기 위한 예를 들어 v140 도구 집합 하위 디렉터리를 나타냅니다. Visual Studio 2012 도구 집합을 사용 하 여 Windows Phone 8.0 앱을 빌드하십시오.<br /><br />Visual C++ 2008 또는 Visual C++ 2010 응용 프로그램을 생성 하는 빌드를 사용 하도록 설정 하는 디렉터리를 포함 하는 경로 포함 되지 않습니다 합니다 *버전*, 및 *플랫폼* 자리 표시자를 나타냅니다 Itanium, Win32 또는 x64 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v90 또는 v100 도구 집합 하위 디렉터리를 나타냅니다.|
+|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp (x86)\v4.0\\*version*\ |기본 대상 파일 (.targets)를 포함 하 고 대상에서 사용 되는 속성 파일 (.props). 기본적으로 $ (vctargetspath) 매크로이 디렉터리를 참조합니다.|
+|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\ |부모 디렉터리의 대상과 속성을 재정의 하는 플랫폼별 대상 및 속성 파일을 포함 합니다. 이 디렉터리는이 디렉터리에 있는 대상에서 사용 되는 작업을 정의 하는 DLL도 포함 됩니다.<br /><br /> 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다.|
+|*drive*:\Program Files *(x86)* \Microsoft Visual Studio\\*year*\\*edition*\Common7\IDE\VC\VCTargets\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\\*version*\Platforms\\*platform*\PlatformToolsets\\*toolset*\ <br /><br />*drive*:\Program Files *(x86)* \MSBuild\Microsoft.Cpp\v4.0\Platforms\\*platform*\PlatformToolsets\\*toolset*\ |Visual C++ 응용 프로그램을 생성 된를 사용 하 여 빌드를 사용 하도록 설정 하는 디렉터리를 포함 *도구 집합*합니다.<br /><br /> *연도* 하 고 *edition* Visual Studio 2017 및 이후 버전에서 사용 하는 자리 표시자입니다. 합니다 *버전* 자리 표시자는 Visual Studio 2013의 경우 V120 또는 Visual Studio 2015의 경우 V140, Visual Studio 2012 용 V110 합니다. 합니다 *플랫폼* 자리 표시자는 ARM, Win32 또는 x64를 나타내는 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v120_xp를 v110_wp80를 Visual Studio 2013 도구를 사용 하 여 Windows XP에 대 한 빌드에 Visual Studio 2015 도구 집합을 사용 하 여 Windows 앱을 빌드하기 위한 예를 들어 v140 도구 집합 하위 디렉터리를 나타냅니다. Visual Studio 2012 도구 집합을 사용 하 여 Windows Phone 8.0 앱을 빌드하십시오.<br /><br />Visual C++ 2008 또는 Visual C++ 2010 응용 프로그램을 생성 하는 빌드를 사용 하도록 설정 하는 디렉터리를 포함 하는 경로 포함 되지 않습니다 합니다 *버전*, 및 *플랫폼* 자리 표시자를 나타냅니다 Itanium, Win32 또는 x64 하위 디렉터리입니다. 합니다 *도구 집합* 자리 표시자 v90 또는 v100 도구 집합 하위 디렉터리를 나타냅니다.|
 
 ### <a name="support-files"></a>지원 파일
 
@@ -124,11 +124,11 @@ Visual C++ 지원 파일에 있는 대상의 수백 가지 있습니다. 그러�
 |다시 빌드|정리 하 고 프로젝트를 빌드합니다.|
 |ResourceCompile|실행 Microsoft Windows Resource Compiler 도구인 rc.exe 합니다.|
 |XdcMake|실행 XML 문서 도구인 xdcmake.exe 합니다.|
-|xsd|실행 XML 스키마 정의 도구인 xsd.exe 합니다. *다음 참고를 참조하세요.*|
+|Xsd|실행 XML 스키마 정의 도구인 xsd.exe 합니다. *다음 참고를 참조하세요.*|
 
 > [!NOTE]
 > Visual Studio 2017에서 C++ 프로젝트에 대 한 지원을 **xsd** 파일은 사용 되지 않습니다. 계속 사용할 수 있습니다 **Microsoft.VisualC.CppCodeProvider** 더하여 **CppCodeProvider.dll** 수동으로 GAC에 있습니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [MSBuild(Visual C++)](../build/msbuild-visual-cpp.md)

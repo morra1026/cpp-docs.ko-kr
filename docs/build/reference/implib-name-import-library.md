@@ -10,16 +10,16 @@ helpviewer_keywords:
 - -IMPLIB linker option
 - import libraries, overriding default name
 ms.assetid: fe8f71ab-7055-41b5-8ef8-2b97cfa4a432
-ms.openlocfilehash: 268a091d3e0bc825acae96dafc5d92ffa11c7bc3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8d3793b11e7bd0430c94d89f9d40ec3627c4eb20
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50589581"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413357"
 ---
 # <a name="implib-name-import-library"></a>/IMPLIB(가져오기 라이브러리 이름 지정)
 
-> /IMPLIB:*파일 이름*
+> /IMPLIB:*filename*
 
 ## <a name="parameters"></a>매개 변수
 
@@ -52,7 +52,7 @@ ms.locfileid: "50589581"
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ImportLibrary%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

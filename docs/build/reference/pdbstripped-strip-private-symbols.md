@@ -11,12 +11,12 @@ helpviewer_keywords:
 - PDB files, stripping private symbols
 - PDBSTRIPPED linker option
 ms.assetid: 9b9e0070-6a13-4142-8180-19c003fbbd55
-ms.openlocfilehash: d03ee9d4f2ad3626dc260d171ef349a3a392fd36
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: c0a79eb8d1c00be2b855ec08ffe44f4e7d7a2e05
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50626033"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412629"
 ---
 # <a name="pdbstripped-strip-private-symbols"></a>/PDBSTRIPPED(전용 기호 제거)
 
@@ -65,7 +65,7 @@ PDB 파일을 만들지 /PDBSTRIPPED 무시 됩니다.
 
 - <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StripPrivateSymbols%2A>을 참조하세요.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [링커 옵션 설정](../../build/reference/setting-linker-options.md)<br/>
 [링커 옵션](../../build/reference/linker-options.md)

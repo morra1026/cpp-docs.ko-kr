@@ -12,12 +12,12 @@ f1_keywords:
 helpviewer_keywords:
 - Object class
 ms.assetid: 709e84a8-0bff-471b-bc14-63e424080b5a
-ms.openlocfilehash: 00f2b57bdf63f9f8bcfd9e544bebab2805ff7f65
-ms.sourcegitcommit: bd637e9c39650cfd530520ea978a22fa4caa0e42
+ms.openlocfilehash: 8267d42e67ddf703b4a3a681509b92978e7de8bb
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850093"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57422787"
 ---
 # <a name="platformobject-class"></a>Platform::Object 클래스
 
@@ -47,7 +47,7 @@ public ref class Object : Object
 |[ToString](#tostring)|현재 개체를 나타내는 문자열을 반환합니다. 재정의될 수 있습니다.|
 |[GetType](#gettype)|현재 인스턴스를 설명하는 [Platform::Type](../cppcx/platform-type-class.md) 을 가져옵니다.|
 
-## <a name="inheritance-hierarchy"></a>상속 계층
+## <a name="inheritance-hierarchy"></a>상속 계층 구조
 
 `Object`
 
@@ -116,7 +116,7 @@ A [platform:: type](../cppcx/platform-type-class.md) 개체의 런타임 형식�
 
 정적 [type:: gettypecode](../cppcx/platform-type-class.md#gettypecode) 가져오는 데 사용할 수는 [platform:: typecode 열거형](../cppcx/platform-typecode-enumeration.md) 현재 형식을 나타내는 값입니다. 대부분의 경우 이는 기본 제공 형식에 유용합니다. 형식 코드를 제외한 모든 ref 클래스에 대 한 [platform:: string](../cppcx/platform-string-class.md) 개체 (1).
 
-합니다 [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) 클래스는 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 간의 변환에 대 한 연산자가 `Type` 고 `TypeName`입니다.
+합니다 [Windows::UI::Xaml::Interop::TypeName](/uwp/api/windows.ui.xaml.interop.typename) 클래스는 Windows 구성 요소와 앱 간에 형식 정보를 전달 하는 언어 독립적 방법으로 Windows Api에서 사용 됩니다. T[platform:: type 클래스](../cppcx/platform-type-class.md) 간의 변환에 대 한 연산자가 `Type` 고 `TypeName`입니다.
 
 사용 된 [typeid](../windows/typeid-cpp-component-extensions.md) 반환 하도록 연산자는 `Platform::Type` 예를 들어 XAML 페이지 사이 탐색할 때 클래스 이름에 대 한 개체:
 

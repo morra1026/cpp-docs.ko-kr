@@ -18,12 +18,12 @@ helpviewer_keywords:
 - compiling source code [C++], from command line
 - environment variables [C++], CL compiler
 ms.assetid: 99389528-deb5-43b9-b99a-03c8773ebaf4
-ms.openlocfilehash: 256d62ef480e8d67f3861b3b8233c45fc6a95a4f
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: dee8f4ee08f9922c4bfc79c5103618681058e56e
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50547188"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57415372"
 ---
 # <a name="set-the-path-and-environment-variables-for-command-line-builds"></a>명령줄 빌드에 맞는 경로 및 환경 변수 설정
 
@@ -36,7 +36,7 @@ Visual C++ 명령줄 도구 PATH, TMP, INCLUDE, LIB 및 LIBPATH 환경 변수를
 > [!NOTE]
 >  여러 명령줄 도구 또는 도구 옵션에는 관리자 권한이 필요할 수 있습니다. 사용 하는 경우 사용 권한 문제가 있는 경우 사용 하 여 개발자 명령 프롬프트 창을 열어야는 것이 좋습니다 합니다 **관리자 권한으로 실행** 옵션입니다. Windows 10에서 명령 프롬프트 창에 대 한 바로 가기 메뉴를 열고를 마우스 오른쪽 단추로 클릭 한 다음 선택 **자세한**하십시오 **관리자 권한으로 실행**합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [명령줄에서 C/C++ 코드 빌드](../build/building-on-the-command-line.md)<br/>
 [링크](../build/reference/linking.md)<br/>

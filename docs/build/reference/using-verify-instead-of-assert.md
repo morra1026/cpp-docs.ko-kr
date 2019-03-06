@@ -11,12 +11,12 @@ helpviewer_keywords:
 - debugging assertions
 - assertions, debugging
 ms.assetid: 4c46397b-3fb1-49c1-a09b-41a72fae3797
-ms.openlocfilehash: 266c6da52a2ff5e06dd6177a746c22e7df5adda4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 9ec1a763df6fcf2a1fffe4cb956076d2c7557cb5
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50491782"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412616"
 ---
 # <a name="using-verify-instead-of-assert"></a>ASSERT 대신 VERIFY 사용
 
@@ -73,6 +73,6 @@ strcpy_s( buf, sizeOfBuffer, "Hello, World" );
 free( buf );
 ```
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [릴리스 빌드 문제 해결](../../build/reference/fixing-release-build-problems.md)

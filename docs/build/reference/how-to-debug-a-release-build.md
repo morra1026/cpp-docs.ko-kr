@@ -5,12 +5,12 @@ helpviewer_keywords:
 - debugging [C++], release builds
 - release builds, debugging
 ms.assetid: d333e4d1-4e6c-4384-84a9-cb549702da25
-ms.openlocfilehash: 4ee99bb76d3af4339e065a3ed4d4809acfe23507
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 61baaa827feb1abcc03a0296574e56c993ce1681
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50649256"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57412564"
 ---
 # <a name="how-to-debug-a-release-build"></a>방법: 릴리스 빌드 디버깅
 
@@ -36,6 +36,6 @@ ms.locfileid: "50649256"
 
    자세한 내용은 [코드 최적화](../../build/reference/optimizing-your-code.md)합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [릴리스 빌드 문제 해결](../../build/reference/fixing-release-build-problems.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 - .pch files, use existing
 - precompiled header files, use existing
 ms.assetid: 24f1bd0e-b624-4296-a17e-d4b53e374e1f
-ms.openlocfilehash: 8d2b02c378179ac2603ec095efe89ce78f9f1afa
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 49cc7a67a8b25e515d352d481b6ede8d521e51e1
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50505344"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57424121"
 ---
 # <a name="yu-use-precompiled-header-file"></a>/Yu(미리 컴파일된 헤더 파일 사용)
 
@@ -96,7 +96,7 @@ CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
 
 이 명령은 MYPCH.pch 라는 미리 컴파일된 헤더 파일을 지정 합니다. 컴파일러 모든까지 헤더 파일을 포함 하 여 MYAPP.h 미리 컴파일된 상태를 복원 하려면 해당 콘텐츠를 사용 합니다. 컴파일러는 MYAPP.h 뒤에 오는 코드를 컴파일합니다 **포함** 문입니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

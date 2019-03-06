@@ -5,12 +5,12 @@ helpviewer_keywords:
 - Windows 8.x apps, creating C++ async operations
 - Creating C++ async operations
 ms.assetid: a57cecf4-394a-4391-a957-1d52ed2e5494
-ms.openlocfilehash: 0284970d57cf4cde65b4fb77338423cb81d5d54b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 8815861e525a2824bb1bc7a7d0e40f96b053c6a4
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57302275"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57426786"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>C + + UWP 앱 용 비동기 작업 만들기
 
@@ -51,7 +51,7 @@ Windows 런타임에서 특수 한 운영 체제 환경 에서만 실행 되는 
 
 Windows 런타임을 사용 하 여 다양 한 프로그래밍 언어의 유용한 기능을 사용할 수 있으며 하나의 앱에 결합할 수 있습니다. 예를 들어 JavaScript에서 UI를 만들고 C++ 구성 요소에서 계산이 많은 앱 논리를 수행할 수 있습니다. 이러한 계산이 많은 작업을 백그라운드에서 수행하는 기능은 UI 응답 성능을 유지하는 데 핵심적인 요소입니다. 때문에 `task` 클래스는 c + + 비동기 작업 (c + + 이외의 언어로 작성 될 수 있습니다)는 다른 구성 요소에 전달할 Windows 런타임 인터페이스를 사용 해야 합니다. Windows 런타임 비동기 작업을 나타내는 데 사용할 수 있는 네 가지 인터페이스를 제공 합니다.
 
-[Windows::Foundation::IAsyncAction](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)<br/>
+[Windows::Foundation::IAsyncAction](/uwp/api/windows.foundation.iasyncaction)<br/>
 비동기 동작을 나타냅니다.
 
 [Windows::Foundation::IAsyncActionWithProgress\<TProgress>](https://msdn.microsoft.com/library/windows/apps/br206581.aspx)<br/>
@@ -92,7 +92,7 @@ Windows 런타임을 사용 하 여 다양 한 프로그래밍 언어의 유용�
 
 ##  <a name="example-component"></a> 예: C + + Windows 런타임 구성 요소를 만들고에서 사용C#
 
-XAML 및 C#을 사용 하 여 계산 집약적인 작업을 수행 하는 UI와 c + + Windows 런타임 구성 요소를 정의 하는 앱을 고려해 야 합니다. 이 예에서 C++ 구성 요소는 지정된 범위에서 소수인 수를 계산합니다. 네 가지 Windows 런타임 비동기 작업 인터페이스 간의 차이 보여 주기 위해, Visual Studio에서 만들어 시작을 **빈 솔루션** 이름을 지정 하 고 `Primes`입니다. 그런 다음 솔루션에 **Windows 런타임 구성 요소** 프로젝트를 추가하고 이름을 `PrimesLibrary`로 지정합니다. 생성된 C++ 헤더 파일에 다음 코드를 추가합니다(이 예에서는 Class1.h의 이름을 Primes.h로 변경). 각 `public` 메서드는 네 가지 비동기 인터페이스 중 하나를 정의합니다. 값을 반환 하는 메서드는 반환 된 [Windows::Foundation::Collections::IVector\<int >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) 개체입니다. 진행률을 보고하는 메서드는 완료된 전체 작업의 백분율을 정의하는 `double` 값을 생성합니다.
+XAML 및 C#을 사용 하 여 계산 집약적인 작업을 수행 하는 UI와 c + + Windows 런타임 구성 요소를 정의 하는 앱을 고려해 야 합니다. 이 예에서 C++ 구성 요소는 지정된 범위에서 소수인 수를 계산합니다. 네 가지 Windows 런타임 비동기 작업 인터페이스 간의 차이 보여 주기 위해, Visual Studio에서 만들어 시작을 **빈 솔루션** 이름을 지정 하 고 `Primes`입니다. 그런 다음 솔루션에 **Windows 런타임 구성 요소** 프로젝트를 추가하고 이름을 `PrimesLibrary`로 지정합니다. 생성된 C++ 헤더 파일에 다음 코드를 추가합니다(이 예에서는 Class1.h의 이름을 Primes.h로 변경). 각 `public` 메서드는 네 가지 비동기 인터페이스 중 하나를 정의합니다. 값을 반환 하는 메서드는 반환 된 [Windows::Foundation::Collections::IVector\<int >](/uwp/api/Windows.Foundation.Collections.IVector_T_) 개체입니다. 진행률을 보고하는 메서드는 완료된 전체 작업의 백분율을 정의하는 `double` 값을 생성합니다.
 
 [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]
 
@@ -117,7 +117,7 @@ MainPage.xaml의 `MainPage` 클래스에 다음 코드를 추가합니다. 이 �
 
 이러한 메서드는 `async` 및 `await` 키워드를 사용하여 비동기 작업이 완료된 후 UI를 업데이트합니다. UWP 앱에서 비동기 코딩 하는 방법에 대 한 내용은 [스레딩 및 비동기 프로그래밍](/windows/uwp/threading-async)합니다.
 
-`getPrimesCancellation` 및 `cancelGetPrimes` 메서드는 함께 작동하여 사용자가 작업을 취소할 수 있도록 합니다. 사용자가 선택 하는 경우는 **취소** 단추를 `cancelGetPrimes` 메서드 호출 [IAsyncOperationWithProgress\<TResult, TProgress >:: 취소](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncinfo.cancel.aspx) 작업을 취소 하 합니다. 기본 비동기 작업을 관리 하는 동시성 런타임에서 취소가 완료 되었다고 통신 하기 위해 Windows 런타임에서 내부 예외 형식을 throw 합니다. 취소 모델에 대 한 자세한 내용은 참조 하세요. [취소](../../parallel/concrt/cancellation-in-the-ppl.md)합니다.
+`getPrimesCancellation` 및 `cancelGetPrimes` 메서드는 함께 작동하여 사용자가 작업을 취소할 수 있도록 합니다. 사용자가 선택 하는 경우는 **취소** 단추를 `cancelGetPrimes` 메서드 호출 [IAsyncOperationWithProgress\<TResult, TProgress >:: 취소](/uwp/api/windows.foundation.iasyncinfo.cancel) 작업을 취소 하 합니다. 기본 비동기 작업을 관리 하는 동시성 런타임에서 취소가 완료 되었다고 통신 하기 위해 Windows 런타임에서 내부 예외 형식을 throw 합니다. 취소 모델에 대 한 자세한 내용은 참조 하세요. [취소](../../parallel/concrt/cancellation-in-the-ppl.md)합니다.
 
 > [!IMPORTANT]
 >  에 올바르게 보고할 Windows 런타임 작업을 취소 했습니다는 PPL을 사용 하려면이 내부 예외 형식을 catch 하지 않습니다. 즉, 모든 예외도 catch하지 않아야 합니다(`catch (...)`). 모든 catch 해야 하는 경우 예외를 Windows 런타임에서 취소 작업을 완료할 수 있도록 하려면 예외를 다시 throw 합니다.

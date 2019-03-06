@@ -14,12 +14,12 @@ helpviewer_keywords:
 - CHtmlEditCtrl [MFC], GetDHtmlDocument
 - CHtmlEditCtrl [MFC], GetStartDocument
 ms.assetid: 0fc4a238-b05f-4874-9edc-6a6701f064d9
-ms.openlocfilehash: 6c1447c3157bceb4540007eca5c3eb85e8269bd2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 6f5c465a8ec9c8f54af5545e66fb849a08d241af
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57285310"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420923"
 ---
 # <a name="chtmleditctrl-class"></a>CHtmlEditCtrl 클래스
 
@@ -45,7 +45,7 @@ class CHtmlEditCtrl: public CWnd,
 |이름|설명|
 |----------|-----------------|
 |[CHtmlEditCtrl::Create](#create)|WebBrowser ActiveX 컨트롤을 만들고이에 연결 된 `CHtmlEditCtrl` 개체입니다. 자동으로이 함수는 WebBrowser ActiveX 컨트롤을 편집 모드에 넣습니다.|
-|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|검색 된 [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) 포함된 WebBrowser 컨트롤에 현재 로드 된 문서에 대 한 인터페이스입니다.|
+|[CHtmlEditCtrl::GetDHtmlDocument](#getdhtmldocument)|검색 된 [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) 포함된 WebBrowser 컨트롤에 현재 로드 된 문서에 대 한 인터페이스입니다.|
 |[CHtmlEditCtrl::GetStartDocument](#getstartdocument)|기본 문서에 포함 된 WebBrowser 컨트롤을 로드 하려면 URL을 검색 합니다.|
 
 ## <a name="remarks"></a>설명
@@ -116,7 +116,7 @@ virtual BOOL Create(
 
 ##  <a name="getdhtmldocument"></a>  CHtmlEditCtrl::GetDHtmlDocument
 
-검색 된 [IHTMLDocument2](https://msdn.microsoft.com/library/aa752574.aspx) 포함된 WebBrowser 컨트롤에 현재 로드 된 문서에는 인터페이스
+검색 된 [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) 포함된 WebBrowser 컨트롤에 현재 로드 된 문서에는 인터페이스
 
 ```
 BOOL GetDHtmlDocument(IHTMLDocument2** ppDocument) const;

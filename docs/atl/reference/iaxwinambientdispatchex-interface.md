@@ -8,12 +8,12 @@ f1_keywords:
 helpviewer_keywords:
 - IAxWinAmbientDispatchEx interface
 ms.assetid: 2c25e079-6128-4278-bc72-b2c6195ba7ef
-ms.openlocfilehash: ae91921ecd5f53f4551e46e1d03cf027ce3e1f3b
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 638152d8c49bd20742a586bc665efcdb662b6f3a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57292406"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413890"
 ---
 # <a name="iaxwinambientdispatchex-interface"></a>IAxWinAmbientDispatchEx 인터페이스
 
@@ -42,7 +42,7 @@ ATL 및 호스트 ActiveX 컨트롤, 특히 앰비언트 속성을 갖는 Active
 
 이 인터페이스는 개체를 호스트 하는 ATL의 ActiveX 컨트롤에 의해 노출 됩니다. 파생 된 [IAxWinAmbientDispatch](../../atl/reference/iaxwinambientdispatch-interface.md), `IAxWinAmbientDispatchEx` 자신만의 하나를 사용 하 여 ATL 제공한 앰비언트 속성 인터페이스를 보완할 수 있습니다 하는 메서드를 추가 합니다.
 
-[AXHost](https://msdn.microsoft.com/library/system.windows.forms.axhost.aspx) 에 대 한 형식 정보를 로드 하려고 `IAxWinAmbientDispatch` 고 `IAxWinAmbientDispatchEx` 코드가 포함 된 형식 라이브러리에서.
+<xref:System.Windows.Forms.AxHost> 에 대 한 형식 정보를 로드 하려고 `IAxWinAmbientDispatch` 고 `IAxWinAmbientDispatchEx` 코드가 포함 된 형식 라이브러리에서.
 
 ATL90.dll를 연결할 경우 **AXHost** DLL의 형식 라이브러리에서 형식 정보를 로드 합니다.
 

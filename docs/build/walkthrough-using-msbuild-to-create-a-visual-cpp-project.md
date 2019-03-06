@@ -249,7 +249,7 @@ Visual C++ 64 비트 Windows에서 기본적으로를 설치한 경우 64 비트
 
 ### <a name="using-msbuild-with-a-different-toolset"></a>다른 도구 집합과 함께 MSBuild 사용
 
-도구 집합과 라이브러리가 다른 버전의 Visual c + + 설치 된 경우 MSBuild는 현재 Visual c + + 버전 또는 설치 된 다른 버전에 대 한 응용 프로그램을 빌드할 수 있습니다. 예를 들어, Windows XP 용 Visual c + + 11.0 도구 집합을 지정 하려면 Visual Studio 2012를 설치한 경우 추가한 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일을 `Microsoft.Cpp.props` \<가져오기 / > 요소:
+도구 집합과 라이브러리가 다른 버전의 Visual C++ 설치 된 경우 MSBuild는 현재 Visual C++ 버전 또는 설치 된 다른 버전에 대 한 응용 프로그램을 빌드할 수 있습니다. 예를 들어, Windows XP 용 Visual C++ 11.0 도구 집합을 지정 하려면 Visual Studio 2012를 설치한 경우 추가한 다음 속성 그룹 요소를 Myproject.vcxproj 프로젝트 파일을 `Microsoft.Cpp.props` \<가져오기 / > 요소:
 
 ```xml
 <PropertyGroup>

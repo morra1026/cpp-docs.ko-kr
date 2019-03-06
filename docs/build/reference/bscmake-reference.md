@@ -10,12 +10,12 @@ helpviewer_keywords:
 - bsc files, building
 - BSCMAKE
 ms.assetid: b97ad994-1355-4809-98db-6abc12c6fb13
-ms.openlocfilehash: 1f321d51d1b880ea634c835567767c528aca041b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1dd89047b8fa6a415e7e19dd69ca3f499887299f
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509476"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416255"
 ---
 # <a name="bscmake-reference"></a>BSCMAKE 참조
 
@@ -45,6 +45,6 @@ Microsoft Browse Information Maintenance Utility(BSCMAKE.EXE)에서는 컴파일
 
 - [BSCMAKE 종료 코드](../../build/reference/bscmake-exit-codes.md)
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
-[ 빌드 도구](../../build/reference/c-cpp-build-tools.md)
+[C/C++ 빌드 도구](../../build/reference/c-cpp-build-tools.md)

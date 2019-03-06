@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 f1_keywords:
 - VC.Project.VCCLCompilerTool.EnableParallelCodeGeneration
 ms.assetid: 33ecf49d-c0d5-4f34-bce3-84ff03f38918
-ms.openlocfilehash: c75770f834abcf17862e173e692129a43a5155c4
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 8563382f9a95d9b7da49efdf1f12d517eae3da3d
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50588697"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57416633"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar(자동 평행화 도우미)
 
@@ -25,7 +25,8 @@ ms.locfileid: "50588697"
 
 컴파일러가 코드에서 루프를 자동으로 평행화하면 계산이 여러 프로세서 코어로 분산됩니다. 컴파일러에서 평행화가 적절하고 평행화를 통해 성능이 향상될 것으로 확인되는 경우에만 루프가 평행화됩니다.
 
-`#pragma loop()` 지시문은 최적화 프로그램이 특정 루프를 평행화하는 데 사용할 수 있습니다. 자세한 내용은 [루프](../../preprocessor/loop.md)합니다.
+
+  `#pragma loop()` 지시문은 최적화 프로그램이 특정 루프를 평행화하는 데 사용할 수 있습니다. 자세한 내용은 [루프](../../preprocessor/loop.md)합니다.
 
 자동 병렬화에 대 한 출력 메시지를 사용 하는 방법에 대 한 정보를 참조 하세요 [/Qpar-report (자동 평행 화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)합니다.
 
@@ -39,13 +40,14 @@ ms.locfileid: "50588697"
 
 ### <a name="to-set-the-qpar-compiler-option-programmatically"></a>프로그래밍 방식으로 /Qpar 컴파일러 옵션을 설정하려면
 
-- <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
+- 
+  <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>에 있는 코드 예제를 사용합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [/Q 옵션(하위 수준 작업)](../../build/reference/q-options-low-level-operations.md)<br/>
 [/Qpar-report(자동 평행화 도우미 보고 수준)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)<br/>
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)<br/>
-[#pragma loop)](../../preprocessor/loop.md)<br/>
+[#pragma loop()](../../preprocessor/loop.md)<br/>
 [네이티브 코드의 병렬 프로그래밍](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

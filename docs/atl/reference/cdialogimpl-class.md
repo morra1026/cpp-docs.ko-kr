@@ -17,12 +17,12 @@ helpviewer_keywords:
 - dialog boxes, ATL
 - CDialogImpl class
 ms.assetid: d430bc7b-8a28-4ad3-9507-277bdd2c2c2e
-ms.openlocfilehash: f44b7df7f1e4051f3cb07445952620861965f1d2
-ms.sourcegitcommit: c3093251193944840e3d0a068ecc30e6449624ba
+ms.openlocfilehash: 1124630d8ee15dd284893516bef8057f852b4632
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57263418"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57420663"
 ---
 # <a name="cdialogimpl-class"></a>CDialogImpl 클래스
 
@@ -119,7 +119,7 @@ HWND Create(
 *hWndParent*<br/>
 [in] 소유자 창에 대 한 핸들입니다.
 
-**RECT &** *rect* [in] [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) 구조 대화 상자의 크기와 위치를 지정 합니다.
+**RECT &** *rect* [in] [RECT](/previous-versions/dd162897\(v=vs.85\)) 구조 대화 상자의 크기와 위치를 지정 합니다.
 
 *dwInitParam*<br/>
 [in] 대화 상자에 전달할 값을 지정 합니다 *lParam* WM_INITDIALOG 메시지의 매개 변수입니다.

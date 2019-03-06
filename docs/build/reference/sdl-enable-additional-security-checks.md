@@ -1,17 +1,17 @@
 ---
-title: /SDL(추가 보안 검사 사용)
+title: /sdl(추가 보안 검사 사용)
 ms.date: 11/26/2018
 f1_keywords:
 - VC.Project.VCCLCompilerTool.SDLCheck
 ms.assetid: 3dcf86a0-3169-4240-9f29-e04a9f535826
-ms.openlocfilehash: 49ac57f81ef07eb2a9c1e11280e160f0c48fce73
-ms.sourcegitcommit: d04dfe95801bafcbd5371e40e626fe5c678343b8
+ms.openlocfilehash: dd37dae4927531b86cfdac274493b945b066760a
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389944"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57413097"
 ---
-# <a name="sdl-enable-additional-security-checks"></a>/SDL(추가 보안 검사 사용)
+# <a name="sdl-enable-additional-security-checks"></a>/sdl(추가 보안 검사 사용)
 
 권장되는 SDL(Security Development Lifecycle) 검사를 추가합니다. 이러한 검사에는 오류와 같은 추가 보안 관련 경고 및 추가 보안 코드 생성 기능이 포함됩니다.
 
@@ -25,7 +25,7 @@ ms.locfileid: "52389944"
 
 **/sdl** 에서 제공 하는 기준 보안 검사의 상위 집합을 활성화 [/GS](../../build/reference/gs-buffer-security-check.md) 재정의 **/GS-** 합니다. 기본적으로 **/sdl** 꺼져 있습니다. **/sdl-** 추가 보안 검사를 사용 하지 않도록 설정 합니다.
 
-## <a name="compile-time-checks"></a>컴파일 시간 검사
+## <a name="compile-time-checks"></a>컴파일 시 검사
 
 **/sdl** 이러한 경고를 오류로 사용 하도록 설정 합니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "52389944"
 
 1. 에 **일반적인** 페이지에서 옵션을 선택 합니다는 **SDL 검사** 드롭 다운 목록.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
 [컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)

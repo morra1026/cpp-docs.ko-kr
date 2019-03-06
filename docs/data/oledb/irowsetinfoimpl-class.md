@@ -26,16 +26,16 @@ helpviewer_keywords:
 - GetReferencedRowset method
 - GetSpecification method
 ms.assetid: 9c654155-7727-464e-bd31-143e68391a47
-ms.openlocfilehash: 61544658f2aef4b59b2b70baa310dcc09e2740fe
-ms.sourcegitcommit: c40469825b6101baac87d43e5f4aed6df6b078f5
+ms.openlocfilehash: ca22f16cf22cabc4c508df053d49d862fef70bce
+ms.sourcegitcommit: bff17488ac5538b8eaac57156a4d6f06b37d6b7f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51556207"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57414618"
 ---
 # <a name="irowsetinfoimpl-class"></a>IRowsetInfoImpl 클래스
 
-에 대 한 구현을 제공 합니다 [IRowsetInfo](https://docs.microsoft.com/previous-versions/windows/desktop/ms724541(v=vs.85)) 인터페이스입니다.
+에 대 한 구현을 제공 합니다 [IRowsetInfo](/previous-versions/windows/desktop/ms724541(v=vs.85)) 인터페이스입니다.
 
 ## <a name="syntax"></a>구문
 
@@ -72,7 +72,7 @@ class ATL_NO_VTABLE IRowsetInfoImpl :
 
 행 집합에는 필수 인터페이스입니다. 이 클래스를 사용 하 여 행 집합 속성을 구현 합니다 [속성 집합 맵](../../data/oledb/begin-propset-map.md) 명령 클래스에 정의 합니다. 행 집합 클래스를 사용 하 여 명령 클래스의 속성 수를 설정 하는 나타나지만, 명령 또는 세션 개체로 만들 때 런타임 속성의 자체 복사본을 사용 하 여 행 집합 제공 됩니다.
 
-## <a name="getproperties"></a> Irowsetinfoimpl:: Getproperties
+## <a name="getproperties"></a> IRowsetInfoImpl::GetProperties
 
 속성에 대 한 현재 설정을 반환 합니다 `DBPROPSET_ROWSET` 그룹입니다.
 
@@ -87,9 +87,9 @@ STDMETHOD (GetProperties )(const ULONG cPropertyIDSets,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [irowsetinfo:: Getproperties](https://docs.microsoft.com/previous-versions/windows/desktop/ms719611(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [irowsetinfo:: Getproperties](/previous-versions/windows/desktop/ms719611(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
-## <a name="getreferencedrowset"></a> Irowsetinfoimpl:: Getreferencedrowset
+## <a name="getreferencedrowset"></a> IRowsetInfoImpl::GetReferencedRowset
 
 책갈피 적용 되는 행 집합에 대 한 인터페이스 포인터를 반환 합니다.
 
@@ -103,9 +103,9 @@ STDMETHOD (GetReferencedRowset )(DBORDINAL iOrdinal,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetInfo::GetReferencedRowset](https://docs.microsoft.com/previous-versions/windows/desktop/ms721145(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다.
+참조 [IRowsetInfo::GetReferencedRowset](/previous-versions/windows/desktop/ms721145(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다. 합니다 *iOrdinal* 매개 변수는 책갈피 열 이어야 합니다.
 
-## <a name="getspecification"></a> Irowsetinfoimpl:: Getspecification
+## <a name="getspecification"></a> IRowsetInfoImpl::GetSpecification
 
 이 행 집합을 만든 개체 (명령 또는 세션)에 대 한 인터페이스 포인터를 반환 합니다.
 
@@ -118,7 +118,7 @@ STDMETHOD (GetSpecification )(REFIID riid,
 
 #### <a name="parameters"></a>매개 변수
 
-참조 [IRowsetInfo::GetSpecification](https://docs.microsoft.com/previous-versions/windows/desktop/ms716746(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
+참조 [IRowsetInfo::GetSpecification](/previous-versions/windows/desktop/ms716746(v=vs.85)) 에 *OLE DB Programmer's Reference*합니다.
 
 ### <a name="remarks"></a>설명
 
