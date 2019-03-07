@@ -1,4 +1,4 @@
-a---
+---
 title: 컴파일 속도 향상
 ms.date: 11/04/2016
 helpviewer_keywords:
