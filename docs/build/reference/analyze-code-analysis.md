@@ -75,7 +75,7 @@ set Esp.Extensions=CppCoreCheck.dll
 
 ## <a name="remarks"></a>설명
 
-자세한 내용은 [C/c + + 개요에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) 하 고 [C/c + + 경고에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings)합니다.
+자세한 내용은 [C/C++ 개요에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) 하 고 [C/C++ 경고에 대 한 코드 분석](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings)합니다.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
