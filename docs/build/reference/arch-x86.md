@@ -11,7 +11,7 @@ ms.locfileid: "57421809"
 ---
 # <a name="arch-x86"></a>/arch(x86)
 
-x86에서 코드 생성 아키텍처를 지정합니다. 도 참조 하세요 [(x64) /arch](../../build/reference/arch-x64.md) 하 고 [/arch (ARM)](../../build/reference/arch-arm.md)합니다.
+x86에서 코드 생성 아키텍처를 지정합니다. [(x64) /arch](../../build/reference/arch-x64.md)과 [/arch (ARM)](../../build/reference/arch-arm.md)도 참조합니다.
 
 ## <a name="syntax"></a>구문
 
@@ -68,7 +68,7 @@ r = t + d;     // This should produce the same overall result
 
 1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-1. 선택 된 **구성 속성**를 **C/c + +** 폴더입니다.
+1. 선택 된 **구성 속성**를 **C/C++** 폴더입니다.
 
 1. 선택 된 **코드 생성** 속성 페이지.
 
