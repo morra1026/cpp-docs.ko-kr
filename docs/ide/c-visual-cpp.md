@@ -7,12 +7,12 @@ helpviewer_keywords:
 - <c> C++ XML tag
 - c C++ XML tag
 ms.assetid: 3b23fc0f-e10d-4dd0-b197-48a46cbddd9f
-ms.openlocfilehash: 1efb411537e07ae9a5c2e4a70b5fa3ac319d79c3
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a5eb88be4cb5be8c4e970c285bad712093fdbb51
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50431098"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742596"
 ---
 # <a name="ltcgt-visual-c"></a>&lt;c&gt;(Visual C++)
 
@@ -29,11 +29,11 @@ ms.locfileid: "50431098"
 *텍스트*<br/>
 코드로 표시하려는 텍스트입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // xml_c_tag.cpp

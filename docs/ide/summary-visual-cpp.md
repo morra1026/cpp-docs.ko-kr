@@ -8,12 +8,12 @@ helpviewer_keywords:
 - <summary> C++ XML tag
 - summary C++ XML tag
 ms.assetid: cdeeefbb-1339-45d6-9002-10042a9a2726
-ms.openlocfilehash: 08d03d19355b89fa3c59ce5bede514d3ffa9b55b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 32d939dc51e3e476e503f96995355fc78fb21ed0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50509101"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57744843"
 ---
 # <a name="ltsummarygt-visual-c"></a>&lt;summary&gt;(Visual C++)
 
@@ -30,13 +30,13 @@ ms.locfileid: "50509101"
 *description*<br/>
 개체에 대한 요약입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 \<summary> 태그의 텍스트는 IntelliSense의 형식에 대한 유일한 정보 소스이며 [개체 브라우저](/visualstudio/ide/viewing-the-structure-of-code) 및 코드 주석 웹 보고서에도 표시됩니다.
 
 [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // xml_summary_tag.cpp

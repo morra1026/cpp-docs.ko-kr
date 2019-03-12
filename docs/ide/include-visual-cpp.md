@@ -8,12 +8,12 @@ helpviewer_keywords:
 - include C++ XML tag
 - <include> C++ XML tag
 ms.assetid: 392a3e61-0371-4617-8362-446650876ce3
-ms.openlocfilehash: 0d03ee6e327eb95e63cec16f3886d616c909c3df
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: f0484d4158cf222ba4aae2aadf5e5352c8fc794f
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50451976"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740802"
 ---
 # <a name="ltincludegt-visual-c"></a>&lt;include&gt;(Visual C++)
 
@@ -28,7 +28,8 @@ ms.locfileid: "50451976"
 #### <a name="parameters"></a>매개 변수
 
 *filename*<br/>
-문서가 포함된 파일의 이름입니다. 경로를 사용하여 파일 이름을 정규화할 수 있습니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  `filename`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
+문서가 포함된 파일의 이름입니다. 경로를 사용하여 파일 이름을 정규화할 수 있습니다.  이름을 단일 또는 이중 따옴표로 묶습니다.  
+  `filename`가 검색되지 않는 경우 컴파일러에서 경고가 발생합니다.
 
 *tagpath*<br/>
 파일에 포함된 원하는 노드 집합을 선택하는 유효한 XPath 식입니다.
@@ -39,13 +40,13 @@ ms.locfileid: "50451976"
 *ID*<br/>
 주석 앞에 오는 태그의 ID입니다.  이름을 단일 또는 이중 따옴표로 묶습니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 \<include> 태그는 XML XPath 구문을 사용합니다. \<include>를 사용하여 사용자 지정하는 방법은 XPath 설명서를 참조하세요.
 
 [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다중 파일 예제입니다. \<include>를 사용하는 첫 번째 파일에는 다음과 같은 문서 주석이 포함되어 있습니다.
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - list C++ XML tag
 - <list> C++ XML tag
 ms.assetid: c792a10b-0451-422c-9aa0-604116e69d64
-ms.openlocfilehash: 08751e5fcdf246dd5ad285fc0cda5114d99cce15
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 015647cd381ba4dc0c099b322e3c5870246c9fc2
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50646669"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751340"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;list&gt;(Visual C++)
 
@@ -42,7 +42,7 @@ ms.locfileid: "50646669"
 *description*<br/>
 글머리 기호 또는 번호 매기기 목록의 항목이나 `term`의 정의입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 목록의 각 항목은 \<item> 블록을 사용하여 지정됩니다. 정의 목록을 만들 때는 `term`과 `description`을 모두 지정해야 합니다. 그러나 테이블, 글머리 기호 목록 또는 번호 매기기 목록의 경우 `description` 항목만 제공하면 됩니다.
 
@@ -50,7 +50,7 @@ ms.locfileid: "50646669"
 
 [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```cpp
 // xml_list_tag.cpp

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Makefile projects, Makefile Project Wizard
 - MakeFile Project Wizard [Visual Studio]
 ms.assetid: 38219802-320d-4c48-a118-4792de8f3b2d
-ms.openlocfilehash: 00514ceb32e6ea80e493bb61eecc40a32bcad86e
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 0b5158cca3663ea41f22550241da4e873287a1d0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624499"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741777"
 ---
 # <a name="makefile-project-wizard"></a>메이크파일 프로젝트 마법사
 
@@ -22,7 +22,7 @@ ms.locfileid: "50624499"
 
 이 마법사 페이지에서는 만들려는 프로젝트에 대한 현재 프로젝트 설정을 설명합니다. 기본적으로는 *ProjName*.exe의 디버그 및 릴리스 구성을 모두 빌드하도록 프로젝트를 설정합니다.
 
-이러한 기본값을 변경하려면 마법사의 왼쪽 열에서 [응용 프로그램 설정](../ide/application-settings-makefile-project-wizard.md) 탭을 클릭하고 원하는 대로 변경합니다.
+이러한 기본값을 변경하려면 마법사의 왼쪽 열에서 [애플리케이션 설정](../ide/application-settings-makefile-project-wizard.md) 탭을 클릭하고 원하는 대로 변경합니다.
 
 ## <a name="see-also"></a>참고 항목
 

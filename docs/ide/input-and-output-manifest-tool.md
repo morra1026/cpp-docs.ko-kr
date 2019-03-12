@@ -10,12 +10,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.OutputResourceManifest
 - VC.Project.VCManifestTool.GenerateCatalogFiles
 ms.assetid: a8bb20f6-7ace-45ca-bab0-b4f4a5caf170
-ms.openlocfilehash: 8aa007e41cdabe0bf548f1184b801c1f81655596
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7b9af50e6dca2dafa4dabd356a868405dfacc958
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50624703"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741182"
 ---
 # <a name="input-and-output-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>입력 및 출력, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
 
@@ -36,9 +36,9 @@ ms.locfileid: "50624703"
 리소스 ID는 선택 사항이며 기본적으로 winuser.h에서 CREATEPROCESS_MANIFEST_RESOURCE_ID로 설정됩니다.
 
 **매니페스트 포함**<br/>
-- **예**는 프로젝트 시스템이 응용 프로그램 매니페스트 파일을 어셈블리에 포함하도록 지정합니다.
+- **예**는 프로젝트 시스템이 애플리케이션 매니페스트 파일을 어셈블리에 포함하도록 지정합니다.
 
-- **아니요**는 프로젝트 시스템이 응용 프로그램 매니페스트 파일을 독립형 파일로 생성하도록 지정합니다.
+- **아니요**는 프로젝트 시스템이 애플리케이션 매니페스트 파일을 독립형 파일로 생성하도록 지정합니다.
 
 **출력 매니페스트 파일**<br/>
 출력 매니페스트 파일의 이름을 지정합니다. 이 속성은 매니페스트 도구에서 하나의 매니페스트 파일만 작동하는 경우 선택 사항입니다.
@@ -59,7 +59,7 @@ ms.locfileid: "50624703"
 **-managedassembly** 옵션과 함께 사용됩니다. 이 태그는 범주 태그를 생성합니다.
 
 **DPI 인식 활성화**<br/>
-응용 프로그램이 DPI를 인식하는지 여부를 지정합니다. 기본적으로 MFC 프로젝트는 **예**로 설정되고, 다른 프로젝트는 **아니요**로 설정됩니다. MFC 프로젝트에만 DPI 인식 기능이 내장되어 있기 때문입니다. 다른 DPI 설정을 처리하는 코드를 추가하는 경우, 이 설정을 **예**로 재정의할 수 있습니다. 응용 프로그램이 DPI를 인식하지 않는데 인식하는 것으로 설정할 경우 응용 프로그램이 흐릿하게 또는 작게 표시될 수 있습니다.
+애플리케이션이 DPI를 인식하는지 여부를 지정합니다. 기본적으로 MFC 프로젝트는 **예**로 설정되고, 다른 프로젝트는 **아니요**로 설정됩니다. MFC 프로젝트에만 DPI 인식 기능이 내장되어 있기 때문입니다. 다른 DPI 설정을 처리하는 코드를 추가하는 경우, 이 설정을 **예**로 재정의할 수 있습니다. 애플리케이션이 DPI를 인식하지 않는데 인식하는 것으로 설정할 경우 애플리케이션이 흐릿하게 또는 작게 표시될 수 있습니다.
 
 ## <a name="see-also"></a>참고 항목
 

@@ -8,12 +8,12 @@ helpviewer_keywords:
 - value C++ XML tag
 - <value> C++ XML tag
 ms.assetid: 0ba0a0d5-bcd7-4862-a169-83f2721ad80e
-ms.openlocfilehash: 84a19c96e3e7024dbb891c6bde91646d4731b2be
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 6add2d7fb6676d631a03d5f6e1764ebf221b4c52
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50599292"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742505"
 ---
 # <a name="ltvaluegt-visual-c"></a>&lt;value&gt;(Visual C++)
 
@@ -30,11 +30,11 @@ ms.locfileid: "50599292"
 *property-description*<br/>
 속성에 대한 설명입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // xml_value_tag.cpp

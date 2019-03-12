@@ -5,20 +5,20 @@ helpviewer_keywords:
 - .vcxproj files
 - C++ projects, project file format
 ms.assetid: 5261cf45-3136-40a6-899e-dc1339551401
-ms.openlocfilehash: cb1369515db91187d182cd6c6ea49b938ebdee77
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 1ad6a2835eb0b885d0761d027fcd6bf3d8c799ba
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50459165"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746307"
 ---
 # <a name="project-files"></a>프로젝트 파일
 
 Visual C++ 프로젝트 파일은 .vcxproj 파일 이름 확장명을 가진 XML 기반 파일이며 Visual C++ 프로젝트를 빌드하는 데 필요한 정보를 포함합니다. 프로젝트 파일은 확장명이 *.props* 또는 *.targets*인 다양한 프로젝트 파일을 가져옵니다. 이러한 파일에는 추가 빌드 정보가 포함되어 있으며 다른 *.props* 또는 *.targets* 파일을 참조할 수도 있습니다. 파일 경로(예를 들면 `$(VCTargetsPath)`)의 매크로는 Visual Studio 설치에 따라 다릅니다. 이러한 매크로와 *.props* 및 *.targets* 파일에 대한 자세한 내용은 [VC++ 디렉터리 속성 페이지](vcpp-directories-property-page.md), [프로젝트 속성 작업](working-with-project-properties.md#bkmkPropertiesVersusMacros) 및 [빌드 명령 및 속성에 대한 일반 매크로](common-macros-for-build-commands-and-properties.md)를 참조하세요.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
-다음 샘플.vcxproj 파일은 **새 프로젝트** 대화 상자에서 **Win32 콘솔 응용 프로그램**을 지정하여 생성되었습니다. 프로젝트 파일을 처리하려면 명령줄에서 Msbuild.exe 도구를 사용하거나 IDE에서 **빌드** 명령을 사용합니다. (필요한 원본 및 헤더 파일이 제공되지 않았기 때문에 이 샘플을 처리할 수 없습니다.) 프로젝트 파일의 XML 요소에 대한 자세한 내용은 [프로젝트 파일 스키마 참조](/visualstudio/msbuild/msbuild-project-file-schema-reference)를 참조하세요.
+다음 샘플.vcxproj 파일은 **새 프로젝트** 대화 상자에서 **Win32 콘솔 애플리케이션**을 지정하여 생성되었습니다. 프로젝트 파일을 처리하려면 명령줄에서 Msbuild.exe 도구를 사용하거나 IDE에서 **빌드** 명령을 사용합니다. (필요한 원본 및 헤더 파일이 제공되지 않았기 때문에 이 샘플을 처리할 수 없습니다.) 프로젝트 파일의 XML 요소에 대한 자세한 내용은 [프로젝트 파일 스키마 참조](/visualstudio/msbuild/msbuild-project-file-schema-reference)를 참조하세요.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

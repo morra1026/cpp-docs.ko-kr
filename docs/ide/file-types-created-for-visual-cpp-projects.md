@@ -14,16 +14,16 @@ helpviewer_keywords:
 - .def files
 - licensing ActiveX controls
 ms.assetid: 2b0ee2e0-ae81-4185-9bb9-11da3c99a283
-ms.openlocfilehash: 78ba4afd8a7fad87f09c2a403d25d3c6d52cc0c6
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 30a1b57a12d5a238c80f9bb8f0a069385911a8e1
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50573474"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57746906"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ 프로젝트용으로 만들어지는 파일 형식
 
-이 항목에서는 클래식 데스크톱 응용 프로그램용 Visual C++ 프로젝트와 관련된 파일의 모든 형식에 대해 설명합니다. 프로젝트 형식 및 마법사에서 선택한 옵션에 따라 프로젝트에 포함되는 실제 파일이 달라집니다.
+이 항목에서는 클래식 데스크톱 애플리케이션용 Visual C++ 프로젝트와 관련된 파일의 모든 형식에 대해 설명합니다. 프로젝트 형식 및 마법사에서 선택한 옵션에 따라 프로젝트에 포함되는 실제 파일이 달라집니다.
 
 - [프로젝트 및 솔루션 파일](../ide/project-and-solution-files.md)
 
@@ -41,7 +41,7 @@ ms.locfileid: "50573474"
 
 - [힌트 파일](../ide/hint-files.md)
 
-[Visual C++ 프로젝트를 만들 때](../ide/creating-desktop-projects-by-using-application-wizards.md)새 솔루션을 만들거나 솔루션에 프로젝트를 추가할 수 있습니다. 중요 응용 프로그램은 일반적으로 솔루션의 여러 프로젝트로 개발됩니다.
+[Visual C++ 프로젝트를 만들 때](../ide/creating-desktop-projects-by-using-application-wizards.md)새 솔루션을 만들거나 솔루션에 프로젝트를 추가할 수 있습니다. 중요 애플리케이션은 일반적으로 솔루션의 여러 프로젝트로 개발됩니다.
 
 프로젝트는 보통 EXE 또는 DLL을 생성합니다. 프로젝트는 서로 종속될 수 있습니다. 빌드 프로세스 중에 Visual C++ 환경에서 프로젝트 내부 및 프로젝트 간의 종속성을 모두 검사합니다. 각 프로젝트에는 핵심 소스 코드가 있으며, 그 밖에 프로젝트 종류에 따라 프로젝트의 다양한 측면을 포함하는 많은 파일이 있을 수 있습니다. 이러한 파일의 내용은 파일 확장명으로 표시됩니다. Visual Studio 개발 환경에서는 빌드하는 동안 파일 확장명을 사용하여 파일 내용을 처리할 방법을 결정합니다.
 
@@ -51,10 +51,10 @@ ms.locfileid: "50573474"
 |--------------------|----------|--------------|
 |.asmx|소스|배포 파일|
 |.asp|소스|Active Server Page 파일|
-|.asp|프로젝트|응용 프로그램 템플릿 프로젝트 파일|
+|.asp|프로젝트|애플리케이션 템플릿 프로젝트 파일|
 |.bmp, .dib, .gif, .jpg, .jpe, .png|리소스|일반 이미지 파일|
 |.bsc|컴파일|브라우저 코드 파일|
-|.cpp, .c|소스|응용 프로그램의 기본 소스 코드 파일|
+|.cpp, .c|소스|애플리케이션의 기본 소스 코드 파일|
 |.cur|리소스|커서 비트맵 그래픽 파일|
 |.dbp|프로젝트|데이터베이스 프로젝트 파일|
 |.disco|소스|동적 검색 문서 파일. XML Web services 검색을 처리합니다.|

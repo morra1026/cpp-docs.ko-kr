@@ -7,12 +7,12 @@ f1_keywords:
 - VC.Project.VCManifestTool.TypeLibraryFile
 - VC.Project.VCManifestTool.ReplacementsFile
 ms.assetid: 457582b8-cfde-49c0-92e3-3a6b9e8c08eb
-ms.openlocfilehash: 9eea3b2765bad6bd08cc9ee91a801e2b891511e5
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: a6188eeb53b4ffcd3eee754e88a8891310fb2d51
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50546524"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57738848"
 ---
 # <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>격리 COM, 매니페스트 도구, 구성 속성, &lt;Projectname&gt; 속성 페이지 대화 상자
 
@@ -22,7 +22,7 @@ ms.locfileid: "50546524"
 
 ## <a name="task-list"></a>작업 목록
 
-- [방법: COM 구성 요소를 사용하는 격리된 응용 프로그램 빌드](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+- [방법: COM 구성 요소를 사용하는 격리된 애플리케이션 빌드](../build/how-to-build-isolated-applications-to-consume-com-components.md)
 
 ## <a name="uielement-list"></a>UI 요소 목록
 
@@ -44,7 +44,7 @@ ms.locfileid: "50546524"
 
 ## <a name="see-also"></a>참고 항목
 
-[격리된 응용 프로그램](/windows/desktop/SbsCs/isolated-applications)<br>
+[격리된 애플리케이션](/windows/desktop/SbsCs/isolated-applications)<br>
 [ndptecclick](/visualstudio/deployment/clickonce-application-manifest)<br>
 [매니페스트 도구 속성 페이지](../ide/manifest-tool-property-pages.md)<br>
 [프로젝트 속성 사용](../ide/working-with-project-properties.md)
