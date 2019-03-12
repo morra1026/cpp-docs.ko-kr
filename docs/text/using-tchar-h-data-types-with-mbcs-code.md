@@ -1,4 +1,4 @@
-﻿---
+---
 title: _MBCS 코드와 TCHAR.H 데이터 형식 사용
 ms.date: 11/04/2016
 f1_keywords:
@@ -12,12 +12,12 @@ helpviewer_keywords:
 - TCHAR.H data types, mapping
 - mappings [C++], TCHAR.H
 ms.assetid: 298583c5-22c3-40f6-920e-9ec96d42abd8
-ms.openlocfilehash: dcb194c72ca2a64317cddda8a1559e78edc0978f
-ms.sourcegitcommit: ff3cbe4235b6c316edcc7677f79f70c3e784ad76
+ms.openlocfilehash: 62801cfc2386cf2aee7fd35a5e589d73b4f91918
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626671"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57742027"
 ---
 # <a name="using-tcharh-data-types-with-mbcs-code"></a>_MBCS 코드와 TCHAR.H 데이터 형식 사용
 
@@ -35,7 +35,7 @@ ms.locfileid: "53626671"
     char * _tcsrev(char *);
     ```
 
-   기본적으로 `_tcsrev`에 대한 프로토타입은 Libc.lib의 작은 함수 썽크(thunk)를 통해 `_mbsrev`와 매핑됩니다. 이렇게 되면 `_mbsrev`수신 매개 변수와 반환 값의 형식이 `_TCHAR*`로 변환되는 `char *`에서 `unsigned char *`로 변경됩니다. 이 방법을 사용하면 `_TCHAR`을 사용할 때 형식의 일치를 보장하지만, 함수 호출에서 발생하는 오버헤드로 인해 속도가 상대적으로 느린 단점이 있습니다.
+   기본적으로 `_tcsrev`에 대한 프로토타입은 Libc.lib의 작은 함수 썽크(thunk)를 통해 `_mbsrev`와 매핑됩니다. 이렇게 되면 `_mbsrev`수신 매개 변수와 반환 값의 형식이 `_TCHAR*`로 변환되는 `_TCHAR*`에서 `unsigned char *`로 변경됩니다. 이 방법을 사용하면 `_TCHAR`을 사용할 때 형식의 일치를 보장하지만, 함수 호출에서 발생하는 오버헤드로 인해 속도가 상대적으로 느린 단점이 있습니다.
 
 - 코드에서 다음 전처리기 문을 통합하여 함수 인라인을 사용합니다.
 
@@ -66,6 +66,6 @@ ms.locfileid: "53626671"
 
    이 방법을 사용하는 경우에 문자열 인수 및 문자열 반환 값의 데이터 형식이 적절하게 사용되었는지 주의해야 합니다. 형식 캐스팅을 사용하여 적절한 형식 일치를 보장하거나 `_TXCHAR` 일반 텍스트 데이터 형식을 사용할 수 있습니다. `_TXCHAR`은 SBCS 기반에서 **char** 형식으로 매핑되지만 MBCS 기반에서는 **unsigned char**로 매핑됩니다. 일반 텍스트 매크로에 대한 자세한 내용은 [일반 텍스트 매핑](../c-runtime-library/generic-text-mappings.md)의 *런타임 라이브러리 참조*를 참고합니다.
 
-## <a name="see-also"></a>참고 항목
+## <a name="see-also"></a>참고자료
 
 [tchar.h의 제네릭 텍스트 매핑](../text/generic-text-mappings-in-tchar-h.md)

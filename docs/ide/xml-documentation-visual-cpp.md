@@ -7,12 +7,12 @@ helpviewer_keywords:
 - comments, C++ source code files
 - /// delimiter for C++ documentation
 ms.assetid: a1aec1c5-b2d1-4c74-83ae-1dbbbb76b506
-ms.openlocfilehash: 380fe73bba71d08bb9315e218f5946a7cf935108
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: bddcd09b892950e547c01a77845e679009bbd213
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50523888"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747556"
 ---
 # <a name="xml-documentation-visual-c"></a>XML 문서(Visual C++)
 
@@ -31,7 +31,7 @@ Visual C++ 코드 파일에서 XML 문서 주석은 메서드 또는 형식 정�
 
 문서 주석이 있는 .xml 파일을 만드는 방법에 대한 자세한 내용은 다음 항목을 참조하세요.
 
-|추가 정보|보기|
+|추가 정보|참조|
 |---------------------------|---------|
 |사용할 컴파일러 옵션|[/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)|
 |문서에서 일반적으로 사용되는 기능을 제공하는 데 사용할 수 있는 태그|[문서 주석에 대한 권장 태그](../ide/recommended-tags-for-documentation-comments-visual-cpp.md)|

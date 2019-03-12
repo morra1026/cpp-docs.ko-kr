@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], HTML Help files
 ms.assetid: d30a1b1b-318f-4a78-8b60-93da53a224a8
-ms.openlocfilehash: dc98e9794200e2a317c7db2b0b513a254efff275
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d3ccc4b602610813ed4e80c1d24ca5d96275a8dd
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50480381"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741924"
 ---
 # <a name="help-files-html-help"></a>도움말 파일(HTML 도움말)
 
-다음 파일은 **상황에 맞는 도움말** 확인란을 선택한 다음, MFC 응용 프로그램 마법사의 [고급 기능](../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **HTML 도움말 형식**을 선택하여 응용 프로그램에 HTML 도움말 형식의 도움말 지원을 추가하면 만들어집니다.
+다음 파일은 **상황에 맞는 도움말** 확인란을 선택한 다음, MFC 애플리케이션 마법사의 [고급 기능](../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **HTML 도움말 형식**을 선택하여 애플리케이션에 HTML 도움말 형식의 도움말 지원을 추가하면 만들어집니다.
 
 |파일 이름|디렉터리 위치|솔루션 탐색기 위치|설명|
 |---------------|------------------------|--------------------------------|-----------------|

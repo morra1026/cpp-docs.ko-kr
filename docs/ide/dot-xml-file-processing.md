@@ -4,12 +4,12 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - XML documentation, processing XML file
 ms.assetid: e70fdeae-80ac-4872-ab24-771c5635cfbf
-ms.openlocfilehash: bc9aa57ffd68630d0a4209f8f8611882f8f36fc3
-ms.sourcegitcommit: afd6fac7c519dbc47a4befaece14a919d4e0a8a2
+ms.openlocfilehash: 75b58b7ce2b5c96e853c99f0827ee4de605a6f3d
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51524172"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57748478"
 ---
 # <a name="xml-file-processing"></a>.Xml 파일 처리
 
@@ -80,7 +80,7 @@ ms.locfileid: "51524172"
 
   제네릭 형식을 매개 변수로 사용하는 메서드의 경우 제네릭 형식 매개 변수는 \`0, \`1과 같이 앞에 역따옴표가 붙은 숫자로 지정됩니다.  각 숫자는 해당 형식의 제네릭 매개 변수에 대한 0부터 시작되는 배열 표기법을 나타냅니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 다음 예제에서는 클래스와 해당 멤버의 ID 문자열이 생성되는 방식을 보여 줍니다.
 

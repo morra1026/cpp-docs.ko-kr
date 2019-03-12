@@ -8,12 +8,12 @@ helpviewer_keywords:
 - returns C++ XML tag
 - <returns> C++ XML tag
 ms.assetid: 5e3b0ed9-838d-4953-a93e-76d2d0a19fb9
-ms.openlocfilehash: 2ed21b1a7b0bca12185e054b3b5452e0bf04d4d7
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7861d57d474db3c45b2c773a057a545c15602822
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50494512"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740851"
 ---
 # <a name="ltreturnsgt-visual-c"></a>&lt;returns&gt;(Visual C++)
 
@@ -30,11 +30,11 @@ ms.locfileid: "50494512"
 *description*<br/>
 반환 값에 대한 설명입니다.
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md)로 컴파일하여 문서 주석을 파일로 처리합니다.
 
-## <a name="example"></a>예
+## <a name="example"></a>예제
 
 ```
 // xml_returns_tag.cpp

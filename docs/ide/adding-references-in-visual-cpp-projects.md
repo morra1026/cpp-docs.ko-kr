@@ -7,12 +7,12 @@ helpviewer_keywords:
 - Add References Dialog Box (C++)
 - .NET Framework (C++), Add References Dialog Box
 ms.assetid: 12b8f571-0f21-40b3-9404-5318a57e9cb5
-ms.openlocfilehash: c50a726b0e5b6e175bd7256ab5a5d93d6b172601
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: d227490944232e04c533b06a08f04a378d0239e0
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50583799"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57741800"
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ 프로젝트에서 참조 추가
 
@@ -94,7 +94,7 @@ ActiveX 참조 속성은 COM 구성 요소에 대한 참조에만 사용할 수 
 
 - **라이브러리 종속성 입력 사용**
 
-   이 속성이 **False**이면 프로젝트 시스템이 종속 프로젝트에서 생성한 라이브러리에 대한 .obj 파일인 종속 프로젝트에 연결되지 않습니다. 따라서 이 값은 증분 링크를 해제합니다. 일반적으로 독립 프로젝트가 많은 경우 응용 프로그램을 빌드하는 데 시간이 오래 걸릴 수 있으므로 **False** 를 지정합니다.
+   이 속성이 **False**이면 프로젝트 시스템이 종속 프로젝트에서 생성한 라이브러리에 대한 .obj 파일인 종속 프로젝트에 연결되지 않습니다. 따라서 이 값은 증분 링크를 해제합니다. 일반적으로 독립 프로젝트가 많은 경우 애플리케이션을 빌드하는 데 시간이 오래 걸릴 수 있으므로 **False** 를 지정합니다.
 
 ### <a name="reference-properties"></a>참조 속성
 

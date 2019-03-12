@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - xdcmake program
 ms.assetid: 14e65747-d000-4343-854b-8393bf01cbac
-ms.openlocfilehash: 85c7ef351e6e91bfd51a7f1e87ecec4186986505
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: adbb06b5100850aac0cfd191a530d5c98b380738
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50450273"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57740438"
 ---
 # <a name="xdcmake-reference"></a>XDCMake 참조
 
@@ -47,7 +47,7 @@ xdcmake.exe에 대한 입력으로 사용되는 .xdc 파일의 파일 이름입�
 |/nologo|저작권 메시지를 표시하지 않습니다.|
 |/out:*filename*|.xml 파일의 이름을 지정할 수 있습니다.  기본적으로 .xml 파일의 이름은 xdcmake.exe에서 처리하는 첫 번째 .xdc 파일의 파일 이름입니다.|
 
-## <a name="remarks"></a>설명
+## <a name="remarks"></a>주의
 
 Visual Studio는 프로젝트를 빌드할 때 xdcmake.exe를 자동으로 호출합니다. 명령줄에서 xdcmake.exe를 호출할 수도 있습니다.
 
