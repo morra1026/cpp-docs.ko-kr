@@ -6,12 +6,12 @@ helpviewer_keywords:
 - resources [C++]
 - file types [C++], resource files
 ms.assetid: 338a4a0f-0c62-4ef1-a34f-5d86262d93a4
-ms.openlocfilehash: f9ead50c1c8761968ebad65f6a5289cfeea8fdaf
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e19ad88a52467cd7ad2d5fa17dd964fd1bb38429
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50623004"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57747049"
 ---
 # <a name="resource-files-c"></a>리소스 파일(C++)
 
@@ -25,9 +25,9 @@ ms.locfileid: "50623004"
 |Resource.h|*Projname*|Header Files|프로젝트에서 사용하는 리소스에 대한 정의를 포함하는 리소스 헤더 파일입니다.|
 |*Projname*.rc2|*Projname*\res|소스 파일|프로젝트에서 사용하는 추가 리소스를 포함하는 스크립트 파일입니다. 프로젝트의 .rc 파일 아래에 .rc2 파일을 포함할 수 있습니다.<br /><br /> .rc2 파일은 여러 가지 다른 프로젝트에서 사용하는 리소스를 포함하는 데 유용합니다. 다른 프로젝트에서 여러 번 동일한 리소스를 만드는 대신 .rc2 파일에 배치하고, .rc2 파일을 기본 .rc 파일에 포함할 수 있습니다.|
 |*Projname*.def|*Projname*|소스 파일|DLL 프로젝트의 모듈 정의 파일입니다. 컨트롤의 경우 런타임 힙의 크기뿐만 아니라 컨트롤의 이름 및 설명을 제공합니다.|
-|*Projname*.ico|*Projname*\res|리소스 파일|프로젝트 또는 컨트롤의 아이콘 파일입니다. 이 아이콘은 응용 프로그램이 최소화될 때 나타납니다. 응용 프로그램의 **정보** 상자에서도 사용됩니다. 기본적으로 MFC는 MFC 아이콘을 제공하고 ATL은 ATL 아이콘을 제공합니다.|
+|*Projname*.ico|*Projname*\res|리소스 파일|프로젝트 또는 컨트롤의 아이콘 파일입니다. 이 아이콘은 애플리케이션이 최소화될 때 나타납니다. 애플리케이션의 **정보** 상자에서도 사용됩니다. 기본적으로 MFC는 MFC 아이콘을 제공하고 ATL은 ATL 아이콘을 제공합니다.|
 |*Projname*Doc.ico|*Projname*\res|리소스 파일|문서/보기 아키텍처에 대한 지원을 포함하는 MFC 프로젝트의 아이콘 파일입니다.|
-|Toolbar.bmp|*Projname*\res|리소스 파일|도구 모음이나 색상표에서 응용 프로그램 또는 컨트롤을 나타내는 비트맵 파일입니다. 이 비트맵은 프로젝트의 리소스 파일에 포함됩니다. 초기 도구 모음 및 상태 표시줄은 **CMainFrame** 클래스에 생성됩니다.|
+|Toolbar.bmp|*Projname*\res|리소스 파일|도구 모음이나 색상표에서 애플리케이션 또는 컨트롤을 나타내는 비트맵 파일입니다. 이 비트맵은 프로젝트의 리소스 파일에 포함됩니다. 초기 도구 모음 및 상태 표시줄은 **CMainFrame** 클래스에 생성됩니다.|
 |ribbon.mfcribbon-ms|*Projname*\res|리소스 파일|리본의 단추, 컨트롤 및 특성을 정의하는 XML 코드가 포함된 리소스 파일입니다. 자세한 내용은 [Ribbon Designer (MFC)](../mfc/ribbon-designer-mfc.md)을 참조하세요.|
 
 ## <a name="see-also"></a>참고 항목
