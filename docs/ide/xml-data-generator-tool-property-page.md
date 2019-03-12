@@ -8,16 +8,16 @@ f1_keywords:
 helpviewer_keywords:
 - XML Data Generator Tool property page
 ms.assetid: b2ef1c12-3419-429d-bb9d-bd7d9ffe1ffb
-ms.openlocfilehash: a5df028a809fa9dae623ec8023b7c107c5ff095b
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: e194b73d11a4ca57030e86ec009db3bd31403ad9
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50554100"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751963"
 ---
 # <a name="xml-data-generator-tool-property-page"></a>XML 데이터 생성기 도구 속성 페이지
 
-**XML 데이터 생성기 도구** 속성 페이지는 프로젝트에 데이터 집합을 추가할 때 사용할 수 있습니다.
+**XML 데이터 생성기 도구** 속성 페이지는 프로젝트에 데이터 세트를 추가할 때 사용할 수 있습니다.
 
 **XML 데이터 생성기 도구** 속성 페이지에는 다음 속성이 포함되어 있습니다.
 

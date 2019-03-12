@@ -4,16 +4,16 @@ ms.date: 11/04/2016
 helpviewer_keywords:
 - file types [C++], WinHelp files
 ms.assetid: 4fdcbd66-66b0-4866-894a-fd7b4c2557e4
-ms.openlocfilehash: 142702699523633bf810d0077ce7ba6355557d21
-ms.sourcegitcommit: 6052185696adca270bc9bdbec45a626dd89cdcdd
+ms.openlocfilehash: 7bc00902b449905ee75e77f147150cbb68bf3f22
+ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50496305"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57751806"
 ---
 # <a name="help-files-winhelp"></a>도움말 파일(WinHelp)
 
-다음 파일은 **상황에 맞는 도움말** 확인란을 선택한 다음, MFC 응용 프로그램 마법사의 [고급 기능](../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **WinHelp 형식**을 선택하여 응용 프로그램에 WinHelp 형식의 도움말 지원을 추가하면 만들어집니다.
+다음 파일은 **상황에 맞는 도움말** 확인란을 선택한 다음, MFC 애플리케이션 마법사의 [고급 기능](../mfc/reference/advanced-features-mfc-application-wizard.md) 페이지에서 **WinHelp 형식**을 선택하여 애플리케이션에 WinHelp 형식의 도움말 지원을 추가하면 만들어집니다.
 
 |파일 이름|디렉터리 위치|솔루션 탐색기 위치|설명|
 |---------------|------------------------|--------------------------------|-----------------|
@@ -24,7 +24,7 @@ ms.locfileid: "50496305"
 |Print.rtf|*Projname*\hlp|도움말 파일|프로젝트에 인쇄 지원이 포함된 경우 생성됩니다(기본값). 인쇄 명령과 대화 상자를 설명합니다.|
 |*.bmp|*Projname*\hlp|리소스 파일|생성된 여러 도움말 파일 항목에 대한 이미지를 포함합니다.|
 
-MFC ActiveX 컨트롤 마법사의 [응용 프로그램 설정](../mfc/reference/application-settings-mfc-activex-control-wizard.md) 탭에서 **도움말 파일 생성**을 선택하여 MFC ActiveX 컨트롤 프로젝트에 WinHelp 지원을 추가할 수 있습니다. MFC ActiveX 컨트롤에 도움말 지원을 추가하면 다음 파일이 프로젝트에 추가됩니다.
+MFC ActiveX 컨트롤 마법사의 [애플리케이션 설정](../mfc/reference/application-settings-mfc-activex-control-wizard.md) 탭에서 **도움말 파일 생성**을 선택하여 MFC ActiveX 컨트롤 프로젝트에 WinHelp 지원을 추가할 수 있습니다. MFC ActiveX 컨트롤에 도움말 지원을 추가하면 다음 파일이 프로젝트에 추가됩니다.
 
 |파일 이름|디렉터리 위치|솔루션 탐색기 위치|설명|
 |---------------|------------------------|--------------------------------|-----------------|
