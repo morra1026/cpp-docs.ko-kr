@@ -11,7 +11,7 @@ ms.locfileid: "57421809"
 ---
 # <a name="arch-x86"></a>/arch(x86)
 
-x86에서 코드 생성 아키텍처를 지정합니다. 도 참조 하세요 [(x64) /arch](../../build/reference/arch-x64.md) 하 고 [/arch (ARM)](../../build/reference/arch-arm.md)합니다.
+x86에서 코드 생성 아키텍처를 지정합니다. [(x64) /arch](../../build/reference/arch-x64.md)과 [/arch (ARM)](../../build/reference/arch-arm.md)도 참조합니다.
 
 ## <a name="syntax"></a>구문
 
