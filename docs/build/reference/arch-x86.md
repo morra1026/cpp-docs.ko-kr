@@ -68,7 +68,7 @@ r = t + d;     // This should produce the same overall result
 
 1. 엽니다는 **속성 페이지** 프로젝트에 대 한 대화 상자. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
 
-1. 선택 된 **구성 속성**를 **C/C++** 폴더입니다.
+1. 선택 된 **구성 속성**를 **C/c + +** 폴더입니다.
 
 1. 선택 된 **코드 생성** 속성 페이지.
 
