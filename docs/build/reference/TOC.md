@@ -160,7 +160,6 @@
 #### [/Zp(구조체 멤버 맞춤)](zp-struct-member-alignment.md)
 #### [/Zs(구문만 검사)](zs-syntax-check-only.md)
 #### [/ZW(Windows 런타임 컴파일)](zw-windows-runtime-compilation.md)
-## [미리 컴파일된 헤더 파일 만들기](creating-precompiled-header-files.md)
 ## [컴파일러 및 링커에서의 유니코드 지원](unicode-support-in-the-compiler-and-linker.md)
 # [링크](linking.md)
 ## [링커 옵션 설정](setting-linker-options.md)
