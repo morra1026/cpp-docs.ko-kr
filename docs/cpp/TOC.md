@@ -42,7 +42,7 @@
 #### [별칭 및 typedef](aliases-and-typedefs-cpp.md)
 #### [선언 사용](using-declaration.md)
 #### [모호한 선언 해결](resolving-ambiguous-declarations-cpp.md)
-#### [저장소 클래스](storage-classes-cpp.md)
+#### [스토리지 클래스](storage-classes-cpp.md)
 #### [const](const-cpp.md)
 #### [constexpr](constexpr-cpp.md)
 #### [volatile](volatile-cpp.md)
@@ -416,4 +416,3 @@
 ## [Microsoft 확장](microsoft-extensions.md)
 ## [비표준 동작](nonstandard-behavior.md)
 ### [컴파일러 한계](compiler-limits.md)
-
