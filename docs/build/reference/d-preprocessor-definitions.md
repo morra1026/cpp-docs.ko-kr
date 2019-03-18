@@ -62,9 +62,9 @@ CL /DTEST=%% TEST.C
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
-1. 왼쪽된 창에서 선택 **구성 속성**, **C/c + +** 하십시오 **전처리기**합니다.
+1. 왼쪽된 창에서 선택 **구성 속성**, **C/C++** 하십시오 **전처리기**합니다.
 
 1. 오른쪽 열에 있는 오른쪽 창에는 **전처리기 정의** 속성을 드롭다운 메뉴를 열고 선택 **편집**합니다.
 
