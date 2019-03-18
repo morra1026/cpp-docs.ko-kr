@@ -4,12 +4,12 @@ ms.date: 11/12/2018
 helpviewer_keywords:
 - compiler options, C++
 ms.assetid: c4750dcf-dba0-4229-99b6-45cdecc11729
-ms.openlocfilehash: 128b477a2c4252c841990e2a2462029abe5a3bbb
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: d3ebfbc3661ba648c2fdb73c697db42735faf422
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57746971"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816336"
 ---
 # <a name="compiler-options-listed-by-category"></a>컴파일러 옵션 범주별 목록
 
@@ -218,5 +218,5 @@ ms.locfileid: "57746971"
 ## <a name="see-also"></a>참고자료
 
 [C/C++ 빌드 참조](c-cpp-building-reference.md)<br/>
-[컴파일러 옵션](compiler-options.md)<br/>
-[컴파일러 옵션 설정](setting-compiler-options.md)<br/>
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)<br/>

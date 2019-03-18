@@ -10,12 +10,12 @@ helpviewer_keywords:
 - migration [C++], /clr compiler option
 - /clr compiler option [C++], porting to
 ms.assetid: c9290b8b-436a-4510-8b56-eae51f4a9afc
-ms.openlocfilehash: 02e678f98773f9ae7bb4f611210329a7a1116f17
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 8c4827891799d2c76a344e4c6da8f3d96333826e
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57749115"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57816034"
 ---
 # <a name="how-to-migrate-to-clr"></a>방법: /Clr으로 마이그레이션
 
@@ -98,7 +98,7 @@ COMObj2->Method(args);  // C++ equivalent
 **/clr** 의 지침에 따라 개발 환경에서 선택할 수 있습니다 [/clr (공용 언어 런타임 컴파일)](../build/reference/clr-common-language-runtime-compilation.md)합니다. 이전에 설명한 대로이 단계는 충돌 하는 프로젝트 설정을 자동으로 비활성화 됩니다.
 
 > [!NOTE]
->  Visual c + + 2003에서 관리 되는 라이브러리 또는 웹 서비스 프로젝트를 업그레이드 하는 경우는 **/Zl** 컴파일러 옵션이 추가 됩니다 합니다 **명령줄** 속성 페이지. 그러면 LNK2001 합니다. 제거 **/Zl** 에서 합니다 **명령줄** 속성 페이지를 확인 합니다. 참조 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 하 고 [프로젝트 속성 작업](../ide/working-with-project-properties.md) 자세한 내용은 합니다. 또는 링커의 msvcrt.lib와 msvcmrt.lib 추가할 **추가 종속성** 속성입니다.
+>  Visual c + + 2003에서 관리 되는 라이브러리 또는 웹 서비스 프로젝트를 업그레이드 하는 경우는 **/Zl** 컴파일러 옵션이 추가 됩니다 합니다 **명령줄** 속성 페이지. 그러면 LNK2001 합니다. 제거 **/Zl** 에서 합니다 **명령줄** 속성 페이지를 확인 합니다. 참조 [/Zl (기본 라이브러리 이름 생략)](../build/reference/zl-omit-default-library-name.md) 하 고 [컴파일러 설정 및 빌드 속성](../build/working-with-project-properties.md) 자세한 내용은 합니다. 또는 링커의 msvcrt.lib와 msvcmrt.lib 추가할 **추가 종속성** 속성입니다.
 
 프로젝트의 메이크파일을 사용 하 여 빌드한 경우 호환 되지 않는 컴파일러 옵션을 비활성화 해야 수동으로 한 번 **/clr** 추가 됩니다. 참조 /[/clr 제한](../build/reference/clr-restrictions.md) 와 호환 되지 않는 컴파일러 옵션에 대 한 내용은 **/clr**합니다.
 

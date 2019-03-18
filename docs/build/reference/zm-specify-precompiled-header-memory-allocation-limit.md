@@ -14,12 +14,12 @@ helpviewer_keywords:
 - memory allocation, Memory Allocation Limit compiler option
 - -Zm compiler option [C++]
 ms.assetid: 94c77d5e-6672-46a7-92e0-3f69e277727d
-ms.openlocfilehash: 3c1362479b2068ee8fb527a4ecaac6e203e83cb0
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 09df8e1ee9a97289e29e1191e8c1585580435b79
+ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751988"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57807899"
 ---
 # <a name="zm-specify-precompiled-header-memory-allocation-limit"></a>/Zm(미리 컴파일된 헤더 메모리 할당 제한 지정)
 
@@ -60,7 +60,7 @@ Visual Studio 2015 이전 버전에서는 몇 가지 개별 힙을 사용 하는
 
 ### <a name="to-set-the-zm-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 /Zm 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 [프로젝트 속성 작업](../../ide/working-with-project-properties.md)을 참조하세요.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. 탐색 창에서 선택 **구성 속성** > **C/c + +** > **명령줄**합니다.
 
@@ -72,5 +72,5 @@ Visual Studio 2015 이전 버전에서는 몇 가지 개별 힙을 사용 하는
 
 ## <a name="see-also"></a>참고자료
 
-[컴파일러 옵션](../../build/reference/compiler-options.md)<br/>
-[컴파일러 옵션 설정](../../build/reference/setting-compiler-options.md)
+[MSVC 컴파일러 옵션](compiler-options.md)<br/>
+[MSVC 컴파일러 명령줄 구문](compiler-command-line-syntax.md)
