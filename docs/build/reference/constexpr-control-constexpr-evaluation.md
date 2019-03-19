@@ -36,7 +36,7 @@ ms.locfileid: "57810187"
 
 ## <a name="remarks"></a>설명
 
-합니다 **/constexpr** 컴파일러 옵션 제어의 컴파일 시간 계산이 **constexpr** 식입니다. 평가 단계, 재귀 수준 및 backtrace 깊이 컴파일러에서 너무 많은 시간을 소비 하지 못하도록 제어 됩니다 **constexpr** 평가 합니다. 대 한 자세한 내용은 합니다 **constexpr** 언어 요소를 참조 하세요 [constexpr (c + +)](../../cpp/constexpr-cpp.md)합니다.
+합니다 **/constexpr** 컴파일러 옵션 제어의 컴파일 시간 계산이 **constexpr** 식입니다. 평가 단계, 재귀 수준 및 backtrace 깊이 컴파일러에서 너무 많은 시간을 소비 하지 못하도록 제어 됩니다 **constexpr** 평가 합니다. 대 한 자세한 내용은 합니다 **constexpr** 언어 요소를 참조 하세요 [constexpr (C++)](../../cpp/constexpr-cpp.md)합니다.
 
 합니다 **/constexpr** 옵션은 Visual Studio 2015부터 사용할 수 있습니다.
 
