@@ -6,12 +6,12 @@ helpviewer_keywords:
 - project debugging [C++]
 - debugging projects
 ms.assetid: a5cade77-ba51-4b03-a7a0-6897e3cd6a59
-ms.openlocfilehash: 4cd0f81ccf768938d585c206d5f50b20f6a0ae19
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0a1ceddca3234ead7d10cc839d41a6d644ec1866
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57741356"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57812033"
 ---
 # <a name="walkthrough-debugging-a-project-c"></a>연습: 프로젝트 디버깅(C++)
 
@@ -59,4 +59,4 @@ ms.locfileid: "57741356"
 ## <a name="see-also"></a>참고 항목
 
 [C++ 언어 참조](../cpp/cpp-language-reference.md)<br/>
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)<br/>
+[프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)<br/>

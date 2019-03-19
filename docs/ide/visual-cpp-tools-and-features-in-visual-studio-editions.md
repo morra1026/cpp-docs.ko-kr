@@ -6,12 +6,12 @@ helpviewer_keywords:
 - Visual C++, versions
 - editions [C++]
 ms.assetid: 3d88607b-9cc4-490a-8d4c-31ee7610a26f
-ms.openlocfilehash: 3d3c6e25594eb3bb01ad3fc995a24cdc723d5726
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 3e5b173741700ed6cccf95b479eb5693a62ed02e
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57751897"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57810486"
 ---
 # <a name="visual-c-tools-and-features-in-visual-studio-editions"></a>Visual Studio 버전의 Visual C++ 도구 및 기능
 
@@ -176,5 +176,5 @@ ms.locfileid: "57751897"
 
 [Visual Studio 설치](/visualstudio/install/install-visual-studio)<br/>
 [Visual Studio의 새로운 기능](/visualstudio/ide/whats-new-in-visual-studio)<br/>
-[Visual C++ 프로젝트 형식](../ide/visual-cpp-project-types.md)<br/>
+[Visual C++ 프로젝트 형식](../build/reference/visual-cpp-project-types.md)<br/>
 [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686)<br/>

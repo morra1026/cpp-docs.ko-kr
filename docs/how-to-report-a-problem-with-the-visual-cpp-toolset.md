@@ -4,12 +4,12 @@ ms.date: 06/21/2018
 ms.technology: cpp-ide
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 4b64f79ea5a9566d2ad28216fbc5e736b622fe00
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 50b1005c7734b62941cbda087161d5ec41a0d026
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57740251"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57808042"
 ---
 # <a name="how-to-report-a-problem-with-the-visual-c-toolset-or-documentation"></a>Visual C++ 도구 집합 또는 설명서의 문제를 보고하는 방법
 
@@ -43,7 +43,7 @@ Microsoft Visual C++ 컴파일러, 링커 또는 기타 도구 및 라이브러�
 
 #### <a name="to-report-the-full-version-of-the-compiler-youre-using"></a>사용 중인 컴파일러의 전체 버전을 보고하려면
 
-1. 프로젝트를 빌드하는 데 사용된 Visual Studio 버전 및 구성 아키텍처와 일치하는 **개발자 명령 프롬프트**를 엽니다. 예를 들어 x64 대상에 x64 Visual Studio 2017을 사용하여 빌드하는 경우 **VS 2017용 x64 Native Tools 명령 프롬프트**를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](build/building-on-the-command-line.md#developer-command-prompt-shortcuts)를 참조하세요.
+1. 프로젝트를 빌드하는 데 사용된 Visual Studio 버전 및 구성 아키텍처와 일치하는 **개발자 명령 프롬프트**를 엽니다. 예를 들어 x64 대상에 x64 Visual Studio 2017을 사용하여 빌드하는 경우 **VS 2017용 x64 Native Tools 명령 프롬프트**를 선택합니다. 자세한 내용은 [개발자 명령 프롬프트 바로 가기](build/building-on-the-command-line.md#developer_command_prompt_shortcuts)를 참조하세요.
 
 1. 개발자 명령 프롬프트 콘솔 창에서 **cl /Bv** 명령을 입력합니다.
 
