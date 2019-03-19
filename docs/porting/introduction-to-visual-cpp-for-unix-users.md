@@ -4,12 +4,12 @@ ms.date: 09/01/2017
 helpviewer_keywords:
 - UNIX [C++]
 ms.assetid: 36108b31-e7fa-49a8-a1f7-7077fcbec873
-ms.openlocfilehash: 6522461cf1f08eee9187a8f739cb21fe01e755f5
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 0cffdc2be00b4af9badbbbc80bcfef48b3f76e19
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57747010"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57818377"
 ---
 # <a name="introduction-to-visual-c-for-unix-users"></a>UNIX 사용자를 위한 Visual C++ 소개
 
@@ -37,7 +37,7 @@ Visual Studio 디버거, IntelliSense 코드 조회 및 명령문 완성, 비주
 
 ## <a name="importing-your-existing-code"></a>기존 코드 가져오기
 
-C++ 컴파일러를 사용하여 메이크파일을 포함하거나 포함하지 않고 컴파일하도록 설정된 기존 코드를 빌드하고 Visual Studio 프로젝트에 배치할 수 있습니다. 자세한 내용은 [방법: 기존 코드에서 C++ 프로젝트 만들기](../ide/how-to-create-a-cpp-project-from-existing-code.md)를 참조하세요.
+C++ 컴파일러를 사용하여 메이크파일을 포함하거나 포함하지 않고 컴파일하도록 설정된 기존 코드를 빌드하고 Visual Studio 프로젝트에 배치할 수 있습니다. 자세한 내용은 [방법: 기존 코드에서 C++ 프로젝트 만들기](../build/how-to-create-a-cpp-project-from-existing-code.md)를 참조하세요.
 
 ## <a name="creating-a-new-project"></a>새 프로젝트 만들기
 
@@ -58,7 +58,7 @@ Microsoft Visual C++ 컴파일러는 Windows 운영 체제에 대한 프로그�
 
 Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C 또는 C++ 코드를 미리 컴파일하는 옵션을 제공합니다. 이 성능 기능을 사용하여 안정적인 코드 본문을 컴파일하고, 코드의 컴파일된 상태를 파일에 저장하고, 후속 컴파일 중 미리 컴파일된 코드와 아직 개발 중인 코드를 결합할 수 있습니다. 안정적인 코드는 다시 컴파일할 필요가 없기 때문에 각 후속 컴파일 속도가 향상됩니다.
 
-기본적으로 미리 컴파일된 코드는 stdafx.h 및 stdafx.cpp 파일에서 모두 지정됩니다. **미리 컴파일된 헤더** 옵션을 선택 취소하지 않으면 **새 프로젝트** 마법사가 자동으로 이러한 파일을 만듭니다. 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../build/reference/creating-precompiled-header-files.md)를 참조하세요.
+기본적으로 미리 컴파일된 코드는 stdafx.h 및 stdafx.cpp 파일에서 모두 지정됩니다. **미리 컴파일된 헤더** 옵션을 선택 취소하지 않으면 **새 프로젝트** 마법사가 자동으로 이러한 파일을 만듭니다. 미리 컴파일된 헤더에 대한 자세한 내용은 [미리 컴파일된 헤더 파일 만들기](../build/creating-precompiled-header-files.md)를 참조하세요.
 
 ## <a name="related-sections"></a>관련 단원
 
@@ -66,4 +66,4 @@ Microsoft C 및 C++ 컴파일러는 인라인 코드를 포함하여 모든 C �
 
 ## <a name="see-also"></a>참고 항목
 
-[C/C++ 프로그램 빌드](../build/building-c-cpp-programs.md)
+[프로젝트 및 빌드 시스템](../build/projects-and-build-systems-cpp.md)
