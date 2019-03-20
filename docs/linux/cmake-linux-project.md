@@ -3,12 +3,12 @@ title: Visual Studio에서 Linux CMake 프로젝트 구성
 description: Visual Studio에서 Linux CMake 프로젝트를 구성하는 방법
 ms.date: 11/01/2018
 ms.assetid: f8707b32-f90d-494d-ae0b-1d44425fdc25
-ms.openlocfilehash: f2186c14fbe2eb1273fceb4a378b359564eae327
-ms.sourcegitcommit: dedd4c3cb28adec3793329018b9163ffddf890a4
+ms.openlocfilehash: 22de2f7a7b5374f781a032f5152610d7a97feb16
+ms.sourcegitcommit: 9e85c2e029d06b4c1c69837437468718b4d54908
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57750600"
+ms.lasthandoff: 03/18/2019
+ms.locfileid: "57815868"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake 프로젝트 구성
 
@@ -22,7 +22,7 @@ Visual Studio에서는 동일한 프로젝트에서 작업하는 다른 사용�
 
 Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 이진 파일을 다운로드합니다.
 
-이 토픽에서는 [Visual Studio용 CMake 도구](../ide/cmake-tools-for-visual-cpp.md)를 참고했다고 가정합니다. 
+이 토픽에서는 [Visual Studio용 CMake 도구](../build/cmake-projects-in-visual-studio.md)를 참고했다고 가정합니다. 
 
 > [!NOTE]
 > Visual Studio에서 CMake가 지원되려면 CMake 3.8에 도입된 서버 모드 지원이 필요합니다. Microsoft 제공 CMake 변형의 경우 [https://github.com/Microsoft/CMake/releases](https://github.com/Microsoft/CMake/releases)에서 미리 빌드된 최신 바이너리를 다운로드합니다. Visual Studio 2019에서 미리 빌드된 바이너리를 자동으로 배포할 수 있습니다([미리 빌드된 CMake 바이너리 다운로드](#download-prebuilt-cmake-binaries) 참조).
@@ -67,11 +67,11 @@ Linux 대상을 지정하면 Linux 컴퓨터에 소스가 복사됩니다. 그�
 
 원격 시스템에서 코드를 디버그하려면 중단점을 설정하고, 프로젝트 설정 옆의 도구 모음 메뉴에서 CMake 대상을 시작 항목으로 선택하고, 도구 모음에서 **&#x23f5; 시작**을 선택하거나 F5 키를 누릅니다.
 
-프로그램의 명령줄 인수를 사용자 지정하려면 **솔루션 탐색기**에서 실행 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다. 그러면 프로그램에 대한 정보가 들어 있는 launch.vs.json 구성 파일이 열리거나 만들어집니다. 추가 인수를 지정하려면 `args` JSON 배열에 추가합니다. 자세한 내용은 [Visual C++의 폴더 열기 프로젝트](../ide/non-msbuild-projects.md) 및 [CMake 디버깅 세션 구성](../ide/configure-cmake-debugging-sessions.md)을 참조하세요.
+프로그램의 명령줄 인수를 사용자 지정하려면 **솔루션 탐색기**에서 실행 파일을 마우스 오른쪽 단추로 클릭하고 **디버그 및 시작 설정**을 선택합니다. 그러면 프로그램에 대한 정보가 들어 있는 launch.vs.json 구성 파일이 열리거나 만들어집니다. 추가 인수를 지정하려면 `args` JSON 배열에 추가합니다. 자세한 내용은 [C++용 폴더 열기 프로젝트](../build/open-folder-projects-cpp.md) 및 [CMake 디버깅 세션 구성](../build/configure-cmake-debugging-sessions.md)을 참조하세요.
 
 ## <a name="configure-cmake-settings-for-linux"></a>Linux용 CMake 설정 구성
 
-CMake Linux 프로젝트에 있는 CMakeSettings.json 파일은 [CMake 사용자 지정 설정](../ide/customize-cmake-settings.md)에 나열된 모든 속성 및 원격 Linux 머신의 빌드 설정을 제어하는 추가 속성도 지정할 수 있습니다. 기본 CMake 설정을 변경하려면 주 메뉴에서 **CMake | CMake 설정 변경 | CMakeLists.txt**를 선택하거나 **솔루션 탐색기**에서 CMakeSettings.txt를 마우스 오른쪽 단추로 클릭하고 **CMake 설정 변경**을 선택합니다. 그런 다음, Visual Studio는 루트 프로젝트 폴더에서 새 `CMakeSettings.json` 파일을 만듭니다. **CMake 설정** 편집기를 사용하여 파일을 열거나 파일을 직접 수정할 수 있습니다. 
+CMake Linux 프로젝트에 있는 CMakeSettings.json 파일은 [CMake 사용자 지정 설정](../build/customize-cmake-settings.md)에 나열된 모든 속성 및 원격 Linux 머신의 빌드 설정을 제어하는 추가 속성도 지정할 수 있습니다. 기본 CMake 설정을 변경하려면 주 메뉴에서 **CMake | CMake 설정 변경 | CMakeLists.txt**를 선택하거나 **솔루션 탐색기**에서 CMakeSettings.txt를 마우스 오른쪽 단추로 클릭하고 **CMake 설정 변경**을 선택합니다. 그런 다음, Visual Studio는 루트 프로젝트 폴더에서 새 `CMakeSettings.json` 파일을 만듭니다. **CMake 설정** 편집기를 사용하여 파일을 열거나 파일을 직접 수정할 수 있습니다. 
 
 다음 예제에서는 이전 코드 예제에 기반을 둔 Linux-Debug에 대한 기본 구성을 보여 줍니다.
 
@@ -138,10 +138,10 @@ Linux distro에 이전 버전의 CMake가 있을 수 있습니다. Visual Studio
 
 ## <a name="see-also"></a>참고 항목
 
-[프로젝트 속성 사용](../ide/working-with-project-properties.md)<br/>
-[Visual C++용 CMake 도구](../ide/cmake-tools-for-visual-cpp.md)<br/>
+[프로젝트 속성 사용](../build/working-with-project-properties.md)<br/>
+[Visual Studio의 CMake 프로젝트](../build/cmake-projects-in-visual-studio.md)<br/>
 [원격 Linux 컴퓨터에 연결](connect-to-your-remote-linux-computer.md)<br/>
-[CMake 사용자 지정 설정](../ide/customize-cmake-settings.md)<br/>
-[CMake 디버깅 세션 구성](../ide/configure-cmake-debugging-sessions.md)<br/>
+[CMake 사용자 지정 설정](../build/customize-cmake-settings.md)<br/>
+[CMake 디버깅 세션 구성](../build/configure-cmake-debugging-sessions.md)<br/>
 [Linux 프로젝트 배포, 실행 및 디버그](deploy-run-and-debug-your-linux-project.md)<br/>
-[CMake 미리 정의된 구성 참조](../ide/cmake-predefined-configuration-reference.md)<br/>
+[CMake 미리 정의된 구성 참조](../build/cmake-predefined-configuration-reference.md)<br/>
