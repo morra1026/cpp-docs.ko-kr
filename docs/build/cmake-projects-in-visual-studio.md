@@ -4,12 +4,12 @@ ms.date: 03/05/2019
 helpviewer_keywords:
 - CMake in Visual C++
 ms.assetid: 444d50df-215e-4d31-933a-b41841f186f8
-ms.openlocfilehash: 67bf20248933b28e9c7c0d87c598c0449d6bed0b
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: b055a1e3ca1d43cc0a1633401c1a08a3d54c1a31
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57827187"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278452"
 ---
 # <a name="cmake-projects-in-visual-studio"></a>Visual Studio의 CMake 프로젝트
 
@@ -80,7 +80,7 @@ Visual Studio는 `CMakeSettings.json`이라는 파일을 사용하여 Cmake.exe�
 
 CMake 프로젝트를 빌드하려면 다음과 같이 선택할 수 있습니다.
 
-1. **디버그** 드롭다운에서 대상을 선택하고, **F5** 키를 누르거나 **실행**(녹색 삼각형) 단추를 클릭합니다. Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
+1. 일반 도구 모음에서 찾을 합니다 **구성을** 드롭다운; 것은 아마도 "Linux-Debug" 또는 "x64-Debug" 기본적으로 표시 합니다. 선택 하 고 원하는 구성 키를 눌러 **F5**, 클릭 또는 합니다 **실행** 도구 모음에서 단추 (녹색 삼각형). Visual Studio 솔루션과 마찬가지로 프로젝트가 자동으로 먼저 빌드됩니다.
 
 1. CMakeLists.txt를 마우스 오른쪽 단추로 클릭하고, 상황에 맞는 메뉴에서 **빌드**를 선택합니다. 폴더 구조에 여러 대상이 있는 경우 모든 대상 또는 특정 대상만 빌드하도록 선택할 수 있습니다.
 

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - /FI compiler option [C++]
 - preprocess header file compiler option [C++]
 ms.assetid: 07e79577-8152-4df9-a64c-aae08c603397
-ms.openlocfilehash: 2e85706a0266696b83fe1a1a6cdc45ba3399fc21
-ms.sourcegitcommit: 8105b7003b89b73b4359644ff4281e1595352dda
+ms.openlocfilehash: e047ecc5266a898f2c6dc24be3c204f8ddf94386
+ms.sourcegitcommit: 90817d9d78fbaed8ffacde63f3add334842e596f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57809225"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58278374"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI(강제 포함 파일 이름 지정)
 
@@ -35,13 +35,13 @@ ms.locfileid: "57809225"
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Visual Studio 개발 환경에서 이 컴파일러 옵션을 설정하려면
 
-1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 c + + 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
+1. 프로젝트의 **속성 페이지** 대화 상자를 엽니다. 자세한 내용은 참조 하세요 [Visual Studio에서 설정 C++ 컴파일러 및 빌드 속성](../working-with-project-properties.md)합니다.
 
 1. **C/C++** 폴더를 클릭합니다.
 
 1. 클릭 합니다 **고급** 속성 페이지.
 
-1. 수정 된 **강제 포함** 속성입니다.
+1. 수정 된 **강제 포함 파일** 속성입니다.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>프로그래밍 방식으로 이 컴파일러 옵션을 설정하려면
 
