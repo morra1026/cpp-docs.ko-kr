@@ -1,5 +1,5 @@
 ---
-title: Trivial, 표준 레이아웃, POD를 및 리터럴 형식
+title: Trivial, standard-layout, POD 및 literal-type
 ms.date: 04/05/2018
 ms.assetid: 2b23a7be-9bad-49fc-8298-31a9a7c556b0
 ms.openlocfilehash: c742f4c84a1b2ba558b790d7eea7760902da7818
@@ -9,25 +9,28 @@ ms.contentlocale: ko-KR
 ms.lasthandoff: 11/10/2018
 ms.locfileid: "51521706"
 ---
-# <a name="trivial-standard-layout-pod-and-literal-types"></a>Trivial, 표준 레이아웃, POD를 및 리터럴 형식
+# <a name="trivial-standard-layout-pod-and-literal-types"></a>Trivial, standard-layout, POD 및 literal-type
 
-용어 *레이아웃* 클래스, 구조체 또는 공용 구조체 형식 개체의 멤버를 메모리에 정렬 되는 방식을 가리킵니다. 경우에 따라 레이아웃 언어 사양에 잘 정의 된 경우 하지만 클래스 또는 구조체 컴파일러 레이아웃을 선택 하는 가상 기본 클래스, 가상 함수, 다른 액세스 제어를 사용 하 여 멤버와 같은 특정 c + + 언어 기능을 포함 하는 경우. 해당 레이아웃 수행 되는 최적화에 따라 달라질 수 있습니다 및 대부분의 개체 수도 차지 하지는 인접 한 메모리 영역입니다. 예를 들어, 클래스에 가상 함수가 있으면 해당 클래스의 모든 인스턴스를 단일 가상 함수 테이블을 공유할 수 있습니다. 이러한 형식은 물론 매우 유용 하지만 수도 제한 사항을 갖습니다. 레이아웃 정의 되지 않으므로 C와 같은 다른 언어로 작성 된 프로그램에 전달할 수 없습니다 및 불연속 있을 수 있으므로 복사할 수는 없습니다 안정적으로 빠르게 하위 수준 함수를 사용 하 여 같은 `memcopy` 되거나 네트워크를 통해 serialize 합니다.
+용어 *layout*은 class, struct 또는 union 형식의 멤버가 메모리에 정렬 되는 방식을 가리킵니다. 경우에 따라 layout은 언어 사양에 잘 정의 됩니다. 하지만 class 또는 struct가 virtual base class, virtual function, 접근 제어가 다른 멤버 등 특정 c++ 언어 기능을 포함하면 컴파일러는 layout을 자유롭게 선택할 수 있습니다. Layout은 수행되는 최적화에 따라 달라질 수 있으며 대부분의 경우 객체는 인접한 메모리 영역을 점유하지 않을 수도 있습니다. 예를 들어 class에 virtual function이 있는 경우 해당 class의 모든 인스턴스가 단일 virtual function table을 공유 할 수 있습니다. 물론 이러한 유형은 매우 유용하지만 한계가 있습니다. Layout이 정의되지 않았기 때문에 C와 같은 다른 언어로 작성된 프로그램에 전달할 수 없으며, 메모리가 인접하지 않을 수도 있기 때문에 memcopy와 같은 빠른 하위 수준 함수로 안정적으로 복사하거나 네트워크를 통해 직렬화 할 수 없습니다.
 
-컴파일러 뿐만 아니라 c + + 프로그램과 metaprograms 특정 메모리 레이아웃에 종속 된 작업에 대 한 지정 된 형식의 적합성에 대해 추론을 사용 하려면 C + + 14 도입 간단한 클래스 및 구조체의 세 가지 범주의: *trivial*하십시오 *표준 레이아웃*, 및 *POD* 또는 Plain Old Data. 표준 라이브러리에 함수 템플릿이 `is_trivial<T>`하십시오 `is_standard_layout<T>` 및 `is_pod<T>` 지정된 된 형식 지정된 된 범주에 속하는지 여부를 결정 하는 합니다.
+C++ 프로그램과 메타 프로그램뿐만 아니라 컴파일러를 사용하여 특정 메모리 레이아웃에 의존하는 작업의 특정 유형에 대한 적합성을 판단하기 위해 C++14에서는 간단한 클래스와 구조체의 세 가지 유형을 소개했습니다:*trivial*, *standard-layout*, 및 *POD* 또는 Plain Old Data. 표준 라이브러리에는 지정된 유형이 주어진 범주에 속하는지 여부를 확인하는 `is_trivial<T>`, `is_standard_layout<T>` 및 `is_pod<T>` 가 있습니다.
 
 ## <a name="trivial-types"></a>Trivial 형식
 
-경우 클래스 또는 구조체에서 c + + 컴파일러에서 제공 했거나이 trivial 형식인 다음 특수 멤버 함수를 명시적으로 기본값으로 설정 합니다. 인접 한 메모리 영역을 차지 합니다. 이 서로 다른 액세스 지정자를 사용 하 여 멤버를 가질 수 있습니다. C + +에서 컴파일러는 자유롭게이 상황에서 멤버를 정렬 하는 방법을 선택할 수 있습니다. 따라서 이러한 개체 memcopy 수는 있지만 C 프로그램에서 안정적으로 사용할 수 없습니다. Trivial 형식 T char 또는 부호 없는 문자 배열에 복사 하 고 안전 하 게 T 변수로 다시 복사 될 수 있습니다. 맞춤 요구 사항으로 인해, 형식 멤버 간에 패딩 바이트 수 있습니다.
+C++의 class 나 struct에 컴파일러가 제공하거나 명시적으로 특수 멤버 함수를 default로 지정하면 trivial 형식입니다. Trivial 형식은 연속적인 메모리 영역을 차지합니다. 서로 다른 접근 지정자가 있는 멤버를 가질 수 있습니다. C ++ 컴파일러는 이 상황에서 멤버 순서를 자유롭게 지정할 수 있습니다. 따라서 이러한 개체를 memcopy 할 수  있지만 C 프로그램에서 안정적으로 사용 할 수는 없습니다. Trival 타입 T는 char 또는 unsigned char의 배열에 복사 될 수 있으며 안전하게 T 변수로 다시 복사됩니다. 정렬 요구 사항 때문에 형식 멤버간에 패딩 바이트가있을 수 있습니다.
 
-Trivial 형식은 trivial 기본 생성자, trivial 복사 생성자, trivial 복사 할당 연산자 및 trivial 소멸자가 있습니다. 각 예에서 *trivial* 생성자/연산자/소멸자 사용자가 제공한 아니며 있는 클래스에 속하는 의미 합니다.
+Trivial 형식은  trivial default constructor, trivial copy constructor, trivial copy assignment operator 및 trivial destructor를 가집니다. 각각의 경우에, trivial 은 constructor/operator/destructor를 사용자가 제공하지 않고 다음과 조건을 만족한다는것을 의미 합니다.
 
-- 가상 함수나 가상 기본 클래스 없음
+- virtual function 이나 virtual base class가 없으며,
 
-- 해당 특수 생성자/연산자/소멸자를 사용 하 여 기본 클래스 없음
 
-- 해당 특수 생성자/연산자/소멸자를 사용 하 여 클래스 형식의 데이터 멤버 없음
+- non-trivial constructor/operator/destructor가 있는 base class가 없습니다.
 
-다음 예제에서는 trivial 형식 Trivial2의 현재 상태에에서는 `Trivial2(int a, int b)` 생성자는 기본 생성자를 제공 해야 합니다. Trivial로 한 정하는 형식에 대 한 생성자를 명시적으로 기본값으로 해야 있습니다.
+
+- non-trivial constructor/operator/destructor가 있는 class 유형의 데이터 멤버가 없습니다.
+
+
+다음 예제는 trivial 형식을 보여줍니다. Trivial2에서 Trivial2 (int a, int b) constructor가 존재하므로 default constructor가 필요합니다. Trivial 형식으로 한정하려면 default constructor를 명시적으로 기본 설정해야합니다.
 
 ```cpp
 struct Trivial
